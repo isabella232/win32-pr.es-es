@@ -1,7 +1,7 @@
 ---
-description: Convierte un nombre de configuración regional en un identificador de configuración regional que se puede utilizar para obtener información del sistema operativo.
+description: Convierte un nombre de configuración regional en un identificador de configuración regional que se puede usar para obtener información del sistema operativo.
 ms.assetid: dc776c41-0376-4222-bebf-86be7e4be122
-title: Función DownlevelLocaleNameToLCID (nlsdl. h)
+title: Función DownlevelLocaleNameToLCID (Nlsdl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - NlsMap.dll
-ms.openlocfilehash: c41b82c59b63a5b324e15f89c1f77118d454e428
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39a0a6b274ba141553d2ddda927f71754cc9639ff5fc3a0d3870a974e46526a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105653005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898735"
 ---
-# <a name="downlevellocalenametolcid-function"></a>DownlevelLocaleNameToLCID función)
+# <a name="downlevellocalenametolcid-function"></a>Función DownlevelLocaleNameToLCID
 
-Convierte un [nombre de configuración regional](locale-names.md) en un [identificador de configuración regional](locale-identifiers.md) que se puede utilizar para obtener información del sistema operativo.
+Convierte un nombre [de configuración regional](locale-names.md) en un identificador de [configuración](locale-identifiers.md) regional que se puede usar para obtener información del sistema operativo.
 
 > [!Note]  
-> Esta función solo la usan las aplicaciones que se ejecutan en sistemas operativos anteriores a Windows Vista. Su uso requiere un paquete de descarga. Las aplicaciones que solo se ejecutan en Windows Vista y versiones posteriores deben llamar a [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) para recuperar un identificador de configuración regional.
+> Esta función solo la usan las aplicaciones que se ejecutan en sistemas operativos Windows Vista. Su uso requiere un paquete de descarga. Las aplicaciones que solo se ejecutan Windows Vista y versiones posteriores deben llamar a [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) para recuperar un identificador de configuración regional.
 
  
 
@@ -45,17 +45,17 @@ LCID DownlevelLocaleNameToLCID(
 
 <dl> <dt>
 
-*lpName* \[ de\]
+*lpName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que representa un [nombre de configuración regional](locale-names.md).
+Puntero a una cadena terminada en NULL que representa un [nombre de configuración regional.](locale-names.md)
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Marcas que especifican el tipo de nombre. El valor predeterminado es el nombre de la configuración regional de nivel inferior \_ \_ .
+Marcas que especifican el tipo de nombre. El valor predeterminado es DOWNLEVEL \_ LOCALE \_ NAME.
 
 </dd> </dl>
 
@@ -65,17 +65,17 @@ Devuelve el identificador de configuración regional que corresponde al nombre d
 
 La función devuelve 0 si no se realiza correctamente. Para obtener información de error extendida, la aplicación puede llamar a [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), que puede devolver uno de los siguientes códigos de error:
 
--   ERROR en \_ marcas no válidas \_ . Los valores proporcionados para marcas no eran válidos.
--   ERROR \_ de \_ parámetro no válido. Cualquiera de los valores de parámetro no era válido.
+-   ERROR \_ MARCAS NO \_ VÁLIDAS. Los valores proporcionados para las marcas no eran válidos.
+-   ERROR \_ PARÁMETRO \_ NO VÁLIDO. Cualquiera de los valores de parámetro no era válido.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Esta función no admite configuraciones regionales neutras. La función [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) equivalente admite [configuraciones regionales personalizadas](custom-locales.md), pero solo para Windows Vista y versiones posteriores.
+> Esta función no admite configuraciones regionales neutras. La función [**LocaleNameToLCID equivalente**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) admite configuraciones [regionales](custom-locales.md)personalizadas, pero solo para Windows Vista y versiones posteriores.
 
  
 
-El archivo de encabezado y DLL necesarios forman parte de la descarga de la "API de asignación de datos de Microsoft NLS Downlevel", disponible en el [centro de descarga de Microsoft](https://www.microsoft.com/downloads/details.aspx?FamilyID=eb72cda0-834e-4c35-9419-ff14bc349c9d&DisplayLang=en).
+El archivo de encabezado y el archivo DLL necesarios forman parte de la descarga "Api de asignación de datos de nivel inferior de Microsoft NLS", disponible en el Centro [de descarga de Microsoft](https://www.microsoft.com/downloads/details.aspx?FamilyID=eb72cda0-834e-4c35-9419-ff14bc349c9d&DisplayLang=en).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,10 +83,10 @@ El archivo de encabezado y DLL necesarios forman parte de la descarga de la "API
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                |
-| Redistribuible<br/>          | API de asignación de datos de Microsoft NLS Downlevel Windows XP con SP2 y laterorWindows vista<br/> |
-| Encabezado<br/>                   | <dl> <dt>Nlsdl. h</dt> </dl>                  |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                |
+| Redistribuible<br/>          | API de asignación de datos de nivel inferior de Microsoft NLS enWindows XP con SP2 y laterorWindows Vista<br/> |
+| Header<br/>                   | <dl> <dt>Nlsdl.h</dt> </dl>                  |
 | Archivo DLL<br/>                      | <dl> <dt>NlsMap.dll</dt> </dl>               |
 
 
@@ -95,13 +95,13 @@ El archivo de encabezado y DLL necesarios forman parte de la descarga de la "API
 
 <dl> <dt>
 
-[Compatibilidad con National Language](national-language-support.md)
+[Compatibilidad con idiomas nacionales](national-language-support.md)
 </dt> <dt>
 
-[Funciones de soporte de National Language](national-language-support-functions.md)
+[Funciones de compatibilidad con idiomas nacionales](national-language-support-functions.md)
 </dt> <dt>
 
-[Asignar datos de configuración regional](mapping-locale-data.md)
+[Asignación de datos de configuración regional](mapping-locale-data.md)
 </dt> <dt>
 
 [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid)

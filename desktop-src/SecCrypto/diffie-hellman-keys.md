@@ -1,90 +1,90 @@
 ---
-description: Explica cómo generar, intercambiar, importar y exportar claves de Diffie-Hellman.
+description: Explica cómo generar, intercambiar, importar y exportar claves Diffie-Hellman datos.
 ms.assetid: 623a8c9e-3f6a-470b-be30-dec13342bb90
-title: Claves de Diffie-Hellman
+title: Diffie-Hellman claves
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f00eaddd580ac74e18e26498175f87b5d81b8e20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4082650b030ab1643b83cb154718176d445c98788b15a7bcadd1db97c30bab7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875505"
 ---
-# <a name="diffie-hellman-keys"></a>Claves de Diffie-Hellman
+# <a name="diffie-hellman-keys"></a>Diffie-Hellman claves
 
--   [Generar claves de Diffie-Hellman](#generating-diffie-hellman-keys)
--   [Intercambio de claves de Diffie-Hellman](#exchanging-diffie-hellman-keys)
--   [Exportar una clave privada Diffie-Hellman](#exporting-a-diffie-hellman-private-key)
+-   [Generación de Diffie-Hellman claves](#generating-diffie-hellman-keys)
+-   [Intercambio de Diffie-Hellman claves](#exchanging-diffie-hellman-keys)
+-   [Exportación de una Diffie-Hellman privada](#exporting-a-diffie-hellman-private-key)
 -   [Código de ejemplo](#example-code)
 
-## <a name="generating-diffie-hellman-keys"></a>Generar claves de Diffie-Hellman
+## <a name="generating-diffie-hellman-keys"></a>Generación de Diffie-Hellman claves
 
-Para generar una clave de Diffie-Hellman, realice los pasos siguientes:
+Para generar una Diffie-Hellman clave, realice los pasos siguientes:
 
-1.  Llame a la función [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para obtener un identificador para el proveedor de servicios criptográficos de Microsoft Diffie-Hellman.
-2.  Genere la nueva clave. Hay dos maneras de lograrlo: Si tiene CryptoAPI, debe generar todos los valores nuevos para G, P y X, o bien usar los valores existentes para G y P, y generar un nuevo valor para X.
+1.  Llame a [**la función CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para obtener un identificador para el proveedor de servicios criptográficos Diffie-Hellman Microsoft.
+2.  Genere la nueva clave. Hay dos maneras de lograr esto: haciendo que CryptoAPI genere todos los valores nuevos para G, P y X o mediante los valores existentes para G y P, y generando un nuevo valor para X.
 
-    **Para generar la clave generando todos los valores nuevos**
+    **Para generar la clave mediante la generación de todos los valores nuevos**
 
-    1.  Llame a la función [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey) , pasando **CALG \_ DH \_ SF** (almacenar y reenviar) o **CALG \_ DH \_ EPHEM** (efímero) en el parámetro *algid* . La clave se generará con nuevos valores aleatorios para G y P, un valor calculado recientemente para X y su identificador se devolverá en el parámetro *phKey* .
-    2.  La nueva clave ya está lista para su uso. Los valores de G y P deben enviarse al destinatario junto con la clave (o enviados por algún otro método) al realizar un [*intercambio de claves*](../secgloss/e-gly.md).
+    1.  Llame a [**la función CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey) y pase **CALG DH \_ \_ SF** (almacenar y reenviar) o **CALG DH \_ \_ EPHEM** (efímero) en el *parámetro Algid.* La clave se generará mediante nuevos valores aleatorios para G y P, un valor recién calculado para X y su identificador se devolverá en el *parámetro phKey.*
+    2.  La nueva clave ya está lista para su uso. Los valores de G y P deben enviarse al destinatario junto con la clave (o enviarse mediante algún otro método) al realizar un intercambio [*de claves.*](../secgloss/e-gly.md)
 
-    **Para generar la clave con valores predefinidos para G y P**
+    **Para generar la clave mediante valores predefinidos para G y P**
 
-    1.  Llame [**a CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey) pasando **CALG \_ DH \_ SF** (almacenar y reenviar) o **CALG \_ DH \_ EPHEM** (efímero) en el parámetro *algid* y **CRYPT \_ PREGEN** para el parámetro *dwFlags* . Se generará un identificador de clave y se devolverá en el parámetro *phKey* .
-    2.  Inicialice una estructura de [**\_ \_ BLOB de datos de cifrado**](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) con el miembro **PbData** establecido en el valor P. El [*BLOB*](../secgloss/b-gly.md) no contiene información de encabezado y el miembro **pbData** está en formato [*Little-Endian*](../secgloss/l-gly.md) .
-    3.  El valor de P se establece mediante una llamada a la función [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) , pasando el identificador de clave recuperado en el paso a en el parámetro *hKey* , la marca de **KP \_ P** en el parámetro *dwParam* y un puntero a la estructura que contiene el valor de P en el parámetro *pbData* .
-    4.  Inicialice una estructura de [**\_ \_ BLOB de datos de cifrado**](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) con el miembro **PbData** establecido en el valor G. El BLOB no contiene información de encabezado y el miembro **pbData** está en formato Little-Endian.
-    5.  El valor de G se establece mediante una llamada a la función [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) , pasando el identificador de clave recuperado en el paso a en el parámetro *hKey* , la marca de **KP \_ G** en el parámetro *dwParam* y un puntero a la estructura que contiene el valor de G en el parámetro *pbData* .
-    6.  El valor de X se genera mediante una llamada a la función [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) , pasando el identificador de clave recuperado en el paso a en el parámetro *hKey* , la marca de **KP \_ X** en el parámetro *dwParam* y **null** en el parámetro *pbData* .
-    7.  Si todas las llamadas de función se realizaron correctamente, la clave pública Diffie-Hellman está lista para su uso.
+    1.  Llame a [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey) pasando **CALG \_ DH \_ SF** (almacenar y reenviar) o **CALG \_ DH \_ EPHEM** (efímero) en el parámetro *Algid* y **CRYPT \_ PREGEN** para el *parámetro dwFlags.* Se generará un identificador de clave y se devolverá en el *parámetro phKey.*
+    2.  Inicialice [**una estructura CRYPT DATA \_ \_ BLOB**](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) con el **miembro pbData** establecido en el valor P. El [*BLOB*](../secgloss/b-gly.md) no contiene información de encabezado y el **miembro pbData** está en formato [*little-endian.*](../secgloss/l-gly.md)
+    3.  El valor de P se establece llamando a la función [**CryptSetKeyParam,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) pasando el identificador de clave recuperado en el paso a en el *parámetro hKey,* la marca **KP \_ P** en el parámetro *dwParam* y un puntero a la estructura que contiene el valor de P en el *parámetro pbData.*
+    4.  Inicialice [**una estructura CRYPT DATA \_ \_ BLOB**](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) con el **miembro pbData** establecido en el valor G. El BLOB no contiene información de encabezado y el **miembro pbData** está en formato little-endian.
+    5.  El valor de G se establece llamando a la función [**CryptSetKeyParam,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) pasando el identificador de clave recuperado en el paso a en el *parámetro hKey,* la marca **KP \_ G** en el parámetro *dwParam* y un puntero a la estructura que contiene el valor de G en el *parámetro pbData.*
+    6.  El valor de X se genera mediante una llamada a la función [**CryptSetKeyParam,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) pasando el identificador de clave recuperado en el paso a en el *parámetro hKey,* la marca **KP \_ X** en el parámetro *dwParam* y **NULL** en el *parámetro pbData.*
+    7.  Si todas las llamadas de función se han hecho correctamente, Diffie-Hellman clave pública está lista para su uso.
 
-3.  Cuando ya no se necesite la clave, debe destruirla pasando el identificador de la clave a la función [**CryptDestroyKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey) .
+3.  Cuando la clave ya no sea necesaria, destruyéla pasando el identificador de clave a la [**función CryptDestroyKey.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey)
 
-Si se especificó **CALG \_ DH \_ SF** en los procedimientos anteriores, los valores de clave se conservan en el almacenamiento con cada llamada a [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam). Los valores G y P se pueden recuperar mediante la función [**CryptGetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetkeyparam) . Algunos CSP pueden tener valores G y P codificados de forma rígida. En este caso, se devolverá un error de **NTE \_ FIXEDPARAMETER** si se llama a **CryptSetKeyParam** con **KP \_ G** o **KP \_ P** especificados en el parámetro *dwParam* . Si se llama a **CryptDestroyKey** , se destruye el identificador de la clave, pero los valores de clave se conservan en el CSP. Sin embargo, si se especificó **CALG \_ DH \_ EPHEM** , se destruye el identificador de la clave y se borran todos los valores del CSP.
+Si **se \_ especificó CALG DH \_ SF** en los procedimientos anteriores, los valores de clave se conservan en el almacenamiento con cada llamada a [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam). A continuación, los valores G y P se pueden recuperar mediante la [**función CryptGetKeyParam.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetkeyparam) Algunos CSP pueden tener valores G y P codificados de forma fuerte. En este caso, se devolverá un error **\_ FIXEDPARAMETER** de NTE si se llama a **CryptSetKeyParam** con **KP \_ G** o **KP \_ P** especificado en el *parámetro dwParam.* Si se llama a **CryptDestroyKey,** se destruye el identificador de la clave, pero los valores de clave se conservan en el CSP. Sin embargo, **si se especificó CALG \_ DH \_ EPHEM,** se destruye el identificador de la clave y se borran todos los valores del CSP.
 
-## <a name="exchanging-diffie-hellman-keys"></a>Intercambio de claves de Diffie-Hellman
+## <a name="exchanging-diffie-hellman-keys"></a>Intercambio de Diffie-Hellman claves
 
-El propósito del algoritmo Diffie-Hellman es hacer posible que dos o más entidades creen y compartan una clave de sesión secreta idéntica compartiendo información a través de una red que no es segura. La información que se comparte a través de la red está en forma de un par de valores constantes y una Diffie-Hellman clave pública. El proceso que usan dos entidades de intercambio de claves es el siguiente:
+El propósito del algoritmo Diffie-Hellman es hacer posible que dos o más partes creen y compartan una clave de sesión secreta idéntica mediante el uso compartido de información a través de una red que no es segura. La información que se comparte a través de la red tiene el formato de un par de valores constantes y un Diffie-Hellman clave pública. El proceso utilizado por dos partes de intercambio de claves es el siguiente:
 
--   Ambas partes aceptan el Diffie-Hellman parámetros, que son un número primo (P) y un número de generador (G).
--   La entidad 1 envía su clave pública Diffie-Hellman a la entidad 2.
--   La entidad 2 calcula la clave de sesión secreta usando la información contenida en la clave privada y la clave pública de la entidad 1.
--   La entidad 2 envía su clave pública Diffie-Hellman a la entidad 1.
--   La entidad 1 calcula la clave de sesión secreta mediante la información contenida en su clave privada y la clave pública de la entidad 2.
--   Ambas partes tienen ahora la misma clave de sesión, que se puede usar para cifrar y descifrar los datos. Los pasos necesarios para ello se muestran en el procedimiento siguiente.
+-   Ambas partes están de acuerdo con Diffie-Hellman parámetros que son un número primo (P) y un número de generador (G).
+-   La parte 1 envía su Diffie-Hellman clave pública a la entidad 2.
+-   La parte 2 calcula la clave de sesión secreta mediante la información contenida en su clave privada y la clave pública de la entidad 1.
+-   La parte 2 envía su Diffie-Hellman clave pública a la entidad 1.
+-   La parte 1 calcula la clave de sesión secreta mediante la información contenida en su clave privada y la clave pública de la entidad 2.
+-   Ambas partes ahora tienen la misma clave de sesión, que se puede usar para cifrar y descifrar datos. Los pasos necesarios para ello se muestran en el procedimiento siguiente.
 
-**Para preparar una clave pública de Diffie-Hellman para la transmisión**
+**Para preparar una clave Diffie-Hellman pública para la transmisión**
 
-1.  Llame a la función [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para obtener un identificador para el proveedor de servicios criptográficos de Microsoft Diffie-Hellman.
-2.  Cree una clave de Diffie-Hellman llamando a la función [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey) para crear una nueva clave o llamando a la función [**CryptGetUserKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetuserkey) para recuperar una clave existente.
-3.  Obtiene el tamaño necesario para contener el BLOB de clave Diffie-Hellman llamando a [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey), pasando **null** para el parámetro *pbData* . El tamaño necesario se devolverá en *pdwDataLen*.
+1.  Llame a [**la función CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para obtener un identificador para el proveedor de servicios criptográficos Diffie-Hellman Microsoft.
+2.  Cree una Diffie-Hellman mediante una llamada a la función [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey) para crear una clave nueva o llamando a la función [**CryptGetUserKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetuserkey) para recuperar una clave existente.
+3.  Obtenga el tamaño necesario para contener el blob Diffie-Hellman clave mediante una llamada a [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey)y pase **NULL** para el *parámetro pbData.* El tamaño necesario se devolverá en *pdwDataLen.*
 4.  Asigne memoria para el BLOB de clave.
-5.  Cree un [*BLOB de clave pública*](../secgloss/p-gly.md) Diffie-Hellman llamando a la función [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey) , pasando **PUBLICKEYBLOB** en el parámetro *dwBlobType* y el identificador a la clave de Diffie-Hellman en el parámetro *hKey* . Esta llamada de función provoca el cálculo del valor de clave pública (G ^ X) mod P.
-6.  Si todas las llamadas de función anteriores se realizaron correctamente, el BLOB de clave pública de Diffie-Hellman ya está listo para su codificación y transmisión.
+5.  Cree un [*blob*](../secgloss/p-gly.md) de clave pública Diffie-Hellman llamando a la función [**CryptExportKey,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey) pasando **PUBLICKEYBLOB** en el parámetro *dwBlobType* y el identificador a la clave Diffie-Hellman en el *parámetro hKey.* Esta llamada de función provoca el cálculo del valor de clave pública, (G^X) mod P.
+6.  Si todas las llamadas de función anteriores se realizaron correctamente, Diffie-Hellman blob de clave pública ya está listo para codificarse y transmitirse.
 
-**Para importar una clave pública Diffie-Hellman y calcular la clave de sesión secreta**
+**Para importar una clave Diffie-Hellman pública y calcular la clave de sesión secreta**
 
-1.  Llame a la función [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para obtener un identificador para el proveedor de servicios criptográficos de Microsoft Diffie-Hellman.
-2.  Cree una clave de Diffie-Hellman llamando a la función [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey) para crear una nueva clave o llamando a la función [**CryptGetUserKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetuserkey) para recuperar una clave existente.
-3.  Para importar la clave pública de Diffie-Hellman en el CSP, llame a la función [**CryptImportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptimportkey) , pasando un puntero al BLOB de clave pública en el parámetro *pbData* , la longitud del BLOB en el parámetro *dwDataLen* y el identificador de la clave de Diffie-Hellman en el parámetro *hPubKey* . Esto hace que se realice el cálculo (Y ^ X) mod P, con lo que se crea la clave secreta compartida y se completa el [*intercambio de claves*](../secgloss/e-gly.md). Esta llamada de función devuelve un identificador para la nueva clave de sesión secreta en el parámetro *hKey* .
-4.  En este punto, la Diffie-Hellman importada es de tipo **CALG \_ AGREEDKEY \_ any**. Antes de que se pueda usar la clave, debe convertirse en un tipo de clave de sesión. Esto se logra mediante una llamada a la función [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) con *DwParam* establecida en **KP \_ ALGID** y con *pbData* establecido en un puntero a un valor de [**\_ identificador de alg**](alg-id.md) que representa una clave de sesión, como **CALG \_ RC4**. La clave se debe convertir antes de usar la clave compartida en la función [**CryptEncrypt**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencrypt) o [**CryptDecrypt**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecrypt) . Se producirá un error en las llamadas realizadas a cualquiera de estas funciones antes de convertir el tipo de clave.
-5.  La clave de sesión secreta ahora está lista para usarse para el cifrado o el descifrado.
-6.  Cuando la clave ya no sea necesaria, destruya el identificador de clave mediante una llamada a la función [**CryptDestroyKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey) .
+1.  Llame a [**la función CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para obtener un identificador para el proveedor de servicios criptográficos Diffie-Hellman Microsoft.
+2.  Cree una Diffie-Hellman mediante una llamada a la función [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey) para crear una clave nueva o llamando a la función [**CryptGetUserKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetuserkey) para recuperar una clave existente.
+3.  Para importar la clave pública Diffie-Hellman en el CSP, llame a la función [**CryptImportKey,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptimportkey) pasando un puntero al blob de clave pública en el parámetro *pbData,* la longitud del BLOB en el parámetro *dwDataLen* y el identificador a la clave Diffie-Hellman en el *parámetro hPubKey.* Esto hace que se realice el cálculo,(Y^X) mod P, lo que crea la clave secreta compartida y completa el [*intercambio de claves.*](../secgloss/e-gly.md) Esta llamada de función devuelve un identificador a la nueva clave de sesión, secret, en el *parámetro hKey.*
+4.  En este momento, el valor Diffie-Hellman es de tipo **CALG \_ AGREEDKEY \_ ANY**. Para poder usar la clave, debe convertirse en un tipo de clave de sesión. Para ello, se llama a la función [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) con *dwParam* establecido en **KP \_ ALGID** y *con pbData* establecido en un puntero a un valor de id. de [**ALG \_**](alg-id.md) que representa una clave de sesión, como **CALG \_ RC4.** La clave debe convertirse antes de usar la clave compartida en la [**función CryptEncrypt**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencrypt) o [**CryptDecrypt.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecrypt) Se producirá un error en las llamadas realizadas a cualquiera de estas funciones antes de convertir el tipo de clave.
+5.  La clave de sesión secreta ya está lista para usarse para el cifrado o descifrado.
+6.  Cuando la clave ya no sea necesaria, destruya el identificador de clave mediante una llamada a la [**función CryptDestroyKey.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey)
 
-## <a name="exporting-a-diffie-hellman-private-key"></a>Exportar una clave privada Diffie-Hellman
+## <a name="exporting-a-diffie-hellman-private-key"></a>Exportación de una Diffie-Hellman privada
 
-Para exportar una clave privada Diffie-Hellman, realice los pasos siguientes:
+Para exportar una Diffie-Hellman privada, realice los pasos siguientes:
 
-1.  Llame a la función [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para obtener un identificador para el proveedor de servicios criptográficos de Microsoft Diffie-Hellman.
-2.  Cree una clave de Diffie-Hellman llamando a la función [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey) para crear una nueva clave o llamando a la función [**CryptGetUserKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetuserkey) para recuperar una clave existente.
-3.  Cree un [*BLOB de clave privada*](../secgloss/p-gly.md) Diffie-Hellman llamando a la función [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey) , pasando **PRIVATEKEYBLOB** en el parámetro *dwBlobType* y el identificador a la clave de Diffie-Hellman en el parámetro *hKey* .
-4.  Cuando el identificador de clave ya no sea necesario, llame a la función [**CryptDestroyKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey) para destruir el identificador de clave.
+1.  Llame a [**la función CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para obtener un identificador para el proveedor de servicios criptográficos Diffie-Hellman Microsoft.
+2.  Cree una Diffie-Hellman mediante una llamada a la función [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey) para crear una clave nueva o llamando a la función [**CryptGetUserKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetuserkey) para recuperar una clave existente.
+3.  Cree un [*blob*](../secgloss/p-gly.md) de clave privada Diffie-Hellman llamando a la función [**CryptExportKey,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey) pasando **PRIVATEKEYBLOB** en el parámetro *dwBlobType* y el identificador a la clave Diffie-Hellman en el *parámetro hKey.*
+4.  Cuando el identificador de clave ya no sea necesario, llame a la [**función CryptDestroyKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey) para destruir el identificador de clave.
 
 ## <a name="example-code"></a>Código de ejemplo
 
-En el ejemplo siguiente se muestra cómo crear, exportar, importar y usar una clave de Diffie-Hellman para realizar un intercambio de claves.
+En el ejemplo siguiente se muestra cómo crear, exportar, importar y usar una Diffie-Hellman clave para realizar un intercambio de claves.
 
 
 ```C++

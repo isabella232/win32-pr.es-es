@@ -1,25 +1,25 @@
 ---
-title: Interfaces multimedia
-description: Interfaces multimedia
+title: Multimedia Interfaces
+description: Multimedia Interfaces
 ms.assetid: fe57d8b4-bc39-4b8d-bb57-d81c32c9f578
 keywords:
-- Windows multimedia, interfaces
+- Windows multimedia,interfaces
 - multimedia, interfaces
 - referencia multimedia, interfaces
-- referencia de multimedia, interfaces
+- referencia para multimedia, interfaces
 - interfaces multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa309e43fed00ae69853f58af9fc568e60f2a922
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e8f78e967635aca888dcea4a92068f12f9b20ad0e6ea728642fa01ae2d153a9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806785"
 ---
-# <a name="multimedia-interfaces"></a>Interfaces multimedia
+# <a name="multimedia-interfaces"></a>Multimedia Interfaces
 
-Las interfaces siguientes se utilizan con multimedia.
+Las interfaces siguientes se usan con multimedia.
 
 -   [**IAVIEditStream**](/windows/desktop/api/Vfw/nn-vfw-iavieditstream)
 -   [**IAVIFile**](/windows/desktop/api/Vfw/nn-vfw-iavifile)
@@ -34,9 +34,9 @@ Las interfaces siguientes se utilizan con multimedia.
 [Referencia multimedia](multimedia-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

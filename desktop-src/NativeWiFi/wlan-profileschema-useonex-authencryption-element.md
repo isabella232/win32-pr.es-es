@@ -1,5 +1,5 @@
 ---
-description: Indica si se usa la autenticación 802.1 X.
+description: Indica si se usa la autenticación 802.1X.
 ms.assetid: dbddaf5a-7574-4282-ab4d-f6f697ed94ab
 title: Elemento useOneX (authEncryption)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: cb327be4006e8da0074815a74e49d3ccdc5d3c84
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 961f1b6be52da97ada2c230579ac281652a07fcbae67ac32d2399eb2968b1946
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912575"
 ---
 # <a name="useonex-authencryption-element"></a>Elemento useOneX (authEncryption)
 
-El elemento useOneX (authEncryption) indica si se usa la autenticación 802.1 X.
+El elemento useOneX (authEncryption) indica si se usa la autenticación 802.1X.
 
 ``` syntax
 <xs:element name="useOneX"
@@ -30,11 +30,11 @@ El elemento useOneX (authEncryption) indica si se usa la autenticación 802.1 X.
  />
 ```
 
-El elemento se define mediante el elemento [**authEncryption**](wlan-profileschema-authencryption-security-element.md) .
+El elemento [**authEncryption**](wlan-profileschema-authencryption-security-element.md) define el elemento .
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el elemento **useOneX** , consulte [ejemplos de perfiles inalámbricos](wireless-profile-samples.md).
+Para ver los perfiles de ejemplo que usan **el elemento useOneX,** vea [Ejemplos de perfil inalámbrico](wireless-profile-samples.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,8 +42,8 @@ Para ver los perfiles de ejemplo que usan el elemento **useOneX** , consulte [ej
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 

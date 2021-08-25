@@ -1,9 +1,9 @@
 ---
 title: helpcontext (atributo)
-description: El atributo \ HelpContext \ especifica un identificador de contexto que permite al usuario ver información sobre este elemento en el archivo de ayuda.
+description: El atributo \ helpcontext\ especifica un identificador de contexto que permite al usuario ver información sobre este elemento en el archivo de Ayuda.
 ms.assetid: 44a60c75-be69-4cd9-afb0-5eb988830e6c
 keywords:
-- atributo ContextoDeAyuda (MIDL)
+- atributo helpcontext MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75a8811a73515528981a8214caba3fe2778e2ea9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3caa5dd32257fb5d75bbf77cde4ae5e71c6e97574cd1c263ead47aacedccadc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895255"
 ---
 # <a name="helpcontext-attribute"></a>helpcontext (atributo)
 
-El \[  \] atributo HelpContext especifica un identificador de contexto que permite al usuario ver información sobre este elemento en el archivo de ayuda.
+El \[ **atributo helpcontext** especifica un identificador de contexto que permite al \] usuario ver información sobre este elemento en el archivo de Ayuda.
 
 ``` syntax
 [
@@ -39,53 +39,53 @@ element element-name
 
 <dl> <dt>
 
-*UUID-número* 
+*uuid-number* 
 </dt> <dd>
 
-Especifica un número de identificación único universal para la [**biblioteca**](library.md), \[ [**importlib**](importlib.md) \] , [**interfaz**](interface.md), [**dispinterface**](dispinterface.md), [**módulo**](module.md), [**typedef**](typedef.md), **métodos**, **\[ propiedades \]** o [**coclase**](coclass.md).
+Especifica un número de identificación único universal para la biblioteca [**,**](library.md) \[ [**importlib**](importlib.md) \] , [**interface**](interface.md), [**dispinterface**](dispinterface.md), [**module**](module.md), [**typedef**](typedef.md), **methods**, **\[ property \]** o [**coclass**](coclass.md).
 
 </dd> <dt>
 
-*HelpContext: valor* 
+*helpcontext-value* 
 </dt> <dd>
 
 Entero único que identifica el texto de ayuda asociado al elemento MIDL actual.
 
 </dd> <dt>
 
-*lista de atributos* 
+*attribute-list* 
 </dt> <dd>
 
-Especifica una lista de uno o más atributos que se aplican al elemento MIDL en conjunto.
+Especifica una lista de uno o varios atributos que se aplican al elemento MIDL en su conjunto.
 
 </dd> <dt>
 
-*Element* 
+*Elemento* 
 </dt> <dd>
 
-Una de las siguientes directivas: [**Library**](library.md), \[ [**importlib**](importlib.md) \] , [**interface**](interface.md), [**dispinterface**](dispinterface.md), [**Module**](module.md), [**typedef**](typedef.md), **Method**, **Property** o [**CoClass**](coclass.md).
+Una de las directivas siguientes: [**library**](library.md), \[ [**importlib**](importlib.md) \] , [**interface**](interface.md), [**dispinterface**](dispinterface.md), [**module**](module.md), [**typedef**](typedef.md), **method**, **property** o [**coclass**](coclass.md).
 
 </dd> <dt>
 
-*nombre del elemento* 
+*element-name* 
 </dt> <dd>
 
-El nombre que otros componentes de software pueden usar para delimitar el elemento actual.
+Nombre que otros componentes de software pueden usar para delinear el elemento actual.
 
 </dd> <dt>
 
-*Figura* 
+*Definiciones* 
 </dt> <dd>
 
-Especifica las instrucciones que componen la definición del elemento.
+Especifica las instrucciones que son la definición del elemento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El \[  \] atributo HelpContext se puede aplicar a los elementos siguientes: [**Library**](library.md), \[ [**importlib**](importlib.md) \] , [**interface**](interface.md), [**dispinterface**](dispinterface.md), [**Module**](module.md), [**typedef**](typedef.md), **Method**, **Property** o [**CoClass**](coclass.md).
+El atributo helpcontext se puede aplicar a los siguientes \[  \] elementos: [**library**](library.md), \[ [**importlib**](importlib.md) \] , [**interface**](interface.md), [**dispinterface**](dispinterface.md), [**module**](module.md), [**typedef**](typedef.md), **method**, **property** o [**coclass**](coclass.md).
 
-*HelpContext-Value* es un identificador de contexto de 32 bits dentro del archivo de ayuda que se puede recuperar con las [**funciones GetDocumentation**](/windows/win32/api/oaidl/nf-oaidl-itypelib-getdocumentation) en las interfaces [**ITypeLib**](/windows/win32/api/oaidl/nn-oaidl-itypelib) y [**ITypeInfo**](/windows/win32/api/oaidl/nn-oaidl-itypeinfo) .
+*Helpcontext-value* es un identificador de contexto de 32 bits dentro del archivo de Ayuda que se puede recuperar con las funciones [**GetDocumentation**](/windows/win32/api/oaidl/nf-oaidl-itypelib-getdocumentation) en las interfaces [**ITypeLib**](/windows/win32/api/oaidl/nn-oaidl-itypelib) e [**ITypeInfo.**](/windows/win32/api/oaidl/nn-oaidl-itypeinfo)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -110,7 +110,7 @@ coclass Hello
 [**coclase**](coclass.md)
 </dt> <dt>
 
-[**dispinterface**](dispinterface.md)
+[**Dispinterface**](dispinterface.md)
 </dt> <dt>
 
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
@@ -119,24 +119,24 @@ coclass Hello
 [**importlib**](importlib.md)
 </dt> <dt>
 
-[**interfaz**](interface.md)
+[**Interfaz**](interface.md)
 </dt> <dt>
 
-[**biblioteca**](library.md)
+[**Biblioteca**](library.md)
 </dt> <dt>
 
-[**destina**](module.md)
+[**Módulo**](module.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[**typedef**](typedef.md)
+[**Typedef**](typedef.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

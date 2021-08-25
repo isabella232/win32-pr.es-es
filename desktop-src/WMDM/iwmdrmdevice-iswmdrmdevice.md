@@ -1,11 +1,11 @@
 ---
-title: IWMDRMDevice IsWMDRMDevice, método
-description: El método IsWMDRMDevice determina si el dispositivo admite Windows Media DRM 10 para dispositivos portátiles.
+title: Método IWMDRMDevice IsWMDRMDevice
+description: El método IsWMDRMDevice determina si el dispositivo admite Windows Drm multimedia 10 para dispositivos portátiles.
 ms.assetid: 247e7a77-e805-4848-893f-f5522c161232
 keywords:
-- Método IsWMDRMDevice de Windows Media Administrador de dispositivos
-- Método IsWMDRMDevice de Windows Media Administrador de dispositivos, interfaz IWMDRMDevice
-- Interfaz IWMDRMDevice de Windows Media Administrador de dispositivos, método IsWMDRMDevice
+- Método IsWMDRMDevice windows Media Administrador de dispositivos
+- Método IsWMDRMDevice windows Media Administrador de dispositivos interfaz , IWMDRMDevice
+- Interfaz IWMDRMDevice windows Media Administrador de dispositivos método , IsWMDRMDevice
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca9cb79598ea41a996748e383c8fdfc63364dd6c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60ee225267ce2301e9a2dad392d72ce72b0e698872cd3fd54ab3e50a07043477
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957265"
 ---
-# <a name="iwmdrmdeviceiswmdrmdevice-method"></a>IWMDRMDevice:: IsWMDRMDevice (método)
+# <a name="iwmdrmdeviceiswmdrmdevice-method"></a>IWMDRMDevice::IsWMDRMDevice (método)
 
-El método **IsWMDRMDevice** determina si el dispositivo admite Windows Media DRM 10 para dispositivos portátiles.
+El **método IsWMDRMDevice** determina si el dispositivo admite Windows DRM 10 multimedia para dispositivos portátiles.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,22 +43,22 @@ HRESULT IsWMDRMDevice(
 
 <dl> <dt>
 
-*pdwVersion* \[ enuncia\]
+*pdwVersion* \[ out\]
 </dt> <dd>
 
-Versión de Windows Media DRM 10 para dispositivos portátiles, que tiene el valor 0x00010000.
+Versión de Windows DRM 10 de multimedia para dispositivos portátiles, que tiene el valor de 0x00010000.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -70,8 +70,8 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**Interfaz IWMDRMDevice**](iwmdrmdevice.md)
+[**IWMDRMDevice (interfaz)**](iwmdrmdevice.md)
 </dt> </dl>
 
  

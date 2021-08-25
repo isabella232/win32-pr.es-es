@@ -1,7 +1,7 @@
 ---
 description: Recupera el tamaño de los datos binarios. En desuso.
 ms.assetid: 99a74043-ce87-4545-961f-dade54e77735
-title: 'IDirectXFileBinary:: (método) (DXFile. h)'
+title: Método IDirectXFileBinary::GetSize (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 664e2bf026df6d9e4b5bc07067ce1ce7fe7669db
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1af59f6a32d163275df02d1469ba4777bf5c5152535c2df52fcf7d7c40218e2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104548030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846945"
 ---
-# <a name="idirectxfilebinarygetsize-method"></a>IDirectXFileBinary:: (método)
+# <a name="idirectxfilebinarygetsize-method"></a>IDirectXFileBinary::GetSize (Método)
 
 Recupera el tamaño de los datos binarios. En desuso.
 
@@ -40,7 +40,7 @@ HRESULT GetSize(
 
 <dl> <dt>
 
-*PCB* \[ enuncia\]
+*sizesize* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
@@ -53,7 +53,7 @@ Puntero al tamaño devuelto de los datos binarios, en bytes.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser DXFILEERR \_ BADVALUE.
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser DXFILEERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

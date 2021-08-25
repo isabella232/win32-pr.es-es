@@ -1,9 +1,9 @@
 ---
-title: Función MpThreatEnumerate (MpClient. h)
-description: Devuelve información sobre la siguiente amenaza en la lista de enumeración. Se puede llamar a esta función varias veces hasta que se complete la enumeración de todas las amenazas.
+title: Función MpThreatEnumerate (MpClient.h)
+description: Devuelve información sobre la siguiente amenaza en la lista de enumeración. Se puede llamar a esta función repetidamente hasta que se complete la enumeración de todas las amenazas.
 ms.assetid: 33244F4F-4FB7-4FA7-BC56-B9A30ABC3644
 keywords:
-- Función MpThreatEnumerate características de entorno heredado de Windows
+- Función MpThreatEnumerate Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: acdbb7971371015a401c1a951ace8c55869fd405
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9525ad44901bd62044721e634559e1c803b88b05e9250097d939b3a5a04d229a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943835"
 ---
-# <a name="mpthreatenumerate-function"></a>MpThreatEnumerate función)
+# <a name="mpthreatenumerate-function"></a>Función MpThreatEnumerate
 
-Devuelve información sobre la siguiente amenaza en la lista de enumeración. Se puede llamar a esta función varias veces hasta que se complete la enumeración de todas las amenazas.
+Devuelve información sobre la siguiente amenaza en la lista de enumeración. Se puede llamar a esta función repetidamente hasta que se complete la enumeración de todas las amenazas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT WINAPI MpThreatEnumerate(
 
 <dl> <dt>
 
-*hThreatEnumHandle* \[ de\]
+*hThreatEnumHandle* \[ En\]
 </dt> <dd>
 
 Tipo: **MPHANDLE**
 
-Identificador de un contexto de enumeración de amenazas devuelto por [**MpThreatOpen**](mpthreatopen.md).
+Controlar un contexto de enumeración de amenazas devuelto [**por MpThreatOpen**](mpthreatopen.md).
 
 </dd> <dt>
 
-*ppThreatInfo* \[ enuncia\]
+*ppThreatInfo* \[ out\]
 </dt> <dd>
 
-Tipo: **PMPTHREAT \_ info \** _
+Tipo: **PMPTHREAT \_ \* INFO**
 
-Devuelve un puntero a una estructura de información de amenazas, [_ *MPTHREAT \_ info* *](mpthreat-info.md). La estructura contiene información como el identificador, el nombre y la gravedad de la amenaza.
+Devuelve un puntero a una estructura de información de amenazas, [**MPTHREAT \_ INFO**](mpthreat-info.md). La estructura contiene información como el identificador de amenaza, el nombre y la gravedad.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Devuelve un puntero a una estructura de información de amenazas, [_ *MPTHREAT \
 
 Tipo: **HRESULT**
 
-Si la función se ejecuta correctamente, el valor devuelto es **S \_ OK**.
+Si la función se realiza correctamente, el valor devuelto es **S \_ OK**.
 
-Si no hay más elementos para devolver, el valor devuelto es **S \_ false**.
+Si no hay más elementos para devolver el valor devuelto es **S \_ FALSE.**
 
-Si se produce un error en la función, el valor devuelto es un código **HRESULT** erróneo. El autor de la llamada puede usar la función [**MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
+Si se produce un error en la función, el valor devuelto es un **código HRESULT** con errores. El autor de la llamada puede [**usar la función MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,9 +75,9 @@ Si se produce un error en la función, el valor devuelto es un código **HRESULT
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
@@ -92,7 +92,7 @@ Si se produce un error en la función, el valor devuelto es un código **HRESULT
 [**MpThreatOpen**](mpthreatopen.md)
 </dt> <dt>
 
-[**información de MPTHREAT \_**](mpthreat-info.md)
+[**INFORMACIÓN DE \_ MPTHREAT**](mpthreat-info.md)
 </dt> </dl>
 
  

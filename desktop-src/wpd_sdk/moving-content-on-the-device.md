@@ -4,33 +4,33 @@ ms.assetid: 5072d308-d376-4141-96df-dbef23fb9f9b
 title: Mover contenido en el dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3eb4a9638e656d5cab8437448d64b79947df337b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0830dab93b4ac0cd11f988c34edef24b1eb11b8869f63efdc4b0b518fc9380b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928375"
 ---
 # <a name="moving-content-on-the-device"></a>Mover contenido en el dispositivo
 
-Otra operación común que realiza una aplicación WPD es la transferencia de contenido desde una ubicación del dispositivo a otra.
+Otra operación común que realiza una aplicación WPD es la transferencia de contenido de una ubicación del dispositivo a otra.
 
-Las operaciones de movimiento de contenido se realizan mediante las interfaces descritas en la tabla siguiente.
+Las operaciones de movimiento de contenido se logran mediante las interfaces descritas en la tabla siguiente.
 
 
 
 | Interfaz                                                                                      | Descripción                                       |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [**Interfaz IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Proporciona acceso a los métodos específicos del contenido.  |
-| [**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Proporciona acceso a los métodos específicos de la propiedad. |
+| [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Proporciona acceso a los métodos específicos del contenido.  |
+| [**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md) | Proporciona acceso a los métodos específicos de la propiedad. |
 
 
 
  
 
-La función MoveContentAlreadyOnDevice del módulo ContentTransfer. cpp de la aplicación de ejemplo muestra cómo una aplicación puede trasladar contenido de una ubicación a otra.
+La función MoveContentAlreadyOnDevice del módulo ContentTransfer.cpp de la aplicación de ejemplo muestra cómo una aplicación puede mover contenido de una ubicación a otra.
 
-La primera tarea que se realiza mediante la función MoveContentAlreadyOnDevice es consultar el controlador de dispositivo para ver si admite el movimiento de contenido. Esto se logra llamando a la función auxiliar SupportsCommand y pasando los \_ \_ objetos de movimiento de administración de objetos de comandos de WPD \_ \_ \_ como segundo argumento.
+La primera tarea que realiza la función MoveContentAlreadyOnDevice es consultar el controlador del dispositivo para ver si admite el movimiento de contenido. Para ello, llame a la función auxiliar SupportsCommand y pase WPD \_ COMMAND OBJECT MANAGEMENT MOVE OBJECTS como segundo \_ \_ \_ \_ argumento.
 
 
 ```C++
@@ -49,7 +49,7 @@ if (SupportsCommand(pDevice, WPD_COMMAND_OBJECT_MANAGEMENT_MOVE_OBJECTS) == FALS
 
 
 
-El paso siguiente conlleva solicitar al usuario que escriba dos identificadores de objeto. El primero es el identificador del contenido que se va a desplace. El segundo es el identificador de la ubicación a la que la aplicación debe trasladar este contenido.
+El siguiente paso implica pedir al usuario que escriba dos identificadores de objeto. El primero es el identificador del contenido que se va a mover. El segundo es el identificador de la ubicación a la que la aplicación debe mover este contenido.
 
 
 ```C++
@@ -77,7 +77,7 @@ if (FAILED(hr))
 
 
 
-Después, el ejemplo recupera un objeto [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) que se usa para tener acceso al método [**IPortableDeviceContent:: Move**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-move) .
+A continuación, el ejemplo recupera un [**objeto IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) que se usa para tener acceso al método [**IPortableDeviceContent::Move.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-move)
 
 
 ```C++
@@ -101,9 +101,9 @@ if (SUCCEEDED(hr))
 
 Por último, se mueve el contenido. Este proceso implica lo siguiente:
 
-1.  Crear un objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) que recibe una estructura PROPVARIANT para el objeto que se va a desplace.
+1.  Crear un [**objeto IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) que recibe una estructura PROPVARIANT para el objeto que se va a mover.
 2.  Agregar PROPVARIANT al objeto IPortableDevicePropVariantCollection.
-3.  Invocar el método IPortableDeviceContent:: Move.
+3.  Invocar el método IPortableDeviceContent::Move.
 
 
 ```C++
@@ -197,13 +197,13 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**Interfaz IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
-[**Interfaz IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
+[**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
 </dt> <dt>
 
-[**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
+[**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md)
 </dt> <dt>
 
 [**Guía de programación**](programming-guide.md)

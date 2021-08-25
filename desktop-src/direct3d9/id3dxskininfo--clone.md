@@ -1,7 +1,7 @@
 ---
 description: Clona un objeto de información de máscara.
 ms.assetid: 82d0a78a-95f3-4b09-bc1a-b4bc663e0850
-title: 'ID3DXSkinInfo:: Clone (método) (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::Clone (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: edd9776b75d027a32b32b58c59fc82daaebfa3ad
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 19a07c3d29c4c73b423ec5d93e2eda549243a00ff7ee3570cca9b9699fbd1be2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893305"
 ---
-# <a name="id3dxskininfoclone-method"></a>ID3DXSkinInfo:: Clone (método)
+# <a name="id3dxskininfoclone-method"></a>Método ID3DXSkinInfo::Clone
 
 Clona un objeto de información de máscara.
 
@@ -45,7 +45,7 @@ HRESULT Clone(
 
 Tipo: **[ **LPD3DXSKININFO**](id3dxskininfo.md)\***
 
-Dirección de un puntero a un objeto [**ID3DXSkinInfo**](id3dxskininfo.md) , que contendrá el objeto clonado si el método se realiza correctamente.
+Dirección de un puntero a un [**objeto ID3DXSkinInfo,**](id3dxskininfo.md) que contendrá el objeto clonado si el método se realiza correctamente.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Dirección de un puntero a un objeto [**ID3DXSkinInfo**](id3dxskininfo.md) , que
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

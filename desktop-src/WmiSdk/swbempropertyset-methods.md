@@ -5,21 +5,21 @@ ms.tgt_platform: multiple
 title: Métodos SWbemPropertySet
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 103ff8d16891cef6bf0bb8186f917c3301843f83
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7fb099a650676b2a002c0f4ebb443943e519a488bbe6252349343e6d8eced8a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897975"
 ---
 # <a name="swbempropertyset-methods"></a>Métodos SWbemPropertySet
 
-El objeto [**SWbemPropertySet**](swbempropertyset.md) expone los métodos siguientes.
+El [**objeto SWbemPropertySet**](swbempropertyset.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Add (método)**](swbempropertyset-add.md)
--   [**Item (método)**](swbempropertyset-item.md)
+-   [**Agregar método**](swbempropertyset-add.md)
+-   [**Método Item**](swbempropertyset-item.md)
 -   [**Remove (método)**](swbempropertyset-remove.md)
 
  

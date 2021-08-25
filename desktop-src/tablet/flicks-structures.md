@@ -1,26 +1,26 @@
 ---
-description: Esta sección contiene las estructuras utilizadas en el \_ mensaje de gesto de Tablet PC de WM \_ .
+description: Esta sección contiene las estructuras usadas en el mensaje FLICK de WM \_ \_ TABLET.
 ms.assetid: 47f03f17-6019-4586-a765-a1c3a6dadbf8
-title: Estructuras de gestos
+title: Estructuras de flicks
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b901522f31d29b094ec25befff97fe21a8f09d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67ee11876606240e62b5da2ce723868c9b28e535be0add288c75de5f5ca86210
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773845"
 ---
-# <a name="flicks-structures"></a>Estructuras de gestos
+# <a name="flicks-structures"></a>Estructuras de flicks
 
-Esta sección contiene las estructuras utilizadas en el [**\_ mensaje de \_ gesto de Tablet PC de WM**](wm-tablet-flick-message.md).
+Esta sección contiene las estructuras usadas en el mensaje [**\_ WM TABLET \_ FLICK**](wm-tablet-flick-message.md).
 
 
 
 | Estructura                           | Descripción                                                                                 |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| [**punto de gesto \_**](/windows/desktop/api/tabflicks/ns-tabflicks-flick_point) | Contiene los miembros de datos X e Y que describen el punto en el que se produjo el gesto.<br/> |
-| [**datos de GESTOs \_**](/windows/desktop/api/tabflicks/ns-tabflicks-flick_data)   | Contiene información detallada sobre el gesto de gestos y su entorno.<br/>       |
+| [**FLICK \_ POINT**](/windows/desktop/api/tabflicks/ns-tabflicks-flick_point) | Contiene los miembros de datos X e Y que describen el punto donde se produjo el gesto.<br/> |
+| [**FLICK \_ DATA**](/windows/desktop/api/tabflicks/ns-tabflicks-flick_data)   | Contiene información detallada sobre el gesto de gesto de gesto y su entorno.<br/>       |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Establece información sobre una devolución de llamada específica en el conjunto de animaciones.
 ms.assetid: 899f3a85-c878-4eeb-8bda-fc4e9083bd1f
-title: 'ID3DXKeyframedAnimationSet:: SetCallbackKey (método) (D3dx9anim. h)'
+title: Método ID3DXKeyframedAnimationSet::SetCallbackKey (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 49d3373e0ab0fa221e707ca6eda9ac9bb468a5a5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5998842927019868249278465eaf7bf9bd4ab62c3bfe83537a0eba420f87aeb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847765"
 ---
-# <a name="id3dxkeyframedanimationsetsetcallbackkey-method"></a>ID3DXKeyframedAnimationSet:: SetCallbackKey (método)
+# <a name="id3dxkeyframedanimationsetsetcallbackkey-method"></a>Método ID3DXKeyframedAnimationSet::SetCallbackKey
 
 Establece información sobre una devolución de llamada específica en el conjunto de animaciones.
 
@@ -41,19 +41,19 @@ HRESULT SetCallbackKey(
 
 <dl> <dt>
 
-*Animación* \[ de de\]
+*Animación* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de animación.
 
 </dd> <dt>
 
-*pCallbackKeys* \[ enuncia\]
+*pCallbackKeys* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **\_ devolución de llamada LPD3DXKEY**](d3dxkey-callback.md)**
+Tipo: **[ **LPD3DXKEY \_ CALLBACK**](d3dxkey-callback.md)**
 
 Puntero a la [**función de devolución de llamada**](d3dxkey-callback.md).
 
@@ -63,7 +63,7 @@ Puntero a la [**función de devolución de llamada**](d3dxkey-callback.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

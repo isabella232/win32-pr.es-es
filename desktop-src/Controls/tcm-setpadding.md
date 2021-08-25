@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TCM_SETPADDING (commctrl. h)
-description: Establece la cantidad de espacio (relleno) alrededor de la etiqueta y el icono de cada pestaña en un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro TabCtrl \_ SetPadding.
+title: TCM_SETPADDING mensaje (Commctrl.h)
+description: Establece la cantidad de espacio (relleno) alrededor del icono y la etiqueta de cada pestaña en un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro TabCtrl \_ SetPadding.
 ms.assetid: c7f84c0d-8bf4-429a-b403-a0019575e72e
 keywords:
-- TCM_SETPADDING controles de mensajes de Windows
+- TCM_SETPADDING controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 353cde946944bda7dc8d285f863d976e29353996
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 969ae3c7c240c38a6643682321c14e5744f2d2c2eec188004d1c3b2e6f2b3835
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876245"
 ---
-# <a name="tcm_setpadding-message"></a>\_Mensaje SETPADDING de TCM
+# <a name="tcm_setpadding-message"></a>Mensaje \_ SETPADDING de TCM
 
-Establece la cantidad de espacio (relleno) alrededor de la etiqueta y el icono de cada pestaña en un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro [**TabCtrl \_ SetPadding**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_setpadding) .
+Establece la cantidad de espacio (relleno) alrededor del icono y la etiqueta de cada pestaña en un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro [**TabCtrl \_ SetPadding.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_setpadding)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece la cantidad de espacio (relleno) alrededor de la etiqueta y el icono d
 *lParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) es un valor **int** que especifica la cantidad de relleno horizontal, en píxeles. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) es un valor **int** que especifica la cantidad de relleno vertical, en píxeles.
+[**LOWORD es**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) un valor **INT** que especifica la cantidad de relleno horizontal, en píxeles. [**HIWORD es**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) un valor **INT** que especifica la cantidad de relleno vertical, en píxeles.
 
 </dd> </dl>
 
@@ -46,9 +46,9 @@ No de devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

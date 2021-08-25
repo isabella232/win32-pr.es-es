@@ -1,19 +1,19 @@
 ---
-description: A continuación se muestran las funciones de DbgHelp.
+description: Las siguientes son las funciones DbgHelp.
 ms.assetid: 7b28f70b-2d97-4cc2-8064-dfb806f9cffa
-title: Funciones DbgHelp
+title: DbgHelp (Funciones)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db65e46fe407b26b1a6ec9ae3cb8d5d7301d5821
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8afacd44409004034ed727920c98487a0e2e34ad03e7af4ef5a2e5e13ab5303c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912775"
 ---
-# <a name="dbghelp-functions"></a>Funciones DbgHelp
+# <a name="dbghelp-functions"></a>DbgHelp (Funciones)
 
-A continuación se muestran las funciones de DbgHelp.
+Las siguientes son las funciones DbgHelp.
 
 ## <a name="general"></a>General
 
@@ -30,7 +30,7 @@ Las siguientes son funciones auxiliares generales:
 
 ## <a name="debugger"></a>instantáneas
 
-Las funciones del servicio de depuración son las funciones más adecuadas para su uso por parte de un depurador o el código de depuración de una aplicación. Estas funciones se pueden usar junto con las funciones del controlador de símbolos para un uso más sencillo.
+Las funciones del servicio de depuración son las más adecuadas para su uso por parte de un depurador o el código de depuración de una aplicación. Estas funciones se pueden usar junto con las funciones de controlador de símbolos para facilitar su uso.
 
 <dl>
 
@@ -47,7 +47,7 @@ Las funciones del servicio de depuración son las funciones más adecuadas para 
 
 ## <a name="image-access"></a>Acceso a imágenes
 
-Las funciones de acceso a la imagen obtienen acceso a los datos de una imagen ejecutable. Las funciones proporcionan acceso de alto nivel a la base de imágenes y acceso muy específico a las partes más comunes de los datos de una imagen.
+Las funciones de acceso a imágenes acceden a los datos de una imagen ejecutable. Las funciones proporcionan acceso de alto nivel a la base de imágenes y acceso muy específico a las partes más comunes de los datos de una imagen.
 
 <dl>
 
@@ -61,7 +61,7 @@ Las funciones de acceso a la imagen obtienen acceso a los datos de una imagen ej
 
 ## <a name="symbol-handler"></a>Controlador de símbolos
 
-Las funciones de [controlador de símbolos](symbol-handling.md) proporcionan a las aplicaciones acceso sencillo y portátil a la información de depuración simbólica de una imagen. Estas funciones se deben usar exclusivamente para garantizar el acceso a la información simbólica. Esto es necesario porque estas funciones aíslan la aplicación del formato de símbolos.
+Las [funciones de controlador](symbol-handling.md) de símbolos dan a las aplicaciones acceso fácil y portátil a la información de depuración simbólica de una imagen. Estas funciones deben usarse exclusivamente para garantizar el acceso a la información simbólica. Esto es necesario porque estas funciones aíslan la aplicación del formato de símbolo.
 
 <dl>
 
@@ -125,7 +125,7 @@ Las funciones de [controlador de símbolos](symbol-handling.md) proporcionan a l
 
 ## <a name="symbol-server"></a>Servidor de símbolos
 
-El [servidor de símbolos](symbol-servers-and-symbol-stores.md) permite que los depuradores recuperen automáticamente los archivos de símbolos correctos sin los nombres de producto, las versiones o los números de compilación. Las siguientes funciones se usan con el servidor de símbolos.
+El [servidor de símbolos](symbol-servers-and-symbol-stores.md) permite a los depuradores recuperar automáticamente los archivos de símbolos correctos sin nombres de producto, versiones o números de compilación. Las siguientes funciones se usan con el servidor de símbolos.
 
 <dl>
 
@@ -139,9 +139,9 @@ El [servidor de símbolos](symbol-servers-and-symbol-stores.md) permite que los 
 [**SymSrvStoreSupplement**](/windows/desktop/api/DbgHelp/nf-dbghelp-symsrvstoresupplement)  
 </dl>
 
-## <a name="user-mode-minidump-files"></a>Archivos de minivolcado de modo de usuario
+## <a name="user-mode-minidump-files"></a>Archivos de minivolfón en modo de usuario
 
-Las funciones de minivolcado proporcionan una manera para que las aplicaciones generen archivos de volcado de volcado que contienen un subconjunto útil del contexto del proceso completo. Esto se conoce como [archivo de minivolcado](minidump-files.md). Las siguientes funciones se usan con archivos de minivolcado.
+Las funciones de minivolfón proporcionan una manera para que las aplicaciones produzcan archivos de bloqueo que contengan un subconjunto útil de todo el contexto de proceso. esto se conoce como un [archivo de minivolfón.](minidump-files.md) Las funciones siguientes se usan con archivos de minivolfón.
 
 <dl>
 
@@ -152,7 +152,7 @@ Las funciones de minivolcado proporcionan una manera para que las aplicaciones g
 
 ## <a name="source-server"></a>Servidor de origen
 
-El [servidor de origen](source-server-and-source-indexing.md) permite a un cliente recuperar la versión exacta de los archivos de origen que se usaron para compilar una aplicación. Las siguientes funciones se usan con el servidor de origen.
+[El servidor de](source-server-and-source-indexing.md) origen permite a un cliente recuperar la versión exacta de los archivos de origen que se usaron para compilar una aplicación. Las siguientes funciones se usan con el servidor de origen.
 
 -   [**SymGetSourceFile**](/windows/desktop/api/Dbghelp/nf-dbghelp-symgetsourcefile)
 -   [**SymEnumSourceFileTokens**](/windows/desktop/api/Dbghelp/nf-dbghelp-symenumsourcefiletokens)

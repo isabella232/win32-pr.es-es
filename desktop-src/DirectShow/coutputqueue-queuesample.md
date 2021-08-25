@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8efe0ec3b2326d1af0d0075770bdc6443ab9dcad
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 3770029f732629f12d94c9304d144226d873f38cc1b8452036d39ca2abdd757a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119909595"
 ---
 # <a name="coutputqueuequeuesample-method"></a>Método COutputQueue.QueueSample
 
@@ -67,7 +67,7 @@ Este método también se puede usar para colocar mensajes de control en la cola.
 | PAQUETE \_ EOS   | Entrega de una notificación de fin de flujo. |
 | NUEVO \_ SEGMENTO  | Entrega de un nuevo segmento.                 |
 | RESTABLECER \_ PAQUETE | Restablezca el estado de la cola.          |
-| ENVÍO DE \_ PAQUETES  | Envíe un lote parcial de ejemplos.       |
+| ENVIAR \_ PAQUETE  | Envíe un lote parcial de ejemplos.       |
 
 
 
@@ -81,12 +81,12 @@ Se trata de un método protegido que la **clase COutputQueue** usa internamente.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

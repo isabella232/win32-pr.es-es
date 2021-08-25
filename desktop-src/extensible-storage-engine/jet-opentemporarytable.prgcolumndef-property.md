@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_OPENTEMPORARYTABLE. prgcolumndef'
-title: Propiedad JET_OPENTEMPORARYTABLE. prgcolumndef (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: JET_OPENTEMPORARYTABLE.prgcolumndef'
+title: JET_OPENTEMPORARYTABLE.prgcolumndef (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'prgcolumndef property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE.prgcolumndef
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_opentemporarytable.prgcolumndef(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 871cf1ba669717b9e2917a3e9012c6c16df5f97c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a0889e35d35c7296755fae3a6772f30546d3937b4c0f2c840f796d66c8a2aa8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945735"
 ---
-# <a name="jet_opentemporarytableprgcolumndef-property"></a>Propiedad JET_OPENTEMPORARYTABLE. prgcolumndef
+# <a name="jet_opentemporarytableprgcolumndef-property"></a>JET_OPENTEMPORARYTABLE.prgcolumndef, propiedad
 
 Obtiene o establece las definiciones de columna para las columnas creadas en la tabla temporal.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public JET_COLUMNDEF[] prgcolumndef { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Automáticamente \[\]  
+Tipo: \[\]  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_OPENTEMPORARYTABLE (clase)](./jet-opentemporarytable-class.md)
+[JET_OPENTEMPORARYTABLE clase](./jet-opentemporarytable-class.md)
 
-[Miembros de JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-members.md)
+[JET_OPENTEMPORARYTABLE miembros](./jet-opentemporarytable-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

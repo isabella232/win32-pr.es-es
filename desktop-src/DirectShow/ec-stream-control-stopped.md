@@ -1,19 +1,19 @@
 ---
-description: Un comando de detención del control de secuencias ha surtido efecto.
+description: Se ha realizado un comando stream-control stop.
 ms.assetid: a2f7a959-fafd-47ff-9b3d-1a898fdb1f81
-title: EC_STREAM_CONTROL_STOPPED (DShow. h)
+title: EC_STREAM_CONTROL_STOPPED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8c5488ba400d90623955c3e9adcba0dde07e04a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 69884ecc573b2bb775092529cb81e1b33a1514d4799af9f55c7bcebb5ebd2b24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928425"
 ---
-# <a name="ec_stream_control_stopped"></a>CONTROL de secuencia de EC \_ \_ \_ detenido
+# <a name="ec_stream_control_stopped"></a>EC \_ STREAM \_ CONTROL \_ STOPPED
 
-Un comando de detención del control de secuencias ha surtido efecto.
+Se ha realizado un comando stream-control stop.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -22,7 +22,7 @@ Un comando de detención del control de secuencias ha surtido efecto.
 <span id="pSender"></span><span id="psender"></span><span id="PSENDER"></span>*pSender*
 </dt> <dd>
 
-(**IUnknown** \* ) Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN que detuvo la secuencia.
+(**IUnknown** \* ) Puntero a la [**interfaz IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin que detuvo la secuencia.
 
 </dd> <dt>
 
@@ -37,13 +37,13 @@ Un comando de detención del control de secuencias ha surtido efecto.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los filtros envían este evento en respuesta al método [**IAMStreamControl:: StopAt**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-stopat) . El método **StopAt** especifica un tiempo de referencia para que un código PIN detenga el streaming. Cuando se detiene el streaming, el filtro envía este evento.
+Los filtros envían este evento en respuesta al [**método IAMStreamControl::StopAt.**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-stopat) El **método StopAt** especifica un tiempo de referencia para que un pin detenga el streaming. Cuando el streaming se detiene, el filtro envía este evento.
 
-El parámetro *pSender* especifica el PIN que ejecuta el comando STOP. Dependiendo de la implementación, es posible que no sea el PIN que recibió la llamada [**StopAt**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-stopat) .
+El *parámetro pSender* especifica el pin que ejecuta el comando stop. Dependiendo de la implementación, es posible que no sea el pin el que recibió la [**llamada StopAt.**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-stopat)
 
-La aplicación especifica el parámetro *dwCookie* en el método [**StopAt**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-stopat) . Este parámetro permite que la aplicación realice el seguimiento de varias llamadas al método.
+La aplicación especifica el parámetro *dwCookie* en el [**método StopAt.**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-stopat) Este parámetro permite que la aplicación realice un seguimiento de varias llamadas al método .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ La aplicación especifica el parámetro *dwCookie* en el método [**StopAt**](/w
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

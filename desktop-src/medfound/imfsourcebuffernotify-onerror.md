@@ -1,7 +1,7 @@
 ---
-description: Se utiliza para indicar que se ha producido un error con el búfer de origen.
+description: Se usa para indicar que se ha producido un error con el búfer de origen.
 ms.assetid: a7187b7a-0090-4380-82bb-a7f72d54232e
-title: 'IMFSourceBufferNotify:: OnError (método)'
+title: MÉTODO IMFSourceBufferNotify::OnError
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 8b5f48c3517eb62b0a70acb9cbb28a5ecf7c90cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0602340011bae5af974a3441b42d62d392394b79854015acc68da0b1c2fcf538
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957814"
 ---
-# <a name="imfsourcebuffernotifyonerror-method"></a>IMFSourceBufferNotify:: OnError (método)
+# <a name="imfsourcebuffernotifyonerror-method"></a>MÉTODO IMFSourceBufferNotify::OnError
 
-Se utiliza para indicar que se ha producido un error con el búfer de origen.
+Se usa para indicar que se ha producido un error con el búfer de origen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ void OnError(
 
 <dl> <dt>
 
-*HR* \[ de\]
+*hr* \[ En\]
 </dt> <dd></dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
@@ -52,9 +52,9 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

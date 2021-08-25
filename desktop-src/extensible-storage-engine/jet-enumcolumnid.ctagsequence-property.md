@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_ENUMCOLUMNID. ctagSequence'
-title: Propiedad JET_ENUMCOLUMNID. ctagSequence
+description: 'Más información sobre: JET_ENUMCOLUMNID.ctagSequence'
+title: JET_ENUMCOLUMNID.ctagSequence, propiedad
 TOCTitle: 'ctagSequence property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMNID.ctagSequence
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumnid.ctagsequence(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b8e12c8c6a102cbb20862b3cc9859f7e632ade8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e60ae86a27f1c82a237ae9c02e54298cbe6aa7de251e9c1c38d7bc08dad42cc2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890905"
 ---
-# <a name="jet_enumcolumnidctagsequence-property"></a>Propiedad JET_ENUMCOLUMNID. ctagSequence
+# <a name="jet_enumcolumnidctagsequence-property"></a>JET_ENUMCOLUMNID.ctagSequence, propiedad
 
-Obtiene o establece el recuento de valores de columna (por índice basado en uno) que se va a enumerar para el identificador de columna especificado. Si ctagSequence es 0 (cero), se omite rgtagSequence y se enumeran todos los valores de columna para el ID. de columna especificado.
+Obtiene o establece el recuento de valores de columna (por índice basado en uno) que se va a enumerar para el identificador de columna especificado. Si ctagSequence es 0 (cero), se omite rgtagSequence y se enumerarán todos los valores de columna para el identificador de columna especificado.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int ctagSequence { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ENUMCOLUMNID (clase)](./jet-enumcolumnid-class.md)
+[JET_ENUMCOLUMNID clase](./jet-enumcolumnid-class.md)
 
-[Miembros de JET_ENUMCOLUMNID](./jet-enumcolumnid-members.md)
+[JET_ENUMCOLUMNID miembros](./jet-enumcolumnid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

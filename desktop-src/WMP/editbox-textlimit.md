@@ -1,9 +1,9 @@
 ---
-title: EDITBOX. textLimit
+title: EDITBOX.textLimit
 description: El atributo textLimit especifica o recupera el número máximo de caracteres que el usuario puede escribir en el control de cuadro de edición.
 ms.assetid: d05a1df4-6f02-4711-a952-963f034363f5
 keywords:
-- TextLimit Windows Media Player
+- EDITBOX.textLimit Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e700ce6b4556c42f3458404c7b23f892e16b6ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9b1bec5b6548de0ee4712cde822a47dc0a884702e9298af97882fb7cc24c3439
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863085"
 ---
-# <a name="editboxtextlimit"></a>EDITBOX. textLimit
+# <a name="editboxtextlimit"></a>EDITBOX.textLimit
 
-El atributo **textLimit** especifica o recupera el número máximo de caracteres que el usuario puede escribir en el control de cuadro de edición.
+El **atributo textLimit** especifica o recupera el número máximo de caracteres que el usuario puede escribir en el control de cuadro de edición.
 
 ``` syntax
         elementID.textLimit
@@ -29,7 +29,7 @@ El atributo **textLimit** especifica o recupera el número máximo de caracteres
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura y escritura (**Long**) con un valor predeterminado de 0, que indica que no hay límite.
+Este atributo es un número de lectura y **escritura** (**long**) con un valor predeterminado de 0, lo que indica que no hay límite.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Este atributo es un **número** de lectura y escritura (**Long**) con un valor p
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 

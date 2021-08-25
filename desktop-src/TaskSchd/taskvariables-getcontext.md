@@ -1,11 +1,11 @@
 ---
-title: TaskVariables. GetContext (método)
+title: Método TaskVariables.GetContext
 description: Para el scripting, se usa para compartir el contexto entre diferentes pasos y tareas que se encuentran en la misma instancia de trabajo.
 ms.assetid: c3f1245c-531b-43f4-a3e4-8cb5deedd375
 keywords:
-- GetContext (método) Programador de tareas
-- Método GetContext Programador de tareas, objeto TaskVariables
-- Programador de tareas objeto TaskVariables, GetContext (método)
+- Método GetContext Programador de tareas
+- Método GetContext Programador de tareas , objeto TaskVariables
+- Objeto TaskVariables Programador de tareas , método GetContext
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 897f0b160afd2276831ad5adb59a91fec9d0820d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5c98714d92aba0cffce9d6410ac575c35ec1b7b3e683b954015caebd7719d72b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974705"
 ---
-# <a name="taskvariablesgetcontext-method"></a>TaskVariables. GetContext (método)
+# <a name="taskvariablesgetcontext-method"></a>Método TaskVariables.GetContext
 
 Para el scripting, se usa para compartir el contexto entre diferentes pasos y tareas que se encuentran en la misma instancia de trabajo. Este método no se implementa.
 
@@ -42,7 +42,7 @@ TaskVariables.GetContext( _
 
 <dl> <dt>
 
-*contexto* \[ de enuncia\]
+*context* \[ out\]
 </dt> <dd>
 
 Contexto que se usa para compartir el contexto entre diferentes pasos y tareas que se encuentran en la misma instancia de trabajo.
@@ -59,9 +59,9 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

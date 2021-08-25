@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DTM_SETMCFONT (commctrl. h)
-description: Establece la fuente que va a usar el control de calendario mensual del control de fecha y hora (DTP). Puede enviar este mensaje explícitamente o utilizar la macro SetMonthCalFont de fecha y hora \_ .
+title: DTM_SETMCFONT mensaje (Commctrl.h)
+description: Establece la fuente que va a usar el control de calendario del mes secundario del selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o usar la macro DateTime \_ SetMonthCalFont.
 ms.assetid: 5033e975-9b68-438a-99c3-80ca02cd59e7
 keywords:
-- DTM_SETMCFONT controles de mensajes de Windows
+- DTM_SETMCFONT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b148ffb95acd82257265bf0bab53000b10803793
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cfa1b34c1a51e365868cbdae30e46cd299937d3d6fe33bad6c57d630a0b226fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877815"
 ---
-# <a name="dtm_setmcfont-message"></a>DTM \_ SETMCFONT
+# <a name="dtm_setmcfont-message"></a>Mensaje \_ SETMCFONT de DTM
 
-Establece la fuente que va a usar el control de calendario mensual del control de fecha y hora (DTP). Puede enviar este mensaje explícitamente o utilizar la [**macro \_ SetMonthCalFont de fecha y hora**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_setmonthcalfont) .
+Establece la fuente que va a usar el control de calendario del mes secundario del selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o usar la macro [**DateTime \_ SetMonthCalFont.**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_setmonthcalfont)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,20 +32,20 @@ Establece la fuente que va a usar el control de calendario mensual del control d
 *wParam* 
 </dt> <dd>
 
-Identificador de la fuente que se va a establecer.
+Identificador de la fuente que se establecerá.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Especifica si el control debe volver a dibujarse inmediatamente después de establecer la fuente. Establecer este parámetro en **true** hace que el control se vuelva a dibujar.
+Especifica si el control se debe volver a dibujar inmediatamente después de establecer la fuente. Si se establece este parámetro **en TRUE,** el control se vuelve a dibujar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto para este mensaje.
+No se usa el valor devuelto para este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ No se utiliza el valor devuelto para este mensaje.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

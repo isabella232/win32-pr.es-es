@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInconsistentException (SerializationInfo, StreamingContext)'
-title: Constructor EsentInconsistentException (SerializationInfo, StreamingContext)
+description: 'Más información sobre: Constructor EsentInconsistentException (SerializationInfo, StreamingContext)'
+title: EsentInconsistentException constructor (SerializationInfo, StreamingContext)
 TOCTitle: EsentInconsistentException constructor (SerializationInfo, StreamingContext)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInconsistentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinconsistentexception.esentinconsistentexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6f907288bd4f88cae0b022a74cf558a65415d214
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d64521d178a2c60aa3eb4af739a8809a0bb6621392ab0ab6fc985d12c4188fe7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838305"
 ---
-# <a name="esentinconsistentexception-constructor-serializationinfo-streamingcontext"></a>Constructor EsentInconsistentException (SerializationInfo, StreamingContext)
+# <a name="esentinconsistentexception-constructor-serializationinfo-streamingcontext"></a>EsentInconsistentException constructor (SerializationInfo, StreamingContext)
 
-Inicializa una nueva instancia de la clase EsentInconsistentException. Este constructor se utiliza para deserializar una excepción serializada.
+Inicializa una nueva instancia de la clase EsentInconsistentException. Este constructor se usa para deserializar una excepción serializada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,14 +59,14 @@ protected EsentInconsistentException(
 #### <a name="parameters"></a>Parámetros
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
-    Los datos necesarios para deserializar el objeto.
+    Datos necesarios para deserializar el objeto.
 
 <!-- end list -->
 
   - context  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contexto de la deserialización.
 
@@ -78,6 +78,6 @@ protected EsentInconsistentException(
 
 [Miembros de EsentInconsistentException](./esentinconsistentexception-members.md)
 
-[Sobrecarga EsentInconsistentException](./esentinconsistentexception-constructor.md)
+[Sobrecarga de EsentInconsistentException](./esentinconsistentexception-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

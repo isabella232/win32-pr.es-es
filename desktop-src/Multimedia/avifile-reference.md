@@ -4,18 +4,18 @@ description: Referencia de AVIFile
 ms.assetid: 73532d83-89c2-4911-8558-ce110e9f0f95
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0291d0ac5864a9b370e79a98fa061770d05bca03
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 19b4bbda5374f5b1418c166aae5efcc06168b522b2cae0f3b6d2c8fe3c069c36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808325"
 ---
 # <a name="avifile-reference"></a>Referencia de AVIFile
 
-En esta sección se describen las funciones, estructuras y macros para aplicaciones que usan los servicios de AVIFile. Estos elementos se agrupan de la siguiente manera:
+En esta sección se describen las funciones, estructuras y macros de las aplicaciones que usan los servicios AVIFile. Estos elementos se agrupan de la siguiente manera:
 
-## <a name="avifile-library-operations"></a>Operaciones de biblioteca AVIFile
+## <a name="avifile-library-operations"></a>Operaciones de la biblioteca AVIFile
 
 -   [**AVIFileInit**](/windows/desktop/api/Vfw/nf-vfw-avifileinit)
 -   [**AVIFileExit**](/windows/desktop/api/Vfw/nf-vfw-avifileexit)
@@ -27,7 +27,7 @@ En esta sección se describen las funciones, estructuras y macros para aplicacio
 -   [**AVIFileRelease**](/windows/desktop/api/Vfw/nf-vfw-avifilerelease)
 -   [**GetOpenFileNamePreview**](/windows/desktop/api/Vfw/nf-vfw-getopenfilenamepreviewa)
 
-## <a name="reading-from-a-file"></a>Leer de un archivo
+## <a name="reading-from-a-file"></a>Lectura desde un archivo
 
 -   [**AVIFileInfo**](/windows/desktop/api/Vfw/nf-vfw-avifileinfo)
 -   [**AVIFILEINFO**](/windows/desktop/api/Vfw/ns-vfw-avifileinfoa)
@@ -37,20 +37,20 @@ En esta sección se describen las funciones, estructuras y macros para aplicacio
 
 -   [**AVIFileWriteData**](/windows/desktop/api/Vfw/nf-vfw-avifilewritedata)
 
-## <a name="using-the-clipboard"></a>Usar el portapapeles
+## <a name="using-the-clipboard"></a>Uso del Portapapeles
 
 -   [**AVIPutFileOnClipboard**](/windows/desktop/api/Vfw/nf-vfw-aviputfileonclipboard)
 -   [**AVIGetFromClipboard**](/windows/desktop/api/Vfw/nf-vfw-avigetfromclipboard)
 -   [**AVIClearClipboard**](/windows/desktop/api/Vfw/nf-vfw-aviclearclipboard)
 
-## <a name="opening-and-closing-streams"></a>Abrir y cerrar secuencias
+## <a name="opening-and-closing-streams"></a>Apertura y cierre de Secuencias
 
 -   [**AVIFileGetStream**](/windows/desktop/api/Vfw/nf-vfw-avifilegetstream)
 -   [**AVIStreamOpenFromFile**](/windows/desktop/api/Vfw/nf-vfw-avistreamopenfromfilea)
 -   [**AVIStreamAddRef**](/windows/desktop/api/Vfw/nf-vfw-avistreamaddref)
 -   [**AVIStreamRelease**](/windows/desktop/api/Vfw/nf-vfw-avistreamrelease)
 
-## <a name="reading-stream-information"></a>Leyendo información de la secuencia
+## <a name="reading-stream-information"></a>Leer información de secuencia
 
 -   [**AVISTREAMINFO**](/windows/desktop/api/Vfw/ns-vfw-avistreaminfoa)
 -   [**AVIStreamReadData**](/windows/desktop/api/Vfw/nf-vfw-avistreamreaddata)
@@ -62,13 +62,13 @@ En esta sección se describen las funciones, estructuras y macros para aplicacio
 -   [**AVIStreamBeginStreaming**](/windows/desktop/api/Vfw/nf-vfw-avistreambeginstreaming)
 -   [**AVIStreamEndStreaming**](/windows/desktop/api/Vfw/nf-vfw-avistreamendstreaming)
 
-## <a name="decompressing-video-data-in-a-stream"></a>Descomprimir los datos de vídeo en una secuencia
+## <a name="decompressing-video-data-in-a-stream"></a>Descompresión de datos de vídeo en una secuencia
 
 -   [**AVIStreamGetFrameOpen**](/windows/desktop/api/Vfw/nf-vfw-avistreamgetframeopen)
 -   [**AVIStreamGetFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamgetframe)
 -   [**AVIStreamGetFrameClose**](/windows/desktop/api/Vfw/nf-vfw-avistreamgetframeclose)
 
-## <a name="creating-a-file-from-existing-streams"></a>Crear un archivo a partir de secuencias existentes
+## <a name="creating-a-file-from-existing-streams"></a>Crear un archivo a partir de un Secuencias
 
 -   [**AVISave**](/windows/desktop/api/Vfw/nf-vfw-avisavea)
 -   [**AVISaveV**](/windows/desktop/api/Vfw/nf-vfw-avisaveva)
@@ -76,7 +76,7 @@ En esta sección se describen las funciones, estructuras y macros para aplicacio
 -   [**GetSaveFileNamePreview**](/windows/desktop/api/Vfw/nf-vfw-getsavefilenamepreviewa)
 -   [**AVIMakeFileFromStreams**](/windows/desktop/api/Vfw/nf-vfw-avimakefilefromstreams)
 
-## <a name="writing-individual-streams"></a>Escribir flujos individuales
+## <a name="writing-individual-streams"></a>Escribir datos individuales Secuencias
 
 -   [**AVIFileCreateStream**](/windows/desktop/api/Vfw/nf-vfw-avifilecreatestream)
 -   [**AVIStreamSetFormat**](/windows/desktop/api/Vfw/nf-vfw-avistreamsetformat)
@@ -95,7 +95,7 @@ En esta sección se describen las funciones, estructuras y macros para aplicacio
 -   [**AVIStreamEnd**](/windows/desktop/api/Vfw/nf-vfw-avistreamend)
 -   [**AVIStreamEndTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamendtime)
 
-## <a name="finding-sample-and-key-frames"></a>Buscar fotogramas de ejemplo y clave
+## <a name="finding-sample-and-key-frames"></a>Buscar fotogramas clave y de ejemplo
 
 -   [**AVIStreamFindSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamfindsample)
 -   [**AVIStreamIsKeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamiskeyframe)
@@ -118,13 +118,13 @@ En esta sección se describen las funciones, estructuras y macros para aplicacio
 -   [**AVIStreamSampleToTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamsampletotime)
 -   [**AVIStreamTimeToSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamtimetosample)
 
-## <a name="creating-temporary-streams"></a>Crear secuencias temporales
+## <a name="creating-temporary-streams"></a>Creación de un Secuencias
 
 -   [**AVIStreamCreate**](/windows/desktop/api/Vfw/nf-vfw-avistreamcreate)
 -   [**AVIMakeCompressedStream**](/windows/desktop/api/Vfw/nf-vfw-avimakecompressedstream)
 -   [**AVIStreamRelease**](/windows/desktop/api/Vfw/nf-vfw-avistreamrelease)
 
-## <a name="editing-avi-streams"></a>Editar secuencias AVI
+## <a name="editing-avi-streams"></a>Edición de Secuencias AVI
 
 -   [**CreateEditableStream**](/windows/desktop/api/Vfw/nf-vfw-createeditablestream)
 -   [**EditStreamCut**](/windows/desktop/api/Vfw/nf-vfw-editstreamcut)
@@ -138,12 +138,12 @@ En esta sección se describen las funciones, estructuras y macros para aplicacio
 
 <dl> <dt>
 
-[Funciones y macros de AVIFile](avifile-functions-and-macros.md)
+[Funciones y macros AVIFile](avifile-functions-and-macros.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

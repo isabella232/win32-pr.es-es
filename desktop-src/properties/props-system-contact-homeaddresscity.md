@@ -1,19 +1,19 @@
 ---
-description: Nombre de la ciudad de la dirección de inicio del contacto.
+description: Nombre de la ciudad de la dirección principal del contacto.
 ms.assetid: 00ed6b0d-0b59-43b4-a9ce-f5964f9268a3
-title: System. contact. HomeAddressCity
+title: System.Contact.HomeAddressCity
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a44e4d986339fa5448534a28f615c1b9c0cb242
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67f526c283f023237409863c93587d216db2e33bebe3ee17c41c65262ddade65
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845815"
 ---
-# <a name="systemcontacthomeaddresscity"></a>System. contact. HomeAddressCity
+# <a name="systemcontacthomeaddresscity"></a>System.Contact.HomeAddressCity
 
-Nombre de la ciudad de la dirección de inicio del contacto.
+Nombre de la ciudad de la dirección principal del contacto.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

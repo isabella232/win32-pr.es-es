@@ -1,7 +1,7 @@
 ---
-description: El \_ comando de expulsión de almacenamiento de comandos de WPD \_ \_ expulsa un medio de almacenamiento que el equipo puede retirar de forma remota.
+description: El comando WPD COMMAND STORAGE EYE expulsa un medio de almacenamiento que el equipo puede expulsar \_ \_ de forma \_ remota.
 ms.assetid: 38d4dd56-e898-4890-8328-eb2b03cdbd12
-title: Comando WPD_COMMAND_STORAGE_EJECT (PortableDevice. h)
+title: WPD_COMMAND_STORAGE_EJECT (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 3eab2c6296b957b8edf1d65f21264cb93144aeb0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a35b376ed9688217edfde03c76aed962d3e5fb74dc3d8bb7cc927ef1f621c9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839015"
 ---
-# <a name="wpd_command_storage_eject-command"></a>\_Comando de \_ retiro de almacenamiento de comandos de WPD \_
+# <a name="wpd_command_storage_eject-command"></a>Comando WPD \_ STORAGE DEL COMANDO DE \_ \_ EXPULSIÓN
 
-El comando de **\_ \_ \_ expulsión de almacenamiento de comandos de WPD** expulsa un medio de almacenamiento que el equipo puede retirar de forma remota.
+El **comando WPD \_ COMMAND STORAGE \_ \_ EJECT** expulsa un medio de almacenamiento que el equipo puede expulsar de forma remota.
 
 ## <a name="command-category"></a>Categoría de comando
 
-**\_almacenamiento de categorías de WPD \_**
+**ALMACENAMIENTO DE \_ CATEGORÍA WPD \_**
 
 ## <a name="parameters"></a>Parámetros
 
@@ -36,7 +36,7 @@ El controlador espera los parámetros siguientes.
 
 | Parámetro                          | VarType    | Descripción                                             |
 |------------------------------------|------------|---------------------------------------------------------|
-| \_identificador de \_ objeto de almacenamiento de propiedades de WPD \_ \_ | VT \_ LPWStr | Obligatorio. IDENTIFICADOR de objeto del objeto de almacenamiento que se va a expulsar. |
+| IDENTIFICADOR DE OBJETO \_ DE ALMACENAMIENTO DE LA PROPIEDAD \_ \_ \_ WPD | VT \_ LPWSTR | Obligatorio. Identificador de objeto del objeto de almacenamiento que se expulsará. |
 
 
 
@@ -50,8 +50,8 @@ El controlador debe devolver los resultados siguientes.
 
 | Resultado                                         | VarType   | Descripción                                                                                                                                                                                                                                                                                                                                                                            |
 |------------------------------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_HRESULT de propiedad \_ común \_ de WPD**             | ERROR de VT \_ | Obligatorio. **HRESULT** que indica si se ha realizado correctamente o no el comando. Si el autor de la llamada está realizando una solicitud no válida, el controlador debe devolver **HRESULT \_ de \_ Win32 (error \_ no \_ admitido)** y no es necesario devolver ningún otro valor de resultado. Los códigos de error incluyen [códigos de error de dispositivos portátiles de Windows](error-constants.md) o cualquier otro código de error adecuado. |
-| **\_código de \_ \_ error del controlador común \_ \_ de la propiedad WPD** | VT \_ UI4   | Opcional. Un código de error específico del controlador. Normalmente, esto solo se usa para las pruebas de controladores o si el controlador, el dispositivo y el cliente están diseñados juntos.                                                                                                                                                                                                                                |
+| **HRESULT \_ COMÚN DE LA PROPIEDAD \_ \_ WPD**             | \_ERROR DE VT | Obligatorio. HRESULT **que** indica que el comando se ha hecho correctamente o no. Si el autor de la llamada realiza una solicitud no válida, el controlador debe devolver **HRESULT \_ FROM \_ WIN32 (ERROR \_ NO \_ COMPATIBLE)** y no es necesario devolver ningún otro valor de resultado. Los códigos de error [Windows códigos de error de dispositivos portátiles](error-constants.md) o cualquier otro código de error adecuado. |
+| **CÓDIGO DE ERROR \_ COMÚN DEL CONTROLADOR DE LA \_ \_ \_ PROPIEDAD \_ WPD** | VT \_ UI4   | Opcional. Código de error específico del controlador. Normalmente, esto solo se usa para pruebas de controladores, o si el controlador, el dispositivo y el cliente están diseñados conjuntamente.                                                                                                                                                                                                                                |
 
 
 
@@ -59,7 +59,7 @@ El controlador debe devolver los resultados siguientes.
 
 ## <a name="calling-methods"></a>Llamar a métodos
 
-Solo se puede llamar directamente a mediante [**IPortableDevice:: SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand).
+Solo se puede llamar directamente mediante [**IPortableDevice::SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Solo se puede llamar directamente a mediante [**IPortableDevice:: SendCommand**]
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

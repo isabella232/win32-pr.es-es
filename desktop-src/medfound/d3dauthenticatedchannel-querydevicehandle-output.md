@@ -1,7 +1,7 @@
 ---
-description: Contiene la respuesta a una consulta de D3DAUTHENTICATEDQUERY \_ DEVICEHANDLE.
+description: Contiene la respuesta a una consulta DEVICEHANDLE D3DAUTHENTICATEDQUERY. \_
 ms.assetid: f2e0ae6c-dc97-46f7-933f-6c14d83adf18
-title: D3DAUTHENTICATEDCHANNEL_QUERYDEVICEHANDLE_OUTPUT estructura (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_QUERYDEVICEHANDLE_OUTPUT estructura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: b862523c54dc9f483e63cee525dc61c5f469602d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf3879051a2fee3e60850d6d2a8290c924ababd6ef591d76f56f23642d646826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828725"
 ---
-# <a name="d3dauthenticatedchannel_querydevicehandle_output-structure"></a>Estructura de salida de D3DAUTHENTICATEDCHANNEL \_ QUERYDEVICEHANDLE \_
+# <a name="d3dauthenticatedchannel_querydevicehandle_output-structure"></a>D3DAUTHENTICATEDCHANNEL \_ QUERYDEVICEHANDLE \_ OUTPUT structure
 
-Contiene la respuesta a una consulta de [**D3DAUTHENTICATEDQUERY \_ DEVICEHANDLE**](d3dauthenticatedquery-devicehandle.md) .
+Contiene la respuesta a una [**consulta \_ DEVICEHANDLE D3DAUTHENTICATEDQUERY.**](d3dauthenticatedquery-devicehandle.md)
 
-Para enviar esta consulta, llame a [**IDirect3DAuthenticatedChannel9:: query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
+Para enviar esta consulta, llame a [**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_QUERYDEVICEHANDLE_OUTPUT {
 **Salida**
 </dt> <dd>
 
-Una estructura de [**\_ \_ salida de consulta de D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-query-output.md) que contiene un código de autentificación de mensajes (Mac) (Mac) y otros datos.
+Estructura [**D3DAUTHENTICATEDCHANNEL \_ QUERY \_ OUTPUT**](d3dauthenticatedchannel-query-output.md) que contiene un código de autenticación de mensajes (MAC) y otros datos.
 
 </dd> <dt>
 
@@ -62,9 +62,9 @@ Identificador del dispositivo.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
+| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Identificador del dispositivo.
 [Estructuras de vídeo de Direct3D](direct3d-video-structures.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+[**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 </dt> </dl>
 
  

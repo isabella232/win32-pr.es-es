@@ -1,9 +1,9 @@
 - name: Sistema de colores de Windows
   href: windows-color-system.md
   items:
-    - name: 'Consideraciones de seguridad: sistema de color de Windows'
+    - name: 'Consideraciones de seguridad: Windows color'
       href: security-considerations--windows-color-system.md
-    - name: Conceptos básicos de la administración del color
+    - name: Conceptos básicos de administración de colores
       href: basic-color-management-concepts.md
       items:
         - name: Color en la creación de imágenes
@@ -39,9 +39,9 @@
     - name: Algoritmos y esquemas del Sistema de colores de Windows
       href: windows-color-system-schemas-and-algorithms.md
       items:
-        - name: 'Esquema de tipos de perfiles comunes WCS, estrategias de control de versiones y localización'
+        - name: 'Esquema de tipos de perfil comunes de WCS, estrategias de control de versiones y localización'
           href: windows-color-system-common-profile-types-schema--versioning-and-localization-strategies.md
-        - name: Esquema y algoritmos de perfil del modelo de apariencia de color WCS
+        - name: Esquema y algoritmos del perfil del modelo de apariencia de color WCS
           href: wcs-color-appearance-model-profile-schema-and-algorithm.md
         - name: Esquema de calibración de WCS
           href: wcs-calibration-schema.md
@@ -83,7 +83,7 @@
     - name: Referencia
       href: reference.md
       items:
-        - name: Functions
+        - name: Funciones
           href: functions.md
           items:
             - name: Funciones básicas para usar en un contexto de dispositivo
@@ -161,7 +161,7 @@
                   href: /windows/win32/api/icm/nf-icm-cmtranslatecolors
                 - name: CMTranslateRGB
                   href: /windows/win32/api/icm/nf-icm-cmtranslatergb
-                - name: CMTranslateRGBs
+                - name: 'CMTranslateRGBs '
                   href: /windows/win32/api/icm/nf-icm-cmtranslatergbs
                 - name: 'CMTranslateRGBsExt '
                   href: /windows/win32/api/icm/nf-icm-cmtranslatergbsext
@@ -407,9 +407,9 @@
               href: /windows/win32/api/icm/ns-icm-cmykcolor
             - name: COLOR
               href: /windows/win32/api/icm/ns-icm-color
-            - name: COLORMATCHSETUPA
+            - name: 'COLORMATCHSETUPA '
               href: /windows/win32/api/icm/ns-icm-colormatchsetupw
-            - name: COLORMATCHSETUPW
+            - name: 'COLORMATCHSETUPW '
               href: /windows/win32/api/icm/ns-icm-colormatchsetupw
             - name: 'ENUMTYPEA '
               href: /windows/win32/api/icm/ns-icm-enumtypea
@@ -458,7 +458,7 @@
         - name: Macros para valores y colores CMYK
           href: macros-for-cmyk-values-and-colors.md
           items:
-            - name: CMYK
+            - name: Cmyk
               href: /windows/win32/api/wingdi/nf-wingdi-cmyk
             - name: GetCValue
               href: /windows/win32/api/wingdi/nf-wingdi-getcvalue
@@ -486,7 +486,7 @@
     - name: "Glosario de WCS\_1.0"
       href: wcs-1-0-glossary.md
       items:
-        - name: Un
+        - name: A
           href: a.md
         - name: B
           href: b.md

@@ -1,7 +1,7 @@
 ---
 description: Sugerencias de optimización de caché de vértices.
 ms.assetid: 891624cd-03dd-4ddd-93f5-4899e1470325
-title: D3DDEVINFO_VCACHE estructura (D3D9Types. h)
+title: D3DDEVINFO_VCACHE estructura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 80870c330adf185a869ac5e3543055c82fc7115c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3e065c981cc42db6adbad8cfa7a14e415712aae74942e9f3aab3ecb0b353f5ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894505"
 ---
 # <a name="d3ddevinfo_vcache-structure"></a>D3DDEVINFO \_ VCACHE (estructura)
 
@@ -49,7 +49,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Patrón de bits. El valor devuelto debe ser el FOURCC (' C ', ' A ', ' C ', ' H ').
+Patrón de bits. El valor devuelto debe ser FOURCC ('C', 'A', 'C', 'H').
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Método Optimizations. Use 0 para obtener las franjas más largas. Use 1 para optimizar el uso de la caché de vértices.
+Método de optimizaciones. Use 0 para obtener las franjas más largas. Use 1 para optimizar el uso de la caché de vértices.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Lo usan los métodos de optimización interna para determinar cuándo reiniciar las tiras. Un usuario no puede establecer o modificar este valor. Esto solo es necesario si OptMethod es 1.
+Usado por los métodos de optimización internos para determinar cuándo reiniciar las franjas. Un usuario no puede establecerlo ni modificarlo. Esto solo es necesario si OptMethod es 1.
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Lo usan los métodos de optimización interna para determinar cuándo reiniciar 
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

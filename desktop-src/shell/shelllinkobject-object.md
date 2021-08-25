@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: d3c0ccf8-0f83-42f7-9d6f-1fb293da6364
-ms.openlocfilehash: 5862ae3c9b7bf1262edbc28b06f2963f2e577275
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 9908fa86b79ff230c2c6320685cd605a97c9b0747db31cc395f8f449ae2fbfa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941495"
 ---
 # <a name="shelllinkobject-object"></a>Objeto ShellLinkObject
 
-Administra los vínculos de Shell. Este objeto hace que gran parte de la funcionalidad de la [**interfaz IShellLink**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ishelllinka) esté disponible para las aplicaciones de scripting.
+Administra los vínculos de Shell. Este objeto hace que gran parte de la funcionalidad de la interfaz [**IShellLink**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ishelllinka) esté disponible para las aplicaciones de scripting.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 El **objeto ShellLinkObject** tiene estos tipos de miembros:
 
@@ -56,12 +56,12 @@ El **objeto ShellLinkObject** tiene estas propiedades.
 
 | Propiedad                                                                | Tipo de acceso           | Descripción                                                                                               |
 |:------------------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------|
-| [**Argumentos**](shelllinkobject-arguments.md)<br/>               | Lectura y escritura<br/> | Contiene los argumentos de un vínculo.<br/>                                                                   |
-| [**Descripción**](shelllinkobject-description.md)<br/>           | Lectura y escritura<br/> | Obtiene o establece la descripción del vínculo.<br/>                                                      |
-| [**Tecla de acceso rápido**](shelllinkobject-hotkey.md)<br/>                     | Lectura y escritura<br/> | Obtiene o establece el método abreviado de teclado para el vínculo.<br/>                                               |
-| [**Camino**](shelllinkobject-path.md)<br/>                         | Lectura y escritura<br/> | Obtiene o establece la ruta de acceso al objeto de vínculo.<br/>                                                      |
-| [**ShowCommand**](shelllinkobject-showcommand.md)<br/>           | Lectura y escritura<br/> | Obtiene o establece el estado de presentación inicial (tamaño, minimizado o maximizado) del comando del vínculo.<br/> |
-| [**WorkingDirectory**](shelllinkobject-workingdirectory.md)<br/> | Lectura y escritura<br/> | Obtiene o establece el directorio de trabajo especificado en el vínculo.<br/>                                      |
+| [**Argumentos**](shelllinkobject-arguments.md)<br/>               | Lectura/escritura<br/> | Contiene los argumentos de un vínculo.<br/>                                                                   |
+| [**Descripción**](shelllinkobject-description.md)<br/>           | Lectura/escritura<br/> | Obtiene o establece la descripción del vínculo.<br/>                                                      |
+| [**Tecla de acceso rápido**](shelllinkobject-hotkey.md)<br/>                     | Lectura/escritura<br/> | Obtiene o establece el método abreviado de teclado para el vínculo.<br/>                                               |
+| [**Ruta de acceso**](shelllinkobject-path.md)<br/>                         | Lectura/escritura<br/> | Obtiene o establece la ruta de acceso al objeto de vínculo.<br/>                                                      |
+| [**ShowCommand**](shelllinkobject-showcommand.md)<br/>           | Lectura/escritura<br/> | Obtiene o establece el estado de presentación inicial (tamaño, minimizado o maximizado) del comando del vínculo.<br/> |
+| [**WorkingDirectory**](shelllinkobject-workingdirectory.md)<br/> | Lectura/escritura<br/> | Obtiene o establece el directorio de trabajo especificado en el vínculo.<br/>                                      |
 
 
 
@@ -73,15 +73,15 @@ El **objeto ShellLinkObject** tiene estas propiedades.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

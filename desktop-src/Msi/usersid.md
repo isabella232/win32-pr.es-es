@@ -1,37 +1,37 @@
 ---
-description: El instalador establece el valor de la propiedad UserSID en la representación de cadena del identificador de seguridad (SID) del usuario que ejecuta la instalación. Para obtener más información, vea estructuras de autorización.
+description: El instalador establece el valor de la propiedad UserSID en la representación de cadena del identificador de seguridad (SID) del usuario que ejecuta la instalación. Para obtener más información, vea Estructuras de autorización.
 ms.assetid: 94524636-c7f2-4de2-b35e-644c0c171193
-title: UserSID (propiedad)
+title: Propiedad UserSID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49fab01b3f87c654a306bfe3633adf0973ed58aa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b26185c886117b39355241151ffef6d8615bd5f8d10a7f50bd5937a301f7b398
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809165"
 ---
-# <a name="usersid-property"></a>UserSID (propiedad)
+# <a name="usersid-property"></a>Propiedad UserSID
 
-El instalador establece el valor de la propiedad **UserSID** en la representación de cadena del identificador de seguridad (SID) del usuario que ejecuta la instalación. Para obtener más información, vea [estructuras de autorización](../secauthz/authorization-structures.md).
+El instalador establece el valor de la **propiedad UserSID** en la representación de cadena del identificador de seguridad (SID) del usuario que ejecuta la instalación. Para obtener más información, vea [Estructuras de autorización](../secauthz/authorization-structures.md).
 
 ## <a name="default-value"></a>Valor predeterminado
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El Windows Installer establecer esta propiedad en Windows 2000, Windows XP y Windows Vista. Esta propiedad no está definida en el resto de sistemas operativos.
+El instalador Windows establece esta propiedad en Windows 2000, Windows XP y Windows Vista. Esta propiedad no está definida en el resto de sistemas operativos.
 
-Tenga en cuenta que esta propiedad tiene el atributo especial que se puede recuperar de una acción personalizada diferida. Una acción personalizada que se ejecuta con privilegios elevados puede seguir devolviendo el SID del usuario en la propiedad **UserSID** . Para obtener más información, vea [obtener información de contexto para las acciones personalizadas de ejecución aplazada](obtaining-context-information-for-deferred-execution-custom-actions.md).
+Tenga en cuenta que esta propiedad tiene el atributo especial que se puede recuperar de una acción personalizada diferida. Una acción personalizada que se ejecuta con privilegios elevados todavía puede devolver el SID del usuario en **la propiedad UserSID.** Para obtener información, vea Obtener información de contexto para acciones personalizadas [de ejecución aplazada.](obtaining-context-information-for-deferred-execution-custom-actions.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

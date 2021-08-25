@@ -4,12 +4,12 @@ ms.assetid: 2a159e29-c501-4721-9478-aa201454a415
 title: System.Importance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 211685b7fcc928565d2243afcc013f6e585c09f0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0eeeee29a063116d62fbf7ed523ecc8db2be7e97aaf009a8239ed0a2b0acd0d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945365"
 ---
 # <a name="systemimportance"></a>System.Importance
 

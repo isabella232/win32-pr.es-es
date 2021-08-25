@@ -4,18 +4,18 @@ ms.assetid: d1fc9608-5256-4c58-b77e-9dbe46a6abc5
 title: Selección de un dispositivo (API de WPD)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be04303ed04f165dd9d94723e218acb767a40596
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8110d24396c523186b324480b3dae3cf65d9d7b45819e610ea1f097ba9d8900d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839041"
 ---
 # <a name="selecting-a-device-wpd-api"></a>Selección de un dispositivo (API de WPD)
 
-Una vez que la aplicación Enumere los dispositivos conectados, puede que desee conceder al usuario la posibilidad de seleccionar un dispositivo determinado y establecer una conexión para otras operaciones. En la aplicación de ejemplo, la `ChooseDevice` función del módulo DeviceEnumeration. cpp realiza estas tareas.
+Una vez que la aplicación enumera los dispositivos conectados, es posible que desee proporcionar al usuario la capacidad de seleccionar un dispositivo determinado y establecer una conexión para operaciones adicionales. En la aplicación de ejemplo, `ChooseDevice` la función del módulo DeviceEnumeration.cpp realiza estas tareas.
 
-La `ChooseDevice` función utiliza el código de enumeración de dispositivos que ya hemos visto para enumerar los dispositivos disponibles. (Consulte la sección [enumerar dispositivos](enumerating-devices.md) para obtener más información).
+La `ChooseDevice` función usa el código de enumeración de dispositivos que ya hemos visto para enumerar los dispositivos disponibles. (Consulte la sección [Enumeración de dispositivos](enumerating-devices.md) para obtener más información).
 
 ## <a name="related-topics"></a>Temas relacionados
 

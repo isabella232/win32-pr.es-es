@@ -1,35 +1,35 @@
 ---
-description: Generado por un receptor de flujo cuando la tasa ha cambiado.
+description: Lo genera un receptor de flujo cuando la velocidad ha cambiado.
 ms.assetid: c61c71de-fd3c-429b-a29f-f9d2bbfcb531
-title: Evento MEStreamSinkRateChanged (Mfobjects. h)
+title: Evento MEStreamSinkRateChanged (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47a26adbdb64ffd5af0896d8aebe0cef474bee9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d43a3a4cbff4464f78e71d3047e2b9ccaddfcbf38adcb5e84bab8f5ae49c5d80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827145"
 ---
 # <a name="mestreamsinkratechanged-event"></a>Evento MEStreamSinkRateChanged
 
-Generado por un receptor de flujo cuando la tasa ha cambiado.
+Lo genera un receptor de flujo cuando la velocidad ha cambiado.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE              | Descripción                           |
 |----------------------|---------------------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si un receptor de flujo admite cambios de velocidad, envía este evento una vez completado el cambio de tasa. El evento se envía una vez por cada llamada al método [**IMFClockStateSink:: OnClockSetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclocksetrate) del receptor. Si el cambio de frecuencia no se realiza correctamente, el valor de estado del evento es un código de error.
+Si un receptor de flujo admite cambios de velocidad, envía este evento una vez completado el cambio de velocidad. El evento se envía una vez por cada llamada al método [**IMFClockStateSink::OnClockSetRate del**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclocksetrate) receptor. Si el cambio de velocidad no se realiza correctamente, el valor de estado del evento es un código de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Si un receptor de flujo admite cambios de velocidad, envía este evento una vez 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -47,10 +47,10 @@ Si un receptor de flujo admite cambios de velocidad, envía este evento una vez 
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> <dt>
 
-[Receptores de medios](media-sinks.md)
+[Receptores multimedia](media-sinks.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Atributo comment
-description: Comentarios del usuario. Esta cadena puede ser una cadena nula.
+title: Atributo Comment
+description: Comentarios del usuario. Esta cadena puede ser una cadena null.
 ms.assetid: c57493b3-a42a-49ad-8f8c-0afadbb3ba09
 ms.tgt_platform: multiple
 keywords:
-- Atributo de comentario esquema de AD
-- atributo de información esquema de AD
+- Esquema de AD de atributo de comentario
+- Esquema de AD del atributo info
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bd84674fce08f75c3162628b32f67a75fb8c026
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 739203abd9cfbeb383ca4365bdc8b19135010830c4c23305aff18d86d9b03be3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925495"
 ---
-# <a name="comment-attribute-ad-schema"></a>Comment (atributo) (esquema de AD)
+# <a name="comment-attribute-ad-schema"></a>Atributo Comment (esquema de AD)
 
-Comentarios del usuario. Esta cadena puede ser una cadena nula.
+Comentarios del usuario. Esta cadena puede ser una cadena null.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------------------------------------------|
 | CN                | Comentario                                                                  |
-| Nombre para mostrar de LDAP | info                                                                     |
-| Tamaño              | \-                                                                       |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                   |
-| Frecuencia de actualización  | Siempre que el usuario o el administrador necesite agregar comentarios en la cuenta. |
+| Ldap-Display-Name | info                                                                     |
+| Size              | \-                                                                       |
+| Privilegio actualizar  | Administrador de dominio o propietario de la cuenta.                                   |
+| Frecuencia de actualización  | Siempre que el usuario o administrador necesite agregar comentarios a la cuenta. |
 | Attribute-Id      | 1.2.840.113556.1.2.81                                                    |
-| System-ID-GUID    | bf96793e-0de6-11d0-a285-00aa003049e2                                     |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                              |
+| System-Id-Guid    | bf96793e-0de6-11d0-a285-00aa003049e2                                     |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                              |
 
 
 
@@ -55,18 +55,18 @@ Comentarios del usuario. Esta cadena puede ser una cadena nula.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Comentarios del usuario. Esta cadena puede ser una cadena nula.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 
@@ -97,13 +97,13 @@ Comentarios del usuario. Esta cadena puede ser una cadena nula.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
@@ -118,13 +118,13 @@ Comentarios del usuario. Esta cadena puede ser una cadena nula.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
@@ -139,13 +139,13 @@ Comentarios del usuario. Esta cadena puede ser una cadena nula.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
@@ -160,13 +160,13 @@ Comentarios del usuario. Esta cadena puede ser una cadena nula.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |

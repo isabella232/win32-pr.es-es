@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetRestoreInstance (método)'
-title: Método API. JetRestoreInstance
+description: Más información sobre el método Api.JetRestoreInstance
+title: Método Api.JetRestoreInstance
 TOCTitle: 'JetRestoreInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetRestoreInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE,System.String,System.String,Microsoft.Isam.Esent.Interop.JET_PFNSTATUS)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetrestoreinstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3e2c2976eb8bf661dc53bdc86723bb21309ab973
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fef9ca38f8e8efb86813666840f859ed10287197d5f3b6ed0bafdd434ea43dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947775"
 ---
-# <a name="apijetrestoreinstance-method"></a>Método API. JetRestoreInstance
+# <a name="apijetrestoreinstance-method"></a>Método Api.JetRestoreInstance
 
-Restaura y recupera una copia de seguridad de streaming de una instancia de, incluidas todas las bases de datos adjuntas. Está diseñado para trabajar con una copia de seguridad creada con la función [JetBackupInstance (JET_INSTANCE, String, BackupGrbit, JET_PFNSTATUS)](./api.jetbackupinstance-method.md) . Esta es la función de restauración más sencilla y encapsulada.
+Restaura y recupera una copia de seguridad de streaming de una instancia, incluidas todas las bases de datos adjuntas. Está diseñado para funcionar con una copia de seguridad creada con la función [JetBackupInstance(JET_INSTANCE, String, BackupGrbit, JET_PFNSTATUS).](./api.jetbackupinstance-method.md) Esta es la función de restauración más sencilla y encapsulada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,28 +68,28 @@ public static void JetRestoreInstance(
 #### <a name="parameters"></a>Parámetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    La instancia de que se utilizará. La instancia no se debe inicializar. Al restaurar los archivos se inicializará la instancia.
+    La instancia de que se utilizará. La instancia no debe inicializarse. La restauración de los archivos inicializará la instancia.
 
 <!-- end list -->
 
   - source  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Ubicación de la copia de seguridad. La copia de seguridad se debe haber creado con [JetBackupInstance (JET_INSTANCE, String, BackupGrbit, JET_PFNSTATUS)](./api.jetbackupinstance-method.md).
+    Ubicación de la copia de seguridad. La copia de seguridad se debe haber creado [con JetBackupInstance(JET_INSTANCE, String, BackupGrbit, JET_PFNSTATUS).](./api.jetbackupinstance-method.md)
 
 <!-- end list -->
 
   - destination  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Nombre de la carpeta donde se copiarán y recuperarán los archivos de base de datos del conjunto de copia de seguridad. Si se establece en null, los archivos de base de datos se copiarán y recuperarán en su ubicación original.
+    Nombre de la carpeta donde se copiarán y recuperarán los archivos de base de datos del conjunto de copia de seguridad. Si se establece en NULL, los archivos de base de datos se copiarán y recuperarán en su ubicación original.
 
 <!-- end list -->
 
   - statusCallback  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_PFNSTATUS](./jet-pfnstatus-delegate.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_PFNSTATUS](./jet-pfnstatus-delegate.md)  
     
     Devolución de llamada de notificación de estado opcional.
 
@@ -99,6 +99,6 @@ public static void JetRestoreInstance(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

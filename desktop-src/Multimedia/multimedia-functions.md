@@ -3,19 +3,19 @@ title: Funciones multimedia
 description: Funciones multimedia
 ms.assetid: a2520c4a-cce4-40ad-b8e7-3728b84d88ea
 keywords:
-- Multimedia de Windows, funciones
+- Windows multimedia,functions
 - multimedia, funciones
 - referencia multimedia, funciones
-- referencia de multimedia, funciones
+- referencia de multimedia,functions
 - funciones multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc279a8fdbbeaee88dc3f83eb56d6eec7b7bae5e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a38a1e886e86e1a503e2e6398f5f339837554145683fbf478e21e9413508d69c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104487658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806955"
 ---
 # <a name="multimedia-functions"></a>Funciones multimedia
 
@@ -167,15 +167,15 @@ Las siguientes funciones se usan con multimedia.
 -   [**ICSeqCompressFrameStart**](/windows/desktop/api/Vfw/nf-vfw-icseqcompressframestart)
 -   [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc)
 -   [**IOProc**](/previous-versions//dd757098(v=vs.85))
--   [**joyConfigChanged**](/windows/desktop/api/joystickapi/nf-joystickapi-joyconfigchanged)
--   [**joyGetDevCaps**](/windows/win32/api/joystickapi/nf-joystickapi-joygetdevcaps)
--   [**joyGetNumDevs**](/windows/win32/api/joystickapi/nf-joystickapi-joygetnumdevs)
--   [**joyGetPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos)
--   [**joyGetPosEx**](/windows/win32/api/joystickapi/nf-joystickapi-joygetposex)
--   [**joyGetThreshold**](/windows/win32/api/joystickapi/nf-joystickapi-joygetthreshold)
--   [**joyReleaseCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joyreleasecapture)
--   [**joySetCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture)
--   [**joySetThreshold**](/windows/win32/api/joystickapi/nf-joystickapi-joysetthreshold)
+-   [**yconfigChanged**](/windows/desktop/api/joystickapi/nf-joystickapi-joyconfigchanged)
+-   [**ygetDevCaps**](/windows/win32/api/joystickapi/nf-joystickapi-joygetdevcaps)
+-   [**ygetNumDevs**](/windows/win32/api/joystickapi/nf-joystickapi-joygetnumdevs)
+-   [**ygetPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos)
+-   [**ygetPosEx**](/windows/win32/api/joystickapi/nf-joystickapi-joygetposex)
+-   [**ygetThreshold**](/windows/win32/api/joystickapi/nf-joystickapi-joygetthreshold)
+-   [**captureReleaseCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joyreleasecapture)
+-   [**captureSetCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture)
+-   [**ysetThreshold**](/windows/win32/api/joystickapi/nf-joystickapi-joysetthreshold)
 -   [**mciExecute**](/previous-versions//dd757154(v=vs.85))
 -   [**mciGetCreatorTask**](/previous-versions//dd757155(v=vs.85))
 -   [**mciGetDeviceID**](/previous-versions//dd757156(v=vs.85))
@@ -236,7 +236,7 @@ Las siguientes funciones se usan con multimedia.
 -   [**mixerGetLineInfo**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlineinfo)
 -   [**mixerGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetnumdevs)
 -   [**mixerMessage**](/windows/win32/api/mmeapi/nf-mmeapi-mixermessage)
--   [**mixerOpen**](/windows/win32/api/mmeapi/nf-mmeapi-mixeropen)
+-   [**mixerAbrir**](/windows/win32/api/mmeapi/nf-mmeapi-mixeropen)
 -   [**mixerSetControlDetails**](/windows/win32/api/mmeapi/nf-mmeapi-mixersetcontroldetails)
 -   [**mmGetCurrentTask**](/windows/desktop/api/Mmddk/nf-mmddk-mmgetcurrenttask)
 -   [**mmioAdvance**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioadvance)
@@ -263,9 +263,9 @@ Las siguientes funciones se usan con multimedia.
 -   [**mmTaskSignal**](/windows/desktop/api/Mmddk/nf-mmddk-mmtasksignal)
 -   [**mmTaskYield**](/windows/desktop/api/Mmddk/nf-mmddk-mmtaskyield)
 -   [**MyStatusProc**](/previous-versions//dd743620(v=vs.85))
--   [**Reproducción**](/previous-versions//dd743680(v=vs.85))
--   [**sndOpenSound**](/windows/desktop/api/mmiscapi/nf-mmiscapi-sndopensound)
--   [**sndPlaySound**](/previous-versions//dd798676(v=vs.85))
+-   [**Play Sound**](/previous-versions//dd743680(v=vs.85))
+-   [**sndOpen Sound**](/windows/desktop/api/mmiscapi/nf-mmiscapi-sndopensound)
+-   [**sndPlay Sound**](/previous-versions//dd798676(v=vs.85))
 -   [**StretchDIB**](/windows/desktop/api/Vfw/nf-vfw-stretchdib)
 -   [**timeBeginPeriod**](/windows/desktop/api/TimeAPI/nf-timeapi-timebeginperiod)
 -   [**timeEndPeriod**](/windows/desktop/api/TimeAPI/nf-timeapi-timeendperiod)
@@ -307,12 +307,12 @@ Las siguientes funciones se usan con multimedia.
 -   [**waveOutProc**](/previous-versions//dd743869(v=vs.85))
 -   [**waveOutReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset)
 -   [**waveOutRestart**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutrestart)
--   [**waveOutSetPitch**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetpitch)
+-   [**waveOutSetPjunto**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetpitch)
 -   [**waveOutSetPlaybackRate**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetplaybackrate)
 -   [**waveOutSetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetvolume)
 -   [**waveOutUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutunprepareheader)
 -   [**waveOutWrite**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutwrite)
 
- 
+ 
 
- 
+ 

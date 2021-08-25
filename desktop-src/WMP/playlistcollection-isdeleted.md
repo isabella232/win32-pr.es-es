@@ -1,11 +1,11 @@
 ---
-title: PlaylistCollection. isDeleted (método)
-description: El método isDeleted recupera un valor que indica si la lista de reproducción especificada está en la carpeta elementos eliminados.
+title: Método PlaylistCollection.isDeleted
+description: El método isDeleted recupera un valor que indica si la lista de reproducción especificada está en la carpeta de elementos eliminados.
 ms.assetid: 5023927a-5d1a-4b61-8122-476947d537c4
 keywords:
-- método isDeleted Windows Media Player
-- método isDeleted Windows Media Player, clase PlaylistCollection
-- Clase PlaylistCollection Windows Media Player, método isDeleted
+- Método isDeleted Reproductor de Windows Media
+- Método isDeleted Reproductor de Windows Media , clase PlaylistCollection
+- Clase PlaylistCollection Reproductor de Windows Media , método isDeleted
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fed3e7e8ff41f23d0f9f741ea99f3382d20532e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a59f6ad587740911d55ae2837607c651e3f3be875bfb24f8bfa765ba415e9bc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862205"
 ---
-# <a name="playlistcollectionisdeleted-method"></a>PlaylistCollection. isDeleted (método)
+# <a name="playlistcollectionisdeleted-method"></a>Método PlaylistCollection.isDeleted
 
-El método **IsDeleted** recupera un valor que indica si la lista de reproducción especificada está en la carpeta elementos eliminados.
+El **método isDeleted** recupera un valor que indica si la lista de reproducción especificada está en la carpeta de elementos eliminados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ bRetVal = PlaylistCollection.isDeleted(
 
 <dl> <dt>
 
-*lista de reproducción* \[ de\]
+*lista de reproducción* \[ En\]
 </dt> <dd>
 
-Objeto de **lista de reproducción** que se va a buscar.
+Objeto **De lista** de reproducción que se va a buscar.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Objeto de **lista de reproducción** que se va a buscar.
 
 Este método devuelve un **valor booleano**.
 
-**Windows Media Player 10 Mobile**: este método siempre devuelve **false**.
+**Reproductor de Windows Media 10 Mobile:** este método siempre devuelve **false**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Este método devuelve un **valor booleano**.
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0, Windows Media Player versión 7,1 o Windows Media Player para Windows XP. Este método no es compatible con Windows Media Player 9 series o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0, Reproductor de Windows Media versión 7.1 o Reproductor de Windows Media para Windows XP. Este método no se admite para Reproductor de Windows Media serie 9 o posterior.<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl>                                                                                                              |
 
 

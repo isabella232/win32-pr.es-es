@@ -1,9 +1,9 @@
 ---
-title: Estructura WMDMMetadataView
+title: WMDMMetadataView (estructura)
 description: La estructura WMDMMetadataView define la vista de metadatos. El contenido se organiza en función de esta definición.
 ms.assetid: 787d2295-d433-451d-a1fc-6f73585e10d6
 keywords:
-- Estructura WMDMMetadataView Administrador de dispositivos Windows Media
+- Estructura WMDMMetadataView windows Media Administrador de dispositivos
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aa38a8fe7f19137c5caff18417d48ea23168b26
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e442ed3058f1982ac7607c6b8a29e5df321d69776695821b278049e27cd7589
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862595"
 ---
-# <a name="wmdmmetadataview-structure"></a>Estructura WMDMMetadataView
+# <a name="wmdmmetadataview-structure"></a>WMDMMetadataView (estructura)
 
-La estructura **WMDMMetadataView** define la vista de metadatos. El contenido se organiza en función de esta definición.
+La **estructura WMDMMetadataView** define la vista de metadatos. El contenido se organiza en función de esta definición.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,14 +45,14 @@ typedef struct _WMDMMetadataView {
 **pwszViewName**
 </dt> <dd>
 
-Puntero a una cadena de caracteres anchos terminada en null que contiene el nombre de la vista. Se utiliza como el nombre del nodo raíz en el que se presenta esta vista.
+Puntero a una cadena terminada en null de caracteres anchos que contiene el nombre de la vista. Se usa como nombre del nodo raíz bajo el que se presenta esta vista.
 
 </dd> <dt>
 
 **nDepth**
 </dt> <dd>
 
-Entero que contiene la profundidad de la vista, que indica el número de etiquetas de metadatos anidadas que se utilizan para la vista.
+Entero que contiene la profundidad de la vista, que indica cuántas etiquetas de metadatos anidados se usan para la vista.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Matriz de cadenas de etiquetas de metadatos para las etiquetas anidadas.
 
 ## <a name="examples"></a>Ejemplos
 
-En el código siguiente se crea una vista de metadatos:
+El código siguiente crea una vista de metadatos:
 
 
 ```C++
@@ -81,25 +81,25 @@ view.ppwszTags = wszTagArray;
 
 
 
-El código anterior organiza el contenido de la manera siguiente:
+El código anterior organiza el contenido de la siguiente manera:
 
-<dl> Mi vista<dl> Genre1<dl> Artist1<dl> Album1<dl> Song1  
-Song2  
+<dl> Mi vista<dl> Genre1<dl> Artist1<dl> Album1<dl> Canción1  
+Canción 2  
 ...  
 </dl> </dd> Album2  
 ...  
-</dl> </dd> Artist2<dl> Album1<dl> Song1  
-Song2  
+</dl> </dd> Artist2<dl> Album1<dl> Canción1  
+Canción 2  
 ...  
 </dl> </dd> Album2  
 ...  
-</dl> </dd> </dl> </dd> Genre2<dl> Artist1<dl> Album1<dl> Song1  
-Song2  
+</dl> </dd> </dl> </dd> Genre2<dl> Artist1<dl> Album1<dl> Canción1  
+Canción 2  
 ...  
 </dl> </dd> Album2  
 ...  
-</dl> </dd> Artist2<dl> Album1<dl> Song1  
-Song2  
+</dl> </dd> Artist2<dl> Album1<dl> Canción1  
+Canción 2  
 ...  
 </dl> </dd> Album2  
 ...  
@@ -113,7 +113,7 @@ Song2
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 

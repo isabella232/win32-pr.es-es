@@ -4,18 +4,18 @@ ms.assetid: 954cf9ee-e76c-4faf-99aa-3648a7bb8a59
 title: Agrupación de objetos COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 293ed69129dd95223b34a6eb56440d8e67f0e6c6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8f0a07be6b7e6337114d4fb0aa76a2ccd6b9934c79b2cbf8a4c294902ca42fec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119859175"
 ---
 # <a name="com-object-pooling"></a>Agrupación de objetos COM+
 
-El servicio de agrupación de objetos COM+ le permite configurar un componente para que las instancias de se mantengan activas en un grupo, listas para ser utilizadas por cualquier cliente que solicite el componente.
+El servicio de agrupación de objetos COM+ permite configurar un componente para que las instancias de sí mismos se mantienen activas en un grupo, listas para que las utilice cualquier cliente que solicite el componente.
 
-En los temas que se describen en la tabla siguiente se proporciona información básica y de tareas sobre el uso de la agrupación de objetos en COM+.
+Los temas descritos en la tabla siguiente proporcionan información en segundo plano y de tareas sobre el uso de la agrupación de objetos en COM+.
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: WMPVIDEO
-description: Este es un elemento de vídeo predefinido con los siguientes valores predeterminados.
+description: Se trata de un elemento VIDEO predefinido con los siguientes valores predeterminados.
 ms.assetid: c9423aea-2d21-4c5d-8941-dd156dd07eb7
 keywords:
-- WMPVIDEO Windows Media Player
+- WMPVIDEO Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7a918af8548ae7bc82cd4b1de1a81c685c1b5562
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65560b9a5633020f2bbc37209af6ce5146027323fab7e422e6feac5536d0d84d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899755"
 ---
 # <a name="wmpvideo"></a>WMPVIDEO
 
-Este es un elemento de **vídeo** predefinido con los siguientes valores predeterminados.
+Se trata de un elemento **VIDEO predefinido** con los siguientes valores predeterminados.
 
 ``` syntax
 backgroundColor="black"
@@ -30,19 +30,19 @@ horizontalAlignment="stretch"
 verticalAlignment="stretch"
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se creará un elemento de **vídeo** que ajustará la ventana de vídeo cuando se cambie el tamaño de la máscara. El vídeo digital que se muestra en esta ventana se ajustará para ajustarse al espacio disponible o se escalará o reducirá verticalmente según la configuración del menú **vista** del reproductor en **tamaño del vídeo**. El menú **Ver** se muestra en el modo completo del reproductor o cuando el atributo **View. TitleBar** está establecido en true en una máscara.
+Esto creará un elemento **VIDEO** que extenderá la ventana de vídeo cuando se cambie el tamaño de la máscara. El vídeo digital que se muestra en esta ventana se extenderá para ajustarse al  espacio disponible o se escalará vertical o verticalmente según la configuración del menú Vista del reproductor en **Tamaño del vídeo.** El **menú** Ver se muestra en el modo completo del reproductor o cuando el atributo **VIEW.titleBar** se establece en true en una máscara.
 
-Todas las propiedades de este elemento de **vídeo** se pueden invalidar si se especifican de forma explícita.
+Todas las propiedades de **este elemento VIDEO** se pueden invalidar si se especifican explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|----------------------------------------------|
-| Versión<br/> | Windows Media Player 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media 7.0 o posterior<br/> |
 
 
 
@@ -50,7 +50,7 @@ Todas las propiedades de este elemento de **vídeo** se pueden invalidar si se e
 
 <dl> <dt>
 
-[**Elemento de vídeo**](video-element.md)
+[**Elemento VIDEO**](video-element.md)
 </dt> </dl>
 
  
