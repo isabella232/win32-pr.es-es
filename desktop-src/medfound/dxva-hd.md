@@ -1,62 +1,62 @@
 ---
-description: Microsoft DirectX video Acceleration High Definition (DXVA-HD) es una API para el procesamiento de vídeo acelerado por hardware.
+description: Microsoft DirectX Video Acceleration High Definition (DXVA-HD) es una API para el procesamiento de vídeo acelerado por hardware.
 ms.assetid: 38ebec28-c4fc-4e72-ac87-1e41707d1908
 title: DXVA-HD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f8694a28d8d5871112590c90bf166d1aa9246e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a40e23d6e91f576f062c52a0f58d0bfe1f769ad3879581b01386333266cb0553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119958655"
 ---
 # <a name="dxva-hd"></a>DXVA-HD
 
-Microsoft DirectX video Acceleration High Definition (DXVA-HD) es una API para el procesamiento de vídeo acelerado por hardware. DXVA-HD usa la GPU para realizar funciones como desentrelazado, composición y conversión de espacio de color.
+Microsoft DirectX Video Acceleration High Definition (DXVA-HD) es una API para el procesamiento de vídeo acelerado por hardware. DXVA-HD usa la GPU para realizar funciones como el desenlazado, la composición y la conversión de espacio de color.
 
-DXVA-HD es similar al [procesamiento de vídeo de DXVA](dxva-video-processing.md) (DXVA-VP), pero ofrece características mejoradas y un modelo de procesamiento más sencillo. Al proporcionar un modelo de composición más flexible, DXVA-HD está diseñado para admitir la próxima generación de formatos ópticos HD y estándares de difusión.
+DXVA-HD es similar al procesamiento de vídeo [DXVA](dxva-video-processing.md) (DXVA-VP), pero ofrece características mejoradas y un modelo de procesamiento más sencillo. Al proporcionar un modelo de composición más flexible, DXVA-HD está diseñado para admitir la próxima generación de formatos ópticos de HD y estándares de difusión.
 
-La API DXVA-HD requiere un controlador de pantalla WDDM que admita la interfaz de controlador de dispositivo (DDI) de DXVA, o bien un procesador de software de complemento.
+La API DXVA-HD requiere un controlador de pantalla WDDM que admita la interfaz de controlador de dispositivo DXVA-HD (DDI) o un procesador de software de complemento.
 
 -   [Mejoras en DXVA-VP](#improvements-over-dxva-vp)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="improvements-over-dxva-vp"></a>Mejoras en DXVA-VP
 
-DXVA-HD expande el conjunto de características que proporciona DXVA-VP. Entre las mejoras se incluyen:
+DXVA-HD expande el conjunto de características proporcionadas por DXVA-VP. Entre las mejoras se incluyen:
 
--   Combinación de RGB y YUV. Cualquier flujo puede ser RGB o YUV. Ya no hay una distinción entre el flujo principal y los subflujos.
--   Desentrelazado de varias secuencias. Cualquier flujo puede ser progresiva o entrelazado. Además, la cadencia y la velocidad de fotogramas pueden variar de un flujo de entrada a otro.
--   Colores de fondo RGB. Anteriormente, solo se admitían los colores de fondo YUV.
--   Creación de claves de luminancia. Cuando está habilitada la creación de claves de luminancia, los valores de luminancia que se encuentran dentro de un intervalo designado se vuelven transparentes.
--   Cambio dinámico entre los modos de desentrelazado.
+-   Mezcla RGB y YUV. Cualquier secuencia puede ser RGB o YUV. Ya no hay ninguna distinción entre la secuencia principal y las substreams.
+-   Desenlazado de varias secuencias. Cualquier secuencia puede ser progresiva o entrelazada. Además, la cadencia y la velocidad de fotogramas pueden variar de un flujo de entrada a otro.
+-   Colores de fondo RGB. Anteriormente, solo se admiteban los colores de fondo YUV.
+-   Clave de Luma. Cuando se habilita la clave de luma, los valores luma que se encuentran dentro de un intervalo designado se vuelven transparentes.
+-   Cambio dinámico entre modos de desinterés.
 
-DXVA: HD también define algunas características avanzadas que los controladores pueden admitir. Sin embargo, las aplicaciones no deben suponer que todos los controladores serán compatibles con estas características. Las características avanzadas incluyen:
+DXVA-HD también define algunas características avanzadas que los controladores pueden admitir. Sin embargo, las aplicaciones no deben suponer que todos los controladores admitirán estas características. Las características avanzadas incluyen:
 
--   Telecine inversa (por ejemplo, 60i a 24p).
--   Conversión de velocidad de fotogramas (por ejemplo, 24p a 120P).
+-   Televisa inversa (por ejemplo, de 60i a 24p).
+-   Conversión de velocidad de fotogramas (por ejemplo, de 24p a 120p).
 -   Modos de relleno alfa.
--   Filtro de reducción de ruido y mejora del borde.
--   Escala no lineal anamorphic.
--   YCbCr extendido (xvYCC).
+-   Reducción de ruido y filtrado de mejora del borde.
+-   Escalado anamórfico no lineal.
+-   YCbCr extendido (sipYCC).
 
 Esta sección contiene los temas siguientes.
 
 -   [Creación de un procesador de vídeo DXVA-HD](creating-a-dxva-hd-video-processor.md)
--   [Comprobando formatos de DXVA compatibles: HD](checking-supported-dxva-hd-formats.md)
--   [Creación de superficies de vídeo de HD de DXVA](creating-dxva-hd-video-surfaces.md)
--   [Configuración de los Estados de la HD de DXVA](setting-dxva-hd-states.md)
--   [Realización de DXVA: HD blit](performing-the-dxva-hd-blit.md)
+-   [Comprobación de los formatos DXVA-HD admitidos](checking-supported-dxva-hd-formats.md)
+-   [Creación de superficies de vídeo DXVA-HD](creating-dxva-hd-video-surfaces.md)
+-   [Configuración de estados DXVA-HD](setting-dxva-hd-states.md)
+-   [Realización de dxva-HD Blit](performing-the-dxva-hd-blit.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Aceleración de vídeo de DirectX 2,0](directx-video-acceleration-2-0.md)
+[Aceleración de vídeo de DirectX 2.0](directx-video-acceleration-2-0.md)
 </dt> <dt>
 
-[DXVA: ejemplo HD](dxva-hd-sample.md)
+[Ejemplo de DXVA-HD](dxva-hd-sample.md)
 </dt> </dl>
 
  

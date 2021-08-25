@@ -1,12 +1,12 @@
 ---
-title: Método Session. Delete (WSManDisp. h)
+title: Método Session.Delete (WSManDisp.h)
 description: Elimina el recurso especificado en el URI del recurso.
 ms.assetid: 8803d35d-674c-483d-866b-37129102c7ce
 ms.tgt_platform: multiple
 keywords:
-- Eliminar método Administración remota de Windows
-- Método Delete Administración remota de Windows, objeto Session
-- Administración remota de Windows de objeto de sesión, método Delete
+- Eliminación del método Windows administración remota
+- Delete method Windows Remote Management , Session object
+- Objeto de sesión Windows administración remota, método Delete
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaf4b46997a7e3cf50dbf50c2828de78a814a513
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 769ef3f462fa542e9afc6859b564e1a32ed87578894df4008fb6a19ad8aadad8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858675"
 ---
-# <a name="sessiondelete-method"></a>Session. Delete (método)
+# <a name="sessiondelete-method"></a>Método Session.Delete
 
 Elimina el recurso especificado en el URI del recurso.
 
@@ -44,14 +44,14 @@ Session.Delete( _
 
 <dl> <dt>
 
-*resourceUri* \[ de\]
+*resourceUri* \[ En\]
 </dt> <dd>
 
-URI del recurso que se va a eliminar. También puede usar un objeto [**ResourceLocator**](resourcelocator.md) para especificar el recurso.
+Uri del recurso que se va a eliminar. También puede usar un [**objeto ResourceLocator**](resourcelocator.md) para especificar el recurso.
 
 </dd> <dt>
 
-*marcas* \[ de en, opcional\]
+*flags* \[ in, opcional\]
 </dt> <dd>
 
 Reservado para uso futuro. Se debe establecer en 0.
@@ -62,9 +62,9 @@ Reservado para uso futuro. Se debe establecer en 0.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La siguiente sintaxis se usa para llamar a este método.
+La sintaxis siguiente se usa para llamar a este método.
 
 
 ```VB
@@ -96,9 +96,9 @@ objSession.Delete(strResource)
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -107,7 +107,7 @@ objSession.Delete(strResource)
 
 <dl> <dt>
 
-[**De sesión**](session.md)
+[**Sesión**](session.md)
 </dt> </dl>
 
  

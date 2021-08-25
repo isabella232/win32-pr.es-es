@@ -1,7 +1,7 @@
 ---
 description: Se envía cuando se inicia un conjunto de comandos de navegación de DVD.
 ms.assetid: 9cdcb211-a9e3-4a15-81bd-7ada2b9d823a
-title: EC_DVD_BeginNavigationCommands (Dvdevcode. h)
+title: EC_DVD_BeginNavigationCommands (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: cda904c4fcc0b1acdd16c8fc4596eef332140ec4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e0c39b43fc29ed5fadcac0e85ff23ef9f1945a25e26bcfdb0f1e81f804abbc07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965905"
 ---
-# <a name="ec_dvd_beginnavigationcommands"></a>\_BeginNavigationCommands de DVD de EC \_
+# <a name="ec_dvd_beginnavigationcommands"></a>EC \_ DVD \_ BeginNavigationCommands
 
 Se envía cuando se inicia un conjunto de comandos de navegación de DVD.
 
@@ -31,7 +31,7 @@ Se envía cuando se inicia un conjunto de comandos de navegación de DVD.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Un valor de la enumeración [**\_ NavCmdType de DVD**](/windows/win32/api/strmif/ne-strmif-dvd_navcmdtype) .
+Valor de la [**enumeración DVD \_ NavCmdType.**](/windows/win32/api/strmif/ne-strmif-dvd_navcmdtype)
 
 </dd> <dt>
 
@@ -42,9 +42,9 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento está deshabilitado de forma predeterminada. Para habilitar este evento, llame a [**IDvdControl2:: SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) y establezca la opción **DVD \_ EnableLoggingEvents** en **true**.
+Este evento está deshabilitado de forma predeterminada. Para habilitar este evento, llame a [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) y establezca la opción **DVD \_ EnableLoggingEvents** en **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Este evento está deshabilitado de forma predeterminada. Para habilitar este eve
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

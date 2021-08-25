@@ -1,22 +1,22 @@
 ---
-title: Ajustar una imagen
-description: Ajustar una imagen
+title: Stretching an Image
+description: Stretching an Image
 ms.assetid: 7cfd91c3-0ebd-47eb-a33d-c81a66f820e5
 keywords:
-- MCIWndGetDest (macro)
-- MCIWndPutDest (macro)
+- Macro MCIWndGetDest
+- Macro MCIWndPutDest
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0296cd31988ba79aeab9221fb41b4fd150ffc09
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 283ecc69af3298930b4fb9788a02fb60167483fc10b185dd21e696affe4ee58a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892575"
 ---
-# <a name="stretching-an-image"></a>Ajustar una imagen
+# <a name="stretching-an-image"></a>Stretching an Image
 
-En el ejemplo siguiente se extienden las imágenes de un clip de vídeo. Aumenta las dimensiones del rectángulo de destino mediante la macro [**MCIWndPutDest**](/windows/desktop/api/Vfw/nf-vfw-mciwndputdest) . El tamaño del área de reproducción permanece sin cambios, por lo que el resultado es una imagen distorsionada y ampliada. En los ejemplos se usa la función **MCIWndPutDest** para cambiar la posición del rectángulo de destino con respecto al área de reproducción, lo que proporciona una manera de ver distintas partes de la imagen ajustada.
+En el ejemplo siguiente se extienden las imágenes de un clip de vídeo. Aumenta las dimensiones del rectángulo de destino mediante la macro [**MCIWndPutDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndputdest) El tamaño del área de reproducción permanece sin cambios, por lo que el resultado es una imagen distorsionada y ampliada. En los ejemplos se usa la función **MCIWndPutDest** para cambiar la posición del rectángulo de destino con respecto al área de reproducción, lo que proporciona una manera de ver distintas partes de la imagen elástica.
 
 
 ```C++
@@ -74,9 +74,9 @@ case WM_COMMAND:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

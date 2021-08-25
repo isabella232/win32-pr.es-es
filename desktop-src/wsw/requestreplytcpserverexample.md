@@ -1,6 +1,6 @@
 ---
 title: RequestReplyTcpServerExample
-description: Vea un ejemplo de solicitud y respuesta al servidor TCP que usa la API de servicios web de Windows (WWSAPI). Este ejemplo acepta un canal y recibe y responde a los mensajes.
+description: Vea un ejemplo de solicitud y respuesta al servidor TCP que usa Windows Web Services API (WWSAPI). Este ejemplo acepta un canal y recibe y responde a los mensajes.
 ms.assetid: da9a507b-952d-4378-a37f-c2c4407335e8
 keywords:
 - RequestReplyTcpServerExample Native-Web-Services
@@ -8,12 +8,12 @@ keywords:
 - Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dd347c5adad07140ed2b9942a1a9718bf9f5f85
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 463e2fee5f6014746bf38723d9c1cc80d7e81d8248cbcf14253e335cd7845398
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927085"
 ---
 # <a name="requestreplytcpserverexample"></a>RequestReplyTcpServerExample
 

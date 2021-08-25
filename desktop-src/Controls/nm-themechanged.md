@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_THEMECHANGED (commctrl. h)
-description: Notifica a la ventana primaria de un control que el tema ha cambiado. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_THEMECHANGED de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control que el tema ha cambiado. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 5e6a039e-9c35-4476-8cf1-5aea8977ed2d
 keywords:
-- NM_THEMECHANGED controles de código de notificación de Windows
+- NM_THEMECHANGED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dab2a133da2ff1fed0949f2bc97ce294168febc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 069f4eb2b3727edc19c531f4404b723df2ea775677a25283268c1c20a978dedc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877265"
 ---
-# <a name="nm_themechanged-notification-code"></a>Código de notificación de NM \_ THEMECHANGED
+# <a name="nm_themechanged-notification-code"></a>Código de notificación DE NM \_ THEMECHANGED
 
-Notifica a la ventana primaria de un control que el tema ha cambiado. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control que el tema ha cambiado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_THEMECHANGED
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ El control omite el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

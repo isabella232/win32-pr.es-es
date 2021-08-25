@@ -1,25 +1,25 @@
 ---
 title: Dominios DNS
-description: Los dominios DNS están familiarizados con la mayoría de los profesionales de equipos que utilizan Internet; los dominios son nodos del espacio de nombres de la jerarquía de DNS y los dominios se pueden dividir en subdominios.
+description: Los dominios DNS son familiares para la mayoría de los profesionales de equipos que usan Internet. Los dominios son nodos en el espacio de nombres de la jerarquía DNS y los dominios se pueden dividir en subdominios.
 ms.assetid: e4cf5a5c-6b0d-488a-aff8-06e31611aa1a
 keywords:
 - Dominios DNS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 121ce61bb29505b4e15c9b42c3833638550a8b41
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 05244e58c4539b24b461b1907bb318db7f22f1d264b38f0b96b41641b8109abb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913205"
 ---
 # <a name="dns-domains"></a>Dominios DNS
 
-Los dominios DNS están familiarizados con la mayoría de los profesionales de equipos que utilizan Internet; los dominios son nodos del espacio de nombres de la jerarquía de DNS y los dominios se pueden dividir en subdominios. Por ejemplo, los dominios de la jerarquía ficticia gadgets.widgets.microsoft.com incluyen los gadgets, widgets, Microsoft y com.
+Los dominios DNS son familiares para la mayoría de los profesionales de equipos que usan Internet. Los dominios son nodos en el espacio de nombres de la jerarquía DNS y los dominios se pueden dividir en subdominios. Los dominios de la jerarquía gadgets.widgets.microsoft.com ficticia, por ejemplo, incluyen los dominios widget, widgets, microsoft y com.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: TaskService. NewTask, método
-description: En el caso de scripting, devuelve un objeto de definición de tarea vacía que se rellenará con la configuración y las propiedades y, a continuación, se registrará mediante el método TaskFolder. RegisterTaskDefinition.
+title: Método TaskService.NewTask
+description: Para el scripting, devuelve un objeto de definición de tarea vacío que se va a rellenar con valores y propiedades y, a continuación, se registra mediante el método TaskFolder.RegisterTaskDefinition.
 ms.assetid: 696d57fc-100a-43e6-a8d9-9ec89be40367
 keywords:
 - Método NewTask Programador de tareas
-- Método NewTask Programador de tareas, objeto TaskService
-- Programador de tareas objeto TaskService, NewTask (método)
+- Método NewTask Programador de tareas , objeto TaskService
+- Objeto TaskService Programador de tareas método , NewTask
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f5f10ce90861c76d0a751c54e8282269b7a8986
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e22da6f62f59bf24ded0eed9dea21e3a1a9d1c3e7ecc36fb6f425f58124aee71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990935"
 ---
-# <a name="taskservicenewtask-method"></a>TaskService. NewTask, método
+# <a name="taskservicenewtask-method"></a>Método TaskService.NewTask
 
-En el caso de scripting, devuelve un objeto de definición de tarea vacía que se rellenará con la configuración y las propiedades y, a continuación, se registrará mediante el método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) .
+Para el scripting, devuelve un objeto de definición de tarea vacío que se va a rellenar con valores y propiedades y, a continuación, se registra mediante el [**método TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ TaskService.NewTask( _
 
 <dl> <dt>
 
-*marcas* \[ de de\]
+*flags* \[ En\]
 </dt> <dd>
 
-Este parámetro se reserva para uso futuro y debe establecerse en 0.
+Este parámetro está reservado para uso futuro y debe establecerse en 0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La definición de tarea que especifica toda la información necesaria para crear una nueva tarea.
+Definición de tarea que especifica toda la información necesaria para crear una nueva tarea.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ La definición de tarea que especifica toda la información necesaria para crear
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

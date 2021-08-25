@@ -1,25 +1,25 @@
 ---
-description: Campos BoundingBox
+description: Campos boundingBox
 ms.assetid: 54a422f3-b557-4307-84bd-22867917281f
-title: Campos BoundingBox
+title: Campos boundingBox
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37b4322ca46c446658387f8a0a60b46dc720697e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ff5a3b92aaffff86087f5a05ef0f3d5e14d861110fc81521d14d0e9145ee6a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119842425"
 ---
-# <a name="boundingbox-fields"></a>Campos BoundingBox
+# <a name="boundingbox-fields"></a>Campos boundingBox
 
 
 
 | Campo                                                        | Descripción                                               |
 |--------------------------------------------------------------|-----------------------------------------------------------|
-| [**Centro**](boundingbox-center.md)<br/>              | Centro del BoundingBox.<br/>                 |
-| [**recuento de esquinas \_**](boundingbox-corner-count.md)<br/> | Número de puntos que definen el BoundingBox.<br/> |
-| [**Extents**](boundingbox-extents.md)<br/>            | Extensiones del BoundingBox.<br/>                |
+| [**Centro**](boundingbox-center.md)<br/>              | Centro de BoundingBox.<br/>                 |
+| [**RECUENTO DE \_ ESQUINAS**](boundingbox-corner-count.md)<br/> | Número de puntos que definen boundingBox.<br/> |
+| [**Extents**](boundingbox-extents.md)<br/>            | Extensiones de BoundingBox.<br/>                |
 
 
 

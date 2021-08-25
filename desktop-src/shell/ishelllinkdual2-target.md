@@ -1,7 +1,7 @@
 ---
 description: Contiene el destino del objeto de vínculo.
 ms.assetid: 26da562b-a1d6-4150-9d9a-05b11e3972d9
-title: Propiedad IShellLinkDual2. Target (Shldisp. h)
+title: Propiedad IShellLinkDual2.Target (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 8e5f29623cf94ef5f17f06e52337928c0c345e42
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3319e84abc32887d7cf7a9126ea9ae0f57b9607f937256b8377030fdd9dd75cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884325"
 ---
-# <a name="ishelllinkdual2target-property"></a>Propiedad IShellLinkDual2. Target
+# <a name="ishelllinkdual2target-property"></a>IShellLinkDual2.Target, propiedad
 
 Contiene el destino del objeto de vínculo.
 
@@ -37,13 +37,13 @@ Target = IShellLinkDual2.Target
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Expresión de objeto que se evalúa como el objeto [**carpeta**](folderitem.md) del destino.
+Expresión de objeto que se evalúa como el objeto [**FolderItem del**](folderitem.md) destino.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **target** para recuperar el destino de un acceso directo a Internet Explorer. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Target** para recuperar el destino de un acceso directo a Internet Explorer. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -83,7 +83,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -174,11 +174,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

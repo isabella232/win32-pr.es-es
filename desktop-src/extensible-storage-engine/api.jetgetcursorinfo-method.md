@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetGetCursorInfo (método)'
-title: Método API. JetGetCursorInfo
+description: Más información sobre el método Api.JetGetCursorInfo
+title: Método Api.JetGetCursorInfo
 TOCTitle: 'JetGetCursorInfo method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetCursorInfo(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetcursorinfo(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7144283a062b0097d6866e74d1c263bb130c5e19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8203d541db2596f4d691c055aba83e3b6b76163f7b5949e3b62d6e46256d8b28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841045"
 ---
-# <a name="apijetgetcursorinfo-method"></a>Método API. JetGetCursorInfo
+# <a name="apijetgetcursorinfo-method"></a>Método Api.JetGetCursorInfo
 
-Determinar si una actualización del registro actual de un cursor producirá un conflicto de escritura, según el estado actual de actualización del registro. Es posible que se devuelva un conflicto de escritura en última instancia, incluso si JetGetCursorInfo devuelve un valor correcto. debido a que otra sesión puede actualizar el registro antes de que la sesión actual pueda actualizar el mismo registro.
+Determine si una actualización del registro actual de un cursor dará lugar a un conflicto de escritura, en función del estado de actualización actual del registro. Es posible que, en última instancia, se devuelva un conflicto de escritura incluso si JetGetCursorInfo se devuelve correctamente. porque otra sesión puede actualizar el registro antes de que la sesión actual pueda actualizar el mismo registro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,23 +61,23 @@ public static void JetGetCursorInfo(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se va a comprobar.
+    Cursor que se comprobará.
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

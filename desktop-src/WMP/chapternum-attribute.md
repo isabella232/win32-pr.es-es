@@ -3,7 +3,7 @@ title: Atributo chapterNum
 description: El atributo chapterNum es el número de capítulo del DVD.
 ms.assetid: 0938a553-a368-4155-963d-174d8ef1d1cd
 keywords:
-- chapterNum Media Player de Windows
+- chapterNum Attribute Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,24 +12,24 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf1b3103b2f4baf3def6eb111111b443022949cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb017fb17024f5877e158653c93f260add7be114cc0c655497a633b1e21f8cde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863905"
 ---
 # <a name="chapternum-attribute"></a>Atributo chapterNum
 
-El atributo **chapterNum** es el número de capítulo del DVD.
+El **atributo chapterNum** es el número de capítulo del DVD.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [DVDs](dvd-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

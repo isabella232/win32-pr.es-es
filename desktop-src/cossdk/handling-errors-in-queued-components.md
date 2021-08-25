@@ -4,27 +4,27 @@ ms.assetid: 8015682c-d84d-44e2-995d-dca68053c4fa
 title: Control de errores en componentes en cola
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95752adf82d74e39a9c93f1ae54584e72007f1ce
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 314ff367e656043746bb34bcb28b6c5a3dc8db9b86b58a482af45f684fb658c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991087"
 ---
 # <a name="handling-errors-in-queued-components"></a>Control de errores en componentes en cola
 
-En ocasiones, se produce una situación en la que un mensaje no se puede entregar correctamente a su destino previsto, normalmente debido a un problema con el sistema o la configuración. Por ejemplo, puede que el mensaje se dirija a una cola que no existe o a que la cola de destino no esté en un estado para recibir. El Movedor de mensajes es una herramienta que mueve todos los mensajes de [Message Queue Server](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) con errores de una cola a otra para que se puedan Reintentar. La utilidad del Movedor de mensajes es un objeto de automatización que se puede invocar con un VBScript.
+En ocasiones, se produce una situación en la que un mensaje no se puede entregar correctamente a su destino previsto, normalmente debido a un problema con el sistema o la configuración. Por ejemplo, el mensaje podría dirigirse a una cola que no existe o es posible que la cola de destino no esté en estado de recepción. El motor de mensajes es una herramienta que mueve todos los mensajes de [Message Queuing](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) con errores de una cola a otra para que se puedan reinterio. La utilidad de mover mensajes es un objeto de Automation que se puede invocar con un VBScript.
 
-## <a name="components-services-administrative-tool"></a>Herramienta administrativa Servicios de componentes
+## <a name="components-services-administrative-tool"></a>Herramienta administrativa de servicios de componentes
 
 No corresponde.
 
 ## <a name="visual-basic"></a>Visual Basic
 
-En el código de ejemplo siguiente se muestra cómo crear un objeto MessageMover, cómo establecer las propiedades necesarias y cómo iniciar la transferencia. Para usarlo desde Visual Basic, agregue una referencia a la biblioteca de tipos de servicios COM+.
+El código de ejemplo siguiente muestra cómo crear un objeto MessageMover, establecer las propiedades necesarias e iniciar la transferencia. Para usarlo desde Visual Basic, agregue una referencia a la biblioteca de tipos de servicios COM+.
 
 > [!Note]  
-> Para usar el objeto MessageMover, debe tener Message Queue Server instalado en el equipo y la aplicación especificada por AppName debe tener habilitada la puesta en cola. Para obtener información acerca de cómo instalar Message Queue Server, consulte ayuda y soporte técnico en el menú **Inicio** .
+> Para usar el objeto MessageMover, debe tener Message Queuing instalado en el equipo y la aplicación especificada por AppName debe tener habilitada la cola. Para obtener información sobre cómo instalar Message Queuing, vea Ayuda y soporte técnico en el **menú** Inicio.
 
  
 
@@ -63,7 +63,7 @@ End Function
 
 
 
-En el siguiente código de Visual Basic se muestra cómo llamar a la función MyMessageMover.
+En el Visual Basic siguiente se muestra cómo llamar a la función MyMessageMover.
 
 
 ```VB
@@ -78,18 +78,18 @@ End Sub
 
 
 
-La ruta de acceso de origen del mensaje es la cola final. Es la cola de mensajes inactivos, que es una cola privada de Message Queue Server y se denomina AppName \_ deadqueue. Los mensajes se mueven aquí si la transacción se anula repetidamente cuando se intenta en la quinta cola de reintentos. Con la herramienta de transferencia de mensajes, puede devolver el mensaje a la primera cola, que se denomina AppName. Para obtener más información sobre las colas de reintento, vea [errores del servidor](server-side-errors.md).
+La ruta de acceso de origen del mensaje es la cola de reposo final. Es la cola de mensajes fallidos, que es una cola privada de Message Queuing y se denomina AppName \_ deadqueue. Los mensajes se mueven aquí si la transacción se anula repetidamente cuando se intenta en la quinta cola de reintentos. Con la herramienta de mover mensajes, puede volver a mover el mensaje a la primera cola, que se denomina AppName. Para obtener más información sobre las colas de reintento, vea [Errores del lado servidor.](server-side-errors.md)
 
-Si los atributos de cola lo permiten, el Movedor de mensajes mueve los mensajes de forma transitoria para que los mensajes no se pierdan o se dupliquen en caso de que se produzca un error durante el traslado. La herramienta conserva todas las propiedades de mensaje que se pueden conservar al mover los mensajes de una cola a otra.
+Si los atributos de cola lo permiten, el motor de mensajes mueve los mensajes de forma transitoria para que los mensajes no se pierdan ni dupliquen en caso de error durante el traslado. La herramienta conserva todas las propiedades del mensaje que se pueden conservar al mover mensajes de una cola a otra.
 
-Si los mensajes se generan mediante llamadas de componentes en cola de COM+, la utilidad del Movedor de mensajes conserva el identificador de seguridad del llamador original a medida que mueve los mensajes entre las colas. Si las colas de origen y de destino son transaccionales, toda la operación se realiza de forma transitoria. Si las colas de origen o de destino no son transaccionales, la operación no se ejecuta en una transacción. Un error inesperado (como un bloqueo) y el reinicio de un movimiento no transaccional podría duplicar el mensaje que se está moviendo en el momento en que se produjo el error.
+Si las llamadas a componentes en cola de COM+ generan los mensajes, la utilidad de mover mensajes conserva el identificador de seguridad del autor de la llamada original a medida que mueve los mensajes entre colas. Si las colas de origen y de destino son transaccionales, toda la operación se realiza de forma transitoria. Si las colas de origen o destino no son transaccionales, la operación no se ejecuta en una transacción. Un error inesperado (como un bloqueo) y el reinicio de un movimiento no transaccional podrían duplicar el mensaje que se mueve en el momento del error.
 
 ## <a name="cc"></a>C/C++
 
-En el código de ejemplo siguiente se muestra cómo crear un objeto MessageMover, cómo establecer las propiedades necesarias y cómo iniciar la transferencia. El método ErrorDescription se describe en [interpretar los códigos de error](interpreting-error-codes.md).
+El código de ejemplo siguiente muestra cómo crear un objeto MessageMover, establecer las propiedades necesarias e iniciar la transferencia. El método ErrorDescription se describe en [Interpretación de códigos de error](interpreting-error-codes.md).
 
 > [!Note]  
-> Para usar el objeto MessageMover, debe tener Message Queue Server instalado en el equipo y la aplicación especificada por AppName debe tener habilitada la puesta en cola. Para obtener información acerca de cómo instalar Message Queue Server, consulte ayuda y soporte técnico en el menú **Inicio** .
+> Para usar el objeto MessageMover, debe tener Message Queuing instalado en el equipo y la aplicación especificada por AppName debe tener habilitada la cola. Para obtener información sobre cómo instalar Message Queuing, vea Ayuda y soporte técnico en el **menú** Inicio.
 
  
 
@@ -172,7 +172,7 @@ catch(HRESULT hr) {  // Replace with specific error handling.
 
 
 
-En el código de C++ siguiente se muestra cómo llamar a la función MyMessageMover.
+El siguiente código de C++ muestra cómo llamar a la función MyMessageMover.
 
 
 ```C++
@@ -197,15 +197,15 @@ void main()
 
 
 
-La ruta de acceso de origen del mensaje es la cola final. Es la cola de mensajes inactivos, que es una cola privada de Message Queue Server y se denomina AppName \_ deadqueue. Los mensajes se mueven aquí si la transacción se anula repetidamente cuando se intenta en la quinta cola de reintentos. Con la herramienta de transferencia de mensajes, puede devolver el mensaje a la primera cola, que se denomina AppName. Para obtener más información sobre las colas de reintento, vea [errores del servidor](server-side-errors.md).
+La ruta de acceso de origen del mensaje es la cola de reposo final. Es la cola de mensajes fallidos, que es una cola privada de Message Queuing y se denomina AppName \_ deadqueue. Los mensajes se mueven aquí si la transacción se anula repetidamente cuando se intenta en la quinta cola de reintentos. Con la herramienta de mover mensajes, puede volver a mover el mensaje a la primera cola, que se denomina AppName. Para obtener más información sobre las colas de reintento, vea [Errores del lado servidor.](server-side-errors.md)
 
-Si los atributos de cola lo permiten, el Movedor de mensajes mueve los mensajes de forma transitoria para que los mensajes no se pierdan o se dupliquen en caso de que se produzca un error durante el traslado. La herramienta conserva todas las propiedades de mensaje que se pueden conservar al mover los mensajes de una cola a otra.
+Si los atributos de cola lo permiten, el motor de mensajes mueve los mensajes de forma transitoria para que los mensajes no se pierdan ni dupliquen en caso de error durante el traslado. La herramienta conserva todas las propiedades del mensaje que se pueden conservar al mover mensajes de una cola a otra.
 
-Si los mensajes se generan mediante llamadas de componentes en cola de COM+, la utilidad del Movedor de mensajes conserva el identificador de seguridad del llamador original a medida que mueve los mensajes entre las colas. Si las colas de origen y de destino son transaccionales, toda la operación se realiza de forma transitoria. Si las colas de origen o de destino no son transaccionales, la operación no se ejecuta en una transacción. Un error inesperado (como un bloqueo) y el reinicio de un movimiento no transaccional podría duplicar el mensaje que se está moviendo en el momento en que se produjo el error.
+Si las llamadas a componentes en cola de COM+ generan los mensajes, la utilidad de mover mensajes conserva el identificador de seguridad del autor de la llamada original a medida que mueve los mensajes entre colas. Si las colas de origen y de destino son transaccionales, toda la operación se realiza de forma transitoria. Si las colas de origen o destino no son transaccionales, la operación no se ejecuta en una transacción. Un error inesperado (como un bloqueo) y el reinicio de un movimiento no transaccional podrían duplicar el mensaje que se mueve en el momento del error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-COM+ controla las anulaciones del lado servidor (reproductor) moviendo el mensaje que no está en otra cola de "finalización", para sacarlo del camino. El agente de escucha y el reproductor no pueden repetir continuamente en un mensaje que se anule. En muchos casos, la transacción anulada se puede corregir realizando una acción en el servidor.
+COM+ controla las anulaciones del lado servidor (reproductor) moviendo el mensaje que está fallando en una cola de "reposo final" diferente, para que se salga del camino. El agente de escucha y el reproductor no pueden recorrer continuamente un mensaje que se anula. En muchos casos, la transacción anulada se puede solucionar tomando medidas en el servidor.
 
 ## <a name="related-topics"></a>Temas relacionados
 

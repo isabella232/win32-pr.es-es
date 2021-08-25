@@ -1,11 +1,11 @@
 ---
-title: atributo de contenedor MS-DS-SCP
-description: atributo de contenedor MS-DS-SCP.
+title: Atributo ms-DS-SCP-Container
+description: Atributo ms-DS-SCP-container.
 ms.assetid: 9d48b757-0ae9-4c96-819a-f135e3e5c35a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de contenedor MS-DS-SCP
-- Esquema de AD de atributo msDS-SCPContainer
+- Esquema de AD del atributo ms-DS-SCP-Container
+- Esquema de AD del atributo msDS-SCPContainer
 topic_type:
 - apiref
 api_name:
@@ -14,54 +14,54 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e71ffe064fe84f9db37c3768ee910340bbe387a5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 98a1d46ab911c92488708472ef8e5e1bef544635c89d14f760bae8dfa0771234
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925345"
 ---
-# <a name="ms-ds-scp-container-attribute"></a>atributo de contenedor MS-DS-SCP
+# <a name="ms-ds-scp-container-attribute"></a>Atributo ms-DS-SCP-Container
 
-atributo de contenedor MS-DS-SCP.
+Atributo ms-DS-SCP-container.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Contenedor MS-DS-SCP                         |
-| Nombre para mostrar de LDAP | msDS-SCPContainer                           |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DS-SCP-Container                         |
+| Ldap-Display-Name | msDS-SCPContainer                           |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1872                     |
-| System-ID-GUID    | 454588e6-0b4e-b642-a6b8-ec03f6e1d9c5        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 454588e6-0b4e-b642-a6b8-ec03f6e1d9c5        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
 ## <a name="implementations"></a>Implementaciones
 
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
-| System-Only            | False                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                     |
-| Está indexado             | False                                                                                                                    |
-| En el catálogo global      | False                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                             |
+| System-Only            | Falso                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                     |
+| Está indexado             | Falso                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | 0                                                                                                                        |
 | Range-Upper            | 4096                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                               |
-| Clases usadas en        | [**Servicio MS-DS-Service-Connection-Point-Publication-Service**](c-msds-serviceconnectionpointpublicationservice.md)<br/> |
+| Clases usadas en        | [**ms-DS-Service-Connection-Point-Publication-Service**](c-msds-serviceconnectionpointpublicationservice.md)<br/> |
 
 
 

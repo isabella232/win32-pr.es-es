@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. deleteSelected
+title: PLAYLIST.deleteSelected
 description: El método deleteSelected elimina el elemento seleccionado de la lista de reproducción.
 ms.assetid: 38f41ff7-fd4d-4570-b326-572713f6b099
 keywords:
-- Windows Media Player de lista de reproducción. deleteSelected
+- PLAYLIST.deleteSelected Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ea5d8cce7ed2f11ca7f20d1e79ecf378e5c1b6dd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 96dee7109936f135f3a2f973c62103cc1fe38e4854f216e020ab2757122e4412
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862305"
 ---
-# <a name="playlistdeleteselected"></a>Lista de reproducción. deleteSelected
+# <a name="playlistdeleteselected"></a>PLAYLIST.deleteSelected
 
-El método **deleteSelected** elimina el elemento seleccionado de la lista de reproducción.
+El **método deleteSelected** elimina el elemento seleccionado de la lista de reproducción.
 
 ``` syntax
         elementID.deleteSelected()
@@ -42,7 +42,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -50,10 +50,10 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Lista de reproducción. deleteSelectedFromLibrary**](playlist-deleteselectedfromlibrary.md)
+[**PLAYLIST.deleteSelectedFromLibrary**](playlist-deleteselectedfromlibrary.md)
 </dt> </dl>
 
  

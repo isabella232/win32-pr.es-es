@@ -1,10 +1,10 @@
 ---
-title: Enumeración WMT_RIGHTS (wmdrmsdk. h)
-description: Define los derechos que se pueden especificar en una licencia de DRM.
+title: WMT_RIGHTS enumeración (Wmdrmsdk.h)
+description: Define los derechos que se pueden especificar en una licencia DRM.
 ms.assetid: 9c034ca0-83e9-4a4c-8e98-96e2a95fd97c
 keywords:
-- WMT_RIGHTS enumeración formato de Windows Media
-- enumeración Windows Media Format
+- WMT_RIGHTS de enumeración windows Media Format
+- enumeración windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 644cff9c94876fab11bc9fbe181ac0375d9444fb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3a48c9ce3a276f060ac90dd15100ca8612e35116e124588e27f4ee36c1a0b8a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930745"
 ---
-# <a name="wmt_rights-enumeration"></a>\_Enumeración de derechos WMT
+# <a name="wmt_rights-enumeration"></a>Enumeración \_ WMT RIGHTS
 
-El tipo de enumeración de **\_ derechos WMT** define los derechos que se pueden especificar en una licencia de DRM.
+El **tipo \_ de enumeración WMT RIGHTS** define los derechos que se pueden especificar en una licencia DRM.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -50,81 +50,81 @@ typedef enum WMT_RIGHTS {
 
 <dl> <dt>
 
-<span id="WMT_RIGHT_PLAYBACK"></span><span id="wmt_right_playback"></span>**\_reproducción correcta de WMT \_**
+<span id="WMT_RIGHT_PLAYBACK"></span><span id="wmt_right_playback"></span>**REPRODUCCIÓN DERECHA DE WMT \_ \_**
 </dt> <dd>
 
-Especifica el derecho para reproducir contenido sin restricciones.
+Especifica el derecho a reproducir contenido sin restricciones.
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_COPY_TO_NON_SDMI_DEVICE"></span><span id="wmt_right_copy_to_non_sdmi_device"></span>**\_copia derecha \_ \_ de WMT en un \_ dispositivo que no es de \_ SDMI \_**
+<span id="WMT_RIGHT_COPY_TO_NON_SDMI_DEVICE"></span><span id="wmt_right_copy_to_non_sdmi_device"></span>**COPIA DERECHA DE WMT \_ EN UN DISPOSITIVO QUE NO ES \_ \_ \_ \_ \_ SDMI**
 </dt> <dd>
 
-Especifica el derecho para copiar contenido en un dispositivo no compatible con la iniciativa de música digital segura (SDMI).
+Especifica el derecho a copiar contenido en un dispositivo no compatible con secure digital Música Initiative (SDMI).
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_COPY_TO_CD"></span><span id="wmt_right_copy_to_cd"></span>**\_copia correcta del WMT \_ \_ en el \_ CD**
+<span id="WMT_RIGHT_COPY_TO_CD"></span><span id="wmt_right_copy_to_cd"></span>**COPIA DERECHA DE WMT \_ \_ EN \_ \_ CD**
 </dt> <dd>
 
 Especifica el derecho para copiar contenido en un CD.
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_COPY_TO_SDMI_DEVICE"></span><span id="wmt_right_copy_to_sdmi_device"></span>**\_copia correcta \_ \_ de WMT en el \_ dispositivo de SDMI \_**
+<span id="WMT_RIGHT_COPY_TO_SDMI_DEVICE"></span><span id="wmt_right_copy_to_sdmi_device"></span>**COPIA DERECHA DE WMT \_ \_ EN EL DISPOSITIVO \_ \_ \_ SDMI**
 </dt> <dd>
 
-Especifica el derecho para copiar contenido en un dispositivo compatible con SDMI.
+Especifica el derecho para copiar contenido en un dispositivo compatible con sdmi.
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_ONE_TIME"></span><span id="wmt_right_one_time"></span>**WMT \_ justo \_ una \_ vez**
+<span id="WMT_RIGHT_ONE_TIME"></span><span id="wmt_right_one_time"></span>**DERECHO DE WMT \_ \_ UNA \_ VEZ**
 </dt> <dd>
 
-Especifica el derecho para reproducir contenido solo una vez.
+Especifica el derecho a reproducir contenido solo una vez.
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_SAVE_STREAM_PROTECTED"></span><span id="wmt_right_save_stream_protected"></span>**la \_ secuencia de guardado del derecho WMT está \_ \_ \_ protegida**
+<span id="WMT_RIGHT_SAVE_STREAM_PROTECTED"></span><span id="wmt_right_save_stream_protected"></span>**WMT \_ RIGHT \_ SAVE \_ STREAM \_ PROTECTED**
 </dt> <dd>
 
-Especifica el derecho para guardar el contenido de un servidor.
+Especifica el derecho para guardar contenido de un servidor.
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_COPY"></span><span id="wmt_right_copy"></span>**\_copia correcta de WMT \_**
+<span id="WMT_RIGHT_COPY"></span><span id="wmt_right_copy"></span>**COPIA DERECHA DE WMT \_ \_**
 </dt> <dd>
 
-Especifica el derecho para copiar contenido. Windows Media DRM 10 regula los dispositivos en los que se puede copiar el contenido mediante el uso de los niveles de protección de salida (OPLs).
+Especifica el derecho para copiar contenido. Windows Drm multimedia 10 regula los dispositivos en los que se puede copiar el contenido mediante los niveles de protección de salida (OPL).
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_COLLABORATIVE_PLAY"></span><span id="wmt_right_collaborative_play"></span>**\_ \_ reproducción colaborativa correcta de WMT \_**
+<span id="WMT_RIGHT_COLLABORATIVE_PLAY"></span><span id="wmt_right_collaborative_play"></span>**JUEGO \_ COLABORATIVO DERECHO DE WMT \_ \_**
 </dt> <dd>
 
-Especifica el derecho para reproducir contenido como parte de un escenario en línea en el que varios participantes pueden aportar canciones de su colección a una lista de reproducción compartida.
+Especifica el derecho a reproducir contenido como parte de un escenario en línea en el que varios participantes pueden aportar canciones de su colección a una lista de reproducción compartida.
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_SDMI_TRIGGER"></span><span id="wmt_right_sdmi_trigger"></span>**\_ \_ desencadenador de SDMI de la derecha WMT \_**
+<span id="WMT_RIGHT_SDMI_TRIGGER"></span><span id="wmt_right_sdmi_trigger"></span>**DESENCADENADOR DE \_ SDMI DERECHO \_ \_ WMT**
 </dt> <dd>
 
 Reservado para uso futuro. No debe usarse.
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_SDMI_NOMORECOPIES"></span><span id="wmt_right_sdmi_nomorecopies"></span>**WMT \_ right \_ SDMI \_ NOMORECOPIES**
+<span id="WMT_RIGHT_SDMI_NOMORECOPIES"></span><span id="wmt_right_sdmi_nomorecopies"></span>**WMT \_ RIGHT \_ SDMI \_ NOMORECOPIES**
 </dt> <dd>
 
 Reservado para uso futuro. No debe usarse.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Estos valores son marcas de bits, por lo que se pueden establecer uno o varios combinando con **el operador OR** bit a bit.
+Estos valores son marcas de bits, por lo que se puede establecer una o varias mediante su combinación con el operador **OR** bit a bit.
 
-Al usar Windows Media DRM 10, **la \_ \_ copia correcta \_ de WMT en un \_ \_ \_ dispositivo que no es de SDMI**, la **\_ \_ copia correcta de WMT en el \_ \_ \_ dispositivo de SDMI** y la **\_ \_ copia correcta de WMT en el \_ \_ CD** se sustituyen por la **\_ \_ copia correcta de WMT**. Las limitaciones de los dispositivos en los que se puede copiar el contenido se especifican mediante los niveles de protección de la salida (OPLs).
+Cuando se usa Windows Media DRM 10, **WMT \_ RIGHT COPY TO NON \_ \_ \_ \_ SDMI \_ DEVICE**, **WMT RIGHT COPY TO \_ \_ \_ \_ SDMI \_ DEVICE** y **WMT RIGHT COPY TO \_ \_ \_ \_ CD** se reemplazan por **WMT RIGHT \_ \_ COPY**. Las limitaciones de los dispositivos en los que se puede copiar el contenido se especifican mediante el uso de niveles de protección de salida (OPL).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -132,7 +132,7 @@ Al usar Windows Media DRM 10, **la \_ \_ copia correcta \_ de WMT en un \_ \_ \_
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

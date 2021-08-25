@@ -4,47 +4,47 @@
     - name: Referencia de DirectDraw
       href: directdraw-reference.md
       items:
-        - name: Interfaces de DirectDraw
+        - name: DirectDraw Interfaces
           href: directdraw-interfaces.md
           items:
             - name: IDirectDraw7
               href: /windows/desktop/api/Ddraw/nn-ddraw-idirectdraw7
               items:
-                - name: Método compacto
+                - name: Compact (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-compact
-                - name: Método CreateClipper
+                - name: CreateClipper (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-createclipper
-                - name: Método CreatePalette
+                - name: CreatePalette (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-createpalette
-                - name: Método CreateSurface
+                - name: CreateSurface (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-createsurface
-                - name: Método DuplicateSurface
+                - name: DuplicateSurface (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-duplicatesurface
-                - name: Método EnumDisplayModes
+                - name: EnumDisplayModes (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-enumdisplaymodes
-                - name: Método EnumSurfaces
+                - name: EnumSurfaces (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-enumsurfaces
-                - name: Método EvaluateMode
+                - name: EvaluateMode (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-evaluatemode
                 - name: Método FlipToGDISurface
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-fliptogdisurface
-                - name: Método GetAvailableVidMem
+                - name: GetAvailableVidMem (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-getavailablevidmem
-                - name: Método GetCaps
+                - name: GetCaps (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-getcaps
-                - name: Método GetDeviceIdentifier
+                - name: GetDeviceIdentifier (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-getdeviceidentifier
-                - name: Método GetDisplayMode
+                - name: GetDisplayMode (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-getdisplaymode
-                - name: Método GetFourCCCodes
+                - name: GetFourCCCodes (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-getfourcccodes
-                - name: Método GetGDISurface
+                - name: GetGDISurface (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-getgdisurface
-                - name: Método GetMonitorFrequency
+                - name: GetMonitorFrequency (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-getmonitorfrequency
-                - name: Método GetScanLine
+                - name: GetScanLine (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-getscanline
-                - name: Método GetSurfaceFromDC
+                - name: GetSurfaceFromDC (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-getsurfacefromdc
                 - name: Método GetVerticalBlankStatus
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-getverticalblankstatus
@@ -56,20 +56,20 @@
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-restoredisplaymode
                 - name: SetCooperativeLevel (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-setcooperativelevel
-                - name: Método SetDisplayMode
+                - name: SetDisplayMode (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-setdisplaymode
-                - name: Método StartModeTest
+                - name: StartModeTest (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-startmodetest
-                - name: Método TestCooperativeLevel
+                - name: TestCooperativeLevel (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-testcooperativelevel
                 - name: Método WaitForVerticalBlank
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-waitforverticalblank
             - name: IDirectDrawClipper
               href: /windows/desktop/api/Ddraw/nn-ddraw-idirectdrawclipper
               items:
-                - name: Método GetClipList
+                - name: GetClipList (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawclipper-getcliplist
-                - name: Método GetHWnd
+                - name: GetHWnd (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawclipper-gethwnd
                 - name: Método Initialize
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawclipper-initialize
@@ -77,89 +77,89 @@
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawclipper-iscliplistchanged
                 - name: Método SetClipList
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawclipper-setcliplist
-                - name: Método SetHWnd
+                - name: SetHWnd (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawclipper-sethwnd
             - name: IDirectDrawColorControl
               href: /windows/desktop/api/Ddraw/nn-ddraw-idirectdrawcolorcontrol
               items:
-                - name: Método GetColorControls
+                - name: GetColorControls (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawcolorcontrol-getcolorcontrols
-                - name: Método SetColorControls
+                - name: SetColorControls (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawcolorcontrol-setcolorcontrols
             - name: IDirectDrawGammaControl
               href: /windows/desktop/api/Ddraw/nn-ddraw-idirectdrawgammacontrol
               items:
-                - name: Método GetGammaRamp
+                - name: GetGammaRamp (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawgammacontrol-getgammaramp
-                - name: Método SetGammaRamp
+                - name: SetGammaRamp (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawgammacontrol-setgammaramp
             - name: IDirectDrawPalette
               href: /windows/desktop/api/Ddraw/nn-ddraw-idirectdrawpalette
               items:
-                - name: Método GetCaps
+                - name: GetCaps (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawpalette-getcaps
-                - name: Método GetEntries
+                - name: GetEntries (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawpalette-getentries
                 - name: Método Initialize
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawpalette-initialize
-                - name: Método SetEntries
+                - name: SetEntries (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawpalette-setentries
             - name: IDirectDrawSurface7
               href: /windows/desktop/api/Ddraw/nn-ddraw-idirectdrawsurface7
               items:
-                - name: Método AddAttachedSurface
+                - name: AddAttachedSurface (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-addattachedsurface
-                - name: Método AddOverlayDirtyRect
+                - name: AddOverlayDirtyRect (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-addoverlaydirtyrect
-                - name: BLT (método)
+                - name: Blt (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-blt
-                - name: Método BltBatch
+                - name: BltBatch (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-bltbatch
-                - name: Método BltFast
+                - name: BltFast (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-bltfast
-                - name: Método ChangeUniquenessValue
+                - name: ChangeUniquenessValue (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-changeuniquenessvalue
-                - name: Método DeleteAttachedSurface
+                - name: DeleteAttachedSurface (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-deleteattachedsurface
-                - name: Método EnumAttachedSurfaces
+                - name: EnumAttachedSurfaces (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-enumattachedsurfaces
-                - name: Método EnumOverlayZOrders
+                - name: EnumOverlayZOrders (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-enumoverlayzorders
-                - name: Flip (método)
+                - name: Método Flip
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-flip
-                - name: Método FreePrivateData
+                - name: FreePrivateData (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-freeprivatedata
-                - name: Método GetAttachedSurface
+                - name: GetAttachedSurface (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getattachedsurface
-                - name: Método GetBltStatus
+                - name: GetBltStatus (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getbltstatus
-                - name: Método GetCaps
+                - name: GetCaps (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getcaps
-                - name: Método GetClipper
+                - name: GetClipper (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getclipper
-                - name: Método GetColorKey
+                - name: GetColorKey (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getcolorkey
-                - name: Método GetDC
+                - name: GetDC (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getdc
                 - name: Método GetDDInterface
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getddinterface
-                - name: Método GetFlipStatus
+                - name: GetFlipStatus (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getflipstatus
                 - name: Método GetLOD
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getlod
-                - name: Método GetOverlayPosition
+                - name: GetOverlayPosition (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getoverlayposition
-                - name: Método GetPalette
+                - name: GetPalette (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getpalette
-                - name: Método GetPixelFormat
+                - name: GetPixelFormat (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getpixelformat
                 - name: Método GetPriority
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getpriority
-                - name: Método GetPrivateData
+                - name: GetPrivateData (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getprivatedata
-                - name: Método GetSurfaceDesc
+                - name: GetSurfaceDesc (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getsurfacedesc
-                - name: Método GetUniquenessValue
+                - name: GetUniquenessValue (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getuniquenessvalue
                 - name: Método Initialize
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-initialize
@@ -167,9 +167,9 @@
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-islost
                 - name: Lock (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-lock
-                - name: Método PageLock
+                - name: PageLock (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-pagelock
-                - name: Método PageUnlock
+                - name: PageUnlock (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-pageunlock
                 - name: Método ReleaseDC
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-releasedc
@@ -177,13 +177,13 @@
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-restore
                 - name: Método SetClipper
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-setclipper
-                - name: Método SetColorKey
+                - name: SetColorKey (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-setcolorkey
-                - name: Método SetLOD
+                - name: SetLOD (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-setlod
-                - name: Método SetOverlayPosition
+                - name: SetOverlayPosition (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-setoverlayposition
-                - name: Método SetPalette
+                - name: SetPalette (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-setpalette
                 - name: Método SetPriority
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-setpriority
@@ -193,7 +193,7 @@
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-setsurfacedesc
                 - name: Unlock (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-unlock
-                - name: Método UpdateOverlay
+                - name: UpdateOverlay (método)
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-updateoverlay
                 - name: Método UpdateOverlayDisplay
                   href: /windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-updateoverlaydisplay

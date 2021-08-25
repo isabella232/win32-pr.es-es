@@ -26,12 +26,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: eb0ad959d637a38a03b77bd8d7a812ff608ddc04
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 42b17cf31dcb3830cd35f046a7fcbad1858f8ae4f728fc1417339962a4be4441
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927525"
 ---
 # <a name="systemconfig_v0_logdisk-class"></a>Clase LogDisk SystemConfig \_ V0 \_
 
@@ -138,7 +138,7 @@ Tipo de unidad de disco. Los valores posibles son:
 
 
 
-| Valor                                                                        | Significado                                         |
+| Value                                                                        | Significado                                         |
 |------------------------------------------------------------------------------|-------------------------------------------------|
 | <dl> <dt>1</dt> </dl> | Partition<br/>                            |
 | <dl> <dt>2</dt> </dl> | Volumen<br/>                               |
@@ -314,14 +314,14 @@ Reservado.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

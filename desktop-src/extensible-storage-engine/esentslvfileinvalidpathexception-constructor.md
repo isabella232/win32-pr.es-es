@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVFileInvalidPathException'
-title: Constructor de EsentSLVFileInvalidPathException
+description: 'Más información sobre: Constructor EsentSLVFileInvalidPathException'
+title: Constructor EsentSLVFileInvalidPathException
 TOCTitle: 'EsentSLVFileInvalidPathException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVFileInvalidPathException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvfileinvalidpathexception.esentslvfileinvalidpathexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 94a23ad64a75b3a1bada8f7495b91e94d6124db4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90bfa874d68d8cfdbd75d7b8f5a04ac4f4f2a24af7facb12d5d2370ff71a7007
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851035"
 ---
-# <a name="esentslvfileinvalidpathexception-constructor"></a>Constructor de EsentSLVFileInvalidPathException
+# <a name="esentslvfileinvalidpathexception-constructor"></a>Constructor EsentSLVFileInvalidPathException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVFileInvalidPathException()
 public EsentSLVFileInvalidPathException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -58,4 +58,4 @@ public EsentSLVFileInvalidPathException()
 
 [Miembros de EsentSLVFileInvalidPathException](./esentslvfileinvalidpathexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

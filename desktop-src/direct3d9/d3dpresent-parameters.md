@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: f113b3df247765b958dfe47bb04fafb6c9a13bbe
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 543b6b40d3fe24f902eb999a9377b8dbf60e1baa31efb70febbd2c0261d47305
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857445"
 ---
-# <a name="d3dpresent_parameters-structure"></a>Estructura DE PARÁMETROS D3DPRESENT \_
+# <a name="d3dpresent_parameters-structure"></a>D3DPRESENT \_ PARAMETERS (estructura)
 
 Describe los parámetros de presentación.
 
@@ -59,7 +59,7 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Ancho de los búferes de reserva de la nueva cadena de intercambio, en píxeles. Si **Windowed** es **FALSE** (la presentación es de pantalla completa), este valor debe ser igual al ancho de uno de los modos de presentación enumerados que se encuentran a través de [**EnumAdapterModes**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-enumadaptermodes). Si **Windowed** es **TRUE** y **BackBufferWidth** o **BackBufferHeight** es cero, se toma la dimensión correspondiente del área de cliente de **hDeviceWindow** (o la ventana de foco, si **hDeviceWindow** es **NULL).**
+Ancho de los búferes de reserva de la nueva cadena de intercambio, en píxeles. Si **Windowed** es **FALSE** (la presentación es de pantalla completa), este valor debe ser igual al ancho de uno de los modos de presentación enumerados que se encuentran a través [**de EnumAdapterModes**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-enumadaptermodes). Si **Windowed** es **TRUE** y **BackBufferWidth** o **BackBufferHeight** es cero, se toma la dimensión correspondiente del área cliente de **hDeviceWindow** (o la ventana de foco, si **hDeviceWindow** es **NULL).**
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Alto de los búferes de reserva de la nueva cadena de intercambio, en píxeles. Si **Windowed** es **FALSE** (la presentación es de pantalla completa), este valor debe ser igual al alto de uno de los modos de presentación enumerados que se encuentran a través de [**EnumAdapterModes**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-enumadaptermodes). Si **Windowed** es **TRUE** y **BackBufferWidth** o **BackBufferHeight** es cero, se toma la dimensión correspondiente del área de cliente de **hDeviceWindow** (o la ventana de foco, si **hDeviceWindow** es **NULL).**
+Alto de los búferes de reserva de la nueva cadena de intercambio, en píxeles. Si **Windowed** es **FALSE** (la presentación es de pantalla completa), este valor debe ser igual al alto de uno de los modos de presentación enumerados que se encuentran a través de [**EnumAdapterModes**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-enumadaptermodes). Si **Windowed** es **TRUE** y **BackBufferWidth** o **BackBufferHeight** es cero, se toma la dimensión correspondiente del área cliente de **hDeviceWindow** (o la ventana de foco, si **hDeviceWindow** es **NULL).**
 
 </dd> <dt>
 
@@ -133,15 +133,15 @@ Tipo: **[ **D3DSWAPEFFECT**](./d3dswapeffect.md)**
 
 </dd> <dd>
 
-Miembro del [**tipo enumerado D3DSWAPEFFECT.**](./d3dswapeffect.md) El tiempo de ejecución garantizará la semántica implícita relativa al comportamiento de intercambio de búfer; Por lo tanto, si **Windowed** es **TRUE** y **SwapEffect** se establece en D3DSWAPEFFECT FLIP, el tiempo de ejecución creará un búfer de reserva adicional y copiará lo que se convierta en el búfer frontal en el momento de la \_ presentación.
+Miembro del [**tipo enumerado D3DSWAPEFFECT.**](./d3dswapeffect.md) El tiempo de ejecución garantizará la semántica implícita relativa al comportamiento de intercambio de búfer; Por lo tanto, si **Windowed** es **TRUE** y **SwapEffect** se establece en D3DSWAPEFFECT FLIP, el tiempo de ejecución creará un búfer de reserva adicional y copiará lo que se convierta en el búfer front-time en el momento de la \_ presentación.
 
 D3DSWAPEFFECT \_ COPY requiere que **BackBufferCount** se establezca en 1.
 
-D3DSWAPEFFECT DISCARD se aplicará en el tiempo de ejecución de depuración rellenando cualquier búfer con ruido \_ después de que se presente.
+D3DSWAPEFFECT DISCARD se aplicará en el tiempo de ejecución de depuración rellenando cualquier búfer con \_ ruido después de que se presente.
 
 Diferencias entre Direct3D9 y Direct3D9Ex:
 
-- En Direct3D9Ex, se agrega D3DSWAPEFFECT FLIPEX para designar cuándo una aplicación adopta \_ el modo de volteo. Es decir, el marco de una aplicación se pasa en modo de ventana (en lugar de copiarse) al Administrador de ventanas de escritorio(DWM) para la composición. El modo de volteo proporciona un ancho de banda de memoria más eficaz y permite que una aplicación aproveche las estadísticas de pantalla completa presentes. No cambia el comportamiento de pantalla completa. El comportamiento del modo de volteo está disponible a partir de Windows 7.
+- En Direct3D9Ex, D3DSWAPEFFECT FLIPEX se agrega para designar cuándo una aplicación \_ adopta el modo de volteo. Es decir, el marco de una aplicación se pasa en modo de ventana (en lugar de copiarse) al Administrador de ventanas de escritorio(DWM) para la composición. El modo de volteo proporciona un ancho de banda de memoria más eficaz y permite que una aplicación aproveche las estadísticas de pantalla completa presentes. No cambia el comportamiento de pantalla completa. El comportamiento del modo de volteo está disponible a partir Windows 7.
 
 
 
@@ -214,7 +214,7 @@ Una de las [constantes D3DPRESENTFLAG.](d3dpresentflag.md)
 
 </dd> <dt>
 
-**Actualización de \_ FullScreenRateInHz**
+**FullScreen \_ RefreshRateInHz**
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
@@ -235,7 +235,7 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Velocidad máxima a la que se pueden presentar los búferes de reserva de la cadena de intercambio al búfer frontal. Para obtener una explicación detallada de los modos y los intervalos admitidos, vea [D3DPRESENT](d3dpresent.md).
+Velocidad máxima a la que se pueden presentar los búferes de reserva de la cadena de intercambio al búfer front-buffer. Para obtener una explicación detallada de los modos y los intervalos admitidos, vea [D3DPRESENT](d3dpresent.md).
 
 </dd> </dl>
 

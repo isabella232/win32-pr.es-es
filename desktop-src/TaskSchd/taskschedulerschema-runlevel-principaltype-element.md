@@ -1,9 +1,9 @@
 ---
-title: Elemento nivel (runLevelType)
+title: Elemento RunLevel (runLevelType)
 description: Contiene un valor que especifica el nivel de contexto de seguridad para ejecutar la tarea.
 ms.assetid: dc113ffa-8ac9-4dcd-a106-45295da42f46
 keywords:
-- Programador de tareas del elemento nivel
+- Elemento RunLevel Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d374f5b9ad388f3ad0a626e1b99ecae96eeef1a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 143db96de30e647c67abadc2a9fb4384ae9784604b9c679efd9de5fd2157f923
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991095"
 ---
-# <a name="runlevel-runleveltype-element"></a>Elemento nivel (runLevelType)
+# <a name="runlevel-runleveltype-element"></a>Elemento RunLevel (runLevelType)
 
-Contiene un valor que especifica el nivel de contexto de seguridad para ejecutar la tarea. Puede especificar que se ejecute una tarea con privilegios mínimos o privilegios elevados. Un valor de 0 especifica que se ejecute la tarea con los privilegios más bajos y un valor de 1 especifica que se ejecute la tarea con privilegios elevados.
+Contiene un valor que especifica el nivel de contexto de seguridad para ejecutar la tarea. Puede especificar para ejecutar una tarea con privilegios mínimos o privilegios elevados. Un valor de 0 especifica para ejecutar la tarea con privilegios más bajos y un valor de 1 especifica para ejecutar la tarea con privilegios elevados.
 
 ``` syntax
 <xs:element name="RunLevel"
@@ -30,7 +30,7 @@ Contiene un valor que especifica el nivel de contexto de seguridad para ejecutar
  />
 ```
 
-El elemento **nivel** se define mediante el tipo simple [**runLevelType**](taskschedulerschema-runleveltype-simpletype.md) .
+El tipo simple [**runLevelType**](taskschedulerschema-runleveltype-simpletype.md) define el elemento **RunLevel.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,19 +38,19 @@ El elemento **nivel** se define mediante el tipo simple [**runLevelType**](tasks
 
 | Elemento                                                                                  | Derivado de                                                           | Descripción                                                                                                                           |
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [**Entidad de seguridad (principalType)**](taskschedulerschema-principal-principaltype-element.md) | [**principalType**](taskschedulerschema-principaltype-complextype.md) | Especifica las credenciales de seguridad para una entidad de seguridad. Estas credenciales definen el contexto de seguridad en el que se ejecuta una tarea. <br/> |
+| [**Principal (principalType)**](taskschedulerschema-principal-principaltype-element.md) | [**principalType**](taskschedulerschema-principaltype-complextype.md) | Especifica las credenciales de seguridad de una entidad de seguridad. Estas credenciales definen el contexto de seguridad en el que se ejecuta una tarea. <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, consulte la [**propiedad nivel de IPrincipal**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_runlevel).
+Para el desarrollo de C++, [**vea Propiedad RunLevel de IPrincipal.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_runlevel)
 
-Para el desarrollo de scripts, consulte [**principal. nivel**](principal-runlevel.md).
+Para el desarrollo de scripts, [**vea Principal.RunLevel**](principal-runlevel.md).
 
-Si una tarea se registra mediante la **cuenta de \\ Administrador de Builtin** o las cuentas [LocalSystem](/windows/desktop/Services/localsystem-account) o [LocalService](/windows/desktop/Services/localservice-account) , se omite la propiedad [**nivel**](principal-runlevel.md) . El valor del atributo también se omitirá si el [control de cuentas de usuario](/windows/desktop/SecAuthZ/user-account-control) (UAC) está desactivado.
+Si una tarea se registra con la cuenta **\\ de** administrador integrada o las cuentas [LocalSystem](/windows/desktop/Services/localsystem-account) o [LocalService,](/windows/desktop/Services/localservice-account) se omite la propiedad [**RunLevel.**](principal-runlevel.md) El valor del atributo también se omitirá si [el Control de cuentas](/windows/desktop/SecAuthZ/user-account-control) de usuario (UAC) está desactivado.
 
-Si una tarea se registra mediante el grupo de **administradores** para el contexto de seguridad de la tarea, también debe establecer la propiedad [**nivel**](principal-runlevel.md) en "HighestAvailable" para ejecutar la tarea. Para obtener más información, vea [contextos de seguridad para tareas](security-contexts-for-running-tasks.md).
+Si una tarea se  registra mediante el grupo Administradores para el contexto de seguridad de la tarea, también debe establecer la propiedad [**RunLevel**](principal-runlevel.md) en "HighestAvailable" para ejecutar la tarea. Para obtener más información, vea [Contextos de seguridad para tareas](security-contexts-for-running-tasks.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,8 +58,8 @@ Si una tarea se registra mediante el grupo de **administradores** para el contex
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

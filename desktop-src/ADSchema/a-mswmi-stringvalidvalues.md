@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-stringValidValues
+title: Atributo ms-WMI-stringValidValues
 description: Conjunto de cadenas que pertenecen a un objeto de parámetro de conjunto de cadenas.
 ms.assetid: 2c75818d-f8db-47ed-b125-e1b800b1139a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-WMI-stringValidValues
-- msWMI-StringValidValues atributo AD Schema
+- ms-WMI-stringValidValues attribute AD Schema
+- Esquema de AD del atributo msWMI-StringValidValues
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2d056214127925230265165aabfcf6ec6f1380d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2944ebddddf3323d202f540de46db1278a2386189ccbe45b00b810d6944cc6dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924205"
 ---
-# <a name="ms-wmi-stringvalidvalues-attribute"></a>atributo MS-WMI-stringValidValues
+# <a name="ms-wmi-stringvalidvalues-attribute"></a>Atributo ms-WMI-stringValidValues
 
 Conjunto de cadenas que pertenecen a un objeto de parámetro de conjunto de cadenas.
 
@@ -29,14 +29,14 @@ Conjunto de cadenas que pertenecen a un objeto de parámetro de conjunto de cade
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-stringValidValues                    |
-| Nombre para mostrar de LDAP | msWMI-StringValidValues                     |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de directiva de grupo                  |
+| CN                | ms-WMI-stringValidValues                    |
+| Ldap-Display-Name | msWMI-StringValidValues                     |
+| Size              | \-                                          |
+| Actualizar privilegios  | directiva de grupo administrador                  |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1637                     |
-| System-ID-GUID    | 37609d31-a2bf-4b58-8f53-2b64e57a076d        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 37609d31-a2bf-4b58-8f53-2b64e57a076d        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,13 +54,13 @@ Conjunto de cadenas que pertenecen a un objeto de parámetro de conjunto de cade
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -75,13 +75,13 @@ Conjunto de cadenas que pertenecen a un objeto de parámetro de conjunto de cade
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -96,13 +96,13 @@ Conjunto de cadenas que pertenecen a un objeto de parámetro de conjunto de cade
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -117,13 +117,13 @@ Conjunto de cadenas que pertenecen a un objeto de parámetro de conjunto de cade
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -138,13 +138,13 @@ Conjunto de cadenas que pertenecen a un objeto de parámetro de conjunto de cade
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

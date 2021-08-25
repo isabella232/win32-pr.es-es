@@ -1,9 +1,9 @@
 ---
-title: idempotente (atributo)
-description: El atributo \ idempotente \ especifica que una operación no modifica información de estado y devuelve los mismos resultados cada vez que se realiza. Realizar la rutina más de una vez tiene el mismo efecto que realizarla una vez.
+title: atributo idempotente
+description: El atributo \ idempotent\ especifica que una operación no modifica la información de estado y devuelve los mismos resultados cada vez que se realiza. Realizar la rutina más de una vez tiene el mismo efecto que realizarla una vez.
 ms.assetid: 876a40b5-8165-4b5c-bd62-9c43a9eb4b2b
 keywords:
-- atributo idempotente (MIDL)
+- atributo idempotente MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82364c6222f6b566ef6aacb5b71a72b49c213f5a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 24a4135fdcb38fbad9e41b04a136f69420da7455f68d38a0c507135892e2a00f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104532602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895225"
 ---
-# <a name="idempotent-attribute"></a>idempotente (atributo)
+# <a name="idempotent-attribute"></a>atributo idempotente
 
-El atributo **\[ idempotente \]** especifica que una operación no modifica la información de estado y devuelve los mismos resultados cada vez que se realiza. Realizar la rutina más de una vez tiene el mismo efecto que realizarla una vez.
+El **\[ atributo \] idempotente** especifica que una operación no modifica la información de estado y devuelve los mismos resultados cada vez que se realiza. Realizar la rutina más de una vez tiene el mismo efecto que realizarla una vez.
 
 ``` syntax
 [
@@ -37,28 +37,28 @@ interface interface-name
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica una lista de cero o más atributos IDL que se aplican a la interfaz en conjunto. Cuando dos o más atributos de interfaz están presentes, deben separarse con comas.
+Especifica una lista de cero o más atributos IDL que se aplican a la interfaz en su conjunto. Cuando hay dos o más atributos de interfaz, deben estar separados por comas.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
 Especifica el nombre de la interfaz.
 
 </dd> <dt>
 
-*lista de atributos* 
+*attribute-list* 
 </dt> <dd>
 
-Especifica los atributos adicionales que se van a aplicar a la función. Separe varios atributos con comas.
+Especifica atributos adicionales que se aplicarán a la función. Separe varios atributos con comas.
 
 </dd> <dt>
 
-*ReturnType* 
+*returntype* 
 </dt> <dd>
 
 Especifica el tipo de valor devuelto de la función.
@@ -68,7 +68,7 @@ Especifica el tipo de valor devuelto de la función.
 *nombre-de-la-función* 
 </dt> <dd>
 
-Especifica el nombre de la función a la que se aplicará el atributo **\[ idempotente \]** .
+Especifica el nombre de la función a la que se aplicará el atributo **\[ \]** idempotente.
 
 </dd> <dt>
 
@@ -79,28 +79,28 @@ Lista de parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-RPC admite dos tipos de semántica de llamadas remotas: llama a las operaciones con el atributo **\[ idempotente \]** y llama a las operaciones (operaciones *idempotente* ) sin el atributo **\[ idempotente \]** (operaciones *no idempotente* ). Una operación idempotente se puede llevar a cabo más de una vez sin ningún efecto. Por el contrario, una operación no idempotente no se puede ejecutar más de una vez, ya que devolverá resultados diferentes cada vez o porque modificará algún Estado.
+RPC admite dos tipos de semántica de llamadas remotas: llamadas a operaciones con el atributo **\[ \] idempotente** y llamadas a operaciones (operaciones *idempotentes)* sin el atributo **\[ idempotente \]** (operaciones no *idempotentes).* Una operación idempotente se puede llevar a cabo más de una vez sin ningún efecto negativo. Por el contrario, una operación no idempotente no se puede ejecutar más de una vez porque devolverá resultados diferentes cada vez o porque modifica algún estado.
 
-Para asegurarse de que un procedimiento se vuelve a ejecutar automáticamente si la llamada no se completa, utilice el atributo **\[ idempotente \]** . Si los atributos **\[ idempotente \]**, **\[** [**Broadcast**](broadcast.md) **\]** o **\[** [**maybe**](maybe.md) **\]** no están presentes, el procedimiento usará la semántica no idempotente de forma predeterminada. En este caso, la operación se ejecuta solo una vez.
+Para asegurarse de que un procedimiento se vuelve a ejecutar automáticamente si la llamada no se completa, use el **\[ atributo \] idempotente.** Si los **\[ atributos \] idempotentes,** de difusión o quizás no están presentes, el procedimiento usará semántica no **\[** [](broadcast.md) **\]** **\[** [](maybe.md) **\]** idempotente de forma predeterminada. En este caso, la operación se ejecuta solo una vez.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**amplia**](broadcast.md)
+[**Difusión**](broadcast.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**incluso**](maybe.md)
+[**quizás**](maybe.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

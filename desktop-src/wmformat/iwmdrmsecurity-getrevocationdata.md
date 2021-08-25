@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMSecurity GetRevocationData (wmdrmsdk. h)
+title: Método IWMDRMSecurity GetRevocationData (Wmdrmsdk.h)
 description: El método GetRevocationData recupera una lista de revocación de certificados del almacén local.
 ms.assetid: 218f4f3a-02bc-4b1d-9320-e35ed8cc3b11
 keywords:
-- Método GetRevocationData formato de Windows Media
-- Método GetRevocationData formato de Windows Media, interfaz IWMDRMSecurity
-- Interfaz IWMDRMSecurity formato de Windows Media, método GetRevocationData
+- Método GetRevocationData windows Media Format
+- Método GetRevocationData windows Media Format , interfaz IWMDRMSecurity
+- IWMDRMSecurity interface windows Media Format , GetRevocationData method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c38e9e0b428a3922f84141ef855d8468b79b3bb2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c5035bc94051c61baaef7bcf474b4d6ebb4413b549dfff038bae7105f32d087b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808485"
 ---
-# <a name="iwmdrmsecuritygetrevocationdata-method"></a>IWMDRMSecurity:: GetRevocationData (método)
+# <a name="iwmdrmsecuritygetrevocationdata-method"></a>IWMDRMSecurity::GetRevocationData (método)
 
-El método **GetRevocationData** recupera una lista de revocación de certificados del almacén local.
+El **método GetRevocationData** recupera una lista de revocación de certificados del almacén local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,18 +45,18 @@ HRESULT GetRevocationData(
 
 <dl> <dt>
 
-*f \_ guidRevocationType* \[\]
+*f \_ guidRevocationType* \[ en\]
 </dt> <dd>
 
-GUID que identifica el tipo de lista de revocación que se va a recuperar. Use una de las constantes de la tabla siguiente.
+GUID que identifica el tipo de lista de revocación que se debe recuperar. Use una de las constantes de la tabla siguiente.
 
 
 
 | Constante GUID                 | Descripción                                                                      |
 |-------------------------------|----------------------------------------------------------------------------------|
-| \_aplicación REVOCATIONTYPE de WMDRM \_    | Especifica la lista de revocación de certificados de la aplicación.                           |
-| \_dispositivo REVOCATIONTYPE \_ WMDRM | Especifica la lista de revocación de certificados de dispositivo.                                |
-| \_CARDEA REVOCATIONTYPE \_ WMDRM | Especifica la lista de revocación de certificados de DRM de Windows Media para dispositivos de red. |
+| APLICACIÓN WMDRM \_ \_ REVOCATIONTYPE    | Especifica la lista de revocación de certificados de aplicación.                           |
+| DISPOSITIVO WMDRM \_ \_ REVOCATIONTYPE | Especifica la lista de revocación de certificados de dispositivo.                                |
+| WMDRM \_ REVOCATIONTYPE \_ CARDEA | Especifica la lista de revocación de Windows DRM multimedia para dispositivos de red. |
 
 
 
@@ -64,29 +64,29 @@ GUID que identifica el tipo de lista de revocación que se va a recuperar. Use u
 
 </dd> <dt>
 
-*f \_ pbCRL* \[\]
+*f \_ pbCRL* \[ out\]
 </dt> <dd>
 
-Búfer que recibe la lista de revocación. Establezca en **null** para obtener el tamaño de búfer necesario.
+Búfer que recibe la lista de revocación. Establezca en **NULL** para obtener el tamaño de búfer necesario.
 
 </dd> <dt>
 
-*f \_ pcbCRL* \[ in, out\]
+*f \_ pwCRL* \[ in, out\]
 </dt> <dd>
 
-Tamaño del búfer en bytes. Si *f \_ PbCRL* es **null**, este valor se establece en el tamaño de búfer necesario en la salida.
+Tamaño del búfer en bytes. Si *f \_ pbCRL* es **NULL,** este valor se establece en el tamaño de búfer necesario en la salida.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -98,8 +98,8 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -107,13 +107,13 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**Revocación y renovación de componentes automatizados**](automated-component-revocation-and-renewal.md)
+[**Revocación y renovación automatizadas de componentes**](automated-component-revocation-and-renewal.md)
 </dt> <dt>
 
 [**GetRevocationDataVersion**](iwmdrmsecurity-getrevocationdataversion.md)
 </dt> <dt>
 
-[**Interfaz IWMDRMSecurity**](iwmdrmsecurity.md)
+[**IWMDRMSecurity (interfaz)**](iwmdrmsecurity.md)
 </dt> <dt>
 
 [**SetRevocationData**](iwmdrmsecurity-setrevocationdata.md)

@@ -1,33 +1,33 @@
 ---
 title: UI_PKEY_FontProperties_BackgroundColor
-description: Identifica la propiedad BackgroundColor de la interfaz de usuario \_ PKEY \_ FontProperties \_ .
+description: Identifica la propiedad \_ \_ BackgroundColor PKEY FontProperties \_ de la interfaz de usuario.
 ms.assetid: e4c9b614-db31-488d-8f05-0e6f41be39f6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bddc96dd9bfc80e0af19da4791820b8df1de0c1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 382bf9a9784954527019f608cb569f41a8903e76cd738eed889eab26a1f79deb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103791907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119932505"
 ---
 # <a name="ui_pkey_fontproperties_backgroundcolor"></a>UI \_ PKEY \_ FontProperties \_ BackgroundColor
 
-Identifica la propiedad BackgroundColor de la interfaz de usuario \_ PKEY \_ FontProperties \_ .
+Identifica la propiedad \_ \_ BackgroundColor PKEY FontProperties \_ de la interfaz de usuario.
 
 ```
 propertyDescription
-   name = UI_PKEY_FontProperties_BackgroundColor
-   shellPKey = UI_PKEY_FontProperties_BackgroundColor
-   formatID = 00000309-7363-696e-8441798acf5aebb7
-   propID = 309
-   typeInfo
-      type = COLORREF
+   name = UI_PKEY_FontProperties_BackgroundColor
+   shellPKey = UI_PKEY_FontProperties_BackgroundColor
+   formatID = 00000309-7363-696e-8441798acf5aebb7
+   propID = 309
+   typeInfo
+      type = COLORREF
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La \_ interfaz \_ de usuario PKEY FontProperties \_ BackgroundColor se usa en una aplicación, junto con la [interfaz de usuario \_ PKEY \_ FontProperties \_ BackgroundColorType](windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolortype.md), para consultar la configuración de la galería de **colores de resaltado de texto** .
+La interfaz de usuario PKEY FontProperties BackgroundColor la usa una aplicación, junto con la interfaz de usuario \_ \_ \_ [ \_ PKEY \_ FontProperties \_ BackgroundColorType](windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolortype.md),  para consultar la configuración de la galería de colores de resaltado de texto.
 
 El valor predeterminado es `0x00000000`.
 
@@ -35,15 +35,15 @@ El valor predeterminado es `0x00000000`.
 
 <dl> <dt>
 
-[Propiedades de control de fuente](windowsribbon-reference-properties-fontcontrol.md)
+[Propiedades del control de fuentes](windowsribbon-reference-properties-fontcontrol.md)
 </dt> <dt>
 
 [COLORREF](../gdi/colorref.md)
 </dt> <dt>
 
-[Control de fuente](windowsribbon-controls-fontcontrol.md)
+[Control de fuentes](windowsribbon-controls-fontcontrol.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

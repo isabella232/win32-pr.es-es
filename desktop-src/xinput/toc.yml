@@ -1,10 +1,10 @@
-- name: API de controlador de juegos de XInput
+- name: API de XInput Game Controller
   href: xinput-game-controller-apis-portal.md
   items:
     - name: Guía de programación
       href: programming-guide.md
       items:
-        - name: Introducción con XInput
+        - name: Tareas iniciales con XInput
           href: getting-started-with-xinput.md
         - name: Versiones de XInput
           href: xinput-versions.md
@@ -12,12 +12,12 @@
           href: xinput-and-directinput.md
         - name: Dispositivos DirectInput y XUSB
           href: directinput-and-xusb-devices.md
-        - name: Subtipos de XINPUT y Controller
+        - name: Subtipos XINPUT y Controller
           href: xinput-and-controller-subtypes.md
     - name: Referencia de programación
       href: programming-reference.md
       items:
-        - name: Functions
+        - name: Funciones
           href: functions.md
           items:
             - name: XInputEnable

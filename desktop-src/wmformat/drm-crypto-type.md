@@ -1,10 +1,10 @@
 ---
-title: Enumeración DRM_CRYPTO_TYPE (wmdrmsdk. h)
-description: La \_ enumeración de tipos criptográficos de DRM \_ define los tipos de algoritmos criptográficos que se pueden usar para cifrar el contenido.
+title: DRM_CRYPTO_TYPE enumeración (Wmdrmsdk.h)
+description: La enumeración DRM CRYPTO TYPE define los tipos de algoritmo \_ \_ criptográficos que se pueden usar para cifrar el contenido.
 ms.assetid: e04d22cd-04fe-4b80-9644-7cd24dc99f04
 keywords:
-- DRM_CRYPTO_TYPE enumeración formato de Windows Media
-- enumeración Windows Media Format
+- DRM_CRYPTO_TYPE de enumeración windows Media Format
+- enumeración windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da2560429d074e23025fae22822ccae90d432fb3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d88514e695e3b87538f766a110d1691b0f78efe8ef41eef862b94751c6d0e3b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931045"
 ---
-# <a name="drm_crypto_type-enumeration"></a>\_Enumeración de tipos criptográficos de DRM \_
+# <a name="drm_crypto_type-enumeration"></a>Enumeración \_ CRYPTO TYPE de DRM \_
 
-La enumeración de **\_ \_ tipos criptográficos de DRM** define los tipos de algoritmos criptográficos que se pueden usar para cifrar el contenido.
+La **enumeración \_ DRM CRYPTO \_ TYPE** define los tipos de algoritmo criptográficos que se pueden usar para cifrar el contenido.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,10 +41,10 @@ typedef enum DRM_CRYPTO_TYPE {
 
 <dl> <dt>
 
-<span id="CRYPTO_TYPE_MCE"></span><span id="crypto_type_mce"></span>**tipo de CIFRAdo \_ \_ MCE**
+<span id="CRYPTO_TYPE_MCE"></span><span id="crypto_type_mce"></span>**MCE \_ DE \_ TIPO CRIPTOGRÁFICO**
 </dt> <dd>
 
-Especifica el cifrado de Estándar de cifrado avanzado de modo de contador de bits (AES) de 128.
+Especifica el modo de contador de 128 Estándar de cifrado avanzado cifrado (AES).
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

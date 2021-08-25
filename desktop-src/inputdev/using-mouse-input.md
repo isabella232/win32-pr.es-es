@@ -1,54 +1,54 @@
 ---
-title: Usar la entrada del mouse
-description: En esta sección se describen las tareas asociadas a la entrada del mouse.
+title: Uso de la entrada del mouse
+description: En esta sección se tratan las tareas asociadas a la entrada del mouse.
 ms.assetid: b96d0046-a507-4733-bcf3-fcf757beec7f
 keywords:
-- entrada del usuario, entrada del mouse
-- capturar datos proporcionados por el usuario, entrada del mouse
+- entrada de usuario, entrada del mouse
+- capturar la entrada del usuario, la entrada del mouse
 - entrada del mouse
 - cursores, entrada del mouse
 - cursor del mouse
-- hacer doble clic en procesamiento de mensajes
+- Procesamiento de mensajes con doble clic
 - rueda del mouse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50b34f180aad6aec6120bf4e3ffa997eba13e760
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: bc38105da1fbbe3bee1be9ca280f1f5573dbb41ba4b7b6aa2013d9c600b8ad00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829975"
 ---
-# <a name="using-mouse-input"></a>Usar la entrada del mouse
+# <a name="using-mouse-input"></a>Uso de la entrada del mouse
 
-En esta sección se describen las tareas asociadas a la entrada del mouse.
+En esta sección se tratan las tareas asociadas a la entrada del mouse.
 
 -   [Seguimiento del cursor del mouse](#tracking-the-mouse-cursor)
 -   [Dibujar líneas con el mouse](#drawing-lines-with-the-mouse)
 -   [Procesamiento de un mensaje de doble clic](#processing-a-double-click-message)
--   [Seleccionar una línea de texto](#selecting-a-line-of-text)
+-   [Selección de una línea de texto](#selecting-a-line-of-text)
 -   [Usar una rueda del mouse en un documento con objetos incrustados](#using-a-mouse-wheel-in-a-document-with-embedded-objects)
 -   [Recuperar el número de líneas de desplazamiento de la rueda del mouse](#retrieving-the-number-of-mouse-wheel-scroll-lines)
 
 ## <a name="tracking-the-mouse-cursor"></a>Seguimiento del cursor del mouse
 
-Las aplicaciones suelen realizar tareas que implican el seguimiento de la posición del cursor del mouse. La mayoría de las aplicaciones de dibujo, por ejemplo, hacen un seguimiento de la posición del cursor del mouse durante las operaciones de dibujo, lo que permite al usuario dibujar en el área de cliente de una ventana arrastrando el mouse. Las aplicaciones de procesamiento de texto también realizan el seguimiento del cursor, lo que permite al usuario seleccionar una palabra o un bloque de texto haciendo clic y arrastrando el mouse.
+A menudo, las aplicaciones realizan tareas que implican el seguimiento de la posición del cursor del mouse. Por ejemplo, la mayoría de las aplicaciones de dibujo realiza un seguimiento de la posición del cursor del mouse durante las operaciones de dibujo, lo que permite al usuario dibujar en el área cliente de una ventana arrastrando el mouse. Las aplicaciones de procesamiento de palabras también realiza un seguimiento del cursor, lo que permite al usuario seleccionar una palabra o un bloque de texto haciendo clic y arrastrando el mouse.
 
-El seguimiento del cursor normalmente implica el procesamiento de los mensajes de [**WM \_ LBUTTONDOWN**](wm-lbuttondown.md), [**WM \_ MOUSEMOVE**](wm-mousemove.md)y [**WM \_ LBUTTONUP**](wm-lbuttonup.md) . Una ventana determina cuándo debe comenzar el seguimiento del cursor comprobando la posición del cursor proporcionada en el parámetro *lParam* del mensaje de **\_ LBUTTONDOWN de WM** . Por ejemplo, una aplicación de procesamiento de texto comenzaría a realizar el seguimiento del cursor solo si el mensaje de **\_ LBUTTONDOWN de WM** se produjera mientras el cursor estaba en una línea de texto, pero no si estuviera más allá del final del documento.
+Normalmente, el seguimiento del cursor implica el procesamiento de los mensajes [**WM \_ LBUTTONDOWN,**](wm-lbuttondown.md) [**WM \_ MOUSEMOVE**](wm-mousemove.md)y [**WM \_ LBUTTONUP.**](wm-lbuttonup.md) Una ventana determina cuándo empezar a realizar el seguimiento del cursor comprobando la posición del cursor proporcionada en el parámetro *lParam* del **mensaje WM \_ LBUTTONDOWN.** Por ejemplo, una aplicación de procesamiento de palabras comenzaría a realizar el seguimiento del cursor solo si el mensaje **\_ WM LBUTTONDOWN** se produjo mientras el cursor estaba en una línea de texto, pero no si estaba más allá del final del documento.
 
-Una ventana realiza un seguimiento de la posición del cursor mediante el procesamiento de la secuencia de mensajes de la [**\_ MOUSEMOVE de WM**](wm-mousemove.md) enviados a la ventana a medida que se mueve el mouse. El procesamiento del mensaje de **\_ MOUSEMOVE de WM** normalmente implica una operación de dibujo o dibujo repetitivo en el área cliente. Por ejemplo, una aplicación de dibujo podría volver a dibujar una línea varias veces mientras se mueve el mouse. Una ventana usa el mensaje de [**\_ LBUTTONUP de WM**](wm-lbuttonup.md) como una señal para detener el seguimiento del cursor.
+Una ventana realiza un seguimiento de la posición del cursor procesando la secuencia de [**mensajes \_ WM MOUSEMOVE**](wm-mousemove.md) publicados en la ventana a medida que se mueve el mouse. El procesamiento **del mensaje \_ MOUSEMOVE** de WM normalmente implica una operación repetitiva de dibujo o dibujo en el área cliente. Por ejemplo, una aplicación de dibujo podría volver a dibujar una línea repetidamente a medida que se mueve el mouse. Una ventana usa el [**mensaje \_ WM LBUTTONUP**](wm-lbuttonup.md) como señal para detener el seguimiento del cursor.
 
-Además, una aplicación puede llamar a la función [**TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) para que el sistema envíe otros mensajes que son útiles para realizar el seguimiento del cursor. El sistema envía el mensaje de [**\_ MOUSEHOVER de WM**](wm-mousehover.md) cuando el cursor se mantiene sobre el área de cliente durante un período de tiempo determinado. Envía el mensaje de [**WM \_ MOUSELEAVE**](wm-mouseleave.md) cuando el cursor sale del área cliente. Los mensajes de [**WM \_ NCMOUSEHOVER**](wm-ncmousehover.md) y [**WM \_ NCMOUSELEAVE**](wm-ncmouseleave.md) son los mensajes correspondientes para las áreas no cliente.
+Además, una aplicación puede llamar a la [**función TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) para que el sistema envíe otros mensajes que sean útiles para realizar el seguimiento del cursor. El sistema envía el [**mensaje \_ WM MOUSEHOVER**](wm-mousehover.md) cuando el cursor mantiene el puntero sobre el área de cliente durante un período de tiempo determinado. Envía el mensaje [**WM \_ MOUSELEAVE**](wm-mouseleave.md) cuando el cursor sale del área de cliente. Los [**mensajes \_ WM NCMOUSEHOVER**](wm-ncmousehover.md) y [**WM \_ NCMOUSELEAVE**](wm-ncmouseleave.md) son los mensajes correspondientes para las áreas no cliente.
 
 ## <a name="drawing-lines-with-the-mouse"></a>Dibujar líneas con el mouse
 
-En el ejemplo de esta sección se muestra cómo realizar el seguimiento del cursor del mouse. Contiene partes de un procedimiento de ventana que permiten al usuario dibujar líneas en el área de cliente de una ventana arrastrando el mouse.
+En el ejemplo de esta sección se muestra cómo realizar un seguimiento del cursor del mouse. Contiene partes de un procedimiento de ventana que permite al usuario dibujar líneas en el área cliente de una ventana arrastrando el mouse.
 
-Cuando el procedimiento de ventana recibe un mensaje de [**\_ LBUTTONDOWN de WM**](wm-lbuttondown.md) , captura el mouse y guarda las coordenadas del cursor, usando las coordenadas como el punto inicial de la línea. También utiliza la función [**ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) para limitar el cursor al área cliente durante la operación de dibujo de línea.
+Cuando el procedimiento de ventana recibe un mensaje [**\_ WM LBUTTONDOWN,**](wm-lbuttondown.md) captura el mouse y guarda las coordenadas del cursor, usando las coordenadas como punto inicial de la línea. También usa la [**función ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) para limitar el cursor al área de cliente durante la operación de dibujo de línea.
 
-Durante el primer mensaje de Windows de [**WM \_**](wm-mousemove.md) , el procedimiento de ventana dibuja una línea desde el punto inicial hasta la posición actual del cursor. Durante los mensajes del **\_ MOUSEMOVE de WM** posteriores, el procedimiento de ventana borra la línea anterior dibujando sobre ella con un color de lápiz invertido. A continuación, dibuja una nueva línea desde el punto inicial hasta la nueva posición del cursor.
+Durante el primer [**mensaje \_ MOUSEMOVE**](wm-mousemove.md) de WM, el procedimiento de ventana dibuja una línea desde el punto inicial hasta la posición actual del cursor. Durante los **mensajes \_ WM MOUSEMOVE** posteriores, el procedimiento de ventana borra la línea anterior dibujando sobre ella con un color de lápiz invertido. A continuación, dibuja una nueva línea desde el punto inicial hasta la nueva posición del cursor.
 
-El mensaje de [**\_ LBUTTONUP de WM**](wm-lbuttonup.md) señala el final de la operación de dibujo. El procedimiento de ventana libera la captura del mouse y libera el mouse desde el área cliente.
+El [**mensaje \_ LBUTTONUP**](wm-lbuttonup.md) de WM indica el final de la operación de dibujo. El procedimiento de ventana libera la captura del mouse y libera el mouse del área de cliente.
 
 
 ```
@@ -171,7 +171,7 @@ LRESULT APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 ## <a name="processing-a-double-click-message"></a>Procesamiento de un mensaje de doble clic
 
-Para recibir mensajes de doble clic, una ventana debe pertenecer a una clase de ventana que tenga el estilo de clase [**CS \_ DBLCLKS**](/windows/desktop/winmsg/about-window-classes) . Este estilo se establece al registrar la clase de ventana, como se muestra en el ejemplo siguiente.
+Para recibir mensajes de doble clic, una ventana debe pertenecer a una clase de ventana que tenga el estilo de clase [**\_ DBLCLKS de CS.**](/windows/desktop/winmsg/about-window-classes) Este estilo se establece al registrar la clase de ventana, como se muestra en el ejemplo siguiente.
 
 
 ```
@@ -196,11 +196,11 @@ BOOL InitApplication(HINSTANCE hInstance)
 
 
 
-Un mensaje de doble clic siempre va precedido de un mensaje de botón presionado. Por este motivo, las aplicaciones suelen usar un mensaje de doble clic para extender una tarea que comenzó durante un mensaje de botón.
+Un mensaje de doble clic siempre va precedido de un mensaje de botón hacia abajo. Por esta razón, las aplicaciones suelen usar un mensaje de doble clic para extender una tarea que comenzó durante un mensaje de botón.
 
-## <a name="selecting-a-line-of-text"></a>Seleccionar una línea de texto
+## <a name="selecting-a-line-of-text"></a>Selección de una línea de texto
 
-El ejemplo de esta sección se toma de una sencilla aplicación de procesamiento de texto. Incluye código que permite al usuario establecer la posición del símbolo de intercalación haciendo clic en cualquier parte de una línea de texto y seleccionando (resaltando) una línea de texto haciendo doble clic en cualquier parte de la línea.
+El ejemplo de esta sección se toma de una aplicación de procesamiento de palabras simple. Incluye código que permite al usuario establecer la posición del elemento de subrayado haciendo clic en cualquier lugar de una línea de texto y seleccionando (resalte) una línea de texto haciendo doble clic en cualquier lugar de la línea.
 
 
 ```
@@ -441,27 +441,27 @@ LRESULT APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 ## <a name="using-a-mouse-wheel-in-a-document-with-embedded-objects"></a>Usar una rueda del mouse en un documento con objetos incrustados
 
-En este ejemplo se da por supuesto que es un documento de Microsoft Word con varios objetos incrustados:
+En este ejemplo se presupone un Microsoft Word con varios objetos incrustados:
 
--   Una hoja de cálculo de Microsoft Excel
--   Un control de cuadro de lista incrustado que se desplaza en respuesta a la rueda
--   Un control de cuadro de texto incrustado que no responde a la rueda
+-   Una hoja Microsoft Excel de cálculo
+-   Control de cuadro de lista incrustado que se desplaza en respuesta a la rueda
+-   Control de cuadro de texto incrustado que no responde a la rueda
 
-El mensaje [MSH \_ MOUSEWHEEL](about-mouse-input.md) siempre se envía a la ventana principal de Microsoft Word. Esto es así incluso si la hoja de cálculo incrustada está activa. En la tabla siguiente se explica cómo \_ se controla el mensaje de MSH MOUSEWHEEL según el foco.
+El [mensaje \_ MSH MOUSEWHEEL](about-mouse-input.md) siempre se envía a la ventana principal de Microsoft Word. Esto es así incluso si la hoja de cálculo insertada está activa. En la tabla siguiente se explica cómo se controla el mensaje \_ MSH MOUSEWHEEL según el foco.
 
 
 
-| El foco está activado                | El control es el siguiente:                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| El foco está en                | El control es el siguiente:                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Documento de Word              | Word desplaza la ventana de documento.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Hoja de cálculo de Excel incrustada | Word envía el mensaje a Excel. Debe decidir si la aplicación incrustada debe responder al mensaje o no.                                                                                                                                                                                                                                                                                                                                                            |
-| Control incrustado           | Depende de la aplicación enviar el mensaje a un control incrustado que tenga el foco y comprobar el código de retorno para ver si el control lo ha controlado. Si el control no lo controla, la aplicación debe desplazarse por la ventana de documento. Por ejemplo, si el usuario hizo clic en un cuadro de lista y, a continuación, revirtió la rueda, ese control se desplazaría en respuesta a un giro de la rueda. Si el usuario hizo clic en un cuadro de texto y luego girara la rueda, se desplazaría todo el documento. |
+| Documento de Word              | Word desplaza la ventana del documento.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Hoja de cálculo Excel incrustada | Word publica el mensaje en Excel. Debe decidir si la aplicación incrustada debe responder al mensaje o no.                                                                                                                                                                                                                                                                                                                                                            |
+| Control incrustado           | La aplicación debe enviar el mensaje a un control incrustado que tenga el foco y comprobar el código de retorno para ver si el control lo controló. Si el control no lo controló, la aplicación debe desplazarse por la ventana del documento. Por ejemplo, si el usuario hizo clic en un cuadro de lista y luego rodó la rueda, ese control se desplazaría en respuesta a una rotación de rueda. Si el usuario hizo clic en un cuadro de texto y luego giraba la rueda, todo el documento se desplazaría. |
 
 
 
- 
+ 
 
-En el ejemplo siguiente se muestra cómo una aplicación podría controlar los dos mensajes de la rueda.
+En este ejemplo se muestra cómo una aplicación puede controlar los mensajes de las dos ruedas.
 
 
 ```
@@ -591,7 +591,7 @@ LONG APIENTRY MainWndProc(
 
 ## <a name="retrieving-the-number-of-mouse-wheel-scroll-lines"></a>Recuperar el número de líneas de desplazamiento de la rueda del mouse
 
-El código siguiente permite que una aplicación recupere el número de líneas de desplazamiento mediante la función [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) .
+El código siguiente permite a una aplicación recuperar el número de líneas de desplazamiento mediante la [**función SystemParametersInfo.**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa)
 
 
 ```
@@ -652,6 +652,6 @@ UINT GetNumScrollLines(void)
 
 
 
- 
+ 
 
- 
+ 

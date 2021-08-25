@@ -1,76 +1,76 @@
 ---
-description: Las siguientes estructuras se usan con metaarchivos de formato mejorado.
+description: Las estructuras siguientes se usan con metarchivos de formato mejorado.
 ms.assetid: 6a509ed5-cea3-4318-ad17-9d20425a6e80
 title: Estructuras de metarchivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33dfad6180b0b30c6bcb3786ec3870493c5b9839
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 370fa42f935a99183e9132c652368d102af83bc4ea908e4ae9733e346ae41cb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965635"
 ---
 # <a name="metafile-structures"></a>Estructuras de metarchivo
 
-Las siguientes estructuras se usan con metaarchivos de formato mejorado.
+Las estructuras siguientes se usan con metarchivos de formato mejorado.
 
 <dl>
 
-[**EMRTEXT**](/windows/win32/api/wingdi/ns-wingdi-emrtext)  
+[**TEXTOTEXT**](/windows/win32/api/wingdi/ns-wingdi-emrtext)  
 [**EMRTRANSPARENTBLT**](/windows/win32/api/wingdi/ns-wingdi-emrtransparentblt)  
 [**EMRWIDENPATH**](/windows/win32/api/wingdi/ns-wingdi-emrabortpath)  
 [**ENHMETAHEADER**](/windows/win32/api/wingdi/ns-wingdi-enhmetaheader)  
 [**ENHMETARECORD**](/windows/win32/api/wingdi/ns-wingdi-enhmetarecord)  
 [**HANDLETABLE**](/windows/win32/api/wingdi/ns-wingdi-handletable)  
-[**PUNTO**](/previous-versions//dd162807(v=vs.85))  
-[**RECTl**](/previous-versions//dd162907(v=vs.85))  
+[**POINTL**](/previous-versions//dd162807(v=vs.85))  
+[**RECTL**](/previous-versions//dd162907(v=vs.85))  
 </dl> 
 
-Tenga en cuenta que la estructura [**EMR**](/windows/win32/api/wingdi/ns-wingdi-emr) se usa como primer miembro de las estructuras restantes.  
+Tenga en cuenta que [**la estructura DEA**](/windows/win32/api/wingdi/ns-wingdi-emr) se usa como primer miembro de las estructuras restantes.  
 
 <dl> 
 
 [**EMR**](/windows/win32/api/wingdi/ns-wingdi-emr)  
 [**EMRABORTPATH**](/windows/win32/api/wingdi/ns-wingdi-emrabortpath)  
 [**EMRALPHABLEND**](/windows/win32/api/wingdi/ns-wingdi-emralphablend)  
-[**EMRANGLEARC**](/windows/win32/api/wingdi/ns-wingdi-emranglearc)  
-[**EMRARC**](/windows/win32/api/wingdi/ns-wingdi-emrarc)  
-[**EMRARCTO**](/windows/win32/api/wingdi/ns-wingdi-emrarc)  
+[**ANGLEANGLE**](/windows/win32/api/wingdi/ns-wingdi-emranglearc)  
+[**EMROGRAFÍA**](/windows/win32/api/wingdi/ns-wingdi-emrarc)  
+[**ECTARCTO**](/windows/win32/api/wingdi/ns-wingdi-emrarc)  
 [**EMRBEGINPATH**](/windows/win32/api/wingdi/ns-wingdi-emrabortpath)  
 [**EMRBITBLT**](/windows/win32/api/wingdi/ns-wingdi-emrbitblt)  
 [**EMRCHORD**](/windows/win32/api/wingdi/ns-wingdi-emrarc)  
-[**EMRCLOSEFIGURE**](/windows/win32/api/wingdi/ns-wingdi-emrabortpath)  
+[**CLOSECLOSEFIGURE**](/windows/win32/api/wingdi/ns-wingdi-emrabortpath)  
 [**EMRCOLORCORRECTPALETTE**](/windows/win32/api/wingdi/ns-wingdi-emrcolorcorrectpalette)  
 [**EMRCOLORMATCHTOTARGET**](/windows/win32/api/wingdi/ns-wingdi-emrcolormatchtotarget)  
-[**EMRCREATEBRUSHINDIRECT**](/windows/win32/api/wingdi/ns-wingdi-emrcreatebrushindirect)  
-[**EMRCREATECOLORSPACE**](/windows/win32/api/wingdi/ns-wingdi-emrcreatecolorspace)  
-[**EMRCREATECOLORSPACEW**](/windows/win32/api/wingdi/ns-wingdi-emrcreatecolorspacew)  
-[**EMRCREATEDIBPATTERNBRUSHPT**](/windows/win32/api/wingdi/ns-wingdi-emrcreatedibpatternbrushpt)  
-[**EMRCREATEMONOBRUSH**](/windows/win32/api/wingdi/ns-wingdi-emrcreatemonobrush)  
-[**EMRCREATEPALETTE**](/windows/win32/api/wingdi/ns-wingdi-emrcreatepalette)  
-[**EMRCREATEPEN**](/windows/win32/api/wingdi/ns-wingdi-emrcreatepen)  
-[**EMRDELETECOLORSPACE**](/windows/win32/api/wingdi/ns-wingdi-emrsetcolorspace)  
+[**BRUSHCREATEBRUSHINDIRECT**](/windows/win32/api/wingdi/ns-wingdi-emrcreatebrushindirect)  
+[**CREATECREATECOLORSPACE**](/windows/win32/api/wingdi/ns-wingdi-emrcreatecolorspace)  
+[**CREATECREATECOLORSPACEW**](/windows/win32/api/wingdi/ns-wingdi-emrcreatecolorspacew)  
+[**CREATECREATEDIBPATTERNBRUSHPT**](/windows/win32/api/wingdi/ns-wingdi-emrcreatedibpatternbrushpt)  
+[**BRUSHCREATEMONOBRUSH**](/windows/win32/api/wingdi/ns-wingdi-emrcreatemonobrush)  
+[**CREATECREATEPALETTE**](/windows/win32/api/wingdi/ns-wingdi-emrcreatepalette)  
+[**CREATECREATEPEN**](/windows/win32/api/wingdi/ns-wingdi-emrcreatepen)  
+[**DELETECOLORSPACE**](/windows/win32/api/wingdi/ns-wingdi-emrsetcolorspace)  
 [**EMRDELETEOBJECT**](/windows/win32/api/wingdi/ns-wingdi-emrselectobject)  
-[**EMRELLIPSE**](/windows/win32/api/wingdi/ns-wingdi-emrellipse)  
+[**EMPTOPSE**](/windows/win32/api/wingdi/ns-wingdi-emrellipse)  
 [**EMRENDPATH**](/windows/win32/api/wingdi/ns-wingdi-emrabortpath)  
 [**EMREOF**](/windows/win32/api/wingdi/ns-wingdi-emreof)  
 [**EMREXCLUDECLIPRECT**](/windows/win32/api/wingdi/ns-wingdi-emrexcludecliprect)  
 [**EMREXTCREATEFONTINDIRECTW**](/windows/win32/api/wingdi/ns-wingdi-emrextcreatefontindirectw)  
 [**EMREXTCREATEPEN**](/windows/win32/api/wingdi/ns-wingdi-emrextcreatepen)  
-[**EMREXTFLOODFILL**](/windows/win32/api/wingdi/ns-wingdi-emrextfloodfill)  
+[**FILLEXTFLOODFILL**](/windows/win32/api/wingdi/ns-wingdi-emrextfloodfill)  
 [**EMREXTSELECTCLIPRGN**](/windows/win32/api/wingdi/ns-wingdi-emrextselectcliprgn)  
 [**EMREXTTEXTOUTA**](/windows/win32/api/wingdi/ns-wingdi-emrexttextouta)  
 [**EMREXTTEXTOUTW**](/windows/win32/api/wingdi/ns-wingdi-emrexttextouta)  
-[**EMRFILLPATH**](/windows/win32/api/wingdi/ns-wingdi-emrfillpath)  
-[**EMRFILLRGN**](/windows/win32/api/wingdi/ns-wingdi-emrfillrgn)  
+[**FILLFILLPATH**](/windows/win32/api/wingdi/ns-wingdi-emrfillpath)  
+[**FILLFILLRGN**](/windows/win32/api/wingdi/ns-wingdi-emrfillrgn)  
 [**EMRFLATTENPATH**](/windows/win32/api/wingdi/ns-wingdi-emrabortpath)  
 [**EMRFORMAT**](/windows/win32/api/wingdi/ns-wingdi-emrformat)  
-[**EMRFRAMERGN**](/windows/win32/api/wingdi/ns-wingdi-emrframergn)  
+[**FRAMEFRAMERGN**](/windows/win32/api/wingdi/ns-wingdi-emrframergn)  
 [**EMRGDICOMMENT**](/windows/win32/api/wingdi/ns-wingdi-emrgdicomment)  
 [**EMRGLSBOUNDEDRECORD**](/windows/win32/api/wingdi/ns-wingdi-emrglsboundedrecord)  
 [**EMRGLSRECORD**](/windows/win32/api/wingdi/ns-wingdi-emrglsrecord)  
-[**EMRGRADIENTFILL**](/windows/win32/api/wingdi/ns-wingdi-emrgradientfill)  
+[**FILLGRADIENTFILL**](/windows/win32/api/wingdi/ns-wingdi-emrgradientfill)  
 [**EMRINTERSECTCLIPRECT**](/windows/win32/api/wingdi/ns-wingdi-emrexcludecliprect)  
 [**EMRINVERTRGN**](/windows/win32/api/wingdi/ns-wingdi-emrinvertrgn)  
 [**EMRLINETO**](/windows/win32/api/wingdi/ns-wingdi-emrlineto)  
@@ -78,12 +78,12 @@ Tenga en cuenta que la estructura [**EMR**](/windows/win32/api/wingdi/ns-wingdi-
 [**EMRMODIFYWORLDTRANSFORM**](/windows/win32/api/wingdi/ns-wingdi-emrmodifyworldtransform)  
 [**EMRMOVETOEX**](/windows/win32/api/wingdi/ns-wingdi-emrlineto)  
 [**EMROFFSETCLIPRGN**](/windows/win32/api/wingdi/ns-wingdi-emroffsetcliprgn)  
-[**EMRPAINTRGN**](/windows/win32/api/wingdi/ns-wingdi-emrinvertrgn)  
+[**PAINTPAINTRGN**](/windows/win32/api/wingdi/ns-wingdi-emrinvertrgn)  
 [**EMRPIE**](/windows/win32/api/wingdi/ns-wingdi-emrarc)  
-[**EMRPIXELFORMAT**](/windows/win32/api/wingdi/ns-wingdi-emrpixelformat)  
+[**PIXPIXELFORMAT**](/windows/win32/api/wingdi/ns-wingdi-emrpixelformat)  
 [**EMRPLGBLT**](/windows/win32/api/wingdi/ns-wingdi-emrplgblt)  
-[**EMRPOLYBEZIER**](/windows/win32/api/wingdi/ns-wingdi-emrpolyline)  
-[**EMRPOLYBEZIER16**](/windows/win32/api/wingdi/ns-wingdi-emrpolyline16)  
+[**ZIERPOLYBEZIER**](/windows/win32/api/wingdi/ns-wingdi-emrpolyline)  
+[**ZIERPOLYBEZIER16**](/windows/win32/api/wingdi/ns-wingdi-emrpolyline16)  
 [**EMRPOLYBEZIERTO**](/windows/win32/api/wingdi/ns-wingdi-emrpolyline)  
 [**EMRPOLYBEZIERTO16**](/windows/win32/api/wingdi/ns-wingdi-emrpolyline16)  
 [**EMRPOLYDRAW**](/windows/win32/api/wingdi/ns-wingdi-emrpolydraw)  
@@ -104,18 +104,18 @@ Tenga en cuenta que la estructura [**EMR**](/windows/win32/api/wingdi/ns-wingdi-
 [**EMRRECTANGLE**](/windows/win32/api/wingdi/ns-wingdi-emrellipse)  
 [**EMRRESIZEPALETTE**](/windows/win32/api/wingdi/ns-wingdi-emrresizepalette)  
 [**EMRRESTOREDC**](/windows/win32/api/wingdi/ns-wingdi-emrrestoredc)  
-[**EMRROUNDRECT**](/windows/win32/api/wingdi/ns-wingdi-emrroundrect)  
+[**EMRROURECECT**](/windows/win32/api/wingdi/ns-wingdi-emrroundrect)  
 [**EMRSAVEDC**](/windows/win32/api/wingdi/ns-wingdi-emrabortpath)  
 [**EMRSCALEVIEWPORTEXTEX**](/windows/win32/api/wingdi/ns-wingdi-emrscaleviewportextex)  
 [**EMRSCALEWINDOWEXTEX**](/windows/win32/api/wingdi/ns-wingdi-emrscaleviewportextex)  
-[**EMRSELECTCLIPPATH**](/windows/win32/api/wingdi/ns-wingdi-emrselectclippath)  
+[**CLIPSELECTCLIPPATH**](/windows/win32/api/wingdi/ns-wingdi-emrselectclippath)  
 [**EMRSELECTCOLORSPACE**](/windows/win32/api/wingdi/ns-wingdi-emrsetcolorspace)  
 [**EMRSELECTOBJECT**](/windows/win32/api/wingdi/ns-wingdi-emrselectobject)  
 [**EMRSELECTPALETTE**](/windows/win32/api/wingdi/ns-wingdi-emrselectpalette)  
-[**EMRSETARCDIRECTION**](/windows/win32/api/wingdi/ns-wingdi-emrsetarcdirection)  
+[**EMRSETRECRECCIÓNDIRECCIÓN**](/windows/win32/api/wingdi/ns-wingdi-emrsetarcdirection)  
 [**EMRSETBKCOLOR**](/windows/win32/api/wingdi/ns-wingdi-emrsetbkcolor)  
 [**EMRSETBKMODE**](/windows/win32/api/wingdi/ns-wingdi-emrselectclippath)  
-[**EMRSETBRUSHORGEX**](/windows/win32/api/wingdi/ns-wingdi-emrsetviewportextex)  
+[**BRUSHSETBRUSHORGEX**](/windows/win32/api/wingdi/ns-wingdi-emrsetviewportextex)  
 [**EMRSETCOLORADJUSTMENT**](/windows/win32/api/wingdi/ns-wingdi-emrsetcoloradjustment)  
 [**EMRSETCOLORSPACE**](/windows/win32/api/wingdi/ns-wingdi-emrsetcolorspace)  
 [**EMRSETDIBITSTODEVICE**](/windows/win32/api/wingdi/ns-wingdi-emrsetdibitstodevice)  
@@ -146,9 +146,9 @@ Tenga en cuenta que la estructura [**EMR**](/windows/win32/api/wingdi/ns-wingdi-
 
 ## <a name="obsolete-structures"></a>Estructuras obsoletas
 
-Las siguientes estructuras están obsoletas. Se proporcionan para ofrecer compatibilidad con los metaarchivos con formato de Windows:
+Las siguientes estructuras están obsoletas. se proporcionan para la compatibilidad con Windows metarchivos con formato de archivo:
 
-metaRegistro del [**metaencabezado**](/windows/win32/api/wingdi/ns-wingdi-metaheader)[](/windows/win32/api/wingdi/ns-wingdi-metarecord)
+[**METAHEADER**](/windows/win32/api/wingdi/ns-wingdi-metaheader)[**METARECORD**](/windows/win32/api/wingdi/ns-wingdi-metarecord)
 
  
 

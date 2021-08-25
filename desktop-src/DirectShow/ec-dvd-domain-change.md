@@ -1,7 +1,7 @@
 ---
 description: Indica el nuevo dominio del reproductor de DVD.
 ms.assetid: 4faa46d6-2ba2-44a3-b237-acac3b32f8b1
-title: EC_DVD_DOMAIN_CHANGE (Dvdevcode. h)
+title: EC_DVD_DOMAIN_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 815b6b2dd318d0b7716f4cf640ef3f83dacd0d60
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a43c44e779d8ad64852b673fb053467687c50daec85acb9bc87999675200d5f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965665"
 ---
-# <a name="ec_dvd_domain_change"></a>\_cambio de \_ dominio de DVD de EC \_
+# <a name="ec_dvd_domain_change"></a>CAMBIO \_ DE DOMINIO DE DVD DE \_ \_ EC
 
 Indica el nuevo dominio del reproductor de DVD.
 
@@ -31,7 +31,7 @@ Indica el nuevo dominio del reproductor de DVD.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valor **DWORD** que indica el nuevo dominio. Miembro del tipo de datos enumerado del [**\_ dominio de DVD**](/windows/win32/api/strmif/ne-strmif-dvd_domain) .
+**Valor DWORD** que indica el nuevo dominio. Miembro del tipo [**de datos enumerado DVD \_ DOMAIN.**](/windows/win32/api/strmif/ne-strmif-dvd_domain)
 
 </dd> <dt>
 
@@ -42,11 +42,11 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El reproductor de DVD indica este evento cada vez que cambia de dominio.
+El reproductor de DVD señala este evento cada vez que cambia de dominio.
 
-Este evento se desencadena en todos los dominios de DVD.
+Este evento se genera en todos los dominios de DVD.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Este evento se desencadena en todos los dominios de DVD.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

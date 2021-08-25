@@ -1,10 +1,10 @@
 ---
-title: WMDRM_ANALOG_VIDEO_RESTRICTIONS estructura (wmdrmsdk. h)
-description: La \_ \_ \_ estructura de restricciones de vídeo analógico de WMDRM contiene información sobre una restricción para reproducir el contenido como vídeo analógico.
+title: WMDRM_ANALOG_VIDEO_RESTRICTIONS estructura (Wmdrmsdk.h)
+description: La estructura WMDRM ANALOG VIDEO RESTRICTIONS contiene información sobre una restricción para reproducir \_ \_ contenido como vídeo \_ análogo.
 ms.assetid: 13b38115-bd18-45b9-a1d5-542e043a4bde
 keywords:
-- WMDRM_ANALOG_VIDEO_RESTRICTIONS estructura de Windows Media Format
-- Formato de Windows Media de estructura
+- WMDRM_ANALOG_VIDEO_RESTRICTIONS structure windows Media Format
+- Estructura de windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3d6b8fe957468baebb6da06f45ba7b37756413c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8221fe325983387107f4e0c03f5672a6762502d8865e1d5895a9e48e96b99d4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928815"
 ---
-# <a name="wmdrm_analog_video_restrictions-structure"></a>\_Estructura de \_ restricciones de vídeo analógico de WMDRM \_
+# <a name="wmdrm_analog_video_restrictions-structure"></a>Estructura DE \_ RESTRICCIONES DE VÍDEO ANÁLOGO \_ DE WMDRM \_
 
-La estructura de **\_ \_ \_ restricciones de vídeo analógico de WMDRM** contiene información sobre una restricción para reproducir el contenido como vídeo analógico.
+La **estructura WMDRM \_ ANALOG VIDEO \_ \_ RESTRICTIONS** contiene información sobre una restricción para reproducir contenido como vídeo análogo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,9 +56,9 @@ Datos de restricción.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura se recibe cuando se llama a [**IWMDRMLicense:: GetAnalogVideoRestrictionLevels**](iwmdrmlicense-getanalogvideorestrictionlevels.md).
+Esta estructura se recibe cuando se llama [**a IWMDRMLicense::GetAnalogVideoRestrictionLevels**](iwmdrmlicense-getanalogvideorestrictionlevels.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Esta estructura se recibe cuando se llama a [**IWMDRMLicense:: GetAnalogVideoRes
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Esta estructura se recibe cuando se llama a [**IWMDRMLicense:: GetAnalogVideoRes
 [**Estructuras**](drm-structures.md)
 </dt> <dt>
 
-[**\_restricciones de vídeo analógico de WMDRM \_ \_ \_ ex**](wmdrm-analog-video-restrictions-ex.md)
+[**RESTRICCIONES DE VÍDEO ANÁLOGO DE WMDRM, \_ \_ POR \_ \_ EJEMPLO,**](wmdrm-analog-video-restrictions-ex.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Objeto de sección crítica que protege el estado del filtro. El método auxiliar CSource::p StateLock devuelve un puntero a esta variable miembro.
 ms.assetid: faaf5fea-54bc-4856-9bca-3ed420c491e4
-title: 'Miembro CSource:: m_cStateLock (Source. h)'
+title: CSource::m_cStateLock miembro (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 85ff046b7e1f7a0ccfcc41f630785a3e8404e256
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5de77935fd71f0b82f3cfe1f70dae3879c97bd86b4ca6b802efd46dd42730288
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915315"
 ---
-# <a name="csourcem_cstatelock-member"></a>Miembro cStateLock CSource:: m \_
+# <a name="csourcem_cstatelock-member"></a>Miembro CSource::m \_ cStateLock
 
-Objeto de sección crítica que protege el estado del filtro. El método auxiliar [**CSource::P statelock**](csource--pstatelock.md) devuelve un puntero a esta variable miembro.
+Objeto de sección crítica que protege el estado del filtro. El [**método auxiliar CSource::p StateLock**](csource--pstatelock.md) devuelve un puntero a esta variable miembro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ CCritSec m_cStateLock;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CCritSec m_cStateLock;
 
 <dl> <dt>
 
-[**Clase CSource**](csource.md)
+[**CSource (clase)**](csource.md)
 </dt> </dl>
 
  

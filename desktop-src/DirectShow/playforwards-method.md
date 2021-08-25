@@ -4,12 +4,12 @@ ms.assetid: 4f1a3e74-b343-413d-8df7-6c4bea39c62d
 title: Método PlayForwards
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10d49d8d6d80613c4dd5b2b8a374002b37d9baa4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 81e607779147ba057b9cfd747ebfe827a25e294e2b04cdfa7e61a0691ecf293c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830635"
 ---
 # <a name="playforwards-method"></a>Método PlayForwards
 
@@ -31,7 +31,7 @@ MSWebDVD.PlayForwards(nSpeed)
 <span id="nSpeed"></span><span id="nspeed"></span><span id="NSPEED"></span>*nSpeed*
 </dt> <dd>
 
-Especifica la velocidad a la que se reproducirá como valor entero. Este valor es un multiplicador: 1,0 es la velocidad de reproducción normal; 2,0 es la velocidad doble, 0,5 es la velocidad media, etc. Cuando **nSpeed** no es igual a 1,0, el audio se silencia y la subimagen se desactiva.
+Especifica la velocidad a la que se va a reproducir como un valor entero. Este valor es un multiplicador: 1,0 es la velocidad de reproducción normal; 2.0 es doble velocidad, 0.5 es de media velocidad, y así sucesivamente. Cuando **nSpeed** no es igual a 1.0, el audio se muted y la subpicture está desactivada.
 
 </dd> </dl>
 

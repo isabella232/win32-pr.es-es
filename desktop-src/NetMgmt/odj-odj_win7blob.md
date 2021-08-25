@@ -1,18 +1,18 @@
 ---
 title: ODJ_WIN7BLOB
-description: Definición de ODJ_WIN7BLOB IDL
+description: ODJ_WIN7BLOB definición de IDL
 ms.assetid: 5802e00c-b943-45d8-8298-5c2b4b996b85
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: 2083648636bd58c64314ba22852839f89ed4461d
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: ab6f6582b23d6e65866ba1380b696fab6d8313578fab47ad5dda999b09a1caa7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "104359497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911604"
 ---
-# <a name="odj_win7blob-structure"></a>Estructura de ODJ_WIN7BLOB
+# <a name="odj_win7blob-structure"></a>ODJ_WIN7BLOB estructura
 
 Contiene la información básica necesaria para unir un cliente a un dominio.
 
@@ -46,11 +46,11 @@ Debe establecerse en una contraseña de texto no cifrado para la cuenta de equip
 
 ### <a name="dnsdomaininfo"></a>DnsDomainInfo
 
-Contiene información sobre el dominio que se va a combinar.
+Contiene información sobre el dominio que se va a unir.
 
 ### <a name="dcinfo"></a>DcInfo
 
-Contiene información de nombre y dirección sobre el controlador de dominio que se usó para crear la cuenta de equipo Active Directory.
+Contiene información de nomenclatura y direccionamiento sobre el controlador de dominio que se usó para crear la cuenta de Active Directory.
 
 ### <a name="options"></a>Opciones
 
@@ -58,9 +58,9 @@ Debe establecerse en cero.
 
 ## <a name="see-also"></a>Vea también
 
-[**Definiciones IDL de unión a dominio sin conexión**](odj-idl.md)
+[**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)
 
-[**\_información de \_ \_ dominio DNS de directiva \_ de ODJ**](odj-odj_policy_dns_domain_info.md)
+[**INFORMACIÓN DE DOMINIO \_ DNS DE \_ DIRECTIVA \_ DE \_ ODJ**](odj-odj_policy_dns_domain_info.md)
 
 [**DOMAIN_CONTROLLER_INFOW**](/windows/win32/api/dsgetdc/ns-dsgetdc-domain_controller_infow)
 

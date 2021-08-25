@@ -1,9 +1,9 @@
 ---
-title: Months (monthlyDayOfWeekScheduleType), elemento
-description: Especifica los meses del año en los que se ejecuta la tarea para una programación mensual de día de la semana.
+title: Elemento Months (monthlyDayOfWeekScheduleType)
+description: Especifica los meses del año durante los que la tarea se ejecuta para una programación mensual del día de la semana.
 ms.assetid: 420fa7f4-7106-483e-9b3b-d1ba51f25222
 keywords:
-- Months, elemento Programador de tareas
+- Meses, elemento Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76f13a5823e0154519dbdb093dd03ea36bbe77b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a963032a2d33f13158af249f2b867037cf50082be005efa579148031c8e30585
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959605"
 ---
-# <a name="months-monthlydayofweekscheduletype-element"></a>Months (monthlyDayOfWeekScheduleType), elemento
+# <a name="months-monthlydayofweekscheduletype-element"></a>Elemento Months (monthlyDayOfWeekScheduleType)
 
-Especifica los meses del año en los que se ejecuta la tarea para una programación mensual de día de la semana.
+Especifica los meses del año durante los que la tarea se ejecuta para una programación mensual del día de la semana.
 
 ``` syntax
 <xs:element name="Months"
@@ -30,7 +30,7 @@ Especifica los meses del año en los que se ejecuta la tarea para una programaci
  />
 ```
 
-El elemento **months** se define mediante el tipo complejo [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) .
+El **elemento Months** se define mediante el tipo complejo [**monthlyDayOfWeekScheduleType.**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,7 +38,7 @@ El elemento **months** se define mediante el tipo complejo [**monthlyDayOfWeekSc
 
 | Elemento                                                                                                                            | Derivado de                                                                                         | Descripción                                                                          |
 |------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [**ScheduleByMonthDayOfWeek (calendarTriggerType)**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) | [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) | Especifica un desencadenador que inicia un trabajo para una programación mensual de día de la semana.<br/> |
+| [**ScheduleByMonthDayOfWeek (calendarTriggerType)**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) | [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) | Especifica un desencadenador que inicia un trabajo para una programación mensual del día de la semana.<br/> |
 
 
 
@@ -63,17 +63,17 @@ El elemento **months** se define mediante el tipo complejo [**monthlyDayOfWeekSc
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripting, los meses de un año para una programación mensual de día de la semana se especifican mediante la propiedad [**MonthlyDOWTrigger. MonthsOfYear**](monthlydowtrigger-monthsofyear.md) .
+Para el desarrollo de scripting, los meses de un año para una programación mensual del día de la semana se especifican mediante la [**propiedad MonthlyDOWTrigger.MonthsOfYear.**](monthlydowtrigger-monthsofyear.md)
 
-En el desarrollo de C++, los meses de un año para una programación mensual de día de la semana se especifican mediante la propiedad [**IMonthlyDOWTrigger:: MonthsOfYear**](/windows/desktop/api/taskschd/nf-taskschd-imonthlydowtrigger-get_monthsofyear) .
+Para el desarrollo de C++, los meses de un año para una programación mensual del día de la semana se especifican mediante la propiedad [**IMonthlyDOWTrigger::MonthsOfYear.**](/windows/desktop/api/taskschd/nf-taskschd-imonthlydowtrigger-get_monthsofyear)
 
-Los elementos secundarios anteriores se definen mediante el tipo complejo de [**monthsType**](taskschedulerschema-monthstype-complextype.md) .
+Los elementos secundarios anteriores se definen mediante el [**tipo complejo monthsType.**](taskschedulerschema-monthstype-complextype.md)
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define un calendario mensual de día de la semana que inicia la tarea el lunes de la primera semana para cada mes del año.
+El código XML siguiente define un calendario mensual del día de la semana que inicia la tarea el lunes de la primera semana para cada mes del año.
 
 
 ```XML
@@ -109,8 +109,8 @@ El siguiente código XML define un calendario mensual de día de la semana que i
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -118,7 +118,7 @@ El siguiente código XML define un calendario mensual de día de la semana que i
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

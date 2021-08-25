@@ -1,7 +1,7 @@
 ---
 description: Devuelve TRUE si el subproceso actual es el propietario de la sección crítica especificada.
 ms.assetid: 96158f08-07a0-42a9-b173-0a05456a5f3a
-title: Función CritCheckIn (Wxutil. h)
+title: Función CritCheckIn (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ff31707dc409db1e72c36866150c5a0b24c53f9a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f4e9ff0078f6efe8dee9b060e61858c24aea0a64e7e35b9fb867125b8612ed3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908085"
 ---
-# <a name="critcheckin-function"></a>CritCheckIn función)
+# <a name="critcheckin-function"></a>Función CritCheckIn
 
-Devuelve **true** si el subproceso actual es el propietario de la sección crítica especificada.
+Devuelve **TRUE** si el subproceso actual es el propietario de la sección crítica especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ BOOL WINAPI CritCheckIn(
 *pcCrit* 
 </dt> <dd>
 
-Puntero a una sección crítica de [**CCritSec**](ccritsec.md) .
+Puntero a una [**sección crítica de CCritSec.**](ccritsec.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-En las compilaciones de depuración, devuelve **true** si el subproceso actual es el propietario de esta sección crítica o **false** en caso contrario. En las compilaciones comerciales, siempre devuelve **true**.
+En las compilaciones de depuración, devuelve **TRUE** si el subproceso actual es el propietario de esta sección crítica o **FALSE** en caso contrario. En las compilaciones comerciales, siempre devuelve **TRUE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función es especialmente útil dentro de la macro [**Assert**](assert.md) para comprobar si un subproceso es propietario de un bloqueo determinado.
+Esta función es especialmente útil dentro de la macro [**ASSERT**](assert.md) para probar si un subproceso posee un bloqueo determinado.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -84,8 +84,8 @@ En el ejemplo de código siguiente se muestra cómo usar esta función:
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

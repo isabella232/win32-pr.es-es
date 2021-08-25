@@ -1,32 +1,32 @@
 ---
-title: Referencia de programación de Windows Touch
-description: En las secciones siguientes se describe la funcionalidad de la API Touch de Windows.
+title: Windows Referencia de programación táctil
+description: En las secciones siguientes se describe la funcionalidad de Windows Touch API.
 ms.assetid: 86b05967-ab5c-430a-9f09-1960dbd79f72
 keywords:
 - Windows Touch, referencia de programación
-- Windows Touch, funcionalidad de API
+- Windows Funcionalidad táctil, API
 - referencia de programación para Windows Touch
 - referencia de Windows Touch
 ms.topic: article
 ms.date: 02/18/2020
-ms.openlocfilehash: 294660df6279a6475bb325e27a656e745542c0ba
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 73ea9d1f43dd10270203bbdc723c61197aea72fbb1621c595fdc6083ca92c102
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104487275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840545"
 ---
-# <a name="windows-touch-programming-reference"></a>Referencia de programación de Windows Touch
+# <a name="windows-touch-programming-reference"></a>Windows Referencia de programación táctil
 
-En las secciones siguientes se describe la funcionalidad de la API Touch de Windows.
+En las secciones siguientes se describe la funcionalidad de Windows Touch API.
 
 | Sección        | Descripción    |
 |--------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [Comentarios de los límites](boundary-feedback.md)                         | Contiene referencias para habilitar los comentarios cuando un usuario alcanza el borde de una región de la panorámica. |
+| [Comentarios sobre límites](boundary-feedback.md)                         | Contiene referencias para habilitar comentarios cuando un usuario llega al borde de una región que se puede desplazar. |
 | [Inercia y manipulación](inertia-and-manipulation-reference.md) | Contiene referencias para la inercia y la manipulación.                  |
-| [Gestos táctiles de Windows](multi-touch-gestures.md)                 | Contiene referencias para mensajes de gestos táctiles de Windows.            |
-| [Entrada táctil de Windows](multi-touch-input.md)                       | Contiene referencias para los mensajes de entrada táctiles de Windows.              |
+| [Windows Gestos táctiles](multi-touch-gestures.md)                 | Contiene referencias para los Windows de gesto táctil.            |
+| [Windows Entrada táctil](multi-touch-input.md)                       | Contiene referencias para los Windows entrada táctil.              |
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Windows Touch](windows-touch-portal.md)
+[Windows Tocar](windows-touch-portal.md)

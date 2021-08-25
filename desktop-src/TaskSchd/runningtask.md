@@ -1,10 +1,10 @@
 ---
 title: Objeto RunningTask
-description: Objeto de scripting que proporciona los métodos para obtener información y controlar una tarea en ejecución.
+description: Objeto de scripting que proporciona los métodos para obtener información de una tarea en ejecución y controlarla.
 ms.assetid: 335e69d8-affa-4845-a067-641184e0f7df
 keywords:
 - Objeto RunningTask Programador de tareas
-- Programador de tareas de objeto RunningTask, descrito
+- Objeto RunningTask Programador de tareas , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,27 +15,27 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 261be07f71d0d35f5d3140de1b39574b635a531e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b0dea9d0810c12af383092e4cad7f77be601927f2a440efbbbb424f822159a31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119866875"
 ---
 # <a name="runningtask-object"></a>Objeto RunningTask
 
-Objeto de scripting que proporciona los métodos para obtener información y controlar una tarea en ejecución.
+Objeto de scripting que proporciona los métodos para obtener información de una tarea en ejecución y controlarla.
 
 ## <a name="members"></a>Miembros
 
-El objeto **RunningTask** tiene estos tipos de miembros:
+El **objeto RunningTask** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-El objeto **RunningTask** tiene estos métodos.
+El **objeto RunningTask** tiene estos métodos.
 
 
 
@@ -50,18 +50,18 @@ El objeto **RunningTask** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **RunningTask** tiene estas propiedades.
+El **objeto RunningTask** tiene estas propiedades.
 
 
 
 | Propiedad                                                      | Tipo de acceso          | Descripción                                                                         |
 |:--------------------------------------------------------------|:---------------------|:------------------------------------------------------------------------------------|
 | [**CurrentAction**](runningtask-currentaction.md)<br/> | Solo lectura<br/> | Obtiene el nombre de la acción actual que está realizando la tarea en ejecución.<br/> |
-| [**EnginePID**](runningtask-enginepid.md)<br/>         | Solo lectura<br/> | Obtiene el identificador de proceso del motor (proceso) que está ejecutando la tarea.<br/>  |
-| [**Valor FileStream**](runningtask-instanceguid.md)<br/>   | Solo lectura<br/> | Obtiene el identificador GUID para esta instancia de la tarea.<br/>                  |
-| [**Name**](runningtask-name.md)<br/>                   | Solo lectura<br/> | Obtiene el nombre de la tarea.<br/>                                               |
-| [**Ruta**](runningtask-path.md)<br/>                   | Solo lectura<br/> | Obtiene la ruta de acceso donde se almacena la tarea.<br/>                               |
-| [**State**](runningtask-state.md)<br/>                 | Solo lectura<br/> | Obtiene el estado de la tarea en ejecución. <br/>                                     |
+| [**EnginePID**](runningtask-enginepid.md)<br/>         | Solo lectura<br/> | Obtiene el identificador de proceso del motor (proceso) que ejecuta la tarea.<br/>  |
+| [**InstanceGuid**](runningtask-instanceguid.md)<br/>   | Solo lectura<br/> | Obtiene el identificador GUID de esta instancia de la tarea.<br/>                  |
+| [**Nombre**](runningtask-name.md)<br/>                   | Solo lectura<br/> | Obtiene el nombre de la tarea.<br/>                                               |
+| [**Ruta de acceso**](runningtask-path.md)<br/>                   | Solo lectura<br/> | Obtiene la ruta de acceso a donde se almacena la tarea.<br/>                               |
+| [**Estado**](runningtask-state.md)<br/>                 | Solo lectura<br/> | Obtiene el estado de la tarea en ejecución. <br/>                                     |
 
 
 
@@ -73,9 +73,9 @@ El objeto **RunningTask** tiene estas propiedades.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -84,7 +84,7 @@ El objeto **RunningTask** tiene estas propiedades.
 
 <dl> <dt>
 
-[Objetos Programador de tareas](task-scheduler-objects.md)
+[Programador de tareas objetos](task-scheduler-objects.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)
@@ -93,7 +93,7 @@ El objeto **RunningTask** tiene estas propiedades.
 [**RunningTaskCollection**](runningtaskcollection.md)
 </dt> <dt>
 
-[**RegisteredTask. Run**](registeredtask-run.md)
+[**RegisteredTask.Run**](registeredtask-run.md)
 </dt> <dt>
 
 [**RegisteredTask.RunEx**](registeredtask-runex.md)
