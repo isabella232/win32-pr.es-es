@@ -1,21 +1,21 @@
 ---
-description: Notifica a las aplicaciones que el equipo está a punto de entrar en estado suspendido.
+description: Notifica a las aplicaciones que el equipo está a punto de entrar en un estado suspendido.
 ms.assetid: 61b177a0-4cff-4740-bed8-a46c06c43be8
-title: Evento PBT_APMSUSPEND (WinUser. h)
+title: PBT_APMSUSPEND evento (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fc6982e00565329c85e06765879b9b72b07fe6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ebb3634765e6c0f863beb0c7a1c16af29cadae18ef14796e9ef01a0c8edec36a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961675"
 ---
-# <a name="pbt_apmsuspend-event"></a>\_Evento PBT APMSUSPEND
+# <a name="pbt_apmsuspend-event"></a>Evento \_ APMSUSPEND de PBT
 
-Notifica a las aplicaciones que el equipo está a punto de entrar en estado suspendido. Este evento se emite normalmente cuando todas las aplicaciones y controladores instalables devuelven **true** a un evento [PBT \_ APMQUERYSUSPEND](pbt-apmquerysuspend.md) anterior.
+Notifica a las aplicaciones que el equipo está a punto de entrar en un estado suspendido. Normalmente, este evento se difunde cuando todas las aplicaciones y los controladores instalables han devuelto **TRUE** a un evento [ \_ APMQUERYSUSPEND](pbt-apmquerysuspend.md) de PBT anterior.
 
-Una ventana recibe este evento a través del mensaje de [**\_ POWERBROADCAST de WM**](wm-powerbroadcast.md) . Los parámetros *wParam* e *lParam* se establecen como se describe a continuación.
+Una ventana recibe este evento a través [**del mensaje \_ WM POWERBROADCAST.**](wm-powerbroadcast.md) Los *parámetros wParam* *y lParam* se establecen como se describe a continuación.
 
 
 ```C++
@@ -33,16 +33,16 @@ WindowProc( HWND hwnd,      // handle to window
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador de la ventana.
+Identificador a ventana.
 
 </dd> <dt>*uMsg*</dt> <dd> 
 
 | Value                                                                                                                                                                                                                                                                   | Significado                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> <dt>**[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)**</dt> <dt>536 (0x218)</dt> </dl> | Identificador de mensaje.<br/> |
+| <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> <dt>**[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)**</dt> <dt>536 (0x218)</dt> </dl> | Identificador del mensaje.<br/> |
 
 
 
@@ -52,7 +52,7 @@ Identificador de la ventana.
 
 | Value                                                                                                                                                                                                                         | Significado                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| <span id="PBT_APMSUSPEND"></span><span id="pbt_apmsuspend"></span><dl> <dt>**PBT \_ APMSUSPEND**</dt> <dt>4 (0x4)</dt> </dl> | Identificador del evento.<br/> |
+| <span id="PBT_APMSUSPEND"></span><span id="pbt_apmsuspend"></span><dl> <dt>**PBT \_ APMSUSPEND**</dt> <dt>4 (0x4)</dt> </dl> | Identificador de evento.<br/> |
 
 
 
@@ -63,7 +63,7 @@ Identificador de la ventana.
 *lParam* 
 </dt> <dd>
 
-Sector debe ser cero.
+Reservado; debe ser cero.
 
 </dd> </dl>
 
@@ -71,11 +71,11 @@ Sector debe ser cero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una aplicación debe procesar este evento completando todas las tareas necesarias para guardar los datos.
 
-El sistema permite aproximadamente dos segundos para que una aplicación administre esta notificación. Si una aplicación sigue realizando operaciones después de que haya expirado su asignación de tiempo, el sistema puede interrumpir la aplicación.
+El sistema permite aproximadamente dos segundos para que una aplicación controle esta notificación. Si una aplicación sigue realizando operaciones una vez expirada su asignación, el sistema puede interrumpirla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,9 +83,9 @@ El sistema permite aproximadamente dos segundos para que una aplicación adminis
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -108,7 +108,7 @@ El sistema permite aproximadamente dos segundos para que una aplicación adminis
 [**SetSystemPowerState**](/windows/desktop/api/WinBase/nf-winbase-setsystempowerstate)
 </dt> <dt>
 
-[**POWERBROADCAST de WM \_**](wm-powerbroadcast.md)
+[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)
 </dt> </dl>
 
  

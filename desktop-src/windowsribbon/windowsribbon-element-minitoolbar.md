@@ -3,7 +3,7 @@ title: MiniToolbar, elemento
 description: Representa una barra de herramientas contextual.
 ms.assetid: bb50890d-554a-4add-a583-d4fd48b823bf
 keywords:
-- Cinta de opciones de Windows del elemento MiniToolbar
+- Cinta de opciones del Windows MiniToolbar
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ceea8ba1a220674f177e740411bf98a13d7bfc2e
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: e47fee9fbf2b6b0bc95153fd512f6484129dc7f3edebd56e1d97664ecc2bbef0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881745"
 ---
 # <a name="minitoolbar-element"></a>MiniToolbar, elemento
 
@@ -71,7 +71,7 @@ Puede producirse una o varias veces para [**cada ContextPopup.MiniToolbars**](wi
 
 A diferencia [**del elemento ContextMenu,**](windowsribbon-element-contextmenu.md) **minitoolbar** permanece visible cuando se hace clic en un elemento de la barra de herramientas.
 
-Si se muestra sin [**contextMenu,**](windowsribbon-element-contextmenu.md) **la barra miniherramienta** se atenua cuando se desplaza el puntero del mouse.
+Si se muestra sin [**un ContextMenu**](windowsribbon-element-contextmenu.md), **la barra MiniToolbar** se atenua cuando se desplaza el puntero del mouse.
 
 > [!Note]  
 > Debido a este comportamiento de desvanezco, [**contextMenu**](windowsribbon-element-contextmenu.md) debe mostrarse cerca del puntero del mouse.

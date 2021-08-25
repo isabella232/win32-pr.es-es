@@ -3,9 +3,9 @@ title: Propiedad mediaCollection de IWMPLibrary
 description: La propiedad mediaCollection obtiene una interfaz IWMPMediaCollection para la biblioteca actual.
 ms.assetid: 6ac92b0d-d634-4e99-8946-b10363d4be47
 keywords:
-- propiedades de mediaCollection Media Player de Windows
-- propiedad mediaCollection de Windows Media Player, interfaz IWMPLibrary
-- Interfaz IWMPLibrary Windows Media Player, propiedad mediaCollection
+- Propiedad mediaCollection Reproductor de Windows Media
+- Propiedad mediaCollection Reproductor de Windows Media , interfaz IWMPLibrary
+- Interfaz IWMPLibrary Reproductor de Windows Media , propiedad mediaCollection
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69f3f3e10f102441f02f5fad33dd295712b431b7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b1e10cd41dbc8ac558451ca2b6c8366fa566044db34cfbb44962cbe41c3e26a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899955"
 ---
-# <a name="iwmplibrarymediacollection-property"></a>IWMPLibrary:: mediaCollection (propiedad)
+# <a name="iwmplibrarymediacollection-property"></a>Propiedad IWMPLibrary::mediaCollection
 
-La propiedad **mediaCollection** obtiene una interfaz **IWMPMediaCollection** para la biblioteca actual.
+La **propiedad mediaCollection** obtiene una **interfaz IWMPMediaCollection** para la biblioteca actual.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,15 +46,15 @@ Public ReadOnly Property mediaCollection As IWMPMediaCollection
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Una interfaz WMPLib. IWMPMediaCollection para la biblioteca actual.
+Interfaz WMPLib.IWMPMediaCollection para la biblioteca actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

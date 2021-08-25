@@ -4,14 +4,14 @@ ms.assetid: D0BE2A9A-5832-4C0E-BFB6-96EB467C3D9D
 title: Métodos CItemIDFactory::GetPropertyFromIDList (Shidfact.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 22aaec6d0616337a887f2876b51aaa744b205ba7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 736bd8f9634f7429fdbb74a827a2ca257dc4dc5ce75bb58298f808190ba5e6c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884765"
 ---
-# <a name="citemidfactorygetpropertyfromidlist-methods"></a>CItemIDFactory:: GetPropertyFromIDList (métodos)
+# <a name="citemidfactorygetpropertyfromidlist-methods"></a>Métodos CItemIDFactory::GetPropertyFromIDList
 
 Devuelve una propiedad de [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) dentro de IDList.
 
@@ -21,10 +21,10 @@ Devuelve una propiedad de [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 | Método                                                                        | Descripción                                                                                                                                   |
 |:------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetPropertyFromIDList**](/windows/win32/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist(pcuidlist_relative_pcwstr_propvariant))     | Obtiene una propiedad del [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) dentro de IDList como una variante, utilizando la clave.<br/>            |
-| [**GetPropertyFromIDList**](/windows/win32/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist(pcuidlist_relative_pcwstr_propvariant))    | Obtiene una propiedad del [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) dentro de IDList como una variante, utilizando la propiedad con nombre.<br/> |
-| [**GetPropertyFromIDList**]/windows/win32/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist (pcuidlist_relative_pcwstr_propvariant))  | Obtiene una propiedad del [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) dentro de IDList, utilizando la clave.<br/>                         |
-| [**GetPropertyFromIDList**](/windows/win32/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist(pcuidlist_relative_pcwstr_propvariant)) | Obtiene una propiedad del [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) dentro de IDList, utilizando la propiedad con nombre.<br/>              |
+| [**GetPropertyFromIDList**](/windows/win32/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist(pcuidlist_relative_pcwstr_propvariant))     | Obtiene una propiedad de [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) dentro de IDList como una variante, utilizando la clave .<br/>            |
+| [**GetPropertyFromIDList**](/windows/win32/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist(pcuidlist_relative_pcwstr_propvariant))    | Obtiene una propiedad de [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) dentro de IDList como variante, utilizando la propiedad con nombre.<br/> |
+| [**GetPropertyFromIDList**]/windows/win32/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist(pcuidlist_relative_pcwstr_propvariant))  | Obtiene una propiedad de [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) dentro de IDList, mediante la clave .<br/>                         |
+| [**GetPropertyFromIDList**](/windows/win32/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist(pcuidlist_relative_pcwstr_propvariant)) | Obtiene una propiedad de [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) dentro de IDList, utilizando la propiedad con nombre.<br/>              |
 
 
 
@@ -34,9 +34,9 @@ Devuelve una propiedad de [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Shidfact. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Shidfact.h</dt> </dl> |
 
 
 

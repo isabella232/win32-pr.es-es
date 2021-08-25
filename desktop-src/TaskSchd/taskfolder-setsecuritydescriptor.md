@@ -1,11 +1,11 @@
 ---
-title: Propiedad TaskFolder. SetSecurityDescriptor
+title: Propiedad TaskFolder.SetSecurityDescriptor
 description: Para el scripting, establece el descriptor de seguridad de la carpeta.
 ms.assetid: 50649100-08f6-4c2e-b084-7cfcf9f78e09
 keywords:
-- Programador de tareas de la propiedad SetSecurityDescriptor
-- Programador de tareas de la propiedad SetSecurityDescriptor, objeto TaskFolder
-- Programador de tareas de objeto TaskFolder, propiedad SetSecurityDescriptor
+- Propiedad SetSecurityDescriptor Programador de tareas
+- Propiedad SetSecurityDescriptor Programador de tareas , objeto TaskFolder
+- Objeto TaskFolder Programador de tareas , propiedad SetSecurityDescriptor
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0854ee6485007e1465dd0a264c908d67443f248
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8416e14a5415de86f8ad3f4a1181ce231ecfbdc875e36e9e3fd14014de8c4935
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033795"
 ---
-# <a name="taskfoldersetsecuritydescriptor-property"></a>Propiedad TaskFolder. SetSecurityDescriptor
+# <a name="taskfoldersetsecuritydescriptor-property"></a>Propiedad TaskFolder.SetSecurityDescriptor
 
 Para el scripting, establece el descriptor de seguridad de la carpeta.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -41,9 +41,9 @@ TaskFolder.SetSecurityDescriptor( _
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede especificar la lista de control de acceso (ACL) en el descriptor de seguridad para una carpeta de tareas con el fin de permitir o denegar el acceso de determinados usuarios y grupos a una carpeta de tareas.
+Puede especificar la lista de control de acceso (ACL) en el descriptor de seguridad de una carpeta de tareas para permitir o denegar el acceso de determinados usuarios y grupos a una carpeta de tareas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ Puede especificar la lista de control de acceso (ACL) en el descriptor de seguri
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -65,7 +65,7 @@ Puede especificar la lista de control de acceso (ACL) en el descriptor de seguri
 [**RegisteredTask.SetSecurityDescriptor**](registeredtask-setsecuritydescriptor.md)
 </dt> <dt>
 
-[**TaskFolder. GetSecurityDescriptor**](taskfolder-getsecuritydescriptor.md)
+[**TaskFolder.GetSecurityDescriptor**](taskfolder-getsecuritydescriptor.md)
 </dt> </dl>
 
  

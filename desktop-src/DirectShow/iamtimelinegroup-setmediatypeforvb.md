@@ -1,7 +1,7 @@
 ---
-description: El método SetMediaTypeForVB especifica el tipo de medio de grupo para los clientes de automatización.
+description: El método SetMediaTypeForVB especifica el tipo de medio de grupo para los clientes de Automation.
 ms.assetid: 86f52088-a0dd-40be-98a0-8adc09b264dd
-title: 'IAMTimelineGroup:: SetMediaTypeForVB (método) (QEDIT. h)'
+title: Método IAMTimelineGroup::SetMediaTypeForVB (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 1371b1d6c906666ca30e5df2d26dbe20eddf1745
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea47e4edcdfc58e38e61a9f92eb5afac0092ab0cb445f6ff73471e1b65b1480b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905045"
 ---
-# <a name="iamtimelinegroupsetmediatypeforvb-method"></a>IAMTimelineGroup:: SetMediaTypeForVB (método)
+# <a name="iamtimelinegroupsetmediatypeforvb-method"></a>Método IAMTimelineGroup::SetMediaTypeForVB
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `SetMediaTypeForVB` método especifica el tipo de medio de grupo para los clientes de automatización.
+El `SetMediaTypeForVB` método especifica el tipo de medio de grupo para los clientes de Automation.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,28 +45,28 @@ HRESULT SetMediaTypeForVB(
 
 <dl> <dt>
 
-*Val* \[ de\]
+*Val* \[ En\]
 </dt> <dd>
 
-Valor que especifica el tipo de medio. Establezca el valor en 0 para vídeo, o en 1 para audio.
+Valor que especifica el tipo de medio. Establezca el valor en 0 para vídeo o 1 para audio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método está destinado a los clientes de automatización. En el caso de las aplicaciones de C++, utilice el método [**IAMTimelineGroup:: SetMediaType**](iamtimelinegroup-setmediatype.md) .
+Este método está pensado para clientes de Automation. Para las aplicaciones de C++, use el [**método IAMTimelineGroup::SetMediaType.**](iamtimelinegroup-setmediatype.md)
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Este método está destinado a los clientes de automatización. En el caso de la
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,10 +85,10 @@ Este método está destinado a los clientes de automatización. En el caso de la
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineGroup**](iamtimelinegroup.md)
+[**IamTimelineGroup (interfaz)**](iamtimelinegroup.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

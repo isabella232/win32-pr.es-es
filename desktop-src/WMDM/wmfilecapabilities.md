@@ -3,7 +3,7 @@ title: Estructura WMFILECAPABILITIES
 description: La estructura WMFILECAPABILITIES describe el tipo MIME.
 ms.assetid: 30307343-f55e-4695-9ae8-b938617d749d
 keywords:
-- Estructura WMFILECAPABILITIES Administrador de dispositivos Windows Media
+- Estructura WMFILECAPABILITIES windows Media Administrador de dispositivos
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc7657ddd15a4219a0d5f56dbadeffba2a9547bf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4f4852eeb7142b92c2c1a4c2073dfc70e5f6a6d74c727a7ab9e63c285796846
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903775"
 ---
 # <a name="wmfilecapabilities-structure"></a>Estructura WMFILECAPABILITIES
 
-La estructura **WMFILECAPABILITIES** describe el tipo MIME.
+La **estructura WMFILECAPABILITIES** describe el tipo MIME.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Tipo MIME.
 **dwReserved**
 </dt> <dd>
 
-**DWORD** reservado para uso futuro. Se establece en cero (0).
+**DWORD reservado** para uso futuro. Establezca en cero (0).
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ Tipo MIME.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 

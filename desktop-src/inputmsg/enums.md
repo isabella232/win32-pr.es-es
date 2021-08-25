@@ -1,19 +1,19 @@
 ---
-title: Enumeraciones de mensajes y notificaciones de entrada de puntero
-description: En los temas de esta sección se proporcionan las especificaciones de referencia para los mensajes de entrada de puntero y las enumeraciones de notificaciones.
+title: Enumeraciones de notificaciones y mensajes de entrada de puntero
+description: Los temas de esta sección proporcionan las especificaciones de referencia para las enumeraciones Mensajes de entrada de puntero y Notificaciones.
 ms.assetid: 22241CD0-DAE1-4AC2-AB36-23D114803133
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: a857d5f2c5df826e4ba22a7e29448edff581b404
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: 5eb9c9ca21a90d28951d4b574b9b91b5bcf04cc70a79c460209db9eabc7af36f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106188026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964295"
 ---
-# <a name="pointer-input-messages-and-notifications-enumerations"></a>Enumeraciones de mensajes y notificaciones de entrada de puntero
+# <a name="pointer-input-messages-and-notifications-enumerations"></a>Enumeraciones de notificaciones y mensajes de entrada de puntero
 
-En los temas de esta sección se proporcionan las especificaciones de referencia para [los mensajes de entrada de puntero y](messages-and-notifications-portal.md) las enumeraciones de notificaciones.
+Los temas de esta sección proporcionan las especificaciones de referencia para las enumeraciones [Mensajes de entrada](messages-and-notifications-portal.md) de puntero y Notificaciones.
 
 ## <a name="in-this-section"></a>En esta sección
 

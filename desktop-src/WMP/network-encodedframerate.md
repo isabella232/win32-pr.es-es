@@ -1,9 +1,9 @@
 ---
-title: Network. encodedFrameRate
+title: Network.encodedFrameRate
 description: La propiedad encodedFrameRate recupera la velocidad de fotogramas de vídeo especificada por el autor del contenido en fotogramas por segundo.
 ms.assetid: 7dad5c90-f750-48d7-9dda-3fc07394edcc
 keywords:
-- Windows Media Player de red. encodedFrameRate
+- Network.encodedFrameRate Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0008eb5d648dc7d3f51b40329ca3d830c3590c49
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f1f64b6f57b4cfd0e7bc94715f80c1066ebe23a601e64c173926cf2cd9e36393
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901705"
 ---
-# <a name="networkencodedframerate"></a>Network. encodedFrameRate
+# <a name="networkencodedframerate"></a>Network.encodedFrameRate
 
-La propiedad **encodedFrameRate** recupera la velocidad de fotogramas de vídeo especificada por el autor del contenido en fotogramas por segundo.
+La **propiedad encodedFrameRate** recupera la velocidad de fotogramas de vídeo especificada por el autor del contenido en fotogramas por segundo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *red*. **encodedFrameRate**
+*player*. *red*. **encodedFrameRate**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **encodedFrameRate** para mostrar la velocidad de fotogramas especificada al codificar el archivo. La información se muestra en un DIV HTML creado con ID = "FR". El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **encodedFrameRate** para mostrar la velocidad de fotogramas especificada al codificar el archivo. La información se muestra en un DIV HTML creado con id. = "FR". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -62,7 +62,7 @@ En el siguiente ejemplo de JScript se usa *Network*. **encodedFrameRate** para m
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -74,7 +74,7 @@ En el siguiente ejemplo de JScript se usa *Network*. **encodedFrameRate** para m
 [**Objeto de red**](network-object.md)
 </dt> <dt>
 
-[**Red. velocidad de fotogramas**](network-framerate.md)
+[**Network.frameRate**](network-framerate.md)
 </dt> </dl>
 
  

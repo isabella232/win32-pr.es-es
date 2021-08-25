@@ -1,6 +1,6 @@
 ---
 title: Elemento FileLine (DebugDataType)
-description: Nombre del archivo de código fuente y la línea del archivo de código fuente que registró el mensaje de seguimiento.
+description: Nombre del archivo de origen y la línea dentro del archivo de origen que registró el mensaje de seguimiento.
 ms.assetid: 398fc254-d48f-49eb-9554-f110a7665628
 keywords:
 - Elemento FileLine EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 195c964e58e40a7bb4b77e8da142d3224159427b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6cceb2d6c7730aed49f91aab464e692ff3fa03873bcce8b3da1f60f8fdb58add
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904795"
 ---
 # <a name="fileline-debugdatatype-element"></a>Elemento FileLine (DebugDataType)
 
-Nombre del archivo de código fuente y la línea del archivo de código fuente que registró el mensaje de seguimiento.
+Nombre del archivo de origen y la línea dentro del archivo de origen que registró el mensaje de seguimiento.
 
 ``` syntax
 <xs:element name="FileLine"
@@ -30,7 +30,7 @@ Nombre del archivo de código fuente y la línea del archivo de código fuente q
  />
 ```
 
-El elemento **FileLine** se define mediante el tipo complejo de [**DebugDataType**](eventschema-debugdatatype-complextype.md) .
+El tipo complejo [**DebugDataType**](eventschema-debugdatatype-complextype.md) define el elemento **FileLine.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **FileLine** se define mediante el tipo complejo de [**DebugDataType
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

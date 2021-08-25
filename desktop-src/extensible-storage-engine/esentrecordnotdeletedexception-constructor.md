@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentRecordNotDeletedException'
-title: Constructor de EsentRecordNotDeletedException
+description: 'Más información sobre: Constructor EsentRecordNotDeletedException'
+title: Constructor EsentRecordNotDeletedException
 TOCTitle: 'EsentRecordNotDeletedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRecordNotDeletedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrecordnotdeletedexception.esentrecordnotdeletedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 30e231f5bab278cef87d7d20ffee9e29fdd68cea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0616c726a5eb39c01dd8a1508248328203ae605774741018616e1276daa5f9cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851635"
 ---
-# <a name="esentrecordnotdeletedexception-constructor"></a>Constructor de EsentRecordNotDeletedException
+# <a name="esentrecordnotdeletedexception-constructor"></a>Constructor EsentRecordNotDeletedException
 
 Inicializa una nueva instancia de la clase EsentRecordNotDeletedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentRecordNotDeletedException()
 public EsentRecordNotDeletedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentRecordNotDeletedException()
 
 [Miembros de EsentRecordNotDeletedException](./esentrecordnotdeletedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

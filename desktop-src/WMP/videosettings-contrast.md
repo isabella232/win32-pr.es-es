@@ -1,9 +1,9 @@
 ---
-title: Videoconfiguracións. contraste
-description: El atributo Contrast especifica o recupera la configuración de contraste del vídeo.
+title: VIDEOSETTINGS.contrast
+description: El atributo de contraste especifica o recupera la configuración de contraste del vídeo.
 ms.assetid: 8a7b90b3-5551-4910-9028-f354d0e836f7
 keywords:
-- Videoconfiguracións. contraste Windows Media Player
+- VideoSETTINGS.contrast Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2b004964729d17b1fd8773257c835f762b38aa1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 83d1b1019266035dbb56890f2145b28d1cb570f88b0e999b56f7b865431faf08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900725"
 ---
-# <a name="videosettingscontrast"></a>Videoconfiguracións. contraste
+# <a name="videosettingscontrast"></a>VIDEOSETTINGS.contrast
 
-El atributo **Contrast** especifica o recupera la configuración de contraste del vídeo.
+El **atributo** de contraste especifica o recupera la configuración de contraste del vídeo.
 
 ``` syntax
         elementID.contrast
@@ -29,15 +29,15 @@ El atributo **Contrast** especifica o recupera la configuración de contraste de
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura/escritura (**Long**) con un valor comprendido entre-127 y + 127 y un valor predeterminado de 0.
+Este atributo es un número de lectura y **escritura** (**long**) con un valor que va de -127 a +127 y un valor predeterminado de 0.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión para Windows XP o posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Este atributo es un **número** de lectura/escritura (**Long**) con un valor com
 
 <dl> <dt>
 
-[**Elemento videosettings**](videosettings-element.md)
+[**Elemento VIDEOSETTINGS**](videosettings-element.md)
 </dt> </dl>
 
  

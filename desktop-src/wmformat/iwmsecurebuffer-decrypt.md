@@ -1,11 +1,11 @@
 ---
-title: Método de descifrado IWMSecureBuffer (wmdrmsdk. h)
-description: El método de descifrado descifra un puntero de datos que se cifró llamando al método Encrypt.
+title: Método Decrypt de IWMSecureBuffer (Wmdrmsdk.h)
+description: El método Decrypt descifra un puntero de datos cifrado mediante una llamada al método Encrypt.
 ms.assetid: 15cedb56-686a-4a3c-81a5-b1797cfe0838
 keywords:
-- Método de descifrado formato de Windows Media
-- Método de descifrado formato de Windows Media, interfaz IWMSecureBuffer
-- Interfaz IWMSecureBuffer formato de Windows Media, descifrar método
+- Descifrar formato multimedia de windows del método
+- Descifrar el método windows Media Format , interfaz IWMSecureBuffer
+- IWMSecureBuffer interfaz windows Media Format , Decrypt (método)
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6f48ae389090840e085c90b0bc5444e7cd6784e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb9867cb6476ab0a2838903c906f662032e14dfb0d4fa0547b045672e03b6ce8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930105"
 ---
-# <a name="iwmsecurebufferdecrypt-method"></a>IWMSecureBuffer::D método ECRYPT
+# <a name="iwmsecurebufferdecrypt-method"></a>IWMSecureBuffer::D ecrypt (método)
 
-El método de **descifrado** descifra un puntero de datos que se cifró llamando al método [**Encrypt**](iwmsecurebuffer-encrypt.md) .
+El **método Decrypt** descifra un puntero de datos cifrado mediante una llamada al método [**Encrypt.**](iwmsecurebuffer-encrypt.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,22 +43,22 @@ HRESULT Decrypt(
 
 <dl> <dt>
 
-*pSecureChannel* \[ de\]
+*pSecureChannel* \[ En\]
 </dt> <dd>
 
-Puntero a una interfaz de canal seguro que contiene el puntero de datos cifrados.
+Puntero a una interfaz de canal seguro que contiene el puntero de datos cifrado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -74,8 +74,8 @@ Ninguno.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -83,10 +83,10 @@ Ninguno.
 
 <dl> <dt>
 
-[**Cifrado**](iwmsecurebuffer-encrypt.md)
+[**Encrypt**](iwmsecurebuffer-encrypt.md)
 </dt> <dt>
 
-[**Interfaz IWMSecureBuffer**](iwmsecurebuffer.md)
+[**IWMSecureBuffer (interfaz)**](iwmsecurebuffer.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: La estructura FORM_INFO_1 contiene información sobre un formulario de impresión. La información incluye el origen de los formularios de impresión, su nombre, sus dimensiones y las dimensiones de su área imprimible.
+description: La FORM_INFO_1 estructura contiene información sobre un formulario de impresión. La información incluye el origen de los formularios de impresión, su nombre, sus dimensiones y las dimensiones de su área imprimible.
 ms.assetid: 1c42ea6c-82cf-463c-bc67-44a8d8c4a1e7
-title: Estructura de FORM_INFO_1 (winspool. h)
+title: FORM_INFO_1 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 516f646d664a034f81a76eb2262b3ea8c950a87e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6f620d8bd2ed4ef39fc868c91068e10a7ff43f57d98510ecfbae1dbe2ae7c54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949265"
 ---
-# <a name="form_info_1-structure"></a>Estructura de FORM_INFO_1
+# <a name="form_info_1-structure"></a>FORM_INFO_1 estructura
 
-La estructura **FORM_INFO_1** contiene información sobre un formulario de impresión. La información incluye el origen del formulario de impresión, su nombre, sus dimensiones y las dimensiones de su área imprimible.
+La **FORM_INFO_1** estructura contiene información sobre un formulario de impresión. La información incluye el origen del formulario de impresión, su nombre, sus dimensiones y las dimensiones de su área imprimible.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,9 +53,9 @@ Propiedades del formulario. Se definen los valores siguientes.
 
 | Value         | Significado                                                                                                                      |
 |---------------|------------------------------------------------------------------------------------------------------------------------------|
-| FORM_USER    | Si se establece esta marca de bits, el formulario lo ha definido el usuario. Los formularios con este marcador se definen en el registro.        |
-| FORM_BUILTIN | Si se establece esta marca de bits, el formulario forma parte del administrador de trabajos de impresión. Las definiciones de formulario con este marcador establecido no aparecen en el registro. |
-| FORM_PRINTER | Si se establece esta marca de bits, el formulario está asociado a una impresora determinada y su definición aparece en el registro.          |
+| Form_user    | Si se establece esta marca de bits, el usuario ha definido el formulario. Los formularios con este conjunto de marcas se definen en el Registro.        |
+| FORM_BUILTIN | Si se establece esta marca de bits, el formulario forma parte del colador. Las definiciones de formulario con este conjunto de marcas no aparecen en el Registro. |
+| FORM_PRINTER | Si se establece esta marca de bits, el formulario se asocia a una impresora determinada y su definición aparece en el Registro.          |
 
 
 
@@ -66,21 +66,21 @@ Propiedades del formulario. Se definen los valores siguientes.
 **pName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del formulario. El nombre del formulario no puede superar los 31 caracteres.
+Puntero a una cadena terminada en NULL que especifica el nombre del formulario. El nombre del formulario no puede superar los 31 caracteres.
 
 </dd> <dt>
 
 **Tamaño**
 </dt> <dd>
 
-Ancho y alto, en milésimas de milímetro, del formulario.
+Ancho y alto, en milésimas de milímetros, del formulario.
 
 </dd> <dt>
 
 **ImageableArea**
 </dt> <dd>
 
-Ancho y alto, en milésimas de milímetro, del formulario.
+Ancho y alto, en milésimas de milímetros, del formulario.
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Ancho y alto, en milésimas de milímetro, del formulario.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **_FORM_INFO_1W** (Unicode) y **_FORM_INFO_1A** (ANSI)<br/>                                 |
 
 
@@ -104,7 +104,7 @@ Ancho y alto, en milésimas de milímetro, del formulario.
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddForm**](addform.md)

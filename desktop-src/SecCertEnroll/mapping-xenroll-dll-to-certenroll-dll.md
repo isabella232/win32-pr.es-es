@@ -1,5 +1,5 @@
 ---
-description: La Xenroll.dll biblioteca se ha quitado del sistema operativo y se ha reemplazado por CertEnroll.dll.
+description: La Xenroll.dll se ha quitado del sistema operativo y se ha reemplazado por CertEnroll.dll.
 ms.assetid: ec28fbdc-9198-472a-8976-7b5db09069a6
 title: Asignación Xenroll.dll a CertEnroll.dll
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119993535"
 ---
 # <a name="mapping-xenrolldll-to-certenrolldll"></a>Asignación Xenroll.dll a CertEnroll.dll
 
-Antes de Windows Vista, el control de inscripción de certificados se implementó en Xenroll.dll. La Xenroll.dll biblioteca se ha quitado del sistema operativo y se ha reemplazado por CertEnroll.dll.
+Antes de Windows Vista, el control de inscripción de certificados se implementó en Xenroll.dll. La Xenroll.dll se ha quitado del sistema operativo y se ha reemplazado por CertEnroll.dll.
 
 Xenroll intentó implementar dos conjuntos paralelos de interfaces. [**ICEnroll,**](/windows/desktop/api/xenroll/nn-xenroll-icenroll) [**ICEnroll2,**](/windows/desktop/api/xenroll/nn-xenroll-icenroll2) [**ICEnroll3**](/windows/desktop/api/xenroll/nn-xenroll-icenroll3)e [**ICEnroll4**](/windows/desktop/api/xenroll/nn-xenroll-icenroll4) eran compatibles con Automation y compatibles con lenguajes de scripting. Las interfaces correspondientes,[**IEnroll,**](/windows/desktop/api/xenroll/nn-xenroll-ienroll) [**IEnroll2**](/windows/desktop/api/xenroll/nn-xenroll-ienroll2)e [**IEnroll4,**](/windows/desktop/api/xenroll/nn-xenroll-ienroll4)no se pudieron incluir en scripts, pero eran más prácticas para los programadores de C++. A medida que evolucionaban, los dos conjuntos de interfaces no permanecen sincronizados. En concreto, el conjunto de interfaces duales representadas más recientemente por **ICEnroll4** define solo un subconjunto de la funcionalidad definida por **IEnroll4**.
 

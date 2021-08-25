@@ -1,6 +1,6 @@
 ---
-title: Elemento template (TemplateListType)
-description: Plantilla que define los datos que se van a incluir con un evento. | Elemento template (TemplateListType)
+title: elemento template (TemplateListType)
+description: Plantilla que define los datos que se incluirán con un evento . | elemento template (TemplateListType)
 ms.assetid: 97560254-100c-4d2a-bf3f-ca0897ece6c2
 keywords:
 - elemento de plantilla EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aeba50057fdec03bfea5a03ca164b4c3d8f29593
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9bccc77d13eb07bf771fa61ef6537ad9010e4d8975dbf77389d9a7722eb8b664
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005705"
 ---
-# <a name="template-templatelisttype-element"></a>Elemento template (TemplateListType)
+# <a name="template-templatelisttype-element"></a>elemento template (TemplateListType)
 
-Plantilla que define los datos que se van a incluir con un evento.
+Plantilla que define los datos que se incluirán con un evento .
 
 ``` syntax
 <xs:element name="template"
@@ -30,7 +30,7 @@ Plantilla que define los datos que se van a incluir con un evento.
  />
 ```
 
-El elemento de **plantilla** se define mediante el tipo complejo de [**TemplateListType**](eventmanifestschema-templatelisttype-complextype.md) .
+El **elemento** template se define mediante el [**tipo complejo TemplateListType.**](eventmanifestschema-templatelisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento de **plantilla** se define mediante el tipo complejo de [**TemplateL
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento de **plantilla** se define mediante el tipo complejo de [**TemplateL
 **Elemento primario**
 </dt> <dt>
 
-[**plantillas (ProviderType)**](eventmanifestschema-templates-providertype-element.md)
+[**templates (ProviderType)**](eventmanifestschema-templates-providertype-element.md)
 </dt> </dl>
 
  

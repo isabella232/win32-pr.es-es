@@ -1,11 +1,11 @@
 ---
-title: Método CreateInstanceFromPropertyData de la clase MicrosoftDNS_KEYType
-description: El método CreateInstanceFromPropertyData crea instancias de un registro de recursos de clave.
+title: Método CreateInstanceFromPropertyData de la MicrosoftDNS_KEYType clase
+description: El método CreateInstanceFromPropertyData crea una instancia de un registro de recursos KEY.
 ms.assetid: 77d7b800-4077-46da-9199-e2abb5801978
 keywords:
-- CreateInstanceFromPropertyData el método DNS
-- Método CreateInstanceFromPropertyData DNS, clase MicrosoftDNS_KEYType
-- MicrosoftDNS_KEYType de clase DNS, método CreateInstanceFromPropertyData
+- Dns del método CreateInstanceFromPropertyData
+- Método DNS CreateInstanceFromPropertyData , MicrosoftDNS_KEYType clase
+- MicrosoftDNS_KEYType clase DNS , método CreateInstanceFromPropertyData
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b16dc8f3f591ba3aaf5ac9883cdd3a15c85146d0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 315ef898a101b3a86fa5a3085e4a171edd8efa28972cf62c006cc0eb87e354b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913145"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_keytype-class"></a>Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS KEYType
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_keytype-class"></a>Método CreateInstanceFromPropertyData de la clase KEYType de MicrosoftDNS \_
 
-El método **CreateInstanceFromPropertyData** crea instancias de un registro de recursos de clave.
+El **método CreateInstanceFromPropertyData** crea una instancia de un registro de recursos KEY.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,21 +51,21 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ de\]
+*DnsServerName* \[ En\]
 </dt> <dd>
 
 FQDN o dirección IP del servidor DNS que contiene este RR.
 
 </dd> <dt>
 
-*ContainerName* \[ de\]
+*ContainerName* \[ En\]
 </dt> <dd>
 
-Nombre del contenedor de la zona, la memoria caché o la instancia de RootHints que contiene este RR.
+Nombre del contenedor de la instancia de Zone, Cache o RootHints que contiene este RR.
 
 </dd> <dt>
 
-*Nombrepropietario* \[ de\]
+*OwnerName* \[ En\]
 </dt> <dd>
 
 Nombre del propietario del RR.
@@ -81,9 +81,9 @@ Clase del RR. El valor predeterminado es 1. Los valores siguientes son válidos.
 
 | Value                                                                                                | Significado                  |
 |------------------------------------------------------------------------------------------------------|--------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | EN (Internet)<br/> |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CAOS)<br/>    |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
 | <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
@@ -92,21 +92,21 @@ Clase del RR. El valor predeterminado es 1. Los valores siguientes son válidos.
 
 </dd> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Marcas usadas para especificar la asignación, como se describe en IETF RFC 2535.
 
 </dd> <dt>
 
-*Protocolo* \[ de de\]
+*Protocolo* \[ En\]
 </dt> <dd>
 
 Protocolo para el que se puede usar la clave especificada en el registro de recursos. Los valores asignados se muestran en la tabla siguiente.
@@ -117,7 +117,7 @@ Protocolo para el que se puede usar la clave especificada en el registro de recu
 |----------------------------------------------------------------------------------------------------------|--------------------------|
 | <span id="1"></span><dl> <dt>**1**</dt> </dl>     | TLS<br/>           |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl>     | Correo electrónico<br/>        |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl>     | DNSSEC<br/>        |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl>     | Dnssec<br/>        |
 | <span id="4"></span><dl> <dt>**4**</dt> </dl>     | IPsec<br/>         |
 | <span id="255"></span><dl> <dt>**255**</dt> </dl> | Todos los protocolos<br/> |
 
@@ -127,10 +127,10 @@ Protocolo para el que se puede usar la clave especificada en el registro de recu
 
 </dd> <dt>
 
-*Algoritmo* \[ de de\]
+*Algoritmo* \[ En\]
 </dt> <dd>
 
-Algoritmo usado con la clave especificada en el registro de recursos. Los valores asignados se muestran en la tabla siguiente.
+Algoritmo utilizado con la clave especificada en el registro de recursos. Los valores asignados se muestran en la tabla siguiente.
 
 
 
@@ -147,17 +147,17 @@ Algoritmo usado con la clave especificada en el registro de recursos. Los valore
 
 </dd> <dt>
 
-*PublicKey* \[ de\]
+*PublicKey* \[ En\]
 </dt> <dd>
 
 Clave pública, representada en base 64 como se describe en el Apéndice A de RFC 2535.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Referencia al nuevo objeto.
+Referencia al nuevo objeto .
 
 </dd> </dl>
 
@@ -174,7 +174,7 @@ Este método no devuelve ningún valor.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -182,13 +182,13 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**El \_ KEYType de MicrosoftDNS**](microsoftdns-keytype.md)
+[**MicrosoftDNS \_ KEYType**](microsoftdns-keytype.md)
 </dt> <dt>
 
-[**Método Modify de la \_ clase MicrosoftDNS KEYType**](microsoftdns-keytype-modify.md)
+[**Método Modify de la clase KEYType de MicrosoftDNS \_**](microsoftdns-keytype-modify.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

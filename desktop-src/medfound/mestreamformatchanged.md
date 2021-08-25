@@ -1,35 +1,35 @@
 ---
-description: Generado por un flujo multimedia cuando cambia el tipo de medio del flujo.
+description: Lo genera una secuencia de medios cuando cambia el tipo de medio de la secuencia.
 ms.assetid: 14786a9b-413e-4fb4-b267-bfd0ccd4631b
-title: Evento MEStreamFormatChanged (Mfobjects. h)
+title: Evento MEStreamFormatChanged (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd48e7abc8121707b150af5bc8968a50c1eb44e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 762f65beb26f5095c9e89be845f468e3ca53c9b5cd227916bb7cc38417626c60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957275"
 ---
 # <a name="mestreamformatchanged-event"></a>Evento MEStreamFormatChanged
 
-Generado por un flujo multimedia cuando cambia el tipo de medio del flujo.
+Lo genera una secuencia de medios cuando cambia el tipo de medio de la secuencia.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE                | Descripción                                                                                                 |
 |------------------------|-------------------------------------------------------------------------------------------------------------|
-| VT \_ desconocido<br/> | Puntero a la interfaz [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) del nuevo tipo de archivo multimedia.<br/> <br/> |
+| VT \_ UNKNOWN<br/> | Puntero a la [**interfaz IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) del nuevo tipo de medio.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Utilice este evento para indicar los cambios de formato en la secuencia.
+Use este evento para indicar cambios de formato en la secuencia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Utilice este evento para indicar los cambios de formato en la secuencia.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Utilice este evento para indicar los cambios de formato en la secuencia.
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

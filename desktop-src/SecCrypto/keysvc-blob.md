@@ -1,5 +1,5 @@
 ---
-description: La estructura KEYSVC \_ BLOB define un BLOB de servicio de claves. La función RKeyPFXInstall usa esta estructura.
+description: La estructura KEYSVC \_ BLOB define un blob de servicio de claves. La función RKeyPFXInstall usa esta estructura.
 ms.assetid: 255b5fab-6271-4d3f-9c56-a63278b8b104
 title: KEYSVC_BLOB estructura (Rkeysvcc.h)
 ms.topic: reference
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119992975"
 ---
-# <a name="keysvc_blob-structure"></a>ESTRUCTURA DE BLOBS KEYSVC \_
+# <a name="keysvc_blob-structure"></a>KEYSVC \_ BLOB (estructura)
 
-La **estructura KEYSVC \_ BLOB** define un BLOB de servicio de claves. La función [**RKeyPFXInstall**](rkeypfxinstall.md) usa esta estructura.
+La **estructura KEYSVC \_ BLOB** define un blob de servicio de claves. La función [**RKeyPFXInstall**](rkeypfxinstall.md) usa esta estructura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Valor **ULONG** que especifica el tamaño, en bytes, de **pb**.
 **pb**
 </dt> <dd>
 
-Puntero a un **BYTE que** contiene el BLOB, en [*formato PKCS \# 12.*](../secgloss/p-gly.md)
+Puntero a un **BYTE** que contiene el BLOB, en [*formato PKCS \# 12.*](../secgloss/p-gly.md)
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Puntero a un **BYTE que** contiene el BLOB, en [*formato PKCS \# 12.*](../secglo
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
@@ -66,7 +66,7 @@ Puntero a un **BYTE que** contiene el BLOB, en [*formato PKCS \# 12.*](../secglo
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

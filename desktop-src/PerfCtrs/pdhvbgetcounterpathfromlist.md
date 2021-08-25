@@ -1,7 +1,7 @@
 ---
-description: La función PdhVbGetCounterPathFromList copia la ruta de acceso del contador a la que hace referencia el parámetro de índice de una lista de rutas de acceso de contador creada por el usuario a partir de la llamada más reciente a la función PdhVbCreateCounterPathList.
+description: La función PdhVbGetCounterPathFromList copia la ruta de acceso del contador a la que hace referencia el parámetro Index de una lista de rutas de acceso de contador creada por el usuario desde la llamada más reciente a la función PdhVbCreateCounterPathList.
 ms.assetid: e77a022d-42f2-4c48-acb7-36cb013730dd
-title: PdhVbGetCounterPathFromList función)
+title: Función PdhVbGetCounterPathFromList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: 4c5ae4632ede898b7cd323723037ea68d53455b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85760bbcdcc81204340004304be1f0c14bf9bcbbbd7a5b59eebf47a25f7b15c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033785"
 ---
-# <a name="pdhvbgetcounterpathfromlist-function"></a>PdhVbGetCounterPathFromList función)
+# <a name="pdhvbgetcounterpathfromlist-function"></a>Función PdhVbGetCounterPathFromList
 
-La función **PdhVbGetCounterPathFromList** copia la ruta de acceso del contador a la que hace referencia el parámetro de *Índice* de una lista de rutas de acceso de contador creada por el usuario a partir de la llamada más reciente a la función [**PdhVbCreateCounterPathList**](pdhvbcreatecounterpathlist.md) .
+La función **PdhVbGetCounterPathFromList** copia la ruta de acceso del contador a la que hace referencia el parámetro *Index* de una lista de rutas de acceso de contador creada por el usuario desde la llamada más reciente a la función [**PdhVbCreateCounterPathList.**](pdhvbcreatecounterpathlist.md)
 
 > [!IMPORTANT]
-> La función que se describe en este tema puede modificarse o no estar disponible en el futuro. En su lugar, Microsoft recomienda que use las funciones descritas en [funciones de contadores de rendimiento](performance-counters-functions.md).
+> La función que describe este tema puede modificarse o no estar disponible en el futuro. En su lugar, Microsoft recomienda usar las funciones descritas en [Funciones de contadores de rendimiento](performance-counters-functions.md).
 
-Función PdhVbGetCounterPathFromList ( \_ ByVal index as Long, \_ ByVal buffer As String, \_ ByVal BufferLength as Long \_ ) as Long
+Función PdhVbGetCounterPathFromList( \_ ByVal Index As Long, \_ ByVal Buffer as String, \_ ByVal BufferLength As Long \_ ) as Long
 
 ## <a name="parameters"></a>Parámetros
 
@@ -36,27 +36,27 @@ Función PdhVbGetCounterPathFromList ( \_ ByVal index as Long, \_ ByVal buffer A
 *Index* 
 </dt> <dd>
 
-Índice de la ruta de acceso del contador que se va a recuperar. Debe ser un valor mayor o igual que 1 y menor o igual que el valor devuelto por la función [**PdhVbCreateCounterPathList**](pdhvbcreatecounterpathlist.md) .
+Índice de la ruta de acceso del contador que se recuperará. Debe ser un valor mayor o igual que 1 y menor o igual que el valor devuelto por la [**función PdhVbCreateCounterPathList.**](pdhvbcreatecounterpathlist.md)
 
 </dd> <dt>
 
 *Buffer* 
 </dt> <dd>
 
-Cadena dimensionada e inicializada que recibirá la ruta de acceso del contador que corresponde al valor del parámetro de índice.
+Cadena dimensionada e inicializada que recibirá la ruta de acceso del contador que corresponde al valor del parámetro Index.
 
 </dd> <dt>
 
 *BufferLength* 
 </dt> <dd>
 
-Número máximo de caracteres que caben en la cadena a la que hace referencia el búfer.
+Número máximo de caracteres que caben en la cadena a la que hace referencia Buffer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve el número de caracteres copiados en el búfer.
+La función devuelve el número de caracteres copiados en Buffer.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ La función devuelve el número de caracteres copiados en el búfer.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Biblioteca<br/>                  | <dl> <dt>PDH. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Biblioteca<br/>                  | <dl> <dt>Pdh.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Pdh.dll</dt> </dl> |
 
 

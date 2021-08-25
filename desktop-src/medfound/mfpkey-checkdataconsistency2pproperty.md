@@ -1,19 +1,19 @@
 ---
-description: Especifica si el codificador debe comprobar la coherencia de los datos entre las pasadas al realizar la codificación VBR de dos pasos. Lectura y escritura.
+description: Especifica si el codificador debe comprobar la coherencia de los datos entre los pases al realizar la codificación VBR de dos pases. Lectura y escritura.
 ms.assetid: 68750820-e931-41c2-9d12-89ab83b4b97e
-title: Propiedad MFPKEY_CHECKDATACONSISTENCY2P (Wmcodecdsp. h)
+title: MFPKEY_CHECKDATACONSISTENCY2P propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abc706712ef1e8bff36a118031fde155bb9bda31
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a1cef9c8c2a8e4fcd536ce73653e80e62282b40734cc695493d6cba4187c8f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954725"
 ---
-# <a name="mfpkey_checkdataconsistency2p-property"></a>\_Propiedad CHECKDATACONSISTENCY2P de MFPKEY
+# <a name="mfpkey_checkdataconsistency2p-property"></a>Propiedad MFPKEY \_ CHECKDATACONSISTENCY2P
 
-Especifica si el codificador debe comprobar la coherencia de los datos entre las pasadas al realizar la codificación VBR de dos pasos. Lectura y escritura.
+Especifica si el codificador debe comprobar la coherencia de los datos entre los pases al realizar la codificación VBR de dos pases. Lectura y escritura.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -21,15 +21,15 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 ## <a name="data-type"></a>Tipo de datos
 
-**VT \_ bool**
+**VT \_ BOOL**
 
 ## <a name="default-value"></a>Valor predeterminado
 
-**VARIANTE \_ true**
+**VARIANT \_ TRUE**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si deja esta propiedad en su valor predeterminado de **Variant \_ true**, el codificador comprueba que los ejemplos de entrada coinciden entre los dos pasos y produce un error si detecta una discrepancia. El escenario principal que conduce a una discrepancia es cuando la entrada procede de un dispositivo.
+Si deja esta propiedad en su valor predeterminado **de VARIANT \_ TRUE**, el codificador comprueba que los ejemplos de entrada coinciden entre los dos pases y produce un error si detecta una discrepancia. El escenario principal que conduce a una discrepancia es cuando la entrada procede de un dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,8 +37,8 @@ Si deja esta propiedad en su valor predeterminado de **Variant \_ true**, el cod
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Remoto<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente<br/> | Windows Vista o Windows 7<br/>                                                   |
+| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -46,7 +46,7 @@ Si deja esta propiedad en su valor predeterminado de **Variant \_ true**, el cod
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

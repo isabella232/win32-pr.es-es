@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Métodos SWbemLocator
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 330702156d86cc5d5a5e497722d781042a42dc47
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3101f3a74df1cab616d95274394778224a9365b81306c3138fea4867c6e5c19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955185"
 ---
 # <a name="swbemlocator-methods"></a>Métodos SWbemLocator
 
-El objeto [**SWbemLocator**](swbemlocator.md) expone los métodos siguientes.
+El [**objeto SWbemLocator**](swbemlocator.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

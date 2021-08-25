@@ -1,9 +1,9 @@
 ---
 title: Atributo WM/MediaStationName
-description: El atributo WM/StationName especifica el nombre de la estación en la que se difundió por primera vez un determinado programa.
+description: El atributo WM/StationName especifica el nombre de la estación en la que se difundió por primera vez una serie determinada.
 ms.assetid: 4251dfbc-d24d-444b-8a43-a47473f8339f
 keywords:
-- Media Player de Windows de atributos de WM/MediaStationName
+- Atributo WM/MediaStationName Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,34 +12,34 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e85c4ad81efc27628fbd8c1fe5d81ebf7d16339
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a745268bcc94538fccf513f7062f061040103474030f1ecadcc748625e19a5c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900525"
 ---
 # <a name="wmmediastationname-attribute"></a>Atributo WM/MediaStationName
 
-El atributo **WM/StationName** especifica el nombre de la estación en la que se difundió por primera vez un determinado programa.
+El **atributo WM/StationName** especifica el nombre de la estación en la que se difundió por primera vez una serie determinada.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMMediaStationName.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMMediaStationName.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------|
-| Versión<br/> | Windows Media Player 10 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media 10 o posterior<br/> |
 
 
 
@@ -47,7 +47,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

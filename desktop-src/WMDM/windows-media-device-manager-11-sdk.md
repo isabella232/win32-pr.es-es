@@ -1,69 +1,69 @@
 ---
-title: SDK de Windows Media Administrador de dispositivos 11
-description: SDK de Windows Media Administrador de dispositivos 11
+title: Windows SDK Administrador de dispositivos 11
+description: Windows SDK Administrador de dispositivos 11
 ms.assetid: 9c0c9a96-1335-4ae2-9393-bfab0dfe24c6
 keywords:
-- Windows Media Administrador de dispositivos, acerca de
-- Administrador de dispositivos, acerca de
-- Protocolo de transferencia multimedia (MTP)
-- MTP (Protocolo de transferencia multimedia)
-- Clase de almacenamiento masivo (MSC)
-- MSC (clase de almacenamiento masivo)
-- Windows Media Administrador de dispositivos, aplicaciones de escritorio
-- Administrador de dispositivos, aplicaciones de escritorio
+- Windows Media Administrador de dispositivos,about
+- Administrador de dispositivos,about
+- Protocolo de transferencia de medios (MTP)
+- MTP (protocolo de transferencia de medios)
+- Clase Storage masiva (MSC)
+- MSC (clase de Storage masiva)
+- Windows Aplicaciones Administrador de dispositivos multimedia, aplicaciones de escritorio
+- Administrador de dispositivos,aplicaciones de escritorio
 - aplicaciones de escritorio, acerca de
 - Windows Media Administrador de dispositivos, proveedores de servicios
-- Administrador de dispositivos, proveedores de servicios
+- Administrador de dispositivos,proveedores de servicios
 - proveedores de servicios, acerca de
-- Administrador de dispositivos de Windows Media, Complementos
-- Administrador de dispositivos, INSP
+- Windows Archivos Administrador de dispositivos, complementos
+- Administrador de dispositivos,complemento
 - complementos, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2b167e8244fb6f03a584dfb71255eabfa359c8e
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 57e8b19b035f0210b7928dcc42c19d9519a63fe4eac3e5adaeded780c9d4c729
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104421544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004815"
 ---
-# <a name="windows-media-device-manager-11-sdk"></a>SDK de Windows Media Administrador de dispositivos 11
+# <a name="windows-media-device-manager-11-sdk"></a>Windows SDK Administrador de dispositivos 11
 
 > [!IMPORTANT]
-> Las API de Windows Media Administrador de dispositivos se incluyen ahora en el Windows SDK. No es necesario descargar ningún SDK adicional.
+> Las WINDOWS de Administrador de dispositivos multimedia se incluyen ahora en el SDK de Windows. No se requiere ninguna descarga adicional del SDK.
 
- 
+ 
 
-El kit de desarrollo de software (SDK) de Microsoft Windows Media Administrador de dispositivos le permite crear aplicaciones de escritorio y componentes que pueden comunicarse con dispositivos portátiles conectados. Windows Media Administrador de dispositivos permite que su aplicación o componente Enumere, explore y intercambie archivos con un dispositivo, consulte los metadatos y solicite información de recuento de repeticiones. Las aplicaciones o componentes basados en Windows Media Administrador de dispositivos tienen una API coherente para comunicarse con una amplia gama de dispositivos, como el protocolo de transferencia multimedia (MTP), la clase de almacenamiento masivo (MSC), la RAPI y otros dispositivos creados en las versiones más recientes y anteriores de la tecnología de Windows Media.
+Microsoft Windows Media Administrador de dispositivos Software Development Kit (SDK) permite compilar aplicaciones de escritorio y componentes que se pueden comunicar con dispositivos portátiles conectados. Windows El Administrador de dispositivos multimedia permite a la aplicación o componente enumerar, explorar e intercambiar archivos con un dispositivo, consultar metadatos y solicitar información de recuento de reproducción. Las aplicaciones o componentes basados en Windows Media Administrador de dispositivos tienen una API coherente para comunicarse con una amplia gama de dispositivos, incluidos el Protocolo de transferencia multimedia (MTP), la clase Storage masiva (MSC), RAPI y otros dispositivos basados en las versiones más recientes y anteriores de la tecnología Windows Media.
 
-Puede compilar los siguientes elementos mediante el SDK de Administrador de dispositivos de Windows Media:
+Puede compilar los siguientes elementos mediante el SDK Windows Media Administrador de dispositivos:
 
--   Aplicaciones de escritorio, como reproductores multimedia personalizados. Toda la comunicación entre una aplicación y un dispositivo portátil debe pasar a través de Windows Media Administrador de dispositivos, que actúa como agente entre la aplicación, el sistema de administración de derechos digitales de Microsoft y el proveedor de servicios.
--   Proveedores de servicios, que actúan como vínculo de comunicación entre un dispositivo personalizado y una aplicación de escritorio. Aunque Microsoft proporciona varios proveedores de servicios que pueden comunicarse con la mayoría de los dispositivos de la caja, puede crear un proveedor de servicios personalizado para personalizar la comunicación entre un dispositivo y una aplicación de escritorio.
--   Complementos, que pueden realizar tareas como la solicitud y el registro de recuentos de reproducción en dispositivos. Estos complementos se pueden adjuntar a otras aplicaciones de escritorio, como Windows Media Player para enviar información a los proveedores de contenido con el fin de controlar los pagos de regalías a artistas.
+-   Aplicaciones de escritorio, como reproductores multimedia personalizados. Toda comunicación entre una aplicación y un dispositivo portátil debe pasar por Windows Media Administrador de dispositivos, que actúa como agente entre la aplicación, el sistema de administración de derechos digitales de Microsoft y el proveedor de servicios.
+-   Proveedores de servicios, que actúan como vínculo de comunicación entre un dispositivo personalizado y una aplicación de escritorio. Aunque Microsoft proporciona una serie de proveedores de servicios que pueden comunicarse con la mayoría de los dispositivos de forma manual, puede crear un proveedor de servicios personalizado para personalizar la comunicación entre un dispositivo y una aplicación de escritorio.
+-   Complementos, que pueden realizar tareas como solicitar y registrar recuentos de reproducción en los dispositivos. Estos complementos se pueden adjuntar a otras aplicaciones de escritorio, como el Reproductor de Windows Media para enviar información a los proveedores de contenido para controlar los pagos de la canonidad a los intérpretes.
 
-Para descargar el SDK de Windows Media Administrador de dispositivos, consulte [la página de descarga de Windows Media](https://msdn.microsoft.com/windows/desktop/aa904949) en el sitio web de MSDN.
+Para descargar el SDK Windows Media Administrador de dispositivos, consulte la [página de](https://msdn.microsoft.com/windows/desktop/aa904949) descarga Windows multimedia en el sitio web de MSDN.
 
-Este SDK es un componente del kit de desarrollo de software de Microsoft Windows Media. Otros componentes son el SDK de Windows Media Format, el SDK de Windows Media Services, el SDK de Windows Media Encoder, el SDK de Windows Media Rights Manager y el SDK de Windows Media Player.
+Este SDK es un componente del Kit de desarrollo de software multimedia Windows Microsoft. Otros componentes incluyen el SDK de Windows Media Format, el SDK de Servicios de Windows Media, el SDK de Windows Media Encoder, el SDK de Windows Media Rights Manager y el SDK de Reproductor de Windows Media.
 
-En esta documentación se incluyen las siguientes secciones.
+Esta documentación incluye las secciones siguientes.
 
 
 
 | Sección                                            | Descripción                                                                                                                                                                                                                                                     |
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Introducción](getting-started.md)             | Se describen las novedades de esta versión de Windows Media Administrador de dispositivos, se ofrece información general sobre cómo funciona Windows Media Administrador de dispositivos, se describe lo que se necesita para desarrollar una aplicación o un proveedor de servicios, y se explican los ejemplos que se incluyen con el SDK. |
-| [Guía de programación](programming-guide.md)         | Describe cómo crear aplicaciones y proveedores de servicios.                                                                                                                                                                                                      |
-| [Referencia de programación](programming-reference.md) | Proporciona información de referencia de C++ para las interfaces, los métodos, las clases y las estructuras compatibles con el SDK de Administrador de dispositivos de Windows Media.                                                                                                                      |
-| [*Glosario*](wmdm-glossary.md)                    | Define los términos que se usan en esta documentación.                                                                                                                                                                                                                       |
+| [Introducción](getting-started.md)             | Describe las novedades de esta versión de Windows Media Administrador de dispositivos, proporciona información general sobre cómo funciona Windows Media Administrador de dispositivos, describe lo que se necesita para desarrollar una aplicación o un proveedor de servicios y explica los ejemplos incluidos con el SDK. |
+| [Guía de programación](programming-guide.md)         | Describe cómo compilar aplicaciones y proveedores de servicios.                                                                                                                                                                                                      |
+| [Referencia de programación](programming-reference.md) | Proporciona información de referencia de C++ para las interfaces, métodos, clases y estructuras compatibles con el SDK Windows Media Administrador de dispositivos SDK.                                                                                                                      |
+| [*Glosario*](wmdm-glossary.md)                    | Define los términos usados en esta documentación.                                                                                                                                                                                                                       |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

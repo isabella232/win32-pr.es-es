@@ -1,22 +1,22 @@
 ---
-title: El programa trasladado a Windows
-description: El siguiente programa es un programa OpenGL de Windows con el mismo código OpenGL que se usa en AUXDEMO. Programa de ejemplo de C proporcionado con el SDK de la plataforma. Compare este programa con el programa OpenGL del sistema de ventanas X en un programa de OpenGL de sistema de ventana X.
+title: Programa portado a Windows
+description: El programa siguiente es Windows programa OpenGL con el mismo código OpenGL que se usa en AUXDEMO. Programa de ejemplo de C proporcionado con el SDK de plataforma. Compare este programa con el programa X Window System OpenGL del programa X Window System OpenGL.
 ms.assetid: c42dce45-8f9e-4920-ac3d-ff7549aae3e9
 keywords:
-- trasladar a OpenGL, ejemplo
-- Exportación de OpenGL, ejemplo
+- porting to OpenGL,sample
+- Porte de OpenGL, ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d0b86851ebc6acd5e61997b7e2efae662b11554
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1f8a90e205dbebc8ff4228e3114080b0e535cc6ecdcb6ebbd40738d6afc363fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888035"
 ---
-# <a name="the-program-ported-to-windows"></a>El programa trasladado a Windows
+# <a name="the-program-ported-to-windows"></a>Programa portado a Windows
 
-El siguiente programa es un programa OpenGL de Windows con el mismo código OpenGL que se usa en AUXDEMO. Programa de ejemplo de C proporcionado con el SDK de la plataforma. Compare este programa con el programa OpenGL del sistema de ventanas X en [un programa de OpenGL de sistema de ventana x](an-x-window-system-opengl-program.md).
+El programa siguiente es Windows programa OpenGL con el mismo código OpenGL que se usa en AUXDEMO. Programa de ejemplo de C proporcionado con el SDK de plataforma. Compare este programa con el programa X Window System OpenGL del programa [X Window System OpenGL](an-x-window-system-opengl-program.md).
 
 
 ```C++
@@ -349,9 +349,9 @@ GLvoid drawScene(GLvoid)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

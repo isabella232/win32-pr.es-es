@@ -1,11 +1,11 @@
 ---
-title: Win32_RDCentralPublishedFileAssociation (clase)
+title: Win32_RDCentralPublishedFileAssociation clase
 description: Información de una extensión de archivo asociada a una aplicación.
 ms.assetid: ba12d933-572c-48d3-bf0f-1c99de61457d
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDCentralPublishedFileAssociation clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDCentralPublishedFileAssociation de clase, se describe
+- Win32_RDCentralPublishedFileAssociation clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -22,14 +22,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65a0f1c9bf7905504ee3aa2ba6fff7e9804f4747
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41361959c56810036b8ca2e17d338e2ff1d3433c6e0384fd168a2d21d6e0e0f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868455"
 ---
-# <a name="win32_rdcentralpublishedfileassociation-class"></a>\_Clase Win32 RDCentralPublishedFileAssociation
+# <a name="win32_rdcentralpublishedfileassociation-class"></a>Clase \_ RDCentralPublishedFileAssociation de Win32
 
 Información de una extensión de archivo asociada a una aplicación
 
@@ -68,10 +68,10 @@ La **clase \_ RDCentralPublishedFileAssociation de Win32** tiene estas propiedad
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Alias del RemoteApp de la Asociación de archivo.
+Alias de RemoteApp de la asociación de archivos.
 
 </dd> <dt>
 
@@ -81,13 +81,13 @@ Alias del RemoteApp de la Asociación de archivo.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nombre de la extensión (por ejemplo,. txt).
+Nombre de la extensión (por ejemplo, .txt).
 
 </dd> <dt>
 
@@ -97,23 +97,23 @@ Nombre de la extensión (por ejemplo,. txt).
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Alias de la granja de RemoteApp's de la Asociación de archivo
+Alias de la granja de RemoteApp de la asociación de archivos
 
 </dd> <dt>
 
-**IconContents**
+**IconoContents**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Contenido del icono para esta asociación de archivo.
+Contenido del icono de esta asociación de archivos.
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Reservado para uso futuro. Siempre será **true**.
+Reservado para uso futuro. Siempre será **true.**
 
 </dd> <dt>
 
@@ -136,10 +136,10 @@ Reservado para uso futuro. Siempre será **true**.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Sugerencia para ayudar a abrir documentos con esta asociación de archivo.
+Sugerencia para ayudar a abrir documentos con esta asociación de archivos.
 
 </dd> </dl>
 
@@ -151,8 +151,8 @@ Sugerencia para ayudar a abrir documentos con esta asociación de archivo.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ cimv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>Tscpub. mof</dt> </dl>    |
+| Espacio de nombres<br/>                | \\TerminalServices cimv2 \\ raíz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>Tscpub.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 
 

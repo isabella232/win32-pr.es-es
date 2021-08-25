@@ -1,5 +1,5 @@
 ---
-description: 'SystemConfig_V0_Power clase : esta clase es la clase de tipo de evento para los eventos de configuración de energía. La sintaxis siguiente se simplifica a partir del código MOF.'
+description: 'SystemConfig_V0_Power clase : esta clase es la clase de tipo de evento para eventos de configuración de energía. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: b3391435-dac0-4c48-b788-eb4d4a7aa635
 title: SystemConfig_V0_Power clase
 ms.topic: reference
@@ -20,12 +20,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ab268e719374906e149dc9c1b733487f986e8308
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 588622fb010cf9ca43f7253adc269e86b1755e5e459cbd6320a28d1d5416706a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914345"
 ---
 # <a name="systemconfig_v0_power-class"></a>Clase Power SystemConfig \_ V0 \_
 
@@ -62,7 +62,7 @@ La **clase SystemConfig \_ V0 \_ Power** tiene estas propiedades.
 
 <dl> <dt>
 
-Panel1
+Pad1
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint8**
@@ -194,14 +194,14 @@ True indica que el sistema admite el estado de suspensión S5.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -2,7 +2,7 @@
 description: Describe la sesión de inicio de sesión o las sesiones asociadas a un usuario que ha iniciado sesión en un equipo que ejecuta Windows.
 ms.assetid: d09a115b-95a3-47c7-a04d-c810d044ccc8
 ms.tgt_platform: multiple
-title: Win32_LogonSession (clase)
+title: Win32_LogonSession clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,18 +23,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 78e14bbd41c2fd8bb0c10a7bfeeda0dc9d426b0f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 85cbc80050fafe887fa99974c41666c7189b2b12c21559aac0255870b2a697d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972994"
 ---
-# <a name="win32_logonsession-class"></a>\_Clase Win32 LogonSession
+# <a name="win32_logonsession-class"></a>Clase LogonSession de Win32 \_
 
-La clase WMI **\_ LogonSession de Win32** (vea [recuperación de una clase WMI](/windows/desktop/wmisdk/retrieving-a-class)) describe la sesión de inicio de sesión o las sesiones asociadas a un usuario que ha iniciado sesión en un equipo que ejecuta Windows.
+La clase WMI **\_ LogonSession de Win32** (consulte Recuperación de una clase WMI ) describe la sesión de inicio de sesión o las sesiones asociadas [a](/windows/desktop/wmisdk/retrieving-a-class)un usuario que ha iniciado sesión en un sistema informático que ejecuta Windows.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -88,12 +88,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -106,30 +106,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descripción")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
-Una descripción textual del objeto.
+Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Fecha de instalación")
 </dt> </dl>
 
 Indica cuándo se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -145,14 +145,14 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-IDENTIFICADOR asignado a la sesión de inicio de sesión.
+Identificador asignado a la sesión de inicio de sesión.
 
 </dd> <dt>
 
 **LogonType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -176,7 +176,7 @@ Solo lo usa la cuenta del sistema.
 
 </dt> <dd>
 
-Diseñado para usuarios que utilizan el equipo de forma interactiva, como un usuario que inicia sesión en un servidor de Terminal Server, un shell remoto o un proceso similar.
+Destinado a los usuarios que usan la máquina de forma interactiva, como un usuario que ha iniciado sesión en un servidor terminal, un shell remoto o un proceso similar.
 
 </dd> <dt>
 
@@ -187,18 +187,18 @@ Diseñado para usuarios que utilizan el equipo de forma interactiva, como un usu
 
 </dt> <dd>
 
-Diseñado para servidores de alto rendimiento para autenticar contraseñas de texto no cifrado. LogonUser no almacena en caché las credenciales para este tipo de inicio de sesión.
+Diseñado para que los servidores de alto rendimiento autentiquen contraseñas de texto no cifrada. LogonUser no almacena en caché las credenciales para este tipo de inicio de sesión.
 
 </dd> <dt>
 
 <span id="Batch"></span><span id="batch"></span><span id="BATCH"></span>
 
-<span id="Batch"></span><span id="batch"></span><span id="BATCH"></span>**Lote** (4)
+<span id="Batch"></span><span id="batch"></span><span id="BATCH"></span>**Batch** (4)
 
 
 </dt> <dd>
 
-Diseñado para servidores de batch, donde los procesos se pueden ejecutar en nombre de un usuario sin su intervención directa; o para servidores de mayor rendimiento que procesan muchos intentos de autenticación de texto no cifrado a la vez, como servidores web o de correo. LogonUser no almacena en caché las credenciales para este tipo de inicio de sesión.
+Destinado a servidores por lotes, donde los procesos se pueden ejecutar en nombre de un usuario sin su intervención directa; o para servidores de mayor rendimiento que procesan muchos intentos de autenticación de texto no texto a la vez, como servidores web o de correo. LogonUser no almacena en caché las credenciales para este tipo de inicio de sesión.
 
 </dd> <dt>
 
@@ -226,12 +226,12 @@ Indica un inicio de sesión de tipo proxy.
 
 <span id="Unlock"></span><span id="unlock"></span><span id="UNLOCK"></span>
 
-<span id="Unlock"></span><span id="unlock"></span><span id="UNLOCK"></span>**Desbloquear** (7)
+<span id="Unlock"></span><span id="unlock"></span><span id="UNLOCK"></span>**Desbloqueo** (7)
 
 
 </dt> <dd>
 
-Este tipo de inicio de sesión está pensado para el registro de archivos dll GINA en los usuarios que usan el equipo de forma interactiva. Este tipo de inicio de sesión permite generar un registro de auditoría único que muestra Cuándo se desbloqueó la estación de trabajo.
+Este tipo de inicio de sesión está pensado para el registro de archivos DLL de GINA en usuarios que usan la máquina de forma interactiva. Este tipo de inicio de sesión permite generar un registro de auditoría único que muestra cuándo se desbloqueó la estación de trabajo.
 
 </dd> <dt>
 
@@ -242,7 +242,7 @@ Este tipo de inicio de sesión está pensado para el registro de archivos dll GI
 
 </dt> <dd>
 
-Conserva el nombre y la contraseña en los paquetes de autenticación, lo que permite que el servidor realice conexiones a otros servidores de red durante la suplantación del cliente. Esto permite a un servidor aceptar credenciales de texto sin cifrar de un cliente, llamar a LogonUser, comprobar que el usuario puede tener acceso al sistema a través de la red y seguir comunicándose con otros servidores.
+Conserva el nombre y la contraseña en los paquetes de autenticación, lo que permite al servidor realizar conexiones a otros servidores de red mientras suplanta al cliente. Esto permite a un servidor aceptar credenciales de texto no definido de un cliente, llamar a LogonUser, comprobar que el usuario puede acceder al sistema a través de la red y seguir comunicándose con otros servidores.
 
 </dd> <dt>
 
@@ -253,7 +253,7 @@ Conserva el nombre y la contraseña en los paquetes de autenticación, lo que pe
 
 </dt> <dd>
 
-Permite que el autor de la llamada Clone su token actual y especifique nuevas credenciales para las conexiones salientes. La nueva sesión de inicio de sesión tiene la misma identidad local, pero usa credenciales diferentes para otras conexiones de red.
+Permite al autor de la llamada clonar su token actual y especificar nuevas credenciales para las conexiones salientes. La nueva sesión de inicio de sesión tiene la misma identificación local, pero usa credenciales diferentes para otras conexiones de red.
 
 </dd> <dt>
 
@@ -264,7 +264,7 @@ Permite que el autor de la llamada Clone su token actual y especifique nuevas cr
 
 </dt> <dd>
 
-Terminal Services sesión remota e interactiva.
+Sesión de Terminal Services que es remota e interactiva.
 
 </dd> <dt>
 
@@ -275,7 +275,7 @@ Terminal Services sesión remota e interactiva.
 
 </dt> <dd>
 
-Intentos de credenciales en caché sin acceso a la red.
+Intente las credenciales almacenadas en caché sin tener acceso a la red.
 
 </dd> <dt>
 
@@ -286,7 +286,7 @@ Intentos de credenciales en caché sin acceso a la red.
 
 </dt> <dd>
 
-Igual que RemoteInteractive. Se utiliza para la auditoría interna.
+Igual que RemoteInteractive. Se usa para la auditoría interna.
 
 </dd> <dt>
 
@@ -312,19 +312,19 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, esta propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **StartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -332,7 +332,7 @@ Tipo de acceso: solo lectura
 
 Hora a la que se inició la sesión.
 
-Esta propiedad se hereda de [**la \_ sesión de Win32**](win32-session.md).
+Esta propiedad se hereda de [**la sesión de Win32. \_**](win32-session.md)
 
 </dd> <dt>
 
@@ -345,14 +345,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Cadena que indica el estado actual del objeto. Se puede definir un estado operativo y no operativo. El estado operativo puede ser "correcto", "degradado" y "Pred FAIL". "Pred FAIL" indica que un elemento funciona correctamente, pero está prediciendo un error (por ejemplo, una unidad de disco duro habilitada para SMART).
+Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "error", "iniciando", "deteniendo" y "servicio". "Servicio" puede aplicarse durante el reflejo del disco: Resilvering, recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni en ninguno de los otros Estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -360,84 +360,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -446,7 +446,7 @@ Con **estrés** ("acentuado")
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de [información de sesión de inicio](https://Gallery.TechNet.Microsoft.Com/scriptcenter/64cc7ab5-f1cd-460c-9d37-e6f989444de3) de sesión de PowerShell se devuelve información acerca de las sesiones de inicio de sesión asociadas al usuario que ha iniciado sesión en un equipo.
+El [ejemplo de PowerShell List Logon Session Information](https://Gallery.TechNet.Microsoft.Com/scriptcenter/64cc7ab5-f1cd-460c-9d37-e6f989444de3) devuelve información sobre las sesiones de inicio de sesión asociadas al usuario que ha iniciado sesión actualmente en un equipo.
 
 En el siguiente ejemplo de PowerShell se comprueba si hay una sesión remota abierta para un usuario especificado.
 
@@ -478,8 +478,8 @@ $servers = gci servers.txt
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -488,7 +488,7 @@ $servers = gci servers.txt
 
 <dl> <dt>
 
-[**\_Sesión Win32**](win32-session.md)
+[**Sesión de \_ Win32**](win32-session.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))

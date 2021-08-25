@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentIndexMustStayException'
-title: Constructor de EsentIndexMustStayException
+description: 'Más información sobre: Constructor EsentIndexMustException'
+title: Constructor EsentIndexMustException
 TOCTitle: 'EsentIndexMustStayException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentIndexMustStayException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentindexmuststayexception.esentindexmuststayexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f605535e3c2d4f2126a5f7b922ee6f183f46a782
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8f07e9a46764548ce1016848f738827aca30902a8c546d546f674367f99de6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973125"
 ---
-# <a name="esentindexmuststayexception-constructor"></a>Constructor de EsentIndexMustStayException
+# <a name="esentindexmuststayexception-constructor"></a>Constructor EsentIndexMustException
 
-Inicializa una nueva instancia de la clase EsentIndexMustStayException.
+Inicializa una nueva instancia de la clase EsentIndexMustException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,12 +52,12 @@ Dim instance As New EsentIndexMustStayException()
 public EsentIndexMustStayException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase EsentIndexMustStayException](./esentindexmuststayexception-class.md)
+[Clase EsentIndexMustException](./esentindexmuststayexception-class.md)
 
-[Miembros de EsentIndexMustStayException](./esentindexmuststayexception-members.md)
+[Miembros de EsentIndexMustException](./esentindexmuststayexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

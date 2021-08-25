@@ -1,11 +1,11 @@
 ---
-title: Win32_CentralPublishingChangeEvent (clase)
-description: Un evento que representa un cambio en la configuración central de RDV.
+title: Win32_CentralPublishingChangeEvent clase
+description: Evento que representa un cambio en la configuración central de RDV.
 ms.assetid: 95be015e-a185-4548-a7f7-a22b351a34c8
 ms.tgt_platform: multiple
 keywords:
 - Win32_CentralPublishingChangeEvent clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_CentralPublishingChangeEvent de clase, se describe
+- Win32_CentralPublishingChangeEvent clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4695479eb33301bda51b558375a18186fa08161e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9bbc38d132920bd5ffcaa2208d8f1aa94c8629bb0c5399f6b8776654d078cd47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868525"
 ---
-# <a name="win32_centralpublishingchangeevent-class"></a>\_Clase Win32 CentralPublishingChangeEvent
+# <a name="win32_centralpublishingchangeevent-class"></a>Clase Win32 \_ CentralPublishingChangeEvent
 
-Un evento que representa un cambio en la configuración central de RDV.
+Evento que representa un cambio en la configuración central de RDV.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -60,7 +60,7 @@ La **clase \_ CentralPublishingChangeEvent de Win32** tiene estas propiedades.
 **OperationType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -93,16 +93,16 @@ Tipo de operación correspondiente al evento.
 
 </dd> <dt>
 
-**descriptor de seguridad \_**
+**DESCRIPTOR \_ DE SEGURIDAD**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descriptor utilizado por el proveedor de eventos para determinar qué usuarios pueden recibir el evento. Esta propiedad se hereda del [**\_ \_ evento**](/windows/desktop/WmiSdk/--event). Para obtener más información sobre las constantes que se usan para establecer este descriptor de seguridad, vea [constantes de seguridad de WMI](/windows/desktop/WmiSdk/wmi-security-constants).
+Descriptor utilizado por el proveedor de eventos para determinar qué usuarios pueden recibir el evento. Esta propiedad se hereda del [**\_ \_ evento**](/windows/desktop/WmiSdk/--event). Para obtener más información sobre las constantes usadas para establecer este descriptor de seguridad, vea [Constantes de seguridad wmi](/windows/desktop/WmiSdk/wmi-security-constants).
 
 </dd> <dt>
 
@@ -115,22 +115,22 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Objeto modificado por la operación correspondiente al evento.
+Objeto cambiado por la operación correspondiente al evento.
 
 </dd> <dt>
 
-**HORA de \_ creación**
+**HORA \_ CREADA**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor único que indica la hora a la que se generó el evento. Se trata de un valor de 64 bits que representa el número de intervalos de 100 segundos después del 1 de enero de 1601. La información está en el formato de hora universal coordinada (UTC). Esta propiedad se hereda del [**\_ \_ evento**](/windows/desktop/WmiSdk/--event).
+Valor único que indica la hora a la que se generó el evento. Se trata de un valor de 64 bits que representa el número de intervalos de 100 nanosegundos después del 1 de enero de 1601. La información está en formato de hora universal coordinada (UTC). Esta propiedad se hereda del [**\_ \_ evento**](/windows/desktop/WmiSdk/--event).
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> </dl>
 
@@ -142,8 +142,8 @@ Para obtener más información sobre el uso de valores **UInt64** en scripts, ve
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ cimv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>Tscpub. mof</dt> </dl>    |
+| Espacio de nombres<br/>                | \\TerminalServices cimv2 \\ raíz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>Tscpub.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 
 

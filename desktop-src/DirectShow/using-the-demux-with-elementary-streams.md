@@ -1,25 +1,25 @@
 ---
-description: Uso de Demux con secuencias elementales
+description: Uso de Demux con el Secuencias
 ms.assetid: dd98aada-8309-428e-9609-2542195bc6ec
-title: Uso de Demux con secuencias elementales
+title: Uso de Demux con el Secuencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6b9004d6c99db96405797016b0d9854c96dae92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dec805b4c93432c6532edaefac50e9bd15ad8fac5a7d9672fd358c66e57363fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964675"
 ---
-# <a name="using-the-demux-with-elementary-streams"></a>Uso de Demux con secuencias elementales
+# <a name="using-the-demux-with-elementary-streams"></a>Uso de Demux con el Secuencias
 
-Cuando el Demux MPEG-2 entrega cargas de PES, envía el flujo de bytes ES en lotes de ejemplos de medios. El tamaño de muestra predeterminado es 8 KB. Demux inicia un nuevo ejemplo multimedia en cada límite de PES, pero puede dividir una única carga de PES en varios ejemplos. Por ejemplo, si una carga de PES es de 20 000, se entregará en dos ejemplos de 8K seguidos de un ejemplo de 4K. Demux no examina el contenido de la secuencia de bytes. Depende del descodificador analizar los encabezados de la secuencia y buscar los cambios de formato.
+Cuando la demux MPEG-2 entrega cargas de PES, envía la secuencia de bytes ES en lotes de ejemplos multimedia. El tamaño de muestra predeterminado es de 8 K. La demux inicia un nuevo ejemplo multimedia en cada límite de PES, pero puede dividir una carga de PES única en varias muestras. Por ejemplo, si una carga de PES es de 20 000, se entregará en dos muestras de 8K seguidas de una muestra de 4K. Demux no examina el contenido de la secuencia de bytes. Es el descodificador el que analiza los encabezados de secuencia y busca cambios de formato.
 
-Cuando el PIN de salida del filtro de Demux se conecta al descodificador, ofrece el tipo de medio que se especificó cuando se creó el PIN. Dado que Demux no examina el flujo de bytes ES, no valida el tipo de medio. En teoría, un descodificador MPEG-2 debe ser capaz de conectarse solo con el tipo principal y el subtipo rellenado para indicar el tipo de datos. A continuación, el descodificador debe examinar los encabezados de secuencia que llegan en los ejemplos de medios. Sin embargo, en la práctica, muchos descodificadores no se conectarán a menos que el tipo de medio incluya un bloque de formato completo.
+Cuando el pin de salida del filtro demux se conecta al descodificador, ofrece el tipo de medio que se especificó cuando se creó el pin. Dado que demux no examina la secuencia de bytes ES, no valida el tipo de medio. En teoría, un descodificador MPEG-2 debe poder conectarse solo con el tipo principal y el subtipo rellenados, para indicar el tipo de datos. A continuación, el descodificador debe examinar los encabezados de secuencia que llegan a los ejemplos multimedia. Sin embargo, en la práctica, muchos descodificadores no se conectarán a menos que el tipo de medio incluya un bloque de formato completo.
 
-Por ejemplo, supongamos que el PID 0x31 contiene el vídeo de perfil principal MPEG-2. Como mínimo, debe realizar los pasos siguientes.
+Por ejemplo, supongamos que pid 0x31 vídeo de perfil principal MPEG-2. Como mínimo, debe realizar los pasos siguientes.
 
-En primer lugar, cree un tipo de medio para vídeo MPEG-2. Dejando el bloque de formato por ahora:
+En primer lugar, cree un tipo de medio para vídeo MPEG-2. Dejar a un lado el bloque de formato por ahora:
 
 
 ```C++
@@ -32,7 +32,7 @@ mt.subtype = MEDIASUBTYPE_MPEG2_VIDEO;
 
 
 
-A continuación, cree un PIN de salida en Demux:
+A continuación, cree un pin de salida en demux:
 
 
 ```C++
@@ -53,7 +53,7 @@ if (SUCCEEDED(hr))
 
 
 
-Después, consulte el nuevo PIN para la interfaz **IMPEG2PIDMap** y llame a **MapPID**. Especifique el número de PID 0x30 y \_ el \_ flujo elemental de multimedia para las cargas de PES.
+A continuación, consulte el nuevo pin para la **interfaz IMPEG2PIDMap** y llame a **MapPID**. Especifique el número 0x30 PID y MEDIA \_ ELEMENTARY \_ STREAM para cargas PES.
 
 
 ```C++
@@ -82,7 +82,7 @@ pDemux->Release();
 
 
 
-Este es un ejemplo más completo del establecimiento del tipo de medio, incluido el bloque de formato. En este ejemplo se sigue suponiendo un vídeo de perfil principal MPEG-2. Los detalles variarán en función del contenido del flujo:
+Este es un ejemplo más completo de cómo establecer el tipo de medio, incluido el bloque de formato. En este ejemplo se sigue presupone un vídeo de perfil principal MPEG-2. Los detalles variarán en función del contenido de la secuencia:
 
 
 ```C++
@@ -134,7 +134,7 @@ memcpy(pMVIH->dwSequenceHeader, SeqHdr, sizeof(SeqHdr));
 
 <dl> <dt>
 
-[Usar el demultiplexador MPEG-2](using-the-mpeg-2-demultiplexer.md)
+[Uso del demultiplexor MPEG-2](using-the-mpeg-2-demultiplexer.md)
 </dt> </dl>
 
  

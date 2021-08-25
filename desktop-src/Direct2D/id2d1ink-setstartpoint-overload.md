@@ -1,9 +1,9 @@
 ---
 title: Métodos ID2D1Ink SetStartPoint
-description: Establece el punto inicial para este objeto de entrada de lápiz. Esto determina dónde comenzará la representación del objeto de entrada manuscrita.
+description: Establece el punto inicial de este objeto ink. Esto determina dónde se iniciará la representación de este objeto ink.
 ms.assetid: 908bb7ce-495b-6022-5aec-f0f8e733e768
 keywords:
-- Métodos de SetStartPoint Direct2D
+- Métodos SetStartPoint de Direct2D
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: fe8caf18faf69126cee25c13eeea362e6b50c52d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 948546e55a7e1bee948a7d8786988698d8de19f2302d827dd52b66d6b50bed10
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917515"
 ---
-# <a name="id2d1inksetstartpoint-methods"></a>ID2D1Ink:: SetStartPoint (métodos)
+# <a name="id2d1inksetstartpoint-methods"></a>Métodos ID2D1Ink::SetStartPoint
 
-Establece el punto inicial para este objeto de entrada de lápiz. Esto determina dónde comenzará la representación del objeto de entrada manuscrita.
+Establece el punto inicial de este objeto ink. Esto determina dónde se iniciará la representación de este objeto ink.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Establece el punto inicial para este objeto de entrada de lápiz. Esto determina
 
 | Método                                                                | Descripción                                                                                                         |
 |:----------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|
-| [**SetStartPoint (D2D1 \_ , \_ punto de entrada \* )**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1ink-setstartpoint(constd2d1_ink_point))  | Establece el punto inicial para este objeto de entrada de lápiz. Esto determina dónde comenzará la representación del objeto de entrada manuscrita.<br/> |
-| [**SetStartPoint ( \_ punto de lápiz D2D1 \_&)**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1ink-setstartpoint(constd2d1_ink_point_)) | Establece el punto inicial para este objeto de entrada de lápiz. Esto determina dónde comenzará la representación del objeto de entrada manuscrita.<br/> |
+| [**SetStartPoint (D2D1 \_ INK \_ POINT \* )**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1ink-setstartpoint(constd2d1_ink_point))  | Establece el punto inicial de este objeto ink. Esto determina dónde se iniciará la representación de este objeto ink.<br/> |
+| [**SetStartPoint (D2D1 \_ INK \_ POINT&)**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1ink-setstartpoint(constd2d1_ink_point_)) | Establece el punto inicial de este objeto ink. Esto determina dónde se iniciará la representación de este objeto ink.<br/> |
 
 
 

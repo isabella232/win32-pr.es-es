@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119992205"
 ---
-# <a name="ienumtime-interface"></a>IEnumTime (interfaz)
+# <a name="ienumtime-interface"></a>Interfaz IEnumTime
 
-\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
 La **interfaz IEnumTime proporciona métodos** de enumeración com estándar para la [**interfaz ITTime.**](ittime.md) El [**método ITTimeCollection::get \_ EnumerationIf**](ittimecollection-get-enumerationif.md) devuelve un puntero a **IEnumTime**.
 
@@ -44,7 +44,7 @@ La **interfaz IEnumTime** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
 | Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
