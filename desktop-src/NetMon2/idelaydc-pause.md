@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 21b4cd7b6cb921f7bd71b8670a37da12b2239b92
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dfe48afce1e8fd2350f1d1b696eb426a326ade1b30151e872afee30c0ed997f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910515"
 ---
 # <a name="idelaydcpause-method"></a>IDelaydC::P ause (método)
 
@@ -50,8 +50,8 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**CAPTURA DE NMERR \_ \_ EN PAUSA**</dt> </dl> | La captura ya está en estado en pausa.<br/>                                                                                  |
 | <dl> <dt>**NMERR \_ NO \_ CAPTURA**</dt> </dl>  | El NPP no captura datos. Llame [a IDelaydC::Start para](idelaydc-start.md) iniciar la captura.<br/>                            |
-| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>  | El NPP no está conectado a la red. Llame [a IDelaydC::Connect](idelaydc-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ NO \_ RETRASADO**</dt> </dl>    | El NPP está conectado a la red, pero no con el [método IDelaydC::Connect.](idelaydc-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>  | El NPP no está conectado a la red. Llame [a IDelaydC::Conectar](idelaydc-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NO \_ RETRASADO**</dt> </dl>    | El NPP está conectado a la red, pero no con [el método IDelaydC::Conectar.](idelaydc-connect.md)<br/>                     |
 
 
 
@@ -65,13 +65,13 @@ Al usar **IDelaydC::P ause** e **IDelaydC::Resume** para controlar la captura, M
 
 Para reiniciar la captura, llame a [IDelaydC::Resume](idelaydc-resume.md).
 
-Para detener la captura, llame [a IDelaydC::Stop](idelaydc-stop.md).
+Para detener la captura, llame a [IDelaydC::Stop](idelaydc-stop.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -80,14 +80,14 @@ Para detener la captura, llame [a IDelaydC::Stop](idelaydc-stop.md).
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC::Connect](idelaydc-connect.md)
+[IDelaydC::Conectar](idelaydc-connect.md)
 </dt> <dt>
 
 [IDelaydC::Resume](idelaydc-resume.md)

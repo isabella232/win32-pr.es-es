@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI SystemResources Association de Win32 relaciona un recurso del sistema y el sistema del equipo en el que reside.
+description: La clase WMI de asociación SystemResources de Win32 relaciona un recurso del sistema y el sistema informático en el \_ que reside.
 ms.assetid: 90bff0b0-7c1d-44bf-b67e-aefeaa4b4a83
 ms.tgt_platform: multiple
-title: Win32_SystemResources (clase)
+title: Win32_SystemResources clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fe96467e4bc609fa9426edd3c977b5596ea95fe7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 160be61ab1dc850cc84938be68f79c02ead0597727d330c5d2ea7d3494a923dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827965"
 ---
-# <a name="win32_systemresources-class"></a>\_Clase Win32 SystemResources
+# <a name="win32_systemresources-class"></a>Clase SystemResources de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SystemResources** Association de Win32 relaciona un recurso del sistema y el sistema del equipo en el que reside.
+La clase WMI **de asociación \_ SystemResources** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un recurso del sistema y el sistema informático en el que reside.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,10 +61,10 @@ Tipo de datos: **Win32 \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Referencia a la instancia de que representa el sistema del equipo en el que se encuentra el recurso.
+Referencia a la instancia de que representa el sistema del equipo donde se encuentra el recurso.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Tipo de datos: **CIM \_ SystemResource**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("CIM \| CIM \_ SystemResource")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("CIM \| CIM \_ SystemResource")
 </dt> </dl>
 
-Referencia a la instancia de que representa el recurso (por ejemplo, servicios de e/s y recursos de memoria) disponible en el sistema del equipo.
+Referencia a la instancia de que representa el recurso (por ejemplo, servicios de E/S y recursos de memoria) disponible en el sistema del equipo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ SystemResources de Win32** se deriva de [**\_ ComputerSystemResource de CIM**](cim-computersystemresource.md).
+La **clase \_ SystemResources de Win32** se deriva de [**CIM \_ ComputerSystemResource**](cim-computersystemresource.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ La **clase \_ SystemResources de Win32** se deriva de [**\_ ComputerSystemResour
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La **clase \_ SystemResources de Win32** se deriva de [**\_ ComputerSystemResour
 
 <dl> <dt>
 
-[**\_COMPUTERSYSTEMRESOURCE CIM**](cim-computersystemresource.md)
+[**Equipo \_ CIMSystemResource**](cim-computersystemresource.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

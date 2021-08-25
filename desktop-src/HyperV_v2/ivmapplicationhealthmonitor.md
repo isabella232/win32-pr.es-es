@@ -13,28 +13,28 @@ api_type:
 - COM
 api_location:
 - VmApplicationHealthMonitor.idl
-ms.openlocfilehash: ac9f6574dd8261a120e434cc0351fd07985c71a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cc565c43fd61ebed6183cbfa2f4fdf7ece7d39872f23718fb1a12a3b591d531
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694325"
 ---
 # <a name="ivmapplicationhealthmonitor-interface"></a>Interfaz IVmApplicationHealthMonitor
 
-Notifica el estado de mantenimiento de una aplicación que se ejecuta en una máquina virtual a los componentes de integración de Hyper-V que se ejecutan en la misma máquina virtual. El estado de las aplicaciones que se ejecutan en la máquina virtual se refleja en el \[ valor de la propiedad OperationalStatus 1 \] de la clase [**MSVM \_ HeartbeatComponent**](msvm-heartbeatcomponent.md) . Esta interfaz también proporciona una manera de restablecer todo el estado de la aplicación acumulado en Hyper-V.
+Notifica el estado de mantenimiento de una aplicación que se ejecuta en una máquina virtual a los componentes de integración de Hyper-V que se ejecutan en la misma máquina virtual. El estado de las aplicaciones que se ejecutan en la máquina virtual se refleja en el valor de la propiedad **OperationalStatus** 1 de \[ la clase \] [**\_ HeartbeatComponent de Msvm.**](msvm-heartbeatcomponent.md) Esta interfaz también proporciona una manera de restablecer todo el estado de la aplicación acumulado en Hyper-V.
 
-Esta interfaz la implementan los componentes de integración de Hyper-V de Windows 8. Una instancia de esta interfaz se obtiene creando una instancia del CLSID **397a2e5f-348c-482d-b9a3-57d383b483cd** .
+Esta interfaz se implementa mediante los componentes Windows 8 integración de Hyper-V. Para obtener una instancia de esta interfaz, se crea una instancia del CLSID **397a2e5f-348c-482d-b9a3-57d383b483cd.**
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IVmApplicationHealthMonitor** hereda de la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . **IVmApplicationHealthMonitor** también tiene estos tipos de miembros:
+La **interfaz IVmApplicationHealthMonitor** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **IVmApplicationHealthMonitor** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IVmApplicationHealthMonitor** tiene estos métodos.
+La **interfaz IVmApplicationHealthMonitor** tiene estos métodos.
 
 
 
@@ -47,9 +47,9 @@ La interfaz **IVmApplicationHealthMonitor** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar este elemento de programación, los componentes de integración de Windows 8 deben estar instalados en la máquina virtual en la que se ejecuta la aplicación.
+Para usar este elemento de programación, Windows 8 componentes de integración deben instalarse en la máquina virtual en la que se ejecuta la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,11 +57,11 @@ Para usar este elemento de programación, los componentes de integración de Win
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                                                                                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                                                                                           |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                                                                                                     |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                                                                                           |
 | Versión<br/>                  | Componentes de integración para Windows 8<br/>                                                                                                                                |
-| IDL<br/>                      | <dl> <dt>VmApplicationHealthMonitor. idl</dt> </dl>                                                                      |
-| IID<br/>                      | IID \_ IVmApplicationHealthMonitor se define como 267a0284-848f-447e-a096-5e10a1a76bca<br/> El identificador de objeto se define como 397a2e5f-348c-482d-b9a3-57d383b483cd<br/> |
+| Idl<br/>                      | <dl> <dt>VmApplicationHealthMonitor.idl</dt> </dl>                                                                      |
+| IID<br/>                      | IID IVmApplicationHealthMonitor se define como \_ 267a0284-848f-447e-a096-5e10a1a76bca<br/> El identificador de objeto se define como 397a2e5f-348c-482d-b9a3-57d383b483cd<br/> |
 
 
 

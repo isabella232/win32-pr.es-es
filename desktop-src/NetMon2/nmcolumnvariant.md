@@ -1,7 +1,7 @@
 ---
 description: Proporciona una línea en el panel superior de la Visor de eventos que actúa como contenedor para todos los datos posibles insertados en una columna.
 ms.assetid: 2ad32c23-5dbe-46be-b0cc-ccf7a6fe8ec3
-title: Estructura NMCOLUMNVARIANT (Netmon. h)
+title: Estructura NMCOLUMNVARIANT (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: e9f70d2d1a0caf63411fcd2b44d5ed8bdcbecd00
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 814b419909591e45c07b3ed499072ec4871cdeb1f4c5a355277a03d0623d264c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890034"
 ---
-# <a name="nmcolumnvariant-structure"></a>Estructura NMCOLUMNVARIANT
+# <a name="nmcolumnvariant-structure"></a>NMCOLUMNVARIANT (estructura)
 
-La estructura **NMCOLUMNVARIANT** proporciona una línea en el panel superior de la visor de eventos que actúa como contenedor para todos los datos posibles insertados en una columna.
+La **estructura NMCOLUMNVARIANT** proporciona una línea en el panel superior del Visor de eventos que actúa como contenedor para todos los datos posibles insertados en una columna.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ typedef struct {
 **Tipo**
 </dt> <dd>
 
-Un valor del tipo de enumeración [**NMCOLUMNTYPE**](nmcolumntype.md) .
+Valor del tipo de [**enumeración NMCOLUMNTYPE.**](nmcolumntype.md)
 
 </dd> <dt>
 
@@ -70,77 +70,77 @@ Un valor del tipo de enumeración [**NMCOLUMNTYPE**](nmcolumntype.md) .
 **Uint8Val**
 </dt> <dd>
 
-valor entero de 8 bits sin signo.
+Valor entero sin signo de 8 bits.
 
 </dd> <dt>
 
 **Sint8Val**
 </dt> <dd>
 
-valor entero de 8 bits con signo.
+Valor entero de 8 bits con signo.
 
 </dd> <dt>
 
 **Uint16Val**
 </dt> <dd>
 
-valor entero sin signo de 16 bits.
+Valor entero de 16 bits sin signo.
 
 </dd> <dt>
 
 **Sint16Val**
 </dt> <dd>
 
-valor entero de 16 bits con signo.
+Valor entero de 16 bits con signo.
 
 </dd> <dt>
 
 **Uint32Val**
 </dt> <dd>
 
-valor entero de 32 bits sin signo.
+Valor entero sin signo de 32 bits.
 
 </dd> <dt>
 
 **Sint32Val**
 </dt> <dd>
 
-valor entero de 32 bits con signo.
+Valor entero de 32 bits con signo.
 
 </dd> <dt>
 
 **Float64Val**
 </dt> <dd>
 
-valor Float de 64 bits.
+Valor float de 64 bits.
 
 </dd> <dt>
 
 **FrameVal**
 </dt> <dd>
 
-Número de marco.
+Número de fotograma.
 
 </dd> <dt>
 
-**YesNoVal**
+**SíNoVal**
 </dt> <dd>
 
-Muestra sí o no.
+Muestra Sí o No.
 
 </dd> <dt>
 
 **OnOffVal**
 </dt> <dd>
 
-Muestra activado o desactivado.
+Muestra On (En) o Off (Desactivado).
 
 </dd> <dt>
 
 **TrueFalseVal**
 </dt> <dd>
 
-Muestra true o false.
+Muestra True o False.
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Dirección IP.
 **VarTimeVal**
 </dt> <dd>
 
-Hora de la variante. Use **VariantTimetoSystemTime** para convertir a la hora del sistema.
+Hora de la variante. Use **VariantTimetoSystemTime para** convertir a la hora del sistema.
 
 </dd> <dt>
 
@@ -187,7 +187,7 @@ Puntero a una cadena.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

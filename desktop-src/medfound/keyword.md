@@ -4,12 +4,12 @@ ms.assetid: 1ce4a5ee-c053-4d31-a984-dc11acebbf2a
 title: elemento keyword
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ba871fea760ed3b604048ade2722afc0323e03b
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 9df1f7a648e7861dc8d248141f051e9911c9cb93257f47fee5f2b4d2fd9d5469
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827555"
 ---
 # <a name="keyword-element"></a>elemento keyword
 
@@ -26,7 +26,7 @@ Especifica una palabra clave para un [proveedor MFTrace.](mftrace.md)
 
 
 
-| Atributo         | Tipo             | Obligatorio       | Descripción                                             |
+| Atributo         | Tipo             | Requerido       | Descripción                                             |
 |-------------------|------------------|----------------|---------------------------------------------------------|
 | **Id**<br/> | CDATA<br/> | Sí<br/> | Nombre o máscara de la palabra clave<br/> <br/> |
 
@@ -45,9 +45,9 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el [**elemento mfdetours,**](mfdetours.md) las palabras clave válidas se enumeran en el tema Palabras clave [de MFTrace](mftrace-keywords.md).
+Para el [**elemento mfdetours,**](mfdetours.md) las palabras clave válidas se enumeran en el tema [Palabras clave de MFTrace](mftrace-keywords.md).
 
 Para el [**elemento provider,**](provider.md) las palabras clave dependen del proveedor de eventos. Puede usar la utilidad Wevtutil.exe para enumerar las palabras clave de un proveedor determinado.
 
@@ -62,7 +62,7 @@ Para el [**elemento provider,**](provider.md) las palabras clave dependen del pr
     :::column-end:::
 :::row-end:::
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

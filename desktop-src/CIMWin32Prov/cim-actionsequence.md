@@ -1,8 +1,8 @@
 ---
-description: La \_ Asociación ActionSequence de CIM define una serie de operaciones que transfieren el elemento de software (al que hace referencia la \_ Asociación SOFTWAREELEMENTACTIONS de CIM) al siguiente estado o quita el elemento de software de su estado actual.
+description: La asociación ActionSequence de CIM define una serie de operaciones que hacen la transición del elemento de software (al que hace referencia la asociación \_ SoftwareElementActions de CIM) a su siguiente estado, o quita el elemento de software de su \_ estado actual.
 ms.assetid: b539c424-bc2a-414b-b56c-72550004720f
 ms.tgt_platform: multiple
-title: CIM_ActionSequence (clase)
+title: CIM_ActionSequence clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,27 +16,27 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 71150d1ad9785d81579d8f305fe46bc6b7e57d00
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a199671dd9f88cd81be50af537e156892e8cab653c70677de27c6e5df02f1d3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801085"
 ---
-# <a name="cim_actionsequence-class"></a>\_Clase ActionSequence de CIM
+# <a name="cim_actionsequence-class"></a>Cim \_ ActionSequence (clase)
 
-La **Asociación \_ ActionSequence de CIM** define una serie de operaciones que transfieren el elemento de software (al que hace referencia la Asociación [**\_ SoftwareElementActions de CIM**](cim-softwareelementactions.md) ) al siguiente estado o quita el elemento de software de su estado actual.
+La **asociación \_ ActionSequence** de CIM define una serie de operaciones que hacen la transición del elemento de software (al que hace referencia la asociación [**\_ SoftwareElementActions**](cim-softwareelementactions.md) de CIM) a su siguiente estado, o quita el elemento de software de su estado actual.
 
-Las acciones de siguiente estado y las acciones de desinstalación asociadas a un elemento de software determinado deben ser una secuencia continua. Dado que **CIM \_ ActionSequence** es una asociación, los bucles de la clase de [**\_ acción CIM**](cim-action.md) , con roles para la acción "anterior" y la acción "siguiente", forman una secuencia.
+Las acciones de estado siguiente y las acciones de desinstalación asociadas a un elemento de software determinado deben ser una secuencia continua. Dado **que \_ ACCIÓN CIMSequence** es una asociación, los bucles de la clase Acción [**CIM, \_**](cim-action.md) con roles para la acción "anterior" y la acción "siguiente", forman una secuencia.
 
 La necesidad de una secuencia continua implica:
 
--   Dentro del conjunto de acciones de siguiente estado o desinstalación, solo hay una acción que no tiene una instancia de la Asociación **\_ ActionSequence de CIM** que hace referencia a ella en el rol "siguiente". Esta es la primera acción de la secuencia.
--   Dentro del conjunto de acciones de siguiente estado o desinstalación, solo hay una acción que no tiene una instancia de la Asociación **\_ ActionSequence de CIM** que hace referencia a ella en el rol "anterior". Esta es la última acción de la secuencia.
--   Todas las demás acciones del conjunto de acciones de siguiente estado y desinstalación deben participar en dos instancias de la **Asociación \_ ActionSequence de CIM** , una en un rol "anterior" y otra en el rol "siguiente".
+-   Dentro del conjunto de acciones next-state o uninstall, solo hay una acción que no tiene una instancia de la asociación **\_ Cim ActionSequence** que hace referencia a ella en el rol "siguiente". Esta es la primera acción de la secuencia.
+-   Dentro del conjunto de acciones next-state o uninstall, solo hay una acción que no tiene una instancia de la asociación **\_ Cim ActionSequence** que hace referencia a ella en el rol "anterior". Esta es la última acción de la secuencia.
+-   Todas las demás acciones dentro del conjunto de acciones de estado siguiente y desinstalación deben participar en dos instancias de la asociación **\_ ActionSequence** de CIM, una en un rol "anterior" y otra en el rol "siguiente".
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -55,66 +55,66 @@ class CIM_ActionSequence
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ActionSequence** tiene estos tipos de miembros:
+La **clase \_ ActionSequence de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ActionSequence** tiene estas propiedades.
+La **clase \_ ActionSequence de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
 **Siguiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ acción de CIM**
+Tipo de datos: **Acción \_ CIM**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: [**Máximo**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Mínimo**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Referencia a la siguiente acción.
+Referencia a la acción siguiente.
 
 </dd> <dt>
 
-**Anticipa**
+**Antes**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ acción de CIM**
+Tipo de datos: **Acción \_ CIM**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: [**Máximo**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Mínimo**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 Referencia a la acción anterior.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las clases de [**\_ acción CIM**](cim-action.md) que participan en esta asociación deben tener el mismo valor para la propiedad **Direction** .
+Las [**clases \_ de acción**](cim-action.md) CIM que participan en esta asociación deben tener el mismo valor para la propiedad **Direction.**
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

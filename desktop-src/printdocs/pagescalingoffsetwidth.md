@@ -1,15 +1,15 @@
 ---
-description: Obtenga información sobre el parámetro PageScalingOffsetWidth. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el parámetro PageScalingOffsetWidth. Este tema no está al día. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: e82394d1-f765-4679-b1de-ea17825d6478
 title: PageScalingOffsetWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63152e6a3d9f8ea47bac3b5a0efe559e71e0cb35
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 0ffd40a7c5e26ba442b28f40c53e7c10882800559b9c2510803d7a4ca2580bc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113548853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776495"
 ---
 # <a name="pagescalingoffsetwidth"></a>PageScalingOffsetWidth
 
@@ -71,14 +71,14 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | no definido<br/>       |
 | MinValue<br/>     | integer<br/> | no definido<br/>       |
 | Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
-| Múltiple<br/>     | integer<br/> | 1<br/>               |
+| Varios<br/>     | integer<br/> | 1<br/>               |
 | UnitType<br/>     | string<br/>  | Micras<br/>         |
 
 
@@ -89,7 +89,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

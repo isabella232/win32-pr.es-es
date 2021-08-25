@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2fbcb934ad591274d743f09c810de2db42278261
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 048246f8a48430dca26a763e9266f00edd61215e769f4ff5385036054aebc34b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726575"
 ---
 # <a name="dcl_samplertype-sm3---vs-asm"></a>dcl \_ samplerType (sm3 - vs asm)
 
 Declare un muestreador de sombreador de vértices.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 dcl \_ samplerType s\#
 
@@ -33,10 +33,10 @@ donde:
 -   \_samplerType define el tipo de datos sampler. Esto determina cuántas coordenadas son necesarias para cada coordenada de textura al realizar el muestreo. Se definen las siguientes dimensiones de coordenadas de textura.
     -   \_2d
     -   \_Cubo
-    -   \_volumen
--   s identifica un sampler donde s es una abreviatura del muestreador \# y es el número del \# muestreador. [Sampler (Direct3D 9 asm-vs)](dx9-graphics-reference-asm-vs-registers-sampler.md)s son pseudo registros porque no se pueden leer ni escribir directamente en ellos.
+    -   \_Volumen
+-   s \# identifica un sampler donde s es una abreviatura del muestreador y \# es el número del muestreador. [Sampler (Direct3D 9 asm-vs)](dx9-graphics-reference-asm-vs-registers-sampler.md)son pseudo registros porque no se pueden leer ni escribir directamente en ellos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 

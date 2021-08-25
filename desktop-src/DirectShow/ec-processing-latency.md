@@ -1,19 +1,19 @@
 ---
-description: Indica la cantidad de tiempo que un componente está tomando para procesar cada ejemplo.
+description: Indica la cantidad de tiempo que un componente está tardando en procesar cada muestra.
 ms.assetid: 84f81ee1-76d8-46fb-86ef-2500f8f4ef36
-title: EC_PROCESSING_LATENCY (DShow. h)
+title: EC_PROCESSING_LATENCY (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d97514b4d2851f619f89f42e644766d50b7d25f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ceb107dd4c895f9819d268e6112c22c0c514e480bf778692f28bc87853aee9bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792625"
 ---
-# <a name="ec_processing_latency"></a>\_latencia de procesamiento de EC \_
+# <a name="ec_processing_latency"></a>LATENCIA \_ DE PROCESAMIENTO DE \_ EC
 
-Indica la cantidad de tiempo que un componente está tomando para procesar cada ejemplo.
+Indica la cantidad de tiempo que un componente está tardando en procesar cada muestra.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -22,7 +22,7 @@ Indica la cantidad de tiempo que un componente está tomando para procesar cada 
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**\_ tiempo de referencia const** \* ) la cantidad de tiempo que se va a procesar cada muestra, en unidades de 100-nanosegundos.
+(**const REFERENCE \_ TIME**) Cantidad de tiempo para procesar cada \* muestra, en unidades de 100 nanosegundos.
 
 </dd> <dt>
 
@@ -37,9 +37,9 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un presentador del filtro de [**representador de vídeo mejorado**](enhanced-video-renderer-filter.md) (EVR) puede enviar este mensaje a EVR para notificar a EVR sobre la latencia de procesamiento del presentador.
+Un presentador para el filtro [**Representador**](enhanced-video-renderer-filter.md) de vídeo mejorado (EVR) puede enviar este mensaje a la EVR para notificar al EVR sobre la latencia de procesamiento del presentador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Un presentador del filtro de [**representador de vídeo mejorado**](enhanced-vid
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

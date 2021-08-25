@@ -4,21 +4,21 @@ description: Mensajes de control de animación
 ms.assetid: 4bd9f744-a4be-45f6-8b8a-d941c9e18f30
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd203f330f44e1e0969fce3636a2ec9508924d0d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fa3bcee03b9ebc6a993cdb125c896f10cac9ade29f386ce9c4ff2ada9c68664a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827395"
 ---
 # <a name="animation-control-messages"></a>Mensajes de control de animación
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**ACM \_ ISPLAYING**](acm-isplaying.md)
--   [**ACM \_ abierto**](acm-open.md)
--   [**reproducción de ACM \_**](acm-play.md)
--   [**detención de ACM \_**](acm-stop.md)
+-   [**ACM \_ OPEN**](acm-open.md)
+-   [**ACM \_ PLAY**](acm-play.md)
+-   [**ACM \_ STOP**](acm-stop.md)
 
  
 

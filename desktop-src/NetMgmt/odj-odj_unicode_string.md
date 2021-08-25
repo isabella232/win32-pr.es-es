@@ -1,18 +1,18 @@
 ---
 title: ODJ_UNICODE_STRING
-description: Definición de ODJ_UNICODE_STRING IDL
+description: ODJ_UNICODE_STRING definición de IDL
 ms.assetid: a7999df0-d961-4fd7-ae5e-65ad79a9c17c
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: f1134d7b95cca6948932bf9d79fe976d6745448a
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: 3578c62f110eafd053ed97bbe1f8b5015156d02c4b879ff8111ff13f28dfab33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "105720193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891245"
 ---
-# <a name="odj_unicode_string-structure"></a>Estructura de ODJ_UNICODE_STRING
+# <a name="odj_unicode_string-structure"></a>ODJ_UNICODE_STRING estructura
 
 Contiene una cadena Unicode.
 
@@ -31,11 +31,11 @@ typedef struct _ODJ_UNICODE_STRING
 
 ### <a name="length"></a>Length
 
-Debe establecerse en el número de bytes en el búfer que contiene la cadena, sin incluir el terminador NULL.
+Debe establecerse en el número de bytes del búfer que contiene la cadena, sin incluir el terminador NULL.
 
 ### <a name="maximumlength"></a>MaximumLength
 
-DEBE establecerse en el número total de bytes en el búfer, sin incluir el terminador NULL.
+Debe establecerse en el número total de bytes del búfer, sin incluir el terminador NULL.
 
 ### <a name="buffer"></a>Buffer
 
@@ -43,4 +43,4 @@ Debe ser una cadena Unicode.
 
 ## <a name="see-also"></a>Vea también
 
-[**Definiciones IDL de unión a dominio sin conexión**](odj-idl.md)
+[**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)

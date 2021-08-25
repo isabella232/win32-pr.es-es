@@ -1,30 +1,30 @@
 ---
 description: Explica cómo usar CryptoAPI para administrar y comprobar certificados.
 ms.assetid: 1c26509d-5bb6-42dc-aeb0-525d7eaecf7d
-title: 'Programa C de ejemplo: operaciones de comprobación de certificados'
+title: 'Programa C de ejemplo: Operaciones de comprobación de certificados'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1efdbaaea172b24448ad2b15b03ee19c6dc7a445
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19a50b8e9f89d761498eba87964dfb6e38f3d27c09d940c9cddda35682a944c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873975"
 ---
-# <a name="example-c-program-certificate-verification-operations"></a>Programa C de ejemplo: operaciones de comprobación de certificados
+# <a name="example-c-program-certificate-verification-operations"></a>Programa C de ejemplo: Operaciones de comprobación de certificados
 
-En el ejemplo siguiente se muestran estas tareas y las funciones de CryptoAPI:
+En el ejemplo siguiente se muestran estas tareas y las funciones cryptoAPI:
 
 -   Abrir y cerrar el almacén del sistema.
 -   Buscar un certificado por nombre de sujeto.
--   Usar la función [**CertVerifyTimeValidity**](/windows/desktop/api/Wincrypt/nf-wincrypt-certverifytimevalidity) para comprobar la validez de la hora del certificado.
+-   Uso de [**la función CertVerifyTimeValidity para**](/windows/desktop/api/Wincrypt/nf-wincrypt-certverifytimevalidity) comprobar la validez de la hora del certificado.
 -   [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore)
 -   [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore)
 -   [**CertVerifyTimeValidity**](/windows/desktop/api/Wincrypt/nf-wincrypt-certverifytimevalidity)
 -   [**CertFreeCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatecontext)
 -   [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

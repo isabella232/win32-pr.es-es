@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo siguiente se muestra el código del lado cliente Diffie-Hellman/Schannel típico para crear una clave maestra.
+description: En el ejemplo siguiente se muestra el código típico del lado cliente Diffie-Hellman/Schannel para crear una clave maestra.
 ms.assetid: 37b35cd6-b3c9-4a75-83a9-129bcf7a84a3
-title: Diffie-Hellman código de cliente para crear la clave maestra
+title: Diffie-Hellman de cliente para crear la clave maestra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16ca234b34bdafa41000a702f31264c6b1a0b180
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 885e105596734925b1e84a1b7bf5c08e42fcf09ce1f694843615a53ab9a38406
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875555"
 ---
-# <a name="diffie-hellman-client-code-for-creating-the-master-key"></a>Diffie-Hellman código de cliente para crear la clave maestra
+# <a name="diffie-hellman-client-code-for-creating-the-master-key"></a>Diffie-Hellman de cliente para crear la clave maestra
 
-En el ejemplo siguiente se muestra el código del lado cliente/Schannel de [*Diffie-Hellman*](../secgloss/d-gly.md)típico para crear una [*clave maestra*](../secgloss/m-gly.md).
+En el ejemplo siguiente se muestra el [*código típico de Diffie-Hellman*](../secgloss/d-gly.md)/Schannel del lado cliente para crear una [*clave maestra*](../secgloss/m-gly.md).
 
 
 ```C++

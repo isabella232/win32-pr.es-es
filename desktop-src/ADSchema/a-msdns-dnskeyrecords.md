@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DNS-DNSKEY-Records
-description: Un atributo que contiene el conjunto de registros DNSKEY para la raíz de la zona DNS y los registros de firma de clave de firma de clave raíz.
+title: Atributo ms-DNS-DNSKEY-Records
+description: Atributo que contiene el conjunto de registros DNSKEY para la raíz de la zona DNS y los registros de firma de clave raíz.
 ms.assetid: bc53e9fa-8ed5-46ac-a7ab-949d19aa1c66
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos MS-DNS-DNSKEY-Records
-- msDN-DNSKEYRecords atributo AD Schema
+- Esquema de AD del atributo ms-DNS-DNSKEY-Records
+- Esquema de AD del atributo msDNS-DNSKEYRecords
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2da8b7bfe5f55d8ad260d879f6928cf4a54bc3cc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f9982be1af24b0117d6b9135876814856505ac52ea7a5f40f633cfce7ce6454e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924595"
 ---
-# <a name="ms-dns-dnskey-records-attribute"></a>atributo MS-DNS-DNSKEY-Records
+# <a name="ms-dns-dnskey-records-attribute"></a>Atributo ms-DNS-DNSKEY-Records
 
-Un atributo que contiene el conjunto de registros DNSKEY para la raíz de la zona DNS y los registros de firma de clave de firma de clave raíz.
+Atributo que contiene el conjunto de registros DNSKEY para la raíz de la zona DNS y los registros de firma de clave raíz.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | Registros MS-DNS-DNSKEY                                 |
-| Nombre para mostrar de LDAP | msDN: DNSKEYRecords                                   |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-DNS-DNSKEY-Records                                 |
+| Ldap-Display-Name | msDNS-DNSKEYRecords                                   |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2145                               |
-| System-ID-GUID    | 28c458f5-602d-4ac9-a77c-b3f1be503a7e                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 28c458f5-602d-4ac9-a77c-b3f1be503a7e                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -50,13 +50,13 @@ Un atributo que contiene el conjunto de registros DNSKEY para la raíz de la zon
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000008                               |

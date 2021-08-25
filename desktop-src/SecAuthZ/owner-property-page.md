@@ -1,21 +1,21 @@
 ---
-description: El editor de control de acceso puede incluir una página de propiedades de propietario que permite al usuario cambiar el propietario de un objeto. Para obtener más información sobre el propietario de los objetos, vea propietario de un nuevo objeto y tomar posesión de objetos en C++.
+description: El editor de control de acceso puede incluir una página de propiedades Propietario que permite al usuario cambiar el propietario de un objeto. Para obtener más información sobre un propietario de objetos, vea Propietario de un nuevo objeto y Tomar propiedad del objeto en C++.
 ms.assetid: b0c421db-450e-4030-98e9-e062202e482c
 title: Página de propiedades propietario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cee9d5c276071674ec274c9955a2e8c5cd5a856a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b67b3707017aa8073cfdf4f5ca64340eda74a640bc604a0bd382b7cf2ebe122e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907665"
 ---
 # <a name="owner-property-page"></a>Página de propiedades propietario
 
-El editor de control de acceso puede incluir una página de propiedades de propietario que permite al usuario cambiar el propietario de un objeto. Para obtener más información sobre el propietario de un objeto, vea [propietario de un nuevo objeto](owner-of-a-new-object.md) y [tomar posesión de objetos en C++](taking-object-ownership-in-c--.md).
+El editor de control de acceso puede incluir una página de propiedades Propietario que permite al usuario cambiar el propietario de un objeto. Para obtener más información sobre el propietario de un objeto, vea [Propietario de un nuevo](owner-of-a-new-object.md) objeto y Tomar propiedad del objeto en [C++.](taking-object-ownership-in-c--.md)
 
-La página de propiedades **propietario** está en la [hoja de propiedades seguridad avanzada](advanced-security-property-sheet.md) que se muestra cuando el usuario hace clic en el botón **avanzadas** de la [Página de propiedades seguridad básica](basic-security-property-page.md). Para incluir la página de propiedades del **propietario** , establezca las \_ marcas si y \_ Editar \_ propietario en la estructura de [**\_ \_ información del objeto si**](/windows/desktop/api/Aclui/ns-aclui-si_object_info) devueltos por la implementación de [**ISecurityInformation:: GetObjectInformation**](/windows/win32/api/aclui/nf-aclui-isecurityinformation-getobjectinformation) .
+La **página de** propiedades Propietario se encuentra en la [hoja](advanced-security-property-sheet.md) de propiedades de seguridad avanzada que se muestra cuando el usuario hace clic en el botón Avanzadas de la [página de propiedades de seguridad básica](basic-security-property-page.md).  Para incluir la página de propiedades **Propietario,** establezca las marcas SI ADVANCED y SI EDIT OWNER en la estructura SI OBJECT INFO devuelta por la implementación \_ de \_ \_ [**ISecurityInformation::GetObjectInformation.**](/windows/win32/api/aclui/nf-aclui-isecurityinformation-getobjectinformation) [**\_ \_**](/windows/desktop/api/Aclui/ns-aclui-si_object_info)
 
  
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_DBINFOMISC. GetHashCode (método)'
-title: JET_DBINFOMISC. GetHashCode (método)
+description: 'Más información sobre: JET_DBINFOMISC. Método GetHashCode'
+title: JET_DBINFOMISC. Método GetHashCode
 TOCTitle: 'GetHashCode method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.GetHashCode
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.gethashcode(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6ea506ff2120339a6e2f169d3d871fe1a8afd784
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 093a31e804103f6bd50505d88f4ff7cd3a17812cc02c7447a623d35a30698ebb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891415"
 ---
-# <a name="jet_dbinfomiscgethashcode-method"></a>JET_DBINFOMISC. GetHashCode (método)
+# <a name="jet_dbinfomiscgethashcode-method"></a>JET_DBINFOMISC. Método GetHashCode
 
 Devuelve el código hash de esta instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override int GetHashCode()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 Código hash de esta instancia.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_DBINFOMISC (clase)](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC clase](./jet-dbinfomisc-class.md)
 
-[Miembros de JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC miembros](./jet-dbinfomisc-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

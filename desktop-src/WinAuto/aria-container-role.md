@@ -6,18 +6,18 @@ keywords:
 - AriaContainerRoleErrorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d02554c868816c05981fa9f008c8f79f0a3eb0f8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 507f094a5f7270565de0426b50afd6aef699607d857ef1ba7ed3d6c8bb1a1a2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759835"
 ---
 # <a name="aria-container-role-error"></a>Error de rol de contenedor de ARIA
 
 ## <a name="text"></a>Texto
 
-El elemento con el **descendiente activo** definido no tiene un rol de contenedor (**ComboBox**, **Grid**, **ListBox**, **Menu**, **MenuBar**, **RadioGroup**, **Tree**, **treegrid**, **Tablist**, **Row**).
+El elemento **con el descendiente** activo definido no tiene un rol de contenedor **(cuadro** **combinado,** cuadrícula , **cuadro** de **lista,** **menú,** barra de menús, grupo de **radios,** árbol, **treegrid,** **tablist,** **fila**).
 
 ## <a name="type"></a>Tipo
 
@@ -25,11 +25,11 @@ Error
 
 ## <a name="description"></a>Descripción
 
-Este error se aplica a los elementos que tienen el atributo **Aria-activedescendant** .
+Este error se aplica a los elementos que tienen el **atributo aria-activedescendant.**
 
-Un elemento parece ser un contenedor que tiene establecido el atributo **Aria-activedescendant** , pero el atributo role del elemento no tiene un valor válido para un contenedor.
+Un elemento parece ser un contenedor que tiene el conjunto de atributos **aria-activedescendant,** pero el atributo role del elemento no tiene un valor que sea válido para un contenedor.
 
-Para corregir este error, establezca el atributo **role** en un valor de rol de aplicaciones de Internet enriquecidas accesible desde una iniciativa de accesibilidad web (WAI-ARIA) que sea válido para un elemento contenedor: **ComboBox**, **Grid**, **ListBox**, **Menu**, **MenuBar**, **RadioGroup**, **Tablist**, **Tree** o **treegrid**.
+Para corregir este error, establezca el atributo de rol en un valor de rol Iniciativa de accesibilidad web: aplicaciones de Internet enriquecidas accesibles (SI-ARIA) que sea válido para un elemento contenedor: **cuadro** combinado, **cuadrícula,** **cuadro** de **lista,** **menú,** barra de menús, grupo  de **radios,** **lista** de pestañas, árbol o  **treegrid.**
 
 ## <a name="example"></a>Ejemplo
 
@@ -52,9 +52,9 @@ Para corregir este error, establezca el atributo **role** en un valor de rol de 
 [Error de rol de ARIA](aria-role-invalid.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

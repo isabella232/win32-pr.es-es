@@ -1,34 +1,34 @@
 ---
-title: Procesamiento de datos MIDI de dos orígenes MIDI
-description: Procesamiento de datos MIDI de dos orígenes MIDI
+title: Procesamiento de datos DE MIDI de dos orígenes DE MIDI
+description: Procesamiento de datos DE MIDI de dos orígenes DE MIDI
 ms.assetid: d8b605d9-a12a-4830-8f29-ea700aefb41d
 keywords:
-- Windows multimedia, procesamiento de datos MIDI de dos orígenes
+- Windows multimedia, procesamiento de datos DE MIDI de dos orígenes
 - multimedia, procesamiento de datos MIDI de dos orígenes
 - audio multimedia, procesamiento de datos MIDI de dos orígenes
 - audio, procesamiento de datos MIDI de dos orígenes
-- Interfaz digital de instrumentos musicales (MIDI), procesamiento de datos de dos orígenes
-- MIDI (interfaz digital de instrumentos musicales), procesamiento de datos de dos orígenes
-- procesamiento de datos MIDI de dos orígenes
+- Interfaz digital de instrumentar música (MIDI), procesar datos de dos orígenes
+- MIDI (Interfaz digital instrumenta de música), procesamiento de datos de dos orígenes
+- procesar datos DE MIDI de dos orígenes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 513dcd16036f6f833aec6813f75c6c082925f666
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f9a5eb31c4c6b4b965321b7458d058a3547426b95236d6e0b52d6eb0f55b3e74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805795"
 ---
-# <a name="processing-midi-data-from-two-midi-sources"></a>Procesamiento de datos MIDI de dos orígenes MIDI
+# <a name="processing-midi-data-from-two-midi-sources"></a>Procesamiento de datos DE MIDI de dos orígenes DE MIDI
 
-El subsistema MIDI puede enrutar los mensajes MIDI de dos orígenes de datos a un solo dispositivo de salida MIDI para la reproducción simultánea. Por ejemplo, un origen puede ser música de fondo o una línea de graves que se ha grabado previamente y se ha almacenado en un archivo. El segundo origen puede ser datos activos de un instrumento MIDI, como un teclado o guitarra.
+El subsistema MIDI puede enrutar mensajes MIDI desde dos orígenes de datos a un único dispositivo de salida DE MIDI para la reproducción simultánea. Por ejemplo, un origen puede ser música de fondo o una línea de sonido que se ha grabado previamente y almacenado en un archivo. El segundo origen puede ser datos en directo de un instrumento MIDI, como un teclado o un teclado.
 
-Ambos orígenes de datos envían datos MIDI a un único dispositivo MIDI que se identifica con un identificador. Envíe un flujo de datos mediante la función [**midiStreamOut**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamout) y uno o más búferes de secuencia. Normalmente, este flujo de datos contiene datos grabados como datos empaquetados en el búfer.
+Ambos orígenes de datos envían datos DE MIDI a un único dispositivo MIDI que se identifica con un identificador. Envíe un flujo de datos mediante la [**función midiStreamOut**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamout) y uno o varios búferes de flujo. Este flujo de datos normalmente contiene datos pregrabados que se empaquetan en el búfer.
 
-Envíe el segundo flujo de datos (normalmente desde un instrumento MIDI) de forma asincrónica mediante la función [**midiOutShortMsg**](/windows/win32/api/mmeapi/nf-mmeapi-midioutshortmsg) . El estado de ejecución de un búfer de secuencia no se verá afectado negativamente por las llamadas asincrónicas realizadas por el segundo flujo de datos.
+Envíe el segundo flujo de datos (normalmente desde un instrumento MIDI) de forma asincrónica mediante la [**función midiOutShortMsg.**](/windows/win32/api/mmeapi/nf-mmeapi-midioutshortmsg) El estado de ejecución de un búfer de flujo no se verá afectado negativamente por las llamadas asincrónicas realizadas por el segundo flujo de datos.
 
-Cada mensaje corto enviado con **midiOutShortMsg** debe ser un mensaje MIDI completo, con un byte de estado y el número de bytes de datos adecuado. Si se omite el byte de estado, **midiOutShortMsg** devuelve un error. (Sin embargo, no hay ningún estado en ejecución con la salida de Stream).
+Cada mensaje corto enviado **con midiOutShortMsg** debe ser un mensaje MIDI completo, con un byte de estado y el número adecuado de bytes de datos. Si se omite el byte de estado, **midiOutShortMsg** devuelve un error. (Sin embargo, no hay ningún estado de ejecución con salida de flujo).
 
- 
+ 
 
- 
+ 

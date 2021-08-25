@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 35e751fb583010402df53e1a85eca11f751eda24
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0e74a8880e446300ca142bfcf28633d267d184178a0c3572c3a8049667536978
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910445"
 ---
 # <a name="cbasepinnotify-method"></a>Método CBasePin.Notify
 
@@ -65,7 +65,7 @@ La clase base devuelve E \_ NOTIMPL.
 
 Los pines de salida deben invalidar este método para aceptar mensajes de control de calidad.
 
-Si se instaló un administrador de calidad externo (vea [**CBasePin::SetSink**](cbasepin-setsink.md)), pase el mensaje a ese administrador de calidad. De lo contrario, el filtro debe controlar el propio mensaje o pasar el mensaje ascendente. Para obtener más información, vea [Administración de control de calidad.](quality-control-management.md)
+Si se instaló un administrador de calidad externo (vea [**CBasePin::SetSink**](cbasepin-setsink.md)), pase el mensaje a ese administrador de calidad. De lo contrario, el filtro debe controlar el propio mensaje o pasar el mensaje ascendente. Para obtener más información, vea [Administración de control de calidad](quality-control-management.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,12 +73,12 @@ Si se instaló un administrador de calidad externo (vea [**CBasePin::SetSink**](
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

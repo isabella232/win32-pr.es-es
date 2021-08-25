@@ -1,29 +1,29 @@
 ---
-description: Establecer el atributo de sincronización
+description: Establecimiento del atributo de sincronización
 ms.assetid: e7983732-b206-4e9e-8446-9412832f4712
-title: Establecer el atributo de sincronización
+title: Establecimiento del atributo de sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc93ad435b1a2fb19d4a73e4aae806b6cda1b241
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e5b965ea5fe3a671b3245335327168ad4d6eb3e667fd135626eae7ea6251f40f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858865"
 ---
-# <a name="setting-the-synchronization-attribute"></a>Establecer el atributo de sincronización
+# <a name="setting-the-synchronization-attribute"></a>Establecimiento del atributo de sincronización
 
-Establezca el atributo de sincronización mediante la herramienta administrativa Servicios de componentes o la biblioteca de administración de COM+. (Consulte [automatizar la administración de com+](automating-com--administration.md)).
+Establezca el atributo de sincronización mediante la herramienta administrativa Servicios de componentes o la Biblioteca de administración de COM+. (Consulte [Automatización de la administración de COM+).](automating-com--administration.md)
 
 **Para establecer el atributo mediante la herramienta administrativa Servicios de componentes**
 
-1.  Después de instalar el componente, abra el cuadro de diálogo **propiedades** del componente.
+1.  Después de instalar el componente, abra el cuadro de diálogo **Propiedades** del componente.
 
-2.  Haga clic en la pestaña **simultaneidad** .
+2.  Haga clic en **la pestaña Simultaneidad.**
 
-3.  En **compatibilidad con la sincronización**, haga clic en el botón de opción adyacente al valor que desea seleccionar para el componente.
+3.  En **Compatibilidad con la sincronización,** haga clic en el botón de opción adyacente al valor que desea seleccionar para el componente.
 
-4.  Haga clic en **OK**.
+4.  Haga clic en **Aceptar**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

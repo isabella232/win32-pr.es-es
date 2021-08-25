@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_TABLEID. Equals (método JET_TABLEID)'
-title: JET_TABLEID. Equals (método JET_TABLEID)
+description: 'Más información sobre: JET_TABLEID. Método Equals (JET_TABLEID)'
+title: JET_TABLEID. Método Equals (JET_TABLEID)
 TOCTitle: Equals method (JET_TABLEID)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_TABLEID.Equals(Microsoft.Isam.Esent.Interop.JET_TABLEID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tableid.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2eab8bae322c7b19b5aada08801f752ad6bfaa93
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4c794e07efd291ddbf75ce5ab697d61f9ebed0db5a3e5ce66aef561fe91fc26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890005"
 ---
-# <a name="jet_tableidequals-method-jet_tableid"></a>JET_TABLEID. Equals (método JET_TABLEID)
+# <a name="jet_tableidequals-method-jet_tableid"></a>JET_TABLEID. Método Equals (JET_TABLEID)
 
-Devuelve un valor que indica si esta instancia es igual a otra instancia de.
+Devuelve un valor que indica si esta instancia es igual a otra instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,27 +58,27 @@ public bool Equals(
 #### <a name="parameters"></a>Parámetros
 
   - Otros  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Instancia de que se va a comparar con esta instancia.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
 #### <a name="implements"></a>Implementaciones
 
-[IEquatable \<T\> . Es igual a (T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[IEquatable \<T\> . Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_TABLEID](./jet-tableid-structure.md)
+[JET_TABLEID estructura](./jet-tableid-structure.md)
 
-[Miembros de JET_TABLEID](./jet-tableid-members.md)
+[JET_TABLEID miembros](./jet-tableid-members.md)
 
-[Equals (sobrecarga)](./jet-tableid.equals-method.md)
+[Sobrecarga igual a](./jet-tableid.equals-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,21 +1,21 @@
 ---
-description: El sistema difunde el \_ evento de dispositivo DBT CONFIGCHANGED para indicar que la configuración actual ha cambiado, debido a un acoplamiento o desacoplamiento. Una aplicación o un controlador que almacene datos en el registro con la clave de configuración de HKEY \_ Current \_ debe actualizar los datos.
+description: El sistema difunde el evento de dispositivo DBT CONFIGCHANGED para indicar que la configuración actual ha cambiado, debido a un \_ acoplamiento o desacoplado. Una aplicación o controlador que almacena datos en el Registro bajo la clave HKEY \_ CURRENT CONFIG debe actualizar los \_ datos.
 ms.assetid: e5e33970-b17e-4723-98aa-e242f90fe4e7
-title: Evento DBT_CONFIGCHANGED (DBT. h)
+title: DBT_CONFIGCHANGED evento (Dbt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d242832378ba9ca3d3006965719942aa41ecff93
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ba7e0d93b2a89793bb572a5c7563e54fa3114101443b43b8d6beac7955bdd6ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874525"
 ---
-# <a name="dbt_configchanged-event"></a>\_Evento DBT CONFIGCHANGED
+# <a name="dbt_configchanged-event"></a>Evento \_ CONFIGCHANGED de DBT
 
-El sistema difunde el \_ evento de dispositivo DBT CONFIGCHANGED para indicar que la configuración actual ha cambiado, debido a un acoplamiento o desacoplamiento. Una aplicación o un controlador que almacene datos en el registro con la clave de configuración de HKEY \_ Current \_ debe actualizar los datos.
+El sistema difunde el evento de dispositivo DBT CONFIGCHANGED para indicar que la configuración actual ha cambiado, debido a un \_ acoplamiento o desacoplado. Una aplicación o controlador que almacena datos en el Registro bajo la clave HKEY \_ CURRENT CONFIG debe actualizar los \_ datos.
 
-Para difundir este evento de dispositivo, el sistema usa el mensaje de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) con *wParam* establecido en DBT \_ CONFIGCHANGED y *lParam* establecido en cero.
+Para difundir este evento de dispositivo, el sistema usa el mensaje [**\_ WM DEVICECHANGE**](wm-devicechange.md) con *wParam* establecido en DBT CONFIGCHANGED y \_ *lParam* establecido en cero.
 
 
 ```C++
@@ -33,7 +33,7 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador a una ventana.
@@ -43,14 +43,14 @@ Identificador a una ventana.
 *uMsg* 
 </dt> <dd>
 
-Identificador del mensaje de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) .
+Identificador [**del mensaje WM \_ DEVICECHANGE.**](wm-devicechange.md)
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Establézcalo en DBT \_ CONFIGCHANGED.
+Establezca en DBT \_ CONFIGCHANGED.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Establecer en cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true**.
+Devuelve **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ Devuelve **true**.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>DBT. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
 
 
 
@@ -84,10 +84,10 @@ Devuelve **true**.
 [Eventos de dispositivo](device-events.md)
 </dt> <dt>
 
-[Eventos de administración de dispositivos](device-management-events.md)
+[Administración de dispositivos eventos](device-management-events.md)
 </dt> <dt>
 
-[**DEVICECHANGE de WM \_**](wm-devicechange.md)
+[**WM \_ DEVICECHANGE**](wm-devicechange.md)
 </dt> </dl>
 
  

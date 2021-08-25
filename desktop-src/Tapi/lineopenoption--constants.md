@@ -1,28 +1,28 @@
 ---
-description: Las \_ constantes LINEOPENOPTION muestran las opciones disponibles para abrir una línea.
+description: Las constantes LINEOPENOPTION \_ enumera las opciones disponibles para abrir una línea.
 ms.assetid: 361ae90c-a2cf-4107-a2da-80f561a82c56
-title: Constantes de LINEOPENOPTION_ (TAPI. h)
+title: LINEOPENOPTION_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dee9182ff7a28627eebd695ce5d9c0877460b15e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0dc6a4780b366b2dce08110ecce40c7140ab1d0956d788dce5a67d5d0501b6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739255"
 ---
-# <a name="lineopenoption_-constants"></a>Constantes de LINEOPENOPTION \_
+# <a name="lineopenoption_-constants"></a>LINEOPENOPTION \_ (Constantes)
 
-Las **\_ constantes LINEOPENOPTION** muestran las opciones disponibles para abrir una línea.
+Las **constantes LINEOPENOPTION \_ enumera** las opciones disponibles para abrir una línea.
 
 <dl> <dt>
 
-<span id="LINEOPENOPTION_PROXY"></span><span id="lineopenoption_proxy"></span>**\_proxy LINEOPENOPTION**
+<span id="LINEOPENOPTION_PROXY"></span><span id="lineopenoption_proxy"></span>**LINEOPENOPTION \_ PROXY**
 </dt> <dd> <dl> <dt>
 
 
 
-La aplicación está dispuesta a controlar las solicitudes de otras aplicaciones que tienen la línea abierta.
+La aplicación está dispuesto a controlar las solicitudes de otras aplicaciones que tienen abierta la línea.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,14 +32,14 @@ La aplicación está dispuesta a controlar las solicitudes de otras aplicaciones
 
 
 
-Se debe informar a la aplicación de las nuevas llamadas creadas en el dispositivo de línea solo si dichas llamadas aparecen en la dirección especificada en el miembro **dwAddressID** de la estructura [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) señalada por el parámetro *lpCallParams* .
+Solo se debe informar a la aplicación de las nuevas llamadas creadas en el dispositivo de línea si esas llamadas aparecen en la dirección especificada en el **miembro dwAddressID** en la estructura [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) a la que apunta el parámetro *lpCallParams.*
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Vea [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) para obtener más detalles sobre el funcionamiento de estas opciones.
+Consulte [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) para obtener más detalles sobre el funcionamiento de estas opciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,8 +47,8 @@ Vea [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) para obtener más
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTempFileOpenErrorException'
-title: Constructor de EsentTempFileOpenErrorException
+description: 'Más información sobre: Constructor EsentTempFileOpenErrorException'
+title: Constructor EsentTempFileOpenErrorException
 TOCTitle: 'EsentTempFileOpenErrorException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTempFileOpenErrorException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttempfileopenerrorexception.esenttempfileopenerrorexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 61c8f2c88fc7d0f070bce55f43e1ca2aad553c59
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58a0ef3af6f0496773561d65e37d661ed70b8e1770828d2410820b095362ec42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891625"
 ---
-# <a name="esenttempfileopenerrorexception-constructor"></a>Constructor de EsentTempFileOpenErrorException
+# <a name="esenttempfileopenerrorexception-constructor"></a>Constructor EsentTempFileOpenErrorException
 
 Inicializa una nueva instancia de la clase EsentTempFileOpenErrorException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentTempFileOpenErrorException()
 public EsentTempFileOpenErrorException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentTempFileOpenErrorException()
 
 [Miembros de EsentTempFileOpenErrorException](./esenttempfileopenerrorexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

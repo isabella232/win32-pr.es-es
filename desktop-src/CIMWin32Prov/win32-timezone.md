@@ -1,8 +1,8 @@
 ---
-description: La \_ zona horaria de Win32&\# 8194; La clase WMI representa la información de zona horaria de un equipo que ejecuta Windows, que incluye los cambios necesarios para realizar la transición a la transición del horario de verano.
+description: La zona horaria \_ win32&\# 8194; La clase WMI representa la información de zona horaria de un sistema informático que ejecuta Windows, que incluye los cambios necesarios para la transición al horario de verano.
 ms.assetid: c1c7731e-768f-42ea-a36c-57b00df6848e
 ms.tgt_platform: multiple
-title: Win32_TimeZone (clase)
+title: Win32_TimeZone clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -38,18 +38,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 433682f045ca7fb127c7dc69e3a26ed8356371ed
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 02b6d9d5c6100a652cf50096f5ef513fc164cfcfd2d8036e8444adc702459d1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827665"
 ---
-# <a name="win32_timezone-class"></a>\_Clase TimeZone de Win32
+# <a name="win32_timezone-class"></a>Clase TimeZone de Win32 \_
 
-La  [clase WMI](../wmisdk/retrieving-a-class.md) **\_ TimeZone de Win32** representa la información de zona horaria de un equipo que ejecuta Windows, que incluye los cambios necesarios para realizar la transición a la transición del horario de verano.
+La clase  [WMI](../wmisdk/retrieving-a-class.md) **\_ TimeZone de Win32** representa la información de zona horaria de un sistema informático que ejecuta Windows, que incluye los cambios necesarios para la transición a la transición del horario de verano.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -105,10 +105,10 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| de hora estructuras de tiempo de la \| [**\_ \_ información de zona horaria**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| "), [**unidades**](../wmisdk/standard-qualifiers.md) ("minutos")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE INFORMATION \| [**\_ \_ Bias"),**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| [**Units**](../wmisdk/standard-qualifiers.md) ("minutes")
 </dt> </dl>
 
-Diferencia actual para la conversión de hora local. La diferencia es la diferencia entre la hora universal coordinada (UTC) y la hora local. Todas las traducciones entre la hora UTC y la hora local se basan en la siguiente fórmula: UTC = hora local-diferencia. Esta propiedad es obligatoria.
+Sesgo actual para la traducción de la hora local. El sesgo es la diferencia entre la hora universal coordinada (UTC) y la hora local. Todas las traducciones entre utc y hora local se basan en la fórmula siguiente: UTC = hora local - sesgo. Esta propiedad es obligatoria.
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Breve descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -139,44 +139,44 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Time Structures Time \| [**\_ \_ Information**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information). \| DaylightBias"), [**unidades**](../wmisdk/standard-qualifiers.md) ("minutos")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de tiempo win32API \| TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightBias"), [**unidades**](../wmisdk/standard-qualifiers.md) ("minutos")
 </dt> </dl>
 
-Valor de diferencia que se va a usar durante las traducciones de hora local que se producen durante el horario de verano. Esta propiedad se omite si no se proporciona un valor para la propiedad **DaylightDay** . El valor de esta propiedad se agrega a la propiedad **Bias** para formar la diferencia usada durante el horario de verano. En la mayoría de las zonas horarias, el valor de esta propiedad es-60.
+Valor de sesgo que se usará durante las traducciones de hora local que se producen durante el horario de verano. Esta propiedad se omite si no se proporciona un valor para la propiedad **DaylightDay.** El valor de esta propiedad se agrega a la propiedad **Bias** para formar el sesgo usado durante el horario de verano. En la mayoría de las zonas horarias, el valor de esta propiedad es -60.
 
 </dd> <dt>
 
-**DaylightDay**
+**Día de verano**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wDay")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de tiempo de Win32API \| TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wDay")
 </dt> </dl>
 
-**DaylightDayOfWeek** de **DaylightMonth** cuando se produce la transición desde el horario estándar al horario de verano en este sistema operativo.
+**DaylightDayOfWeek del** **mes de** verano cuando se produce la transición del horario estándar al horario de verano en este sistema operativo.
 
-Ejemplo: Si el día de la transición (**DaylightDayOfWeek**) se produce en domingo, el valor "1" indica el primer domingo del **DaylightMonth**, "2" indica el segundo domingo, y así sucesivamente. El valor "5" indica el último **DaylightDayOfWeek** del mes.
+Ejemplo: si el día de transición (**DaylightDayOfWeek**) se produce en un domingo, el valor "1" indica el primer domingo del mes **de** verano , "2" indica el segundo domingo, y así sucesivamente. El valor "5" indica la última **daylightDayOfWeek** del mes.
 
 </dd> <dt>
 
 **DaylightDayOfWeek**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wDayOfWeek")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de tiempo de Win32API \| TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wDayOfWeek")
 </dt> </dl>
 
-Día de la semana en que se produce la transición desde el horario estándar al horario de verano en un sistema operativo.
+Día de la semana en el que se produce la transición del horario estándar al horario de verano en un sistema operativo.
 
 <dt>
 
@@ -236,16 +236,16 @@ Ejemplo: 1
 **DaylightHour**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wHour")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wHour")
 </dt> </dl>
 
-Hora del día en que se produce la transición desde el horario estándar al horario de verano en un sistema operativo.
+Hora del día en la que se produce la transición del horario estándar al horario de verano en un sistema operativo.
 
 Ejemplo: 2
 
@@ -254,32 +254,32 @@ Ejemplo: 2
 **DaylightMillisecond**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wMilliseconds")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wMilliseconds")
 </dt> </dl>
 
-Milisegundo de **DaylightSecond** cuando se produce la transición desde el horario estándar al horario de verano en un sistema operativo.
+Milisegundo de **DaylightSecond cuando** se produce la transición del horario estándar al horario de verano en un sistema operativo.
 
 </dd> <dt>
 
 **DaylightMinute**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wMinute")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wMinute")
 </dt> </dl>
 
-Minuto de **DaylightHour** cuando se produce la transición desde el horario estándar al horario de verano en un sistema operativo.
+Minuto del **horario de verano cuando** se produce la transición del horario estándar al horario de verano en un sistema operativo.
 
 Ejemplo: 59
 
@@ -288,16 +288,16 @@ Ejemplo: 59
 **DaylightMonth**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wMonth")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de tiempo de Win32API \| TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wMonth")
 </dt> </dl>
 
-Mes en el que se produce la transición desde el horario estándar al horario de verano en un sistema operativo.
+Mes en el que se produce la transición del horario estándar al horario de verano en un sistema operativo.
 
 <dt>
 
@@ -396,28 +396,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Time Structures \| [**\_ \_ información de zona horaria**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightName")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightName")
 </dt> </dl>
 
 Zona horaria que se representa cuando el horario de verano está en vigor.
 
-Ejemplo: "EDT" (horario de verano oriental)
+Ejemplo: "EDT" (hora de verano del Este)
 
 </dd> <dt>
 
 **DaylightSecond**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wSecond")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wSecond")
 </dt> </dl>
 
-Segundo de **DaylightMinute** cuando se produce la transición desde el horario estándar al horario de verano en un sistema operativo.
+Segundo de **DaylightMinute** cuando se produce la transición del horario estándar al horario de verano en un sistema operativo.
 
 Ejemplo: 59
 
@@ -426,16 +426,16 @@ Ejemplo: 59
 **DaylightYear**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wYear")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wYear")
 </dt> </dl>
 
-Año en vigor el horario de verano. Esta propiedad no es necesaria.
+Año en el que el horario de verano está en vigor. Esta propiedad no es necesaria.
 
 Ejemplo: 1997
 
@@ -452,7 +452,7 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -470,23 +470,23 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 
 Identificador por el que se conoce el objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
 **StandardBias**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Time Structures Time \| [**\_ \_ Information**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardBias"), [**Units**](../wmisdk/standard-qualifiers.md) ("minutes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardBias"), [**Units**](../wmisdk/standard-qualifiers.md) ("minutes")
 </dt> </dl>
 
-Valor de diferencia que se usa cuando el horario de verano no está en vigor. Esta propiedad se omite si no se proporciona un valor para **StandardDay** . El valor de esta propiedad se agrega a la propiedad **Bias** para formar la diferencia durante el horario estándar.
+Valor de sesgo que se usará cuando el horario de verano no esté en vigor. Esta propiedad se omite si no se proporciona un valor para **StandardDay.** El valor de esta propiedad se agrega a la propiedad **Bias** para formar el sesgo durante el tiempo estándar.
 
 Ejemplo: 0
 
@@ -495,34 +495,34 @@ Ejemplo: 0
 **StandardDay**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wDay")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wDay")
 </dt> </dl>
 
-**StandardDayOfWeek** de **StandardMonth** cuando se produce la transición del horario de verano al horario estándar en un sistema operativo.
+**StandardDayOfWeek del** **Mes** Estándar cuando se produce la transición del horario de verano al horario estándar en un sistema operativo.
 
-Si el día de la transición (**StandardDayOfWeek**) se produce en domingo, el valor "1" indica el primer domingo del **StandardMonth**, "2" indica el segundo domingo, y así sucesivamente. El valor "5" indica el último **StandardDayOfWeek** del mes.
+Si el día de transición (**StandardDayOfWeek**) se produce en un domingo, el valor "1" indica el primer domingo del **Mes** Estándar, "2" indica el segundo domingo, y así sucesivamente. El valor "5" indica el último **StandardDayOfWeek** del mes.
 
 </dd> <dt>
 
 **StandardDayOfWeek**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wDayOfWeek")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de tiempo de Win32API \| TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wDayOfWeek")
 </dt> </dl>
 
-Día de la semana en que se produce la transición del horario de verano a la hora estándar en un sistema operativo.
+Día de la semana en el que se produce la transición del horario de verano al horario estándar en un sistema operativo.
 
 <dt>
 
@@ -580,16 +580,16 @@ Día de la semana en que se produce la transición del horario de verano a la ho
 **StandardHour**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wHour")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de tiempo de Win32API \| TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wHour")
 </dt> </dl>
 
-Hora del día en que se produce la transición del horario de verano a la hora estándar en un sistema operativo.
+Hora del día en la que se produce la transición del horario de verano al horario estándar en un sistema operativo.
 
 Ejemplo: 11
 
@@ -598,32 +598,32 @@ Ejemplo: 11
 **StandardMillisecond**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wMilliseconds")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de tiempo win32API \| TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wMilliseconds")
 </dt> </dl>
 
-Milisegundo de **StandardSecond** cuando se produce la transición del horario de verano a la hora estándar en un sistema operativo.
+Milisegundo de **StandardSecond cuando** se produce la transición del horario de verano al horario estándar en un sistema operativo.
 
 </dd> <dt>
 
 **StandardMinute**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wMinute")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de tiempo de Win32API \| TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wMinute")
 </dt> </dl>
 
-Minuto de **StandardDay** cuando se produce la transición del horario de verano al horario estándar en un sistema operativo.
+Minuto de **StandardDay cuando** se produce la transición del horario de verano al horario estándar en un sistema operativo.
 
 Ejemplo: 59
 
@@ -632,16 +632,16 @@ Ejemplo: 59
 **StandardMonth**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wMonth")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de tiempo win32API \| TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wMonth")
 </dt> </dl>
 
-Mes en que se produce la transición del horario de verano al horario estándar en un sistema operativo.
+Mes en el que se produce la transición del horario de verano al horario estándar en un sistema operativo.
 
 <dt>
 
@@ -740,25 +740,25 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Time Structures \| [**\_ \_ información de zona horaria**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardName")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardName")
 </dt> </dl>
 
-Nombre de la zona horaria que se representa cuando está vigente la hora estándar.
+Nombre de la zona horaria que se representa cuando la hora estándar está en vigor.
 
-Ejemplo: "EST" (hora estándar del este)
+Ejemplo: "EST" (Hora estándar del Este)
 
 </dd> <dt>
 
 **StandardSecond**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wSecond")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de tiempo win32API \| TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wSecond")
 </dt> </dl>
 
 Segundo de **StandardMinute** cuando se produce la transición del horario de verano al horario estándar en un sistema operativo.
@@ -770,30 +770,30 @@ Ejemplo: 59
 **StandardYear**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api de \| hora estructuras de tiempo \| [**\_ \_**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wYear")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de tiempo win32API \| TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wYear")
 </dt> </dl>
 
-Año en el que está vigente la hora estándar. Esta propiedad no es necesaria.
+Año en el que la hora estándar está en vigor. Esta propiedad no es necesaria.
 
 Ejemplo: 1997
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ TimeZone de Win32** se deriva de la [**\_ configuración de CIM**](cim-setting.md).
+La **clase \_ TimeZone de Win32** se deriva de [**cim \_ setting**](cim-setting.md).
 
-No puede usar formatos de fecha y hora estándar, como 10/18/2002, al escribir consultas de WMI. En su lugar, debe convertir las fechas usadas en las consultas al formato UTC. Esto requiere dos pasos: 1) debe determinar el desplazamiento (diferencia en minutos) entre la zona horaria y la hora del meridiano de Greenwich, y 2) debe convertir 10/18/2002 a un valor UTC.
+No se pueden usar formatos de fecha y hora estándar (como 18/10/2002) al escribir consultas WMI. En su lugar, debe convertir las fechas usadas en las consultas al formato UTC. Esto requiere dos pasos: 1) Debe determinar el desplazamiento (diferencia en minutos) entre la zona horaria y la hora media de Greenwich, y 2) debe convertir 10/18/2002 en un valor UTC.
 
-Determinar el desplazamiento a partir de la hora del meridiano de Greenwich
+Determinar el desplazamiento de la hora media de Greenwich
 
-De forma no admitida, WMI dificulta el trabajo con fechas y horas. Afortunadamente, WMI facilita la determinación del desplazamiento entre la zona horaria y la hora del meridiano de Greenwich. La clase WMI la \_ zona horaria de Win32 incluye una propiedad-Bias, que devuelve el desplazamiento GMT.
+Sin embargo, WMI dificulta el trabajo con fechas y horas. Afortunadamente, WMI al menos facilita la determinación del desplazamiento entre la zona horaria y la hora media de Greenwich. La clase WMI Win32 \_ TimeZone incluye una propiedad (Bias) que devuelve el desplazamiento GMT.
 
 
 ```VB
@@ -811,7 +811,7 @@ Next
 
 Convertir una fecha en un valor UTC
 
-Después de determinar el desplazamiento GMT, debe convertir una fecha estándar como 10/18/2002 a una fecha UTC. Para convertir una fecha estándar en una fecha UTC, puede usar funciones de fecha de VBScript como Year, month y Day para aislar los componentes individuales que constituyen una fecha UTC. Una vez que tenga valores individuales para estos componentes, puede concatenarlos de la misma manera que cualquier otro valor de cadena. Las fechas UTC se tratan como cadenas porque el desplazamiento GMT debe anexarse al final. Si la fecha se ha detectado como un número, este valor:
+Después de determinar el desplazamiento GMT, debe convertir una fecha estándar como 10/18/2002 en una fecha UTC. Para convertir una fecha estándar en una fecha UTC, puede usar funciones de fecha de VBScript como Year, Month y Day para aislar los componentes individuales que son una fecha UTC. Después de tener valores individuales para estos componentes, puede concatenarlos de la misma manera que lo haría con cualquier otro valor de cadena. Las fechas UTC se tratan como cadenas porque el desplazamiento GMT debe anexarse al final. Si la fecha se ha visto como un número, este valor:
 
 `20011018113047.000000-480`
 
@@ -819,24 +819,24 @@ Se trataría erróneamente como una ecuación matemática (paréntesis agregados
 
 `(20011018113047.000000) - (480)`
 
-Por ejemplo, en la fecha 10/18/2002, los componentes individuales son:
+Por ejemplo, en la fecha 18/10/2002, los componentes individuales son:
 
 -   Año: 2002
 -   Mes: 10
 -   Día: 18
 
-El script necesitaría combinar estos tres valores: la cadena "113047,000000" (que representa la hora, incluidos los milisegundos) y el desplazamiento GMT para derivar una fecha UTC. Por ejemplo, (se han agregado paréntesis de nuevo para mayor claridad):
+El script tendría que combinar estos tres valores, la cadena "113047.000000" (que representa la hora, incluidos los milisegundos) y el desplazamiento GMT para derivar una fecha UTC. Por ejemplo, (paréntesis agregados de nuevo para mayor claridad):
 
 `(2002) & (10) & (18) & (113047.000000) & (-480)`
 
 > [!Note]  
-> Puede usar las funciones de VBScript hour, Minute y Second para convertir la parte de hora de una fecha UTC. Por lo tanto, una hora como 11:30:47 A.M. se convertiría en 113047.
+> Puede usar las funciones de VBScript Hour, Minute y Second para convertir la parte de la hora de una fecha UTC. Por lo tanto, una hora como 11:30:47 a. m. se convertiría en 113047.
 
  
 
-Hay un factor complicado. El mes debe ocupar las posiciones 5 y 6 en la cadena; el día debe ocupar las posiciones 7 y 8. Esto no es un problema con el mes 10 y el día 18. Pero, ¿cómo se obtiene el 5 de julio (mes 7, día 5) para rellenar las posiciones necesarias? La respuesta es agregar un cero inicial a cada valor, cambiando de 7 a 07 y del 5 al 05.
+Hay un factor complicante. El mes debe tomar las posiciones 5 y 6 de la cadena; el día debe tomar las posiciones 7 y 8. Esto no es ningún problema con el mes 10 y el día 18. Pero, ¿cómo puede obtener el 5 de julio (7 de mes, día 5) para rellenar los puestos necesarios? La respuesta es agregar un cero a la izquierda a cada valor, cambiando así el 7 a 07 y el 5 a 05.
 
-Para ello, utilice la función Len de VBScript para comprobar la longitud (número de caracteres) del mes y el día. Si la longitud es 1 (lo que significa que solo hay un carácter), agregue un cero a la izquierda. Modo
+Para ello, use la función Len de VBScript para comprobar la longitud (número de caracteres) del mes y el día. Si la longitud es 1 (lo que significa que solo hay un carácter), agregue un cero inicial. Así:
 
 
 ```VB
@@ -883,7 +883,7 @@ dtmTargetDate = dtmTargetDate & Cstr(strBias)
 
 
 
-El siguiente código de VBScript sampledetermines el desplazamiento GMT y, a continuación, convierte una fecha actual especificada (en este caso, 10/18/2002) en el formato de fecha y hora UTC. Una vez convertida la fecha, ese valor se utiliza para buscar en un equipo y devuelve una lista de todas las carpetas que se crearon después de 10/18/2002.
+El siguiente ejemplo de VBScript determina el desplazamiento GMT y, a continuación, convierte una fecha actual especificada (en este caso, 18/10/2002) al formato de fecha y hora UTC. Una vez convertida la fecha, ese valor se usa para buscar en un equipo y devuelve una lista de todas las carpetas que se crearon después del 18/10/2002.
 
 
 ```VB
@@ -924,7 +924,7 @@ Next
 
 
 
-En el ejemplo de código de VBScript siguiente se muestra la configuración de \_ las instancias de zona horaria de Win32.
+En el siguiente ejemplo de código de VBScript se muestra la configuración de las instancias \_ de TimeZone de Win32.
 
 
 ```VB
@@ -987,8 +987,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1009,7 +1009,7 @@ Next
 [Formato de fecha y hora](../wmisdk/date-and-time-format.md)
 </dt> <dt>
 
-[Tareas de WMI: fechas y horas](../wmisdk/wmi-tasks--dates-and-times.md)
+[Tareas wmi: fechas y horas](../wmisdk/wmi-tasks--dates-and-times.md)
 </dt> </dl>
 
  

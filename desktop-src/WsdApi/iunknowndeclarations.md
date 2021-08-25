@@ -4,12 +4,12 @@ ms.assetid: 347978e3-87f2-4a8b-969d-c196d1815881
 title: Elemento IUnknownDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4b8682b7286c5c99253df1ee1ae0efd235d5b8f
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 753d26238d91e7816becaad3810d0ec8568a5cbc972e7a404a1c3f3603d858e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856565"
 ---
 # <a name="iunknowndeclarations-element"></a>Elemento IUnknownDeclarations
 

@@ -1,44 +1,44 @@
 ---
-title: Cómo crear un control de List-View
-description: En este tema se muestra cómo crear un control de vista de lista. Para crear un control de vista de lista, use la función CreateWindow o CreateWindowEx y especifique la clase de ventana de ListView de WC \_ .
+title: Cómo crear un control List-View control
+description: En este tema se muestra cómo crear un control list-view. Para crear un control list-view, use las funciones CreateWindow o CreateWindowEx y especifique la clase \_ de ventana WC LISTVIEW.
 ms.assetid: FEAA0ACA-A086-46DF-9DD2-A3E32F2CCDA3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3050498b87aaf701249a06cfe2c3ad18afdc1d84
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: d71eddfb60a2ea035a5afe62423289da40a47b61841d3ba58c4cafa2824a65b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104488561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826615"
 ---
-# <a name="how-to-create-a-list-view-control"></a>Cómo crear un control de List-View
+# <a name="how-to-create-a-list-view-control"></a>Cómo crear un control List-View control
 
-En este tema se muestra cómo crear un control de vista de lista. Para crear un control de vista de lista, use la función [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especifique la clase de ventana de [**\_ ListView de WC**](common-control-window-classes.md) .
+En este tema se muestra cómo crear un control list-view. Para crear un control list-view, use las funciones [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especifique la [**clase de ventana WC \_ LISTVIEW.**](common-control-window-classes.md)
 
-Un control de vista de lista también se puede crear como parte de una plantilla de cuadro de diálogo. Debe especificar el [**\_ control de vista de WC**](common-control-window-classes.md) como el nombre de clase. Para usar un control de vista de lista como parte de una plantilla de cuadro de diálogo, debe llamar a [**InitCommonControls**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrols) o [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) antes de crear una instancia del cuadro de diálogo.
+También se puede crear un control de vista de lista como parte de una plantilla de cuadro de diálogo. Debe especificar [**WC \_ LISTVIEW como**](common-control-window-classes.md) nombre de clase. Para usar un control de vista de lista como parte de una plantilla de cuadro de diálogo, debe llamar a [**InitCommonControls**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrols) o [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) antes de crear una instancia del cuadro de diálogo.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-En primer lugar, registre la clase de ventana mediante una llamada a la función [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) y especificando el bit de [**\_ \_ las clases de ListView de ICC**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) en la estructura **InitCommonControlsEx** correspondiente. Esto garantiza que se cargue el archivo DLL de controles comunes. A continuación, use la función [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especifique la clase de ventana de [**\_ ListView de WC**](common-control-window-classes.md) .
+En primer lugar, registre la clase de ventana llamando a la función [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) y especificando el bit [**CLASS DE \_ \_ LISTVIEW DE LA CLASE DE INSTRUCCIÓN**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) EN LA ESTRUCTURA **INITCOMMONCONTROLSEX** que lo acompaña. Esto garantiza que se cargue el archivo DLL de controles comunes. A continuación, use [**las funciones CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) [**o CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especifique la [**clase de ventana WC \_ LISTVIEW.**](common-control-window-classes.md)
 
 > [!Note]  
-> De forma predeterminada, un control de vista de lista usa la fuente del título del icono. Sin embargo, puede utilizar un mensaje de [**WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont) para especificar la fuente que se va a usar para el texto. Debe enviar este mensaje antes de insertar elementos. El control utiliza las dimensiones de la fuente especificada por el mensaje de **WM \_ SETFONT** para determinar el espaciado y el diseño. También puede personalizar la fuente para cada elemento. Para obtener más información, vea [dibujo personalizado](custom-draw.md).
+> De forma predeterminada, un control de vista de lista usa la fuente de título del icono. Sin embargo, puede usar un mensaje [**\_ WM SETFONT**](/windows/desktop/winmsg/wm-setfont) para especificar la fuente que se usará para el texto. Debe enviar este mensaje antes de insertar los elementos. El control usa las dimensiones de la fuente especificadas por el mensaje **\_ WM SETFONT** para determinar el espaciado y el diseño. También puede personalizar la fuente de cada elemento. Para obtener más información, vea [Custom Draw](custom-draw.md).
 
  
 
-En el siguiente ejemplo de código de C++ se crea un control de vista de lista en la vista de informe.
+En el siguiente ejemplo de código de C++ se crea un control list-view en la vista de informe.
 
 
 ```C++
@@ -113,13 +113,13 @@ VOID SetView(HWND hWndListView, DWORD dwView)
 
 <dl> <dt>
 
-[Referencia de control de vista de lista](bumper-list-view-list-view-control-reference.md)
+[Referencia del control List-View](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Acerca de los controles List-View](list-view-controls-overview.md)
+[Acerca de List-View controles](list-view-controls-overview.md)
 </dt> <dt>
 
-[Usar controles List-View](using-list-view-controls.md)
+[Usar List-View controles](using-list-view-controls.md)
 </dt> </dl>
 
  

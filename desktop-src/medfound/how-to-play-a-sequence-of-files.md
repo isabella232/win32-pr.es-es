@@ -4,27 +4,27 @@ ms.assetid: ee16eaa3-0506-4444-b139-f8a8498d6597
 title: Cómo reproducir una secuencia de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58dc4d1523be4cc6cc09416096af260c9eae736c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1ddf9cfc6fe48caf5eb185a19ec98ac119fcfbbb78d5e2363bd2db9607a4875
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828165"
 ---
 # <a name="how-to-play-a-sequence-of-files"></a>Cómo reproducir una secuencia de archivos
 
-\[MFPlay está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible. \]
+\[MFPlay está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. \]
 
 En este tema se describe cómo reproducir una secuencia de archivos de audio y vídeo mediante MFPlay.
 
 
-El tema [Introducción con MFPlay](getting-started-with-mfplay.md) muestra cómo reproducir un solo archivo multimedia. También puede usar MFPlay para reproducir una secuencia de archivos.
+El tema [Tareas iniciales con MFPlay](getting-started-with-mfplay.md) muestra cómo reproducir un único archivo multimedia. También puede usar MFPlay para reproducir una secuencia de archivos.
 
 ### <a name="synchronous-blocking-method"></a>Método sincrónico (bloqueo)
 
-1.  Llame al método [**IMFPMediaPlayer:: CreateMediaItemFromURL**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl) . El método crea un elemento multimedia.
-2.  Llame a [**IMFPMediaPlayer:: SetMediaItem**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmediaitem) para poner en cola el elemento multimedia para la reproducción.
-3.  Llame a [**IMFPMediaPlayer::P establecer**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-play) para iniciar la reproducción.
+1.  Llame al [**método IMFPMediaPlayer::CreateMediaItemFromURL.**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl) El método crea un elemento multimedia.
+2.  Llame [**a IMFPMediaPlayer::SetMediaItem para**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmediaitem) poner en cola el elemento multimedia para su reproducción.
+3.  Llame [**a IMFPMediaPlayer::P lay para**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-play) iniciar la reproducción.
 
 Estos pasos se muestran en el código siguiente.
 
@@ -63,16 +63,16 @@ HRESULT OpenMediaFile(IMFPMediaPlayer *pPlayer, PCWSTR pwszURL)
 
 
 
-El método [**CreateMediaItemFromURL**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl) toma los siguientes parámetros:
+El [**método CreateMediaItemFromURL**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl) toma los parámetros siguientes:
 
 -   El primer parámetro es la dirección URL del archivo.
--   El segundo parámetro especifica si el método se bloquea. Especificar el valor **true**, como se muestra aquí, hace que el método se bloquee hasta que se cree el elemento multimedia.
--   El tercer parámetro asocia un valor **DWORD \_ ptr** arbitrario con el elemento multimedia. Puede obtener este valor más adelante llamando a [**IMFPMediaItem:: GetUserData**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaitem-getuserdata).
+-   El segundo parámetro especifica si el método se bloquea. Al especificar el valor **TRUE**, como se muestra aquí, el método se bloquea hasta que se crea el elemento multimedia.
+-   El tercer parámetro asocia un valor **\_ PTR de DWORD** arbitrario al elemento multimedia. Puede obtener este valor más adelante mediante una llamada [**a IMFPMediaItem::GetUserData**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaitem-getuserdata).
 -   El cuarto parámetro recibe un puntero a la interfaz [**IMFPMediaItem**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaitem) del elemento multimedia.
 
 ### <a name="asynchronous-non-blocking-method"></a>Método asincrónico (sin bloqueo)
 
-Evite la opción de bloqueo si llama a [**CreateMediaItemFromURL**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl) desde el subproceso de la interfaz de usuario, ya que puede tardar bastante tiempo en completarse. Normalmente, el método abre un archivo o una conexión de red y Lee los datos suficientes para analizar los encabezados de archivo, lo que puede llevar tiempo. Por lo tanto, suele ser mejor establecer el segundo parámetro en **false**. Esta opción hace que el método realice de forma asincrónica. Cuando se usa la opción asincrónica, el último parámetro debe ser **null**:
+Evite la opción de bloqueo si llama a [**CreateMediaItemFromURL desde**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl) el subproceso de interfaz de usuario, ya que puede tardar un tiempo considerable en completarse. Normalmente, el método abre un archivo o una conexión de red y lee suficientes datos para analizar los encabezados de archivo, que pueden tardar tiempo. Por lo tanto, generalmente es mejor establecer el segundo parámetro en **FALSE.** Esta opción hace que el método se realice de forma asincrónica. Cuando se usa la opción asincrónica, el último parámetro debe ser **NULL**:
 
 
 ```C++
@@ -86,7 +86,7 @@ Evite la opción de bloqueo si llama a [**CreateMediaItemFromURL**](/windows/des
 
 
 
-Cuando se crea el elemento multimedia, la aplicación recibe un **evento \_ \_ MEDIAITEM de \_ \_ tipo de evento MFP** . La estructura de datos para este evento contiene un puntero al elemento multimedia. Pase este puntero al método [**SetMediaItem**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmediaitem) para poner en cola el elemento para la reproducción.
+Cuando se crea el elemento multimedia, la aplicación recibe un evento **\_ MEDIAITEM CREATED DEL TIPO DE EVENTO \_ \_ \_ MFP.** La estructura de datos de este evento contiene un puntero al elemento multimedia. Pase este puntero al [**método SetMediaItem**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmediaitem) para poner en cola el elemento para su reproducción.
 
 
 ```C++

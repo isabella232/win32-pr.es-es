@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: SystemParameters. PageTempDBSmallest, campo'
-title: SystemParameters. PageTempDBSmallest, campo
+description: 'Más información sobre: Campo SystemParameters.PageTempDBSmallest'
+title: Campo SystemParameters.PageTempDBSmallest
 TOCTitle: PageTempDBSmallest field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.SystemParameters.PageTempDBSmallest
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.pagetempdbsmallest(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fa575bf30c71f6e43d1fd929bc40497d4cdb901e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36b7286d606d937dbdbf5eac6fbb64788042c02ffee16d2b6c487d8a6553ae2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780215"
 ---
-# <a name="systemparameterspagetempdbsmallest-field"></a>SystemParameters. PageTempDBSmallest, campo
+# <a name="systemparameterspagetempdbsmallest-field"></a>Campo SystemParameters.PageTempDBSmallest
 
-El número de páginas que proporciona la base de datos temporal más pequeña posible.
+Número de páginas que proporciona la base de datos temporal más pequeña posible.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ value = SystemParameters.PageTempDBSmallest
 public const int PageTempDBSmallest
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
 [SystemParameters (clase)](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

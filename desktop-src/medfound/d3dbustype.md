@@ -1,7 +1,7 @@
 ---
-description: Especifica el tipo de bus de e/s utilizado por el adaptador de gráficos.
+description: Especifica el tipo de bus de E/S utilizado por el adaptador de gráficos.
 ms.assetid: 11bb7e0e-8d49-45f2-89aa-7583dd925edf
-title: Enumeración D3DBUSTYPE (D3d9types. h)
+title: Enumeración D3DBUSTYPE (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 807e5a57c4abbf57c241643a3e7fea47606fbf75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cece215946406bedcca2cbfdd2b64bfdb5df00208b2d84cf2aa90fdb89b516bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828385"
 ---
-# <a name="d3dbustype-enumeration"></a>Enumeración D3DBUSTYPE
+# <a name="d3dbustype-enumeration"></a>D3DBUSTYPE (enumeración)
 
-Especifica el tipo de bus de e/s utilizado por el adaptador de gráficos.
+Especifica el tipo de bus de E/S utilizado por el adaptador de gráficos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,14 +49,14 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="D3DBUSTYPE_OTHER"></span><span id="d3dbustype_other"></span>**D3DBUSTYPE \_ otro**
+<span id="D3DBUSTYPE_OTHER"></span><span id="d3dbustype_other"></span>**D3DBUSTYPE \_ OTHER**
 </dt> <dd>
 
-Indica un tipo de bus distinto de los tipos que se enumeran aquí.
+Indica un tipo de bus distinto de los tipos enumerados aquí.
 
 </dd> <dt>
 
-<span id="D3DBUSTYPE_PCI"></span><span id="d3dbustype_pci"></span>**\_PCI D3DBUSTYPE**
+<span id="D3DBUSTYPE_PCI"></span><span id="d3dbustype_pci"></span>**D3DBUSTYPE \_ PCI**
 </dt> <dd>
 
 Bus PCI.
@@ -80,55 +80,55 @@ Bus PCI Express.
 <span id="D3DBUSTYPE_AGP"></span><span id="d3dbustype_agp"></span>**D3DBUSTYPE \_ AGP**
 </dt> <dd>
 
-Bus del puerto de gráficos acelerado (AGP).
+Bus de puerto de gráficos acelerados (AGP).
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_INSIDE_OF_CHIPSET"></span><span id="d3dbusimpl_modifier_inside_of_chipset"></span>**D3DBUSIMPL \_ modificador \_ dentro \_ del \_ chipset**
+<span id="D3DBUSIMPL_MODIFIER_INSIDE_OF_CHIPSET"></span><span id="d3dbusimpl_modifier_inside_of_chipset"></span>**MODIFICADOR D3DBUSIMPL \_ DENTRO DEL CONJUNTO DE \_ \_ \_ CHIPS**
 </dt> <dd>
 
-La implementación del adaptador de gráficos está en el puente norte del chipset de la placa base. Esta marca implica que los datos nunca atraviesan un bus de expansión (como PCI o AGP) cuando se transfieren de la memoria principal al adaptador de gráficos.
+La implementación del adaptador de gráficos está en el puente norte de un conjunto de chips de placa base. Esta marca implica que los datos nunca van a través de un bus de expansión (como PCI o AGP) cuando se transfieren de la memoria principal al adaptador de gráficos.
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_CHIP"></span><span id="d3dbusimpl_modifier_tracks_on_mother_board_to_chip"></span>**D3DBUSIMPL el \_ modificador \_ realiza un seguimiento \_ de la \_ placa madre en \_ \_ \_ chip**
+<span id="D3DBUSIMPL_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_CHIP"></span><span id="d3dbusimpl_modifier_tracks_on_mother_board_to_chip"></span>**LAS PISTAS DEL MODIFICADOR D3DBUSIMPL \_ EN LA PLACA DE LA MADRE AL \_ \_ \_ \_ \_ \_ CHIP**
 </dt> <dd>
 
-Indica que el adaptador de gráficos está conectado al puente norte del chipset de la placa base mediante el seguimiento de la placa base y que todos los chips del adaptador gráfico están soldados a la placa base. Esta marca implica que los datos nunca atraviesan un bus de expansión (como PCI o AGP) cuando se transfieren de la memoria principal al adaptador de gráficos.
+Indica que el adaptador de gráficos está conectado al puente norte de un conjunto de chips de la placa base mediante pistas en la placa base y que todos los chips del adaptador de gráficos se insonda en la placa base. Esta marca implica que los datos nunca van a través de un bus de expansión (como PCI o AGP) cuando se transfieren de la memoria principal al adaptador de gráficos.
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_SOCKET"></span><span id="d3dbusimpl_modifier_tracks_on_mother_board_to_socket"></span>**D3DBUSIMPL el \_ modificador \_ realiza un seguimiento \_ de la \_ placa madre \_ \_ \_ en el socket**
+<span id="D3DBUSIMPL_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_SOCKET"></span><span id="d3dbusimpl_modifier_tracks_on_mother_board_to_socket"></span>**EL MODIFICADOR D3DBUSIMPL \_ REALIZA UN SEGUIMIENTO DE LA PLACA \_ \_ \_ \_ NODRIZA \_ A \_ SOCKET**
 </dt> <dd>
 
-El adaptador de gráficos se conecta al puente norte del chipset de la placa base siguiendo las pistas de la placa base, y todos los chips del adaptador de gráficos se conectan a través de sockets a la placa base.
+El adaptador de gráficos está conectado al puente norte de una placa base mediante pistas en la placa base, y todos los chips del adaptador de gráficos se conectan a través de sockets a la placa base.
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR"></span><span id="d3dbusimpl_modifier_daughter_board_connector"></span>**\_Conector de la \_ \_ placa secundaria del modificador D3DBUSIMPL \_**
+<span id="D3DBUSIMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR"></span><span id="d3dbusimpl_modifier_daughter_board_connector"></span>**CONECTOR DE PLACA DE PLACA DEL \_ MODIFICADOR \_ D3DBUSIMPL \_ \_**
 </dt> <dd>
 
-El adaptador de gráficos se conecta a la placa base a través de un conector de daughterboard.
+El adaptador de gráficos está conectado a la placa base a través de un conector de placa de placa.
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR_INSIDE_OF_NUAE"></span><span id="d3dbusimpl_modifier_daughter_board_connector_inside_of_nuae"></span>**\_ \_ Conector de la placa secundaria del modificador D3DBUSIMPL \_ \_ \_ dentro \_ de \_ NUAE**
+<span id="D3DBUSIMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR_INSIDE_OF_NUAE"></span><span id="d3dbusimpl_modifier_daughter_board_connector_inside_of_nuae"></span>**CONECTOR DE PLACA DEL MODIFICADOR D3DBUSIMPL \_ \_ EN \_ \_ \_ \_ \_ NUAE**
 </dt> <dd>
 
-El adaptador de gráficos se conecta a la placa base a través de un conector de daughterboard y el adaptador de gráficos está dentro de un contenedor que no es accesible para el usuario.
+El adaptador de gráficos está conectado a la placa base a través de un conector de placa de placa y el adaptador de gráficos está dentro de un gabinete al que no puede acceder el usuario.
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_NON_STANDARD"></span><span id="d3dbusimpl_modifier_non_standard"></span>**\_Modificador D3DBUSIMPL \_ no \_ estándar**
+<span id="D3DBUSIMPL_MODIFIER_NON_STANDARD"></span><span id="d3dbusimpl_modifier_non_standard"></span>**MODIFICADOR D3DBUSIMPL \_ \_ NO \_ ESTÁNDAR**
 </dt> <dd>
 
-Se establece una de las marcas de modificador XXX del modificador D3DBUSIMPL \_ \_ \_ .
+Se establece una de las marcas XXX del MODIFICADOR \_ \_ \_ D3DBUSIMPL.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se pueden establecer tres marcas como máximo. Las marcas en el intervalo de 0x00 a 0x04 (**D3DBUSTYPE \_ XXX**) proporcionan el tipo de bus básico. Las marcas en el intervalo de 0x10000 a 0x50000 (**D3DBUSIMPL \_ modificador \_ XXX**) modifican la descripción básica. El controlador establece una marca de tipo bus y puede establecer cero o un marcador de modificador. Si el controlador establece una marca de modificador, también establece la marca del **\_ modificador D3DBUSIMPL \_ no \_ estándar** . Las marcas se combinan con una **operación OR** bit a bit.
+Se pueden establecer hasta tres marcas. Las marcas del intervalo 0x00 a 0x04 (**D3DBUSTYPE \_ Xxx**) proporcionan el tipo de bus básico. Las marcas del intervalo 0x10000 a 0x50000 (**D3DBUSIMPL \_ MODIFIER \_ Xxx**) modifican la descripción básica. El controlador establece una marca de tipo bus y puede establecer cero o una marca modificadora. Si el controlador establece una marca modificadora, también establece la marca **NON STANDARD DEL MODIFICADOR \_ \_ \_ D3DBUSIMPL.** Las marcas se combinan con un OR bit a **bit.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -136,9 +136,9 @@ Se pueden establecer tres marcas como máximo. Las marcas en el intervalo de 0x0
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>D3d9types. h (incluye d3d9. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>D3d9types.h (incluir D3d9.h)</dt> </dl> |
 
 
 

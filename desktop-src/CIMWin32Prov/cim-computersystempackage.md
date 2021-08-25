@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM ComputerSystemPackage representa una asociación que define explícitamente la relación entre los sistemas de equipos unitarios y uno o varios paquetes físicos.
+description: La clase CIM ComputerSystemPackage representa una asociación que define explícitamente la relación entre los sistemas \_ informáticos unitarios y uno o varios paquetes físicos.
 ms.assetid: a91bf09d-0768-4d2a-a0e5-16237b2e6ddc
 ms.tgt_platform: multiple
-title: CIM_ComputerSystemPackage (clase)
+title: CIM_ComputerSystemPackage clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a5a2f166c4494b6120bfc5e2aaedeaba4721b155
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a5901b77fd3ea3305f7973fc194aefc2263efeec3181ea1f76e3bebfde87bf73
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924955"
 ---
-# <a name="cim_computersystempackage-class"></a>\_Clase ComputerSystemPackage de CIM
+# <a name="cim_computersystempackage-class"></a>Cim \_ ComputerSystemPackage (clase)
 
-La clase **CIM \_ ComputerSystemPackage** representa una asociación que define explícitamente la relación entre los sistemas de equipos unitarios y uno o varios paquetes físicos. La asociación es similar a la forma en que los dispositivos lógicos se encontraban en los elementos físicos.
+La **clase CIM \_ ComputerSystemPackage representa** una asociación que define explícitamente la relación entre los sistemas de equipos unitarios y uno o varios paquetes físicos. La asociación es similar a la forma en que los elementos físicos realizan los dispositivos lógicos.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,33 +47,33 @@ class CIM_ComputerSystemPackage : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ComputerSystemPackage** tiene estos tipos de miembros:
+La **clase \_ ComputerSystemPackage** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ComputerSystemPackage** tiene estas propiedades.
+La **clase \_ ComputerSystemPackage** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ PhysicalPackage**
+Tipo de datos: **\_ CIM PhysicalPackage**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ PhysicalPackage de CIM**](cim-physicalpackage.md) que describe los paquetes físicos que obtienen un sistema de equipo unitario.
+Un [**paquete \_ físico CIM**](cim-physicalpackage.md) que describe los paquetes físicos que se dan cuenta de un sistema informático unitario.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **CIM \_ UnitaryComputerSystem**
@@ -82,20 +82,20 @@ Tipo de datos: **CIM \_ UnitaryComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ UnitaryComputerSystem de CIM**](cim-unitarycomputersystem.md) que describe el sistema del equipo unitario.
+Un [**\_ unitaryComputerSystem de CIM**](cim-unitarycomputersystem.md) que describe el sistema de equipo unitario.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ ComputerSystemPackage** se deriva de [**la \_ dependencia CIM**](cim-dependency.md).
+La **clase \_ ComputerSystemPackage** de CIM se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

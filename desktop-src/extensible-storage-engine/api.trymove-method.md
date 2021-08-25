@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. TryMove (método)'
-title: Método API. TryMove
+description: 'Más información sobre: Método Api.TryMove'
+title: Método Api.TryMove
 TOCTitle: 'TryMove method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.TryMove(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_Move,Microsoft.Isam.Esent.Interop.MoveGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.trymove(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6d4b3aa596bb5e813d87dcc6f278112fe1e4cbdb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 973188fb145c1d6c8fc82e2d2566643e98011857a36b1c94399cabda9659ed67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738555"
 ---
-# <a name="apitrymove-method"></a>Método API. TryMove
+# <a name="apitrymove-method"></a>Método Api.TryMove
 
-Intente desplazarse por un índice. Si la navegación se realiza correctamente, este método devuelve true. Si no hay ningún registro para navegar a este método, devuelve false; se producirá una excepción para otros errores.
+Intente navegar por un índice. Si la navegación se realiza correctamente, este método devuelve true. Si no hay ningún registro para navegar a este método, devuelve false; Se producirá una excepción para otros errores.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -71,35 +71,35 @@ public static bool TryMove(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se va a colocar.
+    Cursor que se colocará.
 
 <!-- end list -->
 
   - mover  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_Move](./jet-move-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_Move](./jet-move-enumeration.md)  
     
-    Dirección en la que se va a desplace.
+    Dirección en la que se moverá.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. MoveGrbit](./movegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.MoveGrbit](./movegrbit-enumeration.md)  
     
     Opciones de movimiento.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True si el movimiento se realizó correctamente.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True si el traslado se ha realizado correctamente.  
 
 ## <a name="see-also"></a>Vea también
 
@@ -107,6 +107,6 @@ True si el movimiento se realizó correctamente.
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

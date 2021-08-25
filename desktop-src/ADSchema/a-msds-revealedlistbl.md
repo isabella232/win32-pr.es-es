@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Revelad-List-BL
-description: Atributo de vínculo hacia atrás para MS-DS-Revelad-List.
+title: Atributo ms-DS-Revealed-List-BL
+description: Atributo de vínculo hacia atrás para ms-DS-Revealed-List.
 ms.assetid: 12979dc0-674b-4102-a433-0d4ff6989248
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DS-Revelad-List-BL
-- Esquema de AD de atributo msDS-RevealedListBL
+- Esquema de AD del atributo ms-DS-Revealed-List-BL
+- Esquema de AD del atributo msDS-RevealedListBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3d99b745ccdf696786247d0926e3005112b1c42
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7c954fb95d0e41aebd5ac5d821d9c4d023aff75644bddda8b4fad53e801e1f69
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925465"
 ---
-# <a name="ms-ds-revealed-list-bl-attribute"></a>atributo MS-DS-Revelad-List-BL
+# <a name="ms-ds-revealed-list-bl-attribute"></a>Atributo ms-DS-Revealed-List-BL
 
-Atributo de vínculo hacia atrás para [**MS-DS-revelad-List**](a-msds-revealedlist.md).
+Atributo de vínculo hacia atrás [**para ms-DS-Revealed-List**](a-msds-revealedlist.md).
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-Revelad-List-BL                  |
-| Nombre para mostrar de LDAP | msDS-RevealedListBL                     |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-Revealed-List-BL                  |
+| Ldap-Display-Name | msDS-RevealedListBL                     |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1975                 |
-| System-ID-GUID    | aa1c88fd-b0f6-429f-b2ca-9d902266e808    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | aa1c88fd-b0f6-429f-b2ca-9d902266e808    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -52,13 +52,13 @@ Atributo de vínculo hacia atrás para [**MS-DS-revelad-List**](a-msds-revealedl
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -73,13 +73,13 @@ Atributo de vínculo hacia atrás para [**MS-DS-revelad-List**](a-msds-revealedl
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -94,13 +94,13 @@ Atributo de vínculo hacia atrás para [**MS-DS-revelad-List**](a-msds-revealedl
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

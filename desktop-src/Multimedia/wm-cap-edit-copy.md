@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_EDIT_COPY (VFW. h)
-description: El \_ \_ mensaje de copia de edición de Cap de WM \_ copia el contenido del búfer de trama de vídeo y la paleta asociada en el portapapeles. Puede enviar este mensaje explícitamente o mediante la macro capEditCopy.
+title: WM_CAP_EDIT_COPY mensaje (Vfw.h)
+description: El mensaje EDIT COPY de WM CAP copia el contenido del búfer de fotogramas de \_ vídeo y la paleta asociada en el \_ \_ Portapapeles. Puede enviar este mensaje explícitamente o mediante la macro capEditCopy.
 ms.assetid: 16f1dd7d-af4d-4096-add8-eec5f0a0607f
 keywords:
-- Mensaje de WM_CAP_EDIT_COPY de Windows multimedia
+- WM_CAP_EDIT_COPY mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb81c21fc10846adaa113c02b6250bbb35cfff50
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e944273ff8519aefa52803b2072199760a480e0fcb2a76dd314b578dcbcfdf4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892085"
 ---
-# <a name="wm_cap_edit_copy-message"></a>\_Mensaje de \_ copia de edición de Cap de WM \_
+# <a name="wm_cap_edit_copy-message"></a>Mensaje \_ EDIT \_ COPY \_ de WM CAP
 
-El mensaje de copia de edición de Cap de WM copia el contenido del búfer de trama de vídeo y la paleta asociada en el portapapeles. **\_ \_ \_** Puede enviar este mensaje explícitamente o mediante la macro [**capEditCopy**](/windows/desktop/api/Vfw/nf-vfw-capeditcopy) .
+El **mensaje EDIT COPY \_ \_ \_ de WM CAP** copia el contenido del búfer de fotogramas de vídeo y la paleta asociada en el Portapapeles. Puede enviar este mensaje explícitamente o mediante la [**macro capEditCopy.**](/windows/desktop/api/Vfw/nf-vfw-capeditcopy)
 
 
 ```C++
@@ -36,7 +36,7 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Devuelve **true** si es correcto o **false** en caso contrario.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

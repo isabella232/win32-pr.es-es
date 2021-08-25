@@ -1,9 +1,9 @@
 ---
-title: Propiedad SplitButton. ButtonItem
-description: Representa un contenedor para un botón o botón de alternancia que expone el comando predeterminado de un botón de expansión.
+title: Propiedad SplitButton.ButtonItem
+description: Representa un contenedor para un botón o botón de alternancia que expone el comando predeterminado de un botón de división.
 ms.assetid: 3d46d606-238d-46d4-b92e-dfd759951770
 keywords:
-- Propiedad SplitButton. ButtonItem de la cinta de opciones de Windows
+- Propiedad SplitButton.ButtonItem Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bf1e1cb908ce9a86f23f75d17bf2e76797997db
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f49f316f7c740b434f761bbe4c00906c8f76b5027af9fcc87317af2a51960dab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840695"
 ---
-# <a name="splitbuttonbuttonitem-property"></a>Propiedad SplitButton. ButtonItem
+# <a name="splitbuttonbuttonitem-property"></a>Propiedad SplitButton.ButtonItem
 
-Representa un contenedor para un [botón](windowsribbon-controls-button.md) o [botón de alternancia](windowsribbon-controls-togglebutton.md) que expone el comando predeterminado de un [botón de expansión](windowsribbon-controls-splitbutton.md).
+Representa un contenedor para un [botón o](windowsribbon-controls-button.md) [botón de](windowsribbon-controls-togglebutton.md) alternancia que expone el comando predeterminado de un botón [de división](windowsribbon-controls-splitbutton.md).
 
 ## <a name="usage"></a>Uso
 
@@ -41,8 +41,8 @@ No hay atributos.
 
 | Elemento                                                               | Descripción                                   |
 |-----------------------------------------------------------------------|-----------------------------------------------|
-| [**Botón**](windowsribbon-element-button.md)<br/>             | Puede aparecer como máximo una vez<br/> <br/> |
-| [**ToggleButton**](windowsribbon-element-togglebutton.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
+| [**Botón**](windowsribbon-element-button.md)<br/>             | Puede producirse como máximo una vez<br/> <br/> |
+| [**ToggleButton**](windowsribbon-element-togglebutton.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
 
 
 
@@ -56,19 +56,19 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse como máximo una vez para cada [**splitButton**](windowsribbon-element-splitbutton.md).
+Puede producirse como máximo una vez para cada [**SplitButton**](windowsribbon-element-splitbutton.md).
 
-Cada **splitButton. ButtonItem** solo puede contener un [**botón**](windowsribbon-element-button.md) o un elemento secundario [**ToggleButton**](windowsribbon-element-togglebutton.md) .
+Cada **SplitButton.ButtonItem** solo puede contener un [**elemento secundario Button**](windowsribbon-element-button.md) o [**ToggleButton.**](windowsribbon-element-togglebutton.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el [botón de expansión](windowsribbon-controls-splitbutton.md).
+En el ejemplo siguiente se muestra el marcado básico para el [botón Dividir](windowsribbon-controls-splitbutton.md).
 
-En esta sección de código se muestran las declaraciones de comandos [**splitButton**](windowsribbon-element-splitbutton.md) y **splitButton. ButtonItem** , con un [**Grupo**](windowsribbon-element-group.md) asociado que funciona como contenedor primario del elemento **splitButton** .
+En esta sección de código se muestran las declaraciones [**SplitButton**](windowsribbon-element-splitbutton.md) y **SplitButton.ButtonItem** Command, con un grupo asociado que funciona como contenedor primario para el **elemento SplitButton.** [](windowsribbon-element-group.md)
 
 
 ```XML
@@ -112,7 +112,7 @@ En esta sección de código se muestran las declaraciones de comandos [**splitBu
 
 
 
-En esta sección de código se muestran las declaraciones de control [**splitButton**](windowsribbon-element-splitbutton.md) y **splitButton. ButtonItem** .
+En esta sección de código se muestran las [**declaraciones**](windowsribbon-element-splitbutton.md) de control **SplitButton y SplitButton.ButtonItem.**
 
 
 ```XML
@@ -149,8 +149,8 @@ En esta sección de código se muestran las declaraciones de control [**splitBut
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -158,7 +158,7 @@ En esta sección de código se muestran las declaraciones de control [**splitBut
 
 <dl> <dt>
 
-[Control de botón de expansión](windowsribbon-controls-splitbutton.md)
+[Split Button (Control)](windowsribbon-controls-splitbutton.md)
 </dt> </dl>
 
  

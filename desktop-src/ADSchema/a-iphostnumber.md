@@ -1,10 +1,10 @@
 ---
-title: atributo ipHostNumber
-description: Contiene la dirección IP del host en notación decimal con puntos, omitiendo los ceros a la izquierda.
+title: Atributo ipHostNumber
+description: Contiene la dirección IP del host en notación decimal de puntos, omitiendo los ceros iniciales.
 ms.assetid: 0ac29b9c-17eb-483e-9c1b-1c853a197cfc
 ms.tgt_platform: multiple
 keywords:
-- ipHostNumber esquema de AD de atributos
+- Esquema de AD del atributo ipHostNumber
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44ab93428b683e39fe2081c7f58262cb7bde7280
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ce17bbbf9bb928ce3b71b66f8fccdbb74d4a9a9669b4b7a5dcca64c4fab1cce6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925165"
 ---
-# <a name="iphostnumber-attribute"></a>atributo ipHostNumber
+# <a name="iphostnumber-attribute"></a>Atributo ipHostNumber
 
-Contiene la dirección IP del host en notación decimal con puntos, omitiendo los ceros a la izquierda.
+Contiene la dirección IP del host en notación decimal de puntos, omitiendo los ceros iniciales.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | ipHostNumber                         |
-| Nombre para mostrar de LDAP | ipHostNumber                         |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | ipHostNumber                         |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.19                     |
-| System-ID-GUID    | de8bb721-85dc-4fde-b687-9657688e667e |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | de8bb721-85dc-4fde-b687-9657688e667e |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -52,13 +52,13 @@ Contiene la dirección IP del host en notación decimal con puntos, omitiendo lo
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | False                                 |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Falso                                 |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -73,13 +73,13 @@ Contiene la dirección IP del host en notación decimal con puntos, omitiendo lo
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | False                                 |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Falso                                 |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -94,13 +94,13 @@ Contiene la dirección IP del host en notación decimal con puntos, omitiendo lo
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | False                                 |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Falso                                 |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -115,13 +115,13 @@ Contiene la dirección IP del host en notación decimal con puntos, omitiendo lo
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | False                                 |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Falso                                 |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |

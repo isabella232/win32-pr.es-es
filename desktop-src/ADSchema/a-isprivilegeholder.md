@@ -1,11 +1,11 @@
 ---
-title: Atributo is-privileged
+title: Atributo Is-Privilege-Holder
 description: Vínculo hacia atrás a los privilegios mantenidos por una entidad de seguridad determinada.
 ms.assetid: 94355fbc-f7d8-460b-a516-1576629ca63e
 ms.tgt_platform: multiple
 keywords:
-- Atributo is-Privilege-contenedor AD Schema
-- isPrivilegeHolder esquema de AD de atributos
+- Esquema de AD del atributo Is-Privilege-Holder
+- Esquema de AD del atributo isPrivilegeHolder
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 895a0202f6ca51ffe7982f33c1fc9f02d021d2a9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d78c64075425e631ca6e3ad5bd78079f0f2682ad047ef49465f579b9e2b17360
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924805"
 ---
-# <a name="is-privilege-holder-attribute"></a>Atributo is-privileged
+# <a name="is-privilege-holder-attribute"></a>Atributo Is-Privilege-Holder
 
 Vínculo hacia atrás a los privilegios mantenidos por una entidad de seguridad determinada.
 
@@ -29,14 +29,14 @@ Vínculo hacia atrás a los privilegios mantenidos por una entidad de seguridad 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | Es-titular de privilegios                     |
-| Nombre para mostrar de LDAP | isPrivilegeHolder                       |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Is-Privilege-Holder                     |
+| Ldap-Display-Name | isPrivilegeHolder                       |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.638                  |
-| System-ID-GUID    | 19405b9c-3cfa-11d1-a9c0-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 19405b9c-3cfa-11d1-a9c0-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ Vínculo hacia atrás a los privilegios mantenidos por una entidad de seguridad 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 71                              |
+| Id. de vínculo                | 71                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -76,13 +76,13 @@ Vínculo hacia atrás a los privilegios mantenidos por una entidad de seguridad 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 71                              |
+| Id. de vínculo                | 71                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -97,13 +97,13 @@ Vínculo hacia atrás a los privilegios mantenidos por una entidad de seguridad 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 71                              |
+| Id. de vínculo                | 71                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -118,13 +118,13 @@ Vínculo hacia atrás a los privilegios mantenidos por una entidad de seguridad 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 71                              |
+| Id. de vínculo                | 71                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -139,13 +139,13 @@ Vínculo hacia atrás a los privilegios mantenidos por una entidad de seguridad 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 71                              |
+| Id. de vínculo                | 71                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -160,13 +160,13 @@ Vínculo hacia atrás a los privilegios mantenidos por una entidad de seguridad 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 71                              |
+| Id. de vínculo                | 71                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

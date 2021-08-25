@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-retirada-REPL-NC-Signatures
-description: Información acerca de los contextos de nomenclatura que ya no se encuentran en este equipo.
+title: Atributo ms-DS-Retired-Repl-NC-Signatures
+description: Información sobre los contextos de nomenclatura que ya no se mantienen en este equipo.
 ms.assetid: bb4f0941-1a20-422d-aa50-af03eeb95f6c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-retirado-REPL-NC-Signatures
-- Esquema de AD de atributo msDS-RetiredReplNCSignatures
+- Esquema de AD del atributo ms-DS-Retired-Repl-NC-Signatures
+- msDS-RetiredReplNCSignatures attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a15544650069ce9e10668bb7ce3d5e0d75299528
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5b71d442759e75cc7ce6139ecb099e80c428c2d1f37023b439e28668ef01384b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925605"
 ---
-# <a name="ms-ds-retired-repl-nc-signatures-attribute"></a>atributo MS-DS-retirada-REPL-NC-Signatures
+# <a name="ms-ds-retired-repl-nc-signatures-attribute"></a>Atributo ms-DS-Retired-Repl-NC-Signatures
 
-Información acerca de los contextos de nomenclatura que ya no se encuentran en este equipo.
+Información sobre los contextos de nomenclatura que ya no se mantienen en este equipo.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-DS-retirado-REPL-NC-Signatures                      |
-| Nombre para mostrar de LDAP | msDS-RetiredReplNCSignatures                          |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-DS-Retired-Repl-NC-Signatures                      |
+| Ldap-Display-Name | msDS-RetiredReplNCSignatures                          |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1826                               |
-| System-ID-GUID    | d5b35506-19d6-4d26-9afb-11357ac99b5e                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | d5b35506-19d6-4d26-9afb-11357ac99b5e                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
 ## <a name="implementations"></a>Implementaciones
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -55,13 +55,13 @@ Información acerca de los contextos de nomenclatura que ya no se encuentran en 
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -70,19 +70,19 @@ Información acerca de los contextos de nomenclatura que ya no se encuentran en 
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -97,13 +97,13 @@ Información acerca de los contextos de nomenclatura que ya no se encuentran en 
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -118,13 +118,13 @@ Información acerca de los contextos de nomenclatura que ya no se encuentran en 
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -139,13 +139,13 @@ Información acerca de los contextos de nomenclatura que ya no se encuentran en 
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -160,13 +160,13 @@ Información acerca de los contextos de nomenclatura que ya no se encuentran en 
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |

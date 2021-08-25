@@ -1,21 +1,21 @@
 ---
-description: En esta sección se enumeran los códigos de operación de trama ternario usados por las funciones BitBlt, PatBlt y StretchBlt. Los códigos de operación de trama ternaria definen cómo combina GDI los bits de un mapa de bits de origen con los bits en el mapa de bits de destino.
+description: En esta sección se enumeran los códigos de operación de trama ternarios que usan las funciones BitBlt, PatBlt y StretchBlt. Los códigos de operación de trama ternarios definen cómo GDI combina los bits de un mapa de bits de origen con los bits del mapa de bits de destino.
 ms.assetid: 538f3580-d6a7-4dae-8185-802eb9c96735
-title: Operaciones de trama ternaria
+title: Operaciones de trama ternario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c30411ff4e5a38f54b52baa086510cecb6168dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58a6dd0009a9be4a1fe062dbb2ab40766a7b01a565b80a7b866c0ce1af40ca48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889015"
 ---
-# <a name="ternary-raster-operations"></a>Operaciones de trama ternaria
+# <a name="ternary-raster-operations"></a>Operaciones de trama ternario
 
-En esta sección se enumeran los códigos de operación de trama ternario usados por las funciones [**bitblt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt), [**PatBlt**](/windows/desktop/api/Wingdi/nf-wingdi-patblt)y [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) . Los códigos de operación de trama ternaria definen cómo combina GDI los bits de un mapa de bits de origen con los bits en el mapa de bits de destino.
+En esta sección se enumeran los códigos de operación de trama ternarios usados por las funciones [**BitBlt,**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) [**PatBlt**](/windows/desktop/api/Wingdi/nf-wingdi-patblt)y [**StretchBlt.**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) Los códigos de operación de trama ternarios definen cómo GDI combina los bits de un mapa de bits de origen con los bits del mapa de bits de destino.
 
-Cada código de operación de trama representa una operación booleana en la que se combinan los valores de los píxeles en el origen, el pincel seleccionado y el destino. A continuación se muestran los tres operandos utilizados en estas operaciones.
+Cada código de operación de trama representa una operación booleana en la que se combinan los valores de los píxeles del origen, el pincel seleccionado y el destino. Estos son los tres operandos usados en estas operaciones.
 
 
 
@@ -29,22 +29,22 @@ Cada código de operación de trama representa una operación booleana en la que
 
  
 
-A continuación se indican los operadores booleanos que se usan en estas operaciones.
+A continuación se siguen los operadores booleanos que se usan en estas operaciones.
 
 
 
 | Operator | Significado                    |
 |----------|----------------------------|
 | a        | AND bit a bit                |
-| n        | NOT bit a bit (inversa)      |
+| n        | NOT bit a bit (inverso)      |
 | o        | OR bit a bit                 |
-| x        | Or exclusivo bit a bit (XOR) |
+| x        | OR exclusivo bit a bit (XOR) |
 
 
 
  
 
-Todas las operaciones booleanas se presentan en notación Polaco inversa. Por ejemplo, la siguiente operación reemplaza los valores de los píxeles en el mapa de bits de destino por una combinación de los valores de píxeles del origen y del pincel:
+Todas las operaciones booleanas se presentan en la notación inversa del polaco. Por ejemplo, la siguiente operación reemplaza los valores de los píxeles del mapa de bits de destino por una combinación de los valores de píxel del origen y el pincel:
 
 
 ```C++
@@ -53,7 +53,7 @@ PSo
 
 
 
-La operación siguiente combina los valores de los píxeles en el origen y el pincel con los valores de píxel del mapa de bits de destino (hay ortografías alternativas de la misma función, por lo que aunque una ortografía concreta puede no estar en la lista, una forma equivalente sería):
+La siguiente operación combina los valores de los píxeles en el origen y el pincel con los valores de píxel del mapa de bits de destino (hay ortografías alternativas de la misma función, por lo que, aunque una ortografía determinada puede no estar en la lista, sería un formato equivalente):
 
 
 ```C++
@@ -62,11 +62,11 @@ DPSoo
 
 
 
-Cada código de operación de trama es un entero de 32 bits cuya palabra de orden superior es un índice de operación booleano y cuya palabra de orden inferior es el código de operación. El índice de operación de 16 bits es un valor de 8 bits y de 8 bits que representa el resultado de la operación booleana en los valores de pincel, origen y destino predefinidos. Por ejemplo, los índices de operación de las operaciones de PSo y DPSoo se muestran en la lista siguiente.
+Cada código de operación de trama es un entero de 32 bits cuya palabra de orden superior es un índice de operación booleano y cuya palabra de orden bajo es el código de operación. El índice de operación de 16 bits es un valor de 8 bits extendido a cero que representa el resultado de la operación booleana en los valores predefinidos de pincel, origen y destino. Por ejemplo, los índices de operación para las operaciones PSo y DPSoo se muestran en la lista siguiente.
 
 
 
-| P                | S   | D   | PSo   | DPSoo |
+| P                | S   | D   | Pso   | DPSoo |
 |------------------|-----|-----|-------|-------|
 | 0                | 0   | 0   | 0     | 0     |
 | 0                | 0   | 1   | 0     | 1     |
@@ -82,19 +82,19 @@ Cada código de operación de trama es un entero de 32 bits cuya palabra de orde
 
  
 
-En este caso, PSo tiene el índice de la operación 00FC (se lee de abajo arriba); DPSoo tiene el índice de la operación 00FE. Estos valores definen la ubicación de los códigos de operación de trama correspondientes, tal como se muestra en la tabla A. 1, "códigos de operación de trama". La operación del PSo está en la línea 252 (00FCh) de la tabla; DPSoo se encuentra en la línea 254 (00FEh).
+En este caso, PSo tiene el índice de operación 00FC (leído de abajo hacia arriba); DPSoo tiene el índice de operación 00FE. Estos valores definen la ubicación de los códigos de operación de trama correspondientes, como se muestra en la tabla A.1, "Códigos de operación de trama". La operación PSo está en la línea 252 (00FCh) de la tabla; DPSoo está en la línea 254 (00FEh).
 
-A las operaciones de tramas más utilizadas se les han asignado nombres especiales en el archivo de encabezado del SDK, WINDOWS. H. Debe usar estos nombres siempre que sea posible en sus aplicaciones.
+A las operaciones de trama más usadas se les han dado nombres especiales en el archivo de encabezado del SDK, WINDOWS.H. Debe usar estos nombres siempre que sea posible en las aplicaciones.
 
-Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de bit de cero representa un píxel negro y un valor de bit de 1 representa un píxel blanco. Cuando los mapas de bits de origen y de destino son de color, esos colores se representan con valores RGB. Para obtener más información sobre los valores RGB, vea [**RGB**](/windows/desktop/api/Wingdi/nf-wingdi-rgb).
+Cuando los mapas de bits de origen y destino son monocromáticos, un valor de bit de cero representa un píxel negro y un valor de bit de 1 representa un píxel blanco. Cuando los mapas de bits de origen y de destino son de color, esos colores se representan con valores RGB. Para obtener más información sobre los valores RGB, vea [**RGB**](/windows/desktop/api/Wingdi/nf-wingdi-rgb).
 
-**Códigos de operación de tramas**
+**Códigos de operación de trama**
 
 
 
-| Función booleana (hexadecimal) | Operación de trama (hexadecimal) | Función booleana en Polaco inverso | Nombre común    |
+| Función booleana (hexadecimal) | Operación de trama (hexadecimal) | Función booleana en polaco inverso | Nombre común    |
 |--------------------------------|--------------------------------|------------------------------------|----------------|
-| 00                             | 00000042                       | 0                                  | De color negro      |
+| 00                             | 00000042                       | 0                                  | Oscuridad      |
 | 01                             | 00010289                       | DPSoon                             |                |
 | 02                             | 00020C89                       | DPSona                             |                |
 | 03                             | 000300AA                       | PSon                               |                |
@@ -108,8 +108,8 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | 0B                             | 000B0B2A                       | PSDnaon                            |                |
 | 0C                             | 000C0324                       | SPna                               |                |
 | 0D                             | 000D0B25                       | PDSnaon                            |                |
-| OE                             | 000E08A5                       | PDSonon                            |                |
-| 0F                             | 000F0001                       | VPN                                 |                |
+| 0E                             | 000E08A5                       | PDSonon                            |                |
+| 0F                             | 000F0001                       | Pn                                 |                |
 | 10                             | 00100C85                       | PDSona                             |                |
 | 11                             | 001100A6                       | DSon                               | NOTSRCERASE    |
 | 12                             | 00120868                       | SDPxnon                            |                |
@@ -136,28 +136,28 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | 27                             | 00271868                       | SDPSxnox                           |                |
 | 28                             | 00280369                       | DPSxa                              |                |
 | 29                             | 002916CA                       | PSDPSaoxxn                         |                |
-| 2                             | 002A0CC9                       | DPSana                             |                |
+| 2A                             | 002A0CC9                       | DPSana                             |                |
 | 2B                             | 002B1D58                       | SSPxPDxaxn                         |                |
-| 2C                             | 002C0784                       | SPDSoax                            |                |
+| 2c                             | 002C0784                       | SPDSoax                            |                |
 | 2D                             | 002D060A                       | PSDnox                             |                |
-| 2E                             | 002E064A                       | PSDPxox                            |                |
-| Relativa                             | 002F0E2A                       | PSDnoan                            |                |
+| 2e                             | 002E064A                       | PSDPxox                            |                |
+| 2F                             | 002F0E2A                       | PSDnoan                            |                |
 | 30                             | 0030032A                       | PSna                               |                |
 | 31                             | 00310B28                       | SDPnaon                            |                |
 | 32                             | 00320688                       | SDPSoox                            |                |
-| 33                             | 00330008                       | NS                                 | NOTSRCCOPY     |
+| 33                             | 00330008                       | Sn                                 | NOTSRCCOPY     |
 | 34                             | 003406C4                       | SPDSaox                            |                |
 | 35                             | 00351864                       | SPDSxnox                           |                |
 | 36                             | 003601A8                       | SDPox                              |                |
 | 37                             | 00370388                       | SDPoan                             |                |
 | 38                             | 0038078A                       | PSDPoax                            |                |
 | 39                             | 00390604                       | SPDnox                             |                |
-| Ejemplar                             | 003A0644                       | SPDSxox                            |                |
+| 3A                             | 003A0644                       | SPDSxox                            |                |
 | 3B                             | 003B0E24                       | SPDnoan                            |                |
-| 3C                             | 003C004A                       | PSx                                |                |
+| 3c                             | 003C004A                       | Psx                                |                |
 | 3D                             | 003D18A4                       | SPDSonox                           |                |
-| 3E                             | 003E1B24                       | SPDSnaox                           |                |
-| 3F                             | 003F00EA                       | PSan                               |                |
+| 3e                             | 003E1B24                       | SPDSnaox                           |                |
+| 3f                             | 003F00EA                       | PSan                               |                |
 | 40                             | 00400F0A                       | PSDnaa                             |                |
 | 41                             | 00410249                       | DPSxon                             |                |
 | 42                             | 00420D5D                       | SDxPDxa                            |                |
@@ -168,12 +168,12 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | 47                             | 0047076A                       | PSDPxaxn                           |                |
 | 48                             | 00480368                       | SDPxa                              |                |
 | 49                             | 004916C5                       | PDSPDaoxxn                         |                |
-| 4                             | 004A0789                       | DPSDoax                            |                |
-| 4B                             | 004B0605                       | PDSnox                             |                |
-| 4C                             | 004C0CC8                       | SDPana                             |                |
+| 4A                             | 004A0789                       | DPSDoax                            |                |
+| 4b                             | 004B0605                       | PDSnox                             |                |
+| 4c                             | 004C0CC8                       | SDPana                             |                |
 | 4D                             | 004D1954                       | SSPxDSxoxn                         |                |
 | 4E                             | 004E0645                       | PDSPxox                            |                |
-| 4F                             | 004F0E25                       | PDSnoan                            |                |
+| 4f                             | 004F0E25                       | PDSnoan                            |                |
 | 50                             | 00500325                       | PDna                               |                |
 | 51                             | 00510B26                       | DSPnaon                            |                |
 | 52                             | 005206C9                       | DPSDaox                            |                |
@@ -184,28 +184,28 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | 57                             | 00570389                       | DPSoan                             |                |
 | 58                             | 00580785                       | PDSPoax                            |                |
 | 59                             | 00590609                       | DPSnox                             |                |
-| 5                             | 005A0049                       | DPx                                | PATINVERT      |
+| 5a                             | 005A0049                       | Dpx                                | PATINVERT      |
 | 5B                             | 005B18A9                       | DPSDonox                           |                |
-| Quater                             | 005C0649                       | DPSDxox                            |                |
-| 1]5D                             | 005D0E29                       | DPSnoan                            |                |
+| 5C                             | 005C0649                       | DPSDxox                            |                |
+| 5d                             | 005D0E29                       | DPSnoan                            |                |
 | 5E                             | 005E1B29                       | DPSDnaox                           |                |
-| 5F                             | 005F00E9                       | DPan                               |                |
+| 5f                             | 005F00E9                       | DPan                               |                |
 | 60                             | 00600365                       | PDSxa                              |                |
 | 61                             | 006116C6                       | DSPDSaoxxn                         |                |
 | 62                             | 00620786                       | DSPDoax                            |                |
 | 63                             | 00630608                       | SDPnox                             |                |
 | 64                             | 00640788                       | SDPSoax                            |                |
 | 65                             | 00650606                       | DSPnox                             |                |
-| 66                             | 00660046                       | DSx                                | SRCINVERT      |
+| 66                             | 00660046                       | Dsx                                | SRCINVERT      |
 | 67                             | 006718A8                       | SDPSonox                           |                |
 | 68                             | 006858A6                       | DSPDSonoxxn                        |                |
 | 69                             | 00690145                       | PDSxxn                             |                |
-| 6                             | 006A01E9                       | DPSax                              |                |
-| 6                             | 006B178A                       | PSDPSoaxxn                         |                |
-| 6C                             | 006C01E8                       | SDPax                              |                |
-| 6D                             | 006D1785                       | PDSPDoaxxn                         |                |
-| 6E                             | 006E1E28                       | SDPSnoax                           |                |
-| 6F                             | 006F0C65                       | PDSxnan                            |                |
+| 6a                             | 006A01E9                       | DPSax                              |                |
+| 6b                             | 006B178A                       | PSDPSoaxxn                         |                |
+| 6c                             | 006C01E8                       | SDPax                              |                |
+| 6d                             | 006D1785                       | PDSPDoaxxn                         |                |
+| 6e                             | 006E1E28                       | SDPSnoax                           |                |
+| 6f                             | 006F0C65                       | PDSxnan                            |                |
 | 70                             | 00700CC5                       | PDSana                             |                |
 | 71                             | 00711D5C                       | SSDxPDxaxn                         |                |
 | 72                             | 00720648                       | SDPSxox                            |                |
@@ -216,12 +216,12 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | 77                             | 007700E6                       | DSan                               |                |
 | 78                             | 007801E5                       | PDSax                              |                |
 | 79                             | 00791786                       | DSPDSoaxxn                         |                |
-| Bis                             | 007A1E29                       | DPSDnoax                           |                |
-| Ter                             | 007B0C68                       | SDPxnan                            |                |
+| 7a                             | 007A1E29                       | DPSDnoax                           |                |
+| 7b                             | 007B0C68                       | SDPxnan                            |                |
 | 7C                             | 007C1E24                       | SPDSnoax                           |                |
-| 7D                             | 007D0C69                       | DPSxnan                            |                |
+| 7d                             | 007D0C69                       | DPSxnan                            |                |
 | 7E                             | 007E0955                       | SPxDSxo                            |                |
-| 7F                             | 007F03C9                       | DPSaan                             |                |
+| 7f                             | 007F03C9                       | DPSaan                             |                |
 | 80                             | 008003E9                       | DPSaa                              |                |
 | 81                             | 00810975                       | SPxDSxon                           |                |
 | 82                             | 00820C49                       | DPSxna                             |                |
@@ -230,14 +230,14 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | 85                             | 00851E05                       | PDSPnoaxn                          |                |
 | 86                             | 008617A6                       | DSPDSoaxx                          |                |
 | 87                             | 008701C5                       | PDSaxn                             |                |
-| 88                             | 008800C6                       | Algoritmo                                | SRCAND         |
+| 88                             | 008800C6                       | Dsa                                | SRCAND         |
 | 89                             | 00891B08                       | SDPSnaoxn                          |                |
 | 8A                             | 008A0E06                       | DSPnoa                             |                |
 | 8B                             | 008B0666                       | DSPDxoxn                           |                |
 | 8C                             | 008C0E08                       | SDPnoa                             |                |
 | 8D                             | 008D0668                       | SDPSxoxn                           |                |
-| 8E                             | 008E1D7C                       | SSDxPDxax                          |                |
-| 8F                             | 008F0CE5                       | PDSanan                            |                |
+| 8e                             | 008E1D7C                       | SSDxPDxax                          |                |
+| 8f                             | 008F0CE5                       | PDSanan                            |                |
 | 90                             | 00900C45                       | PDSxna                             |                |
 | 91                             | 00911E08                       | SDPSnoaxn                          |                |
 | 92                             | 009217A9                       | DPSDPoaxx                          |                |
@@ -250,11 +250,11 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | 99                             | 00990066                       | DSxn                               |                |
 | 9A                             | 009A0709                       | DPSnax                             |                |
 | 9B                             | 009B07A8                       | SDPSoaxn                           |                |
-| 9C                             | 009C0704                       | SPDnax                             |                |
-| 9D                             | 009D07A6                       | DSPDoaxn                           |                |
-| 9E                             | 009E16E6                       | DSPDSaoxx                          |                |
-| 9F                             | 009F0345                       | PDSxan                             |                |
-| A0                             | 00A000C9                       | DPa                                |                |
+| 9c                             | 009C0704                       | SPDnax                             |                |
+| 9d                             | 009D07A6                       | DSPDoaxn                           |                |
+| 9e                             | 009E16E6                       | DSPDSaoxx                          |                |
+| 9f                             | 009F0345                       | PDSxan                             |                |
+| A0                             | 00A000C9                       | Dpa                                |                |
 | A1                             | 00A11B05                       | PDSPnaoxn                          |                |
 | A2                             | 00A20E09                       | DPSnoa                             |                |
 | A3                             | 00A30669                       | DPSDxoxn                           |                |
@@ -266,7 +266,7 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | A9                             | 00A90189                       | DPSoxn                             |                |
 | AA                             | 00AA0029                       | D                                  |                |
 | AB                             | 00AB0889                       | DPSono                             |                |
-| CORRIENTE                             | 00AC0744                       | SPDSxax                            |                |
+| Ca                             | 00AC0744                       | SPDSxax                            |                |
 | AD                             | 00AD06E9                       | DPSDaoxn                           |                |
 | AE                             | 00AE0B06                       | DSPnao                             |                |
 | AF                             | 00AF0229                       | DPno                               |                |
@@ -286,7 +286,7 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | BD                             | 00BD0D7D                       | SDxPDxan                           |                |
 | BE                             | 00BE0269                       | DPSxo                              |                |
 | BF                             | 00BF08C9                       | DPSano                             |                |
-| C0                             | 00C000CA                       | PSa                                | MERGECOPY      |
+| C0                             | 00C000CA                       | Psa                                | MERGECOPY      |
 | C1                             | 00C11B04                       | SPDSnaoxn                          |                |
 | C2                             | 00C21884                       | SPDSonoxn                          |                |
 | C3                             | 00C3006A                       | PSxn                               |                |
@@ -301,7 +301,7 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | CC                             | 00CC0020                       | S                                  | SRCCOPY        |
 | CD                             | 00CD0888                       | SDPono                             |                |
 | CE                             | 00CE0B08                       | SDPnao                             |                |
-| CF                             | 00CF0224                       | SPno                               |                |
+| CF                             | 00CF0224                       | Spno                               |                |
 | D0                             | 00D00E0A                       | PSDnoa                             |                |
 | D1                             | 00D1066A                       | PSDPxoxn                           |                |
 | D2                             | 00D20705                       | PDSnax                             |                |
@@ -332,7 +332,7 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | EB                             | 00EB0849                       | DPSxno                             |                |
 | EC                             | 00EC02E8                       | SDPao                              |                |
 | ED                             | 00ED0848                       | SDPxno                             |                |
-| EE                             | 00EE0086                       | DSo                                | SRCPAINT       |
+| EE                             | 00EE0086                       | Dso                                | SRCPAINT       |
 | EF                             | 00EF0A08                       | SDPnoo                             |                |
 | F0                             | 00F00021                       | P                                  | PATCOPY        |
 | F1                             | 00F10885                       | PDSono                             |                |
@@ -344,13 +344,13 @@ Cuando los mapas de bits de origen y de destino son monocromáticos, un valor de
 | F7                             | 00F708C5                       | PDSano                             |                |
 | F8                             | 00F802E5                       | PDSao                              |                |
 | F9                             | 00F90845                       | PDSxno                             |                |
-| FA                             | 00FA0089                       | DPo                                |                |
+| FA                             | 00FA0089                       | Dpo                                |                |
 | FB                             | 00FB0A09                       | DPSnoo                             | PATPAINT       |
-| FC                             | 00FC008A                       | PSo                                |                |
+| FC                             | 00FC008A                       | Pso                                |                |
 | FD                             | 00FD0A0A                       | PSDnoo                             |                |
 | FE                             | 00FE02A9                       | DPSoo                              |                |
-| FF                             | 00FF0062                       | 1                                  | BLANCO      |
-| 8000                           | 80 millones                       |                                    | NOMIRRORBITMAP |
+| FF                             | 00FF0062                       | 1                                  | Blancura      |
+| 8000                           | 80000000                       |                                    | NOMIRRORBITMAP |
 
 
 

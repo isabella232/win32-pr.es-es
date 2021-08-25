@@ -1,6 +1,6 @@
 ---
 title: Constantes de configuración de comentarios de entrada
-description: En esta sección se proporcionan las especificaciones de referencia de las constantes de configuración de comentarios de entrada.
+description: En esta sección se proporcionan las especificaciones de referencia para las constantes de configuración de comentarios de entrada.
 ms.assetid: 1B0EA599-6618-4DF2-B8C7-91A534BD85C0
 topic_type:
 - apiref
@@ -12,20 +12,20 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: d235818130815c14cabf9a4f2ba51c0aa7d07f27
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: ee732a3cf67287790fd691cbf8b2b1592de31106abf08deb713bd6402afb971f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726714"
 ---
 # <a name="input-feedback-configuration-constants"></a>Constantes de configuración de comentarios de entrada
 
-En esta sección se proporcionan las especificaciones de referencia de las constantes de [configuración de comentarios de entrada](input-feedback-configuration-portal.md) .
+En esta sección se proporcionan las especificaciones de referencia para [las constantes de configuración de comentarios de](input-feedback-configuration-portal.md) entrada.
 
 <dl> <dt>
 
-<span id="GWFS_INCLUDE_ANCESTORS"></span><span id="gwfs_include_ancestors"></span>**GWFS \_ incluir \_ antecesores**
+<span id="GWFS_INCLUDE_ANCESTORS"></span><span id="gwfs_include_ancestors"></span>**GWFS \_ INCLUYEN \_ ANTECESORES**
 </dt> <dd> <dl> <dt>
 
 0x00000001
@@ -33,7 +33,7 @@ En esta sección se proporcionan las especificaciones de referencia de las const
 
 
 
-Especifica que debe comprobarse la cadena de ventana primaria.
+Especifica que se debe comprobar la cadena de ventanas primaria.
 
 
 </dt> </dl> </dd> </dl>
@@ -42,11 +42,11 @@ Especifica que debe comprobarse la cadena de ventana primaria.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

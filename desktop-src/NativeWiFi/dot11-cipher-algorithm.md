@@ -1,7 +1,7 @@
 ---
 description: Define un algoritmo de cifrado para el cifrado y descifrado de datos.
 ms.assetid: 6b634d76-a159-438e-8fc6-5f05b326ed68
-title: Enumeración DOT11_CIPHER_ALGORITHM (Wlantypes. h)
+title: DOT11_CIPHER_ALGORITHM enumeración (Wlantypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - wlantypes.h
-ms.openlocfilehash: fcbd61476458b5ed906ee57af6ab22b35f0378d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c99ef5b648c5503743de6f51ce7d035d75dbe1f3e5593d473a374813f4000566
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780245"
 ---
-# <a name="dot11_cipher_algorithm-enumeration"></a>\_Enumeración de algoritmos de cifrado de DOT11 \_
+# <a name="dot11_cipher_algorithm-enumeration"></a>Enumeración \_ DOT11 CIPHER \_ ALGORITHM
 
-El tipo enumerado del **\_ \_ algoritmo de cifrado de DOT11** define un algoritmo de cifrado para el cifrado y descifrado de datos.
+El **tipo enumerado DOT11 \_ CIPHER \_ ALGORITHM** define un algoritmo de cifrado para el cifrado y descifrado de datos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -48,73 +48,73 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
 
 <dl> <dt>
 
-<span id="DOT11_CIPHER_ALGO_NONE"></span><span id="dot11_cipher_algo_none"></span>**\_Cifrado de DOT11 \_ algo \_ ninguno**
+<span id="DOT11_CIPHER_ALGO_NONE"></span><span id="dot11_cipher_algo_none"></span>**DOT11 \_ CIPHER \_ ALGO \_ NONE**
 </dt> <dd>
 
 Especifica que no se habilita ni se admite ningún algoritmo de cifrado.
 
 </dd> <dt>
 
-<span id="DOT11_CIPHER_ALGO_WEP40"></span><span id="dot11_cipher_algo_wep40"></span>**\_Cifrado de \_ algo \_ WEP40 de DOT11**
+<span id="DOT11_CIPHER_ALGO_WEP40"></span><span id="dot11_cipher_algo_wep40"></span>**DOT11 \_ CIPHER \_ ALGO \_ WEP40**
 </dt> <dd>
 
-Especifica un algoritmo de privacidad equivalente por cable (WEP), que es el algoritmo basado en RC4 que se especifica en el estándar 802.11-1999. Este enumerador especifica el algoritmo de cifrado de WEP con una clave de cifrado de 40 bits.
+Especifica un algoritmo de privacidad equivalente cableada (WEP), que es el algoritmo basado en RC4 que se especifica en el estándar 802.11-1999. Este enumerador especifica el algoritmo de cifrado WEP con una clave de cifrado de 40 bits.
 
 </dd> <dt>
 
-<span id="DOT11_CIPHER_ALGO_TKIP"></span><span id="dot11_cipher_algo_tkip"></span>**\_Cifrado de \_ algo \_ TKIP de DOT11**
+<span id="DOT11_CIPHER_ALGO_TKIP"></span><span id="dot11_cipher_algo_tkip"></span>**DOT11 \_ CIPHER \_ ALGO \_ TKIP**
 </dt> <dd>
 
-Especifica un algoritmo del Protocolo de integridad de clave temporal (TKIP), que es el conjunto de cifrado basado en RC4 que se basa en los algoritmos definidos en la especificación de WPA y el estándar IEEE 802.11 i-2004. Este cifrado también usa el algoritmo de código de integridad del mensaje (MIC) de Michael para la protección de falsificación.
+Especifica un algoritmo del Protocolo de integridad de claves temporales (TKIP), que es el conjunto de cifrado basado en RC4 que se basa en los algoritmos definidos en la especificación WPA y el estándar IEEE 802.11i-2004. Este cifrado también usa el algoritmo de código de integridad de mensajes (MIC) de Michael para la protección de falsificación.
 
 </dd> <dt>
 
-<span id="DOT11_CIPHER_ALGO_CCMP"></span><span id="dot11_cipher_algo_ccmp"></span>**\_Cifrado de DOT11 \_ algo \_ CCMP**
+<span id="DOT11_CIPHER_ALGO_CCMP"></span><span id="dot11_cipher_algo_ccmp"></span>**CCMP DE ALGO CIFRADO DOT11 \_ \_ \_**
 </dt> <dd>
 
-Especifica un algoritmo AES-CCMP, tal y como se especifica en el estándar IEEE 802.11 i-2004 y RFC 3610. Estándar de cifrado avanzado (AES) es el algoritmo de cifrado definido en FIPS PUB 197.
+Especifica un algoritmo AES-CCMP, como se especifica en el estándar IEEE 802.11i-2004 y RFC 3610. Estándar de cifrado avanzado (AES) es el algoritmo de cifrado definido en FIPS PUB 197.
 
 </dd> <dt>
 
-<span id="DOT11_CIPHER_ALGO_WEP104"></span><span id="dot11_cipher_algo_wep104"></span>**\_Cifrado de \_ algo \_ WEP104 de DOT11**
+<span id="DOT11_CIPHER_ALGO_WEP104"></span><span id="dot11_cipher_algo_wep104"></span>**ALGO DE \_ CIFRADO \_ DOT11 \_ WEP104**
 </dt> <dd>
 
-Especifica un algoritmo de cifrado de WEP con una clave de cifrado de 104 bits.
+Especifica un algoritmo de cifrado WEP con una clave de cifrado de 104 bits.
 
 </dd> <dt>
 
-<span id="DOT11_CIPHER_ALGO_WPA_USE_GROUP"></span><span id="dot11_cipher_algo_wpa_use_group"></span>**\_Cifrado de DOT11 \_ algo \_ grupo de uso de WPA \_ \_**
+<span id="DOT11_CIPHER_ALGO_WPA_USE_GROUP"></span><span id="dot11_cipher_algo_wpa_use_group"></span>**GRUPO DE USO \_ DE WPA DE ALGORITMO DE CIFRADO \_ \_ DOT11 \_ \_**
 </dt> <dd>
 
-Especifica un conjunto de cifrado de claves de grupo de uso de Wi-Fi protegido (WPA). Para obtener más información sobre el conjunto de cifrado de claves de grupo, consulte la cláusula 7.3.2.25.1 del estándar IEEE 802.11 i-2004.
+Especifica un conjunto Wi-Fi cifrado de clave de grupo de uso de acceso protegido (WPA). Para obtener más información sobre el conjunto de cifrado Usar clave de grupo, consulte la cláusula 7.3.2.25.1 del estándar IEEE 802.11i-2004.
 
 </dd> <dt>
 
-<span id="DOT11_CIPHER_ALGO_RSN_USE_GROUP"></span><span id="dot11_cipher_algo_rsn_use_group"></span>**\_Cifrado de DOT11 \_ algo de uso de \_ RSN \_ \_**
+<span id="DOT11_CIPHER_ALGO_RSN_USE_GROUP"></span><span id="dot11_cipher_algo_rsn_use_group"></span>**DOT11 \_ CIPHER \_ ALGO \_ RSN \_ USE \_ GROUP**
 </dt> <dd>
 
-Especifica un conjunto de cifrado de claves de grupo de uso de redes de seguridad sólidas (RSN). Para obtener más información sobre el conjunto de cifrado de claves de grupo, consulte la cláusula 7.3.2.25.1 del estándar IEEE 802.11 i-2004.
+Especifica una red de seguridad sólida (RSN) Que use el conjunto de cifrado de clave de grupo. Para obtener más información sobre el conjunto de cifrado Usar clave de grupo, consulte la cláusula 7.3.2.25.1 del estándar IEEE 802.11i-2004.
 
 </dd> <dt>
 
-<span id="DOT11_CIPHER_ALGO_WEP"></span><span id="dot11_cipher_algo_wep"></span>**\_Cifrado de algo de DOT11 \_ \_ WEP**
+<span id="DOT11_CIPHER_ALGO_WEP"></span><span id="dot11_cipher_algo_wep"></span>**ALGO \_ WEP DE CIFRADO \_ DOT11 \_**
 </dt> <dd>
 
 Especifica un algoritmo de cifrado WEP con una clave de cifrado de cualquier longitud.
 
 </dd> <dt>
 
-<span id="DOT11_CIPHER_ALGO_IHV_START"></span><span id="dot11_cipher_algo_ihv_start"></span>**\_Inicio de \_ \_ IHV algo de CIFRAdo de DOT11 \_**
+<span id="DOT11_CIPHER_ALGO_IHV_START"></span><span id="dot11_cipher_algo_ihv_start"></span>**INICIO DE \_ \_ \_ IHV DEL ALGORITMO DE CIFRADO DOT11 \_**
 </dt> <dd>
 
-Especifica el inicio del intervalo que se usa para definir los algoritmos de cifrado de propiedad desarrollados por un fabricante de hardware independiente (IHV).
+Especifica el inicio del intervalo que se usa para definir algoritmos de cifrado propietarios desarrollados por un proveedor de hardware independiente (IHV).
 
 </dd> <dt>
 
-<span id="DOT11_CIPHER_ALGO_IHV_END"></span><span id="dot11_cipher_algo_ihv_end"></span>**\_Fin de \_ algo \_ IHV de CIFRAdo de DOT11 \_**
+<span id="DOT11_CIPHER_ALGO_IHV_END"></span><span id="dot11_cipher_algo_ihv_end"></span>**DOT11 \_ CIPHER \_ ALGO \_ IHV \_ END**
 </dt> <dd>
 
-Especifica el final del intervalo que se utiliza para definir los algoritmos de cifrado de propiedad desarrollados por un IHV.
+Especifica el final del intervalo que se usa para definir algoritmos de cifrado propietarios desarrollados por un IHV.
 
 </dd> </dl>
 
@@ -124,10 +124,10 @@ Especifica el final del intervalo que se utiliza para definir los algoritmos de 
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                        |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                        |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                                                         |
-| Encabezado<br/>                   | <dl> <dt>Wlantypes. h (incluye Windot11. h)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wlantypes.h (incluye Windot11.h)</dt> </dl> |
 
 
 
@@ -135,13 +135,13 @@ Especifica el final del intervalo que se utiliza para definir los algoritmos de 
 
 <dl> <dt>
 
-[**\_Par de \_ cifrado de autenticación de DOT11 \_**](dot11-auth-cipher-pair.md)
+[**PAR DE CIFRADO DE \_ AUTENTICACIÓN \_ DE DOT11 \_**](dot11-auth-cipher-pair.md)
 </dt> <dt>
 
-[**\_red disponible de WLAN \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_available_network)
+[**RED DISPONIBLE DE WLAN \_ \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_available_network)
 </dt> <dt>
 
-[**\_atributos de seguridad de WLAN \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_security_attributes)
+[**ATRIBUTOS DE SEGURIDAD DE WLAN \_ \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_security_attributes)
 </dt> </dl>
 
  
