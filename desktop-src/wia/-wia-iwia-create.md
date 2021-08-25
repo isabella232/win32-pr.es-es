@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: d22d45e473cec1d5186c300f97cbdb4661237ab9
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a4056354992010d3d213ed619b7460e12c800630ca38fb17acb6d7677fe842a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814055"
 ---
 # <a name="wiacreate-method"></a>Método Wia.Create
 
@@ -55,7 +55,7 @@ Tipo: **IWiaDispatchItem**
 
 Si se realiza correctamente, este método devuelve un [**objeto Item**](-wia-item.md) que representa un dispositivo de hardware WIA (un elemento raíz).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El *parámetro Device* especifica un objeto [**DeviceInfo**](-wia-deviceinfo.md) pasando el propio objeto, su índice de un objeto de colección o el valor de su [**propiedad Id.**](-wia-iwiadeviceinfo-id.md) Pasar **nada** para mostrar un cuadro de diálogo que permite a un usuario seleccionar un dispositivo.
 
@@ -126,8 +126,8 @@ Set objWia = objWia.Create(Nothing)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 
 

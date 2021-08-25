@@ -1,68 +1,68 @@
 ---
 title: Novedades de la versión 1.0 de WCS
-description: La versión 1,0 de administración del color de imagen (ICM) se entregó en Microsoft \ 160; Windows \ 160; 95 y proporciona capacidades de administración de color básicas dentro de los contextos de dispositivos de Windows.
+description: La versión 1.0 de Image Color Management (ICM) se entregó en Microsoft \ 160; Windows \ 160;95 y proporciona funcionalidades básicas de administración de colores en Windows contextos de dispositivo.
 ms.assetid: edc5a6c2-ca7c-4cf4-a339-4f1875c60493
 keywords:
-- Sistema de color de Windows (WCS), nuevas características
-- WCS (sistema de colores de Windows), nuevas características
-- Administración del color de imagen, nuevas características
-- Administración del color, nuevas características
+- Windows Sistema de colores (WCS), nuevas características
+- WCS (Windows color),nuevas características
+- administración de colores de imagen, nuevas características
+- administración de colores, nuevas características
 - colores, nuevas características
-- Sistema de colores de Windows (WCS), novedades
-- WCS (sistema de colores de Windows), novedades
-- Administración del color de imagen, novedades
-- Administración del color, novedades
-- colores, novedades
-- Sistema de color de Windows (WCS), Windows Vista
-- WCS (sistema de colores de Windows), Windows Vista
-- Administración del color de imagen, Windows Vista
-- Administración del color, Windows Vista
-- colores, Windows Vista
-- Sistema de color de Windows (WCS), sistemas operativos
-- WCS (sistema de color de Windows), sistemas operativos
-- Administración del color de imagen, sistemas operativos
-- Administración del color, sistemas operativos
-- colores, sistemas operativos
+- Windows Sistema de colores (WCS), novedades
+- WCS (Windows de colores), novedades
+- administración del color de la imagen, novedades
+- administración de colores, novedades
+- colors,what's new
+- Windows Sistema de colores (WCS), Windows Vista
+- WCS (Windows Color System),Windows Vista
+- administración del color de la imagen, Windows Vista
+- administración de colores, Windows Vista
+- colors,Windows Vista
+- Windows Sistema de colores (WCS), sistemas operativos
+- WCS (Windows color),sistemas operativos
+- administración del color de imagen, sistemas operativos
+- administración de colores, sistemas operativos
+- colors,operating systems
 - Administración del color de imagen (ICM)
-- ICM (administración del color de imagen)
-- Administración del color de Windows Vista
+- ICM (Administración del color de la imagen)
+- Windows Administración de colores de Vista
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88efb4807eb7bd9244cd20277c44809cec2e96df
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 8bdf3bb59d71cc08ffa5ffacecea3df0b02f2c303b8aa3034de98f710e44cc23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105721145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814335"
 ---
 # <a name="whats-new-in-version-10-of-wcs"></a>Novedades de la versión 1.0 de WCS
 
-La versión 1,0 de administración del color de imagen (ICM) se entregó en Microsoft Windows 95 y proporciona capacidades básicas de administración del color en los contextos de dispositivos de Windows.
+La versión 1.0 de Image Color Management (ICM) se entregó en Microsoft Windows 95 y proporciona funcionalidades básicas de administración de colores en Windows contextos de dispositivo.
 
-La versión 2,0 de ICM se incluye en Windows 98, Windows Millennium Edition, Windows 2000 y Windows XP e incluye diversas funciones nuevas que implementan la administración del color fuera de los contextos de dispositivo. Estas nuevas funciones son adecuadas para los requisitos de administración de color más exigentes y proporcionan a las aplicaciones un mayor control sobre el proceso de administración del color.
+ICM versión 2.0 se incluye en Windows 98, Windows Edition, Windows 2000 y Windows XP e incluye una variedad de nuevas funciones que implementan la administración de colores fuera de los contextos del dispositivo. Estas nuevas funciones son adecuadas para requisitos de administración de colores más exigentes y dan a las aplicaciones un mayor control sobre el proceso de administración de colores.
 
-En la versión de Windows Vista de Microsoft Windows se incluye funcionalidad adicional.
+Se incluye funcionalidad adicional en la versión Windows Vista de Microsoft Windows.
 
--   elección del flujo de trabajo de CMM/perfil estático/monolítico y dinámico/modular
-    -   estático proporcionado por HeidelbergerDruckmaschinen en Win98 ICM2, dinámico proporcionado por Canon Inc. uso de la tecnología Kyuanos de Canon
-    -   perfiles de modelo de dispositivo de línea de base, apariencia de color y asignación de gama
+-   elección del flujo de trabajo estático/monolítico y dinámico/modular de CMM/Profile
+    -   static proporcionado porRderDruckmascareen en Win98 ICM2, dinámico proporcionado por Canon Inc. mediante la tecnología K systems de Canon
+    -   dispositivo de línea de base, apariencia de color y perfiles de modelo de asignación de gamas,
     -   compatibilidad con la generación de negro,
-    -   compatibilidad con la preservación de negro,
-    -   Alta compatibilidad con intervalos dinámicos
+    -   compatibilidad con la conservación del negro,
+    -   Compatibilidad con intervalos dinámicos elevados,
     -   punto flotante/mayor que 16 bits por precisión de canal,
-    -   compatibilidad con el perfil de espacio de trabajo de gama ancha predeterminada,
-    -   flexibilidad para controlar las características de los dispositivos dentro del objetivo independientes de las características entre dispositivos,
-    -   capacidad de controlar el algoritmo de asignación de una sola gama entre dos dispositivos.
-    -   compatibilidad para asignar primarios de dispositivo de origen a las principales de destino en un flujo de trabajo administrado en color.
--   elección de formatos de Perfil de color de texto y binario
-    -   compatibilidad binaria con el formato de perfil basado en TIFF ICC y el texto con esquemas XML
--   Compatibilidad con la versión 4 de ICC,
--   panel de control de administración del color central,
+    -   compatibilidad predeterminada con perfiles de espacio de trabajo de gama amplia,
+    -   flexibilidad para controlar las características objetivo dentro del dispositivo independientes de las características entre dispositivos,
+    -   capacidad de controlar el algoritmo de asignación de gama única entre dos dispositivos,
+    -   compatibilidad con la asignación de elementos principal de dispositivo de origen a elementos principal de destino en un flujo de trabajo administrado por colores,
+-   elección de formatos de perfil de color binario y de texto
+    -   binario conforme al formato de perfil y al texto basados en etiquetas DE TIFF DE TIFF mediante esquemas XML
+-   Compatibilidad con LACTE versión 4,
+-   panel de control de administración de color central,
 -   compatibilidad heredada mantenida para aplicaciones y dispositivos,
--   extensibilidad mediante modelos de dispositivo de complemento de terceros y modelos de asignación de gamas,
--   compatibilidad con la asignación avanzada de dispositivos/gamas habilitando la comunicación directa entre los complementos DM y GMM,
--   la CMM estática (ICM2) ahora tiene como valor predeterminado la intención de colorimétrico relativo en lugar de la intención de colorimétrico absoluto.
+-   extensibilidad a través de modelos de dispositivo de complemento de terceros y modelos de asignación de gamas,
+-   compatibilidad con la asignación avanzada de dispositivos o gamas mediante la habilitación de la comunicación directa entre los complementos dm y GMM,
+-   Static (ICM2) CMM ahora tiene como valor predeterminado la intención Colorimétrica relativa en lugar de la intención Colorimétrica absoluta.
 
  
 

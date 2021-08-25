@@ -1,7 +1,7 @@
 ---
-description: Recupera un puntero a este nodo de datos del archivo ID3DXFileSaveObject.
+description: Recupera un puntero a este nodo de datos de archivo ID3DXFileSaveObject.
 ms.assetid: 092d1c6f-0a53-4b8e-84ec-bc76f3f647ac
-title: 'ID3DXFileSaveData:: GetSave (método) (D3DX9Xof. h)'
+title: Método ID3DXFileSaveData::GetSave (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 4e23296ad0a866a0ad289a9a587c433411ef9bb8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 05b30c34f7e9d1383270c06ee70aca63d3f24b0f4f721d6859366794f2df361a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856654"
 ---
-# <a name="id3dxfilesavedatagetsave-method"></a>ID3DXFileSaveData:: GetSave (método)
+# <a name="id3dxfilesavedatagetsave-method"></a>Método ID3DXFileSaveData::GetSave
 
-Recupera un puntero a este nodo de datos del archivo [**ID3DXFileSaveObject**](id3dxfilesaveobject.md) .
+Recupera un puntero a este nodo de datos [**de archivo ID3DXFileSaveObject.**](id3dxfilesaveobject.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT GetSave(
 
 <dl> <dt>
 
-*ppObj* \[ enuncia\]
+*ppObj* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DXFileSaveObject**](id3dxfilesaveobject.md)\*\***
 
-Dirección de un puntero a una interfaz [**ID3DXFileSaveObject**](id3dxfilesaveobject.md) que representa este nodo de datos de archivo.
+Dirección de un puntero a una [**interfaz ID3DXFileSaveObject**](id3dxfilesaveobject.md) que representa este nodo de datos de archivo.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Dirección de un puntero a una interfaz [**ID3DXFileSaveObject**](id3dxfilesaveo
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DXFERR \_ BADVALUE.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DXFERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

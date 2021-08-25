@@ -1,21 +1,21 @@
 ---
-title: Referencia de API de Plataforma de biometría de Windows
-description: Descripciones detalladas de las funciones, estructuras y capacidades que se pueden usar para crear aplicaciones cliente y complementos.
+title: Windows Referencia de la API del marco biométrico
+description: Descripciones detalladas de funciones, estructuras y funcionalidades que se pueden usar para crear aplicaciones cliente y complementos.
 ms.assetid: e495f3a5-64f5-4181-bf3a-c0c2bbe09016
 keywords:
-- API de API Plataforma de biometría de Windows de Plataforma de biometría de Windows, referencia
+- Windows Referencia de la API de Windows Biometric Framework API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bec69f85b345be81fa3ca61bae15e6c57975f0c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 168d0d17a27f5af62178ecc88702da8687bc427d9a337510e20d6ed9c0ec7276
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906685"
 ---
-# <a name="windows-biometric-framework-api-reference"></a>Referencia de API de Plataforma de biometría de Windows
+# <a name="windows-biometric-framework-api-reference"></a>Windows Referencia de la API del marco biométrico
 
-Las páginas de referencia de la API de Plataforma de biometría de Windows contienen descripciones detalladas de funciones, estructuras y capacidades que se pueden usar para crear aplicaciones cliente y complementos. Las páginas de referencia se dividen en los siguientes grupos:
+Windows Las páginas de referencia de api de Plataforma biométrica contienen descripciones detalladas de funciones, estructuras y funcionalidades que se pueden usar para crear aplicaciones cliente y complementos. Las páginas de referencia se dividen en los siguientes grupos:
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,8 +23,8 @@ Las páginas de referencia de la API de Plataforma de biometría de Windows cont
 
 | Tema                                                                       | Descripción                                                                                                                                         |
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Referencia de la aplicación cliente](client-application-reference.md)<br/> | Funciones, estructuras y otros tipos que se pueden usar para compilar aplicaciones cliente que interactúan con el Plataforma de biometría de Windows.<br/> |
-| [Referencia del complemento](plug-in-reference.md)<br/>                       | Funciones de adaptador, funciones de contenedor y estructuras para crear adaptadores de complementos personalizados de tres tipos: motor, sensor y almacenamiento.<br/>   |
+| [Referencia de la aplicación cliente](client-application-reference.md)<br/> | Funciones, estructuras y otros tipos que puede usar para compilar aplicaciones cliente que interactúan con Windows Biometric Framework.<br/> |
+| [Referencia del complemento](plug-in-reference.md)<br/>                       | Funciones de adaptador, funciones de contenedor y estructuras para crear adaptadores de complemento personalizados de tres tipos: motor, sensor y almacenamiento.<br/>   |
 
 
 

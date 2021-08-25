@@ -1,35 +1,35 @@
 ---
-description: Windows Sockets 2 proporciona un método genérico para usar las capacidades multipoint y multidifusión de los transportes.
+description: Windows Sockets 2 proporciona un método genérico para usar las funcionalidades multipunto y multidifusión de transportes.
 ms.assetid: 75cd8f21-a391-4626-b909-0760d12db995
-title: Multidifusión y Multipoint Protocol-Independent
+title: Protocol-Independent multipunto y multipunto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e409c18752b32af7cf65b4a55862ec75cec7a3e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 238949f017c2ecb910b533d12a809aa1c04af02e64d08aa0ef4e8d4f3d39b71b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857914"
 ---
-# <a name="protocol-independent-multicast-and-multipoint"></a>Multidifusión y Multipoint Protocol-Independent
+# <a name="protocol-independent-multicast-and-multipoint"></a>Protocol-Independent multipunto y multipunto
 
-Windows Sockets 2 proporciona un método genérico para usar las capacidades multipoint y multidifusión de los transportes. Este método genérico implementa estas características de la misma forma que permite el acceso a las capacidades básicas de transporte de datos de numerosos protocolos de transporte. El término, Multipoint, se usa en adelante para hacer referencia a las comunicaciones multidifusión y multipoint.
+Windows Sockets 2 proporciona un método genérico para usar las funcionalidades multipunto y multidifusión de transportes. Este método genérico implementa estas características del mismo modo que permite acceder a las funcionalidades básicas de transporte de datos de numerosos protocolos de transporte. El término multipunto se usa a partir de ahora para hacer referencia a las comunicaciones de multipunto y multipunto.
 
-Las implementaciones de Multipoint actuales (por ejemplo, multidifusión IP, ST-II, T. 120 y ATM UNI) varían considerablemente. Cómo se unen los nodos a una sesión de Multipoint, si un nodo determinado se designa como nodo central o raíz, y si los datos se intercambian entre todos los nodos o solo entre un nodo raíz y los distintos nodos hoja difieren entre las implementaciones. La estructura de [**\_ información de WSAPROTOCOL**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) para Windows Sockets 2 se usa para declarar los distintos atributos multipunto de un protocolo. Mediante el examen de estos atributos, el programador sabe qué convenciones seguir con las funciones de Windows Sockets 2 aplicables para configurar, emplear y anular sesiones multipoint.
+Las implementaciones actuales de varios puntos (por ejemplo, multidifusión IP, ST-II, T.120 y ATM UNI) varían considerablemente. La forma en que los nodos unen una sesión de varios puntos, si un nodo determinado se designa como nodo central o raíz, y si los datos se intercambian entre todos los nodos o solo entre un nodo raíz y los distintos nodos hoja difieren entre las implementaciones. La estructura INFO de [**WSAPROTOCOL \_**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) para Windows Sockets 2 se usa para declarar los distintos atributos multipunto de un protocolo. Al examinar estos atributos, el programador sabe qué convenciones se deben seguir con las funciones de sockets de Windows 2 aplicables para configurar, usar y desusar sesiones de varios puntos.
 
-A continuación se resumen las características de Winsock que admiten Multipoint:
+A continuación se resumen las características de Winsock que admiten multipunto:
 
--   Bits de dos atributos en la estructura de [**\_ información de WSAPROTOCOL**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) .
--   Cuatro marcas definidas para el parámetro *dwFlags* de la función [**WSASocket**](/windows/desktop/api/Winsock2/nf-winsock2-wsasocketa) .
--   Una función, [**WSAJoinLeaf**](/windows/desktop/api/Winsock2/nf-winsock2-wsajoinleaf), para agregar nodos hoja en una sesión de Multipoint
--   Dos códigos de comando [**WSAIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsaioctl) para controlar el bucle invertido multipunto y establecer el ámbito para las transmisiones de multidifusión. (Este último se corresponde con el parámetro TTL o período de vida de multidifusión IP).
+-   Bits de dos atributos en la [**estructura INFO de WSAPROTOCOL. \_**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa)
+-   Cuatro marcas definidas para el *parámetro dwFlags* de la [**función WSASocket.**](/windows/desktop/api/Winsock2/nf-winsock2-wsasocketa)
+-   Una función, [**WSAJoinLeaf,**](/windows/desktop/api/Winsock2/nf-winsock2-wsajoinleaf)para agregar nodos hoja a una sesión de varios puntos
+-   Dos [**códigos de comando WSAIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsaioctl) para controlar el bucle de retorno de varios puntos y establecer el ámbito de las transmisiones de multidifusión. (Este último corresponde al parámetro TTL o período de vida de multidifusión IP).
 
 > [!Note]  
-> La inclusión de estas características Multipoint en Windows Sockets 2 no impide que una aplicación use una interfaz dependiente del Protocolo existente, como las opciones de socket Deering para multidifusión IP.
+> La inclusión de estas características multipunto en Windows Sockets 2 no impide que una aplicación use una interfaz dependiente del protocolo existente, como las opciones de socket de deering para la multidifusión IP.
 
  
 
-Consulte [semántica de multidifusión y multidifusión](multipoint-and-multicast-semantics-2.md) para obtener información detallada sobre cómo se caracterizan los distintos esquemas de multipoint y cómo se usan las características aplicables de Windows Sockets 2.
+Consulte [Multipoint and Multicast Semantics](multipoint-and-multicast-semantics-2.md) (Semántica de multipunto y multidifusión) para obtener información detallada sobre cómo se caracterizan los distintos esquemas de multipunto y cómo se usan las características aplicables de Windows Sockets 2.
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Puede usar la API de administrador de autorización en el script para controlar el acceso a los recursos de la aplicación.
+description: Puede usar la API de Authorization Manager en script para controlar el acceso a los recursos de la aplicación.
 ms.assetid: 96852608-2362-419a-beb8-c4b9d0363d6e
-title: Usar la autorización en el script
+title: Uso de la autorización en el script
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,28 +9,28 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 36b3ba11148022c2265b6b2cd05e7c6ca25134ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d0eec15f2847a1be8de9f42489cf82c22fb75f837caa9f2b4eca5b33a41a2de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906767"
 ---
-# <a name="using-authorization-in-script"></a>Usar la autorización en el script
+# <a name="using-authorization-in-script"></a>Uso de la autorización en el script
 
-Puede usar la API de administrador de autorización para controlar el acceso a los recursos de la aplicación.
+Puede usar la API de Authorization Manager para controlar el acceso a los recursos de la aplicación.
 
-Los ejemplos de esta sección se escriben utilizando Visual Basic Scripting Edition (VBScript) y páginas de Active Server (ASP).
+Los ejemplos de esta sección se escriben mediante Visual Basic Scripting Edition (VBScript) y Active Server Pages (ASP).
 
-Para obtener información acerca de otras tareas de autorización, consulte [Supporting Tasks in script](supporting-tasks-for-authorization-in-script.md).
+Para obtener información sobre otras tareas de autorización, vea [Tareas de compatibilidad en script](supporting-tasks-for-authorization-in-script.md).
 
 
 
 | Tema                                                                                                                      | Descripción                                                                                              |
 |----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | [Definir permisos en el script](defining-permissions-in-script.md)                                                       | Defina qué usuarios tienen acceso a los recursos de la aplicación mediante la creación de un almacén de directivas de autorización. |
-| [Comprobando el acceso del cliente a un recurso solicitado en el script](verifying-client-access-to-a-requested-resource-in-script.md) | Compruebe si el cliente tiene acceso a una o varias operaciones.                                           |
-| [Delegación de la definición de permisos en el script](delegating-the-defining-of-permissions-in-script.md)                   | Delegue la administración de almacenes de directivas de autorización que se almacenan en Active Directory.          |
+| [Comprobación del acceso de cliente a un recurso solicitado en el script](verifying-client-access-to-a-requested-resource-in-script.md) | Compruebe si el cliente tiene acceso a una o varias operaciones.                                           |
+| [Delegación de la definición de permisos en el script](delegating-the-defining-of-permissions-in-script.md)                   | Delegue la administración de almacenes de directivas de autorización almacenados en Active Directory.          |
 
 
 

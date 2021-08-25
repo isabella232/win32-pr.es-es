@@ -1,7 +1,7 @@
 ---
 description: Opciones de ajuste de textura para las API de cálculo de IMT.
 ms.assetid: ec364418-67c6-42c7-9c5d-b97aa7e17c24
-title: Enumeración de marcas D3DXIMT (D3dx9mesh. h)
+title: Enumeración D3DXIMT FLAGS (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 97731d4720e67fce899bf96f457e55f6adbc05a7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3209021b73bc9d17f43386d7df85082887a76600540c44955c41228da3d17379
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857025"
 ---
-# <a name="d3dximt-flags-enumeration"></a>Enumeración de marcas D3DXIMT
+# <a name="d3dximt-flags-enumeration"></a>Enumeración D3DXIMT FLAGS
 
 Opciones de ajuste de textura para las API de cálculo de IMT.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,24 +41,24 @@ typedef enum D3DXIMT_FLAGS {
 
 <dl> <dt>
 
-<span id="D3DXIMT_WRAP_U"></span><span id="d3dximt_wrap_u"></span>**D3DXIMT \_ Wrap \_ U**
+<span id="D3DXIMT_WRAP_U"></span><span id="d3dximt_wrap_u"></span>**D3DXIMT \_ WRAP \_ U**
 </dt> <dd>
 
 La textura se ajusta en la dirección U.
 
 </dd> <dt>
 
-<span id="D3DXIMT_WRAP_V"></span><span id="d3dximt_wrap_v"></span>**D3DXIMT \_ Wrap \_ V**
+<span id="D3DXIMT_WRAP_V"></span><span id="d3dximt_wrap_v"></span>**D3DXIMT \_ WRAP \_ V**
 </dt> <dd>
 
 La textura se ajusta en la dirección V.
 
 </dd> <dt>
 
-<span id="D3DXIMT_WRAP_UV"></span><span id="d3dximt_wrap_uv"></span>**D3DXIMT \_ encapsulado \_ UV**
+<span id="D3DXIMT_WRAP_UV"></span><span id="d3dximt_wrap_uv"></span>**D3DXIMT \_ WRAP \_ UV**
 </dt> <dd>
 
-La textura se ajusta tanto en la dirección de usuario como en la dirección de V.
+La textura se ajusta tanto en la dirección usted como en la dirección V.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ La textura se ajusta tanto en la dirección de usuario como en la dirección de 
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ La textura se ajusta tanto en la dirección de usuario como en la dirección de 
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> <dt>
 
 [**D3DXComputeIMTFromSignal**](d3dxcomputeimtfromsignal.md)

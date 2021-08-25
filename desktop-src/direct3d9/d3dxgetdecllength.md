@@ -1,7 +1,7 @@
 ---
-description: Devuelve el número de elementos en la declaración de vértice.
+description: Devuelve el número de elementos de la declaración de vértice.
 ms.assetid: 3ce24e59-0ec3-4d53-8bc8-8a5a7cdf53b2
-title: Función D3DXGetDeclLength (D3DX9Mesh. h)
+title: Función D3DXGetDeclLength (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5576b4b86d5238d4942e09d605f695c66136799a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cc6a44c73d9b7127bb382cfbf18587a84d8cc179feabf48da6e29b908204b1a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857045"
 ---
-# <a name="d3dxgetdecllength-function"></a>D3DXGetDeclLength función)
+# <a name="d3dxgetdecllength-function"></a>Función D3DXGetDeclLength
 
-Devuelve el número de elementos en la declaración de vértice.
+Devuelve el número de elementos de la declaración de vértice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,20 +40,20 @@ UINT D3DXGetDeclLength(
 
 <dl> <dt>
 
-*pDecl* \[ de\]
+*pDecl* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Puntero a la declaración de vértice. Vea [**D3DVERTEXELEMENT9**](d3dvertexelement9.md).
+Puntero a la declaración de vértice. Vea [**D3DVERTEXELEMENT9.**](d3dvertexelement9.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-El número de elementos en la declaración de vértice.
+Número de elementos de la declaración de vértice.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ El número de elementos en la declaración de vértice.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,28 +1,28 @@
 ---
-title: Modo de Color-Index y administración de la paleta de Windows
-description: El modo de índice de color especifica los colores de una paleta lógica con un índice para una entrada específica de la paleta lógica.
+title: Color-Index y administración de Windows paleta
+description: El modo de índice de colores especifica los colores de una paleta lógica con un índice para una entrada de paleta lógica específica.
 ms.assetid: 8cf07c3e-8a8b-4f28-a363-34d3c0d33890
 keywords:
-- OpenGL en Windows, administración de paletas
+- OpenGL on Windows,palette management
 - OpenGL en Windows, modo de índice de color
-- modo de índice de color OpenGL
+- color-index mode OpenGL
 - Administración de paletas OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 873308c4ac64d496e344b1c71d440d4dc8321418
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 72e4d7c9db02a80bdffdef93655e88cc5b2ca8197a58c5ffdb488c2b782f10d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889265"
 ---
-# <a name="color-index-mode-and-windows-palette-management"></a>Modo de Color-Index y administración de la paleta de Windows
+# <a name="color-index-mode-and-windows-palette-management"></a>Color-Index y administración de Windows paleta
 
-El modo de índice de color especifica los colores de una paleta lógica con un índice para una entrada específica de la paleta lógica. La mayoría de los programas GDI usan las paletas de índice de color, pero el modo RGBA funciona mejor para OpenGL en varios efectos, como el sombreado, la iluminación, la niebla y la asignación de textura. Si el color más verdadero no es crítico para la aplicación de OpenGL, puede optar por usar el modo de índice de color (por ejemplo, para un mapa topográfico que use "false color" para enfatizar el degradado de elevación).
+El modo de índice de colores especifica los colores de una paleta lógica con un índice para una entrada de paleta lógica específica. La mayoría de los programas GDI usan paletas de índices de color, pero el modo RGBA funciona mejor para OpenGL para varios efectos, como sombreado, iluminación, sombra y asignación de textura. Si tener el color más verdadero no es fundamental para la aplicación OpenGL, puede optar por usar el modo de índice de color (por ejemplo, para un mapa topográfico que usa "color falso" para resaltar el degradado de elevación).
 
-## <a name="color-index-mode-palette-sample"></a>Ejemplo de paleta modo de Color-Index
+## <a name="color-index-mode-palette-sample"></a>ejemplo Color-Index paleta de modo de configuración
 
-En el código siguiente se configura una estructura [**PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor) que establece la marca del miembro **iPixelType** en PFD \_ Type \_ COLORINDEX. Esto especifica que la aplicación usa una paleta de índice de color.
+El código siguiente configura una [**estructura PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor) que establece la marca del miembro **iPixelType** en PFD \_ TYPE \_ COLORINDEX. Esto especifica que la aplicación usa una paleta de índices de color.
 
 
 ```C++
@@ -67,9 +67,9 @@ BOOL bSetupPixelFormat(HDC hdc)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

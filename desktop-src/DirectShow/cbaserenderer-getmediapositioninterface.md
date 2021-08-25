@@ -1,7 +1,7 @@
 ---
-description: El método GetMediaPositionInterface recupera los punteros de interfaz IMediaPosition y IMediaSeeking del filtro.
+description: El método GetMediaPositionInterface recupera los punteros de interfaz IMediaPosition e IMediaSeeking del filtro.
 ms.assetid: aeca4484-cecc-4d07-aa77-56221ff75699
-title: Método CBaseRenderer. GetMediaPositionInterface (Renbase. h)
+title: Método CBaseRenderer.GetMediaPositionInterface (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3d41d777b88f0e18ae1510c32b7e89024ea7bdd9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 12e15b297f78b3386ae9ad31e749858bad14b87e59e938ac02a3cf3a9ca002a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872335"
 ---
-# <a name="cbaserenderergetmediapositioninterface-method"></a>CBaseRenderer. GetMediaPositionInterface, método
+# <a name="cbaserenderergetmediapositioninterface-method"></a>Método CBaseRenderer.GetMediaPositionInterface
 
-El `GetMediaPositionInterface` método recupera los punteros de interfaz [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) y [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) del filtro.
+El método recupera los punteros de interfaz `GetMediaPositionInterface` [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) e [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) del filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Identificador de referencia de la interfaz.
 
 </dd> <dt>
 
-*PPV* 
+*Ppv* 
 </dt> <dd>
 
 Dirección de una variable que recibe el puntero de interfaz.
@@ -59,25 +59,25 @@ Dirección de una variable que recibe el puntero de interfaz.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                   | Descripción                         |
 |-----------------------------------------------------------------------------------------------|-------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | Correcto.<br/>                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Correcto.<br/>                 |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente.<br/>     |
-| <dl> <dt>**E \_ NOinterface**</dt> </dl> | No se admite la interfaz.<br/> |
+| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl> | No se admite la interfaz .<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El filtro delega todos los comandos de búsqueda en un objeto [**CRendererPosPassThru**](crendererpospassthru.md) , que los pasa arriba. Este método crea el objeto **CRendererPosPassThru** , si aún no existe, y lo consulta para la interfaz solicitada.
+El filtro delega todos los comandos de búsqueda en un [**objeto CRendererPosPassThru,**](crendererpospassthru.md) que los pasa de nivel superior. Este método crea el **objeto CRendererPosPassThru,** si aún no existe, y lo consulta para la interfaz solicitada.
 
-La variable miembro [**CBaseRenderer:: m \_ pPosition**](cbaserenderer-m-pposition.md) almacena un puntero al objeto **CRendererPosPassThru** .
+La variable [**miembro CBaseRenderer::m \_ pPosition**](cbaserenderer-m-pposition.md) almacena un puntero al objeto **CRendererPosPassThru.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ La variable miembro [**CBaseRenderer:: m \_ pPosition**](cbaserenderer-m-ppositi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ La variable miembro [**CBaseRenderer:: m \_ pPosition**](cbaserenderer-m-ppositi
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

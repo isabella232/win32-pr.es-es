@@ -1,11 +1,11 @@
 ---
-title: Domain-Replica atributo)
-description: Atributo de cadena Unicode, proporciona la lista de controladores de dominio de replicación de Windows NT 4,0.
+title: Domain-Replica atributo
+description: Atributo de cadena Unicode, proporciona la lista de controladores Windows de dominio de replicación de NT 4.0.
 ms.assetid: 973fe504-0c3e-4a7f-9a9e-0e5274ac7817
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Domain-Replica
-- domainReplica esquema de AD de atributos
+- Domain-Replica esquema de AD de atributo
+- DomainReplica attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cfc5119c15047fc6d3b7c15947d996b7f387957
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 62e532134b5bd78df6726eff15e84866b0c42e07aae3b473c76ce3abcade0fb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804715"
 ---
-# <a name="domain-replica-attribute"></a>Domain-Replica atributo)
+# <a name="domain-replica-attribute"></a>Domain-Replica atributo
 
-Atributo de cadena Unicode, proporciona la lista de controladores de dominio de replicación de Windows NT 4,0.
+Atributo de cadena Unicode, proporciona la lista de controladores Windows de dominio de replicación de NT 4.0.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Domain-Replica                              |
-| Nombre para mostrar de LDAP | domainReplica                               |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | domainReplica                               |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.158                      |
-| System-ID-GUID    | bf96795e-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf96795e-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Atributo de cadena Unicode, proporciona la lista de controladores de dominio de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Atributo de cadena Unicode, proporciona la lista de controladores de dominio de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Atributo de cadena Unicode, proporciona la lista de controladores de dominio de 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Atributo de cadena Unicode, proporciona la lista de controladores de dominio de 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Atributo de cadena Unicode, proporciona la lista de controladores de dominio de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Atributo de cadena Unicode, proporciona la lista de controladores de dominio de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

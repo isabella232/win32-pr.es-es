@@ -1,7 +1,7 @@
 ---
 description: La función GetDwordFromBlob recupera el valor DWORD con nombre de un BLOB.
 ms.assetid: edad74a7-b726-46d9-b49f-9984272d0a29
-title: Función GetDwordFromBlob (Netmon. h)
+title: Función GetDwordFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 064985f0f3b9a235dc1c00d683fe4b11371df87d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d81492e64127e61e8750b86964c2a6c541c409dacc232a031c152376943263f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890615"
 ---
-# <a name="getdwordfromblob-function"></a>GetDwordFromBlob función)
+# <a name="getdwordfromblob-function"></a>Función GetDwordFromBlob
 
-La función **GetDwordFromBlob** recupera el valor **DWORD** con nombre de un BLOB.
+La **función GetDwordFromBlob** recupera el valor **DWORD** con nombre de un BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,46 +43,46 @@ DWORD GetDwordFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador de un BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ de\]
+*pOwnerName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre del propietario del BLOB.
+Puntero al nombre del propietario de BLOB.
 
 </dd> <dt>
 
-*pCategoryName* \[ de\]
+*pCategoryName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la categoría de BLOB.
+Puntero al nombre de la categoría BLOB.
 
 </dd> <dt>
 
-*pTagName* \[ de\]
+*pTagName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la etiqueta de BLOB.
+Puntero al nombre de la etiqueta BLOB.
 
 </dd> <dt>
 
-*pDword* \[ enuncia\]
+*pDword* \[ out\]
 </dt> <dd>
 
-Puntero al valor **DWORD** del BLOB.
+Puntero al **valor DWORD** del BLOB.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que describe el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que describe el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ Si la función no es correcta, el valor devuelto es un valor de NMERR que descri
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

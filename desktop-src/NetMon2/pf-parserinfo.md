@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura PF PARSERINFO define un analizador cada vez. En la \_ estructura PF PARSERINFO, se define un analizador mediante la información sobre el protocolo que detecta el analizador.
+description: La estructura \_ PF PARSERINFO define un analizador a la vez. En la estructura PF PARSERINFO, la información sobre el protocolo que detecta el analizador define \_ un analizador.
 ms.assetid: e1180952-9560-4386-9320-919dfb8171b3
-title: Estructura de PF_PARSERINFO (Netmon. h)
+title: PF_PARSERINFO estructura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 28ebeaad31e6f40ceb961d8c303a22590966947f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 533e8dae6a009488998acd3232b062b423553b9df10f14ec97ef9ae2f8c55bea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889945"
 ---
-# <a name="pf_parserinfo-structure"></a>\_Estructura PF PARSERINFO
+# <a name="pf_parserinfo-structure"></a>Pf \_ PARSERINFO (estructura)
 
-La estructura **PF \_ PARSERINFO** define un analizador cada vez. En la estructura **PF \_ PARSERINFO** , se define un analizador mediante la información sobre el protocolo que detecta el analizador.
+La **estructura \_ PF PARSERINFO** define un analizador a la vez. En la **estructura PF \_ PARSERINFO,** la información sobre el protocolo que detecta el analizador define un analizador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,55 +62,55 @@ Breve descripción del protocolo.
 **szHelpFile**
 </dt> <dd>
 
-Nombre del archivo de ayuda del Protocolo, si existe.
+Nombre del archivo de Ayuda del protocolo, si lo hubiera.
 
 </dd> <dt>
 
 **pWhoCanPrecedeMe**
 </dt> <dd>
 
-Puntero a una estructura [PF \_ FOLLOWSET](pf-followset.md) que enumera los protocolos que pueden preceder al protocolo que describe la estructura **PF \_ PARSERINFO** . Monitor de red agrega el protocolo del analizador al [*siguiente conjunto*](f.md) de todos los protocolos del conjunto.
+Puntero a una [estructura \_ PF FOLLOWSET](pf-followset.md) que enumera los protocolos que pueden preceder al protocolo que describe la estructura **PF \_ PARSERINFO.** Monitor de red agrega el protocolo del analizador al [*siguiente*](f.md) conjunto de todos los protocolos del conjunto.
 
 </dd> <dt>
 
 **pWhoCanFollowMe**
 </dt> <dd>
 
-Puntero a una estructura de [PF \_ FOLLOWSET](pf-followset.md) que muestra el protocolo que puede seguir el protocolo que describe la estructura **PF \_ PARSERINFO** . Monitor de red agrega los protocolos del conjunto al [*siguiente conjunto*](f.md) del protocolo del analizador.
+Puntero a una [estructura \_ PF FOLLOWSET](pf-followset.md) que enumera el protocolo que puede seguir el protocolo que describe la estructura **PF \_ PARSERINFO.** Monitor de red agrega los protocolos del conjunto al [*siguiente*](f.md) conjunto del protocolo de analizador.
 
 </dd> <dt>
 
-**pWhoHandsOffToMe**
+**pHandHandsOffToMe**
 </dt> <dd>
 
-Puntero a una estructura [PF \_ HANDOFFSET](pf-handoffset.md) que se describa en el protocolo que describe la estructura **PF \_ PARSERINFO** . Monitor de red agrega el protocolo del analizador a los [*conjuntos de entrega*](h.md) de todos los protocolos del conjunto.
+Puntero a una [estructura \_ HANDOFFSET PF](pf-handoffset.md) que se entrega al protocolo que describe la estructura **PF \_ PARSERINFO.** Monitor de red agrega el protocolo de analizador a los [*conjuntos de entrega*](h.md) de todos los protocolos del conjunto.
 
 </dd> <dt>
 
-**pWhoDoIHandOffTo**
+**pHandDoIHandOffTo**
 </dt> <dd>
 
-Puntero a una estructura de [PF \_ HANDOFFSET](pf-handoffset.md) que enumera los protocolos a los que el protocolo del analizador se entrega. Monitor de red agrega los protocolos de este conjunto al [*conjunto de entrega*](h.md) del protocolo del analizador.
+Puntero a una [estructura \_ HANDOFFSET PF](pf-handoffset.md) que enumera los protocolos a los que entrega el protocolo de analizador. Monitor de red agrega los protocolos de este conjunto al [*conjunto de entrega*](h.md) del protocolo de analizador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La estructura **PF \_ PARSERINFO** se usa en la estructura **PF \_ PARSERDLLINFO** para proporcionar una descripción de un analizador. Monitor de red usa la descripción del analizador para actualizar el archivo [*Parser.ini*](p.md) y los archivos INI de los analizadores que preceden y siguen al protocolo descrito en la estructura **PF \_ PARSERINFO** .
+La **estructura \_ PF PARSERINFO** se usa en la estructura **PF \_ PARSERDLLINFO** para proporcionar una descripción de un analizador. Monitor de red usa la descripción del analizador para actualizar el archivo [*Parser.ini*](p.md) y los archivos INI de los analizadores que preceden y siguen el protocolo descrito en la estructura **PF \_ PARSERINFO.**
 
-Un conjunto siguiente especifica los protocolos que siguen a un protocolo. Monitor de red usa un conjunto de seguimiento cuando el analizador no puede identificar el protocolo siguiente a partir de los datos de una instancia de protocolo. En el archivo [*Parser.ini*](p.md) se almacena un conjunto de seguimiento. Cuando el analizador se instala por primera vez, Monitor de red actualiza el siguiente conjunto de protocolos de analizador que se enumeran en **pWhoCanPrecedeMe** y **pWhoCanFollowMe**.
+Un conjunto de seguimiento especifica los protocolos que siguen a un protocolo. Monitor de red utiliza un conjunto de seguimiento cuando el analizador no puede identificar el siguiente protocolo a partir de los datos de una instancia de protocolo. Un conjunto de seguimiento se almacena en el [*Parser.ini*](p.md) siguiente. Cuando el analizador se instala por primera vez, Monitor de red actualiza el siguiente conjunto de los protocolos de analizador que se enumeran en **pWhoCanPrecedeMe** y **pLowCanFollowMe**.
 
-Un conjunto de entrega especifica los protocolos que siguen a un protocolo. El analizador utiliza un conjunto de entrega solo cuando el analizador puede identificar el protocolo siguiente a partir de los datos de una instancia de protocolo. Un conjunto de entrega se almacena en los archivos INI de cada analizador. Cuando el analizador se instala por primera vez, Monitor de red actualiza el conjunto de entrega de los protocolos de analizador que se enumeran en **pWhoHandsOffToMe** y **pWhoDoIHandOffTo**.
+Un conjunto de entrega especifica los protocolos que siguen a un protocolo. El analizador usa un conjunto de entrega solo cuando el analizador puede identificar el siguiente protocolo a partir de los datos de una instancia de protocolo. Un conjunto de entregas se almacena en los archivos INI de cada analizador. Cuando el analizador se instala por primera vez, Monitor de red actualiza el conjunto de entrega de los protocolos de analizador que aparecen en **pHandHandsOffToMe** y **pHandDoIHandOffTo.**
 
 
 
 | Para obtener información acerca de                                               | Vea                                                                          |
 |------------------------------------------------------------------|------------------------------------------------------------------------------|
 | Qué son los analizadores y cómo funcionan con Monitor de red.        | [Analizadores](parsers.md)                                                       |
-| Qué incluyen los conjuntos siguientes.                                        | [Especificar un conjunto de seguimiento](specifying-a-follow-set.md)                       |
-| Qué contienen los conjuntos de entrega.                                       | [Especificar un conjunto de entrega](specifying-a-handoff-set.md)                     |
-| Qué puntos de entrada se incluyen en el archivo DLL del analizador.                | [Arquitectura de DLL de analizador](parser-dll-architecture.md)                       |
-| Cómo implementar **ParserAutoInstallInfo**  incluye un ejemplo. | [Implementación de ParserAutoInstallInfo](implementing-parserautoinstallinfo.md) |
+| Qué contienen los siguientes conjuntos.                                        | [Especificar un conjunto de seguimiento](specifying-a-follow-set.md)                       |
+| Qué conjuntos de entrega contienen.                                       | [Especificar un conjunto de entrega](specifying-a-handoff-set.md)                     |
+| Qué puntos de entrada se incluyen en el archivo DLL del analizador.                | [Arquitectura dll del analizador](parser-dll-architecture.md)                       |
+| Cómo implementar **ParserAutoInstallInfo incluye**  un ejemplo. | [Implementación de ParserAutoInstallInfo](implementing-parserautoinstallinfo.md) |
 
 
 
@@ -124,7 +124,7 @@ Un conjunto de entrega especifica los protocolos que siguen a un protocolo. El a
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

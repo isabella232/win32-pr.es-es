@@ -1,7 +1,7 @@
 ---
 description: Devuelve la cadena de identificador disponible en los metadatos del volumen.
 ms.assetid: 0573cbcd-6fb1-4648-bb06-4433796f6bb5
-title: Método GetIdentificationField de la clase Win32_EncryptableVolume
+title: Método GetIdentificationField de la Win32_EncryptableVolume clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: bb70f76d9556df5bed70639471eb7a0f3afaaecc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0cbcedfe13b46698bd1067a2200369575a2fb9d7ceaa50f52174afc0e83e712
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797135"
 ---
-# <a name="getidentificationfield-method-of-the-win32_encryptablevolume-class"></a>Método GetIdentificationField de la \_ clase EncryptableVolume de Win32
+# <a name="getidentificationfield-method-of-the-win32_encryptablevolume-class"></a>Método GetIdentificationField de la clase EncryptableVolume de Win32 \_
 
-El método **GetIdentificationField** de la [**clase \_ EncryptableVolume de Win32**](win32-encryptablevolume.md) devuelve la cadena de identificador disponible en los metadatos del volumen.
+El **método GetIdentificationField** de la clase [**\_ EncryptableVolume de Win32**](win32-encryptablevolume.md) devuelve la cadena de identificador disponible en los metadatos del volumen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,28 +39,28 @@ uint32 GetIdentificationField(
 
 <dl> <dt>
 
-*IdentificationField* \[ enuncia\]
+*IdentificationField* \[ out\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
-Cadena que especifica el campo de identificación que se asigna al volumen.
+Cadena que especifica el campo de identificación asignado al volumen.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Este método devuelve uno de los siguientes códigos u otro código de error si se produce un error.
+Este método devuelve uno de los códigos siguientes u otro código de error si se produce un error.
 
 
 
 | Código o valor devuelto                                                                                                                                                                  | Descripción                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> <dt>0 (0X0)</dt> </dl>                                  | Método realizado correctamente.<br/>                                                                           |
-| <dl> <dt>**FVE \_ \_ \_ Volumen bloqueado de E**</dt> <dt>2150694912 (0x80310000)</dt> </dl> | Esta unidad está bloqueada por Cifrado de unidad BitLocker. Debe desbloquear este volumen en el panel de control. <br/> |
-| <dl> <dt>**FVE \_ E \_ no \_ activada**</dt> <dt>2150694920 (0x80310008)</dt> </dl> | BitLocker no está habilitado en el volumen. Agregue un protector de clave para habilitar BitLocker. <br/>                    |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl>                                  | Método realizado correctamente.<br/>                                                                           |
+| <dl> <dt>**FVE \_ E \_ LOCKED \_ VOLUME**</dt> <dt>2150694912 (0x80310000)</dt> </dl> | Esta unidad está bloqueada por Cifrado de unidad BitLocker. Debe desbloquear este volumen desde Panel de control. <br/> |
+| <dl> <dt>**FVE \_ E \_ NOT \_ ACTIVATED**</dt> <dt>2150694920 (0x80310008)</dt> </dl> | BitLocker no está habilitado en el volumen. Agregue un protector de clave para habilitar BitLocker. <br/>                    |
 
 
 
@@ -70,12 +70,12 @@ Este método devuelve uno de los siguientes códigos u otro código de error si 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones Windows 7 Enterprise, Windows 7 Ultimate \[ Desktop\]<br/>                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\MicrosoftVolumeEncryption de \\ seguridad de cimv2 raíz \\<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise, Windows 7 aplicaciones de \[ escritorio Ultimate\]<br/>                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Atributo site-Object-BL
-description: La lista de nombres distintivos para las subredes que pertenecen a este sitio.
+title: Atributo Site-Object-BL
+description: Lista de nombres distintivos de las subredes que pertenecen a este sitio.
 ms.assetid: 70408711-7886-4a8e-9aeb-60354b418c2d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de objeto-BL de sitio
-- siteObjectBL esquema de AD de atributos
+- Esquema de AD del atributo Site-Object-BL
+- Esquema de AD del atributo siteObjectBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cba50b7a8f713cebfbbd1f19f5879cb46366128c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fcfdc126e4e30a9b70500b6c4d76dbfbe460c02d2a4ed34a64f30bd62383df83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836225"
 ---
-# <a name="site-object-bl-attribute"></a>Atributo site-Object-BL
+# <a name="site-object-bl-attribute"></a>Atributo Site-Object-BL
 
-La lista de nombres distintivos para las subredes que pertenecen a este sitio.
+Lista de nombres distintivos de las subredes que pertenecen a este sitio.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | Sitio-objeto-BL                          |
-| Nombre para mostrar de LDAP | siteObjectBL                            |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | El sistema establece este valor.        |
-| Frecuencia de actualización  | Cada vez que se crea o se elimina un sitio.  |
+| CN                | Site-Object-BL                          |
+| Ldap-Display-Name | siteObjectBL                            |
+| Size              | \-                                      |
+| Privilegio actualizar  | El sistema establece este valor.        |
+| Frecuencia de actualización  | Siempre que se crea o elimina un sitio.  |
 | Attribute-Id      | 1.2.840.113556.1.4.513                  |
-| System-ID-GUID    | 3e10944d-c354-11d0-aff8-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 3e10944d-c354-11d0-aff8-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -44,7 +44,7 @@ La lista de nombres distintivos para las subredes que pertenecen a este sitio.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ La lista de nombres distintivos para las subredes que pertenecen a este sitio.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 47                              |
+| Id. de vínculo                | 47                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,13 +77,13 @@ La lista de nombres distintivos para las subredes que pertenecen a este sitio.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 47                              |
+| Id. de vínculo                | 47                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ La lista de nombres distintivos para las subredes que pertenecen a este sitio.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 47                              |
+| Id. de vínculo                | 47                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,13 +119,13 @@ La lista de nombres distintivos para las subredes que pertenecen a este sitio.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 47                              |
+| Id. de vínculo                | 47                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -140,13 +140,13 @@ La lista de nombres distintivos para las subredes que pertenecen a este sitio.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 47                              |
+| Id. de vínculo                | 47                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -161,13 +161,13 @@ La lista de nombres distintivos para las subredes que pertenecen a este sitio.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 47                              |
+| Id. de vínculo                | 47                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -182,13 +182,13 @@ La lista de nombres distintivos para las subredes que pertenecen a este sitio.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 47                              |
+| Id. de vínculo                | 47                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

@@ -4,23 +4,23 @@ description: Especifica o recupera si la capa de seguridad de negociación está
 ms.assetid: 7fc9e3c7-0723-48c4-8d29-5f68a24a522c
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad NegotiateSecurityLayer
-- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable3, propiedad NegotiateSecurityLayer
-- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, propiedad NegotiateSecurityLayer
-- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad NegotiateSecurityLayer
-- Servicios de Escritorio remoto de la propiedad NegotiateSecurityLayer, objeto MsRdpClient5
-- Servicios de Escritorio remoto de objeto MsRdpClient5, propiedad NegotiateSecurityLayer
-- Servicios de Escritorio remoto de la propiedad NegotiateSecurityLayer, objeto MsRdpClient6
-- Servicios de Escritorio remoto de objeto MsRdpClient6, propiedad NegotiateSecurityLayer
-- Servicios de Escritorio remoto de la propiedad NegotiateSecurityLayer, objeto MsRdpClient7
-- Servicios de Escritorio remoto de objeto MsRdpClient7, propiedad NegotiateSecurityLayer
-- Servicios de Escritorio remoto de la propiedad NegotiateSecurityLayer, objeto MsRdpClient8
-- Servicios de Escritorio remoto de objeto MsRdpClient8, propiedad NegotiateSecurityLayer
-- Servicios de Escritorio remoto de la propiedad NegotiateSecurityLayer, objeto MsRdpClient9
-- Servicios de Escritorio remoto de objeto MsRdpClient9, propiedad NegotiateSecurityLayer
+- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto
+- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable3
+- Interfaz IMsRdpClientNonScriptable3 Servicios de Escritorio remoto , propiedad NegotiateSecurityLayer
+- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , propiedad NegotiateSecurityLayer
+- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad NegotiateSecurityLayer
+- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto , objeto MsRdpClient5
+- Objeto MsRdpClient5 Servicios de Escritorio remoto , propiedad NegotiateSecurityLayer
+- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto , objeto MsRdpClient6
+- Objeto MsRdpClient6 Servicios de Escritorio remoto , propiedad NegotiateSecurityLayer
+- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto , objeto MsRdpClient7
+- Objeto MsRdpClient7 Servicios de Escritorio remoto , propiedad NegotiateSecurityLayer
+- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto , objeto MsRdpClient8
+- Objeto MsRdpClient8 Servicios de Escritorio remoto , propiedad NegotiateSecurityLayer
+- Propiedad NegotiateSecurityLayer Servicios de Escritorio remoto , objeto MsRdpClient9
+- Objeto MsRdpClient9 Servicios de Escritorio remoto , propiedad NegotiateSecurityLayer
 topic_type:
 - apiref
 api_name:
@@ -44,20 +44,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e64533615c780cd6e3703be85363684e537b784a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 13f87abb5323289e60e3d29fa93d5e858a9a755224e7161ba28970ef5ccb186f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771555"
 ---
-# <a name="imsrdpclientnonscriptable3negotiatesecuritylayer-property"></a>IMsRdpClientNonScriptable3:: NegotiateSecurityLayer (propiedad)
+# <a name="imsrdpclientnonscriptable3negotiatesecuritylayer-property"></a>Propiedad IMsRdpClientNonScriptable3::NegotiateSecurityLayer
 
 Especifica o recupera si la capa de seguridad de negociación está habilitada para la conexión.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -74,14 +74,14 @@ HRESULT get_NegotiateSecurityLayer(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Especifica si se debe habilitar la negociación de la capa de seguridad.
+Especifica si se va a habilitar la negociación de la capa de seguridad.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si esta propiedad se establece en **Variant \_ FALSE** y autenticación a nivel de red (NLA) está habilitada en el sistema operativo del cliente, el cliente no negociará el nivel de seguridad y, en su lugar, usará NLA para proteger la conexión RDP. Si esta propiedad se establece en **Variant \_ true**, el cliente negociará entre NLA y la seguridad básica de RDP.
+Si esta propiedad se establece en **VARIANT \_ FALSE** y Autenticación a nivel de red (NLA) está habilitado en el sistema operativo cliente, el cliente no negociará la capa de seguridad y, en su lugar, usará NLA para proteger la conexión RDP. Si esta propiedad se establece en **VARIANT \_ TRUE,** el cliente negociará entre NLA y la seguridad rdp básica.
 
 > [!Note]  
-> La deshabilitación de la negociación del nivel de seguridad solo es posible cuando se conecta a un servidor host de sesión de Escritorio remoto (host de sesión de escritorio remoto) que ejecuta Windows Vista o sistemas operativos posteriores. Si esta propiedad está habilitada y el cliente intenta conectarse a un servidor host de sesión de escritorio remoto que ejecuta un sistema operativo anterior, se producirá un error en la conexión.
+> Deshabilitar la negociación de la capa de seguridad solo es posible cuando se conecta a un servidor de host de sesión de Escritorio remoto (host de sesión de Escritorio remoto) que ejecuta Windows Vista o sistemas operativos posteriores. Si esta propiedad está habilitada y el cliente intenta conectarse a un servidor host de sesión de Escritorio remoto que ejecuta un sistema operativo anterior, se producirá un error en la conexión.
 
  
 

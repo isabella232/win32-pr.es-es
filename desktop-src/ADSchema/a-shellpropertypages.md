@@ -1,11 +1,11 @@
 ---
-title: Atributo Shell-Property-pages
-description: El número de orden y el GUID de las páginas de propiedades para administrar objetos de Active Directory. Se puede tener acceso a estas páginas de propiedades desde el shell de Windows. Para obtener más información, vea el documento extender la interfaz de usuario para objetos de directorio.
+title: Atributo Shell-Property-Pages
+description: Número de orden y GUID de las páginas de propiedades para administrar Active Directory objetos. Se puede acceder a estas páginas de propiedades desde Windows shell. Para obtener más información, vea el documento Extending the Interfaz de usuario for Directory Objects (Extensión del Interfaz de usuario objetos de directorio).
 ms.assetid: e0edd91b-bdb6-47aa-9be2-8a23a89adb26
 ms.tgt_platform: multiple
 keywords:
-- Shell-propiedad-pages atributo AD Schema
-- shellPropertyPages esquema de AD de atributos
+- Esquema de AD del atributo Shell-Property-Pages
+- Esquema de AD del atributo shellPropertyPages
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: befad2334a754843fa0ae412565db8c82260f7cd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fb4ec36aa7738db5762f6cb1dc80e418f60b67c4529cd613cb4a2299d1d0fe37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836305"
 ---
-# <a name="shell-property-pages-attribute"></a>Atributo Shell-Property-pages
+# <a name="shell-property-pages-attribute"></a>Atributo Shell-Property-Pages
 
-El número de orden y el GUID de las páginas de propiedades para administrar objetos de Active Directory. Se puede tener acceso a estas páginas de propiedades desde el shell de Windows. Para obtener más información, vea el documento extender la interfaz de usuario para objetos de directorio.
+Número de orden y GUID de las páginas de propiedades para administrar Active Directory objetos. Se puede acceder a estas páginas de propiedades desde Windows shell. Para obtener más información, vea el documento Extending the Interfaz de usuario for Directory Objects (Extensión del Interfaz de usuario objetos de directorio).
 
 
 
 | Entrada | Value |
 |-------------------|------------------------------------------------|
-| CN                | Shell-propiedades-páginas                           |
-| Nombre para mostrar de LDAP | shellPropertyPages                             |
-| Tamaño              | \-                                             |
-| Actualizar privilegio  | Administrador de dominio o desarrollador de aplicaciones. |
-| Frecuencia de actualización  | Siempre que se agrega o se quita una página de propiedades.  |
+| CN                | Shell-Property-Pages                           |
+| Ldap-Display-Name | shellPropertyPages                             |
+| Size              | \-                                             |
+| Actualizar privilegios  | Administrador de dominio o desarrollador de aplicaciones. |
+| Frecuencia de actualización  | Cada vez que se agrega o quita una página de propiedades.  |
 | Attribute-Id      | 1.2.840.113556.1.4.563                         |
-| System-ID-GUID    | 52458039-ca6a-11d0-AFFF-0000f80367c1           |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)    |
+| System-Id-Guid    | 52458039-ca6a-11d0-afff-0000f80367c1           |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)    |
 
 
 
@@ -55,13 +55,13 @@ El número de orden y el GUID de las páginas de propiedades para administrar ob
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -76,13 +76,13 @@ El número de orden y el GUID de las páginas de propiedades para administrar ob
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -97,13 +97,13 @@ El número de orden y el GUID de las páginas de propiedades para administrar ob
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -118,13 +118,13 @@ El número de orden y el GUID de las páginas de propiedades para administrar ob
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -139,13 +139,13 @@ El número de orden y el GUID de las páginas de propiedades para administrar ob
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -160,13 +160,13 @@ El número de orden y el GUID de las páginas de propiedades para administrar ob
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |

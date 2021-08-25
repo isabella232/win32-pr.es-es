@@ -1,17 +1,17 @@
 ---
 description: El método AcceptParentalLevelChange acepta o rechaza el nuevo nivel de administración parental temporal.
 ms.assetid: b3d58069-16dc-4598-90ea-6136c2f62ac7
-title: Método AcceptParentalLevelChange
+title: AcceptParentalLevelChange (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8b2e81d1d82c4ede14580ed65d88566738dac1b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: aea4742622ce9a2c65cdce660a8bae7fab6f84171d6bd61cdf88475c2bcd788c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873595"
 ---
-# <a name="acceptparentallevelchange-method"></a>Método AcceptParentalLevelChange
+# <a name="acceptparentallevelchange-method"></a>AcceptParentalLevelChange (método)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.
@@ -38,7 +38,7 @@ Especifica el nuevo nivel parental como un valor booleano.
 | Value | Descripción                               |
 |-------|-------------------------------------------|
 | true  | Acepte el nuevo nivel de administración parental. |
-| false | Rechace el nuevo nivel de administración parental. |
+| false | Rechazar el nuevo nivel de administración parental. |
 
 
 
@@ -50,15 +50,15 @@ Especifica el nuevo nivel parental como un valor booleano.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llame a este método en respuesta a una \_ notificación de evento de cambio de nivel parental de DVD de EC \_ \_ \_ para especificar si el navegador de DVD debe reproducir el contenido con el nuevo nivel parental, o bien bifurcar a donde el disco especifique si se rechaza el nuevo nivel.
+Llame a este método en respuesta a una notificación de eventos EC DVD PARENTAL LEVEL CHANGE para especificar si el navegador de DVD debe reproducir el contenido con el nuevo nivel parental o rama en la que el disco especifica si se rechaza el nuevo \_ \_ \_ \_ nivel.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Aplicar niveles de administración parental](enforcing-parental-management-levels.md)
+[Aplicación de los niveles de administración parental](enforcing-parental-management-levels.md)
 </dt> <dt>
 
 [**GetPlayerParentalCountry**](getplayerparentalcountry-method.md)
@@ -73,10 +73,10 @@ Llame a este método en respuesta a una \_ notificación de evento de cambio de 
 [**NotifyParentalLevelChange**](notifyparentallevelchange-method.md)
 </dt> <dt>
 
-[**SelectParentalCountry**](selectparentalcountry-method.md)
+[**SeleccioneParentalCountry.**](selectparentalcountry-method.md)
 </dt> <dt>
 
-[**SelectParentalLevel**](selectparentallevel-method.md)
+[**SeleccioneParentalLevel.**](selectparentallevel-method.md)
 </dt> </dl>
 
  

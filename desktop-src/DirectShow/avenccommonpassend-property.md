@@ -1,35 +1,35 @@
 ---
-description: Detiene el paso de codificación actual o consulta si la fase de codificación actual es la última.
+description: Detiene el paso de codificación actual o consulta si el paso de codificación actual es el último.
 ms.assetid: 847f638f-9ab9-42ca-8e39-82c113cee92f
-title: Propiedad AVEncCommonPassEnd (Codecapi. h)
+title: Propiedad AVEncCommonPassEnd (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 026b20cf0c13536403e7ccf32b160e8c6fc08141
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 02faeb9d78f10b962b7134fd316bda348b0f03e1a82ace210956c2243231df19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104495640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873375"
 ---
 # <a name="avenccommonpassend-property"></a>Propiedad AVEncCommonPassEnd
 
-Detiene el paso de codificación actual o consulta si la fase de codificación actual es la última.
+Detiene el paso de codificación actual o consulta si el paso de codificación actual es el último.
 
 Esta propiedad es de lectura y escritura.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID de propiedad
 
 **CODECAPI \_ AVEncCommonPassEnd**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al establecer esta propiedad en **Variant \_ true** , finaliza la fase de codificación actual. Al establecer esta propiedad en **Variant \_ false** se termina la codificación Multipass.
+Si se establece esta propiedad **en VARIANT \_ TRUE,** se finaliza el paso de codificación actual. Si se establece esta propiedad **en VARIANT \_ FALSE,** se finaliza la codificación multipass.
 
-Al leer esta propiedad, se consulta si la fase de codificación actual es la última.
+Al leer esta propiedad se consulta si el paso de codificación actual es el último.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Al leer esta propiedad, se consulta si la fase de codificación actual es la úl
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -50,7 +50,7 @@ Al leer esta propiedad, se consulta si la fase de codificación actual es la úl
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

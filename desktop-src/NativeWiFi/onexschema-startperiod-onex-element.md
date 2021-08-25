@@ -1,7 +1,7 @@
 ---
-description: Especifica el período de tiempo, en segundos, que hay que esperar antes de que se envíe un EAPOL-Start.
+description: Especifica el período de tiempo, en segundos, que se esperará antes de EAPOL-Start se envíe una aplicación.
 ms.assetid: 6163eeb9-23a8-4e34-ad3f-016946e241e2
-title: Elemento startPeriod (OneX)
+title: elemento startPeriod (OneX)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: a583403a354cbefe93387be2d5af06958bbf6b28
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d21381939348ce8c37a9b23abb2283ab209e766bbce452c3802b8c5defe0872
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800725"
 ---
-# <a name="startperiod-onex-element"></a>Elemento startPeriod (OneX)
+# <a name="startperiod-onex-element"></a>elemento startPeriod (OneX)
 
-El elemento startPeriod (OneX) especifica el período de tiempo, en segundos, que hay que esperar antes de que se envíe un EAPOL-Start. Se envía un mensaje de EAPOL-Start para iniciar el proceso de autenticación de 802.1 X.
+El elemento startPeriod (OneX) especifica el período de tiempo, en segundos, que se debe esperar antes de EAPOL-Start se envía. Se EAPOL-Start mensaje para iniciar el proceso de autenticación 802.1X.
 
 Este elemento es opcional. Cuando startPeriod no se especifica en un perfil, se usa un valor de 5 segundos.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
 
 ``` syntax
 <xs:element name="startPeriod">
@@ -44,16 +44,16 @@ Este elemento es opcional. Cuando startPeriod no se especifica en un perfil, se 
 </xs:element>
 ```
 
-El elemento **startPeriod** se define mediante el elemento [**Onex**](onexschema-onex-element.md) .
+El **elemento startPeriod** se define mediante el [**elemento OneX.**](onexschema-onex-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -64,13 +64,13 @@ El elemento **startPeriod** se define mediante el elemento [**Onex**](onexschema
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**Onex-**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**Onex-**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> </dl>
 
  

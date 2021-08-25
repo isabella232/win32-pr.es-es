@@ -4,12 +4,12 @@ description: Obtenga información sobre cómo se pueden usar texturas de volumen
 ms.assetid: B6BF22A2-EDA3-4765-B545-BF825043D4C4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bf9b3ed8b1db89d9718fa904eefd23ce2e871db
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 618de4243598cdd9da3e80b0fe8cfad9cef65903736c4ae647f46e38d85fb77c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857655"
 ---
 # <a name="volume-tiled-resources"></a>Recursos en mosaico de volumen
 
@@ -78,7 +78,7 @@ trSize.bUseBox = false;
 trSize.NumTiles = 63;
 ```
 
-![asignación más detallada de un recurso en mosaico 3D](images/vtr-tex3d-default-1b.png)
+![asignación más detallada de un recurso en mosaico 3d](images/vtr-tex3d-default-1b.png)
 
 ### <a name="texture-3d-tiled-resource-second-most-detailed-mip"></a>Recurso en mosaico de textura 3D (segundo mip más detallado)
 
@@ -96,7 +96,7 @@ trSize.bUseBox = false;
 trSize.NumTiles = 6;
 ```
 
-![segunda asignación más detallada de un recurso en mosaico 3D](images/vtr-tex3d-default-2b.png)
+![segunda asignación más detallada de un recurso en mosaico 3d](images/vtr-tex3d-default-2b.png)
 
 ### <a name="texture-3d-tiled-resource-single-tile"></a>Recurso en mosaico de textura 3D (mosaico único)
 
@@ -149,22 +149,22 @@ Enumeraciones
 -   [**D3D11 \_ NIVEL DE \_ RECURSOS \_ EN MOSAICO:**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_tiled_resources_tier) determina el nivel de compatibilidad con recursos en mosaico.
 -   [**D3D11 \_ FORMAT \_ SUPPORT2:**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_format_support2) se usa para probar la compatibilidad con recursos en mosaico.
 -   [**D3D11 \_ CHECK \_ MULTISAMPLE \_ QUALITY LEVELS \_ \_ FLAG:**](/windows/desktop/api/D3D11_2/ne-d3d11_2-d3d11_check_multisample_quality_levels_flag) determina la compatibilidad con recursos en mosaico en un recurso de muestreo múltiple.
--   [**D3D11 \_ TILE \_ COPY \_ FLAGS:**](/windows/desktop/api/D3D11_2/ne-d3d11_2-d3d11_tile_copy_flag) contiene marcas para copiar recursos en mosaico y búferes lineales hacia y desde estos.
+-   [**D3D11 \_ TILE \_ COPY \_ FLAGS:**](/windows/desktop/api/D3D11_2/ne-d3d11_2-d3d11_tile_copy_flag) contiene las marcas para copiar a y desde recursos en mosaico desdobados y búferes lineales.
 
 Estructuras
 
--   [**D3D11 \_ \_ \_ COORDENADA DE RECURSOS EN**](/windows/desktop/api/D3D11_2/ns-d3d11_2-d3d11_tiled_resource_coordinate) MOSAICO: contiene la referencia de coordenadas y subrecursos x, y y z. Tenga en cuenta que hay una clase auxiliar: CD3D11 \_ TILED \_ RESOURCE \_ COORDINATE.
+-   [**D3D11 \_ \_ \_ COORDENADA DE RECURSOS EN**](/windows/desktop/api/D3D11_2/ns-d3d11_2-d3d11_tiled_resource_coordinate) MOSAICO: contiene la referencia de coordenadas x, y y z y subrecursos. Tenga en cuenta que hay una clase auxiliar: CD3D11 \_ TILED \_ RESOURCE \_ COORDINATE.
 -   [**D3D11 \_ TILE \_ REGION \_ SIZE**](/windows/desktop/api/D3D11_2/ns-d3d11_2-d3d11_tile_region_size) : especifica el tamaño y el número de iconos de la región en mosaico.
 -   [**D3D11 \_ FORMA \_ DE MOSAICO:**](/windows/desktop/api/D3D11_2/ns-d3d11_2-d3d11_tile_shape) forma de mosaico como ancho, alto y profundidad en los elementos de textura.
--   [**D3D11 \_ FEATURE \_ DATA \_ D3D11 \_ OPTIONS1:**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options1)contiene el nivel de recurso de icono admitido.
+-   [**D3D11 \_ FEATURE \_ DATA \_ D3D11 \_ OPTIONS1:**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options1)contiene el nivel de nivel de recurso de icono admitido.
 
 Métodos
 
 -   [**ID3D11Device::CheckFeatureSupport:**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) se usa para determinar qué características, y en qué nivel, son compatibles con el hardware actual.
 -   [**ID3D11DeviceContext2::CopyTiles:**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytiles) copia iconos del búfer al recurso en mosaico o viceversa.
--   [**ID3D11DeviceContext2::UpdateTileMappings:**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-updatetilemappings) actualiza las asignaciones de ubicaciones de mosaico de recursos en mosaico a ubicaciones de memoria de un grupo de mosaicos.
+-   [**ID3D11DeviceContext2::UpdateTileMappings:**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-updatetilemappings) actualiza las asignaciones de ubicaciones de mosaico en recursos en mosaico a ubicaciones de memoria de un grupo de mosaicos.
 -   [**ID3D11DeviceContext2::CopyTileMappings:**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytilemappings) copia las asignaciones de un recurso en mosaico de origen a un recurso en mosaico de destino.
--   [**ID3D11DeviceContext2::GetResourceTiling:**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11device2-getresourcetiling) obtiene información sobre cómo un recurso en mosaico se divide en iconos.
+-   [**ID3D11DeviceContext2::GetResourceTiling**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11device2-getresourcetiling) : obtiene información sobre cómo un recurso en mosaico se divide en iconos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
