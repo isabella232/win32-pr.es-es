@@ -1,23 +1,23 @@
 ---
-title: Exponer Owner-Drawn elementos de menú
-description: Exponer Owner-Drawn elementos de menú
+title: Exposición de Owner-Drawn de menú
+description: Exposición de Owner-Drawn de menú
 ms.assetid: 93b51cbb-b7b4-4a38-ba69-d6345a269944
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e79668115cedd5fb6b8c20b0d4df361d6d1d800
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c84a2630b5227937d4a1c9621360d9fb028676bba03516970f93e314b382035b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119860505"
 ---
-# <a name="exposing-owner-drawn-menu-items"></a>Exponer Owner-Drawn elementos de menú
+# <a name="exposing-owner-drawn-menu-items"></a>Exposición de Owner-Drawn de menú
 
-Los desarrolladores de aplicaciones pueden usar la estructura [**MSAAMENUINFO**](/windows/win32/api/oleacc/ns-oleacc-msaamenuinfo) para exponer los nombres de los elementos de menú dibujados por el propietario. Al asociar esta estructura con los datos del elemento de menú dibujado por el propietario, no es necesario exponer los elementos de menú con [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible).
+Los desarrolladores de aplicaciones pueden usar [**la estructura MSAAMENUINFO para**](/windows/win32/api/oleacc/ns-oleacc-msaamenuinfo) exponer los nombres de los elementos de menú dibujados por el propietario. Al asociar esta estructura a los datos del elemento de menú dibujado por el propietario, no es necesario exponer los elementos de menú con [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible).
 
-Al crear un menú dibujado por el propietario, defina una clase o estructura para los datos de elemento de menú dibujados por el propietario y cree instancias de esta clase para cada elemento de menú. Pase un puntero a los datos del elemento al agregar elementos al menú.
+Al crear un menú dibujado por el propietario, defina una clase o estructura para los datos del elemento de menú dibujado por el propietario y cree instancias de esta clase para cada elemento de menú. Pase un puntero a los datos del elemento al agregar elementos al menú.
 
-Para exponer los nombres de los elementos de menú, la estructura [**MSAAMENUINFO**](/windows/win32/api/oleacc/ns-oleacc-msaamenuinfo) debe ser el primer miembro de la estructura que define los datos de los elementos específicos de la aplicación, tal como se muestra en el ejemplo siguiente:
+Para exponer los nombres de los elementos de menú, la estructura [**MSAAMENUINFO**](/windows/win32/api/oleacc/ns-oleacc-msaamenuinfo) debe ser el primer miembro de la estructura que define los datos de elementos específicos de la aplicación, como se muestra en el ejemplo siguiente:
 
 
 ```C++
@@ -36,7 +36,7 @@ struct MenuEntry
 
 
 
-La estructura [**MSAAMENUINFO**](/windows/win32/api/oleacc/ns-oleacc-msaamenuinfo) no puede ser un miembro de una clase que contenga funciones virtuales. Cuando se compila el código, el primer miembro de la clase siempre es un puntero generado por el compilador a una tabla de las funciones virtuales. Para solucionar este problema, cree una estructura de datos de elemento que contenga **MSAAMENUINFO** como primer miembro. El segundo miembro es un puntero a una instancia de la clase que define los datos dibujados por el propietario. En el ejemplo siguiente se muestra esta técnica.
+La [**estructura MSAAMENUINFO**](/windows/win32/api/oleacc/ns-oleacc-msaamenuinfo) no puede ser miembro de una clase que contenga funciones virtuales. Cuando se compila el código, el primer miembro de la clase siempre es un puntero generado por el compilador a una tabla de las funciones virtuales. Para solucionar este problema, cree una estructura de datos de elemento que contenga **MSAAMENUINFO** como primer miembro. El segundo miembro es un puntero a una instancia de la clase que define los datos dibujados por el propietario. En el ejemplo siguiente se muestra esta técnica.
 
 
 ```C++
@@ -66,9 +66,9 @@ struct MenuInfo
 
 Al agregar elementos al menú, pase un puntero a una instancia de la estructura que contiene [**MSAAMENUINFO**](/windows/win32/api/oleacc/ns-oleacc-msaamenuinfo) para exponer los nombres de los elementos de menú.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TDN_RADIO_BUTTON_CLICKED (commctrl. h)
-description: Enviado por un cuadro de diálogo de tarea cuando el usuario selecciona un botón de radio o un vínculo de comando en el cuadro de diálogo de tarea. Este código de notificación se recibe solo a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método TaskDialogIndirect.
+title: TDN_RADIO_BUTTON_CLICKED de notificación (Commctrl.h)
+description: Enviado por un cuadro de diálogo de tarea cuando el usuario selecciona un botón de radio o un vínculo de comando en el cuadro de diálogo de tarea. Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método TaskDialogIndirect.
 ms.assetid: d9a29874-6755-4754-bcaf-94746b218b47
 keywords:
-- TDN_RADIO_BUTTON_CLICKED controles de código de notificación de Windows
+- TDN_RADIO_BUTTON_CLICKED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0c8b16f738e4807c94a060b41b3932d0f3e07ea
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea1917a1523cdc3a106398d07912d3fff5295f7da18a59055f059a13007f98b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875765"
 ---
-# <a name="tdn_radio_button_clicked-notification-code"></a>\_Código de \_ notificación del clic del botón de radio TDN \_
+# <a name="tdn_radio_button_clicked-notification-code"></a>Código de notificación CLIC EN \_ EL BOTÓN DE RADIO \_ \_ de TDN
 
-Enviado por un cuadro de diálogo de tarea cuando el usuario selecciona un botón de radio o un vínculo de comando en el cuadro de diálogo de tarea. Este código de notificación se recibe solo a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método [**TaskDialogIndirect**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) .
+Enviado por un cuadro de diálogo de tarea cuando el usuario selecciona un botón de radio o un vínculo de comando en el cuadro de diálogo de tarea. Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el [**método TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
 
 
 ```C++
@@ -42,7 +42,7 @@ TDN_RADIO_BUTTON_CLICKED
 *wParam* 
 </dt> <dd>
 
-Un valor **int** que especifica el identificador que corresponde al botón de radio en el que se hizo clic.
+Un **valor int** que especifica el identificador correspondiente al botón de radio en el que se hizo clic.
 
 </dd> <dt>
 
@@ -63,9 +63,9 @@ Se omite el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

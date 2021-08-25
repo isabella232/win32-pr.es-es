@@ -4,16 +4,16 @@ ms.assetid: e03d2ab5-50ea-4916-9774-850506714538
 title: Consulta de información de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcd20521060ecceb5dcec1fbd37cbdac4f34c5b7
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: a0488ea6ae91632b3609d88517c9c62a73f6ed48ee849c8f5e14b778ef122623
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927835"
 ---
 # <a name="querying-for-event-information"></a>Consulta de información de eventos
 
-En el ejemplo siguiente se muestra cómo abrir un registro de eventos, leer eventos del registro, imprimir información sobre los eventos y, a continuación, cerrar el registro de eventos. En este ejemplo se filtran los eventos escritos por el ejemplo en [Reporting an Event](reporting-an-event.md).
+En el ejemplo siguiente se muestra cómo abrir un registro de eventos, leer eventos del registro, imprimir información sobre los eventos y, a continuación, cerrar el registro de eventos. En este ejemplo se filtran los eventos escritos por el ejemplo en [Informes de un evento](reporting-an-event.md).
 
 
 ```C++

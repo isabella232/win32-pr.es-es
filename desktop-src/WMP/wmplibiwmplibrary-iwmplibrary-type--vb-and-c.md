@@ -1,11 +1,11 @@
 ---
-title: IWMPLibrary Type, propiedad
-description: La propiedad Type obtiene un valor que indica el tipo de biblioteca.
+title: Propiedad de tipo IWMPLibrary
+description: La propiedad type obtiene un valor que indica el tipo de biblioteca.
 ms.assetid: 869eab74-e793-4b04-b634-079feac8cf7b
 keywords:
-- propiedades de tipo Media Player Windows
-- propiedad de tipo Windows Media Player, interfaz IWMPLibrary
-- Interfaz IWMPLibrary Windows Media Player, propiedad Type
+- tipo de propiedad Reproductor de Windows Media
+- Type property Reproductor de Windows Media , IWMPLibrary (interfaz)
+- Interfaz IWMPLibrary Reproductor de Windows Media , propiedad type
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c47aa4069b9886d79fd77a6816eede4eb4ad81e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 44cb7aaf892d6f73a498d5d880c41ab2df3fa8e028039ea39966b6547b11d9b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861795"
 ---
-# <a name="iwmplibrarytype-property"></a>IWMPLibrary:: Type (propiedad)
+# <a name="iwmplibrarytype-property"></a>Propiedad IWMPLibrary::type
 
-La propiedad **Type** obtiene un valor que indica el tipo de biblioteca.
+La **propiedad type** obtiene un valor que indica el tipo de biblioteca.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,7 +46,7 @@ Public ReadOnly Property type As WMPLibraryType
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un **WMPLib. WMPLibraryType** que es un valor de la enumeración **WMPLibraryType** que indica el tipo de biblioteca.
+**WMPLib.WMPLibraryType que** es un valor de la enumeración **WMPLibraryType** que indica el tipo de biblioteca.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Un **WMPLib. WMPLibraryType** que es un valor de la enumeración **WMPLibraryTyp
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

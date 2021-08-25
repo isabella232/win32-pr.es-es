@@ -1,23 +1,23 @@
 ---
-description: En este tema se proporciona un ejemplo del uso de degradados en un OM XPS.
+description: En este tema se proporciona un ejemplo del uso de degradados en una OM XPS.
 ms.assetid: c58c9e5a-c871-4b44-a1be-0aceafa2f805
-title: Degradados de XPS OM
+title: Degradados DE OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5aac5fcce4ebd662d834705d1e8d84140f09000
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 267d053ef0e9b98408119870cb723ceb1170d4905aab81b0dc3db7969c356c32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823615"
 ---
-# <a name="xps-om-gradients"></a>Degradados de XPS OM
+# <a name="xps-om-gradients"></a>Degradados DE OM XPS
 
-En este tema se proporciona un ejemplo del uso de degradados en un OM XPS.
+En este tema se proporciona un ejemplo del uso de degradados en una OM XPS.
 
-## <a name="add-a-new-stop-to-an-existing-gradient"></a>Agregar una nueva detención a un degradado existente
+## <a name="add-a-new-stop-to-an-existing-gradient"></a>Agregar una nueva detenerse a un degradado existente
 
-En el ejemplo de código siguiente se agrega una nueva parada al degradado de un pincel de degradado lineal.
+En el ejemplo de código siguiente se agrega una nueva detenerse al degradado de un pincel de degradado lineal.
 
 
 ```C++
@@ -113,10 +113,10 @@ En el ejemplo de código siguiente se agrega una nueva parada al degradado de un
 
 <dl> <dt>
 
-[**Interfaz IXpsOMGradientStop**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientstop)
+[**IXpsOMGradientStop (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientstop)
 </dt> <dt>
 
-[**Interfaz IXpsOMGradientStopCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientstopcollection)
+[**IXpsOMGradientStopCollection (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientstopcollection)
 </dt> </dl>
 
  

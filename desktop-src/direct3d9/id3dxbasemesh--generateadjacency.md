@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXBaseMesh::GenerateAdjacency: genere una lista de bordes de malla, así como una lista de caras que comparten cada borde.'
+description: 'Método ID3DXBaseMesh::GenerateAdjacency: genera una lista de bordes de malla, así como una lista de caras que comparten cada borde.'
 ms.assetid: 9d52290f-1c9e-43a7-b239-35cd54e36466
 title: Método ID3DXBaseMesh::GenerateAdjacency (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 783ed7ad61337e606793b9b467e4b17fddd7ecd2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d51070b5b67b50859338943a60e44cbb224e572ab9e5704e56940328a65479f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848535"
 ---
 # <a name="id3dxbasemeshgenerateadjacency-method"></a>Método ID3DXBaseMesh::GenerateAdjacency
 
@@ -46,7 +46,7 @@ HRESULT GenerateAdjacency(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Especifica que los vértices que difieren en la posición en menos de epsilon deben tratarse como coincidentes.
+Especifica que los vértices que difieren en posición por menos de epsilon deben tratarse como coincidentes.
 
 </dd> <dt>
 
@@ -63,13 +63,13 @@ Puntero a una matriz de tres DWORD por cara que se va a rellenar con los índice
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentarios
 
 Una vez que una aplicación genera información de adyacencia para una malla, los datos de la malla se pueden optimizar para mejorar el rendimiento del dibujo.
 
-El orden de las entradas del búfer de adyacencia viene determinado por el orden de los índices de vértice en el búfer de índice. El triángulo adyacente 0 siempre se corresponde con el borde entre los índices de las esquinas 0 y 1. El triángulo adyacente 1 siempre corresponde al borde entre los índices de las esquinas 1 y 2, mientras que el triángulo adyacente 2 corresponde al borde entre los índices de las esquinas 2 y 0.
+El orden de las entradas del búfer de adyacencia viene determinado por el orden de los índices de vértices en el búfer de índice. El triángulo adyacente 0 siempre se corresponde con el borde entre los índices de las esquinas 0 y 1. El triángulo adyacente 1 siempre se corresponde con el borde entre los índices de las esquinas 1 y 2, mientras que el triángulo adyacente 2 corresponde al borde entre los índices de las esquinas 2 y 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ El orden de las entradas del búfer de adyacencia viene determinado por el orden
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

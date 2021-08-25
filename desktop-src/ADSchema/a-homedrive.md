@@ -1,11 +1,11 @@
 ---
-title: Home-Drive atributo)
-description: Especifica la letra de unidad a la que se va a asignar la ruta de acceso UNC especificada por homeDirectory.
+title: Home-Drive atributo
+description: Especifica la letra de unidad a la que se asignará la ruta de acceso UNC especificada por homeDirectory.
 ms.assetid: fa402e14-febf-4ed9-bcc6-a6bfd405068c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Home-Drive
-- atributo homeDrive AD Schema
+- Home-Drive esquema de AD de atributo
+- Esquema de AD del atributo homeDrive
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ce9bff87662cc3b9da962b0c5647e79e90a3068
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8a33e7d31f175f3675da86c56cbd0617fe566c93a95272517eff97f24fac3f53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925545"
 ---
-# <a name="home-drive-attribute"></a>Home-Drive atributo)
+# <a name="home-drive-attribute"></a>Home-Drive atributo
 
-Especifica la letra de unidad a la que se va a asignar la ruta de acceso UNC especificada por [**HomeDirectory**](a-homedirectory.md). La letra de unidad debe especificarse con el formato *letraDeUnidad * * *:**, donde *letraDeUnidad* es la letra de la unidad que se va a asignar. *LetraDeUnidad* debe ser una sola letra mayúscula y dos puntos (:) es obligatorio.
+Especifica la letra de unidad a la que se asignará la ruta de acceso UNC especificada por [**homeDirectory**](a-homedirectory.md). La letra de unidad debe especificarse con el formato *DriveLetter::** donde *DriveLetter* es la letra de la unidad que se va a asignar. *DriveLetter* debe ser una sola letra mayúscula y dos puntos (:) es necesario.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------------------------------------------------|
 | CN                | Home-Drive                                                                        |
-| Nombre para mostrar de LDAP | homeDrive                                                                         |
-| Tamaño              | 2 bytes                                                                           |
-| Actualizar privilegio  | El administrador de dominio establece este valor.                                         |
+| Ldap-Display-Name | homeDrive                                                                         |
+| Size              | 2 bytes                                                                           |
+| Actualizar privilegios  | El administrador de dominio establece este valor.                                         |
 | Frecuencia de actualización  | Cuando se crea el registro de un usuario y cada vez que es necesario cambiar la unidad principal. |
 | Attribute-Id      | 1.2.840.113556.1.4.45                                                             |
-| System-ID-GUID    | bf967986-0de6-11d0-a285-00aa003049e2                                              |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                       |
+| System-Id-Guid    | bf967986-0de6-11d0-a285-00aa003049e2                                              |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                       |
 
 
 
@@ -55,18 +55,18 @@ Especifica la letra de unidad a la que se va a asignar la ruta de acceso UNC esp
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Especifica la letra de unidad a la que se va a asignar la ruta de acceso UNC esp
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Especifica la letra de unidad a la que se va a asignar la ruta de acceso UNC esp
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Especifica la letra de unidad a la que se va a asignar la ruta de acceso UNC esp
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Especifica la letra de unidad a la que se va a asignar la ruta de acceso UNC esp
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Especifica la letra de unidad a la que se va a asignar la ruta de acceso UNC esp
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 

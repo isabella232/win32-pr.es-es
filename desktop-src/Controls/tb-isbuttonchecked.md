@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_ISBUTTONCHECKED (commctrl. h)
-description: Determina si el botón especificado de una barra de herramientas está activado.
+title: TB_ISBUTTONCHECKED mensaje (Commctrl.h)
+description: Determina si el botón especificado en una barra de herramientas está activado.
 ms.assetid: ce576951-8db6-4854-8457-211ece018ce8
 keywords:
-- TB_ISBUTTONCHECKED controles de mensajes de Windows
+- TB_ISBUTTONCHECKED controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cb9bc573478ea55ce8e0bda48ff16679b135fc2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 26d93340668e926f99271e9acd450eed5d51aa454571e779601744dc4d283b1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104533976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876995"
 ---
-# <a name="tb_isbuttonchecked-message"></a>\_Mensaje ISBUTTONCHECKED TB
+# <a name="tb_isbuttonchecked-message"></a>Mensaje \_ ISBUTTONCHECKED de TB
 
-Determina si el botón especificado de una barra de herramientas está activado.
+Determina si el botón especificado en una barra de herramientas está activado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -49,9 +49,9 @@ Devuelve un valor distinto de cero si el botón está activado o cero en caso co
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

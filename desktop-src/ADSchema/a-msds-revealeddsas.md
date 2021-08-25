@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Revelód-DSA
-description: Vínculo hacia atrás para MS-DS-revelado-usuarios. Identifica qué RODC contiene el secreto de los usuarios.
+title: Atributo ms-DS-Revealed-DSA
+description: Vínculo hacia atrás para ms-DS-Revealed-Users. Identifica qué RODC contiene ese secreto de los usuarios.
 ms.assetid: cd84db75-d961-4290-8aa7-2805febbd842
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DS-Revelóted-DSA
-- Esquema de AD de atributo msDS-RevealedDSAs
+- Esquema de AD del atributo ms-DS-Revealed-DSA
+- Esquema de AD del atributo msDS-RevealedDSAs
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e77dfd69fafffc3286f0ff9419965d7ae9daaa0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5b8cd94e5cde7c5ea021558088852f551fcdcf733eab131216d663d363c5a544
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925505"
 ---
-# <a name="ms-ds-revealed-dsas-attribute"></a>atributo MS-DS-Revelód-DSA
+# <a name="ms-ds-revealed-dsas-attribute"></a>Atributo ms-DS-Revealed-DSA
 
-Vínculo hacia atrás para [**MS-DS-revelado-usuarios**](a-msds-revealedusers.md). Identifica qué RODC contiene el secreto del usuario.
+Vínculo hacia atrás [**para ms-DS-Revealed-Users**](a-msds-revealedusers.md). Identifica qué RODC contiene el secreto de ese usuario.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-Revelód-DSA                     |
-| Nombre para mostrar de LDAP | msDS-RevealedDSAs                       |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-Revealed-DSA                     |
+| Ldap-Display-Name | msDS-RevealedDSA                       |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1930                 |
-| System-ID-GUID    | 94f6f2ac-c76d-4b5e-b71f-f332c3e93c22    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 94f6f2ac-c76d-4b5e-b71f-f332c3e93c22    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -52,13 +52,13 @@ Vínculo hacia atrás para [**MS-DS-revelado-usuarios**](a-msds-revealedusers.md
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2103                            |
+| Id. de vínculo                | 2103                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -73,13 +73,13 @@ Vínculo hacia atrás para [**MS-DS-revelado-usuarios**](a-msds-revealedusers.md
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2103                            |
+| Id. de vínculo                | 2103                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -94,13 +94,13 @@ Vínculo hacia atrás para [**MS-DS-revelado-usuarios**](a-msds-revealedusers.md
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2103                            |
+| Id. de vínculo                | 2103                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

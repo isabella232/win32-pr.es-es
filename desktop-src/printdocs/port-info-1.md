@@ -1,7 +1,7 @@
 ---
-description: La estructura de la información de puerto \_ \_ 1 identifica un puerto de impresora compatible.
+description: La estructura PORT \_ INFO \_ 1 identifica un puerto de impresora compatible.
 ms.assetid: e474fe9c-e554-406a-a5bf-de07f9a72b32
-title: Estructura de PORT_INFO_1 (winspool. h)
+title: PORT_INFO_1 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: d64e7dfa29cbe6b3f7efd3aaa0076851aea0311b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff6e4c3a43c35118772aede2e329a2e1e761fc0f147b5a3a9ceeef97bbf8fb00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947815"
 ---
-# <a name="port_info_1-structure"></a>Estructura de información de puerto \_ \_ 1
+# <a name="port_info_1-structure"></a>Estructura \_ PORT INFO \_ 1
 
-La estructura de la **información de puerto \_ \_ 1** identifica un puerto de impresora compatible.
+La **estructura PORT INFO \_ \_ 1** identifica un puerto de impresora compatible.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ typedef struct _PORT_INFO_1 {
 **pName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que identifica un puerto de impresora compatible (por ejemplo, "LPT1:").
+Puntero a una cadena terminada en NULL que identifica un puerto de impresora compatible (por ejemplo, "LPT1:").
 
 </dd> </dl>
 
@@ -56,8 +56,8 @@ Puntero a una cadena terminada en null que identifica un puerto de impresora com
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **\_ Información de puerto \_ \_ 1s** (Unicode) y la **\_ información de puerto \_ \_ 1A** (ANSI)<br/>                                 |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ PORT \_ INFO \_ 1W** (Unicode) e **\_ PORT INFO \_ \_ 1A** (ANSI)<br/>                                 |
 
 
 
@@ -68,7 +68,7 @@ Puntero a una cadena terminada en null que identifica un puerto de impresora com
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumPorts**](enumports.md)

@@ -1,6 +1,6 @@
 ---
 title: NetServiceEnum
-description: La función NetServiceEnum está obsoleta. Se incluye por compatibilidad con las versiones de 16 bits de Windows. Otras aplicaciones deben usar las funciones de servicio de.
+description: La función NetServiceEnum está obsoleta. Se incluye por compatibilidad con versiones de 16 bits de Windows. Otras aplicaciones deben usar las funciones de servicio.
 ms.assetid: 24e0872b-c408-4be4-a01d-4a1caa71f9b3
 ms.topic: reference
 ms.date: 05/31/2018
@@ -12,17 +12,17 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 978cfb62458c2cbcecba8c8d7ba8d9e7df201d2a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a7b7460dcbadc82a0bb8acb647f2ffd03edea711610bd5827c7aff057babf1ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105665847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911884"
 ---
 # <a name="netserviceenum"></a>NetServiceEnum
 
-La función **NetServiceEnum** está obsoleta. Se incluye por compatibilidad con las versiones de 16 bits de Windows. Otras aplicaciones deben usar las [funciones de servicio](/windows/desktop/Services/service-functions)de.
+La **función NetServiceEnum** está obsoleta. Se incluye por compatibilidad con versiones de 16 bits de Windows. Otras aplicaciones deben usar las [funciones de servicio](/windows/desktop/Services/service-functions).
 
- 
+ 
 
- 
+ 

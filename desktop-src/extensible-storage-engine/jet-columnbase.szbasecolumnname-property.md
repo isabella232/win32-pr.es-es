@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_COLUMNBASE. szBaseColumnName'
-title: Propiedad JET_COLUMNBASE. szBaseColumnName
+description: 'Más información sobre: JET_COLUMNBASE.szBaseColumnName'
+title: JET_COLUMNBASE.szBaseColumnName, propiedad
 TOCTitle: 'szBaseColumnName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_COLUMNBASE.szBaseColumnName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnbase.szbasecolumnname(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 93c3fd47cba41ef54ebf4f53cd1c2b22cdde5c6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d4ff0af51ddde0c6a42a50e28f8abf1c695b762da5d2e0a7578a68efa7c6f1c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945845"
 ---
-# <a name="jet_columnbaseszbasecolumnname-property"></a>Propiedad JET_COLUMNBASE. szBaseColumnName
+# <a name="jet_columnbaseszbasecolumnname-property"></a>JET_COLUMNBASE.szBaseColumnName, propiedad
 
-Obtiene el nombre de la columna en la tabla de plantilla.
+Obtiene el nombre de la columna en la tabla de plantillas.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public string szBaseColumnName { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COLUMNBASE (clase)](./jet-columnbase-class.md)
+[JET_COLUMNBASE clase](./jet-columnbase-class.md)
 
-[Miembros de JET_COLUMNBASE](./jet-columnbase-members.md)
+[JET_COLUMNBASE miembros](./jet-columnbase-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: El método GetMethod recupera el identificador de envío (DISPID) del método que se va a ejecutar.
+description: El método GetMethod recupera el identificador de distribución (DISPID) del método que se va a ejecutar.
 ms.assetid: 93b48e04-7a47-4112-ae9d-dfda6adf100a
-title: Método CDeferredCommand. GetMethod (Ctlutil. h)
+title: Método CDeferredCommand.GetMethod (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2dcbf42f7216aa72faf578d80ec47b0877be78c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 16d6f3ae7a116d59eef60b440a7423f57cf0012375e261a9943714523db9259f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910077"
 ---
-# <a name="cdeferredcommandgetmethod-method"></a>CDeferredCommand. GetMethod (método)
+# <a name="cdeferredcommandgetmethod-method"></a>Método CDeferredCommand.GetMethod
 
-El `GetMethod` método recupera el identificador de envío (DISPID) del método que se va a ejecutar.
+El `GetMethod` método recupera el identificador de distribución (DISPID) del método que se va a ejecutar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el DISPID del método que se va a ejecutar.
+Devuelve el VALOR DISPID del método que se ejecutará.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve el DISPID del método que se va a ejecutar.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el DISPID del método que se va a ejecutar.
 
 <dl> <dt>
 
-[**Clase CDeferredCommand**](cdeferredcommand.md)
+[**CDeferredCommand (clase)**](cdeferredcommand.md)
 </dt> </dl>
 
  

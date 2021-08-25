@@ -1,31 +1,31 @@
 ---
-description: Este atributo devuelve el nombre de la cartelera actualmente en ejecución, o establece y muestra una cartelera por nombre. Este atributo se utiliza en modo de vista previa.
+description: Este atributo devuelve el nombre de los conjuntos o conjuntos que se están ejecutando actualmente y muestra un elemento por nombre. Este atributo se usa en modo de vista previa.
 ms.assetid: 7ef7bc0f-ee4c-4a97-bea8-dd16a2cf28bc
-title: Atributo de control BillboardName
+title: Atributo controlNameName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 591c90e6a47e3a5190a56fe33e5840d8514cc03a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79e068fc3ceb88920ce43bcd00b914b47483c50f7b068044b584a0df368af2aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927025"
 ---
-# <a name="billboardname-control-attribute"></a>Atributo de control BillboardName
+# <a name="billboardname-control-attribute"></a>Atributo controlNameName
 
-Este atributo devuelve el nombre de la cartelera actualmente en ejecución, o establece y muestra una cartelera por nombre. Este atributo se utiliza en modo de vista previa.
+Este atributo devuelve el nombre de los conjuntos o conjuntos que se están ejecutando actualmente y muestra un elemento por nombre. Este atributo se usa en modo de vista previa.
 
 ## <a name="valid-controls"></a>Controles válidos
 
-[Valla](billboard-control.md)
+[Cartelera](billboard-control.md)
 
 ## <a name="associated-bit-flags"></a>Marcas de bits asociadas
 
-Este atributo no utiliza marcas de bits.
+Este atributo no usa marcas de bits.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Vea [atributos de control](control-attributes.md) y el control que debe crear en [controles](controls.md).
+Vea [Atributos de](control-attributes.md) control y el control que debe crear en [Controles](controls.md).
 
  
 

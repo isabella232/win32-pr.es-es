@@ -1,9 +1,9 @@
 ---
-title: Enumeración VMUSBDeviceClassEnum (VPCCOMInterfaces. h)
+title: Enumeración VMUSBDeviceClassEnum (VPCCOMInterfaces.h)
 description: Especifica la clase de dispositivo USB.
 ms.assetid: 3f5044ea-f7a4-4524-bfb8-55db22732f81
 keywords:
-- Enumeración de VMUSBDeviceClassEnum Virtual PC
+- VMUSBDeviceClassEnum enumeration Virtual PC
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70335ae083ac2a80717ae64cc8c76f0aff9e791b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 75fa711718ecb37a89bd1c209131b2c18d1c25ca8aef91f4d0fb218f44b80c78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119866555"
 ---
 # <a name="vmusbdeviceclassenum-enumeration"></a>Enumeración VMUSBDeviceClassEnum
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Especifica la clase de dispositivo USB.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -67,14 +67,14 @@ Un dispositivo no identificado.
 
 </dd> <dt>
 
-<span id="vmUSBDeviceClass_Audio"></span><span id="vmusbdeviceclass_audio"></span><span id="VMUSBDEVICECLASS_AUDIO"></span>**\_audio vmUSBDeviceClass**
+<span id="vmUSBDeviceClass_Audio"></span><span id="vmusbdeviceclass_audio"></span><span id="VMUSBDEVICECLASS_AUDIO"></span>**vmUSBDeviceClass \_ Audio**
 </dt> <dd>
 
 Dispositivo de audio.
 
 </dd> <dt>
 
-<span id="vmUSBDeviceClass_Communication"></span><span id="vmusbdeviceclass_communication"></span><span id="VMUSBDEVICECLASS_COMMUNICATION"></span>**comunicación de vmUSBDeviceClass \_**
+<span id="vmUSBDeviceClass_Communication"></span><span id="vmusbdeviceclass_communication"></span><span id="VMUSBDEVICECLASS_COMMUNICATION"></span>**comunicación vmUSBDeviceClass \_**
 </dt> <dd>
 
 Dispositivo de comunicación.
@@ -91,18 +91,18 @@ Dispositivo HID.
 <span id="vmUSBDeviceClass_Physical"></span><span id="vmusbdeviceclass_physical"></span><span id="VMUSBDEVICECLASS_PHYSICAL"></span>**vmUSBDeviceClass \_ físico**
 </dt> <dd>
 
-Dispositivo físico sensoriales.
+Dispositivo sensor físico.
 
 </dd> <dt>
 
-<span id="vmUSBDeviceClass_Image"></span><span id="vmusbdeviceclass_image"></span><span id="VMUSBDEVICECLASS_IMAGE"></span>**imagen de vmUSBDeviceClass \_**
+<span id="vmUSBDeviceClass_Image"></span><span id="vmusbdeviceclass_image"></span><span id="VMUSBDEVICECLASS_IMAGE"></span>**Imagen vmUSBDeviceClass \_**
 </dt> <dd>
 
-Dispositivo de digitalización o digitalización.
+Dispositivo de exploración o creación de imágenes.
 
 </dd> <dt>
 
-<span id="vmUSBDeviceClass_Printer"></span><span id="vmusbdeviceclass_printer"></span><span id="VMUSBDEVICECLASS_PRINTER"></span>**\_impresora vmUSBDeviceClass**
+<span id="vmUSBDeviceClass_Printer"></span><span id="vmusbdeviceclass_printer"></span><span id="VMUSBDEVICECLASS_PRINTER"></span>**VmUSBDeviceClass \_ Printer**
 </dt> <dd>
 
 Dispositivo de impresora.
@@ -116,10 +116,10 @@ Dispositivo de almacenamiento masivo.
 
 </dd> <dt>
 
-<span id="vmUSBDeviceClass_Hub"></span><span id="vmusbdeviceclass_hub"></span><span id="VMUSBDEVICECLASS_HUB"></span>**\_concentrador de vmUSBDeviceClass**
+<span id="vmUSBDeviceClass_Hub"></span><span id="vmusbdeviceclass_hub"></span><span id="VMUSBDEVICECLASS_HUB"></span>**vmUSBDeviceClass \_ Hub**
 </dt> <dd>
 
-Dispositivo concentrador.
+Dispositivo central.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Dispositivo de datos CDC.
 
 </dd> <dt>
 
-<span id="vmUSBDeviceClass_SmartCard"></span><span id="vmusbdeviceclass_smartcard"></span><span id="VMUSBDEVICECLASS_SMARTCARD"></span>**\_tarjeta inteligente vmUSBDeviceClass**
+<span id="vmUSBDeviceClass_SmartCard"></span><span id="vmusbdeviceclass_smartcard"></span><span id="VMUSBDEVICECLASS_SMARTCARD"></span>**Tarjeta inteligente vmUSBDeviceClass \_**
 </dt> <dd>
 
 Dispositivo de tarjeta inteligente.
@@ -144,7 +144,7 @@ Dispositivo de seguridad de contenido.
 
 </dd> <dt>
 
-<span id="vmUSBDeviceClass_Video"></span><span id="vmusbdeviceclass_video"></span><span id="VMUSBDEVICECLASS_VIDEO"></span>**vídeo de vmUSBDeviceClass \_**
+<span id="vmUSBDeviceClass_Video"></span><span id="vmusbdeviceclass_video"></span><span id="VMUSBDEVICECLASS_VIDEO"></span>**Vídeo vmUSBDeviceClass \_**
 </dt> <dd>
 
 Dispositivo de vídeo.
@@ -154,7 +154,7 @@ Dispositivo de vídeo.
 <span id="vmUSBDeviceClass_PersonalHealthcare"></span><span id="vmusbdeviceclass_personalhealthcare"></span><span id="VMUSBDEVICECLASS_PERSONALHEALTHCARE"></span>**vmUSBDeviceClass \_ PersonalHealthcare**
 </dt> <dd>
 
-Dispositivo de asistencia sanitaria.
+Dispositivo de atención sanitaria.
 
 </dd> <dt>
 
@@ -172,14 +172,14 @@ Dispositivo inalámbrico.
 
 </dd> <dt>
 
-<span id="vmUSBDeviceClass_Miscellaneous"></span><span id="vmusbdeviceclass_miscellaneous"></span><span id="VMUSBDEVICECLASS_MISCELLANEOUS"></span>**vmUSBDeviceClass \_ varios**
+<span id="vmUSBDeviceClass_Miscellaneous"></span><span id="vmusbdeviceclass_miscellaneous"></span><span id="VMUSBDEVICECLASS_MISCELLANEOUS"></span>**vmUSBDeviceClass \_ Varios**
 </dt> <dd>
 
 Dispositivo varios.
 
 </dd> <dt>
 
-<span id="vmUSBDeviceClass_ApplicationSpecific"></span><span id="vmusbdeviceclass_applicationspecific"></span><span id="VMUSBDEVICECLASS_APPLICATIONSPECIFIC"></span>**vmUSBDeviceClass \_ ApplicationSpecific**
+<span id="vmUSBDeviceClass_ApplicationSpecific"></span><span id="vmusbdeviceclass_applicationspecific"></span><span id="VMUSBDEVICECLASS_APPLICATIONSPECIFIC"></span>**aplicación vmUSBDeviceClassSpecific \_**
 </dt> <dd>
 
 Dispositivo específico de la aplicación.
@@ -199,11 +199,11 @@ Dispositivo específico del proveedor.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 

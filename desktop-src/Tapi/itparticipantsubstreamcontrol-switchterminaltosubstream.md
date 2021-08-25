@@ -1,21 +1,21 @@
 ---
-description: El método SwitchTerminalToSubStream establece un terminal en la subsecuencia del participante.
+description: El método SwitchTerminalToSubStream establece un terminal en la subsección participante.
 ms.assetid: 39e1d4b9-2e39-4b36-9a6a-89e41cd59153
-title: 'ITParticipantSubStreamControl:: SwitchTerminalToSubStream (método) (Confpriv. h)'
+title: Método ITParticipantSubStreamControl::SwitchTerminalToSubStream (Confpriv.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00f10401b2cf1598c76537ebd3a7049d67bf0657
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41f211d4f3ff0f01801fb5497d36d81fa46e43397d8b69227180b022c9e74a34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774655"
 ---
-# <a name="itparticipantsubstreamcontrolswitchterminaltosubstream-method"></a>ITParticipantSubStreamControl:: SwitchTerminalToSubStream (método)
+# <a name="itparticipantsubstreamcontrolswitchterminaltosubstream-method"></a>ItParticipantSubStreamControl::SwitchTerminalToSubStream (método)
 
-\[**SwitchTerminalToSubStream** no está disponible para su uso en Windows Vista, windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[**SwitchTerminalToSubStream** no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **SwitchTerminalToSubStream** establece un terminal en la subsecuencia del participante.
+El **método SwitchTerminalToSubStream** establece un terminal en la subsección participante.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,17 +33,17 @@ HRESULT SwitchTerminalToSubStream(
 
 <dl> <dt>
 
-*pITTerminal* \[ de\]
+*pITTerminal* \[ En\]
 </dt> <dd>
 
-Puntero a la interfaz [**ITTerminal**](/windows/win32/api/tapi3if/nn-tapi3if-itterminal) .
+Puntero a [**la interfaz ITTerminal.**](/windows/win32/api/tapi3if/nn-tapi3if-itterminal)
 
 </dd> <dt>
 
-*pITSubStream* \[ de\]
+*pITSubStream* \[ En\]
 </dt> <dd>
 
-Puntero a la interfaz [**ITSubStream**](/windows/win32/api/tapi3if/nn-tapi3if-itsubstream) .
+Puntero a [**la interfaz ITSubStream.**](/windows/win32/api/tapi3if/nn-tapi3if-itsubstream)
 
 </dd> </dl>
 
@@ -55,11 +55,11 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                     | Descripción                                                                                        |
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>            | El método se realizó correctamente.<br/>                                                                       |
-| <dl> <dt>**E \_ inesperado**</dt> </dl>    | No se pudo tener acceso a la información de los participantes de la secuencia.<br/>                           |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>    | Los parámetros *pParticipant* o *pITSubStream* no apuntan a una interfaz válida.<br/> |
-| <dl> <dt>**\_elementos TAPI E \_ noitems**</dt> </dl> | La subsecuencia no está lista.<br/>                                                             |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>   | No hay memoria suficiente para realizar la operación.<br/>                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>            | El método se realizó correctamente.<br/>                                                                       |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>    | No se pudo acceder a la información del participante para la secuencia.<br/>                           |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>    | El *parámetro pParticipant* o *pITSubStream* no apunta a una interfaz válida.<br/> |
+| <dl> <dt>**TAPI \_ E \_ NOITEMS**</dt> </dl> | La subsección no está lista.<br/>                                                             |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>   | No existe memoria suficiente para realizar la operación.<br/>                                    |
 
 
 
@@ -69,11 +69,11 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Confpriv.h</dt> </dl> |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 
 

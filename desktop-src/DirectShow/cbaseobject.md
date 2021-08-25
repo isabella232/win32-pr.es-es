@@ -1,7 +1,7 @@
 ---
-description: La clase CBaseObject es una clase abstracta para implementar objetos de DirectShow. Para implementar objetos del modelo de objetos componentes (COM), use la clase CUnknown, que se deriva de CBaseObject.
+description: La clase CBaseObject es una clase abstracta para implementar DirectShow objetos . Para implementar objetos del Modelo de objetos componentes (COM), use la clase CUnknown, que se deriva de CBaseObject.
 ms.assetid: 4b651d43-b177-4081-8c76-f6615ff2830c
-title: Clase CBaseObject (ComBase. h)
+title: Clase CBaseObject (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,32 +16,32 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bbc3e072c31618dab6a7bc07048728f60dbcf0d2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7809ec53746730f02f9b095ede3ae00b53f1fe55c21116c22d854c3d4b193e97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910625"
 ---
-# <a name="cbaseobject-class"></a>Clase CBaseObject
+# <a name="cbaseobject-class"></a>CBaseObject (clase)
 
-La clase **CBaseObject** es una clase abstracta para implementar objetos de DirectShow. Para implementar objetos del modelo de objetos componentes (COM), use la clase [**CUnknown**](cunknown.md) , que se deriva de **CBaseObject**.
+La **clase CBaseObject** es una clase abstracta para implementar DirectShow objetos. Para implementar objetos del Modelo de objetos componentes (COM), use la [**clase CUnknown,**](cunknown.md) que se deriva de **CBaseObject**.
 
 
 
 | Métodos de clase                                      | Descripción                            |
 |----------------------------------------------------|----------------------------------------|
-| [**CBaseObject**](cbaseobject-cbaseobject.md)     | Método de constructor.                    |
-| [**~ CBaseObject**](cbaseobject--cbaseobject.md)   | Método de destructor.                     |
+| [**CBaseObject**](cbaseobject-cbaseobject.md)     | Método constructor.                    |
+| [**~CBaseObject**](cbaseobject--cbaseobject.md)   | Método destructor.                     |
 | [**ObjectsActive**](cbaseobject-objectsactive.md) | Recupera el recuento de objetos activos. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La mayoría de las clases base de DirectShow derivan de **CBaseObject**. Esta clase proporciona ayuda para la depuración manteniendo un recuento de todos los objetos de DirectShow activos durante el tiempo de ejecución. El recuento de objetos se almacena en una variable miembro de clase estática:
+La mayoría de las DirectShow base derivan de **CBaseObject**. Esta clase proporciona asistencia para la depuración manteniendo un recuento de todos los objetos DirectShow activos durante el tiempo de ejecución. El recuento de objetos se almacena en una variable miembro estática de clase:
 
 
 ```
@@ -55,9 +55,9 @@ private:
 
 
 
-En las compilaciones de depuración, el archivo DLL validará si se descarga mientras el recuento de objetos es mayor que cero. Esto facilita el seguimiento de las fugas producidas por problemas de recuento de referencias.
+En las compilaciones de depuración, el archivo DLL declara si se descarga mientras el número de objetos es mayor que cero. Esto facilita el seguimiento de las pérdidas causadas por problemas de recuento de referencias.
 
-El constructor **CBaseObject** toma un argumento, un nombre de depuración para el objeto. Este nombre se almacena en una tabla global en el archivo DLL. La función [**DbgDumpObjectRegister**](dbgdumpobjectregister.md) da formato a una lista de los objetos activos en el archivo dll y lo envía a la salida de depuración.
+El **constructor CBaseObject** toma un argumento, un nombre de depuración para el objeto . Este nombre se almacena en una tabla global del archivo DLL. La [**función DbgDumpObjectRegister**](dbgdumpobjectregister.md) da formato a una lista de los objetos activos en el archivo DLL y la envía a la salida de depuración.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ El constructor **CBaseObject** toma un argumento, un nombre de depuración para 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ El constructor **CBaseObject** toma un argumento, un nombre de depuración para 
 
 <dl> <dt>
 
-[Clases base de DirectShow](directshow-base-classes.md)
+[DirectShow Clases base](directshow-base-classes.md)
 </dt> </dl>
 
  

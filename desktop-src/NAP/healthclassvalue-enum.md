@@ -1,9 +1,9 @@
 ---
-title: Enumeración HealthClassValue (NapProtocol. h)
+title: Enumeración HealthClassValue (NapProtocol.h)
 description: Indica el valor de la clase de mantenimiento TLV.
 ms.assetid: af80c27a-a686-494b-8795-73eb366deaa0
 keywords:
-- NAP de enumeración de HealthClassValue
+- Nap de enumeración HealthClassValue
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ade44b74d03a69d6ccf410a042adf3819b8cc782
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b76b3fef268417f14bf22d2e25539a245cebc31820b746847f1e7b1091492b82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104488962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891645"
 ---
 # <a name="healthclassvalue-enumeration"></a>Enumeración HealthClassValue
 
@@ -28,9 +28,9 @@ ms.locfileid: "104488962"
 
  
 
-El tipo de enumeración **HealthClassValue** indica el valor de la clase de mantenimiento TLV.
+El **tipo de enumeración HealthClassValue** indica el valor de la clase de mantenimiento TLV.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -52,7 +52,7 @@ typedef enum tagHealthClassValue {
 <span id="healthClassFirewall"></span><span id="healthclassfirewall"></span><span id="HEALTHCLASSFIREWALL"></span>**healthClassFirewall**
 </dt> <dd>
 
-La clase de mantenimiento TLV es Firewall.
+La clase de mantenimiento TLV es firewall.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ La clase de mantenimiento TLV es el nivel de revisión.
 <span id="healthClassAntiVirus"></span><span id="healthclassantivirus"></span><span id="HEALTHCLASSANTIVIRUS"></span>**healthClassAntiVirus**
 </dt> <dd>
 
-La clase de estado TLV es antivirus.
+La clase de mantenimiento TLV es antivirus.
 
 </dd> <dt>
 
@@ -90,10 +90,10 @@ Reservado solo para uso del sistema.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 
 
 

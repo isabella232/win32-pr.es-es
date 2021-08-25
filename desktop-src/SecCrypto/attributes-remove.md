@@ -1,7 +1,7 @@
 ---
-description: Quita un objeto de atributo indizado de la colección.
+description: Quita un objeto Attribute indexado de la colección.
 ms.assetid: 6d9423e3-ab24-4973-b0aa-32e38abd607a
-title: Attributes. Remove (método)
+title: Método Attributes.Remove
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: e5981176afb332254d98171d40027e43383cb557
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea18aab32153c998a0ddbaced65727e1ecb43dc8c54a7e3989aadcb698693970
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879775"
 ---
-# <a name="attributesremove-method"></a>Attributes. Remove (método)
+# <a name="attributesremove-method"></a>Método Attributes.Remove
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la [**clase CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) en el espacio de nombres [**System. Security. Cryptography**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use [**la clase CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) en el [**espacio de nombres System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-El método **Remove** quita un objeto de [**atributo**](attribute.md) indizado de la colección.
+El **método Remove** quita un objeto [**Attribute**](attribute.md) indexado de la colección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ Attributes.Remove( _
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*Índice* \[ En\]
 </dt> <dd>
 
-Índice del objeto de [**atributo**](attribute.md) que se va a quitar.
+Índice del objeto [**Attribute**](attribute.md) que se va a quitar.
 
 </dd> </dl>
 
@@ -52,9 +52,9 @@ Attributes.Remove( _
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones que utilizan este método deben contener código para controlar una excepción generada por este método.
+Las aplicaciones que usan este método deben contener código para controlar una excepción que genera este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Las aplicaciones que utilizan este método deben contener código para controlar
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuible<br/>       | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/>       | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

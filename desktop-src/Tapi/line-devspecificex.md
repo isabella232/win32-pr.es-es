@@ -1,19 +1,19 @@
 ---
-description: Se envía el mensaje DEVSPECIFICEX de línea de TAPI \_ para notificar a la aplicación los eventos específicos del dispositivo que se producen en una línea, una dirección o una llamada. El significado del mensaje y la interpretación de los parámetros son específicos del dispositivo.
+description: El mensaje TAPI LINE DEVSPECIFICEX se envía para notificar a la aplicación los eventos específicos del dispositivo que se producen en una \_ línea, dirección o llamada. El significado del mensaje y la interpretación de los parámetros son específicos del dispositivo.
 ms.assetid: 137e91fd-a09e-430c-9d46-8e5be65f03d1
-title: Mensaje de LINE_DEVSPECIFICEX (TAPI. h)
+title: LINE_DEVSPECIFICEX mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba25047858c641ea4c6cec7d15ba06df24e8ee39
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a0b65b322b265b6bbd9717a9fc5b3c0eccf46bb3802fef7684a58d2d69645cdf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119867075"
 ---
-# <a name="line_devspecificex-message"></a>Mensaje de línea \_ DEVSPECIFICEX
+# <a name="line_devspecificex-message"></a>MENSAJE \_ LINE DEVSPECIFICEX
 
-Se envía el mensaje **\_ DEVSPECIFICEX de línea** de TAPI para notificar a la aplicación los eventos específicos del dispositivo que se producen en una línea, una dirección o una llamada. El significado del mensaje y la interpretación de los parámetros son específicos del dispositivo.
+El mensaje **\_ TAPI LINE DEVSPECIFICEX** se envía para notificar a la aplicación los eventos específicos del dispositivo que se producen en una línea, dirección o llamada. El significado del mensaje y la interpretación de los parámetros son específicos del dispositivo.
 
 
 ```C++
@@ -29,7 +29,7 @@ Se envía el mensaje **\_ DEVSPECIFICEX de línea** de TAPI para notificar a la 
 *hDevice* 
 </dt> <dd>
 
-Identificador de un dispositivo de línea o de una llamada a. Este parámetro es específico del dispositivo.
+Identificador para un dispositivo de línea o una llamada. Este parámetro es específico del dispositivo.
 
 </dd> <dt>
 
@@ -65,9 +65,9 @@ Específico del dispositivo.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un proveedor de servicios usa el mensaje **line \_ DEVSPECIFICEX** junto con la función [**lineDevSpecific**](/windows/desktop/api/Tapi/nf-tapi-linedevspecific) . Su significado es específico del dispositivo.
+Un proveedor de servicios usa el mensaje **LINE \_ DEVSPECIFICEX** junto con la [**función lineDevSpecific.**](/windows/desktop/api/Tapi/nf-tapi-linedevspecific) Su significado es específico del dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Un proveedor de servicios usa el mensaje **line \_ DEVSPECIFICEX** junto con la 
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,2<br/>                                                      |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

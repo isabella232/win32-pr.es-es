@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8e76cafce2ca5a9881b87d9248c144dc584971c0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 32f9ccdd2b7d787faa6f1081c51bf107b979d26d952552651542afcb34f985ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823925"
 ---
 # <a name="ctransformfiltergetpin-method"></a>Método CTransformFilter.GetPin
 
@@ -45,7 +45,7 @@ virtual CBasePin* GetPin(
 *n* 
 </dt> <dd>
 
-Número del pin especificado, indexado a partir de cero. En este filtro, el pin 0 es el pin de entrada y el pin 1 es el pin de salida.
+Número del pin especificado, indexado desde cero. En este filtro, el pin 0 es el pin de entrada y el pin 1 es el pin de salida.
 
 </dd> </dl>
 
@@ -67,12 +67,12 @@ Si el filtro usa los pines [**CTransformInputPin**](ctransforminputpin.md) y [**
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

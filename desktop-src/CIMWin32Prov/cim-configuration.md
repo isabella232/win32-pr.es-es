@@ -1,8 +1,8 @@
 ---
-description: El \_ objeto de configuración de CIM permite agrupar los conjuntos de parámetros (definidos en objetos de configuración de CIM \_ ) y las dependencias de uno o más elementos del sistema administrados.
+description: El objeto de configuración CIM permite la agrupación de conjuntos de parámetros (definidos en objetos de configuración de CIM) y dependencias \_ para uno o varios elementos del sistema \_ administrados.
 ms.assetid: f597fe78-be50-4d31-b1eb-d219acaf1751
 ms.tgt_platform: multiple
-title: CIM_Configuration (clase)
+title: CIM_Configuration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c069f5c7186d08f01b54fe02c0568dbb4ff43d26
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c6df2338d46438bf3e1af371ebbce8b36f1a337f26a4785064119cca45bece46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924935"
 ---
-# <a name="cim_configuration-class"></a>CIM ( \_ clase de configuración)
+# <a name="cim_configuration-class"></a>Cim \_ Configuration (clase)
 
-El objeto de **\_ configuración de CIM** permite agrupar los conjuntos de parámetros (definidos en objetos de [**\_ configuración de CIM**](cim-setting.md) ) y las dependencias de uno o más elementos del sistema administrados. Este objeto representa un comportamiento determinado o un estado funcional deseado para los elementos del sistema administrados. Normalmente, el estado funcional deseado está controlado por requisitos externos, como la hora o la ubicación. Por ejemplo, para conectarse a un sistema de correo desde casa, existe una dependencia de un módem; sin embargo, existe una dependencia de un adaptador de red en el trabajo. Los valores de configuración de los dispositivos lógicos pertinentes (en este ejemplo, módem de POTS y adaptador de red) se pueden definir y agregar mediante la **\_ configuración de CIM**. Por lo tanto, se pueden definir dos configuraciones de "conectar a correo" agrupando las dependencias pertinentes y los objetos de [**\_ configuración de CIM**](cim-setting.md) .
+El **objeto de \_ configuración CIM** permite la agrupación de conjuntos de parámetros (definidos en objetos de configuración [**de CIM) \_**](cim-setting.md) y dependencias para uno o varios elementos del sistema administrados. Este objeto representa un comportamiento determinado o un estado funcional deseado para los elementos del sistema administrados. El estado funcional deseado suele estar controlado por requisitos externos, como la hora o la ubicación. Por ejemplo, para conectarse a un sistema de correo desde casa, existe una dependencia en un módem; mientras que, existe una dependencia en un adaptador de red en el trabajo. Configuración para los dispositivos lógicos pertinentes (en este ejemplo, el módem y el adaptador de red DE MACS) se pueden definir y agregar mediante la configuración **\_ de CIM**. Por lo tanto, se pueden definir dos configuraciones Conectar "enviar a Mail" agrupando las dependencias pertinentes y los [**objetos de \_ configuración cim.**](cim-setting.md)
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -49,13 +49,13 @@ class CIM_Configuration
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ configuración CIM** tiene estos tipos de miembros:
+La **clase \_ cim configuration** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ configuración CIM** tiene estas propiedades.
+La **clase \_ de configuración** CIM tiene estas propiedades.
 
 <dl> <dt>
 
@@ -71,7 +71,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Descripción textual breve del objeto **de \_ configuración de CIM** .
+Breve descripción textual del objeto **\_ de configuración cim.**
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción textual del objeto **de \_ configuración de CIM** .
+Descripción textual del objeto **\_ de configuración cim.**
 
 </dd> <dt>
 
@@ -97,18 +97,18 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto de **\_ configuración de CIM** .
+Etiqueta por la que se **\_ conoce** el objeto de configuración cim.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -118,8 +118,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

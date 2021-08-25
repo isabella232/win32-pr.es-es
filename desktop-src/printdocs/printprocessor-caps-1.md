@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura PRINTPROCESSOR caps \_ 1 es el formato de la información de funcionalidad de la impresora que devuelve la función GetPrinterData en el búfer especificado por la variable pdata.
+description: La estructura PRINTPROCESSOR CAPS 1 es el formato de la información de funcionalidad de impresora que devuelve la función GetPrinterData en el búfer especificado por la \_ \_ variable pData.
 ms.assetid: 43c568ff-ccc9-4873-b159-ede09b4a7e51
-title: Estructura de PRINTPROCESSOR_CAPS_1 (winspool. h)
+title: PRINTPROCESSOR_CAPS_1 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 131b5ecf874554c3642808570a53ee8b20ad0e68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d057914ef9a77c7a545817b205f919afa66fdd3bc154363f7e33a9a5ba43c446
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824795"
 ---
-# <a name="printprocessor_caps_1-structure"></a>\_Estructura PRINTPROCESSOR Cap \_ 1
+# <a name="printprocessor_caps_1-structure"></a>PRINTPROCESSOR \_ CAPS \_ 1 (estructura)
 
-La estructura **PRINTPROCESSOR \_ caps \_ 1** es el formato de la información de funcionalidad de la impresora que devuelve la función [**GetPrinterData**](getprinterdata.md) en el búfer especificado por la variable *pdata* .
+La **estructura PRINTPROCESSOR \_ CAPS \_ 1** es el formato de la información de funcionalidad de impresora que devuelve la función [**GetPrinterData**](getprinterdata.md) en el búfer especificado por la variable *pData.*
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,14 +52,14 @@ Número de versión de la estructura. Este valor debe ser 1.
 **dwNupOptions**
 </dt> <dd>
 
-Máscara de bits que representa los diversos números de páginas del documento que la impresora puede imprimir en una página física. El bit menos significativo representa 1 página de documento por página, el siguiente bit representa 2 páginas de documento por página, etc. Por ejemplo, 0x0000810B indica que la impresora admite 1, 2, 4, 9 y 16 páginas de documento por página física.
+Máscara de bits que representa los distintos números de páginas de documento que la impresora puede imprimir en una página física. El bit menos significativo representa 1 página de documento por página, el bit siguiente representa 2 páginas de documento por página, y así sucesivamente. Por ejemplo, 0x0000810B indica que la impresora admite 1, 2, 4, 9 y 16 páginas de documento por página física.
 
 </dd> <dt>
 
 **dwPageOrderFlags**
 </dt> <dd>
 
-El orden en que se imprimirán las páginas. Este valor puede ser \_ impresión normal, impresión inversa \_ o folleto \_ impreso.
+Orden en el que se imprimirán las páginas. Este valor puede ser NORMAL \_ PRINT, REVERSE \_ PRINT o RESALTE \_ PRINT.
 
 </dd> <dt>
 
@@ -70,11 +70,11 @@ Número máximo de copias que la impresora puede controlar.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores de todos los miembros de la estructura se proporcionan mediante la función [**GetPrintProcessorCapabilities**](/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-getprintprocessorcapabilities) , que se documenta en el kit de controladores de Windows (WDK).
+La función [**GetPrintProcessorCapabilities**](/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-getprintprocessorcapabilities) proporciona valores para todos los miembros de la estructura, que se documenta en Windows Driver Kit (WDK).
 
-El administrador de trabajos de impresión llama a la función [**GetPrintProcessorCapabilities**](/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-getprintprocessorcapabilities) de un procesador de impresión cuando una aplicación llama a [**GetPrinterData**](getprinterdata.md), especificando un nombre de valor con un formato de PrintProcCaps \_ *DataType*, donde *DataType* es el nombre de un tipo de datos de entrada.
+El colador llama a la función [**GetPrintProcessorCapabilities**](/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-getprintprocessorcapabilities) de un procesador de impresión cuando una aplicación llama a [**GetPrinterData**](getprinterdata.md), especificando un nombre de valor con un formato de tipo de datos PrintProcCaps , donde \_  *datatype* es el nombre de un tipo de datos de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ El administrador de trabajos de impresión llama a la función [**GetPrintProces
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ El administrador de trabajos de impresión llama a la función [**GetPrintProces
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API de Spooler de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**GetPrinterData**](getprinterdata.md)

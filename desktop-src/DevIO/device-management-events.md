@@ -4,12 +4,12 @@ ms.assetid: 7b45cd8f-1eda-4f89-8662-828f40d34b87
 title: Eventos de administración de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d552ebc3ea4d4438971f0cfefd1959ce64259c5f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 40c0d121b7118ff94cc364c6129f015633d97519cd4506b1890d81655e148205
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912085"
 ---
 # <a name="device-management-events"></a>Eventos de administración de dispositivo
 
@@ -26,9 +26,9 @@ Estos son los eventos de dispositivo:
 [DBT \_ DEVICEREMOVECOMPLETE](dbt-deviceremovecomplete.md)  
 [DBT \_ DEVICEREMOVEPENDING](dbt-deviceremovepending.md)  
 [DBT \_ DEVICETYPESPECIFIC](dbt-devicetypespecific.md)  
-[DBT \_ DEVNODES \_ Changed](dbt-devnodes-changed.md)  
+[DBT \_ DEVNODES \_ CHANGED](dbt-devnodes-changed.md)  
 [DBT \_ QUERYCHANGECONFIG](dbt-querychangeconfig.md)  
-[DBT \_ USERDEFINED](dbt-userdefined.md)  
+[DBT \_ DEFINIDO POR EL USUARIO](dbt-userdefined.md)  
 </dl>
 
  

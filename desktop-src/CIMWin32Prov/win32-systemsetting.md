@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI SystemSetting Abstract Association de Win32 relaciona un equipo y una configuración general en ese sistema.
+description: La clase WMI de asociación abstracta SystemSetting de Win32 relaciona un sistema informático y una \_ configuración general en ese sistema.
 ms.assetid: 796ee263-2526-43f8-bd3d-23442b6bd4ca
 ms.tgt_platform: multiple
-title: Win32_SystemSetting (clase)
+title: Win32_SystemSetting clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e29b752d769cd347ce1cfdb729bf8c0c3959a4f5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 75c4ee9db2f48d02151c3874cc0ac5775f04e2d119ada972db09826dd1f791c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827795"
 ---
-# <a name="win32_systemsetting-class"></a>\_Clase Win32 SystemSetting
+# <a name="win32_systemsetting-class"></a>Clase SystemSetting de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SystemSetting** Abstract Association de Win32 relaciona un equipo y una configuración general en ese sistema.
+La clase [WMI](../wmisdk/retrieving-a-class.md) **de asociación \_ abstracta SystemSetting de Win32** relaciona un sistema informático y una configuración general en ese sistema.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,32 +61,32 @@ Tipo de datos: **Win32 \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("elemento"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Referencia a la instancia de que representa las propiedades de un equipo en el que se puede aplicar esta configuración.
+Referencia a la instancia de que representa las propiedades de un sistema informático en el que se puede aplicar esta configuración.
 
 </dd> <dt>
 
 **Configuración**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ configuración de CIM**
+Tipo de datos: **Configuración de CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("configuración"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| configuración CIM CIM \_ ")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("CIM \| \_ Setting")
 </dt> </dl>
 
 Referencia a la instancia de que representa las propiedades de la configuración que se puede aplicar al sistema del equipo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ SystemSetting de Win32** se deriva de [**\_ ElementSetting de CIM**](cim-elementsetting.md).
+La **clase \_ SystemSetting de Win32** se deriva del [**elemento \_ CIMSetting**](cim-elementsetting.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ La **clase \_ SystemSetting de Win32** se deriva de [**\_ ElementSetting de CIM*
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La **clase \_ SystemSetting de Win32** se deriva de [**\_ ElementSetting de CIM*
 
 <dl> <dt>
 
-[**\_ELEMENTSETTING CIM**](cim-elementsetting.md)
+[**CIM \_ ElementSetting**](cim-elementsetting.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

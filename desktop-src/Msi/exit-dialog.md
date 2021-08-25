@@ -1,19 +1,19 @@
 ---
-description: El cuadro de diálogo de salida se muestra al final de una instalación correcta.
+description: El cuadro de diálogo Salir se muestra al final de una instalación correcta.
 ms.assetid: 06cf7f0b-b509-4865-ad8f-321ad2a2ce27
-title: Cuadro de diálogo salir
+title: Cuadro de diálogo Salir
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da5c825c3e3ce143b63637e89b1daa20092f2d24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13850cb920cae1d2cb27684f60d6157994c157b20436e5bebefc6e3ef1f9d1da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821785"
 ---
-# <a name="exit-dialog"></a>Cuadro de diálogo salir
+# <a name="exit-dialog"></a>Cuadro de diálogo Salir
 
-El cuadro de diálogo de salida se muestra al final de una instalación correcta. Este cuadro de diálogo normalmente solo contiene texto y un botón **Aceptar** . El nombre de este cuadro de diálogo debe aparecer en la [tabla AdminUISequence](adminuisequence-table.md) y en la [tabla InstallUISequence](installuisequence-table.md) con-1 como el número de secuencia. Este es un cuadro de diálogo modal.
+El cuadro de diálogo Salir se muestra al final de una instalación correcta. Este cuadro de diálogo normalmente contiene solo texto y un **botón** Aceptar. El nombre de este cuadro de diálogo debe aparecer en la [tabla AdminUISequence](adminuisequence-table.md) y en la [tabla InstallUISequence](installuisequence-table.md) con -1 como número de secuencia. Se trata de un cuadro de diálogo modal.
 
  
 

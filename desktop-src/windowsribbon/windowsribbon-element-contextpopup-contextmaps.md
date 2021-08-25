@@ -1,9 +1,9 @@
 ---
-title: Propiedad ContextPopup. ContextMaps
+title: Propiedad ContextPopup.ContextMaps
 description: Representa un contenedor para los elementos ContextMap.
 ms.assetid: 06dfd4ba-a1d8-48bb-b185-d265e007a820
 keywords:
-- ContextPopup. ContextMaps (propiedad) cinta de Windows
+- Propiedad ContextPopup.ContextMaps Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 034381c4af840219ff1d6dd4d7a73aa34f528915
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05b6f6e2f1533553c33949b300213c1957cb47b8606d811f1b6f1f8f6cf33b9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840835"
 ---
-# <a name="contextpopupcontextmaps-property"></a>Propiedad ContextPopup. ContextMaps
+# <a name="contextpopupcontextmaps-property"></a>Propiedad ContextPopup.ContextMaps
 
-Representa un contenedor para los elementos [**ContextMap**](windowsribbon-element-contextmap.md) .
+Representa un contenedor para los [**elementos ContextMap.**](windowsribbon-element-contextmap.md)
 
 ## <a name="usage"></a>Uso
 
@@ -55,17 +55,17 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**ContextPopup**](windowsribbon-element-contextpopup.md).
+Puede producirse como máximo una vez para [**cada ContextPopup**](windowsribbon-element-contextpopup.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico de una vista [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+En el ejemplo siguiente se muestra el marcado básico para una [**vista ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-En esta sección de código se muestra una declaración de control **ContextPopup. ContextMaps** .
+En esta sección de código se muestra una declaración de control **ContextPopup.ContextMaps.**
 
 
 ```XML
@@ -158,8 +158,8 @@ En esta sección de código se muestra una declaración de control **ContextPopu
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -167,7 +167,7 @@ En esta sección de código se muestra una declaración de control **ContextPopu
 
 <dl> <dt>
 
-[Control popup de contexto](windowsribbon-controls-contextpopup.md)
+[Control Popup de contexto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

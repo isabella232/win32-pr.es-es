@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. nextPreset
+title: EFFECTS.nextPreset
 description: El método nextPreset muestra el siguiente valor preestablecido de la visualización actual.
 ms.assetid: e17917c0-95b5-4799-8657-1f0d9bb7ec86
 keywords:
-- EFFECTs. nextPreset Windows Media Player
+- Effects.nextPreset Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5650aa97906db2947d5d794c12edfb5be68e0057
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c6d0afcd25ee1caa601fda8b98e28e8d5213b15f09e39f90e1f7e868196ed9f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863055"
 ---
-# <a name="effectsnextpreset"></a>EFFECTs. nextPreset
+# <a name="effectsnextpreset"></a>EFFECTS.nextPreset
 
-El método **nextPreset** muestra el siguiente valor preestablecido de la visualización actual.
+El **método nextPreset** muestra el siguiente valor preestablecido de la visualización actual.
 
 ``` syntax
         elementID.nextPreset()
@@ -36,9 +36,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el valor predeterminado actual es el último de la lista de la visualización actual, el primer valor preestablecido se convierte en actual.
+Si el valor preestablecido actual es el último de la lista para la visualización actual, el primer valor preestablecido se hace actual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Si el valor predeterminado actual es el último de la lista de la visualización
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -54,13 +54,13 @@ Si el valor predeterminado actual es el último de la lista de la visualización
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**ELEMENTO EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. allowAll**](effects-allowall.md)
+[**EFFECTS.allowAll**](effects-allowall.md)
 </dt> <dt>
 
-[**EFFECTs. Previous**](effects-previous.md)
+[**EFFECTS.previous**](effects-previous.md)
 </dt> </dl>
 
  

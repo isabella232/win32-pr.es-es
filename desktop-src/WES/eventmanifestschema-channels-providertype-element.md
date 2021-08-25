@@ -1,9 +1,9 @@
 ---
-title: Elemento Channels (ProviderType)
-description: Define una lista de canales en los que los proveedores pueden registrar eventos. | Elemento Channels (ProviderType)
+title: elemento channels (ProviderType)
+description: Define una lista de canales en los que los proveedores pueden registrar eventos. | elemento channels (ProviderType)
 ms.assetid: f30e9b0e-71f3-41a9-9457-403ca9a4fbab
 keywords:
-- elemento Channels EventLog
+- elemento channels EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 91aac4916bc745cb2620a25ff4abc1d6539b8512
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 15f425ef1300bbe4a6e02cedab9b91e8efc47ee6f883eaa14a47851c6188fe5c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863645"
 ---
-# <a name="channels-providertype-element"></a>Elemento Channels (ProviderType)
+# <a name="channels-providertype-element"></a>elemento channels (ProviderType)
 
 Define una lista de canales en los que los proveedores pueden registrar eventos.
 
@@ -30,7 +30,7 @@ Define una lista de canales en los que los proveedores pueden registrar eventos.
  />
 ```
 
-El elemento **Channels** se define mediante el tipo complejo de [**ProviderType**](eventmanifestschema-providertype-complextype.md) .
+El **elemento channels** se define mediante el tipo complejo [**ProviderType.**](eventmanifestschema-providertype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **Channels** se define mediante el tipo complejo de [**ProviderType*
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **Channels** se define mediante el tipo complejo de [**ProviderType*
 **Elemento primario**
 </dt> <dt>
 
-[**proveedor (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
+[**provider (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
 </dt> </dl>
 
  

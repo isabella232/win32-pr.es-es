@@ -1,33 +1,33 @@
 ---
-description: En esta sección se describen los ejemplos de propiedades individuales que se incluyen en el kit de desarrollo de software (SDK) de Windows y, en la mayoría de los casos, se pueden descargar de la galería de código de MSDN.
+description: En esta sección se describen los ejemplos de propiedades individuales incluidos en el Kit de desarrollo de software (SDK) de Windows y, en la mayoría de los casos, se pueden descargar desde la Galería de código de MSDN.
 ms.assetid: 990fdc04-3712-4fbe-9531-839faedb9316
 title: Ejemplos de código del sistema de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bb3bf9d919a4e647414c6bd5bbc021428f69195
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc5a7a4cac92abd7f3cda264fd86666e687537e87de65076767a61fd47cdaa82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823555"
 ---
 # <a name="property-system-code-samples"></a>Ejemplos de código del sistema de propiedades
 
-Los ejemplos de código siguientes muestran cómo usar el sistema de propiedades de Windows.
+En los ejemplos de código siguientes se muestra cómo usar el Windows de propiedades.
 
 | Tema            | Contenido                     |
 |-------------------|---------------------------------------------------|
-| [Ejemplo de controlador de propiedades ideal](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/IdealPropertyHandler)         | Muestra la implementación de un controlador de propiedades ideal para un formato de archivo OleDoc (. doc-MS) o un formato ficticio OpenMetadata (. OpenMetadata-MS) que admite la lectura y escritura de propiedades y un esquema personalizado. |
-| [Ejemplo de controlador de propiedad de lista de reproducción](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/PlaylistPropertyHandler)   | Muestra la implementación de un controlador de propiedades para los formatos de archivo de lista de reproducción. wpl y. ZPL.                                                                                                                          |
-| [Ejemplo de edición de propiedades](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/PropertyEdit)                          | Muestra cómo usar las API del sistema de propiedades de Windows para leer y escribir valores de propiedad de archivo.                                                                                                                            |
-| [Ejemplo de esquema de propiedades](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/propertyschemas)                      | Muestra cómo registrar y anular el registro de las propiedades personalizadas y cómo obtener información detallada sobre los esquemas de propiedades personalizadas que ya están registrados en el sistema.                                               |
-| [Ejemplo de controlador de propiedad de receta](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/RecipePropertyHandler) | Muestra la implementación de un controlador de propiedades para los archivos de recetas de formato personalizado (. Recipe).                                                                                                                             |
+| [Ejemplo de controlador de propiedad ideal](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/IdealPropertyHandler)         | Muestra la implementación de un controlador de propiedades ideal para un formato de archivo OleDoc (.docfile-ms) o un formato ficticio openMetadata (.openmetadata-ms) que admite la lectura y escritura de propiedades y un esquema personalizado. |
+| [Ejemplo de controlador de propiedades de lista de reproducción](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/PlaylistPropertyHandler)   | Muestra la implementación de un controlador de propiedades para los formatos de archivo de lista de reproducción .wpl y .zpl.                                                                                                                          |
+| [Ejemplo de edición de propiedades](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/PropertyEdit)                          | Muestra cómo usar las API del Windows propiedades para leer y escribir valores de propiedad de archivo.                                                                                                                            |
+| [Ejemplo de esquema de propiedad](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/propertyschemas)                      | Muestra cómo registrar y anular el registro de las propiedades personalizadas y cómo obtener información detallada sobre los esquemas de propiedades personalizadas que ya están registrados en el sistema.                                               |
+| [Ejemplo de controlador de propiedades Recipe](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/RecipePropertyHandler) | Muestra la implementación de un controlador de propiedades para archivos de receta de formato personalizado (.recipe).                                                                                                                             |
 
-Para obtener más ejemplos relacionados, consulte lo siguiente:
+Para obtener ejemplos más relacionados, vea lo siguiente:
 
--   [Ejemplos de aplicaciones del shell de Windows](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform)
--   [Ejemplos de extensibilidad del shell de Windows](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/shellextensibility)
--   [Ejemplos de integración del shell de Windows](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration)
+-   [Windows Ejemplos de aplicación de Shell](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform)
+-   [Windows Ejemplos de extensibilidad de Shell](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/shellextensibility)
+-   [Windows Ejemplos de integración de Shell](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration)
 
  
 
@@ -38,7 +38,7 @@ Para obtener más ejemplos relacionados, consulte lo siguiente:
 [Información general del sistema de propiedades](property-system-overview.md)
 </dt> <dt>
 
-[Guía del desarrollador del sistema de propiedades de Windows](property-system-developer-s-guide.md)
+[Windows Guía del desarrollador del sistema de propiedades](property-system-developer-s-guide.md)
 </dt> <dt>
 
 [Referencia del sistema de propiedades](property-system-reference.md)

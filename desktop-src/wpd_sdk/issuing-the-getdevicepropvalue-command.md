@@ -4,24 +4,24 @@ ms.assetid: 60294ac6-06e0-4546-bbe9-da48d250e31e
 title: Emisión del comando GetDevicePropValue
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5d2e5e99e2b1d51b9147fc4da2d86b4fa955907
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da87366361bbcccba182b72cfb49124692f86dc88c5a87ebbeb4d5f667451a97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839285"
 ---
 # <a name="issuing-the-getdevicepropvalue-command"></a>Emisión del comando GetDevicePropValue
 
-En el ejemplo de esta sección se invoca el comando MTP de **GetDevicePropValue** para recuperar la propiedad del dispositivo **BatteryLevel** . (Para obtener una descripción completa de este comando y sus parámetros, consulte la [especificación de MTP](https://www.usb.org/sites/default/files/MTPv1_1.zip)).
+En el ejemplo de esta sección se invoca el **comando GetDevicePropValue** MTP para recuperar la propiedad de dispositivo **BatteryLevel.** (Para obtener una descripción completa de este comando y sus parámetros, vea la [especificación de MTP).](https://www.usb.org/sites/default/files/MTPv1_1.zip)
 
-En el caso de **GetDevicePropValue**, el código de ejemplo utiliza la siguiente secuencia:
+En el caso de **GetDevicePropValue,** el código de ejemplo usa la secuencia siguiente:
 
-1.  comando de WPD \_ comando \_ \_ ext \_ Execute \_ \_ con \_ datos \_ para \_ leer
-2.  comando de WPD \_ \_ \_ datos de \_ lectura ext \_
-3.  comando de WPD \_ \_ transferencia de \_ \_ datos de finalización ext \_ \_
+1.  COMANDO WPD MTP EXT EXECUTE COMMAND WITH DATA TO READ (COMANDO \_ \_ MTP EXT EXECUTE DE WPD \_ CON DATOS PARA \_ \_ \_ \_ \_ \_ LEER)
+2.  MTP EXT READ DATA DEL COMANDO \_ \_ WPD \_ \_ \_
+3.  TRANSFERENCIA DE DATOS \_ FINAL EXT DEL \_ COMANDO WPD MTP \_ \_ \_ \_
 
-En el ejemplo de código siguiente se muestra cómo la aplicación initates la secuencia de comandos.
+En el ejemplo de código siguiente se muestra cómo la aplicación aplica la secuencia de comandos.
 
 
 ```
@@ -144,7 +144,7 @@ HRESULT GetBatteryLevel(IPortableDevice* pDevice, BYTE& bBatteryLevel)
 
 
 
-En el ejemplo de código siguiente se muestra cómo la aplicación recupera los datos de la propiedad.
+En el ejemplo de código siguiente se muestra cómo la aplicación recupera los datos de propiedad.
 
 
 ```
@@ -240,7 +240,7 @@ En el ejemplo de código siguiente se muestra cómo la aplicación recupera los 
 
 
 
-En el ejemplo de código siguiente se muestra cómo la aplicación recupera la respuesta del dispositivo al comando.
+En el ejemplo de código siguiente se muestra cómo la aplicación recupera la respuesta del dispositivo al comando .
 
 
 ```
@@ -332,7 +332,7 @@ En el ejemplo de código siguiente se muestra cómo la aplicación recupera la r
 
 <dl> <dt>
 
-[Compatibilidad con extensiones MTP](supporting-mtp-extensions.md)
+[Compatibilidad con extensiones de MTP](supporting-mtp-extensions.md)
 </dt> </dl>
 
  

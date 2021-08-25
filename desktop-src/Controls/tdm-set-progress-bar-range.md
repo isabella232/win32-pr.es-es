@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TDM_SET_PROGRESS_BAR_RANGE (commctrl. h)
+title: TDM_SET_PROGRESS_BAR_RANGE mensaje (Commctrl.h)
 description: Establece los valores mínimo y máximo de la barra de progreso en un cuadro de diálogo de tarea.
 ms.assetid: ca8b48bc-cf56-4678-bb3d-7c730a96d98c
 keywords:
-- TDM_SET_PROGRESS_BAR_RANGE controles de mensajes de Windows
+- TDM_SET_PROGRESS_BAR_RANGE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d17ebb6caa2c33282dccbb117980fc970cd45477
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 54d94da64bd01b17addeb8f65def177e7e7e5d7daccbafb1629d1158f8c6636d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875915"
 ---
-# <a name="tdm_set_progress_bar_range-message"></a>\_Mensaje de \_ intervalo de barra de progreso de configuración de \_ TDM \_
+# <a name="tdm_set_progress_bar_range-message"></a>Mensaje TDM \_ SET \_ PROGRESS BAR \_ \_ RANGE
 
 Establece los valores mínimo y máximo de la barra de progreso en un cuadro de diálogo de tarea.
 
@@ -29,23 +29,23 @@ Establece los valores mínimo y máximo de la barra de progreso en un cuadro de 
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
 Debe ser cero.
 
 </dd> <dt>
 
-*lParam* \[ de\]
+*lParam* \[ En\]
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) especifica el valor mínimo. De forma predeterminada, el valor mínimo es cero. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el valor máximo. De forma predeterminada, el valor máximo es 100.
+[**Loword**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) especifica el valor mínimo. De forma predeterminada, el valor mínimo es cero. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el valor máximo. De forma predeterminada, el valor máximo es 100.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve los valores mínimo y máximo anteriores, si se realiza correctamente, o bien cero en caso contrario. [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el valor mínimo y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) contiene el valor máximo.
+Devuelve los valores mínimo y máximo anteriores, si se realiza correctamente, o cero en caso contrario. LOWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el valor mínimo y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) contiene el valor máximo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Devuelve los valores mínimo y máximo anteriores, si se realiza correctamente, 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

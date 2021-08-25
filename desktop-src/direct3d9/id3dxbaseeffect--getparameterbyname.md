@@ -1,7 +1,7 @@
 ---
-description: Obtiene el identificador de un parámetro de nivel superior o un parámetro de miembro de estructura buscando su nombre.
+description: Obtiene el identificador de un parámetro de nivel superior o un parámetro de miembro de estructura mediante la búsqueda de su nombre.
 ms.assetid: fb03685e-e512-4293-80d7-6c2c0fc9ebfd
-title: 'ID3DXBaseEffect:: GetParameterByName (método) (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::GetParameterByName (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: f9f7457ffa3bba867d03cceb3521664fecc9d67d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 30a1e585cbbbaee4891e3e7dc2cd4e3d3c871fd33fe36daa51c9137c26bfdc7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848685"
 ---
-# <a name="id3dxbaseeffectgetparameterbyname-method"></a>ID3DXBaseEffect:: GetParameterByName (método)
+# <a name="id3dxbaseeffectgetparameterbyname-method"></a>Método ID3DXBaseEffect::GetParameterByName
 
-Obtiene el identificador de un parámetro de nivel superior o un parámetro de miembro de estructura buscando su nombre.
+Obtiene el identificador de un parámetro de nivel superior o un parámetro de miembro de estructura mediante la búsqueda de su nombre.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,16 +41,16 @@ D3DXHANDLE GetParameterByName(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador del parámetro o **null** para los parámetros de nivel superior. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador del parámetro o **NULL para** los parámetros de nivel superior. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -63,7 +63,7 @@ Cadena que contiene el nombre del parámetro.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Devuelve el identificador del parámetro especificado, o **null** si el índice no era válido. Vea [identificadores (Direct3D 9)](handles.md).
+Devuelve el identificador del parámetro especificado o **NULL** si el índice no era válido. Vea [Identificadores (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Devuelve el identificador del parámetro especificado, o **null** si el índice 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

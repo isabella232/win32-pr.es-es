@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXCompressedAnimationSet::GetSourceTicksPerSecond: obtiene el número de pasos de fotograma clave de animación que se producen por segundo.'
+description: 'Método ID3DXCompressedAnimationSet::GetSourceTicksPerSecond: obtiene el número de tics de fotograma clave de animación que se producen por segundo.'
 ms.assetid: 72adba95-e52f-46d8-ab9e-8e06ccbf8d08
 title: Método ID3DXCompressedAnimationSet::GetSourceTicksPerSecond (D3dx9anim.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 106e73acfcf9673e4c3dc7eef9b203d85bde19d9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0788368f5cd7371b8a9f0d23c076ae0aa6c52e472e8e161c554cd16cdd24f409
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893635"
 ---
 # <a name="id3dxcompressedanimationsetgetsourcetickspersecond-method"></a>Método ID3DXCompressedAnimationSet::GetSourceTicksPerSecond
 
@@ -55,7 +55,7 @@ Número de tics de fotograma clave de animación que se producen por segundo.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

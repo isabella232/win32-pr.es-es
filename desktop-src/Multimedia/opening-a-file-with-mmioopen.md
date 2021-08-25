@@ -3,28 +3,28 @@ title: Abrir un archivo con mmioOpen
 description: Abrir un archivo con mmioOpen
 ms.assetid: 947d1b1c-ec00-4bd9-948a-4b8e3bfb84f6
 keywords:
-- e/s de archivos multimedia, abrir archivos
-- e/s de archivos, abrir archivos
-- entrada y salida (e/s), abrir archivos
-- E/s (entrada y salida), abrir archivos
-- e/s de archivos multimedia, función mmioOpen
-- e/s de archivo, función mmioOpen
-- entrada y salida (e/s), función mmioOpen
-- E/s (entrada y salida), función mmioOpen
-- mmioOpen función)
-- abrir archivos de e/s
+- E/S de archivos multimedia, abrir archivos
+- E/S de archivo, abrir archivos
+- entrada y salida (E/S), abrir archivos
+- E/S (entrada y salida), abrir archivos
+- E/S de archivos multimedia, función mmioOpen
+- E/S de archivo, función mmioOpen
+- entrada y salida (E/S),función mmioOpen
+- E/S (entrada y salida),función mmioOpen
+- mmioOpen ( Función)
+- abrir archivos de E/S
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2123b73c5f3a93cbb6e72711a7137652f7534b2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ffbd323e888b181b0166572d11687d3dde66e83f0ce73541555b1f49083564ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104487698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893195"
 ---
 # <a name="opening-a-file-with-mmioopen"></a>Abrir un archivo con mmioOpen
 
-Para abrir un archivo para operaciones de e/s básicas, establezca el parámetro *lpmmioinfo* de la función [**mmioOpen**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioopen) en **null**. En el ejemplo siguiente se abre un archivo denominado "C: \\ samples \\SAMPLE1.TXT" para leerlo y se comprueba si hay un error en el valor devuelto.
+Para abrir un archivo para operaciones básicas de E/S, establezca el parámetro *lpmmioinfo* de la [**función mmioOpen**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioopen) en **NULL.** En el ejemplo siguiente se abre un archivo denominado "C: SAMPLESSAMPLE1.TXT" para leer y se comprueba si hay error en \\ \\ el valor devuelto.
 
 
 ```C++
@@ -39,8 +39,8 @@ else
 
 
 
-Use el parámetro *dwFlags* de **mmioOpen** para especificar las marcas para abrir un archivo.
+Use el *parámetro dwFlags* de **mmioOpen para** especificar marcas para abrir un archivo.
 
- 
+ 
 
- 
+ 

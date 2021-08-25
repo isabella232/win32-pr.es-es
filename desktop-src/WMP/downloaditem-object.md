@@ -1,10 +1,10 @@
 ---
-title: Objeto DownloadItem
-description: Objeto DownloadItem
+title: DownloadItem (objeto)
+description: DownloadItem (objeto)
 ms.assetid: 668ee632-0a3d-426b-baab-08e88b9fc607
 keywords:
-- Windows Media Player tiendas en línea, objeto DownloadItem
-- tiendas en línea, objeto DownloadItem
+- Reproductor de Windows Media en línea, objeto DownloadItem
+- online stores,DownloadItem (objeto)
 - tipo 2 tiendas en línea, objeto DownloadItem
 - DownloadItem
 ms.topic: article
@@ -14,39 +14,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c367eee37f2f4d8329d71f3d42a3c78771a50a6c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6bfea6241e81352b8848304c3601650ef4dec2a8e5692874fa20995ccddcce38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863465"
 ---
-# <a name="downloaditem-object"></a>Objeto DownloadItem
+# <a name="downloaditem-object"></a>DownloadItem (objeto)
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
- 
+ 
 
-El objeto **DownloadItem** representa una solicitud de descarga de archivos. Las páginas web que se hospedan en el modo completo de Windows Media Player y que tienen acceso al objeto **externo** , como los servicios Premium, pueden usarlas.
+El **objeto DownloadItem** representa una solicitud de descarga de archivos. Se puede usar en páginas web que se hospedan en el modo  completo Reproductor de Windows Media y que tienen acceso al objeto Externo, como los servicios Premium.
 
-El objeto **DownloadItem** admite las siguientes propiedades.
+El **objeto DownloadItem** admite las siguientes propiedades.
 
 
 
 | Propiedad                                        | Descripción                                      |
 |-------------------------------------------------|--------------------------------------------------|
 | [downloadState](downloaditem-downloadstate.md) | Recupera el estado de la descarga.             |
-| [progreso](downloaditem-progress.md)           | Recupera el progreso de la descarga en bytes. |
+| [Progreso](downloaditem-progress.md)           | Recupera el progreso de la descarga en bytes. |
 | [size](downloaditem-size.md)                   | Recupera el tamaño de la descarga.              |
 | [sourceURL](downloaditem-sourceurl.md)         | Recupera la dirección URL de origen de la descarga.        |
 | [type](downloaditem-type.md)                   | Recupera el tipo de la descarga.              |
 
 
 
- 
+ 
 
-El objeto **DownloadItem** admite los siguientes métodos.
+El **objeto DownloadItem** admite los métodos siguientes.
 
 
 
@@ -55,11 +55,11 @@ El objeto **DownloadItem** admite los siguientes métodos.
 | [cancel](downloaditem-cancel.md)           | Cancela la descarga.                                      |
 | [getItemInfo](downloaditem-getiteminfo.md) | Recupera el valor de un atributo para el elemento de descarga. |
 | [pause](downloaditem-pause.md)             | Pausa la descarga.                                       |
-| [Recuper](downloaditem-resume.md)           | Reanuda la descarga.                                      |
+| [Reanudar](downloaditem-resume.md)           | Reanuda la descarga.                                      |
 
 
 
- 
+ 
 
 Se tiene acceso al objeto **DownloadItem** a través de la propiedad siguiente.
 
@@ -71,9 +71,9 @@ Se tiene acceso al objeto **DownloadItem** a través de la propiedad siguiente.
 
 
 
- 
+ 
 
-A efectos de Ilustración, **Downloadmanager**. **getDownloadCollection**(*collectionId*). **Item**(*Itemid*) se usa en las secciones de sintaxis de referencia.
+Para fines ilustrativos, **DownloadManager**. **getDownloadCollection**(*collectionId*). **item**(*itemId*) se usa en las secciones de sintaxis de referencia.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -82,9 +82,9 @@ A efectos de Ilustración, **Downloadmanager**. **getDownloadCollection**(*colle
 [**Referencia de las tiendas en línea de tipo 2**](reference-for-type-2-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

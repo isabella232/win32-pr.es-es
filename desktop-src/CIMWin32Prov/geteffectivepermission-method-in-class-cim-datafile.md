@@ -1,8 +1,8 @@
 ---
-description: Determina si el llamador tiene los permisos agregados en el \_ objeto de archivo de archivos CIM y el recurso compartido en el que reside el archivo o directorio, según lo especificado por el argumento Permission. Este método se hereda de \_ LOGICALFILE CIM.
+description: Determina si el autor de la llamada tiene los permisos agregados en el objeto DataFile de CIM y el recurso compartido en el que reside el archivo o directorio, según lo especificado por el \_ argumento Permission. Este método se hereda de CIM \_ LogicalFile.
 ms.assetid: 57eadc2e-36ef-4d3c-932f-6f7fafb2b9a4
 ms.tgt_platform: multiple
-title: Método GetEffectivePermission de la clase CIM_DataFile (aclui. h)
+title: Método GetEffectivePermission de la CIM_DataFile (Aclui.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 109e4953b310f9465c4523a9e80ca401c225f885
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c11ab70c3239252d2e385a1abfa8a6d19e1ed9cbf27baa0c8b062375dcce7fc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879045"
 ---
-# <a name="geteffectivepermission-method-of-the-cim_datafile-class"></a>Método GetEffectivePermission de la \_ clase de archivo de archivos CIM
+# <a name="geteffectivepermission-method-of-the-cim_datafile-class"></a>Método GetEffectivePermission de la clase \_ DataFile de CIM
 
-El método **GetEffectivePermission** determina si el llamador tiene los permisos agregados en el objeto de [**archivo de \_ archivos CIM**](cim-datafile.md) y el recurso compartido en el que reside el archivo o directorio, según lo especificado por el argumento **Permission** . Este método se hereda de [**\_ LogicalFile CIM**](cim-logicalfile.md).
+El **método GetEffectivePermission** determina si el autor de la llamada tiene los permisos agregados en el objeto [**\_ DataFile de CIM**](cim-datafile.md) y el recurso compartido en el que reside el archivo o directorio, según lo especificado por el argumento **Permission.** Este método se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,115 +47,115 @@ boolean GetEffectivePermission(
 
 <dl> <dt>
 
-*Permisos* \[ de de\]
+*Permisos* \[ En\]
 </dt> <dd>
 
-Lista de permisos sobre los que el autor de la llamada puede consultar.
+Lista de permisos que el autor de la llamada puede consultar.
 
 <dt>
 
 <span id="FILE_READ_DATA__file_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE_FILE_LIST_DIRECTORY__DIRECTORY_"></span>
 
-<span id="FILE_READ_DATA__file_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE_FILE_LIST_DIRECTORY__DIRECTORY_"></span>**Archivo \_ de LEER \_ datos (archivo) directorio de lista de archivos ( \_ \_ directorio)** (1 (0x1))
+<span id="FILE_READ_DATA__file_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE_FILE_LIST_DIRECTORY__DIRECTORY_"></span>**FILE \_ READ \_ DATA (file)FILE \_ LIST DIRECTORY \_ (directory)** (1 (0x1))
 
 
 </dt> <dd>
 
-Concede el derecho a leer los datos del archivo. Para un directorio, este valor concede el derecho para mostrar el contenido del directorio.
+Concede el derecho a leer datos del archivo. Para un directorio, este valor concede el derecho a enumerar el contenido del directorio.
 
 </dd> <dt>
 
 <span id="FILE_WRITE_DATA__file_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE_FILE_ADD_FILE__DIRECTORY_"></span>
 
-<span id="FILE_WRITE_DATA__file_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE_FILE_ADD_FILE__DIRECTORY_"></span>**Archivo \_ de ESCRIBIR archivo de \_ datos (archivo) \_ agregar \_ archivo (directorio)** (2 (0X2))
+<span id="FILE_WRITE_DATA__file_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE_FILE_ADD_FILE__DIRECTORY_"></span>**FILE \_ WRITE \_ DATA (file)FILE \_ ADD FILE \_ (directory)** (2 (0x2))
 
 
 </dt> <dd>
 
-Concede el derecho para escribir datos en el archivo. Para un directorio, este valor concede el derecho a crear un archivo en el directorio.
+Concede el derecho de escribir datos en el archivo. Para un directorio, este valor concede el derecho de crear un archivo en el directorio.
 
 </dd> <dt>
 
 <span id="FILE_APPEND_DATA__file_FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file_file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE_FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>
 
-<span id="FILE_APPEND_DATA__file_FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file_file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE_FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>**Archivo \_ de ANEXAr \_ archivo de datos (archivo) \_ agregar \_ subdirectorio (directorio)** (4 (0x4))
+<span id="FILE_APPEND_DATA__file_FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file_file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE_FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>**FILE \_ APPEND \_ DATA (file)FILE \_ ADD \_ SUBDIRECTORY (directory)** (4 (0x4))
 
 
 </dt> <dd>
 
-Concede el derecho para anexar datos al archivo. Para un directorio, este valor concede el derecho a crear un subdirectorio.
+Concede el derecho a anexar datos al archivo. Para un directorio, este valor concede el derecho a crear un subdirectorio.
 
 </dd> <dt>
 
 <span id="FILE_READ_EA"></span><span id="file_read_ea"></span>
 
-<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**Archivo \_ de LEER \_ EA** (8 (0x8))
+<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**FILE \_ READ \_ EA** (8 (0x8))
 
 
 </dt> <dd>
 
-Concede el derecho para leer atributos extendidos.
+Concede el derecho a leer atributos extendidos.
 
 </dd> <dt>
 
 <span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>
 
-<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**Archivo \_ de ESCRIBIR \_ EA** (16 (0x10))
+<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**FILE \_ WRITE \_ EA** (16 (0x10))
 
 
 </dt> <dd>
 
-Concede el derecho para escribir atributos extendidos.
+Concede el derecho a escribir atributos extendidos.
 
 </dd> <dt>
 
 <span id="FILE_EXECUTE__file_FILE_TRAVERSE__directory_"></span><span id="file_execute__file_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE_FILE_TRAVERSE__DIRECTORY_"></span>
 
-<span id="FILE_EXECUTE__file_FILE_TRAVERSE__directory_"></span><span id="file_execute__file_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE_FILE_TRAVERSE__DIRECTORY_"></span>**Archivo \_ de EJECUTAR (archivo) recorrido de archivos ( \_ directorio)** (32 (0x20))
+<span id="FILE_EXECUTE__file_FILE_TRAVERSE__directory_"></span><span id="file_execute__file_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE_FILE_TRAVERSE__DIRECTORY_"></span>**FILE \_ EXECUTE (archivo)FILE \_ TRAVERSE (directorio)** (32 (0x20))
 
 
 </dt> <dd>
 
-Concede el derecho para ejecutar un archivo. Para un directorio, se puede atravesar el directorio.
+Concede el derecho a ejecutar un archivo. Para un directorio, se puede recorrer el directorio.
 
 </dd> <dt>
 
 <span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>
 
-<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**Archivo \_ de ELIMINAR \_ secundario (directorio)** (64 (0x40))
+<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**FILE \_ DELETE \_ CHILD (directorio)** (64 (0x40))
 
 
 </dt> <dd>
 
-Concede el derecho para eliminar un directorio y todos los archivos que contiene, aunque los archivos sean de solo lectura.
+Concede el derecho a eliminar un directorio y todos los archivos que contiene, incluso si los archivos son de solo lectura.
 
 </dd> <dt>
 
 <span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>
 
-<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**Archivo \_ de \_Atributos de lectura** (128 (0x80))
+<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**FILE \_ ATRIBUTOS \_ DE LECTURA** (128 (0x80))
 
 
 </dt> <dd>
 
-Concede el derecho a leer los atributos de archivo.
+Concede el derecho a leer atributos de archivo.
 
 </dd> <dt>
 
 <span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>
 
-<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**Archivo \_ de \_Atributos de escritura** (256 (0x100))
+<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**FILE \_ ATRIBUTOS \_ DE** ESCRITURA (256 (0x100))
 
 
 </dt> <dd>
 
-Concede el derecho para cambiar los atributos de archivo.
+Concede el derecho a cambiar los atributos de archivo.
 
 </dd> <dt>
 
 <span id="DELETE"></span><span id="delete"></span>
 
-<span id="DELETE"></span><span id="delete"></span>**Eliminar** (65536 (0x10000))
+<span id="DELETE"></span><span id="delete"></span>**DELETE** (65536 (0x10000))
 
 
 </dt> <dd>
@@ -166,7 +166,7 @@ Concede acceso de eliminación.
 
 <span id="READ_CONTROL"></span><span id="read_control"></span>
 
-<span id="READ_CONTROL"></span><span id="read_control"></span>**Leer \_ CONTROL** (131072 (0x20000))
+<span id="READ_CONTROL"></span><span id="read_control"></span>**READ \_ CONTROL** (131072 (0x20000))
 
 
 </dt> <dd>
@@ -177,7 +177,7 @@ Concede acceso de lectura al descriptor de seguridad y al propietario.
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-<span id="WRITE_DAC"></span><span id="write_dac"></span>**Escribir \_ DAC** (262144 (0x40000))
+<span id="WRITE_DAC"></span><span id="write_dac"></span>**ESCRITURA \_ DAC** (262144 (0x40000))
 
 
 </dt> <dd>
@@ -188,12 +188,12 @@ Concede acceso de escritura a la ACL discrecional.
 
 <span id="WRITE_OWNER"></span><span id="write_owner"></span>
 
-<span id="WRITE_OWNER"></span><span id="write_owner"></span>**Escribir \_ PROPIETARIO** (524288 (0x80000))
+<span id="WRITE_OWNER"></span><span id="write_owner"></span>**ESCRITURA \_ OWNER** (524288 (0x80000))
 
 
 </dt> <dd>
 
-Asigna el propietario de la escritura.
+Asigna el propietario de escritura.
 
 </dd> <dt>
 
@@ -210,13 +210,13 @@ Sincroniza el acceso y permite que un proceso espere a que un objeto entre en el
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si la llamada tiene el permiso necesario; de lo contrario, devuelve **false**.
+Devuelve **True** si la llamada tiene el permiso necesario; de lo contrario, devuelve **false**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-WMI implementa el método **GetEffectivePermission** en el [**archivo de \_ archivos de CIM**](cim-datafile.md) .
+WMI implementa el **método GetEffectivePermission** en [**CIM \_ DataFile.**](cim-datafile.md)
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -226,9 +226,9 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| Encabezado<br/>                   | <dl> <dt>Aclui. h</dt> </dl>      |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| Header<br/>                   | <dl> <dt>Aclui.h</dt> </dl>      |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -237,13 +237,13 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[\_Archivo de archivos CIM](geteffectivepermission-method-in-class-cim-datafile.md)
+[CIM \_ DataFile](geteffectivepermission-method-in-class-cim-datafile.md)
 </dt> <dt>
 
-[**\_Archivo de archivos CIM**](cim-datafile.md)
+[**CIM \_ DataFile**](cim-datafile.md)
 </dt> <dt>
 
-[Tareas de WMI: archivos y carpetas](/windows/desktop/WmiSdk/wmi-tasks--files-and-folders)
+[Tareas wmi: archivos y carpetas](/windows/desktop/WmiSdk/wmi-tasks--files-and-folders)
 </dt> <dt>
 
 [**Constantes de derechos de acceso a archivos y directorios**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants)

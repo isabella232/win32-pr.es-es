@@ -3,28 +3,28 @@ title: Expansión avanzada
 description: Expansión avanzada
 ms.assetid: 29db15a1-fa56-441a-af99-9e858d143804
 keywords:
-- Touch de Windows, expansión
-- Touch de Windows, expansión avanzada
-- Windows Touch, manipulaciones
+- Windows Touch,expansion
+- Windows Táctil, expansión avanzada
+- Windows Touch,manipulations
 - manipulaciones, expansión
 - manipulaciones, expansión avanzada
-- expansión, avanzada
+- expansion,advanced
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b81a3a395da053b7d0e8f79a115a2489f3e63190
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 27e176d91c08bd0d39383e2aba269bbdb5629cfe6b7c2d20eb1ac955786bef2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881505"
 ---
 # <a name="advanced-expansion"></a>Expansión avanzada
 
-En la ilustración siguiente se muestran dos formas de expandir un objeto.
+En la ilustración siguiente se muestran dos maneras de expandir un objeto.
 
-![Ilustración en la que se muestra la expansión simple en torno al punto central de un objeto y la expansión avanzada en torno al punto central de la manipulación](images/expansion.png)
+![ilustración que muestra una expansión simple alrededor del punto central de un objeto y una expansión avanzada alrededor del punto central de la manipulación](images/expansion.png)
 
-En el ejemplo A, el ejemplo de expansión simple, el objeto se expande alrededor de su punto central. En el ejemplo B, el objeto se expande alrededor del punto central de la manipulación. Para habilitarlo, debe traducir el objeto mientras se expande. La cantidad que se va a trasladar el objeto es la misma que la distancia desde el centro del objeto hasta el punto central del gesto. De forma intuitiva, es como si se expande el objeto desde el punto central del gesto de expansión y, a continuación, se mueve para que siga en el mismo centro que su posición inicial. En el código siguiente se muestra una manera de aplicar este concepto para habilitar la expansión en torno a un punto central.
+En el ejemplo A, el ejemplo de expansión simple, el objeto se expande alrededor de su punto central. En el ejemplo B, el objeto se expande alrededor del punto central de la manipulación. Para habilitarlo, debe traducir el objeto mientras se expande. La cantidad que traducirá el objeto es la misma que la distancia desde el centro del objeto hasta el punto central del gesto. Intuitivamente, es como si fuera a expandir el objeto desde el punto central del gesto de expansión y, a continuación, moverlo para que todavía esté en el mismo centro que su posición inicial. El código siguiente muestra una manera de aplicar este concepto para habilitar la expansión en torno a un punto central.
 
 
 ```C++
@@ -56,9 +56,9 @@ En el ejemplo A, el ejemplo de expansión simple, el objeto se expande alrededor
 [Manipulaciones](getting-started-with-manipulations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

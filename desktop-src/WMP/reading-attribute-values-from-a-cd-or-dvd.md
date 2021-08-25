@@ -1,31 +1,31 @@
 ---
-title: Leer valores de atributo de un CD o DVD
-description: Leer valores de atributo de un CD o DVD
+title: Lectura de valores de atributo desde un CD o DVD
+description: Lectura de valores de atributo desde un CD o DVD
 ms.assetid: 441916fb-f66d-4a12-a95c-b47561c93e64
 keywords:
-- Windows Media Player, atributos para elementos multimedia
-- Modelo de objetos de Windows Media Player, atributos para elementos multimedia
+- Reproductor de Windows Media,atributos para elementos multimedia
+- Reproductor de Windows Media modelo de objetos, atributos para elementos multimedia
 - modelo de objetos, atributos para elementos multimedia
-- Windows Media Player Mobile, atributos para elementos multimedia
-- Control ActiveX de Windows Media Player, atributos para elementos multimedia
-- Control ActiveX móvil de Windows Media Player, atributos para elementos multimedia
-- Control ActiveX, atributos para elementos multimedia
-- Biblioteca de Media Player de Windows, atributos para elementos multimedia
-- Biblioteca, atributos para elementos multimedia
-- atributos, leer valores
+- Reproductor de Windows Media Móvil, atributos para elementos multimedia
+- Reproductor de Windows Media ActiveX control,atributos para elementos multimedia
+- Reproductor de Windows Media Control de ActiveX móviles, atributos para elementos multimedia
+- ActiveX control,atributos para elementos multimedia
+- Reproductor de Windows Media biblioteca, atributos para elementos multimedia
+- library,attributes para elementos multimedia
+- attributes,reading values
 - leer valores de atributo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8909a752e9a974e4959be8ecd933d4bb3f1bfd4a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 800fda1bf3002f015873b69e29503ecba637a978bac1b167724c04f5f15228b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861775"
 ---
-# <a name="reading-attribute-values-from-a-cd-or-dvd"></a>Leer valores de atributo de un CD o DVD
+# <a name="reading-attribute-values-from-a-cd-or-dvd"></a>Lectura de valores de atributo desde un CD o DVD
 
-A lo largo de este tema, el objeto **Player** se definió de la siguiente manera:
+A lo largo de este tema, **el objeto Player** se definió de la siguiente manera:
 
 
 ```C++
@@ -36,7 +36,7 @@ using WMPLib;
 
 
 
-En el siguiente código de ejemplo de C# se recuperan los valores de todos los atributos del disco actual que se encuentra en la unidad y se escriben en un archivo.
+El siguiente código de ejemplo de C# recupera los valores de todos los atributos del disco actual que se encuentra en la unidad y los escribe en un archivo.
 
 
 ```C++
@@ -110,15 +110,15 @@ private void logDiscAttributes()
 
 <dl> <dt>
 
-[**Atributos de elemento multimedia**](media-item-attributes.md)
+[**Atributos de elementos multimedia**](media-item-attributes.md)
 </dt> <dt>
 
 [**Objeto multimedia**](media-object.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

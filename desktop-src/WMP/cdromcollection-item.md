@@ -1,11 +1,11 @@
 ---
-title: CdromCollection. Item (método)
-description: El método Item recupera el objeto CDROM en el índice especificado.
+title: Método CdromCollection.item
+description: El método item recupera el objeto Cdrom en el índice especificado.
 ms.assetid: c1efa972-736d-4fa0-9835-14ee594ae719
 keywords:
-- método de elemento Media Player de Windows
-- método de elemento Windows Media Player, clase CdromCollection
-- Clase CdromCollection Windows Media Player, método Item
+- método item Reproductor de Windows Media
+- método item Reproductor de Windows Media , CdromCollection (clase)
+- CdromCollection class Reproductor de Windows Media , item method
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a67dc58ae75819fa42940346b4f588b23a2f645a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5f700a17c29c382e96a5601bd9bbfabf3c4ede1b253d9f271b1d37ab1106ee2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864085"
 ---
-# <a name="cdromcollectionitem-method"></a>CdromCollection. Item (método)
+# <a name="cdromcollectionitem-method"></a>Método CdromCollection.item
 
-El método **Item** recupera el objeto **CDROM** en el índice especificado.
+El **método** item recupera el **objeto Cdrom** en el índice especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,26 +42,26 @@ retVal = CdromCollection.item(
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*index* \[ En\]
 </dt> <dd>
 
-**Número** (**largo**) que contiene el índice.
+**Number** (**long**) que contiene el índice.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un objeto **CDROM** .
+Este método devuelve un **objeto Cdrom.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *CdromCollection*. **elemento** para imprimir el nombre de la lista de reproducción de cada CD disponible en el equipo. Si la unidad contiene realmente contenido de DVD, se requiere Windows XP o posterior. Se creó un elemento TextArea HTML con el identificador = "listas de reproducción". El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se *usa CdromCollection*. **elemento** para imprimir el nombre de la lista de reproducción de cada CD disponible en el equipo. Si la unidad realmente contiene contenido de DVD, Windows XP o posterior. Se creó un elemento TextArea HTML con id. = "listas de reproducción". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -91,7 +91,7 @@ for (var i = 0; i < Player.cdromCollection.count; i++){
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -100,22 +100,22 @@ for (var i = 0; i < Player.cdromCollection.count; i++){
 
 <dl> <dt>
 
-[**CDROM. driveSpecifier**](cdrom-drivespecifier.md)
+[**Cdrom.driveSpecifier**](cdrom-drivespecifier.md)
 </dt> <dt>
 
-[**Objeto CdromCollection**](cdromcollection-object.md)
+[**CdromCollection (objeto)**](cdromcollection-object.md)
 </dt> <dt>
 
-[**CdromCollection. Count**](cdromcollection-count.md)
+[**CdromCollection.count**](cdromcollection-count.md)
 </dt> <dt>
 
 [**Playlist.name**](playlist-name.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

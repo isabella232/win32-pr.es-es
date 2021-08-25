@@ -1,21 +1,21 @@
 ---
-description: Cuando se produce un error en muchas funciones del sistema, se establece el código de último error.
+description: Cuando se produce un error en muchas funciones del sistema, establecen el último código de error.
 ms.assetid: 4cc626ac-7574-44ce-8377-e0bdd8e74b7e
-title: Recuperar el código de Last-Error
+title: Recuperación del Last-Error código
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c28ba096fae2bd38bb8dc9c291a677aa6fa161d2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 853fb6991bab5ad761dacaf18a2ec086dbf8fc4176964888bd0ededc548fbeda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912455"
 ---
-# <a name="retrieving-the-last-error-code"></a>Recuperar el código de Last-Error
+# <a name="retrieving-the-last-error-code"></a>Recuperación del Last-Error código
 
-Cuando se produce un error en muchas funciones del sistema, se establece el código de último error. Si su aplicación necesita más detalles sobre un error, puede recuperar el último código de error mediante la función [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) y mostrar una descripción del error con la función [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) .
+Cuando se produce un error en muchas funciones del sistema, establecen el último código de error. Si la aplicación necesita más detalles sobre un error, puede recuperar el código del último error mediante la función [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) y mostrar una descripción del error mediante la [**función FormatMessage.**](/windows/desktop/api/WinBase/nf-winbase-formatmessage)
 
-En el ejemplo siguiente se incluye una función de control de errores que imprime el mensaje de error y finaliza el proceso. El parámetro *lpszFunction* es el nombre de la función que establece el código de último error.
+En el ejemplo siguiente se incluye una función de control de errores que imprime el mensaje de error y finaliza el proceso. El *parámetro lpszFunction* es el nombre de la función que establece el código de último error.
 
 
 ```C++

@@ -1,123 +1,123 @@
 ---
-title: Migrar al marco de cinta de Windows
-description: Una aplicación que se basa en los menús, las barras de herramientas y los cuadros de diálogo tradicionales se puede migrar a la interfaz de usuario enriquecida, dinámica y controlada por contexto del sistema de comandos de la cinta de opciones de Windows.
+title: Migración al marco de Windows ribbon
+description: Una aplicación que se basa en menús tradicionales, barras de herramientas y cuadros de diálogo se puede migrar a la interfaz de usuario enriquección, dinámica y controlada por contexto del sistema de comandos del marco de Windows Ribbon.
 ms.assetid: 3a8ca41e-18b3-4c9d-865b-5f4c5fcf7ceb
 keywords:
-- Cinta de Windows, migrar a
+- Windows Cinta de opciones, migrar a
 - Cinta de opciones, migrar a
-- migrar a la cinta de opciones de Windows
+- migrar a Windows cinta de opciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a74822781f891815c6eb30d9e15a7f7efaa983fe
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8a011e9b5dad52f6f71fab272f0fded39ec59eb71cc7311ab9cf5ffccb4dfbca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104487959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841125"
 ---
-# <a name="migrating-to-the-windows-ribbon-framework"></a>Migrar al marco de cinta de Windows
+# <a name="migrating-to-the-windows-ribbon-framework"></a>Migración al marco de Windows ribbon
 
-Una aplicación que se basa en los menús, las barras de herramientas y los cuadros de diálogo tradicionales se puede migrar a la interfaz de usuario enriquecida, dinámica y controlada por contexto del sistema de comandos de la cinta de opciones de Windows. Esta es una manera fácil y eficaz de modernizar y revitalizar la aplicación, a la vez que mejora la accesibilidad, la facilidad de uso y la capacidad de detección de su funcionalidad.
+Una aplicación que se basa en menús tradicionales, barras de herramientas y cuadros de diálogo se puede migrar a la interfaz de usuario enriquección, dinámica y controlada por contexto del sistema de comandos del marco de Windows Ribbon. Se trata de una manera fácil y eficaz de modernizar y reactivar la aplicación, al tiempo que se mejora la accesibilidad, la facilidad de uso y la detectabilidad de su funcionalidad.
 
 ## <a name="introduction"></a>Introducción
 
 En general, la migración de una aplicación existente al marco de la cinta de opciones implica lo siguiente:
 
--   Diseñar un diseño de cinta y controlar la organización que expone la funcionalidad de la aplicación existente y es lo suficientemente flexible como para admitir nuevas funcionalidades.
+-   Diseñar una organización de control y diseño de cinta de opciones que exponga la funcionalidad de la aplicación existente y sea lo suficientemente flexible como para admitir nuevas funcionalidades.
 -   Adaptación del código de la aplicación existente.
--   Migrar los recursos de la aplicación existentes (cadenas e imágenes) al marco de la cinta de opciones.
+-   Migración de recursos de aplicación existentes (cadenas e imágenes) al marco de la cinta de opciones.
 
 > [!Note]  
-> Las [instrucciones](https://msdn.microsoft.com/library/cc872782.aspx) para la experiencia del usuario de la cinta deben revisarse para determinar si la aplicación es una candidata adecuada para una interfaz de usuario de la cinta de opciones.
+> Se [deben revisar las directrices](https://msdn.microsoft.com/library/cc872782.aspx) de la experiencia del usuario de la cinta de opciones para determinar si la aplicación es una candidata adecuada para una interfaz de usuario de cinta.
 
- 
+ 
 
-## <a name="design-the-ribbon-layout"></a>Diseñar el diseño de la cinta de opciones
+## <a name="design-the-ribbon-layout"></a>Diseño del diseño de la cinta de opciones
 
-Se pueden identificar diseños de interfaz de usuario de cinta potenciales y diseños de control siguiendo estos pasos:
+Los posibles diseños de controles y diseños de interfaz de usuario de la cinta de opciones se pueden identificar mediante estos pasos:
 
-1.  Realizar el inventario de toda la funcionalidad existente.
-2.  Convertir esta funcionalidad en comandos de la cinta de opciones.
-3.  Organizar los comandos en grupos lógicos.
+1.  Realizar un inventario de toda la funcionalidad existente.
+2.  Traducir esta funcionalidad en comandos de la cinta de opciones.
+3.  Organización de los comandos en grupos lógicos.
 
 ### <a name="take-inventory"></a>Realizar inventario
 
 En el marco de la cinta de opciones, la funcionalidad expuesta por una aplicación que manipula el estado o la vista de un área de trabajo o documento se considera un comando. Lo que constituye un comando puede variar y depende de la naturaleza y el dominio de la aplicación existente.
 
-En la tabla siguiente se muestra un conjunto de comandos básicos para una aplicación de edición de texto hipotética:
+En la tabla siguiente se muestra un conjunto de comandos básicos para una aplicación hipotética de edición de texto:
 
 
 
-| Símbolo           | id     | Descripción               |
+| Símbolo           | ID     | Descripción               |
 |------------------|--------|---------------------------|
-| archivo de ID. \_ \_ nuevo    | 0xE100 | Nuevo documento              |
-| archivo de identificador \_ \_ guardado   | 0xE103 | Guardar documento             |
-| archivo de ID. \_ \_ guardado | 0xE104 | Guardar como... diálogo       |
-| IDENTIFICADOR de \_ archivo \_ abierto   | 0xE101 | Abrir... diálogo          |
-| \_salida de archivo de identificador \_   | 0xE102 | Salir de la aplicación      |
-| deshacer edición de ID. \_ \_   | 0xE12B | Deshacer                      |
-| \_cortar edición de ID. \_    | 0xE123 | Cortar el texto seleccionado         |
-| \_editar la \_ copia de edición   | 0xE122 | Copiar texto seleccionado        |
-| \_pegar edición de ID. \_  | 0xE125 | Pegar texto del portapapeles |
-| \_borrado de edición de ID. \_  | 0xE120 | Eliminar texto seleccionado      |
-| \_zoom de vista de identificador \_   | 1242   | Acercar... diálogo          |
+| ARCHIVO \_ DE IDENTIFICADOR \_ NUEVO    | 0xE100 | Nuevo documento              |
+| GUARDAR \_ ARCHIVO DE \_ IDENTIFICADOR   | 0xE103 | Guardar documento             |
+| ARCHIVO \_ DE IDENTIFICADOR \_ SAVEAS | 0xE104 | Guardar como... (cuadro de diálogo)       |
+| ARCHIVO \_ DE IDENTIFICADOR \_ ABIERTO   | 0xE101 | Abierto... (cuadro de diálogo)          |
+| SALIDA DEL \_ ARCHIVO DE \_ IDENTIFICADOR   | 0xE102 | Salir de la aplicación      |
+| EDICIÓN \_ \_ DE IDENTIFICADOR DESHACER   | 0xE12B | Deshacer                      |
+| ID \_ EDIT \_ CUT    | 0xE123 | Cortar texto seleccionado         |
+| ID \_ EDIT \_ COPY   | 0xE122 | Copiar texto seleccionado        |
+| ID \_ EDIT \_ PASTE  | 0xE125 | Pegar texto del Portapapeles |
+| ID \_ EDIT \_ CLEAR  | 0xE120 | Eliminar texto seleccionado      |
+| ZOOM DE \_ VISTA \_ DE IDENTIFICADOR   | 1242   | Zoom... (cuadro de diálogo)          |
 
 
 
- 
+ 
 
-Mire más allá de los menús y las barras de herramientas existentes al crear un inventario de comandos. Tenga en cuenta todas las formas en que un usuario puede interactuar con el área de trabajo. Aunque no todos los comandos son adecuados para su inclusión en la cinta de opciones, este ejercicio puede exponer muy bien comandos ocultos previamente por capas de la interfaz de usuario.
+Busque más allá de los menús y las barras de herramientas existentes al crear un inventario de comandos. Tenga en cuenta todas las formas en que un usuario puede interactuar con el área de trabajo. Aunque no todos los comandos son adecuados para su inclusión en la cinta de opciones, este ejercicio puede exponer muy bien comandos que anteriormente estaban ocultados por capas de interfaz de usuario.
 
 ### <a name="translate"></a>Translate
 
-No todos los comandos deben representarse en la interfaz de usuario de la cinta de opciones. Por ejemplo, al escribir texto, cambiar una selección, desplazarse o mover el punto de inserción con el mouse todos los comandos se pueden incluir en el editor de texto hipotético, sin embargo, estos no son adecuados para exponer en una barra de comandos, ya que cada uno implica una interacción directa con la interfaz de usuario de la aplicación.
+No todos los comandos deben representarse en la interfaz de usuario de la cinta de opciones. Por ejemplo, escribir texto, cambiar una selección, desplazarse o mover el punto de inserción con el mouse se califican como comandos en el editor de texto hipotético; sin embargo, no son adecuados para exponerlos en una barra de comandos, ya que cada uno implica una interacción directa con la interfaz de usuario de la aplicación.
 
-Por el contrario, algunas funciones no se pueden considerar como un comando en el sentido tradicional. Por ejemplo, en lugar de estar escondido en un cuadro de diálogo, los ajustes de los márgenes de la página de la impresora se pueden representar en la cinta de opciones como un grupo de controles de número en una pestaña o [modo de aplicación](ribbon-applicationmodes.md)contextual.
+Por el contrario, es posible que algunas funcionalidades no se puedan pensar como un comando en el sentido tradicional. Por ejemplo, en lugar de estar en un cuadro de diálogo, los ajustes de margen de página de la impresora se podrían representar en la cinta de opciones como un grupo de controles Spinner en una pestaña contextual o en modo de [aplicación](ribbon-applicationmodes.md).
 
 > [!Note]  
-> Anote el identificador numérico que se puede asignar a cada comando. Algunos marcos de interfaz de usuario, como Microsoft Foundation Classes (MFC), definen identificadores para comandos como el menú Archivo y edición (0xE100 a 0xE200).
+> Anote el identificador numérico que se puede asignar a cada comando. Algunos marcos de interfaz de usuario, como Microsoft Foundation Classes (MFC), definen los iDs para comandos como el archivo y el menú de edición (0xE100 para 0xE200).
 
- 
+ 
 
 ### <a name="organize"></a>Organizar
 
-Antes de intentar organizar el inventario de comandos, se deben revisar las directrices de la [experiencia del usuario](https://msdn.microsoft.com/library/cc872782.aspx) en la cinta para obtener los procedimientos recomendados al implementar una interfaz de usuario de la cinta.
+Antes de intentar organizar el [](https://msdn.microsoft.com/library/cc872782.aspx) inventario de comandos, se deben revisar las directrices de la experiencia del usuario de la cinta de opciones para ver los procedimientos recomendados al implementar una interfaz de usuario de la cinta de opciones.
 
-En general, se pueden aplicar las siguientes reglas a la organización de comandos de la cinta de opciones:
+En general, las siguientes reglas se pueden aplicar a la organización De comandos de la cinta de opciones:
 
--   Es más probable que los comandos que operan en el archivo o en la aplicación global pertenezcan al menú de la [aplicación](windowsribbon-controls-applicationmenu.md).
--   Los comandos usados con frecuencia, como cortar, copiar y pegar (como en el ejemplo del editor de texto), normalmente se colocan en una pestaña Inicio predeterminada. En aplicaciones más complejas, se pueden duplicar en otra parte de la interfaz de usuario de la cinta de opciones.
--   Los comandos importantes o usados con frecuencia podrían garantizar la inclusión predeterminada en la [barra de herramientas de acceso rápido](windowsribbon-controls-quickaccesstoolbar.md).
+-   Los comandos que operan en el archivo o en la aplicación general probablemente pertenecen al [menú de la aplicación](windowsribbon-controls-applicationmenu.md).
+-   Los comandos usados con frecuencia, como Cortar, Copiar y Pegar (como en el ejemplo del editor de texto) normalmente se colocan en una pestaña principal predeterminada. En aplicaciones más complejas, pueden duplicarse en otra parte de la interfaz de usuario de la cinta de opciones.
+-   Los comandos importantes o usados con frecuencia pueden garantizar la inclusión predeterminada en la [barra de herramientas de acceso rápido](windowsribbon-controls-quickaccesstoolbar.md).
 
-El marco de la cinta de opciones también proporciona controles ContextMenu y MiniToolbar a través de la vista ContextPopup. Estas características no son obligatorias, pero si la aplicación tiene uno o varios menús contextuales existentes, la migración de los comandos que contienen puede permitir la reutilización del código base existente con el enlace automático a los recursos existentes.
+El marco de la cinta de opciones también proporciona controles ContextMenu y MiniToolbar a través de la vista ContextPopup. Estas características no son obligatorias, pero si la aplicación tiene uno o varios menús contextuales existentes, la migración de los comandos que contienen puede permitir la reutilización del código base existente con enlace automático a los recursos existentes.
 
-Dado que cada aplicación es diferente, lea las instrucciones e intente aplicarlas a la máxima medida posible. Uno de los objetivos del marco de la cinta de opciones es proporcionar una experiencia de usuario familiar y coherente, y este objetivo será más factible si los diseños de nuevas aplicaciones reflejan las aplicaciones de cinta existentes lo máximo posible.
+Dado que cada aplicación es diferente, lea las directrices e intente aplicarlas en la medida de lo posible. Uno de los objetivos del marco de la cinta de opciones es proporcionar una experiencia de usuario familiar y coherente y este objetivo será más factible si los diseños de nuevas aplicaciones reflejan las aplicaciones de cinta existentes tanto como sea posible.
 
 ## <a name="adapt-your-code"></a>Adaptación del código
 
-Una vez que los comandos de la cinta de opciones se han identificado y organizado en agrupaciones lógicas, el número de pasos implicados al incorporar el marco de cinta en el código de aplicación existente depende de la complejidad de la aplicación original. En general, hay tres pasos básicos:
+Una vez que los comandos de la cinta de opciones se han identificado y organizado en agrupaciones lógicas, el número de pasos implicados al incorporar el marco de la cinta de opciones en el código de aplicación existente depende de la complejidad de la aplicación original. En general, hay tres pasos básicos:
 
--   Cree el marcado de la cinta de opciones en función de la organización de comandos y la especificación de diseño.
--   Reemplazar la funcionalidad heredada de menús y barras de herramientas por la funcionalidad de la cinta.
--   Implemente un adaptador de IUICommandHandler.
+-   Cree el marcado de la cinta de opciones en función de la especificación de organización y diseño de comandos.
+-   Reemplace la funcionalidad heredada del menú y la barra de herramientas por la funcionalidad de la cinta de opciones.
+-   Implemente un adaptador IUICommandHandler.
 
 ### <a name="create-the-markup"></a>Crear el marcado
 
-La lista de comandos, así como su organización y diseño, se declaran a través del archivo de marcado de la cinta de opciones utilizado por el [compilador de marcado](windowsribbon-intentcl.md)de la cinta.
+La lista de comandos, así como su organización y diseño se declaran a través del archivo de marcado de la cinta de opciones que consume el compilador de marcado de la cinta [de opciones](windowsribbon-intentcl.md).
 
 > [!Note]  
-> Muchos de los pasos necesarios para adaptar una aplicación existente son similares a los necesarios para iniciar una nueva aplicación de cinta. Para obtener más información, consulte el tutorial [creación de una aplicación de cinta](windowsribbon-stepbystep.md) para obtener una nueva aplicación de cinta.
+> Muchos de los pasos necesarios para adaptar una aplicación existente son similares a los necesarios para iniciar una nueva aplicación de cinta de opciones. Para obtener más información, vea el tutorial [Creación de una aplicación de cinta](windowsribbon-stepbystep.md) de opciones para una nueva aplicación de cinta de opciones.
 
- 
+ 
 
-Hay dos secciones principales en el marcado de la cinta de opciones. La primera sección es un manifiesto de comandos y sus recursos asociados (cadenas e imágenes). La segunda sección especifica la estructura y la ubicación de los controles en la cinta de opciones.
+Hay dos secciones principales en el marcado de la cinta de opciones. La primera sección es un manifiesto de comandos y sus recursos asociados (cadenas e imágenes). La segunda sección especifica la estructura y la posición de los controles en la cinta de opciones.
 
-El marcado para el editor de texto simple podría ser similar al del ejemplo siguiente:
+El marcado del editor de texto simple podría tener un aspecto parecido al del ejemplo siguiente:
 
 > [!Note]  
-> Los recursos de imagen y de cadena se describen más adelante en este artículo.
+> Los recursos de imagen y cadena se tratan más adelante en este artículo.
 
- 
+ 
 
 
 ```C++
@@ -184,9 +184,9 @@ El marcado para el editor de texto simple podría ser similar al del ejemplo sig
 
 
 
-Para evitar la redefinición de símbolos definidos por un marco de interfaz de usuario como MFC, en el ejemplo anterior se usan nombres de símbolos ligeramente diferentes para cada comando (archivo de ID. \_ \_ nuevo frente a ID \_ cmd \_ nuevo). Sin embargo, el identificador numérico asignado a cada comando debe ser el mismo.
+Para evitar la redefinición de símbolos definidos por un marco de interfaz de usuario como MFC, en el ejemplo anterior se usan nombres de símbolos ligeramente diferentes para cada comando (ID FILE NEW frente a \_ \_ ID CMD \_ \_ NEW). Sin embargo, el identificador numérico asignado a cada comando debe seguir siendo el mismo.
 
-Para integrar el archivo de marcado en una aplicación, configure un paso de compilación personalizada para ejecutar el compilador de marcado de la cinta de opciones UICC.exe. El encabezado y los archivos de recursos resultantes se incorporan en el proyecto existente. Si la aplicación de la cinta de opciones editor de texto de ejemplo se denomina "RibbonPad", se requiere una línea de comandos de compilación personalizada similar a la siguiente:
+Para integrar el archivo de marcado en una aplicación, configure un paso de compilación personalizado para ejecutar el compilador de marcado ribbon, UICC.exe. A continuación, los archivos de encabezado y recursos resultantes se incorporan al proyecto existente. Si la aplicación ribbon del editor de texto de ejemplo se denomina "RibbonPad", se requiere una línea de comandos de compilación personalizada similar a la siguiente:
 
 
 ```
@@ -196,7 +196,7 @@ UICC.exe res\RibbonPad_ribbon.xml res\RibbonPad_ribbon.bin
 
 
 
-El compilador de marcado crea un archivo binario, un archivo de encabezado (H) y un archivo de recursos (RC). Dado que es probable que la aplicación existente tenga un archivo RC existente, incluya los archivos H y RC generados en ese archivo RC, tal como se muestra en el ejemplo siguiente:
+El compilador de marcado crea un archivo binario, un archivo de encabezado (H) y un archivo de recursos (RC). Dado que es probable que la aplicación existente tenga un archivo RC existente, incluya los archivos H y RC generados en ese archivo RC, como se muestra en el ejemplo siguiente:
 
 
 ```C++
@@ -227,23 +227,23 @@ LANGUAGE 9, 1
 
 
 
-### <a name="replace-legacy-menus-and-toolbars"></a>Reemplazar barras de herramientas y menús heredados
+### <a name="replace-legacy-menus-and-toolbars"></a>Reemplazar menús y barras de herramientas heredados
 
-Reemplazar los menús y las barras de herramientas estándar con una cinta de opciones en una aplicación heredada requiere lo siguiente:
+El reemplazo de menús y barras de herramientas estándar por una cinta de opciones en una aplicación heredada requiere lo siguiente:
 
-1.  Quite las referencias de recursos de menús y barras de herramientas del archivo de recursos de la aplicación.
-2.  Elimine todo el código de inicialización de la barra de herramientas y del menú.
-3.  Elimine cualquier código utilizado para adjuntar una barra de herramientas o una barra de menús a la ventana de nivel superior de la aplicación.
+1.  Quite las referencias de recursos de barra de herramientas y menú del archivo de recursos de la aplicación.
+2.  Elimine todo el código de inicialización de la barra de herramientas y de la barra de menús.
+3.  Elimine cualquier código usado para adjuntar una barra de herramientas o barra de menús a la ventana de nivel superior de la aplicación.
 4.  Cree una instancia del marco de la cinta de opciones.
 5.  Adjunte la cinta de opciones a la ventana de nivel superior de la aplicación.
-6.  Cargar el marcado compilado.
+6.  Cargue el marcado compilado.
 
 > [!IMPORTANT]
-> La barra de estado y las tablas de métodos abreviados de teclado existentes deben conservarse, ya que el marco de cinta no reemplaza estas características.
+> Las tablas de método abreviado de teclado y barra de estado existentes deben conservarse, ya que el marco de la cinta de opciones no reemplaza estas características.
 
- 
+ 
 
-En el ejemplo siguiente se muestra cómo inicializar el marco de trabajo mediante [**IUIFramework:: Initialize**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-initialize):
+En el ejemplo siguiente se muestra cómo inicializar el marco mediante [**IUIFramework::Initialize**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-initialize):
 
 
 ```C++
@@ -267,7 +267,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 
 
-En el ejemplo siguiente se muestra cómo usar [**IUIFramework:: LoadUI**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-loadui) para cargar el marcado compilado:
+En el ejemplo siguiente se muestra cómo usar [**IUIFramework::LoadUI**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-loadui) para cargar el marcado compilado:
 
 
 ```C++
@@ -309,13 +309,13 @@ HRESULT InitRibbon(CMainFrame* pMainFrame, IUnknown** ppFramework)
 
 
 
-La clase CApplication, a la que se hace referencia anteriormente, debe implementar un par de interfaces del modelo de objetos componentes (COM) definidas por el marco de la cinta de opciones: [**IUIApplication**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiapplication) y [**IUICommandHandler**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicommandhandler).
+La clase CApplication, a la que se hace referencia anteriormente, debe implementar un par de interfaces de Component Object Model (COM) definidas por el marco de la cinta de opciones: [**IUIApplication**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiapplication) e [**IUICommandHandler.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicommandhandler)
 
-[**IUIApplication**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiapplication) proporciona la interfaz de devolución de llamada principal entre el marco de trabajo y la aplicación (por ejemplo, el alto de la cinta de opciones se comunica a través de [**IUIApplication:: OnViewChanged**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-onviewchanged)) mientras que las devoluciones de llamada para comandos individuales se proporcionan en respuesta a [**IUIApplication:: OnCreateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-oncreateuicommand).
+[**IUIApplication**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiapplication) proporciona la interfaz de devolución de llamada principal entre el marco y la aplicación (por ejemplo, el alto de la cinta de opciones se comunica a través de [**IUIApplication::OnViewChanged**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-onviewchanged)), mientras que las devoluciones de llamada para comandos individuales se proporcionan en respuesta a [**IUIApplication::OnCreateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-oncreateuicommand).
 
-**Sugerencia:** Algunos marcos de trabajo de la aplicación, como MFC, requieren que se tenga en cuenta el alto de la barra de cinta al representar el espacio de documento de la aplicación. En estos casos, es necesario agregar una ventana oculta para superponer la barra de cinta y forzar el espacio del documento al alto deseado. Para obtener un ejemplo de este enfoque, en el que se llama a una función de diseño basada en el alto de la cinta de opciones devuelto por el método [**IUIRibbon:: getHeight**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-getheight) , vea el [ejemplo HTMLEditRibbon](windowsribbon-htmleditribbonsample.md).
+**Sugerencia:** Algunos marcos de trabajo de aplicación, como MFC, requieren que se tenga en cuenta el alto de la barra de cinta al representar el espacio de documentos de la aplicación. En estos casos, es necesaria la adición de una ventana oculta para superponer la barra de cinta y forzar el espacio del documento al alto deseado. Para obtener un ejemplo de este enfoque, donde se llama a una función de diseño en función del alto de la cinta devuelto por el método [**IUIRibbon::GetHeight,**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-getheight) vea el ejemplo [HTMLEditRibbon](windowsribbon-htmleditribbonsample.md).
 
-En el ejemplo de código siguiente se muestra una implementación de [**IUIApplication:: OnViewChanged**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-onviewchanged) :
+En el ejemplo de código siguiente se muestra [**una implementación de IUIApplication::OnViewChanged:**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-onviewchanged)
 
 
 ```C++
@@ -395,11 +395,11 @@ private:
 
 
 
-### <a name="implement-an-iuicommandhandler-adapter"></a>Implementar un adaptador de IUICommandHandler
+### <a name="implement-an-iuicommandhandler-adapter"></a>Implementar un adaptador IUICommandHandler
 
-Dependiendo del diseño de la aplicación original, es posible que sea más fácil tener varias implementaciones de controlador de comandos o un solo controlador de comandos de puente que invoque la lógica de comandos de la aplicación existente. Muchas aplicaciones usan \_ mensajes de comandos de WM para este propósito en los que es suficiente proporcionar un controlador de comandos único y para todos los propósitos que simplemente reenvía \_ los mensajes de comandos de WM a la ventana de nivel superior.
+En función del diseño de la aplicación original, puede ser más fácil tener varias implementaciones de controlador de comandos o un único controlador de comandos de puente que invoque la lógica de comando de aplicación existente. Muchas aplicaciones usan mensajes COMMAND de WM para este propósito, donde es suficiente proporcionar un controlador de comandos único y de uso general que simplemente reenvía los mensajes COMMAND de WM a la ventana \_ \_ de nivel superior.
 
-Sin embargo, este enfoque requiere un tratamiento especial para comandos como **Exit** o **Close**. Dado que la cinta de opciones no se puede destruir mientras está procesando un mensaje de ventana, el \_ mensaje de cierre de WM debe publicarse en el subproceso de la interfaz de usuario de la aplicación y no debe procesarse sincrónicamente, como se muestra en el ejemplo siguiente:
+Sin embargo, este enfoque requiere un control especial para comandos como **Exit** o **Close**. Dado que la cinta de opciones no se puede destruir mientras se procesa un mensaje de ventana, el mensaje WM CLOSE debe publicarse en el subproceso de interfaz de usuario de la aplicación y no debe procesarse sincrónicamente, como se muestra en el \_ ejemplo siguiente:
 
 
 ```C++
@@ -433,55 +433,55 @@ Sin embargo, este enfoque requiere un tratamiento especial para comandos como **
 
 
 
-## <a name="migrating-resources"></a>Migrar recursos
+## <a name="migrating-resources"></a>Migración de recursos
 
-Una vez que se ha definido el manifiesto de comandos, se ha declarado la estructura de la cinta de opciones y el código de aplicación se ha adaptado para hospedar el marco de cinta, el último paso es la especificación de los recursos de cadena e imagen para cada comando.
+Cuando se ha definido el manifiesto de comandos, se ha declarado la estructura de la cinta de opciones y el código de aplicación adaptado para hospedar el marco de la cinta de opciones, el paso final es la especificación de los recursos de cadena e imagen para cada comando.
 
 > [!Note]  
-> Los recursos de cadena e imagen se proporcionan normalmente en el archivo de marcado. Sin embargo, se pueden generar o reemplazar mediante programación implementando el método de devolución de llamada [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+> Normalmente, los recursos de cadena e imagen se proporcionan en el archivo de marcado. Sin embargo, se pueden generar o reemplazar mediante programación implementando el método de devolución de llamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
- 
+ 
 
 ### <a name="string-resources"></a>Recursos de cadena
 
-[**Command. LabelTitle**](windowsribbon-element-command-labeltitle.md) es la propiedad de cadena más común definida para un comando. Se representan como etiquetas de texto para pestañas, grupos y controles individuales. Normalmente, una cadena de etiqueta de un elemento de menú heredado se puede volver a usar para un **comando. LabelTitle** sin mucha edición.
+[**Command.LabelTitle es**](windowsribbon-element-command-labeltitle.md) la propiedad de cadena más común definida para un comando. Se representan como etiquetas de texto para pestañas, grupos y controles individuales. Normalmente, una cadena de etiqueta de un elemento de menú heredado se puede volver a usar para **Command.LabelTitle** sin mucha edición.
 
-Sin embargo, las siguientes convenciones han cambiado con la llegada de la cinta de opciones:
+Sin embargo, las convenciones siguientes han cambiado con la llegada de la cinta de opciones:
 
--   El sufijo de puntos suspensivos (...), que se usa para indicar un comando de inicio de diálogo, ya no es necesario.
--   El símbolo de y comercial (&) se puede seguir usando para indicar un método abreviado de teclado para un comando que aparece en un menú, pero la propiedad [**Command. KeyTip**](windowsribbon-element-command-keytip.md) compatible con el marco de trabajo cumple un propósito similar.
+-   El sufijo de puntos suspensivos (...) , que se usa para indicar un comando de inicio de diálogo, ya no es necesario.
+-   La yand (&) todavía se puede usar para indicar un método abreviado de teclado para un comando que aparece en un menú, pero la propiedad [**Command.Keytip**](windowsribbon-element-command-keytip.md) compatible con el marco cumple un propósito similar.
 
-En el ejemplo de editor de texto, se pueden especificar las siguientes cadenas para LabelTitle y KeyTip:
+Al volver al ejemplo del editor de texto, se podrían especificar las cadenas siguientes para LabelTitle y Keytip:
 
 
 
-| Símbolo           | Cadena original | Cadena LabelTitle | Cadena de KeyTip |
+| Símbolo           | Cadena original | Cadena LabelTitle | Cadena de información sobre claves |
 |------------------|-----------------|-------------------|---------------|
-| archivo de ID. \_ \_ nuevo    | &nuevo            | &nuevo              | N             |
-| archivo de identificador \_ \_ guardado   | &guardar           | &guardar             | S             |
-| archivo de ID. \_ \_ guardado | Guardar &como...       | Guardar &como          | A             |
-| IDENTIFICADOR de \_ archivo \_ abierto   | &abrir...          | &amp;Open             | O             |
-| \_salida de archivo de identificador \_   | &Salir           | &Salir             | X             |
-| deshacer edición de ID. \_ \_   | Deshacer &           | Deshacer              | Z             |
-| \_cortar edición de ID. \_    | Cu&t            | Cu&t              | X             |
-| \_editar la \_ copia de edición   | &copiar           | &copiar             | C             |
-| \_pegar edición de ID. \_  | &pegar          | &pegar            | V             |
-| \_borrado de edición de ID. \_  | &eliminar         | &eliminar           | D             |
-| \_zoom de vista de identificador \_   | &zoom...          | Zoom              | Z             |
+| ARCHIVO \_ DE IDENTIFICADOR \_ NUEVO    | &nuevo            | &nuevo              | N             |
+| GUARDAR \_ ARCHIVO DE \_ IDENTIFICADOR   | &Guardar           | &Guardar             | S             |
+| ARCHIVO \_ DE IDENTIFICADOR \_ SAVEAS | Guardar &como...       | Guardar &como          | A             |
+| ARCHIVO \_ DE IDENTIFICADOR \_ ABIERTO   | &abrir...          | &amp;Open             | O             |
+| SALIDA DEL \_ ARCHIVO DE \_ IDENTIFICADOR   | &Salir           | &Salir             | X             |
+| EDICIÓN \_ \_ DE IDENTIFICADOR DESHACER   | &deshacer           | Deshacer              | Z             |
+| ID \_ EDIT \_ CUT    | Cu&t            | Cu&t              | X             |
+| ID \_ EDIT \_ COPY   | &copiar           | &copiar             | C             |
+| ID \_ EDIT \_ PASTE  | &pegar          | &pegar            | V             |
+| ID \_ EDIT \_ CLEAR  | &eliminar         | &eliminar           | D             |
+| ZOOM DE \_ VISTA \_ DE IDENTIFICADOR   | &Zoom...          | Zoom              | Z             |
 
 
 
- 
+ 
 
 A continuación se muestra una lista de otras propiedades de cadena que se deben establecer en la mayoría de los comandos:
 
--   [**Comando. LabelDescription**](windowsribbon-element-command-labeldescription.md)
--   [**Comando. TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)
--   [**Comando. TooltipDescription**](windowsribbon-element-command-tooltipdescription.md)
+-   [**Command.LabelDescription**](windowsribbon-element-command-labeldescription.md)
+-   [**Command.TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)
+-   [**Command.TooltipDescription**](windowsribbon-element-command-tooltipdescription.md)
 
-Ahora se pueden declarar pestañas, grupos y otras características de la interfaz de usuario de la cinta de opciones con todos los recursos de cadena e imagen especificados.
+Ahora se pueden declarar pestañas, grupos y otras características de la interfaz de usuario de la cinta con todos los recursos de cadena e imagen especificados.
 
-En el siguiente ejemplo de marcado de cinta se muestran varios recursos de cadena:
+En el siguiente ejemplo de marcado de la cinta de opciones se muestran varios recursos de cadena:
 
 
 ```C++
@@ -523,20 +523,20 @@ En el siguiente ejemplo de marcado de cinta se muestran varios recursos de caden
 
 ### <a name="image-resources"></a>Recursos de imagen
 
-El marco de cinta admite formatos de imagen que proporcionan una apariencia mucho más enriquecida que los formatos de imagen admitidos por los componentes de menú y barra de herramientas anteriores.
+El marco de la cinta de opciones admite formatos de imagen que proporcionan un aspecto mucho más completo que los formatos de imagen admitidos por los componentes anteriores de menú y barra de herramientas.
 
-En Windows 8 y versiones posteriores, el marco de la cinta de opciones admite los siguientes formatos de gráficos: archivos de mapa de bits ARGB de 32 bits (BMP) y archivos PNG (Portable Network Graphics) con transparencia.
+Para Windows 8 y versiones posteriores, el marco de la cinta de opciones admite los siguientes formatos gráficos: archivos de mapa de bits ARGB (BMP) de 32 bits y archivos PNG (Portable Network Graphics) con transparencia.
 
-En Windows 7 y versiones anteriores, los recursos de imagen deben ajustarse al formato de gráficos BMP estándar usado en Windows.
+Para Windows 7 y versiones anteriores, los recursos de imagen deben cumplir el formato de gráfico BMP estándar que se usa en Windows.
 
 > [!Note]  
-> Los archivos de imagen existentes se pueden convertir a cualquier formato. Sin embargo, los resultados pueden ser menos satisfactorios si los archivos de imagen no admiten el suavizado de contorno y la transparencia.
+> Los archivos de imagen existentes se pueden convertir a cualquier formato. Sin embargo, los resultados pueden ser menos satisfactorios si los archivos de imagen no admiten suavizado de contorno y transparencia.
 
- 
+ 
 
-No es posible especificar un tamaño predeterminado único para los recursos de imagen en el marco de la cinta de opciones. Sin embargo, para admitir el [diseño adaptable](windowsribbon-templates.md) de los controles, las imágenes se pueden especificar en dos tamaños (grande y pequeño). Todas las imágenes en el marco de cinta se escalan según la resolución de puntos por pulgada (PPP) de la pantalla con el tamaño representado exacto que depende de esta configuración de PPP. Consulte [especificar recursos de imagen de cinta](windowsribbon-imageformats.md) para obtener más información.
+No es posible especificar un solo tamaño predeterminado para los recursos de imagen en el marco de la cinta de opciones. Sin embargo, para admitir [el diseño adaptable](windowsribbon-templates.md) de controles, las imágenes se pueden especificar en dos tamaños (grande y pequeño). Todas las imágenes del marco de la cinta de opciones se escalan según la resolución de puntos por pulgada (ppp) de la pantalla con el tamaño exacto representado en función de esta configuración de ppp. Vea [Especificar recursos de imagen de cinta para](windowsribbon-imageformats.md) obtener más información.
 
-En el ejemplo siguiente se muestra cómo se hace referencia a un conjunto de imágenes específicas de PPP en el marcado:
+En el ejemplo siguiente se muestra cómo se hace referencia a un conjunto de imágenes específicas de ppp en el marcado:
 
 
 ```C++
@@ -564,9 +564,9 @@ En el ejemplo siguiente se muestra cómo se hace referencia a un conjunto de im�
 
 <dl> <dt>
 
-[Especificar recursos de imagen de cinta](windowsribbon-imageformats.md)
+[Especificar recursos de imagen de cinta de opciones](windowsribbon-imageformats.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
