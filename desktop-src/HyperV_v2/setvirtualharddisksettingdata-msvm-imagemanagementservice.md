@@ -1,7 +1,7 @@
 ---
 description: Actualiza la configuración de un disco duro virtual.
 ms.assetid: 10f80313-bc78-447e-bdf2-5635d7354e3c
-title: Método SetVirtualHardDiskSettingData de la clase Msvm_ImageManagementService
+title: Método SetVirtualHardDiskSettingData de la Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 969e9019d05b49f2f171f2177e1e74f135e212da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fb107edc5227cd5a3ff1f96f0e68c038fb00817cfb945dd08fcaea5d2254229
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050475"
 ---
-# <a name="setvirtualharddisksettingdata-method-of-the-msvm_imagemanagementservice-class"></a>Método SetVirtualHardDiskSettingData de la \_ clase ImageManagementService de MSVM
+# <a name="setvirtualharddisksettingdata-method-of-the-msvm_imagemanagementservice-class"></a>Método SetVirtualHardDiskSettingData de la clase \_ Msvm ImageManagementService
 
 Actualiza la configuración de un disco duro virtual.
 
@@ -40,17 +40,17 @@ uint32 SetVirtualHardDiskSettingData(
 
 <dl> <dt>
 
-*VirtualDiskSettingData* \[ de\]
+*VirtualDiskSettingData* \[ En\]
 </dt> <dd>
 
-Representación de cadena de la clase [**MSVM \_ VirtualHardDiskSettingData**](msvm-virtualharddisksettingdata.md) que especifica el disco duro virtual que se va a actualizar y que contiene los nuevos datos de configuración. Con este método solo se pueden actualizar las propiedades **ParentPath**, **PhysicalSectorSize** o **VirtualDiskId** . Estas propiedades no se pueden actualizar con una llamada al método. Solo se puede actualizar una de estas propiedades con una única llamada al método.
+Representación de cadena de la clase [**\_ Msvm VirtualHardDiskSettingData**](msvm-virtualharddisksettingdata.md) que especifica el disco duro virtual que se debe actualizar y que contiene los nuevos datos de configuración. Solo las **propiedades ParentPath**, **PhysicalSectorSize** o **VirtualDiskId** se pueden actualizar con este método. No se pueden actualizar estas propiedades con una llamada de método. Solo puede actualizar una de estas propiedades con una sola llamada de método.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -75,16 +75,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,18 +93,18 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase [**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase \_ ImageManagementService de Msvm**](msvm-imagemanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,10 +112,10 @@ El acceso a la clase [**MSVM \_ ImageManagementService**](msvm-imagemanagementse
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -124,7 +124,7 @@ El acceso a la clase [**MSVM \_ ImageManagementService**](msvm-imagemanagementse
 
 <dl> <dt>
 
-[**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-title: Acerca de los controles de edición enriquecida sin ventanas
-description: Un control Rich Edit sin ventana, también conocido como objeto de servicios de texto, es un objeto que proporciona la funcionalidad de un control Rich Edit sin proporcionar la ventana.
+title: Acerca de los controles rich edit sin ventanas
+description: Un control de edición enriquecido sin ventanas, también conocido como objeto de servicios de texto, es un objeto que proporciona la funcionalidad de un control de edición enriquecido sin proporcionar la ventana.
 ms.assetid: 880a704d-776a-49d3-be31-0328af408e3b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc1c8bc685dff5f8ddb041011089a84eb2e12008
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 96b68a2bc0317a884f0516b73b3674d104c4fa6c12f16bdc24960d7ea0ef8bbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103995649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922185"
 ---
-# <a name="about-windowless-rich-edit-controls"></a>Acerca de los controles de edición enriquecida sin ventanas
+# <a name="about-windowless-rich-edit-controls"></a>Acerca de los controles rich edit sin ventanas
 
-Un control Rich Edit sin ventana, también conocido como objeto de servicios de texto, es un objeto que proporciona la funcionalidad de un [control Rich Edit](rich-edit-controls.md) sin proporcionar la ventana. Para proporcionar la funcionalidad de una ventana, como la capacidad de recibir mensajes y un contexto de dispositivo en el que puede dibujar, los controles de edición enriquecida sin ventanas usan un par de interfaces: [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) y [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost).
+Un control de edición enriquecido sin ventanas, también conocido como objeto de servicios de texto, es un objeto que proporciona la funcionalidad de un [control](rich-edit-controls.md) de edición enriquecido sin proporcionar la ventana. Para proporcionar la funcionalidad de una ventana, como la capacidad de recibir mensajes y un contexto de dispositivo en el que se puede dibujar, los controles de edición enriquecciones sin ventanas usan un par de interfaces: [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) e [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost).
 
-Para crear un control Rich Edit sin ventanas, llame a la función [**CreateTextServices**](/windows/desktop/api/Textserv/nf-textserv-createtextservices) con un puntero a la implementación de la interfaz [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost) . **CreateTextServices** devuelve un puntero [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) que puede consultar para recuperar un puntero a la implementación de [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) del control sin ventana.
+Para crear un control de edición enriquecido sin ventanas, llame a la función [**CreateTextServices**](/windows/desktop/api/Textserv/nf-textserv-createtextservices) con un puntero a la implementación de la [**interfaz ITextHost.**](/windows/desktop/api/Textserv/nl-textserv-itexthost) **CreateTextServices devuelve** un [**puntero IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) que puede consultar para recuperar un puntero a la implementación [**de ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) del control sin ventanas.
 
-Msftedit.dll exporta un identificador de interfaz (IID) denominado **IID \_ ITextServices** que puede usar para consultar el puntero [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) de la interfaz [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) . En el ejemplo siguiente se muestra cómo recuperar el **IID \_ ITextServices** y usarlo para obtener la interfaz **ITextServices** .
+Msftedit.dll exporta un identificador de interfaz (IID) denominado **IID \_ ITextServices** que puede usar para consultar el [**puntero IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) para la [**interfaz ITextServices.**](/windows/desktop/api/Textserv/nl-textserv-itextservices) En el ejemplo siguiente se muestra cómo recuperar **IID \_ ITextServices** y usarlo para obtener la **interfaz ITextServices.**
 
 
 ```
@@ -58,14 +58,14 @@ Msftedit.dll exporta un identificador de interfaz (IID) denominado **IID \_ ITex
 
 
 
-Msftedit.dll también exporta un identificador de interfaz (IID) denominado **IID \_ ITextHost** que se puede usar de forma similar para consultar la interfaz [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost) .
+Msftedit.dll también exporta un identificador de interfaz (IID) denominado **IID \_ ITextHost** que se puede usar de forma similar para consultar la [**interfaz ITextHost.**](/windows/desktop/api/Textserv/nl-textserv-itexthost)
 
-La interfaz [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost) tiene métodos a los que el control sin ventana llama para recuperar información sobre la ventana. Por ejemplo, el objeto de servicios de texto llama al método [**TxGetDC**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txgetdc) para recuperar un contexto de dispositivo en el que se puede dibujar. El control sin ventana llama al método [**TxNotify**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txnotify) para enviar notificaciones, como los mensajes de notificación de edición enriquecida, al host de texto. El objeto servicios de texto llama a otros métodos **ITextHost** para solicitar al host de texto que realice otros servicios relacionados con la ventana. Por ejemplo, el método [**TxInvalidateRect**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txinvalidaterect) solicita al host de texto que agregue un rectángulo a la región de actualización de la ventana.
+La [**interfaz ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost) tiene métodos a los que llama el control sin ventanas para recuperar información sobre la ventana. Por ejemplo, el objeto de servicios de texto llama al [**método TxGetDC**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txgetdc) para recuperar un contexto de dispositivo en el que se puede dibujar. El control sin ventanas llama al [**método TxNotify**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txnotify) para enviar notificaciones, como los mensajes de notificación de edición enriquecidos, al host de texto. El objeto de servicios de texto llama a otros **métodos ITextHost** para solicitar al host de texto que realice otros servicios relacionados con ventanas. Por ejemplo, el [**método TxInvalidateRect**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txinvalidaterect) solicita al host de texto que agregue un rectángulo a la región de actualización de la ventana.
 
-Un control Rich Edit estándar tiene un procedimiento de ventana que procesa los mensajes del sistema y los mensajes de la aplicación. Puede usar el identificador de ventana del control para enviar mensajes de TI para realizar la edición de texto y otras operaciones. Pero un control Rich Edit sin ventanas no tiene ningún procedimiento de ventana para recibir y procesar mensajes. En su lugar, proporciona una interfaz [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) . Para enviar mensajes a un control Rich Edit sin ventanas, llame al método [**TxSendMessage**](/windows/desktop/api/Textserv/nf-textserv-itextservices-txsendmessage) . Puede usar este método para enviar cualquiera de los mensajes Rich Edit o para pasar otros mensajes que afecten al control, como los mensajes del sistema para la entrada del mouse o del teclado.
+Un control de edición enriquecido estándar tiene un procedimiento de ventana que procesa mensajes del sistema y mensajes de la aplicación. Puede usar el identificador de ventana del control para enviarle mensajes para realizar la edición de texto y otras operaciones. Pero un control de edición enriquecido sin ventanas no tiene ningún procedimiento de ventana para recibir y procesar mensajes. En su lugar, proporciona una [**interfaz ITextServices.**](/windows/desktop/api/Textserv/nl-textserv-itextservices) Para enviar mensajes a un control de edición enriquecido sin ventanas, llame al [**método TxSendMessage.**](/windows/desktop/api/Textserv/nf-textserv-itextservices-txsendmessage) Puede usar este método para enviar cualquiera de los mensajes de edición enriquecidos o para pasar otros mensajes que afectan al control, como los mensajes del sistema para la entrada del mouse o el teclado.
 
-También puede crear el objeto de servicios de texto como parte de un [objeto agregado por com](/windows/desktop/com/aggregation). Esto hace que sea fácil agregar el objeto de servicios de texto con un objeto de modelo de objetos componentes (COM) sin ventanas.
+También puede crear el objeto de servicios de texto como parte de un [objeto agregado a COM](/windows/desktop/com/aggregation). Esto facilita la agregación del objeto de servicios de texto con un objeto modelo de objetos componentes (COM) sin ventanas.
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: Direct3DShaderValidatorCreate9 función)
+description: Función Direct3DShaderValidatorCreate9
 ms.assetid: 5b0ff1e1-8833-4cb0-9bd4-53bd7c11fed3
-title: Direct3DShaderValidatorCreate9 función)
+title: Función Direct3DShaderValidatorCreate9
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,17 +12,17 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 45b99a3077b49eac8689d8e634c1b12ac7cd3dc6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2dedcb63a1287cf27a3ac2d0476458e16079f58f974409d7f688d7be3336e01c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986115"
 ---
-# <a name="direct3dshadervalidatorcreate9-function"></a>Direct3DShaderValidatorCreate9 función)
+# <a name="direct3dshadervalidatorcreate9-function"></a>Función Direct3DShaderValidatorCreate9
 
 > [!Note]  
-> Esta función es interna y no pretende ser utilizada por los desarrolladores de software.
+> Esta función es interna y no está pensada para que la usen los desarrolladores de software.
 
  
 

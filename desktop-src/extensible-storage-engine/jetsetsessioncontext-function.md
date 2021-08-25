@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetSetSessionContext (función)'
-title: JetSetSessionContext función)
+description: 'Más información sobre: JetSetSessionContext (Función)'
+title: JetSetSessionContext (Función)
 TOCTitle: JetSetSessionContext Function
 ms:assetid: e44efadf-a5c7-408a-ad68-56646b6ea650
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294124(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4aafafa17499b76282599586f7477ac1ef6f878d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61df6b5396a5bffcef4f7e32e9a2c32477d019e0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715296"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465292"
 ---
-# <a name="jetsetsessioncontext-function"></a>JetSetSessionContext función)
+# <a name="jetsetsessioncontext-function"></a>JetSetSessionContext (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetsetsessioncontext-function"></a>JetSetSessionContext función)
+## <a name="jetsetsessioncontext-function"></a>JetSetSessionContext (Función)
 
-La función **JetSetSessionContext** asocia una sesión con el subproceso actual utilizando el identificador de contexto especificado. Esta asociación invalida el requisito de motor predeterminado que una transacción para una sesión determinada debe aparecer completamente en el mismo subproceso.
+La **función JetSetSessionContext** asocia una sesión al subproceso actual mediante el identificador de contexto especificado. Esta asociación invalida el requisito predeterminado del motor de que una transacción para una sesión determinada debe producirse completamente en el mismo subproceso.
 
 ```cpp
     JET_ERR JET_API JetSetSessionContext(
@@ -53,105 +53,41 @@ Identificador único al que se asociará esta sesión.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>No se puede completar la operación porque todas las actividades de la instancia que está asociada a la sesión han dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>No se puede completar la operación porque la instancia asociada a la sesión encontró un error irrecuperable que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p>
-<p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno de los parámetros que se proporcionó contenía un valor inesperado o la combinación de varios valores de parámetro produjo un resultado inesperado. Este error lo devolverá <strong>JetSetSessionContext</strong> en las siguientes condiciones:</p>
-<ul>
-<li><p><em>ulContext</em> es null</p></li>
-<li><p><em>ulContext</em> es-1</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>No se puede completar la operación porque la instancia de asociada a la sesión aún no se ha inicializado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>No se puede completar la operación porque hay una operación de restauración en curso en la instancia que está asociada a la sesión.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errSessionContextAlreadySet</p></td>
-<td><p>No se pudo asociar la sesión con el subproceso actual porque ya se ha asociado a un subproceso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>No se puede completar la operación porque se está cerrando la instancia asociada a la sesión.</p></td>
-</tr>
-</tbody>
-</table>
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
-Si esta función se ejecuta correctamente, la sesión se asociará al subproceso actual. No se producirá ningún cambio en el estado de la base de datos.
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>La operación no se puede completar porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irrevocado que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros que se proporcionó contenía un valor inesperado o la combinación de varios valores de parámetro produjo un resultado inesperado. <strong>JetSetSessionContext</strong> devolverá este error en las condiciones siguientes:</p><ul><li><p><em>ulContext</em> es NULL</p></li><li><p><em>ulContext</em> es -1</p></li></ul> | 
+| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque todavía no se ha inicializado la instancia asociada a la sesión.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>La operación no se puede completar porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
+| <p>JET_errSessionContextAlreadySet</p> | <p>La sesión no se pudo asociar al subproceso actual porque ya se ha asociado a un subproceso.</p> | 
+| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia asociada a la sesión.</p> | 
 
-Si se produce un error en esta función, el estado de la sesión permanecerá sin cambios. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Observaciones
 
-Normalmente, una sesión está enlazada a un subproceso concreto para la duración de una transacción. Este comportamiento está diseñado para ayudar a las aplicaciones a detectar y evitar el uso compartido conceptualmente inadvertido de una sola sesión entre varios subprocesos. A veces, esta simple comprobación no funciona con la arquitectura de la aplicación. Por ejemplo, si la aplicación hospeda objetos del servidor mediante un grupo de subprocesos y las transacciones abarcan varias llamadas de servidor a un objeto determinado, esta protección puede hacer que algunas de esas llamadas produzcan un error con JET_errSessionSharingViolation aunque el patrón de uso sea correcto. Esta situación es común para los servidores de objetos COM.
+Si esta función se realiza correctamente, la sesión se asociará al subproceso actual. No se producirá ningún cambio en el estado de la base de datos.
 
-**JetSetSessionContext** y [JetResetSessionContext](./jetresetsessioncontext-function.md) solucionan este problema haciendo que la comprobación de uso compartido de la sesión sea un poco más flexible. Cuando la aplicación empieza a realizar una serie de llamadas de la API de ESE mediante una sesión determinada, primero establece el contexto de la sesión en un valor determinado. Esta acción asocia la sesión al subproceso que realiza la llamada. En el ejemplo dado, este contexto podría ser la dirección del objeto que contiene el identificador de sesión JET. Una vez realizadas las llamadas a la API de ESE, la aplicación restablece el contexto de la sesión. Esta acción desasocia la sesión del subproceso que realiza la llamada. Otro subproceso puede utilizar el objeto y su sesión, incluso si la sesión tiene una transacción activa.
+Si se produce un error en esta función, el estado de sesión permanecerá sin cambios. No se producirá ningún cambio en el estado de la base de datos.
 
-Es importante tener en cuenta que se debe llamar a **JetSetSessionContext** antes de abrir una transacción en esa sesión, o bien la asociación no funcionará.
+#### <a name="remarks"></a>Comentarios
 
-**JetSetSessionContext** es seguro para subprocesos. Varios subprocesos pueden intentar establecer un contexto de subproceso en la misma sesión al mismo tiempo y solo se ganará uno. Este hecho puede ser utilizado por la aplicación como un medio para asignar una sesión de un grupo sin almacenar el estado externo sobre su asignación.
+Normalmente, una sesión se enlaza a un subproceso específico mientras dura una transacción. Este comportamiento está diseñado para ayudar a las aplicaciones a detectar y evitar el uso compartido conceptualmente mal aconsejado de una sola sesión entre varios subprocesos. A veces, esta sencilla comprobación no funciona con la arquitectura de la aplicación. Por ejemplo, si la aplicación hospeda objetos del lado servidor mediante un grupo de subprocesos y las transacciones abarcan varias llamadas de servidor a un objeto determinado, esta protección puede hacer que algunas de esas llamadas no se puedan realizar con JET_errSessionSharingViolation aunque el patrón de uso sea correcto. Esta situación es común para los servidores de objetos COM.
+
+**JetSetSessionContext** y [JetResetSessionContext](./jetresetsessioncontext-function.md) resuelven este problema haciendo que esta comprobación de uso compartido de sesión sea un poco más flexible. Cuando la aplicación comienza a realizar una serie de llamadas API ese mediante una sesión determinada, primero establece el contexto de sesión en un valor determinado. Esta acción asocia la sesión al subproceso que realiza la llamada. En el ejemplo dado, este contexto podría ser la dirección del objeto que contiene el identificador de sesión jet. Una vez realizadas las llamadas API de ESE, la aplicación restablece el contexto de sesión. Esta acción desasocia la sesión del subproceso que realiza la llamada. Otro subproceso puede usar el objeto y su sesión, incluso si la sesión tiene una transacción activa.
+
+Es importante tener en cuenta que se debe llamar a **JetSetSessionContext** antes de abrir una transacción en esa sesión o la asociación no funcionará.
+
+**JetSetSessionContext es** seguro para subprocesos. Varios subprocesos pueden intentar establecer un contexto de subproceso en la misma sesión al mismo tiempo y solo uno ganará. La aplicación puede usar este hecho como medio para asignar una sesión de un grupo sin almacenar el estado externo sobre su asignación.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

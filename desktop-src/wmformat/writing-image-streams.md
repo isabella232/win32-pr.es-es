@@ -1,45 +1,45 @@
 ---
-title: Escribir secuencias de imagen
-description: Escribir secuencias de imagen
+title: Escribir imágenes Secuencias
+description: Escribir imágenes Secuencias
 ms.assetid: 3a017bdd-9723-4b7f-b5e1-22838c0ba4ff
 keywords:
-- Advanced Systems Format (ASF), escribir secuencias de imágenes
+- Formato de sistemas avanzados (ASF), escritura de secuencias de imagen
 - ASF (formato de sistemas avanzados), escribir secuencias de imágenes
-- Advanced Systems Format (ASF), stream Image
-- ASF (formato de sistemas avanzados), flujos de imagen
-- flujos de imagen, escritura
-- secuencias, escribir secuencias de imagen
+- Formato de sistemas avanzados (ASF), secuencias de imagen
+- ASF (formato de sistemas avanzados), secuencias de imagen
+- secuencias de imágenes, escritura
+- streams,writing image streams
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60daa9b62701c172d127c4cff1fb6c301edf7d86
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 7a6061af2ff43cbeb3fe688b6533eee044036df029bdb7f7305af305c8d45084
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103994950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006305"
 ---
-# <a name="writing-image-streams"></a>Escribir secuencias de imagen
+# <a name="writing-image-streams"></a>Escribir imágenes Secuencias
 
-Las entradas de un flujo de imagen deben ser imágenes de mapa de bits con formato RGB. El escritor coordina la compresión de los ejemplos de imagen de entrada con el formato JPEG. Antes de empezar a escribir un archivo que contiene una secuencia de imagen, debe establecer una calidad de imagen para la entrada mediante el \_ valor g wszJPEGCompressionQuality. Use [**IWMWriterAdvanced2:: SetInputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced2-setinputsetting) para establecer la calidad en un valor **DWORD** comprendido entre 1 y 100. Los valores bajos representan una alta relación de compresión a costa de la calidad, mientras que los valores altos producen imágenes de alta calidad que requieren más espacio.
+Las entradas de un flujo de imagen deben ser imágenes de mapa de bits con formato RGB. El sistema de escritura coordina la compresión de los ejemplos de imagen de entrada mediante el formato JPEG. Antes de empezar a escribir un archivo que contiene un flujo de imagen, debe establecer una calidad de imagen para la entrada, mediante la configuración \_ g wsz BOOKINGEGCompressionQuality. Use [**IWMWriterAdvanced2::SetInputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced2-setinputsetting) para establecer la calidad en un **valor DWORD** que va de 1 a 100. Los valores bajos representan una relación de compresión alta a costa de la calidad, mientras que los valores altos generan imágenes de alta calidad que requieren más espacio.
 
-Los flujos de imágenes suelen requerir ventanas de búfer más grandes que las secuencias de vídeo normales. El tamaño exacto necesario depende del tipo de imagen y de la calidad de la imagen, entre otros factores. Use la prueba y el error para determinar el tamaño adecuado para las imágenes que desea procesar.
+Las secuencias de imágenes a menudo requieren ventanas de búfer más grandes que las secuencias de vídeo normales. El tamaño exacto necesario depende del tipo de imagen y la calidad de la imagen, entre otros factores. Use la prueba y el error para determinar el tamaño adecuado de las imágenes que desea procesar.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Flujos de imagen**](image-streams.md)
+[**Imagen Secuencias**](image-streams.md)
 </dt> <dt>
 
-[**Para establecer la configuración de entrada**](to-set-input-settings.md)
+[**Para establecer la entrada Configuración**](to-set-input-settings.md)
 </dt> <dt>
 
-[**Escribir archivos ASF**](writing-asf-files.md)
+[**Escritura de archivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

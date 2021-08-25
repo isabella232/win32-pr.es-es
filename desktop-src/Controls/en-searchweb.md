@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_SEARCHWEB (CommCtrl. h)
-description: Se envía cuando un control de edición pierde el foco del teclado. La ventana primaria del control de edición recibe este código de notificación a través de un mensaje de notificación de WM \_ .
+title: EN_SEARCHWEB de notificación (CommCtrl.h)
+description: Se envía cuando un control de edición pierde el foco del teclado. La ventana primaria del control de edición recibe este código de notificación a través de un mensaje \_ WM NOTIFY.
 ms.assetid: c31f4b6c-afed-4506-b98a-65c902b0f63a
 keywords:
-- EN_SEARCHWEB controles de código de notificación de Windows
+- EN_SEARCHWEB de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: 2b995c90e8f4a607d7181adc8a357314acb84dc3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 606f53427426e4c9d20c2e4c12245569ed1d8a53ed7ea29162516f6d65fd1baa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047475"
 ---
-# <a name="en_searchweb-notification-code"></a>\_Código de notificación en SEARCHWEB
+# <a name="en_searchweb-notification-code"></a>Código de notificación EN \_ SEARCHWEB
 
-Enviado después de que un control de edición realice una búsqueda web cuando la característica "Buscar en la web" esté habilitada, vea [EM_ENABLESEARCHWEB](em-enablesearchweb.md). La ventana primaria del control de edición recibe este código de notificación a través de un mensaje de notificación de [**WM \_**](wm-notify.md) .
+Se envía después de que un control de edición realizara una búsqueda web cuando la característica "Buscar en la web" está [habilitada, vea EM_ENABLESEARCHWEB](em-enablesearchweb.md). La ventana primaria del control de edición recibe este código de notificación a través de un [**mensaje \_ WM NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -49,7 +49,7 @@ Identificador del control de edición.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMSEARCHWEB**](/windows/desktop/api/Commctrl/ns-commctrl-nmsearchweb) .
+Puntero a una [**estructura NMSEARCHWEB.**](/windows/desktop/api/Commctrl/ns-commctrl-nmsearchweb)
 
 </dd> </dl>
 
@@ -59,9 +59,9 @@ Puntero a una estructura [**NMSEARCHWEB**](/windows/desktop/api/Commctrl/ns-comm
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 y 1809 \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2019 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio 1809 \[\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2019 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 
@@ -72,13 +72,13 @@ Puntero a una estructura [**NMSEARCHWEB**](/windows/desktop/api/Commctrl/ns-comm
 **Referencia**
 </dt> <dt>
 
-[**\_ENABLESEARCHWEB em**](em-enablesearchweb.md)
+[**EM \_ ENABLESEARCHWEB**](em-enablesearchweb.md)
 </dt> <dt>
 
 **Otros recursos**
 </dt> <dt>
 
-[**\_notificaciones de WM**](wm-notify.md)
+[**WM \_ NOTIFY**](wm-notify.md)
 </dt> </dl>
 
  

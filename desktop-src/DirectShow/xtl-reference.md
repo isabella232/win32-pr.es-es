@@ -4,21 +4,21 @@ ms.assetid: a6fa5201-aec6-467b-a9a4-ca153f35b4af
 title: Referencia de XTL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a11b448c9c333c2cdb1ce504f7ca4ca74d2a1cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b8fc6b905d665180e1bae0e79844b7fbc3c81b6dbf5cbc9108e199bb05844ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048965"
 ---
 # <a name="xtl-reference"></a>Referencia de XTL
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-Los servicios de edición de DirectShow admiten un formato de persistencia XML, denominado XTL. En esta sección se documentan los elementos y atributos de XTL.
+DirectShow Editing Services admite un formato de persistencia XML, denominado XTL. En esta sección se documenta los elementos y atributos XTL.
 
 -   [Elementos XTL](xtl-elements.md)
 -   [Atributos XTL](xtl-attributes.md)

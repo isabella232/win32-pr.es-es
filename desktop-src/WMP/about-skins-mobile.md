@@ -3,19 +3,19 @@ title: Acerca de las máscaras (móviles)
 description: Obtenga información sobre las máscaras para reproductores móviles. Una máscara es una interfaz de usuario personalizada para Reproductor de Windows Media.
 ms.assetid: 105c11ce-705b-4a0c-8982-d0f9dd9ae3ac
 keywords:
-- Reproductor de Windows Media Mobile,skins
-- Reproductor de Windows Media máscaras móviles, acerca de
-- Reproductor de Windows Media máscaras móviles, crear
+- Reproductor de Windows Media Móvil, máscaras
+- Reproductor de Windows Media Máscaras móviles, acerca de
+- Reproductor de Windows Media Máscaras móviles, crear
 - skins,Reproductor de Windows Media Mobile
-- crear máscaras, Reproductor de Windows Media Mobile
+- crear máscaras,Reproductor de Windows Media Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebdffdc4075456c6cb7ccf9d1940c5253c732cd3
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: fd81e4573da62e51d55e3ef7abe1b0cc88672d46484d0cb48b55e7ef9f868d08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112011228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903305"
 ---
 # <a name="about-skins-mobile"></a>Acerca de las máscaras (móviles)
 
@@ -27,7 +27,7 @@ Los pasos básicos para crear una máscara son:
 2.  **Cree** el arte que desea mostrar al usuario. Constará de varias imágenes que muestran las imágenes de fondo, otras imágenes que puede que quiera mostrar y las imágenes de asignación si usa botones de región.
 3.  **Escriba** el archivo de definición de máscara que vinculará las funciones multimedia digitales, la interfaz de usuario y las imágenes. Debe seguir ciertas reglas para escribir los datos de texto en el archivo, pero puede ver la máscara predeterminada como guía.
 
-No es necesario seguir estos pasos en el orden indicado, pero un buen diseño procederá de ser consciente de todas las posibilidades y ocuparse de todos los detalles.
+No es necesario seguir estos pasos en el orden indicado, pero un buen diseño procederá de ser consciente de todas las posibilidades y de ocuparse de todos los detalles.
 
 En las secciones siguientes se proporciona información detallada sobre las máscaras.
 
@@ -36,7 +36,7 @@ En las secciones siguientes se proporciona información detallada sobre las más
 | Sección                                                                                    | Descripción                                                                                                                                                                                      |
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Acerca de la compatibilidad](about-compatibility.md)                                             | Enumera las distintas versiones de Reproductor de Windows Media Mobile, los requisitos de hardware, la disponibilidad de Reproductor de Windows Media y las características de máscara introducidas para cada versión del software. |
-| [Reproductor de Windows Media mobile](windows-media-player-mobile-functionality.md) | Describe las características que puede admitir la máscara.                                                                                                                                                    |
+| [Reproductor de Windows Media Funcionalidad móvil](windows-media-player-mobile-functionality.md) | Describe las características que puede admitir la máscara.                                                                                                                                                    |
 | [Interfaz de usuario elements](user-interface-elements.md)                                     | Describe los elementos de la interfaz de usuario que puede crear para la máscara, como botones, barras de seguimiento y pantallas de vídeo.                                                                              |
 | [Archivos de arte](art-files-mobile.md)                                                          | Describe los archivos de arte que se crean para la máscara.                                                                                                                                                |
 | [Archivo de definición de máscara](skin-definition-file-mobile.md)                                    | Describe el archivo que debe crear para describir la máscara.                                                                                                                                        |
@@ -49,7 +49,7 @@ En las secciones siguientes se proporciona información detallada sobre las más
 
 <dl> <dt>
 
-[**Reproductor de Windows Media máscaras móviles**](windows-media-player-mobile-skins.md)
+[**Reproductor de Windows Media Máscaras móviles**](windows-media-player-mobile-skins.md)
 </dt> </dl>
 
  

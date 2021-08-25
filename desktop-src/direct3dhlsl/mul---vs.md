@@ -1,6 +1,6 @@
 ---
-title: mul-vs
-description: Multiplica los orígenes en el destino. | mul-vs
+title: mul - vs
+description: Multiplica los orígenes en el destino. | mul - vs
 ms.assetid: 0b048cc2-b165-418f-893e-6dee28ca5ad3
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,39 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e33ac35831b19f771f4f5b64d94bcc47c6657db5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d14603f077ddc61287d8d22580b161b59ddf8c6b67dad62141ecf4afb44d1f04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023765"
 ---
-# <a name="mul---vs"></a>mul-vs
+# <a name="mul---vs"></a>mul - vs
 
 Multiplica los orígenes en el destino.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| mul DST, src0, SRC1 |
+| mul dst, src0, src1 |
 |---------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | mul                    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ Multiplica los orígenes en el destino.
 
  
 
-En el siguiente fragmento de código se muestran las operaciones realizadas.
+El fragmento de código siguiente muestra las operaciones realizadas.
 
 
 ```

@@ -1,27 +1,27 @@
 ---
-description: Informes de actividades de controles parentales
+description: Controles parentales Informe de actividades
 ms.assetid: 5ffac4f8-7112-4383-bf73-16e2289a3942
-title: Informes de actividades de controles parentales
+title: Controles parentales Informe de actividades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a41527e166b683e2ae7cd72129d9c9f3e032c7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a5d45a180114c2c53dbccc48836697b1a4fdab733db4f06237696d3dd50f42c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939365"
 ---
-# <a name="parental-controls-activity-reporting"></a>Informes de actividades de controles parentales
+# <a name="parental-controls-activity-reporting"></a>Controles parentales Informe de actividades
 
-Los informes de actividades se consideran aspectos esenciales de ingeniería social. Se solicitan los filtros o las aplicaciones para registrar las actividades como se especifica en la sección uso de las API de controles parentales.
+Los informes de actividad se consideran esenciales dados los problemas de ingeniería social. Se solicita a las aplicaciones o filtros conscientes que registren actividades como se especifica en la sección Uso de las API de controles parentales.
 
-Al hacer clic en el vínculo informe de actividad, se muestra una página de visor de registros con todas las entradas de registro de un intervalo de una semana máximo (delimitado por límites de tamaño de registro) con los paneles de datos de árbol de categorías y formato de columna.
+Al hacer clic en el vínculo Informes de actividad, se abre una página visor de registros que muestra todas las entradas de registro durante un intervalo máximo de una semana (delimitado aún más por límites de tamaño de registro), con paneles de datos de formato de columna y árbol de categorías.
 
-El cuadro resumen de la esquina superior derecha del panel Controles parentales indica el estado actual de los informes de actividad.
+El cuadro de resumen de la esquina superior derecha del Panel de controles parentales indica el estado actual de los informes de actividad.
 
-Los eventos de actividad también están visibles en el Visor de eventos con el nombre Microsoft.com/Windows/ParentalControls en los registros de la aplicación.
+Los eventos de actividad también son visibles en Visor de eventos con el nombre Microsoft.com/Windows/ParentalControls en los registros de aplicación.
 
-Esta funcionalidad depende de la nueva funcionalidad de registro de eventos en Windows Vista, mediante las API de publicación proporcionadas.
+Esta funcionalidad depende de la nueva funcionalidad registro de eventos de Windows Vista, mediante las API de publicación proporcionadas.
 
  
 

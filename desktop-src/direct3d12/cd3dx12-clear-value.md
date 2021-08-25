@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_CLEAR_VALUE estructura (D3dx12. h)
-description: Una estructura auxiliar para habilitar la inicialización sencilla de una \_ estructura de valores sin cifrar D3D12 \_ .
+title: CD3DX12_CLEAR_VALUE estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura CLEAR VALUE de D3D12. \_ \_
 ms.assetid: C3E2FAF4-79C4-49CA-B7D3-1FED69C8F7A7
 keywords:
-- Estructura de CD3DX12_CLEAR_VALUE
+- CD3DX12_CLEAR_VALUE estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b9dc7afc62c6e9a3e229e6f5bdc4287bf4b85a9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 785ab3c8312949bfc692fcd7c8d1dace28734ce08e5763387a744eb28f2000f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105649389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988495"
 ---
-# <a name="cd3dx12_clear_value-structure"></a>CD3DX12 \_ estructura de valor sin borrar \_
+# <a name="cd3dx12_clear_value-structure"></a>Estructura CLEAR VALUE de CD3DX12 \_ \_
 
-Una estructura auxiliar para habilitar la inicialización sencilla de una estructura de [**\_ \_ valores sin cifrar D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value) .
+Estructura auxiliar para permitir la inicialización sencilla de una [**estructura \_ CLEAR VALUE \_ de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,48 +45,48 @@ struct CD3DX12_CLEAR_VALUE  : public D3D12_CLEAR_VALUE{
 
 <dl> <dt>
 
-**CD3DX12 \_ Borrar \_ valor ()**
+**CD3DX12 \_ CLEAR \_ VALUE()**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de un \_ valor Clear de CD3DX12 \_ .
+Crea una nueva instancia sin inicializar de un valor CLEAR DE CD3DX12. \_ \_
 
 </dd> <dt>
 
-**valor Clear de CD3DX12 explícito \_ \_ (const D3D12 \_ Clear \_ Value &o)**
+**explicit CD3DX12 \_ CLEAR \_ VALUE(const D3D12 \_ CLEAR VALUE &\_ o)**
 </dt> <dd>
 
-Crea una nueva instancia de un valor de CD3DX12 \_ Clear \_ , inicializado con el contenido de otra estructura [**D3D12 \_ Clear \_ Value**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value) .
+Crea una nueva instancia de un valor CLEAR VALUE de CD3DX12, inicializado con el contenido de otra estructura \_ \_ CLEAR VALUE [**\_ \_ de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value)
 
 </dd> <dt>
 
-**CD3DX12 \_ Clear \_ Value ( \_ formato de formato de DXGI, const float color \[ 4 \] )**
+**CD3DX12 \_ CLEAR \_ VALUE(formato DXGI \_ FORMAT, const FLOAT color \[ \] 4)**
 </dt> <dd>
 
-Crea una nueva instancia de un valor de CD3DX12 \_ Clear \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de UN VALOR CLEAR DE CD3DX12, \_ \_ inicializando los parámetros siguientes:
 
-[**DXGI \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) Formato de formato
+[**DXGI \_ Formato FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 Color FLOAT \[ 4 \]
 
 </dd> <dt>
 
-**CD3DX12 \_ Clear \_ Value ( \_ formato de formato de DXGI, profundidad de Float, Galería de símbolos UINT8)**
+**CD3DX12 \_ CLEAR \_ VALUE(formato DXGI \_ FORMAT, profundidad FLOAT, galería de símbolos UINT8)**
 </dt> <dd>
 
-Crea una nueva instancia de un valor de CD3DX12 \_ Clear \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de UN VALOR CLEAR DE CD3DX12, \_ \_ inicializando los parámetros siguientes:
 
-[**DXGI \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) Formato de formato
+[**DXGI \_ Formato FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
-Profundidad de FLOAT
+Profundidad FLOAT
 
 Galería de símbolos UINT8
 
 </dd> <dt>
 
-**Operator const D3D12 \_ Clear \_ Value& () Const**
+**operator const D3D12 \_ CLEAR \_ VALUE&() const**
 </dt> <dd>
 
-Define el & operador de paso por referencia para el tipo de estructura primaria.
+Define el & de paso por referencia para el tipo de estructura primaria.
 
 </dd> </dl>
 
@@ -96,7 +96,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -104,7 +104,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 <dl> <dt>
 
-[**D3D12 \_ Borrar \_ valor**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value)
+[**D3D12 \_ CLEAR \_ VALUE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

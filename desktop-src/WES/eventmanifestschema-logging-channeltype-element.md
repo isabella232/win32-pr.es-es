@@ -1,9 +1,9 @@
 ---
-title: Elemento Logging (ChannelType)
-description: Define las propiedades del archivo de registro que respalda el canal, como su capacidad y si son secuenciales o circulares. | Elemento Logging (ChannelType)
+title: Elemento logging (ChannelType)
+description: Define las propiedades del archivo de registro que hace una copia de seguridad del canal, como su capacidad y si es secuencial o circular. | Elemento logging (ChannelType)
 ms.assetid: c16b4622-ed49-489e-8751-c374c6f12bd3
 keywords:
-- EventLog del elemento de registro
+- Elemento de registro EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 92219c5bfb921dc0d90774b17a572ba4ace3505b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: cc3c77c119090d34a8ed8314dd162c0a466bf53ec8ecca58cf155478f4c8782f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005974"
 ---
-# <a name="logging-channeltype-element"></a>Elemento Logging (ChannelType)
+# <a name="logging-channeltype-element"></a>Elemento logging (ChannelType)
 
-Define las propiedades del archivo de registro que respalda el canal, como su capacidad y si son secuenciales o circulares.
+Define las propiedades del archivo de registro que hace una copia de seguridad del canal, como su capacidad y si es secuencial o circular.
 
 ``` syntax
 <xs:element name="logging"
@@ -30,7 +30,7 @@ Define las propiedades del archivo de registro que respalda el canal, como su ca
  />
 ```
 
-El elemento de **registro** se define mediante el tipo complejo de [**ChannelType**](eventmanifestschema-channeltype-complextype.md) .
+El **elemento de** registro se define mediante el tipo complejo [**ChannelType.**](eventmanifestschema-channeltype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento de **registro** se define mediante el tipo complejo de [**ChannelTyp
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento de **registro** se define mediante el tipo complejo de [**ChannelTyp
 **Elemento primario**
 </dt> <dt>
 
-[**canal (ChannelListType)**](eventmanifestschema-channel-channellisttype-element.md)
+[**channel (ChannelListType)**](eventmanifestschema-channel-channellisttype-element.md)
 </dt> </dl>
 
  

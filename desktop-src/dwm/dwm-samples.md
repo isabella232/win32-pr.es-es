@@ -1,18 +1,18 @@
 ---
 title: Ejemplos de DWM
-description: Administrador de ventanas de escritorio (DWM) es un conjunto de interfaces incorporadas en Windows Vista con algunas características nuevas introducidas en Windows 7.
+description: Administrador de ventanas de escritorio (DWM) es un conjunto de interfaces introducidas en Windows Vista con algunas características nuevas introducidas en Windows 7.
 ms.assetid: 43fe71e7-4e5c-46fb-876b-e26996071662
 keywords:
-- Administrador de ventanas de escritorio (DWM), ejemplos
-- DWM (Administrador de ventanas de escritorio), ejemplos
+- Administrador de ventanas de escritorio (DWM),samples
+- DWM (Administrador de ventanas de escritorio),samples
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a04bf6b56aef18f09096599745bdd805ed09a68b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e8d6b13ce917c21e033f118ac8b62b8fbe03fe9f63065a220f3cccb45d3371a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022145"
 ---
 # <a name="dwm-samples"></a>Ejemplos de DWM
 
@@ -22,7 +22,7 @@ ms.locfileid: "103903531"
 
 | Tema                                                                                                   | Descripción                                                                                                   |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [Personalización de una miniatura icónica y un mapa de bits de vista previa dinámica](dwm-sample-customizethumbnail.md)<br/> | Muestra cómo personalizar una miniatura de iconos y un mapa de bits de vista previa dinámica (también denominado vista previa de inspección).<br/> |
+| [Personalización de una miniatura icónica y un mapa de bits de vista previa dinámica](dwm-sample-customizethumbnail.md)<br/> | Muestra cómo personalizar una miniatura izánica y un mapa de bits de vista previa en directo (también denominado vista previa de Peek).<br/> |
 
 
 

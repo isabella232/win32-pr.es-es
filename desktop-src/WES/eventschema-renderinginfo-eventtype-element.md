@@ -1,6 +1,6 @@
 ---
 title: Elemento RenderingInfo (EventType)
-description: Contiene las cadenas de mensaje representadas para el evento (incluye la cadena de mensaje del evento y las cadenas de mensaje para cualquiera de las propiedades del evento como el nivel, la tarea y el código de operación).
+description: Contiene las cadenas de mensaje representados para el evento (incluye la cadena de mensaje del evento y las cadenas de mensaje para cualquiera de las propiedades del evento, como level, task y opcode).
 ms.assetid: a0b2a21d-16a0-4c88-9d57-4c99706eeea1
 keywords:
 - Elemento RenderingInfo EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 771901196c4988025cce203ffc3134450d38ed7f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7434ff25600daf72d678d0d67e3b5d581474835de10498ba005986f28c057048
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904385"
 ---
 # <a name="renderinginfo-eventtype-element"></a>Elemento RenderingInfo (EventType)
 
-Contiene las cadenas de mensaje representadas para el evento (incluye la cadena de mensaje del evento y las cadenas de mensaje para cualquiera de las propiedades del evento como el nivel, la tarea y el código de operación).
+Contiene las cadenas de mensaje representados para el evento (incluye la cadena de mensaje del evento y las cadenas de mensaje para cualquiera de las propiedades del evento, como level, task y opcode).
 
 ``` syntax
 <xs:element name="RenderingInfo"
@@ -30,7 +30,7 @@ Contiene las cadenas de mensaje representadas para el evento (incluye la cadena 
  />
 ```
 
-El elemento **RenderingInfo** se define mediante el tipo complejo de [**EventType**](eventschema-eventtype-complextype.md) .
+El **elemento RenderingInfo** se define mediante el [**tipo complejo EventType.**](eventschema-eventtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **RenderingInfo** se define mediante el tipo complejo de [**EventTyp
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

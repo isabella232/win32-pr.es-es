@@ -35,7 +35,7 @@ BITS-Packet-Type: Ping
 <span id="BITS_POST"></span><span id="bits_post"></span>BITS \_ POST
 </dt> <dd>
 
-Verbo específico de BITS que identifica este paquete al servidor BITS.
+Verbo específico de BITS que identifica este paquete en el servidor BITS.
 
 Reemplace remote-URL por el URI absoluto o relativo. Normalmente, reemplace remote-URL por el nombre de archivo remoto del trabajo.
 
@@ -44,15 +44,15 @@ Reemplace remote-URL por el URI absoluto o relativo. Normalmente, reemplace remo
 <span id="BITS-Packet-Type"></span><span id="bits-packet-type"></span><span id="BITS-PACKET-TYPE"></span>BITS-Packet-Type
 </dt> <dd>
 
-Identifica este paquete de solicitud como un paquete Ping.
+Identifica este paquete de solicitud como un paquete ping.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-El **paquete Ping** es opcional. En lugar de enviar un **paquete Ping,** puede usar [**el paquete Create-Session**](create-session.md) para establecer una conexión y negociar la seguridad. Sin embargo, es más eficaz usar el paquete **Ping** para este propósito.
+El **paquete Ping** es opcional. En lugar de enviar un **paquete Ping,** puede usar el [**paquete Create-Session**](create-session.md) para establecer una conexión y negociar la seguridad. Sin embargo, es más eficaz usar el paquete **Ping** para este propósito.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

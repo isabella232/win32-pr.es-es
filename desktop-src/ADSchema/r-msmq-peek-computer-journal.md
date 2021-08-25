@@ -1,10 +1,10 @@
 ---
-title: MSMQ-PEEK-Computer-Journal Extended Right
-description: Permite inspeccionar los mensajes en la cola del diario del equipo.
+title: msmq-Peek-computer-Journal extendido a la derecha
+description: Permite inspeccionar los mensajes de la cola de diario del equipo.
 ms.assetid: 76b5eeb2-01a9-45c1-aa8c-4092a7bf8d05
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-PEEK-Computer-Journal extensión de AD derecha extendida
+- msmq-Peek-computer-Journal extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b24787d48a3bf6d3ee8cbebdd369a2f2d530e8e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 013b2752d3da12282527e90d9a211ab36651f05930d8470e1aaff1dfe3f8b946
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922205"
 ---
-# <a name="msmq-peek-computer-journal-extended-right"></a>MSMQ-PEEK-Computer-Journal Extended Right
+# <a name="msmq-peek-computer-journal-extended-right"></a>msmq-Peek-computer-Journal extendido a la derecha
 
-Permite inspeccionar los mensajes en la cola del diario del equipo.
+Permite inspeccionar los mensajes de la cola de diario del equipo.
 
 
 
 | Entrada | Value |
 |--------------|--------------------------------------|
-| CN           | MSMQ-PEEK-Computer-Journal           |
-| Display-Name | Inspeccionar el diario del equipo                |
+| CN           | msmq-Peek-computer-Journal           |
+| Display-Name | Ver el diario del equipo                |
 | Rights-GUID  | 4b6e08c3-df3c-11d1-9c86-006008764d0e |
 
 
@@ -49,8 +49,8 @@ Permite inspeccionar los mensajes en la cola del diario del equipo.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 41                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 41                                                           |
 
 
 
@@ -60,8 +60,8 @@ Permite inspeccionar los mensajes en la cola del diario del equipo.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 41                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 41                                                           |
 
 
 
@@ -71,8 +71,8 @@ Permite inspeccionar los mensajes en la cola del diario del equipo.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 41                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 41                                                           |
 
 
 
@@ -82,8 +82,8 @@ Permite inspeccionar los mensajes en la cola del diario del equipo.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 41                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 41                                                           |
 
 
 
@@ -93,8 +93,8 @@ Permite inspeccionar los mensajes en la cola del diario del equipo.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 41                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 41                                                           |
 
 
 
@@ -104,8 +104,8 @@ Permite inspeccionar los mensajes en la cola del diario del equipo.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 41                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 41                                                           |
 
 
 

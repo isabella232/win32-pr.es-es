@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentCatalogCorruptedException'
-title: Constructor de EsentCatalogCorruptedException
+description: 'Más información sobre: Constructor EsentCatalogCorruptedException'
+title: Constructor EsentCatalogCorruptedException
 TOCTitle: 'EsentCatalogCorruptedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCatalogCorruptedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcatalogcorruptedexception.esentcatalogcorruptedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b4668ca76b012168eaf1461ff6c03fda10e0d24f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd015b94cc1f3a9e4df47bbf27243d8bc9eb3512a701f386645b34667b050ef8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021185"
 ---
-# <a name="esentcatalogcorruptedexception-constructor"></a>Constructor de EsentCatalogCorruptedException
+# <a name="esentcatalogcorruptedexception-constructor"></a>Constructor EsentCatalogCorruptedException
 
 Inicializa una nueva instancia de la clase EsentCatalogCorruptedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentCatalogCorruptedException()
 public EsentCatalogCorruptedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentCatalogCorruptedException()
 
 [Miembros de EsentCatalogCorruptedException](./esentcatalogcorruptedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

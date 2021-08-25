@@ -6,33 +6,33 @@ keywords:
 - OpenGL, variables de estado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71d0dd43b0876630e9f913224afb63e3886a0e8a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1b83ec5581d649ac5c7bca63bddd22954641d83af624d72bad3095af04f3c981
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034625"
 ---
 # <a name="state-variables"></a>Variables de estado
 
-En esta sección se enumeran las variables que se pueden consultar, sus valores predeterminados y los comandos para obtener los valores de estas variables. Las variables de estado se muestran en las siguientes categorías:
+En esta sección se enumeran las variables que se pueden consultar, sus valores predeterminados y los comandos para obtener los valores de estas variables. Las variables de estado se enumeran en las siguientes categorías:
 
 -   [**Transformación**](transformation-state-variables.md)
--   [**Colores**](coloring-state-variables.md)
+-   [**Colorante**](coloring-state-variables.md)
 -   [**Iluminación**](lighting-state-variables.md)
 -   [**Rasterización**](rasterization-state-variables.md)
--   [**Texturización**](texturing-state-variables.md)
--   [**Control fotogramas**](framebuffer-control-state-variables.md)
+-   [**Texturizado**](texturing-state-variables.md)
+-   [**Control Framebuffer**](framebuffer-control-state-variables.md)
 -   [**Píxel**](pixel-state-variables.md)
 -   [**Evaluador**](evaluator-state-variables.md)
--   [**Diversas**](hint-state-variables.md)
+-   [**Pista**](hint-state-variables.md)
 -   [**Dependiente de la implementación**](implementation-dependent-state-variables.md)
--   [**Profundidad de píxeles dependiente de la implementación**](implementation-dependent-pixel-depth-state-variables.md)
+-   [**Profundidad de píxel dependiente de la implementación**](implementation-dependent-pixel-depth-state-variables.md)
 -   [**Varios**](miscellaneous-state-variables.md)
 
- 
+ 
 
- 
+ 
 
 
 

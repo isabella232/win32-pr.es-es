@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_TILED_RESOURCE_COORDINATE estructura (D3dx12. h)
-description: Estructura auxiliar para habilitar la inicialización sencilla de una estructura de coordenadas de recursos en mosaico de D3D12 \_ \_ \_ .
+title: CD3DX12_TILED_RESOURCE_COORDINATE estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura D3D12 \_ TILED \_ RESOURCE \_ COORDINATE.
 ms.assetid: B337ED04-E2C6-4B89-80F1-92C0854A6AF2
 keywords:
-- Estructura de CD3DX12_TILED_RESOURCE_COORDINATE
+- CD3DX12_TILED_RESOURCE_COORDINATE estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 281afeab8d1172e9cae749512612129dd001161b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 784955545fe8e71227ffae6c5eec54acfd65b4a0ab0867f5c7de99a148976861
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987855"
 ---
-# <a name="cd3dx12_tiled_resource_coordinate-structure"></a>CD3DX12 \_ estructura de \_ coordenadas de recursos en mosaico \_
+# <a name="cd3dx12_tiled_resource_coordinate-structure"></a>Estructura DE COORDENADA DE RECURSOS EN MOSAICO CD3DX12 \_ \_ \_
 
-Estructura auxiliar para habilitar la inicialización sencilla de una estructura de [**coordenadas de recursos en mosaico de D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tiled_resource_coordinate) .
+Estructura auxiliar para permitir la inicialización sencilla de una [**estructura D3D12 \_ TILED RESOURCE \_ \_ COORDINATE.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tiled_resource_coordinate)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,24 +44,24 @@ struct CD3DX12_TILED_RESOURCE_COORDINATE  : public D3D12_TILED_RESOURCE_COORDINA
 
 <dl> <dt>
 
-**CD3DX12 \_ \_ coordenada de recursos en mosaico \_ ()**
+**COORDENADA DE RECURSOS \_ EN MOSAICO \_ CD3DX12() \_**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de una \_ coordenada de recursos en mosaico de CD3DX12 \_ \_ .
+Crea una nueva instancia de CD3DX12 TILED RESOURCE COORDINATE sin \_ \_ \_ inicializar.
 
 </dd> <dt>
 
-**coordenada de recursos en mosaico de CD3DX12 explícita \_ \_ \_ (const D3D12 \_ \_ coordenada de recursos en mosaico \_ &o)**
+**EXPLICIT CD3DX12 \_ TILED \_ RESOURCE \_ COORDINATE(const D3D12 \_ TILED RESOURCE COORDINATE &\_ \_ o)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ \_ coordenada de recursos \_ en mosaico CD3DX12, inicializada con el contenido de otra estructura de [**coordenadas de \_ recursos en mosaico \_ \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tiled_resource_coordinate) .
+Crea una nueva instancia de CD3DX12 TILED RESOURCE COORDINATE, inicializada con el contenido de otra estructura \_ \_ \_ [**D3D12 \_ TILED \_ RESOURCE \_ COORDINATE.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tiled_resource_coordinate)
 
 </dd> <dt>
 
-**CD3DX12 \_ \_ coordenada de recursos en mosaico \_ (UINT x, UINT y, UINT z, uint subresource)**
+**CD3DX12 \_ TILED \_ RESOURCE \_ COORDINATE(UINT x, UINT y, UINT z, UINT subresource)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ coordenada de recursos en mosaico CD3DX12 \_ \_ , inicializando los parámetros siguientes:
+Crea una nueva instancia de CD3DX12 \_ TILED \_ RESOURCE \_ COORDINATE, inicializando los parámetros siguientes:
 
 UINT x
 
@@ -69,14 +69,14 @@ UINT y
 
 UINT z
 
-Subrecurso UINT
+Subrecurso de UINT
 
 </dd> <dt>
 
-**operador const D3D12 \_ \_ coordenada de recursos en mosaico \_& () Const**
+**operator const D3D12 \_ TILED \_ RESOURCE COORDINATE \_&() const**
 </dt> <dd>
 
-Define el & operador de paso por referencia para el tipo de estructura primaria.
+Define el & de paso por referencia para el tipo de estructura primaria.
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 <dl> <dt>
 
-[**D3D12 \_ \_ coordenada de recursos en mosaico \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tiled_resource_coordinate)
+[**COORDENADA DE RECURSOS EN MOSAICO DE D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tiled_resource_coordinate)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

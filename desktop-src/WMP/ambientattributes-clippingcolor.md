@@ -1,9 +1,9 @@
 ---
 title: AmbientAttributes.clippingColor
-description: El atributo clippingColor especifica o recupera el color que se va a recortar del mapa de bits clippingImage.
+description: El atributo clippingColor especifica o recupera el color que se recortará del mapa de bits clippingImage.
 ms.assetid: d6ea43d3-c118-43d3-bfdc-29ddd6ea4978
 keywords:
-- AmbientAttributes. clippingColor Windows Media Player
+- AmbientAttributes.clippingColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ad526eb0f705d1fce95f3813a666420b29db9de
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 299ee63b93abfdea337bb25e8b399e6011fb42d7fa4e1e0c09b3feb259d4f1d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902815"
 ---
 # <a name="ambientattributesclippingcolor"></a>AmbientAttributes.clippingColor
 
-El atributo **clippingColor** especifica o recupera el color que se va a recortar del mapa de bits **clippingImage** .
+El **atributo clippingColor** especifica o recupera el color que se recortará del mapa de **bits clippingImage.**
 
 ``` syntax
         elementID.clippingColor
@@ -29,24 +29,24 @@ El atributo **clippingColor** especifica o recupera el color que se va a recorta
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura.
+Este atributo es una cadena de lectura y **escritura.**
 
 
 
 | Value                                       | Descripción                                       |
 |---------------------------------------------|---------------------------------------------------|
-| Automático                                        | Predeterminada. Se utiliza el color en la ubicación de píxel 0, 0. |
-| cualquier valor de color de Microsoft Internet Explorer | Se utiliza el color especificado de Internet Explorer.    |
+| Auto                                        | Predeterminada. Se usa el color en la ubicación de píxeles 0,0. |
+| cualquier valor de color Internet Explorer microsoft | Se usa el Internet Explorer especificado.    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El color de recorte indica las regiones del **clippingImage** (o la **BackgroundImage** para la **vista** o la **subvista**) que corresponden a partes transparentes y no en las que se pueda hacer clic en el control. El color de recorte puede indicar varias regiones que se van a recortar. Se emite una advertencia si el **clippingImage** es un jpg para advertir de la pérdida de color en jpgs.
+El color de recorte indica las regiones de **clippingImage** (o **backgroundImage** para **VIEW** o **SUBVIEW)** que corresponden a partes transparentes y no en las que se puede hacer clic del control. El color de recorte puede indicar varias regiones que se recortarán. Se emite una advertencia si **clippingImage** es un JPG para advertir de la pérdida de color en los JPG.
 
-El elemento de **lista de reproducción** no admite el atributo **clippingColor** .
+El elemento PLAYLIST no admite  el atributo **clippingColor.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ El elemento de **lista de reproducción** no admite el atributo **clippingColor*
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -62,7 +62,7 @@ El elemento de **lista de reproducción** no admite el atributo **clippingColor*
 
 <dl> <dt>
 
-[**Atributos de ambiente**](ambient-attributes.md)
+[**Atributos ambientales**](ambient-attributes.md)
 </dt> <dt>
 
 [**AmbientAttributes.clippingImage**](ambientattributes-clippingimage.md)

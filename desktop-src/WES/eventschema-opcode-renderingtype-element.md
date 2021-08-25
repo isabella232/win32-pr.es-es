@@ -1,9 +1,9 @@
 ---
-title: OpCode (RenderingInfoType) (elemento)
-description: Cadena de mensaje representada del código de operación especificado en el evento.
+title: Elemento Opcode (RenderingInfoType)
+description: Cadena de mensaje representado del código de operación especificado en el evento.
 ms.assetid: 5fdc94ca-edc0-4eae-8dab-d58d9172b8fc
 keywords:
-- Elemento OpCode EventLog
+- Elemento Opcode EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9ab6ed5bea91b5d05e21239d876f9efc86bbe51a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8ab181b57b91f3fbc9587833c3bd7d2e1c12b3f8c723961eae2a523573925ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904575"
 ---
-# <a name="opcode-renderinginfotype-element"></a>OpCode (RenderingInfoType) (elemento)
+# <a name="opcode-renderinginfotype-element"></a>Elemento Opcode (RenderingInfoType)
 
-Cadena de mensaje representada del código de operación especificado en el evento.
+Cadena de mensaje representado del código de operación especificado en el evento.
 
 ``` syntax
 <xs:element name="Opcode"
@@ -30,7 +30,7 @@ Cadena de mensaje representada del código de operación especificado en el even
  />
 ```
 
-El elemento **OpCode** se define mediante el tipo complejo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+El tipo complejo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) define el elemento **Opcode.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **OpCode** se define mediante el tipo complejo [**RenderingInfoType*
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

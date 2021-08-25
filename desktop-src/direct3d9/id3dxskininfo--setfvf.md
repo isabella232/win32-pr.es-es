@@ -1,7 +1,7 @@
 ---
 description: Establece el tipo de formato de vértice flexible (FVF).
 ms.assetid: e581dcd4-7e17-4c36-aac9-c2942924cf51
-title: 'ID3DXSkinInfo:: SetFVF (método) (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::SetFVF (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 010385597442ba1546c20122f6551fca0cfcf81c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fe57d1d2c879d1242cd9358e1f74c346e68586c8ea84c1be14b1e2994b899908
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985215"
 ---
-# <a name="id3dxskininfosetfvf-method"></a>ID3DXSkinInfo:: SetFVF (método)
+# <a name="id3dxskininfosetfvf-method"></a>Método ID3DXSkinInfo::SetFVF
 
 Establece el tipo de formato de vértice flexible (FVF).
 
@@ -40,12 +40,12 @@ HRESULT SetFVF(
 
 <dl> <dt>
 
-*FVF* \[ de\]
+*FVF* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Formato de vértice flexible. Vea [D3DFVF](d3dfvf.md).
+Formato de vértice flexible. Vea [D3DFVF.](d3dfvf.md)
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Formato de vértice flexible. Vea [D3DFVF](d3dfvf.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

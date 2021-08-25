@@ -1,11 +1,11 @@
 ---
-title: IBasicDevice ManufacturerName, método
+title: Método IBasicDevice ManufacturerName
 description: Recupera el nombre del fabricante del dispositivo.
 ms.assetid: F04400C9-02FC-4CB5-B355-A7E84BECD098
 keywords:
-- Método ManufacturerName API de streaming de multimedia
-- Método ManufacturerName API de streaming de multimedia, interfaz IBasicDevice
-- Interfaz IBasicDevice API de streaming de multimedia, método ManufacturerName
+- Método ManufacturerName de Media Streaming API
+- Método ManufacturerName de Media Streaming API, interfaz IBasicDevice
+- IBasicDevice interface Media Streaming API , método ManufacturerName
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 698b4b6c202ed157737b20296976a282c7f97ba3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 453e11fc547998b6dc3e39017684c30cacd205c0c17b21846925d4de472f43a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105695510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011835"
 ---
-# <a name="ibasicdevicemanufacturername-method"></a>IBasicDevice:: ManufacturerName (método)
+# <a name="ibasicdevicemanufacturername-method"></a>IBasicDevice::ManufacturerName (método)
 
 Recupera el nombre del fabricante del dispositivo.
 
@@ -41,7 +41,7 @@ HRESULT ManufacturerName(
 
 <dl> <dt>
 
-*valor* \[ de enuncia\]
+*value* \[ out\]
 </dt> <dd>
 
 Recibe un puntero al nombre del fabricante del dispositivo.
@@ -50,13 +50,13 @@ Recibe un puntero al nombre del fabricante del dispositivo.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 

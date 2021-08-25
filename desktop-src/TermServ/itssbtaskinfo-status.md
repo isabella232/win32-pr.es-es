@@ -1,12 +1,12 @@
 ---
-title: Propiedad de estado ITsSbTaskInfo
-description: Recupera un \_ \_ valor de enumeración de estado de la tarea RDV que representa el estado de la tarea.
+title: Propiedad ITsSbTaskInfo Status
+description: Recupera un valor de enumeración RDV \_ TASK STATUS que representa el estado de la \_ tarea.
 ms.assetid: 779af127-133c-47ff-8fca-bfd2c96c9768
 ms.tgt_platform: multiple
 keywords:
-- Propiedad status Servicios de Escritorio remoto
-- Propiedad status Servicios de Escritorio remoto, interfaz ITsSbTaskInfo
-- Servicios de Escritorio remoto de la interfaz ITsSbTaskInfo, propiedad status
+- Estado de la propiedad Servicios de Escritorio remoto
+- Propiedad status Servicios de Escritorio remoto interfaz , ITsSbTaskInfo
+- Interfaz ITsSbTaskInfo Servicios de Escritorio remoto , propiedad Status
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3206013c32ee6cf3323f19c9e95e89c8d6756eb9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d497bd46d1adfca88cce3a4b5c58cf72619ef1c38a03823ff26a14f2e6dfebd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009245"
 ---
-# <a name="itssbtaskinfostatus-property"></a>ITsSbTaskInfo:: status (propiedad)
+# <a name="itssbtaskinfostatus-property"></a>Propiedad ITsSbTaskInfo::Status
 
-Recupera un valor de enumeración de [**\_ \_ Estado de la tarea RDV**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status) que representa el estado de la tarea.
+Recupera un valor [**de enumeración RDV \_ TASK \_ STATUS**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status) que representa el estado de la tarea.
 
 Esta propiedad es de solo lectura.
 
@@ -44,7 +44,7 @@ HRESULT get_Status(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un valor de enumeración de [**\_ \_ Estado de la tarea RDV**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status) que representa el estado de la tarea.
+Valor [**de enumeración \_ RDV TASK \_ STATUS**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status) que representa el estado de la tarea.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Un valor de enumeración de [**\_ \_ Estado de la tarea RDV**](/windows/desktop/
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                       |
-| IDL<br/>                      | <dl> <dt>Sbtsv. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
 
 
 

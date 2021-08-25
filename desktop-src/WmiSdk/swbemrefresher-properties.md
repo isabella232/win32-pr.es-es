@@ -5,20 +5,20 @@ ms.tgt_platform: multiple
 title: Propiedades de SWbemRefresher
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d45e5a05742b80f5c8562d07ebe10bc6d528d2
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 2179e0ff2eb2a6572d4d7da33645fee2d2241fcbed6350e1a2cb2c88d52712dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104003356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897475"
 ---
 # <a name="swbemrefresher-properties"></a>Propiedades de SWbemRefresher
 
-El objeto [**SWbemRefresher**](swbemrefresher.md) expone las siguientes propiedades.
+El [**objeto SWbemRefresher**](swbemrefresher.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Propiedad reconexión automática**](swbemrefresher-autoreconnect.md)
+-   [**Propiedad AutoReconnect**](swbemrefresher-autoreconnect.md)
 -   [**propiedad Count**](swbemrefresher-count.md)
 
  
