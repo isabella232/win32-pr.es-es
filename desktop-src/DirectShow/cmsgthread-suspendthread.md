@@ -25,7 +25,7 @@ ms.locfileid: "119915745"
 ---
 # <a name="cmsgthreadsuspendthread-method"></a>Método CMsgThread.SuspendThread
 
-Usa la función **SuspendThread** de Microsoft Win32 para suspender la operación de un subproceso en ejecución.
+Usa la función **SuspendThread** de Microsoft Win32 para suspender el funcionamiento de un subproceso en ejecución.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ El subproceso de cliente llama a esta función miembro para suspender la operaci
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

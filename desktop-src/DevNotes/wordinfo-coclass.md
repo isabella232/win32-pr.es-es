@@ -25,7 +25,7 @@ Divide el texto japonés en palabras o formularios de diccionario.
 
 Nlg. Japanese Word Info.1
 
-## <a name="inproc-server"></a>Servidor inproc
+## <a name="inproc-server"></a>Servidor Inproc
 
 Msir3jp.dll
 
@@ -39,7 +39,7 @@ Ambos
 
 ## <a name="remarks"></a>Comentarios
 
-La forma de diccionario de la palabra es la forma raíz o base de la palabra sin ningún final con convolucional.
+La forma de diccionario de la palabra es la forma raíz o base de la palabra con cualquier final inflectional quitado.
 
  
 

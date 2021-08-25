@@ -1,7 +1,7 @@
 ---
-description: La función DeletePrinterData elimina los datos de configuración especificados para una impresora. Los datos de configuración de las impresoras se componen de un conjunto de valores con nombre y con tipo. La función DeletePrinterData elimina uno de estos valores, especificado por su nombre de valor.
+description: La función DeletePrinterData elimina los datos de configuración especificados para una impresora. Los datos de configuración de impresoras constan de un conjunto de valores con nombre y con tipo. La función DeletePrinterData elimina uno de estos valores, especificado por su nombre de valor.
 ms.assetid: 03c0bd75-d6de-46e3-b8e9-5a55df5135ea
-title: Función DeletePrinterData (winspool. h)
+title: Función DeletePrinterData (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_location:
 - Winspool.drv
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: a88df8484d367ae2cc50f4a465b5db1dcd53c355
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09600b2c84192378f654758a495ee22240211759fa0e961587ff70c7a10ac939
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092135"
 ---
-# <a name="deleteprinterdata-function"></a>DeletePrinterData función)
+# <a name="deleteprinterdata-function"></a>Función DeletePrinterData
 
-La función **DeletePrinterData** elimina los datos de configuración especificados para una impresora. Los datos de configuración de una impresora se componen de un conjunto de valores con nombre y con tipo. La función **DeletePrinterData** elimina uno de estos valores, especificado por su nombre de valor.
+La **función DeletePrinterData** elimina los datos de configuración especificados para una impresora. Los datos de configuración de una impresora constan de un conjunto de valores con nombre y con tipo. La **función DeletePrinterData** elimina uno de estos valores, especificado por su nombre de valor.
 
-Llamar a **DeletePrinterData** es equivalente a llamar a la función [**DeletePrinterDataEx**](deleteprinterdataex.md) con el parámetro *pKeyName* establecido en "PrinterDriverData".
+Llamar **a DeletePrinterData** equivale a llamar a la función [**DeletePrinterDataEx**](deleteprinterdataex.md) con el *parámetro pKeyName* establecido en "PrinterDriverData".
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ DWORD DeletePrinterData(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador de la impresora cuyos datos de configuración se van a eliminar. Use la función [**OpenPrinter**](openprinter.md) o [**AddPrinter (**](addprinter.md) para recuperar un identificador de impresora.
+Identificador de la impresora cuyos datos de configuración se eliminarán. Use la [**función OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) para recuperar un identificador de impresora.
 
 </dd> <dt>
 
-*pValueName* \[ de\]
+*pValueName* \[ En\]
 </dt> <dd>
 
 Puntero al nombre terminado en NULL del valor de datos de configuración que se va a eliminar.
@@ -62,14 +62,14 @@ Puntero al nombre terminado en NULL del valor de datos de configuración que se 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es ERROR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
 Si se produce un error en la función, el valor devuelto es un código de error del sistema.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
@@ -81,9 +81,9 @@ Si se produce un error en la función, el valor devuelto es un código de error 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **DeletePrinterDataW** (Unicode) y **DeletePrinterDataA** (ANSI)<br/>                             |
 
 

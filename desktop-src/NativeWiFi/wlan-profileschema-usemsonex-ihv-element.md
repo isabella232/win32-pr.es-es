@@ -1,7 +1,7 @@
 ---
-description: Especifica el origen de la configuración de seguridad 802.1X utilizada por un componente de seguridad de IHV.
+description: Especifica el origen de la configuración de seguridad 802.1X que usa un componente de seguridad de IHV.
 ms.assetid: 9c216319-d962-4c68-89a3-116eff3f4376
-title: elemento useMSOneX (IHV)
+title: Elemento useMSOneX (IHV)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,13 +19,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119912645"
 ---
-# <a name="usemsonex-ihv-element"></a>elemento useMSOneX (IHV)
+# <a name="usemsonex-ihv-element"></a>Elemento useMSOneX (IHV)
 
-El **elemento useMSOneX** (IHV) especifica el origen de la configuración de seguridad 802.1X utilizada por un componente de seguridad de IHV.
+El **elemento useMSOneX** (IHV) especifica el origen de la configuración de seguridad 802.1X que usa un componente de seguridad de IHV.
 
 Cuando **useMSOneX es** true, los componentes de seguridad de IHV usan la configuración 802.1X definida por Microsoft. Cuando **useMSOneX es** false, los componentes de seguridad de IHV usan la configuración 802.1X proporcionada por el proveedor.
 
-**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** No se admite este elemento.
+Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="useMSOneX"
@@ -34,20 +34,20 @@ Cuando **useMSOneX es** true, los componentes de seguridad de IHV usan la config
  />
 ```
 
-El elemento se define mediante el [**elemento IHV.**](wlan-profileschema-ihv-wlanprofile-element.md)
+El elemento [**IHV**](wlan-profileschema-ihv-wlanprofile-element.md) define el elemento .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

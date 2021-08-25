@@ -1,5 +1,5 @@
 ---
-description: La clase CIM SoftwareFeatureServiceImplementation representa una asociación entre un servicio y cómo \_ se implementa en el software.
+description: La clase CIM SoftwareFeatureServiceImplementation representa una asociación entre un servicio y cómo \_ se implementa en software.
 ms.assetid: fa80cc91-8dd7-4726-a24a-5c4dfa3e786b
 ms.tgt_platform: multiple
 title: CIM_SoftwareFeatureServiceImplementation clase
@@ -25,10 +25,10 @@ ms.locfileid: "119919205"
 ---
 # <a name="cim_softwarefeatureserviceimplementation-class"></a>Cim \_ SoftwareFeatureServiceImplementation (clase)
 
-La **\_ clase CIM SoftwareFeatureServiceImplementation** representa una asociación entre un servicio y cómo se implementa en el software. Un servicio se puede proporcionar mediante más de una característica de software, que funciona conjuntamente entre sí. Además, una característica de software puede proporcionar más de un servicio. Cuando varias características de software están asociadas a un único servicio, se supone que los elementos funcionan juntos para proporcionar el servicio. Si existen implementaciones diferentes de un servicio, cada implementación produciría instancias individuales del objeto de servicio. Las instancias individuales tendrían entonces asociaciones con las implementaciones únicas.
+La **clase \_ CIM SoftwareFeatureServiceImplementation** representa una asociación entre un servicio y cómo se implementa en el software. Un servicio se puede proporcionar mediante más de una característica de software, que funciona junto con otra. Además, una característica de software puede proporcionar más de un servicio. Cuando hay varias características de software asociadas a un único servicio, se supone que los elementos funcionan juntos para proporcionar el servicio. Si existen implementaciones diferentes de un servicio, cada implementación daría lugar a instancias individuales del objeto de servicio. Las instancias individuales tendrían asociaciones con las implementaciones únicas.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ class CIM_SoftwareFeatureServiceImplementation : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La **\_ clase CIM SoftwareFeatureServiceImplementation** tiene estos tipos de miembros:
+La **clase \_ CIM SoftwareFeatureServiceImplementation** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -69,7 +69,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Cim [**\_ SoftwareFeature que**](cim-softwarefeature.md) describe la característica de software anterior.
+Una [**característica \_ cim softwarefeature**](cim-softwarefeature.md) que describe la característica de software anterior.
 
 </dd> <dt>
 
@@ -91,17 +91,17 @@ Un [**servicio CIM \_**](cim-service.md) que describe el servicio dependiente.
 
 ## <a name="remarks"></a>Comentarios
 
-La **clase \_ CIM SoftwareFeatureServiceImplementation** se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
+La **clase \_ CIM SoftwareFeatureServiceImplementation** se deriva de la [**dependencia \_ CIM**](cim-dependency.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -111,7 +111,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

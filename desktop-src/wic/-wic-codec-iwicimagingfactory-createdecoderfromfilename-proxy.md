@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método CreateDecoderFromFilename.
 ms.assetid: 12c60899-0fe0-47d0-9026-48c74df328ef
-title: IWICImagingFactory_CreateDecoderFromFilename_Proxy función)
+title: IWICImagingFactory_CreateDecoderFromFilename_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 3497d71475198d035a496909e65c47df6c5f8b8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dabc24d17fdac881537d45e47a8cc6808a1cf805ac14025d7fdfcfa50eea8500
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056635"
 ---
-# <a name="iwicimagingfactory_createdecoderfromfilename_proxy-function"></a>IWICImagingFactory \_ CreateDecoderFromFilename \_ función proxy
+# <a name="iwicimagingfactory_createdecoderfromfilename_proxy-function"></a>Función IWICImagingFactory \_ CreateDecoderFromFilename \_ Proxy
 
-Función de proxy para el método [**CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) .
+Función de proxy para [**el método CreateDecoderFromFilename.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,57 +45,57 @@ HRESULT IWICImagingFactory_CreateDecoderFromFilename_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ de\]
+*pFactory* \[ En\]
 </dt> <dd>
 
-Tipo: **IWICImagingFactory \** _
+Tipo: **IWICImagingFactory \***
 
 </dd> <dt>
 
-_wzFilename * \[ en\]
+*wzFilename* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Puntero a una cadena terminada en null que especifica el nombre de un objeto que se va a crear o abrir.
+Puntero a una cadena terminada en NULL que especifica el nombre de un objeto que se debe crear o abrir.
 
 </dd> <dt>
 
-*pguidVendor* \[ de\]
+*pguidVendor* \[ En\]
 </dt> <dd>
 
-Tipo: **const GUID \** _
+Tipo: **\* GUID const**
 
 GUID del proveedor para el descodificador.
 
 </dd> <dt>
 
-_dwDesiredAccess * \[ en\]
+*dwDesiredAccess* \[ En\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-El acceso al objeto, que puede ser de lectura, escritura o ambos.
+Acceso al objeto , que se puede leer, escribir o ambos.
 
-Para obtener más información, consulte [File Security and Access \[ Rights \] files](../fileio/file-security-and-access-rights.md).
+Para obtener más información, vea [Archivos de derechos de acceso y seguridad de \[ archivos. \] ](../fileio/file-security-and-access-rights.md)
 
 </dd> <dt>
 
-*metadataOptions* \[ de\]
+*metadataOptions* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **WICDecodeOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicdecodeoptions)**
 
-[**WICDecodeOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicdecodeoptions) que se va a usar al crear el descodificador.
+[**WICDecodeOptions que**](/windows/desktop/api/Wincodec/ne-wincodec-wicdecodeoptions) se usará al crear el descodificador.
 
 </dd> <dt>
 
-*ppIDecoder* \[ enuncia\]
+*ppIDecoder* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)\*\***
 
-Puntero que recibe un puntero al nuevo [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder).
+Puntero que recibe un puntero al nuevo [**IWICBitmapDecoder.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)
 
 </dd> </dl>
 
@@ -103,7 +103,7 @@ Puntero que recibe un puntero al nuevo [**IWICBitmapDecoder**](/windows/desktop/
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -113,9 +113,9 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

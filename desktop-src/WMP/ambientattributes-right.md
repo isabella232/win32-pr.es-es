@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. Right
+title: AmbientAttributes.right
 description: El atributo derecho especifica o recupera la coordenada derecha del control.
 ms.assetid: 32f6c9ff-9b2f-4e24-abbb-548a0601d3d7
 keywords:
-- AmbientAttributes. Right Windows Media Player
+- AmbientAttributes.right Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17a1df57e95072329eb3420189297e83821f1501
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2575286ebc912f3bde6489d43b411dd48b2faef640784bd64c52ab47c3950042
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902831"
 ---
-# <a name="ambientattributesright"></a>AmbientAttributes. Right
+# <a name="ambientattributesright"></a>AmbientAttributes.right
 
-El atributo **derecho** especifica o recupera la coordenada derecha del control.
+El **atributo** derecho especifica o recupera la coordenada derecha del control.
 
 ``` syntax
         elementID.right
@@ -29,7 +29,7 @@ El atributo **derecho** especifica o recupera la coordenada derecha del control.
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura/escritura (**Long**) que representa la distancia en píxeles desde el control hasta el borde derecho de la **vista** o la **subvista** primaria. El comportamiento de los valores negativos, o cuando no se especifica [AmbientAttributes. width](ambientattributes-width.md) , no está definido.
+Este atributo es un númerode lectura y **escritura** (long) que representa la distancia en píxeles desde el control hasta el borde derecho del elemento **primario VIEW** o **SUBVIEW.** El comportamiento de los valores [negativos, o cuando no se especifica AmbientAttributes.width,](ambientattributes-width.md) es indefinido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Este atributo es un **número** de lectura/escritura (**Long**) que representa l
 
 <dl> <dt>
 
-[**Atributos de ambiente**](ambient-attributes.md)
+[**Atributos ambientales**](ambient-attributes.md)
 </dt> <dt>
 
 [**AmbientAttributes.id**](ambientattributes-id.md)

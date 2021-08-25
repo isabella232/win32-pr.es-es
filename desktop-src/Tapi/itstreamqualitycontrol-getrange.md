@@ -1,21 +1,21 @@
 ---
 description: El método GetRange obtiene el intervalo de valores válidos para una propiedad de calidad de flujo determinada.
 ms.assetid: 8c5e4652-1a40-4d7d-aa89-606e979dc03d
-title: 'ITStreamQualityControl:: GetRange (método) (Ipmsp. h)'
+title: Método ITStreamQualityControl::GetRange (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bea8b20c2617eb0fe54ccc4603997464fca25f48
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e13d07b848ef3be744f40ec1ba4bb4a73514f88204fa1918db661e00d36019ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774475"
 ---
-# <a name="itstreamqualitycontrolgetrange-method"></a>ITStreamQualityControl:: GetRange (método)
+# <a name="itstreamqualitycontrolgetrange-method"></a>ItStreamQualityControl::GetRange (método)
 
-\[ Este método no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Este método no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **GetRange** obtiene el intervalo de valores válidos para una [**propiedad de calidad de flujo**](streamqualityproperty.md)determinada.
+El **método GetRange** obtiene el intervalo de valores válidos para una propiedad de [**calidad de flujo determinada.**](streamqualityproperty.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,45 +37,45 @@ HRESULT GetRange(
 
 <dl> <dt>
 
-*Propiedad* \[ de\]
+*Propiedad* \[ En\]
 </dt> <dd>
 
-Miembro de la enumeración [**StreamQualityProperty**](streamqualityproperty.md) .
+Miembro de la [**enumeración StreamQualityProperty.**](streamqualityproperty.md)
 
 </dd> <dt>
 
-*plMin* \[ enuncia\]
+*plMin* \[ out\]
 </dt> <dd>
 
 Valor mínimo válido para la propiedad de entrada.
 
 </dd> <dt>
 
-*plMax* \[ enuncia\]
+*plMax* \[ out\]
 </dt> <dd>
 
 Valor máximo válido para la propiedad de entrada.
 
 </dd> <dt>
 
-*plSteppingDelta* \[ enuncia\]
+*plSteppingDelta* \[ out\]
 </dt> <dd>
 
-Incremento por el que se puede aumentar o disminuir el valor de la propiedad.
+Incremento en el que se puede aumentar o disminuir el valor de la propiedad.
 
 </dd> <dt>
 
-*plDefault* \[ enuncia\]
+*plDefault* \[ out\]
 </dt> <dd>
 
-Valor predeterminado del parámetro *Property* .
+Valor predeterminado para el *parámetro Property.*
 
 </dd> <dt>
 
-*plFlags* \[ enuncia\]
+*plFlags* \[ out\]
 </dt> <dd>
 
-Valor de la enumeración [**TAPIControlFlags**](tapicontrolflags.md) que indica cómo se controla el valor de la *propiedad* .
+Valor de la [**enumeración TAPIControlFlags**](tapicontrolflags.md) que indica cómo se controla el *valor* property.
 
 </dd> </dl>
 
@@ -87,8 +87,8 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 
 
 
@@ -98,11 +98,11 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,1<br/>                                                         |
-| Encabezado<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                         |
+| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

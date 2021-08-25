@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVStreamingFileFullException'
-title: Constructor de EsentSLVStreamingFileFullException
+description: 'Más información sobre: Constructor EsentSLVStreamingFileFullException'
+title: Constructor EsentSLVStreamingFileFullException
 TOCTitle: 'EsentSLVStreamingFileFullException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVStreamingFileFullException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvstreamingfilefullexception.esentslvstreamingfilefullexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ecf32eebc51d2438deb1b1990836a7e723a2b103
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf139e200ca12fee3fc1ec2b610ec37f71e404a8b3a3ee31c31be2173a366c05
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119946195"
 ---
-# <a name="esentslvstreamingfilefullexception-constructor"></a>Constructor de EsentSLVStreamingFileFullException
+# <a name="esentslvstreamingfilefullexception-constructor"></a>Constructor EsentSLVStreamingFileFullException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVStreamingFileFullException()
 public EsentSLVStreamingFileFullException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -58,4 +58,4 @@ public EsentSLVStreamingFileFullException()
 
 [Miembros de EsentSLVStreamingFileFullException](./esentslvstreamingfilefullexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

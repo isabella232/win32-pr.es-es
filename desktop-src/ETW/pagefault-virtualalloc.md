@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de asignación virtual. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de asignación virtuales. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 037d33e0-da94-4834-bc02-814c1cae1d8d
-title: PageFault_VirtualAlloc (clase)
+title: PageFault_VirtualAlloc clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f9e754bc3dc09f492682d5a522a6489cfde27ceb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa3dd8eb53e9c1a79cf38edde0d9c4dba93ea85b0994bfb316b97064f211f26e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927575"
 ---
-# <a name="pagefault_virtualalloc-class"></a>Errores \_ VirtualAlloc (clase)
+# <a name="pagefault_virtualalloc-class"></a>PageFault \_ VirtualAlloc (clase)
 
-Esta clase es la clase de tipo de evento para los eventos de asignación virtual.
+Esta clase es la clase de tipo de evento para los eventos de asignación virtuales.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,65 +44,65 @@ class PageFault_VirtualAlloc : PageFault_V2
 
 ## <a name="members"></a>Miembros
 
-La clase **errores \_ VirtualAlloc** tiene estos tipos de miembros:
+La **clase PageFault \_ VirtualAlloc** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **errores \_ VirtualAlloc** tiene estas propiedades.
+La **clase PageFault \_ VirtualAlloc** tiene estas propiedades.
 
 <dl> <dt>
 
 **BaseAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Dirección inicial en la que se ha asignado o liberado la memoria.
+Dirección inicial en la que se asignó o se libera la memoria.
 
 </dd> <dt>
 
 **Marcas**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), formato ("x")
+Calificadores: WmiDataId(4), Format("x")
 </dt> </dl>
 
-El tipo de asignación de memoria que se ha realizado. Para ver los valores posibles, vea el parámetro *flAllocationType* de la función [**VirtualAllocEx**](/windows/win32/api/memoryapi/nf-memoryapi-virtualallocex) .
+Tipo de asignación de memoria que se realizó. Para ver los valores posibles, *consulte el parámetro flAllocationType* de la [**función VirtualAllocEx.**](/windows/win32/api/memoryapi/nf-memoryapi-virtualallocex)
 
 </dd> <dt>
 
 **ProcessId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
-Proceso que poseía la memoria (puede ser diferente del subproceso que realizó la asignación).
+El proceso que posee la memoria (puede ser diferente del subproceso que realizó la asignación).
 
 </dd> <dt>
 
-**Regiones**
+**RegionSize**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **objeto**
@@ -111,7 +111,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), extensión ("Sizet")
+Calificadores: WmiDataId(2), Extension("SizeT")
 </dt> </dl>
 
 Tamaño, en bytes, de la memoria asignada o liberada.
@@ -122,10 +122,10 @@ Tamaño, en bytes, de la memoria asignada o liberada.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -133,7 +133,7 @@ Tamaño, en bytes, de la memoria asignada o liberada.
 
 <dl> <dt>
 
-[**Errores \_ V2**](pagefault-v2.md)
+[**PageFault \_ V2**](pagefault-v2.md)
 </dt> </dl>
 
  

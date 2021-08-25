@@ -1,7 +1,7 @@
 ---
 description: Contiene varias configuraciones de seguridad utilizadas por proveedores de hardware independientes.
 ms.assetid: 237c5d98-3f3c-4279-b2ad-b0d05df041f9
-title: elemento security (IHV)
+title: security (IHV) (Elemento)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,13 +19,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119912755"
 ---
-# <a name="security-ihv-element"></a>elemento security (IHV)
+# <a name="security-ihv-element"></a>security (IHV) (Elemento)
 
 El elemento de seguridad (IHV) contiene varias configuraciones de seguridad utilizadas por proveedores de hardware independientes.
 
 La configuración de seguridad de Microsoft y la configuración de seguridad de IHV son mutuamente excluyentes. Si ambos conjuntos de configuración de seguridad están presentes en el mismo perfil, el perfil no es válido.
 
-**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** No se admite este elemento.
+Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="security">
@@ -46,14 +46,14 @@ El **elemento** de seguridad se define mediante el [**elemento IHV.**](wlan-prof
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

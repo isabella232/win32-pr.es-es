@@ -1,6 +1,6 @@
 ---
 title: LVM_GETNEXTITEM mensaje (Commctrl.h)
-description: Busca un elemento de vista de lista que tenga las propiedades especificadas y lleve la relación especificada a un elemento especificado. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView GetNextItem.
+description: Busca un elemento de vista de lista que tenga las propiedades especificadas y que tenga la relación especificada con un elemento especificado. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView GetNextItem.
 ms.assetid: 2d458f12-b9d3-4b9e-bcb4-927c14c16537
 keywords:
 - LVM_GETNEXTITEM controles de Windows mensaje
@@ -23,7 +23,7 @@ ms.locfileid: "120002565"
 ---
 # <a name="lvm_getnextitem-message"></a>Mensaje \_ GETNEXTITEM de LVM
 
-Busca un elemento de vista de lista que tenga las propiedades especificadas y lleve la relación especificada a un elemento especificado. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView GetNextItem.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getnextitem)
+Busca un elemento de vista de lista que tenga las propiedades especificadas y que tenga la relación especificada con un elemento especificado. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView GetNextItem.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getnextitem)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -43,7 +43,7 @@ Especifica la relación con el elemento especificado en *wParam*. Puede ser uno 
 
 
 
-| Valor                                                                                                                                                                                                                                                             | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Value                                                                                                                                                                                                                                                             | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt></dt><dt>Busca por índice.</dt> </dl>                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | <span id="_______________LVNI_ALL"></span><span id="_______________lvni_all"></span><dl> <dt> **LVNI \_ ALL**</dt><dt></dt> </dl>                               | Busca un elemento posterior por índice, el valor predeterminado.<br/>                                                                                                                                                                                                                                                                                                                                                                                |
@@ -84,7 +84,7 @@ Tenga en cuenta que las marcas siguientes, para su uso solo con Windows Vista, s
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

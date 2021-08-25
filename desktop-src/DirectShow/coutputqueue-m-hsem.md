@@ -1,7 +1,7 @@
 ---
-description: Identificador de un semáforo, utilizado por el subproceso para esperar ejemplos.
+description: Controle un semáforo, utilizado por el subproceso para esperar muestras.
 ms.assetid: c64a7221-6eea-459b-b306-e6d547a233b2
-title: 'Miembro COutputQueue:: m_hSem (Outputq. h)'
+title: COutputQueue::m_hSem miembro (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 262c9997a681b8f9ba332efe1b9fb225c112b591
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bab58e572172a0758673c6a452916eb49a23bac0eeb9d6a07e71883ddf3fed45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087205"
 ---
-# <a name="coutputqueuem_hsem-member"></a>Miembro hSem COutputQueue:: m \_
+# <a name="coutputqueuem_hsem-member"></a>Miembro de COutputQueue::m \_ hSem
 
-Identificador de un semáforo, utilizado por el subproceso para esperar ejemplos.
+Controle un semáforo, utilizado por el subproceso para esperar muestras.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ HANDLE m_hSem;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ HANDLE m_hSem;
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

@@ -97,7 +97,7 @@ Si el *parámetro pmt* no es **NULL,** el pin omite los tipos de medios que no c
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

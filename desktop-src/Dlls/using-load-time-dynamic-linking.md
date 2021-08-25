@@ -1,21 +1,21 @@
 ---
-description: Después de crear un archivo DLL, puede utilizar las funciones que define en una aplicación. A continuación se muestra una sencilla aplicación de consola que usa la función allocas exportada desde Myputs.dll (consulte Creación de una biblioteca de Dynamic-Link sencilla).
+description: Después de crear un archivo DLL, puede usar las funciones que define en una aplicación. A continuación se muestra una sencilla aplicación de consola que usa la función myPuts exportada desde Myputs.dll (consulte Creación de una biblioteca de Dynamic-Link simple).
 ms.assetid: d67000c2-21ca-49c2-86f1-708f33003d1e
-title: Usar Load-Time vinculación dinámica
+title: Uso Load-Time dynamic linking
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e31e5d14ba2190528c44d892b957d22b273fd4c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 106d9d73808b56c664e44d8dcd71b74a65431316fd3daf47dd0736596c5aa5d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902375"
 ---
-# <a name="using-load-time-dynamic-linking"></a>Usar Load-Time vinculación dinámica
+# <a name="using-load-time-dynamic-linking"></a>Uso Load-Time dynamic linking
 
-Después de crear un archivo DLL, puede utilizar las funciones que define en una aplicación. A continuación se muestra una sencilla aplicación de consola que usa la función allocas exportada desde Myputs.dll (consulte [creación de una biblioteca de Dynamic-Link sencilla](creating-a-simple-dynamic-link-library.md)).
+Después de crear un archivo DLL, puede usar las funciones que define en una aplicación. A continuación se muestra una sencilla aplicación de consola que usa la función myPuts exportada desde Myputs.dll (consulte Creación de una biblioteca [de Dynamic-Link simple).](creating-a-simple-dynamic-link-library.md)
 
-Dado que en este ejemplo se llama a la función DLL explícitamente, el módulo de la aplicación debe vincularse a la biblioteca de importación. lib. Para obtener más información acerca de la compilación de archivos dll, consulte la documentación que se incluye con las herramientas de desarrollo.
+Dado que en este ejemplo se llama explícitamente a la función DLL, el módulo de la aplicación debe vincularse a la biblioteca de importación Myputs.lib. Para obtener más información sobre la creación de archivos DLL, consulte la documentación incluida con las herramientas de desarrollo.
 
 
 ```C++

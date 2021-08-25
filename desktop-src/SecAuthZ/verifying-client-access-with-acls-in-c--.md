@@ -1,21 +1,21 @@
 ---
 description: Compruebe los derechos de acceso que un descriptor de seguridad permite para un cliente.
 ms.assetid: de21968e-4590-4798-9152-43204d55521f
-title: Comprobar el acceso de cliente con ACL en C++
+title: Comprobación del acceso de cliente con ACL en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cda629338d731d6e93f316fc15a6338c99bc1609
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d2160b48a3b88a617eaaea1e8fae63168db5a85e82cad62be5aef248ff51581
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906695"
 ---
-# <a name="verifying-client-access-with-acls-in-c"></a>Comprobar el acceso de cliente con ACL en C++
+# <a name="verifying-client-access-with-acls-in-c"></a>Comprobación del acceso de cliente con ACL en C++
 
-En el ejemplo siguiente se muestra cómo un servidor puede comprobar los derechos de acceso que un [*descriptor de seguridad*](/windows/desktop/SecGloss/s-gly) permite para un cliente. En el ejemplo se usa la función [**ImpersonateNamedPipeClient**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-impersonatenamedpipeclient) . sin embargo, funcionaría igual con cualquiera de las demás funciones de suplantación. Después de suplantar al cliente, el ejemplo llama a la función [**OpenThreadToken**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-openthreadtoken) para obtener el [*token de suplantación*](/windows/desktop/SecGloss/i-gly). A continuación, llama a la función [**MapGenericMask**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-mapgenericmask) para convertir los derechos de acceso genéricos en los derechos específicos y estándar correspondientes según la asignación especificada en la estructura de [**\_ asignación genérica**](/windows/desktop/api/Winnt/ns-winnt-generic_mapping) .
+En el ejemplo siguiente se muestra cómo un servidor podría comprobar los derechos de acceso que un [*descriptor de seguridad*](/windows/desktop/SecGloss/s-gly) permite para un cliente. En el ejemplo se usa [**la función ImpersonateNamedPipeClient;**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-impersonatenamedpipeclient) sin embargo, funcionaría igual con cualquiera de las otras funciones de suplantación. Después de suplantar al cliente, en el ejemplo se llama a la [**función OpenThreadToken**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-openthreadtoken) para obtener el [*token de suplantación*](/windows/desktop/SecGloss/i-gly). A continuación, llama a la función [**MapGenericMask**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-mapgenericmask) para convertir los derechos de acceso genéricos en los derechos específicos y estándar correspondientes según la asignación especificada en la [**estructura GENERIC \_ MAPPING.**](/windows/desktop/api/Winnt/ns-winnt-generic_mapping)
 
-La función [**AccessCheck**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-accesscheck) comprueba los derechos de acceso solicitados con respecto a los derechos permitidos para el cliente en la DACL del descriptor de seguridad. Para comprobar el acceso y generar una entrada en el registro de eventos de seguridad, utilice la función [**AccessCheckAndAuditAlarm**](/windows/desktop/api/Winbase/nf-winbase-accesscheckandauditalarma) .
+La [**función AccessCheck**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-accesscheck) comprueba los derechos de acceso solicitados con respecto a los derechos permitidos para el cliente en la DACL del descriptor de seguridad. Para comprobar el acceso y generar una entrada en el registro de eventos de seguridad, use la [**función AccessCheckAndAuditAlarm.**](/windows/desktop/api/Winbase/nf-winbase-accesscheckandauditalarma)
 
 
 ```C++

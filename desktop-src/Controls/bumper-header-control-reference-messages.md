@@ -30,7 +30,7 @@ ms.locfileid: "119916805"
 -   [**HDM \_ GETOVERFLOWRECT**](hdm-getoverflowrect.md)
 -   [**HDM \_ GETUNICODEFORMAT**](hdm-getunicodeformat.md)
 -   [**HDM \_ HITTEST**](hdm-hittest.md)
--   [**INSERTITEM de HDM \_**](hdm-insertitem.md)
+-   [**INSERTITEM DE HDM \_**](hdm-insertitem.md)
 -   [**DISEÑO DE \_ HDM**](hdm-layout.md)
 -   [**HDM \_ ORDERTOINDEX**](hdm-ordertoindex.md)
 -   [**HDM \_ SETBITMAPMARGIN**](hdm-setbitmapmargin.md)

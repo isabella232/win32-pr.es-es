@@ -1,9 +1,9 @@
 ---
-title: función gluTessEndContour (GLU. h)
-description: Las funciones gluTessBeginContour y gluTessEndContour delimitan una descripción de perfil. | función gluTessEndContour (GLU. h)
+title: Función gluTessEndContour (Glu.h)
+description: Las funciones gluTessBeginContour y gluTessEndContour delimitan una descripción de contorno. | Función gluTessEndContour (Glu.h)
 ms.assetid: 115db079-cbcb-48e1-8bab-0eb4814afb82
 keywords:
-- gluTessEndContour (función) OpenGL
+- Función GluTessEndContour OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ac53f3920476489a1453bb6b5dc1e01d650d4fe
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6d0685a4af264dd2d4093fbb754c09d2124ecb2689063b61280bf55337ebb305
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777415"
 ---
-# <a name="glutessendcontour-function"></a>gluTessEndContour función)
+# <a name="glutessendcontour-function"></a>Función gluTessEndContour
 
-Las funciones [**gluTessBeginContour**](glutessbegincontour.md) y **gluTessEndContour** delimitan una descripción de perfil.
+Las [**funciones gluTessBeginContour**](glutessbegincontour.md) y **gluTessEndContour** delimitan una descripción de contorno.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,10 +40,10 @@ void WINAPI gluTessEndContour(
 
 <dl> <dt>
 
-*tess* 
+*Tess* 
 </dt> <dd>
 
-Objeto de teselación (creado con [**gluNewTess**](glunewtess.md)).
+Objeto de teselación (creado [**con gluNewTess).**](glunewtess.md)
 
 </dd> </dl>
 
@@ -51,20 +51,20 @@ Objeto de teselación (creado con [**gluNewTess**](glunewtess.md)).
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las funciones [**gluTessBeginContour**](glutessbegincontour.md) y **gluTessEndContour** delimitan la definición de un contorno de polígono. Dentro de cada par de gluTessEndContour de **gluTessBeginContour** /  , puede haber cero o más llamadas a [**gluTessVertex**](glutessvertex.md). Los vértices especifican un perfil cerrado (el último vértice de cada contorno se vincula automáticamente al primero). Solo puede llamar a **gluTessBeginContour** entre [**gluTessBeginPolygon**](glutessbeginpolygon.md) y [**gluTessEndPolygon**](glutessendpolygon.md).
+Las [**funciones gluTessBeginContour**](glutessbegincontour.md) y **gluTessEndContour** delimitan la definición de un contorno de polígono. Dentro de cada par **gluTessBeginContour** / **gluTessEndContour,** puede haber cero o más llamadas a [**gluTessVertex.**](glutessvertex.md) Los vértices especifican un contorno cerrado (el último vértice de cada contorno se vincula automáticamente al primero). Solo puede llamar **a gluTessBeginContour** entre [**gluTessBeginPolygon**](glutessbeginpolygon.md) y [**gluTessEndPolygon.**](glutessendpolygon.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

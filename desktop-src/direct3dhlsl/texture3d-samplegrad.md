@@ -35,7 +35,7 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

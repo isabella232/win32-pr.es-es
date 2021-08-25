@@ -1,15 +1,15 @@
 ---
-description: Invalide el método CBasePropertyPage::OnActivate para inicializar el cuadro de diálogo como parte de la creación de una página de propiedades de filtro para un filtro directShow personalizado.
+description: Invalide el método CBasePropertyPage::OnActivate para inicializar el cuadro de diálogo como parte de la creación de una página de propiedades de filtro para un filtro DirectShow personalizado.
 ms.assetid: 8462958d-3958-453b-8034-3cfc2fb5ae2e
 title: Paso 6. Inicializar el cuadro de diálogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dcbdf18e272ac548227626bc9da4f992786a4ab3
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ce2ac2dbc4e8ed59317db3db46079b087e4afcf0fa8dce315aa2a0cbd45d502a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102315"
 ---
 # <a name="step-6-initialize-the-dialog"></a>Paso 6. Inicializar el cuadro de diálogo
 

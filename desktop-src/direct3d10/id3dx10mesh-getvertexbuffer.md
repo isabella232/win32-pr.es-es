@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8a63b08cf978a65e1fa9999c79b8033436b41fa2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 804ece9ca82fbdd8dc5778b888fecc4ca8fbc04b8fc45976b857b417343f4b32
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069985"
 ---
 # <a name="id3dx10meshgetvertexbuffer-method"></a>Método ID3DX10Mesh::GetVertexBuffer
 
@@ -46,7 +46,7 @@ HRESULT GetVertexBuffer(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Búfer de vértices que se obtiene. Se trata de un valor de índice.
+Búfer de vértice que se obtiene. Se trata de un valor de índice.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Búfer de vértices que se obtiene. Se trata de un valor de índice.
 
 Tipo: **[ **ID3DX10MeshBuffer**](id3dx10meshbuffer.md)\*\***
 
-Búfer de vértices. Consulte [ **ID3DX10MeshBuffer.**](id3dx10meshbuffer.md)
+Búfer de vértice. Consulte [ **ID3DX10MeshBuffer.**](id3dx10meshbuffer.md)
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Di
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

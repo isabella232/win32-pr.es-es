@@ -3,12 +3,12 @@ Description: Valor que representa la configuración de límites de la ventana di
 title: MF_CAPTURE_METADATA_DIGITALWINDOW atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16b64f7bee198cc306c3bb9c647bbd968688dac5
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: f83ec4042300e45b4d672dac10e8b3c3f6a182efd05858f66a3fc5be8ed273a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110560013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013305"
 ---
 # <a name="mf_capture_metadata_digitalwindow-attribute"></a>Atributo MF \_ CAPTURE \_ METADATA \_ DIGITALWINDOW
 
@@ -28,9 +28,9 @@ El **valor BLOB** de esta propiedad es una estructura [DigitalWindowSetting.](/w
 
 |                                     |                                                                                    |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                          |
-| Servidor mínimo compatible<br/> | Windows Server, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                      |
-| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                          |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                      |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

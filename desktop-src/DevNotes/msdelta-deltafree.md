@@ -42,7 +42,7 @@ BOOL  WINAPI  DeltaFree(
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve **TRUE** si se realiza correctamente; de lo contrario, devuelve **FALSE**. Cuando la función devuelve **FALSE,** puede llamar a [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obtener el código de error del sistema Win32 correspondiente.
+Esta función devuelve **TRUE si** se realiza correctamente; de lo contrario, devuelve **FALSE**. Cuando la función devuelve **FALSE,** puede llamar a [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obtener el código de error del sistema Win32 correspondiente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Esta función devuelve **TRUE** si se realiza correctamente; de lo contrario, de
 | Archivo DLL | msdelta.dll |
 | Unicode | No aplicable |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [MSDelta](msdelta.md)
 

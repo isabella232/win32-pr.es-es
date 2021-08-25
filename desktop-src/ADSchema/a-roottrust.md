@@ -1,11 +1,11 @@
 ---
-title: Root-Trust atributo)
+title: Root-Trust atributo
 description: Nombre distintivo de otra referencia cruzada.
 ms.assetid: ae886a08-e6ba-4346-815f-8fbf38a347d7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Root-Trust
-- rootTrust esquema de AD de atributos
+- Root-Trust esquema de AD de atributo
+- RootTrust attribute AD Schema (Esquema de AD del atributo rootTrust)
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 748785f4c00900fb3183b53f8e801ea32b6a1657
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6af40636896ef99d0c70bc312d6039069c80bbec262a51c27387b22c4242a6f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837335"
 ---
-# <a name="root-trust-attribute"></a>Root-Trust atributo)
+# <a name="root-trust-attribute"></a>Root-Trust atributo
 
 Nombre distintivo de otra referencia cruzada.
 
@@ -30,13 +30,13 @@ Nombre distintivo de otra referencia cruzada.
 | Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | Root-Trust                              |
-| Nombre para mostrar de LDAP | rootTrust                               |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| Ldap-Display-Name | rootTrust                               |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.674                  |
-| System-ID-GUID    | 7bfdcb80-4807-11d1-a9c3-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 7bfdcb80-4807-11d1-a9c3-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -44,7 +44,7 @@ Nombre distintivo de otra referencia cruzada.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Nombre distintivo de otra referencia cruzada.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -77,13 +77,13 @@ Nombre distintivo de otra referencia cruzada.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -92,19 +92,19 @@ Nombre distintivo de otra referencia cruzada.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -119,13 +119,13 @@ Nombre distintivo de otra referencia cruzada.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -140,13 +140,13 @@ Nombre distintivo de otra referencia cruzada.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -161,13 +161,13 @@ Nombre distintivo de otra referencia cruzada.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -182,13 +182,13 @@ Nombre distintivo de otra referencia cruzada.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |

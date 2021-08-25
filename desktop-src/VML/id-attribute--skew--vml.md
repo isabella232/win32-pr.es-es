@@ -1,24 +1,24 @@
 ---
-title: ID (atributo) (sesgo) (VML)
-description: ID (atributo) (sesgo) (VML)
+title: Atributo ID (Skew)(VML)
+description: Atributo ID (Skew)(VML)
 ms.assetid: b418bf0b-341c-40e2-8077-e2746ccb3a06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30028ef114f7375f525e3317ea229a07e5628b65
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 49e502dfbf12d64dcc54110799ea456a34c14ef8e41e488ec145c4ba9de77490
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104077967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905465"
 ---
-# <a name="id-attribute-skewvml"></a>ID (atributo) (sesgo) (VML)
+# <a name="id-attribute-skewvml"></a>Atributo ID (Skew)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define un nombre que proporciona un identificador único para un sesgo. Lectura/escritura **Cadena**.
 
@@ -28,20 +28,20 @@ Define un nombre que proporciona un identificador único para un sesgo. Lectura/
 
 **Sintaxis de etiquetas**
 
-<o: ID. de *elemento* = " *expresión* " >
+<o: *element* id=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . ID = "*expresión*"
+*element* .id="*expression*"
 
-*expresión* = de identificador de *elemento*
+*expresión* = *elemento*.id
 
 **Comentarios:**
 
-Use el **identificador** para hacer referencia a un sesgo específico. Una vez que haya creado un sesgo y dado un identificador, puede utilizar el nombre de identificador cuando desee manipular el sesgo.
+Use **id.** para hacer referencia a un sesgo específico. Una vez que haya creado un sesgo y le haya dado un identificador, puede usar el nombre del identificador cuando desee manipular el sesgo.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

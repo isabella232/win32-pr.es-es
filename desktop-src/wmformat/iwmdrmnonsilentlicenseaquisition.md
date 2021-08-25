@@ -1,10 +1,10 @@
 ---
 title: Interfaz IWMDRMNonSilentLicenseAquisition
-description: La interfaz IWMDRMNonSilentLicenseAquisition proporciona métodos que permiten adquirir licencias que requieren la intervención del usuario. Esta interfaz se puede obtener realizando una adquisición de licencias no silenciosa.
+description: La interfaz IWMDRMNonSilentLicenseAquisition proporciona métodos que permiten la adquisición de licencias que requieren la intervención del usuario. Esta interfaz se puede obtener mediante la adquisición de licencias no silenciosas.
 ms.assetid: 57dc3daa-d457-49b0-b589-a72ba180e75e
 keywords:
-- Interfaz IWMDRMNonSilentLicenseAquisition formato de Windows Media
-- Interfaz IWMDRMNonSilentLicenseAquisition formato de Windows Media, descrito
+- IWMDRMNonSilentLicenseAquisition interface windows Media Format
+- IWMDRMNonSilentLicenseAquisition interface windows Media Format , descrito
 topic_type:
 - apiref
 api_name:
@@ -14,35 +14,35 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 89fce7764b755231812c761778131c159ddd860b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c953588cb457e8afb21cca38e9daed08b2387ab9fb7871ecd6b17dae9dca152f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110355"
 ---
 # <a name="iwmdrmnonsilentlicenseaquisition-interface"></a>Interfaz IWMDRMNonSilentLicenseAquisition
 
-La interfaz **IWMDRMNonSilentLicenseAquisition** proporciona métodos que permiten adquirir licencias que requieren la intervención del usuario.
+La **interfaz IWMDRMNonSilentLicenseAquisition** proporciona métodos que permiten la adquisición de licencias que requieren la intervención del usuario.
 
-Esta interfaz se puede obtener realizando una adquisición de licencias no silenciosa. Después de llamar a [**IWMDRMLicenseManagement:: AcquireLicense**](iwmdrmlicensemanagement-acquirelicense.md) , se generará un evento **MEWMDRMLicenseAcquisitionCompleted** . Llame al método **IMFMediaEvent:: GetValue** del evento para obtener un puntero a una interfaz **IUnknown** que se puede consultar para un puntero a una instancia de esta interfaz.
+Esta interfaz se puede obtener mediante la adquisición de licencias no silenciosas. Después de llamar [**a IWMDRMLicenseManagement::AcquireLicense,**](iwmdrmlicensemanagement-acquirelicense.md) se generará un evento **MEWMDRMRMLicenseAcquisitionCompleted.** Llame al **método IMFMediaEvent::GetValue** del evento para obtener un puntero a una **interfaz IUnknown** que se puede consultar para un puntero a una instancia de esta interfaz.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IWMDRMNonSilentLicenseAquisition** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IWMDRMNonSilentLicenseAquisition** también tiene estos tipos de miembros:
+La **interfaz IWMDRMNonSilentLicenseAquisition** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IWMDRMNonSilentLicenseAquisition** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IWMDRMNonSilentLicenseAquisition** tiene estos métodos.
+La **interfaz IWMDRMNonSilentLicenseAquisition** tiene estos métodos.
 
 
 
 | Método                                                                | Descripción                                                                             |
 |:----------------------------------------------------------------------|:----------------------------------------------------------------------------------------|
-| [**GetChallenge**](iwmdrmnonsilentlicenseaquisition-getchallenge.md) | Recupera el desafío de la licencia que debe publicarse en el servidor de licencias.<br/> |
-| [**GetURL**](iwmdrmnonsilentlicenseaquisition-geturl.md)             | Recupera la dirección URL a la que se debe publicar el desafío de licencia.<br/>           |
+| [**GetChallenge**](iwmdrmnonsilentlicenseaquisition-getchallenge.md) | Recupera el desafío de licencia que se debe publicar en el servidor de licencias.<br/> |
+| [**Geturl**](iwmdrmnonsilentlicenseaquisition-geturl.md)             | Recupera la dirección URL en la que se debe publicar el desafío de licencia.<br/>           |
 
 
 
@@ -55,7 +55,7 @@ La interfaz **IWMDRMNonSilentLicenseAquisition** tiene estos métodos.
 [**Interfaces**](drm-interfaces.md)
 </dt> <dt>
 
-[**Adquisición de licencias no silenciosa**](non-silent-license-acquisition.md)
+[**Adquisición de licencias no silenciosas**](non-silent-license-acquisition.md)
 </dt> </dl>
 
  

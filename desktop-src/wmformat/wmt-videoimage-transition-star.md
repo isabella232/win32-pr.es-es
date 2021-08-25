@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fd5a00c7cf68feea13dc0e617e5fe2adb34551032c8ec54bda6e0810fbb092e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7524e51908f7d941aa04b138cc67ba6c4ab6a2a8
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118195175"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479501"
 ---
 # <a name="wmt_videoimage_transition_star"></a>WMT \_ VIDEOIMAGE \_ TRANSITION \_ STAR
 
@@ -27,50 +27,18 @@ La transición de estrella revela la nueva imagen en una estrella de cinco punta
 
 ## <a name="parameters"></a>Parámetros
 
-En la tabla siguiente se describen los parámetros utilizados por esta transición y se enumeran los miembros de la estructura [**\_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) de WMT a la que se asignan.
+En la tabla siguiente se describen los parámetros utilizados por esta transición y se enumeran los miembros de la estructura [**\_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) de WMT a la que están asignados.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parámetro</th>
-<th>Miembro de estructura</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Centrar X</td>
-<td><strong>fEffectPara0</strong></td>
-<td>Coordenada X, en relación con el fotograma de vídeo, del centro de la estrella.</td>
-</tr>
-<tr class="even">
-<td>Centrar Y</td>
-<td><strong>fEffectPara1</strong></td>
-<td>Coordenada Y, en relación con el fotograma de vídeo, del centro de la estrella.</td>
-</tr>
-<tr class="odd">
-<td>Radio</td>
-<td><strong>fEffectPara2</strong></td>
-<td>Radio, en píxeles, del círculo definido por los puntos de la estrella.</td>
-</tr>
-<tr class="even">
-<td>Composición</td>
-<td><strong>fEffectPara3</strong></td>
-<td>Establezca en uno de los siguientes valores:
-<ul>
-<li>0: especifica la composición normal, en la que la imagen anterior es el fondo y la imagen actual es el primer plano.</li>
-<li>1 - Especifica la composición invertida, en la que la imagen actual es la imagen de fondo, y la imagen anterior es el primer plano.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Parámetro | Miembro de estructura | Descripción | 
+|-----------|------------------|-------------|
+| Centrar X | <strong>fEffectPara0</strong> | Coordenada X, en relación con el fotograma de vídeo, del centro de la estrella. | 
+| Centrar Y | <strong>fEffectPara1</strong> | Coordenada Y, en relación con el fotograma de vídeo, del centro de la estrella. | 
+| Radio | <strong>fEffectPara2</strong> | Radio, en píxeles, del círculo definido por los puntos de la estrella. | 
+| Composición | <strong>fEffectPara3</strong> | Establezca en uno de los siguientes valores:<ul><li>0: especifica la composición normal, en la que la imagen anterior es el fondo y la imagen actual es el primer plano.</li><li>1 : especifica la composición invertida, en la que la imagen actual es la imagen de fondo y la imagen anterior es el primer plano.</li></ul> | 
+
 
 
 

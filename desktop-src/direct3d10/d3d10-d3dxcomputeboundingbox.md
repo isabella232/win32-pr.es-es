@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2a12e7e302fb36ffb8856e6402f110e01bb2afb2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 30660e13dc726d9a1f5a1cd396b80298add58cc07d99bccd32709cba001311f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028725"
 ---
 # <a name="d3dxcomputeboundingbox-function-d3dx10mathh"></a>Función D3DXComputeBoundingBox (D3DX10math.h)
 
@@ -106,7 +106,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

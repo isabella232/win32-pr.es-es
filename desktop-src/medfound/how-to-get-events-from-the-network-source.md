@@ -1,42 +1,42 @@
 ---
-description: Cómo obtener eventos desde el origen de red
+description: Cómo obtener eventos del origen de red
 ms.assetid: 46869f52-323c-41ec-95f7-e7e5d177b782
-title: Cómo obtener eventos desde el origen de red
+title: Cómo obtener eventos del origen de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 100241b069ae8976c20c68b6055571d5ff1e5c1f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ec85877a928a2f63648ec0dedded1c383988bf80a4182f83062fd296e68bcb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119958325"
 ---
-# <a name="how-to-get-events-from-the-network-source"></a>Cómo obtener eventos desde el origen de red
+# <a name="how-to-get-events-from-the-network-source"></a>Cómo obtener eventos del origen de red
 
-La resolución de origen permite a una aplicación crear un origen de red y abrir una conexión a una dirección URL específica. El origen de red genera eventos para marcar el principio y el final de la operación asincrónica de abrir una conexión. Una aplicación se puede registrar para estos eventos mediante la interfaz [**IMFSourceOpenMonitor**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) .
+La resolución de origen permite a una aplicación crear un origen de red y abrir una conexión a una dirección URL específica. El origen de red genera eventos para marcar el principio y el final de la operación asincrónica de apertura de una conexión. Una aplicación puede registrarse para estos eventos mediante la [**interfaz IMFSourceOpenMonitor.**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor)
 
-Esta interfaz expone el método [**IMFSourceOpenMonitor:: OnSourceEvent**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceopenmonitor-onsourceevent) al que el origen de red llama directamente cuando abre la dirección URL de forma asincrónica. El origen de red notifica a la aplicación cuando comienza a abrir la dirección URL generando el evento [MEConnectStart](meconnectstart.md) . Después, el origen de red genera el evento [MEConnectEnd](meconnectend.md) cuando finaliza la operación de apertura.
+Esta interfaz expone el método [**IMFSourceOpenMonitor::OnSourceEvent**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceopenmonitor-onsourceevent) al que el origen de red llama directamente cuando abre la dirección URL de forma asincrónica. El origen de red notifica a la aplicación cuando comienza a abrir la dirección URL generando el [evento MEConnectStart.](meconnectstart.md) A continuación, el origen de red [genera el evento MEConnectEnd](meconnectend.md) cuando completa la operación de apertura.
 
 > [!Note]  
-> Para enviar estos eventos a la aplicación, el origen de red no utiliza la interfaz [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) porque estos eventos se generan antes de que se cree el origen de red. La aplicación puede obtener todos los demás eventos de origen de red mediante la interfaz **IMFMediaEventGenerator** de la sesión multimedia.
+> Para enviar estos eventos a la aplicación, el origen de red no usa la interfaz [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) porque estos eventos se generan antes de que se cree el origen de red. La aplicación puede obtener todos los demás eventos de origen de red mediante la interfaz **DEMAMEDIAEventGenerator** de la sesión multimedia.
 
  
 
 ## <a name="to-get-events-from-the-network-source"></a>Para obtener eventos del origen de red
 
-1.  Implemente la interfaz [**IMFSourceOpenMonitor**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) . En la implementación del método [**IMFSourceOpenMonitor:: OnSourceEvent**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceopenmonitor-onsourceevent) , haga lo siguiente:
-    1.  Obtiene el estado del evento llamando a [**IMFMediaEvent:: getStatus**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getstatus). Este método indica si la operación que desencadenó el evento, como una llamada al método de resolución de origen, se realizó correctamente. Si la operación no se realiza correctamente, el estado es un código de error.
-    2.  Procese el evento en función del tipo de evento: [MEConnectStart](meconnectstart.md) o [MEConnectEnd](meconnectend.md), que la aplicación puede obtener llamando a [**IMFMediaEvent:: GetType**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-gettype).
-2.  Configure un par clave-valor en un objeto de almacén de propiedades para almacenar un puntero a la implementación de [**IMFSourceOpenMonitor**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) que se describe en el paso 1.
-    1.  Cree un objeto de almacén de propiedades mediante una llamada a la función **PSCreateMemoryPropertyStore** .
-    2.  Establezca la propiedad [**MFPKEY \_ SourceOpenMonitor**](mfpkey-sourceopenmonitor-property.md) en una estructura **PROPERTYKEY** .
-    3.  Proporcione el \_ valor de datos de tipo desconocido VT en una estructura **PROPVARIANT** estableciendo el puntero **IUnknown** en la implementación de la aplicación de la interfaz [**IMFSourceOpenMonitor**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) .
-    4.  Establezca el par clave-valor en el almacén de propiedades mediante una llamada a **IPropertyStore:: SetValue**.
-3.  Pase el puntero del almacén de propiedades a los métodos de resolución de origen que usa la aplicación para crear el origen de red, como [**IMFSourceResolver:: CreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-createobjectfromurl) y otros.
+1.  Implemente [**la interfaz IMFSourceOpenMonitor.**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) En la implementación del [**método IMFSourceOpenMonitor::OnSourceEvent,**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceopenmonitor-onsourceevent) haga lo siguiente:
+    1.  Para obtener el estado del evento, llame [**a IMFMediaEvent::GetStatus**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getstatus). Este método indica si la operación que desencadenó el evento, como una llamada al método de resolución de origen, se ha hecho correctamente. Si la operación no se realiza correctamente, el estado es un código de error.
+    2.  Procese el evento en función del tipo de evento: [MEConnectStart](meconnectstart.md) o [MEConnectEnd](meconnectend.md), que la aplicación puede obtener llamando a [**IMFMediaEvent::GetType**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-gettype).
+2.  Configure un par clave-valor en un objeto de almacén de propiedades para almacenar un puntero a la implementación [**de IMFSourceOpenMonitor**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) descrita en el paso 1.
+    1.  Cree un objeto de almacén de propiedades mediante una llamada a la **función PSCreateMemoryPropertyStore.**
+    2.  Establezca la [**propiedad MFPKEY \_ SourceOpenMonitor**](mfpkey-sourceopenmonitor-property.md) en una **estructura PROPERTYKEY.**
+    3.  Proporcione el valor de datos de tipo UNKNOWN de VT en una estructura PROPVARIANT estableciendo el puntero IUnknown en la implementación de la aplicación de la \_ [**interfaz IMFSourceOpenMonitor.**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor)  
+    4.  Establezca el par clave-valor en el almacén de propiedades llamando a **IPropertyStore::SetValue**.
+3.  Pase el puntero del almacén de propiedades a los métodos de resolución de origen que usa la aplicación para crear el origen de red, como [**IMFSourceResolver::CreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-createobjectfromurl) y otros.
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra cómo implementar la interfaz [**IMFSourceOpenMonitor**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) para obtener los eventos del origen de red.
+En el ejemplo siguiente se muestra cómo implementar la interfaz [**IMFSourceOpenMonitor**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) para obtener eventos del origen de red.
 
 
 ```C++
@@ -122,7 +122,7 @@ private:
 
 
 
-En el ejemplo siguiente se muestra cómo establecer la propiedad [**\_ SourceOpenMonitor de MFPKEY**](mfpkey-sourceopenmonitor-property.md) en el origen de red al abrir la dirección URL:
+En el ejemplo siguiente se muestra cómo establecer la [**propiedad MFPKEY \_ SourceOpenMonitor**](mfpkey-sourceopenmonitor-property.md) en el origen de red al abrir la dirección URL:
 
 
 ```C++
@@ -173,7 +173,7 @@ HRESULT CreateMediaSourceWithSourceOpenMonitor(
 
 <dl> <dt>
 
-[Funciones de red en Media Foundation](networking-in-media-foundation.md)
+[Redes en Media Foundation](networking-in-media-foundation.md)
 </dt> </dl>
 
  

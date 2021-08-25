@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CB_GETCUEBANNER (Winuser. h)
-description: Obtiene el texto del titular de indicación mostrado en el control de edición de un cuadro combinado. Envíe este mensaje explícitamente o mediante la \_ macro GetCueBannerText de ComboBox.
+title: CB_GETCUEBANNER mensaje (Winuser.h)
+description: Obtiene el texto del banner de la indicación que se muestra en el control de edición de un cuadro combinado. Envíe este mensaje explícitamente o mediante la macro \_ ComboBox GetCueBannerText.
 ms.assetid: 38959228-9f07-4636-a1ea-681efe77b9ec
 keywords:
-- CB_GETCUEBANNER controles de mensajes de Windows
+- CB_GETCUEBANNER controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,40 +14,40 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 866f51df0083c4cd72c3f34bb3ce045e0f577a24
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c81ddcd8123f28317726f412255f440d47f53310aa035ab34d25190658550163
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089275"
 ---
-# <a name="cb_getcuebanner-message"></a>\_Mensaje GETCUEBANNER CB
+# <a name="cb_getcuebanner-message"></a>Mensaje \_ GETCUEBANNER de CB
 
-Obtiene el texto del titular de indicación mostrado en el control de edición de un cuadro combinado. Envíe este mensaje explícitamente o mediante la [**macro \_ GetCueBannerText de ComboBox**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_getcuebannertext) .
+Obtiene el texto del banner de la indicación que se muestra en el control de edición de un cuadro combinado. Envíe este mensaje explícitamente o mediante la [**macro \_ ComboBox GetCueBannerText.**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_getcuebannertext)
 
 ## <a name="parameters"></a>Parámetros
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
-Un puntero a un búfer de cadena Unicode que recibe el texto del titular de indicación. La aplicación que realiza la llamada es responsable de asignar la memoria para el búfer. El tamaño del búfer debe ser igual a la longitud de la cadena de banner de indicación en **WCHARs**, además de 1 para el **WCHAR** **nulo** de terminación.
+Puntero a un búfer de cadena Unicode que recibe el texto del banner de la indicación. La aplicación que realiza la llamada es responsable de asignar la memoria para el búfer. El tamaño del búfer debe ser igual a la longitud de la cadena de banner de indicación en **WCHARs,** más 1 para el WCHAR **NULL** **final.**
 
 </dd> <dt>
 
-*lParam* \[ de\]
+*lParam* \[ En\]
 </dt> <dd>
 
-Tamaño del búfer al que apunta *lpcwText* en **WCHARs**.
+Tamaño del búfer al que apunta *lpcwText* en **WCHARs.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 1 si se realiza correctamente, o un valor de error en caso contrario.
+Devuelve 1 si se realiza correctamente o un valor de error en caso contrario.
 
-Si no hay ningún texto de titular de indicación para obtener, el valor devuelto es 0. Si la aplicación que realiza la llamada no puede asignar un búfer o establece *lParam* antes de enviar este mensaje, podría producirse un comportamiento indefinido y es posible que el valor devuelto no sea confiable.
+Si no hay texto de banner de indicación para obtener, el valor devuelto es 0. Si la aplicación que realiza la llamada no puede asignar un búfer o establece *lParam* antes de enviar este mensaje, puede producirse un comportamiento no definido y es posible que el valor devuelto no sea confiable.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Si no hay ningún texto de titular de indicación para obtener, el valor devuelt
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 

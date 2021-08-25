@@ -1,19 +1,19 @@
 ---
-title: Usar controles TrackBar
-description: En esta sección se proporcionan detalles y ejemplos de implementación de los controles TrackBar.
+title: Usar controles trackbar
+description: En esta sección se proporcionan detalles de implementación y ejemplos para los controles Trackbar.
 ms.assetid: 28078f3e-a3d1-4bb5-96c6-2191ff9f8d38
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 296d667a495dce918bdcfcf0391638eef8a3c6e2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b910c59121d692b45d122f9c38a5efdc74b1e9dd8eb47429327e5de34e9e4796
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059375"
 ---
-# <a name="using-trackbar-controls"></a>Usar controles TrackBar
+# <a name="using-trackbar-controls"></a>Usar controles trackbar
 
-En esta sección se proporcionan detalles y ejemplos de implementación de los controles TrackBar.
+En esta sección se proporcionan detalles de implementación y ejemplos para los controles Trackbar.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,10 +21,10 @@ En esta sección se proporcionan detalles y ejemplos de implementación de los c
 
 | Tema                                                                                                  | Descripción                                                                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Cómo crear un TrackBar](create-a-trackbar.md)<br/>                                           | Cuando se crea la barra de inicio, se inicializan su intervalo y su intervalo de selección. También se establece el tamaño de página en este momento. <br/>                                                                                                                                           |
-| [Cómo procesar mensajes de notificación de TrackBar](process-trackbar-notification-messages.md)<br/> | Trackbars notifique a su ventana primaria de las acciones del usuario mediante el envío de un mensaje primario a [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL**](wm-vscroll.md) . <br/>                                                                                                            |
-| [Cómo limitar el movimiento del control deslizante](limit-slider-movement.md)<br/>                                   | Tal y como se describe en [acerca de los controles TrackBar](trackbar-controls.md), es posible establecer una parte del intervalo de la barra de control como un intervalo de selección. Un propósito de un intervalo de selección puede ser limitar el movimiento del control deslizante, haciendo que algunas partes de los límites del intervalo completo estén desactivadas. <br/> |
-| [Cómo usar las ventanas de amigos](use-buddy-windows.md)<br/>                                           | Al establecer otros controles como ventanas de amigos para una barra de control, puede colocar automáticamente esos controles en los extremos de la barra de control como etiquetas.<br/>                                                                                                                          |
+| [Cómo crear una barra de seguimiento](create-a-trackbar.md)<br/>                                           | Cuando se crea la barra de seguimiento, se inicializan su intervalo y su intervalo de selección. El tamaño de página también se establece en este momento. <br/>                                                                                                                                           |
+| [Cómo procesar mensajes de notificación de la barra de seguimiento](process-trackbar-notification-messages.md)<br/> | Las barras de seguimiento notifican a su ventana primaria las acciones del usuario enviando al elemento primario un mensaje [**\_ WM HSCROLL**](wm-hscroll.md) [**o WM \_ VSCROLL.**](wm-vscroll.md) <br/>                                                                                                            |
+| [Cómo limitar el movimiento del control deslizante](limit-slider-movement.md)<br/>                                   | Como se describe en [Acerca de los controles de](trackbar-controls.md)la barra de seguimiento , es posible desactivar parte del intervalo de la barra de seguimiento como un intervalo de selección. Un propósito de un intervalo de selección podría ser limitar el movimiento del control deslizante, lo que hace que algunas partes del intervalo completo no se limiten. <br/> |
+| [Uso de La Windows](use-buddy-windows.md)<br/>                                           | Al establecer otros controles como ventanas de compañeros para una barra de seguimiento, puede colocar automáticamente esos controles en los extremos de la barra de seguimiento como etiquetas.<br/>                                                                                                                          |
 
 
 

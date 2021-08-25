@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_LOGINFO'
-title: Estructura de JET_LOGINFO
+description: 'Más información sobre: JET_LOGINFO estructura'
+title: JET_LOGINFO estructura
 TOCTitle: JET_LOGINFO Structure
 ms:assetid: b34b3f24-5d19-4e11-a657-a0e59204d628
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294063(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b7e643d775d1fb8e0c19286bfb7a50d887644e99
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 167b097426e27785ad47b8295fb728d1537dbd47
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105698462"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479611"
 ---
-# <a name="jet_loginfo-structure"></a>Estructura de JET_LOGINFO
+# <a name="jet_loginfo-structure"></a>JET_LOGINFO estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_loginfo-structure"></a>Estructura de JET_LOGINFO
+## <a name="jet_loginfo-structure"></a>JET_LOGINFO estructura
 
-La estructura **JET_LOGINFO** devuelve información estructurada sobre el conjunto de archivos de registro de transacciones que debe formar parte de un conjunto de archivos de copia de seguridad. La estructura **JET_LOGINFO** es el conjunto mínimo de información necesaria para representar un intervalo de registros que se recupera con [JetGetLogInfoInstance2](./jetgetloginfoinstance2-function.md) o que se especifica para una recuperación de hardware con [JetExternalRestore2](./jetexternalrestore2-function.md).
+La **JET_LOGINFO** devuelve información estructurada sobre el conjunto de archivos de registro de transacciones que deben formar parte de un conjunto de archivos de copia de seguridad. La **JET_LOGINFO** estructura es el conjunto mínimo de información necesario para representar un intervalo de registros que se recupera con [JetGetLogInfoInstance2](./jetgetloginfoinstance2-function.md) o se especifica para una recuperación dura [con JetExternalRestore2.](./jetexternalrestore2-function.md)
 
 ```cpp
 typedef struct {
@@ -46,54 +46,33 @@ typedef struct {
 
 Tamaño de la estructura, en bytes.
 
-Este miembro permite la expansión futura de esta estructura mientras se habilita la compatibilidad con versiones anteriores. Siempre debe establecerse en sizeof (JET_LOGINFO).
+Este miembro permite la expansión futura de esta estructura a la vez que habilita la compatibilidad con versiones anteriores. Siempre debe establecerse en sizeof( JET_LOGINFO ).
 
 **ulGenLow**
 
-El número de archivo de registro más bajo (o más antiguo) que se restaura. Se debe conservar la fidelidad total de una longitud sin signo, pero en las versiones actuales del motor, este número es un número hexadecimal en el intervalo de 0x00000 a 0xFFFFF. Esto podría cambiar en versiones futuras.
+Número de archivo de registro más bajo (o más antiguo) que se restaura. Se debe conservar la fidelidad total de un long sin signo, pero en las versiones actuales del motor este número es un número hexadecimal en el intervalo de 0x00000 a 0xFFFFF. Esto podría cambiar en versiones futuras.
 
 **ulGenHigh**
 
-El número de archivo de registro más alto (o más reciente) que se restaura. Se debe conservar la fidelidad total de una longitud sin signo, pero en las versiones actuales del motor, este número es un número hexadecimal en el intervalo de 0x00000 a 0xFFFFF. Esto podría cambiar en versiones futuras.
+Número de archivo de registro más alto (o más reciente) que se restaura. Se debe conservar la fidelidad total de un long sin signo, pero en las versiones actuales del motor este número es un número hexadecimal en el intervalo de 0x00000 a 0xFFFFF. Esto podría cambiar en versiones futuras.
 
 **szBaseName**
 
-El prefijo usado para asignar un nombre a los archivos de registro de transacciones.
+Prefijo utilizado para dar nombre a los archivos de registro de transacciones.
 
-El valor que se devuelve en este miembro siempre es igual al valor de [JET_paramBaseName](./transaction-log-parameters.md) para la instancia que generó esta información.
+El valor que se devuelve en este miembro siempre es igual al valor [de JET_paramBaseName](./transaction-log-parameters.md) para la instancia de que generó esta información.
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Los archivos de registro de transacciones se denominan según el nombre base de la instancia y el número de generación del archivo de registro. El nombre tiene el formato BBBXXXXX. Inicia. BBB corresponde al nombre base del archivo de registro y tiene siempre tres caracteres de longitud. XXXXX corresponde al número de generación del archivo de registro en un valor hexadecimal con ceros rellenado y siempre tiene cinco caracteres de longitud. LOG es la extensión de archivo que el motor siempre proporciona a los archivos de registro de transacciones.
+Los archivos de registro de transacciones se denominan según el nombre base de la instancia y el número de generación del archivo de registro. El nombre tiene el formato BBBXXXXX. REGISTRO. BBB corresponde al nombre base del archivo de registro y siempre tiene tres caracteres de longitud. XXXXX corresponde al número de generación del archivo de registro en hexadecimal de cero agregado y siempre tiene cinco caracteres de longitud. LOG es la extensión de archivo que el motor siempre da a los archivos de registro de transacciones.
 
-No se recomienda el uso de esta información estructurada porque hace que la aplicación tenga un conocimiento profundo de este esquema de nomenclatura para los archivos de registro de transacciones. Si el esquema de nombres cambia alguna vez en el futuro, este tipo de aplicación dejará de funcionar correctamente. Es imaginable que el formato del registro cambie para incorporar 8 dígitos hexadecimales en el futuro. En su lugar, las aplicaciones deben utilizar la lista explícita de nombres de archivo devueltos por [JetGetLogInfo](./jetgetloginfo-function.md) .
+No se recomienda usar esta información estructurada porque hace que la aplicación tenga conocimiento profundo de este esquema de nomenclatura para los archivos de registro de transacciones. Si el esquema de nomenclatura cambia en el futuro, dicha aplicación ya no funcionará correctamente. Es posible que el formato del registro cambie para incorporar 8 dígitos hexadecimales en el futuro. Las aplicaciones deben usar la lista explícita de nombres de archivo devueltos [por JetGetLogInfo en su](./jetgetloginfo-function.md) lugar.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JET_LOGINFO_W</strong> (Unicode) y <strong>JET_LOGINFO_A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_LOGINFO_W</strong> (Unicode) <strong>y JET_LOGINFO_A</strong> (ANSI).</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

@@ -1,7 +1,7 @@
 ---
-description: Especifica la marca de secuencia de bits original en una secuencia de audio de Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital. \\ Esta propiedad es de lectura y escritura.
+description: Especifica la marca de secuencia de bits original en una secuencia de audio Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital. \\ Esta propiedad es de lectura y escritura.
 ms.assetid: 247bdd95-c432-462f-a57a-b5ab8a2e3c70
-title: Propiedad AVEncDOriginalBitstream (Codecapi.h)
+title: Propiedad AVEncDDOriginalBitstream (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 2d64669411f4ad8f340ab6a4203dc970938b3196f900aadefc780d510b3961d2
@@ -13,7 +13,7 @@ ms.locfileid: "120000025"
 ---
 # <a name="avencddoriginalbitstream-property"></a>Propiedad AVEncDDOriginalBitstream
 
-Especifica la marca de secuencia de bits original en una secuencia de audio de Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
+Especifica la marca de secuencia de bits original en una secuencia de audio Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 
 \\
 
@@ -31,7 +31,7 @@ Esta propiedad es de lectura y escritura.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
@@ -39,7 +39,7 @@ Esta propiedad es de lectura y escritura.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

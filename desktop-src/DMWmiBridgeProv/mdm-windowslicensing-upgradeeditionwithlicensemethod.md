@@ -5,7 +5,7 @@ ms.assetid: 1a57fb71-eea6-41bf-bc44-6d3a816096a4
 keywords:
 - Método UpgradeEditionWithLicenseMethod
 - Método UpgradeEditionWithLicenseMethod, MDM_WindowsLicensing clase
-- MDM_WindowsLicensing, método UpgradeEditionWithLicenseMethod
+- MDM_WindowsLicensing clase, método UpgradeEditionWithLicenseMethod
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119913265"
 ---
-# <a name="upgradeeditionwithlicensemethod-method-of-the-mdm_windowslicensing-class"></a>Método UpgradeEditionWithLicenseMethod de la clase \_ Mdm WindowsLicensing
+# <a name="upgradeeditionwithlicensemethod-method-of-the-mdm_windowslicensing-class"></a>Método UpgradeEditionWithLicenseMethod de la clase \_ WindowsLicensing de MDM
 
-\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
 Método para proporcionar una licencia para una actualización de edición de Windows 10 dispositivos móviles. Consulte también [UpgradeEditionWithLicense](/windows/client-management/mdm/windowslicensing-csp).
 
@@ -51,7 +51,7 @@ uint32 UpgradeEditionWithLicenseMethod(
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
@@ -61,14 +61,14 @@ uint32 UpgradeEditionWithLicenseMethod(
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**MDM \_ WindowsLicensing**](mdm-windowslicensing.md)
 </dt> <dt>
 
-[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

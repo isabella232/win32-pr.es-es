@@ -3,8 +3,8 @@ title: RTM_IPX_ROUTE estructura (Rtm.h)
 description: La estructura \_ RTM IPX \_ ROUTE contiene información que describe una ruta para la familia de protocolos IPX.
 ms.assetid: ffa0637c-2197-4ebd-a5ef-e174dd0ccb15
 keywords:
-- RTM_IPX_ROUTE estructura RAS
-- PRTM_IPX_ROUTE puntero de estructura RAS
+- RTM_IPX_ROUTE ras de estructura
+- PRTM_IPX_ROUTE puntero ras de estructura
 topic_type:
 - apiref
 api_name:
@@ -22,9 +22,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120101835"
 ---
-# <a name="rtm_ipx_route-structure"></a>RtM \_ IPX \_ ROUTE (estructura)
+# <a name="rtm_ipx_route-structure"></a>Estructura \_ RTM IPX \_ ROUTE
 
-\[Esta API ha sido reemplazada por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
 La **estructura \_ RTM IPX \_ ROUTE** contiene información que describe una ruta para la familia de protocolos IPX.
 
@@ -77,7 +77,7 @@ Especifica una estructura [**DE DATOS ESPECÍFICA DEL \_ \_ PROTOCOLO**](protoco
 
 </dd> <dt>
 
-**RR \_ Network**
+**Red \_ RR**
 </dt> <dd>
 
 Especifica una estructura [**DE RED IPX \_**](ipx-network.md) que contiene una dirección de red IP.
@@ -87,7 +87,7 @@ Especifica una estructura [**DE RED IPX \_**](ipx-network.md) que contiene una d
 **RR \_ NextHopAddress**
 </dt> <dd>
 
-Especifica una estructura [**IPX \_ NEXT HOP \_ \_ ADDRESS**](ipx-next-hop-address.md) que contiene la dirección del enrutador de próximo salto.
+Especifica una estructura [**IPX \_ NEXT HOP \_ \_ ADDRESS**](ipx-next-hop-address.md) que contiene la dirección del enrutador del próximo salto.
 
 </dd> <dt>
 
@@ -100,13 +100,13 @@ Especifica una estructura [**DE DATOS \_ \_ ESPECÍFICOS de IPX**](ipx-specific-
 
 ## <a name="remarks"></a>Comentarios
 
-Todos los miembros de la **estructura \_ RTM IPX \_ ROUTE** están alineados **con DWORD.**
+Los miembros de la estructura **\_ RTM IPX \_ ROUTE** están alineados **con DWORD.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -115,20 +115,20 @@ Todos los miembros de la **estructura \_ RTM IPX \_ ROUTE** están alineados **c
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Estructuras de la versión 1 del Administrador \_ de tablas de \_ enrutamiento](routing-table-manager-version-1-structures.md)
+[Estructuras de Routing Table Manager versión \_ 1 \_](routing-table-manager-version-1-structures.md)
 </dt> <dt>
 
-[**RED \_ IPX**](ipx-network.md)
+[**IPX \_ NETWORK**](ipx-network.md)
 </dt> <dt>
 
-[**DIRECCIÓN DE PRÓXIMO SALTO DE IPX \_ \_ \_**](ipx-next-hop-address.md)
+[**DIRECCIÓN DEL \_ PRÓXIMO \_ SALTO DE \_ IPX**](ipx-next-hop-address.md)
 </dt> <dt>
 
 [**DATOS \_ ESPECÍFICOS DE IPX \_**](ipx-specific-data.md)

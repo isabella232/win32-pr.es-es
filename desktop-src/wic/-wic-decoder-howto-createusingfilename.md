@@ -1,23 +1,23 @@
 ---
-description: En este tema se describe cómo crear un descodificador de mapa de bits mediante el uso de un nombre de archivo de imagen.
+description: En este tema se describe cómo crear un descodificador de mapa de bits mediante un nombre de archivo de imagen.
 ms.assetid: b384861d-4e71-4e07-8b44-5c1cbcb3a70f
 title: Cómo crear un descodificador mediante un nombre de archivo de imagen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 113ea82b741f2a8dab6c92d6391d65eb7d7e99c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 867581e06692188913e4bb1af4956956c462c46bc189a4983f3c5d24bc38c986
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811995"
 ---
 # <a name="how-to-create-a-decoder-using-an-image-filename"></a>Cómo crear un descodificador mediante un nombre de archivo de imagen
 
-En este tema se describe cómo crear un descodificador de mapa de bits mediante el uso de un nombre de archivo de imagen.
+En este tema se describe cómo crear un descodificador de mapa de bits mediante un nombre de archivo de imagen.
 
 Para crear un descodificador de mapa de bits mediante un nombre de archivo de imagen
 
-1.  Cree un objeto [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) para crear objetos de Windows Imaging Component (WIC).
+1.  Cree un [**objeto IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) para crear objetos Windows Imaging Component (WIC).
 
     ```C++
     // Create WIC factory
@@ -31,7 +31,7 @@ Para crear un descodificador de mapa de bits mediante un nombre de archivo de im
 
     
 
-2.  Use el método [**CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) para crear un [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) a partir de un archivo de imagen.
+2.  Use el [**método CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) para crear un [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) a partir de un archivo de imagen.
 
     ```C++
     HRESULT hr = S_OK;
@@ -50,7 +50,7 @@ Para crear un descodificador de mapa de bits mediante un nombre de archivo de im
 
     
 
-3.  Obtiene el primer [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) de la imagen.
+3.  Obtiene el [**primer IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) de la imagen.
 
     ```C++
     // Retrieve the first bitmap frame.
@@ -62,9 +62,9 @@ Para crear un descodificador de mapa de bits mediante un nombre de archivo de im
 
     
 
-    El formato de archivo JPEG solo admite un único fotograma. Dado que el archivo de este ejemplo es un archivo JPEG, se usa el primer fotograma ( `0` ). Para obtener información sobre los formatos de imagen que tienen varios fotogramas, consulte [recuperación de los marcos de una imagen](-wic-bitmapsources-howto-retrieveimageframes.md) para tener acceso a cada fotograma de la imagen.
+    El formato de archivo JPEG solo admite un único marco. Dado que el archivo de este ejemplo es un archivo JPEG, se usa el primer fotograma ( `0` ). Para ver los formatos de imagen que tienen varios fotogramas, consulte Cómo recuperar los fotogramas [de una imagen](-wic-bitmapsources-howto-retrieveimageframes.md) para acceder a cada fotograma de la imagen.
 
-4.  Procesa el marco de imagen. Para obtener más información sobre los objetos de [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) , vea la [información general sobre orígenes de mapas de bits](-wic-bitmapsources.md).
+4.  Procese el marco de imagen. Para obtener información adicional sobre [**los objetos IWICBitmapSource,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) vea Información general sobre orígenes [de mapa de bits.](-wic-bitmapsources.md)
 
 ## <a name="see-also"></a>Consulte también
 

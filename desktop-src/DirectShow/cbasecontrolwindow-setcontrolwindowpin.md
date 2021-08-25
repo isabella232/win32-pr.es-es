@@ -1,7 +1,7 @@
 ---
 description: El método SetControlWindowPin establece el pin con el que se va a sincronizar.
 ms.assetid: 6373c046-5448-4159-88b9-9b2babdb938b
-title: Método CBaseControlWindow. SetControlWindowPin (Ctlutil. h)
+title: Método CBaseControlWindow.SetControlWindowPin (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c1aa3d4960799c2286e17709258ea90b76332bc2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e9ab7cbb5d199b0908c2eb51ffb5a70eda7eb1336bd66a1645daad61b3202d69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056715"
 ---
-# <a name="cbasecontrolwindowsetcontrolwindowpin-method"></a>CBaseControlWindow. SetControlWindowPin, método
+# <a name="cbasecontrolwindowsetcontrolwindowpin-method"></a>Método CBaseControlWindow.SetControlWindowPin
 
 El `SetControlWindowPin` método establece el pin con el que se va a sincronizar.
 
@@ -53,9 +53,9 @@ Puntero al pin con el que se sincroniza la interfaz.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro establece la \_ variable miembro m pPin igual que el parámetro pPin. Tal y como se describe en el constructor, solo se puede llamar a la interfaz cuando el filtro se ha conectado correctamente. El objeto se pasa a través de esta función miembro al pin con el que se debe sincronizar; en la mayoría de los casos, determinará si el PIN está conectado siempre que tenga un método de interfaz llamado y devolverá VFW \_ E \_ no \_ conectado si se produce un error.
+Esta función miembro establece la variable miembro m \_ pPin igual al parámetro pPin. Como se describe en el constructor, solo se puede llamar a la interfaz cuando el filtro se ha conectado correctamente. El objeto se pasa a través de esta función miembro al pin con el que debe sincronizarse. En la mayoría de los casos, determinará si el pin está conectado siempre que tenga un método de interfaz llamado y devolverá VFW E NOT CONNECTED si se produce \_ \_ un \_ error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro establece la \_ variable miembro m pPin igual que el pará
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro establece la \_ variable miembro m pPin igual que el pará
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

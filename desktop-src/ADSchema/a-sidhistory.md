@@ -27,7 +27,7 @@ Contiene los SID anteriores usados para el objeto si el objeto se movió desde o
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|------------------------------------------------|
 | CN                | SID-History                                    |
 | Ldap-Display-Name | Sidhistory                                     |
@@ -53,7 +53,7 @@ Contiene los SID anteriores usados para el objeto si el objeto se movió desde o
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -74,7 +74,7 @@ Contiene los SID anteriores usados para el objeto si el objeto se movió desde o
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -95,7 +95,7 @@ Contiene los SID anteriores usados para el objeto si el objeto se movió desde o
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -116,7 +116,7 @@ Contiene los SID anteriores usados para el objeto si el objeto se movió desde o
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -137,7 +137,7 @@ Contiene los SID anteriores usados para el objeto si el objeto se movió desde o
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -158,7 +158,7 @@ Contiene los SID anteriores usados para el objeto si el objeto se movió desde o
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |

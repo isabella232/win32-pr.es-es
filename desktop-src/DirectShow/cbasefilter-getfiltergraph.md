@@ -1,7 +1,7 @@
 ---
-description: El método GetFilterGraph recupera un puntero al administrador de gráficos de filtro.
+description: El método GetFilterGraph recupera un puntero al administrador de gráficos de filtros.
 ms.assetid: 80b41272-2ca1-40db-8624-0d99d66f3c34
-title: Método CBaseFilter. GetFilterGraph (Amfilter. h)
+title: Método CBaseFilter.GetFilterGraph (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c0843c7789afc1500565d2737d863cbc8af114d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f35b40febff058d5bbd9f48c5ac6d10168d48d6e587b51ab2730704724e48c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056655"
 ---
-# <a name="cbasefiltergetfiltergraph-method"></a>CBaseFilter. GetFilterGraph, método
+# <a name="cbasefiltergetfiltergraph-method"></a>Método CBaseFilter.GetFilterGraph
 
 El `GetFilterGraph` método recupera un puntero al administrador de gráficos de filtro.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor de [**CBaseFilter:: m \_ pGraph**](cbasefilter-m-pgraph.md).
+Devuelve el valor de [**CBaseFilter::m \_ pGraph**](cbasefilter-m-pgraph.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve el valor de [**CBaseFilter:: m \_ pGraph**](cbasefilter-m-pgraph.md).
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el valor de [**CBaseFilter:: m \_ pGraph**](cbasefilter-m-pgraph.md).
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

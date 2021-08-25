@@ -1,5 +1,5 @@
 ---
-description: El método \_ get Duration recupera la duración de la secuencia. Este método implementa el método IMediaPosition::get \_ Duration.
+description: El método get \_ Duration recupera la duración de la secuencia. Este método implementa el método IMediaPosition::get \_ Duration.
 ms.assetid: 326a8cd3-d05f-49d0-941d-08f9778e9a06
 title: CPosPassThru.get_Duration método (Ctlutil.h)
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "119915485"
 ---
 # <a name="cpospassthruget_duration-method"></a>Método CPosPassThru.get \_ Duration
 
-El `get_Duration` método recupera la duración de la secuencia. Este método implementa el método [**IMediaPosition::get \_ Duration.**](/windows/desktop/api/Control/nf-control-imediaposition-get_duration)
+El `get_Duration` método recupera la duración de la secuencia. Este método implementa el [**método IMediaPosition::get \_ Duration.**](/windows/desktop/api/Control/nf-control-imediaposition-get_duration)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT get_Duration(
 *plength* 
 </dt> <dd>
 
-Puntero a una variable que recibe la longitud total de la secuencia, en segundos.
+Puntero a una variable que recibe la longitud total del flujo, en segundos.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Devuelve el **valor HRESULT** del pin conectado.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

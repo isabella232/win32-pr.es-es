@@ -13,7 +13,7 @@ ms.locfileid: "120083235"
 ---
 # <a name="using-windows-filtering-platform"></a>Uso de Windows de filtrado de datos
 
-Los ejemplos de código siguientes muestran las operaciones básicas Windows plataforma de filtrado de datos (WFP).
+Los ejemplos de código siguientes muestran las operaciones básicas Windows plataforma de filtrado de filtros (WFP).
 
 ## <a name="getting-started"></a>Introducción
 
@@ -27,16 +27,16 @@ Configuración de un proveedor de filtrado de red.
 Cómo filtrar el tráfico de red.
 
 -   [Permitir y bloquear aplicaciones y usuarios](permitting-and-blocking-applications-and-users.md)
--   [Reserva de puertos](reserving-ports.md)
+-   [Reservar puertos](reserving-ports.md)
 -   [Usar opciones de clasificación](using-classify-options.md)
--   [Evitar el examen de puertos](preventing-port-scanning.md)
+-   [Impedir el examen de puertos](preventing-port-scanning.md)
 
 ## <a name="observing-the-system"></a>Observar el sistema
 
 Cómo supervisar el proceso de filtrado de red.
 
 -   [Rellenar condiciones de filtro](populating-filter-conditions.md)
--   [Ver el estado actual](viewing-current-state.md)
+-   [Visualización del estado actual](viewing-current-state.md)
 -   [Supervisión de cambios de filtro](monitoring-filter-changes.md)
 -   [Mostrar eventos de red](displaying-net-events.md)
 
@@ -52,8 +52,8 @@ Cómo filtrar el tráfico de red de forma segura.
 Cómo configurar la seguridad del protocolo de Internet (IPsec).
 
 -   [Uso del modo de transporte](using-transport-mode.md)
--   [Uso del Tunnel automático](using-tunnel-mode.md)
--   [Clave de SA manual](manual-sa-keying.md)
+-   [Uso del Tunnel de configuración](using-tunnel-mode.md)
+-   [Teclado de SA manual](manual-sa-keying.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

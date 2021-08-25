@@ -15,7 +15,7 @@ ms.locfileid: "120101915"
 
 La [**función CreateFiber**](/windows/desktop/api/WinBase/nf-winbase-createfiber) crea una nueva fibra para un subproceso. El subproceso de creación debe especificar la dirección inicial del código que se va a ejecutar la nueva fibra. Normalmente, la dirección inicial es el nombre de una función proporcionada por el usuario. Varias fibras pueden ejecutar la misma función.
 
-En el ejemplo siguiente se muestra cómo crear, programar y eliminar fibras. Las fibras ejecutan las funciones definidas localmente ReadFiberFunc y WriteFiberFunc. En este ejemplo se implementa una operación de copia de archivos basada en fibra. Al ejecutar el ejemplo, debe especificar los archivos de origen y de destino. Tenga en cuenta que hay muchas otras formas de copiar archivos mediante programación; este ejemplo existe principalmente para ilustrar el uso de las funciones de fibra.
+En el ejemplo siguiente se muestra cómo crear, programar y eliminar fibras. Las fibras ejecutan las funciones readFiberFunc y WriteFiberFunc definidas localmente. En este ejemplo se implementa una operación de copia de archivos basada en fibra. Al ejecutar el ejemplo, debe especificar los archivos de origen y de destino. Tenga en cuenta que hay muchas otras formas de copiar archivos mediante programación; este ejemplo existe principalmente para ilustrar el uso de las funciones de fibra.
 
 
 ```C++
@@ -373,11 +373,11 @@ DisplayFiberInfo(
 
 
 
-En este ejemplo se usa una estructura de datos de fibra que se usa para determinar el comportamiento y el estado de la fibra. Existe una estructura de datos para cada fibra; El puntero a la estructura de datos se pasa a la fibra en el momento de la creación de la fibra mediante el parámetro de la [*función FiberProc.*](/windows/win32/api/winbase/nc-winbase-pfiber_start_routine)
+En este ejemplo se usa una estructura de datos de fibra que se usa para determinar el comportamiento y el estado de la fibra. Existe una estructura de datos para cada fibra; El puntero a la estructura de datos se pasa a la fibra en el momento de la creación de fibra mediante el parámetro de la [*función FiberProc.*](/windows/win32/api/winbase/nc-winbase-pfiber_start_routine)
 
-El subproceso de llamada llama a [**la función ConvertThreadToFiber,**](/windows/desktop/api/WinBase/nf-winbase-convertthreadtofiber) que permite que el autor de la llamada programe las fibras. Esto también permite que otra fibra programe la fibra. A continuación, el subproceso crea dos fibras adicionales, una que realiza operaciones de lectura en un archivo especificado y otra que realiza las operaciones de escritura en un archivo especificado.
+El subproceso que realiza la llamada llama [**a la función ConvertThreadToFiber,**](/windows/desktop/api/WinBase/nf-winbase-convertthreadtofiber) que permite que el autor de la llamada programe las fibras. Esto también permite que otra fibra programe la fibra. A continuación, el subproceso crea dos fibras adicionales, una que realiza operaciones de lectura en un archivo especificado y otra que realiza las operaciones de escritura en un archivo especificado.
 
-La fibra principal llama a [**la función SwitchToFiber**](/windows/desktop/api/WinBase/nf-winbase-switchtofiber) para programar la fibra de lectura. Después de una lectura correcta, la fibra de lectura programa la fibra de escritura. Después de una escritura correcta en la fibra de escritura, la fibra de escritura programa la fibra de lectura. Una vez completado el ciclo de lectura y escritura, se programa la fibra principal, lo que da como resultado la presentación del estado de lectura y escritura. Si se produce un error durante las operaciones de lectura o escritura, se programa la fibra principal y, por ejemplo, se muestra el estado de la operación.
+La fibra principal llama a [**la función SwitchToFiber**](/windows/desktop/api/WinBase/nf-winbase-switchtofiber) para programar la fibra de lectura. Después de una lectura correcta, la fibra de lectura programa la fibra de escritura. Después de una escritura correcta en la fibra de escritura, la fibra de escritura programa la fibra de lectura. Una vez completado el ciclo de lectura y escritura, se programa la fibra principal, lo que da como resultado la presentación del estado de lectura y escritura. Si se produce un error durante las operaciones de lectura o escritura, se programa la fibra principal y el ejemplo muestra el estado de la operación.
 
 Antes de finalizar el proceso, el proceso libera las fibras mediante la función [**DeleteFiber,**](/windows/desktop/api/WinBase/nf-winbase-deletefiber) cierra los identificadores de archivo y libera la memoria asignada.
 

@@ -1,7 +1,7 @@
 ---
-description: Reordena un objeto IContextNode secundario especificado al índice especificado.
+description: Reordena un objeto IContextNode secundario especificado para el índice especificado.
 ms.assetid: 1cee73af-8d5b-4d5d-bc67-a3ac6f4b2462
-title: 'IContextNode:: MoveSubNodeToPosition (método) (IACom. h)'
+title: Método IContextNode::MoveSubNodeToPosition (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 398a56cf2c30c93a72e061dfe968de24276888f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d48876be10a2c45daca62b3175a358d31ed128ddd3bcb045c052e2d51308c66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773825"
 ---
-# <a name="icontextnodemovesubnodetoposition-method"></a>IContextNode:: MoveSubNodeToPosition (método)
+# <a name="icontextnodemovesubnodetoposition-method"></a>IContextNode::MoveSubNodeToPosition (método)
 
-Reordena un objeto [**IContextNode**](icontextnode.md) secundario especificado al índice especificado.
+Reordena un objeto [**IContextNode secundario**](icontextnode.md) especificado para el índice especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,14 +40,14 @@ HRESULT MoveSubNodeToPosition(
 
 <dl> <dt>
 
-*pSubnodeToMove* \[ de\]
+*pSubnodeToMove* \[ En\]
 </dt> <dd>
 
-Objeto [**IContextNode**](icontextnode.md) que se va a desplace.
+Objeto [**IContextNode**](icontextnode.md) que se moverá.
 
 </dd> <dt>
 
-*ulNewIndex* \[ de\]
+*ulNewIndex* \[ En\]
 </dt> <dd>
 
 Índice de la nueva posición del subnodo.
@@ -56,21 +56,21 @@ Objeto [**IContextNode**](icontextnode.md) que se va a desplace.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Devuelve **E \_ INVALIDARG** si *pSubnodeToMove* no es un nodo secundario de este [**IContextNode**](icontextnode.md).
+Devuelve **E \_ INVALIDARG** si *pSubnodeToMove* no es un nodo secundario de [**este IContextNode**](icontextnode.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -85,7 +85,7 @@ Devuelve **E \_ INVALIDARG** si *pSubnodeToMove* no es un nodo secundario de est
 [**IContextNode::CreateSubNode**](icontextnode-createsubnode.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

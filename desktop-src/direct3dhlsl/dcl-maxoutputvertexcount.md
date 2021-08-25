@@ -63,7 +63,7 @@ Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblad
 
 ## <a name="example"></a>Ejemplo
 
-A continuación se muestran algunos ejemplos.
+Estos son algunos ejemplos.
 
 Suponga que los datos de entrada están hechos de posición (.xyzw) y color (.rgb). Cada componente consume un byte; Dados 7 bytes, el número máximo de vértices que puede generar el sombreador sería 1024 / (4 + 3) = 146.
 
@@ -92,7 +92,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
 | [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
 | [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |

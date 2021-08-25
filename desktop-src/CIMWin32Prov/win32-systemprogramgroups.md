@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI SystemProgramGroups Association de Win32 relaciona un equipo y un grupo de programas lógicos.
+description: La clase WMI de asociación SystemProgramGroups de Win32 relaciona \_ un sistema informático y un grupo de programas lógicos.
 ms.assetid: cbf810c8-a967-4d60-889c-e47c43b039ea
 ms.tgt_platform: multiple
-title: Win32_SystemProgramGroups (clase)
+title: Win32_SystemProgramGroups clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1a8ca556c24295e2c4b04ab851610ef35ec9b715
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c33511d1f8a1b7ccf3657f31a0c3b997f7e1044f7425de9683f167d557b1dba9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827985"
 ---
-# <a name="win32_systemprogramgroups-class"></a>\_Clase Win32 SystemProgramGroups
+# <a name="win32_systemprogramgroups-class"></a>Clase \_ SystemProgramGroups de Win32
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SystemProgramGroups** Association de Win32 relaciona un equipo y un grupo de programas lógicos.
+La clase WMI **de asociación \_ SystemProgramGroups** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un sistema informático y un grupo de programas lógicos.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,10 +61,10 @@ Tipo de datos: **Win32 \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Referencia a la instancia de que representa el sistema del equipo que contiene el grupo de programas lógicos.
+Referencia a la instancia de que representa el sistema informático que contiene el grupo de programas lógicos.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Tipo de datos: **Win32 \_ LogicalProgramGroup**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ LogicalProgramGroup")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ LogicalProgramGroup")
 </dt> </dl>
 
-Referencia a la instancia de que representa el grupo de programas lógicos del equipo.
+Referencia a la instancia de que representa el grupo de programas lógicos en el sistema del equipo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ SystemProgramGroups de Win32** se deriva de [**\_ SystemSetting de Win32**](win32-systemsetting.md).
+La **clase \_ SystemProgramGroups de Win32** se deriva de [**\_ SystemSetting de Win32.**](win32-systemsetting.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ La **clase \_ SystemProgramGroups de Win32** se deriva de [**\_ SystemSetting de
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La **clase \_ SystemProgramGroups de Win32** se deriva de [**\_ SystemSetting de
 
 <dl> <dt>
 
-[**Win32 \_ SystemSetting**](win32-systemsetting.md)
+[**SystemSetting de Win32 \_**](win32-systemsetting.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

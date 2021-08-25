@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119914155"
 ---
-# <a name="addresourcesettings-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método AddResourceSettings de la clase \_ VirtualEthernetSwitchManagementService de Msvm
+# <a name="addresourcesettings-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método AddResourceSettings de la clase \_ Msvm VirtualEthernetSwitchManagementService
 
 Agrega recursos a una configuración de conmutador virtual. Cuando se aplica a una configuración de máquina virtual de "estado", como efecto secundario se agregan recursos a la máquina virtual activa.
 
@@ -59,7 +59,7 @@ Matriz de cadenas que contienen una instancia incrustada de la clase [**\_ Resou
 *ResultingResourceSettings* \[ out\]
 </dt> <dd>
 
-Matriz de referencias a instancias de la clase [**\_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) de CIM que representa los aspectos virtuales de los recursos virtuales agregados.
+Matriz de referencias a instancias de la clase [**\_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) de CIM que representa aspectos virtuales de los recursos virtuales agregados.
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Este método devuelve uno de los valores siguientes.
 **DMTF reservado** (..)
 </dt> <dt>
 
-**Parámetros de método activados: trabajo iniciado** (4096)
+**Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Método reservado** (4097..32767)
@@ -107,7 +107,7 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
@@ -117,7 +117,7 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

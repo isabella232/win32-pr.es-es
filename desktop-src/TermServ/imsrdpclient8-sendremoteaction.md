@@ -5,11 +5,11 @@ ms.assetid: d6a43662-7e51-404a-a3f9-a8b51cbc69d1
 ms.tgt_platform: multiple
 keywords:
 - Método SendRemoteAction Servicios de Escritorio remoto
-- Método SendRemoteAction Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Método SendRemoteAction Servicios de Escritorio remoto interfaz , IMsRdpClient8
 - Interfaz IMsRdpClient8 Servicios de Escritorio remoto , método SendRemoteAction
-- Método SendRemoteAction Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Método SendRemoteAction Servicios de Escritorio remoto interfaz , IMsRdpClient9
 - Interfaz IMsRdpClient9 Servicios de Escritorio remoto , método SendRemoteAction
-- Método SendRemoteAction Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Método SendRemoteAction Servicios de Escritorio remoto interfaz , IMsRdpClient10
 - Interfaz IMsRdpClient10 Servicios de Escritorio remoto , método SendRemoteAction
 topic_type:
 - apiref
@@ -74,7 +74,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: El método GetSignedLargeIntegerValue recupera un valor de LONGLONG (tipo VT \_ i8) especificado por una clave.
+description: El método GetSignedLargeIntegerValue recupera un valor LONGLONG (tipo VT \_ I8) especificado por una clave.
 ms.assetid: b8d2a0b6-7ca3-4a56-a502-cc18b08df22a
-title: 'IPortableDeviceValues:: GetSignedLargeIntegerValue (método) (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::GetSignedLargeIntegerValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 5fc41c263ffdef540300a08f88665a6489fa9d41
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 516d7c08b68e4480b3240ea9335793589114070859cf28d5cf91e645b616a2db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055115"
 ---
-# <a name="iportabledevicevaluesgetsignedlargeintegervalue-method"></a>IPortableDeviceValues:: GetSignedLargeIntegerValue (método)
+# <a name="iportabledevicevaluesgetsignedlargeintegervalue-method"></a>IPortableDeviceValues::GetSignedLargeIntegerValue (método)
 
-El método **GetSignedLargeIntegerValue** recupera un valor de **LONGLONG** (tipo VT \_ i8) especificado por una clave.
+El **método GetSignedLargeIntegerValue** recupera un valor **LONGLONG** (tipo VT \_ I8) especificado por una clave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,31 +41,31 @@ HRESULT GetSignedLargeIntegerValue(
 
 <dl> <dt>
 
-*clave* \[ de de\]
+*key* \[ En\]
 </dt> <dd>
 
-Clave **REFPROPERTYKEY** que especifica el elemento que se va a recuperar.
+Clave **REFPROPERTYKEY** que especifica el elemento que se recuperará.
 
 </dd> <dt>
 
-*pValue* \[ enuncia\]
+*pValue* \[ out\]
 </dt> <dd>
 
-Puntero al valor **ULong** recuperado.
+Puntero al valor **de ULONG** recuperado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                                                            | Descripción                                                            |
 |------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                                   | El método se ha llevado a cabo de forma correcta.<br/>                                       |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La propiedad especificada por *key* no es un tipo **LONGLONG** .<br/> |
-| <dl> <dt>**HRESULT \_ de \_ Win32 (error \_ no \_ encontrado)**</dt> </dl> | La propiedad especificada por la *clave* no está en la colección.<br/>   |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                   | El método se ha llevado a cabo de forma correcta.<br/>                                       |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La propiedad especificada por *key no* es un **tipo LONGLONG.**<br/> |
+| <dl> <dt>**HRESULT \_ DE \_ WIN32(ERROR \_ NO \_ ENCONTRADO)**</dt> </dl> | La propiedad especificada por *key no* está en la colección.<br/>   |
 
 
 
@@ -77,8 +77,8 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**Interfaz IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::SetSignedLargeIntegerValue**](iportabledevicevalues-setsignedlargeintegervalue.md)

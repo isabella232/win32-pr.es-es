@@ -1,7 +1,7 @@
 ---
 description: Busca la siguiente instancia de la propiedad especificada por el parámetro hProperty.
 ms.assetid: f77cb92b-5936-4349-bf66-643c16e9e0df
-title: Función FindPropertyInstanceRestart (Netmon. h)
+title: Función FindPropertyInstanceRestart (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: d1e731bb00b28bb62862dd18fbd6031fa973fe38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0699cb37165e9181bf78bc3a86ad68c07dbbd589469e3e0bca6a1cd0228573f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890815"
 ---
-# <a name="findpropertyinstancerestart-function"></a>FindPropertyInstanceRestart función)
+# <a name="findpropertyinstancerestart-function"></a>Función FindPropertyInstanceRestart
 
-La función **FindPropertyInstanceRestart** busca la siguiente instancia de la propiedad especificada por el parámetro *hProperty* .
+La **función FindPropertyInstanceRestart** busca la siguiente instancia de la propiedad especificada por el *parámetro hProperty.*
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,45 +42,45 @@ LPPROPERTYINST WINAPI FindPropertyInstanceRestart(
 
 <dl> <dt>
 
-*hFrame* \[ de\]
+*hFrame* \[ En\]
 </dt> <dd>
 
-Identificador del marco. El identificador del marco se puede recuperar mediante una llamada a la función [GetFrame](getframe.md) .
+Identificador del marco. El identificador de marco se puede recuperar mediante una llamada a la [función GetFrame.](getframe.md)
 
 </dd> <dt>
 
-*hProperty* \[ de\]
+*hProperty* \[ En\]
 </dt> <dd>
 
-Identificador de la propiedad que se va a buscar. El identificador de propiedad se puede recuperar mediante una llamada a la función [GetProperty](getproperty.md) .
+Identificador de la propiedad que se buscará. El identificador de propiedad se puede recuperar mediante una llamada a la [función GetProperty.](getproperty.md)
 
 </dd> <dt>
 
-*lpRestartKey* \[ de\]
+*lpRestartKey* \[ En\]
 </dt> <dd>
 
-Puntero a la instancia de propiedad que se usa como punto inicial de la búsqueda. Si el parámetro *lpRestartKey* se establece en **null**, la búsqueda comienza al principio del marco o al final del marco, dependiendo del valor del parámetro *DirForward* .
+Puntero a la instancia de propiedad utilizada como punto inicial de la búsqueda. Si el *parámetro lpRestartKey* se establece en **NULL,** la búsqueda comienza al principio del marco o al final del marco, dependiendo del valor del *parámetro DirForward.*
 
-Si *lpRestartKey* apunta a **null**, la búsqueda comienza al principio del marco si *DirForward* es **true** o al final del marco si el parámetro es **false**.
+Si *lpRestartKey* apunta a **NULL,** la búsqueda comienza al principio del marco si *DirForward* es **TRUE** o al final del marco si el parámetro es **FALSE.**
 
 </dd> <dt>
 
-*DirForward* \[ de\]
+*DirForward* \[ En\]
 </dt> <dd>
 
-Indicador de la dirección de búsqueda. Si el valor es **true**, la búsqueda se desplaza desde la ubicación actual hasta el final del marco. Si el valor es **false**, la búsqueda se desplaza desde la ubicación actual hasta el principio del marco.
+Indicador de la dirección de búsqueda. Si el valor es **TRUE**, la búsqueda se mueve desde la ubicación actual hasta el final del marco. Si el valor es **FALSE**, la búsqueda se mueve desde la ubicación actual hasta el principio del marco.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es el siguiente **LPPROPERTYINST** válido.
+Si la función se realiza correctamente, el valor devuelto es el **siguiente LPPROPERTYINST válido.**
 
-Si la función no se realiza correctamente, el valor devuelto es **null**.
+Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **FindPropertyInstanceRestart** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función FindPropertyInstanceRestart.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,8 +90,8 @@ Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **Fi
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 
@@ -103,7 +103,7 @@ Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **Fi
 [GetFrame](getframe.md)
 </dt> <dt>
 
-[GetProperty](getproperty.md)
+[Getproperty](getproperty.md)
 </dt> </dl>
 
  
