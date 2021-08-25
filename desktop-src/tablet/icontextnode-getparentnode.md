@@ -1,7 +1,7 @@
 ---
 description: Recupera el nodo primario de este IContextNode en el árbol de nodos de contexto.
 ms.assetid: 782fd973-f8f3-4902-b8e0-cc5e70a66d28
-title: 'IContextNode:: GetParentNode (método) (IACom. h)'
+title: Método IContextNode::GetParentNode (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 50bba716486910802e91cbe6d3f003d172f1cb29
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23739bd92da2e8337c949ac7b1fd66e456da1c803cccbe4d0980821a062ec9da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119935385"
 ---
-# <a name="icontextnodegetparentnode-method"></a>IContextNode:: GetParentNode (método)
+# <a name="icontextnodegetparentnode-method"></a>IContextNode::GetParentNode (método)
 
 Recupera el nodo primario de este [**IContextNode**](icontextnode.md) en el árbol de nodos de contexto.
 
@@ -39,33 +39,33 @@ HRESULT GetParentNode(
 
 <dl> <dt>
 
-*ppParentContextNode* \[ enuncia\]
+*ppParentContextNode* \[ out\]
 </dt> <dd>
 
-Puntero al nodo primario de este objeto [**IContextNode**](icontextnode.md) .
+Puntero al nodo primario de este [**objeto IContextNode.**](icontextnode.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *ppParentContextNode* cuando ya no necesite usar el nodo de contexto primario.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *ppParentContextNode* cuando ya no necesite usar el nodo de contexto primario.
 
  
 
-Si este es el nodo raíz, el parámetro *ppParentContextNode* se establece en **null**.
+Si este es el nodo raíz, el *parámetro ppParentContextNode* se establece en **NULL.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un método auxiliar que recupera información sobre un nodo especificado, su parámetro *pContextNode* . Este método auxiliar devuelve información de los siguientes métodos.
+En el ejemplo siguiente se muestra un método auxiliar que recupera información sobre un nodo especificado, su *parámetro pContextNode.* Este método auxiliar devuelve información de los métodos siguientes.
 
--   [**IContextNode:: GetId**](icontextnode-getid.md)
--   [**IContextNode:: GetType**](icontextnode-gettype.md)
--   [**IContextNode:: GetLocation**](icontextnode-getlocation.md)
+-   [**IContextNode::GetId**](icontextnode-getid.md)
+-   [**IContextNode::GetType**](icontextnode-gettype.md)
+-   [**IContextNode::GetLocation**](icontextnode-getlocation.md)
 -   **IContextNode::GetParentNode**
 
 
@@ -146,9 +146,9 @@ HRESULT CMyClass::GetNodeInformation(
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -163,7 +163,7 @@ HRESULT CMyClass::GetNodeInformation(
 [**IContextNode::GetSubNodes**](icontextnode-getsubnodes.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM RealizesDiskPartition representa una partición de disco en un medio físico que modela la creación de particiones en una unidad SCSI o IDE sin procesar.
+description: La clase CIM RealizesDiskPartition representa una partición de disco en un medio físico que modela la creación de particiones en una \_ unidad SCSI o IDE sin procesar.
 ms.assetid: cc317f7d-06cd-4126-8123-6a3eb32f792e
 ms.tgt_platform: multiple
-title: CIM_RealizesDiskPartition (clase)
+title: CIM_RealizesDiskPartition clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,23 +17,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d138aafd179f5fefa40896fe4b9e6a0426b34422
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9e81cd96906cd7981ea7fdc7da54a728cb0efb22f0bed8269c735c642ad79cb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920885"
 ---
-# <a name="cim_realizesdiskpartition-class"></a>\_Clase RealizesDiskPartition de CIM
+# <a name="cim_realizesdiskpartition-class"></a>CIM \_ RealizesDiskPartition (clase)
 
-La clase **CIM \_ RealizesDiskPartition** representa una partición de disco en un medio físico que modela la creación de particiones en una unidad SCSI o IDE sin procesar.
+La **clase CIM \_ RealizesDiskPartition** representa una partición de disco en un medio físico que modela la creación de particiones en una unidad SCSI o IDE sin procesar.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,13 +49,13 @@ class CIM_RealizesDiskPartition : CIM_Realizes
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ RealizesDiskPartition** tiene estos tipos de miembros:
+La **clase CIM \_ RealizesDiskPartition** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ RealizesDiskPartition** tiene estas propiedades.
+La **clase CIM \_ RealizesDiskPartition** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -68,14 +68,14 @@ Tipo de datos: **CIM \_ PhysicalMedia**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-[**\_ PhysicalMedia CIM**](cim-physicalmedia.md) que describe el medio físico en el que se realiza la extensión.
+Cim [**\_ PhysicalMedia que**](cim-physicalmedia.md) describe los medios físicos en los que se realiza la extensión.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **CIM \_ DiskPartition**
@@ -84,35 +84,35 @@ Tipo de datos: **CIM \_ DiskPartition**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ DiskPartition de CIM**](cim-diskpartition.md) que describe la partición de disco que se encuentra en el medio.
+Una [**partición de \_ disco CIM**](cim-diskpartition.md) que describe la partición de disco que se encuentra en el medio.
 
 </dd> <dt>
 
 **StartingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Dirección inicial del medio físico en el que comienza la partición de disco. La dirección final de la partición se determina mediante las propiedades **NumberOfBlocks** y **blocksize** del objeto [**\_ DiskPartition de CIM**](cim-diskpartition.md) .
+Dirección inicial en el medio físico donde comienza la partición de disco. La dirección final de la partición se determina mediante las propiedades **NumberOfBlocks** y **BlockSize** del [**objeto \_ DiskPartition de CIM.**](cim-diskpartition.md)
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ RealizesDiskPartition** se deriva de las contrataciones de [**CIM \_**](cim-realizes.md).
+La **clase CIM \_ RealizesDiskPartition** se deriva de [**CIM \_ Realizes**](cim-realizes.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,8 +122,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -132,7 +132,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**Contrataciones \_ de CIM**](cim-realizes.md)
+[**CIM \_ se da cuenta**](cim-realizes.md)
 </dt> </dl>
 
  

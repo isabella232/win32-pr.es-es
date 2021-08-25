@@ -1,5 +1,5 @@
 ---
-description: Muestra el panel Búsqueda de aplicaciones, que normalmente aparece al empezar a escribir un término de búsqueda en el pantalla Inicio.
+description: Muestra el panel Búsqueda de aplicaciones, que normalmente aparece cuando se empieza a escribir un término de búsqueda desde el pantalla Inicio.
 title: Método IShellDispatch6.SearchCommand (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: B5861125-2B21-4C47-8425-026381B2F677
-ms.openlocfilehash: 7ca8818960704627376bde8b394eae7deb0317b6
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 472b5683ecf7cdfe2bcb432e0cc822ad3fb86ab6ed159ba768e6826c83f2f80a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884355"
 ---
-# <a name="ishelldispatch6searchcommand-method"></a>IShellDispatch6.SearchCommand (método)
+# <a name="ishelldispatch6searchcommand-method"></a>Método IShellDispatch6.SearchCommand
 
-Muestra el panel Búsqueda de aplicaciones, que normalmente aparece al empezar a escribir un término de búsqueda en el pantalla Inicio.
+Muestra el panel Búsqueda de aplicaciones, que normalmente aparece cuando se empieza a escribir un término de búsqueda desde el pantalla Inicio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,8 +61,8 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                   |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 

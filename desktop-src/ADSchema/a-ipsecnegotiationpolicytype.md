@@ -1,11 +1,11 @@
 ---
-title: 'IPSEC-negociación: atributo de tipo de Directiva'
-description: El atributo IPSec-negociación-Policy-Type es solo para uso interno.
+title: Atributo IPSEC-Negotiation-Policy-Type
+description: El atributo Ipsec-Negotiation-Policy-Type es solo para uso interno.
 ms.assetid: 7f0a9d9e-42ab-4f5f-89fc-b0c385bc9d42
 ms.tgt_platform: multiple
 keywords:
-- IPSEC-negociación-directiva-tipo de atributo AD Schema
-- iPSECNegotiationPolicyType esquema de AD de atributos
+- Esquema de AD del atributo IPSEC-Negotiation-Policy-Type
+- Esquema de AD del atributo iPSECNegotiationPolicyType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ec47eaab889d05a0bc9ce8401494a9591627bc2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7a990ed65c68cec4cacbff64f5433c825726cd1e884776791771ba6127b342d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925075"
 ---
-# <a name="ipsec-negotiation-policy-type-attribute"></a>IPSEC-negociación: atributo de tipo de Directiva
+# <a name="ipsec-negotiation-policy-type-attribute"></a>Atributo IPSEC-Negotiation-Policy-Type
 
-El atributo **IPSec-negociación-Policy-Type** es solo para uso interno.
+El **atributo Ipsec-Negotiation-Policy-Type** es solo para uso interno.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | IPSEC-negociación-tipo de Directiva               |
-| Nombre para mostrar de LDAP | iPSECNegotiationPolicyType                  |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | IPSEC-Negotiation-Policy-Type               |
+| Ldap-Display-Name | iPSECNegotiationPolicyType                  |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.887                      |
-| System-ID-GUID    | 07383074-91df-11d1-aebc-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 07383074-91df-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ El atributo **IPSec-negociación-Policy-Type** es solo para uso interno.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**Directiva de negociación de IPSec**](c-ipsecnegotiationpolicy.md)<br/> |
+| Clases usadas en        | [**Ipsec-Negotiation-Policy**](c-ipsecnegotiationpolicy.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El atributo **IPSec-negociación-Policy-Type** es solo para uso interno.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**Directiva de negociación de IPSec**](c-ipsecnegotiationpolicy.md)<br/> |
+| Clases usadas en        | [**Ipsec-Negotiation-Policy**](c-ipsecnegotiationpolicy.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El atributo **IPSec-negociación-Policy-Type** es solo para uso interno.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**Directiva de negociación de IPSec**](c-ipsecnegotiationpolicy.md)<br/> |
+| Clases usadas en        | [**Ipsec-Negotiation-Policy**](c-ipsecnegotiationpolicy.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El atributo **IPSec-negociación-Policy-Type** es solo para uso interno.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**Directiva de negociación de IPSec**](c-ipsecnegotiationpolicy.md)<br/> |
+| Clases usadas en        | [**Ipsec-Negotiation-Policy**](c-ipsecnegotiationpolicy.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El atributo **IPSec-negociación-Policy-Type** es solo para uso interno.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**Directiva de negociación de IPSec**](c-ipsecnegotiationpolicy.md)<br/> |
+| Clases usadas en        | [**Ipsec-Negotiation-Policy**](c-ipsecnegotiationpolicy.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ El atributo **IPSec-negociación-Policy-Type** es solo para uso interno.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**Directiva de negociación de IPSec**](c-ipsecnegotiationpolicy.md)<br/> |
+| Clases usadas en        | [**Ipsec-Negotiation-Policy**](c-ipsecnegotiationpolicy.md)<br/> |
 
 
 

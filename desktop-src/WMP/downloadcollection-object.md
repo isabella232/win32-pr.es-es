@@ -1,44 +1,44 @@
 ---
-title: Objeto DownloadCollection
-description: Objeto DownloadCollection
+title: DownloadCollection (objeto)
+description: DownloadCollection (objeto)
 ms.assetid: e943b391-386e-43c5-a314-55ea31b2eefa
 keywords:
-- Windows Media Player tiendas en línea, objeto DownloadCollection
-- tiendas en línea, objeto DownloadCollection
+- Reproductor de Windows Media en línea, objeto DownloadCollection
+- online stores,DownloadCollection (objeto)
 - tipo 2 tiendas en línea, objeto DownloadCollection
 - DownloadCollection
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b8275cbd2661bdce9c428800206c14b9c55942c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 565ddce120d71ab9825c424fefb6f0e3ace9a6ac349e87e044e9c74e6da28789
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902025"
 ---
-# <a name="downloadcollection-object"></a>Objeto DownloadCollection
+# <a name="downloadcollection-object"></a>DownloadCollection (objeto)
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
- 
+ 
 
-El objeto **DownloadCollection** contiene propiedades y métodos para controlar las colecciones de elementos de descarga. Las páginas web que se hospedan en el modo completo de Windows Media Player y que tienen acceso al objeto **externo** , como las tiendas en línea, pueden usarlas.
+El **objeto DownloadCollection** contiene propiedades y métodos para controlar colecciones de elementos de descarga. Se puede usar en páginas web hospedadas en el modo completo Reproductor de Windows Media  y que tienen acceso al objeto Externo, como las tiendas en línea.
 
-El objeto **DownloadCollection** admite las siguientes propiedades.
+El **objeto DownloadCollection** admite las siguientes propiedades.
 
 
 
 | Propiedad                              | Descripción                                  |
 |---------------------------------------|----------------------------------------------|
 | [count](downloadcollection-count.md) | Recupera el número de descargas pendientes.   |
-| [id](downloadcollection-id.md)       | Recupera el identificador de la colección de descargas. |
+| [identificador](downloadcollection-id.md)       | Recupera el identificador de la colección de descarga. |
 
 
 
- 
+ 
 
-El objeto **DownloadCollection** admite los siguientes métodos.
+El **objeto DownloadCollection** admite los métodos siguientes.
 
 
 
@@ -51,9 +51,9 @@ El objeto **DownloadCollection** admite los siguientes métodos.
 
 
 
- 
+ 
 
-Se tiene acceso al objeto **DownloadCollection** a través de los métodos siguientes.
+Se **accede al objeto DownloadCollection** a través de los métodos siguientes.
 
 
 
@@ -64,9 +64,9 @@ Se tiene acceso al objeto **DownloadCollection** a través de los métodos sigui
 
 
 
- 
+ 
 
-A efectos de Ilustración, **Downloadmanager**. **getDownloadCollection**(*collectionId*) se usa en las secciones de sintaxis de referencia.
+Para fines ilustrativos, **DownloadManager**. **getDownloadCollection**(*collectionId*) se usa en las secciones de sintaxis de referencia.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -75,9 +75,9 @@ A efectos de Ilustración, **Downloadmanager**. **getDownloadCollection**(*colle
 [**Referencia de las tiendas en línea de tipo 2**](reference-for-type-2-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

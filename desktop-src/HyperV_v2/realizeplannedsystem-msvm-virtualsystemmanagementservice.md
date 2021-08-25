@@ -1,7 +1,7 @@
 ---
 description: Valida la configuración de una máquina virtual planeada y la convierte en una máquina virtual realizada.
 ms.assetid: bddbdc35-4603-45c3-96b4-04f445dbb3a6
-title: Método RealizePlannedSystem de la clase Msvm_VirtualSystemManagementService
+title: Método RealizePlannedSystem de la Msvm_VirtualSystemManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: fc69cbc9be9fc72bc7c1184ec30d9e2b58ba2b6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7589c4c68a5375971c085abd0411c0e6e8c7813797ba2f5e5e6f72483a4894a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980215"
 ---
-# <a name="realizeplannedsystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RealizePlannedSystem de la \_ clase VirtualSystemManagementService de MSVM
+# <a name="realizeplannedsystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RealizePlannedSystem de la clase Msvm \_ VirtualSystemManagementService
 
-Valida la configuración de una máquina virtual planeada y la convierte en una máquina virtual realizada. Los archivos de estado en tiempo de ejecución o guardados asociados a la máquina virtual se copiarán del directorio de importación a la raíz de datos de la máquina virtual, si procede.
+Valida la configuración de una máquina virtual planeada y la convierte en una máquina virtual realizada. Los archivos de estado guardados o en tiempo de ejecución asociados a la máquina virtual se copiarán del directorio de importación a la raíz de datos de la máquina virtual, si procede.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,26 +41,26 @@ uint32 RealizePlannedSystem(
 
 <dl> <dt>
 
-*PlannedSystem* \[ de\]
+*PlannedSystem* \[ En\]
 </dt> <dd>
 
-Referencia a la instancia de [**MSVM \_ PlannedComputerSystem**](msvm-plannedcomputersystem.md) que se va a convertir en una máquina virtual realizada.
+Referencia a la instancia [**de Msvm \_ PlannedComputerSystem**](msvm-plannedcomputersystem.md) que se va a convertir en una máquina virtual realizada.
 
 </dd> <dt>
 
-*ResultingSystem* \[ enuncia\]
+*ResultingSystem* \[ out\]
 </dt> <dd>
 
-Si la operación se completa de forma sincrónica, se trata de una referencia a un objeto [**\_ ComputerSystem de CIM**](msvm-computersystem.md) que representa la máquina virtual resultante.
+Si la operación se completa sincrónicamente, una referencia a un objeto [**\_ ComputerSystem cim**](msvm-computersystem.md) que representa la máquina virtual resultante realizada.
 
-DataType actualizado de [**MSVM \_ ComputerSystem**](msvm-computersystem.md) en Windows 10, versión 1703.
+Tipo de datos actualizado desde [**Msvm \_ ComputerSystem**](msvm-computersystem.md) en Windows 10, versión 1703.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -85,16 +85,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -103,18 +103,18 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de C# se usa el método **RealizePlannedSystem** para obtener una máquina virtual planeada. Este código se toma del [ejemplo de máquinas virtuales planeadas de Hyper-V](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Pvm). Las utilidades a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+En el ejemplo de C# siguiente se usa **el método RealizePlannedSystem** para realizar una máquina virtual planeada. Este código se toma del ejemplo de máquinas virtuales planeadas de [Hyper-V.](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Pvm) Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 > [!IMPORTANT]
-> Para que funcione correctamente, se debe ejecutar el código siguiente en el servidor host de máquina virtual y se debe ejecutar con privilegios de administrador.
+> Para funcionar correctamente, el código siguiente debe ejecutarse en el servidor host de la máquina virtual y debe ejecutarse con privilegios de administrador.
 
  
 
@@ -172,10 +172,10 @@ RealizePvm(
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -184,7 +184,7 @@ RealizePvm(
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
 title: AmbientAttributes.id
-description: El atributo id especifica o recupera el identificador de un control. Este atributo será compatible con cualquier nombre permitido por Microsoft Visual Basic para Aplicaciones. Solo se puede establecer en tiempo de diseño.
+description: El atributo id especifica o recupera el identificador de un control. Este atributo admitirá cualquier nombre permitido por Microsoft Visual Basic para Aplicaciones. Solo se puede establecer en tiempo de diseño.
 ms.assetid: a1e8d493-ac11-46a0-9b79-18270d188427
 keywords:
-- AmbientAttributes.id Windows Media Player
+- AmbientAttributes.id Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fcd0361b7f25b904073471f60f09cdea1e809ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1a98022c5e499a260cb2dc224941614b0a3adab90ad9aed2cfce6561cc108187
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862355"
 ---
 # <a name="ambientattributesid"></a>AmbientAttributes.id
 
-El atributo **ID** especifica o recupera el identificador de un control. Este atributo será compatible con cualquier nombre permitido por Microsoft Visual Basic para Aplicaciones. Solo se puede establecer en tiempo de diseño.
+El **atributo** id especifica o recupera el identificador de un control. Este atributo admitirá cualquier nombre permitido por Microsoft Visual Basic para Aplicaciones. Solo se puede establecer en tiempo de diseño.
 
 ``` syntax
         elementID.id
@@ -29,11 +29,11 @@ El atributo **ID** especifica o recupera el identificador de un control. Este at
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** especificada en tiempo de diseño y de solo lectura después. Tiene un valor predeterminado de
+Este atributo es una **cadena especificada** en tiempo de diseño y de solo lectura a partir de entonces. Tiene un valor predeterminado de
 
-Unnamed \_ *elementType* \_ *NUM*
+Número de tipo \_ *de elemento sin* \_ *nombre*
 
-donde *elementType* es el nombre del tipo de control y *NUM* es un número que corresponde a la posición del control en la secuencia de todos los controles sin nombre del tema. Este número se restablece en cero para cada nuevo tema.
+donde *elementtype* es el nombre del tipo de control y *num* es un número que corresponde a la posición del control en la secuencia de todos los controles sin nombre del tema. Este número se restablece en cero para cada nuevo tema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ donde *elementType* es el nombre del tipo de control y *NUM* es un número que c
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -49,7 +49,7 @@ donde *elementType* es el nombre del tipo de control y *NUM* es un número que c
 
 <dl> <dt>
 
-[**Atributos de ambiente**](ambient-attributes.md)
+[**Atributos ambientales**](ambient-attributes.md)
 </dt> </dl>
 
  

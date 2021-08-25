@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 83c0c9f86f06488cef34ab24212c8754df7bd63e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d318e1c25b54d9cc7dfa56be17cd471c9ec00f90ddade4d00696d1ba4f535657
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948125"
 ---
 # <a name="mschapv2connectionpropertiesv1-schema-elements"></a>Elementos de esquema mschapv2connectionpropertiesv1
 

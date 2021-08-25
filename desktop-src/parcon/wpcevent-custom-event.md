@@ -1,23 +1,23 @@
 ---
 description: Evento por usuario que admite hasta tres campos.
 ms.assetid: e6cf8008-b896-453b-9946-a6b3d94a991a
-title: Evento WPCEVENT_CUSTOM (Wpcevent. h)
+title: WPCEVENT_CUSTOM evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d20cb2450cd18bb0c77993622d226cfc06dff6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8082e03aa6dfea8cd2fd461feec093de71a1ada8051b8fb88295d0bbbf570b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951555"
 ---
-# <a name="wpcevent_custom-event"></a>\_Evento personalizado WPCEVENT
+# <a name="wpcevent_custom-event"></a>Evento WPCEVENT \_ CUSTOM
 
 Evento por usuario que admite hasta tres campos.
 
-Los eventos se muestran en el **visor de actividades** de la **otra** sección con la siguiente jerarquía:
+Los eventos se muestran en el **Visor de actividad** de la sección **Otros** con la siguiente jerarquía:
 
-1.  Publicador
+1.  Publisher
 
 2.  Application
 
@@ -34,24 +34,24 @@ const EVENT_DESCRIPTOR WPCEVENT_CUSTOM = {0xd, 0x0, 0x10, 0x4, 0x17, 0xd, 0x8000
 
 <dl> <dt>
 
-*Publicador* 
+*Publisher* 
 </dt> <dd>
 
-El publicador del evento (por ejemplo, un nombre de empresa).
+Publicador del evento (por ejemplo, un nombre de empresa).
 
 </dd> <dt>
 
 *AppName* 
 </dt> <dd>
 
-El nombre de la aplicación que está generando el evento.
+Nombre de la aplicación que genera el evento.
 
 </dd> <dt>
 
-*Versiónaplicación* 
+*AppVersion* 
 </dt> <dd>
 
-Versión de la aplicación que está generando el evento.
+Versión de la aplicación que genera el evento.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Nombre del evento.
 
 </dd> <dt>
 
-*Value1* 
+*Valor1* 
 </dt> <dd>
 
 Campo personalizado 1.
@@ -76,7 +76,7 @@ Campo personalizado 2.
 
 </dd> <dt>
 
-*Value3* 
+*Valor3* 
 </dt> <dd>
 
 Campo personalizado 3.
@@ -86,14 +86,14 @@ Campo personalizado 3.
 *Bloqueado* 
 </dt> <dd>
 
-Un valor de la enumeración [**WPCFLAG \_ ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados y qué controles hay en su lugar.
+Valor de la enumeración [**\_ WPCFLAG ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados para su uso y qué controles están en su lugar.
 
 </dd> <dt>
 
 *Motivo* 
 </dt> <dd>
 
-Una cadena personalizada que proporciona información adicional sobre el motivo de bloqueo o no bloqueo.
+Cadena personalizada que proporciona información adicional sobre la razón para bloquear o no bloquear.
 
 </dd> </dl>
 
@@ -103,9 +103,9 @@ Una cadena personalizada que proporciona información adicional sobre el motivo 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Encabezado<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -113,10 +113,10 @@ Una cadena personalizada que proporciona información adicional sobre el motivo 
 
 <dl> <dt>
 
-[Uso de las API de registro para controles parentales](using-logging-apis-for-parental-controls.md)
+[Uso de las API de registro para los controles parentales](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**WPC \_ args \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

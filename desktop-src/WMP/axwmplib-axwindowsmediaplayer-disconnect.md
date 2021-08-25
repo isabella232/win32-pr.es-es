@@ -1,9 +1,9 @@
 ---
 title: Evento Disconnect del objeto AxWindowsMediaPlayer
-description: El evento Disconnect se reserva para uso futuro.
+description: El evento Disconnect está reservado para su uso futuro.
 ms.assetid: 3baecc6c-e772-4269-96c1-900be270543e
 keywords:
-- Evento Disconnect del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento Disconnect del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89dffe3191efeddba74eb22c7c5c72b8c52bc095
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f0554de8fe71ae13e510733ed2204ff4ed79d575a40f23a1769a5fb36eeb560
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902705"
 ---
 # <a name="disconnect-event-of-the-axwindowsmediaplayer-object"></a>Evento Disconnect del objeto AxWindowsMediaPlayer
 
-El evento Disconnect se reserva para uso futuro.
+El evento Disconnect está reservado para su uso futuro.
 
 ``` syntax
 [C#]
@@ -47,15 +47,15 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad | Descripción                               |
 |----------|-------------------------------------------|
-| resultado   | **System. Int32** No compatible.<br/> |
+| resultado   | **System.Int32** No se admite.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento se reserva para uso futuro.
+Este evento está reservado para su uso futuro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Este evento se reserva para uso futuro.
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: a14e837a0903290c3197bbb17ec4b2da3f68b419
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6205c0de94747bfe4a30e1c07f48383bac347b1bbd3cc9dce1dc0c925296cf03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848585"
 ---
 # <a name="id3dxbaseeffectsetintarray-method"></a>Método ID3DXBaseEffect::SetIntArray
 
@@ -86,7 +86,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

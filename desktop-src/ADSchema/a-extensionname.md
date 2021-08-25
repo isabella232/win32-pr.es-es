@@ -1,11 +1,11 @@
 ---
-title: Extension-Name atributo)
+title: Extension-Name atributo
 description: Nombre de una página de propiedades que se usa para extender la interfaz de usuario de un objeto de directorio.
 ms.assetid: 7afa3363-00ac-4651-8a5c-b36b4ee8bf88
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Extension-Name
-- extensionName esquema de AD de atributos
+- Extension-Name esquema de AD del atributo
+- Esquema de AD del atributo extensionName
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 841685edbafbc761b1531f29f16d45657b57011d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 270398ea4a351b7d170a3eecc37dd2cded87b1a7aada911cf6be32372d5f61bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929685"
 ---
-# <a name="extension-name-attribute"></a>Extension-Name atributo)
+# <a name="extension-name-attribute"></a>Extension-Name atributo
 
 Nombre de una página de propiedades que se usa para extender la interfaz de usuario de un objeto de directorio.
 
@@ -30,13 +30,13 @@ Nombre de una página de propiedades que se usa para extender la interfaz de usu
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Extension-Name                              |
-| Nombre para mostrar de LDAP | extensionName                               |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Creador del objeto de extensión.        |
-| Frecuencia de actualización  | Siempre que se crea una nueva extensión de la interfaz de usuario.     |
+| Ldap-Display-Name | extensionName                               |
+| Size              | \-                                          |
+| Privilegio actualizar  | Creador del objeto de extensión.        |
+| Frecuencia de actualización  | Siempre que se crea una nueva extensión de interfaz de usuario.     |
 | Attribute-Id      | 1.2.840.113556.1.2.227                      |
-| System-ID-GUID    | bf967972-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967972-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Nombre de una página de propiedades que se usa para extender la interfaz de usu
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80A9                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
@@ -76,13 +76,13 @@ Nombre de una página de propiedades que se usa para extender la interfaz de usu
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80A9                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
@@ -97,13 +97,13 @@ Nombre de una página de propiedades que se usa para extender la interfaz de usu
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80A9                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
@@ -118,13 +118,13 @@ Nombre de una página de propiedades que se usa para extender la interfaz de usu
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80A9                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
@@ -139,13 +139,13 @@ Nombre de una página de propiedades que se usa para extender la interfaz de usu
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80A9                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
@@ -160,13 +160,13 @@ Nombre de una página de propiedades que se usa para extender la interfaz de usu
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80A9                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |

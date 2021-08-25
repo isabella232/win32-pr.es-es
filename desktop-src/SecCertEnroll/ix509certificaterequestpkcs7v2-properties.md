@@ -1,24 +1,24 @@
 ---
 description: La interfaz IX509CertificateRequestPkcs7V2 expone las siguientes propiedades.
 ms.assetid: 2C545664-19A5-4AC9-932D-2B9CFC33090E
-title: Propiedades de IX509CertificateRequestPkcs7V2
+title: Propiedades IX509CertificateRequestPkcs7V2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6942a8ea1b880769940969458e07bcbe90ec9251
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 446aa05542df6540044875f16647da14ce4a55b2292a030234c340a910e4fba0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119960354"
 ---
-# <a name="ix509certificaterequestpkcs7v2-properties"></a>Propiedades de IX509CertificateRequestPkcs7V2
+# <a name="ix509certificaterequestpkcs7v2-properties"></a>Propiedades IX509CertificateRequestPkcs7V2
 
-La interfaz [**IX509CertificateRequestPkcs7V2**](/windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestpkcs7v2) expone las siguientes propiedades.
+La [**interfaz IX509CertificateRequestPkcs7V2**](/windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestpkcs7v2) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**Propiedad PolicyServer**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs7v2-get_policyserver)
--   [**Propiedad de plantilla**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs7v2-get_template)
+-   [**Propiedad Template**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestpkcs7v2-get_template)
 
  
 

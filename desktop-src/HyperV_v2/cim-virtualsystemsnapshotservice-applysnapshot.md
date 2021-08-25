@@ -1,7 +1,7 @@
 ---
 description: Aplica una instantánea del sistema virtual al sistema virtual desde el que se creó.
 ms.assetid: acd90ce0-7f82-48d9-9d23-903ba6815779
-title: Método ApplySnapshot de la clase CIM_VirtualSystemSnapshotService
+title: Método ApplySnapshot de la clase CIM_VirtualSystemSnapshotService aplicación
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 252f7d7d9a57b439ac00fa663fa0a0e816ebada0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 922904383fd30798b49c5a6e11478a34b2a649efcc4b70d550fe888222b9018b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980475"
 ---
-# <a name="applysnapshot-method-of-the-cim_virtualsystemsnapshotservice-class"></a>Método ApplySnapshot de la \_ clase VirtualSystemSnapshotService de CIM
+# <a name="applysnapshot-method-of-the-cim_virtualsystemsnapshotservice-class"></a>Método ApplySnapshot de la clase \_ CIM VirtualSystemSnapshotService
 
 Aplica una instantánea del sistema virtual al sistema virtual desde el que se creó.
 
@@ -40,20 +40,20 @@ uint32 ApplySnapshot(
 
 <dl> <dt>
 
-*Instantánea* \[ de de\]
+*Instantánea* \[ En\]
 </dt> <dd>
 
-Una [**referencia \_ VirtualSystemSettingData de CIM**](cim-virtualsystemsettingdata.md) a la instantánea del sistema virtual.
+Referencia [**de CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) a la instantánea del sistema virtual.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación es de larga ejecución, opcionalmente se puede devolver un [**\_ ConcreteJob de CIM**](cim-concretejob.md) que represente el trabajo.
+Si la operación es de larga duración, opcionalmente se puede devolver [**un \_ concretejob CIM**](cim-concretejob.md) que representa el trabajo.
 
 > [!Note]  
-> Este parámetro era de lectura/escritura en Windows 8.1.
+> Este parámetro era de lectura y escritura en Windows 8.1.
 
  
 
@@ -61,7 +61,7 @@ Si la operación es de larga ejecución, opcionalmente se puede devolver un [**\
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -74,7 +74,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -92,10 +92,10 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -105,9 +105,9 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -116,7 +116,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMSNAPSHOTSERVICE CIM**](cim-virtualsystemsnapshotservice.md)
+[**CIM \_ VirtualSystemSnapshotService**](cim-virtualsystemsnapshotservice.md)
 </dt> </dl>
 
  

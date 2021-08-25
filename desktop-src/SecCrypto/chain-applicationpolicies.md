@@ -1,7 +1,7 @@
 ---
-description: Devuelve una colección de OID que representa los OID de directiva de aplicación válidos para la cadena.
+description: Devuelve una colección de ID que representa los IDENTIFICADORES de directiva de aplicación válidos para la cadena.
 ms.assetid: 4e4a7dce-5004-4b80-b132-3cdc0c048cde
-title: 'IChain2:: ApplicationPolicies (método)'
+title: IChain2::ApplicationPolicies (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,20 +14,20 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: a90eb7a493bfe81f5c4a38f773b0307380002b6b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c5283ea684e1d84b64644891aa2819c3e37d20126ddd227a06ad3c38c7cb92bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877065"
 ---
-# <a name="ichain2applicationpolicies-method"></a>IChain2:: ApplicationPolicies (método)
+# <a name="ichain2applicationpolicies-method"></a>IChain2::ApplicationPolicies (método)
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la [**clase X509Chain**](/dotnet/api/system.security.cryptography.x509certificates.x509chain?view=netcore-3.1) en el espacio de nombres [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use [**la clase X509Chain**](/dotnet/api/system.security.cryptography.x509certificates.x509chain?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-El método **ApplicationPolicies** devuelve una colección de [**OID**](oids.md) que representa los OID de directiva de aplicación válidos para la cadena.
+El **método ApplicationPolicies** devuelve una colección de IDs que representa los IDENTIFICADORES de directiva de aplicación válidos para la cadena. [](oids.md)
 
-Este método se presenta en CAPICOM 2,0.
+Este método se introdujo en CAPICOM 2.0.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Este método no tiene parámetros.
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuible<br/>       | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/>       | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

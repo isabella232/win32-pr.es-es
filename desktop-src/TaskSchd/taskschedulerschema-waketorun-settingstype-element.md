@@ -1,9 +1,9 @@
 ---
 title: Elemento WakeToRun (settingsType)
-description: Especifica que Programador de tareas reactivará el equipo cuando sea el momento de ejecutar la tarea.
+description: Especifica que Programador de tareas reactivará el equipo cuando llegue el momento de ejecutar la tarea.
 ms.assetid: 5fb53016-5778-463d-bb32-3c1da2de6fc2
 keywords:
-- Programador de tareas del elemento WakeToRun
+- WakeToRun, elemento Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 23eeaa06073fa9259c1a48137cf3676baa402d39
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 12d16f9f06685a427a8f3e7c4f2356dff0bc6415e50379ba752a4bc3a3fec8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872065"
 ---
 # <a name="waketorun-settingstype-element"></a>Elemento WakeToRun (settingsType)
 
-Especifica que Programador de tareas reactivará el equipo cuando sea el momento de ejecutar la tarea.
+Especifica que Programador de tareas reactivará el equipo cuando llegue el momento de ejecutar la tarea.
 
 ``` syntax
 <xs:element name="WakeToRun"
@@ -30,7 +30,7 @@ Especifica que Programador de tareas reactivará el equipo cuando sea el momento
  />
 ```
 
-El elemento **WakeToRun** se define mediante el tipo complejo de [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+El **elemento WakeToRun** se define mediante el [**tipo complejo settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,17 +38,17 @@ El elemento **WakeToRun** se define mediante el tipo complejo de [**settingsType
 
 | Elemento                                                           | Derivado de                                                         | Descripción                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas utiliza para realizar la tarea.<br/> |
+| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas usa para realizar la tarea.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el servicio de Programador de tareas reactiva el equipo para ejecutar una tarea, es posible que la pantalla permanezca desactivada aunque el equipo ya no esté en modo de suspensión o hibernación. La pantalla se activará cuando Windows Vista detecte que un usuario ha vuelto a usar el equipo.
+Cuando el Programador de tareas reactiva el equipo para ejecutar una tarea, la pantalla puede permanecer desactivada aunque el equipo ya no esté en modo de suspensión o hibernación. La pantalla se activará cuando Windows Vista detecte que un usuario ha vuelto a usar el equipo.
 
-Para el desarrollo de C++, consulte la [**propiedad WakeToRun de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_waketorun).
+Para el desarrollo de C++, [**vea WakeToRun Property of ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_waketorun).
 
-Para el desarrollo de scripts, vea [**TaskSettings. WakeToRun**](tasksettings-waketorun.md).
+Para el desarrollo de scripts, [**vea TaskSettings.WakeToRun**](tasksettings-waketorun.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ Para el desarrollo de scripts, vea [**TaskSettings. WakeToRun**](tasksettings-wa
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -65,7 +65,7 @@ Para el desarrollo de scripts, vea [**TaskSettings. WakeToRun**](tasksettings-wa
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

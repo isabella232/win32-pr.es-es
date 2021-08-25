@@ -1,7 +1,7 @@
 ---
-description: La estructura de la información de la impresora \_ \_ 8 especifica la configuración de impresora predeterminada global.
+description: La estructura PRINTER \_ INFO \_ 8 especifica la configuración de impresora predeterminada global.
 ms.assetid: 98f26a45-5302-4358-bed6-691d9bc37554
-title: Estructura de PRINTER_INFO_8 (winspool. h)
+title: PRINTER_INFO_8 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: e17780dc2f39dc3041e690de1ef7b5728c8743e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0aa5d516dd099caeba5699a8328fa52add64f14ea970e6ccec28ea8bfbe87271
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947675"
 ---
-# <a name="printer_info_8-structure"></a>Información de impresora \_ \_ 8 (estructura)
+# <a name="printer_info_8-structure"></a>Estructura PRINTER \_ INFO \_ 8
 
-La estructura de la información de la **impresora \_ \_ 8** especifica la configuración de impresora predeterminada global.
+La **estructura PRINTER INFO \_ \_ 8** especifica la configuración de impresora predeterminada global.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,9 +48,9 @@ Puntero a una estructura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmo
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores predeterminados globales están establecidos por el administrador de una impresora que puede usar cualquier usuario. Por el contrario, los valores predeterminados por usuario afectarán a un usuario determinado o a cualquier otra persona que use el perfil. Para los valores predeterminados por usuario, use la información de la [**impresora \_ \_ 9**](printer-info-9.md).
+El administrador de una impresora puede usar los valores predeterminados globales. En cambio, los valores predeterminados por usuario afectarán a un usuario determinado o a cualquier otra persona que use el perfil. Para los valores predeterminados por usuario, use [**PRINTER \_ INFO \_ 9**](printer-info-9.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,8 +60,8 @@ Los valores predeterminados globales están establecidos por el administrador de
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | Información de la **\_ impresora \_ \_ 8W** (Unicode) y la información de la **\_ impresora \_ \_ 8A** (ANSI)<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ PRINTER \_ INFO \_ 8W** (Unicode) e **\_ PRINTER INFO \_ \_ 8A** (ANSI)<br/>                           |
 
 
 
@@ -72,7 +72,7 @@ Los valores predeterminados globales están establecidos por el administrador de
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API de Spooler de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**GetPrinter**](getprinter.md)
@@ -81,7 +81,7 @@ Los valores predeterminados globales están establecidos por el administrador de
 [**SetPrinter**](setprinter.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 9**](printer-info-9.md)
+[**INFORMACIÓN \_ DE IMPRESORA \_ 9**](printer-info-9.md)
 </dt> </dl>
 
  

@@ -1,40 +1,40 @@
 ---
-title: Recuperación de la respuesta de un trabajo Upload-Reply
-description: Para cargar datos en una aplicación de servidor y devolver datos al cliente, especifique el trabajo como el tipo de trabajo de BG \_ \_ \_ \_ Job upload Response.
+title: Recuperar la respuesta de un trabajo Upload-Reply trabajo
+description: Para cargar datos en una aplicación de servidor y hacer que devuelvan datos al cliente, especifique el trabajo como un trabajo BG \_ JOB \_ TYPE UPLOAD \_ \_ REPLY.
 ms.assetid: bab28a2c-1e2f-4b76-9dc6-57df26f7efec
 ms.topic: article
 ms.date: 11/29/2018
-ms.openlocfilehash: 582a37a31c13c5cc3e0b44c51a767cfbe465c64c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 79ca145a3ed243209fc0059b20823e32da3cf3974850a6bc3e872f43dbd40aa1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004885"
 ---
-# <a name="retrieving-the-reply-from-an-upload-reply-job"></a>Recuperación de la respuesta de un trabajo Upload-Reply
+# <a name="retrieving-the-reply-from-an-upload-reply-job"></a>Recuperar la respuesta de un trabajo Upload-Reply trabajo
 
-Un trabajo de Upload-Reply BITS, además de cargar un archivo en un servidor, también examinará una dirección URL de respuesta que se envía como parte de la respuesta del servidor y, a continuación, sigue automáticamente la dirección URL de respuesta y descarga una respuesta de ella. Consulte la documentación [de ACK for Fragment](/windows/desktop/Bits/ack-for-fragment) para obtener más detalles sobre el valor de encabezado bits-respuesta-URL.
+Un trabajo Upload-Reply BITS, además de cargar un archivo en un servidor, también examinará una dirección URL de respuesta enviada como parte de la respuesta del servidor y, a continuación, seguirá automáticamente la dirección URL de respuesta y descargará una respuesta de ella. Consulte la [documentación de Ack for Fragment](/windows/desktop/Bits/ack-for-fragment) para obtener más detalles sobre el valor del encabezado BITS-Reply-URL.
 
-Establezca el tipo de trabajo como \_ tipo de trabajo BG \_ \_ enviar \_ respuesta para crear un trabajo de tipo Upload-Reply. Los datos de la respuesta están disponibles para el cliente después de que el trabajo entre en el estado de trabajo de BG en \_ \_ \_ Estado transferido. Para recuperar la respuesta, llame a uno de los métodos siguientes:
+Establezca el tipo de trabajo como BG \_ JOB TYPE UPLOAD REPLY para crear un Upload-Reply trabajo de tipo de \_ \_ \_ trabajo. Los datos de respuesta están disponibles para el cliente después de que el trabajo entre en el estado BG \_ JOB \_ STATE \_ TRANSFERRED. Para recuperar la respuesta, llame a uno de los métodos siguientes:
 
 -   [**IBackgroundCopyJob2::GetReplyData**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplydata)
 
-    Proporciona una copia en memoria de los datos de la respuesta. Use este método para leer los datos de la respuesta antes o después de llamar al método [**IBackgroundCopyJob:: Complete**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-complete) . Si los datos de respuesta superan 1 MB, la aplicación debe llamar al método [**IBackgroundCopyJob2:: GetReplyFileName**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyfilename) para recuperar el nombre del archivo de respuesta y leer su contenido directamente.
+    Proporciona una copia en memoria de los datos de respuesta. Use este método para leer los datos de respuesta antes o después de llamar al [**método IBackgroundCopyJob::Complete.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-complete) Si los datos de respuesta superan los 1 MB, la aplicación debe llamar al método [**IBackgroundCopyJob2::GetReplyFileName**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyfilename) para recuperar el nombre del archivo de respuesta y leer su contenido directamente.
 
 -   [**IBackgroundCopyJob2::GetReplyFileName**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyfilename)
 
-    Proporciona el nombre del archivo que contiene la respuesta. Debe llamar al método **IBackgroundCopyJob:: Complete** antes de abrir y leer el archivo de respuesta; el archivo de respuesta no está disponible para el cliente hasta que se llama al método **Complete** .
+    Proporciona el nombre del archivo que contiene la respuesta. Debe llamar al método **IBackgroundCopyJob::Complete** antes de abrir y leer el archivo de respuesta. el archivo de respuesta no está disponible para el cliente hasta que se llama al **método** Complete.
 
-Llame a estos métodos en el método [**IBackgroundCopyCallback:: JobTransferred**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobtransferred) solo si la respuesta es pequeña y se puede procesar rápidamente para que no bloquee el subproceso de devolución de llamada. Si usa la [**notificación**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setnotifycmdline) de la línea de comandos en lugar de la devolución de llamada, pase el identificador del trabajo al archivo ejecutable. El archivo ejecutable utiliza el identificador de trabajo para llamar al método **Complete** para que el archivo de respuesta esté disponible.
+Llame a estos métodos en el método [**IBackgroundCopyCallback::JobTransferred**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobtransferred) solo si la respuesta es pequeña y se puede procesar rápidamente para no bloquear el subproceso de devolución de llamada. Si usa la notificación [**de línea de comandos en**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setnotifycmdline) lugar de la devolución de llamada, pase el identificador del trabajo al archivo ejecutable. El archivo ejecutable usa el identificador de trabajo para llamar al **método Complete** para que el archivo de respuesta esté disponible.
 
-En los siguientes ejemplos se muestra cómo utilizar cada método para recuperar los datos de la respuesta.
+En los ejemplos siguientes se muestra cómo usar cada método para recuperar los datos de respuesta.
 
--   [Usar GetReplyData](#using-getreplydata)
--   [Usar GetReplyFileName](#using-getreplyfilename)
+-   [Uso de GetReplyData](#using-getreplydata)
+-   [Uso de GetReplyFileName](#using-getreplyfilename)
 
-## <a name="using-getreplydata"></a>Usar GetReplyData
+## <a name="using-getreplydata"></a>Uso de GetReplyData
 
-En el ejemplo siguiente se muestra cómo recuperar los datos de respuesta mediante el método [**IBackgroundCopyJob2:: GetReplyData**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplydata) . En el ejemplo se da por supuesto que el puntero de la interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido, el tipo del trabajo es upload-Response y el estado del trabajo es transferencia de estado del trabajo de BG \_ \_ \_ .
+En el ejemplo siguiente se muestra cómo recuperar los datos de respuesta mediante el [**método IBackgroundCopyJob2::GetReplyData.**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplydata) En el ejemplo se supone que el puntero de interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido, el tipo del trabajo es upload-reply y el estado del trabajo es BG \_ JOB STATE \_ \_ TRANSFERRED.
 
 
 ```C++
@@ -83,9 +83,9 @@ else
 
 
 
-## <a name="using-getreplyfilename"></a>Usar GetReplyFileName
+## <a name="using-getreplyfilename"></a>Uso de GetReplyFileName
 
-En el ejemplo siguiente se muestra cómo recuperar los datos de respuesta mediante el método [**IBackgroundCopyJob2:: GetReplyFileName**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyfilename) . En el ejemplo se da por supuesto que el puntero de la interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido, el tipo de trabajo es upload-Response y el estado del trabajo es transferencia de estado del trabajo de BG \_ \_ \_ .
+En el ejemplo siguiente se muestra cómo recuperar los datos de respuesta mediante el [**método IBackgroundCopyJob2::GetReplyFileName.**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyfilename) En el ejemplo se supone que el puntero de interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido, el tipo de trabajo es upload-reply y el estado del trabajo es BG \_ JOB STATE \_ \_ TRANSFERRED.
 
 
 ```C++
@@ -123,9 +123,9 @@ else
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: ErrorCode (elemento ProcessingErrorDataType)
-description: Contiene el código de error que se produjo cuando se produjo un error al procesar los datos de evento.
+title: Elemento ErrorCode (ProcessingErrorDataType)
+description: Contiene el código de error que se produjo cuando se produjo un error al procesar datos de eventos.
 ms.assetid: 30243369-6ab0-450b-a345-6f8ff9b21543
 keywords:
-- ErrorCode (EventLog, elemento)
+- Elemento ErrorCode EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 938870f5069c2be920bf6b9a7970d76f89620e68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 200ff2c06cced288c6cbcd62679d4b30207d994d6d03d4d6bf27b92896060326
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863245"
 ---
-# <a name="errorcode-processingerrordatatype-element"></a>ErrorCode (elemento ProcessingErrorDataType)
+# <a name="errorcode-processingerrordatatype-element"></a>Elemento ErrorCode (ProcessingErrorDataType)
 
-Contiene el código de error que se produjo cuando se produjo un error al procesar los datos de evento.
+Contiene el código de error que se produjo cuando se produjo un error al procesar datos de eventos.
 
 ``` syntax
 <xs:element name="ErrorCode"
@@ -30,7 +30,7 @@ Contiene el código de error que se produjo cuando se produjo un error al proces
  />
 ```
 
-El elemento **ErrorCode** se define mediante el tipo complejo [**ProcessingErrorDataType**](eventschema-processingerrordatatype-complextype.md) .
+El tipo complejo [**ProcessingErrorDataType**](eventschema-processingerrordatatype-complextype.md) define el elemento **ErrorCode.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **ErrorCode** se define mediante el tipo complejo [**ProcessingError
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

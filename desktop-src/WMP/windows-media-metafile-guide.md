@@ -1,16 +1,16 @@
 ---
-title: Guía de metarchivo de Windows Media
-description: Guía de metarchivo de Windows Media
+title: Windows Guía de metarchivo multimedia
+description: Windows Guía de metarchivo multimedia
 ms.assetid: d2360a63-f073-44b0-8637-1f22b577f51a
 keywords:
-- Metaarchivos de Windows Media, acerca de
-- Media Player de Windows, metaarchivos
-- Windows Media Player, metaarchivos de Windows Media
-- metaarchivos, acerca de
-- Windows Media, metaarchivos
-- Listas de reproducción de metarchivos de Windows Media, acerca de
+- Windows Metarchivos multimedia, acerca de
+- Reproductor de Windows Media,metarchivos
+- Reproductor de Windows Media,Windows metarchivos multimedia
+- metarchivos, acerca de
+- Windows Multimedia, metarchivos
+- Windows Listas de reproducción de metarchivos multimedia, acerca de
 - listas de reproducción, acerca de
-- listas de reproducción de metarchivos, acerca de
+- listas de reproducción de metarchivo, acerca de
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -18,46 +18,46 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fcf0a4c98ae49d1cdf3b7e36e8a278f184cd4632
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a16f539d232271843c891760f319fc26decc87a9b1c3bcf4a3d575ffb7d86856
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900645"
 ---
-# <a name="windows-media-metafile-guide"></a>Guía de metarchivo de Windows Media
+# <a name="windows-media-metafile-guide"></a>Windows Guía de metarchivo multimedia
 
-Un metarchivo de Windows Media puede ser tan simple o complejo como sea necesario. El metarchivo de Windows Media más básico solo contiene el localizador uniforme de recursos (URL) de algún contenido multimedia en un servidor. El cliente, Windows Media Player, analiza esta información y, a continuación, abre el archivo multimedia o el flujo definido en el metarchivo de Windows Media. Un metarchivo complejo puede contener varios archivos o secuencias organizados en una lista de reproducción, instrucciones sobre cómo reproducir los archivos o secuencias, texto y elementos gráficos como el título, el autor y el texto de copyright, la inserción personalizada de anuncios en una secuencia en directo, los hipervínculos asociados a los elementos de la interfaz de Media Player de Windows, etc.
+Un Windows metarchivo multimedia puede ser tan simple o complejo como sea necesario. El metarchivo Windows multimedia contiene solo el localizador uniforme de recursos (URL) de algún contenido multimedia en un servidor. El cliente, Reproductor de Windows Media, analiza esta información y, a continuación, abre el archivo multimedia o el flujo definido en el metarchivo Windows multimedia. Un metarchivo complejo puede contener varios archivos o secuencias organizados en una lista de reproducción, instrucciones sobre cómo reproducir los archivos o secuencias, texto y elementos gráficos como título, autor y texto de copyright, inserción de anuncios personalizada en una secuencia en vivo, hipervínculos asociados a elementos en la interfaz Reproductor de Windows Media y mucho más.
 
-En las secciones siguientes se proporciona información detallada sobre cómo crear y usar listas de reproducción de metarchivos de Windows Media.
+En las secciones siguientes se proporciona información detallada sobre cómo crear y usar listas de Windows de metarchivo multimedia.
 
 
 
 | Sección                                                            | Descripción                                                                         |
 |--------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | [Tipos de listas de reproducción](types-of-playlists.md)                       | Enumera las extensiones de nombre de archivo disponibles.                                               |
-| [Crear listas de reproducción de metarchivo](creating-metafile-playlists.md)     | Describe cómo crear listas de reproducción de metarchivos de Windows Media.                           |
-| [Listas de reproducción de metarchivos](metafile-playlists.md)                       | Describe el uso, el script, los metadatos y el procesamiento de la lista de reproducción de metarchivo.             |
-| [Instrucciones de extensión de metarchivo](metafile-extension-guidelines.md) | Describe el uso preferido de las extensiones de nombre de archivo para la transmisión por secuencias de archivos multimedia.      |
-| [Orden de prioridad](order-of-precedence.md)                     | Describe cómo los elementos de lista de reproducción de metarchivo invalidan otros elementos de lista de reproducción. |
+| [Creación de listas de reproducción de metarchivo](creating-metafile-playlists.md)     | Describe cómo crear listas de Windows de metarchivo multimedia.                           |
+| [Listas de reproducción de metarchivo](metafile-playlists.md)                       | Describe el uso, el scripting, los metadatos y el procesamiento de listas de reproducción de metarchivo.             |
+| [Directrices de extensión de metarchivo](metafile-extension-guidelines.md) | Describe el uso preferido de las extensiones de nombre de archivo para los archivos multimedia de streaming.      |
+| [Orden de prioridad](order-of-precedence.md)                     | Describe cómo los elementos de lista de reproducción de metarchivo invalidan otros elementos de lista de reproducción de metarchivo. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Metaarchivos de Windows Media**](windows-media-metafiles.md)
+[**Windows Metarchivos multimedia**](windows-media-metafiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

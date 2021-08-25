@@ -1,11 +1,11 @@
 ---
-title: Referencia de metarchivos de Windows Media
-description: Referencia de metarchivos de Windows Media
+title: Windows Referencia de metarchivo multimedia
+description: Windows Referencia de metarchivo multimedia
 ms.assetid: 03dadba3-0143-46f0-990a-108196eb58ab
 keywords:
-- Metaarchivos de Windows Media, referencia
-- metaarchivos, referencia
-- referencia de los metaarchivos de Windows Media
+- Windows Metarchivos multimedia,referencia
+- metarchivos, referencia
+- Referencia de metarchivos Windows multimedia
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -13,50 +13,50 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 31d2c8d20d64e9a363fb37594519253206d30483
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b00cd604ec94c42ef90f08a8875edb4fda92ba8267c7e4a7d7b5505c2fb57932
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862265"
 ---
-# <a name="windows-media-metafile-reference"></a>Referencia de metarchivos de Windows Media
+# <a name="windows-media-metafile-reference"></a>Windows Referencia de metarchivo multimedia
 
-Esta referencia documenta elementos y extensiones de nombre de archivo para los metaarchivos de Windows Media. La referencia se divide en las secciones siguientes.
+Esta referencia documenta los elementos y las extensiones de nombre de archivo Windows metarchivos multimedia. La referencia se divide en las secciones siguientes.
 
 
 
 | Sección                                                                                    | Descripción                                                                                                                      |
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| [Referencia de elementos de metarchivo de Windows Media](windows-media-metafile-elements-reference.md) | Documenta los elementos de metarchivo, incluidas las definiciones, los atributos y sus valores, y las condiciones especiales relacionadas con cada elemento. |
+| [Windows Referencia de elementos de metarchivo multimedia](windows-media-metafile-elements-reference.md) | Documenta los elementos de metarchivo, incluidas las definiciones, los atributos y sus valores, y las condiciones especiales relacionadas con cada elemento. |
 | [Extensiones de nombre de archivo](file-name-extensions.md)                                           | Documenta las extensiones de nombre de archivo de metarchivo con reglas e instrucciones sobre su uso.                                                  |
 
 
 
- 
+ 
 
-Los metaarchivos de Windows Media son archivos de texto que proporcionan información acerca de una secuencia de archivos y su presentación. Los metaarchivos se basan en la sintaxis de lenguaje de marcado extensible (XML) y se componen de varios elementos similares a XML con sus etiquetas y atributos. Cada elemento define una configuración o una acción para el streaming multimedia.
+Windows Los metarchivos multimedia son archivos de texto que proporcionan información sobre una secuencia de archivos y su presentación. Los metarchivos se basan en la sintaxis lenguaje de marcado extensible (XML) y se basan en varios elementos de tipo XML con sus etiquetas y atributos. Cada elemento define una configuración o una acción para los medios de streaming.
 
-Hay dos conjuntos de etiquetas de elementos disponibles para los metaarchivos. Los metaarchivos del lado cliente tienen un conjunto de elementos y los metaarchivos del servidor tienen otro conjunto de elementos.
+Hay dos conjuntos de etiquetas de elemento disponibles para los metarchivos. Los metarchivos del lado cliente tienen un conjunto de elementos y los metarchivos del lado servidor tienen otro conjunto de elementos.
 
-Si una etiqueta de elemento no tiene ningún elemento secundario (los que modifican o están contenidos en otro elemento), se puede usar un carácter de barra diagonal (/) al final de la etiqueta de apertura en lugar de una etiqueta de cierre. Si los elementos secundarios no aparecen entre la etiqueta de apertura y cierre de un elemento, no son elementos secundarios de ese elemento y se omiten o causan un error en la sintaxis del metarchivo.
+Si una etiqueta de elemento no tiene ningún elemento secundario (los que modifican o están contenidos dentro de otro elemento), se puede usar un carácter de barra diagonal única (/) al final de la etiqueta de apertura en lugar de una etiqueta de cierre. Si los elementos secundarios no aparecen entre la etiqueta de apertura y cierre de un elemento, no son elementos secundarios para ese elemento y se omiten o provocan un error en la sintaxis del metarchivo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Acerca de los metaarchivos de Windows Media**](about-windows-media-metafiles.md)
+[**Acerca Windows metarchivos multimedia**](about-windows-media-metafiles.md)
 </dt> <dt>
 
-[**Guía de metarchivo de Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guía de metarchivo multimedia**](windows-media-metafile-guide.md)
 </dt> <dt>
 
-[**Metaarchivos de Windows Media**](windows-media-metafiles.md)
+[**Windows Metarchivos multimedia**](windows-media-metafiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

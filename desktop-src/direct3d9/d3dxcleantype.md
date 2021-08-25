@@ -1,7 +1,7 @@
 ---
-description: Define las operaciones que se deben realizar en los vértices como preparación para la limpieza de malla.
+description: Define las operaciones que se realizan en los vértices como preparación para la limpieza de malla.
 ms.assetid: f222acaa-fa82-4591-b7c2-b520cb648ed5
-title: Enumeración D3DXCLEANTYPE (D3dx9mesh. h)
+title: Enumeración D3DXCLEANTYPE (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: b38578d0f50521def552b8bd6608c2696b405d0f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2517c59d5505a8f2892ef0aee1d3884b8d489625637002d6e69a4f86434237fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894115"
 ---
-# <a name="d3dxcleantype-enumeration"></a>Enumeración D3DXCLEANTYPE
+# <a name="d3dxcleantype-enumeration"></a>D3DXCLEANTYPE (enumeración)
 
-Define las operaciones que se deben realizar en los vértices como preparación para la limpieza de malla.
+Define las operaciones que se realizan en los vértices como preparación para la limpieza de malla.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,35 +43,35 @@ typedef enum D3DXCLEANTYPE {
 
 <dl> <dt>
 
-<span id="D3DXCLEAN_BACKFACING"></span><span id="d3dxclean_backfacing"></span>**D3DXCLEAN \_**
+<span id="D3DXCLEAN_BACKFACING"></span><span id="d3dxclean_backfacing"></span>**D3DXCLEAN \_ BACKFACING**
 </dt> <dd>
 
-Mezclar triángulos que compartan los mismos índices de vértices pero que tengan caras normales que señalen a direcciones opuestas (triángulos hacia delante). A menos que los triángulos no se dividan agregando un vértice replicado, los datos de proximidad de la malla de los dos triángulos pueden entrar en conflicto.
+Combinar triángulos que comparten los mismos índices de vértice pero que tienen normales faciales que apuntan en direcciones opuestas (triángulos orientados hacia atrás). A menos que los triángulos no se divida agregando un vértice replicado, los datos de adyacencia de malla de los dos triángulos pueden estar en conflicto.
 
 </dd> <dt>
 
-<span id="D3DXCLEAN_BOWTIES"></span><span id="d3dxclean_bowties"></span>**D3DXCLEAN \_ pajaritas**
+<span id="D3DXCLEAN_BOWTIES"></span><span id="d3dxclean_bowties"></span>**D3DXCLEAN \_ BOWTIES**
 </dt> <dd>
 
-Si un vértice es el vértice de dos ventiladores de triángulo (una pajarita) y las operaciones de malla afectan a uno de los ventiladores, divida el vértice compartido en dos nuevos vértices. Las Pajaritas pueden causar problemas en operaciones como la simplificación de malla que quitan vértices, ya que la eliminación de un vértice afecta a dos conjuntos distintos de triángulos.
+Si un vértice es el vértice de dos ventiladores de triángulo (una arco) y las operaciones de malla afectarán a uno de los ventiladores, divida el vértice compartido en dos vértices nuevos. Las arcos pueden causar problemas para operaciones como la simplificación de mallas que quitan vértices, ya que la eliminación de un vértice afecta a dos conjuntos distintos de triángulos.
 
 </dd> <dt>
 
-<span id="D3DXCLEAN_SKINNING"></span><span id="d3dxclean_skinning"></span>**D3DXCLEAN de la \_ piel**
+<span id="D3DXCLEAN_SKINNING"></span><span id="d3dxclean_skinning"></span>**D3DXCLEAN \_ SKINNING**
 </dt> <dd>
 
-Use esta marca para evitar bucles infinitos durante las operaciones de malla de configuración de la piel.
+Use esta marca para evitar bucles infinitos durante las operaciones de malla de configuración de desplazamiento.
 
 </dd> <dt>
 
-<span id="D3DXCLEAN_OPTIMIZATION"></span><span id="d3dxclean_optimization"></span>**Optimización de D3DXCLEAN \_**
+<span id="D3DXCLEAN_OPTIMIZATION"></span><span id="d3dxclean_optimization"></span>**OPTIMIZACIÓN \_ D3DXCLEAN**
 </dt> <dd>
 
 Use esta marca para evitar bucles infinitos durante las operaciones de optimización de malla.
 
 </dd> <dt>
 
-<span id="D3DXCLEAN_SIMPLIFICATION"></span><span id="d3dxclean_simplification"></span>**\_Simplificación de D3DXCLEAN**
+<span id="D3DXCLEAN_SIMPLIFICATION"></span><span id="d3dxclean_simplification"></span>**SIMPLIFICACIÓN DE \_ D3DXCLEAN**
 </dt> <dd>
 
 Use esta marca para evitar bucles infinitos durante las operaciones de simplificación de malla.
@@ -84,7 +84,7 @@ Use esta marca para evitar bucles infinitos durante las operaciones de simplific
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ Use esta marca para evitar bucles infinitos durante las operaciones de simplific
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> </dl>
 
  

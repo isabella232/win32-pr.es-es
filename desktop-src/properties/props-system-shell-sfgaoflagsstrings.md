@@ -1,19 +1,19 @@
 ---
-description: Expresa las marcas SFGAO como valores de cadena y se utiliza como una optimización de consulta.
+description: Expresa las marcas SFGAO como valores de cadena y se usa como optimización de consultas.
 ms.assetid: b4ae5ec8-191b-4623-8968-1fbf69cc2eb3
-title: System. Shell. SFGAOFlagsStrings
+title: System.Shell.SFGAOFlagsStrings
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ae336872de823e4b9d901f08a172823a094f417
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47dbfeb5a3e6129c23d7f36fa491f1d15d09bf1e38548c25015edebd5472da8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103819051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885515"
 ---
-# <a name="systemshellsfgaoflagsstrings"></a>System. Shell. SFGAOFlagsStrings
+# <a name="systemshellsfgaoflagsstrings"></a>System.Shell.SFGAOFlagsStrings
 
-Expresa las marcas SFGAO como valores de cadena y se utiliza como una optimización de consulta.
+Expresa las marcas SFGAO como valores de cadena y se usa como optimización de consultas.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -98,7 +98,7 @@ propertyDescription
             defineComment = SFGAO_SYSTEM
 ```
 
-## <a name="windows-7"></a>Windows 7
+## <a name="windows-7"></a>Windows 7
 
 ```
 propertyDescription
@@ -237,9 +237,9 @@ propertyDescription
             defineComment = SFGAO_BROWSABLE
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -254,7 +254,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -266,7 +266,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -284,7 +284,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

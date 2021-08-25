@@ -1,7 +1,7 @@
 ---
-description: Se utiliza para indicar que el búfer de origen se está actualizando.
+description: Se usa para indicar que el búfer de origen se está actualizando.
 ms.assetid: 3c41f50f-7f0b-4676-9522-3866aedab047
-title: 'IMFSourceBufferNotify:: ALUpdate (método)'
+title: MÉTODO IMFSourceBufferNotify::OnUpdate
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 0e9149e6c0dca6166df3cad179681a90e57aaa44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06b46c0467468153400225415df1c26b675b81d6f2eac0e9c2cee8b1ef7107ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957815"
 ---
-# <a name="imfsourcebuffernotifyonupdate-method"></a>IMFSourceBufferNotify:: ALUpdate (método)
+# <a name="imfsourcebuffernotifyonupdate-method"></a>MÉTODO IMFSourceBufferNotify::OnUpdate
 
-Se utiliza para indicar que el búfer de origen se está actualizando.
+Se usa para indicar que el búfer de origen se está actualizando.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,9 +47,9 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

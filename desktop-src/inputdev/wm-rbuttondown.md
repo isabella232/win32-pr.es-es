@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_RBUTTONDOWN (Winuser. h)
-description: Se envía cuando el usuario presiona el botón secundario del mouse mientras el cursor está en el área de cliente de una ventana.
+title: WM_RBUTTONDOWN mensaje (Winuser.h)
+description: Se publica cuando el usuario presiona el botón derecho del mouse mientras el cursor está en el área cliente de una ventana.
 ms.assetid: da1a7d7c-6e49-4097-8b43-dcee7bd5fb3f
 keywords:
-- Entrada de mouse y teclado de mensaje de WM_RBUTTONDOWN
+- WM_RBUTTONDOWN entrada de teclado y mouse
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfebe1330b5c37758dc3d9486633510fdce62049
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7caecfa4ba9e8b00aa964d48cf573d84d3e7db65faf2e53d26d66ea4cfe492c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964345"
 ---
-# <a name="wm_rbuttondown-message"></a>Mensaje de RBUTTONDOWN de WM \_
+# <a name="wm_rbuttondown-message"></a>Mensaje \_ de WM RBUTTONDOWN
 
-Se envía cuando el usuario presiona el botón secundario del mouse mientras el cursor está en el área de cliente de una ventana. Si no se captura el mouse, el mensaje se envía a la ventana debajo del cursor. De lo contrario, el mensaje se envía a la ventana que ha capturado el mouse.
+Se publica cuando el usuario presiona el botón derecho del mouse mientras el cursor está en el área cliente de una ventana. Si no se captura el mouse, el mensaje se publica en la ventana debajo del cursor. De lo contrario, el mensaje se publica en la ventana que ha capturado el mouse.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,19 +41,19 @@ Una ventana recibe este mensaje a través de su función [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Indica si varias claves virtuales están inactivas. Este parámetro puede ser uno o varios de los valores siguientes.
+Indica si varias claves virtuales están sin servicio. Este parámetro puede ser uno o varios de los valores siguientes.
 
 
 
 | Value                                                                                                                                                                                                               | Significado                                     |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <span id="MK_CONTROL"></span><span id="mk_control"></span><dl> <dt>**MK \_**</dt> <dt>0X0008</dt> de control </dl>    | La tecla CTRL está presionada.<br/>            |
-| <span id="MK_LBUTTON"></span><span id="mk_lbutton"></span><dl> <dt>**MK \_ LBUTTON**</dt> <dt>0x0001</dt> </dl>    | El botón primario del mouse está inactivo.<br/>   |
-| <span id="MK_MBUTTON"></span><span id="mk_mbutton"></span><dl> <dt>**MK \_ MBUTTON**</dt> <dt>0x0010</dt> </dl>    | El botón central del mouse está presionado.<br/> |
-| <span id="MK_RBUTTON"></span><span id="mk_rbutton"></span><dl> <dt>**MK \_ RBUTTON**</dt> <dt>0x0002</dt> </dl>    | El botón secundario del mouse está inactivo.<br/>  |
-| <span id="MK_SHIFT"></span><span id="mk_shift"></span><dl> <dt>**MK \_ SHIFT**</dt> <dt>0x0004</dt> </dl>          | La tecla Mayús está presionada.<br/>           |
-| <span id="MK_XBUTTON1"></span><span id="mk_xbutton1"></span><dl> <dt>**MK \_ XBUTTON1**</dt> <dt>0x0020</dt> </dl> | El primer botón X está inactivo.<br/>      |
-| <span id="MK_XBUTTON2"></span><span id="mk_xbutton2"></span><dl> <dt>**MK \_ XBUTTON2**</dt> <dt>0x0040</dt> </dl> | El segundo botón X está inactivo.<br/>     |
+| <span id="MK_CONTROL"></span><span id="mk_control"></span><dl> <dt>**MK \_ Control**</dt> <dt>0x0008</dt> </dl>    | La tecla CTRL está presionada.<br/>            |
+| <span id="MK_LBUTTON"></span><span id="mk_lbutton"></span><dl> <dt>**MK \_ LBUTTON**</dt> <dt>0x0001</dt> </dl>    | El botón izquierdo del mouse está apagado.<br/>   |
+| <span id="MK_MBUTTON"></span><span id="mk_mbutton"></span><dl> <dt>**MK \_ MBUTTON**</dt> <dt>0x0010</dt> </dl>    | El botón central del mouse está apagado.<br/> |
+| <span id="MK_RBUTTON"></span><span id="mk_rbutton"></span><dl> <dt>**MK \_ RBUTTON**</dt> <dt>0x0002</dt> </dl>    | El botón derecho del mouse está apagado.<br/>  |
+| <span id="MK_SHIFT"></span><span id="mk_shift"></span><dl> <dt>**MK \_ Mayús**</dt> <dt>0x0004</dt> </dl>          | La tecla MAYÚS está abajo.<br/>           |
+| <span id="MK_XBUTTON1"></span><span id="mk_xbutton1"></span><dl> <dt>**MK \_ XBUTTON1**</dt> <dt>0x0020</dt> </dl> | El primer botón X está apagado.<br/>      |
+| <span id="MK_XBUTTON2"></span><span id="mk_xbutton2"></span><dl> <dt>**MK \_ XBUTTON2**</dt> <dt>0x0040</dt> </dl> | El segundo botón X está apagado.<br/>     |
 
 
 
@@ -64,7 +64,7 @@ Indica si varias claves virtuales están inactivas. Este parámetro puede ser un
 *lParam* 
 </dt> <dd>
 
-La palabra de orden inferior especifica la coordenada x del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
+La palabra de orden bajo especifica la coordenada x del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
 
 La palabra de orden superior especifica la coordenada y del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
 
@@ -74,7 +74,7 @@ La palabra de orden superior especifica la coordenada y del cursor. La coordenad
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Use el código siguiente para obtener la posición horizontal y vertical:
 
@@ -86,14 +86,14 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 
-Como se indicó anteriormente, la coordenada x está en el **corto** orden inferior del valor devuelto. la coordenada y está en el valor **Short** de orden superior (ambos representan valores *firmados* porque pueden tomar valores negativos en sistemas con varios monitores). Si el valor devuelto se asigna a una variable, puede usar la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) para obtener una estructura [**Points**](/previous-versions//dd162808(v=vs.85)) del valor devuelto. También puede usar la macro [**Get \_ x \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) u [**Get \_ Y \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer la coordenada x o y.
+Como se indicó anteriormente, la coordenada x está en el orden bajo **corto** del valor devuelto; la coordenada y está en el  orden corto de orden superior **(ambos** representan valores con signo porque pueden tomar valores negativos en sistemas con varios monitores). Si el valor devuelto se asigna a una variable, puede usar la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) para obtener una estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) del valor devuelto. También puede usar la macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) o [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer la coordenada x o y.
 
 > [!IMPORTANT]
 > No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** y **HIWORD** tratan las coordenadas como cantidades sin signo.
 
  
 
-Para detectar que se presionó la tecla ALT, compruebe si [**GetKeyState**](/windows/win32/api/winuser/nf-winuser-getkeystate) con el **\_ menú VK** < 0. Tenga en cuenta que no debe ser [**GetAsyncKeyState**](/windows/win32/api/winuser/nf-winuser-getasynckeystate).
+Para detectar que se ha presionado la tecla ALT, compruebe [**si GetKeyState**](/windows/win32/api/winuser/nf-winuser-getkeystate) con **VK \_ MENU** < 0. Tenga en cuenta que no debe ser [**GetAsyncKeyState.**](/windows/win32/api/winuser/nf-winuser-getasynckeystate)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,7 +103,7 @@ Para detectar que se presionó la tecla ALT, compruebe si [**GetKeyState**](/win
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir windowsx. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windowsx.h)</dt> </dl> |
 
 
 
@@ -114,10 +114,10 @@ Para detectar que se presionó la tecla ALT, compruebe si [**GetKeyState**](/win
 **Referencia**
 </dt> <dt>
 
-[**OBTENER \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
+[**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
 </dt> <dt>
 
-[**OBTENER \_ \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
+[**GET \_ Y \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
 </dt> <dt>
 
 [**GetCapture**](/windows/win32/api/winuser/nf-winuser-getcapture)
@@ -129,13 +129,13 @@ Para detectar que se presionó la tecla ALT, compruebe si [**GetKeyState**](/win
 [**SetCapture**](/windows/win32/api/winuser/nf-winuser-setcapture)
 </dt> <dt>
 
-[**RBUTTONDBLCLK de WM \_**](wm-rbuttondblclk.md)
+[**WM \_ RBUTTONDBLCLK**](wm-rbuttondblclk.md)
 </dt> <dt>
 
-[**RBUTTONUP de WM \_**](wm-rbuttonup.md)
+[**WM \_ RBUTTONUP**](wm-rbuttonup.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Entrada del mouse](mouse-input.md)
@@ -147,7 +147,7 @@ Para detectar que se presionó la tecla ALT, compruebe si [**GetKeyState**](/win
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**CIMA**](/previous-versions//dd162808(v=vs.85))
+[**Puntos**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

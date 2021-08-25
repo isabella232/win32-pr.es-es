@@ -1,5 +1,5 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de devolución de llamada de función principal del controlador. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos devueltos de llamadas de función principal del controlador. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: b3358935-d6fb-49eb-bdf7-4366b4fd14c5
 title: Clase DriverMajorFunctionReturn
 ms.topic: reference
@@ -14,18 +14,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 21340224253d1eb3f3ddc733bf2d43e847844282
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de8c18d7655aec0f9ae4748c384b26015a5a1083721aae367e132ea7c39f80a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914475"
 ---
 # <a name="drivermajorfunctionreturn-class"></a>Clase DriverMajorFunctionReturn
 
-Esta clase es la clase de tipo de evento para los eventos de devolución de llamada de función principal del controlador.
+Esta clase es la clase de tipo de evento para los eventos devueltos de llamadas de función principal del controlador.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,45 +40,45 @@ class DriverMajorFunctionReturn : DiskIo
 
 ## <a name="members"></a>Miembros
 
-La clase **DriverMajorFunctionReturn** tiene estos tipos de miembros:
+La **clase DriverMajorFunctionReturn** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **DriverMajorFunctionReturn** tiene estas propiedades.
+La **clase DriverMajorFunctionReturn** tiene estas propiedades.
 
 <dl> <dt>
 
-**IRP**
+**Irp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Paquete de solicitud de e/s.
+Paquete de solicitud de E/S.
 
 </dd> <dt>
 
 **UniqMatchId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
-Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los otros eventos del controlador, por ejemplo, el evento [**DriverCompleteRequest**](drivercompleterequest.md) .
+Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los demás eventos de controlador, por ejemplo, [**el evento DriverCompleteRequest.**](drivercompleterequest.md)
 
 </dd> </dl>
 
@@ -88,8 +88,8 @@ Identificador que identifica de forma única la solicitud. Use este identificado
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -97,7 +97,7 @@ Identificador que identifica de forma única la solicitud. Use este identificado
 
 <dl> <dt>
 
-[**Desmontaje**](diskio.md)
+[**DiskIo**](diskio.md)
 </dt> </dl>
 
  

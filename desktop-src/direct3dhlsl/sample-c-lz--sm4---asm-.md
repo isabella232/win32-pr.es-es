@@ -1,23 +1,23 @@
 ---
-title: sample_c_lz (SM4-ASM)
-description: Realiza un filtro de comparación. Esta instrucción se comporta como ejemplo \_ c, excepto el valor de LOD es 0 y se omiten los derivados.
+title: sample_c_lz (sm4 - asm)
+description: Realiza un filtro de comparación. Esta instrucción se comporta como el ejemplo \_ c, excepto que LOD es 0 y se omiten los derivados.
 ms.assetid: 5F11F091-AF2F-4293-88C7-824F11FE01E4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24ec2889dd3ea4c86af51c8e36bf2e302c6ad4dd
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 1b2866bdfddf91f9bd6ab1bbccbc9d76de071065b3cf28c1093cb1fdb041f3db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104419923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981505"
 ---
-# <a name="sample_c_lz-sm4---asm"></a>ejemplo \_ \_ de c LZ (SM4-ASM)
+# <a name="sample_c_lz-sm4---asm"></a>sample \_ c \_ lz (sm4 - asm)
 
-Realiza un filtro de comparación. Esta instrucción se comporta como [ejemplo \_ c](sample-c--sm4---asm-.md), excepto el valor de LOD es 0 y se omiten los derivados.
+Realiza un filtro de comparación. Esta instrucción se comporta como [c de \_ ejemplo,](sample-c--sm4---asm-.md)excepto que LOD es 0 y se omiten los derivados.
 
 
 
-| Sample \_ c \_ LZ \[ \_ aoffimmi (u, v, w) \] dest \[ . Mask \] , srcAddress \[ . swizzle \] , srcResource. r,//debe ser. r swizzle srcSampler, srcReferenceValue//Single Component seleccionado |
+| sample \_ c \_ lz \[ \_ aoffimmi(u,v,w) \] dest \[ .mask , \] srcAddress \[ .swzzle \] , srcResource.r, // must be .r swlinole srcSampler, srcReferenceValue // single component selected |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
@@ -28,25 +28,25 @@ Realiza un filtro de comparación. Esta instrucción se comporta como [ejemplo \
 
 | Elemento                                                                                                                                       | Descripción                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/>                                                                            | \[en \] la dirección de los resultados de la operación.<br/>                                                             |
-| <span id="srcAddress"></span><span id="srcaddress"></span><span id="SRCADDRESS"></span>*srcAddress*<br/>                             | \[en \] un conjunto de coordenadas de textura. Para obtener más información, vea la instrucción de [ejemplo](sample--sm4---asm-.md) .<br/> |
-| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/>                         | \[en \] un registro de textura. Para obtener más información, vea la instrucción de **ejemplo** .<br/>                                 |
-| <span id="srcSampler"></span><span id="srcsampler"></span><span id="SRCSAMPLER"></span>*srcSampler*<br/>                             | \[en \] un registro de muestra. Para obtener más información, vea la instrucción de **ejemplo** .<br/>                                 |
-| <span id="srcReferenceValue"></span><span id="srcreferencevalue"></span><span id="SRCREFERENCEVALUE"></span>*srcReferenceValue*<br/> | \[en \] un registro con un componente único seleccionado, que se usa en la comparación.<br/>                            |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/>                                                                            | \[en \] La dirección de los resultados de la operación.<br/>                                                             |
+| <span id="srcAddress"></span><span id="srcaddress"></span><span id="SRCADDRESS"></span>*srcAddress*<br/>                             | \[en \] Un conjunto de coordenadas de textura. Para obtener más información, vea la [instrucción de](sample--sm4---asm-.md) ejemplo.<br/> |
+| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/>                         | \[en \] Un registro de textura. Para obtener más información, vea la **instrucción de** ejemplo.<br/>                                 |
+| <span id="srcSampler"></span><span id="srcsampler"></span><span id="SRCSAMPLER"></span>*srcSampler*<br/>                             | \[en \] Un registro de sampler. Para obtener más información, vea la **instrucción de** ejemplo.<br/>                                 |
+| <span id="srcReferenceValue"></span><span id="srcreferencevalue"></span><span id="SRCREFERENCEVALUE"></span>*srcReferenceValue*<br/> | \[en \] Un registro con un único componente seleccionado, que se usa en la comparación.<br/>                            |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-"LZ" representa el nivel cero. Dado que se omiten los derivados, esta instrucción está disponible en los sombreadores distintos del sombreador de píxeles.
+"lz" significa nivel cero. Dado que se omiten los derivados, esta instrucción está disponible en sombreadores que no sean el sombreador de píxeles.
 
-Si esta instrucción se usa con una textura de mipmapped, se muestra el valor de LOD 0, a menos que la muestra tenga una abrazadera LOD que coloque el LOD en alguna otra parte, o bien, si hay una diferencia de LOD, que simplemente afectaría a partir de 0. Dado que se omiten los derivados, el filtrado anisotrópico se comporta como filtro anisotrópico.
+Si esta instrucción se usa con una textura mipmapped, se muestrea LOD 0, a menos que el muestreador tenga una fijación lod que coloca el LOD en otro lugar, o si hay un sesgo de LOD, que simplemente sesgo a partir de 0. Dado que se omiten los derivados, el filtrado anisotropico se comporta como filtrado isotropico.
 
-En los sombreadores de píxeles, esta instrucción se puede usar dentro del control de flujo variable cuando las coordenadas de textura se derivan en el sombreador, a diferencia del **ejemplo \_ c**.
+En sombreadores de píxeles, esta instrucción se puede usar dentro de un control de flujo variable cuando las coordenadas de textura se derivan en el sombreador, a diferencia del **ejemplo \_ c**.
 
-La captura de una ranura de entrada que no tiene nada enlazado devuelve 0 para todos los componentes.
+Al capturar desde una ranura de entrada que no tiene nada enlazado, se devuelve 0 para todos los componentes.
 
 Esta instrucción está disponible en todos los sombreadores, no solo en el sombreador de píxeles, por coherencia.
 
@@ -60,7 +60,7 @@ Esta instrucción está disponible en todos los sombreadores, no solo en el somb
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -68,12 +68,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -83,7 +83,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_SETHOT (commctrl. h)
-description: Establece el elemento activo para un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ SetHot.
+title: TVM_SETHOT mensaje (Commctrl.h)
+description: Establece el elemento de acceso de acceso de un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ SetHot.
 ms.assetid: 5e7368f5-40ce-4e7b-bbe3-5fe0b17181a8
 keywords:
-- TVM_SETHOT controles de mensajes de Windows
+- TVM_SETHOT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: beccd5429267350682a6721cde66cca9316cf438
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 87ca61fd0bd3e25f37229cd5cee54f9bbb59b3a5c7556ae745821a8dc4d595d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913955"
 ---
-# <a name="tvm_sethot-message"></a>\_Mensaje TVM SETHOT
+# <a name="tvm_sethot-message"></a>Mensaje \_ SETHOT de TVM
 
-\[Diseñado para uso interno; no se recomienda para su uso en aplicaciones de. Es posible que este mensaje no se admita en versiones futuras de Windows.\]
+\[Diseñado para uso interno; no se recomienda para su uso en aplicaciones. Es posible que este mensaje no se pueda usar en versiones futuras de Windows.\]
 
-Establece el elemento activo para un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ SetHot**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_sethot) .
+Establece el elemento de acceso de acceso de un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ SetHot.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_sethot)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -41,27 +41,27 @@ Debe ser cero.
 *lParam* 
 </dt> <dd>
 
-Identificador del nuevo elemento activo. Si este valor es **null**, el control de vista de árbol se establecerá en no tener ningún elemento activo.
+Controle el nuevo elemento de acceso de acceso. Si este valor es **NULL,** el control de vista de árbol se establecerá para que no tenga ningún elemento de acceso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="security-considerations"></a>Consideraciones sobre la seguridad
 
 El uso de este mensaje podría poner en peligro la seguridad del programa.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El *elemento activo* es el elemento sobre el que se mantiene el mouse. Este mensaje hace que un elemento parezca que es el elemento activo, incluso si el mouse no se mantiene sobre él.
+El *elemento de acceso* activa es el elemento sobre el que se mantiene el puntero del mouse. Este mensaje hace que un elemento parezca que es el elemento de acceso activa aunque el mouse no mantenga el puntero sobre él.
 
-Este mensaje no tiene ningún efecto visible si no se establece el estilo [**\_ TRACKSELECT de los televisores**](tree-view-control-window-styles.md) .
+Este mensaje no tiene ningún efecto visible si no se establece el estilo [**\_ TRACKSELECT de TVS.**](tree-view-control-window-styles.md)
 
-Si se realiza correctamente, este mensaje hace que el elemento activo se vuelva a dibujar.
+Si se realiza correctamente, este mensaje hace que se vuelva a dibujar el elemento de acceso.
 
-Este mensaje se omite si *lParam* es **null** y el control de vista de árbol está realizando el seguimiento del mouse.
+Este mensaje se omite si *lParam* es **NULL** y el control de vista de árbol está siguiendo el mouse.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,9 +69,9 @@ Este mensaje se omite si *lParam* es **null** y el control de vista de árbol es
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ Este mensaje se omite si *lParam* es **null** y el control de vista de árbol es
 
 <dl> <dt>
 
-[**Vista de árbol \_ SetHot**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_sethot)
+[**TreeView \_ SetHot**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_sethot)
 </dt> </dl>
 
  

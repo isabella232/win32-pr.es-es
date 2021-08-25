@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5fa15c84b9d9e0b686e17110c656b74161687705
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6d051bdd2757e37d3939616300ab0763ef2bebec727d48477f15a23e0f5178f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983175"
 ---
 # <a name="cdynamicoutputpincompleteconnect-method"></a>Método CDynamicOutputPin.CompleteConnect
 
@@ -55,7 +55,7 @@ Devuelve S \_ OK si se realiza correctamente o un valor **HRESULT** que indica l
 
 ## <a name="remarks"></a>Comentarios
 
-Este método invalida el [**método CBaseOutputPin::CompleteConnect.**](cbaseoutputpin-completeconnect.md) Para admitir reconexiones dinámicas, este método confirma el asignador si el filtro está activo. En la clase base, las conexiones solo pueden producirse cuando se detiene el filtro, por lo que el asignador siempre se confirma en el [**método CBaseOutputPin::Active.**](cbaseoutputpin-active.md)
+Este método invalida el [**método CBaseOutputPin::CompleteConnect.**](cbaseoutputpin-completeconnect.md) Para admitir reconexiones dinámicas, este método confirma el asignador si el filtro está activo. En la clase base, las conexiones solo se pueden producir cuando se detiene el filtro, por lo que el asignador siempre se confirma en el [**método CBaseOutputPin::Active.**](cbaseoutputpin-active.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,12 +63,12 @@ Este método invalida el [**método CBaseOutputPin::CompleteConnect.**](cbaseout
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

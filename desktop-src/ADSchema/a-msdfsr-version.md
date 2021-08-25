@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DFSR-version
-description: Contiene el número de versión del servicio de replicación de Sistema de archivos distribuido (DFS).
+title: Atributo ms-DFSR-Version
+description: Contiene el número de versión del servicio de replicación Sistema de archivos distribuido (DFS).
 ms.assetid: 2e49aef2-d3a5-43b8-aad8-1cd99ae51ea3
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DFSR-version
-- 'msDFSR: esquema de AD de atributos de versión'
+- Esquema de AD del atributo ms-DFSR-Version
+- Esquema de AD del atributo msDFSR-Version
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9742e81689285966ccf2b9bfd7d3510a06507a5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f68a3d2d501c6aab88f6b281e37f9fa9e0c6d7b928dac67c2422fe2069b670ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924665"
 ---
-# <a name="ms-dfsr-version-attribute"></a>atributo MS-DFSR-version
+# <a name="ms-dfsr-version-attribute"></a>Atributo ms-DFSR-Version
 
-Contiene el número de versión del servicio de replicación de Sistema de archivos distribuido (DFS).
+Contiene el número de versión del servicio de replicación Sistema de archivos distribuido (DFS).
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-DFSR-versión                             |
-| Nombre para mostrar de LDAP | Versión de msDFSR                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DFSR-Version                             |
+| Ldap-Display-Name | msDFSR-Version                              |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.1                   |
-| System-ID-GUID    | 1a861408-38c3-49ea-ba75-85481a77c655        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 1a861408-38c3-49ea-ba75-85481a77c655        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,18 +53,18 @@ Contiene el número de versión del servicio de replicación de Sistema de archi
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                          |
-| System-Only            | False                                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                                        |
-| Está indexado             | False                                                                                                                                       |
-| En el catálogo global      | False                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                |
+| System-Only            | Falso                                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                                        |
+| Está indexado             | Falso                                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                  |
 | System-Flags           | 0x00000000                                                                                                                                  |
-| Clases usadas en        | [**MS-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> [**MS-DFSR-grupo**](c-msdfsr-replicationgroup.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Contiene el número de versión del servicio de replicación de Sistema de archi
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                          |
-| System-Only            | False                                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                                        |
-| Está indexado             | False                                                                                                                                       |
-| En el catálogo global      | False                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                |
+| System-Only            | Falso                                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                                        |
+| Está indexado             | Falso                                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                  |
 | System-Flags           | 0x00000000                                                                                                                                  |
-| Clases usadas en        | [**MS-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> [**MS-DFSR-grupo**](c-msdfsr-replicationgroup.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Contiene el número de versión del servicio de replicación de Sistema de archi
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                          |
-| System-Only            | False                                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                                        |
-| Está indexado             | False                                                                                                                                       |
-| En el catálogo global      | False                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                |
+| System-Only            | Falso                                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                                        |
+| Está indexado             | Falso                                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                  |
 | System-Flags           | 0x00000000                                                                                                                                  |
-| Clases usadas en        | [**MS-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> [**MS-DFSR-grupo**](c-msdfsr-replicationgroup.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
 
 
 
@@ -116,24 +116,24 @@ Contiene el número de versión del servicio de replicación de Sistema de archi
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                          |
-| System-Only            | False                                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                                        |
-| Está indexado             | False                                                                                                                                       |
-| En el catálogo global      | False                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                |
+| System-Only            | Falso                                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                                        |
+| Está indexado             | Falso                                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                  |
 | System-Flags           | 0x00000000                                                                                                                                  |
-| Clases usadas en        | [**MS-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> [**MS-DFSR-grupo**](c-msdfsr-replicationgroup.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo forma parte de la compatibilidad con el servicio Replicación DFS.
+El atributo forma parte de la compatibilidad con Replicación DFS servicio.
 
  
 

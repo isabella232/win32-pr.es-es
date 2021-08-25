@@ -1,49 +1,49 @@
 ---
-title: Guía de texto y fuentes internacionales
-description: Guía de texto y fuentes internacionales
+title: Guía internacional de fuentes y texto
+description: Guía internacional de fuentes y texto
 ms.assetid: 0540C9AD-8774-4F0F-B013-48C3EAE59BF2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2f9d94c53e4db45666d28a7c23a0e883043ba27
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 76eeeeaf59f777610603787c3b8e6ed248f36810d34fc2026466b72ca57a1883
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119935405"
 ---
-# <a name="international-text-and-font-guidance"></a>Guía de texto y fuentes internacionales
+# <a name="international-text-and-font-guidance"></a>Guía internacional de fuentes y texto
 
 ## <a name="affected-platforms"></a>Plataformas afectadas
 
 <dl> Clientes: Windows 8 \| Windows 8.1  
-Servidores: Windows Server 2012 \| Windows server 2012 R2  
+Servidores: Windows Server 2012 \| Windows Server 2012 R2  
 </dl>
 
 ## <a name="description"></a>Descripción
 
-Como antes de Windows 2000, se ha agregado compatibilidad con la presentación de texto para nuevos scripts en cada versión principal de Windows. Puede encontrar descripciones de los cambios realizados en cada versión principal en el artículo [compatibilidad con fuentes y scripts para Windows](https://msdn.microsoft.com/goglobal/bb688099.aspx) en el [centro de desarrollo de go global](https://msdn.microsoft.com/goglobal/default).
+Desde antes Windows 2000, se ha agregado compatibilidad con la visualización de texto para nuevos scripts en cada versión principal de Windows. Puede encontrar descripciones de los cambios realizados en cada versión principal en el artículo Compatibilidad con scripts y fuentes [para Windows](https://msdn.microsoft.com/goglobal/bb688099.aspx) en el Centro de desarrollo global [de Go](https://msdn.microsoft.com/goglobal/default).
 
-Tenga en cuenta que la compatibilidad con un script puede requerir ciertos cambios en los componentes de la pila de texto, así como los cambios en las fuentes. El sistema operativo Windows tiene muchos componentes de pila de texto: DirectWrite, GDI, Uniscribe, GDI+, WPF, RichEdit, ComCtl32 y otros. La información proporcionada pertenece principalmente a GDI y a DirectWrite. También se aplica a los marcos de interfaz de usuario, como RichEdit o el agente de representación de MSHTML, que se usan para las aplicaciones de la tienda de Windows 8 y para representar el contenido Web, aunque dichos componentes pueden presentar ciertas diferencias.
+Tenga en cuenta que la compatibilidad con un script puede requerir ciertos cambios en los componentes de la pila de texto, así como cambios en las fuentes. El Windows operativo tiene muchos componentes de pila de texto: DirectWrite, GDI, Uniscribe, GDI+, WPF, RichEdit, ComCtl32 y otros. La información proporcionada pertenece principalmente a GDI y DirectWrite. También se suele aplicar a marcos de interfaz de usuario como RichEdit o el agente de representación MSHTML que se usa para las aplicaciones de la Tienda Windows 8 y para representar contenido web, aunque esos componentes pueden presentar ciertas diferencias.
 
 ## <a name="best-practices"></a>Prácticas recomendadas
 
-**Orientación tipográfica para desarrolladores**
+**Guía de tipografía para desarrolladores**
 
-La tipografía está en el corazón del lenguaje de diseño de Microsoft. Cada uno de los principios de diseño de Microsoft refuerza la importancia de la tipografía. Por primera vez, los desarrolladores de aplicaciones tienen un conjunto de marcos que admiten características tipográficas avanzadas. Vaya a [Mostrar y editar texto](/previous-versions/windows/apps/hh465442(v=win.10)) para obtener información sobre cómo usar JavaScript y HTML para mostrar y editar texto en aplicaciones de la tienda Windows.
+La tipografía es el núcleo del lenguaje de diseño de Microsoft. Cada uno de los principios de diseño de Microsoft refuerza la importancia de la tipografía. Por primera vez, los desarrolladores de aplicaciones tienen un conjunto de marcos que admiten características tipográficas avanzadas. Vaya a [Mostrar y editar texto](/previous-versions/windows/apps/hh465442(v=win.10)) para obtener información sobre cómo usar JavaScript y HTML para mostrar y editar texto en Windows Store.
 
-**Métricas de fuentes**
+**Métricas de fuente**
 
-Las métricas de fuente son un área de importancia especial para los desarrolladores de aplicaciones. Los archivos de fuente contienen varios valores relacionados con las métricas verticales y horizontales. Estos valores están documentados en la [especificación OpenType](https://www.microsoft.com/typography/otspec/) y se exponen a través de una variedad de API que se encuentran en la [estructura de \_ \_ métricas de fuentes DWRITE](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics) y en la [estructura TEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-textmetrica).
+Las métricas de fuente son un área de especial importancia para los desarrolladores de aplicaciones. Los archivos de fuente contienen varios valores relacionados con las métricas verticales y horizontales. Estos valores se documentan en la especificación [OpenType](https://www.microsoft.com/typography/otspec/) y se exponen a través de una variedad de API que se encuentran en [DWRITE \_ FONT METRICS \_ structure](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics) y en [TEXTMETRIC Structure](/windows/win32/api/wingdi/ns-wingdi-textmetrica).
 
 ## <a name="resources"></a>Recursos
 
 -   [Compatibilidad con scripts y fuentes para Windows](https://msdn.microsoft.com/goglobal/bb688099.aspx)
--   [Vaya al centro de desarrollo global](https://msdn.microsoft.com/goglobal/default)
--   [Mostrar y editar texto](/previous-versions/windows/apps/hh465442(v=win.10))
--   [Especificación OpenType](https://www.microsoft.com/typography/otspec/)
--   [DWRITE \_ estructura de las \_ métricas de fuente](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics)
--   [Estructura TEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-textmetrica)
+-   [Centro de desarrollo global de Go](https://msdn.microsoft.com/goglobal/default)
+-   [Visualización y edición de texto](/previous-versions/windows/apps/hh465442(v=win.10))
+-   [Especificación de OpenType](https://www.microsoft.com/typography/otspec/)
+-   [Estructura DWRITE \_ FONT \_ METRICS](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics)
+-   [TEXTMETRIC (estructura)](/windows/win32/api/wingdi/ns-wingdi-textmetrica)
 
- 
+ 
 
- 
+ 

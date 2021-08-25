@@ -1,6 +1,6 @@
 ---
 description: Funciones matemáticas
-title: Funciones matemáticas (Shell de Windows)
+title: Funciones matemáticas (El Windows Shell)
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 27fbd94b-e84a-4583-a355-a669b9662e00
@@ -9,14 +9,14 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 00a20845dfa9f338ef080a0c028bbf85745fd440
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1e60ea0a3a94e3792532019806d72ec568123e6a050b67de48075efc501cc6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884045"
 ---
-# <a name="math-functions-the-windows-shell"></a>Funciones matemáticas (Shell de Windows)
+# <a name="math-functions-the-windows-shell"></a>Funciones matemáticas (El Windows Shell)
 
 -   [**DWordPtrAdd**](/windows/desktop/api/Intsafe/nf-intsafe-dwordptradd)
 -   [**DWordPtrMult**](/windows/desktop/api/Intsafe/nf-intsafe-dwordptrmult)
@@ -54,7 +54,7 @@ ms.locfileid: "103907555"
 -   [**SSIZETAdd**](/windows/desktop/api/intsafe/nf-intsafe-ssizetadd)
 -   [**SSIZETMult**](/windows/desktop/api/intsafe/nf-intsafe-ssizetmult)
 -   [**SSIZETSub**](/windows/desktop/api/intsafe/nf-intsafe-ssizetsub)
--   [**UInt8Add**](/windows/desktop/api/intsafe/nf-intsafe-uint8add)
+-   [**UInt8Agregue**](/windows/desktop/api/intsafe/nf-intsafe-uint8add)
 -   [**UInt8Mult**](/windows/desktop/api/intsafe/nf-intsafe-uint8mult)
 -   [**UInt8Sub**](/windows/desktop/api/intsafe/nf-intsafe-uint8sub)
 -   [**UIntAdd**](/windows/desktop/api/Intsafe/nf-intsafe-uintadd)

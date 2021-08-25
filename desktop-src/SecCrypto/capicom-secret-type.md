@@ -1,7 +1,7 @@
 ---
-description: Indica el tipo de secreto que se usa para derivar una clave que se utilizará para el cifrado y descifrado de los datos.
+description: Indica el tipo de secreto utilizado para derivar una clave que se usará para el cifrado y descifrado de datos.
 ms.assetid: 2d3b9de3-0519-4ebe-900d-48baddf2c61a
-title: Enumeración CAPICOM_SECRET_TYPE (CAPICOM. h)
+title: CAPICOM_SECRET_TYPE enumeración (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 33e0eb7e5a101617b5e45d92b2db1a5843c28c54
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 80a4b66f36b46f0d7796b405921dca2d6f0b26b1c6764acba820d4359e7a37c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878996"
 ---
-# <a name="capicom_secret_type-enumeration"></a>\_Enumeración de tipo de secreto de CAPICOM \_
+# <a name="capicom_secret_type-enumeration"></a>CAPICOM \_ SECRET \_ TYPE (enumeración)
 
-La enumeración de **\_ \_ tipo de secreto de CAPICOM** indica el tipo de secreto que se usa para derivar una clave que se utilizará para el cifrado y descifrado de los datos.
+La **enumeración CAPICOM \_ SECRET \_ TYPE** indica el tipo de secreto utilizado para derivar una clave que se usará para el cifrado y descifrado de datos.
 
 ## <a name="members"></a>Miembros
 
@@ -30,7 +30,7 @@ La enumeración de **\_ \_ tipo de secreto de CAPICOM** indica el tipo de secret
 
 | Miembro                        | Descripción                                                     | Value |
 |-------------------------------|-----------------------------------------------------------------|-------|
-| **\_contraseña secreta de CAPICOM \_** | La clave de cifrado debe derivarse de una contraseña.<br/> | 0     |
+| **CONTRASEÑA SECRETA DE \_ \_ CAPICOM** | La clave de cifrado debe derivarse de una contraseña.<br/> | 0     |
 
 
 
@@ -40,8 +40,8 @@ La enumeración de **\_ \_ tipo de secreto de CAPICOM** indica el tipo de secret
 
 | Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Encabezado<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
+| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

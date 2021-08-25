@@ -1,28 +1,28 @@
 ---
 title: Creación de una nueva cuenta de equipo
-description: En el siguiente ejemplo de código se muestra cómo crear una nueva cuenta de equipo mediante la función NetUserAdd.
+description: En el ejemplo de código siguiente se muestra cómo crear una cuenta de equipo mediante la función NetUserAdd.
 ms.assetid: 1e180b8e-b948-4836-b789-cb9dff0829e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfd02a9d2053310c50e40957e6afee6e3a4a5ab1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6d9b54b3e3b157bfed33b3f2429024e005b9b859bba563c0173b2ca02ab5f499
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105676398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912305"
 ---
 # <a name="creating-a-new-computer-account"></a>Creación de una nueva cuenta de equipo
 
-En el siguiente ejemplo de código se muestra cómo crear una nueva cuenta de equipo mediante la función [**NetUserAdd**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuseradd) .
+En el ejemplo de código siguiente se muestra cómo crear una cuenta de equipo mediante la [**función NetUserAdd.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuseradd)
 
-A continuación se incluyen consideraciones para la administración de cuentas de equipo:
+Estas son las consideraciones para administrar cuentas de equipo:
 
--   El nombre de la cuenta de equipo debe ser todo en mayúsculas para mantener la coherencia con las utilidades de administración de cuentas.
--   Un nombre de cuenta de equipo siempre tiene un signo de dólar ($) final. Cualquier función usada para administrar cuentas de equipo debe generar el nombre del equipo de modo que el último carácter del nombre de la cuenta de equipo sea un signo de dólar ($). En el caso de la confianza entre dominios, el nombre de cuenta es nombreDeDominioQueConfía $.
--   La longitud máxima del nombre del equipo es la longitud máxima de \_ NombreDeEquipo \_ (15). Esta longitud no incluye el signo de dólar ($) final.
--   La contraseña de una cuenta de equipo nueva debe ser la representación en minúsculas del nombre de la cuenta de equipo, sin el signo de dólar ($) final. Para la confianza entre dominios, la contraseña puede ser un valor arbitrario que coincida con el valor especificado en el lado de confianza de la relación.
+-   El nombre de la cuenta de equipo debe estar en mayúsculas para mantener la coherencia con las utilidades de administración de cuentas.
+-   Un nombre de cuenta de equipo siempre tiene un signo de dólar final ($). Las funciones usadas para administrar cuentas de equipo deben crear el nombre del equipo de forma que el último carácter del nombre de la cuenta de equipo sea un signo de dólar ($). Para la confianza entre dominios, el nombre de la cuenta es TrustingDomainName$.
+-   La longitud máxima del nombre del equipo es MAX \_ COMPUTERNAME \_ LENGTH (15). Esta longitud no incluye el signo de dólar final ($).
+-   La contraseña de una nueva cuenta de equipo debe ser la representación en minúsculas del nombre de la cuenta de equipo, sin el signo de dólar final ($). Para la confianza entre dominios, la contraseña puede ser un valor arbitrario que coincida con el valor especificado en el lado de confianza de la relación.
 -   La longitud máxima de la contraseña es LM20 \_ PWLEN (14). La contraseña debe truncarse a esta longitud si el nombre de la cuenta de equipo supera esta longitud.
--   La contraseña proporcionada en la hora de creación de la cuenta de equipo solo es válida hasta que se active la cuenta de equipo en el dominio. Durante la activación de la relación de confianza se establece una nueva contraseña.
+-   La contraseña proporcionada en el momento de creación de la cuenta de equipo solo es válida hasta que la cuenta de equipo se activa en el dominio. Se establece una nueva contraseña durante la activación de la relación de confianza.
 
 
 ```C++
@@ -142,10 +142,10 @@ BOOL AddMachineAccount(
 
 
 
-El usuario que llama a las funciones de administración de cuentas debe tener privilegios de administrador en el equipo de destino. En el caso de las cuentas de equipo existentes, el creador de la cuenta puede administrarla, independientemente de la pertenencia administrativa. Para obtener más información sobre cómo llamar a funciones que requieran privilegios de administrador, vea [ejecutar con privilegios especiales](/windows/desktop/SecBP/running-with-special-privileges).
+El usuario que llama a las funciones de administración de cuentas debe tener privilegios de administrador en el equipo de destino. En el caso de las cuentas de equipo existentes, el creador de la cuenta puede administrar la cuenta, independientemente de la pertenencia administrativa. Para obtener más información sobre cómo llamar a funciones que requieren privilegios de administrador, vea [Running with Special Privileges](/windows/desktop/SecBP/running-with-special-privileges).
 
-El SeMachineAccountPrivilege se puede conceder en el equipo de destino para proporcionar a los usuarios especificados la capacidad de crear cuentas de equipo. Esto proporciona a los usuarios que no son administradores la capacidad de crear cuentas de equipo. El autor de la llamada debe habilitar este privilegio antes de agregar la cuenta de equipo. Para obtener más información sobre los privilegios de cuenta, vea [privilegios](/windows/desktop/SecAuthZ/privileges) y [constantes de autorización](/windows/desktop/SecAuthZ/authorization-constants).
+SeMachineAccountPrivilege se puede conceder en el equipo de destino para proporcionar a los usuarios especificados la capacidad de crear cuentas de equipo. Esto ofrece a los usuarios que no son administradores la capacidad de crear cuentas de equipo. El autor de la llamada debe habilitar este privilegio antes de agregar la cuenta de equipo. Para obtener más información sobre los privilegios de cuenta, vea [Privileges](/windows/desktop/SecAuthZ/privileges) and [Authorization Constants](/windows/desktop/SecAuthZ/authorization-constants).
 
- 
+ 
 
- 
+ 

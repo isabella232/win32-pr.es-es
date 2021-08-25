@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. recuento
-description: La propiedad Count recupera el número de elementos multimedia de la lista de reproducción.
+title: Playlist.count
+description: La propiedad count recupera el número de elementos multimedia de la lista de reproducción.
 ms.assetid: fd3265f3-3ab7-43e6-abc0-920225a66da6
 keywords:
-- Media Player de la lista de reproducción. Count Windows
+- Lista de reproducción.count Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed1b42dcb58cb644fe551d1421cde2c3f88d32f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a699557cec48ec57172614c0ef7916f3a42520491f2a65bd8eb39b807af4feb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862335"
 ---
-# <a name="playlistcount"></a>Lista de reproducción. recuento
+# <a name="playlistcount"></a>Playlist.count
 
-La propiedad **Count** recupera el número de elementos multimedia de la lista de reproducción.
+La **propiedad count** recupera el número de elementos multimedia de la lista de reproducción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *currentPlaylist*. **recuento**
+*player*. *currentPlaylist*. **count**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
 ## <a name="example"></a>Ejemplo
 
-Vea la propiedad [attributeCount](playlist-attributecount.md) para ver el código de ejemplo que usa esta propiedad.
+Vea la [propiedad attributeCount](playlist-attributecount.md) para obtener código de ejemplo que usa esta propiedad.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la bi
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -56,13 +56,13 @@ Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la bi
 
 <dl> <dt>
 
-[**Objeto Playlist**](playlist-object.md)
+[**Objeto de lista de reproducción**](playlist-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  
