@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1RenderTarget DrawRoundedRectangle (D2d1. h)
+title: Métodos ID2D1RenderTarget DrawRoundedRectangle (D2d1.h)
 description: Dibuja el contorno del rectángulo redondeado especificado utilizando el estilo de trazo especificado.
 ms.assetid: d718c355-ffd8-4a7f-90f3-9a10d37a19c8
 keywords:
-- Métodos de DrawRoundedRectangle Direct2D
+- Métodos DrawRoundedRectangle De Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 1cc42449bd2e2db7ec6637a7c405228fd3b51c1d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9db4da23faaea274a105dcfabdd33254223eb3b23e6395fd6d7cd9113134af74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874365"
 ---
-# <a name="id2d1rendertargetdrawroundedrectangle-methods"></a>ID2D1RenderTarget::D rawRoundedRectangle métodos)
+# <a name="id2d1rendertargetdrawroundedrectangle-methods"></a>Métodos ID2D1RenderTarget::D rawRoundedRectangle
 
 Dibuja el contorno del rectángulo redondeado especificado utilizando el estilo de trazo especificado.
 
@@ -29,20 +29,20 @@ Dibuja el contorno del rectángulo redondeado especificado utilizando el estilo 
 
 | Método                                                                                                                                                                                              | Descripción                                                                                       |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
-| [**DrawRoundedRectangle (D2D1 \_ roundal \_ Rect&, ID2D1Brush \* , Float, ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle))  | Dibuja el contorno del rectángulo redondeado especificado utilizando el estilo de trazo especificado.<br/> |
-| [**DrawRoundedRectangle (D2D1 \_ roundal \_ Rect \* , ID2D1Brush \* , Float, ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle)) | Dibuja el contorno del rectángulo redondeado especificado utilizando el estilo de trazo especificado.<br/> |
+| [**DrawRoundedRectangle(D2D1 \_ ROUNDED \_ RECT&,ID2D1Brush \* ,FLOAT,ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle))  | Dibuja el contorno del rectángulo redondeado especificado utilizando el estilo de trazo especificado.<br/> |
+| [**DrawRoundedRectangle(D2D1 \_ ROUNDED \_ RECT \* ,ID2D1Brush \* ,FLOAT,ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle)) | Dibuja el contorno del rectángulo redondeado especificado utilizando el estilo de trazo especificado.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no devuelve un código de error si se produce un error. Para determinar si una operación de dibujo (como **DrawRoundedRectangle**) produjo un error, compruebe el resultado devuelto por los métodos [**ID2D1RenderTarget:: EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget:: Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) .
+Este método no devuelve un código de error si se produce un error. Para determinar si se ha producido un error en una operación de dibujo (como **DrawRoundedRectangle),** compruebe el resultado devuelto por los métodos [**ID2D1RenderTarget::EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget::Flush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usan los métodos **DrawRoundedRectangle** y [**FillRoundedRectangle**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect_id2d1brush)) para esquematizar y rellenar un rectángulo redondeado. En este ejemplo se genera el resultado que se muestra en la ilustración siguiente.
+En el ejemplo siguiente se **usan los métodos DrawRoundedRectangle** y [**FillRoundedRectangle**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect_id2d1brush)) para esquematear y rellenar un rectángulo redondeado. En este ejemplo se genera la salida que se muestra en la ilustración siguiente.
 
-![Ilustración de cuatro rectángulos redondeados con distintos estilos y rellenos de trazo](images/drawroundedrectangle-scr.png)
+![ilustración de cuatro rectángulos redondeados con diferentes estilos de trazo y rellenos](images/drawroundedrectangle-scr.png)
 
 
 ```C++
@@ -122,8 +122,8 @@ HRESULT DrawAndFillRoundedRectangleExample::OnRender()
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
@@ -135,7 +135,7 @@ HRESULT DrawAndFillRoundedRectangleExample::OnRender()
 [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)
 </dt> <dt>
 
-[Cómo dibujar y rellenar una forma básica](how-to-draw-an-ellipse.md)
+[Dibujar y rellenar una forma básica](how-to-draw-an-ellipse.md)
 </dt> <dt>
 
 [**D2D1::RoundedRect**](/windows/win32/api/d2d1/nf-d2d1-id2d1roundedrectanglegeometry-getroundedrect)

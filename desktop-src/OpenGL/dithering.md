@@ -1,26 +1,26 @@
 ---
-title: Interpolación
-description: Si la interpolación está habilitada, se aplica un algoritmo de interpolación en el color del fragmento o en el valor del índice de color. Este algoritmo depende solo del valor del fragmento y de sus coordenadas de la ventana x e y.
+title: Tramado
+description: Si está habilitado el dithering, se aplica un algoritmo de dithering al valor de color o de índice de color del fragmento. Este algoritmo depende solo del valor del fragmento y sus coordenadas de ventana x e y.
 ms.assetid: a975910c-3a14-4cf5-92fc-6e98fd128477
 keywords:
-- Canalización de procesamiento de OpenGL, interpolación
-- interpolación de OpenGL
+- Canalización de procesamiento de OpenGL, dithering
+- Dithering OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 014fb027c2b6b4e2b92200d4be8162e68d6645d7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 18a9367f8927c38b84e0098420e71b98e196bd5cd9dfd9dd2f82c54bafa78a47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889045"
 ---
-# <a name="dithering"></a>Interpolación
+# <a name="dithering"></a>Tramado
 
-Si la interpolación está habilitada, se aplica un algoritmo de interpolación en el color del fragmento o en el valor del índice de color. Este algoritmo depende solo del valor del fragmento y de sus coordenadas de la ventana x e y.
+Si está habilitado el dithering, se aplica un algoritmo de dithering al valor de color o de índice de color del fragmento. Este algoritmo depende solo del valor del fragmento y sus coordenadas de ventana x e y.
 
- 
+ 
 
- 
+ 
 
 
 

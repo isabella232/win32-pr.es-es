@@ -1,22 +1,22 @@
 ---
-description: Esta sección contiene información de referencia de las interfaces del modelo de objetos componentes (COM) proporcionadas por Microsoft Direct3D 9.
+description: Esta sección contiene información de referencia para las interfaces del Modelo de objetos componentes (COM) proporcionadas por Microsoft Direct3D 9.
 ms.assetid: f12facdc-5a3f-4f89-8ae3-a322ef3389b2
-title: Interfaces de Direct3D
+title: Direct3D Interfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e81d7da07a9389dad1629e517c728488cb5b6bf9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 85e48620ea697a52f9e5da599c4455b6c8051154394870dc4cc6bde37ef454eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104536429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791425"
 ---
-# <a name="direct3d-interfaces"></a>Interfaces de Direct3D
+# <a name="direct3d-interfaces"></a>Direct3D Interfaces
 
-Esta sección contiene información de referencia de las interfaces del modelo de objetos componentes (COM) proporcionadas por Microsoft Direct3D 9.
+Esta sección contiene información de referencia para las interfaces del Modelo de objetos componentes (COM) proporcionadas por Microsoft Direct3D 9.
 
 > [!Note]  
-> Las aplicaciones de la tienda Windows de Direct3D no pueden usar la API de Direct3D 9. En su lugar, use la API de Microsoft Direct3D 11 o posterior con el [nivel de características](../direct3d11/overviews-direct3d-11-devices-downlevel-intro.md) 9 \_ x.
+> Las aplicaciones Windows De la Tienda Direct3D no pueden usar la API de Direct3D 9. En su lugar, use la API de Microsoft Direct3D 11 o posterior con [el nivel](../direct3d11/overviews-direct3d-11-devices-downlevel-intro.md) de característica 9 \_ x.
 
  
 
@@ -45,7 +45,7 @@ Las interfaces siguientes se usan con Direct3D 9.
 -   [**IDirect3DVolume9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolume9)
 -   [**IDirect3DVolumeTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9)
 
-Las siguientes interfaces solo están disponibles en Direct3D 9Ex.
+Las interfaces siguientes solo están disponibles en Direct3D 9Ex.
 
 -   [**IDirect3D9Ex**](/windows/desktop/api/d3d9/nn-d3d9-idirect3d9ex)
 -   [**IDirect3D9ExOverlayExtension**](/windows/win32/api/d3d9/nn-d3d9-idirect3d9exoverlayextension)

@@ -1,21 +1,21 @@
 ---
-description: El sistema difunde el \_ evento de dispositivo DBT CONFIGCHANGECANCELED cuando se ha cancelado una solicitud para cambiar la configuración actual (acoplar o desacoplar).
+description: El sistema difunde el evento de dispositivo DBT CONFIGCHANGECANCELED cuando se ha cancelado una solicitud para cambiar la configuración \_ actual (acoplar o desacoplar).
 ms.assetid: b4b1455c-9a04-4fa0-a3fa-ed991f278c0c
-title: Evento DBT_CONFIGCHANGECANCELED (DBT. h)
+title: DBT_CONFIGCHANGECANCELED evento (Dbt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97944daa698808c55f88bc377c9bf1c59c1217fb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 624144ccd5a87d983d453c8d6a3c0667376c2a1b9340bba83f229a29882bffe4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874545"
 ---
-# <a name="dbt_configchangecanceled-event"></a>\_Evento DBT CONFIGCHANGECANCELED
+# <a name="dbt_configchangecanceled-event"></a>Evento \_ CONFIGCHANGECANCELED de DBT
 
-El sistema difunde el \_ evento de dispositivo DBT CONFIGCHANGECANCELED cuando se ha cancelado una solicitud para cambiar la configuración actual (acoplar o desacoplar).
+El sistema difunde el evento de dispositivo DBT CONFIGCHANGECANCELED cuando se ha cancelado una solicitud para cambiar la configuración \_ actual (acoplar o desacoplar).
 
-Para difundir este evento de dispositivo, el sistema usa el mensaje de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) con *wParam* establecido en DBT \_ CONFIGCHANGECANCELED y *lParam* establecido en cero.
+Para difundir este evento de dispositivo, el sistema usa el mensaje [**\_ WM DEVICECHANGE**](wm-devicechange.md) con *wParam* establecido en DBT \_ CONFIGCHANGECANCELED y *lParam* establecido en cero.
 
 
 ```C++
@@ -33,7 +33,7 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador a una ventana.
@@ -43,14 +43,14 @@ Identificador a una ventana.
 *uMsg* 
 </dt> <dd>
 
-Identificador del mensaje de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) .
+Identificador [**del mensaje WM \_ DEVICECHANGE.**](wm-devicechange.md)
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Establézcalo en DBT \_ CONFIGCHANGECANCELED.
+Establezca en DBT \_ CONFIGCHANGECANCELED.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Establecer en cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true**.
+Devuelve **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ Devuelve **true**.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>DBT. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
 
 
 
@@ -84,10 +84,10 @@ Devuelve **true**.
 [Eventos de dispositivo](device-events.md)
 </dt> <dt>
 
-[Eventos de administración de dispositivos](device-management-events.md)
+[Administración de dispositivos eventos](device-management-events.md)
 </dt> <dt>
 
-[**DEVICECHANGE de WM \_**](wm-devicechange.md)
+[**WM \_ DEVICECHANGE**](wm-devicechange.md)
 </dt> </dl>
 
  

@@ -1,25 +1,25 @@
 ---
-description: Especifica si se debe agregar una comprobación de redundancia cíclica (CRC) al encabezado del marco. Esta propiedad se aplica a los codificadores de audio MPEG.
+description: Especifica si se va a agregar una comprobación de redundancia cíclica (CRC) al encabezado del marco. Esta propiedad se aplica a los codificadores de audio MPEG.
 ms.assetid: 55f0de8b-26dd-4d48-b7ed-2ddcef630227
-title: Propiedad AVEncMPAEnableRedundancyProtection (Codecapi. h)
+title: Propiedad AVEncMPAEnableRedundancyProtection (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2028b5adaad55d46cc53c61f9d65a73819cc899
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7b50e010b0b088e8817eca4dae1989cd6f623f55a9616c4449df62f115f98ff7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105659279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824115"
 ---
 # <a name="avencmpaenableredundancyprotection-property"></a>Propiedad AVEncMPAEnableRedundancyProtection
 
-Especifica si se debe agregar una comprobación de redundancia cíclica (CRC) al encabezado del marco. Esta propiedad se aplica a los codificadores de audio MPEG.
+Especifica si se va a agregar una comprobación de redundancia cíclica (CRC) al encabezado del marco. Esta propiedad se aplica a los codificadores de audio MPEG.
 
 Esta propiedad es de lectura y escritura.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID de propiedad
 
@@ -27,14 +27,14 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Esta propiedad puede tener los valores siguientes.
+Esta propiedad puede tener los siguientes valores.
 
 
 
-| Value          | Descripción                |
+| Valor          | Descripción                |
 |----------------|----------------------------|
-| VARIANTE \_ false | No agregue una suma de comprobación CRC. |
-| VARIANTE \_ true  | Agregue una suma de comprobación CRC.        |
+| VARIANT \_ FALSE | No agregue una suma de comprobación CRC. |
+| VARIANT \_ TRUE  | Agregue una suma de comprobación CRC.        |
 
 
 
@@ -44,11 +44,11 @@ Esta propiedad puede tener los valores siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Esta propiedad puede tener los valores siguientes.
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

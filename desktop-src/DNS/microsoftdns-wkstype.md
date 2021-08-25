@@ -1,10 +1,10 @@
 ---
-title: MicrosoftDNS_WKSType (clase)
-description: La subclase de MicrosoftDNS \_ ResourceRecord que representa un registro de Well-Known Services (WKS).
+title: MicrosoftDNS_WKSType clase
+description: Subclase de ResourceRecord de MicrosoftDNS que representa \_ un registro Well-Known Services (WKS).
 ms.assetid: 7bbfd518-d473-4127-949b-9133a43ac7a7
 keywords:
-- DNS de la clase MicrosoftDNS_WKSType
-- MicrosoftDNS_WKSType de la clase DNS, descrito
+- MicrosoftDNS_WKSType DNS de clase
+- MicrosoftDNS_WKSType clase DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -20,18 +20,18 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f7fde08721bb8bb62b93f72b792060b06c15dad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f82a6621e3dedacd5520c00b71c66bf0091c31135b70f27486ba43da63f393da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874765"
 ---
-# <a name="microsoftdns_wkstype-class"></a>MicrosoftDNS ( \_ clase WKSType)
+# <a name="microsoftdns_wkstype-class"></a>Clase WKSType de MicrosoftDNS \_
 
-La subclase de [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) que representa un registro de Well-Known Services (WKS).
+Subclase de [**\_ ResourceRecord de MicrosoftDNS**](microsoftdns-resourcerecord.md) que representa un registro Well-Known Services (WKS).
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,21 +46,21 @@ class MicrosoftDNS_WKSType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Miembros
 
-La clase **MicrosoftDNS \_ WKSType** tiene estos tipos de miembros:
+La **clase \_ WKSType de MicrosoftDNS** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MicrosoftDNS \_ WKSType** tiene estos métodos.
+La **clase \_ WKSType de MicrosoftDNS** tiene estos métodos.
 
 
 
 | Método                             | Descripción                                                                                                                                                                                                                                                                                                                                                                     |
 |:-----------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Crea una instancia de un tipo WKS de RR basándose en los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre del propietario, la clase (valor predeterminado = IN), el valor de período de vida y la dirección de Internet del propietario, el protocolo IP y la máscara de bits del puerto. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: implementados, estáticos<br/>  |
-| **Modify**                         | Este método actualiza el TTL, la dirección de Internet, el protocolo IP y los servicios a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: implementados<br/> |
+| **CreateInstanceFromPropertyData** | Crea instancias de un tipo WKS de RR en función de los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre del propietario, la clase (valor predeterminado = IN), el valor de período de vida y la dirección de Internet, el protocolo IP y la máscara de bits de puerto del propietario. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: Implementado, estático<br/>  |
+| **Modificar**                         | Este método actualiza el TTL, la dirección de Internet, el protocolo IP y los servicios a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: Implementado<br/> |
 
 
 
@@ -68,7 +68,7 @@ La clase **MicrosoftDNS \_ WKSType** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MicrosoftDNS \_ WKSType** tiene estas propiedades.
+La **clase \_ WKSType de MicrosoftDNS** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -107,7 +107,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que contiene todos los servicios utilizados por el registro de servicio conocido (WKS).
+Cadena que contiene todos los servicios utilizados por el registro Well Known Service (WKS).
 
 </dd> </dl>
 
@@ -120,7 +120,7 @@ Cadena que contiene todos los servicios utilizados por el registro de servicio c
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -128,13 +128,13 @@ Cadena que contiene todos los servicios utilizados por el registro de servicio c
 
 <dl> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS WKSType**](microsoftdns-wkstype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase WKSType de MicrosoftDNS \_**](microsoftdns-wkstype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Método Modify de la \_ clase MicrosoftDNS WKSType**](microsoftdns-wkstype-modify.md)
+[**Método Modify de la clase WKSType de MicrosoftDNS \_**](microsoftdns-wkstype-modify.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

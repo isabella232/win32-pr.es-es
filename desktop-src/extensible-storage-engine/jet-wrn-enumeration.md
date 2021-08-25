@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: enumeración JET_wrn'
-title: Enumeración JET_wrn
+description: 'Más información sobre: enumeración JET_wrn datos'
+title: JET_wrn enumeración
 TOCTitle: JET_wrn enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_wrn
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_wrn(v=EXCHG.10)
@@ -124,19 +124,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ce73682654899d597183689a36bb7e7e9d9094e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a4eba2e73314521b383452741f7a56a17e2179cad277850808c5dece717d7fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889745"
 ---
-# <a name="jet_wrn-enumeration"></a>Enumeración JET_wrn
+# <a name="jet_wrn-enumeration"></a>JET_wrn enumeración
 
 Códigos de advertencia de ESENT.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -170,12 +170,12 @@ public enum JET_wrn
 <tr class="even">
 <td></td>
 <td>RemainingVersions</td>
-<td>El almacén de versiones todavía está activo</td>
+<td>El almacén de versiones sigue activo</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>UniqueKey</td>
-<td>la búsqueda en un índice no único produjo una clave única</td>
+<td>buscar en un índice no único produjo una clave única</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -185,7 +185,7 @@ public enum JET_wrn
 <tr class="odd">
 <td></td>
 <td>ExistingLogFileHasBadSignature</td>
-<td>El archivo de registro existente tiene una firma incorrecta</td>
+<td>El archivo de registro existente tiene una firma no válida</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -205,22 +205,22 @@ public enum JET_wrn
 <tr class="odd">
 <td></td>
 <td>CommittedLogFilesLost</td>
-<td>Uno o varios registros que se confirmaron en esta base de datos no se recuperaron. La base de datos sigue siendo limpia/coherente, como si las transacciones del registro perdido se confirmaran de forma diferida (y se pierden).</td>
+<td>No se recuperaron uno o varios registros confirmados en esta base de datos. La base de datos sigue siendo limpia o coherente, como si las transacciones del registro perdido se confirmase de forma descomprimente (y se perdieron).</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CommittedLogFilesRemoved</td>
-<td>Uno o varios registros que se confirmaron en esta base de datos no se recuperaron. La base de datos sigue siendo limpia/coherente, como si las transacciones del registro dañadas se confirmaran de forma diferida (y se pierden).</td>
+<td>Uno o varios registros confirmados en esta base de datos no se recuperaron. La base de datos sigue siendo limpia o coherente, como si las transacciones del registro dañado se confirmasen de forma descomprimida (y se perdieron).</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>FinishWithUndo</td>
-<td>Señal usada por los clientes para indicar que JetInit () finalizó con Undo</td>
+<td>Señal usada por los clientes para indicar que JetInit() finalizó con deshacer</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DatabaseRepaired</td>
-<td>Los daños en la base de datos se han reparado</td>
+<td>Se han reparado daños en la base de datos</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -230,7 +230,7 @@ public enum JET_wrn
 <tr class="even">
 <td></td>
 <td>BufferTruncated</td>
-<td>Búfer demasiado pequeño para datos</td>
+<td>Búfer demasiado pequeño para los datos</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -245,12 +245,12 @@ public enum JET_wrn
 <tr class="odd">
 <td></td>
 <td>SeekNotEqual</td>
-<td>No se encontró la coincidencia exacta durante la búsqueda</td>
+<td>Coincidencia exacta no encontrada durante la búsqueda</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>NoErrorInfo</td>
-<td>No hay información de error extendida</td>
+<td>Sin información de error extendida</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -265,27 +265,27 @@ public enum JET_wrn
 <tr class="odd">
 <td></td>
 <td>ColumnSetNull</td>
-<td>Columna establecida en valor NULL</td>
+<td>Columna establecida en null-value</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ShrinkNotPossible</td>
-<td>No se pudo reducir el archivo de base de datos porque no hay suficiente espacio disponible interno o hay datos no móviles presentes.</td>
+<td>No se pudo reducido el archivo de base de datos porque no hay suficiente espacio libre interno disponible o hay datos inamovibles presentes.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DTCCommitTransaction</td>
-<td>Código de advertencia la devolución de llamada de DTC debe devolver si se va a confirmar la transacción especificada</td>
+<td>La devolución de llamada DTC del código de advertencia debe devolver si se va a confirma la transacción especificada</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DTCRollbackTransaction</td>
-<td>Código de advertencia la devolución de llamada de DTC debe devolver si se va a revertir la transacción especificada</td>
+<td>La devolución de llamada DTC del código de advertencia debe devolverse si se va a revertir la transacción especificada.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>TableEmpty</td>
-<td>Abrir una tabla vacía</td>
+<td>Apertura de una tabla vacía</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -295,17 +295,17 @@ public enum JET_wrn
 <tr class="odd">
 <td></td>
 <td>CorruptIndexDeleted</td>
-<td>No se quitó el índice de fecha</td>
+<td>Índice no actualizado eliminado</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>PrimaryIndexOutOfDate</td>
-<td>El índice principal se crea con una versión incompatible de ordenación del sistema operativo. La tabla no se puede modificar de forma segura.</td>
+<td>El índice principal se crea con una versión de ordenación del sistema operativo incompatible. La tabla no se puede modificar de forma segura.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SecondaryIndexOutOfDate</td>
-<td>Se crea uno o varios índices secundarios con una versión de ordenación del sistema operativo no compatible. Se debe eliminar cualquier índice sobre texto Unicode.</td>
+<td>Se crea uno o varios índices secundarios con una versión de ordenación del sistema operativo incompatible. Se debe eliminar cualquier índice sobre texto Unicode.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -320,17 +320,17 @@ public enum JET_wrn
 <tr class="even">
 <td></td>
 <td>TaggedColumnsRemaining</td>
-<td>RetrieveTaggedColumnList se agotó el búfer de copia antes de recuperar todas las columnas etiquetadas</td>
+<td>RetrieveTaggedColumnList se quedó sin búfer de copia antes de recuperar todas las columnas etiquetadas</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>ColumnSkipped</td>
-<td>No se devuelven los valores de columna porque el ID. de columna correspondiente o itagSequence solicitado para la enumeración era null.</td>
+<td>No se devuelven valores de columna porque el identificador de columna correspondiente o itagSequence solicitado para la enumeración era NULL</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ColumnNotLocal</td>
-<td>No se devuelven los valores de columna porque no se pudieron reconstruir a partir de los datos a mano</td>
+<td>Los valores de columna no se devuelven porque no se pudieron reconstruir a partir de los datos en la mano.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -345,7 +345,7 @@ public enum JET_wrn
 <tr class="odd">
 <td></td>
 <td>ColumnPresent</td>
-<td>Los valores de columna existen pero no fueron devueltos por la solicitud</td>
+<td>Existen valores de columna, pero no se devolvieron por solicitud</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -355,12 +355,12 @@ public enum JET_wrn
 <tr class="odd">
 <td></td>
 <td>ColumnDefault</td>
-<td>No se devuelven los valores de columna porque se establecieron en sus valores predeterminados y se especificó JET_bitEnumerateIgnoreDefault</td>
+<td>Los valores de columna no se devuelven porque se han establecido en sus valores predeterminados y JET_bitEnumerateIgnoreDefault se han especificado</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ColumnNotInRecord</td>
-<td>No se devuelven los valores de columna porque no se pudieron reconstruir a partir de los datos del registro</td>
+<td>Los valores de columna no se devuelven porque no se pudieron reconstruir a partir de los datos del registro.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -370,7 +370,7 @@ public enum JET_wrn
 <tr class="even">
 <td></td>
 <td>KeyChanged</td>
-<td>Se mueve a la nueva clave</td>
+<td>Se ha movido a la nueva clave.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -380,37 +380,37 @@ public enum JET_wrn
 <tr class="even">
 <td></td>
 <td>IdleFull</td>
-<td>Registro inactivo completo</td>
+<td>Registro inactivo lleno</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DefragAlreadyRunning</td>
-<td>Desfragmentación en línea ya se está ejecutando en la base de datos especificada</td>
+<td>Desfragmentación en línea que ya se ejecuta en la base de datos especificada</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DefragNotRunning</td>
-<td>Desfragmentación en línea no se está ejecutando en la base de datos especificada</td>
+<td>Desfragmentación en línea que no se ejecuta en la base de datos especificada</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabaseScanAlreadyRunning</td>
-<td>JetDatabaseScan ya se está ejecutando en la base de datos especificada</td>
+<td>JetDatabaseScan ya se ejecuta en la base de datos especificada</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DatabaseScanNotRunning</td>
-<td>JetDatabaseScan no se está ejecutando en la base de datos especificada</td>
+<td>JetDatabaseScan no se ejecuta en la base de datos especificada</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CallbackNotRegistered</td>
-<td>Anulación del registro de una función de devolución de llamada que no existe</td>
+<td>Anulación del registro de una función de devolución de llamada no existente</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>PreviousLogFileIncomplete</td>
-<td>Los datos de registro proporcionaron de repente al Registro siguiente, hemos eliminado el archivo de registro incompleto como medida preventiva.</td>
+<td>Los datos de registro proporcionados saltaron al siguiente registro repentinamente, hemos eliminado el archivo de registro incompleto como medida de precaución.</td>
 </tr>
 </tbody>
 </table>
@@ -420,4 +420,4 @@ public enum JET_wrn
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

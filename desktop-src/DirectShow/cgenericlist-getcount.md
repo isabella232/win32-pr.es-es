@@ -1,7 +1,7 @@
 ---
 description: El método GetCount recupera el número de elementos de la lista.
 ms.assetid: a74fcddd-109f-4abf-abe0-e00f6e56ea0f
-title: Método CGenericList. GetCount (Wxlist. h)
+title: Método CGenericList.GetCount (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0c78bfb8f9ddf086434f86a33f8cf059db5e1474
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a7166127fc22140f1150008e4dd0007c28dfed3e8311fa8198d0d0d4f16399a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813785"
 ---
-# <a name="cgenericlistgetcount-method"></a>CGenericList. GetCount (método)
+# <a name="cgenericlistgetcount-method"></a>Método CGenericList.GetCount
 
 El `GetCount` método recupera el número de elementos de la lista.
 
@@ -50,8 +50,8 @@ Devuelve el número de elementos de la lista.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el número de elementos de la lista.
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (clase)**](cgenericlist.md)
 </dt> </dl>
 
  

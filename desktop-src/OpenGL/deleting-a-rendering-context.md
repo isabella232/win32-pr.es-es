@@ -1,22 +1,22 @@
 ---
-title: Eliminar un contexto de representación
-description: En el ejemplo de código siguiente se muestra cómo eliminar un contexto de representación de OpenGL cuando se cierra una ventana de OpenGL. Es una continuación del escenario que se usa para crear un contexto de representación y convertirlo en actual.
+title: Eliminación de un contexto de representación
+description: En el ejemplo de código siguiente se muestra cómo eliminar un contexto de representación de OpenGL cuando se cierra una ventana de OpenGL. Es una continuación del escenario utilizado en Crear un contexto de representación y Hacer que sea actual.
 ms.assetid: 562c4698-f5bb-418a-8479-0df07e9834e5
 keywords:
 - OpenGL en Windows, contextos de representación
 - contextos de representación OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 621abd0de46c874f40568f8361191b25df329f0f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9efd6821e51ad2493bc2ec3ce1c3ce9b448faee1079ae3771cf3290874fcb9e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103902996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889245"
 ---
-# <a name="deleting-a-rendering-context"></a>Eliminar un contexto de representación
+# <a name="deleting-a-rendering-context"></a>Eliminación de un contexto de representación
 
-En el ejemplo de código siguiente se muestra cómo eliminar un contexto de representación de OpenGL cuando se cierra una ventana de OpenGL. Es una continuación del escenario que se usa para [crear un contexto de representación y convertirlo en actual](creating-a-rendering-context-and-making-it-current.md).
+En el ejemplo de código siguiente se muestra cómo eliminar un contexto de representación de OpenGL cuando se cierra una ventana de OpenGL. Es una continuación del escenario utilizado en Crear [un contexto de representación y Hacer que sea actual.](creating-a-rendering-context-and-making-it-current.md)
 
 
 ```C++
@@ -47,9 +47,9 @@ case WM_DESTROY:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

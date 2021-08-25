@@ -1,7 +1,7 @@
 ---
-description: Devuelve un vector 3D formado por los componentes más grandes de dos vectores 3D.
+description: Devuelve un vector 3D que se conste de los componentes más grandes de dos vectores 3D.
 ms.assetid: 8d3a5310-bee9-4dbd-bef3-8a0e1586f365
-title: Función D3DXVec3Maximize (D3dx9math. h)
+title: Función D3DXVec3Maximize (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7d86f3e54a6399693e37cc0c8970439558d82c9c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9f431c40f2f5c134e605790d137a1e89447e7b1bb4a006f3a558a3d318c75f78
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104547854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791565"
 ---
-# <a name="d3dxvec3maximize-function"></a>D3DXVec3Maximize función)
+# <a name="d3dxvec3maximize-function"></a>Función D3DXVec3Maximize
 
-Devuelve un vector 3D formado por los componentes más grandes de dos vectores 3D.
+Devuelve un vector 3D que se conste de los componentes más grandes de dos vectores 3D.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,25 +47,25 @@ D3DXVECTOR3* D3DXVec3Maximize(
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero a la estructura [**D3DXVECTOR3**](d3dxvector3.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pV1* \[ de\]
+*pV1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR3**](d3dxvector3.md) de origen.
+Puntero a una estructura [**D3DXVECTOR3 de**](d3dxvector3.md) origen.
 
 </dd> <dt>
 
-*pV2* \[ de\]
+*pV2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR3**](d3dxvector3.md) de origen.
+Puntero a una estructura [**D3DXVECTOR3 de**](d3dxvector3.md) origen.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntero a una estructura de [**D3DXVECTOR3**](d3dxvector3.md) de origen.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) que se compone de los componentes más grandes de los dos vectores.
+Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que se conste de los componentes más grandes de los dos vectores.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXVec3Maximize** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3Maximize** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

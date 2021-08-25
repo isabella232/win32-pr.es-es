@@ -1,5 +1,5 @@
 ---
-description: Representa un bloque de datos codificados ASN. 1.
+description: Representa un bloque de datos codificados asn.1.
 ms.assetid: af7acc5f-da0a-4235-8496-05db94664ea5
 title: Objeto EncodedData
 ms.topic: reference
@@ -13,44 +13,44 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: d05fce31ad4ef08bf9f573c0158a683bdbeba739
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba17056aaf2b038abb519c1eff230f6cccb396edea1ee9c1f96077d572e63fe5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874865"
 ---
 # <a name="encodeddata-object"></a>Objeto EncodedData
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la [**clase AsnEncodedData**](/dotnet/api/system.security.cryptography.asnencodeddata?view=netcore-3.1) en el espacio de nombres [**System. Security. Cryptography**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use [**la clase AsnEncodedData en**](/dotnet/api/system.security.cryptography.asnencodeddata?view=netcore-3.1) el espacio de nombres [**System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-El objeto **EncodedData** representa un bloque de datos codificados ASN. 1.
+El **objeto EncodedData** representa un bloque de datos codificados asn.1.
 
 ## <a name="when-to-use"></a>Cuándo se usa
 
-Varias propiedades de objeto de CAPICOM devuelven el objeto **EncodedData** . Cuando se devuelve, este objeto se usa para realizar las siguientes tareas:
+Varias propiedades del objeto CAPICOM devuelven el objeto **EncodedData.** Cuando se devuelve, este objeto se usa para realizar las siguientes tareas:
 
--   Obtener una representación de cadena de los datos codificados.
--   Obtiene el objeto descodificador, si existe, que está asociado a los datos codificados.
+-   Obtenga una representación de cadena de los datos codificados.
+-   Obtenga el objeto descodificador, si existe, asociado a los datos codificados.
 -   Determine el tipo de datos codificados.
 
 ## <a name="members"></a>Miembros
 
-El objeto **EncodedData** tiene estos tipos de miembros:
+El **objeto EncodedData** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-El objeto **EncodedData** tiene estos métodos.
+El **objeto EncodedData** tiene estos métodos.
 
 
 
 | Método                                 | Descripción                                                     |
 |:---------------------------------------|:----------------------------------------------------------------|
 | [**Descodificador**](encodeddata-decoder.md) | Obtiene un objeto descodificador, si existe uno.<br/>             |
-| [**Aplique**](encodeddata-format.md)   | Devuelve una representación de cadena de los datos codificados.<br/> |
+| [**Formato**](encodeddata-format.md)   | Devuelve una representación de cadena de los datos codificados.<br/> |
 
 
 
@@ -58,7 +58,7 @@ El objeto **EncodedData** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **EncodedData** tiene estas propiedades.
+El **objeto EncodedData** tiene estas propiedades.
 
 
 
@@ -70,18 +70,18 @@ El objeto **EncodedData** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El único tipo admitido de datos codificados es [**CertificatePolicies**](certificatepolicies.md).
+El único tipo admitido de datos codificados [**es CertificatePolicies.**](certificatepolicies.md)
 
-No se puede crear el objeto **EncodedData** .
+No se puede crear el objeto **EncodedData.**
 
-Las siguientes propiedades de objeto CAPICOM devuelven un objeto **EncodedData** :
+Las siguientes propiedades de objeto CAPICOM devuelven **un objeto EncodedData:**
 
--   **PublicKey. EncodedKey**
--   **PublicKey. EncodedParameters**
--   **Extensión. EncodedData**
--   **Policy. EncodedData**
+-   **PublicKey.EncodedKey**
+-   **PublicKey.EncodedParameters**
+-   **Extension.EncodedData**
+-   **Policy.EncodedData**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,7 +91,7 @@ Las siguientes propiedades de objeto CAPICOM devuelven un objeto **EncodedData**
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuible<br/>       | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/>       | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

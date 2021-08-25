@@ -1,7 +1,7 @@
 ---
-description: La función de exportación de DllMain para el analizador identifica la existencia del analizador y libera los recursos que utiliza Monitor de red para el analizador. DllMain debe implementarse en todos los archivos dll de analizador.
+description: La función de exportación DllMain para el analizador identifica la existencia del analizador y libera los recursos que Monitor de red usa para el analizador. DllMain debe implementarse en todos los archivos DLL del analizador.
 ms.assetid: 2ce79d49-3aad-461f-99cf-cf632680efcc
-title: Función de devolución de llamada del analizador DllMain (Process. h)
+title: Función de devolución de llamada del analizador de DllMain (Process.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - process.h
-ms.openlocfilehash: 1db69d51f3a46bbe219ef7f7bdea67e8e8970e4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5df58ef86971fcf60e79fbae8e92313dbd0b0371e2311cc30b494950e4f37dd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890845"
 ---
-# <a name="dllmain-parser-callback-function"></a>Función de devolución de llamada del analizador DllMain
+# <a name="dllmain-parser-callback-function"></a>Función de devolución de llamada del analizador de DllMain
 
-La función de exportación de **DllMain** para el analizador identifica la existencia del analizador y libera los recursos que utiliza monitor de red para el analizador. **DllMain** debe implementarse en todos los archivos dll de analizador.
+La función de exportación **DllMain** para el analizador identifica la existencia del analizador y libera los recursos que Monitor de red para el analizador. **DllMain debe** implementarse en todos los archivos DLL del analizador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,24 +41,24 @@ BOOL WINAPI DllMain(
 
 <dl> <dt>
 
-*hInstance* \[ de\]
+*hInstance* \[ En\]
 </dt> <dd>
 
 Identificador de una instancia del analizador.
 
 </dd> <dt>
 
-*Comando* \[ de\]
+*Comando* \[ En\]
 </dt> <dd>
 
-Indicador para determinar por qué se llama a la función. Para obtener una lista de todas las marcas posibles, vea [DllMain](/windows/desktop/Dlls/dllmain). La implementación del analizador debe procesar los valores siguientes.
+Indicador para determinar por qué se llama a la función. Para obtener una lista de todas las marcas posibles, [vea DllMain](/windows/desktop/Dlls/dllmain). La implementación del analizador debe procesar los valores siguientes.
 
 
 
 | Value                                                                                                                                                                         | Significado                                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="DLL_PROCESS_ATTACH"></span><span id="dll_process_attach"></span><dl> <dt>**\_adjuntar proceso dll \_**</dt> </dl> | Cuando se llama a **DllMain** por primera vez, el archivo DLL debe llamar a [CreateProtocol](createprotocol.md) para proporcionar información monitor de red. <br/>   |
-| <span id="DLL_PROCESS_DETACH"></span><span id="dll_process_detach"></span><dl> <dt>**desasociación de \_ procesos dll \_**</dt> </dl> | Cuando se llama a **DllMain** por última vez, el archivo DLL debe llamar a [DestroyProtocol](destroyprotocol.md) para liberar los recursos que utiliza el archivo dll. <br/> |
+| <span id="DLL_PROCESS_ATTACH"></span><span id="dll_process_attach"></span><dl> <dt>**ASOCIACIÓN \_ DE PROCESOS \_ DLL**</dt> </dl> | Cuando se llama a **DllMain** por primera vez, el archivo DLL debe llamar a [CreateProtocol](createprotocol.md) para proporcionar información a Monitor de red. <br/>   |
+| <span id="DLL_PROCESS_DETACH"></span><span id="dll_process_detach"></span><dl> <dt>**\_DESASOCIÓN \_ DEL PROCESO DE DLL**</dt> </dl> | Cuando se llama a **DllMain** por última vez, el archivo DLL debe llamar a [DestroyProtocol](destroyprotocol.md) para liberar los recursos que usa el archivo DLL. <br/> |
 
 
 
@@ -69,27 +69,27 @@ Indicador para determinar por qué se llama a la función. Para obtener una list
 *Reserved* 
 </dt> <dd>
 
-No se utiliza ahora.
+No se usa ahora.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El archivo DLL del analizador siempre devuelve **true**.
+El archivo DLL del analizador siempre devuelve **TRUE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El sistema operativo llama a **DllMain** para cargar y descargar el archivo DLL del analizador. Esta función se basa en la función [DllMain](/windows/desktop/Dlls/dllmain) de la biblioteca de vínculos dinámicos.
+El sistema operativo llama **a DllMain** para cargar y descargar el archivo DLL del analizador. Esta función se basa en la función [DllMain](/windows/desktop/Dlls/dllmain) de la biblioteca de vínculos dinámicos.
 
-También puede usar la implementación de **DllMain** para almacenar una instancia de un analizador para su uso en el futuro. Por ejemplo, puede almacenar una instancia de DLL de analizador y, a continuación, utilizarla para una llamada del sistema en el futuro.
+También puede usar la implementación de **DllMain** para almacenar una instancia de un analizador para su uso en el futuro. Por ejemplo, puede almacenar una instancia dll del analizador y, a continuación, usarla para una llamada del sistema en el futuro.
 
 
 
 | Para obtener información acerca de                                        | Vea                                                     |
 |-----------------------------------------------------------|---------------------------------------------------------|
 | Qué son los analizadores y cómo funcionan con Monitor de red. | [Analizadores](parsers.md)                                  |
-| Qué puntos de entrada se incluyen en el archivo DLL del analizador.        | [Arquitectura de DLL de analizador](parser-dll-architecture.md)  |
-| Cómo implementar **DllMain**  incluye un ejemplo.        | [Implementar DllMain](implementing-dllmain-parser.md) |
+| Qué puntos de entrada se incluyen en el archivo DLL del analizador.        | [Arquitectura dll del analizador](parser-dll-architecture.md)  |
+| Cómo implementar **DllMain incluye**  un ejemplo.        | [Implementación de DllMain](implementing-dllmain-parser.md) |
 
 
 
@@ -103,7 +103,7 @@ También puede usar la implementación de **DllMain** para almacenar una instanc
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Process. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Process.h</dt> </dl> |
 
 
 

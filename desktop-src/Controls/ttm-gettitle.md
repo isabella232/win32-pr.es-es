@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_GETTITLE (commctrl. h)
-description: Recupera información relativa al título de un control ToolTip.
+title: TTM_GETTITLE mensaje (Commctrl.h)
+description: Recuperar información sobre el título de un control de información sobre herramientas.
 ms.assetid: d8992dd1-1610-44e8-8c0f-8ae1ac4b5898
 keywords:
-- TTM_GETTITLE controles de mensajes de Windows
+- TTM_GETTITLE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0048925ed3dc267ac07b10b85e2ea1ca1449996c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 242e20f3360caac03874524df38267fc0b103ec8f1c04d8d30df106fc9c65ac4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797445"
 ---
-# <a name="ttm_gettitle-message"></a>TTM \_ GETTITLE
+# <a name="ttm_gettitle-message"></a>Mensaje \_ GETTITLE de TTM
 
-Recupera información relativa al título de un control ToolTip.
+Recuperar información sobre el título de un control de información sobre herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,18 +35,18 @@ Recupera información relativa al título de un control ToolTip.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**TTGETTITLE**](/windows/desktop/api/Commctrl/ns-commctrl-ttgettitle) que contiene información sobre un título de información sobre herramientas.
+Puntero a una [**estructura TTGETTITLE**](/windows/desktop/api/Commctrl/ns-commctrl-ttgettitle) que contiene información sobre un título de información sobre herramientas.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -54,11 +54,11 @@ No se utiliza el valor devuelto.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

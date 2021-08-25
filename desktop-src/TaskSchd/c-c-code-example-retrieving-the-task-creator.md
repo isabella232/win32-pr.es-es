@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ recuperar el creador de la tarea
-description: En este ejemplo se recupera el nombre del creador de la tarea y se muestra en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ para recuperar el creador de tareas
+description: En este ejemplo se recupera el nombre del creador de la tarea y se muestra en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: 02554ce1-2d52-48e9-95f1-d5d480519035
 keywords:
-- recuperando Programador de tareas del creador de la tarea
-- recuperar propiedades de elementos de trabajo Programador de tareas, creador de la tarea
+- recuperación del creador de tareas Programador de tareas
+- recuperar propiedades de elementos de trabajo Programador de tareas , creador de tareas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3546d676a5f1ac4b99595e47f2514b84e38f4c08
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: baa756fbb10e2d0cd68cce8953dd38cf2d31ab0242d74faea07423292908665b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872505"
 ---
-# <a name="cc-code-example-retrieving-the-task-creator"></a>Ejemplo de código de C/C++: recuperar el creador de la tarea
+# <a name="cc-code-example-retrieving-the-task-creator"></a>Ejemplo de código de C/C++: Recuperación del creador de tareas
 
-En este ejemplo se recupera el nombre del creador de la tarea y se muestra en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se recupera el nombre del creador de la tarea y se muestra en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -118,12 +118,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

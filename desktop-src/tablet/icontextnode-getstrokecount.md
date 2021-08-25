@@ -1,7 +1,7 @@
 ---
 description: Obtiene el número de trazos asociados al objeto IContextNode.
 ms.assetid: bb3c1cb3-dcf6-4465-b1bc-5c613e9747da
-title: 'IContextNode:: GetStrokeCount (método) (IACom. h)'
+title: Método IContextNode::GetStrokeCount (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 2652168fa2846995aeb17ec23c194f908f22e5d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3cecaa43c6bc42526a34ed4859c8365fbd0f1d10f90970a1b6940019da249f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773815"
 ---
-# <a name="icontextnodegetstrokecount-method"></a>IContextNode:: GetStrokeCount (método)
+# <a name="icontextnodegetstrokecount-method"></a>IContextNode::GetStrokeCount (método)
 
-Obtiene el número de trazos asociados al objeto [**IContextNode**](icontextnode.md) .
+Obtiene el número de trazos asociados al [**objeto IContextNode.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,29 +39,29 @@ HRESULT GetStrokeCount(
 
 <dl> <dt>
 
-*pulStrokeCount* \[ enuncia\]
+*pulStrokeCount* \[ out\]
 </dt> <dd>
 
-Número de trazos asociados al objeto [**IContextNode**](icontextnode.md) .
+Número de trazos asociados al [**objeto IContextNode.**](icontextnode.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo los nodos de contexto de hoja de tinta tienen datos de trazo asociados (vea [**IContextNode:: GetType**](icontextnode-gettype.md)).
+Solo los nodos de contexto de hoja de lápiz tienen datos de trazo asociados (vea [**IContextNode::GetType).**](icontextnode-gettype.md)
 
 ## <a name="examples"></a>Ejemplos
 
 En este ejemplo se muestra un método, `ExploreContextNode` , que examina un [**IContextNode**](icontextnode.md). El método hace lo siguiente:
 
 -   Obtiene el tipo del nodo de contexto.
--   Examina las propiedades específicas del tipo de nodo mediante una llamada a un método auxiliar, si el nodo de contexto es una tinta sin clasificar, una sugerencia de análisis o un nodo de reconocedor personalizado.
--   Examina cada subnodo llamando a sí mismo, si el nodo tiene subnodos.
--   Examina los datos de trazo del nodo llamando a un método auxiliar, si el nodo es un nodo de hoja de tinta.
+-   Examina propiedades específicas del tipo de nodo mediante una llamada a un método auxiliar, si el nodo de contexto es un nodo de lápiz, sugerencia de análisis o reconocedor personalizado sin clasificar.
+-   Examina cada subnodo mediante una llamada a sí mismo, si el nodo tiene subnodos.
+-   Examina los datos de trazo del nodo llamando a un método auxiliar, si el nodo es un nodo hoja de entrada de lápiz.
 
 
 ```C++
@@ -169,11 +169,11 @@ HRESULT CMyClass::ExploreContextNode(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -191,7 +191,7 @@ HRESULT CMyClass::ExploreContextNode(
 [**IContextNode::GetStrokeId**](icontextnode-getstrokeid.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Se envía el mensaje de eliminación del teléfono TAPI \_ para informar a una aplicación de la eliminación (eliminación del sistema) de un dispositivo telefónico.
+description: El mensaje TAPI PHONE REMOVE se envía para informar a una aplicación de la eliminación \_ (eliminación del sistema) de un dispositivo telefónico.
 ms.assetid: 7c888976-65da-477a-b5a6-6e78d5f603b1
-title: Mensaje de PHONE_REMOVE (TAPI. h)
+title: PHONE_REMOVE mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ab32ba8b8a8e003c5d87109dd2d0c9dbe98c236
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a26be60c55b16d0126d0b3be107a95af17dd490c9329343bb27ac6496403d46d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773905"
 ---
-# <a name="phone_remove-message"></a>TELÉFONO- \_ quitar mensaje
+# <a name="phone_remove-message"></a>Mensaje \_ PHONE REMOVE
 
-Se envía el mensaje de eliminación del **teléfono \_** TAPI para informar a una aplicación de la eliminación (eliminación del sistema) de un dispositivo telefónico. Por lo general, esto no se utiliza para las eliminaciones temporales, como la extracción de dispositivos PCMCIA, sino solo para las eliminaciones permanentes en las que el proveedor de servicios ya no debe informar del dispositivo si se reinicializara TAPI.
+El mensaje **TAPI PHONE \_ REMOVE** se envía para informar a una aplicación de la eliminación (eliminación del sistema) de un dispositivo telefónico. Por lo general, esto no se usa para eliminaciones temporales, como la extracción de dispositivos PCMCIA, sino solo para eliminaciones permanentes en las que el proveedor de servicios ya no informaría del dispositivo si se reinicializaba TAPI.
 
 
 ```C++
@@ -43,7 +43,7 @@ Reservado. Establecer en cero.
 *dwParam1* 
 </dt> <dd>
 
-Identificador del dispositivo telefónico que se ha quitado.
+Identificador del dispositivo de teléfono que se quitó.
 
 </dd> <dt>
 
@@ -65,16 +65,16 @@ Reservado. Establecer en cero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones TAPI versión 2,0 o posterior se envían un mensaje para **\_ quitar un teléfono** . Esto les informa de que el dispositivo se ha quitado del sistema. El mensaje para **\_ quitar el teléfono** está precedido por un mensaje de [**\_ cierre**](phone-close.md) de teléfono en cada identificador de teléfono, si la aplicación tenía el teléfono abierto. Este mensaje se envía a todas las aplicaciones que admiten la versión 2,0 o posterior de TAPI que han llamado a [**phoneInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-phoneinitializeexa), incluidos los que no tienen dispositivos de teléfono abiertos en este momento.
+A las aplicaciones TAPI versión 2.0 o posterior se les envía un **mensaje PHONE \_ REMOVE.** Esto les informa de que el dispositivo se ha quitado del sistema. El **mensaje \_ PHONE REMOVE** va precedido de un mensaje PHONE [**\_ CLOSE**](phone-close.md) en cada identificador de teléfono, si la aplicación tenía el teléfono abierto. Este mensaje se envía a todas las aplicaciones que admiten TAPI versión 2.0 o posterior que han llamado [**a phoneInitializeEx,**](/windows/desktop/api/Tapi/nf-tapi-phoneinitializeexa)incluidas aquellas que no tienen ningún dispositivo de teléfono abierto en ese momento.
 
-A las aplicaciones anteriores (que negociaron la versión 1,4 o anterior de TAPI) se les envía un mensaje de [**\_ Estado de teléfono**](phone-state.md) que especifica PHONESTATE \_ quitado, seguido de un mensaje de [**\_ cierre de teléfono**](phone-close.md) . Sin embargo, a diferencia del mensaje para **\_ quitar el teléfono** , estas aplicaciones antiguas solo pueden recibir estos mensajes si tienen el teléfono abierto cuando se quita. Si no tienen el teléfono abierto, su única indicación de que el dispositivo se ha quitado recibirá un PHONEERR \_ Device cuando intente obtener acceso al dispositivo.
+Las aplicaciones anteriores (que negociaron TAPI versión 1.4 o anterior) se envían un mensaje [**PHONE \_ STATE**](phone-state.md) que especifica PHONESTATE REMOVED, seguido de un \_ mensaje PHONE [**\_ CLOSE.**](phone-close.md) Sin embargo, a diferencia del mensaje **\_ PHONE REMOVE,** estas aplicaciones anteriores solo pueden recibir estos mensajes si tienen el teléfono abierto cuando se quita. Si no tienen el teléfono abierto, su única indicación de que se quitó el dispositivo sería recibir un PHONEERR NODEVICE al intentar acceder \_ al dispositivo.
 
-Una vez que se ha quitado un dispositivo, cualquier intento de acceder al dispositivo por su identificador de dispositivo produce un \_ error PHONEERR Device. Una vez que se han cerrado todas las aplicaciones TAPI para que TAPI pueda reiniciarse y, cuando se reinicialice TAPI, el dispositivo que se ha quitado ya no ocupa un identificador de dispositivo.
+Una vez quitado un dispositivo, cualquier intento de acceder al dispositivo por su identificador de dispositivo produce un error PHONEERR \_ NODEVICE. Una vez que todas las aplicaciones TAPI se han apagado para que TAPI se pueda reiniciar y cuando se reinicialice TAPI, el dispositivo eliminado ya no ocupa un identificador de dispositivo.
 
 > [!Note]  
-> Implementación: es TAPI que devuelve este \_ mensaje de PHONEERR Device después \_ de recibir un mensaje de eliminación de teléfono de un proveedor de servicios; no se realizan más llamadas a ese proveedor de servicios con ese identificador de dispositivo de teléfono.
+> Implementación: es TAPI la que devuelve este mensaje PHONEERR NODEVICE después de recibir un mensaje PHONE REMOVE de un proveedor de servicios; no se realizan más llamadas a ese proveedor de servicios con ese identificador de dispositivo \_ \_ telefónico.
 
  
 
@@ -82,10 +82,10 @@ Una vez que se ha quitado un dispositivo, cualquier intento de acceder al dispos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -93,10 +93,10 @@ Una vez que se ha quitado un dispositivo, cualquier intento de acceder al dispos
 
 <dl> <dt>
 
-[**\_cerrar teléfono**](phone-close.md)
+[**PHONE \_ CLOSE**](phone-close.md)
 </dt> <dt>
 
-[**Estado del teléfono \_**](phone-state.md)
+[**ESTADO DEL \_ TELÉFONO**](phone-state.md)
 </dt> <dt>
 
 [**phoneInitialize**](/windows/desktop/api/Tapi/nf-tapi-phoneinitialize)

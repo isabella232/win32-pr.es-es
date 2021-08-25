@@ -4,21 +4,21 @@ ms.assetid: C57D2230-A55E-4DBD-9A2A-B829F985DEA5
 title: Propiedades EncryptedData
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ff45848b2b408ec6a83edb7f2fa1c2738862516
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2a1eeca01ba2c4dfb60109d590066be631df6bca4e0deff34573ec266c6dc09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874565"
 ---
 # <a name="encrypteddata-properties"></a>Propiedades EncryptedData
 
-El objeto [**EncryptedData**](encrypteddata.md) expone las siguientes propiedades.
+El [**objeto EncryptedData**](encrypteddata.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**Propiedad Algorithm**](encrypteddata-algorithm.md)
--   [**Propiedad de contenido**](encrypteddata-content.md)
+-   [**Propiedad Content**](encrypteddata-content.md)
 
  
 

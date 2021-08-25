@@ -4,12 +4,12 @@ ms.assetid: 450ccfa6-b189-4557-bcb9-4aa29ac2356e
 title: include [elemento]
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c8237ec865cd3cfbb80f500358e8f363be8f230
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 8029f58d9d1627a315fcfd02aa4f311d0a717361abf587aa92c52134b78e5958
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856595"
 ---
 # <a name="include-element"></a>include [elemento]
 
@@ -27,7 +27,7 @@ Incluye el contenido de una macro o un archivo en la salida generada.
 
 
 
-| Atributo            | Tipo                         | Obligatorio      | Descripción                                              |
+| Atributo            | Tipo                         | Requerido      | Descripción                                              |
 |----------------------|------------------------------|---------------|----------------------------------------------------------|
 | **file**<br/>  | cadena \_ de caracteres<br/> | No<br/> | Ruta de acceso al archivo que se incluirá.<br/> <br/>  |
 | **Macro**<br/> | cadena \_ de caracteres<br/> | No<br/> | Nombre de la macro que se incluirá.<br/> <br/> |

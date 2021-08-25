@@ -1,7 +1,7 @@
 ---
-description: Define constantes que describen el modo de niebla.
+description: Define constantes que describen el modo Desenlaz.
 ms.assetid: cd83c914-bc1d-4f66-b5a6-7984b7ec52cd
-title: Enumeración D3DFOGMODE (D3D9Types. h)
+title: Enumeración D3DFOGMODE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 8436a52edbb9460c6945c1526513629939ec444b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6b94992d94779932301c271ca46dc7466344b40b68c62855d4c57bfe8b780a94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791981"
 ---
-# <a name="d3dfogmode-enumeration"></a>Enumeración D3DFOGMODE
+# <a name="d3dfogmode-enumeration"></a>D3DFOGMODE (enumeración)
 
-Define constantes que describen el modo de niebla.
+Define constantes que describen el modo Desenlaz.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,54 +43,54 @@ typedef enum D3DFOGMODE {
 
 <dl> <dt>
 
-<span id="D3DFOG_NONE"></span><span id="d3dfog_none"></span>**D3DFOG \_ ninguno**
+<span id="D3DFOG_NONE"></span><span id="d3dfog_none"></span>**D3DFOG \_ NONE**
 </dt> <dd>
 
-Ningún efecto de niebla.
+Ningún efecto de efecto de
 
 </dd> <dt>
 
-<span id="D3DFOG_EXP"></span><span id="d3dfog_exp"></span>**D3DFOG \_ exp**
+<span id="D3DFOG_EXP"></span><span id="d3dfog_exp"></span>**D3DFOG \_ EXP**
 </dt> <dd>
 
-El efecto de niebla se intensifica exponencialmente, de acuerdo con la siguiente fórmula.
+El efecto de efecto de efecto de efecto de efecto se incrementa exponencialmente, según la fórmula siguiente.
 
-![fórmula de intensidad del efecto niebla](images/fogexp.png)
+![fórmula de intensidad de efecto de nube](images/fogexp.png)
 
 </dd> <dt>
 
 <span id="D3DFOG_EXP2"></span><span id="d3dfog_exp2"></span>**D3DFOG \_ EXP2**
 </dt> <dd>
 
-El efecto de niebla intensifica exponencialmente con el cuadrado de la distancia, de acuerdo con la siguiente fórmula.
+El efecto de efecto de efecto de efecto de efecto se multiplica exponencialmente con el cuadrado de la distancia, según la fórmula siguiente.
 
-![fórmula de intensidad del efecto niebla basada en el cuadrado de la distancia](images/fogexp2.png)
-
-</dd> <dt>
-
-<span id="D3DFOG_LINEAR"></span><span id="d3dfog_linear"></span>**\_Lineal D3DFOG**
-</dt> <dd>
-
-El efecto de niebla intensifica linealmente entre los puntos inicial y final, de acuerdo con la siguiente fórmula.
-
-![fórmula de intensidad del efecto niebla basada en los puntos inicial y final](images/fogliner.png)
-
-Este es el único modo de niebla compatible actualmente.
+![fórmula de intensidad de efecto de nube basada en el cuadrado de distancia](images/fogexp2.png)
 
 </dd> <dt>
 
-<span id="D3DFOG_FORCE_DWORD"></span><span id="d3dfog_force_dword"></span>**D3DFOG \_ forzar \_ DWORD**
+<span id="D3DFOG_LINEAR"></span><span id="d3dfog_linear"></span>**D3DFOG \_ LINEAR**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+El efecto de efecto de efecto de efecto de efecto oscila linealmente entre los puntos inicial y final, según la fórmula siguiente.
+
+![fórmula de intensidad de efecto de lluvia en función de los puntos inicial y final](images/fogliner.png)
+
+Este es el único modo de "mode" admitido actualmente.
+
+</dd> <dt>
+
+<span id="D3DFOG_FORCE_DWORD"></span><span id="d3dfog_force_dword"></span>**D3DFOG \_ FORCE \_ DWORD**
+</dt> <dd>
+
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores de este tipo enumerado se usan en los \_ Estados de representación D3DRS FOGTABLEMODE y D3DRS \_ FOGVERTEXMODE.
+Los estados de representación D3DRS CONFIGURABLEMODE y \_ D3DRS CONFIGURABLEVERTEXMODE usan los valores \_ de este tipo enumerado.
 
-La niebla se puede considerar una medida de visibilidad: cuanto menor sea el valor de niebla producido por una ecuación de niebla, menos visible será un objeto.
+La distancia se puede considerar como una medida de visibilidad: cuando menor sea el valor de lamas producido por una ecuación de extremo, menos visible será un objeto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,7 +98,7 @@ La niebla se puede considerar una medida de visibilidad: cuanto menor sea el val
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

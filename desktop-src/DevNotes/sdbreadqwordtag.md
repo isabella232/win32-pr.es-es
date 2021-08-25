@@ -1,7 +1,7 @@
 ---
 Description: Recupera el valor QWORD para el TAGID especificado.
 ms.assetid: 5fa94a95-c7f3-477b-ab7c-931e8d62d501
-title: SdbReadQWORDTag función)
+title: Función SdbReadQWORDTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 15227f3d7c3177a226f1b3cc77fc78efd34379d0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4280c21983fa86312229930b7496625c594f0caac384f0dc6d130f673ce68509
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815285"
 ---
-# <a name="sdbreadqwordtag-function"></a>SdbReadQWORDTag función)
+# <a name="sdbreadqwordtag-function"></a>Función SdbReadQWORDTag
 
-Recupera el valor **QWord** para el **TAGID** especificado.
+Recupera el **valor QWORD** para el **TAGID especificado.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,30 +41,30 @@ ULONGLONG WINAPI SdbReadQWORDTag(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tiWhich* \[ de\]
+*tiWhich* \[ En\]
 </dt> <dd>
 
-**TAGID** que corresponde a los datos que se van a recuperar.
+TAGID **que** corresponde a los datos que se recuperarán.
 
 </dd> <dt>
 
-*qwDefault* \[ de\]
+*qwDefault* \[ En\]
 </dt> <dd>
 
-El valor predeterminado que se devolverá en caso de error.
+Valor predeterminado que se va a devolver en caso de error.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve el valor si se ejecuta correctamente o *qwDefault* en caso de error.
+La función devuelve el valor en caso de éxito o *qwDefault* en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ La función devuelve el valor si se ejecuta correctamente o *qwDefault* en caso 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

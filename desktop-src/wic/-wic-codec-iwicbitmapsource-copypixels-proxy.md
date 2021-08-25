@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método CopyPixels.
 ms.assetid: 020c11e9-0847-468e-b240-20529f6460cd
-title: IWICBitmapSource_CopyPixels_Proxy función)
+title: IWICBitmapSource_CopyPixels_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 5c759bd1731e2f3cbc4da9c40cb590e0f39686de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9c847680a93cb245b0e5d4247cb60b82629ea82eba12313dbcff7303dcce707
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772345"
 ---
-# <a name="iwicbitmapsource_copypixels_proxy-function"></a>Función de proxy de IWICBitmapSource \_ copyPixels \_
+# <a name="iwicbitmapsource_copypixels_proxy-function"></a>Función IWICBitmapSource \_ CopyPixels \_ Proxy
 
-Función de proxy para el método [**copyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypixels) .
+Función de proxy para [**el método CopyPixels.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypixels)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,46 +44,46 @@ HRESULT IWICBitmapSource_CopyPixels_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
-Puntero a este objeto [_ *IWICBitmapSource* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) .
+Puntero a este [**objeto IWICBitmapSource.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)
 
 </dd> <dt>
 
-*PRC* \[ de\]
+*prc* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**WICRect**](/windows/desktop/api/Wincodec/ns-wincodec-wicrect) \** _
+Tipo: **const [**WICRect**](/windows/desktop/api/Wincodec/ns-wincodec-wicrect) \***
 
-Rectángulo que se va a copiar. Un valor NULL especifica el mapa de bits completo.
+Rectángulo que se copiará. Un valor NULL especifica todo el mapa de bits.
 
 </dd> <dt>
 
-_cbStride * \[ en\]
+*cbStride* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-El intervalo del mapa de bits.
+El paso del mapa de bits
 
 </dd> <dt>
 
-*cbBufferSize* \[ de\]
+*cbBufferSize* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Tamaño del búfer.
 
 </dd> <dt>
 
-*pbBuffer* \[ enuncia\]
+*pbBuffer* \[ out\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **\* BYTE**
 
 Puntero al búfer.
 
@@ -91,9 +91,9 @@ Puntero al búfer.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -103,9 +103,9 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

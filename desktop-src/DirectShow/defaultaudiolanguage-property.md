@@ -4,12 +4,12 @@ ms.assetid: 7ab7760c-110a-4b0d-919a-32244144467f
 title: Propiedad DefaultAudioLanguage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c73a52c32b1ea9fb62bf48413e652b786f7781fe
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b8c1dd21a2f31ca3bbd5821d64407f275a823f69e95e3997f03d0908697411c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906885"
 ---
 # <a name="defaultaudiolanguage-property"></a>Propiedad DefaultAudioLanguage
 
@@ -28,15 +28,15 @@ La `DefaultAudioLanguage` propiedad recupera el idioma de audio predeterminado.
 
 Devuelve un valor LCID que contiene el identificador de idioma principal para el idioma de audio predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de solo lectura y no tiene ningún valor predeterminado.
+Esta propiedad es de solo lectura sin ningún valor predeterminado.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**SelectDefaultAudioLanguage**](selectdefaultaudiolanguage-method.md)
+[**SeleccioneDefaultAudioLanguage.**](selectdefaultaudiolanguage-method.md)
 </dt> </dl>
 
  

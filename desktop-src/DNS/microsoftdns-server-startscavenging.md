@@ -1,11 +1,11 @@
 ---
-title: Método StartScavenging de la clase MicrosoftDNS_Server
-description: El método StartScavenging inicia la eliminación de registros obsoletos en las zonas sometidas a limpieza.
+title: Método StartScavenging de la MicrosoftDNS_Server clase
+description: El método StartScavenging inicia la búsqueda de registros obsoletos en las zonas sujetas a scavenging.
 ms.assetid: ee1bc0e0-9334-4971-a524-4bb8a9015b5b
 keywords:
-- StartScavenging el método DNS
-- Método StartScavenging DNS, clase MicrosoftDNS_Server
-- MicrosoftDNS_Server de clase DNS, método StartScavenging
+- StartScavenging method DNS
+- Método StartScavenging DNS , MicrosoftDNS_Server clase
+- MicrosoftDNS_Server clase DNS , método StartScavenging
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c8e1927ed069d3e3e3cf27fd94b1ffd54e6bb2d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b6173021ca49dc73b7ec89f60b097b2179078a774c9a40c26fda2c41b2ad25f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874775"
 ---
-# <a name="startscavenging-method-of-the-microsoftdns_server-class"></a>Método StartScavenging de la \_ clase de servidor MicrosoftDNS
+# <a name="startscavenging-method-of-the-microsoftdns_server-class"></a>Método StartScavenging de la clase de servidor MicrosoftDNS \_
 
-El método **StartScavenging** inicia la eliminación de registros obsoletos en las zonas sometidas a limpieza.
+El **método StartScavenging** inicia la búsqueda de registros obsoletos en las zonas sujetas a scavenging.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-ERROR \_ correcto indica que la eliminación de registros obsoletos se ha iniciado correctamente. Cualquier otro valor es un código de error.
+ERROR \_ SUCCESS indica que la búsqueda se inició correctamente. Cualquier otro valor es un código de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,7 +53,7 @@ ERROR \_ correcto indica que la eliminación de registros obsoletos se ha inicia
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -61,16 +61,16 @@ ERROR \_ correcto indica que la eliminación de registros obsoletos se ha inicia
 
 <dl> <dt>
 
-[**\_Servidor MicrosoftDNS**](microsoftdns-server.md)
+[**MicrosoftDNS \_ Server**](microsoftdns-server.md)
 </dt> <dt>
 
-[**Método StartService de la \_ clase de servidor MicrosoftDNS**](microsoftdns-server-startservice.md)
+[**Método StartService de la clase de servidor MicrosoftDNS \_**](microsoftdns-server-startservice.md)
 </dt> <dt>
 
-[**Método StopService de la \_ clase de servidor MicrosoftDNS**](microsoftdns-server-stopservice.md)
+[**Método StopService de la clase de servidor MicrosoftDNS \_**](microsoftdns-server-stopservice.md)
 </dt> <dt>
 
-[**Método GetDistinguishedName de la \_ clase de servidor MicrosoftDNS**](microsoftdns-server-getdistinguishedname.md)
+[**Método GetDistinguishedName de la clase de servidor MicrosoftDNS \_**](microsoftdns-server-getdistinguishedname.md)
 </dt> </dl>
 
  

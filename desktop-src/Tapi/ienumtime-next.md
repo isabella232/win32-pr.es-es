@@ -4,16 +4,16 @@ ms.assetid: e8ca77b8-0322-43b4-9996-26f584cf878a
 title: Método IEnumTime::Next (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1487136b0e3e41ba11a23ba92500d2aa0758df79
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6068d23fae96d5623ced72f44e6e8d185f861b6c49ff085f1b6e9e58bc489b89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905965"
 ---
-# <a name="ienumtimenext-method"></a>IEnumTime::Next (método)
+# <a name="ienumtimenext-method"></a>IEnumTime::Next (Método)
 
-\[ Los controles e interfaces de Conferencia de telefonía IP de Encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
 El **método Next** obtiene el siguiente número especificado de elementos en la secuencia de enumeración.
 
@@ -61,7 +61,7 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Valor                                                                                     | Significado                                                       |
+| Value                                                                                     | Significado                                                       |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | El método *devolvió el número* de celtas de elementos.<br/>         |
 | <dl> <dt>**S \_ FALSE**</dt> </dl>   | El número de elementos restantes era menor *que celta.*<br/> |
@@ -79,16 +79,16 @@ TAPI llama al **método AddRef** en la [**interfaz ITTime**](ittime.md) devuelta
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-title: Método PaintWin
-description: Método PaintWin
+title: PaintWin (método)
+description: PaintWin (método)
 ms.assetid: e89794e6-c059-4531-a1e3-3a4972e0218d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b30e7a52640255934762943f910e367d76088d1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 40708700ba4f0175713c59f6e3f1ff1395accadb0dcae3b31ca2e85862a998ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906035"
 ---
-# <a name="paintwin-method"></a>Método PaintWin
+# <a name="paintwin-method"></a>PaintWin (método)
 
-El siguiente es el método **PaintWin** de CGUIPAPER de GUIPAPER. CPP.
+A continuación se muestra el método **PaintWin de** CGuiPaper de GUIPAPER. Cpp.
 
 
 ```C++
@@ -42,11 +42,11 @@ HRESULT CGuiPaper::PaintWin(void)
 
 
 
-**PaintWin** esencialmente llama al método **redraw** del copaper. En el ejemplo [StoServe](structured-storage-server-sample--stoserve-.md) , el método **redraw** se mostró para difundir la matriz de datos de tinta completa del copapel a todos los receptores conectados. **PaintWin** llama a un objeto en el lado del servidor para devolver los datos de dibujo al cliente.
+**PaintWin** llama básicamente al método **Redraw de** COPaper. En el [ejemplo de StoServe,](structured-storage-server-sample--stoserve-.md) se mostró el método **Redraw** para difundir toda la matriz de datos ink de COPaper a todos los receptores conectados. **PaintWin** llama a un objeto del lado servidor para devolver los datos de dibujo al cliente.
 
- 
+ 
 
- 
+ 
 
 
 

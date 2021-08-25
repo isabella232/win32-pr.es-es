@@ -53,7 +53,7 @@ Puntero a la interfaz [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-i
 *pAlloc* 
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero a la interfaz [**IMemAllocator del**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) asignador.
+Dirección de una variable que recibe un puntero a la [**interfaz IMemAllocator del asignador.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator)
 
 </dd> </dl>
 
@@ -65,8 +65,8 @@ Devuelve S \_ OK si se realiza correctamente o un valor **HRESULT** que indica l
 
 Se llama a este método al final del proceso de conexión de pin. Realiza los pasos siguientes:
 
-1.  Llama al [**método IMemInputPin::GetAllocatorRequirements**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocatorrequirements) para recuperar los requisitos de búfer del pin de entrada, si los hubiera.
-2.  Llama al [**método IMemInputPin::GetAllocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator) para solicitar un asignador del pin de entrada. Si el pin de entrada no proporciona un asignador, el pin de salida crea uno llamando al método de clase [**CBaseOutputPin::InitAllocator.**](cbaseoutputpin-initallocator.md)
+1.  Llama al [**método IMemInputPin::GetAllocatorRequirements**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocatorrequirements) para recuperar los requisitos de búfer del pin de entrada, si los hay.
+2.  Llama al [**método IMemInputPin::GetAllocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator) para solicitar un asignador desde el pin de entrada. Si el pin de entrada no proporciona un asignador, el pin de salida crea uno llamando al método de clase [**CBaseOutputPin::InitAllocator.**](cbaseoutputpin-initallocator.md)
 3.  Llama al [**método de clase CBaseOutputPin::D ecideBufferSize,**](cbaseoutputpin-decidebuffersize.md) que establece las propiedades del asignador. Se trata de un método virtual puro; la clase derivada debe implementarla.
 4.  Llama al [**método IMemInputPin::NotifyAllocator,**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-notifyallocator) que notifica al pin de entrada del asignador que se está utilizando.
 
@@ -81,7 +81,7 @@ Se llama a este método al final del proceso de conexión de pin. Realiza los pa
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

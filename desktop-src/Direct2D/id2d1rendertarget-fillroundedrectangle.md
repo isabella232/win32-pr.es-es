@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1RenderTarget FillRoundedRectangle (D2d1. h)
+title: Métodos ID2D1RenderTarget FillRoundedRectangle (D2d1.h)
 description: Pinta el interior del rectángulo redondeado especificado.
 ms.assetid: 9c4765b0-858f-4a20-b044-0acf87a1f131
 keywords:
-- Métodos de FillRoundedRectangle Direct2D
+- Métodos FillRoundedRectangle Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 2abc39ed364de0653813aab14ee5777ccf3c4e08
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8da1a154e7ca0b0b91b23cf067b529281ffa2b96f08f1315c9e8513cb43cb2e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874105"
 ---
-# <a name="id2d1rendertargetfillroundedrectangle-methods"></a>ID2D1RenderTarget:: FillRoundedRectangle (métodos)
+# <a name="id2d1rendertargetfillroundedrectangle-methods"></a>Métodos ID2D1RenderTarget::FillRoundedRectangle
 
 Pinta el interior del rectángulo redondeado especificado.
 
@@ -29,20 +29,20 @@ Pinta el interior del rectángulo redondeado especificado.
 
 | Método                                                                                                                                          | Descripción                                                         |
 |:------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------|
-| [**FillRoundedRectangle (D2D1 \_ redondeado \_ rectangular&, ID2D1Brush \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect__id2d1brush))  | Pinta el interior del rectángulo redondeado especificado. <br/> |
-| [**FillRoundedRectangle ( \_ rectángulo redondeado \_ D2D1 \* , ID2D1Brush \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect__id2d1brush)) | Pinta el interior del rectángulo redondeado especificado.<br/>  |
+| [**FillRoundedRectangle(D2D1 \_ ROUNDED \_ RECT&,ID2D1Brush \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect__id2d1brush))  | Pinta el interior del rectángulo redondeado especificado. <br/> |
+| [**FillRoundedRectangle(D2D1 \_ ROUNDED \_ RECT \* ,ID2D1Brush \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect__id2d1brush)) | Pinta el interior del rectángulo redondeado especificado.<br/>  |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no devuelve un código de error si se produce un error. Para determinar si una operación de dibujo (como **FillRoundedRectangle**) produjo un error, compruebe el resultado devuelto por los métodos [**ID2D1RenderTarget:: EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget:: Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) .
+Este método no devuelve un código de error si se produce un error. Para determinar si se ha producido un error en una operación de dibujo (como **FillRoundedRectangle),** compruebe el resultado devuelto por los métodos [**ID2D1RenderTarget::EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget::Flush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usan los métodos [**DrawRoundedRectangle**](id2d1rendertarget-drawroundedrectangle.md) y **FillRoundedRectangle** para esquematizar y rellenar un rectángulo redondeado. En este ejemplo se genera el resultado que se muestra en la ilustración siguiente.
+En el ejemplo siguiente se [**usan los métodos DrawRoundedRectangle**](id2d1rendertarget-drawroundedrectangle.md) y **FillRoundedRectangle** para esquematear y rellenar un rectángulo redondeado. En este ejemplo se genera la salida que se muestra en la ilustración siguiente.
 
-![Ilustración de cuatro rectángulos redondeados con distintos estilos y rellenos de trazo](images/drawroundedrectangle-scr.png)
+![ilustración de cuatro rectángulos redondeados con diferentes estilos de trazo y rellenos](images/drawroundedrectangle-scr.png)
 
 
 ```C++
@@ -122,8 +122,8 @@ HRESULT DrawAndFillRoundedRectangleExample::OnRender()
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
@@ -135,7 +135,7 @@ HRESULT DrawAndFillRoundedRectangleExample::OnRender()
 [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)
 </dt> <dt>
 
-[Cómo dibujar y rellenar una forma básica](how-to-draw-an-ellipse.md)
+[Dibujar y rellenar una forma básica](how-to-draw-an-ellipse.md)
 </dt> <dt>
 
 [**D2D1::RoundedRect**](/windows/win32/api/d2d1/nf-d2d1-id2d1roundedrectanglegeometry-getroundedrect)

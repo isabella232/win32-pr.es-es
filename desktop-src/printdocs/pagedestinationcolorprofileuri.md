@@ -1,21 +1,21 @@
 ---
-description: Obtenga información sobre el parámetro PageDestinationColorProfileURI. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el parámetro PageDestinationColorProfileURI. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: b2a4a4d2-a8bc-48dc-ad56-20380f5f91c9
 title: PageDestinationColorProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c3cf719a97f8f8086e88425c1667199815efbbb
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: d861d7e7f1493c481f19c775895b367c3a94007f97c2ad40dc61663ccd510d40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776515"
 ---
 # <a name="pagedestinationcolorprofileuri"></a>PageDestinationColorProfileURI
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica una referencia de URI relativa a un perfil DEERT incluido en un documento XPS. El procesamiento de esta opción depende de la configuración de la característica PageDeviceColorSpaceUsage. Se supone que todos los elementos que usan ese perfil ya están en el espacio de color del dispositivo adecuado y no se administrarán por colores en el controlador o dispositivo.
+Especifica una referencia de URI relativa a un perfil DE CEDIDO contenido en un documento XPS. El procesamiento de esta opción depende de la configuración de la característica PageDeviceColorSpaceUsage. Se supone que todos los elementos que usan ese perfil ya están en el espacio de color del dispositivo adecuado y no se administrarán por colores en el controlador o dispositivo.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -68,7 +68,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
@@ -85,7 +85,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

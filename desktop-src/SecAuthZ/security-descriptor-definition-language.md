@@ -1,22 +1,22 @@
 ---
-description: Explica el lenguaje de definición de descriptores de seguridad (SDDL).
+description: Explica el lenguaje de definición de descriptor de seguridad (SDDL).
 ms.assetid: 2b15325e-34ed-497b-ae6d-3ec3ac168232
-title: Lenguaje de definición de descriptores de seguridad
+title: Lenguaje de definición de descriptor de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9de9d3535efe5c33ac633a9dbd295405d74b6a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b72e74f49d34577251aef3d875a3c0e9aede07556be1b918ad532f3987c54d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907415"
 ---
-# <a name="security-descriptor-definition-language"></a>Lenguaje de definición de descriptores de seguridad
+# <a name="security-descriptor-definition-language"></a>Lenguaje de definición de descriptor de seguridad
 
-El lenguaje de definición de descriptores de seguridad (SDDL) define el formato de cadena que usan las funciones [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) y [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) para describir un [*descriptor de seguridad*](/windows/desktop/SecGloss/s-gly) como una cadena de texto. El lenguaje también define los elementos de cadena para describir la información de los componentes de un descriptor de seguridad.
+El lenguaje de definición de descriptor de seguridad (SDDL) define el formato de cadena que las funciones [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) y [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) usan para describir un [*descriptor*](/windows/desktop/SecGloss/s-gly) de seguridad como una cadena de texto. El lenguaje también define elementos de cadena para describir información en los componentes de un descriptor de seguridad.
 
 > [!Note]  
-> [*Las entradas de control de acceso*](/windows/desktop/SecGloss/a-gly) condicional (ACE) tienen un formato SDDL diferente que otros tipos ACE. Para las ACE, consulte [cadenas ACE](ace-strings.md). Para las ACE condicionales, consulte [lenguaje de definición de descriptores de seguridad para ACE condicionales](security-descriptor-definition-language-for-conditional-aces-.md).
+> Las [*entradas de control de acceso condicional*](/windows/desktop/SecGloss/a-gly) (ACE) tienen un formato SDDL diferente al de otros tipos ace. Para las ACE, vea [Ace Strings](ace-strings.md). Para las ACE condicionales, vea [Lenguaje de definición de descriptores de seguridad para ACE condicionales.](security-descriptor-definition-language-for-conditional-aces-.md)
 
  
 
@@ -24,10 +24,10 @@ El lenguaje de definición de descriptores de seguridad (SDDL) define el formato
 
 <dl> <dt>
 
-[Formato de cadena de descriptor de seguridad](security-descriptor-string-format.md)
+[Formato de cadena del descriptor de seguridad](security-descriptor-string-format.md)
 </dt> <dt>
 
-[Lenguaje de definición de descriptores de seguridad para ACE condicionales](security-descriptor-definition-language-for-conditional-aces-.md)
+[Lenguaje de definición de descriptor de seguridad para AEE condicionales](security-descriptor-definition-language-for-conditional-aces-.md)
 </dt> <dt>
 
 [Cadenas ACE](ace-strings.md)
@@ -36,7 +36,7 @@ El lenguaje de definición de descriptores de seguridad (SDDL) define el formato
 [Cadenas SID](sid-strings.md)
 </dt> <dt>
 
-[\[MS-DTYP \] : lenguaje de descripción de descriptores de seguridad](/openspecs/windows_protocols/ms-dtyp/4f4251cc-23b6-44b6-93ba-69688422cb06)
+[\[MS-DTYP: \] lenguaje de descripción del descriptor de seguridad](/openspecs/windows_protocols/ms-dtyp/4f4251cc-23b6-44b6-93ba-69688422cb06)
 </dt> </dl>
 
  

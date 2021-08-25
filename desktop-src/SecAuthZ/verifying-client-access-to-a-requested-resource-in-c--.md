@@ -1,25 +1,25 @@
 ---
 description: Llame al método AccessCheck de la interfaz IAzClientContext para comprobar si el cliente tiene acceso a una o varias operaciones.
 ms.assetid: 7c8a63c5-2eab-4414-9a3d-c99a92b67a62
-title: Comprobar el acceso del cliente a un recurso solicitado en C++
+title: Comprobar el acceso de cliente a un recurso solicitado en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeffe9cb3312e33a283c1701b58356cdf5ea9b3a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 363490e3636f5ad5229dd4234eba3bf38b9dfc54a4564bda775b143a249fe640
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906735"
 ---
-# <a name="verifying-client-access-to-a-requested-resource-in-c"></a>Comprobar el acceso del cliente a un recurso solicitado en C++
+# <a name="verifying-client-access-to-a-requested-resource-in-c"></a>Comprobar el acceso de cliente a un recurso solicitado en C++
 
-Llame al método [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) de la interfaz [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) para comprobar si el cliente tiene acceso a una o varias operaciones. Un cliente puede ser miembro de más de un rol, y una operación se puede asignar a más de una tarea, por lo que el administrador de autorización comprueba todos los roles y las tareas. Si un rol al que pertenece el cliente contiene cualquier tarea que contenga una operación, se concede el acceso a esa operación.
+Llame al [**método AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) de la [**interfaz IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) para comprobar si el cliente tiene acceso a una o varias operaciones. Un cliente podría pertenecer a más de un rol y una operación podría asignarse a más de una tarea, por lo que el Administrador de autorización comprueba todos los roles y tareas. Si algún rol al que pertenece el cliente contiene cualquier tarea que contenga una operación, se concede acceso a esa operación.
 
-Para comprobar el acceso solo a un rol al que pertenece el cliente, establezca la propiedad [**RoleForAccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_roleforaccesscheck) de la interfaz [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) .
+Para comprobar el acceso de un solo rol al que pertenece el cliente, establezca la [**propiedad RoleForAccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_roleforaccesscheck) de la [**interfaz IAzClientContext.**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext)
 
-Al inicializar el almacén de directivas de autorización para la comprobación de acceso, debe pasar cero como el valor del parámetro *lFlags* del método [**IAzAuthorizationStore:: Initialize**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize) .
+Al inicializar el almacén de directivas de autorización para la comprobación de acceso, debe pasar cero como valor del parámetro *lFlags* del método [**IAzAuthorizationStore::Initialize.**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize)
 
-En el ejemplo siguiente se muestra cómo comprobar el acceso de un cliente a una operación. En el ejemplo se da por supuesto que hay un almacén de directivas XML denominado MyStore.xml en el directorio raíz de la unidad C, que este almacén contiene una aplicación denominada///Expense y una operación denominada UseFormControl, y que la variable hToken contiene un token de cliente válido.
+En el ejemplo siguiente se muestra cómo comprobar el acceso de un cliente a una operación. En el ejemplo se supone que hay un almacén de directivas XML existente denominado MyStore.xml en el directorio raíz de la unidad C, que este almacén contiene una aplicación denominada Expense y una operación denominada UseFormControl y que la variable hToken contiene un token de cliente válido.
 
 
 ```C++

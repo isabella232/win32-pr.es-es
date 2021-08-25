@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - ExecModelClient.dll
-ms.openlocfilehash: a823dc528ea189c70f44689ab69795eb3a430e67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d03e52a15e6689b7f1ea98a2f1021874cab6a8967dd148b7eaf685ff3984e8cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773655"
 ---
 # <a name="taskcompletionclient-interface"></a>Interfaz TaskCompletionClient
 
@@ -26,13 +26,13 @@ Habilita la finalización de tareas.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **TaskCompletionClient** hereda de la interfaz [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **TaskCompletionClient** también tiene estos tipos de miembros:
+La **interfaz TaskCompletionClient** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **TaskCompletionClient también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **TaskCompletionClient** tiene estos métodos.
+La **interfaz TaskCompletionClient** tiene estos métodos.
 
 
 
@@ -45,11 +45,11 @@ La interfaz **TaskCompletionClient** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El GUID para esta interfaz es "E97D552D-9AE9-46AA-9151-D2DA4BBB5E96".
+El GUID de esta interfaz es "E97D552D-9AE9-46AA-9151-D2DA4BBB5E96".
 
-Esta API está en desuso y puede que no esté disponible en versiones futuras de Windows. En su lugar, las aplicaciones deben usar las API en el espacio de nombres [**Windows. ApplicationModel. ExtendedExecution**](/uwp/api/Windows.ApplicationModel.ExtendedExecution?view=winrt-19041) .
+Esta API está en desuso y es posible que no esté disponible en versiones futuras de Windows. Las aplicaciones deben usar las API de la [**Windows. En su lugar, el espacio de nombres ApplicationModel.ExtendedExecution.**](/uwp/api/Windows.ApplicationModel.ExtendedExecution?view=winrt-19041)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,8 +57,8 @@ Esta API está en desuso y puede que no esté disponible en versiones futuras de
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                           |
 | Archivo DLL<br/>                      | <dl> <dt>ExecModelClient.dll</dt> </dl> |
 
 

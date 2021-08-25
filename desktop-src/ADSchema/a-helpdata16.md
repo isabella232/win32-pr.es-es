@@ -1,11 +1,11 @@
 ---
-title: Help-Data16 atributo)
-description: Este atributo se utilizó para el formato de archivo de ayuda de Win16 para Exchange 4,0. No se utiliza para ninguna otra versión de Exchange.
+title: Help-Data16 atributo
+description: Este atributo se usó para el formato de archivo de ayuda de Win16 Exchange 4.0. No se usa para ninguna otra versión de Exchange.
 ms.assetid: cdddb064-72b1-43bb-9d91-8d723b9131f8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Help-Data16
-- helpData16 esquema de AD de atributos
+- Help-Data16 esquema de AD de atributo
+- Esquema de AD del atributo helpData16
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76ce3dbf6d2f64b3f87d5344bbbd6bed2dac43e5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3aeeda7634e0e01e6628ef7df8bd65230f24910f8dfac5431d4914047a36f820
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804415"
 ---
-# <a name="help-data16-attribute"></a>Help-Data16 atributo)
+# <a name="help-data16-attribute"></a>Help-Data16 atributo
 
-Este atributo se utilizó para el formato de archivo de ayuda de Win16 para Exchange 4,0. No se utiliza para ninguna otra versión de Exchange.
+Este atributo se usó para el formato de archivo de ayuda de Win16 Exchange 4.0. No se usa para ninguna otra versión de Exchange.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Help-Data16                                           |
-| Nombre para mostrar de LDAP | helpData16                                            |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | Lo utiliza el sistema.                           |
+| Ldap-Display-Name | helpData16                                            |
+| Size              | \-                                                    |
+| Actualizar privilegios  | El sistema lo usa.                           |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.402                                |
-| System-ID-GUID    | 5fd424a7-1262-11d0-a060-00aa006c33ed                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 5fd424a7-1262-11d0-a060-00aa006c33ed                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Este atributo se utilizó para el formato de archivo de ayuda de Win16 para Exch
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -76,13 +76,13 @@ Este atributo se utilizó para el formato de archivo de ayuda de Win16 para Exch
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -95,15 +95,15 @@ Este atributo se utilizó para el formato de archivo de ayuda de Win16 para Exch
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -118,13 +118,13 @@ Este atributo se utilizó para el formato de archivo de ayuda de Win16 para Exch
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -139,13 +139,13 @@ Este atributo se utilizó para el formato de archivo de ayuda de Win16 para Exch
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -160,13 +160,13 @@ Este atributo se utilizó para el formato de archivo de ayuda de Win16 para Exch
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |

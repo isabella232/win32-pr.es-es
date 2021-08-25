@@ -1,21 +1,21 @@
 ---
-description: El método SetQOSApplicationID establece el identificador de QOS de la aplicación.
+description: El método SetQOSApplicationID establece el identificador de QOS para la aplicación.
 ms.assetid: e25cf749-6673-47eb-b843-4066f475b8f1
-title: 'ITQOSApplicationID:: SetQOSApplicationID (método) (Ipmsp. h)'
+title: Método ITQOSApplicationID::SetQOSApplicationID (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7893c8038fd7a47fc1978a20e5aba5cc8293d9a3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10e7783efaf8ec30ea8f70fec634eefff0acd2f5df99453fc1958258a5a26597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774595"
 ---
-# <a name="itqosapplicationidsetqosapplicationid-method"></a>ITQOSApplicationID:: SetQOSApplicationID (método)
+# <a name="itqosapplicationidsetqosapplicationid-method"></a>ItQOSApplicationID::SetQOSApplicationID (método)
 
-\[ Este método no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Este método no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **SetQOSApplicationID** establece el identificador de QoS de la aplicación.
+El **método SetQOSApplicationID** establece el identificador de QOS para la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,24 +34,24 @@ HRESULT SetQOSApplicationID(
 
 <dl> <dt>
 
-*pApplicationID* \[ de\]
+*pApplicationID* \[ En\]
 </dt> <dd>
 
 Identificador único para el proceso de aplicación.
 
 </dd> <dt>
 
-*pApplicationGUID* \[ de\]
+*pApplicationGUID* \[ En\]
 </dt> <dd>
 
-GUID de la aplicación.
+GUID de aplicación.
 
 </dd> <dt>
 
-*pSubIDs* \[ de\]
+*pSubIDs* \[ En\]
 </dt> <dd>
 
-Sub-IDs asociado a la llamada actual.
+Sub-IDs asociada a la llamada actual.
 
 </dd> </dl>
 
@@ -63,8 +63,8 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 
 
 
@@ -74,11 +74,11 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,1<br/>                                                         |
-| Encabezado<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                         |
+| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

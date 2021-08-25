@@ -1,7 +1,7 @@
 ---
-description: Recupera el valor que indica si un objeto IContextNode se rellena parcialmente o está totalmente rellenado.
+description: Recupera el valor que indica si un objeto IContextNode está parcialmente rellenado o totalmente rellenado.
 ms.assetid: 13ac3fb2-7baa-48d7-bf8e-f36b4031fbc4
-title: 'IContextNode:: GetPartiallyPopulated (método) (IACom. h)'
+title: Método IContextNode::GetPartiallyPopulated (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 4b05cb8aae681a7302ae7da40a7412cf828fc159
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fab5b5fce4d87c32fb3435fdad2cfc6b126069b40c7e5c7c2fb302ee468e480
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773805"
 ---
-# <a name="icontextnodegetpartiallypopulated-method"></a>IContextNode:: GetPartiallyPopulated (método)
+# <a name="icontextnodegetpartiallypopulated-method"></a>IContextNode::GetPartiallyPopulated (método)
 
-Recupera el valor que indica si un objeto [**IContextNode**](icontextnode.md) se rellena parcialmente o está totalmente rellenado.
+Recupera el valor que indica si un objeto [**IContextNode**](icontextnode.md) está parcialmente rellenado o totalmente rellenado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,20 +39,20 @@ HRESULT GetPartiallyPopulated(
 
 <dl> <dt>
 
-*pfPartiallyPopulated* \[ enuncia\]
+*pfPartiallyPopulated* \[ out\]
 </dt> <dd>
 
-**Variante \_ TRUE** si este objeto [**IContextNode**](icontextnode.md) no contiene datos completos; de lo contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** si este [**objeto IContextNode**](icontextnode.md) no contiene datos completos; en caso contrario, **VARIANT \_ FALSE**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use este método cuando la aplicación mantenga su propia estructura de datos, que está sincronizada con la de [**IInkAnalyzer**](iinkanalyzer.md). Para obtener más información, consulte [Data proxy with Ink Analysis](data-proxy-with-ink-analysis.md).
+Use este método cuando la aplicación mantenga su propia estructura de datos, que se sincroniza con la de [**IInkAnalyzer**](iinkanalyzer.md). Para obtener más información, vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,9 +60,9 @@ Use este método cuando la aplicación mantenga su propia estructura de datos, q
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -83,7 +83,7 @@ Use este método cuando la aplicación mantenga su propia estructura de datos, q
 [**\_IAnalysisProxyEvents::P opulateContextNode**](-ianalysisproxyevents-populatecontextnode.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

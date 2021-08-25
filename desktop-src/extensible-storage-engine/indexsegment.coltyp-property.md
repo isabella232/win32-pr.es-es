@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: IndexSegment. Coltyp (propiedad)'
-title: Propiedad IndexSegment. Coltyp
+description: 'Más información sobre: Propiedad IndexSegment.Coltyp'
+title: IndexSegment.Coltyp, propiedad
 TOCTitle: 'Coltyp property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.IndexSegment.Coltyp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexsegment.coltyp(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2042282f33ab1910b073329e97700e5b7ab0256a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8353dbae150b086d86d7a40b9484883e05d1eaf45c658fc092db4b27624de858
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834635"
 ---
-# <a name="indexsegmentcoltyp-property"></a>Propiedad IndexSegment. Coltyp
+# <a name="indexsegmentcoltyp-property"></a>IndexSegment.Coltyp, propiedad
 
-Obtiene el tipo de la columna que se está indizando.
+Obtiene el tipo de la columna que se va a indexar.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,14 +58,14 @@ public JET_coltyp Coltyp { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_coltyp](./jet-coltyp-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_coltyp](./jet-coltyp-enumeration.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase IndexSegment](./indexsegment-class.md)
+[IndexSegment (clase)](./indexsegment-class.md)
 
-[Miembros de IndexSegment](./indexsegment-members.md)
+[Miembros indexSegment](./indexsegment-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

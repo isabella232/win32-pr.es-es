@@ -5,21 +5,21 @@ ms.assetid: 659e7d1e-d985-4cb1-95ad-355c5b44d55a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78f2ff388cf3448a4482d304fabf90fdbaa83d5d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 69c12a8969e4e16495881a08a67550cb2052862126baecf5cc07c2ad6b129c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889335"
 ---
 # <a name="creating-a-connection-request-policy"></a>Creación de una directiva de solicitud de conexión
 
-El siguiente código de Visual Basic crea una directiva de solicitud de conexión. Agrega una condición a la Directiva que coincide con el nombre del usuario que solicita el acceso. Vincula la Directiva a un perfil. Configura ese perfil para usar RADIUS para la autenticación y la contabilidad, y especifica los grupos de servidores que el perfil debe utilizar para la autenticación y las cuentas.
+El código de Visual Basic siguiente crea una directiva de solicitud de conexión. Agrega una condición a la directiva que coincide con el nombre del usuario que solicita acceso. Vincula la directiva a un perfil. Configura ese perfil para que use RADIUS para la autenticación y la contabilidad, y especifica los grupos de servidores que el perfil debe usar para la autenticación y la contabilidad.
 
 > [!Note]  
-> Este ejemplo de código en línea se ha creado en Visual Basic administrado.
+> Este ejemplo de código en línea se ha creado a Visual Basic.
 
- 
+ 
 
 
 ```VB
@@ -336,10 +336,10 @@ End Module
 
 <dl> <dt>
 
-[Orden en el que se va a usar la API SDO](/windows/desktop/Nps/sdo-order-in-which-to-use-the-sdo-api)
+[Orden en el que se va a usar la API de SDO](/windows/desktop/Nps/sdo-order-in-which-to-use-the-sdo-api)
 </dt> <dt>
 
-[Atributos compatibles con SDO](/windows/desktop/Nps/sdo-sdo-supported-attributes)
+[Atributos admitidos por SDO](/windows/desktop/Nps/sdo-sdo-supported-attributes)
 </dt> <dt>
 
 [**ISdo**](/windows/desktop/api/sdoias/nn-sdoias-isdo)
@@ -360,6 +360,6 @@ End Module
 [**PROFILEPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-profileproperties)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

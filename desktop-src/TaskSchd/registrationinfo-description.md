@@ -1,11 +1,11 @@
 ---
-title: RegistrationInfo. Description (propiedad)
-description: En el caso de scripting, obtiene o establece la descripción de la tarea.
+title: RegistrationInfo.Description, propiedad
+description: Para el scripting, obtiene o establece la descripción de la tarea.
 ms.assetid: bb85fa09-155c-452b-bf6e-28ac4f60cc42
 keywords:
-- Propiedad Description Programador de tareas
-- Propiedad Description Programador de tareas, objeto RegistrationInfo
-- Programador de tareas objeto RegistrationInfo, propiedad Description
+- Descripción de la propiedad Programador de tareas
+- Propiedad Description Programador de tareas objeto , RegistrationInfo
+- Objeto RegistrationInfo Programador de tareas propiedad , Description
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9c79b60fe6a96493c52011e5bd731679b3fee1b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea6f141eddc40b21f1cf49e490fe30df5844e6029f821d9811b0e62ea55fa8ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872465"
 ---
-# <a name="registrationinfodescription-property"></a>RegistrationInfo. Description (propiedad)
+# <a name="registrationinfodescription-property"></a>RegistrationInfo.Description, propiedad
 
-En el caso de scripting, obtiene o establece la descripción de la tarea.
+Para el scripting, obtiene o establece la descripción de la tarea.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -40,11 +40,11 @@ RegistrationInfo.Description As String
 
 Descripción de la tarea.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML para una tarea, la descripción de la tarea se especifica mediante el elemento [**Description**](taskschedulerschema-description-registrationinfotype-element.md) del esquema de programador de tareas.
+Al leer o escribir XML para una tarea, la descripción de la tarea se especifica mediante el elemento [**Description**](taskschedulerschema-description-registrationinfotype-element.md) del Programador de tareas esquema.
 
-Al establecer este valor de propiedad, el valor puede ser texto que se recupera de un archivo resource. dll. Una cadena especializada se usa para hacer referencia al texto del archivo de recursos. El formato de la cadena es $ (@ \[ dll \] , \[ resourceId \] ), donde \[ dll \] es la ruta de acceso al archivo. dll que contiene el recurso y \[ resourceId \] es el identificador del texto del recurso. Por ejemplo, al establecer este valor de propiedad en $ (@% SystemRoot% \\ System32 \\ResourceName.dll,-101), la propiedad se establecerá en el valor del texto del recurso con un identificador igual a-101 en el archivo% SystemRoot% \\ system32 \\ResourceName.dll.
+Al establecer este valor de propiedad, el valor puede ser texto que se recupera de un recurso .dll archivo. Se usa una cadena especializada para hacer referencia al texto del archivo de recursos. El formato de la cadena es $(@ Dll , ResourceID ), donde Dll es la ruta de acceso al archivo .dll que contiene el recurso y ResourceID es el identificador del texto \[ \] del \[ \] \[ \] \[ \] recurso. Por ejemplo, el establecimiento de este valor de propiedad en $(@ %SystemRoot% \\ System32ResourceName.dll, -101) establecerá la propiedad en el valor del texto del recurso con un identificador igual a -101 en el archivo deResourceName.dll \\ %SystemRoot%. \\ \\
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,9 +52,9 @@ Al establecer este valor de propiedad, el valor puede ser texto que se recupera 
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

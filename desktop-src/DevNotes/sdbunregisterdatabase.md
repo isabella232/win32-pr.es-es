@@ -1,7 +1,7 @@
 ---
-description: Anula el registro de la base de datos especificada, de modo que ya no está disponible.
+description: Anula el registro de la base de datos especificada, lo que hace que ya no esté disponible.
 ms.assetid: 7e6c50f4-85f6-4b33-b639-d8fda143e5e7
-title: SdbUnregisterDatabase función)
+title: Función SdbUnregisterDatabase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 72171e1f9ae20ac2213a285046b2499093be4313
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2ea0cfeedbf74bea02af60b8c01d04b9e0e02f527ba35c0478da801253687b8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815324"
 ---
-# <a name="sdbunregisterdatabase-function"></a>SdbUnregisterDatabase función)
+# <a name="sdbunregisterdatabase-function"></a>Función SdbUnregisterDatabase
 
-Anula el registro de la base de datos especificada, de modo que ya no está disponible.
+Anula el registro de la base de datos especificada, lo que hace que ya no esté disponible.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,16 +39,16 @@ BOOL WINAPI SdbUnregisterDatabase(
 
 <dl> <dt>
 
-*pguidDB* \[ de\]
+*pguidDB* \[ En\]
 </dt> <dd>
 
-GUID de la base de datos. Este parámetro no puede ser **null**.
+GUID de la base de datos. Este parámetro no puede ser **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se ejecuta correctamente o **false** en caso de error.
+La función devuelve **TRUE si** se ejecuta correctamente o **FALSE** en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ La función devuelve **true** si se ejecuta correctamente o **false** en caso de
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

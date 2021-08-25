@@ -1,7 +1,7 @@
 ---
 description: Número de bloqueos pendientes en este objeto.
 ms.assetid: 27506c1d-6a9a-4410-80fb-6d4f2fd2f824
-title: 'Miembro CCritSec:: m_lockCount (Wxutil. h)'
+title: Miembro CCritSec::m_lockCount (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 88098a8ded025a899e2092a96308bd6c54750758
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9885f3270c021432342605ad84c1b521672022f4a13cecac5ac49c9248c65d17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872215"
 ---
-# <a name="ccritsecm_lockcount-member"></a>Miembro lockCount CCritSec:: m \_
+# <a name="ccritsecm_lockcount-member"></a>Miembro CCritSec::m \_ lockCount
 
 Número de bloqueos pendientes en este objeto.
 
@@ -36,9 +36,9 @@ DWORD m_lockCount;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta variable miembro solo se define en la versión de depuración de la clase base. En la sección crítica, las funciones de [depuración](critical-section-debugging-functions.md) de funciones utilizan este miembro.
+Esta variable miembro solo se define en la versión de depuración de la clase base. Las [funciones de funciones de depuración de sección](critical-section-debugging-functions.md) crítica usan este miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Esta variable miembro solo se define en la versión de depuración de la clase b
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Esta variable miembro solo se define en la versión de depuración de la clase b
 
 <dl> <dt>
 
-[**Clase CCritSec**](ccritsec.md)
+[**CCritSec (clase)**](ccritsec.md)
 </dt> </dl>
 
  

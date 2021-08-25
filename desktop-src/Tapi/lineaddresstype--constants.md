@@ -1,19 +1,19 @@
 ---
-description: El tipo de dirección identifica el formato de la dirección, como el número de teléfono estándar o la dirección de correo electrónico. Solo las aplicaciones que negocien la versión 3,0 o posterior de TAPI pueden utilizar tipos de direcciones.
+description: El tipo de dirección identifica el formato de dirección, como el número de teléfono estándar o la dirección de correo electrónico. Solo las aplicaciones que negocian TAPI versión 3.0 o posterior pueden usar tipos de direcciones.
 ms.assetid: 2c32eda1-e510-40eb-ae75-fc7b9e9953cd
-title: Constantes de LINEADDRESSTYPE_ (TAPI. h)
+title: LINEADDRESSTYPE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6d0a46eff2a7a0c38fa17aed4b831ef8701c565
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f6555ff934ffb8c1b40b8f35d279a2071cad32b80b754af19672108f5e318a17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873344"
 ---
-# <a name="lineaddresstype_-constants"></a>Constantes de LINEADDRESSTYPE \_
+# <a name="lineaddresstype_-constants"></a>Constantes \_ LINEADDRESSTYPE
 
-El tipo de dirección identifica el formato de la dirección, como el número de teléfono estándar o la dirección de correo electrónico. Solo las aplicaciones que negocien la versión 3,0 o posterior de TAPI pueden utilizar tipos de direcciones.
+El tipo de dirección identifica el formato de dirección, como el número de teléfono estándar o la dirección de correo electrónico. Solo las aplicaciones que negocian TAPI versión 3.0 o posterior pueden usar tipos de direcciones.
 
 <dl> <dt>
 
@@ -38,7 +38,7 @@ El tipo de dirección es un número de teléfono estándar.
 
 
 
-El tipo de dirección es Conferencia del Protocolo de descripción de la sesión (SDP).
+El tipo de dirección es la conferencia del Protocolo de descripción de sesión (SDP).
 
 
 </dt> </dl> </dd> <dt>
@@ -56,7 +56,7 @@ El tipo de dirección es un nombre de correo electrónico.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSTYPE_DOMAINNAME"></span><span id="lineaddresstype_domainname"></span>**LINEADDRESSTYPE \_ domainname**
+<span id="LINEADDRESSTYPE_DOMAINNAME"></span><span id="lineaddresstype_domainname"></span>**LINEADDRESSTYPE \_ DOMAINNAME**
 </dt> <dd> <dl> <dt>
 
 0x00000008
@@ -69,7 +69,7 @@ El tipo de dirección es un nombre de dominio.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSTYPE_IPADDRESS"></span><span id="lineaddresstype_ipaddress"></span>**LINEADDRESSTYPE \_ IPAddress**
+<span id="LINEADDRESSTYPE_IPADDRESS"></span><span id="lineaddresstype_ipaddress"></span>**LINEADDRESSTYPE \_ IPADDRESS**
 </dt> <dd> <dl> <dt>
 
 0x00000010
@@ -88,8 +88,8 @@ El tipo de dirección es una dirección IP.
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
