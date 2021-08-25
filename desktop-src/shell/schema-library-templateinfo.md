@@ -1,21 +1,21 @@
 ---
-description: El <templateInfo> elemento es un contenedor para el elemento folderType, que especifica un tipo de carpeta para mostrar los resultados de una consulta en esta biblioteca. Este elemento es opcional y no tiene atributos.
+description: El elemento es un contenedor para el elemento folderType, que especifica un tipo de carpeta para mostrar los resultados de una <templateInfo> consulta sobre esta biblioteca. Este elemento es opcional y no tiene atributos.
 ms.assetid: C555097A-E7B8-45ef-8CFA-19CFBC5E9D5A
-title: Elemento templateInfo (esquema de biblioteca)
+title: elemento templateInfo (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dae06a57a1b30407e2513e03f30ae6a4da13e849
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eda0c42e71db2e47335371b51d9dc819620e6b28dfac63ee9c0e2a640ccab0b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942095"
 ---
-# <a name="templateinfo-element-library-schema"></a>Elemento templateInfo (esquema de biblioteca)
+# <a name="templateinfo-element-library-schema"></a>elemento templateInfo (esquema de biblioteca)
 
-El <templateInfo> elemento es un contenedor para el elemento [folderType](schema-library-foldertype.md) , que especifica un tipo de carpeta para mostrar los resultados de una consulta en esta biblioteca. Este elemento es opcional y no tiene atributos.
+El <templateInfo> elemento es un contenedor para el elemento [folderType,](schema-library-foldertype.md) que especifica un tipo de carpeta para mostrar los resultados de una consulta sobre esta biblioteca. Este elemento es opcional y no tiene atributos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <!-- templateInfo -->
@@ -34,8 +34,8 @@ El <templateInfo> elemento es un contenedor para el elemento [folderType](schema
 
 | Elemento primario                                                               | Elementos secundarios                                                             |
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md) | [Elemento folderType (esquema de biblioteca)](schema-library-foldertype.md)       |
-|                                                                              | [Elemento propertyStore (esquema de biblioteca)](schema-library-propertystore.md) |
+| [elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md) | [elemento folderType (esquema de biblioteca)](schema-library-foldertype.md)       |
+|                                                                              | [elemento propertyStore (esquema de biblioteca)](schema-library-propertystore.md) |
 
 
 
@@ -48,7 +48,7 @@ El <templateInfo> elemento es un contenedor para el elemento [folderType](schema
 [Esquema de descripción de biblioteca](library-schema-entry.md)
 </dt> <dt>
 
-[Esquema de Descripción del conector de búsqueda](/previous-versions//dd743009(v=vs.85))
+[Esquema de descripción del conector de búsqueda](/previous-versions//dd743009(v=vs.85))
 </dt> </dl>
 
  

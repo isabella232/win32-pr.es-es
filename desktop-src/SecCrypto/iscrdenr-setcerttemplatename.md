@@ -1,7 +1,7 @@
 ---
 description: Especifica el nombre de la plantilla de certificado.
 ms.assetid: 15d22130-e614-4505-94e8-83c2efbf6d87
-title: 'ISCrdEnr:: setCertTemplateName (método)'
+title: Método ISCrdEnr::setCertTemplateName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 53ba18626a7d2bb703ed4d11953fb4872cf9257c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f757ead06e5d1769e109bcbfc8e3510f4298f32145d60c4c0bc992a01f3ab36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993045"
 ---
-# <a name="iscrdenrsetcerttemplatename-method"></a>ISCrdEnr:: setCertTemplateName (método)
+# <a name="iscrdenrsetcerttemplatename-method"></a>Método ISCrdEnr::setCertTemplateName
 
-El método **setCertTemplateName** especifica el nombre de la plantilla de certificado.
+El **método setCertTemplateName** especifica el nombre de la plantilla de certificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,17 +52,17 @@ SCrdEnr.setCertTemplateName( _
 
 <dl> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Valor que determina si se está configurando el nombre real o el nombre para mostrar de la plantilla de certificado. Si *dwFlags* tiene el valor de la \_ \_ \_ plantilla de certificado \_ \_ de inscripción, se establece el nombre para mostrar de la plantilla de certificado. De lo contrario, se establece el nombre real de la plantilla de certificado.
+Valor que determina si se establece el nombre real o el nombre para mostrar de la plantilla de certificado. Si *dwFlags tiene el* valor SCARD ENROLL CERT TEMPLATE DISPLAY NAME, se establece el nombre para mostrar de la plantilla de \_ \_ \_ \_ \_ certificado. De lo contrario, se establece el nombre real de la plantilla de certificado.
 
 </dd> <dt>
 
-*bstrCertTemplateName* \[ de\]
+*bstrCertTemplateName* \[ En\]
 </dt> <dd>
 
-Nombre de la plantilla de certificado que se utilizará en la solicitud de certificado.
+Nombre de la plantilla de certificado que se usará en la solicitud de certificado.
 
 </dd> </dl>
 
@@ -70,13 +70,13 @@ Nombre de la plantilla de certificado que se utilizará en la solicitud de certi
 
 ### <a name="vb"></a>VB
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](common-hresult-values.md).
+Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si no establece el nombre de la plantilla de certificado mediante una llamada a **ISCrdEnr:: setCertTemplateName**, el nombre tiene como valor predeterminado el nombre en la lista de plantillas de certificado disponibles.
+Si no establece el nombre de la plantilla de certificado mediante una llamada a **ISCrdEnr::setCertTemplateName**, el nombre tiene como valor predeterminado el nombre de la lista de plantillas de certificado disponibles.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,9 +85,9 @@ Si no establece el nombre de la plantilla de certificado mediante una llamada a 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr se define como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr se define como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_MOVEBAND (commctrl. h)
+title: RB_MOVEBAND mensaje (Commctrl.h)
 description: Mueve una banda de un índice a otro.
 ms.assetid: bb5b45de-957e-46fb-b59a-18b55b69c395
 keywords:
-- RB_MOVEBAND controles de mensajes de Windows
+- RB_MOVEBAND controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 146103c4c3d70fc0514729a00eac152c4847b85c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ab45f63b46b8bb883ef9f1fd8708f915dba2a6860ef2f6fabb09e2b00bd8fe6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119798545"
 ---
-# <a name="rb_moveband-message"></a>Mensaje de MOVEBAND de RB \_
+# <a name="rb_moveband-message"></a>Mensaje \_ MOVEBAND de RB
 
 Mueve una banda de un índice a otro.
 
@@ -32,7 +32,7 @@ Mueve una banda de un índice a otro.
 *wParam* 
 </dt> <dd>
 
-Índice de base cero de la banda que se va a desplace.
+Índice de base cero de la banda que se va a mover.
 
 </dd> <dt>
 
@@ -45,23 +45,23 @@ Mueve una banda de un índice a otro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Probablemente, este mensaje cambiará el índice de otras bandas en el control rebar. Si una banda se mueve del índice 6 al índice 0, se incrementará el índice en todas las bandas entre ellas.
+Lo más probable es que este mensaje cambie el índice de otras bandas en el control rebar. Si una banda se mueve del índice 6 al índice 0, todas las bandas entre sí tendrán su índice incrementado en uno.
 
-*lParam* nunca debe ser mayor que el número de bandas menos uno. El número de bandas puede obtenerse con el mensaje [**RB \_ GETBANDCOUNT**](rb-getbandcount.md) .
+*lParam nunca* debe ser mayor que el número de bandas menos una. El número de bandas se puede obtener con el [**mensaje \_ GETBANDCOUNT de RB.**](rb-getbandcount.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

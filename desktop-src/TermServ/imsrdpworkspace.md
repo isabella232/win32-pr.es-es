@@ -1,11 +1,11 @@
 ---
 title: Interfaz IMsRdpWorkspace
-description: Expone métodos que administran Conexión de RemoteApp y Escritorio las credenciales y las conexiones.
+description: Expone métodos que administran Conexión de RemoteApp y Escritorio credenciales y conexiones.
 ms.assetid: cddcdfc2-b30a-4d00-84c2-ad036ab6288f
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la interfaz IMsRdpWorkspace
-- Servicios de Escritorio remoto de la interfaz IMsRdpWorkspace, descrito
+- Interfaz IMsRdpWorkspace Servicios de Escritorio remoto
+- Interfaz IMsRdpWorkspace Servicios de Escritorio remoto , descrito
 topic_type:
 - apiref
 api_name:
@@ -16,37 +16,37 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ba55a02c5d984bc87aa05caffd42b3a3b965c43
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1489690632b0ef1bf05a529d84ed5c96afb6c442c82744f964c9a89e9286299d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125535"
 ---
 # <a name="imsrdpworkspace-interface"></a>Interfaz IMsRdpWorkspace
 
-Expone métodos que administran Conexión de RemoteApp y Escritorio las credenciales y las conexiones. La Access Control Web Servicios de Escritorio remoto implementa esta interfaz. Este control es un contenedor alrededor del cliente de Conexión a Escritorio remoto (MsTscAx.dll) y el proxy en tiempo de ejecución de conexiones de RemoteApp y escritorio (Tswbprxy.exe).
+Expone métodos que administran Conexión de RemoteApp y Escritorio credenciales y conexiones. Esta interfaz se implementa mediante el Servicios de Escritorio remoto web Access Control. Este control es un contenedor alrededor del cliente de Conexión a Escritorio remoto (MsTscAx.dll) y el proxy en tiempo de ejecución de Conexiones de Escritorio y RemoteApp (Tswbprxy.exe).
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IMsRdpWorkspace** hereda de la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . **IMsRdpWorkspace** también tiene estos tipos de miembros:
+La **interfaz IMsRdpWorkspace** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **IMsRdpWorkspace** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IMsRdpWorkspace** tiene estos métodos.
+La **interfaz IMsRdpWorkspace** tiene estos métodos.
 
 
 
 | Método                                                                                   | Descripción                                                                                                                                                           |
 |:-----------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ClearWorkspaceCredential**](/previous-versions/windows/desktop/legacy/ee351596(v=vs.85))             | Elimina las credenciales de usuario asociadas con el identificador de conexión especificado.<br/>                                                                                  |
-| [**DisconnectWorkspace**](/previous-versions/windows/desktop/legacy/ee351597(v=vs.85))                       | Desconecta todas las conexiones existentes asociadas con el identificador de conexión especificado y elimina las credenciales de usuario correspondientes del almacén de credenciales.<br/> |
+| [**ClearWorkspaceCredential**](/previous-versions/windows/desktop/legacy/ee351596(v=vs.85))             | Elimina las credenciales de usuario asociadas al identificador de conexión especificado.<br/>                                                                                  |
+| [**DisconnectWorkspace**](/previous-versions/windows/desktop/legacy/ee351597(v=vs.85))                       | Desconecta todas las conexiones existentes asociadas al identificador de conexión especificado y elimina las credenciales de usuario correspondientes del almacén de credenciales.<br/> |
 | [**IsWorkspaceCredentialSpecified**](/previous-versions/windows/desktop/legacy/ee351598(v=vs.85)) | Determina si existen credenciales de usuario para el identificador de conexión especificado.<br/>                                                                                 |
 | [**IsWorkspaceSSOEnabled**](/previous-versions/windows/desktop/legacy/ee351599(v=vs.85))                   | Determina si el inicio de sesión único (SSO) está habilitado para Conexión de RemoteApp y Escritorio.<br/>                                                                   |
-| [**Autenticado**](/previous-versions/windows/desktop/legacy/ee351600(v=vs.85))                               | Marca la autenticación de las credenciales de usuario para el identificador de conexión y, posteriormente, muestra la notificación de conexión en el área de notificación de la barra de tareas. <br/>     |
-| [**StartWorkspace**](/previous-versions/windows/desktop/legacy/ee351601(v=vs.85))                                 | Asocia las credenciales de usuario y los certificados con un identificador de conexión.<br/>                                                                                         |
+| [**OnAuthenticated**](/previous-versions/windows/desktop/legacy/ee351600(v=vs.85))                               | Marca la autenticación de las credenciales de usuario para el identificador de conexión y, posteriormente, muestra la notificación de conexión en el área de notificación de la barra de tareas. <br/>     |
+| [**StartWorkspace**](/previous-versions/windows/desktop/legacy/ee351601(v=vs.85))                                 | Asocia las credenciales de usuario y los certificados a un identificador de conexión.<br/>                                                                                         |
 
 
 
@@ -58,10 +58,10 @@ La interfaz **IMsRdpWorkspace** tiene estos métodos.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                          |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                             |
 | Archivo DLL<br/>                      | <dl> <dt>MsRdpWebAccess.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpWorkspace se define como 145D0621-04CF-4FC2-A766-A81A9069CDF8<br/>            |
+| IID<br/>                      | IID IMsRdpWorkspace se define como \_ 145D0621-04CF-4FC2-A766-A81A9069CDF8<br/>            |
 
 
 

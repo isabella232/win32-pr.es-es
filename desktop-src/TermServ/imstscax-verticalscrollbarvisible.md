@@ -1,30 +1,30 @@
 ---
-title: Propiedad VerticalScrollBarVisible de IMsTscAx
+title: Propiedad IMsTscAx VerticalScrollBarVisible
 description: Indica si el control muestra una barra de desplazamiento vertical.
 ms.assetid: b31e2db3-b367-4900-a2c6-51fd794341c2
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad VerticalScrollBarVisible
-- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto, interfaz IMsTscAx
-- Servicios de Escritorio remoto de la interfaz IMsTscAx, propiedad VerticalScrollBarVisible
-- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient, propiedad VerticalScrollBarVisible
-- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient2, propiedad VerticalScrollBarVisible
-- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient3, propiedad VerticalScrollBarVisible
-- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient4, propiedad VerticalScrollBarVisible
-- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient5, propiedad VerticalScrollBarVisible
-- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient6, propiedad VerticalScrollBarVisible
-- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad VerticalScrollBarVisible
-- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad VerticalScrollBarVisible
-- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad VerticalScrollBarVisible
+- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto
+- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto , interfaz IMsTscAx
+- Interfaz IMsTscAx Servicios de Escritorio remoto , propiedad VerticalScrollBarVisible
+- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto , interfaz IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad VerticalScrollBarVisible
+- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto , interfaz IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad VerticalScrollBarVisible
+- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto , interfaz IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad VerticalScrollBarVisible
+- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto , interfaz IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad VerticalScrollBarVisible
+- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto , interfaz IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad VerticalScrollBarVisible
+- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto , interfaz IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad VerticalScrollBarVisible
+- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad VerticalScrollBarVisible
+- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad VerticalScrollBarVisible
+- Propiedad VerticalScrollBarVisible Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad VerticalScrollBarVisible
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1365a0ab6d4a1411d78496cf157f3bc49fe5db15
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b09cf6c50c4724cc7374163998af7b7bab77d61f4c16177fedddcc9b1e8de055
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125265"
 ---
-# <a name="imstscaxverticalscrollbarvisible-property"></a>IMsTscAx:: VerticalScrollBarVisible (propiedad)
+# <a name="imstscaxverticalscrollbarvisible-property"></a>Propiedad IMsTscAx::VerticalScrollBarVisible
 
 Indica si el control muestra una barra de desplazamiento vertical.
 
@@ -80,17 +80,17 @@ HRESULT get_VerticalScrollBarVisible(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de este parámetro es **true** si la barra de desplazamiento vertical está visible y **false** en caso contrario.
+El valor de este parámetro es **TRUE si** la barra de desplazamiento vertical está visible y **FALSE** en caso contrario.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El control muestra automáticamente una barra de desplazamiento vertical si el alto del control actual es menor que el alto del escritorio.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,7 +102,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx se define como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IID IMsTscAx se define como \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 

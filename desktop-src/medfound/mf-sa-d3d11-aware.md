@@ -1,32 +1,32 @@
 ---
-description: Especifica si una transformación de Media Foundation (MFT) es compatible con Microsoft Direct3D 11.
+description: Especifica si una Media Foundation transformación (MFT) admite Microsoft Direct3D 11.
 ms.assetid: 23482B8A-58F3-4B39-9C6D-54EC27D36C01
-title: MF_SA_D3D11_AWARE atributo (Mftransform. h)
+title: MF_SA_D3D11_AWARE atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d90f560e3d31b80c1b3fbcbb5c25c4e20815f51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59a996493ace387d1c6e93c734110772274986c6e5490b9e0e08567024d47c0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955405"
 ---
-# <a name="mf_sa_d3d11_aware-attribute"></a>\_ \_ Atributo compatible con D3D11 de MF SA \_
+# <a name="mf_sa_d3d11_aware-attribute"></a>Atributo MF \_ SA \_ D3D11 \_ AWARE
 
-Especifica si una transformación de Media Foundation (MFT) es compatible con Microsoft Direct3D 11.
+Especifica si una Media Foundation transformación (MFT) admite Microsoft Direct3D 11.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Bool** almacenado como **UINT32**
+**BOOL almacenado** como **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo solo se aplica a MFTs de vídeo. Para consultar este atributo, llame a [**IMFTransform:: GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) para obtener el almacén de atributos de MFT. Si **GetAttributes** se realiza correctamente, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Este atributo solo se aplica a las MFP de vídeo. Para consultar este atributo, llame [**a IMFTransform::GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) para obtener el almacén de atributos MFT. Si **GetAttributes se** realiza correctamente, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
--   Si el atributo es distinto de cero, el cliente puede dar a la MFT un puntero a la interfaz [**IMFDXGIDeviceManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) antes de que se inicie el streaming. Para ello, el cliente envía el mensaje [**de \_ \_ Administrador de \_ D3D \_ de conjunto de mensajes MFT**](mft-message-set-d3d-manager.md) a la MFT. No es necesario que el cliente envíe este mensaje.
--   Si este atributo es cero (**false**), el MFT no es compatible con Direct3D 11 y el cliente no debe enviar el mensaje de [**Administrador de D3D del \_ conjunto de mensajes \_ \_ \_ MFT**](mft-message-set-d3d-manager.md) a la MFT.
+-   Si el atributo es distinto de cero, el cliente puede dar al MFT un puntero a la interfaz [**DEGDXGIDeviceManager antes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) de que se inicie el streaming. Para ello, el cliente envía el [**mensaje MFT \_ MESSAGE SET \_ \_ D3D \_ MANAGER**](mft-message-set-d3d-manager.md) al MFT. No es necesario que el cliente envíe este mensaje.
+-   Si este atributo es cero **(FALSE),** MFT no admite Direct3D 11 y el cliente no debe enviar el mensaje [**MFT \_ MESSAGE SET \_ \_ D3D \_ MANAGER**](mft-message-set-d3d-manager.md) al MFT.
 
-El valor predeterminado de este atributo es **false**. Trate este atributo como de solo lectura. No cambie el valor; la MFT omitirá cualquier cambio en el valor.
+El valor predeterminado de este atributo es **FALSE.** Trate este atributo como de solo lectura. No cambie el valor; MFT omitirá los cambios en el valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,9 +34,9 @@ El valor predeterminado de este atributo es **false**. Trate este atributo como 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                        |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                              |
+| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -44,10 +44,10 @@ El valor predeterminado de este atributo es **false**. Trate este atributo como 
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Compatibilidad con la descodificación de vídeo Direct3D 11 en Media Foundation](supporting-direct3d-11-video-decoding-in-media-foundation.md)
+[Compatibilidad con la decodificación de vídeo de Direct3D 11 en Media Foundation](supporting-direct3d-11-video-decoding-in-media-foundation.md)
 </dt> </dl>
 
  

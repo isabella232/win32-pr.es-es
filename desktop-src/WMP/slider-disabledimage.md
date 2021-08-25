@@ -1,9 +1,9 @@
 ---
-title: SLIDEr. disabledImage
-description: El atributo disabledImage especifica o recupera la imagen del control deslizante que se utiliza cuando se deshabilita el control deslizante.
+title: SLIDER.disabledImage
+description: El atributo disabledImage especifica o recupera la imagen del control deslizante que se usa cuando el control deslizante está deshabilitado.
 ms.assetid: b6c4237d-8eb0-44ce-a23f-9bdc5c21aca8
 keywords:
-- CONTROL SLIDEr. disabledImage Windows Media Player
+- SLIDER.disabledImage Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf1b90dcbd551ca0f8bb332f858eac0b69c46733
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 596afbed41fa1a864d8ed4e5fd217cb4856a716623ad2a60db080b3e965ab48d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123075"
 ---
-# <a name="sliderdisabledimage"></a>SLIDEr. disabledImage
+# <a name="sliderdisabledimage"></a>SLIDER.disabledImage
 
-El atributo **disabledImage** especifica o recupera la imagen del control deslizante que se utiliza cuando se deshabilita el control deslizante.
+El **atributo disabledImage** especifica o recupera la imagen del control deslizante que se usa cuando el control deslizante está deshabilitado.
 
 ``` syntax
         elementID.disabledImage
@@ -29,13 +29,13 @@ El atributo **disabledImage** especifica o recupera la imagen del control desliz
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene el nombre de un archivo de imagen.
+Este atributo es una cadena de **lectura** y escritura que contiene el nombre de un archivo de imagen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**DisabledImage** es opcional. Si no se proporciona, el **BackgroundImage** se utiliza para todos los Estados deshabilitados. Cuando un control deslizante está deshabilitado, no hay ninguna imagen en primer plano visible.
+DisabledImage **es** opcional. Si no se proporciona, **backgroundImage** se usa para todos los estados deshabilitados. Cuando un control deslizante está deshabilitado, no se ve ninguna imagen en primer plano.
 
-Los formatos admitidos son BMP, JPG, PNG y GIF (sin incluir los GIF animados).
+Los formatos admitidos son BMP, JPG, PNG y GIF (sin incluir GIF animados).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Los formatos admitidos son BMP, JPG, PNG y GIF (sin incluir los GIF animados).
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -51,10 +51,10 @@ Los formatos admitidos son BMP, JPG, PNG y GIF (sin incluir los GIF animados).
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**Control deslizante. backgroundImage**](slider-backgroundimage.md)
+[**SLIDER.backgroundImage**](slider-backgroundimage.md)
 </dt> </dl>
 
  

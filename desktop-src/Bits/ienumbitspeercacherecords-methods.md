@@ -4,16 +4,16 @@ description: La interfaz IEnumBitsPeerCacheRecords expone los métodos siguiente
 ms.assetid: 1F11EA5E-6784-4E26-A567-2347DD464342
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a78b78b0474b3717347973abad529fe470901aff
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b28ac428c6560df19586b1679d158f305b486a559b983bc5f42fb0ac1e0ebd64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005005"
 ---
 # <a name="ienumbitspeercacherecords-methods"></a>Métodos IEnumBitsPeerCacheRecords
 
-La interfaz [**IEnumBitsPeerCacheRecords**](/windows/desktop/api/Bits3_0/nn-bits3_0-ienumbitspeercacherecords) expone los métodos siguientes.
+La [**interfaz IEnumBitsPeerCacheRecords**](/windows/desktop/api/Bits3_0/nn-bits3_0-ienumbitspeercacherecords) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,9 +23,9 @@ La interfaz [**IEnumBitsPeerCacheRecords**](/windows/desktop/api/Bits3_0/nn-bits
 -   [**Reset (Método)**](/windows/desktop/api/Bits3_0/nf-bits3_0-ienumbitspeercacherecords-reset)
 -   [**Método Skip**](/windows/desktop/api/Bits3_0/nf-bits3_0-ienumbitspeercacherecords-skip)
 
- 
+ 
 
- 
+ 
 
 
 

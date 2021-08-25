@@ -4,16 +4,16 @@ ms.assetid: F529C47A-2F90-40C8-83D0-74A6974425D2
 title: Métodos IPolicyQualifiers
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b885a4e87ae254d9c2124cdd7acf1df2f354bc2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e379e514b2c34b85c0b760f3175da6605022711ee19b5be75bbf05512191c94d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797905"
 ---
 # <a name="ipolicyqualifiers-methods"></a>Métodos IPolicyQualifiers
 
-La interfaz [**IPolicyQualifiers**](/windows/desktop/api/CertEnroll/nn-certenroll-ipolicyqualifiers) expone los métodos siguientes.
+La [**interfaz IPolicyQualifiers**](/windows/desktop/api/CertEnroll/nn-certenroll-ipolicyqualifiers) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

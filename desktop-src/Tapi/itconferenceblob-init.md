@@ -1,21 +1,21 @@
 ---
-description: El método init inicializa el BLOB de la Conferencia en función de una cadena de texto. Si pBlob es NULL, se usan los valores predeterminados.
+description: El método Init inicializa el blob de conferencia basándose en una cadena textual. Si pBlob es NULL, se usan los valores predeterminados.
 ms.assetid: ba492503-90ff-45dd-a39f-6d4451e57339
-title: 'ITConferenceBlob:: init (método) (Sdpblb. h)'
+title: Método ITConferenceBlob::Init (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81bdd512ffeb4b380da04e59deb17315d00b7285
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a4f7816d1de346e12b3fab799728f32fb146664846d9dcb6d7cd7df757d62e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991938"
 ---
-# <a name="itconferenceblobinit-method"></a>ITConferenceBlob:: init (método)
+# <a name="itconferenceblobinit-method"></a>ITConferenceBlob::Init (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **init** inicializa el BLOB de la Conferencia en función de una cadena de texto. Si *pBlob* es **null**, se usan los valores predeterminados.
+El **método Init** inicializa el blob de conferencia basándose en una cadena textual. Si *pBlob es* **NULL,** se usan los valores predeterminados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,24 +34,24 @@ HRESULT Init(
 
 <dl> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
-Puntero a una representación **BSTR** del nombre de la Conferencia.
+Puntero a una **representación BSTR** del nombre de la conferencia.
 
 </dd> <dt>
 
-*CharacterSet* \[ de\]
+*Juego de caracteres* \[ En\]
 </dt> <dd>
 
-[**BLOB \_ de Descriptor \_ del juego de caracteres del**](blob-character-set.md) juego de caracteres.
+[**BLOB \_ Descriptor \_ CHARACTER SET**](blob-character-set.md) del juego de caracteres.
 
 </dd> <dt>
 
-*pBlob* \[ de\]
+*pBlob* \[ En\]
 </dt> <dd>
 
-Puntero a un **BSTR** que contiene el BLOB de la Conferencia. Si es **null**, el BLOB de la Conferencia se inicializa con los valores predeterminados. Actualmente, los valores de conferencia predeterminados solo están disponibles si el parámetro *characterSet* está establecido en el ASCII de BCS \_ .
+Puntero a un **BSTR** que contiene el blob de conferencia. Si **es NULL,** el blob de conferencia se inicializa con valores predeterminados. Actualmente, los valores de conferencia predeterminados solo están disponibles si el *parámetro CharacterSet* está establecido en BCS \_ ASCII.
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Este método puede devolver uno de estos valores.
 
 | Value                                                                                         | Significado                                                                    |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                               |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El parámetro *pName*, *characterSet* o *pBlob* no es válido.<br/> |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/>            |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                               |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El *parámetro pName*, *CharacterSet* o *pBlob* no es válido.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/>            |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                              |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                             |
 
@@ -73,11 +73,11 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**ITConferenceBlob:: init** devolverá un error si ya se ha inicializado el BLOB.
+**ITConferenceBlob::Init** devolverá un error si el blob ya se ha inicializado.
 
-La aplicación debe usar [**SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) para asignar memoria para los parámetros *pName* y *pBlob* . La aplicación debe usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar memoria cuando las variables ya no se necesiten.
+La aplicación debe usar [**SysAllocString para**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) asignar memoria para los *parámetros pName* *y pBlob.* La aplicación debe usar [**SysFreeString para**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) liberar la memoria cuando las variables ya no sean necesarias.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,9 +85,9 @@ La aplicación debe usar [**SysAllocString**](/windows/win32/api/oleauto/nf-olea
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -99,7 +99,7 @@ La aplicación debe usar [**SysAllocString**](/windows/win32/api/oleauto/nf-olea
 [**ITConferenceBlob**](itconferenceblob.md)
 </dt> <dt>
 
-[**\_juego de caracteres de blob \_**](blob-character-set.md)
+[**JUEGO \_ DE CARACTERES DE \_ BLOB**](blob-character-set.md)
 </dt> </dl>
 
  

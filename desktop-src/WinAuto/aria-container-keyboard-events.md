@@ -1,23 +1,23 @@
 ---
-title: Error de accesibilidad de teclado del rol de contenedor de ARIA
-description: Error de accesibilidad de teclado del rol de contenedor de ARIA
+title: Error de accesibilidad del teclado del rol de contenedor ARIA
+description: Error de accesibilidad del teclado del rol de contenedor ARIA
 ms.assetid: 364F26D7-7B65-418B-9DA5-F3B7B59284F7
 keywords:
 - AriaContainerKeyboardAccessibilityErrorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 085591e4f4834e8088b5ca199918d621f518e678
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 591098ba6e38836f1f39d13e72495bc1d7a3d5f9fe088873661e3dd3a7e65d4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122405"
 ---
-# <a name="aria-container-role-keyboard-accessibility-error"></a>Error de accesibilidad de teclado del rol de contenedor de ARIA
+# <a name="aria-container-role-keyboard-accessibility-error"></a>Error de accesibilidad del teclado del rol de contenedor ARIA
 
 ## <a name="text"></a>Texto
 
-Es un contenedor con funcionalidad de mouse personalizado y descendiente activo, pero sin la funcionalidad de teclado correspondiente: Controladores de eventos de JavaScript para **onkeydown** o **OnKeyPress**.
+Element es un contenedor con funcionalidad de mouse personalizada y descendiente activa, pero sin la funcionalidad de teclado correspondiente: controladores de eventos de JavaScript para **OnKeyDown** **o OnKeyPress.**
 
 ## <a name="type"></a>Tipo
 
@@ -25,7 +25,7 @@ Error
 
 ## <a name="description"></a>Descripción
 
-Este error se aplica a los elementos que tienen el atributo **Aria-activedescendant** . Estos elementos tienen uno o varios controladores de eventos del mouse (**MouseMove**, **MouseDown** o **MouseUp**), pero faltan los controladores de eventos de teclado equivalentes (**KeyDown**, **KeyUp** o **KeyPress**). Los controladores de eventos de teclado son necesarios para asegurarse de que el usuario puede invocar la funcionalidad del elemento mediante el teclado y para asegurarse de que el elemento mantiene el atributo **Aria-activedescendant** .
+Este error se aplica a los elementos que tienen el **atributo aria-activedescendant.** Estos elementos tienen uno o varios controladores de eventos de mouse **(mousemove,** **mousedown** o **mouseup),** pero faltan los controladores de eventos de teclado equivalentes **(keydown,** **keyup** o **keypress**). Los controladores de eventos de teclado son necesarios para asegurarse de que el usuario puede invocar la funcionalidad del elemento mediante el teclado y para asegurarse de que el elemento mantiene el atributo **aria-activedescendant.**
 
 Para corregir este error, implemente uno de los controladores de eventos de teclado.
 
@@ -72,12 +72,12 @@ Para corregir este error, implemente uno de los controladores de eventos de tecl
 
 <dl> <dt>
 
-[Rol de contenedor de ARIA (sin descendientes activo) error de accesibilidad de teclado](aria-container--no-active-descendants--keyboard-events.md)
+[Error de accesibilidad del teclado del rol de contenedor ARIA (sin descendiente activo)](aria-container--no-active-descendants--keyboard-events.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

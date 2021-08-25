@@ -1,11 +1,11 @@
 ---
 title: Atributo LDAP-Display-Name
-description: Nombre utilizado por los clientes LDAP, como el proveedor LDAP de ADSI, para leer y escribir el atributo mediante el protocolo LDAP.
+description: Nombre que usan los clientes LDAP, como el proveedor LDAP ADSI, para leer y escribir el atributo mediante el protocolo LDAP.
 ms.assetid: 9cb0b2f0-16cf-4fc6-85b2-d21ff71bc477
 ms.tgt_platform: multiple
 keywords:
-- LDAP-Display-Name atributo AD Schema
-- Esquema de AD de atributo lDAPDisplayName
+- Esquema de AD del atributo LDAP-Display-Name
+- Esquema de AD del atributo lDAPDisplayName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7ffa25777ec4b5139a41ba9e56d8d5f0a9a3d92
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fd089ab917cc8f96e04171bc868acd012726ac4431c756e4dd055354b276953d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104274567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804265"
 ---
 # <a name="ldap-display-name-attribute"></a>Atributo LDAP-Display-Name
 
-Nombre utilizado por los clientes LDAP, como el proveedor LDAP de ADSI, para leer y escribir el atributo mediante el protocolo LDAP.
+Nombre que usan los clientes LDAP, como el proveedor LDAP ADSI, para leer y escribir el atributo mediante el protocolo LDAP.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Nombre para mostrar de LDAP                           |
-| Nombre para mostrar de LDAP | lDAPDisplayName                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de esquema                        |
+| CN                | LDAP-Display-Name                           |
+| Ldap-Display-Name | lDAPDisplayName                             |
+| Size              | \-                                          |
+| Privilegio actualizar  | Administrador de esquemas                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.460                      |
-| System-ID-GUID    | bf96799a-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf96799a-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Nombre utilizado por los clientes LDAP, como el proveedor LDAP de ADSI, para lee
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Nombre utilizado por los clientes LDAP, como el proveedor LDAP de ADSI, para lee
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | True                                                                                                      |
-| En el catálogo global      | True                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Verdadero                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
 | Search-Flags           | 0x00000009                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ Nombre utilizado por los clientes LDAP, como el proveedor LDAP de ADSI, para lee
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | True                                                                                                      |
-| En el catálogo global      | True                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Verdadero                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
 | Search-Flags           | 0x00000009                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | True                                                                                                      |
-| En el catálogo global      | True                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Verdadero                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
 | Search-Flags           | 0x00000009                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
 
 
 
@@ -119,18 +119,18 @@ Nombre utilizado por los clientes LDAP, como el proveedor LDAP de ADSI, para lee
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | True                                                                                                      |
-| En el catálogo global      | True                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Verdadero                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
 | Search-Flags           | 0x00000009                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Nombre utilizado por los clientes LDAP, como el proveedor LDAP de ADSI, para lee
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | True                                                                                                      |
-| En el catálogo global      | True                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Verdadero                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
 | Search-Flags           | 0x00000009                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Nombre utilizado por los clientes LDAP, como el proveedor LDAP de ADSI, para lee
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | True                                                                                                      |
-| En el catálogo global      | True                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Verdadero                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
 | Search-Flags           | 0x00000009                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ Nombre utilizado por los clientes LDAP, como el proveedor LDAP de ADSI, para lee
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | True                                                                                                      |
-| En el catálogo global      | True                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Verdadero                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
 | Search-Flags           | 0x00000009                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 

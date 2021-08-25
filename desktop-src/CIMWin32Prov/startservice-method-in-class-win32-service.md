@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a630b9d926ff5377312f1c67630a20816ab38b6c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c88588ec506d24726b99eaa7a1c3f8316bee8e44d6270efb0c51b165ac01a14f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752395"
 ---
 # <a name="startservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método StartService de la clase Win32_Service (proveedores WMI CIMWin32)
 
 El **método StartService** intenta colocar el servicio al que se hace referencia en su estado de inicio.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener los **valores HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ El código de control solicitado no es válido o no es aceptable para el servici
 **5**
 </dt> <dd>
 
-El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](win32-baseservice.md).**Propiedad** State) es igual a 0, 1 o 2.
+El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](win32-baseservice.md).**State** property) es igual a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -223,11 +223,11 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 ## <a name="remarks"></a>Comentarios
 
-Aunque puede parecer que no hay ninguna diferencia práctica entre un servicio que se detiene y un servicio que está en pausa, los dos estados aparecen de forma diferente al SCM. Un servicio detenido es un servicio que no se está ejecutando y debe pasar por todo el procedimiento de inicio del servicio. Sin embargo, un servicio en pausa todavía se está ejecutando, pero se ha suspendido su funcionamiento. Por este problema, un servicio en pausa no necesita pasar por todo el procedimiento de inicio del servicio, pero necesita un procedimiento diferente para reanudar el funcionamiento.
+Aunque puede parecer que no hay ninguna diferencia práctica entre un servicio que se detiene y un servicio que está en pausa, los dos estados aparecen de forma diferente al SCM. Un servicio detenido es un servicio que no se está ejecutando y debe pasar por todo el procedimiento de inicio del servicio. Sin embargo, un servicio en pausa todavía se está ejecutando, pero se ha suspendido su funcionamiento. Por este problema, un servicio en pausa no necesita pasar por todo el procedimiento de inicio del servicio, sino que necesita un procedimiento diferente para reanudar el funcionamiento.
 
-Debe usar el método adecuado para iniciar un servicio que se ha detenido o para reanudar un servicio que se ha pausado. Los [**métodos de \_ servicio Win32**](win32-service.md) **StartService** y [**ResumeService**](resumeservice-method-in-class-win32-service.md) deben usarse en las situaciones siguientes:
+Debe usar el método adecuado para iniciar un servicio que se ha detenido o para reanudar un servicio que se ha pausado. Los [**métodos \_ del servicio Win32**](win32-service.md) **StartService** y [**ResumeService**](resumeservice-method-in-class-win32-service.md) deben usarse en las situaciones siguientes:
 
--   Si un servicio está detenido actualmente, debe usar el **método StartService** para reiniciarlo. [**ResumeService**](resumeservice-method-in-class-win32-service.md) no puede iniciar un servicio que esté detenido actualmente.
+-   Si un servicio está detenido actualmente, debe usar el **método StartService** para reiniciarlo. [**ResumeService**](resumeservice-method-in-class-win32-service.md) no puede iniciar un servicio que está detenido actualmente.
 -   Si un servicio está en pausa, debe usar [**ResumeService**](resumeservice-method-in-class-win32-service.md). Si usa el **método StartService** en un servicio en pausa, recibirá el mensaje "El servicio ya se está ejecutando". Sin embargo, el servicio permanece en pausa hasta que se le envía el código de control de servicio de reanudación.
 
 Si inicia un servicio detenido que depende de otro servicio, se inician ambos servicios. Cuando se inicia un servicio con este método, los servicios dependientes no se inician automáticamente. Debe usar la clase de asociación [**Win32 \_ DependentService**](win32-dependentservice.md) y la consulta [Associators Of](/windows/desktop/WmiSdk/associators-of-statement) para buscar los dependientes e iniciarlos por separado.
@@ -327,7 +327,7 @@ WScript.Echo "Dependent NetDDE service is " & objNetDDEService.State
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -337,7 +337,7 @@ WScript.Echo "Dependent NetDDE service is " & objNetDDEService.State
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

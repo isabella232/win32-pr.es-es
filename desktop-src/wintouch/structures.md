@@ -1,29 +1,29 @@
 ---
-title: Estructuras (entrada táctil de Windows)
-description: Esta sección contiene estructuras para la entrada táctil de Windows.
+title: Estructuras (Windows entrada táctil)
+description: Esta sección contiene estructuras para Windows entrada táctil.
 ms.assetid: 591c7218-bd4f-40c2-98e1-6442ede28600
 keywords:
-- Windows Touch, estructuras
+- Windows Touch,structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62595e9600474b3b3f1aca71dece1d81514daa91
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: ce7d2178673fbf2d75b181875de14f0ad0087e80a6d424a497abcd39375235fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104421871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007375"
 ---
-# <a name="structures-windows-touch-input"></a>Estructuras (entrada táctil de Windows)
+# <a name="structures-windows-touch-input"></a>Estructuras (Windows entrada táctil)
 
-Esta sección contiene estructuras para la entrada táctil de Windows.
+Esta sección contiene estructuras para Windows entrada táctil.
 
-Las siguientes estructuras se usan para la entrada táctil de Windows.
+Las estructuras siguientes se usan para Windows entrada táctil.
 
 
 
 | Estructura                        | Descripción                        |
 |----------------------------------|------------------------------------|
-| [**TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) | Encapsula datos para la entrada táctil. |
+| [**TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) | Encapsula los datos para la entrada táctil. |
 
 
 
@@ -33,10 +33,10 @@ Las siguientes estructuras se usan para la entrada táctil de Windows.
 
 <dl> <dt>
 
-[Entrada táctil de Windows](multi-touch-input.md)
+[Windows Entrada táctil](multi-touch-input.md)
 </dt> <dt>
 
-[Guía de programación de entrada táctil de Windows](guide-multi-touch-input.md)
+[Windows Guía de programación de entrada táctil](guide-multi-touch-input.md)
 </dt> </dl>
 
  

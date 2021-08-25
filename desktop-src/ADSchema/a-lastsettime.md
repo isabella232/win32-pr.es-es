@@ -1,11 +1,11 @@
 ---
-title: Atributo Last-set-time
-description: La última vez que se modificó el secreto.
+title: Atributo Last-Set-Time
+description: La última vez que se cambió el secreto.
 ms.assetid: 71245cd4-90d8-4aa1-ad96-d46d6b3a7ad0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del último atributo de tiempo de establecimiento
-- lastSetTime esquema de AD de atributos
+- Esquema de AD del atributo Last-Set-Time
+- Esquema de AD del atributo lastSetTime
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce123377fac6e67de1ba84b906c9498d0a064936
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7349535f4fbf17624b9cfc353627676988cdf4af63c742ad4c764f2d28e8e29b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804255"
 ---
-# <a name="last-set-time-attribute"></a>Atributo Last-set-time
+# <a name="last-set-time-attribute"></a>Atributo Last-Set-Time
 
-La última vez que se modificó el secreto. Este valor se almacena como un entero grande que representa el número de intervalos de 100 nanosegundos desde el 1 de enero de 1601 (UTC).
+La última vez que se cambió el secreto. Este valor se almacena como un entero grande que representa el número de intervalos de 100 nanosegundos desde el 1 de enero de 1601 (UTC).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Hora del último conjunto                        |
-| Nombre para mostrar de LDAP | lastSetTime                          |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | lastSetTime                          |
+| Size              | 8 bytes                              |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.53                |
-| System-ID-GUID    | bf967998-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf967998-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,13 +55,13 @@ La última vez que se modificó el secreto. Este valor se almacena como un enter
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -76,13 +76,13 @@ La última vez que se modificó el secreto. Este valor se almacena como un enter
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -97,13 +97,13 @@ La última vez que se modificó el secreto. Este valor se almacena como un enter
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -116,15 +116,15 @@ La última vez que se modificó el secreto. Este valor se almacena como un enter
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -139,13 +139,13 @@ La última vez que se modificó el secreto. Este valor se almacena como un enter
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -160,13 +160,13 @@ La última vez que se modificó el secreto. Este valor se almacena como un enter
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |

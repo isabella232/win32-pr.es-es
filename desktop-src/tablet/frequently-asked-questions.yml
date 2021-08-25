@@ -1,18 +1,18 @@
 ### YamlMime:FAQ
 metadata:
-  description: A continuación se presentan las preguntas más frecuentes (P+F) sobre el desarrollo para los componentes de la plataforma tablet PC instalados por el SDK de Windows Vista.
+  description: A continuación se presentan las preguntas más frecuentes (P+F) sobre el desarrollo para los componentes de la plataforma de Tablet PC instalados por el SDK Windows Vista.
   ms.assetid: eb349493-a2b2-4b58-bcbc-ee09953c8dc8
   title: Preguntas más frecuentes (Tablet PC)
   ms.topic: article
   ms.date: 05/31/2018
-  ms.openlocfilehash: cac130aaa0f04a7b17fb520476d4ed450edf257d
-  ms.sourcegitcommit: 4be05a12840be3d2e7c71fe57401b2edee72e354
+  ms.openlocfilehash: 4d91b7ab4da91e5ab97199c787ae2ab599024360a0075068f27458889c2d1b56
+  ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "112451603"
-title: Preguntas más frecuentes sobre el desarrollo para la plataforma de Tablet PC
-summary: A continuación se presentan las preguntas más frecuentes (P+F) sobre el desarrollo para los componentes de la plataforma tablet PC instalados por el SDK de Windows Vista.
+  ms.lasthandoff: 08/11/2021
+  ms.locfileid: "119940815"
+title: Preguntas más frecuentes sobre el desarrollo para la plataforma tablet PC
+summary: A continuación se presentan las preguntas más frecuentes (P+F) sobre el desarrollo para los componentes de la plataforma de Tablet PC instalados por el SDK Windows Vista.
 sections:
 - name: Omitido
   questions:
@@ -26,24 +26,24 @@ sections:
   - question: >
       ¿Necesito un tablet PC para desarrollar aplicaciones de Tablet PC?
     answer: >
-      No, los componentes de la plataforma tablet PC instalados por el Windows SDK incluyen las extensiones y utilidades necesarias para desarrollar software para tablet PC en un equipo de escritorio o portátil. Puede usar un mouse o una tableta externa para la entrada de lápiz y escritura a mano.
+      No, los componentes de la plataforma tablet PC instalados por el SDK de Windows incluyen las extensiones y utilidades necesarias para desarrollar software para tablet PC en un equipo de escritorio o portátil. Puede usar un mouse o una tableta externa para la entrada de lápiz y escritura a mano.
 
 
-      Los componentes de la plataforma tablet PC instalados por Windows SDK se pueden instalar en Windows XP Professional o Windows Server 2003, pero hay menos funcionalidad disponible para las aplicaciones. En estas plataformas, la aplicación puede recopilar entrada de lápiz con los objetos [**InkCollector**](inkcollector-class.md) y [**InkOverlay**](inkoverlay-class.md) y se puede probar y depurar.
+      Los componentes de la plataforma de Tablet PC instalados por el SDK de Windows se pueden instalar en Windows XP Professional o Windows Server 2003, pero hay menos funcionalidad disponible para las aplicaciones. En estas plataformas, la aplicación puede recopilar la entrada de lápiz con los objetos [**InkCollector**](inkcollector-class.md) y [**InkOverlay**](inkoverlay-class.md) y se puede probar y depurar.
 
 
-      Además, los controles [InkEdit](inkedit-control-reference.md) e [InkPicture](inkpicture-control-reference.md) solo pueden recopilar entrada de lápiz en estos sistemas operativos si los componentes de la plataforma de Tablet PC se han instalado desde el Windows SDK (o una versión anterior del Kit de desarrollo de Tablet PC). no recopilan entrada de lápiz en aplicaciones que se redistribuyen a equipos que no son tabletas sin los componentes de la plataforma instalados.
+      Además, los controles [InkEdit](inkedit-control-reference.md) e [InkPicture](inkpicture-control-reference.md) pueden recopilar entrada de lápiz en estos sistemas operativos solo si los componentes de la plataforma de Tablet PC se han instalado desde el SDK de Windows (o una versión anterior del Kit de desarrollo de Tablet PC); no recopilan la entrada de lápiz en aplicaciones que se redistribuyen a equipos que no son tabletas sin los componentes de la plataforma instalados.
   - question: >
       ¿Es necesario ejecutar una versión especial de Windows para realizar el reconocimiento de escritura a mano?
     answer: >
-      No. Aunque solo Windows XP Tablet PC Edition y determinadas versiones de Windows Vista incluyen reconocedores de escritura a mano, puede descargar [windows XP Tablet PC Edition 2005 Recognizer Pack]( https://www.microsoft.com/downloads/details.aspx?FamilyId=080184DD-5E92-4464-B907-10762E9F918B&amp;displaylang=en) e instalarlo en Windows XP Professional o Windows Server 2003 solo con fines de desarrollo. No puede redistribuir los reconocedores con la aplicación.
+      No. Aunque solo Windows XP Tablet PC Edition y determinadas versiones de Windows Vista incluyen reconocedores de escritura a mano, puede descargar el paquete de reconocimiento de [Windows XP Tablet PC Edition 2005]( https://www.microsoft.com/downloads/details.aspx?FamilyId=080184DD-5E92-4464-B907-10762E9F918B&amp;displaylang=en) e instalarlo en Windows XP Professional o Windows Server 2003 solo con fines de desarrollo. No puede redistribuir los reconocedores con la aplicación.
   - question: >
       ¿Cuál es la diferencia entre Windows Vista y tablet PC Technology?
     answer: >
-      Los equipos de tableta ejecutan el sistema operativo Windows Vista, que incluye toda la funcionalidad de Windows Vista, además de características adicionales específicas de Tablet PC. Estas características de tablet PC Technology permiten a los usuarios ejecutar aplicaciones de Windows y Windows mediante un lápiz, anotar documentos y crear documentos manuscritos mediante lápiz digital. Tablet PC Technology está disponible en la mayoría de las versiones de Windows Vista y, si el hardware de Tablet PC está disponible en un equipo, las características solo funcionan.
+      Los equipos de tableta ejecutan el sistema operativo Windows Vista, con toda la funcionalidad de Windows Vista, además de características adicionales específicas de tablet PC. Estas características de la tecnología de tablet PC permiten a los usuarios ejecutar aplicaciones Windows y Windows mediante un lápiz, anotar documentos y crear documentos manuscritos mediante la entrada de lápiz digital. Tablet PC Technology está disponible en la mayoría de las versiones de Windows Vista y, si el hardware de Tablet PC está disponible en un equipo, las características solo funcionan.
 
 
-      En versiones anteriores de los sistemas operativos Windows que no admiten la entrada de lápiz de forma nativa, puede redistribuir y usar los controles de entrada de lápiz de Tablet PC para ver la entrada manuscrita dibujada en una tableta PC.
+      En versiones anteriores de Windows sistemas operativos que no admiten la entrada de lápiz de forma nativa, puede redistribuir y usar los controles de entrada de lápiz de Tablet PC para ver la entrada de lápiz dibujada en un tablet PC.
   - question: >
       ¿Cuál es la diferencia entre Windows XP Tablet PC Edition y Windows XP Tablet PC Edition 2005?
     answer: >
@@ -51,62 +51,62 @@ sections:
   - question: >
       Cómo modificar mi aplicación para que se ejecute en una tableta PC?
     answer: >
-      Las aplicaciones de Microsoft Windows que se ejecutan en un equipo portátil o de escritorio de Windows XP con hardware comparable se pueden ejecutar en un equipo de tableta sin modificaciones.
+      Microsoft Windows aplicaciones que se ejecutan en un equipo de escritorio Windows XP o portátil con hardware comparable se pueden ejecutar en un tablet PC sin modificaciones.
   - question: >
-      Sé que no es necesario realizar ningún cambio en mi aplicación, pero es difícil usarlo con un lápiz y una voz. ¿Qué puedo hacer para optimizar mi aplicación para un tablet PC?
+      Sé que no es necesario realizar ningún cambio en mi aplicación, pero es difícil usarla con un lápiz y una voz. ¿Qué puedo hacer para optimizar mi aplicación para un tablet PC?
     answer: >
-      La API y los controles de entrada de lápiz de los componentes de la plataforma de Tablet PC se pueden usar para crear interfaces de usuario que sean más adecuadas para la entrada de lápiz y escritura a mano. Para obtener más información sobre formas específicas de mejorar la aplicación, vea [Mobile PC User Experience Guidelines for Developers .](/previous-versions//dd356056(v=vs.85))
+      Los controles de API y entrada de lápiz de los componentes de la plataforma de Tablet PC se pueden usar para crear interfaces de usuario que sean más adecuadas para la entrada de lápiz y escritura a mano. Para obtener más información sobre las formas específicas de mejorar la aplicación, vea Directrices de experiencia del usuario de PC [móvil para desarrolladores.](/previous-versions//dd356056(v=vs.85))
   - question: >
       ¿Qué lenguajes de programación admite la tableta?
     answer: >
-      La tecnología de pc de tableta en Windows Vista admite COM (C++) y bibliotecas administradas (el conjunto de Visual Studio .NET lenguajes).
+      La tecnología de pc de tableta Windows Vista admite COM (C++) y bibliotecas administradas (el conjunto de Visual Studio lenguajes .NET).
 
 
       La tecnología de pc de tableta también admite Windows Presentation Foundation (WPF).
   - question: >
       ¿Tengo código de ejemplo que muestra las funcionalidades de la plataforma de tabletas?
     answer: >
-      Sí, el código de ejemplo para COM y los idiomas administrados seleccionados se incluye en los componentes de la plataforma tablet PC instalados por windows Platform SDK.
+      Sí, el código de ejemplo para COM y los idiomas administrados seleccionados se incluye en los componentes de la plataforma de Tablet PC instalados por Windows Platform SDK.
 
 
       Para ver las aplicaciones de ejemplo disponibles, consulte:
 
 
-      - [Ejemplos de PC para dispositivos móviles y tabletas](mobile-pc-and-tablet-pc-samples.md)
+      - [Ejemplos de PC móviles y tabletas PC](mobile-pc-and-tablet-pc-samples.md)
 
-      - [Ejemplos de lápiz digital, Windows Presentation Foundation (WPF)](/previous-versions/dotnet/netframework-3.0/aa972145(v=vs.85))
+      - [Digital Ink Samples, Windows Presentation Foundation (WPF)](/previous-versions/dotnet/netframework-3.0/aa972145(v=vs.85))
 
-      - <systemdrive>: \\ Archivos de programa Microsoft SDK de Windows \\ \\ \\ v6.0 \\ Samples \\ TabletPC
+      - <systemdrive>: \\ archivos de programa de Microsoft SDK Windows \\ \\ \\ \\ tabletPC de ejemplos v6.0 \\
   - question: >
       ¿Cuál es el nivel base de hardware de tableta para el que debo desarrollar?
     answer: >
-      En general, debe diseñar para un sistema sin herencia compatible con Windows Vista.
+      En general, debe diseñar para un sistema Windows compatible con Vista y sin herencia.
   - question: >
       ¿Qué directrices de interfaz de usuario puede proporcionar para las aplicaciones de tabletas?
     answer: >
-      Los problemas de la orientación del menú desplegable al paralaje de pantalla o digitalizador se describen en la sección Mobile [PC User Experience Guidelines for Developers (Directrices](/previous-versions//dd356056(v=vs.85)) de experiencia del usuario para equipos móviles para desarrolladores) en la sección Pc móvil de Windows SDK.
+      Los problemas de la orientación del menú desplegable al paralaje de pantalla o digitalizador se describen en la sección Mobile [PC User Experience Guidelines for Developers (Directrices](/previous-versions//dd356056(v=vs.85)) de experiencia del usuario para desarrolladores de PC móvil) de Windows SDK.
   - question: >
-      ¿Incluye gestos de escritura a mano de nivel del sistema para pulsaciones de teclas usadas habitualmente? ¿Puedo crear mis propios gestos para usarlos cuando una aplicación se está ejecutando o tiene el foco?
+      ¿Incluye gestos de escritura a mano de nivel de sistema para pulsaciones de teclas usadas habitualmente? ¿Puedo crear mis propios gestos para usarlos cuando una aplicación se ejecuta o tiene el foco?
     answer: >
-      Sí, se incluye un conjunto de gestos para eventos del mouse. Además, puede crear gestos para usarlos en la aplicación. Para obtener más información sobre los gestos, vea [Usar gestos](using-gestures.md).
+      Sí, se incluye un conjunto de gestos para los eventos del mouse. Además, puede crear gestos para su uso en la aplicación. Para obtener más información sobre los gestos, vea [Usar gestos](using-gestures.md).
   - question: >
       ¿Cómo puedo determinar si mi aplicación se ejecuta en una tableta?
     answer: >
-      Use Windows GetSystemMetricsAPI y pase SM \_ TABLETPC como valor del índice. SM \_ TABLETPC se define en Winuser.h. El valor de SM \_ TABLETPC es 86.
+      Use el Windows GetSystemMetricsAPI y pase SM \_ TABLETPC como valor del índice. SM \_ TABLETPC se define en Winuser.h. El valor de SM \_ TABLETPC es 86.
 
 
       Para el desarrollo web, debe leer la variable de entorno USER \_ AGENT \_ STRING. Puede acceder a esta colección Request.ServerVariables.
 
 
-      Para obtener más información sobre cómo usar GetSystemMetrics en equipos de tableta que ejecutan Windows Vista o Windows XP Tablet PC Edition, consulte Determinación de si un equipo es una [tableta.](determining-whether-a-pc-is-a-tablet-pc.md)
+      Para obtener más información sobre cómo usar GetSystemMetrics en equipos de tableta que ejecutan Windows Vista o Windows XP Tablet PC Edition, consulte Determinar si un equipo es una [tableta.](determining-whether-a-pc-is-a-tablet-pc.md)
   - question: >
-      ¿Cómo puedo determinar si los componentes de la plataforma de tabletas están disponibles?
-    answer: "Ciertas partes de la plataforma tablet PC se pueden instalar en versiones que no son de tableta de los sistemas operativos Windows XP Professional, Windows Server 2003 y Windows 2000.\n\nLa manera adecuada de determinar si un componente de la API está instalado es intentar crear una instancia de un objeto o control y comprobar que existe antes de intentar usarlo.\n\nPor ejemplo, para determinar si el [**objeto InkCollector**](inkcollector-class.md) está disponible, intente crearlo con [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).\n\n```C++\nIInkCollector* pIInkCollector = NULL;\nHRESULT hr = CoCreateInstance(CLSID_InkCollector,\n NULL, CLSCTX_INPROC_SERVER, \n IID_IInkCollector,\n (void **)&pIInkCollector);\nif (SUCCEEDED(hr)) \n{ \n  /* InkCollector is usable. */ \n} else \n{\n  /* InkCollector unavailable. */\n}\n```\n"
+      ¿Cómo puedo determinar si los componentes de la plataforma de tableta están disponibles?
+    answer: "Ciertas partes de la plataforma tablet PC se pueden instalar en versiones que no son tabletas de los sistemas operativos Windows XP Professional, Windows Server 2003 y Windows 2000.\n\nLa manera adecuada de determinar si un componente de la API está instalado es intentar crear una instancia de un objeto o control y comprobar que existe antes de intentar usarlo.\n\nPor ejemplo, para determinar si el [**objeto InkCollector**](inkcollector-class.md) está disponible, intente crearlo mediante [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).\n\n```C++\nIInkCollector* pIInkCollector = NULL;\nHRESULT hr = CoCreateInstance(CLSID_InkCollector,\n NULL, CLSCTX_INPROC_SERVER, \n IID_IInkCollector,\n (void **)&pIInkCollector);\nif (SUCCEEDED(hr)) \n{ \n  /* InkCollector is usable. */ \n} else \n{\n  /* InkCollector unavailable. */\n}\n```\n"
   - question: >
-      Cómo ejecutar el servicio de entrada de tabletas en SKU de servidor?
+      Cómo ejecutar el servicio de entrada de tableta en SKU de servidor?
     answer: >
-      TabletInputService está diseñado para no ejecutarse automáticamente en las SKU del servidor cuando se instala el paquete de cliente. El paquete de cliente instala todos los componentes en la plataforma, por lo que cualquiera de las aplicaciones cliente de Tableta también se puede ejecutar en un servidor. El servicio de entrada de tableta escucha la notificación pnP de que un digitalizador externo está conectado. Para habilitar el servicio de entrada de tabletas en un servidor, use la Utilidad de configuración del sistema.
+      TabletInputService está diseñado para no ejecutarse automáticamente en las SKU del servidor cuando se instala el paquete de cliente. El paquete de cliente instala todos los componentes en la plataforma para que cualquiera de las aplicaciones cliente de tabletas también se pueda ejecutar en un servidor. El servicio de entrada de tableta escucha la notificación pnP de que un digitalizador externo está conectado. Para habilitar el servicio de entrada de tabletas en un servidor, use la Utilidad de configuración del sistema.
 
 
-      En el **menú** Inicio, seleccione **Ejecutar.** Escriba "msconfig" y presione Entrar. Seleccione la **pestaña Servicios,** busque los servicios denominados "Servicio de entrada HID", active la casilla situada junto a él y, a continuación, haga clic **en Aplicar**. Cierre la utilidad .
-additionalContent: "\n## <a name=\"more-faqs-and-other-resources\"></a>Más preguntas más frecuentes y otros recursos\n\n- [Desarrollador de Microsoft Center](https://developer.microsoft.com)\n- [Referencia de Pc de tableta principal](./core-reference---tablet-pc-com-library.md)"
+      En el **menú** Inicio, seleccione **Ejecutar.** Escriba "msconfig" y presione Entrar. Seleccione la **pestaña Servicios,** busque los servicios denominados "SERVICIO DE ENTRADA DE HID", active la casilla situada junto a él y, a continuación, haga clic **en Aplicar.** Cierre la utilidad .
+additionalContent: "\n## <a name=\"more-faqs-and-other-resources\"></a>Más preguntas más frecuentes y otros recursos\n\n- [Desarrollador de Microsoft Center](https://developer.microsoft.com)\n- [Referencia de Tablet PC principal](./core-reference---tablet-pc-com-library.md)"

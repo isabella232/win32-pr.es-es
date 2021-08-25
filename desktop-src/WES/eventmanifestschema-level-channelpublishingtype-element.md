@@ -1,9 +1,9 @@
 ---
-title: Elemento LEVEL (ChannelPublishingType)
-description: Nivel de gravedad de los eventos que se van a escribir en el canal.
+title: Elemento level (ChannelPublishingType)
+description: Nivel de gravedad de los eventos que se escriben en el canal.
 ms.assetid: 1d5e9a35-5e6a-45ee-aa2c-0bbeee18db36
 keywords:
-- elemento de nivel EventLog
+- elemento level EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 15ec49b6d8b65636b40991cd9949d2770adea71e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a6cd7d7994210e45e655815e1a8fcf43977bee7e2c8f66b0d23e551d051e768e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124335"
 ---
-# <a name="level-channelpublishingtype-element"></a>Elemento LEVEL (ChannelPublishingType)
+# <a name="level-channelpublishingtype-element"></a>Elemento level (ChannelPublishingType)
 
-Nivel de gravedad de los eventos que se van a escribir en el canal.
+Nivel de gravedad de los eventos que se escriben en el canal.
 
 ``` syntax
 <xs:element name="level"
@@ -30,7 +30,7 @@ Nivel de gravedad de los eventos que se van a escribir en el canal.
  />
 ```
 
-El elemento **LEVEL** se define mediante el tipo complejo [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) .
+El **elemento level** se define mediante el tipo complejo [**ChannelPublishingType.**](eventmanifestschema-channelpublishingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **LEVEL** se define mediante el tipo complejo [**ChannelPublishingTy
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

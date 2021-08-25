@@ -11,27 +11,27 @@ api_name:
 - ProfileCreationType
 api_type:
 - Schema
-ms.openlocfilehash: 661306cf53b1ae4c7c9cd49a295afe5b84dabd67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddf3e70607cedbaed45da19651ec73736a54bfafab197e95d2cd634d8e3833f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959845"
 ---
 # <a name="profilecreationtype-mbnprofile-element"></a>Elemento ProfileCreationType (MBNProfile)
 
-El elemento **ProfileCreationType (MBNProfile)** contiene información sobre el creador del perfil.
+El **elemento ProfileCreationType (MBNProfile)** contiene información sobre el creador del perfil.
 
-Este elemento puede tener uno de los valores siguientes.
+Este elemento puede tener uno de los siguientes valores.
 
 
 
 | Value                 | Significado                                                                                                                    |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| "UserProvisioned"     | Este perfil se crea con la información proporcionada por el usuario del dispositivo.                                                     |
-| "AdminProvisioned"    | Este perfil lo crean los administradores de ti y se distribuyen a los usuarios.                                                     |
+| "UserProvisioned"     | Este perfil se crea mediante la información proporcionada por el usuario del dispositivo.                                                     |
+| "AdminProvisioned"    | Los administradores de TI crean este perfil y se distribuyen a los usuarios.                                                     |
 | "OperatorProvisioned" | Este perfil lo crea un operador de red y se distribuye a los usuarios.                                                    |
-| "DeviceProvisioned"   | El servicio de banda ancha móvil crea este perfil mediante la información almacenada en el contexto aprovisionado del dispositivo. |
+| "DeviceProvisioned"   | El servicio banda ancha móvil crea este perfil mediante la información almacenada en el contexto aprovisionado del dispositivo. |
 
 
 
@@ -62,7 +62,7 @@ Este elemento es opcional.
 </xs:element>
 ```
 
-El elemento **ProfileCreationType** se define mediante el elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+El **elemento ProfileCreationType** se define mediante el [**elemento MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ El elemento **ProfileCreationType** se define mediante el elemento [**MBNProfile
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

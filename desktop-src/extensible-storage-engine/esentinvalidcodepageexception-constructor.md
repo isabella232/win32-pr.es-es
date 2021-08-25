@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidCodePageException'
-title: Constructor de EsentInvalidCodePageException
+description: 'Más información sobre: Constructor EsentInvalidCodePageException'
+title: Constructor EsentInvalidCodePageException
 TOCTitle: 'EsentInvalidCodePageException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidCodePageException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidcodepageexception.esentinvalidcodepageexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6f673e9c01a2d2442558aea80c7721a71af1205b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe47c38c61077cca759b86a735a65e5c5362ebf5f8496c8ecf38e7154c0ab8d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837536"
 ---
-# <a name="esentinvalidcodepageexception-constructor"></a>Constructor de EsentInvalidCodePageException
+# <a name="esentinvalidcodepageexception-constructor"></a>Constructor EsentInvalidCodePageException
 
 Inicializa una nueva instancia de la clase EsentInvalidCodePageException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidCodePageException()
 public EsentInvalidCodePageException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInvalidCodePageException()
 
 [Miembros de EsentInvalidCodePageException](./esentinvalidcodepageexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

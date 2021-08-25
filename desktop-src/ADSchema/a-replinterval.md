@@ -1,11 +1,11 @@
 ---
-title: Repl-Interval atributo)
-description: El atributo de Site-Link objetos que define el intervalo, en minutos, entre los ciclos de replicación entre los sitios de la lista de sitios.
+title: Repl-Interval atributo
+description: Atributo de Site-Link que define el intervalo, en minutos, entre los ciclos de replicación entre los sitios de la lista de sitios.
 ms.assetid: ef4cbf75-7283-4930-9f98-1ffd6eb05669
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Repl-Interval
-- replInterval esquema de AD de atributos
+- Repl-Interval esquema de AD de atributo
+- Esquema de AD del atributo replInterval
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e681b01fbc60b775b0cb947007056dc1d3d3adbb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fb5cd02d3458684f6d70cff84435c7809fcd4c912befd65373a264f961cefd72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837445"
 ---
-# <a name="repl-interval-attribute"></a>Repl-Interval atributo)
+# <a name="repl-interval-attribute"></a>Repl-Interval atributo
 
-El atributo de Site-Link objetos que define el intervalo, en minutos, entre los ciclos de replicación entre los sitios de la lista de sitios. Debe ser un múltiplo de 15 minutos (la granularidad de la replicación de DS entre sitios), un mínimo de 15 minutos y un máximo de 10.080 minutos (una semana).
+Atributo de Site-Link que define el intervalo, en minutos, entre los ciclos de replicación entre los sitios de la lista de sitios. Debe ser un múltiplo de 15 minutos (la granularidad de la replicación de DS entre sitios), un mínimo de 15 minutos y un máximo de 10 080 minutos (una semana).
 
 
 
 | Entrada | Value |
 |-------------------|------------------------------------------------|
 | CN                | Repl-Interval                                  |
-| Nombre para mostrar de LDAP | replInterval                                   |
-| Tamaño              | 4 bytes                                        |
-| Actualizar privilegio  | Administrador de empresa                       |
-| Frecuencia de actualización  | Cuándo es necesario cambiar el intervalo de replicación. |
+| Ldap-Display-Name | replInterval                                   |
+| Size              | 4 bytes                                        |
+| Actualizar privilegios  | Administrador de empresa                       |
+| Frecuencia de actualización  | Cuando es necesario cambiar el intervalo de replicación. |
 | Attribute-Id      | 1.2.840.113556.1.4.1336                        |
-| System-ID-GUID    | 45ba9d1a-56fa-11d2-90d0-00c04fd91ab1           |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)           |
+| System-Id-Guid    | 45ba9d1a-56fa-11d2-90d0-00c04fd91ab1           |
+| Syntax            | [**Enumeración**](s-enumeration.md)           |
 
 
 
@@ -44,7 +44,7 @@ El atributo de Site-Link objetos que define el intervalo, en minutos, entre los 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ El atributo de Site-Link objetos que define el intervalo, en minutos, entre los 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ El atributo de Site-Link objetos que define el intervalo, en minutos, entre los 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
@@ -119,18 +119,18 @@ El atributo de Site-Link objetos que define el intervalo, en minutos, entre los 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ El atributo de Site-Link objetos que define el intervalo, en minutos, entre los 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ El atributo de Site-Link objetos que define el intervalo, en minutos, entre los 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ El atributo de Site-Link objetos que define el intervalo, en minutos, entre los 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**Transporte entre sitios**](c-intersitetransport.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 

@@ -1,34 +1,34 @@
 ---
 title: Ejemplo de HttpCalculatorWithUsernameXmlTokenOverSslClient
-description: En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para comunicarse con un servicio de calculadora, con un token de seguridad XML sobre la seguridad de modo mixto de SSL.
+description: En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para hablar con un servicio de calculadora, con el token de seguridad XML sobre la seguridad en modo mixto de SSL.
 ms.assetid: 9b687099-c59f-4aea-862f-c29d1978d955
 keywords:
 - HttpCalculatorWithUsernameXmlTokenOverSslClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90e2ec2146c8cdc13aa1efee8eb68f8bc07ae883
-ms.sourcegitcommit: b95a94ffffda33f9ebbdd41787c01866444b4cf4
+ms.openlocfilehash: 9a730b48efb1593cbd4490dff32f186f46fb0cf9e13213dbb1e51ad0d945d4f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "104420051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005855"
 ---
 # <a name="httpcalculatorwithusernamexmltokenoversslclient-example"></a>Ejemplo de HttpCalculatorWithUsernameXmlTokenOverSslClient
 
-En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para comunicarse con un servicio de calculadora, con un token de seguridad XML sobre la seguridad de modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación del cliente se proporciona mediante un par de nombre de usuario y contraseña WS-Security que se utiliza como token de seguridad XML en el ejemplo.
+En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para hablar con un servicio de calculadora, con el token de seguridad XML sobre la seguridad en modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante WS-Security de nombre de usuario y contraseña que se usa como token de seguridad XML en el ejemplo.
 
-Tenga en cuenta que este ejemplo de cliente usa el [**enlace de seguridad de mensaje de token de WS \_ XML \_ \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding). En el ejemplo [HttpCalculatorWithUsernameOverSslClientExample](httpcalculatorwithusernameoversslclientexample.md)se ilustra una manera equivalente de realizar la misma seguridad del lado cliente mediante el [**enlace de seguridad de mensaje de WS \_ username \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding) .
+Tenga en cuenta que en este ejemplo del lado cliente se usa [**WS \_ XML TOKEN MESSAGE SECURITY \_ \_ \_ \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding). El ejemplo [HttpCalculatorWithUsernameOverSslClientExample](httpcalculatorwithusernameoversslclientexample.md)ilustra una manera equivalente de realizar la misma seguridad del lado cliente mediante [**WS \_ USERNAME MESSAGE \_ SECURITY \_ \_ BINDING.**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding)
 
-En el ejemplo [HttpCalculatorWithUserNameOverSslServiceExample](httpcalculatorwithusernameoversslserviceexample.md)se proporciona un lado servidor coincidente para ambos ejemplos del lado cliente.
+El ejemplo [HttpCalculatorWithUserNameOverSslServiceExample](httpcalculatorwithusernameoversslserviceexample.md)proporciona un lado del servidor correspondiente para ambos ejemplos del lado cliente.
 
--   [CalculatorClientUserNameXmlTokenOverSsl. cpp](#calculatorclientusernamexmltokenoversslcpp)
--   [CalculatorService. wsdl](#calculatorservicewsdl)
+-   [CalculatorClientUserNameXmlTokenOverSsl.cpp](#calculatorclientusernamexmltokenoversslcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Archivo Make](#makefile)
 -   [Temas relacionados](#related-topics)
 
-## <a name="calculatorclientusernamexmltokenoversslcpp"></a>CalculatorClientUserNameXmlTokenOverSsl. cpp
+## <a name="calculatorclientusernamexmltokenoversslcpp"></a>CalculatorClientUserNameXmlTokenOverSsl.cpp
 
 
 ```C++
@@ -369,7 +369,7 @@ CalculatorService.wsdl
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. wsdl
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -498,10 +498,10 @@ clean:
 
 <dl> <dt>
 
-[**\_enlace de \_ seguridad de mensaje de token \_ \_ de WS XML \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding)
+[**ENLACE DE \_ SEGURIDAD DE MENSAJES DE TOKEN XML \_ \_ \_ DE \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding)
 </dt> <dt>
 
-[**\_enlace de \_ seguridad de mensaje \_ \_ de WS username**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding)
+[**ENLACE DE SEGURIDAD \_ DE MENSAJES DE NOMBRE DE \_ \_ USUARIO DE \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding)
 </dt> <dt>
 
 [HttpCalculatorWithUsernameOverSslClientExample](httpcalculatorwithusernameoversslclientexample.md)
@@ -510,9 +510,9 @@ clean:
 [HttpCalculatorWithUserNameOverSslServiceExample](httpcalculatorwithusernameoversslserviceexample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

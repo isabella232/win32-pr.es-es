@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnRequestContainerMinimize, método
-description: Se llama cuando el usuario presiona el botón minimizar en la barra de conexión en el modo de pantalla completa. La activación de este evento es una solicitud que la aplicación contenedora se minimiza por sí misma.
+title: Método IMsTscAxEvents OnRequestContainerMinimize
+description: Se llama cuando el usuario presiona el botón Minimizar en la barra de conexión en modo de pantalla completa. La activación de este evento es una solicitud que la aplicación contenedora se minimiza.
 ms.assetid: fc052f9b-cf59-4d5a-ba39-571627b72f2a
 ms.tgt_platform: multiple
 keywords:
 - Método OnRequestContainerMinimize Servicios de Escritorio remoto
-- Método OnRequestContainerMinimize Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnRequestContainerMinimize
+- Método OnRequestContainerMinimize Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto método , OnRequestContainerMinimize
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85387e3b156eed29dc7068eac84280be521a934e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 344bd85d8d224a5901517c55c8e0a95c854ed246e74a9d0c8def1eebae515305
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125065"
 ---
-# <a name="imstscaxeventsonrequestcontainerminimize-method"></a>IMsTscAxEvents:: OnRequestContainerMinimize (método)
+# <a name="imstscaxeventsonrequestcontainerminimize-method"></a>Método IMsTscAxEvents::OnRequestContainerMinimize
 
-Se llama cuando el usuario presiona el botón **minimizar** en la barra de conexión en el modo de pantalla completa. La activación de este evento es una solicitud que la aplicación contenedora se minimiza por sí misma.
+Se llama cuando el usuario presiona el botón **Minimizar** en la barra de conexión en modo de pantalla completa. La activación de este evento es una solicitud que la aplicación contenedora se minimiza.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,9 +45,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo se llamará a este método si está habilitado el modo de pantalla completa controlado por contenedores; consulte [**IMsTscAdvancedSettings::p UT \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) para obtener más información.
+Solo se llamará a este método si el modo de pantalla completa controlada por contenedores está habilitado; vea [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) para obtener más información.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,41 +1,41 @@
 ---
-description: Enumera los valores devueltos de certificado y confianza de certificado. Estos valores se encuentran en el archivo de encabezado Winerror. h.
+description: Enumera los valores devueltos de certificados y certificados de confianza. Estos valores están incluidos en el archivo de encabezado Winerror.h.
 ms.assetid: f7d1bdcb-8e4f-493f-ad3c-9d4b9d21436b
-title: Valores devueltos de certificado y confianza
+title: Valores devueltos de certificados y confianza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e17f170c7c3aa1ac0839323b9a52767a101dd3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf575df785160682c132f38ccc280bb8b9377b15b64ed3efda163c68c1ef52e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127245"
 ---
-# <a name="certificate-and-trust-return-values"></a>Valores devueltos de certificado y confianza
+# <a name="certificate-and-trust-return-values"></a>Valores devueltos de certificados y confianza
 
-En la tabla siguiente se enumeran los valores devueltos de certificado y confianza de certificado. Estos valores se encuentran en el archivo de encabezado Winerror. h.
+En la tabla siguiente se enumeran los valores devueltos de certificados y certificados de confianza. Estos valores están incluidos en el archivo de encabezado Winerror.h.
 
 
 
 | Nombre                            | Descripción                                                                                                                    | Value      |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------|------------|
-| CERTIFICADO \_ E \_ crítico               | Un certificado contiene una extensión desconocida marcada como "crítica".                                                         | 0x800B0105 |
-| nombre de certificado \_ E \_ no válido \_          | El certificado tiene un nombre que no es válido. El nombre no está incluido en la lista permitida o está explícitamente excluido. | 0x800B0114 |
-| CERTIFICADO \_ E \_ Directiva no válida \_        | El certificado tiene una directiva que no es válida.                                                                                | 0x800B0113 |
-| CERT \_ E \_ ISSUERCHAINING         | En realidad, un elemento primario de un certificado determinado no ha emitido ese certificado secundario.                                                  | 0x800B0107 |
-| el certificado E tiene un \_ \_ formato incorrecto              | Falta un certificado o tiene un valor vacío para un campo importante, como un nombre de asunto o de emisor.                       | 0x800B0108 |
+| CERT \_ E \_ CRITICAL               | Un certificado contiene una extensión desconocida que está marcada como "crítica".                                                         | 0x800B0105 |
+| CERT \_ E NOMBRE NO \_ \_ VÁLIDO          | El certificado tiene un nombre que no es válido. El nombre no está incluido en la lista permitida o está explícitamente excluido. | 0x800B0114 |
+| DIRECTIVA \_ NO VÁLIDA DE CERT E \_ \_        | El certificado tiene una directiva que no es válida.                                                                                | 0x800B0113 |
+| \_ISSUERCHAINING DE CERT E \_         | De hecho, un elemento primario de un certificado determinado no emitía ese certificado secundario.                                                  | 0x800B0107 |
+| CERTIFICADO \_ E CON FORMATO \_ DESAFORMADO              | Falta un certificado o tiene un valor vacío para un campo importante, como un asunto o un nombre de emisor.                       | 0x800B0108 |
 | CERT \_ E \_ PATHLENCONST           | Se ha infringido una restricción de longitud de ruta de acceso en la cadena de la certificación.                                                         | 0x800B0104 |
 | CERT \_ E \_ UNTRUSTEDCA            | Una cadena de certificación se procesó correctamente, pero el proveedor de directivas no confía en uno de los certificados de entidad de certificación.               | 0x800B0112 |
-| CIFRAr \_ E \_ no \_ comprobar la revocación \_ | La función de revocación no pudo comprobar la revocación del certificado.                                                    | 0x80092012 |
-| CONFIANZA \_ E \_ \_ Resumen incorrecto           | No se ha comprobado la firma digital del objeto.                                                                            | 0x80096010 |
-| CONFIAR en \_ restricciones de E \_ Basic \_    | No se ha observado la extensión de la restricción básica de un certificado.                                                         | 0x80096019 |
-| CONFIANZA \_ E \_ firma de certificado \_       | No se puede comprobar la firma del certificado.                                                                           | 0x80096004 |
-| CONFIAR en el firmante de \_ E \_ \_       | Una de las firmas de contador no era válida.                                                                                   | 0x80096003 |
-| CONFIAR \_ E \_ \_ desconfiar explícitos    | El usuario marcó explícitamente el certificado como no de confianza.                                                                | 0x800B0111 |
-| CONFIAR \_ en \_ criterios financieros E \_   | El certificado no cumple ni contiene las extensiones financieras de Authenticode.                                                | 0x8009601E |
-| TRUST \_ E \_ sin \_ firmante \_ CERT      | El certificado para el firmante del mensaje no es válido o no se encuentra.                                                       | 0x80096002 |
-| ERROR de sistema de confianza \_ E \_ \_         | Se ha producido un error del nivel de sistema al comprobar la confianza.                                                                           | 0x80096001 |
-| marca de tiempo de confianza \_ E \_ \_           | La firma o el certificado de la marca de tiempo no se ha podido comprobar o es incorrecta.                                                 | 0x80096005 |
+| CRYPT \_ E \_ NO \_ REVOCATION \_ CHECK | La función de revocación no pudo comprobar la revocación del certificado.                                                    | 0x80092012 |
+| TRUST \_ E \_ BAD \_ DIGEST           | No se ha comprobado la firma digital del objeto.                                                                            | 0x80096010 |
+| RESTRICCIONES \_ TRUST E \_ \_ BASIC    | No se ha observado la extensión de la restricción básica de un certificado.                                                         | 0x80096019 |
+| TRUST \_ E \_ CERT \_ SIGNATURE       | No se puede comprobar la firma del certificado.                                                                           | 0x80096004 |
+| TRUST \_ E \_ COUNTER \_ SIGNER       | Una de las firmas de contador no era válida.                                                                                   | 0x80096003 |
+| CONFIANZA \_ E \_ \_ DESCONFIANZA EXPLÍCITA    | El usuario ha marcado explícitamente el certificado como que no es de confianza.                                                                | 0x800B0111 |
+| CRITERIOS \_ FINANCIEROS DE CONFIANZA E \_ \_   | El certificado no cumple ni contiene las extensiones financieras authenticode.                                                | 0x8009601E |
+| TRUST \_ E \_ NO \_ SIGNER \_ CERT      | El certificado para el firmante del mensaje no es válido o no se encuentra.                                                       | 0x80096002 |
+| ERROR \_ DEL SISTEMA TRUST E \_ \_         | Se ha producido un error del nivel de sistema al comprobar la confianza.                                                                           | 0x80096001 |
+| TRUST \_ E \_ TIME \_ STAMP           | La firma o el certificado de la marca de tiempo no se ha podido comprobar o es incorrecta.                                                 | 0x80096005 |
 
 
 

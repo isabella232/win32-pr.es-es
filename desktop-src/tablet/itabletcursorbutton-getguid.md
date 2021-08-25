@@ -1,7 +1,7 @@
 ---
-description: Recupera el identificador único del botón del lápiz óptico.
+description: Recupera el identificador único del botón de lápiz óptico.
 ms.assetid: 06bd6a84-46cd-4c62-92d6-50caae359e43
-title: 'ITabletCursorButton:: GetGuid (método)'
+title: ITabletCursorButton::GetGuid (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 21d63ef0c934e96bc93b5384cab1e67f9dd452d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4492aa98630491730435080981172bc60a1eeccfe0c84ed76e3b4d504a79ad1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844285"
 ---
-# <a name="itabletcursorbuttongetguid-method"></a>ITabletCursorButton:: GetGuid (método)
+# <a name="itabletcursorbuttongetguid-method"></a>ITabletCursorButton::GetGuid (método)
 
-Recupera el identificador único del botón del lápiz óptico.
+Recupera el identificador único del botón de lápiz óptico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,10 +40,10 @@ HRESULT GetGuid(
 
 <dl> <dt>
 
-*pguidBtn* \[ enuncia\]
+*pguidBtn* \[ out\]
 </dt> <dd>
 
-Un valor único que identifica el botón del lápiz óptico.
+Valor único que identifica el botón del lápiz óptico.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
@@ -66,9 +66,9 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -78,7 +78,7 @@ Este método puede devolver uno de estos valores.
 
 <dl> <dt>
 
-[**Interfaz ITabletCursorButton**](itabletcursorbutton.md)
+[**ITabletCursorButton (Interfaz)**](itabletcursorbutton.md)
 </dt> </dl>
 
  

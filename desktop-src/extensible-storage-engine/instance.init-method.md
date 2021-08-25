@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: método Instance.Init'
+description: 'Más información sobre: Instance.Init'
 title: Instance.Init (método)
 TOCTitle: 'Init method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Instance.Init
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d757cd4979a53ee135f00b2c481f8b828ca2ca95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ab1183935b1a7834eb984024e7c003ebd85b8f9a663f05733eefe8bd76c446f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968725"
 ---
 # <a name="instanceinit-method"></a>Instance.Init (método)
 
 Inicialice el JET_INSTANCE.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ instance.Init()
 public void Init()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -59,6 +59,6 @@ public void Init()
 
 [Miembros de instancia](./instance-members.md)
 
-[Sobrecarga init](./instance.init-method2.md)
+[Sobrecarga de init](./instance.init-method2.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

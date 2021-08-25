@@ -1,40 +1,40 @@
 ---
-title: Acerca de los controles de buscapersonas
-description: Un control de paginación es un contenedor de ventana que se usa con una ventana que no tiene suficiente área de visualización para mostrar todo su contenido.
+title: Acerca de los controles de paginación
+description: Un control de paginación es un contenedor de ventanas que se usa con una ventana que no tiene suficiente área de presentación para mostrar todo su contenido.
 ms.assetid: VS|Controls|~\controls\pager\pager.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28d0b5aa01b72ca5feb8170d6d9fd218a433509b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 12b2e4c4dab20647fcb8e4f1ba79a3a7c860a15d7aa2e639f3bbf719320d1ff4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119798984"
 ---
-# <a name="about-pager-controls"></a>Acerca de los controles de buscapersonas
+# <a name="about-pager-controls"></a>Acerca de los controles de paginación
 
-Un *control de paginación* es un contenedor de ventana que se usa con una ventana que no tiene suficiente área de visualización para mostrar todo su contenido. El control de paginación permite al usuario desplazarse al área de la ventana que no está actualmente en la vista.
+Un *control de paginación* es un contenedor de ventanas que se usa con una ventana que no tiene suficiente área de presentación para mostrar todo su contenido. El control de paginación permite al usuario desplazarse hasta el área de la ventana que no está actualmente en la vista.
 
--   [Acerca de los controles de buscapersonas](#about-pager-controls)
+-   [Acerca de los controles de paginación](#about-pager-controls)
 
-## <a name="about-pager-controls"></a>Acerca de los controles de buscapersonas
+## <a name="about-pager-controls"></a>Acerca de los controles de paginación
 
-Microsoft Internet Explorer versión 4,0 (commctrl.dll versión 4,71) presenta el control de buscapersonas. Este control es útil en situaciones en las que una ventana no tiene espacio suficiente para mostrar una ventana secundaria. Por ejemplo, si la aplicación tiene una barra de herramientas que no es lo suficientemente ancha para mostrar todos sus elementos, puede asignar la barra de herramientas a un control de paginación y los usuarios podrán desplazarse a la izquierda o a la derecha para tener acceso a todos los elementos. También puede crear controles de buscapersonas que se desplacen verticalmente.
+Microsoft Internet Explorer versión 4.0 (commctrl.dll versión 4.71) presenta el control de paginación. Este control es útil en situaciones en las que una ventana no tiene suficiente área para mostrar una ventana secundaria. Por ejemplo, si la aplicación tiene una barra de herramientas que no es lo suficientemente ancha como para mostrar todos sus elementos, puede asignar la barra de herramientas a un control de paginación y los usuarios podrán desplazarse a la izquierda o derecha para acceder a todos los elementos. También puede crear controles de paginación que se desplazan verticalmente.
 
-Se hace referencia a una ventana asignada al control de paginación como *ventana contenida*.
+Una ventana asignada al control de paginación se conoce como ventana *independiente.*
 
-En la siguiente captura de pantalla se muestra una barra de herramientas que se encuentra dentro de un control de paginación. El control de paginación se muestra en rojo para mostrar qué áreas del control están visibles.
+En la siguiente captura de pantalla se muestra una barra de herramientas dentro de un control de paginación. El control de paginación se muestra en rojo para mostrar qué áreas del control están visibles.
 
 ![captura de pantalla de una ventana estrecha con una barra de herramientas de ejemplo dentro de un control de paginación](images/pager.jpg)
 
 > [!Note]  
-> El control de paginación se implementa en la versión 4,71 y versiones posteriores de Comctl32.dll.
+> El control de paginación se implementa en la versión 4.71 y posteriores de Comctl32.dll.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: CRL-Object atributo)
-description: Referencia a un objeto de lista de revocación de certificados asociado a una entidad de certificación.
+title: CRL-Object atributo
+description: Referencia al objeto de lista de revocación de certificados asociado a una entidad de certificación.
 ms.assetid: 6f1abf8e-c93e-48d6-8ca1-a46b43bdd032
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de CRL-Object
-- cRLObject esquema de AD de atributos
+- CRL-Object esquema de AD del atributo
+- Esquema de AD del atributo cRLObject
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5460467dc28803ef2f225fb049f6ff4a9d8c0b47
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2916656551a016140463b611573ae5ae5f4b1654e40ec1b191c221a25007d86e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926005"
 ---
-# <a name="crl-object-attribute"></a>CRL-Object atributo)
+# <a name="crl-object-attribute"></a>CRL-Object atributo
 
-Referencia a un objeto de lista de revocación de certificados asociado a una entidad de certificación.
+Referencia al objeto de lista de revocación de certificados asociado a una entidad de certificación.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | CRL-Object                              |
-| Nombre para mostrar de LDAP | cRLObject                               |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| Ldap-Display-Name | cRLObject                               |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.689                  |
-| System-ID-GUID    | 963d2737-48be-11d1-a9c3-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 963d2737-48be-11d1-a9c3-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ Referencia a un objeto de lista de revocación de certificados asociado a una en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -76,13 +76,13 @@ Referencia a un objeto de lista de revocación de certificados asociado a una en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -97,13 +97,13 @@ Referencia a un objeto de lista de revocación de certificados asociado a una en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -118,13 +118,13 @@ Referencia a un objeto de lista de revocación de certificados asociado a una en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -139,13 +139,13 @@ Referencia a un objeto de lista de revocación de certificados asociado a una en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -160,13 +160,13 @@ Referencia a un objeto de lista de revocación de certificados asociado a una en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |

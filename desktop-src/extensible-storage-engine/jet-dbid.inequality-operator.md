@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_DBID. Operador de desigualdad'
+description: 'Más información sobre: JET_DBID. Operador de desigualdad'
 title: JET_DBID. Operador de desigualdad
 TOCTitle: 'Inequality operator '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_DBID.op_Inequality(Microsoft.Isam.Esent.Interop.JET_DBID,Microsoft.Isam.Esent.Interop.JET_DBID)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 10dc41be66e687f7cba277dcbd7486e08ae2ad74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04a6ac55d1768eaf29146d89bf69be4cbcf90fd7686590153432533e7bff5684
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017345"
 ---
 # <a name="jet_dbidinequality-operator"></a>JET_DBID. Operador de desigualdad
 
 Determina si dos instancias especificadas de JET_DBID no son iguales.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,29 +64,29 @@ public static bool operator !=(
 
 #### <a name="parameters"></a>Parámetros
 
-  - LHS  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     Primera instancia que se va a comparar.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     Segunda instancia que se va a comparar.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True si las dos instancias de no son iguales.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True si las dos instancias no son iguales.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_DBID](./jet-dbid-structure.md)
+[JET_DBID estructura](./jet-dbid-structure.md)
 
-[Miembros de JET_DBID](./jet-dbid-members.md)
+[JET_DBID miembros](./jet-dbid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

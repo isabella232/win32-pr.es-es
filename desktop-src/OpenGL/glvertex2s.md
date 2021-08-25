@@ -1,9 +1,9 @@
 ---
-title: función glVertex2s (GL. h)
-description: Especifica un vértice. | función glVertex2s (GL. h)
+title: Función glVertex2s (Gl.h)
+description: Especifica un vértice. | Función glVertex2s (Gl.h)
 ms.assetid: e964d7b0-1cb7-4334-8861-1cc2ee37a71a
 keywords:
-- glVertex2s (función) OpenGL
+- Función glVertex2s OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8056c7cb2447eb1bb00915096a618de0d6f272d3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6fe3f48bd8254d15c999a5d3990587a756d61f02fc65fe2faae51473c43c5b79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036205"
 ---
-# <a name="glvertex2s-function"></a>glVertex2s función)
+# <a name="glvertex2s-function"></a>Función glVertex2s
 
 Especifica un vértice.
 
@@ -44,14 +44,14 @@ void WINAPI glVertex2s(
 *x* 
 </dt> <dd>
 
-Especifica la coordenada x de un vértice.
+Especifica la coordenada X de un vértice.
 
 </dd> <dt>
 
 *y* 
 </dt> <dd>
 
-Especifica la coordenada y de un vértice.
+Especifica la coordenada Y de un vértice.
 
 </dd> </dl>
 
@@ -59,9 +59,9 @@ Especifica la coordenada y de un vértice.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los comandos de la función glVertex se usan en pares de [**glBegin**](glbegin.md) / [**glEnd**](glend.md) para especificar vértices de punto, línea y polígono. Las coordenadas color, normal y Texture actuales están asociadas al vértice cuando se llama a glVertex. Cuando solo se especifican *x* *e y,* *z* tiene como valor predeterminado 0,0 y *w* es 1,0. Cuando se especifican *x*, *y* y *z* , el valor predeterminado de *w* es 1,0. La invocación de glVertex fuera de un par glEnd de **glBegin** /  produce un comportamiento indefinido.
+Los comandos de función glVertex se usan en pares [**glBegin**](glbegin.md)glEnd para especificar vértices de punto, línea / [](glend.md) y polígono. Las coordenadas de color, normal y textura actuales están asociadas al vértice cuando se llama a glVertex. Cuando solo *se especifican x* e *y,* *z* tiene como valor predeterminado 0,0 y *w* el valor predeterminado es 1,0. Cuando *se* especifican x , *y* y *z,* *w* tiene como valor predeterminado 1.0. La invocación de glVertex fuera de **un par glBegin** / **glEnd** produce un comportamiento indefinido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Los comandos de la función glVertex se usan en pares de [**glBegin**](glbegin.m
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

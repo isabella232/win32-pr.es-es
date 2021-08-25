@@ -1,9 +1,9 @@
 ---
-title: DRM_SAPLEVEL (desusado)
-description: Especifica el nivel de la ruta de acceso de audio seguro (SAP) admitido por la aplicación.
+title: DRM_SAPLEVEL (en desuso)
+description: Especifica el nivel de ruta de acceso de audio segura (SAP) compatible con la aplicación.
 ms.assetid: a2648083-f9ec-43c7-96c8-4d8b5f8285d1
 keywords:
-- DRM_SAPLEVEL (en desuso) formato de Windows Media
+- DRM_SAPLEVEL (en desuso) Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43711c6c394761f599271809419a46311265d8b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f80b43cfcf0c89283237f8ff2d3e4f8612050296d7462f54890c3efa908fa9be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930895"
 ---
-# <a name="drm_saplevel-deprecated"></a>DRM \_ SAPLEVEL (desusado)
+# <a name="drm_saplevel-deprecated"></a>DRM \_ SAPLEVEL (en desuso)
 
-\[**DRM \_ SAPLEVEL** ya no está disponible para su uso a partir de Windows Vista. En su lugar, use el audio de modo de usuario protegido (PUMA) en la biblioteca de Media Foundation. \]
+\[**DRM \_ SAPLEVEL** ya no está disponible para su uso a Windows Vista. En su lugar, use audio en modo de usuario protegido (VMM) en la biblioteca Media Foundation usuario. \]
 
-La **propiedad \_ SAPLEVEL de DRM** especifica el nivel de la ruta de acceso de audio seguro (SAP) admitido por la aplicación.
+La **propiedad \_ SAPLEVEL de DRM** especifica el nivel de ruta de acceso de audio seguro (SAP) compatible con la aplicación.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -31,11 +31,11 @@ g \_ wszWMDRM \_ SAPLEVEL
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_cadena de tipo WMT \_**
+**CADENA DE TIPO WMT \_ \_**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de una propiedad de solo escritura que se establece mediante una llamada a [**IWMDRMReader:: SetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-setdrmproperty). El valor es una representación de cadena de caracteres anchos del nivel de SAP, como L "200". Los valores admitidos actualmente son 200 y 300.
+Se trata de una propiedad de solo escritura que se establece mediante una llamada a [**IWMDRMReader::SetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-setdrmproperty). El valor es una representación de cadena de caracteres anchos del nivel de SAP, como L"200". Los valores admitidos actuales son 200 y 300.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,17 +1,17 @@
 ---
-title: Acerca de los metaarchivos de Windows Media
-description: Acerca de los metaarchivos de Windows Media
+title: Acerca Windows metarchivos multimedia
+description: Acerca Windows metarchivos multimedia
 ms.assetid: 93bbe433-aebd-433d-af06-85e60d65b67a
 keywords:
-- Metaarchivos de Windows Media, acerca de
-- Media Player de Windows, metaarchivos
-- Windows Media Player, metaarchivos de Windows Media
-- metaarchivos, acerca de
-- Windows Media, metaarchivos
-- Listas de reproducción de metarchivos de Windows Media, acerca de
+- Windows Metarchivos multimedia, acerca de
+- Reproductor de Windows Media,metarchivos
+- Reproductor de Windows Media,Windows metarchivos multimedia
+- metarchivos, acerca de
+- Windows Multimedia, metarchivos
+- Windows Listas de reproducción de metarchivo multimedia, acerca de
 - listas de reproducción, acerca de
-- listas de reproducción de metarchivos, acerca de
-- Paquetes de descarga de Windows Media, acerca de
+- listas de reproducción de metarchivo, acerca de
+- Windows Paquetes de descarga multimedia, acerca de
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -19,42 +19,42 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 48b6eda91e13d6677eb99dba1ef438acf4446513
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 11636cf188e7a68818570a3866a2e49dd62d54d8ccda35f6c2e37cbb5ae19cff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956485"
 ---
-# <a name="about-windows-media-metafiles"></a>Acerca de los metaarchivos de Windows Media
+# <a name="about-windows-media-metafiles"></a>Acerca Windows metarchivos multimedia
 
-Los metaarchivos de Microsoft Windows Media son archivos de texto que proporcionan información acerca de una secuencia de archivos y su presentación. Los metaarchivos de Windows Media se basan en la sintaxis de lenguaje de marcado extensible (XML) y se pueden codificar en formato ANSI o Unicode (UTF-8). Se componen de varios elementos con sus etiquetas y atributos asociados. Cada elemento de un metarchivo de Windows Media define una opción o acción determinada en Windows Media Player. Algunos elementos deben estar ubicados en una posición específica en el archivo con respecto a otros elementos. Algunos elementos tienen etiquetas y atributos necesarios que deben definirse en el metarchivo de Windows Media.
+Los metarchivos Windows Multimedia de Microsoft son archivos de texto que proporcionan información sobre una secuencia de archivos y su presentación. Windows Los metarchivos multimedia se basan en la sintaxis lenguaje de marcado extensible (XML) y se pueden codificar en formato ANSI o UNICODE (UTF-8). Están hechos de varios elementos con sus etiquetas y atributos asociados. Cada elemento de un metarchivo Windows multimedia define una configuración o acción determinadas en Reproductor de Windows Media. Algunos elementos deben encontrarse en una posición específica del archivo con respecto a otros elementos. Algunos elementos tienen etiquetas y atributos necesarios que deben definirse en el metarchivo Windows multimedia.
 
-Los paquetes de descarga de Windows Media proporcionan una manera de combinar los bordes de Media Player de Windows, la información de la lista de reproducción y el contenido multimedia en un solo archivo descargable.
+Windows Los paquetes de descarga multimedia proporcionan una manera de combinar Reproductor de Windows Media, información de lista de reproducción y contenido multimedia en un único archivo descargable.
 
-En las secciones siguientes se proporciona información conceptual acerca de las listas de reproducción de metarchivo de Windows Media y paquetes de descarga de Windows Media.
+En las secciones siguientes se proporciona información conceptual sobre las listas Windows de metarchivo multimedia y los Windows de descarga multimedia.
 
 
 
 | Sección                                                                                         | Descripción                                                                        |
 |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Información general de los metaarchivos de Windows Media](windows-media-metafiles-overview.md)                        | Describe los metaarchivos de Windows Media, por qué los necesita y cómo usarlos.         |
-| [Paquetes de descarga de Windows Media (en desuso)](windows-media-download-packages--deprecated.md) | Describe los paquetes de descarga de Windows Media, por qué los necesita y cómo usarlos. |
+| [Windows Introducción a los metarchivos multimedia](windows-media-metafiles-overview.md)                        | Describe Windows metarchivos multimedia, por qué los necesita y cómo usarlos.         |
+| [Windows Paquetes de descarga de medios (en desuso)](windows-media-download-packages--deprecated.md) | Describe Windows de descarga multimedia, por qué los necesita y cómo usarlos. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Metaarchivos de Windows Media**](windows-media-metafiles.md)
+[**Windows Metarchivos multimedia**](windows-media-metafiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

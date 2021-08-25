@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithKerberosOverSslClientExample
-description: En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para comunicarse con un servicio de calculadora, con seguridad de modo mixto de Kerberos a través de SSL.
+description: En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para hablar con un servicio de calculadora, con kerberos sobre la seguridad en modo mixto de SSL.
 ms.assetid: eb3ae71f-0bbb-42d7-af81-20c5dbb03c3f
 keywords:
 - HttpCalculatorWithKerberosOverSslClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 314c4e4d57662467b02257c0476e35719c72b95b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 90286b6044b34983eeb3844d3e0ede4b8bc8d1077fe08f427af5856485dae001
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005845"
 ---
 # <a name="httpcalculatorwithkerberosoversslclientexample"></a>HttpCalculatorWithKerberosOverSslClientExample
 
-En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para comunicarse con un servicio de calculadora, con seguridad de modo mixto de Kerberos a través de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación del cliente se proporciona mediante un vale APREQ de Kerberos en un encabezado WS-Security del mensaje.
+En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para hablar con un servicio de calculadora, con kerberos sobre la seguridad en modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante un vale de APREQ de Kerberos en un WS-Security encabezado del mensaje.
 
--   [CalculatorClientKerberosOverSsl. cpp](#calculatorclientkerberosoversslcpp)
--   [CalculatorService. wsdl](#calculatorservicewsdl)
+-   [CalculatorClientKerberosOverSsl.cpp](#calculatorclientkerberosoversslcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="calculatorclientkerberosoversslcpp"></a>CalculatorClientKerberosOverSsl. cpp
+## <a name="calculatorclientkerberosoversslcpp"></a>CalculatorClientKerberosOverSsl.cpp
 
 
 ```C++
@@ -260,7 +260,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. wsdl
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -385,9 +385,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

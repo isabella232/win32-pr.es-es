@@ -1,27 +1,27 @@
 ---
-title: Cómo crear un proveedor de automatización de la interfaz de usuario de Client-Side (proxy)
-description: Este tema contiene código de ejemplo que muestra cómo implementar un proveedor de automatización de la interfaz de usuario de Microsoft, o proxy.
+title: Cómo crear un proveedor de Client-Side de Automatización de la interfaz de usuario (proxy)
+description: Este tema contiene código de ejemplo que muestra cómo implementar un cliente o proxy, microsoft Automatización de la interfaz de usuario proveedor.
 ms.assetid: 37e54a0f-3d41-4f47-ba73-7f1bf6c365e7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62a0b32ae60d6364ea6eac18fae991d1d600e61c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7d7623a21681bdb1765d96d89e19b4089b59ab042865dbe5fdd39c37c635e432
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103776861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955745"
 ---
-# <a name="how-to-create-a-client-side-proxy-ui-automation-provider"></a>Cómo crear un proveedor de automatización de la interfaz de usuario de Client-Side (proxy)
+# <a name="how-to-create-a-client-side-proxy-ui-automation-provider"></a>Cómo crear un proveedor de Client-Side de Automatización de la interfaz de usuario (proxy)
 
-Este tema contiene código de ejemplo que muestra cómo implementar un proveedor de automatización de la interfaz de usuario de Microsoft, o proxy.
+Este tema contiene código de ejemplo que muestra cómo implementar un cliente o proxy, microsoft Automatización de la interfaz de usuario proveedor.
 
--   [Ejemplo 1: enumerar la tabla de generador de proxy](#example-1-enumerating-the-proxy-factory-table)
--   [Ejemplo 2: implementar un proxy simple para controles de botón](#example-2-implementing-a-simple-proxy-for-button-controls)
+-   [Ejemplo 1: Enumeración de la tabla de generador de proxy](#example-1-enumerating-the-proxy-factory-table)
+-   [Ejemplo 2: Implementar un proxy simple para controles de botón](#example-2-implementing-a-simple-proxy-for-button-controls)
 -   [Temas relacionados](#related-topics)
 
-## <a name="example-1-enumerating-the-proxy-factory-table"></a>Ejemplo 1: enumerar la tabla de generador de proxy
+## <a name="example-1-enumerating-the-proxy-factory-table"></a>Ejemplo 1: Enumeración de la tabla de generador de proxy
 
-En el código de ejemplo siguiente se enumeran las entradas de la tabla de generador de proxy y se muestra el nombre de clase del control admitido. En el caso de los servidores proxy que no se suministran con el sistema operativo, se muestra el nombre de la imagen.
+En el código de ejemplo siguiente se enumeran las entradas de la tabla de generador de proxy y se muestra el nombre de clase del control admitido. En el caso de los servidores proxy que no se proporcionan con el sistema operativo, se muestra el nombre de la imagen.
 
 
 ```C++
@@ -70,9 +70,9 @@ HRESULT GetProxyTable()
 
 
 
-## <a name="example-2-implementing-a-simple-proxy-for-button-controls"></a>Ejemplo 2: implementar un proxy simple para controles de botón
+## <a name="example-2-implementing-a-simple-proxy-for-button-controls"></a>Ejemplo 2: Implementar un proxy simple para controles de botón
 
-En el siguiente código de ejemplo se implementa un proxy simple para los controles que tienen el nombre de clase "Button" y se agrega una entrada para el proxy a la tabla de generador de proxy. En este ejemplo se usa el cuadro de diálogo fuente del Bloc de notas para mostrar el proxy.
+El código de ejemplo siguiente implementa un proxy simple para los controles que tienen el nombre de clase "Button" y agrega una entrada para el proxy a la tabla de generador de proxy. En este ejemplo se usa el cuadro de diálogo Fuente Bloc de notas para mostrar el proxy.
 
 
 ```C++
@@ -366,18 +366,18 @@ cleanup:
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Implementar un proveedor de automatización de la interfaz de usuario de Client-Side](uiauto-serversideprovider.md)
+[Implementación de un proveedor Client-Side Automatización de la interfaz de usuario aplicación](uiauto-serversideprovider.md)
 </dt> <dt>
 
-[Temas de procedimientos para los proveedores de automatización de la interfaz de usuario](uiauto-howto-topics-for-uiautomation-providers.md)
+[Temas de ayuda para proveedores de Automatización de la interfaz de usuario](uiauto-howto-topics-for-uiautomation-providers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

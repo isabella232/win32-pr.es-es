@@ -4,18 +4,18 @@ ms.assetid: a348959a-fa23-495c-ba1c-85bc3ae92396
 title: Sincronización de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 134305ef97e4bfafa0808fc19e96f578c5016127
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 187e116d1182a94947157f7187bc930bf91d5386226f6049e9dd27234548ff48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991295"
 ---
 # <a name="com-synchronization"></a>Sincronización de COM+
 
-El servicio de sincronización COM+ proporciona sincronización que fluye del componente al componente y prohíbe que más de un llamador escriba el componente en un momento dado. La sincronización determina si los subprocesos pueden enviar llamadas a un objeto.
+El servicio de sincronización com+ proporciona una sincronización que fluye de componente a componente y prohíbe que más de un llamador entre en el componente en un momento dado. La sincronización determina cuándo los subprocesos pueden enviar llamadas a un objeto .
 
-En los temas que se describen en la tabla siguiente se proporciona información básica y de tareas sobre el servicio de sincronización de COM+.
+Los temas descritos en la tabla siguiente proporcionan información general y de tareas sobre el servicio de sincronización com+.
 
 
 

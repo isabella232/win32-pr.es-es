@@ -1,19 +1,19 @@
 ---
-description: Una aplicación utiliza la siguiente enumeración para supervisar la operación de impresión y generar informes sobre ella.
+description: Una aplicación usa la enumeración siguiente para supervisar e informar sobre la operación de impresión.
 ms.assetid: 8B182A65-BC71-412D-92E8-07CDB019C819
-title: Enumeraciones de la API del paquete de documentos de impresión
+title: Enumeraciones de API para imprimir paquetes de documentos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb77d69932cca87d028728a2ea3c572779365a2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14bd4180a74d73fec79b860616bfb49007803ff189cc00ea450194c501d30714
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947335"
 ---
-# <a name="print-document-package-api-enumerations"></a>Enumeraciones de la API del paquete de documentos de impresión
+# <a name="print-document-package-api-enumerations"></a>Enumeraciones de API para imprimir paquetes de documentos
 
-Una aplicación utiliza la siguiente enumeración para supervisar la operación de impresión y generar informes sobre ella.
+Una aplicación usa la enumeración siguiente para supervisar e informar sobre la operación de impresión.
 
 <dl>
 

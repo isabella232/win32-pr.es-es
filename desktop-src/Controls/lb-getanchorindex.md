@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LB_GETANCHORINDEX (Winuser. h)
-description: Obtiene el índice del elemento de delimitador \ 8212; es decir, el elemento desde el que se inicia una selección múltiple. Una selección múltiple abarca todos los elementos del elemento delimitador hasta el elemento del símbolo de intercalación.
+title: LB_GETANCHORINDEX mensaje (Winuser.h)
+description: Obtiene el índice del elemento delimitador \ 8212; es decir, el elemento desde el que se inicia una selección múltiple. Una selección múltiple abarca todos los elementos desde el elemento delimitador hasta el elemento de careta.
 ms.assetid: vs|controls|~\controls\listboxes\listboxreference\listboxmessages\lb_getanchorindex.htm
 keywords:
-- LB_GETANCHORINDEX controles de mensajes de Windows
+- LB_GETANCHORINDEX controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5502a234424b818bb46e9c4326839b5aff2f83d0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df33244a755ddd99a5af0c849e7753e478a91b94cd5cbd717505ca4ab37b0f9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799585"
 ---
-# <a name="lb_getanchorindex-message"></a>\_Mensaje lb GETANCHORINDEX
+# <a name="lb_getanchorindex-message"></a>Mensaje \_ LB GETANCHORINDEX
 
-Obtiene el índice del elemento delimitador, que es el elemento desde el que se inicia una selección múltiple. Una selección múltiple abarca todos los elementos del elemento delimitador hasta el elemento del símbolo de intercalación.
+Obtiene el índice del elemento delimitador, es decir, el elemento desde el que se inicia una selección múltiple. Una selección múltiple abarca todos los elementos desde el elemento delimitador hasta el elemento de careta.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Obtiene el índice del elemento delimitador, que es el elemento desde el que se 
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
@@ -51,11 +51,11 @@ El valor devuelto es el índice del elemento delimitador.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

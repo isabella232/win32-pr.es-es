@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentNoCurrentRecordException'
-title: Constructor de EsentNoCurrentRecordException
+description: 'Más información sobre: Constructor EsentNoCurrentRecordException'
+title: Constructor EsentNoCurrentRecordException
 TOCTitle: 'EsentNoCurrentRecordException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentNoCurrentRecordException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentnocurrentrecordexception.esentnocurrentrecordexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 775b17abcea59fb09023e91e89e868b5133a351b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa33c00fd10ca32fcd5173012217eed9a253a93223e2ff3245d926a65a083cf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119733905"
 ---
-# <a name="esentnocurrentrecordexception-constructor"></a>Constructor de EsentNoCurrentRecordException
+# <a name="esentnocurrentrecordexception-constructor"></a>Constructor EsentNoCurrentRecordException
 
 Inicializa una nueva instancia de la clase EsentNoCurrentRecordException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentNoCurrentRecordException()
 public EsentNoCurrentRecordException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentNoCurrentRecordException()
 
 [Miembros de EsentNoCurrentRecordException](./esentnocurrentrecordexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

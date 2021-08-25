@@ -1,7 +1,7 @@
 ---
-description: El método Advise envía todas las solicitudes que están programadas para una hora especificada o anterior.
+description: El método Advise envía todas las solicitudes programadas para una hora especificada o anterior.
 ms.assetid: 09ea84b7-517a-4ea6-9e03-0d9cd8f72e1f
-title: Método CAMSchedule. Advise (Dsschedule. h)
+title: Método CAMSchedule.Advise (Dsschedule.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 70880243cef294ebe747463cd11737027faf9277
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a0943479aaa7fe2e6d699bba147977a73f48fc31186fb64ea26a211e2ea31d8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757795"
 ---
-# <a name="camscheduleadvise-method"></a>CAMSchedule. Advise (método)
+# <a name="camscheduleadvise-method"></a>Método CAMSchedule.Advise
 
-El `Advise` método envía todas las solicitudes que están programadas para una hora especificada o anterior.
+El `Advise` método envía todas las solicitudes programadas para una hora especificada o anterior.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ REFERENCE_TIME Advise(
 
 <dl> <dt>
 
-*rtTime* \[ CLI\]
+*rtTime* \[ Ref\]
 </dt> <dd>
 
-Valor que especifica el tiempo de referencia actual.
+Valor que especifica la hora de referencia actual.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la hora de referencia de la siguiente solicitud de notificación programada o el \_ tiempo máximo si no hay ninguna.
+Devuelve la hora de referencia de la siguiente solicitud de aviso programada o MAX \_ TIME si no queda ninguna.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el reloj llama a este método, especifica el tiempo de referencia actual. Scheduler determina qué solicitudes de notificaciones han expirado, si hay alguna, y las envía. Si expira una solicitud de una captura, el programador la elimina. Si una solicitud periódica expira, Scheduler la vuelve a programar para el siguiente tiempo de notificación. El método devuelve la hora de la siguiente solicitud pendiente.
+Cuando el reloj llama a este método, especifica la hora de referencia actual. El programador determina qué solicitudes de asesoramiento han expirado, si las hay, y las envía. Si expira una solicitud de una sola toma, el programador la elimina. Si expira una solicitud periódica, el programador la vuelve a programar para la próxima hora de aviso. El método devuelve la hora de la siguiente solicitud pendiente.
 
-Para enviar una solicitud de notificación, el programador indica el evento o semáforo proporcionado en el parámetro *hNotify* del método [**CAMSchedule:: AddAdvisePacket**](camschedule-addadvisepacket.md) .
+Para enviar una solicitud de aviso, el programador señala el evento o semáforo especificado en el *parámetro hNotify* del [**método CAMSchedule::AddAdvisePacket.**](camschedule-addadvisepacket.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Para enviar una solicitud de notificación, el programador indica el evento o se
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Dsschedule. h (incluir streams. h)</dt> </dl>                                                                                |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Dsschedule.h (incluir Secuencias.h)</dt> </dl>                                                                                |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Para enviar una solicitud de notificación, el programador indica el evento o se
 
 <dl> <dt>
 
-[**Clase CAMSchedule**](camschedule.md)
+[**CLASE CAMSchedule**](camschedule.md)
 </dt> </dl>
 
  
