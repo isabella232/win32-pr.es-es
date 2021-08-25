@@ -1,5 +1,5 @@
 ---
-description: Se llama cuando no se usó el certificado devuelto por la devolución de llamada CertStoreProvFindCTL y, por tanto, se libera, en una llamada subsiguiente a CertStoreProvFindCTL.
+description: Se llama cuando no se usa el certificado devuelto por la devolución de llamada CertStoreProvFindCTL y, por tanto, se libera, en una llamada posterior a CertStoreProvFindCTL.
 ms.assetid: 04e62a4e-4542-4225-8750-fabbda5adf0d
 title: Función de devolución de llamada CertStoreProvFreeFindCTL
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: ff0c9c3b7be6b8a4cafd759c3411f5096ee8640b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f3f6d224ed19073408015b3b83b90a66e9402d9b838d50eb7a8381e312e0534
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877145"
 ---
 # <a name="certstoreprovfreefindctl-callback-function"></a>Función de devolución de llamada CertStoreProvFreeFindCTL
 
-Se llama a la función de devolución de llamada **CertStoreProvFreeFindCTL** cuando no se usó el certificado devuelto por la devolución de llamada [**CertStoreProvFindCTL**](certstoreprovfindctl.md) y, por tanto, se libera, en una llamada subsiguiente a **CertStoreProvFindCTL**. Antes de que se llame a la devolución de llamada de cierre, el proveedor debe liberar todos los certificados devueltos por la devolución de llamada de [**CertStoreProvFindCTL**](certstoreprovfindctl.md) mediante **CertStoreProvFindCTL** o **CertStoreProvFreeFindCTL**.
+Se llama a la función de devolución de llamada **CertStoreProvFreeFindCTL** cuando no se usó el certificado devuelto por la devolución de llamada [**CertStoreProvFindCTL**](certstoreprovfindctl.md) y, por tanto, se liberó en una llamada posterior a **CertStoreProvFindCTL.** Antes de llamar a la devolución de llamada CLOSE, el proveedor debe liberar todos los certificados devueltos por la devolución de llamada [**CertStoreProvFindCTL**](certstoreprovfindctl.md) mediante **CertStoreProvFindCTL** o **CertStoreProvFreeFindCTL.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,37 +41,37 @@ BOOL CertStoreProvFreeFindCTL(
 
 <dl> <dt>
 
-*hStoreProv* \[ de\]
+*hStoreProv* \[ En\]
 </dt> <dd>
 
-Identificador de **HCERTSTOREPROV** de un [*almacén de certificados*](../secgloss/c-gly.md).
+**Identificador de HCERTSTOREPROV** a un [*almacén de certificados*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pCtlContext* \[ de\]
+*pCtlContext* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ contexto de CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) .
+Puntero a una [**estructura CONTEXT \_ de CTL.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 
 </dd> <dt>
 
-*pvStoreProvFindInfo* \[ de\]
+*pvStoreProvFindInfo* \[ En\]
 </dt> <dd>
 
-Un puntero a un búfer que contiene información de búsqueda.
+Puntero a un búfer que contiene información de buscar.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Los valores de marca necesarios.
+Cualquier valor de marca necesario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si la función se ejecuta correctamente o **false** si se produce un error.
+Devuelve **TRUE** si la función se realiza correctamente o **FALSE** si se produce un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Devuelve **true** si la función se ejecuta correctamente o **false** si se prod
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
@@ -91,7 +91,7 @@ Devuelve **true** si la función se ejecuta correctamente o **false** si se prod
 [**CertStoreProvFindCTL**](certstoreprovfindctl.md)
 </dt> <dt>
 
-[**\_contexto CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
+[**CONTEXTO DE \_ CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: msSFU-30-atributo de separador de campo
-description: Contiene el separador de campos de cada mapa de NIS.
+title: Atributo msSFU-30-Field-Separator
+description: Contiene el separador de campos para cada asignación de NIS.
 ms.assetid: 378a37a8-a0a2-467f-ad30-40a9d522f7a2
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de separador de campos de msSFU-30
-- msSFU30FieldSeparator esquema de AD de atributos
+- msSFU-30-Field-Separator attribute AD Schema
+- msSFU30FieldSeparator attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d747dbaec757eee4ec60a4fd1726359d9f70e537
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a6515f8941dad10e7df043cb7066bdf207117ca0905468a63c1ab0a3e026f06a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924465"
 ---
-# <a name="mssfu-30-field-separator-attribute"></a>msSFU-30-atributo de separador de campo
+# <a name="mssfu-30-field-separator-attribute"></a>Atributo msSFU-30-Field-Separator
 
-Contiene el separador de campos de cada mapa de NIS.
+Contiene el separador de campos para cada asignación de NIS.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | msSFU-30-separador de campos                    |
-| Nombre para mostrar de LDAP | msSFU30FieldSeparator                       |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | msSFU-30-Field-Separator                    |
+| Ldap-Display-Name | msSFU30FieldSeparator                       |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.302                 |
-| System-ID-GUID    | a2e11a42-e781-4ca1-a7fa-ec307f62b6a1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | a2e11a42-e781-4ca1-a7fa-ec307f62b6a1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,18 +53,18 @@ Contiene el separador de campos de cada mapa de NIS.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Contiene el separador de campos de cada mapa de NIS.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Contiene el separador de campos de cada mapa de NIS.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -116,18 +116,18 @@ Contiene el separador de campos de cada mapa de NIS.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 

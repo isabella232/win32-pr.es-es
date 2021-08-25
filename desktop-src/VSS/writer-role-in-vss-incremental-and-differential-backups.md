@@ -1,91 +1,91 @@
 ---
-description: 'Normalmente, la participación de un escritor en copias de seguridad incrementales y diferenciales tiene lugar mientras se controlan los eventos de identificación (CVssWriter:: he identify), PrepareForBackup (CVssWriter: OnPrepareBackup) y postsnapshot (CVssWriter: OnPostSnapshot).'
+description: La participación de un escritor en copias de seguridad incrementales y diferenciales suele tener lugar al controlar eventos Identify (CVssWriter::OnIdentify), PrepareForBackup (CVssWriter:OnPrepareBackup) y PostSnapshot (CVssWriter:OnPostSnapshot).
 ms.assetid: 85c4e003-b531-4283-83aa-dd5cc53f35b1
-title: Rol de escritor en copias de seguridad incrementales y diferenciales de VSS
+title: Rol escritor en copias de seguridad incrementales y diferenciales de VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2cda57d907bed4572f0c0f71f9ee829bee18299
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d3c84245c21a47ba5535eccdfcbf10e988cf72b30ea99ee92086a9ca8f65647
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863875"
 ---
-# <a name="writer-role-in-vss-incremental-and-differential-backups"></a>Rol de escritor en copias de seguridad incrementales y diferenciales de VSS
+# <a name="writer-role-in-vss-incremental-and-differential-backups"></a>Rol escritor en copias de seguridad incrementales y diferenciales de VSS
 
-Normalmente, la participación de un escritor en copias de seguridad incrementales y diferenciales tiene lugar mientras se controlan los eventos de [*identificación*](vssgloss-i.md) ([**CVssWriter:: he Identify**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onidentify)), [*PrepareForBackup*](vssgloss-p.md) ([**CVssWriter: OnPrepareBackup**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpreparebackup)) y *postsnapshot* ([**CVssWriter: OnPostSnapshot**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpostsnapshot)). La forma en que participa un escritor es la forma de si admite marcas de copia de seguridad y horas de última modificación, y si el solicitante que ejecuta la copia de seguridad admite [*operaciones de archivo parciales*](vssgloss-p.md).
+La participación de un escritor en copias de seguridad incrementales y diferenciales suele tener lugar al controlar los eventos [*Identify*](vssgloss-i.md) [**(CVssWriter::OnIdentify),**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onidentify) [*PrepareForBackup*](vssgloss-p.md) ([**CVssWriter:OnPrepareBackup)**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpreparebackup)y *PostSnapshot* [**(CVssWriter:OnPostSnapshot).**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpostsnapshot) La forma en que participa un escritor se determina si admite marcas de copia de seguridad y las últimas horas de modificación, y si el solicitante que ejecuta la copia de seguridad admite operaciones [*de archivo parciales*](vssgloss-p.md).
 
-## <a name="handling-identify-events-during-incremental-and-differential-backups"></a>Control de eventos de identificación durante las copias de seguridad incrementales y diferenciales
+## <a name="handling-identify-events-during-incremental-and-differential-backups"></a>Control de eventos de identificación durante copias de seguridad incrementales y diferenciales
 
-Al controlar el evento de identificación, los escritores establecen su arquitectura básica para la operación de copia de seguridad incremental y diferencial mediante las máscaras esquema de copia de seguridad ([**\_ \_ esquema de copia de seguridad de VSS**](/windows/desktop/api/Vss/ne-vss-vss_backup_schema)) y tipo de copia de seguridad de especificación de archivo ([**\_ \_ \_ \_ tipo de copia de seguridad**](/windows/desktop/api/Vss/ne-vss-vss_file_spec_backup_type)de especificación de archivo
+Al controlar el evento Identify, los escritores establecen su arquitectura básica para la operación de copia de seguridad incremental y diferencial a través del esquema de copia de seguridad (ESQUEMA DE COPIA DE SEGURIDAD DE [**VSS) \_ \_**](/windows/desktop/api/Vss/ne-vss-vss_backup_schema)y las máscaras del tipo de copia de seguridad de especificación de archivo [**(VSS \_ FILE SPEC BACKUP \_ \_ \_ TYPE).**](/windows/desktop/api/Vss/ne-vss-vss_file_spec_backup_type)
 
-Un escritor indica qué operaciones admite en su documento de metadatos del escritor mediante la creación de una máscara de bits de los valores de [**\_ \_ esquema de copia de seguridad de VSS**](/windows/desktop/api/Vss/ne-vss-vss_backup_schema) y su paso al método [**IVssCreateWriterMetadata:: SetBackupSchema**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-setbackupschema) . Con esto, un escritor puede indicar si admite lo siguiente:
+Un sistema de escritura indica qué operaciones admite en su documento de metadatos del escritor mediante la creación de una máscara de bits de valores DE ESQUEMA DE COPIA DE SEGURIDAD de [**VSS \_ \_**](/windows/desktop/api/Vss/ne-vss-vss_backup_schema) y su paso al método [**IVssCreateWriterMetadata::SetBackupSchema.**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-setbackupschema) Con esto, un escritor puede indicar si admite lo siguiente:
 
--   Copias de seguridad incrementales (se **\_ \_ incremental de VSS BS**)
--   Copias de seguridad diferenciales (de **VSS \_ BS \_ diferencial**)
--   Las copias de seguridad incrementales y diferenciales no se pueden mezclar (**VSS \_ BS \_ exclusivo \_ incremental \_ diferencial**)
--   Copias de seguridad incrementales y diferenciales mediante marcas de copia de seguridad (**VSS \_ BS \_ timestamp**)
--   Copias de seguridad incrementales y diferenciales en base a la información sobre la última modificación de un archivo (**VSS \_ BS \_ última \_ modificación**)
+-   Copias de seguridad incrementales **(INCREMENTAL \_ de VSS \_ BS)**
+-   Copias de seguridad **diferenciales \_ (VSS BS \_ DIFFERENTIAL)**
+-   No se pueden mezclar copias de seguridad incrementales y diferenciales (DIFERENCIAL INCREMENTAL EXCLUSIVO DE **\_ VSS \_ \_ \_ BS)**
+-   Copias de seguridad incrementales y diferenciales mediante marcas de copia de seguridad **\_ (VSS BS \_ TIMESTAMPED)**
+-   Copias de seguridad incrementales y diferenciales en función de la información sobre la última modificación de un archivo (**\_ VSS BS \_ LAST \_ MODIFY**)
 
 Los escritores usan la máscara de tipo de copia de seguridad de especificación de archivo para proporcionar información de nivel de conjunto de archivos a los solicitantes sobre cómo incluir archivos en una copia de seguridad incremental o diferencial.
 
-Un escritor puede establecer la máscara del tipo de copia de seguridad de la especificación de archivo de un conjunto de archivos cuando agrega el conjunto de archivos a un componente mediante la creación de una máscara de bits de los valores del tipo de copia de seguridad de las especificaciones de archivo de VSS y pasándolo a [**IVssCreateWriterMetadata:: AddDatabaseFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabasefiles), [**IVssCreateWriterMetadata:: AddDatabaseLogFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabaselogfiles)o [**IVssCreateWriterMetadata:: AddFilesToFileGroup**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addfilestofilegroup). [**\_ \_ \_ \_**](/windows/desktop/api/Vss/ne-vss-vss_file_spec_backup_type)
+Un escritor puede establecer la máscara de tipo de copia de seguridad de especificación de archivos de un conjunto de archivos cuando agrega el conjunto de archivos a un componente mediante la creación de una máscara de bits de valores DE TIPO BACKUP de SPEC DE [**VSS \_ FILE \_ \_ \_**](/windows/desktop/api/Vss/ne-vss-vss_file_spec_backup_type) y su paso a [**IVssCreateWriterMetadata::AddDatabaseFiles,**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabasefiles) [**IVssCreateWriterMetadata::AddFilesToFileGroup**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabaselogfiles). [](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addfilestofilegroup)
 
-Hay tres valores de "copia de seguridad necesaria" de la enumeración de [**\_ tipo de copia de \_ \_ seguridad \_ de especificación de archivo de VSS**](/windows/desktop/api/Vss/ne-vss-vss_file_spec_backup_type) que afectan a las copias de seguridad diferenciales e incrementales:
+Hay tres valores "se requiere copia de seguridad" de la enumeración [**VSS \_ FILE SPEC BACKUP \_ \_ \_ TYPE**](/windows/desktop/api/Vss/ne-vss-vss_file_spec_backup_type) que afectan a las copias de seguridad diferenciales e incrementales:
 
--   **VSS \_ FSBT \_ todas las \_ copias de seguridad \_ necesarias**
--   **se \_ \_ requiere la copia de seguridad incremental FSBT de VSS \_ \_**
--   **se \_ \_ requiere la \_ copia de seguridad diferencial FSBT \_ de VSS**
+-   **VSS \_ FSBT \_ ALL \_ BACKUP \_ REQUIRED**
+-   **SE REQUIERE COPIA \_ DE SEGURIDAD INCREMENTAL DE VSS FSBT \_ \_ \_**
+-   **SE REQUIERE COPIA \_ DE SEGURIDAD DIFERENCIAL DE VSS FSBT \_ \_ \_**
 
-Hay tres valores de "se requiere la instantánea":
+Hay tres valores de "instantánea necesaria":
 
--   **VSS \_ FSBT \_ todas las \_ instantáneas \_ necesarias**
--   **se \_ \_ requiere la instantánea incremental FSBT de VSS \_ \_**
--   **se \_ \_ requiere la \_ instantánea \_ diferencial FSBT de VSS**
+-   **VSS \_ FSBT \_ ALL \_ SNAPSHOT \_ REQUIRED**
+-   **INSTANTÁNEA \_ INCREMENTAL DE VSS FSBT \_ \_ \_ NECESARIA**
+-   **INSTANTÁNEA DIFERENCIAL \_ DE VSS FSBT \_ \_ \_ NECESARIA**
 
-Los conjuntos de archivos etiquetados con un tipo de copia de seguridad de especificación de archivo de "instantánea necesaria" indican si un solicitante debe copiar datos de una instantánea al realizar operaciones de copia de seguridad INCREMENTAl, diferencial o de todos (lo que incluye operaciones incrementales y diferenciales).
+Los conjuntos de archivos etiquetados con un tipo de copia de seguridad de especificación de archivo de "instantánea necesaria" indican si un solicitante necesita copiar datos de una instantánea al realizar operaciones de copia de seguridad INCREMENTAL, DIFFERENTIAL o ALL (que incluye operaciones incrementales y diferenciales).
 
-La marca "se requiere copia de seguridad", que se aplica a las operaciones de copia de seguridad INCREMENTAl, diferencial o todas, indica que el escritor espera que haya una copia de la versión actual del conjunto de archivos disponible después de la restauración de cualquier operación de copia de seguridad. Normalmente, esto significa que si un conjunto de archivos se etiqueta con "se requiere copia de seguridad", todos sus miembros se copiarán en el medio de copia de seguridad durante una copia de seguridad incremental o diferencial, independientemente de Cuándo se haya producido la última copia de seguridad o modificación.
+La marca "copia de seguridad necesaria", aplicada a las operaciones de copia de seguridad INCREMENTAL, DIFFERENTIAL o ALL, indica que el escritor espera que una copia de la versión actual del conjunto de archivos esté disponible después de la restauración de cualquier operación de copia de seguridad. Normalmente, esto significa que si un conjunto de archivos se etiqueta con "copia de seguridad necesaria", todos sus miembros se copiarán en los medios de copia de seguridad durante una copia de seguridad incremental o diferencial, independientemente de cuándo se produjo la última vez que se produjo la copia de seguridad o la modificación.
 
-De forma predeterminada, los conjuntos de archivos se agregan a los componentes con un tipo de copia de seguridad de especificación de archivo de **VSS \_ FSBT \_ All \_ backup \_ required** \| **VSS \_ FSBT \_ All \_ Snapshot \_ required**. Por lo tanto, a menos que un programador del escritor decida no usar el valor predeterminado (al elegir otro tipo de copia de seguridad de especificación de archivo, usar operaciones de archivo parciales o usar archivos diferenciados), los archivos de la mayoría de los conjuntos de archivos se copiarán normalmente en su totalidad en medios de copia de seguridad.
+De forma predeterminada, los conjuntos de archivos se agregan a los componentes con un tipo de copia de seguridad de especificación de archivo **de VSS \_ FSBT \_ ALL BACKUP \_ \_ REQUIRED** \| **VSS \_ FSBT \_ ALL SNAPSHOT \_ \_ REQUIRED**. Por lo tanto, a menos que un desarrollador de escritores decida no usar el valor predeterminado (al elegir otro tipo de copia de seguridad de especificación de archivo, mediante operaciones de archivos parciales o mediante archivos diferenciados), los archivos de la mayoría de los conjuntos de archivos normalmente se copiarán en su totalidad en medios de copia de seguridad.
 
-En este momento, el documento de metadatos del escritor del escritor se rellena completamente con la mayor parte de la información que necesitará un solicitante para iniciar una copia de seguridad diferencial o incremental. La especificación adicional del conjunto de archivos o la información de nivel de archivo para admitir la copia de seguridad se controlará durante el evento [**PrepareForBackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup) .
+En este punto, el documento de metadatos del escritor se rellena completamente con la mayor parte de la información que un solicitante necesitará para iniciar una copia de seguridad diferencial o incremental. La especificación adicional del conjunto de archivos o la información de nivel de archivo para admitir la copia de seguridad se controlará durante el [**evento PrepareForBackup.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup)
 
-## <a name="handling-prepareforbackup-events-during-incremental-and-differential-backups"></a>Control de eventos PrepareForBackup durante las copias de seguridad incrementales y diferenciales
+## <a name="handling-prepareforbackup-events-during-incremental-and-differential-backups"></a>Control de eventos PrepareForBackup durante copias de seguridad incrementales y diferenciales
 
-Antes de que el solicitante continúe con la operación de copia de seguridad real, los escritores pueden modificar la especificación de una copia de seguridad [*incremental*](vssgloss-i.md) o [*diferencial*](vssgloss-d.md) mediante la modificación del documento de componentes de copia de seguridad del solicitante a través de la interfaz [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) .
+Antes de que el solicitante continúe con la operación de copia [](vssgloss-d.md) de seguridad real, los escritores pueden modificar la especificación de una copia de seguridad [*incremental*](vssgloss-i.md) o diferencial modificando el documento de componentes de copia de seguridad del solicitante a través de la interfaz [**IVssComponent.**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent)
 
-Dado que los escritores usan la interfaz [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) , normalmente realizan estos preparativos al controlar el evento [**PrepareForBackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup) .
+Dado que los escritores usan la [**interfaz IVssComponent,**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) normalmente realizan estos preparativos mientras se administra [**el evento PrepareForBackup.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup)
 
-En [**CVssWriter: OnPrepareBackup**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpreparebackup), los escritores pueden especificar con mayor precisión el modo en que algunos archivos se van a evaluar para la copia de seguridad, especificar qué mecanismos deben usarse para realizar copias de seguridad y, posiblemente, establecer marcas de copia de seguridad.
+En [**CVssWriter:OnPrepareBackup,**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpreparebackup)los escritores pueden especificar con más precisión cómo se van a evaluar algunos archivos para la copia de seguridad, especificar qué mecanismos se deben usar para realizar copias de seguridad y, posiblemente, establecer marcas de copia de seguridad.
 
 <dl> <dt>
 
 <span id="Partial_Files"></span><span id="partial_files"></span><span id="PARTIAL_FILES"></span>Archivos parciales
 </dt> <dd>
 
-Si un solicitante los admite, un escritor puede elegir tener una copia de seguridad incremental o diferencial implementada mediante operaciones de archivo parciales. (Los escritores pueden determinar si un solicitante admite operaciones de archivo parciales mediante una llamada a [**CVssWriter:: IsPartialFileSupportEnabled**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-ispartialfilesupportenabled)).
+Si un solicitante los admite, un escritor puede optar por implementar una copia de seguridad incremental o diferencial mediante operaciones de archivo parciales. (Los escritores pueden determinar si un solicitante admite operaciones de archivos parciales llamando a [**CVssWriter::IsPartialFileSupportEnabled).**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-ispartialfilesupportenabled)
 
-Los escritores usan [**IVssComponent:: AddPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-addpartialfile) para indicar las partes de los archivos seleccionados de los que se va a realizar una copia de seguridad durante la operación diferencial o incremental. Los solicitantes deben respetar esta especificación y siempre deben realizar copias de seguridad de las secciones especificadas de los archivos. (Consulte [trabajar con archivos parciales](working-with-partial-files.md) para obtener más información sobre las operaciones de archivo parciales).
+Los escritores [**usan IVssComponent::AddPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-addpartialfile) para indicar las partes de los archivos seleccionados de los que se va a realizar una copia de seguridad durante la operación incremental o diferencial. Los solicitantes deben respetar esta especificación y siempre deben hacer una copia de seguridad de las secciones especificadas de los archivos. (Vea [Trabajar con archivos parciales para](working-with-partial-files.md) obtener más información sobre las operaciones de archivos parciales).
 
-Mediante [**IVssComponent:: AddPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-addpartialfile), un escritor puede Agregar un archivo a la copia de seguridad que no se agregó previamente a uno de sus conjuntos de componentes (por [**IVssCreateWriterMetadata:: AddDatabaseFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabasefiles), [**IVssCreateWriterMetadata:: AddDatabaseLogFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabaselogfiles)o [**IVssCreateWriterMetadata:: AddFilesToFileGroup**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addfilestofilegroup)) como un archivo parcial. Los archivos nuevos que se agreguen a la copia de seguridad de esta manera deben estar en un volumen del que ya se estén realizando instantáneas para esta copia de seguridad.
+Mediante [**IVssComponent::AddPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-addpartialfile), un escritor puede agregar un archivo a la copia de seguridad que no se agregó previamente a uno de sus conjuntos de componentes (por [**IVssCreateWriterMetadata::AddDatabaseFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabasefiles), [**IVssCreateWriterMetadata::AddDatabaseLogFiles o**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabaselogfiles) [**IVssCreateWriterMetadata::AddFilesToFileGroup)**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addfilestofilegroup)como un archivo parcial. Los archivos nuevos agregados a la copia de seguridad de esta manera deben estar en un volumen que ya se está copiando en la sombra para esta copia de seguridad.
 
-Si un archivo está implicado en operaciones de archivo parcial, reemplaza cualquier tipo de copia de seguridad de especificación de archivo, que se omite.
+Si un archivo está implicado en operaciones de archivo parciales, sustituye a cualquier tipo de copia de seguridad de especificación de archivo, que se omite.
 
 </dd> <dt>
 
 <span id="Differenced_Files"></span><span id="differenced_files"></span><span id="DIFFERENCED_FILES"></span>Archivos diferenciados
 </dt> <dd>
 
-Los escritores que admiten un esquema de copia de seguridad de última modificación (**\_ \_ esquema de VSS BS**) pueden agregar [*archivos diferenciados*](vssgloss-d.md) a una copia de seguridad incremental o diferencial.
+Los escritores que admiten un esquema de copia [](vssgloss-d.md) de seguridad modificado por última vez (ESQUEMA DE **\_ VSS BS) \_** pueden agregar archivos diferenciados a una copia de seguridad incremental o diferencial.
 
-En la especificación de un archivo diferenciado, un escritor usa [**IVssComponent:: AddDifferencedFileByLastModifyTime**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-adddifferencedfilesbylastmodifytime) y especifica una ruta de acceso, un nombre de archivo y una marca recursiva; sin embargo, no es necesario que coincidan con un conjunto de archivos incluido en ningún componente.
+Al especificar un archivo diferenciado, un escritor usa [**IVssComponent::AddDifferencedFileByLastModifyTime**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-adddifferencedfilesbylastmodifytime) y especifica una ruta de acceso, un nombre de archivo y una marca recursiva; sin embargo, no tienen que coincidir con un conjunto de archivos incluido en ningún componente.
 
-De hecho, un escritor puede Agregar un archivo que no se haya agregado previamente a uno de sus conjuntos de componentes (por [**IVssCreateWriterMetadata:: AddDatabaseFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabasefiles), [**IVssCreateWriterMetadata:: AddDatabaseLogFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabaselogfiles)o [**IVssCreateWriterMetadata:: AddFilesToFileGroup**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addfilestofilegroup)) a la copia de seguridad como un archivo diferenciado. Los archivos nuevos que se agreguen a la copia de seguridad de esta manera deben estar en un volumen del que ya se estén realizando instantáneas para esta copia de seguridad.
+De hecho, un escritor puede agregar un archivo no agregado previamente a uno de sus conjuntos de componentes (por [**IVssCreateWriterMetadata::AddDatabaseFiles,**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabasefiles) [**IVssCreateWriterMetadata::AddDatabaseLogFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabaselogfiles)o [**IVssCreateWriterMetadata::AddFilesToFileGroup)**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addfilestofilegroup)a la copia de seguridad como un archivo diferenciado. Los archivos nuevos agregados a la copia de seguridad de esta manera deben estar en un volumen que ya se está copiando en la sombra para esta copia de seguridad.
 
-Normalmente, un sistema de escritura también especificará una hora de última modificación al agregar un archivo diferenciado, en función del propio mecanismo de historial del escritor. La hora de la última modificación, si se especifica, siempre debe ser utilizada por los solicitantes para determinar si un archivo debe incluirse en una copia de seguridad incremental o diferencial.
+Normalmente, un escritor también especificará la hora de la última modificación al agregar un archivo diferenciado, en función del mecanismo de historial propio del escritor. Esta hora de última modificación, si se especifica, siempre debe ser utilizada por los solicitantes para determinar si un archivo debe incluirse en una copia de seguridad incremental o diferencial.
 
-Un escritor puede optar por no especificar una hora de última modificación al agregar un archivo diferenciado a un conjunto de copia de seguridad incremental o diferencial. Si este es el caso, los solicitantes pueden usar sus propios mecanismos, por ejemplo, registros de copias de seguridad anteriores o información del sistema de archivos, para determinar si el archivo diferenciado debe incluirse en una copia de seguridad incremental o diferencial.
+Un escritor puede optar por no especificar una hora de última modificación al agregar un archivo diferenciado a un conjunto de copia de seguridad incremental o diferencial. Si este es el caso, los solicitantes pueden usar sus propios mecanismos (por ejemplo, registros de copias de seguridad anteriores o información del sistema de archivos) para determinar si el archivo diferenciado debe incluirse en una copia de seguridad incremental o diferencial.
 
 Se omite el tipo de copia de seguridad de especificación de archivo de cualquier archivo diferenciado.
 
@@ -94,17 +94,17 @@ Se omite el tipo de copia de seguridad de especificación de archivo de cualquie
 <span id="Backup_Stamps"></span><span id="backup_stamps"></span><span id="BACKUP_STAMPS"></span>Marcas de copia de seguridad
 </dt> <dd>
 
-Los escritores que admiten marcas de copia de seguridad (**VSS \_ BS \_ timestamp**) tienen su propio formato privado para almacenar información sobre cuándo se produjo una copia de seguridad por última vez. El escritor genera esta información durante la copia de seguridad.
+Los escritores que admiten marcas de copia de seguridad **\_ (VSS BS \_ TIMESTAMP)** tienen su propio formato privado para almacenar información sobre cuándo se produjo una última copia de seguridad. El escritor genera esta información durante la copia de seguridad.
 
-El sello de copia de seguridad se almacena en el documento componentes de copia de seguridad como una cadena mediante el método [**IVssComponent:: SetBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupstamp) . La marca de copia de seguridad se aplica a todos los conjuntos de archivos del componente (o conjunto de componentes) correspondientes a la instancia de [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent).
+El método [**IVssComponent::SetBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupstamp) almacena la marca de copia de seguridad en el documento de componentes de copia de seguridad como una cadena. La marca de copia de seguridad se aplica a todos los conjuntos de archivos del componente (o conjunto de componentes) correspondientes a la instancia de [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent).
 
-Si un solicitante tiene acceso al sello de copia de seguridad de una copia de seguridad anterior, lo hará disponible para el escritor llamando a [**IVssBackupComponents:: SetPreviousBackupStamp**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setpreviousbackupstamp).
+Si un solicitante tiene acceso a la marca de copia de seguridad de una copia de seguridad anterior, habrá puestola a disposición del escritor mediante una llamada a [**IVssBackupComponents::SetPreviousBackupStamp**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setpreviousbackupstamp).
 
-Después, un escritor puede examinar esta marca de tiempo mediante [**IVssComponent:: GetPreviousBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpreviousbackupstamp).
+A continuación, un escritor puede examinar esta marca de tiempo [**mediante IVssComponent::GetPreviousBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpreviousbackupstamp).
 
-Tenga en cuenta que el solicitante simplemente almacena y devuelve la cadena que contiene el sello de la copia de seguridad. No se sabe nada sobre el formato de la cadena o cómo usarlo; solo el escritor tiene esa información.
+Tenga en cuenta que el solicitante simplemente almacena y devuelve la cadena que contiene la marca de copia de seguridad. No sabe nada sobre el formato de la cadena ni cómo usarlo. solo el escritor tiene esa información.
 
-Un escritor puede optar por actualizar el sello de copia de seguridad actual mediante [**IVssComponent:: SetBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupstamp) después de haber llamado a [**IVssComponent:: GetPreviousBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpreviousbackupstamp), con lo que se graba en su propio formato la fecha de la operación de copia de seguridad incremental o diferencial actual.
+Un escritor puede optar por actualizar la marca de copia de seguridad actual mediante [**IVssComponent::SetBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupstamp) después de llamar a [**IVssComponent::GetPreviousBackupStamp,**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpreviousbackupstamp)registrando así en su propio formato la fecha de la operación de copia de seguridad incremental o diferencial actual.
 
 </dd> </dl>
 

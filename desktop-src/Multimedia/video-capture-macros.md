@@ -4,15 +4,15 @@ description: Macros de captura de vídeo
 ms.assetid: 21061f06-d58b-4800-a9f5-9821494fabd6
 keywords:
 - Vídeo para Windows (VFW), macros de captura de vídeo
-- VFW (vídeo para Windows), macros de captura de vídeo
+- VFW (vídeo para Windows),macros de captura de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78d822485e3f774046f94126f9cc51a4403e4331
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c6aa4b92776d14216e61c3624efdb38b55e7db9c974143be0d1223bc7475f6af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892115"
 ---
 # <a name="video-capture-macros"></a>Macros de captura de vídeo
 
@@ -81,9 +81,9 @@ Las macros siguientes se usan con la captura de vídeo.
 [Referencia de captura de vídeo](video-capture-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

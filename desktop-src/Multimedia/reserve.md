@@ -1,9 +1,9 @@
 ---
-title: Reserve (comando)
-description: El comando Reserve asigna espacio en disco contiguo para el área de trabajo de la instancia del dispositivo. Los dispositivos de vídeo digital reconocen este comando.
+title: comando reserve
+description: El comando reserve asigna espacio en disco contiguo para el área de trabajo de la instancia del dispositivo. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: ac4fc75e-82d0-4817-a5cf-a77996bc69e2
 keywords:
-- comando Reserve de Windows multimedia
+- comando reserve Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f71889af552b9040777394047a0facfc6c81366
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83f4573f5a630bbf1243b7126867c2d6c6beef61810210624fe87958e12b02ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892925"
 ---
-# <a name="reserve-command"></a>Reserve (comando)
+# <a name="reserve-command"></a>comando reserve
 
-El comando Reserve asigna espacio en disco contiguo para el área de trabajo de la instancia del dispositivo. Los dispositivos de vídeo digital reconocen este comando.
+El comando reserve asigna espacio en disco contiguo para el área de trabajo de la instancia del dispositivo. Los dispositivos de vídeo digital reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -55,8 +55,8 @@ Una o varias de las marcas siguientes.
 
 | Value           | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| en *ruta de acceso*       | Especifica la unidad y la ruta de acceso del directorio (pero no el nombre) de un archivo temporal que se usa para almacenar los datos registrados. El dispositivo especifica el nombre de este archivo. El archivo temporal se elimina cuando se cierra el dispositivo. Si se omite esta marca, el dispositivo especifica la ubicación del espacio en disco.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| *duración* del tamaño | Especifica la cantidad aproximada de espacio en disco que se va a reservar en el área de trabajo. El valor *Duration* se especifica en el formato de hora actual. El dispositivo basa su estimación del espacio en disco necesario en los parámetros siguientes: la hora solicitada, el formato de archivo, el algoritmo de compresión de audio y vídeo, y los valores de calidad de compresión en vigor. Si [setvideo](setvideo.md) "registro" es "desactivado", el espacio solo se reserva para el audio. Si [SetAudio](setaudio.md) "registro" es "desactivado", el espacio solo se reserva para vídeo. Si ambos son "OFF", o si *Duration* es cero, no se reserva ningún espacio y se cancela la asignación de cualquier espacio reservado existente. Si se omite esta marca, el dispositivo usará un valor predeterminado definido por el dispositivo. |
+| en la *ruta de acceso*       | Especifica la unidad y la ruta de acceso del directorio (pero no el nombre) de un archivo temporal que se usa para contener los datos registrados. El dispositivo especifica el nombre de este archivo. El archivo temporal se elimina cuando se cierra el dispositivo. Si se omite esta marca, el dispositivo especifica la ubicación del espacio en disco.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| duración *del tamaño* | Especifica la cantidad aproximada de espacio en disco que se reserva en el área de trabajo. El *valor* de duración se especifica en el formato de hora actual. El dispositivo basa su estimación del espacio en disco necesario en los parámetros siguientes: la hora solicitada, el formato de archivo, el algoritmo de compresión de audio y vídeo y los valores de calidad de compresión en vigor. Si [setvideo](setvideo.md) "record" está "desactivado", el espacio se reserva solo para audio. Si [setaudio](setaudio.md) "record" está "desactivado", el espacio se reserva solo para vídeo. Si ambos están "desactivados" o si *la* duración es cero, no se reserva ningún espacio y se desasigna cualquier espacio reservado existente. Si se omite esta marca, el dispositivo usará un valor predeterminado definido por el dispositivo. |
 
 
 
@@ -67,17 +67,17 @@ Una o varias de las marcas siguientes.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify", "Test" o una combinación de estos. Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si es necesario, los comandos [registro](record.md) o [Guardar](save.md) subsiguientes usan el espacio reservado por este comando. Si el área de trabajo contiene datos no guardados, se perderán los datos. Algunos dispositivos no requieren reserva y lo omiten. Si no se reserva espacio en disco antes de la grabación, el comando de registro realiza una reserva implícita con las marcas predeterminadas específicas del dispositivo. Use un comando de reserva explícito si desea tener un mayor control sobre cuándo se produce el retraso de la asignación de disco, el control de cuánto espacio se asigna y el control de dónde se asigna el espacio en disco. La aplicación puede cambiar la cantidad y la ubicación del espacio en disco reservado previamente con comandos de reserva posteriores. Cualquier espacio en disco asignado y todavía sin usar no se cancela hasta que se guardan los datos grabados, o hasta que se cierra la instancia del dispositivo.
+Si es necesario, [los comandos de](record.md) registro [o](save.md) guardado posteriores usan el espacio reservado por este comando. Si el área de trabajo contiene datos no guardados, los datos se pierden. Algunos dispositivos no requieren reserva y la omiten. Si el espacio en disco no está reservado antes de la grabación, el comando record realiza una reserva implícita con marcas predeterminadas específicas del dispositivo. Use un comando de reserva explícito si desea un mejor control de cuándo se produce el retraso en la asignación de disco, el control de la cantidad de espacio asignado y el control de dónde se asigna el espacio en disco. La aplicación puede cambiar la cantidad y la ubicación del espacio en disco previamente reservado con los comandos de reserva posteriores. Cualquier espacio en disco asignado y sin usar no se desasigna hasta que se guarden los datos registrados o hasta que se cierre la instancia del dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,10 +94,10 @@ Si es necesario, los comandos [registro](record.md) o [Guardar](save.md) subsigu
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> <dt>
 
 [record](record.md)

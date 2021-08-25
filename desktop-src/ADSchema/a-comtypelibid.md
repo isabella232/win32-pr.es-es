@@ -1,11 +1,11 @@
 ---
-title: Atributo COM-typelib-ID
-description: Este atributo almacena la lista de identificadores de biblioteca de tipos que contiene este paquete de aplicación.
+title: Atributo COM-Typelib-Id
+description: Este atributo almacena la lista de id. de biblioteca de tipos incluidos en este paquete de aplicación.
 ms.assetid: 3dcd2d1f-8b6d-46f6-9707-4af006f0e610
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de ID. de biblioteca COM-typelib
-- cOMTypelibId esquema de AD de atributos
+- Esquema de AD del atributo COM-Typelib-Id
+- Esquema de AD del atributo cOMTypelibId
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0be116963137dcdba4d97aa3de751bdf7308c335
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6d9e639490336895c4ce0213fcda74b47c7b2e9f97435f8445c6ac1d686c5424
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805315"
 ---
-# <a name="com-typelib-id-attribute"></a>Atributo COM-typelib-ID
+# <a name="com-typelib-id-attribute"></a>Atributo COM-Typelib-Id
 
-Este atributo almacena la lista de identificadores de biblioteca de tipos que contiene este paquete de aplicación.
+Este atributo almacena la lista de id. de biblioteca de tipos incluidos en este paquete de aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Identificador de typelib de COM                                                                   |
-| Nombre para mostrar de LDAP | cOMTypelibId                                                                     |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Cualquier usuario puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
+| CN                | COM-Typelib-Id                                                                   |
+| Ldap-Display-Name | cOMTypelibId                                                                     |
+| Size              | \-                                                                               |
+| Privilegio actualizar  | Cualquier persona puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
 | Frecuencia de actualización  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.254                                                           |
-| System-ID-GUID    | 281416de-1968-11d0-a28f-00aa003049e2                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 281416de-1968-11d0-a28f-00aa003049e2                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -55,18 +55,18 @@ Este atributo almacena la lista de identificadores de biblioteca de tipos que co
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Este atributo almacena la lista de identificadores de biblioteca de tipos que co
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo almacena la lista de identificadores de biblioteca de tipos que co
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo almacena la lista de identificadores de biblioteca de tipos que co
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo almacena la lista de identificadores de biblioteca de tipos que co
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo almacena la lista de identificadores de biblioteca de tipos que co
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 

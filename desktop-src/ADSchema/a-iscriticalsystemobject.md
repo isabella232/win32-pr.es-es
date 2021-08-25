@@ -1,11 +1,11 @@
 ---
-title: Atributo is-Critical-System-Object
+title: Atributo Is-Critical-System-Object
 description: Si es TRUE, el objeto que hospeda este atributo se debe replicar durante la instalación de una nueva réplica.
 ms.assetid: 736c8b25-0f82-4b3c-a4fc-4643cd71474e
 ms.tgt_platform: multiple
 keywords:
-- Is-Critical-System-atributo de objeto esquema de AD
-- isCriticalSystemObject esquema de AD de atributos
+- Esquema de AD del atributo Is-Critical-System-Object
+- Esquema de AD del atributo isCriticalSystemObject
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6030da908fe96a4bea5267872e8bae928a6555e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f7a37e438d67400a285708f4f222821e42fd6e0490bf2cad12301e5c58b7fff3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924885"
 ---
-# <a name="is-critical-system-object-attribute"></a>Atributo is-Critical-System-Object
+# <a name="is-critical-system-object-attribute"></a>Atributo Is-Critical-System-Object
 
-Si **es true**, el objeto que hospeda este atributo se debe replicar durante la instalación de una nueva réplica.
+Si **es TRUE,** el objeto que hospeda este atributo se debe replicar durante la instalación de una nueva réplica.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Is-Critical-System-Object            |
-| Nombre para mostrar de LDAP | isCriticalSystemObject               |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | isCriticalSystemObject               |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.868               |
-| System-ID-GUID    | 00fbf30d-91fe-11d1-aebc-0000f80367c1 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 00fbf30d-91fe-11d1-aebc-0000f80367c1 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -44,7 +44,7 @@ Si **es true**, el objeto que hospeda este atributo se debe replicar durante la 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Si **es true**, el objeto que hospeda este atributo se debe replicar durante la 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,13 +77,13 @@ Si **es true**, el objeto que hospeda este atributo se debe replicar durante la 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Si **es true**, el objeto que hospeda este atributo se debe replicar durante la 
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,13 +119,13 @@ Si **es true**, el objeto que hospeda este atributo se debe replicar durante la 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -140,13 +140,13 @@ Si **es true**, el objeto que hospeda este atributo se debe replicar durante la 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -161,13 +161,13 @@ Si **es true**, el objeto que hospeda este atributo se debe replicar durante la 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -182,13 +182,13 @@ Si **es true**, el objeto que hospeda este atributo se debe replicar durante la 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

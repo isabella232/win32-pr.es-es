@@ -1,7 +1,7 @@
 ---
-description: Los métodos y propiedades de contenedor de interoperabilidad Microsoft. Interop. Security. Azroles. IAzApplication se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM de correlación sigue cada nombre de miembro.
+description: Los métodos y propiedades del contenedor de interoperabilidad Microsoft.Interop.Security.Azroles.IAzApplication se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 ms.assetid: 8c8c18c2-efbd-4893-8b95-510ba4a7a2ef
-title: Interfaz Microsoft. Interop. Security. AzRoles. IAzApplication
+title: Interfaz Microsoft.Interop.Security.AzRoles.IAzApplication
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -173,67 +173,67 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: ec7ef0453ccb9087bf40b3e977bdbb71a4c2865c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5d10617e05df57b6e619097a8586fae1671b1284db3e56a0972f8e3586a1fa5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907955"
 ---
-# <a name="microsoftinteropsecurityazrolesiazapplication-interface"></a>Interfaz Microsoft. Interop. Security. AzRoles. IAzApplication
+# <a name="microsoftinteropsecurityazrolesiazapplication-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzApplication
 
-Los métodos y propiedades de contenedor de interoperabilidad **Microsoft. Interop. Security. Azroles. IAzApplication** se documentan en la versión com del método o propiedad. Un vínculo a la documentación COM de correlación sigue cada nombre de miembro.
+Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzApplication** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzApplication** tiene estos tipos de miembros:
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplication** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzApplication** tiene estos métodos.
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplication** tiene estos métodos.
 
 
 
 | Método                                                                                     | Descripción                                                                                                                    |
 |:-------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzApplication. AddDelegatedPolicyUser**               | [**IAzApplication::AddDelegatedPolicyUser**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-adddelegatedpolicyuser)<br/>                             |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. AddDelegatedPolicyUserName**           | [**IAzApplication::AddDelegatedPolicyUserName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-adddelegatedpolicyusername)<br/>                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. AddPolicyAdministrator**               | [**IAzApplication::AddPolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyadministrator)<br/>                             |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. AddPolicyAdministratorName**           | [**IAzApplication::AddPolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyadministratorname)<br/>                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. AddPolicyReader**                      | [**IAzApplication::AddPolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyreader)<br/>                                           |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. AddPolicyReaderName**                  | [**IAzApplication::AddPolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyreadername)<br/>                                   |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. AddPropertyItem**                      | [**IAzApplication::AddPropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpropertyitem)<br/>                                           |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. CreateApplicationGroup**               | [**IAzApplication::CreateApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createapplicationgroup)<br/>                             |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. CreateOperation**                      | [**IAzApplication:: CreateOperation**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createoperation)<br/>                                           |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. CreateRole**                           | [**IAzApplication:: CreateRole**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createrole)<br/>                                                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. CreateScope**                          | [**IAzApplication::CreateScope**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createscope)<br/>                                                   |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. CreateTask**                           | [**IAzApplication:: CreateTask**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createtask)<br/>                                                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeleteApplicationGroup**               | [**IAzApplication::D eleteApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deleteapplicationgroup)<br/>                             |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeleteDelegatedPolicyUser**            | [**IAzApplication::D eleteDelegatedPolicyUser**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletedelegatedpolicyuser)<br/>                       |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeleteDelegatedPolicyUserName**        | [**IAzApplication::D eleteDelegatedPolicyUserName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletedelegatedpolicyusername)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeleteOperation**                      | [**IAzApplication::D eleteOperation**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deleteoperation)<br/>                                           |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeletePolicyAdministrator**            | [**IAzApplication::D eletePolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyadministrator)<br/>                       |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeletePolicyAdministratorName**        | [**IAzApplication::D eletePolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyadministratorname)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeletePolicyReader**                   | [**IAzApplication::D eletePolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyreader)<br/>                                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeletePolicyReaderName**               | [**IAzApplication::D eletePolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyreadername)<br/>                             |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeletePropertyItem**                   | [**IAzApplication::D eletePropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepropertyitem)<br/>                                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeleteRole**                           | [**IAzApplication::D eleteRole**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deleterole)<br/>                                                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeleteScope**                          | [**IAzApplication::D eleteScope**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletescope)<br/>                                                   |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DeleteTask**                           | [**IAzApplication::D eleteTask**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletetask)<br/>                                                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. GetProperty**                          | [**IAzApplication:: GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-getproperty)<br/>                                                   |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.AddDelegatedPolicyUser**               | [**IAzApplication::AddDelegatedPolicyUser**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-adddelegatedpolicyuser)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.AddDelegatedPolicyUserName**           | [**IAzApplication::AddDelegatedPolicyUserName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-adddelegatedpolicyusername)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.AddPolicyAdministrator**               | [**IAzApplication::AddPolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyadministrator)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.AddPolicyAdministratorName**           | [**IAzApplication::AddPolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyadministratorname)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.AddPolicyReader**                      | [**IAzApplication::AddPolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyreader)<br/>                                           |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.AddPolicyReaderName**                  | [**IAzApplication::AddPolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyreadername)<br/>                                   |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.AddPropertyItem**                      | [**IAzApplication::AddPropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpropertyitem)<br/>                                           |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.CreateApplicationGroup**               | [**IAzApplication::CreateApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createapplicationgroup)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.CreateOperation**                      | [**IAzApplication::CreateOperation**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createoperation)<br/>                                           |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.CreateRole**                           | [**IAzApplication::CreateRole**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createrole)<br/>                                                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.CreateScope**                          | [**IAzApplication::CreateScope**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createscope)<br/>                                                   |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.CreateTask**                           | [**IAzApplication::CreateTask**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createtask)<br/>                                                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeleteApplicationGroup**               | [**IAzApplication::D eleteApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deleteapplicationgroup)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeleteDelegatedPolicyUser**            | [**IAzApplication::D eleteDelegatedPolicyUser**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletedelegatedpolicyuser)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeleteDelegatedPolicyUserName**        | [**IAzApplication::D eleteDelegatedPolicyUserName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletedelegatedpolicyusername)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeleteOperation**                      | [**IAzApplication::D eleteOperation**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deleteoperation)<br/>                                           |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeletePolicyAdministrator**            | [**IAzApplication::D eletePolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyadministrator)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeletePolicyAdministratorName**        | [**IAzApplication::D eletePolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyadministratorname)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeletePolicyReader**                   | [**IAzApplication::D eletePolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyreader)<br/>                                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeletePolicyReaderName**               | [**IAzApplication::D eletePolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyreadername)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeletePropertyItem**                   | [**IAzApplication::D eletePropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepropertyitem)<br/>                                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeleteRole**                           | [**IAzApplication::D eleteRole**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deleterole)<br/>                                                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeleteScope**                          | [**IAzApplication::D eleteScope**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletescope)<br/>                                                   |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DeleteTask**                           | [**IAzApplication::D eleteTask**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletetask)<br/>                                                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.GetProperty**                          | [**IAzApplication::GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-getproperty)<br/>                                                   |
 | **Microsoft.Interop.Security.Azroles.IAzApplication.InitializeClientContextFromName**      | [**IAzApplication::InitializeClientContextFromName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromname)<br/>           |
 | **Microsoft.Interop.Security.Azroles.IAzApplication.InitializeClientContextFromStringSid** | [**IAzApplication::InitializeClientContextFromStringSid**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromstringsid)<br/> |
 | **Microsoft.Interop.Security.Azroles.IAzApplication.InitializeClientContextFromToken**     | [**IAzApplication::InitializeClientContextFromToken**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromtoken)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. OpenApplicationGroup**                 | [**IAzApplication::OpenApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-openapplicationgroup)<br/>                                 |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. OpenOperation**                        | [**IAzApplication::OpenOperation**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-openoperation)<br/>                                               |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. OpenRole**                             | [**IAzApplication::OpenRole**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-openrole)<br/>                                                         |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. OpenScope**                            | [**IAzApplication:: OpenScope**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-openscope)<br/>                                                       |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. OpenTask**                             | [**IAzApplication::OpenTask**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-opentask)<br/>                                                         |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. SetProperty**                          | [**IAzApplication:: SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-setproperty)<br/>                                                   |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. submit**                               | [**IAzApplication:: submit**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-submit)<br/>                                                             |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.OpenApplicationGroup**                 | [**IAzApplication::OpenApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-openapplicationgroup)<br/>                                 |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.OpenOperation**                        | [**IAzApplication::OpenOperation**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-openoperation)<br/>                                               |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.OpenRole**                             | [**IAzApplication::OpenRole**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-openrole)<br/>                                                         |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.OpenScope**                            | [**IAzApplication::OpenScope**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-openscope)<br/>                                                       |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.OpenTask**                             | [**IAzApplication::OpenTask**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-opentask)<br/>                                                         |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.SetProperty**                          | [**IAzApplication::SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-setproperty)<br/>                                                   |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.Submit**                               | [**IAzApplication::Submit**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-submit)<br/>                                                             |
 
 
 
@@ -241,31 +241,31 @@ La interfaz **Microsoft. Interop. Security. AzRoles. IAzApplication** tiene esto
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzApplication** tiene estas propiedades.
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplication** tiene estas propiedades.
 
 
 
 | Propiedad                                                                                  | Tipo de acceso           | Descripción                                                                                                       |
 |:------------------------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzApplication. ApplicationData**<br/>          | Lectura/escritura<br/> | [**Propiedad ApplicationData de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_applicationdata)<br/>                   |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. ApplicationGroups**<br/>        | Solo lectura<br/>  | [**Propiedad ApplicationGroups de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_applicationgroups)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. ApplyStoreSacl**<br/>           | Lectura/escritura<br/> | [**Propiedad ApplyStoreSacl de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_applystoresacl)<br/>                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. AuthzInterfaceClsid**<br/>      | Lectura/escritura<br/> | [**Propiedad AuthzInterfaceClsid de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_authzinterfaceclsid)<br/>           |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DelegatedPolicyUsers**<br/>     | Solo lectura<br/>  | [**Propiedad DelegatedPolicyUsers de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_delegatedpolicyusers)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. DelegatedPolicyUsersName**<br/> | Solo lectura<br/>  | [**Propiedad DelegatedPolicyUsersName de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_delegatedpolicyusersname)<br/> |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. Description**<br/>              | Lectura/escritura<br/> | [**Propiedad Description de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_description)<br/>                           |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. GenerateAudits**<br/>           | Lectura/escritura<br/> | [**Propiedad GenerateAudits de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_generateaudits)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.ApplicationData**<br/>          | Lectura/escritura<br/> | [**Propiedad ApplicationData de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_applicationdata)<br/>                   |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.ApplicationGroups**<br/>        | Solo lectura<br/>  | [**Propiedad ApplicationGroups de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_applicationgroups)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.ApplyStoreSacl**<br/>           | Lectura/escritura<br/> | [**Propiedad ApplyStoreSacl de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_applystoresacl)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.AuthzInterfaceClsid**<br/>      | Lectura/escritura<br/> | [**Propiedad AuthzInterfaceClsid de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_authzinterfaceclsid)<br/>           |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DelegatedPolicyUsers**<br/>     | Solo lectura<br/>  | [**Propiedad DelegatedPolicyUsers de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_delegatedpolicyusers)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.DelegatedPolicyUsersName**<br/> | Solo lectura<br/>  | [**Propiedad DelegatedPolicyUsersName de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_delegatedpolicyusersname)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.Description**<br/>              | Lectura/escritura<br/> | [**Propiedad Description de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_description)<br/>                           |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.GenerateAudits**<br/>           | Lectura/escritura<br/> | [**Propiedad GenerateAudits de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_generateaudits)<br/>                     |
 | **Microsoft.Interop.Security.Azroles.IAzApplication.Name**<br/>                     | Lectura/escritura<br/> | [**Propiedad Name de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_name)<br/>                                         |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. Operations**<br/>               | Solo lectura<br/>  | [**Propiedad Operations de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_operations)<br/>                             |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. PolicyAdministrators**<br/>     | Solo lectura<br/>  | [**Propiedad PolicyAdministrators de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyadministrators)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. PolicyAdministratorsName**<br/> | Solo lectura<br/>  | [**Propiedad PolicyAdministratorsName de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyadministratorsname)<br/> |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. PolicyReaders**<br/>            | Solo lectura<br/>  | [**Propiedad PolicyReaders de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyreaders)<br/>                       |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. PolicyReadersName**<br/>        | Solo lectura<br/>  | [**Propiedad PolicyReadersName de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyreadersname)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. roles**<br/>                    | Solo lectura<br/>  | [**Propiedad roles de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_roles)<br/>                                       |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. Scopes**<br/>                   | Solo lectura<br/>  | [**Propiedad Scopes de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_scopes)<br/>                                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. Tasks**<br/>                    | Solo lectura<br/>  | [**Propiedad Tasks de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_tasks)<br/>                                       |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. version**<br/>                  | Lectura/escritura<br/> | [**Propiedad version de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_version)<br/>                                   |
-| **Microsoft. Interop. Security. Azroles. IAzApplication. grabable**<br/>                 | Solo lectura<br/>  | [**Propiedad de escritura de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_writable)<br/>                                 |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.Operations**<br/>               | Solo lectura<br/>  | [**Propiedad Operations de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_operations)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.PolicyAdministrators**<br/>     | Solo lectura<br/>  | [**Propiedad PolicyAdministrators de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyadministrators)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.PolicyAdministratorsName**<br/> | Solo lectura<br/>  | [**Propiedad PolicyAdministratorsName de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyadministratorsname)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.PolicyReaders**<br/>            | Solo lectura<br/>  | [**Propiedad PolicyReaders de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyreaders)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.PolicyReadersName**<br/>        | Solo lectura<br/>  | [**Propiedad PolicyReadersName de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyreadersname)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.Roles**<br/>                    | Solo lectura<br/>  | [**Propiedad Roles de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_roles)<br/>                                       |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.Scopes**<br/>                   | Solo lectura<br/>  | [**Propiedad Scopes de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_scopes)<br/>                                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.Tasks**<br/>                    | Solo lectura<br/>  | [**Propiedad Tasks de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_tasks)<br/>                                       |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.Version**<br/>                  | Lectura/escritura<br/> | [**Propiedad Version de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_version)<br/>                                   |
+| **Microsoft.Interop.Security.Azroles.IAzApplication.Writable**<br/>                 | Solo lectura<br/>  | [**Propiedad grabable de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_writable)<br/>                                 |
 
 
 

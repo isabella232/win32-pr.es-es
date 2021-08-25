@@ -1,35 +1,35 @@
 ---
-title: Uniones de API Servicios de Escritorio remoto
-description: Las uniones siguientes se usan con la API de Servicios de Escritorio remoto.
+title: Servicios de Escritorio remoto uniones de API
+description: Las siguientes uniones se usan con Servicios de Escritorio remoto API.
 ms.assetid: 31c763f1-72e7-49a0-a87d-749a5b718ac4
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c192ff7dc880c8206f5b7d32eb07ba73ed62d4b7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d5e09574bc01e81f355d8f690935378049be09fab8a0fcfc45149994b5f7009
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865945"
 ---
-# <a name="remote-desktop-services-api-unions"></a>Uniones de API Servicios de Escritorio remoto
+# <a name="remote-desktop-services-api-unions"></a>Servicios de Escritorio remoto uniones de API
 
-Las uniones siguientes se usan con la API de Servicios de Escritorio remoto.
+Las siguientes uniones se usan con Servicios de Escritorio remoto API.
 
 ## <a name="in-this-section"></a>En esta sección
 
 <dl> <dt>
 
-[**nivel de WTSINFOEX \_**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level_a)
+[**NIVEL \_ WTSINFOEX**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level_a)
 </dt> <dd>
 
-Contiene una estructura de [**WTSINFOEX \_ Level1**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level1_a) que contiene información extendida sobre una sesión de servicios de escritorio remoto.
+Contiene una [**estructura WTSINFOEX \_ LEVEL1**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level1_a) que contiene información extendida sobre una Servicios de Escritorio remoto sesión.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

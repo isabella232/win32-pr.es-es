@@ -3,7 +3,7 @@ title: Atributo ProviderLogoURL
 description: El atributo ProviderLogoURL es la dirección del logotipo del proveedor de los valores de atributo.
 ms.assetid: 4f50faf5-1a6f-4f14-b849-265dcf412d3e
 keywords:
-- ProviderLogoURL Media Player de Windows
+- Atributo ProviderLogoURL Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,27 +12,27 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7fb479cc12775b87167fdae35d20d59f8b60a07
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c86154aba55d83d7fd6aca5910ec41456127b6205515c8563c31f805378006c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861905"
 ---
 # <a name="providerlogourl-attribute"></a>Atributo ProviderLogoURL
 
-El atributo **ProviderLogoURL** es la dirección del logotipo del proveedor de los valores de atributo.
+El **atributo ProviderLogoURL** es la dirección del logotipo del proveedor de los valores de atributo.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 -   [DVDs](dvd-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo solo se almacena en la base de datos (o caché) de la biblioteca.
+Este atributo solo se almacena en la base de datos de biblioteca (o caché).
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,7 +40,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -48,7 +48,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

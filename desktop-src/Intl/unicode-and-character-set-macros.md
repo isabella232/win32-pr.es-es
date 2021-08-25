@@ -1,21 +1,21 @@
 ---
-description: La siguiente macro permite compilar el mismo código fuente para las aplicaciones de la página de códigos de Windows (ANSI) o Unicode.
+description: La macro siguiente permite compilar el mismo código fuente para Windows de códigos (ANSI) o aplicaciones Unicode.
 ms.assetid: dd4930db-229f-4917-b7ca-d619e7e4564d
-title: Macros de Unicode y juegos de caracteres
+title: Macros Unicode y juego de caracteres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c7e685062e6169e4d3584c6e4f73e34417d0442
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34df3238551b556ca800d7bc15217bc3a284e1c427c05b39617ed8f05fbc6e28
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829285"
 ---
-# <a name="unicode-and-character-set-macros"></a>Macros de Unicode y juegos de caracteres
+# <a name="unicode-and-character-set-macros"></a>Macros Unicode y juego de caracteres
 
-La siguiente macro permite compilar el mismo código fuente para las aplicaciones de la [Página de códigos de Windows](code-pages.md) (ANSI) o [Unicode](unicode.md) .
+La macro siguiente permite compilar el mismo código fuente para Windows [de códigos (ANSI)](code-pages.md) o [aplicaciones Unicode.](unicode.md)
 
-[**NEGRITA**](/windows/desktop/api/Winnt/nf-winnt-text)
+[**Texto**](/windows/desktop/api/Winnt/nf-winnt-text)
 
  
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DNS-DS-record-Set-TTL
-description: Un atributo que define el valor de período de vida (TTL) asignado a los registros de DS al firmar la zona DNS.
+title: Atributo ms-DNS-DS-Record-Set-TTL
+description: Atributo que define el valor de período de vida (TTL) asignado a los registros DS al firmar la zona DNS.
 ms.assetid: fd8eca7c-9b54-4a18-80a3-c01f9053f4a0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DNS-DS-record-Set-TTL
-- msDN-DSRecordSetTTL atributo AD Schema
+- ms-DNS-DS-Record-Set-TTL attribute AD Schema
+- Esquema de AD del atributo msDNS-DSRecordSetTTL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2a317709df6a373f997bd3d93add1cf0642a53
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 84b2addb8507f77617d4db8f1ba7c6bdee6b3bc5df03b087cffe10169ba675ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924464"
 ---
-# <a name="ms-dns-ds-record-set-ttl-attribute"></a>atributo MS-DNS-DS-record-Set-TTL
+# <a name="ms-dns-ds-record-set-ttl-attribute"></a>Atributo ms-DNS-DS-Record-Set-TTL
 
-Un atributo que define el valor de período de vida (TTL) asignado a los registros de DS al firmar la zona DNS.
+Atributo que define el valor de período de vida (TTL) asignado a los registros DS al firmar la zona DNS.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | MS-DNS-DS-record-Set-TTL             |
-| Nombre para mostrar de LDAP | msDN: DSRecordSetTTL                 |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DNS-DS-Record-Set-TTL             |
+| Ldap-Display-Name | msDNS-DSRecordSetTTL                 |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2140              |
-| System-ID-GUID    | 29869b7c-64c4-42fe-97d5-fbc2fa124160 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 29869b7c-64c4-42fe-97d5-fbc2fa124160 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -50,13 +50,13 @@ Un atributo que define el valor de período de vida (TTL) asignado a los registr
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | 0                                        |
 | Range-Upper            | 2592000                                  |
 | Search-Flags           | 0x00000008                               |

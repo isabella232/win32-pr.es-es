@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM ConnectorOnPackage representa una asociación que hace explícita la relación de contención entre los conectores y los paquetes. Los paquetes físicos contienen conectores y otros elementos físicos.
+description: La clase CIM \_ ConnectorOnPackage representa una asociación que hace explícita la relación de contención entre conectores y paquetes. Los paquetes físicos contienen conectores, así como otros elementos físicos.
 ms.assetid: 67cfb8c7-b952-452c-aeb4-0f06b2b0570b
 ms.tgt_platform: multiple
-title: CIM_ConnectorOnPackage (clase)
+title: CIM_ConnectorOnPackage clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9dfac5cf2daa19f1d3c073ac65d30fa859d2523b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a135d70fcac745591b8d08ea4d116cde1e74f2276f0dd1ec839b05f569fec37d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924925"
 ---
-# <a name="cim_connectoronpackage-class"></a>\_Clase ConnectorOnPackage de CIM
+# <a name="cim_connectoronpackage-class"></a>Clase \_ Cim ConnectorOnPackage
 
-La clase **CIM \_ ConnectorOnPackage** representa una asociación que hace explícita la relación de contención entre los conectores y los paquetes. Los paquetes físicos contienen conectores y otros elementos físicos.
+La **clase CIM \_ ConnectorOnPackage** representa una asociación que hace explícita la relación de contención entre conectores y paquetes. Los paquetes físicos contienen conectores, así como otros elementos físicos.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -49,13 +49,13 @@ class CIM_ConnectorOnPackage : CIM_Container
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ConnectorOnPackage** tiene estos tipos de miembros:
+La **clase \_ CIM ConnectorOnPackage** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ConnectorOnPackage** tiene estas propiedades.
+La **clase CIM \_ ConnectorOnPackage** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -68,10 +68,10 @@ Tipo de datos: **CIM \_ PhysicalPackage**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Un [**\_ PhysicalPackage de CIM**](cim-physicalpackage.md) que describe el paquete físico que tiene un conector.
+Un [**paquete \_ físico CIM**](cim-physicalpackage.md) que describe el paquete físico que tiene un conector.
 
 </dd> <dt>
 
@@ -84,9 +84,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena de forma libre que representa la posición del elemento físico en el paquete físico. La información relativa a los elementos estacionarios del contenedor (por ejemplo, "segunda Bahía de unidad de la parte superior"), ángulos, altitudes y otros datos se puede grabar en esta propiedad. Esta cadena se puede complementar o utilizar en lugar de crear una instancia del objeto de [**\_ Ubicación CIM**](cim-location.md) .
+Cadena de forma libre que representa el posicionamiento del elemento físico dentro del paquete físico. En esta propiedad se puede registrar información relativa a los elementos estacionados del contenedor (por ejemplo, "second drive bay from the top"), ángulos, altitudes y otros datos. Esta cadena podría complementar o usarse en lugar de crear instancias del [**objeto Cim \_ Location.**](cim-location.md)
 
-Esta propiedad se hereda del [**\_ contenedor CIM**](cim-container.md).
+Esta propiedad se hereda del [**contenedor CIM \_**](cim-container.md).
 
 </dd> <dt>
 
@@ -99,20 +99,20 @@ Tipo de datos: **CIM \_ PhysicalConnector**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Un [**\_ PhysicalConnector de CIM**](cim-physicalconnector.md) que describe el conector físico.
+Un [**conector \_ físico CIM**](cim-physicalconnector.md) que describe el conector físico.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ ConnectorOnPackage** se deriva del [**\_ contenedor CIM**](cim-container.md).
+La **clase CIM \_ ConnectorOnPackage** se deriva del [**contenedor CIM \_**](cim-container.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,8 +122,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -132,7 +132,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_Contenedor CIM**](cim-container.md)
+[**Contenedor \_ CIM**](cim-container.md)
 </dt> </dl>
 
  

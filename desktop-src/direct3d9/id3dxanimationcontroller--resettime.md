@@ -1,7 +1,7 @@
 ---
-description: Restablece el tiempo de la animación global en cero. Los eventos pendientes conservarán las programaciones originales, pero en el nuevo período de tiempo.
+description: Restablece el tiempo de animación global a cero. Los eventos pendientes conservarán sus programaciones originales, pero en el nuevo período de tiempo.
 ms.assetid: 70b073ec-ef97-4af4-9f42-b6a6cc13605f
-title: 'ID3DXAnimationController:: ResetTime (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::ResetTime (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1206cc8514f3e7eb235f1072bf2a66c4b5bf1e7b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a3f5f4ba6f10d5119e479a56e9e207e410b2d1e817d6809e7ceac1c98c8d2ee5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893745"
 ---
-# <a name="id3dxanimationcontrollerresettime-method"></a>ID3DXAnimationController:: ResetTime (método)
+# <a name="id3dxanimationcontrollerresettime-method"></a>Método ID3DXAnimationController::ResetTime
 
-Restablece el tiempo de la animación global en cero. Los eventos pendientes conservarán las programaciones originales, pero en el nuevo período de tiempo.
+Restablece el tiempo de animación global a cero. Los eventos pendientes conservarán sus programaciones originales, pero en el nuevo período de tiempo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se utiliza normalmente cuando el valor de tiempo de animación global está cerca de la precisión máxima del almacenamiento doble o 2 ⁶ ⁴-1.
+Este método se usa normalmente cuando el valor de tiempo de animación global se acerca a la precisión máxima del almacenamiento DOUBLE, o 2⁶⁴ - 1.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método se utiliza normalmente cuando el valor de tiempo de animación glob
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

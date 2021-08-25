@@ -1,12 +1,12 @@
 ---
-title: Método SchedulePatch de la clase Win32_RDMSVirtualDesktopCollection
-description: Programa un trabajo de aprovisionamiento de actualizaciones de software que instala las actualizaciones de software en las máquinas virtuales de una colección de escritorios virtuales.
+title: Método SchedulePatch de la clase Win32_RDMSVirtualDesktopCollection programación
+description: Programa un trabajo de aprovisionamiento de actualizaciones de software que instala actualizaciones de software en las máquinas virtuales de una colección de escritorios virtuales.
 ms.assetid: 780d5709-9e7d-41d9-a4d0-b5d021615655
 ms.tgt_platform: multiple
 keywords:
 - Método SchedulePatch Servicios de Escritorio remoto
-- Método SchedulePatch Servicios de Escritorio remoto, clase Win32_RDMSVirtualDesktopCollection
-- Win32_RDMSVirtualDesktopCollection de clase Servicios de Escritorio remoto, método SchedulePatch
+- Método SchedulePatch Servicios de Escritorio remoto , Win32_RDMSVirtualDesktopCollection clase
+- Win32_RDMSVirtualDesktopCollection clase Servicios de Escritorio remoto , método SchedulePatch
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d9585e3d13ea1f02115506741c153d62c33fcc8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb29eb42f0f1d13ff1bf234c6fb41b8f414317a4b723af9a6d215cf25fa2ec95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865515"
 ---
-# <a name="schedulepatch-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método SchedulePatch de la \_ clase RDMSVirtualDesktopCollection de Win32
+# <a name="schedulepatch-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método SchedulePatch de la clase \_ RDMSVirtualDesktopCollection de Win32
 
-Programa un trabajo de aprovisionamiento de actualizaciones de software que instala las actualizaciones de software en las máquinas virtuales de una colección de escritorios virtuales.
+Programa un trabajo de aprovisionamiento de actualizaciones de software que instala actualizaciones de software en las máquinas virtuales de una colección de escritorios virtuales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,26 +45,26 @@ uint32 SchedulePatch(
 
 <dl> <dt>
 
-*StartTime* \[ de\]
+*StartTime* \[ En\]
 </dt> <dd>
 
 > [!Note]  
-> El sistema no cerrará la sesión de los usuarios de las máquinas virtuales hasta la hora especificada en el parámetro *ForceLogOffTime* .
+> El sistema no cerrará la sesión de los usuarios de las máquinas virtuales hasta la hora especificada en el *parámetro ForceLogOffTime.*
 
  
 
-Fecha y hora de instalación de las actualizaciones.
+Fecha y hora en que se instalarán las actualizaciones.
 
 </dd> <dt>
 
-*ForceLogOffTime* \[ de\]
+*ForceLogOffTime* \[ En\]
 </dt> <dd>
 
 Fecha y hora en que el sistema cerrará la sesión de los usuarios de las máquinas virtuales.
 
 </dd> <dt>
 
-*JobInputXml* \[ de\]
+*JobInputXml* \[ En\]
 </dt> <dd>
 
 Cadena con formato XML que contiene la información del trabajo de actualización de software.
@@ -73,7 +73,7 @@ Cadena con formato XML que contiene la información del trabajo de actualizació
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -93,7 +93,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
+[**RDMSVirtualDesktopCollection de Win32 \_**](win32-rdmsvirtualdesktopcollection.md)
 </dt> </dl>
 
  

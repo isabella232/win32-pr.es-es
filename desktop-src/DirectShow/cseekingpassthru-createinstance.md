@@ -1,7 +1,7 @@
 ---
-description: El método CreateInstance crea una instancia del objeto. Este método admite la creación del objeto a través de un generador de clases. Para obtener más información, vea CFactoryTemplate.
+description: El método CreateInstance crea una instancia del objeto . Este método admite la creación del objeto a través de un generador de clases. Para obtener más información, vea CFactoryTemplate.
 ms.assetid: 88dfa933-6fa1-4b57-8b0d-579233fa960c
-title: Método CSeekingPassThru. CreateInstance (Seekpt. h)
+title: Método CSeekingPassThru.CreateInstance (Seekpt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3640cbd6a0a3e582899e7f5cd349ca48498f3532
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5060e2e9842022d89c49e01b56967a92b71c5752e01239fd970c881ccb509cbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908065"
 ---
-# <a name="cseekingpassthrucreateinstance-method"></a>CSeekingPassThru. CreateInstance (método)
+# <a name="cseekingpassthrucreateinstance-method"></a>Método CSeekingPassThru.CreateInstance
 
-El `CreateInstance` método crea una instancia del objeto. Este método admite la creación del objeto a través de un generador de clases. Para obtener más información, vea [**CFactoryTemplate**](cfactorytemplate.md).
+El `CreateInstance` método crea una instancia del objeto . Este método admite la creación del objeto a través de un generador de clases. Para obtener más información, [**vea CFactoryTemplate**](cfactorytemplate.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,23 +43,23 @@ static CUnknown* CreateInstance(
 
 <dl> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero al propietario de este objeto. Si se agrega el objeto, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **null**.
+Puntero al propietario de este objeto. Si el objeto se agrega, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **NULL.**
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a un valor **HRESULT** . ignorado.
+Puntero a un **valor HRESULT.** ignorado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero a un nuevo objeto **CSeekingPassThru** .
+Devuelve un puntero a un nuevo **objeto CSeekingPassThru.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Devuelve un puntero a un nuevo objeto **CSeekingPassThru** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Seekpt. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Seekpt.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Devuelve un puntero a un nuevo objeto **CSeekingPassThru** .
 
 <dl> <dt>
 
-[**Clase CSeekingPassThru**](cseekingpassthru.md)
+[**CSeekingPassThru (clase)**](cseekingpassthru.md)
 </dt> </dl>
 
  

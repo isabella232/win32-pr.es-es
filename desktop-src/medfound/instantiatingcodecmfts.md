@@ -1,29 +1,29 @@
 ---
-description: Crear instancias del códec MFTs
+description: Creación de instancias de codec MFT
 ms.assetid: 171f9a0f-effb-4ed7-8aff-d7b1ee6e4973
-title: Crear instancias del códec MFTs
+title: Creación de instancias de codec MFT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5aa886f24f7dbd1acc373c7e505baddf71bc3aa8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a73af4055aee1d5b7e6a3ea137ab2204c9e59194f57ae4776e6c8368429db877
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827615"
 ---
-# <a name="instantiating-codec-mfts"></a>Crear instancias del códec MFTs
+# <a name="instantiating-codec-mfts"></a>Creación de instancias de codec MFT
 
-[Media Foundation transformaciones](media-foundation-transforms.md) (MFTs) son objetos com que implementan la interfaz [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) . Una MFT es un objeto para transformar los datos multimedia como parte de una canalización. Una canalización es un gráfico acíclicos dirigido, compuesto por orígenes multimedia, transformaciones multimedia y receptores multimedia. Una canalización procesa los datos multimedia de streaming de forma asincrónica.
+[Media Foundation transforms](media-foundation-transforms.md) (MFT) son objetos COM que implementan la [**interfaz MFTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) Un MFT es un objeto para transformar datos multimedia como parte de una canalización. Una canalización es un grafo acíclico dirigido que consta de orígenes multimedia, transformaciones de medios y receptores multimedia. Una canalización procesa el streaming de datos multimedia de forma asincrónica.
 
-Aunque se puede crear una instancia de MFTs y usar independientemente de la infraestructura de canalización Media Foundation, es preferible usar el marco de MediaFoundation siempre que sea posible.
+Aunque se pueden crear instancias de mfts y usarse independientemente de la infraestructura de canalización de Media Foundation, es preferible usar el marco MediaFoundation siempre que sea posible.
 
-Puede crear un MFT de códec mediante una llamada a la función [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) . Debe pasar el identificador de clase de MFT, el identificador de interfaz de [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)y un puntero a un puntero **IMFTransform** .
+Puede crear un códec MFT llamando a la [**función CoCreateInstance.**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) Debe pasar el identificador de clase de MFT, el identificador de interfaz [**de IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)y un puntero a **un puntero DETRANSFORMTRANSFORM.**
 
-Los identificadores de clase del códec MFTs se definen como constantes en el archivo de encabezado wmcodecdsp. h.
+Los identificadores de clase de los MTA de códec se definen como constantes en el archivo de encabezado wmcodecdsp.h.
 
-La constante para el identificador de la interfaz [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) es IID \_ IMFTransform.
+La constante para el identificador [**de interfaz de IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) es IID \_ IMFTransform.
 
-En el ejemplo de código siguiente se muestra cómo crear una instancia de un MFT de códec:
+En el ejemplo de código siguiente se muestra cómo crear una instancia de un códec MFT:
 
 
 ```
@@ -46,7 +46,7 @@ HRESULT CreateVideoEncoderMFT(IMFTransform** ppMFT)
 
 <dl> <dt>
 
-[Trabajar con códec MFTs](workingwithcodecmfts.md)
+[Trabajar con códecs MFT](workingwithcodecmfts.md)
 </dt> </dl>
 
  

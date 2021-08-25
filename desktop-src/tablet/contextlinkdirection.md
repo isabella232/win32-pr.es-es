@@ -1,7 +1,7 @@
 ---
 description: Especifica la dirección de un objeto IContextLink.
 ms.assetid: 4ba7dca7-6801-45bf-bbf1-1dd3172fbfa2
-title: Enumeración ContextLinkDirection (IACom. h)
+title: Enumeración ContextLinkDirection (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - IACom.h
-ms.openlocfilehash: 82e10c7e908b4cc4035d8bfdde55d863f7b6ecf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cd187b2a6efed6de5e6ee866cbd2e75ad67defc67b4b6d2250eb9117c62d89e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941185"
 ---
 # <a name="contextlinkdirection-enumeration"></a>Enumeración ContextLinkDirection
 
-Especifica la dirección de un objeto [**IContextLink**](icontextlink.md) .
+Especifica la dirección de un [**objeto IContextLink.**](icontextlink.md)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,27 +44,27 @@ typedef enum ContextLinkDirection {
 <span id="ContextLinkDirection_LinksWith"></span><span id="contextlinkdirection_linkswith"></span><span id="CONTEXTLINKDIRECTION_LINKSWITH"></span>**ContextLinkDirection \_ LinksWith**
 </dt> <dd>
 
-[**IContextNode**](icontextnode.md) es un dibujo direccional que apunta fuera del [**IContextLink**](icontextlink.md).
+[**IContextNode es**](icontextnode.md) un dibujo direccional que apunta lejos de [**IContextLink.**](icontextlink.md)
 
 </dd> <dt>
 
 <span id="ContextLinkDirection_LinksFrom"></span><span id="contextlinkdirection_linksfrom"></span><span id="CONTEXTLINKDIRECTION_LINKSFROM"></span>**ContextLinkDirection \_ LinksFrom**
 </dt> <dd>
 
-[**IContextNode**](icontextnode.md) es un dibujo direccional que apunta a [**IContextLink**](icontextlink.md).
+[**IContextNode es**](icontextnode.md) un dibujo direccional que apunta a [**IContextLink.**](icontextlink.md)
 
 </dd> <dt>
 
-<span id="ContextLinkDirection_LinksTo"></span><span id="contextlinkdirection_linksto"></span><span id="CONTEXTLINKDIRECTION_LINKSTO"></span>**Vínculos de ContextLinkDirection \_**
+<span id="ContextLinkDirection_LinksTo"></span><span id="contextlinkdirection_linksto"></span><span id="CONTEXTLINKDIRECTION_LINKSTO"></span>**ContextLinkDirection \_ LinksTo**
 </dt> <dd>
 
-No hay dibujos direccionales en el vínculo. Por ejemplo, un dibujo de tinta puede subrayar una palabra de tinta. No hay ninguna dirección que se infiera del subrayado.
+No hay ningún dibujo direccional en el vínculo. Por ejemplo, un dibujo con lápiz puede subraya una palabra de lápiz. No hay ninguna dirección deducida del subrayado.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se toma un objeto [**IContextNode**](icontextnode.md) , `m_pSelectedNode` , y se guardan todos los objetos **IContextNode** a los que se vincula; para ello, se recorre el árbol antecesor y se agregan los objetos a un `CArray` objeto `linkedToNodes` . `CheckHResult` es una función que toma un `HRESULT` y una cadena, y produce una excepción creada con la cadena si el `HRESULT` no es **correcto**.
+En el ejemplo siguiente se toma un objeto [**IContextNode,**](icontextnode.md) , y se guarda todos los objetos `m_pSelectedNode` **IContextNode** a los que se vincula recorrindo el árbol antecesor y agregando los objetos a un `CArray` objeto , `linkedToNodes` . `CheckHResult` es una función que toma y una cadena, y produce una excepción creada con la `HRESULT` cadena si no es `HRESULT` **SUCCESS**.
 
 
 ```C++
@@ -116,9 +116,9 @@ while (pAncestor != NULL)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 
 
 

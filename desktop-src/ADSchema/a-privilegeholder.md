@@ -1,11 +1,11 @@
 ---
-title: Privilege-Holder atributo)
-description: Lista de nombres distintivos de entidades de seguridad que concedió este privilegio.
+title: Privilege-Holder atributo
+description: Lista de nombres distintivos de entidades de seguridad a las que se concedió este privilegio.
 ms.assetid: d7ae6de8-6725-436f-93e0-1dd966aa7c07
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Privilege-Holder
-- privilegeHolder esquema de AD de atributos
+- Privilege-Holder esquema de AD del atributo
+- esquema de AD del atributo privilegeHolder
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a4f414e92f092eb6cb60f11807c9c5f3cdb20ef
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e64624d75d42f2c787fc3e8a913c7aae437e42b4f564b3779b7aa419ab754626
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923295"
 ---
-# <a name="privilege-holder-attribute"></a>Privilege-Holder atributo)
+# <a name="privilege-holder-attribute"></a>Privilege-Holder atributo
 
-Lista de nombres distintivos de entidades de seguridad que concedió este privilegio.
+Lista de nombres distintivos de entidades de seguridad a las que se concedió este privilegio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | Privilege-Holder                        |
-| Nombre para mostrar de LDAP | privilegeHolder                         |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| Ldap-Display-Name | privilegeHolder                         |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.637                  |
-| System-ID-GUID    | 19405b9b-3cfa-11d1-a9c0-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 19405b9b-3cfa-11d1-a9c0-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,15 +53,15 @@ Lista de nombres distintivos de entidades de seguridad que concedió este privil
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | 70           |
+| Id. de vínculo                | 70           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -74,15 +74,15 @@ Lista de nombres distintivos de entidades de seguridad que concedió este privil
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | 70           |
+| Id. de vínculo                | 70           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -95,15 +95,15 @@ Lista de nombres distintivos de entidades de seguridad que concedió este privil
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | 70           |
+| Id. de vínculo                | 70           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -116,15 +116,15 @@ Lista de nombres distintivos de entidades de seguridad que concedió este privil
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | 70           |
+| Id. de vínculo                | 70           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -137,15 +137,15 @@ Lista de nombres distintivos de entidades de seguridad que concedió este privil
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | 70           |
+| Id. de vínculo                | 70           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -158,15 +158,15 @@ Lista de nombres distintivos de entidades de seguridad que concedió este privil
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | 70           |
+| Id. de vínculo                | 70           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

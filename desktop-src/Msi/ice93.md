@@ -1,29 +1,29 @@
 ---
-description: ICE93 emite una advertencia si una acción personalizada usa el mismo nombre que una acción estándar. Para obtener una lista de todos los nombres de acción estándar, consulte referencia de acciones estándar.
+description: ICE93 emite una advertencia si una acción personalizada usa el mismo nombre que una acción estándar. Para obtener una lista de todos los nombres de acción estándar, vea Referencia de acciones estándar.
 ms.assetid: 1c1ff9bf-84a2-45ac-b464-ecc42a4d2d84
 title: ICE93
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ed8cde0bce66db9f726a69f0f12064653d22727
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b66e87046c2f23fe3efcb2b9ae0e188f7f2f0232c623c3d3ecae77e73438b86f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828845"
 ---
 # <a name="ice93"></a>ICE93
 
-ICE93 emite una advertencia si una acción personalizada usa el mismo nombre que una acción estándar. Para obtener una lista de todos los nombres de acción estándar, consulte [referencia de acciones estándar](standard-actions-reference.md).
+ICE93 emite una advertencia si una acción personalizada usa el mismo nombre que una acción estándar. Para obtener una lista de todos los nombres de acción estándar, vea [Referencia de acciones estándar.](standard-actions-reference.md)
 
 ## <a name="result"></a>Resultado
 
-ICE93 envía la siguiente advertencia.
+ICE93 publica la advertencia siguiente.
 
 
 
-| ADVERTENCIA de ICE93                                                      | Descripción                                                                                                                    |
+| Advertencia ice93                                                      | Descripción                                                                                                                    |
 |--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| La acción personalizada ' \[ 1 \] ' usa el mismo nombre que una acción estándar. | Existe un identificador en la columna Acción de la tabla CustomAction que es el nombre de una Windows Installer acción estándar. |
+| La acción Personalizada ' \[ 1 \] ' usa el mismo nombre que una acción estándar. | Hay un identificador en la columna Acción de la tabla CustomAction que es el nombre de una acción estándar Windows Installer. |
 
 
 

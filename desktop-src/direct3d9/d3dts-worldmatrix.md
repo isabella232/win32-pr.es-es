@@ -1,7 +1,7 @@
 ---
-description: Asigna índices en el intervalo de 0 a 255 a los Estados de transformación correspondientes.
+description: Mapas los índices del intervalo de 0 a 255 hasta los estados de transformación correspondientes.
 ms.assetid: b0a1548c-de5d-4eff-baf9-4aecb5e13443
-title: Macro D3DTS_WORLDMATRIX (D3d9types. h)
+title: D3DTS_WORLDMATRIX macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: f80996a37e2fb48bf8ca7ea73f714b04e711b263
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 03a93753790378a7066f4a3ffa6bc6b7fb8139b77f9096886161013653312bba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104547859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850065"
 ---
-# <a name="d3dts_worldmatrix-macro"></a>D3DTS \_ WORLDMATRIX (macro)
+# <a name="d3dts_worldmatrix-macro"></a>Macro WORLDMATRIX de D3DTS \_
 
-Asigna índices en el intervalo de 0 a 255 a los Estados de transformación correspondientes.
+Mapas los índices del intervalo de 0 a 255 hasta los estados de transformación correspondientes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,17 +42,17 @@ D3DTRANSFORMSTATETYPE D3DTS_WORLDMATRIX(
 *índice* 
 </dt> <dd>
 
-Un valor de índice en el intervalo comprendido entre 0 y 255.
+Valor de índice en el intervalo de 0 a 255.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-[**D3DTRANSFORMSTATETYPE**](./d3dtransformstatetype.md) que se asigna al *Índice* especificado.
+[**D3DTRANSFORMSTATETYPE que**](./d3dtransformstatetype.md) se asigna al índice *especificado.*
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los Estados de transformación en el intervalo de 256 a 511 se reservan para almacenar hasta 256 matrices que se pueden indexar con índices de 8 bits.
+Los estados de transformación del intervalo de 256 a 511 están reservados para almacenar hasta 256 matrices que se pueden indexar mediante índices de 8 bits.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Los Estados de transformación en el intervalo de 256 a 511 se reservan para alm
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

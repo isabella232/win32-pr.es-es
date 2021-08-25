@@ -1,11 +1,11 @@
 ---
-title: 'SD: atributo de derechos efectivos'
-description: Este atributo construido devuelve un valor DWORD único que puede tener hasta tres bits establecer seguridad de \_ propietario \_ INFORMATIONDACL \_ seguridad \_ INFORMATIONSACL \_ \_ información de seguridad si se establece un bit, el usuario tiene acceso de escritura a la parte correspondiente del descriptor de seguridad. Propietario significa el propietario y el grupo.
+title: Atributo SD-Rights-Effective
+description: Este atributo construido devuelve un único valor DWORD que puede tener hasta tres bits establecido OWNER \_ SECURITY \_ INFORMATIONDACL \_ SECURITY \_ INFORMATIONSACL SECURITY INFORMATION Si \_ se \_ establece un bit, el usuario tiene acceso de escritura a la parte correspondiente del descriptor de seguridad. Propietario significa propietario y grupo.
 ms.assetid: 66d1aefb-49be-42fc-b144-3fb95c59dd0f
 ms.tgt_platform: multiple
 keywords:
-- 'SD: esquema de AD de atributos efectivos'
-- sDRightsEffective esquema de AD de atributos
+- Esquema de AD del atributo SD-Rights-Effective
+- Esquema de AD del atributo sDRightsEffective
 topic_type:
 - apiref
 api_name:
@@ -14,35 +14,35 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac449cd18b3fb75a61f04fffc266c290b7763295
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d65591c935955133ca004c066249e9c6ec4a2effa102ad8b0e2650e6e5155749
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923225"
 ---
-# <a name="sd-rights-effective-attribute"></a>SD: atributo de derechos efectivos
+# <a name="sd-rights-effective-attribute"></a>Atributo SD-Rights-Effective
 
-Este atributo construido devuelve un valor **DWORD** único que puede tener hasta tres bits establecidos:
+Este atributo construido devuelve un único **valor DWORD** que puede tener hasta tres bits establecidos:
 
--   \_información de seguridad del propietario \_
--   \_información de seguridad de DACL \_
--   \_información de seguridad de SACL \_
+-   INFORMACIÓN DE \_ SEGURIDAD DEL \_ PROPIETARIO
+-   INFORMACIÓN DE SEGURIDAD DE DACL \_ \_
+-   INFORMACIÓN DE \_ SEGURIDAD DE \_ SACL
 
-Si se establece un bit, el usuario tiene acceso de escritura a la parte correspondiente del descriptor de seguridad. Propietario significa el propietario y el grupo.
+Si se establece un bit, el usuario tiene acceso de escritura a la parte correspondiente del descriptor de seguridad. Propietario significa propietario y grupo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | SD-derechos-efectivos                  |
-| Nombre para mostrar de LDAP | sDRightsEffective                    |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | SD-Rights-Effective                  |
+| Ldap-Display-Name | sDRightsEffective                    |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1304              |
-| System-ID-GUID    | c3dbafa6-33df-11d2-98b2-0000f87a57d4 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | c3dbafa6-33df-11d2-98b2-0000f87a57d4 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -50,7 +50,7 @@ Si se establece un bit, el usuario tiene acceso de escritura a la parte correspo
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -60,15 +60,15 @@ Si se establece un bit, el usuario tiene acceso de escritura a la parte correspo
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -81,15 +81,15 @@ Si se establece un bit, el usuario tiene acceso de escritura a la parte correspo
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -98,19 +98,19 @@ Si se establece un bit, el usuario tiene acceso de escritura a la parte correspo
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -123,15 +123,15 @@ Si se establece un bit, el usuario tiene acceso de escritura a la parte correspo
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -144,15 +144,15 @@ Si se establece un bit, el usuario tiene acceso de escritura a la parte correspo
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -165,15 +165,15 @@ Si se establece un bit, el usuario tiene acceso de escritura a la parte correspo
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -186,15 +186,15 @@ Si se establece un bit, el usuario tiene acceso de escritura a la parte correspo
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
