@@ -1,7 +1,7 @@
 ---
-description: Subclases automáticamente y agrega efectos 3D a todos los cuadros de diálogo de la aplicación.
+description: Crea automáticamente subclases y agrega efectos 3D a todos los cuadros de diálogo de la aplicación.
 ms.assetid: 96555052-c564-4cc7-9b24-e527f8e2f879
-title: Ctl3dAutoSubclass función)
+title: Función Ctl3dAutoSubclass
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: 85f4c85d1d608ff97147a935806b090162f5a78a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5edc8bafb00d5444f18b61e0600fb075b6a7367c315c2ab1cfe38f911e9a84d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654615"
 ---
-# <a name="ctl3dautosubclass-function"></a>Ctl3dAutoSubclass función)
+# <a name="ctl3dautosubclass-function"></a>Función Ctl3dAutoSubclass
 
-Subclases automáticamente y agrega efectos 3D a todos los cuadros de diálogo de la aplicación.
+Crea automáticamente subclases y agrega efectos 3D a todos los cuadros de diálogo de la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ PUBLIC BOOL FAR PASCAL Ctl3dAutoSubclass(
 
 <dl> <dt>
 
-*hinstApp* 
+*prendstApp* 
 </dt> <dd>
 
 Identificador de la aplicación que se va a registrar como cliente.
@@ -48,21 +48,21 @@ Identificador de la aplicación que se va a registrar como cliente.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** a menos que exista una de las condiciones siguientes, en cuyo caso devuelve **false**:
+Devuelve **TRUE** a menos que exista una de las condiciones siguientes, en cuyo caso devuelve **FALSE**:
 
--   CTL3D se ejecuta en la versión 3,0 o anterior de Windows.
--   CTL3D no tiene espacio disponible en sus tablas para la aplicación actual. CTL3D puede atender hasta 32 aplicaciones al mismo tiempo.
--   CTL3D no puede instalar su enlace de CBT.
+-   CTL3D se ejecuta en Windows versión 3.0 o anterior.
+-   CTL3D no tiene espacio disponible en sus tablas para la aplicación actual. CTL3D puede dar servicio a hasta 32 aplicaciones al mismo tiempo.
+-   CTL3D no puede instalar su enlace CBT.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Ctl3d32.dll</dt> </dl> |
 

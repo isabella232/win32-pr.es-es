@@ -1,7 +1,7 @@
 ---
-description: Establezca la información de escala para un fotograma clave específico en el conjunto de animaciones.
+description: Establezca la información de escala de un fotograma clave específico en el conjunto de animación.
 ms.assetid: b606e5d3-11c9-4997-ad3c-d3ae21c32e10
-title: 'ID3DXKeyframedAnimationSet:: SetScaleKey (método) (D3dx9anim. h)'
+title: Método ID3DXKeyframedAnimationSet::SetScaleKey (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 12ac4d46a2719e452d44d2da67f178e6146b799b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d5d33ab0c8e6bd01335d5843121917f89e3cf60bd81a5d54a85d298ec990e4a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748215"
 ---
-# <a name="id3dxkeyframedanimationsetsetscalekey-method"></a>ID3DXKeyframedAnimationSet:: SetScaleKey (método)
+# <a name="id3dxkeyframedanimationsetsetscalekey-method"></a>Método ID3DXKeyframedAnimationSet::SetScaleKey
 
-Establezca la información de escala para un fotograma clave específico en el conjunto de animaciones.
+Establezca la información de escala de un fotograma clave específico en el conjunto de animación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT SetScaleKey(
 
 <dl> <dt>
 
-*Animación* \[ de de\]
+*Animación* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de animación.
 
 </dd> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Fotograma clave.
 
 </dd> <dt>
 
-*pScaleKeys* \[ de\]
+*pScaleKeys* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXKEY \_ VECTOR3**](d3dxkey-vector3.md)**
 
-Puntero a los datos de la escala. Vea [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md).
+Puntero a los datos de escala. Vea [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md).
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntero a los datos de la escala. Vea [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.m
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 09ec2e8a-bd50-4f82-8ce3-a1c61f48ddb7
 title: Elemento Text
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 570f613a06f9fe814bfb1acbdbdba040dbc1119f
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: ae4e9fa123f1f43bd92d902158fc3fbc5b1c1de8e074b57aadeb339a0a7b6f15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119819945"
 ---
 # <a name="text-element"></a>Elemento Text
 
@@ -23,7 +23,7 @@ Cuando se usa con [**contenido**](content-element--journal-reader.md):
 <xs:element name="Text" type="TextType" />
 ```
 
-O bien, cuando se usa [**con TitleInfo**](titleinfo-element.md) [**y GroupNode**](groupnode-element.md):
+O bien, cuando se [**usa con TitleInfo**](titleinfo-element.md) [**y GroupNode**](groupnode-element.md):
 
 ``` syntax
 <xs:element name="Text" type="xs:string" />
@@ -43,16 +43,16 @@ Ninguno.
 
 ## <a name="attributes"></a>Atributos
 
-No hay ningún atributo cuando se usa [**con TitleInfo**](titleinfo-element.md) y [**GroupNode**](groupnode-element.md). Cuando se usa [**con Content**](content-element--journal-reader.md), los atributos son los siguientes.
+No hay ningún atributo cuando se usa [**con TitleInfo**](titleinfo-element.md) y [**GroupNode**](groupnode-element.md). Cuando se usa con [**Content**](content-element--journal-reader.md), los atributos son los siguientes.
 
 
 
 | Atributo  | Tipo                      | Requerido | Descripción                                                                             | Valores posibles           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Left**   | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto situado más a la izquierda en el cuadro de límite del elemento. | Cualquier número entero.              |
+| **Left**   | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto más a la izquierda en el cuadro de límite del elemento. | Cualquier número entero.              |
 | **Top** (Principales)    | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
 | **Width**  | **xs:nonNegativeInteger** | Requerido | Ancho del cuadro de límite del elemento.                                          | Cualquier entero no negativo. |
-| **Height** | **xs:nonNegativeInteger** | Requerido | Alto del cuadro de límite para el elemento.                                         | Cualquier entero no negativo. |
+| **Height** | **xs:nonNegativeInteger** | Requerido | Alto del cuadro de límite del elemento.                                         | Cualquier entero no negativo. |
 
 
 

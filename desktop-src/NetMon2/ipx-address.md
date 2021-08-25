@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura de direcciones IPX proporciona una dirección en el nivel de protocolo IPX.
+description: La estructura IPX \_ ADDRESS proporciona una dirección en el nivel de protocolo IPX.
 ms.assetid: 06939ac3-3718-4441-b2c8-c73adfe3babe
-title: Estructura de IPX_ADDRESS (Netmon. h)
+title: IPX_ADDRESS estructura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 18645a455e780020037384a2df7173a019d71677
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fc8298f2495029d63889fd5ebb24cdb284933897a9d9150b1dfcc2e14084f46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743015"
 ---
-# <a name="ipx_address-structure"></a>\_Estructura de dirección IPX
+# <a name="ipx_address-structure"></a>Estructura IPX \_ ADDRESS
 
-La estructura de **\_ direcciones IPX** proporciona una dirección en el nivel de protocolo IPX.
+La **estructura IPX \_ ADDRESS** proporciona una dirección en el nivel de protocolo IPX.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Identificador de subred de red.
 **Dirección**
 </dt> <dd>
 
-Identificador de NIC de subred.
+Identificador nic de subred.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Identificador de NIC de subred.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

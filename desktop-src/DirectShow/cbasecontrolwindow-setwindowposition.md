@@ -1,7 +1,7 @@
 ---
 description: El método SetWindowPosition establece la posición de la ventana en el escritorio.
 ms.assetid: 1c2706dd-d67c-41c7-b672-3c040f37bc41
-title: Método CBaseControlWindow. SetWindowPosition (Ctlutil. h)
+title: Método CBaseControlWindow.SetWindowPosition (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d5e92581db4d04d622f5dba5fbfe1c2c4a53b4ad
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2734c93d1a3d3d3ea29e037d1bf85baacd5358a69f08d1517012c3eb250ab8ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635465"
 ---
-# <a name="cbasecontrolwindowsetwindowposition-method"></a>CBaseControlWindow. SetWindowPosition, método
+# <a name="cbasecontrolwindowsetwindowposition-method"></a>Método CBaseControlWindow.SetWindowPosition
 
 El `SetWindowPosition` método establece la posición de la ventana en el escritorio.
 
@@ -75,7 +75,7 @@ Alto de la ventana.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ Devuelve un valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

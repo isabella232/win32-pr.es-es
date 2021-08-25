@@ -1,7 +1,7 @@
 ---
-description: Transforma el BoundingFrustum.
+description: Transforma boundingFrustum.
 ms.assetid: c989e8e5-b94a-4bb3-bd8c-5bc7c1a24d24
-title: BoundingFrustum. Transform (métodos)
+title: Métodos BoundingFrustum.Transform
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,16 +11,16 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 33715c8fb8cf6388c22e6348c1161d8b3aa7190b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbfbe4f178c404484ff4a2b95da5a325a9bdc51f6923cab8918576d860a48dec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787075"
 ---
-# <a name="boundingfrustumtransform-methods"></a>BoundingFrustum. Transform (métodos)
+# <a name="boundingfrustumtransform-methods"></a>Métodos BoundingFrustum.Transform
 
-Transforma el [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
+Transforma el [**objeto BoundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -28,8 +28,8 @@ Transforma el [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-direc
 
 | Método                                                                                                       | Descripción                                                                                                                       |
 |:-------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------|
-| [**BoundingFrustum:: Transform (BoundingFrustum&, XMMATRIX)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-transform(boundingfrustum__float_fxmvector_fxmvector))                | Transforma el [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) por la matriz de transformación especificada.<br/>                      |
-| [**BoundingFrustum:: Transform (BoundingFrustum&, Float, XMVECTOR, XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-transform(boundingfrustum__float_fxmvector_fxmvector)) | Transforma el [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) con los vectores de escala, rotación y traslación especificados.<br/> |
+| [**BoundingFrustum::Transform (BoundingFrustum&,XMMATRIX)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-transform(boundingfrustum__float_fxmvector_fxmvector))                | Transforma [**boundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) mediante la matriz de transformación especificada.<br/>                      |
+| [**BoundingFrustum::Transform (BoundingFrustum&,float,XMVECTOR,XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-transform(boundingfrustum__float_fxmvector_fxmvector)) | Transforma [**boundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) mediante los vectores de escala, rotación y traducción especificados.<br/> |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 0699eb16-d6ef-46e3-bd02-d35512536275
-ms.openlocfilehash: fa59a70c04e7f78a315955aeabb9477c6f28c80d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a694ced28663a005bfdacd406adb3f6b3d6cd0300db2a101c9fdee4bf215a23d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821125"
 ---
 # <a name="webwizardhostfinalnext-method"></a>Método WebWizardHost.FinalNext
 
@@ -37,9 +37,9 @@ iRetVal = WebWizardHost.FinalNext()
 
 Este método no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el asistente muestra la última página HTML del  lado  servidor y el usuario hace clic en los botones Siguiente o Finalizar, el servidor invoca **FinalNext** en el controlador de eventos de ese botón.
+Cuando el asistente muestra la última página HTML del  lado  servidor y el usuario hace clic en el botón Siguiente o Finalizar, el servidor invoca **FinalNext** en el controlador de eventos de ese botón.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,8 +47,8 @@ Cuando el asistente muestra la última página HTML del  lado  servidor y el usu
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 

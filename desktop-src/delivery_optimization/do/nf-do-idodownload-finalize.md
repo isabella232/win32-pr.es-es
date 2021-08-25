@@ -1,8 +1,8 @@
 ---
-title: 'IDODownload:: Finalize (método)'
-description: Finaliza la descarga.
+title: MÉTODO IDODownload::Finalize
+description: Finalizará la descarga.
 keywords:
-- 'IDODownload:: Finalize (método)'
+- MÉTODO IDODownload::Finalize
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: 6befc9a7e64fb0963d45257d68d6bb8d2ba7a2cb
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 620b8cf1671c18f2e4a79a798fac366d61c9e09f5a83ecda2c1ade531c6a558a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "105720107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636044"
 ---
-# <a name="idodownloadfinalize-method"></a>IDODownload:: Finalize (método)
+# <a name="idodownloadfinalize-method"></a>MÉTODO IDODownload::Finalize
 
-Finaliza la descarga. Una vez finalizada, una descarga no se puede reanudar mediante una llamada a **Start**.
+Finalizará la descarga. Una vez finalizado, no se puede reanudar una descarga mediante una llamada **a Start**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,12 +33,12 @@ HRESULT Finalize();
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve **S_OK**. De lo contrario, devuelve un [código de error](/windows/desktop/com/com-error-codes-10) [**HRESULT**](/windows/desktop/com/structure-of-com-error-codes) .
+Si la función se realiza correctamente, devuelve **S_OK**. De lo contrario, devuelve un [**código de**](/windows/desktop/com/structure-of-com-error-codes) error [HRESULT](/windows/desktop/com/com-error-codes-10).
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo compatible** | Solo aplicaciones Win32 de Windows 10, versión 1809 \[\] |
-| **Servidor mínimo compatible** | Windows Server, versión 1809 \[ Win32 Applications Only\] |
-| **Header** | Do. h |
+| **Cliente mínimo compatible** | \[Windows 10, versión 1809 Solo aplicaciones Win32\] |
+| **Servidor mínimo compatible** | Windows Servidor, versión 1809 \[ Solo aplicaciones Win32\] |
+| **Header** | Do.h |

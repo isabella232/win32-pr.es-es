@@ -1,32 +1,32 @@
 ---
-title: Funciones de la función de onda
-description: Funciones de la función de onda
+title: Funciones de forma de onda
+description: Funciones de forma de onda
 ms.assetid: 6c8aaa54-0477-484f-91e1-d2152aa9c185
 keywords:
-- audio multimedia, funciones de la función de onda
-- funciones de audio, de onda
-- audio de onda, funciones
-- referencia de audio de la onda, funciones
-- referencia de wavefore audio, funciones
+- audio multimedia, funciones de forma de onda
+- audio, funciones de forma de onda
+- audio de forma de onda, funciones
+- referencia de audio de forma de onda, funciones
+- referencia de audio wavefore, funciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e9b6568bdf0f92409d8dca8d68cad3c97bfbc26
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7bf5b5f5fabbeeee50b3ecfa76a8540bd2f3ec96dda818eb3f7c77cbc4361f0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781485"
 ---
-# <a name="waveform-functions"></a>Funciones de la función de onda
+# <a name="waveform-functions"></a>Funciones de forma de onda
 
-Las siguientes funciones se usan con audio de onda.
+Las siguientes funciones se usan con audio de forma de onda.
 
 -   [**auxGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-auxgetdevcaps)
 -   [**auxGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-auxgetnumdevs)
 -   [**auxGetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-auxgetvolume)
 -   [**auxOutMessage**](/windows/win32/api/mmeapi/nf-mmeapi-auxoutmessage)
 -   [**auxSetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-auxsetvolume)
--   [**Reproducción**](/previous-versions//dd743680(v=vs.85))
+-   [**PlaySound**](/previous-versions//dd743680(v=vs.85))
 -   [**sndPlaySound**](/previous-versions//dd798676(v=vs.85))
 -   [**waveInAddBuffer**](/windows/win32/api/mmeapi/nf-mmeapi-waveinaddbuffer)
 -   [**waveInClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveinclose)
@@ -60,7 +60,7 @@ Las siguientes funciones se usan con audio de onda.
 -   [**waveOutProc**](/previous-versions//dd743869(v=vs.85))
 -   [**waveOutReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset)
 -   [**waveOutRestart**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutrestart)
--   [**waveOutSetPitch**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetpitch)
+-   [**waveOutSetPjunto**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetpitch)
 -   [**waveOutSetPlaybackRate**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetplaybackrate)
 -   [**waveOutSetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetvolume)
 -   [**waveOutUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutunprepareheader)
@@ -73,6 +73,6 @@ Las siguientes funciones se usan con audio de onda.
 [Referencia de audio de forma de onda](waveform-audio-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: El método AddAfter inserta un elemento después de la posición especificada y usa los parámetros ' p ' y ' pObj '.
+description: El método AddAfter inserta un elemento después de la posición especificada y usa los parámetros "p" y "pObj".
 ms.assetid: 3e1f27c5-3e04-424a-8fe3-9bfde4e3824b
-title: Método CGenericList. AddAfter (Wxlist. h)-p, parámetros pObj
+title: 'Método CGenericList.AddAfter (Wxlist.h): parámetros p, pObj'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fbb9553310a8ba817f90464d90226eb36371505e
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 6de0037d76e63049294b0455c8ec1fbac82963d94febb35f7c9400ec8eae9ab5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104362830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697541"
 ---
-# <a name="cgenericlistaddafter-method-wxlisth---p-pobj-parameters"></a>Método CGenericList. AddAfter (Wxlist. h)-p, parámetros pObj
+# <a name="cgenericlistaddafter-method-wxlisth---p-pobj-parameters"></a>Método CGenericList.AddAfter (Wxlist.h): parámetros p, pObj
 
 El `AddAfter` método inserta un elemento después de la posición especificada.
 
@@ -43,17 +43,17 @@ POSITION AddAfter(
 
 <dl> <dt>
 
-*m* 
+*P* 
 </dt> <dd>
 
-Posición detrás de la que se va a agregar el elemento. Si *p* es **null**, el método agrega el elemento al encabezado de la lista.
+Posición después de la cual se va a agregar el elemento. Si *p* es **NULL,** el método agrega el elemento al final de la lista.
 
 </dd> <dt>
 
 *pObj* 
 </dt> <dd>
 
-Puntero a un objeto de tipo **Object** (el tipo de plantilla).
+Puntero a un objeto de tipo **OBJECT** (tipo de plantilla).
 
 </dd> </dl>
 
@@ -65,14 +65,14 @@ Devuelve el indicador de posición del elemento insertado.
 
 | Requisito | Value |
 |-|-|
-| Encabezado | Wxlist. h (incluir streams. h) |
-| Biblioteca| Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
+| Encabezado | Wxlist.h (incluir Secuencias.h) |
+| Biblioteca| Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (Clase)**](cgenericlist.md)
 </dt> </dl>
 
  

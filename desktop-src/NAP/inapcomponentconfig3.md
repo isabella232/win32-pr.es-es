@@ -1,10 +1,10 @@
 ---
-title: Interfaz INapComponentConfig3 (NapCommon. h)
-description: Proporciona métodos de configuración del sistema NAP para que los validadores de mantenimiento del sistema (SHV) establezcan y modifiquen los datos de configuración de un identificador de configuración específico.
+title: Interfaz INapComponentConfig3 (NapCommon.h)
+description: Proporciona métodos de configuración del sistema NAP para validadores de estado del sistema (SHV) para establecer y modificar los datos de configuración de un identificador de configuración específico.
 ms.assetid: dbb78f7a-7c6b-4bf1-b471-374857d5dafe
 keywords:
-- Interfaz INapComponentConfig3 NAP
-- Interfaz INapComponentConfig3 NAP, descripción
+- NAP de interfaz INapComponentConfig3
+- Nap de interfaz INapComponentConfig3 , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac0cfead891da106a1a950ba83b9108b5950a738
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fea8ab7b42589fa548439b03c04ade56db498750ccd47841b806dcb6b506d3d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803085"
 ---
 # <a name="inapcomponentconfig3-interface"></a>Interfaz INapComponentConfig3
 
@@ -29,7 +29,7 @@ ms.locfileid: "105676582"
 
  
 
-La interfaz **INapComponentConfig3** proporciona métodos de configuración del sistema de NAP para que los validadores de mantenimiento del sistema (SHV) establezcan y modifiquen los datos de configuración de un identificador de configuración específico.
+La **interfaz INapComponentConfig3** proporciona métodos de configuración del sistema NAP para que los validadores de estado del sistema (SHV) establezcan y modifiquen los datos de configuración de un identificador de configuración específico.
 
 > [!Note]  
 > Esta interfaz hereda todos los métodos de [**INapComponentConfig2**](inapcomponentconfig2.md) y se debe usar en su lugar.
@@ -38,13 +38,13 @@ La interfaz **INapComponentConfig3** proporciona métodos de configuración del 
 
 ## <a name="members"></a>Miembros
 
-La interfaz **INapComponentConfig3** hereda de [**INapComponentConfig2**](inapcomponentconfig2.md). **INapComponentConfig3** también tiene estos tipos de miembros:
+La **interfaz INapComponentConfig3** hereda de [**INapComponentConfig2.**](inapcomponentconfig2.md) **INapComponentConfig3** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **INapComponentConfig3** tiene estos métodos.
+La **interfaz INapComponentConfig3** tiene estos métodos.
 
 
 
@@ -53,16 +53,16 @@ La interfaz **INapComponentConfig3** tiene estos métodos.
 | [**INapComponentConfig3::D eleteAllConfig**](inapcomponentconfig3-deleteallconfig.md) | Implementado por SHV para proporcionar una manera de restablecer el almacén de SHV a su estado original después de la instalación.<br/>      |
 | [**INapComponentConfig3::D eleteConfig**](inapcomponentconfig3-deleteconfig.md)       | Implementado por SHV para proporcionar una manera de eliminar los datos de configuración de un identificador de configuración específico.<br/>  |
 | [**INapComponentConfig3::GetConfigFromID**](inapcomponentconfig3-getconfigfromid.md) | Implementado por SHV para proporcionar una manera de obtener datos de configuración para un identificador de configuración específico.<br/>  |
-| [**INapComponentConfig3:: documento newconfig**](inapcomponentconfig3-newconfig.md)             | Implementado por SHV para proporcionar una manera de crear datos de configuración para un identificador de configuración específico.<br/>  |
-| [**INapComponentConfig3::SetConfigToID**](inapcomponentconfig3-setconfigtoid.md)     | Implementado por SHV para proporcionar una manera de establecer los datos de configuración para un identificador de configuración específico.<br/> |
+| [**INapComponentConfig3::NewConfig**](inapcomponentconfig3-newconfig.md)             | Implementado por SHV para proporcionar una manera de crear datos de configuración para un identificador de configuración específico.<br/>  |
+| [**INapComponentConfig3::SetConfigToID**](inapcomponentconfig3-setconfigtoid.md)     | Implementado por SHV para proporcionar una manera de establecer los datos de configuración de un identificador de configuración específico.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta interfaz no debe ser implementada por los agentes de mantenimiento del sistema (SHA) o los clientes de aplicación de cuarentena (QECs).
+Esta interfaz no debe implementarse por agentes de mantenimiento del sistema (SHA) ni clientes de cumplimiento de cuarentena (QFC).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,9 +71,9 @@ Esta interfaz no debe ser implementada por los agentes de mantenimiento del sist
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Esta interfaz no debe ser implementada por los agentes de mantenimiento del sist
 [**INapComponentConfig2**](inapcomponentconfig2.md)
 </dt> <dt>
 
-[Interfaces NAP](nap-interfaces.md)
+[NAP Interfaces](nap-interfaces.md)
 </dt> <dt>
 
 [Referencia de NAP](nap-reference.md)

@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-TS-ManagingLS3
-description: Nombre del emisor del tercer servidor de Terminal Server por CAL de usuario.
+description: Nombre del emisor del tercer servidor de terminal server por cal de usuario.
 ms.assetid: bc03d162-d039-424a-8c67-cd58c1d1ac2b
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo MS-TS-ManagingLS3
-- msTSManagingLS3 esquema de AD de atributos
+- Esquema de AD del atributo msTSManagingLS3
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df9b0c92ca5f5eac822d5a62bd23af813842cdf6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4ea6cbd68b4925a23de66abdd03c29b9763fe405ad1608c67b01c113e3028d92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802665"
 ---
 # <a name="ms-ts-managingls3-attribute"></a>Atributo MS-TS-ManagingLS3
 
-Nombre del emisor del tercer servidor de Terminal Server por CAL de usuario.
+Nombre del emisor del tercer servidor de terminal server por cal de usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-ManagingLS3                           |
-| Nombre para mostrar de LDAP | msTSManagingLS3                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | msTSManagingLS3                             |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2005                     |
-| System-ID-GUID    | fad5dcc1-2130-4c87-a118-75322cd67050        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | fad5dcc1-2130-4c87-a118-75322cd67050        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,13 +52,13 @@ Nombre del emisor del tercer servidor de Terminal Server por CAL de usuario.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |
@@ -73,13 +73,13 @@ Nombre del emisor del tercer servidor de Terminal Server por CAL de usuario.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |
@@ -94,13 +94,13 @@ Nombre del emisor del tercer servidor de Terminal Server por CAL de usuario.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |

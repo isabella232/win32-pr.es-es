@@ -1,32 +1,32 @@
 ---
-description: 'Las aplicaciones pueden usar las siguientes funciones para recuperar los datos del dispositivo mediante un contexto de dispositivo: GetDeviceCaps y DeviceCapabilities.'
+description: 'Las aplicaciones pueden usar las siguientes funciones para recuperar datos del dispositivo mediante un contexto de dispositivo: GetDeviceCaps y DeviceCapabilities.'
 ms.assetid: eed6a323-b7eb-41a2-adb9-592f3f912884
-title: Recuperación de datos del dispositivo
+title: Recuperar datos del dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28fa4054170f9b66d73e3494928db312eb8aa9d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: adf956a04c733883cb5fb374e4e75dc4e93e8029f9968deb90cc113cef460864
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119717995"
 ---
-# <a name="retrieving-device-data"></a>Recuperación de datos del dispositivo
+# <a name="retrieving-device-data"></a>Recuperar datos del dispositivo
 
-Las aplicaciones pueden usar las siguientes funciones para recuperar los datos del dispositivo mediante un contexto de dispositivo: [**GetDeviceCaps**](/windows/desktop/api/Wingdi/nf-wingdi-getdevicecaps) y [**DeviceCapabilities**](/windows/win32/api/wingdi/nf-wingdi-devicecapabilitiesa).
+Las aplicaciones pueden usar las siguientes funciones para recuperar datos del dispositivo mediante un contexto de dispositivo: [**GetDeviceCaps**](/windows/desktop/api/Wingdi/nf-wingdi-getdevicecaps) [**y DeviceCapabilities.**](/windows/win32/api/wingdi/nf-wingdi-devicecapabilitiesa)
 
-[**GetDeviceCaps**](/windows/desktop/api/Wingdi/nf-wingdi-getdevicecaps) recupera datos de dispositivo generales para los siguientes dispositivos:
+[**GetDeviceCaps recupera**](/windows/desktop/api/Wingdi/nf-wingdi-getdevicecaps) datos generales del dispositivo para los dispositivos siguientes:
 
--   Tramas, pantallas
--   Impresoras matriciales
--   Impresoras de chorro de tinta
+-   Pantallas de trama
+-   Impresoras de matriz de puntos
+-   Impresoras ink-jet
 -   Impresoras láser
--   Trazadores gráficos vectoriales
--   Cámaras de tramas
+-   Trazadores vectoriales
+-   Cámaras de trama
 
-Los datos incluyen las capacidades admitidas del dispositivo, incluida la resolución del dispositivo (para pantallas de vídeo), el formato de color (para pantallas de vídeo y las impresoras de color), el número de objetos gráficos, las capacidades de trama, el dibujo de curva, el dibujo de líneas, el dibujo de polígono y el dibujo de texto. Una aplicación recupera estos datos proporcionando un identificador que identifica el contexto de dispositivo adecuado, así como un índice que especifica el tipo de datos que la función va a recuperar.
+Los datos incluyen las funcionalidades admitidas del dispositivo, incluida la resolución de dispositivos (para las pantallas de vídeo), el formato de color (para las pantallas de vídeo y las impresoras de color), el número de objetos gráficos, las funcionalidades de trama, el dibujo de curva, el dibujo de línea, el dibujo de polígono y el dibujo de texto. Una aplicación recupera estos datos al proporcionar un identificador que identifica el contexto de dispositivo adecuado, así como un índice que especifica el tipo de datos que la función va a recuperar.
 
-La función [**DeviceCapabilities**](/windows/win32/api/wingdi/nf-wingdi-devicecapabilitiesa) recupera datos específicos de las impresoras, incluido el número de bandejas de papel disponibles, las capacidades de dúplex de la impresora, las resoluciones admitidas por la impresora, el tamaño de papel máximo y mínimo admitido, etc. Una aplicación recupera estos datos proporcionando cadenas que especifican un dispositivo de impresora y un puerto, así como un índice que especifica el tipo de datos que la función va a recuperar.
+La función [**DeviceCapabilities**](/windows/win32/api/wingdi/nf-wingdi-devicecapabilitiesa) recupera datos específicos de las impresoras, incluido el número de papeleras de papel disponibles, las funcionalidades dúplex de la impresora, las resoluciones admitidas por la impresora, el tamaño máximo y mínimo de papel admitido, y así sucesivamente. Una aplicación recupera estos datos mediante el suministro de cadenas que especifican un puerto y un dispositivo de impresora, así como un índice que especifica el tipo de datos que va a recuperar la función.
 
  
 

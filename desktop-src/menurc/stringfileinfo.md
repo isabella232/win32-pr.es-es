@@ -1,9 +1,9 @@
 ---
-title: Estructura StringFileInfo
+title: StringFileInfo (estructura)
 description: Representa la organización de los datos en un recurso de versión de archivo. Contiene información de versión que se puede mostrar para un idioma y una página de códigos determinados.
 ms.assetid: dda38fee-e8ea-4e58-b5ee-72e4cdb08f42
 keywords:
-- Menús de la estructura StringFileInfo y otros recursos
+- Menús de estructura StringFileInfo y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f252077a5536194e635281d4b4178a457f7a82cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e130090c7281f6ef61ed0a3a82b822863bb5c12ff1194e26b07a70467db82cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720835"
 ---
-# <a name="stringfileinfo-structure"></a>Estructura StringFileInfo
+# <a name="stringfileinfo-structure"></a>StringFileInfo (estructura)
 
 Representa la organización de los datos en un recurso de versión de archivo. Contiene información de versión que se puede mostrar para un idioma y una página de códigos determinados.
 
@@ -47,18 +47,18 @@ typedef struct {
 **wLength**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-La longitud, en bytes, del bloque **StringFileInfo** completo, incluidas todas las estructuras indicadas por el miembro **secundario** .
+Longitud, en bytes, de todo el **bloque StringFileInfo,** incluidas todas las estructuras indicadas por el **miembro** Children.
 
 </dd> <dt>
 
 **wValueLength**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -69,11 +69,11 @@ Este miembro siempre es igual a cero.
 **wType**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-El tipo de datos del recurso de versión. Este miembro es 1 si el recurso de versión contiene datos de texto y 0 si el recurso de versión contiene datos binarios.
+Tipo de datos en el recurso de versión. Este miembro es 1 si el recurso de versión contiene datos de texto y 0 si el recurso de versión contiene datos binarios.
 
 </dd> <dt>
 
@@ -84,18 +84,18 @@ Tipo: **WCHAR**
 
 </dd> <dd>
 
-Cadena Unicode L "StringFileInfo".
+Cadena Unicode L"StringFileInfo".
 
 </dd> <dt>
 
 **Relleno**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Tantas palabras como sea necesario para alinear el miembro **secundario** en un límite de 32 bits.
+Tantas palabras cero como sea necesario para alinear el **miembro Children** en un límite de 32 bits.
 
 </dd> <dt>
 
@@ -106,15 +106,15 @@ Tipo: **[ **StringTable**](stringtable.md)**
 
 </dd> <dd>
 
-Una matriz de una o más estructuras de [**StringTable**](stringtable.md) . Cada miembro **szKey** de la estructura **stringtable** indica el idioma y la página de códigos adecuados para mostrar el texto en esa estructura de **stringtable** .
+Matriz de una o varias estructuras [**StringTable.**](stringtable.md) El miembro **szKey** de cada estructura **StringTable** indica el idioma y la página de códigos adecuados para mostrar el texto en esa **estructura StringTable.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura no es una estructura de lenguaje C verdadera porque contiene miembros de longitud variable. Esta estructura se creó únicamente para representar la organización de los datos en un recurso de versión y no aparece en ninguno de los archivos de encabezado incluidos en el kit de desarrollo de software (SDK) de Windows.
+Esta estructura no es una estructura verdadera del lenguaje C porque contiene miembros de longitud variable. Esta estructura se creó únicamente para representar la organización de datos en un recurso de versión y no aparece en ninguno de los archivos de encabezado incluidos con el Kit de desarrollo de software (SDK) de Windows.
 
-El miembro **secundario** de la estructura de [**vs \_ versionInfo**](vs-versioninfo.md) puede contener cero o más estructuras **StringFileInfo** .
+El **miembro Children** de la estructura VS [**\_ VERSIONINFO**](vs-versioninfo.md) puede contener cero o más **estructuras StringFileInfo.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -137,13 +137,13 @@ El miembro **secundario** de la estructura de [**vs \_ versionInfo**](vs-version
 [**StringTable**](stringtable.md)
 </dt> <dt>
 
-[**String@**](string-str.md)
+[**String**](string-str.md)
 </dt> <dt>
 
-[**VS \_ versionInfo**](vs-versioninfo.md)
+[**VS \_ VERSIONINFO**](vs-versioninfo.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Información de versión](version-information.md)

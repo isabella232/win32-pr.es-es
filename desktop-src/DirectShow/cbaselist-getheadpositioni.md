@@ -1,7 +1,7 @@
 ---
 description: El método GetHeadPositionI recupera la posición del primer elemento de la lista.
 ms.assetid: a18c01dc-6bff-4250-9970-fe378decadf7
-title: Método CBaseList. GetHeadPositionI (Wxlist. h)
+title: Método CBaseList.GetHeadPositionI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9a8cf19038fd61d2fc50346743b62e7d8c251236
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3be7ccf445f229ca60a35ada245fb0c0fc779d3cdb01c4d8f8af0582f0073b51
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635245"
 ---
-# <a name="cbaselistgetheadpositioni-method"></a>CBaseList. GetHeadPositionI, método
+# <a name="cbaselistgetheadpositioni-method"></a>Método CBaseList.GetHeadPositionI
 
 El `GetHeadPositionI` método recupera la posición del primer elemento de la lista.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de posición o **null** si la lista está vacía.
+Devuelve un valor POSITION o **NULL si** la lista está vacía.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve un valor de posición o **null** si la lista está vacía.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve un valor de posición o **null** si la lista está vacía.
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

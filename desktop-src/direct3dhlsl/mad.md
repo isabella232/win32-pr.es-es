@@ -1,9 +1,9 @@
 ---
 title: mad (función)
-description: Realiza una operación aritmética de multiplicación/suma con tres valores.
+description: Realiza una operación aritmética de multiplicación y adición en tres valores.
 ms.assetid: 2e58229d-2387-4319-adc6-2d66eda88bd1
 keywords:
-- HLSL de la función de Mad
+- función loca HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 208b1bbc87c430ca5a58a70fb3c86f9edae762bf
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 52e0e4819e4c78f092ee99c78403ace5d0205037db3096dfe45865c2216d486d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104487166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788825"
 ---
 # <a name="mad-function"></a>mad (función)
 
-Realiza una operación aritmética de multiplicación/suma con tres valores.
+Realiza una operación aritmética de multiplicación y adición en tres valores.
 
 ## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 numeric mad(
-  in numeric mvalue,
-  in numeric avalue,
-  in numeric bvalue
+  in numeric mvalue,
+  in numeric avalue,
+  in numeric bvalue
 );
 ```
 
@@ -38,28 +38,28 @@ numeric mad(
 
 <dl> <dt>
 
-*mvalue* \[ de\]
+*mvalue* \[ En\]
 </dt> <dd>
 
-Tipo: **Numeric**
+Tipo: **numérico**
 
 Valor de multiplicación.
 
 </dd> <dt>
 
-*un valorque* \[ de\]
+*avalue* \[ En\]
 </dt> <dd>
 
-Tipo: **Numeric**
+Tipo: **numérico**
 
 Primer valor de suma.
 
 </dd> <dt>
 
-*bValue* \[ de\]
+*bvalue* \[ En\]
 </dt> <dd>
 
-Tipo: **Numeric**
+Tipo: **numérico**
 
 Segundo valor de suma.
 
@@ -67,13 +67,13 @@ Segundo valor de suma.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **Numeric**
+Tipo: **numérico**
 
-Resultado de *mvalue* \* *un valorque*  +  *bValue*.
+Resultado de *mvalue* \* *avalue*  +  *bvalue*.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -81,27 +81,27 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 
- 
+ 
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
-Los autores del sombreador pueden usar el intrínsecas de **Mad** para dirigirse explícitamente a la instrucción de hardware de **Mad** en el resultado del sombreador compilado, lo que es especialmente útil con los sombreadores que marcan los resultados con la palabra clave [precisa](dx-graphics-hlsl-appendix-keywords.md) . La instrucción de **Mad** se puede implementar en hardware como "fusionada", que ofrece mayor precisión que la implementación de una instrucción **mul** seguida de una instrucción **Add** o como un tipo **mul**  +  **Add**.
+Los autores de  sombreadores pueden usar la instrinsía loca para dirigirse explícitamente a la instrucción de **hardware** loca en la salida del sombreador compilada, lo que resulta especialmente útil con sombreadores que marcan los resultados con la palabra clave [precisa.](dx-graphics-hlsl-appendix-keywords.md) La **instrucción loca** se puede implementar en hardware como "fusionada", lo que ofrece una precisión mayor que la implementación de una instrucción **mul** seguida de una instrucción **add,** o como una instrucción **mul**  +  **add**.
 
-Si los autores del sombreador usan el intrínsecas de **Mad** para calcular un resultado que el sombreador marcó como preciso, indican al hardware que use cualquier implementación válida de la instrucción de **Mad** (fusionada o no), siempre que la implementación sea coherente para todos los usos de la función intrínseca de **Mad** en cualquier sombreador de ese hardware. Los sombreadores pueden aprovechar mejor las posibles mejoras de rendimiento mediante el uso de una instrucción nativa de **Mad** (frente a la   +  **adición** de Mul) en algún hardware. El resultado de realizar una instrucción de hardware de **Mad** nativa puede ser o no diferente de la realización de un **mul** seguido de una **adición**. Sin embargo, en cualquier caso, el resultado debe ser coherente para que se produzca la misma operación en varios sombreadores o en partes diferentes de un sombreador.
+Si los autores del sombreador usan la instrinsía loca para calcular un resultado que el  sombreador ha marcado como preciso, indican al hardware que  use cualquier implementación válida de la instrucción loca (fusionada o no), siempre y cuando la implementación sea coherente para todos los usos de ese intrínseco en cualquier sombreador de ese hardware.  A continuación, los sombreadores pueden aprovechar las posibles mejoras de rendimiento mediante una instrucción **loca** nativa (frente a **mul**  +  **add)** en algún hardware. El resultado de realizar una instrucción **de** hardware loca nativa podría ser o no diferente de realizar una **mula** seguida de una **adición de**. Sin embargo, sea cual sea el resultado, el resultado debe ser coherente para que la misma operación se produzca en varios sombreadores o en distintas partes de un sombreador.
 
 ## <a name="see-also"></a>Vea también
 
@@ -113,9 +113,9 @@ Si los autores del sombreador usan el intrínsecas de **Mad** para calcular un r
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

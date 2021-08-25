@@ -1,7 +1,7 @@
 ---
-description: Porcentaje de tiempo de procesamiento de datos de sombreador.
+description: Porcentaje de tiempo de procesamiento de datos del sombreador.
 ms.assetid: 388bb943-c25f-4b50-b7e4-d6259f1186c2
-title: D3DDEVINFO_D3D9STAGETIMINGS estructura (D3D9Types. h)
+title: D3DDEVINFO_D3D9STAGETIMINGS estructura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: cf8c9522decfcbb09a60aff0bee65ca05a0f5eeb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: eb4302b86d31c074f58fd003601557864aee152da9e532771336097f4228ea61
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676735"
 ---
-# <a name="d3ddevinfo_d3d9stagetimings-structure"></a>D3DDEVINFO \_ estructura D3D9STAGETIMINGS
+# <a name="d3ddevinfo_d3d9stagetimings-structure"></a>D3DDEVINFO \_ D3D9STAGETIMINGS (estructura)
 
-Porcentaje de tiempo de procesamiento de datos de sombreador.
+Porcentaje de tiempo de procesamiento de datos del sombreador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,26 +43,26 @@ typedef struct D3DDEVINFO_D3D9STAGETIMINGS {
 **MemoryProcessingPercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Porcentaje de tiempo en el sombreador empleado en el acceso a la memoria.
+Porcentaje de tiempo dedicado al sombreador en accesos a memoria.
 
 </dd> <dt>
 
 **ComputationProcessingPercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Porcentaje de tiempo de procesamiento (movimiento de datos en registros o en operaciones matemáticas).
+Porcentaje de procesamiento de tiempo (mover datos en registros o realizar operaciones matemáticas).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para obtener el mejor rendimiento, se recomienda una carga equilibrada.
 
@@ -72,7 +72,7 @@ Para obtener el mejor rendimiento, se recomienda una carga equilibrada.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

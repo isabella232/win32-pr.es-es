@@ -1,7 +1,7 @@
 ---
 description: Recupera información asociada a un subtipo.
 ms.assetid: 3daf5f37-9e7f-4ce1-bd35-d7e3c2ef5c28
-title: 'IPStore:: GetSubtypeInfo (método) (pstore. h)'
+title: Método IPStore::GetSubtypeInfo (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: db7cb02d1c21b8bb1717514a6347339065e4f112
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d97b1f710344acf2c635adb5109175d017fc568d87673f5565e1be5b22e06cf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749845"
 ---
-# <a name="ipstoregetsubtypeinfo-method"></a>IPStore:: GetSubtypeInfo (método)
+# <a name="ipstoregetsubtypeinfo-method"></a>Método IPStore::GetSubtypeInfo
 
-\[El almacenamiento protegido (pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para las operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en las versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura proporcionada por las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[Protected Storage (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede que no esté disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Recupera información asociada a un subtipo.
 
@@ -45,7 +45,7 @@ HRESULT GetSubtypeInfo(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
 Área de almacenamiento del proveedor.
@@ -54,8 +54,8 @@ HRESULT GetSubtypeInfo(
 
 | Value                                                                                                                                                                                                                                                   | Significado                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**Archivo pst \_ \_ \_ Usuario actual clave**</dt> <dt>0x00000000</dt> </dl>    | El almacenamiento se mantiene en la sección usuario actual del registro.<br/>  |
-| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**Archivo pst \_ \_ \_ Máquina local de claves**</dt> <dt>0x00000001</dt> </dl> | El almacenamiento se mantiene en la sección del equipo local del registro.<br/> |
+| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**PST \_ Clave \_ de \_ usuario actual**</dt> <dt>0x00000000</dt> </dl>    | El almacenamiento se mantiene en la sección de usuario actual del Registro.<br/>  |
+| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**PST \_ CLAVE \_ LOCAL \_ MACHINE**</dt> <dt>0x00000001</dt> </dl> | El almacenamiento se mantiene en la sección máquina local del registro.<br/> |
 
 
 
@@ -63,37 +63,37 @@ HRESULT GetSubtypeInfo(
 
 </dd> <dt>
 
-*pType* \[ de\]
+*pType* \[ En\]
 </dt> <dd>
 
-Un puntero a un GUID que identifica el tipo de datos del almacenamiento.
+Puntero a un GUID que identifica el tipo de datos del almacenamiento.
 
 </dd> <dt>
 
-*pSubtype* \[ de\]
+*pSubtype* \[ En\]
 </dt> <dd>
 
-Un puntero a un GUID que identifica el subtipo de datos del almacenamiento.
+Puntero a un GUID que identifica el subtipo de datos del almacenamiento.
 
 </dd> <dt>
 
-*ppInfo* \[ de\]
+*ppInfo* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ TYPEINFO de PST**](pst-typeinfo.md) .
+Puntero a una [**estructura \_ TYPEINFO de PST.**](pst-typeinfo.md)
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Reserved: debe establecerse en cero.
+Reservado: debe establecerse en cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un valor **HRESULT** . Un valor de PST \_ E \_ OK indica que la función se realizó correctamente.
+El valor devuelto es un **valor HRESULT.** Un valor de PST \_ E OK indica que la función se ha realizado \_ correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,7 +101,7 @@ El valor devuelto es un valor **HRESULT** . Un valor de PST \_ E \_ OK indica qu
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| Encabezado<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | Archivo DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 
@@ -113,7 +113,7 @@ El valor devuelto es un valor **HRESULT** . Un valor de PST \_ E \_ OK indica qu
 [**IPStore**](ipstore.md)
 </dt> <dt>
 
-[**TYPEINFO de PST \_**](pst-typeinfo.md)
+[**PST \_ TYPEINFO**](pst-typeinfo.md)
 </dt> </dl>
 
  

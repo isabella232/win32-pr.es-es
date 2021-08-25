@@ -1,7 +1,7 @@
 ---
-description: El \_ método put WindowStyleEx establece los estilos extendidos de ventana.
+description: El método put \_ WindowStyleEx establece los estilos de ventana extendidos.
 ms.assetid: 3c5928fe-7cd3-4e1c-9a3f-fa6d7a73dbc3
-title: Método CBaseControlWindow.put_WindowStyleEx (Ctlutil. h)
+title: CBaseControlWindow.put_WindowStyleEx método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7ee04cf2d2b2dcaafdaf4e989fd1118abf447698
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 48bdfba6b388d4595af3ba886ed97567c12f080953e238c03d8a5fb36f7a6ce4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635545"
 ---
-# <a name="cbasecontrolwindowput_windowstyleex-method"></a>CBaseControlWindow. put \_ WindowStyleEx (método)
+# <a name="cbasecontrolwindowput_windowstyleex-method"></a>Método CBaseControlWindow.put \_ WindowStyleEx
 
-El `put_WindowStyleEx` método establece los estilos extendidos de ventana.
+El `put_WindowStyleEx` método establece los estilos de ventana extendidos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ HRESULT put_WindowStyleEx(
 
 <dl> <dt>
 
-*WindowStyleEx* \[ de\]
+*WindowStyleEx* \[ En\]
 </dt> <dd>
 
 Valor que especifica el estilo de la ventana de control.
@@ -51,22 +51,22 @@ Valor que especifica el estilo de la ventana de control.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve NoError.
+Devuelve NOERROR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método usa estilos extendidos de ventana. Para obtener una lista completa de los estilos de ventana extendidos, vea la función **CreateWindowEx** de Microsoft Win32. Para cambiar el estilo de ventana, recupere el estilo de ventana actual y, a continuación, agregue o quite los campos de bits necesarios.
+Este método usa estilos de ventana extendidos. Para obtener una lista completa de los estilos de ventana extendidos, consulte la función **CreateWindowEx de** Microsoft Win32. Para cambiar el estilo de la ventana, recupere el estilo de ventana actual y agregue o quite los campos de bits necesarios.
 
-No utilice los siguientes estilos de ventana porque no se validan.
+No use los siguientes estilos de ventana porque no están validados.
 
--   WS \_ deshabilitado
+-   WS \_ DISABLED
 -   WS \_ HSCROLL
--   iconos de WS \_
--   \_maximizar WS
--   \_minimizar WS
+-   WS \_ ICONIC
+-   WS \_ MAXIMIZE
+-   WS \_ MINIMIZE
 -   WS \_ VSCROLL
 
-Con algunas excepciones (que se indican aquí), las marcas aceptables son las mismas que las permitidas por la función **CreateWindow** de Win32.
+Con algunas excepciones (anotadas aquí), las marcas aceptables son las mismas que las permitidas por la función **CreateWindow de** Win32.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ Con algunas excepciones (que se indican aquí), las marcas aceptables son las mi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Con algunas excepciones (que se indican aquí), las marcas aceptables son las mi
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

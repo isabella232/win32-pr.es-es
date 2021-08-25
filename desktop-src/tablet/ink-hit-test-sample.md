@@ -1,29 +1,29 @@
 ---
-description: En este ejemplo se muestran dos métodos para buscar la tinta, dada una ubicación de pantalla.
+description: En este ejemplo se muestran dos métodos para buscar la entrada de lápiz, dada una ubicación de pantalla.
 ms.assetid: fc581da4-0a7b-4c31-8f73-0784066fcc56
-title: Ejemplo de prueba de posicionamiento de tinta
+title: Ejemplo de prueba de inyección de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d25e6cbc0ed471384bea0cc1977dd38d3ae4830
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 995bd6f14b4a0a014452ae9392fa744ab93f01f9047c79e5dc30652c243473db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713085"
 ---
-# <a name="ink-hit-test-sample"></a>Ejemplo de prueba de posicionamiento de tinta
+# <a name="ink-hit-test-sample"></a>Ejemplo de prueba de inyección de lápiz
 
-En este ejemplo se muestran dos métodos para buscar la tinta, dada una ubicación de pantalla.
+En este ejemplo se muestran dos métodos para buscar la entrada de lápiz, dada una ubicación de pantalla.
 
 En este ejemplo se usan las siguientes características:
 
--   Usar un recolector de tinta
--   Realización de una prueba de posicionamiento
+-   Uso de un recopilador de entrada de lápiz
+-   Realización de una prueba de impacto
 -   Buscar el punto más cercano
 
-## <a name="accessing-the-ink-api"></a>Acceso a la API de entrada manuscrita
+## <a name="accessing-the-ink-api"></a>Acceso a Ink API
 
-En primer lugar, haga referencia a las clases de Tablet PC, que se encuentran en el kit de desarrollo de software (SDK) de Windows Vista o Windows XP Tablet PC Edition.
+En primer lugar, haga referencia a las clases de Tablet PC, que se encuentran en Windows Vista o Windows KIT de desarrollo de software (SDK) de XP Tablet PC Edition.
 
 
 ```C++
@@ -32,14 +32,14 @@ using Microsoft.Ink;
 
 
 
-## <a name="handling-form-load-and-paint-events"></a>Controlar los eventos de carga y de dibujo del formulario
+## <a name="handling-form-load-and-paint-events"></a>Controlar la carga de formularios y Paint eventos
 
-El controlador de eventos de carga del formulario:
+Controlador de eventos Load del formulario:
 
--   Crea un objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) , IC, para el formulario.
--   Establece la propiedad [si CollectionMode es](/previous-versions/ms836497(v=msdn.10)) del objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) para omitir los gestos.
--   Habilita [InkCollector](/previous-versions/ms583683(v=vs.100)).
--   Establece la propiedad [AutoRedraw](/previous-versions/ms836495(v=msdn.10)) del objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) en **true**.
+-   Crea un [objeto InkCollector,](/previous-versions/ms583683(v=vs.100)) ic, para el formulario.
+-   Establece la propiedad [CollectionMode](/previous-versions/ms836497(v=msdn.10)) del objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) para omitir los gestos.
+-   Habilita [InkCollector.](/previous-versions/ms583683(v=vs.100))
+-   Establece la propiedad [AutoRedraw](/previous-versions/ms836495(v=msdn.10)) del objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) en **TRUE.**
 
 
 ```C++
@@ -58,7 +58,7 @@ ic.Enabled = true;ic.AutoRedraw = true;
 
 El controlador de eventos Paint del formulario comprueba el modo de aplicación:
 
--   En el modo HitTest, pinta un círculo alrededor del cursor. La plumilla activa se establece en el método handleHitTest de la aplicación.
+-   En el modo HitTest, pinta un círculo alrededor del cursor. El lápiz activo se establece en el método handleHitTest de la aplicación.
 -   En el modo NearestPoint, pinta una línea roja entre el cursor y el punto más cercano al cursor. El punto más cercano se calcula en el método handleNearestPoint de la aplicación.
 
 
@@ -75,29 +75,29 @@ else if( mode == ApplicationMode.NearestPoint )
 
 
 
-Este ejemplo tiene un algoritmo Repaint muy sencillo. Con su propiedad [AutoRedraw](/previous-versions/ms836495(v=msdn.10)) establecida en **true**, el recopilador de tinta se vuelve a dibujar cuando se vuelve a dibujar el formulario. Para simplificar la redibujo del formulario, la aplicación realiza un seguimiento de un cuadro de límite, la variable miembro invalidateRect, para el área en la que se agrega Paint, que se invalida cada vez que se vuelve a dibujar el formulario.
+Este ejemplo tiene un algoritmo de repintado muy sencillo. Con su [propiedad AutoRedraw](/previous-versions/ms836495(v=msdn.10)) establecida en **TRUE,** el recopilador de entrada manuscrita se vuelve a dibujar cuando se vuelve a dibujar el formulario. Para simplificar el volver a dibujar el formulario, la aplicación realiza un seguimiento de un cuadro de límite, la variable miembro invalidateRect, para el área donde se agrega la pintura, que se invalida cada vez que se vuelve a dibujar el formulario.
 
-## <a name="handling-menu-events"></a>Control de eventos de menú
+## <a name="handling-menu-events"></a>Controlar eventos de menú
 
-El comando Exit deshabilita [InkCollector](/previous-versions/ms583683(v=vs.100)) antes de salir de la aplicación.
+El comando Exit deshabilita [InkCollector antes](/previous-versions/ms583683(v=vs.100)) de salir de la aplicación.
 
-El comando de entrada manuscrita actualiza el modo de aplicación y el estado del menú, habilita el recopilador de tinta y invalida la región que se ha pintado previamente del formulario.
+El comando Ink actualiza el modo de aplicación y el estado del menú, habilita el recopilador de lápiz e invalida la región dibujada previamente del formulario.
 
-Los comandos de la prueba de posicionamiento y del punto más cercano cambian el cursor, actualizan el modo de aplicación y el estado del menú, deshabilitan el recopilador de tinta e invalidan la región dibujada anteriormente del formulario.
+Los comandos Prueba de acceso y Punto más cercano cambian el cursor, actualizan el modo de aplicación y el estado del menú, deshabilitan el recopilador de lápiz e invalidan la región dibujada previamente del formulario.
 
-¡ Desactive! el comando deshabilita [InkCollector](/previous-versions/ms583683(v=vs.100)) mientras se reemplaza la propiedad de [entrada manuscrita](/previous-versions/ms836505(v=msdn.10)) del objeto InkCollector con un nuevo objeto de [entrada manuscrita](/previous-versions/ms571716(v=vs.100)) , genera un evento de comando de entrada manuscrita y fuerza una actualización en el control.
+El clear! El comando deshabilita [InkCollector](/previous-versions/ms583683(v=vs.100)) al reemplazar la propiedad Ink del objeto [InkCollector](/previous-versions/ms836505(v=msdn.10)) por un nuevo objeto [Ink,](/previous-versions/ms571716(v=vs.100)) genera un evento de comando Ink y fuerza una actualización en el control.
 
-## <a name="handling-mouse-events"></a>Controlar eventos del mouse
+## <a name="handling-mouse-events"></a>Control de eventos del mouse
 
-El controlador de eventos [MouseMove](/previous-versions/ms567617(v=vs.100)) comprueba el modo de aplicación:
+El [controlador de eventos MouseMove](/previous-versions/ms567617(v=vs.100)) comprueba el modo de aplicación:
 
--   En el modo de tinta, no hace nada, lo que permite que el recolector de tintas recopile normalmente la tinta.
+-   En el modo ink, no hace nada, lo que permite que el recopilador de lápiz re recolecte la entrada de lápiz con normalidad.
 -   En el modo HitTest, envía los argumentos de evento al método handleHitTest de la aplicación.
 -   En el modo NearestPoint, envía los argumentos de evento al método handleNearestPoint de la aplicación.
 
-## <a name="performing-a-hit-test"></a>Realización de una prueba de posicionamiento
+## <a name="performing-a-hit-test"></a>Realización de una prueba de impacto
 
-El método handleHitTest de la aplicación crea dos puntos, la ubicación del cursor y un punto alcanza los píxeles distantes del cursor y, a continuación, convierte estos dos puntos de píxeles en coordenadas del espacio de la tinta.
+El método handleHitTest de la aplicación crea dos puntos, la ubicación del cursor y un punto HitSize píxeles alejados del cursor y, a continuación, convierte estos dos puntos de píxeles a coordenadas de espacio de entrada de lápiz.
 
 
 ```C++
@@ -114,7 +114,7 @@ using (Graphics g = CreateGraphics())
 
 
 
-A continuación, el objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) usa el método [Microsoft. Ink. Ink. HitTest ()](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90)) para buscar los trazos que se encuentran dentro de PT3. X-PT2. X las unidades de espacio de la tinta del cursor, PT2.
+A continuación, el objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) usa el método [Microsoft.Ink.Ink.HitTest()](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90)) para buscar los trazos que están dentro de pt3. X - pt2. X unidades de espacio de entrada de lápiz del cursor, pt2.
 
 
 ```C++
@@ -123,11 +123,11 @@ Strokes strokes = ic.Ink.HitTest(pt2, (float)(pt3.X - pt2.X));
 
 
 
-A continuación, el método handleHitTest establece el color de la pluma en función de si se han encontrado trazos, invalida la región invalidateRect, calcula una nueva región en la que se dibuja el círculo de la prueba de posicionamiento y, a continuación, invalida la nueva región.
+A continuación, el método handleHitTest establece el color del lápiz en función de si se encontraron trazos, invalida la región invalidateRect, calcula una nueva región en la que se dibuja el círculo de prueba de impacto y, a continuación, invalida la nueva región.
 
 ## <a name="locating-the-nearest-point"></a>Buscar el punto más cercano
 
-El método handleNearestPoint de la aplicación crea dos puntos iguales a la ubicación del cursor, uno de estos puntos, PT, se convierte en el espacio de la tinta y se usa en la llamada al método NearestPoint del objeto de [entrada de lápiz](/previous-versions/ms836505(v=msdn.10)) de [InkCollector](/previous-versions/ms583683(v=vs.100)). El método NearestPoint devuelve el objeto de [trazo](/previous-versions/ms827842(v=msdn.10)) más cercano al punto y establece el parámetro de salida de índice de punto flotante.
+El método handleNearestPoint de la aplicación crea dos puntos iguales a la ubicación del cursor, uno de estos puntos, pt, se convierte en espacio de entrada de lápiz y se usa en la llamada al método NearestPoint del objeto [InkCollector.](/previous-versions/ms583683(v=vs.100)) [](/previous-versions/ms836505(v=msdn.10)) El método NearestPoint devuelve el [objeto Stroke](/previous-versions/ms827842(v=msdn.10)) más cercano al punto y establece el parámetro de salida del índice de punto flotante.
 
 
 ```C++
@@ -148,13 +148,13 @@ using (Graphics g = CreateGraphics())
 
 
 
-Si no hay trazos presentes, el método NearestPoint devuelve **null** y la ubicación del cursor se usa como el punto más cercano. De lo contrario, se calcula la ubicación en el trazo que corresponde al índice de punto flotante.
+Si no hay trazos, el método NearestPoint devuelve **NULL** y la ubicación del cursor se usa como punto más cercano. De lo contrario, se calcula la ubicación en el trazo que corresponde al índice de punto flotante.
 
-A continuación, las coordenadas de punto más cercanas se convierten a píxeles desde el espacio de tinta, el método handleNearestPoint invalida la región invalidateRect, calcula una nueva región en la que se dibuja la línea en el punto más cercano e invalida también la nueva región.
+A continuación, las coordenadas de punto más cercanas se convierten en píxeles desde el espacio de entrada de lápiz. El método handleNearestPoint invalida la región invalidateRect, calcula una nueva región en la que se dibuja la línea hasta el punto más cercano e invalida también la nueva región.
 
-## <a name="closing-the-form"></a>Cierre del formulario
+## <a name="closing-the-form"></a>Cerrar el formulario
 
-El método Dispose del formulario desecha el objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) .
+El método Dispose del formulario elimina el [objeto InkCollector.](/previous-versions/ms583683(v=vs.100))
 
  
 

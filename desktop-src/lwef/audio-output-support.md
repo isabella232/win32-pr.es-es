@@ -1,25 +1,25 @@
 ---
-title: Compatibilidad con la salida de audio
-description: Compatibilidad con la salida de audio
+title: Compatibilidad con salidas de audio
+description: Compatibilidad con salidas de audio
 ms.assetid: 28b7b1dc-0bf2-46db-b114-f93e460d958f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22deeed98eb8f9850690e19ac086aba42b78f80a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9cedb1426ef8995886029b682cc98bb3a27ae322169441e609c9e101a3270c18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726195"
 ---
-# <a name="audio-output-support"></a>Compatibilidad con la salida de audio
+# <a name="audio-output-support"></a>Compatibilidad con salidas de audio
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-El agente de Microsoft le permite usar archivos de audio para la salida de un carácter. Puede grabar archivos de audio y usar el método [**Speak**](speak-method.md) para reproducir los datos. Los servicios de animación de agente de Microsoft admiten automáticamente Lip: sincronizando la boca de caracteres mediante las características de audio del archivo de audio. El agente de Microsoft también admite un formato especial para los archivos de audio, que incluye información adicional de fonema y de separación de palabras para ofrecer compatibilidad con la sincronización de Lip más mejorada. Puede generar este formato especial mediante la herramienta de edición de sonido lingüístico de Microsoft.
+Microsoft Agent permite usar archivos de audio para la salida hablada de un carácter. Puede grabar archivos de audio y usar el [**método Speak**](speak-method.md) para reproducir los datos. Los servicios de animación de Microsoft Agent admiten automáticamente la sincronización de caracteres mediante las características de audio del archivo de audio. Microsoft Agent también admite un formato especial para los archivos de audio, que incluye información adicional de phoneme e interrupción de palabras para mejorar la compatibilidad con sincronización de sincronización. Puede generar este formato especial mediante la herramienta de edición de sonidos de información lingüística de Microsoft.
 
- 
+ 
 
- 
+ 
 
 
 

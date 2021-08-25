@@ -1,7 +1,7 @@
 ---
-description: El método GetSerializedSize calcula el tamaño del búfer necesario para contener una interfaz serializada de IPortableDeviceValues.
+description: El método GetSerializedSize calcula el tamaño de búfer necesario para contener una interfaz IPortableDeviceValues serializada.
 ms.assetid: 12fa6ed1-ce3b-4c5d-920a-87ff693fe0ea
-title: 'IWpdSerializer:: GetSerializedSize (método) (PortableDeviceTypes. h)'
+title: Método IWpdSerializer::GetSerializedSize (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 7b50f7f6158145cd71125b5e5f26649712bb065b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae6b8381928c64b7d16e9f5daa4dd9fd85acd9b61c13531365d871563ef6afe0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704525"
 ---
-# <a name="iwpdserializergetserializedsize-method"></a>IWpdSerializer:: GetSerializedSize (método)
+# <a name="iwpdserializergetserializedsize-method"></a>IWpdSerializer::GetSerializedSize (método)
 
-El método **GetSerializedSize** calcula el tamaño del búfer necesario para contener una interfaz serializada de [**IPortableDeviceValues**](iportabledevicevalues.md) .
+El **método GetSerializedSize** calcula el tamaño de búfer necesario para contener una interfaz [**IPortableDeviceValues**](iportabledevicevalues.md) serializada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,30 +41,30 @@ HRESULT GetSerializedSize(
 
 <dl> <dt>
 
-*pSource* \[ de\]
+*pSource* \[ En\]
 </dt> <dd>
 
-Puntero a una interfaz [**IPortableDeviceValues**](iportabledevicevalues.md) cuyo tamaño se desea solicitar.
+Puntero a una [**interfaz IPortableDeviceValues**](iportabledevicevalues.md) cuyo tamaño desea solicitar.
 
 </dd> <dt>
 
-*pdwSize* \[ enuncia\]
+*pdwSize* \[ out\]
 </dt> <dd>
 
-Puntero a un **valor DWORD** que indica el tamaño del búfer necesario para serializar *pSource*, en bytes.
+Puntero a un **DWORD** que indica el tamaño de búfer necesario para *serializar pSource*, en bytes.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                                   | Descripción                                                            |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se ha llevado a cabo de forma correcta.<br/>                                       |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | Un argumento de puntero necesario era **null**.<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se ha llevado a cabo de forma correcta.<br/>                                       |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Un argumento de puntero necesario era **NULL.**<br/>                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No había suficiente memoria disponible para crear el búfer.<br/> |
 
 
@@ -77,8 +77,8 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**Interfaz IWpdSerializer**](iwpdserializer.md)
+[**IWpdSerializer (Interfaz)**](iwpdserializer.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXSHPRTCompSuperCluster: se usa con los resultados comprimidos de la versión de vértice del simulador de transferencia de radiancia (PRT) precalutado.'
+description: 'Función D3DXSHPRTCompSuperCluster: se usa con los resultados comprimidos de la versión de vértice del simulador de transferencia de radiancia precompilada (PRT).'
 ms.assetid: 0ec28b8c-5010-48a4-8e45-d7f9aa08185f
 title: Función D3DXSHPRTCompSuperCluster (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0c22c8a3a14fd8af3e9104889b421068c7ff1457
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 55556046c7fa8e0a8e7666a9d2dd0a20d81b5f3cf59253f499cbd7d0fba41fbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749835"
 ---
 # <a name="d3dxshprtcompsupercluster-function"></a>Función D3DXSHPRTCompSuperCluster
 
@@ -86,7 +86,7 @@ Número de clústeres calculados en el simulador.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntero a una matriz de *longitud NumClusters.* Contiene el índice del superc cluster al que se asignó el clúster correspondiente.
+Puntero a una matriz de *longitud NumClusters.* Contiene el índice del super clúster al que se asignó el clúster correspondiente.
 
 </dd> <dt>
 
@@ -116,11 +116,11 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Funciones de transferencia de radiancia precalcaladas](dx9-graphics-reference-d3dx-functions-prt.md)
+[Funciones de transferencia de radiancia precalutadas](dx9-graphics-reference-d3dx-functions-prt.md)
 </dt> </dl>
 
  

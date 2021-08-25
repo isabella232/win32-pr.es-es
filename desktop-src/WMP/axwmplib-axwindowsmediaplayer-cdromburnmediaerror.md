@@ -1,9 +1,9 @@
 ---
-title: Evento CdromBurnMediaError del objeto AxWindowsMediaPlayer
-description: El evento CdromBurnMediaError tiene lugar cuando se produce un error mientras se graba un elemento multimedia individual en un CD.
+title: Evento CdromErrorMediaError del objeto AxWindowsMediaPlayer
+description: El evento CdromErrorMediaError se produce cuando se produce un error al grabar un elemento multimedia individual en un CD.
 ms.assetid: 0847a8a2-1fef-41a0-affb-9fa6bd10b925
 keywords:
-- Evento CdromBurnMediaError del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento CdromErrorMediaError del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d9fac8902fe8700171d2c909e8140c74c8cc3c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba161945edcda7409b842987ab97768c30a6e1f0ba011772cf7f3757d3f61c33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765275"
 ---
-# <a name="cdromburnmediaerror-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromBurnMediaError del objeto AxWindowsMediaPlayer
+# <a name="cdromburnmediaerror-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromErrorMediaError del objeto AxWindowsMediaPlayer
 
-El evento CdromBurnMediaError tiene lugar cuando se produce un error mientras se graba un elemento multimedia individual en un CD.
+El evento CdromErrorMediaError se produce cuando se produce un error al grabar un elemento multimedia individual en un CD.
 
 ``` syntax
 [C#]
@@ -41,28 +41,28 @@ Private Sub player_CdromBurnMediaError(
 
 ## <a name="event-data"></a>Datos del evento
 
-El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromBurnMediaErrorEventHandler**. Este controlador recibe un argumento de tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromBurnMediaErrorEvent**, que contiene las siguientes propiedades relacionadas con este evento.
+El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromErrorMediaErrorEventHandler**. Este controlador recibe un argumento de tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromErrorErrorEvent**, que contiene las siguientes propiedades relacionadas con este evento.
 
 
 
 | Propiedad   | Descripción                                                                                                             |
 |------------|-------------------------------------------------------------------------------------------------------------------------|
-| pCdromBurn | Interfaz WMPLib. IWMPCdromBurnThe que representa la operación de grabación que provocó el error.<br/>               |
-| pMedia     | Elemento multimedia System. ObjectThe que generó el error. Puede convertirlo en una interfaz IWMPMedia para tener acceso a él.<br/> |
+| pCdromRomRom | WMPLib.IWMPCdromRomThe interfaz que representa la operación de grabación que produjo el error.<br/>               |
+| pMedia     | System.ObjectEl elemento multimedia que produjo el error. Puede convertir esto en una interfaz IWMPMedia para acceder a ella.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para capturar errores genéricos, controle el AxWMPLib. \_ \_Evento WMPOCXEvents CdromBurnError.
+Para capturar errores genéricos, controle AxWMPLib. \_ Evento \_ CdromError de WMPOCXEvents.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11<br/>                                                                                         |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
@@ -77,10 +77,10 @@ Para capturar errores genéricos, controle el AxWMPLib. \_ \_Evento WMPOCXEvents
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**Evento AxWindowsMediaPlayer. CdromBurnError (VB y C#)**](axwmplib-axwindowsmediaplayer-cdromburnerror.md)
+[**Evento AxWindowsMediaPlayer.CdromError (VB y C#)**](axwmplib-axwindowsmediaplayer-cdromburnerror.md)
 </dt> <dt>
 
-[**Interfaz IWMPCdromBurn (VB y C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interfaz IWMPCdromRomRom (VB y C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPMedia (VB y C#)**](iwmpmedia--vb-and-c.md)

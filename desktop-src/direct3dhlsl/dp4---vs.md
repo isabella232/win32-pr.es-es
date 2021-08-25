@@ -1,6 +1,6 @@
 ---
-title: DP4-vs
-description: Calcula el producto de cuatro componentes de los registros de origen. | DP4-vs
+title: 'dp4: vs'
+description: 'Calcula el producto de punto de cuatro componentes de los registros de origen. | dp4: vs'
 ms.assetid: ee3d3c8d-6031-4264-80ba-2b200a721310
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,39 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 747695436094dd5d2e9787e3eeca525b292f14c4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d74c053806db14e48f41c5d3b79a67acce640a151cf696a2795a4175ccb5fc89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673855"
 ---
-# <a name="dp4---vs"></a>DP4-vs
+# <a name="dp4---vs"></a>dp4: vs
 
-Calcula el producto de cuatro componentes de los registros de origen.
+Calcula el producto de punto de cuatro componentes de los registros de origen.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| DP4 DST, src0, SRC1 |
+| dp4 dst, src0, src1 |
 |---------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | dp4                    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ Calcula el producto de cuatro componentes de los registros de origen.
 
  
 
-En el siguiente fragmento de código se muestran las operaciones realizadas:
+El fragmento de código siguiente muestra las operaciones realizadas:
 
 
 ```

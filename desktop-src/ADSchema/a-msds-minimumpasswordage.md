@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Minimum-password-Age
-description: Antigüedad mínima de las contraseñas de cuentas de usuario.
+title: Atributo ms-DS-Minimum-Password-Age
+description: Antigüedad mínima para las contraseñas de cuenta de usuario.
 ms.assetid: a51d86ed-9f57-4e7e-b1a0-181e9f0092ba
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Age-password-Age
-- Esquema de AD de atributo msDS-MinimumPasswordAge
+- Esquema de AD del atributo ms-DS-Minimum-Password-Age
+- Esquema de AD del atributo msDS-MinimumPasswordAge
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 294299ee478380530640a1b37e52d9828119b403
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bc6f1884bc608932a93eed1de98b97632d8bc4d319f1d47dd1763e16006d5fff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803935"
 ---
-# <a name="ms-ds-minimum-password-age-attribute"></a>atributo MS-DS-Minimum-password-Age
+# <a name="ms-ds-minimum-password-age-attribute"></a>Atributo ms-DS-Minimum-Password-Age
 
-Antigüedad mínima de las contraseñas de cuentas de usuario.
+Antigüedad mínima para las contraseñas de cuenta de usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-mínimo-contraseña-Age           |
-| Nombre para mostrar de LDAP | msDS-MinimumPasswordAge              |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-Minimum-Password-Age           |
+| Ldap-Display-Name | msDS-MinimumPasswordAge              |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2012              |
-| System-ID-GUID    | 2a74f878-4d9c-49f9-97b3-6767d1cbd9a3 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 2a74f878-4d9c-49f9-97b3-6767d1cbd9a3 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -52,18 +52,18 @@ Antigüedad mínima de las contraseñas de cuentas de usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Configuración de MS-DS-Password**](c-msds-passwordsettings.md)<br/> |
+| Clases usadas en        | [**ms-DS-Password-Configuración**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Antigüedad mínima de las contraseñas de cuentas de usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Configuración de MS-DS-Password**](c-msds-passwordsettings.md)<br/> |
+| Clases usadas en        | [**ms-DS-Password-Configuración**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -94,18 +94,18 @@ Antigüedad mínima de las contraseñas de cuentas de usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Configuración de MS-DS-Password**](c-msds-passwordsettings.md)<br/> |
+| Clases usadas en        | [**ms-DS-Password-Configuración**](c-msds-passwordsettings.md)<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras FONTSIGNATURE y LOCALESIGNATURE.
+description: Los campos de bits del subconjunto Unicode (USB) se usan en las estructuras FONTSIGNATURE y LOCALESIGNATURE.
 ms.assetid: f897dfc7-3e78-48dc-8d3d-6929e2f4ec4d
-title: Campos de códigos de subconjunto Unicode
+title: Campos de bits de subconjunto Unicode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fced251b1bf8e04dd4c0d7d7cb0dca15c8bdfa6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06f0fa4791e62f397e62a99a78d41dbcdc67c55299a650b1bc78bea685205399
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787995"
 ---
-# <a name="unicode-subset-bitfields"></a>Campos de códigos de subconjunto Unicode
+# <a name="unicode-subset-bitfields"></a>Campos de bits de subconjunto Unicode
 
-Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras [**FONTSIGNATURE**](/windows/win32/api/wingdi/ns-wingdi-fontsignature) y [**LOCALESIGNATURE**](/windows/win32/api/wingdi/ns-wingdi-localesignature) .
+Los campos de bits del subconjunto Unicode (USB) se usan en las estructuras [**FONTSIGNATURE**](/windows/win32/api/wingdi/ns-wingdi-fontsignature) [**y LOCALESIGNATURE.**](/windows/win32/api/wingdi/ns-wingdi-localesignature)
 
 
 
@@ -21,7 +21,7 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <thead>
 <tr class="header">
 <th>bit</th>
-<th>Subintervalo Unicode</th>
+<th>Subrango Unicode</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -34,23 +34,23 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="even">
 <td>1</td>
 <td>0080 - 00FF</td>
-<td>Suplemento Latín-1</td>
+<td>Complemento latino-1</td>
 </tr>
 <tr class="odd">
 <td>2</td>
 <td>0100 - 017F</td>
-<td>Latín extendido-A</td>
+<td>Latin Extended-A</td>
 </tr>
 <tr class="even">
 <td>3</td>
 <td>0180 - 024F</td>
-<td>Latín extendido-B</td>
+<td>Latin Extended-B</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">4 $ {REMOVE} $<br />
+<td rowspan="3">4${REMOVE}$<br />
 </td>
 <td>0250 - 02AF</td>
-<td>Extensiones IPA</td>
+<td>Extensiones de IPA</td>
 </tr>
 <tr class="even">
 <td>1D00 - 1D7F</td>
@@ -59,11 +59,11 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 </tr>
 <tr class="odd">
 <td>1D80 - 1DBF</td>
-<td>Suplemento de extensiones fonéticas</td>
+<td>Complemento de extensiones fonéticas</td>
 
 </tr>
 <tr class="even">
-<td rowspan="2">5 $ {REMOVE} $<br />
+<td rowspan="2">5${REMOVE}$<br />
 </td>
 <td>02B0 - 02FF</td>
 <td>Letras modificadoras de espaciado</td>
@@ -74,20 +74,20 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 
 </tr>
 <tr class="even">
-<td rowspan="2">6 $ {REMOVE} $<br />
+<td rowspan="2">6${REMOVE}$<br />
 </td>
 <td>0300 - 036F</td>
 <td>Combinación de marcas diacríticas</td>
 </tr>
 <tr class="odd">
 <td>1DC0 - 1DFF</td>
-<td>Suplemento de combinación de marcas diacríticas</td>
+<td>Combinación del complemento marcas diacríticas</td>
 
 </tr>
 <tr class="even">
 <td>7</td>
 <td>0370 - 03FF</td>
-<td>Griego y cóptico</td>
+<td>Griego y copto</td>
 </tr>
 <tr class="odd">
 <td>8</td>
@@ -95,19 +95,19 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <td>Copto</td>
 </tr>
 <tr class="even">
-<td rowspan="4">9 $ {REMOVE} $<br />
+<td rowspan="4">9${REMOVE}$<br />
 </td>
 <td>0400 - 04FF</td>
 <td>Cirílico</td>
 </tr>
 <tr class="odd">
 <td>0500 - 052F</td>
-<td>Suplemento cirílico</td>
+<td>Complemento cirílico</td>
 
 </tr>
 <tr class="even">
 <td>2DE0 - 2DFF</td>
-<td>Cirílico extendido-A</td>
+<td>Cyrillic Extended-A</td>
 
 </tr>
 <tr class="odd">
@@ -131,20 +131,20 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <td>Vai</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">13 $ {REMOVE} $<br />
+<td rowspan="2">13${REMOVE}$<br />
 </td>
 <td>0600 - 06FF</td>
 <td>Árabe</td>
 </tr>
 <tr class="even">
-<td>0750-077F</td>
-<td>Suplemento Árabe</td>
+<td>0750 - 077F</td>
+<td>Complemento árabe</td>
 
 </tr>
 <tr class="odd">
 <td>14</td>
 <td>07C0 - 07FF</td>
-<td>Símbolo</td>
+<td>Nko</td>
 </tr>
 <tr class="even">
 <td>15</td>
@@ -202,14 +202,14 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <td>Lao</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">26 $ {REMOVE} $<br />
+<td rowspan="2">26${REMOVE}$<br />
 </td>
 <td>10A0 - 10FF</td>
 <td>Georgiano</td>
 </tr>
 <tr class="even">
 <td>2D00 - 2D2F</td>
-<td>Suplemento georgiano</td>
+<td>Complemento de Contrabando</td>
 
 </tr>
 <tr class="odd">
@@ -220,22 +220,22 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="even">
 <td>28</td>
 <td>1100 - 11FF</td>
-<td>Jamo hangul</td>
+<td>Hangul Jamo</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">29 $ {REMOVE} $<br />
+<td rowspan="3">29${REMOVE}$<br />
 </td>
 <td>1E00 - 1EFF</td>
-<td>Latín extendido adicional</td>
+<td>Latin Extended Additional</td>
 </tr>
 <tr class="even">
 <td>2C60 - 2C7F</td>
-<td>Latín extendido-C</td>
+<td>Latin Extended-C</td>
 
 </tr>
 <tr class="odd">
 <td>A720 - A7FF</td>
-<td>Latín extendido-D</td>
+<td>Latin Extended-D</td>
 
 </tr>
 <tr class="even">
@@ -244,7 +244,7 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <td>Griego extendido</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">31 $ {REMOVE} $<br />
+<td rowspan="2">31${REMOVE}$<br />
 </td>
 <td>2000 - 206F</td>
 <td>Puntuación general</td>
@@ -272,27 +272,27 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="even">
 <td>35</td>
 <td>2100 - 214F</td>
-<td>Símbolos de Letterlike</td>
+<td>Símbolos similares a letras</td>
 </tr>
 <tr class="odd">
 <td>36</td>
 <td>2150 - 218F</td>
-<td>Formatos numéricos</td>
+<td>Formularios de número</td>
 </tr>
 <tr class="even">
-<td rowspan="4">37 $ {REMOVE} $<br />
+<td rowspan="4">37${REMOVE}$<br />
 </td>
 <td>2190 - 21FF</td>
 <td>Flechas</td>
 </tr>
 <tr class="odd">
 <td>27F0 - 27FF</td>
-<td>Flechas adicionales-A</td>
+<td>Flechas complementarias A</td>
 
 </tr>
 <tr class="even">
 <td>2900 - 297F</td>
-<td>Flechas adicionales-B</td>
+<td>Flechas complementarias-B</td>
 
 </tr>
 <tr class="odd">
@@ -301,14 +301,14 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 
 </tr>
 <tr class="even">
-<td rowspan="4">38 $ {REMOVE} $<br />
+<td rowspan="4">38${REMOVE}$<br />
 </td>
 <td>2200 - 22FF</td>
 <td>Operadores matemáticos</td>
 </tr>
 <tr class="odd">
 <td>27C0 - 27EF</td>
-<td>Símbolos matemáticos varios: A</td>
+<td>Símbolos matemáticos varios-A</td>
 
 </tr>
 <tr class="even">
@@ -318,13 +318,13 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 </tr>
 <tr class="odd">
 <td>2A00 - 2AFF</td>
-<td>Operadores matemáticos adicionales</td>
+<td>Operadores matemáticos complementarios</td>
 
 </tr>
 <tr class="even">
 <td>39</td>
 <td>2300 - 23FF</td>
-<td>Aspectos técnicos diversos</td>
+<td>Varios técnicos</td>
 </tr>
 <tr class="odd">
 <td>40</td>
@@ -339,17 +339,17 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="odd">
 <td>42</td>
 <td>2460 - 24FF</td>
-<td>Alfanuméricos delimitados</td>
+<td>Caracteres alfanuméricos incluidos</td>
 </tr>
 <tr class="even">
 <td>43</td>
 <td>2500 - 257F</td>
-<td>Dibujo de caja</td>
+<td>Dibujo de cuadro</td>
 </tr>
 <tr class="odd">
 <td>44</td>
 <td>2580 - 259F</td>
-<td>Elementos de bloque</td>
+<td>Elementos block</td>
 </tr>
 <tr class="even">
 <td>45</td>
@@ -369,7 +369,7 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="odd">
 <td>48</td>
 <td>3000 - 303F</td>
-<td>Símbolos y puntuación CJK</td>
+<td>Símbolos y signos de puntuación CJK</td>
 </tr>
 <tr class="even">
 <td>49</td>
@@ -377,7 +377,7 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <td>Hiragana</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">50 $ {REMOVE} $<br />
+<td rowspan="2">50${REMOVE}$<br />
 </td>
 <td>30A0 - 30FF</td>
 <td>Katakana</td>
@@ -388,20 +388,20 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 
 </tr>
 <tr class="odd">
-<td rowspan="2">51 $ {REMOVE} $<br />
+<td rowspan="2">51${REMOVE}$<br />
 </td>
 <td>3100 - 312F</td>
 <td>Bopomofo</td>
 </tr>
 <tr class="even">
 <td>31A0 - 31BF</td>
-<td>Bopomofo extendido</td>
+<td>Bopomofo Extendido</td>
 
 </tr>
 <tr class="odd">
 <td>52</td>
 <td>3130 - 318F</td>
-<td>Compatibilidad con hangul Jamo</td>
+<td>Hangul Compatibility Jamo</td>
 </tr>
 <tr class="even">
 <td>53</td>
@@ -411,7 +411,7 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="odd">
 <td>54</td>
 <td>3200 - 32FF</td>
-<td>Letras y meses CJK delimitados</td>
+<td>Letras y meses CJK incluidos</td>
 </tr>
 <tr class="even">
 <td>55</td>
@@ -421,27 +421,27 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="odd">
 <td>56</td>
 <td>AC00 - D7AF</td>
-<td>Sílabas hangul</td>
+<td>Sílabas de Hangul</td>
 </tr>
 <tr class="even">
 <td>57</td>
-<td>D800-DFFF</td>
-<td>No plano 0. Tenga en cuenta que establecer este bit implica que hay al menos un punto de código suplementario más allá del plano básico multilingüe (BMP) que es compatible con esta fuente. Vea <a href="surrogates-and-supplementary-characters.md">suplentes y caracteres adicionales</a>.</td>
+<td>D800 - DFFF</td>
+<td>No plano 0. Tenga en cuenta que establecer este bit implica que hay al menos un punto de código complementario más allá del plano multilingüe básico (BMP) admitido por esta fuente. Vea <a href="surrogates-and-supplementary-characters.md">Suplentes y caracteres adicionales.</a></td>
 </tr>
 <tr class="odd">
 <td>58</td>
-<td>10900-1091F</td>
-<td>Phoenician</td>
+<td>10900 - 1091F</td>
+<td>Fenicio</td>
 </tr>
 <tr class="even">
-<td rowspan="7">59 $ {REMOVE} $<br />
+<td rowspan="7">59${REMOVE}$<br />
 </td>
 <td>2E80 - 2EFF</td>
-<td>Suplemento de radicales CJK</td>
+<td>Complemento de radicales CJK</td>
 </tr>
 <tr class="odd">
 <td>2F00 - 2FDF</td>
-<td>Radicales kangxi</td>
+<td>Radicales de Rexi</td>
 
 </tr>
 <tr class="even">
@@ -456,17 +456,17 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 </tr>
 <tr class="even">
 <td>3400 - 4DBF</td>
-<td>Extensión A de Ideogramas unificados CJK</td>
+<td>Extensión A de ideogramas unificados de CJK</td>
 
 </tr>
 <tr class="odd">
 <td>4E00 - 9FFF</td>
-<td>Ideogramas unificados CJK</td>
+<td>Ideogramas unificados de CJK</td>
 
 </tr>
 <tr class="even">
-<td>20000-2A6DF</td>
-<td>Extensión de ideogramas unificadas CJK B</td>
+<td>20000 - 2A6DF</td>
+<td>Extensión de ideogramas unificados de CJK B</td>
 
 </tr>
 <tr class="odd">
@@ -475,25 +475,25 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <td>Área de uso privado</td>
 </tr>
 <tr class="even">
-<td rowspan="3">61 $ {REMOVE} $<br />
+<td rowspan="3">61${REMOVE}$<br />
 </td>
 <td>31C0 - 31EF</td>
 <td>Trazos CJK</td>
 </tr>
 <tr class="odd">
 <td>F900 - FAFF</td>
-<td>Ideogramas de compatibilidad CJK</td>
+<td>Ideogramas de compatibilidad de CJK</td>
 
 </tr>
 <tr class="even">
 <td>2F800 - 2FA1F</td>
-<td>Suplemento de los ideogramas de compatibilidad CJK</td>
+<td>Complemento de ideogramas de compatibilidad de CJK</td>
 
 </tr>
 <tr class="odd">
 <td>62</td>
 <td>FB00 - FB4F</td>
-<td>Formularios de presentación alfabética</td>
+<td>Formularios de presentación alfabéticos</td>
 </tr>
 <tr class="even">
 <td>63</td>
@@ -503,33 +503,33 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="odd">
 <td>64</td>
 <td>FE20 - FE2F</td>
-<td>Combinación de medias marcas</td>
+<td>Combinar medias marcas</td>
 </tr>
 <tr class="even">
-<td rowspan="2">65 $ {REMOVE} $<br />
+<td rowspan="2">65${REMOVE}$<br />
 </td>
 <td>FE10 - FE1F</td>
 <td>Formularios verticales</td>
 </tr>
 <tr class="odd">
 <td>FE30 - FE4F</td>
-<td>Formularios de compatibilidad CJK</td>
+<td>Formularios de compatibilidad de CJK</td>
 
 </tr>
 <tr class="even">
 <td>66</td>
 <td>FE50 - FE6F</td>
-<td>Variantes de formato pequeño</td>
+<td>Variantes de formularios pequeños</td>
 </tr>
 <tr class="odd">
 <td>67</td>
 <td>FE70 - FEFF</td>
-<td>Formularios de presentación árabes-B</td>
+<td>Formularios de presentación árabe-B</td>
 </tr>
 <tr class="even">
 <td>68</td>
 <td>FF00 - FFEF</td>
-<td>Formatos de ancho de ancho y de ancho completo</td>
+<td>Formularios Halfwidth y Fullwidth</td>
 </tr>
 <tr class="odd">
 <td>69</td>
@@ -562,19 +562,19 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <td>Myanmar</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">75 $ {REMOVE} $<br />
+<td rowspan="3">75${REMOVE}$<br />
 </td>
 <td>1200 - 137F</td>
-<td>Dígito</td>
+<td>Etíope</td>
 </tr>
 <tr class="even">
-<td>1380-139F</td>
-<td>Suplemento etíope</td>
+<td>1380 - 139F</td>
+<td>Complemento etípico</td>
 
 </tr>
 <tr class="odd">
 <td>2D80 - 2DDF</td>
-<td>Etíope extendido</td>
+<td>Etiopic Extended</td>
 
 </tr>
 <tr class="even">
@@ -585,7 +585,7 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="odd">
 <td>77</td>
 <td>1400 - 167F</td>
-<td>Silábico indígena canadiense unificada</td>
+<td>Sílabas aborígenes canadienses unificadas</td>
 </tr>
 <tr class="even">
 <td>78</td>
@@ -595,17 +595,17 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="odd">
 <td>79</td>
 <td>16A0 - 16FF</td>
-<td>Rúnica</td>
+<td>Rúnico</td>
 </tr>
 <tr class="even">
-<td rowspan="2">80 $ {REMOVE} $<br />
+<td rowspan="2">80${REMOVE}$<br />
 </td>
 <td>1780 - 17FF</td>
 <td>Jemer</td>
 </tr>
 <tr class="odd">
 <td>19E0 - 19FF</td>
-<td>Símbolos Khmer</td>
+<td>Símbolos de Jemer</td>
 
 </tr>
 <tr class="even">
@@ -616,28 +616,28 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="odd">
 <td>82</td>
 <td>2800 - 28FF</td>
-<td>Patrones de Braille</td>
+<td>Patrones de Matriz</td>
 </tr>
 <tr class="even">
-<td rowspan="2">83 $ {REMOVE} $<br />
+<td rowspan="2">83${REMOVE}$<br />
 </td>
 <td>A000 - A48F</td>
-<td>Sílabas Yi</td>
+<td>Sílabas de Yi</td>
 </tr>
 <tr class="odd">
 <td>A490 - A4CF</td>
-<td>Radicales Yi</td>
+<td>Yi Radicals</td>
 
 </tr>
 <tr class="even">
-<td rowspan="4">84 $ {REMOVE} $<br />
+<td rowspan="4">84${REMOVE}$<br />
 </td>
 <td>1700 - 171F</td>
 <td>Tagalo</td>
 </tr>
 <tr class="odd">
 <td>1720 - 173F</td>
-<td>Hanunno</td>
+<td>Hanmioo</td>
 
 </tr>
 <tr class="even">
@@ -652,33 +652,33 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 </tr>
 <tr class="even">
 <td>85</td>
-<td>10300-1032F</td>
-<td>Cursiva antigua</td>
+<td>10300 - 1032F</td>
+<td>Cursiva anterior</td>
 </tr>
 <tr class="odd">
 <td>86</td>
-<td>10330-1034F</td>
+<td>10330 - 1034F</td>
 <td>Gótico</td>
 </tr>
 <tr class="even">
 <td>87</td>
-<td>10400-1044F</td>
+<td>10400 - 1044F</td>
 <td>Deseret</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">88 $ {REMOVE} $<br />
+<td rowspan="3">88${REMOVE}$<br />
 </td>
 <td>1D000 - 1D0FF</td>
-<td>Símbolos musicales de Byzantine</td>
+<td>Símbolos musicales bizantinos</td>
 </tr>
 <tr class="even">
 <td>1D100 - 1D1FF</td>
-<td>Símbolos musicales</td>
+<td>Símbolos de música</td>
 
 </tr>
 <tr class="odd">
 <td>1D200 - 1D24F</td>
-<td>Notación musical griega antigua</td>
+<td>Notación de música griego no tradicional</td>
 
 </tr>
 <tr class="even">
@@ -687,25 +687,25 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <td>Símbolos alfanuméricos matemáticos</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">90 $ {REMOVE} $<br />
+<td rowspan="2">90${REMOVE}$<br />
 </td>
 <td>FF000 - FFFFD</td>
 <td>Uso privado (plano 15)</td>
 </tr>
 <tr class="even">
-<td>100000-10FFFD</td>
+<td>100000 - 10FFFD</td>
 <td>Uso privado (plano 16)</td>
 
 </tr>
 <tr class="odd">
-<td rowspan="2">91 $ {REMOVE} $<br />
+<td rowspan="2">91${REMOVE}$<br />
 </td>
 <td>FE00 - FE0F</td>
 <td>Selectores de variación</td>
 </tr>
 <tr class="even">
 <td>E0100 - E01EF</td>
-<td>Suplemento de selectores de variación</td>
+<td>Complemento de selectores de variación</td>
 
 </tr>
 <tr class="odd">
@@ -721,12 +721,12 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="odd">
 <td>94</td>
 <td>1950 - 197F</td>
-<td>Tai le</td>
+<td>Tai Le</td>
 </tr>
 <tr class="even">
 <td>95</td>
-<td>1980-19DF</td>
-<td>Nuevo tai lue moderno</td>
+<td>1980 - 19DF</td>
+<td>Nuevo Tai Lue</td>
 </tr>
 <tr class="odd">
 <td>96</td>
@@ -736,7 +736,7 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="even">
 <td>97</td>
 <td>2C00 - 2C5F</td>
-<td>Letra</td>
+<td>Glagolitic</td>
 </tr>
 <tr class="odd">
 <td>98</td>
@@ -746,7 +746,7 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="even">
 <td>99</td>
 <td>4DC0 - 4DFF</td>
-<td>Símbolos de Yijing Hexagrama</td>
+<td>Símbolos de hexágonos de agrupación</td>
 </tr>
 <tr class="odd">
 <td>100</td>
@@ -754,76 +754,76 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <td>Syloti Nagri</td>
 </tr>
 <tr class="even">
-<td rowspan="3">101 $ {REMOVE} $<br />
+<td rowspan="3">101${REMOVE}$<br />
 </td>
-<td>10000-1007F</td>
-<td>Syllabary lineal B</td>
+<td>10000 - 1007F</td>
+<td>Linear B Silabary</td>
 </tr>
 <tr class="odd">
-<td>10080-100FF</td>
-<td>Ideogramas mostrados lineal B</td>
+<td>10080 - 100FF</td>
+<td>Ideogramas lineales B</td>
 
 </tr>
 <tr class="even">
-<td>10100-1013F</td>
-<td>Números Egeo</td>
+<td>10100 - 1013F</td>
+<td>Números de ala</td>
 
 </tr>
 <tr class="odd">
 <td>102</td>
-<td>10140-1018F</td>
-<td>Números griegos antiguos</td>
+<td>10140 - 1018F</td>
+<td>Números griegos de origen griego</td>
 </tr>
 <tr class="even">
 <td>103</td>
-<td>10380-1039F</td>
+<td>10380 - 1039F</td>
 <td>Ugarítico</td>
 </tr>
 <tr class="odd">
 <td>104</td>
 <td>103A0 - 103DF</td>
-<td>Persa antiguo</td>
+<td>Persa anterior</td>
 </tr>
 <tr class="even">
 <td>105</td>
-<td>10450-1047F</td>
-<td>Shavian</td>
+<td>10450 - 1047F</td>
+<td>Shauvi</td>
 </tr>
 <tr class="odd">
 <td>106</td>
-<td>10480-104AF</td>
+<td>10480 - 104AF</td>
 <td>Osmanya</td>
 </tr>
 <tr class="even">
 <td>107</td>
-<td>10800-1083F</td>
-<td>Cypriot Syllabary</td>
+<td>10800 - 1083F</td>
+<td>Silabario chipriota</td>
 </tr>
 <tr class="odd">
 <td>108</td>
 <td>10A00 - 10A5F</td>
-<td>Kharoshthi</td>
+<td>Jarroshthi</td>
 </tr>
 <tr class="even">
 <td>109</td>
 <td>1D300 - 1D35F</td>
-<td>Símbolos de Jing Tai Xuan</td>
+<td>Símbolos de Tai Xdine Symbols</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">110 $ {REMOVE} $<br />
+<td rowspan="2">110${REMOVE}$<br />
 </td>
-<td>12000-123FF</td>
-<td>Cuneiform</td>
+<td>12000 - 123FF</td>
+<td>Cuneiforme</td>
 </tr>
 <tr class="even">
-<td>12400-1247F</td>
-<td>Cuneiform números y signos de puntuación</td>
+<td>12400 - 1247F</td>
+<td>Números cuneíformes y puntuación</td>
 
 </tr>
 <tr class="odd">
 <td>111</td>
 <td>1D360 - 1D37F</td>
-<td>Números de la varilla de recuento</td>
+<td>Recuento de números de barras</td>
 </tr>
 <tr class="even">
 <td>112</td>
@@ -838,7 +838,7 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="even">
 <td>114</td>
 <td>1C50 - 1C7F</td>
-<td>OL Chiki</td>
+<td>Ol Chiki</td>
 </tr>
 <tr class="odd">
 <td>115</td>
@@ -862,18 +862,18 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 </tr>
 <tr class="odd">
 <td>119</td>
-<td>10190-101CF</td>
-<td>Antiguos símbolos</td>
+<td>10190 - 101CF</td>
+<td>Símbolos de símbolos de símbolos de símbolos</td>
 </tr>
 <tr class="even">
 <td>120</td>
 <td>101D0 - 101FF</td>
-<td>Disco Phaistos</td>
+<td>Disco de Phaistos</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">121 $ {REMOVE} $<br />
+<td rowspan="3">121${REMOVE}$<br />
 </td>
-<td>10280-1029F</td>
+<td>10280 - 1029F</td>
 <td>Licio</td>
 </tr>
 <tr class="even">
@@ -882,15 +882,15 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 
 </tr>
 <tr class="odd">
-<td>10920-1093F</td>
+<td>10920 - 1093F</td>
 <td>Lidio</td>
 
 </tr>
 <tr class="even">
-<td rowspan="2">122 $ {REMOVE} $<br />
+<td rowspan="2">122${REMOVE}$<br />
 </td>
 <td>1F000 - 1F02F</td>
-<td>Mosaicos de Mahjong</td>
+<td>Iconos de Mahjong</td>
 </tr>
 <tr class="odd">
 <td>1F030 - 1F09F</td>
@@ -905,12 +905,12 @@ Los campos de códigos de subconjuntos Unicode (USBs) se usan en las estructuras
 <tr class="odd">
 <td>124</td>
 
-<td><strong>Windows 2000 y versiones posteriores:</strong> Progreso de diseño, vertical delante de horizontal</td>
+<td><strong>Windows 2000 y versiones posteriores:</strong> Progreso del diseño, vertical antes que horizontal</td>
 </tr>
 <tr class="even">
 <td>125</td>
 
-<td><strong>Windows 2000 y versiones posteriores:</strong> Progreso de diseño, vertical de abajo arriba</td>
+<td><strong>Windows 2000 y versiones posteriores:</strong> Progreso del diseño, vertical de abajo a arriba</td>
 </tr>
 <tr class="odd">
 <td>126-127</td>

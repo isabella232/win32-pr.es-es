@@ -1,24 +1,24 @@
 ---
-title: Matrix (atributo) (sesgo) (VML)
-description: Matrix (atributo) (sesgo) (VML)
+title: Atributo de matriz (sesgo)(VML)
+description: Atributo de matriz (sesgo)(VML)
 ms.assetid: 8d039865-2261-458b-8edf-01374af65cea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8327acfebfe4d968e673060f2f3cbef69d3e9db6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1d7fd3989807951f06df963c6899a2c81ce6e7faaa76432172e4391a4ce11029
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768455"
 ---
-# <a name="matrix-attribute-skewvml"></a>Matrix (atributo) (sesgo) (VML)
+# <a name="matrix-attribute-skewvml"></a>Atributo de matriz (sesgo)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define una transformación de perspectiva de un sesgo. Lectura/escritura **Cadena**.
 
@@ -28,20 +28,20 @@ Define una transformación de perspectiva de un sesgo. Lectura/escritura **Caden
 
 **Sintaxis de etiquetas**
 
-<o: *elemento* Matrix = " *expresión* " >
+<o: *element* matrix=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Matrix = "*expresión*"
+*element* .matrix="*expression*"
 
-*expresión* = de *elemento*. Matrix
+*expresión* = *element*.matrix
 
 **Comentarios:**
 
-La matriz es una cadena con el formato "SXX, SXY, SYX, SYY, PX, py", donde s es Scale, p es Perspective y x e y son valores x e y. Si el [desplazamiento](offset-attribute--skew--vml.md) está en unidades absolutas, PX y py están en [unidades](msdn-online-vml-units.md) de la UME ^-1 (de lo contrario, son una fracción inversa del tamaño de la forma). El valor predeterminado es "1, 0, 0, 1, 0".
+La matriz es una cadena con el formato "sxx, sxy, syx, syy, px, py", donde s es scale, p es perspective y x e y son valores x e y. Si [Offset](offset-attribute--skew--vml.md) está en unidades absolutas, px y py están en unidades emu^-1 [](msdn-online-vml-units.md) (de lo contrario, son una fracción inversa del tamaño de la forma). El valor predeterminado es "1,0,0,1,0,0".
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: El \_ tipo de enumeración de modos de medición de foco de WPD describe el modo en que \_ \_ un dispositivo debe decidir qué parte de un marco se va a usar para establecer el foco.
+description: El tipo de enumeración WPD FOCUS METERING MODES describe cómo un dispositivo debe decidir qué parte de un fotograma usar \_ \_ para establecer el \_ foco.
 ms.assetid: 0e68d0e8-2ce3-4994-99c2-2ff2293d8a20
-title: Enumeración WPD_FOCUS_METERING_MODES (PortableDevice. h)
+title: WPD_FOCUS_METERING_MODES enumeración (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: f59d6a2f1cabbbe7b072a87caa3e5d74d012fc49
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eb37cdd32673c385617d9c0c0ae8616c8dae0ab711d1253391ae2c1e6b2f8789
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703775"
 ---
-# <a name="wpd_focus_metering_modes-enumeration"></a>\_ \_ Enumeración de modos de medición de foco de WPD \_
+# <a name="wpd_focus_metering_modes-enumeration"></a>Enumeración \_ WPD FOCUS \_ METERING \_ MODES
 
-El tipo de enumeración de modos de medición de foco de WPD describe el modo en que un dispositivo debe decidir qué parte de un marco se va a usar para establecer el foco. **\_ \_ \_**
+El **tipo de \_ enumeración WPD FOCUS \_ METERING \_ MODES** describe cómo un dispositivo debe decidir qué parte de un fotograma usar para establecer el foco.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,30 +41,30 @@ typedef enum WPD_FOCUS_METERING_MODES {
 
 <dl> <dt>
 
-<span id="WPD_FOCUS_METERING_MODE_UNDEFINED"></span><span id="wpd_focus_metering_mode_undefined"></span>**modo de medición de foco de WPD \_ \_ \_ \_ sin definir**
+<span id="WPD_FOCUS_METERING_MODE_UNDEFINED"></span><span id="wpd_focus_metering_mode_undefined"></span>**MODO DE MEDICIÓN DE FOCO WPD \_ \_ SIN \_ \_ DEFINIR**
 </dt> <dd>
 
 Indica que no se ha especificado ningún modo de enfoque.
 
 </dd> <dt>
 
-<span id="WPD_FOCUS_METERING_MODE_CENTER_SPOT"></span><span id="wpd_focus_metering_mode_center_spot"></span>**\_zona del \_ centro del \_ modo \_ de \_ medición de foco de WPD**
+<span id="WPD_FOCUS_METERING_MODE_CENTER_SPOT"></span><span id="wpd_focus_metering_mode_center_spot"></span>**PUNTO CENTRAL DEL MODO DE \_ \_ MEDICIÓN \_ DE FOCO \_ WPD \_**
 </dt> <dd>
 
-Se centra en el centro del área de fotogramas.
+Se centra en el centro del área enmarcada.
 
 </dd> <dt>
 
-<span id="WPD_FOCUS_METERING_MODE_MULTI_SPOT"></span><span id="wpd_focus_metering_mode_multi_spot"></span>**modo de medición de foco de WPD \_ \_ \_ \_ \_ multispot**
+<span id="WPD_FOCUS_METERING_MODE_MULTI_SPOT"></span><span id="wpd_focus_metering_mode_multi_spot"></span>**MODO DE MEDICIÓN DE FOCO WPD \_ \_ MULTI \_ \_ \_ SPOT**
 </dt> <dd>
 
-Determine el foco analizando varias partes del área de marco.
+Determine el foco mediante el análisis de varias partes del área enmarcada.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración se especifica mediante la propiedad del [modo de medición de \_ \_ \_ foco de \_ \_ imagen de WPD](still-image-properties.md) .
+Esta enumeración se especifica mediante la propiedad [ \_ WPD STILL \_ IMAGE FOCUS \_ \_ METERING \_ MODE.](still-image-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Esta enumeración se especifica mediante la propiedad del [modo de medición de 
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

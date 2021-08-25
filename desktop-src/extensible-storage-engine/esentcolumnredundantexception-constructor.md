@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentColumnRedundantException'
-title: Constructor de EsentColumnRedundantException
+description: 'Más información sobre: Constructor EsentColumnRedundantException'
+title: Constructor EsentColumnRedundantException
 TOCTitle: 'EsentColumnRedundantException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentColumnRedundantException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcolumnredundantexception.esentcolumnredundantexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ae6a344801bd776418fd7ff645a89ad0c932486b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5d5aec667c6d6192c47c15e1109dc3df72345c7c563762a15b90b643f950432
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785665"
 ---
-# <a name="esentcolumnredundantexception-constructor"></a>Constructor de EsentColumnRedundantException
+# <a name="esentcolumnredundantexception-constructor"></a>Constructor EsentColumnRedundantException
 
 Inicializa una nueva instancia de la clase EsentColumnRedundantException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentColumnRedundantException()
 public EsentColumnRedundantException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentColumnRedundantException()
 
 [Miembros de EsentColumnRedundantException](./esentcolumnredundantexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

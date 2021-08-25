@@ -5,16 +5,16 @@ ms.assetid: D46F5106-1A14-4C48-8438-9BC1C006BA7C
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f07ba04c15081883bc0d7f423e519f12e5c8c3fd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 916a605c7345c8f579221e99b2a5413d3f0e121b83b88d5800f2eaa1b2d7bffd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681055"
 ---
 # <a name="imsrdpdevicecollection2-methods"></a>Métodos IMsRdpDeviceCollection2
 
-La interfaz [**IMsRdpDeviceCollection2**](imsrdpdevicecollection2.md) expone los métodos siguientes.
+La [**interfaz IMsRdpDeviceCollection2**](imsrdpdevicecollection2.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,20 +23,20 @@ La interfaz [**IMsRdpDeviceCollection2**](imsrdpdevicecollection2.md) expone los
 [**Método AddDeviceByInstanceId**](imsrdpdevicecollection2-adddevicebyinstanceid.md)
 </dt> <dd>
 
-Agrega un dispositivo que no está en la lista a la recopilación de dispositivos.
+Agrega un dispositivo no publicado a la colección de dispositivos.
 
 </dd> <dt>
 
 [**Método RedirectNow**](imsrdpdevicecollection2-redirectnow.md)
 </dt> <dd>
 
-Fuerza la redirección o eliminación de los dispositivos que se seleccionaron o anularon de la colección.
+Obliga a que los dispositivos seleccionados o no seleccionados de la colección se redirijan o quiten.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

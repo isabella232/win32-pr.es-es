@@ -1,29 +1,29 @@
 ---
-title: El método LaunchPage
-description: El método LaunchPage
+title: Método LaunchPage
+description: Método LaunchPage
 ms.assetid: f0f93535-5afc-4777-9188-5bbac63ddc6b
 keywords:
-- Complementos de Media Player de Windows, método LaunchPage
-- complementos, método LaunchPage
-- Complementos de la interfaz de usuario, método LaunchPage
-- Complementos de la interfaz de usuario, método LaunchPage
+- Reproductor de Windows Media complementos, método LaunchPage
+- plug-ins,LaunchPage (método)
+- complementos de interfaz de usuario, método LaunchPage
+- Complementos de interfaz de usuario, método LaunchPage
 - Método LaunchPage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f04974eba1ba5c86300de44acd2ba6e2920954f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 11a22e1f4b136711a6f4336fbe54d6d90e4bb18b24a88645587311a0b4046f6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762725"
 ---
-# <a name="the-launchpage-method"></a>El método LaunchPage
+# <a name="the-launchpage-method"></a>Método LaunchPage
 
-El método LaunchPage proporciona la funcionalidad principal del complemento, que consiste en iniciar una página de búsqueda que contiene información sobre el artista del elemento multimedia que se pasa al método.
+El método LaunchPage proporciona la funcionalidad principal del complemento, que consiste en iniciar una página de búsqueda que contiene información sobre el intérprete del elemento multimedia pasado al método .
 
-El método de búsqueda llama a este método con el objeto **multimedia** actual.
+El método OnSearch llama a este método mediante el objeto **Media** actual.
 
-El siguiente código se usa para implementar este método:
+El código siguiente se usa para implementar este método:
 
 
 ```C++
@@ -65,9 +65,9 @@ void LaunchPage(IWMPMedia *pMedia)
 [**Implementación de CPluginWindow**](implementing-cpluginwindow.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

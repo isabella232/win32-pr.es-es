@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_GETDELAYTIME (commctrl. h)
-description: Recupera las duraciones iniciales, emergentes y de visualización que se establecen actualmente para un control ToolTip.
+title: TTM_GETDELAYTIME mensaje (Commctrl.h)
+description: Recupera las duraciones iniciales, emergentes y de volver a mostrar establecidas actualmente para un control de información sobre herramientas.
 ms.assetid: f89a75ed-ba80-4741-927f-c571f3b2efe7
 keywords:
-- TTM_GETDELAYTIME controles de mensajes de Windows
+- TTM_GETDELAYTIME controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ff8c75f078465646333cae1f519049733a0c9f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0e63eca126477a6f602e6e23be75495319d30aa2814d2d72b8426a96c078326
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769265"
 ---
-# <a name="ttm_getdelaytime-message"></a>TTM \_ GETDELAYTIME
+# <a name="ttm_getdelaytime-message"></a>Mensaje \_ GETDELAYTIME de TTM
 
-Recupera las duraciones iniciales, emergentes y de visualización que se establecen actualmente para un control ToolTip.
+Recupera las duraciones iniciales, emergentes y de volver a mostrar establecidas actualmente para un control de información sobre herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,15 +32,15 @@ Recupera las duraciones iniciales, emergentes y de visualización que se estable
 *wParam* 
 </dt> <dd>
 
-Marca que especifica el valor de duración que se recuperará. Este parámetro puede tener uno de los valores siguientes:
+Marca que especifica qué valor de duración se recuperará. Este parámetro puede tener uno de los valores siguientes:
 
 
 
 | Value                                                                                                                                                      | Significado                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TTDT_AUTOPOP"></span><span id="ttdt_autopop"></span><dl> <dt>**TTDT \_ AUTOPOP**</dt> </dl> | Recupera la cantidad de tiempo que la ventana de información sobre herramientas permanece visible si el puntero es estacionario dentro del rectángulo delimitador de una herramienta.<br/>      |
-| <span id="TTDT_INITIAL"></span><span id="ttdt_initial"></span><dl> <dt>**TTDT \_ inicial**</dt> </dl> | Recupera la cantidad de tiempo que el puntero debe permanecer estacionario dentro del rectángulo delimitador de una herramienta antes de que aparezca la ventana de información sobre herramientas.<br/> |
-| <span id="TTDT_RESHOW"></span><span id="ttdt_reshow"></span><dl> <dt>**TTDT \_ Mostrar**</dt> </dl>    | Recupere la cantidad de tiempo que se tarda en aparecer la siguiente ventana de información sobre herramientas cuando el puntero se desplaza de una herramienta a otra.<br/>         |
+| <span id="TTDT_AUTOPOP"></span><span id="ttdt_autopop"></span><dl> <dt>**AUTOPOP de TTDT \_**</dt> </dl> | Recupere la cantidad de tiempo que la ventana de información sobre herramientas permanece visible si el puntero está estacionado dentro del rectángulo delimitador de una herramienta.<br/>      |
+| <span id="TTDT_INITIAL"></span><span id="ttdt_initial"></span><dl> <dt>**TTDT \_ INITIAL**</dt> </dl> | Recupere la cantidad de tiempo que el puntero debe permanecer estacionado dentro del rectángulo delimitador de una herramienta antes de que aparezca la ventana de información sobre herramientas.<br/> |
+| <span id="TTDT_RESHOW"></span><span id="ttdt_reshow"></span><dl> <dt>**TTDT \_ RESHOW**</dt> </dl>    | Recupere la cantidad de tiempo que tardan en aparecer las ventanas de información sobre herramientas posteriores a medida que el puntero se mueve de una herramienta a otra.<br/>         |
 
 
 
@@ -53,7 +53,7 @@ Marca que especifica el valor de duración que se recuperará. Este parámetro p
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve e INT con la duración especificada en milisegundos.
+Devuelve y el valor INT con la duración especificada en milisegundos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ Devuelve e INT con la duración especificada en milisegundos.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Devuelve e INT con la duración especificada en milisegundos.
 
 <dl> <dt>
 
-[**TTM \_ SETDELAYTIME**](ttm-setdelaytime.md)
+[**\_SETDELAYTIME de TTM**](ttm-setdelaytime.md)
 </dt> </dl>
 
  

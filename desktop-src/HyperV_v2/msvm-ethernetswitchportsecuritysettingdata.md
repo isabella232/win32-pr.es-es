@@ -1,7 +1,7 @@
 ---
-description: Representa los datos de configuración de la característica de seguridad.
+description: Representa los datos de configuración de características de seguridad.
 ms.assetid: 98e0de24-ccdc-4fc7-86a5-b68d454fde9d
-title: Msvm_EthernetSwitchPortSecuritySettingData (clase)
+title: Msvm_EthernetSwitchPortSecuritySettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -31,18 +31,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8d37913f015a3ffbfaa751a7bbb10f79cea2fb39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 214a86513462e70025f0bcb6403faecc3b6663463dbef8c4cb9d1ea60a9c8f33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681445"
 ---
-# <a name="msvm_ethernetswitchportsecuritysettingdata-class"></a>MSVM \_ EthernetSwitchPortSecuritySettingData (clase)
+# <a name="msvm_ethernetswitchportsecuritysettingdata-class"></a>Clase Msvm \_ EthernetSwitchPortSecuritySettingData
 
-Representa los datos de configuración de la característica de seguridad.
+Representa los datos de configuración de características de seguridad.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,13 +73,13 @@ class Msvm_EthernetSwitchPortSecuritySettingData : Msvm_EthernetSwitchPortFeatur
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchPortSecuritySettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchPortSecuritySettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchPortSecuritySettingData** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchPortSecuritySettingData** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -89,13 +89,13 @@ La clase **MSVM \_ EthernetSwitchPortSecuritySettingData** tiene estas propiedad
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica si el tráfico hacia o desde el puerto conserva la información de 802.1 P. Contiene **true** si el tráfico hacia o desde el puerto conserva la información de 802.1 p o **false** en caso contrario. El valor predeterminado es **False**.
+Especifica si el tráfico hacia y desde el puerto conserva la información 802.1P. Contiene **True** si el tráfico hacia y desde el puerto conserva la información 802.1P o **False en caso** contrario. El valor predeterminado es **False**.
 
 </dd> <dt>
 
@@ -105,13 +105,13 @@ Especifica si el tráfico hacia o desde el puerto conserva la información de 80
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si el puerto permitirá la suplantación de direcciones MAC. Si esta propiedad es **true**, el puerto permitirá la suplantación de direcciones MAC. Se permiten todos los valores de dirección MAC de unidifusión válidos. Si esta propiedad es **false**, el puerto solo permitirá el uso de direcciones MAC que estén configuradas en la administración de Hyper-V. El valor predeterminado es **False**.
+Indica si el puerto permitirá la suplantación de MAC. Si esta propiedad es **True**, el puerto permitirá la suplantación de direcciones MAC. Se permiten todos los valores válidos de dirección MAC de unidifusión. Si esta propiedad es **False**, el puerto solo permitirá que se usen las direcciones MAC configuradas en la administración de Hyper-V. El valor predeterminado es **False**.
 
 </dd> <dt>
 
@@ -121,13 +121,13 @@ Indica si el puerto permitirá la suplantación de direcciones MAC. Si esta prop
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si las NIC conectadas al puerto pueden formar parte de un equipo. Esto solo se aplica a las NIC conectadas a máquinas virtuales. Contiene **true** si se permite la formación de equipos NIC o **false** en caso contrario. El valor predeterminado es **False**.
+Indica si las NIC conectadas al puerto pueden formar parte de un equipo. Esto solo se aplica a las NIC conectadas a máquinas virtuales. Contiene **True si** se permite la formación de equipos NIC o False en **caso** contrario. El valor predeterminado es **False**.
 
 </dd> <dt>
 
@@ -140,7 +140,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración de seguridad del puerto de conmutador Ethernet".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ MANAGEDElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Ethernet Switch Port Security Configuración".
 
 </dd> <dt>
 
@@ -153,23 +153,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "representa los datos de configuración de la característica de seguridad".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Representa los datos de configuración de características de seguridad".
 
 </dd> <dt>
 
 **DynamicIPAddressLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (12), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-Define el límite para el número de direcciones IP dinámicas conocidas. El valor predeterminado es none.
+Define el límite para el número de direcciones IP dinámicas aprendidas. El valor predeterminado es none.
 
 </dd> <dt>
 
@@ -182,7 +182,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración de seguridad del puerto de conmutador Ethernet".
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ MANAGEDElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Ethernet Switch Port Security Configuración".
 
 </dd> <dt>
 
@@ -192,13 +192,13 @@ Nombre para mostrar del objeto. Esta propiedad se hereda de [**la \_ ManagedElem
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica si las ofertas DHCP están bloqueadas en el puerto. Contiene **true** si las ofertas de DHCP están bloqueadas en el puerto o **false** en caso contrario. El valor predeterminado es **False**.
+Especifica si las ofertas DHCP están bloqueadas desde el puerto. Contiene **True si** las ofertas DHCP están bloqueadas desde el puerto o **False** en caso contrario. El valor predeterminado es **False**.
 
 </dd> <dt>
 
@@ -208,13 +208,13 @@ Especifica si las ofertas DHCP están bloqueadas en el puerto. Contiene **true**
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (14), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Establézcalo en TRUE si la velocidad fija 10G está habilitada, de lo contrario, FALSE. El valor predeterminado es FALSE.
+Establezca en TRUE si la velocidad fija 10G está habilitada de lo contrario, FALSE. El valor predeterminado es FALSE.
 
 > [!Note]  
 > Propiedad agregada en Windows 10.
@@ -229,13 +229,13 @@ Establézcalo en TRUE si la velocidad fija 10G está habilitada, de lo contrario
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica si los anuncios de enrutador y las redirecciones de enrutador se bloquean desde el puerto. Contiene **true** si los anuncios de enrutador y las redirecciones de enrutador están bloqueados en el puerto o **false** en caso contrario. El valor predeterminado es **False**.
+Especifica si los anuncios de enrutador y los redireccionamientos del enrutador están bloqueados en el puerto. Contiene **True si** los anuncios de enrutador y los redireccionamientos del enrutador se bloquean desde el puerto o False en **caso** contrario. El valor predeterminado es **False**.
 
 </dd> <dt>
 
@@ -248,26 +248,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **MonitorMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica el modo de monitor del puerto.
+Esto indica el modo de supervisión del puerto.
 
 <dt>
 
@@ -297,16 +297,16 @@ Indica el modo de monitor del puerto.
 **MonitorSession**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica el identificador de la sesión de monitor a la que pertenece este puerto.
+Especifica el identificador de la sesión de supervisión a la que pertenece este puerto.
 
 </dd> <dt>
 
@@ -316,13 +316,13 @@ Especifica el identificador de la sesión de monitor a la que pertenece este pue
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("sin valor"), **WmiDataId** (13), **InterfaceVersion** (3), **InterfaceRevision** (0)
+Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Sin valor"), **WmiDataId** (13), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Reservado
+Reservada
 
 > [!Note]  
 > Propiedad agregada en Windows 10.
@@ -334,10 +334,10 @@ Reservado
 **StormLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (11), **InterfaceVersion** (2), **InterfaceRevision** (0)
@@ -353,7 +353,7 @@ Define el límite de paquetes por segundo para el tráfico de difusión y multid
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -366,10 +366,10 @@ Reservado para uso futuro.
 **TeamNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (10), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -382,10 +382,10 @@ Reservado para uso futuro.
 **VirtualSubnetId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (16777215)
@@ -399,12 +399,12 @@ Especifica el identificador de la subred virtual de la que es miembro el puerto.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

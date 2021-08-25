@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ce1b0ca7e1c7b3716be1a3029c5478f96e261ce5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 492e0b5e400adc4e5c847f12880a668fb5e3b98f683a0f64dbe32ec98f28a93c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789865"
 ---
 # <a name="asint"></a>asint
 
@@ -26,7 +26,7 @@ Interpreta el patrón de bits de *x* como un entero.
 
 
 
-| RET Asin (*x*) |
+| ret asint(*x*) |
 |----------------|
 
 
@@ -39,7 +39,7 @@ Interpreta el patrón de bits de *x* como un entero.
 
 | Elemento                                                   | Descripción                        |
 |--------------------------------------------------------|------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el valor de entrada.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] El valor de entrada.<br/> |
 
 
 
@@ -47,22 +47,22 @@ Interpreta el patrón de bits de *x* como un entero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La entrada se interpreta como un entero.
+Entrada interpretada como un entero.
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                  | Tamaño                           |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                  | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **Vector** o **matriz** | [**float**](/windows/desktop/WinProg/windows-data-types), [ **uint**](/windows/desktop/WinProg/windows-data-types) | cualquiera                            |
-| *direcc* | igual que la entrada *x*                                                                                              | [**int**](/windows/desktop/WinProg/windows-data-types)                                           | mismas dimensiones que la entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**float**](/windows/desktop/WinProg/windows-data-types), [ **uint**](/windows/desktop/WinProg/windows-data-types) | cualquiera                            |
+| *Ret* | igual que la entrada *x*                                                                                              | [**int**](/windows/desktop/WinProg/windows-data-types)                                           | las mismas dimensiones que la entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -70,9 +70,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                        | Compatible |
 |---------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 4](dx-graphics-hlsl-sm4.md) y versiones posteriores | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | no        |
+| [Modelos de sombreador 4](dx-graphics-hlsl-sm4.md) y superiores | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)           | No        |
 
 
@@ -83,7 +83,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

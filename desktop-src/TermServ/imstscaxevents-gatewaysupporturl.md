@@ -1,12 +1,12 @@
 ---
-title: Propiedad GatewaySupportUrl de IMsRdpClientTransportSettings2
-description: Especifica o recupera la dirección web del sitio que proporciona soporte técnico para este servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+title: Propiedad IMsRdpClientTransportSettings2 GatewaySupportUrl
+description: Especifica o recupera la dirección web del sitio que proporciona soporte técnico para este servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 ms.assetid: e9c0f5ec-1b2f-4e09-8169-4316fd394443
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad GatewaySupportUrl
-- Propiedad GatewaySupportUrl Servicios de Escritorio remoto, interfaz IMsRdpClientTransportSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientTransportSettings2, propiedad GatewaySupportUrl
+- Propiedad GatewaySupportUrl Servicios de Escritorio remoto
+- Propiedad GatewaySupportUrl Servicios de Escritorio remoto interfaz , IMsRdpClientTransportSettings2
+- Interfaz IMsRdpClientTransportSettings2 Servicios de Escritorio remoto , propiedad GatewaySupportUrl
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4212dd03d5fb217753e14c2869973bda87476367
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2833962f66fb6fab2597629877c5990c9234eb5b2dfe076073bedc2ceab9fd65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770695"
 ---
-# <a name="imsrdpclienttransportsettings2gatewaysupporturl-property"></a>IMsRdpClientTransportSettings2:: GatewaySupportUrl (propiedad)
+# <a name="imsrdpclienttransportsettings2gatewaysupporturl-property"></a>Propiedad IMsRdpClientTransportSettings2::GatewaySupportUrl
 
-Especifica o recupera la dirección web del sitio que proporciona soporte técnico para este servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+Especifica o recupera la dirección web del sitio que proporciona soporte técnico para este servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,7 +49,7 @@ HRESULT get_GatewaySupportUrl(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Especifica o recupera la dirección web del sitio que proporciona soporte técnico para este servidor de puerta de enlace de escritorio remoto.
+Especifica o recupera la dirección web del sitio que proporciona soporte técnico para este servidor de puerta de enlace de Escritorio remoto.
 
 ## <a name="requirements"></a>Requisitos
 

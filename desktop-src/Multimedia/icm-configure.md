@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_CONFIGURE (VFW. h)
-description: El \_ mensaje configurar de ICM notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo de configuración o consulta un controlador de compresión de vídeo para determinar si tiene un cuadro de diálogo de configuración.
+title: ICM_CONFIGURE mensaje (Vfw.h)
+description: El ICM configurar notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo de configuración o consulta a un controlador de compresión de vídeo para determinar si tiene un \_ cuadro de diálogo de configuración.
 ms.assetid: 9760788e-fa66-44d7-bda6-aa9536143774
 keywords:
-- Mensaje de ICM_CONFIGURE de Windows multimedia
+- ICM_CONFIGURE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9faae26fcf132abfa424b0db7a88670735d30727
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7bc2d9176415c22a1b79a8dc08ee84db1c77fbd6665f89f615b38d3c60538d51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785005"
 ---
-# <a name="icm_configure-message"></a>\_Configurar mensaje de ICM
+# <a name="icm_configure-message"></a>\_ICM MENSAJE DE CONFIGURACIÓN
 
-El **mensaje \_ configurar de ICM** notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo de configuración o consulta un controlador de compresión de vídeo para determinar si tiene un cuadro de diálogo de configuración. Puede enviar este mensaje explícitamente o mediante la macro [**ICConfigure**](/windows/desktop/api/Vfw/nf-vfw-icconfigure) .
+El **ICM \_ configurar** notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo de configuración o consulta a un controlador de compresión de vídeo para determinar si tiene un cuadro de diálogo de configuración. Puede enviar este mensaje explícitamente o mediante la macro [**ICConfigure.**](/windows/desktop/api/Vfw/nf-vfw-icconfigure)
 
 
 ```C++
@@ -38,20 +38,20 @@ lParam = 0;
 
 <dl> <dt>
 
-<span id="hwnd"></span><span id="HWND"></span>*identificador*
+<span id="hwnd"></span><span id="HWND"></span>*Hwnd*
 </dt> <dd>
 
-Identificador de la ventana primaria del cuadro de diálogo que se muestra. Puede determinar si un controlador tiene un cuadro de diálogo de configuración especificando 1 en este parámetro, como en la macro [**ICQueryConfigure**](/windows/desktop/api/Vfw/nf-vfw-icqueryconfigure) .
+Identificador de la ventana primaria del cuadro de diálogo mostrado. Puede determinar si un controlador tiene un cuadro de diálogo de configuración especificando 1 en este parámetro, como en la macro [**ICQueryConfigure.**](/windows/desktop/api/Vfw/nf-vfw-icqueryconfigure)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR \_ OK si el controlador admite este mensaje o ICERR \_ no se admite en caso contrario.
+Devuelve ICERR \_ OK si el controlador admite este mensaje o ICERR \_ UNSUPPORTED en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje es diferente del mensaje [**de \_ configuración de DRV**](drv-configure.md) que se usa para la configuración de hardware. El cuadro de diálogo de este mensaje debe permitir que el usuario establezca y edite el estado interno al que hacen referencia los mensajes [**ICM \_ GETSTATE**](icm-getstate.md) y [**ICM \_ SETSTATE**](icm-setstate.md) . Por ejemplo, este cuadro de diálogo puede permitir que el usuario cambie los parámetros que afectan al nivel de calidad y otras opciones de compresión similares.
+Este mensaje es diferente del mensaje [**DRV \_ CONFIGURE**](drv-configure.md) que se usa para la configuración de hardware. El cuadro de diálogo de este mensaje debe permitir que el usuario establezca y edite el estado interno al que hacen referencia los ICM [**\_ GETSTATE**](icm-getstate.md) y [**ICM \_ SETSTATE.**](icm-setstate.md) Por ejemplo, este cuadro de diálogo puede permitir que el usuario cambie los parámetros que afectan al nivel de calidad y a otras opciones de compresión similares.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Este mensaje es diferente del mensaje [**de \_ configuración de DRV**](drv-conf
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

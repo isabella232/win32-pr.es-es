@@ -1,54 +1,54 @@
 ---
-description: Monitor de red usa la función de exportación ParserAutoInstallInfo para instalar un analizador. Cuando se llama a ParserAutoInstallInfo, el analizador devuelve una \_ estructura PF PARSERDLLINFO que contiene toda la información que monitor de red necesita para instalar un archivo dll de analizador.
+description: Monitor de red utiliza la función de exportación ParserAutoInstallInfo para instalar un analizador. Cuando se llama a ParserAutoInstallInfo, el analizador devuelve una estructura PF PARSERDLLINFO que contiene toda la información que Monitor de red para instalar un \_ archivo DLL del analizador.
 ms.assetid: 1add9988-9cb2-43f9-8ae2-32acfe21b6f3
 title: Implementación de ParserAutoInstallInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d79a9ba5036673acb076be9f3634dae7556b5bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f6d1c797f53ad110392fea304cc0a610fdb0f9346c745e2f7dea2bff16208e05
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743085"
 ---
 # <a name="implementing-parserautoinstallinfo"></a>Implementación de ParserAutoInstallInfo
 
-Monitor de red usa la función de exportación [**ParserAutoInstallInfo**](parserautoinstallinfo.md) para instalar un analizador. Cuando se llama a **ParserAutoInstallInfo** , el analizador devuelve una estructura [**PF \_ PARSERDLLINFO**](pf-parserdllinfo.md) que contiene toda la información que monitor de red necesita para instalar un archivo dll de analizador.
+Monitor de red utiliza la [**función de exportación ParserAutoInstallInfo**](parserautoinstallinfo.md) para instalar un analizador. Cuando se llama a **ParserAutoInstallInfo,** el analizador devuelve una estructura [**PF \_ PARSERDLLINFO**](pf-parserdllinfo.md) que contiene toda la información que Monitor de red para instalar un archivo DLL del analizador.
 
 > [!Note]  
-> Monitor de red mantiene una lista de los analizadores existentes en el archivo [*Parser.ini*](p.md) y crea un archivo ini independiente para cada analizador instalado.
+> Monitor de red mantiene una lista de analizadores existentes en el archivo [*Parser.ini*](p.md) y crea un archivo INI independiente para cada analizador instalado.
 
  
 
 Durante el proceso de instalación, el archivo DLL del analizador debe identificar lo siguiente:
 
--   El número de analizadores en el archivo DLL, incluido el nombre y la descripción del comentario de cada analizador.
--   Los protocolos que preceden al protocolo del analizador.
--   Los protocolos que siguen el protocolo del analizador.
+-   Número de analizadores del archivo DLL, incluido un nombre y una descripción de comentario para cada analizador.
+-   Protocolos que preceden al protocolo del analizador.
+-   Protocolos que siguen al protocolo del analizador.
 
 > [!Note]  
-> Monitor de red usa la información anterior y siguiente del protocolo del analizador para actualizar los [*conjuntos de entrega*](h.md) y [*seguir los conjuntos*](f.md) de analizadores que identifica el archivo DLL del analizador.
+> Monitor de red utiliza la información del protocolo de analizador anterior [](h.md) y siguiente [](f.md) para actualizar los conjuntos de entrega y seguir los conjuntos de analizadores que identifica el archivo DLL del analizador.
 
  
 
-En el procedimiento siguiente se identifican los pasos necesarios para implementar [**ParserAutoInstallInfo**](parserautoinstallinfo.md).
+El procedimiento siguiente identifica los pasos necesarios para implementar [**ParserAutoInstallInfo**](parserautoinstallinfo.md).
 
 **Para implementar ParserAutoInstallInfo**
 
-1.  Asigne una estructura [**PF \_ PARSERDLLINFO**](pf-parserdllinfo.md) mediante **HeapAlloc**.
-2.  Devuelva la memoria al montón mediante **HeapFree**.
-3.  Tenga en cuenta que esta llamada también debe asignar una estructura [**PF \_ PARSERINFO**](pf-parserinfo.md) para cada analizador del archivo dll.
-4.  Especifique el número de analizadores (normalmente uno) que contiene el archivo DLL en el miembro **nParsers** de [**PF \_ PARSERDLLINFO**](pf-parserdllinfo.md).
-5.  Especifique un nombre, un comentario y un archivo de ayuda opcional en los miembros **szProtocolName**, **szComment** y **szHelpFile** de cada estructura [**PF \_ PARSERINFO**](pf-parserinfo.md) .
-6.  Especifique los protocolos que preceden a cada protocolo DLL. Una de las condiciones siguientes se aplica a un conjunto de entrega entrante.
-    -   Si los protocolos anteriores pueden determinar que el protocolo sigue a partir de los datos de los protocolos anteriores, establezca el miembro **pWhoHandsOffToMe** de [**PF \_ PARSERINFO**](pf-parserinfo.md). En este caso, el protocolo se agrega a los [*conjuntos de entrega*](h.md) de los protocolos anteriores.
-    -   Si los protocolos anteriores no pueden determinar que el protocolo sigue a partir de los datos de los protocolos anteriores, establezca el miembro **pWhoCanPrecedeMe** de [**PF \_ PARSERINFO**](pf-parserinfo.md). En este caso, el protocolo se agrega a continuación a los [*siguientes conjuntos*](f.md) de protocolos.
-7.  Especifique los protocolos que siguen a cada protocolo DLL. Una de las condiciones siguientes se aplica a un conjunto de seguimiento de salida.
-    -   Si el protocolo puede determinar qué protocolos siguen según los datos del Protocolo, establezca el miembro **pWhoDoIHandOffTo** de [**PF \_ PARSERINFO**](pf-parserinfo.md). En este caso, estos protocolos se agregan al [*conjunto de entrega*](h.md) de los protocolos.
-    -   Si el Protocolo no puede determinar qué protocolos siguen según los datos del Protocolo, establezca el miembro **pWhoCanFollowMe** de [**PF \_ PARSERINFO**](pf-parserinfo.md). En este caso, estos protocolos se agregan al [*siguiente conjunto*](f.md) del protocolo.
-8.  Devuelva la estructura [**PF \_ PARSERDLLINFO**](pf-parserdllinfo.md) a monitor de red.
+1.  Asigne una [**estructura \_ PF PARSERDLLINFO**](pf-parserdllinfo.md) **mediante HeapAlloc**.
+2.  Devuelve memoria al montón mediante **HeapFree.**
+3.  Tenga en cuenta que esta llamada también debe asignar una [**estructura PF \_ PARSERINFO**](pf-parserinfo.md) para cada analizador del archivo DLL.
+4.  Especifique el número de analizadores (normalmente uno) que contiene el archivo DLL en el **miembro nParsers** de [**PF \_ PARSERDLLINFO**](pf-parserdllinfo.md).
+5.  Especifique un nombre, un comentario y un archivo de Ayuda opcional en los miembros **szProtocolName**, **szComment** y **szHelpFile** de cada [**estructura PF \_ PARSERINFO.**](pf-parserinfo.md)
+6.  Especifique los protocolos que preceden a cada protocolo DLL. Una de las siguientes condiciones se aplica a un conjunto de entregas entrantes.
+    -   Si los protocolos anteriores pueden determinar que el protocolo sigue a los datos de los protocolos anteriores, establezca el miembro **pHandHandsOffToMe** de [**PF \_ PARSERINFO**](pf-parserinfo.md). En este caso, el protocolo se agrega a los conjuntos [*de entrega*](h.md) de los protocolos anteriores.
+    -   Si los protocolos anteriores no pueden determinar que el protocolo sigue a los datos de los protocolos anteriores, establezca el miembro **pWhoCanPrecedeMe** de [**PF \_ PARSERINFO**](pf-parserinfo.md). En este caso, el protocolo se agrega a los [*siguientes conjuntos*](f.md) de protocolos.
+7.  Especifique los protocolos que siguen a cada protocolo DLL. Una de las siguientes condiciones se aplica a un conjunto de seguimiento saliente.
+    -   Si el protocolo puede determinar qué protocolos siguen en función de los datos del protocolo, establezca el **miembro pHandDoIHandOffTo** de [**PF \_ PARSERINFO**](pf-parserinfo.md). En este caso, estos protocolos se agregan al [*conjunto de entrega*](h.md) de los protocolos.
+    -   Si el protocolo no puede determinar qué protocolos se siguen en función de los datos del protocolo, establezca el **miembro pWhoCanFollowMe** de [**PF \_ PARSERINFO**](pf-parserinfo.md). En este caso, estos protocolos se agregan al [*siguiente conjunto*](f.md) de protocolos.
+8.  Devuelve la [**estructura \_ PF PARSERDLLINFO**](pf-parserdllinfo.md) a Monitor de red.
 
-La siguiente es una implementación básica de [**ParserAutoInstallInfo**](parserautoinstallinfo.md). El ejemplo de código se toma del analizador genérico que proporciona Monitor de red.
+A continuación se muestra una implementación básica [**de ParserAutoInstallInfo**](parserautoinstallinfo.md). El ejemplo de código se toma del analizador genérico que Monitor de red proporciona.
 
 ``` syntax
 #include <windows.h>

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_ABOUT (VFW. h)
-description: El \_ mensaje acerca de ICM informa a un controlador de compresión de vídeo para que muestre su cuadro de diálogo acerca de o consulta un controlador de compresión de vídeo para determinar si tiene el cuadro de diálogo acerca de. Puede enviar este mensaje explícitamente o mediante la macro ICAbout.
+title: ICM_ABOUT mensaje (Vfw.h)
+description: El ICM mensaje ABOUT notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo Acerca de o consulta a un controlador de compresión de vídeo para determinar si tiene un cuadro \_ de diálogo Acerca de. Puede enviar este mensaje explícitamente o mediante la macro ICAbout.
 ms.assetid: 6eca69a3-0463-48e6-befb-5003b7515e7d
 keywords:
-- Mensaje de ICM_ABOUT de Windows multimedia
+- ICM_ABOUT mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1e03e88993ba1e345a3ea32a9de7adb2d63abe9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bf47ff93ef1986d805b2cb37697fdf4d86876c5552fe6aeffb00ff172673018
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785075"
 ---
-# <a name="icm_about-message"></a>\_Mensaje acerca de ICM
+# <a name="icm_about-message"></a>\_ICM Mensaje ABOUT
 
-El **mensaje \_ acerca de ICM** informa a un controlador de compresión de vídeo para que muestre su cuadro de diálogo acerca de o consulta un controlador de compresión de vídeo para determinar si tiene el cuadro de diálogo acerca de. Puede enviar este mensaje explícitamente o mediante la macro [**ICAbout**](/windows/desktop/api/Vfw/nf-vfw-icabout) .
+El **ICM \_ acerca** de notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo Acerca de o consulta a un controlador de compresión de vídeo para determinar si tiene un cuadro de diálogo Acerca de. Puede enviar este mensaje explícitamente o mediante la macro [**ICAbout.**](/windows/desktop/api/Vfw/nf-vfw-icabout)
 
 
 ```C++
@@ -38,16 +38,16 @@ lParam = 0;
 
 <dl> <dt>
 
-<span id="hwnd"></span><span id="HWND"></span>*identificador*
+<span id="hwnd"></span><span id="HWND"></span>*Hwnd*
 </dt> <dd>
 
-Identificador de la ventana primaria del cuadro de diálogo que se muestra. También puede determinar si un controlador tiene un cuadro de diálogo acerca de especificando-1 en este parámetro, como en la macro [**ICQueryAbout**](/windows/desktop/api/Vfw/nf-vfw-icqueryabout) . El controlador devuelve ICERR \_ OK si tiene un cuadro de diálogo about o ICERR \_ no admitido de otro modo.
+Identificador de la ventana primaria del cuadro de diálogo mostrado. También puede determinar si un controlador tiene un cuadro de diálogo Acerca de especificando -1 en este parámetro, como en la macro [**ICQueryAbout.**](/windows/desktop/api/Vfw/nf-vfw-icqueryabout) El controlador devuelve ICERR OK si tiene un cuadro de diálogo Acerca de o \_ ICERR \_ UNSUPPORTED en caso contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR \_ OK si el controlador admite este mensaje o ICERR \_ no se admite en caso contrario.
+Devuelve ICERR \_ OK si el controlador admite este mensaje o ICERR \_ UNSUPPORTED en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Devuelve ICERR \_ OK si el controlador admite este mensaje o ICERR \_ no se admi
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

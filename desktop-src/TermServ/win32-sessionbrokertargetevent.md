@@ -1,11 +1,11 @@
 ---
-title: Win32_SessionBrokerTargetEvent (clase)
-description: Representa un cambio en un destino del agente de sesión.
+title: Win32_SessionBrokerTargetEvent clase
+description: Representa un cambio en un destino de agente de sesión.
 ms.assetid: ee3ae0ed-eb8b-4777-9b9e-0e50722cf52a
 ms.tgt_platform: multiple
 keywords:
 - Win32_SessionBrokerTargetEvent clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_SessionBrokerTargetEvent de clase, se describe
+- Win32_SessionBrokerTargetEvent clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -24,16 +24,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d7f1cf6aab1c4497ce85cb93318c9ca79368853
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92fcd6cb93e3ac7abaa5fef33e1557008eb29b46940fae6d5165809d9252fa16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769975"
 ---
-# <a name="win32_sessionbrokertargetevent-class"></a>\_Clase Win32 SessionBrokerTargetEvent
+# <a name="win32_sessionbrokertargetevent-class"></a>Clase \_ SessionBrokerTargetEvent de Win32
 
-Representa un cambio en un destino del agente de sesión.
+Representa un cambio en un destino de agente de sesión.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -69,24 +69,24 @@ La **clase \_ SessionBrokerTargetEvent de Win32** tiene estas propiedades.
 **ChangeType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el cambio que se ha producido. Puede ser uno de los valores siguientes.
+Especifica el cambio que se ha producido. Puede ser uno de los siguientes valores.
 
 <dt>
 
 1 (0x1)
 </dt> <dd>
 
-No se ha especificado el tipo de cambio.
+No se especifica el tipo de cambio.
 
 </dd> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dd>
 
 La dirección IP externa ha cambiado.
@@ -103,7 +103,7 @@ La dirección IP interna ha cambiado.
 8 (0x8)
 </dt> <dd>
 
-El destino estaba unido.
+El destino se ha unido.
 
 </dd> <dt>
 
@@ -154,7 +154,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El nombre de la granja a la que pertenece el destino.
+Nombre de la granja a la que pertenece el destino.
 
 **Windows Server 2008 R2:** Esta propiedad no está disponible antes de Windows Server 2012
 
@@ -190,20 +190,20 @@ Nombre del complemento.
 
 </dd> <dt>
 
-**descriptor de seguridad \_**
+**\_DESCRIPTOR DE SEGURIDAD**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descriptor utilizado por el proveedor de eventos para determinar qué usuarios pueden recibir el evento. Esta propiedad se hereda del [**\_ \_ evento**](/windows/desktop/WmiSdk/--event). Para obtener más información sobre las constantes que se usan para establecer este descriptor de seguridad, vea [constantes de seguridad de WMI](/windows/desktop/WmiSdk/wmi-security-constants).
+Descriptor utilizado por el proveedor de eventos para determinar qué usuarios pueden recibir el evento. Esta propiedad se hereda del [**\_ \_ evento**](/windows/desktop/WmiSdk/--event). Para obtener más información sobre las constantes usadas para establecer este descriptor de seguridad, vea [Constantes de seguridad WMI](/windows/desktop/WmiSdk/wmi-security-constants).
 
 </dd> <dt>
 
-**NombreDeDestino**
+**TargetName**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -218,18 +218,18 @@ Nombre del destino.
 
 </dd> <dt>
 
-**HORA de \_ creación**
+**HORA \_ CREADA**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor único que indica la hora a la que se generó el evento. Se trata de un valor de 64 bits que representa el número de intervalos de 100 segundos después del 1 de enero de 1601. La información está en el formato de hora universal coordinada (UTC). Esta propiedad se hereda del [**\_ \_ evento**](/windows/desktop/WmiSdk/--event).
+Valor único que indica la hora a la que se generó el evento. Se trata de un valor de 64 bits que representa el número de intervalos de 100 nanosegundos después del 1 de enero de 1601. La información está en formato de hora universal coordinada (UTC). Esta propiedad se hereda del [**\_ \_ evento**](/windows/desktop/WmiSdk/--event).
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> </dl>
 
@@ -241,8 +241,8 @@ Para obtener más información sobre el uso de valores **UInt64** en scripts, ve
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                      |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

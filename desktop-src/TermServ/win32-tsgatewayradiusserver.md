@@ -1,11 +1,11 @@
 ---
-title: Win32_TSGatewayRADIUSServer (clase)
-description: Describe un servidor Servicio de autenticación remota telefónica de usuario (RADIUS), que tiene un conjunto de directivas de autorización de conexión Servicios de Escritorio remoto (RD \ 160; Cap).
+title: Win32_TSGatewayRADIUSServer clase
+description: Describe un servidor Servicio de autenticación remota telefónica de usuario (RADIUS), que tiene un conjunto de directivas de autorización de Servicios de Escritorio remoto de conexión (RD \ 160; CAP).
 ms.assetid: 40254354-f446-4e17-b7ec-649c98dd94f9
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSGatewayRADIUSServer clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSGatewayRADIUSServer de clase, se describe
+- Win32_TSGatewayRADIUSServer clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -19,18 +19,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4157d89dc942a1c2f8ff7d778f9f8048971902ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9997494f9e93980ac4d6e4b1dcb9c95b0d7665a70226f77d1cd4c7ca3ad751d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769845"
 ---
-# <a name="win32_tsgatewayradiusserver-class"></a>\_Clase Win32 TSGatewayRADIUSServer
+# <a name="win32_tsgatewayradiusserver-class"></a>Clase \_ TSGatewayRADIUSServer de Win32
 
-Describe un servidor Servicio de autenticación remota telefónica de usuario (RADIUS), que tiene un conjunto de Servicios de Escritorio remoto directivas de autorización de conexión (Cap de RD).
+Describe un servidor Servicio de autenticación remota telefónica de usuario (RADIUS), que tiene un conjunto de directivas Servicios de Escritorio remoto de autorización de conexión (CAP de Escritorio remoto).
 
-RADIUS es un protocolo estándar del sector que se usa para transmitir información de autenticación, autorización y configuración entre un equipo servidor y un servidor de autenticación, denominado servidor RADIUS, con una base de datos que almacena información de usuario. Para obtener más información, vea [protocolo RADIUS](/previous-versions/windows/it-pro/windows-server-2003/cc781821(v=ws.10)).
+RADIUS es un protocolo estándar del sector que se usa para transmitir información de autenticación, autorización y configuración entre un equipo servidor y un servidor de autenticación, denominado servidor RADIUS, con una base de datos que almacena información de usuario. Para obtener más información, vea [Protocolo RADIUS.](/previous-versions/windows/it-pro/windows-server-2003/cc781821(v=ws.10))
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,19 +53,19 @@ La **clase \_ TSGatewayRADIUSServer de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSGatewayRADIUSServer** tiene estos métodos.
+La **clase \_ TSGatewayRADIUSServer de Win32** tiene estos métodos.
 
 
 
 | Método                                                                 | Descripción                                                                  |
 |:-----------------------------------------------------------------------|:-----------------------------------------------------------------------------|
-| [**Agréguela**](win32-tsgatewayradiusserver-add.md)                         | Agrega un nuevo servidor RADIUS.<br/>                                         |
-| [**Bajar**](movedown-win32-tsgatewayradiusserver.md)               | Mueve el servidor RADIUS una posición hacia abajo en el orden de prioridad.<br/> |
-| [**MoveUp**](moveup-win32-tsgatewayradiusserver.md)                   | Mueve el servidor RADIUS una posición hacia arriba en el orden de prioridad.<br/>   |
-| [**Retirar**](win32-tsgatewayradiusserver-remove.md)                   | Quita el servidor RADIUS actual.<br/>                                |
-| [**SetName**](setname-win32-tsgatewayradiusserver.md)                 | Establece la propiedad de **nombre** para este servidor RADIUS.<br/>                |
-| [**SetSharedSecret**](setsharedsecret-win32-tsgatewayradiusserver.md) | Establece la propiedad **SharedSecret** para este servidor RADIUS.<br/>        |
-| [**Update**](update-win32-tsgatewayradiusserver.md)                   | Actualiza el servidor RADIUS actual.<br/>                                |
+| [**Añadir**](win32-tsgatewayradiusserver-add.md)                         | Agrega un nuevo servidor RADIUS.<br/>                                         |
+| [**MoveDown**](movedown-win32-tsgatewayradiusserver.md)               | Mueve este servidor RADIUS una posición hacia abajo en el orden de prioridad.<br/> |
+| [**MoveUp**](moveup-win32-tsgatewayradiusserver.md)                   | Mueve este servidor RADIUS una posición hacia arriba en el orden de prioridad.<br/>   |
+| [**Quitar**](win32-tsgatewayradiusserver-remove.md)                   | Quita el servidor RADIUS actual.<br/>                                |
+| [**SetName**](setname-win32-tsgatewayradiusserver.md)                 | Establece la **propiedad Name** para este servidor RADIUS.<br/>                |
+| [**SetSharedSecret**](setsharedsecret-win32-tsgatewayradiusserver.md) | Establece la **propiedad SharedSecret** para este servidor RADIUS.<br/>        |
+| [**Actualizar**](update-win32-tsgatewayradiusserver.md)                   | Actualiza el servidor RADIUS actual.<br/>                                |
 
 
 
@@ -89,20 +89,20 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nombre del servidor RADIUS. Esta propiedad se puede cambiar con el método [**setName**](setname-win32-tsgatewayradiusserver.md) .
+Nombre del servidor RADIUS. Esta propiedad se puede cambiar con el [**método SetName.**](setname-win32-tsgatewayradiusserver.md)
 
 </dd> <dt>
 
 **Prioridad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Prioridad del servidor RADIUS. El servidor de puerta de enlace de escritorio remoto busca Cap de RD en servidores RADIUS según la prioridad. Esta propiedad se puede cambiar con los métodos [**moveUp**](moveup-win32-tsgatewayradiusserver.md), [**moveDown**](movedown-win32-tsgatewayradiusserver.md), [**Add**](win32-tsgatewayradiusserver-add.md)y [**Remove**](win32-tsgatewayradiusserver-remove.md) .
+Prioridad del servidor RADIUS. El servidor de puerta de enlace de Escritorio remoto busca CAP de Escritorio remoto en servidores RADIUS en función de la prioridad. Esta propiedad se puede cambiar con los [**métodos MoveUp,**](moveup-win32-tsgatewayradiusserver.md) [**MoveDown,**](movedown-win32-tsgatewayradiusserver.md) [**Add**](win32-tsgatewayradiusserver-add.md) [**y Remove.**](win32-tsgatewayradiusserver-remove.md)
 
 </dd> <dt>
 
@@ -115,26 +115,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Secreto compartido para el servidor RADIUS. Esta propiedad se puede cambiar con el método [**SetSharedSecret**](setsharedsecret-win32-tsgatewayradiusserver.md) .
+Secreto compartido para el servidor RADIUS. Esta propiedad se puede cambiar con el [**método SetSharedSecret.**](setsharedsecret-win32-tsgatewayradiusserver.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar esta clase, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para usar esta clase.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -143,7 +143,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayConnection**](win32-tsgatewayconnection.md)
+[**TSGatewayConnection de Win32 \_**](win32-tsgatewayconnection.md)
 </dt> <dt>
 
 [**Win32 \_ TSGatewayConnectionAuthorizationPolicy**](win32-tsgatewayconnectionauthorizationpolicy.md)
@@ -155,10 +155,10 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 [**Win32 \_ TSGatewayResourceAuthorizationPolicy**](win32-tsgatewayresourceauthorizationpolicy.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayResourceGroup**](win32-tsgatewayresourcegroup.md)
+[**TSGatewayResourceGroup de Win32 \_**](win32-tsgatewayresourcegroup.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
+[**TSGatewayServerSettings de Win32 \_**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

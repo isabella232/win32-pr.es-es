@@ -1,55 +1,55 @@
 ---
-description: La secuencia de revisión y la información de aplicabilidad que devuelve la función MsiExtractPatchXMLData o el método ExtractPatchXMLData se encuentran en el formato de un BLOB XML que contiene los elementos y atributos que se identifican en este tema.
+description: La información de secuenciación y aplicabilidad de revisiones que devuelve la función MsiExtractPatchXMLData o el método ExtractPatchXMLData tiene el formato de un blob XML que contiene los elementos y atributos identificados en este tema.
 ms.assetid: ea40ed1d-1ef9-44f3-8ae8-3d854e308a49
-title: Extraer información de revisión como XML
+title: Extracción de información de revisión como XML
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20e1e594d3ff2870ca1aaf87245c537045f95d72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0574d953609b467c42467853f540dc85c9c24a31c07b3b3d006eaa6633472d53
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821685"
 ---
-# <a name="extracting-patch-information-as-xml"></a>Extraer información de revisión como XML
+# <a name="extracting-patch-information-as-xml"></a>Extracción de información de revisión como XML
 
-La secuencia de revisión y la información de aplicabilidad que devuelve la función [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa) o el método [**ExtractPatchXMLData**](installer-extractpatchxmldata.md) se encuentran en el formato de un BLOB XML que contiene los elementos y atributos que se identifican en este tema. El BLOB XML se puede proporcionar a [**MsiDeterminePatchSequence**](/windows/desktop/api/Msi/nf-msi-msideterminepatchsequencea) y [**MsiDetermineApplicablePatches**](/windows/desktop/api/Msi/nf-msi-msidetermineapplicablepatchesa) en lugar del archivo de revisión completo.
+La información de secuenciación y aplicabilidad de revisiones que devuelve la función [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa) o el método [**ExtractPatchXMLData**](installer-extractpatchxmldata.md) tiene el formato de un blob XML que contiene los elementos y atributos identificados en este tema. El blob XML se puede proporcionar a [**MsiDeterminePatchSequence**](/windows/desktop/api/Msi/nf-msi-msideterminepatchsequencea) y [**MsiDetermineApplicablePatches**](/windows/desktop/api/Msi/nf-msi-msidetermineapplicablepatchesa) en lugar del archivo de revisión completo.
 
--   El elemento MsiPatch es el elemento superior del BLOB XML y contiene información acerca de la revisión.
+-   El elemento MsiPatch es el elemento superior del blob XML y contiene información sobre la revisión.
 
-    El atributo SchemaVersion especifica la versión de la definición de esquema. MSIPatchApplicability. xsd especifica el esquema y la versión del esquema actual es 1.0.0.0. El valor del atributo PatchGUID es el código de revisión GUID para el paquete de revisión Obtenido de la propiedad [**Resumen del número de revisión**](revision-number-summary.md) en el flujo de información de [Resumen](summary-information-stream.md) de la revisión. MinMsiVersion es la versión mínima de la Windows Installer necesaria para instalar la revisión obtenida de la propiedad de [**Resumen de recuento de palabras**](word-count-summary.md) .
+    El atributo SchemaVersion especifica la versión de la definición de esquema. MSIPatchApplicability.xsd especifica el esquema y la versión actual del esquema es 1.0.0.0. El valor del atributo PatchGUID es el código de revisión GUID del paquete [](summary-information-stream.md) de revisión obtenido de la propiedad [**Resumen**](revision-number-summary.md) del número de revisión en el flujo de información de resumen de la revisión. MinMsiVersion es la versión mínima del instalador de Windows necesario para instalar la revisión obtenida de la propiedad [**Resumen de**](word-count-summary.md) recuento de palabras.
 
--   El elemento TargetProduct es un elemento contenedor para obtener información sobre una aplicación de destino de una revisión.
+-   El elemento TargetProduct es un elemento contenedor para obtener información sobre una aplicación a la que se dirige una revisión.
 
-    Puede haber varios elementos TargetProduct si la revisión puede aplicarse a varias aplicaciones. La información del elemento TargetProduct se extrae de las transformaciones que se incrustan dentro de la revisión.
+    Puede haber varios elementos TargetProduct si la revisión se puede aplicar a varias aplicaciones. La información del elemento TargetProduct se extrae de las transformaciones incrustadas dentro de la revisión.
 
--   El elemento TargetProductCode contiene el valor de la propiedad [**ProductCode**](productcode.md) de la aplicación de destino antes de que se aplique la revisión.
+-   El elemento TargetProductCode contiene el valor de la [**propiedad ProductCode**](productcode.md) de la aplicación de destino antes de aplicar la revisión.
 
-    Puede haber varios elementos TargetProductCode si la revisión puede aplicarse a varias aplicaciones.
+    Puede haber varios elementos TargetProductCode si la revisión se puede aplicar a varias aplicaciones.
 
--   El elemento UpdatedProductCode contiene el GUID del código de producto de la aplicación de destino una vez aplicada la revisión.
+-   El elemento UpdatedProductCode contiene el GUID del código de producto de la aplicación de destino después de aplicar la revisión.
 
-    Este elemento solo está presente si la revisión cambia el valor de la propiedad [**ProductCode**](productcode.md) . Una revisión que cambia el **ProductCode** se conoce como una [actualización principal](major-upgrades.md).
+    Este elemento solo está presente si la revisión cambia el valor de la [**propiedad ProductCode.**](productcode.md) Una revisión que cambia **ProductCode** se conoce como [actualización principal.](major-upgrades.md)
 
--   El elemento TargetVersion contiene la propiedad [**ProductVersion**](productversion.md) de la aplicación de destino antes de que se aplique la revisión.
--   El elemento UpdateVersion contiene el valor de la propiedad [**ProductVersion**](productversion.md) de la aplicación de destino después de aplicar la revisión.
+-   El elemento TargetVersion contiene la [**propiedad ProductVersion**](productversion.md) de la aplicación de destino antes de aplicar la revisión.
+-   El elemento UpdateVersion contiene el valor de la [**propiedad ProductVersion**](productversion.md) de la aplicación de destino después de aplicar la revisión.
 
-    Este elemento solo está presente si la revisión cambia el valor de la propiedad [**ProductVersion**](productversion.md) . El BLOB XML de una revisión que implementa una [pequeña actualización](small-updates.md), también conocida como QFE, no incluirá este elemento. El BLOB XML de una revisión que implementa una actualización secundaria, también conocida como Service Pack, incluirá este elemento.
+    Este elemento solo está presente si la revisión cambia el valor de la [**propiedad ProductVersion.**](productversion.md) El blob XML para una revisión que implementa una [actualización pequeña](small-updates.md), también denominada QFE, no incluirá este elemento. El blob XML para una revisión que implementa una actualización secundaria, también denominada Service Pack, incluirá este elemento.
 
--   El elemento TargetLanguage contiene el valor de la propiedad [**ProductLanguage**](productlanguage.md) de la aplicación de destino antes de que se aplique la revisión.
--   El elemento UpdatedLanguages contiene el valor de la propiedad [**ProductLanguage**](productlanguage.md) una vez aplicada la revisión.
--   El elemento UpgradeCode contiene el valor de la propiedad [**UpgradeCode**](upgradecode.md) de la aplicación de destino.
--   El elemento ObsoletedPatch contiene los códigos de revisión (GUID) de las revisiones que se especifican como obsoletas en esta revisión.
+-   El elemento TargetLanguage contiene el valor de la [**propiedad ProductLanguage**](productlanguage.md) de la aplicación de destino antes de aplicar la revisión.
+-   El elemento UpdatedLanguages contiene el valor de la [**propiedad ProductLanguage**](productlanguage.md) después de aplicar la revisión.
+-   El elemento UpgradeCode contiene el valor de la [**propiedad UpgradeCode**](upgradecode.md) de la aplicación de destino.
+-   El elemento ObsoletedPatch contiene los códigos de revisión (GUID) de las revisiones especificadas como obsoletas por esta revisión.
 
-    La lista de revisiones obsoletas se obtiene del [**Resumen de número de revisión**](revision-number-summary.md) en el [flujo de información de Resumen](summary-information-stream.md) de la revisión.
+    La lista de revisiones obsoletas se obtiene del resumen del número [**de**](revision-number-summary.md) revisión en el flujo [de información de resumen](summary-information-stream.md) de la revisión.
 
--   El elemento SequenceData contiene información de secuencia de revisión para la revisión.
+-   El elemento SequenceData contiene información de secuenciación de revisiones para la revisión.
 
-    Puede haber varios elementos SequenceData en el BLOB XML. Cada elemento SequenceData contiene la información de una fila de la [tabla MsiPatchSequence](msipatchsequence-table.md) de la revisión. El elemento SequenceData contiene un subelemento ProductCode, Sequence y Attributes para la información de los campos correspondientes de la tabla MsiPatchSequence. Vea la sección de la [tabla MsiPatchSequence](msipatchsequence-table.md) para obtener una descripción de cada campo.
+    Puede haber varios elementos SequenceData en el blob XML. Cada elemento SequenceData contiene la información de una fila de la [tabla MsiPatchSequence](msipatchsequence-table.md) de la revisión. El elemento SequenceData contiene un subelemento ProductCode, Sequence y Attributes para la información de los campos correspondientes de la tabla MsiPatchSequence. Consulte la [sección tabla MsiPatchSequence](msipatchsequence-table.md) para obtener una descripción de cada campo.
 
-## <a name="extracting-applicability-information"></a>Extraer información de aplicabilidad
+## <a name="extracting-applicability-information"></a>Extracción de información de aplicabilidad
 
-En el ejemplo siguiente se muestra cómo extraer la información de aplicabilidad de una revisión de Windows Installer (archivo. msp) mediante [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa). El BLOB XML extraído se basa en la definición de esquema de MSIPatchApplicability. xsd y se devuelve a szXMLData.
+En el ejemplo siguiente se muestra cómo extraer la información de aplicabilidad de una revisión del instalador de Windows (archivo .msp) [**mediante MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa). El blob XML extraído se basa en la definición de esquema de MSIPatchApplicability.xsd y se devuelve a szXMLData.
 
 
 ```C++
@@ -93,7 +93,7 @@ void main()
 
 
 
-En el ejemplo siguiente se muestra cómo extraer la información de aplicabilidad de una revisión de Windows Installer (archivo. msp) en formato XML. El BLOB XML extraído se basa en la definición de esquema de MSIPatchApplicability. xsd y se devuelve en strPatchXML.
+En el ejemplo siguiente se muestra cómo extraer la información de aplicabilidad de un archivo Windows Installer Patch (archivo .msp) en formato XML. El blob XML extraído se basa en la definición de esquema de MSIPatchApplicability.xsd y se devuelve en strPatchXML.
 
 ``` syntax
 Dim installer
@@ -101,9 +101,9 @@ Set installer = CreateObject("WindowsInstaller.Installer")
 strPatchXML = installer.ExtractPatchXMLData("c:\example\patch.msp")
 ```
 
-## <a name="patch-applicability-schema-definition"></a>Definición del esquema de aplicabilidad de revisiones
+## <a name="patch-applicability-schema-definition"></a>Definición de esquema de aplicabilidad de revisiones
 
-Copie el siguiente texto en el Bloc de notas o en otro editor de texto para crear el archivo de definición de esquema para la información de aplicabilidad de la revisión en el BLOB XML. Asigne a este archivo el nombre MSIPatchApplicability. XSD.
+Copie el texto siguiente en Bloc de notas u otro editor de texto para crear el archivo de definición de esquema para la información de aplicabilidad de revisiones en el blob XML. Asigne a este archivo el nombre MSIPatchApplicability.XSD.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>

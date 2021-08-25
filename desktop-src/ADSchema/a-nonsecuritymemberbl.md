@@ -1,11 +1,11 @@
 ---
-title: Atributo de miembro no de seguridad-BL
-description: Lista de miembros que no son de seguridad para una lista de distribución de Exchange.
+title: Atributo non-Security-Member-BL
+description: Lista de miembros que no son de seguridad para una Exchange de distribución.
 ms.assetid: 6f5044f5-3cab-4b92-9055-2d431efdd0f0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo no de la seguridad del miembro BL
-- nonSecurityMemberBL esquema de AD de atributos
+- Esquema de AD del atributo non-Security-Member-BL
+- Esquema de AD del atributo nonSecurityMemberBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2478b887e25bcdcb2ecfcb6b13b06feb50994fa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 81b663f0f1acb546a4fbfac4fc90660ca1299fdb8e28c4d4ef7eef96e60a9bbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703126"
 ---
-# <a name="non-security-member-bl-attribute"></a>Atributo de miembro no de seguridad-BL
+# <a name="non-security-member-bl-attribute"></a>Atributo non-Security-Member-BL
 
-Lista de miembros que no son de seguridad para una lista de distribución de Exchange.
+Lista de miembros que no son de seguridad para una Exchange de distribución.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | Miembro no de seguridad-BL                  |
-| Nombre para mostrar de LDAP | nonSecurityMemberBL                     |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | El sistema establece este valor.        |
+| Ldap-Display-Name | nonSecurityMemberBL                     |
+| Size              | \-                                      |
+| Actualizar privilegios  | El sistema establece este valor.        |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.531                  |
-| System-ID-GUID    | 52458019-ca6a-11d0-AFFF-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 52458019-ca6a-11d0-afff-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ Lista de miembros que no son de seguridad para una lista de distribución de Exc
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 51                              |
+| Id. de vínculo                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -76,13 +76,13 @@ Lista de miembros que no son de seguridad para una lista de distribución de Exc
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 51                              |
+| Id. de vínculo                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -95,15 +95,15 @@ Lista de miembros que no son de seguridad para una lista de distribución de Exc
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 51                              |
+| Id. de vínculo                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -116,15 +116,15 @@ Lista de miembros que no son de seguridad para una lista de distribución de Exc
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 51                              |
+| Id. de vínculo                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -139,13 +139,13 @@ Lista de miembros que no son de seguridad para una lista de distribución de Exc
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 51                              |
+| Id. de vínculo                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -160,13 +160,13 @@ Lista de miembros que no son de seguridad para una lista de distribución de Exc
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 51                              |
+| Id. de vínculo                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

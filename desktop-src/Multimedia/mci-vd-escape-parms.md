@@ -1,9 +1,9 @@
 ---
-title: MCI_VD_ESCAPE_PARMS estructura (Mciapi. h)
-description: La estructura parms de los caracteres de escape de MCI \_ Vd \_ \_ contiene el comando que se envía a un dispositivo para el \_ comando MCI escape para dispositivos de VideoDisc.
+title: MCI_VD_ESCAPE_PARMS estructura (Mciapi.h)
+description: La estructura MCI VD ESCAPE PARMS contiene el comando enviado a un dispositivo para el comando ESCAPE de \_ \_ \_ MCI \_ para dispositivos videodisc.
 ms.assetid: 7c735943-b67a-4be5-82b5-6a058349623e
 keywords:
-- Estructura de MCI_VD_ESCAPE_PARMS de Windows multimedia
+- MCI_VD_ESCAPE_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a80712cd693e2c7ebe290be6b9827c1e051dd86a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2f9a0fef0e60168d4539756c741527d751fd726ab3d2472cdbaf3b080784e70c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783850"
 ---
-# <a name="mci_vd_escape_parms-structure"></a>\_ \_ Estructura parms de secuencias de escape de MCI Vd \_
+# <a name="mci_vd_escape_parms-structure"></a>Estructura MCI \_ VD \_ ESCAPE \_ PARMS
 
-La **estructura \_ \_ \_ parms** de los caracteres de escape de MCI Vd contiene el comando que se envía a un dispositivo para el comando [**MCI \_ escape**](mci-escape.md) para dispositivos de VideoDisc.
+La **estructura MCI \_ VD ESCAPE \_ \_ PARMS** contiene el comando enviado a un dispositivo para el comando ESCAPE de [**MCI \_**](mci-escape.md) para dispositivos videodisc.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,18 +44,18 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
 **lpstrCommand**
 </dt> <dd>
 
-Comando que se va a enviar a un dispositivo.
+Comando que se envía al dispositivo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -63,11 +63,11 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -75,13 +75,13 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**ESCAPE de MCI \_**](mci-escape.md)
+[**ESCAPE \_ de MCI**](mci-escape.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

@@ -1,9 +1,9 @@
 ---
-title: Enumeración RAS_PARAMS_FORMAT (rassapi. h)
-description: El \_ \_ tipo de enumeración de formato de los parámetros de Ras se usa en la estructura de parámetros de Ras \_ para indicar el tipo de datos asociado a una clave específica del medio.
+title: RAS_PARAMS_FORMAT enumeración (Rassapi.h)
+description: El tipo de enumeración RAS PARAMS FORMAT se usa en la estructura PARAMETERS de RAS para indicar el tipo de datos \_ asociado a una clave específica del \_ \_ medio.
 ms.assetid: dd2c0110-1f27-4a8f-bc61-f15588ebc4ca
 keywords:
-- RAS_PARAMS_FORMAT enumeración de RAS
+- RAS_PARAMS_FORMAT enumeración RAS
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00065f3781fd2ada420f67367e84e0863fe3b446
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92b798ef8a5257afcb4e4ad653801bda0d21691057abad970d6e8158f592146e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673185"
 ---
-# <a name="ras_params_format-enumeration"></a>\_Enumeración de formato de parámetros ras \_
+# <a name="ras_params_format-enumeration"></a>Enumeración RAS \_ PARAMS \_ FORMAT
 
-\[La enumeración de **\_ \_ formato** de los parámetros de Ras no es compatible con Windows Vista.\]
+\[La **\_ enumeración RAS PARAMS \_ FORMAT** no se admite desde Windows Vista.\]
 
-El tipo de enumeración de **\_ \_ formato** de los parámetros de Ras se usa en la estructura de [**\_ parámetros de Ras**](ras-parameters-str.md) para indicar el tipo de datos asociado a una clave específica del medio.
+El **tipo \_ de enumeración RAS PARAMS \_ FORMAT** se usa en la estructura [**PARAMETERS \_ de RAS**](ras-parameters-str.md) para indicar el tipo de datos asociado a una clave específica del medio.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -67,7 +67,7 @@ Indica que los datos asociados a la clave son una cadena.
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
@@ -75,13 +75,13 @@ Indica que los datos asociados a la clave son una cadena.
 
 <dl> <dt>
 
-[Introducción al servicio de acceso remoto (RAS)](about-remote-access-service.md)
+[Introducción al Servicio de acceso remoto (RAS)](about-remote-access-service.md)
 </dt> <dt>
 
 [Enumeraciones de administración del servidor RAS](ras-server-administration-enumerations.md)
 </dt> <dt>
 
-[**parámetros de RAS \_**](ras-parameters-str.md)
+[**PARÁMETROS \_ RAS**](ras-parameters-str.md)
 </dt> </dl>
 
  
