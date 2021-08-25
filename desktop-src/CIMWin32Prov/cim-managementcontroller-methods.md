@@ -1,30 +1,30 @@
 ---
-description: La \_ clase ManagementController de CIM expone los métodos siguientes.
+description: La clase CIM \_ ManagementController expone los métodos siguientes.
 ms.assetid: 641DCA8F-8EE4-4130-9CA6-7007B4FEC8D8
 ms.tgt_platform: multiple
-title: Métodos CIM_ManagementController
+title: CIM_ManagementController métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 032b377c733394aa293bd95f3feafff6f91a0b41
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: eef08739fdf0efb0b55d05f2d8b5732702d516c9cb5f823098454c771c6ce621
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922945"
 ---
-# <a name="cim_managementcontroller-methods"></a>\_Métodos ManagementController de CIM
+# <a name="cim_managementcontroller-methods"></a>Métodos \_ de Cim ManagementController
 
-La [**clase \_ ManagementController de CIM**](cim-managementcontroller.md) expone los métodos siguientes.
+La [**clase CIM \_ ManagementController**](cim-managementcontroller.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**RESET (método)**](reset-method-in-class-cim-managementcontroller.md)
--   [**SetPowerState (método)**](setpowerstate-method-in-class-cim-managementcontroller.md)
+-   [**Método de restablecimiento**](reset-method-in-class-cim-managementcontroller.md)
+-   [**Método SetPowerState**](setpowerstate-method-in-class-cim-managementcontroller.md)
 
  
 

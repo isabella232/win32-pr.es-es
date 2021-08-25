@@ -1,11 +1,11 @@
 ---
-title: Query. beginNextGroup (método)
-description: El método beginNextGroup comienza un nuevo grupo de condiciones. | Query. beginNextGroup (método)
+title: Método Query.beginNextGroup
+description: El método beginNextGroup comienza un nuevo grupo de condiciones. | Método Query.beginNextGroup
 ms.assetid: e0c59bd0-0789-413e-ade8-8d53c6f3e19b
 keywords:
-- método beginNextGroup de Windows Media Player
-- método beginNextGroup de Windows Media Player, clase de consulta
-- Clase de consulta de Windows Media Player, método beginNextGroup
+- Método beginNextGroup Reproductor de Windows Media
+- Método beginNextGroup Reproductor de Windows Media , clase Query
+- Clase de consulta Reproductor de Windows Media método , beginNextGroup
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46c043b9a0ea506e054877b4d8122304ced75e28
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d12f8e37c32b83afb3e518deda09643033c7f396d8c52a2898893a01dc930d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861855"
 ---
-# <a name="querybeginnextgroup-method"></a>Query. beginNextGroup (método)
+# <a name="querybeginnextgroup-method"></a>Método Query.beginNextGroup
 
-El método **beginNextGroup** comienza un nuevo grupo de condiciones.
+El **método beginNextGroup** comienza un nuevo grupo de condiciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El inicio de un nuevo grupo de condiciones implica que se ha completado el grupo de condiciones actual. El nuevo grupo de condiciones siempre se concatena al grupo de condiciones anterior mediante la lógica o.
+El inicio de un nuevo grupo de condiciones implica que ha completado el grupo de condiciones actual. El nuevo grupo de condiciones siempre se concatena con el grupo de condiciones anterior mediante la lógica OR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ El inicio de un nuevo grupo de condiciones implica que se ha completado el grupo
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 11.<br/>                                                |
+| Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -63,7 +63,7 @@ El inicio de un nuevo grupo de condiciones implica que se ha completado el grupo
 
 <dl> <dt>
 
-[**MediaCollection. createQuery**](mediacollection-createquery.md)
+[**MediaCollection.createQuery**](mediacollection-createquery.md)
 </dt> <dt>
 
 [**MediaCollection.getPlaylistByQuery**](mediacollection-getplaylistbyquery.md)
@@ -72,10 +72,10 @@ El inicio de un nuevo grupo de condiciones implica que se ha completado el grupo
 [**MediaCollection.getStringCollectionByQuery**](mediacollection-getstringcollectionbyquery.md)
 </dt> <dt>
 
-[**Query (objeto)**](query-object.md)
+[**Objeto Query**](query-object.md)
 </dt> <dt>
 
-[**Consulta. addCondition**](query-addcondition.md)
+[**Query.addCondition**](query-addcondition.md)
 </dt> </dl>
 
  

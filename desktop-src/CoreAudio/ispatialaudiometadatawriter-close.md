@@ -1,7 +1,7 @@
 ---
-description: Completa cualquier operación necesaria en el búfer de metadatos y libera el objeto ISpatialAudioMetadataItems especificado.
+description: Completa las operaciones necesarias en el búfer de metadatos y libera el objeto ISpatialAudioMetadataItems especificado.
 ms.assetid: 2417E624-6535-49E2-9CF4-F927F731BE41
-title: 'ISpatialAudioMetadataWriter:: Close (método)'
+title: ISpatialAudioMetadataWriter::Close (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - spatialaudiometadata.h
-ms.openlocfilehash: 719c0d156c616c623d3e9a0d8a78620b735a7151
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4b29efb38cf11ba718a631f676323eb3db93aab042c70691dfb89ce957266e86
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875425"
 ---
-# <a name="ispatialaudiometadatawriterclose-method"></a>ISpatialAudioMetadataWriter:: Close (método)
+# <a name="ispatialaudiometadatawriterclose-method"></a>ISpatialAudioMetadataWriter::Close (Método)
 
-Completa cualquier operación necesaria en el búfer de metadatos y libera el objeto [**ISpatialAudioMetadataItems**](/windows/desktop/api/SpatialAudioMetadata/nn-spatialaudiometadata-ispatialaudiometadataitems) especificado.
+Completa las operaciones necesarias en el búfer de metadatos y libera el objeto [**ISpatialAudioMetadataItems**](/windows/desktop/api/SpatialAudioMetadata/nn-spatialaudiometadata-ispatialaudiometadataitems) especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,15 +39,15 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un error, los códigos de retorno posibles incluyen, entre otros, los valores que se muestran en la tabla siguiente.
+Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, los posibles códigos de retorno incluyen, entre otros, los valores que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                                                     | Descripción                                                                                                                                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**SPTLAUD \_ MD \_ CLNT \_ E \_ no hay ningún \_ elemento \_ abierto**</dt> </dl>            | El [**ISpatialAudioMetadataItems**](/windows/desktop/api/SpatialAudioMetadata/nn-spatialaudiometadata-ispatialaudiometadataitems) proporcionado no se ha abierto con una llamada a [**Open**](/windows/desktop/api/SpatialAudioMetadata/nf-spatialaudiometadata-ispatialaudiometadatawriter-open).<br/> |
-| <dl> <dt>**SPTLAUD \_ MD \_ CLNT \_ E \_ no hay \_ elementos \_ escritos**</dt> </dl>         | No se ha escrito ningún elemento de metadatos en el [**ISpatialAudioMetadataItems**](/windows/desktop/api/SpatialAudioMetadata/nn-spatialaudiometadata-ispatialaudiometadataitems)proporcionado.<br/>                                              |
-| <dl> <dt>**SPTLAUD \_ MD \_ CLNT \_ E \_ Item \_ deben \_ tener \_ comandos**</dt> </dl> | No se han escrito comandos de metadatos en el [**ISpatialAudioMetadataItems**](/windows/desktop/api/SpatialAudioMetadata/nn-spatialaudiometadata-ispatialaudiometadataitems)proporcionado.<br/>                                           |
+| <dl> <dt>**SPTLAUD \_ MD \_ CLNT \_ E \_ NO \_ ITEMS \_ OPEN**</dt> </dl>            | [**ISpatialAudioMetadataItems**](/windows/desktop/api/SpatialAudioMetadata/nn-spatialaudiometadata-ispatialaudiometadataitems) proporcionado no se ha abierto con una llamada a [**Open**](/windows/desktop/api/SpatialAudioMetadata/nf-spatialaudiometadata-ispatialaudiometadatawriter-open).<br/> |
+| <dl> <dt>**SPTLAUD \_ MD \_ CLNT \_ E \_ NO \_ ITEMS \_ WRITTEN**</dt> </dl>         | No se ha escrito ningún elemento de metadatos en el [**objeto ISpatialAudioMetadataItems proporcionado.**](/windows/desktop/api/SpatialAudioMetadata/nn-spatialaudiometadata-ispatialaudiometadataitems)<br/>                                              |
+| <dl> <dt>**SPTLAUD \_ MD \_ CLNT E ITEM DEBE \_ TENER \_ \_ \_ \_ COMANDOS**</dt> </dl> | No se ha escrito ningún comando de metadatos en el [**objeto ISpatialAudioMetadataItems proporcionado.**](/windows/desktop/api/SpatialAudioMetadata/nn-spatialaudiometadata-ispatialaudiometadataitems)<br/>                                           |
 
 
 

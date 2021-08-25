@@ -1,9 +1,9 @@
 ---
 title: Enumeración WMDMMessage
-description: El tipo de enumeración WMDMMessage define los tipos y los Estados de los mensajes.
+description: El tipo de enumeración WMDMMessage define los tipos de mensaje y los estados.
 ms.assetid: 49a77100-8890-4e40-852f-c6fd436f22c5
 keywords:
-- Enumeración WMDMMessage de Windows Media Administrador de dispositivos
+- Ventanas multimedia de enumeración WMDMMessage Administrador de dispositivos
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7489dc7059f10e1a6f61d1a290f8f664a385f96c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 348092e079428e0b147d8143411cee7766365913115f968ed0e112b209383077
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862665"
 ---
 # <a name="wmdmmessage-enumeration"></a>Enumeración WMDMMessage
 
-El tipo de enumeración **WMDMMessage** define los tipos y los Estados de los mensajes.
+El **tipo de enumeración WMDMMessage** define los tipos de mensaje y los estados.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,31 +44,31 @@ enum WMDMMessage {
 
 <dl> <dt>
 
-<span id="WMDM_MSG_DEVICE_ARRIVAL"></span><span id="wmdm_msg_device_arrival"></span>**\_llegada del \_ dispositivo de mensajes de WMDM \_**
+<span id="WMDM_MSG_DEVICE_ARRIVAL"></span><span id="wmdm_msg_device_arrival"></span>**LLEGADA DEL DISPOSITIVO \_ WMDM MSG \_ \_**
 </dt> <dd>
 
-Se ha conectado un dispositivo Administrador de dispositivos de Windows Media.
+Se ha Windows un Administrador de dispositivos multimedia conectado.
 
 </dd> <dt>
 
-<span id="WMDM_MSG_DEVICE_REMOVAL"></span><span id="wmdm_msg_device_removal"></span>**\_eliminación de \_ dispositivos de mensajes de WMDM \_**
+<span id="WMDM_MSG_DEVICE_REMOVAL"></span><span id="wmdm_msg_device_removal"></span>**ELIMINACIÓN DE \_ DISPOSITIVOS DE MENSAJES WMDM \_ \_**
 </dt> <dd>
 
-Se ha quitado un dispositivo Administrador de dispositivos de Windows Media.
+Se ha Windows un Administrador de dispositivos multimedia.
 
 </dd> <dt>
 
-<span id="WMDM_MSG_MEDIA_ARRIVAL"></span><span id="wmdm_msg_media_arrival"></span>**\_llegada del \_ medio de mensajes de WMDM \_**
+<span id="WMDM_MSG_MEDIA_ARRIVAL"></span><span id="wmdm_msg_media_arrival"></span>**LLEGADA DE MEDIOS \_ DE MENSAJES WMDM \_ \_**
 </dt> <dd>
 
-Los medios se han insertado en un dispositivo Administrador de dispositivos de Windows Media.
+Los medios se han insertado en un Windows multimedia Administrador de dispositivos dispositivo.
 
 </dd> <dt>
 
-<span id="WMDM_MSG_MEDIA_REMOVAL"></span><span id="wmdm_msg_media_removal"></span>**eliminación de los medios de mensajes de WMDM \_ \_ \_**
+<span id="WMDM_MSG_MEDIA_REMOVAL"></span><span id="wmdm_msg_media_removal"></span>**ELIMINACIÓN DE \_ MEDIOS DE MENSAJES WMDM \_ \_**
 </dt> <dd>
 
-Los medios se han quitado de un dispositivo Administrador de dispositivos de Windows Media.
+Los medios se han quitado de un Windows multimedia Administrador de dispositivos dispositivo.
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ Los medios se han quitado de un dispositivo Administrador de dispositivos de Win
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 

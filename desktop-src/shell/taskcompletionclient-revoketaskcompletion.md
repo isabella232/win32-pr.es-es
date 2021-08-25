@@ -1,7 +1,7 @@
 ---
 description: Finaliza la finalización de la tarea.
 ms.assetid: C64C57E3-593C-47AE-A005-F468E7C588EF
-title: 'TaskCompletionClient:: RevokeTaskCompletion (método)'
+title: Método TaskCompletionClient::RevokeTaskCompletion
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - ExecModelClient.dll
-ms.openlocfilehash: 8e93828d204a839ea4092d13889564781b360146
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b0130ae2e90c2f592c158fb0730461eab8a78b192ae81f7cc7aaa4139c83483
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773665"
 ---
-# <a name="taskcompletionclientrevoketaskcompletion-method"></a>TaskCompletionClient:: RevokeTaskCompletion (método)
+# <a name="taskcompletionclientrevoketaskcompletion-method"></a>Método TaskCompletionClient::RevokeTaskCompletion
 
 Finaliza la finalización de la tarea.
 
@@ -39,7 +39,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,8 +47,8 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                           |
 | Archivo DLL<br/>                      | <dl> <dt>ExecModelClient.dll</dt> </dl> |
 
 

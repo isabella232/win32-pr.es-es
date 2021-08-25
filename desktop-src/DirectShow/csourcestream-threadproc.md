@@ -1,7 +1,7 @@
 ---
-description: 'El método ThreadProc es el procedimiento de subproceso para el subproceso de trabajo. Este método implementa el método CAMThread:: ThreadProc virtual puro.'
+description: El método ThreadProc es el procedimiento de subproceso para el subproceso de trabajo. Este método implementa el método PURE VIRTUAL CAMThread::ThreadProc.
 ms.assetid: 8e66b609-d795-45a8-8fe5-774c659ee350
-title: Método CSourceStream. ThreadProc (Source. h)
+title: Método CSourceStream.ThreadProc (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6dc7d08643cc0ca76d3d05f0b9090f30200eb181
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10ef0d29ab46ada118dc97c2d767b8377556086b949b6b9969cf5671b51e5359
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915275"
 ---
-# <a name="csourcestreamthreadproc-method"></a>CSourceStream. ThreadProc (método)
+# <a name="csourcestreamthreadproc-method"></a>Método CSourceStream.ThreadProc
 
-El `ThreadProc` método es el procedimiento de subproceso para el subproceso de trabajo. Este método implementa el método [**CAMThread:: ThreadProc**](camthread-threadproc.md) virtual puro.
+El `ThreadProc` método es el procedimiento de subproceso para el subproceso de trabajo. Este método implementa el método PURE VIRTUAL [**CAMThread::ThreadProc.**](camthread-threadproc.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si el subproceso se completó correctamente o 1 de lo contrario. Si el valor devuelto es 1, es posible que los recursos del subproceso sigan asignados.
+Devuelve 0 si el subproceso se completó correctamente o 1 en caso contrario. Si el valor devuelto es 1, es posible que todavía se asignen los recursos del subproceso.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método espera indefinidamente a las solicitudes de subprocesos llamando al método [**CAMThread:: GetRequest**](camthread-getrequest.md) . Si recibe una solicitud [**CSourceStream:: Run**](csourcestream-run.md) o [**CSourceStream::P ause**](csourcestream-pause.md) , llama al método [**CSourceStream::D obufferprocessingloop**](csourcestream-dobufferprocessingloop.md) . El método **DoBufferProcessingLoop** envía datos hasta que recibe una solicitud [**CSourceStream:: Stop**](csourcestream-stop.md) . El procedimiento de subproceso se cierra cuando recibe una solicitud [**CSourceStream:: Exit**](csourcestream-exit.md) .
+Este método espera indefinidamente las solicitudes de subproceso llamando al [**método CAMThread::GetRequest.**](camthread-getrequest.md) Si recibe una [**solicitud CSourceStream::Run**](csourcestream-run.md) o [**CSourceStream::P ause,**](csourcestream-pause.md) llama al método [**CSourceStream::D oBufferProcessingLoop.**](csourcestream-dobufferprocessingloop.md) El **método DoBufferProcessingLoop** inserta datos hasta que recibe una [**solicitud CSourceStream::Stop.**](csourcestream-stop.md) El procedimiento del subproceso se cierra cuando recibe una [**solicitud CSourceStream::Exit.**](csourcestream-exit.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método espera indefinidamente a las solicitudes de subprocesos llamando al
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método espera indefinidamente a las solicitudes de subprocesos llamando al
 
 <dl> <dt>
 
-[**Clase CSourceStream**](csourcestream.md)
+[**CSourceStream (clase)**](csourcestream.md)
 </dt> </dl>
 
  

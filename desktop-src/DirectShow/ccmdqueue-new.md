@@ -1,7 +1,7 @@
 ---
-description: El nuevo método inicializa un comando que se va a ejecutar y devuelve un nuevo objeto CDeferredCommand.
+description: El método New inicializa un comando que se va a ejecutar y devuelve un nuevo objeto CDeferredCommand.
 ms.assetid: bdd80747-a15b-422a-b742-ebfa4076bdf7
-title: Método CCmdQueue. New (Winutil. h)
+title: Método CCmdQueue.New (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 58c3aee63005010b9ed7366cfb63a69fcc7348b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8b6ad22b67df863e699649f22f513a98ca1306751a1d449a683f306c9cc2938
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910395"
 ---
-# <a name="ccmdqueuenew-method"></a>CCmdQueue. New (método)
+# <a name="ccmdqueuenew-method"></a>Método CCmdQueue.New
 
-El `New` método inicializa un comando que se va a ejecutar y devuelve un nuevo objeto [**CDeferredCommand**](cdeferredcommand.md) .
+El `New` método inicializa un comando que se va a ejecutar y devuelve un nuevo objeto [**CDeferredCommand.**](cdeferredcommand.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,11 +55,11 @@ virtual HRESULT New(
 *ppCmd* 
 </dt> <dd>
 
-Dirección de un puntero a un objeto [**CDeferredCommand**](cdeferredcommand.md) por el que una aplicación puede cancelar el comando, establecer un nuevo tiempo de presentación para el mismo o recuperar la información de estimación.
+Dirección de un puntero a un objeto [**CDeferredCommand**](cdeferredcommand.md) por el que una aplicación puede cancelar el comando, establecer un nuevo tiempo de presentación para él o recuperar información de estimación.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
 Puntero al objeto que ejecutará el comando.
@@ -69,14 +69,14 @@ Puntero al objeto que ejecutará el comando.
 *time* 
 </dt> <dd>
 
-Hora a la que se va a ejecutar el comando o comandos en cola.
+Hora a la que se va a ejecutar el comando o los comandos en cola.
 
 </dd> <dt>
 
-*suscripto* 
+*Iid* 
 </dt> <dd>
 
-Puntero al identificador único global (**GUID**) de la interfaz a la que se va a llamar.
+Puntero al identificador único global **(GUID)** de la interfaz a la que se llamará.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Método en la interfaz a la que se va a llamar.
 *wFlags* 
 </dt> <dd>
 
-Marcas que describen el contexto de la llamada. Este parámetro admite las mismas marcas que el método **IDispatch:: Invoke** .
+Marcas que describen el contexto de la llamada. Este parámetro admite las mismas marcas que el **método IDispatch::Invoke.**
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Número de argumentos pasados.
 *pDispParams* 
 </dt> <dd>
 
-Puntero a la lista de tipos Variant asociados a los parámetros de envío.
+Puntero a la lista de tipos variantes asociados a los parámetros de distribución.
 
 </dd> <dt>
 
@@ -118,35 +118,35 @@ Puntero a la lista donde se van a devolver los resultados, si los hay.
 *puArgErr* 
 </dt> <dd>
 
-Puntero al índice de la lista de parámetros *pDispParams* donde se produjo el último error.
+Puntero al índice dentro de la lista *de parámetros pDispParams* donde se produjo el último error.
 
 </dd> <dt>
 
 *bStream* 
 </dt> <dd>
 
-Valor que indica si el parámetro de *hora* es un valor de tiempo de secuencia (**true**) o un valor de tiempo de presentación (**false**).
+Valor que indica si el *parámetro time* es un valor de tiempo de secuencia **(TRUE)** o un valor de tiempo de presentación **(FALSE).**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto si se realiza correctamente. Devuelve E \_ OUTOFMEMORY si *ppCmd* vuelve de crear el nuevo objeto [**CDeferredCommand**](cdeferredcommand.md) con un valor **null**. De lo contrario, devuelve un **valor HRESULT** que indica un error al intentar crear un nuevo objeto **CDeferredCommand** . Si se produce un error, no se ha puesto en cola ningún objeto.
+Devuelve S \_ OK si se realiza correctamente. Devuelve E \_ OUTOFMEMORY si *ppCmd* devuelve al crear el nuevo [**objeto CDeferredCommand**](cdeferredcommand.md) con un valor **null.** De lo contrario, **devuelve un valor HRESULT** que indica un error al intentar crear un nuevo **objeto CDeferredCommand.** Si se produce un error, no se ha puesto en cola ningún objeto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El nuevo objeto [**CDeferredCommand**](cdeferredcommand.md) se inicializará con los parámetros y se agregará a la cola durante la construcción. Este método es similar al método **IDispatch:: Invoke** .
+El nuevo [**objeto CDeferredCommand**](cdeferredcommand.md) se inicializará con los parámetros y se agregará a la cola durante la construcción. Este método es similar al **método IDispatch::Invoke.**
 
-Los valores para el parámetro *wFlags* son los siguientes:
+Entre los valores del *parámetro wFlags* se incluyen los siguientes:
 
 
 
 | Value                    | Descripción                                                                                                                                                          |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DISPATCH ( \_ método)         | El miembro se está ejecutando como un método. Si una propiedad tiene el mismo nombre, se pueden establecer tanto esta marca como la de envío \_ PropertyGet (.                                       |
-| ENVIAR \_ PropertyGet (    | El miembro se recupera como una propiedad o miembro de datos.                                                                                                          |
-| ENVIAR \_ PROPERTYPUT    | El miembro se está cambiando como una propiedad o un miembro de datos.                                                                                                            |
-| ENVIAR \_ PROPERTYPUTREF | El miembro se está cambiando a través de una asignación de referencia, en lugar de una asignación de valores. Este valor solo es válido cuando la propiedad acepta una referencia a un objeto. |
+| DISPATCH \_ (MÉTODO)         | El miembro se ejecuta como un método. Si una propiedad tiene el mismo nombre, se pueden establecer tanto esta como la marca DISPATCH \_ PROPERTYGET.                                       |
+| DISPATCH \_ PROPERTYGET    | El miembro se recupera como una propiedad o un miembro de datos.                                                                                                          |
+| DISPATCH \_ PROPERTYPUT    | El miembro se está cambiando como una propiedad o un miembro de datos.                                                                                                            |
+| DISPATCH \_ PROPERTYPUTREF | El miembro se cambia a través de una asignación de referencia, en lugar de una asignación de valor. Este valor solo es válido cuando la propiedad acepta una referencia a un objeto . |
 
 
 
@@ -158,8 +158,8 @@ Los valores para el parámetro *wFlags* son los siguientes:
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -167,7 +167,7 @@ Los valores para el parámetro *wFlags* son los siguientes:
 
 <dl> <dt>
 
-[**Clase CCmdQueue**](ccmdqueue.md)
+[**CCmdQueue (clase)**](ccmdqueue.md)
 </dt> </dl>
 
  

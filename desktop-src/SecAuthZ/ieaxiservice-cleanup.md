@@ -1,7 +1,7 @@
 ---
-description: Libera los recursos utilizados por la interfaz IeAxiService.
+description: Libera los recursos usados por la interfaz IeAxiService.
 ms.assetid: 11f5cfdc-dcdd-4b41-b02c-b19b9452509e
-title: 'IeAxiService:: Cleanup (método)'
+title: IeAxiService::Cleanup (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: b29784ae360ec78b9f7e01d2045617615333a5c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de0413c39a4abf47a24913f347ceed0158d0b51aa4e1da0b3005cace1326b53f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908385"
 ---
-# <a name="ieaxiservicecleanup-method"></a>IeAxiService:: Cleanup (método)
+# <a name="ieaxiservicecleanup-method"></a>IeAxiService::Cleanup (Método)
 
-El método **Cleanup** libera los recursos utilizados por la interfaz [**IeAxiService**](ieaxiservice.md) .
+El **método Cleanup** libera los recursos usados por la interfaz [**IeAxiService.**](ieaxiservice.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,9 +38,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](/windows/desktop/SecCrypto/common-hresult-values).
+Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](/windows/desktop/SecCrypto/common-hresult-values).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,7 +48,7 @@ Si se produce un error en el método, devuelve un valor **HRESULT** que indica e
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows Vista Ultimate \[ solo aplicaciones de escritorio\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista \[ Ultimate\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                 |
 | IID<br/>                      | IID \_ IeAxiService se define como E9E92380-9ECD-4982-A0EB-6815A56CCF27<br/>                           |
 

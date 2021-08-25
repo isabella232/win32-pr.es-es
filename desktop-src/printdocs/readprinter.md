@@ -1,7 +1,7 @@
 ---
 description: La función ReadPrinter recupera datos de la impresora especificada.
 ms.assetid: d7c3f186-c53e-424b-89bf-6742babb998f
-title: Función ReadPrinter (winspool. h)
+title: Función ReadPrinter (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: ddbdfc03b80557583c60f461f0c7e3a6fe2473fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63683e421441fb15ec299f3077088bd8f9cffb65644550be912ee39b5c530371
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824025"
 ---
-# <a name="readprinter-function"></a>ReadPrinter función)
+# <a name="readprinter-function"></a>Función ReadPrinter
 
-La función **ReadPrinter** recupera datos de la impresora especificada.
+La **función ReadPrinter** recupera datos de la impresora especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,44 +42,44 @@ BOOL ReadPrinter(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador del objeto Printer para el que se van a recuperar datos. Utilice la función [**OpenPrinter**](openprinter.md) para recuperar un identificador de objeto de impresora. Use el formato: Nombreimpresora, trabajo xxxx.
+Identificador del objeto de impresora para el que se recuperan los datos. Use la [**función OpenPrinter**](openprinter.md) para recuperar un identificador de objeto de impresora. Use el formato: Printername, Job xxxx.
 
 </dd> <dt>
 
-*pBuf* \[ enuncia\]
+*pBuf* \[ out\]
 </dt> <dd>
 
-Un puntero a un búfer que recibe los datos de la impresora.
+Puntero a un búfer que recibe los datos de la impresora.
 
 </dd> <dt>
 
-*cbBuf* \[ de\]
+*cbBuf* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer al que apunta *pBuf* .
+Tamaño, en bytes, del búfer al que *apunta pBuf.*
 
 </dd> <dt>
 
-*pNoBytesRead* \[ enuncia\]
+*pNoBytesRead* \[ out\]
 </dt> <dd>
 
-Puntero a una variable que recibe el número de bytes de datos copiados en la matriz a la que apunta *pBuf* .
+Puntero a una variable que recibe el número de bytes de datos copiados en la matriz a la que *apunta pBuf.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
@@ -93,8 +93,8 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | Archivo DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 
 

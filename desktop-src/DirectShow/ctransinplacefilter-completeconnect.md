@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d9cc0bc839a4e35c4ce896acdf50da10f0c2bb0c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6185204c41e177207d32c321985c021a93ea20506da5f4279cd3134a12952097
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907325"
 ---
 # <a name="ctransinplacefiltercompleteconnect-method"></a>Método CTransInPlaceFilter.CompleteConnect
 
@@ -46,7 +46,7 @@ HRESULT CompleteConnect(
 *direction* 
 </dt> <dd>
 
-Miembro del tipo [**enumerado \_ DIRECCIÓN**](/windows/win32/api/strmif/ne-strmif-pin_direction) DEL PIN, especificando qué pin en el filtro está realizando la conexión.
+Miembro del tipo [**enumerado \_ PIN DIRECTION,**](/windows/win32/api/strmif/ne-strmif-pin_direction) especificando qué pin en el filtro está realizando la conexión.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Puntero a la [**interfaz IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **HRESULT**. Los valores posibles incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
@@ -81,7 +81,7 @@ El comportamiento del filtro depende del orden de las conexiones de pin:
 -   Si el pin de entrada está conectado primero, la conexión usa un asignador temporal. Cuando el pin de salida está conectado, el filtro vuelve a conectar el pin de entrada. Volver a conectar el pin de entrada hace que el filtro ascendente vuelva a negociar el asignador. En ese momento, el pin de entrada propone un asignador del filtro de nivel inferior. Para obtener más información, [**vea CTransInPlaceInputPin::GetAllocator**](ctransinplaceinputpin-getallocator.md).
 -   Si el pin de salida está conectado primero, el pin de salida no selecciona un asignador. Cuando el pin de entrada está conectado, negocia un asignador para ambas conexiones. Si los tipos de medios de entrada y salida no son los mismos, el filtro vuelve a conectar el pin de salida mediante el tipo de entrada.
 
-El filtro realiza todas las reconexiones de anclar llamando al [**método CBaseFilter::ReconnectPin.**](cbasefilter-reconnectpin.md) A **su vez,** el método ReconnectPin llama al método [**IFilterGraph2::ReconnectEx**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph2-reconnectex) en el administrador de gráficos de filtros.
+El filtro realiza todas las reconexiones de pin llamando al [**método CBaseFilter::ReconnectPin.**](cbasefilter-reconnectpin.md) A **su vez, el** método ReconnectPin llama al método [**IFilterGraph2::ReconnectEx**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph2-reconnectex) en el administrador de gráficos de filtros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,12 +89,12 @@ El filtro realiza todas las reconexiones de anclar llamando al [**método CBaseF
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Puntero a la interfaz IMemInputPin del PIN de entrada.
+description: Puntero a la interfaz IMemInputPin del pin de entrada.
 ms.assetid: 59383b5d-cfd2-40ae-9075-c55aa20139ae
-title: 'Miembro COutputQueue:: m_pInputPin (Outputq. h)'
+title: Miembro COutputQueue::m_pInputPin (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d47444a95d8497e67c72fa399308ff7d8e815f46
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 497eaf85f1884da3817564d06f2a1989f5e33fec99f5aae50cd435cff76dce0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871545"
 ---
-# <a name="coutputqueuem_pinputpin-member"></a>Miembro pInputPin COutputQueue:: m \_
+# <a name="coutputqueuem_pinputpin-member"></a>Miembro COutputQueue::m \_ pInputPin
 
-Puntero a la interfaz [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) del PIN de entrada.
+Puntero a la interfaz [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) del pin de entrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ IMemInputPin *m_pInputPin;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ IMemInputPin *m_pInputPin;
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

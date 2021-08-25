@@ -1,7 +1,7 @@
 ---
-description: Habilita las páginas del lado servidor hospedadas en un asistente para comprobar que el usuario se ha autenticado a través de un cuenta Microsoft.
+description: Permite que las páginas del lado servidor hospedadas en un asistente comprueben que el usuario se ha autenticado a través de una cuenta Microsoft.
 ms.assetid: 8b99eb84-c434-489a-b177-1e00f18d2dcc
-title: Método NewWDEvents. PassportAuthenticate (Shldisp. h)
+title: Método NewWDEvents.PassportAuthenticate (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 48e6cfbcbf525784fe33520702bbd9c05226f353
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f462053281efd97b75422c55ce23829688d18ac153ecb92c7544eafb8f356b9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103819043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942405"
 ---
-# <a name="newwdeventspassportauthenticate-method"></a>NewWDEvents. PassportAuthenticate, método
+# <a name="newwdeventspassportauthenticate-method"></a>Método NewWDEvents.PassportAuthenticate
 
-Habilita las páginas del lado servidor hospedadas en un asistente para comprobar que el usuario se ha autenticado a través de un cuenta Microsoft.
+Permite que las páginas del lado servidor hospedadas en un asistente comprueben que el usuario se ha autenticado a través de una cuenta Microsoft.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,12 +39,12 @@ bRetVal = NewWDEvents.PassportAuthenticate(
 
 <dl> <dt>
 
-*bstrSignInUrl* \[ de\]
+*bstrSignInUrl* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Una cadena que contiene la dirección URL de una página web que redirige a la interfaz de usuario del registro de cuenta Microsoft.
+Cadena que contiene la dirección URL de una página web que redirige al inicio de sesión de la cuenta Microsoft en la interfaz de usuario.
 
 </dd> </dl>
 
@@ -52,11 +52,11 @@ Una cadena que contiene la dirección URL de una página web que redirige a la i
 
 Tipo: **booleano**
 
-Establézcalo en **true** si la autenticación se realiza correctamente; de lo contrario, **false** .
+Establezca en **true si** la autenticación se realiza correctamente; en caso contrario, **false.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se puede llamar a este método incluso si un usuario ya ha iniciado sesión en un cuenta Microsoft. En ese caso, el método devuelve **true** sin mostrar el cuenta Microsoft la interfaz de usuario de inicio de sesión.
+Se puede llamar a este método incluso si un usuario ya ha iniciado sesión en una cuenta Microsoft. En ese caso, el método devuelve **true sin** mostrar el inicio de sesión de la cuenta Microsoft en la interfaz de usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,11 +64,11 @@ Se puede llamar a este método incluso si un usuario ya ha iniciado sesión en u
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6,0 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 
 

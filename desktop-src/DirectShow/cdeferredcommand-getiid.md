@@ -1,7 +1,7 @@
 ---
 description: El método GetIID recupera el identificador de interfaz (IID) de la interfaz en la que se ejecutará el método.
 ms.assetid: d6eb7d46-294a-4169-96d3-4bed02c48c08
-title: Método CDeferredCommand. GetIID (Ctlutil. h)
+title: Método CDeferredCommand.GetIID (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d8677c70ab9c2c04224194bd825b106d33de8893
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c5d43f04d8331f39e46e3223a64c09ad306585a1e29fd7627a0f50159d74cde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910085"
 ---
-# <a name="cdeferredcommandgetiid-method"></a>CDeferredCommand. GetIID, método
+# <a name="cdeferredcommandgetiid-method"></a>Método CDeferredCommand.GetIID
 
 El `GetIID` método recupera el identificador de interfaz (IID) de la interfaz en la que se ejecutará el método.
 
@@ -50,8 +50,8 @@ Devuelve el IID de la interfaz en la que se ejecutará el método.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el IID de la interfaz en la que se ejecutará el método.
 
 <dl> <dt>
 
-[**Clase CDeferredCommand**](cdeferredcommand.md)
+[**CDeferredCommand (clase)**](cdeferredcommand.md)
 </dt> </dl>
 
  

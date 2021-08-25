@@ -1,9 +1,9 @@
 ---
 title: tex3Dbias
-description: Muestrea una textura 3D después de sesgar el nivel de MIP por t.w.
+description: Muestrea una textura 3D después de sesgo del nivel de mip por t.w.
 ms.assetid: 6a506036-90d1-420c-a712-a373068c8c16
 keywords:
-- HLSL de tex3Dbias
+- tex3Dbias HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 53fb0a196831a9dd9d7f7cbe7c34c56259f9a0e3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f1565f5290955e2fa5aceffd368e0abcbcb99cb4c0035e44db4e8ea6585a170c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892625"
 ---
 # <a name="tex3dbias"></a>tex3Dbias
 
-Muestrea una textura 3D después de sesgar el nivel de MIP por t.w.
+Muestrea una textura 3D después de sesgo del nivel de mip por t.w.
 
 
 
-| RET tex3Dbias (s, t) |
+| ret tex3Dbias(s, t) |
 |---------------------|
 
 
@@ -39,8 +39,8 @@ Muestrea una textura 3D después de sesgar el nivel de MIP por t.w.
 
 | Elemento                                                   | Descripción                               |
 |--------------------------------------------------------|-------------------------------------------|
-| <span id="s"></span><span id="S"></span>*seg*<br/> | \[en \] el estado de la muestra.<br/>      |
-| <span id="t"></span><span id="T"></span>*h*<br/> | \[en \] la coordenada de textura.<br/> |
+| <span id="s"></span><span id="S"></span>*s*<br/> | \[en \] el estado del muestreador.<br/>      |
+| <span id="t"></span><span id="T"></span>*T*<br/> | \[en \] la coordenada de textura.<br/> |
 
 
 
@@ -54,17 +54,17 @@ Valor de los datos de textura.
 
 
 
-| Nombre | Entrada o salida | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño |
+| Nombre | Entrada o salida | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size |
 |------|--------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
 | s    | in     | [**object**](dx-graphics-hlsl-intrinsic-functions.md) | [sampler3D](dx-graphics-hlsl-sampler.md)                      | 1    |
-| t    | in     | [**medios**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
-| direcc  | out    | [**medios**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| t    | in     | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| Ret  | out    | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -72,7 +72,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible               |
 |-----------------------------------------------------------|-------------------------|
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí (solo sombreador de píxeles) |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí (solo sombreador de píxeles) |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | sí (solo sombreador de píxeles) |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | sí (solo sombreador de píxeles) |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No                      |
@@ -85,7 +85,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

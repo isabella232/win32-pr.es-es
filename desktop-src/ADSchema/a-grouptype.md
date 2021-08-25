@@ -1,11 +1,11 @@
 ---
-title: Group-Type atributo)
+title: Group-Type atributo
 description: Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de grupo.
 ms.assetid: cd37ed2f-8503-4227-b0d2-c8135605cb84
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Group-Type
-- atributo groupType AD Schema
+- Group-Type esquema de AD del atributo
+- Esquema de AD del atributo groupType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e1db8f102e7e56b38d15d74fedb7c5a5366ee47
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c05584576c96766d302170220411e165da9b14e89c81fb0bd9d0837c05c9aed1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925575"
 ---
-# <a name="group-type-attribute"></a>Group-Type atributo)
+# <a name="group-type-attribute"></a>Group-Type atributo
 
-Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de grupo. Para obtener los valores posibles de este atributo, vea la sección Comentarios.
+Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de grupo. Para obtener los valores posibles para este atributo, vea Comentarios.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Group-Type                           |
-| Nombre para mostrar de LDAP | groupType                            |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | Administrador de dominio                 |
+| Ldap-Display-Name | groupType                            |
+| Size              | \-                                   |
+| Privilegio actualizar  | Administrador de dominio                 |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.750               |
-| System-ID-GUID    | 9a9a021e-4a5b-11d1-a9c3-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 9a9a021e-4a5b-11d1-a9c3-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -44,7 +44,7 @@ Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | True                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Verdadero                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
@@ -77,13 +77,13 @@ Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | True                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Verdadero                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
@@ -92,19 +92,19 @@ Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de 
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | True                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Verdadero                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
@@ -119,13 +119,13 @@ Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | True                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Verdadero                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
@@ -140,13 +140,13 @@ Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | True                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Verdadero                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
@@ -161,13 +161,13 @@ Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | True                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Verdadero                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
@@ -182,13 +182,13 @@ Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | True                                |
-| Está indexado             | True                                |
-| En el catálogo global      | True                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Verdadero                                |
+| En el catálogo global      | Verdadero                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
@@ -197,7 +197,7 @@ Contiene un conjunto de marcas que definen el tipo y el ámbito de un objeto de 
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo puede ser cero o una combinación de uno o varios de los valores siguientes.
 
@@ -209,15 +209,15 @@ Este atributo puede ser cero o una combinación de uno o varios de los valores s
 | 2 (0x00000002)          | Especifica un grupo con ámbito global.                                                         |
 | 4 (0x00000004)          | Especifica un grupo con ámbito local de dominio.                                                   |
 | 8 (0x00000008)          | Especifica un grupo con ámbito universal.                                                      |
-| 16 (0x00000010)         | Especifica un \_ grupo básico de aplicaciones para el administrador de autorización de Windows Server.                      |
-| 32 (0x00000020)         | Especifica un \_ grupo de consulta de la aplicación para el administrador de autorización de Windows Server.                      |
+| 16 (0x00000010)         | Especifica un grupo APP \_ BASIC para Windows Administrador de autorización del servidor.                      |
+| 32 (0x00000020)         | Especifica un grupo de APP \_ QUERY para Windows administrador de autorización del servidor.                      |
 | 2147483648 (0x80000000) | Especifica un grupo de seguridad. Si no se establece esta marca, el grupo es un grupo de distribución. |
 
 
 
  
 
-Para obtener más información acerca del tipo de grupo y el ámbito, consulte los temas [tipos](/previous-versions/windows/it-pro/windows-server-2003/cc781446(v=ws.10)) de grupo y [ámbito de grupo](/previous-versions/windows/it-pro/windows-server-2003/cc755692(v=ws.10)) en Microsoft TechNet.
+Para obtener más información sobre el tipo de grupo y el ámbito, vea los temas [Tipos de grupo](/previous-versions/windows/it-pro/windows-server-2003/cc781446(v=ws.10)) y Ámbito [de](/previous-versions/windows/it-pro/windows-server-2003/cc755692(v=ws.10)) grupo en Microsoft TechNet.
 
  
 

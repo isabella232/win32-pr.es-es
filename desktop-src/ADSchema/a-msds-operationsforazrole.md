@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Operations-for-AZ-role
-description: Lista de operaciones vinculadas a AZ-role.
+title: Atributo ms-DS-Operations-For-Az-Role
+description: Lista de operaciones vinculadas a Az-Role.
 ms.assetid: 9b8ae503-53a0-4e82-b082-8b464a222d07
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Operations-for-AZ-role
-- Esquema de AD de atributo msDS-OperationsForAzRole
+- Esquema de AD del atributo ms-DS-Operations-For-Az-Role
+- msDS-OperationsForAzRole attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b916cc9ee9ad3914ef0b7e826fe0d0c390a8f11
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fa5dc7a5574598254d01e7309fa98f6c0b7e163c10dcf6e6265bc0c3bc7149df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803915"
 ---
-# <a name="ms-ds-operations-for-az-role-attribute"></a>atributo MS-DS-Operations-for-AZ-role
+# <a name="ms-ds-operations-for-az-role-attribute"></a>Atributo ms-DS-Operations-For-Az-Role
 
-Lista de operaciones vinculadas a AZ-role.
+Lista de operaciones vinculadas a Az-Role.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-Operations-for-AZ-role            |
-| Nombre para mostrar de LDAP | msDS-OperationsForAzRole                |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | Administrador de AzRoles                           |
+| CN                | ms-DS-Operations-For-Az-Role            |
+| Ldap-Display-Name | msDS-OperationsForAzRole                |
+| Size              | \-                                      |
+| Actualizar privilegios  | Administrador de AzRoles                           |
 | Frecuencia de actualización  | Durante la inicialización o el cambio de directiva. |
 | Attribute-Id      | 1.2.840.113556.1.4.1812                 |
-| System-ID-GUID    | 93f701be-fa4c-43b6-bc2f-4dbea718ffab    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 93f701be-fa4c-43b6-bc2f-4dbea718ffab    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -54,18 +54,18 @@ Lista de operaciones vinculadas a AZ-role.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | 2022                                              |
+| Id. de vínculo                | 2022                                              |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | False                                             |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Falso                                             |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-role**](c-msds-azrole.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Lista de operaciones vinculadas a AZ-role.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | 2022                                              |
+| Id. de vínculo                | 2022                                              |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | False                                             |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Falso                                             |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-role**](c-msds-azrole.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Lista de operaciones vinculadas a AZ-role.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | 2022                                              |
+| Id. de vínculo                | 2022                                              |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | False                                             |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Falso                                             |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-role**](c-msds-azrole.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Lista de operaciones vinculadas a AZ-role.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | 2022                                              |
+| Id. de vínculo                | 2022                                              |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | False                                             |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Falso                                             |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-role**](c-msds-azrole.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Lista de operaciones vinculadas a AZ-role.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | 2022                                              |
+| Id. de vínculo                | 2022                                              |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | False                                             |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Falso                                             |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-role**](c-msds-azrole.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 

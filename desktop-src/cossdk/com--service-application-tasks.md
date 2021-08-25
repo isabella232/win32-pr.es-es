@@ -4,16 +4,16 @@ ms.assetid: b25b4838-7d3b-41d7-9d02-0edd4bd2f97c
 title: Tareas de aplicación de servicio COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9331fc81be9eae3b2d039119aa5cc9ff1f4843e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6de15c7800d6fea98043ec5f33865f531aca078ce67a1fba9114b77478c9410b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991504"
 ---
 # <a name="com-service-application-tasks"></a>Tareas de aplicación de servicio COM+
 
-En los siguientes temas de esta sección se proporcionan instrucciones paso a paso para configurar una aplicación COM+ para que se ejecute como una aplicación de servicio.
+En los temas siguientes de esta sección se proporcionan instrucciones paso a paso para configurar una aplicación COM+ para que se ejecute como una aplicación de servicio.
 
 
 

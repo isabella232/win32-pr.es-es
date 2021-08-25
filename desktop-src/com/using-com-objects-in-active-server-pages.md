@@ -1,21 +1,21 @@
 ---
-title: Usar objetos COM en páginas Active Server
-description: Puede crear scripts de objetos COM en aplicaciones de Active Server páginas (ASP).
+title: Uso de objetos COM en Active Server Pages
+description: Puede crear scripts de objetos COM en Active Server Pages (ASP).
 ms.assetid: 3a074360-8b6c-4cb6-813b-73863fe11c46
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5d73244ce5bd6c56deeda9bf4e3e4986b3d4039
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3b8ba1bbdd0729a8893b1c28d1a2347fc5ddea04c8d0de4e1ea413e765ab8df4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119896205"
 ---
-# <a name="using-com-objects-in-active-server-pages"></a>Usar objetos COM en páginas Active Server
+# <a name="using-com-objects-in-active-server-pages"></a>Uso de objetos COM en Active Server Pages
 
-Puede crear scripts de objetos COM en aplicaciones de Active Server páginas (ASP). Para ello, primero debe crear una instancia del objeto utilizando la etiqueta de objeto o llamando al método CreateObject del objeto de servidor ASP. Una vez creado un objeto COM, puede usarlo en scripts posteriores en la página ASP.
+Puede crear scripts de objetos COM en Active Server Pages (ASP). Para ello, primero debe crear una instancia del objeto mediante la etiqueta OBJECT o llamando al método CreateObject del objeto de servidor ASP. Una vez creado un objeto COM, puede usarlo en scripts posteriores en la página ASP.
 
-Con ASP, puede trabajar con muchos tipos diferentes de motores de scripts, cada uno de los cuales admite un lenguaje de scripting diferente. ASP incluye los motores de scripting de VBScript y JScript. También puede conectar motores de scripting desarrollados por otras compañías para admitir lenguajes como PerlScript, PScript, Python y otros.
+Con ASP, puede trabajar con muchos tipos diferentes de motores de scripting, cada uno de los cuales admite un lenguaje de scripting diferente. ASP incluye VBScript y JScript de scripting. También puede conectar motores de scripting desarrollados por otras empresas para admitir lenguajes como PerlScript, PScript, Python y otros.
 
 Si no establece el lenguaje de scripting para una página ASP, VBScript es el valor predeterminado. Para especificar un lenguaje de scripting distinto de VBScript, incluya una línea como la siguiente en la parte superior de cada página ASP:
 
@@ -24,7 +24,7 @@ Si no establece el lenguaje de scripting para una página ASP, VBScript es el va
  
 ```
 
-Para usar un objeto COM en una página ASP, primero debe crear una instancia de ese objeto. Para ello, use la etiqueta OBJECT y especifique el valor "SERVER" para el atributo runas, tal y como se muestra en el ejemplo siguiente. De forma predeterminada, la etiqueta de objeto crea una instancia del objeto en el cliente. Al establecer el atributo RUNAt en SERVER, se crea el objeto en el servidor. El objeto se debe ejecutar en el servidor para que lo use ASP.
+Para usar un objeto COM en una página ASP, primero debe crear una instancia de ese objeto. Para ello, use la etiqueta OBJECT y especifique el valor "SERVER" para el atributo RUNAT, como se muestra en el ejemplo siguiente. De forma predeterminada, la etiqueta OBJECT crea una instancia del objeto en el cliente. Establecer el atributo RUNAT en SERVER hace que el objeto se cree en el servidor. El objeto debe ejecutarse en el servidor para que ASP lo utilice.
 
 ``` syntax
 <OBJECT 
@@ -35,7 +35,7 @@ CLASSID="Clsid:1621F7C0-60AC-11CF-9427-444553540000">
  
 ```
 
-También puede crear una instancia de un objeto COM en una página ASP llamando al método CreateObject del objeto de servidor ASP. El uso de Server. CreateObject es más lento que la creación del objeto mediante una etiqueta de objeto, pero es ligeramente más legible porque especifica el identificador de programación en lugar del identificador de clase del objeto COM. El objeto de servidor se expone mediante ASP y no es necesario crearlo. Cómo llamar a Server. CreateObject se ilustra en los ejemplos siguientes. El primer ejemplo es VBScript:
+También puede crear una instancia de un objeto COM en una página ASP llamando al método CreateObject del objeto servidor ASP. El uso de Server.CreateObject es más lento que crear el objeto mediante una etiqueta OBJECT, pero es ligeramente más legible porque especifica el identificador de programación en lugar del identificador de clase del objeto COM. ASP expone el objeto Server y no es necesario crearlo. En los ejemplos siguientes se muestra cómo llamar a Server.CreateObject. El primer ejemplo es VBScript:
 
 ``` syntax
 <% 
@@ -53,9 +53,9 @@ El ejemplo siguiente es JScript:
  
 ```
 
-Llamar a CreateObject es más lento que usar la etiqueta de objeto para crear un objeto COM. En aplicaciones en las que el rendimiento es crítico, debe usar la etiqueta de objeto.
+Llamar a CreateObject es más lento que usar la etiqueta OBJECT para crear un objeto COM. En aplicaciones en las que el rendimiento es crítico, debe usar la etiqueta OBJECT.
 
-Después de crear una instancia del objeto COM, puede usarla en scripts. Esto se ilustra en el ejemplo de VBScript siguiente, que establece el valor de la propiedad border del objeto COM.
+Después de crear una instancia del objeto COM, puede usarla en scripts. Esto se ilustra en el ejemplo de VBScript siguiente, que establece el valor de la propiedad Border del objeto COM.
 
 ``` syntax
 <% MyAds.Border = 0 %>
@@ -69,9 +69,9 @@ Después de crear una instancia del objeto COM, puede usarla en scripts. Esto se
 [Scripting con objetos COM](scripting-with-com-objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

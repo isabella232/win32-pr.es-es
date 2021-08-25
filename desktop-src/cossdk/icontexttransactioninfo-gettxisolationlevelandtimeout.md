@@ -1,7 +1,7 @@
 ---
-description: Recupera el nivel de aislamiento y el valor de tiempo de espera de una transacción hospedada en el contexto de la transacción raíz.
+description: Recupera el nivel de aislamiento y el valor de tiempo de espera de una transacción hospedada en el contexto de transacción raíz.
 ms.assetid: bb3ff03e-e69e-4a50-af36-4938eb4323df
-title: 'IContextTransactionInfo:: GetTxIsolationLevelAndTimeout (método)'
+title: IContextTransactionInfo::GetTxIsolationLevelAndTimeout (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: b8545a697e672af7206a69ffa19618d5b70e055c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 41888a859b6b665390290ba66bed69418cbddd9b708355dc78cc2670ba4d240f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119896085"
 ---
-# <a name="icontexttransactioninfogettxisolationlevelandtimeout-method"></a>IContextTransactionInfo:: GetTxIsolationLevelAndTimeout (método)
+# <a name="icontexttransactioninfogettxisolationlevelandtimeout-method"></a>IContextTransactionInfo::GetTxIsolationLevelAndTimeout (método)
 
-Recupera el nivel de aislamiento y el valor de tiempo de espera de una transacción hospedada en el contexto de la transacción raíz.
+Recupera el nivel de aislamiento y el valor de tiempo de espera de una transacción hospedada en el contexto de transacción raíz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,14 +39,14 @@ HRESULT GetTxIsolationLevelAndTimeout(
 
 <dl> <dt>
 
-*pIsoLevel* \[ enuncia\]
+*pIsoLevel* \[ out\]
 </dt> <dd>
 
 Valor [ISOLATIONLEVEL](/previous-versions/windows/desktop/ms679234(v=vs.85)) de la transacción.
 
 </dd> <dt>
 
-*dwTime* \[ enuncia\]
+*dwTime* \[ out\]
 </dt> <dd>
 
 Tiempo de espera de la transacción, en segundos.
@@ -55,7 +55,7 @@ Tiempo de espera de la transacción, en segundos.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, e \_ OUTOFMEMORY, e \_ inesperados y S \_ OK.
+Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED y S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, e \
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio de SP1 \[\]<br/> |
 
 
 

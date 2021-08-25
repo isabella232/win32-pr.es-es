@@ -7,12 +7,12 @@ keywords:
 - VFW (vídeo para Windows), funciones de captura de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1bcbacbdc1a10221f9a9538e03ab22a17002bf7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7e72987c4bd29747dca83cb718a2d22fa954ca7b3398d5b6446858da8fb2879a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892135"
 ---
 # <a name="video-capture-functions"></a>Funciones de captura de vídeo
 
@@ -34,9 +34,9 @@ Las siguientes funciones se usan con la captura de vídeo.
 [Referencia de captura de vídeo](video-capture-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

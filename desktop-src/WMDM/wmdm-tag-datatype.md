@@ -1,9 +1,9 @@
 ---
-title: Enumeración WMDM_TAG_DATATYPE
-description: El \_ tipo de enumeración de tipo de datos de la etiqueta WMDM \_ define un tipo de datos.
+title: WMDM_TAG_DATATYPE enumeración
+description: El tipo de \_ enumeración DATATYPE DE WMDM TAG \_ define un tipo de datos.
 ms.assetid: 9c300814-5610-4e46-b441-e7f2fc78a47b
 keywords:
-- Enumeración WMDM_TAG_DATATYPE Administrador de dispositivos de Windows Media
+- WMDM_TAG_DATATYPE enumeración windows Media Administrador de dispositivos
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ad04f0d220809f6bd13d8ae29cc36d52ff6e599
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd725e6d8a0e1baef8a6dfc98cb5d3056f5d67b2d7babd07c919692d96248881
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862675"
 ---
-# <a name="wmdm_tag_datatype-enumeration"></a>\_Enumeración de tipos de tipo de texto de etiqueta WMDM \_
+# <a name="wmdm_tag_datatype-enumeration"></a>Enumeración \_ DATATYPE de WMDM TAG \_
 
-El tipo de enumeración de **\_ \_ tipo** de datos de la etiqueta WMDM define un tipo de datos.
+El **tipo de \_ enumeración \_ DATATYPE DE WMDM TAG** define un tipo de datos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -47,56 +47,56 @@ typedef enum tagWMDM_TAG_DATATYPE {
 
 <dl> <dt>
 
-<span id="WMDM_TYPE_DWORD"></span><span id="wmdm_type_dword"></span>**WMDM \_ tipo \_ DWORD**
+<span id="WMDM_TYPE_DWORD"></span><span id="wmdm_type_dword"></span>**DWORD \_ DE TIPO \_ WMDM**
 </dt> <dd>
 
 Especifica un valor **DWORD** de 4 bytes.
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_STRING"></span><span id="wmdm_type_string"></span>**\_cadena de tipo WMDM \_**
+<span id="WMDM_TYPE_STRING"></span><span id="wmdm_type_string"></span>**CADENA DE TIPO WMDM \_ \_**
 </dt> <dd>
 
-Especifica una cadena Unicode terminada en null (2 bytes por carácter).
+Especifica una cadena Unicode terminada en NULL (2 bytes por carácter).
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_BINARY"></span><span id="wmdm_type_binary"></span>**tipo de WMDM \_ \_ binario**
+<span id="WMDM_TYPE_BINARY"></span><span id="wmdm_type_binary"></span>**WMDM \_ TYPE \_ BINARY**
 </dt> <dd>
 
 Especifica una matriz de bytes.
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_BOOL"></span><span id="wmdm_type_bool"></span>**WMDM \_ tipo \_ bool**
+<span id="WMDM_TYPE_BOOL"></span><span id="wmdm_type_bool"></span>**WMDM \_ TYPE \_ BOOL**
 </dt> <dd>
 
 Especifica un valor booleano de 4 bytes.
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_QWORD"></span><span id="wmdm_type_qword"></span>**tipo de WMDM de WMDM \_ \_**
+<span id="WMDM_TYPE_QWORD"></span><span id="wmdm_type_qword"></span>**TIPO DE WMDM \_ \_ QWORD**
 </dt> <dd>
 
-Especifica un valor **QWord** de 8 bytes.
+Especifica un valor **QWORD** de 8 bytes.
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_WORD"></span><span id="wmdm_type_word"></span>**WMDM \_ Escriba \_ Word**
+<span id="WMDM_TYPE_WORD"></span><span id="wmdm_type_word"></span>**PALABRA DE TIPO WMDM \_ \_**
 </dt> <dd>
 
-Especifica un valor de **palabra** de 2 bytes.
+Especifica un valor WORD de 2 **bytes.**
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_GUID"></span><span id="wmdm_type_guid"></span>**\_GUID de tipo de WMDM \_**
+<span id="WMDM_TYPE_GUID"></span><span id="wmdm_type_guid"></span>**GUID DE \_ TIPO \_ WMDM**
 </dt> <dd>
 
 Especifica un GUID de 128 bits (16 bytes).
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_DATE"></span><span id="wmdm_type_date"></span>**\_fecha de tipo de WMDM \_**
+<span id="WMDM_TYPE_DATE"></span><span id="wmdm_type_date"></span>**FECHA DE TIPO \_ WMDM \_**
 </dt> <dd>
 
 Especifica una fecha.
@@ -109,7 +109,7 @@ Especifica una fecha.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 

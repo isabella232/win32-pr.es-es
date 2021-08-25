@@ -1,7 +1,7 @@
 ---
-description: Identifica la matriz de transformación que se establece como la matriz de transformación universal.
+description: Identifica la matriz de transformación que se establece como la matriz de transformación del mundo.
 ms.assetid: 2bf7ac8a-43d8-460e-a400-3b33e96441db
-title: Macro D3DTS_WORLD (D3d9types. h)
+title: D3DTS_WORLD macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: c3c8f0ac30230a747fba34d9962791b4b331d647
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 68b0a3435df2ec36fca34fb8a8e4f2638ae9d432a009870ce85cbbdf2a42f1ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850085"
 ---
-# <a name="d3dts_world-macro"></a>D3DTS ( \_ macro)
+# <a name="d3dts_world-macro"></a>Macro D3DTS \_ WORLD
 
-Identifica la matriz de transformación que se establece como la matriz de transformación universal.
+Identifica la matriz de transformación que se establece como la matriz de transformación del mundo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,11 +39,11 @@ Esta macro no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un [**D3DTRANSFORMSTATETYPE**](./d3dtransformstatetype.md) equivalente a [**D3DTS \_ WORLDMATRIX (0)**](./d3dts-worldmatrix.md).
+[**D3DTRANSFORMSTATETYPE equivalente**](./d3dtransformstatetype.md) a [**D3DTS \_ WORLDMATRIX(0).**](./d3dts-worldmatrix.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta macro se proporciona para facilitar la migración de aplicaciones existentes a Direct3D 9.
+Esta macro se proporciona para facilitar la porción de aplicaciones existentes a Direct3D 9.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Esta macro se proporciona para facilitar la migración de aplicaciones existente
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

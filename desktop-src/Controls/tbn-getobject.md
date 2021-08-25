@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TBN_GETOBJECT (commctrl. h)
-description: Se envía mediante un control de barra de herramientas que usa el \_ estilo TBSTYLE REGISTERDROP para solicitar un objeto de destino de colocación cuando el puntero pasa sobre uno de sus botones. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TBN_GETOBJECT de notificación (Commctrl.h)
+description: Enviado por un control de barra de herramientas que usa el estilo TBSTYLE REGISTERDROP para solicitar un objeto de destino de colocación cuando el puntero \_ pasa sobre uno de sus botones. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 9fd8516d-fe2e-4f84-9035-e2246aba369a
 keywords:
-- TBN_GETOBJECT controles de código de notificación de Windows
+- TBN_GETOBJECT código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ed144245e351ca4e872128e68fe658bde7c0066
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c50f3d403089ca7db42ab89232e57d68121424c066914c534ba13a826adb8ea3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876735"
 ---
-# <a name="tbn_getobject-notification-code"></a>TBN \_ código de notificación GETOBJECT
+# <a name="tbn_getobject-notification-code"></a>Código de notificación GETOBJECT de TBN \_
 
-Se envía mediante un control de barra de herramientas que usa el estilo [**TBSTYLE \_ REGISTERDROP**](toolbar-control-and-button-styles.md) para solicitar un objeto de destino de colocación cuando el puntero pasa sobre uno de sus botones. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de barra de herramientas que usa el estilo [**\_ TBSTYLE REGISTERDROP**](toolbar-control-and-button-styles.md) para solicitar un objeto de destino de colocación cuando el puntero pasa sobre uno de sus botones. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,19 +41,19 @@ TBN_GETOBJECT
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMOBJECTNOTIFY**](/windows/win32/api/commctrl/ns-commctrl-nmobjectnotify) que contiene información sobre el botón que el puntero pasó y recibe los datos que proporciona la aplicación en respuesta a este código de notificación.
+Puntero a una [**estructura NMOBJECTNOTIFY**](/windows/win32/api/commctrl/ns-commctrl-nmobjectnotify) que contiene información sobre el botón que el puntero pasó y recibe los datos que la aplicación proporciona en respuesta a este código de notificación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El procesamiento de la aplicación en este código de notificación debe devolver cero.
+La aplicación que procesa este código de notificación debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para proporcionar un objeto, una aplicación debe establecer valores en algunos miembros de la estructura [**NMOBJECTNOTIFY**](/windows/win32/api/commctrl/ns-commctrl-nmobjectnotify) en *lParam*. El miembro **pObject** debe establecerse en un puntero de objeto válido y el miembro **hResult** debe establecerse en una marca Success. Para cumplir los estándares del modelo de objetos componentes (COM), aumente siempre el recuento de referencias del objeto al proporcionar un puntero de objeto.
+Para proporcionar un objeto , una aplicación debe establecer valores en algunos miembros de la estructura [**NMOBJECTNOTIFY**](/windows/win32/api/commctrl/ns-commctrl-nmobjectnotify) en *lParam*. El **miembro pObject** debe establecerse en un puntero de objeto válido y el **miembro hResult** debe establecerse en una marca de éxito. Para cumplir con los estándares del Modelo de objetos componentes (COM), incremente siempre el recuento de referencias del objeto al proporcionar un puntero de objeto.
 
-Si una aplicación no proporciona un objeto, debe establecer **pObject** en **null** y **hResult** en una marca de error.
+Si una aplicación no proporciona un objeto , debe establecer **pObject** en **NULL** y **hResult** en una marca de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ Si una aplicación no proporciona un objeto, debe establecer **pObject** en **nu
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

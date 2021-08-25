@@ -1,9 +1,9 @@
 ---
-title: ddx_coarse función)
+title: ddx_coarse función
 description: Calcula un derivado parcial de precisión baja con respecto a la coordenada x del espacio de pantalla.
 ms.assetid: 5719f45d-b2ae-4916-8f31-c2797b661814
 keywords:
-- ddx_coarse de la función HLSL
+- ddx_coarse hlsl
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4f9d4805a1d516a5d8980fcd8209fd6733fe86c4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: d5521da56804156485fcacb37b43cbf27d8d4b3659cbced918eaea2c12b308ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119855375"
 ---
-# <a name="ddx_coarse-function"></a>\_función aproximada DDX
+# <a name="ddx_coarse-function"></a>Función general \_ ddx
 
 Calcula un derivado parcial de precisión baja con respecto a la coordenada x del espacio de pantalla.
 
@@ -28,7 +28,7 @@ Calcula un derivado parcial de precisión baja con respecto a la coordenada x de
 
 ``` syntax
 float ddx_coarse(
-  in float value
+  in float value
 );
 ```
 
@@ -36,7 +36,7 @@ float ddx_coarse(
 
 <dl> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
@@ -49,9 +49,9 @@ Valor de entrada.
 
 Tipo: **float**
 
-Derivado parcial de precisión baja de *Value*.
+Derivado parcial de precisión baja del *valor*.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 También están disponibles las siguientes versiones sobrecargadas:
 
@@ -61,7 +61,7 @@ float3 ddx_coarse(float3 value);
 float4 ddx_coarse(float4 value);
 ```
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -69,23 +69,23 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 
- 
+ 
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -97,9 +97,9 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

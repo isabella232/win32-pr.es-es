@@ -1,7 +1,7 @@
 ---
-description: El método SetOutputBuffering especifica el número de fotogramas representados de antemano durante la vista previa.
+description: El método SetOutputBuffering especifica el número de fotogramas representados de antemano durante la versión preliminar.
 ms.assetid: 6e69b196-a6ce-4ce0-8c48-58b1738fb197
-title: 'IAMTimelineGroup:: SetOutputBuffering (método) (QEDIT. h)'
+title: Método IAMTimelineGroup::SetOutputBuffering (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: ab249c1a6af63b0fc0f2ee535daeab1dec9cd558
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8187918a4f6d04df9c8c0eaff387a092f18181071ce6ba41c83de44fcb095bbe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915195"
 ---
-# <a name="iamtimelinegroupsetoutputbuffering-method"></a>IAMTimelineGroup:: SetOutputBuffering (método)
+# <a name="iamtimelinegroupsetoutputbuffering-method"></a>IamTimelineGroup::SetOutputBuffering (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `SetOutputBuffering` método especifica el número de fotogramas representados de antemano durante la vista previa.
+El `SetOutputBuffering` método especifica el número de fotogramas representados de antemano durante la versión preliminar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,28 +45,28 @@ HRESULT SetOutputBuffering(
 
 <dl> <dt>
 
-*nBuffer* \[ de\]
+*nBuffer* \[ En\]
 </dt> <dd>
 
-Número de fotogramas que se almacenarán en búfer durante la vista previa. Debe ser dos o más.
+Número de fotogramas que se almacenarán en búfer durante la versión preliminar. Debe ser dos o más.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un búfer mayor requiere más memoria, pero puede dar lugar a una vista previa más suave, especialmente durante los efectos o las transiciones que requieren más tiempo para representarse. El búfer predeterminado es 30 fotogramas.
+Un búfer mayor requiere más memoria, pero puede dar lugar a una vista previa más fluida, especialmente durante los efectos o transiciones que requieren más tiempo para representarse. El búfer predeterminado es de 30 fotogramas.
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Un búfer mayor requiere más memoria, pero puede dar lugar a una vista previa m
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,10 +85,10 @@ Un búfer mayor requiere más memoria, pero puede dar lugar a una vista previa m
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineGroup**](iamtimelinegroup.md)
+[**IamTimelineGroup (interfaz)**](iamtimelinegroup.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: El método Receive entrega un ejemplo multimedia al pin de entrada.
 ms.assetid: a8ee0988-8955-48d0-be1b-24eea72d560d
-title: Método COutputQueue. Receive (Outputq. h)
+title: Método COutputQueue.Receive (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0ce8a0d44730fa35b38cf6d738edd26168284a46
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8fb896429e53c16b30dbc4301f2e54fca5a2087dc1c89635fa33395f68ba0f5b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871505"
 ---
-# <a name="coutputqueuereceive-method"></a>COutputQueue. Receive (método)
+# <a name="coutputqueuereceive-method"></a>Método COutputQueue.Receive
 
 El `Receive` método entrega un ejemplo multimedia al pin de entrada.
 
@@ -45,28 +45,28 @@ HRESULT Receive(
 *pSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo.
+Puntero a la interfaz [**IMediaSample del**](/windows/desktop/api/Strmif/nn-strmif-imediasample) ejemplo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                             | Descripción                                                                   |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | Se recibió una notificación de final de secuencia antes de procesar este ejemplo.<br/> |
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | Correcto.<br/>                                                           |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Notificación de fin de flujo recibida antes de procesar este ejemplo.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Correcto.<br/>                                                           |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método llama al método [**COutputQueue:: ReceiveMultiple**](coutputqueue-receivemultiple.md) .
+Este método llama al [**método COutputQueue::ReceiveMultiple.**](coutputqueue-receivemultiple.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ Este método llama al método [**COutputQueue:: ReceiveMultiple**](coutputqueue-
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Este método llama al método [**COutputQueue:: ReceiveMultiple**](coutputqueue-
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

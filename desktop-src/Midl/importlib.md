@@ -1,9 +1,9 @@
 ---
 title: importlib (atributo)
-description: La Directiva \ importlib \ hace que los tipos que ya se han compilado en otra biblioteca de tipos estén disponibles para la biblioteca de tipos que se va a crear.
+description: La directiva \ importlib\ hace que los tipos que ya se han compilado en otra biblioteca de tipos estén disponibles para la biblioteca de tipos que se va a crear.
 ms.assetid: d5f15a77-c6b1-4918-be86-07d2995ca2d4
 keywords:
-- importlib (atributo) MIDL
+- atributo importlib MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b9c233103330e9f8ae7318a613cbc5103315a74
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c83d5c4b19800f92e3080d3fb435ddd20d62e4b6fe76986869a0f4da86deabcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104487546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895075"
 ---
 # <a name="importlib-attribute"></a>importlib (atributo)
 
-La directiva **\[ importlib \]** hace que los tipos que ya se han compilado en otra biblioteca de tipos estén disponibles para la biblioteca de tipos que se va a crear.
+La **\[ directiva \] importlib** hace que los tipos que ya se han compilado en otra biblioteca de tipos estén disponibles para la biblioteca de tipos que se va a crear.
 
 ``` syntax
 [
@@ -38,46 +38,46 @@ library (library-name)
 
 <dl> <dt>
 
-*Biblioteca: atributos* 
+*library-attributes* 
 </dt> <dd>
 
 Cero o más atributos que se aplicarán a la biblioteca.
 
 </dd> <dt>
 
-*nombre de biblioteca* 
+*library-name* 
 </dt> <dd>
 
-El identificador que los componentes de software usarán para denotar esta [**biblioteca**](library.md).
+Identificador que los componentes de software usarán para denotar esta [**biblioteca.**](library.md)
 
 </dd> <dt>
 
-*archivo a importar* 
+*archivo para importar* 
 </dt> <dd>
 
-Nombre y ubicación del archivo importado en tiempo de compilación de MIDL.
+Nombre y ubicación del archivo importado en tiempo de compilación MIDL.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todas las directivas **\[ importlib \]** deben preceder a las demás descripciones de tipos de la biblioteca. Tenga en cuenta que la biblioteca importada, así como la biblioteca generada, deben distribuirse con la aplicación para que esté disponible en tiempo de ejecución.
+Todas **\[ las \] directivas importlib** deben preceder a las demás descripciones de tipos de la biblioteca. Tenga en cuenta que la biblioteca importada, así como la biblioteca generada, se deben distribuir con la aplicación para que esté disponible en tiempo de ejecución.
 
-En la mayoría de los casos, debe usar la Directiva de **\[** [**importación**](import.md) **\]** de MIDL para hacer referencia a definiciones de otro. Archivo IDL en su. Archivo IDL. Este método proporciona a la biblioteca de tipos toda la información del archivo original, mientras que **\[ importlib \]** solo aporta el contenido de la biblioteca de tipos.
+En la mayoría de los casos, debe usar la directiva de importación MIDL **\[** [](import.md) **\]** para hacer referencia a definiciones de otro . Archivo IDL en . Archivo IDL. Este método proporciona a la biblioteca de tipos toda la información del archivo original, mientras que **\[ importlib \]** solo incluye el contenido de la biblioteca de tipos.
 
 > [!Note]  
-> La directiva **\[ importlib \]** hace que cualquier tipo definido en la biblioteca importada sea accesible desde dentro de la biblioteca que se está compilando. Para evitar la ambigüedad cuando hay referencias duplicadas, se recomienda calificar cada una de ellas con el nombre de biblioteca adecuado, como se indica a continuación:
+> La **\[ directiva \] importlib** hace que cualquier tipo definido en la biblioteca importada sea accesible desde la biblioteca que se compila. Para evitar ambigüedades cuando hay referencias duplicadas, se recomienda calificar cada una de estas referencias con el nombre de biblioteca adecuado, como se muestra a continuación:
 
- 
+ 
 
 ``` syntax
 library_name.type
 ```
 
-En ausencia de tal calificación, MIDL resuelve la ambigüedad de la referencia duplicada como se indica a continuación:
+En ausencia de esta calificación, MIDL resuelve la ambigüedad de referencia duplicada como se muestra a continuación:
 
--   A partir de la versión 3,1, MIDL usa la primera referencia que encuentra.
--   La versión 3,0 de MIDL, la primera versión de MIDL que podría generar bibliotecas de tipos, utiliza la última referencia encontrada.
+-   A partir de la versión 3.1, MIDL usa la primera referencia que encuentra.
+-   La versión 3.0 de MIDL, la primera versión de MIDL que podría generar bibliotecas de tipos, usa la última referencia que encontró.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -94,10 +94,10 @@ library BrowseHelper
 
 <dl> <dt>
 
-[**biblioteca**](library.md)
+[**Biblioteca**](library.md)
 </dt> <dt>
 
-[**importar**](import.md)
+[**Importación**](import.md)
 </dt> <dt>
 
 [Importación de archivos de encabezado del sistema](importing-system-header-files.md)
@@ -106,7 +106,7 @@ library BrowseHelper
 [Importar archivos y bibliotecas de tipos](importing-files-and-type-libraries.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -115,6 +115,6 @@ library BrowseHelper
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

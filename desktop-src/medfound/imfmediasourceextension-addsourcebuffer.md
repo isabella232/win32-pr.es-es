@@ -1,7 +1,7 @@
 ---
-description: Agrega un IMFSourceBuffer a la colección de búferes asociados a IMFMediaSourceExtension.
+description: Agrega un ELEMENTO IMFSourceBuffer a la colección de búferes asociados a LAEXTENSIONMediaSourceExtension.
 ms.assetid: 1ecb7047-4dc9-4657-8a19-12108de299c0
-title: 'IMFMediaSourceExtension:: AddSourceBuffer (método)'
+title: MÉTODO IMFMediaSourceExtension::AddSourceBuffer
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: a62a62d8cf11afaa0190ac442f84b00cfe23517b
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: b49a7c4fb0cb9e45ab0c2823d92ceb6e4076dfcaef4d2e8450f1f3d07f474279
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105707551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942035"
 ---
-# <a name="imfmediasourceextensionaddsourcebuffer-method"></a>IMFMediaSourceExtension:: AddSourceBuffer (método)
+# <a name="imfmediasourceextensionaddsourcebuffer-method"></a>MÉTODO IMFMediaSourceExtension::AddSourceBuffer
 
-Agrega un [**IMFSourceBuffer**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer) a la colección de búferes asociados a [**IMFMediaSourceExtension**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediasourceextension).
+Agrega [**un elemento IMFSourceBuffer**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer) a la colección de búferes asociados a [**LA CLASE IMFMediaSourceExtension.**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediasourceextension)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,18 +41,18 @@ HRESULT AddSourceBuffer(
 
 <dl> <dt>
 
-*tipo* \[ de de\]
+*type* \[ En\]
 </dt> <dd></dd> <dt>
 
-*pNotify* \[ de\]
+*pNotify* \[ En\]
 </dt> <dd></dd> <dt>
 
-*ppSourceBuffer* \[ enuncia\]
+*ppSourceBuffer* \[ out\]
 </dt> <dd></dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,9 +60,9 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

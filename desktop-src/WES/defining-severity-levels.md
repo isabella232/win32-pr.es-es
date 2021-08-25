@@ -1,19 +1,19 @@
 ---
-title: Definir los niveles de gravedad
-description: Los niveles se usan para agrupar eventos y suelen indicar la gravedad o el nivel de detalle de un evento.
+title: Definir niveles de gravedad
+description: Los niveles se usan para agrupar eventos y normalmente indican la gravedad o el nivel de detalle de un evento.
 ms.assetid: dfa4e0a9-4d89-4f50-aef9-1dae0dc11726
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c8e2e979e75057a77cca267e540b3ec5469562f
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 4b3c3c5e663e476f98bef5c9be3f20cae5e0e88a74a7996f6f515d1d92599eb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104420484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863685"
 ---
-# <a name="defining-severity-levels"></a>Definir los niveles de gravedad
+# <a name="defining-severity-levels"></a>Definir niveles de gravedad
 
-Los niveles se usan para agrupar eventos y suelen indicar la gravedad o el nivel de detalle de un evento. Para definir un nivel, use el elemento **LEVEL** . El archivo Winmeta.xml define los siguientes niveles de gravedad usados con frecuencia:
+Los niveles se usan para agrupar eventos y normalmente indican la gravedad o el nivel de detalle de un evento. Para definir un nivel, use el **elemento level.** El Winmeta.xml define los siguientes niveles de gravedad que se usan con frecuencia:
 
 -   win:Critical
 -   win:Error
@@ -21,9 +21,9 @@ Los niveles se usan para agrupar eventos y suelen indicar la gravedad o el nivel
 -   win:Informational
 -   win:Verbose
 
-Los consumidores usan niveles para consultar los eventos que contienen un valor de nivel específico. Una sesión de seguimiento de ETW también puede usar niveles para limitar los eventos que se escriben en el archivo de registro de seguimiento de eventos; los eventos con un valor de nivel igual o menor que el valor de nivel especificado se escriben en el archivo de registro. Por ejemplo, si la sesión especificó el valor de nivel de Win: Warning, el archivo de registro contendría los eventos de advertencia, error y crítico.
+Los consumidores usan niveles para consultar eventos que contienen un valor de nivel específico. Una sesión de seguimiento de ETW también puede usar niveles para limitar los eventos que se escriben en el archivo de registro de seguimiento de eventos; Los eventos con un valor de nivel igual o menor que el valor de nivel especificado se escriben en el archivo de registro. Por ejemplo, si la sesión especifica el valor de nivel para win:Warning, el archivo de registro contendrá eventos críticos, de error y de advertencia.
 
-En el ejemplo siguiente se muestra cómo definir un nivel. Debe especificar los atributos de **nombre** y **valor** del nivel. El valor del atributo **Value** debe estar en el intervalo comprendido entre 16 y 255. Los atributos **Symbol** y **Message** son opcionales.
+En el ejemplo siguiente se muestra cómo definir un nivel. Debe especificar los atributos de nombre **y** **valor del** nivel. El valor del atributo **value** debe estar en el intervalo de 16 a 255. Los **atributos de** símbolo **y** mensaje son opcionales.
 
 
 ```XML

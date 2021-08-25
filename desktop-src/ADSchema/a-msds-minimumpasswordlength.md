@@ -1,11 +1,11 @@
 ---
-title: atributo de longitud de contraseña de MS-DS-Minimum
-description: Longitud mínima de las contraseñas de cuentas de usuario.
+title: Atributo ms-DS-Minimum-Password-Length
+description: Longitud mínima de las contraseñas de cuenta de usuario.
 ms.assetid: 1d29d3f9-e3af-4fe9-b865-0316ad4548f6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de longitud mínima de contraseña de MS-DS
-- Esquema de AD de atributo msDS-MinimumPasswordLength
+- Esquema de AD del atributo ms-DS-Minimum-Password-Length
+- Esquema de AD del atributo msDS-MinimumPasswordLength
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04b383310225c52c4ea136646dc1689943123a25
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f3c21812dd716c6dd1ea92b7813fec78840c1e7cea869a0fccb90b63ce2d3695
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803945"
 ---
-# <a name="ms-ds-minimum-password-length-attribute"></a>atributo de longitud de contraseña de MS-DS-Minimum
+# <a name="ms-ds-minimum-password-length-attribute"></a>Atributo ms-DS-Minimum-Password-Length
 
-Longitud mínima de las contraseñas de cuentas de usuario.
+Longitud mínima de las contraseñas de cuenta de usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-longitud mínima de la contraseña        |
-| Nombre para mostrar de LDAP | msDS-MinimumPasswordLength           |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-Minimum-Password-Length        |
+| Ldap-Display-Name | msDS-MinimumPasswordLength           |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2013              |
-| System-ID-GUID    | b21b3439-4c3a-441c-bb5f-08f20e9b315e |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | b21b3439-4c3a-441c-bb5f-08f20e9b315e |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,18 +52,18 @@ Longitud mínima de las contraseñas de cuentas de usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 255                                                                   |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Configuración de MS-DS-Password**](c-msds-passwordsettings.md)<br/> |
+| Clases usadas en        | [**ms-DS-Password-Configuración**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Longitud mínima de las contraseñas de cuentas de usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 255                                                                   |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Configuración de MS-DS-Password**](c-msds-passwordsettings.md)<br/> |
+| Clases usadas en        | [**ms-DS-Password-Configuración**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -94,18 +94,18 @@ Longitud mínima de las contraseñas de cuentas de usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 255                                                                   |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Configuración de MS-DS-Password**](c-msds-passwordsettings.md)<br/> |
+| Clases usadas en        | [**ms-DS-Password-Configuración**](c-msds-passwordsettings.md)<br/> |
 
 
 

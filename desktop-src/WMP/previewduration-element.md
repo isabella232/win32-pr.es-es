@@ -1,9 +1,9 @@
 ---
 title: Elemento PREVIEWDURATION
-description: El elemento PREVIEWDURATION define la cantidad de tiempo que se reproduce un clip en el modo de vista previa.
+description: El elemento PREVIEWDURATION define la duración de reproducción de un clip en modo de vista previa.
 ms.assetid: 428a4e3d-9c08-4b6c-acc7-b630aab37de3
 keywords:
-- Elemento PREVIEWDURATION Media Player Windows
+- Elemento PREVIEWDURATION Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a944e86a4bd82bf57961d4d6b474c34afadba6b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd01180b56816aa3458396f1c6183518d4365dce2f41643328e899057ed1ee72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862025"
 ---
 # <a name="previewduration-element"></a>Elemento PREVIEWDURATION
 
-El elemento **PREVIEWDURATION** define la cantidad de tiempo que se reproduce un clip en el modo de vista previa.
+El **elemento PREVIEWDURATION** define la duración de reproducción de un clip en modo de vista previa.
 
 ``` syntax
 <PREVIEWDURATION
@@ -32,9 +32,9 @@ El elemento **PREVIEWDURATION** define la cantidad de tiempo que se reproduce un
 
 ## <a name="attributes"></a>Atributos
 
-**Valor** (obligatorio)
+**VALUE** (obligatorio)
 
-Período de tiempo (en horas, minutos, segundos y centésimas de segundo) que el clip reproduce en el modo de vista previa.
+Tiempo (en horas, minutos, segundos y centésimas de segundo) que el clip reproduce en modo de vista previa.
 
 ## <a name="parentchild-elements"></a>Elementos primarios y secundarios
 
@@ -42,7 +42,7 @@ Período de tiempo (en horas, minutos, segundos y centésimas de segundo) que el
 
 | Hierarchy       | Elementos                    |
 |-----------------|-----------------------------|
-| Elementos primarios | **ASX**, **entry**, **ref** |
+| Elementos primarios | **ASX**, **ENTRY**, **REF** |
 | Elementos secundarios  | Ninguno                        |
 
 
@@ -51,11 +51,11 @@ Período de tiempo (en horas, minutos, segundos y centésimas de segundo) que el
 
 ## <a name="remarks"></a>Observaciones
 
-Este elemento define el período de tiempo que un clip se reproduce en el modo de vista previa. Si este elemento aparece dentro de un elemento **entry** o **ref** , se aplica al clip definido por ese elemento. Si aparece dentro del ámbito de un elemento **ASX** , se aplica a todos los clips del metarchivo. Un elemento **PREVIEWDURATION** de un elemento **ref** tiene prioridad sobre uno en un **elemento** entry y tiene prioridad sobre un elemento **PREVIEWDURATION** en un elemento **ASX** . Si no se define ningún elemento **PREVIEWDURATION** para un clip, la hora de la vista previa predeterminada es de 10 segundos.
+Este elemento define el período de tiempo que un clip se reproduce en modo de vista previa. Si este elemento aparece dentro de **un elemento ENTRY** o un elemento **REF,** se aplica al clip definido por ese elemento. Si aparece dentro del ámbito de un **elemento ASX,** se aplica a cada clip del metarchivo. Un **elemento PREVIEWDURATION** de un elemento **REF** tiene prioridad sobre uno en un elemento **ENTRY** y tiene prioridad sobre un **elemento PREVIEWDURATION** en un **elemento ASX.** Si no se define ningún elemento **PREVIEWDURATION** para un clip, el tiempo de vista previa predeterminado es de 10 segundos.
 
-Si hay un elemento **STARTTIME** o **STARTMARKER** para el clip, Windows Media Player representa el clip comenzando en el punto definido por uno de estos elementos. en caso contrario, se representa desde el principio del clip. El clip se detiene normalmente si es menor que el tiempo definido por el elemento **PREVIEWDURATION** .
+Si hay un **elemento STARTTIME** o **STARTMARKER** para el clip, Reproductor de Windows Media el clip a partir del punto definido por uno de estos elementos; de lo contrario, se representa desde el principio del clip. El clip se detiene normalmente si es más corto que el tiempo definido por el **elemento PREVIEWDURATION.**
 
-El elemento **Duration** invalida un elemento **PREVIEWDURATION** .
+El **elemento DURATION** invalida un elemento **PREVIEWDURATION.**
 
 ## <a name="examples"></a>Ejemplos
 
@@ -72,7 +72,7 @@ El elemento **Duration** invalida un elemento **PREVIEWDURATION** .
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -80,10 +80,10 @@ El elemento **Duration** invalida un elemento **PREVIEWDURATION** .
 
 <dl> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referencia de metarchivos de Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referencia de metarchivo multimedia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

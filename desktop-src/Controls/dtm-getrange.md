@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DTM_GETRANGE (commctrl. h)
-description: Obtiene las horas de sistema mínimas y máximas permitidas para un control de selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o utilizar la macro GetRange de fecha y hora \_ .
+title: DTM_GETRANGE mensaje (Commctrl.h)
+description: Obtiene las horas del sistema mínimas y máximas permitidos actuales para un control selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o usar la macro DateTime \_ GetRange.
 ms.assetid: 190cada6-49ee-483f-a464-d3d789127159
 keywords:
-- DTM_GETRANGE controles de mensajes de Windows
+- DTM_GETRANGE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a50a2ae9fe4ca77198f9e63548f709e0f571fdb0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7d9c0c90780e4bcd35da2d410f7b4743547cbd8d31ac06293c411f2415e4e408
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877955"
 ---
-# <a name="dtm_getrange-message"></a>DTM \_ GETRANGE
+# <a name="dtm_getrange-message"></a>Mensaje \_ GETRANGE de DTM
 
-Obtiene las horas de sistema mínimas y máximas permitidas para un control de selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o utilizar la [**macro \_ GetRange de fecha y hora**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_getrange) .
+Obtiene las horas del sistema mínimas y máximas permitidos actuales para un control selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o usar la macro [**DateTime \_ GetRange.**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_getrange)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,17 +35,17 @@ Obtiene las horas de sistema mínimas y máximas permitidas para un control de s
 *lParam* 
 </dt> <dd>
 
-Puntero a una matriz de dos elementos de estructuras [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) .
+Puntero a una matriz de dos elementos de [**estructuras SYSTEMTIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **DWORD** que es una combinación de GDTR \_ min o GDTR \_ Max. El primer elemento de la matriz [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) contiene el tiempo mínimo permitido si \_ se establece GDTR min. El segundo elemento de la matriz **SYSTEMTIME** contiene el tiempo máximo permitido si \_ se establece GDTR Max.
+Devuelve un **valor DWORD** que es una combinación de GDTR \_ MIN o GDTR \_ MAX. El primer elemento de la [**matriz SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) contiene el tiempo mínimo permitido si se establece GDTR \_ MIN. El segundo elemento de la **matriz SYSTEMTIME** contiene el tiempo máximo permitido si se establece GDTR \_ MAX.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el selector de fecha y hora solo se muestran las fechas y horas que se encuentran dentro del intervalo especificado, lo que impide que el usuario seleccione una fecha y hora fuera del intervalo. Si el [**mensaje \_ SETSYSTEMTIME de DTM**](dtm-setsystemtime.md) especifica una fecha y una hora que están fuera del intervalo, se producirá un error.
+El selector de fecha y hora muestra solo las fechas y horas que se encuentran dentro del intervalo especificado, lo que impide que el usuario seleccione una fecha y hora que se encuentran fuera del intervalo. Si el [**mensaje \_ SETSYSTEMTIME de DTM**](dtm-setsystemtime.md) especifica una fecha y hora que se encuentran fuera del intervalo, se producirá un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ En el selector de fecha y hora solo se muestran las fechas y horas que se encuen
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

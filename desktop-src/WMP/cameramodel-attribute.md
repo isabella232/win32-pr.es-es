@@ -3,7 +3,7 @@ title: Atributo CameraModel
 description: El atributo CameraModel es una cadena que representa el modelo de la cámara.
 ms.assetid: 21718367-7a05-465a-958d-ea4b229ca3cb
 keywords:
-- CameraModel Media Player de Windows
+- Atributo CameraModel Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,24 +12,24 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 533f0fc33c391f51b3e109cb27c0a6cae78a79db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 09c9b9f204c41392005f5d7e0722bfa7d9e597e95613d0cce2dc18aca0a4c4ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864225"
 ---
 # <a name="cameramodel-attribute"></a>Atributo CameraModel
 
-El atributo **CameraModel** es una cadena que representa el modelo de la cámara.
+El **atributo CameraModel** es una cadena que representa el modelo de la cámara.
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Elementos de fotografía](photo-item-attributes.md)
+-   [Elementos de fotos](photo-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

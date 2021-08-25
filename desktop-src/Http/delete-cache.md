@@ -1,9 +1,9 @@
 ---
 title: delete cache
-description: Vacía la memoria caché de la dirección URL completa o elimina las entradas según la dirección URL especificada.
+description: Vacía toda la caché de direcciones URL o elimina las entradas según la dirección URL especificada.
 ms.assetid: 499ce0f9-01db-4648-89f7-1ecafd25a805
 keywords:
-- eliminar caché HTTP
+- delete cache HTTP
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f963d12812140d11923460235ef780a621ba3db5
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: c41f2147f0101f312a7fa76796032ec8c821fcea9c08cf89bb3174ddace43d47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "105685666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870565"
 ---
 # <a name="delete-cache"></a>delete cache
 
-Vacía la memoria caché de la dirección URL completa o elimina las entradas según la dirección URL especificada.
+Vacía toda la caché de direcciones URL o elimina las entradas según la dirección URL especificada.
 
 ``` syntax
 delete cache [url=]string [[recursive=]{yes|no}]
@@ -32,7 +32,7 @@ delete cache [url=]string [[recursive=]{yes|no}]
 
 <dl> <dt>
 
-<span id="_url__string"></span><span id="_URL__STRING"></span>**\[URL = \] * * * cadena*
+<span id="_url__string"></span><span id="_URL__STRING"></span>**\[ url= \]**_cadena_
 </dt> <dd>
 
 Obligatorio. Especifica la dirección URL completa.
@@ -41,7 +41,7 @@ Obligatorio. Especifica la dirección URL completa.
 
 <dl> <dt>
 
-<span id="_recursive___yes_no_"></span><span id="_RECURSIVE___YES_NO_"></span>**\[Recursive = \] {sí \| no}**
+<span id="_recursive___yes_no_"></span><span id="_RECURSIVE___YES_NO_"></span>**\[recursive= \] {yes \| no}**
 </dt> <dd>
 
 En caso afirmativo, quita todas las entradas de la dirección URL especificada.
@@ -50,11 +50,11 @@ En caso afirmativo, quita todas las entradas de la dirección URL especificada.
 
 ## <a name="examples"></a>Ejemplos
 
-**eliminar la dirección URL de caché = https://www.contoso.com:80/myresource/ recursivo = sí**
+**delete cache url= https://www.contoso.com:80/myresource/ recursive=yes**
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: Claves del registro y entradas para una tienda en línea de tipo 1
-description: Claves del registro y entradas para una tienda en línea de tipo 1
+title: Claves y entradas del Registro para un almacén en línea de tipo 1
+description: Claves y entradas del Registro para un almacén en línea de tipo 1
 ms.assetid: cf25a004-e0c3-407c-8704-54be3601528b
 keywords:
-- Windows Media Player tiendas en línea, registro
+- Reproductor de Windows Media en línea, registro
 - tiendas en línea, registro
-- tipo 1 tiendas en línea, registro
-- registro, tipo 1 tiendas en línea
+- tiendas en línea de tipo 1, registro
+- registry,type 1 online stores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1329ad69e91ebce41b258d1e148403f62caceb96
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 7e42b1b75b64a8736c1491ccc058fe5548d78808ba51e142b3272d17d3c0eba9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105685680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861535"
 ---
-# <a name="registry-keys-and-entries-for-a-type-1-online-store"></a>Claves del registro y entradas para una tienda en línea de tipo 1
+# <a name="registry-keys-and-entries-for-a-type-1-online-store"></a>Claves y entradas del Registro para un almacén en línea de tipo 1
 
-Para que una tienda en línea de tipo 1 esté disponible en Windows Media Player, el proveedor de la tienda en línea debe crear las siguientes subclaves del registro y entradas en el equipo del usuario.
+Para que un almacén en línea de tipo 1 esté disponible en Reproductor de Windows Media, el proveedor de la tienda en línea debe crear las siguientes subclaves y entradas del Registro en el equipo del usuario.
 
 
 ```C++
@@ -43,50 +43,50 @@ Para que una tienda en línea de tipo 1 esté disponible en Windows Media Player
 
 
 > [!Note]  
-> Al establecer el valor de DllSurrogate en la cadena vacía, se indica que el tiempo de ejecución de COM cargará el complemento de la tienda en línea en el suplente de DLL predeterminado, dllhost.exe.
+> Establecer el valor de DllSurrogate en la cadena vacía indica que el tiempo de ejecución com cargará el complemento de la tienda en línea en el suplente dll predeterminado, dllhost.exe.
 
  
 
-En la sintaxis del registro anterior, los símbolos en cursiva son marcadores de posición para los nombres y los identificadores únicos globales (GUID) que son específicos de la tienda en línea. En la tabla siguiente se describen esos marcadores de posición.
+En la sintaxis del Registro anterior, los símbolos en cursiva son marcadores de posición para nombres e identificadores únicos globales (GUID) que son específicos del almacén en línea. En la tabla siguiente se describen esos marcadores de posición.
 
 
 
 | Marcador de posición    | Descripción                                                                                                                                                                                                                                                                                                                     |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *keyName*      | Cadena acordada entre Microsoft y la tienda en línea. Esta cadena identifica de forma única la tienda en línea. Ejemplo: "Proseware"<br/>                                                                                                                                                                                   |
-| *flags*        | Un or **bit a** bit de uno o más marcadores de capacidad de complemento estas marcas especifican si Windows Media Player debe llamar a métodos concretos de [IWMPContentPartner](/previous-versions/windows/desktop/api/contentpartner/nn-contentpartner-iwmpcontentpartner). Para obtener información sobre las marcas admitidas, vea la tabla de marcas de capacidad de complementos que se indican a continuación de esta tabla. Ejemplo: 00000058<br/> |
-| *CLSID*        | GUID que es el identificador de clase (CLSID) de la clase que implementa **IWMPContentPartner** en el complemento de la tienda en línea. Este GUID debe estar en formato de registro, completar con las llaves. Formato: {xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX}<br/>                                                                  |
-| *FriendlyName* | Un nombre descriptivo para la tienda en línea. Ejemplo: "servicio de música de Proseware"<br/>                                                                                                                                                                                                                                              |
-| *appid*        | GUID que es el identificador de la aplicación (AppID) para el complemento de la tienda en línea. Este GUID debe estar en formato de registro, completar con las llaves. Formato: {xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX}<br/>                                                                                                                |
-| *pluginName*   | Un nombre para el complemento de la tienda en línea. Ejemplo: "complemento de asociado de contenido de Proseware"<br/>                                                                                                                                                                                                                                   |
-| *className*    | Nombre de la clase que implementa **IWMPContentpartner** en el complemento de la tienda en línea. Ejemplo: "CProsewarePartner"<br/>                                                                                                                                                                                              |
-| *moduleName*   | Ruta de acceso completa al archivo DLL que implementa el complemento de la tienda en línea. Ejemplo: "C: \\ archivos de programa \\ Proseware \\ProsewarePartner.dll"<br/>                                                                                                                                                                         |
-| *Threading*    | Tipo de apartamento en el que se ejecuta el complemento. "ThreadingModel" = "Apartment" indica que el complemento se ejecuta en un contenedor uniproceso (STA). "ThreadingModel" = "Free" indica que el complemento se ejecuta en el contenedor multiproceso (MTA).                                                                                     |
+| *keyName*      | Cadena acordado entre Microsoft y la tienda en línea. Esta cadena identifica de forma única la tienda en línea. Ejemplo: "Proseware"<br/>                                                                                                                                                                                   |
+| *flags*        | OR bit a bit **de** una o varias marcas de funcionalidad del complemento Estas marcas especifican si Reproductor de Windows Media llamar a métodos concretos de [IWMPContentPartner](/previous-versions/windows/desktop/api/contentpartner/nn-contentpartner-iwmpcontentpartner). Para obtener información sobre las marcas admitidas, consulte la tabla de marcas de funcionalidad del complemento que sigue a esta tabla. Ejemplo: 00000058<br/> |
+| *Clsid*        | GUID que es el identificador de clase (CLSID) de la clase que implementa **IWMPContentPartner** en el complemento del almacén en línea. Este GUID debe estar en formato del Registro, junto con las llaves. Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/>                                                                  |
+| *friendlyname* | Un nombre descriptivo para la tienda en línea. Ejemplo: "Proseware Música Service"<br/>                                                                                                                                                                                                                                              |
+| *appid*        | GUID que es el identificador de aplicación (AppID) del complemento de la tienda en línea. Este GUID debe estar en formato del Registro, junto con las llaves. Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/>                                                                                                                |
+| *pluginName*   | Nombre del complemento de la tienda en línea. Ejemplo: "Complemento de asociado de contenido de Proseware"<br/>                                                                                                                                                                                                                                   |
+| *className*    | Nombre de la clase que implementa **IWMPContentpartner en** el complemento de la tienda en línea. Ejemplo: "CProsewarePartner"<br/>                                                                                                                                                                                              |
+| *moduleName*   | Ruta de acceso completa al archivo DLL que implementa el complemento de la tienda en línea. Ejemplo: "C: \\ Archivos \\ de programa Proseware \\ProsewarePartner.dll"<br/>                                                                                                                                                                         |
+| *Threading*    | Tipo de apartamento en el que se ejecuta el complemento. "ThreadingModel"="Apartment" indica que el complemento se ejecuta en un apartamento de un solo subproceso (STA). "ThreadingModel"="Free" indica que el complemento se ejecuta en el apartamento multiproceso (MTA).                                                                                     |
 
 
 
  
 
-En la tabla siguiente se describen las marcas de capacidad del complemento.
+En la tabla siguiente se describen las marcas de funcionalidad del complemento.
 
 
 
 | Marca                                    | Value | Descripción                                                                                                                                                                                                                                                                 |
 |-----------------------------------------|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| límite de suscripción \_ \_ BACKGROUNDPROCESSING | 0x8   | Windows Media Player debe llamar a [IWMPContentPartner:: Notify](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-notify) para informar al complemento cuando debe iniciar y detener el procesamiento en segundo plano.                                                                                                     |
-| límite de suscripción \_ \_ DEVICEAVAILABLE      | 0x10  | Windows Media Player debe llamar a [IWMPContentPartner:: UpdateDevice](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-updatedevice).                                                                                                                                                                   |
-| el \_ límite de suscripción \_ es \_ CONTENTPARTNER   | 0x40  | Informa a Windows Media Player de que el complemento implementa la interfaz **IWMPContentPartner** . Todos los complementos de la tienda en línea de tipo 1 deben establecer esta marca.                                                                                                                         |
-| límite de suscripción \_ \_ ALTLOGIN             | 0x80  | Informa a Windows Media Player de que el complemento admite un inicio de sesión alternativo. Si el complemento admite un inicio de sesión alternativo, Windows Media Player recupera la dirección URL de inicio de sesión y el título alternativos llamando a [IWMPContentPartner:: GetItemInfo](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getiteminfo). |
+| \_BACKGROUNDPROCESSING DEL LÍMITE DE \_ SUSCRIPCIÓN | 0x8   | Reproductor de Windows Media llamar a [IWMPContentPartner::Notify](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-notify) para informar al complemento cuándo debe iniciar y detener el procesamiento en segundo plano.                                                                                                     |
+| LÍMITE \_ DE SUSCRIPCIÓN \_ DEVICEAVAILABLE      | 0x10  | Reproductor de Windows Media llamar a [IWMPContentPartner::UpdateDevice](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-updatedevice).                                                                                                                                                                   |
+| EL \_ LÍMITE DE SUSCRIPCIÓN ES \_ \_ CONTENTPARTNER   | 0x40  | Informa Reproductor de Windows Media que el complemento implementa la **interfaz IWMPContentPartner.** Todos los complementos de tienda en línea de tipo 1 deben establecer esta marca.                                                                                                                         |
+| \_ALTLOGIN DE LÍMITE DE \_ SUSCRIPCIÓN             | 0x80  | Informa Reproductor de Windows Media que el complemento admite un inicio de sesión alternativo. Si el complemento admite un inicio de sesión alternativo, Reproductor de Windows Media recupera la dirección URL y el título de inicio de sesión alternativos mediante una llamada a [IWMPContentPartner::GetItemInfo](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getiteminfo). |
 
 
 
  
 
-**Entradas del registro para desarrollo y pruebas**
+**Entradas del Registro para desarrollo y pruebas**
 
-Cuando empiece a desarrollar la tienda en línea, Microsoft le proporcionará dos claves: una clave de prueba y una clave de producción. Durante la fase de desarrollo y pruebas, la tienda en línea aparecerá en Windows Media Player solo si la clave de prueba o la clave de producción se encuentra en el registro del equipo del usuario. Para obtener más información acerca de las claves de prueba y de producción, consulte [claves de prueba y de producción para una tienda en línea de tipo 1](test-and-production-keys-for-a-type-1-online-store.md).
+Cuando empiece a desarrollar su tienda en línea, Microsoft le proporciona dos claves: una clave de prueba y una clave de producción. Durante la fase de desarrollo y pruebas, la tienda en línea aparecerá en Reproductor de Windows Media solo si la clave de prueba o la clave de producción están en el registro del equipo del usuario. Para obtener más información sobre las claves de prueba y producción, vea Claves de prueba y [producción para un almacén en línea de tipo 1.](test-and-production-keys-for-a-type-1-online-store.md)
 
-Coloque la clave de prueba o de producción en la siguiente ubicación del registro.
+Coloque la clave de prueba o producción en la siguiente ubicación del Registro.
 
 
 ```C++
@@ -96,7 +96,7 @@ Coloque la clave de prueba o de producción en la siguiente ubicación del regis
 
 
 
-Tenga en cuenta que el valor de la entrada del registro TestParameter puede especificar varias claves de prueba o de producción. Por ejemplo, supongamos que Proseware tiene una clave de prueba de "1234" y Contoso tiene una clave de prueba de "2345". La siguiente entrada del registro especifica que los almacenes de pruebas para Proseware y contoso aparecerán en Windows Media Player.
+Tenga en cuenta que el valor de la entrada del Registro TestParameter puede especificar varias claves de prueba o producción. Por ejemplo, suponga que Proseware tiene una clave de prueba de "1234" y Contoso tiene una clave de prueba de "2345". La siguiente entrada del Registro especifica que los almacenes de prueba para Proseware y Contoso aparecerán en Reproductor de Windows Media.
 
 
 ```C++
@@ -106,9 +106,9 @@ Tenga en cuenta que el valor de la entrada del registro TestParameter puede espe
 
 
 
-**Entrada del registro ActiveService**
+**Entrada del Registro ActiveService**
 
-Cuando el usuario activa una tienda en línea, Windows Media Player escribe información en el registro que identifica la tienda en línea activa. Windows Media Player coloca la información en la siguiente ubicación del registro en el equipo del usuario.
+Cuando el usuario activa una tienda en línea, Reproductor de Windows Media escribe información en el registro que identifica la tienda en línea activa. Reproductor de Windows Media la información en la siguiente ubicación del Registro en el equipo del usuario.
 
 
 ```C++
@@ -118,7 +118,7 @@ Cuando el usuario activa una tienda en línea, Windows Media Player escribe info
 
 
 
-En la sintaxis del registro anterior, *serviceInfo* es un marcador de posición para una cadena que contiene información descriptiva acerca de la tienda en línea activa.
+En la sintaxis del Registro anterior, *serviceInfo* es un marcador de posición para una cadena que contiene información descriptiva sobre el almacén en línea activo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

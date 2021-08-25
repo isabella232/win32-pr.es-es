@@ -4,12 +4,12 @@ description: Notificaciones de entrada del mouse
 ms.assetid: bf010650-4117-4ea5-8563-ca067d48f9cc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0e748478d88f4012eb19a59fafafb2cbf33f075
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 46ba3d5082eacc65ae374e4c190f21a56040ec5d15aa8abc896cb66f1f46bd28
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848825"
 ---
 # <a name="mouse-input-notifications"></a>Notificaciones de entrada del mouse
 

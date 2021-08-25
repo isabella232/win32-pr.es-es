@@ -1,22 +1,22 @@
 ---
-description: 'La interfaz de programación de servicios web en dispositivos define y utiliza las siguientes funciones:'
+description: 'La interfaz de programación Servicios web en dispositivos define y usa las siguientes funciones:'
 ms.assetid: d45c714a-4ac4-4a62-92a6-9460a2fffe6e
 title: Funciones de servicios web en dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4eee9388d834d793087b3fecf0b67c901edcbe1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4dff9fde0413f10bbb15079fdb945558da73a26a141985003e33caf7e0644bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104545630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856065"
 ---
 # <a name="web-services-on-devices-functions"></a>Funciones de servicios web en dispositivos
 
-La interfaz de programación de servicios web en dispositivos define y utiliza las siguientes funciones:
+La interfaz de programación Servicios web en dispositivos define y usa las siguientes funciones:
 
--   [**\_controlador de \_ mensajes \_ SOAP PWSD**](/windows/win32/api/wsdtypes/nc-wsdtypes-pwsd_soap_message_handler)
--   [**\_función de código auxiliar WSD \_**](/windows/win32/api/wsdtypes/nc-wsdtypes-wsd_stub_function)
+-   [**CONTROLADOR DE MENSAJES \_ SOAP \_ PWSD \_**](/windows/win32/api/wsdtypes/nc-wsdtypes-pwsd_soap_message_handler)
+-   [**WSD \_ STUB \_ (FUNCIÓN)**](/windows/win32/api/wsdtypes/nc-wsdtypes-wsd_stub_function)
 -   [**WSDAllocateLinkedMemory**](/windows/desktop/api/WsdUtil/nf-wsdutil-wsdallocatelinkedmemory)
 -   [**WSDAttachLinkedMemory**](/windows/desktop/api/WsdUtil/nf-wsdutil-wsdattachlinkedmemory)
 -   [**WSDCreateDeviceHost**](/windows/desktop/api/WsdHost/nf-wsdhost-wsdcreatedevicehost)
