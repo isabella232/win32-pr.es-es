@@ -1,16 +1,16 @@
 ---
-title: Propiedad EnableCredSspSupport de IMsRdpClientAdvancedSettings6
+title: IMsRdpClientAdvancedSettings6 EnableCredSspSupport, propiedad
 description: Especifica si el proveedor de servicios de seguridad de credenciales (CredSSP) está habilitado para esta conexión.
 ms.assetid: 3BC8A265-7AEA-4C9C-9730-7710E1A3159D
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad EnableCredSspSupport
-- Propiedad EnableCredSspSupport Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad EnableCredSspSupport
-- Propiedad EnableCredSspSupport Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad EnableCredSspSupport
-- Propiedad EnableCredSspSupport Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad EnableCredSspSupport
+- Propiedad EnableCredSspSupport Servicios de Escritorio remoto
+- Propiedad EnableCredSspSupport Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad EnableCredSspSupport
+- Propiedad EnableCredSspSupport Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad EnableCredSspSupport
+- Propiedad EnableCredSspSupport Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad EnableCredSspSupport
 topic_type:
 - apiref
 api_name:
@@ -29,20 +29,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b73ad2b024cd0f8bbcafd6ba05be093c5953d54
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a05ac2c45ee035e17f0fc715b42f7752a11ca92dd2bce7f54a3a81c7b723d29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072405"
 ---
-# <a name="imsrdpclientadvancedsettings6enablecredsspsupport-property"></a>IMsRdpClientAdvancedSettings6:: EnableCredSspSupport (propiedad)
+# <a name="imsrdpclientadvancedsettings6enablecredsspsupport-property"></a>Propiedad IMsRdpClientAdvancedSettings6::EnableCredSspSupport
 
 Especifica si el proveedor de servicios de seguridad de credenciales (CredSSP) está habilitado para esta conexión.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -59,17 +59,17 @@ HRESULT get_EnableCredSspSupport(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Especifica si CredSSP está habilitado para esta conexión. Establézcalo en **Variant \_ true** para habilitar CredSSP o **Variant \_ false** en caso contrario.
+Especifica si CredSSP está habilitado para esta conexión. Establezca en **VARIANT \_ TRUE para** habilitar CredSSP o VARIANT **\_ FALSE** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad solo es compatible con clientes Conexión a Escritorio remoto 6,1 y 7,0.
+Esta propiedad solo es compatible con Conexión a Escritorio remoto 6.1 y 7.0.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                         |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                   |

@@ -1,11 +1,11 @@
 ---
-title: Propiedad TaskDefinition. principal
-description: En el caso de scripting, obtiene o establece la entidad de seguridad de la tarea que proporciona las credenciales de seguridad para la tarea.
+title: Propiedad TaskDefinition.Principal
+description: Para el scripting, obtiene o establece la entidad de seguridad de la tarea que proporciona las credenciales de seguridad para la tarea.
 ms.assetid: ed706616-50a1-40b2-8e02-6f548e1b714e
 keywords:
-- Programador de tareas de propiedad principal
-- Propiedad principal Programador de tareas, objeto TaskDefinition
-- Programador de tareas de objeto TaskDefinition, propiedad principal
+- Propiedad principal Programador de tareas
+- Propiedad principal Programador de tareas , objeto TaskDefinition
+- Objeto TaskDefinition Programador de tareas , propiedad Principal
 topic_type:
 - apiref
 api_name:
@@ -16,20 +16,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a3a58074a7b56c77661b360333f5721a04ff6a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec41b6c1b2f55b73d8cbe22954f2e6097f4ad2ae1fd7dd25836b016744279cdb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080315"
 ---
-# <a name="taskdefinitionprincipal-property"></a>Propiedad TaskDefinition. principal
+# <a name="taskdefinitionprincipal-property"></a>Propiedad TaskDefinition.Principal
 
-En el caso de scripting, obtiene o establece la entidad de seguridad de la tarea que proporciona las credenciales de seguridad para la tarea.
+Para el scripting, obtiene o establece la entidad de seguridad de la tarea que proporciona las credenciales de seguridad para la tarea.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -48,9 +48,9 @@ La entidad de seguridad de la tarea que proporciona las credenciales de segurida
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

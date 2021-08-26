@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_RSTINFO. ToString (método)'
-title: JET_RSTINFO. ToString (método)
+description: 'Más información sobre: JET_RSTINFO. Método ToString'
+title: JET_RSTINFO. Método ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_RSTINFO.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstinfo.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e364b665ee993c6d0933d95fc2bacbea62a94fa5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9fcb2203be9a88bdf9eac8e32ccaf22be2aed6e8e5aaf7d7bf8e96e4b70fb846
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016565"
 ---
-# <a name="jet_rstinfotostring-method"></a>JET_RSTINFO. ToString (método)
+# <a name="jet_rstinfotostring-method"></a>JET_RSTINFO. Método ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el [JET_RSTINFO](./jet-rstinfo-class.md)actual.
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el objeto [JET_RSTINFO](./jet-rstinfo-class.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa el [JET_RSTINFO](./jet-rstinfo-class.md)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa el objeto [JET_RSTINFO](./jet-rstinfo-class.md).  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RSTINFO (clase)](./jet-rstinfo-class.md)
+[JET_RSTINFO clase](./jet-rstinfo-class.md)
 
-[Miembros de JET_RSTINFO](./jet-rstinfo-members.md)
+[JET_RSTINFO miembros](./jet-rstinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,24 +1,24 @@
 ---
-title: Elemento sesgado de VML
-description: Elemento sesgado de VML
+title: Elemento SKEW de VML
+description: Elemento SKEW de VML
 ms.assetid: ab58bbd9-5fb2-434f-adea-9b3d2d170804
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e317d03fc0bbef361df56282bec55ea2a9e708f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 71d659d16e6d10e9ec88875989a812de82403d2ac5b946580e7c7b7def956b45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104487739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099045"
 ---
-# <a name="vml-skew-element"></a>Elemento sesgado de VML
+# <a name="vml-skew-element"></a>Elemento SKEW de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define un sesgo para una forma.
 
@@ -28,7 +28,7 @@ Los atributos siguientes modifican un sesgo.
 
 | Atributo                                 | Descripción                                    |
 |-------------------------------------------|------------------------------------------------|
-| [Total](ext-attribute--skew--vml.md)       | Define la forma en que se muestra un sesgo.           |
+| [Ext](ext-attribute--skew--vml.md)       | Define la forma en que se muestra un sesgo.           |
 | [Id](id-attribute--skew--vml.md)         | Define un identificador único para un sesgo.        |
 | [Matriz](matrix-attribute--skew--vml.md) | Define una transformación de perspectiva para un sesgo.    |
 | [Offset](offset-attribute--skew--vml.md) | Define el desplazamiento de un sesgo.                  |
@@ -37,15 +37,15 @@ Los atributos siguientes modifican un sesgo.
 
 
 
- 
+ 
 
 **Comentarios:**
 
-Este elemento debe definirse dentro de un elemento de [forma](shape-element--vml.md) .
+Este elemento debe definirse dentro de un [elemento Shape.](shape-element--vml.md)
 
-Además, la [matriz](matrix-attribute--skew--vml.md) [y los](on-attribute--skew--vml.md) atributos deben establecerse en **true**.
+Además, los [atributos Matrix](matrix-attribute--skew--vml.md) y [On](on-attribute--skew--vml.md) deben establecerse en **True.**
 
-A continuación se encuentra el código mínimo necesario para producir un sesgo.
+A continuación se muestra el código mínimo necesario para generar un sesgo.
 
 
 ```HTML
@@ -58,13 +58,13 @@ A continuación se encuentra el código mínimo necesario para producir un sesgo
 
 
 
-El elemento **skew** es una extensión Microsoft Office a VML.
+El **elemento Skew** es una extensión Microsoft Office a VML.
 
 **Ejemplos**
 
--   [Ejemplo de sesgo simple](/previous-versions/bb229482(v=vs.85))
--   [Ejemplo de sesgo dinámico](https://samples.msdn.microsoft.com/workshop/samples/vml/shape/skew/x_skew.md)
+-   [Ejemplo de asimetría simple](/previous-versions/bb229482(v=vs.85))
+-   [Ejemplo de asimetría dinámica](https://samples.msdn.microsoft.com/workshop/samples/vml/shape/skew/x_skew.md)
 
- 
+ 
 
- 
+ 

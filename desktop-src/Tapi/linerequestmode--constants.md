@@ -1,28 +1,28 @@
 ---
-description: Las constantes de marcador de bits LINEREQUESTMODE describen diferentes tipos de solicitudes de telefonía que se pueden realizar desde una aplicación a otra.
+description: Las constantes de marca de bits LINEREQUESTMODE describen diferentes tipos de solicitudes de telefonía que se pueden realizar de una aplicación a otra.
 ms.assetid: 23321700-64d3-45e3-929a-8f5df64dc4be
-title: Constantes de LINEREQUESTMODE_ (TAPI. h)
+title: LINEREQUESTMODE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52fb227c192a6e65577e8cbcc757dec4427c2249
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 20bb6d9322c84010eafecd8eb4686cb4017eee9945223fd83dfb6e4ba50ea333
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073035"
 ---
-# <a name="linerequestmode_-constants"></a>Constantes de LINEREQUESTMODE \_
+# <a name="linerequestmode_-constants"></a>Constantes \_ LINEREQUESTMODE
 
-Las constantes de marcador de bits **LINEREQUESTMODE** describen diferentes tipos de solicitudes de telefonía que se pueden realizar desde una aplicación a otra.
+Las constantes de marca de bits **LINEREQUESTMODE** describen diferentes tipos de solicitudes de telefonía que se pueden realizar de una aplicación a otra.
 
 <dl> <dt>
 
-<span id="LINEREQUESTMODE_DROP"></span><span id="linerequestmode_drop"></span>**\_quitar LINEREQUESTMODE**
+<span id="LINEREQUESTMODE_DROP"></span><span id="linerequestmode_drop"></span>**LINEREQUESTMODE \_ DROP**
 </dt> <dd> <dl> <dt>
 
 
 
-Una solicitud [tapiRequestDrop](/windows/desktop/api/Tapi/nf-tapi-tapirequestdrop) .
+Una [solicitud tapiRequestDrop.](/windows/desktop/api/Tapi/nf-tapi-tapirequestdrop)
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ Una solicitud [tapiRequestDrop](/windows/desktop/api/Tapi/nf-tapi-tapirequestdro
 
 
 
-Una solicitud [tapiRequestMakeCall](/windows/desktop/api/Tapi/nf-tapi-tapirequestmakecall) .
+Una [solicitud tapiRequestMakeCall.](/windows/desktop/api/Tapi/nf-tapi-tapirequestmakecall)
 
 
 </dt> </dl> </dd> <dt>
@@ -47,18 +47,18 @@ Esta constante está obsoleta. No debe usarse.
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Sin extensibilidad. Todos los 32 bits están reservados.
+Sin extensibilidad. Los 32 bits están reservados.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

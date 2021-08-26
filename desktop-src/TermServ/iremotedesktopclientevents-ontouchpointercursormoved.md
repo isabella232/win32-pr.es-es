@@ -1,12 +1,12 @@
 ---
-title: IRemoteDesktopClientEvents OnTouchPointerCursorMoved, método
-description: Se llama cuando se ha cambiado el cursor del puntero táctil y la propiedad EventsEnabled está establecida en true.
+title: Método IRemoteDesktopClientEvents OnTouchPointerCursorMoved
+description: Se llama cuando se ha movido el cursor del puntero táctil y la propiedad EventsEnabled se establece en true.
 ms.assetid: 55A6AC99-0723-4215-9428-D2DAAC77A74A
 ms.tgt_platform: multiple
 keywords:
 - Método OnTouchPointerCursorMoved Servicios de Escritorio remoto
-- Método OnTouchPointerCursorMoved Servicios de Escritorio remoto, interfaz IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto, método OnTouchPointerCursorMoved
+- Método OnTouchPointerCursorMoved Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto método , OnTouchPointerCursorMoved
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae347e19942bf0c82112e5cec6a3fb4fe131349f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4a7c6d542031ab375d7e960b82bb36ba52ea6c9ecab58764c13595871687a731
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072305"
 ---
-# <a name="iremotedesktopclienteventsontouchpointercursormoved-method"></a>IRemoteDesktopClientEvents:: OnTouchPointerCursorMoved (método)
+# <a name="iremotedesktopclienteventsontouchpointercursormoved-method"></a>IRemoteDesktopClientEvents::OnTouchPointerCursorMoved (Método)
 
-Se llama cuando se ha cambiado el cursor del puntero táctil y la propiedad [**EventsEnabled**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclienttouchpointer-get_eventsenabled) está establecida en true.
+Se llama cuando se ha movido el cursor del puntero táctil y la [**propiedad EventsEnabled**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclienttouchpointer-get_eventsenabled) se establece en true.
 
 ## <a name="syntax"></a>Sintaxis
 

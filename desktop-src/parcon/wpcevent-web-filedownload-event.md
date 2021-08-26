@@ -1,19 +1,19 @@
 ---
-description: Evento por usuario generado al intentar descargar archivos de la Web. Este evento lo generan las aplicaciones solicitadas por el control parental.
+description: Evento por usuario generado al intentar descargar archivos desde la web. Este evento lo generan las aplicaciones que solicitan los controles parentales.
 ms.assetid: 2291fc75-55e5-417e-b393-748750a5b3d6
-title: Evento WPCEVENT_WEB_FILEDOWNLOAD (Wpcevent. h)
+title: WPCEVENT_WEB_FILEDOWNLOAD evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66bb04a53589a1cae41e2ba7d7a9c00835452e87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7430b87e7c227fe351e3182f344c60ece0b5a3138b94fe19fee950f96ec24b6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112715"
 ---
-# <a name="wpcevent_web_filedownload-event"></a>\_Evento WPCEVENT Web \_ FILEDOWNLOAD
+# <a name="wpcevent_web_filedownload-event"></a>Evento WPCEVENT \_ WEB \_ FILEDOWNLOAD
 
-Evento por usuario generado al intentar descargar archivos de la Web. Este evento lo generan las aplicaciones solicitadas por el control parental.
+Evento por usuario generado al intentar descargar archivos desde la web. Este evento lo generan las aplicaciones que solicitan los controles parentales.
 
 
 ```C++
@@ -36,21 +36,21 @@ Origen de la dirección URL que está intentando descargar.
 *AppName* 
 </dt> <dd>
 
-El nombre de la aplicación que está generando el evento.
+Nombre de la aplicación que genera el evento.
 
 </dd> <dt>
 
 *Versión* 
 </dt> <dd>
 
-Versión de la aplicación que está generando el evento.
+Versión de la aplicación que genera el evento.
 
 </dd> <dt>
 
 *Bloqueado* 
 </dt> <dd>
 
-Un valor de la enumeración [**WPCFLAG \_ ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados y qué controles hay en su lugar.
+Valor de la enumeración [**\_ WPCFLAG ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados para su uso y qué controles están en su lugar.
 
 </dd> <dt>
 
@@ -67,9 +67,9 @@ Ruta de acceso de destino del archivo.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Encabezado<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -77,10 +77,10 @@ Ruta de acceso de destino del archivo.
 
 <dl> <dt>
 
-[Uso de las API de registro para controles parentales](using-logging-apis-for-parental-controls.md)
+[Uso de las API de registro para los controles parentales](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**WPC \_ args \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

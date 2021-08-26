@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnRemoteDesktopSizeChange, método
-description: Se llama para indicar que el tamaño del control de cliente en el escritorio remoto ha cambiado en respuesta a una operación de control de cliente.
+title: Método IMsTscAxEvents OnRemoteDesktopSizeChange
+description: Se llama para indicar que el tamaño del control de cliente en el Escritorio remoto ha cambiado en respuesta a una operación de control de cliente.
 ms.assetid: 6d27aec0-7249-4aac-8755-186815b50be7
 ms.tgt_platform: multiple
 keywords:
 - Método OnRemoteDesktopSizeChange Servicios de Escritorio remoto
-- Método OnRemoteDesktopSizeChange Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnRemoteDesktopSizeChange
+- Método OnRemoteDesktopSizeChange Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto , método OnRemoteDesktopSizeChange
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6aee74049ea726b4e2686a028359afe01d2d7632
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 316b70c3405c13dd50c773d36c20f036c9e99aebeb3e5dedae692c2f9ad772fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125095"
 ---
-# <a name="imstscaxeventsonremotedesktopsizechange-method"></a>IMsTscAxEvents:: OnRemoteDesktopSizeChange (método)
+# <a name="imstscaxeventsonremotedesktopsizechange-method"></a>Método IMsTscAxEvents::OnRemoteDesktopSizeChange
 
-Se llama para indicar que el tamaño del control de cliente en el escritorio remoto ha cambiado en respuesta a una operación de control de cliente.
+Se llama para indicar que el tamaño del control de cliente en el Escritorio remoto ha cambiado en respuesta a una operación de control de cliente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,17 +44,17 @@ void OnRemoteDesktopSizeChange(
 
 <dl> <dt>
 
-*ancho* \[ de de\]
+*width* \[ En\]
 </dt> <dd>
 
-Ancho, en píxeles, del escritorio remoto cuyo tamaño se ha cambiado.
+Ancho, en píxeles, del escritorio remoto con el tamaño cambiado.
 
 </dd> <dt>
 
-*alto* \[ de de\]
+*alto* \[ En\]
 </dt> <dd>
 
-Alto, en píxeles, del escritorio remoto cuyo tamaño se ha cambiado.
+Alto, en píxeles, del escritorio remoto con el tamaño cambiado.
 
 </dd> </dl>
 
@@ -62,11 +62,11 @@ Alto, en píxeles, del escritorio remoto cuyo tamaño se ha cambiado.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento permite al contenedor determinar si debe cambiar su tamaño en respuesta a una operación de control de cliente, lo que podría dar lugar a un mayor tamaño de escritorio visible. Tenga en cuenta que el control ajustará automáticamente las barras de desplazamiento para el nuevo tamaño de la sesión.
+Este evento permite al contenedor determinar si debe cambiar su tamaño en respuesta a una operación de control de cliente, lo que podría dar lugar a un mayor tamaño de escritorio visualizable. Tenga en cuenta que el control ajustará automáticamente las barras de desplazamiento para el nuevo tamaño de sesión.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

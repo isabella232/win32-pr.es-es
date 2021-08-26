@@ -1,30 +1,30 @@
 ---
-title: Propiedad DisconnectedText de IMsTscAx
-description: Especifica el texto que aparece centrado en el control antes de que se termine una conexión.
+title: Propiedad IMsTscAx DisconnectedText
+description: Especifica el texto que aparece centrado en el control antes de finalizar una conexión.
 ms.assetid: ec7efe7a-8fb9-4c45-8e16-78951365de13
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad DisconnectedText
-- Propiedad DisconnectedText Servicios de Escritorio remoto, interfaz IMsTscAx
-- Servicios de Escritorio remoto de la interfaz IMsTscAx, propiedad DisconnectedText
-- Propiedad DisconnectedText Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient, propiedad DisconnectedText
-- Propiedad DisconnectedText Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient2, propiedad DisconnectedText
-- Propiedad DisconnectedText Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient3, propiedad DisconnectedText
-- Propiedad DisconnectedText Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient4, propiedad DisconnectedText
-- Propiedad DisconnectedText Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient5, propiedad DisconnectedText
-- Propiedad DisconnectedText Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient6, propiedad DisconnectedText
-- Propiedad DisconnectedText Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad DisconnectedText
-- Propiedad DisconnectedText Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad DisconnectedText
-- Propiedad DisconnectedText Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad DisconnectedText
+- Propiedad DisconnectedText Servicios de Escritorio remoto
+- Propiedad DisconnectedText Servicios de Escritorio remoto , interfaz IMsTscAx
+- Interfaz IMsTscAx Servicios de Escritorio remoto , propiedad DisconnectedText
+- Propiedad DisconnectedText Servicios de Escritorio remoto , interfaz IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad DisconnectedText
+- Propiedad DisconnectedText Servicios de Escritorio remoto , interfaz IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad DisconnectedText
+- Propiedad DisconnectedText Servicios de Escritorio remoto , interfaz IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad DisconnectedText
+- Propiedad DisconnectedText Servicios de Escritorio remoto , interfaz IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad DisconnectedText
+- Propiedad DisconnectedText Servicios de Escritorio remoto , interfaz IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad DisconnectedText
+- Propiedad DisconnectedText Servicios de Escritorio remoto , interfaz IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad DisconnectedText
+- Propiedad DisconnectedText Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad DisconnectedText
+- Propiedad DisconnectedText Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad DisconnectedText
+- Propiedad DisconnectedText Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad DisconnectedText
 topic_type:
 - apiref
 api_name:
@@ -64,20 +64,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4768e639cbfb1543e06c03f2d9e6566d0adb147e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0bcee521e5956242380c48fb07020db32eafeadb88f919ec6a20bdf2a10c4a23
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125455"
 ---
-# <a name="imstscaxdisconnectedtext-property"></a>IMsTscAx::D propiedad isconnectedText
+# <a name="imstscaxdisconnectedtext-property"></a>Propiedad IMsTscAx::D isconnectedText
 
-Especifica el texto que aparece centrado en el control antes de que se termine una conexión.
+Especifica el texto que aparece centrado en el control antes de finalizar una conexión.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -94,21 +94,21 @@ HRESULT get_DisconnectedText(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Nuevo texto que se va a mostrar.
+Nuevo texto para mostrar.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El establecimiento de la propiedad **DisconnectedText** es opcional. Si no se especifica, el control aparece en blanco antes de que se establezca una conexión.
+Establecer la **propiedad DisconnectedText** es opcional. Si no se especifica, el control aparece en blanco antes de establecer una conexión.
 
-Esta propiedad solo se puede establecer si el control no está en estado conectado. El método devuelve **E \_ producirá un error** si se llama después de que se haya conectado el control. Puede comprobar si el control está conectado respondiendo a los eventos de conexión en [**IMsTscAxEvents**](imstscaxevents-interface.md) o examinando la propiedad [**Connected**](imstscax-connected.md) .
+Esta propiedad solo se puede establecer si el control no está en el estado conectado. El método devuelve **E \_ FAIL** si se llama después de conectar el control. Puede comprobar si el control está conectado respondiendo a eventos de conexión en [**IMsTscAxEvents**](imstscaxevents-interface.md) o examinando la [**propiedad Connected.**](imstscax-connected.md)
 
-Este método asigna la memoria necesaria para el búfer señalado por el parámetro *pDisconnectedText* . La llamada a aplicaciones de C/C++ debe liberar la memoria con una llamada a la función [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Esto no es necesario para los clientes de scripting y Visual Basic.
+Este método asigna la memoria necesaria para el búfer al que apunta el *parámetro pDisconnectedText.* La llamada a aplicaciones de C/C++ debe liberar la memoria con una llamada a la [**función SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Esto no es necesario para los clientes Visual Basic y de scripting.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -120,7 +120,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx se define como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IID IMsTscAx se define como \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Especifica si el DSP de la captura de voz aplica el límite de ganancia de micrófono.
+description: Especifica si el DSP de captura de voz aplica el límite de ganancia de micrófono.
 ms.assetid: b9f0bcc7-57ab-4339-bf1d-2b12c8744f01
-title: Propiedad MFPKEY_WMAAECMA_MIC_GAIN_BOUNDER (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_MIC_GAIN_BOUNDER propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c1b09f2095f5accb44e4e0edaff2b8c94941d3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7d00e906ec953e2fd00d9c288336c322c2d0dc07ea1c2d74a014ab78ae21acd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113155"
 ---
-# <a name="mfpkey_wmaaecma_mic_gain_bounder-property"></a>\_Propiedad del \_ \_ enlazador de ganancia de WMAAECMA \_ de MFPKEY
+# <a name="mfpkey_wmaaecma_mic_gain_bounder-property"></a>MFPKEY \_ WMAAECMA \_ MIC \_ GAIN \_ BOUNDER Property
 
-Especifica si el DSP de la captura de voz aplica el límite de ganancia de micrófono.
+Especifica si el DSP de captura de voz aplica el límite de ganancia de micrófono.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -21,36 +21,36 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 ## <a name="data-type"></a>Tipo de datos
 
-VT \_ bool
+VT \_ BOOL
 
 ## <a name="default-value"></a>Valor predeterminado
 
-VARIANTE \_ true
+VARIANT \_ TRUE
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [DSP de captura de voz](voicecapturedmo.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El límite de ganancia de micrófono garantiza que el micrófono tenga el nivel de ganancia correcto. Si la ganancia es demasiado alta, la señal capturada podría estar saturada y se recortará. El recorte es un efecto no lineal, lo que hará que se produzca un error en el algoritmo de cancelación del eco acústico (AEC). Si la ganancia es demasiado baja, la relación señal-ruido es baja, lo que también puede provocar un error en el algoritmo AEC o no funcionar correctamente.
+El límite de la ganancia del micrófono garantiza que el micrófono tenga el nivel de ganancia correcto. Si la ganancia es demasiado alta, la señal capturada podría estar saturada y se recortará. El recorte es un efecto no lineal, lo que provocará un error en el algoritmo de cancelación de eco acústico (AEC). Si la ganancia es demasiado baja, la relación señal-ruido es baja, lo que también puede hacer que el algoritmo AEC no se realice correctamente o no.
 
-Esta propiedad puede tener los valores siguientes.
+Esta propiedad puede tener los siguientes valores.
 
 
 
 | Value          | Descripción                       |
 |----------------|-----------------------------------|
-| VARIANTE \_ true  | Habilitar el límite de ganancia de micrófono.  |
-| VARIANTE \_ false | Deshabilite el límite de ganancia de micrófono. |
+| VARIANT \_ TRUE  | Habilite el límite de ganancia de micrófono.  |
+| VARIANT \_ FALSE | Deshabilite el límite de ganancia de micrófono. |
 
 
 
  
 
-El valor predeterminado de esta propiedad es VARIANT \_ true (Enabled).
+El valor predeterminado de esta propiedad es VARIANT \_ TRUE (habilitado).
 
-El límite de ganancia de micrófono solo se aplica cuando el DSP funciona en modo de origen. En el modo de filtro, la aplicación debe asegurarse de que el micrófono tiene el nivel de ganancia correcto.
+El límite de la ganancia de micrófono solo se aplica cuando el DSP funciona en modo de origen. En el modo de filtro, la aplicación debe asegurarse de que el micrófono tiene el nivel de ganancia correcto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,9 +58,9 @@ El límite de ganancia de micrófono solo se aplica cuando el DSP funciona en mo
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ El límite de ganancia de micrófono solo se aplica cuando el DSP funciona en mo
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
 [DSP de captura de voz](voicecapturedmo.md)

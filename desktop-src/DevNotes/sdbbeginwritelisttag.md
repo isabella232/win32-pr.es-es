@@ -1,7 +1,7 @@
 ---
 description: Crea una nueva etiqueta de lista para las operaciones de escritura.
 ms.assetid: 3a52e2f2-9648-45fb-b487-ccfe5ed24f7f
-title: SdbBeginWriteListTag función)
+title: Función SdbBeginWriteListTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: a9dcf6bdd3798b18e08b796eb268f93dc4ec6bbc
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 448b57e73bec0115d4c2ae87be96630cad6542833da66a2de8e02037c264de83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058585"
 ---
-# <a name="sdbbeginwritelisttag-function"></a>SdbBeginWriteListTag función)
+# <a name="sdbbeginwritelisttag-function"></a>Función SdbBeginWriteListTag
 
 Crea una nueva etiqueta de lista para las operaciones de escritura.
 
@@ -40,23 +40,23 @@ TAGID WINAPI SdbBeginWriteListTag(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tTag* \[ de\]
+*tTag* \[ En\]
 </dt> <dd>
 
-ETIQUETA para la nueva entrada. Este valor debe ser de tipo **tag \_ Type \_ List**.
+Etiqueta de la nueva entrada. Este valor debe ser de tipo **TAG \_ TYPE \_ LIST.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve el valor de [**TagID**](tagid.md) de la nueva lista en Success o **TagID \_ null** en caso de error.
+La función devuelve el [**TAGID de**](tagid.md) la nueva lista si se ejecuta correctamente o **TAGID \_ NULL** en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ La función devuelve el valor de [**TagID**](tagid.md) de la nueva lista en Succ
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 
@@ -83,10 +83,10 @@ La función devuelve el valor de [**TagID**](tagid.md) de la nueva lista en Succ
 [**SdbEndWriteListTag**](sdbendwritelisttag.md)
 </dt> <dt>
 
-[**ETIQUETA**](tag.md)
+[**etiqueta**](tag.md)
 </dt> <dt>
 
-[Tipos de etiquetas](tag-types.md)
+[Tipos TAG](tag-types.md)
 </dt> <dt>
 
 [**TAGID**](tagid.md)

@@ -1,7 +1,7 @@
 ---
-description: El método GetIPortableDeviceValuesValue recupera un valor de IPortableDeviceValues (tipo VT \_ desconocido) especificado por una clave.
+description: El método GetIPortableDeviceValuesValue recupera un valor IPortableDeviceValues (tipo VT \_ UNKNOWN) especificado por una clave.
 ms.assetid: bf62c6a9-560b-4667-94d0-2dea6657eed1
-title: 'IPortableDeviceValues:: GetIPortableDeviceValuesValue (método) (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::GetIPortableDeviceValuesValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 9583ea157c1e3395fd9814b1a2e78af3f1985b9c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aeec29bf3d9cf18bcf54c885d46d159c21c661a1e886903110952cd3a23c540e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055165"
 ---
-# <a name="iportabledevicevaluesgetiportabledevicevaluesvalue-method"></a>IPortableDeviceValues:: GetIPortableDeviceValuesValue (método)
+# <a name="iportabledevicevaluesgetiportabledevicevaluesvalue-method"></a>IPortableDeviceValues::GetIPortableDeviceValuesValue (método)
 
-El método **GetIPortableDeviceValuesValue** recupera un valor de **IPORTABLEDEVICEVALUES** (tipo VT \_ desconocido) especificado por una clave.
+El **método GetIPortableDeviceValuesValue** recupera un valor **IPortableDeviceValues** (tipo VT \_ UNKNOWN) especificado por una clave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,31 +41,31 @@ HRESULT GetIPortableDeviceValuesValue(
 
 <dl> <dt>
 
-*clave* \[ de de\]
+*key* \[ En\]
 </dt> <dd>
 
-Clave **REFPROPERTYKEY** que especifica el elemento que se va a recuperar.
+Clave **REFPROPERTYKEY** que especifica el elemento que se recuperará.
 
 </dd> <dt>
 
-*ppValue* \[ enuncia\]
+*ppValue* \[ out\]
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero a la interfaz [**IPortableDeviceValues**](iportabledevicevalues.md) recuperada. El autor de la llamada es responsable de llamar a **Release** en la interfaz recuperada.
+Dirección de una variable que recibe un puntero a la interfaz [**IPortableDeviceValues**](iportabledevicevalues.md) recuperada. El autor de la llamada es responsable de **llamar a Release** en la interfaz recuperada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                                                            | Descripción                                                                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                                   | El método se ha llevado a cabo de forma correcta.<br/>                                                          |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La propiedad especificada por *key* no es una interfaz **IPortableDeviceValues** .<br/> |
-| <dl> <dt>**HRESULT \_ de \_ Win32 (error \_ no \_ encontrado)**</dt> </dl> | La propiedad especificada por la *clave* no está en la colección.<br/>                      |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                   | El método se ha llevado a cabo de forma correcta.<br/>                                                          |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La propiedad especificada por *key no* es una **interfaz IPortableDeviceValues.**<br/> |
+| <dl> <dt>**HRESULT \_ DE \_ WIN32(ERROR \_ NO \_ ENCONTRADO)**</dt> </dl> | La propiedad especificada por *key no* está en la colección.<br/>                      |
 
 
 
@@ -73,7 +73,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo de cómo usar este método, vea [recuperar eventos de servicio admitidos](retrieving-supported-events.md).
+Para obtener un ejemplo de cómo usar este método, vea [Recuperar eventos de servicio admitidos.](retrieving-supported-events.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Para obtener un ejemplo de cómo usar este método, vea [recuperar eventos de se
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -90,16 +90,16 @@ Para obtener un ejemplo de cómo usar este método, vea [recuperar eventos de se
 
 <dl> <dt>
 
-[**Interfaz IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceValues::SetIPortableDeviceValuesValue**](iportabledevicevalues-setiportabledevicevaluesvalue.md)
+[**IPortableDeviceValues::SetIPortableDeviceValuesValues**](iportabledevicevalues-setiportabledevicevaluesvalue.md)
 </dt> <dt>
 
 [Recuperación de eventos de servicio admitidos](retrieving-supported-events.md)
 </dt> <dt>
 
-[Recuperación de las capacidades de representación admitidas por un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)
+[Recuperar las funcionalidades de representación admitidas por un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)
 </dt> </dl>
 
  

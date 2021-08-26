@@ -9,17 +9,17 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 528d510cd963a1acfa55b9fa7eb89d515919006f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f10341946039c02b6b782be041e841cd41609ba786f97eeb15a82b7d7c4c6f30
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111835"
 ---
 # <a name="dialogs"></a>Cuadros de diálogo
 
--   [Cuadro de diálogo de elementos comunes](common-file-dialog.md)
--   [Obtener el identificador de una carpeta](folder-id.md)
+-   [Cuadro de diálogo Elemento común](common-file-dialog.md)
+-   [Obtención del identificador de una carpeta](folder-id.md)
 
  
 

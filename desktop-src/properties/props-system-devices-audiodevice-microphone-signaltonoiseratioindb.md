@@ -1,19 +1,19 @@
 ---
-description: Señale a la información de relación de ruido en la base de datos para un dispositivo de micrófono.
+description: Información de la relación entre señal y ruido en la base de datos para un dispositivo de micrófono.
 ms.assetid: 337e9785-fa38-460d-9ff2-e834901b1986
-title: System. Devices. AudioDevice. Microphone. SignalToNoiseRatioInDb
+title: System.Devices.AudioDevice.Microphone.SignalToNoiseRatioInDb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a8af935aae40facb2ff5b5033405deb59633cff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53c107be38c7fb81e6752a261dfd378f264b1301b1e6c2e9cf0aa59a304cb698
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091335"
 ---
-# <a name="systemdevicesaudiodevicemicrophonesignaltonoiseratioindb"></a>System. Devices. AudioDevice. Microphone. SignalToNoiseRatioInDb
+# <a name="systemdevicesaudiodevicemicrophonesignaltonoiseratioindb"></a>System.Devices.AudioDevice.Microphone.SignalToNoiseRatioInDb
 
-Señale a la información de relación de ruido en la base de datos para un dispositivo de micrófono.
+Información de la relación entre señal y ruido en la base de datos para un dispositivo de micrófono.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607"></a>Windows 10, versión 1703, Windows 10, versión 1607
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: El método GetEventData asigna espacio para las estructuras NMEVENTDATA y NMCOLUMNINFO.
 ms.assetid: b24a2a30-4543-4311-87ec-66872463aed7
-title: 'IMonitorEventer:: GetEventData (método) (Netmon. h)'
+title: Método IMonitorEventer::GetEventData (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Netmon.h
-ms.openlocfilehash: be1654c38f51fa62909e10c12900c087bf0842fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a089e57ac5f66187f97dfa6ae7533aeda620632bdbf35c7b5bf3a34d4654b0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037375"
 ---
-# <a name="imonitoreventergeteventdata-method"></a>IMonitorEventer:: GetEventData (método)
+# <a name="imonitoreventergeteventdata-method"></a>IMonitorEventer::GetEventData (método)
 
-El método **GetEventData** asigna espacio para las estructuras [NMEVENTDATA](nmeventdata.md) y [NMCOLUMNINFO](nmcolumninfo.md) .
+El **método GetEventData** asigna espacio para las estructuras [NMEVENTDATA](nmeventdata.md) y [NMCOLUMNINFO.](nmcolumninfo.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,29 +40,29 @@ HRESULT GetEventData(
 
 <dl> <dt>
 
-*bNumColumns* \[ de\]
+*bNumColumns* \[ En\]
 </dt> <dd>
 
-Número de estructuras **NMCOLUMNINFO** necesarias.
+Número de **estructuras NMCOLUMNINFO** necesarias.
 
 </dd> <dt>
 
-*ppNMEventData* \[ enuncia\]
+*ppNMEventData* \[ out\]
 </dt> <dd>
 
-Dirección de la estructura **NMEVENTDATA** que se devuelve.
+Dirección de la **estructura NMEVENTDATA** que se devuelve.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK.
+Si el método es correcto, el valor devuelto es S \_ OK.
 
-Si el método no se realiza correctamente, el valor devuelto es \_ NMERR \_ de \_ memoria insuficiente.
+Si el método no es correcto, el valor devuelto es NMERR \_ OUT \_ OF \_ MEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los monitores llaman a este método para asignar memoria para los datos de evento y las estructuras de información de columnas. Para liberar memoria asignada para una estructura **NMEVENTDATA** , vea [IMonitorEventer:: FreeEventData](imonitoreventer-freeeventdata.md).
+Los monitores llaman a este método para asignar memoria para las estructuras de información de columna y datos de eventos. Para liberar memoria asignada para una **estructura NMEVENTDATA,** vea [IMonitorEventer::FreeEventData](imonitoreventer-freeeventdata.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Los monitores llaman a este método para asignar memoria para los datos de event
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

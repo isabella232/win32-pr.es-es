@@ -1,7 +1,7 @@
 ---
-description: La propiedad sources enumera todos los orígenes de la instancia patch. Esta propiedad llama a MsiSourceListEnumSources y devuelve una matriz de cadenas y acepta el tipo de origen como argumento.
+description: La propiedad Sources enumera todos los orígenes de la instancia de revisión. Esta propiedad llama a MsiSourceListEnumSources y devuelve una matriz de cadenas, y acepta el tipo de origen como argumento.
 ms.assetid: 4a052518-4d76-4a95-be9e-7acae36db626
-title: Patch. Sources (propiedad)
+title: Patch.Sources, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 18b9e6ab867d68908bc8dd7e7f87f942f8cd015c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a2f190c7d8ae42e43ac934a043dfb1a98a5e15e142415736406ffbd7f3cbc4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042405"
 ---
-# <a name="patchsources-property"></a>Patch. Sources (propiedad)
+# <a name="patchsources-property"></a>Patch.Sources, propiedad
 
-La propiedad **sources** enumera todos los orígenes de la instancia patch. Esta propiedad llama a [**MsiSourceListEnumSources**](/windows/desktop/api/Msi/nf-msi-msisourcelistenumsourcesa) y devuelve una matriz de cadenas y acepta el tipo de origen como argumento.
+La **propiedad Sources** enumera todos los orígenes de la instancia de revisión. Esta propiedad llama [**a MsiSourceListEnumSources**](/windows/desktop/api/Msi/nf-msi-msisourcelistenumsourcesa) y devuelve una matriz de cadenas, y acepta el tipo de origen como argumento.
 
 Esta propiedad es de solo lectura.
 
@@ -37,7 +37,7 @@ propVal = Patch.Sources
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Tipo de origen que se va a enumerar. El valor puede ser *msiInstallSourceTypeNetwork* (1) o *msiInstallSourceTypeURL* (2).
+Tipo de origen que se enumerará. El valor puede ser *msiInstallSourceTypeNetwork* (1) o *msiInstallSourceTypeURL* (2).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Tipo de origen que se va a enumerar. El valor puede ser *msiInstallSourceTypeNet
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer 3,0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID \_ IPatch se define como 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
+| IID<br/>     | IID IPatch se define como \_ 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
 
 
 
@@ -55,13 +55,13 @@ Tipo de origen que se va a enumerar. El valor puede ser *msiInstallSourceTypeNet
 
 <dl> <dt>
 
-[**Distribución**](patch-object.md)
+[**Parche**](patch-object.md)
 </dt> <dt>
 
 [**MsiSourceListEnumSources**](/windows/desktop/api/Msi/nf-msi-msisourcelistenumsourcesa)
 </dt> <dt>
 
-[No se admite en Windows Installer 2,0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
+[No se admite en Windows Installer 2.0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de StructDefinitionType
-description: Define una estructura que incluye uno o más elementos de datos que desea incluir con el evento. | Tipo complejo de StructDefinitionType
+title: Tipo complejo StructDefinitionType
+description: Define una estructura que incluye uno o varios elementos de datos que desea incluir con el evento . | Tipo complejo StructDefinitionType
 ms.assetid: eb6b3682-1035-472b-8027-583d43c31748
 keywords:
-- StructDefinitionType tipo complejo EventLog
+- Tipo complejo StructDefinitionType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 01e739077d38dec94c0a407e5779bec90369ffb9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 035b8abe5440ffb80b902e1f4b1564b2fb80b77ee34b20f4f068d298b251478a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124255"
 ---
-# <a name="structdefinitiontype-complex-type"></a>Tipo complejo de StructDefinitionType
+# <a name="structdefinitiontype-complex-type"></a>Tipo complejo StructDefinitionType
 
-Define una estructura que incluye uno o más elementos de datos que desea incluir con el evento.
+Define una estructura que incluye uno o varios elementos de datos que desea incluir con el evento .
 
 ``` syntax
 <xs:complexType name="StructDefinitionType"
@@ -59,7 +59,7 @@ Define una estructura que incluye uno o más elementos de datos que desea inclui
 
 | Elemento                                                               | Tipo                                                                             | Descripción                                                               |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [**datos**](eventmanifestschema-data-structdefinitiontype-element.md) | [**DataDefinitionType**](eventmanifestschema-datadefinitiontype-complextype.md) | Define un elemento de datos que desea incluir en la estructura.<br/> |
+| [**datos**](eventmanifestschema-data-structdefinitiontype-element.md) | [**DataDefinitionType**](eventmanifestschema-datadefinitiontype-complextype.md) | Define un elemento de datos que desea incluir en la estructura .<br/> |
 
 
 
@@ -70,16 +70,16 @@ Define una estructura que incluye uno o más elementos de datos que desea inclui
 | Nombre   | Tipo                                                            | Descripción                                                                                                                                                                                                                                                                               |
 |--------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | count  | [**CountType**](eventmanifestschema-counttype-simpletype.md)   | Número de elementos de una matriz de estructuras. Este atributo indica que la estructura está definiendo una matriz de estructuras. Puede especificar el recuento real o el nombre de un elemento de datos fuera de la estructura que contiene el recuento. <br/>                               |
-| length | [**LengthType**](eventmanifestschema-lengthtype-simpletype.md) | No disponible.<br/> **Windows Server 2008 y Windows Vista:** Longitud de esta estructura, en bytes. No está disponible a partir de Windows 7.<br/>                                                                                                                            |
-| name   | string                                                          | Nombre de la estructura. Puede usar el nombre para hacer referencia al elemento de datos en el fragmento XML si especifica una sección [**UserData**](eventmanifestschema-userdata-templateitemtype-element.md) en la plantilla.<br/> **Windows Vista:** Este atributo es opcional.<br/> |
+| length | [**LengthType**](eventmanifestschema-lengthtype-simpletype.md) | No disponible.<br/> **Windows Server 2008 y Windows Vista:** Longitud de esta estructura, en bytes. No disponible a partir de Windows 7.<br/>                                                                                                                            |
+| name   | string                                                          | Nombre de la estructura. Puede usar el nombre para hacer referencia al elemento de datos en el fragmento XML si especifica una [**sección UserData**](eventmanifestschema-userdata-templateitemtype-element.md) en la plantilla.<br/> **Windows Vista:** Este atributo es opcional.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los proveedores escriben la estructura como un BLOB y no como miembros individuales de la estructura. Si la estructura de C que está escribiendo contiene punteros (por ejemplo, un puntero de tipo LPWSTR), los datos del evento contendrán el valor del puntero, no los datos desreferenciados.
+Los proveedores escriben la estructura como un blob y no como miembros individuales de la estructura. Si la estructura de C que está escribiendo contiene punteros (por ejemplo, un puntero de tipo LPWSTR), los datos del evento contendrán el valor del puntero, no los datos desreferenciados.
 
-No debe usar estructuras, sino que debe definir elementos de datos para cada miembro y escribirlos por separado. Si decide utilizar la estructura, la estructura solo debe contener tipos enteros y debe asegurarse de que los miembros de la estructura se alineen con un límite de 8 bytes. Si no lo hace, es probable que reciba errores de alineación cuando intente obtener acceso a los datos. Considere la posibilidad de usar la \# Directiva pragma Pack () para forzar la alineación en un límite de 8 bytes.
+No debe usar estructuras, sino que debe definir elementos de datos para cada miembro y escribirlos por separado. Si decide usar structure, la estructura solo debe contener tipos enteros y debe asegurarse de que los miembros de la estructura se alinean con un límite de 8 bytes. Si no lo hace, es probable que reciba errores de alineación al intentar acceder a los datos. Considere la posibilidad de \# usar la directiva pragma pack() para forzar la alineación en un límite de 8 bytes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ No debe usar estructuras, sino que debe definir elementos de datos para cada mie
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

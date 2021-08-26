@@ -1,30 +1,30 @@
 ---
-title: IMsTscAx SendOnVirtualChannel, método
-description: Envía datos al servidor host de sesión de Escritorio remoto (host de sesión de escritorio remoto) a través de un canal virtual que se creó anteriormente mediante el método CreateVirtualChannels.
+title: Método IMsTscAx SendOnVirtualChannel
+description: Envía datos al servidor Escritorio remoto Session Host (Host de sesión de Escritorio remoto) a través de un canal virtual que se creó anteriormente mediante el método CreateVirtualChannels.
 ms.assetid: 795ef508-bdf7-4897-84b1-931615262293
 ms.tgt_platform: multiple
 keywords:
 - Método SendOnVirtualChannel Servicios de Escritorio remoto
-- Método SendOnVirtualChannel Servicios de Escritorio remoto, interfaz IMsTscAx
-- Interfaz IMsTscAx Servicios de Escritorio remoto, método SendOnVirtualChannel
-- Método SendOnVirtualChannel Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Interfaz IMsRdpClient Servicios de Escritorio remoto, método SendOnVirtualChannel
-- Método SendOnVirtualChannel Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Interfaz IMsRdpClient2 Servicios de Escritorio remoto, método SendOnVirtualChannel
-- Método SendOnVirtualChannel Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Interfaz IMsRdpClient3 Servicios de Escritorio remoto, método SendOnVirtualChannel
-- Método SendOnVirtualChannel Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Interfaz IMsRdpClient4 Servicios de Escritorio remoto, método SendOnVirtualChannel
-- Método SendOnVirtualChannel Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Interfaz IMsRdpClient5 Servicios de Escritorio remoto, método SendOnVirtualChannel
-- Método SendOnVirtualChannel Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Interfaz IMsRdpClient6 Servicios de Escritorio remoto, método SendOnVirtualChannel
-- Método SendOnVirtualChannel Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Interfaz IMsRdpClient7 Servicios de Escritorio remoto, método SendOnVirtualChannel
-- Método SendOnVirtualChannel Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Interfaz IMsRdpClient8 Servicios de Escritorio remoto, método SendOnVirtualChannel
-- Método SendOnVirtualChannel Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto, método SendOnVirtualChannel
+- Método SendOnVirtualChannel Servicios de Escritorio remoto interfaz , IMsTscAx
+- Interfaz IMsTscAx Servicios de Escritorio remoto método , SendOnVirtualChannel
+- Método SendOnVirtualChannel Servicios de Escritorio remoto , interfaz IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto método , SendOnVirtualChannel
+- Método SendOnVirtualChannel Servicios de Escritorio remoto interfaz , IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto método , SendOnVirtualChannel
+- Método SendOnVirtualChannel Servicios de Escritorio remoto interfaz , IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , método SendOnVirtualChannel
+- Método SendOnVirtualChannel Servicios de Escritorio remoto interfaz , IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , método SendOnVirtualChannel
+- Método SendOnVirtualChannel Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , método SendOnVirtualChannel
+- Método SendOnVirtualChannel Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , método SendOnVirtualChannel
+- Método SendOnVirtualChannel Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , método SendOnVirtualChannel
+- Método SendOnVirtualChannel Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , método SendOnVirtualChannel
+- Método SendOnVirtualChannel Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , método SendOnVirtualChannel
 topic_type:
 - apiref
 api_name:
@@ -44,16 +44,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c1371ae17978601a3194f755dd364d9227b8fc28
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 03c5b84ff9cb272d5560f3b6588301a05a3e9a003db1b28f841a77b2e0618b37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125305"
 ---
-# <a name="imstscaxsendonvirtualchannel-method"></a>IMsTscAx:: SendOnVirtualChannel (método)
+# <a name="imstscaxsendonvirtualchannel-method"></a>Método IMsTscAx::SendOnVirtualChannel
 
-Envía datos al servidor host de sesión de Escritorio remoto (host de sesión de escritorio remoto) a través de un canal virtual que se creó anteriormente mediante el método [**CreateVirtualChannels**](imstscax-createvirtualchannels.md) .
+Envía datos al servidor Escritorio remoto Session Host (Host de sesión de Escritorio remoto) a través de un canal virtual que se creó anteriormente mediante el [**método CreateVirtualChannels.**](imstscax-createvirtualchannels.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -71,29 +71,29 @@ HRESULT SendOnVirtualChannel(
 
 <dl> <dt>
 
-*ChanName* \[ de\]
+*SonnombredeDesánda* \[ En\]
 </dt> <dd>
 
-Nombre del canal virtual que se especificó en la llamada a [**CreateVirtualChannels**](imstscax-createvirtualchannels.md).
+Nombre del canal virtual que se especificó en la llamada a [**CreateVirtualChannels.**](imstscax-createvirtualchannels.md)
 
 </dd> <dt>
 
-*ChanData* \[ de\]
+*ChanData* \[ En\]
 </dt> <dd>
 
-Los datos que se van a enviar a través del canal virtual, en forma de **BSTR** . No hay ninguna restricción de que estos datos deban ser cadenas terminadas en NULL.
+Datos que se envían a través del canal virtual, en **formato BSTR.** No hay ninguna restricción de que estos datos deben ser cadenas terminadas en NULL.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Consulte [registro de cliente de canal virtual](virtual-channel-client-registration.md) para obtener información sobre las restricciones de nomenclatura de canal virtual.
+Consulte Registro [de cliente de canal](virtual-channel-client-registration.md) virtual para obtener información sobre las restricciones de nomenclatura de canales virtuales.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

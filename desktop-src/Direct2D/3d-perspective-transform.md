@@ -1,28 +1,28 @@
 ---
 title: Efecto de transformación de perspectiva 3D
-description: Use el efecto transformación de perspectiva 3D para girar la imagen en tres dimensiones, como si se viera desde una distancia.
+description: Use el efecto de transformación de perspectiva 3D para girar la imagen en 3 dimensiones como si se ve desde una distancia.
 ms.assetid: 0E1A940E-2DCA-4772-BB68-7E5EF5CEF833
 keywords:
-- efecto de transformación de perspectiva 3D
+- Efecto de transformación de perspectiva 3d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ed2b1c5131319dd711d2c7802a0bfabceaaa32e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 513d48a38e948f1255afa0cad3972a626c1e5b9039c9285c9c49b4180a5791d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079654"
 ---
 # <a name="3d-perspective-transform-effect"></a>Efecto de transformación de perspectiva 3D
 
-Use el efecto transformación de perspectiva 3D para girar la imagen en tres dimensiones, como si se viera desde una distancia.
+Use el efecto de transformación de perspectiva 3D para girar la imagen en 3 dimensiones como si se ve desde una distancia.
 
-La transformación perspectiva 3D es más cómoda que el efecto transformación 3D, pero solo expone un subconjunto de la funcionalidad. Puede calcular una matriz de transformación 3D completa y aplicar una matriz de transformación más arbitraria a una imagen mediante el efecto [transformación 3D](3d-transform.md) .
+La transformación de perspectiva 3D es más cómoda que el efecto de transformación 3D, pero solo expone un subconjunto de la funcionalidad. Puede calcular una matriz de transformación 3D completa y aplicar una matriz de transformación más arbitraria a una imagen mediante el efecto [de transformación 3D.](3d-transform.md)
 
 El CLSID para este efecto es CLSID \_ D2D13DPerspectiveTransform.
 
 -   [Imagen de ejemplo](#example-image)
--   [Propiedades del efecto](#effect-properties)
+-   [Propiedades de efecto](#effect-properties)
 -   [Modos de interpolación](#interpolation-modes)
 -   [Modos de borde](#border-modes)
 -   [Mapa de bits de salida](#output-bitmap)
@@ -35,7 +35,7 @@ El CLSID para este efecto es CLSID \_ D2D13DPerspectiveTransform.
 
 | Antes                                                               |
 |----------------------------------------------------------------------|
-| ![imagen anterior al efecto.](images/default-before.jpg)           |
+| ![la imagen antes del efecto.](images/default-before.jpg)           |
 | Después                                                                |
 | ![la imagen después del efecto.](images/23-3dperspectivetransform.png) |
 
@@ -60,20 +60,20 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propiedades del efecto
+## <a name="effect-properties"></a>Propiedades de efecto
 
 
 
-| Enumeración de índice y nombre para mostrar                                                              | Descripción                                                                                                                                                                                                                                                                                        |
+| Enumeración de nombre para mostrar e índice                                                              | Descripción                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| InterpolationMode<br/> \_Modo de \_ \_ interpolación de \_ propiedades de D2D1 3DPERSPECTIVETRANSFORM<br/> | El modo de interpolación que el efecto usa en la imagen. Hay 5 modos de escala que abarcan la calidad y la velocidad.<br/> El tipo es D2D1 \_ 3DPERSPECTIVETRANSFORM \_ modo de interpolación \_ .<br/> El valor predeterminado es D2D1 \_ 3DPERSPECTIVETRANSFORM \_ modo de interpolación \_ \_ lineal.<br/>              |
-| BorderMode<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ \_ modo de borde \_ de la Prop<br/>               | El modo que se usa para calcular el borde de la imagen, es decir, es flexible o difícil. Vea [modos de borde](https://www.bing.com/search?q=Border+modes) para obtener más información.<br/> El tipo es D2D1 \_ Border \_ mode.<br/> El valor predeterminado es el \_ modo de borde D2D1 \_ \_ .<br/>                                                              |
-| Profundidad<br/> Profundidad de la D2D1 \_ 3DPERSPECTIVETRANSFORM \_ \_<br/>                           | Distancia entre el *PerspectiveOrigin* y el plano de proyección. El valor especificado en DIP y debe ser mayor que 0.<br/> El tipo es FLOAT.<br/> El valor predeterminado es 1000.0 f.<br/>                                                                                               |
-| PerspectiveOrigin<br/> Origen de la perspectiva de D2D1 \_ 3DPERSPECTIVETRANSFORM \_ \_ \_<br/> | La ubicación X e y del visor en la escena 3D. Esta propiedad es un vector D2D1 se \_ \_ define como: (punto X, punto Y). Las unidades están en DIP.<br/> Establezca el valor Z con la propiedad *Depth* .<br/> El tipo es \_ Vector D2D1 \_ 2F.<br/> El valor predeterminado es {0.0 f, 0.0 f}.<br/> |
-| LocalOffset<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ prop \_ \_ desplazamiento local<br/>             | Traducción que realiza el efecto antes de girar el plano de proyección. Esta propiedad es una D2D1 \_ Vector \_ 3F definida como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ Vector \_ 3F.<br/> El valor predeterminado es {0.0 f, 0.0 f, 0.0 f}.<br/>                                        |
-| GlobalOffset<br/> \_ \_ \_ Desplazamiento global de prop \_ de D2D1 3DPERSPECTIVETRANSFORM<br/>           | Traducción que realiza el efecto después de girar el plano de proyección. Esta propiedad es una D2D1 \_ Vector \_ 3F definida como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ Vector \_ 3F.<br/> El valor predeterminado es {0.0 f, 0.0 f, 0.0 f}.<br/>                                         |
-| RotationOrigin<br/> \_Origen de \_ rotación de propiedades \_ \_ de D2D1 3DPERSPECTIVETRANSFORM<br/>       | Punto central de la rotación que realiza el efecto. Esta propiedad es una D2D1 \_ Vector \_ 3F definida como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ Vector \_ 3F.<br/> El valor predeterminado es {0.0 f, 0.0 f, 0.0 f}.<br/>                                                            |
-| Rotación<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ prop \_ giro<br/>                     | Ángulos de rotación de cada eje. Esta propiedad es una D2D1 \_ Vector \_ 3F definida como: (X, Y, Z). Las unidades están en grados.<br/> El tipo es D2D1 \_ Vector \_ 3F.<br/> El valor predeterminado es {0.0 f, 0.0 f, 0.0 f}.<br/>                                                                         |
+| InterpolationMode<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ INTERPOLATION \_ MODE<br/> | Modo de interpolación que el efecto usa en la imagen. Hay cinco modos de escala que varían en calidad y velocidad.<br/> El tipo es D2D1 \_ 3DPERSPECTIVETRANSFORM \_ INTERPOLATION \_ MODE.<br/> El valor predeterminado es D2D1 \_ 3DPERSPECTIVETRANSFORM \_ INTERPOLATION \_ MODE \_ LINEAR.<br/>              |
+| BorderMode<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ BORDER \_ MODE<br/>               | Modo que se usa para calcular el borde de la imagen, de forma flexible o dura. Consulte [Modos de borde](https://www.bing.com/search?q=Border+modes) para obtener más información.<br/> El tipo es D2D1 \_ BORDER \_ MODE.<br/> El valor predeterminado es D2D1 \_ BORDER \_ MODE \_ SOFT.<br/>                                                              |
+| Profundidad<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ DEPTH<br/>                           | Distancia desde *PerspectiveOrigin* hasta el plano de proyección. Valor especificado en DIP y debe ser mayor que 0.<br/> El tipo es FLOAT.<br/> El valor predeterminado es 1000,0f.<br/>                                                                                               |
+| PerspectiveOrigin<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ PERSPECTIVE \_ ORIGIN<br/> | Ubicación X e Y del visor en la escena 3D. Esta propiedad es un vector D2D1 \_ \_ 2F definido como: (punto X, punto Y). Las unidades están en DIP.<br/> Establezca el valor Z con la *propiedad Depth.*<br/> El tipo es D2D1 \_ VECTOR \_ 2F.<br/> El valor predeterminado es {0.0f, 0.0f}.<br/> |
+| LocalOffset<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ LOCAL \_ OFFSET<br/>             | Una traducción que el efecto realiza antes de girar el plano de proyección. Esta propiedad es un vector D2D1 \_ \_ 3F definido como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                        |
+| GlobalOffset<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ GLOBAL \_ OFFSET<br/>           | Una traducción que el efecto realiza después de girar el plano de proyección. Esta propiedad es un vector D2D1 \_ \_ 3F definido como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                         |
+| RotationOrigin<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ ROTATION \_ ORIGIN<br/>       | Punto central de la rotación que realiza el efecto. Esta propiedad es un vector D2D1 \_ \_ 3F definido como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                                            |
+| Rotación<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ ROTATION<br/>                     | Ángulos de rotación para cada eje. Esta propiedad es un vector D2D1 \_ \_ 3F definido como: (X, Y, Z). Las unidades están en grados.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                                                         |
 
 
 
@@ -85,23 +85,23 @@ m_d2dContext->EndDraw();
 
 | Enumeración                                                              | Descripción                                                                                                                                                |
 |--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D2D1 \_ el \_ modo de interpolación 3DPERSPECTIVETRANSFORM \_ \_ más cercano \_     | Muestrea el punto único más cercano y lo usa. Este modo utiliza menos tiempo de procesamiento, pero genera la imagen de menor calidad.                                 |
-| D2D1 \_ \_ modo de interpolación 3DPERSPECTIVETRANSFORM \_ \_ lineal                | Utiliza un ejemplo de cuatro puntos y una interpolación lineal. Este modo usa más tiempo de procesamiento que el modo vecino más cercano, pero genera una imagen de mayor calidad. |
-| D2D1 \_ \_ modo de interpolación 3DPERSPECTIVETRANSFORM \_ \_ cúbico                 | Usa un kernel cúbico de ejemplo 16 para la interpolación. Este modo utiliza la mayor parte del tiempo de procesamiento, pero genera una imagen de mayor calidad.                              |
-| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ modo de interpolación \_ \_ lineal de varios \_ ejemplos \_ | Usa 4 muestras lineales dentro de un solo píxel para el suavizado de contorno adecuado. Este modo es adecuado para reducir verticalmente en pequeñas cantidades de imágenes con pocos píxeles.    |
-| D2D1 \_ \_ modo de interpolación 3DPERSPECTIVETRANSFORM \_ \_ anisotrópico           | Utiliza el filtrado anisotrópico para muestrear un patrón según la forma transformada del mapa de bits.                                                           |
+| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ MODO DE INTERPOLACIÓN VECINO MÁS \_ \_ \_ PRÓXIMO     | Muestrea el punto más cercano y lo usa. Este modo usa menos tiempo de procesamiento, pero genera la imagen de menor calidad.                                 |
+| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ MODO DE INTERPOLACIÓN \_ \_ LINEAL                | Usa una muestra de cuatro puntos y una interpolación lineal. Este modo usa más tiempo de procesamiento que el modo vecino más cercano, pero genera una imagen de mayor calidad. |
+| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ MODO DE INTERPOLACIÓN \_ \_ CÚBICA                 | Usa un kernel cúbica de 16 muestras para la interpolación. Este modo usa el mayor tiempo de procesamiento, pero genera una imagen de mayor calidad.                              |
+| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ MODO MULTI SAMPLE \_ \_ \_ \_ LINEAR | Usa 4 muestras lineales dentro de un solo píxel para un suavizado de alias de borde bueno. Este modo es bueno para reducir verticalmente en pequeñas cantidades en imágenes con pocos píxeles.    |
+| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ INTERPOLATION \_ MODE \_ ANISOTROPIC           | Usa el filtrado anisotropico para muestrear un patrón según la forma transformada del mapa de bits.                                                           |
 
 
 
  
 
 > [!Note]  
-> Si no selecciona un modo, el efecto tiene como valor predeterminado el \_ \_ modo de interpolación D2D1 3DPERSPECTIVETRANSFORM \_ \_ lineal.
+> Si no selecciona un modo, el efecto tiene como valor predeterminado D2D1 \_ 3DPERSPECTIVETRANSFORM \_ INTERPOLATION \_ MODE \_ LINEAR.
 
  
 
 > [!Note]  
-> El modo anisotrópico genera mapas MIP al escalar; sin embargo, si establece la propiedad **Cached** en true en los efectos que se aplican a este efecto, no se generarán los mapas MIP cada vez para imágenes suficientemente pequeñas.
+> El modo anisotropico genera mapas MIP al escalar; sin embargo, si establece la propiedad **Cached** en true en los efectos que se introducen en este efecto, los mapas MIP no se generarán cada vez para imágenes lo suficientemente pequeñas.
 
  
 
@@ -111,8 +111,8 @@ m_d2dContext->EndDraw();
 
 | Nombre                     | Descripción                                                                                                      |
 |--------------------------|------------------------------------------------------------------------------------------------------------------|
-| D2D1 \_ modo de borde \_ \_ flexible | El efecto rellena la imagen con píxeles negros transparentes mientras se interpola, lo que da lugar a un borde flexible.<br/> |
-| D2D1 \_ del \_ modo de borde \_ | El efecto fija la salida al tamaño de la imagen de entrada. <br/>                                         |
+| MODO DE BORDE D2D1 \_ \_ \_ SOFT | El efecto abate la imagen con píxeles negro transparentes a medida que se interpola, lo que da lugar a un borde suave.<br/> |
+| D2D1 \_ BORDER \_ MODE \_ HARD | El efecto fija la salida al tamaño de la imagen de entrada. <br/>                                         |
 
 
 
@@ -130,10 +130,10 @@ El efecto realiza la operación de transformación y, a continuación, aplica un
 
 | Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Servidor mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Encabezado                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio Windows aplicaciones de la \| Tienda\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio Windows aplicaciones de la \| Tienda\] |
+| Header                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

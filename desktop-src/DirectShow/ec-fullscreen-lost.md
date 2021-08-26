@@ -1,17 +1,17 @@
 ---
 description: El representador de vídeo está cambiando del modo de pantalla completa.
 ms.assetid: f720a9b6-930a-4ed7-9798-1c72fa7a11ff
-title: EC_FULLSCREEN_LOST (DShow. h)
+title: EC_FULLSCREEN_LOST (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf36b5652ea5f7cde26950a18de086af0862dac7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ebf9384bec15969c904636f37db21ab19674bd2468542c2984ce80aa1773c3c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079135"
 ---
-# <a name="ec_fullscreen_lost"></a>\_pantalla completa de EC \_ perdida
+# <a name="ec_fullscreen_lost"></a>EC \_ FULLSCREEN \_ LOST
 
 El representador de vídeo está cambiando del modo de pantalla completa.
 
@@ -29,7 +29,7 @@ Cero.
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-(**IUnknown** \* ) Puntero a la interfaz [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) del representador de vídeo, o **null**.
+(**IUnknown** \* ) Puntero a la interfaz [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) del representador de vídeo o **NULL.**
 
 </dd> </dl>
 
@@ -37,9 +37,9 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el [representador de pantalla completa](full-screen-renderer-filter.md) pierde la activación, envía este evento. Cuando otro representador de vídeo cambia de modo de pantalla completa, el administrador de gráficos de filtros envía este evento, en respuesta a un evento de [**\_ activación de EC**](ec-activate.md) del representador.
+Cuando el [representador de pantalla completa](full-screen-renderer-filter.md) pierde la activación, envía este evento. Cuando otro representador de vídeo sale del modo de pantalla completa, el administrador de gráficos de filtros envía este evento, en respuesta a un evento [**EC \_ ACTIVATE**](ec-activate.md) del representador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Cuando el [representador de pantalla completa](full-screen-renderer-filter.md) p
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

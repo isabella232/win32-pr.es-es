@@ -1,7 +1,7 @@
 ---
 description: El método GetTailPosition recupera la posición del último elemento de la lista.
 ms.assetid: 53af7ecd-5ec5-4d45-9f38-f253649f9113
-title: Método CGenericList. GetTailPosition (Wxlist. h)
+title: Método CGenericList.GetTailPosition (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 66fc4e396fab558c79fb7333263442fac146e105
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90b84369688c065445f7d8a127219e707a20867776d1c5949b2927dd22e24868
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076276"
 ---
-# <a name="cgenericlistgettailposition-method"></a>CGenericList. GetTailPosition, método
+# <a name="cgenericlistgettailposition-method"></a>Método CGenericList.GetTailPosition
 
 El `GetTailPosition` método recupera la posición del último elemento de la lista.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de posición o **null** si la lista está vacía.
+Devuelve un valor POSITION o **NULL si** la lista está vacía.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve un valor de posición o **null** si la lista está vacía.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve un valor de posición o **null** si la lista está vacía.
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (Clase)**](cgenericlist.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Las constantes de marcador de bits PHONEBUTTONSTATE describen las posiciones de los botones.
+description: Las constantes de marca de bits PHONEBUTTONSTATE describen las posiciones de los botones.
 ms.assetid: f1196e31-65c6-4ade-a0b7-c7758ce97be1
-title: Constantes de PHONEBUTTONSTATE_ (TAPI. h)
+title: PHONEBUTTONSTATE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2b1cc2f669fb5c1171834f46e11a161e9390eab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95070eb24b5189b44f07a8ba2d2d7ed7d8234ec14a97889f09c0fe29ac72eed9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100515"
 ---
-# <a name="phonebuttonstate_-constants"></a>Constantes de PHONEBUTTONSTATE_
+# <a name="phonebuttonstate_-constants"></a>PHONEBUTTONSTATE_ constantes
 
-Las constantes de marcador de bits **PHONEBUTTONSTATE_** describen las posiciones del botón.
+Las **PHONEBUTTONSTATE_** de marca de bits describen las posiciones del botón.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Las constantes de marcador de bits **PHONEBUTTONSTATE_** describen las posicione
 
 
 
-El botón está en el estado "inactivo" (presionado).
+El botón está en estado "abajo" (presionado).
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ El botón está en el estado "inactivo" (presionado).
 
 
 
-Indica que el proveedor de servicios no conoce el estado activo o inactivo del botón y que no se conocerá en el futuro. (Versiones de TAPI 1,4 y posteriores)
+Indica que el proveedor de servicios no conoce el estado de arriba o abajo del botón y que no se conocerá en un momento futuro. (TAPI versiones 1.4 y posteriores)
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ Indica que el proveedor de servicios no conoce el estado activo o inactivo del b
 
 
 
-Indica que en este momento no se conoce el estado arriba o abajo del botón, pero se puede conocer en el futuro. (Versiones de TAPI 1,4 y posteriores)
+Indica que el estado de arriba o abajo del botón no se conoce en este momento, pero puede conocerse en un momento futuro. (TAPI versiones 1.4 y posteriores)
 
 
 </dt> </dl> </dd> <dt>
@@ -52,16 +52,16 @@ Indica que en este momento no se conoce el estado arriba o abajo del botón, per
 
 
 
-El botón está en el estado "activo".
+El botón está en estado "up".
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Sin extensibilidad. Todos los 32 bits están reservados.
+Sin extensibilidad. Los 32 bits están reservados.
 
-Por compatibilidad con versiones anteriores, es responsabilidad del proveedor de servicios examinar la versión de la API negociada en el teléfono y no utilizar los valores de PHONEBUTTONSTATE_ que la versión negociada no admite.
+Por compatibilidad con versiones anteriores, es responsabilidad del proveedor de servicios examinar la versión negociada de la API en el teléfono y no usar esos valores PHONEBUTTONSTATE_ que la versión negociada no admite.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,8 +69,8 @@ Por compatibilidad con versiones anteriores, es responsabilidad del proveedor de
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

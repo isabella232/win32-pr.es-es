@@ -1,21 +1,21 @@
 ---
-description: La tabla MsiSFCBypass contiene una lista de archivos que deben omitir la protección de archivos de Windows cuando los archivos se instalan en Microsoft Windows me.
+description: La tabla MsiSFCBypass contiene una lista de archivos que deben omitir Windows File Protection cuando los archivos se instalan en Microsoft Windows Me.
 ms.assetid: 86de0dc1-ed8f-410c-a411-6c44c8e5c9fd
 title: Tabla MsiSFCBypass
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 707294e9461aaf321add8a3959682a0db555cc2c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d233f09aa62b5f6d17112b1f5a98753e328f3a1746c452de5a5a1689a36f971f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042675"
 ---
 # <a name="msisfcbypass-table"></a>Tabla MsiSFCBypass
 
-La tabla MsiSFCBypass contiene una lista de archivos que deben omitir la protección de archivos de Windows cuando los archivos se instalan en Microsoft Windows me.
+La tabla MsiSFCBypass contiene una lista de archivos que deben omitir Windows File Protection cuando los archivos se instalan en Microsoft Windows Me.
 
-La tabla MsiSFCBypass tiene la siguiente columna.
+La tabla MsiSFCBypass tiene la columna siguiente.
 
 
 
@@ -31,10 +31,10 @@ La tabla MsiSFCBypass tiene la siguiente columna.
 
 <dl> <dt>
 
-<span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Filesystem\_
+<span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Archivo\_
 </dt> <dd>
 
-La clave externa de la [tabla de archivos](file-table.md) que especifica el archivo que debe omitir la protección de archivos de Windows cuando el archivo está instalado en Windows me.
+Clave externa de la [tabla de](file-table.md) archivos que especifica el archivo que debe omitir Windows File Protection cuando el archivo se instala en Windows Me.
 
 </dd> </dl>
 

@@ -1,34 +1,34 @@
 ---
 title: Cómo trabajar con índices de imagen de estado
-description: A menudo hay confusión sobre cómo establecer y recuperar el índice de la imagen de estado en un control de vista de árbol.
+description: A menudo hay confusión sobre cómo establecer y recuperar el índice de imagen de estado en un control de vista de árbol.
 ms.assetid: 2666D922-9957-4A75-BFDA-038720F1EEDC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be84035907b69ba98ed60a33046f1a58fd2b47b2
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 04504019f79a388b6c21f940724de884d8516263daf6d410a841a96fc2e557b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "103788902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059305"
 ---
 # <a name="how-to-work-with-state-image-indexes"></a>Cómo trabajar con índices de imagen de estado
 
-A menudo hay confusión sobre cómo establecer y recuperar el índice de la imagen de estado en un control de vista de árbol. En los siguientes ejemplos se muestra el método adecuado para establecer y recuperar el índice de la imagen de estado. En los ejemplos se da por hecho que solo hay dos índices de imagen de estado en el control de vista de árbol, desactivados y comprobados. Si la aplicación contiene más de dos, estas funciones deberán modificarse para controlar ese caso.
+A menudo hay confusión sobre cómo establecer y recuperar el índice de imagen de estado en un control de vista de árbol. En los ejemplos siguientes se muestra el método adecuado para establecer y recuperar el índice de imagen de estado. En los ejemplos se supone que solo hay dos índices de imagen de estado en el control de vista de árbol, desactivados y activados. Si la aplicación contiene más de dos, estas funciones tendrán que modificarse para controlar ese caso.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="set-a-tree-view-items-check-state"></a>Establecer el estado de comprobación de un elemento de Tree-View
+### <a name="set-a-tree-view-items-check-state"></a>Establecer un Tree-View de comprobación de un elemento
 
 En el ejemplo siguiente se muestra cómo establecer el estado de comprobación de un elemento de vista de árbol.
 
@@ -53,9 +53,9 @@ En el ejemplo siguiente se muestra cómo establecer el estado de comprobación d
 
 
 
-### <a name="retrieve-a-tree-view-items-check-state"></a>Recuperar el estado de comprobación de un elemento de Tree-View
+### <a name="retrieve-a-tree-view-items-check-state"></a>Recuperación del Tree-View de comprobación de un elemento
 
-En el ejemplo siguiente se muestra cómo recuperar el estado de comprobación de un elemento de la vista de árbol.
+En el ejemplo siguiente se muestra cómo recuperar el estado de comprobación de un elemento de vista de árbol.
 
 
 ```C++
@@ -82,15 +82,15 @@ En el ejemplo siguiente se muestra cómo recuperar el estado de comprobación de
 
 <dl> <dt>
 
-[Usar controles Tree-View](using-treeview.md)
+[Usar Tree-View controles](using-treeview.md)
 </dt> <dt>
 
-[En el ejemplo CustDTv se muestra el dibujo personalizado en un control Tree-View](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
+[El ejemplo CustDTv muestra el dibujo personalizado en un control Tree-View datos](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

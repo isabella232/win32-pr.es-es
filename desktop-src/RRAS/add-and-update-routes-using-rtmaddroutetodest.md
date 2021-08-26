@@ -1,45 +1,45 @@
 ---
 title: Agregar y actualizar rutas mediante RtmAddRouteToDest
-description: La función RtmAddRouteToDest se usa para agregar nuevas rutas y actualizar las rutas existentes para un destino. En los siguientes procedimientos se explican ambos casos. En el código de ejemplo siguiente se muestra cómo implementar el primer procedimiento.
+description: La función RtmAddRouteToDest se usa para agregar nuevas rutas y actualizar las rutas existentes para un destino. Los procedimientos siguientes explican ambos casos. El código de ejemplo siguiente muestra cómo implementar el primer procedimiento.
 ms.assetid: 17a04511-69f8-4e50-993c-0e558ee72184
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bd3594aee054e6815094834bedbc1aae158fc4e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 64032aa5f73019e08bb82405d85ffa5ef85abd0526cf7748ec8881b97ab900e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030605"
 ---
 # <a name="add-and-update-routes-using-rtmaddroutetodest"></a>Agregar y actualizar rutas mediante RtmAddRouteToDest
 
-La función [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) se usa para agregar nuevas rutas y actualizar las rutas existentes para un destino. En los siguientes procedimientos se explican ambos casos. En el código de ejemplo siguiente se muestra cómo implementar el primer procedimiento.
+La función [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) se usa para agregar nuevas rutas y actualizar las rutas existentes para un destino. Los procedimientos siguientes explican ambos casos. El código de ejemplo siguiente muestra cómo implementar el primer procedimiento.
 
-**Para agregar una ruta, el cliente debe realizar los siguientes pasos:**
+**Para agregar una ruta, el cliente debe realizar los pasos siguientes**
 
-1.  Si el cliente ya ha almacenado en la memoria caché el controlador de próximo salto, vaya al paso 4.
-2.  Cree una estructura de [**\_ \_ información de NEXTHOP de RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_nexthop_info) y rellénelo con la información adecuada.
-3.  Agregue el próximo salto a la tabla de enrutamiento llamando a [**RtmAddNextHop**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddnexthop). El administrador de tabla de enrutamiento devuelve un identificador al próximo salto. Si el próximo salto ya existe, la tabla de enrutamiento no agrega el próximo salto; en su lugar, devuelve el identificador al próximo salto.
-4.  Cree una estructura de [**\_ \_ información de ruta RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) y rellénelo con la información adecuada, incluido el identificador de próximo salto devuelto por el administrador de tablas de enrutamiento.
-5.  Agregue la ruta a la tabla de enrutamiento llamando a [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest). El administrador de tablas de enrutamiento compara la nueva ruta con las rutas que ya están en la tabla de enrutamiento. Dos rutas son iguales si se cumplen todas las condiciones siguientes:
+1.  Si el cliente ya ha almacenado en caché el identificador del próximo salto, vaya al paso 4.
+2.  Cree una [**estructura \_ DE INFORMACIÓN NEXTHOP \_ de RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_nexthop_info) y rellene con la información adecuada.
+3.  Agregue el próximo salto a la tabla de enrutamiento mediante una llamada [**a RtmAddNextHop**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddnexthop). El administrador de tablas de enrutamiento devuelve un identificador al próximo salto. Si el próximo salto ya existe, la tabla de enrutamiento no agrega el próximo salto; en su lugar, devuelve el identificador al próximo salto.
+4.  Cree una [**estructura RTM \_ ROUTE \_ INFO**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) y rellene con la información adecuada, incluido el identificador de próximo salto devuelto por el administrador de tablas de enrutamiento.
+5.  Agregue la ruta a la tabla de enrutamiento llamando [**a RtmAddRouteToDest.**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) El administrador de tablas de enrutamiento compara la nueva ruta con las rutas que ya están en la tabla de enrutamiento. Dos rutas son iguales si se cumplen todas las condiciones siguientes:
 
     -   La ruta se está agregando al mismo destino.
-    -   El mismo cliente agrega la ruta, tal y como lo especifica el miembro **propietario** de la estructura de [**\_ \_ información de ruta RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) .
-    -   El mismo vecino anuncia la ruta, tal y como lo especifica el miembro **vecino** de la estructura de [**\_ \_ información de ruta RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) .
+    -   El mismo cliente está agregando la ruta especificada por el miembro **Owner** de la estructura [**ROUTE INFO \_ \_ de RTM.**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info)
+    -   El mismo vecino anuncia la ruta según lo especificado por el miembro **Vecino** de la estructura [**\_ RTM ROUTE \_ INFO.**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info)
 
-    Si existe la ruta, el administrador de tablas de enrutamiento devuelve el identificador de la ruta existente. De lo contrario, el administrador de tablas de enrutamiento agrega la ruta y devuelve el identificador de la nueva ruta.
+    Si la ruta existe, el administrador de tablas de enrutamiento devuelve el identificador a la ruta existente. De lo contrario, el administrador de tablas de enrutamiento agrega la ruta y devuelve el identificador a la nueva ruta.
 
-    El cliente puede establecer el parámetro de *\_ marcas de cambio* en RTM \_ Route \_ Change \_ New para indicar al administrador de la tabla de enrutamiento que agregue una nueva ruta en el destino, incluso si existe otra ruta con los mismos campos de propietario y vecino.
+    El cliente puede establecer el parámetro *Change \_ Flags* en RTM ROUTE CHANGE NEW para indicar al administrador de tablas de enrutamiento que agregue una nueva ruta en el destino, incluso si existe otra ruta con el mismo propietario y los mismos campos \_ \_ \_ vecinos.
 
-    El cliente puede establecer el parámetro de *\_ marcas de cambio* en la \_ ruta RTM \_ \_ primero para indicar al administrador de tablas de enrutamiento que actualice la primera ruta en el destino propiedad del cliente. Esta actualización se puede realizar si existe una ruta de este tipo, incluso si el campo vecino no coincide. Esta marca la usan los clientes que mantienen una única ruta por destino.
+    El cliente puede establecer el parámetro *Change \_ Flags* en RTM ROUTE CHANGE FIRST para que el administrador de tablas de enrutamiento actualice la primera ruta en el destino propiedad \_ del \_ \_ cliente. Esta actualización se puede realizar si existe una ruta de este tipo, incluso si el campo vecino no coincide. Esta marca la usan los clientes que mantienen una sola ruta por destino.
 
-**Para actualizar una ruta, el cliente debe realizar los siguientes pasos:**
+**Para actualizar una ruta, el cliente debe realizar los pasos siguientes**
 
-1.  Llame a [**RtmGetRouteInfo**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetrouteinfo) con el identificador de la ruta. El identificador es el que el cliente ha almacenado previamente en la memoria caché o lo ha devuelto el administrador de tabla de enrutamiento desde una llamada que devuelve un identificador de ruta como **RtmGetRouteInfo**.
-2.  Realice los cambios en la estructura de [**\_ \_ información de ruta RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) devuelta por el administrador de tablas de enrutamiento.
-3.  Llame a [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) con el identificador de la ruta y la estructura de [**\_ \_ información de ruta de RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) modificada.
+1.  Llame [**a RtmGetRouteInfo**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetrouteinfo) con el identificador de la ruta. El identificador es uno almacenado previamente en caché por el cliente o devuelto por el administrador de tablas de enrutamiento de una llamada que devuelve un identificador de ruta como **RtmGetRouteInfo**.
+2.  Realice los cambios en la estructura [**\_ RTM ROUTE \_ INFO**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) devuelta por el administrador de tablas de enrutamiento.
+3.  Llame [**a RtmAddRouteToDest con**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) el identificador de la ruta y la estructura [**\_ RTM ROUTE INFO \_ modificada.**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info)
 
-En el código de ejemplo siguiente se muestra cómo agregar una ruta a un destino mediante el administrador de tablas de enrutamiento como intermediario.
+El código de ejemplo siguiente muestra cómo agregar una ruta a un destino mediante el administrador de tablas de enrutamiento como intermediario.
 
 
 ```C++
@@ -132,9 +132,9 @@ if (Status == NO_ERROR)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

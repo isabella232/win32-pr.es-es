@@ -4,12 +4,12 @@ ms.assetid: 1a3f8772-3b49-4db3-adca-68626d6f80c2
 title: System.LastSyncError
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 813763ba17e56a778cc4d932e29118901194cefd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9e2c5d526532623d42703cbdf1ec18c14de3656b99d645c768cf8ce4361fbb2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058775"
 ---
 # <a name="systemlastsyncerror"></a>System.LastSyncError
 

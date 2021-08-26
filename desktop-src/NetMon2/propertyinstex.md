@@ -1,7 +1,7 @@
 ---
-description: La estructura PROPERTYINSTEX define una instancia de la propiedad extendida y de forma libre.
+description: La estructura PROPERTYINSTEX define una instancia de propiedad extendida de forma libre.
 ms.assetid: a2316baf-07e2-4617-bb35-e20cfb11fbcb
-title: Estructura PROPERTYINSTEX (Netmon. h)
+title: Estructura PROPERTYINSTEX (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: f7b196d30e96f9d047f7f923d969d65a918aa4f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 533169a98d17c56a32df56f77c30d403d0dbb28c6a51159debc9692a505da52b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036975"
 ---
 # <a name="propertyinstex-structure"></a>Estructura PROPERTYINSTEX
 
-La estructura **PROPERTYINSTEX** define una instancia de la propiedad extendida y de forma libre.
+La **estructura PROPERTYINSTEX** define una instancia de propiedad extendida de forma libre.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,35 +73,35 @@ Puntero a los datos extendidos.
 **Byte**
 </dt> <dd>
 
-Puntero a los datos de **bytes** .
+Puntero a los **datos BYTE.**
 
 </dd> <dt>
 
 **Word**
 </dt> <dd>
 
-Puntero a los datos de la **palabra** .
+Puntero a los **datos de WORD.**
 
 </dd> <dt>
 
-**DWORD**
+**Dword**
 </dt> <dd>
 
-Puntero a los datos **DWORD** .
+Puntero a los **datos DWORD.**
 
 </dd> <dt>
 
 **LargeInt**
 </dt> <dd>
 
-Puntero a los datos de **LARGEINT** .
+Puntero a los **datos LARGEINT.**
 
 </dd> <dt>
 
 **SysTime**
 </dt> <dd>
 
-Puntero a los datos **SYSTEMTIME** .
+Puntero a los **datos SYSTEMTIME.**
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Cadena con tipo que puede tener datos extendidos.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

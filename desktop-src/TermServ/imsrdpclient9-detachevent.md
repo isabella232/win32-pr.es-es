@@ -1,14 +1,14 @@
 ---
-title: IMsRdpClient9 detachEvent, método
-description: Desasocia un evento.
+title: Método IMsRdpClient9 detachEvent
+description: Desasoyera un evento.
 ms.assetid: 6a3ca713-1d5c-4070-a527-ad4f532a4cbf
 ms.tgt_platform: multiple
 keywords:
-- método detachEvent Servicios de Escritorio remoto
-- método detachEvent Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto, método detachEvent
-- método detachEvent Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Interfaz IMsRdpClient10 Servicios de Escritorio remoto, método detachEvent
+- Método detachEvent Servicios de Escritorio remoto
+- Método detachEvent Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto método , detachEvent
+- Método detachEvent Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto método , detachEvent
 topic_type:
 - apiref
 api_name:
@@ -20,16 +20,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 399611ea526338f4cfe40ef3a4d6543bf27f134a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cc60a3a7e1499632ac721192ce324fcf786e179604c11e2a70c4450b6171b779
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099465"
 ---
-# <a name="imsrdpclient9detachevent-method"></a>IMsRdpClient9::d método etachEvent
+# <a name="imsrdpclient9detachevent-method"></a>Método IMsRdpClient9::d etachEvent
 
-Desasocia un evento.
+Desasoyera un evento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,14 +47,14 @@ HRESULT detachEvent(
 
 <dl> <dt>
 
-*eventName* \[ de\]
+*eventName* \[ En\]
 </dt> <dd>
 
 Nombre del evento.
 
 </dd> <dt>
 
-*devolución de llamada* \[ de\]
+*devolución de llamada* \[ En\]
 </dt> <dd>
 
 Devolución de llamada asociada al evento.
@@ -63,7 +63,7 @@ Devolución de llamada asociada al evento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,10 +72,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                                                                                                                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                                                                                                                                                                                       |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                                                                                                                                                                                       |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                                                                                                  |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                                                                                                  |
-| IID<br/>                      | CLSID \_ MsRdpClient9 se define como 301B94BA-5D25-4A12-BFFE-3B6E7A616585<br/> CLSID \_ MsRdpClient9NotSafeForScripting se define como 8B918B82-7985-4C24-89DF-C33AD2BBFBCD<br/> IID \_ IMsRdpClient9 se define como 28904001-04B6-436C-A55B-0AF1A0883DC9<br/> |
+| IID<br/>                      | CLSID MsRdpClient9 se define como \_ 301B94BA-5D25-4A12-BFFE-3B6E7A616585<br/> CLSID \_ MsRdpClient9NotSafeForScripting se define como 8B918B82-7985-4C24-89DF-C33AD2BBFBCD<br/> IID IMsRdpClient9 se define como \_ 28904001-04B6-436C-A55B-0AF1A0883DC9<br/> |
 
 
 

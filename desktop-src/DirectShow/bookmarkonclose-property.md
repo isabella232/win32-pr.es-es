@@ -1,15 +1,15 @@
 ---
-description: La propiedad DVDAdm. BookmarkOnClose establece o recupera un valor que indica al objeto MSDVDAdm si se debe guardar automáticamente un marcador de la configuración y la ubicación actuales cuando el usuario cierra la aplicación.
+description: La propiedad DVDAdm.BookmarkOnClose establece o recupera un valor que indica al objeto MSDVDAdm si se debe guardar automáticamente un marcador de la ubicación y la configuración actuales cuando el usuario cierre la aplicación.
 ms.assetid: 54901ad6-7989-4fb3-bb28-f54c7a2bca44
 title: Propiedad BookmarkOnClose
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dfbbfe194a496dba3568b7dfa4d75b97d4ed57c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b83ed0ef05e2efe7edb3b6494e8f9709b23259207af257957551077dfbbddaba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104359984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103345"
 ---
 # <a name="bookmarkonclose-property"></a>Propiedad BookmarkOnClose
 
@@ -18,7 +18,7 @@ ms.locfileid: "104359984"
 
  
 
-La `DVDAdm.BookmarkOnClose` propiedad establece o recupera un valor que indica al objeto MSDVDAdm si se debe guardar automáticamente un marcador de la configuración y la ubicación actuales cuando el usuario cierra la aplicación.
+La propiedad establece o recupera un valor que indica al objeto MSDVDAdm si se debe guardar automáticamente un marcador de la ubicación y la configuración actuales cuando el usuario cierre `DVDAdm.BookmarkOnClose` la aplicación.
 
 ``` syntax
 [ bBookmarkOnClose = ] DVD.DVDAdm.BookmarkOnClose
@@ -26,11 +26,11 @@ La `DVDAdm.BookmarkOnClose` propiedad establece o recupera un valor que indica a
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor booleano que, si es true, indica que el control MSDVDAdm guardará un marcador de toda la configuración de DVD, incluida la posición en el disco, el nivel parental y el país o la región parental cuando el usuario cierra la aplicación del reproductor de DVD.
+Devuelve un valor booleano, que si es true, indica que el control MSDVDAdm guardará un marcador de toda la configuración de DVD, incluida la posición en el disco, el nivel parental y el país o región parental cuando el usuario cierre la aplicación del reproductor de DVD.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de lectura/escritura y su valor predeterminado es true.
+Esta propiedad es de lectura y escritura con un valor predeterminado de true.
 
 ## <a name="see-also"></a>Vea también
 

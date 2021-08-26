@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_STATIC_SAMPLER_DESC estructura (D3dx12. h)
-description: Una estructura de aplicación auxiliar para habilitar la inicialización sencilla de una \_ estructura de descripción de muestra estática de D3D12 \_ \_ .
+title: CD3DX12_STATIC_SAMPLER_DESC estructura (D3dx12.h)
+description: Una estructura auxiliar para permitir la inicialización sencilla de una estructura \_ \_ DESC STATIC SAMPLER de D3D12. \_
 ms.assetid: C402415D-7BD5-4E23-82C9-B29B0B5669B8
 keywords:
-- Estructura de CD3DX12_STATIC_SAMPLER_DESC
+- CD3DX12_STATIC_SAMPLER_DESC estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d6b10749f7a56d928e0a4218d534cc2a8ec4fab
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bdd2e64a98a8dd11b62154bb3239934fd8da29eb6f8bf2919ef88452d280de6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069765"
 ---
-# <a name="cd3dx12_static_sampler_desc-structure"></a>CD3DX12 \_ \_ estructura de DESC de muestra estática \_
+# <a name="cd3dx12_static_sampler_desc-structure"></a>Estructura \_ \_ DESC DESC DE SAMPLER ESTÁTICA DE3DX12 \_
 
-Una estructura de aplicación auxiliar para habilitar la inicialización sencilla de una estructura de [**\_ \_ \_ Descripción de muestra estática de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) .
+Una estructura auxiliar para permitir la inicialización sencilla de una [**estructura \_ \_ \_ DESC STATIC SAMPLER de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,118 +45,118 @@ struct CD3DX12_STATIC_SAMPLER_DESC  : public D3D12_STATIC_SAMPLER_DESC{
 
 <dl> <dt>
 
-**Descripción de la \_ muestra estática CD3DX12 \_ \_ ()**
+**CD3DX12 \_ STATIC \_ SAMPLER \_ DESC()**
 </dt> <dd>
 
-Crea una instancia nueva, no inicializada, de una descripción de la \_ muestra estática CD3DX12 \_ \_ .
+Crea una nueva instancia de UNSC STATIC SAMPLER CD3DX12 sin \_ \_ \_ inicializar.
 
 </dd> <dt>
 
-**CD3DX12 explícito de la \_ muestra estática de la \_ \_ Descripción (const D3D12 \_ &de \_ muestra estática \_ )**
+**EXPLICIT CD3DX12 \_ STATIC \_ SAMPLER \_ DESC(const D3D12 \_ STATIC \_ SAMPLER \_ DESC &o)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ Descripción de \_ muestra estática CD3DX12 \_ , inicializada con el contenido de otra estructura D3D12 de la [**\_ muestra estática de la \_ \_ muestra**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) .
+Crea una nueva instancia de un DESC DESC STATIC SAMPLER cd3DX12, inicializado con el contenido de otra estructura \_ \_ \_ [**\_ \_ \_ DESC de D3D12 STATIC SAMPLER.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc)
 
 </dd> <dt>
 
-**CD3DX12 \_ static \_ Sampler \_ DESC (uint shaderRegister, D3D12 \_ Filter Filter = D3D12 \_ Filter \_ anisotrópico, D3D12 \_ Texture \_ Address \_ mode addressU = D3D12 \_ Texture \_ Address \_ Mode \_ Wrap, D3D12 \_ Texture \_ Address \_ mode addressV = D3D12 \_ Texture \_ Address \_ Mode \_ Wrap D3D12 \_ \_ \_ modo de dirección de textura addressW = D3D12 \_ \_ \_ de modo \_ de dirección de textura Wrap, Float MIPLODBIAS = 0, uint maxAnisotropy = 16, D3D12 \_ Comparison \_ FUNC comparisonFunc = D3D12 \_ Comparison la \_ \_ función de comparación menos \_ igual, D3D12 el \_ \_ color del borde estático \_ BorderColor = D3D12 el \_ \_ color del borde estático de la \_ \_ \_ visibilidad del sombreador minLOD = \_ \_ \_ \_ maxLOD \_ Visibility del sombreador \_ \_ All, uint D3D12 = 0)**
+**CD3DX12 \_ STATIC \_ SAMPLER \_ DESC(UINT shaderRegister, Filtro de filtro \_ D3D12 = D3D12 \_ FILTER \_ ANISOTROPIC, D3D12 \_ TEXTURE ADDRESS MODE \_ \_ addressU = D3D12 \_ TEXTURE ADDRESS MODE \_ \_ \_ WRAP, D3D12 \_ TEXTURE ADDRESS MODE \_ \_ addressV = D3D12 \_ TEXTURE ADDRESS MODE \_ \_ \_ WRAP, D3D12 \_ TEXTURE ADDRESS MODE \_ \_ addressW = D3D12 \_ TEXTURE ADDRESS MODE \_ \_ \_ WRAP, FLOAT mipLODBias = 0, UINT maxAnisotropy = 16, COMPARACIÓN de \_ D3D12 COMPARACIÓN \_ FUNC ComparisonFunc = D3D12 \_ COMPARISON \_ FUNC LESS \_ \_ EQUAL, D3D12 \_ STATIC BORDER COLOR \_ \_ borderColor = D3D12 \_ STATIC BORDER COLOR OPAQUE \_ \_ \_ \_ WHITE, FLOAT minLOD = 0.f, FLOAT maxLOD = D3D12 \_ FLOAT32 \_ MAX, D3D12 \_ SHADER VISIBILITY shader shader visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL, UINT registerSpace = 0)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ Descripción de \_ la muestra estática CD3DX12 \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de UN \_ \_ DESC DESC STATIC SAMPLER de CD3DX12, \_ inicializando los parámetros siguientes:
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
-rechace [**D3D12 \_ Filtro filtro =**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_filter) D3D12 \_ filtro \_ anisotrópico
+(opt) [**D3D12 \_ FILTER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_filter) filter = D3D12 \_ FILTER \_ ANISOTROPIC
 
-rechace [**D3D12 \_ \_ \_ Modo de dirección de textura**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressU = \_ \_ \_ ajuste del modo de dirección de textura D3D12 \_
+(opt) [**D3D12 \_ TEXTURE \_ ADDRESS \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressU = D3D12 \_ TEXTURE \_ ADDRESS \_ MODE \_ WRAP
 
-rechace [**D3D12 \_ \_ \_ Modo de dirección de textura**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressV = \_ \_ \_ ajuste del modo de dirección de textura D3D12 \_
+(opt) [**D3D12 \_ TEXTURE \_ ADDRESS \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressV = D3D12 \_ TEXTURE \_ ADDRESS \_ MODE \_ WRAP
 
-rechace [**D3D12 \_ \_ \_ Modo de dirección de textura**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressW = \_ \_ \_ ajuste del modo de dirección de textura D3D12 \_
+(opt) [**D3D12 \_ TEXTURE \_ ADDRESS \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressW = D3D12 \_ TEXTURE \_ ADDRESS \_ MODE \_ WRAP
 
-rechace FLOAT mipLODBias = 0
+(opt) FLOAT mipLODBias = 0
 
-rechace UINT maxAnisotropy = 16
+(opt) UINT maxAnisotropy = 16
 
-rechace [**D3D12 \_ Comparison \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) comparisonFunc = función de comparación de D3D12 \_ \_ \_ menos \_ igual
+(opt) [**D3D12 \_ COMPARACIÓN \_ COMPARACIÓN FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) comparisonFunc = D3D12 \_ COMPARISON \_ FUNC LESS \_ \_ EQUAL
 
-rechace [**D3D12 \_ \_ \_ Color de borde estático**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_static_border_color) BorderColor = \_ D3D12 \_ borde \_ estático \_ color \_ blanco opaco
+(opt) [**D3D12 \_ STATIC \_ BORDER \_ COLOR**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_static_border_color) borderColor = D3D12 \_ STATIC \_ BORDER \_ COLOR \_ OPAQUE \_ WHITE
 
-rechace FLOAT minLOD = 0. f
+(opt) FLOAT minLOD = 0.f
 
-rechace FLOAT maxLOD = D3D12 \_ FLOAT32 \_ Max
+(opt) FLOAT maxLOD = D3D12 \_ FLOAT32 \_ MAX
 
-rechace [**D3D12 \_ \_Visibilidad del sombreador**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) SHADERVISIBILITY = D3D12 visibilidad del \_ sombreador \_ \_
+(opt) [**D3D12 \_ Sombreador \_ SHADER VISIBILITYVisibility**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
-rechace UINT registerSpace = 0
+(opt) UINT registerSpace = 0
 
 </dd> <dt>
 
-**Static inline init (D3D12 \_ static \_ sample \_ DESC &SamplerDesc, uint shaderRegister, D3D12 Filter \_ Filter = D3D12 \_ Filter \_ anisotrópico, D3D12 \_ Texture \_ Address \_ mode addressU = D3D12 \_ Texture \_ Address \_ Mode \_ Wrap, D3D12 \_ Texture \_ Address \_ mode addressV = D3D12 \_ Texture Address Mode \_ \_ \_ Wrap D3D12 \_ \_ \_ modo de dirección de textura addressW = D3D12 \_ \_ \_ \_ de modo de dirección de textura Wrap, Float MIPLODBIAS = 0, uint maxAnisotropy = 16, D3D12 \_ Comparison \_ FUNC comparisonFunc = D3D12 \_ Comparison la \_ \_ función de comparación menos \_ igual, D3D12 el \_ \_ \_ color del borde estático BorderColor = D3D12 el \_ \_ \_ color del borde estático de la \_ \_ visibilidad del \_ sombreador minLOD = \_ \_ \_ maxLOD Visibility del \_ sombreador \_ \_ All, uint D3D12 = 0)**
+**static inline Init(D3D12 \_ STATIC \_ SAMPLER \_ DESC &samplerDesc, Sombreador UINTRegistrar, filtro DE FILTRO \_ D3D12 = D3D12 \_ FILTER \_ ANISOTROPIC, D3D12 \_ TEXTURE ADDRESS MODE \_ \_ addressU = D3D12 \_ TEXTURE ADDRESS MODE \_ \_ \_ WRAP, D3D12 \_ TEXTURE ADDRESS MODE \_ \_ addressV = D3D12 \_ TEXTURE ADDRESS MODE \_ \_ \_ WRAP, D3D12 \_ TEXTURE ADDRESS MODE address address \_ \_ wrap= D3D12 \_ TEXTURE ADDRESS MODE \_ \_ \_ WRAP, FLOAT mipLODBias = 0, UINT maxAnisotropy = 16, D3D12 \_ COMPARISON \_ FUNC comparisonFunc = D3D12 \_ COMPARISON \_ FUNC LESS \_ \_ EQUAL, D3D12 \_ STATIC BORDER COLOR \_ \_ borderColor = D3D12 \_ STATIC BORDER COLOR OPAQUE WHITE , FLOAT \_ \_ \_ \_ minLOD = 0.f, FLOAT maxLOD = D3D12 \_ FLOAT32 \_ MAX, D3D12 \_ SHADER VISIBILITY \_ shaderVisibility = D3D12 \_ SHADER VISIBILITY \_ \_ ALL, UINT registerSpace = 0)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
-[**D3D12 \_ \_ \_ Descripción de muestra estática**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) &samplerDesc
+[**D3D12 \_ STATIC \_ SAMPLER \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) &samplerDesc
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
-rechace [**D3D12 \_ Filtro filtro =**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_filter) D3D12 \_ filtro \_ anisotrópico
+(opt) [**D3D12 \_ FILTER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_filter) filter = D3D12 \_ FILTER \_ ANISOTROPIC
 
-rechace [**D3D12 \_ \_ \_ Modo de dirección de textura**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressU = \_ \_ \_ ajuste del modo de dirección de textura D3D12 \_
+(opt) [**D3D12 \_ TEXTURE \_ ADDRESS \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressU = D3D12 \_ TEXTURE \_ ADDRESS \_ MODE \_ WRAP
 
-rechace [**D3D12 \_ \_ \_ Modo de dirección de textura**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressV = \_ \_ \_ ajuste del modo de dirección de textura D3D12 \_
+(opt) [**D3D12 \_ TEXTURE \_ ADDRESS \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressV = D3D12 \_ TEXTURE \_ ADDRESS \_ MODE \_ WRAP
 
-rechace [**D3D12 \_ \_ \_ Modo de dirección de textura**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressW = \_ \_ \_ ajuste del modo de dirección de textura D3D12 \_
+(opt) [**D3D12 \_ TEXTURE \_ ADDRESS \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressW = D3D12 \_ TEXTURE \_ ADDRESS \_ MODE \_ WRAP
 
-rechace FLOAT mipLODBias = 0
+(opt) FLOAT mipLODBias = 0
 
-rechace UINT maxAnisotropy = 16
+(opt) UINT maxAnisotropy = 16
 
-rechace [**D3D12 \_ Comparison \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) comparisonFunc = función de comparación de D3D12 \_ \_ \_ menos \_ igual
+(opt) [**D3D12 \_ COMPARACIÓN \_ COMPARACIÓN FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) comparisonFunc = D3D12 \_ COMPARISON \_ FUNC LESS \_ \_ EQUAL
 
-rechace [**D3D12 \_ \_ \_ Color de borde estático**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_static_border_color) BorderColor = \_ D3D12 \_ borde \_ estático \_ color \_ blanco opaco
+(opt) [**D3D12 \_ STATIC \_ BORDER \_ COLOR**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_static_border_color) borderColor = D3D12 \_ STATIC \_ BORDER \_ COLOR \_ OPAQUE \_ WHITE
 
-rechace FLOAT minLOD = 0. f
+(opt) FLOAT minLOD = 0.f
 
-rechace FLOAT maxLOD = D3D12 \_ FLOAT32 \_ Max
+(opt) FLOAT maxLOD = D3D12 \_ FLOAT32 \_ MAX
 
-rechace [**D3D12 \_ \_Visibilidad del sombreador**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) SHADERVISIBILITY = D3D12 visibilidad del \_ sombreador \_ \_
+(opt) [**D3D12 \_ Sombreador \_ SHADER VISIBILITYVisibility**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
-rechace UINT registerSpace = 0
+(opt) UINT registerSpace = 0
 
 </dd> <dt>
 
-**Init en línea (UINT shaderRegister, filtro de filtro de D3D12 \_ = D3D12 \_ filtro \_ anisotrópico, D3D12 \_ modo de dirección de textura \_ \_ addressU = D3D12 \_ ajuste del \_ \_ modo de dirección de textura \_ , D3D12 \_ modo de dirección de textura \_ \_ addressV = D3D12 \_ ajuste del \_ \_ modo de dirección de textura \_ , D3D12 \_ \_ \_ modo de dirección de textura addressW = D3D12 \_ \_ \_ \_ de modo de dirección de textura Wrap, Float mipLODBias = 0, uint maxAnisotropy = 16, D3D12 \_ COMparison \_ FUNC comparisonFunc = D3D12 \_ Comparison la \_ \_ función de comparación menos \_ igual, D3D12 el \_ \_ \_ color del borde estático BorderColor = D3D12 el \_ \_ \_ color del borde estático de la \_ \_ \_ visibilidad del sombreador minLOD = \_ \_ \_ maxLOD Visibility del \_ sombreador \_ \_ All, uint D3D12 = 0)**
+**inline Init(UINT shaderRegister, Filtro de filtro \_ D3D12 = D3D12 \_ FILTER \_ ANISOTROPIC, D3D12 \_ TEXTURE ADDRESS MODE \_ \_ addressU = D3D12 \_ TEXTURE ADDRESS MODE \_ \_ \_ WRAP, D3D12 \_ TEXTURE ADDRESS MODE \_ \_ addressV = D3D12 \_ TEXTURE ADDRESS MODE \_ \_ \_ WRAP, D3D12 \_ TEXTURE ADDRESS MODE \_ \_ addressW = D3D12 \_ TEXTURE ADDRESS MODE \_ \_ \_ WRAP, FLOAT mipLODBias = 0, UINT maxAnisotropy = 16, COMPARACIÓN de \_ D3D12 COMPARACIÓN \_ FUNC ComparisonFunc = D3D12 \_ COMPARISON \_ FUNC LESS \_ \_ EQUAL, D3D12 \_ STATIC BORDER COLOR \_ \_ borderColor = D3D12 \_ STATIC BORDER COLOR OPAQUE \_ \_ \_ \_ WHITE, FLOAT minLOD = 0.f, FLOAT maxLOD = D3D12 \_ FLOAT32 \_ MAX, D3D12 \_ SHADER VISIBILITY shader shader visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL, UINT registerSpace = 0)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
-rechace [**D3D12 \_ Filtro filtro =**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_filter) D3D12 \_ filtro \_ anisotrópico
+(opt) [**D3D12 \_ FILTER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_filter) filter = D3D12 \_ FILTER \_ ANISOTROPIC
 
-rechace [**D3D12 \_ \_ \_ Modo de dirección de textura**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressU = \_ \_ \_ ajuste del modo de dirección de textura D3D12 \_
+(opt) [**D3D12 \_ TEXTURE \_ ADDRESS \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressU = D3D12 \_ TEXTURE \_ ADDRESS \_ MODE \_ WRAP
 
-rechace [**D3D12 \_ \_ \_ Modo de dirección de textura**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressV = \_ \_ \_ ajuste del modo de dirección de textura D3D12 \_
+(opt) [**D3D12 \_ TEXTURE \_ ADDRESS \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressV = D3D12 \_ TEXTURE \_ ADDRESS \_ MODE \_ WRAP
 
-rechace [**D3D12 \_ \_ \_ Modo de dirección de textura**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressW = \_ \_ \_ ajuste del modo de dirección de textura D3D12 \_
+(opt) [**D3D12 \_ TEXTURE \_ ADDRESS \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode) addressW = D3D12 \_ TEXTURE \_ ADDRESS \_ MODE \_ WRAP
 
-rechace FLOAT mipLODBias = 0
+(opt) FLOAT mipLODBias = 0
 
-rechace UINT maxAnisotropy = 16
+(opt) UINT maxAnisotropy = 16
 
-rechace [**D3D12 \_ Comparison \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) comparisonFunc = función de comparación de D3D12 \_ \_ \_ menos \_ igual
+(opt) [**D3D12 \_ COMPARACIÓN \_ COMPARACIÓN FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) comparisonFunc = D3D12 \_ COMPARISON \_ FUNC LESS \_ \_ EQUAL
 
-rechace [**D3D12 \_ \_ \_ Color de borde estático**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_static_border_color) BorderColor = \_ D3D12 \_ borde \_ estático \_ color \_ blanco opaco
+(opt) [**D3D12 \_ STATIC \_ BORDER \_ COLOR**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_static_border_color) borderColor = D3D12 \_ STATIC \_ BORDER \_ COLOR \_ OPAQUE \_ WHITE
 
-rechace FLOAT minLOD = 0. f
+(opt) FLOAT minLOD = 0.f
 
-rechace FLOAT maxLOD = D3D12 \_ FLOAT32 \_ Max
+(opt) FLOAT maxLOD = D3D12 \_ FLOAT32 \_ MAX
 
-rechace [**D3D12 \_ \_Visibilidad del sombreador**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) SHADERVISIBILITY = D3D12 visibilidad del \_ sombreador \_ \_
+(opt) [**D3D12 \_ Sombreador \_ SHADER VISIBILITYVisibility**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
-rechace UINT registerSpace = 0
+(opt) UINT registerSpace = 0
 
 </dd> </dl>
 
@@ -166,7 +166,7 @@ rechace UINT registerSpace = 0
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -174,7 +174,7 @@ rechace UINT registerSpace = 0
 
 <dl> <dt>
 
-[**\_Descripción de \_ muestra \_ estática de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc)
+[**D3D12 \_ STATIC \_ SAMPLER \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)
