@@ -1,19 +1,19 @@
 ---
-description: Una aplicación envía el mensaje de MDICREATE de WM \_ a una ventana de cliente de la interfaz de múltiples documentos (MDI) para crear una ventana secundaria MDI.
+description: Una aplicación envía el mensaje WM MDICREATE a una ventana cliente de interfaz de múltiples documentos \_ (MDI) para crear una ventana secundaria MDI.
 ms.assetid: f2313ffd-867f-4870-a667-3e5f5402776f
-title: Mensaje de WM_MDICREATE (Winuser. h)
+title: WM_MDICREATE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fc11e9dfc561b138a95b711d68ecd831a43d2ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c69a894ebd2e55bb74486e26cd118366b1e533a490cc50feb5f77aad64c6be3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056015"
 ---
-# <a name="wm_mdicreate-message"></a>Mensaje de MDICREATE de WM \_
+# <a name="wm_mdicreate-message"></a>Mensaje \_ MDICREATE de WM
 
-Una aplicación envía el mensaje de **\_ MDICREATE de WM** a una ventana de cliente de la interfaz de múltiples documentos (MDI) para crear una ventana secundaria MDI.
+Una aplicación envía el **mensaje \_ WM MDICREATE** a una ventana cliente de interfaz de múltiples documentos (MDI) para crear una ventana secundaria MDI.
 
 
 ```C++
@@ -36,27 +36,27 @@ Este parámetro no se utiliza.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**MDICREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) que contiene información que el sistema usa para crear la ventana secundaria MDI.
+Puntero a una [**estructura MDICREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) que contiene información que el sistema usa para crear la ventana secundaria MDI.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **hWnd**
+Tipo: **HWND**
 
 Si el mensaje se realiza correctamente, el valor devuelto es el identificador de la nueva ventana secundaria.
 
-Si se produce un error en el mensaje, el valor devuelto es **null**.
+Si se produce un error en el mensaje, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La ventana secundaria MDI se crea con el [**estilo de ventana**](window-styles.md) bits **WS \_ secundario**, **WS \_ CLIPSIBLINGS**, **WS \_ CLIPCHILDREN**, **WS \_ SYSMENU**, **WS \_ Caption**, **WS \_ THICKFRAME**, **WS \_ MINIMIZEBOX** y **WS \_ MAXIMIZEBOX**, además de los bits de estilo adicionales especificados en la estructura [**MDICREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) . El sistema agrega el título de la nueva ventana secundaria al menú ventana de la ventana marco. Una aplicación debe usar este mensaje para crear todas las ventanas secundarias de la ventana de cliente.
+La ventana secundaria MDI se crea con los [**bits**](window-styles.md) de estilo de ventana **WS \_ CHILD**, **WS \_ CLIPSIBLINGS**, **WS \_ CLIPCHILDREN**, **WS \_ SYSMENU**, **WS \_ CAPTION**, **WS \_ THICKFRAME,** **WS \_ MINIMIZEBOX** y **WS \_ MAXIMIZEBOX,** además de bits de estilo adicionales especificados en la [**estructura MDICREATESTRUCT.**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) El sistema agrega el título de la nueva ventana secundaria al menú de ventana de la ventana de marco. Una aplicación debe usar este mensaje para crear todas las ventanas secundarias de la ventana de cliente.
 
-Si una ventana de cliente MDI recibe cualquier mensaje que cambie la activación de sus ventanas secundarias mientras la ventana secundaria activa está maximizada, el sistema restaura la ventana secundaria activa y maximiza la ventana secundaria que se acaba de activar.
+Si una ventana cliente MDI recibe algún mensaje que cambia la activación de sus ventanas secundarias mientras se maximiza la ventana secundaria activa, el sistema restaura la ventana secundaria activa y maximiza la ventana secundaria recién activada.
 
-Cuando se crea una ventana secundaria MDI, el sistema envía el mensaje de [**\_ creación de WM**](wm-create.md) a la ventana. El parámetro *lParam* del mensaje **de \_ creación de WM** contiene un puntero a una estructura [**CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) . El miembro *lpCreateParams* de esta estructura contiene un puntero a la estructura [**MDICREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) pasada con el mensaje de **\_ MDICREATE de WM** que creó la ventana secundaria MDI.
+Cuando se crea una ventana secundaria de MDI, el sistema envía el [**mensaje WM \_ CREATE**](wm-create.md) a la ventana. El *parámetro lParam* del mensaje **WM \_ CREATE** contiene un puntero a una [**estructura CREATESTRUCT.**](/windows/win32/api/winuser/ns-winuser-createstructa) El *miembro lpCreateParams* de esta estructura contiene un puntero a la estructura [**MDICREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) pasada con el mensaje **\_ MDICREATE** de WM que creó la ventana secundaria MDI.
 
-Una aplicación no debe enviar un segundo mensaje de **\_ MDICREATE de WM** mientras se sigue procesando un mensaje de **\_ MDICREATE de WM** . Por ejemplo, no debería enviar un mensaje de **WM \_ MDICREATE** mientras una ventana secundaria MDI esté procesando su mensaje de **WM \_ MDICREATE** .
+Una aplicación no debe enviar un segundo mensaje **\_ MDICREATE de WM** mientras se sigue procesando un mensaje **\_ MDICREATE** de WM. Por ejemplo, no debe enviar un mensaje **\_ MDICREATE** de WM mientras una ventana secundaria de MDI está procesando su **\_ mensaje MDICREATE de WM.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Una aplicación no debe enviar un segundo mensaje de **\_ MDICREATE de WM** mien
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -86,13 +86,13 @@ Una aplicación no debe enviar un segundo mensaje de **\_ MDICREATE de WM** mien
 [**MDICREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa)
 </dt> <dt>
 
-[**creación de WM \_**](wm-create.md)
+[**WM \_ CREATE**](wm-create.md)
 </dt> <dt>
 
-[**MDIDESTROY de WM \_**](wm-mdidestroy.md)
+[**WM \_ MDIDESTROY**](wm-mdidestroy.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Interfaz de varios documentos](multiple-document-interface.md)

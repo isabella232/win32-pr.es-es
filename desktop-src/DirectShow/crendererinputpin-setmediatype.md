@@ -1,7 +1,7 @@
 ---
-description: 'El método SetMediaType establece el tipo de medio para la conexión. Este método invalida el método CBasePin:: SetMediaType.'
+description: El método SetMediaType establece el tipo de medio para la conexión. Este método invalida el método CBasePin::SetMediaType.
 ms.assetid: b2668bb1-0739-413c-bea8-ec5541acfb3e
-title: Método CRendererInputPin. SetMediaType (Renbase. h)
+title: Método CRendererInputPin.SetMediaType (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ca70878f8f6358a3297c22cbb9ac8e49ba0ce310
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 83f248e15c3965305719269a19a1f2ff2c8feddfe0e57b6349985d9133e38789
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054405"
 ---
-# <a name="crendererinputpinsetmediatype-method"></a>CRendererInputPin. SetMediaType, método
+# <a name="crendererinputpinsetmediatype-method"></a>Método CRendererInputPin.SetMediaType
 
-El `SetMediaType` método establece el tipo de medio para la conexión. Este método invalida el método [**CBasePin:: SetMediaType**](cbasepin-setmediatype.md) .
+El `SetMediaType` método establece el tipo de medio para la conexión. Este método invalida el [**método CBasePin::SetMediaType.**](cbasepin-setmediatype.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ HRESULT SetMediaType(
 
 <dl> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que especifica el tipo de medio.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que especifica el tipo de medio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CRendererInputPin**](crendererinputpin.md)
+[**CRendererInputPin (clase)**](crendererinputpin.md)
 </dt> </dl>
 
  

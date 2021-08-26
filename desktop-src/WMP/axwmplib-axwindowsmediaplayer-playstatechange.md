@@ -1,9 +1,9 @@
 ---
 title: Evento PlayStateChange del objeto AxWindowsMediaPlayer
-description: El evento PlayStateChange se produce cuando cambia el estado de reproducción del control de Media Player de Windows.
+description: El evento PlayStateChange tiene lugar cuando cambia el estado de reproducción Reproductor de Windows Media control.
 ms.assetid: f8823c90-2084-4771-a2fe-7081d4e49e63
 keywords:
-- Evento PlayStateChange del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento PlayStateChange del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af97803224df89287847ee2b9ef83d8e976d91b7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a02f533211ccb6f2f2617d402eed8343a444fad4a7c3ccf49e187ede71ce9513
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003995"
 ---
 # <a name="playstatechange-event-of-the-axwindowsmediaplayer-object"></a>Evento PlayStateChange del objeto AxWindowsMediaPlayer
 
-El evento PlayStateChange se produce cuando cambia el estado de reproducción del control de Media Player de Windows.
+El evento PlayStateChange tiene lugar cuando cambia el estado de reproducción Reproductor de Windows Media control.
 
 ``` syntax
 [C#]
@@ -48,19 +48,19 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad     | Descripción                                     |
 |--------------|-------------------------------------------------|
-| **newState** | System. Int32Specifies el nuevo estado.<br/> |
+| **newState** | System.Int32 Especifica el nuevo estado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se garantiza que los Estados Media Player de Windows se produzcan en un orden determinado. Además, no todos los Estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de los Estados.
+Reproductor de Windows Media no se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un controlador de eventos para el evento PlayStateChange que muestra el estado de reproducción actual en una etiqueta. El objeto AxWMPLib. AxWindowsMediaPlayer se representa mediante la variable denominada Player.
+En el ejemplo siguiente se muestra un controlador de eventos para el evento PlayStateChange que muestra el estado de reproducción actual en una etiqueta. El objeto AxWMPLib.AxWindowsMediaPlayer se representa mediante la variable denominada player.
 
 
 ```
@@ -195,7 +195,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -208,7 +208,7 @@ End Sub
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. playState (VB y C#)**](axwmplib-axwindowsmediaplayer-playstate--vb-and-c.md)
+[**AxWindowsMediaPlayer.playState (VB y C#)**](axwmplib-axwindowsmediaplayer-playstate--vb-and-c.md)
 </dt> </dl>
 
  

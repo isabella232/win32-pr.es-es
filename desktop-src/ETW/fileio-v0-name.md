@@ -1,7 +1,7 @@
 ---
-description: La \_ \_ clase de nombre FileIo V0 es una versión anterior de la clase de tipo de evento para los eventos de e/s de archivo. La siguiente sintaxis se simplifica desde el código MOF.
+description: La clase FileIo V0 Name es una versión anterior de la clase de tipo \_ de evento para eventos de \_ E/S de archivo. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: dcbe37f2-6df0-41a5-b85f-dcd06cbd5901
-title: FileIo_V0_Name (clase)
+title: FileIo_V0_Name clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6e88d1b9b5b36815b1a833062c30e804e4db744a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11a85c182511a866d3fb76f291b0a73ed0541fdee34b7e6f74c036b5446792db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041865"
 ---
-# <a name="fileio_v0_name-class"></a>\_Clase de \_ nombre V0 FileIo
+# <a name="fileio_v0_name-class"></a>FileIo \_ V0 \_ Name (clase)
 
-La clase de **\_ \_ nombre FileIo V0** es una versión anterior de la clase de tipo de evento para los eventos de e/s de archivo.
+La **clase FileIo \_ V0 \_ Name** es una versión anterior de la clase de tipo de evento para eventos de E/S de archivo.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ class FileIo_V0_Name : FileIo_V0
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ \_ nombre FileIo V0** tiene estos tipos de miembros:
+La **clase FileIo \_ V0 \_ Name** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ \_ nombre FileIo V0** tiene estas propiedades.
+La **clase FileIo \_ V0 \_ Name** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -59,7 +59,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(2), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Ruta de acceso completa al archivo, sin incluir la letra de unidad.
@@ -69,22 +69,22 @@ Ruta de acceso completa al archivo, sin incluir la letra de unidad.
 FileObject
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Haga coincidir el valor de este puntero con el valor del puntero **FileObject** en un evento [**desmontaje \_ TypeGroup1**](diskio-typegroup1.md) para determinar el tipo de operación de e/s.
+Coincide con el valor de este puntero con el valor de puntero **FileObject** de un evento [**DiskIo \_ TypeGroup1**](diskio-typegroup1.md) para determinar el tipo de operación de E/S.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Windows Server 2003:** Para recuperar la letra de unidad de la ruta de acceso del nombre de archivo, use el valor de la propiedad **FileObject** para asignar al evento [**\_ TypeGroup1 de desmontaje**](diskio-typegroup1.md) correspondiente. En el **evento \_ desmontaje TypeGroup1** , use los valores de las propiedades **númerodedisco corresponde** y **byteoffset (** para asignar al evento [**SystemConfig \_ LogDisk**](systemconfig-logdisk.md) correspondiente. La propiedad **DriveLetterString** contiene la letra de unidad.
+**Windows Server 2003:** Para recuperar la letra de unidad de la ruta de acceso del nombre de archivo, use el valor de la propiedad **FileObject** para asignar al evento [**DiskIo \_ TypeGroup1**](diskio-typegroup1.md) correspondiente. En el **evento DiskIo \_ TypeGroup1,** use los valores de propiedad **DiskNumber** y **ByteOffset** para asignar al evento [**SystemConfig \_ LogDisk**](systemconfig-logdisk.md) correspondiente. La **propiedad DriveLetterString** contiene la letra de unidad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,7 +101,7 @@ Haga coincidir el valor de este puntero con el valor del puntero **FileObject** 
 
 <dl> <dt>
 
-[**FileIo \_ v0**](fileio-v0.md)
+[**FileIo \_ V0**](fileio-v0.md)
 </dt> </dl>
 
  

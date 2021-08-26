@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentResource. HasResource (propiedad)'
-title: Propiedad EsentResource. HasResource
+description: 'Más información sobre: Propiedad EsentResource.HasResource'
+title: Propiedad EsentResource.HasResource
 TOCTitle: 'HasResource property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentResource.HasResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource.hasresource(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5f69afdacff576636781fa01957ee2540793a1a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6f41ee7c8ead90084e64c0ed3067c68339d4310d7dace88728b4c75dbccf3b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119970785"
 ---
-# <a name="esentresourcehasresource-property"></a>Propiedad EsentResource. HasResource
+# <a name="esentresourcehasresource-property"></a>Propiedad EsentResource.HasResource
 
 Obtiene un valor que indica si el recurso subyacente está asignado actualmente.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,7 +57,7 @@ protected bool HasResource { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -67,4 +67,4 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Miembros de EsentResource](./esentresource-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,10 +1,10 @@
 ---
 title: Estructura LSKeyPack
-description: Contiene información sobre un paquete de claves de licencias de Servicios de Escritorio remoto específico.
+description: Contiene información sobre un paquete de Servicios de Escritorio remoto de licencias específico.
 ms.assetid: c26d27ee-7dd3-49f0-a79c-752d23693a2a
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la estructura LSKeyPack
+- Estructura LSKeyPack Servicios de Escritorio remoto
 - Puntero de estructura LPLSKeyPack Servicios de Escritorio remoto
 topic_type:
 - apiref
@@ -15,19 +15,19 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2b1ac1f51e66a0a3c15c33f2535bc02f1fd3528f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3a8b2c7c8b6c42464e273008f9de2730b41ea64981e44583eb48f4125da3ba9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989095"
 ---
 # <a name="lskeypack-structure"></a>Estructura LSKeyPack
 
-Contiene información sobre un paquete de claves de licencias de Servicios de Escritorio remoto específico.
+Contiene información sobre un paquete de Servicios de Escritorio remoto de licencias específico.
 
 > [!Note]  
-> Esta estructura no está definida en ningún archivo de encabezado. Para usar esta estructura, debe definirla usted mismo tal como se muestra en este tema.
+> Esta estructura no se define en ningún archivo de encabezado. Para usar esta estructura, debe definirla usted mismo como se muestra en este tema.
 
  
 
@@ -83,14 +83,14 @@ Tipo de paquete de claves.
 **szCompanyName**
 </dt> <dd>
 
-Nombre de la compañía que emitió el paquete de claves.
+Nombre de la empresa que emitió el paquete de claves.
 
 </dd> <dt>
 
 **szKeyPackId**
 </dt> <dd>
 
-IDENTIFICADOR del paquete de claves.
+Identificador del paquete de claves.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Nombre del producto al que pertenece este paquete de claves.
 **szProductId**
 </dt> <dd>
 
-IDENTIFICADOR del producto al que pertenece este paquete de claves.
+Identificador del producto al que pertenece este paquete de claves.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Descripción del producto al que pertenece este paquete de claves.
 **wMajorVersion**
 </dt> <dd>
 
-Versión principal del producto al que pertenece este paquete de claves.
+Versión principal del producto al que pertenece este key pack.
 
 </dd> <dt>
 
@@ -167,21 +167,21 @@ Número de serie de la primera licencia.
 **dwTotalLicenseInKeyPack**
 </dt> <dd>
 
-Número total de licencias en el paquete de claves.
+Número total de licencias del paquete de claves.
 
 </dd> <dt>
 
 **dwProductFlags**
 </dt> <dd>
 
-Marcas.
+Banderas.
 
 </dd> <dt>
 
 **dwKeyPackId**
 </dt> <dd>
 
-IDENTIFICADOR del paquete de claves.
+Identificador del paquete de claves.
 
 </dd> <dt>
 
@@ -217,7 +217,7 @@ Número de licencias.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |

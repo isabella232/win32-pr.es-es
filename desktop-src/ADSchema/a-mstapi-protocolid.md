@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TAPI-Protocol-ID
+title: Atributo ms-TAPI-Protocol-Id
 description: Este atributo indica el tipo de conferencia TAPI.
 ms.assetid: 6114efc3-4201-4f20-81ca-4f90a9e44f60
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-TAPI-Protocol-ID
-- msTAPI-ProtocolId atributo AD Schema
+- Esquema de AD del atributo ms-TAPI-Protocol-Id
+- Esquema de AD del atributo msTAPI-ProtocolId
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10538f66b98988fafa69d4fe2f3e70b47348c999
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b6fb09579ae7c97c9a44140cf634b9fab42f257401fb00091ac74209b0a4908b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066185"
 ---
-# <a name="ms-tapi-protocol-id-attribute"></a>atributo MS-TAPI-Protocol-ID
+# <a name="ms-tapi-protocol-id-attribute"></a>Atributo ms-TAPI-Protocol-Id
 
-Este atributo indica el tipo de conferencia TAPI. Este atributo se usa para determinar cómo se interpreta el BLOB binario en el atributo [**MS-TAPI-Conference-BLOB**](a-mstapi-conferenceblob.md) . Este atributo es una cadena arbitraria, normalmente con menos de 100 caracteres de longitud.
+Este atributo indica el tipo de conferencia TAPI. Este atributo se usa para determinar cómo se interpretará el blob binario en el atributo [**ms-TAPI-Conference-Blob.**](a-mstapi-conferenceblob.md) Este atributo es una cadena arbitraria, normalmente de menos de 100 caracteres de longitud.
 
 
 
 | Entrada | Value |
 |-------------------|------------------------------------------------------------|
-| CN                | Identificador de protocolo MS-TAPI                                        |
-| Nombre para mostrar de LDAP | msTAPI-ProtocolId                                          |
-| Tamaño              | \-                                                         |
-| Actualizar privilegio  | No se requieren privilegios especiales.                            |
-| Frecuencia de actualización  | Se establece una vez en el momento de crear el objeto de Rt-Conference. |
+| CN                | ms-TAPI-Protocol-Id                                        |
+| Ldap-Display-Name | msTAPI-ProtocolId                                          |
+| Size              | \-                                                         |
+| Actualizar privilegios  | No se requieren privilegios especiales.                            |
+| Frecuencia de actualización  | Establezca una vez en el momento de crear el Rt-Conference objeto . |
 | Attribute-Id      | 1.2.840.113556.1.4.1699                                    |
-| System-ID-GUID    | 89c1ebcf-7a5f-41fd-99ca-c900b32299ab                       |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                |
+| System-Id-Guid    | 89c1ebcf-7a5f-41fd-99ca-c900b32299ab                       |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                |
 
 
 
@@ -54,18 +54,18 @@ Este atributo indica el tipo de conferencia TAPI. Este atributo se usa para dete
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Microsoft-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Este atributo indica el tipo de conferencia TAPI. Este atributo se usa para dete
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Microsoft-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Este atributo indica el tipo de conferencia TAPI. Este atributo se usa para dete
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Microsoft-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Este atributo indica el tipo de conferencia TAPI. Este atributo se usa para dete
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Microsoft-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Este atributo indica el tipo de conferencia TAPI. Este atributo se usa para dete
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Microsoft-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> |
 
 
 

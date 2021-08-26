@@ -1,7 +1,7 @@
 ---
-description: El método CreateDIB crea un mapa de bits independiente del dispositivo GDI (DIB). El DIB se asigna en un bloque mempory compartido, que elimina una operación de copia cuando el filtro propietario blits la imagen.
+description: El método CreateDIB crea un mapa de bits independiente del dispositivo (DIB) de GDI. La DIB se asigna en un bloque mempory compartido, que elimina una operación de copia cuando el filtro propietario corta la imagen.
 ms.assetid: 8a9ab1cf-4104-48e9-ba6c-28d0f1a1d226
-title: Método CImageAllocator. CreateDIB (Winutil. h)
+title: Método CImageAllocator.CreateDIB (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 316b7aeadfa442a8df4e80075380464758f3c6bc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 94a629831ea50219b47500c0637cfeaebfbc95b1ee99a8b9d3872a655ab5485c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055485"
 ---
-# <a name="cimageallocatorcreatedib-method"></a>CImageAllocator. CreateDIB, método
+# <a name="cimageallocatorcreatedib-method"></a>CImageAllocator.CreateDIB (método)
 
-El `CreateDIB` método crea un mapa de bits independiente del dispositivo GDI (DIB). El DIB se asigna en un bloque mempory compartido, que elimina una operación de copia cuando el filtro propietario blits la imagen.
+El `CreateDIB` método crea un mapa de bits independiente del dispositivo GDI (DIB). La DIB se asigna en un bloque mempory compartido, que elimina una operación de copia cuando el filtro propietario corta la imagen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,23 +43,23 @@ HRESULT CreateDIB(
 
 <dl> <dt>
 
-*Insize* 
+*InSize* 
 </dt> <dd>
 
 Tamaño del mapa de bits.
 
 </dd> <dt>
 
-*DibData* \[ CLI\]
+*DibData* \[ Ref\]
 </dt> <dd>
 
-Referencia a una estructura [**DIBDATA**](dibdata.md) . El método rellena esta estructura con información sobre el DIB.
+Referencia a una [**estructura DIBDATA.**](dibdata.md) El método rellena esta estructura con información sobre la DIB.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve \_ si es correcto, o un código de error en caso contrario.
+Devuelve S \_ OK si se realiza correctamente o un código de error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Devuelve \_ si es correcto, o un código de error en caso contrario.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,10 +76,10 @@ Devuelve \_ si es correcto, o un código de error en caso contrario.
 
 <dl> <dt>
 
-[**Clase CImageAllocator**](cimageallocator.md)
+[**CImageAllocator (clase)**](cimageallocator.md)
 </dt> <dt>
 
-[**CImageAllocator:: Alloc**](cimageallocator-alloc.md)
+[**CImageAllocator::Alloc**](cimageallocator-alloc.md)
 </dt> </dl>
 
  

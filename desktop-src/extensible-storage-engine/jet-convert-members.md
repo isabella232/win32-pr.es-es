@@ -1,29 +1,29 @@
 ---
-description: 'Más información acerca de: JET_CONVERT miembros'
-title: Miembros de JET_CONVERT
+description: 'Más información sobre: JET_CONVERT miembros'
+title: JET_CONVERT miembros
 TOCTitle: JET_CONVERT members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.JET_CONVERT
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_convert_members(v=EXCHG.10)
 ms:contentKeyID: 55103539
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1943588cf4210a8961d81060d41920b492a8c674
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cae8f2cd9cd3438978645956d840bf34955e277e0686d9883b4e3f3b2a2f1def
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017645"
 ---
-# <a name="jet_convert-members"></a>Miembros de JET_CONVERT
+# <a name="jet_convert-members"></a>JET_CONVERT miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-**Nota: esta API ya está obsoleta.**
+**NOTA: Esta API ahora está obsoleta.**
 
-Opciones de conversión para [JetCompact (JET_SESID, cadena, cadena, JET_PFNSTATUS, JET_CONVERT, CompactGrbit)](./api.jetcompact-method.md). Esta característica se ha suspendido en Windows Server 2003.
+Opciones de conversión [para JetCompact(JET_SESID, String, String, JET_PFNSTATUS, JET_CONVERT, CompactGrbit).](./api.jetcompact-method.md) Esta característica se interrumpió en Windows Server 2003.
 
-El tipo de [JET_CONVERT](./jet-convert-class.md) expone los siguientes miembros.
+El [JET_CONVERT](./jet-convert-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -65,7 +65,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -75,7 +75,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -98,6 +98,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_CONVERT (clase)](./jet-convert-class.md)
+[JET_CONVERT clase](./jet-convert-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

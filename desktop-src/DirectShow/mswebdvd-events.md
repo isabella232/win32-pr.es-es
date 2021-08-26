@@ -4,12 +4,12 @@ ms.assetid: e43ea4ad-8ebe-4096-a9f3-a8f618b46877
 title: Eventos MSWebDVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f363f15c35cbfe61a3ab1ff3703a31307785481
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e61a37eda7b8c2ebafc704d96195cc9e92e70fbd9d8bfda4aa7c971cd890e41c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042715"
 ---
 # <a name="mswebdvd-events"></a>Eventos MSWebDVD
 
@@ -19,43 +19,43 @@ ms.locfileid: "105686280"
  
 
 > [!Note]  
-> Esta API está en desuso. Para obtener información acerca de la reproducción de DVD y la navegación en DirectShow, consulte [aplicaciones de DVD](dvd-applications.md).
+> Esta API está en desuso. Para obtener información sobre la reproducción y navegación de DVD DirectShow, vea [Aplicaciones de DVD.](dvd-applications.md)
 
  
 
-El control MSWebDVD de Microsoft® ActiveX® notifica a la aplicación cuando se producen varios tipos de eventos internos o cuando se encuentra determinada información en el disco.
+El control MSWebDVD microsoft® ActiveX® notifica a la aplicación cuando se producen varios tipos de eventos internos o cuando se encuentra cierta información en el disco.
 
-La mayoría de los eventos se relacionan con los controles de operación de usuario (UOP). Los autores de DVD pueden codificar el disco para que cualquier comando de DVD (como **PlayForwards**, **PAUSE**, **showmenu**, etc.) se pueda deshabilitar en cualquier momento. Por ejemplo, la mayoría de los discos no permitirán a los usuarios avanzar rápidamente o mostrar un menú mientras se reproduce la advertencia del FBI. Una vez finalizada la advertencia, el disco permite estas operaciones. Mediante el control de los eventos de UOP, la aplicación puede actualizar su interfaz de usuario para mostrar al usuario qué comandos están permitidos actualmente en el disco. La manera más común de hacerlo es deshabilitar un botón. Por ejemplo, si la aplicación recibe un evento PlayForwards con **bEnabled** establecido en **false**, puede deshabilitar el botón reproducir. Cuando reciba ese evento con **bEnabled** establecido en **true**, podría volver a habilitar el botón.
+La mayoría de los eventos están relacionados con los controles de operación de usuario (UOP). Los autores de DVD pueden codificar el disco para que cualquier comando de DVD (como **PlayForwards,** **Pause,** **ShowMenu,** entre otros) se pueda deshabilitar en cualquier momento. Por ejemplo, la mayoría de los discos no permitirán a los usuarios avanzar rápidamente ni mostrar un menú mientras se reproduce la advertencia deIENDO. Una vez que se ha terminado la advertencia, el disco permite estas operaciones. Al controlar los eventos UOP, la aplicación puede actualizar su interfaz de usuario para mostrar al usuario qué comandos permite actualmente el disco. La manera más común de hacerlo es deshabilitar un botón. Por ejemplo, si la aplicación recibió un evento PlayForwards con **bEnabled** establecido en **FALSE,** podría deshabilitar el botón Reproducir. Cuando recibió ese evento con **bEnabled** establecido en **TRUE,** podría volver a habilitar el botón.
 
-Hay tres eventos que no se relacionan con los controles UOP. El evento **DVDNotify** notifica a la aplicación de muchos tipos diferentes de eventos relacionados con DVD, que se identifican en el parámetro *EventCode* . Algunos eventos tienen información adicional en los parámetros *parám1* y *Param2* . El evento **ReadyStateChange** notifica a la aplicación de los cambios en la propiedad MSWebDVD ReadyState, que es una propiedad común a todos los controles ActiveX. El evento **UpdateOverlay** se envía a las aplicaciones solo si hospedan MSWebDVD en modo sin ventanas. Las aplicaciones deben responder a este evento solo si muestran botones flotantes sobre el rectángulo del vídeo en el modo de pantalla completa.
+Hay tres eventos que no están relacionados con los controles UOP. El **evento DVDNotify** notifica a la aplicación muchos tipos diferentes de eventos relacionados con DVD, que se identifican en el *parámetro EventCode.* Algunos eventos tienen información adicional en los *parámetros Param1* *y Param2.* El **evento ReadyStateChange** notifica a la aplicación los cambios en la propiedad ReadyState MSWebDVD, que es una propiedad común a todos los ActiveX controles. El **evento UpdateOverlay** se envía a las aplicaciones solo si hospedan MSWebDVD en modo sin ventanas. Las aplicaciones solo deben responder a este evento si muestran botones flotantes sobre el rectángulo de vídeo en modo de pantalla completa.
 
 
 
 | Evento                                                                  | Descripción                                                                           |
 |------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [**ChangeCurrentAngle**](changecurrentangle.md)                       | Se envía cuando el disco habilita o deshabilita el cambio de ángulo.                            |
+| [**ChangeCurrentAngle**](changecurrentangle.md)                       | Se envía cuando el disco habilita o deshabilita el cambio del ángulo.                            |
 | [**ChangeCurrentAudioStream**](changecurrentaudiostream.md)           | Se envía cuando el disco habilita o deshabilita el cambio de la secuencia de audio.                     |
-| [**ChangeCurrentSubpictureStream**](changecurrentsubpicturestream.md) | Se envía cuando se ha habilitado o deshabilitado el comando **ChangeCurrentSubpictureStream** . |
-| [**DVDNotify**](dvdnotify.md)                                         | Notifica a una aplicación de muchos eventos de DVD y instrucciones de disco diferentes.           |
-| [**Pausar**](pauseon.md)                                             | Se envía cuando se ha habilitado o deshabilitado el comando **pausar** .                         |
-| [**PlayAtTime**](playattime.md)                                       | Se envía cuando se ha habilitado o deshabilitado el comando **PlayAtTime** .                    |
-| [**PlayAtTimeInTitle**](playattimeintitle.md)                         | Se envía cuando se ha habilitado o deshabilitado el comando **PlayAtTimeInTitle** .             |
-| [**PlayBackwards**](playbackwards.md)                                 | Se envía cuando se ha habilitado o deshabilitado el comando **PlayBackwards** .                 |
-| [**PlayChapter**](playchapter.md)                                     | Se envía cuando se ha habilitado o deshabilitado el comando **PlayChapter** .                   |
-| [**PlayChapterInTitle**](playchapterintitle.md)                       | Se envía cuando se ha habilitado o deshabilitado el comando **PlayChapterInTitle** .            |
-| [**PlayForwards**](playforwards.md)                                   | Se envía cuando se ha habilitado o deshabilitado el comando **PlayForwards** .                  |
-| [**PlayNextChapter**](playnextchapter.md)                             | Se envía cuando se ha habilitado o deshabilitado el comando **PlayNextChapter** .               |
-| [**PlayPrevChapter**](playprevchapter.md)                             | Se envía cuando se ha habilitado o deshabilitado el comando **PlayPrevChapter** .               |
-| [**PlayTitle**](playtitle.md)                                         | Se envía cuando se ha habilitado o deshabilitado el comando **PlayTitle** .                     |
-| [**ReadyStateChange**](readystatechange.md)                           | Se envía cuando cambia la propiedad **ReadyState** del control MSWebDVD.            |
-| [**ReplayChapter**](replaychapter.md)                                 | Se envía cuando se ha habilitado o deshabilitado el comando **ReplayChapter** .                 |
-| [**Reanudar**](resume.md)                                               | Se envía cuando se ha habilitado o deshabilitado el comando de **reanudación** .                        |
-| [**ReturnFromSubmenu**](returnfromsubmenu.md)                         | Se envía cuando se ha habilitado o deshabilitado el comando **ReturnFromSubmenu** .             |
-| [**SelectOrActivatButton**](selectoractivatbutton.md)                 | Se envía cuando el disco habilita o deshabilita la selección o activación de los botones de menú.   |
-| [**ShowMenu**](showmenu.md)                                           | Se envía cuando el disco habilita o deshabilita el modo en que se muestra un menú.                         |
-| [**StillOff**](stilloff.md)                                           | Se envía cuando se ha habilitado o deshabilitado el comando **StillOff** .                      |
-| [**Stop**](stop.md)                                                   | Se envía cuando se ha habilitado o deshabilitado el comando de **detención** .                          |
-| [**UpdateOverlay**](updateoverlay.md)                                 | Se envía cuando se mueve o se cambia el tamaño de la superficie superpuesta o su clave de color ha cambiado. |
+| [**ChangeCurrentSubpictureStream**](changecurrentsubpicturestream.md) | Se envía cuando **el comando ChangeCurrentSubpictureStream** se ha habilitado o deshabilitado. |
+| [**DVDNotify**](dvdnotify.md)                                         | Notifica a una aplicación muchos eventos de DVD diferentes e instrucciones de disco.           |
+| [**PauseOn**](pauseon.md)                                             | Se envía cuando **el comando Pausa** se ha habilitado o deshabilitado.                         |
+| [**PlayAtTime**](playattime.md)                                       | Se envía cuando **el comando PlayAtTime** se ha habilitado o deshabilitado.                    |
+| [**PlayAtTimeInTitle**](playattimeintitle.md)                         | Se envía cuando **el comando PlayAtTimeInTitle** se ha habilitado o deshabilitado.             |
+| [**PlayBackwards**](playbackwards.md)                                 | Se envía cuando **el comando PlayBackwards** se ha habilitado o deshabilitado.                 |
+| [**PlayChapter**](playchapter.md)                                     | Se envía cuando **el comando PlayChapter** se ha habilitado o deshabilitado.                   |
+| [**PlayChapterInTitle**](playchapterintitle.md)                       | Se envía cuando **el comando PlayChapterInTitle** se ha habilitado o deshabilitado.            |
+| [**PlayForwards**](playforwards.md)                                   | Se envía cuando **el comando PlayForwards** se ha habilitado o deshabilitado.                  |
+| [**PlayNextChapter**](playnextchapter.md)                             | Se envía cuando **el comando PlayNextChapter** se ha habilitado o deshabilitado.               |
+| [**PlayPrevChapter**](playprevchapter.md)                             | Se envía cuando **el comando PlayPrevChapter** se ha habilitado o deshabilitado.               |
+| [**PlayTitle**](playtitle.md)                                         | Se envía cuando **el comando PlayTitle** se ha habilitado o deshabilitado.                     |
+| [**ReadyStateChange**](readystatechange.md)                           | Se envía cuando **la propiedad ReadyState** del control MSWebDVD ha cambiado.            |
+| [**ReplayChapter**](replaychapter.md)                                 | Se envía cuando **el comando ReplayChapter** se ha habilitado o deshabilitado.                 |
+| [**Reanudar**](resume.md)                                               | Se envía cuando **el comando Reanudar** se ha habilitado o deshabilitado.                        |
+| [**ReturnFromSubmenu**](returnfromsubmenu.md)                         | Se envía cuando **el comando ReturnFromSubmenu** se ha habilitado o deshabilitado.             |
+| [**SelectOrActivatButton**](selectoractivatbutton.md)                 | Se envía cuando el disco habilita o deshabilita la selección o activación de botones de menú.   |
+| [**ShowMenu**](showmenu.md)                                           | Se envía cuando el disco habilita o deshabilita la presentación de un menú.                         |
+| [**StillOff**](stilloff.md)                                           | Se envía cuando **el comando StillOff** se ha habilitado o deshabilitado.                      |
+| [**Stop**](stop.md)                                                   | Se envía cuando **el comando Stop** se ha habilitado o deshabilitado.                          |
+| [**UpdateOverlay**](updateoverlay.md)                                 | Se envía cuando se ha movido o cambiado el tamaño de la superficie de superposición o si su clave de color ha cambiado. |
 
 
 

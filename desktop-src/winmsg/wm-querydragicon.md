@@ -1,21 +1,21 @@
 ---
-description: Se envía a una ventana minimizada (icónica).
+description: Se envía a una ventana minimizada (icono).
 ms.assetid: e4f0e638-f606-4745-888b-14a846c7fd37
-title: Mensaje de WM_QUERYDRAGICON (Winuser. h)
+title: WM_QUERYDRAGICON mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed2c6040df06923e778eb717db4148bed233db4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20aac405a247f89a31c49f60a4e421fa171465d399dcb61a436936de5c646362
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055995"
 ---
-# <a name="wm_querydragicon-message"></a>Mensaje de QUERYDRAGICON de WM \_
+# <a name="wm_querydragicon-message"></a>Mensaje \_ DE WM QUERYDRADURN
 
-Se envía a una ventana minimizada (icónica). La ventana está a punto de ser arrastrada por el usuario, pero no tiene un icono definido para su clase. Una aplicación puede devolver un identificador a un icono o un cursor. El sistema muestra este cursor o icono mientras el usuario arrastra el icono.
+Se envía a una ventana minimizada (icono). El usuario está a punto de arrastrar la ventana, pero no tiene un icono definido para su clase. Una aplicación puede devolver un identificador a un icono o cursor. El sistema muestra este cursor o icono mientras el usuario arrastra el icono.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -46,13 +46,13 @@ Este parámetro no se utiliza.
 
 Tipo: **LRESULT**
 
-Una aplicación debe devolver un identificador a un cursor o icono que el sistema va a mostrar mientras el usuario arrastra el icono. El cursor o el icono deben ser compatibles con la resolución del controlador de pantalla. Si la aplicación devuelve **null**, el sistema muestra el cursor predeterminado.
+Una aplicación debe devolver un identificador a un cursor o icono que el sistema va a mostrar mientras el usuario arrastra el icono. El cursor o el icono deben ser compatibles con la resolución del controlador de pantalla. Si la aplicación devuelve **NULL,** el sistema muestra el cursor predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el usuario arrastra el icono de una ventana sin un icono de clase, el sistema reemplaza el icono por un cursor predeterminado. Si la aplicación requiere que se muestre un cursor diferente durante el arrastre, debe devolver un identificador para el cursor o el icono compatible con la resolución del controlador de pantalla. Si una aplicación devuelve un identificador a un cursor de color o un icono, el sistema convierte el cursor o el icono en blanco y negro. La aplicación puede llamar a la función [**LoadCursor**](/windows/win32/api/winuser/nf-winuser-loadcursora) o [**LoadIcon**](/windows/win32/api/winuser/nf-winuser-loadicona) para cargar un cursor o un icono de los recursos en su archivo ejecutable (. exe) y para recuperar este identificador.
+Cuando el usuario arrastra el icono de una ventana sin un icono de clase, el sistema reemplaza el icono por un cursor predeterminado. Si la aplicación requiere que se muestre otro cursor durante el arrastre, debe devolver un identificador al cursor o icono compatible con la resolución del controlador de pantalla. Si una aplicación devuelve un identificador a un cursor o icono de color, el sistema convierte el cursor o el icono en blanco y negro. La aplicación puede llamar a la [**función LoadCursor**](/windows/win32/api/winuser/nf-winuser-loadcursora) o [**LoadIcon**](/windows/win32/api/winuser/nf-winuser-loadicona) para cargar un cursor o icono desde los recursos de su archivo ejecutable (.exe) y recuperar este identificador.
 
-Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir el valor devuelto deseado en un **booleano** y devolver el valor directamente. Se omite el valor de **DWL \_ MSGRESULT** establecido por la función [**SetWindowLong**](/windows/win32/api/winuser/nf-winuser-setwindowlonga) .
+Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir el valor devuelto deseado en **un valor BOOL** y devolver el valor directamente. Se omite el valor **\_ MSGRESULT** de DWL establecido por la función [**SetWindowLong.**](/windows/win32/api/winuser/nf-winuser-setwindowlonga)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir 
 [**LoadIcon**](/windows/win32/api/winuser/nf-winuser-loadicona)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Windows](windows.md)

@@ -1,7 +1,7 @@
 ---
 description: El método GetVideoSize recupera el ancho y el alto del vídeo nativo.
 ms.assetid: b3461a56-705b-465a-9cfc-e86fd52a07c5
-title: Método CBaseControlVideo. GetVideoSize (Ctlutil. h)
+title: Método CBaseControlVideo.GetVideoSize (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4b1df6fe781f036043728050354519dfa6e28d00
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b49f58901ac362b5a03d069485ec4dbf74e22d4549dc628f26baa5c2bfa85234
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056945"
 ---
-# <a name="cbasecontrolvideogetvideosize-method"></a>CBaseControlVideo. GetVideoSize, método
+# <a name="cbasecontrolvideogetvideosize-method"></a>Método CBaseControlVideo.GetVideoSize
 
-El `GetVideoSize` método recupera el ancho y el alto del vídeo nativo.
+El método recupera el ancho y el alto del `GetVideoSize` vídeo nativo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,20 +46,20 @@ HRESULT GetVideoSize(
 *pWidth* 
 </dt> <dd>
 
-Puntero al ancho de vídeo.
+Puntero al ancho del vídeo.
 
 </dd> <dt>
 
 *pHeight* 
 </dt> <dd>
 
-Puntero al alto de vídeo.
+Puntero al alto del vídeo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Devuelve un valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CBaseControlVideo**](cbasecontrolvideo.md)
+[**CBaseControlVideo (clase)**](cbasecontrolvideo.md)
 </dt> </dl>
 
  

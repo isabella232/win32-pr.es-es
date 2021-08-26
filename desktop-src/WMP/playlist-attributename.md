@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. attributeName
+title: Playlist.attributeName
 description: La propiedad attributeName recupera el nombre de un atributo en un índice especificado.
 ms.assetid: 3ff68e78-5fa1-4ca6-aa59-4752dbaee52a
 keywords:
-- Lista de Media Player de Windows. attributeName
+- Playlist.attributeName Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,40 +14,40 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4560a7ca2766ee0bbadc582af878bca87e0834e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 695e0ee00aca0fe7743a028e0e7830e1839c0b2f89b42a94e9ce1dbe29ef35ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003215"
 ---
-# <a name="playlistattributename"></a>Lista de reproducción. attributeName
+# <a name="playlistattributename"></a>Playlist.attributeName
 
-La propiedad **attributeName** recupera el nombre de un atributo en un índice especificado.
+La **propiedad attributeName** recupera el nombre de un atributo en un índice especificado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *currentPlaylist*. **attributeName**( *Índice* )
+*player*. *currentPlaylist*. **attributeName**( *index* )
 
 ## <a name="parameters"></a>Parámetros
 
 *índice*
 
-**Número** (**largo**) que contiene el índice.
+**Number** (**long**) que contiene el índice.
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de solo lectura.
+Esta propiedad es una cadena de solo **lectura.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La propiedad **attributeCount** recupera el número de atributos. Dado un índice, **attributeName** devuelve una **cadena** que se puede usar junto con **setItemInfo** o **getItemInfo** para especificar o recuperar un valor para el atributo.
+La propiedad attributeCount recupera el número de **atributos.** Dado un índice, **attributeName** devuelve una **cadena** que se puede usar junto con **setItemInfo** u **getItemInfo** para especificar o recuperar un valor para el atributo.
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
-Para obtener información acerca de los atributos admitidos por Media Player de Windows, consulte la [referencia](attribute-reference.md)de los atributos de Windows Media Player.
+Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la referencia Reproductor de Windows Media [atributo .](attribute-reference.md)
 
-Vea la propiedad [attributeCount](playlist-attributecount.md) para ver el código de ejemplo que usa esta propiedad.
+Vea la [propiedad attributeCount](playlist-attributecount.md) para obtener código de ejemplo que usa esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Vea la propiedad [attributeCount](playlist-attributecount.md) para ver el códig
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -64,22 +64,22 @@ Vea la propiedad [attributeCount](playlist-attributecount.md) para ver el códig
 
 <dl> <dt>
 
-[**Objeto Playlist**](playlist-object.md)
+[**Objeto de lista de reproducción**](playlist-object.md)
 </dt> <dt>
 
-[**Lista de reproducción. attributeCount**](playlist-attributecount.md)
+[**Playlist.attributeCount**](playlist-attributecount.md)
 </dt> <dt>
 
-[**Lista de reproducción. getItemInfo**](playlist-getiteminfo.md)
+[**Playlist.getItemInfo**](playlist-getiteminfo.md)
 </dt> <dt>
 
-[**Lista de reproducción. setItemInfo**](playlist-setiteminfo.md)
+[**Playlist.setItemInfo**](playlist-setiteminfo.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

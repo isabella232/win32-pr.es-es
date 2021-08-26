@@ -1,23 +1,23 @@
 ---
-title: Control de canalizaciones asincrónicas en el servidor
+title: Control de canalización asincrónica del lado servidor
 description: La rutina de administrador de una función asincrónica siempre recibe el identificador asincrónico como primer parámetro.
 ms.assetid: ddf9c319-6c4d-4de1-ab29-0ef9b76531ba
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2b0f11372090f1fd181c0d7272aa1446e5e3d22
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 58b879cad9b3bde57798a3ebd3c04f7c9a76cb0d1ed055d219195db51cbed4a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104077861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017795"
 ---
-# <a name="server-side-asynchronous-pipe-handling"></a>Control de canalizaciones asincrónicas en el servidor
+# <a name="server-side-asynchronous-pipe-handling"></a>Control de canalización asincrónica del lado servidor
 
-La rutina de administrador de una función asincrónica siempre recibe el identificador asincrónico como primer parámetro. El servidor usa este identificador para enviar la respuesta y enviar los datos de la canalización de salida a medida que estén disponibles. El identificador sigue siendo válido hasta que se llama a [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) en él, se anula la llamada de [**RpcAsyncAbortCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall)o se produce una excepción en la rutina Manager. La aplicación debe realizar un seguimiento de todos los punteros de nivel superior de los \[ parámetros **out** \] y \[ **in, out** \] , para actualizarlos antes de completar la llamada. La aplicación también debe realizar un seguimiento de las \[ [](/windows/desktop/Midl/in) \] canalizaciones de salida y de \[ [**salida**](/windows/desktop/Midl/out-idl) \] .
+La rutina de administrador de una función asincrónica siempre recibe el identificador asincrónico como primer parámetro. El servidor usa este identificador para enviar la respuesta y enviar los datos de canalización a medida que están disponibles. El identificador sigue siendo válido hasta que se llama a [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) en él, [**rpcAsyncAbortCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall)anula la llamada o se produce una excepción en la rutina de administrador. La aplicación debe realizar un seguimiento de todos los punteros de nivel superior para los parámetros out y \[  \] \[ **in, out,** con el fin de actualizarlos antes de \] completar la llamada. La aplicación también debe realizar un seguimiento de las \[ [](/windows/desktop/Midl/in) \] canalizaciones de \[ [](/windows/desktop/Midl/out-idl) \] entrada y salida.
 
-El servidor envía datos de canalización asincrónica de la misma manera que el cliente. Consulte [control de canalizaciones asincrónicas en el lado cliente](client-side-asynchronous-pipe-handling.md).
+El servidor envía datos de canalización asincrónica de la misma manera que el cliente. Vea [Control de canalización asincrónica del lado cliente.](client-side-asynchronous-pipe-handling.md)
 
-El servidor recibe datos de canalización asíncronos de la misma manera que el cliente. Si el mecanismo de recepción es llamadas a procedimiento asincrónico (APC), el servidor debe especificar un identificador de subproceso (en pasync->u. APC. hThread) y registrar el identificador asincrónico con la biblioteca en tiempo de ejecución.
+El servidor recibe los datos de canalización asincrónica de la misma manera que el cliente. Si el mecanismo de recepción es llamadas a procedimiento asincrónico (APC), el servidor debe especificar un identificador de subproceso (en pAsync->u.APC.hThread) y registrar el identificador asincrónico con la biblioteca en tiempo de ejecución.
 
 ## <a name="example"></a>Ejemplo
 
@@ -184,6 +184,6 @@ void MyAsyncPipeAPCRoutine (
 [RPC asincrónica del lado servidor](server-side-asynchronous-rpc.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

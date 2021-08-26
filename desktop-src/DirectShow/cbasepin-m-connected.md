@@ -1,7 +1,7 @@
 ---
 description: Puntero al pin que está conectado a este pin.
 ms.assetid: 358f17d4-fc27-4fb2-b18a-f384fbca40a0
-title: 'Miembro CBasePin:: m_Connected (Amfilter. h)'
+title: Miembro CBasePin::m_Connected (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eab47440f54435953978aea35c62de8ca1b085ea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c58607ac16d5d67dd30a2d652da40b89ab15d446da799091434a7918ce781eb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056315"
 ---
-# <a name="cbasepinm_connected-member"></a>Miembro conectado CBasePin:: m \_
+# <a name="cbasepinm_connected-member"></a>Miembro conectado CBasePin::m \_
 
 Puntero al pin que está conectado a este pin.
 
@@ -42,8 +42,8 @@ IPin *m_Connected;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ IPin *m_Connected;
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

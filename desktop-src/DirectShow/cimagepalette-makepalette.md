@@ -1,7 +1,7 @@
 ---
-description: El método MakePalette crea una paleta lógica a partir de la tabla de colores en un formato de vídeo.
+description: El método MakePalette crea una paleta lógica a partir de la tabla de colores en formato de vídeo.
 ms.assetid: f158e529-d683-4210-818d-21a834fc7683
-title: Método CImagePalette. MakePalette (Winutil. h)
+title: Método CImagePalette.MakePalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 20c4484b2666b25b5d713ede450a9a5a99f93348
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f270797c224617c02b14752b15bbdb54b64a7457670e0b26bae54c39a93657eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055395"
 ---
-# <a name="cimagepalettemakepalette-method"></a>CImagePalette. MakePalette, método
+# <a name="cimagepalettemakepalette-method"></a>Método CImagePalette.MakePalette
 
-El `MakePalette` método crea una paleta lógica a partir de la tabla de colores en un formato de vídeo.
+El `MakePalette` método crea una paleta lógica a partir de la tabla de colores en formato de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,20 +46,20 @@ HPALETTE MakePalette(
 *pVideoInfo* 
 </dt> <dd>
 
-Puntero a una estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) que contiene la tabla de colores.
+Puntero a una [**estructura VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) que contiene la tabla de colores.
 
 </dd> <dt>
 
 *szDevice* 
 </dt> <dd>
 
-Puntero a una cadena que contiene el nombre del dispositivo de pantalla, devuelto por la función **EnumDisplayDevices** de GDI. Para usar el dispositivo de pantalla principal, establezca este parámetro en **null**.
+Puntero a una cadena que contiene el nombre del dispositivo para mostrar, tal como lo devuelve la función **EnumDisplayDevices de** GDI. Para usar el dispositivo de pantalla principal, establezca este parámetro en **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se realiza correctamente, devuelve un identificador a la paleta. De lo contrario, devuelve **null**.
+Si se realiza correctamente, devuelve un identificador a la paleta. De lo contrario, devuelve **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Si se realiza correctamente, devuelve un identificador a la paleta. De lo contra
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Si se realiza correctamente, devuelve un identificador a la paleta. De lo contra
 
 <dl> <dt>
 
-[**Clase CImagePalette**](cimagepalette.md)
+[**CImagePalette (clase)**](cimagepalette.md)
 </dt> </dl>
 
  

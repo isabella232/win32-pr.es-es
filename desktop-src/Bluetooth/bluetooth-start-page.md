@@ -3,16 +3,16 @@ title: Bluetooth
 description: Bluetooth es un protocolo estándar del sector que permite la conectividad inalámbrica para equipos, dispositivos portátiles, teléfonos móviles y otros dispositivos.
 ms.assetid: 2a86f30e-2594-405d-a2f5-9e9ce9ad278b
 keywords:
-- Bluetooth Bluetooth, página de inicio
-- página de inicio Bluetooth, Bluetooth
+- Bluetooth Bluetooth , página de inicio
+- página de inicio Bluetooth , Bluetooth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bdb45de3e8f6d02b1c5571cb5e1e5339c3b7c17
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: b040a75f5a88e9cb7c65bd33c7567db8cb97177d3c9651adad907a70ffe1f032
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004065"
 ---
 # <a name="bluetooth"></a>Bluetooth
 
@@ -22,15 +22,15 @@ Bluetooth es un protocolo estándar del sector que permite la conectividad inal�
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
-La interfaz de programación de aplicaciones Bluetooth permite a los desarrolladores usar los conocimientos de programación de red existentes para desarrollar o portabilidad de aplicaciones rápidamente.
+La Bluetooth de programación de aplicaciones permite a los desarrolladores usar el conocimiento de programación de red existente para desarrollar o portabilidad rápidamente aplicaciones.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-Bluetooth está diseñado para su uso por programadores de C/C++. Algunas características de Bluetooth están disponibles con Windows Sockets. Es necesario estar familiarizado con las redes de Microsoft Windows y la programación de Windows Sockets.
+Bluetooth está diseñado para su uso por parte de programadores de C/C++. Algunas Bluetooth características están disponibles con Windows Sockets. Es necesario estar familiarizado con las Windows de microsoft y Windows sockets.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
-La compatibilidad con Bluetooth de Microsoft comienza con Windows XP con Service Pack 1 (SP1).
+La compatibilidad Bluetooth Microsoft comienza con Windows XP con Service Pack 1 (SP1).
 
 La compatibilidad con Bluetooth 2.1 se ofrece en Windows Vista SP2 y Windows 7.
 
@@ -54,9 +54,9 @@ La compatibilidad con Bluetooth 2.1 se ofrece en Windows Vista SP2 y Windows 7.
 
 |    Recurso                          |    Descripción                     |
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [Preguntas más frecuentes sobre tecnología inalámbrica Bluetooth](https://www.microsoft.com/whdc/connect/wireless/bth_faq.mspx) | Información sobre la compatibilidad con tecnología inalámbrica Bluetooth para sistemas operativos Windows, centrada principalmente en Windows Vista. |
-| [Foro del SDK inalámbrico de Windows Vista](https://social.msdn.microsoft.com/Forums/en/vistawirelesssdk/threads)   | Analice la implementación de Bluetooth en relación con Windows Vista.                                                              |
-| [Foro del SDK inalámbrico de Windows XP](https://social.msdn.microsoft.com/Forums/xpwirelesssdk/threads)     | Analizar la implementación de Bluetooth en relación con Windows XP.                                                                 |
+| [Bluetooth Preguntas más frecuentes sobre tecnología inalámbrica](https://www.microsoft.com/whdc/connect/wireless/bth_faq.mspx) | Información sobre Bluetooth tecnología inalámbrica para Windows sistemas operativos, centrada principalmente en Windows Vista. |
+| [Windows Foro del SDK inalámbrico de Vista](https://social.msdn.microsoft.com/Forums/en/vistawirelesssdk/threads)   | Analizar Bluetooth implementación en relación con Windows Vista.                                                              |
+| [Windows Foro del SDK inalámbrico de XP](https://social.msdn.microsoft.com/Forums/xpwirelesssdk/threads)     | Analizar Bluetooth implementación en relación con Windows XP.                                                                 |
 
 
 

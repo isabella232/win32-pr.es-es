@@ -1,12 +1,12 @@
 ---
-title: Método PublishLS de la Win32_TSLicenseServer de publicación
+title: Método PublishLS de la Win32_TSLicenseServer clase
 description: Publica el servidor Escritorio remoto licencias en Active Directory Domain Services.
 ms.assetid: 726d5dec-e438-455e-adb8-56d646d65d13
 ms.tgt_platform: multiple
 keywords:
 - Método PublishLS Servicios de Escritorio remoto
 - Método PublishLS Servicios de Escritorio remoto , Win32_TSLicenseServer clase
-- Win32_TSLicenseServer clase Servicios de Escritorio remoto , método PublishLS
+- Win32_TSLicenseServer clase Servicios de Escritorio remoto método , PublishLS
 topic_type:
 - apiref
 api_name:
@@ -43,19 +43,19 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe iniciar sesión como administrador de empresa en el bosque en el que el servidor de licencias es miembro.
+Para llamar a este método, debe haber iniciado sesión como administrador de empresa en el bosque del que es miembro el servidor de licencias.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
@@ -65,11 +65,11 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
+[**TSLicenseServer de Win32 \_**](win32-tslicenseserver.md)
 </dt> </dl>
 
  

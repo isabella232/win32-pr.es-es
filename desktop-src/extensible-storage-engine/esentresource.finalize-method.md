@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentResource. Finalize (método)'
-title: EsentResource. Finalize (método)
+description: Más información sobre el método EsentResource.Finalize
+title: Método EsentResource.Finalize
 TOCTitle: 'Finalize method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentResource.Finalize
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource.finalize(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3f64e7ef69e74e276a051acaa7b772445699b922
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e2d21d1e2f8115b2f61835ae9ff43f0197c27a975c99ccfd32f71b9598be656
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018725"
 ---
-# <a name="esentresourcefinalize-method"></a>EsentResource. Finalize (método)
+# <a name="esentresourcefinalize-method"></a>Método EsentResource.Finalize
 
-Finaliza una instancia de la clase EsentResource.
+Finalizará una instancia de la clase EsentResource.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Me.Finalize()
 protected override void Finalize()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ protected override void Finalize()
 
 [Miembros de EsentResource](./esentresource-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

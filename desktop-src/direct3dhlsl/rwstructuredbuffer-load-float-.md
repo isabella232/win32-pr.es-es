@@ -1,6 +1,6 @@
 ---
-title: 'RWStructuredBuffer:: Load (int) (función)'
-description: 'Lee los datos del búfer. | RWStructuredBuffer:: Load (int) (función)'
+title: Función RWStructuredBuffer::Load(int)
+description: Lee los datos del búfer. | Función RWStructuredBuffer::Load(int)
 ms.assetid: 9CB40579-6BF8-468C-81B8-936D9940458E
 keywords:
 - Carga de la función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c20998faef8f5a018aaf95571be3c9d64730c436
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e3cc8fbd0cfa18f2ac6c5d7109e8690d829bbde2175e8808865e68e29e63c955
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067765"
 ---
-# <a name="rwstructuredbufferloadint-function"></a>RWStructuredBuffer:: Load (int) (función)
+# <a name="rwstructuredbufferloadint-function"></a>Función RWStructuredBuffer::Load(int)
 
 Lee los datos del búfer.
 
@@ -39,7 +39,7 @@ Lee los datos del búfer.
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -52,15 +52,15 @@ Ubicación del búfer.
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo en la declaración del objeto [**RWStructuredBuffer**](sm5-object-rwstructuredbuffer.md) .
+El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto RWStructuredBuffer.**](sm5-object-rwstructuredbuffer.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -72,7 +72,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Cargar métodos](rwstructuredbuffer-load.md)
+[Métodos de carga](rwstructuredbuffer-load.md)
 </dt> </dl>
 
  

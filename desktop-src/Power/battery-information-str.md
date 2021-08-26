@@ -1,7 +1,7 @@
 ---
-description: Contiene información de la batería.
+description: Contiene información sobre la batería.
 ms.assetid: 6a236f48-5a06-4537-a769-bd68e5c0eb27
-title: BATTERY_INFORMATION estructura (Poclass. h)
+title: BATTERY_INFORMATION estructura (Poclass.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Poclass.h
 - Batclass.h
-ms.openlocfilehash: 1e892a14263822ddd009b162c6343975e1689683
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c449f325e03fb4ea81fe0aa148eaddcf65800b5a56356e22232477e0b6d4fa48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033015"
 ---
-# <a name="battery_information-structure"></a>Estructura de información de la batería \_
+# <a name="battery_information-structure"></a>Estructura BATTERY \_ INFORMATION
 
-Contiene información de la batería. Esta estructura la devuelve el código de control de la [**\_ información de \_ consulta \_**](ioctl-battery-query-information.md) de la batería de ioctl cuando se solicita el nivel de información de BatteryInformation.
+Contiene información sobre la batería. El código de control [**IOCTL \_ BATTERY QUERY \_ \_ INFORMATION**](ioctl-battery-query-information.md) devuelve esta estructura cuando se solicita el nivel de información BatteryInformation.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,17 +52,17 @@ typedef struct _BATTERY_INFORMATION {
 **Capabilities**
 </dt> <dd>
 
-Las capacidades de la batería. Este miembro puede ser uno o varios de los valores siguientes.
+Capacidades de batería. Este miembro puede ser uno o varios de los valores siguientes.
 
 
 
 | Value                                                                                                                                                                                                                                                                                 | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="BATTERY_CAPACITY_RELATIVE"></span><span id="battery_capacity_relative"></span><dl> <dt>**Batería \_ de 0x40000000 \_ relativo**</dt> a la capacidad <dt></dt> </dl>                    | Indica que la capacidad de la batería y la información de velocidad son relativas, y no en unidades específicas. Si no se establece este bit, las unidades de informe son milivatios-Hours (mWh) para Capacity y milivatios (mW) para Rate. Si se establece este bit, se pueden omitir todas las referencias a las unidades de la documentación de la otra batería. Toda la información de tarifas se registra en unidades por hora. Por ejemplo, si la capacidad de carga completa se indica como 100, una tarifa de 200 indica que la batería usará toda su capacidad en media hora.<br/> |
-| <span id="BATTERY_IS_SHORT_TERM"></span><span id="battery_is_short_term"></span><dl> <dt>**Batería \_ de ES 0x20000000 a \_ corto \_ plazo**</dt> <dt></dt> </dl>                               | Indica que la operación normal es para una función a la que se ha producido un error. Si no se establece este bit, se espera que la batería se use durante el uso normal del sistema.<br/>                                                                                                                                                                                                                                                                                                                                                                          |
-| <span id="BATTERY_SET_CHARGE_SUPPORTED"></span><span id="battery_set_charge_supported"></span><dl> <dt>**Batería \_ de SET \_ Charge \_ support compatible**</dt> <dt>0x00000001</dt> </dl>          | Indica que este dispositivo de batería admite las solicitudes Set Information del tipo BatteryCharge.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| <span id="BATTERY_SET_DISCHARGE_SUPPORTED"></span><span id="battery_set_discharge_supported"></span><dl> <dt>**Batería \_ de ESTABLECER la \_ descarga \_ compatible**</dt> <dt>0x00000002</dt> </dl> | Indica que este dispositivo de batería admite las solicitudes Set Information del tipo BatteryDischarge.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| <span id="BATTERY_SYSTEM_BATTERY"></span><span id="battery_system_battery"></span><dl> <dt>**Batería \_ de \_Batería del sistema**</dt> <dt>0x80000000</dt> </dl>                             | Indica que la batería puede proporcionar alimentación general para ejecutar el sistema.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| <span id="BATTERY_CAPACITY_RELATIVE"></span><span id="battery_capacity_relative"></span><dl> <dt>**BATERÍA \_ CAPACIDAD \_ RELATIVA**</dt> <dt>0x40000000</dt> </dl>                    | Indica que la información de capacidad y velocidad de la batería es relativa y no está en ninguna unidad específica. Si no se establece este bit, las unidades de informes son milivatios-hora (mWh) para la capacidad y milivatios (mW) para la velocidad. Si se establece este bit, se pueden omitir todas las referencias a las unidades de la otra documentación de la batería. Toda la información de velocidad se notifica en unidades por hora. Por ejemplo, si la capacidad totalmente cargada se notifica como 100, una velocidad de 200 indica que la batería usará toda su capacidad en media hora.<br/> |
+| <span id="BATTERY_IS_SHORT_TERM"></span><span id="battery_is_short_term"></span><dl> <dt>**BATERÍA \_ ¿ES \_ \_ una 0x20000000**</dt> <dt></dt> </dl>                               | Indica que la operación normal es para una función con seguridad de errores. Si no se establece este bit, se espera que la batería se utilice durante el uso normal del sistema.<br/>                                                                                                                                                                                                                                                                                                                                                                          |
+| <span id="BATTERY_SET_CHARGE_SUPPORTED"></span><span id="battery_set_charge_supported"></span><dl> <dt>**BATERÍA \_ SET \_ CHARGE \_ SUPPORTED**</dt> <dt>0x00000001</dt> </dl>          | Indica que este dispositivo de batería admite las solicitudes de información establecidas del tipo BatteryCharge.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| <span id="BATTERY_SET_DISCHARGE_SUPPORTED"></span><span id="battery_set_discharge_supported"></span><dl> <dt>**BATERÍA \_ ESTABLECER \_ LA LICENCIA ADMITIDA \_ 0X00000002**</dt> <dt></dt> </dl> | Indica que este dispositivo de batería admite las solicitudes de información establecidas del tipo BatteryDischarge.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| <span id="BATTERY_SYSTEM_BATTERY"></span><span id="battery_system_battery"></span><dl> <dt>**BATERÍA \_ BATERÍA \_ DEL**</dt> <dt>SISTEMA 0x80000000</dt> </dl>                             | Indica que la batería puede proporcionar energía general para ejecutar el sistema.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 
 
@@ -73,14 +73,14 @@ Las capacidades de la batería. Este miembro puede ser uno o varios de los valor
 **Technology**
 </dt> <dd>
 
-La tecnología de la batería. Este miembro puede ser uno de los valores siguientes.
+Tecnología de batería. Este miembro puede ser uno de los siguientes valores.
 
 
 
 | Value                                                                        | Significado                                                    |
 |------------------------------------------------------------------------------|------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl> | Batería no recargable, por ejemplo, alcalina.<br/> |
-| <dl> <dt>1</dt> </dl> | Batería recargable, por ejemplo, acid plomo.<br/>   |
+| <dl> <dt>0</dt> </dl> | Batería no recuperable, por ejemplo, alkaline.<br/> |
+| <dl> <dt>1</dt> </dl> | Batería de batería de batería, por ejemplo, acido de lead.<br/>   |
 
 
 
@@ -95,76 +95,76 @@ Reservado.
 
 </dd> <dt>
 
-**Químicos**
+**Química**
 </dt> <dd>
 
-Cadena de caracteres abreviada que indica la química de la batería. Esta cadena no es necesariamente terminada en cero. La siguiente es una lista parcial de abreviaturas que se pueden devolver y los chemistries asociados.
+Cadena de caracteres abreviada que indica la química de la batería. Esta cadena no termina necesariamente en cero. A continuación se muestra una lista parcial de abreviaturas que se pueden devolver y las entradas asociadas.
 
 
 
 | Cadena de Unicode                                                                                                                                           | Significado                                    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| <span id="PbAc"></span><span id="pbac"></span><span id="PBAC"></span><dl> <dt>**PbAc**</dt> </dl> | Acid inicial<br/>                       |
-| <span id="LION"></span><span id="lion"></span><dl> <dt>**LION**</dt> </dl>                        | Ion de litio<br/>                     |
-| <span id="Li-I"></span><span id="li-i"></span><span id="LI-I"></span><dl> <dt>**Li-I**</dt> </dl> | Ion de litio<br/>                     |
-| <span id="NiCd"></span><span id="nicd"></span><span id="NICD"></span><dl> <dt>**NiCd**</dt> </dl> | Níquel cadmio<br/>                  |
-| <span id="NiMH"></span><span id="nimh"></span><span id="NIMH"></span><dl> <dt>**NiMH**</dt> </dl> | Hidruro de níquel metal<br/>            |
-| <span id="NiZn"></span><span id="nizn"></span><span id="NIZN"></span><dl> <dt>**NiZn**</dt> </dl> | Cinc de níquel<br/>                     |
-| <span id="RAM"></span><span id="ram"></span><dl> <dt>**RAM**</dt> </dl>                           | Alkaline-Manganese recargable<br/> |
+| <span id="PbAc"></span><span id="pbac"></span><span id="PBAC"></span><dl> <dt>**PbAc**</dt> </dl> | Plomo<br/>                       |
+| <span id="LION"></span><span id="lion"></span><dl> <dt>**León**</dt> </dl>                        | Ion de iones de<br/>                     |
+| <span id="Li-I"></span><span id="li-i"></span><span id="LI-I"></span><dl> <dt>**Li-I**</dt> </dl> | Ion de iones de<br/>                     |
+| <span id="NiCd"></span><span id="nicd"></span><span id="NICD"></span><dl> <dt>**Nicd**</dt> </dl> | Níquel-cadmio<br/>                  |
+| <span id="NiMH"></span><span id="nimh"></span><span id="NIMH"></span><dl> <dt>**Nimh**</dt> </dl> | Hydride metal de metal de metal de metal<br/>            |
+| <span id="NiZn"></span><span id="nizn"></span><span id="NIZN"></span><dl> <dt>**NiZn**</dt> </dl> | Desmaeso<br/>                     |
+| <span id="RAM"></span><span id="ram"></span><dl> <dt>**RAM**</dt> </dl>                           | Alkaline-Manganese<br/> |
 
 
 
  
 
-Otros chemistries pueden aparecer en el futuro y el código debería ser capaz de controlarlos.
+Puede que aparezcan otras entradas en el futuro y que el código pueda controlarlas.
 
 </dd> <dt>
 
 **DesignedCapacity**
 </dt> <dd>
 
-La capacidad teórica de la batería cuando es nuevo, en mWh a menos que se establezca la capacidad de la batería \_ \_ relativa. En ese caso, las unidades son indefinidas.
+La capacidad teórica de la batería cuando es nueva, en mWh a menos que se establezca BATTERY \_ CAPACITY \_ RELATIVE. En ese caso, las unidades no están definidas.
 
 </dd> <dt>
 
 **FullChargedCapacity**
 </dt> <dd>
 
-La capacidad total actual de la batería en mWh (o relativa). Compare este valor con **DesignedCapacity** para estimar el desgaste de la batería.
+La capacidad de carga completa actual de la batería en mWh (o relativa). Compare este valor con **DesignedCapacity para** calcular el rendimiento de la batería.
 
 </dd> <dt>
 
 **DefaultAlert1**
 </dt> <dd>
 
-La capacidad sugerida del fabricante, en mWh, en la que debe producirse una alerta de batería baja. Las definiciones de Low varían según el fabricante. En general, un estado de advertencia se produce antes de un estado bajo, pero no se debe suponer que siempre lo sea. Para reducir el riesgo de pérdida de datos, este valor se utiliza normalmente como configuración predeterminada para la alarma de batería crítica.
+Capacidad sugerida por el fabricante, en mWh, en la que debe producirse una alerta de batería baja. Las definiciones de bajo varían de fabricante a fabricante. En general, se producirá un estado de advertencia antes de un estado bajo, pero no debe suponer que siempre lo hará. Para reducir el riesgo de pérdida de datos, este valor se usa normalmente como configuración predeterminada para la alarma de batería crítica.
 
 </dd> <dt>
 
 **DefaultAlert2**
 </dt> <dd>
 
-La capacidad sugerida del fabricante, en mWh, en la que debe producirse una alerta de batería de advertencia. Las definiciones de advertencia varían de un fabricante a un fabricante. En general, un estado de advertencia se produce antes de un estado bajo, pero no se debe suponer que siempre lo sea. Para reducir el riesgo de pérdida de datos, este valor se utiliza normalmente como configuración predeterminada para la alarma de batería baja.
+Capacidad sugerida por el fabricante, en mWh, en la que debe producirse una alerta de batería de advertencia. Las definiciones de advertencia varían de fabricante a fabricante. En general, se producirá un estado de advertencia antes de un estado bajo, pero no debe suponer que siempre lo hará. Para reducir el riesgo de pérdida de datos, este valor normalmente se usa como la configuración predeterminada para la alarma de batería baja.
 
 </dd> <dt>
 
 **CriticalBias**
 </dt> <dd>
 
-Una diferencia de cero, en mWh, que se aplica a los informes de batería. Algunas baterías reservan una pequeña carga que se sesga de los valores de capacidad de la batería para mostrar "0" como nivel crítico de batería. La diferencia crítica es análoga a la configuración de un medidor de combustible para mostrar "vacío" cuando hay varios litros de combustible a la izquierda.
+Un sesgo de cero, en mWh, que se aplica a los informes de batería. Algunas baterías reservan una pequeña carga que se diferencia de los valores de capacidad de la batería para mostrar "0" como el nivel de batería crítico. El sesgo crítico es análogo a la configuración de un medidor de combustible para que se muestre "vacío" cuando quedan varios depósitos de combustible.
 
 </dd> <dt>
 
 **CycleCount**
 </dt> <dd>
 
-El número de ciclos de carga/descarga que ha experimentado la batería. Esto proporciona un medio para determinar el desgaste de la batería. Si la batería no admite un contador de ciclo, este miembro es cero.
+Número de ciclos de carga y descarga que ha experimentado la batería. Esto proporciona un medio para determinar el uso de la batería. Si la batería no admite un contador de ciclo, este miembro es cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Por lo general, un estado de advertencia se produce antes de un estado bajo, pero no se debe suponer que lo sea. Es posible sondear una batería y detectar que no se ha producido el nivel de alerta y, a continuación, volver a sondear la batería y encontrarla descargada en la medida en que se hayan conseguido ambos niveles. Esto puede indicar que no está sondeando a menudo lo suficiente. También puede indicar que la batería no puede ocupar mucho tiempo y se está descargando más rápidamente de lo esperado. Es posible que esta batería esté llegando al final de su vida útil o que esté dañada.
+Por lo general, se produce un estado de advertencia antes de un estado bajo, pero no debe suponer que lo hará. Es posible sondear una batería y averiguar que no se ha producido ningún nivel de alerta, sondear la batería de nuevo y encontrarla descargada en la medida en que se hayan alcanzado ambos niveles. Esto puede indicar que no está sondando con suficiente frecuencia. También puede indicar que la batería no puede contener una carga durante mucho tiempo y se descarga más rápidamente de lo esperado. Este tipo de batería puede estar cerca del final de su vida útil o puede estar dañada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -172,9 +172,9 @@ Por lo general, un estado de advertencia se produce antes de un estado bajo, per
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                                                                                                                                                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                                                                                                                                                                                |
-| Encabezado<br/>                   | <dl> <dt>Poclass. h; </dt> <dt>Batclass. h en Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista, Windows Server 2003 y Windows XP</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                                                                                                                                                                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                                                                                                                                                                                |
+| Header<br/>                   | <dl> <dt>Poclass.h;</dt> <dt>Batclass.h en Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP</dt> </dl> |
 
 
 
@@ -182,7 +182,7 @@ Por lo general, un estado de advertencia se produce antes de un estado bajo, per
 
 <dl> <dt>
 
-[**\_información de \_ consulta de batería ioctl \_**](ioctl-battery-query-information.md)
+[**INFORMACIÓN DE CONSULTA \_ DE LA \_ BATERÍA DE IOCTL \_**](ioctl-battery-query-information.md)
 </dt> </dl>
 
  

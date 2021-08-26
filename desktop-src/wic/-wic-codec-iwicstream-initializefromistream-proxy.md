@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método InitializeFromIStream.
 ms.assetid: 3ab780bb-7fe7-4abe-9ea7-86f54ea15d91
-title: IWICStream_InitializeFromIStream_Proxy función)
+title: IWICStream_InitializeFromIStream_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 8d80a60d2a142b3c69c03b7352c81bcd0f5fc3ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 491a2a67881929eba86dc317645161dee28ee9062d01fee63a9f6d4a7995cf72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056565"
 ---
-# <a name="iwicstream_initializefromistream_proxy-function"></a>IWICStream \_ InitializeFromIStream \_ función proxy
+# <a name="iwicstream_initializefromistream_proxy-function"></a>Función IWICStream \_ InitializeFromIStream \_ Proxy
 
-Función de proxy para el método [**InitializeFromIStream**](/windows/desktop/api/Wincodec/nf-wincodec-iwicstream-initializefromistream) .
+Función de proxy para [**el método InitializeFromIStream.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicstream-initializefromistream)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,19 +41,19 @@ HRESULT IWICStream_InitializeFromIStream_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICStream**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream) \** _
+Tipo: **[ **IWICStream**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream)\***
 
-Puntero a este objeto [_ *IWICStream* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream) .
+Puntero a este [**objeto IWICStream.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream)
 
 </dd> <dt>
 
-*pIStream* \[ de\]
+*pIStream* \[ En\]
 </dt> <dd>
 
-Tipo: **[IStream](/windows/desktop/api/objidl/nn-objidl-istream) \** _
+Tipo: **[IStream](/windows/desktop/api/objidl/nn-objidl-istream)\***
 
 Secuencia de inicialización.
 
@@ -61,9 +61,9 @@ Secuencia de inicialización.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -73,9 +73,9 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows de \[ escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

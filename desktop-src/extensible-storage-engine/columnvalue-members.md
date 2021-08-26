@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: miembros de ColumnValue'
-title: Miembros de ColumnValue
+description: 'Más información sobre: Miembros ColumnValue'
+title: Miembros ColumnValue
 TOCTitle: ColumnValue members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.ColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnvalue_members(v=EXCHG.10)
 ms:contentKeyID: 55100951
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 2e428cb559aac02ded18126b944638cbee0b3cfc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f197a18f1ef0f024a51f8d51f00cb269705edcf65ffac713ce91ef416cd9d7f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104550118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066985"
 ---
-# <a name="columnvalue-members"></a>Miembros de ColumnValue
+# <a name="columnvalue-members"></a>Miembros ColumnValue
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para los objetos que representan el valor de una columna que se va a establecer.
+Clase base para los objetos que representan un valor de columna que se va a establecer.
 
-El tipo [ColumnValue](./columnvalue-class.md) expone los siguientes miembros.
+El [tipo ColumnValue](./columnvalue-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -69,12 +69,12 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334165(v=exchg.10).md">ItagSequence</a></td>
-<td>Obtiene o establece la secuencia de iTag de columnas.</td>
+<td>Obtiene o establece la secuencia de itag de columna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334213(v=exchg.10).md">Duración</a></td>
-<td>Obtiene la longitud de bytes de un valor de columna, que es cero si la columna es null; de lo contrario, coincide con el tamaño de las columnas de tamaño fijo y representa el valor real de longitud de bytes para las columnas de tamaño variable (es decir, binario y cadena). En el caso de las cadenas, la longitud se determina en dos bytes por carácter.</td>
+<td>Obtiene la longitud de bytes de un valor de columna, que es cero si column es NULL; de lo contrario, coincide con el tamaño de las columnas de tamaño fijo y representa la longitud de bytes del valor real para las columnas de tamaño variable (es decir, binary y string). En el caso de las cadenas, la longitud se determina en suposición de dos bytes por carácter.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -84,12 +84,12 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334215(v=exchg.10).md">SetGrbit</a></td>
-<td>Obtiene o establece las opciones de actualización de la columna.</td>
+<td>Obtiene o establece las opciones de actualización de columna.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propiedad protegida" alt="Protected property" /></td>
 <td><a href="dn334172(v=exchg.10).md">Tamaño</a></td>
-<td>Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binary y String).</td>
+<td>Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binario y cadena).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -120,7 +120,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -130,7 +130,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -146,7 +146,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334163(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el <a href="dn334206(v=exchg.10).md">ColumnValue</a>actual. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el <a href="dn334206(v=exchg.10).md">valor columnValue actual.</a> (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -158,6 +158,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnValue](./columnvalue-class.md)
+[ColumnValue (clase)](./columnvalue-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentRecoveredWithoutUndoException'
-title: Constructor de EsentRecoveredWithoutUndoException
+description: 'Más información sobre: Constructor EsentRecoveredWithoutUndoException'
+title: Constructor EsentRecoveredWithoutUndoException
 TOCTitle: 'EsentRecoveredWithoutUndoException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRecoveredWithoutUndoException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrecoveredwithoutundoexception.esentrecoveredwithoutundoexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: edc0246562ced7978d3a5f6c9bf5b6e7ea4341d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83c74bf158c62d1a197167a9f31c650f5d996fcaf403038bd0aad3a1269da867
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018775"
 ---
-# <a name="esentrecoveredwithoutundoexception-constructor"></a>Constructor de EsentRecoveredWithoutUndoException
+# <a name="esentrecoveredwithoutundoexception-constructor"></a>Constructor EsentRecoveredWithoutUndoException
 
 Inicializa una nueva instancia de la clase EsentRecoveredWithoutUndoException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentRecoveredWithoutUndoException()
 public EsentRecoveredWithoutUndoException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentRecoveredWithoutUndoException()
 
 [Miembros de EsentRecoveredWithoutUndoException](./esentrecoveredwithoutundoexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

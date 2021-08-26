@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentRecordNotDeletedException'
+description: 'Más información sobre: Clase EsentRecordNotDeletedException'
 title: Clase EsentRecordNotDeletedException
 TOCTitle: EsentRecordNotDeletedException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentRecordNotDeletedException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 70eb38e960b127474415c9b7291e4765719fb7bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d17fcf87dbe014efa51bbff65b44d3c00c963736c0161cbf83e42a77a1cc0004
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018815"
 ---
 # <a name="esentrecordnotdeletedexception-class"></a>Clase EsentRecordNotDeletedException
 
@@ -39,15 +39,15 @@ Clase base para JET_err. Excepciones RecordNotDeleted.
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          Microsoft. ISAM. esent. Interop. EsentRecordNotDeletedException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          Microsoft.Isam.Esent.Interop.EsentRecordNotDeletedException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -73,4 +73,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentRecordNotDeletedException](./esentrecordnotdeletedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

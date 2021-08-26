@@ -64,20 +64,20 @@ La **clase MsRdpClient10** tiene estos métodos.
 | Método                                                                                      | Descripción                                                                                                                                                                                                                                                                                   |
 |:--------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**attachEvent**](imsrdpclient9-attachevent.md)                                            | Asocia un evento. <br/>                                                                                                                                                                                                                                                                |
-| [**Conectar**](imstscax-connect.md)                                                         | Inicia una conexión con las propiedades establecidas actualmente en el control .<br/>                                                                                                                                                                                                          |
+| [**Conectar**](imstscax-connect.md)                                                         | Inicia una conexión mediante las propiedades establecidas actualmente en el control .<br/>                                                                                                                                                                                                          |
 | [**CreateVirtualChannels**](imstscax-createvirtualchannels.md)                             | Crea un objeto de canal virtual del lado cliente para cada nombre de canal virtual especificado.<br/>                                                                                                                                                                                              |
-| [**detachEvent**](imsrdpclient9-detachevent.md)                                            | Desasoja un evento. <br/>                                                                                                                                                                                                                                                                |
+| [**detachEvent**](imsrdpclient9-detachevent.md)                                            | Desasoyera un evento. <br/>                                                                                                                                                                                                                                                                |
 | [**Desconectar**](imstscax-disconnect.md)                                                   | Desconecta la conexión activa.<br/>                                                                                                                                                                                                                                                 |
 | [**GetErrorDescription**](imsrdpclient5-geterrordescription.md)                            | Recupera los códigos de error y los mensajes de error.<br/>                                                                                                                                                                                                                                      |
 | [**GetStatusText**](imsrdpclient7-getstatustext.md)                                        | Recupera el texto de estado del código de estado especificado.<br/>                                                                                                                                                                                                                           |
 | [**GetVirtualChannelOptions**](imsrdpclient-getvirtualchanneloptions.md)                   | Recupera las opciones establecidas para un canal virtual.<br/>                                                                                                                                                                                                                                   |
-| [**NotifyRedirectDeviceChange**](imsrdpclientnonscriptable-notifyredirectdevicechange.md)  | Notifica al módulo de redirección de dispositivos Escritorio remoto ActiveX control que se ha producido un cambio de dispositivo en el sistema. Este método pasa [**notificaciones DE WM \_ DEVICECHANGE**](/windows/desktop/DevIO/wm-devicechange) al control .<br/>                                                        |
+| [**NotifyRedirectDeviceChange**](imsrdpclientnonscriptable-notifyredirectdevicechange.md)  | Notifica al módulo de redirección de dispositivos Escritorio remoto ActiveX control que se ha producido un cambio de dispositivo en el sistema. Este método pasa [**notificaciones \_ DE WM DEVICECHANGE**](/windows/desktop/DevIO/wm-devicechange) al control .<br/>                                                        |
 | [**OnAuthenticationWarningDismissed**](imstscaxevents-onauthenticationwarningdismissed.md) | Se llama después de ActiveX control muestra un cuadro de diálogo de autenticación (por ejemplo, el cuadro de diálogo de error de certificado).<br/>                                                                                                                                                             |
 | [**OnAuthenticationWarningDisplayed**](imstscaxevents-onauthenticationwarningdisplayed.md) | Se llama antes de ActiveX control muestra un cuadro de diálogo de autenticación (por ejemplo, el cuadro de diálogo de error de certificado).<br/>                                                                                                                                                            |
-| [**OnAutoReconnected**](imstscaxevents-onautoreconnected.md)                               | Se llama cuando el control de cliente se ha vuelto a conectar automáticamente a una sesión remota.<br/>                                                                                                                                                                                                  |
+| [**OnAutoReconnected**](imstscaxevents-onautoreconnected.md)                               | Se llama cuando el control de cliente se vuelve a conectar automáticamente a una sesión remota.<br/>                                                                                                                                                                                                  |
 | [**OnAutoReconnecting**](-imstscaxevents--onautoreconnecting.md)                           | Se llama cuando un cliente está en proceso de volver a conectar automáticamente una sesión con un servidor host de sesión de Escritorio remoto.<br/>                                                                                                                                                                      |
 | [**OnAutoReconnecting2**](imstscaxevents-onautoreconnecting2.md)                           | Se llama cuando un cliente está en proceso de volver a conectar automáticamente una sesión con un servidor host de sesión de Escritorio remoto.<br/>                                                                                                                                                                      |
-| [**OnChannelReceivedData**](imstscaxevents-onchannelreceiveddata.md)                       | Se llama cuando el cliente recibe datos en un canal virtual que puede incluir scripts.<br/>                                                                                                                                                                                                              |
+| [**OnChannelReceivedData**](imstscaxevents-onchannelreceiveddata.md)                       | Se llama cuando el cliente recibe datos en un canal virtual que puede incluirse en scripts.<br/>                                                                                                                                                                                                              |
 | [**OnConfirmClose**](imstscaxevents-onconfirmclose.md)                                     | Se llama cuando el cliente llama [**al método IMsRdpClient::RequestClose.**](imsrdpclient-requestclose.md)<br/>                                                                                                                                                                           |
 | [**OnConnected**](imstscaxevents-onconnected.md)                                           | Se llama cuando el control de cliente está en proceso de establecer una conexión con un servidor host de sesión de Escritorio remoto.<br/>                                                                                                                                                                       |
 | [**OnConnecting**](imstscaxevents-onconnecting.md)                                         | Se llama cuando el control de cliente comienza a conectarse a un servidor en respuesta a una llamada a [**IMsTscAx::Conectar**](imstscax-connect.md).<br/>                                                                                                                                               |
@@ -98,7 +98,7 @@ La **clase MsRdpClient10** tiene estos métodos.
 | [**OnRemoteProgramDisplayed**](imstscaxevents-onremoteprogramdisplayed.md)                 | Se llama cuando se muestra un programa RemoteApp.<br/>                                                                                                                                                                                                                                      |
 | [**OnRemoteProgramResult**](imstscaxevents-onremoteprogramresult.md)                       | Se llama cuando un programa RemoteApp devuelve un resultado al control de cliente.<br/>                                                                                                                                                                                                            |
 | [**OnRemoteWindowDisplayed**](imstscaxevents-onremotewindowdisplayed.md)                   | Se llama cuando se muestra una ventana remoteapp.<br/>                                                                                                                                                                                                                                       |
-| [**OnRequestContainerMinimize**](imstscaxevents-onrequestcontainerminimize.md)             | Se llama cuando el usuario presiona el botón **Minimizar** en la barra de conexión en modo de pantalla completa. La activación de este evento es una solicitud que la aplicación contenedora minimiza.<br/>                                                                                              |
+| [**OnRequestContainerMinimize**](imstscaxevents-onrequestcontainerminimize.md)             | Se llama cuando el usuario presiona el botón **Minimizar** en la barra de conexión en modo de pantalla completa. La activación de este evento es una solicitud que la aplicación contenedora se minimiza.<br/>                                                                                              |
 | [**OnRequestGoFullScreen**](imstscaxevents-onrequestgofullscreen.md)                       | Se llama cuando el cliente solicita cambiar al modo de pantalla completa y se llama al método [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) para establecer la propiedad **ContainerHandledFullScreen** en un valor distinto de cero.<br/> |
 | [**OnRequestLeaveFullScreen**](imstscaxevents-onrequestleavefullscreen.md)                 | Se llama cuando el cliente solicita salir del modo de pantalla completa y la propiedad [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) se ha establecido en un valor distinto de cero.<br/>                                                   |
 | [**OnServiceMessageReceived**](imstscaxevents-onservicemessagereceived.md)                 | Se llama cuando el cliente recibe un mensaje del sistema.<br/>                                                                                                                                                                                                                                  |
@@ -251,7 +251,7 @@ La **clase MsRdpClient10** tiene estas propiedades.
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-devicecollection.md"><strong>DeviceCollection</strong></a><br/></td>
 <td style="text-align: left;">Solo lectura<br/></td>
-<td style="text-align: left;">La colección de dispositivos PnP que están disponibles para el redireccionamiento.<br/></td>
+<td style="text-align: left;">Colección de dispositivos PnP que están disponibles para el redireccionamiento.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable5-disableconnectionbar.md"><strong>DisableConnectionBar</strong></a><br/></td>
@@ -261,7 +261,7 @@ La **clase MsRdpClient10** tiene estas propiedades.
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable5-disableremoteappcapscheck.md"><strong>DisableRemoteAppCapsCheck</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si el control Escritorio remoto ActiveX no debe comprobar las funcionalidades de RemoteApp del servidor.<br/></td>
+<td style="text-align: left;">Especifica si el control Escritorio remoto ActiveX no debe comprobar las funcionalidades de RemoteApp en el servidor.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscax-disconnectedtext.md"><strong>DisconnectedText</strong></a><br/></td>
@@ -286,7 +286,7 @@ La **clase MsRdpClient10** tiene estas propiedades.
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient-extendeddisconnectreason.md"><strong>ExtendedDisconnectReason</strong></a><br/></td>
 <td style="text-align: left;">Solo lectura<br/></td>
-<td style="text-align: left;">Información ampliada sobre el motivo de la desconexión del control de cliente.<br/></td>
+<td style="text-align: left;">Información extendida sobre el motivo de desconexión del control de cliente.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient-fullscreen.md"><strong>Fullscreen</strong></a><br/></td>
@@ -316,17 +316,17 @@ La **clase MsRdpClient10** tiene estas propiedades.
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable4-markrdpsettingssecure.md"><strong>MarkRdpSettingsSecure</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si la configuración de RDP está marcada como segura.<br/></td>
+<td style="text-align: left;">Especifica si la configuración de RDP se marca como segura.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient5-msrdpclientshell.md"><strong>MsRdpClientShell</strong></a><br/></td>
 <td style="text-align: left;">Solo lectura<br/></td>
-<td style="text-align: left;">La configuración de cliente para el iniciador del portal web.<br/></td>
+<td style="text-align: left;">Configuración de cliente para el iniciador del portal web.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-negotiatesecuritylayer.md"><strong>NegotiateSecurityLayer</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si se admite la configuración NegotiateSecurityLayer para esta conexión.<br/>
+<td style="text-align: left;">Especifica si el valor NegotiateSecurityLayer es compatible con esta conexión.<br/>
 <blockquote>
 [!Note]<br />
 Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>CredSspSupport</strong></a> está habilitado y presente en el cliente, o cuando Capa de sockets seguros (SSL) está habilitado con la autenticación de usuario, NegotiateSecurityLayer se omite.
@@ -371,7 +371,7 @@ Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable4-redirectionwarningtype.md"><strong>RedirectionWarningType</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Controla la presencia y la apariencia del cuadro de diálogo de redireccionamiento.<br/></td>
+<td style="text-align: left;">Controla la presencia y la apariencia del cuadro de diálogo de redirección.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable5-remotemonitorcount.md"><strong>RemoteMonitorCount</strong></a><br/></td>
@@ -519,7 +519,7 @@ Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                         |
@@ -529,7 +529,7 @@ Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

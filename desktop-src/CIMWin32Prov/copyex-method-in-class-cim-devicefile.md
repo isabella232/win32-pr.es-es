@@ -1,8 +1,8 @@
 ---
-description: Copia el archivo de dispositivo lógico (o directorio) especificado en la ruta de acceso del objeto en la ubicación especificada por el parámetro FileName.
+description: Copia el archivo de dispositivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro FileName.
 ms.assetid: 42cdb880-2431-4dcc-abdb-f271e2cd81a4
 ms.tgt_platform: multiple
-title: Método CopyEx de la clase CIM_DeviceFile
+title: Método CopyEx de la CIM_DeviceFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0e9519155accadc1a41a1c91492755db90eec696
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 859687d879a73b78531e86a4f7306bc8f943de668005bc2bf5d8a99d0731f168
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003895"
 ---
-# <a name="copyex-method-of-the-cim_devicefile-class"></a>Método CopyEx de la \_ clase DeviceFile de CIM
+# <a name="copyex-method-of-the-cim_devicefile-class"></a>Método CopyEx de la clase \_ DeviceFile de CIM
 
-El método **CopyEx** copia el archivo de dispositivo lógico (o directorio) especificado en la ruta de acceso del objeto en la ubicación especificada por el parámetro *filename* . No se admite una copia si se requiere sobrescribir un archivo lógico existente. Este método es una versión extendida del método de [**copia**](copy-method-in-class-cim-devicefile.md) . Este método se hereda de [**\_ LogicalFile CIM**](cim-logicalfile.md).
+El **método CopyEx** copia el archivo de dispositivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el *parámetro FileName.* No se admite una copia si se requiere sobrescribir un archivo lógico existente. Este método es una versión extendida del [**método Copy.**](copy-method-in-class-cim-devicefile.md) Este método se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ uint32 CopyEx(
 
 <dl> <dt>
 
-*Nombre de archivo* \[ de\]
+*FileName* \[ En\]
 </dt> <dd>
 
 Nombre completo del archivo de destino (o directorio).
@@ -59,30 +59,30 @@ Ejemplo: "c: \\ temp \\ newdirectory"
 
 </dd> <dt>
 
-*StopFileName* \[ enuncia\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Cadena que representa el nombre del archivo (o directorio) donde se produjo un error en el método. Este parámetro es **null** si el método se ejecuta correctamente.
+Cadena que representa el nombre del archivo (o directorio) en el que se ha fallado el método. Este parámetro es **NULL** si el método se realiza correctamente.
 
 </dd> <dt>
 
-*StartFileName* \[ de\]
+*StartFileName* \[ En\]
 </dt> <dd>
 
-Cadena que representa el archivo secundario (o directorio) que se va a utilizar como punto de partida para este método. Normalmente, el parámetro *StartFileName* es el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **null**, la operación se realiza en el archivo (o directorio) especificado en la llamada [**ExecMethod**](/windows/desktop/WmiSdk/swbemservices-execmethod) .
+Cadena que representa el archivo secundario (o directorio) que se va a usar como punto de partida para este método. Normalmente, el *parámetro StartFileName* es el *parámetro StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **null,** la operación se realiza en el archivo (o directorio) especificado en la [**llamada a ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
-*Recursivo* \[ de\]
+*Recursiva* \[ En\]
 </dt> <dd>
 
-Si es TRUE, el método también se aplica de forma recursiva a los archivos y directorios del directorio especificado por la instancia de [**\_ DeviceFile de CIM**](cim-devicefile.md) . En el caso de las instancias de archivo, este parámetro se omite.
+Si es TRUE, el método también se aplica de forma recursiva a los archivos y directorios dentro del directorio especificado por la instancia [**\_ de DeviceFile de CIM.**](cim-devicefile.md) En el caso de las instancias de archivo, este parámetro se omite.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si se realiza correctamente y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -100,7 +100,7 @@ Correcto.
 
 2
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
@@ -190,7 +190,7 @@ Archivo de inicio no válido.
 
 17
 
-Privilegio no mantenido.
+Privilegios no mantenidos.
 
 </dd> <dt>
 
@@ -203,11 +203,11 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor.
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -217,8 +217,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -227,10 +227,10 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[\_DEVICEFILE CIM](copyex-method-in-class-cim-devicefile.md)
+[CIM \_ DeviceFile](copyex-method-in-class-cim-devicefile.md)
 </dt> <dt>
 
-[**\_DEVICEFILE CIM**](cim-devicefile.md)
+[**CIM \_ DeviceFile**](cim-devicefile.md)
 </dt> </dl>
 
  

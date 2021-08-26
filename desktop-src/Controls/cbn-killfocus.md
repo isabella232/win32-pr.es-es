@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de CBN_KILLFOCUS (Winuser. h)
-description: Se envía cuando un cuadro combinado pierde el foco del teclado. La ventana primaria del cuadro combinado recibe este código de notificación a través del \_ mensaje de comando de WM.
+title: CBN_KILLFOCUS de notificación (Winuser.h)
+description: Se envía cuando un cuadro combinado pierde el foco del teclado. La ventana primaria del cuadro combinado recibe este código de notificación a través del mensaje \_ WM COMMAND.
 ms.assetid: 0118a2ff-9811-4bf1-b3f6-1d00ca5c8dbe
 keywords:
-- CBN_KILLFOCUS controles de código de notificación de Windows
+- CBN_KILLFOCUS código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e266824bf8bcdac1fb901d40ca2b15406fc79660
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f62c8c5c5c7d1ed289d1accc16b93e819e466cad9e543b77c3d941754dc2c729
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054055"
 ---
-# <a name="cbn_killfocus-notification-code"></a>Código de notificación de KILLFOCUS de CBN \_
+# <a name="cbn_killfocus-notification-code"></a>Código de notificación KILLFOCUS de CBN \_
 
-Se envía cuando un cuadro combinado pierde el foco del teclado. La ventana primaria del cuadro combinado recibe este código de notificación a través del mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+Se envía cuando un cuadro combinado pierde el foco del teclado. La ventana primaria del cuadro combinado recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_KILLFOCUS
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador de control del cuadro combinado. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del cuadro combinado. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -59,9 +59,9 @@ Identificador del cuadro combinado.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Identificador del cuadro combinado.
 **Referencia**
 </dt> <dt>
 
-[CBN ( \_ SETFOCUS)](cbn-setfocus.md)
+[CBN \_ SETFOCUS](cbn-setfocus.md)
 </dt> <dt>
 
 **Otros recursos**
@@ -84,7 +84,7 @@ Identificador del cuadro combinado.
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

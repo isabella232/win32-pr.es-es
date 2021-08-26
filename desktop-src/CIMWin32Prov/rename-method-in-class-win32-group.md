@@ -2,7 +2,7 @@
 description: Permite cambiar el nombre del grupo.
 ms.assetid: 7eb1360e-7416-4a90-abc6-c9a85a114316
 ms.tgt_platform: multiple
-title: Cambiar el nombre del método de la clase Win32_Group
+title: Método Rename de la Win32_Group clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c111a0c12d0fdc1ce3f6d6bcaa0e7b0f57831054
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cff8f587426b45133716e308ea40785602fea2d5b5d30a99645bfd0c6cc5c4e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003025"
 ---
-# <a name="rename-method-of-the-win32_group-class"></a>Cambiar el nombre del método de la clase de grupo de Win32 \_
+# <a name="rename-method-of-the-win32_group-class"></a>Método Rename de la clase Group de Win32 \_
 
-El método **Rename** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) permite cambiar el nombre del grupo.
+El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Rename** permite cambiar el nombre del grupo.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ uint32 Rename(
 
 <dl> <dt>
 
-*Nombre* \[ de de\]
+*Nombre* \[ En\]
 </dt> <dd>
 
-Nombre de la cuenta de usuario de Windows en el dominio especificado por la propiedad de **dominio** de esta clase.
+Nombre de la Windows de usuario en el dominio especificado por la **propiedad Domain** de esta clase.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método **Rename** puede devolver los códigos de error que se muestran en la lista siguiente. En el caso de valores enteros distintos de los enumerados, consulte los [ \_ códigos de retorno de WMI](/windows/desktop/WmiSdk/wmi-return-codes).
+El **método Rename** puede devolver los códigos de error enumerados en la lista siguiente. Para obtener valores enteros distintos de los enumerados, consulte [Códigos de \_ retorno wmi](/windows/desktop/WmiSdk/wmi-return-codes).
 
 <dl> <dt>
 
@@ -64,14 +64,14 @@ Correcto.
 
 </dd> <dt>
 
-**No se encontró la instancia**
+**Instancia no encontrada**
 </dt> <dd>
 
 1
 
 </dd> <dt>
 
-**Instancia requerida**
+**Instancia necesaria**
 </dt> <dd>
 
 2
@@ -92,14 +92,14 @@ Correcto.
 
 </dd> <dt>
 
-**No se encontró el dominio**
+**Dominio no encontrado**
 </dt> <dd>
 
 5
 
 </dd> <dt>
 
-**La operación solo se permite en el controlador de dominio principal del dominio**
+**La operación solo se permite en el controlador de dominio principal del dominio.**
 </dt> <dd>
 
 6
@@ -120,7 +120,7 @@ Correcto.
 
 </dd> <dt>
 
-**Error interno**
+**Error interno.**
 </dt> <dd>
 
 9
@@ -135,8 +135,8 @@ Correcto.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -148,7 +148,7 @@ Correcto.
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Grupo Win32**](win32-group.md)
+[**Grupo \_ Win32**](win32-group.md)
 </dt> <dt>
 
 [**Win32 \_ LogicalFileSecuritySetting**](/previous-versions/windows/desktop/secrcw32prov/win32-logicalfilesecuritysetting)

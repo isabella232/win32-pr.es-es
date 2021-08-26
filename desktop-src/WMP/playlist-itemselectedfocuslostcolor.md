@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. itemSelectedFocusLostColor
-description: El atributo itemSelectedFocusLostColor especifica o recupera un valor que indica el color del texto de un elemento seleccionado en la lista de reproducción cuando la lista de reproducción pierde el foco.
+title: PLAYLIST.itemSelectedFocusLostColor
+description: El atributo itemSelectedFocusLostColor especifica o recupera un valor que indica el color de texto de un elemento seleccionado en la lista de reproducción cuando la lista de reproducción pierde el foco.
 ms.assetid: 3dd30f09-0490-47d7-a7e5-9590deeacbb5
 keywords:
-- Windows Media Player de lista de reproducción. itemSelectedFocusLostColor
+- PLAYLIST.itemSelectedFocusLostColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6a5099c3f76a1a7be93a5341e461a06c5267c14
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 94bf7099bfccbc624f565377ce149b894c8edaad12e6c9112c7b26a04d96988a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002955"
 ---
-# <a name="playlistitemselectedfocuslostcolor"></a>Lista de reproducción. itemSelectedFocusLostColor
+# <a name="playlistitemselectedfocuslostcolor"></a>PLAYLIST.itemSelectedFocusLostColor
 
-El atributo **itemSelectedFocusLostColor** especifica o recupera un valor que indica el color del texto de un elemento seleccionado en la lista de reproducción cuando la lista de reproducción pierde el foco.
+El **atributo itemSelectedFocusLostColor** especifica o recupera un valor que indica el color de texto de un elemento seleccionado en la lista de reproducción cuando la lista de reproducción pierde el foco.
 
 ``` syntax
         elementID.itemSelectedFocusLostColor
@@ -29,7 +29,7 @@ El atributo **itemSelectedFocusLostColor** especifica o recupera un valor que in
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que representa un color. El valor predeterminado es el color del texto del botón de Windows.
+Este atributo es una cadena de **lectura** y escritura que representa un color. El valor predeterminado es el color Windows texto del botón.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Este atributo es una **cadena** de lectura/escritura que representa un color. El
 
 | Requisito | Value |
 |--------------------|------------------------------------|
-| Versión<br/> | Windows Media Player 10<br/> |
+| Versión<br/> | Reproductor de Windows Media 10<br/> |
 
 
 

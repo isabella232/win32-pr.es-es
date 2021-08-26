@@ -44,10 +44,10 @@ struct CD3DX12_TILE_SHAPE  : public D3D12_TILE_SHAPE{
 
 <dl> <dt>
 
-**FORMA DE MOSAICO CD3DX12() \_ \_**
+**FORMA DE MOSAICO \_ CD3DX12() \_**
 </dt> <dd>
 
-Crea una nueva instancia sin inicializar de una FORMA DE MOSAICO CD3DX12. \_ \_
+Crea una nueva instancia, sin inicializar, de una FORMA DE MOSAICO CD3DX12. \_ \_
 
 </dd> <dt>
 
@@ -61,13 +61,13 @@ Crea una nueva instancia de UNA FORMA DE MOSAICO CD3DX12, inicializada con el co
 **CD3DX12 \_ TILE \_ SHAPE(UINT widthInTexels, UINT heightInTexels, UINT depthInTexels)**
 </dt> <dd>
 
-Crea una nueva instancia de UN OBJETO TILE SHAPE de CD3DX12, \_ \_ inicializando los parámetros siguientes:
+Crea una nueva instancia de UNA FORMA DE MOSAICO CD3DX12, \_ \_ inicializando los parámetros siguientes:
 
-Ancho de UINTInTexels
+UINT widthInTexels
 
-Alto de UINTInTexels
+HeightInTexels de UINT
 
-Profundidad de UINTInTexels
+Profundidad UINTInTexels
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Define el & de paso por referencia para el tipo de estructura primaria.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

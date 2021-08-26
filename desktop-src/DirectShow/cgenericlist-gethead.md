@@ -1,7 +1,7 @@
 ---
-description: El método GetHead recupera el elemento situado en el encabezado de la lista.
+description: El método GetHead recupera el elemento al final de la lista.
 ms.assetid: 1cbaa790-e26a-4d81-b96b-3a07b22dff1e
-title: Método CGenericList. GetHead (Wxlist. h)
+title: Método CGenericList.GetHead (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1805be6125d2037356cc7e9e285af21d21ecb2a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: afe8de9a0f23cdee1a06bff18a5460ee2789086748c44b7668931cd80121dc34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055575"
 ---
-# <a name="cgenericlistgethead-method"></a>CGenericList. GetHead, método
+# <a name="cgenericlistgethead-method"></a>CGenericList.GetHead (método)
 
-El `GetHead` método recupera el elemento situado en el encabezado de la lista.
+El `GetHead` método recupera el elemento al final de la lista.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero a un objeto de tipo **Object** (el tipo de plantilla).
+Devuelve un puntero a un objeto de tipo **OBJECT** (el tipo de plantilla).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve un puntero a un objeto de tipo **Object** (el tipo de plantilla).
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve un puntero a un objeto de tipo **Object** (el tipo de plantilla).
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (Clase)**](cgenericlist.md)
 </dt> </dl>
 
  

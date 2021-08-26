@@ -4,52 +4,52 @@ ms.assetid: 9ddd1672-61cf-41c2-bec0-0d2b775bf970
 title: Recuperar nombres de contadores y texto de ayuda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5b49f852e6af22dc2ec31d341ee6176913f98e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5f997d9e9f7a0719b3d71d24a1787c5331ef7ec5f69de1ec20c1332f08ccefb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033335"
 ---
 # <a name="retrieving-counter-names-and-help-text"></a>Recuperar nombres de contadores y texto de ayuda
 
-Los datos de rendimiento contienen valores de índice que se usan para buscar los nombres y el texto de ayuda de cada objeto y contador registrados. Los miembros **ObjectNameTitleIndex** y **ObjectHelpTitleIndex** de la estructura de [**\_ \_ tipo de objeto Perf**](/windows/desktop/api/Winperf/ns-winperf-perf_object_type) contienen los valores de índice para el nombre de objeto y el texto de ayuda, respectivamente, y los miembros **CounterNameTitleIndex** y **CounterHelpTitleIndex** de la estructura de [**\_ \_ definición de contadores de rendimiento**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) contienen los valores de índice en el nombre de contador y el texto de ayuda, respectivamente.
+Los datos de rendimiento contienen valores de índice que se usan para buscar los nombres y el texto de ayuda de cada objeto y contador registrados. Los miembros **ObjectNameTitleIndex** y **ObjectHelpTitleIndex** de la estructura [**PERF \_ OBJECT \_ TYPE**](/windows/desktop/api/Winperf/ns-winperf-perf_object_type) contienen los valores de índice para el nombre del objeto y el texto de ayuda, respectivamente, y los miembros **CounterNameTitleIndex** y **CounterHelpTitleIndex** de la estructura [**PERF \_ COUNTER \_ DEFINITION**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) contienen los valores de índice para el nombre del contador y el texto de ayuda, respectivamente.
 
-Para recuperar los nombres o el texto de ayuda, llame a la función [**RegQueryValueEx**](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) . Establezca el parámetro *hKey* en una de las siguientes claves predefinidas. Normalmente, se usaría la clave **HKEY \_ performance \_ NLSTEXT** , por lo que no es necesario determinar el identificador de idioma del usuario.
+Para recuperar los nombres o el texto de ayuda, llame a [**la función RegQueryValueEx.**](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) Establezca el *parámetro hKey* en una de las siguientes claves predefinidas. Normalmente, usaría la clave **HKEY \_ PERFORMANCE \_ NLSTEXT,** por lo que no tiene que determinar el identificador de idioma del usuario.
 
 
 
 | Clave                            | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_datos de rendimiento de HKEY \_**    | Las cadenas de consulta se basan en el valor del identificador de idioma que se especifica en el parámetro *lpValueName* . Establezca el parámetro *lpValueName* en "Counter &lt; langid &gt; " o "Help &lt; langid &gt; " para recuperar los nombres o el texto de ayuda, respectivamente, donde " &lt; langid &gt; " es el identificador de idioma del sistema con formato de **número hexadecimal de 3 dígitos rellenado con ceros**. El identificador de idioma es opcional. Si no especifica un identificador de idioma, la función devuelve cadenas en inglés. Compruebe la `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Perflib` clave del registro para obtener la lista de idiomas disponibles en el sistema.<br/>Para recuperar texto en la mayoría de los idiomas, especifique solo el identificador de idioma principal. Por ejemplo, para recuperar cadenas en inglés, especifique el identificador de idioma como 009, no 1033 para inglés (EE. UU.).<br/>Para recuperar el texto en chino y portugués, especifique los identificadores principal y de subidioma.<br/>**Windows Server 2003 y Windows XP:** Especifique solo el identificador de idioma principal para portugués.<br/>**Windows 10**: el texto "Help &lt; langid &gt; " con el identificador de idioma personalizado siempre devuelve cadenas en inglés, aunque el valor localizado todavía se puede recuperar del registro mediante la clave mencionada anteriormente.<br/><br/> |
-| **HKEY \_ performance \_ NLSTEXT** | Cadenas de consulta basadas en el idioma predeterminado de la interfaz de usuario del usuario actual. Establezca el parámetro *lpValueName* en "Counter" o "Help" para recuperar los nombres o el texto de ayuda, respectivamente.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **HKEY \_ - \_ texto de rendimiento**    | Consultar cadenas en inglés. Establezca el parámetro *lpValueName* en "Counter" o "Help" para recuperar los nombres o el texto de ayuda, respectivamente.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **HKEY \_ PERFORMANCE \_ DATA**    | Cadenas de consulta basadas en el valor de identificador de idioma que especifique en el *parámetro lpValueName.* Establezca el parámetro *lpValueName* en "Counter &lt; langid" o &gt; "Help langid" para recuperar los nombres o el texto de ayuda, respectivamente, donde " langid " es el identificador de idioma del sistema con formato de número hexadecimal de &lt; &gt; &lt; &gt; **3** dígitos sin agregar. El identificador de idioma es opcional. Si no especifica un identificador de idioma, la función devuelve cadenas en inglés. Compruebe la `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Perflib` clave del Registro para obtener la lista de idiomas disponibles en el sistema.<br/>Para recuperar texto en la mayoría de los idiomas, especifique solo el identificador de idioma principal. Por ejemplo, para recuperar cadenas en inglés, especifique el identificador de idioma como 009, no 1033 para Inglés-EE. UU.<br/>Para recuperar texto en chino y portugués, especifique los identificadores principal y de subidioma.<br/>**Windows Server 2003 y Windows XP:** Especifique solo el identificador de idioma principal para el portugués.<br/>**Windows 10** texto "Help langid" con identificador de idioma personalizado siempre devuelve cadenas en inglés, aunque el valor localizado todavía se puede recuperar del Registro mediante la &lt; &gt; clave mencionada anteriormente.<br/><br/> |
+| **HKEY \_ PERFORMANCE \_ NLSTEXT** | Consulta de cadenas basadas en el idioma predeterminado de la interfaz de usuario del usuario actual. Establezca el *parámetro lpValueName* en "Counter" o "Help" para recuperar los nombres o el texto de ayuda, respectivamente.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **TEXTO DE RENDIMIENTO DE HKEY \_ \_**    | Consultar cadenas en inglés. Establezca el *parámetro lpValueName* en "Counter" o "Help" para recuperar los nombres o el texto de ayuda, respectivamente.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 
 
 
 
-La función devuelve los datos como una lista de cadenas. Cada cadena termina en NULL. La última cadena va seguida de un terminador nulo adicional. Las cadenas se enumeran en pares. La primera cadena de cada par es el índice y la segunda cadena es el texto asociado con el índice. Los datos del contador solo usan índices con números pares, mientras que los datos de ayuda usan índices impares. Los pares se devuelven en el orden de índice creciente.
+La función devuelve los datos como una lista de cadenas. Cada cadena termina en NULL. La última cadena va seguida de un terminador null adicional. Las cadenas se muestran en pares. La primera cadena de cada par es el índice y la segunda cadena es el texto asociado al índice. Los datos del contador solo usan índices numerados par, mientras que los datos de ayuda usan índices impares. Los pares se devuelven en orden de índice creciente.
 
-En las listas siguientes se muestran ejemplos de datos de contadores y de ayuda. Al incrementar el valor de índice de un contador dado en uno, se obtiene el índice del texto de ayuda del contador. Por ejemplo, 7 es el índice de ayuda asociado al contador index 6.
+En las listas siguientes se muestran ejemplos de datos de contador y ayuda. Al incrementar el valor de índice de un contador determinado en uno, se proporciona el índice al texto de ayuda del contador. Por ejemplo, 7 es el índice de ayuda asociado al índice de contador 6.
 
-Pares de datos del contador.
+Pares de datos de contador.
 
-<dl> 2 sistema 4 memoria 6% de tiempo de procesador
+<dl> 2 Sistema 4 Memoria 6 % tiempo de procesador
 </dl>
 
-Pares de datos de la ayuda.
+Pares de datos de ayuda.
 
-<dl> 3 el tipo de objeto del sistema incluye los contadores que... 5 el tipo de objeto de memoria incluye los contadores que... 7 el tiempo del procesador se expresa como un porcentaje de...
+<dl> 3 El tipo de objeto System incluye los contadores que ... 5 El tipo de objeto Memory incluye los contadores que ... 7 El tiempo de procesador se expresa como un porcentaje de ...
 </dl>
 
 Tenga en cuenta que el primer par de cadenas de los datos del contador no identifica un nombre de contador y se puede omitir. El número de índice del primer par es 1 y la cadena es una cadena numérica que representa el valor de índice máximo para los contadores del sistema.
 
-Para obtener información sobre cómo un proveedor carga el nombre y el texto de ayuda, vea [Agregar nombres y descripciones de contadores al registro](adding-counter-names-and-descriptions-to-the-registry.md).
+Para obtener información sobre cómo un proveedor carga el nombre y el texto de ayuda, vea [Adding Counter Names and Descriptions to the Registry](adding-counter-names-and-descriptions-to-the-registry.md).
 
-No hay información en el texto que indica si el texto identifica un contador o un objeto de rendimiento. La única manera de determinar esto, o la relación entre contadores y objetos, es consultar los datos de rendimiento en sí. Por ejemplo, si desea mostrar una lista de objetos y sus contadores en una interfaz de usuario, debe recuperar los datos de rendimiento y, a continuación, utilizar los valores de índice para analizar los datos de texto de las cadenas. Para ver un ejemplo que lo hace, vea [Mostrar los nombres de objeto, instancia y contador](displaying-object-instance-and-counter-names.md).
+No hay ninguna información en el texto que indique si el texto identifica un contador o un objeto de rendimiento. La única manera de determinar esto, o la relación entre contadores y objetos, es consultar los propios datos de rendimiento. Por ejemplo, si desea mostrar una lista de objetos y sus contadores en una interfaz de usuario, debe recuperar los datos de rendimiento y, a continuación, usar los valores de índice para analizar los datos de texto de las cadenas. Para obtener un ejemplo que lo haga, vea [Mostrar nombres de objeto, instancia y contador.](displaying-object-instance-and-counter-names.md)
 
-En el ejemplo siguiente se muestra cómo usar **HKEY \_ performance \_ NLSTEXT** para recuperar el contador y el texto de ayuda y crear una tabla para el acceso posterior.
+En el ejemplo siguiente se muestra cómo usar **HKEY \_ PERFORMANCE \_ NLSTEXT** para recuperar el contador y el texto de ayuda y crear una tabla para el acceso posterior.
 
 
 ```C++
@@ -298,7 +298,7 @@ void PrintCounterAndHelpText(LPWSTR pCounterTextHead, LPWSTR pHelpTextHead, LPDW
 
 
 
-En el ejemplo siguiente se muestra cómo usar los **\_ \_ datos de rendimiento de HKEY** para recuperar el texto del contador.
+En el ejemplo siguiente se muestra cómo usar **HKEY \_ PERFORMANCE \_ DATA** para recuperar el texto del contador.
 
 
 ```C++

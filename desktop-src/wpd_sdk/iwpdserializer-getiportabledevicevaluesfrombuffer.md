@@ -1,7 +1,7 @@
 ---
 description: El método GetIPortableDeviceValuesFromBuffer deserializa una matriz de bytes en una interfaz IPortableDeviceValues.
 ms.assetid: 93bea711-74d5-407a-a707-a3abe47bc2cd
-title: 'IWpdSerializer:: GetIPortableDeviceValuesFromBuffer (método) (PortableDeviceTypes. h)'
+title: Método IWpdSerializer::GetIPortableDeviceValuesFromBuffer (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 639a9455349e1d016b71d9c9717940695e9c0a85
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac33bf0cfb04363d40e4efeff13db1cb2504ce2dcb7ece4d9b10ac3d08dff83f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054965"
 ---
-# <a name="iwpdserializergetiportabledevicevaluesfrombuffer-method"></a>IWpdSerializer:: GetIPortableDeviceValuesFromBuffer (método)
+# <a name="iwpdserializergetiportabledevicevaluesfrombuffer-method"></a>IWpdSerializer::GetIPortableDeviceValuesFromBuffer (método)
 
-El método **GetIPortableDeviceValuesFromBuffer** deserializa una matriz de bytes en una interfaz **IPortableDeviceValues** .
+El **método GetIPortableDeviceValuesFromBuffer** deserializa una matriz de bytes en una **interfaz IPortableDeviceValues.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,38 +42,38 @@ HRESULT GetIPortableDeviceValuesFromBuffer(
 
 <dl> <dt>
 
-*pBuffer* \[ de\]
+*pBuffer* \[ En\]
 </dt> <dd>
 
-Puntero al búfer que se va a deserializar.
+Puntero al búfer que se deserializa.
 
 </dd> <dt>
 
-*dwInputBufferLength* \[ de\]
+*dwInputBufferLength* \[ En\]
 </dt> <dd>
 
 **DWORD** que especifica el tamaño del búfer, en bytes.
 
 </dd> <dt>
 
-*ppParams* \[ enuncia\]
+*ppParams* \[ out\]
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero a una interfaz [**IPortableDeviceValues**](iportabledevicevalues.md) creada a partir del búfer. La aplicación es responsable de llamar a **Release** en la interfaz.
+Dirección de una variable que recibe un puntero a una [**interfaz IPortableDeviceValues**](iportabledevicevalues.md) creada a partir del búfer. La aplicación es responsable de llamar a **Release** en la interfaz .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                                  | Descripción                                          |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | El método se ha llevado a cabo de forma correcta.<br/>                     |
-| <dl> <dt>**\_puntero E**</dt> </dl>    | Un argumento de puntero necesario era **null**.<br/> |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Se produjo un error de conversión no especificado.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | El método se ha llevado a cabo de forma correcta.<br/>                     |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>    | Un argumento de puntero necesario era **NULL.**<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Error de conversión no especificado.<br/> |
 
 
 
@@ -85,8 +85,8 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**Interfaz IWpdSerializer**](iwpdserializer.md)
+[**IWpdSerializer (interfaz)**](iwpdserializer.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: Método AddConfig de la interfaz IMsRdpCameraRedirConfigCollection
-description: Agrega un objeto IMsRdpCameraRedirConfig a la colección (no es necesario que la cámara correspondiente esté conectada).
+description: Agrega un objeto IMsRdpCameraRedirConfig a la colección (no es necesario conectar la cámara correspondiente).
 ms.tgt_platform: multiple
 keywords:
 - Método AddConfig Servicios de Escritorio remoto
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: e8c954b710c3f35bca9685d461e478104dac9039
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 88d4f7952497ca0afd970a979441f98864b2855ed3f36f3e556dc4241ed52769
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104536381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033655"
 ---
-# <a name="imsrdpcameraredirconfigcollectionaddconfig-method"></a>IMsRdpCameraRedirConfigCollection:: AddConfig (método)
+# <a name="imsrdpcameraredirconfigcollectionaddconfig-method"></a>IMsRdpCameraRedirConfigCollection::AddConfig (método)
 
-Agrega un objeto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) a la colección (no es necesario que la cámara correspondiente esté conectada).
+Agrega un [objeto IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) a la colección (no es necesario conectar la cámara correspondiente).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,17 +38,17 @@ HRESULT AddConfig(
 
 ## <a name="parameters"></a>Parámetros
 
-*symbolicLink* \[ de\]
+*symbolicLink* \[ En\]
 
-Vínculo simbólico para el nuevo objeto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) .
+Vínculo simbólico para el nuevo [objeto IMsRdpCameraRedirConfig.](imsrdpcameraredirconfig.md)
 
-*fRedirected* \[ de\]
+*fRedirected* \[ En\]
 
-Especifica si la nueva cámara se redirige de forma predeterminada o no.
+Especifica si la nueva cámara se redirige de forma predeterminada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 

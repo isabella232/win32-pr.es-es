@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI SystemDevices Association de Win32 relaciona un equipo y un dispositivo lógico instalado en ese sistema.
+description: La clase WMI de asociación SystemDevices de Win32 relaciona un sistema informático y un dispositivo \_ lógico instalado en ese sistema.
 ms.assetid: 84dfcb75-3b44-4b27-8eee-779be522eb1f
 ms.tgt_platform: multiple
-title: Win32_SystemDevices (clase)
+title: Win32_SystemDevices clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b2b28c11e10318e3bca562baf93bc20df9b756cf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 698b827e2dd3f9097f2348c83cbb52120186b0694a836fd2468396c542e535c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971475"
 ---
-# <a name="win32_systemdevices-class"></a>\_Clase Win32 SystemDevices
+# <a name="win32_systemdevices-class"></a>Clase SystemDevices de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SystemDevices** Association de Win32 relaciona un equipo y un dispositivo lógico instalado en ese sistema.
+La clase WMI **de asociación \_ SystemDevices** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un sistema informático y un dispositivo lógico instalado en ese sistema.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,43 +61,43 @@ Tipo de datos: **Win32 \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Referencia a la instancia de que representa las propiedades del sistema del equipo en el que existe el dispositivo lógico.
+Referencia a la instancia de que representa las propiedades del sistema informático donde existe el dispositivo lógico.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ LogicalDevice de CIM**
+Tipo de datos: **CIM \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| lógico CIM CIM \_ ")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("CIM \| \_ LogicalDevice")
 </dt> </dl>
 
 Referencia a la instancia de que representa las propiedades de un dispositivo lógico que existe en el sistema del equipo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ SystemDevices de Win32** se deriva de [**\_ SystemDevice de CIM**](cim-systemdevice.md).
+La **clase \_ SystemDevices de Win32** se deriva de [**CIM \_ SystemDevice**](cim-systemdevice.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La **clase \_ SystemDevices de Win32** se deriva de [**\_ SystemDevice de CIM**]
 
 <dl> <dt>
 
-[**\_SYSTEMDEVICE CIM**](cim-systemdevice.md)
+[**Sistema \_ CIMDispositivo**](cim-systemdevice.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

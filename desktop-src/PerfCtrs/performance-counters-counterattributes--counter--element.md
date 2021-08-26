@@ -1,7 +1,7 @@
 ---
-description: Identifica una lista de atributos que describe cómo debe mostrarse el contador.
+description: Identifica una lista de atributos que describe cómo se debe mostrar el contador.
 ms.assetid: d0935ce8-8182-4c83-97d9-0b44182934e0
-title: Atributo contraattributes (Counter)
+title: elemento counterAttributes (counter)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 64fb794d5ab38417d0ecd4ddabba9a28b33c28db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 118d144a70c422204f1c2603c6d6d65d13a970d15c676d4a00a090f4aa3f7d42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033605"
 ---
-# <a name="counterattributes-counter-element"></a>Atributo contraattributes (Counter)
+# <a name="counterattributes-counter-element"></a>elemento counterAttributes (counter)
 
-Identifica una lista de atributos que describe cómo debe mostrarse el contador.
+Identifica una lista de atributos que describe cómo se debe mostrar el contador.
 
 ``` syntax
 <xs:element name="counterAttributes"
@@ -26,7 +26,7 @@ Identifica una lista de atributos que describe cómo debe mostrarse el contador.
  />
 ```
 
-El elemento **Contraattributes** se define mediante el tipo complejo [**Counter**](performance-counters-counter-complex-type.md) .
+El **elemento counterAttributes** se define mediante el [**tipo complejo**](performance-counters-counter-complex-type.md) de contador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,8 +34,8 @@ El elemento **Contraattributes** se define mediante el tipo complejo [**Counter*
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -46,7 +46,7 @@ El elemento **Contraattributes** se define mediante el tipo complejo [**Counter*
 **Elementos primarios**
 </dt> <dt>
 
-[**Counter (counterSet)**](performance-counters-counter--counterset--element.md)
+[**counter (counterSet)**](performance-counters-counter--counterset--element.md)
 </dt> </dl>
 
  

@@ -1,34 +1,34 @@
 ---
-title: Copia desde CD
-description: Copia desde CD
+title: Resalte un CD
+description: Resalte un CD
 ms.assetid: f5c1b5bf-d616-48cb-8690-e0237c56e402
 keywords:
-- Windows Media Player, copia desde CD
-- Modelo de objetos de Windows Media Player, copia desde CD
-- modelo de objetos, copia desde CD
-- Control ActiveX de Windows Media Player, copia desde CD
-- Control ActiveX, copiar CD
-- Control ActiveX móvil de Windows Media Player, copia desde CD
-- Windows Media Player Mobile, copia desde CD
-- CD, acerca de
-- copiar CDs, acerca de
+- Reproductor de Windows Media,CD
+- Reproductor de Windows Media modelo de objetos, cds
+- modelo de objetos, cds
+- Reproductor de Windows Media ActiveX control de datos, cds
+- ActiveX control de datos, cds
+- Reproductor de Windows Media Control de ActiveX dispositivos móviles, cd-
+- Reproductor de Windows Media Móvil, cds
+- CD al, acerca de
+- CDs de resalte, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 767734b3449fd0a64b31c8f351406bbf9f6c805b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 313262bf29f3ee873b546dd639ec7b32c774be476e87f75592041f1bda6a2cdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002535"
 ---
-# <a name="ripping-a-cd"></a>Copia desde CD
+# <a name="ripping-a-cd"></a>Resalte un CD
 
-Hay dos maneras de copiar un CD mediante el control Media Player de Windows. Windows Media Player 9 puede copiar CDs mediante **IWMPPlayerServices:: setTaskPane**. Windows Media Player 11 presenta la interfaz de **IWMPCdromRip** para copiar CDs. Esta interfaz proporciona más funcionalidad que **IWMPPlayerServices:: setTaskPane** y se recomienda usar **IWMPCdromRip** si está disponible.
+Hay dos maneras de rasgar un CD mediante el control Reproductor de Windows Media datos. Reproductor de Windows Media 9 puede rasgar los CD mediante **IWMPPlayerServices::setTaskPane**. Reproductor de Windows Media 11 presenta la **interfaz IWMPCdromRip** para los CDs desenlazados. Esta interfaz proporciona más funcionalidad que **IWMPPlayerServices::setTaskPane** y se recomienda usar **IWMPCdromRip** si está disponible.
 
-En las secciones siguientes se describe cómo copiar un CD mediante Windows Media Player.
+En las secciones siguientes se describe cómo copiar un CD mediante Reproductor de Windows Media.
 
--   [Copia desde CD mediante la interfaz IWMPCdromRip](ripping-by-using-the-iwmpcdromrip-interface.md)
--   [Copiar mediante IWMPPlayerServices:: setTaskPane](ripping-by-using-iwmpplayerservices--settaskpane.md)
+-   [Resalte mediante la interfaz IWMPCdromRip](ripping-by-using-the-iwmpcdromrip-interface.md)
+-   [Task by Using IWMPPlayerServices::setTaskPane](ripping-by-using-iwmpplayerservices--settaskpane.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -37,9 +37,9 @@ En las secciones siguientes se describe cómo copiar un CD mediante Windows Medi
 [**Guía de control del reproductor**](player-control-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

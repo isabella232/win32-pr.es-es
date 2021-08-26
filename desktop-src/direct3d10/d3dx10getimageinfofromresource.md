@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 650d05f379be634bfdd9dfb0908153260f795b00
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: af4dea966b63549c4bcef913175c6c97e1c49d73e3d5694cfcd0f7b6c8170497
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989165"
 ---
 # <a name="d3dx10getimageinfofromresource-function"></a>Función D3DX10GetImageInfoFromResource
 
@@ -49,7 +49,7 @@ HRESULT D3DX10GetImageInfoFromResource(
 
 Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
-Módulo donde se carga el recurso. Establezca este parámetro en **NULL** para especificar el módulo asociado a la imagen que el sistema operativo usó para crear el proceso actual.
+Módulo donde se carga el recurso. Establezca este parámetro en **NULL para** especificar el módulo asociado a la imagen que el sistema operativo usó para crear el proceso actual.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Módulo donde se carga el recurso. Establezca este parámetro en **NULL** para e
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve como LPCSTR. Vea la sección Comentarios.
+Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos se resuelve en LPCSTR. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -67,14 +67,14 @@ Puntero a una cadena que especifica el nombre de archivo. Si la configuración d
 
 Tipo: **[ **ID3DX10ThreadPump**](id3dx10threadpump.md)\***
 
-Bombeo de subprocesos opcional que se puede usar para cargar la información de forma asincrónica. Puede ser **NULL.** Vea [**ID3DX10ThreadPump.**](id3dx10threadpump.md)
+Bomba de subproceso opcional que se puede usar para cargar la información de forma asincrónica. Puede ser **NULL.** Vea [**ID3DX10ThreadPump.**](id3dx10threadpump.md)
 
 </dd> <dt>
 
 *pSrcInfo* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **D3DX10 \_ IMAGE \_ INFO**](d3dx10-image-info.md)\***
+Tipo: **[ **INFORMACIÓN DE \_ IMAGEN \_ D3DX10**](d3dx10-image-info.md)\***
 
 Puntero a una estructura DE INFORMACIÓN DE IMAGEN D3DX10 que se va a rellenar con la descripción de \_ los datos del archivo de \_ origen.
 
@@ -110,7 +110,7 @@ La configuración del compilador también determina la versión de la función. 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

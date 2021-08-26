@@ -1,6 +1,6 @@
 ---
 title: RemoteFX Estructuras de la API de redireccionamiento multimedia
-description: La API RemoteFX redireccionamiento multimedia define las siguientes estructuras.
+description: La API RemoteFX redireccionamiento multimedia define las estructuras siguientes.
 ms.assetid: 9519F39D-E0EA-40E4-BEFD-E160DE012ECF
 ms.tgt_platform: multiple
 ms.topic: reference
@@ -14,7 +14,7 @@ ms.locfileid: "119988585"
 ---
 # <a name="remotefx-media-redirection-api-structures"></a>RemoteFX Estructuras de la API de redireccionamiento multimedia
 
-La API RemoteFX redireccionamiento multimedia define las siguientes estructuras.
+La API RemoteFX redireccionamiento multimedia define las estructuras siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

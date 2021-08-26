@@ -1,7 +1,7 @@
 ---
 description: Hora de inicio. De manera predeterminada, este valor está establecido en cero.
 ms.assetid: bafa69c3-ead0-4409-abbf-4e8cc325e5f9
-title: 'Miembro CSourceSeeking:: m_rtStart (Ctlutil. h)'
+title: CSourceSeeking::m_rtStart miembro (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dc7bf18f23177095328c1faee8dd8da28e830b3f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 98f19edd3d7225882a4b966c6a9916a46fddeb1e4a9340f3c702869c0c8e3c8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053965"
 ---
-# <a name="csourceseekingm_rtstart-member"></a>Miembro rtStart CSourceSeeking:: m \_
+# <a name="csourceseekingm_rtstart-member"></a>Miembro CSourceSeeking::m \_ rtStart
 
 Hora de inicio. De manera predeterminada, este valor está establecido en cero.
 
@@ -36,9 +36,9 @@ CRefTime m_rtStart;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Mantenga presionada la sección **m \_ Plock** Critical antes de tener acceso a esta variable.
+Mantenga **presionada \_ la sección m pLock** critical antes de acceder a esta variable.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Mantenga presionada la sección **m \_ Plock** Critical antes de tener acceso a 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Mantenga presionada la sección **m \_ Plock** Critical antes de tener acceso a 
 
 <dl> <dt>
 
-[**Clase CSourceSeeking**](csourceseeking.md)
+[**CSourceSeeking (clase)**](csourceseeking.md)
 </dt> </dl>
 
  

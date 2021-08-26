@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: métodos EsentLogFileNotCopiedException'
+description: 'Más información sobre: Métodos de EsentLogFileNotCopiedException'
 title: 'Métodos de EsentLogFileNotCopiedException '
 TOCTitle: EsentLogFileNotCopiedException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentLogFileNotCopiedException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102108
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3f328e66722781202a11cf5c22a6e7f7d708c146
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a9487787f2c4bf9ba30485bfe3d8f2323b0e777e0f26ddfb9649dce88b24e04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104567388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971607"
 ---
 # <a name="esentlogfilenotcopiedexception-methods"></a>Métodos de EsentLogFileNotCopiedException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo [EsentLogFileNotCopiedException](./esentlogfilenotcopiedexception-class.md) expone los siguientes miembros.
+El [tipo EsentLogFileNotCopiedException](./esentlogfilenotcopiedexception-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -39,13 +39,13 @@ El tipo [EsentLogFileNotCopiedException](./esentlogfilenotcopiedexception-class.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -55,12 +55,12 @@ El tipo [EsentLogFileNotCopiedException](./esentlogfilenotcopiedexception-class.
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>Cuando se reemplaza en una clase derivada, establece <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con información sobre la excepción. (Se hereda de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>).</td>
+<td>Cuando se invalida en una clase derivada, establece <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con información sobre la excepción. (Se hereda de <a href="dn274314(v=exchg.10).md">EsentErrorException).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
@@ -70,7 +70,7 @@ El tipo [EsentLogFileNotCopiedException](./esentlogfilenotcopiedexception-class.
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -84,4 +84,4 @@ Superior
 
 [Clase EsentLogFileNotCopiedException](./esentlogfilenotcopiedexception-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

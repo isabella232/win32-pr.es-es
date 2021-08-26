@@ -1,27 +1,27 @@
 ---
-title: Macros de la hoja de propiedades
-description: Macros de la hoja de propiedades
+title: Macros de hoja de propiedades
+description: Macros de hoja de propiedades
 ms.assetid: d1cb44ec-b130-413a-8763-5997a2362b21
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae4986544551685002d21abd3fec06033bbc4628
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a1f06cdd5733ba7dfacc4109bb5ebb59e8bb17dc1bd6d10038af7f20b40c37ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105653162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119970685"
 ---
-# <a name="property-sheet-macros"></a>Macros de la hoja de propiedades
+# <a name="property-sheet-macros"></a>Macros de hoja de propiedades
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**\_AddPage PropSheet**](/windows/desktop/api/Prsht/nf-prsht-propsheet_addpage)
--   [**PropSheet \_ aplicar**](/windows/desktop/api/Prsht/nf-prsht-propsheet_apply)
+-   [**PropSheet \_ AddPage**](/windows/desktop/api/Prsht/nf-prsht-propsheet_addpage)
+-   [**PropSheet \_ Apply**](/windows/desktop/api/Prsht/nf-prsht-propsheet_apply)
 -   [**PropSheet \_ CancelToClose**](/windows/desktop/api/Prsht/nf-prsht-propsheet_canceltoclose)
--   [**PropSheet \_ cambiado**](/windows/desktop/api/Prsht/nf-prsht-propsheet_changed)
+-   [**PropSheet \_ Changed**](/windows/desktop/api/Prsht/nf-prsht-propsheet_changed)
 -   [**PropSheet \_ EnableWizButtons**](/windows/desktop/api/Prsht/nf-prsht-propsheet_enablewizbuttons)
 -   [**PropSheet \_ GetCurrentPageHwnd**](/windows/desktop/api/Prsht/nf-prsht-propsheet_getcurrentpagehwnd)
--   [**\_GetResult PropSheet**](/windows/desktop/api/Prsht/nf-prsht-propsheet_getresult)
+-   [**PropSheet \_ GetResult**](/windows/desktop/api/Prsht/nf-prsht-propsheet_getresult)
 -   [**PropSheet \_ GetTabControl**](/windows/desktop/api/Prsht/nf-prsht-propsheet_gettabcontrol)
 -   [**PropSheet \_ HwndToIndex**](/windows/desktop/api/Prsht/nf-prsht-propsheet_hwndtoindex)
 -   [**PropSheet \_ IdToIndex**](/windows/desktop/api/Prsht/nf-prsht-propsheet_idtoindex)
@@ -31,8 +31,8 @@ ms.locfileid: "105653162"
 -   [**PropSheet \_ InsertPage**](/windows/desktop/api/Prsht/nf-prsht-propsheet_insertpage)
 -   [**PropSheet \_ IsDialogMessage**](/windows/desktop/api/Prsht/nf-prsht-propsheet_isdialogmessage)
 -   [**PropSheet \_ PageToIndex**](/windows/desktop/api/Prsht/nf-prsht-propsheet_pagetoindex)
--   [**PropSheet \_ PressButton**](/windows/desktop/api/Prsht/nf-prsht-propsheet_pressbutton)
--   [**PropSheet \_ QuerySiblings**](/windows/desktop/api/Prsht/nf-prsht-propsheet_querysiblings)
+-   [**PressButton \_ de PropSheet**](/windows/desktop/api/Prsht/nf-prsht-propsheet_pressbutton)
+-   [**Consultas \_ de PropSheetSiblings**](/windows/desktop/api/Prsht/nf-prsht-propsheet_querysiblings)
 -   [**PropSheet \_ RebootSystem**](/windows/desktop/api/Prsht/nf-prsht-propsheet_rebootsystem)
 -   [**PropSheet \_ RecalcPageSizes**](/windows/desktop/api/Prsht/nf-prsht-propsheet_recalcpagesizes)
 -   [**PropSheet \_ RemovePage**](/windows/desktop/api/Prsht/nf-prsht-propsheet_removepage)
@@ -49,7 +49,7 @@ ms.locfileid: "105653162"
 -   [**PropSheet \_ SetTitle**](/windows/desktop/api/Prsht/nf-prsht-propsheet_settitle)
 -   [**PropSheet \_ SetWizButtons**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setwizbuttons)
 -   [**PropSheet \_ ShowWizButtons**](/windows/desktop/api/Prsht/nf-prsht-propsheet_showwizbuttons)
--   [**PropSheet \_ sin cambios**](/windows/desktop/api/Prsht/nf-prsht-propsheet_unchanged)
+-   [**PropSheet \_ UnChanged**](/windows/desktop/api/Prsht/nf-prsht-propsheet_unchanged)
 
  
 

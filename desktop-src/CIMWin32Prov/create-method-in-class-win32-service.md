@@ -1,5 +1,5 @@
 ---
-description: 'Método Create de la Win32_Service (proveedores WMI CIMWin32): crea un nuevo servicio del sistema.'
+description: 'Método Create de la clase Win32_Service (proveedores WMI CIMWin32): crea un nuevo servicio del sistema.'
 ms.assetid: 164e9065-bb0d-4c93-a9fe-c86db1ea7cb7
 ms.tgt_platform: multiple
 title: Método Create de la clase Win32_Service (proveedores WMI CIMWin32)
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 71bc0f4edb879fc4a51a012bc53db67031056f47
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3baa83179ac6c5040aa85a5fcf2af0d932a4c8e9cdc2d10742c5c8aaa66abb5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003805"
 ---
 # <a name="create-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método Create de la clase Win32_Service (proveedores WMI CIMWin32)
 
 El **método de** clase Create [WMI](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuevo servicio del sistema.
 
-En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Nombre del servicio que se instalará en el **método Create.** La longitud máx
 *DisplayName* \[ En\]
 </dt> <dd>
 
-Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva entre mayúsculas y minúsculas en Service Control Manager. *Las comparaciones* de DisplayName siempre no tienen en cuenta las mayúsculas y minúsculas.
+Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva en el Administrador de control de servicios. *Las comparaciones* de DisplayName siempre no tienen en cuenta las mayúsculas y minúsculas.
 
 Restricciones: acepta el mismo valor que el *parámetro Name.*
 
@@ -90,7 +90,7 @@ Tipo de servicios proporcionados a los procesos que los llaman.
 1 (0x1)
 </dt> <dd>
 
-Kernel Driver
+Controlador kernel
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ Adapter (Adaptador)
 8 (0x8)
 </dt> <dd>
 
-Controlador de reconocedor
+Controlador recognizer
 
 </dd> <dt>
 
@@ -174,7 +174,7 @@ El sistema intenta comenzar con una buena configuración.
 *StartMode* \[ En\]
 </dt> <dd>
 
-Modo de inicio del servicio base de Windows.
+Modo de inicio del servicio Windows base.
 
 <dt>
 
@@ -202,7 +202,7 @@ Servicio que el Administrador de control de servicios iniciará automáticamente
 Manual
 </dt> <dd>
 
-Servicio que debe iniciar el Administrador de control de servicios cuando un proceso llame al [**método StartService.**](startservice-method-in-class-win32-service.md)
+Servicio que va a iniciar el Administrador de control de servicios cuando un proceso llama al [**método StartService.**](startservice-method-in-class-win32-service.md)
 
 </dd> <dt>
 
@@ -223,7 +223,7 @@ Si **es true,** el servicio puede crear o comunicarse con ventanas en el escrito
 *StartName* \[ En\]
 </dt> <dd>
 
-Nombre de cuenta con el que se ejecuta el servicio. Según el tipo de servicio, el nombre de la cuenta puede tener el formato nombredeusuario de nombre de dominio o nombre \\ principal de usuario (UPN) ( Username@DomainName ). El proceso de servicio se registra mediante uno de estos dos formularios cuando se ejecuta. Si la cuenta pertenece al dominio integrado, . \\ Se puede especificar el nombre de usuario. Si se especifica **NULL,** el servicio se inicia sesión como la cuenta LocalSystem. Para un kernel o controladores de nivel de sistema, *StartName* contiene el nombre del objeto de controlador (es decir, FileSystem Rdr o Driver Xns) que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Si se especifica **NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S en función del nombre del servicio. Ejemplo: Administrador de \\ DWDOM.
+Nombre de cuenta con el que se ejecuta el servicio. Según el tipo de servicio, el nombre de la cuenta puede tener el formato nombredeusuario de nombre de dominio o nombre principal de \\ usuario (UPN) ( Username@DomainName ). El proceso de servicio se registra mediante uno de estos dos formularios cuando se ejecuta. Si la cuenta pertenece al dominio integrado, . \\ Se puede especificar el nombre de usuario. Si se especifica **NULL,** el servicio se inicia sesión como la cuenta LocalSystem. Para un kernel o controladores de nivel de sistema, *StartName* contiene el nombre del objeto de controlador (es decir, FileSystem Rdr o Driver Xns) que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Si se especifica **NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio. Ejemplo: Administrador de \\ DWDOM.
 
 </dd> <dt>
 
@@ -237,29 +237,29 @@ Contraseña en el nombre de cuenta especificado por el *parámetro StartName.* E
 *LoadOrderGroup* \[ En\]
 </dt> <dd>
 
-Nombre de grupo asociado al nuevo servicio. Los grupos de orden de carga se encuentran en el Registro y determinan la secuencia en la que se cargan los servicios en el sistema operativo. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no pertenece a un grupo. Las dependencias entre grupos deben aparecer en *el parámetro LoadOrderGroupDependencies.* Los servicios de la lista de grupos de ordenación de carga se inician primero, seguidos de los servicios de los grupos que no están en la lista de grupos de ordenación de carga, seguidos de los servicios que no pertenecen a un grupo. El registro tiene una lista de grupos de pedidos de carga ubicados en:
+Nombre de grupo asociado al nuevo servicio. Los grupos de pedidos de carga se encuentran en el Registro y determinan la secuencia en la que se cargan los servicios en el sistema operativo. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no pertenece a un grupo. Las dependencias entre grupos deben aparecer en el *parámetro LoadOrderGroupDependencies.* Los servicios de la lista de grupos de ordenación de carga se inician primero, seguidos de los servicios de los grupos que no están en la lista de grupos de ordenación de carga, seguidos de los servicios que no pertenecen a un grupo. El registro tiene una lista de grupos de ordenación de carga ubicados en:
 
-**HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **ServiceGroupOrder**
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **ServiceGroupOrder**
 
 </dd> <dt>
 
 *LoadOrderGroupDependencies* \[ En\]
 </dt> <dd>
 
-Matriz de grupos de ordenación de carga que deben iniciarse antes de este servicio. Cada elemento de la matriz está delimitado por **NULL** y la lista termina con dos **valores NULL.** En Visual Basic o script puede pasar una vbArray. Si el puntero es **NULL o** si apunta a una cadena vacía, el servicio no tiene dependencias. Los nombres de grupo deben ir precedidos por el carácter **SC \_ GROUP \_ IDENTIFIER** (definido en el archivo Winsvc.h) para diferenciarlo de un nombre de servicio, ya que los servicios y los grupos de servicios comparten el mismo espacio de nombres. La dependencia de un grupo significa que este servicio se puede ejecutar si al menos un miembro del grupo se está ejecutando después de un intento de iniciar todos los miembros del grupo.
+Matriz de grupos de ordenación de carga que deben iniciarse antes de este servicio. Cada elemento de la matriz está delimitado por **NULL** y la lista finaliza con dos **valores NULL.** En Visual Basic o script puede pasar una vbArray. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no tiene dependencias. Los nombres de grupo deben ir precedidos por el carácter **SC \_ GROUP \_ IDENTIFIER** (definido en el archivo Winsvc.h) para diferenciarlo de un nombre de servicio, ya que los servicios y los grupos de servicios comparten el mismo espacio de nombres. La dependencia de un grupo significa que este servicio se puede ejecutar si al menos un miembro del grupo se está ejecutando después de un intento de iniciar todos los miembros del grupo.
 
 </dd> <dt>
 
 *ServiceDependencies* \[ En\]
 </dt> <dd>
 
-Matriz que contiene los nombres de los servicios que deben iniciarse antes de que se inicie este servicio. Cada elemento de la matriz está delimitado por **NULL** y la lista termina con dos **valores NULL.** En Visual Basic o script puede pasar una vbArray. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no tiene dependencias. La dependencia de un servicio significa que este servicio solo se puede ejecutar si el servicio del que depende se está ejecutando.
+Matriz que contiene los nombres de los servicios que deben iniciarse antes de que se inicie este servicio. Cada elemento de la matriz está delimitado por **NULL** y la lista finaliza con dos **valores NULL.** En Visual Basic o script puede pasar una vbArray. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no tiene dependencias. La dependencia de un servicio significa que este servicio solo se puede ejecutar si el servicio del que depende se está ejecutando.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -301,7 +301,7 @@ El código de control solicitado no es válido o no es aceptable para el servici
 **5**
 </dt> <dd>
 
-El código de control solicitado no se puede enviar al servicio porque el estado del servicio (propiedad **State** de la clase [**\_ BaseService win32)**](win32-baseservice.md) es igual a 0, 1 o 2.
+El código de control solicitado no se puede enviar al servicio porque el estado del servicio (propiedad **State** de la clase [**\_ BaseService de Win32)**](win32-baseservice.md) es igual a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -440,17 +440,17 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 ## <a name="remarks"></a>Comentarios
 
-Por lo general, los servicios se instalan de una de estas dos maneras: como parte de la instalación del sistema operativo o mediante un programa de instalación proporcionado por el desarrollador del servicio. Sin embargo, es posible que algunos servicios, especialmente los creados de forma local, no tengan un programa de instalación. En esos casos, puede usar el **método Create** para instalar servicios mediante programación.
+Por lo general, los servicios se instalan de una de estas dos maneras: ya sea como parte de la instalación del sistema operativo o mediante un programa de instalación proporcionado por el desarrollador del servicio. Sin embargo, es posible que algunos servicios, especialmente los creados de forma local, no tengan un programa de instalación. En esos casos, puede usar el **método Create** para instalar servicios mediante programación.
 
-A pesar del nombre, el método Create no crea realmente un servicio; simplemente instala un servicio existente. Para usar este comando, debe copiar el archivo ejecutable de servicio en un equipo y, a continuación, usar **Crear** para instalar el servicio.
+A pesar del nombre, el método Create no crea realmente un servicio; simplemente instala un servicio existente. Para usar este comando, debe copiar el archivo ejecutable del servicio en un equipo y, a continuación, usar **Crear** para instalar el servicio.
 
-El **método Create** es similar al método [**Change.**](change-method-in-class-win32-service.md) En ambos casos, las propiedades del servicio se pasan como parámetros al método . Al igual que con los parámetros usados con **el método Change,** el orden en el que se pasan estos parámetros es muy importante.
+El **método Create** es similar al método [**Change.**](change-method-in-class-win32-service.md) En ambos casos, las propiedades del servicio se pasan como parámetros al método . Al igual que con los parámetros usados con **el método Change,** el orden en que se pasan estos parámetros es muy importante.
 
-El *parámetro LoadOrderGroup representa* una agrupación de servicios del sistema que definen las dependencias de ejecución. Los servicios deben iniciarse en el orden especificado por el grupo de pedidos de carga, ya que los servicios dependen entre sí. Estos servicios dependientes requieren la presencia de los servicios antecedentes para funcionar correctamente.
+El *parámetro LoadOrderGroup* representa una agrupación de servicios del sistema que definen las dependencias de ejecución. Los servicios deben iniciarse en el orden especificado por el grupo de pedidos de carga, ya que los servicios dependen entre sí. Estos servicios dependientes requieren la presencia de los servicios antecedentes para funcionar correctamente.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente VBScript instala un servicio denominado DbService.
+El siguiente VBScript instala un servicio denominado DbService
 
 
 ```VB
@@ -471,7 +471,7 @@ errReturn = objService.Create ("DbService", "Personnel Database", _
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -481,7 +481,7 @@ errReturn = objService.Create ("DbService", "Personnel Database", _
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
