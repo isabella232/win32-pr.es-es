@@ -1,43 +1,43 @@
 ---
-description: Cómo devolver los registros del diario de cambios que cumplen los criterios especificados.
+description: Cómo devolver registros de diario de cambios que cumplan los criterios especificados.
 ms.assetid: 8946adb5-da47-4711-8800-86f323081c4c
-title: Recorrer un búfer de registros del diario de cambios
+title: Recorrer un búfer de registros de diario de cambios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9384316e38c23951849006efc259268a7bdf33df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9242d671cedfb5c9ef2b5fa836e29c455d09a9e1287b1ed035712f49c6c7d627
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830155"
 ---
-# <a name="walking-a-buffer-of-change-journal-records"></a>Recorrer un búfer de registros del diario de cambios
+# <a name="walking-a-buffer-of-change-journal-records"></a>Recorrer un búfer de registros de diario de cambios
 
-Los códigos de control que devuelven los registros del diario de cambios del número de secuencia de actualización (USN), los datos de los USN [**\_ leer \_ \_ diario USN**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) y fsctl de la [**\_ \_ \_ enumeración**](/windows/win32/api/winioctl/ni-winioctl-fsctl_enum_usn_data), devuelven datos similares en el búfer de salida. Ambos devuelven un USN seguido de cero o más registros de diario de cambios, cada uno de ellos en una estructura de registro [**USN \_ \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) o [**USN \_ \_**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) .
+Los códigos de control que devuelven registros de diario de cambio de número de secuencia de actualización (USN), [**FSCTL \_ READ \_ USN \_ JOURNAL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) y [**FSCTL \_ ENUM \_ USN \_ DATA**](/windows/win32/api/winioctl/ni-winioctl-fsctl_enum_usn_data), devuelven datos similares en el búfer de salida. Ambos devuelven un USN seguido de cero o más registros de diario de cambios, cada uno en una estructura [**USN \_ RECORD \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) o [**USN \_ RECORD \_ V3.**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3)
 
-El volumen de destino de las operaciones de USN debe ser ReFS o NTFS 3,0 o posterior. Para obtener la versión NTFS de un volumen, abra un símbolo del sistema con derechos de acceso de administrador y ejecute el siguiente comando:
+El volumen de destino para las operaciones de USN debe ser ReFS o NTFS 3.0 o posterior. Para obtener la versión NTFS de un volumen, abra un símbolo del sistema con derechos de acceso de administrador y ejecute el siguiente comando:
 
-**FSUtil.exe FSInfo ntfsinfo** *X ** * *:*
+**FSUtil.exe FSInfo NTFSInfo** *X::**
 
-donde *X* es la letra de la unidad del volumen.
+donde *X* es la letra de unidad del volumen.
 
-En la lista siguiente se identifican las formas de obtener los registros del diario de cambios:
+En la lista siguiente se identifican las formas de obtener registros de diario de cambios:
 
--   Use [**los \_ \_ \_ datos USN enum de FSCTL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_enum_usn_data) para obtener una lista (enumeración) de todos los registros del diario de cambios entre dos USN.
--   Use [**el \_ \_ \_ diario de lectura de USN de FSCTL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) para ser más selectivo, como la selección de razones específicas para los cambios o la devolución cuando se cierra un archivo.
+-   Use [**FSCTL \_ ENUM \_ USN \_ DATA**](/windows/win32/api/winioctl/ni-winioctl-fsctl_enum_usn_data) para obtener una lista (enumeración) de todos los registros de diario de cambios entre dos USN.
+-   Use [**FSCTL \_ READ \_ USN \_ JOURNAL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) para ser más selectivo, como seleccionar motivos específicos para los cambios o devolver cuando se cierra un archivo.
 
 > [!Note]  
 > Ambas operaciones devuelven solo el subconjunto de registros del diario de cambios que cumplen los criterios especificados.
 
  
 
-El USN devuelto como primer elemento en el búfer de salida es el USN del siguiente número de registro que se va a recuperar. Use este valor para seguir leyendo los registros del límite final hacia delante.
+El USN devuelto como primer elemento del búfer de salida es el USN del siguiente número de registro que se va a recuperar. Use este valor para seguir leyendo registros desde el límite final hacia delante.
 
-El miembro **filename** del [**Registro \_ USN \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) o [**el \_ registro USN \_ V3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) contiene el nombre del archivo al que se aplica el registro en cuestión. El nombre de archivo varía en longitud, por lo que el registro **USN \_ \_ V2** y el **\_ registro USN \_ V3** son estructuras de longitud variable. Su primer miembro, **RecordLength**, es la longitud de la estructura (incluido el nombre de archivo), en bytes.
+El **miembro FileName** de [**USN RECORD \_ \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) o [**USN RECORD \_ \_ V3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) contiene el nombre del archivo al que se aplica el registro en cuestión. El nombre de archivo varía en longitud, por lo **que USN \_ RECORD \_ V2** y **USN RECORD \_ \_ V3** son estructuras de longitud variable. Su primer miembro, **RecordLength**, es la longitud de la estructura (incluido el nombre de archivo), en bytes.
 
-Cuando trabaje con el miembro de **nombre** de archivo de las estructuras de registro [**USN \_ \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) y [**\_ registro USN \_ V3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) , no suponga que el nombre de archivo contiene un \\ delimitador "0" final. Para determinar la longitud del nombre de archivo, use el miembro **FileNameLength** .
+Cuando trabaje con el miembro **FileName** de las estructuras [**USN \_ RECORD \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) y [**USN \_ RECORD \_ V3,**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) no suponga que el nombre de archivo contiene un delimitador \\ "0" final. Para determinar la longitud del nombre de archivo, use el **miembro FileNameLength.**
 
-En el ejemplo siguiente se llama a [**FSCTL \_ leer el \_ \_ diario USN**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) y se recorre el búfer de los registros del diario de cambios que devuelve la operación.
+En el ejemplo siguiente se [**llama a FSCTL \_ READ \_ USN \_ JOURNAL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) y se recorre el búfer de los registros del diario de cambios que devuelve la operación.
 
 
 ```C++
@@ -143,9 +143,9 @@ void main()
 
 
 
-El tamaño, en bytes, de cualquier registro especificado por una estructura de registro [**USN \_ \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) o un [**\_ registro USN \_ V3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) es, como máximo, `((MaxComponentLength - 1) * Width) + Size` donde *MaxComponentLength* es la longitud máxima en caracteres del nombre del archivo de registro. El ancho es el tamaño de un carácter ancho *y el tamaño* de la estructura.
+El tamaño en bytes de cualquier registro especificado por una estructura [**USN \_ RECORD \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) o [**USN \_ RECORD \_ V3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) es como máximo donde `((MaxComponentLength - 1) * Width) + Size` *MaxComponentLength* es la longitud máxima en caracteres del nombre del archivo de registro. El ancho es el tamaño de un carácter ancho y *el tamaño* de la estructura.
 
-Para obtener la longitud máxima, llame a la función [**GetVolumeInformation**](/windows/desktop/api/FileAPI/nf-fileapi-getvolumeinformationa) y examine el valor al que apunta el parámetro *lpMaximumComponentLength* . Reste uno de *MaxComponentLength* para que tenga en cuenta el hecho de que la definición del [**\_ registro USN**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) y el [**\_ registro USN \_ V3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) incluye un carácter del nombre de archivo.
+Para obtener la longitud máxima, llame a la función [**GetVolumeInformation**](/windows/desktop/api/FileAPI/nf-fileapi-getvolumeinformationa) y examine el valor al que apunta el *parámetro lpMaximumComponentLength.* Resta uno de *MaxComponentLength* para tener en cuenta el hecho de que la definición de [**USN \_ RECORD**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) y [**USN \_ RECORD \_ V3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) incluye un carácter del nombre de archivo.
 
 En el lenguaje de programación C, el mayor tamaño de registro posible es el siguiente:
 
