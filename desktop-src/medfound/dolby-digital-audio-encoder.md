@@ -4,19 +4,19 @@ ms.assetid: CBC31132-046C-4CD7-9DBA-20A9C666FB43
 title: Dolby Digital Audio Encoder
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f901587b816bc17d62f4095e093b661ce55f0009
-ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
+ms.openlocfilehash: 84d14a434481a94021617f04e4cb9e10329ad20a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110153568"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122483101"
 ---
 # <a name="dolby-digital-audio-encoder"></a>Dolby Digital Audio Encoder
 
-El codificador de audio Dolby es una [transformación](media-foundation-transforms.md) de Media Foundation (MFT) que codifica audio mono o estéreo en Dolby Digital, también denominado Dolby AC-3. El codificador no admite la entrada multicanal, como la configuración del canal 5.1.
+El codificador de [](media-foundation-transforms.md) audio Dolby es una transformación de Media Foundation (MFT) que codifica audio mono o estéreo en Dolby Digital, también denominado Dolby AC-3. El codificador no admite la entrada multicanal, como la configuración del canal 5.1.
 
 > [!IMPORTANT]
-> Para las versiones de Windows anteriores a Windows 8, la implementación de Microsoft de la tecnología Dolby Digital está restringida en los términos del programa de licencias Dolby Digital para que las usen las aplicaciones de Microsoft.
+> Para las versiones de Windows anteriores a Windows 8, la implementación de Microsoft de la tecnología Dolby Digital está restringida en términos del programa de licencias Dolby Digital para que las usen las aplicaciones de Microsoft.
 
  
 
@@ -32,57 +32,16 @@ El tipo de salida debe establecerse primero, antes que el tipo de entrada. En la
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descripción</th>
-<th>Observaciones</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="mf-mt-major-type-attribute.md">MF_MT_MAJOR_TYPE</a></td>
-<td>Tipo principal.</td>
-<td>Necesario. Debe ser <strong>MFMediaType_Audio</strong>.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-subtype-attribute.md">MF_MT_SUBTYPE</a></td>
-<td>Subtipo de audio.</td>
-<td>Necesario. Debe ser <strong>MFAudioFormat_Dolby_AC3</strong>.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-samples-per-second-attribute.md">MF_MT_AUDIO_SAMPLES_PER_SECOND</a></td>
-<td>Ejemplos por segundo.</td>
-<td>Necesario. Se admiten los valores siguientes:
-<ul>
-<li>32000</li>
-<li>44100</li>
-<li>48000</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-num-channels-attribute.md">MF_MT_AUDIO_NUM_CHANNELS</a></td>
-<td>Número de canales.</td>
-<td>Necesario. Debe ser 1 (mono) o 2 (estéreo).</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-channel-mask-attribute.md">MF_MT_AUDIO_CHANNEL_MASK</a></td>
-<td>Especifica la asignación de canales de audio a las posiciones del hablante.</td>
-<td>Opcional. Si se establece, el valor debe ser 0x3 para estéreo (canales delante izquierdo y derecho) o 0x4 para mono (canal front-center).</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-avg-bytes-per-second-attribute.md">MF_MT_AUDIO_AVG_BYTES_PER_SECOND</a></td>
-<td>Velocidad de bits de la secuencia AC-3 codificada, en bytes por segundo.</td>
-<td>Opcional. Vea Comentarios para obtener valores válidos. Si no se establece este atributo, el codificador usa una velocidad de bits predeterminada, como se describe en Comentarios.</td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descripción | Observaciones | 
+|-----------|-------------|---------|
+| <a href="mf-mt-major-type-attribute.md">MF_MT_MAJOR_TYPE</a> | Tipo principal. | Necesario. Debe ser <strong>MFMediaType_Audio</strong>. | 
+| <a href="mf-mt-subtype-attribute.md">MF_MT_SUBTYPE</a> | Subtipo de audio. | Necesario. Debe ser <strong>MFAudioFormat_Dolby_AC3</strong>. | 
+| <a href="mf-mt-audio-samples-per-second-attribute.md">MF_MT_AUDIO_SAMPLES_PER_SECOND</a> | Ejemplos por segundo. | Necesario. Se admiten los valores siguientes:<ul><li>32000</li><li>44100</li><li>48000</li></ul> | 
+| <a href="mf-mt-audio-num-channels-attribute.md">MF_MT_AUDIO_NUM_CHANNELS</a> | Número de canales. | Necesario. Debe ser 1 (mono) o 2 (estéreo). | 
+| <a href="mf-mt-audio-channel-mask-attribute.md">MF_MT_AUDIO_CHANNEL_MASK</a> | Especifica la asignación de canales de audio a las posiciones del hablante. | Opcional. Si se establece, el valor debe ser 0x3 para estéreo (canales delante izquierdo y derecho) o 0x4 para mono (canal front-center). | 
+| <a href="mf-mt-audio-avg-bytes-per-second-attribute.md">MF_MT_AUDIO_AVG_BYTES_PER_SECOND</a> | Velocidad de bits de la secuencia AC-3 codificada, en bytes por segundo. | Opcional. Vea Comentarios para obtener valores válidos. Si no se establece este atributo, el codificador usa una velocidad de bits predeterminada, como se describe en Comentarios. | 
+
 
 
 
@@ -96,71 +55,19 @@ En la tabla siguiente se enumeran los atributos obligatorios y opcionales para e
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descripción</th>
-<th>Observaciones</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="mf-mt-major-type-attribute.md">MF_MT_MAJOR_TYPE</a></td>
-<td>Tipo principal.</td>
-<td>Necesario. Debe ser <strong>MFMediaType_Audio</strong>.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-subtype-attribute.md">MF_MT_SUBTYPE</a></td>
-<td>Subtipo de audio.</td>
-<td>Necesario. Debe ser <strong>MFAudioFormat_PCM</strong> o <strong>MFAudioFormat_Float</strong>.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-bits-per-sample-attribute.md">MF_MT_AUDIO_BITS_PER_SAMPLE</a></td>
-<td>Número de bits por muestra de audio.</td>
-<td>Necesario. El valor debe ser 16 si el subtipo <strong>es MFAudioFormat_PCM</strong>o 32 si el subtipo <strong>es MFAudioFormat_Float</strong>.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-samples-per-second-attribute.md">MF_MT_AUDIO_SAMPLES_PER_SECOND</a></td>
-<td>Ejemplos por segundo.</td>
-<td>Necesario. Debe coincidir con el tipo de salida.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-num-channels-attribute.md">MF_MT_AUDIO_NUM_CHANNELS</a></td>
-<td>Número de canales.</td>
-<td>Necesario. Debe coincidir con el tipo de salida.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-block-alignment-attribute.md">MF_MT_AUDIO_BLOCK_ALIGNMENT</a></td>
-<td>Alineación de bloques, en bytes.</td>
-<td>Necesario. Calcule el valor como se muestra a continuación:
-<ul>
-<li><strong>MFAudioFormat_PCM:</strong>número de canales × 2.</li>
-<li><strong>MFAudioFormat_Float:</strong>número de canales × 4.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-avg-bytes-per-second-attribute.md">MF_MT_AUDIO_AVG_BYTES_PER_SECOND</a></td>
-<td>Velocidad de bits de la secuencia AC3 codificada, en bytes por segundo.</td>
-<td>Necesario. Debe ser igual a la alineación × muestras por segundo.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-channel-mask-attribute.md">MF_MT_AUDIO_CHANNEL_MASK</a></td>
-<td>Especifica la asignación de canales de audio a las posiciones del hablante.</td>
-<td>Opcional. Si se establece, el valor debe coincidir con el tipo de salida.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-valid-bits-per-sample-attribute.md">MF_MT_AUDIO_VALID_BITS_PER_SAMPLE</a></td>
-<td>Número de bits válidos de datos de audio en cada muestra de audio.</td>
-<td>Opcional. Si se establece, el valor debe ser idéntico <a href="mf-mt-audio-bits-per-sample-attribute.md">al MF_MT_AUDIO_BITS_PER_SAMPLE</a>.</td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descripción | Observaciones | 
+|-----------|-------------|---------|
+| <a href="mf-mt-major-type-attribute.md">MF_MT_MAJOR_TYPE</a> | Tipo principal. | Necesario. Debe ser <strong>MFMediaType_Audio</strong>. | 
+| <a href="mf-mt-subtype-attribute.md">MF_MT_SUBTYPE</a> | Subtipo de audio. | Necesario. Debe ser <strong>MFAudioFormat_PCM</strong> o <strong>MFAudioFormat_Float</strong>. | 
+| <a href="mf-mt-audio-bits-per-sample-attribute.md">MF_MT_AUDIO_BITS_PER_SAMPLE</a> | Número de bits por muestra de audio. | Necesario. El valor debe ser 16 si el subtipo <strong>es MFAudioFormat_PCM</strong>o 32 si el subtipo <strong>es MFAudioFormat_Float</strong>. | 
+| <a href="mf-mt-audio-samples-per-second-attribute.md">MF_MT_AUDIO_SAMPLES_PER_SECOND</a> | Ejemplos por segundo. | Necesario. Debe coincidir con el tipo de salida. | 
+| <a href="mf-mt-audio-num-channels-attribute.md">MF_MT_AUDIO_NUM_CHANNELS</a> | Número de canales. | Necesario. Debe coincidir con el tipo de salida. | 
+| <a href="mf-mt-audio-block-alignment-attribute.md">MF_MT_AUDIO_BLOCK_ALIGNMENT</a> | Alineación de bloques, en bytes. | Necesario. Calcule el valor como se muestra a continuación:<ul><li><strong>MFAudioFormat_PCM:</strong>número de canales × 2.</li><li><strong>MFAudioFormat_Float:</strong>número de canales × 4.</li></ul> | 
+| <a href="mf-mt-audio-avg-bytes-per-second-attribute.md">MF_MT_AUDIO_AVG_BYTES_PER_SECOND</a> | Velocidad de bits de la secuencia AC3 codificada, en bytes por segundo. | Necesario. Debe igualar la alineación de bloques × muestras por segundo. | 
+| <a href="mf-mt-audio-channel-mask-attribute.md">MF_MT_AUDIO_CHANNEL_MASK</a> | Especifica la asignación de canales de audio a las posiciones del hablante. | Opcional. Si se establece, el valor debe coincidir con el tipo de salida. | 
+| <a href="mf-mt-audio-valid-bits-per-sample-attribute.md">MF_MT_AUDIO_VALID_BITS_PER_SAMPLE</a> | Número de bits válidos de datos de audio en cada muestra de audio. | Opcional. Si se establece, el valor debe ser idéntico <a href="mf-mt-audio-bits-per-sample-attribute.md">al MF_MT_AUDIO_BITS_PER_SAMPLE</a>. | 
+
 
 
 
@@ -170,15 +77,15 @@ El codificador no admite la conversión de frecuencia de muestreo ni la conversi
 
 ## <a name="remarks"></a>Comentarios
 
-Cada fotograma de audio Dolby AC-3 contiene 1536 muestras de audio por canal. Sin embargo, cada búfer de entrada al codificador puede contener cualquier número de muestras de PCM. El tamaño de cada búfer de entrada debe ser un múltiplo de la alineación del bloque. El codificador almacena en caché los ejemplos de entrada hasta que tiene suficiente para 1536 muestras de audio por canal. momento en el que el codificador genera un fotograma AC-3.
+Cada fotograma de audio Dolby AC-3 contiene 1536 muestras de audio por canal. Sin embargo, cada búfer de entrada al codificador puede contener cualquier número de muestras de PCM. El tamaño de cada búfer de entrada debe ser un múltiplo de la alineación del bloque. El codificador almacena en caché ejemplos de entrada hasta que tiene suficiente para 1536 muestras de audio por canal. momento en el que el codificador genera un fotograma AC-3.
 
-Cada búfer de salida contiene un marco AC-3 sin procesar. La duración es equivalente a la duración de 1536 muestras de PCM con la frecuencia de muestreo actual (32 ms) a 48 kHz, 34,83 ms a 44,1 kHz y 48 ms a 32 kHz). El tamaño de cada búfer de salida depende de la velocidad de bits y la frecuencia de muestreo.
+Cada búfer de salida contiene un marco AC-3 sin procesar. La duración es equivalente a la duración de 1536 muestras de PCM a la velocidad de muestreo actual (32 mss) a una velocidad de muestreo de 48 kHz, 34,83 ms s a 44,1 kHz y 48 ms a 32 kHz). El tamaño de cada búfer de salida depende de la velocidad de bits y la frecuencia de muestreo.
 
-Para especificar la velocidad de bits de codificación, establezca el atributo [MF MT AUDIO AVG BYTES PER \_ \_ \_ \_ \_ \_ SECOND](mf-mt-audio-avg-bytes-per-second-attribute.md) en el tipo de salida. En la tabla siguiente se muestra la relación entre la velocidad de bits de codificación y LOS BYTES PROMEDIO \_ DE AUDIO MF MT POR \_ \_ \_ \_ \_ SEGUNDO.
+Para especificar la velocidad de bits de codificación, establezca el atributo [MF MT AUDIO AVG BYTES PER \_ \_ \_ \_ \_ \_ SECOND](mf-mt-audio-avg-bytes-per-second-attribute.md) en el tipo de salida. En la tabla siguiente se muestra la relación entre la velocidad de bits de codificación y los BYTES PROMEDIO DE AUDIO MT DE MF \_ \_ POR \_ \_ \_ \_ SEGUNDO.
 
 
 
-| Velocidad de bits (kbps) | [PROMEDIO \_ DE BYTES PROMEDIO DE AUDIO MF MT POR \_ \_ \_ \_ \_ SEGUNDO](mf-mt-audio-avg-bytes-per-second-attribute.md) | Comentarios                                                 |
+| Velocidad de bits (kbps) | [PROMEDIO DE BYTES PROMEDIO DE AUDIO DE MF \_ MT \_ POR \_ \_ \_ \_ SEGUNDO](mf-mt-audio-avg-bytes-per-second-attribute.md) | Comentarios                                                 |
 |-----------------|------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | 64              | 8000                                                                                     | Solo Mono.                                              |
 | 80              | 10000                                                                                    | Solo Mono.                                              |
@@ -220,13 +127,13 @@ Tipo de medio de entrada:
 
 | Atributo                                                                                | Valor                  |
 |------------------------------------------------------------------------------------------|------------------------|
-| [TIPO \_ PRINCIPAL DE MF MT \_ \_](mf-mt-major-type-attribute.md)                                    | **MFMediaType \_ Audio** |
-| [\_SUBTIPO MT DE MF \_](mf-mt-subtype-attribute.md)                                           | **MFAudioFormat \_ PCM** |
-| [BITS \_ DE AUDIO MF MT POR \_ \_ \_ \_ EJEMPLO](mf-mt-audio-bits-per-sample-attribute.md)            | 16                     |
+| [TIPO \_ PRINCIPAL DE MT \_ DE \_ MF](mf-mt-major-type-attribute.md)                                    | **MFMediaType \_ Audio** |
+| [\_SUBTIPO DE MT DE MF \_](mf-mt-subtype-attribute.md)                                           | **MFAudioFormat \_ PCM** |
+| [BITS \_ DE AUDIO MF MT POR \_ \_ \_ \_ MUESTRA](mf-mt-audio-bits-per-sample-attribute.md)            | 16                     |
 | [MUESTRAS \_ DE AUDIO MF MT POR \_ \_ \_ \_ SEGUNDO](mf-mt-audio-samples-per-second-attribute.md)      | 48000                  |
-| [CANALES \_ NUM \_ DE AUDIO \_ MF MT \_](mf-mt-audio-num-channels-attribute.md)                   | 2                      |
-| [ALINEACIÓN \_ DE \_ BLOQUES DE AUDIO \_ \_ MF MT](mf-mt-audio-block-alignment-attribute.md)             | 4                      |
-| [PROMEDIO \_ DE BYTES PROMEDIO DE AUDIO MF MT POR \_ \_ \_ \_ \_ SEGUNDO](mf-mt-audio-avg-bytes-per-second-attribute.md) | 192000                 |
+| [CANALES \_ NUM DE AUDIO MF \_ \_ \_ MT](mf-mt-audio-num-channels-attribute.md)                   | 2                      |
+| [ALINEACIÓN \_ DE \_ BLOQUES DE AUDIO MF MT \_ \_](mf-mt-audio-block-alignment-attribute.md)             | 4                      |
+| [PROMEDIO DE BYTES PROMEDIO DE AUDIO DE MF \_ MT \_ POR \_ \_ \_ \_ SEGUNDO](mf-mt-audio-avg-bytes-per-second-attribute.md) | 192000                 |
 
 
 
@@ -238,7 +145,7 @@ Tipo de medio de entrada:
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 aplicaciones \[ de escritorio \| para aplicaciones para UWP\]<br/>                                       |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Archivo DLL<br/>                      | <dl> <dt>Msac3enc.dll</dt> </dl> |
 

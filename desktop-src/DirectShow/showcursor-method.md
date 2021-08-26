@@ -1,24 +1,24 @@
 ---
-description: El método ShowCursor hace que el cursor esté visible cuando el objeto MSWebDVD está en modo de pantalla completa.
+description: El método ShowCursor hace que el cursor sea visible cuando el objeto MSWebDVD está en modo de pantalla completa.
 ms.assetid: 3a611cc8-7979-473d-bd0f-f4ca43701c63
-title: Método ShowCursor
+title: ShowCursor (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 917c1d0d2724259fc19baf72ab6b3844cddc3419
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3013392a5dcea2b3c4c9af8ee94d54c540814b5f4221563429ee7c837dcdddd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050525"
 ---
-# <a name="showcursor-method"></a>Método ShowCursor
+# <a name="showcursor-method"></a>ShowCursor (método)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.
 
  
 
-El `ShowCursor` método hace que el cursor esté visible cuando el objeto **MSWebDVD** está en modo de pantalla completa.
+El `ShowCursor` método hace que el cursor sea visible cuando el objeto **MSWebDVD** está en modo de pantalla completa.
 
 ``` syntax
 MSWebDVD.ShowCursor(bShow)
@@ -31,7 +31,7 @@ MSWebDVD.ShowCursor(bShow)
 <span id="bShow"></span><span id="bshow"></span><span id="BSHOW"></span>*bShow*
 </dt> <dd>
 
-Especifica si se va a mostrar el cursor como booleano.
+Especifica si se debe mostrar el cursor como un valor booleano.
 
 
 
@@ -50,9 +50,9 @@ Especifica si se va a mostrar el cursor como booleano.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando la pantalla del DVD entra en el modo de pantalla completa, el cursor desaparece entre 3 y 5 segundos. Use este método para hacer que el cursor sea visible de nuevo si los botones de control de la aplicación están visibles en el modo de pantalla completa.
+Cuando la pantalla de DVD entra en modo de pantalla completa, el cursor desaparece en un plazo de entre 3 y 5 segundos. Use este método para que el cursor vuelva a estar visible si los botones de control de la aplicación están visibles en modo de pantalla completa.
 
  
 

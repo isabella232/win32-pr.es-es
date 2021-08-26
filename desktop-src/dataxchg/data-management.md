@@ -3,34 +3,34 @@ title: Administración de datos
 description: En este tema se describe cómo los objetos de memoria pasan datos de una aplicación a otra.
 ms.assetid: 32919f27-4699-4831-8837-c5160b1daf4e
 keywords:
-- Interfaz de usuario de Windows, Intercambio dinámico de datos (DDE)
-- Intercambio dinámico de datos (DDE), administración de datos
-- DDE (Intercambio dinámico de datos), administración de datos
-- intercambio de datos, Intercambio dinámico de datos (DDE)
-- Interfaz de usuario de Windows, biblioteca de administración de Intercambio dinámico de datos (DDEML)
-- Biblioteca de administración de Intercambio dinámico de datos (DDEML), administración de datos
-- DDEML (biblioteca de administración de Intercambio dinámico de datos), administración de datos
-- intercambio de datos, biblioteca de administración de Intercambio dinámico de datos (DDEML)
-- Intercambio dinámico de datos (DDE), objetos
-- DDE (Intercambio dinámico de datos), objetos
-- Biblioteca de administración de Intercambio dinámico de datos (DDEML), objetos
-- DDEML (biblioteca de administración de Intercambio dinámico de datos), objetos
+- Windows Interfaz de usuario,datos dinámicos Exchange (DDE)
+- datos dinámicos Exchange (DDE), administración de datos
+- DDE (datos dinámicos Exchange),administración de datos
+- intercambio de datos, datos dinámicos Exchange (DDE)
+- Windows Interfaz de usuario,datos dinámicos Exchange Management Library (DDEML)
+- datos dinámicos Exchange Management Library (DDEML), administración de datos
+- DDEML (biblioteca datos dinámicos Exchange administración de datos), administración de datos
+- data exchange,datos dinámicos Exchange Management Library (DDEML)
+- datos dinámicos Exchange (DDE),objects
+- DDE (datos dinámicos Exchange),objects
+- datos dinámicos Exchange Management Library (DDEML),objects
+- DDEML (datos dinámicos Exchange management library),objects
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfc5178f636cf4b75111d4fc48e17fd144400a91
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 85dc9b8ccd82d184866ac9ed28f15bdeac424ec0bf9bd7767a520dea69bc4d11
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953745"
 ---
 # <a name="data-management"></a>Administración de datos
 
-Dado que Intercambio dinámico de datos (DDE) utiliza objetos de memoria para pasar datos de una aplicación a otra, la biblioteca de administración de Intercambio dinámico de datos (DDEML) proporciona un conjunto de funciones que las aplicaciones DDE pueden utilizar para crear y administrar objetos DDE.
+Dado que datos dinámicos Exchange (DDE) usa objetos de memoria para pasar datos de una aplicación a otra, la biblioteca de administración de datos dinámicos Exchange (DDEML) proporciona un conjunto de funciones que las aplicaciones DDE pueden usar para crear y administrar objetos DDE.
 
-Todas las transacciones que implican el intercambio de datos requieren que la aplicación proporcione los datos para crear un búfer local que contenga los datos y, a continuación, llamar a la función [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) . Esta función asigna un objeto DDE, copia los datos del búfer al objeto y devuelve un identificador de datos. Un identificador de datos es un valor **DWORD** que el ddeml usa para proporcionar acceso a los datos del objeto DDE. Para compartir los datos en un objeto DDE, una aplicación pasa el identificador de datos a DDEML y el DDEML pasa el identificador a la función de devolución de llamada DDE de la aplicación que recibe la transacción de datos.
+Todas las transacciones que implican el intercambio de datos requieren que la aplicación proporcione los datos para crear un búfer local que contenga los datos y, a continuación, llamar a la función [**DdeCreateDataHandle.**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) Esta función asigna un objeto DDE, copia los datos del búfer en el objeto y devuelve un identificador de datos. Un identificador de datos es un **valor DWORD** que DDEML usa para proporcionar acceso a los datos del objeto DDE. Para compartir los datos en un objeto DDE, una aplicación pasa el identificador de datos a DDEML y la DDEML pasa el identificador a la función de devolución de llamada DDE de la aplicación que recibe la transacción de datos.
 
-En el ejemplo siguiente se muestra cómo crear un objeto DDE y cómo obtener un identificador para el objeto. Durante la transacción [**XTYP \_ ADVREQ**](xtyp-advreq.md) , la función de devolución de llamada convierte la hora actual en una cadena ASCII, copia la cadena en un búfer local y, a continuación, crea un objeto DDE que contiene la cadena. La función de devolución de llamada devuelve el identificador del objeto DDE (HDDEDATA) a DDEML, que pasa el identificador a la aplicación cliente.
+En el ejemplo siguiente se muestra cómo crear un objeto DDE y obtener un identificador para el objeto . Durante la transacción [**\_ de XTYP ADCONVERTQ,**](xtyp-advreq.md) la función de devolución de llamada convierte la hora actual en una cadena ASCII, copia la cadena en un búfer local y, a continuación, crea un objeto DDE que contiene la cadena. La función de devolución de llamada devuelve el identificador al objeto DDE (HDDEDATA) a DDEML, que pasa el identificador a la aplicación cliente.
 
 
 ```
@@ -142,9 +142,9 @@ DWORD dwData2;
 
 
 
-La aplicación receptora obtiene un puntero al objeto DDE pasando el identificador de datos a la función [**DdeAccessData**](/windows/desktop/api/Ddeml/nf-ddeml-ddeaccessdata) . El puntero devuelto por **DdeAccessData** proporciona acceso de solo lectura. La aplicación debe usar el puntero para revisar los datos y, a continuación, llamar a la función [**DdeUnaccessData**](/windows/desktop/api/Ddeml/nf-ddeml-ddeunaccessdata) para invalidar el puntero. La aplicación puede copiar los datos en un búfer local mediante la función [**DdeGetData**](/windows/desktop/api/Ddeml/nf-ddeml-ddegetdata) .
+La aplicación receptora obtiene un puntero al objeto DDE pasando el identificador de datos a la [**función DdeAccessData.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeaccessdata) El puntero devuelto por **DdeAccessData** proporciona acceso de solo lectura. La aplicación debe usar el puntero para revisar los datos y, a continuación, llamar a la función [**DdeUnaccessData**](/windows/desktop/api/Ddeml/nf-ddeml-ddeunaccessdata) para invalidar el puntero. La aplicación puede copiar los datos en un búfer local mediante la [**función DdeGetData.**](/windows/desktop/api/Ddeml/nf-ddeml-ddegetdata)
 
-En el ejemplo siguiente se obtiene un puntero al objeto DDE identificado por el parámetro *hData* , se copia el contenido en un búfer local y, a continuación, se invalida el puntero.
+En el ejemplo siguiente se obtiene un puntero al objeto DDE identificado por el parámetro *hData,* se copia el contenido en un búfer local y, a continuación, se invalida el puntero.
 
 
 ```
@@ -166,15 +166,15 @@ case XTYP_ADVDATA:
 
 
 
-Normalmente, cuando una aplicación que creó un identificador de datos pasa ese identificador a DDEML, el identificador deja de ser válido en la aplicación que se crea. Esta situación no es un problema si la aplicación debe compartir datos con una sola aplicación. Sin embargo, si una aplicación debe compartir los mismos datos con varias aplicaciones, la aplicación que crea debe especificar la \_ marca HDATA APPOWNED en [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle). Al hacerlo, se proporciona la propiedad del objeto DDE a la aplicación de creación y se impide que DDEML invalide el identificador de datos. A continuación, la aplicación puede pasar el identificador de datos cualquier número de veces después de llamar a **DdeCreateDataHandle** solo una vez.
+Normalmente, cuando una aplicación que creó un identificador de datos pasa ese identificador a DDEML, el identificador deja de ser válido en la aplicación de creación. Esta situación no es un problema si la aplicación debe compartir datos con una sola aplicación. Sin embargo, si una aplicación debe compartir los mismos datos con varias aplicaciones, la aplicación de creación debe especificar la marca \_ HDATA APPOWNED [**en DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle). Al hacerlo, se concede la propiedad del objeto DDE a la aplicación de creación y se impide que DDEML invalide el identificador de datos. A continuación, la aplicación puede pasar el identificador de datos varias veces después de llamar a **DdeCreateDataHandle** una sola vez.
 
-Si una aplicación especifica la \_ marca HDATA APPOWNED en el parámetro *AfCmd* de [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle), debe llamar a la función [**DdeFreeDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddefreedatahandle) para liberar el identificador de memoria, independientemente de si pasó el identificador a ddeml. Antes de que finalice, una aplicación debe llamar a **DdeFreeDataHandle** para liberar cualquier identificador de datos que haya creado pero que no se haya pasado a ddeml.
+Si una aplicación especifica la marca HDATA APPOWNED en el parámetro \_ *afCmd* de [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle), debe llamar a la función [**DdeFreeDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddefreedatahandle) para liberar el identificador de memoria, independientemente de si pasó el identificador a DDEML. Antes de finalizar, una aplicación debe llamar a **DdeFreeDataHandle** para liberar cualquier identificador de datos que haya creado, pero no pase a DDEML.
 
-Una aplicación que aún no ha pasado el identificador a un objeto DDE a DDEML puede agregar datos al objeto o sobrescribir datos en el objeto mediante la función [**DdeAddData**](/windows/desktop/api/Ddeml/nf-ddeml-ddeadddata) . Normalmente, una aplicación utiliza **DdeAddData** para rellenar un objeto DDE no inicializado. Después de que una aplicación pase un identificador de datos a DDEML, no se puede cambiar el objeto DDE identificado por el identificador; solo se puede liberar.
+Una aplicación que aún no ha pasado el identificador a un objeto DDE a DDEML puede agregar datos al objeto o sobrescribir los datos del objeto mediante la función [**DdeAddData.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeadddata) Normalmente, una aplicación usa **DdeAddData para** rellenar un objeto DDE sin inicializar. Una vez que una aplicación pasa un identificador de datos a DDEML, no se puede cambiar el objeto DDE identificado por el identificador; solo se puede liberar.
 
- 
+ 
 
- 
+ 
 
 
 

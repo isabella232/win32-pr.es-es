@@ -1,5 +1,5 @@
 ---
-description: No se utiliza. Anteriormente, una solicitud de primitivas y intersecciones del historial de píxeles.
+description: No se utiliza. Anteriormente, una solicitud para las primitivas y las intersecciones del historial de píxeles juntas.
 MS-HAID: vspixengine.IPixelHistoryRequest
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,34 +17,34 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: e52007f8953d6926e6eee277001d7ba41797161d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3648be71cded740a1aae01e325a525d94baa9cec
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537317"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622561"
 ---
 # <a name="span-idvspixengineipixelhistoryrequestspanipixelhistoryrequest-interface"></a><span id="vspixengine.ipixelhistoryrequest"></span>Interfaz IPixelHistoryRequest
 
-No se utiliza. Anteriormente, una solicitud de primitivas y intersecciones del historial de píxeles.
+No se utiliza. Anteriormente, una solicitud para las primitivas y las intersecciones del historial de píxeles juntas.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IPixelHistoryRequest** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IPixelHistoryRequest** también tiene estos tipos de miembros:
+La **interfaz IPixelHistoryRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPixelHistoryRequest** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
 
-La interfaz **IPixelHistoryRequest** tiene estos métodos.
+La **interfaz IPixelHistoryRequest** tiene estos métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistoryrequest-requestasync-dword-point2d-dword-ipixelhistorycallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Solicita una lista de resultados del historial de píxeles en el píxel especificado, render destino/UAV y frame.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistoryrequest-requestasync-dword-point2d-dword-ipixelhistorycallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Solicita una lista de los resultados del historial de píxeles en el píxel especificado, represente tartget /UAV y frame.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

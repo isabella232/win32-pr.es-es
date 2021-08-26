@@ -1,24 +1,24 @@
 ---
-title: Preparar la creación de datos
-description: Preparar la creación de datos
+title: Preparación para dibujar datos
+description: Preparación para dibujar datos
 ms.assetid: 98adcee4-06c0-4684-bd9e-e030e3f9a59d
 keywords:
-- Administrador de compresión de vídeo (VCM), dibujo
-- VCM (Administrador de compresión de vídeo), dibujo
-- ICDrawBegin (macro)
-- ICDrawEnd (macro)
+- administrador de compresión de vídeo (VCM), dibujo
+- VCM (administrador de compresión de vídeo), dibujo
+- Macro ICDrawBegin
+- Macro ICDrawEnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de20d23c0ded51d1933918c16da3f8827b77f796
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c32c87c751705dea6dc6e00c2f48635d685d87f7d900422efb980b22012e052e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037905"
 ---
-# <a name="preparing-to-draw-data"></a>Preparar la creación de datos
+# <a name="preparing-to-draw-data"></a>Preparación para dibujar datos
 
-En el ejemplo siguiente se muestra la secuencia de inicialización que indica al descompresor que dibuje la pantalla completa. Usa las macros [**ICDrawBegin**](/windows/desktop/api/Vfw/nf-vfw-icdrawbegin) y [**ICDrawEnd**](/windows/desktop/api/Vfw/nf-vfw-icdrawend) .
+En el ejemplo siguiente se muestra la secuencia de inicialización que indica al descomprimidor que dibuje a pantalla completa. Usa las macros [**ICDrawBegin**](/windows/desktop/api/Vfw/nf-vfw-icdrawbegin) [**e ICDrawEnd.**](/windows/desktop/api/Vfw/nf-vfw-icdrawend)
 
 
 ```C++
@@ -50,9 +50,9 @@ else
 
 
 
- 
+ 
 
- 
+ 
 
 
 

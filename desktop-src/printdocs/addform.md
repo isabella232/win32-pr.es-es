@@ -1,7 +1,7 @@
 ---
 description: La función AddForm agrega un formulario a la lista de formularios disponibles que se pueden seleccionar para la impresora especificada.
 ms.assetid: 17b59019-f93a-4b57-86fb-91c61aecbac4
-title: Función AddForm (winspool. h)
+title: Función AddForm (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: 2de3ddbdc57a5a41bac048a94a8175cd124df4ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e9a2bac108702ff55b761b562fd8668870092b35402a6471462c3e63e5fc1e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950835"
 ---
-# <a name="addform-function"></a>AddForm función)
+# <a name="addform-function"></a>Función AddForm
 
-La función **AddForm** agrega un formulario a la lista de formularios disponibles que se pueden seleccionar para la impresora especificada.
+La **función AddForm** agrega un formulario a la lista de formularios disponibles que se pueden seleccionar para la impresora especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,43 +41,43 @@ BOOL AddForm(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador de la impresora que admite la impresión con el formato especificado. Use la función [**OpenPrinter**](openprinter.md) o [**AddPrinter (**](addprinter.md) para recuperar un identificador de impresora.
+Identificador de la impresora que admite la impresión con el formulario especificado. Use la [**función OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) para recuperar un identificador de impresora.
 
 </dd> <dt>
 
-*Nivel* \[ de de\]
+*Nivel* \[ En\]
 </dt> <dd>
 
-Nivel de la estructura a la que apunta *pForm* . Este valor debe ser 1 o 2.
+Nivel de la estructura a la que *apunta pForm.* Este valor debe ser 1 o 2.
 
 </dd> <dt>
 
-*pForm* \[ de\]
+*pForm* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [**formulario de \_ información \_ 1**](form-info-1.md) o de [**formulario de \_ información \_ 2**](form-info-2.md) .
+Puntero a una [**estructura FORM \_ INFO \_ 1**](form-info-1.md) [**o FORM INFO \_ \_ 2.**](form-info-2.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-Una aplicación puede determinar qué formularios están disponibles para una impresora mediante una llamada a la función [**EnumForms**](enumforms.md) .
+Una aplicación puede determinar qué formularios están disponibles para una impresora mediante una llamada a la [**función EnumForms.**](enumforms.md)
 
-Si *pForm* señala a un [**formulario de \_ información \_ 2**](form-info-2.md), se producirá un error en **AddForm** si ya existe un formulario con el nombre especificado o si el valor *pKeyword* de la estructura ya existe.
+Si *pForm* apunta a [**FORM INFO \_ \_ 2,**](form-info-2.md) **AddForm** producirá un error si ya existe un formulario con el nombre especificado o el valor *pKeyword* de la estructura ya existe.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ Si *pForm* señala a un [**formulario de \_ información \_ 2**](form-info-2.md)
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | Archivo DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 
 
@@ -106,10 +106,10 @@ Si *pForm* señala a un [**formulario de \_ información \_ 2**](form-info-2.md)
 [**EnumForms**](enumforms.md)
 </dt> <dt>
 
-[**Información de formulario \_ \_ 1**](form-info-1.md)
+[**FORM \_ INFO \_ 1**](form-info-1.md)
 </dt> <dt>
 
-[**Información de formulario \_ \_ 2**](form-info-2.md)
+[**FORM \_ INFO \_ 2**](form-info-2.md)
 </dt> <dt>
 
 [**OpenPrinter**](openprinter.md)

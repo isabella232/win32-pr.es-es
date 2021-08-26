@@ -1,5 +1,5 @@
 ---
-description: El filtro Representador nulo es un representador que descarta cada muestra que recibe, sin mostrar ni representar los datos de ejemplo.
+description: El filtro Representador null es un representador que descarta cada muestra que recibe, sin mostrar ni representar los datos de ejemplo.
 ms.assetid: 2954762d-2ae6-4e38-ac88-5390a081897e
 title: Filtro de representador null (Qedit.h)
 ms.topic: reference
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: 64647cbcbcc836c400890fb173a29c76f8723029
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 2686c64b3251616ac8cefbe81a77282e5b1a7c6847ef965b6361759118b74756
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050885"
 ---
 # <a name="null-renderer-filter"></a>Filtro de representador null
 
 > [!Note]  
-> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El filtro Representador nulo es un representador que descarta cada muestra que recibe, sin mostrar ni representar los datos de ejemplo.
+El filtro Representador null es un representador que descarta cada muestra que recibe, sin mostrar ni representar los datos de ejemplo.
 
 
 
@@ -41,7 +41,7 @@ El filtro Representador nulo es un representador que descarta cada muestra que r
 | Filtrar CLSID                             | CLSID \_ NullRenderer                                                                                                  |
 | CLSID de la página de propiedades                      | No hay ninguna página de propiedades.                                                                                                    |
 | Executable                               | Qedit.dll                                                                                                            |
-| [Mérito](merit.md)                       | NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.                                                                                                  |
+| [Mérito](merit.md)                       | NO USE EL VALOR DE NO \_ \_ \_ USE.                                                                                                  |
 | [Categoría de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                                        |
 
 
@@ -52,7 +52,7 @@ El filtro Representador nulo es un representador que descarta cada muestra que r
 
 Use este filtro cuando un pin de salida en el gráfico requiera una conexión de bajada, pero no desea representar los datos de ese pin. Al conectar el pin de salida al representador null, se completa la conexión sin representar los datos.
 
-Aunque este filtro no representa ninguna muestra, espera el tiempo de presentación de cada muestra antes de descartarla. Por lo tanto, el gráfico se ejecutará a la velocidad normal. Si desea que el gráfico se ejecute lo más rápido posible, establezca el reloj de referencia en **NULL.** Para obtener más información, vea [Establecer el reloj del gráfico.](setting-the-graph-clock.md)
+Aunque este filtro no representa ninguna muestra, espera el tiempo de presentación de cada muestra antes de descartarla. Por lo tanto, el gráfico se ejecutará a la velocidad normal. Si desea que el gráfico se ejecute lo más rápido posible, establezca el reloj de referencia en **NULL.** Para obtener más información, vea [Setting the Graph Clock](setting-the-graph-clock.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,11 +64,11 @@ Aunque este filtro no representa ninguna muestra, espera el tiempo de presentaci
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Objetos de Servicios de edición de DirectShow](directshow-editing-services-objects.md)
+[DirectShow Edición de objetos de servicios](directshow-editing-services-objects.md)
 </dt> </dl>
 
  

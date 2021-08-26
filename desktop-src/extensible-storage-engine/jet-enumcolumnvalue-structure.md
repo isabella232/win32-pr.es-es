@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_ENUMCOLUMNVALUE'
-title: Estructura de JET_ENUMCOLUMNVALUE
+description: 'Más información sobre: JET_ENUMCOLUMNVALUE estructura'
+title: JET_ENUMCOLUMNVALUE estructura
 TOCTitle: JET_ENUMCOLUMNVALUE Structure
 ms:assetid: a9882d7b-0c53-4a5d-bc98-0979e6e68c88
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294052(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bc95c6b8403a64432451ea29dbb66868fad25264
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86905d49bb798d37bad48087c48e77349ec10f57
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697530"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482291"
 ---
-# <a name="jet_enumcolumnvalue-structure"></a>Estructura de JET_ENUMCOLUMNVALUE
+# <a name="jet_enumcolumnvalue-structure"></a>JET_ENUMCOLUMNVALUE estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_enumcolumnvalue-structure"></a>Estructura de JET_ENUMCOLUMNVALUE
+## <a name="jet_enumcolumnvalue-structure"></a>JET_ENUMCOLUMNVALUE estructura
 
-La estructura **JET_ENUMCOLUMNVALUE** enumera los valores de columna de un registro mediante la función [JetEnumerateColumns](./jetenumeratecolumns-function.md) . [JetEnumerateColumns](./jetenumeratecolumns-function.md) devuelve una matriz de estructuras **JET_ENUMCOLUMNVALUE** . La matriz se devuelve en memoria que se asignó mediante la devolución de llamada compatible con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que se proporcionó a esa función.
+La **JET_ENUMCOLUMNVALUE** enumera los valores de columna de un registro mediante la [función JetEnumerateColumns.](./jetenumeratecolumns-function.md) [JetEnumerateColumns](./jetenumeratecolumns-function.md) devuelve una matriz de **JET_ENUMCOLUMNVALUE** estructuras. La matriz se devuelve en memoria que se asignó mediante la devolución de llamada compatible con [el](/cpp/c-runtime-library/reference/realloc?view=vs-2019) reasignación que se proporcionó a esa función.
 
 ```cpp
     typedef struct {
@@ -44,75 +44,38 @@ La estructura **JET_ENUMCOLUMNVALUE** enumera los valores de columna de un regis
 
 **itagSequence**
 
-Valor de columna (por índice de base uno) que se enumeró.
+Valor de columna (por índice basado en uno) que se enumeró.
 
-**ERR**
+**Err**
 
-El código de estado de la columna resultante de la enumeración del valor de la columna.
+Código de estado de columna resultante de la enumeración del valor de columna.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Value</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_wrnColumnNull</p></td>
-<td><p>El valor de la columna solicitada es NULL.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_wrnColumnSkipped</p></td>
-<td><p>El <em>itagSequence</em> que se especifica en el elemento de la matriz <em>rgtagSequence</em> en el <a href="gg294138(v=exchg.10).md">JET_ENUMCOLUMN</a> struct correspondiente a este <strong>JET_ENUMCOLUMNVALUE</strong> struct era cero.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_wrnColumnTruncated</p></td>
-<td><p>El valor de la columna solicitada se truncó hasta el tamaño especificado antes de devolverse.</p>
-<p>Este truncamiento solo se produce para las columnas de texto largo y Long Binary que contienen grandes cantidades de datos.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_wrnColumnNull</p> | <p>El valor de columna solicitado es NULL.</p> | 
+| <p>JET_wrnColumnSkipped</p> | <p>La <em>itagSequence</em> que se especifica en el elemento de la <em>matriz rgtagSequence</em> en la estructura <a href="gg294138(v=exchg.10).md">JET_ENUMCOLUMN</a> correspondiente JET_ENUMCOLUMNVALUE <strong>struct</strong> era cero.</p> | 
+| <p>JET_wrnColumnTruncated</p> | <p>El valor de columna solicitado se truncaba al tamaño especificado antes de devolverse.</p><p>Este truncamiento solo se produce para columnas de texto largo y largas binarias que contienen grandes cantidades de datos.</p> | 
+
 
 
 **cbData**
 
 Valor de columna que se enumeró para la columna.
 
-El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada compatible con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+El búfer de salida se devuelve en la memoria que se asignó mediante la devolución de llamada compatible con [la](/cpp/c-runtime-library/reference/realloc?view=vs-2019) reasignación que se proporcionó a [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
 **pvData**
 
 Valor de columna que se enumeró para la columna.
 
-El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada compatible con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+El búfer de salida se devuelve en la memoria que se asignó mediante la devolución de llamada compatible con [la](/cpp/c-runtime-library/reference/realloc?view=vs-2019) reasignación que se proporcionó a [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

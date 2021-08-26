@@ -1,5 +1,5 @@
 ---
-description: Contexto de ModemDMConfigProfile \/ (v4)
+description: Contexto de MódemDMConfigProfile \/ (v4)
 MS-HAID: WWAN\_profile\_v4.element\_1\_Context
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,14 +16,14 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 3fcf9bbc2fb41cf5eada9c6bac7bfbccb971eb3a255de7f90c789e1e918180e2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36007bc1a7aecb25c2b6d61f74dd826e888a314b
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117881909"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624761"
 ---
-# <a name="span-idwwan_profile_v4element_1_contextspanmodemdmconfigprofilecontext-v4"></a><span id="WWAN_profile_v4.element_1_Context"></span>Contexto de ModemDMConfigProfile \/ (v4)
+# <a name="span-idwwan_profile_v4element_1_contextspanmodemdmconfigprofilecontext-v4"></a><span id="WWAN_profile_v4.element_1_Context"></span>Contexto de MódemDMConfigProfile \/ (v4)
 
 Especifica los parámetros necesarios para establecer una conexión de datos.
 
@@ -35,7 +35,7 @@ Especifica los parámetros necesarios para establecer una conexión de datos.
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<Context\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <Context>
@@ -58,14 +58,14 @@ Especifica los parámetros necesarios para establecer una conexión de datos.
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Atributos
 
-Ninguno.
+Ninguna.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementos secundarios
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -77,23 +77,23 @@ Ninguno.
 <tr class="odd">
 <td><a href="element-1-accessstring.md">AccessString</a></td>
 <td><p>Identifica el APN o la cadena de marcado que se va a usar para establecer una conexión de datos.</p>
-<p>Para obtener más información, consulte la documentación del elemento <a href="../mbn/schema-accessstring-contexttype-element.md"><strong>AccessString</strong></a> v1.</p></td>
+<p>Para obtener más información, vea la documentación del elemento <a href="../mbn/schema-accessstring-contexttype-element.md"><strong>AccessString</strong></a> v1.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-1-authprotocol.md">AuthProtocol</a></td>
 <td><p>>Especifica el protocolo de autenticación que se usará para activar un contexto de Protocolo de datos de paquetes (PDP).</p>
-<p>Tenga en cuenta que, en la versión v4, hay disponible un nuevo valor de enumeración para este elemento. <strong>AutoSelection</strong> significa que un protocolo de autenticación se debe seleccionar por capas inferiores.</p>
+<p>Tenga en cuenta que en v4, hay disponible un nuevo valor de enumeración para este elemento. <strong>AutoSelection</strong> significa que un protocolo de autenticación se debe seleccionar mediante capas inferiores.</p>
 <p>Para más información, consulte la documentación del elemento <a href="../mbn/schema-authprotocol-contexttype-element.md"><strong>AuthProtocol</strong></a> v1.</p></td>
 </tr>
 <tr class="odd">
 <td><a href="element-1-compression.md">Compresión</a></td>
-<td><p>Especifica si se usará la compresión en el vínculo de datos para el encabezado y la transferencia de datos.</p>
-<p>Para obtener más información, consulte la documentación del elemento <a href="../mbn/schema-compression-contexttype-element.md"><strong>Compression</strong></a> v1.</p></td>
+<td><p>Especifica si se usará la compresión en el vínculo de datos para la transferencia de encabezados y datos.</p>
+<p>Para obtener más información, vea la documentación del elemento <a href="../mbn/schema-compression-contexttype-element.md"><strong>Compression</strong></a> v1.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-1-iptype.md">IPType</a></td>
-<td><p>Especifica el tipo de IP que se usará en esta conexión de datos.</p>
-<p>Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los siguientes valores.</p>
+<td><p>Especifica el tipo de IP que se va a usar en esta conexión de datos.</p>
+<p>Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los valores siguientes.</p>
 <table>
 <thead>
 <tr class="header">
@@ -103,7 +103,7 @@ Ninguno.
 </thead>
 <tbody>
 <tr class="odd">
-<td>Valor predeterminado</td>
+<td>Predeterminado</td>
 <td>El tipo de IP se debe seleccionar por capas inferiores.</td>
 </tr>
 <tr class="even">
@@ -120,7 +120,7 @@ Ninguno.
 </tr>
 <tr class="odd">
 <td>XLAT</td>
-<td>Uso de 464XLAT para tunelización de IPv4 a través de redes IPv6</td>
+<td>Uso de 464XLAT para tuner IPv4 a través de redes IPv6</td>
 </tr>
 </tbody>
 </table>
@@ -139,8 +139,8 @@ Ninguno.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -152,7 +152,7 @@ Ninguno.
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
 <td><p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
-<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento hacen que un perfil determinado sea el perfil activo.</p></td>
+<p>Puede haber más de un elemento MbnProfileExt en un perfil que describa la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a></td>
@@ -167,8 +167,8 @@ Ninguno.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

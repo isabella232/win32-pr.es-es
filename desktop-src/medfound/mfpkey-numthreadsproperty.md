@@ -1,19 +1,19 @@
 ---
-description: Especifica el número de subprocesos que utilizará el codificador.
+description: Especifica el número de subprocesos que usará el codificador.
 ms.assetid: 2f463cba-2512-455d-9ce1-8797682d4d67
-title: Propiedad MFPKEY_NUMTHREADS (Wmcodecdsp. h)
+title: MFPKEY_NUMTHREADS propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c93f6d38e3bb79bbb692f9bec1b1dc0edb232d0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ac8b6ec040ba07a2e38b1e9d8e2df6cf0fcbfcdbba14481e9b50379ecc10df5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953915"
 ---
-# <a name="mfpkey_numthreads-property"></a>\_Propiedad NUMTHREADS de MFPKEY
+# <a name="mfpkey_numthreads-property"></a>Propiedad NUMTHREADS de MFPKEY \_
 
-Especifica el número de subprocesos que utilizará el codificador.
+Especifica el número de subprocesos que usará el codificador.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -27,13 +27,13 @@ VT \_ I4
 
 1
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este valor está pensado para dividir la codificación en varios subprocesos con el fin de aprovechar los equipos con varios procesadores. Dividir las tareas de codificación en varios subprocesos puede provocar una ligera disminución de la calidad en comparación con un solo subproceso.
+Este valor está pensado para dividir la codificación en varios subprocesos para aprovechar las ventajas de los equipos con varios procesadores. Dividir las tareas de codificación en varios subprocesos puede provocar una ligera disminución de la calidad en comparación con un único subproceso.
 
-Para el codificador de vídeo (wmvencod.dll) lanzado con Windows XP y Windows Vista, esta propiedad debe establecerse en 1, 2 o 4. Otros valores se redondean hacia abajo.
+Para el codificador de vídeo (wmvencod.dll) publicado con Windows XP y Windows Vista, esta propiedad debe establecerse en 1, 2 o 4. Otros valores se redondearán hacia abajo.
 
-En el caso del codificador de vídeo (wmvencod.dll) lanzado con Windows 7, esta propiedad debe establecerse en 1, 2, 4 u 8. Otros valores se redondean hacia abajo.
+Para el codificador de vídeo (wmvencod.dll) publicado con Windows 7, esta propiedad debe establecerse en 1, 2, 4 u 8. Otros valores se redondearán hacia abajo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,9 +41,9 @@ En el caso del codificador de vídeo (wmvencod.dll) lanzado con Windows 7, esta 
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ En el caso del codificador de vídeo (wmvencod.dll) lanzado con Windows 7, esta 
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

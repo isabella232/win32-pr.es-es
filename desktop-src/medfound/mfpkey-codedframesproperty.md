@@ -1,17 +1,17 @@
 ---
 description: Especifica el número de fotogramas de vídeo codificados por el códec.
 ms.assetid: 4a812609-137f-4f7f-aa55-89e26d7f1972
-title: Propiedad MFPKEY_CODEDFRAMES (Wmcodecdsp. h)
+title: MFPKEY_CODEDFRAMES (Propiedad, Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 708bb6c200701cdf48fa8407108be2161fdb4f61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9e836f2177311a2ffc13065187a1affce93c6dbe74ff9ff4c99ef78a6f492b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954735"
 ---
-# <a name="mfpkey_codedframes-property"></a>\_Propiedad CODEDFRAMES de MFPKEY
+# <a name="mfpkey_codedframes-property"></a>Propiedad \_ CODEDFRAMES de MFPKEY
 
 Especifica el número de fotogramas de vídeo codificados por el códec.
 
@@ -23,9 +23,9 @@ g \_ wszWMVCCodedFrames
 
 VT \_ I4
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este valor es igual a [MFPKEY \_ TOTALFRAMES](mfpkey-totalframesproperty.md) menos cualquier fotograma que se haya quitado debido a restricciones de velocidad de bits. Puede obtener este valor después de haber terminado de pasar ejemplos.
+Este valor es igual a [MFPKEY \_ TOTALFRAMES](mfpkey-totalframesproperty.md) menos los fotogramas que se han eliminado debido a restricciones de velocidad de bits. Puede obtener este valor una vez que haya terminado de pasar ejemplos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ Este valor es igual a [MFPKEY \_ TOTALFRAMES](mfpkey-totalframesproperty.md) men
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Este valor es igual a [MFPKEY \_ TOTALFRAMES](mfpkey-totalframesproperty.md) men
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

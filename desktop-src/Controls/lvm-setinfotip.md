@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_SETINFOTIP (commctrl. h)
-description: Establece el texto de información sobre herramientas en respuesta diferida en la notificación de GETINFOTIP de LVN \_ .
+title: LVM_SETINFOTIP mensaje (Commctrl.h)
+description: Establece el texto de la información sobre herramientas en respuesta retrasada a la \_ notificación GETINFOTIP de LVN.
 ms.assetid: 3dbf6a9a-52ec-4619-9c70-041e75942e20
 keywords:
-- LVM_SETINFOTIP controles de mensajes de Windows
+- LVM_SETINFOTIP controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90827766a6f1218dbbd631ed4eaf6b2989257944
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef739535e399550911adfbe86d7376d3efeb77cd797ba807b24ee682d1f3fe3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919905"
 ---
-# <a name="lvm_setinfotip-message"></a>\_Mensaje SETINFOTIP LVM
+# <a name="lvm_setinfotip-message"></a>Mensaje \_ SETINFOTIP de LVM
 
-Establece el texto de información sobre herramientas en respuesta diferida en la notificación de [ \_ GETINFOTIP de LVN](lvn-getinfotip.md) .
+Establece texto de información sobre herramientas en respuesta retrasada a la [notificación \_ LVN GETINFOTIP.](lvn-getinfotip.md)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -33,24 +33,24 @@ Establece el texto de información sobre herramientas en respuesta diferida en l
 </dt> <dd>Debe ser cero.</dd> <dt>
 
 *lParam* 
-</dt> <dd>Puntero a una estructura <a href="/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip">LVSETINFOTIP</a> que contiene la información que se va a establecer.</dd> </dl>
+</dt> <dd>Puntero a una <a href="/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip">estructura LVSETINFOTIP</a> que contiene la información que se debe establecer.</dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si el texto de información sobre herramientas se establece correctamente, o **false** en caso contrario.
+Devuelve **TRUE si** el texto de la información sobre herramientas se establece correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El mensaje **LVM \_ SETINFOTIP** permite a una aplicación calcular recuadros informativos en segundo plano realizando los pasos siguientes:
+El **mensaje LVM \_ SETINFOTIP permite** que una aplicación calcule información sobre información en segundo plano mediante los pasos siguientes:
 
-1.  En respuesta a la notificación de [ \_ GETINFOTIP de LVN](lvn-getinfotip.md) , establezca el miembro **miembros pszText** de la estructura [**NMLVGETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-nmlvgetinfotipa) en una cadena vacía y devuelva 0.
-2.  En segundo plano, calcule el recuadro informativo.
-3.  Después de calcular el recuadro informativo, envíe el mensaje **LVM \_ SETINFOTIP** , estableciendo el miembro **miembros pszText** de la estructura [**LVSETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip) en el elemento recuadro informativo y los miembros **iItem** y **iSubItem** en el elemento y el subelemento al que se aplica el recuadro informativo.
+1.  En respuesta a la [notificación \_ LVN GETINFOTIP,](lvn-getinfotip.md) establezca el miembro **pszText** de la estructura [**NMLVGETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-nmlvgetinfotipa) en una cadena vacía y devuelva 0.
+2.  En segundo plano, calcule la información.
+3.  Después de calcular la información, envíe el mensaje **\_ LVM SETINFOTIP** y establezca el miembro **pszText** de la estructura [**LVSETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip) en la información y los miembros **iItem** e **iSubItem** al elemento y subelemento al que se aplica la información.
 
-El texto que se pasa al mensaje **LVM \_ SETINFOTIP** solo aparece si el elemento y el subelemento descritos por la estructura [**LVSETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip) siguen en un estado que requiere un recuadro informativo
+El texto que se pasa al mensaje **\_ SETINFOTIP** de LVM solo aparece si el elemento y el sub item descritos por la estructura [**LVSETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip) siguen en un estado que requiere información
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -60,9 +60,9 @@ El texto que se pasa al mensaje **LVM \_ SETINFOTIP** solo aparece si el element
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

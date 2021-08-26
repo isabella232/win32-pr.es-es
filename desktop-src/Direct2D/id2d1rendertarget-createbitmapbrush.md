@@ -1,9 +1,9 @@
 ---
 title: Métodos ID2D1RenderTarget CreateBitmapBrush
-description: Crea un ID2D1BitmapBrush a partir del mapa de bits especificado.
+description: Crea un objeto ID2D1BitmapBrush a partir del mapa de bits especificado.
 ms.assetid: 7f6ef07e-4271-4605-aced-f191a0fe65af
 keywords:
-- Métodos de CreateBitmapBrush Direct2D
+- Métodos CreateBitmapBrush de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: fcd512393a3f037cd3def40d4aa55003d9fddcef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 411ae2dd81fce88bec5d6a3717fe79d942de84f060c53a90b83cae461d6a49de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053095"
 ---
-# <a name="id2d1rendertargetcreatebitmapbrush-methods"></a>ID2D1RenderTarget:: CreateBitmapBrush (métodos)
+# <a name="id2d1rendertargetcreatebitmapbrush-methods"></a>Métodos ID2D1RenderTarget::CreateBitmapBrush
 
-Crea un [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) a partir del mapa de bits especificado.
+Crea un [**objeto ID2D1BitmapBrush a partir**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) del mapa de bits especificado.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -30,16 +30,16 @@ Crea un [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush)
 
 | Método                                                                                                                                                                                                                                                               | Descripción                                                                                                                                                                                      |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateBitmapBrush (ID2D1Bitmap \* , D2D1 \_ propiedades de pincel de mapa de bits \_ \_&, \_ propiedades del pincel de D2D1 \_&, ID2D1BitmapBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmap(d2d1_size_u_constvoid_uint32_constd2d1_bitmap_properties_id2d1bitmap))   | Crea un [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) a partir del mapa de bits especificado.<br/>                                                                                                    |
-| [**CreateBitmapBrush (ID2D1Bitmap \* , D2D1 \_ \_ \_ propiedades de pincel \* de mapa de bits, \_ \_ propiedades \* del pincel de D2D1, ID2D1BitmapBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapbrush(id2d1bitmap_constd2d1_bitmap_brush_properties_constd2d1_brush_properties_id2d1bitmapbrush)) | Crea un [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) a partir del mapa de bits especificado.<br/>                                                                                                    |
-| [**CreateBitmapBrush (ID2D1Bitmap \* , ID2D1BitmapBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapbrush(id2d1bitmap_id2d1bitmapbrush))                                                                                                                        | Crea un [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) a partir del mapa de bits especificado. El pincel usa los valores predeterminados para el modo de extensión, el modo de interpolación, la opacidad y la transformación.<br/> |
-| [**CreateBitmapBrush (ID2D1Bitmap \* , D2D1 \_ propiedades de pincel de mapa de bits \_ \_&, ID2D1BitmapBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapbrush(id2d1bitmap_constd2d1_bitmap_brush_properties__id2d1bitmapbrush))                                                      | Crea un [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) a partir del mapa de bits especificado. El pincel usa los valores predeterminados para su opacidad y transformación.<br/>                                   |
+| [**CreateBitmapBrush(ID2D1Bitmap \* ,D2D1 \_ BITMAP BRUSH PROPERTIES \_ \_&,D2D1 \_ BRUSH PROPERTIES \_&,ID2D1BitmapBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmap(d2d1_size_u_constvoid_uint32_constd2d1_bitmap_properties_id2d1bitmap))   | Crea un [**objeto ID2D1BitmapBrush a partir**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) del mapa de bits especificado.<br/>                                                                                                    |
+| [**CreateBitmapBrush(ID2D1Bitmap \* ,D2D1 \_ BITMAP BRUSH PROPERTIES \_ \_ \* ,D2D1 \_ BRUSH PROPERTIES \_ \* ,ID2D1BitmapBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapbrush(id2d1bitmap_constd2d1_bitmap_brush_properties_constd2d1_brush_properties_id2d1bitmapbrush)) | Crea un [**objeto ID2D1BitmapBrush a partir**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) del mapa de bits especificado.<br/>                                                                                                    |
+| [**CreateBitmapBrush(ID2D1Bitmap \* ,ID2D1BitmapBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapbrush(id2d1bitmap_id2d1bitmapbrush))                                                                                                                        | Crea un [**objeto ID2D1BitmapBrush a partir**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) del mapa de bits especificado. El pincel usa los valores predeterminados para su modo de extensión, modo de interpolación, opacidad y transformación.<br/> |
+| [**CreateBitmapBrush(ID2D1Bitmap \* ,D2D1 \_ BITMAP BRUSH PROPERTIES \_ \_&,ID2D1BitmapBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapbrush(id2d1bitmap_constd2d1_bitmap_brush_properties__id2d1bitmapbrush))                                                      | Crea un [**objeto ID2D1BitmapBrush a partir**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) del mapa de bits especificado. El pincel usa los valores predeterminados para su opacidad y transformación.<br/>                                   |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver un ejemplo en el que se muestra cómo pintar un área con un pincel de mapa de bits, vea [Cómo crear un pincel de mapa de bits](how-to-create-a-bitmap-brush.md).
+Para obtener un ejemplo en el que se muestra cómo pintar un área con un pincel de mapa de bits, [vea How to Create a Bitmap Brush](how-to-create-a-bitmap-brush.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Para ver un ejemplo en el que se muestra cómo pintar un área con un pincel de 
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

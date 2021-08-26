@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para eventos de vaciado de e/s de disco. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de vaciado de E/S de disco. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 7f0c9bd4-e4d3-49c1-ae72-f6bdf938099f
-title: DiskIo_TypeGroup3 (clase)
+title: DiskIo_TypeGroup3 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 63ca227269dab249be755da22288ce41696a19e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e421a8bd596869ac06af61f05ed1af8c633fb23b95e576398de6418620249c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050665"
 ---
-# <a name="diskio_typegroup3-class"></a>Desmontaje \_ TypeGroup3 (clase)
+# <a name="diskio_typegroup3-class"></a>DiskIo \_ TypeGroup3 (clase)
 
-Esta clase es la clase de tipo de evento para eventos de vaciado de e/s de disco.
+Esta clase es la clase de tipo de evento para los eventos de vaciado de E/S de disco.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,20 +46,20 @@ class DiskIo_TypeGroup3 : DiskIo
 
 ## <a name="members"></a>Miembros
 
-La clase **desmontaje \_ TypeGroup3** tiene estos tipos de miembros:
+La **clase DiskIo \_ TypeGroup3** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **desmontaje \_ TypeGroup3** tiene estas propiedades.
+La **clase DiskIo \_ TypeGroup3** tiene estas propiedades.
 
 <dl> <dt>
 
-**Númerodedisco corresponde**
+**DiskNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -75,7 +75,7 @@ Número que identifica el disco físico.
 **HighResResponseTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -84,30 +84,30 @@ Tipo de acceso: solo lectura
 Calificadores: [**WmiDataId**](event-tracing-mof-qualifiers.md) (3)
 </dt> </dl>
 
-Recuento de TICs de CPU desde el principio de la operación hasta el final de la operación.
+Recuento de tics de CPU desde el principio de la operación hasta el final de la operación.
 
 </dd> <dt>
 
-**IRP**
+**Irp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**WmiDataId**](event-tracing-mof-qualifiers.md) (4), [**puntero**](event-tracing-mof-qualifiers.md)
+Calificadores: [**WmiDataId**](event-tracing-mof-qualifiers.md) (4), [**Pointer**](event-tracing-mof-qualifiers.md)
 </dt> </dl>
 
-Paquete de solicitud de e/s. Esta propiedad identifica la actividad de e/s.
+Paquete de solicitud de E/S. Esta propiedad identifica la actividad de E/S.
 
 </dd> <dt>
 
 **IrpFlags**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -116,50 +116,50 @@ Tipo de acceso: solo lectura
 Calificadores: [**WmiDataId**](event-tracing-mof-qualifiers.md) (2), [**Format**](event-tracing-mof-qualifiers.md) ("x")
 </dt> </dl>
 
-Puede contener una o varias de las siguientes marcas de paquete de solicitud de e/s (definidas en Ntddk. h, que es un archivo de encabezado de DDK):
+Puede contener una o varias de las siguientes marcas de paquetes de solicitud de E/S (definidas en Ntddk.h, que es un archivo de encabezado DDK):
 
 <dl><span id="__IRP_NOCACHE"></span><span id="__irp_nocache"></span><dt>
 
- **IRP \_ NOcache**
+ **IRP \_ NOCACHE**
 </dt><span id="__IRP_PAGING_IO"></span><span id="__irp_paging_io"></span><dt>
 
- **\_ \_ e/s de PAGINAción IRP**
+ **E/S \_ DE PAGINACIÓN DE \_ IRP**
 </dt><span id="__IRP_MOUNT_COMPLETION"></span><span id="__irp_mount_completion"></span><dt>
 
- **\_finalización de montaje IRP \_**
+ **FINALIZACIÓN DEL MONTAJE DE IRP \_ \_**
 </dt><span id="__IRP_SYNCHRONOUS_API"></span><span id="__irp_synchronous_api"></span><dt>
 
- **\_API sincrónica IRP \_**
+ **API \_ SINCRÓNICA de IRP \_**
 </dt><span id="__IRP_ASSOCIATED_IRP"></span><span id="__irp_associated_irp"></span><dt>
 
- **\_IRP asociado de IRP \_**
+ **IRP \_ ASOCIADO \_ A IRP**
 </dt><span id="__IRP_BUFFERED_IO"></span><span id="__irp_buffered_io"></span><dt>
 
- **\_ \_ e/s de búfer IRP**
+ **E/S EN BÚFER DE IRP \_ \_**
 </dt><span id="IRP_DEALLOCATE_BUFFER"></span><span id="irp_deallocate_buffer"></span><dt>
 
-**\_búfer de DESasignación de IRP \_**
+**BÚFER DE \_ DESASIGNAR IRP \_**
 </dt><span id="__IRP_INPUT_OPERATION"></span><span id="__irp_input_operation"></span><dt>
 
- **\_operación de entrada IRP \_**
+ **OPERACIÓN DE ENTRADA \_ DE \_ IRP**
 </dt><span id="__IRP_SYNCHRONOUS_PAGING_IO"></span><span id="__irp_synchronous_paging_io"></span><dt>
 
- **\_ \_ e/s de paginación sincrónica IRP \_**
+ **E/S \_ DE \_ PAGINACIÓN SINCRÓNICA DE IRP \_**
 </dt><span id="__IRP_CREATE_OPERATION"></span><span id="__irp_create_operation"></span><dt>
 
- **\_operación de creación de IRP \_**
+ **OPERACIÓN CREATE DE IRP \_ \_**
 </dt><span id="IRP_READ_OPERATION"></span><span id="irp_read_operation"></span><dt>
 
-**\_operación de lectura IRP \_**
+**OPERACIÓN DE \_ LECTURA DE \_ IRP**
 </dt><span id="__IRP_WRITE_OPERATION"></span><span id="__irp_write_operation"></span><dt>
 
- **\_operación de escritura IRP \_**
+ **OPERACIÓN DE ESCRITURA \_ DE \_ IRP**
 </dt><span id="__IRP_CLOSE_OPERATION"></span><span id="__irp_close_operation"></span><dt>
 
- **\_operación de cierre IRP \_**
+ **OPERACIÓN DE \_ CIERRE DE \_ IRP**
 </dt><span id="__IRP_DEFER_IO_COMPLETION"></span><span id="__irp_defer_io_completion"></span><dt>
 
- **IRP \_ aplazar \_ finalización de e/s \_**
+ **IRP \_ DEFER \_ IO \_ COMPLETION**
 </dt> </dl>
 
 </dd> <dt>
@@ -167,7 +167,7 @@ Puede contener una o varias de las siguientes marcas de paquete de solicitud de 
 **IssuingThreadId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -176,9 +176,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**WmiDataId**](event-tracing-mof-qualifiers.md) (5)
 </dt> </dl>
 
-Identificador del subproceso que se emite.
+Identificador del subproceso emisor.
 
-**Windows server 2008 R2, Windows server 2008, Windows 7 y Windows Vista:** Esta propiedad no se admite.
+**Windows Server 2008 R2, Windows Server 2008, Windows 7 y Windows Vista:** Esta propiedad no se admite.
 
 </dd> </dl>
 
@@ -188,8 +188,8 @@ Identificador del subproceso que se emite.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -197,7 +197,7 @@ Identificador del subproceso que se emite.
 
 <dl> <dt>
 
-[**Desmontaje**](diskio.md)
+[**DiskIo**](diskio.md)
 </dt> </dl>
 
  

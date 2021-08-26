@@ -1,31 +1,31 @@
 ---
-description: Especifica si el descodificador usará hardware de aceleración de vídeo de DirectX, si está disponible.
+description: Especifica si el descodificador usará hardware de aceleración de vídeo directX, si está disponible.
 ms.assetid: 6220310f-5760-4ddb-944b-752b97bf4696
-title: Propiedad MFPKEY_DXVA_ENABLED (Wmcodecdsp. h)
+title: MFPKEY_DXVA_ENABLED (Propiedad, Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a92dd2a27292b0616b30f417ebd8de271c333e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1165fcef344b667ea1b7bb6fe88c5243ea8824d86572f79c826805e5f46f02f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954065"
 ---
-# <a name="mfpkey_dxva_enabled-property"></a>Propiedad MFPKEY de \_ DXVA \_ habilitada
+# <a name="mfpkey_dxva_enabled-property"></a>Propiedad MFPKEY \_ DXVA \_ ENABLED
 
-Especifica si el descodificador usará hardware de aceleración de vídeo de DirectX, si está disponible.
+Especifica si el descodificador usará hardware de aceleración de vídeo directX, si está disponible.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
-**VT \_ bool**
+**VT \_ BOOL**
 
 ## <a name="default-value"></a>Valor predeterminado
 
-**VARIANTE \_ false**
+**VARIANT \_ FALSE**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

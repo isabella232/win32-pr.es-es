@@ -1,7 +1,7 @@
 ---
-description: El método Notify recibe una notificación que indica que se ha solicitado un cambio de calidad.
+description: El método Notify recibe una notificación de que se solicita un cambio de calidad.
 ms.assetid: bb9aa1c3-caef-42fb-87d2-75cc3691f64f
-title: Método CBaseVideoRenderer. Notify (Renbase. h)
+title: Método CBaseVideoRenderer.Notify (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cd2b894bf78163a7b2d2387e43ecb5cec76ffdf4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8674ecbf7951ca0c208f9ffb50c0e5d9591b16552fda266c7d641905edd09a4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052195"
 ---
-# <a name="cbasevideorenderernotify-method"></a>CBaseVideoRenderer. Notify (método)
+# <a name="cbasevideorenderernotify-method"></a>CBaseVideoRenderer.Notify (método)
 
 El `Notify` método recibe una notificación de que se solicita un cambio de calidad.
 
@@ -43,14 +43,14 @@ HRESULT Notify(
 
 <dl> <dt>
 
-*pSelf* \[ de\]
+*pSelf* \[ En\]
 </dt> <dd>
 
-Puntero al filtro que está enviando la notificación de calidad.
+Puntero al filtro que envía la notificación de calidad.
 
 </dd> <dt>
 
-*preguntas y respuestas* \[\]
+*q* \[ in\]
 </dt> <dd>
 
 Estructura de notificación de calidad.
@@ -59,13 +59,13 @@ Estructura de notificación de calidad.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro implementa el método [**IQualityControl:: Notify**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-notify) en el representador de vídeo. Esto se llama, normalmente por el administrador de gráficos de filtro, cuando se debe recortar la calidad. Esto puede ocurrir cuando se ha aumentado la calidad de la reproducción de audio hasta el punto en que se debe reducir la calidad de reproducción de vídeo.
+Esta función miembro implementa el [**método IQualityControl::Notify**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-notify) en el representador de vídeo. Esto se llama, normalmente mediante el administrador de gráficos de filtros, cuando se debe reducir la calidad. Esto puede ocurrir cuando se ha aumentado la calidad de la reproducción de audio hasta el punto de que se debe reducir la calidad de reproducción de vídeo.
 
-`Notify` establece el miembro de datos **m \_ trThrottle** en un valor de retraso que se va a insertar entre los marcos de [**ThrottleWait**](cbasevideorenderer-throttlewait.md).
+`Notify`establece el **miembro de datos m \_ trThrottle** en un valor de retraso que throttleWait va a insertar [**entre fotogramas.**](cbasevideorenderer-throttlewait.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Esta función miembro implementa el método [**IQualityControl:: Notify**](/wind
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Esta función miembro implementa el método [**IQualityControl:: Notify**](/wind
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

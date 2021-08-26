@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentCheckpointDepthTooDeepException'
-title: Constructor de EsentCheckpointDepthTooDeepException
+description: 'Más información sobre: Constructor EsentCheckpointDepthTooDeepException'
+title: Constructor EsentCheckpointDepthTooDeepException
 TOCTitle: 'EsentCheckpointDepthTooDeepException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCheckpointDepthTooDeepException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcheckpointdepthtoodeepexception.esentcheckpointdepthtoodeepexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d8653662a3ea4500a878009506f2518b10bcf370
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6bca4a1ebb4e4a8697b1dbcab9e9d38519c601fa3e5efaf99f4498c3138fdafc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021155"
 ---
-# <a name="esentcheckpointdepthtoodeepexception-constructor"></a>Constructor de EsentCheckpointDepthTooDeepException
+# <a name="esentcheckpointdepthtoodeepexception-constructor"></a>Constructor EsentCheckpointDepthTooDeepException
 
 Inicializa una nueva instancia de la clase EsentCheckpointDepthTooDeepException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentCheckpointDepthTooDeepException()
 public EsentCheckpointDepthTooDeepException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentCheckpointDepthTooDeepException()
 
 [Miembros de EsentCheckpointDepthTooDeepException](./esentcheckpointdepthtoodeepexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

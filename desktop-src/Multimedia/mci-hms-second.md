@@ -1,9 +1,9 @@
 ---
-title: Macro MCI_HMS_SECOND (Mciapi. h)
-description: La \_ macro MCI HMS \_ Second recupera el componente de segundos de un parámetro que contiene información de horas/minutos/segundos empaquetados (HMS).
+title: MCI_HMS_SECOND macro (Mciapi.h)
+description: La macro MCI HMS SECOND recupera el componente seconds de un parámetro que contiene información empaquetada \_ \_ de horas/minutos/segundos (HMS).
 ms.assetid: b6895bec-524f-4345-ae65-e75168855df2
 keywords:
-- MCI_HMS_SECOND de macros de Windows multimedia
+- MCI_HMS_SECOND macro Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30b869141d6480ba0d986450ce950097ba240009
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc61747d891d3c91afd5e4cb7f9a16eef44e13eb3de275bbf9575d8a4f584d40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039235"
 ---
-# <a name="mci_hms_second-macro"></a>MCI \_ HMS \_ segunda macro
+# <a name="mci_hms_second-macro"></a>Macro MCI \_ HMS \_ SECOND
 
-La macro **MCI \_ HMS \_ Second** recupera el componente de segundos de un parámetro que contiene información de horas/minutos/segundos empaquetados (HMS).
+La **macro MCI \_ HMS \_ SECOND** recupera el componente seconds de un parámetro que contiene información empaquetada de horas/minutos/segundos (HMS).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,11 +51,11 @@ Hora en formato HMS.
 
 Devuelve el componente de segundos de la información de HMS especificada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La hora en formato HMS se expresa como un valor **DWORD** con el byte menos significativo que contiene las horas, el siguiente byte menos significativo que contiene los minutos y el siguiente byte menos significativo que contiene los segundos. El byte más significativo no se utiliza.
+El tiempo en formato HMS se expresa como un valor **DWORD** con el byte menos significativo que contiene horas, el siguiente byte menos significativo que contiene minutos y el siguiente byte menos significativo que contiene segundos. El byte más significativo no se usa.
 
-La macro **MCI \_ HMS \_ Second** se define de la siguiente manera:
+La **macro \_ MCI HMS \_ SECOND** se define de la siguiente manera:
 
 
 ```C++
@@ -72,7 +72,7 @@ La macro **MCI \_ HMS \_ Second** se define de la siguiente manera:
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -80,10 +80,10 @@ La macro **MCI \_ HMS \_ Second** se define de la siguiente manera:
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Macros MCI](mci-macros.md)
+[MCI Macros](mci-macros.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 7912c682-c179-453b-8a34-e87958217500
 title: D3DPMISCCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b4ace0b9070d158769e22e02a759545b1bf7785
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: ee88ba03b3c0a6d51c0100b20768df4cbf632d46
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343140"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624541"
 ---
 # <a name="d3dpmisccaps"></a>D3DPMISCCAPS
 
@@ -19,14 +19,14 @@ Marcas de funcionalidad primitiva de controladores varios.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
 <td>#Definir</td>
-<td>Valor</td>
+<td>Value</td>
 <td>Descripción</td>
 </tr>
 <tr class="even">
@@ -37,12 +37,12 @@ Marcas de funcionalidad primitiva de controladores varios.
 <tr class="odd">
 <td>D3DPMISCCAPS_CULLNONE</td>
 <td>0x00000010L</td>
-<td>El controlador no realiza la selección de triángulos. Corresponde al miembro D3DCULL_NONE del tipo <a href="/windows/desktop/direct3d9/d3dcull"><strong>enumerado D3DCULL.</strong></a></td>
+<td>El controlador no realiza la selección de triángulos. Esto corresponde al miembro D3DCULL_NONE del <a href="/windows/desktop/direct3d9/d3dcull"><strong>tipo enumerado D3DCULL.</strong></a></td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_CULLCW</td>
 <td>0x00000020L</td>
-<td>El controlador admite la selección de triángulos en el sentido de las agujas D3DRS_CULLMODE estado. (Esto solo se aplica a las primitivas de triángulo). Esta marca corresponde al miembro D3DCULL_CW del <a href="/windows/desktop/direct3d9/d3dcull"><strong>tipo enumerado D3DCULL.</strong></a></td>
+<td>El controlador admite la selección de triángulos en el sentido de las agujas del reloj a través D3DRS_CULLMODE estado. (Esto solo se aplica a las primitivas de triángulo). Esta marca corresponde al miembro D3DCULL_CW del tipo enumerado <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL.</strong></a></td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_CULLCCW</td>
@@ -57,12 +57,12 @@ Marcas de funcionalidad primitiva de controladores varios.
 <tr class="odd">
 <td>D3DPMISCCAPS_CLIPPLANESCALEDPOINTS</td>
 <td>0x00000200L</td>
-<td>El dispositivo recorta correctamente los puntos de escala de tamaño superiores a 1,0 a los planos de recorte definidos por el usuario.</td>
+<td>El dispositivo recorta correctamente puntos de tamaño mayores que 1,0 a planos de recorte definidos por el usuario.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_CLIPTLVERTS</td>
 <td>0x00000200L</td>
-<td>Clips de dispositivos primitivos de vértices transformados posteriormente. Especifique D3DUSAGE_DONOTCLIP cuando la canalización no debe realizar ningún recorte. En este caso, puede que sea necesario realizar recortes de software adicionales en tiempo de dibujo, lo que requiere que el búfer de vértices esté en la memoria del sistema.<br/></td>
+<td>Clips de dispositivos primitivos de vértices transformados posteriormente. Especifique D3DUSAGE_DONOTCLIP cuando la canalización no debe realizar ningún recorte. En este caso, puede que sea necesario realizar un recorte de software adicional en tiempo de dibujo, lo que requiere que el búfer de vértices esté en la memoria del sistema.<br/></td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_TSSARGTEMP</td>
@@ -72,7 +72,7 @@ Marcas de funcionalidad primitiva de controladores varios.
 <tr class="even">
 <td>D3DPMISCCAPS_BLENDOP</td>
 <td>0x00000800L</td>
-<td>El dispositivo admite operaciones de combinación alfa que no D3DBLENDOP_ADD.</td>
+<td>El dispositivo admite operaciones de mezcla alfa que no son D3DBLENDOP_ADD.</td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_NULLREFERENCE</td>
@@ -126,7 +126,7 @@ Marcas de funcionalidad primitiva de controladores varios.
 <tr class="odd">
 <td>D3DPMISCCAPS_FOGVERTEXCLAMPED</td>
 <td>0x00100000L</td>
-<td>El dispositivo fija el factor de mezcla por vértice.</td>
+<td>El dispositivo fija el factor de fusión por vértice.</td>
 </tr>
 </tbody>
 </table>

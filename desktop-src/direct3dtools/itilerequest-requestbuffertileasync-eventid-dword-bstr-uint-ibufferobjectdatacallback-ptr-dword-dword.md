@@ -4,7 +4,7 @@ MS-HAID: vspixengine.ITileRequest_RequestBufferTileAsync_EventID_DWORD_BSTR_UINT
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'ITileRequest:: RequestBufferTileAsync (método)'
+title: Método ITileRequest::RequestBufferTileAsync
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 2D68766F-1BED-439E-AC51-790471DA4F70
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 83f013b4bc3235ece2850c75324333e4b59d298f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fe9b93e5762942d26325df0816a08d0a4d2101e8
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104274801"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624751"
 ---
-# <a name="span-idvspixengineitilerequest_requestbuffertileasync_eventid_dword_bstr_uint_ibufferobjectdatacallback_ptr_dword_dwordspanitilerequestrequestbuffertileasync-method"></a><span id="vspixengine.itilerequest_requestbuffertileasync_eventid_dword_bstr_uint_ibufferobjectdatacallback_ptr_dword_dword"></span>ITileRequest:: RequestBufferTileAsync (método)
+# <a name="span-idvspixengineitilerequest_requestbuffertileasync_eventid_dword_bstr_uint_ibufferobjectdatacallback_ptr_dword_dwordspanitilerequestrequestbuffertileasync-method"></a><span id="vspixengine.itilerequest_requestbuffertileasync_eventid_dword_bstr_uint_ibufferobjectdatacallback_ptr_dword_dword"></span>Método ITileRequest::RequestBufferTileAsync
 
 Solicita obtener el contenido sin procesar de un icono.
 
@@ -45,34 +45,34 @@ HRESULT RequestBufferTileAsync(
 
 ## <a name="parameters"></a>Parámetros
 
-*eventID*   
-Evento especificado que debe coincidir con el contenido del icono (por ejemplo, un destino de representación podría cambiar con el tiempo).
+*Eventid*   
+Evento especificado con el que se va a hacer coincidir el contenido del icono (por ejemplo, un destino de representación podría cambiar con el tiempo).
 
 *RequestedDataUID*   
-Dirección del mosaico especificado.
+Dirección del icono especificado.
 
-*Filesystem*   
-Cadena COM que contiene la ruta de acceso del archivo donde se escriben los resultados.
+*Archivo*   
+Cadena COM que contiene el nombre de ruta de acceso del archivo donde se escriben los resultados.
 
 *tileIndex*   
-Índice del mosaico especificado.
+Índice del icono especificado.
 
 *requestCallback*   
-Dirección de devolución de llamada que se utiliza para notificar al host los resultados.
+Dirección de devolución de llamada utilizada para notificar al host de resultados.
 
 *requestCookie*   
-Cookie que identifica de forma única la solicitud y que se puede usar para indicar que se va a cancelar.
+Cookie que identifica de forma única la solicitud y se puede usar para indicar que se cancele.
 
 *progressIntervalMsecs*   
 No se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S_OK**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S_OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

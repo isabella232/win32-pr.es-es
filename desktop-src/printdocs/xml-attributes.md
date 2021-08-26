@@ -1,21 +1,21 @@
 ---
-description: Obtenga información sobre los atributos XML en el marco de esquema de impresión. Este tema no está actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre los atributos XML en el marco de esquema de impresión. Este tema no está actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 41bc10fe-6c00-44c5-ba9a-10414b31cbdf
 title: Atributos XML
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d410dcb1476d90568bee10c7c1e41ee7a9bee2e7
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 7bf76889fdf38c6636b4beb5ba566b18af69e34c
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113548823"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622981"
 ---
 # <a name="xml-attributes"></a>Atributos XML
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Hay una serie de atributos XML que aparecen en varios tipos de elementos definidos en el marco de esquema de impresión. Por lo general, los atributos XML con el mismo nombre tienen el mismo significado y cumplen las mismas reglas, independientemente del tipo de elemento en el que residan. Por lo tanto, los atributos XML se enumeran aquí por nombre y no por su tipo de elemento host. No se permiten atributos XML definidos de forma privada. Solo los atributos XML definidos aquí se pueden usar en un documento PrintCapabilities o printTicket y, a continuación, solo en el contexto definido.
+Hay una serie de atributos XML que aparecen en varios tipos de elementos definidos en el marco de esquema de impresión. Los atributos XML con el mismo nombre suelen tener el mismo significado y cumplir las mismas reglas, independientemente del tipo de elemento en el que residan. Por lo tanto, los atributos XML se enumeran aquí por nombre y no por su tipo de elemento host. No se permiten atributos XML definidos de forma privada. Solo los atributos XML definidos aquí se pueden usar en un documento PrintCapabilities o printTicket y, a continuación, solo en el contexto definido.
 
 Aunque no se permite a las partes privadas introducir nuevas definiciones en el espacio de nombres de otra parte, se les permite usar nombres existentes de otro espacio de nombres privado, siempre que su uso sea coherente con el uso establecido por la otra parte. Por lo tanto, una opción puede contener elementos ScoredProperty definidos por varias partes diferentes, cada una de las que residen en espacios de nombres diferentes.
 
@@ -23,10 +23,10 @@ Aunque no se permite a las partes privadas introducir nuevas definiciones en el 
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -43,7 +43,7 @@ Aunque no se permite a las partes privadas introducir nuevas definiciones en el 
 <td>Este atributo XML identifica la instancia del elemento. Distingue un elemento de otro del mismo tipo de elemento. Este atributo XML se usa tanto que se conoce como atributo de nombre.<br/></td>
 <td>Las restricciones siguientes pertenecen al atributo name.<br/>
 <ul>
-<li>El atributo name debe tener el formato de un QName válido definido por XML. Es decir, debe estar calificado por un espacio de nombres XML válido. Los QNames que aparecen como valores de atributos de nombre deben estar calificados explícitamente como espacio de nombres, incluso si se define un espacio de nombres predeterminado. <br/></li>
+<li>El atributo name debe tener el formato de un QName válido definido por XML. Es decir, debe estar calificado por un espacio de nombres XML válido. Los QNames que aparecen como valores de atributos de nombre deben estar calificados explícitamente como espacio de nombres incluso si se define un espacio de nombres predeterminado. <br/></li>
 <li>El contenido de caracteres debe ser el de un QName válido definido por XML. <br/></li>
 <li>Los nombres definidos de forma privada deben calificarse con un espacio de nombres que esté asociado de forma única a la entidad que introdujo el atributo name.<br/></li>
 <li>Requisito de unidad del mismo nivel: ningún elemento relacionado que pertenezca al mismo tipo de elemento puede tener el mismo atributo de nombre. La única excepción son los elementos Option, donde el atributo name se puede usar para definir una opción. Por lo tanto, los elementos Option de varios elementos del mismo nivel pueden tener el mismo atributo de nombre.<br/></li>
@@ -97,7 +97,7 @@ Cuando el proveedor PrintCapabilities notifica los valores del atributo restring
 <tr class="even">
 <td>xmlns <br/></td>
 <td>Identificador URI<br/></td>
-<td>Este atributo XML establece un vínculo entre un identificador uniforme de recursos (URI) de espacio de nombres y el prefijo de espacio de nombres que aparece en el QName XML. Debe establecer este vínculo al URI del espacio de nombres definido para el marco de esquema de impresión antes de poder usar cualquiera de las etiquetas de elementos definidos por el marco, atributos, atributos de nombre, entre otras. Puede declarar que este espacio de nombres es el valor predeterminado para evitar calificar realmente las etiquetas de elemento con un prefijo de espacio de nombres, aunque todos los demás QName deben calificarse explícitamente. El espacio de nombres estándar debe definirse en el elemento raíz adecuado. Observe todas las reglas y convenciones XML con respecto al uso del atributo xmlns.<br/> El URI de Print Schema Framework es http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework .<br/> El URI de las palabras clave de esquema de impresión es https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords .<br/></td>
+<td>Este atributo XML establece un vínculo entre un identificador uniforme de recursos (URI) de espacio de nombres y el prefijo de espacio de nombres que aparece en el QName XML. Debe establecer este vínculo al URI del espacio de nombres definido para el marco de esquema de impresión para poder usar cualquiera de las etiquetas de elementos definidos por el marco, atributos, atributos de nombre, entre otros. Puede declarar que este espacio de nombres es el valor predeterminado para evitar calificar realmente las etiquetas de elemento con un prefijo de espacio de nombres, aunque todos los demás QName deben calificarse explícitamente. El espacio de nombres estándar debe definirse en el elemento raíz adecuado. Observe todas las reglas y convenciones XML con respecto al uso del atributo xmlns.<br/> El URI de Print Schema Framework es http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework .<br/> El URI de las palabras clave de esquema de impresión es https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords .<br/></td>
 
 </tr>
 </tbody>
