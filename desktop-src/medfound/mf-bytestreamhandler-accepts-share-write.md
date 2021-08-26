@@ -1,19 +1,19 @@
 ---
-description: Especifica si un controlador de flujo de bytes puede utilizar un flujo de bytes abierto para que otro subproceso pueda escribir en él.
+description: Especifica si un controlador de flujo de bytes puede usar una secuencia de bytes abierta para que la escriba otro subproceso.
 ms.assetid: d9d97880-a563-420c-b598-c3ebd1ae8b74
-title: MF_BYTESTREAMHANDLER_ACCEPTS_SHARE_WRITE atributo (Mfidl. h)
+title: MF_BYTESTREAMHANDLER_ACCEPTS_SHARE_WRITE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b46a3402585cbce9c1d1464ceb9fb161527673c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89ea9b6cf1d126fca44066e7d3292227ecf0ce01f3419b377b6d66b67845f990
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941035"
 ---
-# <a name="mf_bytestreamhandler_accepts_share_write-attribute"></a>MF \_ BYTESTREAMHANDLER \_ acepta el \_ atributo de escritura de recurso compartido \_
+# <a name="mf_bytestreamhandler_accepts_share_write-attribute"></a>MF \_ BYTESTREAMHANDLER \_ ACEPTA EL atributo SHARE \_ \_ WRITE
 
-Especifica si un controlador de flujo de bytes puede utilizar un flujo de bytes abierto para que otro subproceso pueda escribir en él.
+Especifica si un controlador de flujo de bytes puede usar una secuencia de bytes abierta para que la escriba otro subproceso.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,21 +21,21 @@ Especifica si un controlador de flujo de bytes puede utilizar un flujo de bytes 
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**a IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**a IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los controladores de secuencias de bytes pueden admitir este atributo. Para obtener o establecer el atributo, primero consulte el controlador de flujo de bytes para la interfaz [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) . Después, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32) o [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+Los controladores de flujo de bytes pueden admitir este atributo. Para obtener o establecer el atributo, consulte primero el controlador de flujo de bytes para la [**interfaz DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) A [**continuación, llame a IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32) o [**AATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 
-Si este atributo es **true**, significa que el controlador de flujo de bytes puede leer de una secuencia mientras otro subproceso escribe en la misma secuencia. Cuando un flujo se abre para escribir en otro subproceso, el método [**IMFByteStream:: GetCapabilities**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-getcapabilities) devuelve la marca de **\_ \_ escritura de recurso compartido MFBYTESTREAM** .
+Si este atributo es **TRUE,** significa que el controlador de flujo de bytes puede leer desde una secuencia mientras otro subproceso escribe en la misma secuencia. Cuando otro subproceso abre una secuencia para escribirla, el método [**IMFByteStream::GetCapabilities**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-getcapabilities) devuelve la marca **MFBYTESTREAM \_ SHARE \_ WRITE.**
 
-Este atributo afecta a la resolución de código fuente. Si una secuencia de bytes tiene establecida la marca de **\_ \_ escritura de recurso compartido MFBYTESTREAM** , la [resolución de origen](source-resolver.md) no pasará esa secuencia a un controlador de flujo de bytes a menos que el controlador tenga el \_ atributo MF BYTESTREAMHANDLER acepte el atributo de \_ \_ recurso compartido de \_ escritura establecido en **true**.
+Este atributo afecta a la resolución de origen. Si una secuencia de bytes tiene establecida la [](source-resolver.md) marca **MFBYTESTREAM \_ SHARE \_ WRITE,** el solucionador de origen no pasará esa secuencia a un controlador de flujo de bytes a menos que el controlador tenga el atributo MF \_ BYTESTREAMHANDLER ACCEPTS SHARE WRITE establecido en \_ \_ \_ **TRUE.**
 
-La marca de **\_ \_ escritura de recurso compartido MFBYTESTREAM** es una sugerencia de que la longitud de la secuencia podría cambiar mientras el controlador Lee de ella.
+La **marca MFBYTESTREAM \_ SHARE \_ WRITE** es una sugerencia de que la longitud de la secuencia puede cambiar mientras el controlador lee de ella.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/>                                  |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 R2 \|\]<br/>                     |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                     |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,10 +53,10 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Controladores de esquema y controladores de Byte-Stream](scheme-handlers-and-byte-stream-handlers.md)
+[Controladores de esquema y Byte-Stream de esquema](scheme-handlers-and-byte-stream-handlers.md)
 </dt> </dl>
 
  

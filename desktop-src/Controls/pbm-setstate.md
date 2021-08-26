@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PBM_SETSTATE (commctrl. h)
+title: PBM_SETSTATE mensaje (Commctrl.h)
 description: Establece el estado de la barra de progreso.
 ms.assetid: 4626f334-db74-4618-8fc7-e6f21c88ca19
 keywords:
-- PBM_SETSTATE controles de mensajes de Windows
+- PBM_SETSTATE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c91e94bcc909957264eff776e56d3580b2c36ad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 794006517eaa23789f3a25425b1213fede7f8dde9893587def02ebc9605b28f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986065"
 ---
-# <a name="pbm_setstate-message"></a>Mensaje de PBM \_ SETSTATE
+# <a name="pbm_setstate-message"></a>Mensaje \_ SETSTATE de PBM
 
 Establece el estado de la barra de progreso.
 
@@ -32,15 +32,15 @@ Establece el estado de la barra de progreso.
 *wParam* 
 </dt> <dd>
 
-Estado de la barra de progreso que se está configurando. Uno de los siguientes valores.
+Estado de la barra de progreso que se establece. Uno de los siguientes valores.
 
 
 
 | Valor                                                                                                                                                   | Significado                 |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| <span id="PBST_NORMAL"></span><span id="pbst_normal"></span><dl> <dt>**PBST \_ normal**</dt> </dl> | En curso.<br/> |
-| <span id="PBST_ERROR"></span><span id="pbst_error"></span><dl> <dt>**\_error PBST**</dt> </dl>    | Error.<br/>       |
-| <span id="PBST_PAUSED"></span><span id="pbst_paused"></span><dl> <dt>**PBST en \_ pausa**</dt> </dl> | En pausa.<br/>      |
+| <span id="PBST_NORMAL"></span><span id="pbst_normal"></span><dl> <dt>**PBST \_ NORMAL**</dt> </dl> | En curso.<br/> |
+| <span id="PBST_ERROR"></span><span id="pbst_error"></span><dl> <dt>**PBST \_ ERROR**</dt> </dl>    | Error.<br/>       |
+| <span id="PBST_PAUSED"></span><span id="pbst_paused"></span><dl> <dt>**PBST \_ EN PAUSA**</dt> </dl> | En pausa.<br/>      |
 
 
 
@@ -61,9 +61,9 @@ Devuelve el estado anterior.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

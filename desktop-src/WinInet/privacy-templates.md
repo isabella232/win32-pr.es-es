@@ -1,6 +1,6 @@
 ---
-title: Plantillas de privacidad (Wininet. h)
-description: A continuación se muestran los niveles de privacidad que son equivalentes a las reglas de aceptación, aceptación condicional o no aceptación de cookies.
+title: Plantillas de privacidad (Wininet.h)
+description: Los siguientes son niveles de privacidad que equivalen a las reglas para aceptar, aceptar condicionalmente o no aceptar cookies.
 ms.assetid: d8dd9c12-b159-4f95-820e-521aeb1526bf
 topic_type:
 - apiref
@@ -20,20 +20,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9394068721920836f61871ca42471469fd4c592
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 481aa3e9b6b5b5519bac6e458de1acba90f2cfa20dd0a5babac016d0003c70b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955565"
 ---
 # <a name="privacy-templates"></a>Plantillas de privacidad
 
-A continuación se muestran los niveles de privacidad que son equivalentes a las reglas de aceptación, aceptación condicional o no aceptación de cookies. Estos niveles corresponden a los niveles de preferencias de privacidad establecidos en la pestaña privacidad de opciones de Internet. Consulte [privacidad en Internet Explorer 6](https://www.bing.com/search?q=Privacy+in+Internet+Explorer+6) para obtener definiciones detalladas.
+Los siguientes son niveles de privacidad que equivalen a las reglas para aceptar, aceptar condicionalmente o no aceptar cookies. Estos niveles corresponden a los niveles de preferencias de privacidad establecidos en la pestaña Privacidad de Opciones de Internet. Consulte [Privacidad en Internet Explorer 6 para](https://www.bing.com/search?q=Privacy+in+Internet+Explorer+6) obtener definiciones detalladas.
 
 <dl> <dt>
 
-<span id="PRIVACY_TEMPLATE_NO_COOKIES"></span><span id="privacy_template_no_cookies"></span>**plantilla de privacidad \_ \_ sin \_ cookies**
+<span id="PRIVACY_TEMPLATE_NO_COOKIES"></span><span id="privacy_template_no_cookies"></span>**PLANTILLA DE \_ PRIVACIDAD \_ SIN \_ COOKIES**
 </dt> <dd> <dl> <dt>
 
 0
@@ -41,12 +41,12 @@ A continuación se muestran los niveles de privacidad que son equivalentes a las
 
 
 
-Esto es lo mismo que **bloquear todas las cookies** en la barra deslizante de preferencias de privacidad en **Opciones de Internet**.
+Esto es lo mismo que Bloquear todas las **cookies en** la barra deslizante Preferencias de privacidad en Opciones **de Internet.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_HIGH"></span><span id="privacy_template_high"></span>**plantilla de privacidad \_ \_ alta**
+<span id="PRIVACY_TEMPLATE_HIGH"></span><span id="privacy_template_high"></span>**PLANTILLA \_ DE PRIVACIDAD \_ ALTA**
 </dt> <dd> <dl> <dt>
 
 1
@@ -54,12 +54,12 @@ Esto es lo mismo que **bloquear todas las cookies** en la barra deslizante de pr
 
 
 
-Esto es lo **mismo que en** la barra deslizante de preferencias de privacidad de **Opciones de Internet**.
+Esto es lo mismo que **Alto en la** barra deslizante Preferencias de privacidad en Opciones de **Internet**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_MEDIUM_HIGH"></span><span id="privacy_template_medium_high"></span>**plantilla de privacidad \_ \_ media \_ alta**
+<span id="PRIVACY_TEMPLATE_MEDIUM_HIGH"></span><span id="privacy_template_medium_high"></span>**PLANTILLA \_ DE PRIVACIDAD MEDIA \_ \_ ALTA**
 </dt> <dd> <dl> <dt>
 
 2
@@ -67,12 +67,12 @@ Esto es lo **mismo que en** la barra deslizante de preferencias de privacidad de
 
 
 
-Es lo mismo que **medio \_ alto** en la barra deslizante de preferencias de privacidad de **Opciones de Internet**.
+Esto es lo mismo que **Medium \_ High en la** barra deslizante Preferencias de privacidad en Opciones de **Internet.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_MEDIUM"></span><span id="privacy_template_medium"></span>**plantilla de privacidad \_ \_ mediana**
+<span id="PRIVACY_TEMPLATE_MEDIUM"></span><span id="privacy_template_medium"></span>**MEDIO DE \_ PLANTILLA DE \_ PRIVACIDAD**
 </dt> <dd> <dl> <dt>
 
 3
@@ -80,12 +80,12 @@ Es lo mismo que **medio \_ alto** en la barra deslizante de preferencias de priv
 
 
 
-Es el mismo que el **medio** en la barra deslizante de preferencias de privacidad de **Opciones de Internet**.
+Esto es lo mismo que **Medium en la** barra deslizante Preferencias de privacidad en Opciones de **Internet.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_MEDIUM_LOW_"></span><span id="privacy_template_medium_low_"></span>**plantilla de privacidad \_ \_ media \_ baja** 
+<span id="PRIVACY_TEMPLATE_MEDIUM_LOW_"></span><span id="privacy_template_medium_low_"></span>**PLANTILLA \_ DE PRIVACIDAD MEDIA \_ \_ BAJA** 
 </dt> <dd> <dl> <dt>
 
 4
@@ -93,12 +93,12 @@ Es el mismo que el **medio** en la barra deslizante de preferencias de privacida
 
 
 
-Es lo mismo que **bajo** en la barra deslizante de preferencias de privacidad de **Opciones de Internet**.
+Esto es lo mismo que **Baja en la** barra deslizante Preferencias de privacidad en Opciones de **Internet**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_LOW"></span><span id="privacy_template_low"></span>**plantilla de privacidad \_ \_ baja**
+<span id="PRIVACY_TEMPLATE_LOW"></span><span id="privacy_template_low"></span>**PLANTILLA \_ DE PRIVACIDAD \_ BAJA**
 </dt> <dd> <dl> <dt>
 
 5
@@ -106,12 +106,12 @@ Es lo mismo que **bajo** en la barra deslizante de preferencias de privacidad de
 
 
 
-Esto es lo mismo que **aceptar todas las cookies** en la barra deslizante de preferencias de privacidad en **Opciones de Internet**.
+Esto es lo mismo que Aceptar todas **las cookies en** la barra deslizante Preferencias de privacidad en Opciones de **Internet.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_CUSTOM"></span><span id="privacy_template_custom"></span>**plantilla de privacidad \_ \_ personalizada**
+<span id="PRIVACY_TEMPLATE_CUSTOM"></span><span id="privacy_template_custom"></span>**PLANTILLA \_ DE PRIVACIDAD \_ PERSONALIZADA**
 </dt> <dd> <dl> <dt>
 
 100
@@ -119,12 +119,12 @@ Esto es lo mismo que **aceptar todas las cookies** en la barra deslizante de pre
 
 
 
-Definido por el usuario. Consulte [Cómo crear un archivo de importación de privacidad personalizado](https://www.bing.com/search?q=How+to+Create+a+Customized+Privacy+Import+File) para saber cómo establecer la configuración de privacidad personalizada.
+Definido por el usuario. Consulte How to Create a Custom Privacy Import File (Cómo crear [un archivo de importación de privacidad personalizado)](https://www.bing.com/search?q=How+to+Create+a+Customized+Privacy+Import+File) para saber cómo establecer la configuración de privacidad personalizada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_ADVANCED"></span><span id="privacy_template_advanced"></span>**plantilla de privacidad \_ \_ avanzada**
+<span id="PRIVACY_TEMPLATE_ADVANCED"></span><span id="privacy_template_advanced"></span>**PLANTILLA \_ DE PRIVACIDAD \_ AVANZADA**
 </dt> <dd> <dl> <dt>
 
 101
@@ -132,28 +132,28 @@ Definido por el usuario. Consulte [Cómo crear un archivo de importación de pri
 
 
 
-Definido por el usuario. Las opciones avanzadas se establecen en el cuadro de diálogo **Configuración avanzada de privacidad** accesible desde la pestaña **privacidad** de **Opciones de Internet**.
+Definido por el usuario. Las opciones avanzadas se establecen en el **cuadro de diálogo Configuración** privacidad avanzada accesible desde la **pestaña** Privacidad de Opciones **de Internet**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_MAX"></span><span id="privacy_template_max"></span>**plantilla de privacidad \_ \_ máxima**
+<span id="PRIVACY_TEMPLATE_MAX"></span><span id="privacy_template_max"></span>**PLANTILLA \_ DE PRIVACIDAD \_ MÁX.**
 </dt> <dd> <dl> <dt>
 
-plantilla de privacidad \_ \_ baja
+PLANTILLA \_ DE PRIVACIDAD \_ BAJA
 </dt> <dt>
 
 
 
-Igual que **la \_ plantilla \_ de privacidad Low**.
+Igual que **PRIVACY \_ TEMPLATE \_ LOW**.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. En el caso de servicios o implementaciones de servidor, use los [servicios http de Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows servicios HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
 
  
 
@@ -165,7 +165,7 @@ Igual que **la \_ plantilla \_ de privacidad Low**.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Wininet. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wininet.h</dt> </dl> |
 
 
 

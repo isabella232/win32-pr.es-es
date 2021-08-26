@@ -1,9 +1,9 @@
 ---
-title: MCI_OVLY_RECT_PARMS estructura (Mciapi. h)
-description: La \_ estructura MCI OVLY \_ Rect \_ parms contiene información de posición de los \_ comandos MCI Put y MCI \_ Where para dispositivos de superposición de vídeo.
+title: MCI_OVLY_RECT_PARMS estructura (Mciapi.h)
+description: La estructura MCI \_ OVLY RECT PARMS contiene información de posicionamiento para los comandos MCI PUT y MCI WHERE para dispositivos de superposición \_ \_ de \_ \_ vídeo.
 ms.assetid: 1cfd8e51-c76f-4a1c-905c-efacbd8146f4
 keywords:
-- Estructura de MCI_OVLY_RECT_PARMS de Windows multimedia
+- MCI_OVLY_RECT_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68a6b51d980b6ca0a3c223f414571a42b2e3ae3f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5cfd55b2950f6d4268a9af5ee5bdc7fc9c378c4dbaeaa569406339263a2cf85e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104488986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039115"
 ---
-# <a name="mci_ovly_rect_parms-structure"></a>MCI \_ OVLY \_ Rect \_ parms estructura
+# <a name="mci_ovly_rect_parms-structure"></a>Estructura \_ MCI OVLY \_ RECT \_ PARMS
 
-La estructura **MCI \_ OVLY \_ Rect \_ parms** contiene información de posición de los comandos [**MCI \_ Put**](mci-put.md) y [**MCI \_ Where**](mci-where.md) para dispositivos de superposición de vídeo.
+La **estructura MCI \_ OVLY \_ RECT \_ PARMS** contiene información de posicionamiento para los comandos [**\_ MCI PUT**](mci-put.md) y [**MCI \_ WHERE**](mci-where.md) para dispositivos de superposición de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,18 +44,18 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
-**CR**
+**Rc**
 </dt> <dd>
 
-Rectángulo que contiene información de posición. Las estructuras [Rect](/previous-versions//ms536136(v=vs.85)) se administran de forma diferente en MCI que en otras partes de Windows. en MCI, **RC. Right** contiene el ancho del rectángulo y **RC. Bottom** contiene el alto.
+Rectángulo que contiene información de posicionamiento. [Las estructuras RECT](/previous-versions//ms536136(v=vs.85)) se controlan de forma diferente en MCI que en otras partes de Windows; en MCI, **rc.right** contiene el ancho del rectángulo y **rc.bottom** contiene su alto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -67,7 +67,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -75,22 +75,22 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**colocación de MCI \_**](mci-put.md)
+[**MCI \_ PUT**](mci-put.md)
 </dt> <dt>
 
-[**MCI \_ donde**](mci-where.md)
+[**MCI \_ WHERE**](mci-where.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))
 </dt> <dt>
 
-[RECT](/previous-versions//ms536136(v=vs.85))
+[Rect](/previous-versions//ms536136(v=vs.85))
 </dt> </dl>
 
  

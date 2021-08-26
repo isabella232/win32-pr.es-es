@@ -1,7 +1,7 @@
 ---
 description: Recupera un identificador de objeto para el objeto especificado asociado al proceso especificado.
 ms.assetid: c7b371c3-02c0-4137-ad9d-dd07a74fe2a5
-title: Función ObFindHandleForObject (Ntosp. h)
+title: Función ObFindHandleForObject (Ntosp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ntoskrnl.lib
 - Ntoskrnl.dll
-ms.openlocfilehash: 7ba87d05d4264f3bb160bae16053a338e38e2145
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 481def34e3e8656205eefe96058fe3c7558d2c898c7e05ddc78f9a67435c507e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984155"
 ---
-# <a name="obfindhandleforobject-function"></a>ObFindHandleForObject función)
+# <a name="obfindhandleforobject-function"></a>Función ObFindHandleForObject
 
-\[Esta función está obsoleta y puede modificarse o no estar disponible en versiones futuras de Windows. Evite el uso de esta función.\]
+\[Esta función está obsoleta y puede modificarse o no estar disponible en versiones futuras de Windows. Evite usar esta función.\]
 
 Recupera un identificador de objeto para el objeto especificado asociado al proceso especificado.
 
@@ -46,46 +46,46 @@ BOOLEAN WINAPI ObFindHandleForObject(
 
 <dl> <dt>
 
-*Proceso* \[ de de\]
+*Proceso* \[ En\]
 </dt> <dd>
 
-Proceso. Este identificador es devuelto por la función **IoGetCurrentProcess** o **PsGetCurrentProcess** .
+Proceso. La función **IoGetCurrentProcess** o **PsGetCurrentProcess** devuelven este identificador.
 
 </dd> <dt>
 
-*Objeto* \[ de de\]
+*Objeto* \[ En\]
 </dt> <dd>
 
-Puntero al objeto.
+Puntero al objeto .
 
 </dd> <dt>
 
-*Reserved1* \[ en, opcional\]
+*Reservado1* \[ en, opcional\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*Reserved2* \[ en, opcional\]
+*Reservado2* \[ en, opcional\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*Identificador* \[ de enuncia\]
+*Identificador* \[ out\]
 </dt> <dd>
 
-Identificador del objeto.
+Identificador de objeto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se encuentra una coincidencia y **false** en caso contrario.
+La función devuelve **TRUE si** se encuentra una coincidencia y FALSE en **caso** contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta función está disponible en Ntoskrnl.exe y solo se puede llamar desde el modo kernel. La biblioteca de importación correspondiente está disponible a través de Windows Driver Kit (WDK).
 
@@ -95,10 +95,10 @@ Esta función está disponible en Ntoskrnl.exe y solo se puede llamar desde el m
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Ntosp. h</dt> </dl>      |
-| Biblioteca<br/>                  | <dl> <dt>Ntoskrnl. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Ntosp.h</dt> </dl>      |
+| Biblioteca<br/>                  | <dl> <dt>Ntoskrnl.lib</dt> </dl> |
 
 
 

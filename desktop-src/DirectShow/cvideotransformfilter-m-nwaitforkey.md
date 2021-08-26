@@ -1,7 +1,7 @@
 ---
-description: Número máximo actual de fotogramas Delta que se van a quitar.
+description: Número máximo actual de fotogramas delta que se quitarán.
 ms.assetid: d14c594e-55ab-42c2-bdb0-6829f71d02dd
-title: 'Miembro CVideoTransformFilter:: m_nWaitForKey (Vtrans. h)'
+title: CVideoTransformFilter::m_nWaitForKey miembro (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a168a26816825c33c0e047d93cc8b14ebd0f3536
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 83cb78b233385e502d6508212492c54865aca28990ae079e4bf588776bd83fe5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998545"
 ---
-# <a name="cvideotransformfilterm_nwaitforkey-member"></a>Miembro nWaitForKey CVideoTransformFilter:: m \_
+# <a name="cvideotransformfilterm_nwaitforkey-member"></a>Miembro CVideoTransformFilter::m \_ nWaitForKey
 
-Número máximo actual de fotogramas Delta que se van a quitar. Aunque esta variable es mayor que cero, el filtro quitará los fotogramas hasta que llegue a un fotograma clave. Para cada fotograma que se quita, el filtro reduce esta variable en uno, lo que impide que el filtro Quite un número excesivo de fotogramas. Después de 30 fotogramas Delta en una fila sin fotogramas clave, el filtro comenzará a entregar fotogramas de nuevo.
+Número máximo actual de fotogramas delta que se quitarán. Aunque esta variable es mayor que cero, el filtro quitará fotogramas hasta que llegue a un fotograma clave. Para cada fotograma que se quita, el filtro disminuye esta variable en uno, lo que impide que el filtro descime un número excesivo de fotogramas. Después de 30 fotogramas delta en una fila sin fotogramas clave, el filtro comenzará a entregar fotogramas de nuevo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ int m_nWaitForKey;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Vtrans. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Vtrans.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ int m_nWaitForKey;
 
 <dl> <dt>
 
-[**Clase CVideoTransformFilter**](cvideotransformfilter.md)
+[**CVideoTransformFilter (clase)**](cvideotransformfilter.md)
 </dt> </dl>
 
  

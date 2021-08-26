@@ -1,19 +1,19 @@
 ---
-description: Una ventana de vídeo se está activando o desactivando.
+description: Se está activando o desactivando una ventana de vídeo.
 ms.assetid: 2e004899-bb2b-4127-b606-e2a979275836
-title: EC_ACTIVATE (DShow. h)
+title: EC_ACTIVATE (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81e48adb3ae98af172664b807386c615d34b6b22
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b14d9b0ad192045f179d9f0f366eed6a32efb0e6cc6f61b47255f118b7f55258
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966065"
 ---
-# <a name="ec_activate"></a>activación de EC \_
+# <a name="ec_activate"></a>EC \_ ACTIVATE
 
-Una ventana de vídeo se está activando o desactivando.
+Se está activando o desactivando una ventana de vídeo.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -22,7 +22,7 @@ Una ventana de vídeo se está activando o desactivando.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**Bool**) **True** si la ventana está activada o **false** si la ventana está desactivada.
+(**BOOL**) **TRUE** si la ventana está activada o **FALSE** si la ventana está desactivada.
 
 </dd> <dt>
 
@@ -35,13 +35,13 @@ Una ventana de vídeo se está activando o desactivando.
 
 ## <a name="default-action"></a>Acción predeterminada
 
-El administrador de gráficos de filtro establece el foco a través de la interfaz [**IResourceManager**](/windows/desktop/api/Strmif/nn-strmif-iresourcemanager) . No envía la notificación de eventos a la aplicación.
+El administrador de gráficos de filtros establece el foco a través de [**la interfaz IResourceManager.**](/windows/desktop/api/Strmif/nn-strmif-iresourcemanager) No envía la notificación de eventos a la aplicación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un representador de vídeo envía este evento cada vez que su ventana está activada o desactivada (es decir, cuando recibe un mensaje de ACTIVATEAPP de WM \_ ). La activación o desactivación de ventanas puede producirse porque la ventana ha ganado o perdido el foco, o porque el representador ha cambiado entre el modo de pantalla completa y el modo de ventana.
+Un representador de vídeo envía este evento cada vez que se activa o desactiva su ventana (es decir, cuando recibe un mensaje \_ DE WM ACTIVATEAPP). La activación o desactivación de ventanas puede producirse porque la ventana ha adquirido o perdido el foco, o porque el representador ha cambiado entre el modo de pantalla completa y el modo de ventana.
 
-Este evento permite al administrador de gráficos de filtro asignar recursos que dependen del foco de la ventana, como dispositivos de audio.
+Este evento permite al administrador de gráficos de filtros asignar recursos que dependen del foco de la ventana, como los dispositivos de audio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ Este evento permite al administrador de gráficos de filtro asignar recursos que
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

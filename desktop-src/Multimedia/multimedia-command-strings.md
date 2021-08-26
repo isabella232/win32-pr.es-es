@@ -10,12 +10,12 @@ keywords:
 - cadenas de comandos multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae4ec8f9b0efa783028850a6cd03cbc0bed20caf
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 986a1fc9e2a97671b04d8ba8a4a5cd033e176a94f6a8e898b4f899b7a9c707a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038775"
 ---
 # <a name="multimedia-command-strings"></a>Cadenas de comandos multimedia
 
@@ -23,50 +23,50 @@ Las cadenas de comandos siguientes se usan con multimedia.
 
 -   [break](break.md)
 -   [capability](capability.md)
--   [grabar](capture.md)
+-   [capturar](capture.md)
 -   [close](close.md)
--   [configurar](configure.md)
+-   [Configurar](configure.md)
 -   [copy](copy.md)
--   [indicación](cue.md)
--   [límite](cut.md)
+-   [Cue](cue.md)
+-   [Cortar](cut.md)
 -   [delete](delete.md)
--   [salida](escape.md)
--   [Inmovilice](freeze.md)
+-   [Escapar](escape.md)
+-   [Congelar](freeze.md)
 -   [índice](./windows-multimedia-start-page.md)
--   [superclase](info.md)
+-   [Información](info.md)
 -   [list](list.md)
 -   [carga](load.md)
--   [Rasa](mark.md)
--   [control](monitor.md)
+-   [Marca](mark.md)
+-   [Monitor](monitor.md)
 -   [open](open.md)
--   [copiar](paste.md)
+-   [pegar](paste.md)
 -   [pause](pause.md)
--   [reproducción](play.md)
--   [pondrán](put.md)
--   [calidad](quality.md)
--   [alcanzar](realize.md)
+-   [Jugar](play.md)
+-   [Poner](put.md)
+-   [Calidad](quality.md)
+-   [darse cuenta de](realize.md)
 -   [record](record.md)
 -   [reserva](reserve.md)
 -   [restore](restore.md)
--   [Recuper](resume.md)
+-   [Reanudar](resume.md)
 -   [guardar](save.md)
--   [desean](seek.md)
+-   [Buscar](seek.md)
 -   [set](set.md)
 -   [setaudio](setaudio.md)
 -   [settimecode](settimecode.md)
 -   [settuner](settuner.md)
 -   [setvideo](setvideo.md)
 -   [signal](signal.md)
--   [bucle](spin.md)
+-   [giro](spin.md)
 -   [status](status.md)
--   [pasar](step.md)
+-   [Paso](step.md)
 -   [stop](stop.md)
--   [sysinfo](sysinfo.md)
+-   [Sysinfo](sysinfo.md)
 -   [deshacer](undo.md)
--   [liberar](unfreeze.md)
+-   [Descongelar](unfreeze.md)
 -   [update](update.md)
 -   [where](where.md)
--   [ventana](window.md)
+-   [Ventana](window.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -75,6 +75,6 @@ Las cadenas de comandos siguientes se usan con multimedia.
 [Referencia multimedia](multimedia-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

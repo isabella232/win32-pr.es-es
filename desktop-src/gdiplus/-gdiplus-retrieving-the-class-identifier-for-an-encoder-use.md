@@ -1,19 +1,19 @@
 ---
-description: La función GetEncoderClsid en el ejemplo siguiente recibe el tipo MIME de un codificador y devuelve el identificador de clase (CLSID) de ese codificador.
+description: La función GetEncoderClsid del ejemplo siguiente recibe el tipo MIME de un codificador y devuelve el identificador de clase (CLSID) de ese codificador.
 ms.assetid: f78dac7c-4bc1-4614-8a26-d99d5619399a
-title: Recuperar el identificador de clase para un codificador
+title: Recuperar el identificador de clase de un codificador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a03193bfa9f2e86e92f66a649280828f12d4807c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a40c31c7ad997ed3e7525ff247019f6a41c681b9523dc523105bd5ba6c7ca6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014715"
 ---
-# <a name="retrieving-the-class-identifier-for-an-encoder"></a>Recuperar el identificador de clase para un codificador
+# <a name="retrieving-the-class-identifier-for-an-encoder"></a>Recuperar el identificador de clase de un codificador
 
-La función GetEncoderClsid en el ejemplo siguiente recibe el tipo MIME de un codificador y devuelve el identificador de clase (**CLSID**) de ese codificador. Los tipos MIME de los codificadores integrados en GDI+ de Windows son los siguientes:
+La función GetEncoderClsid del ejemplo siguiente recibe el tipo MIME de un codificador y devuelve el identificador de clase **(CLSID)** de ese codificador. Los tipos MIME de los codificadores integrados en Windows GDI+ son los siguientes:
 
 -   image/bmp
 -   image/jpeg
@@ -21,7 +21,7 @@ La función GetEncoderClsid en el ejemplo siguiente recibe el tipo MIME de un co
 -   image/tiff
 -   image/png
 
-La función llama a [**GetImageEncoders**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoders) para obtener una matriz de objetos [**ImageCodecInfo**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-imagecodecinfo) . Si uno de los objetos **ImageCodecInfo** de la matriz representa el codificador solicitado, la función devuelve el índice del objeto **ImageCodecInfo** y copia el **CLSID** en la variable a la que apunta **pClsid**. Si se produce un error en la función, devuelve – 1.
+La función llama [**a GetImageEncoders para**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoders) obtener una matriz de [**objetos ImageCodecInfo.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-imagecodecinfo) Si uno de los objetos **ImageCodecInfo** de esa matriz representa el codificador solicitado, la función devuelve el índice del objeto **ImageCodecInfo** y copia el **CLSID** en la variable a la que apunta **pClsid**. Si se produce un error en la función, devuelve –1.
 
 
 ```
@@ -102,7 +102,7 @@ INT main()
 
 
 
-Al ejecutar la aplicación de consola anterior, obtendrá una salida similar a la siguiente:
+Al ejecutar la aplicación de consola anterior, obtiene una salida similar a la siguiente:
 
 
 ```

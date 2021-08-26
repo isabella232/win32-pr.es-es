@@ -1,7 +1,7 @@
 ---
 description: El método CheckInputType comprueba si un tipo de medio especificado es aceptable para la entrada.
 ms.assetid: 11f156f7-add2-45be-a0d3-05d21f596b89
-title: Método CTransformFilter. CheckInputType (Transfrm. h)
+title: Método CTransformFilter.CheckInputType (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 63c48a0502ee074b0940f85386dca0619a3ad12d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6ef410ac8d96160b39ca9b7103e5125be8619169ba6b287a32b8769e57a0cbf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053625"
 ---
-# <a name="ctransformfiltercheckinputtype-method"></a>CTransformFilter. CheckInputType, método
+# <a name="ctransformfiltercheckinputtype-method"></a>Método CTransformFilter.CheckInputType
 
 El `CheckInputType` método comprueba si un tipo de medio especificado es aceptable para la entrada.
 
@@ -45,30 +45,30 @@ virtual HRESULT CheckInputType(
 *mtIn* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que especifica el tipo de medio.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que especifica el tipo de medio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                                | Descripción                              |
 |------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                       | El tipo de medio es aceptable.<br/>     |
-| <dl> <dt>**\_tipo VFW \_ E \_ no \_ aceptado**</dt> </dl> | El tipo de medio no es aceptable.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | El tipo de medio es aceptable.<br/>     |
+| <dl> <dt>**TIPO VFW \_ E \_ NO \_ \_ ACEPTADO**</dt> </dl> | El tipo de medio no es aceptable.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase derivada debe implementar este método. Devuelve S \_ OK si el formato de entrada propuesto es aceptable o un código de error en caso contrario.
+La clase derivada debe implementar este método. Devuelve S OK si el formato de entrada propuesto es aceptable o un código de error en caso \_ contrario.
 
-Este método no necesita comprobar si el formato de entrada es compatible con el formato de salida (si existe). El PIN de entrada comprueba que se llama al método [**CheckTransform**](ctransformfilter-checktransform.md) .
+Este método no necesita comprobar que el formato de entrada es compatible con el formato de salida (si existe). El pin de entrada lo comprueba mediante una llamada al [**método CheckTransform.**](ctransformfilter-checktransform.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Este método no necesita comprobar si el formato de entrada es compatible con el
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ Este método no necesita comprobar si el formato de entrada es compatible con el
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

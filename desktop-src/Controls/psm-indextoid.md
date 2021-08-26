@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PSM_INDEXTOID (Prsht. h)
-description: Toma el índice de una página de hoja de propiedades y devuelve su identificador de recurso. Puede enviar este mensaje explícitamente o utilizar la \_ macro PropSheet IndexToId.
+title: PSM_INDEXTOID mensaje (Prsht.h)
+description: Toma el índice de una página de hoja de propiedades y devuelve su identificador de recurso. Puede enviar este mensaje explícitamente o usar la \_ macro PropSheet IndexToId.
 ms.assetid: c153675a-360f-4916-aa0b-500636dd9022
 keywords:
-- PSM_INDEXTOID controles de mensajes de Windows
+- PSM_INDEXTOID controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 643861ecb6dc11d949483defc282d6d65648bdca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc7a26cd97d324ae9bb4cfee85df00387c59293c7de8817b67da5605a207f07f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985725"
 ---
-# <a name="psm_indextoid-message"></a>Mensaje de PSM \_ INDEXTOID
+# <a name="psm_indextoid-message"></a>Mensaje \_ INDEXTOID de PSM
 
-Toma el índice de una página de hoja de propiedades y devuelve su identificador de recurso. Puede enviar este mensaje explícitamente o utilizar la macro [**PropSheet \_ IndexToId**](/windows/desktop/api/Prsht/nf-prsht-propsheet_indextoid) .
+Toma el índice de una página de hoja de propiedades y devuelve su identificador de recurso. Puede enviar este mensaje explícitamente o usar la macro [**\_ PropSheet IndexToId.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_indextoid)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,7 +45,7 @@ Debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador de recurso de la página de la hoja de propiedades especificada por *wParam* si se realiza correctamente. De lo contrario, devuelve cero.
+Devuelve el identificador de recurso de la página de hoja de propiedades especificada por *wParam* si se realiza correctamente. De lo contrario, devuelve cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Devuelve el identificador de recurso de la página de la hoja de propiedades esp
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

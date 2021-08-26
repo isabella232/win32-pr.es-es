@@ -1,9 +1,9 @@
 ---
-title: bitMap (MapType) (elemento)
-description: Define una lista de pares de nombre/valor que asignan valores de bit y valores de cadena.
+title: elemento bitMap (MapType)
+description: Define una lista de pares nombre-valor que asignan valores de bits y valores de cadena.
 ms.assetid: 23e636a1-4945-4515-941a-6a2403167da9
 keywords:
-- elemento bitMap EventLog
+- Elemento bitMap EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8d06910f3064fd8b51d090dd33e6735e35bd6177
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe64dde4074cd8cab2d091d582a88552eb9c1377a632dc7692a0ab959fe11bff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032385"
 ---
-# <a name="bitmap-maptype-element"></a>bitMap (MapType) (elemento)
+# <a name="bitmap-maptype-element"></a>elemento bitMap (MapType)
 
-Define una lista de pares de nombre/valor que asignan valores de bit y valores de cadena.
+Define una lista de pares nombre-valor que asignan valores de bits y valores de cadena.
 
 ``` syntax
 <xs:element name="bitMap"
@@ -30,7 +30,7 @@ Define una lista de pares de nombre/valor que asignan valores de bit y valores d
  />
 ```
 
-El elemento **bitMap** se define mediante el tipo complejo [**mapType**](eventmanifestschema-maptype-complextype.md) .
+El **tipo complejo MapType** define el elemento [**bitMap.**](eventmanifestschema-maptype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **bitMap** se define mediante el tipo complejo [**mapType**](eventma
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **bitMap** se define mediante el tipo complejo [**mapType**](eventma
 **Elemento primario**
 </dt> <dt>
 
-[**Maps (ProviderType)**](eventmanifestschema-maps-providertype-element.md)
+[**maps (ProviderType)**](eventmanifestschema-maps-providertype-element.md)
 </dt> </dl>
 
  

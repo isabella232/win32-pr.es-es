@@ -1,11 +1,11 @@
 ---
-title: Propiedad de velocidad de fotogramas IWMPNetwork
-description: La propiedad de velocidad de fotogramas obtiene la velocidad de fotogramas de vídeo actual.
+title: Propiedad frameRate de IWMPNetwork
+description: La propiedad frameRate obtiene la velocidad de fotogramas de vídeo actual.
 ms.assetid: 800ecf3d-3b2c-48f9-8fc4-c7c32757749a
 keywords:
-- propiedades de velocidad de fotogramas Media Player Windows
-- propiedad de velocidad de fotogramas Media Player Windows, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, propiedad de velocidad de fotogramas
+- Propiedad frameRate Reproductor de Windows Media
+- Propiedad frameRate Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , propiedad frameRate
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c338a116588fa9f1c552feff15f220e08b0f66e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3169cc21eee2317da45db3cb3ca9ceffffa01c85479312defe63cda1fa09796f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956165"
 ---
-# <a name="iwmpnetworkframerate-property"></a>IWMPNetwork:: fotogramas (propiedad)
+# <a name="iwmpnetworkframerate-property"></a>Propiedad IWMPNetwork::frameRate
 
-La propiedad de **velocidad** de fotogramas obtiene la velocidad de fotogramas de vídeo actual.
+La **propiedad frameRate** obtiene la velocidad de fotogramas de vídeo actual.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,20 +46,20 @@ Public ReadOnly Property frameRate As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es la velocidad de fotogramas actual en fotogramas por cien segundos.
+**System.Int32 que** es la velocidad de fotogramas actual en fotogramas por cien segundos.
 
 > [!Note]  
-> Aunque la propiedad **encodedFrameRate** mide la velocidad de fotogramas codificada en fotogramas por segundo, la propiedad de **velocidad** de fotogramas mide la velocidad de fotogramas actual en fotogramas por cien segundos. Vea la sección Comentarios.
+> Aunque la **propiedad encodedFrameRate** mide la velocidad de fotogramas codificada en fotogramas por segundo, la propiedad **frameRate** mide la velocidad de fotogramas actual en fotogramas por cien segundos. Vea la sección Comentarios.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de velocidad de fotogramas actual se devuelve en fotogramas por cien segundos. Por ejemplo, un valor de 2998 indica 29,98 fotogramas por segundo (FPS).
+El valor de velocidad de fotogramas actual se devuelve en fotogramas por cien segundos. Por ejemplo, un valor de 2998 indica 29,98 fotogramas por segundo (fps).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **velocidad** de fotogramas para mostrar la velocidad de fotogramas especificada al codificar el archivo. La información se muestra en una etiqueta en respuesta al evento **PlayStateChange** . El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se **usa frameRate** para mostrar la velocidad de fotogramas especificada cuando se codificó el archivo. La información se muestra en una etiqueta en respuesta al **evento PlayStateChange.** El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -117,7 +117,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -130,7 +130,7 @@ End Sub
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. encodedFrameRate (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-encodedframerate--vb-and-c.md)
+[**IWMPNetwork.encodedFrameRate (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-encodedframerate--vb-and-c.md)
 </dt> </dl>
 
  

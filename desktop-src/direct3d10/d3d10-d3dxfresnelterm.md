@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXFresnelTerm (D3DX10Math.h): calcula el término Fresnel.'
+description: 'Función D3DXFresnelTerm (D3DX10Math.h): calcule el término Fresnel.'
 ms.assetid: eaa2e5ea-9b6f-4216-8b48-7be74501124d
 title: Función D3DXFresnelTerm (D3DX10Math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9efa557d44451674d2ae4c48a58370e939760a03
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 862c83fd20e7646defbbaa7b82ad43ce0a384c1dd460d182af60bf8a5b23d88e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028715"
 ---
 # <a name="d3dxfresnelterm-function-d3dx10mathh"></a>Función D3DXFresnelTerm (D3DX10Math.h)
 
@@ -103,7 +103,7 @@ F = 0.5 * (g + c)2 / (g - c)2 * ([c(g + c) - 1]2 / [c(g - c) + 1]2 + 1)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,25 +1,25 @@
 ---
 title: Guardar eventos en un archivo de registro
-description: Para guardar los eventos de un canal en un archivo de registro, llame a la función EvtClearLog o EvtExportLog.
+description: Para guardar eventos de un canal en un archivo de registro, llame a la función EvtClearLog o EvtExportLog.
 ms.assetid: 6d71ed15-97e3-4888-b161-c7e31bf3fc6d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3295d8a7a235fbb5fd5857d1b7283e9ca1fbb773
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 72a9bfafe5d1d9f75c85db4a0cc21fc3b9ae8d660aa08b542973b5e38b069158
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104269223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031965"
 ---
 # <a name="saving-events-to-a-log-file"></a>Guardar eventos en un archivo de registro
 
-Para guardar los eventos de un canal en un archivo de registro, llame a la función [**EvtClearLog**](/windows/desktop/api/WinEvt/nf-winevt-evtclearlog) o [**EvtExportLog**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) . La función [**EvtClearLog**](/windows/desktop/api/WinEvt/nf-winevt-evtclearlog) copia los eventos en el archivo de registro y los elimina del canal. La función [**EvtExportLog**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) también copia los eventos en el archivo de registro, pero no Los elimina del canal. Para borrar un canal, el usuario debe tener permisos de lectura y desactivación.
+Para guardar eventos de un canal en un archivo de registro, llame a la [**función EvtClearLog**](/windows/desktop/api/WinEvt/nf-winevt-evtclearlog) o [**EvtExportLog.**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) La [**función EvtClearLog**](/windows/desktop/api/WinEvt/nf-winevt-evtclearlog) copia los eventos en el archivo de registro y los elimina del canal. La [**función EvtExportLog**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) también copia los eventos en el archivo de registro, pero no los elimina del canal. Para borrar un canal, el usuario debe tener los permisos Leer y Borrar.
 
-Puede consultar eventos del archivo de registro que ha creado; sin embargo, para representar los eventos, el proveedor debe estar registrado en el equipo. Para representar los eventos de un archivo de registro cuando el proveedor no está registrado en el equipo, debe llamar a [**EvtArchiveExportedLog**](/windows/desktop/api/WinEvt/nf-winevt-evtarchiveexportedlog), que copia los recursos del proveedor y los agrega al archivo de registro. Después, puede copiar el archivo de registro en cualquier equipo y consultar y representar correctamente sus eventos.
+Puede consultar eventos desde el archivo de registro que ha creado; sin embargo, para representar los eventos, el proveedor debe estar registrado en el equipo. Para representar eventos de un archivo de registro cuando el proveedor no está registrado en el equipo, debe llamar a [**EvtArchiveExportedLog**](/windows/desktop/api/WinEvt/nf-winevt-evtarchiveexportedlog), que copia los recursos del proveedor y los agrega al archivo de registro. A continuación, puede copiar el archivo de registro en cualquier equipo y consultar y representar correctamente sus eventos.
 
-Además de utilizar [**EvtExportLog**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) para copiar los eventos de un canal, también puede utilizarlo para repetir los eventos de un archivo de registro en otro archivo de registro. También se puede utilizar para combinar eventos de varios canales si se utiliza una consulta XML estructurada pero no se puede utilizar para combinar eventos de varios archivos de registro.
+Además de usar [**EvtExportLog**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) para copiar eventos de un canal, también puede usarlo para volver a registrar eventos de un archivo de registro a otro archivo de registro. También puede usarlo para combinar eventos de varios canales si usa una consulta XML estructurada, pero no puede usarla para combinar eventos de varios archivos de registro.
 
-En el ejemplo siguiente se muestra cómo copiar eventos de un canal en un archivo de registro. A continuación, el ejemplo vuelve a registrar eventos específicos del archivo de registro recién creado en un nuevo archivo de registro.
+En el ejemplo siguiente se muestra cómo copiar eventos de un canal a un archivo de registro. A continuación, el ejemplo vuelve a registrar eventos específicos del archivo de registro recién creado en un nuevo archivo de registro.
 
 
 ```C++
@@ -198,7 +198,7 @@ cleanup:
 
 
 
-En el ejemplo siguiente se muestra cómo combinar eventos de varios canales mediante una consulta XML estructurada. En el ejemplo se reemplaza el procedimiento Main del ejemplo anterior.
+En el ejemplo siguiente se muestra cómo combinar eventos de varios canales mediante una consulta XML estructurada. En el ejemplo se reemplaza el procedimiento principal del ejemplo anterior.
 
 
 ```C++
@@ -232,9 +232,9 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

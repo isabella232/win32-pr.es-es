@@ -1,9 +1,9 @@
 ---
-title: métodos idcompositionarithmeticcompositeeffect setcoefficient3 (Dcomp. h)
-description: Establece el tercer coeficiente para la ecuación utilizada para componer las dos imágenes de entrada.
+title: Métodos idcompositionarithmeticcompositeeffect setcoefficient3 (Dcomp.h)
+description: Establece el tercer coeficiente de la ecuación utilizada para componer las dos imágenes de entrada.
 ms.assetid: 1d330b4e-6ddd-2a9a-6a30-e459c9669c85
 keywords:
-- métodos setcoefficient3 DirectComposition
+- Métodos setcoefficient3 DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 74e1b607b5493529937bda928c1954955ce0dca1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 73a6e295295791988e675ff43893cd9b41da9c7045011ca169262beabe0d7d01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980335"
 ---
-# <a name="idcompositionarithmeticcompositeeffectsetcoefficient3-methods"></a>idcompositionarithmeticcompositeeffect:: setcoefficient3 (métodos)
+# <a name="idcompositionarithmeticcompositeeffectsetcoefficient3-methods"></a>Métodos idcompositionarithmeticcompositeeffect::setcoefficient3
 
-Establece el tercer coeficiente para la ecuación utilizada para componer las dos imágenes de entrada.
+Establece el tercer coeficiente de la ecuación utilizada para componer las dos imágenes de entrada.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Establece el tercer coeficiente para la ecuación utilizada para componer las do
 
 | Método                                                                                                          | Descripción                                                                                    |
 |:----------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
-| [**SetCoefficient3**](/windows/win32/api/dcomp/nf-dcomp-idcompositionarithmeticcompositeeffect-setcoefficient3(float))                               | Establece el tercer coeficiente para la ecuación utilizada para componer las dos imágenes de entrada.<br/> |
-| [**SetCoefficient3 (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionarithmeticcompositeeffect-setcoefficient3(idcompositionanimation)) | Establece el tercer coeficiente para la ecuación utilizada para componer las dos imágenes de entrada.<br/> |
+| [**SetCoefficient3**](/windows/win32/api/dcomp/nf-dcomp-idcompositionarithmeticcompositeeffect-setcoefficient3(float))                               | Establece el tercer coeficiente de la ecuación utilizada para componer las dos imágenes de entrada.<br/> |
+| [**SetCoefficient3 (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionarithmeticcompositeeffect-setcoefficient3(idcompositionanimation)) | Establece el tercer coeficiente de la ecuación utilizada para componer las dos imágenes de entrada.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Establece el tercer coeficiente para la ecuación utilizada para componer las do
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método ActiveBasicDevice SetCachedBitrateMeasurement (PlayToDevice. h)
+title: Método ActiveBasicDevice SetCachedBitrateMeasurement (PlayToDevice.h)
 description: Establece la velocidad de bits almacenada en caché.
 ms.assetid: 53530217-CFF7-4376-B155-E11044621E2D
 keywords:
-- Método SetCachedBitrateMeasurement API de streaming de multimedia
-- Método SetCachedBitrateMeasurement API de streaming de multimedia, interfaz ActiveBasicDevice
-- Interfaz ActiveBasicDevice API de streaming de multimedia, método SetCachedBitrateMeasurement
+- Método SetCachedBitrateMeasurement de Media Streaming API
+- Método SetCachedBitrateMeasurement Media Streaming API , interfaz ActiveBasicDevice
+- Interfaz ActiveBasicDevice Media Streaming API, método SetCachedBitrateMeasurement
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c681776b00eb9d911a4fa75a9d360b39a3d2b8c6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: adf79b7e9066aacfcce1f82c998463d6d620f5061fef4af788104a0c01a44ee8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952776"
 ---
-# <a name="activebasicdevicesetcachedbitratemeasurement-method"></a>ActiveBasicDevice:: SetCachedBitrateMeasurement (método)
+# <a name="activebasicdevicesetcachedbitratemeasurement-method"></a>Método ActiveBasicDevice::SetCachedBitrateMeasurement
 
 Establece la velocidad de bits almacenada en caché.
 
@@ -43,23 +43,23 @@ HRESULT SetCachedBitrateMeasurement(
 
 <dl> <dt>
 
-*physicalNetworkInterface* \[ de\]
+*physicalNetworkInterface* \[ En\]
 </dt> <dd>
 
 Especifica la interfaz de red física.
 
 </dd> <dt>
 
-*velocidad de bits* \[ de\]
+*velocidad de bits* \[ En\]
 </dt> <dd>
 
-Valor en el que se va a establecer la velocidad de bits.
+Valor en el que se establece la velocidad de bits.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,10 +67,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

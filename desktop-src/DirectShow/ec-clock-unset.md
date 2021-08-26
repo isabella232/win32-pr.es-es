@@ -1,19 +1,19 @@
 ---
-description: El proveedor del reloj estaba desconectado.
+description: El proveedor de reloj se desconectó.
 ms.assetid: 0a885b7a-840d-4112-85f7-ff6f2d87bb75
-title: EC_CLOCK_UNSET (DShow. h)
+title: EC_CLOCK_UNSET (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85ead35d89eee94bbffb38a96f658ccb2bb6e6e4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd7bc9daecb9e39ca2d121c9fa903b2e4e8257e6247f28d718ca093b302cc2e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998225"
 ---
-# <a name="ec_clock_unset"></a>reloj de EC no \_ \_ establecido
+# <a name="ec_clock_unset"></a>EC \_ CLOCK \_ UNSET
 
-El proveedor del reloj estaba desconectado.
+El proveedor de reloj se desconectó.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,11 +35,11 @@ Cero.
 
 ## <a name="default-action"></a>Acción predeterminada
 
-El administrador de gráficos de filtro elige un nuevo reloj de referencia en el comando siguiente pausar o ejecutar. También reenvía el evento a la aplicación.
+El Administrador Graph filtros elige un nuevo reloj de referencia en el siguiente comando de pausa o ejecución. También reenvía el evento a la aplicación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-KSProxy señala este evento cuando el PIN de un filtro de suministro de reloj está desconectado.
+KSProxy señala este evento cuando se desconecta el pin de un filtro que proporciona reloj.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ KSProxy señala este evento cuando el PIN de un filtro de suministro de reloj es
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Estructura de aplicación auxiliar para administrar una tabla de constantes de sombreador. Esto también se puede hacer mediante ID3DXConstantTable.
+description: Estructura auxiliar para administrar una tabla constante de sombreador. Esto también se puede hacer mediante ID3DXConstantTable.
 ms.assetid: cc6d66e4-c600-420b-b7b5-1bd10ecb22f9
-title: D3DXSHADER_CONSTANTTABLE estructura (D3dx9shader. h)
+title: D3DXSHADER_CONSTANTTABLE estructura (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: ef4fe6cf9af924d9ae6c358f72bf49f93d85f29d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f423eba3187c6bbc5c17d4ba9284e4e1b2048a016b8a11744b83b46e4d8522af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027295"
 ---
-# <a name="d3dxshader_constanttable-structure"></a>D3DXSHADER \_ estructura CONSTANTTABLE
+# <a name="d3dxshader_constanttable-structure"></a>Estructura CONSTANTTABLE de D3DXSHADER \_
 
-Estructura de aplicación auxiliar para administrar una tabla de constantes de sombreador. Esto también se puede hacer mediante [**ID3DXConstantTable**](id3dxconstanttable.md).
+Estructura auxiliar para administrar una tabla constante de sombreador. Esto también se puede hacer mediante [**ID3DXConstantTable**](id3dxconstanttable.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -96,7 +96,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matriz de información constante, constantes de D3DXSHADER \_ CONSTANTINFO \[  \] . Vea [**D3DXSHADER \_ CONSTANTINFO**](d3dxshader-constantinfo.md).
+Matriz de información constante, constantes CONSTANTINFO de D3DXSHADER \_ \[  \] . Vea [**D3DXSHADER \_ CONSTANTINFO**](d3dxshader-constantinfo.md).
 
 </dd> <dt>
 
@@ -107,7 +107,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-[D3DXSHADER](d3dxshader-flags.md) marca las marcas que se usan para compilar el sombreador.
+Marcas [D3DXSHADER usadas](d3dxshader-flags.md) para compilar el sombreador.
 
 </dd> <dt>
 
@@ -122,11 +122,11 @@ Desplazamiento en la cadena que contiene el destino.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La información de constantes del sombreador se incluye en una tabla de comentarios delimitada por tabuladores. Todos los desplazamientos se miden en bytes desde el principio de la estructura. Las entradas de la tabla Constant se ordenan por creador en orden ascendente.
+La información constante del sombreador se incluye en una tabla de comentarios delimitada por tabulaciones. Todos los desplazamientos se miden en bytes desde el principio de la estructura . Las entradas de la tabla constante se ordenan por Creator en orden ascendente.
 
-Una tabla de constantes de sombreador se puede administrar con las interfaces [**ID3DXConstantTable**](id3dxconstanttable.md) . Como alternativa, puede administrar la tabla de constantes con **D3DXSHADER \_ CONSTANTTABLE**.
+Una tabla constante de sombreador se puede administrar con las interfaces [**ID3DXConstantTable.**](id3dxconstanttable.md) Como alternativa, puede administrar la tabla constante con **D3DXSHADER \_ CONSTANTTABLE**.
 
 Este miembro de tamaño se inicializa a menudo con lo siguiente:
 
@@ -144,7 +144,7 @@ constantTable.Size = sizeof(D3DXSHADER_CONSTANTTABLE)
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 
@@ -152,7 +152,7 @@ constantTable.Size = sizeof(D3DXSHADER_CONSTANTTABLE)
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> <dt>
 
 [**D3DXGetShaderConstantTable**](d3dxgetshaderconstanttable.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: SystemParameters. ProcessFriendlyName (propiedad)'
-title: Propiedad SystemParameters. ProcessFriendlyName
+description: 'Más información sobre: Propiedad SystemParameters.ProcessFriendlyName'
+title: Propiedad SystemParameters.ProcessFriendlyName
 TOCTitle: 'ProcessFriendlyName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.ProcessFriendlyName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.processfriendlyname(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 48384c916664bf3745c5440ca9996d56c95f392e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73dcd278f371397cc35644ec6ac7726d0fd5c999e1b5790f49387a13fabecc30
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015964"
 ---
-# <a name="systemparametersprocessfriendlyname-property"></a>Propiedad SystemParameters. ProcessFriendlyName
+# <a name="systemparametersprocessfriendlyname-property"></a>Propiedad SystemParameters.ProcessFriendlyName
 
-Obtiene o establece el nombre descriptivo para esta instancia del proceso.
+Obtiene o establece el nombre descriptivo de esta instancia del proceso.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -61,7 +61,7 @@ public static string ProcessFriendlyName { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -69,6 +69,6 @@ Tipo: [System. String](/dotnet/api/system.string)
 
 [SystemParameters (clase)](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

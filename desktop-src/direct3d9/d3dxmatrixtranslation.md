@@ -1,7 +1,7 @@
 ---
-description: Compila una matriz usando los desplazamientos especificados.
+description: Compila una matriz con los desplazamientos especificados.
 ms.assetid: 1cb713d5-b994-4496-a506-89451be09fb2
-title: Función D3DXMatrixTranslation (D3dx9math. h)
+title: Función D3DXMatrixTranslation (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9c74d56eaa0e41bc6ce9060ff291885a8a5c05a5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6aaa14bbd2f82be7ac87857c05a863b6459440dcfdd383d2144fe1b4426019ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986525"
 ---
-# <a name="d3dxmatrixtranslation-function-d3dx9mathh"></a>Función D3DXMatrixTranslation (D3dx9math. h)
+# <a name="d3dxmatrixtranslation-function-d3dx9mathh"></a>Función D3DXMatrixTranslation (D3dx9math.h)
 
-Compila una matriz usando los desplazamientos especificados.
+Compila una matriz con los desplazamientos especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,32 +48,32 @@ D3DXMATRIX* D3DXMatrixTranslation(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a la estructura [**D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que es el resultado de la operación.
 
 </dd> <dt>
 
 *x* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Desplazamiento de la coordenada X.
+Desplazamiento de coordenada X.
 
 </dd> <dt>
 
 *y* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Desplazamiento de la coordenada Y.
+Desplazamiento de coordenadas Y.
 
 </dd> <dt>
 
-*z* \[ en\]
+*z* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Desplazamiento de la coordenada Z.
 
@@ -83,11 +83,11 @@ Desplazamiento de la coordenada Z.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una estructura [**D3DXMATRIX**](d3dxmatrix.md) que contiene una matriz de transformación traducida.
+Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que contiene una matriz de transformación traducida.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, D3DXMATRIXTranslation se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, D3DXMATRIXTranslation se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

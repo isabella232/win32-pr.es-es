@@ -1,15 +1,15 @@
 ---
-description: La propiedad CurrentTime recupera la hora de reproducción actual.
+description: La propiedad CurrentTime recupera el tiempo de reproducción actual.
 ms.assetid: 94f94eb1-49fa-4b8c-95a6-da307b0abd62
 title: Propiedad CurrentTime
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95fa779eb6f4999fa6e093e1a07d07171c7920fa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7d49db59d7b53bff217a31da4ef0bf20548e99ca2fecc6dc277bc5217f1e2340
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998835"
 ---
 # <a name="currenttime-property"></a>Propiedad CurrentTime
 
@@ -18,7 +18,7 @@ ms.locfileid: "105677056"
 
  
 
-La `CurrentTime` propiedad recupera la hora de reproducción actual.
+La `CurrentTime` propiedad recupera el tiempo de reproducción actual.
 
 ``` syntax
 [ sCurTime = ] MSWebDVD.CurrentTime
@@ -26,11 +26,11 @@ La `CurrentTime` propiedad recupera la hora de reproducción actual.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve una **cadena** de 11 caracteres que representa la hora de reproducción actual en el formato "*HH: mm: SS: FF*" (horas, minutos, segundos y fotogramas).
+Devuelve una cadena de  11 caracteres que representa el tiempo de reproducción actual con el formato "*hh:mm:ss:ff*" (horas, minutos, segundos, fotogramas).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de solo lectura y no tiene ningún valor predeterminado.
+Esta propiedad es de solo lectura sin ningún valor predeterminado.
 
 ## <a name="see-also"></a>Vea también
 

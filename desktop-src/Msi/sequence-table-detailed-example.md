@@ -4,12 +4,12 @@ ms.assetid: 25b3667a-1478-48c4-9c41-4defd25a0103
 title: Ejemplo detallado de tabla de secuencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4698d5270f2f246fe6e676799ea239e47a950c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6bc6e9715850d05231080cd8cd832ac7f39c1e3044628bb307afb51bf92c2210
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040195"
 ---
 # <a name="sequence-table-detailed-example"></a>Ejemplo detallado de tabla de secuencias
 
@@ -21,14 +21,14 @@ Este es un ejemplo de una tabla de secuencia.
 |-------------------------------------------------|-----------------------------------------------------------------|----------|
 | [LaunchConditions](launchconditions-action.md) |                                                                 |          |
 | [AppSearch](appsearch-action.md)               |                                                                 | 200      |
-| [CCPSearch](ccpsearch-action.md)               | prueba de CCP \_                                                       | 300      |
-| CCPDialog                                       | NO se ha \_ ejecutado el CCP \_                                               | 400      |
+| [CCPSearch](ccpsearch-action.md)               | PRUEBA \_ DE CCP                                                       | 300      |
+| CCPDialog                                       | NOT \_ CCP \_ SUCCESS                                               | 400      |
 | MyCustomConfig                                  | NO [ **instalado**](installed.md)                              | 500      |
 | [CostInitialize](costinitialize-action.md)     |                                                                 | 600      |
 | [FileCost](filecost-action.md)                 |                                                                 | 700      |
 | [CostFinalize](costfinalize-action.md)         |                                                                 | 800      |
 | InstallDialog                                   | NO [ **instalado**](installed.md)                              | 900      |
-| MaintenanceDialog                               | [**Instalado**](installed.md) Y no [ **reanudar**](resume.md) | 1000     |
+| MaintenanceDialog                               | [**Instalado**](installed.md) AND NOT [ **Resume**](resume.md) | 1000     |
 | ActionDialog                                    |                                                                 | 1100     |
 | [RegisterProduct](registerproduct-action.md)   |                                                                 | 1200     |
 | [InstallValidate](installvalidate-action.md)   |                                                                 | 1300     |
@@ -40,7 +40,7 @@ Este es un ejemplo de una tabla de secuencia.
 
  
 
-Las siguientes acciones de esta tabla de secuencia las define el instalador y son ejemplos de acciones estándar:
+El instalador define las siguientes acciones de esta tabla de secuencias y son ejemplos de acciones estándar:
 
 [LaunchConditions](launchconditions-action.md)
 
@@ -80,7 +80,7 @@ Las siguientes acciones de esta tabla de secuencia las define el instalador y so
 
 [InstallValidate](installvalidate-action.md)
 
-Las siguientes acciones fueron definidas por el autor de la tabla y son ejemplos de [acciones personalizadas](custom-actions.md) y deben aparecer en la [tabla CustomAction](customaction-table.md):
+El autor de la tabla definió las siguientes [](custom-actions.md) acciones y son ejemplos de acciones personalizadas y deben aparecer en la [tabla CustomAction](customaction-table.md):
 
 MyCustomConfig
 
@@ -88,7 +88,7 @@ MyCustomConfig
 
 MyCustomAction
 
-Las entradas restantes en el campo acción son claves externas en la [tabla del cuadro de diálogo](dialog-table.md). Especifican los nombres de los cuadros de diálogo que se mostrarán si el campo condition se evalúa como true.
+Las entradas restantes del campo Acción son claves externas en la tabla [Dialog](dialog-table.md). Especifican los nombres de los cuadros de diálogo que se mostrarán si el campo de condición se evalúa como True.
 
 CCPDialog
 
@@ -104,14 +104,14 @@ MaintenanceDialog
 
 ActionDialog
 
-La columna condición hace que el instalador omita la acción si la propiedad o expresión de este campo es false. La propiedad [**installed**](installed.md) y la propiedad [**resume**](resume.md) son ejemplos de propiedades que se establecen mediante el instalador. La propiedad [**installed**](installed.md) se establece en true si el producto ya está instalado y se establece la propiedad [**resume**](resume.md) si se reanuda una instalación suspendida. Las \_ propiedades CCP test y not \_ CCP \_ Success son ejemplos de propiedades que el usuario puede establecer en la línea de comandos mediante la instalación de la aplicación.
+La columna Condición hace que el instalador omita la acción si la propiedad o expresión de este campo es False. Las [**propiedades Installed**](installed.md) y [**RESUME**](resume.md) son ejemplos de propiedades establecidas por el instalador. La [**propiedad Installed**](installed.md) se establece en true si el producto ya está instalado y la propiedad [**RESUME**](resume.md) se establece si se reanuda una instalación suspendida. Las propiedades CCP TEST y NOT CCP SUCCESS son ejemplos de propiedades que el usuario que instala la aplicación puede establecer en la línea \_ \_ de \_ comandos.
 
 Todas las acciones se ejecutan en secuencia con los siguientes pasos condicionales:
 
--   CPPSearch se ejecuta solo si \_ se establece la prueba de CCP.
--   CCPDialog se ejecuta solo si \_ se ha \_ establecido no se ha realizado correctamente.
--   MaintenanceDialog se ejecuta solo si este producto ya está instalado y si no se trata de una instalación que se está reanudando después de suspenderse.
--   MyCustomAction se ejecuta solo si la expresión de la columna Condition es true. La expresión $MyComponent > 2 hace referencia al estado de acción del componente denominado mi componente. Esta condición indica que MyCustomAction solo debe ejecutarse si se ha establecido que el componente está instalado. Para obtener más información sobre los Estados de acción y los Estados de selección, vea la propiedad [**FeatureRequestState**](session-featurerequeststate.md) , la [tabla de características](feature-table.md)y la [acción InstallFiles](installfiles-action.md).
+-   CPPSearch solo se ejecuta si se establece CCP \_ TEST.
+-   CCPDialog solo se ejecuta si se establece NOT \_ CCP \_ SUCCESS.
+-   MaintenanceDialog solo se ejecuta si este producto ya está instalado y si no se trata de una instalación que se está reanudando después de suspenderse.
+-   MyCustomAction solo se ejecuta si la expresión de la columna Condición es True. La expresión $MyComponent > 2 hace referencia al estado de acción del componente denominado MyComponent. Esta condición indica que MyCustomAction solo se debe ejecutar si MyComponent está establecido para instalarse. Para obtener más información sobre los estados de acción y los estados de selección, vea la propiedad [**FeatureRequestState,**](session-featurerequeststate.md) [la tabla Feature](feature-table.md)y la acción [InstallFiles](installfiles-action.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -120,7 +120,7 @@ Todas las acciones se ejecutan en secuencia con los siguientes pasos condicional
 [Utilizar propiedades](using-properties.md)
 </dt> <dt>
 
-[Sintaxis de la instrucción condicional](conditional-statement-syntax.md)
+[Sintaxis de instrucciones condicionales](conditional-statement-syntax.md)
 </dt> </dl>
 
  

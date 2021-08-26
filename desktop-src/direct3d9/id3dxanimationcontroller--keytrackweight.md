@@ -1,7 +1,7 @@
 ---
-description: Establece una clave de evento que cambia el peso de una pista de animación. El peso se utiliza como multiplicador al combinar varias pistas.
+description: Establece una clave de evento que cambia el peso de una pista de animación. El peso se usa como multiplicador al combinar varias pistas.
 ms.assetid: fb2859de-9e77-49dd-be48-a50e22e2fc3a
-title: 'ID3DXAnimationController:: KeyTrackWeight (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::KeyTrackWeight (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 74f5e38392f6b4ac192f02b9d85421c8357a16ee
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 16bd95c675486b17f3071a279a01916e3db557c598830282f4d5b288dbc1f0fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026635"
 ---
-# <a name="id3dxanimationcontrollerkeytrackweight-method"></a>ID3DXAnimationController:: KeyTrackWeight (método)
+# <a name="id3dxanimationcontrollerkeytrackweight-method"></a>Método ID3DXAnimationController::KeyTrackWeight
 
-Establece una clave de evento que cambia el peso de una pista de animación. El peso se utiliza como multiplicador al combinar varias pistas.
+Establece una clave de evento que cambia el peso de una pista de animación. El peso se usa como multiplicador al combinar varias pistas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,48 +44,48 @@ D3DXEVENTHANDLE KeyTrackWeight(
 
 <dl> <dt>
 
-*Seguimiento* \[ de de\]
+*Seguimiento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Identificador de la pista que se va a modificar.
+Identificador de la pista que se modificará.
 
 </dd> <dt>
 
-*NewWeight* \[ de\]
+*NewWeight* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Nuevo peso de la pista.
 
 </dd> <dt>
 
-*StartTime* \[ de\]
+*StartTime* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Clave de tiempo global. Especifica la hora global a la que se llevará a cabo el cambio.
+Clave de hora global. Especifica la hora global en la que se llevará a cabo el cambio.
 
 </dd> <dt>
 
-*Duración* \[ de de\]
+*Duración* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Tiempo de transición, que especifica cuánto tiempo tardará la transición suave en completarse.
+Tiempo de transición, que especifica cuánto tiempo se tardará en completarse la transición sin problemas.
 
 </dd> <dt>
 
-*Transición* \[ de\]
+*Transición* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **D3DXTRANSITION \_ Type**](./d3dxtransition-type.md)**
+Tipo: **[ **D3DXTRANSITION \_ TYPE**](./d3dxtransition-type.md)**
 
-Especifica el tipo de transición que se usa para realizar la transición entre pesos. Consulte [**\_ tipo de D3DXTRANSITION**](./d3dxtransition-type.md).
+Especifica el tipo de transición utilizado para la transición entre pesos. Vea [**D3DXTRANSITION \_ TYPE**](./d3dxtransition-type.md).
 
 </dd> </dl>
 
@@ -93,9 +93,9 @@ Especifica el tipo de transición que se usa para realizar la transición entre 
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Identificador de evento para el evento de mezcla de prioridad. Se devuelve **null** si uno o varios de los parámetros de entrada no son válidos o no hay ningún evento libre disponible.
+Identificador de evento para el evento de combinación de prioridad. **Se** devuelve NULL si uno o varios de los parámetros de entrada no son válidos o no hay ningún evento gratuito disponible.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El peso se usa como un multiplicador para determinar la cantidad de esta pista que se va a combinar con otras pistas.
 
@@ -105,8 +105,8 @@ El peso se usa como un multiplicador para determinar la cantidad de esta pista q
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

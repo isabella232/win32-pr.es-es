@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f218a0cd1a0e1858f24ec8cbccb4848c37121086
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ca3a3a8960367960aca6ebd99bd12d3525fb89d5f0883a11a564595a9bc6d3ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951865"
 ---
 # <a name="id3dxconstanttablesetint-method"></a>Método ID3DXConstantTable::SetInt
 
@@ -56,7 +56,7 @@ Puntero a una [**interfaz IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la constante. Vea [D3DXHANDLE](dx9-graphics-reference-effects-constants.md).
+Identificador único de la constante. Vea [D3DXHANDLE.](dx9-graphics-reference-effects-constants.md)
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Entero.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
