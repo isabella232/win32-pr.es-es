@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec3ProjectArray (D3DX10Math.h): proyecta una matriz (x, y, z, 0) desde el espacio del objeto al espacio de pantalla.'
+description: 'Función D3DXVec3ProjectArray (D3DX10Math.h): proyecta una matriz (x, y, z, 0) desde el espacio del objeto en el espacio de la pantalla.'
 ms.assetid: 33f0f65a-c027-4a31-83a7-f5f6b2a2f72f
 title: Función D3DXVec3ProjectArray (D3DX10Math.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 1f69eb14cf2cf5fd77092ed6881e16524d8428c5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 660d48219c3d93e9b3188926dd6f5bc2ddf9db45a9310b3bf8716cb2e960e895
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989625"
 ---
 # <a name="d3dxvec3projectarray-function-d3dx10mathh"></a>Función D3DXVec3ProjectArray (D3DX10Math.h)
 
-Proyecta una matriz (x, y, z, 0) desde el espacio del objeto al espacio de pantalla.
+Proyecta una matriz (x, y, z, 0) desde el espacio del objeto en el espacio de la pantalla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ D3DXVECTOR3* D3DXVec3ProjectArray(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
+Puntero a [**D3DXVECTOR3 que**](d3d10-d3dxvector3.md) es el resultado de la operación.
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la oper
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pasos entre vectores en el flujo de datos de salida.
+Paso entre vectores en el flujo de datos de salida.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Puntero a la estructura D3DXVECTOR3 de origen.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pasos entre vectores en el flujo de datos de entrada.
+Paso entre vectores en el flujo de datos de entrada.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Puntero a una estructura D3DXVECTOR3 que es la matriz proyectada desde el espaci
 
 ## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXVec3ProjectArray se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXVec3ProjectArray se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -148,7 +148,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

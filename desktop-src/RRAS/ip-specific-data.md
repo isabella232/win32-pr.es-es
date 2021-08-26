@@ -1,10 +1,10 @@
 ---
-title: Estructura de IP_SPECIFIC_DATA (RTM. h)
-description: La \_ estructura de datos específica de IP contiene datos específicos de IP.
+title: IP_SPECIFIC_DATA estructura (Rtm.h)
+description: La estructura \_ IP SPECIFIC DATA contiene datos específicos de IP.
 ms.assetid: 68f2f4cc-141b-4f22-94ac-cc72e8dcca0a
 keywords:
-- IP_SPECIFIC_DATA de la estructura RAS
-- PIP_SPECIFIC_DATA de puntero de estructura RAS
+- IP_SPECIFIC_DATA ras de estructura
+- PIP_SPECIFIC_DATA de estructura ras
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a3ed319f7cf42295bf918ed3ec67f5d59fe5d80
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 906ae9f2accb3d380227f08ad6b65642b96ce6bfa928591bd11a69c478f531b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036675"
 ---
-# <a name="ip_specific_data-structure"></a>\_Estructura de datos específica de IP \_
+# <a name="ip_specific_data-structure"></a>Estructura \_ DE DATOS \_ ESPECÍFICOS DE IP
 
-\[Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API del administrador de tabla de enrutamiento versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La estructura de **\_ datos específica de IP** contiene datos específicos de IP.
+La **estructura IP SPECIFIC \_ DATA** contiene datos específicos de IP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,17 +53,17 @@ typedef struct _IP_SPECIFIC_DATA {
 
 <dl> <dt>
 
-**\_Tipo FSD**
+**Tipo \_ FSD**
 </dt> <dd>
 
-Especifica el tipo de ruta tal y como se define en [RFC 1354](routing-protocols-request-for-comments.md). En la tabla siguiente se muestran los valores posibles para este miembro.
+Especifica el tipo de ruta tal como se define en [RFC 1354.](routing-protocols-request-for-comments.md) En la tabla siguiente se muestran los valores posibles para este miembro.
 
 
 
 | Miembro                                                                                               | Significado                                                                                                                                                                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | No se ha especificado el tipo de ruta. El tipo es diferente del que se muestra aquí.<br/>                                                                                                                                                                                         |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | La ruta no es válida. Normalmente, este valor se usa para invalidar una ruta. Sin embargo, dado que el administrador de tablas de enrutamiento no admite la invalidación, la ruta se sigue considerando en los cálculos de la mejor ruta. Por lo tanto, los protocolos de enrutamiento no deben usar este valor.<br/> |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | No se especifica el tipo de ruta. El tipo es diferente de los que se enumeran aquí.<br/>                                                                                                                                                                                         |
+| <span id="2"></span><dl> <dt>**2**</dt> </dl> | La ruta no es válida. Normalmente, este valor se usa para invalidar una ruta. Sin embargo, dado que el administrador de tablas de enrutamiento no admite la invalidación, la ruta se sigue teniendo en cuenta en los cálculos de mejor ruta. Por lo tanto, los protocolos de enrutamiento no deben usar este valor.<br/> |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | La ruta es una ruta local, es decir, el próximo salto es el destino final.<br/>                                                                                                                                                                                            |
 | <span id="4"></span><dl> <dt>**4**</dt> </dl> | La ruta es una ruta remota, es decir, el próximo salto no es el destino final.<br/>                                                                                                                                                                                       |
 
@@ -73,14 +73,14 @@ Especifica el tipo de ruta tal y como se define en [RFC 1354](routing-protocols-
 
 </dd> <dt>
 
-**\_Directiva FSD**
+**Directiva de \_ FSD**
 </dt> <dd>
 
-Especifica el conjunto de condiciones que daría lugar a la selección de una ruta de múltiples rutas. Este miembro está normalmente en formato TOS de IP. Para obtener más información, consulte [RFC 1354](routing-protocols-request-for-comments.md).
+Especifica el conjunto de condiciones que provocarían la selección de una ruta de varias rutas de acceso. Este miembro suele estar en formato IP TOS. Para obtener más información, [vea RFC 1354](routing-protocols-request-for-comments.md).
 
 </dd> <dt>
 
-**FSD \_ NextHopAS**
+**NextHopAS de FSD \_**
 </dt> <dd>
 
 Especifica el número de sistema autónomo del próximo salto.
@@ -90,68 +90,68 @@ Especifica el número de sistema autónomo del próximo salto.
 **Prioridad de FSD \_**
 </dt> <dd>
 
-Especifica un valor de métrica. El administrador de tablas de enrutamiento usa este valor para comparar esta entrada de ruta con las entradas de ruta obtenidas de otros protocolos de enrutamiento. El valor de este miembro se establece mediante el administrador de tablas de enrutamiento.
+Especifica un valor de métrica. El administrador de tablas de enrutamiento usa este valor para comparar esta entrada de ruta con las entradas de ruta obtenidas de otros protocolos de enrutamiento. El valor de este miembro lo establece el administrador de tablas de enrutamiento.
 
 </dd> <dt>
 
-**Métrica de FSD \_**
+**Métrica de \_ FSD**
 </dt> <dd>
 
-Especifica un valor de métrica. El administrador de tablas de enrutamiento usa este valor para comparar esta entrada de ruta con otras entradas de ruta obtenidas del mismo protocolo de enrutamiento. El valor de este miembro se establece mediante el protocolo de enrutamiento.
+Especifica un valor de métrica. El administrador de tablas de enrutamiento usa este valor para comparar esta entrada de ruta con otras entradas de ruta obtenidas del mismo protocolo de enrutamiento. El valor de este miembro lo establece el protocolo de enrutamiento.
 
 </dd> <dt>
 
-**FSD \_ Metric1**
+**Métrica \_ FSD1**
 </dt> <dd>
 
-Especifica un valor de métrica específico del Protocolo de enrutamiento. Este valor de métrica se documenta en [RFC 1354](routing-protocols-request-for-comments.md).
+Especifica un valor de métrica específico del protocolo de enrutamiento. Este valor de métrica se documenta en [RFC 1354.](routing-protocols-request-for-comments.md)
 
 </dd> <dt>
 
-**FSD \_ métrica2**
+**Métrica \_ FSD2**
 </dt> <dd>
 
-Especifica un valor de métrica específico del Protocolo de enrutamiento. Este valor de métrica se documenta en [RFC 1354](routing-protocols-request-for-comments.md).
+Especifica un valor de métrica específico del protocolo de enrutamiento. Este valor de métrica se documenta en [RFC 1354.](routing-protocols-request-for-comments.md)
 
 </dd> <dt>
 
-**FSD \_ Metric3**
+**Métrica \_ FSD3**
 </dt> <dd>
 
-Especifica un valor de métrica específico del Protocolo de enrutamiento. Este valor de métrica se documenta en [RFC 1354](routing-protocols-request-for-comments.md).
+Especifica un valor de métrica específico del protocolo de enrutamiento. Este valor de métrica se documenta en [RFC 1354.](routing-protocols-request-for-comments.md)
 
 </dd> <dt>
 
-**FSD \_ Metric4**
+**Métrica \_ FSD4**
 </dt> <dd>
 
-Especifica un valor de métrica específico del Protocolo de enrutamiento. Este valor de métrica se documenta en [RFC 1354](routing-protocols-request-for-comments.md).
+Especifica un valor de métrica específico del protocolo de enrutamiento. Este valor de métrica se documenta en [RFC 1354.](routing-protocols-request-for-comments.md)
 
 </dd> <dt>
 
-**FSD \_ Metric5**
+**Métrica \_ FSD5**
 </dt> <dd>
 
-Especifica un valor de métrica específico del Protocolo de enrutamiento. Este valor de métrica se documenta en [RFC 1354](routing-protocols-request-for-comments.md).
+Especifica un valor de métrica específico del protocolo de enrutamiento. Este valor de métrica se documenta en [RFC 1354.](routing-protocols-request-for-comments.md)
 
 </dd> <dt>
 
-**Marcas de FSD \_**
+**Marcas \_ FSD**
 </dt> <dd>
 
-Especifica si la ruta es válida. El protocolo de enrutamiento debe borrar primero estas marcas y, a continuación, establecer la ruta como válida o no válida. El protocolo de enrutamiento debe usar las macros **ClearRouteFlags ()**, **SetRouteValid ()** y **ClearRouteValid ()** para realizar estas operaciones. Estas macros se definen en RTM. h.
+Especifica si la ruta es válida. El protocolo de enrutamiento debe borrar primero estas marcas y, a continuación, establecer la ruta como válida o no válida. El protocolo de enrutamiento debe usar las macros **ClearRouteFlags(),** **SetRouteValid() y** **ClearRouteValid()** para realizar estas operaciones. Estas macros se definen en Rtm.h.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El administrador de tablas de enrutamiento usa los miembros **FSD \_ Priority** y **FSD \_ Metric** para calcular la mejor ruta a una red de destino determinada.
+El administrador de tablas de enrutamiento usa los **miembros prioridad FSD \_** y métrica **FSD \_** para calcular la mejor ruta a una red de destino determinada.
 
-Los **miembros \_ \[ 1-5 \]** de la métrica de FSD son para la conformidad con la MIB II. Los agentes MIB II solo muestran estos valores de métrica. No muestran el valor de **métrica \_ FSD** . Para que se muestre la **\_ métrica FSD** , el protocolo de enrutamiento también debe almacenar el valor en uno de los miembros **FSD \_ Metric \[ 1-5 \]** .
+Los **miembros de la métrica FSD \_ \[ 1-5 \]** son para la conformidad de MIB II. Los agentes de MIB II solo muestran estos valores de métrica. No muestran el valor de métrica **de métrica de FSD. \_** Para que se muestre la métrica **FSD, \_** el protocolo de enrutamiento también debe almacenar el valor en uno de los miembros de la métrica **\_ FSD \[ 1-5. \]**
 
-El administrador de tablas de enrutamiento no usa los valores de métricas de los miembros de la **métrica de FSD \_ \[ 1-5 \]** al calcular la mejor ruta a una red de destino. Por lo tanto, el protocolo de enrutamiento debe asegurarse de que el miembro de **\_ métrica FSD** tenga un valor de métrica adecuado.
+El administrador de tablas de enrutamiento no usa los valores de métrica en los miembros de la métrica **\_ \[ 1-5 \] de FSD** al calcular la mejor ruta a una red de destino. Por lo tanto, el protocolo de enrutamiento debe asegurarse de que el **miembro métrica \_ FSD** tiene un valor de métrica adecuado.
 
-Un protocolo de enrutamiento podría usar **las \_ marcas FSD** para marcar una ruta como no válida, si no se debe usar en otros protocolos de enrutamiento.
+Un protocolo de enrutamiento podría usar las marcas FSD para marcar una ruta como no válida, si otros **\_ protocolos** de enrutamiento no deben usar la ruta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -162,7 +162,7 @@ Un protocolo de enrutamiento podría usar **las \_ marcas FSD** para marcar una 
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
 
 
 
@@ -170,13 +170,13 @@ Un protocolo de enrutamiento podría usar **las \_ marcas FSD** para marcar una 
 
 <dl> <dt>
 
-[Referencia de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Estructuras de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)
+[Estructuras de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)
 </dt> <dt>
 
-[**\_ruta IP de RTM \_**](rtm-ip-route.md)
+[**RTM \_ IP \_ ROUTE**](rtm-ip-route.md)
 </dt> </dl>
 
  

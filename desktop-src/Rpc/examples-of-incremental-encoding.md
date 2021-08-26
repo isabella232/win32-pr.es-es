@@ -1,21 +1,21 @@
 ---
 title: Ejemplos de codificación incremental
-description: En la sección siguiente se proporciona un ejemplo de cómo usar el controlador de serialización de estilo incremental para la codificación de tipos.
+description: En la sección siguiente se proporciona un ejemplo de cómo usar el identificador de serialización de estilo incremental para la codificación de tipos.
 ms.assetid: c50c0de3-aabb-4166-93dc-67b0fee66635
 keywords:
-- RPC llamada a procedimiento remoto, tareas, uso de la codificación incremental
+- Llamada a procedimiento remoto RPC, tareas, mediante codificación incremental
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16c9cb61e6b2bf55b29fb02e39f41dd7a61c8317
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 09d80b7f9b8ddb2acf31626da581996a667a7d2f7a395d419ea8da4c36c60d40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021417"
 ---
 # <a name="examples-of-incremental-encoding"></a>Ejemplos de codificación incremental
 
-En la sección siguiente se proporciona un ejemplo de cómo usar el controlador de serialización de estilo incremental para la codificación de tipos.
+En la sección siguiente se proporciona un ejemplo de cómo usar el identificador de serialización de estilo incremental para la codificación de tipos.
 
 ``` syntax
 /* This is an acf file. MooType is defined in the idl file */
@@ -28,7 +28,7 @@ typedef [ encode,decode ] MooType;
 }
 ```
 
-El siguiente fragmento representa los fragmentos de aplicación pertinentes.
+El fragmento siguiente representa los fragmentos de aplicación pertinentes.
 
 
 ```C++
@@ -68,9 +68,9 @@ MesHandleFree ( Handle );
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,23 +1,23 @@
 ---
 title: Clases MOF de WinSAT
 ms.assetid: be4520ca-a2d4-4b75-b74c-f03096e9e185
-description: 'Más información acerca de: clases MOF de WinSAT'
+description: 'Más información sobre: Clases MOF de WinSAT'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc149ce783e68c0c6bc645002dd9162d860ad9e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21fcf03efdc116800d67b4553b27d6bb5320ff4a715d11c07937eee55d8804d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997045"
 ---
 # <a name="winsat-mof-classes"></a>Clases MOF de WinSAT
 
-\[Es posible que las clases MOF de WinSAT se modifiquen o no estén disponibles para las versiones después de Windows 8.1.\]
+\[Las clases MOF de WinSAT pueden modificarse o no estar disponibles para las versiones después de Windows 8.1.\]
 
-La herramienta de evaluación del sistema de Windows (WinSAT) define la siguiente clase de Instrumental de administración de Windows (WMI) Managed Object Format (MOF), que existe en el \\ \\ espacio de nombres root cimv2:
+La Windows System Assessment Tool (WinSAT) define la siguiente clase Managed Object Format (MOF) de instrumental de administración de Windows (WMI), que existe en el espacio de nombres \\ \\ cimv2 raíz:
 
--   [**WinSAT de Win32 \_**](win32-winsat.md)
+-   [**Win32 \_ WinSAT**](win32-winsat.md)
 
 Puede usar esta clase para recuperar información de resumen sobre la evaluación formal más reciente.
 

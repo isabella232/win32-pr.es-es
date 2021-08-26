@@ -1,20 +1,20 @@
 ---
 title: Directrices para varios usuarios
-description: Directrices para desarrollar aplicaciones para varios usuarios en un entorno de Servicios de Escritorio remoto.
+description: Directrices para desarrollar aplicaciones para varios usuarios en Servicios de Escritorio remoto entorno.
 ms.assetid: c7acbedb-3bf2-4519-ab11-a50bf071e757
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a06db01da6d9413684e3197aa9758d6e5c04643f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5bc598042530ab59c0c8932522185ce5a9d0d3dce04cabce44239c3c81b79d59
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988855"
 ---
 # <a name="multiple-user-guidelines"></a>Directrices para varios usuarios
 
-En las secciones siguientes se proporcionan instrucciones para desarrollar aplicaciones para varios usuarios en un entorno de Servicios de Escritorio remoto.
+En las secciones siguientes se proporcionan instrucciones para desarrollar aplicaciones para varios usuarios en Servicios de Escritorio remoto entorno.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,21 +23,21 @@ En las secciones siguientes se proporcionan instrucciones para desarrollar aplic
 [Configuración de la aplicación](application-setup-in-a-terminal-services-environment.md)
 </dt> <dd>
 
-La instalación de una aplicación para un solo usuario puede crear problemas en un entorno de Servicios de Escritorio remoto multiusuario.
+La instalación de una aplicación para un solo usuario puede crear problemas en un entorno multiusuario Servicios de Escritorio remoto usuario.
 
 </dd> <dt>
 
-[Almacenar información específica del usuario](storing-user-specific-information.md)
+[Almacenamiento de información específica del usuario](storing-user-specific-information.md)
 </dt> <dd>
 
 Las aplicaciones deben almacenar información específica del usuario en ubicaciones específicas del usuario, aparte de la información global que se aplica a todos los usuarios.
 
 </dd> <dt>
 
-[Espacios de nombres de objetos de kernel](kernel-object-namespaces.md)
+[Espacios de nombres de objeto kernel](kernel-object-namespaces.md)
 </dt> <dd>
 
-Servicios de Escritorio remoto utiliza varios espacios de nombres para los objetos de kernel; un espacio de nombres global se usa principalmente en los servicios de las aplicaciones cliente/servidor.
+Servicios de Escritorio remoto varios espacios de nombres para objetos de kernel; un espacio de nombres global lo usan principalmente los servicios en aplicaciones cliente/servidor.
 
 </dd> <dt>
 
@@ -48,13 +48,13 @@ No es seguro suponer que el nombre del equipo o la dirección IP que se asignen 
 
 </dd> </dl>
 
-Como siempre, bloquee los archivos y las bases de datos mientras realiza cambios para evitar la pérdida accidental de datos.
+Como siempre, bloquee archivos y bases de datos mientras realiza cambios para evitar la pérdida involuntaria de datos.
 
-La aplicación no debe bloquear ningún archivo de aplicación en tiempo de ejecución que no sea un archivo por usuario. Los archivos de tiempo de ejecución bloqueados pueden mantener varias instancias de la aplicación o los procesos de la aplicación, como los asistentes, no se ejecutan. Una buena manera de comprobar qué archivos son los archivos de aplicación en tiempo de ejecución es realizar un seguimiento de los archivos que instala el programa de instalación de la aplicación. Los archivos por usuario rara vez se instalan con el programa de instalación; por lo tanto, la mayoría de los archivos instalados por el programa de instalación son archivos de aplicación en tiempo de ejecución.
+La aplicación no debe bloquear los archivos de aplicación en tiempo de ejecución que no sean archivos por usuario. Los archivos en tiempo de ejecución bloqueados pueden evitar que se ejecuten varias instancias de la aplicación o procesos de la aplicación, como asistentes. Una buena manera de probar qué archivos son archivos de aplicación en tiempo de ejecución es realizar un seguimiento de los archivos que instala el programa de instalación de la aplicación. Los archivos por usuario rara vez se instalan mediante el programa de instalación; por lo tanto, la mayoría de los archivos instalados por el programa de instalación son archivos de aplicación en tiempo de ejecución.
 
- 
+ 
 
- 
+ 
 
 
 

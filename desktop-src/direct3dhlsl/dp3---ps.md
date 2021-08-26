@@ -1,6 +1,6 @@
 ---
-title: DP3-PS
-description: Calcula el producto de tres componentes de los registros de origen. | DP3-PS
+title: 'dp3: ps'
+description: 'Calcula el producto de puntos de tres componentes de los registros de origen. | dp3: ps'
 ms.assetid: a365acd1-89c0-4340-8f51-8e478f84ddc0
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,39 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 09e4178f6aedbfb5242f4c545d624f1d07796008
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 49e957078832f11885ea82baf8438d712394133eb77ad8eeaba705ff0d32a9d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024635"
 ---
-# <a name="dp3---ps"></a>DP3-PS
+# <a name="dp3---ps"></a>dp3: ps
 
-Calcula el producto de tres componentes de los registros de origen.
+Calcula el producto de puntos de tres componentes de los registros de origen.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| DP3 DST, src0, SRC1 |
+| dp3 dst, src0, src1 |
 |---------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | dp3                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ Calcula el producto de tres componentes de los registros de origen.
 
  
 
-En el fragmento de código siguiente se muestran las operaciones realizadas:
+El fragmento de código siguiente muestra las operaciones realizadas:
 
 
 ```
@@ -59,9 +59,9 @@ dest.x = dest.y = dest.z = dest.w =
 
 
 
-Esta instrucción se ejecuta en la canalización de vectores, escribiendo siempre en los canales de color. En el caso de \_ la versión 4, esta instrucción todavía utiliza la canalización de vectores, pero puede escribir en cualquier canal.
+Esta instrucción se ejecuta en la canalización de vectores, escribiendo siempre en los canales de color. Para la versión 1 \_ 4, esta instrucción todavía usa la canalización de vectores, pero puede escribir en cualquier canal.
 
-Una instrucción con una máscara de escritura de Register. RGB (. XYZ) de destino puede coexistir con DP3, como se muestra a continuación.
+Se puede emitir una instrucción con una máscara de escritura .rgb (.xyz) de registro de destino con dp3 como se muestra a continuación.
 
 
 ```
@@ -71,7 +71,7 @@ dp3 r0.rgb, t0, v0            // Copy scalar result to color components
 
 
 
-La instrucción DP3 se puede modificar mediante el uso del modificador de argumento de entrada de [ajuste de escala firmado del registro de origen](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md) ( \_ BX2) aplicado a sus argumentos de entrada si aún no se han expandido al intervalo dinámico con firma. En el caso de un sombreador de iluminación, el modificador de instrucciones saturadas ( \_ SAT) suele usarse para fijar los valores negativos a negro, como se muestra en el ejemplo siguiente.
+La instrucción dp3 se puede modificar mediante el modificador de argumento de entrada Source [Register Signed Scaling](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md) (bx2) aplicado a sus argumentos de entrada si aún no se han expandido al intervalo dinámico \_ firmado. En el caso de un sombreador de iluminación, el modificador de instrucción saturada (sat) se usa a menudo para fijar los valores negativos en negro, como se muestra \_ en el ejemplo siguiente.
 
 
 ```

@@ -1,19 +1,19 @@
 ---
-description: Para dibujar un triángulo sombreado, defina una estructura de trivértices con tres elementos y una única estructura de triángulo de DEGRADAdo \_ .
+description: Para dibujar un triángulo sombreado, defina una estructura TRIVERTEX con tres elementos y una sola estructura GRADIENT \_ TRIANGLE.
 ms.assetid: 78834f92-00cb-4899-851a-1de5e3c1f4fa
-title: Dibujo de un triángulo sombreado
+title: Dibujar un triángulo sombreado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3200a1ec061d7513cbac56c8c66104154005cef9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1b6742f8ff6a3e2d543592e86cac87489048ca4d9748dc4e111cd4613b2f207
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062415"
 ---
-# <a name="drawing-a-shaded-triangle"></a>Dibujo de un triángulo sombreado
+# <a name="drawing-a-shaded-triangle"></a>Dibujar un triángulo sombreado
 
-Para dibujar un triángulo sombreado, defina una estructura de [**TRIvértices**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex) con tres elementos y una única estructura de [**\_ triángulo de degradado**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_triangle) . En el ejemplo de código siguiente se muestra cómo dibujar un triángulo sombreado mediante la función [**GradientFill**](/windows/desktop/api/WinGdi/nf-wingdi-gradientfill) con el modo triángulo de relleno de degradado \_ \_ definido.
+Para dibujar un triángulo sombreado, defina una [**estructura TRIVERTEX**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex) con tres elementos y una sola [**estructura GRADIENT \_ TRIANGLE.**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_triangle) En el ejemplo de código siguiente se muestra cómo dibujar un triángulo sombreado mediante la [**función GradientFill**](/windows/desktop/api/WinGdi/nf-wingdi-gradientfill) con el modo GRADIENT \_ FILL TRIANGLE \_ definido.
 
 
 ```C++
@@ -90,9 +90,9 @@ GradientFill(hdc, vertex, 3, &gTriangle, 1, GRADIENT_FILL_TRIANGLE);
 
 
 
-En la imagen siguiente se muestra el resultado del dibujo del ejemplo de código anterior.
+En la imagen siguiente se muestra la salida de dibujo del ejemplo de código anterior.
 
-![Ilustración en la que se muestra un triángulo que se rellena desde el naranja en el punto superior hasta el magenta en el borde inferior](images/gradientfilltriangle.png)
+![ilustración en la que se muestra un triángulo que se rellena de color naranja en el punto superior al triángulo en el borde inferior](images/gradientfilltriangle.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -110,13 +110,13 @@ En la imagen siguiente se muestra el resultado del dibujo del ejemplo de código
 [**EMRGRADIENTFILL**](/windows/win32/api/wingdi/ns-wingdi-emrgradientfill)
 </dt> <dt>
 
-[**triángulo de DEGRADAdo \_**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_triangle)
+[**TRIÁNGULO DE \_ DEGRADADO**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_triangle)
 </dt> <dt>
 
 [**GradientFill**](/windows/desktop/api/WinGdi/nf-wingdi-gradientfill)
 </dt> <dt>
 
-[**Trivértice**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex)
+[**TRIVERTEX**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex)
 </dt> </dl>
 
  

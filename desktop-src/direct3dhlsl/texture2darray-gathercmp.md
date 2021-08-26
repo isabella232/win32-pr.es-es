@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Texture2DArray:: Texture2DArray GatherCmp'
-description: Muestrea y compara un Texture2DArray y devuelve todos los componentes.
+title: Métodos de GatherCmp Texture2DArray::Texture2DArray
+description: Muestrea y compara un objeto Texture2DArray y devuelve todos los componentes.
 ms.assetid: 5b2892f0-be62-4fb2-978e-aabb8ae96e67
 keywords:
-- GatherCmp métodos HLSL
+- Métodos HLSL de GatherCmp
 topic_type:
 - apiref
 api_type:
@@ -12,18 +12,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 760c6313df2fb50ea821495d9f57933aef5bb0cc
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 3f2f67c430cf41b4fd45719140f2e3d4818a2326a95bb03a3bb2ae1f368e96e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104986179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022975"
 ---
-# <a name="texture2darraygathercmp-methods"></a>Texture2DArray:: GatherCmp (métodos)
+# <a name="texture2darraygathercmp-methods"></a>Métodos Texture2DArray::GatherCmp
 
-En el caso de cuatro valores de textura de una [**Texture2DArray**](sm5-object-texture2darray.md) que se utilizarían en una operación de filtrado bilineal, devuelve su comparación con un valor de comparación.
+Para cuatro valores de texel de [**texture2DArray**](sm5-object-texture2darray.md) que se usarían en una operación de filtrado bi linear, devuelve su comparación con un valor de comparación.
 
-Consulte la documentación sobre [gather4_c](./gather4-c--sm5---asm-.md) para obtener más información que describa la instrucción DXBC subyacente.
+Consulte la documentación [sobre](./gather4-c--sm5---asm-.md) gather4_c para obtener más información sobre la instrucción DXBC subyacente.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -31,8 +31,8 @@ Consulte la documentación sobre [gather4_c](./gather4-c--sm5---asm-.md) para ob
 
 | Método                                                                             | Descripción                                                                                                      |
 |:-----------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmp (S, Float, Float, int)**](sm5-object-texture2darray-gathercmp.md)        | Muestras y comparan una textura y devuelven los cuatro componentes.<br/>                                       |
-| [**GatherCmp (S, Float, Float, int, uint)**](t2d-gathercmp-s-float-float-int-uint-.md) | Muestras y comparan una textura y devuelven los cuatro componentes junto con el estado de la operación.<br/> |
+| [**GatherCmp(S,float,float,int)**](sm5-object-texture2darray-gathercmp.md)        | Muestrea y compara una textura y devuelve los cuatro componentes.<br/>                                       |
+| [**GatherCmp(S,float,float,int,uint)**](t2d-gathercmp-s-float-float-int-uint-.md) | Muestrea y compara una textura y devuelve los cuatro componentes junto con el estado de la operación.<br/> |
 
 
 

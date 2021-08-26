@@ -4,16 +4,16 @@ ms.assetid: 945e1b1a-2557-4be2-bfdb-bb11ac7c3fe8
 title: Pausando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a07f6f610c3cfac9361e1db40c0fcd37b90645b2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 15f113bdaa41709055202886112d678c2a1fbb172d99e880ceaafc997817412a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997285"
 ---
 # <a name="pausing"></a>Pausando
 
-Todos los cambios de estado del filtro deben mantener el bloqueo del filtro. En el método **PAUSE** , cree los recursos que necesite el filtro:
+Todos los cambios de estado de filtro deben contener el bloqueo del filtro. En el **método Pause,** cree los recursos que necesite el filtro:
 
 
 ```C++
@@ -29,7 +29,7 @@ HRESULT CMyFilter::Pause()
 
 
 
-El método [**CBaseFilter::P ause**](cbasefilter-pause.md) establece el estado correcto en el filtro (estado \_ pausado) y llama al método [**CBasePin:: Active**](cbasepin-active.md) en cada pin conectado del filtro. El método **activo** informa al pin de que el filtro se ha vuelto activo. Si el PIN crea recursos, invalide el método **activo** de la manera siguiente:
+El [**método CBaseFilter::P ause**](cbasefilter-pause.md) establece el estado correcto en el filtro (Estado en pausa) y llama al método \_ [**CBasePin::Active**](cbasepin-active.md) en cada pin conectado del filtro. El **método Active** informa al pin de que el filtro se ha activado. Si el pin crea recursos, invalide **el método Active,** como se muestra a continuación:
 
 
 ```C++

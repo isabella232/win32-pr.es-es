@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInitInProgressException'
-title: Constructor de EsentInitInProgressException
+description: 'Más información sobre: Constructor EsentInitInProgressException'
+title: Constructor EsentInitInProgressException
 TOCTitle: 'EsentInitInProgressException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInitInProgressException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinitinprogressexception.esentinitinprogressexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ad24bef60fe1cc29114d9899698feaa7a7d41af3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f30fdf1d7b5d51b7e1c2c29f52631f6fa5fab956822895ec414fde7ccf83a1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972707"
 ---
-# <a name="esentinitinprogressexception-constructor"></a>Constructor de EsentInitInProgressException
+# <a name="esentinitinprogressexception-constructor"></a>Constructor EsentInitInProgressException
 
 Inicializa una nueva instancia de la clase EsentInitInProgressException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInitInProgressException()
 public EsentInitInProgressException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInitInProgressException()
 
 [Miembros de EsentInitInProgressException](./esentinitinprogressexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

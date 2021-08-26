@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 66cd29758e0b2d63db88db8b998cc79ec12efdd9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2816d148af2a7514dc28a71036402f3781e47a0144848a2ea81bbb94d339f961
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999035"
 ---
 # <a name="ctransinplaceoutputpincheckmediatype-method"></a>Método CTransInPlaceOutputPin.CheckMediaType
 
@@ -58,7 +58,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 | Código devuelto                                                                                                | Descripción                         |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | Correcto.<br/>                 |
-| <dl> <dt>**TIPO E VFW \_ \_ NO \_ \_ ACEPTADO**</dt> </dl> | Tipo de medio no aceptado.<br/> |
+| <dl> <dt>**TIPO VFW \_ E \_ NO \_ \_ ACEPTADO**</dt> </dl> | Tipo de medio no aceptado.<br/> |
 
 
 
@@ -76,12 +76,12 @@ Si el filtro ya está transmitiendo y usa dos asignadores, este método rechaza 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,14 +1,14 @@
-- name: Sistema de archivos previsto de Windows
+- name: Windows Sistema de archivos proyectado
   href: projected-file-system.md
   items:
     - name: Guía de programación del sistema de archivos proyectado
       href: projfs-programming-guide.md
       items:
-        - name: Información general del proveedor
+        - name: Introducción al proveedor
           href: provider-overview.md
         - name: Estado de caché en la raíz de virtualización
           href: cache-state.md
-        - name: Habilitación del sistema de archivos previsto de Windows
+        - name: Habilitar Windows de archivos proyectados
           href: enabling-windows-projected-file-system.md
         - name: Ciclo de vida de la instancia de virtualización
           href: virtualization-instance-lifecycle.md
@@ -18,14 +18,14 @@
           href: providing-file-data.md
         - name: Notificaciones de operación del sistema de archivos
           href: file-system-operation-notifications.md
-        - name: Control de cambios de vista
+        - name: Control de cambios en la vista
           href: handling-view-changes.md
         - name: Control asincrónico de devolución de llamada
           href: asynchronous-callback-handling.md
     - name: Referencia del sistema de archivos proyectado
       href: projfs-reference.md
       items:
-        - name: Funciones de devolución de llamada del sistema de archivos proyectadas
+        - name: Funciones de devolución de llamada del sistema de archivos proyectados
           href: projfs-callback-functions.md
           items:
             - name: PRJ_CANCEL_COMMAND_CB
@@ -44,7 +44,7 @@
               href: /windows/win32/api/projectedfslib/nc-projectedfslib-prj_query_file_name_cb
             - name: PRJ_START_DIRECTORY_ENUMERATION_CB
               href: /windows/win32/api/projectedfslib/nc-projectedfslib-prj_start_directory_enumeration_cb
-        - name: Funciones del sistema de archivos proyectadas
+        - name: Funciones del sistema de archivos proyectado
           href: projfs-functions.md
           items:
             - name: PrjAllocateAlignedBuffer
@@ -85,7 +85,7 @@
               href: /windows/win32/api/projectedfslib/nf-projectedfslib-prjwriteplaceholderinfo
             - name: PrjWritePlaceholderInfo2
               href: /windows/win32/api/projectedfslib/nf-projectedfslib-prjwriteplaceholderinfo2
-        - name: Estructuras proyectadas del sistema de archivos
+        - name: Estructuras del sistema de archivos proyectado
           href: projfs-structures.md
           items:
             - name: PRJ_CALLBACK_DATA
@@ -108,7 +108,7 @@
               href: /windows/win32/api/projectedfslib/ns-projectedfslib-prj_startvirtualizing_options
             - name: PRJ_VIRTUALIZATION_INSTANCE_INFO
               href: /windows/win32/api/projectedfslib/ns-projectedfslib-prj_virtualization_instance_info
-        - name: Enumeraciones proyectadas del sistema de archivos
+        - name: Enumeraciones del sistema de archivos proyectados
           href: projfs-enumerations.md
           items:
             - name: PRJ_CALLBACK_DATA_FLAGS

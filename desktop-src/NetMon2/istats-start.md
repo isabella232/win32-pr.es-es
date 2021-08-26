@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 64f02529ba10d98092eb30a1bcc350d5c72049fc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 494ec12a0bb9c5c312f34e9cc53e82bfcbe155f90c38b98b2ba807e9c87b6945
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037155"
 ---
 # <a name="istatsstart-method"></a>IStats::Start (método)
 
@@ -48,10 +48,10 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
 | Código devuelto                                                                                            | Descripción                                                                                                                                            |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**CAPTURA DE NMERR \_ \_ EN PAUSA**</dt> </dl>  | La captura se ha detenido y debe detenerse antes de poder reiniciarse. Llame al [método IStats::Stop](istats-stop.md) para detener la captura.<br/> |
+| <dl> <dt>**CAPTURA DE NMERR \_ \_ EN PAUSA**</dt> </dl>  | La captura se ha pausado y debe detenerse antes de poder reiniciarse. Llame al [método IStats::Stop](istats-stop.md) para detener la captura.<br/> |
 | <dl> <dt>**CAPTURA DE \_ NMERR**</dt> </dl>        | La captura ya se ha iniciado.<br/>                                                                                                            |
-| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>   | El NPP no está conectado a la red. Llame al [método IStats::Connect](istats-connect.md) para conectar el NPP a la red.<br/>           |
-| <dl> <dt>**NMERR \_ NO SOLO \_ \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Connect.](istats-connect.md)<br/>                                          |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>   | El NPP no está conectado a la red. Llame al [método IStats::Conectar](istats-connect.md) para conectar el NPP a la red.<br/>           |
+| <dl> <dt>**NMERR \_ NO SOLO \_ \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Conectar.](istats-connect.md)<br/>                                          |
 
 
 
@@ -70,7 +70,7 @@ Al reiniciar la captura mediante los métodos IStats::Start e [IStats::Stop,](is
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -79,7 +79,7 @@ Al reiniciar la captura mediante los métodos IStats::Start e [IStats::Stop,](is
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -89,7 +89,7 @@ Al reiniciar la captura mediante los métodos IStats::Start e [IStats::Stop,](is
 [IStats::Configure](istats-configure.md)
 </dt> <dt>
 
-[IStats::Connect](istats-connect.md)
+[IStats::Conectar](istats-connect.md)
 </dt> <dt>
 
 [IStats::P ause](istats-pause.md)

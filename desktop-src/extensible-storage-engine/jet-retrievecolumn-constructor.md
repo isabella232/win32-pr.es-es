@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_RETRIEVECOLUMN constructor'
-title: Constructor de JET_RETRIEVECOLUMN
+description: 'Más información sobre: constructor de JET_RETRIEVECOLUMN'
+title: JET_RETRIEVECOLUMN constructor
 TOCTitle: 'JET_RETRIEVECOLUMN constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retrievecolumn.jet_retrievecolumn(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 19247c0ac45dddf4911b2dd16615b3eaa905fa4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bdf74097aedb36a726007ea9816644364b6ca0213d0b9b27919132771b7659a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063165"
 ---
-# <a name="jet_retrievecolumn-constructor"></a>Constructor de JET_RETRIEVECOLUMN
+# <a name="jet_retrievecolumn-constructor"></a>JET_RETRIEVECOLUMN constructor
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,12 +50,12 @@ Dim instance As New JET_RETRIEVECOLUMN()
 public JET_RETRIEVECOLUMN()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RETRIEVECOLUMN (clase)](./jet-retrievecolumn-class.md)
+[JET_RETRIEVECOLUMN clase](./jet-retrievecolumn-class.md)
 
-[Miembros de JET_RETRIEVECOLUMN](./jet-retrievecolumn-members.md)
+[JET_RETRIEVECOLUMN miembros](./jet-retrievecolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

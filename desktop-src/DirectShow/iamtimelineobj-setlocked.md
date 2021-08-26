@@ -1,7 +1,7 @@
 ---
 description: El método SetLocked establece el estado de edición del objeto en bloqueado o desbloqueado.
 ms.assetid: 801b8bf0-5c7a-4122-9038-6b0d8bdc5da3
-title: 'IAMTimelineObj:: SetLocked (método) (QEDIT. h)'
+title: Método IAMTimelineObj::SetLocked (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: b8707aa86b651553dde2f9f9b57c84169a9969b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87298b4e1fe9bc821c72d46d09d55e898b453292940029b7189a92e455b4c206
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052485"
 ---
-# <a name="iamtimelineobjsetlocked-method"></a>IAMTimelineObj:: SetLocked (método)
+# <a name="iamtimelineobjsetlocked-method"></a>IAMTimelineObj::SetLocked (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
 El `SetLocked` método establece el estado de edición del objeto en bloqueado o desbloqueado.
 
-Un estado bloqueado indica que el objeto no se debe editar; un estado desbloqueado indica que el objeto se puede editar. La escala de tiempo no aplica el bloqueo. La configuración bloqueada solo existe para la comodidad de la aplicación.
+Un estado bloqueado indica que no se debe editar el objeto; un estado desbloqueado indica que el objeto se puede editar. La escala de tiempo no aplica el bloqueo. La configuración bloqueada solo existe para la comodidad de la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,23 +50,23 @@ HRESULT SetLocked(
 *newVal* 
 </dt> <dd>
 
-Valor booleano que especifica el estado de edición del objeto. Si es **true**, el objeto está bloqueado y no se debe editar. Si es **false**, el objeto se desbloquea y se puede editar.
+Valor booleano que especifica el estado de edición del objeto. Si **es TRUE,** el objeto está bloqueado y no se debe editar. Si **es FALSE,** el objeto se desbloquea y se puede editar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineObj**](iamtimelineobj.md)
+[**IAMTimelineObj (interfaz)**](iamtimelineobj.md)
 </dt> <dt>
 
 [Códigos de error y de éxito](error-and-success-codes.md)

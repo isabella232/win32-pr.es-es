@@ -1,21 +1,21 @@
 ---
-title: Limpieza de entradas del servicio de nombres
-description: Una entrada de servicio de nombres debe contener información que no cambia con frecuencia.
+title: Limpieza de entrada de servicio de nombre
+description: Una entrada de servicio de nombre debe contener información que no cambia con frecuencia.
 ms.assetid: b581bc10-e537-4714-b89a-d998fec23360
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf0ed6a21074a49a472d7505dcfea37cf182026
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ecfe7484d1c6d557899e3b661a3a616c97d3890becfad51df0e91f5a69467faa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019610"
 ---
-# <a name="name-service-entry-cleanup"></a>Limpieza de entradas del servicio de nombres
+# <a name="name-service-entry-cleanup"></a>Limpieza de entrada de servicio de nombre
 
-Una entrada de servicio de nombres debe contener información que no cambia con frecuencia. Por esta razón, no incluya puntos de conexión dinámicos en los identificadores de enlace exportados porque cambiarán en cada invocación del servidor y se amontonarán en la entrada del servicio de nombres. Para quitar estos identificadores de enlace, use [**RpcBindingReset**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingreset).
+Una entrada de servicio de nombre debe contener información que no cambia con frecuencia. Por esta razón, no incluya puntos de conexión dinámicos en los identificadores de enlace exportados porque cambiarán en cada invocación del servidor y abarrotarán la entrada del servicio de nombres. Para quitar estos identificadores de enlace, use [**RpcBindingReset**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingreset).
 
-Por ejemplo, una secuencia de operaciones de servidor razonable sería:
+Por ejemplo, una secuencia razonable de operaciones de servidor sería:
 
 Para más de un transporte:
 
@@ -24,14 +24,14 @@ RpcServerUseProtseq();
 RpcServerUseProtseq();
 ```
 
-Para colocar enlaces en el asignador de extremos:
+Para colocar enlaces en el asignador de puntos de conexión:
 
 ``` syntax
 RpcServerInqBindings(&Vector);
 RpcEpRegister(Interface, Vector);
 ```
 
-Para quitar los puntos de conexión de los enlaces:
+Para quitar puntos de conexión de los enlaces:
 
 ``` syntax
 for (i=0; i < Vector- > Count; + + i)
@@ -48,9 +48,9 @@ RpcNsBindingExport(RPC_C_NS_SYNTAX_DEFAULT, EntryName, Interface
 RpcServerListen();
 ```
 
- 
+ 
 
- 
+ 
 
 
 

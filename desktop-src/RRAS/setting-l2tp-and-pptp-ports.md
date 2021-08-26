@@ -1,21 +1,21 @@
 ---
 title: Configuración de puertos L2TP y PPTP del servicio RRAS local
-description: Este ejemplo obtiene y establece la configuración de puertos L2TP y PPTP del servicio RRAS local. Supone que el proceso de llamada tiene privilegios suficientes para tener acceso al servicio RRAS local.
+description: En este ejemplo se obtiene y establece la configuración del puerto L2TP y PPTP del servicio RRAS local. Se supone que el proceso de llamada tiene privilegios suficientes para acceder al servicio RRAS local.
 ms.assetid: 9e4aa8d4-e09e-4c84-acf0-c505a58841a4
 keywords:
 - Configuración de puertos de servicio RRAS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7590ec249fd73934dab2e07bfb4dbef77d46aeda
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3ae05fabd171bba59286b3a68120895132b303af9c5e81e7c6a36410e98195be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073775"
 ---
 # <a name="setting-l2tp-and-pptp-ports-of-local-rras-service"></a>Configuración de puertos L2TP y PPTP del servicio RRAS local
 
-Este ejemplo obtiene y establece la configuración de puertos L2TP y PPTP del servicio RRAS local. Supone que el proceso de llamada tiene privilegios suficientes para tener acceso al servicio RRAS local.
+En este ejemplo se obtiene y establece la configuración del puerto L2TP y PPTP del servicio RRAS local. Se supone que el proceso de llamada tiene privilegios suficientes para acceder al servicio RRAS local.
 
 
 ```C++
@@ -98,9 +98,9 @@ int __cdecl main(){
 
 
 
- 
+ 
 
- 
+ 
 
 
 

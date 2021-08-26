@@ -1,11 +1,11 @@
 ---
-title: Propiedad framesSkipped de IWMPNetwork
-description: La propiedad framesSkipped obtiene el número total de fotogramas omitidos durante la reproducción.
+title: IWMPNetwork framesSkipped, propiedad
+description: La propiedad framesSkipped obtiene el número total de fotogramas omitido durante la reproducción.
 ms.assetid: eedecfa9-0c82-4800-979e-ca85fb78c480
 keywords:
-- propiedades de framesSkipped Media Player de Windows
-- propiedad framesSkipped de Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, propiedad framesSkipped
+- Propiedad framesSkipped Reproductor de Windows Media
+- Propiedad framesSkipped Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , propiedad framesSkipped
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8409cec50089111184f96e4463f57cc9c4fbae07
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3640ff73eeadd1bf59eecc29045b0434f0885b7dc1eef319d6e6ee040442abdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999985"
 ---
-# <a name="iwmpnetworkframesskipped-property"></a>IWMPNetwork:: framesSkipped (propiedad)
+# <a name="iwmpnetworkframesskipped-property"></a>IWMPNetwork::framesSkipped, propiedad
 
-La propiedad **framesSkipped** obtiene el número total de fotogramas omitidos durante la reproducción.
+La **propiedad framesSkipped** obtiene el número total de fotogramas omitido durante la reproducción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,11 +46,11 @@ Public ReadOnly Property framesSkipped As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el número de fotogramas omitidos.
+**System.Int32 que** es el número de fotogramas omitido.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **framesSkipped** para mostrar el número total de fotogramas omitidos durante la reproducción. La información se muestra en una etiqueta cuando el usuario hace clic en un botón. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se **usan framesSkipped** para mostrar el número total de fotogramas omitido durante la reproducción. La información se muestra en una etiqueta cuando el usuario hace clic en un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -80,7 +80,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

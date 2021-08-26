@@ -1,31 +1,31 @@
 ---
-title: Métodos IWTSSBPlugin
+title: Métodos de IWTSSBPlugin
 description: La interfaz IWTSSBPlugin expone los métodos siguientes.
 ms.assetid: C58E8D49-9556-4A4D-BF48-CF8EC16FB59F
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cfd4907986bf5f1b21383a2f79231bd69ba59a5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8bddf544926e056df0c880f5e66408e9f66eff27aa5f91996b8ad96386750df0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989335"
 ---
-# <a name="iwtssbplugin-methods"></a>Métodos IWTSSBPlugin
+# <a name="iwtssbplugin-methods"></a>Métodos de IWTSSBPlugin
 
-\[La interfaz [**IWTSSBPlugin**](/windows/desktop/api/Tssbx/nn-tssbx-iwtssbplugin) no se admite después de Windows Server 2008 R2. A partir de Windows Server 2012, use la interfaz [**ITsSbPlugin**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplugin) .\]
+\[La [**interfaz IWTSSBPlugin**](/windows/desktop/api/Tssbx/nn-tssbx-iwtssbplugin) no se admite después Windows Server 2008 R2. A partir Windows Server 2012 use la [**interfaz ITsSbPlugin.**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplugin)\]
 
-La interfaz [**IWTSSBPlugin**](/windows/desktop/api/Tssbx/nn-tssbx-iwtssbplugin) expone los métodos siguientes.
+La [**interfaz IWTSSBPlugin**](/windows/desktop/api/Tssbx/nn-tssbx-iwtssbplugin) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Initialize (método)**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-initialize)
--   [**Método terminado**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-terminated)
--   [**WTSSBX \_ GetMostSuitableServer, método**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-wtssbx_getmostsuitableserver)
--   [**WTSSBX \_ GetUserExternalSession, método**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-wtssbx_getuserexternalsession)
--   [**WTSSBX \_ MachineChangeNotification, método**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-wtssbx_machinechangenotification)
--   [**WTSSBX \_ SessionChangeNotification, método**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-wtssbx_sessionchangenotification)
+-   [**Inicializar método**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-initialize)
+-   [**Método finalizado**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-terminated)
+-   [**Método WTSSBX \_ GetMostSuitableServer**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-wtssbx_getmostsuitableserver)
+-   [**Método WTSSBX \_ GetUserExternalSession**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-wtssbx_getuserexternalsession)
+-   [**Método WTSSBX \_ MachineChangeNotification**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-wtssbx_machinechangenotification)
+-   [**Método WTSSBX \_ SessionChangeNotification**](/windows/desktop/api/Tssbx/nf-tssbx-iwtssbplugin-wtssbx_sessionchangenotification)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -37,9 +37,9 @@ La interfaz [**IWTSSBPlugin**](/windows/desktop/api/Tssbx/nn-tssbx-iwtssbplugin)
 [**ITsSbPlugin**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplugin)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
