@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTempPathInUseException'
-title: Constructor de EsentTempPathInUseException
+description: 'Más información sobre: Constructor EsentTempPathInUseException'
+title: Constructor EsentTempPathInUseException
 TOCTitle: 'EsentTempPathInUseException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTempPathInUseException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttemppathinuseexception.esenttemppathinuseexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b18143369de75d46e008a7f12364a38b271a1f1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62bfbbd54dd3e0291443f9b48f77c6ab22bb83e8e7f172af007f36c20253bb58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850675"
 ---
-# <a name="esenttemppathinuseexception-constructor"></a>Constructor de EsentTempPathInUseException
+# <a name="esenttemppathinuseexception-constructor"></a>Constructor EsentTempPathInUseException
 
 Inicializa una nueva instancia de la clase EsentTempPathInUseException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentTempPathInUseException()
 public EsentTempPathInUseException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentTempPathInUseException()
 
 [Miembros de EsentTempPathInUseException](./esenttemppathinuseexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

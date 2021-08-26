@@ -1,27 +1,27 @@
 ---
-description: Esta sección contiene un ejemplo en el que se muestra la creación de un metarchivo mejorado que se almacena en un disco con un nombre de archivo especificado por el usuario.
+description: Esta sección contiene un ejemplo que muestra la creación de un metarchivo mejorado que se almacena en un disco, con un nombre de archivo especificado por el usuario.
 ms.assetid: 084b2737-eb55-4587-b8e8-3eb3fa3688c4
-title: Crear un metarchivo mejorado
+title: Creación de un metarchivo mejorado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4877481ed0a68d6379e7eaabb00bbe37cef74c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e53266ac0677da211308c7028f4d61869fc2890f27c06daeff9cfb6fea87e58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849235"
 ---
-# <a name="creating-an-enhanced-metafile"></a>Crear un metarchivo mejorado
+# <a name="creating-an-enhanced-metafile"></a>Creación de un metarchivo mejorado
 
-Esta sección contiene un ejemplo en el que se muestra la creación de un metarchivo mejorado que se almacena en un disco con un nombre de archivo especificado por el usuario.
+Esta sección contiene un ejemplo que muestra la creación de un metarchivo mejorado que se almacena en un disco, con un nombre de archivo especificado por el usuario.
 
-En el ejemplo se usa un contexto de dispositivo para la ventana de la aplicación como contexto de dispositivo de referencia. (El sistema almacena los datos de resolución de este dispositivo en el encabezado del metarchivo mejorado). La aplicación recupera un identificador que identifica este contexto de dispositivo mediante una llamada a la función [**GetDC**](/windows/desktop/api/Winuser/nf-winuser-getdc) .
+En el ejemplo se usa un contexto de dispositivo para la ventana de aplicación como contexto de dispositivo de referencia. (El sistema almacena los datos de resolución de este dispositivo en el encabezado del metarchivo mejorado). La aplicación recupera un identificador que identifica este contexto de dispositivo mediante una llamada a la [**función GetDC.**](/windows/desktop/api/Winuser/nf-winuser-getdc)
 
-En el ejemplo se utilizan las dimensiones del área cliente de la aplicación para definir las dimensiones del marco de imagen. Con las dimensiones de rectángulo devueltas por la función [**GetClientRect**](/windows/win32/api/winuser/nf-winuser-getclientrect) , la aplicación convierte las unidades de dispositivo en unidades .01-milímetros y pasa los valores convertidos a la función [**CreateEnhMetaFile**](/windows/desktop/api/Wingdi/nf-wingdi-createenhmetafilea) .
+En el ejemplo se usan las dimensiones del área cliente de la aplicación para definir las dimensiones del marco de imagen. Con las dimensiones de rectángulo devueltas por la función [**GetClientRect,**](/windows/win32/api/winuser/nf-winuser-getclientrect) la aplicación convierte las unidades de dispositivo en unidades de 01 milímetros y pasa los valores convertidos a la función [**CreateEnhMetaFile.**](/windows/desktop/api/Wingdi/nf-wingdi-createenhmetafilea)
 
-En el ejemplo se muestra un cuadro de diálogo **Guardar como** común que permite al usuario especificar el nombre de archivo del nuevo metarchivo mejorado. El sistema anexa la extensión. EMF de tres caracteres a este nombre de archivo y pasa el nombre a la función [**CreateEnhMetaFile**](/windows/desktop/api/Wingdi/nf-wingdi-createenhmetafilea) .
+En el ejemplo se muestra **un cuadro** de diálogo Guardar como común que permite al usuario especificar el nombre de archivo del nuevo metarchivo mejorado. El sistema anexa la extensión .emf de tres caracteres a este nombre de archivo y pasa el nombre a la [**función CreateEnhMetaFile.**](/windows/desktop/api/Wingdi/nf-wingdi-createenhmetafilea)
 
-En el ejemplo también se incrusta una descripción de texto de la imagen en el encabezado Enhanced-Metafile. Esta descripción se especifica como un recurso en la tabla de cadenas del archivo de recursos de la aplicación. Sin embargo, en una aplicación de trabajo, esta cadena se recuperaría de un control personalizado en un cuadro de diálogo común o de un cuadro de diálogo independiente mostrado únicamente para este propósito.
+En el ejemplo también se inserta una descripción de texto de la imagen en el encabezado de metarchivo mejorado. Esta descripción se especifica como un recurso en la tabla de cadenas del archivo de recursos de la aplicación. Sin embargo, en una aplicación en funcionamiento, esta cadena se recuperaría de un control personalizado en un cuadro de diálogo común o de un cuadro de diálogo independiente mostrado únicamente para este propósito.
 
 
 ```C++

@@ -1,17 +1,17 @@
 ---
 description: Indica que el controlador está bloqueando la captura de vídeo.
 ms.assetid: D0EF3879-A775-4A79-9DB0-486B5086CE2A
-title: MF_CAPTURE_ENGINE_CAMERA_STREAM_BLOCKED atributo (Mfcaptureengine. h)
+title: MF_CAPTURE_ENGINE_CAMERA_STREAM_BLOCKED atributo (Mfcaptureengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d98097a01c81db7b4c890d10b00d61e927b8512
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 596515e667b18b8823a07c0bf4da01c98dd0b942dd64e7c92db023402e58d4e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957015"
 ---
-# <a name="mf_capture_engine_camera_stream_blocked-attribute"></a>Modificador de \_ flujo de cámara del motor de captura MF \_ \_ \_ \_ atributo bloqueado
+# <a name="mf_capture_engine_camera_stream_blocked-attribute"></a>Atributo MF \_ CAPTURE ENGINE CAMERA STREAM \_ \_ \_ \_ BLOCKED
 
 Indica que el controlador está bloqueando la captura de vídeo.
 
@@ -23,7 +23,7 @@ Indica que el controlador está bloqueando la captura de vídeo.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Mfcaptureengine. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Mfcaptureengine.h</dt> </dl> |
 
 
 
@@ -31,7 +31,7 @@ Indica que el controlador está bloqueando la captura de vídeo.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

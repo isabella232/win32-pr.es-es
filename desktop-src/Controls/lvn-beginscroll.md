@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de LVN_BEGINSCROLL (commctrl. h)
-description: Notifica a la ventana primaria de un control de vista de lista cuando se inicia una operación de desplazamiento. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: LVN_BEGINSCROLL de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de vista de lista cuando se inicia una operación de desplazamiento. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 67123db1-118c-43d7-8511-12a3c4413958
 keywords:
-- LVN_BEGINSCROLL controles de código de notificación de Windows
+- LVN_BEGINSCROLL código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae09a05525ac6e9f08d8cc7a0b7de6ef51329baa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e416aee093ed6526d85d81361e2774b963572de73ce84c21105f19d1675968f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915225"
 ---
-# <a name="lvn_beginscroll-notification-code"></a>Código de notificación de BEGINSCROLL de LVN \_
+# <a name="lvn_beginscroll-notification-code"></a>Código de notificación \_ DE LVN BEGINSCROLL
 
-Notifica a la ventana primaria de un control de vista de lista cuando se inicia una operación de desplazamiento. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de vista de lista cuando se inicia una operación de desplazamiento. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,18 +41,18 @@ LVN_BEGINSCROLL
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMLVSCROLL**](/windows/win32/api/commctrl/ns-commctrl-nmlvscroll) que contiene la posición horizontal o vertical de donde se inicia la operación de desplazamiento.
+Puntero a una [**estructura NMLVSCROLL**](/windows/win32/api/commctrl/ns-commctrl-nmlvscroll) que contiene la posición horizontal o vertical de donde se inicia la operación de desplazamiento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se usa el valor devuelto.
+Valor devuelto no utilizado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Para usar este código de notificación, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este código de notificación, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -62,9 +62,9 @@ No se usa el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

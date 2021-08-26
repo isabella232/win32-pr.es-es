@@ -1,11 +1,11 @@
 ---
-title: Método de proceso ID3DX11DataProcessor (D3DX11core. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Procesa los datos.
+title: Método ID3DX11DataProcessor Process (D3DX11core.h)
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Procesa los datos.
 ms.assetid: be20b231-9c2e-4b4a-bdb1-cdc75552bf9d
 keywords:
 - Método de proceso Direct3D 11
-- Método Process Direct3D 11, interfaz ID3DX11DataProcessor
-- Interfaz ID3DX11DataProcessor Direct3D 11, método Process
+- Método de proceso Direct3D 11, interfaz ID3DX11DataProcessor
+- ID3DX11DataProcessor interface Direct3D 11 , Process method
 topic_type:
 - apiref
 api_name:
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6127d62398d212c94669fadaaa2ecb09819d0171
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 458e7dc68c4a64099dc5cab327901fda38f8fd4e6cde4ca7d62e3def5472d86d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104547958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894925"
 ---
-# <a name="id3dx11dataprocessorprocess-method"></a>ID3DX11DataProcessor::P método rador
+# <a name="id3dx11dataprocessorprocess-method"></a>Método ID3DX11DataProcessor::P rocess
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
@@ -49,21 +49,21 @@ HRESULT Process(
 
 <dl> <dt>
 
-*pdata* \[ de\]
+*pData* \[ En\]
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* void**
 
-Puntero a los datos que se van a procesar.
+Puntero a los datos que se procesarán.
 
 </dd> <dt>
 
-*cBytes* \[ de\]
+*cBytes* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **tamaño \_ T**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **SIZE \_ T**](/windows/desktop/WinProg/windows-data-types)**
 
-Tamaño de los datos que se van a procesar.
+Tamaño de los datos que se procesarán.
 
 </dd> </dl>
 
@@ -71,11 +71,11 @@ Tamaño de los datos que se van a procesar.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que se muestran en [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método lo usa una [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md).
+Este método lo usa una interfaz [**ID3DX11ThreadPump**](id3dx11threadpump.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ Este método lo usa una [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md).
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX11core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>   |
 
 
 
@@ -95,7 +95,7 @@ Este método lo usa una [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md).
 [ID3DX11DataProcessor](id3dx11dataprocessor.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)
+[D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)
 </dt> </dl>
 
  

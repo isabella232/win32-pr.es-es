@@ -1,7 +1,7 @@
 ---
 description: Recupera el identificador de clase para este filtro.
 ms.assetid: f0559437-5d0d-4522-a3dc-947e3494b576
-title: Método CPersistStream. GetClassID (pStream. h)
+title: Método CPersistStream.GetClassID (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7603541eae4f431327a91777488a740afb7f628b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e500b91453bd7c9d76f243939a98b0779f1873ed7b5f79128e639173710e62de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915565"
 ---
-# <a name="cpersiststreamgetclassid-method"></a>CPersistStream. GetClassID (método)
+# <a name="cpersiststreamgetclassid-method"></a>Método CPersistStream.GetClassID
 
 Recupera el identificador de clase para este filtro.
 
@@ -51,7 +51,7 @@ Puntero a una estructura CLSID. Copie el identificador de clase aquí.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PStream. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Pstream.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CPersistStream**](cpersiststream.md)
+[**CPersistStream (clase)**](cpersiststream.md)
 </dt> </dl>
 
  

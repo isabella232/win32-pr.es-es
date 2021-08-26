@@ -1,11 +1,11 @@
 ---
-title: Win32_RDCentralPublishedDeploymentSettings (clase)
-description: Contiene la configuración de implementación usada para generar archivos RDP para los recursos publicados en una granja.
+title: Win32_RDCentralPublishedDeploymentSettings clase
+description: Contiene la configuración de implementación que se usa para generar archivos RDP para los recursos publicados desde una granja.
 ms.assetid: 6d1be0b2-e070-4c60-8068-b59ba121bf9f
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDCentralPublishedDeploymentSettings clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDCentralPublishedDeploymentSettings de clase, se describe
+- Win32_RDCentralPublishedDeploymentSettings clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -36,16 +36,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd4dd1b118f2fabf22f10e47c0b8467b0ddf6388
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ee16b557ab58a11b5994236137ddfd549a0eb0294f04c619f5245de78e379029
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868505"
 ---
-# <a name="win32_rdcentralpublisheddeploymentsettings-class"></a>\_Clase Win32 RDCentralPublishedDeploymentSettings
+# <a name="win32_rdcentralpublisheddeploymentsettings-class"></a>Clase \_ RDCentralPublishedDeploymentSettings de Win32
 
-Contiene la configuración de implementación usada para generar archivos RDP para los recursos publicados en una granja.
+Contiene la configuración de implementación que se usa para generar archivos RDP para los recursos publicados desde una granja.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -86,7 +86,7 @@ La **clase \_ RDCentralPublishedDeploymentSettings de Win32** tiene estos tipos 
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ RDCentralPublishedDeploymentSettings de Win32** tiene estas propiedades.
+La **clase \_ RdCentralPublishedDeploymentSettings de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -96,10 +96,10 @@ La **clase \_ RDCentralPublishedDeploymentSettings de Win32** tiene estas propie
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-**true** para permitir el suavizado de fuentes; en caso contrario, **false**.
+**true** para permitir el suavizado de fuentes; de lo contrario, **false**.
 
 </dd> <dt>
 
@@ -117,20 +117,20 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Descripción breve (cadena de una línea) del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **CertificateHash**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Certificado usado para firmar los archivos RDP; necesariamente solo si *HasCertificate* es true.
+Certificado que se usa para firmar los archivos RDP; necesariamente solo si *HasCertificate* es true.
 
 </dd> <dt>
 
@@ -140,10 +140,10 @@ Certificado usado para firmar los archivos RDP; necesariamente solo si *HasCerti
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Contiene la profundidad de bits de color:
+Contiene la profundidad de bits del color:
 
 <dt>
 
@@ -197,10 +197,10 @@ Contiene la profundidad de bits de color:
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Incluye el contenido del archivo RDP correspondiente a la configuración personalizada de RDP.
+Contiene el contenido del archivo RDP correspondiente a la configuración de RDP personalizada.
 
 </dd> <dt>
 
@@ -210,10 +210,10 @@ Incluye el contenido del archivo RDP correspondiente a la configuración persona
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Incluye el contenido del archivo RDP correspondiente a la configuración de implementación. Si se establece este parámetro, el sistema usará este archivo RDP y pasará por alto la configuración de RDP en esta llamada.
+Contiene el contenido del archivo RDP correspondiente a la configuración de implementación. Si se establece este parámetro, el sistema usará este archivo RDP y omitirá la otra configuración de RDP en esta llamada.
 
 </dd> <dt>
 
@@ -228,7 +228,7 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -238,7 +238,7 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Nombre de la granja.
@@ -251,7 +251,7 @@ Nombre de la granja.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Contiene el modo de autenticación de puerta de enlace:
@@ -260,21 +260,21 @@ Contiene el modo de autenticación de puerta de enlace:
 
 <span id="Password_0_"></span><span id="password_0_"></span><span id="PASSWORD_0_"></span>
 
-<span id="Password_0_"></span><span id="password_0_"></span><span id="PASSWORD_0_"></span>**Contraseña (0)** (0)
+<span id="Password_0_"></span><span id="password_0_"></span><span id="PASSWORD_0_"></span>**Password(0)** (0)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Smartcard_1_"></span><span id="smartcard_1_"></span><span id="SMARTCARD_1_"></span>
 
-<span id="Smartcard_1_"></span><span id="smartcard_1_"></span><span id="SMARTCARD_1_"></span>**Tarjeta inteligente (1)** (1)
+<span id="Smartcard_1_"></span><span id="smartcard_1_"></span><span id="SMARTCARD_1_"></span>**Tarjeta inteligente(1)** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Allow_User_to_Choose_4_"></span><span id="allow_user_to_choose_4_"></span><span id="ALLOW_USER_TO_CHOOSE_4_"></span>
 
-<span id="Allow_User_to_Choose_4_"></span><span id="allow_user_to_choose_4_"></span><span id="ALLOW_USER_TO_CHOOSE_4_"></span>**Permitir al usuario elegir (4)** (4)
+<span id="Allow_User_to_Choose_4_"></span><span id="allow_user_to_choose_4_"></span><span id="ALLOW_USER_TO_CHOOSE_4_"></span>**Permitir que el usuario elija(4)** (4)
 
 
 </dt> <dd></dd> </dl>
@@ -287,7 +287,7 @@ Contiene el modo de autenticación de puerta de enlace:
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 El nombre de la puerta de enlace.
@@ -300,7 +300,7 @@ El nombre de la puerta de enlace.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Describe cómo se usa la puerta de enlace:
@@ -309,12 +309,12 @@ Describe cómo se usa la puerta de enlace:
 
 <span id="NoGateway"></span><span id="nogateway"></span><span id="NOGATEWAY"></span>
 
-<span id="NoGateway"></span><span id="nogateway"></span><span id="NOGATEWAY"></span>**Nogateway** (0)
+<span id="NoGateway"></span><span id="nogateway"></span><span id="NOGATEWAY"></span>**NoGateway** (0)
 
 
 </dt> <dd>
 
-Ninguna puerta de enlace.
+Sin puerta de enlace.
 
 </dd> <dt>
 
@@ -325,7 +325,7 @@ Ninguna puerta de enlace.
 
 </dt> <dd>
 
-Usar la puerta de enlace pass by local.
+Use el paso de puerta de enlace por local.
 
 </dd> <dt>
 
@@ -347,7 +347,7 @@ Use la puerta de enlace.
 
 </dt> <dd>
 
-Detección de puerta de enlace.
+Detecte la puerta de enlace.
 
 </dd> </dl>
 
@@ -359,10 +359,10 @@ Detección de puerta de enlace.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-**true** para utilizar las mismas credenciales de usuario para la puerta de enlace de TS y el servidor de TS siempre que sea posible; en caso contrario, **false**.
+**true** para usar las mismas credenciales de usuario para la puerta de enlace de TS y el servidor TS cuando sea posible; de lo contrario, **false**.
 
 </dd> <dt>
 
@@ -372,28 +372,28 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-**true** para usar un certificado para firmar los archivos RDP; en caso contrario, **false**.
+**true** para usar un certificado para firmar los archivos RDP; de lo contrario, **false**.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -408,7 +408,7 @@ Tipo de acceso: solo lectura
 
 El nombre del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -418,7 +418,7 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 El puerto RDP.
@@ -431,13 +431,13 @@ El puerto RDP.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-El alias de la granja que publicó la aplicación.
+Alias de la granja que publicó la aplicación.
 
 </dd> <dt>
 
@@ -447,7 +447,7 @@ El alias de la granja que publicó la aplicación.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Opciones de redireccionamiento:
@@ -510,15 +510,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -546,21 +546,21 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -580,10 +580,10 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-**true** para habilitar varios monitores para escritorio (no raíl); en caso contrario, **false**.
+**true** para habilitar la supervisión múltiple para escritorio (no RAIL); de lo contrario, **false**.
 
 </dd> </dl>
 
@@ -595,8 +595,8 @@ Tipo de acceso: lectura/escritura
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ cimv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>Tscpub. mof</dt> </dl>    |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>Tscpub.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 
 

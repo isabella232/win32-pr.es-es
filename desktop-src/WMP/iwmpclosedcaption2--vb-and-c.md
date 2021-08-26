@@ -1,10 +1,10 @@
 ---
-title: Interfaz IWMPClosedCaption2 (VB y C) (WMP. h)
-description: Proporciona propiedades y métodos para subtítulos (CC) que complementan la interfaz IWMPClosedCaption. Además de las propiedades heredadas de IWMPClosedCaption, la interfaz IWMPClosedCaption2 expone las siguientes propiedades.
+title: Interfaz IWMPClosedCaption2 (VB y C) (Wmp.h)
+description: Proporciona propiedades y métodos para subtítulos que complementan la interfaz IWMPClosedCaption. Además de las propiedades heredadas de IWMPClosedCaption, la interfaz IWMPClosedCaption2 expone las siguientes propiedades.
 ms.assetid: e34ea819-dc1a-48f3-9e55-cf2217379ddb
 keywords:
-- IWMPClosedCaption2 (VB y C) interfaz de Windows Media Player
-- IWMPClosedCaption2 (VB y C) interfaz de Windows Media Player, se describe
+- Interfaz IWMPClosedCaption2 (VB y C) Reproductor de Windows Media
+- Interfaz IWMPClosedCaption2 (VB y C) Reproductor de Windows Media , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,29 +15,29 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dbf81cef3734a6466b6fd177ccc87a38c5c7085
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4e955feacd9447327ee003d3e4db535643be1bcd286f7ff24737df8c4b53b149
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862465"
 ---
 # <a name="iwmpclosedcaption2-vb-and-c-interface"></a>Interfaz IWMPClosedCaption2 (VB y C#)
 
-Proporciona propiedades y métodos para subtítulos (CC) que complementan la interfaz **IWMPClosedCaption** .
+Proporciona propiedades y métodos para subtítulos que complementan la **interfaz IWMPClosedCaption.**
 
-Además de las propiedades heredadas de **IWMPClosedCaption**, la interfaz **IWMPClosedCaption2** expone las siguientes propiedades.
+Además de las propiedades heredadas de **IWMPClosedCaption,** la **interfaz IWMPClosedCaption2** expone las siguientes propiedades.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IWMPClosedCaption2 (VB y C#)** tiene estos tipos de miembros:
+La **interfaz IWMPClosedCaption2 (VB y C#)** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IWMPClosedCaption2 (VB y C#)** tiene estos métodos.
+La **interfaz IWMPClosedCaption2 (VB y C#)** tiene estos métodos.
 
 
 
@@ -45,7 +45,7 @@ La interfaz **IWMPClosedCaption2 (VB y C#)** tiene estos métodos.
 |:---------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
 | [**getSAMILangID**](wmplibiwmpclosedcaption2-iwmpclosedcaption2-getsamilangid--vb-and-c.md)       | Devuelve el identificador de configuración regional (LCID) de un idioma admitido por el archivo SAMI actual.<br/> |
 | [**getSAMILangName**](wmplibiwmpclosedcaption2-iwmpclosedcaption2-getsamilangname--vb-and-c.md)   | Devuelve el nombre de un idioma admitido por el archivo SAMI actual.<br/>                     |
-| [**getSAMIStyleName**](wmplibiwmpclosedcaption2-iwmpclosedcaption2-getsamistylename--vb-and-c.md) | Devuelve el nombre de un estilo compatible con el archivo SAMI actual.<br/>                        |
+| [**getSAMIStyleName**](wmplibiwmpclosedcaption2-iwmpclosedcaption2-getsamistylename--vb-and-c.md) | Devuelve el nombre de un estilo admitido por el archivo SAMI actual.<br/>                        |
 
 
 
@@ -53,7 +53,7 @@ La interfaz **IWMPClosedCaption2 (VB y C#)** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IWMPClosedCaption2 (VB y C#)** tiene estas propiedades.
+La **interfaz IWMPClosedCaption2 (VB y C#)** tiene estas propiedades.
 
 
 
@@ -66,7 +66,7 @@ La interfaz **IWMPClosedCaption2 (VB y C#)** tiene estas propiedades.
 
  
 
-Obtenga una interfaz **IWMPClosedCaption2** convirtiendo el valor devuelto por la propiedad [**AxWindowsMediaPlayer. closedCaption**](axwmplib-axwindowsmediaplayer-closedcaption--vb-and-c.md) .
+Obtenga una **interfaz IWMPClosedCaption2** mediante la conversión del valor devuelto por la propiedad [**AxWindowsMediaPlayer.closedCaption.**](axwmplib-axwindowsmediaplayer-closedcaption--vb-and-c.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Obtenga una interfaz **IWMPClosedCaption2** convirtiendo el valor devuelto por l
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Obtenga una interfaz **IWMPClosedCaption2** convirtiendo el valor devuelto por l
 
 <dl> <dt>
 
-[**Agregar subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
+[**Adición de subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Interfaces para Visual Basic .NET y C #**](interfaces-for-visual-basic--net-and-c.md)

@@ -1,19 +1,19 @@
 ---
-description: 'Texto de vínculo para el almacenamiento de dispositivo: notificación completa.'
+description: Vincular texto para la notificación completa de almacenamiento del dispositivo.
 ms.assetid: 08b03990-eb6a-47fc-baed-0649638a428c
-title: System. Devices. notifications. StorageFullLinkText
+title: System.Devices.Notifications.StorageFullLinkText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e13c77284eb36617f4616ca546f45055f5795ff0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8597f7c5637d3b08d4124cb84af012fc2c881c4d8d19c127c5b4e736e0a2ca1a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845435"
 ---
-# <a name="systemdevicesnotificationsstoragefulllinktext"></a>System. Devices. notifications. StorageFullLinkText
+# <a name="systemdevicesnotificationsstoragefulllinktext"></a>System.Devices.Notifications.StorageFullLinkText
 
-Texto de vínculo para el almacenamiento de dispositivo: notificación completa.
+Vincular texto para la notificación completa de almacenamiento del dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -38,7 +38,7 @@ propertyDescription
             text = Browse device storage...
 ```
 
-## <a name="windows-7"></a>Windows 7
+## <a name="windows-7"></a>Windows 7
 
 ```
 propertyDescription
@@ -61,9 +61,9 @@ propertyDescription
             text = Browse device storage...
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -90,7 +90,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -108,7 +108,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: Inyección táctil
-description: En los temas de esta sección se proporciona información general sobre la inserción táctil en Windows 8. La inyección táctil permite a los desarrolladores de Windows simular mediante programación la entrada táctil.
+title: Inserción táctil
+description: Los temas de esta sección proporcionan información general sobre la inserción táctil en Windows 8. La inserción táctil Windows a los desarrolladores a simular mediante programación la entrada táctil.
 ms.assetid: 9B82898C-92DF-4F12-9440-D3D5CFD4D0A0
 keywords:
 - interacción con el usuario
@@ -9,28 +9,28 @@ keywords:
 - Función táctil
 ms.topic: article
 ms.date: 02/06/2020
-ms.openlocfilehash: 4889777d7a6beca662dc40a90f89f06e62a04169
-ms.sourcegitcommit: 6fa693874869558b8ee53335e421bdd1233444e5
+ms.openlocfilehash: 6cb7aa3234d657c6291535a9654c572da030f67e4f2a94dc4b9d043a4cfc2ad8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "104149062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830125"
 ---
-# <a name="touch-injection"></a>Inyección táctil
+# <a name="touch-injection"></a>Inserción táctil
 
 ## <a name="purpose"></a>Propósito
 
-En los temas de esta sección se proporciona información general sobre la inserción táctil para aplicaciones Windows. Las API de [inyección táctil](/windows/win32/api/_input_touchinjection/) permiten a los desarrolladores de Windows simular mediante programación la entrada táctil.
+Los temas de esta sección proporcionan información general sobre la inserción táctil para Windows aplicaciones. Las [API de inserción](/windows/win32/api/_input_touchinjection/) táctil permiten a Windows desarrolladores simular mediante programación la entrada táctil.
 
 ## <a name="in-this-section"></a>En esta sección
 
 | Tema | Descripción |
 |---|---|
-| [Referencia de inyección táctil](touch-injection-reference.md)<br/> | En los temas de esta sección se proporcionan las especificaciones de referencia para la inserción táctil.<br/> |
+| [Referencia de inserción táctil](touch-injection-reference.md)<br/> | Los temas de esta sección proporcionan las especificaciones de referencia para la inserción táctil.<br/> |
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-Las API de inyección táctil están diseñadas para desarrolladores que compilan la automatización de entrada táctil y marcos de pruebas con C++.
+Las API de inserción táctil están diseñadas para desarrolladores que están creando marcos de prueba y automatización de entradas táctiles mediante C++.
 
 ## <a name="related-topics"></a>Temas relacionados
 

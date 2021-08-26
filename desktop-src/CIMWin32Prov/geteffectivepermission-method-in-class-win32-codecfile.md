@@ -1,8 +1,8 @@
 ---
-description: Usa los valores establecidos en el parámetro Permissions para determinar si el usuario tiene los permisos especificados establecidos en la propiedad AccessMask del \_ objeto CodecFile de Win32 que representa el archivo de códec.
+description: Usa los valores establecidos en el parámetro Permissions para determinar si el usuario tiene los permisos especificados establecidos en la propiedad AccessMask del objeto CodecFile de Win32 que representa el archivo de \_ códec.
 ms.assetid: 068dfcaf-037b-4516-b85a-8ba6558ba561
 ms.tgt_platform: multiple
-title: Método GetEffectivePermission de la clase Win32_CodecFile (aclui. h)
+title: Método GetEffectivePermission de la clase Win32_CodecFile (Aclui.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: cc2f24071d5ab864e06686f094707d9111ea07ab
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2c3740d1c87b5d74968d0bc4eb92ed8246c9a3c2a0a42a3b0c434c74f306a203
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878985"
 ---
-# <a name="geteffectivepermission-method-of-the-win32_codecfile-class"></a>Método GetEffectivePermission de la \_ clase CodecFile de Win32
+# <a name="geteffectivepermission-method-of-the-win32_codecfile-class"></a>Método GetEffectivePermission de la clase CodecFile de Win32 \_
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) [**GetEffectivePermission**](geteffectivepermission-method-in-class-win32-shortcutfile.md) usa los valores establecidos en el parámetro *Permissions* para determinar si el usuario tiene los permisos especificados establecidos en la propiedad **AccessMask** del objeto [**\_ CodecFile de Win32**](win32-codecfile.md) que representa el archivo de códec. Los permisos se aplican al archivo, el directorio en el que reside el archivo y el recurso compartido, si el directorio o el archivo están en un recurso compartido.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) [**GetEffectivePermission**](geteffectivepermission-method-in-class-win32-shortcutfile.md) usa los valores establecidos en el parámetro *Permissions* para determinar si el usuario tiene los permisos especificados establecidos en la propiedad **AccessMask** del objeto [**\_ CodecFile de Win32**](win32-codecfile.md) que representa el archivo de códec. Los permisos se aplican al archivo, al directorio en el que reside el archivo y al recurso compartido, si el directorio o el archivo están en un recurso compartido.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,115 +42,115 @@ boolean GetEffectivePermission(
 
 <dl> <dt>
 
-*Permisos* \[ de de\]
+*Permisos* \[ En\]
 </dt> <dd>
 
-Mapa de bits de los permisos que se establecen en la propiedad **AccessMask** del objeto [**\_ CodecFile de Win32**](win32-codecfile.md) .
+Mapa de bits de los permisos que se establecen en la **propiedad AccessMask** del [**objeto \_ CodecFile de Win32.**](win32-codecfile.md)
 
 <dt>
 
 <span id="FILE_READ_DATA__file__FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__FILE_LIST_DIRECTORY__DIRECTORY_"></span>
 
-<span id="FILE_READ_DATA__file__FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__FILE_LIST_DIRECTORY__DIRECTORY_"></span>**Archivo \_ de LEER \_ datos (archivo) directorio de lista de archivos ( \_ \_ directorio)** (1 (0x1))
+<span id="FILE_READ_DATA__file__FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__FILE_LIST_DIRECTORY__DIRECTORY_"></span>**FILE \_ READ \_ DATA (archivo) FILE \_ LIST DIRECTORY \_ (directorio)** (1 (0x1))
 
 
 </dt> <dd>
 
-Concede el derecho a leer los datos del archivo. Para un directorio, este valor concede el derecho para mostrar el contenido del directorio.
+Concede el derecho de leer datos del archivo. Para un directorio, este valor concede el derecho de enumerar el contenido del directorio.
 
 </dd> <dt>
 
 <span id="FILE_WRITE_DATA__file__FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__FILE_ADD_FILE__DIRECTORY_"></span>
 
-<span id="FILE_WRITE_DATA__file__FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__FILE_ADD_FILE__DIRECTORY_"></span>**Archivo \_ de ESCRIBIR archivo de \_ datos (archivo) \_ agregar \_ archivo (directorio)** (2 (0X2))
+<span id="FILE_WRITE_DATA__file__FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__FILE_ADD_FILE__DIRECTORY_"></span>**FILE \_ WRITE \_ DATA (file) FILE \_ ADD FILE \_ (directory)** (2 (0x2))
 
 
 </dt> <dd>
 
-Concede el derecho para escribir datos en el archivo. Para un directorio, este valor concede el derecho a crear un archivo en el directorio.
+Concede el derecho de escribir datos en el archivo. Para un directorio, este valor concede el derecho de crear un archivo en el directorio.
 
 </dd> <dt>
 
 <span id="FILE_APPEND_DATA__file__FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file__file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE__FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>
 
-<span id="FILE_APPEND_DATA__file__FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file__file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE__FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>**Archivo \_ de ANEXAr \_ archivo de datos (archivo) \_ agregar \_ subdirectorio (directorio)** (4 (0x4))
+<span id="FILE_APPEND_DATA__file__FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file__file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE__FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>**FILE \_ APPEND \_ DATA (file) FILE \_ ADD \_ SUBDIRECTORY (directory)** (4 (0x4))
 
 
 </dt> <dd>
 
-Concede el derecho para anexar datos al archivo. Para un directorio, este valor concede el derecho a crear un subdirectorio.
+Concede el derecho a anexar datos al archivo. Para un directorio, este valor concede el derecho a crear un subdirectorio.
 
 </dd> <dt>
 
 <span id="FILE_READ_EA"></span><span id="file_read_ea"></span>
 
-<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**Archivo \_ de LEER \_ EA** (8 (0x8))
+<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**FILE \_ READ \_ EA** (8 (0x8))
 
 
 </dt> <dd>
 
-Concede el derecho para leer atributos extendidos.
+Concede el derecho de leer atributos extendidos.
 
 </dd> <dt>
 
 <span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>
 
-<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**Archivo \_ de ESCRIBIR \_ EA** (16 (0x10))
+<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**FILE \_ WRITE \_ EA** (16 (0x10))
 
 
 </dt> <dd>
 
-Concede el derecho para escribir atributos extendidos.
+Concede el derecho a escribir atributos extendidos.
 
 </dd> <dt>
 
 <span id="FILE_EXECUTE__file__FILE_TRAVERSE__directory_"></span><span id="file_execute__file__file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__FILE_TRAVERSE__DIRECTORY_"></span>
 
-<span id="FILE_EXECUTE__file__FILE_TRAVERSE__directory_"></span><span id="file_execute__file__file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__FILE_TRAVERSE__DIRECTORY_"></span>**Archivo \_ de EJECUTAR (archivo) recorrido de archivos ( \_ directorio)** (32 (0x20))
+<span id="FILE_EXECUTE__file__FILE_TRAVERSE__directory_"></span><span id="file_execute__file__file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__FILE_TRAVERSE__DIRECTORY_"></span>**FILE \_ EXECUTE (archivo) FILE \_ TRAVERSE (directorio)** (32 (0x20))
 
 
 </dt> <dd>
 
-Concede el derecho para ejecutar un archivo. Para un directorio, se puede atravesar el directorio.
+Concede el derecho a ejecutar un archivo. Para un directorio, se puede recorrer el directorio.
 
 </dd> <dt>
 
 <span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>
 
-<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**Archivo \_ de ELIMINAR \_ secundario (directorio)** (64 (0x40))
+<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**FILE \_ DELETE \_ CHILD (directorio)** (64 (0x40))
 
 
 </dt> <dd>
 
-Concede el derecho para eliminar un directorio y todos los archivos que contiene, aunque los archivos sean de solo lectura.
+Concede el derecho a eliminar un directorio y todos los archivos que contiene, incluso si los archivos son de solo lectura.
 
 </dd> <dt>
 
 <span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>
 
-<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**Archivo \_ de \_Atributos de lectura** (128 (0x80))
+<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**FILE \_ LEER \_ ATRIBUTOS** (128 (0x80))
 
 
 </dt> <dd>
 
-Concede el derecho a leer los atributos de archivo.
+Concede el derecho a leer atributos de archivo.
 
 </dd> <dt>
 
 <span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>
 
-<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**Archivo \_ de \_Atributos de escritura** (256 (0x100))
+<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**FILE \_ ATRIBUTOS \_ DE** ESCRITURA (256 (0x100))
 
 
 </dt> <dd>
 
-Concede el derecho para cambiar los atributos de archivo.
+Concede el derecho a cambiar los atributos de archivo.
 
 </dd> <dt>
 
 <span id="DELETE"></span><span id="delete"></span>
 
-<span id="DELETE"></span><span id="delete"></span>**Eliminar** (65536 (0x10000))
+<span id="DELETE"></span><span id="delete"></span>**DELETE** (65536 (0x10000))
 
 
 </dt> <dd>
@@ -161,7 +161,7 @@ Concede acceso de eliminación.
 
 <span id="READ_CONTROL"></span><span id="read_control"></span>
 
-<span id="READ_CONTROL"></span><span id="read_control"></span>**Leer \_ CONTROL** (131072 (0x20000))
+<span id="READ_CONTROL"></span><span id="read_control"></span>**READ \_ CONTROL** (131072 (0x20000))
 
 
 </dt> <dd>
@@ -172,7 +172,7 @@ Concede acceso de lectura al descriptor de seguridad y al propietario.
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-<span id="WRITE_DAC"></span><span id="write_dac"></span>**Escribir \_ DAC** (262144 (0x40000))
+<span id="WRITE_DAC"></span><span id="write_dac"></span>**WRITE \_ DAC** (262144 (0x40000))
 
 
 </dt> <dd>
@@ -183,12 +183,12 @@ Concede acceso de escritura a la lista de control de acceso discrecional (ACL).
 
 <span id="WRITE_OWNER"></span><span id="write_owner"></span>
 
-<span id="WRITE_OWNER"></span><span id="write_owner"></span>**Escribir \_ PROPIETARIO** (524288 (0x80000))
+<span id="WRITE_OWNER"></span><span id="write_owner"></span>**WRITE \_ OWNER** (524288 (0x80000))
 
 
 </dt> <dd>
 
-Asigna el propietario de la escritura.
+Asigna el propietario de escritura.
 
 </dd> <dt>
 
@@ -205,7 +205,7 @@ Sincroniza el acceso y permite que un proceso espere a que un objeto entre en el
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **verdadero** cuando el autor de la llamada tiene los permisos especificados y **false** cuando el autor de la llamada no tiene los permisos especificados.
+Devuelve **True** cuando el autor de la llamada tiene los permisos especificados y **false** cuando el autor de la llamada no tiene los permisos especificados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -215,9 +215,9 @@ Devuelve **verdadero** cuando el autor de la llamada tiene los permisos especifi
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| Encabezado<br/>                   | <dl> <dt>Aclui. h</dt> </dl>      |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| Header<br/>                   | <dl> <dt>Aclui.h</dt> </dl>      |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -229,7 +229,7 @@ Devuelve **verdadero** cuando el autor de la llamada tiene los permisos especifi
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Win32 \_ CodecFile**](win32-codecfile.md)
+[**CódecFile de \_ Win32**](win32-codecfile.md)
 </dt> </dl>
 
  

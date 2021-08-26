@@ -4,30 +4,30 @@ description: La API del servidor HTTP mantiene una base de datos de enrutamiento
 ms.assetid: 7c613137-66bd-4375-93cb-b5562823bc12
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da483030441f3a9239eef153da59212166bce9eb
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: e40feab96a913da895633bddd8e53697b6aeef959162da054da22aeeedef652a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104421586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829965"
 ---
 # <a name="routing-incoming-requests"></a>Enrutamiento de solicitudes entrantes
 
-La API del servidor HTTP mantiene una base de datos de enrutamiento para determinar qué aplicación recibe una solicitud entrante. La tabla de enrutamiento se genera a partir de la base de datos de reserva y contiene entradas de reserva, así como registros actuales. Cuando se realiza un registro o una reserva, se coloca en el cubo de la base de datos de enrutamiento que corresponde al tipo de host de la siguiente manera:
+La API del servidor HTTP mantiene una base de datos de enrutamiento para determinar qué aplicación recibe una solicitud entrante. La tabla de enrutamiento se ha creado a partir de la base de datos de reserva y contiene entradas de reserva, así como registros actuales. Cuando se realiza un registro o una reserva, se coloca en el cubo de la base de datos de enrutamiento que corresponde al tipo de host como se muestra a continuación:
 
--   \+ : los registros de puerto se colocan en el cubo "comodín seguro".
+-   \+ : los registros de puertos se colocan en el cubo "Carácter comodín fuerte".
 
--   host: los registros de puerto se colocan en el cubo "explícito"
+-   host: los registros de puerto se colocan en el cubo "Explícito".
 
--   IP: los registros de puerto se colocan en el cubo "comodín débil de IP enlazada"
+-   IP: los registros de puertos se colocan en el cubo "Carácter comodín débil enlazado a IP"
 
--   \* : los registros de puerto se colocan en el cubo "comodín débil"
+-   \* : los registros de puertos se colocan en el cubo "Carácter comodín débil".
 
-Estos pasos también hacen referencia al orden en que se procesan las solicitudes HTTP entrantes. En primer lugar, se comprueban las reservas de caracteres comodín seguros y, a continuación, se comprueba la reserva explícita seguida del carácter comodín débil y el carácter comodín débil. La búsqueda se detiene cuando se encuentra una coincidencia para que no se encuentren los registros en ninguno de los cubos restantes.
+Estos pasos también hacen referencia al orden en que se procesan las solicitudes HTTP entrantes. Primero se comprueban las reservas con caracteres comodín fuertes y, a continuación, se comprueba la reserva explícita seguida del carácter comodín débil enlazado a IP y el carácter comodín débil. La búsqueda se detiene cuando se encuentra una coincidencia para que no se busquen registros en ninguno de los cubos restantes.
 
-El algoritmo de enrutamiento de la API del servidor HTTP localiza la mejor coincidencia para [UrlPrefix](urlprefix-strings.md) mediante la búsqueda de las entradas de registro y de las entradas de reserva de la base de datos de enrutamiento, comenzando por el depósito de comodín seguro y finalizando con el depósito de comodín débil. La mejor coincidencia, dentro de un depósito, es la coincidencia más larga en la parte del URI relativo de UrlPrefix (suponiendo que haya una coincidencia exacta para las partes de host, puerto y esquema de la dirección URL). Una vez que se encuentra una coincidencia en un depósito, el algoritmo de enrutamiento detiene su búsqueda y omite todos los depósitos de menor prioridad.
+El algoritmo de enrutamiento de API de servidor HTTP busca la mejor coincidencia para [UrlPrefix](urlprefix-strings.md) mediante la búsqueda de las entradas de registro y las entradas de reserva de la base de datos de enrutamiento, empezando por el depósito de caracteres comodín seguro y finalizando con el depósito de caracteres comodín débiles. La mejor coincidencia, dentro de un cubo, es la coincidencia más larga en la parte relativa del URI de UrlPrefix (suponiendo una coincidencia exacta para las partes host, puerto y esquema de la dirección URL). Una vez que se encuentra una coincidencia en un cubo, el algoritmo de enrutamiento detiene su búsqueda y omite todos los depósitos de prioridad inferior.
 
-Por ejemplo, considere los siguientes registros (en orden descendente de prioridad en función de los tipos de cubos:
+Por ejemplo, considere los registros siguientes (enumerados en orden descendente de prioridad en función de los tipos de cubo:
 
 -   Registro: `https://+:80/vroot/` está registrado por la aplicación 1
 
@@ -35,19 +35,19 @@ Por ejemplo, considere los siguientes registros (en orden descendente de priorid
 
 -   Registro: `https://\*:80/` está registrado por la aplicación 3
 
-Una solicitud entrante para `https://adatum.com:80/vroot/subdir/file.htm/` se entrega a la aplicación 1. Una solicitud entrante para `https://adatum.com:80/default.htm/` se entrega a la aplicación 2. Una solicitud entrante para `https://otheradatum.com:80/file.htm/` se entrega a la aplicación 3.
+Una solicitud entrante para `https://adatum.com:80/vroot/subdir/file.htm/` se entrega a la aplicación 1. Una solicitud entrante para `https://adatum.com:80/default.htm/` se entrega a la aplicación 2. Se entrega una solicitud entrante `https://otheradatum.com:80/file.htm/` de a la aplicación 3.
 
 Si la mejor coincidencia es una entrada de reserva, significa que la aplicación que debe recibir la solicitud no se está ejecutando. Por ejemplo, considere el registro y la reserva siguientes:
 
--   Registro: `https://\*:80/vroot/` está registrado por la aplicación 1, el usuario A
+-   Registro: `https://\*:80/vroot/` está registrado por la aplicación 1, usuario A
 
--   Reserva: se `https://adatum.com:80/` ha reservado para el usuario B
+-   Reserva: `https://adatum.com:80/` se ha reservado para el usuario B
 
-Una solicitud entrante para `https://adatum.com:80/vroot/file.htm/` no se entrega a la aplicación 1 porque la mejor coincidencia conduce a la entrada de reserva para el usuario B. Las reglas de prioridad se aplican en este caso a la reserva que tiene una prioridad más alta. Si no hay ningún proceso activo que esté autorizado y registrado en las solicitudes de servicio de la dirección URL recibida, la solicitud se rechazará con un código de estado 400 (solicitud incorrecta).
+No se entrega una solicitud entrante a la aplicación 1 porque la mejor coincidencia conduce a la entrada `https://adatum.com:80/vroot/file.htm/` de reserva del usuario B. En este caso, las reglas de precedencia se aplican a la reserva que tiene una prioridad más alta. Si no hay ningún proceso activo que esté autorizado y registrado en las solicitudes de servicio para la dirección URL recibida, la solicitud se rechazará con un código de estado 400 (solicitud no válida).
 
- 
+ 
 
- 
+ 
 
 
 

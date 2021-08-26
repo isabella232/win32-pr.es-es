@@ -1,9 +1,9 @@
 ---
-title: Elemento messageTable (MetadataType)
-description: Contiene referencias a cadenas que se usan en la sección de metadatos del manifiesto de instrumentación de eventos. Las cadenas se almacenan en un grupo de elementos de mensaje e identificadores combinados.
+title: elemento messageTable (MetadataType)
+description: Contiene referencias a cadenas que se usan en la sección de metadatos del manifiesto de instrumentación de eventos. Las cadenas se almacenan en un grupo de elementos de mensaje e IDs emparejados.
 ms.assetid: 868af191-0f9c-435b-878f-ef0584e097d1
 keywords:
-- elemento messageTable EventLog
+- elemento EventLog de messageTable
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eb5efc261a2c055a95f71ba556c9acbc0ad45373
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f7c614210a22bc6c6d160a7c161c5b5a89aab85116285822465b43ba75e63095
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865665"
 ---
-# <a name="messagetable-metadatatype-element"></a>Elemento messageTable (MetadataType)
+# <a name="messagetable-metadatatype-element"></a>elemento messageTable (MetadataType)
 
-Contiene referencias a cadenas que se usan en la sección de metadatos del manifiesto de instrumentación de eventos. Las cadenas se almacenan en un grupo de elementos de [**mensaje**](eventmanifestschema-message-messagetable-element.md) e identificadores combinados.
+Contiene referencias a cadenas que se usan en la sección de metadatos del manifiesto de instrumentación de eventos. Las cadenas se almacenan en un grupo de elementos [**de**](eventmanifestschema-message-messagetable-element.md) mensaje e IDs emparejados.
 
 ``` syntax
 <xs:element name="messageTable">
@@ -56,7 +56,7 @@ Contiene referencias a cadenas que se usan en la sección de metadatos del manif
 </xs:element>
 ```
 
-El elemento **messageTable** se define mediante el tipo complejo de [**MetadataType**](eventmanifestschema-metadatatype-complextype.md) .
+El tipo complejo [**MetadataType**](eventmanifestschema-metadatatype-complextype.md) define el elemento **messageTable.**
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -75,8 +75,8 @@ El elemento **messageTable** se define mediante el tipo complejo de [**MetadataT
 | Nombre    | Tipo   | Descripción                                                              |
 |---------|--------|--------------------------------------------------------------------------|
 | message | string | Referencia a la cadena localizada en la tabla de cadenas.<br/>      |
-| mId     | string | No se utiliza.<br/>                                                     |
-| símbolo  | string | Símbolo que se usa para hacer referencia al mensaje.<br/>                     |
+| mId     | string | No se usa.<br/>                                                     |
+| símbolo  | string | Símbolo utilizado para hacer referencia al mensaje.<br/>                     |
 | value   | string | Número que se va a usar como identificador de mensaje para este mensaje.<br/> |
 
 
@@ -87,8 +87,8 @@ El elemento **messageTable** se define mediante el tipo complejo de [**MetadataT
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

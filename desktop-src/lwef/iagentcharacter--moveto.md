@@ -1,19 +1,19 @@
 ---
-title: IAgentCharacter moveTo
-description: IAgentCharacter moveTo
+title: IAgentCharacter MoveTo
+description: IAgentCharacter MoveTo
 ms.assetid: 4e24d2f8-1df2-47ca-a1e9-b9d29708207d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86d1ba423dc637895216ff03e2adec2862bbf27d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 00ea5a0e288e4b7d9782f1b463fdbcccf01b0da9314894be1a60c556392e25e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848545"
 ---
-# <a name="iagentcharactermoveto"></a>IAgentCharacter:: moveTo
+# <a name="iagentcharactermoveto"></a>IAgentCharacter::MoveTo
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT MoveTo(
@@ -24,23 +24,23 @@ HRESULT MoveTo(
 );
 ```
 
-Reproduce la animación de estado de **movimiento** asociada y mueve el marco de caracteres a la ubicación especificada.
+Reproduce la animación **de estado Moving** asociada y mueve el marco de caracteres a la ubicación especificada.
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente. Cuando la función devuelve, esta variable contiene el identificador de la solicitud.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente. Cuando la función devuelve un resultado, esta variable contiene el identificador de la solicitud.
 
 <dl> <dt>
 
-<span id="x"></span><span id="X"></span>*x1*
+<span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-Coordenada x de la nueva posición en píxeles, con respecto al origen de la pantalla (superior izquierda). La ubicación de un carácter se basa en la esquina superior izquierda de su fotograma de animación.
+Coordenada x de la nueva posición en píxeles, con respecto al origen de la pantalla (parte superior izquierda). La ubicación de un carácter se basa en la esquina superior izquierda de su marco de animación.
 
 </dd> <dt>
 
-<span id="y"></span><span id="Y"></span>*sí*
+<span id="y"></span><span id="Y"></span>*y*
 </dt> <dd>
 
-Coordenada y de la nueva posición en píxeles, con respecto al origen de la pantalla (superior izquierda). La ubicación de un carácter se basa en la esquina superior izquierda de su fotograma de animación.
+Coordenada y de la nueva posición en píxeles, con respecto al origen de la pantalla (parte superior izquierda). La ubicación de un carácter se basa en la esquina superior izquierda de su marco de animación.
 
 </dd> <dt>
 
@@ -54,17 +54,17 @@ Parámetro que especifica en milisegundos la rapidez con la que se mueve el marc
 <span id="pdwReqID"></span><span id="pdwreqid"></span><span id="PDWREQID"></span>*pdwReqID*
 </dt> <dd>
 
-Dirección de una variable que recibe el identificador de solicitud [**moveTo**](https://www.bing.com/search?q=**MoveTo**) .
+Dirección de una variable que recibe el identificador [**de solicitud MoveTo.**](https://www.bing.com/search?q=**MoveTo**)
 
 </dd> </dl>
 
-Al usar el protocolo HTTP para tener acceso a los datos de animación y de caracteres, utilice el método [**Prepare**](/windows/desktop/lwef/iagentcharacter--prepare) para garantizar la disponibilidad de las animaciones de estado en **movimiento** antes de llamar a este método. Incluso si la animación no está cargada, el servidor todavía mueve el marco.
+Cuando use el protocolo HTTP para acceder a los datos de  caracteres y animaciones, use el método [**Prepare**](/windows/desktop/lwef/iagentcharacter--prepare) para garantizar la disponibilidad de las animaciones de estado móvil antes de llamar a este método. Incluso si no se carga la animación, el servidor sigue trasladando el fotograma.
 
 ## <a name="see-also"></a>Consulte también
 
-[**IAgentCharacter:: SetPosition**](iagentcharacter--setposition.md)
+[**IAgentCharacter::SetPosition**](iagentcharacter--setposition.md)
 
 
- 
+ 
 
- 
+ 

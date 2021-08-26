@@ -1,7 +1,7 @@
 ---
-description: La propiedad ShortcutTarget del objeto de instalador examina un acceso directo y devuelve su producto, nombre de característica y componente si está disponible.
+description: La propiedad ShortcutTarget del objeto Installer examina un acceso directo y devuelve su producto, nombre de característica y componente si está disponible.
 ms.assetid: fd7a1d34-3013-4419-af92-0a0162c93494
-title: Propiedad Installer. ShortcutTarget
+title: Installer.ShortcutTarget, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 1c53d43188af9ed8f58ddd54916761e346f1bad1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b54e334314c0bfd0fb721b175d0a14894d8a509ea02ff36e324903bb1fdbffaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894005"
 ---
-# <a name="installershortcuttarget-property"></a>Propiedad Installer. ShortcutTarget
+# <a name="installershortcuttarget-property"></a>Installer.ShortcutTarget, propiedad
 
-La propiedad **ShortcutTarget** del objeto de [**instalador**](installer-object.md) examina un acceso directo y devuelve su producto, nombre de característica y componente si está disponible.
+La **propiedad ShortcutTarget** del objeto [**Installer**](installer-object.md) examina un acceso directo y devuelve su producto, nombre de característica y componente si está disponible.
 
 Esta propiedad es de solo lectura.
 
@@ -39,13 +39,13 @@ propVal = Installer.ShortcutTarget
 
 Ruta de acceso completa y nombre de archivo para el archivo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-ShortcutTarget devuelve un [**objeto de registro**](record-object.md) que contiene tres campos:
+ShortcutTarget devuelve un [**objeto Record**](record-object.md) que contiene tres campos:
 
--   El campo 1 es un GUID para el código de producto del acceso directo, si está disponible. Este campo puede ser null.
--   El campo 2 es el identificador de la característica del acceso directo, si está disponible. Este campo puede ser null.
--   El campo 3 es un GUID para el código del componente, si está disponible. Este campo puede ser null.
+-   El campo 1 es un GUID para el código de producto del acceso directo, si está disponible. Este campo puede ser NULL.
+-   El campo 2 es el identificador de característica del acceso directo, si está disponible. Este campo puede ser NULL.
+-   El campo 3 es un GUID para el código del componente, si está disponible. Este campo puede ser NULL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ ShortcutTarget devuelve un [**objeto de registro**](record-object.md) que contie
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 

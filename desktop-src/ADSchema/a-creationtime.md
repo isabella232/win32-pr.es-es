@@ -1,11 +1,11 @@
 ---
-title: Creation-Time atributo)
+title: Creation-Time atributo
 description: Fecha y hora en que se creó el objeto.
 ms.assetid: eab276f8-2956-4a83-beb4-a3b8ed11ccca
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Creation-Time
-- atributo creationTime esquema de AD
+- Creation-Time esquema de AD de atributo
+- Esquema de AD del atributo creationTime
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4a695495d33e47a3597db9954f3b563245eab05
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 64f5dc7c772ab71ef062077c2ab7de7f6039c6fcb18d238e90f82d54c7a58fdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926095"
 ---
-# <a name="creation-time-attribute"></a>Creation-Time atributo)
+# <a name="creation-time-attribute"></a>Creation-Time atributo
 
 Fecha y hora en que se creó el objeto.
 
@@ -30,13 +30,13 @@ Fecha y hora en que se creó el objeto.
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Creation-Time                        |
-| Nombre para mostrar de LDAP | creationTime                         |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| Ldap-Display-Name | creationTime                         |
+| Size              | 8 bytes                              |
+| Actualizar privilegios  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.26                |
-| System-ID-GUID    | bf967946-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf967946-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ Fecha y hora en que se creó el objeto.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Fecha y hora en que se creó el objeto.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Fecha y hora en que se creó el objeto.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Fecha y hora en que se creó el objeto.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Fecha y hora en que se creó el objeto.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Fecha y hora en que se creó el objeto.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

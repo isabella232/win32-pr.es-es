@@ -4,18 +4,18 @@ ms.assetid: 296255b8-fe5c-46dd-b717-487aaae0db80
 title: Administración de colores y el esquema de impresión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9258d9dcc59ab24f9cfca8e170bf3f3f62841b21
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: c3e7e5a86b9f598183a4b3765e1cc38836b4ee7bb62e1835e06575392771dc5a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846396"
 ---
 # <a name="color-management-and-the-print-schema"></a>Administración de colores y el esquema de impresión
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Las palabras clave del elemento configurable por el usuario pueden ser específicas de XPS o no específicas de XPS. En el caso de que no sean específicos de XPS, la palabra clave se puede usar para la impresión basada en GDI heredada. Si una aplicación decide establecer estas palabras clave en un PrintTicket, es el controlador quien determina la acción y el comportamiento adecuados que se deben realizar en función de las definiciones presentadas en el esquema de impresión. Cualquiera de estas palabras clave se puede usar en el contexto de ICM. Para obtener más información, consulte el SDK de Windows Vista.
+Las palabras clave del elemento configurable por el usuario pueden ser específicas de XPS o no específicas de XPS. En el caso de que no sean específicos de XPS, la palabra clave se puede usar para la impresión basada en GDI heredada. Si una aplicación decide establecer estas palabras clave en un PrintTicket, es el controlador quien determina la acción y el comportamiento adecuados que se deben realizar en función de las definiciones que se presentan en el esquema de impresión. Cualquiera de estas palabras clave se puede usar en el contexto de ICM. Para más información, consulte el sdk Windows Vista.
 
 
 
@@ -36,7 +36,7 @@ Las palabras clave del elemento configurable por el usuario pueden ser específi
 
 ## <a name="pagecolormanagement-system-handling"></a>Control del sistema PageColorManagement
 
-Para PageColorManagement, el sistema proporciona el control automático de la conversión PrintTicket a DEVMODE o DEVMODE a PrintTicket si es necesario. Esto depende de la ruta de impresión específica entre la aplicación (Win32 o WPF) y el controlador (basado en GDI o XPSDrv). En el caso de la impresión desde una aplicación Windows Presentation Foundation a un controlador de impresión XPSDrv de Microsoft, no se debe anunciar una opción pública PageColorManagement del sistema en el documento PrintTicket o PrintCapabilities; En este caso, el sistema no puede controlar automáticamente la administración de colores. La impresión desde una aplicación Win32 a un controlador de impresión XPSDrv de Microsoft puede dar lugar a la administración de colores entre la aplicación y GDI; sin embargo, después de la conversión al formato XPS, no habrá ningún control automático del sistema de administración de colores entre el documento XPS y el controlador o dispositivo, ya que el formato XPS etiqueta cada elemento con información de color completa y es el controlador o el dispositivo los que deben procesar esta información.
+Para PageColorManagement, el sistema proporciona el control automático de la conversión PrintTicket a DEVMODE o DEVMODE a PrintTicket si es necesario. Esto depende de la ruta de impresión específica entre la aplicación (Win32 o WPF) y el controlador (basado en GDI o XPSDrv). En el caso de imprimir desde una aplicación Windows Presentation Foundation a un controlador de impresión XPSDrv de Microsoft, no se debe anunciar una opción pública PageColorManagement del sistema en el documento PrintTicket o PrintCapabilities; En este caso, el sistema no puede controlar automáticamente la administración de colores. La impresión desde una aplicación Win32 a un controlador de impresión XPSDrv de Microsoft puede dar lugar a la administración de colores entre la aplicación y GDI; sin embargo, después de la conversión al formato XPS, no habrá ningún control automático del sistema de administración de colores entre el documento XPS y el controlador o dispositivo, ya que el formato XPS etiqueta cada elemento con información de color completa y es el controlador o el dispositivo los que deben procesar esta información.
 
 
 
@@ -72,7 +72,7 @@ Todas las demás palabras clave relacionadas con administración de colores (ade
 
 ## <a name="joboptimaldestinationcolorprofile-and-pagedestinationcolorprofile-usage"></a>JobOptimalDestinationColorProfile y PageDestinationColorProfile Usage
 
-Una aplicación PUEDE decidir consultar el documento PrintCapabilities para JobOptimalDestinationColorProfile. Esto podría proporcionar a una aplicación el perfil de color óptimo dada la configuración actual del dispositivo, tal como se define en el documento PrintCapabilities. Si la aplicación decide que quiere que el controlador realice la administración de colores en el perfil de color de destino especificado por JobOptimalDestinationColorProfile, PageColorManagement y PageDestinationColorProfile se establecerán en Driver y DriverConfiguration en PrintTicket respectivamente. Si la aplicación no quiere usar JobOptionalDestinationColorProfile y decide usar su propio elemento, DEBE establecer PageColorManagement en None y también establecer PageDestinationColorProfile en Application en PrintTicket para transmitir que la aplicación ya ha realizado la administración de colores en su perfil de color de destino especificado. Puede producirse otro escenario cuando la aplicación decide usar el perfil de color de destino óptimo devuelto por los controladores PrintCapabilities, pero decide realizar la administración de colores por sí misma. En este caso, PageColorManagement se establecería en None y PageDestinationColorProfile se establecería en Application.
+Una aplicación PUEDE decidir consultar el documento PrintCapabilities para JobOptimalDestinationColorProfile. Esto podría proporcionar a una aplicación el perfil de color óptimo dada la configuración actual del dispositivo, tal como se define en el documento PrintCapabilities. Si la aplicación decide que quiere que el controlador realice la administración de colores en el perfil de color de destino especificado por JobOptimalDestinationColorProfile, PageColorManagement y PageDestinationColorProfile se establecerán en Driver y DriverConfiguration en PrintTicket respectivamente. Si la aplicación no quiere usar JobOptionalDestinationColorProfile y decide usar su propio, DEBE establecer PageColorManagement en None y establecer también PageDestinationColorProfile en Application en PrintTicket para transmitir que la aplicación ya ha realizado la administración de colores en su perfil de color de destino especificado. Puede producirse otro escenario cuando la aplicación decide usar el perfil de color de destino óptimo devuelto por los controladores PrintCapabilities, pero decide realizar la administración de colores por sí misma. En este caso, PageColorManagement se establecería en None y PageDestinationColorProfile se establecería en Application.
 
 ## <a name="pagesourcecolorprofile-usage"></a>Uso de PageSourceColorProfile
 
@@ -80,11 +80,11 @@ Para PageSourceColorProfile, una aplicación PUEDE especificar un perfil de colo
 
 ## <a name="pagedevicecolorspaceusage"></a>PageDeviceColorSpaceUsage
 
-PageDeviceColorSpaceUsage es un elemento específico configurable por el usuario XPS que establece la aplicación. Proporciona instrucciones para el dispositivo estableciendo la opción adecuada en PrintTicket para el control de perfiles de espacio de color asociado dentro de un documento XPS. La aplicación o printTicket existente PUEDE especificar esta palabra clave en un PrintTicket enviado al dispositivo. Tanto si está presente como si no, es el controlador quien decide el comportamiento de cada caso, en función de las definiciones que se presentan en el esquema de impresión.
+PageDeviceColorSpaceUsage es un elemento específico configurable por el usuario XPS que establece la aplicación. Proporciona instrucciones para el dispositivo estableciendo la opción adecuada en PrintTicket para el control de perfiles de espacio de color asociado dentro de un documento XPS. La aplicación o printTicket existente PUEDEN especificar esta palabra clave en un PrintTicket enviado al dispositivo. Tanto si está presente como si no, es el controlador quien decide el comportamiento de cada caso, en función de las definiciones que se presentan en el esquema de impresión.
 
-## <a name="print-schema-color-management-example-flow"></a>Flujo de ejemplo de administración de colores de esquema de impresión
+## <a name="print-schema-color-management-example-flow"></a>Ejemplo de administración de colores del esquema de impresión Flow
 
-En el diagrama siguiente se muestra el flujo de los escenarios más probables para usar administración de colores y el esquema de impresión. Por motivos de simplicidad y legibilidad, solo se usaron las siguientes palabras clave de esquema de impresión configurables por el usuario para demostrar su uso: PageColorManagement, JobOptimalDestinaionColorProfile, PageSourceColorProfile y PageDestinationColorProfile. Una línea sólida representa una acción que DEBERÍA producirse y una línea discontinua representa una acción que puede producirse. El escenario siguiente no es la interacción garantizada que se producirá entre la aplicación, el controlador y el sistema; sin embargo, representa el caso de uso más común que se producirá.
+En el diagrama siguiente se muestra el flujo de los escenarios más probables para usar administración de colores y el esquema de impresión. Para simplificar y mejorar la legibilidad, solo se usaron las siguientes palabras clave de esquema de impresión configurables por el usuario para demostrar su uso: PageColorManagement, JobOptimalDestinaionColorProfile, PageSourceColorProfile y PageDestinationColorProfile. Una línea sólida representa una acción que DEBERÍA producirse y una línea discontinua representa una acción que puede producirse. El escenario siguiente no es la interacción garantizada que se producirá entre la aplicación, el controlador y el sistema; sin embargo, representa el caso de uso más común que se producirá.
 
 ![un diagrama que muestra cómo se procesa la configuración de administración de colores](images/local-1992284846-colormanagementtest3.png)
 

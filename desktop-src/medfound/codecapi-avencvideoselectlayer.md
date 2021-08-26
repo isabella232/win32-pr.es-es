@@ -1,17 +1,17 @@
 ---
 description: Establece la capa de selección de vídeo para un codificador de vídeo.
 ms.assetid: 2CB83D5B-93BB-43F0-B231-5B773BDB4D5F
-title: Propiedad CODECAPI_AVEncVideoSelectLayer (Codecapi. h)
+title: CODECAPI_AVEncVideoSelectLayer propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0795a7e22f6dde31db52b5a59d719075001002f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ffabf6de2e25d2dde1b8509747659ff7809e38e6777cef40d63bd5bce77d35e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959055"
 ---
-# <a name="codecapi_avencvideoselectlayer-property"></a>\_Propiedad AVEncVideoSelectLayer de CODECAPI
+# <a name="codecapi_avencvideoselectlayer-property"></a>Propiedad CODECAPI \_ AVEncVideoSelectLayer
 
 Establece la capa de selección de vídeo para un codificador de vídeo.
 
@@ -23,9 +23,9 @@ Establece la capa de selección de vídeo para un codificador de vídeo.
 
 **CODECAPI \_ AVEncVideoSelectLayer**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad también se usa con [codificadores de cámara H. 264 UVC 1,5](camera-encoder-h264-uvc-1-5.md).
+Esta propiedad también se usa con codificadores de cámara [H.264 UVC 1.5](camera-encoder-h264-uvc-1-5.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ Esta propiedad también se usa con [codificadores de cámara H. 264 UVC 1,5](cam
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                     |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Esta propiedad también se usa con [codificadores de cámara H. 264 UVC 1,5](cam
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

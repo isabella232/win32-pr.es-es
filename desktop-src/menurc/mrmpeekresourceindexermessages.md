@@ -1,6 +1,6 @@
 ---
-title: Función MrmPeekResourceIndexerMessages (MrmResourceIndexer. h)
-description: Ver los mensajes generados por un indizador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados.
+title: Función MrmPeekResourceIndexerMessages (MrmResourceIndexer.h)
+description: Ver los mensajes generados por un indexador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados.
 ms.assetid: 87D093AE-7444-4778-8B9E-1D0D972C90E1
 keywords:
 - Menús de la función MrmPeekResourceIndexerMessages y otros recursos
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45599865633afa413594be7e82b0c7ace853434b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f72325ab147656873af2bbf13d7ce1cfa47802c816dc9f14f0c6ee4f3c821683
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847335"
 ---
-# <a name="mrmpeekresourceindexermessages-function"></a>MrmPeekResourceIndexerMessages función)
+# <a name="mrmpeekresourceindexermessages-function"></a>Función MrmPeekResourceIndexerMessages
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Ver los mensajes generados por un indizador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea [API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Ver los mensajes generados por un indexador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de paquetes (PRI) y sistemas [de compilación personalizados.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,30 +44,30 @@ HRESULT HRESULT MrmPeekResourceIndexerMessages(
 
 <dl> <dt>
 
-*indexador* \[ de\]
+*indexador* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **MrmResourceIndexerHandle**](mrmresourceindexerhandle.md)**
 
-Identificador que identifica el indizador de recursos que los mensajes que desea ver.
+Identificador que identifica el indexador de recursos que desea ver los mensajes.
 
 </dd> <dt>
 
-*mensajes* \[ de enuncia\]
+*mensajes* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **MrmResourceIndexerMessage**](mrmresourceindexermessage.md)\*\***
 
-Un puntero a un puntero a un [**MrmResourceIndexerMessage**](mrmresourceindexermessage.md). La función asigna una matriz de **MrmResourceIndexerMessage** y devuelve un puntero a esa memoria en *los mensajes*. No libere el puntero cuya dirección pasa a *los mensajes*.
+Puntero a un puntero a [**mrmResourceIndexerMessage**](mrmresourceindexermessage.md). La función asigna una matriz de **MrmResourceIndexerMessage** y devuelve un puntero a esa memoria en *los mensajes*. No libera el puntero cuya dirección se pasa a los *mensajes*.
 
 </dd> <dt>
 
-*numMsgs* \[ enuncia\]
+*numMsgs* \[ out\]
 </dt> <dd>
 
-Tipo: **ULong \** _
+Tipo: **ULONG \***
 
-Número de mensajes devueltos en _messages *.
+Número de mensajes devueltos en *los mensajes*.
 
 </dd> </dl>
 
@@ -75,11 +75,11 @@ Número de mensajes devueltos en _messages *.
 
 Tipo: **HRESULT**
 
-Es \_ correcto si la función se realizó correctamente; de lo contrario, es algún otro valor. Use las macros SUCCEEDED () o FAILed () (definidas en Winerror. h) para determinar si la operación se ha realizado correctamente o no.
+S \_ Ok si la función se ha hecho correctamente; de lo contrario, algún otro valor. Use las macros SUCCEEDED() o FAILED() (definidas en winerror.h) para determinar el éxito o el error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación no posee la memoria asignada y devuelta en *los mensajes*, por lo que no la libere.
+La aplicación no posee la memoria asignada y devuelta en los *mensajes,* por lo que no la libera.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,10 +87,10 @@ La aplicación no posee la memoria asignada y devuelta en *los mensajes*, por lo
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de servidor\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 

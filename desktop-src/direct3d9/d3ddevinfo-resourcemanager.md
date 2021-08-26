@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: b0a9fc461564280e4e36dde6bf73e68a78cf1609
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: d45d920383e9ed95a9fe50f2ce87bd6cf26d040d45aecc9e7891a5c08f4232cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850285"
 ---
-# <a name="d3ddevinfo_resourcemanager-structure"></a>Estructura RESOURCEMANAGER de D3DDEVINFO \_
+# <a name="d3ddevinfo_resourcemanager-structure"></a>Estructura \_ RESOURCEMANAGER D3DDEVINFO
 
 Estadísticas de uso de recursos.
 
@@ -51,9 +51,9 @@ Matriz de elementos de estadísticas de recursos. Vea [**D3DRESOURCESTATS.**](d3
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-D3DRTYPECOUNT hace referencia al número de enumeraciones en [**D3DRESOURCETYPE**](./d3dresourcetype.md).
+D3DRTYPECOUNT hace referencia al número de enumeraciones en [**D3DRESOURCETYPE.**](./d3dresourcetype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +65,7 @@ D3DRTYPECOUNT hace referencia al número de enumeraciones en [**D3DRESOURCETYPE*
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

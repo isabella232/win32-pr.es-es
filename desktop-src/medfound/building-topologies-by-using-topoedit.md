@@ -1,37 +1,37 @@
 ---
-description: Compilar topologías mediante TopoEdit
+description: Creación de topologías mediante TopoEdit
 ms.assetid: 04173f3d-3722-48ee-a6fb-9cdb2a897a33
-title: Compilar topologías mediante TopoEdit
+title: Creación de topologías mediante TopoEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92758911113c7500cb13fa814d07321435fafeb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88e678e0c25cbfe56c2633091820468a6c0313663847870a4de5c912a5edae95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959445"
 ---
-# <a name="building-topologies-by-using-topoedit"></a>Compilar topologías mediante TopoEdit
+# <a name="building-topologies-by-using-topoedit"></a>Creación de topologías mediante TopoEdit
 
 Una topología debe tener los tres nodos siguientes:
 
--   Nodo de origen: el flujo de un archivo multimedia, que se usa como origen de la topología.
--   Nodo de transformación: transformación de Media Foundation (MFT). Normalmente, estos nodos son codificadores, descodificadores y efectos de la topología.
--   Nodo de salida: receptor de la secuencia que pasa los datos multimedia, los fotogramas de vídeo o las secuencias de audio a la sesión multimedia para la reproducción.
+-   Nodo de origen: los flujos de un archivo multimedia, que se usan como origen para la topología.
+-   Nodo de transformación: una Media Foundation transformación (MFT). Estos nodos suelen ser codificadores, descodificadores y efectos para la topología.
+-   Nodo de salida: receptor de flujo que pasa los datos multimedia, fotogramas de vídeo o secuencias de audio a la sesión multimedia para la reproducción.
 
-Para obtener información acerca de la estructura de la topología, consulte [acerca de las topologías](about-topologies.md).
+Para obtener información sobre la estructura de topología, vea [About Topologies](about-topologies.md).
 
-Para compilar una topología, debe agregar los nodos, conectar los nodos y resolver la topología para que pueda reproducirse.
+Para compilar una topología, debe agregar los nodos, conectarlos y resolver la topología para que se pueda reproducir.
 
-Los nodos de topología se muestran como cuadros, donde el texto muestra el nombre del nodo. Los cuadros verdes representan los nodos agregados por el usuario. Cuando se resuelve una topología, TopoEdit puede agregar nodos de transformación a la topología automáticamente. Aparecen como cuadros azules en el **Panel de topología**.
+Los nodos de topología se muestran como cuadros, con texto que muestra el nombre del nodo. Los cuadros verdes representan los nodos agregados por el usuario. Cuando se resuelve una topología, TopoEdit puede agregar nodos de transformación a la topología automáticamente. Aparecen como cuadros azules en el **panel Topología**.
 
-Las entradas y salidas de la topología se representan en forma de cuadrados negros a lo largo del borde del nodo. La *entrada de nodo* se muestra en el lado izquierdo del nodo y la *salida del nodo* está en el lado derecho del nodo.
+Las entradas y salidas de topología se representan como cuadrados negros a lo largo del borde del nodo. La *entrada del* nodo se muestra en el  lado izquierdo del nodo y la salida del nodo está en el lado derecho del nodo.
 
-Los nodos de topología se conectan a través de una *conexión de nodo* que aparece como una línea negra que conecta la entrada de nodo de un nodo con la salida de nodo de otro nodo.
+Los nodos de topología se conectan *a* través de una conexión de nodo que aparece como una línea negra que conecta la entrada de nodo de un nodo a la salida del nodo de otro nodo.
 
 En la ilustración siguiente se muestra una topología conectada para un origen de audio.
 
-![Ilustración que muestra las conexiones del nodo de origen a dos nodos de transformación y, a continuación, al nodo de salida](images/e94b4cce-aa8a-497f-94c2-cc9dace17291.gif)
+![ilustración que muestra las conexiones desde el nodo de origen, a dos nodos de transformación y, a continuación, al nodo de salida](images/e94b4cce-aa8a-497f-94c2-cc9dace17291.gif)
 
 Esta sección contiene los siguientes temas:
 
@@ -43,7 +43,7 @@ Esta sección contiene los siguientes temas:
 | [Agregar nodos de transformación con TopoEdit](adding-transform-nodes-with-topoedit.md)               | Describe el proceso de agregar nodos de transformación a una topología. |
 | [Agregar nodos de salida con TopoEdit](adding-output-nodes-with-topoedit.md)                     | Describe el proceso de agregar nodos de salida a una topología.    |
 | [Conexión y desconexión de nodos de topología](connecting-and-disconnecting-topology-nodes.md) | Describe el proceso de conexión de dos nodos.                 |
-| [Resolver una topología con TopoEdit](resolving-a-topology-with-topoedit.md)                   | Describe el proceso de resolución de la topología.                  |
+| [Resolver una topología con TopoEdit](resolving-a-topology-with-topoedit.md)                   | Describe el proceso de resolución de topología.                  |
 
 
 

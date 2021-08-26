@@ -1,7 +1,7 @@
 ---
-description: 'Calcula un vector de transferencia que asigna Radiance de origen para salir de Radiance resultante de la dispersión de subsuperficies, mediante el muestreo adaptable y las propiedades de material establecidas por ID3DXPRTEngine:: SetMeshMaterials.'
+description: Calcula un vector de transferencia que asigna el radiance de origen para salir del radiance resultante de la dispersión subsuperficial, mediante el muestreo adaptable y las propiedades de material establecidas por ID3DXPRTEngine::SetMeshMaterials.
 ms.assetid: 34e42271-703b-4b67-8153-2eca3f8dde92
-title: 'ID3DXPRTEngine:: ComputeSSAdaptive (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::ComputeSSAdaptive (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 198a597020a0bfcbc789cc741e42048bd89eb95f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a602566c4d0e5b3cb5c68b2f983b6c56a9d9f596ee673db97a72e6054837759b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847385"
 ---
-# <a name="id3dxprtenginecomputessadaptive-method"></a>ID3DXPRTEngine:: ComputeSSAdaptive (método)
+# <a name="id3dxprtenginecomputessadaptive-method"></a>Método ID3DXPRTEngine::ComputeSSAdaptive
 
-Calcula un vector de transferencia que asigna Radiance de origen para salir de Radiance resultante de la dispersión de subsuperficies, mediante el muestreo adaptable y las propiedades de material establecidas por [**ID3DXPRTEngine:: SetMeshMaterials**](id3dxprtengine--setmeshmaterials.md). El método genera nuevos vértices y caras en la malla para aproximar con más precisión la señal de transferencia Radiance (PRT) precalculada. Este método solo se puede usar para los materiales definidos por vértice en un objeto Mesh.
+Calcula un vector de transferencia que asigna el radiance de origen para salir del radiance resultante de la dispersión subsuperficial, mediante el muestreo adaptable y las propiedades de material establecidas por [**ID3DXPRTEngine::SetMeshMaterials**](id3dxprtengine--setmeshmaterials.md). El método genera nuevos vértices y caras en la malla para aproximarse con más precisión a la señal de transferencia de base precalutada (PRT). Este método solo se puede usar para materiales definidos por vértice en un objeto de malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,39 +45,39 @@ HRESULT ComputeSSAdaptive(
 
 <dl> <dt>
 
-*pDataIn* \[ de\]
+*pDataIn* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de entrada que representa el objeto 3D del rebote de luz anterior. Este búfer de entrada debe tener asignado el número adecuado de canales de color para la simulación.
+Puntero a un objeto [**ID3DXPRTBuffer de**](id3dxprtbuffer.md) entrada que representa el objeto 3D del anterior salto de luz. Este búfer de entrada debe tener asignado el número adecuado de canales de color para la simulación.
 
 </dd> <dt>
 
-*AdaptiveThresh* \[ de\]
+*AdaptiveThresh* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Umbral del vector de PRT que se va a usar para subdividir los vértices de malla y caras. Si es menor que 1E-6F, se especifica un valor predeterminado de 1E-6F.
+Umbral en el vector PRT que se usará para subdividir las caras y los vértices de malla. Si es menor que 1e-6f, se especifica un valor predeterminado de 1e-6f.
 
 </dd> <dt>
 
-*MinEdgeLength* \[ de\]
+*MinEdgeLength* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Longitud mínima del borde de la superficie que se generará en el muestreo adaptable. Si el método determina que el valor es demasiado pequeño, se especifica un valor dependiente del modelo.
+Longitud mínima del borde facial que se generará en el muestreo adaptable. Si el método determina que el valor es demasiado pequeño, se especifica un valor dependiente del modelo.
 
 </dd> <dt>
 
-*MaxSubdiv* \[ de\]
+*MaxSubdiv* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Nivel máximo de subdivisión de una esfera que se usará en el muestreo adaptable. Si es cero, se especifica un valor predeterminado de 4.
+Nivel máximo de subdivisión de una cara que se usará en el muestreo adaptable. Si es cero, se especifica un valor predeterminado de 4.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Nivel máximo de subdivisión de una esfera que se usará en el muestreo adaptab
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida que modela un único rebote de la luz dispersa por subsuperficie. Este búfer de salida debe tener asignado el número adecuado de canales de color para la simulación.
+Puntero a un objeto [**ID3DXPRTBuffer de**](id3dxprtbuffer.md) salida que modela un único salto de la luz dispersa por subsuelo. Este búfer de salida debe tener asignado el número adecuado de canales de color para la simulación.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida que modela
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) opcional que es la suma de todas las salidas pDataOut anteriores. Puede ser **null**.
+Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) opcional que es la suma en ejecución de todas las salidas pDataOut anteriores. Puede ser **NULL.**
 
 </dd> </dl>
 
@@ -103,15 +103,15 @@ Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) opcional que es la s
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para modelar la dispersión de subsuperficies, llame a este método para cada rebote de luz después de llamar a un método [**ID3DXPRTEngine:: ComputeDirectLightingSHAdaptive**](id3dxprtengine--computedirectlightingshadaptive.md) .
+Para modelar la dispersión de subsuperficie, llame a este método para cada rebotón de luz después de llamar a un método [**ID3DXPRTEngine::ComputeDirectLightingSHAdaptive.**](id3dxprtengine--computedirectlightingshadaptive.md)
 
-La salida de este método no incluye albedo y solo la luz entrante está integrada en el simulador. Si no se multiplica el albedo, puede modelar la variación de Albedo en una escala más precisa que el Radiance de origen, con lo que se obtienen resultados más precisos de la compresión.
+La salida de este método no incluye albedo y solo se integra la luz entrante en el simulador. Al no multiplicar el albedo, puede modelar la variación de albedo a una escala más fina que la de origen, lo que produce resultados más precisos a partir de la compresión.
 
-Llame a [**ID3DXPRTEngine:: MultiplyAlbedo**](id3dxprtengine--multiplyalbedo.md) para multiplicar cada vector de PRT por el albedo.
+Llame [**a ID3DXPRTEngine::MultiplyAlbedo**](id3dxprtengine--multiplyalbedo.md) para multiplicar cada vector prT por el albedo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -119,8 +119,8 @@ Llame a [**ID3DXPRTEngine:: MultiplyAlbedo**](id3dxprtengine--multiplyalbedo.md)
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -134,7 +134,7 @@ Llame a [**ID3DXPRTEngine:: MultiplyAlbedo**](id3dxprtengine--multiplyalbedo.md)
 [**ID3DXPRTEngine::ComputeBounce**](id3dxprtengine--computebounce.md)
 </dt> <dt>
 
-[**ID3DXPRTEngine:: Compute (no es)**](id3dxprtengine--computess.md)
+[**ID3DXPRTEngine::ComputeSS**](id3dxprtengine--computess.md)
 </dt> </dl>
 
  

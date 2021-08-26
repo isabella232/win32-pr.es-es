@@ -3,7 +3,7 @@ title: Método Playlist.item
 description: El método item recupera el elemento multimedia en el índice especificado.
 ms.assetid: a564f6db-ede4-4c85-87ca-0e2539d914c2
 keywords:
-- método item Reproductor de Windows Media
+- item method Reproductor de Windows Media
 - item method Reproductor de Windows Media , Playlist (Clase)
 - Clase de lista de reproducción Reproductor de Windows Media , método de elemento
 topic_type:
@@ -81,14 +81,14 @@ Player.URL = listItem.sourceURL;
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

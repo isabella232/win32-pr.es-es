@@ -1,9 +1,9 @@
 ---
-title: modificador/no_warn
-description: El \_ conmutador/no WARN indica al compilador de MIDL que suprima los mensajes de advertencia.
+title: Modificador /no_warn
+description: El modificador /no \_ warn dirige al compilador MIDL a suprimir los mensajes de advertencia.
 ms.assetid: 260b9430-2daf-454e-92ba-e30ca57b35e1
 keywords:
-- /no_warn modificador MIDL
+- /no_warn switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,40 +12,40 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 535c68ab2b64835b9e93224343d140f47eaa24aa
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 273f9f00d160d2284f4f87693cd2c391da1fcb82d66f2a49defada85c1af0698
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104419670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119896104"
 ---
-# <a name="no_warn-switch"></a>/no \_ WARN (modificador)
+# <a name="no_warn-switch"></a>Modificador /no \_ warn
 
-El conmutador **/no \_ WARN** indica al compilador de MIDL que suprima los mensajes de advertencia.
+El **modificador /no \_ warn** dirige al compilador MIDL a suprimir los mensajes de advertencia.
 
 ``` syntax
 midl /no_warn
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 Este modificador no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El uso del modificador del parámetro **/no \_ WARN** es equivalente a **/W0**.
+El uso del modificador **/no \_ warn** es equivalente a **/W0.**
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/no \_ WARN nombreDeArchivo. idl**
+**midl /no \_ warn filename.idl**
 
-**MIDL/W0 nombrearchivo. idl**
+**midl /W0 filename.idl**
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/W**](-w.md)
@@ -54,9 +54,9 @@ El uso del modificador del parámetro **/no \_ WARN** es equivalente a **/W0**.
 [**/WX**](-wx.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

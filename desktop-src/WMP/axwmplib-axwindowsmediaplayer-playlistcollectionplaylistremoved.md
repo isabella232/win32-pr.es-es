@@ -1,9 +1,9 @@
 ---
 title: Evento PlaylistCollectionPlaylistRemoved del objeto AxWindowsMediaPlayer
-description: El evento PlaylistCollectionPlaylistRemoved se produce cuando se quita una lista de reproducción de la colección de listas de reproducción. | Evento PlaylistCollectionPlaylistRemoved del objeto AxWindowsMediaPlayer
+description: El evento PlaylistCollectionPlaylistRemoved tiene lugar cuando se quita una lista de reproducción de la colección de listas de reproducción. | Evento PlaylistCollectionPlaylistRemoved del objeto AxWindowsMediaPlayer
 ms.assetid: 96935a9e-4c08-42e9-a63f-7b6cda41b243
 keywords:
-- Evento PlaylistCollectionPlaylistRemoved del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento PlaylistCollectionPlaylistRemoved del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b982ff566380a7aa5bf4d0b1a1219739b52dd35
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 170dd4291c1c60f0e20c548c611485cddd50f5ec51d3f244d21f3e046e5c0d4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864584"
 ---
 # <a name="playlistcollectionplaylistremoved-event-of-the-axwindowsmediaplayer-object"></a>Evento PlaylistCollectionPlaylistRemoved del objeto AxWindowsMediaPlayer
 
-El evento PlaylistCollectionPlaylistRemoved se produce cuando se quita una lista de reproducción de la colección de listas de reproducción.
+El evento PlaylistCollectionPlaylistRemoved tiene lugar cuando se quita una lista de reproducción de la colección de listas de reproducción.
 
 ``` syntax
 [C#]
@@ -47,7 +47,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad             | Descripción                                                                  |
 |----------------------|------------------------------------------------------------------------------|
-| **bstrPlaylistName** | System. StringSpecifies nombre de la lista de reproducción que se ha quitado.<br/> |
+| **bstrPlaylistName** | System.String Especifica el nombre de la lista de reproducción que se quitó.<br/> |
 
 
 
@@ -59,7 +59,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -72,7 +72,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylistCollection. getByName (VB y C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
+[**IWMPPlaylistCollection.getByName (VB y C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Se produce cuando el cursor se mueve sobre el digitalizador de Tablet PC.
+description: Se produce cuando el cursor se mueve sobre el digitalizador de tabletas.
 ms.assetid: cd2863af-59a9-4dd0-a679-84861a70ef53
-title: 'ITabletEventSink:: CursorMove (método)'
+title: ITabletEventSink::CursorMove (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: f6950e0b30c1b8fc8ccf3e60a8aaa05b9eeb3215
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 030fa5ba4adc725288d5135ccd24409d4fc02cddbc16da52aa375a275a73be5a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119843495"
 ---
-# <a name="itableteventsinkcursormove-method"></a>ITabletEventSink:: CursorMove (método)
+# <a name="itableteventsinkcursormove-method"></a>ITabletEventSink::CursorMove (método)
 
-Se produce cuando el cursor se mueve sobre el digitalizador de Tablet PC.
+Se produce cuando el cursor se mueve sobre el digitalizador de tabletas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,21 +47,21 @@ HRESULT CursorMove(
 *tcid* 
 </dt> <dd>
 
-Dentifier único del digitalizador de Tablet PC.
+Denificador único del digitalizador de tabletas.
 
 </dd> <dt>
 
 *Cid* 
 </dt> <dd>
 
-Identificador único del lápiz de Tablet PC.
+Identificador único del lápiz óptico de tableta.
 
 </dd> <dt>
 
 *hWnd* 
 </dt> <dd>
 
-Ventana en la que se ha desplace el cursor.
+Ventana sobre la que se movió el cursor.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
@@ -98,9 +98,9 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -110,7 +110,7 @@ Este método puede devolver uno de estos valores.
 
 <dl> <dt>
 
-[**Interfaz ITabletEventSink**](itableteventsink.md)
+[**ITabletEventSink (interfaz)**](itableteventsink.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Proporciona funcionalidad para obtener el IMFDXGIDeviceManager del receptor de representación de vídeo Microsoft Media Foundation.
+description: Proporciona funcionalidad para obtener EL OBJETO DEDXGIDeviceManager del receptor Microsoft Media Foundation de representación de vídeo.
 ms.assetid: 80078ed6-61cc-4fb9-8fd5-eda78cd5be30
-title: Interfaz IMFDXGIDeviceManagerSource
+title: INTERFAZ DE ORIGENDXGIDeviceManagerSource
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,32 +13,32 @@ api_type:
 - COM
 api_location:
 - mfidl.h
-ms.openlocfilehash: 669ec840a3122172147840052bd1dbf5c940569d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c75b2a691bfe9fcbda453fd49a29fcfd2ff640346f0e3c13a34418995439f4df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957855"
 ---
-# <a name="imfdxgidevicemanagersource-interface"></a>Interfaz IMFDXGIDeviceManagerSource
+# <a name="imfdxgidevicemanagersource-interface"></a>INTERFAZ DE ORIGENDXGIDeviceManagerSource
 
-Proporciona funcionalidad para obtener el [**IMFDXGIDeviceManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) del receptor de representación de vídeo Microsoft Media Foundation.
+Proporciona funcionalidad para obtener [**EL OBJETO DEDXGIDeviceManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) del receptor Microsoft Media Foundation de representación de vídeo.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IMFDXGIDeviceManagerSource** hereda de la interfaz [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IMFDXGIDeviceManagerSource** también tiene estos tipos de miembros:
+La **interfaz IMFDXGIDeviceManagerSource** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **LA PROPIEDAD DEDXGIDeviceManagerSource** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IMFDXGIDeviceManagerSource** tiene estos métodos.
+La **interfaz IMFDXGIDeviceManagerSource** tiene estos métodos.
 
 
 
 | Método                                                      | Descripción                                                                                                              |
 |:------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------|
-| [**GetManager**](imfdxgidevicemanagersource-getmanager.md) | Obtiene el [**IMFDXGIDeviceManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) del receptor de representación de vídeo Media Foundation.<br/> |
+| [**GetManager**](imfdxgidevicemanagersource-getmanager.md) | Obtiene [**EL OBJETO IMFDXGIDeviceManager del**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) receptor Media Foundation de representación de vídeo.<br/> |
 
 
 
@@ -50,9 +50,9 @@ La interfaz **IMFDXGIDeviceManagerSource** tiene estos métodos.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones \[ para UWP de Windows 8.1 Desktop apps \|\]<br/>                                  |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 R2 \|\]<br/>                       |
-| IDL<br/>                      | <dl> <dt>Mfidl. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                       |
+| Idl<br/>                      | <dl> <dt>Mfidl.idl</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ La interfaz **IMFDXGIDeviceManagerSource** tiene estos métodos.
 
 <dl> <dt>
 
-[Interfaces de Media Foundation](media-foundation-interfaces.md)
+[Media Foundation Interfaces](media-foundation-interfaces.md)
 </dt> </dl>
 
  

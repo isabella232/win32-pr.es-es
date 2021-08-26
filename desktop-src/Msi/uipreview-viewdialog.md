@@ -1,7 +1,7 @@
 ---
-description: El método ViewDialog del objeto UIPreview muestra un cuadro de diálogo de interfaz de usuario creado almacenado en la base de datos actual.
+description: El método ViewDialog del objeto UIPreview muestra un cuadro de diálogo de interfaz de usuario escrito almacenado en la base de datos actual.
 ms.assetid: 5bc935ac-38ca-4a51-a1dc-6879dee97b05
-title: UIPreview. ViewDialog, método
+title: Método UIPreview.ViewDialog
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: d9ad3772ced2dba952a3d3b068aaa307d1c06398
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 40797da833576c0a829234d6036cb1d583464dea96dbe4e625dcd63c1c1bd4c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893405"
 ---
-# <a name="uipreviewviewdialog-method"></a>UIPreview. ViewDialog, método
+# <a name="uipreviewviewdialog-method"></a>Método UIPreview.ViewDialog
 
-El método **ViewDialog** del objeto [**UIPreview**](uipreview-object.md) muestra un cuadro de diálogo de interfaz de usuario creado almacenado en la base de datos actual.
+El **método ViewDialog** del objeto [**UIPreview**](uipreview-object.md) muestra un cuadro de diálogo de interfaz de usuario escrito almacenado en la base de datos actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,10 +39,10 @@ UIPreview.ViewDialog(
 
 <dl> <dt>
 
-*diálogo* 
+*Diálogo* 
 </dt> <dd>
 
-Nombre necesario del cuadro de diálogo, con distinción de mayúsculas y minúsculas, y la clave principal de la tabla de base de datos de cuadros de diálogo.
+Nombre obligatorio del cuadro de diálogo, que distingue mayúsculas de minúsculas y la clave principal de la tabla de base de datos Dialog.
 
 </dd> </dl>
 
@@ -56,9 +56,9 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IUIPreview se define como 000C109A-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IUIPreview de IID se define como \_ 000C109A-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Desktop-Profile atributo)
-description: La ubicación del perfil de escritorio para un usuario o grupo de usuarios. No se utiliza.
+title: Desktop-Profile atributo
+description: Ubicación del perfil de escritorio para un usuario o grupo de usuarios. No se usa.
 ms.assetid: cbab8930-ce18-4b9c-ad60-5875bb23b822
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Desktop-Profile
-- desktopProfile esquema de AD de atributos
+- Desktop-Profile esquema de AD de atributo
+- DesktopProfile attribute AD Schema (Esquema de AD del atributo desktopProfile)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fecaa174659248d08a8bfd6433a505a77386dd1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1cc9157730bce827c51a8705385afa61a92abc1d0d8f874844ac74d57fc31557
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925995"
 ---
-# <a name="desktop-profile-attribute"></a>Desktop-Profile atributo)
+# <a name="desktop-profile-attribute"></a>Desktop-Profile atributo
 
-La ubicación del perfil de escritorio para un usuario o grupo de usuarios. No se utiliza.
+Ubicación del perfil de escritorio para un usuario o grupo de usuarios. No se usa.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Desktop-Profile                             |
-| Nombre para mostrar de LDAP | desktopProfile                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | desktopProfile                              |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.346                      |
-| System-ID-GUID    | eea65906-8ac6-11d0-afda-00c04fd930c9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 65906-8ac6-11d0-afda-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ La ubicación del perfil de escritorio para un usuario o grupo de usuarios. No s
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ La ubicación del perfil de escritorio para un usuario o grupo de usuarios. No s
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -77,34 +77,34 @@ La ubicación del perfil de escritorio para un usuario o grupo de usuarios. No s
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
@@ -119,18 +119,18 @@ La ubicación del perfil de escritorio para un usuario o grupo de usuarios. No s
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ La ubicación del perfil de escritorio para un usuario o grupo de usuarios. No s
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ La ubicación del perfil de escritorio para un usuario o grupo de usuarios. No s
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ La ubicación del perfil de escritorio para un usuario o grupo de usuarios. No s
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para el evento de creación de archivo. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para el evento de creación de archivos. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 83465072-3dae-4a39-8a36-1512025b79df
-title: FileIo_Create (clase)
+title: FileIo_Create clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,18 +19,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2f8a42e9dee1c49817d578ab73a221c013f69aef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e0c4085225fe523dcabca87a15bced8bd1f093f0b3da89fa0582b5675cdfbbc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829955"
 ---
-# <a name="fileio_create-class"></a>\_Clase de creación FileIo
+# <a name="fileio_create-class"></a>Clase FileIo \_ Create
 
-Esta clase es la clase de tipo de evento para el evento de creación de archivo.
+Esta clase es la clase de tipo de evento para el evento de creación de archivos.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,77 +50,77 @@ class FileIo_Create : FileIo
 
 ## <a name="members"></a>Miembros
 
-La clase **FileIo \_ Create** tiene estos tipos de miembros:
+La **clase FileIo \_ Create** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **FileIo \_ Create** tiene estas propiedades.
+La **clase FileIo \_ Create** tiene estas propiedades.
 
 <dl> <dt>
 
 **CreateOptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4)
+Calificadores: WmiDataId(4)
 </dt> </dl>
 
-Los valores que se pasan en los parámetros *CreateOptions* y *CreateDispositions* a la función [**NtCreateFile**](/windows/win32/api/winternl/nf-winternl-ntcreatefile) .
+Valores pasados en *los parámetros CreateOptions* y *CreateDispositions* a la [**función NtCreateFile.**](/windows/win32/api/winternl/nf-winternl-ntcreatefile)
 
 </dd> <dt>
 
 **FileAttributes**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5)
+Calificadores: WmiDataId(5)
 </dt> </dl>
 
-Valor pasado en el parámetro *FileAttributes* a la función [**NtCreateFile**](/windows/win32/api/winternl/nf-winternl-ntcreatefile) .
+Valor pasado en el *parámetro FileAttributes* a la [**función NtCreateFile.**](/windows/win32/api/winternl/nf-winternl-ntcreatefile)
 
 </dd> <dt>
 
 **FileObject**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3), puntero
+Calificadores: WmiDataId(3), Pointer
 </dt> </dl>
 
-Identificador que se puede utilizar para correlacionar las operaciones con la misma instancia de objeto de archivo abierta entre los eventos de creación y cierre de archivo.
+Identificador que se puede usar para correlacionar las operaciones con la misma instancia de objeto de archivo abierta entre los eventos de creación y cierre de archivos.
 
 </dd> <dt>
 
 **IrpPtr**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Paquete de solicitud de e/s. Esta propiedad identifica la actividad de e/s.
+Paquete de solicitud de E/S. Esta propiedad identifica la actividad de E/S.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(7), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Ruta de acceso al archivo.
@@ -143,32 +143,32 @@ Ruta de acceso al archivo.
 **ShareAccess**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6)
+Calificadores: WmiDataId(6)
 </dt> </dl>
 
-Valor pasado en el parámetro *ShareAccess* a la función [**NtCreateFile**](/windows/win32/api/winternl/nf-winternl-ntcreatefile) .
+Valor pasado en el *parámetro ShareAccess* a la [**función NtCreateFile.**](/windows/win32/api/winternl/nf-winternl-ntcreatefile)
 
 </dd> <dt>
 
 **TTID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), puntero
+Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Identificador de subproceso del subproceso que está creando el archivo.
+Identificador de subproceso del subproceso que crea el archivo.
 
 </dd> </dl>
 
@@ -178,8 +178,8 @@ Identificador de subproceso del subproceso que está creando el archivo.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

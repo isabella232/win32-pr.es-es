@@ -1,12 +1,12 @@
 ---
-title: Método GetSecondaryConnectionString de la clase Win32_RDMSDeploymentSettings
-description: Recupera la cadena de conexión secundaria de base de datos de nivel de implementación, que se puede usar para admitir la expiración de contraseña.
+title: Método GetSecondaryConnectionString de la Win32_RDMSDeploymentSettings clase
+description: Recupera la cadena de conexión secundaria de la base de datos de nivel de implementación, que se puede usar para admitir la expiración de la contraseña.
 ms.assetid: 0de02752-6cbf-4c21-b752-a57ed58aeef1
 ms.tgt_platform: multiple
 keywords:
 - Método GetSecondaryConnectionString Servicios de Escritorio remoto
-- Método GetSecondaryConnectionString Servicios de Escritorio remoto, clase Win32_RDMSDeploymentSettings
-- Win32_RDMSDeploymentSettings de clase Servicios de Escritorio remoto, método GetSecondaryConnectionString
+- Método GetSecondaryConnectionString Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto método , GetSecondaryConnectionString
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2c09f4fcacabbe928fcda00447e252077bd8a51
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ac54d0d5ce9207070d03028ba53175d964e93d77a93d51b28345089fcea99dcd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868315"
 ---
-# <a name="getsecondaryconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetSecondaryConnectionString de la \_ clase RDMSDeploymentSettings de Win32
+# <a name="getsecondaryconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetSecondaryConnectionString de la clase RDMSDeploymentSettings de Win32 \_
 
-Recupera la cadena de conexión secundaria de base de datos de nivel de implementación, que se puede usar para admitir la expiración de contraseña.
+Recupera la cadena de conexión secundaria de la base de datos de nivel de implementación, que se puede usar para admitir la expiración de la contraseña.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ uint32 GetSecondaryConnectionString(
 
 <dl> <dt>
 
-*SecondaryConnectionString* \[ enuncia\]
+*SecondaryConnectionString* \[ out\]
 </dt> <dd>
 
-Cadena de conexión que se va a recuperar.
+Cadena de conexión que se recuperará
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

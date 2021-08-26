@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 077d64a67a46080a0f7ac9194c684f6fe8470453
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 26831f3a1a5f08494a7382cd412c30dcd24c1482c01dca684962a580068d380d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894125"
 ---
 # <a name="d3dxcheckversion-function"></a>Función D3DXCheckVersion
 
@@ -98,7 +98,7 @@ Use [**Direct3DCreate9 para**](/windows/win32/api/d3d9/nf-d3d9-direct3dcreate9) 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

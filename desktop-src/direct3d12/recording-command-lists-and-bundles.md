@@ -1,78 +1,78 @@
 ---
 title: Creación y grabación de listas de comandos y agrupaciones
-description: En este tema se describe la grabación de listas de comandos y agrupaciones en aplicaciones de Direct3D 12. Las listas de comandos y las agrupaciones permiten a las aplicaciones grabar llamadas de dibujo o cambio de estado para su ejecución posterior en la unidad de procesamiento de gráficos (GPU).
+description: En este tema se describen las listas y agrupaciones de comandos de grabación en aplicaciones de Direct3D 12. Tanto las listas de comandos como los paquetes permiten a las aplicaciones registrar llamadas de dibujo o de cambio de estado para su posterior ejecución en la unidad de procesamiento de gráficos (GPU).
 ms.assetid: 0074B796-33A4-4AA1-A4E7-48A2A63F25B7
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5ef2b54138cf3a08b85e3e8cc31f97cbe66abf6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 480819cbd421b30cbf54a58578c02056d37d7e36bf2ead845c19e438df54cbb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104549147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850721"
 ---
 # <a name="creating-and-recording-command-lists-and-bundles"></a>Creación y grabación de listas de comandos y agrupaciones
 
-En este tema se describe la grabación de listas de comandos y agrupaciones en aplicaciones de Direct3D 12. Las listas de comandos y las agrupaciones permiten a las aplicaciones grabar llamadas de dibujo o cambio de estado para su ejecución posterior en la unidad de procesamiento de gráficos (GPU).
+En este tema se describen las listas y agrupaciones de comandos de grabación en aplicaciones de Direct3D 12. Tanto las listas de comandos como los paquetes permiten a las aplicaciones registrar llamadas de dibujo o de cambio de estado para su posterior ejecución en la unidad de procesamiento de gráficos (GPU).
 
-Más allá de las listas de comandos, la API aprovecha la funcionalidad de hardware de GPU agregando un segundo nivel de listas de comandos, que se conocen como *agrupaciones*. El propósito de las agrupaciones es permitir que las aplicaciones agrupen un pequeño número de comandos de la API para su ejecución posterior. En el momento de la creación del paquete, el controlador realizará todo el procesamiento previo que sea posible para que sea más barato ejecutarlo más tarde. Los paquetes están diseñados para usarse y volverse a usar cualquier número de veces. Por otro lado, las listas de comandos se ejecutan normalmente solo una vez. Sin embargo, una lista de comandos se *puede* ejecutar varias veces (siempre y cuando la aplicación se asegure de que las ejecuciones anteriores se han completado antes de enviar nuevas ejecuciones).
+Más allá de las listas de comandos, la API aprovecha la funcionalidad presente en el hardware de GPU mediante la adición de un segundo nivel de listas de comandos, que se conocen como *agrupaciones*. El propósito de los paquetes es permitir que las aplicaciones a agrupar un pequeño número de comandos de API para su posterior ejecución. En el momento de la creación del paquete, el controlador realizará tanto procesamiento previo como sea posible para que se ejecuten más adelante. Los paquetes están diseñados para usarse y volver a usarse en cualquier número de veces. Por otro lado, las listas de comandos se suelen ejecutar solo una sola vez. Sin embargo, una *lista* de comandos se puede ejecutar varias veces (siempre y cuando la aplicación garantice que las ejecuciones anteriores se hayan completado antes de enviar nuevas ejecuciones).
 
-Sin embargo, por lo general, la creación de llamadas API en agrupaciones y llamadas API y agrupaciones en listas de comandos y listas de comandos en un solo fotograma, se muestra en el diagrama siguiente, anotando la reutilización del **paquete 1** en la **lista de comandos 1** y la **lista de comandos 2**, y que los nombres de método de la API del diagrama son como ejemplos, se pueden
+Sin embargo, normalmente, la compilación de llamadas API en agrupaciones, llamadas API y agrupaciones en listas de comandos y listas de comandos en un solo fotograma, se muestra en el diagrama siguiente, y se indica la reutilización del lote **1** en la lista de comandos **1** y la lista de comandos **2,** y que los nombres de los métodos de API en el diagrama son igual que ejemplos, se pueden usar muchas llamadas API diferentes.
 
 ![compilar comandos, agrupaciones y listas de comandos en marcos](images/gpu-workitems.png)
 
-Existen diferentes restricciones para la creación y ejecución de agrupaciones y listas de comandos directas, y estas diferencias se indican en este tema.
+Hay diferentes restricciones para crear y ejecutar agrupaciones y listas de comandos directas, y estas diferencias se observan en este tema.
 
-## <a name="creating-command-lists"></a>Crear listas de comandos
+## <a name="creating-command-lists"></a>Creación de listas de comandos
 
-Las listas de comandos y agrupaciones directas se crean mediante una llamada a [**ID3D12Device:: CreateCommandList**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createcommandlist) o [**ID3D12Device4:: CreateCommandList1**](/windows/win32/api/d3d12/nf-d3d12-id3d12device4-createcommandlist1).
+Las listas y agrupaciones de comandos directos se crean mediante una llamada a [**ID3D12Device::CreateCommandList**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createcommandlist) o [**ID3D12Device4::CreateCommandList1**](/windows/win32/api/d3d12/nf-d3d12-id3d12device4-createcommandlist1).
 
-Use [**ID3D12Device4:: CreateCommandList1**](/windows/win32/api/d3d12/nf-d3d12-id3d12device4-createcommandlist1) para crear una lista de comandos cerrada, en lugar de crear una nueva lista y cerrarla inmediatamente. Esto evita la ineficacia de la creación de una lista con un asignador y un PSO, pero no las usa.
+Use [**ID3D12Device4::CreateCommandList1**](/windows/win32/api/d3d12/nf-d3d12-id3d12device4-createcommandlist1) para crear una lista de comandos cerrada, en lugar de crear una nueva lista y cerrarla inmediatamente. Esto evita la ineficacia de crear una lista con un asignador y PSO, pero no usarlos.
 
-[**ID3D12Device:: CreateCommandList**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createcommandlist) toma los siguientes parámetros como entrada:
+[**ID3D12Device::CreateCommandList**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createcommandlist) toma los parámetros siguientes como entrada:
 
-### <a name="d3d12_command_list_type"></a>\_Tipo de \_ lista de comandos de D3D12 \_
+### <a name="d3d12_command_list_type"></a>TIPO DE LISTA DE COMANDOS D3D12 \_ \_ \_
 
-La enumeración de [**\_ tipo de \_ lista \_ de comandos D3D12**](/windows/win32/api/d3d12/ne-d3d12-d3d12_command_list_type) indica el tipo de lista de comandos que se va a crear. Puede ser una lista de comandos directa, una agrupación, una lista de comandos de proceso o una lista de comandos de copia.
+La [**enumeración D3D12 \_ COMMAND LIST \_ \_ TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_command_list_type) indica el tipo de lista de comandos que se está creando. Puede ser una lista de comandos directos, una agrupación, una lista de comandos de proceso o una lista de comandos de copia.
 
 ### <a name="id3d12commandallocator"></a>ID3D12CommandAllocator
 
-Un asignador de comandos permite que la aplicación administre la memoria asignada para las listas de comandos. El asignador de comandos se crea llamando a [**CreateCommandAllocator**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createcommandallocator). Al crear una lista de comandos, el tipo de lista de comandos del asignador, especificado por el [**\_ tipo de \_ lista \_ de comandos D3D12**](/windows/win32/api/d3d12/ne-d3d12-d3d12_command_list_type), debe coincidir con el tipo de lista de comandos que se va a crear. Un asignador determinado se puede asociar a no más de una lista de comandos de *grabación en ese* momento, aunque se puede usar un asignador de comandos para crear cualquier número de objetos [**GraphicsCommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist) .
+Un asignador de comandos permite a la aplicación administrar la memoria asignada para las listas de comandos. El asignador de comandos se crea mediante una [**llamada a CreateCommandAllocator.**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createcommandallocator) Al crear una lista de comandos, el tipo de lista de comandos del asignador, especificado por [**D3D12 \_ COMMAND \_ LIST \_ TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_command_list_type), debe coincidir con el tipo de lista de comandos que se va a crear. Un asignador determinado no se puede  asociar a más de una lista de comandos de grabación a la vez, aunque se puede usar un asignador de comandos para crear cualquier número de [**objetos GraphicsCommandList.**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist)
 
-Para recuperar la memoria asignada por un asignador de comandos, una aplicación llama a [**ID3D12CommandAllocator:: RESET**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandallocator-reset). Esto permite reutilizar el asignador para nuevos algo, pero no reducirá su tamaño subyacente. Pero antes de hacerlo, la aplicación debe asegurarse de que la GPU ya no ejecute ninguna lista de comandos que esté asociada al asignador; de lo contrario, se producirá un error en la llamada. Además, tenga en cuenta que esta API no es de subprocesamiento libre y, por lo tanto, no se puede llamar al mismo asignador al mismo tiempo desde varios subprocesos.
+Para reclamar la memoria asignada por un asignador de comandos, una aplicación llama a [**ID3D12CommandAllocator::Reset**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandallocator-reset). Esto permite reutilizar el asignador para nuevas commmands, pero no reducirá su tamaño subyacente. Pero antes de hacerlo, la aplicación debe asegurarse de que la GPU ya no ejecuta ninguna lista de comandos asociada al asignador. De lo contrario, se producirá un error en la llamada. Además, tenga en cuenta que esta API no es de subproceso libre y, por lo tanto, no se puede llamar en el mismo asignador al mismo tiempo desde varios subprocesos.
 
 ### <a name="id3d12pipelinestate"></a>ID3D12PipelineState
 
-El estado inicial de la canalización para la lista de comandos. En Microsoft Direct3D 12, la mayoría del estado de canalización de gráficos se establece en una lista de comandos mediante el objeto [**ID3D12PipelineState**](/windows/win32/api/d3d12/nn-d3d12-id3d12pipelinestate) . Una aplicación creará un gran número de estos, normalmente durante la inicialización de la aplicación y, a continuación, el estado se actualiza cambiando el objeto de estado enlazado actualmente mediante [**ID3D12GraphicsCommandList:: SetPipelineState**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpipelinestate). Para obtener más información sobre los objetos de estado de canalización, vea [administrar el estado de canalización de gráficos en Direct3D 12](managing-graphics-pipeline-state-in-direct3d-12.md).
+Estado inicial de la canalización para la lista de comandos. En Microsoft Direct3D 12, la mayoría del estado de canalización de gráficos se establece en una lista de comandos mediante el [**objeto ID3D12PipelineState.**](/windows/win32/api/d3d12/nn-d3d12-id3d12pipelinestate) Una aplicación creará un gran número de ellos, normalmente durante la inicialización de la aplicación y, a continuación, el estado se actualiza cambiando el objeto de estado enlazado actualmente mediante [**ID3D12GraphicsCommandList::SetPipelineState**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpipelinestate). Para obtener más información sobre los objetos de estado de canalización, vea Administración del estado de canalización [de gráficos en Direct3D 12.](managing-graphics-pipeline-state-in-direct3d-12.md)
 
-Tenga en cuenta que los paquetes no heredan el estado de la canalización establecido por las llamadas anteriores en las listas de comandos directas que son sus elementos primarios.
+Tenga en cuenta que las agrupaciones no heredan el estado de canalización establecido por llamadas anteriores en listas de comandos directos que son sus familias.
 
 Si este parámetro es NULL, se usa un estado predeterminado.
 
-## <a name="recording-command-lists"></a>Grabar listas de comandos
+## <a name="recording-command-lists"></a>Grabación de listas de comandos
 
-Inmediatamente después de crearse, las listas de comandos están en el estado de grabación. También puede volver a usar una lista de comandos existente llamando a I [**D3D12GraphicsCommandList:: RESET**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-reset), que también deja la lista de comandos en el estado de grabación. A diferencia de [**ID3D12CommandAllocator:: RESET**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandallocator-reset), puede llamar a **RESET** mientras la lista de comandos todavía se está ejecutando. Un patrón típico es enviar una lista de comandos y, a continuación, restablecerla inmediatamente para volver a usar la memoria asignada para otra lista de comandos. Tenga en cuenta que solo una lista de comandos asociada a cada asignador de comandos puede estar en un estado de grabación al mismo tiempo.
+Inmediatamente después de crearse, las listas de comandos se encuentran en estado de grabación. También puede volver a usar una lista de comandos existente llamando a I [**D3D12GraphicsCommandList::Reset**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-reset), que también deja la lista de comandos en estado de grabación. A [**diferencia de ID3D12CommandAllocator::Reset**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandallocator-reset), puede llamar a **Reset** mientras se sigue ejecutando la lista de comandos. Un patrón típico es enviar una lista de comandos y restablecerla inmediatamente para reutilizar la memoria asignada para otra lista de comandos. Tenga en cuenta que solo una lista de comandos asociada a cada asignador de comandos puede estar en un estado de grabación a la vez.
 
-Una vez que una lista de comandos está en el estado de grabación, basta con llamar a los métodos de la interfaz [**ID3D12GraphicsCommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist) para agregar comandos a la lista. Muchos de estos métodos habilitan la funcionalidad común de Direct3D que resultará familiar a los desarrolladores de Microsoft Direct3D 11. otras API son nuevas para Direct3D 12.
+Una vez que una lista de comandos está en estado de grabación, simplemente llame a los métodos de la interfaz [**ID3D12GraphicsCommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist) para agregar comandos a la lista. Muchos de estos métodos habilitan una funcionalidad común de Direct3D que será familiar para los desarrolladores de Microsoft Direct3D 11. Otras API son nuevas para Direct3D 12.
 
-Después de agregar comandos a la lista de comandos, puede pasar la lista de comandos fuera del estado de grabación llamando a [**Close**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-close).
+Después de agregar comandos a la lista de comandos, se realiza la transición de la lista de comandos fuera del estado de grabación mediante una llamada a [**Cerrar**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-close).
 
-Los asignadores de comandos pueden crecer, pero no reducir la agrupación y volver a usar asignadores se deben considerar para maximizar la eficacia de la aplicación. Puede grabar varias listas en el mismo asignador antes de que se restablezca, siempre que solo una lista se grabe en un asignador determinado al mismo tiempo. Puede visualizarlos cada lista como propiedad de una parte del asignador que indica qué [**ID3D12CommandQueue:: ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) se ejecutará.
+Los asignadores de comandos pueden crecer, pero no reducirse: se debe considerar la agrupación y la utilización de asignadores para aumentar la eficacia de la aplicación. Puede grabar varias listas en el mismo asignador antes de restablecerlo, siempre que solo una lista esté grabando en un asignador determinado a la vez. Puede visualizar cada lista como propietaria de una parte del asignador que indica qué [**id3D12CommandQueue::ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) se ejecutará.
 
-Una estrategia de agrupación de asignador simple debe tener como objetivo los `numCommandLists * MaxFrameLatency` asignadores de aproximadamente. Por ejemplo, si graba 6 listas y permite hasta 3 fotogramas latentes, podría esperar razonablemente 18-20 asignadores. Una estrategia de agrupación más avanzada, que reutiliza los asignadores para varias listas en el mismo subproceso, podría tener como objetivo los `numRecordingThreads * MaxFrameLatency` asignadores. Con el ejemplo anterior, si se registraron 2 listas en el subproceso A, 2 en el subproceso B, 1 en el subproceso C y 1 en el subproceso D, podría dirigirse de forma realista a 12-14 asignadores.
+Una estrategia de agrupación de asignadores simple debe tener como objetivo aproximadamente `numCommandLists * MaxFrameLatency` los asignadores. Por ejemplo, si registra 6 listas y permite hasta 3 fotogramas latentes, razonablemente podría esperar entre 18 y 20 asignadores. Una estrategia de agrupación más avanzada, que reutiliza los asignadores para varias listas en el mismo subproceso, podría tener como objetivo `numRecordingThreads * MaxFrameLatency` asignadores. Con el ejemplo anterior, si se registraron 2 listas en el subproceso A, 2 en el subproceso B, 1 en el subproceso C y 1 en el subproceso D, podría tener como objetivo realista entre 12 y 14 asignadores.
 
-Use una barrera para determinar cuándo se puede volver a usar un asignador determinado.
+Use una barrera para determinar cuándo se puede reutilizar un asignador determinado.
 
-Como las listas de comandos se pueden restablecer inmediatamente después de la ejecución, se pueden agrupar de forma trivial y volver a agregarlas al grupo después de cada llamada a [**ID3D12CommandQueue:: ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists).
+Como las listas de comandos se pueden restablecer inmediatamente después de la ejecución, se pueden agrupar trivialmente, agregándolos de nuevo al grupo después de cada llamada a [**ID3D12CommandQueue::ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists).
 
 ## <a name="example"></a>Ejemplo
 
-Los fragmentos de código siguientes muestran la creación y la grabación de una lista de comandos. Tenga en cuenta que en este ejemplo se incluyen las siguientes características de Direct3D 12:
+Los fragmentos de código siguientes ilustran la creación y grabación de una lista de comandos. Tenga en cuenta que este ejemplo incluye las siguientes características de Direct3D 12:
 
--   Objetos de estado de canalización: se usan para establecer la mayoría de los parámetros de estado de la canalización de representación en una lista de comandos. Para obtener más información, vea [administrar el estado de canalización de gráficos en Direct3D 12](managing-graphics-pipeline-state-in-direct3d-12.md).
--   Descriptor heap: las aplicaciones usan montones de descriptor para administrar el enlace de canalización a recursos de memoria.
--   Barrera de recursos: se usa para administrar la transición de recursos de un estado a otro, como desde una vista de destino de representación hasta una vista de recursos del sombreador. Para obtener más información, consulte [uso de barreras de recursos para sincronizar los Estados de los recursos](using-resource-barriers-to-synchronize-resource-states-in-direct3d-12.md).
+-   Objetos de estado de canalización: se usan para establecer la mayoría de los parámetros de estado de la canalización de representación desde dentro de una lista de comandos. Para obtener más información, vea [Administración del estado de canalización de gráficos en Direct3D 12.](managing-graphics-pipeline-state-in-direct3d-12.md)
+-   Montón de descriptor: las aplicaciones usan montones de descriptores para administrar el enlace de canalización a recursos de memoria.
+-   Barrera de recursos: se usa para administrar la transición de recursos de un estado a otro, como desde una vista de destino de representación a una vista de recursos de sombreador. Para más información, consulte [Uso de barreras de recursos para sincronizar estados de recursos.](using-resource-barriers-to-synchronize-resource-states-in-direct3d-12.md)
 
 Por ejemplo,
 
@@ -197,32 +197,32 @@ void D3D12HelloTriangle::LoadAssets()
 
 
 
-Una vez que se ha creado y registrado una lista de comandos, se puede ejecutar mediante una cola de comandos. Para obtener más información, vea [Ejecutar y sincronizar listas de comandos](executing-and-synchronizing-command-lists.md).
+Una vez creada y registrada una lista de comandos, se puede ejecutar mediante una cola de comandos. Para obtener más información, vea [Ejecutar y sincronizar listas de comandos](executing-and-synchronizing-command-lists.md).
 
 ## <a name="reference-counting"></a>Recuento de referencias
 
-La mayoría de las API de D3D12 siguen usando el recuento de referencias siguiendo las convenciones de COM. Una excepción importante a esto son las API de la lista de comandos de gráficos D3D12. Todas las API de [**ID3D12GraphicsCommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist) no contienen referencias a los objetos que se pasan a esas API. Esto significa que las aplicaciones son responsables de garantizar que nunca se envíe una lista de comandos para su ejecución que haga referencia a un recurso destruido.
+La mayoría de las API de D3D12 siguen usando el recuento de referencias siguiendo las convenciones COM. Una excepción importante a esto son las API de lista de comandos gráficos D3D12. Todas las API de [**ID3D12GraphicsCommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist) no incluyen referencias a los objetos pasados a esas API. Esto significa que las aplicaciones son responsables de garantizar que nunca se envía una lista de comandos para su ejecución que haga referencia a un recurso destructor.
 
 ## <a name="command-list-errors"></a>Errores de la lista de comandos
 
-La mayoría de las API de [**ID3D12GraphicsCommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist) no devuelven errores. Los errores detectados durante la creación de la lista de comandos se aplazan hasta [**ID3D12GraphicsCommandList:: Close**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-close). La única excepción es el \_ dispositivo de error de DXGI \_ \_ quitado, que se difiere aún más. Tenga en cuenta que esto es diferente de D3D11, donde muchos errores de validación de parámetros se quitan de forma silenciosa y nunca se devuelven al autor de la llamada.
+La mayoría de las API [**de ID3D12GraphicsCommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist) no devuelven errores. Los errores detectados durante la creación de la lista de comandos se aplazan [**hasta ID3D12GraphicsCommandList::Close**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-close). La única excepción es DXGI \_ ERROR \_ DEVICE \_ REMOVED, que se aplaza aún más. Tenga en cuenta que esto es diferente de D3D11, donde muchos errores de validación de parámetros se descartan de forma silenciosa y nunca se devuelven al autor de la llamada.
 
-Las aplicaciones pueden esperar ver \_ \_ errores de dispositivo DXGI quitados en las siguientes llamadas API:
+Las aplicaciones pueden esperar ver errores DXGI \_ DEVICE REMOVED en las siguientes llamadas \_ API:
 
 -   Cualquier método de creación de recursos
--   [**ID3D12Resource:: Map**](/windows/win32/api/d3d12/nf-d3d12-id3d12resource-map)
+-   [**ID3D12Resource::Map**](/windows/win32/api/d3d12/nf-d3d12-id3d12resource-map)
 -   [**IDXGISwapChain1::Present1**](/windows/win32/api/dxgi1_2/nf-dxgi1_2-idxgiswapchain1-present1)
 -   [**GetDeviceRemovedReason**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-getdeviceremovedreason)
 
-## <a name="command-list-api-restrictions"></a>Lista de comandos restricciones de API
+## <a name="command-list-api-restrictions"></a>Restricciones de API de la lista de comandos
 
-Algunas API de la lista de comandos solo se pueden llamar en determinados tipos de listas de comandos. En la tabla siguiente se muestran las API de lista de comandos válidas para llamar a en cada tipo de lista de comandos. También muestra qué API son válidas para llamar en una [**fase de representación de D3D12**](./direct3d-12-render-passes.md). 
+Solo se puede llamar a algunas API de lista de comandos en determinados tipos de listas de comandos. En la tabla siguiente se muestra qué API de lista de comandos son válidas para llamar a en cada tipo de lista de comandos. También muestra qué API son válidas para llamar a en un paso de representación [**D3D12.**](./direct3d-12-render-passes.md) 
 
-| Nombre de la API                                         | Gráficos | Proceso | Copiar | Bundle | En la fase de representación |
+| Nombre de la API                                         | Gráficos | Proceso | Copiar | Bundle | En Paso de representación |
 |--------------------------------------------------|:--------:|:-------:|:----:|:------:|:--------------:|
 | AtomicCopyBufferUINT                             | ✓        | ✓       | ✓    |        |                |
 | AtomicCopyBufferUINT64                           | ✓        | ✓       | ✓    |        |                |
-| BeginQuery                                       | ✓        |         |      |        | ✓              |
+| BeginEvent                                       | ✓        |         |      |        | ✓              |
 | BeginRenderPass                                  | ✓        |         |      |        |                |
 | BuildRaytracingAccelerationStructure             | ✓        | ✓       |      |        |                |
 | ClearDepthStencilView                            | ✓        |         |      |        |                |
@@ -288,28 +288,28 @@ Algunas API de la lista de comandos solo se pueden llamar en determinados tipos 
 
 ## <a name="bundle-restrictions"></a>Restricciones de agrupación
 
-Las restricciones permiten que los controladores de Direct3D 12 realicen la mayor parte del trabajo asociado a las agrupaciones en el momento del registro, lo que permite que la API de [**ExecuteBundle**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executebundle) se ejecute con poca sobrecarga. Todos los objetos de estado de canalización a los que hace referencia una agrupación deben tener los mismos formatos de destino de representación, formato de búfer de profundidad y descripciones de ejemplo.
+Las restricciones permiten a los controladores de Direct3D 12 realizar la mayor parte del trabajo asociado a los paquetes en tiempo de registro, lo que permite ejecutar la API [**ExecuteBundle**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executebundle) con una sobrecarga baja. Todos los objetos de estado de canalización a los que hace referencia una agrupación deben tener los mismos formatos de destino de representación, formato de búfer de profundidad y descripciones de ejemplo.
 
-No se permiten las siguientes llamadas a la API de lista de comandos en las listas de comandos creadas con el tipo: D3D12 \_ lista de comandos de \_ \_ tipo \_ paquete:
+Las siguientes llamadas API de lista de comandos no se permiten en las listas de comandos creadas con el tipo: D3D12 \_ COMMAND \_ LIST TYPE \_ \_ BUNDLE:
 
 -   Cualquier método Clear
--   Cualquier método de copia
+-   Cualquier método Copy
 -   [**DiscardResource**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-discardresource)
 -   [**ExecuteBundle**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executebundle)
 -   [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier)
 -   [**ResolveSubresource**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resolvesubresource)
 -   [**SetPredication**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpredication)
--   [**BeginQuery**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-beginquery)
+-   [**BeginEvent**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-beginquery)
 -   [**EndQuery**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-endquery)
 -   [**SOSetTargets**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-sosettargets)
 -   [**OMSetRenderTargets**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-omsetrendertargets)
 -   [**RSSetViewports**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-rssetviewports)
 -   [**RSSetScissorRects**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-rssetscissorrects)
 
-Se puede llamar a [**SetDescriptorHeaps**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setdescriptorheaps) en una agrupación, pero los montones de descriptores de paquete deben coincidir con el montón de descriptores de la lista de comandos de llamada.
+Se puede llamar a [**SetDescriptorHeaps**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setdescriptorheaps) en una agrupación, pero los montones del descriptor de agrupación deben coincidir con el montón del descriptor de lista de comandos que realiza la llamada.
 
-Si se llama a cualquiera de estas API en un paquete, el tiempo de ejecución quitará la llamada. La capa de depuración emitirá un error cada vez que esto suceda.
+Si se llama a cualquiera de estas API en una agrupación, el tiempo de ejecución quitará la llamada. La capa de depuración emitirá un error cada vez que esto ocurra.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Envío de trabajo en Direct3D 12](command-queues-and-command-lists.md)
+[Envío de trabajo en Direct3D 12](command-queues-and-command-lists.md)

@@ -56,7 +56,7 @@ Puede ser "wait", "notify" o ambos. Para obtener más información sobre estas m
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -64,11 +64,11 @@ Para cerrar todos los dispositivos abiertos por la aplicación, especifique el i
 
 Al cerrar el **dispositivo cdaudio,** se detiene la reproducción de audio.
 
-**Windows 2000/XP:** Si se **reproduce el dispositivo cdaudio,** el cierre del **dispositivo cdaudio** no hace que el audio deje de reproducirse. Envíe primero [el comando](stop.md) stop.
+**Windows 2000/XP:** Si el **dispositivo cdaudio** se está reproduciendo, el cierre del **dispositivo cdaudio** no hace que el audio deje de reproducirse. Envíe primero [el comando stop.](stop.md)
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente cierra el dispositivo "my sound".
+El comando siguiente cierra el dispositivo "mysound".
 
 ``` syntax
 close mysound
@@ -86,7 +86,7 @@ close mysound
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Obtiene el tamaño del búfer de la malla, en bytes.
+description: Obtenga el tamaño del búfer de malla, en bytes.
 ms.assetid: 6c958190-fb43-4e7b-924d-89bb2d92981d
-title: 'ID3DX10MeshBuffer:: (método) (D3DX10. h)'
+title: Método ID3DX10MeshBuffer::GetSize (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 47858d0267a294ad267fc2e310a16b1005d75bfc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 47766423074f6cd93cb5f881959dbd396cad632be1cb8ef1b8be944787a2e17f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852265"
 ---
-# <a name="id3dx10meshbuffergetsize-method"></a>ID3DX10MeshBuffer:: (método)
+# <a name="id3dx10meshbuffergetsize-method"></a>Método ID3DX10MeshBuffer::GetSize
 
-Obtiene el tamaño del búfer de la malla, en bytes.
+Obtenga el tamaño del búfer de malla, en bytes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **tamaño \_ T**](../winprog/windows-data-types.md)**
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)**
 
-Tamaño del búfer de la malla, en bytes.
+Tamaño del búfer de malla, en bytes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Tamaño del búfer de la malla, en bytes.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ Tamaño del búfer de la malla, en bytes.
 [ID3DX10MeshBuffer](id3dx10meshbuffer.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

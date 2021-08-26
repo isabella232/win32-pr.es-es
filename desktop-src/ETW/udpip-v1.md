@@ -1,5 +1,5 @@
 ---
-description: 'UdpIp_V1 clase: esta clase es la clase primaria para los eventos UDP/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
+description: 'UdpIp_V1 clase : esta clase es la clase primaria para los eventos UDP/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 31672a5a-05b2-4382-b793-7a793d985951
 title: UdpIp_V1 clase
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5035cd764c1b3a7eb0943622897d97684ec8bd61
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f7eca611161e049b3704a37cec5b9324df6348e30fb457d0053c4cbb4085ca3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914335"
 ---
 # <a name="udpip_v1-class"></a>UdpIp \_ V1 (clase)
 
@@ -46,14 +46,14 @@ La **clase UdpIp \_ V1** no define ningún miembro.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Conjuntos predefinidos de estado de canalización usados por bloques de estado (vea bloques de estado guardar y restaurar estado (Direct3D 9)).
+description: Conjuntos predefinidos de estado de canalización usados por bloques de estado (vea State Blocks Save and Restore State (Direct3D 9)).
 ms.assetid: 60b94d45-aab6-4dbe-ab48-65dfe9861d82
-title: Enumeración D3DSTATEBLOCKTYPE (D3D9Types. h)
+title: Enumeración D3DSTATEBLOCKTYPE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 03b1834a2bd8e1b5f89922d908a558aa97e58f76
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7780b7ded37ba976f32f4439ab793ae711be2f5790d03555a6a8be4f031571e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104552932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850195"
 ---
-# <a name="d3dstateblocktype-enumeration"></a>Enumeración D3DSTATEBLOCKTYPE
+# <a name="d3dstateblocktype-enumeration"></a>D3DSTATEBLOCKTYPE (enumeración)
 
-Conjuntos predefinidos de estado de canalización usados por bloques de estado (vea [bloques de estado guardar y restaurar estado (Direct3D 9)](state-blocks-save-and-restore-state.md)).
+Conjuntos predefinidos de estado de canalización usados por los bloques de estado (vea State Blocks Save and Restore State (Direct3D 9) [Guardar y restaurar estado [(Direct3D 9)].](state-blocks-save-and-restore-state.md)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,47 +42,47 @@ typedef enum _D3DSTATEBLOCKTYPE {
 
 <dl> <dt>
 
-<span id="D3DSBT_ALL"></span><span id="d3dsbt_all"></span>**D3DSBT \_ todo**
+<span id="D3DSBT_ALL"></span><span id="d3dsbt_all"></span>**D3DSBT \_ ALL**
 </dt> <dd>
 
-Capture el estado actual del [dispositivo](saving-all-device-states-with-a-stateblock.md).
+Capture el estado [del dispositivo actual.](saving-all-device-states-with-a-stateblock.md)
 
 </dd> <dt>
 
 <span id="D3DSBT_PIXELSTATE"></span><span id="d3dsbt_pixelstate"></span>**D3DSBT \_ PIXELSTATE**
 </dt> <dd>
 
-Capturar el estado actual de los [píxeles](saving-pixel-states-with-a-stateblock.md).
+Capture el estado [de píxel actual.](saving-pixel-states-with-a-stateblock.md)
 
 </dd> <dt>
 
 <span id="D3DSBT_VERTEXSTATE"></span><span id="d3dsbt_vertexstate"></span>**D3DSBT \_ VERTEXSTATE**
 </dt> <dd>
 
-Capturar el estado actual del [vértice](saving-vertex-states-with-a-stateblock.md).
+Capture el estado [del vértice actual.](saving-vertex-states-with-a-stateblock.md)
 
 </dd> <dt>
 
-<span id="D3DSBT_FORCE_DWORD"></span><span id="d3dsbt_force_dword"></span>**D3DSBT \_ forzar \_ DWORD**
+<span id="D3DSBT_FORCE_DWORD"></span><span id="d3dsbt_force_dword"></span>**D3DSBT \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. No utilice este valor.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. No use este valor.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Como se muestra en el diagrama siguiente, el estado de los vértices y los píxeles son ambos subconjuntos del estado del dispositivo.
+Como se muestra en el diagrama siguiente, el estado de los vértices y los píxeles son subconjuntos del estado del dispositivo.
 
-![diagrama del estado del dispositivo, con estado de vértice y estado de píxel como subconjuntos](images/statesets.png)
+![diagrama del estado del dispositivo, con estado de vértice y estado de píxeles como subconjuntos](images/statesets.png)
 
-Solo hay algunos Estados que se consideran el estado de vértices y de píxeles. Estos estados son:
+Solo hay algunos estados que se consideran estado de vértice y píxel. Estos estados son:
 
--   Estado de representación: D3DRS \_ FOGDENSITY
--   Estado de representación: D3DRS \_ FOGSTART
--   Estado de representación: D3DRS \_ FOGEND
+-   Estado de representación: D3DRS \_ RAGDENSITY
+-   Estado de representación: D3DRSSTART \_ DESTART
+-   Estado de representación: \_ D3DRSEND
 -   Estado de textura: D3DTSS \_ TEXCOORDINDEX
--   Estado de textura: D3DTSS \_ TEXTURETRANSFORMFLAGS
+-   Estado de textura: \_ TEXTURETRANSFORMFLAGS de D3DTSS
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Solo hay algunos Estados que se consideran el estado de vértices y de píxeles.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

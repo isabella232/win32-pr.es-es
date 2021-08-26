@@ -1,7 +1,7 @@
 ---
 description: Especifica el nombre de la entidad de certificación (CA).
 ms.assetid: 224c2a51-8a25-4b66-b86b-c87531475145
-title: 'ISCrdEnr:: setCAName (método)'
+title: Método ISCrdEnr::setCAName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 46dcd9294337c088b9e1b0ab68bddefe4308ed27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 726b1d6d6a31831e5db192b5a71dea9efa32f624333ee7f6d6d2eea432dacae9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119960275"
 ---
-# <a name="iscrdenrsetcaname-method"></a>ISCrdEnr:: setCAName (método)
+# <a name="iscrdenrsetcaname-method"></a>Método ISCrdEnr::setCAName
 
-El método **setCAName** especifica el nombre de la [*entidad de certificación*](../secgloss/c-gly.md) (CA).
+El **método setCAName** especifica el nombre de la [*entidad de certificación*](../secgloss/c-gly.md) (CA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,24 +54,24 @@ SCrdEnr.setCAName( _
 
 <dl> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Valor que especifica si el nombre hace referencia al nombre de la entidad de certificación o al nombre del equipo de la CA. Si este valor es PPAC \_ ENROLL \_ CA nombre del \_ equipo \_ (definido como 0x01), el nombre hace referencia al nombre del equipo de la entidad de certificación. De lo contrario, el nombre hace referencia al nombre de la entidad de certificación.
+Valor que especifica si el nombre hace referencia al nombre de la entidad de certificación o al nombre del equipo de la entidad de certificación. Si este valor es SCARD ENROLL CA MACHINE NAME (definido como 0x01), el nombre hace referencia al nombre \_ del equipo de la entidad de \_ \_ \_ certificación. De lo contrario, el nombre hace referencia al nombre de la entidad de certificación.
 
 </dd> <dt>
 
-*bstrCertTemplateName* \[ de\]
+*bstrCertTemplateName* \[ En\]
 </dt> <dd>
 
 Nombre de la plantilla de certificado.
 
 </dd> <dt>
 
-*bstrCAName* \[ de\]
+*bstrCAName* \[ En\]
 </dt> <dd>
 
-Nombre de la entidad de certificación que se usará con la plantilla de certificado especificada por *bstrCertTemplateName*.
+Nombre de ca que se va a usar con la plantilla de certificado especificada *por bstrCertTemplateName*.
 
 </dd> </dl>
 
@@ -79,11 +79,11 @@ Nombre de la entidad de certificación que se usará con la plantilla de certifi
 
 ### <a name="vb"></a>VB
 
-El valor devuelto es **HRESULT**. Un valor de S \_ OK indica que la llamada se realizó correctamente.
+El valor devuelto es **un HRESULT**. Un valor de S \_ OK indica que la llamada se ha realizado correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Utilice este método para especificar una CA para una plantilla de certificado.
+Use este método para especificar una entidad de certificación para una plantilla de certificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,9 +92,9 @@ Utilice este método para especificar una CA para una plantilla de certificado.
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr se define como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr se define como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 
