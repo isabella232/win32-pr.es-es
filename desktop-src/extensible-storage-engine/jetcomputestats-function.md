@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetComputeStats (función)'
-title: JetComputeStats función)
+description: 'Más información sobre: JetComputeStats (Función)'
+title: JetComputeStats (Función)
 TOCTitle: JetComputeStats Function
 ms:assetid: 142f6ab0-715f-493a-a762-7a83854498d2
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269192(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 77c6856a50ae2f1c01b1cfde0666d0c535ad37e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1324722ed0bd239f4c5b26fbd3340d45f325e53c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279396"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465824"
 ---
-# <a name="jetcomputestats-function"></a>JetComputeStats función)
+# <a name="jetcomputestats-function"></a>JetComputeStats (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetcomputestats-function"></a>JetComputeStats función)
+## <a name="jetcomputestats-function"></a>JetComputeStats (Función)
 
-La función **JetComputeStats** recorre cada índice de una tabla para calcular exactamente el número de entradas de un índice y el número de claves distintas de un índice. Esta información, junto con el número de páginas de base de datos asignadas para un índice y la hora actual del cálculo, se almacena en los metadatos de índice de la base de datos. Estos datos se pueden recuperar posteriormente con operaciones de información.
+La **función JetComputeStats** recorre cada índice de una tabla para calcular exactamente el número de entradas de un índice y el número de claves distintas de un índice. Esta información, junto con el número de páginas de base de datos asignadas para un índice y la hora actual del cálculo se almacena en metadatos de índice en la base de datos. Estos datos se pueden recuperar posteriormente con operaciones de información.
 
 ```cpp
     JET_ERR JET_API JetComputeStats(
@@ -47,106 +47,45 @@ La función **JetComputeStats** recorre cada índice de una tabla para calcular 
 
 Sesión que se va a usar para esta llamada.
 
-*TABLEID*
+*tableid*
 
-Cursor que se utilizará para esta llamada. Describe la tabla en la que se van a calcular las estadísticas.
+Cursor que se usará para esta llamada. Describe la tabla en la que se calculan las estadísticas.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>No es posible completar la operación porque se ha interrumpido toda la actividad en la instancia asociada a la sesión como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irrecuperable que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p>
-<p>Este error solo se devolverá en Windows XP y versiones posteriores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>No es posible completar la operación porque todavía no se ha inicializado la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRollbackError</p></td>
-<td><p>Se produjo un error que requiere que esta operación revierta todos los cambios, pero no se pudo revertir la transacción.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo.</p>
-<p>Este error solo se devolverá en Windows XP y versiones posteriores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p></td>
-</tr>
-</tbody>
-</table>
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
-En caso de éxito, las estadísticas actualizadas se almacenan en los catálogos de base de datos de la tabla descrita con el cursor especificado.
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p>Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
+| <p>JET_errRollbackError</p> | <p>Se produjo un error que requiere que esta operación revierta todos los cambios, pero se produjo un error en la reversión de la transacción.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo.</p><p>Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
+
+
+
+Si se ejecuta correctamente, las estadísticas actualizadas se almacenan en los catálogos de base de datos de la tabla descrita con el cursor dado.
 
 En caso de error, no se realiza ninguna actualización de ningún tipo en la base de datos.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-Esta operación puede consumir recursos, ya que todos los índices de una tabla se deben recorrer en su totalidad. [JetGetRecordPosition](./jetgetrecordposition-function.md) se puede usar para obtener una estimación aproximada del número de entradas de un índice, pero no puede calcular por sí misma el número de valores distintos de un índice.
+Esta operación puede consumir recursos, ya que cada índice de una tabla se debe seguir en su totalidad. [JetGetRecordPosition](./jetgetrecordposition-function.md) se puede usar para obtener una estimación aproximada del número de entradas de un índice, pero no puede calcular por sí misma el número de valores distintos de un índice.
 
-Los datos calculados por esta operación empiezan a quedar obsoletos y la tabla se actualiza posteriormente.
+Los datos calculados por esta operación comienzan a estar desactualados y la tabla se actualiza posteriormente.
 
-Las actualizaciones de la base de datos realizadas por **JetComputeStats** se realizan de manera diferida. Esto significa que no se adjuntará ningún vaciado de registro por esta operación y un bloqueo del sistema posterior a una devolución de JET_errSuccess por parte de **JetComputeStats** puede hacer que se pierdan estas actualizaciones.
+Las actualizaciones de la base de datos realizadas por **JetComputeStats** se realizan de forma diferida. Esto significa que esta operación no va a ir acompañada de ningún vaciado del registro y que un bloqueo del sistema posterior a la devolución de JET_errSuccess por Parte de **JetComputeStats** puede seguir provocando la pérdida de estas actualizaciones.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

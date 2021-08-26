@@ -1,19 +1,19 @@
 ---
-description: Si se establece este bit, el control muestra todos los volúmenes implicados en la instalación actual más todos los volúmenes de disco RAM. Si no se establece este bit, el control muestra los volúmenes en la instalación actual.
+description: Si se establece este bit, el control muestra todos los volúmenes implicados en la instalación actual más todos los volúmenes de disco RAM. Si este bit no está establecido, el control enumera los volúmenes de la instalación actual.
 ms.assetid: 52526f39-26fb-4a67-a95f-77f7eb761372
 title: Atributo de control RAMDiskVolume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc4324af143bab619c6f881925586186be45b44a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9167c045a8437fff12c312999d71bd8fc2c7927f1ac8d3acf2260127b73cbb83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129025"
 ---
 # <a name="ramdiskvolume-control-attribute"></a>Atributo de control RAMDiskVolume
 
-Si se establece este bit, el control muestra todos los volúmenes implicados en la instalación actual más todos los volúmenes de disco RAM. Si no se establece este bit, el control muestra los volúmenes en la instalación actual.
+Si se establece este bit, el control muestra todos los volúmenes implicados en la instalación actual más todos los volúmenes de disco RAM. Si este bit no está establecido, el control enumera los volúmenes de la instalación actual.
 
 ## <a name="valid-controls"></a>Controles válidos
 
@@ -39,11 +39,11 @@ Si se establece este bit, el control muestra todos los volúmenes implicados en 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para establecer este atributo en un control, incluya el bit RAMDiskVolume en la columna Attributes del registro del control en la [tabla de control](control-table.md).
+Para establecer este atributo en un control , incluya el bit RAMDiskVolume en la columna Atributos del registro del control en la [tabla Control](control-table.md).
 
-Vea [controles y](controls.md) [atributos de control](control-attributes.md) .
+Vea [Controles y atributos](control-attributes.md) de [control.](controls.md)
 
  
 

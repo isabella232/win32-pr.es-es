@@ -4,12 +4,12 @@ ms.assetid: 7d79c2fe-c63d-4ac5-8dd6-1a6103e53245
 title: queryControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34f05800fc026c61a4ea50098fb1d8f4deb98d971c9eecfed478d71bd3c01033
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3652a46d403bc258226de5a48f34ae16960ff517
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119823565"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626321"
 ---
 # <a name="querycontrol"></a>queryControl
 
@@ -17,7 +17,7 @@ No se admite en Windows 7 y versiones posteriores. Especifica qué control se va
 
 Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [queryControl,]() la configuración predeterminada del atributo se aplica a la descripción de la propiedad.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -51,7 +51,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 
 | Elemento primario                                   | Elementos secundarios |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | Ninguno           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | None           |
 
 
 
@@ -63,8 +63,8 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -78,8 +78,8 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <td>Público. Opcional. El valor predeterminado &quot; es Default &quot; . Estos son los valores válidos. 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -89,7 +89,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 </thead>
 <tbody>
 <tr class="odd">
-<td>Valor predeterminado</td>
+<td>Predeterminado</td>
 <td>Predeterminada. Usa el control predeterminado, basado en el <typeInfo type=&quot;&quot;> atributo . A continuación se enumeran los tipos predeterminados. Cualquier otro tipo da como resultado el uso del &quot; &quot; control Texto. 
 <table>
 <thead>
@@ -112,7 +112,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <td>NumericText</td>
 </tr>
 <tr class="even">
-<td>Number o Size (enumeración)</td>
+<td>Número o tamaño (enumeración)</td>
 <td>List</td>
 </tr>
 <tr class="odd">

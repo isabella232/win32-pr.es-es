@@ -1,31 +1,31 @@
 ---
-description: Generados por los receptores de flujo del representador de vídeo mejorado (EVR) si cambia el dispositivo de vídeo.
+description: Se genera mediante los receptores de flujo del representador de vídeo mejorado (EVR) si cambia el dispositivo de vídeo.
 ms.assetid: 5b663d6b-5df8-4321-a6a5-a21b9810065a
-title: Evento MEStreamSinkDeviceChanged (Mfobjects. h)
+title: Evento MEStreamSinkDeviceChanged (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 651fc34a56ca52cfb9e0b3f20e6e4d6b5366f541
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb760a45125ae7434ff2a58d43f087d2ec3c030cb29351ea4d2113ca8fe10c0a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061015"
 ---
 # <a name="mestreamsinkdevicechanged-event"></a>Evento MEStreamSinkDeviceChanged
 
-Generados por los receptores de flujo del representador de vídeo mejorado (EVR) si cambia el dispositivo de vídeo. Por ejemplo, el EVR genera este evento cuando recibe un evento [**de \_ \_ cambio de visualización de EC**](../directshow/ec-display-changed.md) .
+Se genera mediante los receptores de flujo del representador de vídeo mejorado (EVR) si cambia el dispositivo de vídeo. Por ejemplo, la EVR genera este evento cuando recibe un evento [**\_ EC DISPLAY \_ CHANGED.**](../directshow/ec-display-changed.md)
 
-La canalización de Media Foundation responde a este evento al reenviar todas las solicitudes de ejemplo en las que se produjo un error mientras el dispositivo estaba cambiando.
+La Media Foundation de datos responde a este evento al volver a enviar todas las solicitudes de ejemplo que no se pudieron hacer mientras el dispositivo cambiaba.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE              | Descripción                           |
 |----------------------|---------------------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> <br/> |
 
 
 
@@ -35,9 +35,9 @@ Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desk
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desk
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> <dt>
 
-[Receptores de medios](media-sinks.md)
+[Receptores multimedia](media-sinks.md)
 </dt> </dl>
 
  

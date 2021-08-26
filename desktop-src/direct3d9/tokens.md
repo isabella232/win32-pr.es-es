@@ -1,21 +1,21 @@
 ---
-description: Los tokens se escriben como palabras Little-Endian. La siguiente lista de valores de token se divide en tokens independientes y de cojinete de registros.
+description: Los tokens se escriben como WORD little-endian. La siguiente lista de valores de token se divide en tokens independientes y de registro.
 ms.assetid: vs|directx_sdk|~\tokens.htm
 title: Tokens
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1df253327b1256ea5e04f8b80b7e1da89f13e32c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cf3e3654d90566fa6c4a6208c965518ce54acd3dd31669038de1b9a8ab38684d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105714776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095585"
 ---
 # <a name="tokens"></a>Tokens
 
-Los tokens se escriben como palabras Little-Endian. La siguiente lista de valores de token se divide en tokens independientes y de cojinete de registros.
+Los tokens se escriben como WORD little-endian. La siguiente lista de valores de token se divide en tokens independientes y de registro.
 
-Los tokens del cojinete de registros se definen como se indica a continuación.
+Los tokens de registro se definen como se muestra a continuación.
 
 
 ```
@@ -29,7 +29,7 @@ Los tokens del cojinete de registros se definen como se indica a continuación.
 
 
 
-Los tokens independientes se definen como se indica a continuación.
+Los tokens independientes se definen como se muestra a continuación.
 
 
 ```

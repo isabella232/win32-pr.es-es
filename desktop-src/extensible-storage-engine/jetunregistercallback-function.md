@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetUnregisterCallback (función)'
-title: JetUnregisterCallback función)
+description: 'Más información sobre: JetUnregisterCallback (Función)'
+title: JetUnregisterCallback (Función)
 TOCTitle: JetUnregisterCallback Function
 ms:assetid: de5c7afa-07e1-4687-989b-b56125a9712e
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294116(v=EXCHG.10)
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b342bab655e3cf1e3c1a5967410edb1c971af87b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5cb60d8b0d06ff6af9d950c53d8bdf8f4eedb774
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423739"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466252"
 ---
-# <a name="jetunregistercallback-function"></a>JetUnregisterCallback función)
+# <a name="jetunregistercallback-function"></a>JetUnregisterCallback (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetunregistercallback-function"></a>JetUnregisterCallback función)
+## <a name="jetunregistercallback-function"></a>JetUnregisterCallback (Función)
 
-La función **JetUnregisterCallback** permite a la aplicación configurar el motor de base de datos para detener la emisión de notificaciones a la aplicación como se solicitó previamente a través de [JetRegisterCallback](./jetregistercallback-function.md).
+La **función JetUnregisterCallback permite** a la aplicación configurar el motor de base de datos para detener la emisión de notificaciones a la aplicación como se solicitó anteriormente a través de [JetRegisterCallback](./jetregistercallback-function.md).
 
-**Windows XP:**  **JetUnregisterCallback** se presentó en Windows XP.
+**Windows XP:****JetUnregisterCallback** se introdujo en Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetUnregisterCallback(
@@ -51,108 +51,50 @@ La función **JetUnregisterCallback** permite a la aplicación configurar el mot
 
 Sesión que se va a usar para esta llamada.
 
-*TABLEID*
+*tableid*
 
 Cursor que se va a usar para esta llamada.
 
 *cbtyp*
 
-Máscara de máscara que se compone de los motivos por los que la aplicación ya no quiere recibir notificaciones.
+Máscara de bits formada por las razones de devolución de llamada por las que la aplicación ya no desea recibir notificaciones.
 
-Para crear esta máscara de cadena, simplemente o juntos, los motivos válidos de devolución de llamada de la enumeración [JET_CBTYP](./jet-cbtyp.md) .
+Para crear esta máscara de bits, simplemente o juntos motivos de devolución de llamada válidos de la [enumeración JET_CBTYP](./jet-cbtyp.md) bits.
 
 *hCallbackId*
 
-Identificador de la devolución de llamada registrada devuelta por [JetRegisterCallback](./jetregistercallback-function.md).
+Identificador de la devolución de llamada registrada devuelta por [JetRegisterCallback.](./jetregistercallback-function.md)
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>No se puede completar la operación porque todas las actividades de la instancia que está asociada a la sesión han dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>No se puede completar la operación porque la instancia asociada a la sesión encontró un error irrecuperable que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p>
-<p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>No se puede completar la operación porque la instancia de asociada a la sesión aún no se ha inicializado.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>No se puede completar la operación porque hay una operación de restauración en curso en la instancia que está asociada a la sesión.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo.</p>
-<p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>No se puede completar la operación porque se está cerrando la instancia asociada a la sesión.</p></td>
-</tr>
-</tbody>
-</table>
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
-Si esta función se ejecuta correctamente, se anulará el registro de la devolución de llamada especificada para los motivos de devolución de llamada dados con la tabla asociada al cursor especificado. No se producirá ningún cambio en el estado de la base de datos.
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>La operación no se puede completar porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p> | 
+| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque aún no se ha inicializado la instancia asociada a la sesión.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>La operación no se puede completar porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p> | 
+| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia de asociada a la sesión.</p> | 
 
-Si se produce un error en esta función, no se anulará el registro de la devolución de llamada especificada. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Observaciones
 
-La máscara de la función debe coincidir exactamente con la máscara de la que se especifica al registrar la devolución de llamada. El motor de base de datos no admite actualmente la eliminación de un subconjunto de estas notificaciones y no devuelve un error cuando se intenta.
+Si esta función se realiza correctamente, se anulará el registro de la devolución de llamada especificada por los motivos de devolución de llamada especificados con la tabla asociada al cursor especificado. No se producirá ningún cambio en el estado de la base de datos.
+
+Si se produce un error en esta función, la devolución de llamada especificada no se anulará del registro. No se producirá ningún cambio en el estado de la base de datos.
+
+#### <a name="remarks"></a>Comentarios
+
+La máscara de bits especificada debe coincidir exactamente con la máscara de bits que se especifica al registrar la devolución de llamada. El motor de base de datos no admite actualmente la eliminación de un subconjunto de estas notificaciones y no devuelve un error cuando se intenta hacerlo.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

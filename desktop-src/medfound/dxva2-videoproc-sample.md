@@ -4,12 +4,12 @@ ms.assetid: 1465bd41-94f9-4e19-8236-00e7a2d6f54a
 title: DXVA2_VideoProc ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 160fda9829398b97e7670bb2d1f8cc076c00cda77e1ad06131603603f6f49191
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8fc4be1bad6a3955af255cb083a4595ecedfd30
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119828295"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473931"
 ---
 # <a name="dxva2_videoproc-sample"></a>Ejemplo de VideoProc de DXVA2 \_
 
@@ -59,110 +59,22 @@ Comandos de teclado:
 
  
 
-Cada una de las teclas de función F1 a F8 cambia a un modo en el que las teclas de dirección se pueden usar para ajustar un parámetro de representación determinado. Además, cambia el color de la secuencia inferior.
+Cada una de las teclas de función de F1 a F8 cambia a un modo en el que las teclas de dirección se pueden usar para ajustar un parámetro de representación determinado. Además, cambia el color de la secuencia inferior.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Clave</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>F1</td>
-<td>Ajuste los valores alfa.<br/>
-<ul>
-<li>UP: aumente el alfa planar de ambas secuencias.</li>
-<li>DOWN: reduzca el alfa planar de ambas secuencias.</li>
-<li>RIGHT: aumente el píxel alfa de la subsección.</li>
-<li>LEFT: reduzca el píxel alfa de la subsección.</li>
-</ul>
-Color de substream: Blanco<br/></td>
-</tr>
-<tr class="even">
-<td>F2</td>
-<td>Ajuste el área de origen del flujo principal (zoom).<br/>
-<ul>
-<li>SUBIR: aumente verticalmente (acercar).</li>
-<li>DOWN: disminuir verticalmente (alejar).</li>
-<li>RIGHT: Aumentar horizontalmente (acercar).</li>
-<li>LEFT: disminuir horizontalmente (alejar).</li>
-</ul>
-Color de subtransmisión: rojo<br/></td>
-</tr>
-<tr class="odd">
-<td>F3</td>
-<td>Mueva el área de origen del flujo principal.<br/>
-<ul>
-<li>SUBIR: subir.</li>
-<li>DOWN: bajar.</li>
-<li>RIGHT: moverse a la derecha.</li>
-<li>LEFT: mover a la izquierda.</li>
-</ul>
-Color de subtransmisión: amarillo<br/></td>
-</tr>
-<tr class="even">
-<td>F4</td>
-<td>Ajuste el área de destino del flujo principal.<br/>
-<ul>
-<li>UP: aumente verticalmente.</li>
-<li>DOWN: disminuir verticalmente.</li>
-<li>RIGHT: aumente horizontalmente.</li>
-<li>LEFT: disminuir horizontalmente.</li>
-</ul>
-Color de substream: Verde<br/></td>
-</tr>
-<tr class="odd">
-<td>F5</td>
-<td>Mueva el área de destino del flujo principal.<br/>
-<ul>
-<li>SUBIR: subir.</li>
-<li>DOWN: bajar.</li>
-<li>RIGHT: moverse a la derecha.</li>
-<li>LEFT: mover a la izquierda.</li>
-</ul>
-Color de subtransmisión: Cian<br/></td>
-</tr>
-<tr class="even">
-<td>F6</td>
-<td>Cambiar el color de fondo o el espacio de color.<br/>
-<ul>
-<li>UP, DOWN: recorrer los espacios de color.</li>
-<li>RIGHT, LEFT: recorrer los colores de fondo.</li>
-</ul>
-Color de substream: Azul<br/></td>
-</tr>
-<tr class="odd">
-<td>F7</td>
-<td>Ajuste el brillo y el contraste.<br/>
-<ul>
-<li>UP: aumente el brillo.</li>
-<li>DOWN: disminuir el brillo.</li>
-<li>RIGHT: aumente el contraste.</li>
-<li>LEFT: disminuir el contraste.</li>
-</ul>
-Color de substream: Magenta<br/></td>
-</tr>
-<tr class="even">
-<td>F8</td>
-<td>Ajuste el matiz y la saturación.<br/>
-<ul>
-<li>UP: aumente el matiz.</li>
-<li>DOWN: disminuir el matiz.</li>
-<li>RIGHT: Aumente la saturación.</li>
-<li>LEFT: disminuir la saturación.</li>
-</ul>
-Color de subtransmisión: negro<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Clave | Descripción | 
+|-----|-------------|
+| F1 | Ajuste los valores alfa.<br /><ul><li>UP: aumente el alfa planar de ambas secuencias.</li><li>DOWN: reduzca el alfa planar de ambas secuencias.</li><li>RIGHT: aumente el píxel alfa de la subsección.</li><li>LEFT: reduzca el píxel alfa de la subsección.</li></ul>Color de substream: Blanco<br /> | 
+| F2 | Ajuste el área de origen del flujo principal (zoom).<br /><ul><li>SUBIR: aumentar verticalmente (acercar).</li><li>DOWN: disminuir verticalmente (alejar).</li><li>RIGHT: Aumentar horizontalmente (acercar).</li><li>LEFT: reducir horizontalmente (alejar).</li></ul>Color de subtransmisión: rojo<br /> | 
+| F3 | Mueva el área de origen del flujo principal.<br /><ul><li>SUBIR: subir.</li><li>DOWN: bajar.</li><li>RIGHT: moverse a la derecha.</li><li>LEFT: mover a la izquierda.</li></ul>Color de subtransmisión: amarillo<br /> | 
+| F4 | Ajuste el área de destino del flujo principal.<br /><ul><li>UP: aumente verticalmente.</li><li>DOWN: disminuir verticalmente.</li><li>RIGHT: aumente horizontalmente.</li><li>LEFT: disminuir horizontalmente.</li></ul>Color de substream: Verde<br /> | 
+| F5 | Mueva el área de destino del flujo principal.<br /><ul><li>SUBIR: subir.</li><li>DOWN: bajar.</li><li>RIGHT: moverse a la derecha.</li><li>LEFT: mover a la izquierda.</li></ul>Color de substream: Cian<br /> | 
+| F6 | Cambiar el color de fondo o el espacio de color.<br /><ul><li>UP, DOWN: recorrer los espacios de color.</li><li>RIGHT, LEFT: recorrer los colores de fondo.</li></ul>Color de substream: Azul<br /> | 
+| F7 | Ajuste el brillo y el contraste.<br /><ul><li>UP: aumente el brillo.</li><li>DOWN: disminuir el brillo.</li><li>RIGHT: aumente el contraste.</li><li>LEFT: disminuir el contraste.</li></ul>Color de substream: Magenta<br /> | 
+| F8 | Ajuste el matiz y la saturación.<br /><ul><li>UP: aumente el matiz.</li><li>DOWN: disminuir el matiz.</li><li>RIGHT: Aumente la saturación.</li><li>LEFT: disminuir la saturación.</li></ul>Color de subtransmisión: negro<br /> | 
+
 
 
 

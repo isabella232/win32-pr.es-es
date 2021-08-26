@@ -1,7 +1,7 @@
 ---
 description: Recupera el siguiente elemento de la cola.
 ms.assetid: 406ae640-5903-427d-91f9-8b01beb1aaa7
-title: Método CQueue. GetQueueObject (Wxutil. h)
+title: Método CQueue.GetQueueObject (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c3ae68c0564c7f76f38e91b7d27c8c3deb5ef2b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c32039a82e3a0b5c086cbe18e895bdec1aaac09d4947b90d9ba18e8c6636d71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108285"
 ---
-# <a name="cqueuegetqueueobject-method"></a>CQueue. GetQueueObject, método
+# <a name="cqueuegetqueueobject-method"></a>Método CQueue.GetQueueObject
 
 Recupera el siguiente elemento de la cola.
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve un objeto de tipo **T** (el tipo de plantilla).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se bloquea hasta que un elemento esté disponible en la cola.
+Este método se bloquea hasta que un elemento está disponible en la cola.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método se bloquea hasta que un elemento esté disponible en la cola.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método se bloquea hasta que un elemento esté disponible en la cola.
 
 <dl> <dt>
 
-[**Clase CQueue**](cqueue.md)
+[**CQueue (clase)**](cqueue.md)
 </dt> </dl>
 
  

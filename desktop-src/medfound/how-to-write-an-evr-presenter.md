@@ -4,26 +4,26 @@ ms.assetid: 1135b309-b158-4b70-9f76-5c93d0ad3250
 title: Cómo escribir un presentador de EVR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 505ba7ec225ac5f1316ad4343a4e1058ff0b6cb8
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 4e80c2c6397282b93aef1db0e5c491234e045472
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118780"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474751"
 ---
 # <a name="how-to-write-an-evr-presenter"></a>Cómo escribir un presentador de EVR
 
-En este artículo se describe cómo escribir un presentador personalizado para el representador de vídeo mejorado (EVR). Se puede usar un presentador personalizado con DirectShow y Media Foundation; las interfaces y el modelo de objetos son los mismos para ambas tecnologías, aunque la secuencia exacta de operaciones puede variar.
+En este artículo se describe cómo escribir un presentador personalizado para el representador de vídeo mejorado (EVR). Un presentador personalizado se puede usar con DirectShow y Media Foundation; las interfaces y el modelo de objetos son los mismos para ambas tecnologías, aunque la secuencia exacta de operaciones puede variar.
 
-El código de ejemplo de este tema se adapta del ejemplo [EVRPresenter](evrpresenter-sample.md), que se proporciona en el Windows SDK.
+El código de ejemplo de este tema se adapta del ejemplo [EVRPresenter](evrpresenter-sample.md), que se proporciona en Windows SDK.
 
 Este tema contiene las siguientes secciones:
 
 -   [Requisitos previos](#prerequisites)
 -   [Modelo de objetos del presentador](#presenter-object-model)
-    -   [Data Flow dentro de la EVR](#data-flow-inside-the-evr)
+    -   [Data Flow Inside the EVR](#data-flow-inside-the-evr)
     -   [Estados del presentador](#presenter-states)
-    -   [Interfaces de presentador](#presenter-interfaces)
+    -   [Interfaces del presentador](#presenter-interfaces)
     -   [Implementación de IMFVideoDeviceID](#implementing-imfvideodeviceid)
     -   [Implementación de IMFTopologyServiceLookupClient](#implementing-imftopologyservicelookupclient)
     -   [Implementación de IMFVideoPresenter](#implementing-imfvideopresenter)
@@ -40,34 +40,34 @@ Este tema contiene las siguientes secciones:
     -   [Presentación de ejemplos](#presenting-samples)
     -   [Rectángulos de origen y destino](#source-and-destination-rectangles)
     -   [Fin de la secuencia](#end-of-stream)
--   [Ejecución paso a paso de fotogramas](#frame-stepping)
+-   [Paso a paso por fotogramas](#frame-stepping)
     -   [Implementación de la ejecución paso a paso de fotogramas](#implementing-frame-stepping)
--   [Establecimiento del presentador en la EVR](#setting-the-presenter-on-the-evr)
+-   [Establecimiento del presentador en el EVR](#setting-the-presenter-on-the-evr)
     -   [Establecimiento del presentador en DirectShow](#setting-the-presenter-in-directshow)
     -   [Establecimiento del presentador en Media Foundation](#setting-the-presenter-in-media-foundation)
 -   [Temas relacionados](#related-topics)
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 Antes de escribir un presentador personalizado, debe estar familiarizado con las siguientes tecnologías:
 
 -   Representador de vídeo mejorado. Consulte [Representador de vídeo mejorado.](enhanced-video-renderer.md)
 -   Gráficos de Direct3D. No es necesario comprender los gráficos 3D para escribir un presentador, pero debe saber cómo crear un dispositivo Direct3D y administrar las superficies de Direct3D. Si no está familiarizado con Direct3D, lea las secciones "Dispositivos Direct3D" y "Recursos de Direct3D" en la documentación del SDK de gráficos de DirectX.
--   DirectShow filtra gráficos o la canalización Media Foundation, en función de la tecnología que la aplicación usará para representar vídeo.
--   [Media Foundation transforma](media-foundation-transforms.md). El mezclador EVR es una Media Foundation y el presentador llama a métodos directamente en el mezclador.
+-   DirectShow gráficos de filtro o la Media Foundation, en función de la tecnología que la aplicación usará para representar vídeo.
+-   [Media Foundation transforma](media-foundation-transforms.md). El mezclador EVR es una transformación Media Foundation y el presentador llama a métodos directamente en el mezclador.
 -   Implementar objetos COM. El presentador es un objeto COM en proceso y sin subprocesos.
 
 ## <a name="presenter-object-model"></a>Modelo de objetos del presentador
 
 Esta sección contiene información general sobre el modelo de objetos del presentador y las interfaces.
 
-### <a name="data-flow-inside-the-evr"></a>Data Flow dentro de la EVR
+### <a name="data-flow-inside-the-evr"></a>Data Flow Inside the EVR
 
-La EVR usa dos componentes de complemento para representar vídeo: el *mezclador* y *el presentador*. El mezclador combina las secuencias de vídeo y desenlaza el vídeo si es necesario. El presentador dibuja *(o* presenta) el vídeo en la pantalla y programa cuando se dibuja cada fotograma. Las aplicaciones pueden reemplazar cualquiera de estos objetos por una implementación personalizada.
+El EVR usa dos componentes de complemento para representar vídeo: el *mezclador* y *el presentador*. El mezclador mezcla las secuencias de vídeo y desenlaza el vídeo si es necesario. El presentador dibuja (o *presenta)* el vídeo en la pantalla y programa cuando se dibuja cada fotograma. Las aplicaciones pueden reemplazar cualquiera de estos objetos por una implementación personalizada.
 
-El EVR tiene uno o varios flujos de entrada y el mezclador tiene un número correspondiente de flujos de entrada. El flujo 0 siempre es la *secuencia de referencia.* Las demás secuencias son *substreams*, que el mezclador combina alfa en la secuencia de referencia. La secuencia de referencia determina la velocidad de fotogramas maestra para el vídeo compuesto. Para cada fotograma de referencia, el mezclador toma el fotograma más reciente de cada subtrata, los combina alfa en el marco de referencia y genera un único fotograma compuesto. El mezclador también realiza el desinterlazado y la conversión de color de YUV a RGB si es necesario. EvR siempre inserta el mezclador en la canalización de vídeo, independientemente del número de flujos de entrada o del formato de vídeo. En la imagen siguiente se muestra este proceso.
+El EVR tiene uno o varios flujos de entrada y el mezclador tiene un número correspondiente de flujos de entrada. El flujo 0 siempre es la secuencia *de referencia*. Las demás secuencias son *substreams*, que el mezclador combina alfa en la secuencia de referencia. La secuencia de referencia determina la velocidad de fotogramas maestra del vídeo compuesto. Para cada fotograma de referencia, el mezclador toma el fotograma más reciente de cada subtransmisión, los mezcla alfa en el marco de referencia y genera un único marco compuesto. El mezclador también realiza el desinterlazado y la conversión de color de YUV a RGB si es necesario. El EVR siempre inserta el mezclador en la canalización de vídeo, independientemente del número de secuencias de entrada o el formato de vídeo. En la imagen siguiente se muestra este proceso.
 
-![diagrama que muestra la secuencia de referencia y la subdifusión que apuntan al mezclador, que apunta al presentador, que apunta a la pantalla.](images/459338c4-cff8-4d20-bffd-ff1cbbe6f332.gif)
+![diagrama que muestra la secuencia de referencia y la secuencia de subdifusión que apuntan al mezclador, que apunta al presentador, que apunta a la pantalla](images/459338c4-cff8-4d20-bffd-ff1cbbe6f332.gif)
 
 El presentador realiza las siguientes tareas:
 
@@ -77,14 +77,14 @@ El presentador realiza las siguientes tareas:
 -   Obtiene la salida del mezclador.
 -   Programa cuándo se presentan los fotogramas. El EVR proporciona el reloj de presentación y el presentador programa fotogramas según este reloj.
 -   Presenta cada fotograma mediante Direct3D.
--   Realiza la depuración y el paso a paso del marco.
+-   Realiza la depuración y la ejecución paso a paso del marco.
 
 ### <a name="presenter-states"></a>Estados del presentador
 
 En cualquier momento, el presentador se encuentra en uno de los siguientes estados:
 
--   *Iniciado.* Se está ejecutando el reloj de presentación de EVR. El presentador programa fotogramas de vídeo para su presentación a medida que llegan.
--   *En pausa.* Se suspende el reloj de presentación. El presentador no presenta nuevos ejemplos, pero mantiene su cola de ejemplos programados. Si se reciben nuevos ejemplos, el presentador los agrega a la cola.
+-   *Se ha iniciado*. Se está ejecutando el reloj de presentación del EVR. El presentador programa fotogramas de vídeo para su presentación a medida que llegan.
+-   *En pausa.* El reloj de presentación está suspendido. El presentador no presenta nuevos ejemplos, pero mantiene su cola de ejemplos programados. Si se reciben nuevos ejemplos, el presentador los agrega a la cola.
 -   *Detenido*. Se detiene el reloj de presentación. El presentador descarta las muestras que se programaron.
 -   *Apague*. El presentador libera todos los recursos relacionados con el streaming, como las superficies de Direct3D. Este es el estado inicial del presentador y el estado final antes de que se destruya el presentador.
 
@@ -103,7 +103,7 @@ enum RENDER_STATE
 
 
 
-Algunas operaciones no son válidas mientras el presentador está en estado de apagado. El código de ejemplo comprueba este estado mediante una llamada a un método auxiliar:
+Algunas operaciones no son válidas mientras el presentador está en estado de apagado. El código de ejemplo comprueba este estado llamando a un método auxiliar:
 
 
 ```C++
@@ -122,7 +122,7 @@ Algunas operaciones no son válidas mientras el presentador está en estado de a
 
 
 
-### <a name="presenter-interfaces"></a>Interfaces de presentador
+### <a name="presenter-interfaces"></a>Interfaces del presentador
 
 Se requiere un presentador para implementar las interfaces siguientes:
 
@@ -130,11 +130,11 @@ Se requiere un presentador para implementar las interfaces siguientes:
 
 | Interfaz                                                                | Descripción                                                                                                                                                         |
 |--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IMFClockStateSink**](/windows/desktop/api/mfidl/nn-mfidl-imfclockstatesink)                           | Notifica al presentador cuándo cambia el estado del reloj de la EVR. Vea [Implementing IMFClockStateSink .](#implementing-imfclockstatesink)                                   |
+| [**IMFClockStateSink**](/windows/desktop/api/mfidl/nn-mfidl-imfclockstatesink)                           | Notifica al presentador cuándo cambia el estado del reloj del EVR. Vea [Implementing IMFClockStateSink .](#implementing-imfclockstatesink)                                   |
 | [**IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice)                                   | Proporciona una manera de que la aplicación y otros componentes de la canalización obtengan interfaces del presentador.                                                       |
 | [**IMFTopologyServiceLookupClient**](/windows/desktop/api/evr/nn-evr-imftopologyservicelookupclient) | Permite al presentador obtener interfaces de evr o mezclador. Vea [Implementing IMFTopologyServiceLookupClient](#implementing-imftopologyservicelookupclient). |
 | [**IMFVideoDeviceID**](/windows/desktop/api/evr/nn-evr-imfvideodeviceid)                             | Garantiza que el presentador y el mezclador usan tecnologías compatibles. Vea [Implementing IMFVideoDeviceID](#implementing-imfvideodeviceid).                          |
-| [**IMFVideoPresenter**](/windows/desktop/api/evr/nn-evr-imfvideopresenter)                           | Procesa los mensajes del EVR. Vea [Implementing IMFVideoPresenter](#implementing-imfvideopresenter).                                                             |
+| [**IMFVideoPresenter**](/windows/desktop/api/evr/nn-evr-imfvideopresenter)                           | Procesa los mensajes de la EVR. Vea [Implementing IMFVideoPresenter](#implementing-imfvideopresenter).                                                             |
 
 
 
@@ -148,20 +148,20 @@ Las interfaces siguientes son opcionales:
 |----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IEVRTrustedVideoPlugin**](/windows/desktop/api/evr/nn-evr-ievrtrustedvideoplugin) | Permite que el presentador funcione con medios protegidos. Implemente esta interfaz si el presentador es un componente de confianza diseñado para funcionar en la ruta de acceso multimedia protegida (PMP). |
 | [**IMFRateSupport**](/windows/desktop/api/mfidl/nn-mfidl-imfratesupport)                 | Informa del intervalo de velocidades de reproducción que admite el presentador. Vea [Implementing IMFRateSupport](#implementing-imfratesupport).                                         |
-| [**IMFVideoPositionMapper**](/windows/desktop/api/evr/nn-evr-imfvideopositionmapper) | Asigna coordenadas en el fotograma de vídeo de salida a coordenadas en el fotograma de vídeo de entrada.                                                                                       |
-| [**IQualProp**](/previous-versions/windows/desktop/api/amvideo/nn-amvideo-iqualprop)                         | Informa de la información de rendimiento. El EVR usa esta información para la administración del control de calidad. Esta interfaz se documenta en el SDK de DirectShow.                        |
+| [**IMFVideoPositionMapper**](/windows/desktop/api/evr/nn-evr-imfvideopositionmapper) | Mapas coordenadas en el fotograma de vídeo de salida a coordenadas en el fotograma de vídeo de entrada.                                                                                       |
+| [**IQualProp**](/previous-versions/windows/desktop/api/amvideo/nn-amvideo-iqualprop)                         | Informa de la información de rendimiento. El EVR usa esta información para la administración del control de calidad. Esta interfaz se documenta en DirectShow SDK.                        |
 
 
 
  
 
-También puede proporcionar interfaces para que la aplicación se comunique con el presentador. El presentador estándar implementa la interfaz [**IMFVideoDisplayControl**](/windows/desktop/api/evr/nn-evr-imfvideodisplaycontrol) para este propósito. Puede implementar esta interfaz o definir la suya propia. La aplicación obtiene interfaces del presentador mediante una llamada [**a IMFGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) en la EVR. Cuando el GUID del **servicio MR_VIDEO_RENDER_SERVICE**, el EVR pasa la **solicitud GetService** al presentador.
+También puede proporcionar interfaces para que la aplicación se comunique con el presentador. El presentador estándar implementa la interfaz [**IMFVideoDisplayControl**](/windows/desktop/api/evr/nn-evr-imfvideodisplaycontrol) para este propósito. Puede implementar esta interfaz o definir la suya propia. La aplicación obtiene interfaces del presentador mediante una llamada [**a IMFGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) en evr. Cuando el GUID del **servicio MR_VIDEO_RENDER_SERVICE**, el EVR pasa la **solicitud GetService** al presentador.
 
 ### <a name="implementing-imfvideodeviceid"></a>Implementación de IMFVideoDeviceID
 
 La [**interfaz IMFVideoDeviceID**](/windows/desktop/api/evr/nn-evr-imfvideodeviceid) contiene un método, [**GetDeviceID,**](/windows/desktop/api/evr/nf-evr-imfvideodeviceid-getdeviceid)que devuelve un GUID de dispositivo. El GUID del dispositivo garantiza que el presentador y el mezclador usan tecnologías compatibles. Si los GUID del dispositivo no coinciden, la EVR no se inicializa.
 
-Tanto el mezclador estándar como el presentador usan Direct3D 9, con el GUID del dispositivo igual a **IID_IDirect3DDevice9**. Si piensa usar el presentador personalizado con el mezclador estándar, el GUID del dispositivo del presentador debe **IID_IDirect3DDevice9**. Si reemplaza ambos componentes, podría definir un nuevo GUID de dispositivo. En el resto de este artículo, se supone que el presentador usa Direct3D 9. Esta es la implementación estándar de [**GetDeviceID**](/windows/desktop/api/evr/nf-evr-imfvideodeviceid-getdeviceid):
+Tanto el mezclador estándar como el presentador usan Direct3D 9, con el GUID del dispositivo **igual a IID_IDirect3DDevice9**. Si piensa usar el presentador personalizado con el mezclador estándar, el GUID del dispositivo del presentador debe **ser IID_IDirect3DDevice9**. Si reemplaza ambos componentes, podría definir un nuevo GUID de dispositivo. En el resto de este artículo, se supone que el presentador usa Direct3D 9. Esta es la implementación estándar de [**GetDeviceID**](/windows/desktop/api/evr/nf-evr-imfvideodeviceid-getdeviceid):
 
 
 ```C++
@@ -199,8 +199,8 @@ En la implementación de [**InitServicePointers,**](/windows/desktop/api/evr/nf-
 
 | Interfaz EVR                                | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IMediaEventSink**](/windows/win32/api/strmif/nn-strmif-imediaeventsink) | Proporciona una manera de que el presentador envíe mensajes a la EVR. Esta interfaz se define en el SDK de DirectShow, por lo que los mensajes siguen el patrón de eventos de DirectShow, no Media Foundation eventos.<br/>                                                                                                                                                                                                                                                                                                                                              |
-| [**IMFClock**](/windows/desktop/api/mfidl/nn-mfidl-imfclock)                 | Representa el reloj de la EVR. El presentador usa esta interfaz para programar ejemplos para su presentación. El EVR se puede ejecutar sin un reloj, por lo que es posible que esta interfaz no esté disponible. Si no es así, ignore el código de error [**de LookupService**](/windows/desktop/api/evr/nf-evr-imftopologyservicelookup-lookupservice).<br/> El reloj también implementa la [**interfaz IMFTimer.**](/windows/desktop/api/mfidl/nn-mfidl-imftimer) En la Media Foundation, el reloj implementa la [**interfaz IMFPresentationClock.**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationclock) No implementa esta interfaz en DirectShow.<br/> |
+| [**IMediaEventSink**](/windows/win32/api/strmif/nn-strmif-imediaeventsink) | Proporciona una manera de que el presentador envíe mensajes a la EVR. Esta interfaz se define en el SDK DirectShow, por lo que los mensajes siguen el patrón de eventos DirectShow, no Media Foundation eventos.<br/>                                                                                                                                                                                                                                                                                                                                              |
+| [**IMFClock**](/windows/desktop/api/mfidl/nn-mfidl-imfclock)                 | Representa el reloj de la EVR. El presentador usa esta interfaz para programar ejemplos para su presentación. La EVR se puede ejecutar sin un reloj, por lo que es posible que esta interfaz no esté disponible. Si no es así, ignore el código de error [**de LookupService**](/windows/desktop/api/evr/nf-evr-imftopologyservicelookup-lookupservice).<br/> El reloj también implementa la [**interfaz IMFTimer.**](/windows/desktop/api/mfidl/nn-mfidl-imftimer) En la Media Foundation, el reloj implementa la [**interfaz IMFPresentationClock.**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationclock) No implementa esta interfaz en DirectShow.<br/> |
 
 
 
@@ -210,10 +210,10 @@ Obtenga las siguientes interfaces del mezclador:
 
 
 
-| Interfaz mezcladora                              | Descripción                                                |
+| Mixer Interfaz                              | Descripción                                                |
 |----------------------------------------------|------------------------------------------------------------|
 | [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)         | Permite que el presentador se comunique con el mezclador.       |
-| [**IMFVideoDeviceID**](/windows/desktop/api/evr/nn-evr-imfvideodeviceid) | Permite al presentador validar el GUID del dispositivo del mezclador. |
+| [**IMFVideoDeviceID**](/windows/desktop/api/evr/nn-evr-imfvideodeviceid) | Permite que el presentador valide el GUID del dispositivo del mezclador. |
 
 
 
@@ -304,7 +304,7 @@ done:
 
 
 
-Cuando los punteros de interfaz obtenidos de [**LookupService**](/windows/desktop/api/evr/nf-evr-imftopologyservicelookup-lookupservice) ya no son válidos, el EVR llama a [**IMFTopologyServiceLookupClient::ReleaseServicePointers**](/windows/desktop/api/evr/nf-evr-imftopologyservicelookupclient-releaseservicepointers). Dentro de este método, suelte todos los punteros de interfaz y establezca el estado del presentador para apagar:
+Cuando los punteros de interfaz obtenidos de [**LookupService**](/windows/desktop/api/evr/nf-evr-imftopologyservicelookup-lookupservice) ya no son válidos, evr llama a [**LAVTopologyServiceLookupClient::ReleaseServicePointers**](/windows/desktop/api/evr/nf-evr-imftopologyservicelookupclient-releaseservicepointers). Dentro de este método, suelte todos los punteros de interfaz y establezca el estado del presentador para apagar:
 
 
 ```C++
@@ -334,9 +334,9 @@ HRESULT EVRCustomPresenter::ReleaseServicePointers()
 
 
 
-El EVR llama [**a ReleaseServicePointers**](/windows/desktop/api/evr/nf-evr-imftopologyservicelookupclient-releaseservicepointers) por diversos motivos, entre los que se incluyen:
+EvR llama a [**ReleaseServicePointers**](/windows/desktop/api/evr/nf-evr-imftopologyservicelookupclient-releaseservicepointers) por diversos motivos, entre los que se incluyen:
 
--   Desconectar o volver a conectar los pines (DirectShow) o agregar o quitar receptores de flujo (Media Foundation).
+-   Desconectar o volver a conectar los pines (DirectShow), o agregar o quitar receptores de flujo (Media Foundation).
 -   Cambiar el formato.
 -   Establecer un nuevo reloj.
 -   Cierre final de la EVR.
@@ -399,7 +399,7 @@ done:
 
 
 
-El [**método ProcessMessage**](/windows/desktop/api/evr/nf-evr-imfvideopresenter-processmessage) es el mecanismo principal para que la EVR se comunique con el presentador. Se definen los mensajes siguientes. Los detalles de la implementación de cada mensaje se detallan en el resto de este tema.
+El [**método ProcessMessage**](/windows/desktop/api/evr/nf-evr-imfvideopresenter-processmessage) es el mecanismo principal para que la EVR se comunique con el presentador. Se definen los mensajes siguientes. Los detalles de la implementación de cada mensaje se dan en el resto de este tema.
 
 
 
@@ -426,45 +426,9 @@ Estas son algunas directrices para implementar los métodos en esta interfaz. To
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart"><strong>OnClockStart</strong></a></td>
-<td><ol>
-<li>Establezca el estado del presentador en Iniciado.</li>
-<li>Si <em>llClockStartOffset</em> no está <strong>PRESENTATION_CURRENT_POSITION</strong>, vacíe la cola de ejemplos del presentador. (Esto equivale a recibir un <strong>mensaje MFVP_MESSAGE_FLUSH</strong> mensaje).</li>
-<li>Si una solicitud de paso de fotograma anterior sigue pendiente, procese la solicitud (vea Paso a <a href="#frame-stepping">paso por fotogramas).</a> De lo contrario, intente procesar la salida del mezclador (consulte <a href="#processing-output">Procesamiento de la salida</a>.</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstop"><strong>OnClockStop</strong></a></td>
-<td><ol>
-<li>Establezca el estado del presentador en detenido.</li>
-<li>Vacíe la cola de ejemplos del presentador.</li>
-<li>Cancele cualquier operación de paso de fotograma pendiente.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockpause"><strong>OnClockPause</strong></a></td>
-<td>Establezca el estado del presentador en en pausa.</td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockrestart"><strong>OnClockRestart</strong></a></td>
-<td>Trate lo mismo que <a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart"><strong>OnClockStart,</strong></a> pero no vacíe la cola de ejemplos.</td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclocksetrate"><strong>OnClockSetRate</strong></a></td>
-<td><ol>
-<li>Si la velocidad cambia de cero a distinto de cero, cancele la ejecución paso a paso del marco.</li>
-<li>Almacene la nueva velocidad de reloj. La velocidad del reloj afecta al momento en que se presentan las muestras. Para obtener más información, vea <a href="#scheduling-samples">Scheduling Samples</a>.</li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+
+| | | <a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart"> <strong>OnClockStart</strong></a> | <ol><li>Establezca el estado del presentador en Iniciado.</li><li>Si <em>llClockStartOffset</em> <strong>no</strong>PRESENTATION_CURRENT_POSITION , vacíe la cola de ejemplos del presentador. (Esto equivale a recibir un <strong>mensaje MFVP_MESSAGE_FLUSH</strong> mensaje).</li><li>Si una solicitud de paso de fotograma anterior sigue pendiente, procese la solicitud (vea Paso a <a href="#frame-stepping">paso por fotogramas).</a> De lo contrario, intente procesar la salida del mezclador (consulte <a href="#processing-output">Procesamiento de la salida</a>.</li></ol> | | <a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstop"> <strong>OnClockStop</strong></a> | <ol><li>Establezca el estado del presentador en detenido.</li><li>Vacíe la cola de ejemplos del presentador.</li><li>Cancele cualquier operación de paso de marco pendiente.</li></ol> | | <a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockpause"><strong>OnClockPause</strong></a> | Establezca el estado del presentador en en pausa. | | <a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockrestart"><strong>OnClockRestart</strong></a> | Trate lo mismo que <a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart"><strong>OnClockStart,</strong></a> pero no vacíe la cola de ejemplos. | | <a href="/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclocksetrate"> <strong>OnClockSetRate</strong></a> | <ol><li>Si la velocidad cambia de cero a distinto de cero, cancele la ejecución paso a paso del marco.</li><li>Almacene la nueva velocidad de reloj. La velocidad del reloj afecta al momento en que se presentan las muestras. Para obtener más información, vea <a href="#scheduling-samples">Scheduling Samples</a>.</li></ol> | 
+
 
 
 
@@ -472,7 +436,7 @@ Estas son algunas directrices para implementar los métodos en esta interfaz. To
 
 ### <a name="implementing-imfratesupport"></a>Implementación de IMFRateSupport
 
-Para admitir velocidades de reproducción diferentes de 1× velocidad, el presentador debe implementar la [**interfaz IMFRateSupport.**](/windows/desktop/api/mfidl/nn-mfidl-imfratesupport) Estas son algunas directrices para implementar los métodos en esta interfaz. Todos los métodos deben producir un error después de apagar el presentador. Para obtener más información sobre esta interfaz, vea [Control de velocidad.](rate-control.md)
+Para admitir velocidades de reproducción diferentes de 1× velocidad, el presentador debe implementar la [**interfaz IMFRateSupport.**](/windows/desktop/api/mfidl/nn-mfidl-imfratesupport) Estas son algunas directrices para implementar los métodos en esta interfaz. Todos los métodos deben producir un error después de apagar el presentador. Para obtener más información sobre esta interfaz, vea [Control de velocidad](rate-control.md).
 
 
 
@@ -480,7 +444,7 @@ Para admitir velocidades de reproducción diferentes de 1× velocidad, el presen
 |-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**GetSlowestRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-getslowestrate)   | Devuelve cero para indicar que no hay velocidad de reproducción mínima.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | [**GetFastestRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-getfastestrate)   | En el caso de la reproducción no fina, la velocidad de reproducción no debe superar la frecuencia de actualización del *monitor:* velocidad máxima de actualización (Hz) /velocidad de fotogramas de  =   vídeo (fps).  La velocidad de fotogramas de vídeo se especifica en el tipo de medio del presentador. <br/> En el caso de la reproducción fina, la velocidad de reproducción es sin enlazar; devuelve el valor **FLT_MAX**. En la práctica, el origen y el descodificador serán los factores de limitación durante la reproducción fina. <br/> Para la reproducción inversa, devuelve el valor negativo de la velocidad máxima.<br/> |
-| [**IsRateSupported**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-isratesupported) | Devuelve **MF_E_UNSUPPORTED_RATE** si el valor absoluto de *flRate* supera la velocidad de reproducción máxima del presentador. Calcule la velocidad de reproducción máxima como se describe [**para GetFastestRate.**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-getfastestrate)                                                                                                                                                                                                                                                                                    |
+| [**IsRateSupported**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-isratesupported) | Devuelve **MF_E_UNSUPPORTED_RATE** si el valor absoluto de *flRate* supera la velocidad de reproducción máxima del presentador. Calcule la velocidad de reproducción máxima como se describe [**para GetFastestRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-getfastestrate).                                                                                                                                                                                                                                                                                    |
 
 
 
@@ -579,7 +543,7 @@ done:
 
 ### <a name="sending-events-to-the-evr"></a>Envío de eventos al EVR
 
-El presentador debe notificar al EVR varios eventos. Para ello, usa la interfaz [**IMediaEventSink**](/windows/win32/api/strmif/nn-strmif-imediaeventsink) de EVR, obtenida cuando el EVR llama al método [**DEVTopologyServiceLookupClient::InitServicePointers**](/windows/desktop/api/evr/nf-evr-imftopologyservicelookupclient-initservicepointers) del presentador. (La **interfaz IMediaEventSink** es originalmente una interfaz DirectShow, pero se usa tanto en la EVR de DirectShow como en la Media Foundation). El código siguiente muestra cómo enviar un evento al EVR:
+El presentador debe notificar al EVR varios eventos. Para ello, usa la interfaz [**IMediaEventSink**](/windows/win32/api/strmif/nn-strmif-imediaeventsink) de EVR, que se obtiene cuando el EVR llama al método [**DEVTopologyServiceLookupClient::InitServicePointers**](/windows/desktop/api/evr/nf-evr-imftopologyservicelookupclient-initservicepointers) del presentador. (La **interfaz IMediaEventSink** es originalmente una interfaz DirectShow, pero se usa tanto en la DirectShow EVR como en la Media Foundation). El código siguiente muestra cómo enviar un evento al EVR:
 
 
 ```C++
@@ -599,86 +563,17 @@ En la tabla siguiente se enumeran los eventos que envía el presentador, junto c
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Evento</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="/windows/desktop/DirectShow/ec-complete"><strong>EC_COMPLETE</strong></a></td>
-<td>El presentador ha terminado de representar todos los fotogramas después del MFVP_MESSAGE_ENDOFSTREAM mensaje.<br/>
-<ul>
-<li><em>Param1:</em>HRESULT que indica el estado de la operación.</li>
-<li><em>Param2:</em>no se usa.</li>
-</ul>
-Para obtener más información, vea <a href="#end-of-stream">End of Stream</a>.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/DirectShow/ec-display-changed"><strong>EC_DISPLAY_CHANGED</strong></a></td>
-<td>El dispositivo Direct3D ha cambiado.<br/>
-<ul>
-<li><em>Param1:</em>No se usa.</li>
-<li><em>Param2:</em>no se usa.</li>
-</ul>
-Para obtener más información, consulte <a href="#managing-the-direct3d-device">Administración del dispositivo Direct3D.</a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/DirectShow/ec-errorabort"><strong>EC_ERRORABORT</strong></a></td>
-<td>Se ha producido un error que requiere que el streaming se detenga.<br/>
-<ul>
-<li><em>Param1:</em> <strong>HRESULT</strong> que indica el error que se produjo.</li>
-<li><em>Param2:</em>no se usa.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/DirectShow/ec-processing-latency"><strong>EC_PROCESSING_LATENCY</strong></a></td>
-<td>Especifica la cantidad de tiempo que tarda el presentador en representar cada fotograma. (Opcional).<br/>
-<ul>
-<li><em>Param1:</em>puntero a un valor <strong>LONGLONG</strong> constante que contiene la cantidad de tiempo para procesar el fotograma, en unidades de 100 nanosegundos.</li>
-<li><em>Param2:</em>no se usa.</li>
-</ul>
-Para obtener más información, vea <a href="#processing-output">Procesamiento de la salida</a>.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/DirectShow/ec-sample-latency"><strong>EC_SAMPLE_LATENCY</strong></a></td>
-<td>Especifica el tiempo de retraso actual en la representación de ejemplos. Si el valor es positivo, los ejemplos están detrás de la programación. Si el valor es negativo, los ejemplos se adelantan a la programación. (Opcional).<br/>
-<ul>
-<li><em>Param1:</em>puntero a un valor <strong>LONGLONG</strong> constante que contiene el tiempo de retraso, en unidades de 100 nanosegundos.</li>
-<li><em>Param2:</em>no se usa.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/DirectShow/ec-scrub-time"><strong>EC_SCRUB_TIME</strong></a></td>
-<td>Se envía inmediatamente <strong>después EC_STEP_COMPLETE</strong> si la velocidad de reproducción es cero. Este evento contiene la marca de tiempo del fotograma que se ha mostrado.<br/>
-<ul>
-<li><em>Param1:</em>32 bits inferiores de la marca de tiempo.</li>
-<li><em>Param2:</em>32 bits superiores de la marca de tiempo.</li>
-</ul>
-Para obtener más información, vea <a href="#frame-stepping">Frame Stepping</a>.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/DirectShow/ec-step-complete"><strong>EC_STEP_COMPLETE</strong></a></td>
-<td>El presentador ha completado o cancelado un paso de fotograma.<br/>
-<ul>
-<li><em>Param1:</em>No se usa.</li>
-<li><em>Param2:</em>no se usa.</li>
-</ul>
-Para obtener más información, vea <a href="#frame-stepping">Frame Stepping</a>.<br/>
-<blockquote>
-[!Note]<br />
-Una versión anterior de la documentación descrita <em>param1 incorrectamente.</em> Este parámetro no se usa para este evento.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Evento | Descripción | 
+|-------|-------------|
+| <a href="/windows/desktop/DirectShow/ec-complete"><strong>EC_COMPLETE</strong></a> | El presentador ha terminado de representar todos los fotogramas después del MFVP_MESSAGE_ENDOFSTREAM mensaje.<br /><ul><li><em>Param1:</em>HRESULT que indica el estado de la operación.</li><li><em>Param2:</em>no se usa.</li></ul>Para obtener más información, vea <a href="#end-of-stream">End of Stream</a>.<br /> | 
+| <a href="/windows/desktop/DirectShow/ec-display-changed"><strong>EC_DISPLAY_CHANGED</strong></a> | El dispositivo Direct3D ha cambiado.<br /><ul><li><em>Param1:</em>No se usa.</li><li><em>Param2:</em>no se usa.</li></ul>Para obtener más información, consulte <a href="#managing-the-direct3d-device">Administración del dispositivo Direct3D.</a><br /> | 
+| <a href="/windows/desktop/DirectShow/ec-errorabort"><strong>EC_ERRORABORT</strong></a> | Se ha producido un error que requiere que el streaming se detenga.<br /><ul><li><em>Param1:</em> <strong>HRESULT</strong> que indica el error que se produjo.</li><li><em>Param2:</em>no se usa.</li></ul> | 
+| <a href="/windows/desktop/DirectShow/ec-processing-latency"><strong>EC_PROCESSING_LATENCY</strong></a> | Especifica la cantidad de tiempo que tarda el presentador en representar cada fotograma. (Opcional).<br /><ul><li><em>Param1:</em>puntero a un valor <strong>LONGLONG</strong> constante que contiene la cantidad de tiempo para procesar el fotograma, en unidades de 100 nanosegundos.</li><li><em>Param2:</em>no se usa.</li></ul>Para obtener más información, vea <a href="#processing-output">Procesamiento de la salida</a>.<br /> | 
+| <a href="/windows/desktop/DirectShow/ec-sample-latency"><strong>EC_SAMPLE_LATENCY</strong></a> | Especifica el tiempo de retraso actual en la representación de ejemplos. Si el valor es positivo, los ejemplos están detrás de la programación. Si el valor es negativo, los ejemplos se adelantan a la programación. (Opcional).<br /><ul><li><em>Param1:</em>puntero a un valor <strong>LONGLONG</strong> constante que contiene el tiempo de retraso, en unidades de 100 nanosegundos.</li><li><em>Param2:</em>no se usa.</li></ul> | 
+| <a href="/windows/desktop/DirectShow/ec-scrub-time"><strong>EC_SCRUB_TIME</strong></a> | Se envía inmediatamente después <strong>EC_STEP_COMPLETE</strong> si la velocidad de reproducción es cero. Este evento contiene la marca de tiempo del marco que se ha mostrado.<br /><ul><li><em>Param1:</em>menos de 32 bits de la marca de tiempo.</li><li><em>Param2:</em>32 bits superiores de la marca de tiempo.</li></ul>Para obtener más información, vea <a href="#frame-stepping">Paso a paso por fotogramas.</a><br /> | 
+| <a href="/windows/desktop/DirectShow/ec-step-complete"><strong>EC_STEP_COMPLETE</strong></a> | El presentador ha completado o cancelado un paso de fotograma.<br /><ul><li><em>Param1:</em>No se usa.</li><li><em>Param2:</em>no se usa.</li></ul>Para obtener más información, vea <a href="#frame-stepping">Paso a paso por fotogramas.</a><br /><blockquote>[!Note]<br />Una versión anterior de la documentación descrita <em>param1 incorrectamente.</em> Este parámetro no se usa para este evento.</blockquote><br /> | 
+
 
 
 
@@ -686,10 +581,10 @@ Una versión anterior de la documentación descrita <em>param1 incorrectamente.<
 
 ## <a name="negotiating-formats"></a>Formatos de negociación
 
-Cada vez que el presentador **recibe MFVP_MESSAGE_INVALIDATEMEDIATYPE** mensaje de la EVR, debe establecer el formato de salida en el mezclador, como se indica a continuación:
+Cada vez que el presentador **recibe MFVP_MESSAGE_INVALIDATEMEDIATYPE** mensaje de salida del EVR, debe establecer el formato de salida en el mezclador, como se indica a continuación:
 
-1.  Llame [**a IMFTransform::GetOutputAvailableType en**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) el mezclador para obtener un posible tipo de salida. Este tipo describe un formato que el mezclador puede producir dadas las secuencias de entrada y las funcionalidades de procesamiento de vídeo del dispositivo gráfico.
-2.  Compruebe si el presentador puede usar este tipo de medio como formato de representación. Estos son algunos aspectos que debe comprobar, aunque la implementación puede tener sus propios requisitos:
+1.  Llame [**a IMFTransform::GetOutputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) en el mezclador para obtener un posible tipo de salida. Este tipo describe un formato que el mezclador puede generar dadas las secuencias de entrada y las funcionalidades de procesamiento de vídeo del dispositivo gráfico.
+2.  Compruebe si el presentador puede usar este tipo de medio como formato de representación. Estos son algunos aspectos que hay que comprobar, aunque la implementación puede tener sus propios requisitos:
 
     -   El vídeo debe estar descomprimido.
     -   El vídeo solo debe tener fotogramas progresivas. Compruebe que el [**atributo MF_MT_INTERLACE_MODE**](mf-mt-interlace-mode-attribute.md) es igual **a MFVideoInterlace_Progressive**.
@@ -700,21 +595,21 @@ Cada vez que el presentador **recibe MFVP_MESSAGE_INVALIDATEMEDIATYPE** mensaje 
 3.  Cree un nuevo tipo de medio que sea un clon del tipo original y, a continuación, cambie los atributos siguientes:
 
     -   Establezca el [**MF_MT_FRAME_SIZE**](mf-mt-frame-size-attribute.md) atributo igual al ancho y alto que desea para las superficies de Direct3D que va a asignar.
-    -   Establezca el [**MF_MT_PAN_SCAN_ENABLED**](mf-mt-pan-scan-enabled-attribute.md) en **FALSE.**
+    -   Establezca el [**atributo MF_MT_PAN_SCAN_ENABLED**](mf-mt-pan-scan-enabled-attribute.md) en **FALSE.**
     -   Establezca el [**MF_MT_PIXEL_ASPECT_RATIO**](mf-mt-pixel-aspect-ratio-attribute.md) atributo igual al PAR de la pantalla (normalmente 1:1).
     -   Establezca la apertura geométrica [**(MF_MT_GEOMETRIC_APERTURE**](mf-mt-geometric-aperture-attribute.md) atributo) igual a un rectángulo dentro de la superficie de Direct3D. Cuando el mezclador genera un marco de salida, corta la imagen de origen en este rectángulo. La apertura geométrica puede ser tan grande como la superficie, o puede ser una subrecta dentro de la superficie. Para obtener más información, vea [Rectángulos de origen y destino.](#source-and-destination-rectangles)
 
-4.  Para probar si el mezclador aceptará el tipo de salida **modificado,** llame a [**LALETransform::SetOutputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype) con la MFT_SET_TYPE_TEST_ONLY entrada. Si el mezclador rechaza el tipo, vuelva al paso 1 y obtenga el siguiente tipo.
-5.  Asigne un grupo de superficies de Direct3D, como se describe [en Asignación de superficies de Direct3D.](#allocating-direct3d-surfaces) El mezclador usará estas superficies cuando dibuje los fotogramas de vídeo compuestos.
-6.  Establezca el tipo de salida en el mezclador llamando a [**SetOutputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype) sin marcas. Si la primera llamada a **SetOutputType** se ha hecho correctamente en el paso 4, el método debería tener éxito de nuevo.
+4.  Para probar si el mezclador aceptará el tipo de salida **modificado,** llame a [**IMFTransform::SetOutputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype) con la marca MFT_SET_TYPE_TEST_ONLY datos. Si el mezclador rechaza el tipo, vuelva al paso 1 y obtenga el siguiente tipo.
+5.  Asigne un grupo de superficies de Direct3D, como se describe en [Asignación de superficies de Direct3D.](#allocating-direct3d-surfaces) El mezclador usará estas superficies cuando dibuje los fotogramas de vídeo compuestos.
+6.  Establezca el tipo de salida en el mezclador mediante una [**llamada a SetOutputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype) sin marcas. Si la primera llamada a **SetOutputType** se ha hecho correctamente en el paso 4, el método debería volver a tener éxito.
 
-Si el mezclador se queda sin tipos, el [**método GetOutputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) devuelve **MF_E_NO_MORE_TYPES**. Si el presentador no encuentra un tipo de salida adecuado para el mezclador, la secuencia no se puede representar. En ese caso, DirectShow o Media Foundation probar otro formato de secuencia. Por lo tanto, el presentador puede recibir **varios mensajes MFVP_MESSAGE_INVALIDATEMEDIATYPE** en una fila hasta que se encuentra un tipo válido.
+Si el mezclador se queda sin tipos, el [**método GetOutputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) **devuelve MF_E_NO_MORE_TYPES**. Si el presentador no encuentra un tipo de salida adecuado para el mezclador, la secuencia no se puede representar. En ese caso, DirectShow o Media Foundation podría probar otro formato de secuencia. Por lo tanto, el presentador podría recibir **varios mensajes MFVP_MESSAGE_INVALIDATEMEDIATYPE** en una fila hasta que se encuentra un tipo válido.
 
-El mezclador crea automáticamente un cuadro de texto del vídeo, teniendo en cuenta la relación de aspecto de píxeles (PAR) del origen y el destino. Para obtener mejores resultados, el ancho y el alto de la superficie y la apertura geométrica deben ser iguales al tamaño real que desea que el vídeo aparezca en la pantalla. En la imagen siguiente se muestra este proceso.
+El mezclador aplica automáticamente letterbox al vídeo, teniendo en cuenta la relación de aspecto de píxeles (PAR) del origen y el destino. Para obtener mejores resultados, el ancho y el alto de la superficie y el diafragma geométrico deben ser iguales al tamaño real que desea que el vídeo aparezca en la pantalla. En la imagen siguiente se muestra este proceso.
 
 ![diagrama que muestra un fram compuesto que conduce a una superficie direct3d, que conduce a una ventana](images/b746edca-8830-4c88-aa59-0067b020d4af.gif)
 
-El código siguiente muestra el esquema del proceso. Algunos de los pasos se colocan en funciones auxiliares, cuyos detalles exactos dependerán de los requisitos del presentador.
+El código siguiente muestra el esquema del proceso. Algunos de los pasos se colocan en las funciones auxiliares, cuyos detalles exactos dependerán de los requisitos del presentador.
 
 
 ```C++
@@ -805,65 +700,65 @@ HRESULT EVRCustomPresenter::RenegotiateMediaType()
 
 
 
-Para obtener más información sobre los tipos de medios de vídeo, vea [Tipos de medios de vídeo](video-media-types.md).
+Para obtener más información sobre los tipos de medios de vídeo, vea [Tipos de multimedia de vídeo.](video-media-types.md)
 
 ## <a name="managing-the-direct3d-device"></a>Administración del dispositivo Direct3D
 
-El presentador crea el dispositivo Direct3D y controla las pérdidas de dispositivos durante el streaming. El presentador también hospeda el administrador de dispositivos Direct3D, que proporciona una manera de que otros componentes usen el mismo dispositivo. Por ejemplo, el mezclador usa el dispositivo Direct3D para mezclar substreams, desinterlace y realizar ajustes de color. Los descodificadores pueden usar el dispositivo Direct3D para descodificación acelerada por vídeo. (Para obtener más información sobre la aceleración de vídeo, [vea DirectX Video Acceleration 2.0).](directx-video-acceleration-2-0.md)
+El presentador crea el dispositivo Direct3D y controla cualquier pérdida de dispositivo durante el streaming. El presentador también hospeda el administrador de dispositivos Direct3D, que proporciona una manera de que otros componentes usen el mismo dispositivo. Por ejemplo, el mezclador usa el dispositivo Direct3D para mezclar substreams, desinterlace y realizar ajustes de color. Los descodificadores pueden usar el dispositivo Direct3D para la descodificación acelerada por vídeo. (Para obtener más información sobre la aceleración de vídeo, vea Aceleración de [vídeo de DirectX 2.0).](directx-video-acceleration-2-0.md)
 
 Para configurar el dispositivo Direct3D, realice los pasos siguientes:
 
 1.  Cree el objeto Direct3D mediante una **llamada a Direct3DCreate9** o **Direct3DCreate9Ex.**
-2.  Cree el dispositivo mediante una llamada **a IDirect3D9::CreateDevice** o **IDirect3D9Ex::CreateDevice**.
+2.  Cree el dispositivo mediante una **llamada a IDirect3D9::CreateDevice** o **IDirect3D9Ex::CreateDevice**.
 3.  Cree el administrador de dispositivos mediante [**una llamada a DXVA2CreateDirect3DDeviceManager9**](/windows/desktop/api/dxva2api/nf-dxva2api-dxva2createdirect3ddevicemanager9).
 4.  Establezca el dispositivo en el administrador de dispositivos mediante una [**llamada a IDirect3DDeviceManager9::ResetDevice**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-resetdevice).
 
-Si otro componente de canalización necesita el administrador de dispositivos, llama a  [**ALGETGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) en la EVR, especificando MR_VIDEO_ACCELERATION_SERVICE para el GUID del servicio. El EVR pasa la solicitud al presentador. Una vez que el objeto obtiene el puntero [**IDirect3DDeviceManager9,**](/windows/desktop/api/dxva2api/nn-dxva2api-idirect3ddevicemanager9) puede obtener un identificador para el dispositivo llamando a [**IDirect3DDeviceManager9::OpenDeviceHandle**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-opendevicehandle). Cuando el objeto necesita usar el dispositivo, pasa el identificador del dispositivo al método [**IDirect3DDeviceManager9::LockDevice,**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-lockdevice) que devuelve un puntero **IDirect3DDevice9.**
+Si otro componente de canalización **necesita** el administrador de dispositivos, llama a [**IMFGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) en el EVR, especificando MR_VIDEO_ACCELERATION_SERVICE para el GUID del servicio. El EVR pasa la solicitud al presentador. Una vez que el objeto obtiene el puntero [**IDirect3DDeviceManager9,**](/windows/desktop/api/dxva2api/nn-dxva2api-idirect3ddevicemanager9) puede obtener un identificador para el dispositivo llamando a [**IDirect3DDeviceManager9::OpenDeviceHandle**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-opendevicehandle). Cuando el objeto necesita usar el dispositivo, pasa el identificador del dispositivo al método [**IDirect3DDeviceManager9::LockDevice,**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-lockdevice) que devuelve un puntero **IDirect3DDevice9.**
 
-Una vez creado el dispositivo, si el presentador destruye el dispositivo y crea uno nuevo, el presentador debe llamar de nuevo a [**ResetDevice.**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-resetdevice) El **método ResetDevice** invalida los identificadores de dispositivo existentes, lo que hace que [**LockDevice**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-lockdevice) devuelva **DXVA2_E_NEW_VIDEO_DEVICE**. Este código de error indica a otros objetos que usan el dispositivo que deben abrir un nuevo identificador de dispositivo. Para obtener más información sobre el uso del administrador de dispositivos, [consulte Direct3D Administrador de dispositivos](direct3d-device-manager.md).
+Una vez creado el dispositivo, si el presentador destruye el dispositivo y crea uno nuevo, el presentador debe volver a llamar a [**ResetDevice.**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-resetdevice) El **método ResetDevice** invalida los identificadores de dispositivo existentes, lo que hace que [**LockDevice**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-lockdevice) devuelva **DXVA2_E_NEW_VIDEO_DEVICE**. Este código de error indica a otros objetos que usan el dispositivo que deben abrir un nuevo identificador de dispositivo. Para obtener más información sobre el uso del administrador de dispositivos, consulte [Direct3D Administrador de dispositivos](direct3d-device-manager.md).
 
-El presentador puede crear el dispositivo en modo de ventana o en modo exclusivo de pantalla completa. Para el modo de ventana, debe proporcionar una manera de que la aplicación especifique la ventana de vídeo. El presentador estándar implementa el [**método IMFVideoDisplayControl::SetVideoWindow**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setvideowindow) para este propósito. Debe crear el dispositivo cuando se cree por primera vez el presentador. Normalmente, no conocerá todos los parámetros del dispositivo en este momento, como la ventana o el formato de búfer de reserva. Puede crear un dispositivo temporal y reemplazarlo más&;solo tiene que recordar llamar a \# [**ResetDevice**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-resetdevice) en el administrador de dispositivos.
+El presentador puede crear el dispositivo en modo de ventana o en modo exclusivo de pantalla completa. Para el modo de ventana, debe proporcionar una manera de que la aplicación especifique la ventana de vídeo. El presentador estándar implementa el [**método IMFVideoDisplayControl::SetVideoWindow**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setvideowindow) para este propósito. Debe crear el dispositivo cuando se cree por primera vez el presentador. Normalmente, no conocerá todos los parámetros del dispositivo en este momento, como la ventana o el formato de búfer de reserva. Puede crear un dispositivo temporal y reemplazarlo más&;simplemente recuerde llamar a \# [**ResetDevice**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-resetdevice) en el administrador de dispositivos.
 
-Si crea un dispositivo o llama a **IDirect3DDevice9::Reset** o **IDirect3DDevice9Ex::ResetEx** en un dispositivo existente, envíe un evento [**EC_DISPLAY_CHANGED**](../directshow/ec-display-changed.md) a la EVR. Este evento notifica al EVR que renegocie el tipo de medio. EvR omite los parámetros de evento para este evento.
+Si crea un nuevo dispositivo, o si llama a **IDirect3DDevice9::Reset** o **IDirect3DDevice9Ex::ResetEx** en un dispositivo existente, envíe un evento [**EC_DISPLAY_CHANGED**](../directshow/ec-display-changed.md) al EVR. Este evento notifica al EVR que vuelva a negociar el tipo de medio. EvR omite los parámetros de evento para este evento.
 
 ### <a name="allocating-direct3d-surfaces"></a>Asignación de superficies de Direct3D
 
 Después de que el presentador establece el tipo de medio, puede asignar las superficies de Direct3D que usará el mezclador para escribir los fotogramas de vídeo. La superficie debe coincidir con el tipo de medio del presentador:
 
--   El formato de superficie debe coincidir con el subtipo multimedia. Por ejemplo, si el subtipo **es MFVideoFormat_RGB24**, el formato de superficie debe **ser D3DFMT_X8R8G8B8**. Para obtener más información sobre los subtipos y los formatos de Direct3D, vea [GUID de subtipo de vídeo.](video-subtype-guids.md)
--   El ancho y el alto de la superficie deben coincidir con las dimensiones dadas en [**el MF_MT_FRAME_SIZE**](mf-mt-frame-size-attribute.md) atributo del tipo de medio.
+-   El formato de superficie debe coincidir con el subtipo de medio. Por ejemplo, si el subtipo **es MFVideoFormat_RGB24**, el formato de superficie debe **ser D3DFMT_X8R8G8B8**. Para obtener más información sobre los subtipos y los formatos de Direct3D, vea [GUID de subtipo de vídeo.](video-subtype-guids.md)
+-   El ancho y el alto de la superficie deben coincidir con las dimensiones dadas [**en el atributo MF_MT_FRAME_SIZE**](mf-mt-frame-size-attribute.md) del tipo de medio.
 
-La manera recomendada de asignar superficies depende de si el presentador se ejecuta en ventanas o en pantalla completa.
+La manera recomendada de asignar superficies depende de si el presentador se ejecuta en ventanas o a pantalla completa.
 
-Si el dispositivo Direct3D está en ventanas, puede crear varias cadenas de intercambio, cada una con un único búfer de reserva. Con este enfoque, puede presentar cada superficie de forma independiente, ya que presentar una cadena de intercambio no interferirá con las otras cadenas de intercambio. El mezclador puede escribir datos en una superficie mientras se programa otra superficie para su presentación.
+Si el dispositivo Direct3D tiene ventanas, puede crear varias cadenas de intercambio, cada una con un único búfer de reserva. Con este enfoque, puede presentar cada superficie de forma independiente, ya que presentar una cadena de intercambio no interferirá con las otras cadenas de intercambio. El mezclador puede escribir datos en una superficie mientras que otra superficie está programada para su presentación.
 
 En primer lugar, decida cuántas cadenas de intercambio crear. Se recomienda un mínimo de tres. Para cada cadena de intercambio, haga lo siguiente:
 
 1.  Llame **a IDirect3DDevice9::CreateAdditionalSwapChain** para crear la cadena de intercambio.
 2.  Llame **a IDirect3DSwapChain9::GetBackBuffer** para obtener un puntero a la superficie del búfer de reserva de la cadena de intercambio.
-3.  Llame [**a MFCreateVideoSampleFromSurface**](/windows/desktop/api/evr/nc-evr-mfcreatevideosamplefromsurface) y pase un puntero a la superficie. Esta función devuelve un puntero a un objeto de ejemplo de vídeo. El objeto de ejemplo de vídeo implementa la interfaz [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) y el presentador usa esta interfaz para entregar la superficie al mezclador cuando el presentador llama al método [**DELETRANSFORM::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) del mezclador. Para obtener más información sobre el objeto de ejemplo de vídeo, vea [Ejemplos de vídeo.](video-samples.md)
-4.  Almacene el [**puntero DESEJEMPLO**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) En una cola. El presentador extraerá ejemplos de esta cola durante el procesamiento, tal y como se describe en [Procesamiento de salida.](#processing-output)
+3.  Llame [**a MFCreateVideoSampleFromSurface**](/windows/desktop/api/evr/nc-evr-mfcreatevideosamplefromsurface) y pase un puntero a la superficie. Esta función devuelve un puntero a un objeto de ejemplo de vídeo. El objeto de ejemplo de vídeo implementa la interfaz [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) y el presentador usa esta interfaz para entregar la superficie al mezclador cuando el presentador llama al método [**IMFTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) del mezclador. Para obtener más información sobre el objeto de ejemplo de vídeo, vea [Ejemplos de vídeo.](video-samples.md)
+4.  Almacene el [**puntero DESEJEMPLO**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) En una cola. El presentador extraerá ejemplos de esta cola durante el procesamiento, como se describe en [Procesamiento de salida.](#processing-output)
 5.  Mantenga una referencia al puntero **IDirect3DSwapChain9** para que no se libera la cadena de intercambio.
 
-En el modo exclusivo de pantalla completa, el dispositivo no puede tener más de una cadena de intercambio. Esta cadena de intercambio se crea implícitamente al crear el dispositivo de pantalla completa. La cadena de intercambio puede tener más de un búfer de reserva. Sin embargo, si presenta un búfer de reserva mientras escribe en otro búfer de reserva en la misma cadena de intercambio, no hay ninguna manera fácil de coordinar las dos operaciones. Esto se debe a la manera en que Direct3D implementa el volteo de superficie. Cuando se llama a Present, el controlador de gráficos actualiza los punteros de superficie en la memoria de gráficos. Si mantiene punteros **IDirect3DSurface9** al llamar a **Present**, apuntarán a distintos búferes después de que se devuelva **la** llamada Present.
+En el modo exclusivo de pantalla completa, el dispositivo no puede tener más de una cadena de intercambio. Esta cadena de intercambio se crea implícitamente al crear el dispositivo de pantalla completa. La cadena de intercambio puede tener más de un búfer de reserva. Sin embargo, si presenta un búfer de reserva mientras escribe en otro búfer de reserva en la misma cadena de intercambio, no hay ninguna manera fácil de coordinar las dos operaciones. Esto se debe a la manera en que Direct3D implementa el cambio de superficie. Cuando se llama a Present, el controlador de gráficos actualiza los punteros de superficie en la memoria de gráficos. Si mantiene punteros **IDirect3DSurface9** al llamar a **Present**, apuntarán a búferes diferentes después de que se devuelva **la** llamada Present.
 
-La opción más sencilla es crear un ejemplo de vídeo para la cadena de intercambio. Si elige esta opción, siga los mismos pasos dados para el modo de ventana. La única diferencia es que la cola de ejemplo contiene un único ejemplo de vídeo. Otra opción es crear superficies fuera de la pantalla y, a continuación, cortarlas en el búfer de reserva. Las superficies que cree deben admitir el método [**IDirectXVideoProcessor::VideoProcessBlt,**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt) que el mezclador usa para componer los fotogramas de salida.
+La opción más sencilla es crear un ejemplo de vídeo para la cadena de intercambio. Si elige esta opción, siga los mismos pasos indicados para el modo en ventanas. La única diferencia es que la cola de ejemplo contiene un único ejemplo de vídeo. Otra opción es crear superficies fuera de pantalla y, a continuación, cortarlas en el búfer de reserva. Las superficies que cree deben admitir el método [**IDirectXVideoProcessor::VideoProcessBlt,**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt) que el mezclador usa para componer los fotogramas de salida.
 
 ### <a name="tracking-samples"></a>Ejemplos de seguimiento
 
-Cuando el presentador asigna por primera vez los ejemplos de vídeo, los coloca en una cola. El presentador dibuja de esta cola cada vez que necesita obtener un nuevo fotograma del mezclador. Una vez que el mezclador genera el fotograma, el presentador mueve el ejemplo a una segunda cola. La segunda cola es para los ejemplos que están esperando sus tiempos de presentación programados.
+Cuando el presentador asigna por primera vez los ejemplos de vídeo, los coloca en una cola. El presentador se dibuja de esta cola siempre que necesite obtener un nuevo fotograma del mezclador. Después de que el mezclador genera el fotograma, el presentador mueve el ejemplo a una segunda cola. La segunda cola es para los ejemplos que están esperando sus horas de presentación programadas.
 
-Para facilitar el seguimiento del estado de cada ejemplo, el objeto de ejemplo de vídeo implementa la [**interfaz IMFTrackedSample.**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample) Puede usar esta interfaz de la siguiente manera:
+Para que sea más fácil realizar un seguimiento del estado de cada ejemplo, el objeto de ejemplo de vídeo implementa la [**interfaz IMFTrackedSample.**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample) Puede usar esta interfaz de la siguiente manera:
 
 1.  Implemente [**la interfaz IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) en el presentador.
-2.  Antes de colocar un ejemplo en la cola programada, consulte el objeto de ejemplo de vídeo para la [**interfaz IMFTrackedSample.**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample)
+2.  Antes de colocar un ejemplo en la cola programada, consulte el objeto de ejemplo de vídeo para la interfaz [**IMFTrackedSample.**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample)
 
 3.  Llame [**a IMFTrackedSample::SetAllocator**](/windows/win32/api/mfidl/nf-mfidl-imftrackedsample-setallocator) con un puntero a la interfaz de devolución de llamada.
 4.  Cuando el ejemplo esté listo para su presentación, quítelo de la cola programada, presentarlo y liberar todas las referencias al ejemplo.
 5.  El ejemplo invoca la devolución de llamada. (El objeto de ejemplo no se elimina en este caso porque contiene un recuento de referencias en sí mismo hasta que se invoca la devolución de llamada).
 6.  Dentro de la devolución de llamada, devuelva el ejemplo a la cola disponible.
 
-No es necesario que un presentador use [**IMFTrackedSample**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample) para realizar un seguimiento de los ejemplos. puede implementar cualquier técnica que funcione mejor para su diseño. Una ventaja de **IMFTrackedSample** es que puede mover las funciones de programación y representación del presentador a objetos auxiliares, y estos objetos no necesitan ningún mecanismo especial para volver a llamar al presentador cuando liberan ejemplos de vídeo porque el objeto de ejemplo proporciona ese mecanismo.
+No es necesario que un presentador use [**LADTRACKedSample**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample) para realizar un seguimiento de los ejemplos; puede implementar cualquier técnica que funcione mejor para su diseño. Una ventaja de **IMFTrackedSample** es que puede mover las funciones de programación y representación del presentador a objetos auxiliares, y estos objetos no necesitan ningún mecanismo especial para volver a llamar al presentador cuando liberan ejemplos de vídeo porque el objeto de ejemplo proporciona ese mecanismo.
 
 El código siguiente muestra cómo establecer la devolución de llamada:
 
@@ -976,22 +871,22 @@ done:
 
 ## <a name="processing-output"></a>Salida de procesamiento
 
-Cada vez que el mezclador recibe un nuevo ejemplo de entrada, el EVR envía **un MFVP_MESSAGE_PROCESSINPUTNOTIFY** mensaje al presentador. Este mensaje indica que el mezclador podría tener un nuevo fotograma de vídeo para entregar. En respuesta, el presentador llama [**a IMFTransform::P rocessOutput en**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) el mezclador. Si el método se realiza correctamente, el presentador programa el ejemplo para su presentación.
+Cada vez que el mezclador recibe un nuevo ejemplo de entrada, la EVR envía MFVP_MESSAGE_PROCESSINPUTNOTIFY **mensaje** al presentador. Este mensaje indica que el mezclador podría tener un nuevo fotograma de vídeo para entregar. En respuesta, el presentador llama [**a IMFTransform::P rocessOutput en**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) el mezclador. Si el método se realiza correctamente, el presentador programa el ejemplo para su presentación.
 
 Para obtener la salida del mezclador, realice los pasos siguientes:
 
-1.  Compruebe el estado del reloj. Si el reloj está en pausa, ignore el **mensaje MFVP_MESSAGE_PROCESSINPUTNOTIFY** a menos que este sea el primer fotograma de vídeo. Si el reloj se está ejecutando o si este es el primer fotograma de vídeo, continúe.
-2.  Obtenga un ejemplo de la cola de ejemplos disponibles. Si la cola está vacía, significa que todas las muestras asignadas están actualmente programadas para presentarse. En ese caso, ignore el **mensaje MFVP_MESSAGE_PROCESSINPUTNOTIFY** en este momento. Cuando el ejemplo siguiente esté disponible, repita los pasos enumerados aquí.
+1.  Compruebe el estado del reloj. Si el reloj está en pausa, ignore el **mensaje MFVP_MESSAGE_PROCESSINPUTNOTIFY** a menos que se trata del primer fotograma de vídeo. Si el reloj se está ejecutando o si se trata del primer fotograma de vídeo, continúe.
+2.  Obtenga un ejemplo de la cola de ejemplos disponibles. Si la cola está vacía, significa que todas las muestras asignadas están programadas para presentarse actualmente. En ese caso, ignore el **MFVP_MESSAGE_PROCESSINPUTNOTIFY** en este momento. Cuando el ejemplo siguiente esté disponible, repita los pasos enumerados aquí.
 3.  (Opcional). Si el reloj está disponible, obtenga la hora del reloj actual (*T1*) llamando a [**IMFClock::GetCorrelatedTime**](/windows/desktop/api/mfidl/nf-mfidl-imfclock-getcorrelatedtime).
-4.  Llame [**a IMFTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) en el mezclador. Si **ProcessOutput se** realiza correctamente, el ejemplo contiene un fotograma de vídeo. Si se produce un error en el método, compruebe el código de retorno. Los siguientes códigos de error de **ProcessOutput** no son errores críticos:
+4.  Llame [**a IMFTransform::P rocessOutput en**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) el mezclador. Si **ProcessOutput se** realiza correctamente, el ejemplo contiene un fotograma de vídeo. Si se produce un error en el método, compruebe el código de retorno. Los siguientes códigos de error **de ProcessOutput** no son errores críticos:
 
     
 
     | Código de error                              | Descripción                                                                                                                                                                                                                                                                                                                                                                                    |
     |-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **MF_E_TRANSFORM_NEED_MORE_INPUT** | El mezclador necesita más entrada para poder generar un nuevo marco de salida.<br/> Si obtiene este código de error, compruebe si el EVR ha llegado al final de la secuencia y responda en consecuencia, como se describe en [Final de la secuencia](#end-of-stream). De lo contrario, ignore **este MF_E_TRANSFORM_NEED_MORE_INPUT** mensaje. La EVR enviará otra cuando el mezclador reciba más entradas.<br/> |
-    | **MF_E_TRANSFORM_STREAM_CHANGE**    | El tipo de salida del mezclador ha pasado a ser no válido, posiblemente debido a un cambio de formato ascendente.<br/> Si obtiene este código de error, establezca el tipo de medio del presentador en **NULL.** El EVR solicitará un nuevo formato.<br/>                                                                                                                                                                         |
-    | **MF_E_TRANSFORM_TYPE_NOT_SET**    | El mezclador requiere un nuevo tipo de medio.<br/> Si recibe este código de error, vuelva a negociar el tipo de salida del mezclador como se describe en [Formatos de negociación](#negotiating-formats).<br/>                                                                                                                                                                                                        |
+    | **MF_E_TRANSFORM_NEED_MORE_INPUT** | El mezclador necesita más entrada para poder generar un nuevo marco de salida.<br/> Si obtiene este código de error, compruebe si la EVR ha llegado al final de la secuencia y responda en consecuencia, como se describe en [Final de la secuencia](#end-of-stream). De lo contrario, o **bien MF_E_TRANSFORM_NEED_MORE_INPUT** mensaje. La EVR enviará otra cuando el mezclador reciba más entradas.<br/> |
+    | **MF_E_TRANSFORM_STREAM_CHANGE**    | El tipo de salida del mezclador ha pasado a ser no válido, posiblemente debido a un cambio de formato ascendente.<br/> Si obtiene este código de error, establezca el tipo de medio del presentador en **NULL.** La EVR solicitará un nuevo formato.<br/>                                                                                                                                                                         |
+    | **MF_E_TRANSFORM_TYPE_NOT_SET**    | El mezclador requiere un nuevo tipo de medio.<br/> Si obtiene este código de error, vuelva a negociar el tipo de salida del mezclador como se describe en [Formatos de negociación](#negotiating-formats).<br/>                                                                                                                                                                                                        |
 
     
 
@@ -999,14 +894,14 @@ Para obtener la salida del mezclador, realice los pasos siguientes:
 
     Si [**ProcessOutput se**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) realiza correctamente, continúe.
 
-5.  (Opcional). Si el reloj está disponible, obtenga la hora del reloj actual *(T2).* La cantidad de latencia introducida por el mezclador es (*T2*  -  *T1*). Envíe un **EC_PROCESSING_LATENCY** evento con este valor al EVR. El EVR usa este valor para el control de calidad. Si no hay ningún reloj disponible, no hay ninguna razón para enviar el **EC_PROCESSING_LATENCY** evento.
-6.  (Opcional). Consulte el ejemplo [**para IMFTrackedSample**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample) y llame a [**IMFTrackedSample::SetAllocator**](/windows/win32/api/mfidl/nf-mfidl-imftrackedsample-setallocator) como se describe en [Ejemplos de seguimiento](#tracking-samples).
+5.  (Opcional). Si el reloj está disponible, obtenga la hora del reloj actual (*T2*). La cantidad de latencia introducida por el mezclador es (*T2*  -  *T1*). Envíe un **EC_PROCESSING_LATENCY** evento con este valor a evr. La EVR usa este valor para el control de calidad. Si no hay ningún reloj disponible, no hay ninguna razón para enviar el **EC_PROCESSING_LATENCY** evento.
+6.  (Opcional). Consulte el ejemplo [**para LANstrackedSample**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample) y llame [**a ASETrackedSample::SetAllocator**](/windows/win32/api/mfidl/nf-mfidl-imftrackedsample-setallocator) como se describe en [Ejemplos de seguimiento](#tracking-samples).
 7.  Programe el ejemplo para su presentación.
 
 Esta secuencia de pasos puede finalizar antes de que el presentador reciba cualquier salida del mezclador. Para asegurarse de que no se descarta ninguna solicitud, debe repetir los mismos pasos cuando se produzca lo siguiente:
 
--   Se llama al método [**IMFClockStateSink::OnClockStart**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart) o **IMFClockStateSink::OnClockStart** del presentador. Esto controla el caso en el que el mezclador omite la entrada porque el reloj está en pausa (paso 1).
--   Se invoca la devolución de [**llamada IMFTrackedSample.**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample) Esto controla el caso en el que el mezclador recibe la entrada, pero todos los ejemplos de vídeo del presentador están en uso (paso 2).
+-   Se llama al método [**IMFClockStateSink::OnClockStart**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart) o **IMFClockStateSink::OnClockStart del** presentador. Esto controla el caso en el que el mezclador omite la entrada porque el reloj está en pausa (paso 1).
+-   Se [**invoca la devolución de llamada DESAMPLETrackedSample.**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample) Esto controla el caso en el que el mezclador recibe la entrada, pero todos los ejemplos de vídeo del presentador están en uso (paso 2).
 
 En los siguientes ejemplos de código se muestran estos pasos con más detalle. El presentador llama al `ProcessInputNotify` método (que se muestra en el ejemplo siguiente) cuando obtiene el **MFVP_MESSAGE_PROCESSINPUTNOTIFY** mensaje.
 
@@ -1047,7 +942,7 @@ HRESULT EVRCustomPresenter::ProcessInputNotify()
 
 
 
-Este `ProcessInputNotify` método establece una marca booleana para registrar el hecho de que el mezclador tiene nueva entrada. A continuación, `ProcessOutputLoop` llama al método , que se muestra en el ejemplo siguiente. Este método intenta extraer tantas muestras como sea posible del mezclador:
+Este `ProcessInputNotify` método establece una marca booleana para registrar el hecho de que el mezclador tiene nueva entrada. A continuación, llama `ProcessOutputLoop` al método , que se muestra en el ejemplo siguiente. Este método intenta extraer tantas muestras como sea posible del mezclador:
 
 
 ```C++
@@ -1082,7 +977,7 @@ void EVRCustomPresenter::ProcessOutputLoop()
 
 
 
-El `ProcessOutput` método , que se muestra en el ejemplo siguiente, intenta obtener un único fotograma de vídeo del mezclador. Si no hay ningún fotograma de vídeo disponible, devuelve S_FALSE o un código de error, cualquiera de los cuales `ProcessSample` interrumpe el bucle en `ProcessOutputLoop` . La mayor parte del trabajo se realiza dentro del `ProcessOutput` método :
+El `ProcessOutput` método , que se muestra en el ejemplo siguiente, intenta obtener un único fotograma de vídeo del mezclador. Si no hay ningún fotograma de vídeo disponible, S_FALSE o un código de error, cualquiera de los cuales `ProcessSample` interrumpe el bucle en `ProcessOutputLoop` . La mayor parte del trabajo se realiza dentro del `ProcessOutput` método :
 
 
 ```C++
@@ -1263,14 +1158,14 @@ done:
 Algunos comentarios sobre este ejemplo:
 
 -   La *m_SamplePool* variable se supone que es un objeto de colección que contiene la cola de ejemplos de vídeo disponibles. El método del objeto `GetSample` devuelve **MF_E_SAMPLEALLOCATOR_EMPTY** si la cola está vacía.
--   Si el método [**ProcessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) del mezclador devuelve MF_E_TRANSFORM_NEED_MORE_INPUT, significa que el mezclador no puede generar más resultados, por lo que el presentador *borra m_fSampleNotify* marca.
+-   Si el método [**ProcessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) del mezclador devuelve MF_E_TRANSFORM_NEED_MORE_INPUT, significa que el mezclador no puede generar más salidas, por lo que el presentador borra la *m_fSampleNotify* salida.
 -   El `TrackSample` método , que establece la devolución de llamada [**IMFTrackedSample,**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample) se muestra en la sección [Ejemplos de seguimiento](#tracking-samples).
 
 ### <a name="repainting-frames"></a>Volver a dibujar fotogramas
 
-En ocasiones, es posible que el presentador tenga que volver a dibujar el fotograma de vídeo más reciente. Por ejemplo, el presentador estándar vuelve a dibujar el marco en las situaciones siguientes:
+En ocasiones, es posible que el presentador tenga que volver a dibujar el fotograma de vídeo más reciente. Por ejemplo, el presentador estándar vuelve a dibujar el fotograma en las situaciones siguientes:
 
--   En modo de ventana, en respuesta a **WM_PAINT** mensajes recibidos por la ventana de la aplicación. Vea [**IMFVideoDisplayControl::RepaintVideo**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-repaintvideo).
+-   En modo de ventana, en respuesta **a** WM_PAINT mensajes recibidos por la ventana de la aplicación. Vea [**IMFVideoDisplayControl::RepaintVideo**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-repaintvideo).
 -   Si el rectángulo de destino cambia cuando la aplicación llama [**a IMFVideoDisplayControl::SetVideoPosition**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setvideoposition).
 
 Siga estos pasos para solicitar al mezclador que vuelva a crear el fotograma más reciente:
@@ -1280,7 +1175,7 @@ Siga estos pasos para solicitar al mezclador que vuelva a crear el fotograma má
 3.  Llame [**a IMFDesiredSample::SetDesiredSampleTimeAndDuration**](/windows/desktop/api/evr/nf-evr-imfdesiredsample-setdesiredsampletimeandduration). Especifique la marca de tiempo del fotograma de vídeo más reciente. (Tendrá que almacenar en caché este valor y actualizarlo para cada fotograma).
 4.  Llame [**a ProcessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) en el mezclador.
 
-Al volver a dibujar un marco, puede omitir el reloj de presentación y presentarlo inmediatamente.
+Al volver a dibujar un marco, puede omitir el reloj de presentación y presentar el marco inmediatamente.
 
 ### <a name="scheduling-samples"></a>Ejemplos de programación
 
@@ -1288,15 +1183,15 @@ Los fotogramas de vídeo pueden llegar a la EVR en cualquier momento. El present
 
 -   Presente el ejemplo.
 -   Mantenga el ejemplo en la cola porque es temprano.
--   Descarte el ejemplo porque es tarde. Aunque debe evitar quitar fotogramas si es posible, es posible que deba hacerlo si el presentador se está quedando atrás continuamente.
+-   Descarte el ejemplo porque es tarde. Aunque debe evitar quitar fotogramas si es posible, es posible que tenga que hacerlo si el presentador se queda atrás continuamente.
 
-Para obtener la marca de tiempo de un fotograma de vídeo, llame a [**IMFSample::GetSampleTime en**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getsampletime) el ejemplo de vídeo. La marca de tiempo es relativa al reloj de presentación del EVR. Para obtener la hora del reloj actual, llame [**a IMFClock::GetCorrelatedTime**](/windows/desktop/api/mfidl/nf-mfidl-imfclock-getcorrelatedtime). Si la EVR no tiene un reloj de presentación o si una muestra no tiene una marca de tiempo, puede presentar la muestra inmediatamente después de obtenerla.
+Para obtener la marca de tiempo de un fotograma de vídeo, llame a [**IMFSample::GetSampleTime**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getsampletime) en el ejemplo de vídeo. La marca de tiempo es relativa al reloj de presentación del EVR. Para obtener la hora del reloj actual, llame [**a IMFClock::GetCorrelatedTime**](/windows/desktop/api/mfidl/nf-mfidl-imfclock-getcorrelatedtime). Si el EVR no tiene un reloj de presentación o si una muestra no tiene una marca de tiempo, puede presentar la muestra inmediatamente después de obtenerla.
 
 Para obtener la duración de cada ejemplo, llame [**a IMFSample::GetSampleDuration**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getsampleduration). Si el ejemplo no tiene una duración, puede usar la función [**MFFrameRateToAverageTimePerFrame**](/windows/desktop/api/mfapi/nf-mfapi-mfframeratetoaveragetimeperframe) para calcular la duración a partir de la velocidad de fotogramas.
 
 Al programar ejemplos, tenga en cuenta lo siguiente:
 
--   Si la velocidad de reproducción es más rápida o más lenta que la velocidad normal, el reloj se ejecuta a una velocidad más rápida o más lenta. Esto significa que la marca de tiempo de un ejemplo siempre proporciona la hora de destino correcta en relación con el reloj de presentación. Sin embargo, si traduce los tiempos de presentación a otra hora de reloj (por ejemplo, el contador de rendimiento de alta resolución), debe escalar las horas en función de la velocidad del reloj. Si cambia la velocidad del reloj, la EVR llama al método [**IMFClockStateSink::OnClockSetRate del**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclocksetrate) presentador.
+-   Si la velocidad de reproducción es más rápida o más lenta que la velocidad normal, el reloj se ejecuta a una velocidad más rápida o más lenta. Esto significa que la marca de tiempo de un ejemplo siempre proporciona la hora de destino correcta con respecto al reloj de presentación. Sin embargo, si traduce los tiempos de presentación a otra hora de reloj (por ejemplo, el contador de rendimiento de alta resolución), debe escalar las horas en función de la velocidad del reloj. Si cambia la velocidad del reloj, el EVR llama al método [**IMFClockStateSink::OnClockSetRate del**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclocksetrate) presentador.
 -   La velocidad de reproducción puede ser negativa para la reproducción inversa. Cuando la velocidad de reproducción es negativa, el reloj de presentación se ejecuta hacia atrás. En otras palabras, la *hora N* + 1 se produce antes de la *hora N*.
 
 En el ejemplo siguiente se calcula lo pronto o tarde que es una muestra, en relación con el reloj de presentación:
@@ -1338,19 +1233,19 @@ En el ejemplo siguiente se calcula lo pronto o tarde que es una muestra, en rela
 
 El reloj de presentación suele estar controlado por el reloj del sistema o el representador de audio. (El representador de audio deriva el tiempo de la velocidad a la que la tarjeta de sonido consume audio). En general, el reloj de presentación no se sincroniza con la frecuencia de actualización del monitor.
 
-Si los parámetros de  presentación de Direct3D especifican D3DPRESENT_INTERVAL_DEFAULT o **D3DPRESENT_INTERVAL_ONE** para el intervalo de presentación, la operación Present espera el seguimiento vertical del monitor.  Se trata de una manera fácil de evitar el desgarro, pero reduce la precisión del algoritmo de programación. Por el contrario, si el intervalo de presentación **es D3DPRESENT_INTERVAL_IMMEDIATE**, el método **Present** se ejecuta inmediatamente, lo que provoca el desgarro a menos que el algoritmo de programación sea lo suficientemente preciso como para llamar a **Present** solo durante el período de retroceso vertical.
+Si los parámetros de  presentación de Direct3D especifican D3DPRESENT_INTERVAL_DEFAULT o **D3DPRESENT_INTERVAL_ONE** para el intervalo de presentación, la operación Present espera el seguimiento vertical del monitor.  Se trata de una manera fácil de evitar el desmonteo, pero reduce la precisión del algoritmo de programación. Por el contrario, si el intervalo de presentación es D3DPRESENT_INTERVAL_IMMEDIATE , el método **Present** se ejecuta inmediatamente, lo que provoca el desmonteo a menos que el algoritmo de programación sea lo suficientemente preciso como para llamar **a** **Present** solo durante el período de retroceso vertical.
 
-Las siguientes funciones pueden ayudarle a obtener información de control de tiempo precisa:
+Las siguientes funciones pueden ayudarle a obtener información de tiempo precisa:
 
 -   **IDirect3DDevice9::GetRasterStatus** devuelve información sobre el trama, incluida la línea de examen actual y si el trama está en el período en blanco vertical.
--   **DwmGetCompositionTimingInfo** devuelve información de control de tiempo para el administrador de ventanas de escritorio. Esta información es útil si está habilitada la composición de escritorio.
+-   **DwmGetCompositionTimingInfo** devuelve información de tiempo para el administrador de ventanas de escritorio. Esta información es útil si está habilitada la composición de escritorio.
 
 ### <a name="presenting-samples"></a>Presentación de ejemplos
 
 En esta sección se supone que ha creado una cadena de intercambio independiente para cada superficie, como se describe en [Asignación de superficies de Direct3D.](#allocating-direct3d-surfaces) Para presentar un ejemplo, obtenga la cadena de intercambio del ejemplo de vídeo como se muestra a continuación:
 
 1.  Llame [**a IMFSample::GetBufferByIndex en**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getbufferbyindex) el ejemplo de vídeo para obtener el búfer.
-2.  Consulte el búfer para la [**interfaz DESGETService.**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice)
+2.  Consulte el búfer para la [**interfaz IMFGetService.**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice)
 3.  Llame [**a IMFGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) para obtener la **interfaz IDirect3DSurface9** de la superficie de Direct3D. (Puede combinar este paso y el paso anterior en uno llamando a [**MFGetService).**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice)
 4.  Llame **a IDirect3DSurface9::GetContainer** en la superficie para obtener un puntero a la cadena de intercambio.
 5.  Llame **a IDirect3DSwapChain9::P resent** en la cadena de intercambio.
@@ -1449,18 +1344,18 @@ El *rectángulo de origen* es la parte del fotograma de vídeo que se va a mostr
 
 Hay varias opciones para aplicar rectángulos de origen y destino. La primera opción es permitir que el mezclador las aplique:
 
--   Establezca el rectángulo de origen mediante el [**VIDEO_ZOOM_RECT**](video-zoom-rect-attribute.md) origen. El mezclador aplicará el rectángulo de origen cuando se corta el vídeo a la superficie de destino. El rectángulo de origen predeterminado del mezclador es todo el marco.
--   Establezca el rectángulo de destino como la apertura geométrica en el tipo de salida del mezclador. Para obtener más información, vea [Formatos de negociación](#negotiating-formats).
+-   Establezca el rectángulo de origen mediante el [**VIDEO_ZOOM_RECT**](video-zoom-rect-attribute.md) atributo . El mezclador aplicará el rectángulo de origen cuando blits el vídeo a la superficie de destino. El rectángulo de origen predeterminado del mezclador es todo el marco.
+-   Establezca el rectángulo de destino como apertura geométrica en el tipo de salida del mezclador. Para obtener más información, vea [Formatos de negociación](#negotiating-formats).
 
-La segunda opción consiste en aplicar los rectángulos cuando se **IDirect3DSwapChain9::P resent** especificando los parámetros *pSourceRect* y *pDestRect* en el **método Present.** Puede combinar estas opciones. Por ejemplo, podría establecer el rectángulo de origen en el mezclador, pero aplicar el rectángulo de destino en el **método Present.**
+La segunda opción consiste en aplicar los rectángulos al especificar los parámetros **IDirect3DSwapChain9::P resent** especificando los parámetros *pSourceRect* y *pDestRect* en el **método Present.** Puede combinar estas opciones. Por ejemplo, podría establecer el rectángulo de origen en el mezclador, pero aplicar el rectángulo de destino en el **método** Present.
 
-Si la aplicación cambia el rectángulo de destino o cambia el tamaño de la ventana, es posible que tenga que asignar nuevas superficies. Si es así, debe tener cuidado de sincronizar esta operación con el subproceso de programación. Vacíe la cola de programación y descarte las muestras antiguas antes de asignar nuevas superficies.
+Si la aplicación cambia el rectángulo de destino o cambia el tamaño de la ventana, es posible que tenga que asignar nuevas superficies. Si es así, debe tener cuidado de sincronizar esta operación con el subproceso de programación. Vacíe la cola de programación y descarte los ejemplos antiguos antes de asignar nuevas superficies.
 
 ### <a name="end-of-stream"></a>Fin de la secuencia
 
-Cuando ha finalizado cada flujo de entrada en la EVR, la EVR envía un **MFVP_MESSAGE_ENDOFSTREAM** mensaje al presentador. Sin embargo, en el momento en que recibe el mensaje, es posible que haya algunos fotogramas de vídeo restantes para procesar. Antes de responder al mensaje de fin de flujo, debe purgar toda la salida del mezclador y presentar todos los fotogramas restantes. Después de presentar el último fotograma, envíe un **EC_COMPLETE** evento al EVR.
+Cuando ha finalizado cada flujo de entrada del EVR, el EVR envía **un MFVP_MESSAGE_ENDOFSTREAM** mensaje al presentador. Sin embargo, en el momento en que recibe el mensaje, es posible que haya algunos fotogramas de vídeo pendientes de procesar. Antes de responder al mensaje de fin de secuencia, debe purgar toda la salida del mezclador y presentar todos los fotogramas restantes. Después de presentar el último fotograma, envíe un **EC_COMPLETE** evento al EVR.
 
-En el ejemplo siguiente se muestra un método que envía el **EC_COMPLETE** evento si se cumplen varias condiciones. De lo contrario, devuelve S_OK sin enviar el evento:
+En el ejemplo siguiente se muestra un método que envía el **EC_COMPLETE** evento si se cumplen varias condiciones. De lo contrario, devuelve S_OK sin enviar el evento :
 
 
 ```C++
@@ -1496,10 +1391,10 @@ HRESULT EVRCustomPresenter::CheckEndOfStream()
 Este método comprueba los estados siguientes:
 
 -   Si la *variable m_fSampleNotify* es **TRUE,** significa que el mezclador tiene uno o varios fotogramas que aún no se han procesado. (Para obtener más información, vea [Procesamiento de salida).](#processing-output)
--   La *m_fEndStreaming* variable es una marca booleana cuyo valor inicial **es FALSE.** El presentador establece la marca en **TRUE cuando** el EVR envía **el MFVP_MESSAGE_ENDOFSTREAM** mensaje.
--   Se supone que el método devuelve TRUE siempre que uno o varios fotogramas `AreSamplesPending` estén esperando en la cola programada. 
+-   La *m_fEndStreaming* variable es una marca booleana cuyo valor inicial **ES FALSE.** El presentador establece la marca en **TRUE cuando** el EVR envía **el MFVP_MESSAGE_ENDOFSTREAM** mensaje.
+-   Se supone que el método devuelve TRUE siempre y cuando uno o varios fotogramas `AreSamplesPending` estén esperando en la cola programada. 
 
-En el [**método IMFVideoPresenter::P rocessMessage,**](/windows/desktop/api/evr/nf-evr-imfvideopresenter-processmessage) establezca *m_fEndStreaming* en **TRUE** y llame a cuando el EVR envíe el `CheckEndOfStream` **MFVP_MESSAGE_ENDOFSTREAM** mensaje:
+En el [**método IMFVideoPresenter::P rocessMessage,**](/windows/desktop/api/evr/nf-evr-imfvideopresenter-processmessage) establezca *m_fEndStreaming* en **TRUE** y llame a cuando el EVR envíe `CheckEndOfStream` el **MFVP_MESSAGE_ENDOFSTREAM** mensaje:
 
 
 ```C++
@@ -1576,42 +1471,42 @@ done:
 
 
 
-Además, llame a `CheckEndOfStream` si el método [**IMFTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) del mezclador **devuelve MF_E_TRANSFORM_NEED_MORE_INPUT**. Este código de error indica que el mezclador no tiene más ejemplos de entrada (vea [Procesamiento de salida).](#processing-output)
+Además, llame a `CheckEndOfStream` si el método [**IMFTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) del mezclador **devuelve MF_E_TRANSFORM_NEED_MORE_INPUT**. Este código de error indica que el mezclador no tiene más ejemplos de entrada (consulte [Procesamiento de salida).](#processing-output)
 
-## <a name="frame-stepping"></a>Ejecución paso a paso de fotogramas
+## <a name="frame-stepping"></a>Paso a paso por fotogramas
 
-La EVR está diseñada para admitir la ejecución paso a paso de fotogramas en DirectShow y la limpieza en Media Foundation. El paso a paso y la limpieza de fotogramas son conceptualmente similares. En ambos casos, la aplicación solicita un fotograma de vídeo a la vez. Internamente, el presentador usa el mismo mecanismo para implementar ambas características.
+El EVR está diseñado para admitir el paso a paso de marco DirectShow limpieza y limpieza en Media Foundation. El paso a paso y el limpieza de fotogramas son conceptualmente similares. En ambos casos, la aplicación solicita un fotograma de vídeo a la vez. Internamente, el presentador usa el mismo mecanismo para implementar ambas características.
 
-La ejecución paso a paso de fotogramas en DirectShow funciona de la siguiente manera:
+La ejecución paso a paso DirectShow marco funciona de la siguiente manera:
 
--   La aplicación llama [**a IVideoFrameStep::Step**](/windows/win32/api/strmif/nf-strmif-ivideoframestep-step). El número de pasos se da en el *parámetro dwSteps.* La EVR envía un **MFVP_MESSAGE_STEP** al presentador, donde el parámetro de mensaje (*ulParam*) es el número de pasos.
--   Si la aplicación llama a [**IVideoFrameStep::CancelStep**](/windows/win32/api/strmif/nf-strmif-ivideoframestep-cancelstep) o cambia el estado del grafo (en ejecución, en pausa o detenido), la EVR envía un **MFVP_MESSAGE_CANCELSTEP** mensaje.
+-   La aplicación llama [**a IVideoFrameStep::Step**](/windows/win32/api/strmif/nf-strmif-ivideoframestep-step). El número de pasos se especifica en el *parámetro dwSteps.* EvR envía un **mensaje MFVP_MESSAGE_STEP** al presentador, donde el parámetro de mensaje (*ulParam*) es el número de pasos.
+-   Si la aplicación llama a [**IVideoFrameStep::CancelStep**](/windows/win32/api/strmif/nf-strmif-ivideoframestep-cancelstep) o cambia el estado del grafo (en ejecución, en pausa o detenido), el EVR envía un **mensaje MFVP_MESSAGE_CANCELSTEP** error.
 
 La limpieza en Media Foundation funciona de la siguiente manera:
 
 -   La aplicación establece la velocidad de reproducción en cero mediante una llamada [**a IMFRateControl::SetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate).
--   Para representar un nuevo marco, la aplicación llama [**a LANSESIÓNMEDIAMEDIA::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) con la posición deseada. La EVR envía un **MFVP_MESSAGE_STEP** con *ulParam* igual a 1.
--   Para detener la limpieza, la aplicación establece la velocidad de reproducción en un valor distinto de cero. La EVR envía el **MFVP_MESSAGE_CANCELSTEP** mensaje.
+-   Para representar un marco nuevo, la aplicación llama [**a IMFMediaSession::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) con la posición deseada. El EVR envía un **MFVP_MESSAGE_STEP** mensaje con *ulParam* igual a 1.
+-   Para detener la limpieza, la aplicación establece la velocidad de reproducción en un valor distinto de cero. El EVR envía el **MFVP_MESSAGE_CANCELSTEP** mensaje.
 
-Después de recibir **MFVP_MESSAGE_STEP** mensaje, el presentador espera a que llegue el fotograma de destino. Si el número de pasos es *N*, el presentador descarta las siguientes muestras *(N* - 1) y presenta la *N* muestra. Cuando el presentador completa el paso de fotograma, envía un evento [**EC_STEP_COMPLETE**](../directshow/ec-step-complete.md) al EVR con *lParam1* establecido en **FALSE.** Además, si la velocidad de reproducción es cero, el presentador envía un [**EC_SCRUB_TIME**](../directshow/ec-scrub-time.md) evento. Si el EVR cancela la ejecución paso **a** paso del marco mientras aún está pendiente una operación de paso de fotogramas, el presentador envía un evento EC_STEP_COMPLETE con *lParam1* establecido en **TRUE.**
+Después de recibir **MFVP_MESSAGE_STEP** mensaje, el presentador espera a que llegue el fotograma de destino. Si el número de pasos es *N,* el presentador descarta las siguientes muestras *(N* - 1) y presenta la *N* muestra. Cuando el presentador completa el paso de marco, envía un evento [**EC_STEP_COMPLETE**](../directshow/ec-step-complete.md) al EVR con *lParam1* establecido en **FALSE.** Además, si la velocidad de reproducción es cero, el presentador envía un [**EC_SCRUB_TIME**](../directshow/ec-scrub-time.md) evento. Si el EVR cancela la ejecución paso **a** paso del marco mientras una operación de paso de fotograma sigue pendiente, el presentador envía un evento EC_STEP_COMPLETE con *lParam1* establecido en **TRUE.**
 
-La aplicación puede enmarcar el paso o limpiar varias veces, por lo que el presentador podría recibir varios mensajes **MFVP_MESSAGE_STEP** antes de obtener un **MFVP_MESSAGE_CANCELSTEP** mensaje. Además, el presentador puede recibir el **mensaje MFVP_MESSAGE_STEP** antes de que se inicie el reloj o mientras se ejecuta el reloj.
+La aplicación puede enmarcar el paso o limpiar  varias veces, por lo que el presentador podría recibir varios mensajes MFVP_MESSAGE_STEP antes de obtener **un MFVP_MESSAGE_CANCELSTEP** mensaje. Además, el presentador puede recibir el **mensaje MFVP_MESSAGE_STEP** antes de que se inicie el reloj o mientras el reloj se está ejecutando.
 
 ### <a name="implementing-frame-stepping"></a>Implementación de la ejecución paso a paso de fotogramas
 
 En esta sección se describe un algoritmo para implementar la ejecución paso a paso de fotogramas. El algoritmo de ejecución paso a paso de fotogramas usa las siguientes variables:
 
 -   *step_count*. Entero sin signo que especifica el número de pasos de la operación de ejecución paso a paso del marco actual.
--   *step_queue*. Cola de punteros [**DESAMPLESample.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+-   *step_queue*. Cola de punteros [**DE TIPO IMFSample.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 -   *step_state*. En cualquier momento, el presentador puede estar en uno de los siguientes estados con respecto a la ejecución paso a paso de fotogramas: 
 
-    | Estado         | Descripción                                                                                                                                                                                                     |
+    | State         | Descripción                                                                                                                                                                                                     |
     |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | NOT_STEPPING | No paso a paso de fotogramas.                                                                                                                                                                                             |
-    | EN ESPERA       | El presentador ha recibido el **mensaje MFVP_MESSAGE_STEP,** pero el reloj no se ha iniciado.                                                                                                                  |
-    | PENDING       | El presentador ha recibido el **mensaje MFVP_MESSAGE_STEP** y se ha iniciado el reloj, pero el presentador está esperando recibir el fotograma de destino.                                                             |
-    | Programado     | El presentador ha recibido el marco de destino y lo ha programado para su presentación, pero no se ha presentado.                                                                                        |
-    | íntegro      | El presentador ha presentado el marco de destino y ha enviado el evento [**EC_STEP_COMPLETE**](../directshow/ec-step-complete.md) y está esperando el siguiente mensaje **MFVP_MESSAGE_STEP** o **MFVP_MESSAGE_CANCELSTEP** mensaje. |
+    | NOT_STEPPING | No enmarcar paso a paso.                                                                                                                                                                                             |
+    | EN ESPERA       | El presentador ha recibido el **MFVP_MESSAGE_STEP** mensaje, pero el reloj no se ha iniciado.                                                                                                                  |
+    | PENDING       | El presentador ha recibido el **MFVP_MESSAGE_STEP** mensaje y el reloj se ha iniciado, pero el presentador está esperando recibir el marco de destino.                                                             |
+    | PROGRAMADO     | El presentador ha recibido el marco de destino y lo ha programado para su presentación, pero el marco no se ha presentado.                                                                                        |
+    | ÍNTEGRO      | El presentador ha presentado el [](../directshow/ec-step-complete.md) marco de destino y ha enviado el evento EC_STEP_COMPLETE y está esperando el siguiente MFVP_MESSAGE_STEP **o** **MFVP_MESSAGE_CANCELSTEP** mensaje. |
 
     
 
@@ -1630,21 +1525,21 @@ Procedimiento PrepareFrameStep
 Procedimiento StartFrameStep
 
 1.  Si *step_state* es igual a WAITING, *establezca step_state* en PENDING. Para cada ejemplo de *step_queue*, llame a DeliverFrameStepSample.
-2.  Si *step_state* es igual NOT_STEPPING, quite los ejemplos step_queue *programarlos* para su presentación.
+2.  Si *step_state* es igual a NOT_STEPPING, quite los ejemplos de *step_queue* programarlos para su presentación.
 
 Procedimiento CompleteFrameStep
 
 1.  Establezca *step_state* en COMPLETE.
-2.  Envíe el EC_STEP_COMPLETE evento con *lParam1*  =  **FALSE.**
-3.  Si la velocidad del reloj es cero, envíe el **EC_SCRUB_TIME** evento con la hora de ejemplo.
+2.  Envíe el EC_STEP_COMPLETE evento con *lParam1*  =  **FALSE**.
+3.  Si la velocidad del reloj es cero, envíe el **EC_SCRUB_TIME** evento con la hora de la muestra.
 
 Procedimiento DeliverFrameStepSample
 
-1.  Si la velocidad del reloj es cero y *el tiempo de* reloj de la muestra de muestra de  +    <  muestra, descarte la muestra. Salir.
-2.  Si *step_state* es igual a SCHEDULED o COMPLETE, agregue el ejemplo a *step_queue*. Salir.
+1.  Si la velocidad del reloj es cero y *el tiempo de* reloj de duración de la muestra de muestra de  +    <  *muestra,* descarte la muestra. Salir.
+2.  Si *step_state* es igual a SCHEDULED o COMPLETE, agregue el ejemplo *a step_queue*. Salir.
 3.  Decremento *step_count*.
 4.  Si *step_count* > 0, descarte el ejemplo. Salir.
-5.  Si *step_state* es igual a WAITING, agregue el ejemplo a *step_queue*. Salir.
+5.  Si *step_state* es igual a WAITING, agregue el ejemplo *a step_queue*. Salir.
 6.  Programe el ejemplo para su presentación.
 7.  Establezca *step_state* en SCHEDULED.
 
@@ -1652,19 +1547,19 @@ Procedimiento CancelFrameStep
 
 1.  Establezca *step_state* en NOT_STEPPING
 2.  *Restablezca step_count* a cero.
-3.  Si el valor anterior de *step_state* era WAITING, PENDING o SCHEDULED, EC_STEP_COMPLETE con *lParam1*  =  **TRUE.**
+3.  Si el valor anterior de *step_state* era WAITING, PENDING o SCHEDULED, EC_STEP_COMPLETE con *lParam1*  =  **TRUE**.
 
 Llame a estos procedimientos como se muestra a continuación:
 
 
 
-| Mensaje o método del presentador                                                   | Procedimiento           |
+| Método o mensaje del presentador                                                   | Procedimiento           |
 |-------------------------------------------------------------------------------|---------------------|
 | **MFVP_MESSAGE_STEP** mensaje                                               | `PrepareFrameStep`  |
 | **MFVP_MESSAGE_STEP** mensaje                                               | `CancelStep`        |
 | [**IMFClockStateSink::OnClockStart**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart)     | `StartFrameStep`    |
 | [**IMFClockStateSink::OnClockRestart**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockrestart) | `StartFrameStep`    |
-| [**Devolución de llamada DE DEvolución de llamada DE DEVOLUCIÓN DE MUESTREOTRACKEDSAMPLE**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample)                         | `CompleteFrameStep` |
+| [**Devolución de llamada DE DEVOLUCIÓN DE LLAMADA DE LA CLASE DESEMPLOTETRACKEDSAMPLE**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample)                         | `CompleteFrameStep` |
 | [**IMFClockStateSink::OnClockStop**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstop)       | `CancelFrameStep`   |
 | [**IMFClockStateSink::OnClockSetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclocksetrate) | `CancelFrameStep`   |
 
@@ -1674,20 +1569,20 @@ Llame a estos procedimientos como se muestra a continuación:
 
 En el siguiente gráfico de flujo se muestran los procedimientos de paso a paso de fotogramas.
 
-![diagrama de flujo que muestra las rutas de acceso que comienzan con el paso de mensaje mfvp y el proceso de mensaje \- \- \- \- mfvpinputnotify y terminan en "state = complete"](images/d9baaa67-a9b1-4e27-9a32-08a45b0677d3.gif)
+![diagrama de flujo que muestra las rutas de acceso que comienzan con el paso de mensaje mfvp y el proceso de \- \- mensaje \- mfvpinputnotify y terminan en \- "state = complete"](images/d9baaa67-a9b1-4e27-9a32-08a45b0677d3.gif)
 
-## <a name="setting-the-presenter-on-the-evr"></a>Establecimiento del presentador en la EVR
+## <a name="setting-the-presenter-on-the-evr"></a>Establecimiento del presentador en el EVR
 
-Después de implementar el presentador, el siguiente paso es configurar la EVR para usarla.
+Después de implementar el presentador, el siguiente paso es configurar el EVR para usarlo.
 
 ### <a name="setting-the-presenter-in-directshow"></a>Establecimiento del presentador en DirectShow
 
-En una aplicación DirectShow, establezca el presentador en la EVR como se muestra a continuación:
+En una DirectShow, establezca el presentador en el EVR como se muestra a continuación:
 
 1.  Cree el filtro EVR mediante una llamada **a CoCreateInstance**. El CLSID es **CLSID_EnhancedVideoRenderer**.
-2.  Agregue la EVR al gráfico de filtro.
+2.  Agregue el EVR al gráfico de filtros.
 3.  Cree una instancia del presentador. El presentador puede admitir la creación de objetos COM estándar a través **de IClassFactory,** pero esto no es obligatorio.
-4.  Consulte el filtro EVR para la [**interfaz DEL REPRESENTADORDEVÍDEOVídeo.**](/windows/desktop/api/evr/nn-evr-imfvideorenderer)
+4.  Consulte el filtro EVR para la [**interfaz DEIVIDEOVideoRenderer.**](/windows/desktop/api/evr/nn-evr-imfvideorenderer)
 5.  Llame [**a IMFVideoRenderer::InitializeRenderer**](/windows/desktop/api/evr/nf-evr-imfvideorenderer-initializerenderer).
 
 ### <a name="setting-the-presenter-in-media-foundation"></a>Establecimiento del presentador en Media Foundation
@@ -1698,17 +1593,17 @@ Para el receptor de medios EVR, haga lo siguiente:
 
 1.  Llame [**a MFCreateVideoRenderer para**](/windows/desktop/api/evr/nc-evr-mfcreatevideorenderer) crear el receptor multimedia.
 2.  Cree una instancia del presentador.
-3.  Consulte el receptor de medios EVR para la [**interfaz DEL REPRESENTADORDEVÍDEOVídeo.**](/windows/desktop/api/evr/nn-evr-imfvideorenderer)
+3.  Consulte el receptor de medios EVR para la [**interfaz DEIVideoRenderer.**](/windows/desktop/api/evr/nn-evr-imfvideorenderer)
 4.  Llame [**a IMFVideoRenderer::InitializeRenderer**](/windows/desktop/api/evr/nf-evr-imfvideorenderer-initializerenderer).
 
 Para el objeto de activación EVR, haga lo siguiente:
 
-1.  Llame [**a MFCreateVideoRendererActivate para**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) crear el objeto de activación.
-2.  Establezca uno de los atributos siguientes en el objeto de activación: 
+1.  Llame [**a MFCreateVideoRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) para crear el objeto de activación.
+2.  Establezca uno de los siguientes atributos en el objeto de activación: 
 
     | Atributo                                                                                                         | Descripción                                                                                                                                                                                                                               |
     |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [**MF_ACTIVATE_CUSTOM_VIDEO_PRESENTER_ACTIVATE**](mf-activate-custom-video-presenter-activate-attribute.md) | Puntero a un objeto de activación para el presentador.<br/> Con esta marca, debe proporcionar un objeto de activación para el presentador. El objeto de activación debe implementar la [**interfaz IMFActivate.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)<br/> |
+    | [**MF_ACTIVATE_CUSTOM_VIDEO_PRESENTER_ACTIVATE**](mf-activate-custom-video-presenter-activate-attribute.md) | Puntero a un objeto de activación para el presentador.<br/> Con esta marca, debe proporcionar un objeto de activación para el presentador. El objeto de activación debe implementar la [**interfaz DEACTIVATE.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)<br/> |
     | [**MF_ACTIVATE_CUSTOM_VIDEO_PRESENTER_CLSID**](mf-activate-custom-video-presenter-clsid-attribute.md)       | CLSID del presentador.<br/> Con esta marca, el presentador debe admitir la creación de objetos COM estándar a través **de IClassFactory.**<br/>                                                                                         |
 
     

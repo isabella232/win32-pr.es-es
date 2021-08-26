@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1RenderTarget CreateRadialGradientBrush (D2d1. h)
+title: Métodos ID2D1RenderTarget CreateRadialGradientBrush (D2d1.h)
 description: Crea un objeto ID2D1RadialGradientBrush que se puede usar para pintar áreas con un degradado radial.
 ms.assetid: 985a4c1b-d29b-46ed-bc55-6dcd313718a8
 keywords:
-- Métodos de CreateRadialGradientBrush Direct2D
+- Métodos CreateRadialGradientBrush de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 680cc981943e45eb32834e48151f391f6249cc1e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b32c384e55f8c6ac17551c290c36e1130c05d5939fd5cf56116410ddac37320f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108825"
 ---
-# <a name="id2d1rendertargetcreateradialgradientbrush-methods"></a>ID2D1RenderTarget:: CreateRadialGradientBrush (métodos)
+# <a name="id2d1rendertargetcreateradialgradientbrush-methods"></a>Métodos ID2D1RenderTarget::CreateRadialGradientBrush
 
-Crea un objeto [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) que se puede usar para pintar áreas con un degradado radial.
+Crea un [**objeto ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) que se puede usar para pintar áreas con un degradado radial.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,15 +29,15 @@ Crea un objeto [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id
 
 | Método                                                                                                                                                                                                                       | Descripción                                                                                                                                                                      |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateRadialGradientBrush (D2D1 \_ \_ \_ propiedades de pincel de degradado radial \_&, ID2D1GradientStopCollection \* , ID2D1RadialGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush))                            | Crea un [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) que contiene los delimitadores de degradado especificados, no tiene ninguna transformación y tiene una opacidad base de 1,0. <br/> |
-| [**CreateRadialGradientBrush (D2D1 \_ \_ propiedades de pincel de degradado radial \_ \_&, \_ propiedades del pincel de D2D1 \_&, ID2D1GradientStopCollection \* , ID2D1RadialGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush))   | Crea un [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) que contiene los delimitadores de degradado especificados y tiene la transformación y la opacidad base especificadas. <br/> |
-| [**CreateRadialGradientBrush ( \_ \_ \_ propiedades del pincel de degradado radial \_ de D2D1 \* , \_ propiedades del pincel de D2D1 \_ \* , ID2D1GradientStopCollection \* , ID2D1RadialGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) | Crea un [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) que contiene los delimitadores de degradado especificados y tiene la transformación y la opacidad base especificadas. <br/> |
+| [**CreateRadialGradientBrush(D2D1 \_ RADIAL GRADIENT BRUSH PROPERTIES \_ \_ \_&,ID2D1GradientStopCollection \* ,ID2D1RadialGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush))                            | Crea un [**objeto ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) que contiene los delimitadores de degradado especificados, no tiene ninguna transformación y tiene una opacidad base de 1,0. <br/> |
+| [**CreateRadialGradientBrush(D2D1 \_ RADIAL GRADIENT BRUSH PROPERTIES \_ \_ \_&,D2D1 \_ BRUSH PROPERTIES \_&,ID2D1GradientStopCollection \* ,ID2D1RadialGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush))   | Crea un [**objeto ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) que contiene los delimitadores de degradado especificados y tiene la transformación y opacidad base especificadas. <br/> |
+| [**CreateRadialGradientBrush(D2D1 \_ RADIAL GRADIENT BRUSH PROPERTIES \_ \_ \_ \* ,D2D1 \_ BRUSH PROPERTIES \_ \* ,ID2D1GradientStopCollection \* ,ID2D1RadialGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) | Crea un [**objeto ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) que contiene los delimitadores de degradado especificados y tiene la transformación y opacidad base especificadas. <br/> |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo, consulte [creación de un pincel de degradado radial](how-to-create-a-radial-gradient-brush.md).
+Para obtener un ejemplo, [vea How to Create a Radial Gradient Brush](how-to-create-a-radial-gradient-brush.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,8 +45,8 @@ Para obtener un ejemplo, consulte [creación de un pincel de degradado radial](h
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

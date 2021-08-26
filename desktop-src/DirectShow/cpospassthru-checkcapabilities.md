@@ -1,7 +1,7 @@
 ---
-description: 'El método CheckCapabilities consulta si un flujo tiene funcionalidades de búsqueda especificadas. Este método implementa el método IMediaSeeking:: CheckCapabilities.'
+description: El método CheckCapabilities consulta si una secuencia ha especificado funcionalidades de búsqueda. Este método implementa el método IMediaSeeking::CheckCapabilities.
 ms.assetid: 48096af6-bbce-4a1f-be9a-fd150ed4536e
-title: Método CPosPassThru. CheckCapabilities (Ctlutil. h)
+title: Método CPosPassThru.CheckCapabilities (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 33f7a685684667d2f5d465b14070a595c70b178c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f1146e11097dbb2d717bd025d414b4510a219cc5f131e2fa7d56687128ddfd98
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108425"
 ---
-# <a name="cpospassthrucheckcapabilities-method"></a>CPosPassThru. CheckCapabilities, método
+# <a name="cpospassthrucheckcapabilities-method"></a>Método CPosPassThru.CheckCapabilities
 
-El `CheckCapabilities` método consulta si un flujo tiene capacidades de búsqueda especificadas. Este método implementa el método [**IMediaSeeking:: CheckCapabilities**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-checkcapabilities) .
+El `CheckCapabilities` método consulta si una secuencia ha especificado funcionalidades de búsqueda. Este método implementa el [**método IMediaSeeking::CheckCapabilities.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-checkcapabilities)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT CheckCapabilities(
 *pCapabilities* 
 </dt> <dd>
 
-Puntero a una combinación bit a bit de uno o más atributos de [**\_ \_ \_ funciones de búsqueda**](/windows/win32/api/strmif/ne-strmif-am_seeking_seeking_capabilities) de búsqueda. Cuando el método devuelve, el valor indica cuál de esos atributos está disponible.
+Puntero a una combinación bit a bit de uno o varios atributos [**DE AM SEEKING SEEKING \_ \_ \_ CAPABILITIES.**](/windows/win32/api/strmif/ne-strmif-am_seeking_seeking_capabilities) Cuando el método vuelve, el valor indica cuál de esos atributos está disponible.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor **HRESULT** del PIN conectado.
+Devuelve el **valor HRESULT** del pin conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> </dl>
 
  

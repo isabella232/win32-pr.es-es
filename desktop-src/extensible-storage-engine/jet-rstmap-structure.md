@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_RSTMAP'
-title: Estructura de JET_RSTMAP
+description: 'Más información sobre: JET_RSTMAP estructura'
+title: JET_RSTMAP estructura
 TOCTitle: JET_RSTMAP Structure
 ms:assetid: bddf95e4-1bd4-4e3a-ad3e-d01f6564e33b
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294077(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 646a055230b6476abf70abcde582fc2015cb241c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e9952c040540e78c76d81babbb4c7b326fe92f8
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809067"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465862"
 ---
-# <a name="jet_rstmap-structure"></a>Estructura de JET_RSTMAP
+# <a name="jet_rstmap-structure"></a>JET_RSTMAP estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_rstmap-structure"></a>Estructura de JET_RSTMAP
+## <a name="jet_rstmap-structure"></a>JET_RSTMAP estructura
 
-La estructura **JET_RSTMAP** habilita la reasignación de las rutas de acceso de archivos de base de datos que se almacenan en los registros de transacciones durante la recuperación, cuando las funciones [JetInit](./jetinit-function.md) y [JetExternalRestore](./jetexternalrestore-function.md) las utilizan. Esto permite que las bases de datos se muevan cuando estén sin conexión o cuando se restauren desde la copia de seguridad.
+La **JET_RSTMAP** permite el remapping de las rutas de acceso de archivo de base de datos que se almacenan en los registros de transacciones durante la recuperación, cuando las usan las funciones [JetInit](./jetinit-function.md) y [JetExternalRestore.](./jetexternalrestore-function.md) Esto permite mover las bases de datos cuando están sin conexión o cuando se restauran desde la copia de seguridad.
 
 ```cpp
     typedef struct {
@@ -42,7 +42,7 @@ La estructura **JET_RSTMAP** habilita la reasignación de las rutas de acceso de
 
 **szDatabaseName**
 
-La ruta de acceso absoluta actual de una base de datos que está asociada a los registros de transacciones que se reproducen durante la recuperación.
+Ruta de acceso absoluta actual de una base de datos asociada a los registros de transacciones que se reproducen durante la recuperación.
 
 **szNewDatabaseName**
 
@@ -50,30 +50,9 @@ Nueva ruta de acceso absoluta para la base de datos.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JET_RSTMAP_W</strong> (Unicode) y <strong>JET_RSTMAP_A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_RSTMAP_W</strong> (Unicode) <strong>y JET_RSTMAP_A</strong> (ANSI).</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

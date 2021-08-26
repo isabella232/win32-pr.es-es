@@ -1,34 +1,34 @@
 ---
-description: Con determinados formatos de archivo, puede guardar varias imágenes (fotogramas) en un solo archivo.
+description: Con determinados formatos de archivo, puede guardar varias imágenes (fotogramas) en un único archivo.
 ms.assetid: 9b61e01d-0a98-4ac3-865e-7570ed0c3cde
 title: Creación y almacenamiento de una imagen de trama múltiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 532a8fc8f8fc7e8742651f3d3853e001d493609b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ecd99bc2d5f21c143b66ccc201f9a96a93f3437516a6fd1cdd03e521a00ceb59
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115125"
 ---
 # <a name="creating-and-saving-a-multiple-frame-image"></a>Creación y almacenamiento de una imagen de trama múltiple
 
-Con determinados formatos de archivo, puede guardar varias imágenes (fotogramas) en un solo archivo. Por ejemplo, puede guardar varias páginas en un solo archivo TIFF. Para guardar la primera página, llame al método [Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) de la clase [**Image**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) . Para guardar las páginas siguientes, llame al método [SaveAdd](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters)) de la clase **Image** .
+Con determinados formatos de archivo, puede guardar varias imágenes (fotogramas) en un único archivo. Por ejemplo, puede guardar varias páginas en un único archivo TIFF. Para guardar la primera página, llame al [método Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) de la [**clase Image.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) Para guardar las páginas posteriores, llame [al método SaveAdd](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters)) de la **clase Image.**
 
 > [!Note]  
-> No se puede usar [SaveAdd](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters)) para agregar fotogramas a un archivo GIF animado.
+> No puede usar [SaveAdd para](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters)) agregar fotogramas a un archivo gif animado.
 
  
 
-La siguiente aplicación de consola crea un archivo TIFF con cuatro páginas. Las imágenes que se convierten en las páginas del archivo TIFF proceden de cuatro archivos de disco: Shapes.bmp, Cereal.gif, Iron.jpg y House.png. Code First construye cuatro objetos [**Image**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) : **multi**, **página2**, **PAGE3** y **page4**. Al principio, **multi** solo contiene la imagen de Shapes.bmp, pero finalmente contiene las cuatro imágenes. A medida que las páginas individuales se agregan al objeto de **varias**  **imágenes** , también se agregan al archivo de disco multiframe. tif.
+La siguiente aplicación de consola crea un archivo TIFF con cuatro páginas. Las imágenes que se convierten en páginas del archivo TIFF proceden de cuatro archivos de disco: Shapes.bmp, Cereal.gif, Iron.jpg y House.png. El código construye primero cuatro objetos [**Image:**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) **multi**, **page2,** **page3** y **page4.** Al principio, **multi** contiene solo la imagen de Shapes.bmp, pero finalmente contiene las cuatro imágenes. A medida que las páginas individuales se agregan al objeto **de**  **varias** imágenes, también se agregan al archivo de disco Multiframe.tif.
 
-Tenga en cuenta que el código llama a [Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) (no a [SaveAdd](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters))) para guardar la primera página. El primer argumento que se pasa al método Save es el nombre del archivo de disco que finalmente contendrá varios fotogramas. El segundo argumento que se pasa al método Save especifica el codificador que se utilizará para convertir los datos del objeto de **varias**  [**imágenes**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) en el formato (en este caso, TIFF) que requiere el archivo de disco. El mismo codificador se usa automáticamente en todas las llamadas subsiguientes al método SaveAdd del objeto de **varias**  **imágenes** .
+Tenga en cuenta que el código [llama a Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) (no a [SaveAdd)](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters))para guardar la primera página. El primer argumento pasado al método Save es el nombre del archivo de disco que con el tiempo contendrá varios fotogramas. El segundo argumento pasado al método Save especifica el codificador que se usará para convertir los datos del objeto **multi**  [**image**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) al formato (en este caso TIFF) requerido por el archivo de disco. Todas las llamadas posteriores al método SaveAdd del **objeto multi** Image usan automáticamente ese **mismo** codificador.  
 
-El tercer argumento que se pasa al método [Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) es la dirección de un objeto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) . El objeto **EncoderParameters** tiene una matriz que contiene un único objeto [**EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) . El miembro **GUID** de ese objeto **EncoderParameter** se establece en EncoderSaveFlag. El miembro **Value** del objeto **EncoderParameter** apunta a un **ULong** que contiene el valor EncoderValueMultiFrame.
+El tercer argumento pasado al [método Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) es la dirección de un [**objeto EncoderParameters.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) El **objeto EncoderParameters** tiene una matriz que contiene un único [**objeto EncoderParameter.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) El **miembro GUID** de ese objeto **EncoderParameter** se establece en EncoderSaveFlag. El **miembro Value** del objeto **EncoderParameter** apunta a **un ULONG** que contiene el valor EncoderValueMultiFrame.
 
-El código guarda las páginas segunda, tercera y cuarta llamando al método [SaveAdd](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters)) del objeto de **varias**  [**imágenes**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) . El primer argumento que se pasa al método SaveAdd es la dirección de un objeto de **imagen** . La imagen de ese objeto de **imagen** se agrega al objeto de **varias**  **imágenes** y también se agrega al archivo de disco multiframe. tif. El segundo argumento que se pasa al método SaveAdd es la dirección del mismo objeto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) que usó el método [Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) . La diferencia es que el **ULong** al que apunta el miembro de **valor** contiene ahora el valor EncoderValueFrameDimensionPage.
+El código guarda la segunda, tercera y cuarta página llamando al [método SaveAdd](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters)) del **objeto multi**[**Image.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image)   El primer argumento pasado al método SaveAdd es la dirección de un **objeto Image.** La imagen de ese **objeto Image** se agrega al objeto **de** imagen múltiple y también se agrega al archivo de disco Multiframe.tif.   El segundo argumento pasado al método SaveAdd es la dirección del mismo objeto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) que usó [el método Save.](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) La diferencia es que el **ULONG** al que apunta el **miembro Value** ahora contiene el valor EncoderValueFrameDimensionPage.
 
-La función Main se basa en la función auxiliar GetEncoderClsid, que se muestra en [recuperar el identificador de clase de un codificador](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md).
+La función main se basa en la función auxiliar GetEncoderClsid, que se muestra en [Recuperación](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md)del identificador de clase para un codificador .
 
 
 ```

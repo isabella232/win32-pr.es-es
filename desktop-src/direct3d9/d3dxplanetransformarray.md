@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bdbc845eda69d22f6e7097131f71b074a9b53985
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f7df8e49850917413f2d6e80a13d62f9d3289caa2d0eb089593fb946070d0456
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119042"
 ---
 # <a name="d3dxplanetransformarray-function-d3dx9mathh"></a>Función D3DXPlaneTransformArray (D3dx9math.h)
 
-Transforma una matriz de planos por una matriz. Los vectores que describen cada plano deben normalizarse.
+Transforma una matriz de planos mediante una matriz. Los vectores que describen cada plano deben normalizarse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ Puntero a la [**estructura D3DXPLANE**](d3dxplane.md) que contiene el plano tran
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-El paso de cada plano transformado.
+Paso de cada plano transformado.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ D3DXPlaneTransformArray( &planeNew, sizeof (D3DXPLANE), &plane,
 
 
 
-Un plano se describe mediante ax + by + dw + dw = 0. El primer plano se crea con (a,b,c,d) = (0,1,1,0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), que muestra el nuevo plano descrito por 0,353y + 0,235z = 0.
+Un plano se describe por ax + by + dw + dw = 0. El primer plano se crea con (a,b,c,d) = (0,1,1,0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), que muestra el nuevo plano descrito por 0,353y + 0,235z = 0.
 
 El parámetro *pM contiene* la transpuesta inversa de la matriz de transformación. Este método requiere la transponer inversa para que el vector normal del plano transformado también se pueda transformar correctamente.
 
@@ -146,7 +146,7 @@ El parámetro *pM contiene* la transpuesta inversa de la matriz de transformaci�
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

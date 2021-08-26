@@ -1,7 +1,7 @@
 ---
 title: D1108 Error de fábrica
 ms.assetid: eb851118-0541-4c9a-a22d-b98f041852bb
-description: La fábrica 1 asignó el recurso y se usó con la factoría 2.
+description: La fábrica 1 asignó el recurso y se usó con la fábrica 2.
 keywords:
 - D1108 Wrong Factory Direct2D
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: c9eeadfb38acd39e5861c5661e2f4117ef2a8ce415e3e21374f197763d4b315e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20021472467d7861aa2b9cabd5602b5a167f20ab
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118160996"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622161"
 ---
 # <a name="d1108-wrong-factory"></a>D1108: Fábrica incorrecta
 
@@ -100,7 +100,7 @@ En el ejemplo siguiente se crean primero dos objetos [**ID2D1Factory**](/windows
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -123,7 +123,7 @@ En el ejemplo siguiente se crean primero dos objetos [**ID2D1Factory**](/windows
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -147,7 +147,7 @@ En el ejemplo siguiente se crean primero dos objetos [**ID2D1Factory**](/windows
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

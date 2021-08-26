@@ -4,12 +4,12 @@ description: Aprenda a configurar el suplicante habilitando la directiva de grup
 ms.assetid: ac04b83b-1322-41d4-85e0-93687f10a7f6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b2a388bf8dba155e42d5542c1379f7b0cc34d44579b92809387541d7e20cf65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97a36d2d464ef4f29c1f021f5ee7d1fad4d820e5
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118785004"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812721"
 ---
 # <a name="enabling-group-policy"></a>Habilitar directiva de grupo
 
@@ -25,8 +25,8 @@ Estas son las consideraciones para los suplicadores con respecto a la directiva 
 
     Para obtener más información, vea los temas siguientes:
 
-    -   [Preguntas generales más frecuentes](general-frequently-asked-questions.md)
-    -   [Preguntas más frecuentes sobre el método EAP](eap-method-frequently-asked-questions.md).
+    -   [Preguntas generales más frecuentes](general-frequently-asked-questions.yml)
+    -   [Preguntas más frecuentes sobre el método EAP](eap-method-frequently-asked-questions.yml).
     -   [**EapHostPeerConfigXml2Blob**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerconfigxml2blob)
     -   [**EapHostPeerCredentialsXml2Blob**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeercredentialsxml2blob)
 

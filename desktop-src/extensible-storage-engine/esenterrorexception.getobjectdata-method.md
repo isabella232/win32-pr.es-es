@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentErrorException. GetObjectData (método)'
-title: EsentErrorException. GetObjectData (método)
+description: 'Más información sobre: Método EsentErrorException.GetObjectData'
+title: Método EsentErrorException.GetObjectData
 TOCTitle: 'GetObjectData method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentErrorException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenterrorexception.getobjectdata(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 86d951828da0f8bb8eb3ada13bb67b02e801709e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ff4588429d5b45690763c3f4eefd3553f88f480
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707391"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476668"
 ---
-# <a name="esenterrorexceptiongetobjectdata-method"></a>EsentErrorException. GetObjectData (método)
+# <a name="esenterrorexceptiongetobjectdata-method"></a>Método EsentErrorException.GetObjectData
 
-Cuando se reemplaza en una clase derivada, establece [SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo) con información sobre la excepción.
+Cuando se invalida en una clase derivada, establece [SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo) con información sobre la excepción.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,45 +64,32 @@ public override void GetObjectData(
 #### <a name="parameters"></a>Parámetros
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
-    [SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo) que contiene los datos serializados del objeto sobre la excepción que se va a producir.
+    [SerializationInfo que](/dotnet/api/system.runtime.serialization.serializationinfo) contiene los datos del objeto serializado sobre la excepción que se está iniciando.
 
 <!-- end list -->
 
   - context  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
-    [StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext) que contiene información contextual sobre el origen o el destino.
+    [StreamingContext que](/dotnet/api/system.runtime.serialization.streamingcontext) contiene información contextual sobre el origen o el destino.
 
 #### <a name="implements"></a>Implementaciones
 
-[ISerializable. GetObjectData (SerializationInfo, StreamingContext)](/dotnet/api/system.runtime.serialization.iserializable.getobjectdata#System_Runtime_Serialization_ISerializable_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_)  
-[_Exception. GetObjectData (SerializationInfo, StreamingContext)](/dotnet/api/system.runtime.interopservices._exception.getobjectdata#System_Runtime_InteropServices__Exception_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_)  
+[ISerializable.GetObjectData(SerializationInfo, StreamingContext)](/dotnet/api/system.runtime.serialization.iserializable.getobjectdata#System_Runtime_Serialization_ISerializable_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_)  
+[_Exception.GetObjectData(SerializationInfo, StreamingContext)](/dotnet/api/system.runtime.interopservices._exception.getobjectdata#System_Runtime_InteropServices__Exception_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_)  
 
 ## <a name="exceptions"></a>Excepciones
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Excepción</th>
-<th>Condición</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-<td><p>El parámetro info es una referencia null (Nothing en Visual Basic).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Excepción | Condición | 
+|-----------|-----------|
+| <a href="/dotnet/api/system.argumentnullexception">ArgumentNullException</a> | <p>El parámetro info es una referencia null (Nothing en Visual Basic).</p> | 
 
 
-## <a name="see-also"></a>Vea también
+
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -110,4 +97,4 @@ public override void GetObjectData(
 
 [Miembros de EsentErrorException](./esenterrorexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

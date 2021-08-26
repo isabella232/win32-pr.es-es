@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 87c8c93e70950aca360e4aa9bad62b8280611c6713156dec80e4d11414f346d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac1a6aba2eda729c3e705cf5acdda837c2670564
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118978605"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472451"
 ---
 # <a name="resource-parameters"></a>Parámetros de recursos
 
@@ -38,58 +38,9 @@ Este parámetro controla el número de recursos de árbol B+ almacenados en cach
 
 Los valores grandes para este parámetro harán que el motor de base de datos use más memoria, pero aumentará la velocidad con la que la aplicación puede abrir aleatoriamente un gran número de tablas. Esto es útil para las aplicaciones que tienen un esquema con un número muy grande de tablas.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>64</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>1 – 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows Vista y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>64</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>1 – 2147483647</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>Sí</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>Windows Vista y versiones posteriores</p> | 
+
 
 
 *JET_paramDisablePerfmon*  
@@ -97,58 +48,9 @@ Los valores grandes para este parámetro harán que el motor de base de datos us
 
 Este parámetro se puede usar para evitar que el motor de base de datos publique datos sobre su rendimiento en Windows. Esto puede hacerse para reducir la actividad de subprocesos de servicio del motor de base de datos.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>Falso</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Boolean</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>False, True</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows Vista y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>Falso</p> | | <p>Escriba:</p> | <p>Boolean</p> | | <p>Intervalo válido:</p> | <p>False, True</p> | | <p>Ámbito:</p> | <p>Global</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>No</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>Windows Vista y versiones posteriores</p> | 
+
 
 
 *JET_paramGlobalMinVerPages*  
@@ -160,58 +62,9 @@ Este parámetro permite a las aplicaciones que operan en modo de instancias múl
 
 **Windows XP:**  A Windows XP, esto sigue siendo así cuando se encuentra en modo de instancia única. Sin embargo, la memoria de la página de versión se asigna dinámicamente en modo de varias instancias.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>64</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>1 – 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows XP y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>64</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>1 – 2147483647</p> | | <p>Ámbito:</p> | <p>Global</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>No</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>Sí</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>Windows XP y versiones posteriores</p> | 
+
 
 
 *JET_paramMaxCursors*  
@@ -221,58 +74,9 @@ Este parámetro reserva el número solicitado de recursos de cursor para que lo 
 
 **Windows 2000, Windows XP y Windows Server 2003:**  Los valores grandes para este parámetro consumirán espacio de direcciones y pueden aumentar el uso de memoria.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>1024</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>0 – 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Todo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>1024</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>0 – 2147483647</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>All</p> | 
+
 
 
 *JET_paramMaxInstances*  
@@ -280,58 +84,9 @@ Este parámetro reserva el número solicitado de recursos de cursor para que lo 
 
 Este parámetro controla el número máximo de instancias que se pueden crear en un único proceso.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>16</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>1-1024</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows XP y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>16</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>1-1024</p> | | <p>Ámbito:</p> | <p>Global</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>No</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>Sí</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>Windows XP y versiones posteriores</p> | 
+
 
 
 *JET_paramMaxOpenTables*  
@@ -343,58 +98,9 @@ En general, necesitará dos recursos más un recurso por índice secundario por 
 
 **Windows 2000, Windows XP y Windows Server 2003:**  Los valores grandes para este parámetro consumirán espacio de direcciones y pueden aumentar el uso de memoria.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>300</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>0 – 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Todo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>300</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>0 – 2147483647</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>All</p> | 
+
 
 
 *JET_paramMaxSessions*  
@@ -404,58 +110,9 @@ Este parámetro reserva el número solicitado de recursos de sesión para que lo
 
 **Windows 2000, Windows XP y Windows Server 2003:**  Los valores grandes para este parámetro consumirán espacio de direcciones y pueden aumentar el uso de memoria.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>16</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>0 – 30000</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Todo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>16</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>0 – 30000</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>All</p> | 
+
 
 
 *JET_paramMaxTemporaryTables*  
@@ -469,58 +126,9 @@ Este parámetro reserva el número solicitado de recursos de tabla temporal para
 
 **Nota**  El uso de una tabla temporal también requiere un recurso de cursor.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>20</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>0 – 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Todo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>20</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>0 – 2147483647</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>Sí</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>All</p> | 
+
 
 
 *JET_paramMaxVerPages*  
@@ -530,123 +138,25 @@ Este parámetro reserva el número solicitado de páginas del almacén de versio
 
 Cada página del almacén de versiones configurada por este parámetro tiene un tamaño de 16 KB en máquinas de 32 bits y de 32 KB en máquinas de 64 bits.
 
-**Windows Vista y versiones posteriores:**  El tamaño de página del almacén de versiones se puede leer y cambiar a través de JET_paramVerPageSize.
+**Windows Vista y versiones posteriores:**  El tamaño de página del almacén de versiones se puede leer y cambiar mediante JET_paramVerPageSize.
 
 **Windows 2000, Windows XP y Windows Server 2003:**  Los valores grandes para este parámetro consumirán espacio de direcciones y pueden aumentar el uso de memoria.
 
 **Nota**  Este es, con diferencia, el recurso más común que agota el motor de base de datos. Se debe prestar mucha atención a la configuración del parámetro del sistema y a la carga transaccional de la aplicación para evitar agotar este recurso con un funcionamiento normal. Cuando se agote este recurso, las actualizaciones de la base de datos se rechazarán con JET_errVersionStoreOutOfMemory. Para liberar algunos de estos recursos, se debe anular la transacción pendiente más antigua.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>64</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>1 – 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Todo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>64</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>1 – 2147483647</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>Sí</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>Todo</p> | 
+
 
 
 *JET_paramPageHintCacheSize*  
 101  
 
-Este parámetro controla el tamaño de una caché especial que se usa para acelerar la búsqueda de punteros a páginas secundarias del árbol B+ en la memoria caché de páginas de la base de datos. El tamaño de la memoria caché está en bytes.
+Este parámetro controla el tamaño de una caché especial que se usa para acelerar la búsqueda de punteros a páginas secundarias del árbol B+ en la caché de páginas de la base de datos. El tamaño de la memoria caché está en bytes.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>262 144</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>0 – 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows XP y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>262 144</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>0 – 2147483647</p> | | <p>Ámbito:</p> | <p>Global</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>Sí</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>Sí</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>Windows XP y versiones posteriores</p> | 
+
 
 
 *JET_paramPreferredMaxOpenTables*  
@@ -654,68 +164,19 @@ Este parámetro controla el tamaño de una caché especial que se usa para acele
 
 Este parámetro intenta mantener el número de recursos de árbol B+ en uso por debajo del umbral especificado.
 
-Si este parámetro se establece en cero, se establecerá de forma predeterminada en el 100 % **JET_paramMaxOpenTables**.
+Si este parámetro se establece en cero, el valor predeterminado será el 100 % **JET_paramMaxOpenTables**.
 
 **Windows Vista y versiones posteriores:**  Este parámetro está obsoleto y no afecta al funcionamiento del motor de base de datos. Las aplicaciones deben usar JET_paramMaxCachedClosedTables en su lugar.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>0 (100 % de <strong>JET_paramMaxOpenTables</strong>)</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>0 – 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Todo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>0 (100 % de <strong>JET_paramMaxOpenTables</strong>)</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>0 – 2147483647</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>Sí</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>Todo</p> | 
+
 
 
 *JET_paramPreferredVerPages*  
 63  
 
-Este parámetro representa un umbral relativo a JET_paramMaxVerPages **que** controla el uso discrecional de páginas de versión por parte del motor de base de datos. Si el tamaño del almacén de versiones supera este umbral, cualquier información que solo se utilice para tareas en segundo plano opcionales, como reclamar espacio eliminado en la base de datos, se sacrificará en su lugar para conservar espacio para la información transaccional.
+Este parámetro representa un umbral relativo a JET_paramMaxVerPages **que** controla el uso discrecional de páginas de versión por parte del motor de base de datos. Si el tamaño del almacén de versiones supera este umbral, cualquier información que solo se utilice para tareas en segundo plano opcionales, como reclamar el espacio eliminado en la base de datos, se sacrificará en su lugar para conservar espacio para la información transaccional.
 
 **Windows 2000, Windows XP y Windows Server 2003:**  Establecer este parámetro en cero establecería el umbral en el 90 % **de JET_paramMaxVerPages**.
 
@@ -723,63 +184,13 @@ Este parámetro representa un umbral relativo a JET_paramMaxVerPages **que** con
 
 Cada página del almacén de versiones configurada por este parámetro tiene un tamaño de 16 KB en máquinas de 32 bits y de 32 KB en máquinas de 64 bits.
 
-**Windows Vista y versiones posteriores:**  El tamaño de página del almacén de versiones se puede leer y cambiar a través de JET_paramVerPageSize.
+**Windows Vista y versiones posteriores:**  El tamaño de página del almacén de versiones se puede leer y cambiar a través JET_paramVerPageSize.
 
 **Nota**  Si el motor de base de datos funciona por encima de este umbral con demasiada frecuencia, es posible que la base de datos se degrade en rendimiento. Esto sucede porque los procesos en segundo plano que limpian la base de datos no pueden funcionar sin la información opcional que se descarta en este escenario. La desfragmentación en línea o sin conexión contrarresta este efecto.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p><strong>Windows 2000, Windows XP y Windows Server 2003:</strong> 0 (90 % de JET_paramMaxVerPages)</p>
-<p><strong>Windows Vista:</strong> 58</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>1 – 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Todo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p><strong>Windows 2000, Windows XP y Windows Server 2003:</strong> 0 (90 % de JET_paramMaxVerPages)</p><p><strong>Windows Vista:</strong> 58</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>1 – 2147483647</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>Sí</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>Sí</p> | | <p>Afecta al rendimiento:</p> | <p>Sí</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>All</p> | 
+
 
 
 *JET_paramVerPageSize*  
@@ -789,58 +200,9 @@ Este parámetro controla el tamaño de las páginas del almacén de versiones ut
 
 El motor de base de datos puede optar por usar un tamaño de página de almacén de versiones mayor que el solicitado.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>16384</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>1024, 2048, 4096, 8192, 16384, 32768, 65536</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows Vista y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>16384</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>1024, 2048, 4096, 8192, 16384, 32768, 65536</p> | | <p>Ámbito:</p> | <p>Global</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>No</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>Windows Vista y versiones posteriores</p> | 
+
 
 
 *JET_paramVersionStoreTaskQueueMax*  
@@ -848,84 +210,16 @@ El motor de base de datos puede optar por usar un tamaño de página de almacén
 
 Este parámetro controla el número de elementos de trabajo de limpieza en segundo plano que se pueden poner en cola en el grupo de subprocesos del motor de base de datos en cualquier momento.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>32</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows XP y Windows Server 2003:</strong> 1 – 63</p>
-<p><strong>Windows Vista:</strong> 1 – 127</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p><strong>Windows XP y Windows Server 2003:</strong>  No</p>
-<p><strong>Windows Vista:</strong>  Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows XP y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>32</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p><strong>Windows XP y Windows Server 2003:</strong> 1 – 63</p><p><strong>Windows Vista:</strong> 1 – 127</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p><strong>Windows XP y Windows Server 2003:</strong>  No</p><p><strong>Windows Vista:</strong>  Sí</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>Sí</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>Windows XP y versiones posteriores</p> | 
+
 
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

@@ -4,12 +4,12 @@ ms.assetid: d9cd7388-3413-472d-aacb-0b8c9c60031a
 title: D3DCAPS3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1389427826d65875bf89c42dd8e12776549da7f80f741e8de421b25c077026d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 706b2f5644b45179f9367aa26be11160e06df517
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117911538"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622151"
 ---
 # <a name="d3dcaps3"></a>D3DCAPS3
 
@@ -19,14 +19,14 @@ Marcas de funcionalidad del controlador.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
 <td>#Definir</td>
-<td>Valor</td>
+<td>Value</td>
 <td>Descripción</td>
 </tr>
 <tr class="even">

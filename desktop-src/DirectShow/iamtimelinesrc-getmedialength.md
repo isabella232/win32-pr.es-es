@@ -1,7 +1,7 @@
 ---
 description: El método GetMediaLength recupera la longitud del medio de este objeto de origen.
 ms.assetid: 70298d8f-67e7-4774-a7ae-f0b48e4afda7
-title: 'IAMTimelineSrc:: GetMediaLength (método) (QEDIT. h)'
+title: Método IAMTimelineSrc::GetMediaLength (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 5cd896ed0890a199f85838a01c4c6ebec6d0895d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72aeb68b3b3f9b31dc9ba00b2ffe8d82e2df8f8c5271abffcbd7737fa65203ca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131185"
 ---
-# <a name="iamtimelinesrcgetmedialength-method"></a>IAMTimelineSrc:: GetMediaLength (método)
+# <a name="iamtimelinesrcgetmedialength-method"></a>IamTimelineSrc::GetMediaLength (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -48,35 +48,35 @@ HRESULT GetMediaLength(
 *pLength* 
 </dt> <dd>
 
-Recibe la longitud del medio en unidades de 100-nanosegundos.
+Recibe la longitud del medio en unidades de 100 nanosegundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los siguientes valores **HRESULT** :
+Devuelve uno de los siguientes **valores HRESULT:**
 
 
 
 | Código devuelto                                                                                     | Descripción                                        |
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>            | Correcto.<br/>                                |
-| <dl> <dt>**E \_ NOTDETERMINED**</dt> </dl> | Los tiempos de los medios no se establecen en este objeto.<br/> |
-| <dl> <dt>**\_puntero E**</dt> </dl>       | Argumento de puntero **nulo** .<br/>              |
+| <dl> <dt>**S \_ OK**</dt> </dl>            | Correcto.<br/>                                |
+| <dl> <dt>**E \_ NOTDETERMINED**</dt> </dl> | Los tiempos de medios no se establecen en este objeto.<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>       | **Argumento de** puntero NULL.<br/>              |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -86,8 +86,8 @@ Devuelve uno de los siguientes valores **HRESULT** :
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ Devuelve uno de los siguientes valores **HRESULT** :
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineSrc**](iamtimelinesrc.md)
+[**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
 [**IAMTimelineSrc::SetMediaLength**](iamtimelinesrc-setmedialength.md)

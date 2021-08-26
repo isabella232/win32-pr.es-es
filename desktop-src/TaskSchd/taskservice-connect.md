@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4da8fb2aed018eab9880ab6c8a6bed310e6d89bb293d52efc5d6ac6d8baf190
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e8d9491fb66d8e79b18efed363d4eb4f21bc6c5
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119059743"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472351"
 ---
 # <a name="taskserviceconnect-method"></a>TaskService. Conectar método
 
@@ -81,49 +81,19 @@ Este método no devuelve ningún valor.
 
 Se **debe llamar al Conectar TaskService.Conectar** antes de llamar a cualquiera de los otros [**métodos TaskService.**](taskservice.md)
 
-Si se produce Conectar método , puede recopilar el identificador de error para encontrar el significado del error. En la tabla siguiente se enumeran los identificadores de error y sus descripciones.
+Si se produce Conectar error en el método , puede recopilar el identificador de error para encontrar el significado del error. En la tabla siguiente se enumeran los identificadores de error y sus descripciones.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Identificador de error</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0x80070005</td>
-<td>Se deniega el acceso para conectarse al Programador de tareas servicio.</td>
-</tr>
-<tr class="even">
-<td>0x80041315</td>
-<td>El Programador de tareas no se está ejecutando.</td>
-</tr>
-<tr class="odd">
-<td>0x8007000e</td>
-<td>La aplicación no tiene suficiente memoria para completar <em></em>la <em></em> operación o el usuario <em>,</em>la contraseña o el dominio tienen al menos un valor NULL y un valor distinto de NULL.</td>
-</tr>
-<tr class="even">
-<td>53</td>
-<td>Este error se devuelve en las situaciones siguientes:
-<ul>
-<li>El nombre de equipo especificado en el <em>parámetro serverName</em> no existe.</li>
-<li>Cuando intenta conectarse a un equipo de Windows Server 2003 o Windows XP, y el equipo remoto no tiene habilitada la excepción de firewall Uso compartido de archivos e impresoras o el servicio registro remoto no se está ejecutando.</li>
-<li>Cuando intenta conectarse a un equipo de Windows Vista, y el equipo remoto no tiene habilitada la excepción de firewall Administración de tareas programadas remotas y la excepción de firewall Uso compartido de archivos e impresoras habilitada, o el servicio Registro remoto no se está ejecutando.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>50</td>
-<td>Los <em>parámetros</em> <em>de</em> <em></em> usuario, contraseña o dominio no se pueden especificar al conectarse a un equipo remoto de Windows XP o Windows Server 2003 desde un equipo Windows Vista.</td>
-</tr>
-</tbody>
-</table>
+
+| Identificador de error | Descripción | 
+|------------------|-------------|
+| 0x80070005 | Se deniega el acceso para conectarse al Programador de tareas servicio. | 
+| 0x80041315 | El Programador de tareas no se está ejecutando. | 
+| 0x8007000e | La aplicación no tiene suficiente memoria para completar <em></em>la <em></em> operación o el usuario <em>,</em>la contraseña o el dominio tienen al menos un valor NULL y un valor distinto de NULL. | 
+| 53 | Este error se devuelve en las situaciones siguientes:<ul><li>El nombre de equipo especificado en el <em>parámetro serverName</em> no existe.</li><li>Cuando intenta conectarse a un equipo de Windows Server 2003 o Windows XP, y el equipo remoto no tiene habilitada la excepción de firewall Uso compartido de archivos e impresoras o el servicio Registro remoto no se está ejecutando.</li><li>Cuando intenta conectarse a un equipo de Windows Vista, y el equipo remoto no tiene habilitada la excepción de firewall Administración de tareas programadas remotas y la excepción de firewall Uso compartido de archivos e impresoras habilitada, o el servicio Registro remoto no se está ejecutando.</li></ul> | 
+| 50 | Los <em>parámetros</em> <em>de</em> <em></em> usuario , contraseña o dominio no se pueden especificar al conectarse a un equipo Windows XP o Windows Server 2003 desde un equipo Windows Vista. | 
+
 
 
 
