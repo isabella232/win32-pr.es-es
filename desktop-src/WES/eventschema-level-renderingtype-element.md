@@ -1,9 +1,9 @@
 ---
-title: Elemento LEVEL (RenderingInfoType)
-description: Cadena de mensaje representada del nivel especificado en el evento.
+title: Elemento Level (RenderingInfoType)
+description: Cadena de mensaje representado del nivel especificado en el evento.
 ms.assetid: 68584df8-989d-4f53-9f5c-11a4e1e5524b
 keywords:
-- Elemento de nivel EventLog
+- Elemento Level EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 42d10818b3edabc85492029c2a82819777f5cfa1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 254a51779c14e481c370030a565ce22a858106d6616e877b537a67262aacd9f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904675"
 ---
-# <a name="level-renderinginfotype-element"></a>Elemento LEVEL (RenderingInfoType)
+# <a name="level-renderinginfotype-element"></a>Elemento Level (RenderingInfoType)
 
-Cadena de mensaje representada del nivel especificado en el evento.
+Cadena de mensaje representado del nivel especificado en el evento.
 
 ``` syntax
 <xs:element name="Level"
@@ -30,7 +30,7 @@ Cadena de mensaje representada del nivel especificado en el evento.
  />
 ```
 
-El elemento **LEVEL** se define mediante el tipo complejo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+El tipo complejo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) define el elemento **Level.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **LEVEL** se define mediante el tipo complejo [**RenderingInfoType**
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

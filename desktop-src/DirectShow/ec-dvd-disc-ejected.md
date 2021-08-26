@@ -1,7 +1,7 @@
 ---
-description: Indica que se ha expulsado un disco DVD.
+description: Indica que se expulsó un disco de DVD.
 ms.assetid: 031156c2-f0f0-4a9e-b792-4d656ec49aef
-title: EC_DVD_DISC_EJECTED (Dvdevcode. h)
+title: EC_DVD_DISC_EJECTED (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: ab6c1333245b589d4f13bafcba89eada3ef98ab0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba262ca68ce9d76e9963fb54c325e9b7ba4dcf8352c9ede13c652bf0059e794a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965745"
 ---
-# <a name="ec_dvd_disc_ejected"></a>\_disco DVD de EC \_ \_ expulsado
+# <a name="ec_dvd_disc_ejected"></a>DISCO \_ DE DVD EC \_ \_ EXPULSADA
 
-Indica que se ha expulsado un disco DVD.
+Indica que se expulsó un disco de DVD.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -42,11 +42,11 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La reproducción se detiene automáticamente cuando se expulsa un disco. La aplicación no tiene que realizar ninguna acción especial en respuesta a este evento.
 
-Este evento se desencadena en todos los dominios.
+Este evento se genera en todos los dominios.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Este evento se desencadena en todos los dominios.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

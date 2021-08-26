@@ -1,9 +1,9 @@
 ---
-title: Elemento Provider (RenderingInfoType)
-description: Cadena de mensaje representada para el proveedor.
+title: Provider (RenderingInfoType) (Elemento)
+description: Cadena de mensaje representado para el proveedor.
 ms.assetid: ee50b96b-35a7-4e5d-b9bf-700204627000
 keywords:
-- EventLog (elemento del proveedor)
+- Elemento Provider EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5927fa3cf7a1ed397d1a8daa03f38a812372b6ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d545ee6a1038902f7a4f48f61e06235b9938fe590e9cdc2408b51ec4a9216048
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904405"
 ---
-# <a name="provider-renderinginfotype-element"></a>Elemento Provider (RenderingInfoType)
+# <a name="provider-renderinginfotype-element"></a>Provider (RenderingInfoType) (Elemento)
 
-Cadena de mensaje representada para el proveedor.
+Cadena de mensaje representado para el proveedor.
 
 ``` syntax
 <xs:element name="Provider"
@@ -30,7 +30,7 @@ Cadena de mensaje representada para el proveedor.
  />
 ```
 
-El elemento de **proveedor** se define mediante el tipo complejo de [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+El **tipo** complejo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) define el elemento Provider.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento de **proveedor** se define mediante el tipo complejo de [**Rendering
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETMAXSIZE (commctrl. h)
+title: TB_GETMAXSIZE mensaje (Commctrl.h)
 description: Recupera el tamaño total de todos los botones y separadores visibles en la barra de herramientas.
 ms.assetid: 560e6ce2-00ef-46c3-b1d8-fbe0ac79c888
 keywords:
-- TB_GETMAXSIZE controles de mensajes de Windows
+- TB_GETMAXSIZE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4829e65d90c04181369dd73b9c54634f1077144
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 511d5726f117bbda183f55af5570fb75c2df3c78f5f6132dcefb406ee8fa7b70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918685"
 ---
-# <a name="tb_getmaxsize-message"></a>\_Mensaje GETMAXSIZE TB
+# <a name="tb_getmaxsize-message"></a>Mensaje \_ DE TB GETMAXSIZE
 
 Recupera el tamaño total de todos los botones y separadores visibles en la barra de herramientas.
 
@@ -35,13 +35,13 @@ Recupera el tamaño total de todos los botones y separadores visibles en la barr
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura de [**tamaño**](/previous-versions//dd145106(v=vs.85)) que recibe el tamaño de los elementos.
+Puntero a una [**estructura SIZE**](/previous-versions//dd145106(v=vs.85)) que recibe el tamaño de los elementos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

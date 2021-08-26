@@ -1,17 +1,17 @@
 ---
 description: Especifica el ancho del rectángulo de destino, en píxeles.
 ms.assetid: 8f0066ca-c464-480d-b38f-3c1134fc51b7
-title: Propiedad MFPKEY_RESIZE_DST_WIDTH (Wmcodecdsp. h)
+title: MFPKEY_RESIZE_DST_WIDTH propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1837de9180fd20a7fea5921bfa08bc2adfc35a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e3da156b3c7b9ae698c5b189cfd35cde501fb956b093a2a312add3cec52674d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887665"
 ---
-# <a name="mfpkey_resize_dst_width-property"></a>MFPKEY \_ propiedad de \_ ancho de DST de cambio de tamaño \_
+# <a name="mfpkey_resize_dst_width-property"></a>Propiedad MFPKEY \_ RESIZE \_ DST \_ WIDTH
 
 Especifica el ancho del rectángulo de destino, en píxeles.
 
@@ -25,7 +25,7 @@ VT \_ I4
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Vídeo de tamaño DSP](videoresizer.md)
+-   [DSP de cambio de tamaño de vídeo](videoresizer.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ VT \_ I4
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

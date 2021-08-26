@@ -1,5 +1,5 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de devolución de solicitud de finalización de controlador. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de devolución de solicitud completa del controlador. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 04505f8c-a11e-4bf7-91c0-fca1b5846d80
 title: Clase DriverCompleteRequestReturn
 ms.topic: reference
@@ -14,18 +14,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c147573578e067b7fb1b588545a1d9f231e35f3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be19cd1a4b8f7cf4957d08f9ccebf01c5e8646ade06cce9708e645c1a7ea2a5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901215"
 ---
 # <a name="drivercompleterequestreturn-class"></a>Clase DriverCompleteRequestReturn
 
-Esta clase es la clase de tipo de evento para los eventos de devolución de solicitud de finalización de controlador.
+Esta clase es la clase de tipo de evento para los eventos de devolución de solicitud completa del controlador.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,45 +40,45 @@ class DriverCompleteRequestReturn : DiskIo
 
 ## <a name="members"></a>Miembros
 
-La clase **DriverCompleteRequestReturn** tiene estos tipos de miembros:
+La **clase DriverCompleteRequestReturn** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **DriverCompleteRequestReturn** tiene estas propiedades.
+La **clase DriverCompleteRequestReturn** tiene estas propiedades.
 
 <dl> <dt>
 
-**IRP**
+**Irp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Paquete de solicitud de e/s.
+Paquete de solicitud de E/S.
 
 </dd> <dt>
 
 **UniqMatchId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
-Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los otros eventos del controlador, por ejemplo, el evento [**DriverCompleteRequest**](drivercompleterequest.md) .
+Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los demás eventos de controlador, por ejemplo, [**el evento DriverCompleteRequest.**](drivercompleterequest.md)
 
 </dd> </dl>
 
@@ -88,8 +88,8 @@ Identificador que identifica de forma única la solicitud. Use este identificado
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -97,7 +97,7 @@ Identificador que identifica de forma única la solicitud. Use este identificado
 
 <dl> <dt>
 
-[**Desmontaje**](diskio.md)
+[**DiskIo**](diskio.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: 'El método ConnectTo recupera un puntero al pin conectado, si existe. Este método implementa el método IPin:: ConnectTo.'
+description: El método ConnectedTo recupera un puntero al pin conectado, si lo hay. Este método implementa el método IPin::ConnectedTo.
 ms.assetid: d8978c9a-e498-4411-a052-f3c2fca570ef
-title: Método CBasePin. ConnectTo (Amfilter. h)
+title: Método CBasePin.ConnectedTo (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5003154011f93b2b70ddd49dab00dcc1659eb2f5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a37eafe9abf226be20cf5d573abc91bc52ee070e7667dbab3a8799f74022c92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916765"
 ---
-# <a name="cbasepinconnectedto-method"></a>CBasePin. ConnectTo (método)
+# <a name="cbasepinconnectedto-method"></a>Método CBasePin.ConnectedTo
 
-El `ConnectedTo` método recupera un puntero al pin conectado, si existe. Este método implementa el método [**IPin:: ConnectTo**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) .
+El `ConnectedTo` método recupera un puntero al pin conectado, si lo hay. Este método implementa el [**método IPin::ConnectedTo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,29 +45,29 @@ HRESULT ConnectedTo(
 *ppPin* 
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del otro PIN.
+Dirección de una variable que recibe un puntero a la [**interfaz IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del otro pin.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los de la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla siguiente.
 
 
 
 | Código devuelto                                                                                           | Descripción                           |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                  | Correcto.<br/>                   |
-| <dl> <dt>**\_puntero E**</dt> </dl>             | Argumento de puntero **nulo** .<br/> |
-| <dl> <dt>**VFW \_ E \_ no \_ conectada**</dt> </dl> | El PIN no está conectado.<br/>      |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Correcto.<br/>                   |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>             | **Argumento de** puntero NULL.<br/> |
+| <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | El pin no está conectado.<br/>      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el método se ejecuta correctamente, la interfaz **IPin** que devuelve tiene un recuento de referencias pendiente. Asegúrese de liberarlo cuando haya terminado.
+Si el método se realiza correctamente, la **interfaz IPin** que devuelve tiene un recuento de referencias pendiente. Asegúrese de liberarlo cuando haya terminado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Si el método se ejecuta correctamente, la interfaz **IPin** que devuelve tiene 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Si el método se ejecuta correctamente, la interfaz **IPin** que devuelve tiene 
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

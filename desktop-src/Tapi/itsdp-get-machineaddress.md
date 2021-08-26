@@ -1,21 +1,21 @@
 ---
-description: El \_ método get MachineAddress obtiene la dirección de la máquina del host de origen.
+description: El método \_ get MachineAddress obtiene la dirección del equipo del host de origen.
 ms.assetid: 8a67cc9f-f9fc-4ec3-86f9-ffe34d075830
-title: 'Método ITSdp:: get_MachineAddress (Sdpblb. h)'
+title: Método ITSdp::get_MachineAddress (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a34968efa16f04cba8f99dbc0dc42b0cf4995a43
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3a4e4d849c17d6c371a6edc927679e2ba6af344fbf8515310eb22b27ba4abeab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012935"
 ---
-# <a name="itsdpget_machineaddress-method"></a>ITSdp:: get \_ MachineAddress (método)
+# <a name="itsdpget_machineaddress-method"></a>ItSdp::get \_ MachineAddress (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencias de telefonía IP de Encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Get \_ MachineAddress** obtiene la dirección de la máquina del host de origen.
+El **método \_ get MachineAddress** obtiene la dirección del equipo del host de origen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,10 +32,10 @@ HRESULT get_MachineAddress(
 
 <dl> <dt>
 
-*ppMachineAddress* \[ enuncia\]
+*ppMachineAddress* \[ out\]
 </dt> <dd>
 
-Puntero a un **BSTR** que contiene la dirección de la máquina del host de conferencia.
+Puntero a un **BSTR** que contiene la dirección del equipo del host de conferencia.
 
 </dd> </dl>
 
@@ -47,9 +47,9 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                         |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                        |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | El parámetro *ppMachineAddres* s no es un puntero válido.<br/> |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/>     |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                        |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | El *parámetro ppMachineAddres* no es un puntero válido.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/>     |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                       |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                      |
 
@@ -57,21 +57,21 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación debe usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar la memoria asignada para el parámetro *ppMachineAddress* .
+La aplicación debe usar [**SysFreeString para**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) liberar la memoria asignada para el *parámetro ppMachineAddress.*
 
-El parámetro *ppMachineAddress* se puede devolver como un nombre DNS ("johnsmith.workinghard.Microsoft.com") o una dirección IP ("10.111.222.111").
+El *parámetro ppMachineAddress* se puede devolver como un nombre DNS ("JohnSmith.workinghard.microsoft.com") o una dirección IP ("10.111.222.111").
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -83,7 +83,7 @@ El parámetro *ppMachineAddress* se puede devolver como un nombre DNS ("johnsmit
 [**ITSdp**](itsdp.md)
 </dt> <dt>
 
-[**ITSdp::p UT \_ MachineAddress**](itsdp-put-machineaddress.md)
+[**ITSdp::put \_ MachineAddress**](itsdp-put-machineaddress.md)
 </dt> </dl>
 
  

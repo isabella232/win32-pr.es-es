@@ -1,149 +1,149 @@
 ---
-title: Introducción a la experiencia de 10 pies para los desarrolladores de juegos de Windows
-description: En este artículo se presenta la experiencia de 10 pies y se explora la lista de cosas que debe tener en cuenta en primer lugar sobre este nuevo patrón de interacción, incluso si no está esperando que el juego se reproduzca de esta manera.
+title: Introducción a la experiencia de 10 pies para desarrolladores Windows juegos
+description: En este artículo se presenta la experiencia de 10 pies y se explora la lista de cosas que debe tener en cuenta primero sobre este nuevo patrón de interacción, incluso si no espera que el juego se jugará de esta manera.
 ms.assetid: 126a0aae-6a7a-8cda-5748-c364e54c304e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4814c76aeefdadbe1fd8bf9dc4c21cd84612671
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 049cbbe839509681f8f8629144511853d2984bbabafbf989611d1ed1db32e686
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104421538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963625"
 ---
-# <a name="introduction-to-the-10-foot-experience-for-windows-game-developers"></a>Introducción a la experiencia de 10 pies para los desarrolladores de juegos de Windows
+# <a name="introduction-to-the-10-foot-experience-for-windows-game-developers"></a>Introducción a la experiencia de 10 pies para desarrolladores Windows juegos
 
-Un número cada vez mayor de personas está usando sus equipos personales de una forma totalmente nueva. Cuando se crea una interacción típica con un equipo basado en Windows, es probable que se esté trabajando en el escritorio con un monitor, y usando un mouse y un teclado (o quizás un dispositivo de joystick). Esto se conoce como la experiencia de 2 pies y sigue siendo el escenario más común para juegos de Windows, pero hay otra tendencia en la que probablemente comenzará más sobre: la experiencia de 10 pies, que describe el uso del equipo como un dispositivo de entretenimiento con la salida a un televisor. En este artículo se presenta la experiencia de 10 pies y se explora la lista de cosas que debe tener en cuenta en primer lugar sobre este nuevo patrón de interacción, incluso si no está esperando que el juego se reproduzca de esta manera. Parte de sus clientes ejecutarán su juego basado en Windows en un equipo que ejecuta Windows Media Center, es mejor que sepa cuál será la experiencia antes de que los clientes la prueben.
+Cada vez más personas usan sus equipos personales de una manera completamente nueva. Cuando se piensa en la interacción típica con un equipo basado en Windows, probablemente piense en estar sentado en un escritorio con un monitor y usando un mouse y un teclado (o quizás un dispositivo portátil). Esto se conoce como la experiencia de 2 pies y sigue siendo el escenario más común para juegos de Windows, pero hay otra tendencia sobre la que probablemente empezará a escuchar más: la experiencia de 10 pies, que describe el uso del equipo como un dispositivo de entretenimiento con salida a un televisor. En este artículo se presenta la experiencia de 10 pies y se explora la lista de cosas que debe tener en cuenta primero sobre este nuevo patrón de interacción, incluso si no espera que el juego se jugará de esta manera. Una parte de los clientes ejecutará el juego basado en Windows en un equipo que ejecuta Windows Media Center; es mejor que sepa cómo será esa experiencia antes de que los clientes lo prueben.
 
 -   [¿Qué es Windows Media Center?](#what-is-windows-media-center)
 -   [La experiencia de 10 pies](#the-10-foot-experience)
     -   [Instalación](#installation)
-    -   [Datos proporcionados por el usuario](#user-input)
+    -   [Entrada del usuario](#user-input)
     -   [Pantalla](#display)
--   [Relación de aspecto y pantalla panorámica](#aspect-ratio-and-widescreen)
--   [Región segura de título](#title-safe-region)
--   [Sugerencias NTSC](#ntsc-suggestions)
-    -   [Abrazadera los valores de componente de color RGB entre 16 y 235](#clamp-the-rgb-color-component-values-between-16-and-235)
-    -   [Evite colores similares que puedan parecer idénticos](#avoid-similar-colors-that-might-appear-identical)
-    -   [Evitar diferencias nítidas en contraste](#avoid-sharp-differences-in-contrast)
+-   [Relación de aspecto y Widescreen](#aspect-ratio-and-widescreen)
+-   [Región de Caja fuerte título](#title-safe-region)
+-   [Sugerencias de GESTIÓN](#ntsc-suggestions)
+    -   [Fijación de los valores de los componentes de color RGB entre 16 y 235](#clamp-the-rgb-color-component-values-between-16-and-235)
+    -   [Evitar colores similares que puedan parecer idénticos](#avoid-similar-colors-that-might-appear-identical)
+    -   [Evitar diferencias nítibles en el contraste](#avoid-sharp-differences-in-contrast)
 -   [Conclusión](#conclusion)
 
 ## <a name="what-is-windows-media-center"></a>¿Qué es Windows Media Center?
 
-Windows Media Center puede actuar como la interfaz de las capacidades multimedia del equipo host. En el sitio web de esta característica, en la [Página principal de Windows Media Center](https://windows.microsoft.com/windows/products/windows-media-center/), se ofrece una introducción detallada y se muestran todos los buenos materiales disponibles en la versión más reciente. Media Center se incluye en Windows XP Media Center Edition, Windows Vista Home Premium, Windows Vista Ultimate y la mayoría de las ediciones de Windows 7.
+Windows Media Center puede actuar como la interfaz de las funcionalidades multimedia del equipo host. El sitio web de esta característica, Windows Inicio de [Media Center,](https://windows.microsoft.com/windows/products/windows-media-center/)ofrece una introducción exhaustiva y muestra todo lo bueno disponible en la versión más reciente. Media Center se incluye en Windows XP Media Center Edition, Windows Vista Home Premium, Windows Vista Ultimate y la mayoría de las ediciones de Windows 7.
 
-En el pasado, la única manera de obtener Windows Media Center era comprar un equipo con Media Center desde un fabricante del sistema de nivel 1, pero como Windows Media Center ahora se incluye con dos ediciones de Windows Vista, el posible Marketplace es ahora mucho más grande.
+En el pasado, la única manera de obtener Windows Media Center era comprar un equipo de Media Center a un fabricante del sistema de nivel 1, pero como Windows Media Center ahora se incluye con dos ediciones de Windows Vista, el marketplace potencial ahora es mucho mayor.
 
 ## <a name="the-10-foot-experience"></a>La experiencia de 10 pies
 
-Windows Media Center se diseñó pensando en la idea de que los usuarios podían usar Windows para disfrutar de una experiencia de entretenimiento de sala de reuniones enriquecida y de que la mayoría de los usuarios prefieren interactuar de manera diferente con Windows Media Center de manera diferente que con las aplicaciones de equipos tradicionales. En el caso de una, si el cliente usa el equipo en el salón para el entretenimiento, es probable que el vídeo se muestre en algo que no sea un monitor de equipo convencional: los televisores analógicos, los televisores digitales de alta definición y cualquier número de pantallas LCD son posibles candidatos. Normalmente, estos tipos de pantallas se ven a partir de una distancia de aproximadamente 10 pies; por lo tanto, la *experiencia de 10 pies* de etiqueta.
+Windows Media Center se diseñó en torno a la idea de que las personas podían usar Windows para disfrutar de una experiencia de entretenimiento en una sala de estar enriquección, y se sigue que la mayoría de los usuarios prefieren interactuar de manera diferente con Windows Media Center de forma diferente que con las aplicaciones informáticas tradicionales. Por un lado, si el cliente usa el equipo en la sala para el entretenimiento, es probable que el vídeo se muestre en algo que no sea un monitor de equipo convencional: los televisores análogos, los televisores digitales de alta definición y cualquier número de pantallas DE LAV son candidatos probables. Estos tipos de pantallas normalmente se ven desde una distancia de aproximadamente 10 pies, de ahí la experiencia de *etiqueta de 10 pies*.
 
-La experiencia de 10 pies no se limita a los usuarios de Windows Media Center; en los últimos años, los usuarios pueden conectar su equipo de estación de trabajo o portátil a su sistema de TV y audio. Cada vez es más común que los dispositivos de visualización del consumidor expongan conexiones RGB o DVI, los puertos de salida de vídeo estándar en los equipos. Además, los puertos S-video son una característica típica de las tarjetas de vídeo de alta gama y ofrecen una manera sencilla de generar un dispositivo de pantalla alternativo.
+La experiencia de 10 pies no se limita a los usuarios de Windows Media Center. En los últimos años, es habitual que los usuarios conecten su estación de trabajo o equipo de cuadernos a su sistema de audio y televisión. Cada vez es más común que los dispositivos de visualización del consumidor exponían conexiones RGB o DVI, los puertos de salida de vídeo estándar en los equipos. Además, los puertos S-Video son una característica típica de las tarjetas de vídeo de gama alta y ofrecen una manera sencilla de generar salidas en un dispositivo de visualización alternativo.
 
-Hay algunas directrices de diseño importantes que se deben tener en cuenta para una experiencia agradable de 10 pies: instalación, entrada de usuario y visualización.
+Hay algunas directrices de diseño importantes que se deben tener en cuenta para una experiencia agradable de 10 pies: instalación, entrada del usuario y visualización.
 
 ### <a name="installation"></a>Instalación
 
-Durante el promedio de la experiencia de 2 pies, el usuario se encuentra al alcance de la distancia del equipo; Si durante el inicio o el juego, el usuario debe insertar o cambiar el medio, el usuario puede permanecer colocado al menos. La experiencia media de 10 pies coloca el equipo a través de la habitación del usuario y, por lo tanto, todo lo que requiere que el usuario interactúe físicamente con el equipo obliga al usuario a ponerse en marcha y cruzar el salón. Por esta razón, los desarrolladores deben evitar obligar al usuario a cambiar los medios. considere la posibilidad de permitir una instalación completa de la aplicación en el disco duro.
+Durante la experiencia media de 2 pies, el usuario está a una distancia de alcance del equipo. Si durante el inicio o el juego, el usuario tiene que insertar o cambiar de medio, el usuario puede permanecer al menos sentado. La experiencia media de 10 pies coloca el equipo a través de la habitación del usuario y, por tanto, cualquier cosa que requiera que el usuario interactúe físicamente con el equipo obliga al usuario a rse y atravesar la habitación. Por esta razón, los desarrolladores deben evitar forzar al usuario a cambiar los medios. considere la posibilidad de permitir una instalación completa de la aplicación en el disco duro.
 
 ### <a name="user-input"></a>Entrada del usuario
 
-Otra característica de Windows Media Center es la compatibilidad con un control remoto estándar, que es el dispositivo de entrada preferido en general. Aunque el género del título del juego decide en gran medida si el control remoto es adecuado para proporcionar entradas de juego, es posible que desee permitir que el usuario PAUSE el juego y acceda a los menús del juego mediante el control remoto. sin embargo, asegúrese de que también permite que el usuario controle los menús mediante el dispositivo de entrada principal del juego. Para obtener más información sobre el diseño y el desarrollo de Windows Media Center y sus dispositivos, vea el [Kit de desarrollo de software de Windows Media Center](/previous-versions/msdn10/bb895967(v=msdn.10)) en MSDN.
+Otra característica de Windows Media Center es la compatibilidad con un control remoto estándar, que es el dispositivo de entrada preferido por lo general. Aunque el género del título del juego decide en gran medida si el control remoto es adecuado para proporcionar la entrada del juego, es posible que quiera permitir al usuario pausar el juego y acceder a los menús del juego mediante el control remoto. sin embargo, asegúrese de que también permite al usuario controlar los menús mediante el dispositivo de entrada del juego principal. Para obtener más información sobre el diseño y el desarrollo para Windows Media Center y sus dispositivos, vea Windows Kit de desarrollo de software de [Media Center](/previous-versions/msdn10/bb895967(v=msdn.10)) en MSDN.
 
-Evite cualquier interacción física entre el usuario y el equipo o sus periféricos. Requerir que el usuario cambie los controladores de entrada durante el juego no es deseable, ya que es probable que esté cerca del dispositivo de entrada principal.
+Evite cualquier interacción física entre el usuario y el equipo o sus periféricos. No se desea exigir al usuario que cambie los controladores de entrada durante el juego, ya que es probable que esté cerca solo del dispositivo de entrada principal.
 
-Microsoft ha creado controladores de controlador de juegos comunes para su uso con Windows y Xbox 360: la controladora Xbox 360 para Windows y la controladora inalámbrica Xbox 360 para Windows. Asegurarse de que el título se reproduzca correctamente en los controladores comunes facilitará algunos de los problemas asociados con la prueba del juego contra posibles dispositivos de entrada.
+Microsoft ha creado controladores de controlador de juegos comunes para su uso con Windows y Xbox 360, el Mando Xbox 360 para Windows y el Mando inalámbrico Xbox 360 para Windows. Asegurarse de que el título se desempeña bien en los controladores comunes le ayudará a mitigar algunos de los problemas asociados a probar el juego con posibles dispositivos de entrada.
 
-### <a name="display"></a>Pantalla
+### <a name="display"></a>Mostrar
 
-La amplia gama de posibles dispositivos de visualización ofrece consejos sobre cómo mostrar un desafío y cada tipo de dispositivo tiene advertencias especiales. Algunos de los problemas relacionados con las tecnologías de pantalla específicas se incluyen más adelante en este documento. Independientemente del dispositivo de salida de vídeo, es importante que las fuentes y los gráficos de interfaz de usuario tengan un tamaño lo suficientemente grande como para facilitar la lectura a una distancia de 10 metros. Tenga en cuenta también que las fuentes alisadas suelen ofrecer una mejor legibilidad.
+La amplia gama de posibles dispositivos de pantalla ofrece consejos sobre la presentación complicada y cada tipo de dispositivo tiene advertencias especiales. Algunos de los problemas relacionados con tecnologías de visualización específicas se presentan más adelante en este documento. Independientemente del dispositivo de salida de vídeo, es importante que las fuentes y los gráficos de interfaz de usuario tienen el tamaño suficiente para una legibilidad cómoda a una distancia de 10 pies. Tenga en cuenta también que las fuentes con suavizado de contorno suelen ofrecer una mejor legibilidad.
 
-También debe evitar líneas horizontales y elementos de interfaz de usuario estática con un grosor o un detalle de un solo píxel. Es posible que los televisores anteriores no muestren detalles y, incluso en los dispositivos de pantalla más recientes, el contenido parpadee cuando se ejecuta en un modo entrelazado, ya que una sola fila de píxeles solo es visible la mitad del tiempo. Como sustituto de los detalles pequeños, observe que una línea gris de 2 píxeles aparece más fina que una línea en blanco de 2 píxeles. (Esto es esencialmente lo mismo que desenfocar una línea en blanco de 1 píxel).
+También debe evitar líneas horizontales y elementos de interfaz de usuario estáticos con grosor o detalle de un solo píxel. Es posible que los televisores más antiguos no muestren detalles detallados e incluso en los dispositivos de pantalla más recientes, el contenido parpadeará cuando se ejecute en un modo entrelazado, ya que una sola fila de píxeles solo está visible la mitad del tiempo. Como sustituto de detalles pequeños, debe tener en cuenta que una línea gris de 2 píxeles parece más fina que una línea blanca de 2 píxeles. (Esto es básicamente lo mismo que desenfocar una línea blanca de 1 píxel).
 
-## <a name="aspect-ratio-and-widescreen"></a>Relación de aspecto y pantalla panorámica
+## <a name="aspect-ratio-and-widescreen"></a>Relación de aspecto y Widescreen
 
-Relación de aspecto describe la proporción de ancho y alto de la pantalla. Las pantallas de TV y monitor de equipo estándar tienen una relación de aspecto de 4:3, lo que significa que, para cada 4 píxeles que se ejecutan a lo largo del ancho del búfer de fotogramas, hay 3 píxeles a lo largo del alto (a veces también se representa como 1,33).
+La relación de aspecto describe la proporción de ancho y alto de la pantalla. Las pantallas estándar de monitor de tv y equipo tienen una relación de aspecto de 4:3, lo que significa que por cada 4 píxeles que se ejecutan a lo largo del ancho del búfer de fotogramas, hay 3 píxeles a lo largo de la altura (a veces también se representan como 1,33).
 
-Con la llegada de HDTV, una relación de aspecto de 16:9, también conocida como pantalla ancha, se ha convertido en el estándar para el futuro de la televisión y, junto con el televisor de definición mejorada (EDTV), hay tres modos de presentación que es probable que encuentre:
+Con la llegada de LAV, una relación de aspecto de 16:9(también conocida como pantalla ancha) se ha convertido en el estándar para el futuro de la televisión y, junto con la televisión de definición mejorada (EDTV), es probable que encuentre tres modos de pantalla:
 
 <dl> <dt>
 
-<span id="480p_EDTV"></span><span id="480p_edtv"></span><span id="480P_EDTV"></span>480p EDTV
+<span id="480p_EDTV"></span><span id="480p_edtv"></span><span id="480P_EDTV"></span>EDTV de 480p
 </dt> <dd>
 
-480 líneas de análisis que se muestran progresivamente. Este modo puede generar 4:3 (con una resolución de búfer de fotogramas de 640 × 480) o 16:9 (720 × 480).
+480 líneas de examen presentadas progresivamente. Este modo puede generar 4:3 (con una resolución de búfer de fotogramas de 640×480) o 16:9 (720×480).
 
 </dd> <dt>
 
-<span id="720p_HDTV"></span><span id="720p_hdtv"></span><span id="720P_HDTV"></span>HDTV de 720p
+<span id="720p_HDTV"></span><span id="720p_hdtv"></span><span id="720P_HDTV"></span>720pPTO
 </dt> <dd>
 
-720 líneas de análisis que se muestran progresivamente. Este modo siempre es 16:9 (1280 × 720).
+720 líneas de examen presentadas progresivamente. Este modo es siempre 16:9 (1280×720).
 
 </dd> <dt>
 
-<span id="1080i_HDTV"></span><span id="1080i_hdtv"></span><span id="1080I_HDTV"></span>HDTV 1080i
+<span id="1080i_HDTV"></span><span id="1080i_hdtv"></span><span id="1080I_HDTV"></span>1080i INN
 </dt> <dd>
 
-1080 líneas de análisis que se muestran entrelazadas. Este modo siempre es 16:9 (1920 × 1080 o 1920 × 540 si se representan los campos entrelazados por separado).
+1080 líneas de examen presentadas entrelazadas. Este modo es siempre 16:9 (1920×1080 o 1920×540 si se representa los campos de intercalación por separado).
 
 </dd> </dl>
 
-Si el juego está codificado de forma rígida para que funcione en una relación de aspecto de 4:3, es probable que un usuario que vea el juego en una pantalla de 16:9 tenga tres opciones para mostrar la imagen, en la que no se satisfagan especialmente:
+Si el juego está codificado de forma definida para funcionar en una relación de aspecto de 4:3, es probable que un usuario que ve el juego en una pantalla de 16:9 tenga tres opciones para mostrar la imagen, ninguna de las cuales es especialmente satisfactoria:
 
 <dl> <dt>
 
-<span id="Stretch"></span><span id="stretch"></span><span id="STRETCH"></span>Adapta
+<span id="Stretch"></span><span id="stretch"></span><span id="STRETCH"></span>elasticidad
 </dt> <dd>
 
-El búfer de fotogramas 4:3 se expande para abarcar perfectamente la resolución nativa 16:9 de la pantalla, lo que da lugar a que los objetos de la escena aparezcan más anchos de lo deseado. Algunos televisores ofrecen modos elástico adicionales que intentan conservar la relación de aspecto cerca del centro de la pantalla y aumentan gradualmente el estiramiento en los lados de la imagen.
+El búfer de fotogramas 4:3 se ajusta para cubrir perfectamente la resolución nativa de 16:9 de la pantalla, lo que da lugar a que los objetos de escena parezcan más anchos de lo deseado. Algunos televisores ofrecen modos de stretch adicionales que intentan conservar la relación de aspecto cerca del centro de la pantalla y aumentar gradualmente el stretch en los lados de la imagen.
 
 </dd> <dt>
 
 <span id="Center"></span><span id="center"></span><span id="CENTER"></span>Centro
 </dt> <dd>
 
-El búfer de fotogramas 4:3 se muestra sin distorsionar en el centro de la pantalla, con barras de color sólido que rellenan los píxeles restantes en los lados.
+El búfer de fotogramas 4:3 se muestra sin cambios en el centro de la pantalla, con barras de color sólidas que rellenan los píxeles restantes en los lados.
 
 </dd> <dt>
 
-<span id="Zoom"></span><span id="zoom"></span><span id="ZOOM"></span>General
+<span id="Zoom"></span><span id="zoom"></span><span id="ZOOM"></span>Zoom
 </dt> <dd>
 
-El búfer de fotogramas 4:3 se recorta a una región 16:9, que, a continuación, rellena la resolución de pantalla nativa sin Distorsiones; Tenga en cuenta que los píxeles situados por encima y por debajo del rectángulo de recorte se descartan por completo, que son regiones comunes de los elementos de la interfaz de usuario de un juego.
+El búfer de fotogramas 4:3 se recorta a una región 16:9, que luego rellena la resolución de pantalla nativa sin distorsión; Tenga en cuenta que los píxeles situados por encima y debajo del rectángulo de recorte se descartan completamente, que son regiones comunes para los elementos de la interfaz de usuario de un juego.
 
 </dd> </dl>
 
-Un mejor enfoque es agregar compatibilidad con la presentación de pantalla ancha al juego. El cambio más importante es establecer la transformación de proyección de la cámara de juego para que use una relación de aspecto 16:9, lo que evita la distorsión de la ampliación. Incluso si deja el búfer de reserva en una resolución 4:3, al cambiar la transformación de proyección para que use 16:9 se mejora en gran medida la precisión percibida de la imagen representada; por supuesto, la imagen final se filtra para escalar la resolución del búfer de reserva 4:3 para cumplir con la resolución de pantalla nativa 16:9, pero se trata de un artefacto menos apreciable que la distorsión de stretch causada por una incoherencia de las proporciones de aspecto.
+Un enfoque mejor es agregar compatibilidad con la pantalla ancha al juego. El cambio más importante es establecer la transformación de proyección de la cámara del juego para usar una relación de aspecto de 16:9, lo que evita la distorsión del ajuste. Incluso si deja el búfer de reserva con una resolución de 4:3, cambiar la transformación de proyección para usar 16:9 mejora en gran medida la precisión percibida de la imagen representada; Por supuesto, la imagen final se filtra para ampliar la resolución del búfer de reserva 4:3 para satisfacer la resolución de pantalla nativa de 16:9, pero se trata de un artefacto menos perceptible que la distorsión de la extensión causada por una discrepancia de relaciones de aspecto.
 
-El costo de representar la escena a través de la cámara 16:9 puede ser mayor que una cámara 4:3 (incluso con resoluciones idénticas), porque hay más objetos de escena visibles en el frustum de vista más amplio. También debe tener en cuenta cómo el área visible ampliada puede influir en el juego; por ejemplo, una cámara de juegos con una relación 16:9 revelaría más de su mundo de juego que una cámara 4:3.
+El costo de representar la escena a través de una cámara de 16:9 puede ser mayor que una cámara de 4:3 (incluso con resoluciones idénticas), ya que más objetos de escena serán visibles en la vista más ancha. También debe tener en cuenta cómo el área visualizable ampliada puede influir en el juego; Por ejemplo, una cámara de juego con una relación de 16:9 revelaría más de su mundo del juego que una cámara de 4:3.
 
-Para obtener los mejores resultados en una pantalla 16:9, debe representar en un búfer de reserva de 16:9, pero esto requerirá rellenar más píxeles. La diferencia entre 640 × 480 y 720 × 480 es casi 38.400 píxeles, una ganancia del 12,5%. Si puede permitirse el costo de rellenar este área más grande, es muy recomendable hacerlo.
+Para obtener los mejores resultados en una pantalla de 16:9, debe representar en un búfer de reserva de 16:9, pero esto obviamente requerirá rellenar más píxeles. La diferencia entre 640×480 y 720×480 es de casi 38 400 píxeles, una ganancia del 12,5 %. Si puede permitirse el costo de rellenar esta área más grande, se recomienda encarecidamente hacerlo.
 
 ## <a name="title-safe-region"></a>Title-Safe región
 
-El búfer de fotogramas de imagen podría ocultarse parcialmente del usuario, porque algunos píxeles alrededor del borde suelen estar cubiertas por el bisel frontal de la pantalla. Para asegurarse de que los elementos críticos de la interfaz de usuario están visibles en una amplia variedad de hardware de pantalla, debe observar los requisitos de la región de título seguro para el modo de presentación de destino. En el caso de los modos que no son de HDTV, la región de título seguro es el 85 por ciento interno del búfer de fotogramas, y para los modos de HDTV, el área de título seguro es el 90 por ciento interno. Por lo tanto, para obtener la mayor compatibilidad entre el hardware de pantalla actual y el futuro, debe mantener todos los elementos críticos de la interfaz de usuario y los indicadores de visualización de los encabezados dentro del 85 por ciento interno del búfer de fotogramas.
+El búfer del marco de imagen podría estar parcialmente oculto del usuario, ya que algunos píxeles alrededor del borde suelen estar cubiertos por el bisel frontal de la pantalla. Para asegurarse de que los elementos críticos de la interfaz de usuario están visibles en una amplia variedad de hardware de pantalla, debe observar los requisitos de la región segura para el título del modo de presentación de destino. En el caso de los modos que no son DEN, la región segura para título es el 85 % interno del búfer de fotogramas y, para los modos DESTE, el área segura para título es el 90 % interno. Por lo tanto, para obtener la máxima compatibilidad en el hardware de visualización actual y futuro, debe mantener todos los elementos críticos de la interfaz de usuario y los indicadores de visualización de cara al 85 % interno del búfer de fotogramas.
 
-## <a name="ntsc-suggestions"></a>Sugerencias NTSC
+## <a name="ntsc-suggestions"></a>Sugerencias de GESTIÓN
 
-Dado que NTSC es el estándar de vídeo más común en el Estados Unidos para el hardware de visualización del consumidor, es importante conocer algunas de las instrucciones que debe seguir para la imagen de salida.
+Puesto que el estándar de vídeo más común de Estados Unidos es el hardware de visualización del consumidor, es importante conocer algunas de las directrices que debe seguir para la imagen de salida.
 
-### <a name="clamp-the-rgb-color-component-values-between-16-and-235"></a>Abrazadera los valores de componente de color RGB entre 16 y 235
+### <a name="clamp-the-rgb-color-component-values-between-16-and-235"></a>Fijación de los valores de los componentes de color RGB entre 16 y 235
 
-Los colores que se encuentran fuera del intervalo de 16-235 pueden enviarse a un televisor NTSC, pero es probable que estos valores fuera del intervalo se interpreten como datos de audio. Esto se suele denominar *zumbidos de audio* y sería más aparente si el contenido se presentara sobre un fondo blanco sólido. Puede implementar fácilmente la compresión del color de salida dentro de un sombreador de píxeles.
+Los colores que están fuera del intervalo de 16 a 235 se pueden enviar sin duda a un televisor NINGUNA, pero es probable que estos valores fuera del intervalo se interpreten como datos de audio. Esto suele denominarse *sonido sonrón* y sería más evidente si el contenido se presentara sobre un fondo blanco sólido. Puede implementar fácilmente la fijación del color de salida dentro de un sombreador de píxeles.
 
-### <a name="avoid-similar-colors-that-might-appear-identical"></a>Evite colores similares que puedan parecer idénticos
+### <a name="avoid-similar-colors-that-might-appear-identical"></a>Evitar colores similares que puedan parecer idénticos
 
-La gama de colores NTSC no ofrece la misma paleta que un monitor de equipo típico, por lo que evite el uso de colores similares siempre que el juego requiera que el jugador reconozca la diferencia.
+La gama de colores GADO no ofrece la misma paleta que un monitor de equipo típico, así que evite usar colores similares siempre que el juego requiera que el jugador reconozca la diferencia.
 
-### <a name="avoid-sharp-differences-in-contrast"></a>Evitar diferencias nítidas en contraste
+### <a name="avoid-sharp-differences-in-contrast"></a>Evitar diferencias nítibles en el contraste
 
-Aunque esta directriz no siempre es práctica de seguir, puede mitigar algunas de las molestias de sangrado de color en las pantallas NTSC (también conocido como *rastreo de croma*) seleccionando los colores adecuados para los elementos de primer plano y de fondo de la interfaz de usuario; el texto en blanco sobre un fondo de color probablemente dará mejores resultados que los colores de contraste.
+Aunque esta guía no siempre es práctica, puede mitigar algunas de las molestias de color en las pantallas de RADO (también conocidas como rastreo de *arrastre)* mediante la selección de los colores adecuados para los elementos de primer plano y fondo de la interfaz de usuario. el texto en blanco en un fondo coloreado probablemente dará mejores resultados que los colores de contraste.
 
 ## <a name="conclusion"></a>Conclusión
 
-En este artículo se ofrece una visión general de la experiencia de 10 pies desde la perspectiva de un desarrollador de juegos de Windows, pero no se trata de una encuesta completa; debe investigar estos temas más allá si está desarrollando un título de juego de Windows (aunque no esté diseñado para su uso con Windows Media Center). La prueba verdadera es probar el juego en una variedad de pantallas de vídeo para asegurarse de que el juego ofrezca una experiencia agradable en cada uno. En función del ciclo de vida típico de un juego basado en Windows y el crecimiento previsto en el uso de Windows Media Center, se garantiza que un juego que publique hoy es parte de la experiencia de 10 pies de un tercero, tanto si los clientes pueden jugar su juego desde la comodidad de los sofá como si están obligados a sentarse en el escritorio.
+En este artículo se ha ofrecido un vistazo a la experiencia de 10 pies desde la perspectiva de un desarrollador de juegos de Windows, pero no es una encuesta completa. Debe investigar más estos temas si está desarrollando un título de juego Windows (incluso si no está pensado para su uso con Windows Media Center). La verdadera prueba es probar el juego en una variedad de pantallas de vídeo para asegurarse de que el juego ofrece una experiencia increíble en cada una de ellas. En función de la duración típica de un juego basado en Windows y el crecimiento previsto en el uso de Windows Media Center, está casi garantizado que un juego que se publica hoy forma parte de la experiencia de 10 pies de alguien, independientemente de si los clientes pueden jugar a su juego desde la comodidad de los diván o se ven obligados a quedarse sentados en el escritorio depende en gran medida de usted.
 
- 
+ 
 
- 
+ 

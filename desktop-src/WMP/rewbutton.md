@@ -1,9 +1,9 @@
 ---
 title: REWBUTTON
-description: Se trata de un botón predefinido con los siguientes valores predeterminados. | REWBUTTON
+description: Se trata de un button predefinido con los siguientes valores predeterminados. | REWBUTTON
 ms.assetid: 941ea1b3-d276-4073-b9ae-60574052f544
 keywords:
-- REWBUTTON Windows Media Player
+- ReWBUTTON Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6c94836e09b5b6a63cc45af850464787218f228a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c3020ecf13971cd6e23b9807988703a5b9d081d5124562522a5f11cbb59f3fb5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901025"
 ---
 # <a name="rewbutton"></a>REWBUTTON
 
-Se trata de un **botón** predefinido con los siguientes valores predeterminados.
+Se trata de un **button** predefinido con los siguientes valores predeterminados.
 
 ``` syntax
 onclick="jscript:player.controls.fastReverse()"
@@ -31,9 +31,9 @@ cursor="system"
 enabled="wmpenabled:player.controls.fastReverse"
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todas las propiedades de este **botón** se pueden invalidar si se especifican explícitamente.
+Todas las propiedades de **este BOTÓN** se pueden invalidar especificándolos explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Todas las propiedades de este **botón** se pueden invalidar si se especifican e
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 

@@ -1,47 +1,47 @@
 ---
-description: La plataforma de Tablet PC admite una serie de Factoids que se usan para aumentar la precisión del reconocimiento.
+description: Tablet PC Platform admite una serie de factoids que se usan para aumentar la precisión del reconocimiento.
 ms.assetid: 9d5fc370-ba58-438b-8850-f31f0f0f6608
-title: Factoids admitido de la versión 1
+title: Factoids admitidos de la versión 1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bad6d08b91a457d38a3eb8543200eb1919eb2bfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4c24c192bcbda04be7ea25deb0c7b1cb7b392de57c43ce7a509e0ceaac31002
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119934355"
 ---
-# <a name="supported-factoids-from-version-1"></a>Factoids admitido de la versión 1
+# <a name="supported-factoids-from-version-1"></a>Factoids admitidos de la versión 1
 
-\[Tenga en cuenta que la siguiente descripción de Factoids admitida en la versión 1 del kit de desarrollo de software (SDK) de Microsoft Windows XP Tablet PC Edition todavía es compatible con los reconocedores, pero se recomienda que todos los nuevos desarrollos (para los reconocedores de scripts latinos) usen los valores definidos en la enumeración [InputScope](/windows/win32/api/inputscope/ne-inputscope-inputscope) .\]
+\[Tenga en cuenta la siguiente descripción de los factoids admitidos en la versión 1 del Kit de desarrollo de software (SDK) de Microsoft Windows XP Tablet PC Edition, pero se recomienda que todos los nuevos desarrollos (para reconocedores de scripts latinos) usen los valores definidos en la enumeración [InputScope.](/windows/win32/api/inputscope/ne-inputscope-inputscope)\]
 
-La plataforma de Tablet PC admite una serie de Factoids que se usan para aumentar la precisión del reconocimiento. Cuando se usa Factoids, es importante que la entrada esperada coincida exactamente con la definición de Factoid. Si la entrada no coincide con la definición de Factoid, la precisión del reconocimiento se ve afectada. Por ejemplo, si se establece el **número** Factoid y el usuario escribe letras, la precisión del reconocimiento de las letras es deficiente.
+Tablet PC Platform admite una serie de factoids que se usan para aumentar la precisión del reconocimiento. Al usar factoids, es importante que la entrada esperada coincida exactamente con la definición del factoid. Si la entrada no coincide con la definición del factoid, se sufre la precisión del reconocimiento. Por ejemplo, si se **establece el** factoid Number y el usuario escribe letras, la precisión del reconocimiento de las letras es deficiente.
 
-Ciertos Factoids, como el **correo electrónico** y el **dígito**, son casi idénticos en todos los idiomas. Otros Factoids, como **teléfono** y **CódigoPostal**, varían según el idioma. Examine el formato de cada Factoid para el idioma que está usando. Puede encontrar una lista de formatos para cada Factoid en cada idioma en las tablas de los temas que se indican a continuación de este tema.
+Ciertos factoids, como **correo electrónico** y **dígito,** son casi idénticos en todos los idiomas. Otros factoids, como **Telephone y** **PostalCode,** varían según el idioma. Examine el formato de cada factoid para ver el idioma que está usando. Puede encontrar una lista de formatos para cada factoid en cada lenguaje en las tablas de los temas siguientes a este tema.
 
 > [!Note]  
-> Existe una diferencia sutil pero importante entre Factoids para los idiomas occidentales y Factoids para los idiomas de Asia oriental. Factoids para idiomas occidentales se implementa mediante expresiones que describen el resultado deseado. Después, el reconocedor se sesga para generar resultados que coincidan con esta expresión. Factoids para idiomas de Asia oriental se implementan mediante la especificación de un intervalo aceptable de caracteres Unicode. Por ejemplo, la **fecha** Factoid para los idiomas de Asia oriental solo acepta caracteres Unicode dentro de un intervalo determinado.
+> Hay una distinción sutil pero importante entre factoids para idiomas del oeste y factoids para idiomas de Asia Oriental. Los factoids para idiomas occidental se implementan mediante expresiones que describen el resultado deseado. A continuación, el reconocedor se sesgado para generar resultados que coincidan con esta expresión. Los factoids para idiomas de Asia Oriental se implementan especificando un intervalo aceptable de caracteres Unicode. Por ejemplo, el **factoid Date** para idiomas de Asia Oriental acepta solo caracteres Unicode dentro de un intervalo determinado.
 
  
 
-Factoids para idiomas occidentales incluyen Factoids para inglés (Reino Unido), Inglés (Estados Unidos), Francés, alemán y español. Factoids para idiomas de Asia oriental son Factoids para chino (simplificado), Chino (tradicional), Japonés y coreano.
+Los factoids para idiomas del oeste incluyen factoids para inglés (Reino Unido), inglés (Estados Unidos), francés, alemán y español. Los factoids para idiomas de Asia Oriental incluyen factoids para chino (simplificado), chino (tradicional), japonés y coreano.
 
-En las secciones siguientes se muestran los formatos admitidos para cada Factoid en cada idioma:
+En las secciones siguientes se muestran los formatos admitidos para cada factoid en cada idioma:
 
--   [Factoids común entre idiomas](factoids-common-across-languages.md)
--   [Factoids para idiomas occidentales](factoids-for-western-languages.md)
--   [Factoids para idiomas de Asia oriental](factoids-for-east-asian-languages.md)
+-   [Factoids Common Across Languages](factoids-common-across-languages.md)
+-   [Factoids for Western Languages](factoids-for-western-languages.md)
+-   [Factoids para idiomas de Asia Oriental](factoids-for-east-asian-languages.md)
 
-Si espera que la entrada sea diferente de los formatos enumerados en las tablas de estas secciones, no use un Factoid. Además, los Factoids están integrados en el reconocedor para cada idioma. No se puede usar Factoids desde un idioma con un reconocedor de otro idioma. Por ejemplo, no puede usar el **teléfono** francés Factoid con un reconocedor japonés.
+Si espera una entrada diferente de los formatos enumerados en las tablas de estas secciones, no use un factoid. Además, los factoids están integrados en el reconocedor para cada idioma. No se pueden usar factoids de un idioma con un reconocedor de otro idioma. Por ejemplo, no puede usar el factoid **teléfono** francés con un reconocedor japonés.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Constantes de Factoid**](factoid-constants.md)
+[**Constantes factoid**](factoid-constants.md)
 </dt> <dt>
 
-[Clase Microsoft. Ink. Factoid](/previous-versions/ms583657(v=vs.100))
+[Clase Microsoft.Ink.Factoid](/previous-versions/ms583657(v=vs.100))
 </dt> </dl>
 
  

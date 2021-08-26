@@ -1,7 +1,7 @@
 ---
-description: Indica que el reproductor de DVD inició la reproducción de un nuevo programa en el dominio de título de dominio de DVD \_ \_ .
+description: Indica que el reproductor de DVD inició la reproducción de un nuevo programa en el dominio \_ DE DOMINIO \_ de DVD.
 ms.assetid: c0745615-d527-4d93-9118-30419c6c811e
-title: EC_DVD_CHAPTER_START (Dvdevcode. h)
+title: EC_DVD_CHAPTER_START (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 87a4408f1631d8a23cf42e790688856d6c246393
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9570964efa52380c06034716f0c199cde0498a2c0aeb0502f9db250f87a6ca3a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998105"
 ---
-# <a name="ec_dvd_chapter_start"></a>\_Inicio de \_ capítulo de DVD de EC \_
+# <a name="ec_dvd_chapter_start"></a>INICIO DEL \_ CAPÍTULO DE DVD DE \_ \_ EC
 
-Indica que el reproductor de DVD inició la reproducción de un nuevo programa en el dominio de título de dominio de DVD \_ \_ .
+Indica que el reproductor de DVD inició la reproducción de un nuevo programa en el dominio \_ DE DOMINIO \_ de DVD.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,7 +31,7 @@ Indica que el reproductor de DVD inició la reproducción de un nuevo programa e
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valor **DWORD** que indica el nuevo número de capítulo (programa).
+**Valor DWORD** que indica el nuevo número de capítulo (programa).
 
 </dd> <dt>
 
@@ -42,11 +42,11 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo las películas lineales simples señalan este evento.
 
-Este evento se desencadena en el dominio de título.
+Este evento se genera en el dominio de título.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Este evento se desencadena en el dominio de título.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Este evento se desencadena en el dominio de título.
 [Notificación de eventos en DirectShow](event-notification-in-directshow.md)
 </dt> <dt>
 
-[**\_Enumeración de dominio de DVD**](/windows/win32/api/strmif/ne-strmif-dvd_domain)
+[**ENUMERACIÓN \_ DE DOMINIO DE DVD**](/windows/win32/api/strmif/ne-strmif-dvd_domain)
 </dt> </dl>
 
  

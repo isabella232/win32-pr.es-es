@@ -4,18 +4,18 @@ ms.assetid: 270b16f6-677c-430a-aa69-1b5c6dfd3ba4
 title: JobPrimaryCoverFront
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c60aef4a70404ce6777b9bfe2848fddffa4e89d
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 37b2e9224ff9d621d893dd16409138c359c0ee6c69e795141e36d9e812d4258a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948615"
 ---
 # <a name="jobprimarycoverfront"></a>JobPrimaryCoverFront
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe la hoja de cobertura frontal (inicial). Todo el trabajo tendrá una sola hoja principal. La hoja de cobertura se debe imprimir en PageMediaSize y PageMediaType usados para la primera página del trabajo. La hoja de cobertura debe integrarse en las opciones de procesamiento (por ejemplo, JobDuplexAllDocumentsContiguously, JobNUpAllDocumentsContiguously), tal como se indica en la opción especificada.
+Describe la hoja de cobertura frontal (inicial). Todo el trabajo tendrá una sola hoja principal. La hoja de cobertura se debe imprimir en PageMediaSize y PageMediaType usados para la primera página del trabajo. La hoja de cobertura debe integrarse en las opciones de procesamiento (como JobDuplexAllDocumentsContiguously, JobNUpAllDocumentsContiguously), tal como se indica en la opción especificada.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
@@ -25,7 +25,7 @@ Describe la hoja de cobertura frontal (inicial). Todo el trabajo tendrá una sol
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefijo de ámbito <br/> | Trabajo<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -74,7 +74,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
+Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:JobPrimaryCoverFront">

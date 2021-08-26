@@ -1,9 +1,9 @@
 ---
-title: modificador/v
-description: El modificador/v especifica que las referencias a los tipos de metadatos se validan.
+title: Modificador /v
+description: El modificador /v especifica que se validan las referencias de tipo de metadatos.
 ms.assetid: AC522044-68CE-423D-B2E8-6864CD0B528E
 keywords:
-- /v modificador MIDL
+- /v switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4efd1ba12e11b7bdfdda31b0e9c9670c97d5cc4c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8c1c11494798cbef77d876ce10ba1a40454ad515d3a449f97bd6ab1348da2ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979695"
 ---
-# <a name="v-switch"></a>modificador/v
+# <a name="v-switch"></a>Modificador /v
 
-El modificador **/v** especifica que las referencias a los tipos de metadatos se validan.
+El **modificador /v** especifica que se validan las referencias de tipo de metadatos.
 
 ``` syntax
 mdmerge /v 
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 Este modificador no tiene parámetros.
 
@@ -35,7 +35,7 @@ Este modificador no tiene parámetros.
 
 ## <a name="examples"></a>Ejemplos
 
-**mdmerge/v**
+**mdmerge /v**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Este modificador no tiene parámetros.
 
 | Requisito | Value |
 |-------------------|--------------------------------|
-| Remoto<br/> | Windows 8<br/>           |
+| Cliente<br/> | Windows 8<br/>           |
 | Servidor<br/> | Windows Server 2012<br/> |
 
 
@@ -52,7 +52,7 @@ Este modificador no tiene parámetros.
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-title: Predicado Register (referencia de PS de HLSL)
+title: Registro de predicado (referencia de HLSL PS)
 description: Este registro de salida del sombreador de píxeles contiene un valor booleano por canal.
 ms.assetid: dc5bff90-4efa-4390-b744-dd1e894ff540
 ms.topic: article
@@ -9,53 +9,53 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 54c0706b110e04548c836bed8ae794f8da73747e
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 8cc8404c9a6be87951142ff3473b283a57f4814b729a8ad5a462f9069b20f3ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "103785068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950035"
 ---
-# <a name="predicate-register-hlsl-ps-reference"></a>Predicado Register (referencia de PS de HLSL)
+# <a name="predicate-register-hlsl-ps-reference"></a>Registro de predicado (referencia de HLSL PS)
 
 Este registro de salida del sombreador de píxeles contiene un valor booleano por canal.
 
-Un registro de predicado es compatible con las siguientes versiones:
+Las siguientes versiones admiten un registro de predicado:
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ SW | 2 \_ x | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ sw | 2 \_ x | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|-------|------|------|-------|
 | registro de predicado    |      |      |      |      |      |       | x    | x    | x     |
 
 
 
- 
+ 
 
 Estas son las propiedades de registro.
 
 
 
-| Tipo de registro | Count | L/E | \# Leer puertos | \# Lecturas/inst. | Dimensión | RelAddr | Valores predeterminados | Requiere DCL |
+| Tipo de registro | Count | L/E | \# Lectura de puertos | \# Lecturas/inst | Dimensión | RelAddr | Valores predeterminados | Requiere DCL |
 |---------------|-------|-----|---------------|---------------|-----------|---------|----------|--------------|
-| Predicado (p)  | 1     | L/E | 1             | 1             | 4         | N/D     | None     | N            |
+| Predicate(p)  | 1     | L/E | 1             | 1             | 4         | N/D     | None     | N            |
 
 
 
- 
+ 
 
-El registro de predicado se puede modificar con [SETP \_ COMP-PS](setp-comp---ps.md). No hay valores predeterminados para este registro; una aplicación debe establecer el registro antes de que se use.
+El registro de predicado se puede modificar con [setp \_ comp - ps](setp-comp---ps.md). No hay valores predeterminados para este registro; una aplicación debe establecer el registro antes de que se utilice.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Registra](dx9-graphics-reference-asm-ps-registers.md)
+[Registros](dx9-graphics-reference-asm-ps-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

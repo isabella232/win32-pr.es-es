@@ -1,7 +1,7 @@
 ---
-description: La función CommitSpoolData notifica al administrador de trabajos de impresión que se ha escrito una cantidad de datos especificada en un archivo de cola especificado y está listo para ser representada.
+description: La función CommitSpoolData notifica al administrador de trabajos de impresión que una cantidad especificada de datos se ha escrito en un archivo de cola especificado y está lista para representarse.
 ms.assetid: cb8899e0-2fdf-4928-adff-17ef5af39f63
-title: Función CommitSpoolData (winspool. h)
+title: Función CommitSpoolData (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - WinSpool.drv
-ms.openlocfilehash: fa90cb1344e7c087a601a74991598e509daed226
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90c5907f86f7586710e8a65e60874587491674f2dc4d73d0632279f8b1b3c119
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950505"
 ---
-# <a name="commitspooldata-function"></a>CommitSpoolData función)
+# <a name="commitspooldata-function"></a>Función CommitSpoolData
 
-La función **CommitSpoolData** notifica al administrador de trabajos de impresión que se ha escrito una cantidad de datos especificada en un archivo de cola especificado y está listo para ser representada.
+La **función CommitSpoolData** notifica al administrador de trabajos de impresión que una cantidad especificada de datos se ha escrito en un archivo de cola especificado y está lista para representarse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,40 +41,40 @@ HANDLE CommitSpoolData(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador de la impresora a la que se envió el trabajo. Debe ser el mismo identificador que se usó para obtener *hSpoolFile* con [**GetSpoolFileHandle**](getspoolfilehandle.md).
+Identificador de la impresora a la que se envió el trabajo. Debe ser el mismo identificador que se usó para obtener *hSpoolFile* con [**GetSpoolFileHandle.**](getspoolfilehandle.md)
 
 </dd> <dt>
 
-*hSpoolFile* \[ de\]
+*hSpoolFile* \[ En\]
 </dt> <dd>
 
-Identificador del archivo de cola que se va a cambiar. En la primera llamada de **CommitSpoolData**, debe ser el mismo identificador devuelto por [**GetSpoolFileHandle**](getspoolfilehandle.md). Las llamadas subsiguientes a **CommitSpoolData** deben pasar el identificador devuelto por la llamada anterior. Vea la sección Comentarios.
+Identificador del archivo de cola de trabajos que se va a cambiar. En la primera llamada de **CommitSpoolData**, debe ser el mismo identificador devuelto por [**GetSpoolFileHandle.**](getspoolfilehandle.md) Las llamadas posteriores **a CommitSpoolData** deben pasar el identificador devuelto por la llamada anterior. Vea la sección Comentarios.
 
 </dd> <dt>
 
 *cbCommit* 
 </dt> <dd>
 
-Número de bytes confirmados en el administrador de trabajos de impresión.
+Número de bytes confirmados en el colador de impresión.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve un identificador para el archivo de cola.
+Si la función se realiza correctamente, devuelve un identificador al archivo spool.
 
-Si se produce un error en la función, devuelve un valor de identificador no válido \_ \_ .
+Si se produce un error en la función, devuelve INVALID \_ HANDLE \_ VALUE.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones que envían un trabajo de impresión del administrador de trabajos en cola pueden llamar a [**GetSpoolFileHandle**](getspoolfilehandle.md) y, a continuación, escribir los datos directamente en el identificador de la cola de impresión mediante una llamada a [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile). Para notificar al administrador de trabajos de impresión que el archivo contiene datos que están listos para su representación, la aplicación debe llamar a **CommitSpoolData** y proporcionar el número de bytes disponibles.
+Las aplicaciones que envían un trabajo de impresión de cola pueden llamar a [**GetSpoolFileHandle**](getspoolfilehandle.md) y, a continuación, escribir datos directamente en el identificador de archivo de cola mediante una llamada [**a WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile). Para notificar al colador de impresión que el archivo contiene datos que están listos para representarse, la aplicación debe llamar a **CommitSpoolData** y proporcionar el número de bytes disponibles.
 
-Si se llama a **CommitSpoolData** varias veces, cada llamada debe usar el identificador de archivo de cola de impresión devuelto por la llamada anterior. Cuando no se escriban más datos en el archivo de cola de impresión, se debe llamar a [**CloseSpoolFileHandle**](closespoolfilehandle.md) para el identificador de archivo devuelto por la última llamada a **CommitSpoolData**.
+Si **se llama a CommitSpoolData** varias veces, cada llamada debe usar el identificador de archivo spool devuelto por la llamada anterior. Cuando no se escribirán más datos en el archivo spool, se debe llamar a [**CloseSpoolFileHandle**](closespoolfilehandle.md) para el identificador de archivo devuelto por la última llamada a **CommitSpoolData**.
 
-Antes de llamar a **CommitSpoolData**, las aplicaciones deben establecer el puntero de archivo en la posición que tenía antes de escribir los datos en el archivo. En el proceso de representar los datos en el archivo del administrador de trabajos de impresión, el administrador de trabajos de impresión moverá el puntero del archivo de cola de *cbCommit* bytes del valor actual del puntero de archivo.
+Antes de **llamar a CommitSpoolData,** las aplicaciones deben establecer el puntero de archivo en la posición que tenía antes de escribir datos en el archivo. En el proceso de representación de los datos en el archivo de cola de impresión, el administrador de trabajos de impresión moverá el puntero de archivo de cola *cbCommit* bytes del valor actual del puntero de archivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,11 +82,11 @@ Antes de llamar a **CommitSpoolData**, las aplicaciones deben establecer el punt
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>WinSpool. drv</dt> </dl>                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
+| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>WinSpool.drv</dt> </dl>                   |
 
 
 

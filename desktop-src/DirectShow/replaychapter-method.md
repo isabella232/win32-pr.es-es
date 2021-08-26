@@ -1,17 +1,17 @@
 ---
 description: El método ReplayChapter inicia la reproducción al principio del capítulo actual.
 ms.assetid: 65135f63-5637-47e0-8fae-6a4cd41ad33e
-title: Método ReplayChapter
+title: ReplayChapter (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53bcac75d7ab0e230fe28e2f07f6d6a3ed7d235a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7380488ebc2572883133c44158144bd30601573a4c306ed6195d8a405ef0c1c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904495"
 ---
-# <a name="replaychapter-method"></a>Método ReplayChapter
+# <a name="replaychapter-method"></a>ReplayChapter (método)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.

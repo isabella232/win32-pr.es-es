@@ -1,23 +1,23 @@
 ---
-description: La propiedad resume se establece al reanudar una instalación suspendida.
+description: La propiedad RESUME se establece al reanudar una instalación suspendida.
 ms.assetid: 79eeadfd-6079-401b-a360-1ce09786e647
-title: Resume (propiedad)
+title: Propiedad RESUME
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c41b57bb92b252ebe37e4d631c155f28a86e596
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65e3c17116558a346fe91e2c9c98bba99cd759b4d382488a7b8f08c946dfa053
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979265"
 ---
-# <a name="resume-property"></a>Resume (propiedad)
+# <a name="resume-property"></a>Propiedad RESUME
 
-La propiedad **resume** se establece al reanudar una instalación suspendida. Esta propiedad puede determinar qué texto se debe mostrar en la interfaz de usuario. Por ejemplo, si no está en modo de reanudación, se podría preguntar al usuario "¿está listo para instalarlo?". en el modo de reanudación, se podría preguntar al usuario "¿está listo para completar la instalación?".
+La **propiedad RESUME** se establece al reanudar una instalación suspendida. Esta propiedad puede determinar qué texto se va a mostrar en la interfaz de usuario. Por ejemplo, cuando no está en modo de reanudación, se podría preguntar al usuario "¿Está listo para instalar?" mientras está en modo de reanudación, se podría preguntar al usuario "¿Está listo para completar la instalación?".
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para la compatibilidad con versiones anteriores, el instalador también admite el nombre **resume** para esta propiedad.
+Por compatibilidad con versiones anteriores, el instalador también admite el nombre **Resume** para esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,7 +25,7 @@ Para la compatibilidad con versiones anteriores, el instalador también admite e
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
 
 
 

@@ -27,9 +27,9 @@
       href: disabling-shortcut-keys-in-games.md
     - name: Control del tiempo de juego y procesadores de varios núcleos
       href: game-timing-and-multicore-processors.md
-    - name: Requisitos técnicos de Juegos para Windows
+    - name: Juegos para Windows requisitos técnicos
       href: games-for-windows-technical-requirements-1-1-0006.md
-    - name: Juegos para casos de prueba de Windows
+    - name: Juegos para Windows casos de prueba
       href: games-for-windows-test-requirements-1-0-0006.md
     - name: Juegos con cuentas Least-Privileged usuario
       href: gaming-with-least-privileged-user-accounts.md
@@ -43,23 +43,23 @@
       href: mmo-installation-best-practices.md
     - name: Instalación y uso de editores de métodos de entrada
       href: installing-and-using-input-method-editors.md
-    - name: Introducción a la experiencia de 10 pies para desarrolladores de juegos de Windows
+    - name: Introducción a la experiencia de 10 pies para Windows desarrolladores de juegos
       href: introduction-to-the-10-foot-experience-for-windows-game-developers.md
-    - name: 'Hacer accesibles los juegos de vídeo: justificaciones empresariales y consideraciones de diseño'
+    - name: 'Hacer que los juegos de vídeo se puedan acceder: justificaciones empresariales y consideraciones de diseño'
       href: accessibility-best-practices.md
-    - name: Optimización del rendimiento de DVD para juegos de Windows
+    - name: Optimización del rendimiento de DVD para Windows Games
       href: optimizing-dvd-performance-for-windows-games.md
-    - name: 'Aplicación de revisiones a Game Software en Windows XP, Windows Vista y Windows 7'
+    - name: 'Patching Game Software en Windows XP, Windows Vista y Windows 7'
       href: patching-methods-in-windows-xp-and-vista.md
     - name: Procedimientos recomendados de administración de recursos
       href: resource-management-best-practices.md
     - name: Simplificar la instalación de juegos
       href: simplifying-game-installation.md
-    - name: Aprovechar las ventajas del movimiento High-Definition mouse
+    - name: Aprovechar las ventajas del High-Definition del mouse
       href: taking-advantage-of-high-dpi-mouse-movement.md
     - name: Canalización de transformación de Direct3D
       href: the-direct3d-transformation-pipeline.md
-    - name: Principales problemas de los títulos de Windows
+    - name: Principales problemas de Windows títulos
       href: top-issues-for-windows-titles.md
     - name: Principales herramientas y técnicas para crear juegos de Windows más sólidos
       href: top-tools-and-techniques-for-making-more-robust-windows-games.md
@@ -69,7 +69,7 @@
       href: using-an-input-method-editor-in-a-game.md
     - name: Firewall de Windows para desarrolladores de juegos
       href: games-and-firewalls.md
-    - name: Explorador de juegos de Windows para desarrolladores de juegos
+    - name: Windows Explorador de juegos para desarrolladores de juegos
       href: windows-game-explorer-integration.md
-    - name: Windows Installer para desarrolladores de juegos
+    - name: Windows Instalador para desarrolladores de juegos
       href: windows-installer-for-game-developers.md

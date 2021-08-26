@@ -1,33 +1,33 @@
 ---
-description: Trabajar con tipos de medios de MFT
+description: Trabajar con tipos de medios MFT
 ms.assetid: 16c270ee-f246-4222-97e9-d8d0fe009155
-title: Trabajar con tipos de medios de MFT
+title: Trabajar con tipos de medios MFT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98bfc996704f6069ca1d16570b33f456ea1cc115
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 60ead31c4291cf41cff62f4341227bf0ee1ad22d12e96a6c9eff87ff5a3e6faa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104279784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886955"
 ---
-# <a name="working-with-mft-media-types"></a>Trabajar con tipos de medios de MFT
+# <a name="working-with-mft-media-types"></a>Trabajar con tipos de medios MFT
 
-Un tipo de medio es una manera de describir el formato de un flujo multimedia. En Media Foundation, los tipos de medios se representan mediante la interfaz **IMFMediaType** . Esta interfaz hereda la interfaz **IMFAttributes** . Los detalles de un tipo de medio se especifican como atributos.
+Un tipo de medio es una manera de describir el formato de una secuencia multimedia. En Media Foundation, los tipos de medios se representan mediante la **interfaz IMFMediaType.** Esta interfaz hereda la **interfaz DEATTRIBUTEAttributes.** Los detalles de un tipo de medio se especifican como atributos.
 
-Para crear un nuevo tipo de archivo multimedia, llame a la función **MFCreateMediaType** . Esta función devuelve un puntero a la interfaz **IMFMediaType** . El tipo de medio no tiene inicialmente ningún atributo.
+Para crear un nuevo tipo de medio, llame a **la función MFCreateMediaType.** Esta función devuelve un puntero a la **interfaz IMFMediaType.** El tipo de medio inicialmente no tiene atributos.
 
-El SDK de Media Foundation proporciona varias funciones auxiliares para inicializar los tipos de medios desde las estructuras de formato. Por ejemplo, la función **MFInitMediaTypeFromVideoInfoHeader** Inicializa un tipo de vídeo a partir de una estructura **VIDEOINFOHEADER** , y la función **MFInitMediaTypeFromWaveFormatEx** Inicializa un tipo de vídeo a partir de una estructura **WAVEFORMATEX** o **WAVEFORMATEXTENSIBLE** .
+El SDK Media Foundation proporciona varias funciones auxiliares para inicializar tipos multimedia a partir de estructuras de formato. Por ejemplo, la función **MFInitMediaTypeFromVideoInfoHeader** inicializa un tipo de vídeo a partir de una estructura **VIDEOINFOHEADER,** y la función **MFInitMediaTypeFromWaveFormatEx** inicializa un tipo de vídeo a partir de una estructura **DETENTEATEX** o **UNATEXTENSIBLE.**
 
-Los tipos de formato que usan los códecs generalmente se limitan a los descritos por las estructuras **VIDEOINFOHEADER** y **WAVEFORMATEX** .
+Los tipos de formato que usan los códecs suelen limitarse a los descritos por las estructuras **VIDEOINFOHEADER** **y MPEGATEX.**
 
-Puede encontrar más información sobre cómo crear y obtener acceso a los tipos de medios Media Foundation en la documentación del SDK de Media Foundation.
+Puede encontrar más información sobre cómo crear y Media Foundation tipos de medios en la documentación Media Foundation SDK.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Trabajar con códec MFTs](workingwithcodecmfts.md)
+[Trabajar con códecs MFT](workingwithcodecmfts.md)
 </dt> </dl>
 
  

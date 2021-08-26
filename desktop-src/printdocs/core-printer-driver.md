@@ -1,7 +1,7 @@
 ---
 description: Representa un controlador de impresora del que dependen otros controladores de impresora.
 ms.assetid: b03f9ac1-7ad2-4aee-b496-e1ee15ba7d38
-title: Estructura de CORE_PRINTER_DRIVER (winspool. h)
+title: CORE_PRINTER_DRIVER estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 786fa3491919659fca60700cfb086023c3fdef3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18ac3dba88d9cf781393b01b6594777426b7195e6f68afa0fd00a5bddb01f129
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950405"
 ---
-# <a name="core_printer_driver-structure"></a>Estructura del controlador de \_ impresora principal \_
+# <a name="core_printer_driver-structure"></a>CORE \_ PRINTER \_ DRIVER (Estructura DEL CONTROLADOR DE IMPRESORA PRINCIPAL)
 
 Representa un controlador de impresora del que dependen otros controladores de impresora.
 
@@ -61,20 +61,20 @@ Fecha y hora de la versión más reciente del controlador de impresora principal
 **dwlDriverVersion**
 </dt> <dd>
 
-El ID. de versión de la versión más reciente del controlador de impresora principal.
+Identificador de versión de la versión más reciente del controlador de impresora principal.
 
 </dd> <dt>
 
-**\[ruta de acceso máxima de szPackageID \_\]**
+**szPackageID \[ MAX \_ PATH\]**
 </dt> <dd>
 
-La ruta de acceso al paquete de controladores que contiene el controlador de impresora principal.
+Ruta de acceso al paquete de controladores que contiene el controlador de impresora principal.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura puede representar el controlador base de un fabricante en el que dependen los controladores de varios modelos de impresora.
+Esta estructura puede representar el controlador base de un fabricante del que dependen los controladores de varios modelos de impresora.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,10 +82,10 @@ Esta estructura puede representar el controlador base de un fabricante en el que
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **\_ Core \_ Printer \_ DRIVERW** (Unicode) y **\_ Core \_ Printer \_ drivera** (ANSI)<br/>                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
+| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ CORE \_ PRINTER \_ DRIVERW** (Unicode) e **\_ CORE PRINTER \_ \_ DRIVERA** (ANSI)<br/>                 |
 
 
 
@@ -96,7 +96,7 @@ Esta estructura puede representar el controlador base de un fabricante en el que
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API de Spooler de impresión](printing-and-print-spooler-structures.md)
 </dt> </dl>
 
  

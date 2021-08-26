@@ -1,22 +1,22 @@
 ---
-description: La estructura XMVECTORU32 expone los siguientes operadores.
+description: La estructura XMVECTORU32 expone los operadores siguientes.
 ms.assetid: 5b451eec-d9ec-456c-b7bb-c02f8c168dce
 title: Operadores XMVECTORU32
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5476ad1dc9bc2bfcbce1d87f0552245f583d5ef0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07f8e350211335498668a29ae9db39d69d4f2ec5f920fcf9020597d16121ca23
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948605"
 ---
 # <a name="xmvectoru32-operators"></a>Operadores XMVECTORU32
 
-La estructura [**XMVECTORU32**](xmvectoru32-data-type.md) expone los siguientes operadores.
+La estructura [**XMVECTORU32**](xmvectoru32-data-type.md) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,7 +26,7 @@ La estructura [**XMVECTORU32**](xmvectoru32-data-type.md) expone los siguientes 
 
 | Métodos                                                               | Descripción                                                                                                                                                                                                                                                                                               |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**operador \_ \_ m128i**](/previous-versions/windows/desktop/legacy/ee421369(v=vs.85))<br/> | Devuelve el objeto que implementa la instancia actual de [**XMVECTORU32**](xmvectoru32-data-type.md) convertido en una instancia de [ \_ \_ m128i](/cpp/cpp/m128i) de \[ sistemas de Windows que solo admite [SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100)) .\]<br/> |
+| [**operador \_ \_ m128i**](/previous-versions/windows/desktop/legacy/ee421369(v=vs.85))<br/> | Devuelve el objeto que implementa la instancia actual de [**XMVECTORU32**](xmvectoru32-data-type.md) que se convierte en una instancia [ \_ \_ m128i](/cpp/cpp/m128i) de Windows sistemas que solo \[ [admiten SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100))\]<br/> |
 | [**operador XMVECTOR**](/previous-versions/windows/desktop/legacy/ee421370(v=vs.85))<br/> | Devuelve la instancia de `XMVECTOR` que implementa la instancia actual de `XMVECTORU32` .<br/>                                                                                                                                                                                                         |
 
 
@@ -37,13 +37,13 @@ La estructura [**XMVECTORU32**](xmvectoru32-data-type.md) expone los siguientes 
 
 <dl> <dt>
 
-[Extensiones de XMVECTORU32](ovw-xmvectoru32-extensions.md)
+[Extensiones XMVECTORU32](ovw-xmvectoru32-extensions.md)
 </dt> <dt>
 
 **Tipos**
 </dt> <dt>
 
-[**XMVECTORU32, tipo de datos**](xmvectoru32-data-type.md)
+[**Tipo de datos XMVECTORU32**](xmvectoru32-data-type.md)
 </dt> </dl>
 
  

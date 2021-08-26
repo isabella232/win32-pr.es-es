@@ -1,15 +1,15 @@
 ---
-description: Obtenga información sobre el parámetro JobPrimaryCoverFrontSource. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el parámetro JobPrimaryCoverFrontSource. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: f27c5e65-87b0-47a4-a5dc-27b52082f097
 title: JobPrimaryCoverFrontSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e4698d826e59e513d5eb171381cd1b18ea4a751
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: a2602027aa6ae861be06d6364f557ec14888a15c7ebb46fb7b7165b14760acfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948595"
 ---
 # <a name="jobprimarycoverfrontsource"></a>JobPrimaryCoverFrontSource
 
@@ -24,7 +24,7 @@ Especifica el origen de una hoja principal de front-cover personalizada para el 
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefijo de ámbito <br/> | Trabajo<br/>                             |
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
@@ -84,7 +84,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

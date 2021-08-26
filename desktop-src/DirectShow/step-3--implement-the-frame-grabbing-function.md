@@ -1,30 +1,30 @@
 ---
-description: Paso 3 implementación de la función Frame-Grabbing
+description: 'Paso 3: Implementar la Frame-Grabbing función'
 ms.assetid: 4ec2e4a4-3ab0-45f1-b29a-313599fe9e7d
-title: Paso 3 implementación de la función Frame-Grabbing
+title: 'Paso 3: Implementar la Frame-Grabbing función'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a97f585ff365e40ec611a9e11ce365839aa87be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a75410c48765e9437cd328a220ccbecf2c207bdaae5242a9e41060bc13fa02eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904104"
 ---
-# <a name="step-3-implement-the-frame-grabbing-function"></a>Paso 3: implementar la función Frame-Grabbing
+# <a name="step-3-implement-the-frame-grabbing-function"></a>Paso 3: Implementar la función Frame-Grabbing trabajo
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-Este tema es el paso 3 de [capturar un fotograma de póster](grabbing-a-poster-frame.md).
+Este tema es el paso 3 de [La captura de un marco de póster.](grabbing-a-poster-frame.md)
 
-El siguiente paso consiste en implementar la función GetBitmap, que usa el detector de medios para capturar un fotograma de póster. Dentro de esta función, realice los pasos siguientes:
+El siguiente paso consiste en implementar la función GetBitmap, que usa El detector de medios para agarrar un marco de póster. Dentro de esta función, realice los pasos siguientes:
 
 1.  Cree el detector de medios.
 2.  Especifique un archivo multimedia.
-3.  Examine cada secuencia del archivo. Si se trata de un flujo de vídeo, obtenga las dimensiones nativas del vídeo.
-4.  Obtener un fotograma de póster, especificando el tiempo de búsqueda y la dimensión de destino.
+3.  Examine cada secuencia del archivo. Si se trata de una secuencia de vídeo, obtenga las dimensiones nativas del vídeo.
+4.  Obtenga un marco de póster, especificando el tiempo de búsqueda y la dimensión de destino.
 
-Cree el objeto de detector de medios llamando a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance):
+Cree el objeto Media Detector llamando a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance):
 
 
 ```C++
@@ -34,7 +34,7 @@ hr = pDet.CoCreateInstance(__uuidof(MediaDet));
 
 
 
-Especifique un nombre de archivo mediante el método [**IMediaDet::p el \_ nombre**](imediadet-put-filename.md) de archivo. Este método toma un parámetro **BSTR** .
+Especifique un nombre de archivo mediante el [**método IMediaDet::p ut \_ Filename.**](imediadet-put-filename.md) Este método toma un **parámetro BSTR.**
 
 
 ```C++
@@ -43,7 +43,7 @@ hr = pDet->put_Filename(bstrFilename);
 
 
 
-Obtiene el número de secuencias y recorre en bucle cada flujo que comprueba el tipo de medio. El método [**IMediaDet:: get \_ OutputStreams**](imediadet-get-outputstreams.md) recupera el número de secuencias y el método [**IMediaDet::p UT \_ CurrentStream**](imediadet-put-currentstream.md) especifica la secuencia que se va a examinar. Salga del bucle en la primera secuencia de vídeo.
+Obtiene el número de secuencias y recorre en bucle cada secuencia comprobando el tipo de medio. El [**método IMediaDet::get \_ OutputStreams**](imediadet-get-outputstreams.md) recupera el número de secuencias y el método [**IMediaDet::p ut \_ CurrentStream**](imediadet-put-currentstream.md) especifica qué flujo se va a examinar. Salga del bucle en la primera secuencia de vídeo.
 
 
 ```C++
@@ -66,9 +66,9 @@ if (!bFound) return VFW_E_INVALIDMEDIATYPE;
 
 
 
-Si no se encuentra ningún flujo de vídeo, la función se cierra.
+Si no se encuentra ninguna secuencia de vídeo, la función se cierra.
 
-En el código anterior, el método [**IMediaDet:: get \_ StreamType**](imediadet-get-streamtype.md) devuelve solo el GUID de tipo principal. Esto resulta práctico si no necesita examinar el tipo de medio completo. Sin embargo, para obtener las dimensiones de vídeo, es necesario examinar el bloque de formato, por lo que se necesita el tipo de medio completo. Puede recuperarlo llamando al método [**IMediaDet:: get \_ StreamMediaType**](imediadet-get-streammediatype.md) , que rellena una estructura de [**\_ \_ tipo media AM**](/windows/win32/api/strmif/ns-strmif-am_media_type) . El detector de medios convierte todos los flujos de vídeo en formato sin comprimir, con un bloque de formato [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) .
+En el código anterior, el [**método IMediaDet::get \_ StreamType**](imediadet-get-streamtype.md) devuelve solo el GUID de tipo principal. Esto es práctico si no es necesario examinar el tipo de medio completo. Sin embargo, para obtener las dimensiones de vídeo, es necesario examinar el bloque de formato, por lo que se necesita el tipo de medio completo. Puede recuperarlo llamando al método [**IMediaDet::get \_ StreamMediaType,**](imediadet-get-streammediatype.md) que rellena una estructura [**AM MEDIA \_ \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type) Media Detector convierte todas las secuencias de vídeo en formato sin comprimir, con un [**bloque de formato VIDEOINFOHEADER.**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader)
 
 
 ```C++
@@ -92,9 +92,9 @@ FreeMediaType(mt);
 
 
 
-El método [**Get \_ StreamMediaType**](imediadet-get-streammediatype.md) asigna el bloque de formato, que el llamador debe liberar. En este ejemplo se usa la función [**FreeMediaType**](freemediatype.md) de la biblioteca de clases base.
+El [**método get \_ StreamMediaType**](imediadet-get-streammediatype.md) asigna el bloque de formato, que el autor de la llamada debe liberar. En este ejemplo se usa [**la función FreeMediaType**](freemediatype.md) de la biblioteca de clases base.
 
-Ahora está listo para obtener el fotograma del póster. En primer lugar, llame al método [**IMediaDet:: GetBitmapBits**](imediadet-getbitmapbits.md) con un puntero **nulo** para el búfer:
+Ahora está listo para obtener el marco del póster. En primer lugar, [**llame al método IMediaDet::GetBitmapBits**](imediadet-getbitmapbits.md) con un **puntero NULL** para el búfer:
 
 
 ```C++
@@ -104,9 +104,9 @@ hr = pDet->GetBitmapBits(0, &lSize, NULL, width, height);
 
 
 
-Esta llamada devuelve el tamaño de búfer necesario en el parámetro *Lsize* . El primer parámetro especifica el tiempo de flujo en el que se va a buscar; en este ejemplo se usa la hora cero. Para el ancho y el alto, en este ejemplo se usan las dimensiones de vídeo nativas obtenidas anteriormente. Si especifica otros valores, el detector de medios extenderá el mapa de bits para que coincida.
+Esta llamada devuelve el tamaño de búfer necesario en el *parámetro lSize.* El primer parámetro especifica el tiempo de secuencia al que se debe buscar; en este ejemplo se usa el tiempo cero. Para el ancho y alto, en este ejemplo se usan las dimensiones de vídeo nativas obtenidas anteriormente. Si especifica otros valores, Media Detector ajustará el mapa de bits para que coincida.
 
-Si el método se ejecuta correctamente, asigne el búfer y llame de nuevo a [**GetBitmapBits**](imediadet-getbitmapbits.md) :
+Si el método se realiza correctamente, asigne el búfer y vuelva a llamar [**a GetBitmapBits:**](imediadet-getbitmapbits.md)
 
 
 ```C++
@@ -215,13 +215,13 @@ HRESULT GetBitmap(LPTSTR pszFileName, BITMAPINFOHEADER** ppbmih)
 
 
 
-Siguiente: [paso 4: dibujo del mapa de bits en el área cliente](step-4--draw-the-bitmap-on-the-client-area.md)
+Siguiente: [Paso 4: Dibujar el mapa de bits en el área cliente](step-4--draw-the-bitmap-on-the-client-area.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Captación de un fotograma de póster](grabbing-a-poster-frame.md)
+[Captura de un marco de póster](grabbing-a-poster-frame.md)
 </dt> </dl>
 
  

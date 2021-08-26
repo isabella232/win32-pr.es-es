@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura Job info \_ 3 se usa para vincular un conjunto de trabajos de impresión.
+description: La estructura JOB \_ INFO \_ 3 se usa para vincular un conjunto de trabajos de impresión.
 ms.assetid: a110f555-dc33-450c-ae77-ea26f0f69448
-title: Estructura de JOB_INFO_3 (winspool. h)
+title: JOB_INFO_3 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: c76cbb6c019878d9c392d21caa40c604df3a5f12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 111b292c5f355aceefa95fb01bafc2cb9220757618d39d4b3ca29bbf77ca4570
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948685"
 ---
-# <a name="job_info_3-structure"></a>Estructura de información de trabajo \_ \_ 3
+# <a name="job_info_3-structure"></a>Estructura \_ de JOB INFO \_ 3
 
-La estructura **Job \_ info \_ 3** se usa para vincular un conjunto de trabajos de impresión.
+La **estructura JOB INFO \_ \_ 3** se usa para vincular un conjunto de trabajos de impresión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,7 +70,7 @@ Este valor está reservado para uso futuro. Debe establecerlo en cero.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ Este valor está reservado para uso futuro. Debe establecerlo en cero.
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumJobs**](enumjobs.md)

@@ -1,29 +1,29 @@
 ---
-description: En este tema se muestra código de ejemplo para usar el origen de Sequencer en Microsoft Media Foundation.
+description: En este tema se muestra código de ejemplo para usar el origen del secuenciador en Microsoft Media Foundation.
 ms.assetid: 6f39a297-33a9-414a-9d41-47aec54eaa6b
-title: Código de ejemplo de origen de Sequencer
+title: Código de ejemplo de origen del secuenciador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a587a9b77413ad22ac49111489cf3e1b89cadf8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3098faa0b979d6ad3baa96256c0ffac1eb14f482df5caff966ebc1cda3957f50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012374"
 ---
-# <a name="sequencer-source-example-code"></a>Código de ejemplo de origen de Sequencer
+# <a name="sequencer-source-example-code"></a>Código de ejemplo de origen del secuenciador
 
-En este tema se muestra código de ejemplo para usar el [origen de Sequencer](sequencer-source.md) en Microsoft Media Foundation. Contiene las siguientes secciones:
+En este tema se muestra código de ejemplo para usar [el origen del secuenciador](sequencer-source.md) en Microsoft Media Foundation. Contiene las siguientes secciones:
 
--   [Clase CPlaylist](#cplaylist-class)
--   [Crear una instancia de CPlaylist](#creating-an-instance-of-cplaylist)
+-   [CPlaylist (clase)](#cplaylist-class)
+-   [Creación de una instancia de CPlaylist](#creating-an-instance-of-cplaylist)
 -   [Agregar y quitar segmentos de lista de reproducción](#adding-and-removing-playlist-segments)
--   [Controlar eventos de sesión](#handling-session-events)
+-   [Control de eventos de sesión](#handling-session-events)
 -   [Temas relacionados](#related-topics)
 
-## <a name="cplaylist-class"></a>Clase CPlaylist
+## <a name="cplaylist-class"></a>CPlaylist (clase)
 
-La `CPlaylist` clase se deriva de la `CPlayer` clase que se muestra en el tutorial [Cómo reproducir archivos multimedia con Media Foundation](how-to-play-unprotected-media-files.md).
+La clase se deriva de la clase que se muestra en el tutorial Cómo reproducir archivos `CPlaylist` multimedia con `CPlayer` [Media Foundation](how-to-play-unprotected-media-files.md).
 
 
 ```C++
@@ -89,9 +89,9 @@ public:
 
 
 
-## <a name="creating-an-instance-of-cplaylist"></a>Crear una instancia de CPlaylist
+## <a name="creating-an-instance-of-cplaylist"></a>Creación de una instancia de CPlaylist
 
-El `CPlaylist::CreateInstance` método crea un nuevo `CPlaylist` objeto. Internamente, este método llama `CPlaylist::Initialize` a para inicializar el objeto. El `Initialize` método llama a [**MFCreateSequencerSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesequencersource) para crear el origen de la secuencia. También llama a [**IMFMediaSession:: GetClock**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getclock) para obtener un puntero al reloj de presentación.
+El `CPlaylist::CreateInstance` método crea un nuevo objeto `CPlaylist` . Internamente, este método llama `CPlaylist::Initialize` a para inicializar el objeto . El `Initialize` método llama a [**MFCreateSequencerSource para**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesequencersource) crear el origen de secuencia. También llama a [**IMFMediaSession::GetClock**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getclock) para obtener un puntero al reloj de presentación.
 
 
 ```C++
@@ -186,9 +186,9 @@ El `AddSegment` método agrega un nuevo segmento de lista de reproducción.
 
 Este método realiza los pasos siguientes:
 
-1.  Crea una topología de reproducción. El código de este paso se muestra en el tema [crear topologías de reproducción](creating-playback-topologies.md).
-2.  Llama a [**IMFSequencerSource:: AppendTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-appendtopology) para agregar la topología a la lista de reproducción.
-3.  En el primer segmento, obtiene el valor del atributo [**MF \_ PD \_ Duration**](mf-pd-duration-attribute.md) , que contiene la duración de la reproducción.
+1.  Crea una topología de reproducción. El código de este paso se muestra en el tema [Creación de topologías de reproducción.](creating-playback-topologies.md)
+2.  Llama [**a IMFSequencerSource::AppendTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-appendtopology) para agregar la topología a la lista de reproducción.
+3.  En el primer segmento, obtiene el valor del atributo [**MF \_ PD \_ DURATION,**](mf-pd-duration-attribute.md) que contiene la duración de reproducción.
 4.  Almacena el identificador de segmento y el identificador de topología en una tabla de búsqueda.
 
 
@@ -261,7 +261,7 @@ done:
 
 
 
-El `AddSegment` método es privado para `CPlaylist` y se llama desde el siguiente método público:
+El `AddSegment` método es privado para y se llama desde el siguiente método `CPlaylist` público:
 
 
 ```C++
@@ -326,13 +326,13 @@ done:
 
 
 
-Al crear el primer segmento de la lista de reproducción, debe poner en cola la topología de segmentos en la sesión multimedia, como se indica a continuación:
+Al crear el primer segmento de lista de reproducción, debe poner en cola la topología de segmento en la sesión multimedia, como se muestra a continuación:
 
-1.  Consulte el origen del secuenciador para la interfaz [**IMFMediaSourceTopologyProvider**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourcetopologyprovider) .
-2.  Pase el descriptor de presentación al método [**IMFMediaSourceTopologyProvider:: GetMediaSourceTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasourcetopologyprovider-getmediasourcetopology) . Este método obtiene un puntero a la topología de segmentos. Tenga en cuenta que esta topología no es exactamente igual que la topología de reproducción que creó anteriormente. En su lugar, es una versión modificada de la topología. Para obtener más información, consulte [acerca del origen del secuenciador](about-the-sequencer-source.md).
-3.  Poner en cola la topología en la sesión multimedia mediante una llamada a [**IMFMediaSession:: SetTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology).
+1.  Consulte el origen del secuenciador para la [**interfaz IMFMediaSourceTopologyProvider.**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourcetopologyprovider)
+2.  Pase el descriptor de presentación [**al método IMFMediaSourceTopologyProvider::GetMediaSourceTopology.**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasourcetopologyprovider-getmediasourcetopology) Este método obtiene un puntero a la topología de segmento. Tenga en cuenta que esta topología no es exactamente la misma que la topología de reproducción que creó anteriormente. En su lugar, es una versión modificada de esa topología. Para obtener más información, vea [Acerca del origen del secuenciador.](about-the-sequencer-source.md)
+3.  Para poner en cola la topología en la sesión multimedia, llame [**a IMFMediaSession::SetTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology).
 
-En el código siguiente se muestran estos pasos. Este mismo código también se usa cuando la lista de reproducción revierte el siguiente segmento.
+En el código siguiente se muestran estos pasos. Este mismo código también se usa cuando la lista de reproducción preinselección el segmento siguiente.
 
 
 ```C++
@@ -368,7 +368,7 @@ done:
 
 
 
-Para eliminar un segmento de lista de reproducción, llame a [**IMFSequencerSource::D eletetopology**](/windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-deletetopology). El segmento se especifica mediante el identificador de segmento. (Este es el motivo por el que la aplicación debe almacenar en caché la lista de identificadores de segmento).
+Para eliminar un segmento de lista de reproducción, llame [**a IMFSequencerSource::D eleteTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-deletetopology). El segmento se especifica mediante el identificador de segmento. (Este es el motivo por el que la aplicación debe almacenar en caché la lista de identificadores de segmento).
 
 
 ```C++
@@ -422,7 +422,7 @@ done:
 
 
 
-## <a name="handling-session-events"></a>Controlar eventos de sesión
+## <a name="handling-session-events"></a>Control de eventos de sesión
 
 
 ```C++

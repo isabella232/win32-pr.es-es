@@ -1,5 +1,5 @@
 ---
-title: Elemento SubComponent (DebugDataType)
+title: SubComponent (DebugDataType) (Elemento)
 description: Nombre del subcomponente que registró el mensaje de seguimiento.
 ms.assetid: f5fcb721-6e2f-42ea-a2b3-68706028eb88
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2cf13df05dbc00fc3155ffb3f84df6399ddbac07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 770b6bbc8e4292252a41f36bc9a6efdfcb4cfdd5a552c5d5e8716f4750213a98
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904295"
 ---
-# <a name="subcomponent-debugdatatype-element"></a>Elemento SubComponent (DebugDataType)
+# <a name="subcomponent-debugdatatype-element"></a>SubComponent (DebugDataType) (Elemento)
 
 Nombre del subcomponente que registró el mensaje de seguimiento.
 
@@ -30,7 +30,7 @@ Nombre del subcomponente que registró el mensaje de seguimiento.
  />
 ```
 
-El elemento de **subcomponente** se define mediante el tipo complejo de [**DebugDataType**](eventschema-debugdatatype-complextype.md) .
+El tipo complejo [**DebugDataType**](eventschema-debugdatatype-complextype.md) define el elemento **SubComponent.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento de **subcomponente** se define mediante el tipo complejo de [**Debug
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

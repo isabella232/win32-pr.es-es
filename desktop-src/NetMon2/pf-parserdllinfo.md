@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura PF PARSERDLLINFO define los analizadores ubicados en el archivo DLL del analizador.
+description: La estructura \_ PF PARSERDLLINFO define los analizadores ubicados en el archivo DLL del analizador.
 ms.assetid: a7473b58-7767-4224-be3b-e96132d98adf
-title: Estructura de PF_PARSERDLLINFO (Netmon. h)
+title: PF_PARSERDLLINFO estructura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: ab4a3673c567a72cb5d0284a07d5603913e77550
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: caaafeb9883ad514366f91f3834354fbd5ac0850400e61594a5307c4533e0960
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962855"
 ---
-# <a name="pf_parserdllinfo-structure"></a>\_Estructura PF PARSERDLLINFO
+# <a name="pf_parserdllinfo-structure"></a>Estructura \_ PF PARSERDLLINFO
 
-La estructura **PF \_ PARSERDLLINFO** define los analizadores ubicados en el archivo DLL del analizador.
+La **estructura \_ PF PARSERDLLINFO** define los analizadores ubicados en el archivo DLL del analizador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,30 +43,30 @@ typedef struct _PF_PARSERDLLINFO {
 **nParsers**
 </dt> <dd>
 
-Número de analizadores en el archivo DLL del analizador.
+Número de analizadores del archivo DLL del analizador.
 
 </dd> <dt>
 
 **ParserInfo**
 </dt> <dd>
 
-Matriz de estructuras [PF \_ PARSERINFO](pf-parserinfo.md) que describen cada analizador en el archivo DLL del analizador.
+Matriz [de estructuras PF \_ PARSERINFO](pf-parserinfo.md) que describen cada analizador en el archivo DLL del analizador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función de exportación [ParserAutoInstallInfo](parserautoinstallinfo.md) que se implementa en el archivo DLL del analizador devuelve la estructura **PF \_ PARSERDLLINFO** . La función **ParserAutoInstallInfo** identifica el número de analizadores en el archivo dll y utiliza una matriz de estructuras [PF \_ PARSERINFO](pf-parserinfo.md) para describir cada analizador.
+La función de exportación [ParserAutoInstallInfo](parserautoinstallinfo.md) que se implementa en el archivo DLL del analizador devuelve la estructura **PF \_ PARSERDLLINFO.** La **función ParserAutoInstallInfo** identifica el número de analizadores del archivo DLL y usa una matriz de estructuras [PF \_ PARSERINFO](pf-parserinfo.md) para describir cada analizador.
 
-La \_ estructura PF PARSERDLLINFO debe estar asignada mediante **HeapAlloc**.
+La estructura \_ PF PARSERDLLINFO debe asignarse mediante **HeapAlloc**.
 
 
 
 | Para obtener información acerca de                                               | Vea                                                                         |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | Qué son los analizadores y cómo funcionan con Monitor de red.        | [Analizadores](parsers.md)                                                      |
-| Qué puntos de entrada se incluyen en el archivo DLL del analizador.               | [Arquitectura de DLL de analizador](parser-dll-architecture.md)                      |
-| Cómo implementar **ParserAutoInstallInfo**  incluye un ejemplo. | [Implementación de ParserAutoIstallInfo](implementing-parserautoinstallinfo.md) |
+| Qué puntos de entrada se incluyen en el archivo DLL del analizador.               | [Arquitectura dll del analizador](parser-dll-architecture.md)                      |
+| Cómo implementar **ParserAutoInstallInfo incluye**  un ejemplo. | [Implementación de ParserAutoIstallInfo](implementing-parserautoinstallinfo.md) |
 
 
 
@@ -80,7 +80,7 @@ La \_ estructura PF PARSERDLLINFO debe estar asignada mediante **HeapAlloc**.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

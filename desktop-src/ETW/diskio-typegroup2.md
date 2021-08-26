@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento que marca el principio de los eventos de lectura, escritura y vaciado de e/s de disco. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento que marca el principio de los eventos de lectura, escritura y vaciado de E/S de disco. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 96543ef9-cc2b-4d9a-86a8-f2458439e4d8
-title: DiskIo_TypeGroup2 (clase)
+title: DiskIo_TypeGroup2 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ea08f32106c935be628bcdcd22e39ab92a0566e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60c1f2be2e90ddb8b3d7a396bfa925f0b7e83181effe7fb8c947bd911133f441
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963145"
 ---
-# <a name="diskio_typegroup2-class"></a>Desmontaje \_ TypeGroup2 (clase)
+# <a name="diskio_typegroup2-class"></a>Clase \_ TypeGroup2 de DiskIo
 
-Esta clase es la clase de tipo de evento que marca el principio de los eventos de lectura, escritura y vaciado de e/s de disco.
+Esta clase es la clase de tipo de evento que marca el principio de los eventos de lectura, escritura y vaciado de E/S de disco.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,36 +40,36 @@ class DiskIo_TypeGroup2 : DiskIo
 
 ## <a name="members"></a>Miembros
 
-La clase **desmontaje \_ TypeGroup2** tiene estos tipos de miembros:
+La **clase DiskIo \_ TypeGroup2** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **desmontaje \_ TypeGroup2** tiene estas propiedades.
+La **clase DiskIo \_ TypeGroup2** tiene estas propiedades.
 
 <dl> <dt>
 
-**IRP**
+**Irp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**WmiDataId**](event-tracing-mof-qualifiers.md) (1), [**puntero**](event-tracing-mof-qualifiers.md)
+Calificadores: [**WmiDataId**](event-tracing-mof-qualifiers.md) (1), [**Pointer**](event-tracing-mof-qualifiers.md)
 </dt> </dl>
 
-Paquete de solicitud de e/s. Esta propiedad identifica la actividad de e/s.
+Paquete de solicitud de E/S. Esta propiedad identifica la actividad de E/S.
 
 </dd> <dt>
 
 **IssuingThreadId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -78,9 +78,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**WmiDataId**](event-tracing-mof-qualifiers.md) (2)
 </dt> </dl>
 
-Identificador del subproceso que se emite.
+Identificador del subproceso emisor.
 
-**Windows server 2008 R2, Windows server 2008, Windows 7 y Windows Vista:** Esta propiedad no se admite.
+**Windows Server 2008 R2, Windows Server 2008, Windows 7 y Windows Vista:** Esta propiedad no se admite.
 
 </dd> </dl>
 
@@ -90,8 +90,8 @@ Identificador del subproceso que se emite.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -99,7 +99,7 @@ Identificador del subproceso que se emite.
 
 <dl> <dt>
 
-[**Desmontaje**](diskio.md)
+[**DiskIo**](diskio.md)
 </dt> </dl>
 
  

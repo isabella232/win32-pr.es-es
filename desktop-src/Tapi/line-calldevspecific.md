@@ -1,19 +1,19 @@
 ---
-description: El mensaje CALLDEVSPECIFIC de la línea de TSPI \_ se envía a la función de devolución de llamada LINEEVENT para notificar a TAPI los eventos específicos del dispositivo que se producen en una llamada.
+description: El mensaje TSPI LINE CALLDEVSPECIFIC se envía a la función de devolución de llamada LINEEVENT para notificar a TAPI sobre los eventos específicos del dispositivo que se producen \_ en una llamada.
 ms.assetid: accd753a-3be0-4c7d-bbc7-d294d1381144
-title: Mensaje de LINE_CALLDEVSPECIFIC (TSPI. h)
+title: LINE_CALLDEVSPECIFIC mensaje (Tspi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a48bf8a54a1f326fe7bb27c82349e5575c8bbf6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9930da3c30d51781b10b28ed7a712cb681950eaea1a387212a5e0894658a9125
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012605"
 ---
-# <a name="line_calldevspecific-message"></a>Mensaje de línea \_ CALLDEVSPECIFIC
+# <a name="line_calldevspecific-message"></a>MENSAJE \_ LINE CALLDEVSPECIFIC
 
-El mensaje **\_ CALLDEVSPECIFIC** de la línea de TSPI se envía a la función de devolución de llamada [**LINEEVENT**](/windows/win32/api/tspi/nc-tspi-lineevent) para notificar a TAPI los eventos específicos del dispositivo que se producen en una llamada. El significado del mensaje y la interpretación de los parámetros de *dwParam1* a través de *dwParam3* son específicos del dispositivo.
+El mensaje TSPI **LINE \_ CALLDEVSPECIFIC** se envía a la función de devolución de llamada [**LINEEVENT**](/windows/win32/api/tspi/nc-tspi-lineevent) para notificar a TAPI sobre los eventos específicos del dispositivo que se producen en una llamada. El significado del mensaje y la interpretación de los *parámetros dwParam1* a *dwParam3* son específicos del dispositivo.
 
 
 ```C++
@@ -29,7 +29,7 @@ El mensaje **\_ CALLDEVSPECIFIC** de la línea de TSPI se envía a la función d
 *htLine* 
 </dt> <dd>
 
-El identificador de objeto opaco TAPI para el dispositivo de línea.
+Identificador de objeto opaco TAPI para el dispositivo de línea.
 
 </dd> <dt>
 
@@ -43,7 +43,7 @@ Identificador de objeto opaco TAPI para el dispositivo de llamada.
 *dwMsg* 
 </dt> <dd>
 
-La línea de valor \_ CALLDEVSPECIFIC.
+Valor LINE \_ CALLDEVSPECIFIC.
 
 </dd> <dt>
 
@@ -68,13 +68,13 @@ Específico del dispositivo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un proveedor de servicios usa el mensaje **line \_ CALLDEVSPECIFIC** junto con la función [**TSPI \_ lineDevSpecific**](/windows/win32/api/tspi/nf-tspi-tspi_linedevspecific) . Su significado es específico del dispositivo.
+Un proveedor de servicios usa el mensaje **LINE \_ CALLDEVSPECIFIC** junto con la función [**\_ lineDevSpecific de TSPI.**](/windows/win32/api/tspi/nf-tspi-tspi_linedevspecific) Su significado es específico del dispositivo.
 
-TAPI envía el mensaje [**line \_ DEVSPECIFIC**](/previous-versions/windows/desktop/legacy/ms725225(v=vs.85)) a las aplicaciones en respuesta a la recepción de este mensaje de un proveedor de servicios. Los parámetros *htLine* y *htCall* se traducen a la *HCall* adecuada como el parámetro *hDevice* en el nivel de TAPI. Los parámetros *dwParam1*, *dwParam2* y *dwParam3* se pasan sin modificar.
+TAPI envía el [**mensaje \_ LINE DEVSPECIFIC**](/previous-versions/windows/desktop/legacy/ms725225(v=vs.85)) a las aplicaciones en respuesta a recibir este mensaje de un proveedor de servicios. Los *parámetros htLine* *y htCall* se traducen al *hCall adecuado* como el parámetro *hDevice* en el nivel TAPI. Los *parámetros dwParam1,* *dwParam2* y *dwParam3* se pasan a través de sin modificar.
 
-No hay ningún mensaje directamente correspondiente en el nivel de TAPI, aunque este mensaje es muy similar a la [**línea \_ DEVSPECIFIC**](/previous-versions/windows/desktop/legacy/ms725225(v=vs.85)). En el nivel de TSPI, los mensajes específicos del dispositivo se dividen entre los eventos de informes en líneas y direcciones, y los eventos de informes en llamadas.
+No hay ningún mensaje directamente correspondiente en el nivel TAPI, aunque este mensaje es muy similar a [**LINE \_ DEVSPECIFIC.**](/previous-versions/windows/desktop/legacy/ms725225(v=vs.85)) En el nivel de TSPI, los mensajes específicos del dispositivo se dividen entre los eventos de informes en líneas y direcciones, y los eventos de informes en las llamadas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,8 +82,8 @@ No hay ningún mensaje directamente correspondiente en el nivel de TAPI, aunque 
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TSPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tspi.h</dt> </dl> |
 
 
 
@@ -91,13 +91,13 @@ No hay ningún mensaje directamente correspondiente en el nivel de TAPI, aunque 
 
 <dl> <dt>
 
-[**LÍNEA \_ DEVSPECIFIC**](/previous-versions/windows/desktop/legacy/ms725225(v=vs.85))
+[**LINE \_ DEVSPECIFIC**](/previous-versions/windows/desktop/legacy/ms725225(v=vs.85))
 </dt> <dt>
 
 [**LINEEVENT**](/windows/win32/api/tspi/nc-tspi-lineevent)
 </dt> <dt>
 
-[**TSPI \_ lineDevSpecific**](/windows/win32/api/tspi/nf-tspi-tspi_linedevspecific)
+[**Línea \_ TSPIDevSpecific**](/windows/win32/api/tspi/nf-tspi-tspi_linedevspecific)
 </dt> </dl>
 
  

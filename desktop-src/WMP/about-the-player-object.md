@@ -3,30 +3,30 @@ title: Acerca del objeto Player
 description: Acerca del objeto Player
 ms.assetid: db995e75-d4e3-4f50-a34a-cc1b2f2c5db5
 keywords:
-- Media Player de Windows, objeto Player
-- Modelo de objetos de Windows Media Player, objeto Player
-- modelo de objetos, objeto Player
-- Control ActiveX de Windows Media Player, objeto Player
-- Control ActiveX, objeto Player
-- Control ActiveX móvil de Windows Media Player, objeto Player
-- Windows Media Player Mobile, objeto Player
+- Reproductor de Windows Media,objeto Player
+- Reproductor de Windows Media modelo de objetos, objeto Player
+- object model,Player object
+- Reproductor de Windows Media ActiveX control, objeto Player
+- ActiveX control, objeto Player
+- Reproductor de Windows Media Control de ActiveX móvil, objeto Player
+- Reproductor de Windows Media Mobile,Player ,objeto
 - Objeto Player
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c030d42cd6fd65811c41af7401ec3e60c8c7801
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e7a6d32fe08bca480d907d0b97588cdc9477441951f619a0fab4fcbcb2933c48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104148849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903115"
 ---
 # <a name="about-the-player-object"></a>Acerca del objeto Player
 
-El objeto **Player** es el objeto principal para el control Media Player de Windows. Todos los demás objetos relacionados se conectan a este objeto a través de propiedades específicas que devuelven el objeto. Por ejemplo, se tiene acceso al objeto de **configuración** a través de la propiedad **Settings** . El objeto **Player** proporciona métodos, propiedades y eventos relacionados con la funcionalidad básica de Windows Media Player.
+El **objeto Player** es el objeto principal del Reproductor de Windows Media control. Todos los demás objetos relacionados se conectan a este objeto a través de propiedades específicas que devuelven el objeto. Por ejemplo, se **accede al Configuración** a través de la propiedad **settings.** El **objeto Player** proporciona métodos, propiedades y eventos relacionados con la funcionalidad principal de Reproductor de Windows Media.
 
-Dado que esta referencia también se utiliza para la programación de máscaras, el identificador del objeto de **reproductor** será "Player" para obtener ejemplos de sintaxis.
+Dado que esta referencia también se va a usar para la programación de máscaras, el identificador del objeto **Player** será "player" para los ejemplos de sintaxis.
 
-El uso del atributo global **Player** dentro de un archivo de definición de máscara proporciona acceso al objeto **Player** para su uso en scripts. A través del objeto **Player** , todos los demás objetos del control Media Player de Windows también se pueden acceder a los scripts. Los eventos del objeto **Player** y la propiedad **URL** también se pueden especificar en tiempo de diseño mediante el elemento de máscara [Player](player-element.md) . Para obtener más información, vea [máscaras de Windows Media Player](windows-media-player-skins.md).
+El uso del **atributo** global player dentro de un archivo de definición de máscara proporciona acceso al **objeto Player** para su uso en scripting. A través del **objeto Player,** todos los demás objetos del control Reproductor de Windows Media también son accesibles para los scripts. Los eventos del objeto **Player y** la propiedad **URL** también se pueden especificar en tiempo de diseño mediante el elemento de [máscara PLAYER.](player-element.md) Para obtener más información, [vea Reproductor de Windows Media Skins](windows-media-player-skins.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -38,9 +38,9 @@ El uso del atributo global **Player** dentro de un archivo de definición de má
 [**Modelo de objetos del reproductor para lenguajes de scripting**](player-object-model-for-scripting-languages.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

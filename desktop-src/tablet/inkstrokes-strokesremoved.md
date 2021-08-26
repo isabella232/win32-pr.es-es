@@ -1,19 +1,19 @@
 ---
 description: Se produce cuando se eliminan uno o varios trazos de la colección InkStrokes.
 ms.assetid: 58d78143-c733-45dc-ae5f-fe13136010db
-title: Evento InkStrokes. StrokesRemoved (Msinkaut. h)
+title: Evento InkStrokes.StrokesRemoved (Msmutut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86448f9676e07a11effe683ecd883874791ff3b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 69a5c4f7d53f88c50efd77e537cfa311f08ab168abdb4a05392286fb6c0b6b4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119934865"
 ---
-# <a name="inkstrokesstrokesremoved-event"></a>Evento InkStrokes. StrokesRemoved
+# <a name="inkstrokesstrokesremoved-event"></a>Evento InkStrokes.StrokesRemoved
 
-Se produce cuando se eliminan uno o varios trazos de la colección [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) .
+Se produce cuando se eliminan uno o varios trazos de la [colección InkStrokes.](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -30,12 +30,12 @@ void StrokesRemoved(
 
 <dl> <dt>
 
-*StrokeIds* \[ de\]
+*StrokeIds* \[ En\]
 </dt> <dd>
 
-La matriz de enteros de los identificadores de todos los objetos [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) eliminados cuando se produce este evento.
+Matriz de enteros de identificadores para cada [**objeto IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) eliminado cuando se produce este evento.
 
-Para obtener más información sobre la estructura de variante, vea [usar la biblioteca com](using-the-com-library.md).
+Para obtener más información sobre la estructura VARIANT, vea [Usar la biblioteca COM](using-the-com-library.md).
 
 </dd> </dl>
 
@@ -43,9 +43,9 @@ Para obtener más información sobre la estructura de variante, vea [usar la bib
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en la \_ interfaz IInkEvents. La \_ interfaz IInkEvents implementa la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ SEStrokesRemoved.
+Este método de evento se define en la \_ interfaz IInkEvents. La \_ interfaz IInkEvents implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ SEStrokesRemoved.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Este método de evento se define en la \_ interfaz IInkEvents. La \_ interfaz II
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -64,13 +64,13 @@ Este método de evento se define en la \_ interfaz IInkEvents. La \_ interfaz II
 
 <dl> <dt>
 
-[Colección InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
+[InkStrokes Collection](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
 </dt> <dt>
 
-[**Quitar método \[ InkStrokes colección\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokes-remove)
+[**Remove Method \[ InkStrokes Collection\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokes-remove)
 </dt> <dt>
 
-[**Clase InkDisp**](inkdisp-class.md)
+[**InkDisp (clase)**](inkdisp-class.md)
 </dt> </dl>
 
  

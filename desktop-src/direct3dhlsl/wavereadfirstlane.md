@@ -1,9 +1,9 @@
 ---
-title: WaveReadLaneFirst función)
+title: Función WaveReadLaneFirst
 description: Devuelve el valor de la expresión para el carril activo de la onda actual con el índice más pequeño.
 ms.assetid: 89CA4FD5-4573-42ED-88D3-01C79C69FF6F
 keywords:
-- WaveReadLaneFirst de función HLSL
+- Función HLSL de WaveReadLaneFirst
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 04d10e5439b8cd653f7c0a37d3a951167561f964
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 7b7b8e22cb17db4bdb2d692dc003baf63a6c6836c7d1a05a67444d254940e342
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104984103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948915"
 ---
-# <a name="wavereadlanefirst-function"></a>WaveReadLaneFirst función)
+# <a name="wavereadlanefirst-function"></a>Función WaveReadLaneFirst
 
 Devuelve el valor de la expresión para el carril activo de la onda actual con el índice más pequeño.
 
@@ -47,9 +47,9 @@ La expresión que se va a evaluar.
 
 El valor resultante es uniforme en toda la onda.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del sombreador. 
+Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del sombreador. 
 
 
 
@@ -59,10 +59,10 @@ Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del
 
 <dl> <dt>
 
-[Información general sobre el modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo de sombreador 6](shader-model-6-0.md)
+[Shader Model 6](shader-model-6-0.md)
 </dt> </dl>
 
  

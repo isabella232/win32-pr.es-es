@@ -1,7 +1,7 @@
 ---
-description: Indica una condición de advertencia de DVD.
+description: Señala una condición de advertencia de DVD.
 ms.assetid: d7221e8a-089f-4eaf-a193-548709c14336
-title: EC_DVD_WARNING (Dvdevcode. h)
+title: EC_DVD_WARNING (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 7f25d4565c2afeb4619f7832f6d5742e07dcca0c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2f2d604b46a4c4bc2213fe74210defdf408336b69218589ff42209cebe025e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965565"
 ---
-# <a name="ec_dvd_warning"></a>\_Advertencia de DVD de EC \_
+# <a name="ec_dvd_warning"></a>ADVERTENCIA \_ DE DVD DE \_ EC
 
-Indica una condición de advertencia de DVD.
+Señala una condición de advertencia de DVD.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,14 +31,14 @@ Indica una condición de advertencia de DVD.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valor **DWORD** que indica la condición de advertencia. Miembro del tipo de datos de [**\_ Advertencia de DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_warning) enumerado.
+**Valor DWORD** que indica la condición de advertencia. Miembro del tipo de datos enumerado [**\_ DVD WARNING.**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_warning)
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-Si *pParam1* es igual a \_ Advertencia de DVD \_ Open, la advertencia de advertencia de DVD \_ o la \_ \_ Advertencia de DVD \_ leída, *lParam2* contiene el último código de error devuelto por **GetLastError**.
+Si *pParam1 es* igual a DVD WARNING Open, DVD WARNING Seek o \_ DVD WARNING \_ \_ \_ \_ \_ Read, *lParam2* contiene el último código de error devuelto de GetLastError.
 
 </dd> </dl>
 
@@ -48,7 +48,7 @@ Si *pParam1* es igual a \_ Advertencia de DVD \_ Open, la advertencia de adverte
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

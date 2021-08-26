@@ -1,7 +1,7 @@
 ---
-description: Indica que se ha insertado un disco DVD en la unidad.
+description: Indica que se insertó un disco de DVD en la unidad.
 ms.assetid: ce233c94-2eae-457c-919b-7c4d8334979a
-title: EC_DVD_DISC_INSERTED (Dvdevcode. h)
+title: EC_DVD_DISC_INSERTED (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: c98d32960e2ab6a21633899164b3ff84525f2aaf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6911d4ad044e0b2080007f9751bd7090b182d8474673da98d35dd91544947e03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997925"
 ---
-# <a name="ec_dvd_disc_inserted"></a>\_disco DVD de EC \_ \_ insertado
+# <a name="ec_dvd_disc_inserted"></a>DISCO \_ DE DVD EC \_ \_ INSERTADO
 
-Indica que se ha insertado un disco DVD en la unidad.
+Indica que se insertó un disco de DVD en la unidad.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -42,11 +42,11 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La reproducción se inicia automáticamente cuando se inserta un disco. La aplicación no tiene que realizar ninguna acción especial en respuesta a este evento.
+La reproducción comienza automáticamente cuando se inserta un disco. La aplicación no tiene que realizar ninguna acción especial en respuesta a este evento.
 
-Este evento se desencadena en todos los dominios.
+Este evento se genera en todos los dominios.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Este evento se desencadena en todos los dominios.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

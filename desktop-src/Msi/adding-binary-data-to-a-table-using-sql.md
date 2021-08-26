@@ -1,23 +1,23 @@
 ---
-description: Los datos binarios no se pueden insertar en una tabla directamente mediante las consultas INSERT INTO o UPDATE SQL.
+description: Los datos binarios no se pueden insertar en una tabla directamente mediante las consultas INSERT INTO o UPDATE SQL consultas.
 ms.assetid: cc055de8-eaba-48eb-a982-4d584ac7a881
 title: Agregar datos binarios a una tabla mediante SQL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 491bfe57354b4faf9f7c385bc4e14c64ad366f1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 005b7de98fa62ae6e79378831802b8a5a9c95b1d0f3d33dd353fd5403ad600ca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996955"
 ---
 # <a name="adding-binary-data-to-a-table-using-sql"></a>Agregar datos binarios a una tabla mediante SQL
 
-Los datos binarios no se pueden insertar en una tabla directamente mediante las consultas INSERT INTO o UPDATE SQL. Para agregar datos binarios a una tabla, primero debe usar el marcador de parámetro (?) en la consulta como un marcador de posición para el valor binario. La ejecución de la consulta debe incluir un registro que contenga los datos binarios en uno de sus campos.
+Los datos binarios no se pueden insertar en una tabla directamente mediante las consultas INSERT INTO o UPDATE SQL consultas. Para agregar datos binarios a una tabla, primero debe usar el marcador de parámetro (?) en la consulta como marcador de posición para el valor binario. La ejecución de la consulta debe incluir un registro que contenga los datos binarios en uno de sus campos.
 
 Un marcador es una referencia de parámetro a un valor proporcionado por un registro enviado con la consulta. Se representa en la instrucción SQL mediante un signo de interrogación (?).
 
-En el siguiente código de ejemplo se agregan datos binarios a una tabla.
+El código de ejemplo siguiente agrega datos binarios a una tabla.
 
 
 ```C++

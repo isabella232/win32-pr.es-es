@@ -1,21 +1,21 @@
 ---
-description: 'Puede habilitar la corrección gamma para un pincel de degradado pasando TRUE al método PathGradientBrush:: SetGammaCorrection de ese pincel.'
+description: Puede habilitar la corrección gamma para un pincel de degradado pasando TRUE al método PathGradientBrush::SetGammaCorrection de ese pincel.
 ms.assetid: 47472e41-f469-44f4-8b39-cf3982b79f9e
-title: Aplicar la corrección gamma a un degradado
+title: Aplicar corrección gamma a un degradado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80e51673e8be4fd289286ce5e4e3e8f7c5469724
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eae76306e5c68804d76777d9fc80c65d06904702487a8b60f80659b9d16a96ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888545"
 ---
-# <a name="applying-gamma-correction-to-a-gradient"></a>Aplicar la corrección gamma a un degradado
+# <a name="applying-gamma-correction-to-a-gradient"></a>Aplicar corrección gamma a un degradado
 
-Puede habilitar la corrección gamma para un pincel de degradado pasando **true** al método [**PathGradientBrush:: SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) de ese pincel. Puede deshabilitar la corrección gamma pasando **false** al método **PathGradientBrush:: SetGammaCorrection** . La corrección gamma está deshabilitada de forma predeterminada.
+Puede habilitar la corrección gamma para un pincel de degradado pasando **TRUE** al método [**PathGradientBrush::SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) de ese pincel. Puede deshabilitar la corrección gamma pasando **FALSE** al **método PathGradientBrush::SetGammaCorrection.** La corrección gamma está deshabilitada de forma predeterminada.
 
-En el ejemplo siguiente se crea un pincel de degradado lineal y se utiliza ese pincel para rellenar dos rectángulos. El primer rectángulo se rellena sin corrección gamma y el segundo rectángulo se rellena con la corrección gamma.
+En el ejemplo siguiente se crea un pincel de degradado lineal y se usa ese pincel para rellenar dos rectángulos. El primer rectángulo se rellena sin corrección gamma y el segundo rectángulo se rellena con corrección gamma.
 
 
 ```
@@ -34,9 +34,9 @@ graphics.FillRectangle(&linGrBrush, 0, 60, 200, 50);
 
 En la ilustración siguiente se muestran los dos rectángulos rellenos. El rectángulo superior, que no tiene corrección gamma, aparece oscuro en el centro. El rectángulo inferior, que tiene corrección gamma, parece tener una intensidad más uniforme.
 
-![Ilustración que muestra dos rectángulos: el relleno en color de la primera varía en intensidad, el relleno del segundo varía menos](images/gammagradient1.png)
+![ilustración que muestra dos rectángulos: el relleno coloreado del primero varía en intensidad, el relleno del segundo varía menos](images/gammagradient1.png)
 
-En el ejemplo siguiente se crea un pincel de degradado de trazado basado en un trazado en forma de estrella. El código usa el pincel de degradado de trazado con la corrección gamma deshabilitada (valor predeterminado) para rellenar la ruta de acceso. Después, el código pasa **true** al método [**PathGradientBrush:: SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) para habilitar la corrección gamma del pincel de degradado de trazado. La llamada a [**Graphics:: TranslateTransform**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-translatetransform) establece la transformación universal de un objeto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) de modo que la siguiente llamada a [**Graphics:: FillPath**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-fillpath) llene una estrella situada a la derecha de la primera estrella.
+En el ejemplo siguiente se crea un pincel de degradado de trazado basado en un trazado con forma de estrella. El código usa el pincel de degradado de ruta de acceso con la corrección gamma deshabilitada (el valor predeterminado) para rellenar la ruta de acceso. A continuación, el código pasa **TRUE** al [**método PathGradientBrush::SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) para habilitar la corrección gamma para el pincel de degradado de ruta de acceso. La llamada a [**Graphics::TranslateTransform**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-translatetransform) establece la transformación del mundo de un objeto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) para que la llamada subsiguiente a [**Graphics::FillPath**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-fillpath) rellene una estrella que se encuentra a la derecha de la primera estrella.
 
 
 ```
@@ -78,7 +78,7 @@ graphics.FillPath(&pthGrBrush, &path);
 
 En la ilustración siguiente se muestra la salida del código anterior. La estrella de la derecha tiene corrección gamma. Tenga en cuenta que la estrella de la izquierda, que no tiene corrección gamma, tiene áreas que aparecen oscuras.
 
-![la ilustración de la señal de 2 5 comienza con un relleno de degradado de color; el primero tiene áreas oscuras, la segunda no](images/gammagradient2.png)
+![ilustración de dos inicios de cinco puntos con relleno de degradado de color; el primero tiene áreas oscuras, el segundo no](images/gammagradient2.png)
 
  
 

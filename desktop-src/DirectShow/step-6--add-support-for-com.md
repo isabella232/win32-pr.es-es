@@ -4,12 +4,12 @@ ms.assetid: 53e4f5b7-c85d-4b44-9a0c-0ad05ca872cc
 title: Paso 6. Agregar compatibilidad con COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 097d51fa440812311edde9ce448916c66721a507
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 354299ed9ed2f752e0041b82af712e7a9c5411eb7bb7e16588267183442edf68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964905"
 ---
 # <a name="step-6-add-support-for-com"></a>Paso 6. Agregar compatibilidad con COM
 
@@ -75,7 +75,7 @@ CUnknown * WINAPI CRleFilter::CreateInstance(LPUNKNOWN pUnk, HRESULT *pHr)
 
 
 
-A continuación, declare una matriz global [**de instancias de clase CFactoryTemplate,**](cfactorytemplate.md) denominada g *\_ Templates*. Cada **clase CFactoryTemplate** contiene información del Registro para un filtro. Varios filtros pueden residir en un solo archivo DLL; simplemente incluya entradas **adicionales de CFactoryTemplate.** También puede declarar otros objetos COM, como páginas de propiedades.
+A continuación, declare una matriz global [**de instancias de clase CFactoryTemplate,**](cfactorytemplate.md) *denominadas plantillas \_ g*. Cada **clase CFactoryTemplate** contiene información del Registro para un filtro. Varios filtros pueden residir en un solo archivo DLL; simplemente incluya entradas **adicionales de CFactoryTemplate.** También puede declarar otros objetos COM, como páginas de propiedades.
 
 
 ```C++
@@ -124,9 +124,9 @@ STDAPI DllUnregisterServer()
 En los ejemplos anteriores se muestra cómo registrar el CLSID de un filtro para COM. Para muchos filtros, esto es suficiente. A continuación, se espera que el cliente cree el filtro mediante [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) y lo agregue al gráfico de filtros mediante una llamada a [**IFilterGraph::AddFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter). Sin embargo, en algunos casos, es posible que desee proporcionar información adicional sobre el filtro en el Registro. Esta información hace lo siguiente:
 
 -   Permite a los clientes detectar el filtro mediante [el Asignador de filtros](filter-mapper.md) o el [Enumerador de dispositivos del sistema](system-device-enumerator.md).
--   Permite que el Administrador de gráficos de filtros detecte el filtro durante la creación automática del grafo.
+-   Permite que el administrador Graph filtro detecte el filtro durante la creación automática del grafo.
 
-En el ejemplo siguiente se registra el filtro del codificador RLE en la categoría de vídeos. Para más información, [consulte Registro de filtros de DirectShow.](how-to-register-directshow-filters.md) Asegúrese de leer la sección [Directrices](guidelines-for-registering-filters.md)para registrar filtros , que describe las prácticas recomendadas para el registro de filtros.
+En el ejemplo siguiente se registra el filtro del codificador RLE en la categoría de vídeos. Para obtener más información, [vea How to Register DirectShow Filters](how-to-register-directshow-filters.md). Asegúrese de leer la sección [Directrices](guidelines-for-registering-filters.md)para registrar filtros , que describe los procedimientos recomendados para el registro de filtros.
 
 
 ```C++
@@ -244,10 +244,10 @@ int main()
 
 <dl> <dt>
 
-[Conexión inteligente](intelligent-connect.md)
+[Inteligencia Conectar](intelligent-connect.md)
 </dt> <dt>
 
-[Escribir filtros de DirectShow](writing-directshow-filters.md)
+[Escribir DirectShow filtros](writing-directshow-filters.md)
 </dt> <dt>
 
 [Escribir filtros de transformación](writing-transform-filters.md)

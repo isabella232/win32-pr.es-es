@@ -1,21 +1,21 @@
 ---
-description: Esta aplicación muestra cómo puede compilar una aplicación de reconocimiento de escritura a mano. El SDK de Windows Vista proporciona versiones de este ejemplo en C \# y Visual Basic .net.
+description: Esta aplicación muestra cómo puede crear una aplicación de reconocimiento de escritura a mano. El SDK Windows Vista proporciona también versiones de este ejemplo en C \# y Visual Basic .NET.
 ms.assetid: 4b3fc078-731e-4263-8e95-2c273d69a457
-title: Ejemplo de reconocimiento de tinta
+title: Ejemplo de reconocimiento de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30d97d9d15ef64a3d7a1fe1fc5d45b3cb0454ba7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c151c92c9f407461c34ecffb015af179e57b5c9ed4735b36f70c9a4d26c78088
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119935125"
 ---
-# <a name="ink-recognition-sample"></a>Ejemplo de reconocimiento de tinta
+# <a name="ink-recognition-sample"></a>Ejemplo de reconocimiento de lápiz
 
-Esta aplicación muestra cómo puede compilar una aplicación de reconocimiento de escritura a mano. El SDK de Windows Vista proporciona versiones de este ejemplo en C \# y Visual Basic .net. En este tema se hace referencia al ejemplo Visual Basic .NET, pero los conceptos son los mismos entre las distintas versiones.
+Esta aplicación muestra cómo puede crear una aplicación de reconocimiento de escritura a mano. El SDK Windows Vista proporciona también versiones de este ejemplo en C \# y Visual Basic .NET. En este tema se hace referencia Visual Basic ejemplo de .NET, pero los conceptos son los mismos entre versiones.
 
-## <a name="access-the-tablet-pc-interfaces"></a>Acceder a las interfaces de Tablet PC
+## <a name="access-the-tablet-pc-interfaces"></a>Acceso a las interfaces de Tablet PC
 
 En primer lugar, haga referencia a la API de Tablet PC, que se instala con el SDK.
 
@@ -27,9 +27,9 @@ Imports Microsoft.Ink
 
 
 
-## <a name="initialize-the-inkcollector"></a>Inicializar InkCollector
+## <a name="initialize-the-inkcollector"></a>Inicialización de InkCollector
 
-En el ejemplo se agrega código al controlador de eventos de [carga](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del formulario que sirve para asociar [InkCollector](/previous-versions/ms583683(v=vs.100)), myInkCollector, a la ventana de cuadro de grupo y habilitar InkCollector.
+El ejemplo agrega código al controlador de eventos [Load](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del formulario que sirve para asociar [InkCollector](/previous-versions/ms583683(v=vs.100)), myInkCollector, con la ventana del cuadro de grupo y habilitar InkCollector.
 
 
 ```VB
@@ -49,11 +49,11 @@ End Sub
 
 
 
-## <a name="recognize-the-strokes"></a>Reconocer los trazos
+## <a name="recognize-the-strokes"></a>Reconocimiento de los trazos
 
-El controlador de eventos [click](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) del objeto de [botón](/dotnet/api/system.windows.forms.button?view=netcore-3.1) comprueba para asegurarse de que el usuario tiene al menos un reconocedor instalado mediante el examen de la propiedad [Count](/previous-versions/ms828521(v=msdn.10)) de la colección [reconocedores](/previous-versions/ms828520(v=msdn.10)) .
+El [controlador de](/dotnet/api/system.windows.forms.button?view=netcore-3.1) eventos Click del objeto [Button](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) comprueba que el usuario tenga al menos un reconocedor instalado mediante el examen de la propiedad [Count](/previous-versions/ms828521(v=msdn.10)) de la [colección Recognizers.](/previous-versions/ms828520(v=msdn.10))
 
-La propiedad [SelectedText](/previous-versions/windows/) del cuadro de texto se establece en la mejor coincidencia para los trazos mediante el método [ToString](/previous-versions/ms827836(v=msdn.10)) en la colección [Strokes](/previous-versions/ms552701(v=vs.100)) . Una vez reconocidos los trazos, se eliminan. Por último, el código fuerza el redibujo del área de dibujo y lo borra para su uso posterior de la tinta.
+La [propiedad SelectedText](/previous-versions/windows/) del cuadro de texto se establece en la mejor coincidencia para los trazos mediante el [método ToString](/previous-versions/ms827836(v=msdn.10)) de la [colección Strokes.](/previous-versions/ms552701(v=vs.100)) Una vez que se han reconocido los trazos, se eliminan. Por último, el código fuerza el repintado del área de dibujo y la borra para su uso adicional con lápiz.
 
 
 ```VB
@@ -85,9 +85,9 @@ End Sub
 
 
 
-## <a name="closing-the-form"></a>Cierre del formulario
+## <a name="closing-the-form"></a>Cerrar el formulario
 
-El método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) del formulario desecha el objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) .
+El método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) del formulario elimina el [objeto InkCollector.](/previous-versions/ms583683(v=vs.100))
 
  
 

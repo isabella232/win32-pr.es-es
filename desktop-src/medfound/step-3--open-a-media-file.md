@@ -1,19 +1,19 @@
 ---
-description: En este tema se describe el paso 3 del tutorial sobre cómo reproducir archivos multimedia con Media Foundation.
+description: Este tema es el paso 3 del tutorial Cómo reproducir archivos multimedia con Media Foundation.
 ms.assetid: cc0d2b60-64d7-49f3-844f-97487cab8466
-title: 'Paso 3: abrir un archivo multimedia'
+title: 'Paso 3: Abrir un archivo multimedia'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15b50f036b84806f96e4349f77a3f06e02e08764
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: c198b07358ebbf5d8da591d75d44f4687b600f6bb387c4f55901974397308dc3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104083572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012370"
 ---
-# <a name="step-3-open-a-media-file"></a>Paso 3: abrir un archivo multimedia
+# <a name="step-3-open-a-media-file"></a>Paso 3: Abrir un archivo multimedia
 
-En este tema se describe el paso 3 del tutorial sobre [Cómo reproducir archivos multimedia con Media Foundation](how-to-play-unprotected-media-files.md). El código completo se muestra en el tema [ejemplo de reproducción de sesión de medio](media-session-playback-example.md).
+Este tema es el paso 3 del tutorial [How to Play Media Files with Media Foundation](how-to-play-unprotected-media-files.md). El código completo se muestra en el tema [Ejemplo de reproducción de sesión multimedia](media-session-playback-example.md).
 
 El `CPlayer::OpenURL` método abre un archivo multimedia desde una dirección URL.
 
@@ -87,15 +87,15 @@ done:
 
 Este método realiza los pasos siguientes:
 
-1.  Llama a **CPlayer:: createSession** para crear una nueva instancia de la sesión multimedia. Consulte [paso 4: crear la sesión multimedia](step-4--create-the-media-session.md).
-2.  Crea un origen multimedia a partir de la dirección URL. El código completo de este paso se muestra en el tema [uso de la resolución de origen](using-the-source-resolver.md).
-3.  Llama a [**IMFMediaSource:: CreatePresentationDescriptor**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor) para obtener el descriptor de presentación del origen multimedia. El descriptor de presentación describe cada flujo del archivo de código fuente.
-4.  Crea la topología de reproducción. El código de este paso se muestra en el tema [crear topologías de reproducción](creating-playback-topologies.md).
-5.  Llama a [**IMFMediaSession:: SetTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology) para establecer la topología en la sesión multimedia.
+1.  Llama **a CPlayer::CreateSession** para crear una nueva instancia de la sesión multimedia. Vea [Paso 4: Crear la sesión multimedia](step-4--create-the-media-session.md).
+2.  Crea un origen multimedia a partir de la dirección URL. El código completo de este paso se muestra en el tema [Using the Source Resolver](using-the-source-resolver.md).
+3.  Llama [**a IMFMediaSource::CreatePresentationDescriptor**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor) para obtener el descriptor de presentación del origen multimedia. El descriptor de presentación describe cada secuencia del archivo de origen.
+4.  Crea la topología de reproducción. El código de este paso se muestra en el tema [Creación de topologías de reproducción.](creating-playback-topologies.md)
+5.  Llama [**a IMFMediaSession::SetTopology para**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology) establecer la topología en la sesión multimedia.
 
-El método [**SetTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology) se completa de forma asincrónica. Cuando se completa, se llama al método [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) del objeto CPlayer; vea [paso 5: controlar eventos de sesión multimedia](step-5--handle-media-session-events.md).
+El [**método SetTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology) se completa de forma asincrónica. Cuando se completa, se llama al método [**IMFAsyncCallback::Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) del objeto CPlayer; vea [Paso 5: Controlar eventos de sesión multimedia](step-5--handle-media-session-events.md).
 
-Siguiente: [paso 4: crear la sesión multimedia](step-4--create-the-media-session.md)
+Siguiente: [Paso 4: Crear la sesión multimedia](step-4--create-the-media-session.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

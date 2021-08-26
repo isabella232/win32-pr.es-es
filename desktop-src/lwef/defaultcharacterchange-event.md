@@ -4,30 +4,30 @@ description: Evento DefaultCharacterChange
 ms.assetid: 14b86a44-8fd2-4719-b7b5-cdcc618d27cd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab92fe04f9c42466d559e9b4610eafc8490556d6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eed166608d3f3b874e975ff58f600d24b73b50e293333b841039b2240780b4de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963135"
 ---
 # <a name="defaultcharacterchange-event"></a>Evento DefaultCharacterChange
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
 Se produce cuando el usuario cambia el carácter predeterminado.
 
 </dd> <dt>
 
-<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintáctica**
+<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-**Sub** *Agent. * * * DefaultCharacterChange* *  **(ByVal** *GUID * * *)**
+**Sub** *agent.:DefaultCharacterChange* *  **(Guid de ByVal))** *
 
 
 
@@ -37,24 +37,24 @@ Se produce cuando el usuario cambia el carácter predeterminado.
 
 
 
- 
+ 
 
 </dd> </dl>
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Este evento indica que el usuario ha cambiado el carácter asignado como el carácter predeterminado del usuario. El servidor solo lo envía a los clientes que han cargado el carácter predeterminado.
+Este evento indica cuándo el usuario ha cambiado el carácter asignado como carácter predeterminado del usuario. El servidor envía esto solo a los clientes que han cargado el carácter predeterminado.
 
-Cuando aparece el nuevo carácter, se da por supuesto que tiene el mismo tamaño que cualquier instancia ya cargada del carácter o el carácter predeterminado anterior (en ese orden).
+Cuando aparece el nuevo carácter, asume el mismo tamaño que cualquier instancia ya cargada del carácter o el carácter predeterminado anterior (en ese orden).
 
 ### <a name="see-also"></a>Consulte también
 
-[**Método ShowDefaultCharacterProperties**](showdefaultcharacterproperties-method.md), [ **Load (método** )](load-method.md)
+[**Método ShowDefaultCharacterProperties**](showdefaultcharacterproperties-method.md), [ **Método Load**](load-method.md)
 
 
- 
+ 
 
- 
+ 
 
 
 
