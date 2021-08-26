@@ -1,7 +1,7 @@
 ---
 description: Este operador multiplica un tiempo de referencia por un valor.
 ms.assetid: f575fd41-1d3e-43a6-abf8-8e64093e408e
-title: Método COARefTime. Operator * (Ctlutil. h)
+title: Método COARefTime.operator* (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c62a4282f7a43ba3d7ba35daf81530f8b246be32
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 57060f3b0436422c34ba947c0025cc6796d534e16ff64be029e68ab140faa4af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079355"
 ---
-# <a name="coareftimeoperator-method"></a>COARefTime. Operator ( \* método)
+# <a name="coareftimeoperator-method"></a>Método COARefTime.operator \*
 
 Este operador multiplica un tiempo de referencia por un valor.
 
@@ -51,7 +51,7 @@ Multiplicador.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un nuevo objeto **COARefTime** igual al producto de este objeto y **l**.
+Devuelve un nuevo **objeto COARefTime** igual al producto de este objeto y **l**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un nuevo objeto **COARefTime** igual al producto de este objeto y **l**
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un nuevo objeto **COARefTime** igual al producto de este objeto y **l**
 
 <dl> <dt>
 
-[**Clase COARefTime**](coareftime.md)
+[**COARefTime (clase)**](coareftime.md)
 </dt> </dl>
 
  

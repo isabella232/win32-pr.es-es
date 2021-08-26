@@ -1,19 +1,19 @@
 ---
-description: En los sistemas operativos Windows 2000 y posteriores, el instalador establece la propiedad MsiNTSuiteSmallBusiness en 1 si Microsoft Small Business Server está instalado.
+description: En Windows 2000 y versiones posteriores, el instalador establece la propiedad MsiNTSuiteSmallBusiness en 1 si está instalado Microsoft Small Business Server.
 ms.assetid: 9ac578b9-316f-413c-aae0-4f414109583b
 title: Propiedad MsiNTSuiteSmallBusiness
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d8b1e523ff038e4639cb0f92762c3914bbf5f6d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c1e0dab7d024753a30d6a640cefd1652de137b5cd230a772a5041927dc0e725e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082745"
 ---
 # <a name="msintsuitesmallbusiness-property"></a>Propiedad MsiNTSuiteSmallBusiness
 
-En los sistemas operativos Windows 2000 y posteriores, el instalador establece la propiedad **MsiNTSuiteSmallBusiness** en 1 si Microsoft Small Business Server está instalado. El instalador establece esta propiedad en 1 solo si \_ \_ se establece la marca de SMALLBUSINESS del conjunto de versión en la estructura [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) . En caso contrario, el instalador no establece esta propiedad.
+En Windows 2000 y versiones posteriores, el instalador establece la propiedad **MsiNTSuiteSmallBusiness** en 1 si está instalado Microsoft Small Business Server. El instalador establece esta propiedad en 1 solo si la marca VER SUITE SMALLBUSINESS está \_ establecida en la estructura \_ [**OSVERSIONINFOEX.**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) De lo contrario, el instalador no establece esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ En los sistemas operativos Windows 2000 y posteriores, el instalador establece l
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

@@ -49,17 +49,17 @@ typedef enum D3DTRANSFORMSTATETYPE {
 
 <dl> <dt>
 
-<span id="D3DTS_VIEW"></span><span id="d3dts_view"></span>**VISTA D3DTS \_**
+<span id="D3DTS_VIEW"></span><span id="d3dts_view"></span>**VISTA \_ D3DTS**
 </dt> <dd>
 
-Identifica la matriz de transformación que se va a establecer como la matriz de transformación de vista. El valor predeterminado es **NULL** (la matriz de identidad).
+Identifica la matriz de transformación que se establece como la matriz de transformación de vista. El valor predeterminado es **NULL** (la matriz de identidad).
 
 </dd> <dt>
 
 <span id="D3DTS_PROJECTION"></span><span id="d3dts_projection"></span>**PROYECCIÓN DE \_ D3DTS**
 </dt> <dd>
 
-Identifica la matriz de transformación que se va a establecer como la matriz de transformación de proyección. El valor predeterminado es **NULL** (la matriz de identidad).
+Identifica la matriz de transformación que se establece como matriz de transformación de proyección. El valor predeterminado es **NULL** (la matriz de identidad).
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Identifica la matriz de transformación que se establece para la fase de textura
 
 </dd> <dt>
 
-<span id="D3DTS_TEXTURE5"></span><span id="d3dts_texture5"></span>**TEXTURA DE \_ D3DTS5**
+<span id="D3DTS_TEXTURE5"></span><span id="d3dts_texture5"></span>**TEXTURA D3DTS5 \_**
 </dt> <dd>
 
 Identifica la matriz de transformación que se establece para la fase de textura especificada.
@@ -112,7 +112,7 @@ Identifica la matriz de transformación que se establece para la fase de textura
 
 </dd> <dt>
 
-<span id="D3DTS_TEXTURE7"></span><span id="d3dts_texture7"></span>**TEXTURA D3DTS7 \_**
+<span id="D3DTS_TEXTURE7"></span><span id="d3dts_texture7"></span>**TEXTURA DE \_ D3DTS7**
 </dt> <dd>
 
 Identifica la matriz de transformación que se establece para la fase de textura especificada.
@@ -122,7 +122,7 @@ Identifica la matriz de transformación que se establece para la fase de textura
 <span id="D3DTS_FORCE_DWORD"></span><span id="d3dts_force_dword"></span>**D3DTS \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -135,7 +135,7 @@ Los estados de transformación del intervalo de 256 a 511 están reservados para
 | Macros                                                  | Descripción                                                                                                                                                                      |
 |---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**D3DTS \_ WORLD**](d3dts-world.md)                     | Equivalente a D3DTS \_ WORLDMATRIX(0).                                                                                                                                  |
-| [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) (índice) | Identifica la matriz de transformación que se establecerá para la matriz mundial en el índice. Solo se usan varias matrices de mundo para la mezcla de vértices. De lo contrario, solo se usa D3DTS \_ WORLD. |
+| [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) (índice) | Identifica la matriz de transformación que se establecerá para la matriz mundial en el índice. Las matrices de varios mundos solo se usan para la combinación de vértices. De lo contrario, solo se usa D3DTS \_ WORLD. |
 
 
 
@@ -151,7 +151,7 @@ Los estados de transformación del intervalo de 256 a 511 están reservados para
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

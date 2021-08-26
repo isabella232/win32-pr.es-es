@@ -1,11 +1,11 @@
 ---
-title: PlaylistCollection. setDeleted, método
+title: Método PlaylistCollection.setDeleted
 description: El método setDeleted mueve una lista de reproducción a la carpeta de elementos eliminados.
 ms.assetid: c41f7e89-11c8-4d55-91eb-a89e6f39e56b
 keywords:
-- método setDeleted de Windows Media Player
-- método setDeleted de Windows Media Player, clase PlaylistCollection
-- Clase PlaylistCollection Windows Media Player, método setDeleted
+- Método setDeleted Reproductor de Windows Media
+- Método setDeleted Reproductor de Windows Media , clase PlaylistCollection
+- Clase PlaylistCollection Reproductor de Windows Media , método setDeleted
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2953066f115ebec05e7ee90e57a171884986d156
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c14c36ff8a60c95ee1f5e1f85a46991660a6e5bae17367c01cec3d00da3d1f06
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901135"
 ---
-# <a name="playlistcollectionsetdeleted-method"></a>PlaylistCollection. setDeleted, método
+# <a name="playlistcollectionsetdeleted-method"></a>Método PlaylistCollection.setDeleted
 
-El método **setDeleted** mueve una lista de reproducción a la carpeta de elementos eliminados.
+El **método setDeleted** mueve una lista de reproducción a la carpeta de elementos eliminados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ PlaylistCollection.setDeleted(
 
 <dl> <dt>
 
-*lista de reproducción* \[ de\]
+*lista de reproducción* \[ En\]
 </dt> <dd>
 
-Objeto de **lista de reproducción** que se va a desplace.
+Objeto **De lista** de reproducción que se va a mover.
 
 </dd> <dt>
 
-*true* \[ de\]
+*true* \[ En\]
 </dt> <dd>
 
 Especifique siempre este valor.
@@ -61,9 +61,9 @@ Especifique siempre este valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Windows Media Player 10 Mobile**: este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** este método no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0, Windows Media Player versión 7,1 o Windows Media Player para Windows XP. Este método no es compatible con Windows Media Player 9 series o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0, Reproductor de Windows Media versión 7.1 o Reproductor de Windows Media para Windows XP. Este método no se admite para Reproductor de Windows Media serie 9 o posterior.<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl>                                                                                                              |
 
 

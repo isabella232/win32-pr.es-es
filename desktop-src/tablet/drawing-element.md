@@ -4,12 +4,12 @@ ms.assetid: 566542f3-b824-442d-9d8b-0064ebcf9b68
 title: Elemento Drawing
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d87c0a3d8879fb5f3146c46c9c88d83a6e658d8
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: d44eab0f9feec4b80369a365663917ca1aea0f211bba70dd4b99e9161316c662
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119936595"
 ---
 # <a name="drawing-element"></a>Elemento Drawing
 
@@ -43,10 +43,10 @@ Contiene contenido clasificado por el analizador o el usuario como un dibujo.
 
 | Atributo  | Tipo                      | Requerido | Descripción                                                                             | Valores posibles           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Left**   | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto situado más a la izquierda en el cuadro de límite del elemento. | Cualquier número entero.              |
+| **Left**   | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto más a la izquierda en el cuadro de límite del elemento. | Cualquier número entero.              |
 | **Top** (Principales)    | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
-| **Width**  | **xs:nonNegativeInteger** | Requerido | Ancho del cuadro de límite para el elemento.                                          | Cualquier entero no negativo. |
-| **Height** | **xs:nonNegativeInteger** | Requerido | Alto del cuadro de límite para el elemento.                                         | Cualquier entero no negativo. |
+| **Width**  | **xs:nonNegativeInteger** | Requerido | Ancho del cuadro de límite del elemento.                                          | Cualquier entero no negativo. |
+| **Height** | **xs:nonNegativeInteger** | Requerido | Alto del cuadro de límite del elemento.                                         | Cualquier entero no negativo. |
 
 
 

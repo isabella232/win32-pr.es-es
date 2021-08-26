@@ -1,32 +1,32 @@
 ---
-title: Enumeraciones de DWRITE_RENDERING_MODE
-description: A partir de Windows 8, la \_ enumeración del modo de representación DWRITE \_ ha agregado nuevos valores de enumeración y ha dejado de usar otros.
+title: DWRITE_RENDERING_MODE enumeraciones
+description: A partir Windows 8, la enumeración DWRITE RENDERING MODE agregó nuevos valores de enumeración \_ \_ y otros en desuso.
 ms.assetid: 3EA568B4-310D-4F70-9530-5916419282E5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41fa79cf34a03960ddb42a8a80221e99d47be847
-ms.sourcegitcommit: d1b8f5ed3d6e35e93cb254efc49428a072d7ef9a
+ms.openlocfilehash: e7fe2e7961ae4437e84e2327ecd3ea45840c8a0f
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "103993796"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468202"
 ---
-# <a name="dwrite_rendering_mode-enumerations"></a>\_Enumeraciones del modo de representación DWRITE \_
+# <a name="dwrite_rendering_mode-enumerations"></a>Enumeraciones \_ DWRITE RENDERING \_ MODE
 
-A partir de Windows 8, la enumeración del **\_ \_ modo de representación DWRITE** ha agregado nuevos valores de enumeración y ha dejado de usar otros.
+A partir Windows 8, la **enumeración DWRITE \_ RENDERING \_ MODE** agregó nuevos valores de enumeración y desusó otros.
 
-A partir de Windows 8, la enumeración de [**\_ \_ \_ modo de suavizado de texto DWRITE**](/windows/win32/api/Dwrite_1/ne-dwrite_1-dwrite_text_antialias_mode) determina si el texto se representa con ClearType. Como resultado, todos los modos de representación de ClearType en la enumeración de **\_ \_ modo de representación DWRITE** están desusados. Estos valores de enumeración se asignan ahora a los nuevos modos de representación.
+A partir Windows 8, la enumeración [**DWRITE \_ TEXT \_ ANTIALIAS \_ MODE**](/windows/win32/api/Dwrite_1/ne-dwrite_1-dwrite_text_antialias_mode) determina si el texto se representa mediante ClearType. Como resultado, todos los modos de representación ClearType de la **enumeración DWRITE \_ RENDERING \_ MODE** están en desuso. Estos valores de enumeración ahora se asignan a nuevos modos de representación.
 
-En la tabla siguiente se muestran los valores de enumeración antiguos y los nuevos valores a los que están asignados. Para obtener descripciones de los nuevos valores, consulte [**\_ \_ modo de representación de DWRITE**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode).
+En la tabla siguiente se muestran los valores de enumeración antiguos y los nuevos valores a los que están asignados. Para obtener descripciones de los nuevos valores, vea [**DWRITE \_ RENDERING \_ MODE**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode).
 
 
 
-| Modo anterior                                                                                | Nuevo modo                                                                                |
+| Modo antiguo                                                                                | Nuevo modo                                                                                |
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [**\_modo de representación \_ DWRITE \_ CLEARTYPE \_ GDI \_ clásico**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)       | [**\_modo de representación \_ DWRITE \_ GDI \_ clásico**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)                  |
-| [**\_modo de representación \_ DWRITE \_ CLEARTYPE \_ GDI \_ natural**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)       | [**\_modo de representación \_ DWRITE \_ GDI \_ natural**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)                  |
-| [**\_modo de representación \_ DWRITE \_ CLEARTYPE \_ natural**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)            | [**\_modo de representación \_ DWRITE \_ CLEARTYPE \_ natural**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)            |
-| [**\_modo de representación \_ DWRITE \_ CLEARTYPE \_ natural \_ simétrico**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode) | [**\_modo de representación \_ DWRITE \_ CLEARTYPE \_ natural \_ simétrico**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode) |
+| [**DWRITE \_ RENDERING \_ MODE \_ CLEARTYPE \_ GDI \_ CLASSIC**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)       | [**DWRITE \_ RENDERING \_ MODE \_ GDI \_ CLASSIC**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)                  |
+| [**MODO DE REPRESENTACIÓN \_ DWRITE \_ \_ CLEARTYPE \_ GDI \_ NATURAL**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)       | [**MODO DE REPRESENTACIÓN \_ DWRITE \_ \_ GDI \_ NATURAL**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)                  |
+| [**DWRITE \_ RENDERING \_ MODE \_ CLEARTYPE \_ NATURAL**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)            | [**DWRITE \_ RENDERING \_ MODE \_ CLEARTYPE \_ NATURAL**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)            |
+| [**MODO DE REPRESENTACIÓN \_ DWRITE \_ \_ CLEARTYPE \_ NATURAL \_ SYMMETRIC**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode) | [**MODO DE REPRESENTACIÓN \_ DWRITE \_ \_ CLEARTYPE \_ NATURAL \_ SYMMETRIC**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode) |
 
 
 
@@ -36,38 +36,12 @@ En la tabla siguiente se muestran los valores de enumeración antiguos y los nue
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tema</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>DWRITE_RENDERING_MODE (Windows 8 y versiones posteriores)</strong></a><br/></td>
-<td>Representa un método de representación de glifos. <br/>
-<blockquote>
-[!Note]<br />
-En este tema se trata <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>DWRITE_RENDERING_MODE</strong></a> en Windows 8 y versiones posteriores. Para obtener información sobre la versión anterior, consulte <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>este tema</strong></a>.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>DWRITE_RENDERING_MODE</strong></a><br/></td>
-<td>Representa un método de representación de glifos. <br/>
-<blockquote>
-[!Note]<br />
-En este tema se trata <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>DWRITE_RENDERING_MODE</strong></a> anterior a Windows 8 y versiones posteriores. Para obtener información sobre la versión más reciente, consulte <strong>este tema</strong>.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Tema | Descripción | 
+|-------|-------------|
+| <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>DWRITE_RENDERING_MODE (Windows 8 y versiones posteriores)</strong></a><br /> | Representa un método de representación de glifos. <br /><blockquote>[!Note]<br />Este tema trata <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>sobre</strong></a> DWRITE_RENDERING_MODE en Windows 8 y versiones posteriores. Para obtener información sobre la versión anterior, <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>vea este tema</strong></a>.</blockquote><br /> | 
+| <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>DWRITE_RENDERING_MODE</strong></a><br /> | Representa un método de representación de glifos. <br /><blockquote>[!Note]<br />Este tema trata <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>sobre</strong></a> DWRITE_RENDERING_MODE anterior a Windows 8 y versiones posteriores. Para obtener información sobre la versión más reciente, <strong>vea este tema</strong>.</blockquote><br /> | 
+
 
 
 

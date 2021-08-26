@@ -1,6 +1,6 @@
 ---
 title: PBM_SETMARQUEE mensaje (Commctrl.h)
-description: Establece la barra de progreso en modo de marquesina. Esto hace que la barra de progreso se mueva como un marco.
+description: Establece la barra de progreso en modo de marquesina. Esto hace que la barra de progreso se mueva como una marquesina.
 ms.assetid: 6501bcb9-a711-470f-874f-f3484d3613b6
 keywords:
 - PBM_SETMARQUEE controles de Windows mensaje
@@ -23,7 +23,7 @@ ms.locfileid: "119986145"
 ---
 # <a name="pbm_setmarquee-message"></a>Mensaje \_ SETMARQUEE de PBM
 
-Establece la barra de progreso en modo de marquesina. Esto hace que la barra de progreso se mueva como un marco.
+Establece la barra de progreso en modo de marquesina. Esto hace que la barra de progreso se mueva como una marquesina.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,7 +37,7 @@ Indica si se debe activar o desactivar el modo de marquesina.
 </dd> <dt>
 
 *lParam* 
-</dt> <dd>Tiempo, en milisegundos, entre las actualizaciones de animación de marquesinas. Si este parámetro es cero, la animación de marquesina se actualiza cada 30 milisegundos.</dd> </dl>
+</dt> <dd>Tiempo, en milisegundos, entre actualizaciones de animación de marquesina. Si este parámetro es cero, la animación de marquesina se actualiza cada 30 milisegundos.</dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -45,7 +45,7 @@ Siempre devuelve **TRUE.**
 
 ## <a name="remarks"></a>Comentarios
 
-Use este mensaje si no conoce la cantidad de progreso hacia la finalización, pero quiere indicar que se está avanzando.
+Use este mensaje si no conoce la cantidad de progreso hacia la finalización, pero desea indicar que se está avanzando.
 
 Envíe el **mensaje \_ SETMARQUEE** de PBM para iniciar o detener la animación.
 
@@ -63,7 +63,7 @@ Envíe el **mensaje \_ SETMARQUEE** de PBM para iniciar o detener la animación.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

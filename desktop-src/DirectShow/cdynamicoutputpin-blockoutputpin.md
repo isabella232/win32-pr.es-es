@@ -59,7 +59,7 @@ Antes de llamar a este método, mantenga [**la sección crítica CDynamicOutputP
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

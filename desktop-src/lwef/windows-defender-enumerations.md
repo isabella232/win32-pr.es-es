@@ -1,45 +1,45 @@
 ---
-title: Enumeraciones de Windows Defender
-description: Enumeraciones usadas por las aplicaciones cuando se llama a exámenes de solicitud, actualizaciones de firmas o información de Windows Defender.
+title: Windows Defender Enumeraciones
+description: Enumeraciones usadas por las aplicaciones al llamar a para solicitar exámenes, actualizaciones de firmas o información de Windows Defender.
 ms.assetid: AC84ED57-6221-4A19-8A1D-E4E2811B027E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02400576ddeccf7ffb79f6aeceafba725be78516
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 40a3b2f054d09a13e5e749f3a2b72b7adb1d5e8f52a664bac8e937c717031a32
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114475"
 ---
-# <a name="windows-defender-enumerations"></a>Enumeraciones de Windows Defender
+# <a name="windows-defender-enumerations"></a>Windows Defender Enumeraciones
 
-Enumeraciones usadas por las aplicaciones cuando se llama a exámenes de solicitud, actualizaciones de firmas o información de Windows Defender.
+Enumeraciones usadas por las aplicaciones al llamar a para solicitar exámenes, actualizaciones de firmas o información de Windows Defender.
 
 
 
 | Enumeración                                                       | Descripción                                                           |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [**\_tipo MPCALLBACK**](mpcallback-type.md)                       | Posibles tipos de devolución de llamada.<br/>                                   |
-| [**identificador de MPCOMPONENT \_**](mpcomponent-id.md)                         | Componentes posibles para el administrador de protección contra malware de.<br/>    |
-| [**origen de MPDETECTION \_**](mpdetection-origin.md)                 | Origen de la detección.<br/>                                          |
-| [**Estado de MPDETECTION \_**](mpdetection-state.md)                   | El estado de la amenaza detectada actualmente.<br/>                |
-| [**Estado de MPEXECUTION \_**](mpexecution-status.md)                 | Posible estado de ejecución de la amenaza.<br/>                          |
-| [**\_tipo de FASTPATH de MP \_**](mp-fastpath-type.md)                    | Tipo FastPath.<br/>                                             |
-| [**\_tipo hash de MP \_**](mp-hash-type.md)                            | Posibles tipos hash.<br/>                                       |
+| [**TIPO \_ MPCALLBACK**](mpcallback-type.md)                       | Posibles tipos de devolución de llamada.<br/>                                   |
+| [**Id. de \_ MPCOMPONENT**](mpcomponent-id.md)                         | Posibles componentes para el administrador de protección contra malware.<br/>    |
+| [**MPDETECTION \_ ORIGIN**](mpdetection-origin.md)                 | Origen de la detección.<br/>                                          |
+| [**ESTADO DE \_ MPDETECTION**](mpdetection-state.md)                   | Estado de la amenaza detectada actualmente.<br/>                |
+| [**ESTADO DE \_ MPEXECUTION**](mpexecution-status.md)                 | Posible estado de ejecución de amenazas.<br/>                          |
+| [**TIPO \_ FASTPATH DE \_ MP**](mp-fastpath-type.md)                    | Tipo FastPath.<br/>                                             |
+| [**TIPO \_ HASH DE \_ MP**](mp-hash-type.md)                            | Posibles tipos hash.<br/>                                       |
 | [**MPNOTIFY**](mpnotify.md)                                      | Posibles notificaciones de devolución de llamada.<br/>                           |
-| [**\_tipo de \_ límite de persistencia de MP \_**](mp-persistence-limit-type.md) | Tipo de límite de persistencia.<br/>                                    |
-| [**motivo de la eliminación del MP \_ \_**](mp-removal-reason.md)                  | Motivo de eliminación de la firma de FastPath.<br/>                         |
-| [**motivo de MPRESOLVED \_**](mpresolved-reason.md)                   | Posibles causas de la resolución de un error de corrección.<br/> |
-| [**\_tipo MPSCAN**](mpscan-type.md)                               | Tipo de examen realizado.<br/>                                    |
-| [**\_tipo de firma MP \_**](mp-signature-type.md)                  | Posibles tipos de firma.<br/>                                  |
-| [**MPSOURCE**](mpsource.md)                                      | Posible categoría de origen.<br/>                               |
-| [**\_marca MPSTATUS**](mpstatus-flag.md)                           | Posibles marcas de bits de estado de producto generales.<br/>                 |
-| [**\_acción MPTHREAT**](mpthreat-action.md)                       | Posibles acciones de amenaza.<br/>                                   |
-| [**\_categoría MPTHREAT**](mpthreat-category.md)                   | Posibles categorías de amenaza.<br/>                                |
-| [**detección de MPTHREAT \_**](mpthreat-detection.md)                 | Posibles tipos conocidos de detección de amenazas defectuosas.<br/>                 |
-| [**gravedad de MPTHREAT \_**](mpthreat-severity.md)                   | Posibles gravedades de las amenazas.<br/>                                |
-| [**Estado de MPTHREAT \_**](mpthreat-status.md)                       | Posible estado de amenaza.<br/>                                    |
-| [**\_tipo MPTHREAT**](mpthreat-type.md)                           | Posibles tipos de amenaza.<br/>                                     |
+| [**TIPO \_ DE LÍMITE DE PERSISTENCIA DE \_ \_ MP**](mp-persistence-limit-type.md) | Tipo de límite de persistencia.<br/>                                    |
+| [**MOTIVO DE \_ ELIMINACIÓN DE \_ MP**](mp-removal-reason.md)                  | Motivo de eliminación de firmas fastPath.<br/>                         |
+| [**MOTIVO DE \_ MPRESOLVED**](mpresolved-reason.md)                   | Posibles razones para resolver un error de corrección.<br/> |
+| [**TIPO \_ MPSCAN**](mpscan-type.md)                               | Tipo de examen realizado.<br/>                                    |
+| [**TIPO DE \_ FIRMA DE \_ MP**](mp-signature-type.md)                  | Posibles tipos de firma.<br/>                                  |
+| [**MPSOURCE**](mpsource.md)                                      | Categoría posible de origen.<br/>                               |
+| [**MARCA \_ MPSTATUS**](mpstatus-flag.md)                           | Posibles marcas de bits de estado general del producto.<br/>                 |
+| [**ACCIÓN \_ MPTHREAT**](mpthreat-action.md)                       | Posibles acciones de amenaza.<br/>                                   |
+| [**CATEGORÍA \_ MPTHREAT**](mpthreat-category.md)                   | Posibles categorías de amenazas.<br/>                                |
+| [**DETECCIÓN DE \_ MPTHREAT**](mpthreat-detection.md)                 | Posibles tipos conocidos de detección de amenazas no conocidas.<br/>                 |
+| [**GRAVEDAD DE \_ MPTHREAT**](mpthreat-severity.md)                   | Posibles gravedades de amenaza.<br/>                                |
+| [**ESTADO DE \_ MPTHREAT**](mpthreat-status.md)                       | Posible estado de amenaza.<br/>                                    |
+| [**TIPO \_ MPTHREAT**](mpthreat-type.md)                           | Posibles tipos de amenazas.<br/>                                     |
 
 
 

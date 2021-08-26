@@ -1,7 +1,7 @@
 ---
-description: 'El método ReceiveMultiple recibe una matriz de ejemplos. Este método implementa el método IMemInputPin:: ReceiveMultiple.'
+description: El método ReceiveMultiple recibe una matriz de ejemplos. Este método implementa el método IMemInputPin::ReceiveMultiple.
 ms.assetid: 21e757c7-f623-4ccb-8e37-512ee4dd7aa7
-title: Método CBaseInputPin. ReceiveMultiple (Amfilter. h)
+title: Método CBaseInputPin.ReceiveMultiple (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5725b7d8b70c8f7c61eb44231812997a903ba41a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 63d71f47978a2eefdcbdacbe1c31bfe69c732c24a0479357b35aa1ddd2b0a9de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079405"
 ---
-# <a name="cbaseinputpinreceivemultiple-method"></a>CBaseInputPin. ReceiveMultiple, método
+# <a name="cbaseinputpinreceivemultiple-method"></a>Método CBaseInputPin.ReceiveMultiple
 
-El `ReceiveMultiple` método recibe una matriz de ejemplos. Este método implementa el método [**IMemInputPin:: ReceiveMultiple**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivemultiple) .
+El `ReceiveMultiple` método recibe una matriz de ejemplos. Este método implementa el [**método IMemInputPin::ReceiveMultiple.**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivemultiple)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,14 +47,14 @@ HRESULT ReceiveMultiple(
 *pSamples* 
 </dt> <dd>
 
-Dirección de una matriz de punteros [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) , de tamaño *nSamples*.
+Dirección de una matriz de [**punteros IMediaSample,**](/windows/desktop/api/Strmif/nn-strmif-imediasample) de tamaño *nSamples*.
 
 </dd> <dt>
 
 *nSamples* 
 </dt> <dd>
 
-Número de muestras que se van a procesar.
+Número de muestras que se procesarán.
 
 </dd> <dt>
 
@@ -67,26 +67,26 @@ Puntero a una variable que recibe el número de muestras que se procesaron.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que aparecen en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                             | Descripción                                                |
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                    | Correcto.<br/>                                        |
-| <dl> <dt>**S \_ false**</dt> </dl>                 | El PIN se está vaciando actualmente; se rechazó el ejemplo.<br/> |
-| <dl> <dt>**\_puntero E**</dt> </dl>               | Argumento de puntero **nulo** .<br/>                      |
+| <dl> <dt>**S \_ OK**</dt> </dl>                    | Correcto.<br/>                                        |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>                 | El pin se está vacíando actualmente; se rechazó el ejemplo.<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>               | **Argumento de** puntero NULL.<br/>                      |
 | <dl> <dt>**VFW \_ E \_ INVALIDMEDIATYPE**</dt> </dl> | Tipo de medio no válido.<br/>                             |
-| <dl> <dt>**\_error de \_ tiempo de ejecución de VFW E \_**</dt> </dl>   | Se produjo un error en tiempo de ejecución.<br/>                      |
-| <dl> <dt>**Estado de VFW \_ E \_ incorrecto \_**</dt> </dl>     | El PIN está detenido.<br/>                             |
+| <dl> <dt>**ERROR EN TIEMPO DE EJECUCIÓN DE VFW \_ E \_ \_**</dt> </dl>   | Se produjo un error en tiempo de ejecución.<br/>                      |
+| <dl> <dt>**VFW \_ E \_ ESTADO \_ INCORRECTO**</dt> </dl>     | El pin se detiene.<br/>                             |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se comporta como el método [**CBaseInputPin:: Receive**](cbaseinputpin-receive.md) , pero recibe una matriz de ejemplos. En la clase base, el método recorre en bucle la matriz y llama a **Receive** con cada ejemplo. Invalide esta función si el filtro puede procesar lotes de muestras de forma más eficaz que procesarlos de uno en uno.
+Este método se comporta como el [**método CBaseInputPin::Receive,**](cbaseinputpin-receive.md) pero recibe una matriz de ejemplos. En la clase base, el método recorre en bucle la matriz y llama **a Receive** con cada ejemplo. Invalide esta función si el filtro puede procesar lotes de muestras de forma más eficaz que procesarlos de uno en uno.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,8 +94,8 @@ Este método se comporta como el método [**CBaseInputPin:: Receive**](cbaseinpu
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -103,7 +103,7 @@ Este método se comporta como el método [**CBaseInputPin:: Receive**](cbaseinpu
 
 <dl> <dt>
 
-[**Clase CBaseInputPin**](cbaseinputpin.md)
+[**CBaseInputPin (clase)**](cbaseinputpin.md)
 </dt> </dl>
 
  

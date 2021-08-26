@@ -1,21 +1,21 @@
 ---
-title: Código completo de un marco de DirectX
+title: Código completo para un marco de trabajo de DirectX
 description: En este tema se proporciona el ejemplo de código completo que se usa en el tutorial Introducción a DirectX para Windows.
 ms.assetid: 5d1e1f21-b541-4a61-8f04-e1e767b3a23e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb1a01e983f483503b42a0ac244453f14665460f
-ms.sourcegitcommit: 07b756a2f350efa5cfd5024a723ef392274ac3d9
+ms.openlocfilehash: 26940947a1806ab5e265720aa681b37cd9f93d1ac7f80ef69d72ce91a3ea8d5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "105707521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068685"
 ---
-# <a name="complete-code-for-a-directx-framework"></a>Código completo de un marco de DirectX
+# <a name="complete-code-for-a-directx-framework"></a>Código completo para un marco de trabajo de DirectX
 
-En este tema se proporciona el ejemplo de código completo que se usa en el tutorial Introducción [a DirectX para Windows](getting-started-with-a-directx-game.md).
+En este tema se proporciona el ejemplo de código completo que se usa en el tutorial [Introducción a DirectX para Windows](getting-started-with-a-directx-game.md).
 
-En este código se supone que usa Microsoft Visual Studio 2013 y que ha creado un proyecto de Win32 vacío.
+En este código se supone que usa Microsoft Visual Studio 2013 y que ha creado un proyecto win32 vacío.
 
 Este tema contiene estas secciones:
 
@@ -35,7 +35,7 @@ Este ejemplo no se puede descargar.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-----------------------|-------------|
 | Lenguajes de programación | C++         |
 | Modelos de programación    | Windows/C++ |
@@ -46,17 +46,17 @@ Este ejemplo no se puede descargar.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|------------------------|
 | Cliente mínimo compatible | Windows 8.1            |
-| Servidor mínimo compatible | Windows Server 2012 R2 |
+| Servidor mínimo compatible | Windows Server 2012 R2 |
 | SDK mínimo necesario     | Visual Studio 2013     |
 
 <span id="view_codecpp"></span>
 
 ## <a name="view-the-code-c"></a>Ver el código (C++)
 
-## <a name="cubecpp"></a>Cube. cpp
+## <a name="cubecpp"></a>Cube.cpp
 
 
 ```C++
@@ -142,7 +142,7 @@ INT WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
 
 
-## <a name="mainclassh"></a>MainClass. h
+## <a name="mainclassh"></a>MainClass.h
 
 
 ```C++
@@ -212,7 +212,7 @@ static std::wstring m_windowClassName;
 
 
 
-## <a name="mainclasscpp"></a>MainClass. cpp
+## <a name="mainclasscpp"></a>MainClass.cpp
 
 
 ```C++
@@ -425,7 +425,7 @@ LRESULT CALLBACK MainClass::StaticWindowProc(
 
 
 
-## <a name="deviceresourcesh"></a>DeviceResources. h
+## <a name="deviceresourcesh"></a>DeviceResources.h
 
 
 ```C++
@@ -509,7 +509,7 @@ private:
 
 
 
-## <a name="deviceresourcescpp"></a>DeviceResources. cpp
+## <a name="deviceresourcescpp"></a>DeviceResources.cpp
 
 
 ```C++
@@ -916,7 +916,7 @@ DeviceResources::~DeviceResources()
 
 
 
-## <a name="rendererh"></a>Renderer. h
+## <a name="rendererh"></a>Renderer.h
 
 
 ```C++
@@ -1010,7 +1010,7 @@ private:
 
 
 
-## <a name="renderercpp"></a>Representador. cpp
+## <a name="renderercpp"></a>Renderer.cpp
 
 
 ```C++

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3275e6de398c42d29424b2a1f9b0c750989357ef21c10d5db1e1680e7adb0836
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08353f4d6c743d92eff08f83e90babb9cc9d075f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118707273"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623931"
 ---
 # <a name="dropdownbutton-element"></a>Elemento DropDownButton
 
@@ -40,16 +40,16 @@ Representa un control [de botón desplegable](windowsribbon-controls-dropdownbut
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -79,8 +79,8 @@ Representa un control [de botón desplegable](windowsribbon-controls-dropdownbut
 
 | Elemento                                                                             | Descripción                                        |
 |-------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Botón**](windowsribbon-element-button.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
-| [**Casilla**](windowsribbon-element-checkbox.md)<br/>                       | Puede producirse una o varias veces<br/> <br/> |
+| [**Button**](windowsribbon-element-button.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
+| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                       | Puede producirse una o varias veces<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                       | Puede producirse una o varias veces<br/> <br/> |
 | **DropDownButton**<br/>                                                       | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/> | Puede producirse una o varias veces<br/> <br/> |
@@ -170,7 +170,7 @@ En esta sección de código se muestran las declaraciones de control **DropDownB
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

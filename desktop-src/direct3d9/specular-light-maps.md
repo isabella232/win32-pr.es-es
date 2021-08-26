@@ -1,21 +1,21 @@
 ---
-description: Cuando se ilumina mediante una fuente de luz, los objetos brillantes, los que usan materiales muy reflectantes, reciben reflejos especulares.
+description: Cuando se encienden con una fuente de luz, los objetos desalmados (aquellos que usan materiales altamente reflectantes) reciben resaltados especulares.
 ms.assetid: cea53131-1e2e-4389-80fd-ef5a0d068703
-title: Mapas de luz especular (Direct3D 9)
+title: Specular Light Mapas (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d55b4bf34baae0e73c2d072d62470533fc99827a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 05362eb4c0b79ebb980a6c0acb1607713765a446c0ef27823ae0e648cef88d68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026105"
 ---
-# <a name="specular-light-maps-direct3d-9"></a>Mapas de luz especular (Direct3D 9)
+# <a name="specular-light-maps-direct3d-9"></a>Specular Light Mapas (Direct3D 9)
 
-Cuando se ilumina mediante una fuente de luz, los objetos brillantes, los que usan materiales muy reflectantes, reciben reflejos especulares. En algunos casos, los reflejos especulares generados por el módulo de iluminación no son precisos. Para generar un resaltado más atractivo, muchas aplicaciones de Direct3D aplican mapas de luz especular a los primitivos.
+Cuando se encienden con una fuente de luz, los objetos desalmados (aquellos que usan materiales altamente reflectantes) reciben resaltados especulares. En algunos casos, los resaltados especulares generados por el módulo de iluminación no son precisos. Para generar un resaltado más atractivo, muchas aplicaciones de Direct3D aplican mapas de luz especulares a las primitivas.
 
-Para realizar la asignación de luz especular, agregue el mapa de luz especular a la textura del primitivo y, a continuación, modular (multiplica el resultado por) el mapa de RGB ligero.
+Para realizar la asignación de luz especular, agregue el mapa de luz especular a la textura de la primitiva y luego modular (multiplique el resultado por) el mapa de luz RGB.
 
 En el ejemplo de código siguiente se muestra este proceso en C++.
 

@@ -1,7 +1,7 @@
 ---
 description: Establece una textura.
 ms.assetid: edf5bf61-508a-4417-bdf8-c36e6ba7ab30
-title: 'ID3DXBaseEffect:: SetTexture (método) (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::SetTexture (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 398dcc2f3d61ad32c08b67735a9ec7ed1a192acf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9bc2860efc6fd9ede3e9e95a6ab64e27ea35ec0ec83c46e83dc1c608878a3d1a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105721425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026515"
 ---
-# <a name="id3dxbaseeffectsettexture-method"></a>ID3DXBaseEffect:: SetTexture (método)
+# <a name="id3dxbaseeffectsettexture-method"></a>Método ID3DXBaseEffect::SetTexture
 
 Establece una textura.
 
@@ -41,21 +41,21 @@ HRESULT SetTexture(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pTexture* \[ de\]
+*pTexture* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DBASETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9)**
 
-Objeto Texture. Vea [**IDirect3DBaseTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9).
+Objeto de textura. Vea [**IDirect3DBaseTexture9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9)
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Objeto Texture. Vea [**IDirect3DBaseTexture9**](/windows/win32/api/d3d9helper/nn
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

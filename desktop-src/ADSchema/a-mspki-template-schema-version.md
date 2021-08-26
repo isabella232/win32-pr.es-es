@@ -1,11 +1,11 @@
 ---
-title: atributo MS-PKI-template-Schema-version
-description: Realiza un seguimiento de las actualizaciones del esquema de la clase PKI-Certificate-template.
+title: Atributo ms-PKI-Template-Schema-Version
+description: Realiza un seguimiento de las actualizaciones de esquema de la clase PKI-Certificate-Template.
 ms.assetid: 7ad55f1a-cdb9-4eea-bd09-db4f5e6373ba
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-PKI-template-Schema-version
-- Esquema de AD de atributo atributo mspki-template-Schema-version
+- ms-PKI-Template-Schema-Version attribute AD Schema
+- msPKI-Template-Schema-Version attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cc3b7952b55b346da29119775bb9c0f8b825c50
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 19ba5dcd71abac9339c8be6b4c1b04828e65bbdcff47ab1086296603c1569dbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066425"
 ---
-# <a name="ms-pki-template-schema-version-attribute"></a>atributo MS-PKI-template-Schema-version
+# <a name="ms-pki-template-schema-version-attribute"></a>Atributo ms-PKI-Template-Schema-Version
 
-Realiza un seguimiento de las actualizaciones del esquema de la clase PKI-Certificate-template.
+Realiza un seguimiento de las actualizaciones de esquema de la clase PKI-Certificate-Template.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| CN                | MS-PKI-template-Schema-version                                                                    |
-| Nombre para mostrar de LDAP | Atributo mspki-template-Schema-version                                                                     |
-| Tamaño              | 4 bytes                                                                                           |
-| Actualizar privilegio  | Administrador de dominio                                                                              |
-| Frecuencia de actualización  | Cuando se edita, crea o clona el objeto plantilla de certificado (MS-PKI-Certificate-template). |
+| CN                | ms-PKI-Template-Schema-Version                                                                    |
+| Ldap-Display-Name | msPKI-Template-Schema-Version                                                                     |
+| Size              | 4 bytes                                                                                           |
+| Actualizar privilegios  | Administrador de dominio                                                                              |
+| Frecuencia de actualización  | Cuando se edita, crea o clona el objeto de plantilla de certificado (ms-PKI-Certificate-Template). |
 | Attribute-Id      | 1.2.840.113556.1.4.1434                                                                           |
-| System-ID-GUID    | 0c15e9f5-491d-4594-918f-32813a091da9                                                              |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)                                                              |
+| System-Id-Guid    | 0c15e9f5-491d-4594-918f-32813a091da9                                                              |
+| Syntax            | [**Enumeración**](s-enumeration.md)                                                              |
 
 
 
@@ -52,20 +52,20 @@ Realiza un seguimiento de las actualizaciones del esquema de la clase PKI-Certif
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Realiza un seguimiento de las actualizaciones del esquema de la clase PKI-Certif
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Realiza un seguimiento de las actualizaciones del esquema de la clase PKI-Certif
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Realiza un seguimiento de las actualizaciones del esquema de la clase PKI-Certif
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Realiza un seguimiento de las actualizaciones del esquema de la clase PKI-Certif
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

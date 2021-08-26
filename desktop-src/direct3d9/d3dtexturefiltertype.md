@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: bd6038e1b3d2b2f85e5766605583db9879427343
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: a9a55632ee1f1b8f2e40b1be1272411c7c24b3b18c576563ff9c0de7c79bc413
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069375"
 ---
 # <a name="d3dtexturefiltertype-enumeration"></a>D3DTEXTUREFILTERTYPE (enumeración)
 
@@ -56,7 +56,7 @@ Cuando se usa [**con \_ MIPFILTER de D3DSAMP,**](./d3dsamplerstatetype.md)deshab
 <span id="D3DTEXF_POINT"></span><span id="d3dtexf_point"></span>**D3DTEXF \_ POINT**
 </dt> <dd>
 
-Cuando se usa con [**D3DSAMP \_ MAGFILTER**](./d3dsamplerstatetype.md) o [**D3DSAMP \_ MINFILTER,**](./d3dsamplerstatetype.md)especifica que el filtrado de puntos se usará como filtro de ampliación de textura o minificación, respectivamente. Cuando se usa con **\_ MIPFILTER de D3DSAMP,** habilita mipmapping y especifica que el rasterizador elige el color del texel del nivel de mip más cercano.
+Cuando se usa con [**D3DSAMP \_ MAGFILTER**](./d3dsamplerstatetype.md) o [**D3DSAMP \_ MINFILTER,**](./d3dsamplerstatetype.md)especifica que el filtrado de puntos se usará como filtro de ampliación o minificación de textura, respectivamente. Cuando se usa con **\_ MIPFILTER de D3DSAMP,** habilita mipmapping y especifica que el rasterizador elige el color del texel del nivel de mip más cercano.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Cuando se usa con [**D3DSAMP \_ MAGFILTER**](./d3dsamplerstatetype.md) o [**D3DS
 <span id="D3DTEXF_ANISOTROPIC"></span><span id="d3dtexf_anisotropic"></span>**D3DTEXF \_ ANISOTROPIC**
 </dt> <dd>
 
-Cuando se usa con [**D3DSAMP \_ MAGFILTER**](./d3dsamplerstatetype.md) o [**D3DSAMP \_ MINFILTER,**](./d3dsamplerstatetype.md)especifica que el filtrado de textura anisotropica se usa como filtro de ampliación o minificación de textura, respectivamente. Compensa la distorsión causada por la diferencia de ángulo entre el polígono de textura y el plano de la pantalla. El uso **con \_ MIPFILTER de D3DSAMP** no está definido.
+Cuando se usa con [**D3DSAMP \_ MAGFILTER**](./d3dsamplerstatetype.md) o [**D3DSAMP \_ MINFILTER,**](./d3dsamplerstatetype.md)especifica que el filtrado de textura anisotrófica se usa como filtro de ampliación o minificación de textura, respectivamente. Compensa la distorsión causada por la diferencia de ángulo entre el polígono de textura y el plano de la pantalla. El uso **con \_ MIPFILTER de D3DSAMP** no está definido.
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ El uso [**con \_ MIPFILTER de D3DSAMP**](./d3dsamplerstatetype.md) no está defi
 <span id="D3DTEXF_FORCE_DWORD"></span><span id="d3dtexf_force_dword"></span>**D3DTEXF \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -118,13 +118,13 @@ Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, al
 
 Para comprobar si un formato admite tipos de filtro de textura distintos de D3DTEXF POINT (que siempre se admite), llame a \_ [**IDirect3D9::CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) con D3DUSAGE \_ QUERY \_ FILTER.
 
-Establezca el filtro de ampliación de una fase de textura llamando a [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) con el valor MAGFILTER de D3DSAMP como segundo parámetro y un miembro de esta enumeración como tercer \_ parámetro.
+Establezca el filtro de ampliación de una fase de textura llamando a [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) con el valor DE MAGFILTER de D3DSAMP como segundo parámetro y un miembro de esta enumeración como tercer \_ parámetro.
 
 Establezca el filtro de minificación de una fase de textura llamando a [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) con el valor MINFILTER de D3DSAMP como segundo parámetro y un miembro de esta enumeración como tercer \_ parámetro.
 
 Establezca el filtro de textura para usar entre niveles mipmap mediante una llamada a [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) con el valor MIPFILTER de D3DSAMP como segundo parámetro y un miembro de esta enumeración como tercer \_ parámetro.
 
-No todos los modos de filtrado válidos para un dispositivo se aplicarán a los mapas de volumen. En general, se admiten los filtros de ampliación LINEAR D3DTEXF POINT y \_ D3DTEXF \_ para mapas de volúmenes. Si se establece D3DPTEXTURECAPS MIPVOLUMEMAP, se admiten los filtros \_ mipmap D3DTEXF \_ POINT y D3DTEXF POINT y \_ D3DTEXF LINEAR para mapas de \_ volumen. El dispositivo puede admitir o no el filtro mipmap LINEAR de D3DTEXF para \_ mapas de volumen. Los dispositivos que admiten el filtrado anisotropico para mapas 2D no admiten necesariamente el filtrado anisotropo para mapas de volumen. Sin embargo, las aplicaciones que habilitan el filtrado anisotropico recibirán el mejor filtrado disponible (probablemente lineal) si no se admite el filtrado anisotropico.
+No todos los modos de filtrado válidos para un dispositivo se aplicarán a los mapas de volumen. En general, se admiten los filtros de ampliación LINEAR D3DTEXF POINT y \_ D3DTEXF \_ para mapas de volúmenes. Si se establece D3DPTEXTURECAPS MIPVOLUMEMAP, se admiten los filtros \_ mipmap D3DTEXF POINT y \_ D3DTEXF POINT y \_ D3DTEXF LINEAR minification para mapas \_ de volúmenes. El dispositivo puede admitir o no el filtro mipmap LINEAR de D3DTEXF para \_ mapas de volúmenes. Los dispositivos que admiten el filtrado anisotropico para mapas 2D no admiten necesariamente el filtrado anisotropico para mapas de volúmenes. Sin embargo, las aplicaciones que habilitan el filtrado anisotropico recibirán el mejor filtrado disponible (probablemente lineal) si no se admite el filtrado anisotropico.
 
 ## <a name="requirements"></a>Requisitos
 

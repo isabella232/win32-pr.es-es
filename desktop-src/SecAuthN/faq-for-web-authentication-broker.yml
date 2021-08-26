@@ -5,12 +5,12 @@ metadata:
   title: Preguntas más frecuentes sobre el Agente de autenticación web
   ms.topic: article
   ms.date: 05/31/2018
-  ms.openlocfilehash: ef15108a0c6384d833faaef052480c0e3eb79dda
-  ms.sourcegitcommit: 6377cd944d1f09f2dfe5727170ca8b330c8235bf
+  ms.openlocfilehash: fab271c9787650213b6bb575888960d921f0dda35a62ff3b7d43c1b50585e43c
+  ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/07/2021
-  ms.locfileid: "113366766"
+  ms.lasthandoff: 08/11/2021
+  ms.locfileid: "120101315"
 title: Preguntas más frecuentes sobre el Agente de autenticación web
 summary: >
   Preguntas más frecuentes sobre el Agente de autenticación web.
@@ -30,7 +30,7 @@ sections:
     answer: >
       Use los registros operativos para obtener más información.
   - question: >
-      ¿El contenedor de aplicaciones de inicio de sesión único (SSO) comparte sus cookies con Internet Explorer exploradores?
+      ¿El contenedor de aplicaciones de inicio de sesión único (SSO) comparte sus cookies con Internet Explorer otros exploradores?
     answer: >
       No. 
 additionalContent: "\n## <a name=\"related-topics\"></a>Temas relacionados\n\n[Consideraciones para el desarrollo de páginas web](considerations-for-the-web-page-development.md)\n\n[Aplicación de ejemplo del SDK del Agente de autenticación web](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)\n\n[**Windows.Security.Authentication.Web**](/uwp/api/Windows.Security.Authentication.Web)"

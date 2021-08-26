@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DX10CreateSkinInfo: crea un objeto de malla de máscara vacía mediante un declarador.'
+description: 'Función D3DX10CreateSkinInfo: crea un objeto de malla de máscara vacío mediante un declarador.'
 ms.assetid: 5356cfe5-de90-462d-9722-72f3618decfb
 title: Función D3DX10CreateSkinInfo (D3DX10Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 17d6ec99d3f43c41d56deebef81a021c81ec1d69
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 52a6d1116e46771c4c092fb08f3d59f43277d2437db1bd2c5b750f4a381043fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070195"
 ---
 # <a name="d3dx10createskininfo-function"></a>Función D3DX10CreateSkinInfo
 
-Crea un objeto de malla de máscara vacía mediante un declarador.
+Crea un objeto de malla de máscara vacío mediante un declarador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 ## <a name="remarks"></a>Comentarios
 
-Use [**id3DX10SkinInfo::SetIonalInfluence para**](id3dx10skininfo-setboneinfluence.md) rellenar el objeto de malla de máscara vacío devuelto por este método.
+Use [**id3DX10SkinInfo::SetIonalInfluence**](id3dx10skininfo-setboneinfluence.md) para rellenar el objeto de malla de máscara vacío devuelto por este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Use [**id3DX10SkinInfo::SetIonalInfluence para**](id3dx10skininfo-setboneinfluen
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

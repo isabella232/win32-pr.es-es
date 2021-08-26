@@ -1,30 +1,30 @@
 ---
-title: Propiedad IMsRdpClient FullScreen
+title: Propiedad FullScreen de IMsRdpClient
 description: Determina si el control de cliente está en modo de pantalla completa.
 ms.assetid: 64fe2835-c00e-4d21-812d-dcf160147d93
 ms.tgt_platform: multiple
 keywords:
 - Propiedad FullScreen Servicios de Escritorio remoto
-- Propiedad FullScreen Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Interfaz IMsRdpClient Servicios de Escritorio remoto, propiedad FullScreen
-- Propiedad FullScreen Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Interfaz IMsRdpClient2 Servicios de Escritorio remoto, propiedad FullScreen
-- Propiedad FullScreen Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Interfaz IMsRdpClient3 Servicios de Escritorio remoto, propiedad FullScreen
-- Propiedad FullScreen Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Interfaz IMsRdpClient4 Servicios de Escritorio remoto, propiedad FullScreen
-- Propiedad FullScreen Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Interfaz IMsRdpClient5 Servicios de Escritorio remoto, propiedad FullScreen
-- Propiedad FullScreen Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Interfaz IMsRdpClient6 Servicios de Escritorio remoto, propiedad FullScreen
-- Propiedad FullScreen Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Interfaz IMsRdpClient7 Servicios de Escritorio remoto, propiedad FullScreen
-- Propiedad FullScreen Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Interfaz IMsRdpClient8 Servicios de Escritorio remoto, propiedad FullScreen
-- Propiedad FullScreen Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto, propiedad FullScreen
-- Propiedad FullScreen Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Interfaz IMsRdpClient10 Servicios de Escritorio remoto, propiedad FullScreen
+- Propiedad FullScreen Servicios de Escritorio remoto interfaz , IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad FullScreen
+- Propiedad FullScreen Servicios de Escritorio remoto interfaz , IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad FullScreen
+- Propiedad FullScreen Servicios de Escritorio remoto interfaz , IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad FullScreen
+- Propiedad FullScreen Servicios de Escritorio remoto interfaz , IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad FullScreen
+- Propiedad FullScreen Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad FullScreen
+- Propiedad FullScreen Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad FullScreen
+- Propiedad FullScreen Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad FullScreen
+- Propiedad FullScreen Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad FullScreen
+- Propiedad FullScreen Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad FullScreen
+- Propiedad FullScreen Servicios de Escritorio remoto interfaz , IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad FullScreen
 topic_type:
 - apiref
 api_name:
@@ -64,20 +64,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1adbc8e11d2cc4fb4a8071372777a01d81b5edad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c52e3d2349a4d3b0121b05a3a0424126b754757c1b0b356042a90c28ce9923ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010075"
 ---
-# <a name="imsrdpclientfullscreen-property"></a>IMsRdpClient:: FullScreen (propiedad)
+# <a name="imsrdpclientfullscreen-property"></a>IMsRdpClient::FullScreen, propiedad
 
 Determina si el control de cliente está en modo de pantalla completa.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -94,19 +94,19 @@ HRESULT get_FullScreen(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**True** para entrar en el modo de pantalla completa, **false** para salir del modo de pantalla completa y volver al modo de ventana.
+**True** para entrar en modo de pantalla completa, **False** para salir del modo de pantalla completa y volver al modo de ventana.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Si los métodos se realizan correctamente, se devuelve **S \_ OK** . Cualquier otro valor **HRESULT** indica que se produjo un error en la llamada.
+Si los métodos se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro **valor HRESULT** indica que se ha dado error en la llamada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede establecer esta propiedad cuando el control está conectado.
+Puede establecer esta propiedad cuando el control esté conectado.
 
-Debe llamar al método [**IMsRdpClientNonScriptable3::p UT \_ ConnectionBarText**](imsrdpclientnonscriptable3-connectionbartext.md) antes de llamar al método de [**\_ pantalla completa IMsTscSecuredSettings::p UT**](imstscsecuredsettings-fullscreen.md) o al método de **\_ pantalla completa IMsRdpClient::p UT** .
+Debe llamar al método [**IMsRdpClientNonScriptable3::p ut \_ ConnectionBarText**](imsrdpclientnonscriptable3-connectionbartext.md) antes de llamar al método [**IMsTscSecuredSettings::p ut \_ Fullscreen**](imstscsecuredsettings-fullscreen.md) o al método **IMsRdpClient::p ut \_ Fullscreen.**
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

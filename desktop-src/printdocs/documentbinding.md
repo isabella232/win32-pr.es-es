@@ -4,12 +4,12 @@ ms.assetid: 36a7c360-2d26-46b9-b829-0fb35b36c79c
 title: DocumentBinding
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf2b8f44c90cdef37a6599bf25904949748c82ba
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: e8d7b3ed43aed1111d39e02e09f9f4ee658938b45053d64bec3beda4490f87b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949875"
 ---
 # <a name="documentbinding"></a>DocumentBinding
 
@@ -19,13 +19,13 @@ Describe el método de enlace. Cada documento se enlaza por separado. DocumentBi
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
+-   [contenido lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                              |
 | Prefijo de ámbito <br/> | Documento<br/>                                                                                                                             |
@@ -71,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
+## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
 
 Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 

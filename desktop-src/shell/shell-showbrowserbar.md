@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d19cd5b98ce39470860cc481ab05e4bb41adc9a4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 21bafde8c148ea8249672dd26a244dec152ed0e9fc5ce5fbb769e5cae6c92b74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008895"
 ---
 # <a name="shellshowbrowserbar-method"></a>Método Shell.ShowBrowserBar
 
@@ -56,7 +56,7 @@ Shell.ShowBrowserBar( _
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Cadena **que** contiene la forma de cadena del CLSID de la barra del explorador que se va a mostrar. El objeto debe registrarse como un objeto De barra del explorador con una categoría de \_ componente InfoBand CATID. Para obtener más información, vea [Crear barras personalizadas del Explorador, bandas](band-objects.md)de herramientas y bandas de escritorio.
+Cadena **que** contiene la forma de cadena del CLSID de la barra del explorador que se va a mostrar. El objeto debe registrarse como un objeto Barra del explorador con una categoría de \_ componente InfoBand CATID. Para obtener más información, vea [Crear barras personalizadas del Explorador, bandas](band-objects.md)de herramientas y bandas de escritorio.
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Puede mostrar una de las barras estándar del Explorador estableciendo el parám
 | Favoritos    | {EFA24E61-B078-11d0-89E4-00C04FC9E26E} |
 | Carpetas      | {EFA24E64-B078-11d0-89E4-00C04FC9E26E} |
 | Historial      | {EFA24E62-B078-11d0-89E4-00C04FC9E26E} |
-| Buscar       | {30D02401-6A81-11d0-8274-00C04FD5AE38} |
+| Search       | {30D02401-6A81-11d0-8274-00C04FD5AE38} |
 
 
 
@@ -106,7 +106,7 @@ Este método no está disponible actualmente en Microsoft Visual Basic.
 
 En los ejemplos siguientes se muestra el uso de **Shell.ShowBrowserBar para** mostrar la **barra del explorador Favoritos.** El uso se muestra para JScript y VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -147,11 +147,11 @@ Vbscript:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 

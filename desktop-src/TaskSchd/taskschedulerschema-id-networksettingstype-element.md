@@ -1,9 +1,9 @@
 ---
-title: Identificador (networkSettingsType) (elemento)
+title: Elemento Id (networkSettingsType)
 description: Contiene un valor GUID que identifica un perfil de red.
 ms.assetid: 527912ab-9a81-4570-91c5-8f5943e79a28
 keywords:
-- Elemento ID Programador de tareas
+- Identificador del elemento Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3d14865d50e9c3418e3ef65cdbeaea747a98a4ab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 06196710b9db9d39d45a24b78bccabf479ef210a97f3cea1fd19286b76f2fc42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125845"
 ---
-# <a name="id-networksettingstype-element"></a>Identificador (networkSettingsType) (elemento)
+# <a name="id-networksettingstype-element"></a>Elemento Id (networkSettingsType)
 
 Contiene un valor GUID que identifica un perfil de red.
 
@@ -31,7 +31,7 @@ Contiene un valor GUID que identifica un perfil de red.
  />
 ```
 
-El elemento **ID** se define mediante el tipo complejo [**networkSettingsType**](taskschedulerschema-networksettingstype-complextype.md) .
+El tipo complejo [**networkSettingsType**](taskschedulerschema-networksettingstype-complextype.md) define el elemento **Id.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -39,15 +39,15 @@ El elemento **ID** se define mediante el tipo complejo [**networkSettingsType**]
 
 | Elemento                                                                                            | Derivado de                                                                       | Descripción                                                                                                                                                                                                                                                                                                        |
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**NetworkSettings (settingsType)**](taskschedulerschema-networksettings-settingstype-element.md) | [**networkSettingsType**](taskschedulerschema-networksettingstype-complextype.md) | Contiene la configuración que usa el servicio de Programador de tareas para obtener un perfil de red. El servicio Programador de tareas comprueba la disponibilidad de esta red cuando el elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) está establecido en **true**.<br/> |
+| [**NetworkSettings (settingsType)**](taskschedulerschema-networksettings-settingstype-element.md) | [**networkSettingsType**](taskschedulerschema-networksettingstype-complextype.md) | Contiene la configuración que el Programador de tareas utiliza para obtener un perfil de red. El Programador de tareas comprueba la disponibilidad de esta red cuando el [**elemento RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) está establecido en **True.**<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, vea [**propiedad ID de INetworkSettings**](/windows/desktop/api/taskschd/nf-taskschd-inetworksettings-get_id).
+Para el desarrollo de C++, vea [**Id Property of INetworkSettings**](/windows/desktop/api/taskschd/nf-taskschd-inetworksettings-get_id).
 
-Para el desarrollo de scripts, vea [**NetworkSettings.ID**](networksettings-id.md).
+Para el desarrollo de scripts, [**consulte NetworkSettings.Id**](networksettings-id.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,8 +55,8 @@ Para el desarrollo de scripts, vea [**NetworkSettings.ID**](networksettings-id.m
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

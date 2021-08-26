@@ -58,7 +58,7 @@ Dirección de un puntero a [**un ID3DXBuffer**](id3dxbuffer.md) que almacenará 
 
 Tipo: **[ **D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md)**
 
-[**D3DXIMAGE \_ FILEFORMAT especificando**](./d3dximage-fileformat.md) el formato de archivo que se usará al guardar. Esta función admite el guardado en todos los **formatos \_ FILEFORMAT D3DXIMAGE** excepto Portable PortableMap (.ppm) y Targa/Truevision Graphics Adapter (.tga).
+[**D3DXIMAGE \_ FILEFORMAT especificando**](./d3dximage-fileformat.md) el formato de archivo que se usará al guardar. Esta función admite el guardado en todos los **formatos \_ FILEFORMAT D3DXIMAGE,** excepto PortableMap (.ppm) y Targa/Truevision Graphics Adapter (.tga).
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ Esta función controla la conversión a y desde formatos de textura comprimidos.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

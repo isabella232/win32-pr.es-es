@@ -1,19 +1,19 @@
 ---
-description: Especifica la categoría de dispositivos para un dispositivo de captura de vídeo.
+description: Especifica la categoría de dispositivo para un dispositivo de captura de vídeo.
 ms.assetid: 008ff9df-ebe0-4efd-a62c-24f4a4239ebd
-title: MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_VIDCAP_CATEGORY atributo (Mfidl. h)
+title: MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_VIDCAP_CATEGORY atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc65af267df38486f6ad7859d16aff4de5973a27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 140a9055bdc8081d5cdea1931b199dcd00f537e73051f30790f036be4af57fb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060795"
 ---
-# <a name="mf_devsource_attribute_source_type_vidcap_category-attribute"></a>\_Tipo de origen de atributo MF DEVSOURCE atributo de \_ \_ \_ \_ \_ categoría VIDCAP
+# <a name="mf_devsource_attribute_source_type_vidcap_category-attribute"></a>Atributo MF \_ DEVSOURCE \_ SOURCE \_ TYPE \_ \_ VIDCAP \_ CATEGORY
 
-Especifica la categoría de dispositivos para un dispositivo de captura de vídeo.
+Especifica la categoría de dispositivo para un dispositivo de captura de vídeo.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -33,13 +33,13 @@ Se define el siguiente valor.
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use este atributo como entrada de la función [**MFEnumDeviceSources**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources) al enumerar los dispositivos de captura de vídeo.
+Use este atributo como entrada para la [**función MFEnumDeviceSources**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources) al enumerar los dispositivos de captura de vídeo.
 
 Además, este atributo se establece en los objetos de activación devueltos por las siguientes funciones:
 
@@ -48,7 +48,7 @@ Además, este atributo se establece en los objetos de activación devueltos por 
 
 El atributo solo se aplica a los dispositivos de captura de vídeo.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,9 +56,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Captura de audio y vídeo](audio-video-capture.md)

@@ -1,7 +1,7 @@
 ---
-description: Proporciona las siguientes sobrecargas de operador y conversiones de tipo para las estructuras D3DXCOLOR.
+description: Proporciona las siguientes sobrecargas de operador y conversión de tipos para estructuras D3DXCOLOR.
 ms.assetid: 89780c6f-c78b-4ebe-876a-6dbc37b598ef
-title: Extensiones de D3DXCOLOR (D3dx9math. h)
+title: Extensiones D3DXCOLOR (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 7f457332f371b2c452a465c5b831774488301c6f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7a07d697192d838298f76205aeb3010fda7bf6a08f58f39fe58893444f604231
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103914765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096295"
 ---
-# <a name="d3dxcolor-extensions"></a>Extensiones de D3DXCOLOR
+# <a name="d3dxcolor-extensions"></a>Extensiones D3DXCOLOR
 
-Proporciona las siguientes sobrecargas de operador y conversiones de tipo para las estructuras [**D3DXCOLOR**](d3dxcolor.md) .
+Proporciona las siguientes sobrecargas de operador y conversión de tipos para [**estructuras D3DXCOLOR.**](d3dxcolor.md)
 
 ``` syntax
 typedef struct D3DXCOLOR
@@ -78,14 +78,14 @@ Tipos derivados: \* LPD3DXCOLOR
 
 ## <a name="members"></a>Miembros
 
-Para obtener más información sobre los miembros de la estructura, consulte [**D3DXCOLOR**](d3dxcolor.md).
+Para obtener más información sobre los miembros de estructura, consulte [**D3DXCOLOR**](d3dxcolor.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las sobrecargas de operador y las conversiones de tipo para esta estructura se implementan en d3dx9math. INL.
+Las sobrecargas de operador y las conversión de tipos para esta estructura se implementan en d3dx9math.inl.
 
 > [!Note]  
-> El constructor D3DXCOLOR () se bloquea en tiempo de ejecución cuando se ejecuta en modo de depuración en Microsoft Visual Studio 2010 con la opción del compilador de [comprobaciones de errores en tiempo de ejecución (/RTCc)](/previous-versions/visualstudio/visual-studio-2010/8wtf2dfz(v=vs.100)) .
+> El constructor D3DXCOLOR() se bloquea en tiempo de ejecución cuando se ejecuta en modo de depuración en Microsoft Visual Studio 2010 con la opción del compilador Comprobaciones de errores en tiempo de ejecución [(/RTCc).](/previous-versions/visualstudio/visual-studio-2010/8wtf2dfz(v=vs.100))
 
  
 
@@ -95,7 +95,7 @@ Las sobrecargas de operador y las conversiones de tipo para esta estructura se i
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 
@@ -103,7 +103,7 @@ Las sobrecargas de operador y las conversiones de tipo para esta estructura se i
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> </dl>
 
  

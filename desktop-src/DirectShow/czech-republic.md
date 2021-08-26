@@ -4,12 +4,12 @@ ms.assetid: 6bbef2a3-7104-4b5f-8381-0a89751e572b
 title: República Checa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91e3d946fdfc42f0e418d7bba1a786d49c5d6785
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: cadcc51becba548bcbd59421866bebaf52c624bfe1913bf01f4b87af15d287bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998445"
 ---
 # <a name="czech-republic"></a>República Checa
 
@@ -20,7 +20,7 @@ Los índices de frecuencia de las tablas de la República Checo no son adecuados
 -   [Windows 7 y versiones posteriores](#windows-7-and-later)
     -   [Asignaciones de difusión de la República Checo](#czech-republic-broadcast-assignments)
     -   [Asignaciones de cable de la República Checo](#czech-republic-cable-assignments)
--   [Asignaciones de canal anteriores](#earlier-channel-assignments)
+-   [Asignaciones de canales anteriores](#earlier-channel-assignments)
     -   [Asignaciones de difusión de la República Checo](#czech-republic-broadcast-assignments)
     -   [Asignaciones de cable de la República Checo](#czech-republic-cable-assignments)
 -   [Temas relacionados](#related-topics)
@@ -252,7 +252,7 @@ Los índices de frecuencia de las tablas de la República Checo no son adecuados
        855250000L,      // 138 K69
 ```
 
-## <a name="earlier-channel-assignments"></a>Asignaciones de canal anteriores
+## <a name="earlier-channel-assignments"></a>Asignaciones de canales anteriores
 
 ### <a name="czech-republic-broadcast-assignments"></a>Asignaciones de difusión de la República Checo
 

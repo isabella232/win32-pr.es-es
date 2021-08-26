@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para la espera ALPC para los nuevos eventos de mensaje. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para que ALPC espere nuevos eventos de mensaje. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 7f7fa4b8-ed12-49a0-a84e-37f66af4f5f1
-title: ALPC_Wait_For_New_Message (clase)
+title: ALPC_Wait_For_New_Message clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 75cbda11a2a27eec811f8ff47966d12c6a86cf07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67b3e52e59345eea95db7485e0764f31f88669241159ffc857d46cf230a5e8b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901555"
 ---
-# <a name="alpc_wait_for_new_message-class"></a>ALPC- \_ esperar \_ para la \_ nueva clase de \_ mensaje
+# <a name="alpc_wait_for_new_message-class"></a>ALPC \_ Wait For New Message \_ \_ \_ (Clase)
 
-Esta clase es la clase de tipo de evento para la espera ALPC para los nuevos eventos de mensaje.
+Esta clase es la clase de tipo de evento para que ALPC espere nuevos eventos de mensaje.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,20 +40,20 @@ class ALPC_Wait_For_New_Message : ALPC
 
 ## <a name="members"></a>Miembros
 
-La **nueva clase de \_ mensaje ALPC wait \_ for \_ New \_ Message** tiene estos tipos de miembros:
+La **clase ALPC \_ Wait For \_ New \_ \_ Message** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **\_ nueva clase \_ de mensaje ALPC wait for \_ New \_ Message** tiene estas propiedades.
+La **clase ALPC \_ Wait For \_ New \_ \_ Message** tiene estas propiedades.
 
 <dl> <dt>
 
 **IsServerPort**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -72,7 +72,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que contiene el nombre del puerto en el que se está esperando ALPC.
+Cadena que contiene el nombre del puerto en el que ESTÁ ESPERANDO ALPC.
 
 </dd> </dl>
 
@@ -82,8 +82,8 @@ Cadena que contiene el nombre del puerto en el que se está esperando ALPC.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

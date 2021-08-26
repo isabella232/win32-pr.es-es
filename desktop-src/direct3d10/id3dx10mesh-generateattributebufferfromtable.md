@@ -1,7 +1,7 @@
 ---
-description: Genere un búfer de atributo a partir de los datos de la tabla de atributos de la malla. Un búfer de atributo es otro formato para almacenar los datos en la tabla de atributos. Tanto el búfer de atributo como la tabla de atributos son estructuras de datos internas en la malla.
+description: Genere un búfer de atributos a partir de los datos de la tabla de atributos de la malla. Un búfer de atributos es otro formato para almacenar los datos en la tabla de atributos. Tanto el búfer de atributos como la tabla de atributos son estructuras de datos internas en la malla.
 ms.assetid: e5e240af-4bf9-4123-9820-9c9680de62b1
-title: 'ID3DX10Mesh:: GenerateAttributeBufferFromTable (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::GenerateAttributeBufferFromTable (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c2140278cdabf123f713c234021e09844329b307
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b2402f5af8324b7819865a4c705218fc50122c0a8fbdb37e67c83b8eba0b135a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069995"
 ---
-# <a name="id3dx10meshgenerateattributebufferfromtable-method"></a>ID3DX10Mesh:: GenerateAttributeBufferFromTable (método)
+# <a name="id3dx10meshgenerateattributebufferfromtable-method"></a>Método ID3DX10Mesh::GenerateAttributeBufferFromTable
 
-Genere un búfer de atributo a partir de los datos de la tabla de atributos de la malla. Un búfer de atributo es otro formato para almacenar los datos en la tabla de atributos. Tanto el búfer de atributo como la tabla de atributos son estructuras de datos internas en la malla.
+Genere un búfer de atributos a partir de los datos de la tabla de atributos de la malla. Un búfer de atributos es otro formato para almacenar los datos en la tabla de atributos. Tanto el búfer de atributos como la tabla de atributos son estructuras de datos internas en la malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

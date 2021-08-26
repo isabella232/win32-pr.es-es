@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando se mueve la rueda del mouse mientras el control InkPicture tiene el foco.
+description: Se produce cuando la rueda del mouse se mueve mientras el control InkPicture tiene el foco.
 ms.assetid: f56a8af9-7618-4fa3-8dd5-aa81a7f817e4
-title: Evento InkPicture. MouseWheel (Msinkaut. h)
+title: Evento InkPicture.MouseWheel (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6cab870f3a00b2aa0cea3c003993e2b35cd2abbf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e139604b4fbfd3293203d82b44be15fa36c090e72f40cfedc8ce0641b75b27b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938995"
 ---
-# <a name="inkpicturemousewheel-event"></a>InkPicture. MouseWheel (evento)
+# <a name="inkpicturemousewheel-event"></a>Evento InkPicture.MouseWheel
 
-Se produce cuando se mueve la rueda del mouse mientras el control [InkPicture](inkpicture-control-reference.md) tiene el foco.
+Se produce cuando la rueda del mouse se mueve mientras el control [InkPicture](inkpicture-control-reference.md) tiene el foco.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,45 +35,45 @@ void MouseWheel(
 
 <dl> <dt>
 
-*Botón* \[ de de\]
+*Botón* \[ En\]
 </dt> <dd>
 
 Botón que se presionó.
 
 </dd> <dt>
 
-*Desplazamiento* \[ de\]
+*Mayús* \[ En\]
 </dt> <dd>
 
-Estado de la tecla Mayús.
+Estado de la tecla MAYÚS.
 
 </dd> <dt>
 
-*Delta* \[ de\]
+*Delta* \[ En\]
 </dt> <dd>
 
-Distancia que ha girado la rueda del mouse.
+Distancia a la que se ha girado la rueda del mouse.
 
 </dd> <dt>
 
 *x* \[ en\]
 </dt> <dd>
 
-La coordenada x, en píxeles, del objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) .
+Coordenada x, en píxeles, del [**objeto IInkCursor.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 
 </dd> <dt>
 
 *y* \[ en\]
 </dt> <dd>
 
-La coordenada y, en píxeles, del objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) .
+Coordenada y, en píxeles, del [**objeto IInkCursor.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 
 </dd> <dt>
 
 *Cancelar* \[ in, out\]
 </dt> <dd>
 
-VARIANT \_ true para cancelar el evento **MouseWheel** del control primario; de lo contrario, Variant \_ false.
+VARIANT \_ TRUE para cancelar el evento **MouseWheel** del control primario; de lo contrario, VARIANT \_ FALSE.
 
 </dd> </dl>
 
@@ -81,14 +81,14 @@ VARIANT \_ true para cancelar el evento **MouseWheel** del control primario; de 
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Los parámetros *x* e y se encuentran en píxeles *, y no* las unidades HIMETRIC asociadas con el sistema de coordenadas de espacio de tinta. Esto se debe a que este evento reemplaza el evento de mouse relacionado de una aplicación que no es compatible con el lápiz y ese tipo de aplicación solo hace referencia a píxeles.
+> Los parámetros *x* e *y están* en píxeles y no las unidades HIMETRIC asociadas al sistema de coordenadas del espacio de entrada de lápiz. Esto se debe a que este evento reemplaza el evento de mouse relacionado de una aplicación que no es consciente del lápiz y ese tipo de aplicación solo hace referencia a píxeles.
 
  
 
-Este método de evento se define en la interfaz **\_ IInkPictureEvents** . La interfaz **\_ IInkPictureEvents** implementa la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPEMouseWheel.
+Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\_ interfaz IInkPictureEvents** implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de \_ DISPID IPEMouseWheel.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,9 +96,9 @@ Este método de evento se define en la interfaz **\_ IInkPictureEvents** . La in
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

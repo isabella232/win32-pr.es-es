@@ -1,19 +1,19 @@
 ---
-description: En los sistemas operativos Windows 2000 y posteriores, el instalador establece la propiedad MsiNTSuiteDataCenter en 1 si Windows 2000 Datacenter Server está instalado.
+description: En Windows 2000 y versiones posteriores, el instalador establece la propiedad MsiNTSuiteDataCenter en 1 si Windows datacenter Server 2000 está instalado.
 ms.assetid: a777e62a-a360-4d8c-b7a6-00d45c17db66
 title: Propiedad MsiNTSuiteDataCenter
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 106b9119885e15b94bf5d8f2cd4b6954d0891d98
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1b42edc0a4abb544133b4b7fb176988f826c5af172cc4c0d49ca56494ed37672
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082815"
 ---
 # <a name="msintsuitedatacenter-property"></a>Propiedad MsiNTSuiteDataCenter
 
-En los sistemas operativos Windows 2000 y posteriores, el instalador establece la propiedad **MsiNTSuiteDataCenter** en 1 si Windows 2000 Datacenter Server está instalado. El instalador establece esta propiedad en 1 solo si la \_ marca del \_ centro de centros de recursos de ver conjunto está establecida en la estructura [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) . De lo contrario, el instalador no establece esta propiedad.
+En Windows 2000 y versiones posteriores, el instalador establece la propiedad **MsiNTSuiteDataCenter** en 1 si Windows datacenter Server 2000 está instalado. El instalador establece esta propiedad en 1 solo si la marca VER \_ SUITE DATACENTER está establecida en la estructura \_ [**OSVERSIONINFOEX.**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) De lo contrario, el instalador no establece esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ En los sistemas operativos Windows 2000 y posteriores, el instalador establece l
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

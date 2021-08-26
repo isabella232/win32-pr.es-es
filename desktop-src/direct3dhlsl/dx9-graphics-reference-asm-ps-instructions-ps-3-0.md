@@ -33,7 +33,7 @@ Hay varios tipos de instrucciones de sombreador de píxeles, como se muestra en 
 
 
 
-| Nombre                                                             | Descripción                                                                          | Ranuras de instrucción | Configuración | Aritméticos | Textura | Control de flujo | Nuevo |
+| Nombre                                                             | Descripción                                                                          | Ranuras de instrucción | Configurar | Aritméticos | Textura | Control de flujo | Nuevo |
 |------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------|-------|------------|---------|--------------|-----|
 | [abs - ps](abs---ps.md)                                         | Valor absoluto                                                                       | 1                 |       | x          |         |              |     |
 | [add - ps](add---ps.md)                                         | Agregar dos vectores                                                                      | 1                 |       | x          |         |              |     |
@@ -55,46 +55,46 @@ Hay varios tipos de instrucciones de sombreador de píxeles, como se muestra en 
 | [dp4 - ps](dp4---ps.md)                                         | Producto de punto 4D                                                                       | 1                 |       | x          |         |              |     |
 | [dsx - ps](dsx---ps.md)                                         | Velocidad de cambio en la dirección X                                                    | 2                 |       | x          |         |              |     |
 | [dsy - ps](dsy---ps.md)                                         | Velocidad de cambio en la dirección y                                                    | 2                 |       | x          |         |              |     |
-| [else - ps](else---ps.md)                                       | Iniciar un bloque else                                                                  | 1                 |       |            |         | x            |     |
-| [endif - ps](endif---ps.md)                                     | Finalizar un if... bloque else                                                               | 1                 |       |            |         | x            |     |
-| [endloop- ps](endloop---ps.md)                                 | Finalización de un bucle                                                                           | 2                 |       |            |         | x            | x   |
+| [else: ps](else---ps.md)                                       | Iniciar un bloque else                                                                  | 1                 |       |            |         | x            |     |
+| [endif: ps](endif---ps.md)                                     | Finalizar un if... bloque else                                                               | 1                 |       |            |         | x            |     |
+| [endloop: ps](endloop---ps.md)                                 | Finalización de un bucle                                                                           | 2                 |       |            |         | x            | x   |
 | [endrep - ps](endrep---ps.md)                                   | Final de un bloque de repetición                                                                | 2                 |       |            |         | x            |     |
 | [exp - ps](exp---ps.md)                                         | Precisión completa 2<sup>x</sup>                                                         | 1                 |       | x          |         |              |     |
-| [frc - ps](frc---ps.md)                                         | Componente fraccionrio                                                                 | 1                 |       | x          |         |              |     |
+| [frc - ps](frc---ps.md)                                         | Componente fraccional                                                                 | 1                 |       | x          |         |              |     |
 | [if bool - ps](if-bool---ps.md)                                 | Iniciar un bloque if                                                                    | 3                 |       |            |         | x            |     |
-| [if \_ comp - ps](if-comp---ps.md)                                | Iniciar un bloque if con una comparación                                                  | 3                 |       |            |         | x            |     |
-| [if pred - ps](if-pred---ps.md)                                 | Iniciar un bloque if con predicado                                                   | 3                 |       |            |         | x            |     |
-| [label - ps](label---ps.md)                                     | Etiqueta                                                                                | 0                 |       |            |         | x            |     |
-| [log - ps](log---ps.md)                                         | Registro de precisión completa( x)                                                               | 1                 |       | x          |         |              |     |
-| [loop - ps](loop---ps.md)                                       | Loop                                                                                 | 3                 |       |            |         | x            | x   |
-| [lrp - ps](lrp---ps.md)                                         | Interpolación lineal                                                                   | 2                 |       | x          |         |              |     |
+| [if \_ comp : ps](if-comp---ps.md)                                | Inicio de un bloque if con una comparación                                                  | 3                 |       |            |         | x            |     |
+| [if pred - ps](if-pred---ps.md)                                 | Inicio de un bloque if con predicado                                                   | 3                 |       |            |         | x            |     |
+| [label: ps](label---ps.md)                                     | Etiqueta                                                                                | 0                 |       |            |         | x            |     |
+| [log: ps](log---ps.md)                                         | Registro de precisión completa(x)                                                               | 1                 |       | x          |         |              |     |
+| [loop: ps](loop---ps.md)                                       | Loop                                                                                 | 3                 |       |            |         | x            | x   |
+| [lrp : ps](lrp---ps.md)                                         | Interpolación lineal                                                                   | 2                 |       | x          |         |              |     |
 | [m3x2 - ps](m3x2---ps.md)                                       | Multiplicación de 3x2                                                                         | 2                 |       | x          |         |              |     |
 | [m3x3 - ps](m3x3---ps.md)                                       | Multiplicación de 3x3                                                                         | 3                 |       | x          |         |              |     |
 | [m3x4 - ps](m3x4---ps.md)                                       | Multiplicación de 3x4                                                                         | 4                 |       | x          |         |              |     |
 | [m4x3 - ps](m4x3---ps.md)                                       | Multiplicación de 4x3                                                                         | 3                 |       | x          |         |              |     |
 | [m4x4 - ps](m4x4---ps.md)                                       | Multiplicación de 4x4                                                                         | 4                 |       | x          |         |              |     |
-| [loca- ps](mad---ps.md)                                         | Multiplicar y agregar                                                                     | 1                 |       | x          |         |              |     |
+| [mad - ps](mad---ps.md)                                         | Multiplicar y agregar                                                                     | 1                 |       | x          |         |              |     |
 | [max - ps](max---ps.md)                                         | Máximo                                                                              | 1                 |       | x          |         |              |     |
 | [min - ps](min---ps.md)                                         | Mínima                                                                              | 1                 |       | x          |         |              |     |
 | [mov - ps](mov---ps.md)                                         | Move                                                                                 | 1                 |       | x          |         |              |     |
 | [mul - ps](mul---ps.md)                                         | Multiplicar                                                                             | 1                 |       | x          |         |              |     |
 | [nop - ps](nop---ps.md)                                         | No hay ninguna operación                                                                         | 1                 |       | x          |         |              |     |
 | [nrm - ps](nrm---ps.md)                                         | Normalizar                                                                            | 3                 |       | x          |         |              |     |
-| [pow : ps](pow---ps.md)                                         | x<sup>y</sup>                                                                        | 3                 |       | x          |         |              |     |
+| [pow - ps](pow---ps.md)                                         | x<sup>y</sup>                                                                        | 3                 |       | x          |         |              |     |
 | [ps](ps---ps.md)                                                | Versión                                                                              | 0                 | x     |            |         |              |     |
-| [rcp : ps](rcp---ps.md)                                         | Recíproco                                                                           | 1                 |       | x          |         |              |     |
+| [rcp - ps](rcp---ps.md)                                         | Recíproco                                                                           | 1                 |       | x          |         |              |     |
 | [rep - ps](rep---ps.md)                                         | Repetir                                                                               | 3                 |       |            |         | x            |     |
 | [ret - ps](ret---ps.md)                                         | Fin de una subrutina                                                                  | 1                 |       |            |         | x            |     |
 | [rsq - ps](rsq---ps.md)                                         | Raíz cuadrada recíproca                                                               | 1                 |       | x          |         |              |     |
 | [setp \_ comp](setp-comp---ps.md)                                 | Establecer el registro de predicado                                                           | 1                 |       |            |         | x            |     |
-| [sincos: ps](sincos---ps.md)                                   | Seno y coseno                                                                      | 8                 |       | x          |         |              |     |
+| [sincos- ps](sincos---ps.md)                                   | Seno y coseno                                                                      | 8                 |       | x          |         |              |     |
 | [sub - ps](sub---ps.md)                                         | Restar                                                                             | 1                 |       | x          |         |              |     |
 | [texkill - ps](texkill---ps.md)                                 | Eliminación de la representación de píxeles                                                                    | 2                 |       |            | x       |              |     |
-| [texld: ps \_ 2 \_ 0 y up](texld---ps-2-0.md)                    | Muestrear una textura                                                                     | Vea la nota 1.        |       |            | x       |              |     |
-| [texldb: ps](texldb---ps.md)                                   | Muestreo de textura con sesgo de nivel de detalle de w-component                          | 6                 |       |            | x       |              |     |
-| [texldl: ps](texldl---ps.md)                                   | Muestreo de textura con nivel de detalle de w-component                               | Consulte la nota 2.        |       |            | x       |              | x   |
+| [ld- ps \_ 2 \_ 0 y up](texld---ps-2-0.md)                    | Muestrear una textura                                                                     | Consulte la nota 1.        |       |            | x       |              |     |
+| [texldb - ps](texldb---ps.md)                                   | Muestreo de textura con sesgo de nivel de detalle de w-component                          | 6                 |       |            | x       |              |     |
+| [texldl - ps](texldl---ps.md)                                   | Muestreo de textura con nivel de detalle de w-component                               | Consulte la nota 2.        |       |            | x       |              | x   |
 | [texldd - ps](texldd---ps.md)                                   | Muestreo de textura con degradados proporcionados por el usuario                                        | 3                 |       |            | x       |              |     |
-| [texldp: ps](texldp---ps.md)                                   | Muestreo de textura con división projectiva por w-component                               | Vea la nota 3.        |       |            | x       |              |     |
+| [texldp - ps](texldp---ps.md)                                   | Muestreo de textura con división projective por w-component                               | Consulte la nota 3.        |       |            | x       |              |     |
 
 
 
@@ -102,9 +102,9 @@ Hay varios tipos de instrucciones de sombreador de píxeles, como se muestra en 
 
 Notas:
 
-1.  Si la textura es un mapa de cubo, ranuras = 4; de lo contrario, ranuras = 1.
+1.  Si la textura es un mapa de cubo, ranuras = 4; en caso contrario, ranuras = 1.
 2.  Si la textura es un mapa de cubo, ranuras = 5; en caso contrario, ranuras = 2.
-3.  Si la textura es un mapa de cubo, ranuras = 4; de lo contrario, ranuras = 3.
+3.  Si la textura es un mapa de cubo, ranuras = 4; en caso contrario, ranuras = 3.
 
 ## <a name="related-topics"></a>Temas relacionados
 

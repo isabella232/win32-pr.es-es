@@ -37,25 +37,25 @@ Recupera algunos o todos los atributos de un elemento de vista de árbol. Puede 
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que especifica la información que se debe recuperar y recibe información sobre el elemento. Con [la versión 4.71](common-control-versions.md) y versiones posteriores, puede usar una [**estructura TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) en su lugar.
+Puntero a una [**estructura TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que especifica la información que se debe recuperar y recibe información sobre el elemento. Con [la versión 4.71](common-control-versions.md) y posteriores, puede usar una [**estructura TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) en su lugar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="remarks"></a>Comentarios
 
 Cuando se envía el mensaje, el **miembro hItem** de la estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) o [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) identifica el elemento sobre el que se va a recuperar información y el miembro **mask** especifica los atributos que se recuperarán.
 
-Si la marca TEXT de TVIF se establece en el miembro mask de la estructura \_ [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) o [**TVITEMEX,**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) el miembro **pszText** debe apuntar a un búfer válido y el miembro **cchTextMax** debe establecerse en el número de caracteres de ese búfer. 
+Si la marca TVIF TEXT se establece en el miembro mask de la estructura \_ [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) o [**TVITEMEX,**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) el miembro **pszText** debe apuntar a un búfer válido y el miembro **cchTextMax** debe establecerse en el número de caracteres de ese búfer. 
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

@@ -1,33 +1,33 @@
 ---
-title: Conversión a
-description: Especifica la conversión automática de una clase determinada de objetos en una nueva clase de objetos.
+title: AutoConvertTo
+description: Especifica la conversión automática de una clase determinada de objetos en una nueva clase de objetos .
 ms.assetid: e34b799b-0d23-4034-ba79-49e92ec4dea7
 keywords:
-- Convertir en COM clave del registro
+- AutoConvertTo registry key COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 160f6591ed318ad7622e0bf3c0af5187f95d3be3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d5ea2b32445bb7107dcbfdc2aec8aee518fdd474674e76fdbd820265d06b6160
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103902994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097055"
 ---
-# <a name="autoconvertto"></a>Conversión a
+# <a name="autoconvertto"></a>AutoConvertTo
 
-Especifica la conversión automática de una clase determinada de objetos en una nueva clase de objetos.
+Especifica la conversión automática de una clase determinada de objetos en una nueva clase de objetos .
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      AutoConvertTo = value
+   {CLSID}
+      AutoConvertTo = value
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de un valor de **reg \_ SZ** que especifica el identificador de clase del objeto al que se debe convertir el objeto o la clase de objetos especificados.
+Se trata de **un valor \_ REG SZ** que especifica el identificador de clase del objeto al que se debe convertir el objeto o la clase de objetos especificados.
 
 Esta clave se usa normalmente para convertir automáticamente los archivos creados por una versión anterior de una aplicación a una versión más reciente de la aplicación.
 
@@ -44,9 +44,9 @@ Esta clave se usa normalmente para convertir automáticamente los archivos cread
 [**OleSetAutoConvert**](/windows/desktop/api/Ole2/nf-ole2-olesetautoconvert)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,35 +1,35 @@
 ---
-description: Especifica para un tipo de medio si se comprimen los datos multimedia.
+description: Especifica para un tipo de medio si los datos multimedia están comprimidos.
 ms.assetid: b44fb757-4390-4392-b1cb-37772b4ae3fb
-title: MF_MT_COMPRESSED atributo (mfapi. h)
+title: MF_MT_COMPRESSED atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d049795f09845b5d32daf29ef033ab2e4b23007f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afea99ffb0c9f7f9f53fb6edd0b4b87b2ecd4ff4f451e5fd0e56d47a70aee994
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060695"
 ---
-# <a name="mf_mt_compressed-attribute"></a>\_ \_ Atributo comprimido MF MT
+# <a name="mf_mt_compressed-attribute"></a>Atributo \_ MF MT \_ COMPRESSED
 
-Especifica para un tipo de medio si se comprimen los datos multimedia.
+Especifica para un tipo de medio si los datos multimedia están comprimidos.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-Trata como un valor booleano.
+Tratar como un valor booleano.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si este atributo es **true**, el tipo de medio es un formato comprimido. De lo contrario, el tipo de medio se descomprime o no se conoce el tipo de compresión.
+Si este atributo es **TRUE**, el tipo de medio es un formato comprimido. De lo contrario, el tipo de medio está descomprimido o no se conoce el tipo de compresión.
 
-No se garantiza que este atributo esté establecido en **true** para todos los formatos comprimidos, por lo que las aplicaciones no deben confiar normalmente en este atributo. La forma más confiable de determinar si un formato está comprimido es mantener una lista de formatos conocidos. Si una aplicación no reconoce un formato, tal y como se especifica en el atributo [**MF \_ MT \_ SubType**](mf-mt-subtype-attribute.md) , no debe suponer nada sobre la compresión del formato.
+No se garantiza que este atributo se establezca en **TRUE para** todos los formatos comprimidos, por lo que las aplicaciones generalmente no deben confiar en este atributo. La manera más confiable de determinar si un formato está comprimido es mantener una lista de formatos conocidos. Si una aplicación no reconoce un formato, como se especifica en el atributo [**MF \_ MT \_ SUBTYPE,**](mf-mt-subtype-attribute.md) no debe suponer nada sobre la compresión del formato.
 
-Para determinar si un formato utiliza la compresión temporal (lo que significa que algunos ejemplos se calculan como deltas de los ejemplos anteriores), compruebe el atributo [**\_ independiente MF MT \_ All \_ Samples \_**](mf-mt-all-samples-independent-attribute.md) .
+Para determinar si un formato usa la compresión temporal (lo que significa que algunas muestras se calculan como diferencias de ejemplos anteriores), compruebe el atributo [**MF MT ALL SAMPLES \_ \_ \_ \_ INDEPENDENT.**](mf-mt-all-samples-independent-attribute.md)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -47,19 +47,19 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX12PipelineParserCallbacks SampleMaskCb (D3DX12. h)
-description: Llama a la devoluciones de llamada de subobjeto de la máscara de ejemplo de un objeto que implementa esta interfaz.
+title: Método ID3DX12PipelineParserCallbacks SampleMaskCb (D3DX12.h)
+description: Llama a la devolución de llamada del subobjeto mask de ejemplo de un objeto que implementa esta interfaz.
 ms.assetid: 4D729414-1E04-407B-B32F-ECE1EA9FF414
 keywords:
 - Método SampleMaskCb
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0124b228056089e21c078ffce25ce59eef0e3dee
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 64acc7e969f52e78250cde9bc4c693ce3eae06ae3edd08e7f18c65dc0ff6fa8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069595"
 ---
-# <a name="id3dx12pipelineparsercallbackssamplemaskcb-method"></a>ID3DX12PipelineParserCallbacks:: SampleMaskCb (método)
+# <a name="id3dx12pipelineparsercallbackssamplemaskcb-method"></a>Método ID3DX12PipelineParserCallbacks::SampleMaskCb
 
-Llama a la devoluciones de llamada de subobjeto de la máscara de ejemplo de un objeto que implementa esta interfaz.
+Llama a la devolución de llamada del subobjeto mask de ejemplo de un objeto que implementa esta interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,9 +48,9 @@ void SampleMaskCb(
 *SampleMask* 
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Detalles del subobjeto de máscara de ejemplo analizado desde una secuencia de estado de canalización.
+Detalles del subobjeto de máscara de ejemplo que se analiza desde una secuencia de estado de canalización.
 
 </dd> </dl>
 
@@ -64,8 +64,8 @@ No devuelve nada.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -74,7 +74,7 @@ No devuelve nada.
 
 <dl> <dt>
 
-[Interfaces auxiliares de Direct3D 12](helper-interfaces-for-d3d12.md)
+[Interfaces auxiliares para Direct3D 12](helper-interfaces-for-d3d12.md)
 </dt> <dt>
 
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)

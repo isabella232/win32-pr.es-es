@@ -1,9 +1,9 @@
 ---
 title: firstbithigh (función)
-description: Obtiene la ubicación del primer bit establecido empezando por el bit de orden más alto y trabajando hacia abajo, por componente.
+description: Obtiene la ubicación del primer bit establecido a partir del bit de orden más alto y trabajando hacia abajo, por componente.
 ms.assetid: 0fa89a9e-1706-44f7-8dd3-c37af5c11ddc
 keywords:
-- firstbithigh (de función HLSL
+- función firstbithigh HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4da4956aa3a12d064566a3767423f42039b01355
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1c62b6f090126887930415fc408da4f4a6c17bc4a99429db61fd298960c07e6b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949705"
 ---
 # <a name="firstbithigh-function"></a>firstbithigh (función)
 
-Obtiene la ubicación del primer bit establecido empezando por el bit de orden más alto y trabajando hacia abajo, por componente.
+Obtiene la ubicación del primer bit establecido a partir del bit de orden más alto y trabajando hacia abajo, por componente.
 
 ## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 int firstbithigh(
-  in int value
+  in int value
 );
 ```
 
@@ -36,7 +36,7 @@ int firstbithigh(
 
 <dl> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**
@@ -49,9 +49,9 @@ Valor de entrada.
 
 Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**
 
-La ubicación del primer bit establecido.
+Ubicación del primer bit establecido.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para un entero con signo, el primer bit significativo es cero para un número negativo.
 
@@ -67,7 +67,7 @@ uint3 firstbithigh(uint3 value);
 uint4 firstbithigh(uint4 value);
 ```
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -75,23 +75,23 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 
- 
+ 
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -103,6 +103,6 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

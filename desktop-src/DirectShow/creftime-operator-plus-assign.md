@@ -1,7 +1,7 @@
 ---
-description: El operador + = agrega dos tiempos de referencia.
+description: El operador += agrega dos tiempos de referencia.
 ms.assetid: 016d3dac-4d7c-490a-83aa-1d88a2080748
-title: Método CRefTime. Operator + = (Reftime. h)
+title: Método CRefTime.operator+= (Reftime.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5b5e0d9a5a16a963b67643823e5e3b547a1076fc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2280eca51cef8c84cb51f806a0c95748070459bf0a48670ca6144b2d499fd337
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108055"
 ---
-# <a name="creftimeoperator-method"></a>CRefTime. Operator + = (método)
+# <a name="creftimeoperator-method"></a>CRefTime.operator+= (método)
 
-El operador + = agrega dos tiempos de referencia.
+El operador += agrega dos tiempos de referencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ CRefTime& operator+=(
 
 <dl> <dt>
 
-*RT* \[ CLI\]
+*rt* \[ Ref\]
 </dt> <dd>
 
-Referencia a un objeto **CRefTime** .
+Referencia a un **objeto CRefTime.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve una referencia al objeto.
+Devuelve una referencia al objeto .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve una referencia al objeto.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Reftime. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Reftime.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

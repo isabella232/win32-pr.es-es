@@ -1,21 +1,21 @@
 ---
-description: En el ejemplo de código siguiente se muestra una transferencia de llamada.
+description: En el ejemplo de código siguiente se muestra una transferencia de llamadas.
 ms.assetid: 05862605-2600-4cdf-8390-e24e4e8586f3
 title: Transferir una llamada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd1d537efd33ea2df4ddb9ad3e9b55b633cca18f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e71d6e6fd9dc275a6d4c00e84806132cabf756effcb41e7a704b20929bc46d1a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072835"
 ---
 # <a name="transfer-a-call"></a>Transferir una llamada
 
-En el ejemplo de código siguiente se muestra una transferencia de llamada.
+En el ejemplo de código siguiente se muestra una transferencia de llamadas.
 
-Antes de usar este ejemplo de código, una llamada debe estar en curso y debe realizar las operaciones en [realizar una llamada](make-a-call.md) o [recibir una llamada](receive-a-call.md).
+Antes de usar este ejemplo de código, una llamada debe estar en curso y debe realizar las operaciones en [Realizar](make-a-call.md) una llamada [o Recibir una llamada .](receive-a-call.md)
 
 > [!Note]  
 > Este ejemplo no tiene la comprobación de errores y las versiones adecuadas para el código de producción.

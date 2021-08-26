@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c23840b489bad1e06bdd0c7eb6e0033bfb1961f4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef25a43bf13b1cfb1e4b03f78f5772567b3bfb92f1c31bb810da7882a4d3e1c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067235"
 ---
 # <a name="usercert-eaptype-element"></a>Elemento UserCert (EapType)
 
-El elemento **UserCert (EapType)** hace referencia al hash SHA-1 del certificado que se debe usar para la autenticación.
+El **elemento UserCert (EapType)** hace referencia al hash SHA-1 del certificado que se debe usar para la autenticación.
 
 ``` syntax
 <xs:element name="UserCert"
@@ -31,16 +31,16 @@ El elemento **UserCert (EapType)** hace referencia al hash SHA-1 del certificado
  />
 ```
 
-El elemento **UserCert** se define mediante el elemento [**EapType**](eaptlsuserpropertiesv1schema-eaptype-element.md) .
+El **elemento UserCert** se define mediante el [**elemento EapType.**](eaptlsuserpropertiesv1schema-eaptype-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

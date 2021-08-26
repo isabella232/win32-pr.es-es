@@ -1,7 +1,7 @@
 ---
 description: Crea el valor de color negativo de un valor de color.
 ms.assetid: 74143126-93f8-49fa-abe3-fd730b644d87
-title: Función D3DXColorNegative (D3dx9math. h)
+title: Función D3DXColorNegative (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a6d4d8559e64580897aec5261c450dc739496e75
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c046702b81ce60f2e50817cb98c04686d9a35e964a141d88fd70dd05654e3067
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069335"
 ---
-# <a name="d3dxcolornegative-function"></a>D3DXColorNegative función)
+# <a name="d3dxcolornegative-function"></a>Función D3DXColorNegative
 
 Crea el valor de color negativo de un valor de color.
 
@@ -46,16 +46,16 @@ D3DXCOLOR* D3DXColorNegative(
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntero a una estructura [**D3DXCOLOR**](d3dxcolor.md) que es el resultado de la operación.
+Puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*PC* \[ de de\]
+*pC* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntero a una estructura de [**D3DXCOLOR**](d3dxcolor.md) de origen.
+Puntero a una estructura [**D3DXCOLOR de**](d3dxcolor.md) origen.
 
 </dd> </dl>
 
@@ -63,15 +63,15 @@ Puntero a una estructura de [**D3DXCOLOR**](d3dxcolor.md) de origen.
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Esta función devuelve un puntero a una estructura [**D3DXCOLOR**](d3dxcolor.md) que es el valor de color negativo del valor de color.
+Esta función devuelve un puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el valor de color negativo del valor de color.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El canal alfa de entrada se copia, sin modificar, en el canal alfa de salida.
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función **D3DXColorNegative** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXColorNegative** se puede usar como parámetro para otra función.
 
-Esta función devuelve el valor de color negativo restando 1,0 de los componentes de color de la estructura [**D3DXCOLOR**](d3dxcolor.md) , como se muestra en el ejemplo siguiente.
+Esta función devuelve el valor de color negativo restando 1,0 de los componentes de color de la estructura [**D3DXCOLOR,**](d3dxcolor.md) como se muestra en el ejemplo siguiente.
 
 
 ```
@@ -86,8 +86,8 @@ pOut->r = 1.0f - pC->r;
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
