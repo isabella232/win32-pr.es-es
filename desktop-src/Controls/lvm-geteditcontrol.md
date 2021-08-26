@@ -37,13 +37,13 @@ Obtiene el identificador del control de edición que se usa para editar el texto
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador al control de edición si se realiza correctamente o **NULL** en caso contrario.
+Devuelve el identificador al control de edición si se realiza correctamente o NULL en **caso** contrario.
 
 ## <a name="remarks"></a>Comentarios
 
-Cuando comienza la edición de etiquetas, se crea, se coloca e inicializa un control de edición. Antes de que se muestre, el control list-view envía a su ventana primaria un código [de notificación \_ LVN BEGINLABELEDIT.](lvn-beginlabeledit.md)
+Cuando comienza la edición de etiquetas, se crea, coloca e inicializa un control de edición. Antes de que se muestre, el control de vista de lista envía a su ventana primaria un código de [notificación \_ LVN BEGINLABELEDIT.](lvn-beginlabeledit.md)
 
-Para personalizar la edición de etiquetas, implemente un controlador [para LVN \_ BEGINLABELEDIT](lvn-beginlabeledit.md) y haga que envíe un mensaje **\_ GETEDITCONTROL** de LVM al control de vista de lista. Si se edita una etiqueta, el valor devuelto será un identificador del control de edición. Use este identificador para personalizar el control de edición mediante el envío de los mensajes **EM \_ XXX** habituales.
+Para personalizar la edición de etiquetas, implemente un controlador para [LVN \_ BEGINLABELEDIT](lvn-beginlabeledit.md) y haga que envíe un mensaje **\_ GETEDITCONTROL** de LVM al control de vista de lista. Si se está editando una etiqueta, el valor devuelto será un identificador para el control de edición. Use este identificador para personalizar el control de edición mediante el envío de los mensajes **EM \_ XXX habituales.**
 
 Cuando el usuario completa o cancela la edición, el control de edición se destruye y el identificador ya no es válido. Puede crear subclases del control de edición, pero no debe destruirlo. Para cancelar la edición, envíe al control list-view un [**mensaje \_ CANCELMODE de WM.**](/windows/desktop/winmsg/wm-cancelmode)
 
@@ -53,7 +53,7 @@ El elemento de vista de lista que se está editando es el elemento centrado actu
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
@@ -61,7 +61,7 @@ El elemento de vista de lista que se está editando es el elemento centrado actu
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

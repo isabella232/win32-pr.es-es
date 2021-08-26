@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: b3b9ab1fa1b9e2568c4c731ce89599654eec3158
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 18a80060bc935ac1671f0a10de87c56506587cfb70ec63f57a09683446b8aee7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090155"
 ---
 # <a name="shell-reference"></a>Referencia del shell
 
@@ -23,9 +23,9 @@ ms.locfileid: "108104173"
 -   [Funciones de shell](functions.md)
 -   [Funciones de devolución de llamada de shell](callbacks.md)
 -   [Constantes de shell, enumeraciones y marcas](consts-enums-flags.md)
--   [Funciones de la utilidad ligera de Shell](shlwapi.md)
+-   [Funciones de utilidad ligera de Shell](shlwapi.md)
 -   [Shell Macros](macros.md)
--   [Mensajes y notificaciones del shell](messages.md)
+-   [Mensajes y notificaciones de shell](messages.md)
 -   [Objetos de shell para scripting y Microsoft Visual Basic](objects.md)
 -   [Objetos de shell para C++](objects-cpp.md)
 -   [Esquemas de shell](schemas.md)

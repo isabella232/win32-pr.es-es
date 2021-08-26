@@ -1,7 +1,7 @@
 ---
 description: Libera el uso exclusivo de la tarjeta inteligente conectada.
 ms.assetid: a236743a-1d12-44db-853d-f757f43a7e8f
-title: 'ISCardManage:: SCardUnlock (método)'
+title: Método ISCardManage::SCardUnlock
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 90c6b10d407992ae8147998d2d420989cc91e970
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c100d1607cceea95264e9af24ba29b23824dee833c14e492cfb0a1dd7ad396f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013895"
 ---
-# <a name="iscardmanagescardunlock-method"></a>ISCardManage:: SCardUnlock (método)
+# <a name="iscardmanagescardunlock-method"></a>Método ISCardManage::SCardUnlock
 
-\[El método **SCardUnlock** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
+\[El **método SCardUnlock** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El método **SCardUnlock** libera el uso exclusivo de la [*tarjeta inteligente*](../secgloss/s-gly.md)conectada.
+El **método SCardUnlock** libera el uso exclusivo de la tarjeta [*inteligente conectada.*](../secgloss/s-gly.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,23 +40,23 @@ HRESULT SCardUnlock(
 
 <dl> <dt>
 
-*Disposición* \[ de\]
+*Disposición* \[ En\]
 </dt> <dd>
 
-El estado al que se dejará la tarjeta inteligente cuando se lance el bloqueo.
+Estado en el que se va a dejar la tarjeta inteligente cuando se libera el bloqueo.
 
 <dl><span id="LEAVE"></span><span id="leave"></span><dt>
 
-**OMITI**
+**Salir**
 </dt><span id="RESET"></span><span id="reset"></span><dt>
 
 **RESET**
 </dt><span id="UNPOWER"></span><span id="unpower"></span><dt>
 
-**No energía**
+**UNPOWER**
 </dt><span id="EJECT"></span><span id="eject"></span><dt>
 
-**EXPULSAR**
+**Expulsar**
 </dt> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
@@ -67,29 +67,29 @@ El método devuelve uno de los siguientes valores posibles.
 
 | Código devuelto                                                                                  | Descripción                                          |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | Operación completada correctamente.<br/>         |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El parámetro de *disposición* no es válido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operación completada correctamente.<br/>         |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El *parámetro Disposition* no es válido.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para bloquear la tarjeta inteligente conectada, llame a [**SCardLock**](iscardmanage-scardlock.md).
+Para bloquear la tarjeta inteligente conectada, llame a [**SCardLock.**](iscardmanage-scardlock.md)
 
 Para obtener una lista de todos los métodos definidos por esta interfaz, vea [**ISCardManage**](iscardmanage.md).
 
-Además de los códigos de error COM enumerados anteriormente, esta interfaz puede devolver un código de error de tarjeta inteligente si se llamó a una función de tarjeta inteligente para completar la solicitud. Para obtener más información, vea [valores devueltos de tarjeta inteligente](authentication-return-values.md).
+Además de los códigos de error COM enumerados anteriormente, esta interfaz puede devolver un código de error de tarjeta inteligente si se llamó a una función de tarjeta inteligente para completar la solicitud. Para obtener más información, vea [Valores devueltos de tarjeta inteligente.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                       |
 

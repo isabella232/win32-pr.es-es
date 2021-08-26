@@ -1,36 +1,36 @@
 ---
-title: Usar IMAPi
-description: En los temas siguientes se muestra el uso de la API de maestro de imágenes.
+title: Uso de IMAPI
+description: En los temas siguientes se muestra el uso de image mastering API.
 ms.assetid: c42043db-612f-488f-a6ae-a8caea8ac42b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccd44d01e925d07d251e93a29c5268cc7e9c5076
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d7bf19d619f6ed5ab9a2d6b0deb1ca6a42b71a0b0941a96f54cccfa87c14b5f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092435"
 ---
-# <a name="using-imapi"></a>Usar IMAPi
+# <a name="using-imapi"></a>Uso de IMAPI
 
-En los temas siguientes se muestra el uso de la API de maestro de imágenes.
+En los temas siguientes se muestra el uso de image mastering API.
 
 ## <a name="usage-scenarios"></a>Escenarios de uso
 
-La siguiente documentación proporciona instrucciones detalladas para escenarios comunes de IMAPi.
+En la documentación siguiente se proporcionan instrucciones detalladas para escenarios comunes de IMAPI.
 
 
 
 | Escenario                                                                                                         | Descripción                                                                                                                                                           |
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Comprobando la compatibilidad con la unidad](checking-drive-support.md)                                                             | Muestra la detección de la compatibilidad de una unidad de medios.<br/>                                                                                                   |
-| [Comprobando la compatibilidad con medios](checking-media-support.md)                                                             | Muestra la detección de compatibilidad con los medios.<br/>                                                                                                           |
-| [Grabación de una imagen de disco](burning-a-disc.md)                                                                       | Muestra la maestra (grabación de un disco) mediante IMAPi.<br/>                                                                                                       |
-| [Agregar una imagen de arranque](adding-a-boot-image.md)                                                                   | Se basa en el ejemplo de [grabación de una imagen de disco](burning-a-disc.md) mediante la adición de código para incluir una imagen de arranque en la sección de arranque del disco.<br/>               |
-| [Creación de un disco de múltiples sesiones](creating-a-multisession-disc.md)                                                 | Muestra la creación de un disco de múltiples sesiones mediante IMAPi.<br/>                                                                                              |
-| [Supervisar el progreso con eventos](monitoring-progress-with-events.md)                                           | Muestra el uso de interfaces específicas para permitir la implementación de un controlador de eventos para que se pueda recibir información de progreso. <br/>        |
-| [Evitar el cierre de sesión o la suspensión durante una grabación](preventing-logoff-or-suspend-during-a-burn.md)                     | Contiene información que detalla las consideraciones de desarrollo de aplicaciones que se deben realizar en lo que respecta a los escenarios que implican el usuario ' Logoff ' y ' Suspend ' en Windows.<br/> |
-| [Proporcionar permisos de usuario para dispositivos de grabación de multimedia](providing-user-permissions-for-media-burning-devices.md) | Detalla el proceso necesario para asegurarse de que un usuario tiene los permisos adecuados para el uso de dispositivos de grabación multimedia en Windows XP y Windows Server 2003.<br/>             |
+| [Comprobación de la compatibilidad con unidades](checking-drive-support.md)                                                             | Muestra la detección de compatibilidad con una unidad multimedia.<br/>                                                                                                   |
+| [Comprobación de la compatibilidad con medios](checking-media-support.md)                                                             | Muestra la detección de compatibilidad con medios.<br/>                                                                                                           |
+| [Grabar una imagen de disco](burning-a-disc.md)                                                                       | Muestra la masteración (grabar un disco) mediante IMAPI.<br/>                                                                                                       |
+| [Agregar una imagen de arranque](adding-a-boot-image.md)                                                                   | Se basa en el ejemplo [de grabación](burning-a-disc.md) de una imagen de disco agregando código para incluir una imagen de arranque en la sección de arranque del disco.<br/>               |
+| [Creación de un disco multisesión](creating-a-multisession-disc.md)                                                 | Muestra la creación de un disco multisesión mediante IMAPI.<br/>                                                                                              |
+| [Supervisión del progreso con eventos](monitoring-progress-with-events.md)                                           | Muestra el uso de interfaces específicas para permitir la implementación de un controlador de eventos para que se pueda recibir información de progreso. <br/>        |
+| [Evitar el cierre de sesión o suspender durante una grabación](preventing-logoff-or-suspend-during-a-burn.md)                     | Contiene información que detalla las consideraciones de desarrollo de aplicaciones que se deben tener en cuenta en los escenarios que implican al usuario "Logoff" y "Suspend" en Windows.<br/> |
+| [Proporcionar permisos de usuario para dispositivos de protección de medios](providing-user-permissions-for-media-burning-devices.md) | Detalla el proceso necesario para asegurarse de que un usuario tiene los permisos adecuados para utilizar dispositivos de grabación multimedia en Windows XP y Windows Server 2003.<br/>             |
 
 
 
@@ -38,13 +38,13 @@ La siguiente documentación proporciona instrucciones detalladas para escenarios
 
 ## <a name="application-compatibility"></a>Compatibilidad de aplicaciones
 
-La siguiente documentación contiene información importante que se debe tener en cuenta al desarrollar una aplicación que use IMAPi.
+La siguiente documentación contiene información importante que se debe tener en cuenta al desarrollar una aplicación que usa IMAPI.
 
 
 
 | Instrucciones                                                   | Descripción                                                                                                                                                                                                                                                 |
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Distribución de la multisesión de IMAPi](imapi-multisession-layout.md) | Detalla el diseño del disco que IMAPi emplea para implementar la multisesión. Esta información se utiliza para garantizar la interoperabilidad entre IMAPi y otro software de grabación, además de permitir la creación de imágenes de disco multisesión compatibles con IMAPi.<br/> |
+| [Diseño de varias sesiones de IMAPI](imapi-multisession-layout.md) | Detalla el diseño de disco que USA IMAPI para implementar varias sesiones. Esta información se usa para garantizar la interoperabilidad entre IMAPI y otro software de grabación, así como para permitir la creación de imágenes de disco multisesión compatibles con IMAPI.<br/> |
 
 
 

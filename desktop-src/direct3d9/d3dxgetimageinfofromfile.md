@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bb03b6482d140a3b78e43d8b99c60499ae6c8b16
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1726fae1697a48d8e4aa406f5eb5cec03f6071fed4b36a199b10e385a24e6249
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027635"
 ---
 # <a name="d3dxgetimageinfofromfile-function"></a>Función D3DXGetImageInfoFromFile
 
@@ -46,7 +46,7 @@ HRESULT D3DXGetImageInfoFromFile(
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nombre de archivo de la imagen sobre la que recuperar información. Si se definen \_ UNICODE o UNICODE, este tipo de parámetro es LPCWSTR; de lo contrario, el tipo es LPCSTR.
+Nombre de archivo de la imagen sobre la que recuperar información. Si se definen UNICODE o UNICODE, este tipo de parámetro \_ es LPCWSTR; de lo contrario, el tipo es LPCSTR.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Nombre de archivo de la imagen sobre la que recuperar información. Si se define
 
 Tipo: **[ **D3DXIMAGE \_ INFO**](d3dximage-info.md)\***
 
-Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se rellenará con la descripción de los datos del archivo de origen.
+Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se va a rellenar con la descripción de los datos del archivo de origen.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Esta función admite cadenas Unicode y ANSI.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

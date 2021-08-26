@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: propiedades de EsentStopwatch'
+description: 'Más información sobre: Propiedades de EsentStopwatch'
 title: Propiedades de EsentStopwatch
 TOCTitle: EsentStopwatch properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentStopwatch
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102938
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 45a615036b38f0b5617031e4fd4e938e48aef315
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5b322467843286bcdf632d11b2d5080242bff13eeee776b4010a79caeafc82f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104568022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018028"
 ---
 # <a name="esentstopwatch-properties"></a>Propiedades de EsentStopwatch
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo [EsentStopwatch](./esentstopwatch-class.md) expone los siguientes miembros.
+El [tipo EsentStopwatch](./esentstopwatch-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -39,13 +39,13 @@ El tipo [EsentStopwatch](./esentstopwatch-class.md) expone los siguientes miembr
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="dn334933(v=exchg.10).md">IsRunning (</a></td>
-<td>Obtiene un valor que indica si el temporizador de EsentStopwatch se está ejecutando.</td>
+<td><a href="dn334933(v=exchg.10).md">IsRunning</a></td>
+<td>Obtiene un valor que indica si se está ejecutando el temporizador EsentStopwatch.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334930(v=exchg.10).md">ThreadStats</a></td>
-<td>Obtiene el total de estadísticas de trabajo de ESENT medida por la instancia actual.</td>
+<td>Obtiene las estadísticas de trabajo de ESENT totales medidas por la instancia actual.</td>
 </tr>
 </tbody>
 </table>
@@ -59,4 +59,4 @@ Superior
 
 [Clase EsentStopwatch](./esentstopwatch-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

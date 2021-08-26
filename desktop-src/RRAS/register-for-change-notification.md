@@ -1,19 +1,19 @@
 ---
-title: Registrar para la notificación de cambios
-description: En el código de ejemplo siguiente se muestra cómo registrar las notificaciones de cambios en la tabla de enrutamiento. El tema \ 0034; Usar la devolución de llamada de notificación de eventos \ 0034; muestra cómo se usan esas notificaciones de cambios.
+title: Registrarse para la notificación de cambio
+description: En el código de ejemplo siguiente se muestra cómo registrarse para recibir notificaciones de cambios en la tabla de enrutamiento. El tema \ 0034; Use la devolución de llamada de notificación de eventos \ 0034; muestra cómo utilizar esas notificaciones de cambio.
 ms.assetid: a311759a-e337-4297-af3d-55e969162b0f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1491a2e0ceed448459adaec7df8e67e650aebb15
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aebc8bfffd7efcbe5992fccc965435294510bdfa16c03bfe050a211d9b26d704
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028425"
 ---
-# <a name="register-for-change-notification"></a>Registrar para la notificación de cambios
+# <a name="register-for-change-notification"></a>Registrarse para la notificación de cambio
 
-En el código de ejemplo siguiente se muestra cómo registrar las notificaciones de cambios en la tabla de enrutamiento. En el tema "[uso de la devolución de llamada de notificación de eventos](use-the-event-notification-callback.md)" se muestra cómo usar esas notificaciones de cambios.
+En el código de ejemplo siguiente se muestra cómo registrarse para recibir notificaciones de cambios en la tabla de enrutamiento. El tema["Usar la devolución de llamada de notificación de](use-the-event-notification-callback.md)eventos" muestra cómo utilizar esas notificaciones de cambio.
 
 
 ```C++
@@ -105,9 +105,9 @@ int __cdecl main(){
 
 
 
- 
+ 
 
- 
+ 
 
 
 

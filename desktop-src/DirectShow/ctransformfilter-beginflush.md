@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3bd7735726d7e7d21bc16e8a811947b954ffaac4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: be20231cf62148e3487aef405735f764bf5c02b7cbaadba3c140728b66bd5391
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053865"
 ---
 # <a name="ctransformfilterbeginflush-method"></a>Método CTransformFilter.BeginFlush
 
@@ -48,7 +48,7 @@ Devuelve S \_ OK u otro valor **HRESULT.**
 
 Al principio de una operación de vaciado, el método [**CTransformInputPin::BeginFlush**](ctransforminputpin-beginflush.md) del pin de entrada llama a este método. Este método pasa la `BeginFlush` llamada de bajada.
 
-Si la clase derivada usa un subproceso de trabajo para entregar ejemplos, debe descartar los datos en cola durante una operación de vaciado. Esto se puede hacer en el `BeginFlush` método o en el método [**EndFlush.**](ctransformfilter-endflush.md) Sin embargo, tenga en cuenta que las `BeginFlush` llamadas a no se sincronizan con el subproceso de streaming. Si el método descarta los datos en cola, el filtro debe tener cuidado de no procesar más datos entre `BeginFlush` las llamadas a y `BeginFlush` **EndFlush.** Para obtener más información, [vea Data Flow para desarrolladores de filtros.](data-flow-for-filter-developers.md)
+Si la clase derivada usa un subproceso de trabajo para entregar ejemplos, debe descartar los datos en cola durante una operación de vaciado. Esto se puede hacer en el `BeginFlush` método o en el método [**EndFlush.**](ctransformfilter-endflush.md) Sin embargo, tenga en cuenta que las `BeginFlush` llamadas a no se sincronizan con el subproceso de streaming. Si el método descarta los datos en cola, el filtro debe tener cuidado de no procesar más datos entre `BeginFlush` las llamadas a y `BeginFlush` **EndFlush.** Para obtener más información, vea [Data Flow for Filter Developers](data-flow-for-filter-developers.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,12 +56,12 @@ Si la clase derivada usa un subproceso de trabajo para entregar ejemplos, debe d
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,24 +1,24 @@
 ---
-title: Atributo alternativo VML
-description: Atributo alternativo VML
+title: Atributo Alt de VML
+description: Atributo Alt de VML
 ms.assetid: 6b7e778c-d8e2-432e-b69a-5d80fa62d105
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b420d556e69ed2f987a3a3b10a5709f926dc5c7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 08714efca9a390cbbec2f3dcf14782053d34db3506462214b9e62ebf1da206a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104271353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905345"
 ---
-# <a name="vml-alt-attribute"></a>Atributo alternativo VML
+# <a name="vml-alt-attribute"></a>Atributo Alt de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define el texto alternativo que se va a mostrar en lugar de un gráfico. Lectura/escritura **Cadena**.
 
@@ -28,17 +28,17 @@ Define el texto alternativo que se va a mostrar en lugar de un gráfico. Lectura
 
 **Sintaxis de etiquetas**
 
-<v: *elemento* Alt = " *expresión* " >
+<v: *element* alt=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Alt = "*expresión*"
+*element* .alt="*expression*"
 
-*expresión* = de *elemento*. Alt
+*expresión* = *elemento*.alt
 
 **Comentarios:**
 
-El atributo **Alt** es similar al atributo **Alt** de HTML estándar. Este atributo proporciona una manera para que los exploradores que convierten texto en voz describan los elementos gráficos de una página.
+El **atributo Alt** es similar al atributo ALT HTML estándar.  Este atributo proporciona una manera para que los exploradores que convierten texto en voz describan los elementos gráficos de una página.
 
 *Atributo estándar de VML*
 
@@ -48,7 +48,7 @@ El atributo **Alt** es similar al atributo **Alt** de HTML estándar. Este atrib
 
 **Ejemplo**
 
-En el elemento **Alt** siguiente se mostrará la frase "rectángulo rojo" en los exploradores que convierten las páginas web en frases habladas.
+El **elemento Alt** siguiente mostrará la frase "Rectángulo rojo" en los exploradores que convierten las páginas web en frases habladas.
 
 
 ```HTML
@@ -59,8 +59,8 @@ En el elemento **Alt** siguiente se mostrará la frase "rectángulo rojo" en los
 
 
 
-[Ejemplo del atributo ALT](/previous-versions/bb229663(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o posterior).
+[Ejemplo de atributo Alt](/previous-versions/bb229663(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o superior).
 
- 
+ 
 
- 
+ 

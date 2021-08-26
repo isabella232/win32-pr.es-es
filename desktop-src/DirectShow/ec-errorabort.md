@@ -4,12 +4,12 @@ ms.assetid: b41546ce-cfac-4cc3-a9ad-413ae2d5d6d5
 title: EC_ERRORABORT (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 228753e49c99ebf9f851295b7cf8db160bcc2bd7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 70531f9c7f684bb08d14cc07b5c649f54e273c31f1af6eea95a23905239cc872
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051795"
 ---
 # <a name="ec_errorabort"></a>\_ERROR DE ECABORT
 
@@ -47,7 +47,7 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

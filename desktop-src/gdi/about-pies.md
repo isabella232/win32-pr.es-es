@@ -1,5 +1,5 @@
 ---
-description: Un circular es una región delimitada por la intersección de una curva de elipse y dos radiales. En la ilustración siguiente se muestra un gráfico circular dibujado mediante la función Pie.
+description: Un circular es una región limitada por la intersección de una curva de elipse y dos radiales. En la ilustración siguiente se muestra un gráfico circular dibujado mediante la función Pie.
 ms.assetid: 9ba7834e-02d2-4335-94c3-ab2f5c355619
 title: Acerca de Pies
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119966465"
 ---
 # <a name="about-pies"></a>Acerca de Pies
 
-Un *circular* es una región delimitada por la intersección de una curva de elipse y dos radiales. En la ilustración siguiente se muestra un gráfico circular dibujado mediante la [**función Pie.**](/windows/desktop/api/Wingdi/nf-wingdi-pie)
+Un *circular* es una región limitada por la intersección de una curva de elipse y dos radiales. En la ilustración siguiente se muestra un gráfico circular dibujado mediante la [**función Pie.**](/windows/desktop/api/Wingdi/nf-wingdi-pie)
 
 ![ilustración que muestra una elipse con un circular sombreado](images/csfsh-03.png)
 

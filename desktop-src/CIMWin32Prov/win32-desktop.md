@@ -1,8 +1,8 @@
 ---
-description: La \_ clase DesktopWMI de Win32 representa las características comunes del escritorio de un usuario. El usuario puede modificar las propiedades de esta clase para personalizar el escritorio.
+description: La clase Win32 \_ DesktopWMI representa las características comunes del escritorio de un usuario. El usuario puede modificar las propiedades de esta clase para personalizar el escritorio.
 ms.assetid: 9615a443-7611-4c30-9693-ea71b09b013b
 ms.tgt_platform: multiple
-title: Win32_Desktop (clase)
+title: Win32_Desktop clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -35,16 +35,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1d005104cb663a680bac080b7ff9b6529fd9b7a1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5c59adebd2fdf3c0727016473e6c347be3af139d539bb007c794eb2aafb4c1e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002885"
 ---
-# <a name="win32_desktop-class"></a>\_Clase de escritorio Win32
+# <a name="win32_desktop-class"></a>Clase de escritorio Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) de **\_ escritorio Win32** representa las características comunes del escritorio de un usuario. El usuario puede modificar las propiedades de esta clase para personalizar el escritorio.
+La **clase \_ WMI de escritorio Win32** representa las características comunes del escritorio de un usuario.[](/windows/desktop/WmiSdk/retrieving-a-class) El usuario puede modificar las propiedades de esta clase para personalizar el escritorio.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -80,26 +80,26 @@ class Win32_Desktop : CIM_Setting
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ escritorio Win32** tiene estos tipos de miembros:
+La **clase Win32 \_ Desktop** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ escritorio Win32** tiene estas propiedades.
+La **clase Win32 \_ Desktop** tiene estas propiedades.
 
 <dl> <dt>
 
 **BorderWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Panel de control predeterminado \\ \\ \\ \\ WindowMetrics \| BorderWidth ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \\ \\ WindowMetrics \| BorderWidth")
 </dt> </dl>
 
 Ancho de los bordes alrededor de todas las ventanas con bordes ajustables.
@@ -122,7 +122,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -135,26 +135,26 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry de \| escritorio del panel de control de \\ \\ \| CoolSwitch")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| Panel de control Desktop \\ \\ \| CoolSwitch")
 </dt> </dl>
 
-La conmutación por tarea rápida está activada. El cambio rápido de tareas permite al usuario alternar entre ventanas mediante la combinación de teclas **Alt + Tab** .
+La conmutación rápida de tareas está activada. El cambio rápido de tareas permite al usuario cambiar entre ventanas mediante la **combinación de teclado ALT+TAB.**
 
 </dd> <dt>
 
 **CursorBlinkRate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| \\ \\ \| de escritorio del panel de control de CursorBlinkRate"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milisegundos")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| Panel de control Desktop \\ \\ \| CursorBlinkRate"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milisegundos")
 </dt> </dl>
 
-Período de tiempo entre parpadeos de cursor sucesivos.
+Período de tiempo entre parpadeos sucesivos del cursor.
 
 Ejemplo: 530
 
@@ -171,7 +171,7 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -184,7 +184,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry de \| escritorio del panel de control de \\ \\ \| DragFullWindows")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| Panel de control Desktop \\ \\ \| DragFullWindows")
 </dt> </dl>
 
 El contenido de una ventana se muestra cuando un usuario mueve la ventana.
@@ -194,31 +194,31 @@ El contenido de una ventana se muestra cuando un usuario mueve la ventana.
 **GridGranularity**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| \\ \\ \| de escritorio del panel de control de GridGranularity"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("8 píxeles")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| Panel de control Desktop \\ \\ \| GridGranularity"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("8 píxeles")
 </dt> </dl>
 
-Espaciado de la cuadrícula a la que se enlazan las ventanas en el escritorio. Esto facilita la organización de ventanas. Normalmente, el espaciado es lo suficientemente bueno como para que el usuario no lo advierta.
+Espaciado de la cuadrícula a la que están enlazadas las ventanas en el escritorio. Esto facilita la organización de ventanas. El espaciado suele ser lo suficientemente bueno como para que el usuario no lo observe.
 
 Ejemplo: 1
 
 </dd> <dt>
 
-**IconSpacing**
+**IconoSpacing**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Panel de control predeterminado \\ \\ escritorio \\ \\ WindowMetrics \| IconSpacing "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" píxeles ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \\ \\ \| IconSpacing"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
 </dt> </dl>
 
 Espaciado entre iconos.
@@ -236,7 +236,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Panel de control predeterminado \\ \\ escritorio \\ \\ WindowMetrics \| IconFont ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \\ \\ IconMetricsFont") \|
 </dt> </dl>
 
 Fuente utilizada para los nombres de los iconos.
@@ -248,13 +248,13 @@ Ejemplo: "MS San Serif"
 **IconTitleSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("inesperados win32api \| Font and Text Structures \| [**LOGFONTW**](/windows/win32/api/wingdi/ns-wingdi-logfonta) \| lfHeight"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Point")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Font and Text Structures \| [**LOGFONTW**](/windows/win32/api/wingdi/ns-wingdi-logfonta) \| lfHeight"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("point")
 </dt> </dl>
 
 Tamaño de fuente del icono.
@@ -272,7 +272,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Panel de control predeterminado \\ \\ escritorio \\ \\ WindowMetrics \| IconTitleWrap ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \\ \\ IconMetricsTitleWrap") \|
 </dt> </dl>
 
 El texto del título del icono se ajusta a la línea siguiente.
@@ -306,10 +306,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Patrón de escritorio predeterminado del panel de control \\ \\ \| ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control desktop \\ \\ \| pattern")
 </dt> </dl>
 
-Nombre del patrón que se utiliza como fondo para el escritorio.
+Nombre del patrón que se usa como fondo para el escritorio.
 
 </dd> <dt>
 
@@ -322,7 +322,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Panel de control predeterminado \\ \\ escritorio \| ScreenSaveActive ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \| ScreenSaveActive")
 </dt> </dl>
 
 El protector de pantalla está activo.
@@ -338,12 +338,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Panel de Control predeterminadoSCRNSAVE.EXE de \\ \\ escritorio \| ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \|SCRNSAVE.EXE")
 </dt> </dl>
 
 Nombre del archivo ejecutable del protector de pantalla actual.
 
-Ejemplo: "LOGON. SCR
+Ejemplo: "LOGON. SCR"
 
 </dd> <dt>
 
@@ -356,7 +356,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Panel de control predeterminado \\ \\ escritorio \| ScreenSaverIsSecure ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \| ScreenSaverIsSecure")
 </dt> </dl>
 
 La contraseña está habilitada para el protector de pantalla.
@@ -366,16 +366,16 @@ La contraseña está habilitada para el protector de pantalla.
 **ScreenSaverTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Panel de control predeterminado \\ \\ escritorio \| SCREENSAVETIMEOUT "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" segundos ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \| ScreenSaveTimeOut"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("segundos")
 </dt> </dl>
 
-Cantidad de tiempo que transcurre antes de que se inicie el protector de pantalla.
+Cantidad de tiempo que pasa antes de que se inicie el protector de pantalla.
 
 </dd> <dt>
 
@@ -393,7 +393,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 
 Identificador por el que se conoce el objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -406,10 +406,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ \\ \\ Papel tapiz del escritorio del panel de control predeterminado \| ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \| Wallpaper")
 </dt> </dl>
 
-Nombre de archivo del diseño del papel tapiz en el fondo del escritorio.
+Nombre de archivo para el diseño del papel tapiz en el fondo del escritorio.
 
 Ejemplo: "WINNT.BMP"
 
@@ -424,10 +424,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Panel de control predeterminado \\ \\ escritorio \| WallpaperStyle ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \| WallpaperStyle")
 </dt> </dl>
 
-El papel tapiz se ajusta para rellenar toda la pantalla. Microsoft Plus! debe instalarse antes de que esta opción esté disponible. Si **es false**, el papel tapiz conserva sus dimensiones originales en el fondo del escritorio.
+El papel tapiz se extiende para rellenar toda la pantalla. Microsoft Plus! debe instalarse antes de que esta opción esté disponible. Si **es FALSE,** el papel tapiz conserva sus dimensiones originales en el fondo del escritorio.
 
 </dd> <dt>
 
@@ -440,22 +440,22 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Panel de control predeterminado \\ \\ escritorio \| TileWallpaper ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \| TileWallpaper")
 </dt> </dl>
 
 El papel tapiz está en mosaico o centrado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase de **\_ escritorio Win32** se deriva de la [**\_ configuración de CIM**](cim-setting.md).
+La **clase \_ de escritorio Win32** se deriva de [**la configuración cim \_**](cim-setting.md).
 
-El proceso de llamada que usa esta clase debe tener el privilegio de **\_ \_ nombre de restauración se** en el equipo en el que reside el registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, vea [ejecutar operaciones con privilegios](/windows/desktop/WmiSdk/executing-privileged-operations).
+El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, vea [Ejecutar operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se describe cómo recuperar información del escritorio.
+En el ejemplo de código siguiente se describe cómo recuperar información de escritorio.
 
 
 ```PowerShell
@@ -499,8 +499,8 @@ Foreach ($dt in $desktops) {
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

@@ -5,12 +5,12 @@ title: Orden de búsqueda de la biblioteca de vínculos dinámicos
 ms.topic: article
 ms.date: 09/11/2020
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: 73c90e176983aa542ec524c2bfa32623821c2f21
-ms.sourcegitcommit: 3cea99a2ed9579a94236fa7924abd6149db51a58
+ms.openlocfilehash: e2abe21e0283adab4fbc3c17db6503772e20c217cf3019ea775812b0f45e5145
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114991842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083445"
 ---
 # <a name="dynamic-link-library-search-order"></a>Orden de búsqueda de la biblioteca de vínculos dinámicos
 
@@ -47,7 +47,7 @@ Si el sistema debe buscar un módulo o sus dependencias, siempre usa el orden de
 
 ### <a name="standard-search-order-for-uwp-apps"></a>Orden de búsqueda estándar para aplicaciones para UWP
 
-Si el módulo aún no está cargado o está en la lista de archivos DLL conocidos, el sistema busca en estas ubicaciones en este orden:
+Si el módulo aún no está cargado o está en la lista de archivos DLL conocidos, el sistema busca estas ubicaciones en este orden:
 
 1.  Gráfico de dependencias del paquete del proceso. Este es el paquete de la aplicación más las dependencias especificadas como en la sección del manifiesto `<PackageDependency>` del paquete de la `<Dependencies>` aplicación. Las dependencias se buscan en el orden en que aparecen en el manifiesto.
 2.  Directorio desde el que se cargó el proceso de llamada.
@@ -57,7 +57,7 @@ Si un archivo DLL tiene dependencias, el sistema busca los archivos DLL dependie
 
 ### <a name="alternate-search-order-for-uwp-apps"></a>Orden de búsqueda alternativo para aplicaciones para UWP
 
-Si un módulo cambia el orden de búsqueda estándar mediante una llamada a la función [**LoadLibraryEx**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) **con LOAD WITH ALTERED SEARCH \_ \_ \_ \_ PATH**, el sistema busca en el directorio desde el que se cargó el módulo especificado en lugar del directorio del proceso de llamada. El sistema busca estas ubicaciones en este orden:
+Si un módulo cambia el orden de búsqueda estándar mediante una llamada a la función [**LoadLibraryEx**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) con **LOAD WITH ALTERED SEARCH \_ \_ \_ \_ PATH**, el sistema busca en el directorio desde el que se cargó el módulo especificado en lugar del directorio del proceso de llamada. El sistema busca estas ubicaciones en este orden:
 
 1.  Gráfico de dependencias del paquete del proceso. Este es el paquete de la aplicación más las dependencias especificadas como en la sección del manifiesto `<PackageDependency>` del paquete de la `<Dependencies>` aplicación. Las dependencias se buscan en el orden en que aparecen en el manifiesto.
 2.  Directorio desde el que se cargó el módulo especificado.
@@ -79,9 +79,9 @@ Si un archivo DLL tiene dependencias, el sistema busca los archivos DLL dependie
 
 ### <a name="standard-search-order-for-desktop-applications"></a>Orden de búsqueda estándar para aplicaciones de escritorio
 
-El orden de búsqueda de DLL estándar que usa el sistema depende de si el modo de búsqueda de DLL seguro está habilitado o deshabilitado. Caja fuerte El modo de búsqueda dll coloca el directorio actual del usuario más adelante en el orden de búsqueda.
+El orden de búsqueda de DLL estándar utilizado por el sistema depende de si el modo de búsqueda dll seguro está habilitado o deshabilitado. Caja fuerte El modo de búsqueda dll coloca el directorio actual del usuario más adelante en el orden de búsqueda.
 
-Caja fuerte El modo de búsqueda dll está habilitado de forma predeterminada. Para deshabilitar esta característica, cree el valor del Registro SafeDllSearchMode del **HKEY \_ LOCAL MACHINE System \_ \\ \\ CurrentControlSet \\ Control Session \\ Manager** y \\  establézcalo en 0. Llamar a [**la función SetDllDirectory**](/windows/desktop/api/winbase/nf-winbase-setdlldirectorya) deshabilita eficazmente **SafeDllSearchMode** mientras el directorio especificado está en la ruta de acceso de búsqueda y cambia el orden de búsqueda como se describe en este tema.
+Caja fuerte El modo de búsqueda dll está habilitado de forma predeterminada. Para deshabilitar esta característica, cree el valor del Registro SafeDllSearchMode del **HKEY \_ LOCAL MACHINE System \_ \\ \\ CurrentControlSet \\ Control Session \\ Manager** y establézcalo \\  en 0. Al llamar a la función [**SetDllDirectory,**](/windows/desktop/api/winbase/nf-winbase-setdlldirectorya) se deshabilita de forma eficaz **SafeDllSearchMode** mientras el directorio especificado está en la ruta de acceso de búsqueda y cambia el orden de búsqueda, tal como se describe en este tema.
 
 Si **SafeDllSearchMode** está habilitado, el orden de búsqueda es el siguiente:
 
@@ -90,7 +90,7 @@ Si **SafeDllSearchMode** está habilitado, el orden de búsqueda es el siguiente
 3.  Directorio del sistema de 16 bits. No hay ninguna función que obtenga la ruta de acceso de este directorio, pero se busca.
 4.  El directorio de Windows. Use la [**función GetWindowsDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya) para obtener la ruta de acceso de este directorio.
 5.  El directorio actual.
-6.  Directorios que aparecen en la variable de entorno PATH. Tenga en cuenta que esto no incluye la ruta de acceso por aplicación especificada por la clave del Registro **rutas de** acceso de la aplicación. La **clave Rutas de acceso** de la aplicación no se usa al calcular la ruta de acceso de búsqueda dll.
+6.  Directorios que aparecen en la variable de entorno PATH. Tenga en cuenta que esto no incluye la ruta de acceso por aplicación especificada por la clave del Registro **rutas de** acceso de la aplicación. La **clave Rutas de acceso** de la aplicación no se usa al calcular la ruta de búsqueda dll.
 
 Si **SafeDllSearchMode** está deshabilitado, el orden de búsqueda es el siguiente:
 
@@ -99,7 +99,7 @@ Si **SafeDllSearchMode** está deshabilitado, el orden de búsqueda es el siguie
 3.  Directorio del sistema. Use la [**función GetSystemDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya) para obtener la ruta de acceso de este directorio.
 4.  Directorio del sistema de 16 bits. No hay ninguna función que obtenga la ruta de acceso de este directorio, pero se busca.
 5.  El directorio de Windows. Use la [**función GetWindowsDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya) para obtener la ruta de acceso de este directorio.
-6.  Directorios que aparecen en la variable de entorno PATH. Tenga en cuenta que esto no incluye la ruta de acceso por aplicación especificada por la clave del Registro **rutas de** acceso de la aplicación. La **clave Rutas de acceso** de la aplicación no se usa al calcular la ruta de acceso de búsqueda dll.
+6.  Directorios que aparecen en la variable de entorno PATH. Tenga en cuenta que esto no incluye la ruta de acceso por aplicación especificada por la clave del Registro **rutas de** acceso de la aplicación. La **clave Rutas de acceso** de la aplicación no se usa al calcular la ruta de búsqueda dll.
 
 ### <a name="alternate-search-order-for-desktop-applications"></a>Orden de búsqueda alternativo para aplicaciones de escritorio
 
@@ -112,46 +112,46 @@ Si especifica una estrategia de búsqueda alternativa, su comportamiento contin�
 
 La [**función LoadLibraryEx**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) admite un orden de búsqueda alternativo si la llamada especifica **LOAD WITH ALTERED SEARCH \_ \_ \_ \_ PATH** y el parámetro *lpFileName* especifica una ruta de acceso absoluta.
 
-Tenga en cuenta que la estrategia de búsqueda estándar y la estrategia de búsqueda alternativa especificada por [**LoadLibraryEx**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) con **LOAD WITH ALTERED SEARCH \_ \_ \_ \_ PATH** difieren en una sola manera: la búsqueda estándar comienza en el directorio de la aplicación que realiza la llamada y la búsqueda alternativa comienza en el directorio del módulo ejecutable que **carga LoadLibraryEx.**
+Tenga en cuenta que la estrategia de búsqueda estándar y la estrategia de búsqueda alternativa especificada por [**LoadLibraryEx**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) con **LOAD WITH ALTERED SEARCH \_ \_ \_ \_ PATH** difieren de una sola manera: la búsqueda estándar comienza en el directorio de la aplicación que realiza la llamada y la búsqueda alternativa comienza en el directorio del módulo ejecutable que **carga LoadLibraryEx.**
 
 Si **SafeDllSearchMode** está habilitado, el orden de búsqueda alternativo es el siguiente:
 
-1.  Directorio especificado por *lpFileName.*
+1.  Directorio especificado por *lpFileName*.
 2.  Directorio del sistema. Use la [**función GetSystemDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya) para obtener la ruta de acceso de este directorio.
 3.  Directorio del sistema de 16 bits. No hay ninguna función que obtenga la ruta de acceso de este directorio, pero se busca.
 4.  El directorio de Windows. Use la [**función GetWindowsDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya) para obtener la ruta de acceso de este directorio.
 5.  El directorio actual.
-6.  Directorios que aparecen en la variable de entorno PATH. Tenga en cuenta que esto no incluye la ruta de acceso por aplicación especificada por la clave del Registro **rutas de** acceso de la aplicación. La **clave Rutas de acceso** de la aplicación no se usa al calcular la ruta de acceso de búsqueda dll.
+6.  Directorios que aparecen en la variable de entorno PATH. Tenga en cuenta que esto no incluye la ruta de acceso por aplicación especificada por la clave del Registro **Rutas de acceso** de la aplicación. La **clave Rutas de** acceso de la aplicación no se usa al calcular la ruta de acceso de búsqueda dll.
 
 Si **SafeDllSearchMode** está deshabilitado, el orden de búsqueda alternativo es el siguiente:
 
-1.  Directorio especificado por *lpFileName.*
+1.  Directorio especificado por *lpFileName*.
 2.  El directorio actual.
 3.  Directorio del sistema. Use la [**función GetSystemDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya) para obtener la ruta de acceso de este directorio.
 4.  Directorio del sistema de 16 bits. No hay ninguna función que obtenga la ruta de acceso de este directorio, pero se busca.
 5.  El directorio de Windows. Use la [**función GetWindowsDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya) para obtener la ruta de acceso de este directorio.
-6.  Directorios que aparecen en la variable de entorno PATH. Tenga en cuenta que esto no incluye la ruta de acceso por aplicación especificada por la clave del Registro **rutas de** acceso de la aplicación. La **clave Rutas de acceso** de la aplicación no se usa al calcular la ruta de acceso de búsqueda dll.
+6.  Directorios que aparecen en la variable de entorno PATH. Tenga en cuenta que esto no incluye la ruta de acceso por aplicación especificada por la clave del Registro **Rutas de acceso** de la aplicación. La **clave Rutas de** acceso de la aplicación no se usa al calcular la ruta de acceso de búsqueda dll.
 
 La [**función SetDllDirectory admite**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya) un orden de búsqueda alternativo si el parámetro *lpPathName* especifica una ruta de acceso. El orden de búsqueda alternativo es el siguiente:
 
 1.  Directorio desde el que se cargó la aplicación.
-2.  Directorio especificado por el parámetro *lpPathName* de [**SetDllDirectory.**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya)
+2.  Directorio especificado por el parámetro *lpPathName* [**de SetDllDirectory**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya).
 3.  Directorio del sistema. Use la [**función GetSystemDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya) para obtener la ruta de acceso de este directorio. El nombre de este directorio es System32.
 4.  Directorio del sistema de 16 bits. No hay ninguna función que obtenga la ruta de acceso de este directorio, pero se busca. El nombre de este directorio es System.
 5.  El directorio de Windows. Use la [**función GetWindowsDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya) para obtener la ruta de acceso de este directorio.
-6.  Directorios que aparecen en la variable de entorno PATH. Tenga en cuenta que esto no incluye la ruta de acceso por aplicación especificada por la clave del Registro **rutas de** acceso de la aplicación. La **clave Rutas de acceso** de la aplicación no se usa al calcular la ruta de acceso de búsqueda dll.
+6.  Directorios que aparecen en la variable de entorno PATH. Tenga en cuenta que esto no incluye la ruta de acceso por aplicación especificada por la clave del Registro **Rutas de acceso** de la aplicación. La **clave Rutas de** acceso de la aplicación no se usa al calcular la ruta de acceso de búsqueda dll.
 
 Si el *parámetro lpPathName* es una cadena vacía, la llamada quita el directorio actual del orden de búsqueda.
 
-[**SetDllDirectory deshabilita eficazmente**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya) el modo de búsqueda dll seguro mientras el directorio especificado está en la ruta de búsqueda. Para restaurar el modo de búsqueda de DLL seguro basado en el valor del Registro **SafeDllSearchMode** y restaurar el directorio actual en el orden de búsqueda, llame a **SetDllDirectory** con *lpPathName* como NULL.
+[**SetDllDirectory deshabilita eficazmente**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya) el modo de búsqueda de ARCHIVOS DLL seguros mientras el directorio especificado está en la ruta de búsqueda. Para restaurar el modo de búsqueda de ARCHIVOS DLL seguros en función del valor del Registro **SafeDllSearchMode** y restaurar el directorio actual en el orden de búsqueda, llame a **SetDllDirectory** con *lpPathName* como NULL.
 
-### <a name="search-order-using-load_library_search-flags"></a>Orden de búsqueda mediante **marcas DE BÚSQUEDA DE \_ \_ LOAD LIBRARY**
+### <a name="search-order-using-load_library_search-flags"></a>Orden de búsqueda mediante **marcas DE BÚSQUEDA DE BIBLIOTECA \_ \_ DE** CARGA
 
-Una aplicación puede especificar un orden de búsqueda mediante una o varias marcas **LOAD \_ LIBRARY \_ SEARCH** con la [**función LoadLibraryEx.**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) Una aplicación también puede usar marcas **LOAD \_ LIBRARY \_ SEARCH** con la función [**SetDefaultDllDirectories**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-setdefaultdlldirectories) para establecer un orden de búsqueda dll para un proceso. La aplicación puede especificar directorios adicionales para el orden de búsqueda dll de proceso mediante las [**funciones AddDllDirectory**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-adddlldirectory) [**o SetDllDirectory.**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya)
+Una aplicación puede especificar un orden de búsqueda mediante una o varias marcas **DE BÚSQUEDA DE LOAD \_ \_ LIBRARY** con la función [**LoadLibraryEx.**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) Una aplicación también puede usar marcas **DE BÚSQUEDA DE LOAD \_ \_ LIBRARY** con la función [**SetDefaultDllDirectories**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-setdefaultdlldirectories) para establecer un orden de búsqueda dll para un proceso. La aplicación puede especificar directorios adicionales para el orden de búsqueda de dll de proceso mediante las [**funciones AddDllDirectory**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-adddlldirectory) [**o SetDllDirectory.**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya)
 
-Los directorios en los que se busca dependen de las marcas especificadas [**con SetDefaultDllDirectories**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-setdefaultdlldirectories) o [**LoadLibraryEx.**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) Si se usa más de una marca, se buscan los directorios correspondientes en el orden siguiente:
+Los directorios en los que se busca dependen de las marcas especificadas [**con SetDefaultDllDirectories**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-setdefaultdlldirectories) o [**LoadLibraryEx.**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) Si se usa más de una marca, se busca en los directorios correspondientes en el orden siguiente:
 
-1.  Directorio que contiene el archivo DLL **(LOAD \_ LIBRARY SEARCH DLL LOAD \_ \_ \_ \_ DIR**). Solo se busca en este directorio las dependencias del archivo DLL que se va a cargar.
+1.  Directorio que contiene el archivo DLL (**LOAD LIBRARY SEARCH DLL LOAD \_ \_ \_ \_ \_ DIR**). Solo se busca en este directorio las dependencias del archivo DLL que se va a cargar.
 2.  El directorio de la aplicación (**LOAD LIBRARY SEARCH APPLICATION \_ \_ \_ \_ DIR**).
 3.  Rutas de acceso agregadas explícitamente con la [**función AddDllDirectory**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-adddlldirectory) **(LOAD \_ LIBRARY SEARCH \_ USER \_ \_ DIRS)** o [**la función SetDllDirectory.**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya) Si se ha agregado más de una ruta de acceso, no se especifica el orden en el que se buscan las rutas de acceso.
 4.  Directorio del sistema (**LOAD \_ LIBRARY SEARCH \_ \_ SYSTEM32**).

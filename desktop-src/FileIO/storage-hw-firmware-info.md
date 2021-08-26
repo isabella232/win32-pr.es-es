@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - winioctl.h.h
-ms.openlocfilehash: e7aa3d33f744b00fc742a2862add83149cb265b4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1b9aa008e108f1282f8f61aaeacdce11eba7016632fa9643ae3db5550efb1e10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047915"
 ---
 # <a name="storage_hw_firmware_info-structure"></a>Estructura DE \_ INFORMACIÓN DE FIRMWARE DE HARDWARE DE \_ \_ ALMACENAMIENTO
 
@@ -107,7 +107,7 @@ La ranura de firmware que está pendiente de activación.
 **FirmwareShared**
 </dt> <dd>
 
-Indica que el firmware se aplica tanto al dispositivo como al controlador o adaptador, por ejemplo, al SSD NVMe.
+Indica que el firmware se aplica tanto al dispositivo como al controlador o adaptador, por ejemplo, a la SSD NVMe.
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ Tamaño máximo de la carga de la imagen, que se usa para un solo comando.
 
 </dd> <dt>
 
-**Slot**
+**Ranura**
 </dt> <dd>
 
 Contiene la información de ranura para cada ranura del dispositivo, de tipo [**STORAGE HW FIRMWARE SLOT \_ \_ \_ \_ INFO**](storage-hw-firmware-slot-info.md).
@@ -143,34 +143,34 @@ Contiene la información de ranura para cada ranura del dispositivo, de tipo [**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>                                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Winioctl.h.h (incluye Windows.h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                 |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                        |
+| Header<br/>                   | <dl> <dt>Winioctl.h.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**ACTIVACIÓN DEL \_ FIRMWARE DE ALMACENAMIENTO \_ DE IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_activate)
+[**ACTIVACIÓN DEL \_ FIRMWARE DE \_ ALMACENAMIENTO DE IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_activate)
 </dt> <dt>
 
-[**ACTIVACIÓN \_ DEL FIRMWARE DEL HARDWARE DE \_ \_ ALMACENAMIENTO**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_activate)
+[**ACTIVACIÓN DEL \_ FIRMWARE DEL HW DE \_ \_ ALMACENAMIENTO**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_activate)
 </dt> <dt>
 
-[**DESCARGA DE \_ FIRMWARE DE ALMACENAMIENTO \_ DE IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
+[**DESCARGA DE \_ FIRMWARE DE \_ ALMACENAMIENTO DE IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
 </dt> <dt>
 
-[**DESCARGA \_ DE FIRMWARE DEL HARDWARE DE \_ \_ ALMACENAMIENTO**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_download)
+[**DESCARGA DE \_ FIRMWARE DE HARDWARE DE \_ \_ ALMACENAMIENTO**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_download)
 </dt> <dt>
 
 [**IOCTL \_ STORAGE \_ FIRMWARE \_ GET \_ INFO**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_get_info)
 </dt> <dt>
 
-[**CONSULTA \_ DE INFORMACIÓN DE FIRMWARE DEL HARDWARE DE \_ \_ \_ ALMACENAMIENTO**](storage-hw-firmware-info-query.md)
+[**CONSULTA DE \_ INFORMACIÓN DE FIRMWARE DE HARDWARE DE \_ \_ \_ ALMACENAMIENTO**](storage-hw-firmware-info-query.md)
 </dt> <dt>
 
 [**INFORMACIÓN DE \_ RANURA DE FIRMWARE DEL HARDWARE DE \_ \_ \_ ALMACENAMIENTO**](storage-hw-firmware-slot-info.md)

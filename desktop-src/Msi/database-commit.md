@@ -1,7 +1,7 @@
 ---
-description: El método commit del objeto de base de datos finaliza el formulario persistente de la base de datos.
+description: El método Commit del objeto Database completa la forma persistente de la base de datos.
 ms.assetid: 39253ccd-08f1-4a6f-87cb-3678ae5221a4
-title: Database. Commit (método)
+title: Método Database.Commit
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: d62c998a70e0a4a036695be10b2bf1d983044241
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 049dec8c4d0531240d1244efb5bb7e1f0a3a337f51498d39ae09bcd6cf31c374
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044875"
 ---
-# <a name="databasecommit-method"></a>Database. Commit (método)
+# <a name="databasecommit-method"></a>Método Database.Commit
 
-El método **commit** del objeto de [**base de datos**](database-object.md) finaliza el formulario persistente de la base de datos. Todos los datos persistentes se escriben en la base de datos grabable y no se escriben columnas ni filas temporales. Este método no tiene ningún efecto en una base de datos abierta como de solo lectura. Se puede llamar a este método varias veces para guardar el estado actual de las tablas cargadas en la memoria. Cuando se cierra la base de datos, se revierten los cambios realizados después de la última **confirmación** . Normalmente, se llama a este método antes de cerrarse cuando se han finalizado todos los cambios en la base de datos.
+El **método Commit** del objeto [**Database**](database-object.md) completa la forma persistente de la base de datos. Todos los datos persistentes se escriben en la base de datos que se puede escribir y no se escriben columnas o filas temporales. Este método no tiene ningún efecto en una base de datos abierta como de solo lectura. Se puede llamar a este método varias veces para guardar el estado actual de las tablas cargadas en la memoria. Cuando la base de datos se cierra finalmente, se revierten los cambios realizados después de la **última** confirmación. Normalmente, se llama a este método antes del cierre cuando se han finalizado todos los cambios de la base de datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,9 +41,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se produce un error en el método, puede obtener información de error extendida mediante el método [**LastErrorRecord**](installer-lasterrorrecord.md) .
+Si se produce un error en el método , puede obtener información de error extendida mediante el [**método LastErrorRecord.**](installer-lasterrorrecord.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ Si se produce un error en el método, puede obtener información de error extend
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IDatabase se define como 000C109D-0000-0000-C000-000000000046<br/>                                                                                                                                                                            |
+| IID<br/>     | IID IDatabase se define como \_ 000C109D-0000-0000-C000-000000000046<br/>                                                                                                                                                                            |
 
 
 

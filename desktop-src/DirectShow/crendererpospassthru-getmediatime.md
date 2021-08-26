@@ -1,5 +1,5 @@
 ---
-description: 'Método CRendererPosPassThru.GetMediaTime: el método GetMediaTime recupera las marcas de tiempo del ejemplo actual.'
+description: 'Método CRendererPosPassThru.GetMediaTime: el método GetMediaTime recupera las marcas de tiempo en el ejemplo actual.'
 ms.assetid: 13710373-04fd-4c1d-ba97-78be5cf27e7d
 title: Método CRendererPosPassThru.GetMediaTime (Ctlutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 588c92faec6b68cfa51392d4df00567c4e881460
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d3b8eb4bdd9426d589476265133234bdf3c2d5cfc691bfaced743cc4e75769c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084125"
 ---
 # <a name="crendererpospassthrugetmediatime-method"></a>Método CRendererPosPassThru.GetMediaTime
 
@@ -83,7 +83,7 @@ Este método invalida el [**método CPosPassThru::GetMediaTime.**](cpospassthru-
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

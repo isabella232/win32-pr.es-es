@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método SetPortNumbers Servicios de Escritorio remoto
 - Método SetPortNumbers Servicios de Escritorio remoto , Win32_TSGatewayResourceAuthorizationPolicy clase
-- Win32_TSGatewayResourceAuthorizationPolicy clase Servicios de Escritorio remoto , método SetPortNumbers
+- Win32_TSGatewayResourceAuthorizationPolicy clase Servicios de Escritorio remoto método , SetPortNumbers
 topic_type:
 - apiref
 api_name:
@@ -46,7 +46,7 @@ uint32 SetPortNumbers(
 *PortNumbers* \[ En\]
 </dt> <dd>
 
-Lista de números de puerto separados por punto y coma que se permiten para esta Escritorio remoto autorización de recursos de escritorio remoto (RD RAP). Para permitir cualquier número de puerto, establezca " \* ".
+Lista de números de puerto separados por punto y coma que se permiten para esta directiva Escritorio remoto autorización de recursos de escritorio remoto (RD RAP). Para permitir cualquier número de puerto, establezca " \* ".
 
 </dd> </dl>
 
@@ -58,21 +58,21 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayResourceAuthorizationPolicy**](win32-tsgatewayresourceauthorizationpolicy.md)
+[**\_TSGatewayResourceAuthorizationPolicy de Win32**](win32-tsgatewayresourceauthorizationpolicy.md)
 </dt> </dl>
 
  

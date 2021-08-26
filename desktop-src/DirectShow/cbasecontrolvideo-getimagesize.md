@@ -1,7 +1,7 @@
 ---
 description: El método GetImageSize recupera información de tamaño de imagen de vídeo.
 ms.assetid: a6d7f949-c6a9-49e9-b10a-f6f5bd73dc00
-title: Método CBaseControlVideo. GetImageSize (Ctlutil. h)
+title: Método CBaseControlVideo.GetImageSize (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ed7795e3998bc101e907bce87c9981e86f51fcb6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a7e0d970e06186ced3800d4b1f4dc4190778834941b69ac17402e2294312b05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057065"
 ---
-# <a name="cbasecontrolvideogetimagesize-method"></a>CBaseControlVideo. GetImageSize, método
+# <a name="cbasecontrolvideogetimagesize-method"></a>Método CBaseControlVideo.GetImageSize
 
 El `GetImageSize` método recupera información de tamaño de imagen de vídeo.
 
@@ -47,7 +47,7 @@ HRESULT GetImageSize(
 *pVideoInfo* 
 </dt> <dd>
 
-Puntero a una estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) que se va a rellenar.
+Puntero a una [**estructura VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) que se va a rellenar.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Puntero a las dimensiones del rectángulo del vídeo de origen.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** que depende de la implementación; puede ser uno de los valores siguientes u otros valores que no estén en la lista.
+Devuelve un **valor HRESULT** que depende de la implementación; puede ser uno de los siguientes valores u otros valores no enumerados.
 
 
 
@@ -75,16 +75,16 @@ Devuelve un valor **HRESULT** que depende de la implementación; puede ser uno d
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | <dl> <dt>**E \_ FAIL**</dt> </dl>       | Error.<br/>                                                       |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Argumento no válido. El formato de datos no es compatible.<br/>           |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Se ha producido un error inesperado. Uno o más argumentos son **null**.<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Se ha producido un error inesperado. Uno o varios argumentos son **NULL.**<br/> |
 | <dl> <dt>**NOERROR**</dt> </dl>       | Correcto.<br/>                                                       |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro es una función auxiliar que se usa para crear representaciones de imágenes de memoria de imágenes DIB. Se llama desde la implementación de la clase base de [**CBaseControlVideo:: GetCurrentImage**](cbasecontrolvideo-getcurrentimage.md) cuando se pasa un parámetro _pVideoImage_ **nulo** a esa función miembro. Como resultado, esta función miembro crea y devuelve una estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) , usando la información de *pBufferSize* y *pSourceRect*.
+Esta función miembro es una función auxiliar que se usa para crear representaciones de imágenes de memoria de imágenes DIB. Se llama desde la implementación de clase base de [**CBaseControlVideo::GetCurrentImage**](cbasecontrolvideo-getcurrentimage.md) cuando se pasa un parámetro _pVideoImage_ **NULL** a esa función miembro. Como resultado, esta función miembro construye y devuelve una estructura [**VIDEOINFOHEADER,**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) utilizando la información de *pBufferSize* y *pSourceRect*.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ Esta función miembro es una función auxiliar que se usa para crear representac
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -101,7 +101,7 @@ Esta función miembro es una función auxiliar que se usa para crear representac
 
 <dl> <dt>
 
-[**Clase CBaseControlVideo**](cbasecontrolvideo.md)
+[**CBaseControlVideo (clase)**](cbasecontrolvideo.md)
 </dt> </dl>
 
  

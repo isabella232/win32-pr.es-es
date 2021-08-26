@@ -1,40 +1,40 @@
 ---
-description: Para convertir archivos multimedia al formato ASF, puede usar codificadores de Windows Media. Obtenga información sobre cómo crear un codificador mediante CoCreateInstance.
+description: Para convertir archivos multimedia al formato ASF, puede usar Windows codificadores multimedia. Obtenga información sobre cómo crear un codificador mediante CoCreateInstance.
 ms.assetid: 96f19dfb-a328-41db-8fa8-77f052b1a192
 title: Creación de un codificador mediante CoCreateInstance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15c4cdf7b72bbfee97031088502113d085738981
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: cbd48931b7bc8e0b449ee8ffaa0141a6413f2699ebaae6e1ba01fdd1f4b38a0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092325"
 ---
 # <a name="creating-an-encoder-by-using-cocreateinstance"></a>Creación de un codificador mediante CoCreateInstance
 
-Para convertir archivos multimedia al formato ASF, puede usar codificadores de Windows Media. Para usar estos codificadores, deben estar registrados en el sistema. Los codificadores se implementan [como Media Foundation](media-foundation-transforms.md) transformaciones (MTA) y deben exponer la interfaz DETRANSFORMTransform. En este tema se describe cómo una aplicación puede obtener un puntero a la interfaz DETRANSFORMTransform del codificador MFT necesaria y crear instancias de ella para su uso.
+Para convertir archivos multimedia al formato ASF, puede usar Windows codificadores multimedia. Para usar estos codificadores, deben registrarse en el sistema. Los codificadores se implementan [como Media Foundation transformaciones](media-foundation-transforms.md) (MTA) y deben exponer la interfaz DETRANSFORM. En este tema se describe cómo una aplicación puede obtener un puntero a la interfaz DETRANSFORMTransform del codificador MFT necesaria y crear instancias de ella para su uso.
 
 Para obtener información sobre el registro del codificador, vea [Creación de instancias de Un codificador MFT.](instantiating-the-encoder-mft.md)
 
--   [Usar la interfaz DETRANSFORM de un codificador](#creating-an-encoder-by-using-cocreateinstance)
+-   [Uso de la interfaz DETRANSFORM de un codificador](#creating-an-encoder-by-using-cocreateinstance)
     -   [Ejemplo de creación del codificador](#encoder-creation-example)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="using-an-encoders-imftransform-interface"></a>Usar la interfaz DETRANSFORM de un codificador
 
-Tras el registro correcto de codificadores de Windows Media con el sistema, una aplicación puede enumerar los codificadores mediante una llamada a [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum). Para buscar el codificador adecuado, debe especificar lo siguiente:
+Tras el registro correcto Windows codificadores multimedia con el sistema, una aplicación puede enumerar los codificadores llamando a [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum). Para buscar el codificador adecuado, debe especificar lo siguiente:
 
 -   GUID que representa la categoría , que es **MFT \_ CATEGORY AUDIO \_ \_ ENCODER** o **MFT CATEGORY VIDEO \_ \_ \_ ENCODER**.
 
--   Formato que se debe coincidir. Esto se establece en la estructura [**\_ MFT REGISTER \_ TYPE \_ INFO**](/windows/win32/api/mfobjects/ns-mfobjects-mft_register_type_info) que especifica el tipo principal y el subtipo del tipo de medio en el que el codificador generará ejemplos. Esta estructura se pasa en el *parámetro pOutputType.* Para obtener información sobre los tipos admitidos, vea [GUID de tipo multimedia.](media-type-guids.md)
+-   Formato que se debe coincidir. Esto se establece en la estructura [**\_ MFT REGISTER \_ TYPE \_ INFO**](/windows/win32/api/mfobjects/ns-mfobjects-mft_register_type_info) que especifica el tipo principal y el subtipo del tipo de medio en el que el codificador generará ejemplos. Esta estructura se pasa en el *parámetro pOutputType.* Para obtener información sobre los tipos admitidos, vea [GUID de tipo multimedia](media-type-guids.md).
 
     > [!Note]  
     > No se requiere la información del tipo de entrada en el parámetro *pInputType.* Esto se debe a que la aplicación conoce el tipo de entrada y el codificador espera que el flujo de entrada esté en un formato sin comprimir.
 
      
 
-[**MFTEnum devuelve**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) una matriz de punteros [**MFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para los MFT del codificador que coinciden con los criterios de búsqueda. Puede crear instancias de un codificador llamando a la función COM **CoCreateInstance** y pasando el CLSID del codificador que desea usar. Esta función devuelve un puntero a la **interfaz DETRANSFORMTransform** que representa el codificador. Para obtener más información sobre esta llamada de función, vea la documentación Windows SDK del modelo de objetos componentes (COM).
+[**MFTEnum devuelve**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) una matriz de punteros [**MFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para los MFT del codificador que coinciden con los criterios de búsqueda. Puede crear instancias de un codificador llamando a la función COM **CoCreateInstance** y pasando el CLSID del codificador que desea usar. Esta función devuelve un puntero a la **interfaz DETRANSFORMTransform** que representa el codificador. Para obtener más información sobre esta llamada de función, consulte la documentación del SDK de Windows para el modelo de objetos componentes (COM).
 
 ### <a name="encoder-creation-example"></a>Ejemplo de creación del codificador
 
@@ -95,7 +95,7 @@ HRESULT FindEncoder(
 [Creación de instancias de un MFT de codificador](instantiating-the-encoder-mft.md)
 </dt> <dt>
 
-[Codificadores de Windows Media](windows-media-encoders.md)
+[Windows Codificadores multimedia](windows-media-encoders.md)
 </dt> </dl>
 
  

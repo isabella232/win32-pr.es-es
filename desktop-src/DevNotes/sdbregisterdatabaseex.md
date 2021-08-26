@@ -1,7 +1,7 @@
 ---
 description: Registra la base de datos especificada.
 ms.assetid: 65eceb1a-9ce1-4b97-98d7-731932797794
-title: SdbRegisterDatabaseEx función)
+title: Función SdbRegisterDatabaseEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 74872f8895032abe02b024396fda12c43dc1611d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 512e180549c246a5504bc14675d61082c68904aa767d98deca5111d9a275dc60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984105"
 ---
-# <a name="sdbregisterdatabaseex-function"></a>SdbRegisterDatabaseEx función)
+# <a name="sdbregisterdatabaseex-function"></a>Función SdbRegisterDatabaseEx
 
 Registra la base de datos especificada.
 
@@ -41,34 +41,34 @@ BOOL WINAPI SdbRegisterDatabaseEx(
 
 <dl> <dt>
 
-*pszDatabasePath* \[ de\]
+*pszDatabasePath* \[ En\]
 </dt> <dd>
 
-Ruta de acceso de la base de datos. Este parámetro no puede ser **null**.
+Ruta de acceso de la base de datos. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
-*dwDatabaseType* \[ de\]
+*dwDatabaseType* \[ En\]
 </dt> <dd>
 
-El tipo de base de datos. Vea [tipos de base de datos de corrección de compatibilidad](shim-database-types.md) para obtener una lista de valores.
+El tipo de base de datos. Vea [Shim Database Types (Tipos de base de](shim-database-types.md) datos shim) para obtener una lista de valores.
 
 </dd> <dt>
 
 *pTimeStamp* \[ en, opcional\]
 </dt> <dd>
 
-Marca de tiempo para la base de datos. Si este parámetro es **null**, se utiliza la hora del sistema.
+Marca de tiempo de la base de datos. Si este parámetro es **NULL,** se usa la hora del sistema.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se ejecuta correctamente o **false** en caso de error.
+La función devuelve **TRUE si** se ejecuta correctamente o **FALSE** en caso de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se debe registrar una base de datos antes de poder usar cualquier otra función SDB.
+Se debe registrar una base de datos para poder usar cualquier otra función de SDB.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Se debe registrar una base de datos antes de poder usar cualquier otra función 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

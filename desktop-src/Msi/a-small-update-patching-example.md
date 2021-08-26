@@ -1,27 +1,27 @@
 ---
-description: En este ejemplo se muestra cómo crear un paquete de revisión que aplica una pequeña actualización al paquete de instalación de ejemplo que se describe en un ejemplo de instalación.
+description: En este ejemplo se muestra cómo crear un paquete de revisión que aplica una pequeña actualización al paquete de instalación de ejemplo que se describe en Un ejemplo de instalación.
 ms.assetid: 17dadd64-6e81-444a-985e-1b340e4f2ee5
-title: Un pequeño ejemplo de revisión de actualización
+title: Ejemplo de aplicación de revisiones de actualización pequeña
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36d4997a326e8fea33086a75c9cf40ecef8cb997
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0670693e9f5c6bf1c6b48c72e4b05b0f06703d69c08f46f6a2209b3d5046ea7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082975"
 ---
-# <a name="a-small-update-patching-example"></a>Un pequeño ejemplo de revisión de actualización
+# <a name="a-small-update-patching-example"></a>Ejemplo de aplicación de revisiones de actualización pequeña
 
-En este ejemplo se muestra cómo crear un [paquete de revisión](patch-packages.md) que aplica una [pequeña actualización](small-updates.md) al paquete de instalación de ejemplo que se describe en [un ejemplo de instalación](an-installation-example.md). Una actualización pequeña realiza cambios en uno o varios archivos de aplicación que se consideran demasiado pequeños para garantizar el cambio del código de producto. Para obtener más información [, consulte revisiones y actualizaciones](patching-and-upgrades.md).
+En este ejemplo se muestra cómo crear un [paquete](patch-packages.md) de revisión que aplica [una](small-updates.md) pequeña actualización al paquete de instalación de ejemplo que se describe en [Un ejemplo de instalación](an-installation-example.md). Una pequeña actualización realiza cambios en uno o varios archivos de aplicación que se considera demasiado menores para garantizar el cambio del código del producto. Para obtener más información, [vea Aplicación de revisiones y actualizaciones.](patching-and-upgrades.md)
 
-En este ejemplo se muestra cómo crear un paquete de revisión de Windows Installer que actualiza la característica de concierto de la MNP2000 de producto hipotética para corregir un error en el producto original. El paquete de revisión de ejemplo aplica una pequeña actualización al producto que no requiere cambiar el código de producto. Consulte el tema sobre las [actualizaciones principales](major-upgrades.md) en la sección [revisiones y actualizaciones](patching-and-upgrades.md) para obtener más información sobre las actualizaciones principales.
+En este ejemplo se muestra cómo crear un paquete de revisión de Windows Installer que actualiza la característica Concert del producto hipotético MNP2000 para corregir un error en el producto original. El paquete de revisión de ejemplo aplica una pequeña actualización al producto que no requiere cambiar el código del producto. Vea el tema Actualizaciones [principales en](major-upgrades.md) la sección [Revisiones](patching-and-upgrades.md) y actualizaciones para obtener más información sobre las actualizaciones principales.
 
-El paquete de actualización de ejemplo tiene las siguientes especificaciones:
+El paquete de actualización de ejemplo tiene las especificaciones siguientes:
 
--   Corrige un error leve en la programación del concierto que muestra la característica de concierto.
--   Actualiza el código de paquete para reflejar que el paquete de instalación ha cambiado.
--   La actualización pequeña se puede aplicar revisando la instalación local del producto.
+-   Corrige un error menor en la programación de concerto que muestra la característica Concert.
+-   Actualiza el código del paquete para reflejar que el paquete de instalación ha cambiado.
+-   La pequeña actualización se puede aplicar mediante la aplicación de revisiones a la instalación local del producto.
 
 [Continuar](planning-a-small-update-patch.md)
 

@@ -12,20 +12,20 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2895f773721f7c900003cbaa0f070c277a0e260
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 747ed7c19817757570d6517c68a987c2c75aa340c74ecfbac9fe258b1091f00e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082515"
 ---
 # <a name="evaluator-state-variables"></a>Variables de estado del evaluador
 
-<dl> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>PEDIDO \_ DE GL</dt> <dd> 
+<dl> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>GL \_ ORDER</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|--------------------------------|
-| Descripción:     | Orden de mapa 1D                  |
+| Descripción:     | Orden del mapa 1D                  |
 | Grupo de atributos: |                                |
 | Valor inicial:   | 1                              |
 | Comando Get:     | [**glGetMapiv**](glgetmap.md) |
@@ -34,11 +34,11 @@ ms.locfileid: "107909263"
 
  
 
-</dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>PEDIDO \_ DE GL</dt> <dd> 
+</dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>GL \_ ORDER</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|--------------------------------|
-| Descripción:     | Pedidos de mapas 2D                 |
+| Descripción:     | Pedidos de mapa 2D                 |
 | Grupo de atributos: |                                |
 | Valor inicial:   | 1,1                            |
 | Comando Get:     | [**glGetMapiv**](glgetmap.md) |
@@ -103,7 +103,7 @@ ms.locfileid: "107909263"
 
 | Propiedad | Value |
 |------------------|------------------------------------|
-| Descripción:     | Asignación 1D habilita: *x* es tipo de mapa   |
+| Descripción:     | Habilita el mapa 1D: *x* es el tipo de mapa   |
 | Grupo de atributos: | eval/enable                        |
 | Valor inicial:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
@@ -125,7 +125,7 @@ ms.locfileid: "107909263"
 
  
 
-</dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>DOMINIO DE CUADRÍCULA DE GL \_ MAP1 \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>DOMINIO DE \_ CUADRÍCULA DE GL MAP1 \_ \_</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|

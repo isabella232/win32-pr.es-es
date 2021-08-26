@@ -1,9 +1,9 @@
 ---
-title: Mensaje de BCM_GETNOTE (commctrl. h)
-description: Obtiene el texto de la nota asociada a un botón de vínculo de comando. Puede enviar este mensaje explícitamente o utilizar la \_ macro Button GetNote.
+title: BCM_GETNOTE mensaje (Commctrl.h)
+description: Obtiene el texto de la nota asociada a un botón de vínculo de comando. Puede enviar este mensaje explícitamente o usar la \_ macro Button GetNote.
 ms.assetid: ddaf4227-1316-49b5-abf0-00215472c46c
 keywords:
-- BCM_GETNOTE controles de mensajes de Windows
+- BCM_GETNOTE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 758dac90ba4c0f3087a6df90d9acf2c1321b1d73
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55b552f79e1d6c7bda2808b99701ff11e45deb169232b8bb52c4ecf231cdcbfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921705"
 ---
-# <a name="bcm_getnote-message"></a>\_Mensaje GETNOTE de BCM
+# <a name="bcm_getnote-message"></a>Mensaje \_ GETNOTE de BCM
 
-Obtiene el texto de la nota asociada a un botón de vínculo de comando. Puede enviar este mensaje explícitamente o utilizar la macro [**Button \_ GetNote**](/windows/desktop/api/Commctrl/nf-commctrl-button_getnote) .
+Obtiene el texto de la nota asociada a un botón de vínculo de comando. Puede enviar este mensaje explícitamente o usar la macro [**\_ Button GetNote.**](/windows/desktop/api/Commctrl/nf-commctrl-button_getnote)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,29 +32,29 @@ Obtiene el texto de la nota asociada a un botón de vínculo de comando. Puede e
 *wParam* \[ in, out\]
 </dt> <dd>
 
-**DWORD** que especifica el tamaño del búfer señalado por *lParam*, en caracteres.
+DWORD **que** especifica el tamaño del búfer al que *apunta lParam*, en caracteres.
 
 </dd> <dt>
 
-*lParam* \[ enuncia\]
+*lParam* \[ out\]
 </dt> <dd>
 
-Búfer de cadena para recibir el texto. El búfer debe ser lo suficientemente grande como para dar cabida al carácter nulo de terminación.
+Búfer de cadena para recibir el texto. El búfer debe ser lo suficientemente grande como para dar cabida al carácter NULL final.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el mensaje se realiza correctamente, devuelve **true**. En caso contrario, devuelve **false**.
+Si el mensaje se realiza correctamente, devuelve **TRUE.** De lo contrario, **devuelve FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El **mensaje \_ GETNOTE de BCM** solo funciona con los botones que tienen el estilo de botón [**BS \_ COMMANDLINK**](button-styles.md) o [**BS \_ DEFCOMMANDLINK**](button-styles.md) .
+El **mensaje \_ GETNOTE de BCM** solo funciona con botones que tienen el estilo de botón [**\_ BS COMMANDLINK**](button-styles.md) o [**BS \_ DEFCOMMANDLINK.**](button-styles.md)
 
 [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) contendrá:
 
--   ERROR \_ no \_ compatible, si el botón no tiene el estilo [**BS \_ DEFCOMMANDLINK**](button-styles.md) o [**BS \_ COMMANDLINK**](button-styles.md) .
--   ERROR \_ de \_ búfer insuficiente, si el búfer *lParam* es demasiado pequeño. El parámetro *wParam* contendrá el tamaño de búfer necesario, en caracteres.
+-   ERROR \_ NO \_ ADMITIDO, si el botón no tiene el estilo [**\_ BS DEFCOMMANDLINK**](button-styles.md) o [**\_ BS COMMANDLINK.**](button-styles.md)
+-   ERROR \_ INSUFFICIENT \_ BUFFER, si el búfer *lParam* es demasiado pequeño. El *parámetro wParam* contendrá el tamaño de búfer necesario, en caracteres.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,9 +62,9 @@ El **mensaje \_ GETNOTE de BCM** solo funciona con los botones que tienen el est
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ El **mensaje \_ GETNOTE de BCM** solo funciona con los botones que tienen el est
 [Estilos de botón](button-styles.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Tipos de botón](button-types-and-styles.md)

@@ -1,7 +1,7 @@
 ---
 description: El método CheckReady consulta si se ha completado una transición de estado.
 ms.assetid: dfa669ed-a5ab-498e-9fc2-ff15d6ddbc13
-title: Método CBaseRenderer. CheckReady (Renbase. h)
+title: Método CBaseRenderer.CheckReady (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 28c0c8bcb6efb0e3cbd648c1e45d36e8b18d4b74
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a1fac55eba92141ac8174b30ed2dcbc4685ba250b7bb21236432bb998b3b5e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043955"
 ---
-# <a name="cbaserenderercheckready-method"></a>CBaseRenderer. CheckReady, método
+# <a name="cbaserenderercheckready-method"></a>Método CBaseRenderer.CheckReady
 
 El `CheckReady` método consulta si se ha completado una transición de estado.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si la transición de estado está completa o **false** si el filtro sigue pasando a un nuevo estado.
+Devuelve **TRUE** si la transición de estado se ha completado o **FALSE** si el filtro sigue transfiriendo a un estado nuevo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve **true** si la transición de estado está completa o **false** si el f
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,13 +59,13 @@ Devuelve **true** si la transición de estado está completa o **false** si el f
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> <dt>
 
-[**CBaseRenderer::**](cbaserenderer-notready.md)
+[**CBaseRenderer::NotReady**](cbaserenderer-notready.md)
 </dt> <dt>
 
-[**CBaseRenderer:: Ready**](cbaserenderer-ready.md)
+[**CBaseRenderer::Ready**](cbaserenderer-ready.md)
 </dt> </dl>
 
  

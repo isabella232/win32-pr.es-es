@@ -1,7 +1,7 @@
 ---
-description: 'El método Reset restablece la secuencia de enumeración al principio. Este método implementa el método IEnumPins:: RESET.'
+description: El método Reset restablece la secuencia de enumeración al principio. Este método implementa el método IEnumPins::Reset.
 ms.assetid: b2e86304-bb14-495b-a922-8868b3898d85
-title: Método CEnumPins. Reset (Amfilter. h)
+title: Método CEnumPins.Reset (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 154899176d342b4630f8c93ab4b4cb86a54e13ea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0bbef967736261ca6e177bd0cb31e399f7d68bad1ab1a8ef9601e717213c82be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999495"
 ---
-# <a name="cenumpinsreset-method"></a>CEnumPins. Reset (método)
+# <a name="cenumpinsreset-method"></a>Método CEnumPins.Reset
 
-El `Reset` método restablece la secuencia de enumeración al principio. Este método implementa el método [**IEnumPins:: RESET**](/windows/desktop/api/Strmif/nf-strmif-ienumpins-reset) .
+El `Reset` método restablece la secuencia de enumeración al principio. Este método implementa el [**método IEnumPins::Reset.**](/windows/desktop/api/Strmif/nf-strmif-ienumpins-reset)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve S \_ correcto.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve S \_ correcto.
 
 <dl> <dt>
 
-[**Clase CEnumPins**](cenumpins.md)
+[**CEnumPins (clase)**](cenumpins.md)
 </dt> </dl>
 
  

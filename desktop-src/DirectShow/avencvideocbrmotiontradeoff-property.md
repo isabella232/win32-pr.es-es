@@ -1,19 +1,19 @@
 ---
-description: Especifica el equilibrio entre las imágenes de movimiento y las imágenes fijas. Esta propiedad solo se aplica al modo de control de velocidad de bits constante (CBR).
+description: Especifica el equilibrio entre el movimiento y las imágenes fijas. Esta propiedad solo se aplica al modo de control de velocidad de bits constante (CBR).
 ms.assetid: e657e971-4624-4c87-ad51-6bf0cd1f9246
-title: Propiedad AVEncVideoCBRMotionTradeoff (Codecapi. h)
+title: Propiedad AVEncVideoCBRMotionMotionMotionOff (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b746559f48858f995cbd87184a2f13ada33db7c4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 21d3db1f310de6468b57d469fbf699919ab86429e7242344622ca498b9e59f39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057945"
 ---
-# <a name="avencvideocbrmotiontradeoff-property"></a>Propiedad AVEncVideoCBRMotionTradeoff
+# <a name="avencvideocbrmotiontradeoff-property"></a>Propiedad AVEncVideoCBRMotionMotionMotionOff
 
-Especifica el equilibrio entre las imágenes de movimiento y las imágenes fijas. Esta propiedad solo se aplica al modo de control de velocidad de bits constante (CBR).
+Especifica el equilibrio entre el movimiento y las imágenes fijas. Esta propiedad solo se aplica al modo de control de velocidad de bits constante (CBR).
 
 Esta propiedad es de lectura y escritura.
 
@@ -23,18 +23,18 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-guid"></a>GUID de propiedad
 
-**CODECAPI \_ AVEncVideoCBRMotionTradeoff**
+**CODECAPI \_ AVEncVideoCBRMotionMotionOff**
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad tiene el siguiente intervalo.
+El valor de esta propiedad tiene el intervalo siguiente.
 
 
 
 | Value | Descripción               |
 |-------|---------------------------|
-| 0     | Optimizar para imágenes fijas |
-| 100   | Optimizar para el movimiento.      |
+| 0     | Optimización de imágenes fijas |
+| 100   | Optimización del movimiento.      |
 
 
 
@@ -46,9 +46,9 @@ El valor de esta propiedad tiene el siguiente intervalo.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ El valor de esta propiedad tiene el siguiente intervalo.
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

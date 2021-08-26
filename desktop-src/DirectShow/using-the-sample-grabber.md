@@ -1,36 +1,36 @@
 ---
-description: El filtro de enganche de ejemplo es un filtro de transformación que se puede usar para obtener ejemplos de medios de un flujo a medida que pasan por el gráfico de filtro.
+description: El filtro Sample Grabber es un filtro de transformación que se puede usar para obtener muestras multimedia de una secuencia a medida que pasan a través del gráfico de filtros.
 ms.assetid: ec0e367e-9ef9-4de6-9132-b462c233bc98
-title: Usar el enganche de ejemplo
+title: Uso de Sample Grabber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4886c796691e83e02b58ddea129d60d5004c9f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47318b7bd4dbbad57fb82bec11e0a1293a0284c906c78fc7175d8a758ad477f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083565"
 ---
-# <a name="using-the-sample-grabber"></a>Usar el enganche de ejemplo
+# <a name="using-the-sample-grabber"></a>Uso de Sample Grabber
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-El filtro de [**enganche de ejemplo**](sample-grabber-filter.md) es un filtro de transformación que se puede usar para obtener ejemplos de medios de un flujo a medida que pasan por el gráfico de filtro.
+El [**filtro Sample Grabber es**](sample-grabber-filter.md) un filtro de transformación que se puede usar para obtener muestras multimedia de una secuencia a medida que pasan por el gráfico de filtros.
 
-Si simplemente desea captar un mapa de bits de un archivo de vídeo, es más fácil usar el objeto de [detector de medios (MediaDet)](media-detector--mediadet.md) . Consulte [captación de un fotograma de póster](grabbing-a-poster-frame.md) para obtener más información. Sin embargo, el captador de ejemplo es más flexible porque funciona con casi cualquier tipo de medio (vea [**ISampleGrabber:: SetMediaType**](isamplegrabber-setmediatype.md) para las pocas excepciones) y ofrece más control a la aplicación.
+Si simplemente desea tomar un mapa de bits de un archivo de vídeo, es más fácil usar el objeto [Media Detector (MediaDet).](media-detector--mediadet.md) Consulte [Captura de un marco de póster](grabbing-a-poster-frame.md) para obtener más información. Sin embargo, Sample Grabber es más flexible porque funciona con casi cualquier tipo de medio (vea [**ISampleGrabber::SetMediaType para**](isamplegrabber-setmediatype.md) ver algunas excepciones) y ofrece más control a la aplicación.
 
--   [Crear el administrador de gráficos de filtro](#create-the-filter-graph-manager)
--   [Agregar el captador de ejemplo al gráfico de filtros](#add-the-sample-grabber-to-the-filter-graph)
+-   [Crear el Administrador de Graph filtros](#create-the-filter-graph-manager)
+-   [Agregue sample Grabber al filtro Graph](#add-the-sample-grabber-to-the-filter-graph)
 -   [Establecer el tipo de medio](#set-the-media-type)
--   [Crear el gráfico de filtro](#build-the-filter-graph)
--   [Ejecutar el gráfico](#run-the-graph)
--   [Captar el ejemplo](#grab-the-sample)
+-   [Compilar el filtro Graph](#build-the-filter-graph)
+-   [Ejecute el Graph](#run-the-graph)
+-   [Obtener el ejemplo](#grab-the-sample)
 -   [Código de ejemplo](#example-code)
 -   [Temas relacionados](#related-topics)
 
-## <a name="create-the-filter-graph-manager"></a>Crear el administrador de gráficos de filtro
+## <a name="create-the-filter-graph-manager"></a>Crear el Administrador de Graph filtros
 
-Para empezar, cree el [Administrador de gráficos de filtro](filter-graph-manager.md) y consulte las interfaces [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) .
+Para empezar, cree el [Administrador de Graph y](filter-graph-manager.md) consulte las interfaces [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e [**IMediaEventEx.**](/windows/desktop/api/Control/nn-control-imediaeventex)
 
 
 ```C++
@@ -63,9 +63,9 @@ Para empezar, cree el [Administrador de gráficos de filtro](filter-graph-manage
 
 
 
-## <a name="add-the-sample-grabber-to-the-filter-graph"></a>Agregar el captador de ejemplo al gráfico de filtros
+## <a name="add-the-sample-grabber-to-the-filter-graph"></a>Agregue sample Grabber al filtro Graph
 
-Cree una instancia del filtro de enganche de ejemplo y addit al gráfico de filtro. Consulte el filtro de enganche de ejemplo para la interfaz [**ISampleGrabber**](isamplegrabber.md) .
+Cree una instancia del filtro Sample Grabber y agregue al gráfico de filtros. Consulte el filtro Sample Grabber para la [**interfaz ISampleGrabber.**](isamplegrabber.md)
 
 
 ```C++
@@ -100,9 +100,9 @@ Cree una instancia del filtro de enganche de ejemplo y addit al gráfico de filt
 
 ## <a name="set-the-media-type"></a>Establecer el tipo de medio
 
-La primera vez que se crea el enganche de ejemplo, no tiene ningún tipo de medio preferido. Esto significa que puede conectarse a casi cualquier filtro del gráfico, pero no tendrá ningún control sobre el tipo de datos que recibió. Antes de compilar el resto del gráfico, por lo tanto, debe establecer un tipo de medio para el enganche de ejemplo llamando al método [**ISampleGrabber:: SetMediaType**](isamplegrabber-setmediatype.md) .
+La primera vez que crea el sample grabber, no tiene ningún tipo de medio preferido. Esto significa que puede conectarse a casi cualquier filtro del gráfico, pero no tendría control sobre el tipo de datos que recibió. Antes de compilar el resto del gráfico, por lo tanto, debe establecer un tipo de medio para Sample Grabber mediante una llamada al [**método ISampleGrabber::SetMediaType.**](isamplegrabber-setmediatype.md)
 
-Cuando se conecte el enganche de ejemplo, comparará este tipo de medio con el tipo de medio ofrecido por el otro filtro. Los únicos campos que comprueba son el tipo principal, el subtipo y el tipo de formato. Para cualquiera de ellos, el valor \_ null GUID significa "Accept any Value". La mayoría de las veces, querrá establecer el tipo y el subtipo principales. Por ejemplo, el código siguiente especifica el vídeo RGB de 24 bits sin comprimir:
+Cuando se conecta sample grabber, compara este tipo de medio con el tipo de medio que ofrece el otro filtro. Los únicos campos que comprueba son el tipo principal, el subtipo y el tipo de formato. Para cualquiera de ellos, el valor GUID \_ NULL significa "aceptar cualquier valor". La mayoría de las veces, querrá establecer el tipo principal y el subtipo. Por ejemplo, el código siguiente especifica vídeo RGB de 24 bits sin comprimir:
 
 
 ```C++
@@ -120,11 +120,11 @@ Cuando se conecte el enganche de ejemplo, comparará este tipo de medio con el t
 
 
 
-## <a name="build-the-filter-graph"></a>Crear el gráfico de filtro
+## <a name="build-the-filter-graph"></a>Compilar el filtro Graph
 
-Ahora puede compilar el resto del gráfico de filtro. Dado que el enganche de ejemplo solo se conectará con el tipo de medio que ha especificado, le permite aprovechar los mecanismos de [conexión inteligente](intelligent-connect.md) del administrador de gráficos de filtro al compilar el gráfico.
+Ahora puede compilar el resto del gráfico de filtro. Dado que Sample Grabber solo se conectará mediante el tipo de medio que ha especificado [](intelligent-connect.md) Graph, esto le permite aprovechar los mecanismos de Conectar inteligente del Administrador de filtros al compilar el gráfico.
 
-Por ejemplo, si especificó vídeo sin comprimir, puede conectar un filtro de origen al enganche de ejemplo y el administrador de gráficos de filtros agregará automáticamente el analizador de archivos y el descodificador. En el ejemplo siguiente se usa la función auxiliar ConnectFilters, que se muestra en [conectar dos filtros](connect-two-filters.md):
+Por ejemplo, si especificó vídeo sin comprimir, puede conectar un filtro de origen al sample grabber y el Administrador de filtros Graph agregará automáticamente el analizador de archivos y el descodificador. En el ejemplo siguiente se usa la función auxiliar ConnectFilters, que se muestra [en Conectar dos filtros](connect-two-filters.md):
 
 
 ```C++
@@ -165,9 +165,9 @@ Por ejemplo, si especificó vídeo sin comprimir, puede conectar un filtro de or
 
 
 
-El enganche de ejemplo es un filtro de transformación, por lo que el PIN de salida debe estar conectado a otro filtro. A menudo, puede que simplemente desee descartar los ejemplos después de que haya terminado con ellos. En ese caso, conecte el captador de muestra al [**filtro de representador nulo**](null-renderer-filter.md), que descarta los datos que recibe.
+Sample Grabber es un filtro de transformación, por lo que el pin de salida debe estar conectado a otro filtro. A menudo, es posible que simplemente quiera descartar los ejemplos una vez que haya terminado con ellos. En ese caso, conecte sample grabber al filtro de representador [**null**](null-renderer-filter.md), que descarta los datos que recibe.
 
-En el ejemplo siguiente se conecta el captador de ejemplo al filtro de representador nulo:
+En el ejemplo siguiente se conecta sample grabber al filtro Representador null:
 
 
 ```C++
@@ -198,22 +198,22 @@ En el ejemplo siguiente se conecta el captador de ejemplo al filtro de represent
 
 
 
-Tenga en cuenta que colocar el captador de ejemplo entre un descodificador de vídeo y el representador de vídeo puede perjudicar significativamente el rendimiento de la representación. El enganche de ejemplo es un filtro de transferencia en contexto, lo que significa que el búfer de salida es el mismo que el búfer de entrada. Para la representación de vídeo, es probable que el búfer de salida se encuentre en la tarjeta gráfica, donde las operaciones de lectura son mucho más lentas, en comparación con las operaciones de lectura en la memoria principal.
+Tenga en cuenta que colocar sample Grabber entre un descodificador de vídeo y el representador de vídeo puede dañar significativamente el rendimiento de la representación. Sample Grabber es un filtro trans-in-place, lo que significa que el búfer de salida es el mismo que el búfer de entrada. En el caso de la representación de vídeo, es probable que el búfer de salida se encuentra en la tarjeta gráfica, donde las operaciones de lectura son mucho más lentas, en comparación con las operaciones de lectura en la memoria principal.
 
-## <a name="run-the-graph"></a>Ejecutar el gráfico
+## <a name="run-the-graph"></a>Ejecute el Graph
 
-El enganche de ejemplo funciona en uno de los dos modos siguientes:
+Sample Grabber funciona en uno de estos dos modos:
 
--   El modo de almacenamiento en búfer realiza una copia de cada ejemplo antes de entregar el ejemplo de nivel inferior.
+-   El modo de almacenamiento en búfer realiza una copia de cada muestra antes de entregar el ejemplo de nivel inferior.
 -   El modo de devolución de llamada invoca una función de devolución de llamada definida por la aplicación en cada ejemplo.
 
-En este artículo se describe el modo de almacenamiento en búfer. (Antes de usar el modo de devolución de llamada, tenga en cuenta que la función de devolución de llamada debe estar bastante limitada. De lo contrario, puede reducir drásticamente el rendimiento o incluso causar interbloqueos. Para obtener más información, vea [**ISampleGrabber:: SetCallback**](isamplegrabber-setcallback.md)). Para activar el modo de almacenamiento en búfer, llame al método [**ISampleGrabber:: SetBufferSamples**](isamplegrabber-setbuffersamples.md) con el valor **true**.
+En este artículo se describe el modo de almacenamiento en búfer. (Antes de usar el modo de devolución de llamada, tenga en cuenta que la función de devolución de llamada debe ser bastante limitada. De lo contrario, puede reducir drásticamente el rendimiento o incluso provocar interbloqueos. Para obtener más información, [**vea ISampleGrabber::SetCallback**](isamplegrabber-setcallback.md)). Para activar el modo de almacenamiento en búfer, llame [**al método ISampleGrabber::SetBufferSamples**](isamplegrabber-setbuffersamples.md) con el **valor TRUE**.
 
-Opcionalmente, llame al método [**ISampleGrabber:: SetOneShot**](isamplegrabber-setoneshot.md) con el valor **true**. Esto hace que el captador de ejemplo se detenga después de recibir el primer ejemplo multimedia, lo que resulta útil si desea captar un solo fotograma de la secuencia. Busque el tiempo deseado, ejecute el gráfico y espere hasta el evento de [**\_ finalización de EC**](ec-complete.md) . Tenga en cuenta que el nivel de precisión del marco depende del origen. Por ejemplo, la búsqueda de un archivo MPEG suele ser una precisión de fotogramas.
+Opcionalmente, llame al [**método ISampleGrabber::SetOneShot**](isamplegrabber-setoneshot.md) con el valor **TRUE**. Esto hace que sample grabber se detenga después de recibir el primer ejemplo multimedia, lo que resulta útil si desea obtener un único fotograma de la secuencia. Busque la hora deseada, ejecute el gráfico y espere el [**evento EC \_ COMPLETE.**](ec-complete.md) Tenga en cuenta que el nivel de precisión del fotograma depende del origen. Por ejemplo, la búsqueda de un archivo MPEG a menudo no es precisa de fotogramas.
 
-Para ejecutar el gráfico lo más rápido posible, convierta el reloj del gráfico como se describe en [establecer el reloj del gráfico](setting-the-graph-clock.md).
+Para ejecutar el gráfico lo más rápido posible, active el reloj del gráfico tal y como se describe en [Setting the Graph Clock](setting-the-graph-clock.md).
 
-En el ejemplo siguiente se habilita el modo de una sola captura y el modo de almacenamiento en búfer, se ejecuta el gráfico de filtro y se espera a que finalice.
+En el ejemplo siguiente se habilita el modo de una sola toma y el modo de almacenamiento en búfer, se ejecuta el gráfico de filtros y se espera a que se complete.
 
 
 ```C++
@@ -241,9 +241,9 @@ En el ejemplo siguiente se habilita el modo de una sola captura y el modo de alm
 
 
 
-## <a name="grab-the-sample"></a>Captar el ejemplo
+## <a name="grab-the-sample"></a>Obtener el ejemplo
 
-En el modo de almacenamiento en búfer, el enganche de ejemplo almacena una copia de cada ejemplo. El método [**ISampleGrabber:: GetCurrentBuffer**](isamplegrabber-getcurrentbuffer.md) copia el búfer en una matriz asignada por el llamador. Para determinar el tamaño de la matriz que se necesita, llame primero a **GetCurrentBuffer** con un puntero **nulo** para la dirección de la matriz. A continuación, asigne la matriz y llame a la segunda vez al método para copiar el búfer. En el ejemplo siguiente se muestran estos pasos.
+En el modo de almacenamiento en búfer, sample grabber almacena una copia de cada muestra. El [**método ISampleGrabber::GetCurrentBuffer**](isamplegrabber-getcurrentbuffer.md) copia el búfer en una matriz asignada por el autor de la llamada. Para determinar el tamaño de la matriz necesaria, llame primero a **GetCurrentBuffer** con un **puntero NULL** para la dirección de la matriz. A continuación, asigne la matriz y llame al método una segunda vez para copiar el búfer. En el ejemplo siguiente se muestran estos pasos.
 
 
 ```C++
@@ -271,9 +271,9 @@ En el modo de almacenamiento en búfer, el enganche de ejemplo almacena una copi
 
 
 
-Tendrá que conocer el formato exacto de los datos en el búfer. Para obtener esta información, llame al método [**ISampleGrabber:: GetConnectedMediaType**](isamplegrabber-getconnectedmediatype.md) . Este método rellena una estructura de [**\_ \_ tipo medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) con el formato.
+Deberá conocer el formato exacto de los datos en el búfer. Para obtener esta información, llame al [**método ISampleGrabber::GetConnectedMediaType.**](isamplegrabber-getconnectedmediatype.md) Este método rellena una estructura [**\_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) con el formato .
 
-En el caso de una secuencia de vídeo sin comprimir, la información de formato se encuentra en una estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) . En el ejemplo siguiente se muestra cómo obtener la información de formato de una secuencia de vídeo sin comprimir.
+Para una secuencia de vídeo sin comprimir, la información de formato se encuentra en una [**estructura VIDEOINFOHEADER.**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) En el ejemplo siguiente se muestra cómo obtener la información de formato de una secuencia de vídeo sin comprimir.
 
 
 ```C++
@@ -297,7 +297,7 @@ En el caso de una secuencia de vídeo sin comprimir, la información de formato 
 
 
 > [!Note]  
-> El enganche de ejemplo no es compatible con [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2).
+> Sample Grabber no admite [**VIDEOINFOHEADER2.**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2)
 
  
 
@@ -306,7 +306,7 @@ En el caso de una secuencia de vídeo sin comprimir, la información de formato 
 Este es el código completo de los ejemplos anteriores.
 
 > [!Note]  
-> En este ejemplo se usa la función [SafeRelease](../medfound/saferelease.md) para liberar punteros de interfaz.
+> En este ejemplo se usa [la función SafeRelease para](../medfound/saferelease.md) liberar punteros de interfaz.
 
  
 
@@ -569,7 +569,7 @@ HRESULT WriteBitmap(PCWSTR pszFileName, BITMAPINFOHEADER *pBMI, size_t cbBMI,
 
 <dl> <dt>
 
-[Usar servicios de edición de DirectShow](using-directshow-editing-services.md)
+[Uso de DirectShow Editing Services](using-directshow-editing-services.md)
 </dt> </dl>
 
  

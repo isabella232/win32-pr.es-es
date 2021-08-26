@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_APPROXIMATEVIEWRECT (commctrl. h)
-description: Calcula el ancho y el alto aproximados necesarios para mostrar un número determinado de elementos. Puede enviar este mensaje explícitamente o utilizar la \_ macro ApproximateViewRect de ListView.
+title: LVM_APPROXIMATEVIEWRECT mensaje (Commctrl.h)
+description: Calcula el ancho y alto aproximados necesarios para mostrar un número determinado de elementos. Puede enviar este mensaje explícitamente o usar la macro ListView \_ ApproximateViewRect.
 ms.assetid: a14331a8-217d-48c6-9489-fb90c4d31b91
 keywords:
-- LVM_APPROXIMATEVIEWRECT controles de mensajes de Windows
+- LVM_APPROXIMATEVIEWRECT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be929d34acad46b75a53a9e0cc8825ec9801e998
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 97fcbb5476f28debd28116a52123bd01b8030c8b0a0c9c52e6598c864caed021
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047065"
 ---
-# <a name="lvm_approximateviewrect-message"></a>\_Mensaje APPROXIMATEVIEWRECT LVM
+# <a name="lvm_approximateviewrect-message"></a>Mensaje \_ DE LVM APPROXIMATEVIEWRECT
 
-Calcula el ancho y el alto aproximados necesarios para mostrar un número determinado de elementos. Puede enviar este mensaje explícitamente o utilizar la [**macro \_ ApproximateViewRect de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_approximateviewrect) .
+Calcula el ancho y alto aproximados necesarios para mostrar un número determinado de elementos. Puede enviar este mensaje explícitamente o usar la macro [**ListView \_ ApproximateViewRect.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_approximateviewrect)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,26 +32,26 @@ Calcula el ancho y el alto aproximados necesarios para mostrar un número determ
 *wParam* 
 </dt> <dd>
 
-Número de elementos que se van a mostrar en el control. Si este parámetro se establece en-1, el mensaje utiliza el número total de elementos del control.
+Número de elementos que se mostrarán en el control . Si este parámetro se establece en -1, el mensaje usa el número total de elementos del control .
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) es la dimensión x propuesta del control, en píxeles. Este parámetro se puede establecer en-1 para permitir que el mensaje use el valor de ancho actual.
+[**LOWORD es**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) la dimensión X propuesta del control, en píxeles. Este parámetro se puede establecer en -1 para permitir que el mensaje use el valor de ancho actual.
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) es la dimensión y propuesta del control, en píxeles. Este parámetro se puede establecer en-1 para permitir que el mensaje use el valor del alto actual.
+[**HIWORD es**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) la dimensión y propuesta del control, en píxeles. Este parámetro se puede establecer en -1 para permitir que el mensaje use el valor de alto actual.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **DWORD** que contiene el ancho aproximado (en el [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))) y el alto (en [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))) necesarios para mostrar los elementos, en píxeles.
+Devuelve un **valor DWORD** que contiene el ancho aproximado (en [**LOWORD)**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))y el alto (en [**HIWORD)**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))necesarios para mostrar los elementos, en píxeles.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Establecer el tamaño del control de vista de lista en función de las dimensiones proporcionadas por este mensaje puede optimizar el redibujo y reducir el parpadeo.
+Establecer el tamaño del control de vista de lista en función de las dimensiones proporcionadas por este mensaje puede optimizar el volver a dibujar y reducir el parpadeo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Establecer el tamaño del control de vista de lista en función de las dimension
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

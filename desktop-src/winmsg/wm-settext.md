@@ -1,17 +1,17 @@
 ---
 description: Establece el texto de una ventana.
 ms.assetid: 1b48c309-6903-4139-bf42-e8526963e681
-title: Mensaje de WM_SETTEXT (Winuser. h)
+title: WM_SETTEXT mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3284855d817d5207b0d7572a41774e961c0113f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fc2ab860fd89d726b9763c198fe8d58caa1376a3b919fd3587ad39a612d6667
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103817683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055985"
 ---
-# <a name="wm_settext-message"></a>Mensaje de WM \_ SETTEXT
+# <a name="wm_settext-message"></a>Mensaje \_ SETTEXT de WM
 
 Establece el texto de una ventana.
 
@@ -36,7 +36,7 @@ Este parámetro no se utiliza.
 *lParam* 
 </dt> <dd>
 
-Puntero a una cadena terminada en null que es el texto de la ventana.
+Puntero a una cadena terminada en NULL que es el texto de la ventana.
 
 </dd> </dl>
 
@@ -44,13 +44,13 @@ Puntero a una cadena terminada en null que es el texto de la ventana.
 
 Tipo: **LRESULT**
 
-El valor devuelto es **true** si se establece el texto. Es **false** (para un control de edición), **lb \_ ERRSPACE** (para un cuadro de lista) o **CB \_ ERRSPACE** (para un cuadro combinado) si no hay suficiente espacio disponible para establecer el texto en el control de edición. Es un **\_ error CB** si este mensaje se envía a un cuadro combinado sin un control de edición.
+El valor devuelto es **TRUE** si se establece el texto. Es **FALSE** (para un control de edición), **LB \_ ERRSPACE** (para un cuadro de lista) o **CB \_ ERRSPACE** (para un cuadro combinado) si no hay suficiente espacio disponible para establecer el texto en el control de edición. Es CB **\_ ERR si** este mensaje se envía a un cuadro combinado sin un control de edición.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) establece y muestra el texto de la ventana. Para un control de edición, el texto es el contenido del control de edición. En el caso de un cuadro combinado, el texto es el contenido de la parte del control de edición del cuadro combinado. En el caso de un botón, el texto es el nombre del botón. Para otras ventanas, el texto es el título de la ventana.
+La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) establece y muestra el texto de la ventana. Para un control de edición, el texto es el contenido del control de edición. Para un cuadro combinado, el texto es el contenido de la parte de control de edición del cuadro combinado. Para un botón, el texto es el nombre del botón. Para otras ventanas, el texto es el título de la ventana.
 
-Este mensaje no cambia la selección actual en el cuadro de lista de un cuadro combinado. Una aplicación debe usar el mensaje [**CB \_ SELECTSTRING**](../controls/cb-selectstring.md) para seleccionar el elemento en un cuadro de lista que coincida con el texto del control de edición.
+Este mensaje no cambia la selección actual en el cuadro de lista de un cuadro combinado. Una aplicación debe usar el mensaje [**\_ SELECTSTRING de CB**](../controls/cb-selectstring.md) para seleccionar el elemento en un cuadro de lista que coincida con el texto del control de edición.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Este mensaje no cambia la selección actual en el cuadro de lista de un cuadro c
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -74,10 +74,10 @@ Este mensaje no cambia la selección actual en el cuadro de lista de un cuadro c
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**GETTEXT de WM \_**](wm-gettext.md)
+[**WM \_ GETTEXT**](wm-gettext.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Windows](windows.md)

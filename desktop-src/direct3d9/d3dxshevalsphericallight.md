@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXSHEvalSphericalLight (D3dx9math.h): evalúa una luz esférica y devuelve datos de armónica esférica esférica (SH).'
+description: 'Función D3DXSHEvalSphericalLight (D3dx9math.h): evalúa una luz esférica y devuelve datos esféricos (SH) esféricos.'
 ms.assetid: aa46c162-9c2d-49c0-925c-d0c06456f918
 title: Función D3DXSHEvalSphericalLight (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: db671d58806d999e07b1aac1e8e4da2fb38acc6f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0b6618747659c62b6ce954725690a6d707cead489db56788850bbe8eca216acf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027275"
 ---
 # <a name="d3dxshevalsphericallight-function-d3dx9mathh"></a>Función D3DXSHEvalSphericalLight (D3dx9math.h)
 
-Evalúa una luz esférica y devuelve datos esféricos de armónica esférica (SH).
+Evalúa una luz esférica y devuelve datos esféricos armónicos esféricos (SH).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ HRESULT D3DXSHEvalSphericalLight(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -139,11 +139,11 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 Evalúa una luz esférica y devuelve datos sh espectrales. No hay ninguna normalización de la intensidad [](light-types.md)de la luz como para las luces direccionales, por lo que debe tener cuidado al especificar las intensidades. Esto calculará tres ejemplos espectrales; *se devolverá pROut,* mientras que se pueden devolver *pGOut* y *pBOut.*
 
-En la esfera con radio de unidad, como se muestra en la ilustración siguiente, la dirección [](coordinate-systems.md)se puede especificar simplemente con theta, el ángulo sobre el eje Z en la dirección derecha y el ángulo de la z.
+En la esfera con radio de unidad, como se muestra en la ilustración siguiente, la dirección [](coordinate-systems.md)se puede especificar simplemente con theta, el ángulo sobre el eje Z en la dirección de la derecha y phi, el ángulo de z.
 
 ![ilustración de una esfera con radio de unidad](images/spherical-coordinates.png)
 
-Las ecuaciones siguientes muestran la relación entre las coordenadas cartesianas (x, y, z) y esféricas (theta, phi) en la esfera de unidad. El ángulo de theta varía en el intervalo de 0 a 2 pi, mientras que phi varía de 0 a pi.
+Las ecuaciones siguientes muestran la relación entre las coordenadas cartesianas (x, y, z) y esféricas (theta, phi) en la esfera de unidad. El ángulo de theta varía en el intervalo de 0 a 2 pi, mientras que el de phi varía de 0 a pi.
 
 ![ecuaciones de la relación entre coordenadas cartesianas y esféricas](images/spherical-coordinates-equations.png)
 
@@ -158,14 +158,14 @@ Las ecuaciones siguientes muestran la relación entre las coordenadas cartesiana
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferencia de radiancia precalutada (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferencia de radiancia precalcalada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

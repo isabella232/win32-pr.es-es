@@ -131,7 +131,7 @@ El servidor de licencias está demasiado ocupado para procesar la solicitud.
 
 </dt> <dd>
 
-No se puede procesar la solicitud debido a una memoria insuficiente.
+No se puede procesar la solicitud debido a memoria insuficiente.
 
 </dd> </dl> </dd> </dl>
 
@@ -159,7 +159,7 @@ El argumento no era válido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -167,7 +167,7 @@ El argumento no era válido.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

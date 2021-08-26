@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_SETEDITSTYLE (RichEdit. h)
-description: Establece las marcas de estilo de edición actuales para un control Rich Edit.
+title: EM_SETEDITSTYLE mensaje (Richedit.h)
+description: Establece las marcas de estilo de edición actuales para un control de edición enriquecido.
 ms.assetid: e48de6b3-0fd2-4791-9863-a6dcdafa3642
 keywords:
-- EM_SETEDITSTYLE controles de mensajes de Windows
+- EM_SETEDITSTYLE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14c7b7e1d3990a00fb6931ed39bbd28aa6f8c2ce
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 06789b1d1fedfc76af205ac46aac7d3ea4bb882f2460676df96cd018d5a216b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048595"
 ---
-# <a name="em_seteditstyle-message"></a>\_Mensaje SETEDITSTYLE em
+# <a name="em_seteditstyle-message"></a>Mensaje \_ SETEDITSTYLE de EM
 
-Establece las marcas de estilo de edición actuales para un control Rich Edit.
+Establece las marcas de estilo de edición actuales para un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,20 +32,20 @@ Establece las marcas de estilo de edición actuales para un control Rich Edit.
 *wParam* 
 </dt> <dd>
 
-Especifica una o más marcas de estilo de edición. Para obtener una lista de los valores posibles, consulte [**em \_ GETEDITSTYLE**](em-geteditstyle.md).
+Especifica una o varias marcas de estilo de edición. Para obtener una lista de valores posibles, [**vea EM \_ GETEDITSTYLE**](em-geteditstyle.md).
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Máscara formada por uno o varios de los valores de *wParam* . Solo se establecerán o se borrarán los valores especificados en esta máscara. Esto permite establecer o borrar una sola marca sin leer los Estados actuales de la marca.
+Máscara que consta de uno o varios de los *valores wParam.* Solo se establecerán o borrarán los valores especificados en esta máscara. Esto permite establecer o borrar una marca única sin leer los estados actuales de la marca.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es el estado de las marcas de estilo de edición después de que el control Rich Edit ha intentado implementar los cambios de estilo de edición. Las marcas de estilo de edición son un conjunto de marcas que indican el estilo de edición actual.
+El valor devuelto es el estado de las marcas de estilo de edición después de que el control de edición enriquezca haya intentado implementar los cambios de estilo de edición. Las marcas de estilo de edición son un conjunto de marcas que indican el estilo de edición actual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,10 +53,10 @@ El valor devuelto es el estado de las marcas de estilo de edición después de q
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Redistribuible<br/>          | Edición enriquecida 3,0<br/>                                                              |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Redistribuible<br/>          | Rich Edit 3.0<br/>                                                              |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -64,7 +64,7 @@ El valor devuelto es el estado de las marcas de estilo de edición después de q
 
 <dl> <dt>
 
-[**\_GETEDITSTYLE em**](em-geteditstyle.md)
+[**EM \_ GETEDITSTYLE**](em-geteditstyle.md)
 </dt> </dl>
 
  

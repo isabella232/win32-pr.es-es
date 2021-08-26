@@ -96,7 +96,7 @@ Miembro del tipo [enumerado D3DFORMAT,](d3dformat.md) que describe el formato de
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

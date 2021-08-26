@@ -1,7 +1,7 @@
 ---
-description: La función SetJob pausa, reanuda, cancela o reinicia un trabajo de impresión en una impresora especificada. También puede usar la función SetJob para establecer los parámetros del trabajo de impresión, como la prioridad del trabajo de impresión y el nombre del documento.
+description: La función SetJob pausa, reanuda, cancela o reinicia un trabajo de impresión en una impresora especificada. También puede usar la función SetJob para establecer parámetros de trabajo de impresión, como la prioridad del trabajo de impresión y el nombre del documento.
 ms.assetid: 21947c69-c517-4962-8eb7-b45ed4211d9a
-title: Función SetJob (WinSpool. h)
+title: Función SetJob (WinSpool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_location:
 - WinSpool.drv
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: 34dfc8c0239a10d7e7f036beed457d57329f4c67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9259429a7696e832bbbe6d0dd4bbb6fb46e7bce2bf7157122c10ca47656af346
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060025"
 ---
-# <a name="setjob-function"></a>SetJob función)
+# <a name="setjob-function"></a>Función SetJob
 
-La función **SetJob** pausa, reanuda, cancela o reinicia un trabajo de impresión en una impresora especificada. También puede usar la función **SetJob** para establecer los parámetros del trabajo de impresión, como la prioridad del trabajo de impresión y el nombre del documento.
+La **función SetJob** pausa, reanuda, cancela o reinicia un trabajo de impresión en una impresora especificada. También puede usar la función **SetJob** para establecer parámetros de trabajo de impresión, como la prioridad del trabajo de impresión y el nombre del documento.
 
-Puede usar la función **SetJob** para proporcionar un comando a un trabajo de impresión o para establecer los parámetros de un trabajo de impresión, o para realizar ambas acciones en la misma llamada. El valor del parámetro *Command* no afecta al modo en que la función utiliza los parámetros *LEVEL* y *pJob* . Además, puede usar **SetJob** con la [**información de trabajo \_ \_ 3**](job-info-3.md) para vincular un conjunto de trabajos de impresión. Vea Comentarios para obtener más información.
+Puede usar la **función SetJob** para proporcionar un comando a un trabajo de impresión, para establecer parámetros de trabajo de impresión o para realizar ambos en la misma llamada. El valor del parámetro *Command* no afecta al modo en que la función usa los *parámetros Level* y *pJob.* Además, puede usar **SetJob** con [**JOB INFO \_ \_ 3**](job-info-3.md) para vincular un conjunto de trabajos de impresión. Vea Comentarios para obtener más información.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,112 +49,112 @@ BOOL SetJob(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador del objeto de impresora de interés. Use la función [**OpenPrinter**](openprinter.md), [**OpenPrinter2**](openprinter2.md)o [**AddPrinter (**](addprinter.md) para recuperar un identificador de impresora.
+Identificador del objeto de impresora de interés. Use la [**función OpenPrinter**](openprinter.md), [**OpenPrinter2**](openprinter2.md)o [**AddPrinter**](addprinter.md) para recuperar un identificador de impresora.
 
 </dd> <dt>
 
-*JobID* \[ de\]
+*JobId* \[ En\]
 </dt> <dd>
 
-Identificador que especifica el trabajo de impresión. Para obtener un identificador de trabajo de impresión, llame a la función [**AddJob**](addjob.md) o a la función [**StartDoc**](/windows/desktop/api/Wingdi/nf-wingdi-startdoca) .
+Identificador que especifica el trabajo de impresión. Para obtener un identificador de trabajo de impresión, llame a [**la función AddJob**](addjob.md) o [**a la función StartDoc.**](/windows/desktop/api/Wingdi/nf-wingdi-startdoca)
 
-Si el parámetro *LEVEL* está establecido en 3, el parámetro *JobID* debe coincidir con el miembro **JobID** de la estructura [**Job \_ info \_ 3**](job-info-3.md) indicada por *pJob*
+Si el *parámetro Level* se establece en 3, el parámetro *JobId* debe coincidir con el miembro **JobId** de la estructura [**JOB INFO \_ \_ 3**](job-info-3.md) a la que apunta *pJob.*
 
 </dd> <dt>
 
-*Nivel* \[ de de\]
+*Nivel* \[ En\]
 </dt> <dd>
 
-El tipo de estructura de información de trabajo al que apunta el parámetro *pJob* .
+Tipo de estructura de información de trabajo a la que apunta el *parámetro pJob.*
 
-**Todas las versiones de Windows**: puede establecer el parámetro *LEVEL* en 0, 1 o 2. Al establecer *LEVEL* en 0, *PJob* debe ser **null**. Utilice estos valores cuando no esté configurando ningún parámetro de trabajo de impresión.
+**Todas las versiones Windows**: puede establecer el *parámetro Level* en 0, 1 o 2. Cuando se establece *Level en* 0, *pJob* debe ser **NULL.** Use estos valores cuando no esté estableciendo ningún parámetro de trabajo de impresión.
 
-También puede establecer el parámetro *LEVEL* en 3.
+También puede establecer el *parámetro Level* en 3.
 
-A partir de **Windows Vista**: también puede establecer el parámetro *LEVEL* en 4.
+A partir **Windows Vista**: también puede establecer el *parámetro Level* en 4.
 
 </dd> <dt>
 
-*pJob* \[ de\]
+*pJob* \[ En\]
 </dt> <dd>
 
 Puntero a una estructura que establece los parámetros del trabajo de impresión.
 
-**Todas las versiones de Windows**: *pJob* pueden apuntar a una estructura Job [**\_ info \_ 1**](job-info-1.md) o [**Job \_ info \_ 2**](job-info-2.md) .
+**Todas las versiones Windows**: *pJob* puede apuntar a una [**estructura JOB INFO \_ \_ 1**](job-info-1.md) o [**JOB INFO \_ \_ 2.**](job-info-2.md)
 
-*pJob* también puede apuntar a una estructura [**Job \_ info \_ 3**](job-info-3.md) . Debe tener **acceso de \_ trabajo \_ administrar** el permiso de acceso para los trabajos especificados por los miembros **JobID** y **NextJobId** de la estructura **Job \_ info \_ 3** .
+*pJob* también puede apuntar a una [**estructura JOB INFO \_ \_ 3.**](job-info-3.md) Debe tener el **permiso de acceso JOB ACCESS \_ \_ ADMINISTER** para los trabajos especificados por los miembros **JobId** y **NextJobId** de la **estructura JOB INFO \_ \_ 3.**
 
-A partir de **Windows Vista**: *pJob* también puede apuntar a una estructura [**Job \_ info \_ 4**](job-info-4.md) .
+A partir **Windows Vista:** *pJob* también puede apuntar a una [**estructura JOB INFO \_ \_ 4.**](job-info-4.md)
 
-Si el parámetro *LEVEL* es 0, *PJob* debe ser **null**.
+Si el *parámetro Level* es 0, *pJob* debe ser **NULL.**
 
 </dd> <dt>
 
-*Comando* \[ de\]
+*Comando* \[ En\]
 </dt> <dd>
 
-Operación de trabajo de impresión que se va a realizar. Este parámetro puede ser uno de los valores siguientes.
+Operación de trabajo de impresión que se realizará. Este parámetro puede ser uno de los valores siguientes.
 
 
 
 | Valor                                                                                                                                                                                                            | Significado                                                                            |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <span id="JOB_CONTROL_CANCEL"></span><span id="job_control_cancel"></span><dl> <dt>**\_cancelación de control de trabajo \_**</dt> </dl>                                    | No debe usarse. Para eliminar un trabajo de impresión, use el **control de trabajo \_ \_ eliminar**.<br/>        |
-| <span id="JOB_CONTROL_PAUSE"></span><span id="job_control_pause"></span><dl> <dt>**pausar control de trabajo \_ \_**</dt> </dl>                                       | Pausar el trabajo de impresión.<br/>                                                    |
-| <span id="JOB_CONTROL_RESTART"></span><span id="job_control_restart"></span><dl> <dt>**reinicio del control de trabajo \_ \_**</dt> </dl>                                 | Reinicie el trabajo de impresión. Un trabajo solo se puede reiniciar si se imprimió.<br/>  |
-| <span id="JOB_CONTROL_RESUME"></span><span id="job_control_resume"></span><dl> <dt>**\_reanudación de control de trabajo \_**</dt> </dl>                                    | Reanudar un trabajo de impresión en pausa.<br/>                                              |
-| <span id="JOB_CONTROL_DELETE"></span><span id="job_control_delete"></span><dl> <dt>**\_eliminación de control de trabajo \_**</dt> </dl>                                    | Elimine el trabajo de impresión.<br/>                                                   |
-| <span id="JOB_CONTROL_SENT_TO_PRINTER"></span><span id="job_control_sent_to_printer"></span><dl> <dt>**\_control \_ de trabajo enviado a la \_ \_ impresora**</dt> </dl>       | Lo usan los monitores de puerto para finalizar el trabajo de impresión.<br/>                             |
-| <span id="JOB_CONTROL_LAST_PAGE_EJECTED"></span><span id="job_control_last_page_ejected"></span><dl> <dt>**\_última página de control de trabajo \_ \_ \_ expulsada**</dt> </dl> | Lo usan los monitores de idioma para finalizar el trabajo de impresión.<br/>                         |
-| <span id="JOB_CONTROL_RETAIN"></span><span id="job_control_retain"></span><dl> <dt>**\_conservar control de trabajo \_**</dt> </dl>                                    | **Windows Vista y versiones posteriores**: Mantenga el trabajo en la cola después de imprimirlo.<br/> |
-| <span id="JOB_CONTROL_RELEASE"></span><span id="job_control_release"></span><dl> <dt>**\_versión de control de trabajo \_**</dt> </dl>                                 | **Windows Vista y versiones posteriores**: libere el trabajo de impresión.<br/>                     |
+| <span id="JOB_CONTROL_CANCEL"></span><span id="job_control_cancel"></span><dl> <dt>**JOB \_ CONTROL \_ CANCEL**</dt> </dl>                                    | No debe usarse. Para eliminar un trabajo de impresión, use **JOB \_ CONTROL \_ DELETE**.<br/>        |
+| <span id="JOB_CONTROL_PAUSE"></span><span id="job_control_pause"></span><dl> <dt>**PAUSA \_ DEL CONTROL DE \_ TRABAJO**</dt> </dl>                                       | Pausar el trabajo de impresión.<br/>                                                    |
+| <span id="JOB_CONTROL_RESTART"></span><span id="job_control_restart"></span><dl> <dt>**REINICIO \_ DEL CONTROL DE \_ TRABAJO**</dt> </dl>                                 | Reinicie el trabajo de impresión. Un trabajo solo se puede reiniciar si se estaba imprimendo.<br/>  |
+| <span id="JOB_CONTROL_RESUME"></span><span id="job_control_resume"></span><dl> <dt>**REANUDACIÓN \_ DEL CONTROL \_ DE TRABAJO**</dt> </dl>                                    | Reanudar un trabajo de impresión en pausa.<br/>                                              |
+| <span id="JOB_CONTROL_DELETE"></span><span id="job_control_delete"></span><dl> <dt>**ELIMINACIÓN \_ DEL CONTROL \_ DE TRABAJO**</dt> </dl>                                    | Elimine el trabajo de impresión.<br/>                                                   |
+| <span id="JOB_CONTROL_SENT_TO_PRINTER"></span><span id="job_control_sent_to_printer"></span><dl> <dt>**CONTROL DE \_ TRABAJO ENVIADO A LA \_ \_ \_ IMPRESORA**</dt> </dl>       | Lo usan los monitores de puerto para finalizar el trabajo de impresión.<br/>                             |
+| <span id="JOB_CONTROL_LAST_PAGE_EJECTED"></span><span id="job_control_last_page_ejected"></span><dl> <dt>**ÚLTIMA \_ PÁGINA \_ EXPULSADA DEL CONTROL \_ DE \_ TRABAJO**</dt> </dl> | Lo usan los monitores de idioma para finalizar el trabajo de impresión.<br/>                         |
+| <span id="JOB_CONTROL_RETAIN"></span><span id="job_control_retain"></span><dl> <dt>**JOB \_ CONTROL \_ RETAIN**</dt> </dl>                                    | **Windows Vista y versiones posteriores:** mantenga el trabajo en la cola después de imprimirlo.<br/> |
+| <span id="JOB_CONTROL_RELEASE"></span><span id="job_control_release"></span><dl> <dt>**VERSIÓN DEL \_ CONTROL \_ DE TRABAJO**</dt> </dl>                                 | **Windows Vista y versiones posteriores:** libere el trabajo de impresión.<br/>                     |
 
 
 
  
 
-Puede usar la misma llamada a la función **SetJob** para establecer los parámetros del trabajo de impresión y proporcionar un comando a un trabajo de impresión. Por lo tanto, el *comando* no tiene que ser 0 si está estableciendo parámetros de trabajo de impresión, aunque puede ser.
+Puede usar la misma llamada a la función **SetJob** para establecer parámetros de trabajo de impresión y para proporcionar un comando a un trabajo de impresión. Por lo *tanto,* El comando no necesita ser 0 si está estableciendo parámetros de trabajo de impresión, aunque puede serlo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-Puede usar la función **SetJob** para establecer varios parámetros de trabajo de impresión proporcionando un puntero a una estructura de información de trabajo [**\_ \_ 1**](job-info-1.md), [**información de trabajo \_ \_ 2**](job-info-2.md), [**información de trabajo \_ \_ 3**](job-info-3.md)o [**información de trabajo \_ \_ 4**](job-info-4.md) que contenga los datos necesarios.
+Puede usar la función **SetJob** para establecer varios parámetros de trabajo de impresión si proporciona un puntero a una estructura [**JOB INFO \_ \_ 1**](job-info-1.md), [**JOB INFO \_ \_ 2,**](job-info-2.md) [**JOB INFO \_ \_ 3**](job-info-3.md)o [**JOB INFO \_ \_ 4**](job-info-4.md) que contiene los datos necesarios.
 
-Para quitar o eliminar todos los trabajos de impresión de una impresora determinada, llame a la función [**SetPrinter**](setprinter.md) con su parámetro de *comando* establecido en **purga de \_ control \_ de impresora**.
+Para quitar o eliminar todos los trabajos de impresión de una impresora determinada, llame a la función [**SetPrinter**](setprinter.md) con su parámetro *Command* establecido en **PRINTER CONTROL \_ \_ PURGE**.
 
-Los siguientes miembros de una estructura Job info [**\_ \_ 1**](job-info-1.md), [**Job \_ info \_ 2**](job-info-2.md)o [**Job \_ info \_ 4**](job-info-4.md) se omiten en una llamada a **SetJob**: **JobID**, **pPrinterName**, **pMachineName**, **pUserName**, **pDrivername**, **size**, **almeterd**, **Time** y **TotalPages**.
+Los siguientes miembros de una estructura [**\_ JOB INFO \_ 1,**](job-info-1.md) [**JOB INFO \_ \_ 2**](job-info-2.md)o [**JOB INFO \_ \_ 4**](job-info-4.md) se omiten en una llamada a **SetJob:** **JobId**, **pPrinterName**, **pMachineName**, **pUserName**, **pDrivername**, **Size**, **Submitted**, **Time** y **TotalPages.**
 
-Para cambiar la posición de un trabajo de impresión en la cola de impresión, debe disponer del permiso de acceso de **\_ \_ Administración** de acceso de impresora para una impresora.
+Debe tener el **permiso de acceso PRINTER ACCESS \_ \_ ADMINISTER** para una impresora con el fin de cambiar la posición de un trabajo de impresión en la cola de impresión.
 
-Si no desea establecer la posición de un trabajo de impresión en la cola de impresión, debe establecer el miembro **Position** de la estructura Job info [**\_ \_ 1**](job-info-1.md), [**Job \_ info \_ 2**](job-info-2.md)o [**Job \_ info \_ 4**](job-info-4.md) en la posición del **trabajo \_ \_ sin especificar**.
+Si no desea establecer la posición de un trabajo de impresión en la cola de impresión, debe establecer el miembro **Position** de la estructura [**JOB INFO \_ \_ 1**](job-info-1.md), [**JOB INFO \_ \_ 2**](job-info-2.md)o [**JOB INFO \_ \_ 4**](job-info-4.md) en **JOB POSITION \_ \_ UNSPECIFIED**.
 
-Use la función **SetJob** con la estructura [**Job \_ info \_ 3**](job-info-3.md) para vincular un conjunto de trabajos de impresión (también conocido como cadena). Esto resulta útil en situaciones en las que un único documento consta de varias partes que se desean representar por separado. Para imprimir los trabajos a, B, C y D en orden, llame a **SetJob** con la [**información de trabajo \_ \_ 4**](job-info-4.md) para vincular a b, b a c y c a D.
+Use la **función SetJob** con la estructura [**JOB INFO \_ \_ 3**](job-info-3.md) para vincular un conjunto de trabajos de impresión (también conocido como cadena). Esto resulta útil en situaciones en las que un único documento consta de varias partes que desea representar por separado. Para imprimir los trabajos A, B, C y D en orden, llame a **SetJob** con [**JOB INFO \_ \_ 4**](job-info-4.md) para vincular A a B, B a C y C a D.
 
-Si vincula los trabajos de impresión, tenga en cuenta lo siguiente:
+Si vincula trabajos de impresión, tenga en cuenta lo siguiente:
 
 -   Los trabajos se pueden agregar al principio o al final de una cadena.
 -   Todos los trabajos de la cadena deben tener el mismo tipo de datos.
--   La cadena debe estar completamente vinculada antes de que comience la cola de impresión; de lo contrario, el administrador de trabajos de impresión puede imprimir y eliminar los trabajos en cola antes de vincularlos todos. Hay dos maneras de evitar que la cadena se imprima prematuramente:
+-   La cadena debe estar completamente vinculada antes de comenzar la cola; de lo contrario, el colador puede imprimir y eliminar trabajos en cola antes de vincularlos todos. Hay dos maneras de evitar que la cadena se imprima prematuramente:
 
-    -   PAUSE el primer trabajo de la cadena hasta que la cadena esté completamente vinculada. El estado en pausa del primer trabajo rige el estado de todos los trabajos de la cadena.
-    -   Mantener el primer trabajo incompleto, es decir, no llamar a [**EndDoc**](/windows/desktop/api/Wingdi/nf-wingdi-enddoc) o [**ScheduleJob**](schedulejob.md) para el primer trabajo. Sin embargo, si está habilitada la opción ' imprimir mientras se pone en cola ' (valor predeterminado), este método bloquea el puerto mientras se compila la cadena, lo que también impide la impresión de trabajos no relacionados.
+    -   Pause el primer trabajo de la cadena hasta que la cadena esté completamente vinculada. El estado en pausa del primer trabajo rige el estado de todos los trabajos de la cadena.
+    -   Mantenga incompleto el primer trabajo, es decir, no llame a [**EndDoc**](/windows/desktop/api/Wingdi/nf-wingdi-enddoc) o [**ScheduleJob**](schedulejob.md) para el primer trabajo. Sin embargo, si "print while spooling" está habilitado (valor predeterminado), este método bloquea el puerto mientras se genera la cadena, lo que también impide la impresión de trabajos no relacionados.
 
--   La aplicación debe controlar el caso en el que el usuario elimina un trabajo en la cadena antes de que la cadena finalice la impresión. [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve **un \_ parámetro no válido** cuando no existe un JobID.
+-   La aplicación debe controlar el caso en el que el usuario elimina un trabajo de la cadena antes de que la cadena termine de imprimirse. [**GetLastError devuelve**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) **INVALID \_ PARAMETER** cuando jobID no existe.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -164,9 +164,9 @@ Si vincula los trabajos de impresión, tenga en cuenta lo siguiente:
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>WinSpool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WinSpool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>WinSpool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>WinSpool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WinSpool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>WinSpool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **SetJobW** (Unicode) y **SetJobA** (ANSI)<br/>                                                   |
 
 
@@ -193,16 +193,16 @@ Si vincula los trabajos de impresión, tenga en cuenta lo siguiente:
 [**SetPrinter**](setprinter.md)
 </dt> <dt>
 
-[**Información de trabajo \_ \_ 1**](job-info-1.md)
+[**INFORMACIÓN \_ DEL \_ TRABAJO 1**](job-info-1.md)
 </dt> <dt>
 
-[**Información de trabajo \_ \_ 2**](job-info-2.md)
+[**INFORMACIÓN \_ DEL \_ TRABAJO 2**](job-info-2.md)
 </dt> <dt>
 
-[**Información de trabajo \_ \_ 3**](job-info-3.md)
+[**INFORMACIÓN \_ DEL \_ TRABAJO 3**](job-info-3.md)
 </dt> <dt>
 
-[**Información del trabajo \_ \_ 4**](job-info-4.md)
+[**INFORMACIÓN \_ DEL \_ TRABAJO 4**](job-info-4.md)
 </dt> </dl>
 
  

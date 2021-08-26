@@ -1,53 +1,53 @@
 ---
-title: Tiendas en línea privadas
-description: Tiendas en línea privadas
+title: Tiendas privadas en línea
+description: Tiendas privadas en línea
 ms.assetid: c1e241f5-6d29-4b53-8be0-264597e03de7
 keywords:
-- Windows Media Player tiendas en línea, privado
-- tiendas en línea, privado
-- tipo 1 tiendas en línea, privado
-- tipo 2 tiendas en línea, privado
-- tiendas en línea privadas
-- registro, almacenes privados en línea
+- Reproductor de Windows Media en línea, privado
+- tiendas en línea, privadas
+- tiendas en línea de tipo 1, privadas
+- tiendas en línea de tipo 2, privadas
+- tiendas privadas en línea
+- registro, tiendas en línea privadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e11490a8a12659dfc1e2c5445167e8d71abaf00
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0667c19ffde3bb3c78b539253650e4f6f0b84cfbfd940f4d06237f987b99efd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002935"
 ---
-# <a name="private-online-stores"></a>Tiendas en línea privadas
+# <a name="private-online-stores"></a>Tiendas privadas en línea
 
-Windows Media Player 10 o posterior admite tiendas en línea privadas; es decir, los almacenes que solo son visibles para determinados usuarios. Para que una tienda en línea privada sea visible para el usuario actual, debe haber una entrada que represente la tienda en línea privada en la siguiente clave del registro.
+Reproductor de Windows Media 10 o posterior admite tiendas en línea privadas; es decir, almacenes que solo son visibles para determinados usuarios. Para que una tienda privada en línea sea visible para el usuario actual, debe haber una entrada que represente la tienda en línea privada bajo la siguiente clave del Registro.
 
-HKEY \_ Current \_ User \\ software \\ Microsoft \\ MediaPlayer \\ PrivateServices
+HKEY \_ CURRENT \_ USER \\ Software \\ Microsoft \\ MediaPlayer \\ PrivateServices
 
-La entrada del registro requerida debe tener el formato siguiente.
+La entrada del Registro necesaria debe tener el formato siguiente.
 
 
 
 | Nombre                                                         | Tipo           | Value                                                                     |
 |--------------------------------------------------------------|----------------|---------------------------------------------------------------------------|
-| Cualquier nombre elegido por la persona que crea la entrada del registro | **\_valor DWORD reg** | Un número, proporcionado por Microsoft, que identifica la tienda en línea privada. |
+| Cualquier nombre elegido por la persona que crea la entrada del Registro | **REG \_ DWORD** | Número proporcionado por Microsoft que identifica la tienda privada en línea |
 
 
 
- 
+ 
 
-El control ActiveX de Windows Media Player 10 solo admite tiendas en línea privadas si el control se está ejecutando en modo remoto. El control ActiveX de Windows Media Player 11 admite almacenes en línea privados, independientemente de si el control se está ejecutando en modo remoto.
+El control Reproductor de Windows Media 10 ActiveX solo admite almacenes en línea privados si el control se ejecuta en modo remoto. El control Reproductor de Windows Media 11 ActiveX admite almacenes en línea privados independientemente de si el control se ejecuta en modo remoto.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Información común para las tiendas en línea de tipo 1 y 2**](information-common-to-type-1-and-type-2-online-stores.md)
+[**Información común a las tiendas en línea de tipo 1 y tipo 2**](information-common-to-type-1-and-type-2-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Función RtmCloseEnumerationHandle (RTM. h)
+title: Función RtmCloseEnumerationHandle (Rtm.h)
 description: RtmCloseEnumerationHandle finaliza una enumeración especificada y libera los recursos asociados.
 ms.assetid: 8daea42f-4304-4749-9894-d37f6ba733da
 keywords:
-- RtmCloseEnumerationHandle función RAS
+- Función RAS RtmCloseEnumerationHandle
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5adb47d40cb1300305c7ff6f9bb6f1c3c716f0f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0313cc594b0629509ffcee65ea333caa9dbc373de323dc656a6028bc26e14317
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081055"
 ---
-# <a name="rtmcloseenumerationhandle-function"></a>RtmCloseEnumerationHandle función)
+# <a name="rtmcloseenumerationhandle-function"></a>Función RtmCloseEnumerationHandle
 
-\[Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API del administrador de tabla de enrutamiento versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
 **RtmCloseEnumerationHandle** finaliza una enumeración especificada y libera los recursos asociados.
 
@@ -42,25 +42,25 @@ DWORD RtmCloseEnumerationHandle(
 
 <dl> <dt>
 
-*EnumerationHandle* \[ de\]
+*EnumerationHandle* \[ En\]
 </dt> <dd>
 
-Identificador de la enumeración que se va a finalizar. Obtenga este identificador llamando a [**RtmCreateEnumerationHandle**](rtmcreateenumerationhandle.md).
+Controlar la enumeración para finalizar. Obtenga este identificador mediante una [**llamada a RtmCreateEnumerationHandle**](rtmcreateenumerationhandle.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto NO es un \_ error.
+Si la función se realiza correctamente, el valor devuelto es NO \_ ERROR.
 
 Si se produce un error en la función, el valor devuelto es uno de los siguientes códigos de error.
 
 
 
-| Value                                                                                                       | Descripción                                                             |
+| Valor                                                                                                       | Descripción                                                             |
 |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| <dl> <dt>**ERROR \_ de \_ identificador no válido**</dt> </dl>       | Parámetro no válido.<br/>                                  |
-| <dl> <dt>**ERROR: \_ no hay \_ recursos del sistema \_**</dt> </dl> | No hay suficientes recursos para realizar la operación.<br/> |
+| <dl> <dt>**IDENTIFICADOR \_ DE ERROR NO \_ VÁLIDO**</dt> </dl>       | Parámetro no válido.<br/>                                  |
+| <dl> <dt>**ERROR \_ SIN RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/> |
 
 
 
@@ -70,13 +70,13 @@ Si se produce un error en la función, el valor devuelto es uno de los siguiente
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>RTM. lib</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
@@ -85,10 +85,10 @@ Si se produce un error en la función, el valor devuelto es uno de los siguiente
 
 <dl> <dt>
 
-[Referencia de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Funciones de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-functions.md)
+[Funciones de Routing Table Manager versión 1](routing-table-manager-version-1-functions.md)
 </dt> <dt>
 
 [**RtmCreateEnumerationHandle**](rtmcreateenumerationhandle.md)

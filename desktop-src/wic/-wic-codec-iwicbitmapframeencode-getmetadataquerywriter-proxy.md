@@ -1,5 +1,5 @@
 ---
-description: 'IWICBitmapFrameEncode_GetMetadataQueryWriter_Proxy función : función de proxy para el método GetMetadataQueryWriter.'
+description: 'IWICBitmapFrameEncode_GetMetadataQueryWriter_Proxy función: función proxy para el método GetMetadataQueryWriter.'
 ms.assetid: b2c61dee-b72b-408c-8cb9-de2587587f1f
 title: IWICBitmapFrameEncode_GetMetadataQueryWriter_Proxy función
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 89eb7342277d335c78ee2bc6807f2fc4d170bb9b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6911c2adc46bf59a93ba5d09b34a7d9b1234d4b78782b9f491af4d0f6317c2d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056675"
 ---
 # <a name="iwicbitmapframeencode_getmetadataquerywriter_proxy-function"></a>IWICBitmapFrameEncode \_ GetMetadataQueryWriter \_ Proxy function
 
@@ -71,10 +71,10 @@ Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
 | Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 

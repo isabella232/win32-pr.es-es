@@ -1,30 +1,30 @@
 ---
-description: ICE60 valida la tabla de archivos de una base de datos Windows Installer.
+description: ICE60 valida la tabla File de una base de Windows Installer.
 ms.assetid: 95d9b8b4-0b65-451a-8629-f0b276d6e35d
 title: ICE60
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e26c6f296fd514f582a699a5f839a7e145169e3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce8d2cbf9136ea6195a138c586d4408dc0d2e5ff411b52fd73fec8a569c5d186
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044035"
 ---
 # <a name="ice60"></a>ICE60
 
-ICE60 comprueba que los archivos de la [tabla de archivos](file-table.md) cumplen la siguiente condición:
+ICE60 comprueba que los archivos de la [tabla File](file-table.md) cumplen la condición siguiente:
 
 -   Si el archivo no es una fuente y tiene una versión, debe tener un idioma.
--   ICE60 comprueba que no hay ningún archivo con versión en la [tabla MsiFileHash](msifilehash-table.md).
+-   ICE60 comprueba que no se muestran archivos con control de versiones en la [tabla MsiFileHash](msifilehash-table.md).
 
-Un error al corregir una advertencia de ICE60 suele conducir a que un archivo se reinstale innecesariamente cuando se realiza una reparación del producto. Esto sucede porque el archivo que se va a instalar en la reparación y el archivo existente en el disco tienen la misma versión (son el mismo archivo) pero distintos idiomas. La tabla de archivos muestra el idioma como null, pero el propio archivo tiene un valor de idioma en el recurso. En función de las [reglas de control de versiones de archivo](file-versioning-rules.md), el instalador favorece el archivo que se va a instalar, por lo que se Recopia innecesariamente.
+Si no se corrige una advertencia notificada por ICE60, normalmente se vuelve a instalar un archivo cuando se realiza una reparación del producto. Esto sucede porque el archivo que se va a instalar en la reparación y el archivo existente en el disco tienen la misma versión (son el mismo archivo), pero idiomas diferentes. En la tabla de archivos se muestra el idioma como NULL, pero el propio archivo tiene un valor de idioma en el recurso. En función de [las reglas de control](file-versioning-rules.md)de versiones de archivo, el instalador prefiere que el archivo se instale, por lo que se vuelve a copiar sin necesidad.
 
 ## <a name="result"></a>Resultado
 
-ICE60 envía una advertencia o un error si un archivo de la [tabla de archivos](file-table.md) que no es una fuente y tiene una versión, no tiene un idioma.
+ICE60 envía una advertencia o un [](file-table.md) error si un archivo de la tabla File que no es una fuente y tiene una versión, no tiene un idioma.
 
-ICE60 envía el siguiente error si un archivo que aparece en la tabla MsiFileHash tiene versiones.
+ICE60 publica el siguiente error si se ha versionado un archivo enumerado en la tabla MsiFileHash.
 
 ``` syntax
 ERROR: "The file [1] is Versioned. It cannot be hashed"
@@ -32,37 +32,37 @@ ERROR: "The file [1] is Versioned. It cannot be hashed"
 
 ## <a name="example"></a>Ejemplo
 
-ICE60 notifica el siguiente error y advertencia para el ejemplo que se muestra. (El archivo B es una fuente; los demás archivos no lo son).
+ICE60 notifica el siguiente error y advertencia para el ejemplo mostrado. (El archivo B es una fuente; los demás archivos no).
 
 ``` syntax
 WARNING: The file FileE is not a Font, and its version is not a companion file reference. It should have a language specified in the Language column.
 ```
 
-Filea tiene una versión y un idioma; por lo tanto, no se genera ninguna advertencia o error.
+FileA tiene una versión y un lenguaje; por lo tanto, no se genera ninguna advertencia o error.
 
-FileB tiene una versión pero no un idioma. Sin embargo, no se genera ninguna advertencia ni error, porque es una fuente.
+FileB tiene una versión, pero no un lenguaje. Sin embargo, no se genera ninguna advertencia o error porque es una fuente.
 
 FileC es una referencia complementaria, por lo que no tiene que tener un idioma. No se genera ninguna advertencia o error.
 
-Archivó no tiene ninguna versión, por lo que no necesita tener un idioma. No se genera ninguna advertencia o error.
+FileD no tiene ninguna versión, por lo que no necesita tener un idioma. No se genera ninguna advertencia o error.
 
-El archivo tiene una versión pero no un idioma. Por lo tanto, se genera una advertencia.
+FileE tiene una versión, pero no un idioma. Por lo tanto, se genera una advertencia.
 
-Para corregir esta advertencia, agregue un idioma al archivo.
+Para corregir esta advertencia, agregue un idioma a FileE.
 
-Los archivos deben tener valores de idioma almacenados en el recurso de versión siempre que sea posible. Si un archivo es independiente del idioma, use el [LANGID](column-data-types.md) 0.
+Los archivos deben tener valores de idioma almacenados en el recurso de versión siempre que sea posible. Si un archivo es neutral en el idioma, use [LANGID](column-data-types.md) 0.
 
-[Tabla de archivos](file-table.md) (FileB es una fuente; los demás archivos no lo son).
+[Tabla de](file-table.md) archivos (FileB es una fuente; los demás archivos no).
 
 
 
-| Archivo  | Versión | Idioma |
+| Archivo  | Versión | Lenguaje |
 |-------|---------|----------|
-| Archivoa | 1,0     | 3082     |
-| FileB | 1,0     |          |
-| FileC | Archivoa   |          |
-| Registrado |         |          |
-| Archivo | 1,0     |          |
+| ArchivoA | 1.0     | 3082     |
+| FileB | 1.0     |          |
+| FileC | ArchivoA   |          |
+| Presentado |         |          |
+| FileE | 1.0     |          |
 
 
 

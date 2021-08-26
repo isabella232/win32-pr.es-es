@@ -37,13 +37,13 @@ Calcula el número de elementos que pueden caber verticalmente en el área visib
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el número de elementos totalmente visibles si se realiza correctamente. Si la vista actual es icono o vista de icono pequeño, el valor devuelto es el número total de elementos del control list-view.
+Devuelve el número de elementos totalmente visibles si se realiza correctamente. Si la vista actual es un icono o una vista de icono pequeña, el valor devuelto es el número total de elementos del control list-view.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

@@ -1,7 +1,7 @@
 ---
 description: Busca la siguiente etiqueta secundaria dentro del elemento primario especificado y devuelve el TAGID del siguiente elemento secundario.
 ms.assetid: c7311f20-15ca-4b2d-a08d-8bb992a3a0cd
-title: SdbGetNextChild función)
+title: Función SdbGetNextChild
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 4f2943eaf0baec84a9473b679743b9eafad3b7fb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 210e0aab8cb5e43bfc649e8abb72cf565c4d4f892f651708286f7a3f87d11ce2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045323"
 ---
-# <a name="sdbgetnextchild-function"></a>SdbGetNextChild función)
+# <a name="sdbgetnextchild-function"></a>Función SdbGetNextChild
 
 Busca la siguiente etiqueta secundaria dentro del elemento primario especificado y devuelve el **TAGID** del siguiente elemento secundario.
 
@@ -41,34 +41,34 @@ TAGID WINAPI SdbGetNextChild(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tiParent* \[ de\]
+*tiParent* \[ En\]
 </dt> <dd>
 
-El **TAGID** del inicio de la búsqueda. Este parámetro puede ser **la \_ raíz de TAGID** o la **lista de \_ tipos \_ de etiqueta**.
+TAGID **del** inicio de búsqueda. Este parámetro puede ser **TAGID \_ ROOT o** **TAG TYPE \_ \_ LIST.**
 
 </dd> <dt>
 
-*tiPrev* \[ de\]
+*tiPrev* \[ En\]
 </dt> <dd>
 
-**TAGID** del elemento secundario anterior.
+TAGID **del** elemento secundario anterior.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**TagID** del elemento secundario o **TagID \_ null** si no se encuentra ningún elemento secundario.
+TagID **del** elemento secundario o **TAGID \_ NULL** si no se encuentra ningún elemento secundario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de llamar a esta función, llame a la función [**SdbGetFirstChild**](sdbgetfirstchild.md) .
+Antes de llamar a esta función, llame a [**la función SdbGetFirstChild.**](sdbgetfirstchild.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Antes de llamar a esta función, llame a la función [**SdbGetFirstChild**](sdbg
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

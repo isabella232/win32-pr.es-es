@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TBM_GETRANGEMIN (commctrl. h)
-description: Recupera la posición mínima del control deslizante en una barra de desplazamiento.
+title: TBM_GETRANGEMIN mensaje (Commctrl.h)
+description: Recupera la posición mínima del control deslizante en una barra de seguimiento.
 ms.assetid: 64334aed-0403-4785-829e-693292734d10
 keywords:
-- TBM_GETRANGEMIN controles de mensajes de Windows
+- TBM_GETRANGEMIN controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fddef597f7b129f8334f75136f56404a8ef117fa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92b79cfcf589dcd246699e0eb79c30368a3cad0e72eb74a76528967d3a0683d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046545"
 ---
-# <a name="tbm_getrangemin-message"></a>TBM \_ GETRANGEMIN
+# <a name="tbm_getrangemin-message"></a>Mensaje \_ GETRANGEMIN de TBM
 
-Recupera la posición mínima del control deslizante en una barra de desplazamiento.
+Recupera la posición mínima del control deslizante en una barra de seguimiento.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,7 +37,7 @@ Recupera la posición mínima del control deslizante en una barra de desplazamie
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 32 bits que especifica la posición mínima en el intervalo de la barra de desplazamiento mínima en el máximo.
+Devuelve un valor de 32 bits que especifica la posición mínima en el intervalo de posiciones del control deslizante mínimo a máximo de la barra de seguimiento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Devuelve un valor de 32 bits que especifica la posición mínima en el intervalo
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -61,7 +61,7 @@ Devuelve un valor de 32 bits que especifica la posición mínima en el intervalo
 [**TBM \_ GETRANGEMAX**](tbm-getrangemax.md)
 </dt> <dt>
 
-[**TBM \_ SetRange**](tbm-setrange.md)
+[**TBM \_ SETRANGE**](tbm-setrange.md)
 </dt> <dt>
 
 [**TBM \_ SETRANGEMAX**](tbm-setrangemax.md)

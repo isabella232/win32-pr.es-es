@@ -1,11 +1,11 @@
 ---
 title: Método ID3DX11EffectInterfaceVariable GetClassInstance (D3dx11effect.h)
-description: Obtiene una instancia de clase.
+description: Obtenga una instancia de clase.
 ms.assetid: a965f4e7-1761-45f1-a72e-7ad0ed1ad671
 keywords:
 - Método GetClassInstance Direct3D 11
-- Método GetClassInstance Direct3D 11 , interfaz ID3DX11EffectInterfaceVariable
-- Interfaz ID3DX11EffectInterfaceVariable Direct3D 11, método GetClassInstance
+- Método GetClassInstance Direct3D 11, interfaz ID3DX11EffectInterfaceVariable
+- Interfaz ID3DX11EffectInterfaceVariable Direct3D 11 , método GetClassInstance
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "119988465"
 ---
 # <a name="id3dx11effectinterfacevariablegetclassinstance-method"></a>Método ID3DX11EffectInterfaceVariable::GetClassInstance
 
-Obtiene una instancia de clase.
+Obtenga una instancia de clase.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graph
 ## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -72,11 +72,11 @@ Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graph
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CB_FINDSTRING (Winuser. h)
-description: Busca un elemento que empiece con los caracteres de una cadena especificada en el cuadro de lista de un cuadro combinado.
+title: CB_FINDSTRING mensaje (Winuser.h)
+description: Busca en el cuadro de lista de un cuadro combinado un elemento que empieza por los caracteres de una cadena especificada.
 ms.assetid: 872a72d5-4d8e-41c7-ac6b-eeb571403623
 keywords:
-- CB_FINDSTRING controles de mensajes de Windows
+- CB_FINDSTRING controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 295300790a27a956bce953e4e293c07c22ec0d81
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1af584e04a108c39a76a54c05c311d26e107c132d0c132e7b8fcc99a7cd7321b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089362"
 ---
-# <a name="cb_findstring-message"></a>\_Mensaje FINDSTRING CB
+# <a name="cb_findstring-message"></a>Mensaje \_ FINDSTRING de CB
 
-Busca un elemento que empiece con los caracteres de una cadena especificada en el cuadro de lista de un cuadro combinado.
+Busca en el cuadro de lista de un cuadro combinado un elemento que empieza por los caracteres de una cadena especificada.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,34 +32,34 @@ Busca un elemento que empiece con los caracteres de una cadena especificada en e
 *wParam* 
 </dt> <dd>
 
-Índice de base cero del elemento que precede al primer elemento que se va a buscar. Cuando la búsqueda alcanza la parte inferior del cuadro de lista, continúa desde la parte superior del cuadro de lista hasta el elemento especificado por el parámetro *wParam* . Si *wParam* es-1, se busca en el cuadro de lista completo desde el principio.
+Índice de base cero del elemento que precede al primer elemento en el que se va a buscar. Cuando la búsqueda llega a la parte inferior del cuadro de lista, continúa desde la parte superior del cuadro de lista hasta el elemento especificado por el *parámetro wParam.* Si *wParam es* -1, se busca todo el cuadro de lista desde el principio.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a la cadena terminada en null que contiene los caracteres que se van a buscar. La búsqueda no distingue entre mayúsculas y minúsculas, por lo que esta cadena puede contener cualquier combinación de mayúsculas y minúsculas.
+Puntero a la cadena terminada en NULL que contiene los caracteres para los que se va a buscar. La búsqueda no distingue mayúsculas de minúsculas, por lo que esta cadena puede contener cualquier combinación de letras mayúsculas y minúsculas.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es el índice de base cero del elemento coincidente. Si la búsqueda no se realiza correctamente, se trata de un \_ error CB.
+El valor devuelto es el índice de base cero del elemento correspondiente. Si la búsqueda no se realiza correctamente, es CB \_ ERR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si crea el cuadro combinado con un estilo dibujado por el propietario, pero sin el estilo [**CBS \_ HASSTRINGS**](combo-box-styles.md) , lo que hace el mensaje **\_ FINDSTRING de CB** depende de si la aplicación usa el estilo de [**\_ ordenación CBS**](combo-box-styles.md) . Si usa el estilo **de \_ ordenación CBS** , los mensajes de [**WM \_ COMPAREITEM**](wm-compareitem.md) se envían al propietario del cuadro combinado para determinar qué elemento coincide con la cadena especificada. Si no usa el estilo de **\_ ordenación CBS** , el mensaje **CB \_ FINDSTRING** busca un elemento de lista que coincida con el valor del parámetro *lParam* .
+Si crea el cuadro combinado con un estilo dibujado por el propietario pero sin el estilo [**\_ HASSTRINGS de CBS,**](combo-box-styles.md) lo que haga el mensaje **\_ FINDSTRING** de CB dependerá de si la aplicación usa el estilo [**CBS \_ SORT.**](combo-box-styles.md) Si usa el estilo SORT de **CBS, \_** los mensajes [**\_ COMPAREITEM de WM**](wm-compareitem.md) se envían al propietario del cuadro combinado para determinar qué elemento coincide con la cadena especificada. Si no usa el estilo SORT de **CBS, \_** el mensaje **\_ FINDSTRING** de CB busca un elemento de lista que coincida con el valor del *parámetro lParam.*
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Si crea el cuadro combinado con un estilo dibujado por el propietario, pero sin 
 **Referencia**
 </dt> <dt>
 
-[**CB \_ FindExactString con**](cb-findstringexact.md)
+[**CB \_ FINDSTRINGEXACT**](cb-findstringexact.md)
 </dt> <dt>
 
 [**CB \_ SELECTSTRING**](cb-selectstring.md)

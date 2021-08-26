@@ -1,33 +1,33 @@
 ---
-description: Las claves del registro se pueden escribir en el registro del sistema una vez instalados todos los componentes seleccionados y sus archivos relacionados.
+description: Las claves del Registro se pueden escribir en el registro del sistema una vez instalados todos los componentes seleccionados y sus archivos relacionados.
 ms.assetid: b3b39471-85b1-4361-94fd-19d0f0ee2b78
-title: Modificar el registro
+title: Modificar el Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff6ff79ce340b0487c179cb37e44dff9f42e4be8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06f1bd6145811097fcaf74f0622ac35412891d6aa0007c4411099ade6afddd36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082865"
 ---
-# <a name="modifying-the-registry"></a>Modificar el registro
+# <a name="modifying-the-registry"></a>Modificar el Registro
 
-Las claves del registro se pueden escribir en el registro del sistema una vez instalados todos los componentes seleccionados y sus archivos relacionados. Las acciones estándar relacionadas con la modificación del registro se deben secuenciar después de las acciones estándar de instalación de archivos, ya que las claves del registro no se pueden escribir a menos que el componente y el archivo correspondientes se hayan instalado correctamente.
+Las claves del Registro se pueden escribir en el registro del sistema una vez instalados todos los componentes seleccionados y sus archivos relacionados. Las acciones estándar relacionadas con la modificación del Registro deben secuenciarse después de las acciones estándar de instalación de archivos porque las claves del Registro no se pueden escribir a menos que el componente y el archivo correspondientes se hayan instalado correctamente.
 
-La [acción RegisterClassInfo](registerclassinfo-action.md) tiene acceso a la [tabla de clases](class-table.md) para registrar la información de clase com de los componentes instalados.
+La [acción RegisterClassInfo tiene](registerclassinfo-action.md) acceso a la tabla [Class](class-table.md) para registrar la información de clase COM de los componentes instalados.
 
-La [acción RegisterExtensionInfo](registerextensioninfo-action.md) consulta la tabla de [extensión](extension-table.md) y la [tabla de verbos](verb-table.md) y registra las extensiones y la información de verbo de comando correspondientes en el sistema operativo.
+La [acción RegisterExtensionInfo](registerextensioninfo-action.md) consulta la tabla [Extension](extension-table.md) y la tabla [Verb](verb-table.md) y registra las extensiones y la información de verbo de comando correspondientes con el sistema operativo.
 
-La [acción RegisterProgIdInfo](registerprogidinfo-action.md) administra el registro de información de ID. de ensamblado OLE con el sistema operativo.
+La [acción RegisterProgIdInfo](registerprogidinfo-action.md) administra el registro de información de OLE ProgId con el sistema operativo.
 
-La [acción RegisterMIMEInfo](registermimeinfo-action.md) procesa la [tabla MIME](mime-table.md) para registrar la asociación entre un tipo de contexto MIME, la extensión de nombre de archivo y el CLSID.
+La [acción RegisterMIMEInfo](registermimeinfo-action.md) procesa la tabla [MIME](mime-table.md) para registrar la asociación entre un tipo de contexto MIME, la extensión de nombre de archivo y el CLSID.
 
-La [acción WriteRegistryValues](writeregistryvalues-action.md) procesa la [tabla del registro](registry-table.md) y escribe las claves de todos los componentes que se han instalado localmente o que se ejecutan desde el origen. La tabla del registro permite escribir claves en los subárboles del registro de **\_ las clases HKEY \_ root**, **HKEY \_ Current \_ User**, **HKEY \_ local \_ Machine** y **HKEY \_ users** .
+La [acción WriteRegistryValues](writeregistryvalues-action.md) procesa la tabla [del](registry-table.md) Registro y escribe las claves de todos los componentes que se han instalado localmente o que se ejecutan desde el origen. La tabla del Registro permite escribir claves en los subárboles del Registro **HKEY \_ CLASSES \_ ROOT**, **HKEY \_ CURRENT \_ USER**, **HKEY LOCAL \_ \_ MACHINE** y **HKEY \_ USERS.**
 
-La [acción RemoveRegistryValues](removeregistryvalues-action.md) quita las claves que se han marcado para su eliminación en la columna Nombre de la [tabla del registro](registry-table.md) o la [tabla RemoveRegistry](removeregistry-table.md).
+La [acción RemoveRegistryValues](removeregistryvalues-action.md) quita las claves que se han marcado para eliminarse en la columna Name de la tabla [Registry](registry-table.md) o [removeRegistry Table](removeregistry-table.md).
 
-La [acción RegisterTypeLibraries](registertypelibraries-action.md) procesa la [tabla typelib](typelib-table.md) y registra las bibliotecas de tipos instaladas con el sistema.
+La [acción RegisterTypeLibraries](registertypelibraries-action.md) procesa la [tabla TypeLib](typelib-table.md) y registra las bibliotecas de tipos instaladas en el sistema.
 
  
 
