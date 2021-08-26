@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TCM_GETITEMCOUNT (commctrl. h)
-description: Recupera el número de pestañas del control de pestaña. Puede enviar este mensaje explícitamente o mediante la macro TabCtrl \_ GetItemCount.
+title: TCM_GETITEMCOUNT mensaje (Commctrl.h)
+description: Recupera el número de pestañas del control de ficha. Puede enviar este mensaje explícitamente o mediante la macro \_ TabCtrl GetItemCount.
 ms.assetid: a8ec7d66-fe44-45ca-8f6c-4e75752ebe95
 keywords:
-- TCM_GETITEMCOUNT controles de mensajes de Windows
+- TCM_GETITEMCOUNT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d638a9be81581605b978695c8504f538967c77f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b9bbb954c75a19f15ecee9f946e338a186b6e9903a405aa1c550fb0ccc31392
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104885"
 ---
-# <a name="tcm_getitemcount-message"></a>\_Mensaje GETITEMCOUNT de TCM
+# <a name="tcm_getitemcount-message"></a>Mensaje \_ GETITEMCOUNT de TCM
 
-Recupera el número de pestañas del control de pestaña. Puede enviar este mensaje explícitamente o mediante la macro [**TabCtrl \_ GetItemCount**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getitemcount) .
+Recupera el número de pestañas del control de ficha. Puede enviar este mensaje explícitamente o mediante la macro [**\_ TabCtrl GetItemCount.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getitemcount)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,9 +45,9 @@ Devuelve el número de elementos si se realiza correctamente o cero en caso cont
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

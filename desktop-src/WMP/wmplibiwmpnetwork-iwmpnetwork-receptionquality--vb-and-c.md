@@ -1,11 +1,11 @@
 ---
-title: Propiedad receptionQuality de IWMPNetwork
+title: Propiedad IWMPNetwork receptionQuality
 description: La propiedad receptionQuality obtiene el porcentaje de paquetes no perdidos en los últimos 30 segundos.
 ms.assetid: 103e6b8f-e029-4f53-93ac-b516896a7594
 keywords:
-- propiedades de receptionQuality Media Player de Windows
-- propiedad receptionQuality de Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, propiedad receptionQuality
+- propiedad receptionQuality Reproductor de Windows Media
+- propiedad receptionQuality Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , propiedad receptionQuality
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3703ffa29183937874c40053bd3c7ae3c85d75d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e5ea62391df07ed0e5e2c27752f668fda95a19d17dc6322fb7375ef5d3ed440f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098725"
 ---
-# <a name="iwmpnetworkreceptionquality-property"></a>IWMPNetwork:: receptionQuality (propiedad)
+# <a name="iwmpnetworkreceptionquality-property"></a>IWMPNetwork::receptionQuality, propiedad
 
-La propiedad **receptionQuality** obtiene el porcentaje de paquetes no perdidos en los últimos 30 segundos.
+La **propiedad receptionQuality** obtiene el porcentaje de paquetes no perdidos en los últimos 30 segundos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,19 +46,19 @@ Public ReadOnly Property receptionQuality As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es la calidad de la recepción.
+**System.Int32 que** es la calidad de recepción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El número de paquetes recibidos, perdidos y recuperados durante el streaming se supervisa una vez por segundo. La propiedad **receptionQuality** obtiene el porcentaje de paquetes que no se pierden durante los últimos 30 segundos.
+El número de paquetes recibidos, perdidos y recuperados durante el streaming se supervisa una vez cada segundo. La **propiedad receptionQuality** obtiene el porcentaje de paquetes no perdidos durante los últimos 30 segundos.
 
-Cada vez que se detiene y se reinicia la reproducción, esta propiedad se restablece en cero. El valor no se restablece si la reproducción está en pausa.
+Cada vez que se detiene y reinicia la reproducción, esta propiedad se restablece en cero. El valor no se restablece si la reproducción está en pausa.
 
-Esta propiedad obtiene información válida solo durante el tiempo de ejecución cuando se establece la dirección URL para la reproducción mediante la propiedad **AxWindowsMediaPlayer. URL** .
+Esta propiedad obtiene información válida solo durante el tiempo de ejecución cuando se establece la dirección URL para la reproducción mediante la **propiedad AxWindowsMediaPlayer.URL.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **receptionQuality** para mostrar el porcentaje de paquetes recibidos en una etiqueta, en respuesta al evento **PlayStateChange** . En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa receptionQuality** para mostrar el porcentaje de paquetes recibidos en una etiqueta, en respuesta al **evento PlayStateChange.** En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -134,7 +134,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -144,7 +144,7 @@ End Sub
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. URL (VB y C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
+[**AxWindowsMediaPlayer.URL (VB y C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)

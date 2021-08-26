@@ -1,44 +1,44 @@
 ---
 title: Errores comunes del compilador
-description: En esta sección se muestran los errores de compilador típicos que se producen al migrar una base de código existente. Estos ejemplos son del código HAL de nivel de sistema, aunque los conceptos se aplican directamente a código de nivel de usuario.
+description: En esta sección se muestran los errores típicos del compilador que se producen al migrar una base de código existente. Estos ejemplos proceden del código DE ACUERDO de nivel de sistema, aunque los conceptos son directamente aplicables al código de nivel de usuario.
 ms.assetid: bbb6a57f-281a-4a6e-a4b6-15846d0cf21f
 keywords:
-- errores del compilador 64 programación de Windows de bits
-- migración de 64 bits programación de Windows
+- errores del compilador de 64 bits Windows programación
+- programación de migración de 64 Windows bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a84a5f5f58f2cab7555ce3401ed6fae0af240f4
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 55d12e7c5566b5cb2b934eefb71b1b51858f278d3e408d3080cb1810f185dcfb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104359530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071645"
 ---
 # <a name="common-compiler-errors"></a>Errores comunes del compilador
 
-En esta sección se muestran los errores de compilador típicos que se producen al migrar una base de código existente. Estos ejemplos son del código HAL de nivel de sistema, aunque los conceptos se aplican directamente a código de nivel de usuario.
+En esta sección se muestran los errores típicos del compilador que se producen al migrar una base de código existente. Estos ejemplos proceden del código DE ACUERDO de nivel de sistema, aunque los conceptos son directamente aplicables al código de nivel de usuario.
 
-## <a name="warning-c4311-example-1"></a>ADVERTENCIA C4311 ejemplo 1
+## <a name="warning-c4311-example-1"></a>Advertencia C4311 Ejemplo 1
 
-' tipo de conversión ': truncamiento de puntero de ' void \* \_ \_ ptr64 ' a ' unsigned Long
+'type cast': truncamiento del puntero de 'void \* \_ \_ ptr64' a 'unsigned long'
 
 <dl> <dt>
 
-<span id="Code"></span><span id="code"></span><span id="CODE"></span>Codifica
+<span id="Code"></span><span id="code"></span><span id="CODE"></span>Código
 </dt> <dd>
 
 `pPciAddr->u.AsULONG = (ULONG) CIA_PCI_CONFIG_BASE_QVA;`
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Denominación
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descripción
 </dt> <dd>
 
-**PtrToUlong** es una función insertada o una macro, dependiendo de su uso. Trunca un puntero a un **ULong**. Aunque los punteros de 32 bits no se ven afectados, se trunca la mitad superior de un puntero de 64 bits.
+**PtrToUlong es** una función insertda o una macro, en función de su uso. Trunca un puntero a un **ULONG.** Aunque los punteros de 32 bits no se ven afectados, se trunca la mitad superior de un puntero de 64 bits.
 
-CIA \_ PCI \_ config \_ base \_ QVA se declara como **PVOID**. La conversión de **ULong** funciona en el mundo de 32 bits, pero produce un error en el mundo de 64 bits. La solución consiste en obtener un puntero de 64 bits a un **ULong**, ya que el cambio de la definición de la Unión que pPciAddr->u. AsULONG se define en cambia demasiado código.
+PCI \_ \_ CONFIG BASE \_ \_ QVA se declara como **PVOID**. La **conversión ULONG** funciona en el mundo de 32 bits, pero produce un error en el mundo de 64 bits. La solución es obtener un puntero de 64 bits a **un ULONG**, porque cambiar la definición de la unión que pPciAddr->u.AsULONG se define en cambia demasiado código.
 
-Se permite el uso de la macro **PtrToUlong** para convertir el **PVOID** de 64 bits en el **ULong** necesario porque tenemos conocimiento sobre el valor específico de CIA \_ PCI \_ config \_ base \_ QVA. En este caso, este puntero nunca tendrá datos en los 32 bits superiores.
+Se permite el uso de la macro **PtrToUlong** para convertir el **PVOID** de 64 bits en el **ULONG** necesario porque tenemos conocimientos sobre el valor específico de QVA base PCI CONFIG de LA \_ \_ \_ \_ PCI. En este caso, este puntero nunca tendrá datos en los 32 bits superiores.
 
 </dd> <dt>
 
@@ -49,25 +49,25 @@ Se permite el uso de la macro **PtrToUlong** para convertir el **PVOID** de 64 b
 
 </dd> </dl>
 
-## <a name="warning-c4311-example-2"></a>ADVERTENCIA C4311 ejemplo 2
+## <a name="warning-c4311-example-2"></a>Advertencia C4311 Ejemplo 2
 
-' tipo de conversión ': truncamiento de puntero de ' struct \_ error \_ Frame \* \_ \_ ptr64 ' a ' unsigned Long
+'type cast': truncamiento de puntero de 'struct \_ ERROR \_ FRAME \* \_ \_ ptr64' a 'unsigned long
 
 <dl> <dt>
 
-<span id="Code"></span><span id="code"></span><span id="CODE"></span>Codifica
+<span id="Code"></span><span id="code"></span><span id="CODE"></span>Código
 </dt> <dd>
 
 `KeBugCheckEx( DATA_BUS_ERROR,0,0,0,(ULONG)PUncorrectableError );`
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Denominación
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descripción
 </dt> <dd>
 
-El problema es que el último parámetro de esta función es un puntero a una estructura de datos. Dado que PUncorrectableError es un puntero, cambia el tamaño con el modelo de programación. El prototipo de **KeBugCheckEx** se cambió para que el último parámetro sea un **ULong \_ ptr**. Como resultado, es necesario convertir el puntero de función a **ULong \_ ptr**.
+El problema es que el último parámetro de esta función es un puntero a una estructura de datos. Dado que PUncorrectableError es un puntero, cambia de tamaño con el modelo de programación. Se ha cambiado **el prototipo de KeCheckCheckEx** para que el último parámetro sea **ULONG \_ PTR.** Como resultado, es necesario convertir el puntero de función a **ULONG \_ PTR**.
 
-Podría preguntar por qué no se usó **PVOID** como el último parámetro. Dependiendo del contexto de la llamada, el último parámetro puede ser un valor distinto de un puntero o quizás un código de error.
+Puede preguntar por qué **PVOID** no se usó como último parámetro. Dependiendo del contexto de la llamada, el último parámetro puede ser distinto de un puntero o quizás un código de error.
 
 </dd> <dt>
 
@@ -78,27 +78,27 @@ Podría preguntar por qué no se usó **PVOID** como el último parámetro. Depe
 
 </dd> </dl>
 
-## <a name="warning-c4244-example-1"></a>ADVERTENCIA C4244 ejemplo 1
+## <a name="warning-c4244-example-1"></a>Advertencia C4244 Ejemplo 1
 
-' = ': conversión de ' struct \_ Configuration \_ Component \* \_ \_ ptr64 ' a ' struct \_ Configuration \_ Component \* ', posible pérdida de datos
+'=': conversión de 'struct \_ CONFIGURATION \_ COMPONENT \* \_ \_ ptr64' a 'struct CONFIGURATION \_ \_ \* COMPONENT', posible pérdida de datos
 
 <dl> <dt>
 
-<span id="Code"></span><span id="code"></span><span id="CODE"></span>Codifica
+<span id="Code"></span><span id="code"></span><span id="CODE"></span>Código
 </dt> <dd>
 
 `Component = &CurrentEntry->ComponentEntry;`
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Denominación
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descripción
 </dt> <dd>
 
-La función declara el componente variable como un componente PCONFIGURATION \_ . Más adelante, la variable se utiliza en la asignación siguiente que parece correcta:
+La función declara la variable Component como PCONFIGURATION \_ COMPONENT. Más adelante, la variable se usa en la siguiente asignación que parece correcta:
 
 `Component = &CurrentEntry->ComponentEntry;`
 
-Sin embargo, el componente Type PCONFIGURATION \_ se define como:
+Sin embargo, el tipo PCONFIGURATION \_ COMPONENT se define como:
 
 ``` syntax
 typedef struct __CONFIGURATION_COMPONENT {
@@ -107,16 +107,16 @@ typedef struct __CONFIGURATION_COMPONENT {
 } CONFIGURATION_COMPONENT, * POINTER_32 PCONFIGURATION_COMPONENT;
 ```
 
-La definición de tipo para el \_ componente PCONFIGURATION proporciona un puntero de 32 bits en los modelos de 32 bits y de 64 bits porque está declarado como el **puntero \_ 32**. El diseñador original de esta estructura sabía que se iba a utilizar en un contexto de 32 bits en el BIOS y lo definió expresamente para ese uso. Este código funciona correctamente en Windows de 32 bits porque los punteros son de 32 bits. En Windows de 64 bits, no funciona porque el código está en el contexto de 64 bits.
+La definición de tipo para PCONFIGURATION COMPONENT proporciona un puntero de 32 bits en los modelos de 32 bits y 64 bits porque se \_ declara **POINTER \_ 32**. El diseñador original de esta estructura sabía que se usaría en un contexto de 32 bits en el BIOS y lo definió expresamente para ese uso. Este código funciona bien en archivos de 32 Windows porque los punteros son de 32 bits. En las Windows de 64 bits, no funciona porque el código está en contexto de 64 bits.
 
 </dd> <dt>
 
 <span id="Solution"></span><span id="solution"></span><span id="SOLUTION"></span>Solución
 </dt> <dd>
 
-Para solucionar este problema, use \_ el componente de configuración \* en lugar del componente PCONFIGURATION de 32 bits \_ . Es importante comprender claramente el propósito del código. Si este código está diseñado para tocar el espacio del sistema o BIOS de 32 bits, esta corrección no funcionará.
+Para solucionar este problema, use CONFIGURATION \_ COMPONENT en lugar de \* PCONFIGURATION COMPONENT de 32 \_ bits. Es importante comprender claramente el propósito del código. Si este código está pensado para tocar el bios de 32 bits o el espacio del sistema, esta corrección no funcionará.
 
-El **puntero \_ 32** se define en Ntdef. h y en Winnt. h.
+**POINTER \_ 32** se define en Ntdef.h y Winnt.h.
 
 ``` syntax
 #ifdef (__AXP64__)
@@ -128,13 +128,13 @@ El **puntero \_ 32** se define en Ntdef. h y en Winnt. h.
 
 </dd> </dl>
 
-## <a name="warning-c4242-example-2"></a>ADVERTENCIA C4242 ejemplo 2
+## <a name="warning-c4242-example-2"></a>Advertencia C4242 Ejemplo 2
 
-' = ': conversión de ' \_ \_ Int64 ' a ' unsigned Long ', posible pérdida de datos
+'=': conversión de \_ \_ 'int64' a 'unsigned long', posible pérdida de datos
 
 <dl> <dt>
 
-<span id="Code"></span><span id="code"></span><span id="CODE"></span>Codifica
+<span id="Code"></span><span id="code"></span><span id="CODE"></span>Código
 </dt> <dd>
 
 ``` syntax
@@ -153,33 +153,33 @@ ByteSelect1 = (NvDestPtr - (PUCHAR)HalpCMOSRamBase) & CONFIG_RAM_BYTE_MASK;
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Denominación
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descripción
 </dt> <dd>
 
-Esta advertencia se genera porque el cálculo está usando valores de 64 bits, en este caso los punteros, y coloca el resultado en un **ULong** de 32 bits.
+Esta advertencia se genera porque el cálculo usa valores de 64 bits, en este caso punteros, y coloca el resultado en un ULONG de 32 **bits.**
 
 </dd> <dt>
 
 <span id="Solution"></span><span id="solution"></span><span id="SOLUTION"></span>Solución
 </dt> <dd>
 
-Tipo convierta el resultado del cálculo en **ULong** como se muestra aquí:
+Escriba cast the result of the calculation to a ULONG (Convertir el resultado del cálculo en **ULONG),** como se muestra aquí:
 
 `ByteSelect1 = (ULONG)(NvDestPtr - (PUCHAR)HalpCMOSRamBase) & CONFIG_RAM_BYTE_MASK;`
 
-Conversión el resultado permite que el compilador sepa que está seguro sobre el resultado. Dicho esto, asegúrese de que comprende el cálculo y, en realidad, asegúrese de que quepa en un **ULong** de 32 bits.
+La difusión de tipos del resultado permite al compilador saber que está seguro sobre el resultado. Dicho esto, asegúrese de que comprende el cálculo y realmente está seguro de que encajará en un ULONG de 32 **bits.**
 
-Si el resultado no cabe en un **ULong** de 32 bits, cambie el tipo base de la variable que contendrá el resultado.
+Si el resultado puede no caber en un **ULONG** de 32 bits, cambie el tipo base de la variable que contendrán el resultado.
 
 </dd> </dl>
 
-## <a name="warning-c4311---example-1"></a>ADVERTENCIA C4311: ejemplo 1
+## <a name="warning-c4311---example-1"></a>Advertencia C4311: ejemplo 1
 
-' tipo de conversión ': truncamiento de puntero de ' void \* \_ \_ ptr64 ' a ' unsigned Long '
+'type cast': truncamiento del puntero de 'void \* \_ \_ ptr64' a 'unsigned long'
 
 <dl> <dt>
 
-<span id="Code"></span><span id="code"></span><span id="CODE"></span>Codifica
+<span id="Code"></span><span id="code"></span><span id="CODE"></span>Código
 </dt> <dd>
 
 ``` syntax
@@ -216,10 +216,10 @@ return ComPortAddress;
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Denominación
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descripción
 </dt> <dd>
 
-Esta función completa trata las direcciones como enteros, lo que requiere la necesidad de escribir esos enteros de una manera portátil. Todas las variables locales, los valores intermedios de los cálculos y los valores devueltos deben ser tipos portátiles.
+Esta función completa trata las direcciones como enteros, lo que requiere la necesidad de escribir esos enteros de una manera portátil. Todas las variables locales, los valores intermedios en los cálculos y los valores devueltos deben ser tipos portátiles.
 
 </dd> <dt>
 
@@ -259,17 +259,17 @@ return ComPortAddress;
 }
 ```
 
-**PULONG \_ PTR** es un puntero que es en sí mismo 32 bits para Windows de 32 bits y 64 bits para Windows de 64 bits. Apunta a un entero sin signo, **ULong \_ ptr**, que es 32 bits para Windows de 32 bits y los bits de 64 para Windows de 64 bits.
+**PULONG \_ PTR** es un puntero de 32 bits para 32 bits Windows y 64 bits para 64 bits Windows. Apunta a un entero sin signo, **ULONG \_ PTR**, que es de 32 bits para el Windows de 32 bits y de 64 bits para el Windows de 64 bits.
 
 </dd> </dl>
 
-## <a name="warning-c4311---example-2"></a>ADVERTENCIA C4311: ejemplo 2
+## <a name="warning-c4311---example-2"></a>Advertencia C4311: ejemplo 2
 
-' tipo de conversión ': truncamiento de puntero de ' void \* \_ \_ ptr64 ' a ' unsigned Long '
+'type cast': truncamiento del puntero de 'void \* \_ \_ ptr64' a 'unsigned long'
 
 <dl> <dt>
 
-<span id="Code"></span><span id="code"></span><span id="CODE"></span>Codifica
+<span id="Code"></span><span id="code"></span><span id="CODE"></span>Código
 </dt> <dd>
 
 ``` syntax
@@ -288,31 +288,31 @@ HalpCMOSRamBase = (PVOID)((ULONG)PciIoSpaceBase + CMOS_ISA_PORT_ADDRESS);
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Denominación
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descripción
 </dt> <dd>
 
-Aunque todos los valores de QVA (cuasi virtual Address) son en realidad valores de 32 bits en esta fase y se ajustan en un **ULong**, es más coherente tratar todas las direcciones como valores de **ULong \_ ptr** siempre que sea posible.
+Aunque todos los valores de QVA (Dirección virtual cuasi) son realmente valores de 32 bits en esta fase y se ajustarán a **un ULONG,** es más coherente tratar todas las direcciones como valores **\_ ULONG PTR** siempre que sea posible.
 
-El puntero PciIoSpaceBase contiene el QVA que se crea en la macro HAL \_ Make \_ QVA. Esta macro devuelve un valor de 64 bits con los bits superiores de 32 establecidos en cero, por lo que la expresión matemática funcionará. Podríamos dejar simplemente el código para truncar el puntero en un **ULong**, pero esta práctica no se recomienda para mejorar la portabilidad y el mantenimiento del código. Por ejemplo, el contenido de un QVA podría cambiar en el futuro para usar algunos de los bits superiores en este nivel, interrumpiendo el código.
+El puntero PciIoSpaceBase contiene la QVA que se crea en la macro HAN \_ MAKE \_ QVA. Esta macro devuelve un valor de 64 bits con los 32 bits superiores establecidos en cero para que las matemáticas funcionen. Simplemente podríamos dejar el código para truncar el puntero en un **ULONG,** pero se desaconseja esta práctica para mejorar la portabilidad y el mantenimiento del código. Por ejemplo, el contenido de una QVA podría cambiar en el futuro para usar algunos de los bits superiores en este nivel, lo que podría dividir el código.
 
 </dd> <dt>
 
 <span id="Solution"></span><span id="solution"></span><span id="SOLUTION"></span>Solución
 </dt> <dd>
 
-Ser seguro y usar **ULong \_ ptr** para todas las matemáticas de dirección y puntero.
+Sea seguro y use **ULONG \_ PTR para** todas las matemáticas de dirección y puntero.
 
 `HalpCMOSRamBase = (PVOID)((ULONG_PTR)PciIoSpaceBase + CMOS_ISA_PORT_ADDRESS);`
 
 </dd> </dl>
 
-## <a name="warning-c4311-example-3"></a>ADVERTENCIA C4311 ejemplo 3
+## <a name="warning-c4311-example-3"></a>Advertencia C4311 Ejemplo 3
 
-' tipo de conversión ': truncamiento de puntero de ' void \* \_ \_ ptr64 ' a ' unsigned Long '
+'type cast': truncamiento del puntero de 'void \* \_ \_ ptr64' a 'unsigned long'
 
 <dl> <dt>
 
-<span id="Code"></span><span id="code"></span><span id="CODE"></span>Codifica
+<span id="Code"></span><span id="code"></span><span id="CODE"></span>Código
 </dt> <dd>
 
 ``` syntax
@@ -333,10 +333,10 @@ return (Qva);
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Denominación
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descripción
 </dt> <dd>
 
-El compilador advierte sobre la dirección de los operadores (&) y de desplazamiento a la izquierda (<<) si se aplican a los tipos de puntero. En el código anterior, Qva es un valor de **PVOID** . Necesitamos convertirlo en un tipo entero para realizar las operaciones matemáticas. Dado que el código debe ser portable, use **ULong \_ ptr** en lugar de **ULong**.
+El compilador advierte sobre la dirección de (&) y los operadores de desplazamiento izquierdo (<<) si se aplican a tipos de puntero. En el código anterior, Qva es un **valor PVOID.** Es necesario convertirla en un tipo entero para realizar las operaciones matemáticas. Dado que el código debe ser portátil, use **ULONG \_ PTR en** lugar de **ULONG**.
 
 </dd> <dt>
 
@@ -350,13 +350,13 @@ if ( ((ULONG_PTR) Qva & QVA_SELECTORS) == QVA_ENABLE ) {
 
 </dd> </dl>
 
-## <a name="warning-c4311-example-4"></a>ADVERTENCIA C4311 ejemplo 4
+## <a name="warning-c4311-example-4"></a>Advertencia C4311 Ejemplo 4
 
-' tipo de conversión ': truncamiento de puntero de ' void \* \_ \_ ptr64 ' a ' unsigned Long '
+'type cast': truncamiento del puntero de 'void \* \_ \_ ptr64' a 'unsigned long'
 
 <dl> <dt>
 
-<span id="Code"></span><span id="code"></span><span id="CODE"></span>Codifica
+<span id="Code"></span><span id="code"></span><span id="CODE"></span>Código
 </dt> <dd>
 
 ``` syntax
@@ -366,10 +366,10 @@ TranslatedAddress->LowPart = (ULONG)HalCreateQva(
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Denominación
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descripción
 </dt> <dd>
 
-TranslatedAddress es una Unión que tiene un aspecto similar al siguiente:
+TranslatedAddress es una unión similar a la siguiente:
 
 ``` syntax
 typedef union
@@ -386,27 +386,27 @@ typedef union
 <span id="Solution"></span><span id="solution"></span><span id="SOLUTION"></span>Solución
 </dt> <dd>
 
-Conociendo lo que el resto del código podría colocar en Highpart, podemos seleccionar cualquiera de las soluciones que se muestran aquí.
+Sabiendo lo que el resto del código podría colocar en Highpart, podemos seleccionar cualquiera de las soluciones que se muestran aquí.
 
 `TranslatedAddress->LowPart = PtrToUlong(HalCreateQva(*TranslatedAddress,va) );`
 
-La macro **PtrToUlong** trunca el puntero devuelto por **HalCreateQva** a 32 bits. Sabemos que el QVA devuelto por **HalCreateQva** tiene los bits superiores 32 establecidos en cero y la siguiente línea de código establece TranslatedAddress->Highpart en cero.
+La **macro PtrToUlong** trunca el puntero devuelto por **VerbCreateQva** a 32 bits. Sabemos que la QVA devuelta **porPericreateQva** tiene los 32 bits superiores establecidos en cero y la siguiente línea de código establece TranslatedAddress->Highpart en cero.
 
-Con precaución, podríamos utilizar lo siguiente:
+Con precaución, podríamos usar lo siguiente:
 
 `TranslatedAddress->QuadPart = (LONGLONG)HalCreateQva(*TranslatedAddress,va);`
 
-Esto funciona en este ejemplo: la macro **HalCreateQva** devuelve 64 bits, con los bits superiores 32 establecidos en cero. Tenga cuidado de no dejar los 32 bits superiores sin definir en un entorno de 32 bits, que esta segunda solución puede hacer realmente.
+Esto funciona en este ejemplo: la macro **HacreateQva** devuelve 64 bits, con los 32 bits superiores establecidos en cero. Tenga cuidado de no dejar los 32 bits superiores sin definir en un entorno de 32 bits, lo que esta segunda solución puede hacer realmente.
 
 </dd> </dl>
 
-## <a name="warning-c4311-example-5"></a>ADVERTENCIA C4311 ejemplo 5
+## <a name="warning-c4311-example-5"></a>Advertencia C4311 Ejemplo 5
 
-' tipo de conversión ': truncamiento de puntero de ' void \* \_ \_ ptr64 ' a ' unsigned Long '
+'type cast': truncamiento del puntero de 'void \* \_ \_ ptr64' a 'unsigned long'
 
 <dl> <dt>
 
-<span id="Code"></span><span id="code"></span><span id="CODE"></span>Codifica
+<span id="Code"></span><span id="code"></span><span id="CODE"></span>Código
 </dt> <dd>
 
 ``` syntax
@@ -426,10 +426,10 @@ Wbase.Wbase = (ULONG)(WindowRegisters->WindowBase) >> 20;
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Denominación
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descripción
 </dt> <dd>
 
-WindowRegisters->WindowBase es un puntero y ahora es 64 bits. En el código, se indica al desplazamiento a la derecha este valor 20 bits. El compilador no nos permitirá usar el operador de desplazamiento a la derecha (>>) en un puntero; por lo tanto, es necesario convertirlo en algún tipo de entero.
+WindowRegisters->WindowBase es un puntero y ahora tiene 64 bits. El código indica para desplazar a la derecha este valor de 20 bits. El compilador no nos permitirá usar el operador de desplazamiento a la derecha (>>) en un puntero; por lo tanto, es necesario convertirla en algún tipo de entero.
 
 </dd> <dt>
 
@@ -438,7 +438,7 @@ WindowRegisters->WindowBase es un puntero y ahora es 64 bits. En el código, se 
 
 `Wbase.Wbase= PtrToUlong ( (PVOID) ((ULONG_PTR) (WindowRegisters->WindowBase) >> 20));`
 
-La conversión a **ULong \_ ptr** es exactamente lo que necesitamos. El siguiente problema es WBase. WBase es **ULong** y es 32 bits. En este caso, sabemos que el puntero de 64 bits WindowRegisters->WindowBase es válido en los 32 bits inferiores incluso después de desplazarse. Esto hace que el uso de la macro **PtrToUlong** sea aceptable, ya que truncará el puntero de 64 bits en un **ULong** de 32 bits. La conversión de **PVOID** es necesaria porque **PtrToUlong** espera un argumento de puntero. Al examinar el código del ensamblador resultante, toda esta conversión de código de C se convierte en una carga cuádruple, desplazarse a la derecha y almacenar larga.
+La conversión a **ULONG \_ PTR** es justo lo que necesitamos. El siguiente problema es Wbase. Wbase es un **ULONG** y tiene 32 bits. En este caso, sabemos que el puntero de 64 bits WindowRegisters->WindowBase es válido en los 32 bits inferiores incluso después de desplazarse. Esto hace que el uso de la macro **PtrToUlong** sea aceptable, ya que truncará el puntero de 64 bits en un ULONG de 32 **bits.** La **conversión PVOID** es necesaria porque **PtrToUlong** espera un argumento de puntero. Cuando se observa el código ensamblador resultante, toda esta conversión de código de C se convierte en un cuadrándigo de carga, desplazamiento a la derecha y almacenamiento largo.
 
 </dd> </dl>
 

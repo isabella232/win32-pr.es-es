@@ -1,24 +1,24 @@
 ---
-title: Atributo ID (TextBox) (VML)
-description: Atributo ID (TextBox) (VML)
+title: Atributo ID (TextBox)(VML)
+description: Atributo ID (TextBox)(VML)
 ms.assetid: b9eb75cc-4d0a-4e83-a897-e35995ae7c53
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b39ac566e7b619c31cb12f4657bd86020dc12cb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 453a3a7e88c847cf63a1362d43cb6acaf21a548b141b71ffd2724c779f8eebac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099295"
 ---
-# <a name="id-attribute-textboxvml"></a>Atributo ID (TextBox) (VML)
+# <a name="id-attribute-textboxvml"></a>Atributo ID (TextBox)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Nombre que proporciona un identificador único para un cuadro de texto. Lectura/escritura **Cadena**.
 
@@ -28,23 +28,23 @@ Nombre que proporciona un identificador único para un cuadro de texto. Lectura/
 
 **Sintaxis de etiquetas**
 
-<v: ID. de *elemento* = " *expresión* " >
+<v: *element* id=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . ID = "*expresión*"
+*element* .id="*expression*"
 
-*expresión* = de identificador de *elemento*
+*expresión* = *elemento*.id
 
 **Comentarios:**
 
-Use el **identificador** para hacer referencia a un cuadro de texto específico. Una vez que haya creado un cuadro de texto y dado un identificador, puede utilizar el nombre de identificador cuando desee manipular el cuadro de texto.
+Use **id.** para hacer referencia a un cuadro de texto específico. Una vez que haya creado un cuadro de texto y le haya dado un identificador, puede usar el nombre del identificador cuando desee manipular el cuadro de texto.
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-La forma tiene un ID. de cuadro de texto denominado "mytextbox".
+La forma tiene un identificador de cuadro de texto denominado "mytextbox".
 
 
 ```HTML
@@ -61,6 +61,6 @@ La forma tiene un ID. de cuadro de texto denominado "mytextbox".
 
 
 
- 
+ 
 
- 
+ 

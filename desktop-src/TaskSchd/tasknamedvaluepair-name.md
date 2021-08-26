@@ -1,11 +1,11 @@
 ---
-title: Propiedad TaskNamedValuePair.Name
-description: En el caso de scripting, obtiene o establece el nombre que está asociado a un valor en un par nombre-valor.
+title: TaskNamedValuePair.Name propiedad
+description: Para el scripting, obtiene o establece el nombre asociado a un valor en un par nombre-valor.
 ms.assetid: 01da8980-297d-468e-ba55-fa8478bb9de9
 keywords:
-- Propiedad nombre Programador de tareas
-- Propiedad Name Programador de tareas, objeto TaskNamedValuePair
-- Programador de tareas de objeto TaskNamedValuePair, propiedad Name
+- Nombre de propiedad Programador de tareas
+- Propiedad Name Programador de tareas objeto , TaskNamedValuePair
+- Objeto TaskNamedValuePair Programador de tareas , propiedad Name
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 442aa8bafc7859e9bfbb3f66776c54ebb4f1dc5c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: efc964b4463554411a8118a6d506a4988d8da098c290783449cf28b83bdbd090
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125905"
 ---
-# <a name="tasknamedvaluepairname-property"></a>Propiedad TaskNamedValuePair.Name
+# <a name="tasknamedvaluepairname-property"></a>TaskNamedValuePair.Name propiedad
 
-En el caso de scripting, obtiene o establece el nombre que está asociado a un valor en un par nombre-valor.
+Para el scripting, obtiene o establece el nombre asociado a un valor en un par nombre-valor.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,7 +38,7 @@ TaskNamedValuePair.Name As String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El nombre que está asociado a un valor en un par nombre-valor.
+Nombre asociado a un valor en un par nombre-valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,9 +46,9 @@ El nombre que está asociado a un valor en un par nombre-valor.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

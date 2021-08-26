@@ -28,7 +28,7 @@ En la tabla siguiente se enumeran los delimitadores que se usan para los comenta
 | Delimitador   | Marcas                                                                                         |
 |-------------|-----------------------------------------------------------------------------------------------|
 | //          | Inicio de un comentario que finaliza al final de la línea.                                    |
-| /\* Y \*/ | Principio y fin de un comentario que puede abarcar varias líneas o abarcar solo una parte de una línea. |
+| /\* Y \*/ | Principio y final de un comentario que puede abarcar varias líneas o abarcar solo una parte de una línea. |
 
 
 

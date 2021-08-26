@@ -24,7 +24,7 @@ HKEY_LOCAL_MACHINE
 
 En el procedimiento siguiente se describe cómo almacenar información relacionada con los recursos en el registro del sistema.
 
-**Para almacenar información relacionada con recursos en el registro del sistema**
+**Para almacenar información relacionada con los recursos en el registro del sistema**
 
 1.  Cree una cadena que contenga los campos siguientes.
 
@@ -63,7 +63,7 @@ En el procedimiento siguiente se describe cómo almacenar información relaciona
     <td>Entero que especifica el número de descriptor.</td>
     </tr>
     <tr class="even">
-    <td>Desplazamiento o tipo de unión</td>
+    <td>Tipo de desplazamiento o unión</td>
     <td>Uno de los siguientes valores:<br/> <dl> Port.Start<br />
     Port.PhysicalAddress<br />
     Port.Length<br />
@@ -104,7 +104,7 @@ local|hkey_local_machine\hardware\resourcemap\
   pc compatible eisa/isa HAL|.raw("eisa",0,0,"interrupt.affinity")
 ```
 
-En el ejemplo de código siguiente se muestra una sintaxis MOF válida para recuperar un descriptor de recursos.
+En el ejemplo de código siguiente se muestra la sintaxis válida de MOF para recuperar un descriptor de recursos.
 
 ``` syntax
 [DYNPROPS] 

@@ -1,7 +1,7 @@
 ---
-description: Establece el peso de fusión de la prioridad usado por el controlador de animación.
+description: Establece el peso de combinación de prioridad utilizado por el controlador de animación.
 ms.assetid: b053024b-f219-48b3-906e-161d9cf47556
-title: 'ID3DXAnimationController:: SetPriorityBlend (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::SetPriorityBlend (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a4c820858041c730f971ce2821698f86e6ff2c31
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e52c08d0731bc89135df4547fcfc88e94b56b826d2ccab338576a22651376d94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069115"
 ---
-# <a name="id3dxanimationcontrollersetpriorityblend-method"></a>ID3DXAnimationController:: SetPriorityBlend (método)
+# <a name="id3dxanimationcontrollersetpriorityblend-method"></a>Método ID3DXAnimationController::SetPriorityBlend
 
-Establece el peso de fusión de la prioridad usado por el controlador de animación.
+Establece el peso de combinación de prioridad utilizado por el controlador de animación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT SetPriorityBlend(
 
 <dl> <dt>
 
-*BlendWeight* \[ de\]
+*BlendWeight* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Peso de fusión de prioridad usado por el controlador de animación.
+Peso de combinación de prioridad usado por el controlador de animación.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Peso de fusión de prioridad usado por el controlador de animación.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El peso de la mezcla se usa para fusionar las pistas de prioridad alta y baja.
+El peso de la mezcla se usa para combinar pistas de prioridad alta y baja.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ El peso de la mezcla se usa para fusionar las pistas de prioridad alta y baja.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

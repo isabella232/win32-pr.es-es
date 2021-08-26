@@ -4,16 +4,16 @@ ms.assetid: ba2e841e-e24e-476a-851e-a29b3af4f04d
 title: Identificadores de calendario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab9b931aea4a186af0849dfe8f6642c53744d364
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5f9f21aeff1143c4f981e3bfae20214f1b86e86307f7f32b103a19ef99b9803
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083035"
 ---
 # <a name="calendar-identifiers"></a>Identificadores de calendario
 
-En este tema se definen los identificadores de calendario (tipo de datos CALID) que se usan para especificar calendarios diferentes. Las aplicaciones pueden utilizar estos identificadores al usar las siguientes funciones NLS y funciones de devolución de llamada, que tienen parámetros que toman el tipo de datos CALID:
+En este tema se definen los identificadores de calendario (tipo de datos CALID) que se usan para especificar calendarios diferentes. Las aplicaciones pueden usar estos identificadores al usar las siguientes funciones NLS y funciones de devolución de llamada, que tienen parámetros que toman el tipo de datos CALID:
 
 -   [**ConvertSystemTimeToCalDateTime**](convertsystemtimetocaldatetime.md)
 -   [**EnumCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoa)
@@ -37,100 +37,100 @@ Significado
 
 1
 
-\_calendario gregoriano
+CAL \_ GREGORIAN
 
 Gregoriano (localizado)
 
 2
 
-CAL \_ gregoriano \_
+CAL \_ GREGORIANO \_ EE. UU.
 
 Gregoriano (cadenas en inglés siempre)
 
 3
 
-CAL \_ Japón
+CAL \_ JAPAN
 
-Era del Emperador japonés
+Era del japonés
 
 4
 
-CAL \_ Taiwán
+CAL \_ TAIWAN
 
-Calendario taiwanés
+Calendario de Taiwán
 
 5
 
-CAL \_ Corea
+CAL \_ KOREA
 
-Coreano Tangun era
+Tangun coreano era
 
 6
 
-HIJRI de CAL \_
+CAL \_ HIJRI
 
-Hijri (Árabe lunar)
+Hijri (lunar árabe)
 
 7
 
-CAL \_ tailandés
+CAL \_ TAILANDÉS
 
 Tailandés
 
 8
 
-hebreo de CAL \_
+CAL \_ HEBREO
 
-Hebreo (lunar)
+Hebreo (Lunar)
 
 9
 
-\_calendario gregoriano \_ \_ francés de cal
+CAL \_ GREGORIAN \_ ME \_ FRENCH
 
 Gregorian Middle East French
 
 10
 
-CAL \_ gregoriano \_ Árabe
+ÁRABE \_ CAL \_ GREGORIANO
 
 Gregorian Arabic
 
 11
 
-CAL \_ gregoriano \_ XLIT \_ Inglés
+CAL \_ GREGORIAN \_ XLIT \_ ENGLISH
 
-Gregoriano (transliteración) Inglés
+Inglés transliterado gregoriano
 
 12
 
-CAL \_ gregoriano \_ XLIT \_ Francés
+CAL \_ GREGORIAN \_ XLIT \_ FRENCH
 
-Gregoriano (transliteración) francés
+Francés transliterado gregoriano
 
 23
 
 CAL \_ UMALQURA
 
-**Windows Vista y versiones posteriores:** Calendario de Um al-Qura (Árabe lunar)
+**Windows Vista y versiones posteriores:** Calendario Um Al Arabica (lunar árabe)
 
 
 
  
 
 > [!Note]  
-> El intervalo de numeración entre los identificadores CAL \_ gregoriano \_ XLIT \_ francés y cal \_ UMALQURA es intencionado. El designador de CAL \_ UMALQURA es 23, no 13.
+> La brecha en la numeración entre los identificadores CAL \_ GREGORIAN \_ XLIT \_ FRENCH y CAL \_ UMALQURA es intencionada. El designador para CAL \_ UMALQURA es 23, no 13.
 
  
 
-Además, [**EnumCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoa) y [**EnumCalendarInfoEx**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexa) permiten el uso del valor enumerar \_ todos los \_ calendarios para solicitar una enumeración de todos los calendarios aplicables.
+Además, [**EnumCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoa) y [**EnumCalendarInfoEx**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexa) permiten el uso del valor ENUM ALL CALENDARS para solicitar una enumeración de todos los \_ \_ calendarios aplicables.
 
 Value
 
 Significado
 
-0xFFFFFFFF
+0xffffffff
 
-ENUMERAr \_ todos los \_ calendarios
+ENUMERAR \_ TODOS \_ LOS CALENDARIOS
 
 Todos los calendarios aplicables para la configuración regional especificada
 

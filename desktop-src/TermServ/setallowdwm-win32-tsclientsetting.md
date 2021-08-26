@@ -1,12 +1,12 @@
 ---
-title: Método SetAllowDwm de la clase Win32_TSClientSetting
+title: Método SetAllowDwm de la Win32_TSClientSetting clase
 description: Establece la propiedad AllowDwm.
 ms.assetid: c70d3dc9-c109-4d77-be50-20a0352282d6
 ms.tgt_platform: multiple
 keywords:
 - Método SetAllowDwm Servicios de Escritorio remoto
-- Método SetAllowDwm Servicios de Escritorio remoto, clase Win32_TSClientSetting
-- Win32_TSClientSetting de clase Servicios de Escritorio remoto, método SetAllowDwm
+- Método SetAllowDwm Servicios de Escritorio remoto , Win32_TSClientSetting clase
+- Win32_TSClientSetting clase Servicios de Escritorio remoto , método SetAllowDwm
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39441ba3244f206b057ba47c3cb6f765b5e80604
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 30e48373859e59464986aab85bf00d16a76a066bad12e3e38bf7b07275257016
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009035"
 ---
-# <a name="setallowdwm-method-of-the-win32_tsclientsetting-class"></a>Método SetAllowDwm de la \_ clase TSClientSetting de Win32
+# <a name="setallowdwm-method-of-the-win32_tsclientsetting-class"></a>Método SetAllowDwm de la clase \_ TSClientSetting de Win32
 
-Establece la propiedad **AllowDwm** .
+Establece la **propiedad AllowDwm.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ uint32 SetAllowDwm(
 
 <dl> <dt>
 
-*AllowDwm* \[ de\]
+*AllowDwm* \[ En\]
 </dt> <dd>
 
-Nuevo valor de la propiedad **AllowDwm** .
+Nuevo valor **de la propiedad AllowDwm.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI. Consulte [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si el servidor invalida la configuración de conexión del usuario.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si el servidor invalida la configuración de conexión del usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
 | Fin de compatibilidad de cliente<br/>    | No se admite ninguno<br/>                                                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 

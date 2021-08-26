@@ -21,9 +21,9 @@ En el procedimiento siguiente se describe cómo [instalar](about-side-by-side-as
 
     Los archivos deben estar firmados para instalarlos como ensamblados en paralelo. Para obtener más información, vea [Crear archivos y catálogos firmados.](creating-signed-files-and-catalogs.md)
 
-2.  Debe instalar ensamblados en paralelo compartidos como componentes de un paquete Windows Installer. Puede ser el mismo paquete de instalación que se usa para instalar o actualizar la aplicación. Si el ensamblado compartido se envía como parte de varias aplicaciones, debe proporcionar un módulo de combinación que se pueda incorporar a los paquetes de instalación de estas aplicaciones y crear un catálogo para los archivos del ensamblado.
+2.  Debe instalar ensamblados en paralelo compartidos como componentes de un Windows Installer. Puede ser el mismo paquete de instalación que se usa para instalar o actualizar la aplicación. Si el ensamblado compartido se incluye como parte de varias aplicaciones, debe proporcionar un módulo de combinación que se pueda incorporar a los paquetes de instalación de estas aplicaciones y crear un catálogo para los archivos del ensamblado.
 
-    Windows Se requiere el instalador versión 2.0 o posterior para instalar ensamblados. Para obtener más información, vea el SDK [Windows Installer](../msi/windows-installer-portal.md) y las secciones de Instalación [de ensamblados Win32.](../msi/installation-of-win32-assemblies.md)
+    Windows Se requiere el instalador versión 2.0 o posterior para instalar ensamblados. Para más información, consulte el SDK [Windows Installer](../msi/windows-installer-portal.md) y las secciones de Instalación [de ensamblados Win32.](../msi/installation-of-win32-assemblies.md)
 
  
 

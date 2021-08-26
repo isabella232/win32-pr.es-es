@@ -1,5 +1,5 @@
 ---
-title: Métodos de carga RWByteAddressBuffer::RWByteAddressBuffer
+title: Métodos RWByteAddressBuffer::RWByteAddressBuffer Load
 description: Obtiene un valor de RWByteAddressBuffer.
 ms.assetid: AD284B6B-A552-4036-954A-988A9593E0A4
 keywords:
@@ -19,7 +19,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120095295"
 ---
-# <a name="rwbyteaddressbufferload-methods"></a>RWByteAddressBuffer::Load (Métodos)
+# <a name="rwbyteaddressbufferload-methods"></a>RWByteAddressBuffer::Load (métodos)
 
 Obtiene un valor de [**RWByteAddressBuffer.**](sm5-object-rwbyteaddressbuffer.md)
 
@@ -34,7 +34,7 @@ Obtiene un valor de [**RWByteAddressBuffer.**](sm5-object-rwbyteaddressbuffer.md
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

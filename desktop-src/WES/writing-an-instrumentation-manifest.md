@@ -4,22 +4,22 @@ description: Las aplicaciones y los archivos DLL usan un manifiesto de instrumen
 ms.assetid: eec9d129-acde-4302-9121-634b3fad8455
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82b3462d6adc264fba8ba155620a2bbb402d51d5d6fc24f7dbe879b9e2a91ec9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc832278772a12195590a4efdb7b65478f22ef4a
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118587056"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812164"
 ---
 # <a name="writing-an-instrumentation-manifest"></a>Escribir un manifiesto de instrumentación
 
 Las aplicaciones y los archivos DLL usan un manifiesto de instrumentación para identificar sus proveedores de instrumentación y los eventos que escriben los proveedores. Un manifiesto es un archivo XML que contiene los elementos que identifican al proveedor. La convención es usar .man como extensión para el manifiesto. El manifiesto debe ajustarse al manifiesto de evento XSD. Para obtener más información sobre el esquema, [vea Esquema EventManifest](eventmanifestschema-schema.md).
 
-Un proveedor de instrumentación es cualquier aplicación o DLL que llame a las funciones [**EventWriteEx**](/windows/desktop/api/evntprov/nf-evntprov-eventwriteex), [**EventWriteString**](/windows/desktop/api/evntprov/nf-evntprov-eventwritestring)o [**EventWriteTransfer**](/windows/desktop/api/evntprov/nf-evntprov-eventwritetransfer) para escribir eventos en una sesión de seguimiento de seguimiento de [eventos](/windows/desktop/ETW/event-tracing-portal) (ETW) o en un canal del registro de eventos. Una aplicación puede definir un único proveedor de instrumentación que cubre todos los eventos que escribe o puede definir un proveedor para la aplicación y un proveedor para cada uno de sus archivos DLL. El número de proveedores que define la aplicación en el manifiesto depende únicamente de cómo la aplicación quiere organizar los eventos que escribe.
+Un proveedor de instrumentación es cualquier aplicación o DLL que llama a las funciones [**EventWriteEx,**](/windows/desktop/api/evntprov/nf-evntprov-eventwriteex) [**EventWriteString**](/windows/desktop/api/evntprov/nf-evntprov-eventwritestring)o [**EventWriteTransfer**](/windows/desktop/api/evntprov/nf-evntprov-eventwritetransfer) para escribir eventos en una sesión de seguimiento de seguimiento de [eventos](/windows/desktop/ETW/event-tracing-portal) (ETW) o en un canal del registro de eventos. Una aplicación puede definir un único proveedor de instrumentación que cubre todos los eventos que escribe o puede definir un proveedor para la aplicación y un proveedor para cada uno de sus archivos DLL. El número de proveedores que define la aplicación en el manifiesto depende únicamente de cómo la aplicación quiere organizar los eventos que escribe.
 
-La ventaja de especificar un proveedor para cada archivo DLL es que, a continuación, puede habilitar y deshabilitar los proveedores individuales y, por tanto, los eventos que generan. Esta ventaja solo se aplica si una sesión de seguimiento de ETW habilita el proveedor. Los eventos que especifican un canal de registro de eventos siempre se escriben en ese canal.
+La ventaja de especificar un proveedor para cada archivo DLL es que puede habilitar y deshabilitar los proveedores individuales y, por tanto, los eventos que generan. Esta ventaja solo se aplica si una sesión de seguimiento de ETW habilita el proveedor. Los eventos que especifican un canal de registro de eventos siempre se escriben en ese canal.
 
-El manifiesto debe identificar el proveedor y los eventos que escribe, pero los demás metadatos, como canales, niveles y palabras clave, son opcionales. si define los metadatos opcionales depende de quién consumirá los eventos. Por ejemplo, si los administradores o el personal de soporte técnico consumen los eventos mediante una herramienta como Windows Visor de eventos que lee eventos de los canales del registro de eventos, debe definir los canales en los que se escriben los eventos. Sin embargo, si el proveedor solo lo habilitará una sesión de seguimiento de ETW, no es necesario definir canales.
+El manifiesto debe identificar el proveedor y los eventos que escribe, pero los demás metadatos, como canales, niveles y palabras clave, son opcionales. si define los metadatos opcionales depende de quién consumirá los eventos. Por ejemplo, si los administradores o el personal de soporte técnico consumen los eventos mediante una herramienta como Windows Visor de eventos que lee eventos de los canales del registro de eventos, debe definir los canales en los que se escriben los eventos. Sin embargo, si el proveedor solo se habilitará mediante una sesión de seguimiento de ETW, no es necesario definir canales.
 
 Aunque los metadatos de niveles, tareas, códigos de operación y palabras clave son opcionales, debe usarlos para agrupar o agrupar los eventos de forma lógica. La agrupación de los eventos ayuda a los consumidores a consumir solo los eventos que son de interés. Por ejemplo, el consumidor podría consultar todos los eventos donde level es "critical" y keyword es "write" o consultar todos los eventos escritos por una tarea específica.
 

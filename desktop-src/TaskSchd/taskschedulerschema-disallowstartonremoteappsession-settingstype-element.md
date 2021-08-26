@@ -1,9 +1,9 @@
 ---
 title: Elemento DisallowStartOnRemoteAppSession (settingsType)
-description: Especifica que la tarea no se iniciará si se desencadena para ejecutarse en una sesión local de aplicaciones remotas integrada (raíl).
+description: Especifica que la tarea no se iniciará si se desencadena para ejecutarse en una sesión de Aplicaciones remotas integradas localmente (RAIL).
 ms.assetid: 8323d8d9-fb6a-4876-9967-cc2344c77de3
 keywords:
-- Programador de tareas del elemento DisallowStartOnRemoteAppSession
+- Elemento DisallowStartOnRemoteAppSession Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 11e3d0a367f2385e78cf1ec56231bbf7632fe05b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d2f7834ecd57fa10aaaabfa21945f1e908834d535d50f94b4dd21e6ca45c0a62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010805"
 ---
 # <a name="disallowstartonremoteappsession-settingstype-element"></a>Elemento DisallowStartOnRemoteAppSession (settingsType)
 
-Especifica que la tarea no se iniciará si se desencadena para ejecutarse en una sesión local de aplicaciones remotas integrada (raíl).
+Especifica que la tarea no se iniciará si se desencadena para ejecutarse en una sesión de Aplicaciones remotas integradas localmente (RAIL).
 
 ``` syntax
 <xs:element name="DisallowStartOnRemoteAppSession"
@@ -32,7 +32,7 @@ Especifica que la tarea no se iniciará si se desencadena para ejecutarse en una
  />
 ```
 
-El elemento **DisallowStartOnRemoteAppSession** se define mediante el tipo complejo de [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+El tipo complejo [**settingsType**](taskschedulerschema-settingstype-complextype.md) define el elemento **DisallowStartOnRemoteAppSession.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -40,19 +40,19 @@ El elemento **DisallowStartOnRemoteAppSession** se define mediante el tipo compl
 
 | Elemento                                                           | Derivado de                                                         | Descripción                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas utiliza para realizar la tarea.<br/> |
+| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas usa para realizar la tarea.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La configuración predeterminada de este elemento es false.
+El valor predeterminado para este elemento es False.
 
-En el desarrollo de C++, se obtiene acceso a esta información a través de la propiedad [**ITaskSettings2::D isallowstartonremoteappsession**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings2-get_disallowstartonremoteappsession) .
+Para el desarrollo de C++, se tiene acceso a esta información a través de la propiedad [**ITaskSettings2::D isallowStartOnRemoteAppSession.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings2-get_disallowstartonremoteappsession)
 
 ## <a name="examples"></a>Ejemplos
 
-En el código XML siguiente se define un elemento de configuración que no permite que la tarea se inicie si la tarea se desencadena para ejecutarse en una sesión de raíl.
+El xml siguiente define un elemento de configuración que no permite que la tarea se inicie si la tarea se desencadena para ejecutarse en una sesión RAIL.
 
 
 ```XML
@@ -70,8 +70,8 @@ En el código XML siguiente se define un elemento de configuración que no permi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -79,7 +79,7 @@ En el código XML siguiente se define un elemento de configuración que no permi
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

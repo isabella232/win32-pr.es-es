@@ -27,7 +27,7 @@ ICEM10 publica un error cuando un módulo de combinación contiene una propiedad
 
 ## <a name="example"></a>Ejemplo
 
-ICEM10 publica los siguientes mensajes de error para un módulo que contiene las entradas de base de datos que se muestran.
+ICEM10 publica los siguientes mensajes de error para un módulo que contiene las entradas de base de datos mostradas.
 
 ``` syntax
 The property 'ProductLanguage' is not allowed in a merge module.
@@ -53,7 +53,7 @@ En el procedimiento siguiente se muestra cómo corregir errores.
 
 **Para corregir los errores**
 
-1.  Quite la propiedad '[**Manufacturer**](manufacturer.md)' de la [tabla de propiedades](property-table.md).
+1.  Quite la propiedad '[**Fabricante**](manufacturer.md)' de la [tabla de propiedades](property-table.md).
 2.  Quite la propiedad [**' ProductLanguage**](productlanguage.md)' de la [tabla de propiedades](property-table.md).
 
 ## <a name="table-used-during-execution"></a>Tabla usada durante la ejecución

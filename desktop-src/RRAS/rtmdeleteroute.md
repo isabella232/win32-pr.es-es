@@ -1,9 +1,9 @@
 ---
-title: Función RtmDeleteRoute (RTM. h)
+title: Función RtmDeleteRoute (Rtm.h)
 description: La función RtmDeleteRoute elimina una entrada de ruta.
 ms.assetid: a98026e9-40f5-42e9-943c-dfc561feef6d
 keywords:
-- RtmDeleteRoute función RAS
+- Ras de función RtmDeleteRoute
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 310364bdb6e6ba7daf285316fcaaf16884e53929
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0efe2e34345cc335b8214b781da4dce608dddcc4c2f77e80d8c86f76007c2855
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073855"
 ---
-# <a name="rtmdeleteroute-function"></a>RtmDeleteRoute función)
+# <a name="rtmdeleteroute-function"></a>Función RtmDeleteRoute
 
-\[Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API del administrador de tabla de enrutamiento versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La función **RtmDeleteRoute** elimina una entrada de ruta.
+La **función RtmDeleteRoute** elimina una entrada de ruta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,25 +45,25 @@ DWORD RtmDeleteRoute(
 
 <dl> <dt>
 
-*ClientHandle* \[ de\]
+*ClientHandle* \[ En\]
 </dt> <dd>
 
-Identificador que identifica el cliente y, por tanto, el protocolo de enrutamiento de la ruta agregada o actualizada. Obtenga este identificador llamando a [**RtmRegisterClient**](rtmregisterclient.md).
+Identificador que identifica el cliente y, por tanto, el protocolo de enrutamiento de la ruta agregada o actualizada. Obtenga este identificador mediante una llamada [**a RtmRegisterClient**](rtmregisterclient.md).
 
 </dd> <dt>
 
-*Ruta* \[ de de\]
+*Ruta* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura específica de la familia de protocolos que especifica la ruta nueva o actualizada. El administrador de tablas de enrutamiento usa los campos siguientes para actualizar la tabla de enrutamiento:
+Puntero a una estructura específica de la familia de protocolos que especifica la ruta nueva o actualizada. El administrador de tablas de enrutamiento usa los siguientes campos para actualizar la tabla de enrutamiento:
 
 
 
-| Value                                                                                                                                                                                                         | Significado                                                                               |
+| Valor                                                                                                                                                                                                         | Significado                                                                               |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| <span id="RR_Network"></span><span id="rr_network"></span><span id="RR_NETWORK"></span><dl> <dt>**\_Red RR**</dt> </dl>                             | Especifica el número de red de destino. <br/>                                 |
-| <span id="RR_InterfaceID"></span><span id="rr_interfaceid"></span><span id="RR_INTERFACEID"></span><dl> <dt>**RR \_ InterfaceID**</dt> </dl>             | Especifica el índice de la interfaz a través de la cual se recibió la ruta.<br/> |
-| <span id="RR_NextHopAddress"></span><span id="rr_nexthopaddress"></span><span id="RR_NEXTHOPADDRESS"></span><dl> <dt>**RR \_ NextHopAddress**</dt> </dl> | Especifica la dirección de red del enrutador de próximo salto.<br/>                      |
+| <span id="RR_Network"></span><span id="rr_network"></span><span id="RR_NETWORK"></span><dl> <dt>**RR \_ Network**</dt> </dl>                             | Especifica el número de red de destino. <br/>                                 |
+| <span id="RR_InterfaceID"></span><span id="rr_interfaceid"></span><span id="RR_INTERFACEID"></span><dl> <dt>**RR \_ InterfaceID**</dt> </dl>             | Especifica el índice de la interfaz a través de la que se recibió la ruta.<br/> |
+| <span id="RR_NextHopAddress"></span><span id="rr_nexthopaddress"></span><span id="RR_NEXTHOPADDRESS"></span><dl> <dt>**RR \_ NextHopAddress**</dt> </dl> | Especifica la dirección de red del enrutador del próximo salto.<br/>                      |
 
 
 
@@ -71,18 +71,18 @@ Puntero a una estructura específica de la familia de protocolos que especifica 
 
 </dd> <dt>
 
-*Marcas* \[ de enuncia\]
+*Marcas* \[ out\]
 </dt> <dd>
 
-Puntero a un conjunto de marcas que indican el tipo del mensaje de cambio y qué información se colocó en los búferes proporcionados. Este parámetro es uno de los valores siguientes.
+Puntero a un conjunto de marcas que indican el tipo del mensaje de cambio y qué información se colocó en los búferes proporcionados. Este parámetro es uno de los siguientes valores.
 
 
 
 | Marcas                                                                                                                                                                      | Significado                                                                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="RTM_NO_CHANGE"></span><span id="rtm_no_change"></span><dl> <dt>**RTM \_ sin \_ cambios**</dt> </dl>             | La eliminación de la ruta no afectó a la mejor ruta a ninguna red de destino. En otras palabras, otra entrada representa una ruta a la misma red de destino y tiene una métrica inferior.<br/> |
-| <span id="RTM_ROUTE_DELETED"></span><span id="rtm_route_deleted"></span><dl> <dt>**\_ruta RTM \_ eliminada**</dt> </dl> | La ruta eliminada era la única ruta disponible para una red de destino determinada.<br/>                                                                                                  |
-| <span id="RTM_ROUTE_CHANGED"></span><span id="rtm_route_changed"></span><dl> <dt>**\_ruta RTM \_ modificada**</dt> </dl> | Una vez eliminada esta ruta, otra ruta se convirtió en la mejor ruta a una red de destino determinada. *CurBestRoute* apunta a la información de la nueva ruta más adecuada.<br/>               |
+| <span id="RTM_NO_CHANGE"></span><span id="rtm_no_change"></span><dl> <dt>**RTM \_ NO \_ CHANGE**</dt> </dl>             | La eliminación de la ruta no afectó a la mejor ruta a ninguna red de destino. En otras palabras, otra entrada representa una ruta a la misma red de destino y tiene una métrica inferior.<br/> |
+| <span id="RTM_ROUTE_DELETED"></span><span id="rtm_route_deleted"></span><dl> <dt>**RUTA RTM \_ \_ ELIMINADA**</dt> </dl> | La ruta eliminada era la única ruta disponible para una red de destino determinada.<br/>                                                                                                  |
+| <span id="RTM_ROUTE_CHANGED"></span><span id="rtm_route_changed"></span><dl> <dt>**RUTA RTM \_ \_ MODIFICADA**</dt> </dl> | Después de eliminar esta ruta, otra se convirtió en la mejor ruta a una red de destino determinada. *CurBestRoute apunta* a la información de la nueva mejor ruta.<br/>               |
 
 
 
@@ -90,49 +90,49 @@ Puntero a un conjunto de marcas que indican el tipo del mensaje de cambio y qué
 
 </dd> <dt>
 
-*CurBestRoute* \[ enuncia\]
+*CurBestRoute* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura que recibe la información de la mejor ruta actual, si existe. El tipo de la estructura es específico de la familia de protocolos, por ejemplo, IP o IPX.
+Puntero a una estructura que recibe la información de mejor ruta actual, si existe. El tipo de la estructura es específico de la familia de protocolos, por ejemplo, IP o IPX.
 
-Este parámetro es opcional. Si el autor de la llamada especifica **null** para este parámetro, no se devuelve la información de la mejor ruta actual.
+Este parámetro es opcional. Si el autor de la llamada **especifica NULL** para este parámetro, no se devuelve la información de mejor ruta actual.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto **no es un \_ error**.
+Si la función se realiza correctamente, el valor devuelto **es NO \_ ERROR**.
 
 Si se produce un error en la función, el valor devuelto es uno de los siguientes códigos de error.
 
 
 
-| Value                                                                                                       | Descripción                                                                                            |
+| Valor                                                                                                       | Descripción                                                                                            |
 |-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ERROR \_ de \_ identificador no válido**</dt> </dl>       | El parámetro de identificador de cliente no es un identificador válido.<br/>                                          |
-| <dl> <dt>**ERROR \_ de \_ parámetro no válido**</dt> </dl>    | La estructura de ruta señalada por el parámetro *Route* contiene un valor de miembro.<br/>            |
-| <dl> <dt>**ERROR no se trata de una \_ \_ \_ ruta**</dt> </dl>       | No hay ninguna entrada en la tabla de enrutamiento que coincida con los parámetros de la ruta especificada.<br/> |
-| <dl> <dt>**ERROR: \_ no hay \_ recursos del sistema \_**</dt> </dl> | No hay suficientes recursos para realizar la operación. <br/>                                 |
+| <dl> <dt>**IDENTIFICADOR \_ DE ERROR NO \_ VÁLIDO**</dt> </dl>       | El parámetro de identificador de cliente no es un identificador válido.<br/>                                          |
+| <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl>    | La estructura de ruta a la que apunta *el parámetro Route* contiene un valor de miembro.<br/>            |
+| <dl> <dt>**ERROR \_ NO \_ SUCH \_ ROUTE**</dt> </dl>       | No hay ninguna entrada en la tabla de enrutamiento que coincida con los parámetros de la ruta especificada.<br/> |
+| <dl> <dt>**ERROR \_ SIN RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para realizar la operación. <br/>                                 |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función genera un mensaje de cambio de ruta si la mejor ruta a una red de destino ha cambiado como resultado de la eliminación. Sin embargo, el mensaje de cambio de ruta no se envía al cliente que realiza esta llamada. En su lugar, esta función devuelve directamente la información relevante a ese cliente.
+La función genera un mensaje de cambio de ruta si la mejor ruta a una red de destino ha cambiado como resultado de la eliminación. Sin embargo, el mensaje de cambio de ruta no se envía al cliente que realiza esta llamada. En su lugar, esta función devuelve la información pertinente directamente a ese cliente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>RTM. lib</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
@@ -141,10 +141,10 @@ La función genera un mensaje de cambio de ruta si la mejor ruta a una red de de
 
 <dl> <dt>
 
-[Referencia de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Funciones de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-functions.md)
+[Funciones de Routing Table Manager versión 1](routing-table-manager-version-1-functions.md)
 </dt> <dt>
 
 [**RtmAddRoute**](rtmaddroute.md)

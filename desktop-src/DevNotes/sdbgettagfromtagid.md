@@ -1,7 +1,7 @@
 ---
-description: Recupera la etiqueta asociada al TAGID especificado.
+description: Recupera la ETIQUETA asociada al TAGID especificado.
 ms.assetid: 194d2035-fc2c-445d-a730-90db2ccea8af
-title: SdbGetTagFromTagID función)
+title: Función SdbGetTagFromTagID
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: d81dac026a9b6acc921586aaded54c8c90ad5bdd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a7e58343cf9a863f6b3cecc7f9b6414414387e2f2b33859de1eb015d65f1a78b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058475"
 ---
-# <a name="sdbgettagfromtagid-function"></a>SdbGetTagFromTagID función)
+# <a name="sdbgettagfromtagid-function"></a>Función SdbGetTagFromTagID
 
-Recupera la etiqueta asociada al **TAGID** especificado.
+Recupera la ETIQUETA asociada al **TAGID especificado.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,23 +40,23 @@ TAG WINAPI SdbGetTagFromTagID(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tiWhich* \[ de\]
+*tiWhich* \[ En\]
 </dt> <dd>
 
-**TAGID** de la etiqueta.
+TagID **de** la etiqueta.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve la etiqueta.
+La función devuelve la etiqueta .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ La función devuelve la etiqueta.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 
@@ -74,7 +74,7 @@ La función devuelve la etiqueta.
 
 <dl> <dt>
 
-[**ETIQUETA**](tag.md)
+[**etiqueta**](tag.md)
 </dt> <dt>
 
 [**TAGID**](tagid.md)

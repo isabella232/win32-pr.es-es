@@ -1,19 +1,19 @@
 ---
-title: Propiedades de usuario de PEAP-TLS
-description: Obtenga información sobre las propiedades de usuario de PEAP-TLS. Vea un ejemplo que es una instancia del esquema heredado eaptlsuserpropertiesv1.
+title: Propiedades de usuario PEAP-TLS
+description: Obtenga información sobre las propiedades de usuario PEAP-TLS. Vea un ejemplo que es una instancia del esquema heredado eaptlsuserpropertiesv1.
 ms.assetid: f0fb00fa-4cf8-4490-ac59-a8252ddcb5ee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32437c54d707c3d278e4494c2b5b4f56ed83c9d4
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 51657f1f98f2895df52e6c1592929dcff9066f9937e43764d917d7d3645713e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "105695790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117385"
 ---
-# <a name="peap-tls-user-properties"></a>Propiedades de usuario de PEAP-TLS
+# <a name="peap-tls-user-properties"></a>Propiedades de usuario PEAP-TLS
 
-Este ejemplo es una instancia del esquema heredado [eaptlsuserpropertiesv1](eaptlsuserpropertiesv1schema-schema.md) .
+Este ejemplo es una instancia del esquema [heredado eaptlsuserpropertiesv1.](eaptlsuserpropertiesv1schema-schema.md)
 
 ``` syntax
   <?xml version="1.0" ?> 
@@ -50,15 +50,15 @@ Este ejemplo es una instancia del esquema heredado [eaptlsuserpropertiesv1](eapt
 
 <dl> <dt>
 
-[Propiedades de usuario](user-profiles.md)
+[Propiedades del usuario](user-profiles.md)
 </dt> <dt>
 
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

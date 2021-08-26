@@ -4,48 +4,48 @@ ms.assetid: 25c730ff-4b01-4b40-ab50-3b8df3dad4c8
 title: Referencia XML del archivo de configuración WsdCodeGen
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38e31d46935d23f5eb652cf386ed722e4565b0cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11a9184e30f16550f0e9144a94499860ed04be6dbba4e70bad5d6a17fd6e3e35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104276958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995135"
 ---
 # <a name="wsdcodegen-configuration-file-xml-reference"></a>Referencia XML del archivo de configuración WsdCodeGen
 
 Los archivos de configuración de WsdCodeGen usan los siguientes elementos XML.
 
--   [**async**](async.md)
--   [**autoestática**](autostatic.md)
--   [**Nombre**](codename.md)
+-   [**Async**](async.md)
+-   [**autoStatic**](autostatic.md)
+-   [**Codename**](codename.md)
 -   [**desasignador**](deallocator.md)
 -   [**enumerationValueDeclarations**](enumerationvaluedeclarations.md)
 -   [**eventArg**](eventarg.md)
--   [**ceso**](events.md)
+-   [**Eventos**](events.md)
 -   [**eventSourceBuilderDeclarations**](eventsourcebuilderdeclarations.md)
 -   [**eventSourceBuilderImplementations**](eventsourcebuilderimplementations.md)
 -   [**eventStubFunction**](eventstubfunction.md)
 -   [**excludeImport**](excludeimport.md)
 -   [**faultInfo**](faultinfo.md)
--   [**archivo**](file.md)
+-   [**Archivo**](file.md)
 -   [**functionDeclarations**](functiondeclarations.md)
--   [**organizar**](host.md)
+-   [**Host**](host.md)
 -   [**hostBuilderDeclaration**](hostbuilderdeclaration.md)
 -   [**hostBuilderImplementation**](hostbuilderimplementation.md)
--   [**ubicada**](hosted.md)
+-   [**Alojados**](hosted.md)
 -   [**hostMetadata**](hostmetadata.md)
 -   [**hostedService**](hostedservice.md)
 -   [**idlFunctionDeclarations**](idlfunctiondeclarations.md)
 -   [**importHint**](importhint.md)
--   [**inclui**](include.md)
--   [**interfaz**](interface.md)
+-   [**incluír**](include.md)
+-   [**Interfaz**](interface.md)
 -   [**IUnknownDeclarations**](iunknowndeclarations.md)
 -   [**IUnknownDefinitions**](iunknowndefinitions.md)
 -   [**layerNumber**](layernumber.md)
 -   [**layerPrefix**](layerprefix.md)
 -   [**literalInclude**](literalinclude.md)
--   [**Cód**](location.md)
--   [**macro**](macro.md)
+-   [**Ubicación**](location.md)
+-   [**Macro**](macro.md)
 -   [**macroPrefix**](macroprefix.md)
 -   [**fabricante**](manufacturer.md)
 -   [**manufacturerLS**](manufacturerls.md)
@@ -57,14 +57,14 @@ Los archivos de configuración de WsdCodeGen usan los siguientes elementos XML.
 -   [**modelNameLS**](modelnamels.md)
 -   [**modelNumber**](modelnumber.md)
 -   [**modelURL**](modelurl.md)
--   [**name**](name.md)
--   [**System.IO**](namespace.md)
+-   [**Nombre**](name.md)
+-   [**Nombres**](namespace.md)
 -   [**namespaceDeclarations**](namespacedeclarations.md)
 -   [**namespaceDefinitions**](namespacedefinitions.md)
 -   [**notificationInterface**](notificationinterface.md)
--   [**sesión**](operation.md)
+-   [**operation**](operation.md)
 -   [**operationDeallocator**](operationdeallocator.md)
--   [**camino**](path.md)
+-   [**Camino**](path.md)
 -   [**PnPXCompatibleId**](pnpxcompatibleid.md)
 -   [**PnPXDeviceCategory**](pnpxdevicecategory.md)
 -   [**PnPXHardwareId**](pnpxhardwareid.md)
@@ -97,8 +97,8 @@ Los archivos de configuración de WsdCodeGen usan los siguientes elementos XML.
 -   [**typeTableDefinitions**](typetabledefinitions.md)
 -   [**typeUri**](typeuri.md)
 -   [**wsdCodeGen**](wsdcodegen.md)
--   [**mencionados**](wsdl.md)
--   [**BTM**](xsd.md)
+-   [**Wsdl**](wsdl.md)
+-   [**Xsd**](xsd.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

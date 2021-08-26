@@ -1,7 +1,7 @@
 ---
-description: Se llama al método ChangeStop cuando cambia la posición de detención.
+description: Se llama al método ChangeStop cuando cambia la posición de detenerse.
 ms.assetid: 3d4a73a4-68e6-449c-9637-62cad937c4b4
-title: Método CSourceSeeking. ChangeStop (Ctlutil. h)
+title: Método CSourceSeeking.ChangeStop (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eefcc64b4692363c8caa8f39a3a0db9beb0d08b5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 09473b5bbe20c6c31748f0079594424f7e0afa62e2594ff1cc80f33cb1f5e6bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103125"
 ---
-# <a name="csourceseekingchangestop-method"></a>CSourceSeeking. ChangeStop, método
+# <a name="csourceseekingchangestop-method"></a>CSourceSeeking.ChangeStop (método)
 
-`ChangeStop`Se llama al método cuando cambia la posición de detención.
+Se `ChangeStop` llama al método cuando cambia la posición de detenerse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CSourceSeeking:: SetPositions**](csourceseeking-setpositions.md) llama a este método si cambia la posición de detención. Este método es virtual puro; la clase derivada debe implementarla. En el ejemplo siguiente se muestra una posible implementación:
+El [**método CSourceSeeking::SetPositions**](csourceseeking-setpositions.md) llama a este método si cambia la posición de detenerse. Este método es virtual puro; la clase derivada debe implementarla. En el ejemplo siguiente se muestra una posible implementación:
 
 
 ```C++
@@ -65,8 +65,8 @@ HRESULT CMyStream::ChangeStop( )
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ HRESULT CMyStream::ChangeStop( )
 
 <dl> <dt>
 
-[**Clase CSourceSeeking**](csourceseeking.md)
+[**CSourceSeeking (clase)**](csourceseeking.md)
 </dt> </dl>
 
  

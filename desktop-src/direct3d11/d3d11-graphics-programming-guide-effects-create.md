@@ -1,6 +1,6 @@
 ---
 title: Crear un efecto (Direct3D 11)
-description: Se crea un efecto cargando el código de bytes del efecto compilado en el marco de efectos. A diferencia de Efectos 10, el efecto debe compilarse antes de crear el efecto. Los efectos cargados en la memoria se pueden crear llamando a D3DX11CreateEffectFromMemory.
+description: Se crea un efecto cargando el código de bytes del efecto compilado en el marco de efectos. A diferencia de Los efectos 10, el efecto debe compilarse antes de crear el efecto. Los efectos cargados en memoria se pueden crear llamando a D3DX11CreateEffectFromMemory.
 ms.assetid: 9aa734cc-1003-453c-b401-58ac5e708db8
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "120096405"
 ---
 # <a name="create-an-effect-direct3d-11"></a>Crear un efecto (Direct3D 11)
 
-Se crea un efecto cargando el código de bytes del efecto compilado en el marco de efectos. A diferencia de Efectos 10, el efecto debe compilarse antes de crear el efecto. Los efectos cargados en memoria se pueden crear llamando a [**D3DX11CreateEffectFromMemory**](d3dx11createeffectfrommemory.md).
+Se crea un efecto cargando el código de bytes del efecto compilado en el marco de efectos. A diferencia de Los efectos 10, el efecto debe compilarse antes de crear el efecto. Los efectos cargados en memoria se pueden crear llamando a [**D3DX11CreateEffectFromMemory**](d3dx11createeffectfrommemory.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

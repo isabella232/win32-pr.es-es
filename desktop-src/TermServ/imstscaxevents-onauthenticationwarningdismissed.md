@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnAuthenticationWarningDismissed, método
-description: Se llama después de que un control ActiveX muestre un cuadro de diálogo de autenticación (por ejemplo, el cuadro de diálogo error de certificado).
+title: Método IMsTscAxEvents OnAuthenticationWarningDismissed
+description: Se llama después de ActiveX control muestra un cuadro de diálogo de autenticación (por ejemplo, el cuadro de diálogo de error de certificado).
 ms.assetid: bf5dbe4a-9129-47b3-9808-ed09d9010099
 ms.tgt_platform: multiple
 keywords:
 - Método OnAuthenticationWarningDismissed Servicios de Escritorio remoto
-- Método OnAuthenticationWarningDismissed Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnAuthenticationWarningDismissed
+- Método OnAuthenticationWarningDismissed Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto método , OnAuthenticationWarningDismissed
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86bdadfdbc8e0a1387a1f3aaf712188689d0f808
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a55af8450160e271e96c53d4d5a9d4390393ab7880d2c2bb143cf0e6a1cb3bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125235"
 ---
-# <a name="imstscaxeventsonauthenticationwarningdismissed-method"></a>IMsTscAxEvents:: OnAuthenticationWarningDismissed (método)
+# <a name="imstscaxeventsonauthenticationwarningdismissed-method"></a>Método IMsTscAxEvents::OnAuthenticationWarningDismissed
 
-Se llama después de que un control ActiveX muestre un cuadro de diálogo de autenticación (por ejemplo, el cuadro de diálogo error de certificado).
+Se llama después de ActiveX control muestra un cuadro de diálogo de autenticación (por ejemplo, el cuadro de diálogo de error de certificado).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,11 +45,11 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si es necesario, se puede usar la propiedad [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md) de la interfaz [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md) para revertir cualquier elemento primario que pueda haberse realizado en el método [**OnAuthenticationWarningDisplayed**](imstscaxevents-onauthenticationwarningdisplayed.md) .
+Si es necesario, se puede usar la propiedad [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md) de la interfaz [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md) para revertir los elementos primarios que se puedan haber realizado en el método [**OnAuthenticationWarningDisplayed.**](imstscaxevents-onauthenticationwarningdisplayed.md)
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

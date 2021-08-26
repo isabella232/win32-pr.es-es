@@ -1,48 +1,48 @@
 ---
 title: MiscStatus
-description: Especifica cómo crear y mostrar un objeto.
+description: Especifica cómo crear y mostrar un objeto .
 ms.assetid: 585b2d1e-3edb-494e-a61e-bbfa6eae2ba1
 keywords:
-- Clave del registro MiscStatus COM
+- MiscStatus registry key COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abee49776577df61dc8b7d4e94a0621dfdd8b216
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 41aa5a5ab7f777eb6aa19d919c69ca219c9364cd1d6e5e9471cb677300d4ebb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992355"
 ---
 # <a name="miscstatus"></a>MiscStatus
 
-Especifica cómo crear y mostrar un objeto.
+Especifica cómo crear y mostrar un objeto .
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      MiscStatus
-         (Default) = value
-         aspect = value
+   {CLSID}
+      MiscStatus
+         (Default) = value
+         aspect = value
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información, vea la enumeración [**OLEMISC**](/windows/win32/api/oleidl/ne-oleidl-olemisc) y [**IOleObject:: GetMiscStatus**](/windows/desktop/api/OleIdl/nf-oleidl-ioleobject-getmiscstatus).
+Para obtener más información, vea la [**enumeración OLEMISC**](/windows/win32/api/oleidl/ne-oleidl-olemisc) [**e IOleObject::GetMiscStatus**](/windows/desktop/api/OleIdl/nf-oleidl-ioleobject-getmiscstatus).
 
-Si no se encuentra ninguna subclave que corresponda a un DVASPECT, se usa el valor predeterminado de **MiscStatus** .
+Si no se encuentra ninguna subclave que se corresponda con DVASPECT, se usa el valor predeterminado **de MiscStatus.**
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**IOleObject:: GetMiscStatus**](/windows/desktop/api/OleIdl/nf-oleidl-ioleobject-getmiscstatus)
+[**IOleObject::GetMiscStatus**](/windows/desktop/api/OleIdl/nf-oleidl-ioleobject-getmiscstatus)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -90,7 +90,7 @@ Los muestreadores pueden aparecer más de una vez en una tabla constante, por lo
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

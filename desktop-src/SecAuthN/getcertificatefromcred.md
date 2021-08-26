@@ -1,7 +1,7 @@
 ---
 description: Obtiene el certificado de la credencial de usuario.
 ms.assetid: 3C79D049-89DC-4AF5-8C0A-5B7EBBBD69D3
-title: Función GetCertificateFromCred (Lsaidprov. h)
+title: Función GetCertificateFromCred (Lsaidprov.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Lsaidprov.h
-ms.openlocfilehash: 1120e7859080657e2a04202e01a01464694a3450
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3660fd4cfb8baa3e025789a2cde9dc04dd7e1e1678b0516a56562f1ea5be43dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994494"
 ---
-# <a name="getcertificatefromcred-function"></a>GetCertificateFromCred función)
+# <a name="getcertificatefromcred-function"></a>Función GetCertificateFromCred
 
 Obtiene el certificado de la credencial de usuario.
 
@@ -43,68 +43,68 @@ NTSTATUS GetCertificateFromCred(
 
 <dl> <dt>
 
-*ProviderHandle* \[ de\]
+*ProviderHandle* \[ En\]
 </dt> <dd>
 
 Identificador del proveedor de identidades.
 
 </dd> <dt>
 
-*ClientToken* \[ de\]
+*ClientToken* \[ En\]
 </dt> <dd>
 
-Token del llamador que está recuperando el certificado.
+Token del autor de la llamada que está recuperando el certificado.
 
 </dd> <dt>
 
-*SuppliedCred* \[ de\]
+*SuppliedCred* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ \_ credenciales proporcionada por SECPKG**](/windows/desktop/api/Ntsecpkg/ns-ntsecpkg-secpkg_supplied_credential) que contiene la credencial de un identificador en línea cuyo certificado se solicita. El proveedor de identidades debe validar los datos de entrada como si provinieran de un origen que no es de confianza.
+Puntero a una [**estructura \_ \_ CREDENTIAL PROPORCIONADA POR SECPKG**](/windows/desktop/api/Ntsecpkg/ns-ntsecpkg-secpkg_supplied_credential) que contiene la credencial de un identificador en línea cuyo certificado se solicita. El proveedor de identidades debe validar los datos de entrada como si se tratase de un origen que no es de confianza.
 
 </dd> <dt>
 
-*SuppliedCredSize* \[ de\]
+*SuppliedCredSize* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer *SuppliedCred* .
+Tamaño, en bytes, del *búfer SuppliedCred.*
 
 </dd> <dt>
 
-*CertContext* \[ enuncia\]
+*CertContext* \[ out\]
 </dt> <dd>
 
-Si la función se ejecuta correctamente, este parámetro es un puntero al puntero de contexto CCERT devuelto \_ . Cuando haya terminado de usar el contexto del certificado, suéltelo llamando a la función [**CertFreeCertificateContext**](/windows/desktop/api/wincrypt/nf-wincrypt-certfreecertificatecontext) .
+Si la función se realiza correctamente, este parámetro es un puntero al puntero CONTEXT de CCERT \_ devuelto. Cuando haya terminado de usar el contexto de certificado, descálelo llamando a la [**función CertFreeCertificateContext.**](/windows/desktop/api/wincrypt/nf-wincrypt-certfreecertificatecontext)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, la función devuelve el estado \_ Success.
+Si la función se realiza correctamente, la función devuelve STATUS \_ SUCCESS.
 
-Si se produce un error en la función, la función puede devolver uno de los siguientes códigos de error de NTSTATUS.
+Si se produce un error en la función, la función puede devolver uno de los siguientes códigos de error NTSTATUS.
 
 
 
 | Valor devuelto                                                                                            | Descripción                                                                                                                                                                            |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>ESTADO \_ no \_ admitido</dt> </dl>       | El proveedor de identidades no reconoce el tipo de credencial de la credencial proporcionada. LSA probará el siguiente proveedor de identidades.<br/>                                           |
-| <dl> <dt>error de inicio de sesión de estado \_ \_</dt> </dl>       | La credencial es incorrecta.<br/>                                                                                                                                                |
-| <dl> <dt>ESTADO \_ parámetro no válido \_</dt> </dl>   | Un parámetro no es válido. La credencial puede tener un formato incorrecto y no estar en la estructura [**de \_ \_ credenciales proporcionada por SECPKG**](/windows/desktop/api/Ntsecpkg/ns-ntsecpkg-secpkg_supplied_credential) definida.<br/> |
-| <dl> <dt>Estado de \_ red no \_ accesible</dt> </dl> | El proveedor de identidades no puede ponerse en contacto con la nube para obtener el certificado.<br/>                                                                                                   |
-| <dl> <dt>contraseña de estado \_ \_ expirada</dt> </dl>    | La contraseña de la cuenta ha caducado.<br/>                                                                                                                                           |
-| <dl> <dt>cuenta de estado \_ \_ bloqueada \_</dt> </dl> | La cuenta se ha bloqueado. <br/>                                                                                                                                           |
+| <dl> <dt>ESTADO \_ NO \_ ADMITIDO</dt> </dl>       | El proveedor de identidades no reconoce el tipo de credencial de la credencial proporcionada. LSA probará el siguiente proveedor de identidades.<br/>                                           |
+| <dl> <dt>ERROR DE \_ INICIO DE SESIÓN DE \_ ESTADO</dt> </dl>       | La credencial es incorrecta.<br/>                                                                                                                                                |
+| <dl> <dt>PARÁMETRO STATUS \_ INVALID \_</dt> </dl>   | Un parámetro no es válido. La credencial puede estar en un formato incorrecto y no en la estructura [**SECPKG \_ \_ CREDENTIAL proporcionada**](/windows/desktop/api/Ntsecpkg/ns-ntsecpkg-secpkg_supplied_credential) definida.<br/> |
+| <dl> <dt>RED \_ DE ESTADO \_ INACCESIBLE</dt> </dl> | El proveedor de identidades no puede ponerse en contacto con la nube para obtener el certificado.<br/>                                                                                                   |
+| <dl> <dt>CONTRASEÑA DE \_ ESTADO \_ EXPIRADA</dt> </dl>    | La contraseña de la cuenta ha caducado.<br/>                                                                                                                                           |
+| <dl> <dt>CUENTA \_ DE ESTADO \_ BLOQUEADA \_</dt> </dl> | La cuenta se ha bloqueado. <br/>                                                                                                                                           |
 | <dl> <dt>Otros</dt> </dl>                       | Otros códigos de error específicos del proveedor. <br/>                                                                                                                                       |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de recuperar el certificado de la nube, el proveedor de identidades debe comprobar que hay un certificado válido para este usuario en el almacén de certificados "mi" del usuario. Si existe un certificado válido, el proveedor debe devolver este certificado para evitar el tráfico de red innecesario.
+Antes de capturar el certificado de la nube, el proveedor de identidades debe comprobar que hay un certificado válido para este usuario en el almacén de certificados "MY" del usuario. Si existe un certificado válido, el proveedor debe devolver este certificado para evitar tráfico de red innecesario.
 
-El proveedor de identidades también puede almacenar en caché el certificado localmente siempre que esté protegido por el usuario actual.
+El proveedor de identidades también puede almacenar en caché el certificado localmente siempre que esté protegido del usuario actual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,9 +112,9 @@ El proveedor de identidades también puede almacenar en caché el certificado lo
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Lsaidprov. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                   |
+| Header<br/>                   | <dl> <dt>Lsaidprov.h</dt> </dl> |
 
 
 

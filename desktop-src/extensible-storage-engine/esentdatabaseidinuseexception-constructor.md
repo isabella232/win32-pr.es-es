@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDatabaseIdInUseException'
-title: Constructor de EsentDatabaseIdInUseException
+description: 'Más información sobre: Constructor EsentDatabaseIdInUseException'
+title: Constructor EsentDatabaseIdInUseException
 TOCTitle: 'EsentDatabaseIdInUseException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseIdInUseException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabaseidinuseexception.esentdatabaseidinuseexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1323f2357335051ac8399cf3b739768fcb235e11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a8a9d4407587d94b55223d57df0d30f1bf47f2a61df601c3e4f8ef7843896ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117335"
 ---
-# <a name="esentdatabaseidinuseexception-constructor"></a>Constructor de EsentDatabaseIdInUseException
+# <a name="esentdatabaseidinuseexception-constructor"></a>Constructor EsentDatabaseIdInUseException
 
 Inicializa una nueva instancia de la clase EsentDatabaseIdInUseException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDatabaseIdInUseException()
 public EsentDatabaseIdInUseException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentDatabaseIdInUseException()
 
 [Miembros de EsentDatabaseIdInUseException](./esentdatabaseidinuseexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

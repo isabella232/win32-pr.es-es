@@ -1,15 +1,15 @@
 ---
-description: El método SetGPRM establece el registro del parámetro general especificado en el valor especificado.
+description: El método SetGPRM establece el registro de parámetros general especificado en el valor especificado.
 ms.assetid: ded28f2a-5e40-4f76-9ed4-de10296529e1
 title: Método SetGPRM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9e7492c599cde4c074c1a806f897edf3a8fe0a4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1c217f0235ca5b055e20102f553e9e23f5b93e6dd9c3d74db560584690a669ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078865"
 ---
 # <a name="setgprm-method"></a>Método SetGPRM
 
@@ -18,7 +18,7 @@ ms.locfileid: "105686320"
 
  
 
-El `SetGPRM` método establece el registro del parámetro general especificado en el valor especificado.
+El `SetGPRM` método establece el registro de parámetros general especificado en el valor especificado.
 
 ``` syntax
 MSWebDVD.SetGPRM(iIndex, nValue)
@@ -31,20 +31,20 @@ MSWebDVD.SetGPRM(iIndex, nValue)
 <span id="iIndex"></span><span id="iindex"></span><span id="IINDEX"></span>*iIndex*
 </dt> <dd>
 
-Especifica el registro de parámetros general que se va a establecer como un entero. El valor entero debe oscilar entre 0 y 15.
+Especifica el registro de parámetros general que se establecerá como un entero. El valor entero debe oscilar entre 0 y 15.
 
 </dd> <dt>
 
-<span id="nValue"></span><span id="nvalue"></span><span id="NVALUE"></span>*Nvalor*
+<span id="nValue"></span><span id="nvalue"></span><span id="NVALUE"></span>*nValue*
 </dt> <dd>
 
-Especifica el nuevo valor del registro como un entero.
+Especifica el nuevo valor para el registro como entero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los registros de parámetros generales, o GPRMs, son registros de 16 bits que cada disco puede utilizar de manera única para el almacenamiento de datos temporal. Una aplicación de reproducción no necesita tener acceso a estos registros para cualquier control de navegación o reproducción estándar mediante el objeto **MSWebDVD** . Este método se proporciona para las aplicaciones de reproductor que implementan la funcionalidad avanzada. No intente modificar el GPRMs directamente a menos que tenga un conocimiento exhaustivo de la especificación del DVD y las maneras en las que se usa el GPRMs en el disco determinado que se va a reproducir. Si se cambian estos valores, se puede producir un comportamiento impredecible.
+Los registros de parámetros generales, o GPU, son registros de 16 bits que cada disco puede usar de maneras únicas para el almacenamiento temporal de datos. Una aplicación de reproductor no necesita acceder a estos registros para ningún control de reproducción o navegación estándar mediante el **objeto MSWebDVD.** Este método se proporciona para las aplicaciones de reproductor que implementan funcionalidad avanzada. No intente modificar los GPRM directamente a menos que tenga un conocimiento exhaustivo de la especificación de DVD y las formas en que se usan los GPRM en el disco concreto que se va a reproducir. El cambio de estos valores puede dar lugar a un comportamiento impredecible.
 
  
 

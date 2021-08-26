@@ -1,25 +1,25 @@
 ---
-title: Búfer de Application-Allocated
-description: El atributo ACF \ byte \_ Count \ indica al código auxiliar que use un búfer preasignado que no se haya asignado ni liberado por las rutinas de soporte técnico del cliente.
+title: Application-Allocated buffer
+description: El atributo ACF \byte count\ dirige a los códigos auxiliares para que usen un búfer asignado previamente que las rutinas de soporte técnico del cliente no asignan ni \_ liberan.
 ms.assetid: 1b370f74-394e-4e57-9749-83334be50f28
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db533495f16d37aca0bdae96035783650573a60f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9bb87390637cba57cbdf4021a43f4ec98ea64c3828c67dfdb615ffcd62dc8c16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024185"
 ---
-# <a name="application-allocated-buffer"></a>Búfer de Application-Allocated
+# <a name="application-allocated-buffer"></a>Application-Allocated buffer
 
-El \[ [**\_ número de bytes**](/windows/desktop/Midl/byte-count) del atributo ACF \] indica al código auxiliar que utilice un búfer preasignado que no están asignados ni liberado por las rutinas de soporte técnico del cliente. El \[ atributo de **\_ recuento de bytes** \] se aplica a un puntero o a un parámetro de matriz que apunta al búfer. Requiere un parámetro que especifique el tamaño del búfer en bytes.
+El recuento de bytes del atributo ACF dirige a los códigos auxiliares para que usen un búfer asignado previamente que las rutinas de soporte técnico del cliente no asignan ni \[ [**\_**](/windows/desktop/Midl/byte-count) \] liberan. El \[ **atributo byte \_ count** \] se aplica a un puntero o parámetro de matriz que apunta al búfer. Requiere un parámetro que especifica el tamaño del búfer en bytes.
 
-El área de memoria asignada por el cliente puede contener estructuras de datos complejas con varios punteros. Dado que el área de memoria es contiguo, la aplicación no tiene que realizar varias llamadas para liberar cada puntero y estructura de forma individual. Al igual que cuando se usa el \[ atributo [**asignar (todos los \_ nodos)**](/windows/desktop/Midl/allocate) \] , el área de memoria se puede asignar o liberar con una llamada a la rutina de asignación de memoria o la rutina gratuita. Sin embargo, a diferencia de lo que ocurre con el atributo de \[ **asignación (todos los \_ nodos)** \] , el código auxiliar del cliente no administra el parámetro de búfer, sino que la aplicación cliente.
+El área de memoria asignada por el cliente puede contener estructuras de datos complejas con varios punteros. Dado que el área de memoria es contigua, la aplicación no tiene que realizar varias llamadas para liberar cada puntero y estructura individualmente. Como cuando se usa el atributo \[ [**allocate(all \_ nodes),**](/windows/desktop/Midl/allocate) el área de memoria se puede asignar o liberar con una llamada a la rutina de asignación de memoria o a la \] rutina libre. Sin embargo, a diferencia del uso del atributo \[ **allocate(all \_ nodes),** el parámetro buffer no lo administra el código auxiliar del \] cliente, sino la aplicación cliente.
 
-El búfer debe ser un \[ [](/windows/desktop/Midl/out-idl) \] parámetro de solo salida y la longitud del búfer en bytes debe ser un \[ [](/windows/desktop/Midl/in) \] parámetro solo en. El \[ [**atributo \_ recuento de bytes**](/windows/desktop/Midl/byte-count) \] solo se puede aplicar a tipos de puntero. El \[ atributo ACF de **\_ recuento de bytes** \] es una extensión de Microsoft a DCE IDL y, como tal, no está disponible si se compila con el modificador [**/OSF**](/windows/desktop/Midl/-osf) de MIDL.
+El búfer debe ser un parámetro de solo salida y la longitud del búfer \[ [](/windows/desktop/Midl/out-idl) \] en bytes debe ser \[ [**un parámetro solo**](/windows/desktop/Midl/in) \] en . El \[ [**atributo byte \_ count**](/windows/desktop/Midl/byte-count) \] solo se puede aplicar a tipos de puntero. El atributo ACF de recuento de bytes es una extensión de Microsoft para DCE IDL y, como tal, no está disponible si se compila mediante el modificador \[ **\_** \] MIDL [**/osf.**](/windows/desktop/Midl/-osf)
 
-En el ejemplo siguiente, el parámetro *pRoot* utiliza el recuento de bytes:
+En el ejemplo siguiente, el parámetro *pRoot* usa el recuento de bytes:
 
 ``` syntax
 /* function prototype in IDL file (fragment) */
@@ -31,15 +31,15 @@ void SortNames(
 );
 ```
 
-El \[ [**atributo \_ recuento de bytes**](/windows/desktop/Midl/byte-count) \] aparece en el ACF como:
+El \[ [**atributo byte \_ count**](/windows/desktop/Midl/byte-count) \] aparece en el ACF como:
 
 ``` syntax
 /* ACF file (fragment) */
 SortNames([byte_count(cBytes)] pRoot);
 ```
 
-El código auxiliar de cliente generado a partir de estos archivos IDL y ACF no asigna ni libera memoria para este búfer. El código auxiliar del servidor asigna y libera el búfer en una sola llamada utilizando el parámetro de tamaño proporcionado. Si los datos son demasiado grandes para el tamaño de búfer especificado, se produce una excepción.
+El código auxiliar de cliente generado a partir de estos archivos IDL y ACF no asigna ni libera la memoria para este búfer. El código auxiliar del servidor asigna y libera el búfer en una sola llamada mediante el parámetro de tamaño proporcionado. Si los datos son demasiado grandes para el tamaño de búfer especificado, se produce una excepción.
 
- 
+ 
 
- 
+ 

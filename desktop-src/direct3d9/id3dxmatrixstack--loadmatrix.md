@@ -70,7 +70,7 @@ Tenga en cuenta que este método no agrega un elemento a la pila; en su lugar, r
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

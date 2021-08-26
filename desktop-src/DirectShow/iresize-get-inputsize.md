@@ -1,7 +1,7 @@
 ---
-description: El \_ método get Inlocate devuelve el tamaño de entrada actual del filtro de tamaño.
+description: El método get InputSize devuelve el tamaño de entrada actual del \_ filtro de cambio de tamaño.
 ms.assetid: 7066a044-52ea-4851-83f2-f1fb323c2251
-title: 'Método IResize:: get_InputSize (QEDIT. h)'
+title: Método IResize::get_InputSize (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: fab61edf6dc4469f06437483172161fbbe77e76d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b862237f8c51bdf6c22ca9acb667199fadee33b37e425efabfe25bdb8a20dd6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078935"
 ---
-# <a name="iresizeget_inputsize-method"></a>IResize:: get \_ Inlocate (método)
+# <a name="iresizeget_inputsize-method"></a>IResize::get \_ InputSize (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `get_InputSize` método devuelve el tamaño de entrada actual del filtro de tamaño.
+El `get_InputSize` método devuelve el tamaño de entrada actual del filtro de cambio de tamaño.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ HRESULT get_InputSize(
 
 <dl> <dt>
 
-*piHeight* \[ enuncia\]
+*piHeight* \[ out\]
 </dt> <dd>
 
 Recibe el alto del vídeo, en píxeles.
 
 </dd> <dt>
 
-*piWidth* \[ enuncia\]
+*piWidth* \[ out\]
 </dt> <dd>
 
 Recibe el ancho del vídeo, en píxeles.
@@ -62,19 +62,19 @@ Recibe el ancho del vídeo, en píxeles.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el PIN de entrada del filtro no está conectado, devuelva un código de error. De lo contrario, devuelva el ancho y el alto del vídeo, según lo especificado por el tipo de medio del PIN de entrada.
+Si el pin de entrada del filtro no está conectado, devuelva un código de error. De lo contrario, devuelva el ancho y el alto del vídeo, tal y como especifica el tipo de medio del pin de entrada.
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -84,9 +84,9 @@ Si el PIN de entrada del filtro no está conectado, devuelva un código de error
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | DirectX 9,0 o posterior<br/>                                                         |
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Versión<br/> | DirectX 9.0 o posterior<br/>                                                         |
+| Header<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -97,7 +97,7 @@ Si el PIN de entrada del filtro no está conectado, devuelva un código de error
 [Códigos de error y de éxito](error-and-success-codes.md)
 </dt> <dt>
 
-[**Interfaz IResize**](iresize.md)
+[**IResize (Interfaz)**](iresize.md)
 </dt> </dl>
 
  

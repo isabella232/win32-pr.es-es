@@ -1,5 +1,5 @@
 ---
-title: Métodos de GetGlyphImageFormats de IDWriteFontFace4 (Dwrite \_ 3. h)
+title: Métodos IDWriteFontFace4 GetGlyphImageFormats (Dwrite \_ 3.h)
 description: Obtiene los formatos de imagen de glifo admitidos.
 ms.assetid: bbbb399a-fdcd-5e08-4c50-1bec4784d696
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 7b871b1d47f55a87b5d914566a880d7a339e25c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a6b1e67c9904595b374b12aa9bb5384c9d35efcf2c091b3ac227fbced8dfb549
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048815"
 ---
-# <a name="idwritefontface4getglyphimageformats-methods"></a>IDWriteFontFace4:: GetGlyphImageFormats (métodos)
+# <a name="idwritefontface4getglyphimageformats-methods"></a>Métodos IDWriteFontFace4::GetGlyphImageFormats
 
 Obtiene los formatos de imagen de glifo admitidos.
 
@@ -29,8 +29,8 @@ Obtiene los formatos de imagen de glifo admitidos.
 
 | Método                                                                                                                           | Descripción                                                                |
 |:---------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
-| [**GetGlyphImageFormats()**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontface4-getglyphimageformats(uint16_uint32_uint32_dwrite_glyph_image_formats))                                                          | Obtiene todos los formatos de imagen de glifo admitidos por la fuente completa.<br/>  |
-| [**GetGlyphImageFormats (UINT16, UINT32, UINT32, formatos de imagen de glifo de DWRITE \_ \_ \_ \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontface4-getglyphimageformats(uint16_uint32_uint32_dwrite_glyph_image_formats)) | Obtiene los formatos de imagen disponibles de un glifo específico y PPEM. <br/> |
+| [**GetGlyphImageFormats()**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontface4-getglyphimageformats(uint16_uint32_uint32_dwrite_glyph_image_formats))                                                          | Obtiene todos los formatos de imagen de glifo admitidos por toda la fuente.<br/>  |
+| [**GetGlyphImageFormats(UINT16, UINT32, UINT32, DWRITE \_ GLYPH \_ IMAGE FORMATS \_ \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontface4-getglyphimageformats(uint16_uint32_uint32_dwrite_glyph_image_formats)) | Obtiene los formatos de imagen disponibles de un glifo y ppem específicos. <br/> |
 
 
 
@@ -40,7 +40,7 @@ Obtiene los formatos de imagen de glifo admitidos.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dwrite \_ 3. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dwrite \_ 3.h</dt> </dl> |
 
 
 

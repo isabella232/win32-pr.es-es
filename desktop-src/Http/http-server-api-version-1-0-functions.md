@@ -1,20 +1,20 @@
 ---
-title: Funciones de la API del servidor HTTP versión 1,0
+title: Funciones de la API de servidor HTTP versión 1.0
 description: La API del servidor HTTP proporciona las siguientes funciones para escribir aplicaciones.
 ms.assetid: 1da9907d-a09d-41e1-aca1-9a8e2b91296f
 keywords:
-- Funciones de la API del servidor HTTP versión 1,0
-- Functions HTTP, API del servidor HTTP versión 1,0
+- Funciones de la API de servidor HTTP versión 1.0
+- Functions HTTP , HTTP Server API versión 1.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 050821e40695268d6e3fa2c946d2e8859748db2b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8520753e56e995b5751b55ff71cf49f8e82d414e702b2df255c2901e69c397fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104269214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047205"
 ---
-# <a name="http-server-api-version-10-functions"></a>Funciones de la API del servidor HTTP versión 1,0
+# <a name="http-server-api-version-10-functions"></a>Funciones de la API de servidor HTTP versión 1.0
 
 La API del servidor HTTP proporciona las siguientes funciones para escribir aplicaciones.
 
@@ -24,14 +24,14 @@ La API del servidor HTTP proporciona las siguientes funciones para escribir apli
 
 | Función                                             | Descripción                                                                                                                       |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [**HttpCreateHttpHandle**](/windows/desktop/api/Http/nf-http-httpcreatehttphandle) | Crea una cola de solicitudes HTTP y devuelve un identificador a ella.                                                                         |
-| [**HttpInitialize**](/windows/desktop/api/Http/nf-http-httpinitialize)             | Inicializa la API del servidor HTTP para que la use el proceso que realiza la llamada.                                                                   |
-| [**HttpPrepareUrl**](/windows/desktop/api/Http/nf-http-httpprepareurl)             | Analiza, analiza y normaliza una dirección URL Unicode o Punycode no normalizada, por lo que es segura y válida para su uso en otras funciones HTTP. |
-| [**HttpTerminate**](/windows/desktop/api/Http/nf-http-httpterminate)               | Dirige la API del servidor HTTP para limpiar los recursos asociados a un proceso determinado.                                       |
+| [**HttpCreateHttpHandle**](/windows/desktop/api/Http/nf-http-httpcreatehttphandle) | Crea una cola de solicitudes HTTP y le devuelve un identificador.                                                                         |
+| [**HttpInitialize**](/windows/desktop/api/Http/nf-http-httpinitialize)             | Inicializa la API del servidor HTTP para que la use el proceso de llamada.                                                                   |
+| [**HttpPrepareUrl**](/windows/desktop/api/Http/nf-http-httpprepareurl)             | Analiza, analiza y normaliza una dirección URL unicode o punycode no normalizada para que sea segura y válida para usarla en otras funciones HTTP. |
+| [**HttpTerminate**](/windows/desktop/api/Http/nf-http-httpterminate)               | Dirige a la API del servidor HTTP para que limpie los recursos asociados a un proceso determinado.                                       |
 
 
 
- 
+ 
 
 ## <a name="cache-management"></a>Administración de caché
 
@@ -39,13 +39,13 @@ La API del servidor HTTP proporciona las siguientes funciones para escribir apli
 
 | Función                                                       | Descripción                                                                                            |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [**HttpAddFragmentToCache**](/windows/desktop/api/Http/nf-http-httpaddfragmenttocache)       | Almacena en memoria caché un fragmento de datos para que se pueda usar para crear una respuesta dinámica sin leer el disco. |
-| [**HttpFlushResponseCache**](/windows/desktop/api/Http/nf-http-httpflushresponsecache)       | Quita los fragmentos almacenados en caché especificados de la memoria caché HTTP.                                                |
-| [**HttpReadFragmentFromCache**](/windows/desktop/api/Http/nf-http-httpreadfragmentfromcache) | Recupera un fragmento de respuesta almacenado en memoria caché especificado.                                                        |
+| [**HttpAddFragmentToCache**](/windows/desktop/api/Http/nf-http-httpaddfragmenttocache)       | Almacena en caché un fragmento de datos para que se pueda usar para crear una respuesta dinámica sin leer desde el disco. |
+| [**HttpFlushResponseCache**](/windows/desktop/api/Http/nf-http-httpflushresponsecache)       | Quita los fragmentos almacenados en caché especificados de la caché HTTP.                                                |
+| [**HttpReadFragmentFromCache**](/windows/desktop/api/Http/nf-http-httpreadfragmentfromcache) | Recupera un fragmento de respuesta almacenado en caché especificado.                                                        |
 
 
 
- 
+ 
 
 ## <a name="configuration"></a>Configuración
 
@@ -54,12 +54,12 @@ La API del servidor HTTP proporciona las siguientes funciones para escribir apli
 | Función                                                                 | Descripción                                                       |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------|
 | [**HttpDeleteServiceConfiguration**](/windows/desktop/api/Http/nf-http-httpdeleteserviceconfiguration) | Elimina la información especificada del almacén de configuración HTTP.  |
-| [**HttpQueryServiceConfiguration**](/windows/desktop/api/Http/nf-http-httpqueryserviceconfiguration)   | Consulta el almacén de configuración HTTP para obtener la información especificada.   |
-| [**HttpSetServiceConfiguration**](/windows/desktop/api/Http/nf-http-httpsetserviceconfiguration)       | Establece los valores especificados en el almacén de configuración de la API del servidor HTTP. |
+| [**HttpQueryServiceConfiguration**](/windows/desktop/api/Http/nf-http-httpqueryserviceconfiguration)   | Consulta la información especificada en el almacén de configuración HTTP.   |
+| [**HttpSetServiceConfiguration**](/windows/desktop/api/Http/nf-http-httpsetserviceconfiguration)       | Establece los valores especificados en el almacén de configuración de LA API del servidor HTTP. |
 
 
 
- 
+ 
 
 ## <a name="input-and-output"></a>Entrada y salida
 
@@ -68,14 +68,14 @@ La API del servidor HTTP proporciona las siguientes funciones para escribir apli
 | Función                                                             | Descripción                                                    |
 |----------------------------------------------------------------------|----------------------------------------------------------------|
 | [**HttpReceiveHttpRequest**](/windows/desktop/api/Http/nf-http-httpreceivehttprequest)             | Recupera una solicitud HTTP de una cola de solicitudes especificada.      |
-| [**HttpReceiveRequestEntityBody**](/windows/desktop/api/Http/nf-http-httpreceiverequestentitybody) | Recupera los datos del cuerpo de entidad de una solicitud HTTP determinada.       |
+| [**HttpReceiveRequestEntityBody**](/windows/desktop/api/Http/nf-http-httpreceiverequestentitybody) | Recupera los datos del cuerpo de la entidad de una solicitud HTTP determinada.       |
 | [**HttpSendHttpResponse**](/windows/desktop/api/Http/nf-http-httpsendhttpresponse)                 | Envía una respuesta HTTP para una solicitud HTTP determinada.          |
 | [**HttpSendResponseEntityBody**](/windows/desktop/api/Http/nf-http-httpsendresponseentitybody)     | Envía datos de cuerpo de entidad de una respuesta HTTP.                    |
-| [**HttpWaitForDisconnect**](/windows/desktop/api/Http/nf-http-httpwaitfordisconnect)               | Notifica a la aplicación cuando un cliente HTTP se ha desconectado. |
+| [**HttpWaitForDisconnect**](/windows/desktop/api/Http/nf-http-httpwaitfordisconnect)               | Notifica a la aplicación cuando se ha desconectado un cliente HTTP. |
 
 
 
- 
+ 
 
 ## <a name="ssl"></a>SSL
 
@@ -87,7 +87,7 @@ La API del servidor HTTP proporciona las siguientes funciones para escribir apli
 
 
 
- 
+ 
 
 ## <a name="url-registration"></a>Registro de direcciones URL
 
@@ -95,23 +95,23 @@ La API del servidor HTTP proporciona las siguientes funciones para escribir apli
 
 | Función                               | Descripción                                                                                     |
 |----------------------------------------|-------------------------------------------------------------------------------------------------|
-| [**HttpAddUrl**](/windows/desktop/api/Http/nf-http-httpaddurl)       | Registra una dirección URL para que las solicitudes HTTP correspondientes se enruten a una cola de solicitudes especificada.           |
-| [**HttpRemoveUrl**](/windows/desktop/api/Http/nf-http-httpremoveurl) | Anula el registro de una dirección URL especificada, de modo que las solicitudes para ella ya no se enruten a una cola especificada. |
+| [**HttpAddUrl**](/windows/desktop/api/Http/nf-http-httpaddurl)       | Registra una dirección URL para que las solicitudes HTTP se enrute a una cola de solicitudes especificada.           |
+| [**HttpRemoveUrl**](/windows/desktop/api/Http/nf-http-httpremoveurl) | Anula el registro de una dirección URL especificada para que las solicitudes ya no se enruten a una cola especificada. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Estructuras 1,0 de la API del servidor HTTP](http-server-api-version-1-0-structures.md)
+[Estructuras de API de servidor HTTP versión 1.0](http-server-api-version-1-0-structures.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

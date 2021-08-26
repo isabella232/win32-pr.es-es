@@ -1,6 +1,6 @@
 ---
 title: Referencia de conversión de formato en línea
-description: Esta sección contiene las siguientes secciones.
+description: Esta sección contiene las secciones siguientes.
 ms.assetid: 75e7ff03-0946-406d-a769-73f3da8d1dc1
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,21 +9,21 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2b570bee337f1cb61a03701236d31b5256010a1d
-ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
+ms.openlocfilehash: deaefcae553e861ddbc079b0b3f66e442b1beb677b1b13be8e11df75378353c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107222793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023805"
 ---
 # <a name="inline-format-conversion-reference"></a>Referencia de conversión de formato en línea
 
-Esta sección contiene las siguientes secciones
+Esta sección contiene las secciones siguientes
 
 -   [Funciones](format-conversion-functions.md)
 -   [Estructuras](format-conversion-structures.md)
 
-> El encabezado D3DX_DXGIFormatConvert. INL se incluye en el SDK de DirectX heredado y se basa en la compatibilidad con XNAMath para C++. También se incluye en el paquete NuGet [Microsoft. DXSDK. D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) . La versión más reciente usa DirectXMath para la compatibilidad con C++ y todas las funciones se definen en el espacio de nombres de **DirectX** c++.
+> El encabezado D3DX_DXGIFormatConvert.inl se incluye en el SDK de DirectX heredado y se basaba en XNAMath para la compatibilidad con C++. También se incluye en el paquete de NuGet [Microsoft.DXSDK.D3DX.](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) La versión más reciente usa DirectXMath para la compatibilidad con C++, y todas las funciones se definen en el espacio **de nombres de C++ de DirectX.**
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -32,7 +32,7 @@ Esta sección contiene las siguientes secciones
 [Referencia de HLSL](dx-graphics-hlsl-reference.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar el \_ formato de DXGI para la edición de In-Place imagen](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

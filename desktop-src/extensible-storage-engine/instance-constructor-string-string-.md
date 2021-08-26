@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: constructor de instancia (String, String)'
+description: 'Más información sobre: Constructor de instancia (String, String)'
 title: Constructor de instancia (String, String)
 TOCTitle: Instance constructor (String, String)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Instance.#ctor(System.String,System.String)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 02cb629cdfaba17ce9a137b52eb1a6d6fdbaa56b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d93a5799a646a90688261bdd55bc9dfe929ef6bd074a51e15cabdcee768ffa2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116445"
 ---
 # <a name="instance-constructor-string-string"></a>Constructor de instancia (String, String)
 
-Inicializa una nueva instancia de la clase de instancia. La JET_INSTANCE subyacente está asignada, pero no se ha inicializado.
+Inicializa una nueva instancia de la clase Instance. El JET_INSTANCE subyacente está asignado, pero no inicializado.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,16 +59,16 @@ public Instance(
 #### <a name="parameters"></a>Parámetros
 
   - name  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Nombre de la instancia. Esta cadena debe ser única dentro de un proceso determinado que hospede el motor de base de datos.
+    Nombre de la instancia. Esta cadena debe ser única dentro de un proceso determinado que hospeda el motor de base de datos.
 
 <!-- end list -->
 
   - DisplayName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Nombre para mostrar de la instancia. Se utilizará en las entradas del registro de eventos.
+    Nombre para mostrar de la instancia. Se usará en las entradas del registro de eventos.
 
 ## <a name="see-also"></a>Vea también
 
@@ -80,4 +80,4 @@ public Instance(
 
 [Sobrecarga de instancia](./instance-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

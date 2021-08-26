@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1Geometry ComputeArea
+title: Métodos ComputeArea ID2D1Geometry
 description: Calcula el área de la geometría.
 ms.assetid: 655f11bc-7435-4d23-b4b1-3d7c2110aa48
 keywords:
-- Métodos de ComputeArea Direct2D
+- Métodos ComputeArea Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: f6b79e8434a2174bcb05659f6656a46cc2d43cbb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 344cb55314c3cafc2e84479944342633c74bd5a35754c9f7a4f6d53a30da58fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044175"
 ---
-# <a name="id2d1geometrycomputearea-methods"></a>ID2D1Geometry:: ComputeArea (métodos)
+# <a name="id2d1geometrycomputearea-methods"></a>Métodos ID2D1Geometry::ComputeArea
 
 Calcula el área de la geometría.
 
@@ -30,16 +30,16 @@ Calcula el área de la geometría.
 
 | Método                                                                                                                      | Descripción                                                                                                                                      |
 |:----------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ComputeArea (D2D1 \_ Matrix \_ 3X2 \_ F&, Float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f__float))              | Calcula el área de la geometría una vez transformada por la matriz especificada y plana con la tolerancia predeterminada.<br/>    |
-| [**ComputeArea (D2D1 \_ Matrix \_ 3x2 \_ F \* , Float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f_float))             | Calcula el área de la geometría una vez transformada por la matriz especificada y plana con la tolerancia predeterminada.<br/> |
-| [**ComputeArea (D2D1 \_ Matrix \_ 3X2 \_ F&, Float, Float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f__float_float))  | Calcula el área de la geometría una vez transformada por la matriz especificada y plana con la tolerancia especificada.<br/>  |
-| [**ComputeArea (D2D1 \_ Matrix \_ 3x2 \_ F \* , Float, Float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f_float)) | Calcula el área de la geometría una vez transformada por la matriz especificada y plana con la tolerancia especificada.<br/>  |
+| [**ComputeArea(D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f__float))              | Calcula el área de la geometría después de que se haya transformado por la matriz especificada y se haya aplanado con la tolerancia predeterminada.<br/>    |
+| [**ComputeArea(D2D1 \_ MATRIX \_ 3X2 \_ F , FLOAT \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f_float))             | Calcula el área de la geometría después de que se haya transformado por la matriz especificada y se haya aplanado mediante la tolerancia predeterminada.<br/> |
+| [**ComputeArea(D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,FLOAT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f__float_float))  | Calcula el área de la geometría después de que se haya transformado por la matriz especificada y se haya aplanado con la tolerancia especificada.<br/>  |
+| [**ComputeArea(D2D1 \_ MATRIX \_ 3X2 \_ F , \* FLOAT,FLOAT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f_float)) | Calcula el área de la geometría después de que se haya transformado por la matriz especificada y se haya aplanado con la tolerancia especificada.<br/>  |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **ComputeArea** para calcular el área de un círculo especificado (**m \_ pCircleGeometry1**).
+En el ejemplo de código siguiente se **usa ComputeArea** para calcular el área de un círculo especificado (**m \_ pCircleGeometry1**).
 
 
 ```C++
@@ -60,7 +60,7 @@ hr = m_pCircleGeometry1->ComputeArea(
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

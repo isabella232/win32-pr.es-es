@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_INSERTITEM (commctrl. h)
-description: Inserta un nuevo elemento en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la \_ macro InsertItem de TreeView.
+title: TVM_INSERTITEM mensaje (Commctrl.h)
+description: Inserta un nuevo elemento en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ InsertItem.
 ms.assetid: c5e5f88f-6ec8-4b95-89ea-97f6f1fd735e
 keywords:
-- TVM_INSERTITEM controles de mensajes de Windows
+- TVM_INSERTITEM controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 719de4c2391ff924c9f6deb8cb4206cfdb56c3ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85f8a324613820b94e0bd2c49d8fa78136038471f820dd2b9ed8e38ace15f0cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060195"
 ---
-# <a name="tvm_insertitem-message"></a>Mensaje de error de INSERTITEM de TVM \_
+# <a name="tvm_insertitem-message"></a>Mensaje \_ INSERTITEM de TVM
 
-Inserta un nuevo elemento en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ InsertItem de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_insertitem) .
+Inserta un nuevo elemento en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ InsertItem.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_insertitem)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,13 +37,13 @@ Inserta un nuevo elemento en un control de vista de árbol. Puede enviar este me
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**TVINSERTSTRUCT**](/windows/win32/api/commctrl/ns-commctrl-tvinsertstructa) que especifica los atributos del elemento de vista de árbol.
+Puntero a una [**estructura TVINSERTSTRUCT**](/windows/win32/api/commctrl/ns-commctrl-tvinsertstructa) que especifica los atributos del elemento de vista de árbol.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador **HTREEITEM** para el nuevo elemento si se realiza correctamente, o **null** en caso contrario.
+Devuelve el **identificador HTREEITEM** al nuevo elemento si se realiza correctamente o **NULL** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ Devuelve el identificador **HTREEITEM** para el nuevo elemento si se realiza cor
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVM \_ INSERTITEMW** (Unicode) y **TVM \_ INSERTITEMA** (ANSI)<br/>             |
 
 

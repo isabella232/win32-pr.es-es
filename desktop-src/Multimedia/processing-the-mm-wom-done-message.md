@@ -1,25 +1,25 @@
 ---
-title: Procesar el mensaje de MM_WOM_DONE
-description: Procesamiento del \_ mensaje mm WOM \_ Done
+title: Procesamiento del MM_WOM_DONE mensaje
+description: Procesamiento del mensaje \_ DE MM WOM \_ DONE
 ms.assetid: 215167d0-3020-453d-b6b3-cee5803836c9
 keywords:
-- audio de una onda, mensajes
+- audio de forma de onda, mensajes
 - audio auxiliar, mensajes
-- audio de una onda, MM_WOM_DONE mensaje
-- audio auxiliar, mensaje de MM_WOM_DONE
-- Mensaje MM_WOM_DONE
+- audio de forma de onda, MM_WOM_DONE mensaje
+- audio auxiliar, MM_WOM_DONE mensaje
+- MM_WOM_DONE mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73e909777c115b6b10500e081a08bde6cfe24b00
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c6aca93f23ed74a4a4974633d8345f2e897535e156ccc03f46eb0da92a2d2fdf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037865"
 ---
-# <a name="processing-the-mm_wom_done-message"></a>Procesamiento del \_ mensaje mm WOM \_ Done
+# <a name="processing-the-mm_wom_done-message"></a>Procesamiento del mensaje \_ DE MM WOM \_ DONE
 
-En el ejemplo siguiente se muestra cómo procesar el mensaje [**mm \_ WOM \_ Done**](mm-wom-done.md) . En este ejemplo se da por supuesto que la aplicación no reproduce varios bloques de datos, por lo que puede cerrar el dispositivo de salida después de reproducir un único bloque de datos.
+En el ejemplo siguiente se muestra cómo procesar el [**mensaje \_ MM WOM \_ DONE.**](mm-wom-done.md) En este ejemplo se supone que la aplicación no reproduce varios bloques de datos, por lo que puede cerrar el dispositivo de salida después de reproducir un único bloque de datos.
 
 
 ```C++
@@ -47,9 +47,9 @@ switch (msg)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

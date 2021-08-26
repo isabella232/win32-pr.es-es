@@ -45,7 +45,7 @@ Este método no tiene parámetros.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
@@ -54,11 +54,11 @@ Este método no tiene parámetros.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Objetos de criptografía](cryptography-objects.md)
+[Objetos criptografía](cryptography-objects.md)
 </dt> <dt>
 
 [**Certificado**](certificate.md)

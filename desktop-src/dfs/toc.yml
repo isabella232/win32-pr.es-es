@@ -5,7 +5,7 @@
       href: distributed-file-system-dfs-functions.md
     - name: Funciones de seguridad
       href: security-functions.md
-    - name: Priorización de destinos del servidor DFS
+    - name: Priorización del destino del servidor DFS
       href: dfs-server-target-prioritization.md
     - name: Sistema de archivos distribuido referencia
       href: distributed-file-system-reference.md

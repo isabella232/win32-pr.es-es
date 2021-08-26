@@ -15,7 +15,7 @@ ms.locfileid: "120097255"
 ---
 # <a name="chstringarrayinsertat-methods"></a>Métodos CHStringArray::InsertAt
 
-\[La [**clase CHStringArray**](/windows/win32/api/chstrarr/nl-chstrarr-chstringarray) forma parte del marco de proveedores WMI que ahora se considera en estado final y no habrá más desarrollos, mejoras o actualizaciones disponibles para problemas no relacionados con la seguridad que afectan a estas bibliotecas. Las [API de MI](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el nuevo desarrollo.\]
+\[La [**clase CHStringArray**](/windows/win32/api/chstrarr/nl-chstrarr-chstringarray) forma parte del marco de proveedores WMI que ahora se considera en estado final y no habrá más desarrollos, mejoras o actualizaciones disponibles para problemas no relacionados con la seguridad que afecten a estas bibliotecas. Las [API de MI](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el desarrollo nuevo.\]
 
 El **método InsertAt** inserta un elemento (o varias copias de un elemento) o todos los elementos de otra matriz en un índice especificado.
 
@@ -34,17 +34,17 @@ El **método InsertAt** inserta un elemento (o varias copias de un elemento) o t
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                                                                                |
-| Header<br/>                   | <dl> <dt>ChStrArr.h (include FwCommon.h)</dt> </dl>                                                    |
+| Header<br/>                   | <dl> <dt>ChStrArr.h (incluir FwCommon.h)</dt> </dl>                                                    |
 | Biblioteca<br/>                  | <dl> <dt>FrameDyn.lib</dt> </dl>                                                                       |
 | Archivo DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

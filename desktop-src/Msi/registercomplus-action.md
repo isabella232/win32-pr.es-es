@@ -1,23 +1,23 @@
 ---
-description: La acción RegisterComPlus registra las aplicaciones COM+.
+description: La acción RegisterComPlus registra aplicaciones COM+.
 ms.assetid: e42bb993-7079-4d5b-bb2e-c958e99e705e
 title: Acción RegisterComPlus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb824d67e776a99f8cd05c56f73f171f436c71d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 046d1f40293888d3a1be48a3c55fd5082b6073828c8d5cc7d34c464556986d4f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082645"
 ---
 # <a name="registercomplus-action"></a>Acción RegisterComPlus
 
-La acción RegisterComPlus registra las aplicaciones COM+.
+La acción RegisterComPlus registra aplicaciones COM+.
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
-La acción RegisterComPlus debe seguir la acción [InstallFiles](installfiles-action.md) y la [acción UnregisterComPlus](unregistercomplus-action.md).
+La acción RegisterComPlus debe seguir la [acción InstallFiles](installfiles-action.md) y [la acción UnregisterComPlus](unregistercomplus-action.md).
 
 ## <a name="actiondata-messages"></a>Mensajes ActionData
 
@@ -25,7 +25,7 @@ La acción RegisterComPlus debe seguir la acción [InstallFiles](installfiles-ac
 
 | Campo | Descripción de los datos de acción              |
 |-------|-----------------------------------------|
-| \[1\] | IDENTIFICADOR de la aplicación COM+. |
+| \[1\] | Id. de aplicación de la aplicación COM+. |
 
 
 
@@ -35,13 +35,13 @@ La acción RegisterComPlus debe seguir la acción [InstallFiles](installfiles-ac
 
 <dl> <dt>
 
-[Tabla de ComPlus](complus-table.md)
+[Tabla Complus](complus-table.md)
 </dt> <dt>
 
 [Acción UnregisterComPlus](unregistercomplus-action.md)
 </dt> <dt>
 
-[Instalación de una aplicación COM+ con el Windows Installer](installing-a-com--application-with-the-windows-installer.md)
+[Instalación de una aplicación COM+ con Windows Instalador](installing-a-com--application-with-the-windows-installer.md)
 </dt> </dl>
 
  

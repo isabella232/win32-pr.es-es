@@ -67,7 +67,7 @@ Tipo: [MofDeserializerSchemaValidationOption](microsoft.management.infrastructur
 
 Opción de validación de esquema para la deserialización.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [CimMofDeserializer (clase)](microsoft.management.infrastructure.serialization.cimmofdeserializer.md) 
  [Espacio de nombres Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))

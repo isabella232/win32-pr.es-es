@@ -33,7 +33,7 @@ Tipo de datos que especifica un descriptor de búfer registrado que se usa con l
 
 ## <a name="remarks"></a>Comentarios
 
-Las extensiones de E/S registradas de Winsock funcionan principalmente en búferes registrados mediante **objetos \_ BUFFERID de RIO.** Una aplicación obtiene un **\_ BUFFERID de RIO para** un búfer existente mediante la función [**RIORegisterBuffer.**](/previous-versions/windows/desktop/legacy/hh437199(v=vs.85)) Una aplicación puede liberar un registro mediante [**la función RIODeregisterBuffer.**](/windows/win32/api/mswsock/nc-mswsock-lpfn_rioderegisterbuffer)
+Las extensiones de E/S registradas en Winsock funcionan principalmente en búferes registrados mediante **objetos \_ BUFFERID de RIO.** Una aplicación obtiene un **\_ BUFFERID de RIO para** un búfer existente mediante la función [**RIORegisterBuffer.**](/previous-versions/windows/desktop/legacy/hh437199(v=vs.85)) Una aplicación puede liberar un registro mediante la [**función RIODeregisterBuffer.**](/windows/win32/api/mswsock/nc-mswsock-lpfn_rioderegisterbuffer)
 
 Cuando un búfer existente se registra como un objeto **\_ BUFFERID de RIO** mediante la función [**RIORegisterBuffer,**](/previous-versions/windows/desktop/legacy/hh437199(v=vs.85)) determinados recursos internos se asignan desde la memoria física y el búfer de aplicación existente se bloqueará en la memoria física. Se llama a la función [**RIODeregisterBuffer**](/windows/win32/api/mswsock/nc-mswsock-lpfn_rioderegisterbuffer) para anular el registro del búfer, liberar estos recursos internos y permitir que el búfer se desbloquee y se libera de la memoria física.
 
@@ -49,7 +49,7 @@ La **\_ definición de tipo BUFFERID** de RIO se define en el archivo de encabez
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                                  |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                        |
@@ -57,7 +57,7 @@ La **\_ definición de tipo BUFFERID** de RIO se define en el archivo de encabez
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

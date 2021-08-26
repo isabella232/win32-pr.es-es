@@ -13,7 +13,7 @@ ms.locfileid: "120097095"
 ---
 # <a name="activex-control-and-control-container-guidelines"></a>ActiveX Directrices para controlar y controlar contenedores
 
-En los temas siguientes se proporcionan instrucciones para implementar ActiveX y contenedores que interoperarán bien con otros controles y contenedores. En esta sección se define el conjunto mínimo de interfaces, métodos y características necesarios para ActiveX y contenedores para lograr una interoperabilidad sin problemas y útil.
+En los temas siguientes se proporcionan instrucciones para implementar ActiveX y contenedores que interoperarán bien con otros controles y contenedores. En esta sección se define el conjunto mínimo de interfaces, métodos y características necesarios para que los controles y contenedores de ActiveX puedan lograr una interoperabilidad sin problemas y útil.
 
 -   [Información general sobre las directrices del contenedor de controles y controles](overview-of-control-and-control-container-guidelines.md)
 -   [Controles](controls.md)
