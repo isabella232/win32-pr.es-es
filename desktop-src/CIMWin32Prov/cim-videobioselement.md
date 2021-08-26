@@ -31,23 +31,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4864e3787b00ca72f90d0c6d15c35049abd58acd04c3d221aa29436d8885a652
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 317bbf71b166ea51e665ad96c58657927412cbab
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080259"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882027"
 ---
 # <a name="cim_videobioselement-class"></a>Cim \_ VideoBIOSElement (clase)
 
 La **clase \_ CIM VideoBIOSElement** representa el software de bajo nivel que se carga en el almacenamiento no volátil y se usa para configurar y acceder al controlador de vídeo y la pantalla de un sistema informático.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -77,13 +77,13 @@ class CIM_VideoBIOSElement : CIM_SoftwareElement
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ CIM VideoBIOSElement** tiene estos tipos de miembros:
+La **clase \_ VideoBIOSElement de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ CIM VideoBIOSElement** tiene estas propiedades.
+La **clase \_ Cim VideoBIOSElement** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -207,7 +207,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Video BIOS \| 001.5")
 </dt> </dl>
 
-Si **es TRUE,** el BIOS de vídeo se sombrea.
+Si **es TRUE,** el BIOS del vídeo se sombrea.
 
 </dd> <dt>
 
@@ -273,7 +273,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OtherTypeDescription**")
 </dt> </dl>
 
-Fabricante y tipo de sistema operativo para un elemento de software cuando la **propiedad TargetOperatingSystem** tiene un valor de 1 ("Other"). Cuando la **propiedad TargetOperatingSystem** tiene un valor de 1, esta propiedad debe tener un valor distinto de NULL. Para todos los **demás valores targetOperatingSystem,** esta propiedad es null. Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+Fabricante y tipo de sistema operativo para un elemento de software cuando la **propiedad TargetOperatingSystem** tiene un valor de 1 ("Other"). Cuando la **propiedad TargetOperatingSystem** tiene un valor de 1, esta propiedad debe tener un valor distinto de NULL. Para todos los **demás valores de TargetOperatingSystem,** esta propiedad es NULL. Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 </dd> <dt>
 
@@ -307,7 +307,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Identificador del elemento de software diseñado para usarse junto con otras claves para crear una representación única de la [**clase \_ SoftwareElement de CIM.**](cim-softwareelement.md)
+Identificador del elemento de software diseñado para usarse junto con otras claves para crear una representación única de la [**\_ clase SoftwareElement de CIM.**](cim-softwareelement.md)
 
 Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
@@ -322,7 +322,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Estado de un elemento de software.
@@ -425,7 +425,7 @@ Los valores son los siguientes:
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error previo")
+**Error de pred** ("error de pred")
 
 
 </dt> <dd></dd> <dt>
@@ -439,7 +439,7 @@ Los valores son los siguientes:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Deteniendo")
+**Detener** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1023,8 +1023,8 @@ Versión de la operación.
 
 La versión de la operación debe tener uno de los formatos siguientes:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;&gt;principal. &lt; &gt;secundaria. &lt; Revisión&gt;
+-   &lt;&gt;principal. &lt; revisión &gt; &lt; de letra &gt; &lt; secundaria&gt;
 
 Esta propiedad se hereda de la [**clase \_ SoftwareElement de CIM.**](cim-softwareelement.md)
 
@@ -1052,7 +1052,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

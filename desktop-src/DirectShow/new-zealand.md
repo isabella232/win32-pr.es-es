@@ -4,12 +4,12 @@ ms.assetid: a314d0b1-9e4f-42dd-914a-65a8f3610300
 title: Nueva Zelanda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9879e89f6460ab25aa93594001068526404dcd84
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 63f8f95412f4c8038708ddfde068fd1ddb27aca78bc50206484640ffb552a700
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112067991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102395"
 ---
 # <a name="new-zealand"></a>Nueva Zelanda
 
@@ -20,7 +20,7 @@ Los índices de frecuencia de la tabla de difusión de Nueva Zelanda son adecuad
 -   [Windows 7 y versiones posteriores](#windows-7-and-later)
     -   [Asignaciones de difusión de Nueva Zelanda](#new-zealand-broadcast-assignments)
     -   [Asignaciones de cable de Nueva Zelanda](#new-zealand-cable-assignments)
--   [Asignaciones de canales anteriores](#earlier-channel-assignments)
+-   [Asignaciones de canal anteriores](#earlier-channel-assignments)
     -   [Asignaciones de difusión de Nueva Zelanda](#new-zealand-broadcast-assignments)
     -   [Asignaciones de cable de Nueva Zelanda](#new-zealand-cable-assignments)
 -   [Temas relacionados](#related-topics)
@@ -142,7 +142,7 @@ Los índices de frecuencia de la tabla de difusión de Nueva Zelanda son adecuad
        799250000L,      // 49   E62 
 ```
 
-## <a name="earlier-channel-assignments"></a>Asignaciones de canales anteriores
+## <a name="earlier-channel-assignments"></a>Asignaciones de canal anteriores
 
 ### <a name="new-zealand-broadcast-assignments"></a>Asignaciones de difusión de Nueva Zelanda
 

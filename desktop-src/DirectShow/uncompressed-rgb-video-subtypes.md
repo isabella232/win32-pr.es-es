@@ -4,12 +4,12 @@ ms.assetid: 49c91c8c-6889-48c6-8fa5-84929c03d951
 title: Subtipos de vídeo RGB sin comprimir (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f149786c32c0734492179e2d3e75e5a7d7df969
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: a8fc35faaa5b6a58a597bf8d563ded4a920b0a112f61a4858f32c1b61fa29966
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130985"
 ---
 # <a name="uncompressed-rgb-video-subtypes"></a>Subtipos de vídeo RGB sin comprimir
 
@@ -19,7 +19,7 @@ Los subtipos siguientes definen formatos RGB sin comprimir sin canal alfa.
 
 | Constante                                                                                                                                                                        | Descripción                                       |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------|
-| <span id="MEDIASUBTYPE_RGB1"></span><span id="mediasubtype_rgb1"></span><dl> <dt>**MEDIASUBTYPE \_ RGB1**</dt> </dl>       | RGB, 1 bit por píxel (bpp), encodizado<br/> |
+| <span id="MEDIASUBTYPE_RGB1"></span><span id="mediasubtype_rgb1"></span><dl> <dt>**MEDIASUBTYPE \_ RGB1**</dt> </dl>       | RGB, 1 bit por píxel (bpp), con efectos<br/> |
 | <span id="MEDIASUBTYPE_RGB4"></span><span id="mediasubtype_rgb4"></span><dl> <dt>**MEDIASUBTYPE \_ RGB4**</dt> </dl>       | RGB, 4 bpp, desenlazado<br/>                 |
 | <span id="MEDIASUBTYPE_RGB8"></span><span id="mediasubtype_rgb8"></span><dl> <dt>**MEDIASUBTYPE \_ RGB8**</dt> </dl>       | RGB, 8 bpp, coloreteado<br/>                 |
 | <span id="MEDIASUBTYPE_RGB555"></span><span id="mediasubtype_rgb555"></span><dl> <dt>**MEDIASUBTYPE \_ RGB555**</dt> </dl> | RGB 555, 16 bpp<br/>                        |
@@ -43,9 +43,9 @@ Los subtipos siguientes definen formatos RGB sin comprimir con canal alfa.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el caso de los formatos de color, el color de cada píxel se especifica como un índice en una paleta. La paleta debe incluirse en el bloque de formato, siguiendo la [**estructura BITMAPINFOHEADER.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) En el caso de los formatos nofittizados, el color de cada píxel se especifica directamente; el diseño de memoria depende de la profundidad de bits:
+En el caso de los formatos de color, el color de cada píxel se especifica como un índice en una paleta. La paleta debe incluirse en el bloque de formato, siguiendo la [**estructura BITMAPINFOHEADER.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) En el caso de los formatos no tachados, el color de cada píxel se especifica directamente; el diseño de memoria depende de la profundidad de bits:
 
 -   RGB 555 usa el siguiente diseño de memoria:
     ```C++
@@ -121,7 +121,7 @@ En el caso de los formatos de color, el color de cada píxel se especifica como 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

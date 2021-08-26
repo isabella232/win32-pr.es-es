@@ -1,9 +1,9 @@
 ---
-title: VER. timerInterval
-description: El atributo timerInterval especifica o recupera el intervalo, en milisegundos, en el que el temporizador activa eventos al controlador de eventos de tiempo de actividad.
+title: VIEW.timerInterval
+description: El atributo timerInterval especifica o recupera el intervalo, en milisegundos, en el que el temporizador desenvía eventos al controlador de eventos ontimer.
 ms.assetid: 1a69890f-5ea4-493a-8a9e-04fe60a41804
 keywords:
-- VISTA de Windows Media Player. timerInterval
+- VIEW.timerInterval Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 790c95fbb2cded134222271d04c4c37dae412b8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f43b2b7bbd87663a35c43db733d3e11ff0dca5bc3ddfd00e57022b4df7122c3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001315"
 ---
-# <a name="viewtimerinterval"></a>VER. timerInterval
+# <a name="viewtimerinterval"></a>VIEW.timerInterval
 
-El atributo **timerInterval** especifica o recupera el intervalo, en milisegundos, en el que el temporizador activa eventos al controlador de eventos de **tiempo de actividad** .
+El **atributo timerInterval** especifica o recupera el intervalo, en milisegundos, en el que el temporizador desenvía eventos al controlador **de eventos ontimer.**
 
 ``` syntax
         elementID.timerInterval
@@ -29,24 +29,24 @@ El atributo **timerInterval** especifica o recupera el intervalo, en milisegundo
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura y escritura (**Long**) con un valor predeterminado de 1000.
+Este atributo es un número de lectura y **escritura** (**long**) con un valor predeterminado de 1000.
 
 
 
 | Value        | Descripción                    |
 |--------------|--------------------------------|
-| 0            | El evento de temporizador no se activa. |
-| 50 y versiones posteriores | Intervalo en milisegundos.  |
+| 0            | El evento de temporizador no se produce. |
+| 50 y posteriores | Intervalo en milisegundos.  |
 
 
 
  
 
-Cualquier valor por debajo de 50 (incluidos los números negativos, pero sin incluir cero) genera un error y se mantiene el valor anterior.
+Cualquier valor inferior a 50 (incluidos los números negativos, pero sin incluir cero) genera un error y se mantiene el valor anterior.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esto no se activará automáticamente si no se implementa ningún controlador de eventos de **tiempo de ejecución** . Por lo tanto, no hay degradación del rendimiento, aunque el valor predeterminado sea distinto de cero.
+Esto no se activa automáticamente si no se implementa ningún controlador de eventos **ontimer.** Por lo tanto, no hay ninguna degradación del rendimiento aunque el valor predeterminado sea distinto de cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Esto no se activará automáticamente si no se implementa ningún controlador de
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -62,10 +62,10 @@ Esto no se activará automáticamente si no se implementa ningún controlador de
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> <dt>
 
-[**VER. tiempo de espera**](view-ontimer.md)
+[**VIEW.ontimer**](view-ontimer.md)
 </dt> </dl>
 
  

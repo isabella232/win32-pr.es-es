@@ -1,8 +1,8 @@
 ---
-description: Las tareas administrativas de cuenta y de dominio obtienen información como el dominio del equipo o el usuario que ha iniciado sesión actualmente.
+description: Las tareas administrativas de cuenta y dominio obtienen información como el dominio del equipo o el usuario que ha iniciado sesión actualmente.
 ms.assetid: 1a9cc44b-c366-465d-a0d0-536d5dc818b5
 ms.tgt_platform: multiple
-title: 'Tareas de WMI: cuentas y dominios'
+title: 'Tareas wmi: cuentas y dominios'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,42 +10,42 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3bcda33677ada6c4a08e2d9bdc1676c9662a5cd8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bacf37ebab07ab60e347efa1645c3cf320700fb3
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278968"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884696"
 ---
-# <a name="wmi-tasks-accounts-and-domains"></a>Tareas de WMI: cuentas y dominios
+# <a name="wmi-tasks-accounts-and-domains"></a>Tareas wmi: cuentas y dominios
 
-Las tareas administrativas de cuenta y de dominio obtienen información como el dominio del equipo o el usuario que ha iniciado sesión actualmente. Muchas de estas tareas se realizan mejor con los scripts [ADSI](/windows/desktop/ADSI/active-directory-service-interfaces-adsi) . Para obtener más información y otros ejemplos, vea el repositorio de scripts de TechNet [ScriptCenter](https://www.microsoft.com/technet/scriptcenter) .
+Las tareas administrativas de cuenta y dominio obtienen información como el dominio del equipo o el usuario que ha iniciado sesión actualmente. Muchas de estas tareas se realizan mejor con scripts [ADSI.](/windows/desktop/ADSI/active-directory-service-interfaces-adsi) Para obtener más información y otros ejemplos, consulte el repositorio de [scripts de Scriptcenter](https://www.microsoft.com/technet/scriptcenter) de TechNet.
 
-Los ejemplos de scripts que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información acerca de cómo usar el script para obtener datos de equipos remotos, consulte [conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md).
+Los ejemplos de script que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información sobre cómo usar el script para obtener datos de equipos remotos, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 
 En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con la extensión. vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una extensión. txt al archivo.
-2.  Abra una ventana del símbolo del sistema y navegue hasta el directorio en el que guardó el archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una .txt al archivo.
+2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
-4.  Si no puede obtener acceso a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
+4.  Si no puede acceder a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
 
 > [!Note]  
-> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts de WMI pueden generar grandes cantidades de resultados, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script de *filename.vbs* a *outfile.txt*.
+> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del *script* filename.vbsa *outfile.txt*.
 
  
 
-En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para obtener distintos tipos de datos del equipo local.
+En la tabla siguiente se enumeran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -55,11 +55,11 @@ En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para ob
 </thead>
 <tbody>
 <tr class="odd">
-<td>... determinar el dominio al que pertenece un equipo</td>
-<td>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y compruebe el valor de la propiedad de <strong>dominio</strong> . También puede usar la propiedad <strong>DNSDomain</strong> en <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a>.<br/> <span data-codelanguage="VisualBasic"></span>
+<td>... determinar el dominio al que pertenece un equipo?</td>
+<td>Use la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y compruebe el valor de la <strong>propiedad Domain.</strong> También puede usar la <strong>propiedad DNSDomain</strong> en <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a>.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -82,7 +82,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -100,7 +100,7 @@ Next</code></pre></td>
 <span data-codelanguage="CSharp"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -112,7 +112,7 @@ Next</code></pre></td>
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -125,13 +125,13 @@ foreach (CimInstance cimObj in queryInstance)
 </td>
 </tr>
 <tr class="even">
-<td>... determinar si un equipo es un servidor o una estación de trabajo</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y la propiedad <strong>DomainRole</strong> .</p>
+<td>... determinar si un equipo es un servidor o una estación de trabajo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y la <strong>propiedad DomainRole.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -166,7 +166,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -194,13 +194,13 @@ switch  ($computer.DomainRole) {
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿determinar el nombre del equipo?</td>
-<td><p>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y la propiedad <strong>Name</strong> . También puede usar la propiedad <strong>DNSHostName</strong> en <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a>.</p>
+<td>... determinar el nombre del equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y la <strong>propiedad Name.</strong> También puede usar la <strong>propiedad DNSHostName</strong> en <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a>.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -221,7 +221,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -238,7 +238,7 @@ Next</code></pre></td>
 <span data-codelanguage="CSharp"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -250,7 +250,7 @@ Next</code></pre></td>
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -263,13 +263,13 @@ foreach (CimInstance cimObj in queryInstance)
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿buscar el nombre de la persona que ha iniciado sesión actualmente en un equipo?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y la propiedad <strong>username</strong> .</p>
+<td>... ¿Busca el nombre de la persona que ha iniciado sesión actualmente en un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y la <strong>propiedad UserName.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -292,7 +292,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -312,7 +312,7 @@ foreach($computer in $computers) {
 <span data-codelanguage="CSharp"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -324,7 +324,7 @@ foreach($computer in $computers) {
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -337,13 +337,13 @@ foreach (CimInstance cimObj in queryInstance)
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿cambiar el nombre de un equipo?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y el método <strong>Rename</strong> .</p>
+<td>... ¿Cambiar el nombre de un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y el <strong>método Rename.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -365,7 +365,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -398,14 +398,14 @@ if ($return.ReturnValue -eq 0) {
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿recuperar solo los grupos locales mediante WMI?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-group"><strong>Win32_Group</strong></a> e incluya la siguiente cláusula <strong>Where</strong> en la consulta <a href="querying-with-wql.md">WQL</a> .</p>
+<td>... ¿Recuperar solo grupos locales mediante WMI?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-group"><strong>Win32_Group</strong></a> e incluya la siguiente <strong>cláusula WHERE</strong> en la <a href="querying-with-wql.md">consulta WQL.</a></p>
 <p><code>Where LocalAccount = True</code></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -432,7 +432,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -460,11 +460,11 @@ $accts |ftName, Sid, SidType, Status-autosize</code></pre></td>
 
 <dl> <dt>
 
-[Tareas de WMI para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
+[Tareas wmi para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Ejemplos de aplicaciones de C++ de WMI](wmi-c---application-examples.md)
+[Ejemplos de aplicaciones wmi de C++](wmi-c---application-examples.md)
 </dt> <dt>
 
-[ScriptCenter de TechNet](https://www.microsoft.com/technet/scriptcenter)
+[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a194067fd8a5bb34569723245b68996163d0cd9a2eef332e6f42fceb8187eecb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d2a3bfe94e001c6a65256facd5484a015d00f245
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119590655"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475761"
 ---
 # <a name="wmt_videoimage_transition_flip"></a>WMT \_ VIDEOIMAGE \_ TRANSITION \_ FLIP
 
@@ -27,40 +27,16 @@ La transición de volteo gira la imagen antigua en un eje Y a través del centro
 
 ## <a name="parameters"></a>Parámetros
 
-En la tabla siguiente se describen los parámetros usados por esta transición y se enumeran los miembros de la estructura [**\_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) de WMT a la que están asignados.
+En la tabla siguiente se describen los parámetros utilizados por esta transición y se enumeran los miembros de la estructura [**\_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) de WMT a la que están asignados.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parámetro</th>
-<th>Miembro de estructura</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ángulo</td>
-<td><strong>fEffectPara0</strong></td>
-<td>Ángulo de rotación, de 0,0 a 180,0 grados.</td>
-</tr>
-<tr class="even">
-<td>Composición</td>
-<td><strong>fEffectPara1</strong></td>
-<td>Establezca en uno de los siguientes valores:
-<ul>
-<li>0: especifica la composición normal, en la que la imagen anterior es el fondo y la imagen actual es el primer plano.</li>
-<li>1 - Especifica la composición invertida, en la que la imagen actual es la imagen de fondo, y la imagen anterior es el primer plano</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Parámetro | Miembro de estructura | Descripción | 
+|-----------|------------------|-------------|
+| Ángulo | <strong>fEffectPara0</strong> | Ángulo de rotación, de 0,0 a 180,0 grados. | 
+| Composición | <strong>fEffectPara1</strong> | Establezca en uno de los siguientes valores:<ul><li>0: especifica la composición normal, en la que la imagen anterior es el fondo y la imagen actual es el primer plano.</li><li>1 - Especifica la composición invertida, en la que la imagen actual es la imagen de fondo, y la imagen anterior es el primer plano</li></ul> | 
+
 
 
 
@@ -80,7 +56,7 @@ Puede visualizar el efecto de esta transición como si ambas imágenes fueran fo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

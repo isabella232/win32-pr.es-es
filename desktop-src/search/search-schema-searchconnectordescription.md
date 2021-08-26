@@ -1,19 +1,19 @@
 ---
-description: El <searchConnectorDescriptionType> elemento es el contenedor de nivel superior para la definición del conector de búsqueda.
+description: El &lt; elemento searchConnectorDescriptionType &gt; es el contenedor de nivel superior para la definición del conector de búsqueda.
 ms.assetid: a6b45864-210d-4099-804d-7548fd8eb562
 title: Elemento searchConnectorDescriptionType (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f228097e905ea6e60bb9197bcf8b8b381671a52f3375849af992f903df6e8b5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3f89621ab34f65fb3c3b1f8e88bbdc8dca246b8d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119937915"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885076"
 ---
 # <a name="searchconnectordescriptiontype-element-search-connector-schema"></a>Elemento searchConnectorDescriptionType (esquema del conector de búsqueda)
 
-El <searchConnectorDescriptionType> elemento es el contenedor de nivel superior para la definición del conector de búsqueda.
+El &lt; elemento searchConnectorDescriptionType &gt; es el contenedor de nivel superior para la definición del conector de búsqueda.
 
 -   [Sintaxis](#syntax)
 -   [Información de elemento](#element-information)

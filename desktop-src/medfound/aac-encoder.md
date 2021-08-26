@@ -4,12 +4,12 @@ ms.assetid: d88a8c32-c71f-4ddb-af8c-e2fb54c2322c
 title: Codificador AAC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fb6867ad42645ffc2bbf2b853e215d3794053157a776e02eddf015b320e3215
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 674ad291e1cf6b56f7ffef640fade683265b62a7
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943375"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465642"
 ---
 # <a name="aac-encoder"></a>Codificador AAC
 
@@ -31,56 +31,15 @@ Establezca los atributos siguientes en el tipo de medio de entrada.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descripción</th>
-<th>Observaciones</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="mf-mt-major-type-attribute.md"><strong>MF_MT_MAJOR_TYPE</strong></a></td>
-<td>Tipo principal.</td>
-<td>Debe ser <strong>MFMediaType_Audio</strong>.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-subtype-attribute.md"><strong>MF_MT_SUBTYPE</strong></a></td>
-<td>Subtipo.</td>
-<td>Debe ser <strong>MFAudioFormat_PCM</strong>.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-bits-per-sample-attribute.md"><strong>MF_MT_AUDIO_BITS_PER_SAMPLE</strong></a></td>
-<td>Bits por ejemplo.</td>
-<td>Debe ser 16.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-samples-per-second-attribute.md"><strong>MF_MT_AUDIO_SAMPLES_PER_SECOND</strong></a></td>
-<td>Ejemplos por segundo.</td>
-<td>Se admiten los valores siguientes:
-<ul>
-<li>44100 (44,1 KHz)</li>
-<li>48000 (48 KHz)</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-num-channels-attribute.md"><strong>MF_MT_AUDIO_NUM_CHANNELS</strong></a></td>
-<td>Número de canales.</td>
-<td>Debe ser 1 (mono) o 2 (estéreo) o 6 (5.1).
-<blockquote>
-[!Note]<br />
-La compatibilidad con 6 canales de audio se introdujo con Windows 10 y no está disponible para versiones anteriores de Windows.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descripción | Observaciones | 
+|-----------|-------------|---------|
+| <a href="mf-mt-major-type-attribute.md"><strong>MF_MT_MAJOR_TYPE</strong></a> | Tipo principal. | Debe ser <strong>MFMediaType_Audio</strong>. | 
+| <a href="mf-mt-subtype-attribute.md"><strong>MF_MT_SUBTYPE</strong></a> | Subtipo. | Debe ser <strong>MFAudioFormat_PCM</strong>. | 
+| <a href="mf-mt-audio-bits-per-sample-attribute.md"><strong>MF_MT_AUDIO_BITS_PER_SAMPLE</strong></a> | Bits por ejemplo. | Debe ser 16. | 
+| <a href="mf-mt-audio-samples-per-second-attribute.md"><strong>MF_MT_AUDIO_SAMPLES_PER_SECOND</strong></a> | Ejemplos por segundo. | Se admiten los valores siguientes:<ul><li>44100 (44,1 KHz)</li><li>48000 (48 KHz)</li></ul> | 
+| <a href="mf-mt-audio-num-channels-attribute.md"><strong>MF_MT_AUDIO_NUM_CHANNELS</strong></a> | Número de canales. | Debe ser 1 (mono) o 2 (estéreo) o 6 (5.1).<blockquote>[!Note]<br />La compatibilidad con 6 canales de audio se introdujo con Windows 10 y no está disponible para versiones anteriores de Windows.</blockquote><br /> | 
+
 
 
 
@@ -98,81 +57,18 @@ Establezca los atributos siguientes en el tipo de medio de salida.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descripción</th>
-<th>Observaciones</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="mf-mt-major-type-attribute.md"><strong>MF_MT_MAJOR_TYPE</strong></a></td>
-<td>Tipo principal.</td>
-<td>Debe ser <strong>MFMediaType_Audio</strong>.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-subtype-attribute.md"><strong>MF_MT_SUBTYPE</strong></a></td>
-<td>Subtipo de audio.</td>
-<td>Debe ser <strong>MFAudioFormat_AAC</strong>.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-bits-per-sample-attribute.md"><strong>MF_MT_AUDIO_BITS_PER_SAMPLE</strong></a></td>
-<td>Bits por ejemplo.</td>
-<td>Debe ser 16.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-samples-per-second-attribute.md"><strong>MF_MT_AUDIO_SAMPLES_PER_SECOND</strong></a></td>
-<td>Ejemplos por segundo.</td>
-<td>Debe coincidir con el tipo de entrada.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-num-channels-attribute.md"><strong>MF_MT_AUDIO_NUM_CHANNELS</strong></a></td>
-<td>Número de canales.</td>
-<td>Debe coincidir con el tipo de entrada.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-avg-bytes-per-second-attribute.md"><strong>MF_MT_AUDIO_AVG_BYTES_PER_SECOND</strong></a></td>
-<td>Velocidad de bits de la secuencia de AAC codificada, en bytes por segundo.</td>
-<td>Se admiten los valores siguientes:
-<ul>
-<li>12000</li>
-<li>16000</li>
-<li>20000</li>
-<li>24000</li>
-</ul>
-El valor predeterminado para mono y estéreo es 12000 (96 Kbps).<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-aac-payload-type.md">MF_MT_AAC_PAYLOAD_TYPE</a></td>
-<td>Tipo de carga de AAC.</td>
-<td>Opcional. Si se establece, el valor debe ser cero, lo que indica que la secuencia solo raw_data_block elementos.<br/> Opcional. Si no se establece el atributo, el valor predeterminado es cero, lo que indica que la secuencia solo contiene raw_data_block elementos (AAC sin formato). <br/> En Windows 7, si se establece este atributo, el valor debe ser cero.<br/> A partir Windows 8, el valor puede ser 0 (AAC sin procesar) o 1 (AAC de ADTS). <br/></td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-aac-audio-profile-level-indication.md">MF_MT_AAC_AUDIO_PROFILE_LEVEL_INDICATION</a></td>
-<td>Nivel y perfil de audio de AAC.</td>
-<td>Opcional. Se admiten los valores siguientes:
-<ul>
-<li>0x29 (valor predeterminado)</li>
-<li>0x2A</li>
-<li>0x2B</li>
-<li>0x2C</li>
-<li>0x2E</li>
-<li>0x2F</li>
-<li>0x30</li>
-<li>0x31</li>
-<li>0x32</li>
-<li>0x33</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descripción | Observaciones | 
+|-----------|-------------|---------|
+| <a href="mf-mt-major-type-attribute.md"><strong>MF_MT_MAJOR_TYPE</strong></a> | Tipo principal. | Debe ser <strong>MFMediaType_Audio</strong>. | 
+| <a href="mf-mt-subtype-attribute.md"><strong>MF_MT_SUBTYPE</strong></a> | Subtipo de audio. | Debe ser <strong>MFAudioFormat_AAC</strong>. | 
+| <a href="mf-mt-audio-bits-per-sample-attribute.md"><strong>MF_MT_AUDIO_BITS_PER_SAMPLE</strong></a> | Bits por ejemplo. | Debe ser 16. | 
+| <a href="mf-mt-audio-samples-per-second-attribute.md"><strong>MF_MT_AUDIO_SAMPLES_PER_SECOND</strong></a> | Ejemplos por segundo. | Debe coincidir con el tipo de entrada. | 
+| <a href="mf-mt-audio-num-channels-attribute.md"><strong>MF_MT_AUDIO_NUM_CHANNELS</strong></a> | Número de canales. | Debe coincidir con el tipo de entrada. | 
+| <a href="mf-mt-audio-avg-bytes-per-second-attribute.md"><strong>MF_MT_AUDIO_AVG_BYTES_PER_SECOND</strong></a> | Velocidad de bits de la secuencia de AAC codificada, en bytes por segundo. | Se admiten los valores siguientes:<ul><li>12000</li><li>16000</li><li>20000</li><li>24000</li></ul>El valor predeterminado para mono y estéreo es 12000 (96 Kbps).<br /> | 
+| <a href="mf-mt-aac-payload-type.md">MF_MT_AAC_PAYLOAD_TYPE</a> | Tipo de carga de AAC. | Opcional. Si se establece, el valor debe ser cero, lo que indica que la secuencia solo raw_data_block elementos.<br /> Opcional. Si no se establece el atributo, el valor predeterminado es cero, lo que indica que la secuencia solo contiene raw_data_block elementos (AAC sin formato). <br /> En Windows 7, si se establece este atributo, el valor debe ser cero.<br /> A partir Windows 8, el valor puede ser 0 (AAC sin procesar) o 1 (AAC de ADTS). <br /> | 
+| <a href="mf-mt-aac-audio-profile-level-indication.md">MF_MT_AAC_AUDIO_PROFILE_LEVEL_INDICATION</a> | Perfil y nivel de audio de AAC. | Opcional. Se admiten los valores siguientes:<ul><li>0x29 (valor predeterminado)</li><li>0x2A</li><li>0x2B</li><li>0x2C</li><li>0x2E</li><li>0x2F</li><li>0x30</li><li>0x31</li><li>0x32</li><li>0x33</li></ul> | 
+
 
 En la tabla siguiente se enumeran los valores que se pueden usar para el MF_MT_AAC_PROFILE_LEVEL_INDICATION atributo .
 
@@ -207,7 +103,7 @@ Tipo de medio de entrada:
 
 
 
-| Atributo                                                                                    | Value                  |
+| Atributo                                                                                    | Valor                  |
 |----------------------------------------------------------------------------------------------|------------------------|
 | [**TIPO \_ PRINCIPAL DE MF MT \_ \_**](mf-mt-major-type-attribute.md)                                    | **MFMediaType \_ Audio** |
 | [**SUBTIPO \_ MT DE MF \_**](mf-mt-subtype-attribute.md)                                           | **MFAudioFormat \_ PCM** |
@@ -228,7 +124,7 @@ Tipo de medio de salida:
 
 
 
-| Atributo                                                                                      | Value                                                                                           |
+| Atributo                                                                                      | Valor                                                                                           |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | [**TIPO \_ PRINCIPAL DE MF MT \_ \_**](mf-mt-major-type-attribute.md)                                      | **MFMediaType \_ Audio**                                                                          |
 | [**SUBTIPO \_ MT DE MF \_**](mf-mt-subtype-attribute.md)                                             | **MFAudioFormat \_ AAC**                                                                          |
@@ -266,7 +162,7 @@ LONGLONG hnsSampleDuration =
 donde *nAudioSamplesPerChannel* es el número de muestras de audio pcm por canal en el búfer de entrada y *nSamplesPerSec* es la frecuencia de muestreo, en muestras por segundo.
 
 > [!Note]  
-> Debido a un error en la implementación actual, si la duración del ejemplo se establece en cero, la llamada a [**ProcessInput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) se realiza correctamente, pero una llamada posterior a [**IMFTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) producirá una excepción de división por cero. Para evitar este error, establezca una duración distinta de cero válida en cada ejemplo de entrada.
+> Debido a un error en la implementación actual, si la duración de la muestra se establece en cero, la llamada a [**ProcessInput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) se realiza correctamente, pero una llamada posterior a [**IMFTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) producirá una excepción de división por cero. Para evitar este error, establezca una duración distinta de cero válida en cada ejemplo de entrada.
 
  
 
@@ -274,7 +170,7 @@ donde *nAudioSamplesPerChannel* es el número de muestras de audio pcm por canal
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                 |
@@ -282,7 +178,7 @@ donde *nAudioSamplesPerChannel* es el número de muestras de audio pcm por canal
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

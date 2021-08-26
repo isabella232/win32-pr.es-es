@@ -1,7 +1,7 @@
 ---
-description: Bloquea o Desbloquea los medios.
+description: Bloquea o desbloquea el medio.
 ms.assetid: 805efb2d-71a7-4c74-821f-942644928ff9
-title: Método LockMedia de la clase Msvm_DiskDrive
+title: Método LockMedia de la Msvm_DiskDrive clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7ddc082ca6ceb7141eaa42bdfddf7a97897a9240
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: d6a3b35b418427a4af8f86dfb162cff7009539d93eab3d87f0c96423a5e951e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105689660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130585"
 ---
-# <a name="lockmedia-method-of-the-msvm_diskdrive-class"></a>Método LockMedia de la \_ clase DiskDrive de MSVM
+# <a name="lockmedia-method-of-the-msvm_diskdrive-class"></a>Método LockMedia de la clase DiskDrive de Msvm \_
 
-Bloquea o Desbloquea los medios.
+Bloquea o desbloquea el medio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ uint32 LockMedia(
 
 <dl> <dt>
 
-*Bloquear* \[ de\]
+*Bloqueo* \[ En\]
 </dt> <dd>
 
 **true** para bloquear el medio; **false** para liberar el medio.
@@ -65,9 +65,9 @@ Este método devuelve uno de los siguientes valores:
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -76,7 +76,7 @@ Este método devuelve uno de los siguientes valores:
 
 <dl> <dt>
 
-[**MSVM \_ DiskDrive**](msvm-diskdrive.md)
+[**DiskDrive de Msvm \_**](msvm-diskdrive.md)
 </dt> </dl>
 
  

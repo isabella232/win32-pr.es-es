@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_PWSTR'
+description: 'Más información sobre: JET_PWSTR'
 title: JET_PWSTR
 TOCTitle: JET_PWSTR
 ms:assetid: 6575f0f0-d022-4e70-9f17-c1d884d9e226
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 536ef3bba465f6d152e3483436c1dc1e82277339
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca4478684e79dfb698dd30bb21132f597129fdac
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697454"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479341"
 ---
 # <a name="jet_pwstr"></a>JET_PWSTR
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_pwstr"></a>JET_PWSTR
 
-El tipo de datos **JET_PWSTR** contiene una cadena **Unicode** terminada en null (char \* ).
+El **JET_PWSTR** tipo de datos contiene una cadena **Unicode terminada** en NULL (char \* ).
 
-**Windows Vista: JET_PWSTR** se incorpora en Windows Vista.
+**Windows Vista: JET_PWSTR** se presenta en Windows Vista.
 
 ```cpp
     typedef __nullterminated WCHAR * JET_PWSTR;
@@ -41,28 +41,11 @@ El tipo de datos **JET_PWSTR** contiene una cadena **Unicode** terminada en null
 
 JET_PWSTR
 
-Cadena Unicode terminada en null (char \* ).
+Cadena Unicode terminada en NULL \* (char).
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 

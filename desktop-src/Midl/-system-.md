@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31def6297a1a91f6ed28943290a66b544dc368d5a00a91932035a338af50bac5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01b6455807aedb99d7bd525c69fffc524dbe25d4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118643783"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882783"
 ---
-# <a name="system-switch"></a>/<system> Interruptor
+# <a name="ltsystemgt-switch"></a>/&lt;conmutador &gt; del sistema
 
-El **/<system>** modificador indica al compilador MIDL que genere una biblioteca de tipos para el sistema especificado. El valor predeterminado es el sistema operativo actual.
+El **/ &lt; modificador &gt;** del sistema indica al compilador MIDL que genere una biblioteca de tipos para el sistema especificado. El valor predeterminado es el sistema operativo actual.
 
 ``` syntax
 midl /{win32 | ia64 | amd64}
 ```
 
-## <a name="switch-options"></a>Opciones de cambio
+## <a name="switch-options"></a>Cambiar opciones
 
 <dl> <dt>
 
@@ -65,19 +65,19 @@ Un entorno de Windows de 64 bits basado en Intel, como Windows 2000, Windows Ser
 
 </dt> <dd>
 
-Un entorno de Windows de 64 bits basado en Micro Devices de Estados Unidos, como Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista o Windows 7.
+Un entorno de Windows de 64 bits basado en Micro Devices estadounidense, como Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista o Windows 7.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-El modificador es funcionalmente el mismo que la opción MIDL /env y lo reconoce el compilador midl únicamente por compatibilidad con versiones anteriores con **/<system>** MkTypLib. [](-env.md) Si va a generar un nuevo archivo Make, use el **modificador /env.**
+El **/ &lt; modificador &gt;** del sistema es funcionalmente el mismo que la opción MIDL [**/env**](-env.md) y el compilador de MIDL lo reconoce únicamente por compatibilidad con versiones anteriores con MkTypLib. Si va a generar un nuevo archivo Make, use el **modificador /env.**
 
 ## <a name="examples"></a>Ejemplos
 
 **midl /win32 filename.idl**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

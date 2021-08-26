@@ -1,7 +1,7 @@
 ---
 description: Escribe un valor DWORD en la base de datos especificada.
 ms.assetid: 2ecbfcac-5bb1-4129-9501-79210672aa1b
-title: SdbWriteDWORDTag función)
+title: Función SdbWriteDWORDTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 5b549a91037aa308b5b88d0e3e2a51e153002bd5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 730d171f964205638b44d5676e39abc20fb40426f7721fa6a5060d80c58805a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044795"
 ---
-# <a name="sdbwritedwordtag-function"></a>SdbWriteDWORDTag función)
+# <a name="sdbwritedwordtag-function"></a>Función SdbWriteDWORDTag
 
 Escribe un valor **DWORD** en la base de datos especificada.
 
@@ -41,21 +41,21 @@ BOOL WINAPI SdbWriteDWORDTag(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tTag* \[ de\]
+*tTag* \[ En\]
 </dt> <dd>
 
-ETIQUETA de la entrada. Esta etiqueta debe ser de tipo **etiqueta \_ \_ DWORD**.
+ETIQUETA de la entrada. Esta ETIQUETA debe ser de tipo **TAG \_ TYPE \_ DWORD.**
 
 </dd> <dt>
 
-*dwData* \[ de\]
+*dwData* \[ En\]
 </dt> <dd>
 
 Valor.
@@ -64,7 +64,7 @@ Valor.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se ejecuta correctamente o **false** en caso de error.
+La función devuelve **TRUE si** se ejecuta correctamente o **FALSE** en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ La función devuelve **true** si se ejecuta correctamente o **false** en caso de
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

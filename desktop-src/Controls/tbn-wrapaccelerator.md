@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TBN_WRAPACCELERATOR (commctrl. h)
-description: Solicita el índice del botón en una o más barras de herramientas correspondientes al carácter de aceleración especificado. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TBN_WRAPACCELERATOR de notificación (Commctrl.h)
+description: Solicita el índice del botón en una o varias barras de herramientas correspondientes al carácter de acelerador especificado. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: fc2443fd-e1b3-4085-b65d-96c08f544944
 keywords:
-- TBN_WRAPACCELERATOR controles de código de notificación de Windows
+- TBN_WRAPACCELERATOR código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ed5e6063f8ac32b317b8f7ce37682b151c56a4a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c5ec222f387108e2cb4d240e6dddf0fcb904d814097a96624a177425eb805ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105035"
 ---
-# <a name="tbn_wrapaccelerator-notification-code"></a>Código de notificación de WRAPACCELERATOR de TBN \_
+# <a name="tbn_wrapaccelerator-notification-code"></a>Código de notificación \_ WRAPACCELERATOR de TBN
 
-Solicita el índice del botón en una o más barras de herramientas correspondientes al carácter de aceleración especificado. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Solicita el índice del botón en una o varias barras de herramientas correspondientes al carácter de acelerador especificado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,19 +41,19 @@ TBN_WRAPACCELERATOR
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura que contiene el carácter de tecla de aceleración y que recibe el índice del botón correspondiente. El índice es-1 si el acelerador no se corresponde con un comando.
+Puntero a una estructura que contiene el carácter de tecla de aceleración y que recibe el índice del botón correspondiente. El índice es -1 si el acelerador no se corresponde con un comando.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**True** si se devuelve un índice; en caso contrario, **false**.
+**TRUE** si se devuelve un índice; de lo **contrario, FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Es posible que las aplicaciones con una o más barras de herramientas reciban este código de notificación.
+Las aplicaciones con una o varias barras de herramientas pueden recibir este código de notificación.
 
-La estructura **NMTBWRAPACCELERATOR** debe definirse mediante la aplicación de la siguiente manera:
+La aplicación debe definir la estructura **NMTBWRAPACCELERATOR** de la siguiente manera:
 
 ``` syntax
 typedef struct tagNMTBWRAPACCELERATOR {
@@ -69,9 +69,9 @@ typedef struct tagNMTBWRAPACCELERATOR {
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

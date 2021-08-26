@@ -1,7 +1,7 @@
 ---
-description: Crea una superficie comprimida para la descodificación de DirectX video Acceleration (DXVA).
+description: Crea una superficie comprimida para lacodización de aceleración de vídeo de DirectX (DXVA).
 ms.assetid: 2bb8c99d-1151-4f6d-869f-2c1a592e76af
-title: 'IDirect3DVideoDevice9:: CreateSurface (método) (DXVA. h)'
+title: Método IDirect3DVideoDevice9::CreateSurface (Dxva.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - dxva.h
-ms.openlocfilehash: d9e87c9767619241fd6228bb6b0a531249dd2d7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5bc624527c7ef3ea2a8bb9c878f1d97e865a54341ae5902449fb8a015374f3a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887875"
 ---
-# <a name="idirect3dvideodevice9createsurface-method"></a>IDirect3DVideoDevice9:: CreateSurface (método)
+# <a name="idirect3dvideodevice9createsurface-method"></a>IDirect3DVideoDevice9::CreateSurface (Método)
 
-Crea una superficie comprimida para la descodificación de DirectX video Acceleration (DXVA).
+Crea una superficie comprimida para lacodización de aceleración de vídeo de DirectX (DXVA).
 
-Para obtener los requisitos de la superficie, llame a [**IDirect3DVideoDevice9:: GetDXVACompressedBufferInfo**](idirect3dvideodevice9-getdxvacompressedbufferinfo.md) y examine las estructuras [**DXVACompBufferInfo**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvacompbufferinfo) devueltas.
+Para obtener los requisitos de superficie, llame a [**IDirect3DVideoDevice9::GetDXVACompressedBufferInfo**](idirect3dvideodevice9-getdxvacompressedbufferinfo.md) y examine las estructuras [**DXVACompBufferInfo devueltas.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvacompbufferinfo)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,18 +51,18 @@ HRESULT CreateSurface(
 *Width* 
 </dt> <dd>
 
-Ancho de la superficie, en píxeles. Establezca este parámetro en **DXVACompBufferInfo. WidthToCreate**.
+Ancho de la superficie, en píxeles. Establezca este parámetro en **DXVACompBufferInfo.WidthToCreate.**
 
 </dd> <dt>
 
 *Height* 
 </dt> <dd>
 
-Alto de la superficie, en píxeles. Establezca este parámetro en **DXVACompBufferInfo. HeightToCreate**.
+Alto de la superficie, en píxeles. Establezca este parámetro en **DXVACompBufferInfo.HeightToCreate**.
 
 </dd> <dt>
 
-*Búferes de reserva* 
+*BackBuffers* 
 </dt> <dd>
 
 Número de búferes de reserva. Este parámetro puede ser cero.
@@ -72,41 +72,41 @@ Número de búferes de reserva. Este parámetro puede ser cero.
 *Format* 
 </dt> <dd>
 
-Formato de píxel, especificado como un valor de **D3DFORMAT** . Establezca este parámetro en **DXVACompBufferInfo. Format**.
+Formato de píxel, especificado como valor **D3DFORMAT.** Establezca este parámetro en **DXVACompBufferInfo.Format.**
 
 </dd> <dt>
 
 *Grupo* 
 </dt> <dd>
 
-El bloque de memoria en el que se va a crear la superficie, especificado como un valor de **D3DPOOL** . Establezca este parámetro en **DXVACompBufferInfo. Pool**.
+Grupo de memoria en el que se va a crear la superficie, especificado como **un valor D3DPOOL.** Establezca este parámetro en **DXVACompBufferInfo.Pool.**
 
 </dd> <dt>
 
 *Uso* 
 </dt> <dd>
 
-**Operación OR bit a bit** de una o varias constantes **D3DUSAGE** . Establezca este parámetro en **DXVACompBufferInfo. Usage**.
+OR bit a **bit** de una o varias **constantes D3DUSAGE.** Establezca este parámetro en **DXVACompBufferInfo.Usage.**
 
 </dd> <dt>
 
 *ppSurface* 
 </dt> <dd>
 
-Recibe un puntero a la interfaz **IDirect3DSurface9** . El llamador debe liberar la interfaz.
+Recibe un puntero a la **interfaz IDirect3DSurface9.** El autor de la llamada debe liberar la interfaz .
 
 </dd> <dt>
 
 *pSharedHandle* 
 </dt> <dd>
 
-Reservado. Se establece en **null**.
+Reservado. Se establece en **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -114,9 +114,9 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>DXVA. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                              |
+| Header<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Propiedad encodedFrameRate de IWMPNetwork
+title: Propiedad IWMPNetwork encodedFrameRate
 description: La propiedad encodedFrameRate obtiene la velocidad de fotogramas de vídeo especificada por el autor del contenido.
 ms.assetid: 4faf5675-5bf3-485d-802f-a1f900ddae63
 keywords:
-- propiedades de encodedFrameRate Media Player de Windows
-- propiedad encodedFrameRate de Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, propiedad encodedFrameRate
+- propiedad encodedFrameRate Reproductor de Windows Media
+- Propiedad encodedFrameRate Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , propiedad encodedFrameRate
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b4176a9c2492d0ce34ffd0936c48dbdef065d1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 33f8a08572f65e1e44027ed25d84acfe7d917f92bf4bb63d5d9b8cca1e1201d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000015"
 ---
-# <a name="iwmpnetworkencodedframerate-property"></a>IWMPNetwork:: encodedFrameRate (propiedad)
+# <a name="iwmpnetworkencodedframerate-property"></a>Propiedad IWMPNetwork::encodedFrameRate
 
-La propiedad **encodedFrameRate** obtiene la velocidad de fotogramas de vídeo especificada por el autor del contenido.
+La **propiedad encodedFrameRate** obtiene la velocidad de fotogramas de vídeo especificada por el autor del contenido.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,16 +46,16 @@ Public ReadOnly Property encodedFrameRate As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es la velocidad de fotogramas codificada en fotogramas por segundo (FPS).
+**System.Int32 que** es la velocidad de fotogramas codificada en fotogramas por segundo (fps).
 
 > [!Note]  
-> Aunque la propiedad **encodedFrameRate** mide la velocidad de fotogramas codificada en fotogramas por segundo, la propiedad de **velocidad** de fotogramas mide la velocidad de fotogramas actual en fotogramas por cien segundos.
+> Aunque la **propiedad encodedFrameRate** mide la velocidad de fotogramas codificada en fotogramas por segundo, la propiedad **frameRate** mide la velocidad de fotogramas actual en fotogramas por cien segundos.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **encodedFrameRate** para mostrar la velocidad de fotogramas especificada al codificar el archivo. La información se muestra en una etiqueta, en respuesta al evento **PlayStateChange** . El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se **usa encodedFrameRate** para mostrar la velocidad de fotogramas especificada cuando se codificó el archivo. La información se muestra en una etiqueta, en respuesta al **evento PlayStateChange.** El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -113,7 +113,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -126,7 +126,7 @@ End Sub
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. velocidad de fotogramas (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-framerate--vb-and-c.md)
+[**IWMPNetwork.frameRate (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-framerate--vb-and-c.md)
 </dt> </dl>
 
  

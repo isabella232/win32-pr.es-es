@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 09b8246f3fc5563dde6a425919a60f8850e2eae5bd3d41ba06c7715394c33bb6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ce0f1bba80fcc4e0ff49094b6d8617b9c7d8bc16
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892185"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632123"
 ---
 # <a name="span-idvspixengineprimitive_topologyspanprimitive_topology-enumeration"></a><span id="vspixengine.primitive_topology"></span>Enumeración \_ PRIMITIVE TOPOLOGY
 
 Enumeración que se usa para indicar la topología de una malla. Vea MeshDataVertCallback.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -40,19 +40,19 @@ Enumeración que se usa para indicar la topología de una malla. Vea MeshDataVer
 <span id="PRIMITIVE_TOPOLOGY_UNDEFINED"></span><span id="primitive_topology_undefined"></span>**TOPOLOGÍA \_ PRIMITIVA \_ SIN DEFINIR**  
 La topología de la malla no está definida.
 
-<span id="PRIMITIVE_TOPOLOGY_POINTLIST"></span><span id="primitive_topology_pointlist"></span>**PRIMITIVE \_ TOPOLOGY \_ POINTLIST**  
+<span id="PRIMITIVE_TOPOLOGY_POINTLIST"></span><span id="primitive_topology_pointlist"></span>**LISTA \_ DE PUNTOS DE TOPOLOGÍA \_ PRIMITIVA**  
 La topología de la malla es una lista de puntos.
 
 <span id="PRIMITIVE_TOPOLOGY_LINELIST"></span><span id="primitive_topology_linelist"></span>**LISTA \_ DE LÍNEAS DE TOPOLOGÍA \_ PRIMITIVA**  
 La topología de la malla es una lista de líneas.
 
-<span id="PRIMITIVE_TOPOLOGY_LINESTRIP"></span><span id="primitive_topology_linestrip"></span>**LINESTRIP \_ DE TOPOLOGÍA \_ PRIMITIVA**  
-La topología de la malla es una franja de líneas.
+<span id="PRIMITIVE_TOPOLOGY_LINESTRIP"></span><span id="primitive_topology_linestrip"></span>**LÍNEA \_ DE TOPOLOGÍA \_ PRIMITIVA**  
+La topología de la malla es una franja de línea.
 
 <span id="PRIMITIVE_TOPOLOGY_TRIANGLELIST"></span><span id="primitive_topology_trianglelist"></span>**PRIMITIVE \_ TOPOLOGY \_ TRIANGLELIST**  
 La topología de la malla es una lista de triángulos.
 
-<span id="PRIMITIVE_TOPOLOGY_TRIANGLESTRIP"></span><span id="primitive_topology_trianglestrip"></span>**TRIANGLESTRIP \_ DE TOPOLOGÍA \_ PRIMITIVA**  
+<span id="PRIMITIVE_TOPOLOGY_TRIANGLESTRIP"></span><span id="primitive_topology_trianglestrip"></span>**PRIMITIVE \_ TOPOLOGY \_ TRIANGLESTRIP**  
 La topología de la malla es una franja de triángulo.
 
 <span id="PRIMITIVE_TOPOLOGY_TRIANGLEFAN"></span><span id="primitive_topology_trianglefan"></span>**TRIANGLEFAN \_ DE TOPOLOGÍA \_ PRIMITIVA**  
@@ -61,14 +61,14 @@ La topología de la malla es un ventilador de triángulo.
 <span id="PRIMITIVE_TOPOLOGY_LINELIST_ADJ"></span><span id="primitive_topology_linelist_adj"></span>**ADJ \_ DE LA LISTA DE LÍNEAS DE TOPOLOGÍA \_ \_ PRIMITIVA**  
 La topología de la malla es una lista de líneas con adyacencia.
 
-<span id="PRIMITIVE_TOPOLOGY_LINESTRIP_ADJ"></span><span id="primitive_topology_linestrip_adj"></span>**ADJ \_ DE \_ LINESTRIP DE \_ TOPOLOGÍA PRIMITIVA**  
-La topología de la malla es una franja de líneas con adyacencia.
+<span id="PRIMITIVE_TOPOLOGY_LINESTRIP_ADJ"></span><span id="primitive_topology_linestrip_adj"></span>**ADJ \_ DE LÍNEA DE TOPOLOGÍA \_ \_ PRIMITIVA**  
+La topología de la malla es una franja de línea con adyacencia.
 
-<span id="PRIMITIVE_TOPOLOGY_TRIANGLELIST_ADJ"></span><span id="primitive_topology_trianglelist_adj"></span>**\_ADJ \_ TRIANGLELIST DE TOPOLOGÍA \_ PRIMITIVA**  
+<span id="PRIMITIVE_TOPOLOGY_TRIANGLELIST_ADJ"></span><span id="primitive_topology_trianglelist_adj"></span>**TOPOLOGÍA \_ PRIMITIVA \_ TRIANGLELIST \_ ADJ**  
 La topología de la malla es una lista de triángulos con adyacencia.
 
-<span id="PRIMITIVE_TOPOLOGY_TRIANGLESTRIP_ADJ"></span><span id="primitive_topology_trianglestrip_adj"></span>**PRIMITIVE \_ TOPOLOGY \_ TRIANGLESTRIP \_ ADJ**  
-La topología de la malla es una franja de triángulo con adyacencia.
+<span id="PRIMITIVE_TOPOLOGY_TRIANGLESTRIP_ADJ"></span><span id="primitive_topology_trianglestrip_adj"></span>**TOPOLOGÍA \_ PRIMITIVA \_ TRIANGLESTRIP \_ ADJ**  
+La topología de la malla es una franja de triángulos con adyacencia.
 
 <span id="PRIMITIVE_TOPOLOGY_1_CONTROL_POINT_PATCHLIST"></span><span id="primitive_topology_1_control_point_patchlist"></span>**PRIMITIVE \_ TOPOLOGY \_ 1 \_ CONTROL \_ POINT \_ PATCHLIST**  
 La topología de la malla es una lista de revisiones con un punto de control.
@@ -168,7 +168,7 @@ La topología de la malla es una lista de revisiones con 32 puntos de control.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

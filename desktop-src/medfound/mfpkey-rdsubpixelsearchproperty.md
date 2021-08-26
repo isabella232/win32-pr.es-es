@@ -1,19 +1,19 @@
 ---
-description: Especifica si el codificador utiliza la búsqueda MV de subpíxeles basada en RD.
+description: Especifica si el codificador usa la búsqueda mv de subpíxeles basada en ESCRITORIO remoto.
 ms.assetid: 1359c001-d0a1-4b7d-b142-1e85e6a0b570
-title: Propiedad MFPKEY_RDSUBPIXELSEARCH (Wmcodecdsp. h)
+title: MFPKEY_RDSUBPIXELSEARCH propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2d4a6a0fca6156b4e659bd32530e520b7451ada
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b12b90731491cd3dfa460a109dafa99e2955ac12f5a21608236a776dea827de8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939805"
 ---
-# <a name="mfpkey_rdsubpixelsearch-property"></a>\_Propiedad RDSUBPIXELSEARCH de MFPKEY
+# <a name="mfpkey_rdsubpixelsearch-property"></a>Propiedad RDSUBPIXELSEARCH de MFPKEY \_
 
-Especifica si el codificador utiliza la búsqueda MV de subpíxeles basada en RD.
+Especifica si el codificador usa la búsqueda mv de subpíxeles basada en ESCRITORIO remoto.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -21,7 +21,7 @@ g \_ wszWMVCRDSubpixelSearch
 
 ## <a name="data-type"></a>Tipo de datos
 
-**VT \_ bool**
+**VT \_ BOOL**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -29,8 +29,8 @@ g \_ wszWMVCRDSubpixelSearch
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Remoto<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
+| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -38,7 +38,7 @@ g \_ wszWMVCRDSubpixelSearch
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

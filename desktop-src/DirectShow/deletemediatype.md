@@ -1,7 +1,7 @@
 ---
-description: La función DeleteMediaType elimina una estructura de tipo de medio AM asignada \_ \_ , incluido el bloque de formato.
+description: La función DeleteMediaType elimina una estructura DE AM \_ MEDIA \_ TYPE asignada, incluido el bloque de formato.
 ms.assetid: 970f6b2b-2bf5-418d-b4ae-637561cd6765
-title: Función DeleteMediaType (mtype. h)
+title: Función DeleteMediaType (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: db0de399ab1be7808370a6d0da57c4c3ca7b8de1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6035b65d6bf292f6ca35c4323ac5ad90c747b0cfd4bfa756b1f054d7b693d998
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998395"
 ---
-# <a name="deletemediatype-function"></a>DeleteMediaType función)
+# <a name="deletemediatype-function"></a>Función DeleteMediaType
 
-La función **DeleteMediaType** elimina una estructura de [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) asignada, incluido el bloque de formato.
+La **función DeleteMediaType** elimina una estructura [**DE AM MEDIA TYPE \_ \_ asignada,**](/windows/win32/api/strmif/ns-strmif-am_media_type) incluido el bloque de formato.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ void WINAPI DeleteMediaType(
 
 <dl> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a una estructura [**de \_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Puntero a una estructura [**\_ AM MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Puntero a una estructura [**de \_ \_ tipo de medio am**](/windows/win32/api/strm
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use esta función para liberar cualquier estructura de tipo de medio que se haya asignado mediante [**CoTaskMemAlloc**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) o [**CreateMediaType**](createmediatype.md).
+Use esta función para liberar cualquier estructura de tipo de medio que se asignó mediante [**CoTaskMemAlloc**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) o [**CreateMediaType**](createmediatype.md).
 
-Esta función se define en la biblioteca de [clases base de DirectShow](directshow-base-classes.md) . Si prefiere no vincular a la biblioteca de clases base, puede usar el código siguiente:
+Esta función se define en la biblioteca DirectShow [clases base.](directshow-base-classes.md) Si prefiere no vincular a la biblioteca de clases base, puede usar el código siguiente:
 
 
 ```C++
@@ -101,8 +101,8 @@ void _DeleteMediaType(AM_MEDIA_TYPE *pmt)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -113,7 +113,7 @@ void _DeleteMediaType(AM_MEDIA_TYPE *pmt)
 [**FreeMediaType**](freemediatype.md)
 </dt> <dt>
 
-[**Funciones de tipo de medio**](media-type-functions.md)
+[**Funciones de tipo multimedia**](media-type-functions.md)
 </dt> </dl>
 
  

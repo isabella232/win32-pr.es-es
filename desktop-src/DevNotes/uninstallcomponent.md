@@ -1,7 +1,7 @@
 ---
 description: Quita un paquete de excepciones.
 ms.assetid: d590d0f8-c9b2-4973-999b-99bbf94d4928
-title: UninstallComponent función)
+title: Función UninstallComponent
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Msoobci.dll
-ms.openlocfilehash: a541f51b030c9be7a26d573794e4df3a7cfc6f47
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6b4ce8e447bc884d1b3ee64505d230b2e069ce6cda1630b027b8a48da68beda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001115"
 ---
-# <a name="uninstallcomponent-function"></a>UninstallComponent función)
+# <a name="uninstallcomponent-function"></a>Función UninstallComponent
 
 Quita un paquete de excepciones.
 
@@ -44,14 +44,14 @@ void UninstallComponent(
 
 <dl> <dt>
 
-*CompGuid* \[ en, opcional\]
+*CompGuid* \[ in, opcional\]
 </dt> <dd>
 
 GUID del componente de excepción que se va a desinstalar.
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Marcas usadas para controlar los comportamientos de instalación. Este parámetro puede ser una combinación de los valores siguientes.
@@ -60,9 +60,9 @@ Marcas usadas para controlar los comportamientos de instalación. Este parámetr
 
 | Value                                                                                                                                                                                                         | Significado                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <span id="COMP_FLAGS_NOUI"></span><span id="comp_flags_noui"></span><dl> <dt>**marcas de COMP \_ \_ NOUI**</dt> </dl>                                          | Suprime toda la interfaz de usuario.<br/>                                                                |
-| <span id="COMP_FLAGS_UPDATE_DLLCACHE"></span><span id="comp_flags_update_dllcache"></span><dl> <dt>**marcas de COMP \_ \_ actualizar \_ DLLCACHE**</dt> </dl>        | Fuerza la actualización del directorio DLLCACHE cuando se actualiza un archivo del sistema.<br/>        |
-| <span id="COMP_FLAGS_USE_SVCPACK_CACHE"></span><span id="comp_flags_use_svcpack_cache"></span><dl> <dt>**marcas de COMP \_ \_ usar \_ \_ caché SVCPACK**</dt> </dl> | Usa los archivos almacenados en memoria caché por una instalación de Windows Service Pack para sustituir los archivos de los que se ha realizado una copia de seguridad.<br/> |
+| <span id="COMP_FLAGS_NOUI"></span><span id="comp_flags_noui"></span><dl> <dt>**COMP \_ FLAGS \_ NOUI**</dt> </dl>                                          | Suprime toda la interfaz de usuario.<br/>                                                                |
+| <span id="COMP_FLAGS_UPDATE_DLLCACHE"></span><span id="comp_flags_update_dllcache"></span><dl> <dt>**DLLCACHE \_ DE ACTUALIZACIÓN DE MARCAS DE \_ \_ COMP**</dt> </dl>        | Fuerza la actualización del directorio DLLCACHE cuando se actualiza un archivo del sistema.<br/>        |
+| <span id="COMP_FLAGS_USE_SVCPACK_CACHE"></span><span id="comp_flags_use_svcpack_cache"></span><dl> <dt>**LAS \_ MARCAS DE COMP USAN \_ \_ SVCPACK \_ CACHE**</dt> </dl> | Usa los archivos almacenados en caché Windows service pack para reemplazar los archivos de los que se ha creado una copia de seguridad.<br/> |
 
 
 
@@ -70,31 +70,31 @@ Marcas usadas para controlar los comportamientos de instalación. Este parámetr
 
 </dd> <dt>
 
-*VerMajor* \[ en, opcional\]
+*VerMajor* \[ in, opcional\]
 </dt> <dd>
 
 Versión principal del componente de excepción que se va a desinstalar.
 
 </dd> <dt>
 
-*Parásitos* \[ en, opcional\]
+*VerMinor* \[ in, opcional\]
 </dt> <dd>
 
 Versión secundaria del componente de excepción que se va a desinstalar.
 
 </dd> <dt>
 
-*VerBuild* \[ en, opcional\]
+*VerBuild* \[ in, opcional\]
 </dt> <dd>
 
 Versión de compilación del componente de excepción que se va a desinstalar.
 
 </dd> <dt>
 
-*VerQFE* \[ en, opcional\]
+*VerQFE* \[ in, opcional\]
 </dt> <dd>
 
-Revisión de la revisión del componente de excepción que se va a desinstalar.
+Revisión del componente de excepción que se va a desinstalar.
 
 </dd> </dl>
 
@@ -102,13 +102,13 @@ Revisión de la revisión del componente de excepción que se va a desinstalar.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los paquetes de excepción son archivos del sistema de Windows que se publican fuera de una versión completa de Windows y que actualizan los archivos del sistema operativo. Los paquetes de excepción solo los pueden crear equipos del sistema operativo a los que se les ha concedido autorización para actualizar archivos del sistema de Windows.
+Los paquetes de excepción Windows archivos del sistema que se liberan fuera de un paquete completo Windows versión y que actualizan los archivos del sistema operativo. Los paquetes de excepciones solo son creados por equipos de sistema operativo a los que se les ha concedido autorización para actualizar Windows archivos del sistema.
 
-Para instalar y desinstalar archivos que no están protegidos por protección de archivos de Windows, use las funciones documentadas en [funciones generales de instalación](https://msdn.microsoft.com/library/ms794585.aspx). Para instalar controladores de dispositivos, los expendedores deben usar funciones documentadas en funciones de [instalación de dispositivos](https://msdn.microsoft.com/library/ms792954.aspx) y [funciones de Configuration Manager PNP](https://msdn.microsoft.com/library/ms790838.aspx).
+Para instalar y desinstalar archivos que no están protegidos por Windows File Protection, use las funciones documentadas en [Funciones de instalación generales](https://msdn.microsoft.com/library/ms794585.aspx). Para instalar controladores de dispositivos, los vendedores deben usar funciones documentadas en [Funciones de](https://msdn.microsoft.com/library/ms792954.aspx) instalación de dispositivos [y PnP Administrador de configuración Functions](https://msdn.microsoft.com/library/ms790838.aspx).
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

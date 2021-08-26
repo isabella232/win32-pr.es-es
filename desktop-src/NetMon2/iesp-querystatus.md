@@ -1,7 +1,7 @@
 ---
-description: Recupera el estado NPP.
+description: Recupera el estado de NPP.
 ms.assetid: 48682997-f641-4ae5-b5ad-64fd84f07ae3
-title: 'IESP:: QueryStatus (método) (Netmon. h)'
+title: Método IESP::QueryStatus (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 3435ed832484042bfeb9229e4b46fa34441cb395
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00b83cbbb167775a8de360c880f381b41f250abf0eab01c883bc7580be4d956f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037545"
 ---
-# <a name="iespquerystatus-method"></a>IESP:: QueryStatus (método)
+# <a name="iespquerystatus-method"></a>IESP::QueryStatus (método)
 
-El método **QueryStatus** recupera el estado NPP.
+El **método QueryStatus** recupera el estado de NPP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,34 +40,34 @@ HRESULT STDMETHODCALLTYPE QueryStatus(
 
 <dl> <dt>
 
-*pNetworkStatus* \[ enuncia\]
+*pNetworkStatus* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura [NETWORKSTATUS](networkstatus.md) devuelta que indica el estado actual (captura, en pausa, detenido, etc.) del NPP. El usuario debe asignar y liberar la memoria de la estructura NETWORKSTATUS.
+Puntero a una estructura [NETWORKSTATUS](networkstatus.md) devuelta que indica el estado actual (capturar, pausar, detener, y así sucesivamente) del NPP. El usuario debe asignar y liberar la memoria para la estructura NETWORKSTATUS.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es el siguiente código de error:
+Si el método no se realiza correctamente, el valor devuelto es el código de error siguiente:
 
 
 
 | Código devuelto                                                                                              | Descripción                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ parámetro no válido \_**</dt> </dl> | El parámetro *pNetworkStatus* no está señalando a una estructura [NETWORKSTATUS](networkstatus.md) válida. Asigne memoria para esta estructura y llame de nuevo a **iesp:: QueryStatus** .<br/> |
+| <dl> <dt>**NMERR \_ INVALID \_ PARAMETER**</dt> </dl> | El *parámetro pNetworkStatus* no apunta a una estructura [NETWORKSTATUS](networkstatus.md) válida. Asigne memoria para esta estructura y llame de **nuevo a IESP::QueryStatus.**<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se puede llamar a este método en cualquier momento después de llamar a [CreateNPPInterface](createnppinterface.md) . Puede llamar a este método para ver si el NPP está conectado a la red, para averiguar el estado de la captura actual y para ver si hay algún desencadenador pendiente.
+Se puede llamar a este método en cualquier momento después de llamar a [CreateNPPInterface.](createnppinterface.md) Puede llamar a este método para ver si el NPP está conectado a la red, para averiguar el estado de la captura actual y para ver si hay algún desencadenador pendiente.
 
-Antes de llamar a este método, asigne la memoria necesaria para la estructura [NETWORKSTATUS](networkstatus.md) y libere esa memoria cuando la estructura ya no sea necesaria.
+Antes de llamar a este método, asigne la memoria necesaria para la [estructura NETWORKSTATUS](networkstatus.md) y liberar esa memoria cuando la estructura ya no sea necesaria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,7 +77,7 @@ Antes de llamar a este método, asigne la memoria necesaria para la estructura [
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 

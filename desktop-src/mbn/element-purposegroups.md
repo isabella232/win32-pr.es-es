@@ -7,20 +7,20 @@ MSHAttr:
 title: PurposeGroups
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 370cf6b0dc13848ca21a2a06e0b9806d753878c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3b158938e1a41f6ab8d3f1df0cae6a2166bc21c
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696342"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630941"
 ---
 # <a name="span-idwwan_profile_v4element_purposegroupsspanpurposegroups"></a><span id="WWAN_profile_v4.element_PurposeGroups"></span>PurposeGroups
 
-Lista opcional de grupos de perfiles, donde cada grupo incluye perfiles usados para un propósito común.
+Una lista opcional de grupos de perfiles, donde cada grupo incluye perfiles usados para un propósito común.
 
-Este elemento es nuevo para V4 del esquema.
+Este elemento es nuevo para la versión 4 del esquema.
 
-Un perfil puede aparecer en varios grupos.
+Un perfil se puede enumerar en varios grupos.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
@@ -46,14 +46,14 @@ Un perfil puede aparecer en varios grupos.
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Atributos
 
-Ninguno.
+Ninguna.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementos secundarios
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -65,8 +65,8 @@ Ninguno.
 <tr class="odd">
 <td><a href="element-purposegroupguid.md">PurposeGroupGuid</a></td>
 <td><p>Representa un perfil en un PurposeGroup de perfiles.</p>
-<p>Los perfiles se especifican mediante su valor <a href="simpletype-guidtype.md"><strong>guidType</strong></a> .</p>
-<p>Se definen cuatro valores GUID, tal como se muestra en la tabla siguiente.</p>
+<p>Los perfiles se especifican por su <a href="simpletype-guidtype.md"><strong>valor guidType.</strong></a></p>
+<p>Se definen cuatro valores GUID, como se muestra en la tabla siguiente.</p>
 <table>
 <thead>
 <tr class="header">
@@ -104,8 +104,8 @@ Ninguno.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -116,8 +116,8 @@ Ninguno.
 <tbody>
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>El elemento <strong>MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
-<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el elemento secundario <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</p></td>
+<td><p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
+<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento hacen que un perfil determinado sea el perfil activo.</p></td>
 </tr>
 </tbody>
 </table>
@@ -128,8 +128,8 @@ Ninguno.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

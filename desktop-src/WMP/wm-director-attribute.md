@@ -1,9 +1,9 @@
 ---
 title: Atributo WM/Director
-description: El atributo WM/director es el nombre del director.
+description: El atributo WM/Director es el nombre del director.
 ms.assetid: 5ba29842-6cf3-48be-a555-b6a12ae91f13
 keywords:
-- Windows atributo de WM/Director Media Player
+- Atributo WM/Director Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,32 +12,32 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 923e1b39b8bebfb81ea65a990110f393ad246f4c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: adef3e7bc32da34d4cfec684318fec7b2798e92a2ceeb7f9568a7c7b2237602a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001135"
 ---
 # <a name="wmdirector-attribute"></a>Atributo WM/Director
 
-El atributo **WM/Director** es el nombre del director.
+El **atributo WM/Director** es el nombre del director.
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Atributos de archivo de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 -   [DVDs](dvd-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca (o caché) y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia digital.
 
 **Director** es un alias para este atributo.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMDirector.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMDirector.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -53,7 +53,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

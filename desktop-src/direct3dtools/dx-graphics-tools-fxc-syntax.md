@@ -6,12 +6,12 @@ keywords:
 - fxc, sintaxis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb39d261b239c44a02ee784f9b8c65483bbe70c1a5e9fbaf5c9c360c8272b2ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9cae0305a8fdca5c9fd419cf610b0ebbb547331
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117722412"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880765"
 ---
 # <a name="syntax"></a>Syntax
 
@@ -26,13 +26,13 @@ Esta es la sintaxis para llamar a FXC.exe, la herramienta del compilador de efec
 
 ## <a name="usage"></a>Uso
 
-**fxc** *SwitchOptions* *Filenames*
+**Fxc** *SwitchOptions* *Filenames*
 
 ## <a name="arguments"></a>Argumentos
 Separe cada opción de conmutador con un espacio o dos puntos.
 
 ### <a name="switchoptions"></a>*SwitchOptions*
-\[en \] Opciones de compilación. Solo hay una opción necesaria y muchas más que son opcionales. Separe cada una con un espacio o dos puntos.
+\[en \] Opciones de compilación. Solo hay una opción necesaria y muchas más que son opcionales. Separe cada uno con un espacio o dos puntos.
 
 #### <a name="required-option"></a>Opción obligatoria
 ##### <a name="t-profile"></a>Perfil de < /T>
@@ -43,7 +43,7 @@ Modelo de sombreador (vea [Perfiles).](#profiles)
 Imprimir ayuda para `FXC.exe` .
 
 ##### <a name="commandoptionfile"></a>@<*command.option.file*>
-Archivo que contiene opciones de compilación adicionales. Esta opción se puede mezclar con otras opciones de compilación de línea de comandos. El *archivo command.option.file* solo debe contener una opción por línea. El *archivo command.option.file* no puede contener ninguna línea en blanco. Las opciones especificadas en el archivo no deben contener espacios iniciales ni finales.
+Archivo que contiene opciones de compilación adicionales. Esta opción se puede mezclar con otras opciones de compilación de línea de comandos. *Command.option.file* solo debe contener una opción por línea. El *archivo command.option.file* no puede contener líneas en blanco. Las opciones especificadas en el archivo no deben contener espacios iniciales o finales.
 
 ##### <a name="all_resources_bound"></a>/all_resources_bound
 Habilite el aplanado agresivo en SM5.1+. Novedad de Direct3D 12.
@@ -55,7 +55,7 @@ Ensamblado codificado por colores de salida.
 Comprima el código de bytes del sombreador DX10 de los archivos.
 
 ##### <a name="d-idtext"></a>Texto del identificador </D >=< >
-Definir macro.
+Defina la macro.
 
 ##### <a name="decompress"></a>/decompress
 Descomprime el código de bytes del sombreador DX10 del primer archivo. Los archivos de salida deben aparecer en el orden en que estaban durante la compresión.
@@ -63,7 +63,7 @@ Descomprime el código de bytes del sombreador DX10 del primer archivo. Los arch
 ##### <a name="dumpbin"></a>/dumpbin
 Carga un archivo binario en lugar de compilar un sombreador.
 
-##### <a name="e-name"></a>/e <name>
+##### <a name="e-ltnamegt"></a>/E &lt; name&gt;
 Punto de entrada del sombreador. Si no se da ningún punto de entrada, **main** se considera el nombre de la entrada del sombreador.
 
 ##### <a name="enable_unbounded_descriptor_tables"></a>/enable_unbounded_descriptor_tables
@@ -72,10 +72,10 @@ Habilita las tablas de descriptores sin enlazar. Novedad de Direct3D 12.
 ##### <a name="extractrootsignature-file"></a>/extractrootsignature <*archivo*>
 Extraiga la firma raíz del código de bytes del sombreador. Novedad de Direct3D 12.
 
-##### <a name="fc-file"></a>/Fc <*archivo*>
+##### <a name="fc-file"></a>Archivo de <*/Fc*>
 Archivo de lista de código de ensamblado de salida.
 
-##### <a name="fd-file"></a>/Fd <*archivo*>
+##### <a name="fd-file"></a>Archivo de <*/Fd*>
 Extraiga la información de la base de datos del programa de sombreador (PDB) y escriba en el archivo dado. Al compilar el sombreador, use /Fd para generar un archivo PDB con información de depuración del sombreador.
 
 ##### <a name="fe-file"></a>Archivo de <*/Fe*>
@@ -88,7 +88,7 @@ Archivo de encabezado de salida que contiene código de objeto.
 Generar una biblioteca. Requiere D3dcompiler \_47.dll o una versión posterior del archivo DLL.
 
 ##### <a name="fo-file"></a>/Fo <*archivo*>
-Archivo de objeto de salida. A menudo se proporciona la extensión .fxc , aunque se usan &quot; &quot; otras extensiones, como &quot; .o , &quot; &quot; .obj &quot; o &quot; .dxbc. &quot;
+Archivo de objeto de salida. A menudo, dada la extensión .fxc , aunque se usan &quot; &quot; otras extensiones, &quot; como .o &quot; , &quot; .obj &quot; o &quot; .dxbc &quot; .
 
 ##### <a name="fx-file"></a>Archivo de <*/Fx*>
 Código de ensamblado de salida y archivo de lista hexadecimal.
@@ -109,7 +109,7 @@ Habilite el modo de compatibilidad con versiones anteriores.
 Habilite el modo strict.
 
 ##### <a name="getprivate-file"></a>/getprivate <*archivo*>
-Guarde los datos privados del blob de sombreador (binario de sombreador compilado) en el archivo especificado. Extrae datos privados, previamente insertados por /setprivate, del blob de sombreador.
+Guarde datos privados del blob de sombreador (binario de sombreador compilado) en el archivo especificado. Extrae datos privados, previamente insertados por /setprivate, del blob del sombreador.
 
 Debe especificar la opción /dumpbin con /getprivate. Por ejemplo:
 
@@ -119,34 +119,34 @@ fxc /getprivate ps01.private.data
 ```
     
 ##### <a name="gfa"></a>/Gfa
-Evite construcciones de control de flujo.
+Evite las construcciones de control de flujo.
 
 ##### <a name="gfp"></a>/Gfp
 Prefiere construcciones de control de flujo.
 
 ##### <a name="gis"></a>/Gis
-Forzar el estricto ieee.
+Forzar el estricto IEEE.
 
 ##### <a name="gpp"></a>/Gpp
-Forzar precisión parcial.
+Fuerza la precisión parcial.
     
 ##### <a name="i-include"></a>/I <*include*>
-Ruta de acceso de include adicional.
+Ruta de acceso de incluyeción adicional.
 
 ##### <a name="lx"></a>/Lx
 Literales hexadecimales de salida. Requiere D3dcompiler \_47.dll o una versión posterior del archivo DLL.
 
 ##### <a name="matchuavs"></a>/matchUAVs
-Coincide con las asignaciones de ranuraS de UAV del sombreador de plantillas en el sombreador actual. Para obtener más información, vea <a href="#remarks">Comentarios</a>.
+Coincide con las asignaciones de ranura UAV del sombreador de plantillas en el sombreador actual. Para obtener más información, vea <a href="#remarks">Comentarios</a>.
 
 ##### <a name="mergeuavs"></a>/mergeUAVs
-Combinar asignaciones de ranura de UAV del sombreador de plantillas y el sombreador actual. Para obtener más información, vea <a href=""></a> <a href="#remarks">Comentarios</a>.
+Combinar asignaciones de ranura UAV del sombreador de plantillas y el sombreador actual. Para obtener más información, vea <a href=""></a> <a href="#remarks">Comentarios</a>.
 
 ##### <a name="ni"></a>/Ni
-Números de instrucciones de salida en listas de ensamblados.
+Números de instrucciones de salida en las listas de ensamblados.
 
 ##### <a name="no"></a>/No
-Desplazamiento de bytes de instrucciones de salida en las listas de ensamblados. Al generar el ensamblado, use /No para anotarlo con el desplazamiento de bytes para cada instrucción.
+Desplazamiento de bytes de la instrucción de salida en las listas de ensamblados. Al generar el ensamblado, use /No para anotarlo con el desplazamiento de bytes de cada instrucción.
 
 ##### <a name="nologo"></a>/nologo
 Se suprime el mensaje de copyright.
@@ -165,13 +165,13 @@ Niveles de optimización. O1 es la configuración predeterminada.
 - O3: igual que O1. Reservado para uso futuro.
 
 ##### <a name="p-file"></a>/P <*archivo*>
-Preprocesar en archivo (debe usarse solo).
+Preprocesar en archivo (debe usarse por sí solo).
 
 ##### <a name="qstrip_debug"></a>/Qstrip_debug
 Quitar datos de depuración del código de bytes del sombreador para perfiles 4_0+.
 
 ##### <a name="qstrip_priv"></a>/Qstrip_priv
-Quitar los datos privados del código de bytes del sombreador 4_0+. Quita datos privados (secuencia arbitraria de bytes) del blob de sombreador (binario de sombreador compilado) que insertó anteriormente con la `/setprivate <file>` opción .
+Quitar los datos privados del código de bytes del sombreador 4_0+. Quita los datos privados (secuencia arbitraria de bytes) del blob de sombreador (binario de sombreador compilado) que insertó anteriormente con la `/setprivate <file>` opción .
 
 Debe especificar la opción /dumpbin con /Qstrip_priv. Por ejemplo:
 
@@ -187,17 +187,17 @@ Quitar datos de reflexión del código de bytes del sombreador para perfiles 4_0
 Quitar la firma raíz del código de bytes del sombreador. Novedad de Direct3D 12.
 
 ##### <a name="res_may_alias"></a>/res_may_alias
-Suponga que los UAVs/SRV pueden tener alias para cs_5_0+. Requiere D3dcompiler \_47.dll o una versión posterior del archivo DLL.
+Suponga que los UAV/SRV pueden tener alias para cs_5_0+. Requiere D3dcompiler \_47.dll o una versión posterior del archivo DLL.
 
 ##### <a name="setprivate-file"></a>/setprivate <*archivo*>
-Agregue datos privados en el archivo especificado al blob de sombreador compilado. Inserta el archivo dado, que se trata como un búfer sin procesar, en el blob del sombreador. Use /setprivate para agregar datos privados al compilar un sombreador. O bien, use la opción /dumpbin con /setprivate para cargar un objeto de sombreador existente y, después, después de que el objeto esté en memoria, para agregar el blob de datos privado. Por ejemplo, use un solo comando con /setprivate para agregar datos privados a un blob de sombreador compilado:
+Agregue datos privados en el archivo especificado al blob de sombreador compilado. Inserta el archivo dado, que se trata como un búfer sin formato, en el blob del sombreador. Use /setprivate para agregar datos privados al compilar un sombreador. O bien, use la opción /dumpbin con /setprivate para cargar un objeto de sombreador existente y, después, después de que el objeto esté en memoria, para agregar el blob de datos privado. Por ejemplo, use un solo comando con /setprivate para agregar datos privados a un blob de sombreador compilado:
 
 ```console
 fxc /T ps_4_0 /Fo ps01.with.private.obj ps01.fx 
     /setprivate ps01.private.data
 ```
     
-O bien, use dos comandos donde el segundo comando carga un objeto de sombreador y, a continuación, agrega datos privados:
+O bien, use dos comandos donde el segundo comando cargue un objeto de sombreador y, a continuación, agrega datos privados:
 
 ```console
 fxc /T ps_4_0 /Fo ps01.no.private.obj ps01.fx
@@ -209,7 +209,7 @@ fxc /dumpbin /Fo ps01.with.private.obj ps01.no.private.obj
 Adjunte la firma raíz al código de bytes del sombreador. Novedad de Direct3D 12.
 
 ##### <a name="shtemplate-file"></a>/shtemplate <*archivo*>
-Use un archivo de sombreador de plantillas determinado para combinar (/mergeUAV) y recursos de coincidencia (/matchUAV). Para obtener más información, vea <a href="#remarks">Comentarios</a>.
+Use un archivo de sombreador de plantillas determinado para combinar recursos (/mergeUAV) y buscar coincidencias (/matchUAV). Para obtener más información, vea <a href="#remarks">Comentarios</a>.
 
 ##### <a name="vd"></a>/Vd
 Deshabilite la validación.
@@ -218,7 +218,7 @@ Deshabilite la validación.
 Compruebe el código de bytes del sombreador con la firma raíz. Novedad de Direct3D 12.
 
 ##### <a name="vi"></a>/Vi
-Muestra detalles sobre el proceso de incluir.
+Mostrar detalles sobre el proceso de incluir.
 
 ##### <a name="vn-name"></a>/Vn <*nombre*>
 Use name como nombre de variable en el archivo de encabezado.
@@ -241,7 +241,7 @@ Empaquetar matrices en orden de fila principal.
 
 ## <a name="remarks"></a>Comentarios
 
-Use las opciones , y para alinear las ranuras de `/mergeUAVs` enlace `/matchUAVs` `/shtemplate` UAV para una cadena de sombreadores.
+Use las `/mergeUAVs` opciones , y para alinear las `/matchUAVs` `/shtemplate` ranuras de enlace UAV para una cadena de sombreadores.
 
 Supongamos que tiene sombreadores A.fx, B.fx y C.fx. Para alinear las ranuras de enlace UAV para esta cadena de sombreadores, necesita dos pases de compilación:
 
@@ -251,13 +251,13 @@ Supongamos que tiene sombreadores A.fx, B.fx y C.fx. Para alinear las ranuras de
     ```
     fxc.exe /T cs_5_0 C.fx /Fo C.o /mergeUAVs /shtemplate Btmp.o
     ```
-2.  Use /matchUAV para compilar sombreadores y especifique el último blob de sombreador del primer paso con /shtemplate. Puede compilar en cualquier orden. Por ejemplo:
+2.  Use /matchUAVs para compilar sombreadores y especifique el último blob de sombreador del primer paso con /shtemplate. Puede compilar en cualquier orden. Por ejemplo:
     ```
     fxc.exe /T cs_5_0 A.fx /Fo A.o /matchUAVs /shtemplate C.o
     ```
 No tiene que volver a compilar C.fx en el segundo paso.
 
-Después de realizar los dos pasos de compilación anteriores, puede usar A.o, B.o y C.o como blobs de sombreador finales con ranuras UAV alineadas.
+Después de realizar las dos pasadas de compilación anteriores, puede usar A.o, B.o y C.o como blobs de sombreador finales con ranuras UAV alineadas.
 
 ## <a name="profiles"></a>Profiles
 
@@ -282,7 +282,7 @@ lib_4_0_level_9_3<br />
 lib_4_0_level_9_3_vs_only<br />
 lib_4_0_level_9_3_ps_only<br />
 lib_5_0<br />
-</dl> Para obtener más información sobre la vinculación de sombreador, vea <a href="/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linker"><strong>ID3D11Linker</strong></a> e <a href="/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11functionlinkinggraph"><strong>ID3D11FunctionLinkingGraph</strong></a>. <br/></td></tr><tr class="odd"><td>Sombreador de casco</td><td><dl> hs_5_0<br />
+</dl> Para obtener más información sobre la vinculación de sombreador, <a href="/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linker"><strong>vea ID3D11Linker</strong></a> e <a href="/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11functionlinkinggraph"><strong>ID3D11FunctionLinkingGraph</strong></a>. <br/></td></tr><tr class="odd"><td>Sombreador de casco</td><td><dl> hs_5_0<br />
 hs_5_1<br />
 </dl></td></tr><tr class="even"><td>Sombreador de píxeles</td><td><dl> ps_2_0<br />
 ps_2_a<br />
@@ -318,12 +318,12 @@ vs_5_1<br />
 
 Para Direct3D 12, consulte Especificación de firmas raíz en [HLSL,](/windows/desktop/direct3d12/specifying-root-signatures-in-hlsl)Enlace de recursos en [HLSL](/windows/desktop/direct3d12/resource-binding-in-hlsl) e Indexación dinámica mediante [HLSL 5.1.](/windows/desktop/direct3d12/dynamic-indexing-using-hlsl-5-1)
 
-En Direct3D 10, use la API para obtener el vértice, la geometría y el perfil de sombreador de píxeles más adecuados para un dispositivo determinado mediante una llamada a estas funciones: [**D3D10GetVertexShaderProfile,**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getvertexshaderprofile) [**D3D10GetPixelShaderProfile**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getpixelshaderprofile)y [**D3D10GetGeometryShaderProfile.**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getgeometryshaderprofile)
+En Direct3D 10, use la API para obtener el perfil de vértice, geometría y sombreador de píxeles más adecuado para un dispositivo determinado mediante una llamada a estas funciones: [**D3D10GetVertexShaderProfile,**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getvertexshaderprofile) [**D3D10GetPixelShaderProfile**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getpixelshaderprofile)y [**D3D10GetGeometryShaderProfile.**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getgeometryshaderprofile)
 
-En Direct3D 9, use los [**métodos GetDeviceCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9-getdevicecaps) o [**GetDeviceCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getdevicecaps) para recuperar los perfiles de sombreador de vértices y píxeles admitidos por un dispositivo. La [**estructura D3DCAPS9**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9) devuelta por esos métodos indica los perfiles de sombreador de vértices y píxeles admitidos por un dispositivo en sus miembros **VertexShaderVersion** y **PixelShaderVersion.**
+En Direct3D 9, use los [**métodos GetDeviceCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9-getdevicecaps) o [**GetDeviceCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getdevicecaps) para recuperar los perfiles de sombreador de vértices y píxeles admitidos por un dispositivo. La [**estructura D3DCAPS9**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9) devuelta por esos métodos indica los perfiles de sombreador de vértices y píxeles admitidos por un dispositivo en sus **miembros VertexShaderVersion** y **PixelShaderVersion.**
 
 Para obtener ejemplos, [vea Compilación con el compilador actual.](dx-graphics-tools-fxc-using.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Herramienta Effect-Compiler](fxc.md)
+* [Herramienta Del compilador de efectos](fxc.md)

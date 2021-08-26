@@ -5,25 +5,25 @@ ms.assetid: ef9fea92-8c67-461d-9d74-2e259e407fb0
 keywords:
 - Windows Cinta de opciones, compilar marcado
 - Cinta de opciones, compilar marcado
-- Windows Cinta de opciones, flujo de trabajo del compilador
-- Cinta de opciones, flujo de trabajo del compilador
+- Windows Cinta, flujo de trabajo del compilador
+- Cinta, flujo de trabajo del compilador
 - Windows Ribbon,UI Command Compiler (UICC.exe)
 - Ribbon,UI Command Compiler (UICC.exe)
 - Compilador de comandos de interfaz de usuario (UICC.exe)
 - UICC.exe (compilador de comandos de interfaz de usuario)
-- compilar el marcado Windows cinta de opciones
+- compilación de Windows marcado de la cinta de opciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85534a05b3bde59cc2ec0eec482d8c3b47e898d39ad988c595fbac33eb5e9f36
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cefd64103ceb501e8f4d23e937a242e910b0cad5
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119932574"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884910"
 ---
 # <a name="compiling-ribbon-markup"></a>Compilación del marcado de la cinta de opciones
 
-Para que Windows de la cinta de opciones consuma el archivo de marcado [de](windowsribbon-schema.md) la cinta de opciones, el archivo de marcado debe compilarse en un archivo de recursos de formato binario. Un compilador de marcado dedicado, el compilador de comandos de interfaz de usuario (UICC), se incluye con el Kit de desarrollo de software (SDK) de Windows (7.0 o posterior) para este propósito. Además de compilar la versión binaria del marcado, uicc genera un archivo de encabezado de definición de identificador (.h) que expone todos los elementos de marcado a la aplicación host de la cinta de opciones y un archivo de recursos (.rc) que se usa para vincular recursos de imagen y cadena a la aplicación host en tiempo de compilación.
+Para que Windows marco de la cinta de opciones consuma el archivo de marcado [de](windowsribbon-schema.md) la cinta de opciones, el archivo de marcado debe compilarse en un archivo de recursos de formato binario. Un compilador de marcado dedicado, el compilador de comandos de interfaz de usuario (UICC), se incluye con el Kit de desarrollo de software (SDK) de Windows (7.0 o posterior) para este propósito. Además de compilar la versión binaria del marcado, uicc genera un archivo de encabezado de definición de identificador (.h) que expone todos los elementos de marcado a la aplicación host de la cinta de opciones y un archivo de recursos (.rc) que se usa para vincular recursos de imagen y cadena a la aplicación host en tiempo de compilación.
 
 -   [Flujo de trabajo del compilador](#compiler-workflow)
 -   [Sintaxis de la línea de comandos](#command-line-syntax)
@@ -33,13 +33,13 @@ Para que Windows de la cinta de opciones consuma el archivo de marcado [de](wind
 
 ## <a name="compiler-workflow"></a>Flujo de trabajo del compilador
 
-El flujo de trabajo del compilador de marcado de la cinta de opciones se ilustra en el diagrama siguiente.
+El flujo de trabajo del compilador de marcado de la cinta de opciones se muestra en el diagrama siguiente.
 
 ![diagrama que muestra el flujo de trabajo del compilador de marcado de la cinta de opciones.](images/overviews/overviews-intentcl.png)
 
 ## <a name="command-line-syntax"></a>Sintaxis de línea de comandos
 
-La sintaxis de línea de comandos para el compilador de marcado ribbon se muestra en el ejemplo siguiente.
+La sintaxis de la línea de comandos para el compilador de marcado ribbon se muestra en el ejemplo siguiente.
 
 
 ```
@@ -61,8 +61,8 @@ Los argumentos y las opciones de esta herramienta se describen en la tabla sigui
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -72,12 +72,12 @@ Los argumentos y las opciones de esta herramienta se describen en la tabla sigui
 </thead>
 <tbody>
 <tr class="odd">
-<td>/header:<headerFile></td>
-<td>Genere un archivo de encabezado llamado <headerFile> que contiene los símbolos de recursos de identificador de comando de marcado. Si se omite, no se genera un archivo de encabezado.</td>
+<td>/header: &lt; headerFile&gt;</td>
+<td>Genere un archivo de encabezado denominado &lt; headerFile &gt; que contenga los símbolos de recursos de identificador de comando de marcado. Si se omite, no se genera un archivo de encabezado.</td>
 </tr>
 <tr class="even">
 <td>/res:<resourceFile></td>
-<td>Genere un archivo de recursos denominado que vincula todos los recursos de imagen y cadena, el archivo de marcado binario y el archivo de encabezado a la aplicación <resourceFile> host en tiempo de compilación. Si se omite, no se genera un archivo de recursos.</td>
+<td>Genere un archivo de recursos denominado que vincula todos los recursos de imagen y cadena, el archivo de marcado binario y el archivo de encabezado a la aplicación host en <resourceFile> tiempo de compilación. Si se omite, no se genera un archivo de recursos.</td>
 </tr>
 <tr class="odd">
 <td>/name:<ribbonName></td>
@@ -125,7 +125,7 @@ En el ejemplo siguiente se muestra cómo usar el compilador de marcado ribbon pa
 [Declarar comandos y controles con marcado de cinta](windowsribbon-schema.md)
 </dt> <dt>
 
-[Crear una aplicación de cinta de opciones](windowsribbon-stepbystep.md)
+[Creación de una aplicación de cinta de opciones](windowsribbon-stepbystep.md)
 </dt> </dl>
 
  

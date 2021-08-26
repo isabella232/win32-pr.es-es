@@ -1,7 +1,7 @@
 ---
-description: 'El método CBaseInputPin inicia una operación de vaciado. Este método implementa el método IPin:: BeginFlush.'
+description: El método CBaseInputPin comienza una operación de vaciado. Este método implementa el método IPin::BeginFlush.
 ms.assetid: 3f149d4f-765b-44c1-87e5-6313f6a4d50d
-title: Método CBaseInputPin. BeginFlush (Amfilter. h)
+title: Método CBaseInputPin.BeginFlush (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 93c0f687daf65e91443f4f59896d641b9b0cfd43
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1b9e5e4e97a3a010523f61cc9efedf224d8dfc7fa373c9514b6d38dc0105d2d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103215"
 ---
-# <a name="cbaseinputpinbeginflush-method"></a>CBaseInputPin. BeginFlush, método
+# <a name="cbaseinputpinbeginflush-method"></a>Método CBaseInputPin.BeginFlush
 
-El `CBaseInputPin` método inicia una operación de vaciado. Este método implementa el método [**IPin:: BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) .
+El `CBaseInputPin` método comienza una operación de vaciado. Este método implementa el [**método IPin::BeginFlush.**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,18 +42,18 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método establece la marca [**CBaseInputPin:: m \_ BFlushing**](cbaseinputpin-m-bflushing.md) en **true**, lo que hace que el método [**CBaseInputPin:: Receive**](cbaseinputpin-receive.md) rechace cualquier ejemplo más.
+Este método establece la marca [**CBaseInputPin::m \_ bFlushing**](cbaseinputpin-m-bflushing.md) en **TRUE,** lo que hace que el método [**CBaseInputPin::Receive**](cbaseinputpin-receive.md) rechace más ejemplos.
 
 La clase derivada debe invalidar este método y realizar los pasos siguientes:
 
-1.  Llame al método [**IPin:: BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) en las clavijas de entrada de nivel inferior. Si el PIN no ha entregado todavía ningún ejemplo de multimedia en el nivel inferior, puede omitir este paso. Si los pin de salida derivan de la clase [**CBaseOutputPin**](cbaseoutputpin.md) , puede llamar al método [**eliverbeginflush de CBaseOutputPin::D**](cbaseoutputpin-deliverbeginflush.md) .
-2.  Llame al método de la clase base.
-3.  Empezar a descartar los datos en cola.
-4.  Devuelve de cualquier llamada bloqueada al método **Receive** .
+1.  Llame al [**método IPin::BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) en los pines de entrada de bajada. Si el pin aún no ha entregado ningún ejemplo multimedia de nivel inferior, puede omitir este paso. Si los pines de salida derivan de la clase [**CBaseOutputPin,**](cbaseoutputpin.md) puede llamar al método [**CBaseOutputPin::D eliverBeginFlush.**](cbaseoutputpin-deliverbeginflush.md)
+2.  Llame al método de clase base.
+3.  Comience a descartar los datos en cola.
+4.  Devuelve de las llamadas bloqueadas al **método Receive.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ La clase derivada debe invalidar este método y realizar los pasos siguientes:
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ La clase derivada debe invalidar este método y realizar los pasos siguientes:
 
 <dl> <dt>
 
-[**Clase CBaseInputPin**](cbaseinputpin.md)
+[**CBaseInputPin (clase)**](cbaseinputpin.md)
 </dt> </dl>
 
  

@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 9ab8de48b5f3d8b31df7001f53ee370a4e0f4eaa
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 483150a567be858359f518417a01d3b68193f29d
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122622531"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786301"
 ---
 # <a name="span-idvspixengineipixengine3spanipixengine3-interface"></a><span id="vspixengine.ipixengine3"></span>Interfaz IPixEngine3
 
 Extensiones de la interfaz IPixEngine2.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IPixEngine3** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPixEngine3 también** tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IPixEngine3** hereda de la [**interfaz IUnknown.**](/windows/deskt
 
 La **interfaz IPixEngine3** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixengine3-setupresources-resourcepair-arr-uint"><strong>SetupResources</strong></a></td><td style="text-align: left;"><p>Pasa recursos al motor, como cadenas para los mensajes de error.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ipixengine3-setupresources-resourcepair-arr-uint"><strong>SetupResources</strong></a></td><td ><p>Pasa recursos al motor, como cadenas para los mensajes de error.</p></td></tr></tbody></table>
 
  
 

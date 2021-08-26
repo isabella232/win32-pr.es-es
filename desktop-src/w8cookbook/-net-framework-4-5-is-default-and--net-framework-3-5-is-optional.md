@@ -4,12 +4,12 @@ description: .NET Framework 4.5 es el valor predeterminado y .NET Framework 3.5 
 ms.assetid: 19B53C82-812A-49AC-87C6-C08E7C199208
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e875f7508bc0940689afde5eb9b3f00407dd2c7dd70e35de52fe580717c8ad53
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 18b45aef294e035f5fb7e647c49b22206ac8aadd
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119549795"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883126"
 ---
 # <a name="net-framework-45-is-default-and-net-framework-35-is-optional"></a>.NET Framework 4.5 es el valor predeterminado y .NET Framework 3.5 es opcional
 
@@ -60,7 +60,7 @@ Windows 8 incluye un mecanismo que habilita automáticamente .NET Framework 3.5 
 
 **Para desarrolladores de aplicaciones (y administradores de TI):**
 
-Los administradores de TI pueden configurar aplicaciones de .NET 3.5 para que se ejecuten en .NET 3.5 o .NET 4.5 (en función de lo que ya esté instalado). Para ejecutar una aplicación administrada en 3.5 o 4.5, basta con agregar una sección en el archivo de configuración de la aplicación. Esto garantizará que, si .NET 3.5 está instalado, la aplicación se ejecutará en .NET 3.5. De lo contrario, la aplicación se ejecutará en .NET 4.5. A continuación se proporciona un ejemplo de la sección adicional del archivo de configuración:
+Los administradores de TI pueden configurar aplicaciones de .NET 3.5 para que se ejecuten en .NET 3.5 o .NET 4.5 (en función de lo que ya esté instalado). Para ejecutar una aplicación administrada en 3.5 o 4.5, basta con agregar una sección en el archivo de configuración de la aplicación. Esto garantizará que si .NET 3.5 está instalado, la aplicación se ejecutará en .NET 3.5. De lo contrario, la aplicación se ejecutará en .NET 4.5. A continuación se proporciona un ejemplo de la sección adicional del archivo de configuración:
 
 
 ```
@@ -95,7 +95,7 @@ Para habilitar .NET Framework 3.5 para las compilaciones DE LAPAPA Y para las ap
 
 **Para empresas:**
 
-En el caso de las máquinas que están configuradas para usar WSUS para el mantenimiento, puede establecer una entrada del Registro para permitir que la máquina use Windows Update para habilitar .NET 3.5 en lugar de WSUS (el mantenimiento se realizará desde WSUS si lo hace).
+En el caso de las máquinas configuradas para usar WSUS para el mantenimiento, puede establecer una entrada del Registro para permitir que la máquina use Windows Update para habilitar .NET 3.5 en lugar de WSUS (el mantenimiento se realizará desde WSUS si lo hace).
 
 -   Establezca la clave de registro:
     ```
@@ -106,7 +106,7 @@ En el caso de las máquinas que están configuradas para usar WSUS para el mante
 
 Esta entrada del Registro también se puede establecer a través de directiva de grupo (Directiva de equipo local -> configuración del equipo -> Plantillas administrativas -> sistema. Seleccione la opción Especificar la configuración para la instalación opcional de componentes y la reparación de componentes.
 
-Si selecciona Contact Windows Update directly (Ponerse en contacto directamente con Windows Update) para descargar contenido de reparación en lugar de Windows Server Update Services (WSUS), cualquier intento de agregar características de Windows (por ejemplo, .NET Framework 3.5) o reparar características desencadenará descargas de archivos de Windows Update. Los equipos de destino requieren acceso a Internet y WU para esta opción. Las operaciones de mantenimiento normales siguen usando WSUS si se ha configurado como origen.
+Si selecciona Contact Windows Update directly (Ponerse en contacto directamente con Windows Update) para descargar contenido de reparación en lugar de Windows Server Update Services (WSUS), cualquier intento de agregar características de Windows (por ejemplo, .NET Framework 3.5) o reparar características desencadenará descargas de archivos desde Windows Update. Los equipos de destino requieren acceso a Internet y WU para esta opción. Las operaciones de mantenimiento normales siguen usando WSUS si se ha configurado como origen.
 
 **Nota relacionada con la configuración de la ubicación de origen local a través de entradas del Registro**
 
@@ -129,7 +129,7 @@ Esta entrada del Registro es compatible:
 <td>Ruta de acceso de origen local</td>
 <td> REG_EXPAND_SZ </td>
 <td>Rutas de acceso de origen locales que se usarán de forma predeterminada. Se pueden especificar varias rutas de acceso; deben estar separados por ; . Las ubicaciones se buscarán en el orden en que se especifican. <br/> Las ubicaciones de origen locales que se especifican en la línea de comandos dism tienen prioridad sobre las ubicaciones especificadas en esta entrada del Registro. Las ubicaciones de carpeta se pueden especificar en esta entrada del Registro. <br/> Se pueden usar WIM, pero la ruta de acceso debe ser al archivo WIM; no es necesario montarlo, por ejemplo: <br/> <dl> wim: \\ machine\share\file.wim:1<br />
-</dl> Observe el 1 al final. Debe especificar el índice numérico de la imagen que desea usar en el archivo WIM. <br/> Para un WIM montado, la ruta de acceso de origen debe hacer referencia al directorio windows de la imagen montada, en lugar del punto de montaje (por ejemplo: /source: \windows en lugar <mount_point> de /source: <mount_point> ). <br/></td>
+</dl> Observe el 1 al final. Debe especificar el índice numérico de la imagen que desea usar en el archivo WIM. <br/> Para un WIM montado, la ruta de acceso de origen debe hacer referencia al directorio windows de la imagen montada, en lugar del punto de montaje (por ejemplo: /source: mount_point \windows en lugar de &lt; &gt; /source: &lt; mount_point &gt; ). <br/></td>
 </tr>
 </tbody>
 </table>

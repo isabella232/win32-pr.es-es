@@ -1,7 +1,7 @@
 ---
-description: 'El método CanSeekBackward determina si la secuencia se puede buscar hacia atrás. Este método implementa el método IMediaPosition:: CanSeekBackward.'
+description: El método CanSeekBackward determina si la secuencia se puede buscar hacia atrás. Este método implementa el método IMediaPosition::CanSeekBackward.
 ms.assetid: 6443980f-6863-4941-b2dd-4a31257b5810
-title: Método CPosPassThru. CanSeekBackward (Ctlutil. h)
+title: Método CPosPassThru.CanSeekBackward (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6a016f5cfeea7ca1e63bb4d0e603784b8f95a85
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c1d989acf074eb20e6ea3387c37129700320ce782e3c5d7c8bd4320641839ca1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108435"
 ---
-# <a name="cpospassthrucanseekbackward-method"></a>CPosPassThru. CanSeekBackward, método
+# <a name="cpospassthrucanseekbackward-method"></a>Método CPosPassThru.CanSeekBackward
 
-El `CanSeekBackward` método determina si la secuencia se puede buscar hacia atrás. Este método implementa el método [**IMediaPosition:: CanSeekBackward**](/windows/desktop/api/Control/nf-control-imediaposition-canseekbackward) .
+El `CanSeekBackward` método determina si se puede buscar la secuencia hacia atrás. Este método implementa el [**método IMediaPosition::CanSeekBackward.**](/windows/desktop/api/Control/nf-control-imediaposition-canseekbackward)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT CanSeekBackward(
 *pCanSeekBackward* 
 </dt> <dd>
 
-Puntero a una variable que recibe el valor OATRUE si el filtro puede buscar hacia atrás o OAFALSE de lo contrario.
+Puntero a una variable que recibe el valor OATRUE si el filtro puede buscar hacia atrás o OAFALSE en caso contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor **HRESULT** del PIN conectado.
+Devuelve el **valor HRESULT** del pin conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> </dl>
 
  

@@ -30,12 +30,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ec61d29a2bfc3fc502b532b83dbb02640a600a0a5034c9751caab7185f1b037c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: efe052fc01014d3ebb624dbd4183bc8f0584b145
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117716654"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481791"
 ---
 # <a name="committransactiongrbit-enumeration"></a>CommitTransactionGrbit (enumeración)
 
@@ -63,38 +63,13 @@ public enum CommitTransactionGrbit
 
 ## <a name="members"></a>Miembros
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Nombre del miembro</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td>Ninguno</td>
-<td>Opciones predeterminadas.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>LazyFlush</td>
-<td>La transacción se confirma normalmente, pero esta API no espera a que la transacción se vacíe en el archivo de registro de transacciones antes de volver al autor de la llamada. Esto reduce drásticamente la duración de una operación de confirmación a costa de la durabilidad. Cualquier transacción que no se vacíe en el registro antes de un bloqueo se anulará automáticamente durante la recuperación de bloqueos durante la siguiente llamada a JetInit. Si se especifican WaitLastLevel0Commit o WaitAllLevel0Commit, se omite esta opción.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>WaitLastLevel0Commit</td>
-<td>Si la sesión ha confirmado previamente las transacciones y aún no se han vaciado en el archivo de registro de transacciones, se deben vaciar inmediatamente. Esta API esperará hasta que se hayan vaciado las transacciones antes de volver al autor de la llamada. Esto resulta útil si la aplicación ha confirmado previamente varias transacciones mediante JET_bitCommitLazyFlush y ahora quiere vaciar todas ellas en el disco.
-<p>Esta opción se puede usar incluso si la sesión no está actualmente en una transacción. Esta opción no se puede usar en combinación con ninguna otra opción.</p></td>
-</tr>
-</tbody>
-</table>
+
+|  | Nombre del miembro | Descripción | 
+|--|-------------|-------------|
+|  | Ninguno | Opciones predeterminadas. | 
+|  | LazyFlush | La transacción se confirma normalmente, pero esta API no espera a que la transacción se vacíe en el archivo de registro de transacciones antes de volver al autor de la llamada. Esto reduce drásticamente la duración de una operación de confirmación a costa de la durabilidad. Cualquier transacción que no se vacíe en el registro antes de un bloqueo se anulará automáticamente durante la recuperación de bloqueos durante la siguiente llamada a JetInit. Si se especifican WaitLastLevel0Commit o WaitAllLevel0Commit, se omite esta opción. | 
+|  | WaitLastLevel0Commit | Si la sesión ha confirmado previamente las transacciones y aún no se han vaciado en el archivo de registro de transacciones, se deben vaciar inmediatamente. Esta API esperará hasta que se hayan vaciado las transacciones antes de volver al autor de la llamada. Esto resulta útil si la aplicación ha confirmado previamente varias transacciones mediante JET_bitCommitLazyFlush y ahora quiere vaciar todas ellas en el disco.<p>Esta opción se puede usar incluso si la sesión no está actualmente en una transacción. Esta opción no se puede usar en combinación con ninguna otra opción.</p> | 
+
 
 
 ## <a name="see-also"></a>Consulte también
