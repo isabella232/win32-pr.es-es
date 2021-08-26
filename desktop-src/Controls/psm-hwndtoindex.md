@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PSM_HWNDTOINDEX (Prsht. h)
-description: Toma el identificador de ventana de la página de la hoja de propiedades y devuelve su índice basado en cero. Puede enviar este mensaje explícitamente o utilizar la \_ macro PropSheet HwndToIndex.
+title: PSM_HWNDTOINDEX mensaje (Prsht.h)
+description: Toma el identificador de ventana de la página de la hoja de propiedades y devuelve su índice de base cero. Puede enviar este mensaje explícitamente o usar la macro PropSheet \_ HwndToIndex.
 ms.assetid: vs|controls|~\controls\propsheet\messages\psm_hwndtoindex.htm
 keywords:
-- PSM_HWNDTOINDEX controles de mensajes de Windows
+- PSM_HWNDTOINDEX controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6632d331a6f271e339663a23210d0b399fb669b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ed61c958fb3a0b30ba7cf55d1040cac51caa67f460d329312fb0e798b016aec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985835"
 ---
-# <a name="psm_hwndtoindex-message"></a>Mensaje de PSM \_ HWNDTOINDEX
+# <a name="psm_hwndtoindex-message"></a>Mensaje \_ HWNDTOINDEX de PSM
 
-Toma el identificador de ventana de la página de la hoja de propiedades y devuelve su índice basado en cero. Puede enviar este mensaje explícitamente o utilizar la macro [**PropSheet \_ HwndToIndex**](/windows/desktop/api/Prsht/nf-prsht-propsheet_hwndtoindex) .
+Toma el identificador de ventana de la página de la hoja de propiedades y devuelve su índice de base cero. Puede enviar este mensaje explícitamente o usar la macro [**PropSheet \_ HwndToIndex.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_hwndtoindex)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -53,9 +53,9 @@ Devuelve el índice de base cero de la página de la hoja de propiedades especif
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: MSMQ-Receive-outdead (derecho extendido)
-description: Permite recibir mensajes de la cola de mensajes con problemas de entrega.
+title: msmq-Receive-Dead-Letter extended right
+description: Permite recibir mensajes de la cola de mensajes fallidos.
 ms.assetid: e7e37e6b-8f2a-4ca6-bfeb-0e74d7a80785
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de derecho extendido de recepción de mensajes de MSMQ-Receive
+- msmq-Receive-Dead-Letter extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ee68beb0afc7b9bcbb38157ffd1de82fc447dd4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b10155964a22c129cc614c8a3a898c654a0d8d8eb8dfae462f265c90010452d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922115"
 ---
-# <a name="msmq-receive-dead-letter-extended-right"></a>MSMQ-Receive-outdead (derecho extendido)
+# <a name="msmq-receive-dead-letter-extended-right"></a>msmq-Receive-Dead-Letter extended right
 
-Permite recibir mensajes de la cola de mensajes con problemas de entrega.
+Permite recibir mensajes de la cola de mensajes fallidos.
 
 
 
 | Entrada | Value |
 |--------------|--------------------------------------|
-| CN           | MSMQ-recepción-mensajes con problemas de entrega             |
-| Display-Name | Recibir mensajes con problemas de entrega                  |
+| CN           | msmq-Receive-Dead-Letter             |
+| Display-Name | Recepción de mensajes no enviados                  |
 | Rights-GUID  | 4b6e08c0-df3c-11d1-9c86-006008764d0e |
 
 
@@ -49,8 +49,8 @@ Permite recibir mensajes de la cola de mensajes con problemas de entrega.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -60,8 +60,8 @@ Permite recibir mensajes de la cola de mensajes con problemas de entrega.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -71,8 +71,8 @@ Permite recibir mensajes de la cola de mensajes con problemas de entrega.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -82,8 +82,8 @@ Permite recibir mensajes de la cola de mensajes con problemas de entrega.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -93,8 +93,8 @@ Permite recibir mensajes de la cola de mensajes con problemas de entrega.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -104,8 +104,8 @@ Permite recibir mensajes de la cola de mensajes con problemas de entrega.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 

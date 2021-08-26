@@ -1,23 +1,23 @@
 ---
-description: 'Este ejemplo muestra el diseño de un archivo. Cub que contiene dos CIEM. El instalador ejecuta las acciones personalizadas en la secuencia: ICE01 y ICE08.'
+description: 'En este ejemplo se muestra el diseño de un archivo .uu. que contiene dos TIC. El instalador ejecuta las acciones personalizadas en la secuencia: ICE01 e ICE08.'
 ms.assetid: 609cd16a-4421-4082-855d-229f5ba7117b
-title: Archivo. Cub de ejemplo
+title: Archivo .uu. de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e937b779e2a620ffc17cf936e37f74867f3dfdd4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7aadbaca8bde7091f38d5ce8ccc39926ec6c595aa33e65e488136e89cccfc81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039665"
 ---
-# <a name="sample-cub-file"></a>Archivo. Cub de ejemplo
+# <a name="sample-cub-file"></a>Archivo .uu. de ejemplo
 
-Este ejemplo muestra el diseño de un archivo. Cub que contiene dos [CIEM](internal-consistency-evaluators-ices.md). El instalador ejecuta las acciones personalizadas en la secuencia: ICE01 y ICE08.
+En este ejemplo se muestra el diseño de un archivo .uu. que contiene dos [ICEs.](internal-consistency-evaluators-ices.md) El instalador ejecuta las acciones personalizadas en la secuencia: ICE01 e ICE08.
 
-La acción personalizada ICE01 es un [tipo de acción personalizada 1](custom-action-type-1.md). Es un punto de entrada a un archivo DLL que se almacena como una secuencia en el archivo. Cub. Esta secuencia aparece en la tabla binaria ice.dll.
+La acción personalizada ICE01 es un [tipo de acción personalizada 1.](custom-action-type-1.md) Es un punto de entrada a un archivo DLL que se almacena como una secuencia en el archivo .uu. Esta secuencia se muestra en la tabla binaria ice.dll.
 
-La acción personalizada ICE08 es un [tipo de acción personalizada 6](custom-action-type-6.md). Es un punto de entrada a una función de VBScript que se almacena como una secuencia en el archivo. Cub. Esta secuencia aparece en la tabla binaria como ice.vbs.
+La acción personalizada ICE08 es un [tipo de acción personalizada 6.](custom-action-type-6.md) Es un punto de entrada a una función de VBScript que se almacena como una secuencia en el archivo .uu. Esta secuencia aparece en la tabla binaria como ice.vbs.
 
 [Tabla binaria](binary-table.md)
 
@@ -60,7 +60,7 @@ La acción personalizada ICE08 es un [tipo de acción personalizada 6](custom-ac
 
 \_Tabla especial
 
-ICE01 y ICE08 no requieren la inclusión de tablas de procesamiento especiales. Cuando el archivo. Cub contiene tablas especiales, también deben incluirse en la \_ tabla de validación.
+ICE01 y ICE08 no requieren la inclusión de tablas de procesamiento especiales. Cuando el archivo .cub contiene tablas especiales, también se deben incluir en la \_ tabla de validación.
 
 [\_Tabla de validación](-validation-table.md)
 
@@ -73,7 +73,7 @@ ICE01 y ICE08 no requieren la inclusión de tablas de procesamiento especiales. 
 | CustomAction  | Acción    | N        |          |          |          |           | [Identificador](identifier.md)     |     |             |
 | CustomAction  | Tipo      | N        |          |          |          |           | [Entero](integer.md)           |     |             |
 | CustomAction  | Source    | Y        |          |          |          |           | [CustomSource](customsource.md) |     |             |
-| CustomAction  | Destino    | Y        |          |          |          |           | [Formatea](formatted.md)       |     |             |
+| CustomAction  | Destino    | Y        |          |          |          |           | [Formato](formatted.md)       |     |             |
 | \_ICESequence | Acción    | N        |          |          |          |           | [Identificador](identifier.md)     |     |             |
 | \_ICESequence | Condición | Y        |          |          |          |           | [Condition](condition.md)       |     |             |
 | \_ICESequence | Secuencia  | Y        |          |          |          |           | [Entero](integer.md)           |     |             |

@@ -1,23 +1,23 @@
 ---
-description: Tenga en cuenta que no puede especificar el orden en el que el instalador registra o anula el registro de los archivos dll de registro automático mediante las acciones SelfRegModules y SelfUnRegModules.
+description: Tenga en cuenta que no puede especificar el orden en el que el instalador registra o anula el registro de los archivos DLL de registro automático mediante las acciones SelfRegModules y SelfUnRegModules.
 ms.assetid: 46ee5ea2-35fd-4352-8a45-572d6fb5e080
-title: Especificar el orden de registro automático
+title: Especificar el orden de registro propio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d99587f6e6bdd8726f2cdc584fc2f399d81ae91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bb26fbebad3167fbea95679a1ea7a29c28946ae6fa2dd2b014be6ade986e28f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039685"
 ---
-# <a name="specifying-the-order-of-self-registration"></a>Especificar el orden de registro automático
+# <a name="specifying-the-order-of-self-registration"></a>Especificar el orden de registro propio
 
-Tenga en cuenta que no puede especificar el orden en el que el instalador registra o anula el registro de los archivos dll de registro automático mediante las acciones [SelfRegModules](selfregmodules-action.md) y [SelfUnRegModules](selfunregmodules-action.md) . Estas acciones registran todos los módulos que se enumeran en la [tabla SelfReg](selfreg-table.md). El instalador no registra automáticamente los archivos. exe.
+Tenga en cuenta que no puede especificar el orden en el que el instalador registra o anula el registro de los archivos DLL de registro automático mediante las acciones [SelfRegModules](selfregmodules-action.md) y [SelfUnRegModules.](selfunregmodules-action.md) Estas acciones registran todos los módulos enumerados en la [tabla SelfReg](selfreg-table.md). El instalador no se registra de forma .exe archivos.
 
-Para especificar el orden en el que el instalador registra o anula el registro de módulos, debe usar dos [acciones personalizadas](custom-actions.md) para cada módulo. Una acción personalizada para DllRegisterServer y otro para DllUnregisterServer. Estas acciones personalizadas se deben crear en la [tabla InstallExecuteSequence](installexecutesequence-table.md) en el punto de la secuencia en el que se va a registrar o anular el registro del archivo dll.
+Para especificar el orden en que el instalador registra o anula el registro de los módulos, debe usar dos [acciones](custom-actions.md) personalizadas para cada módulo. Una acción personalizada para DllRegisterServer y una segunda para DllUnregisterServer. A continuación, estas acciones personalizadas deben crearse en la tabla [InstallExecuteSequence](installexecutesequence-table.md) en el punto de la secuencia donde quiera que el archivo DLL se registre o se anulará el registro.
 
-En el ejemplo siguiente se muestra cómo crear la base de datos para programar el registro automático de un archivo DLL en un punto determinado de la secuencia de acciones.
+En el ejemplo siguiente se muestra cómo crear la base de datos para programar el registro propio de un archivo DLL en un punto determinado de la secuencia de acciones.
 
 [Tabla de archivos](file-table.md) (parcial)
 
@@ -25,7 +25,7 @@ En el ejemplo siguiente se muestra cómo crear la base de datos para programar e
 
 | Archivo  | Componente\_ | FileName  | Secuencia |
 |-------|-------------|-----------|----------|
-| MYDLL | myComponent | Mydll.dll | 13       |
+| Mydll | myComponent | Mydll.dll | 13       |
 
 
 
@@ -35,22 +35,22 @@ En el ejemplo siguiente se muestra cómo crear la base de datos para programar e
 
 
 
-| Componente   | ComponentId | Directorio\_ | Rutas |
+| Componente   | Componentid | Directorio\_ | KeyPath |
 |-------------|-------------|-------------|---------|
-| myComponent | {*un GUID*}  | myFolder    | MYDLL   |
+| myComponent | {*a GUID*}  | myFolder    | Mydll   |
 
 
 
  
 
-[Tabla de directorio](directory-table.md)
+[Tabla de directorios](directory-table.md)
 
 
 
-| Directorio | Directorio \_ primario | DefaultDir          |
+| Directorio | Elemento \_ primario del directorio | DefaultDir          |
 |-----------|-------------------|---------------------|
 | TARGETDIR |                   | SourceDir           |
-| myFolder  | TARGETDIR         | carpeta \| mi carpeta |
+| myFolder  | TARGETDIR         | myFolder \| My Folder |
 
 
 
@@ -62,8 +62,8 @@ En el ejemplo siguiente se muestra cómo crear la base de datos para programar e
 
 | Acción     | Tipo | Source   | Destino                                     |
 |------------|------|----------|--------------------------------------------|
-| mydllREG   | 3170 | myFolder | " \[ Carpetadelsistema \] msiexec"/y " \[ \# MYDLL \] " |
-| mydllUNREG | 3170 | myFolder | " \[ Carpetadelsistema \] msiexec"/z " \[ \# MYDLL \] " |
+| mydllREG   | 3170 | myFolder | " \[ SystemFolder \] msiexec" /y " \[ \# mydll \] " |
+| mydllUNREG | 3170 | myFolder | " \[ SystemFolder \] msiexec" /z " \[ \# mydll \] " |
 
 
 
@@ -76,7 +76,7 @@ En el ejemplo siguiente se muestra cómo crear la base de datos para programar e
 | Acción           | Condición         | Secuencia |
 |------------------|-------------------|----------|
 | SelfUnregModules |                   | 2200     |
-| mydllUNREG       | $myComponent = 2    | 2201     |
+| mydllUNREG       | $myComponent=2    | 2201     |
 | RemoveFiles      |                   | 3500     |
 | InstallFiles     |                   | 4000     |
 | SelfRegModules   |                   | 6500     |

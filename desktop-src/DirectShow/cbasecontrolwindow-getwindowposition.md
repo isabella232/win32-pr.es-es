@@ -1,7 +1,7 @@
 ---
-description: El método GetWindowPosition recupera las coordenadas actuales para la ventana.
+description: El método GetWindowPosition recupera las coordenadas actuales de la ventana.
 ms.assetid: a2f46a87-b2cd-450f-8d2b-0f8695432fda
-title: Método CBaseControlWindow. GetWindowPosition (Ctlutil. h)
+title: Método CBaseControlWindow.GetWindowPosition (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: af2b1bdb8b2c839644e8c0629e3e272c123d3c21
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d576f065e807c2af47621d43940d7e48c54f36f0617d20590953a5e83ab2fc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966735"
 ---
-# <a name="cbasecontrolwindowgetwindowposition-method"></a>CBaseControlWindow. GetWindowPosition, método
+# <a name="cbasecontrolwindowgetwindowposition-method"></a>Método CBaseControlWindow.GetWindowPosition
 
-El `GetWindowPosition` método recupera las coordenadas actuales para la ventana.
+El `GetWindowPosition` método recupera las coordenadas actuales de la ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,27 +55,27 @@ Puntero a la coordenada izquierda, en coordenadas de pantalla.
 *pTop* 
 </dt> <dd>
 
-Puntero en la coordenada superior, en coordenadas de la pantalla.
+Puntero a la coordenada superior, en coordenadas de pantalla.
 
 </dd> <dt>
 
 *pWidth* 
 </dt> <dd>
 
-Puntero en el ancho de la ventana, en coordenadas de la pantalla.
+Puntero al ancho de la ventana, en coordenadas de pantalla.
 
 </dd> <dt>
 
 *pHeight* 
 </dt> <dd>
 
-Puntero al alto de la ventana, en coordenadas de la pantalla.
+Puntero al alto de la ventana, en coordenadas de pantalla.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ Devuelve un valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

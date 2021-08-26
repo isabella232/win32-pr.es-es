@@ -4,19 +4,19 @@ ms.assetid: 5162800c-9c55-40de-be66-a98765324f76
 title: Evento MEEnablerCompleted (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f05459a648f6b357fd483baa9fc56809540e64a1
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 2983cbcf3927626da88432c0cc04f28e2fc5d3e866d161b514dcbe5108bcf92a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013805"
 ---
 # <a name="meenablercompleted-event"></a>Evento MEEnablerCompleted
 
 Lo genera un objeto habilitador de contenido cuando se completa la acción de habilitación del objeto. Los objetos que exponen [**la interfaz IMFContentEnabler**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentenabler) pueden generar este evento. El evento se genera si se produce alguna de las siguientes situaciones:
 
 -   El [**método IMFContentEnabler::AutomaticEnable**](/windows/desktop/api/mfidl/nf-mfidl-imfcontentenabler-automaticenable) se completa de forma asincrónica.
--   La aplicación llama [**a IMFContentEnabler::MonitorEnable y,**](/windows/desktop/api/mfidl/nf-mfidl-imfcontentenabler-monitorenable)a continuación, la aplicación completa la solicitud HTTP POST, como se describe en el **método MonitorEnable.**
+-   La aplicación llama [**a IMFContentEnabler::MonitorEnable y,**](/windows/desktop/api/mfidl/nf-mfidl-imfcontentenabler-monitorenable)a continuación, la aplicación completa la solicitud HTTP POST, como se describe en **el método MonitorEnable.**
 
 ## <a name="event-values"></a>Valores de evento
 
@@ -30,9 +30,9 @@ Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/deskt
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El código de estado del evento puede contener uno de los valores siguientes.
+El código de estado del evento puede contener uno de los siguientes valores.
 
 
 
@@ -52,15 +52,15 @@ Para recibir este evento, consulte la interfaz [**IMFContentEnabler**](/windows/
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

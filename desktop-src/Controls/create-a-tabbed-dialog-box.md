@@ -4,40 +4,40 @@ description: En el ejemplo de esta sección se muestra cómo crear un cuadro de 
 ms.assetid: DBF7FBDF-AADC-45CE-833E-F893C1129FC0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa0b84a8a77d18903ddbdb29687cc2b97b88872b
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 8fa2ad8ba22c2972c6bdd502728af413d4800dabf0ab5c9196a4033a52267115
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103904852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920715"
 ---
 # <a name="how-to-create-a-tabbed-dialog-box"></a>Cómo crear un cuadro de diálogo con pestañas
 
-En el ejemplo de esta sección se muestra cómo crear un cuadro de diálogo que usa pestañas para proporcionar varias páginas de controles. El cuadro de diálogo principal es un cuadro de diálogo modal. Cada página de controles se define mediante una plantilla de cuadro de diálogo que tiene el estilo [**\_ secundario WS**](/windows/desktop/winmsg/window-styles) . Cuando se selecciona una ficha, se crea un cuadro de diálogo no modal para la página entrante y se destruye el cuadro de diálogo de la página saliente.
+En el ejemplo de esta sección se muestra cómo crear un cuadro de diálogo que usa pestañas para proporcionar varias páginas de controles. El cuadro de diálogo principal es un cuadro de diálogo modal. Cada página de controles se define mediante una plantilla de cuadro de diálogo que tiene el [**estilo \_ SECUNDARIO de WS.**](/windows/desktop/winmsg/window-styles) Cuando se selecciona una pestaña, se crea un cuadro de diálogo de modelado para la página entrante y se destruye el cuadro de diálogo de la página saliente.
 
 > [!Note]  
-> En muchos casos, puede implementar cuadros de diálogo de varias páginas más fácilmente mediante el uso de hojas de propiedades. Para obtener más información acerca de las hojas de propiedades, vea [acerca de las hojas de propiedades](property-sheets.md).
+> En muchos casos, puede implementar cuadros de diálogo de varias páginas más fácilmente mediante hojas de propiedades. Para obtener más información sobre las hojas de propiedades, vea [Acerca de las hojas de propiedades.](property-sheets.md)
 
- 
+ 
 
-La plantilla del cuadro de diálogo principal simplemente define dos controles de botón. Al procesar el mensaje de [**\_ INITDIALOG de WM**](/windows/desktop/dlgbox/wm-initdialog) , el procedimiento de cuadro de diálogo crea un control de ficha y carga los recursos de plantilla de cuadro de diálogo para cada uno de los cuadros de diálogo secundarios.
+La plantilla del cuadro de diálogo principal simplemente define dos controles de botón. Al procesar el [**mensaje WM \_ INITDIALOG,**](/windows/desktop/dlgbox/wm-initdialog) el procedimiento del cuadro de diálogo crea un control de ficha y carga los recursos de plantilla de cuadro de diálogo para cada uno de los cuadros de diálogo secundarios.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="create-a-tabbed-dialog-box"></a>Crear un cuadro de diálogo con pestañas
 
-La información se guarda en una estructura definida por la aplicación denominada DLGHDR. Un puntero a esta estructura está asociado a la ventana de cuadro de diálogo mediante la función [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) . La estructura se define en el archivo de encabezado de la aplicación, como se indica a continuación.
+La información se guarda en una estructura definida por la aplicación denominada DLGHDR. Un puntero a esta estructura está asociado a la ventana del cuadro de diálogo mediante la [**función SetWindowLong.**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) La estructura se define en el archivo de encabezado de la aplicación, como se muestra a continuación.
 
 
 ```C++
@@ -53,9 +53,9 @@ typedef struct tag_dlghdr {
 
 
 
-La función siguiente procesa el mensaje de [**\_ INITDIALOG de WM**](/windows/desktop/dlgbox/wm-initdialog) para el cuadro de diálogo principal. La función asigna la `DLGHDR` estructura, carga los recursos de plantilla de cuadro de diálogo para los cuadros de diálogo secundarios y crea el control de ficha.
+La función siguiente procesa el [**mensaje WM \_ INITDIALOG**](/windows/desktop/dlgbox/wm-initdialog) para el cuadro de diálogo principal. La función asigna la estructura , carga los recursos de plantilla de cuadro de diálogo para los cuadros de diálogo secundarios y `DLGHDR` crea el control de ficha.
 
-El tamaño de cada cuadro de diálogo secundario se especifica mediante la estructura [**DLGTEMPLATEEX**](/windows/desktop/dlgbox/dlgtemplateex) . La función examina el tamaño de cada cuadro de diálogo y usa la macro para el [**mensaje \_ ADJUSTRECT de TCM**](tcm-adjustrect.md) para calcular un tamaño adecuado para el control de ficha. A continuación, se cambia el tamaño del cuadro de diálogo y se colocan los dos botones en consecuencia. Este ejemplo envía **la \_ ADJUSTRECT TCM** mediante la [**macro \_ TabCtrl ADJUSTRECT**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_adjustrect) .
+La estructura [**DLGTEMPLATEEX**](/windows/desktop/dlgbox/dlgtemplateex) especifica el tamaño de cada cuadro de diálogo secundario. La función examina el tamaño de cada cuadro de diálogo y usa la macro para el mensaje [**\_ ADJUSTRECT**](tcm-adjustrect.md) de TCM para calcular un tamaño adecuado para el control de ficha. A continuación, puede cambiar el tamaño del cuadro de diálogo y colocar los dos botones en consecuencia. En este ejemplo se **envía \_ TCM ADJUSTRECT** mediante la [**macro TabCtrl \_ AdjustRect.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_adjustrect)
 
 
 ```C++
@@ -195,7 +195,7 @@ DLGTEMPLATEEX* DoLockDlgRes(LPCTSTR lpszResName)
 
 
 
-La función siguiente procesa el código de notificación [TCN \_ SELCHANGE](tcn-selchange.md) para el cuadro de diálogo principal. La función destruye el cuadro de diálogo de la página de salida, si existe. A continuación, usa la función [**CreateDialogIndirect**](/windows/desktop/api/winuser/nf-winuser-createdialogindirecta) para crear un cuadro de diálogo no modal para la página entrante.
+La función siguiente procesa el [código de notificación DE \_ TCN SELCHANGE](tcn-selchange.md) para el cuadro de diálogo principal. La función destruye el cuadro de diálogo de la página saliente, si la hay. A continuación, usa [**la función CreateDialogIndirect**](/windows/desktop/api/winuser/nf-winuser-createdialogindirecta) para crear un cuadro de diálogo de modeless para la página entrante.
 
 
 ```C++
@@ -226,7 +226,7 @@ VOID OnSelChanged(HWND hwndDlg)
 
 
 
-La función siguiente procesa el mensaje de [**\_ INITDIALOG de WM**](/windows/desktop/dlgbox/wm-initdialog) para cada uno de los cuadros de diálogo secundarios. No se puede especificar la posición de un cuadro de diálogo que se crea mediante la función [**CreateDialogIndirect**](/windows/desktop/api/winuser/nf-winuser-createdialogindirecta) . Esta función usa la función [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) para colocar el cuadro de diálogo secundario dentro del área de presentación del control de pestaña.
+La función siguiente procesa el [**mensaje WM \_ INITDIALOG**](/windows/desktop/dlgbox/wm-initdialog) para cada uno de los cuadros de diálogo secundarios. No se puede especificar la posición de un cuadro de diálogo que se crea mediante la [**función CreateDialogIndirect.**](/windows/desktop/api/winuser/nf-winuser-createdialogindirecta) Esta función usa la [**función SetWindowPos para**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) colocar el diálogo secundario dentro del área de presentación del control de ficha.
 
 
 ```C++
@@ -255,12 +255,12 @@ VOID WINAPI OnChildDialogInit(HWND hwndDlg)
 
 <dl> <dt>
 
-[Usar controles de ficha](using-tab-controls.md)
+[Usar controles tab](using-tab-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

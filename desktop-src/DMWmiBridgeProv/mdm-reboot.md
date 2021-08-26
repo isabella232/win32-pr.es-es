@@ -1,9 +1,9 @@
 ---
-title: MDM_Reboot (clase)
-description: La Rebootclass de MDM \_ se usa para configurar las opciones de reinicio.
+title: MDM_Reboot clase
+description: La clase Rebootclass de MDM \_ se usa para configurar los valores de reinicio.
 ms.assetid: 876ba854-1c26-49cf-915d-194be9f9c1d4
 keywords:
-- MDM_Reboot (clase)
+- MDM_Reboot clase
 - MDM_Reboot clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3e078dfef883db5aad67e7ee834ceca4bd0a942
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b742754cc22d069cce47ef32a60739c517f578df76fc42dbf5076972c5e63b0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967495"
 ---
-# <a name="mdm_reboot-class"></a>\_Clase de reinicio de MDM
+# <a name="mdm_reboot-class"></a>Mdm \_ Reboot (clase)
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La clase de **\_ reinicio de MDM** se usa para configurar las opciones de reinicio.
+La **clase Mdm \_ Reboot** se usa para configurar los valores de reinicio.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -45,14 +45,14 @@ class MDM_Reboot
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ reinicio de MDM** tiene estos tipos de miembros:
+La **clase MDM \_ Reboot** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase de **\_ reinicio de MDM** tiene estos métodos.
+La **clase MDM \_ Reboot** tiene estos métodos.
 
 
 
@@ -66,7 +66,7 @@ La clase de **\_ reinicio de MDM** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ reinicio de MDM** tiene estas propiedades.
+La **clase MDM \_ Reboot** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -98,7 +98,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/"
 
 </dd> </dl>
 
@@ -108,11 +108,11 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| Archivo DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOF</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| Archivo DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

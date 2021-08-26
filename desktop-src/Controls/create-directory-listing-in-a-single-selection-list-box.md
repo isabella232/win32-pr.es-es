@@ -1,43 +1,43 @@
 ---
-title: Crear una lista de directorios en un cuadro de lista
-description: En este tema se muestra cómo usar un cuadro de lista de selección única para mostrar y obtener acceso al contenido de un directorio.
+title: Creación de una lista de directorios en un ListBox
+description: En este tema se muestra cómo usar un cuadro de lista de selección única para mostrar y acceder al contenido de un directorio.
 ms.assetid: 11C0DB10-59BA-47C4-8687-101A2A85D660
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03829990605271574a2030486ac5aba428867ec3
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 926dc09e1e8cee85d230b0715684e084350c97c64b6f6cafb8228cc82cc61dc4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103995738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920475"
 ---
-# <a name="how-to-create-a-directory-listing-in-a-single-selection-listbox"></a>Cómo crear una lista de directorios en un cuadro de lista de selección única
+# <a name="how-to-create-a-directory-listing-in-a-single-selection-listbox"></a>Creación de una lista de directorios en un listBox de selección única
 
-En este tema se muestra cómo usar un cuadro de lista de selección única para mostrar y obtener acceso al contenido de un directorio. El cuadro de lista de selección única es el tipo de cuadro de lista predeterminado. Un usuario solo puede seleccionar un elemento cada vez desde un cuadro de lista de selección única.
+En este tema se muestra cómo usar un cuadro de lista de selección única para mostrar y acceder al contenido de un directorio. El cuadro de lista de selección única es el tipo de cuadro de lista predeterminado. Un usuario solo puede seleccionar un elemento a la vez en un cuadro de lista de selección única.
 
 El ejemplo de código de C++ de este tema permite a un usuario ver una lista de archivos en el directorio actual, seleccionar un archivo de la lista y eliminarlo.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
 La aplicación de lista de directorios debe realizar las siguientes tareas relacionadas con el cuadro de lista:
 
--   Inicializa el cuadro de lista.
+-   Inicialice el cuadro de lista.
 -   Recupere la selección del usuario del cuadro de lista.
--   Quitar el nombre de archivo del cuadro de lista una vez eliminado el archivo seleccionado.
+-   Quite el nombre de archivo del cuadro de lista después de eliminar el archivo seleccionado.
 
-En el siguiente ejemplo de código de C++, el procedimiento de cuadro de diálogo inicializa el cuadro de lista de selección única ( \_ nombre de archivo de IDC) mediante la función [**DlgDirList**](/windows/desktop/api/Winuser/nf-winuser-dlgdirlista) para rellenar el cuadro de lista con los nombres de todos los archivos del directorio actual. Cuando el usuario selecciona un archivo y elige el botón **eliminar** , la función [**DlgDirSelectEx**](/windows/desktop/api/Winuser/nf-winuser-dlgdirselectexa) recupera el nombre del archivo seleccionado. El código elimina el archivo mediante la función [**DeleteFile**](/windows/desktop/api/fileapi/nf-fileapi-deletefilea) y actualiza el cuadro de lista de directorios mediante el envío del mensaje [**lb \_ DELETESTRING**](lb-deletestring.md) .
+En el siguiente ejemplo de código de C++, el procedimiento del cuadro de diálogo inicializa el cuadro de lista de selección única (IDC FILELIST) mediante la función \_ [**DlgDirList**](/windows/desktop/api/Winuser/nf-winuser-dlgdirlista) para rellenar el cuadro de lista con los nombres de todos los archivos del directorio actual. Cuando el usuario selecciona un archivo  y elige el botón Eliminar, la función [**DlgDirSelectEx**](/windows/desktop/api/Winuser/nf-winuser-dlgdirselectexa) recupera el nombre del archivo seleccionado. El código elimina el archivo mediante la función [**DeleteFile**](/windows/desktop/api/fileapi/nf-fileapi-deletefilea) y actualiza el cuadro de lista de directorios mediante el envío del [**mensaje LB \_ DELETESTRING.**](lb-deletestring.md)
 
 
 
@@ -143,7 +143,7 @@ INT_PTR CALLBACK DlgDelFileProc(HWND hDlg, UINT message,
 
 <dl> <dt>
 
-[Referencia de control de cuadro de lista](bumper-list-box-list-box-control-reference.md)
+[Referencia del control Cuadro de lista](bumper-list-box-list-box-control-reference.md)
 </dt> <dt>
 
 [Acerca de los cuadros de lista](about-list-boxes.md)

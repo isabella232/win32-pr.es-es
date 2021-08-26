@@ -1,11 +1,11 @@
 ---
-title: MSMQ-Transactional atributo)
+title: MSMQ-Transactional atributo
 description: Indica si la cola es transaccional.
 ms.assetid: 8ec5d505-4e48-4313-a0d8-26c04acec66e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de MSMQ-Transactional
-- mSMQTransactional esquema de AD de atributos
+- MSMQ-Transactional esquema de AD del atributo
+- Esquema de AD del atributo mSMQTransactional
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ef230c405a847537750302255b75b39008185cd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 828e83ccc1a9311e2a3cf5687d97cbd12c82d8d3ee5dde96c55dbd2b10848766
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066482"
 ---
-# <a name="msmq-transactional-attribute"></a>MSMQ-Transactional atributo)
+# <a name="msmq-transactional-attribute"></a>MSMQ-Transactional atributo
 
 Indica si la cola es transaccional.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | MSMQ-Transactional                   |
-| Nombre para mostrar de LDAP | mSMQTransactional                    |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | mSMQTransactional                    |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.926               |
-| System-ID-GUID    | 9a0dc329-c100-11d1-bbc5-0080c76670c0 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 9a0dc329-c100-11d1-ero5-0080c76670c0 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -53,20 +53,20 @@ Indica si la cola es transaccional.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Indica si la cola es transaccional.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Indica si la cola es transaccional.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Indica si la cola es transaccional.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Indica si la cola es transaccional.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Indica si la cola es transaccional.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 

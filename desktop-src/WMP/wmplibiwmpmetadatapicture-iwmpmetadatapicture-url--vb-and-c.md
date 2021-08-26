@@ -1,11 +1,11 @@
 ---
-title: Propiedad de dirección URL de IWMPMetadataPicture
-description: Esta propiedad solo se utiliza de forma interna. | Propiedad de dirección URL de IWMPMetadataPicture
+title: Propiedad IWMPMetadataPicture URL
+description: Esta propiedad solo se utiliza de forma interna. | Propiedad IWMPMetadataPicture URL
 ms.assetid: 34e01c7b-cac2-4c16-8ed7-0f62652ac5be
 keywords:
-- Propiedades de URL Media Player de Windows
-- Propiedad URL Media Player de Windows, interfaz IWMPMetadataPicture
-- Interfaz IWMPMetadataPicture Windows Media Player, propiedad URL
+- Propiedades de dirección URL Reproductor de Windows Media
+- Url property Reproductor de Windows Media , IWMPMetadataPicture (interfaz)
+- Interfaz IWMPMetadataPicture Reproductor de Windows Media , propiedad URL
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85d781748cde0a5067a830280316700c63e4004d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e563822cd442add8bc1c169a887ee67b93669e22d8924a403b42a120ca532556
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000105"
 ---
-# <a name="iwmpmetadatapictureurl-property"></a>IWMPMetadataPicture:: URL (propiedad)
+# <a name="iwmpmetadatapictureurl-property"></a>Propiedad IWMPMetadataPicture::URL
 
 Esta propiedad solo se utiliza de forma interna.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -52,7 +52,7 @@ Public ReadOnly Property URL As System.String
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

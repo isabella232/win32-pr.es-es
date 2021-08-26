@@ -1,7 +1,7 @@
 ---
 description: Representa una asociación entre un controlador de protocolo y una unidad lógica expuesta.
 ms.assetid: e8bf2b32-b4a6-4963-8a50-2b06776965e8
-title: CIM_ProtocolControllerForUnit (clase)
+title: CIM_ProtocolControllerForUnit clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 26020745057d5963ed4a892ba8639ac078aaa20b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2722bca49dbac3996295c2937003877321d5c58eb8394b4405d9ce9afce65b48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981175"
 ---
-# <a name="cim_protocolcontrollerforunit-class"></a>\_Clase ProtocolControllerForUnit de CIM
+# <a name="cim_protocolcontrollerforunit-class"></a>Cim \_ ProtocolControllerForUnit (clase)
 
 Representa una asociación entre un controlador de protocolo y una unidad lógica expuesta.
 
@@ -41,13 +41,13 @@ class CIM_ProtocolControllerForUnit : CIM_ProtocolControllerForDevice
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ProtocolControllerForUnit** tiene estos tipos de miembros:
+La **clase CIM \_ ProtocolControllerForUnit** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ProtocolControllerForUnit** tiene estas propiedades.
+La **clase CIM \_ ProtocolControllerForUnit** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -60,39 +60,39 @@ Tipo de datos: **CIM \_ ProtocolController**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-El controlador de protocolo.
+Controlador de protocolo.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ LogicalDevice de CIM**
+Tipo de datos: **\_ Cim LogicalDevice**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Unidad lógica asociada con el controlador de protocolo.
+Unidad lógica asociada al controlador de protocolo.
 
 </dd> <dt>
 
 **DeviceAccess**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Los derechos de acceso concedidos a la unidad lógica a través del controlador de protocolo.
+Derechos de acceso concedidos a la unidad lógica a través del controlador de protocolo.
 
 <dt>
 
@@ -126,14 +126,14 @@ Los derechos de acceso concedidos a la unidad lógica a través del controlador 
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (5.. 15999)
+**DMTF reservado** (5..15999)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (16000...)
+**Reservado por** el proveedor (16000).
 
 
 </dt> <dd></dd> </dl>
@@ -148,8 +148,8 @@ Los derechos de acceso concedidos a la unidad lógica a través del controlador 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -158,7 +158,7 @@ Los derechos de acceso concedidos a la unidad lógica a través del controlador 
 
 <dl> <dt>
 
-[**\_PROTOCOLCONTROLLERFORDEVICE CIM**](cim-protocolcontrollerfordevice.md)
+[**CIM \_ ProtocolControllerForDevice**](cim-protocolcontrollerfordevice.md)
 </dt> </dl>
 
  

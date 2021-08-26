@@ -1,15 +1,15 @@
 ---
 description: Devuelve el nivel de volumen más alto que estaba presente en el contenido de audio.
 ms.assetid: 1d9a6a22-bb82-45e1-80d2-88627c90340c
-title: Propiedad AVEncStatAudioPeakPCMValue (Codecapi. h)
+title: Propiedad AVEncStatAudioPeakPCMValue (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00d75444631a63c946d4020fe91cdd3a980fc393
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 330f3eea62ce5f0232504786c63e87c233bd802f6d06fad6306f476f9d6b5361
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999845"
 ---
 # <a name="avencstataudiopeakpcmvalue-property"></a>Propiedad AVEncStatAudioPeakPCMValue
 
@@ -25,11 +25,11 @@ Esta propiedad es de lectura y escritura.
 
 **CODECAPI \_ AVEncStatAudioPeakPCMValue**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta propiedad está disponible una vez completada la codificación.
 
-Esta propiedad se aplica solo a la codificación de velocidad de bits variable (VBR) basada en la calidad.
+Esta propiedad solo se aplica a la codificación de velocidad de bits variable basada en calidad (VBR).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Esta propiedad se aplica solo a la codificación de velocidad de bits variable (
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -50,7 +50,7 @@ Esta propiedad se aplica solo a la codificación de velocidad de bits variable (
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

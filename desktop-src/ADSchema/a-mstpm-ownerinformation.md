@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TPM-OwnerInformation
-description: Contiene la información de propietario de un TPM determinado.
+title: Atributo ms-TPM-OwnerInformation
+description: Contiene la información del propietario de un TPM determinado.
 ms.assetid: 0d7e459f-2449-47b7-add7-ede84ecaaecd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-TPM-OwnerInformation
-- msTPM-OwnerInformation atributo AD Schema
+- Esquema de AD del atributo ms-TPM-OwnerInformation
+- Esquema de AD del atributo msTPM-OwnerInformation
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41456f99d90b4d6e915669fc3f5c84109efa5be5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c55a774457cd95b8e70604cd09e4164acf3669dbec9f9c63b6997e9a6e262672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066144"
 ---
-# <a name="ms-tpm-ownerinformation-attribute"></a>atributo MS-TPM-OwnerInformation
+# <a name="ms-tpm-ownerinformation-attribute"></a>Atributo ms-TPM-OwnerInformation
 
-Contiene la información de propietario de un TPM determinado.
+Contiene la información del propietario de un TPM determinado.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-TPM-OwnerInformation                     |
-| Nombre para mostrar de LDAP | msTPM-OwnerInformation                      |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-TPM-OwnerInformation                     |
+| Ldap-Display-Name | msTPM-OwnerInformation                      |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1966                     |
-| System-ID-GUID    | aa4e1a6d-550d-4e05-8c35-4afcb917a9fe        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | aa4e1a6d-550d-4e05-8c35-4afcb917a9fe        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,13 +52,13 @@ Contiene la información de propietario de un TPM determinado.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000298                                |
@@ -73,13 +73,13 @@ Contiene la información de propietario de un TPM determinado.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000298                                |
@@ -94,18 +94,18 @@ Contiene la información de propietario de un TPM determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                  |
-| System-Only            | False                                                                                                               |
-| Tiene un único valor       | True                                                                                                                |
-| Está indexado             | False                                                                                                               |
-| En el catálogo global      | False                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                        |
+| System-Only            | Falso                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                |
+| Está indexado             | Falso                                                                                                               |
+| En el catálogo global      | Falso                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                        |
 | Range-Lower            | \-                                                                                                                  |
 | Range-Upper            | \-                                                                                                                  |
 | Search-Flags           | 0x00000298                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                          |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Objeto de información de MS-TPM**](c-mstpm-informationobject.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**ms-TPM-Information-Object**](c-mstpm-informationobject.md)<br/> |
 
 
 

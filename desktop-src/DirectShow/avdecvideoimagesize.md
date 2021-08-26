@@ -1,15 +1,15 @@
 ---
 description: Obtiene el tamaño de la imagen descodificada, en píxeles.
 ms.assetid: 2F0DD10F-CF7A-4A6F-91A9-E3828DF2B947
-title: Propiedad AVDecVideoImageSize (Codecapi. h)
+title: Propiedad AVDecVideoImageSize (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cbe8fc3e77de920588ca1f0ee31d86f19c7e667
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ba4c059dfb1b2aebad4da10e54a3ecc1224a00d9cffcdb13dc7c87f4e29d4e83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105666143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000195"
 ---
 # <a name="avdecvideoimagesize-property"></a>Propiedad AVDecVideoImageSize
 
@@ -27,9 +27,9 @@ Esta propiedad es de solo lectura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Los 16 bits superiores contienen el ancho y los 16 bits inferiores contienen el alto.
+Los 16 bits altos contienen el ancho y los 16 bits inferiores contienen el alto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El número de canales incluye el canal de efecto de baja frecuencia (LFE), si está presente.
 
@@ -39,9 +39,9 @@ El número de canales incluye el canal de efecto de baja frecuencia (LFE), si es
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ El número de canales incluye el canal de efecto de baja frecuencia (LFE), si es
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

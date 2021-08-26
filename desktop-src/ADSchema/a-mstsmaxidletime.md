@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Max-Idle-Time
-description: Terminal Services tiempo de inactividad máximo de la sesión es el tiempo máximo, en minutos, que la sesión Terminal Services puede permanecer inactiva.
+title: Atributo ms-TS-Max-Idle-Time
+description: Tiempo máximo de inactividad de la sesión de Terminal Services es la cantidad máxima de tiempo, en minutos, que la sesión de Terminal Services puede permanecer inactiva.
 ms.assetid: a6da59a9-d3e5-4f54-9481-a4dc6a5eb5cd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-TS-Max-Idle-Time
-- msTSMaxIdleTime esquema de AD de atributos
+- Esquema de AD del atributo ms-TS-Max-Idle-Time
+- Esquema de AD del atributo msTSMaxIdleTime
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c48c0643a96cfd6cb23b684916580b53a6321ccf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f1712c3ded333ef23dc8b79429404907a0c2c7b1b24459ee6eb1be5f9ea20747
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066088"
 ---
-# <a name="ms-ts-max-idle-time-attribute"></a>atributo MS-TS-Max-Idle-Time
+# <a name="ms-ts-max-idle-time-attribute"></a>Atributo ms-TS-Max-Idle-Time
 
-Terminal Services tiempo de inactividad máximo de la sesión es el tiempo máximo, en minutos, que la sesión Terminal Services puede permanecer inactiva.
+Tiempo máximo de inactividad de la sesión de Terminal Services es la cantidad máxima de tiempo, en minutos, que la sesión de Terminal Services puede permanecer inactiva.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | MS-TS-Max-Idle-Time                  |
-| Nombre para mostrar de LDAP | msTSMaxIdleTime                      |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-TS-Max-Idle-Time                  |
+| Ldap-Display-Name | msTSMaxIdleTime                      |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1983              |
-| System-ID-GUID    | ff739e9c-6bb7-460e-b221-e250f3de0f95 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | ff739e9c-6bb7-460e-b221-e250f3de0f95 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,18 +52,18 @@ Terminal Services tiempo de inactividad máximo de la sesión es el tiempo máxi
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Terminal Services tiempo de inactividad máximo de la sesión es el tiempo máxi
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -94,13 +94,13 @@ Terminal Services tiempo de inactividad máximo de la sesión es el tiempo máxi
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

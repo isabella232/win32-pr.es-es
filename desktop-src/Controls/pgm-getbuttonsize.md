@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PGM_GETBUTTONSIZE (commctrl. h)
-description: Recupera el tamaño actual del botón para el control de paginación. Puede enviar este mensaje explícitamente o utilizar la macro GetButtonSize de buscapersonas \_ .
+title: PGM_GETBUTTONSIZE mensaje (Commctrl.h)
+description: Recupera el tamaño del botón actual para el control de paginación. Puede enviar este mensaje explícitamente o usar la macro Pager \_ GetButtonSize.
 ms.assetid: fa8b4814-4587-4149-83a7-84faad2a4641
 keywords:
-- PGM_GETBUTTONSIZE controles de mensajes de Windows
+- PGM_GETBUTTONSIZE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae5cb36d203aaeae748db9adb1b13cacf2e40f5e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a77bbfdbac95c10afc721cfbae41798083ea98f4dd78e9dfdec9099871d7afd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985905"
 ---
-# <a name="pgm_getbuttonsize-message"></a>\_Mensaje GETBUTTONSIZE PGM
+# <a name="pgm_getbuttonsize-message"></a>Mensaje \_ GETBUTTONSIZE de PGM
 
-Recupera el tamaño actual del botón para el control de paginación. Puede enviar este mensaje explícitamente o utilizar la macro [**\_ GetButtonSize de buscapersonas**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getbuttonsize) .
+Recupera el tamaño del botón actual para el control de paginación. Puede enviar este mensaje explícitamente o usar la macro [**Pager \_ GetButtonSize.**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getbuttonsize)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,9 +45,9 @@ Devuelve un valor INT que contiene el tamaño del botón actual, en píxeles.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Devuelve un valor INT que contiene el tamaño del botón actual, en píxeles.
 
 <dl> <dt>
 
-[**\_SETBUTTONSIZE PGM**](pgm-setbuttonsize.md)
+[**PGM \_ SETBUTTONSIZE**](pgm-setbuttonsize.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: IWMPError clearErrorQueue, método
-description: El método clearErrorQueue borra los errores de la cola de errores. | IWMPError clearErrorQueue, método
+title: Método IWMPError clearErrorQueue
+description: El método clearErrorQueue borra los errores de la cola de errores. | Método IWMPError clearErrorQueue
 ms.assetid: a8e8e666-56e4-4e75-9ed5-2714d272ce7c
 keywords:
-- método clearErrorQueue de Windows Media Player
-- método clearErrorQueue Windows Media Player, interfaz IWMPError
-- Interfaz IWMPError Windows Media Player, método clearErrorQueue
+- Método clearErrorQueue Reproductor de Windows Media
+- Método clearErrorQueue Reproductor de Windows Media , interfaz IWMPError
+- Interfaz IWMPError Reproductor de Windows Media , método clearErrorQueue
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98c3f422a9bc32049106d83c970bd8d2c9b2110f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f75b4e4d2a0e80a3f55a38744758497abc71f5899498fee95ee3b3db752631c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000455"
 ---
-# <a name="iwmperrorclearerrorqueue-method"></a>IWMPError:: clearErrorQueue (método)
+# <a name="iwmperrorclearerrorqueue-method"></a>IWMPError::clearErrorQueue (método)
 
-El método **clearErrorQueue** borra los errores de la cola de errores.
+El **método clearErrorQueue** borra los errores de la cola de errores.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,15 +53,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Utilice este método para borrar la cola de errores después de haber procesado una serie de errores.
+Use este método para borrar la cola de errores después de procesar una serie de errores.
 
-Debe establecer **IWMPSettings. enableErrorDialogs** en **false** si elige mostrar mensajes de error personalizados.
+Debe establecer **IWMPSettings.enableErrorDialogs** en **false** si decide mostrar mensajes de error personalizados.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **clearErrorQueue** en un controlador de eventos de error para vaciar la cola de errores después de mostrar todas las descripciones de errores. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa clearErrorQueue en** un controlador de eventos Error para vaciar la cola de errores después de mostrar todas las descripciones de errores. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -120,7 +120,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -133,7 +133,7 @@ End Sub
 [**Interfaz IWMPError (VB y C#)**](iwmperror--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings. enableErrorDialogs (VB y C#)**](wmplibiwmpsettings-iwmpsettings-enableerrordialogs--vb-and-c.md)
+[**IWMPSettings.enableErrorDialogs (VB y C#)**](wmplibiwmpsettings-iwmpsettings-enableerrordialogs--vb-and-c.md)
 </dt> </dl>
 
  

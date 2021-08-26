@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-stringDefault
-description: Configuración de cadena predeterminada para un conjunto de objetos de parámetro de cadena.
+title: Atributo ms-WMI-stringDefault
+description: Valor de cadena predeterminado para un conjunto de objetos de parámetro de cadena.
 ms.assetid: d467905a-b361-4689-8c1f-abb0f2f58766
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-WMI-stringDefault
-- msWMI-StringDefault atributo AD Schema
+- ms-WMI-string Schema de AD de atributo predeterminado
+- Esquema de AD del atributo msWMI-StringDefault
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffe21c17ec1abd64081991e9f50293417910beb1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2f647894443f1795542603fd1d811a74cdf01bb7e04cf9dc74a3c7b3ca2d345b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066035"
 ---
-# <a name="ms-wmi-stringdefault-attribute"></a>atributo MS-WMI-stringDefault
+# <a name="ms-wmi-stringdefault-attribute"></a>Atributo ms-WMI-stringDefault
 
-Configuración de cadena predeterminada para un conjunto de objetos de parámetro de cadena.
+Valor de cadena predeterminado para un conjunto de objetos de parámetro de cadena.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-stringDefault                        |
-| Nombre para mostrar de LDAP | msWMI-StringDefault                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de directiva de grupo                  |
+| CN                | ms-WMI-stringDefault                        |
+| Ldap-Display-Name | msWMI-StringDefault                         |
+| Size              | \-                                          |
+| Privilegio actualizar  | directiva de grupo administrador                  |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1636                     |
-| System-ID-GUID    | 152e42b6-37c5-4f55-ab48-1606384a9aea        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 152e42b6-37c5-4f55-ab48-1606384a9aea        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,13 +54,13 @@ Configuración de cadena predeterminada para un conjunto de objetos de parámetr
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -75,13 +75,13 @@ Configuración de cadena predeterminada para un conjunto de objetos de parámetr
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -96,13 +96,13 @@ Configuración de cadena predeterminada para un conjunto de objetos de parámetr
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -117,13 +117,13 @@ Configuración de cadena predeterminada para un conjunto de objetos de parámetr
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -138,13 +138,13 @@ Configuración de cadena predeterminada para un conjunto de objetos de parámetr
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

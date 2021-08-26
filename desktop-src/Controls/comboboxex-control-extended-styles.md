@@ -17,12 +17,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 966d259cf427bcc83e9a8b2fb65670a2a05b9458
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: aed3ca32fa063b9b824a2ecd444a6a71c1885697f839b67e117c75622f009c60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921155"
 ---
 # <a name="comboboxex-control-extended-styles"></a>Estilos extendidos del control ComboBoxEx
 
@@ -36,7 +36,7 @@ Admite los estilos extendidos que se enumeran en esta sección, así como la may
 | <span id="CBES_EX_NOEDITIMAGE"></span><span id="cbes_ex_noeditimage"></span><dl> <dt>**CBES \_ EX \_ NOEDITIMAGE**</dt> </dl>                   | El cuadro de edición y la lista desplegable no mostrarán imágenes de elementos. <br/>                                                                                                                                                                                                                                                          |
 | <span id="CBES_EX_NOEDITIMAGEINDENT"></span><span id="cbes_ex_noeditimageindent"></span><dl> <dt>**CBES \_ EX \_ NOEDITIMAGEINDENT**</dt> </dl> | El cuadro de edición y la lista desplegable no mostrarán imágenes de elementos. <br/>                                                                                                                                                                                                                                                          |
 | <span id="CBES_EX_NOSIZELIMIT"></span><span id="cbes_ex_nosizelimit"></span><dl> <dt>**CBES \_ EX \_ NOSIZELIMIT**</dt> </dl>                   | Permite que el control ComboBoxEx tenga un tamaño vertical menor que su control de cuadro combinado contenido. Si el tamaño de ComboBoxEx es menor que el cuadro combinado, se recortará el cuadro combinado. <br/>                                                                                                                                  |
-| <span id="CBES_EX_PATHWORDBREAKPROC"></span><span id="cbes_ex_pathwordbreakproc"></span><dl> <dt>**CBES \_ EX \_ PATHWORDBREAKPROC**</dt> </dl> | Solo Windows NT. El cuadro de edición usará los caracteres de barra diagonal inversa (/), barra diagonal inversa ( ) y \\ punto (.) como delimitadores de palabras. Esto hace que los métodos abreviados de teclado para el movimiento del cursor palabra a palabra sean efectivos en los nombres y direcciones URL de las rutas de acceso.<br/>                                                                                                       |
+| <span id="CBES_EX_PATHWORDBREAKPROC"></span><span id="cbes_ex_pathwordbreakproc"></span><dl> <dt>**CBES \_ EX \_ PATHWORDBREAKPROC**</dt> </dl> | Windows Solo NT. El cuadro de edición usará los caracteres de barra diagonal inversa (/), barra diagonal inversa ( ) y \\ punto (.) como delimitadores de palabras. Esto hace que los métodos abreviados de teclado para el movimiento del cursor palabra a palabra sean efectivos en las direcciones URL y los nombres de ruta de acceso.<br/>                                                                                                       |
 | <span id="CBES_EX_TEXTENDELLIPSIS"></span><span id="cbes_ex_textendellipsis"></span><dl> <dt>**CBES \_ EX \_ TEXTENDVELOPSIS**</dt> </dl>       | **Windows Vista y versiones posteriores.** Hace que los elementos de la lista desplegable y el cuadro de edición (cuando el cuadro de edición es de solo lectura) se trunquien con puntos suspensivos ("...") en lugar de simplemente recortarse por el borde del control. Esto resulta útil cuando el control debe establecerse en un ancho fijo, pero las entradas de la lista pueden ser largas.<br/> |
 
 

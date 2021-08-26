@@ -1,10 +1,10 @@
 ---
-title: Estructura de RTM_IP_ROUTE (RTM. h)
-description: La \_ estructura de ruta IP de RTM \_ contiene información que describe una ruta propiedad de la familia de protocolos IP.
+title: RTM_IP_ROUTE estructura (Rtm.h)
+description: La estructura RTM \_ IP ROUTE contiene información que describe una ruta propiedad de la familia de \_ protocolos IP.
 ms.assetid: e752a4ae-a6bf-4cd3-9638-7615ff3901b7
 keywords:
-- RTM_IP_ROUTE de la estructura RAS
-- PRTM_IP_ROUTE de puntero de estructura RAS
+- RTM_IP_ROUTE ras de estructura
+- PRTM_IP_ROUTE puntero ras de estructura
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1978503a3ec37e0c39716569030d5ea6599e19d9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0fd854864dcc61397fa52df7af9419a38ac829a81382be6b6190e4cb3db41d7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105677003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026735"
 ---
-# <a name="rtm_ip_route-structure"></a>\_Estructura de ruta IP de RTM \_
+# <a name="rtm_ip_route-structure"></a>Estructura RTM \_ IP \_ ROUTE
 
-\[Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API del administrador de tabla de enrutamiento versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La estructura de **\_ \_ ruta IP de RTM** contiene información que describe una ruta propiedad de la familia de protocolos IP.
+La **estructura RTM \_ IP \_ ROUTE** contiene información que describe una ruta propiedad de la familia de protocolos IP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,17 +49,17 @@ typedef struct _RTM_IP_ROUTE {
 
 <dl> <dt>
 
-**Marca de tiempo de RR \_**
+**RR \_ TimeStamp**
 </dt> <dd>
 
-Especifica la hora a la que se creó o se actualizó por última vez la entrada de ruta. Este miembro lo establece el administrador de tablas de enrutamiento. La hora se expresa como una estructura de FILETIME.
+Especifica la hora a la que se creó o actualizó por última vez la entrada de ruta. El administrador de tablas de enrutamiento establece este miembro. La hora se expresa como una estructura FILETIME.
 
 </dd> <dt>
 
 **RR \_ RoutingProtocol**
 </dt> <dd>
 
-Especifica el protocolo de enrutamiento que ha agregado la ruta.
+Especifica el protocolo de enrutamiento que agregó la ruta.
 
 </dd> <dt>
 
@@ -73,34 +73,34 @@ Especifica la interfaz a través de la que se obtuvo la ruta.
 **RR \_ ProtocolSpecificData**
 </dt> <dd>
 
-Especifica una estructura de [**\_ \_ datos específica del protocolo**](protocol-specific-data.md) que contiene la memoria reservada para los datos específicos del Protocolo de enrutamiento.
+Especifica una estructura [**DE DATOS ESPECÍFICA DEL \_ \_ PROTOCOLO**](protocol-specific-data.md) que contiene memoria reservada para los datos específicos del protocolo de enrutamiento.
 
 </dd> <dt>
 
-**\_Red RR**
+**Red \_ RR**
 </dt> <dd>
 
-Especifica una estructura de [**\_ red IP**](ip-network.md) que contiene una dirección de red IP.
+Especifica una estructura [**DE \_ RED IP**](ip-network.md) que contiene una dirección de red IP.
 
 </dd> <dt>
 
 **RR \_ NextHopAddress**
 </dt> <dd>
 
-Especifica una estructura de [**\_ dirección de próximo \_ salto \_ IP**](ip-next-hop-address.md) que contiene la dirección del enrutador de próximo salto.
+Especifica una estructura [**IP \_ NEXT HOP \_ \_ ADDRESS**](ip-next-hop-address.md) que contiene la dirección del enrutador del próximo salto.
 
 </dd> <dt>
 
 **RR \_ FamilySpecificData**
 </dt> <dd>
 
-Especifica una estructura de [**\_ \_ datos específica de IP**](ip-specific-data.md) que contiene datos específicos de la familia de protocolos IP.
+Especifica una estructura [**DE \_ DATOS \_ ESPECÍFICOS DE**](ip-specific-data.md) IP que contiene datos específicos de la familia de protocolos IP.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los miembros de la estructura de **\_ \_ ruta IP de RTM** están alineados con **DWORD** .
+Los miembros de la estructura **\_ RTM IP \_ ROUTE** están alineados **con DWORD.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ Los miembros de la estructura de **\_ \_ ruta IP de RTM** están alineados con *
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
 
 
 
@@ -119,19 +119,19 @@ Los miembros de la estructura de **\_ \_ ruta IP de RTM** están alineados con *
 
 <dl> <dt>
 
-[Referencia de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Estructuras de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)
+[Estructuras de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)
 </dt> <dt>
 
-[**\_red IP**](ip-network.md)
+[**RED \_ IP**](ip-network.md)
 </dt> <dt>
 
-[**Dirección IP del \_ próximo \_ salto \_**](ip-next-hop-address.md)
+[**DIRECCIÓN IP \_ DEL \_ PRÓXIMO \_ SALTO**](ip-next-hop-address.md)
 </dt> <dt>
 
-[**\_datos específicos de IP \_**](ip-specific-data.md)
+[**DATOS \_ ESPECÍFICOS DE \_ IP**](ip-specific-data.md)
 </dt> </dl>
 
  

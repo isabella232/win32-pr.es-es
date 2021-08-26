@@ -1,7 +1,7 @@
 ---
 description: Determina el tamaño, en bytes, de la interfaz COM IStream.
 ms.assetid: 8c2f081d-cc41-409e-a868-bcf834e1f128
-title: 'ISCardTypeConv:: SizeOfIStream (método) (Scarddat. h)'
+title: Método ISCardTypeConv::SizeOfIStream (Scarddat.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 603a01dc6cb4727d59a7fb82c3270c08a495f021
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec150fdf5a6f296b5728131cd59bb6863016fe46fe0769e6159e43b236f77a95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013695"
 ---
-# <a name="iscardtypeconvsizeofistream-method"></a>ISCardTypeConv:: SizeOfIStream (método)
+# <a name="iscardtypeconvsizeofistream-method"></a>Método ISCardTypeConv::SizeOfIStream
 
-\[El método **SizeOfIStream** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
+\[El **método SizeOfIStream** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El método **SizeOfIStream** determina el tamaño, en bytes, de la interfaz com **IStream** .
+El **método SizeOfIStream** determina el tamaño, en bytes, de la interfaz COM **de IStream.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,17 +42,17 @@ HRESULT SizeOfIStream(
 
 <dl> <dt>
 
-*pStrm* \[ de\]
+*pStrm* \[ En\]
 </dt> <dd>
 
-Puntero a la interfaz com **IStream** .
+Puntero a la interfaz COM **de IStream.**
 
 </dd> <dt>
 
-*puliSize* \[ enuncia\]
+*puliSize* \[ out\]
 </dt> <dd>
 
-Puntero al entero grande sin signo que puede contener todo el valor de tamaño de bit 64 de la interfaz com **IStream** .
+Puntero al entero grande sin signo que puede contener todo el valor sizeof de 64 bits de la interfaz COM **IStream.**
 
 </dd> </dl>
 
@@ -64,11 +64,11 @@ El método devuelve uno de los siguientes valores posibles.
 
 | Código devuelto                                                                                  | Descripción                                                                                             |
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | La función se ejecutó correctamente y *\* puliSize* es el tamaño, en bytes, de la interfaz com IStream.<br/> |
-| <dl> <dt>**E \_ FAIL**</dt> </dl>       | Se produjo un error no especificado.<br/>                                                                |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El parámetro *puliSize* es incorrecto.<br/>                                                       |
-| <dl> <dt>**\_puntero E**</dt> </dl>    | El parámetro *pStrm* es incorrecto.<br/>                                                          |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Se ha producido un error inesperado.<br/>                                                                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | La función se ha hecho *\* correctamente y puliSize* es el tamaño, en bytes, de la interfaz COM de IStream.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>       | Error no especificado.<br/>                                                                |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El *parámetro puliSize* es incorrecto.<br/>                                                       |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>    | El *parámetro pStrm* es incorrecto.<br/>                                                          |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Se ha producido un error inesperado.<br/>                                                                   |
 
 
 
@@ -78,16 +78,16 @@ El método devuelve uno de los siguientes valores posibles.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Scarddat. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Scarddat. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCardTypeConv se define como 53B6AA63-3F56-11D0-916B-00AA00C18068<br/>       |
+| IID<br/>                      | IID ISCardTypeConv se define como \_ 53B6AA63-3F56-11D0-916B-00AA00C18068<br/>       |
 
 
 

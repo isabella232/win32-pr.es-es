@@ -1,11 +1,11 @@
 ---
-title: atributo msSFU-30-Search-Attributes
-description: Contiene los nombres de los atributos que el servidor NIS necesita al buscar un mapa.
+title: Atributo msSFU-30-Search-Attributes
+description: Contiene los nombres de los atributos que necesita el servidor NIS al buscar en un mapa.
 ms.assetid: 4373ab2d-577b-4048-810e-2123aaf47bee
 ms.tgt_platform: multiple
 keywords:
-- msSFU-30-Search-Attributes atributo AD Schema
-- msSFU30SearchAttributes esquema de AD de atributos
+- msSFU-30-Search-Attributes attribute esquema de AD
+- Esquema de AD del atributo msSFU30SearchAttributes
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e36b69609fb2effbff84464cf145ee2ac908c8f1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 382315be18573dcb34fb704df29ccfa4d0b6f1e228b869a576e31357f10ba59f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066325"
 ---
-# <a name="mssfu-30-search-attributes-attribute"></a>atributo msSFU-30-Search-Attributes
+# <a name="mssfu-30-search-attributes-attribute"></a>Atributo msSFU-30-Search-Attributes
 
-Contiene los nombres de los atributos que el servidor NIS necesita al buscar un mapa.
+Contiene los nombres de los atributos que necesita el servidor NIS al buscar en un mapa.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | msSFU-30-Search-Attributes                  |
-| Nombre para mostrar de LDAP | msSFU30SearchAttributes                     |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | msSFU30SearchAttributes                     |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.304                 |
-| System-ID-GUID    | ef9a2df0-2e57-48c8-8950-0cc674004733        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | ef9a2df0-2e57-48c8-8950-0cc674004733        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,20 +51,20 @@ Contiene los nombres de los atributos que el servidor NIS necesita al buscar un 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | False                                                               |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Falso                                                               |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -72,20 +72,20 @@ Contiene los nombres de los atributos que el servidor NIS necesita al buscar un 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | False                                                               |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Falso                                                               |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -93,20 +93,20 @@ Contiene los nombres de los atributos que el servidor NIS necesita al buscar un 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | False                                                               |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Falso                                                               |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -114,20 +114,20 @@ Contiene los nombres de los atributos que el servidor NIS necesita al buscar un 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | False                                                               |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Falso                                                               |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 

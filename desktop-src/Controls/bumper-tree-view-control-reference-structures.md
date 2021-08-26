@@ -1,17 +1,17 @@
 ---
-title: Estructuras de vistas de árbol
-description: Estructuras de vistas de árbol
+title: Estructuras de vista de árbol
+description: Estructuras de vista de árbol
 ms.assetid: 2860458f-0217-4434-aab7-69f6f4274055
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abf266b80241d9bc48bc3e3f4efb0b4c6054dbfb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 841cb307777a837fc0557915019853b31750d8b93aafd9bdb6cbe4d344dc34a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119969075"
 ---
-# <a name="tree-view-structures"></a>Estructuras de vistas de árbol
+# <a name="tree-view-structures"></a>Estructuras de vista de árbol
 
 ## <a name="in-this-section"></a>En esta sección
 

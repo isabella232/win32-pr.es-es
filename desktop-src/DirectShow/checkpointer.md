@@ -1,7 +1,7 @@
 ---
 description: Comprueba si un puntero es NULL. Si el puntero es NULL, la función o el método en el que aparece la macro devuelve el valor especificado.
 ms.assetid: eca73fbf-5fd8-4b76-af06-ca0c22510b55
-title: Macro CheckPointr (Wxdebug. h)
+title: Macro de CheckPointer (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 04f442303e520ef758a3576d21c2df810ef26fb2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef1fa2370def45321958862ebaf3ded341b13f45ddae1ecafdc4a17e937aca08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999295"
 ---
-# <a name="checkpointer-macro"></a>Macro CheckPointr
+# <a name="checkpointer-macro"></a>Macro de CheckPointer
 
-Comprueba si un puntero es **null**. Si el puntero es **null**, la función o el método en el que aparece la macro devuelve el valor especificado.
+Comprueba si un puntero es **NULL.** Si el puntero es **NULL,** la función o el método en el que aparece la macro devuelve el valor especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,23 +40,23 @@ HRESULT CheckPointer(
 
 <dl> <dt>
 
-*m* 
+*p* 
 </dt> <dd>
 
-Puntero que se va a comprobar.
+Puntero que se debe comprobar.
 
 </dd> <dt>
 
-*direcc* 
+*Ret* 
 </dt> <dd>
 
-Valor que devuelve la función o el método si *p* es **null**.
+Valor que devuelve la función o el método si *p* es **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función circundante devuelve *RET* si *p* es **null**. De lo contrario, la macro no hace que la función circundante devuelva.
+La función circundante devuelve *ret si* *p* es **NULL.** De lo contrario, la macro no hace que se devuelva la función circundante.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -79,7 +79,7 @@ HRESULT MyFunction(VOID *pSomeParameter)
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wxdebug. h (incluir streams. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wxdebug.h (incluir Secuencias.h)</dt> </dl> |
 
 
 

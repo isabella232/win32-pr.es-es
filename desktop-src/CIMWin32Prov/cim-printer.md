@@ -1,8 +1,8 @@
 ---
-description: La \_ clase de impresora CIM representa las capacidades y la administración del dispositivo lógico de impresora.
+description: La clase \_ Cim Printer representa las funciones y la administración del dispositivo lógico de la impresora.
 ms.assetid: e41ff580-0202-4d3f-8d78-4705d5fb41b3
 ms.tgt_platform: multiple
-title: CIM_Printer (clase)
+title: CIM_Printer clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -65,23 +65,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5c673d6c58e6235e782a718b3b258a15790046eb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 001e0fce9645ddc2487a934fcbfa5986771f3dad841f58ea60dd4772e9120d7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921235"
 ---
-# <a name="cim_printer-class"></a>\_Clase Printer de CIM
+# <a name="cim_printer-class"></a>Cim \_ Printer (clase)
 
-La clase de **\_ impresora CIM** representa las capacidades y la administración del dispositivo lógico de impresora.
+La **clase \_ Cim Printer** representa las funciones y la administración del dispositivo lógico de la impresora.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -145,21 +145,21 @@ class CIM_Printer : CIM_LogicalDevice
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ impresora CIM** tiene estos tipos de miembros:
+La **clase \_ CIM Printer** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase de **\_ impresora CIM** tiene estos métodos.
+La **clase \_ CIM Printer** tiene estos métodos.
 
 
 
 | Método                                                             | Descripción                                                                                                                              |
 |:-------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**Reset**](reset-method-in-class-cim-printer.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                               |
-| [**SetPowerState**](setpowerstate-method-in-class-cim-printer.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo debe colocarse un dispositivo en ese estado. No implementado por WMI.<br/> |
+| [**Restablecer**](reset-method-in-class-cim-printer.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                               |
+| [**SetPowerState**](setpowerstate-method-in-class-cim-printer.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. No implementado por WMI.<br/> |
 
 
 
@@ -167,31 +167,31 @@ La clase de **\_ impresora CIM** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ impresora CIM** tiene estas propiedades.
+La **clase \_ CIM Printer** tiene estas propiedades.
 
 <dl> <dt>
 
 **Disponibilidad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operativo DMTF \| 003,5 "," MIB. IETF \| host-REsources-MIB. hrDeviceStatus ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus")
 </dt> </dl>
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -205,25 +205,25 @@ Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md)
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>En **ejecución/corriente completa** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
 
 
 </dt> <dd>
 
-En ejecución o completa
+Energía completa o en ejecución
 
 </dd> <dt>
 
 <span id="Warning"></span><span id="warning"></span><span id="WARNING"></span>
 
-<span id="Warning"></span><span id="warning"></span><span id="WARNING"></span>**ADVERTENCIA** (4)
+<span id="Warning"></span><span id="warning"></span><span id="WARNING"></span>**Advertencia** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>
 
-<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**En pruebas** (5)
+<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**En prueba** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -237,21 +237,21 @@ En ejecución o completa
 
 <span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>
 
-<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Desconectar (7** )
+<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Apagado** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>
 
-<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>Sin **conexión (8** )
+<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Off Line** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>
 
-<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Fuera del deber** (9)
+<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Fuera de servicio** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -272,65 +272,65 @@ En ejecución o completa
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>
 
-<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>Ahorro **de energía: desconocido** (13)
+<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>**Ahorro de energía: desconocido** (13)
 
 
 </dt> <dd>
 
-Se sabe que el dispositivo está en modo de ahorro de energía, pero su estado exacto es desconocido.
+Se sabe que el dispositivo está en modo de ahorro de energía, pero se desconoce su estado exacto.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>
 
-<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>Ahorro **de energía: modo de baja energía** (14)
+<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>**Ahorro de energía: modo de bajo consumo** (14)
 
 
 </dt> <dd>
 
-El dispositivo se encuentra en un estado de ahorro de energía, pero sigue funcionando y puede mostrar un rendimiento degradado.
+El dispositivo está en un estado de ahorro de energía pero sigue funcionando y puede presentar un rendimiento degradado.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>
 
-<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>Ahorro **de energía: en espera** (15)
+<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>**Ahorro de energía: en espera** (15)
 
 
 </dt> <dd>
 
-El dispositivo no funciona, pero puede que se ponga en marcha rápidamente.
+El dispositivo no funciona, pero se podría encender rápidamente.
 
 </dd> <dt>
 
 <span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>
 
-<span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>**Ciclo de energía** (16)
+<span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>**Ciclo de** energía (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>
 
-<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>Ahorro **de energía: ADVERTENCIA** (17)
+<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>**Ahorro de energía: advertencia** (17)
 
 
 </dt> <dd>
 
-El dispositivo está en un estado de advertencia, aunque también en el modo de ahorro de energía.
+El dispositivo está en estado de advertencia, aunque también en modo de ahorro de energía.
 
 </dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>En **pausa** (18)
+<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>**En pausa** (18)
 
 
 </dt> <dd>
@@ -352,7 +352,7 @@ El dispositivo no está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
 
 
 </dt> <dd>
@@ -363,12 +363,12 @@ El dispositivo no está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Inactivo** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
 
 
 </dt> <dd>
 
-El dispositivo está en silencio.
+El dispositivo está silencioso.
 
 </dd> </dl>
 
@@ -377,13 +377,13 @@ El dispositivo está en silencio.
 **AvailableJobSheets**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob. RequiredJobSheets")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob.RequiredJobSheets")
 </dt> </dl>
 
 Describe todas las hojas de trabajo que están disponibles en la impresora. También se puede usar para describir el banner que una impresora puede proporcionar al principio de cada trabajo, o puede describir otras opciones especificadas por el usuario.
@@ -393,16 +393,16 @@ Describe todas las hojas de trabajo que están disponibles en la impresora. Tamb
 **Capabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ impresora CIM**. CapabilityDescriptions "," CIM \_ PrintJob. Finishing "," CIM \_ PrintService. Capabilities ")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**. CapabilityDescriptions", "CIM \_ PrintJob.Finishing", "CIM \_ PrintService.Capabilities")
 </dt> </dl>
 
-Capacidades de impresora.
+Funcionalidades de impresora.
 
 <dt>
 
@@ -415,7 +415,7 @@ Capacidades de impresora.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -450,7 +450,7 @@ Capacidades de impresora.
 
 <span id="Stapling"></span><span id="stapling"></span><span id="STAPLING"></span>
 
-<span id="Stapling"></span><span id="stapling"></span><span id="STAPLING"></span>**Grapado** (6)
+<span id="Stapling"></span><span id="stapling"></span><span id="STAPLING"></span>**Estapling** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -464,21 +464,21 @@ Capacidades de impresora.
 
 <span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>
 
-<span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>**Perforación** (8)
+<span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>**Insondes** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Cover"></span><span id="cover"></span><span id="COVER"></span>
 
-<span id="Cover"></span><span id="cover"></span><span id="COVER"></span>**Cubierta** (9)
+<span id="Cover"></span><span id="cover"></span><span id="COVER"></span>**Cover** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Bind"></span><span id="bind"></span><span id="BIND"></span>
 
-<span id="Bind"></span><span id="bind"></span><span id="BIND"></span>**BIND** (10)
+<span id="Bind"></span><span id="bind"></span><span id="BIND"></span>**Enlazar** (10)
 
 
 </dt> <dd></dd> <dt>
@@ -492,34 +492,34 @@ Capacidades de impresora.
 
 <span id="One_Sided"></span><span id="one_sided"></span><span id="ONE_SIDED"></span>
 
-<span id="One_Sided"></span><span id="one_sided"></span><span id="ONE_SIDED"></span>**Un lado** (12)
+<span id="One_Sided"></span><span id="one_sided"></span><span id="ONE_SIDED"></span>**One Sided** (12)
 
 
 </dt> <dd>
 
-Un lado
+Un solo lado
 
 </dd> <dt>
 
 <span id="Two_Sided_Long_Edge"></span><span id="two_sided_long_edge"></span><span id="TWO_SIDED_LONG_EDGE"></span>
 
-<span id="Two_Sided_Long_Edge"></span><span id="two_sided_long_edge"></span><span id="TWO_SIDED_LONG_EDGE"></span>**Borde largo de dos caras** (13)
+<span id="Two_Sided_Long_Edge"></span><span id="two_sided_long_edge"></span><span id="TWO_SIDED_LONG_EDGE"></span>**Borde largo de dos lados** (13)
 
 
 </dt> <dd>
 
-Borde largo a dos caras
+Borde largo de dos lados
 
 </dd> <dt>
 
 <span id="Two_Sided_Short_Edge"></span><span id="two_sided_short_edge"></span><span id="TWO_SIDED_SHORT_EDGE"></span>
 
-<span id="Two_Sided_Short_Edge"></span><span id="two_sided_short_edge"></span><span id="TWO_SIDED_SHORT_EDGE"></span>**Borde inferior de dos caras** (14)
+<span id="Two_Sided_Short_Edge"></span><span id="two_sided_short_edge"></span><span id="TWO_SIDED_SHORT_EDGE"></span>**Borde corto de dos lados** (14)
 
 
 </dt> <dd>
 
-Borde corto a dos caras
+Borde corto de dos lados
 
 </dd> <dt>
 
@@ -539,14 +539,14 @@ Borde corto a dos caras
 
 <span id="Reverse_Portrait"></span><span id="reverse_portrait"></span><span id="REVERSE_PORTRAIT"></span>
 
-<span id="Reverse_Portrait"></span><span id="reverse_portrait"></span><span id="REVERSE_PORTRAIT"></span>**Vertical inversa** (17)
+<span id="Reverse_Portrait"></span><span id="reverse_portrait"></span><span id="REVERSE_PORTRAIT"></span>**Vertical inverso** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>
 
-<span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>**Horizontal inversa** (18)
+<span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>**Horizontal inverso** (18)
 
 
 </dt> <dd></dd> <dt>
@@ -558,18 +558,18 @@ Borde corto a dos caras
 
 </dt> <dd>
 
-Calidad alta
+Alto nivel de calidad
 
 </dd> <dt>
 
 <span id="Quality_Normal"></span><span id="quality_normal"></span><span id="QUALITY_NORMAL"></span>
 
-<span id="Quality_Normal"></span><span id="quality_normal"></span><span id="QUALITY_NORMAL"></span>**Calidad normal** (20)
+<span id="Quality_Normal"></span><span id="quality_normal"></span><span id="QUALITY_NORMAL"></span>**Normal de calidad** (20)
 
 
 </dt> <dd>
 
-Calidad normal
+Normal de calidad
 
 </dd> <dt>
 
@@ -580,7 +580,7 @@ Calidad normal
 
 </dt> <dd>
 
-Calidad baja
+Baja calidad
 
 </dd> </dl>
 
@@ -589,19 +589,19 @@ Calidad baja
 **CapabilityDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ impresora CIM**.**Funcionalidades**")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**.**Funcionalidades**")
 </dt> </dl>
 
-Cadenas de forma libre que proporcionan explicaciones detalladas para cualquiera de las características de impresora indicadas en la matriz de **capacidades** .
+Cadenas de forma libre que proporcionan explicaciones detalladas de cualquiera de las características de impresora indicadas en la **matriz Capabilities.**
 
 > [!Note]  
-> Cada entrada de esta matriz está relacionada con la entrada de la matriz de **capacidades** que se encuentra en el mismo índice.
+> Cada entrada de esta matriz está relacionada con la entrada de la matriz **Capabilities** que se encuentra en el mismo índice.
 
  
 
@@ -616,46 +616,46 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **CharSetsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob. charset"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB. prtLocalizationCharacterSet ")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob.CharSet"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB.prtLocalizationCharacterSet")
 </dt> </dl>
 
-Juegos de caracteres disponibles para la salida de texto relacionado con la administración de la impresora. Las cadenas proporcionadas en esta propiedad deben cumplir la semántica y la sintaxis que se especifican en la sección 4.1.2 ("charset Parameter") en RFC 2046 (MIME Part 2) y contenidas en el registro de juegos de caracteres de IANA. Entre los ejemplos se incluyen "UTF-8", "US-ASCII" y "ISO-8859-1".
+Juegos de caracteres disponibles para la salida de texto relacionado con la administración de la impresora. Las cadenas proporcionadas en esta propiedad deben ajustarse a la semántica y la sintaxis especificadas por la sección 4.1.2 ("Parámetro Charset") en RFC 2046 (parte MIME 2) y contenidas en el registro de juego de caracteres de IANA. Algunos ejemplos son "utf-8", "us-ascii" e "iso-8859-1".
 
 </dd> <dt>
 
 **ConfigManagerErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
+Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Código de error de Configuration Manager de Win32.
+Código de error Administrador de configuración Win32.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -683,7 +683,7 @@ El dispositivo no está configurado correctamente.
 
 <span id="Windows_cannot_load_the_driver_for_this_device."></span><span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>
 
-<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows no puede cargar el controlador para este dispositivo.** (2)
+<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows puede cargar el controlador para este dispositivo.** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -701,23 +701,23 @@ Es posible que el controlador de este dispositivo esté dañado o que el sistema
 
 <span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>
 
-<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Este dispositivo no funciona correctamente. Uno de sus controladores o el registro pueden estar dañados.** (4)
+<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Este dispositivo no funciona correctamente. Uno de sus controladores o el registro podrían estar dañados.** (4)
 
 
 </dt> <dd>
 
-El dispositivo no funciona correctamente. Uno de sus controladores o el registro pueden estar dañados.
+El dispositivo no funciona correctamente. Uno de sus controladores o el registro podrían estar dañados.
 
 </dd> <dt>
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**El controlador para este dispositivo necesita un recurso que Windows no puede administrar.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**El controlador para este dispositivo necesita un recurso que Windows puede administrar.** (5)
 
 
 </dt> <dd>
 
-El controlador del dispositivo requiere un recurso que Windows no puede administrar.
+El controlador del dispositivo requiere un recurso que Windows puede administrar.
 
 </dd> <dt>
 
@@ -728,7 +728,7 @@ El controlador del dispositivo requiere un recurso que Windows no puede administ
 
 </dt> <dd>
 
-La configuración de arranque para el dispositivo entra en conflicto con otros dispositivos.
+La configuración de arranque del dispositivo entra en conflicto con otros dispositivos.
 
 </dd> <dt>
 
@@ -752,7 +752,7 @@ Falta el cargador de controladores para el dispositivo.
 
 <span id="This_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="this_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THE_CONTROLLING_FIRMWARE_IS_REPORTING_THE_RESOURCES_FOR_THE_DEVICE_INCORRECTLY."></span>
 
-<span id="this_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THE_CONTROLLING_FIRMWARE_IS_REPORTING_THE_RESOURCES_FOR_THE_DEVICE_INCORRECTLY."></span>**Este dispositivo no funciona correctamente porque el firmware de control informa de los recursos para el dispositivo de forma incorrecta.** (9)
+<span id="this_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THE_CONTROLLING_FIRMWARE_IS_REPORTING_THE_RESOURCES_FOR_THE_DEVICE_INCORRECTLY."></span>**Este dispositivo no funciona correctamente porque el firmware de control informa incorrectamente de los recursos del dispositivo.** (9)
 
 
 </dt> <dd>
@@ -785,23 +785,23 @@ Error en el dispositivo.
 
 <span id="This_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>
 
-<span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>**Este dispositivo no puede encontrar suficientes recursos libres que pueda usar.** (12)
+<span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>**Este dispositivo no puede encontrar suficientes recursos gratuitos que pueda usar.** (12)
 
 
 </dt> <dd>
 
-El dispositivo no puede encontrar suficientes recursos disponibles para su uso.
+El dispositivo no puede encontrar suficientes recursos gratuitos para usarlos.
 
 </dd> <dt>
 
 <span id="Windows_cannot_verify_this_device_s_resources."></span><span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>
 
-<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows no puede comprobar los recursos de este dispositivo.** (13)
+<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows puede comprobar los recursos de este dispositivo.** (13)
 
 
 </dt> <dd>
 
-Windows no puede comprobar los recursos del dispositivo.
+Windows puede comprobar los recursos del dispositivo.
 
 </dd> <dt>
 
@@ -818,23 +818,23 @@ El dispositivo no puede funcionar correctamente hasta que se reinicie el equipo.
 
 <span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>
 
-<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque es probable que haya un problema de reenumeración.** (15)
+<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque probablemente haya un problema de nueva enumeración.** (15)
 
 
 </dt> <dd>
 
-El dispositivo no funciona correctamente debido a un posible problema de reenumeración.
+El dispositivo no funciona correctamente debido a un posible problema de nueva enumeración.
 
 </dd> <dt>
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows no puede identificar todos los recursos que usa este dispositivo.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows identificar todos los recursos que usa este dispositivo.** (16)
 
 
 </dt> <dd>
 
-Windows no puede identificar todos los recursos que usa el dispositivo.
+Windows puede identificar todos los recursos que usa el dispositivo.
 
 </dd> <dt>
 
@@ -845,24 +845,24 @@ Windows no puede identificar todos los recursos que usa el dispositivo.
 
 </dt> <dd>
 
-El dispositivo está solicitando un tipo de recurso desconocido.
+El dispositivo solicita un tipo de recurso desconocido.
 
 </dd> <dt>
 
 <span id="Reinstall_the_drivers_for_this_device."></span><span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>
 
-<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores para este dispositivo.** (18)
+<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores de este dispositivo.** (18)
 
 
 </dt> <dd>
 
-Se deben volver a instalar los controladores de dispositivos.
+Los controladores de dispositivos deben volver a instalarse.
 
 </dd> <dt>
 
 <span id="Failure_using_the_VxD_loader."></span><span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>
 
-<span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>**Error al usar el cargador de VxD.** (19)
+<span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>**Error al usar el cargador VxD.** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -874,18 +874,18 @@ Se deben volver a instalar los controladores de dispositivos.
 
 </dt> <dd>
 
-Es posible que el registro esté dañado.
+El Registro puede estar dañado.
 
 </dd> <dt>
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador para este dispositivo. Si eso no funciona, consulte la documentación del hardware. Windows está quitando este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si esto no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
 
 
 </dt> <dd>
 
-Error del sistema. Si el cambio de controlador de dispositivo es ineficaz, consulte la documentación del hardware. Windows está quitando el dispositivo.
+Error del sistema. Si cambiar el controlador de dispositivo no es eficaz, consulte la documentación de hardware. Windows está quitando el dispositivo.
 
 </dd> <dt>
 
@@ -902,12 +902,12 @@ El dispositivo está deshabilitado.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>**Error del sistema: intente cambiar el controlador para este dispositivo. Si eso no funciona, consulte la documentación del hardware.** (23)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware.** (23)
 
 
 </dt> <dd>
 
-Error del sistema. Si el cambio de controlador de dispositivo es ineficaz, consulte la documentación del hardware.
+Error del sistema. Si cambiar el controlador de dispositivo no es eficaz, consulte la documentación de hardware.
 
 </dd> <dt>
 
@@ -924,23 +924,23 @@ El dispositivo no está presente, no funciona correctamente o no tiene todos sus
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows todavía está configurando este dispositivo.** (25)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows está configurando este dispositivo.** (25)
 
 
 </dt> <dd>
 
-Windows todavía está configurando el dispositivo.
+Windows está configurando el dispositivo.
 
 </dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows todavía está configurando este dispositivo.** (26)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows está configurando este dispositivo.** (26)
 
 
 </dt> <dd>
 
-Windows todavía está configurando el dispositivo.
+Windows está configurando el dispositivo.
 
 </dd> <dt>
 
@@ -968,34 +968,34 @@ Los controladores de dispositivo no están instalados.
 
 <span id="This_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>
 
-<span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>**Este dispositivo está deshabilitado porque el firmware del dispositivo no le proporcionó los recursos necesarios.** (29)
+<span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>**Este dispositivo está deshabilitado porque el firmware del dispositivo no le ha dado los recursos necesarios.** (29)
 
 
 </dt> <dd>
 
-El dispositivo está deshabilitado. El firmware del dispositivo no proporcionó los recursos necesarios.
+El dispositivo está deshabilitado. El firmware del dispositivo no proporcionaba los recursos necesarios.
 
 </dd> <dt>
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que otro dispositivo está usando.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que usa otro dispositivo.** (30)
 
 
 </dt> <dd>
 
-El dispositivo usa un recurso de IRQ que otro dispositivo está usando.
+El dispositivo usa un recurso IRQ que usa otro dispositivo.
 
 </dd> <dt>
 
 <span id="This_device_is_not_working_properly_because_Windows_cannot_load_the_drivers_required_for_this_device."></span><span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>
 
-<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Este dispositivo no funciona correctamente porque Windows no puede cargar los controladores necesarios para este dispositivo.** 31
+<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Este dispositivo no funciona correctamente porque Windows puede cargar los controladores necesarios para este dispositivo.** (31)
 
 
 </dt> <dd>
 
-El dispositivo no funciona correctamente. Windows no puede cargar los controladores de dispositivos necesarios.
+El dispositivo no funciona correctamente. Windows cargar los controladores de dispositivo necesarios.
 
 </dd> </dl>
 
@@ -1010,12 +1010,12 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
+Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Si es **true**, el dispositivo usa una configuración definida por el usuario.
+Si **es TRUE,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1028,28 +1028,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nombre de la clase o subclase utilizada en la creación de una instancia de. Cuando se usa con otras propiedades de clave de la clase, esta propiedad permite que todas las instancias de la clase y sus subclases se identifiquen de forma única.
+Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **CurrentCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**.**Funcionalidades**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**.**Funcionalidades**")
 </dt> </dl>
 
-Finalizaciones y otras capacidades de la impresora que están actualmente en uso. Cada entrada de esta propiedad también debe aparecer en la matriz de **capacidades** .
+Finalizaciones y otras funcionalidades de la impresora que están actualmente en uso. Cada entrada de esta propiedad también debe aparecer en la **matriz Capabilities.**
 
 <dt>
 
@@ -1062,7 +1062,7 @@ Finalizaciones y otras capacidades de la impresora que están actualmente en uso
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1097,7 +1097,7 @@ Finalizaciones y otras capacidades de la impresora que están actualmente en uso
 
 <span id="Stapling"></span><span id="stapling"></span><span id="STAPLING"></span>
 
-<span id="Stapling"></span><span id="stapling"></span><span id="STAPLING"></span>**Grapado** (6)
+<span id="Stapling"></span><span id="stapling"></span><span id="STAPLING"></span>**Estapling** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -1111,21 +1111,21 @@ Finalizaciones y otras capacidades de la impresora que están actualmente en uso
 
 <span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>
 
-<span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>**Perforación** (8)
+<span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>**Insondes** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Cover"></span><span id="cover"></span><span id="COVER"></span>
 
-<span id="Cover"></span><span id="cover"></span><span id="COVER"></span>**Cubierta** (9)
+<span id="Cover"></span><span id="cover"></span><span id="COVER"></span>**Cover** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Bind"></span><span id="bind"></span><span id="BIND"></span>
 
-<span id="Bind"></span><span id="bind"></span><span id="BIND"></span>**BIND** (10)
+<span id="Bind"></span><span id="bind"></span><span id="BIND"></span>**Enlazar** (10)
 
 
 </dt> <dd></dd> <dt>
@@ -1139,34 +1139,34 @@ Finalizaciones y otras capacidades de la impresora que están actualmente en uso
 
 <span id="One_Sided"></span><span id="one_sided"></span><span id="ONE_SIDED"></span>
 
-<span id="One_Sided"></span><span id="one_sided"></span><span id="ONE_SIDED"></span>**Un lado** (12)
+<span id="One_Sided"></span><span id="one_sided"></span><span id="ONE_SIDED"></span>**One Sided** (12)
 
 
 </dt> <dd>
 
-Un lado
+Un solo lado
 
 </dd> <dt>
 
 <span id="Two_Sided_Long_Edge"></span><span id="two_sided_long_edge"></span><span id="TWO_SIDED_LONG_EDGE"></span>
 
-<span id="Two_Sided_Long_Edge"></span><span id="two_sided_long_edge"></span><span id="TWO_SIDED_LONG_EDGE"></span>**Borde largo de dos caras** (13)
+<span id="Two_Sided_Long_Edge"></span><span id="two_sided_long_edge"></span><span id="TWO_SIDED_LONG_EDGE"></span>**Borde largo de dos lados** (13)
 
 
 </dt> <dd>
 
-Borde largo a dos caras
+Borde largo de dos lados
 
 </dd> <dt>
 
 <span id="Two_Sided_Short_Edge"></span><span id="two_sided_short_edge"></span><span id="TWO_SIDED_SHORT_EDGE"></span>
 
-<span id="Two_Sided_Short_Edge"></span><span id="two_sided_short_edge"></span><span id="TWO_SIDED_SHORT_EDGE"></span>**Borde inferior de dos caras** (14)
+<span id="Two_Sided_Short_Edge"></span><span id="two_sided_short_edge"></span><span id="TWO_SIDED_SHORT_EDGE"></span>**Borde corto de dos lados** (14)
 
 
 </dt> <dd>
 
-Borde corto a dos caras
+Borde corto de dos lados
 
 </dd> <dt>
 
@@ -1186,14 +1186,14 @@ Borde corto a dos caras
 
 <span id="Reverse_Portrait"></span><span id="reverse_portrait"></span><span id="REVERSE_PORTRAIT"></span>
 
-<span id="Reverse_Portrait"></span><span id="reverse_portrait"></span><span id="REVERSE_PORTRAIT"></span>**Vertical inversa** (17)
+<span id="Reverse_Portrait"></span><span id="reverse_portrait"></span><span id="REVERSE_PORTRAIT"></span>**Vertical inverso** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>
 
-<span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>**Horizontal inversa** (18)
+<span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>**Horizontal inverso** (18)
 
 
 </dt> <dd></dd> <dt>
@@ -1205,18 +1205,18 @@ Borde corto a dos caras
 
 </dt> <dd>
 
-Calidad alta
+Alto nivel de calidad
 
 </dd> <dt>
 
 <span id="Quality_Normal"></span><span id="quality_normal"></span><span id="QUALITY_NORMAL"></span>
 
-<span id="Quality_Normal"></span><span id="quality_normal"></span><span id="QUALITY_NORMAL"></span>**Calidad normal** (20)
+<span id="Quality_Normal"></span><span id="quality_normal"></span><span id="QUALITY_NORMAL"></span>**Normal de calidad** (20)
 
 
 </dt> <dd>
 
-Calidad normal
+Normal de calidad
 
 </dd> <dt>
 
@@ -1227,7 +1227,7 @@ Calidad normal
 
 </dt> <dd>
 
-Calidad baja
+Baja calidad
 
 </dd> </dl>
 
@@ -1242,32 +1242,32 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**.**CharSetsSupported**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**.**CharSetsSupported**")
 </dt> </dl>
 
-Juego de caracteres actual usado para la salida de texto relacionado con la administración de la impresora. El juego de caracteres descrito por esta propiedad también debe aparecer en la propiedad **CharsetsSupported** . La cadena especificada por esta propiedad debe ajustarse a la semántica y la sintaxis especificadas por la sección 4.1.2 ("parámetro charset") en RFC 2046 (MIME parte 2) y contenidas en el registro de juegos de caracteres de IANA. Entre los ejemplos se incluyen "UTF-8", "US-ASCII" y "ISO-8859-1".
+Juego de caracteres actual utilizado para la salida de texto relacionado con la administración de la impresora. El juego de caracteres descrito por esta propiedad también debe aparecer en la **propiedad CharsetsSupported.** La cadena especificada por esta propiedad debe cumplir la semántica y la sintaxis especificadas por la sección 4.1.2 ("Parámetro Charset") en RFC 2046 (parte MIME 2) y contenidas en el registro de juego de caracteres de IANA. Algunos ejemplos son "utf-8", "us-ascii" e "iso-8859-1".
 
 </dd> <dt>
 
 **CurrentLanguage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**. LanguagesSupported "," CIM \_ printer. CurrentMimeType ")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**. LanguagesSupported", "CIM \_ Printer.CurrentMimeType")
 </dt> </dl>
 
-Idioma de impresora actual que se está usando; el lenguaje también debe aparecer en la propiedad **LanguagesSupported** .
+Idioma de impresora actual que se usa; el idioma también debe aparecer en la **propiedad LanguagesSupported.**
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1316,7 +1316,7 @@ Idioma de impresora actual que se está usando; el lenguaje también debe aparec
 
 <span id="IPDS"></span><span id="ipds"></span>
 
-**IPD** (8)
+**IPDS** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -1337,7 +1337,7 @@ Idioma de impresora actual que se está usando; el lenguaje también debe aparec
 
 <span id="Epson"></span><span id="epson"></span><span id="EPSON"></span>
 
-**Epson** (11)
+**Resalte** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -1379,7 +1379,7 @@ Idioma de impresora actual que se está usando; el lenguaje también debe aparec
 
 <span id="REGIS"></span><span id="regis"></span>
 
-**Regis** (17)
+**REGIS** (17)
 
 
 </dt> <dd></dd> <dt>
@@ -1435,7 +1435,7 @@ Idioma de impresora actual que se está usando; el lenguaje también debe aparec
 
 <span id="WPS"></span><span id="wps"></span>
 
-**Wps** (25)
+**WPS** (25)
 
 
 </dt> <dd></dd> <dt>
@@ -1491,14 +1491,14 @@ Idioma de impresora actual que se está usando; el lenguaje también debe aparec
 
 <span id="DOC"></span><span id="doc"></span>
 
-**Doc** (33)
+**DOC** (33)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="imPress"></span><span id="impress"></span><span id="IMPRESS"></span>
 
-**Impress** (34)
+**imPress** (34)
 
 
 </dt> <dd></dd> <dt>
@@ -1526,21 +1526,21 @@ Idioma de impresora actual que se está usando; el lenguaje también debe aparec
 
 <span id="Automatic"></span><span id="automatic"></span><span id="AUTOMATIC"></span>
 
-**Automática** (38)
+**Automático** (38)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pages"></span><span id="pages"></span><span id="PAGES"></span>
 
-**Páginas** (39)
+**Pages** (39)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="LIPS"></span><span id="lips"></span>
 
-**Lip** (40)
+**LUGAR DE** TRABAJO (40)
 
 
 </dt> <dd></dd> <dt>
@@ -1561,28 +1561,28 @@ Idioma de impresora actual que se está usando; el lenguaje también debe aparec
 
 <span id="CaPSL"></span><span id="capsl"></span><span id="CAPSL"></span>
 
-**Mayúsculas** (43)
+**CaPSL** (43)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="EXCL"></span><span id="excl"></span>
 
-**Excl** (44)
+**EXCL** (44)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="LCDS"></span><span id="lcds"></span>
 
-**Pantallas LCD** (45)
+**HOTELS** (45)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="XES"></span><span id="xes"></span>
 
-**Dices** (46)
+**XES** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -1605,10 +1605,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**.**CurrentLanguage**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**.**CurrentLanguage**")
 </dt> </dl>
 
-Tipo MIME actualmente en uso por la impresora cuando la propiedad **CurrentLanguage** está establecida para indicar que un tipo MIME está en uso.
+Tipo Mime actualmente en uso por la impresora cuando la **propiedad CurrentLanguage** está establecida para indicar que está en uso un tipo MIME.
 
 </dd> <dt>
 
@@ -1621,10 +1621,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**.**NaturalLanguagesSupported**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**.**NaturalLanguagesSupported**")
 </dt> </dl>
 
-Idioma actual en uso por la impresora para la administración. El idioma que se muestra aquí también debe aparecer en **NaturalLanguagesSupported**.
+Idioma actual que usa la impresora para la administración. El idioma que se muestra aquí también debe aparecer **en NaturalLanguagesSupported**.
 
 </dd> <dt>
 
@@ -1637,26 +1637,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**.**PaperTypesAvailable**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**.**PaperTypesAvailable**")
 </dt> </dl>
 
-Tipo de papel actualmente en uso por la impresora. La cadena se debe expresar en el formato especificado por la aplicación de impresión de documentos (DPA) ISO/IEC 10175, que también se resume en el Apéndice C de RFC 1759 (Printer MIB).
+Tipo de papel actualmente en uso por la impresora. La cadena debe expresarse en el formato especificado por la aplicación de impresión de documentos (DPA) ISO/IEC 10175, que también se resume en el Apéndice C de RFC 1759 (Impresora MIB).
 
 </dd> <dt>
 
 **DefaultCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**.**Funcionalidades**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**.**Funcionalidades**")
 </dt> </dl>
 
-Finalizaciones predeterminadas y otras capacidades de la impresora. Cada entrada de esta propiedad también debe aparecer en la matriz de **capacidades** .
+Finalizaciones predeterminadas y otras funcionalidades de la impresora. Cada entrada de esta propiedad también debe aparecer en la **matriz Capabilities.**
 
 <dt>
 
@@ -1669,7 +1669,7 @@ Finalizaciones predeterminadas y otras capacidades de la impresora. Cada entrada
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1704,7 +1704,7 @@ Finalizaciones predeterminadas y otras capacidades de la impresora. Cada entrada
 
 <span id="Stapling"></span><span id="stapling"></span><span id="STAPLING"></span>
 
-<span id="Stapling"></span><span id="stapling"></span><span id="STAPLING"></span>**Grapado** (6)
+<span id="Stapling"></span><span id="stapling"></span><span id="STAPLING"></span>**Estapling** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -1718,21 +1718,21 @@ Finalizaciones predeterminadas y otras capacidades de la impresora. Cada entrada
 
 <span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>
 
-<span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>**Perforación** (8)
+<span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>**Insondes** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Cover"></span><span id="cover"></span><span id="COVER"></span>
 
-<span id="Cover"></span><span id="cover"></span><span id="COVER"></span>**Cubierta** (9)
+<span id="Cover"></span><span id="cover"></span><span id="COVER"></span>**Cover** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Bind"></span><span id="bind"></span><span id="BIND"></span>
 
-<span id="Bind"></span><span id="bind"></span><span id="BIND"></span>**BIND** (10)
+<span id="Bind"></span><span id="bind"></span><span id="BIND"></span>**Enlazar** (10)
 
 
 </dt> <dd></dd> <dt>
@@ -1746,34 +1746,34 @@ Finalizaciones predeterminadas y otras capacidades de la impresora. Cada entrada
 
 <span id="One_Sided"></span><span id="one_sided"></span><span id="ONE_SIDED"></span>
 
-<span id="One_Sided"></span><span id="one_sided"></span><span id="ONE_SIDED"></span>**Un lado** (12)
+<span id="One_Sided"></span><span id="one_sided"></span><span id="ONE_SIDED"></span>**One Sided** (12)
 
 
 </dt> <dd>
 
-Un lado
+Un solo lado
 
 </dd> <dt>
 
 <span id="Two_Sided_Long_Edge"></span><span id="two_sided_long_edge"></span><span id="TWO_SIDED_LONG_EDGE"></span>
 
-<span id="Two_Sided_Long_Edge"></span><span id="two_sided_long_edge"></span><span id="TWO_SIDED_LONG_EDGE"></span>**Borde largo de dos caras** (13)
+<span id="Two_Sided_Long_Edge"></span><span id="two_sided_long_edge"></span><span id="TWO_SIDED_LONG_EDGE"></span>**Borde largo de dos lados** (13)
 
 
 </dt> <dd>
 
-Borde largo a dos caras
+Borde largo de dos lados
 
 </dd> <dt>
 
 <span id="Two_Sided_Short_Edge"></span><span id="two_sided_short_edge"></span><span id="TWO_SIDED_SHORT_EDGE"></span>
 
-<span id="Two_Sided_Short_Edge"></span><span id="two_sided_short_edge"></span><span id="TWO_SIDED_SHORT_EDGE"></span>**Borde inferior de dos caras** (14)
+<span id="Two_Sided_Short_Edge"></span><span id="two_sided_short_edge"></span><span id="TWO_SIDED_SHORT_EDGE"></span>**Borde corto de dos lados** (14)
 
 
 </dt> <dd>
 
-Borde corto a dos caras
+Borde corto de dos lados
 
 </dd> <dt>
 
@@ -1793,14 +1793,14 @@ Borde corto a dos caras
 
 <span id="Reverse_Portrait"></span><span id="reverse_portrait"></span><span id="REVERSE_PORTRAIT"></span>
 
-<span id="Reverse_Portrait"></span><span id="reverse_portrait"></span><span id="REVERSE_PORTRAIT"></span>**Vertical inversa** (17)
+<span id="Reverse_Portrait"></span><span id="reverse_portrait"></span><span id="REVERSE_PORTRAIT"></span>**Vertical inverso** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>
 
-<span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>**Horizontal inversa** (18)
+<span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>**Horizontal inverso** (18)
 
 
 </dt> <dd></dd> <dt>
@@ -1812,18 +1812,18 @@ Borde corto a dos caras
 
 </dt> <dd>
 
-Calidad alta
+Alto nivel de calidad
 
 </dd> <dt>
 
 <span id="Quality_Normal"></span><span id="quality_normal"></span><span id="QUALITY_NORMAL"></span>
 
-<span id="Quality_Normal"></span><span id="quality_normal"></span><span id="QUALITY_NORMAL"></span>**Calidad normal** (20)
+<span id="Quality_Normal"></span><span id="quality_normal"></span><span id="QUALITY_NORMAL"></span>**Normal de calidad** (20)
 
 
 </dt> <dd>
 
-Calidad normal
+Normal de calidad
 
 </dd> <dt>
 
@@ -1834,7 +1834,7 @@ Calidad normal
 
 </dt> <dd>
 
-Calidad baja
+Baja calidad
 
 </dd> </dl>
 
@@ -1843,35 +1843,35 @@ Calidad baja
 **DefaultCopies**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de copias que producirá un solo trabajo, a menos que se especifique lo contrario.
+Número de copias que producirá un único trabajo, a menos que se especifique lo contrario.
 
 </dd> <dt>
 
 **DefaultLanguage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**. LanguagesSupported "," CIM \_ printer. DefaultMimeType ")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**. LanguagesSupported", "CIM \_ Printer.DefaultMimeType")
 </dt> </dl>
 
-Idioma de impresora predeterminado. El lenguaje también debe aparecer en la propiedad **LanguagesSupported** .
+Idioma de impresora predeterminado. El idioma también debe aparecer en la **propiedad LanguagesSupported.**
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1920,7 +1920,7 @@ Idioma de impresora predeterminado. El lenguaje también debe aparecer en la pro
 
 <span id="IPDS"></span><span id="ipds"></span>
 
-**IPD** (8)
+**IPDS** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -1941,7 +1941,7 @@ Idioma de impresora predeterminado. El lenguaje también debe aparecer en la pro
 
 <span id="Epson"></span><span id="epson"></span><span id="EPSON"></span>
 
-**Epson** (11)
+**Pero** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -1969,7 +1969,7 @@ Idioma de impresora predeterminado. El lenguaje también debe aparecer en la pro
 
 <span id="Line_Data"></span><span id="line_data"></span><span id="LINE_DATA"></span>
 
-**Datos de línea** (15)
+**Datos de** línea (15)
 
 
 </dt> <dd></dd> <dt>
@@ -1983,7 +1983,7 @@ Idioma de impresora predeterminado. El lenguaje también debe aparecer en la pro
 
 <span id="REGIS"></span><span id="regis"></span>
 
-**Regis** (17)
+**REGIS** (17)
 
 
 </dt> <dd></dd> <dt>
@@ -2039,7 +2039,7 @@ Idioma de impresora predeterminado. El lenguaje también debe aparecer en la pro
 
 <span id="WPS"></span><span id="wps"></span>
 
-**Wps** (25)
+**WPS** (25)
 
 
 </dt> <dd></dd> <dt>
@@ -2095,14 +2095,14 @@ Idioma de impresora predeterminado. El lenguaje también debe aparecer en la pro
 
 <span id="DOC"></span><span id="doc"></span>
 
-**Doc** (33)
+**DOC** (33)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="imPress"></span><span id="impress"></span><span id="IMPRESS"></span>
 
-**Impress** (34)
+**imPress** (34)
 
 
 </dt> <dd></dd> <dt>
@@ -2130,7 +2130,7 @@ Idioma de impresora predeterminado. El lenguaje también debe aparecer en la pro
 
 <span id="Automatic"></span><span id="automatic"></span><span id="AUTOMATIC"></span>
 
-**Automática** (38)
+**Automático** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -2144,7 +2144,7 @@ Idioma de impresora predeterminado. El lenguaje también debe aparecer en la pro
 
 <span id="LIPS"></span><span id="lips"></span>
 
-**Lip** (40)
+**LUGAR** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -2165,28 +2165,28 @@ Idioma de impresora predeterminado. El lenguaje también debe aparecer en la pro
 
 <span id="CaPSL"></span><span id="capsl"></span><span id="CAPSL"></span>
 
-**Mayúsculas** (43)
+**CaPSL** (43)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="EXCL"></span><span id="excl"></span>
 
-**Excl** (44)
+**EXCL** (44)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="LCDS"></span><span id="lcds"></span>
 
-**Pantallas LCD** (45)
+**HOTELS** (45)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="XES"></span><span id="xes"></span>
 
-**Dices** (46)
+**XES** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -2209,23 +2209,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**.**DefaultLanguage**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**.**DefaultLanguage**")
 </dt> </dl>
 
-Tipo MIME predeterminado que usa la impresora cuando la propiedad **DefaultLanguage** está establecida para indicar que un tipo MIME está en uso.
+Tipo MIME predeterminado utilizado por la impresora cuando la **propiedad DefaultLanguage** está establecida para indicar que se está utilizando un tipo MIME.
 
 </dd> <dt>
 
 **DefaultNumberUp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de páginas de secuencia de impresión en las que la impresora se representará en una sola hoja de medios, a menos que un trabajo especifique lo contrario.
+Número de páginas de flujo de impresión que la impresora representará en una sola hoja de medios, a menos que un trabajo especifique lo contrario.
 
 </dd> <dt>
 
@@ -2238,10 +2238,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**.**PaperTypesAvailable**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**.**PaperTypesAvailable**")
 </dt> </dl>
 
-Tipo de papel que utilizará la impresora si PrintJob no especifica un tipo determinado. La cadena se debe expresar en el formato especificado por la aplicación de impresión de documentos (DPA) ISO/IEC 10175, que también se resume en el Apéndice C de RFC 1759 (Printer MIB).
+Tipo de papel que usará la impresora si PrintJob no especifica un tipo determinado. La cadena debe expresarse en el formato especificado por la aplicación de impresión de documentos (DPA) ISO/IEC 10175, que también se resume en el Apéndice C de RFC 1759 (Impresora MIB).
 
 </dd> <dt>
 
@@ -2254,28 +2254,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descripción")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
 Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **DetectedErrorState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**.**ErrorInformation**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIB. IETF \| Printer-MIB. hrPrinterDetectedErrorState ")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**.**ErrorInformation**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB.hrPrinterDetectedErrorState")
 </dt> </dl>
 
-Información de error de la impresora.
+Información de error de impresora.
 
 <dt>
 
@@ -2288,14 +2288,14 @@ Información de error de la impresora.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Error"></span><span id="no_error"></span><span id="NO_ERROR"></span>
 
-**Sin errores** (2)
+**Sin error** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -2316,35 +2316,35 @@ Información de error de la impresora.
 
 <span id="Low_Toner"></span><span id="low_toner"></span><span id="LOW_TONER"></span>
 
-**Tóner bajo** (5)
+**Baja toner** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Toner"></span><span id="no_toner"></span><span id="NO_TONER"></span>
 
-**Sin tóner** (6)
+**Sin toner** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Door_Open"></span><span id="door_open"></span><span id="DOOR_OPEN"></span>
 
-**Puerta abierta** (7)
+**Door Open** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Jammed"></span><span id="jammed"></span><span id="JAMMED"></span>
 
-**Atascado** (8)
+**En desasistido** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>
 
-**Sin conexión** (9)
+**Sin** conexión (9)
 
 
 </dt> <dd></dd> <dt>
@@ -2358,14 +2358,14 @@ Información de error de la impresora.
 
 <span id="Output_Bin_Full"></span><span id="output_bin_full"></span><span id="OUTPUT_BIN_FULL"></span>
 
-**Bandeja de salida llena** (11)
+**Bandeja de salida completa** (11)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -2374,12 +2374,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Dirección u otra información de identificación para asignar un nombre único al dispositivo lógico.
+Dirección u otra información de identificación para dar un nombre único al dispositivo lógico.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -2392,9 +2392,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, el error que se ha comunicado en la propiedad **LastErrorCode** ahora está desactivado.
+Si **es TRUE,** ahora se borra el error notificado en la propiedad **LastErrorCode.**
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -2407,38 +2407,38 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena de forma libre que proporciona información sobre el error registrado en la propiedad **LastErrorCode** y las acciones correctivas que se deben realizar.
+Cadena de forma libre que proporciona información sobre el error registrado en la **propiedad LastErrorCode** y las acciones correctivas que se deben realizar.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **ErrorInformation**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**.**DetectedErrorState**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**.**DetectedErrorState**")
 </dt> </dl>
 
-Matriz que proporciona información adicional sobre el estado de error actual, indicado en la propiedad **DetectedErrorState** .
+Matriz que proporciona información complementaria para el estado de error actual, indicado en la **propiedad DetectedErrorState.**
 
 </dd> <dt>
 
 **HorizontalResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob. HorizontalResolution"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("píxeles por pulgada")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob.HorizontalResolution"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("píxeles por pulgada")
 </dt> </dl>
 
 Resolución horizontal en píxeles por pulgada.
@@ -2448,31 +2448,31 @@ Resolución horizontal en píxeles por pulgada.
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Fecha de instalación")
 </dt> </dl>
 
 Fecha y hora en que se instaló el objeto. Esta propiedad no necesita un valor para indicar que el objeto está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **JobCountSinceLastReset**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **contador**
+Calificadores: **Contador**
 </dt> </dl>
 
 Trabajos de impresora procesados desde el último restablecimiento. Estos trabajos se pueden procesar desde una o varias colas de impresión.
@@ -2482,13 +2482,13 @@ Trabajos de impresora procesados desde el último restablecimiento. Estos trabaj
 **LanguagesSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB. prtInterpreterLangFamily "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**. MimeTypesSupported "," CIM \_ PrintJob. Language "," CIM \_ PrintService. LanguagesSupported ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB.prtInterpreterLangFamily"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**. MimeTypesSupported", "CIM \_ PrintJob.Language", "CIM \_ PrintService.LanguagesSupported")
 </dt> </dl>
 
 Idiomas de impresión que se admiten de forma nativa.
@@ -2497,7 +2497,7 @@ Idiomas de impresión que se admiten de forma nativa.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -2546,7 +2546,7 @@ Idiomas de impresión que se admiten de forma nativa.
 
 <span id="IPDS"></span><span id="ipds"></span>
 
-**IPD** (8)
+**IPDS** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -2567,7 +2567,7 @@ Idiomas de impresión que se admiten de forma nativa.
 
 <span id="Epson"></span><span id="epson"></span><span id="EPSON"></span>
 
-**Epson** (11)
+**Resalte** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -2609,7 +2609,7 @@ Idiomas de impresión que se admiten de forma nativa.
 
 <span id="REGIS"></span><span id="regis"></span>
 
-**Regis** (17)
+**REGIS** (17)
 
 
 </dt> <dd></dd> <dt>
@@ -2665,7 +2665,7 @@ Idiomas de impresión que se admiten de forma nativa.
 
 <span id="WPS"></span><span id="wps"></span>
 
-**Wps** (25)
+**WPS** (25)
 
 
 </dt> <dd></dd> <dt>
@@ -2721,14 +2721,14 @@ Idiomas de impresión que se admiten de forma nativa.
 
 <span id="DOC"></span><span id="doc"></span>
 
-**Doc** (33)
+**DOC** (33)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="imPress"></span><span id="impress"></span><span id="IMPRESS"></span>
 
-**Impress** (34)
+**imPress** (34)
 
 
 </dt> <dd></dd> <dt>
@@ -2756,21 +2756,21 @@ Idiomas de impresión que se admiten de forma nativa.
 
 <span id="Automatic"></span><span id="automatic"></span><span id="AUTOMATIC"></span>
 
-**Automática** (38)
+**Automático** (38)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pages"></span><span id="pages"></span><span id="PAGES"></span>
 
-**Páginas** (39)
+**Pages** (39)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="LIPS"></span><span id="lips"></span>
 
-**Lip** (40)
+**LUGAR DE** TRABAJO (40)
 
 
 </dt> <dd></dd> <dt>
@@ -2791,28 +2791,28 @@ Idiomas de impresión que se admiten de forma nativa.
 
 <span id="CaPSL"></span><span id="capsl"></span><span id="CAPSL"></span>
 
-**Mayúsculas** (43)
+**CaPSL** (43)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="EXCL"></span><span id="excl"></span>
 
-**Excl** (44)
+**EXCL** (44)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="LCDS"></span><span id="lcds"></span>
 
-**Pantallas LCD** (45)
+**HOTELS** (45)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="XES"></span><span id="xes"></span>
 
-**Dices** (46)
+**XES** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -2850,28 +2850,28 @@ Idiomas de impresión que se admiten de forma nativa.
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Último código de error indicado por el dispositivo lógico.
+Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **MarkingTechnology**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB. prtMarkerMarkTech ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB.prtMarkerMarkTech")
 </dt> </dl>
 
 Tecnología de marcado utilizada por la impresora.
@@ -2880,7 +2880,7 @@ Tecnología de marcado utilizada por la impresora.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -2894,49 +2894,49 @@ Tecnología de marcado utilizada por la impresora.
 
 <span id="Electrophotographic_LED"></span><span id="electrophotographic_led"></span><span id="ELECTROPHOTOGRAPHIC_LED"></span>
 
-**LED electrográfico** (3)
+**LED fotográfico** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Electrophotographic_Laser"></span><span id="electrophotographic_laser"></span><span id="ELECTROPHOTOGRAPHIC_LASER"></span>
 
-**Láser electrográfico** (4)
+**Rayos fotográficos** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Electrophotographic_Other"></span><span id="electrophotographic_other"></span><span id="ELECTROPHOTOGRAPHIC_OTHER"></span>
 
-**Otra fotografía** (5)
+**Otros biográficos** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Impact_Moving_Head_Dot_Matrix_9pin"></span><span id="impact_moving_head_dot_matrix_9pin"></span><span id="IMPACT_MOVING_HEAD_DOT_MATRIX_9PIN"></span>
 
-**Impacto** de la matriz de puntos de encabezado de movimiento
+**Impact Moving Head Dot Matrix 9pin** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Impact_Moving_Head_Dot_Matrix_24pin"></span><span id="impact_moving_head_dot_matrix_24pin"></span><span id="IMPACT_MOVING_HEAD_DOT_MATRIX_24PIN"></span>
 
-**24pin de matriz de puntos de encabezado de movimiento impactante** (7)
+**Impact Moving Head Dot Matrix 24pin** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Impact_Moving_Head_Dot_Matrix_Other"></span><span id="impact_moving_head_dot_matrix_other"></span><span id="IMPACT_MOVING_HEAD_DOT_MATRIX_OTHER"></span>
 
-La **matriz de puntos de encabezado de movimiento de impacto** (8)
+**Impact Moving Head Dot Matrix Other** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Impact_Moving_Head_Fully_Formed"></span><span id="impact_moving_head_fully_formed"></span><span id="IMPACT_MOVING_HEAD_FULLY_FORMED"></span>
 
-La **cabeza de movimiento de impacto está totalmente formada** (9)
+**Impacto al mover la cabeza totalmente formada** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -2957,21 +2957,21 @@ La **cabeza de movimiento de impacto está totalmente formada** (9)
 
 <span id="Inkjet_Aqueous"></span><span id="inkjet_aqueous"></span><span id="INKJET_AQUEOUS"></span>
 
-**Inyección de tinta acuosa** (12)
+**Inkjet Aqueous** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Inkjet_Solid"></span><span id="inkjet_solid"></span><span id="INKJET_SOLID"></span>
 
-**Inyección de tinta sólida** (13)
+**Inkjet Solid** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Inkjet_Other"></span><span id="inkjet_other"></span><span id="INKJET_OTHER"></span>
 
-**Inyección de tinta** (14)
+**Inkjet Other** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -2985,70 +2985,70 @@ La **cabeza de movimiento de impacto está totalmente formada** (9)
 
 <span id="Thermal_Transfer"></span><span id="thermal_transfer"></span><span id="THERMAL_TRANSFER"></span>
 
-**Transferencia térmica** (16)
+**Transferencia térmico** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Thermal_Sensitive"></span><span id="thermal_sensitive"></span><span id="THERMAL_SENSITIVE"></span>
 
-**Sensible térmica** (17)
+**Confidenciales térmicos** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Thermal_Diffusion"></span><span id="thermal_diffusion"></span><span id="THERMAL_DIFFUSION"></span>
 
-**Difusión térmica** (18)
+**Desalado** térmico (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Thermal_Other"></span><span id="thermal_other"></span><span id="THERMAL_OTHER"></span>
 
-**Otro térmico** (19)
+**Otros térmicos** (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Electroerosion"></span><span id="electroerosion"></span><span id="ELECTROEROSION"></span>
 
-**Electroerosión** (20)
+**Ion** (20)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Electrostatic"></span><span id="electrostatic"></span><span id="ELECTROSTATIC"></span>
 
-**Electrostática** (21)
+**Estática** (21)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Photographic_Microfiche"></span><span id="photographic_microfiche"></span><span id="PHOTOGRAPHIC_MICROFICHE"></span>
 
-**Microficha fotográfica** (22)
+**Microfiche de fotografías** (22)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Photographic_Imagesetter"></span><span id="photographic_imagesetter"></span><span id="PHOTOGRAPHIC_IMAGESETTER"></span>
 
-**Filmadora fotográfica** (23)
+**Semágenes de fotografías** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Photographic_Other"></span><span id="photographic_other"></span><span id="PHOTOGRAPHIC_OTHER"></span>
 
-**Otros fotográficos** (24)
+**Otras** fotografías (24)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ion_Deposition"></span><span id="ion_deposition"></span><span id="ION_DEPOSITION"></span>
 
-Desposición de la **iones** (25)
+**Deposición de iones** (25)
 
 
 </dt> <dd></dd> <dt>
@@ -3072,45 +3072,45 @@ Desposición de la **iones** (25)
 **MaxCopies**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob. copias")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob.Copies")
 </dt> </dl>
 
-Número máximo de copias que la impresora puede generar desde un único trabajo.
+Número máximo de copias que puede generar la impresora desde un único trabajo.
 
 </dd> <dt>
 
 **MaxNumberUp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob. NumberUp")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob.NumberUp")
 </dt> </dl>
 
-Número máximo de páginas de secuencia de impresión que la impresora puede representar en una sola hoja de medios.
+Número máximo de páginas de flujo de impresión que la impresora puede representar en una sola hoja de medios.
 
 </dd> <dt>
 
 **MaxSizeSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob. jobs"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob.JobSize"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
 </dt> </dl>
 
 Trabajo más grande (como un flujo de bytes) que la impresora aceptará en unidades de kilobytes. Un valor de 0 (cero) indica que no se ha establecido ningún límite.
@@ -3120,16 +3120,16 @@ Trabajo más grande (como un flujo de bytes) que la impresora aceptará en unida
 **MimeTypesSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ impresora CIM**. LanguagesSupported "," CIM \_ PrintJob. MimeTypes "," CIM \_ PrintService. MimeTypesSupported ")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Printer**. LanguagesSupported", "CIM \_ PrintJob.MimeTypes", "CIM \_ PrintService.MimeTypesSupported")
 </dt> </dl>
 
-Cadenas de forma libre que proporcionan explicaciones detalladas de los tipos MIME que admite la impresora. Si se proporcionan datos para esta propiedad, el valor 47 ("MIME") debe incluirse en la propiedad **LanguagesSupported** .
+Cadenas de forma libre que proporcionan explicaciones detalladas de los tipos MIME compatibles con la impresora. Si se proporcionan datos para esta propiedad, el valor 47 ("Mime"), debe incluirse en la **propiedad LanguagesSupported.**
 
 </dd> <dt>
 
@@ -3142,41 +3142,41 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, esta propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **NaturalLanguagesSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB. prtLocalizationLanguage "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (" CIM \_ PrintJob. NaturalLanguage ")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB.prtLocalizationLanguage"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob.NaturalLanguage")
 </dt> </dl>
 
-Idiomas disponibles para las cadenas usadas por la impresora para la salida de información de administración. Las cadenas deben ajustarse a RFC 1766. Por ejemplo, "en" se utiliza para inglés.
+Idiomas disponibles para las cadenas usadas por la impresora para la salida de información de administración. Las cadenas deben ajustarse a RFC 1766. Por ejemplo, "en" se usa para inglés.
 
 </dd> <dt>
 
 **PaperSizesSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipos de papel compatibles.
+Tipos de papel admitidos.
 
 <dt>
 
@@ -3189,7 +3189,7 @@ Tipos de papel compatibles.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -3245,7 +3245,7 @@ Tipos de papel compatibles.
 
 <span id="NA-10x13-Envelope"></span><span id="na-10x13-envelope"></span><span id="NA-10X13-ENVELOPE"></span>
 
-**Na-10x13-Envelope** (9)
+**NA-10x13-Envelope** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -3259,7 +3259,7 @@ Tipos de papel compatibles.
 
 <span id="NA-Number-10-Envelope"></span><span id="na-number-10-envelope"></span><span id="NA-NUMBER-10-ENVELOPE"></span>
 
-**Na-número-10-sobre** (11)
+**Na-Number-10-Envelope** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -3273,7 +3273,7 @@ Tipos de papel compatibles.
 
 <span id="NA-9x11-Envelope"></span><span id="na-9x11-envelope"></span><span id="NA-9X11-ENVELOPE"></span>
 
-**Na-9x11-Envelope** (13)
+**NA-9x11-Envelope** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -3287,7 +3287,7 @@ Tipos de papel compatibles.
 
 <span id="NA-Number-9-Envelope"></span><span id="na-number-9-envelope"></span><span id="NA-NUMBER-9-ENVELOPE"></span>
 
-**Na-número-9-sobre** (15)
+**Na-Number-9-Envelope** (15)
 
 
 </dt> <dd></dd> <dt>
@@ -3301,7 +3301,7 @@ Tipos de papel compatibles.
 
 <span id="NA-10x15-Envelope"></span><span id="na-10x15-envelope"></span><span id="NA-10X15-ENVELOPE"></span>
 
-**Na-10x15-Envelope** (17)
+**NA-10x15-Envelope** (17)
 
 
 </dt> <dd></dd> <dt>
@@ -3511,7 +3511,7 @@ Tipos de papel compatibles.
 
 <span id="ISO-Designated"></span><span id="iso-designated"></span><span id="ISO-DESIGNATED"></span>
 
-**Designación ISO** (47)
+**Designado por ISO** (47)
 
 
 </dt> <dd></dd> <dt>
@@ -3595,14 +3595,14 @@ Tipos de papel compatibles.
 
 <span id="NA-Letter"></span><span id="na-letter"></span><span id="NA-LETTER"></span>
 
-**Letra na** (59)
+**Na-Letter** (59)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NA-Legal"></span><span id="na-legal"></span><span id="NA-LEGAL"></span>
 
-**Na-legal** (60)
+**NA-Legal** (60)
 
 
 </dt> <dd></dd> <dt>
@@ -3651,14 +3651,14 @@ Tipos de papel compatibles.
 
 <span id="Designated-Long-Envelope"></span><span id="designated-long-envelope"></span><span id="DESIGNATED-LONG-ENVELOPE"></span>
 
-**Designated-Long-Envelope** (67)
+**Sobre largo designado** (67)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Monarch-Envelope"></span><span id="monarch-envelope"></span><span id="MONARCH-ENVELOPE"></span>
 
-**Sobre monarca** (68)
+**Sobre de gobierno** (68)
 
 
 </dt> <dd></dd> <dt>
@@ -3686,7 +3686,7 @@ Tipos de papel compatibles.
 
 <span id="Ledger"></span><span id="ledger"></span><span id="LEDGER"></span>
 
-**Libro de contabilidad** (72)
+**Libro** de contabilidad (72)
 
 
 </dt> <dd></dd> <dt>
@@ -3703,16 +3703,16 @@ Tipos de papel compatibles.
 **PaperTypesAvailable**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob. RequiredPaperType", "CIM \_ PrintService. PaperTypesAvailable"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB. prtInputMediaName ")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob.RequiredPaperType", "CIM \_ PrintService.PaperTypesAvailable"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB.prtInputMediaName")
 </dt> </dl>
 
-Cadenas de forma libre que especifican los tipos de papel que están disponibles actualmente para la impresora. Cada cadena debe expresarse en el formato especificado por la aplicación de impresión de documentos (DPA) ISO/IEC 10175, que también se resume en el Apéndice C de RFC 1759 (Printer MIB). Ejemplos de cadenas válidas son "ISO-A4-color" y "na-10x14-Envelope". Por definición, un tamaño de papel que está disponible y que aparece en la propiedad **PaperTypesAvailable** también debe aparecer en la propiedad **PaperSizesSupported** .
+Cadenas de forma libre que especifican los tipos de papel que están disponibles actualmente para la impresora. Cada cadena debe expresarse en el formato especificado por la aplicación de impresión de documentos (DPA) ISO/IEC 10175, que también se resume en el Apéndice C de RFC 1759 (Impresora MIB). Algunos ejemplos de cadenas válidas son "iso-a4-colored" y "na-10x14-envelope". Por definición, un tamaño de papel que está disponible y que aparece en la **propiedad PaperTypesAvailable** también debe aparecer en la **propiedad PaperSizesSupported.**
 
 </dd> <dt>
 
@@ -3725,27 +3725,27 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
+Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Win32 Plug and Play el identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Win32 Plug and Play identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
-Ejemplo: " \* PNP030b"
+Ejemplo: \* "PNP030b"
 
 </dd> <dt>
 
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de las capacidades específicas de energía relacionadas con el dispositivo lógico.
+Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda del **\_ LogicalDevice de CIM**.
+Esta propiedad se hereda de **\_ CIM LogicalDevice.**
 
 <dt>
 
@@ -3783,7 +3783,7 @@ Las características de administración de energía están habilitadas actualmen
 
 <span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>
 
-<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modos de ahorro de energía introducidos automáticamente** (4)
+<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modos de ahorro de energía especificados automáticamente** (4)
 
 
 </dt> <dd>
@@ -3794,34 +3794,34 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 <span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>
 
-<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Estado de energía configurable** (5)
+<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Power State Settable** (5)
 
 
 </dt> <dd>
 
-Se admite el método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) . Este método se encuentra en la clase primaria de **\_ LogicalDevice de CIM** y se puede implementar. Para obtener más información, vea [diseñar clases Managed Object Format (MOF)](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice de CIM** primaria y se puede implementar. Para obtener más información, [vea Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
 <span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>
 
-<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Ciclo de energía admitido** (6)
+<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Power Cycling compatible** (6)
 
 
 </dt> <dd>
 
-El método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro *PowerState* establecido en 5 (ciclo de alimentación).
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el *parámetro PowerState* establecido en 5 (Ciclo de energía).
 
 </dd> <dt>
 
 <span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>
 
-<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>Se **admite el encendido con tiempo** (7)
+<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>**Encendido con tiempo de encendido admitido** (7)
 
 
 </dt> <dd>
 
-El método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro *PowerState* establecido en 5 (ciclo de energía) y la *hora* establecida en una fecha y hora específicas, o intervalo, para el encendido.
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y la hora establecida en una fecha y hora específicas, o un intervalo, para la encendido.
 
 </dd> </dl>
 
@@ -3836,31 +3836,31 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, el dispositivo puede administrarse con energía, es decir, ponerse en un estado de ahorro de energía. Si **es false**, el valor entero 1 ("no compatible") debe ser la única entrada de la matriz **PowerManagementCapabilities** .
+Si **es TRUE,** el dispositivo se puede administrar con energía, es decir, poner en un estado de ahorro de energía. Si **es FALSE,** el valor entero 1 ("No compatible") debe ser la única entrada de la matriz **PowerManagementCapabilities.**
 
-Esta propiedad no indica si las características de administración de energía están habilitadas actualmente o si están habilitadas, qué características se admiten. Para obtener más información, vea la matriz **PowerManagementCapabilities** . Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad no indica si las características de administración de energía están habilitadas actualmente o, si están habilitadas, qué características se admiten. Para más información, consulte la matriz **PowerManagementCapabilities.** Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **PrinterStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB. hrPrinterStatus ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Printer-MIB.hrPrinterStatus")
 </dt> </dl>
 
-Información de estado, más allá de la especificada en la propiedad **Availability** , para una impresora.
+Información de estado, más allá de la especificada en la **propiedad Availability,** para una impresora.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -3888,7 +3888,7 @@ Información de estado, más allá de la especificada en la propiedad **Availabi
 
 <span id="Warmup"></span><span id="warmup"></span><span id="WARMUP"></span>
 
-**Preparación** (5)
+**Warmup** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -3902,7 +3902,7 @@ Información de estado, más allá de la especificada en la propiedad **Availabi
 
 <span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>
 
-**Sin conexión** (7)
+**Sin** conexión (7)
 
 
 </dt> <dd></dd> </dl>
@@ -3918,10 +3918,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Estado actual del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -3929,84 +3929,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -4016,24 +4016,24 @@ Con **estrés** ("acentuado")
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operativo DMTF \| 003,3 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.3")
 </dt> </dl>
 
-Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (no aplicable).
+Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (No aplicable).
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -4077,12 +4077,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ Sistema CIM**](cim-system.md).**CreationClassName**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito.
+Nombre de clase de creación del sistema de ámbito.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -4095,51 +4095,51 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ Sistema CIM**](cim-system.md).**Name**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
 **TimeOfLastReset**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Hora de la última vez que se restableció la impresora.
+Hora del último restablecimiento de impresora.
 
 </dd> <dt>
 
 **VerticalResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob. HorizontalResolution"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("píxeles por pulgada")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ PrintJob.HorizontalResolution"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("píxeles por pulgada")
 </dt> </dl>
 
 Resolución vertical en píxeles por pulgada.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase de **\_ impresora CIM** se deriva del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+La **clase \_ CIM Printer** se deriva de CIM [**\_ LogicalDevice**](cim-logicaldevice.md).
 
-WMI no implementa esta clase. En el caso de la clase WMI derivada de la **\_ impresora CIM**, vea [clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para obtener clases WMI derivadas de **la impresora CIM, \_** vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -4149,8 +4149,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -4159,7 +4159,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**LogicalDevice de CIM \_**](cim-logicaldevice.md)
+[**\_Dispositivo lógico CIM**](cim-logicaldevice.md)
 </dt> </dl>
 
  

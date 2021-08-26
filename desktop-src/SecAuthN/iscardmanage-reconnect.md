@@ -1,7 +1,7 @@
 ---
-description: Permite que una aplicación se vuelva a conectar a una tarjeta inteligente o lector sin tener que emitir una llamada detach seguida de una llamada a AttachByHandle o AttachByIFD, respectivamente.
+description: Permite que una aplicación se vuelva a conectar a una tarjeta inteligente o lector sin tener que emitir una llamada de desasoción seguida de una llamada AttachByHandle o AttachByIFD respectivamente.
 ms.assetid: 450e817d-2cb2-4752-a86e-50cc8e434723
-title: 'ISCardManage:: reconnect (método)'
+title: Método ISCardManage::Reconnect
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: b8b05e6292a92267569eb1f53e10f6143554aba1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c0359a062f62e49b52b92623714e6d94aff015e53a71afa45d4a433c31f28c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013985"
 ---
-# <a name="iscardmanagereconnect-method"></a>ISCardManage:: reconnect (método)
+# <a name="iscardmanagereconnect-method"></a>Método ISCardManage::Reconnect
 
-\[El método de **reconexión** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
+\[El **método Reconnect** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El método de **reconexión** permite que una aplicación se vuelva a conectar a una [*tarjeta inteligente*](../secgloss/s-gly.md) o [*lector*](../secgloss/r-gly.md) sin tener que emitir una llamada de [**separación**](iscardmanage-detach.md) seguida de una llamada a [**AttachByHandle**](iscardmanage-attachbyhandle.md) o [**AttachByIFD**](iscardmanage-attachbyifd.md) , respectivamente.
+El **método Reconnect** permite a una aplicación [](../secgloss/r-gly.md) volver [*a*](../secgloss/s-gly.md) conectarse [**a**](iscardmanage-detach.md) una tarjeta inteligente o lector sin tener que emitir una llamada de desasoción seguida de una llamada [**AttachByHandle**](iscardmanage-attachbyhandle.md) o [**AttachByIFD**](iscardmanage-attachbyifd.md) respectivamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,31 +46,31 @@ El método devuelve uno de los siguientes valores posibles:
 
 | Código devuelto                                                                                   | Descripción                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | Operación completada correctamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operación completada correctamente.<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>                    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para asociar una llamada de tarjeta inteligente [**AttachByHandle**](iscardmanage-attachbyhandle.md) o [**AttachByIFD**](iscardmanage-attachbyifd.md).
+Para adjuntar una tarjeta inteligente, [**llame a AttachByHandle**](iscardmanage-attachbyhandle.md) o [**AttachByIFD.**](iscardmanage-attachbyifd.md)
 
-Para desasociar una tarjeta inteligente, llame a [**detach**](iscardmanage-detach.md).
+Para separar una tarjeta inteligente, llame a [**Desasoyen**](iscardmanage-detach.md).
 
 Para obtener una lista de todos los métodos definidos por esta interfaz, vea [**ISCardManage**](iscardmanage.md).
 
-Además de los códigos de error COM enumerados anteriormente, esta interfaz puede devolver un código de error de tarjeta inteligente si se llamó a una función de tarjeta inteligente para completar la solicitud. Para obtener más información, vea [valores devueltos de tarjeta inteligente](authentication-return-values.md).
+Además de los códigos de error COM enumerados anteriormente, esta interfaz puede devolver un código de error de tarjeta inteligente si se llamó a una función de tarjeta inteligente para completar la solicitud. Para obtener más información, vea [Valores devueltos de tarjeta inteligente.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                       |
 
@@ -86,7 +86,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 [**AttachByIFD**](iscardmanage-attachbyifd.md)
 </dt> <dt>
 
-[**Conecta**](iscardmanage-detach.md)
+[**Desasociar**](iscardmanage-detach.md)
 </dt> <dt>
 
 [**ISCardManage**](iscardmanage.md)

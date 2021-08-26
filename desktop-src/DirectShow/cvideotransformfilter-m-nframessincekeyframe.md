@@ -1,7 +1,7 @@
 ---
-description: Número de fotogramas que ha recibido el filtro desde el último fotograma clave.
+description: Número de fotogramas que el filtro ha recibido desde el último fotograma clave.
 ms.assetid: 6320e8fe-606b-4ca3-aeb7-c583145c0b77
-title: 'Miembro CVideoTransformFilter:: m_nFramesSinceKeyFrame (Vtrans. h)'
+title: CVideoTransformFilter::m_nFramesSinceKeyFrame miembro (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2d32b8ad982f39e5431710b8a1f43bffc74db0e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 02d3ff4dc05c8bee84706efa6566d090fad3f1c39e15dfa23283e1fab2f2a22e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998555"
 ---
-# <a name="cvideotransformfilterm_nframessincekeyframe-member"></a>Miembro nFramesSinceKeyFrame CVideoTransformFilter:: m \_
+# <a name="cvideotransformfilterm_nframessincekeyframe-member"></a>Miembro CVideoTransformFilter::m \_ nFramesSinceKeyFrame
 
-Número de fotogramas que ha recibido el filtro desde el último fotograma clave.
+Número de fotogramas que el filtro ha recibido desde el último fotograma clave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ int m_nFramesSinceKeyFrame;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Vtrans. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Vtrans.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ int m_nFramesSinceKeyFrame;
 
 <dl> <dt>
 
-[**Clase CVideoTransformFilter**](cvideotransformfilter.md)
+[**CVideoTransformFilter (clase)**](cvideotransformfilter.md)
 </dt> </dl>
 
  

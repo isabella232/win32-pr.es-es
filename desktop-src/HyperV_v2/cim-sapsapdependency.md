@@ -1,7 +1,7 @@
 ---
-description: Representa una asociación entre dos puntos de acceso de servicio (SAP), en la que un SAP depende de otro para que lo use o se conecte con un servicio.
+description: Representa una asociación entre dos puntos de acceso de servicio (SAP), en los que un SAP depende del otro para utilizar o conectarse con un servicio.
 ms.assetid: fba4144b-833f-469f-93df-e8a79aa37811
-title: CIM_SAPSAPDependency (clase, administración de Hyper-V)
+title: CIM_SAPSAPDependency (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6888cbb74ea03b85bc9abfcea24e65660fd65953
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae8b1e45d1685204b15cf359f36cfced321fb75c099b7be76e0ece2ce3f836de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980865"
 ---
-# <a name="cim_sapsapdependency-class-hyper-v-management"></a>CIM_SAPSAPDependency (clase, administración de Hyper-V)
+# <a name="cim_sapsapdependency-class-hyper-v-management"></a>CIM_SAPSAPDependency (administración de Hyper-V)
 
-Representa una asociación entre dos puntos de acceso de servicio (SAP), en la que un SAP depende de otro para que lo use o se conecte con un servicio. Por ejemplo, para imprimir en una impresora de red, los puntos de acceso de impresión locales deben emplear SAP relacionado con la red subyacente para enviar la solicitud de impresión.
+Representa una asociación entre dos puntos de acceso de servicio (SAP), en los que un SAP depende del otro para utilizar o conectarse con un servicio. Por ejemplo, para imprimir en una impresora de red, los puntos de acceso de impresión locales deben utilizar LOSP subyacentes relacionados con la red para enviar la solicitud de impresión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,45 +39,45 @@ class CIM_SAPSAPDependency : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ SAPSAPDependency** tiene estos tipos de miembros:
+La **clase \_ CIM SAPSAPDependency** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ SAPSAPDependency** tiene estas propiedades.
+La **clase \_ CIM SAPSAPDependency** tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ punto**
+Tipo de datos: **CIM \_ ServiceAccessPoint**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Referencia al SAP requerido.
+Referencia al SAP necesario.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ punto**
+Tipo de datos: **CIM \_ ServiceAccessPoint**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Referencia a SAP dependiente.
+Referencia al SAP dependiente.
 
 </dd> </dl>
 
@@ -89,8 +89,8 @@ Referencia a SAP dependiente.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Referencia a SAP dependiente.
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

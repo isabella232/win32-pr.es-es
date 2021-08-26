@@ -1,7 +1,7 @@
 ---
 description: Enumera los archivos protegidos.
 ms.assetid: 46a1ff83-afed-4ce3-bb62-551446efdb78
-title: Función SfcGetFiles (sfcfiles. h)
+title: Función SfcGetFiles (Sfcfiles.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Sfcfiles.dll
-ms.openlocfilehash: 6b38b761372db656308e778fd96ea48607cf1f21
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3201621808708229419542acd7fa0caab0aa7f6e7d38bfe723b7f53bc68c4005
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999285"
 ---
-# <a name="sfcgetfiles-function"></a>SfcGetFiles función)
+# <a name="sfcgetfiles-function"></a>Función SfcGetFiles
 
-\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. Se ha quitado la compatibilidad con esta función en Windows Vista y Windows Server 2008. En su lugar, use las funciones admitidas que se enumeran en [las funciones de WRP](wfp-functions.md) .\]
+\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. Se quitó la compatibilidad con esta función en Windows Vista y Windows Server 2008. En su lugar, use las funciones admitidas [enumeradas en Funciones de WRP.](wfp-functions.md)\]
 
 Enumera los archivos protegidos.
 
@@ -42,14 +42,14 @@ NTSTATUS WINAPI SfcGetFiles(
 
 <dl> <dt>
 
-*ProtFileData* \[ enuncia\]
+*ProtFileData* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ \_ entrada de archivo PPROTECT**](pprotect-file-entry.md) que contiene la lista de archivos protegidos.
+Puntero a una estructura [**PPROTECT \_ FILE \_ ENTRY**](pprotect-file-entry.md) que contiene la lista de archivos protegidos.
 
 </dd> <dt>
 
-*FileCount* \[ enuncia\]
+*FileCount* \[ out\]
 </dt> <dd>
 
 Puntero a una ubicación que contiene un valor ULONG que es el número de archivos protegidos.
@@ -58,7 +58,7 @@ Puntero a una ubicación que contiene un valor ULONG que es el número de archiv
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es STATUs \_ Success. Si se produce un error en la función, devuelve el código de error NTSTATUS adecuado.
+Si la función se realiza correctamente, el valor devuelto es STATUS \_ SUCCESS. Si se produce un error en la función, devuelve el código de error NTSTATUS adecuado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,11 +66,11 @@ Si la función se ejecuta correctamente, el valor devuelto es STATUs \_ Success.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Sfcfiles. h</dt> </dl>   |
+| Header<br/>                   | <dl> <dt>Sfcfiles.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>Sfcfiles.dll</dt> </dl> |
 
 
@@ -79,7 +79,7 @@ Si la función se ejecuta correctamente, el valor devuelto es STATUs \_ Success.
 
 <dl> <dt>
 
-[**\_entrada de archivo PPROTECT \_**](pprotect-file-entry.md)
+[**ENTRADA DE ARCHIVO PPROTECT \_ \_**](pprotect-file-entry.md)
 </dt> </dl>
 
  
