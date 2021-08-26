@@ -1,7 +1,7 @@
 ---
-description: 'Método IStats::Connect: el método Connect conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración para la conexión.'
+description: 'Método IStats::Conectar: el método Conectar conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración para la conexión.'
 ms.assetid: 29a12df7-9c81-40ff-ac12-33ce1de833b1
-title: Método IStats::Connect (Netmon.h)
+title: Método IStats::Conectar (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 0719b6ff56aaa8c0be02f86d62ac23d4003aa3d6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e6521e77453ec77f81422c7903b1a394512a4c1b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098483"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471191"
 ---
-# <a name="istatsconnect-method"></a>IStats::Connect (método)
+# <a name="istatsconnect-method"></a>IStats::Conectar método
 
-El **método Connect** conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración para la conexión.
+El **Conectar** conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración para la conexión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -79,65 +79,21 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Código devuelto</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_ALREADY_CONNECTED</strong></dt> </dl></td>
-<td>Esta instancia del objeto COM de NPP ya está conectada a la red.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt> </dl></td>
-<td>El BLOB de configuración está dañado. La llamada a <strong>IStats::Configure</strong> genera este error.<br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt> </dl></td>
-<td>El BLOB de entrada especificado por el <em>parámetro hInputBlob</em> carece de una entrada necesaria para realizar esta operación. Este error puede generarse mediante la <strong>llamada IStats::Connect</strong> o <strong>IStats::Configure.</strong> Mire el blob de error devuelto por <em>hErrorBlob para</em> determinar qué entrada no se encontró.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt> </dl></td>
-<td>No se ha llamado a la función <strong>CreateBlob.</strong> La llamada a <strong>IStats::Configure</strong> genera este error.<br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt> </dl></td>
-<td>La cadena no termina en NULL. La llamada a <strong>IStats::Configure</strong> genera este error.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt> </dl></td>
-<td>La parte del desencadenador del BLOB de entrada está dañada. La llamada a <strong>IStats::Configure</strong> genera este error.<br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_INVALID_BLOB</strong></dt> </dl></td>
-<td>El objeto especificado en <em>hInputBlob</em> no es un BLOB. La llamada a <strong>IStats::Configure</strong> genera este error.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_NO_DEFAULT_CAPTURE_DIRECTORY</strong></dt> </dl></td>
-<td>El directorio de captura predeterminado no se estableció en el Registro. Para establecer el directorio de captura, use la ruta de acceso siguiente. <br/>
-<pre class="syntax" data-space="preserve"><code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nm\Parameters\CapturePath</code></pre></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_OUT_OF_MEMORY</strong></dt> </dl></td>
-<td>La memoria necesaria para realizar esta operación no estaba disponible. La llamada a <strong>IStats::Configure</strong> genera este error.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_TIMEOUT</strong></dt> </dl></td>
-<td>Se ha pasado el tiempo de espera de la solicitud. La llamada a <strong>IStats::Configure</strong> genera este error.<br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_UPLEVEL_BLOB</strong></dt> </dl></td>
-<td>El número de versión del BLOB especificado en <em>hInputBlob</em> es incorrecto. La llamada a <strong>IStats::Configure</strong> genera este error.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Código devuelto | Descripción | 
+|-------------|-------------|
+| <dl><dt><strong>NMERR_ALREADY_CONNECTED</strong></dt></dl> | Esta instancia del objeto COM de NPP ya está conectada a la red.<br /> | 
+| <dl><dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt></dl> | El BLOB de configuración está dañado. La llamada a <strong>IStats::Configure</strong> genera este error.<br /> | 
+| <dl><dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt></dl> | El BLOB de entrada especificado por el <em>parámetro hInputBlob</em> carece de una entrada necesaria para realizar esta operación. Este error lo pueden generar las llamadas <strong>IStats::Conectar</strong> <strong>o IStats::Configure.</strong> Mire el blob de error devuelto por <em>hErrorBlob para</em> determinar qué entrada no se encontró.<br /> | 
+| <dl><dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt></dl> | No se ha llamado a la función <strong>CreateBlob.</strong> La llamada a <strong>IStats::Configure</strong> genera este error.<br /> | 
+| <dl><dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt></dl> | La cadena no termina en NULL. La llamada a <strong>IStats::Configure</strong> genera este error.<br /> | 
+| <dl><dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt></dl> | La parte del desencadenador del BLOB de entrada está dañada. La llamada a <strong>IStats::Configure</strong> genera este error.<br /> | 
+| <dl><dt><strong>NMERR_INVALID_BLOB</strong></dt></dl> | El objeto especificado en <em>hInputBlob</em> no es un BLOB. La llamada a <strong>IStats::Configure</strong> genera este error.<br /> | 
+| <dl><dt><strong>NMERR_NO_DEFAULT_CAPTURE_DIRECTORY</strong></dt></dl> | El directorio de captura predeterminado no se estableció en el Registro. Para establecer el directorio de captura, use la ruta de acceso siguiente. <br /><pre class="syntax" data-space="preserve"><code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nm\Parameters\CapturePath</code></pre> | 
+| <dl><dt><strong>NMERR_OUT_OF_MEMORY</strong></dt></dl> | La memoria necesaria para realizar esta operación no estaba disponible. La llamada a <strong>IStats::Configure</strong> genera este error.<br /> | 
+| <dl><dt><strong>NMERR_TIMEOUT</strong></dt></dl> | Se ha pasado el tiempo de espera de la solicitud. La llamada a <strong>IStats::Configure</strong> genera este error.<br /> | 
+| <dl><dt><strong>NMERR_UPLEVEL_BLOB</strong></dt></dl> | El número de versión del BLOB especificado en <em>hInputBlob</em> es incorrecto. La llamada a <strong>IStats::Configure</strong> genera este error.<br /> | 
+
 
 
 
@@ -145,7 +101,7 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
 ## <a name="remarks"></a>Comentarios
 
-Cuando se llama al método **Connect,** Monitor de red llama automáticamente al método **IStats::Configure** mediante el blob proporcionado por el *parámetro hInputBlob.* Tenga en cuenta que los códigos de error devueltos por la llamada a **IStats::Configure** se devuelven y devuelven mediante la **llamada IStats::Connect.**
+Cuando se **llama Conectar** método , Monitor de red llama automáticamente al método **IStats::Configure** mediante el BLOB proporcionado por el *parámetro hInputBlob.* Tenga en cuenta que los códigos de error devueltos por la llamada a **IStats::Configure** se devuelven y devuelven mediante la **llamada IStats::Conectar** llamada.
 
 Se debe llamar a este método para poder empezar a capturar fotogramas. Tenga en cuenta que cuando se conecta a la red mediante este método, debe seguir usando la **interfaz IStats** para capturar fotogramas.
 

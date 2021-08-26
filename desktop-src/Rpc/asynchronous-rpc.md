@@ -1,41 +1,41 @@
 ---
-title: RPC asincrónico
-description: La llamada a procedimiento remoto (RPC) asincrónica es una extensión de Microsoft que aborda varias limitaciones del modelo RPC tradicional, tal como se define en el entorno de computación distribuida de Open Software Foundation \ 8211; (OSF-DCE).
+title: RPC asincrónica
+description: Llamada a procedimiento remoto asincrónico (RPC) es una extensión de Microsoft que aborda varias limitaciones del modelo RPC tradicional, tal como se define en Open Software Foundation \ 8211;Distributed Computing Environment (OSF-DCE).
 ms.assetid: 2586c10e-8284-419f-a200-4f6b11953688
 keywords:
-- RPC llamada a procedimiento remoto, descripción, RPC asincrónico
-- RPC asincrónico
+- Llamada a procedimiento remoto RPC , descrita, RPC asincrónica
+- RPC asincrónica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e36ac79a30fd01aeba1efb3cbd2b7cc741f26238
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 42f4a5f160054f78f0a5737993d1a030957af930ab036e73dbcea0a039125964
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023545"
 ---
-# <a name="asynchronous-rpc"></a>RPC asincrónico
+# <a name="asynchronous-rpc"></a>RPC asincrónica
 
-La llamada a procedimiento remoto (RPC) asincrónica es una extensión de Microsoft que aborda varias limitaciones del modelo RPC tradicional, tal como se define en Open Software Foundation – Distributed Computing Environment (OSF-DCE). RPC asincrónico separa una llamada a procedimiento remoto de su valor devuelto, que resuelve las siguientes limitaciones del RPC sincrónico tradicional:
+Llamada a procedimiento remoto asincrónico (RPC) es una extensión de Microsoft que aborda varias limitaciones del modelo RPC tradicional, tal como se define en Open Software Foundation–Distributed Computing Environment (OSF-DCE). RPC asincrónica separa una llamada a procedimiento remoto de su valor devuelto, que resuelve las siguientes limitaciones de RPC tradicional y sincrónica:
 
--   **Varias llamadas pendientes desde un cliente de un solo subproceso.** En el modelo RPC tradicional, un cliente se bloquea en una llamada a procedimiento remoto hasta que se devuelve la llamada. Esto impide que un cliente tenga varias llamadas pendientes, mientras que el subproceso sigue estando disponible para realizar otro trabajo.
--   **Clientes lentos o retrasados.** Un cliente que es lento para generar datos puede querer realizar una llamada a procedimiento remoto con los datos iniciales y, a continuación, proporcionar datos adicionales a medida que se generan. Esto no es posible con RPC (sincrónico) convencional.
--   **Servidores lentos o retrasados.** Una llamada a procedimiento remoto que tarda mucho tiempo en completarse enlazará el subproceso de envío mientras dure la tarea. Con RPC asincrónico, el servidor puede iniciar una operación independiente (asincrónica) para procesar la solicitud y devolver la respuesta cuando esté disponible. El servidor también puede enviar la respuesta de forma incremental a medida que los resultados estén disponibles sin tener que asociar un subproceso de envío mientras dure la llamada remota. Al hacer que la aplicación cliente sea asincrónica, puede evitar que un servidor lento se quede innecesariamente a través de una aplicación cliente.
--   **Transferencia de grandes cantidades de datos.** La transferencia de grandes cantidades de datos entre el cliente y el servidor, especialmente a través de vínculos de baja velocidad, une el subproceso de cliente y el subproceso del administrador del servidor durante la transferencia. Con RPC y canalizaciones asincrónicas, la transferencia de datos se puede realizar de forma incremental y sin impedir que el cliente o el servidor realice otras tareas.
+-   **Varias llamadas pendientes desde un cliente de un solo subproceso.** En el modelo RPC tradicional, un cliente se bloquea en una llamada a procedimiento remoto hasta que se devuelve la llamada. Esto evita que un cliente tenga varias llamadas pendientes, mientras sigue teniendo su subproceso disponible para realizar otro trabajo.
+-   **Clientes lentos o retrasados.** Es posible que un cliente con lentitud en la generación de datos quiera realizar una llamada a procedimiento remoto con datos iniciales y, a continuación, proporcionar datos adicionales a medida que se generan. Esto no es posible con RPC convencional (sincrónico).
+-   **Servidores lentos o retrasados.** Una llamada a procedimiento remoto que tarda mucho tiempo en completarse vinculará el subproceso de distribución mientras dure la tarea. Con RPC asincrónico, el servidor puede iniciar una operación independiente (asincrónica) para procesar la solicitud y devolver la respuesta cuando esté disponible. El servidor también puede enviar la respuesta de forma incremental a medida que los resultados estén disponibles sin tener que vincular un subproceso de distribución mientras dure la llamada remota. Al hacer que la aplicación cliente sea asincrónica, puede evitar que un servidor lento acote innecesariamente una aplicación cliente.
+-   **Transferencia de grandes cantidades de datos.** La transferencia de grandes cantidades de datos entre el cliente y el servidor, especialmente a través de vínculos lentos, vincula tanto el subproceso de cliente como el subproceso del administrador del servidor durante la transferencia. Con RPC y canalizaciones asincrónicas, la transferencia de datos puede realizarse de forma incremental y sin bloquear al cliente o servidor para que realice otras tareas.
 
-Puede aprovechar los mecanismos RPC asincrónicos mediante la declaración de funciones con el \[ atributo [**Async**](/windows/desktop/Midl/async) \] . Dado que esta declaración se realiza en un archivo de configuración de atributos (ACF), no es necesario realizar ningún cambio en el archivo de lenguaje de definición de interfaz (IDL); RPC asincrónico no tiene ningún efecto en el protocolo de conexión (cómo se transmiten los datos entre el cliente y el servidor). Esto significa que los clientes sincrónicos y asincrónicos pueden comunicarse con una aplicación de servidor asincrónica.
+Para aprovechar los mecanismos RPC asincrónicos, declare funciones con el \[ [**atributo asincrónico.**](/windows/desktop/Midl/async) \] Dado que realiza esta declaración en un archivo de configuración de atributos (ACF), no tiene que realizar ningún cambio en el archivo del lenguaje de definición de interfaz (IDL); RPC asincrónica no tiene ningún efecto en el protocolo de conexión (cómo se transmiten los datos entre el cliente y el servidor). Esto significa que los clientes sincrónicos y asincrónicos pueden comunicarse con una aplicación de servidor asincrónica.
 
-En esta sección se ofrece información general sobre cómo desarrollar aplicaciones distribuidas mediante RPC asincrónico. La información general se presenta en las siguientes secciones:
+En esta sección se presenta información general sobre cómo desarrollar aplicaciones distribuidas mediante RPC asincrónica. La información general se presenta en las secciones siguientes:
 
 -   [Declarar funciones asincrónicas](declaring-asynchronous-functions.md)
 -   [RPC asincrónica del lado cliente](client-side-asynchronous-rpc.md)
 -   [RPC asincrónica del lado servidor](server-side-asynchronous-rpc.md)
--   [Ordenación causal de llamadas asincrónicas](causal-ordering-of-asynchronous-calls.md)
+-   [Orden causal de las llamadas asincrónicas](causal-ordering-of-asynchronous-calls.md)
 -   [Tratamiento de errores](error-handling.md)
--   [RPC asincrónico a través del Protocolo de canalización con nombre](asynchronous-rpc-over-the-named-pipe-protocol.md)
--   [Usar RPC asincrónico con canalizaciones de DCE](using-asynchronous-rpc-with-dce-pipes.md)
+-   [RPC asincrónica sobre el protocolo de canalización con nombre](asynchronous-rpc-over-the-named-pipe-protocol.md)
+-   [Uso de RPC asincrónico con canalizaciones DCE](using-asynchronous-rpc-with-dce-pipes.md)
 -   [DCOM asincrónico](asynchronous-dcom.md)
 
- 
+ 
 
- 
+ 

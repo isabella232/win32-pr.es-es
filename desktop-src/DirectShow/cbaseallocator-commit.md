@@ -1,7 +1,7 @@
 ---
-description: 'El método commit asigna la memoria de los búferes. Este método implementa el método IMemAllocator:: commit.'
+description: El método Commit asigna la memoria para los búferes. Este método implementa el método IMemAllocator::Commit.
 ms.assetid: e8c36276-0229-428f-b030-978651ab7534
-title: Método CBaseAllocator. Commit (Amfilter. h)
+title: Método CBaseAllocator.Commit (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b49fae72e5588105b1235c1f0c461d5cc45cfa2b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba9c373a15d5200d6466fef5c519a59a1052c8e5854ebe38c5a8b027d21188a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087585"
 ---
-# <a name="cbaseallocatorcommit-method"></a>CBaseAllocator. Commit (método)
+# <a name="cbaseallocatorcommit-method"></a>Método CBaseAllocator.Commit
 
-El `Commit` método asigna la memoria de los búferes. Este método implementa el método [**IMemAllocator:: commit**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-commit) .
+El `Commit` método asigna la memoria para los búferes. Este método implementa el [**método IMemAllocator::Commit.**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-commit)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,26 +42,26 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los de la lista siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la lista siguiente.
 
 
 
 | Código devuelto                                                                                       | Descripción                                        |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>              | Correcto.<br/>                                |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Correcto.<br/>                                |
 | <dl> <dt>**VFW \_ E \_ SIZENOTSET**</dt> </dl> | No se especificaron los requisitos de búfer.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de llamar a este método, llame al método [**CBaseAllocator:: SetProperties**](cbaseallocator-setproperties.md) para especificar los requisitos de búfer.
+Antes de llamar a este método, llame [**al método CBaseAllocator::SetProperties**](cbaseallocator-setproperties.md) para especificar los requisitos del búfer.
 
-Este método llama al método virtual [**CBaseAllocator:: Alloc**](cbaseallocator-alloc.md) para asignar la memoria de los búferes. Las clases derivadas pueden invalidar **Alloc**. Si hay pendiente una operación de desconfirmación, se cancela.
+Este método llama al método virtual [**CBaseAllocator::Alloc**](cbaseallocator-alloc.md) para asignar la memoria para los búferes. Las clases derivadas pueden invalidar **Alloc**. Si una operación de desaprobación está pendiente, se cancela.
 
-Debe llamar a este método antes de llamar al método [**CBaseAllocator:: getBuffer**](cbaseallocator-getbuffer.md) .
+Debe llamar a este método antes de llamar [**al método CBaseAllocator::GetBuffer.**](cbaseallocator-getbuffer.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,8 +69,8 @@ Debe llamar a este método antes de llamar al método [**CBaseAllocator:: getBuf
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ Debe llamar a este método antes de llamar al método [**CBaseAllocator:: getBuf
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

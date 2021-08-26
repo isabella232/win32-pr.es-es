@@ -3,36 +3,36 @@ title: Acciones y derechos
 description: Acciones y derechos
 ms.assetid: 711c6a04-6c40-4ea5-8c4f-91d000286b7b
 keywords:
-- SDK de Windows Media Format, administración de derechos digitales (DRM)
-- SDK de Windows Media Format, licencias de DRM
-- SDK de Windows Media Format, licencias de DRM
-- Administración de derechos digitales (DRM), acciones
+- Windows SDK de formato multimedia, administración de derechos digitales (DRM)
+- Windows SDK de formato multimedia, licencias DRM
+- Windows SDK de formato multimedia, licencias para DRM
+- administración de derechos digitales (DRM), acciones
 - DRM (administración de derechos digitales), acciones
-- Administración de derechos digitales (DRM), derechos
+- administración de derechos digitales (DRM), derechos
 - DRM (administración de derechos digitales), derechos
-- Administración de derechos digitales (DRM), licencias
+- administración de derechos digitales (DRM), licencias
 - DRM (administración de derechos digitales), licencias
 - licencias, DRM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1d044850bb5ee73e804065c67840362ec0b7b0d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b822c0350af12c5e266570a031ca0d3eda7c99b4b8451b751786a60a4a0908d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089775"
 ---
 # <a name="actions-and-rights"></a>Acciones y derechos
 
-Cuando un archivo está protegido mediante DRM de Windows Media, su uso está completamente restringido. Se pueden emitir licencias para permitir que los usuarios usen el contenido de maneras específicas. Cada una de las formas en que un usuario puede usar el contenido se describe mediante una acción. Por ejemplo, la reproducción de un archivo en un equipo es una acción.
+Cuando un archivo está protegido mediante drm Windows multimedia, su uso está completamente restringido. Se pueden emitir licencias para permitir que un usuario use el contenido de maneras específicas. Cada forma en que un usuario puede usar el contenido se describe mediante una acción. Por ejemplo, reproducir un archivo en un equipo es una acción.
 
-Se dice que una licencia que habilita una determinada acción concede un derecho. Por ejemplo, una licencia puede conceder el derecho a reproducir contenido en un equipo.
+Se dice que una licencia que habilita una acción determinada concede un derecho. Por ejemplo, una licencia puede conceder el derecho a reproducir contenido en un equipo.
 
-Las acciones y los derechos hacen referencia a las mismas maneras de usar el contenido. La diferencia es que la acción hace referencia al uso mientras el derecho hace referencia al permiso. A pesar de esta distinción, las palabras acción y derecha se usan a menudo indistintamente en esta documentación y en otros documentos que describen Windows Media DRM.
+Las acciones y los derechos hacen referencia a las mismas formas de usar contenido. La diferencia es que la acción hace referencia al uso, mientras que el derecho hace referencia al permiso. A pesar de esta distinción, las palabras acción y derecho se suelen usar indistintamente en esta documentación y en otros documentos que describen Windows DRM multimedia.
 
-Las acciones controladas por los derechos de DRM de Windows Media se enumeran en la sección de [constantes derechos](rights-constants.md) de esta documentación.
+Las acciones que se rigen por Windows derechos DRM de multimedia se enumeran en la sección [Constantes de](rights-constants.md) derechos de esta documentación.
 
-Ciertos métodos de las API extendidas del cliente DRM de Windows Media usan diferentes constantes para hacer referencia a los derechos básicos de DRM. Por ejemplo, el método [**IWMDRMLicenseQuery:: QueryLicenseState**](iwmdrmlicensequery-querylicensestate.md) usa un conjunto de cadenas específicas de los Estados de licencia. Aunque estas constantes definen cadenas diferentes de las constantes de derechos básicas, hacen referencia a los mismos derechos de la licencia.
+Determinados métodos de Windows API extendidas de cliente DRM multimedia usan constantes diferentes para hacer referencia a los derechos drm básicos. Por ejemplo, el [**método IWMDRMLicenseQuery::QueryLicenseState**](iwmdrmlicensequery-querylicensestate.md) usa un conjunto de cadenas específicas de los estados de licencia. Aunque estas constantes definen cadenas diferentes de las constantes de derechos básicos, hacen referencia a los mismos derechos en la licencia.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -41,9 +41,9 @@ Ciertos métodos de las API extendidas del cliente DRM de Windows Media usan dif
 [**Conceptos**](drmconcepts.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

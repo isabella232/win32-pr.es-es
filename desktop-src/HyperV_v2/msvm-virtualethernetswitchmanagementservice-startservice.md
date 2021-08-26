@@ -1,5 +1,5 @@
 ---
-description: 'Método StartService de la Msvm_VirtualEthernetSwitchManagementService : inicia el servicio.'
+description: 'Método StartService de la Msvm_VirtualEthernetSwitchManagementService clase : inicia el servicio.'
 ms.assetid: 8b232523-3311-47a9-949a-3bbb9944d80f
 title: Método StartService de la Msvm_VirtualEthernetSwitchManagementService clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d58ec579d13edd87b0a952d8b9e26ad387622d3b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8e15dcf329a2ef4192ef9bd04ee9a275d0437787e4d14338bb1d6e3bf270d409
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075285"
 ---
-# <a name="startservice-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método StartService de la clase \_ Msvm VirtualEthernetSwitchManagementService
+# <a name="startservice-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método StartService de la clase \_ VirtualEthernetSwitchManagementService de Msvm
 
 inicia el servicio.
 
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

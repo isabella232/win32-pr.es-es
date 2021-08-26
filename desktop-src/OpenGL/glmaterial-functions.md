@@ -1,30 +1,30 @@
 ---
-title: Funciones de glMaterial
+title: funciones glMaterial
 description: Estas funciones especifican parámetros de material para el modelo de iluminación.
 ms.assetid: a3f55129-da54-48ca-a629-88fed936551e
 keywords:
-- Funciones OpenGL, glMaterial
-- Referencia de OpenGL, funciones de glMaterial
-- referencia de las funciones OpenGL, glMaterial
-- OpenGL, funciones de materiales
-- Referencia de OpenGL, funciones de materiales
-- referencia de OpenGL, funciones de materiales
-- funciones de glMaterial
+- Funciones OpenGL,glMaterial
+- Referencia de OpenGL, funciones glMaterial
+- referencia de las funciones OpenGL,glMaterial
+- OpenGL, funciones de material
+- Referencia de OpenGL, funciones de material
+- referencia de OpenGL, funciones de material
+- funciones glMaterial
 - funciones de material
-- funciones ligeras
+- funciones light
 - OpenGL, funciones ligeras
 - Referencia de OpenGL, funciones ligeras
-- referencia de las funciones OpenGL, Light
+- referencia de OpenGL, funciones ligeras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e14ca663f1d6a3d437900ec00da1d1b9b9637728
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e09d01f7f3d6d30f086919a037e1447bfcc5f7f417a2d5590d9194a212c37f8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128255"
 ---
-# <a name="glmaterial-functions"></a>Funciones de glMaterial
+# <a name="glmaterial-functions"></a>funciones glMaterial
 
 Estas funciones especifican parámetros de material para el modelo de iluminación:
 
@@ -33,9 +33,9 @@ Estas funciones especifican parámetros de material para el modelo de iluminaci�
 -   [**glMaterialfv**](glmaterialfv.md)
 -   [**glMaterialiv**](glmaterialiv.md)
 
- 
+ 
 
- 
+ 
 
 
 

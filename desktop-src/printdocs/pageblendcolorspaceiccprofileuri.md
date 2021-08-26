@@ -1,21 +1,21 @@
 ---
-description: Obtenga información sobre el parámetro PageBlendColorSpaceICCProfileURI. Este tema no está al día. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el parámetro PageBlendColorSpaceICCProfileURI. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 05924c7d-e074-4835-b42c-53c77dc1bbb5
 title: PageBlendColorSpaceICCProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 746a71a9b244b0b2fc9e533a6209de4170a369a7551b31454590eab3013594cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8d62a50fd53c678f507ec18970e346285ed348f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117686227"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880483"
 ---
 # <a name="pageblendcolorspaceiccprofileuri"></a>PageBlendColorSpaceICCProfileURI
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica una referencia de URI relativa a un perfil DEER QUE define el espacio de colores que SE DEBE usar para la combinación. es <Uri> un nombre de elemento absoluto relativo a la raíz del \_ paquete.
+Especifica una referencia de URI relativa a un perfil DE CIA que define el espacio de color que se debe usar para la combinación. El &lt; URI es un nombre de parte absoluto relativo a la raíz del &gt; \_ paquete.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                      |
+| Propiedad                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |

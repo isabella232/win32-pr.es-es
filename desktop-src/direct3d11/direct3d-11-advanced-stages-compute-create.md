@@ -1,23 +1,23 @@
 ---
-title: Cómo crear un sombreador de cálculo
-description: En este tema se muestra cómo crear un sombreador de cálculo.
+title: Cómo crear un sombreador de proceso
+description: En este tema se muestra cómo crear un sombreador de proceso.
 ms.assetid: 6114dd90-626b-4c9e-9da5-7d2d33153e79
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64e6dc39476b83a9bd810cc7bb85231174ec1b18
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: eea5e0ab6309dd441d33fc20b13d0ef31642b62f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104359510"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884471"
 ---
-# <a name="how-to-create-a-compute-shader"></a>Cómo: crear un sombreador de cálculo
+# <a name="how-to-create-a-compute-shader"></a>Cómo: Crear un sombreador de proceso
 
-Un sombreador de cálculo es un sombreador programable del lenguaje HLSL (Microsoft High Level Shader Language) que usa el acceso generalizado a la memoria de entrada y salida para admitir prácticamente cualquier tipo de cálculo. En este tema se muestra cómo crear un sombreador de cálculo. La tecnología del sombreador de cálculo también se conoce como tecnología DirectCompute.
+Un sombreador de proceso es un sombreador programable del Lenguaje de sombreador de alto nivel (HLSL) de Microsoft que usa el acceso generalizado a la memoria de entrada y salida para admitir prácticamente cualquier tipo de cálculo. En este tema se muestra cómo crear un sombreador de proceso. La tecnología de sombreador de proceso también se conoce como tecnología DirectCompute.
 
-**Para crear un sombreador de cálculo:**
+**Para crear un sombreador de proceso:**
 
-1.  Compile el código del sombreador HLSL llamando a [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile).
+1.  Compile el código del sombreador HLSL mediante una [**llamada a D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile).
     ```
         UINT flags = D3DCOMPILE_ENABLE_STRICTNESS;
     #if defined( DEBUG ) || defined( _DEBUG )
@@ -39,7 +39,7 @@ Un sombreador de cálculo es un sombreador programable del lenguaje HLSL (Micros
 
     
 
-2.  Cree un sombreador de cálculo mediante [**ID3D11Device:: CreateComputeShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createcomputeshader).
+2.  Cree un sombreador de proceso [**mediante ID3D11Device::CreateComputeShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createcomputeshader).
     ```
     ID3D11ComputeShader* g_pFinalPassCS = NULL;
     pd3dDevice->CreateComputeShader( pBlobFinalPassCS->GetBufferPointer(), 
@@ -49,12 +49,12 @@ Un sombreador de cálculo es un sombreador programable del lenguaje HLSL (Micros
 
     
 
-En el ejemplo de código siguiente se muestra cómo compilar y crear un sombreador de cálculo.
+En el ejemplo de código siguiente se muestra cómo compilar y crear un sombreador de proceso.
 
 > [!Note]  
-> Para este código de ejemplo, necesita el Windows SDK 8,0 y el \_ archivo de44.dll d3dcompiler de la carpeta% Program \_ file% \\ Windows kits \\ 8,0 \\ Redist \\ D3D \\ <arch> en su ruta de acceso.
+> Para este código de ejemplo, necesita el sdk de Windows 8.0 y el archivo d3dcompiler44.dll de la carpeta de arquería \_ %PROGRAM \_ FILE% \\ Windows Kits \\ 8.0 \\ \\ Redist D3D \\ &lt; &gt; en la ruta de acceso.
 
- 
+ 
 
 
 ```cpp
@@ -188,7 +188,7 @@ int main()
 
 
 
-En el ejemplo de código anterior se compila el código del sombreador de cálculo en el archivo ExampleCompute. HLSL. Este es el código de ExampleCompute. HLSL:
+En el ejemplo de código anterior se compila el código del sombreador de proceso en el archivo ExampleCompute.hlsl. Este es el código de ExampleCompute.hlsl:
 
 
 ```hlsl
@@ -268,6 +268,6 @@ void CSMain( uint3 DTid : SV_DispatchThreadID )
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Información general del sombreador de cálculo](direct3d-11-advanced-stages-compute-shader.md)
-* [Cómo usar Direct3D 11](how-to-use-direct3d-11.md)
+* [Información general sobre el sombreador de proceso](direct3d-11-advanced-stages-compute-shader.md)
+* [Uso de Direct3D 11](how-to-use-direct3d-11.md)
 * [Aplicación de ejemplo BasicCompute11](https://github.com/walbourn/directx-sdk-samples/tree/master/BasicCompute11)

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a4f51f8acab7caddd4571d60f7deae795440f02a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 72ef42d63a67cfb4328e0f73897ca6ac3b38e3e4275b9192eddfb14fe8cd2e62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119085"
 ---
 # <a name="d3dxmatrixrotationx-function-d3dx9mathh"></a>Función D3DXMatrixRotationX (D3dx9math.h)
 
@@ -67,7 +67,7 @@ Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) girada alrededor del ej
 
 ## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXMatrixRotationX** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixRotationX** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,11 +1,11 @@
 ---
-title: Propiedad EventTrigger. subscription
-description: En el caso de scripting, obtiene o establece una cadena de consulta que identifica el evento que activa el desencadenador.
+title: Propiedad EventTrigger.Subscription
+description: Para el scripting, obtiene o establece una cadena de consulta que identifica el evento que activa el desencadenador.
 ms.assetid: 31d32426-3dd7-41f9-89cc-b13767871b74
 keywords:
-- Programador de tareas de propiedad de suscripción
-- Propiedad subscription Programador de tareas, objeto EventTrigger
-- Objeto EventTrigger Programador de tareas, propiedad subscription
+- Propiedades de suscripción Programador de tareas
+- Propiedad subscription Programador de tareas , objeto EventTrigger
+- Objeto EventTrigger Programador de tareas , propiedad Subscription
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68ad05576e248d3ad6c2551a8654a9198ca3c0f0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d83225faa022de6e4a0823be3db971c71da503a885a46c1941fc1e5578f711b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100235"
 ---
-# <a name="eventtriggersubscription-property"></a>Propiedad EventTrigger. subscription
+# <a name="eventtriggersubscription-property"></a>Propiedad EventTrigger.Subscription
 
-En el caso de scripting, obtiene o establece una cadena de consulta que identifica el evento que activa el desencadenador.
+Para el scripting, obtiene o establece una cadena de consulta que identifica el evento que activa el desencadenador.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -40,11 +40,11 @@ EventTrigger.Subscription As String
 
 Cadena de consulta que identifica el evento que activa el desencadenador.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir su propio XML para una tarea, la suscripción de eventos se especifica mediante el elemento de [**suscripción**](taskschedulerschema-subscription-eventtriggertype-element.md) del esquema de programador de tareas.
+Al leer o escribir su propio XML para una tarea, la suscripción de eventos se especifica mediante el elemento [**Subscription**](taskschedulerschema-subscription-eventtriggertype-element.md) del Programador de tareas esquema.
 
-Para obtener más información sobre cómo escribir una cadena de consulta para determinados eventos, vea [selección de eventos](/previous-versions//aa385231(v=vs.85)) y [suscripción a eventos](../wes/subscribing-to-events.md).
+Para obtener más información sobre cómo escribir una cadena de consulta para [determinados](../wes/subscribing-to-events.md)eventos, vea [Selección de](/previous-versions//aa385231(v=vs.85)) eventos y Suscripción a eventos .
 
 ## <a name="examples"></a>Ejemplos
 
@@ -67,9 +67,9 @@ La siguiente cadena de consulta define una suscripción a todos los eventos de n
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

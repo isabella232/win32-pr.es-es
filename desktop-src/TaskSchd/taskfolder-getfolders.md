@@ -1,11 +1,11 @@
 ---
-title: Propiedad TaskFolder. GetFolders
-description: En el caso de scripting, obtiene todas las subcarpetas de la carpeta.
+title: Propiedad TaskFolder.GetFolders
+description: Para el scripting, obtiene todas las subcarpetas de la carpeta.
 ms.assetid: eddbae57-9a25-4336-b100-78d525ad9d0b
 keywords:
-- Programador de tareas de la propiedad GetFolders
-- Programador de tareas de la propiedad GetFolders, objeto TaskFolder
-- Programador de tareas de objeto TaskFolder, propiedad GetFolders
+- Propiedad GetFolders Programador de tareas
+- Propiedad GetFolders Programador de tareas , objeto TaskFolder
+- Objeto TaskFolder Programador de tareas , propiedad GetFolders
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4fd1affbf24cc2eaf7b17687a078eedd58e2eae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 35df6188929f2f0355f3060c32b56ca1b1e15f2434fe5175976515258a7cf970
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100085"
 ---
-# <a name="taskfoldergetfolders-property"></a>Propiedad TaskFolder. GetFolders
+# <a name="taskfoldergetfolders-property"></a>Propiedad TaskFolder.GetFolders
 
-En el caso de scripting, obtiene todas las subcarpetas de la carpeta.
+Para el scripting, obtiene todas las subcarpetas de la carpeta.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -47,9 +47,9 @@ TaskFolder.GetFolders( _
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -1,21 +1,21 @@
 ---
 description: En este tema se describen los detalles internos de cómo el solucionador de origen crea un origen multimedia.
 ms.assetid: b0113527-f22c-4519-b1cf-fea54bff4090
-title: Controladores de esquema y Byte-Stream de esquema
+title: Controladores de esquemas y Byte-Stream de esquema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc7bde81a02762cd9c82e0a7d031582c856da6984ab231775580ddf249caca23
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f5cbb2ee0af93e456e86b6eab16ff44705f5380
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118058239"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881776"
 ---
-# <a name="scheme-handlers-and-byte-stream-handlers"></a>Controladores de esquema y Byte-Stream de esquema
+# <a name="scheme-handlers-and-byte-stream-handlers"></a>Controladores de esquemas y Byte-Stream de esquema
 
-En este tema se describen los detalles internos de cómo el solucionador de origen crea un origen multimedia. Lea este tema si va a implementar un origen multimedia personalizado para Media Foundation y desea que el origen multimedia esté disponible para las aplicaciones a través de la resolución de origen.
+En este tema se describen los detalles internos de cómo el solucionador de origen crea un origen multimedia. Lea este tema si va a implementar un origen multimedia personalizado para Media Foundation y desea que el origen de medios esté disponible para las aplicaciones a través de la resolución de origen.
 
-El solucionador de origen puede crear un origen multimedia a partir de una dirección URL o de una secuencia de bytes (es decir, un [**puntero IMFByteStream).**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) Para ello, usa objetos auxiliares *denominados controladores*. Para las direcciones URL, el solucionador de origen usa *controladores de esquema*. En el caso de las secuencias de bytes, usa *controladores de flujo de bytes*.
+El solucionador de origen puede crear un origen multimedia a partir de una dirección URL o de una secuencia de bytes (es decir, un [**puntero IMFByteStream).**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) Para ello, usa objetos auxiliares *denominados controladores*. Para las direcciones URL, el solucionador de origen usa *controladores de esquema*. Para las secuencias de bytes, usa *controladores de flujo de bytes*.
 
 Un controlador de esquema toma una dirección URL como entrada y crea un origen multimedia o una secuencia de bytes. Si crea una secuencia de bytes, el solucionador de origen lo pasará a un controlador de flujo de bytes, que crea el origen multimedia. En la imagen siguiente se muestra este proceso.
 
@@ -47,7 +47,7 @@ HKEY_LOCAL_MACHINE
                   {00000000-0000-0000-0000-000000000000} = REG_SZ
 ```
 
-donde *<scheme>* es el esquema de dirección URL que el controlador está diseñado para analizar. El esquema incluye el carácter final ":"; por ejemplo, "http:".
+donde *&lt; scheme &gt;* es el esquema de dirección URL que el controlador está diseñado para analizar. El esquema incluye el carácter ":" final; por ejemplo, "http:".
 
 Para registrar un nuevo controlador de esquema, agregue una entrada cuyo nombre sea el CLSID del controlador de esquema, en forma de cadena canónica: `{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}` . El valor de la entrada es una cadena (REG SZ) que contiene una breve descripción del controlador, como \_ "Mi controlador de esquema". La parte importante de la entrada es el CLSID. La resolución de origen crea el controlador mediante una llamada **a CoCreateInstance** con este CLSID.
 
@@ -56,7 +56,7 @@ Los controladores de esquema exponen la [**interfaz IMFSchemeHandler.**](/window
 -   Cree un origen multimedia.
 -   Cree una secuencia de bytes.
 
-Si crea un origen multimedia, el solucionador de origen devuelve el origen de medios a la aplicación. Si crea una secuencia de bytes, el solucionador de origen intenta encontrar un controlador de flujo de bytes adecuado, como se describe en la sección siguiente.
+Si crea un origen multimedia, la resolución de origen devuelve el origen de medios a la aplicación. Si crea una secuencia de bytes, el solucionador de origen intenta encontrar un controlador de flujo de bytes adecuado, como se describe en la sección siguiente.
 
 ## <a name="byte-stream-handlers"></a>Byte-Stream controladores
 
@@ -84,7 +84,7 @@ HKEY_LOCAL_MACHINE
                   {00000000-0000-0000-0000-000000000000} = REG_SZ
 ```
 
-donde *<ExtensionOrMimeType>* es la extensión de nombre de archivo o el tipo MIME. Las extensiones de archivo incluyen el carácter inicial "."; por ejemplo, ".wmv".
+donde *&lt; ExtensionOrMimeType es &gt;* la extensión de nombre de archivo o el tipo MIME. Las extensiones de archivo incluyen el carácter inicial "."; por ejemplo, ".wmv".
 
 La extensión de nombre de archivo forma parte de la dirección URL proporcionada por la aplicación. El tipo MIME puede estar disponible a través del atributo [**MF \_ BYTESTREAM \_ CONTENT \_ TYPE**](mf-bytestream-content-type-attribute.md) en la secuencia de bytes.
 

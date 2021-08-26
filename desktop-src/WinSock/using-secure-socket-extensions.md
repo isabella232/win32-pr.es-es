@@ -1,19 +1,19 @@
 ---
-description: Uso de extensiones de socket seguras
+description: Uso de extensiones de sockets seguros
 ms.assetid: d5e2f9d0-c61f-42d3-b62b-6c75b221ae24
-title: Uso de extensiones de socket seguras
+title: Uso de extensiones de sockets seguros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d8a9abf9f3e9feee9e47a9925de08e49c66e821
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ad8c9569631303c2b9cc12d3e70b4c5483d461a5d60d8810033ffd49be5743c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121175"
 ---
-# <a name="using-secure-socket-extensions"></a>Uso de extensiones de socket seguras
+# <a name="using-secure-socket-extensions"></a>Uso de extensiones de sockets seguros
 
-En el ejemplo de código siguiente se muestra el uso de las funciones de extensión Winsock Secure Socket.
+En el código de ejemplo siguiente se muestra el uso de las funciones de extensión de socket seguro de Winsock.
 
 ## <a name="securing-a-socket"></a>Protección de un socket
 
@@ -194,7 +194,7 @@ Return Value:
 
 
 
-## <a name="querying-the-security-on-a-socket"></a>Consultar la seguridad en un socket
+## <a name="querying-the-security-on-a-socket"></a>Consulta de la seguridad en un socket
 
 
 ```C++
@@ -282,13 +282,13 @@ int QueryTcpSocketSecurity(IN SOCKET sock)
 
 <dl> <dt>
 
-[Acerca de la plataforma de filtrado de Windows](../fwp/about-windows-filtering-platform.md)
+[Acerca de Windows de filtrado de datos](../fwp/about-windows-filtering-platform.md)
 </dt> <dt>
 
-[Ejemplos avanzados de Winsock con extensiones de socket seguras](advanced-winsock-samples-using-secure-socket-extensions.md)
+[Ejemplos avanzados de Winsock mediante extensiones de sockets seguros](advanced-winsock-samples-using-secure-socket-extensions.md)
 </dt> <dt>
 
-[Aplicación del nivel de aplicación (ALE)](../fwp/application-layer-enforcement--ale-.md)
+[Aplicación de la capa de aplicación (ALE)](../fwp/application-layer-enforcement--ale-.md)
 </dt> <dt>
 
 [Configuración de IPsec](../fwp/ipsec-configuration.md)
@@ -303,10 +303,10 @@ int QueryTcpSocketSecurity(IN SOCKET sock)
 [Plataforma de filtrado de Windows](../fwp/windows-filtering-platform-start-page.md)
 </dt> <dt>
 
-[Funciones de la API de la plataforma de filtrado de Windows](../fwp/fwp-functions.md)
+[Windows Filtrado de funciones de API de plataforma](../fwp/fwp-functions.md)
 </dt> <dt>
 
-[Extensiones Winsock Secure Socket](winsock-secure-socket-extensions.md)
+[Extensiones de socket seguro de Winsock](winsock-secure-socket-extensions.md)
 </dt> </dl>
 
  

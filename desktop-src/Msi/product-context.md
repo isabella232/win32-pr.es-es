@@ -1,7 +1,7 @@
 ---
-description: La propiedad de contexto devuelve el contexto de este producto.
+description: La propiedad Context devuelve el contexto de este producto.
 ms.assetid: aa772a95-eb4e-45af-9788-9833d62139e8
-title: Propiedad product. Context
+title: Propiedad Product.Context
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 8334ca57d552681afeb77d0b213eca8b92bc1234
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 21fb23a595b1f479f2468f0006cca7cd9218de03fc2cc76b794caae79ea45a24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129125"
 ---
-# <a name="productcontext-property"></a>Propiedad product. Context
+# <a name="productcontext-property"></a>Propiedad Product.Context
 
-La propiedad de **contexto** devuelve el contexto de este producto.
+La **propiedad Context** devuelve el contexto de este producto.
 
 Esta propiedad es de solo lectura.
 
@@ -37,17 +37,17 @@ propVal = Product.Context
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad puede devolver uno de los valores siguientes.
+Esta propiedad puede devolver uno de los siguientes valores.
 
 
 
 | Context                        | Value | Significado                           |
 |--------------------------------|-------|-----------------------------------|
 | MSIINSTALLCONTEXT \_ USERMANAGED | 1     | Productos en contexto administrado.   |
-| \_usuario MSIINSTALLCONTEXT        | 2     | Productos en contexto no administrado. |
-| \_máquina MSIINSTALLCONTEXT     | 4     | Productos en contexto del equipo.   |
+| MSIINSTALLCONTEXT \_ USER        | 2     | Productos en contexto no administrado. |
+| MÁQUINA \_ MSIINSTALLCONTEXT     | 4     | Productos en el contexto de la máquina.   |
 
 
 
@@ -59,9 +59,9 @@ Esta propiedad puede devolver uno de los valores siguientes.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer 3,0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID \_ IProduct se define como 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
+| IID<br/>     | IID IProduct se define como \_ 000C10A0-0000-0000-C000-00000000046<br/>                                                                                                                                                                                                          |
 
 
 
@@ -69,10 +69,10 @@ Esta propiedad puede devolver uno de los valores siguientes.
 
 <dl> <dt>
 
-[**Manuales**](product-object.md)
+[**Producto**](product-object.md)
 </dt> <dt>
 
-[No se admite en Windows Installer 2,0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
+[No se admite en Windows Installer 2.0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

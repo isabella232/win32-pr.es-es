@@ -1,7 +1,7 @@
 ---
-description: 'El método GetCurrentPosition recupera la posición actual, en relación con la duración total de la secuencia. Este método implementa el método IMediaSeeking:: GetCurrentPosition.'
+description: El método GetCurrentPosition recupera la posición actual, en relación con la duración total de la secuencia. Este método implementa el método IMediaSeeking::GetCurrentPosition.
 ms.assetid: 07020182-2199-4153-9bab-f30d112bc09f
-title: Método CPosPassThru. GetCurrentPosition (Ctlutil. h)
+title: Método CPosPassThru.GetCurrentPosition (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5cdbd93edf7630499f6585fbbf6e34a70bed68c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a43477d019639b4e1de5c2aa40f18c99f7b902498c671f8106d5832c43b11584
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084165"
 ---
-# <a name="cpospassthrugetcurrentposition-method"></a>CPosPassThru. GetCurrentPosition, método
+# <a name="cpospassthrugetcurrentposition-method"></a>Método CPosPassThru.GetCurrentPosition
 
-El `GetCurrentPosition` método recupera la posición actual, en relación con la duración total de la secuencia. Este método implementa el método [**IMediaSeeking:: GetCurrentPosition**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcurrentposition) .
+El `GetCurrentPosition` método recupera la posición actual, en relación con la duración total de la secuencia. Este método implementa el [**método IMediaSeeking::GetCurrentPosition.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcurrentposition)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,25 +51,25 @@ Puntero a una variable que recibe la posición actual, en unidades del formato d
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                               | Descripción                           |
 |-------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | Correcto.<br/>                   |
-| <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | No se admite el método.<br/>   |
-| <dl> <dt>**\_puntero E**</dt> </dl> | Argumento de puntero **nulo** .<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Correcto.<br/>                   |
+| <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | No se admite el método .<br/>   |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | **Argumento de** puntero NULL.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método llama al método [**CPosPassThru:: GetMediaTime**](cpospassthru-getmediatime.md) para recuperar la posición más reciente. Si se produce un error en **GetMediaTime** , el método llama a **IMediaSeeking:: GetCurrentPosition** en el PIN conectado.
+Este método llama al [**método CPosPassThru::GetMediaTime**](cpospassthru-getmediatime.md) para recuperar la posición más reciente. Si se produce un error **en GetMediaTime,** el método llama a **IMediaSeeking::GetCurrentPosition** en el pin conectado.
 
-De forma predeterminada, se produce un error en el método **GetMediaTime** en la clase base. Si el filtro almacena en caché la posición actual, invalide **GetMediaTime** para devolver el valor almacenado en caché.
+El **método GetMediaTime** produce un error de forma predeterminada en la clase base. Si el filtro almacena en caché la posición actual, invalide **GetMediaTime** para devolver el valor almacenado en caché.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,8 +77,8 @@ De forma predeterminada, se produce un error en el método **GetMediaTime** en l
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ De forma predeterminada, se produce un error en el método **GetMediaTime** en l
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> </dl>
 
  

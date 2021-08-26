@@ -1,5 +1,5 @@
 ---
-description: Se usa en los métodos GetSummaryInformation y GetDefinitionFileSummaryInformation de la clase Msvm VirtualSystemManagementService para recuperar rápidamente información común relacionada con una máquina virtual o \_ instantánea.
+description: Se usa en los métodos GetSummaryInformation y GetDefinitionFileSummaryInformation de la clase Msvm VirtualSystemManagementService para recuperar rápidamente información común relacionada con una máquina virtual o una \_ instantánea.
 ms.assetid: 8D188BB2-4A56-4738-94DD-64D9F9B90B73
 title: Msvm_SummaryInformation clase
 ms.topic: reference
@@ -55,16 +55,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4af759cf621f5afbaef90924351ad24a232889b1d81048f0e1372630c74f98f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f7cefc27c0e4adc507276d118bcca95c274d121
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950094"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886605"
 ---
 # <a name="msvm_summaryinformation-class"></a>Clase Msvm \_ SummaryInformation
 
-Se usa en los [**métodos GetSummaryInformation**](getsummaryinformation-msvm-virtualsystemmanagementservice.md) y [**GetDefinitionFileSummaryInformation**](getdefinitionfilesummaryinformation-msvm-virtualsystemmanagementservice.md) de la clase [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) para recuperar rápidamente información común relacionada con una máquina virtual o instantánea.
+Se usa en [**los métodos GetSummaryInformation**](getsummaryinformation-msvm-virtualsystemmanagementservice.md) y [**GetDefinitionFileSummaryInformation**](getdefinitionfilesummaryinformation-msvm-virtualsystemmanagementservice.md) de la clase [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) para recuperar rápidamente información común relacionada con una máquina virtual o una instantánea.
 
 La sintaxis siguiente se simplifica Managed Object Format (MOF).
 
@@ -121,13 +121,13 @@ class Msvm_SummaryInformation : Msvm_SummaryInformationBase
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ SummaryInformation de Msvm** tiene estos tipos de miembros:
+La **clase Msvm \_ SummaryInformation** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ SummaryInformation de Msvm** tiene estas propiedades.
+La **clase Msvm \_ SummaryInformation** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -153,7 +153,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual de mantenimiento de la aplicación para la máquina virtual. Esta propiedad no es válida para las instancias de **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
+Estado actual de mantenimiento de la aplicación para la máquina virtual. Esta propiedad no es válida para las instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
 
 <dt>
 
@@ -192,7 +192,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Matriz de [**instancias de \_ Msvm ConcreteJob**](msvm-concretejob.md) que representan cualquier operación asincrónica relacionada con la máquina virtual que se está ejecutando actualmente. Esta propiedad no es válida para las instancias de **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
+Matriz de [**instancias de Msvm \_ ConcreteJob**](msvm-concretejob.md) que representan cualquier operación asincrónica relacionada con la máquina virtual que se está ejecutando actualmente. Esta propiedad no es válida para las instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
 
 </dd> <dt>
 
@@ -205,11 +205,11 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Porcentaje de búfer de memoria disponible para la máquina virtual. Cuando la memoria dinámica está habilitada para una máquina virtual, esta propiedad representa la proporción del búfer de memoria disponible con el búfer de memoria ideal para la máquina virtual. El tamaño de búfer de memoria ideal se configura mediante la **propiedad TargetMemoryBuffer** de la [**clase \_ MemorySettingData de Msvm.**](msvm-memorysettingdata.md)
+Porcentaje de búfer de memoria disponible para la máquina virtual. Cuando la memoria dinámica está habilitada para una máquina virtual, esta propiedad representa la proporción del búfer de memoria disponible con el búfer de memoria ideal para la máquina virtual. El tamaño de búfer de memoria ideal se configura mediante la **propiedad TargetMemoryBuffer** de la clase [**\_ MemorySettingData de Msvm.**](msvm-memorysettingdata.md)
 
-Esta propiedad no es válida para las instancias de la clase **\_ SummaryInformation de Msvm** que representan máquinas virtuales para las que no está habilitada la memoria dinámica.
+Esta propiedad no es válida para las instancias de la clase **\_ Msvm SummaryInformation** que representan máquinas virtuales para las que no está habilitada la memoria dinámica.
 
-Esta propiedad no es válida para las instancias de la clase **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
+Esta propiedad no es válida para las instancias de la clase **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
 
 </dd> <dt>
 
@@ -299,7 +299,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del sistema operativo invitado, si está disponible. Si esta información no está disponible, el valor de esta propiedad es **Null.** Esta propiedad no es válida para las instancias de **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
+Nombre del sistema operativo invitado, si está disponible. Si esta información no está disponible, el valor de esta propiedad es **Null.** Esta propiedad no es válida para las instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
 
 </dd> <dt>
 
@@ -312,7 +312,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado de mantenimiento actual de la máquina virtual. Esta propiedad no es válida para las instancias de **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
+Estado de mantenimiento actual de la máquina virtual. Esta propiedad no es válida para las instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
 
 </dd> <dt>
 
@@ -325,7 +325,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del latido de la máquina virtual. Para obtener más información, vea la documentación de la [**propiedad StatusDescriptions**](msvm-heartbeatcomponent.md) de la **clase \_ HeartbeatComponent de Msvm.** Esta propiedad no es válida para las instancias de **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
+Estado actual del latido de la máquina virtual. Para obtener más información, vea la documentación de la [**propiedad StatusDescriptions**](msvm-heartbeatcomponent.md) de la **clase \_ HeartbeatComponent de Msvm.** Esta propiedad no es válida para las instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
 
 <dl> <dt>
 
@@ -370,20 +370,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ ManagedElement.InstanceID"), [**Clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ ManagedElement.InstanceID"), [**Key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-InstanceID es una propiedad opcional que se puede usar para identificar de forma opaca e inequívoca una instancia de esta clase dentro del ámbito del espacio de nombres de creación de instancias. Varias subclases de esta clase pueden invalidar esta propiedad para que sea necesaria o una clave. Estas subclases también pueden modificar los algoritmos preferidos para garantizar la unidad que se definen a continuación.
+InstanceID es una propiedad opcional que se puede usar para identificar de forma opaca e inequívoca una instancia de esta clase dentro del ámbito del espacio de nombres de creación de instancias. Varias subclases de esta clase pueden invalidar esta propiedad para que sea necesaria o una clave. Estas subclases también pueden modificar los algoritmos preferidos para garantizar la unidad que se define a continuación.
 
-Para garantizar la unidad dentro del Espacio de nombres, el valor de InstanceID debe construirse mediante el siguiente algoritmo "preferido":
+Para garantizar la unidad dentro de NameSpace, el valor de InstanceID debe construirse con el siguiente algoritmo "preferido":
 
-<OrgID>:<LocalID>
+&lt;&gt;OrgID: &lt; LocalID&gt;
 
-Donde y están separados por dos puntos (:), y donde deben incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial que crea o define el InstanceID o que es un identificador registrado asignado a la entidad empresarial por una autoridad <OrgID> <LocalID> global <OrgID> reconocida. (Este requisito es similar al <Schema Name> \_ <Class Name> estructura de nombres de clase de esquema). Además, para garantizar la unidad, <OrgID> no debe contener dos puntos (:). Cuando se usa este algoritmo, los primeros dos puntos que aparecen en InstanceID deben aparecer entre <OrgID> y <LocalID> .
+Donde OrgID y LocalID están separados por dos puntos (:) y donde OrgID debe incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial que crea o define instanceID o que es un identificador registrado asignado a la entidad empresarial por una autoridad &lt; &gt; global &lt; &gt; &lt; &gt; reconocida. (Este requisito es similar al <Schema Name> \_ <Class Name> estructura de los nombres de clase de esquema). Además, para garantizar la unidad, OrgID no debe contener dos puntos &lt; &gt; (:). Al usar este algoritmo, los primeros dos puntos que aparecen en InstanceID deben aparecer entre &lt; OrgID &gt; y &lt; &gt; LocalID.
 
-<LocalID> la entidad empresarial elige y no debe reutilizarse para identificar diferentes elementos subyacentes (reales). Si no es NULL y no se usa el algoritmo "preferido" anterior, la entidad de definición debe asegurarse de que el InstanceID resultante no se reutiliza en ningún instanceID generado por este u otros proveedores para el Espacio de nombres de esta instancia.
+&lt;La entidad de negocio elige LocalID y no debe reutilizarse para identificar diferentes &gt; elementos subyacentes (reales). Si no es NULL y no se usa el algoritmo "preferido" anterior, la entidad de definición debe asegurarse de que el InstanceID resultante no se reutiliza en ningún InstanceID generado por este u otros proveedores para nameSpace de esta instancia.
 
-Si no se establece en null para las instancias definidas por DMTF, el algoritmo "preferido" debe usarse con <OrgID> el establecido en CIM.
+Si no se establece en NULL para las instancias definidas por DMTF, el algoritmo "preferido" debe usarse con &lt; el OrgID &gt; establecido en CIM.
 
 > [!Note]  
 > Se ha agregado en Windows 10.
@@ -439,9 +439,9 @@ Tipo de acceso: solo lectura
 
 Porcentaje de la memoria actual disponible para la máquina virtual. Cuando la memoria dinámica está habilitada para una máquina virtual, esta propiedad representa la proporción de memoria disponible de la máquina virtual con la memoria física total asignada a la máquina virtual. Cuando una máquina virtual no tiene memoria disponible, esta propiedad será negativa y contendrá la proporción de memoria necesaria para la máquina virtual con la memoria física total asignada a la máquina virtual.
 
-Esta propiedad no es válida para las instancias de la clase **\_ Msvm SummaryInformation** que representan máquinas virtuales para las que no está habilitada la memoria dinámica.
+Esta propiedad no es válida para las instancias de la clase **\_ SummaryInformation de Msvm** que representan máquinas virtuales para las que no está habilitada la memoria dinámica.
 
-Esta propiedad no es válida para las instancias de la clase **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
+Esta propiedad no es válida para las instancias de la clase **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
 
 </dd> <dt>
 
@@ -454,7 +454,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la memoria de uno o varios de los nodos de acceso a memoria virtual no uniforme (NUMA) de la máquina virtual abarca varios nodos NUMA físicos del sistema de equipo host. Contiene **True si** la memoria abarca varios nodos NUMA físicos o **False** en caso contrario.
+Indica si la memoria de uno o varios de los nodos de acceso a memoria no uniforme virtual (NUMA) de la máquina virtual abarca varios nodos NUMA físicos del sistema del equipo host. Contiene **True si** la memoria abarca varios nodos NUMA físicos o **False** en caso contrario.
 
 </dd> <dt>
 
@@ -467,7 +467,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El uso actual de memoria, en megabytes, de la máquina virtual. Esta propiedad no es válida para las instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
+El uso de memoria actual, en megabytes, de la máquina virtual. Esta propiedad no es válida para las instancias de **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
 
 </dd> <dt>
 
@@ -548,7 +548,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El uso actual del procesador de la máquina virtual, en porcentaje. Esta propiedad no es válida para las instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
+El uso actual del procesador de la máquina virtual, en porcentaje. Esta propiedad no es válida para las instancias de **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
 
 </dd> <dt>
 
@@ -564,7 +564,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Matriz de los 100 ejemplos anteriores del uso del procesador, en porcentaje, para la máquina virtual. Esta propiedad no es válida para las instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
+Matriz de los 100 ejemplos anteriores del uso del procesador, en porcentaje, para la máquina virtual. Esta propiedad no es válida para las instancias de **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
 
 </dd> <dt>
 
@@ -580,7 +580,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**Msvm \_ SummaryInformation**.**ReplicationHealthEx**")
 </dt> </dl>
 
-El estado de replicación de la máquina virtual. Vea la **propiedad ReplicationHealth** de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) para ver los valores posibles.
+Estado de replicación de la máquina virtual. Vea la **propiedad ReplicationHealth** de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) para ver los valores posibles.
 
 > [!Note]  
 > Esta propiedad está en desuso a partir de Windows 8.1; en su lugar, use **ReplicationHealthEx**.
@@ -598,7 +598,7 @@ El estado de replicación de la máquina virtual. Vea la **propiedad Replication
 
 <span id="Ok"></span><span id="ok"></span><span id="OK"></span>
 
-**Ok** (1)
+**Correcto** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -644,7 +644,7 @@ Matriz de valores de mantenimiento de replicación para las distintas relaciones
 
 <span id="Ok"></span><span id="ok"></span><span id="OK"></span>
 
-**Ok** (1)
+**Correcto** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -674,7 +674,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de replicación de la máquina virtual. Vea la **propiedad ReplicationMode** de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) para ver los valores posibles.
+Tipo de replicación de la máquina virtual. Vea la **propiedad ReplicationMode** de la [**clase \_ ComputerSystem de Msvm**](msvm-computersystem.md) para ver los valores posibles.
 
 <dt>
 
@@ -727,7 +727,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Para la máquina virtual de réplica principal o extendida, este es el identificador del proveedor de replicación principal. Para una máquina virtual de réplica y si la replicación extendida está habilitada, este es el identificador del proveedor para la relación extendida.
+Para la máquina virtual de réplica principal o extendida, este es el identificador del proveedor de replicación principal. Para una máquina virtual de réplica y si la replicación extendida está habilitada, este es el identificador de proveedor para la relación extendida.
 
 **Windows 8.1:** Este valor no se admite hasta Windows 8.1 y Windows Server 2012 R2.
 
@@ -742,13 +742,13 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**Msvm \_ SummaryInformation**.**ReplicationStateEx**")
+Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**Msvm \_ SummaryInformation**.**ReplicationStateEx**")
 </dt> </dl>
 
 Estado de replicación de la máquina virtual. Vea la **propiedad ReplicationState** de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) para ver los valores posibles.
 
 > [!Note]  
-> Esta propiedad está en desuso a partir de Windows 8.1; en su lugar, use **ReplicationStateEx.**
+> Esta propiedad está en desuso a partir de Windows 8.1; en su lugar, use **ReplicationStateEx**.
 
  
 
@@ -763,7 +763,7 @@ Estado de replicación de la máquina virtual. Vea la **propiedad ReplicationSta
 
 <span id="Ready_for_replication"></span><span id="ready_for_replication"></span><span id="READY_FOR_REPLICATION"></span>
 
-**Listo para replicación** (1)
+**Listo para la replicación** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -872,7 +872,7 @@ Matriz de valores de estado de replicación para las distintas relaciones de rep
 
 <span id="Ready_for_replication"></span><span id="ready_for_replication"></span><span id="READY_FOR_REPLICATION"></span>
 
-<span id="Ready_for_replication"></span><span id="ready_for_replication"></span><span id="READY_FOR_REPLICATION"></span>**Listo para replicación** (1)
+<span id="Ready_for_replication"></span><span id="ready_for_replication"></span><span id="READY_FOR_REPLICATION"></span>**Listo para la replicación** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -963,7 +963,7 @@ Matriz de valores de estado de replicación para las distintas relaciones de rep
 
 <span id="Failback_complete"></span><span id="failback_complete"></span><span id="FAILBACK_COMPLETE"></span>
 
-<span id="Failback_complete"></span><span id="failback_complete"></span><span id="FAILBACK_COMPLETE"></span>**Conmutación por recuperación completada** (14)
+<span id="Failback_complete"></span><span id="failback_complete"></span><span id="FAILBACK_COMPLETE"></span>**Conmutación por recuperación completa** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -1012,7 +1012,7 @@ Matriz de valores de estado de replicación para las distintas relaciones de rep
 
 <span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>
 
-<span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>**Reasignación de la replicación en curso** (18)
+<span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>**Replicación reasignada en curso** (18)
 
 
 </dt> <dd>
@@ -1098,7 +1098,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Matriz de [**instancias de Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representan las instantáneas de la máquina virtual. Esta propiedad no es válida para las instancias de **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
+Matriz de [**instancias de Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representan las instantáneas de la máquina virtual. Esta propiedad no es válida para instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
 
 </dd> <dt>
 
@@ -1127,7 +1127,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la paginación de segundo nivel está activa. Contiene **True si** la paginación de segundo nivel está activa o False en **caso** contrario.
+Indica si la paginación de segundo nivel está activa. Contiene **True si** la paginación de segundo nivel está activa o False **de** lo contrario.
 
 </dd> <dt>
 
@@ -1140,7 +1140,7 @@ Tipo de datos: **CIM \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia a una [**instancia \_ de ComputerSystem cim**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual de réplica de prueba para la máquina virtual. Esta propiedad no es válida para las instancias de **\_ SummaryInformation de Msvm** que representan una instantánea de máquina virtual.
+Referencia a una [**instancia \_ de ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) de CIM que representa la máquina virtual de réplica de prueba para la máquina virtual. Esta propiedad no es válida para instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
 
 </dd> <dt>
 
@@ -1153,10 +1153,10 @@ Tipo de datos: **matriz uint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **OctetString**, [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Msvm \_ SummaryInformation**.**ThumbnailImageWidth**", "**Msvm \_ SummaryInformation**.**ThumbnailImageHeight**")
+Calificadores: **OctetString**, [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Msvm \_ SummaryInformation**.**ThumbnailImageWidth",**"**Msvm \_ SummaryInformation**.**ThumbnailImageHeight**")
 </dt> </dl>
 
-Matriz que contiene una imagen pequeña de tamaño miniatura del escritorio para la máquina virtual o la instantánea en formato RGB565.
+Matriz que contiene una imagen pequeña de tamaño miniatura del escritorio para la máquina virtual o instantánea en formato RGB565.
 
 </dd> <dt>
 
@@ -1211,7 +1211,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La cantidad de tiempo desde que la máquina virtual se arranque por última vez. Esta propiedad no es válida para las instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
+Cantidad de tiempo desde la última vez que se arranque la máquina virtual. Esta propiedad no es válida para instancias de **Msvm \_ SummaryInformation** que representan una instantánea de máquina virtual.
 
 </dd> <dt>
 
@@ -1290,7 +1290,7 @@ El acceso a **la clase \_ SummaryInformation de Msvm** puede estar restringido p
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |

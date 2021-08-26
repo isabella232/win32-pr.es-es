@@ -5,12 +5,12 @@ ms.assetid: 489d3613-177f-4045-a055-2c1577ef2191
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef0f3a40b3404441df40434c7ddb2f1bb6ac578caaf182c14d2825c6f99e7f9d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 771a70758a57134cdaabd8a9a72e3ad43c8bb890
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997975"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887285"
 ---
 # <a name="creating-a-source-initiated-subscription"></a>Creación de una suscripción iniciada por el origen
 
@@ -20,7 +20,7 @@ En el ejemplo de código siguiente se siguen una serie de pasos para crear una s
 
 **Para crear mediante programación una suscripción iniciada por el origen**
 
-1.  Abra la suscripción proporcionando el nombre de la suscripción y los derechos de acceso como parámetros para la [**función EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obtener más información sobre los derechos de acceso, [**vea Windows Event Collector Constants**](windows-event-collector-constants.md).
+1.  Abra la suscripción proporcionando el nombre de la suscripción y los derechos de acceso como parámetros para la [**función EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obtener más información sobre los derechos de acceso, vea Windows event collector constants (Constantes [**del recopilador de eventos).**](windows-event-collector-constants.md)
 2.  Establezca las propiedades de la suscripción mediante una llamada a la [**función EcSetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetsubscriptionproperty) Para obtener más información sobre las propiedades de suscripción que se pueden establecer, vea la [**\_ enumeración EC SUBSCRIPTION \_ PROPERTY \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
 3.  Guarde la suscripción mediante una llamada a [**la función EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
 4.  Cierre la suscripción mediante una llamada a la [**función EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
@@ -419,12 +419,12 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 
     1.  Ejecute el siguiente comando desde un símbolo del sistema con privilegios elevados para obtener el estado de tiempo de ejecución de la suscripción:
 
-        **wecutil gr***<subscriptionID>*
+        **wecutil gr** *&lt; subscriptionID &gt;*
 
     2.  Compruebe que el origen del evento se ha conectado. Es posible que tenga que esperar hasta que el intervalo de actualización especificado en la directiva haya terminado después de crear la suscripción para que se conecte el origen del evento.
     3.  Ejecute el siguiente comando para obtener la información de la suscripción:
 
-        **wecutil gs***<subscriptionID>*
+        **wecutil gs** *&lt; subscriptionID &gt;*
 
     4.  Obtenga el valor DeliveryMaxItems de la información de la suscripción.
 

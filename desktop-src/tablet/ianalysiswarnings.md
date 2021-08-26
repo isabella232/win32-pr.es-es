@@ -1,7 +1,7 @@
 ---
-description: Contiene una colección de objetos que implementan la interfaz IAnalysisWarning y que son el resultado de una operación de análisis de tinta.
+description: Contiene una colección de objetos que implementan la interfaz IAnalysisWarning y que son el resultado de una operación de análisis de entrada de lápiz.
 ms.assetid: 2118c18b-d316-4e91-8652-62969115e8b5
-title: Interfaz IAnalysisWarnings (IACom. h)
+title: Interfaz IAnalysisWarnings (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 938d406ea90d86cc05ac84b69304b7a85e0e54fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a14e11400c6af564ccab86fc08746b8185fefba98aa472544981534b902f8ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057955"
 ---
 # <a name="ianalysiswarnings-interface"></a>Interfaz IAnalysisWarnings
 
-Contiene una colección de objetos que implementan la interfaz [**IAnalysisWarning**](ianalysiswarning.md) y que son el resultado de una operación de análisis de tinta.
+Contiene una colección de objetos que implementan la [**interfaz IAnalysisWarning**](ianalysiswarning.md) y que son el resultado de una operación de análisis de entrada de lápiz.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IAnalysisWarnings** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IAnalysisWarnings** también tiene estos tipos de miembros:
+La **interfaz IAnalysisWarnings** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IAnalysisWarnings** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IAnalysisWarnings** tiene estos métodos.
+La **interfaz IAnalysisWarnings** tiene estos métodos.
 
 
 
 | Método                                                             | Descripción                                                                                                                                |
 |:-------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetAnalysisWarning**](ianalysiswarnings-getanalysiswarning.md) | Recupera el objeto [**IAnalysisWarning**](ianalysiswarning.md) en el índice especificado.<br/>                                       |
-| [**GetCount**](ianalysiswarnings-getcount.md)                     | Recupera el número de objetos [**IAnalysisWarning**](ianalysiswarning.md) contenidos en la colección **IAnalysisWarnings** .<br/> |
+| [**GetAnalysisWarning**](ianalysiswarnings-getanalysiswarning.md) | Recupera el [**objeto IAnalysisWarning**](ianalysiswarning.md) en el índice especificado.<br/>                                       |
+| [**GetCount**](ianalysiswarnings-getcount.md)                     | Recupera el número de [**objetos IAnalysisWarning**](ianalysiswarning.md) contenidos en la **colección IAnalysisWarnings.**<br/> |
 
 
 
@@ -47,7 +47,7 @@ La interfaz **IAnalysisWarnings** tiene estos métodos.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el evento [**\_ IAnalysisEvents:: Results**](-ianalysisevents-results.md) . El controlador comprueba [**IAnalysisStatus:: IsSuccessful**](ianalysisstatus-issuccessful.md). Si la operación de análisis generó advertencias, el controlador recorre en iteración la colección de objetos [**IAnalysisWarning**](ianalysiswarning.md) .
+En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el [**\_ evento IAnalysisEvents::Results.**](-ianalysisevents-results.md) El controlador comprueba [**IAnalysisStatus::IsSuccessful.**](ianalysisstatus-issuccessful.md) Si la operación de análisis genera advertencias, el controlador recorre en iteración la colección de [**objetos IAnalysisWarning.**](ianalysiswarning.md)
 
 
 ```C++
@@ -134,9 +134,9 @@ STDMETHODIMP CMyClass::Results(
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -151,7 +151,7 @@ STDMETHODIMP CMyClass::Results(
 [**IAnalysisWarning**](ianalysiswarning.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: Importar la clave pública de los controladores
+description: Importar la clave pública de controladores
 ms.assetid: 9bab0e43-6e9f-4cdb-bfd0-cdafcc12d526
-title: Importar la clave pública de los controladores
+title: Importar la clave pública de controladores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 222b9c62bd9babe0a01a0e6a9b3a50747ab3b039
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: eebaa4d2d6b5de54eec5ef40070c5ecfb805494a2e937cbbc709f4e44656f55f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042863"
 ---
-# <a name="importing-the-drivers-public-key"></a>Importar la clave pública de los controladores
+# <a name="importing-the-drivers-public-key"></a>Importar la clave pública de controladores
 
-La clave pública RSA del controlador se encuentra en las etiquetas de módulo y exponente del nodo hoja del certificado. Ambos valores están codificados en Base64 y deben descodificarse. Si usa CryptoAPI de Microsoft, debe importar la clave en un proveedor de servicios criptográficos (CSP), que es el módulo que implementa los algoritmos criptográficos.
+La clave pública RSA del controlador se encuentra en las etiquetas Modulus y Exponent del nodo hoja del certificado. Ambos valores están codificados en base64 y deben descodificarse. Si usa CryptoAPI de Microsoft, debe importar la clave en un proveedor de servicios criptográficos (CSP), que es el módulo que implementa los algoritmos criptográficos.
 
-Para convertir el módulo y los exponentes de la codificación Base64 a matrices binarias, utilice la función **CryptStringToBinary** , tal como se muestra en el código siguiente. Llame una vez a la función para obtener el tamaño de la matriz de bytes. A continuación, asigne el búfer y vuelva a llamar a la función.
+Para convertir el módulo y los exponentes de la codificación base64 en matrices binarias, use la función **CryptStringToBinary,** como se muestra en el código siguiente. Llame a la función una vez para obtener el tamaño de la matriz de bytes. A continuación, asigne el búfer y vuelva a llamar a la función.
 
 
 ```C++
@@ -40,9 +40,9 @@ BYTE *pbBuffer = new BYTE [cbLen];
 
 
 
-La matriz codificada en Base64 está en orden big-endian, mientras que la CryptoAPI espera el número en orden Little-endian, por lo que debe intercambiar el orden de bytes de la matriz que se devuelve desde **CryptStringToBinary**. El módulo es de 256 bytes, pero la matriz de bytes descodificada puede ser inferior a 256 bytes. Si es así, deberá asignar una nueva matriz de 256 bytes, copiar los datos en la nueva matriz y rellenar la parte delantera de la matriz con ceros. El exponente es un valor de DWORD (4 bytes).
+La matriz codificada en base64 está en orden big-endian, mientras que CryptoAPI espera el número en orden little-endian, por lo que debe intercambiar el orden de bytes de la matriz que se devuelve de **CryptStringToBinary**. El módulo es de 256 bytes, pero la matriz de bytes descodificada puede ser inferior a 256 bytes. Si es así, tendrá que asignar una nueva matriz de 256 bytes, copiar los datos en la nueva matriz y panel la parte delantera de la matriz con ceros. El exponente es un valor DWORD (4 bytes).
 
-Una vez que tenga los valores de módulo y exponente, puede importar la clave en el proveedor de servicios criptográficos (CSP) predeterminado, tal como se muestra en el código siguiente:
+Una vez que tenga los valores de módulo y exponente, puede importar la clave en el proveedor de servicios criptográficos (CSP) predeterminado, como se muestra en el código siguiente:
 
 
 ```C++
@@ -96,7 +96,7 @@ Ahora puede usar CryptoAPI para cifrar comandos y solicitudes de estado con la c
 
 <dl> <dt>
 
-[Uso del Protocolo de protección de la salida certificada (COPP)](using-certified-output-protection-protocol--copp.md)
+[Uso del Protocolo de protección de salida certificado (COPP)](using-certified-output-protection-protocol--copp.md)
 </dt> </dl>
 
  

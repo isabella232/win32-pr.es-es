@@ -1,80 +1,35 @@
 ---
-description: Filtro de representador de flujo de archivo
+description: Filtro del representador de secuencias de archivos
 ms.assetid: e26462bb-e67f-4522-bec2-88378c4ff442
-title: Filtro de representador de flujo de archivo
+title: Filtro del representador de secuencias de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a64c8d8a0c87dab3aa811c8246be24ded8ee04dc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3da8651d61559a9b22b722f91563426cb067f7a3
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537888"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470570"
 ---
-# <a name="file-stream-renderer-filter"></a>Filtro de representador de flujo de archivo
+# <a name="file-stream-renderer-filter"></a>Filtro del representador de secuencias de archivos
 
-El filtro de representador de secuencia de archivos representa los nombres de archivo que se analizan mediante el filtro del [analizador de varios archivos](multi-file-parser-filter.md) . Para obtener más información, consulte la documentación de ese filtro.
+El filtro Representador de secuencias de archivos representa los nombres de archivo que analiza el filtro [Analizador de varios](multi-file-parser-filter.md) archivos. Para obtener más información, consulte la documentación de ese filtro.
 
-El uso de este filtro está en desuso. Para representar varios archivos en el mismo gráfico de filtros, la aplicación simplemente debe llamar a **RenderFile** o **AddSourceFilter** varias veces.
+El uso de este filtro está en desuso. Para representar varios archivos dentro del mismo gráfico de filtros, la aplicación simplemente debe llamar varias veces a **RenderFile** **o AddSourceFilter.**
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Interfaces de filtro</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a></td>
-</tr>
-<tr class="even">
-<td>Tipos de medios de anclaje de entrada</td>
-<td><ul>
-<li>Tipo principal: MEDIATYPE_File</li>
-<li>Subtipo: GUID_NULL</li>
-<li>Tipo de formato: MEDIATYPE_File</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Interfaces de PIN de entrada</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a></td>
-</tr>
-<tr class="even">
-<td>Tipos de medios de anclaje de salida</td>
-<td>None</td>
-</tr>
-<tr class="odd">
-<td>Interfaces de clavija de salida</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-istreambuilder"><strong>IStreamBuilder</strong></a></td>
-</tr>
-<tr class="even">
-<td>Identificador CLSID</td>
-<td>CLSID_FileRend</td>
-</tr>
-<tr class="odd">
-<td>Executable</td>
-<td>Quartz.dll</td>
-</tr>
-<tr class="even">
-<td><a href="merit.md">Fundament</a></td>
-<td>MERIT_UNLIKELY</td>
-</tr>
-<tr class="odd">
-<td><a href="filter-categories.md">Categoría de filtro</a></td>
-<td>CLSID_LegacyAmFilterCategory</td>
-</tr>
-</tbody>
-</table>
+
+| | | Filtrado de interfaces | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a> | | Tipos de medios de pin de entrada | <ul><li>Tipo principal: MEDIATYPE_File</li><li>Subtipo: GUID_NULL</li><li>Tipo de formato: MEDIATYPE_File</li></ul> | | Interfaces de pin de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | | Tipos de medios de pin de salida | Ninguno | | Interfaces de pin de salida | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-istreambuilder"><strong>IStreamBuilder</strong></a> | | Filtrar clsid | CLSID_FileRend | | Archivos ejecutables | Quartz.dll | | <a href="merit.md">|</a> MERIT_UNLIKELY | | <a href="filter-categories.md">Categoría de</a> filtro | CLSID_LegacyAmFilterCategory | 
+
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El CLSID del filtro no está definido en UUID. h. Use esta macro en su propio archivo de encabezado:
+El CLSID del filtro no está definido en Uuids.h. Use esta macro en su propio archivo de encabezado:
 
 
 ```C++
@@ -89,7 +44,7 @@ DEFINE_GUID(CLSID_FileRend,
 
 <dl> <dt>
 
-[Filtros de DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

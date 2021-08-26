@@ -1,11 +1,11 @@
 ---
-title: Tipo de control Ventana
+title: Tipo de control De ventana
 description: En este tema se proporciona información sobre microsoft Automatización de la interfaz de usuario compatibilidad con el tipo de control Window.
 ms.assetid: 521fb514-e083-48b3-b4a0-52c530154740
 keywords:
-- Automatización de la interfaz de usuario,compatibilidad con el tipo de control Window
+- Automatización de la interfaz de usuario, compatibilidad con el tipo de control Ventana
 - Automatización de la interfaz de usuario,tipo de control Window
-- Automatización de la interfaz de usuario,tree structure for Window control type
+- Automatización de la interfaz de usuario,estructura de árbol para el tipo de control Ventana
 - Automatización de la interfaz de usuario,properties para el tipo de control Window
 - Automatización de la interfaz de usuario,patrones de control para el tipo de control Ventana
 - Automatización de la interfaz de usuario,events para el tipo de control Window
@@ -15,20 +15,20 @@ keywords:
 - events,Tipo de control Window
 - compatibilidad con el tipo de control Window
 - Window (tipo de control)
-- tipos de control, estructura de árbol para el tipo de control Ventana
+- tipos de control, estructura de árbol para tipo de control Ventana
 - tipos de control, patrones de control para el tipo de control Ventana
 - tipos de control, compatibilidad con Window
 - tipos de control, Ventana
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a70ae728ded97bb68f3984b6fba323710d3582e984610ad6dec248d8509ea97f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 59486f12545c0dbe6b38e20e29f6df5397cbca21
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118824580"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466422"
 ---
-# <a name="window-control-type"></a>Tipo de control Ventana
+# <a name="window-control-type"></a>Tipo de control De ventana
 
 En este tema se proporciona información sobre microsoft Automatización de la interfaz de usuario compatibilidad con el tipo de control **Window.**
 
@@ -46,32 +46,15 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control típico y una vista de contenido del árbol de Automatización de la interfaz de usuario que pertenece a los controles de ventana y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control típico y una vista de contenido del árbol Automatización de la interfaz de usuario que pertenece a los controles de ventana y se describe lo que se puede incluir en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, [vea información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Vista de control</th>
-<th>Vista de contenido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Periodo</li>
-</ul></td>
-<td><ul>
-<li>Periodo</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Vista de control | Vista de contenido | 
+|--------------|--------------|
+| <ul><li>Periodo</li></ul> | <ul><li>Periodo</li></ul> | 
+
 
 
 
@@ -93,7 +76,7 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 | [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE       | El control de ventana siempre se incluye en la vista de control del Automatización de la interfaz de usuario control.                                                                    |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas. | Si el control puede recibir el foco del teclado, debe admitir esta propiedad.                                                                               |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL       | Los controles de ventana no tienen una etiqueta de ventana estática.                                                                                                      |
-| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas. | Cadena localizada correspondiente al tipo **de** control Ventana. El valor predeterminado es "window" para en-US o Inglés (Estados Unidos).                      |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas. | Cadena localizada correspondiente al tipo **de** control Ventana. El valor predeterminado es "window" para en-US o English (Estados Unidos).                      |
 | [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                                 | Vea las notas. | El control de ventana siempre contiene un elemento de ventana principal que se relaciona con lo que el usuario asociaría como identificador más semántico para el elemento. |
 
 

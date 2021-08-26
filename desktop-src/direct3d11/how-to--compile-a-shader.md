@@ -1,23 +1,23 @@
 ---
 title: Cómo compilar un sombreador
-description: En este tema se muestra cómo usar la función D3DCompileFromFile en tiempo de ejecución para compilar código de sombreador.
+description: En este tema se muestra cómo usar la función D3DCompileFromFile en tiempo de ejecución para compilar el código del sombreador.
 ms.assetid: A2CE368F-E72A-453D-BA4D-3D1D53DDDEE0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bb5eadb1d6627f553a9d769e6a0f43ab3ebe3a9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a0ccda5ee552ed1c7cb40802d92a4562b85c7f36
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792700"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880661"
 ---
-# <a name="how-to-compile-a-shader"></a>Cómo: compilar un sombreador
+# <a name="how-to-compile-a-shader"></a>Cómo: Compilar un sombreador
 
-Normalmente, se usa el compilador de código [fxc.exe](/windows/desktop/direct3dtools/fxc) HLSL como parte del proceso de compilación para compilar código de sombreador. Para obtener más información sobre esto, vea [compilar sombreadores](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-part1). En este tema se muestra cómo usar la función [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile) en tiempo de ejecución para compilar código de sombreador.
+Normalmente se usa el [fxc.exe](/windows/desktop/direct3dtools/fxc) de código HLSL como parte del proceso de compilación para compilar el código del sombreador. Para obtener más información sobre esto, vea [Compilar sombreadores](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-part1). En este tema se muestra cómo usar la [**función D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile) en tiempo de ejecución para compilar el código del sombreador.
 
 **Para compilar un sombreador:**
 
--   Compile el código del sombreador HLSL llamando a [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile).
+-   Compile el código del sombreador HLSL mediante una llamada [**a D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile).
     ```C++
         UINT flags = D3DCOMPILE_ENABLE_STRICTNESS;
     #if defined( DEBUG ) || defined( _DEBUG )
@@ -42,9 +42,9 @@ Normalmente, se usa el compilador de código [fxc.exe](/windows/desktop/direct3d
 En el ejemplo de código siguiente se muestra cómo compilar varios sombreadores.
 
 > [!Note]  
-> Para este código de ejemplo, necesita el Windows SDK 8,0 y el \_ archivo de44.dll d3dcompiler de la carpeta% Program \_ file% \\ Windows kits \\ 8,0 \\ Redist \\ D3D \\ <arch> en su ruta de acceso. Las aplicaciones de la tienda Windows admiten la compilación en tiempo de ejecución para el desarrollo, pero no para la implementación.
+> Para este código de ejemplo, necesita el SDK de Windows 8.0 y el archivo d3dcompiler44.dll de la carpeta de arqueta \_ \_ D3D %PROGRAM FILE% \\ Windows Kits \\ 8.0 \\ Redist \\ D3D \\ &lt; en &gt; la ruta de acceso. Windows Las aplicaciones de la tienda admiten la compilación en tiempo de ejecución para el desarrollo, pero no para la implementación.
 
- 
+ 
 
 
 ```C++
@@ -131,7 +131,7 @@ int main()
 
 
 
-En el ejemplo de código anterior se compilan los bloques de código del sombreador de píxeles y vértices en los \_ archivos BasicHLSL11 PS. HLSL y BasicHLSL11 \_ vs. HLSL. Este es el código de BasicHLSL11 \_ PS. HLSL:
+En el ejemplo de código anterior se compilan los bloques de código del sombreador de píxeles y vértices en los archivos BASICHLSL11 \_ PS.hlsl y BasicHLSL11 \_ VS.hlsl. Este es el código de BasicHLSL11 \_ PS.hlsl:
 
 
 ```hlsl
@@ -188,7 +188,7 @@ float4 PSMain( PS_INPUT Input ) : SV_TARGET
 
 
 
-Este es el código de BasicHLSL11 \_ frente a HLSL:
+Este es el código de BasicHLSL11 \_ VS.hlsl:
 
 
 ```hlsl
@@ -247,9 +247,9 @@ VS_OUTPUT VSMain( VS_INPUT Input )
 
 <dl> <dt>
 
-[Cómo usar Direct3D 11](how-to-use-direct3d-11.md)
+[Uso de Direct3D 11](how-to-use-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: guardar (comando)
-description: El comando Guardar guarda un archivo MCI. Los dispositivos de audio y la superposición de vídeo y de onda reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo admiten.
+title: comando save
+description: El comando save guarda un archivo MCI. Los dispositivos de superposición de vídeo y audio de forma de onda reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo admiten.
 ms.assetid: cae199b3-4ac4-49e0-9213-12d816b2f865
 keywords:
-- comando guardar de Windows multimedia
+- guardar comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0029ad03c1b7fe855e8485b2719b11628fac1103
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0c7b4fb75f78f8468a204217f5a4fa1593a1c50d5db541a83070a7faed41cc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037485"
 ---
-# <a name="save-command"></a>guardar (comando)
+# <a name="save-command"></a>comando save
 
-El comando Guardar guarda un archivo MCI. Los dispositivos de audio y la superposición de vídeo y de onda reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo admiten.
+El comando save guarda un archivo MCI. Los dispositivos de superposición de vídeo y audio de forma de onda reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo admiten.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -49,14 +49,14 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszFilename"></span><span id="lpszfilename"></span><span id="LPSZFILENAME"></span>*lpszFilename*
 </dt> <dd>
 
-Marca que especifica el nombre del archivo que se va a guardar y, opcionalmente, marcas adicionales que modifican la operación de guardar. En la tabla siguiente se enumeran los tipos de dispositivos que reconocen el comando **Save** y las marcas usadas por cada tipo.
+Marca que especifica el nombre del archivo que se va a guardar y, opcionalmente, marcas adicionales que modifican la operación de guardado. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando **save** y las marcas usadas por cada tipo.
 
 
 
 | Value        | Significado              | Significado               |
 |--------------|----------------------|-----------------------|
-| digitalvideo | anular en el *rectángulo* | *nombre de archivo* keepreserve |
-| overlay      | en el *rectángulo*       | *filename*            |
+| digitalvideo | abort en el *rectángulo* | *filename* keepreserve |
+| overlay      | en *rectángulo*       | *filename*            |
 | sequencer    | *filename*           |                       |
 | waveaudio    | *filename*           |                       |
 
@@ -64,16 +64,16 @@ Marca que especifica el nombre del archivo que se va a guardar y, opcionalmente,
 
  
 
-En la tabla siguiente se enumeran las marcas que se pueden especificar en el parámetro **lpszFilename** y su significado.
+En la tabla siguiente se enumeran las marcas que se pueden especificar en el **parámetro lpszFilename** y sus significados.
 
 
 
 | Value          | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| anular          | Detiene una operación de **Guardar** en curso. Si se utiliza, debe ser el único elemento presente.                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| en el *rectángulo* | Especifica un rectángulo con respecto al origen de búfer de fotogramas. El *rectángulo* se especifica como *x1 Y1 x2 Y2*. Las coordenadas *x1 Y1* especifican la esquina superior izquierda y las coordenadas *x2 Y2* especifican el ancho y el alto. En el caso de los dispositivos de vídeo digital, el comando [Capture](capture.md) se usa para capturar el contenido del búfer de fotogramas.<br/>                                                                                                                                               |
-| *filename*     | Especifica el nombre de archivo que se va a asignar al archivo de datos. Si no se especifica una ruta de acceso, el archivo se colocará en el disco y en el directorio especificado anteriormente en el comando de [reserva](reserve.md) explícito o implícito. Si no se ha emitido **Reserve** , la unidad y el directorio predeterminados son los asociados a la tarea de la aplicación. Si se especifica una ruta de acceso, el dispositivo podría requerir que esté en la unidad de disco especificada por la **reserva** explícita o implícita. Esta marca es obligatoria. |
-| keepreserve    | Especifica que no se cancela la asignación del espacio en disco no utilizado que queda del comando de **reserva** original.                                                                                                                                                                                                                                                                                                                                                                                                 |
+| anular          | Detiene una **operación de** guardado en curso. Si se usa, este debe ser el único elemento presente.                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| en *rectángulo* | Especifica un rectángulo relativo al origen del búfer de fotogramas. El *rectángulo* se especifica como *X1 Y1 X2 Y2.* Las coordenadas *X1 Y1 especifican* la esquina superior izquierda y las coordenadas *X2 Y2* especifican el ancho y el alto. En el caso de los dispositivos de vídeo digital, el [comando capture](capture.md) se usa para capturar el contenido del búfer de fotogramas.<br/>                                                                                                                                               |
+| *filename*     | Especifica el nombre de archivo que se asignará al archivo de datos. Si no se especifica una ruta de acceso, el archivo se colocará en el disco y en el directorio especificado anteriormente en el comando de reserva explícito [o](reserve.md) implícito. Si **no** se ha emitido la reserva, la unidad y el directorio predeterminados son los asociados a la tarea de la aplicación. Si se especifica una ruta de acceso, el dispositivo podría requerir que esté en la unidad de disco especificada por la reserva explícita o **implícita**. Esta marca es obligatoria. |
+| keepreserve    | Especifica que no se desasigna el espacio en disco sin usar que queda **desde** el comando de reserva original.                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 
 
@@ -84,21 +84,21 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. En el caso de los dispositivos de vídeo digital y vídeo, también se puede especificar "prueba". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo digital y VCR, también se puede especificar "prueba". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La variable *filename* es necesaria si el dispositivo se abrió con el identificador de dispositivo "nuevo".
+La *variable filename* es necesaria si el dispositivo se abrió con el identificador de dispositivo "nuevo".
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente comando guarda el búfer de vídeo completo en un archivo denominado VCAPFILE. TGA.
+El comando siguiente guarda todo el búfer de vídeo en un archivo denominado VCAPFILE. Tga.
 
 ``` syntax
 save vboard c:\vcap\vcapfile.tga
@@ -119,13 +119,13 @@ save vboard c:\vcap\vcapfile.tga
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> <dt>
 
-[grabar](capture.md)
+[capturar](capture.md)
 </dt> <dt>
 
 [reserva](reserve.md)

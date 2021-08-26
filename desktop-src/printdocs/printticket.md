@@ -4,22 +4,22 @@ ms.assetid: fe6bd921-cbf3-4cca-afae-82d3822206ba
 title: PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b279ff681704a63f6547738c73fb9192d6f8a65d
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 0a38638083f6a6aabd0290fa3466a30fd50f7375
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120080"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884894"
 ---
 # <a name="printticket"></a>PrintTicket
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Un elemento PrintTicket es el elemento raíz del documento PrintTicket. Un elemento PrintTicket contiene toda la información de formato de trabajo necesaria para generar un trabajo.
 
 ## <a name="element-tag"></a>Etiqueta de elemento
 
-<PrintTicket>
+&lt;PrintTicket&gt;
 
 ## <a name="xml-attributes"></a>Atributos XML
 
@@ -29,7 +29,7 @@ En la tabla siguiente se enumeran los atributos XML que pueden pertenecer a este
 
 | Atributo XML      | Detalles                                                                                                                                                                                   |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| version<br/> | Especifica la versión del esquema que define los tipos de elemento y su estructura, un literal de tipo entero. La versión del esquema actual es "1". Este atributo es necesario. <br/> |
+| version<br/> | Especifica la versión del esquema que define los tipos de elemento y su estructura, un literal de tipo integer. La versión del esquema actual es "1". Este atributo es necesario. <br/> |
 
 
 
@@ -59,7 +59,7 @@ Las dependencias de configuración solo se aplican a los elementos de un documen
 
 ## <a name="example"></a>Ejemplo
 
-Vea [Ejemplo de PrintTicket.](printticket-example.md)
+Vea [ejemplo de PrintTicket.](printticket-example.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

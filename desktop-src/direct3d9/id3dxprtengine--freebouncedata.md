@@ -1,7 +1,7 @@
 ---
-description: Libera la memoria usada para los datos de simulación de luz rebotada temporal.
+description: Libera la memoria usada para los datos temporales de simulación de luz desaforada.
 ms.assetid: a28442ed-f281-4236-8995-366d43c97c43
-title: 'ID3DXPRTEngine:: FreeBounceData (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::FreeBounceData (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1e2e98bdb98cff9f3264967ab10c3914d918aace
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4baae86296768d74859c62e3cacdcdd2910d890a3e44ff57bc14ff6999f7122a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095845"
 ---
-# <a name="id3dxprtenginefreebouncedata-method"></a>ID3DXPRTEngine:: FreeBounceData (método)
+# <a name="id3dxprtenginefreebouncedata-method"></a>Método ID3DXPRTEngine::FreeBounceData
 
-Libera la memoria usada para los datos de simulación de luz rebotada temporal.
+Libera la memoria usada para los datos temporales de simulación de luz desaforada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,8 +50,8 @@ El valor devuelto es S \_ OK.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

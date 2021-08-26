@@ -1,45 +1,45 @@
 ---
-title: Cómo crear un cuadro de lista de Multiple-Selection
-description: En este tema se muestra cómo mostrar y obtener acceso al contenido de un directorio en un cuadro de lista de selección múltiple.
+title: Cómo crear un cuadro de Multiple-Selection de datos
+description: En este tema se muestra cómo mostrar y acceder al contenido de un directorio en un cuadro de lista de selección múltiple.
 ms.assetid: 5192E171-8CEF-4921-9378-A7C3A52A9024
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abd47b1d582d53a66bc77284927aef4230043e92
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 3f375ca2df82f851401baec79683a54ff28cf14e7a004d08cb0885e60fb036d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104078619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920865"
 ---
-# <a name="how-to-create-a-multiple-selection-list-box"></a>Cómo crear un cuadro de lista de Multiple-Selection
+# <a name="how-to-create-a-multiple-selection-list-box"></a>Cómo crear un cuadro de Multiple-Selection de datos
 
-En este tema se muestra cómo mostrar y obtener acceso al contenido de un directorio en un cuadro de lista de selección múltiple. En un cuadro de lista de selección múltiple, el usuario puede seleccionar más de un elemento a la vez.
+En este tema se muestra cómo mostrar y acceder al contenido de un directorio en un cuadro de lista de selección múltiple. En un cuadro de lista de selección múltiple, el usuario puede seleccionar más de un elemento a la vez.
 
 El ejemplo de código de C++ de este tema permite a un usuario ver una lista de archivos en el directorio actual, seleccionar un grupo de archivos de la lista y eliminarlos.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
 La aplicación de lista de directorios debe realizar las siguientes tareas relacionadas con el cuadro de lista:
 
--   Inicializa el cuadro de lista.
+-   Inicialice el cuadro de lista.
 -   Recupere las selecciones del usuario del cuadro de lista.
--   Quite los nombres de archivo del cuadro de lista una vez eliminados los archivos seleccionados.
+-   Quite los nombres de archivo del cuadro de lista después de eliminar los archivos seleccionados.
 
-En el siguiente ejemplo de código de C++, el procedimiento de cuadro de diálogo inicializa el cuadro de lista de selección múltiple (IDC \_ FileList) mediante la función [**DlgDirList**](/windows/desktop/api/Winuser/nf-winuser-dlgdirlista) para rellenar el cuadro de lista con los nombres de todos los archivos del directorio actual.
+En el siguiente ejemplo de código de C++, el procedimiento del cuadro de diálogo inicializa el cuadro de lista de selección múltiple (IDC FILELIST) mediante la función \_ [**DlgDirList**](/windows/desktop/api/Winuser/nf-winuser-dlgdirlista) para rellenar el cuadro de lista con los nombres de todos los archivos del directorio actual.
 
-Cuando el usuario selecciona un grupo de archivos y elige el botón **eliminar** , el procedimiento de cuadro de diálogo envía el mensaje [**lb \_ GETSELCOUNT**](lb-getselcount.md) , para recuperar el número de archivos seleccionados y el [**mensaje \_ lb GETSELITEMS**](lb-getselitems.md) , para recuperar una matriz de elementos de cuadro de lista seleccionados. Después de eliminar un archivo, el procedimiento de diálogo quita el elemento correspondiente del cuadro de lista mediante el envío del mensaje [**lb \_ DELETESTRING**](lb-deletestring.md) .
+Cuando el usuario selecciona un grupo de  archivos y elige el botón Eliminar, el procedimiento del cuadro de diálogo envía el mensaje [**\_ LB GETSELCOUNT**](lb-getselcount.md) para recuperar el número de archivos seleccionados y el mensaje [**LB \_ GETSELITEMS**](lb-getselitems.md) para recuperar una matriz de elementos de cuadro de lista seleccionados. Después de eliminar un archivo, el procedimiento de diálogo quita el elemento correspondiente del cuadro de lista mediante el envío del [**\_ mensaje LB DELETESTRING.**](lb-deletestring.md)
 
 
 
@@ -152,7 +152,7 @@ INT_PTR CALLBACK DlgDelFilesProc(HWND hDlg, UINT message,
 
 <dl> <dt>
 
-[Referencia de control de cuadro de lista](bumper-list-box-list-box-control-reference.md)
+[Referencia del control Cuadro de lista](bumper-list-box-list-box-control-reference.md)
 </dt> <dt>
 
 [Acerca de los cuadros de lista](about-list-boxes.md)

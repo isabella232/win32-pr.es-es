@@ -1,11 +1,11 @@
 ---
-title: Propiedad errorCode de IWMPErrorItem
+title: IWMPErrorItem errorCode, propiedad
 description: La propiedad errorCode obtiene el código de error actual.
 ms.assetid: 00719067-685d-4ef2-9eec-72c7892fcdb9
 keywords:
-- propiedad errorCode Windows Media Player
-- propiedad errorCode Windows Media Player, interfaz IWMPErrorItem
-- Interfaz IWMPErrorItem Windows Media Player, propiedad errorCode
+- errorCode, propiedad Reproductor de Windows Media
+- Propiedad errorCode Reproductor de Windows Media , interfaz IWMPErrorItem
+- Interfaz IWMPErrorItem Reproductor de Windows Media , propiedad errorCode
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f284d5655fc1f4007695a1f681c744a9c5c6fc0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9d7179684fb0332e25716282adfd47a5f769493f646f73c82d0391bbce4e6a91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031215"
 ---
-# <a name="iwmperroritemerrorcode-property"></a>IWMPErrorItem:: errorCode (propiedad)
+# <a name="iwmperroritemerrorcode-property"></a>IWMPErrorItem::errorCode, propiedad
 
-La propiedad **ErrorCode** obtiene el código de error actual.
+La **propiedad errorCode** obtiene el código de error actual.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,15 +46,15 @@ Public ReadOnly Property errorCode As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el código de error.
+**System.Int32 que** es el código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe establecer **IWMPSettings. enableErrorDialogs** en **false** si elige mostrar mensajes de error personalizados.
+Si decide mostrar mensajes de error **personalizados, debe establecer IWMPSettings.enableErrorDialogs** en **false.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **ErrorCode** en un controlador de eventos de error para mostrar el código de error al usuario. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa errorCode en** un controlador de eventos Error para mostrar el código de error al usuario. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -92,7 +92,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -105,7 +105,7 @@ End Sub
 [**Interfaz IWMPErrorItem (VB y C#)**](iwmperroritem--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings. enableErrorDialogs (VB y C#)**](wmplibiwmpsettings-iwmpsettings-enableerrordialogs--vb-and-c.md)
+[**IWMPSettings.enableErrorDialogs (VB y C#)**](wmplibiwmpsettings-iwmpsettings-enableerrordialogs--vb-and-c.md)
 </dt> </dl>
 
  

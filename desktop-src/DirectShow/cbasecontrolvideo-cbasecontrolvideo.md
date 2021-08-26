@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 389c05b5254326d2966799b857107e79792610e9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bbd9ed452dbf0c0091c3f1813f6f671c476dfa52e31b402440a3b1d19db2d3d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057375"
 ---
 # <a name="cbasecontrolvideocbasecontrolvideo-constructor"></a>Constructor CBaseControlVideo.CBaseControlVideo
 
@@ -49,7 +49,7 @@ CBaseControlVideo(
 *pFilter* 
 </dt> <dd>
 
-Puntero al objeto de filtro multimedia propietario.
+Puntero al objeto de filtro de medios propietario.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Puntero a una variable que recibe un valor HRESULT que indica el éxito o error 
 
 El objeto implementa la interfaz de control [**IBasicVideo.**](/windows/desktop/api/Control/nn-control-ibasicvideo)
 
-Todos los métodos de interfaz [**de IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) que implementa esta clase requieren que el filtro se conecte correctamente. Por este motivo, a la clase se le pasa un pin con el que debe sincronizarse. Cada vez que se llama a un método de interfaz, el objeto determina que el pin sigue conectado.
+Todos los métodos de interfaz [**de IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) que implementa esta clase requieren que el filtro esté conectado correctamente. Por este motivo, a la clase se le pasa un pin con el que debe sincronizarse. Cada vez que se llama a un método de interfaz, el objeto determina que el pin sigue conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,12 +93,12 @@ Todos los métodos de interfaz [**de IBasicVideo**](/windows/desktop/api/Control
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

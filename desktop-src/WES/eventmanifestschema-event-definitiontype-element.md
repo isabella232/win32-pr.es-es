@@ -1,9 +1,9 @@
 ---
-title: Elemento Event (DefinitionType)
+title: elemento event (DefinitionType)
 description: Define un evento que el proveedor puede registrar.
 ms.assetid: 61b49e91-afcf-4312-9511-97bf9ceb84df
 keywords:
-- EventLog del elemento Event
+- event element EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 395eca721239f1867a7b87999b5e6fefd8a510c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cdc640db90200ebf19f80e04794683c90bd0ac596bebe7fe0a4e6e72acc448ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032145"
 ---
-# <a name="event-definitiontype-element"></a>Elemento Event (DefinitionType)
+# <a name="event-definitiontype-element"></a>elemento event (DefinitionType)
 
 Define un evento que el proveedor puede registrar.
 
@@ -30,7 +30,7 @@ Define un evento que el proveedor puede registrar.
  />
 ```
 
-El elemento de **evento** se define mediante el tipo complejo de [**DefinitionType**](eventmanifestschema-definitiontype-complextype.md) .
+El **elemento** de evento se define mediante el [**tipo complejo DefinitionType.**](eventmanifestschema-definitiontype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento de **evento** se define mediante el tipo complejo de [**DefinitionTy
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento de **evento** se define mediante el tipo complejo de [**DefinitionTy
 **Elemento primario**
 </dt> <dt>
 
-[**eventos (ProviderType)**](eventmanifestschema-events-providertype-element.md)
+[**events (ProviderType)**](eventmanifestschema-events-providertype-element.md)
 </dt> </dl>
 
  

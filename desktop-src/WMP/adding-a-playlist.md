@@ -4,25 +4,25 @@ description: Agregar una lista de reproducción
 ms.assetid: be0c2cac-245d-4435-87d9-4f17076e005a
 keywords:
 - crear máscaras, listas de reproducción
-- Máscaras de Windows Media Player, listas de reproducción
+- Reproductor de Windows Media máscaras,listas de reproducción
 - máscaras, listas de reproducción
 - listas de reproducción, máscaras
-- listas de reproducción de metarchivos, máscaras
-- Listas de reproducción de metarchivos de Windows Media, máscaras
+- listas de reproducción de metarchivo, máscaras
+- Windows Listas de reproducción de metarchivo multimedia, máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c42a4bc253d4b1a3ba9b8fe0f31ca16b0d522956
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e23d9198f1f913b83cef40cea9f6ec47976f9f1e08a5e54257ab16df63e538b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031595"
 ---
 # <a name="adding-a-playlist"></a>Agregar una lista de reproducción
 
-Puede usar listas de reproducción para elegir entre las recopilaciones de audio y vídeo.
+Puede usar listas de reproducción para elegir entre colecciones de audio y vídeo.
 
-Con la ilustración de la primera máscara, puede realizar algunos cambios en el archivo de definición de máscara.
+Con las ilustraciones de la primera máscara, puede realizar algunos cambios en el archivo de definición de máscara.
 
 El primer paso es usar el shell que usará para la mayoría de las máscaras:
 
@@ -47,7 +47,7 @@ El primer paso es usar el shell que usará para la mayoría de las máscaras:
 
 
 
-Ahora, agregue una segunda **vista** que contenga una lista de reproducción. Coloque el código siguiente después del </VIEW> del código de Shell.
+Ahora agregue una segunda **vista**, que contiene una lista de reproducción. Coloque el código siguiente después del </VIEW> del código de shell.
 
 
 ```C++
@@ -60,7 +60,7 @@ Ahora, agregue una segunda **vista** que contenga una lista de reproducción. Co
 
 
 
-Tendrá que dar un identificador a esta segunda vista para poder hacer referencia a ella más adelante. Agregue un PLAYELEMENT y un STOPELEMENT. Estos botones predefinidos facilitan la vida.
+Tendrá que proporcionar a esta segunda vista un identificador para que pueda hacer referencia a ella más adelante. Agregue un ELEMENTO PLAYELEMENT y un ELEMENTO STOPELEMENT. Estos botones predefinidos facilitan la vida.
 
 
 ```C++
@@ -84,7 +84,7 @@ Por último, agregue un evento onClick a PLAYELEMENT para mostrar una lista de r
 
 
 
-Puede ver una máscara de lista de reproducción en funcionamiento similar en la sección de ejemplo del SDK.
+Puede ver una máscara de lista de reproducción de trabajo similar en la sección de ejemplo del SDK.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -93,9 +93,9 @@ Puede ver una máscara de lista de reproducción en funcionamiento similar en la
 [**Guía de creación de máscaras**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: El método AddAdvisePacket agrega una solicitud de notificación a la lista de solicitudes pendientes.
+description: El método AddAdvisePacket agrega una solicitud de aviso a la lista de solicitudes pendientes.
 ms.assetid: 138d8404-7d28-47cc-91b4-4733a113ac7a
-title: Método CAMSchedule. AddAdvisePacket (Dsschedule. h)
+title: Método CAMSchedule.AddAdvisePacket (Dsschedule.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5dd9586b09586c12f1a30f45b512336831372295
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a7509e4696214279e99ff15f21f2634dce7921796ae2ca112ae563ab170a2d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084535"
 ---
-# <a name="camscheduleaddadvisepacket-method"></a>CAMSchedule. AddAdvisePacket, método
+# <a name="camscheduleaddadvisepacket-method"></a>Método CAMSchedule.AddAdvisePacket
 
-El `AddAdvisePacket` método agrega una solicitud de notificación a la lista de solicitudes pendientes.
+El `AddAdvisePacket` método agrega una solicitud de aviso a la lista de solicitudes pendientes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,37 +45,37 @@ DWORD_PTR AddAdvisePacket(
 
 <dl> <dt>
 
-*tiempo1* \[ CLI\]
+*time1* \[ Ref\]
 </dt> <dd>
 
 Hora solicitada para el aviso.
 
 </dd> <dt>
 
-*al tiempo2?* \[ CLI\]
+*time2* \[ Ref\]
 </dt> <dd>
 
-Para solicitudes de notificación periódicas, el tiempo entre notificaciones. Este parámetro se omite si *bPeriodic* es **false**.
+Para las solicitudes de asesoramiento periódicas, el tiempo entre notificaciones. Este parámetro se omite si *bPeriodic* es **FALSE.**
 
 </dd> <dt>
 
 *hNotify* 
 </dt> <dd>
 
-Identificador de un semáforo si *bPeriodic* es **true** o identificador de un evento si *bPeriodic* es **false**.
+Controlar a un semáforo si *bPeriodic* es **TRUE** o controlar un evento si *bPeriodic* es **FALSE.**
 
 </dd> <dt>
 
-*bPeriodic* 
+*bPeriódico* 
 </dt> <dd>
 
-Valor booleano que especifica si se debe agregar una notificación periódica o una notificación de una captura. Si es **true**, la notificación es periódica; el parámetro *al tiempo2?* especifica el tiempo entre notificaciones. Si **es false**, la notificación se produce una sola vez.
+Valor booleano que especifica si se va a agregar una notificación periódica o una notificación de una sola toma. Si **es TRUE,** la notificación es periódica; El *parámetro time2* especifica el tiempo entre notificaciones. Si **es FALSE,** la notificación se produce solo una vez.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un identificador para la solicitud de notificación (la "cookie"). Si se produce un error en el método, el valor devuelto es cero.
+Devuelve un identificador para la solicitud de asesoramiento (la "cookie"). Si se produce un error en el método , el valor devuelto es cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ Devuelve un identificador para la solicitud de notificación (la "cookie"). Si s
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Dsschedule. h (incluir streams. h)</dt> </dl>                                                                                |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Dsschedule.h (incluir Secuencias.h)</dt> </dl>                                                                                |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ Devuelve un identificador para la solicitud de notificación (la "cookie"). Si s
 
 <dl> <dt>
 
-[**Clase CAMSchedule**](camschedule.md)
+[**CLASE CAMSchedule**](camschedule.md)
 </dt> </dl>
 
  

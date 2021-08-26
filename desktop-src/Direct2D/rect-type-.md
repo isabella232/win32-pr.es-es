@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfb9dd2703a843b9f09ba1404cd9acfddc25620ff2dc4a00566b4c1582847449
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e5f56fd9cbcfd576a441d9199e7ec1114cfb9f3
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119075019"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884491"
 ---
-# <a name="recttype-function"></a>Función <Type> Rect
+# <a name="rectlttypegt-function"></a>Función de &lt; tipo &gt; Rect
 
 Crea una estructura de rectángulo que almacena sus coordenadas utilizando el tipo de datos especificado.
 
@@ -70,12 +70,12 @@ Estructura de rectángulo que contiene las coordenadas especificadas.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Vista \[ \| para aplicaciones para UWP\]<br/>                          |
-| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio Windows Vista \[ \| para aplicaciones para UWP\]<br/>                          |
+| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
 | Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                                  |
-| Header<br/>                   | <dl> <dt>D2d1helper.h</dt> </dl>                                                  |
+| Encabezado<br/>                   | <dl> <dt>D2d1helper.h</dt> </dl>                                                  |
 | Biblioteca<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                                      |
 
