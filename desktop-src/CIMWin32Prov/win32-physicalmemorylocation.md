@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI PhysicalMemoryLocation Association de Win32 relaciona una matriz de memoria física y su memoria física.
+description: La clase WMI de asociación PhysicalMemoryLocation de Win32 relaciona \_ una matriz de memoria física y su memoria física.
 ms.assetid: 40252428-77ca-4dfb-8048-c05096a114d8
 ms.tgt_platform: multiple
-title: Win32_PhysicalMemoryLocation (clase)
+title: Win32_PhysicalMemoryLocation clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: daa6d47b13cb5caa74a10f28ab5fcd6e66e1524f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 10f4822312619b5b7fb811a998d82527b6e8bd0bd604e0d2095dae5103935e41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972065"
 ---
-# <a name="win32_physicalmemorylocation-class"></a>\_Clase Win32 PhysicalMemoryLocation
+# <a name="win32_physicalmemorylocation-class"></a>Clase PhysicalMemoryLocation de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ PhysicalMemoryLocation** Association de Win32 relaciona una matriz de memoria física y su memoria física.
+La clase WMI **de asociación \_ PhysicalMemoryLocation** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona una matriz de memoria física y su memoria física.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -63,10 +63,10 @@ Tipo de datos: **Win32 \_ PhysicalMemoryArray**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PhysicalMemoryArray")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PhysicalMemoryArray")
 </dt> </dl>
 
-[**\_ PhysicalMemoryArray de Win32**](win32-physicalmemoryarray.md) que representa la matriz de memoria física que contiene la memoria física.
+Clase [**\_ PhysicalMemoryArray de Win32**](win32-physicalmemoryarray.md) que representa la matriz de memoria física que contiene la memoria física.
 
 </dd> <dt>
 
@@ -79,9 +79,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena de forma libre que representa la posición del elemento físico en el paquete físico. La información relativa a los elementos estacionarios del contenedor (por ejemplo, "segunda Bahía de unidad de la parte superior"), ángulos, altitudes y otros datos se puede grabar en esta propiedad. Esta cadena se puede complementar o utilizar en lugar de crear una instancia del objeto de [**\_ Ubicación CIM**](cim-location.md) .
+Cadena de forma libre que representa el posicionamiento del elemento físico dentro del paquete físico. En esta propiedad se puede registrar información relativa a los elementos estacionados del contenedor (por ejemplo, "second drive bay from the top"), ángulos, altitudes y otros datos. Esta cadena podría complementar o usarse en lugar de crear instancias del [**objeto Cim \_ Location.**](cim-location.md)
 
-Esta propiedad se hereda del [**\_ contenedor CIM**](cim-container.md).
+Esta propiedad se hereda del [**contenedor CIM \_**](cim-container.md).
 
 </dd> <dt>
 
@@ -94,16 +94,16 @@ Tipo de datos: **Win32 \_ PhysicalMemory**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PhysicalMemory")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PhysicalMemory")
 </dt> </dl>
 
-[**\_ PhysicalMemory de Win32**](win32-physicalmemory.md) que representa la memoria física incluida en la matriz de memoria física.
+Objeto [**\_ PhysicalMemory de Win32**](win32-physicalmemory.md) que representa la memoria física contenida en la matriz de memoria física.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ PhysicalMemoryLocation de Win32** se deriva de [**\_ PackagedComponent de CIM**](cim-packagedcomponent.md).
+La **clase \_ PhysicalMemoryLocation de Win32** se deriva de [**CIM \_ PackagedComponent**](cim-packagedcomponent.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -113,8 +113,8 @@ La **clase \_ PhysicalMemoryLocation de Win32** se deriva de [**\_ PackagedCompo
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -123,10 +123,10 @@ La **clase \_ PhysicalMemoryLocation de Win32** se deriva de [**\_ PackagedCompo
 
 <dl> <dt>
 
-[**\_PACKAGEDCOMPONENT CIM**](cim-packagedcomponent.md)
+[**CIM \_ PackagedComponent**](cim-packagedcomponent.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

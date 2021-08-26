@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentKeyIsMadeException'
-title: Constructor de EsentKeyIsMadeException
+description: 'Más información sobre: Constructor EsentKeyIsMadeException'
+title: Constructor EsentKeyIsMadeException
 TOCTitle: 'EsentKeyIsMadeException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentKeyIsMadeException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentkeyismadeexception.esentkeyismadeexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 037d30bed22bd25781e426aa507b4ecab9f18645
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e302a77a4bc60e27cc212fa784de4c19323c168ef604426ffc2537b47cd54e3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019735"
 ---
-# <a name="esentkeyismadeexception-constructor"></a>Constructor de EsentKeyIsMadeException
+# <a name="esentkeyismadeexception-constructor"></a>Constructor EsentKeyIsMadeException
 
 Inicializa una nueva instancia de la clase EsentKeyIsMadeException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentKeyIsMadeException()
 public EsentKeyIsMadeException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentKeyIsMadeException()
 
 [Miembros de EsentKeyIsMadeException](./esentkeyismadeexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
