@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI LoadOrderGroupServiceMembers Association de Win32 relaciona un grupo de orden de carga y un servicio base.
+description: La clase WMI de asociación LoadOrderGroupServiceMembers de Win32 relaciona un grupo de orden de \_ carga y un servicio base.
 ms.assetid: 60fa8292-b9d1-48f2-bd26-e5c9276006fc
 ms.tgt_platform: multiple
-title: Win32_LoadOrderGroupServiceMembers (clase)
+title: Win32_LoadOrderGroupServiceMembers clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 557e9b029dcbdac06e24d1630f00488696792e25
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0adc333c5cb1d0579c95ac0886d337ffa26ce62686dc8c2e49e1e13a7632e599
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973515"
 ---
-# <a name="win32_loadordergroupservicemembers-class"></a>\_Clase Win32 LoadOrderGroupServiceMembers
+# <a name="win32_loadordergroupservicemembers-class"></a>Clase \_ LoadOrderGroupServiceMembers de Win32
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ LoadOrderGroupServiceMembers** Association de Win32 relaciona un grupo de orden de carga y un servicio base.
+La clase WMI **de asociación \_ LoadOrderGroupServiceMembers** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 relaciona un grupo de orden de carga y un servicio base.
 
 > [!Note]  
-> [**Win32 \_**](win32-systemdriver.md) Los objetos SystemDriver son miembros de ese grupo de orden de carga. No todos los servicios son miembros de grupos y no todos los grupos tienen servicios dentro de ellos.
+> [**Win32 \_ Los objetos SystemDriver**](win32-systemdriver.md) son miembros de ese grupo de orden de carga. No todos los servicios son miembros de grupos y no todos los grupos tienen servicios dentro de ellos.
 
  
 
@@ -66,7 +66,7 @@ Tipo de datos: **Win32 \_ LoadOrderGroup**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ LoadOrderGroup")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ LoadOrderGroup")
 </dt> </dl>
 
 Referencia a la instancia de que representa las propiedades del grupo de orden de carga asociadas al servicio base.
@@ -82,16 +82,16 @@ Tipo de datos: **Win32 \_ BaseService**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ BaseService")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ BaseService")
 </dt> </dl>
 
-Referencia a la instancia de que representa el servicio que es miembro de un grupo de orden de carga.
+Referencia a la instancia de que representa el servicio que es miembro de un grupo de pedidos de carga.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ LoadOrderGroupServiceMembers de Win32** se deriva [**del \_ componente CIM**](cim-component.md).
+La **clase \_ LoadOrderGroupServiceMembers de Win32** se deriva del [**componente \_ CIM**](cim-component.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,8 +101,8 @@ La **clase \_ LoadOrderGroupServiceMembers de Win32** se deriva [**del \_ compon
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -111,7 +111,7 @@ La **clase \_ LoadOrderGroupServiceMembers de Win32** se deriva [**del \_ compon
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))

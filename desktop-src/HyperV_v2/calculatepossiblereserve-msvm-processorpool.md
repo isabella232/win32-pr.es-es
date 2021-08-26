@@ -1,7 +1,7 @@
 ---
-description: Este método se usa para buscar la reserva real con el parámetro de entrada que es el número de procesadores de máquinas virtuales para los que se calcula la reserva.
+description: Este método se usa para buscar la reserva real, siendo el parámetro de entrada el número de procesadores de máquina virtual para los que se calcula la reserva.
 ms.assetid: C0497900-00F3-4975-9D12-C82C13C03D8E
-title: Método CalculatePossibleReserve de la clase Msvm_ProcessorPool
+title: Método CalculatePossibleReserve de la Msvm_ProcessorPool clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c7f88bcf3295b1792fca6be88ae0c9282b72646e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06cfa01dd89392c05f460462d8bda5898b47d90b6e027fa885bf039f62488cc3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042075"
 ---
-# <a name="calculatepossiblereserve-method-of-the-msvm_processorpool-class"></a>Método CalculatePossibleReserve de la \_ clase ProcessorPool de MSVM
+# <a name="calculatepossiblereserve-method-of-the-msvm_processorpool-class"></a>Método CalculatePossibleReserve de la clase \_ Msvm ProcessorPool
 
-Este método se usa para buscar la reserva real con el parámetro de entrada que es el número de procesadores de máquinas virtuales para los que se calcula la reserva. Este método es necesario porque la reserva de recursos del procesador depende en gran medida del número de procesadores que se deben programar en paralelo.
+Este método se usa para buscar la reserva real, siendo el parámetro de entrada el número de procesadores de máquina virtual para los que se calcula la reserva. Este método es necesario porque la reserva de recursos de procesador depende en gran medida del número de procesadores que se deben programar en paralelo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,24 +39,24 @@ uint32 CalculatePossibleReserve(
 
 <dl> <dt>
 
-*ProcessorCount* \[ de\]
+*ProcessorCount* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt16**
+Tipo: **uint16**
 
-El número de procesadores de máquinas virtuales para los que se calcula la reserva. El valor máximo de esta propiedad es el número de procesadores lógicos para el equipo host.
+Número de procesadores de máquina virtual para los que se calcula la reserva. El valor máximo de esta propiedad es el número de procesadores lógicos para el equipo host.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-La cantidad de recursos de CPU que se pueden reservar para una máquina virtual.
+Cantidad de recursos de CPU que se pueden reservar para una máquina virtual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase [**MSVM \_ ProcessorPool**](msvm-processorpool.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase \_ Msvm ProcessorPool**](msvm-processorpool.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,10 +64,10 @@ El acceso a la clase [**MSVM \_ ProcessorPool**](msvm-processorpool.md) puede es
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -76,7 +76,7 @@ El acceso a la clase [**MSVM \_ ProcessorPool**](msvm-processorpool.md) puede es
 
 <dl> <dt>
 
-[**MSVM \_ ProcessorPool**](msvm-processorpool.md)
+[**Msvm \_ ProcessorPool**](msvm-processorpool.md)
 </dt> </dl>
 
  

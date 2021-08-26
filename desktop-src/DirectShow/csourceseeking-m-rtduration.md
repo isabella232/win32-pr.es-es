@@ -1,7 +1,7 @@
 ---
-description: 'Duración de la secuencia. De forma predeterminada, el valor se establece en el valor de la variable miembro CSourceSeeking:: m \_ rtStop.'
+description: Duración de la secuencia. De forma predeterminada, el valor se establece en el valor de la variable miembro CSourceSeeking::m \_ rtStop.
 ms.assetid: a87b321e-3179-4485-969b-bf12cb634b43
-title: 'Miembro CSourceSeeking:: m_rtDuration (Ctlutil. h)'
+title: CSourceSeeking::m_rtDuration miembro (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e188a29689a6dd1a54ef401f8bd2677e30989972
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6aa62a3cdf906a4e9666b7786c08e49fca250ef042d187902132410cc2f0abaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053975"
 ---
-# <a name="csourceseekingm_rtduration-member"></a>Miembro rtDuration CSourceSeeking:: m \_
+# <a name="csourceseekingm_rtduration-member"></a>Miembro CSourceSeeking::m \_ rtDuration
 
-Duración de la secuencia. De forma predeterminada, el valor se establece en el valor de la variable miembro [**CSourceSeeking:: m \_ rtStop**](csourceseeking-m-rtstop.md) .
+Duración de la secuencia. De forma predeterminada, el valor se establece en el valor de la variable miembro [**CSourceSeeking::m \_ rtStop.**](csourceseeking-m-rtstop.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ CRefTime m_rtDuration;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Mantenga presionada la sección **m \_ Plock** Critical antes de tener acceso a esta variable.
+Mantenga **presionada la \_ sección m pLock** critical antes de acceder a esta variable.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Mantenga presionada la sección **m \_ Plock** Critical antes de tener acceso a 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Mantenga presionada la sección **m \_ Plock** Critical antes de tener acceso a 
 
 <dl> <dt>
 
-[**Clase CSourceSeeking**](csourceseeking.md)
+[**CSourceSeeking (clase)**](csourceseeking.md)
 </dt> </dl>
 
  

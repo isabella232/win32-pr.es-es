@@ -1,41 +1,41 @@
 ---
 title: Cómo crear un cuadro combinado simple
-description: En este tema se describe cómo crear, agregar y recuperar elementos de un cuadro combinado simple.
+description: En este tema se describe cómo crear, agregar elementos y recuperar elementos de un cuadro combinado simple.
 ms.assetid: E432AEC0-6C06-40C7-BBFE-B66C21DB8ACA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4175d435ac78795e7020fd84099d512cc65be20
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: eb1ab672e0beea90d07eadf05f14ffdc4a8181a4da7bf7940af50b00ddc69cde
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104488350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920815"
 ---
 # <a name="how-to-create-a-simple-combo-box"></a>Cómo crear un cuadro combinado simple
 
-En este tema se describe cómo crear, agregar y recuperar elementos de un cuadro combinado simple. En concreto, los ejemplos de código que lo acompañan muestran cómo realizar las siguientes funciones:
+En este tema se describe cómo crear, agregar elementos y recuperar elementos de un cuadro combinado simple. En concreto, los ejemplos de código adjuntos muestran cómo realizar las siguientes funciones:
 
 -   Cree dinámicamente un cuadro combinado simple en una ventana primaria.
--   Agregar una lista de elementos al cuadro combinado y mostrar un elemento inicial en el campo de selección del cuadro combinado.
--   Detecta cuándo el usuario ha seleccionado un elemento en el cuadro combinado.
--   Recupera el elemento seleccionado del cuadro combinado.
+-   Agregue una lista de elementos al cuadro combinado y muestre un elemento inicial en el campo de selección del cuadro combinado.
+-   Detectar cuándo el usuario ha seleccionado un elemento del cuadro combinado.
+-   Recupere el elemento seleccionado del cuadro combinado.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-create-an-instance-of-the-combo-box"></a>Paso 1: crear una instancia del cuadro combinado.
+### <a name="step-1-create-an-instance-of-the-combo-box"></a>Paso 1: Crear una instancia del cuadro combinado.
 
-La aplicación de ejemplo llama a la función [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) para crear una ventana secundaria de la ventana de la aplicación. El estilo de ventana de cuadro combinado [**WC \_**](common-control-window-classes.md) especifica que se trata de un cuadro combinado.
+La aplicación de ejemplo llama a [**la función CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) para crear una ventana secundaria de la ventana de aplicación. El [**estilo de ventana WC \_ COMBOBOX**](common-control-window-classes.md) especifica que es un cuadro combinado.
 
 
 ```C++
@@ -60,9 +60,9 @@ La aplicación de ejemplo llama a la función [**CreateWindow**](/windows/deskto
 
 
 
-### <a name="step-2-load-the-combo-box-with-the-item-list"></a>Paso 2: cargar el cuadro combinado con la lista de elementos.
+### <a name="step-2-load-the-combo-box-with-the-item-list"></a>Paso 2: Cargue el cuadro combinado con la lista de elementos.
 
-La aplicación envía un mensaje [**CB \_ ADDSTRING**](cb-addstring.md) para cada elemento de la lista. Una vez cargada la lista, la aplicación envía el mensaje [**CB \_ SETCURSEL**](cb-setcursel.md) para mostrar un elemento inicial en el campo de selección del cuadro combinado.
+La aplicación envía un mensaje [**\_ CB ADDSTRING**](cb-addstring.md) para cada elemento de la lista. Una vez cargada la lista, la aplicación envía el mensaje [**\_ CB SETCURSEL**](cb-setcursel.md) para mostrar un elemento inicial en el campo de selección del cuadro combinado.
 
 
 ```C++
@@ -95,14 +95,14 @@ SendMessage(hWndComboBox, CB_SETCURSEL, (WPARAM)2, (LPARAM)0);
 
 
 
-### <a name="step-3-detect-when-the-user-selects-an-item-and-retrieve-it-from-the-combo-box"></a>Paso 3: detectar cuándo el usuario selecciona un elemento y recuperarlo desde el cuadro combinado.
+### <a name="step-3-detect-when-the-user-selects-an-item-and-retrieve-it-from-the-combo-box"></a>Paso 3: Detectar cuándo el usuario selecciona un elemento y lo recupera del cuadro combinado.
 
-Cuando el usuario realiza una selección en la lista, el cuadro combinado envía una notificación de [CBN \_ SELCHANGE](cbn-selchange.md) a la ventana primaria a través de un mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) . La aplicación recupera el identificador del cuadro combinado del campo *lParam* del mensaje de notificación y envía un mensaje [**CB \_ GETCURSEL**](cb-getcursel.md) al cuadro combinado para recuperar el índice del elemento de lista seleccionado. Después de obtener el índice del elemento, la aplicación envía un mensaje [**CB \_ GETLBTEXT**](cb-getlbtext.md) para obtener el elemento. A continuación, se muestra el elemento en un cuadro de mensaje.
+Cuando el usuario realiza una selección de la lista, el cuadro combinado envía una notificación [ \_ CBN SELCHANGE](cbn-selchange.md) a la ventana primaria a través de un [**mensaje WM \_ COMMAND.**](/windows/desktop/menurc/wm-command) La aplicación recupera el identificador del cuadro combinado del campo *lParam* del mensaje de notificación y envía un mensaje [**\_ CB GETCURSEL**](cb-getcursel.md) al cuadro combinado para recuperar el índice del elemento de lista seleccionado. Después de obtener el índice del elemento, la aplicación envía un mensaje [**\_ GETLBTEXT de CB**](cb-getlbtext.md) para obtener el elemento. A continuación, muestra el elemento en un cuadro de mensaje.
 
 > [!Note]  
-> La notificación de [ \_ SELCHANGE de CBN](cbn-selchange.md) se envía y procesa antes de que el elemento se coloque en el campo de selección de cuadro combinado. Como resultado, en este ejemplo, el elemento seleccionado no aparecerá en el campo de selección hasta que se cierre el cuadro de mensaje.
+> La [notificación CBN \_ SELCHANGE](cbn-selchange.md) se envía y procesa antes de que el elemento se coloque en el campo de selección del cuadro combinado. Como resultado, en este ejemplo, el elemento seleccionado no aparecerá en el campo de selección hasta que se cierre el cuadro de mensaje.
 
- 
+ 
 
 
 ```C++
@@ -489,7 +489,7 @@ LRESULT CALLBACK DemoApp::WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM
 [Acerca de los cuadros combinados](about-combo-boxes.md)
 </dt> <dt>
 
-[Referencia de controles ComboBox](bumper-combobox-combobox-control-reference.md)
+[Referencia del control ComboBox](bumper-combobox-combobox-control-reference.md)
 </dt> <dt>
 
 [Usar cuadros combinados](using-combo-boxes.md)
@@ -498,6 +498,6 @@ LRESULT CALLBACK DemoApp::WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM
 [ComboBox](combo-boxes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

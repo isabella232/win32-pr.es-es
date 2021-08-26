@@ -1,11 +1,11 @@
 ---
-title: Domain-Identifier atributo)
-description: SID de dominio que identifica el dominio.
+title: Domain-Identifier atributo
+description: Sid de dominio que identifica el dominio.
 ms.assetid: 15a7d2e5-ec14-4d74-84c1-a184066ea275
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Domain-Identifier
-- domainIdentifier esquema de AD de atributos
+- Domain-Identifier esquema de AD del atributo
+- Esquema de AD del atributo domainIdentifier
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92b163139c14743cdeb5df4d5481783bdfe8eb88
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f28ef71f15a9833a66d518a140bc9423a61e98e070dee340433dad63343da538
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077715"
 ---
-# <a name="domain-identifier-attribute"></a>Domain-Identifier atributo)
+# <a name="domain-identifier-attribute"></a>Domain-Identifier atributo
 
-SID de dominio que identifica el dominio.
+Sid de dominio que identifica el dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Domain-Identifier                    |
-| Nombre para mostrar de LDAP | domainIdentifier                     |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | domainIdentifier                     |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.755               |
-| System-ID-GUID    | 7f561278-5301-11d1-a9c5-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 7f561278-5301-11d1-a9c5-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -53,15 +53,15 @@ SID de dominio que identifica el dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Verdadero                                                 |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -74,15 +74,15 @@ SID de dominio que identifica el dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Verdadero                                                 |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -95,15 +95,15 @@ SID de dominio que identifica el dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Verdadero                                                 |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -116,15 +116,15 @@ SID de dominio que identifica el dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Verdadero                                                 |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -137,15 +137,15 @@ SID de dominio que identifica el dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Verdadero                                                 |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -158,15 +158,15 @@ SID de dominio que identifica el dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Verdadero                                                 |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |

@@ -1,19 +1,19 @@
 ---
-description: El gráfico está almacenando en búfer datos o ha dejado de almacenar en búfer los datos.
+description: El gráfico almacena en búfer los datos o ha detenido el almacenamiento en búfer de los datos.
 ms.assetid: 39e8b151-0323-42b3-99f0-3dcd230925c8
-title: EC_BUFFERING_DATA (DShow. h)
+title: EC_BUFFERING_DATA (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1395a10458abd7a29fdb65e7ab55fba62328d6d5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3dc937973db8435657d131ff4adea83892bf87681bb3db9b7d016565f5c38670
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965975"
 ---
-# <a name="ec_buffering_data"></a>\_datos de almacenamiento en búfer de EC \_
+# <a name="ec_buffering_data"></a>DATOS \_ DE ALMACENAMIENTO EN BÚFER DE \_ EC
 
-El gráfico está almacenando en búfer datos o ha dejado de almacenar en búfer los datos.
+El gráfico almacena en búfer los datos o ha detenido el almacenamiento en búfer de los datos.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -22,7 +22,7 @@ El gráfico está almacenando en búfer datos o ha dejado de almacenar en búfer
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**Bool**) **True** si el gráfico se está empezando a almacenar en búfer, o **false** si el gráfico ha detenido el almacenamiento en búfer.
+(**BOOL**) **TRUE** si el gráfico está empezando a almacenar en búfer o **FALSE** si el gráfico ha detenido el almacenamiento en búfer.
 
 </dd> <dt>
 
@@ -37,9 +37,9 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un filtro puede enviar este evento si necesita almacenar en búfer los datos de un origen externo. (Por ejemplo, podría estar cargando datos de una red). La aplicación puede usar este evento para ajustar su interfaz de usuario.
+Un filtro puede enviar este evento si necesita almacenar en búfer los datos de un origen externo. (Por ejemplo, podría estar cargando datos desde una red). La aplicación puede usar este evento para ajustar su interfaz de usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Un filtro puede enviar este evento si necesita almacenar en búfer los datos de 
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

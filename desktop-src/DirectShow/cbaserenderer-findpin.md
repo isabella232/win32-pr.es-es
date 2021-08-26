@@ -1,7 +1,7 @@
 ---
 description: El método FindPin recupera el pin con el identificador especificado.
 ms.assetid: d07a298f-ddb0-44eb-85ca-81735875cdf3
-title: Método CBaseRenderer. FindPin (Renbase. h)
+title: Método CBaseRenderer.FindPin (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6e6789a91f34d95933ae7869e1588eeb14b6006
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0f639e5d68b11b6a7a65ccfe0d0c6465f822d591b0c4dfd0f4916072fde40856
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043775"
 ---
-# <a name="cbaserendererfindpin-method"></a>CBaseRenderer. FindPin, método
+# <a name="cbaserendererfindpin-method"></a>Método CBaseRenderer.FindPin
 
 El `FindPin` método recupera el pin con el identificador especificado.
 
@@ -46,36 +46,36 @@ HRESULT FindPin(
 *Id* 
 </dt> <dd>
 
-Puntero a una constante con una cadena de caracteres anchos terminada en null que identifica el PIN. Debe ser L "in".
+Puntero a una cadena de caracteres anchos terminada en NULL constante que identifica el pin. Debe ser L"In".
 
 </dd> <dt>
 
 *ppPin* 
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN. Si se produce un error en el método, *\* ppPin* se establece en **null**.
+Dirección de una variable que recibe un puntero a la interfaz [**IPin del**](/windows/desktop/api/Strmif/nn-strmif-ipin) pin. Si se produce un error en el método , *\* ppPin* se establece en **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                       | Descripción                           |
 |---------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>              | Correcto.<br/>                   |
-| <dl> <dt>**\_puntero E**</dt> </dl>         | Argumento de puntero **nulo** .<br/> |
-| <dl> <dt>**VFW \_ E \_ no \_ encontrado**</dt> </dl> | Not found.<br/>                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Correcto.<br/>                   |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>         | **Argumento de** puntero NULL.<br/> |
+| <dl> <dt>**VFW \_ E \_ NO \_ ENCONTRADO**</dt> </dl> | Not found.<br/>                 |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método invalida el método [**CBaseFilter:: FindPin**](cbasefilter-findpin.md) . El PIN del filtro solo (el PIN de entrada) se denomina "in".
+Este método invalida el [**método CBaseFilter::FindPin.**](cbasefilter-findpin.md) El único pin del filtro (el pin de entrada) se denomina "In".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ Este método invalida el método [**CBaseFilter:: FindPin**](cbasefilter-findpin
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ Este método invalida el método [**CBaseFilter:: FindPin**](cbasefilter-findpin
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

@@ -1,24 +1,24 @@
 ---
-title: Macros de calendario mensual
-description: Macros de calendario mensual
+title: Macros de calendario de mes
+description: Macros de calendario de mes
 ms.assetid: e6c856aa-8518-44bc-86cf-3cce8ee31063
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f77ba6f17b293f01fae5ac652c8ff4f8256ffa7e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 295e02eb640a43885350f1c9ec0f8e25babd172968da0d801bc629d448270c4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104157084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971095"
 ---
-# <a name="month-calendar-macros"></a>Macros de calendario mensual
+# <a name="month-calendar-macros"></a>Macros de calendario de mes
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**MonthCal \_ GetCalendarBorder**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcalendarborder)
 -   [**MonthCal \_ GetCalendarCount**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcalendarcount)
 -   [**MonthCal \_ GetCalendarGridInfo**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcalendargridinfo)
--   [**MonthCal \_ GetCALID**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcalid)
+-   [**MonthCal \_ Get ESTAD**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcalid)
 -   [**MonthCal \_ GetColor**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcolor)
 -   [**MonthCal \_ GetCurrentView**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcurrentview)
 -   [**MonthCal \_ GetCurSel**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcursel)
@@ -34,7 +34,7 @@ ms.locfileid: "104157084"
 -   [**MonthCal \_ GetUnicodeFormat**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getunicodeformat)
 -   [**MonthCal \_ HitTest**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_hittest)
 -   [**MonthCal \_ SetCalendarBorder**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcalendarborder)
--   [**MonthCal \_ SetCALID**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcalid)
+-   [**MonthCal \_ SetADAD**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcalid)
 -   [**MonthCal \_ SetColor**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcolor)
 -   [**MonthCal \_ SetCurrentView**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcurrentview)
 -   [**MonthCal \_ SetCurSel**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcursel)

@@ -1,23 +1,23 @@
 ---
-description: A las columnas de las tablas de base de datos se les da formato en uno de los siguientes tipos de datos.
+description: Las columnas de las tablas de base de datos tienen el formato de uno de los siguientes tipos de datos.
 ms.assetid: 19f58237-9cad-4feb-b439-77b183d14dcf
 title: Tipos de datos de columna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 894596e7b9226ee0efc202bb11f236619b808d0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c47a30d7d7c1f07bd7e651939bf1e7931284febab9f3b70168afdbf26dcba3f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078025"
 ---
 # <a name="column-data-types"></a>Tipos de datos de columna
 
 Las columnas de las tablas de base de datos tienen el formato de uno de los siguientes tipos de datos:
 
 -   [Texto](text.md)
--   [Escrita](uppercase.md)
--   [Minúscula](lowercase.md)
+-   [Mayúsculas](uppercase.md)
+-   [Minúsculas](lowercase.md)
 -   [Entero](integer.md)
 -   [DoubleInteger](doubleinteger.md)
 -   [Fecha y hora](time-date.md)
@@ -30,7 +30,7 @@ Las columnas de las tablas de base de datos tienen el formato de uno de los sigu
 -   [AnyPath](anypath.md)
 -   [DefaultDir](defaultdir.md)
 -   [RegPath](regpath.md)
--   [Formatea](formatted.md)
+-   [Formato](formatted.md)
 -   [FormattedSDDLText](formattedsddltext.md)
 -   [Plantilla](template.md)
 -   [Condition](condition.md)
@@ -39,7 +39,7 @@ Las columnas de las tablas de base de datos tienen el formato de uno de los sigu
 -   [Lenguaje](language.md)
 -   [Binario](binary.md)
 -   [CustomSource](customsource.md)
--   [Archiva](cabinet.md)
+-   [Gabinete](cabinet.md)
 -   [Acceso directo](shortcut.md)
 
  

@@ -1,8 +1,8 @@
 ---
-description: La \_ clase MemoryWithMedia de CIM asocia la memoria física con un medio físico y su cartucho. La memoria proporciona identificación de medios y almacena datos específicos del usuario.
+description: La clase \_ CIM MemoryWithMedia asocia la memoria física a un medio físico y su esfuerzo. La memoria proporciona identificación de medios y almacena datos específicos del usuario.
 ms.assetid: 99806d2d-6575-431d-9149-dc8ea767146c
 ms.tgt_platform: multiple
-title: CIM_MemoryWithMedia (clase)
+title: CIM_MemoryWithMedia clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3b990f8ba842f313449b6f24f4e2ce59787f7841
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: eff54c8ac48c9e6e998e720815a9a3529f5484f8a089e8ea510559d2e7cfa488
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104361926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921415"
 ---
-# <a name="cim_memorywithmedia-class"></a>\_Clase MemoryWithMedia de CIM
+# <a name="cim_memorywithmedia-class"></a>Clase \_ CIM MemoryWithMedia
 
-La **clase \_ MemoryWithMedia de CIM** asocia la memoria física con un medio físico y su cartucho. La memoria proporciona identificación de medios y almacena datos específicos del usuario.
+La **clase \_ CIM MemoryWithMedia** asocia la memoria física a un medio físico y su esfuerzo. La memoria proporciona identificación de medios y almacena datos específicos del usuario.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,33 +47,33 @@ class CIM_MemoryWithMedia : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ MemoryWithMedia** tiene estos tipos de miembros:
+La **clase \_ CIM MemoryWithMedia** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ MemoryWithMedia** tiene estas propiedades.
+La **clase \_ CIM MemoryWithMedia** tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ PhysicalMemory**
+Tipo de datos: **\_ CIM PhysicalMemory**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ PhysicalMemory de CIM**](cim-physicalmemory.md) que describe la memoria asociada a un medio físico.
+Memoria [**física \_ CIM que**](cim-physicalmemory.md) describe la memoria asociada a medios físicos.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **CIM \_ PhysicalMedia**
@@ -82,20 +82,20 @@ Tipo de datos: **CIM \_ PhysicalMedia**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ PhysicalMedia de CIM**](cim-physicalmedia.md) que describe el medio físico.
+Cim [**\_ PhysicalMedia**](cim-physicalmedia.md) que describe los medios físicos.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**CIM \_ MemoryWithMedia** se hereda de [**la \_ dependencia CIM**](cim-dependency.md).
+**CIM \_ MemoryWithMedia se** hereda de la [**dependencia \_ CIM**](cim-dependency.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

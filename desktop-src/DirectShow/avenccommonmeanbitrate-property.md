@@ -1,19 +1,19 @@
 ---
-description: Especifica la velocidad media de bits codificada, en bits por segundo. Esta propiedad solo se aplica a los modos de codificación de velocidad de bits constante (CBR) y de velocidad de bits variable (VBR).
+description: Especifica la velocidad de bits codificada media, en bits por segundo. Esta propiedad solo se aplica a los modos de codificación de velocidad de bits constante (CBR) y velocidad de bits variable (VBR).
 ms.assetid: 8519685a-4f5b-44af-ad46-09eba7a198c6
-title: Propiedad AVEncCommonMeanBitRate (Codecapi. h)
+title: Propiedad AVEncCommonMeanBitRate (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4eaec7fc6578e6e69a45616ee6de059bb7a378b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 05c1db672b09e257959a409182288cdfbfd271d0679335c9d9e14048c1e31781
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104538007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983785"
 ---
 # <a name="avenccommonmeanbitrate-property"></a>Propiedad AVEncCommonMeanBitRate
 
-Especifica la velocidad media de bits codificada, en bits por segundo. Esta propiedad solo se aplica a los modos de codificación de velocidad de bits constante (CBR) y de velocidad de bits variable (VBR).
+Especifica la velocidad de bits codificada media, en bits por segundo. Esta propiedad solo se aplica a los modos de codificación de velocidad de bits constante (CBR) y velocidad de bits variable (VBR).
 
 Esta propiedad es de lectura y escritura.
 
@@ -29,9 +29,9 @@ Esta propiedad es de lectura y escritura.
 
 Los codificadores pueden implementar esta propiedad como un conjunto enumerado o como un intervalo lineal.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad también se usa con [codificadores de cámara H. 264 UVC 1,5](/windows/desktop/medfound/camera-encoder-h264-uvc-1-5).
+Esta propiedad también se usa con codificadores de cámara [H.264 UVC 1.5](/windows/desktop/medfound/camera-encoder-h264-uvc-1-5).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ Esta propiedad también se usa con [codificadores de cámara H. 264 UVC 1,5](/wi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ Esta propiedad también se usa con [codificadores de cámara H. 264 UVC 1,5](/wi
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -1,25 +1,25 @@
 ---
 description: El control SelectionTree usa el evento SelectionPathOn para publicar un valor booleano que indica si hay una ruta de acceso de selección asociada a la característica seleccionada actualmente. Este evento debe crearse en la tabla EventMapping.
 ms.assetid: 441b9416-066a-429b-92d2-555584a20fa2
-title: SelectionPathOn ControlEvent,
+title: SelectionPathOn ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9882ea534a0d4c91a0107ce3949363350a17fbea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fea32926117c200f466bd2c40ac611e7ccbc47fb6a231a5dcf93ffa2ee0446b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040435"
 ---
-# <a name="selectionpathon-controlevent"></a>SelectionPathOn ControlEvent,
+# <a name="selectionpathon-controlevent"></a>SelectionPathOn ControlEvent
 
-El [control SelectionTree](selectiontree-control.md) usa el evento SelectionPathOn para publicar un valor booleano que indica si hay una ruta de acceso de selección asociada a la característica seleccionada actualmente. Este evento debe crearse en la [tabla EventMapping](eventmapping-table.md).
+El [control SelectionTree usa](selectiontree-control.md) el evento SelectionPathOn para publicar un valor booleano que indica si hay una ruta de acceso de selección asociada a la característica seleccionada actualmente. Este evento debe crearse en la [tabla EventMapping](eventmapping-table.md).
 
 Este evento solo puede afectar a los controles que se encuentran en el mismo cuadro de diálogo que el control SelectionTree.
 
-Este ControlEvent, requiere que la interfaz de usuario se ejecute en el nivel de interfaz de usuario [*completo*](f-gly.md) . Este evento no funcionará con una [*interfaz*](r-gly.md) de usuario [*básica*](b-gly.md)o no reducida. Para obtener más información, consulte niveles de la [interfaz de usuario](user-interface-levels.md).
+Este control ControlEvent requiere que la interfaz de usuario se ejecute en el [*nivel completo de la interfaz de*](f-gly.md) usuario. Este evento no funcionará con una interfaz de usuario [*reducida o*](r-gly.md) una interfaz de [*usuario básica.*](b-gly.md) Para obtener información, [vea Interfaz de usuario Levels](user-interface-levels.md).
 
-La SelectionPathOn ControlEvent, no se publica nunca durante una [instalación de mantenimiento](maintenance-installation.md).
+SelectionPathOn ControlEvent nunca se publica durante una instalación [de mantenimiento.](maintenance-installation.md)
 
 ## <a name="published-by"></a>Publicado por
 
@@ -29,13 +29,13 @@ La SelectionPathOn ControlEvent, no se publica nunca durante una [instalación d
 
 Ninguno.
 
-## <a name="action-on-subscribers"></a>Acción en los suscriptores
+## <a name="action-on-subscribers"></a>Acción en suscriptores
 
 Ninguno.
 
 ## <a name="typical-use"></a>Uso típico
 
-Un control de [texto](text-control.md) en el mismo cuadro de diálogo modal que el SelectionTree debe suscribirse al evento a través de la [tabla EventMapping](eventmapping-table.md). El control de texto muestra el título de la ruta de acceso de la selección. Este control de texto está visible u oculto dependiendo del evento.
+Un [control Text](text-control.md) en el mismo cuadro de diálogo modal que SelectionTree debe suscribirse al evento a través de la tabla [EventMapping](eventmapping-table.md). El Control de texto muestra el título de la ruta de acceso de selección. Este control de texto está visible u oculto en función del evento.
 
  
 

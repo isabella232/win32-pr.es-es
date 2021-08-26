@@ -1,19 +1,19 @@
 ---
-description: Si se establece el bit de control CDROMVolume, el control muestra todos los volúmenes de la instalación actual más todos los volúmenes de CD-ROM.
+description: Si se establece el bit CDROMVolume Control, el control muestra todos los volúmenes de la instalación actual más todos los volúmenes de CD-ROM.
 ms.assetid: 233df659-413d-416e-a3d7-d05a67e9bd73
-title: Atributo de control CDROMVolume
+title: CdROMVolume (atributo de control)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a687cfd52f347d9bfd24e74fb10b15f865e13b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78abd961ddfd710defea9b464ea861f731fcf84a0989062f0607fda8ced5b381
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078045"
 ---
-# <a name="cdromvolume-control-attribute"></a>Atributo de control CDROMVolume
+# <a name="cdromvolume-control-attribute"></a>CdROMVolume (atributo de control)
 
-Si se establece el bit de control CDROMVolume, el control muestra todos los volúmenes de la instalación actual más todos los volúmenes de CD-ROM.
+Si se establece el bit CDROMVolume Control, el control muestra todos los volúmenes de la instalación actual más todos los volúmenes de CD-ROM.
 
 Si no se establece este bit, el control muestra todos los volúmenes de la instalación actual.
 
@@ -41,11 +41,11 @@ Si no se establece este bit, el control muestra todos los volúmenes de la insta
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para establecer este atributo en un control, incluya el bit CDROMVolume en la columna Attributes del registro del control en la [tabla de control](control-table.md).
+Para establecer este atributo en un control , incluya el bit CDROMVolume en la columna Atributos del registro del control en la [tabla Control](control-table.md).
 
-Vea [atributos de control](control-attributes.md) y el control que debe crear en [controles](controls.md).
+Vea [Atributos de](control-attributes.md) control y el control que debe crear en [Controles](controls.md).
 
  
 

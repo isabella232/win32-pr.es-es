@@ -1,11 +1,11 @@
 ---
-title: StreamSelectOperation. GetResults, método
+title: Método StreamSelectOperation.GetResults
 description: Devuelve los resultados de la operación asincrónica iniciada por SelectBestStreamAsync.
 ms.assetid: 2D9887E7-17C8-4161-984F-FA44591D2052
 keywords:
-- Método GetResults API de streaming de multimedia
-- Método GetResults API de streaming multimedia, interfaz StreamSelectOperation
-- StreamSelectOperation interface media streaming API, GetResults (método)
+- Método GetResults de Media Streaming API
+- Método GetResults Media Streaming API, interfaz StreamSelectOperation
+- Interfaz StreamSelectOperation Media Streaming API, método GetResults
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c52479949413d32ca54654f355a06a2dee70866e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 022e75a57b9b38cff2a1e477d78a164767ab8cbcd4e1d3a159e8f61c8972fb95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105714363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952485"
 ---
-# <a name="streamselectoperationgetresults-method"></a>StreamSelectOperation. GetResults, método
+# <a name="streamselectoperationgetresults-method"></a>Método StreamSelectOperation.GetResults
 
-Devuelve los resultados de la operación asincrónica iniciada por [**SelectBestStreamAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)).
+Devuelve los resultados de la operación asincrónica iniciada [**por SelectBestStreamAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,18 +41,18 @@ HRESULT GetResults(
 
 <dl> <dt>
 
-*valor* \[ de out, retval\]
+*value* \[ out, retval\]
 </dt> <dd></dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 

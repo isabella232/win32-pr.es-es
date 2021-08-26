@@ -1,34 +1,34 @@
 ---
-description: Las cadenas del constructor de objetos COM+ son cadenas de inicialización que se especifican administrativamente para un componente.
+description: Las cadenas de constructor de objetos COM+ son cadenas de inicialización que se especifican administrativamente para un componente.
 ms.assetid: b4915dae-c97c-4d36-95ee-bb10dcb40845
-title: Conceptos de las cadenas del constructor de objetos COM+
+title: Conceptos de cadenas de constructor de objetos COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c32bffd35ad230efe1f22b52da10e1b4910d71da
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9baef62780950e93043a48c2ccf13910faf7c692dc534f984ffd028e0b342dcd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120029525"
 ---
-# <a name="com-object-constructor-strings-concepts"></a>Conceptos de las cadenas del constructor de objetos COM+
+# <a name="com-object-constructor-strings-concepts"></a>Conceptos de cadenas de constructor de objetos COM+
 
-Las cadenas del constructor de objetos COM+ son cadenas de inicialización que se especifican administrativamente para un componente. Puede usar cadenas de constructor de objeto para escribir un único componente con un grado de generalidad que permita que se personalice más adelante para una tarea determinada. es decir, puede realizar la construcción de objetos parametrizados.
+Las cadenas de constructor de objetos COM+ son cadenas de inicialización que se especifican administrativamente para un componente. Puede usar cadenas de constructor de objetos para escribir un único componente con un grado de generalidad que permita personalizarlo posteriormente para una tarea determinada; es decir, puede realizar la construcción de objetos con parámetros.
 
-Por ejemplo, puede usar esta característica para escribir un componente que contenga una conexión ODBC genérica y, posteriormente, especificar un DSN exacto para el componente de forma administrativa. Si cambia la configuración del sistema, puede cambiar la cadena del constructor en consecuencia.
+Por ejemplo, puede usar esta característica para escribir un componente que contiene una conexión ODBC genérica y, posteriormente, especificar un DSN exacto para el componente administrativamente. Si cambia la configuración del sistema, puede cambiar la cadena del constructor en consecuencia.
 
 > [!Note]  
-> Las cadenas del constructor de objetos no deben usarse para almacenar información confidencial de seguridad.
+> Las cadenas de constructor de objetos no deben usarse para almacenar información confidencial de seguridad.
 
  
 
-Puede utilizar cadenas del constructor de objetos junto con la [agrupación de objetos](com--object-pooling.md) para lograr un mayor grado de granularidad en la forma en que agrupa y reutiliza los recursos. Por ejemplo, podría crear varios componentes distintos, idénticos a excepción de las cadenas de constructor y los CLSID, para mantener distintos grupos de objetos que contengan conexiones que puedan usar los distintos grupos de clientes. Esto sería útil si las conexiones se abren de forma que las enlaza a roles de seguridad determinados, como cuando las conexiones se abren con cierta autenticación específica en la base de datos, lo que las representa en el caso general.
+Puede usar cadenas de constructor [](com--object-pooling.md) de objetos junto con la agrupación de objetos para lograr un mayor grado de granularidad en la forma de agrupación y reutilización de recursos. Por ejemplo, puede crear varios componentes distintos, idénticos excepto las cadenas de constructor y CLID, para mantener distintos grupos de objetos que mantienen conexiones utilizables por grupos distintos de clientes. Esto sería útil si las conexiones se abren de una manera que las enlaza a determinados roles de seguridad, como cuando las conexiones se abren con alguna autenticación específica en la base de datos, lo que las hace no reutilizables en el caso general.
 
-Para ello, puede escribir un único componente genérico que se base en cadenas de constructor de objetos, mediante [**IObjectConstruct**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectconstruct), y volver a compilarlo para generar varios componentes personalizables con un CLSID distinto. Después, puede adaptar administrativamente cada componente para abrir una conexión adecuada con una cadena de constructor, configurarlos para que se agrupen y se mantendrán en grupos distintos por CLSID.
+Para ello, puede escribir un único componente genérico que se base en cadenas de constructor de objetos mediante [**IObjectConstruct**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectconstruct)y volver a compilarlo para generar varios componentes personalizables cada uno con un CLSID distinto. A continuación, puede adaptar administrativamente cada componente para abrir una conexión adecuada con una cadena de constructor, configurarlos para que se agruparán y se mantendrán en grupos distintos por CLSID.
 
-Puede especificar una cadena de constructor cuando un componente se ha escrito específicamente para reconocer la cadena que especifique. Los componentes pueden tener acceso mediante programación a estas cadenas mediante [**IObjectConstruct**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectconstruct).
+Puede especificar una cadena de constructor cuando se ha escrito un componente específicamente para reconocer la cadena que especifique. Los componentes pueden acceder a estas cadenas mediante programación mediante [**IObjectConstruct**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectconstruct).
 
-Las cadenas de constructor se pasan en el momento de creación del objeto solo cuando la construcción del objeto está habilitada de forma administrativa. COM+ llama al método [**IObjectConstruct:: Construct**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectconstruct-construct) que implementa. Dentro de ese método, puede tener acceso a la cadena del constructor mediante [**IObjectConstructString**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectconstructstring). Las cadenas vacías pueden ser entradas válidas.
+Las cadenas de constructor se pasan en el momento de la creación del objeto solo cuando la construcción de objetos está habilitada administrativamente. COM+ llama al [**método IObjectConstruct::Construct**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectconstruct-construct) que implementa. Dentro de ese método, puede acceder a la cadena de constructor mediante [**IObjectConstructString**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectconstructstring). Las cadenas vacías pueden ser entradas válidas.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -37,10 +37,10 @@ Las cadenas de constructor se pasan en el momento de creación del objeto solo c
 [Agrupación de objetos COM+](com--object-pooling.md)
 </dt> <dt>
 
-[Especificar una cadena de constructor de objeto para un componente](specifying-an-object-constructor-string-for-a-component.md)
+[Especificar una cadena de constructor de objetos para un componente](specifying-an-object-constructor-string-for-a-component.md)
 </dt> <dt>
 
-[Usar una cadena de constructor de objeto para construir un componente](using-an-object-constructor-string-to-construct-a-component.md)
+[Usar una cadena de constructor de objetos para construir un componente](using-an-object-constructor-string-to-construct-a-component.md)
 </dt> </dl>
 
  

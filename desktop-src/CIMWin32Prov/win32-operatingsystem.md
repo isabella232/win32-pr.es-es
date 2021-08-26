@@ -1,5 +1,5 @@
 ---
-description: Representa un sistema operativo basado en Windows instalado en un equipo.
+description: Representa un Windows operativo basado en datos instalado en un equipo.
 ms.assetid: eb6a8cff-20a0-4211-b46a-3084e9c39246
 ms.tgt_platform: multiple
 title: Clase Win32_OperatingSystem
@@ -80,16 +80,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 15a6a1bf7bec8c830d1a15ec690b01ec9ea22e48
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a1df0da4cadf0cd610803b2f456f22049471b28bc5653bc400f4c730cb0c47de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972535"
 ---
-# <a name="win32_operatingsystem-class"></a>Win32 \_ OperatingSystem (clase)
+# <a name="win32_operatingsystem-class"></a>Clase OperatingSystem de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ OperatingSystem de Win32** representa un sistema operativo basado en Windows instalado en un equipo.
+La clase [WMI](../wmisdk/retrieving-a-class.md) **\_ Win32 OperatingSystem** representa un Windows operativo basado en el sistema operativo instalado en un equipo.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -170,24 +170,24 @@ class Win32_OperatingSystem : CIM_OperatingSystem
 
 ## <a name="members"></a>Miembros
 
-La clase **Win32 \_ OperatingSystem** tiene estos tipos de miembros:
+La **clase \_ OperatingSystem de Win32** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ OperatingSystem** tiene estos métodos.
+La **clase \_ OperatingSystem de Win32** tiene estos métodos.
 
 
 
 | Método                                                                                     | Descripción                                                                                                                                                                                                                                                            |
 |:-------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Reboot**](reboot-method-in-class-win32-operatingsystem.md)                             | Apaga el sistema y reinicia el equipo.<br/>                                                                                                                                                                                                           |
+| [**Reboot**](reboot-method-in-class-win32-operatingsystem.md)                             | Se apaga y, a continuación, se reinicia el sistema del equipo.<br/>                                                                                                                                                                                                           |
 | [**SetDateTime**](setdatetime-method-in-class-win32-operatingsystem.md)                   | Permite establecer la fecha y hora del equipo.<br/>                                                                                                                                                                                                                |
-| [**Apagado**](shutdown-method-in-class-win32-operatingsystem.md)                         | Descarga programas y archivos dll hasta el punto en el que es seguro apagar el equipo.<br/>                                                                                                                                                                           |
-| [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md)               | Proporciona el conjunto completo de opciones de apagado compatibles con los sistemas operativos Windows.<br/>                                                                                                                                                                           |
-| [**Win32ShutdownTracker**](win32shutdowntracker-method-in-class-win32-operatingsystem.md) | Proporciona el mismo conjunto de opciones de cierre admitido por el método [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md) en el **\_ OperatingSystem de Win32**, pero también permite especificar comentarios, un motivo para el cierre o un tiempo de espera agotado.<br/> |
+| [**Apagado**](shutdown-method-in-class-win32-operatingsystem.md)                         | Descarga programas y archivos DLL hasta el punto en el que es seguro desactivar el equipo.<br/>                                                                                                                                                                           |
+| [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md)               | Proporciona el conjunto completo de opciones de apagado admitidas por Windows sistemas operativos.<br/>                                                                                                                                                                           |
+| [**Win32ShutdownTracker**](win32shutdowntracker-method-in-class-win32-operatingsystem.md) | Proporciona el mismo conjunto de opciones de apagado compatibles con el método [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md) en **Win32 \_ OperatingSystem,** pero también permite especificar comentarios, un motivo para el apagado o un tiempo de espera.<br/> |
 
 
 
@@ -195,7 +195,7 @@ La clase **Win32 \_ OperatingSystem** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **Win32 \_ OperatingSystem** tiene estas propiedades.
+La **clase \_ OperatingSystem de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -208,12 +208,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| información de asignación de unidad inesperados win32api \_ \_ \| btInt13Unit")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| DRIVE MAP INFO \_ \_ \| btInt13Unit")
 </dt> </dl>
 
-Nombre de la unidad de disco desde la que se inicia el sistema operativo Windows.
+Nombre de la unidad de disco desde la que se inicia Windows sistema operativo.
 
-Ejemplo: " \\ \\ dispositivo \\ Harddisk0"
+Ejemplo: \\ \\ "Disco \\ duro del dispositivo0"
 
 </dd> <dt>
 
@@ -226,10 +226,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| System Information Structures \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| dwBuildNumber")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Información del sistema Structures \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| dwBuildNumber")
 </dt> </dl>
 
-Número de compilación de un sistema operativo. Se puede utilizar para obtener información de versión más precisa que los números de versión de lanzamiento del producto.
+Número de compilación de un sistema operativo. Se puede usar para obtener información de versión más precisa que los números de versión de lanzamiento del producto.
 
 Ejemplo: "1381"
 
@@ -244,12 +244,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows \\ \\ CurrentVersion \| CurrentType")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft Windows \\ \\ \\ \\ \\ \\ CurrentVersion \| CurrentType")
 </dt> </dl>
 
-Tipo de compilación usado para un sistema operativo.
+Tipo de compilación que se usa para un sistema operativo.
 
-Ejemplos: "" compilación comercial "", "compilación comprobada" "
+Ejemplos: ""retail build"", ""checked build""
 
 </dd> <dt>
 
@@ -262,18 +262,18 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descripción del objeto: una cadena de una línea. La cadena incluye la versión del sistema operativo. Por ejemplo, "Microsoft Windows 7 Enterprise". Esta propiedad se puede localizar.
 
 **Windows Vista y Windows 7:** Esta propiedad puede contener caracteres finales. Por ejemplo, la cadena "Microsoft Windows 7 Enterprise" (espacio final incluido) puede ser necesaria para recuperar información mediante esta propiedad.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Dese**
+**CodeSet**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -282,16 +282,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (6), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| National Language support Functions \| [**GetLocaleInfo**](/windows/win32/api/winnls/nf-winnls-getlocaleinfoa) \| configuración regional \_ IDEFAULTANSICODEPAGE")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (6), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| National Language Support Functions \| [**GetLocaleInfo**](/windows/win32/api/winnls/nf-winnls-getlocaleinfoa) \| LOCALE \_ IDEFAULTANSICODEPAGE")
 </dt> </dl>
 
-Valor de la página de códigos que utiliza un sistema operativo. Una página de códigos contiene una tabla de caracteres que un sistema operativo usa para traducir cadenas para distintos idiomas. En el American National Standards Institute (ANSI) se muestran los valores que representan las páginas de códigos definidas. Si un sistema operativo no usa una página de códigos ANSI, este miembro se establece en 0 (cero). La cadena codebase puede utilizar un máximo de seis caracteres para definir el valor **de la página** de códigos.
+Valor de página de códigos que usa un sistema operativo. Una página de códigos contiene una tabla de caracteres que un sistema operativo usa para traducir cadenas para distintos idiomas. El American National Standards Institute (ANSI) enumera los valores que representan páginas de códigos definidas. Si un sistema operativo no usa una página de códigos ANSI, este miembro se establece en 0 (cero). La **cadena CodeSet** puede usar un máximo de seis caracteres para definir el valor de la página de códigos.
 
 Ejemplo: "1255"
 
 </dd> <dt>
 
-**País**
+**CountryCode**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -300,10 +300,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| National Language support Functions \| [**GetLocaleInfo**](/windows/win32/api/winnls/nf-winnls-getlocaleinfoa) \| configuración regional \_ ICOUNTRY")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| National Language Support Functions \| [**GetLocaleInfo**](/windows/win32/api/winnls/nf-winnls-getlocaleinfoa) \| LOCALE \_ ICOUNTRY")
 </dt> </dl>
 
-Código para el país o región que utiliza un sistema operativo. Los valores se basan en prefijos de marcado telefónico internacional, también conocidos como códigos de país o región de IBM. Esta propiedad puede usar un máximo de seis caracteres para definir el valor de código de país o región.
+Código para el país o región que usa un sistema operativo. Los valores se basan en prefijos de marcación telefónica internacionales, también denominados códigos de país o región de IBM. Esta propiedad puede usar un máximo de seis caracteres para definir el valor de código de país o región.
 
 Ejemplo: "1" (Estados Unidos)
 
@@ -318,12 +318,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**\_ Clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de. Cuando se usa con otras propiedades de clave de la clase, esta propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
@@ -336,12 +336,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito del equipo.
+Nombre de clase de creación del sistema de equipo de ámbito.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
@@ -354,10 +354,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| System Information Structures \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **szCSDVersion**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Información del sistema Structures \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **szCSDVersion**")
 </dt> </dl>
 
-Cadena terminada en **null** que indica el Service Pack más reciente instalado en un equipo. Si no hay ningún Service Pack instalado, la cadena es **null**.
+**Cadena** terminada en NULL que indica el Service Pack más reciente instalado en un equipo. Si no hay ningún Service Pack instalado, la cadena es **NULL.**
 
 Ejemplo: "Service Pack 3"
 
@@ -372,12 +372,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Nombre**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre del sistema de ámbito del equipo.
+Nombre del sistema de equipo de ámbito.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
@@ -393,9 +393,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("minutos")
 </dt> </dl>
 
-Número, en minutos, que un sistema operativo se desvía de la hora del meridiano de Greenwich (GMT). El número es positivo, negativo o cero.
+Número, en minutos, un sistema operativo se desplaza con respecto a la hora media de Greenwich (GMT). El número es positivo, negativo o cero.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
@@ -411,11 +411,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Cuando la característica de hardware de prevención de ejecución de datos está disponible, esta propiedad indica que la característica está configurada para funcionar en aplicaciones de 32 bits si es **true**. En los equipos de 64 bits, la característica prevención de ejecución de datos se configura en el almacén de [datos de la configuración de arranque (BCD) (BCD)](/previous-versions/windows/desktop/bcd/boot-configuration-data-portal) y las propiedades en el sistema **\_ operativo Win32** se establecen en consecuencia.
+Cuando la característica de hardware de prevención de ejecución de datos está disponible, esta propiedad indica que la característica está establecida para funcionar con aplicaciones de 32 bits si **es True.** En equipos de 64 bits, la característica de prevención de ejecución de datos se configura en el almacén [de datos de la configuración de arranque (BCD) (BCD)](/previous-versions/windows/desktop/bcd/boot-configuration-data-portal) y las propiedades de **Win32 \_ OperatingSystem** se establecen en consecuencia.
 
 </dd> <dt>
 
-**DataExecutionPrevention \_ disponible**
+**DataExecutionPrevention \_ Disponible**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -427,11 +427,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-La prevención de ejecución de datos es una característica de hardware para evitar ataques por saturación del búfer al detener la ejecución de código en páginas de memoria de tipo de datos. Si es **true**, esta característica está disponible. En los equipos de 64 bits, la característica prevención de ejecución de datos se configura en el almacén BCD y las propiedades en el sistema **\_ operativo Win32** se establecen en consecuencia.
+La prevención de ejecución de datos es una característica de hardware para evitar ataques de saturación del búfer al detener la ejecución de código en páginas de memoria de tipo de datos. Si **es True**, esta característica está disponible. En equipos de 64 bits, la característica de prevención de ejecución de datos se configura en el almacén BCD y las propiedades de **Win32 \_ OperatingSystem** se establecen en consecuencia.
 
 </dd> <dt>
 
-**\_Controladores DataExecutionPrevention**
+**Controladores DataExecutionPrevention \_**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -443,14 +443,14 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Cuando la característica de hardware de prevención de ejecución de datos está disponible, esta propiedad indica que la característica está configurada para funcionar con los controladores si es **true**. En los equipos de 64 bits, la característica prevención de ejecución de datos se configura en el almacén BCD y las propiedades en el sistema **\_ operativo Win32** se establecen en consecuencia.
+Cuando la característica de hardware de prevención de ejecución de datos está disponible, esta propiedad indica que la característica está establecida para funcionar para los controladores si es **True.** En equipos de 64 bits, la característica de prevención de ejecución de datos se configura en el almacén BCD y las propiedades de **Win32 \_ OperatingSystem** se establecen en consecuencia.
 
 </dd> <dt>
 
 **DataExecutionPrevention \_ SupportPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -459,46 +459,46 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Indica la configuración de prevención de ejecución de datos (DEP) que se aplica. La configuración de DEP especifica la medida en la que DEP se aplica a las aplicaciones de 32 bits en el sistema. DEP siempre se aplica al kernel de Windows.
+Indica qué configuración de Prevención de ejecución de datos (DEP) se aplica. La configuración de DEP especifica la medida en que DEP se aplica a las aplicaciones de 32 bits en el sistema. DEP siempre se aplica al Windows kernel.
 
 <dt>
 
 <span id="Always_Off"></span><span id="always_off"></span><span id="ALWAYS_OFF"></span>
 
-<span id="Always_Off"></span><span id="always_off"></span><span id="ALWAYS_OFF"></span>**Siempre desactivado** (0)
+<span id="Always_Off"></span><span id="always_off"></span><span id="ALWAYS_OFF"></span>**Always Off** (0)
 
 
 </dt> <dd>
 
-DEP está desactivado para todas las aplicaciones de 32 bits del equipo sin excepciones. Esta opción no está disponible para la interfaz de usuario.
+DEP está desactivado para todas las aplicaciones de 32 bits del equipo sin excepciones. Esta configuración no está disponible para la interfaz de usuario.
 
 </dd> <dt>
 
 <span id="Always_On"></span><span id="always_on"></span><span id="ALWAYS_ON"></span>
 
-<span id="Always_On"></span><span id="always_on"></span><span id="ALWAYS_ON"></span>**Always on** (1)
+<span id="Always_On"></span><span id="always_on"></span><span id="ALWAYS_ON"></span>**Always On** (1)
 
 
 </dt> <dd>
 
-DEP está habilitado para todas las aplicaciones de 32 bits del equipo. Esta opción no está disponible para la interfaz de usuario.
+DEP está habilitado para todas las aplicaciones de 32 bits del equipo. Esta configuración no está disponible para la interfaz de usuario.
 
 </dd> <dt>
 
 <span id="Opt_In"></span><span id="opt_in"></span><span id="OPT_IN"></span>
 
-<span id="Opt_In"></span><span id="opt_in"></span><span id="OPT_IN"></span>**Participación** (2)
+<span id="Opt_In"></span><span id="opt_in"></span><span id="OPT_IN"></span>**Participar** (2)
 
 
 </dt> <dd>
 
-DEP está habilitado para un número limitado de archivos binarios, el kernel y todos los servicios basados en Windows. Sin embargo, está desactivada de forma predeterminada para todas las aplicaciones de 32 bits. Un usuario o administrador debe elegir explícitamente el valor de **Always on** o de la opción de **cancelación** antes de que se pueda aplicar DEP a las aplicaciones de 32 bits.
+DEP está habilitado para un número limitado de archivos binarios, el kernel y todos los Windows basados en datos. Sin embargo, está desactivada de forma predeterminada para todas las aplicaciones de 32 bits. Un usuario o administrador debe elegir explícitamente  la configuración **Always On** o no participar antes de que DEP se pueda aplicar a aplicaciones de 32 bits.
 
 </dd> <dt>
 
 <span id="Opt_Out"></span><span id="opt_out"></span><span id="OPT_OUT"></span>
 
-<span id="Opt_Out"></span><span id="opt_out"></span><span id="OPT_OUT"></span>**Rechazar** (3)
+<span id="Opt_Out"></span><span id="opt_out"></span><span id="OPT_OUT"></span>**No participar** (3)
 
 
 </dt> <dd>
@@ -518,10 +518,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| [**GetSystemMetrics**](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) \| SM \_ Debug")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| [**GetSystemMetrics**](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) \| SM \_ DEBUG")
 </dt> </dl>
 
-El sistema operativo es una compilación comprobada (depuración). Si es **true**, la versión de depuración está instalada. Las compilaciones comprobadas proporcionan comprobación de errores, comprobación de argumentos y código de depuración del sistema. El código adicional en un binario comprobado genera un mensaje de error del depurador de kernel y se interrumpe en el depurador. Esto ayuda a determinar de inmediato la causa y la ubicación del error. El rendimiento puede verse afectado en una compilación comprobada debido al código adicional que se ejecuta.
+El sistema operativo es una compilación activada (depuración). Si **es True**, se instala la versión de depuración. Las compilaciones comprobadas proporcionan comprobación de errores, comprobación de argumentos y código de depuración del sistema. El código adicional de un binario activado genera un mensaje de error del depurador del kernel y se interrumpe en el depurador. Esto ayuda a determinar inmediatamente la causa y la ubicación del error. El rendimiento puede verse afectado en una compilación comprobada debido al código adicional que se ejecuta.
 
 </dd> <dt>
 
@@ -531,17 +531,17 @@ El sistema operativo es una compilación comprobada (depuración). Si es **true*
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Description"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Description"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Descripción del sistema operativo Windows. Algunas interfaces de usuario, por ejemplo, las que permiten editar esta descripción, limitan su longitud a 48 caracteres.
+Descripción de la Windows operativo. Algunas interfaces de usuario, por ejemplo, las que permiten editar esta descripción, limitan su longitud a 48 caracteres.
 
 </dd> <dt>
 
-**Distribuya**
+**Distribuido**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -550,16 +550,16 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, el sistema operativo se distribuye entre varios nodos de sistema de equipo. Si es así, estos nodos deben agruparse como clúster.
+Si **es True**, el sistema operativo se distribuye entre varios nodos del sistema del equipo. Si es así, estos nodos deben agruparse como un clúster.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
 **EncryptionLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -571,14 +571,14 @@ Nivel de cifrado para transacciones seguras: 40 bits, 128 bits o *n* bits.
 
 <span id="40-bit"></span><span id="40-BIT"></span>
 
-**40** bits (0)
+**40 bits** (0)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="128-bit"></span><span id="128-BIT"></span>
 
-**128** bits (1)
+**128 bits** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -595,16 +595,16 @@ Nivel de cifrado para transacciones seguras: 40 bits, 128 bits o *n* bits.
 **ForegroundApplicationBoost**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ PriorityControl \| Win32PrioritySeparation")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ PriorityControl \| Win32PrioritySeparation")
 </dt> </dl>
 
-El aumento de prioridad se da a la aplicación de primer plano. La mejora de la aplicación se implementa al otorgar a una aplicación más intervalos de tiempo de ejecución (longitudes de cuanto).
+El aumento de prioridad se da a la aplicación en primer plano. La potenciación de la aplicación se implementa al proporcionar a una aplicación más segmentos de tiempo de ejecución (longitudes cuánticas).
 
 <dt>
 
@@ -615,7 +615,7 @@ El aumento de prioridad se da a la aplicación de primer plano. La mejora de la 
 
 </dt> <dd>
 
-El sistema aumenta la longitud del cuanto 6.
+El sistema aumenta la longitud cuántica en 6.
 
 </dd> <dt>
 
@@ -626,7 +626,7 @@ El sistema aumenta la longitud del cuanto 6.
 
 </dt> <dd>
 
-El sistema aumenta la longitud del Quantum en 12.
+El sistema aumenta la longitud cuántica en 12.
 
 </dd> <dt>
 
@@ -637,7 +637,7 @@ El sistema aumenta la longitud del Quantum en 12.
 
 </dt> <dd>
 
-El sistema aumenta la longitud del Quantum en 18.
+El sistema aumenta la longitud cuántica en 18.
 
 </dd> </dl>
 
@@ -646,7 +646,7 @@ El sistema aumenta la longitud del Quantum en 18.
 **FreePhysicalMemory**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -655,38 +655,38 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Número, en kilobytes, de la memoria física que actualmente no se usa y está disponible.
+Número, en kilobytes, de memoria física actualmente sin usar y disponible.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
 **FreeSpaceInPagingFiles**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Configuración de la memoria del sistema DMTF \| 001,4 "), [**unidades**](../wmisdk/standard-qualifiers.md) (" kilobytes ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| System Memory Configuración \| 001.4"), [**Units**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
 Número, en kilobytes, que se puede asignar a los archivos de paginación del sistema operativo sin provocar que se intercambien otras páginas.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
-**Freevirtualmemory (**
+**FreeVirtualMemory**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -695,42 +695,42 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Número, en kilobytes, de la memoria virtual que actualmente no se usa y está disponible.
+Número, en kilobytes, de memoria virtual actualmente sin usar y disponible.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
-Se instaló el objeto de fecha. Esta propiedad no requiere un valor para indicar que el objeto está instalado.
+Se instaló el objeto Date. Esta propiedad no requiere un valor para indicar que el objeto está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **LargeSystemCache**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **desusados**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [ **EN DESUSO**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
 Esta propiedad está obsoleta y no se admite.
@@ -744,18 +744,18 @@ Esta propiedad está obsoleta y no se admite.
 
 </dt> <dd>
 
-Optimizar la memoria para las aplicaciones.
+Optimice la memoria de las aplicaciones.
 
 </dd> <dt>
 
 <span id="Optimize_for_System_Performance"></span><span id="optimize_for_system_performance"></span><span id="OPTIMIZE_FOR_SYSTEM_PERFORMANCE"></span>
 
-<span id="Optimize_for_System_Performance"></span><span id="optimize_for_system_performance"></span><span id="OPTIMIZE_FOR_SYSTEM_PERFORMANCE"></span>**Optimizar para el rendimiento del sistema** (1)
+<span id="Optimize_for_System_Performance"></span><span id="optimize_for_system_performance"></span><span id="OPTIMIZE_FOR_SYSTEM_PERFORMANCE"></span>**Optimizar el rendimiento del sistema** (1)
 
 
 </dt> <dd>
 
-Optimizar la memoria para el rendimiento del sistema.
+Optimice la memoria para el rendimiento del sistema.
 
 </dd> </dl>
 
@@ -764,33 +764,33 @@ Optimizar la memoria para el rendimiento del sistema.
 **LastBootUpTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora en que el sistema operativo se reinició por última vez.
+Fecha y hora en que se reinició por última vez el sistema operativo.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
 **LocalDateTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| host-REsources-MIB. hrSystemDate "," MIF. \|Información general de DMTF \| 001,6 ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| HOST-RESOURCES-MIB.hrSystemDate", "MIF. Información general de DMTF \| \| 001.6")
 </dt> </dl>
 
-Versión del sistema operativo de la fecha y hora del día local.
+Versión del sistema operativo de la fecha y hora del día locales.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
@@ -803,14 +803,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| National Language support Functions \| [**GetLocaleInfo**](/windows/win32/api/winnls/nf-winnls-getlocaleinfoa) \| configuración regional \_ ILANGUAGE")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| National Language Support Functions \| [**GetLocaleInfo**](/windows/win32/api/winnls/nf-winnls-getlocaleinfoa) \| LOCALE \_ ILANGUAGE")
 </dt> </dl>
 
-Identificador de idioma usado por el sistema operativo. Un identificador de idioma es una abreviatura numérica internacional estándar para un país o región. Cada idioma tiene un identificador de idioma único (LANGID), un valor de 16 bits que consta de un identificador de idioma principal y un identificador de idioma secundario.
+Identificador de idioma utilizado por el sistema operativo. Un identificador de idioma es una abreviatura numérica internacional estándar para un país o región. Cada idioma tiene un identificador de idioma único (LANGID), un valor de 16 bits que consta de un identificador de idioma principal y un identificador de idioma secundario.
 
 </dd> <dt>
 
-**Le**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -822,32 +822,32 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Nombre del fabricante del sistema operativo. En el caso de los sistemas basados en Windows, este valor es "Microsoft Corporation".
+Nombre del fabricante del sistema operativo. Para Windows basados en datos, este valor es "Microsoft Corporation".
 
 </dd> <dt>
 
 **MaxNumberOfProcesses**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| host-REsources-MIB. hrSystemMaxProcesses ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| HOST-RESOURCES-MIB.hrSystemMaxProcesses")
 </dt> </dl>
 
-Número máximo de contextos de proceso que el sistema operativo puede admitir. El valor predeterminado establecido por el proveedor es 4294967295 (0xFFFFFFFF). Si no hay ningún máximo fijo, el valor debe ser 0 (cero). En los sistemas que tienen un máximo fijo, este objeto puede ayudar a diagnosticar los errores que se producen cuando se alcanza el máximo, si se desconoce, escriba 4294967295 (0xFFFFFFFF).
+Número máximo de contextos de proceso que el sistema operativo puede admitir. El valor predeterminado establecido por el proveedor es 4294967295 (0xFFFFFFFF). Si no hay ningún máximo fijo, el valor debe ser 0 (cero). En los sistemas que tienen un máximo fijo, este objeto puede ayudar a diagnosticar errores que se producen cuando se alcanza el máximo( si se desconoce, escriba 4294967295 (0xFFFFFFFF).
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
 **MaxProcessMemorySize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -856,18 +856,18 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Número máximo, en kilobytes, de memoria que se puede asignar a un proceso. En el caso de los sistemas operativos sin memoria virtual, normalmente este valor es igual a la cantidad total de memoria física menos la memoria usada por el BIOS y el sistema operativo. En algunos sistemas operativos, este valor puede ser infinito, en cuyo caso se debe especificar 0 (cero). En otros casos, este valor podría ser una constante, por ejemplo, 2G o 4G.
+Número máximo, en kilobytes, de memoria que se puede asignar a un proceso. Para los sistemas operativos sin memoria virtual, normalmente este valor es igual a la cantidad total de memoria física menos la memoria usada por el BIOS y el sistema operativo. Para algunos sistemas operativos, este valor puede ser infinito, en cuyo caso se debe especificar 0 (cero). En otros casos, este valor podría ser una constante, por ejemplo, 2G o 4G.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
-**MUILanguages**
+**LOS IDIOMAS DE LOS IDIOMAS DE LA COLA**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -876,7 +876,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Idiomas del paquete de interfaz de usuario multilingüe (MUI Pack) instalados en el equipo. Por ejemplo, "en-US". Los idiomas del paquete MUI son archivos de recursos que se pueden instalar en la versión en inglés del sistema operativo. Cuando se instala un paquete MUI, puede cambiar el idioma de la interfaz de usuario a uno de los idiomas admitidos en 33.
+Interfaz de usuario multilingüe Idiomas pack (PACK) instalados en el equipo. Por ejemplo, "en-us". Los idiomas de PACK son archivos de recursos que se pueden instalar en la versión en inglés del sistema operativo. Cuando se instala un paquete DE EXTENSIÓN, puede cambiar el idioma de la interfaz de usuario a uno de los 33 idiomas admitidos.
 
 </dd> <dt>
 
@@ -889,67 +889,67 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Instancia del sistema operativo dentro de un equipo.
+Instancia de sistema operativo dentro de un sistema informático.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
 **NumberOfLicensedUsers**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de licencias de usuario para el sistema operativo. Si es ilimitado, escriba 0 (cero). Si es desconocido, escriba-1.
+Número de licencias de usuario para el sistema operativo. Si es ilimitado, escriba 0 (cero). Si es desconocido, escriba -1.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
 **NumberOfProcesses**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| host-REsources-MIB. hrSystemProcesses ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| HOST-RESOURCES-MIB.hrSystemProcesses")
 </dt> </dl>
 
 Número de contextos de proceso cargados o en ejecución actualmente en el sistema operativo.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
 **NumberOfUsers**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| host-REsources-MIB. hrSystemNumUsers ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| HOST-RESOURCES-MIB.hrSystemNumUsers")
 </dt> </dl>
 
-Número de sesiones de usuario para las que el sistema operativo almacena información de Estado actualmente.
+Número de sesiones de usuario para las que el sistema operativo almacena actualmente información de estado.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
 **OperatingSystemSKU**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -958,7 +958,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Número de referencia de almacén (SKU) para el sistema operativo. Estos valores son los mismos que las constantes ** \_ \* Product* _ definidas en Winnt. h que se usan con la función [_ *GetProductInfo* *](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo) .
+Número de unidad de almacenamiento de existencias (SKU) para el sistema operativo. Estos valores son los mismos que las constantes **PRODUCT \_ \** _ definidas en WinNT.h que se usan con la [función _ *GetProductInfo.* *](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo)
 
 En la lista siguiente se enumeran los posibles valores de SKU.
 
@@ -966,7 +966,7 @@ En la lista siguiente se enumeran los posibles valores de SKU.
 
 <span id="PRODUCT_UNDEFINED"></span><span id="product_undefined"></span>
 
-<span id="PRODUCT_UNDEFINED"></span><span id="product_undefined"></span>**Producto \_ de Undefined** (0)
+<span id="PRODUCT_UNDEFINED"></span><span id="product_undefined"></span>**PRODUCT \_ UNDEFINED** (0)
 
 
 </dt> <dd>
@@ -977,7 +977,7 @@ No definido
 
 <span id="PRODUCT_ULTIMATE"></span><span id="product_ultimate"></span>
 
-<span id="PRODUCT_ULTIMATE"></span><span id="product_ultimate"></span>**Producto \_ de ULTIMATE** (1)
+<span id="PRODUCT_ULTIMATE"></span><span id="product_ultimate"></span>**PRODUCT \_ ULTIMATE** (1)
 
 
 </dt> <dd>
@@ -988,7 +988,7 @@ Ultimate Edition, por ejemplo, Windows Vista Ultimate.
 
 <span id="PRODUCT_HOME_BASIC"></span><span id="product_home_basic"></span>
 
-<span id="PRODUCT_HOME_BASIC"></span><span id="product_home_basic"></span>**Producto \_ de HOME \_ Basic** (2)
+<span id="PRODUCT_HOME_BASIC"></span><span id="product_home_basic"></span>**PRODUCT \_ HOME \_ BASIC** (2)
 
 
 </dt> <dd>
@@ -999,7 +999,7 @@ Home Basic Edition
 
 <span id="PRODUCT_HOME_PREMIUM"></span><span id="product_home_premium"></span>
 
-<span id="PRODUCT_HOME_PREMIUM"></span><span id="product_home_premium"></span>**Producto \_ de HOME \_ Premium** (3)
+<span id="PRODUCT_HOME_PREMIUM"></span><span id="product_home_premium"></span>**PRODUCT \_ HOME \_ PREMIUM** (3)
 
 
 </dt> <dd>
@@ -1010,7 +1010,7 @@ Home Premium Edition
 
 <span id="PRODUCT_ENTERPRISE"></span><span id="product_enterprise"></span>
 
-<span id="PRODUCT_ENTERPRISE"></span><span id="product_enterprise"></span>**Producto \_ de ENTERPRISE** (4)
+<span id="PRODUCT_ENTERPRISE"></span><span id="product_enterprise"></span>**PRODUCT \_ ENTERPRISE** (4)
 
 
 </dt> <dd>
@@ -1021,7 +1021,7 @@ Enterprise Edition
 
 <span id="PRODUCT_BUSINESS"></span><span id="product_business"></span>
 
-<span id="PRODUCT_BUSINESS"></span><span id="product_business"></span>**Producto \_ de EMPRESA** (6)
+<span id="PRODUCT_BUSINESS"></span><span id="product_business"></span>**PRODUCT \_ BUSINESS** (6)
 
 
 </dt> <dd>
@@ -1032,18 +1032,18 @@ Business Edition
 
 <span id="PRODUCT_STANDARD_SERVER"></span><span id="product_standard_server"></span>
 
-<span id="PRODUCT_STANDARD_SERVER"></span><span id="product_standard_server"></span>**Producto \_ de STANDARD \_ Server** (7)
+<span id="PRODUCT_STANDARD_SERVER"></span><span id="product_standard_server"></span>**PRODUCT \_ SERVIDOR \_ ESTÁNDAR** (7)
 
 
 </dt> <dd>
 
-Windows Server Standard Edition (instalación de experiencia de escritorio)
+Windows Servidor Standard Edition (instalación de experiencia de escritorio)
 
 </dd> <dt>
 
 <span id="PRODUCT_DATACENTER_SERVER"></span><span id="product_datacenter_server"></span>
 
-<span id="PRODUCT_DATACENTER_SERVER"></span><span id="product_datacenter_server"></span>**Producto \_ de Datacenter \_ Server** (8)
+<span id="PRODUCT_DATACENTER_SERVER"></span><span id="product_datacenter_server"></span>**PRODUCT \_ DATACENTER \_ SERVER** (8)
 
 
 </dt> <dd>
@@ -1054,29 +1054,29 @@ Windows Server Datacenter Edition (instalación de experiencia de escritorio)
 
 <span id="PRODUCT_SMALLBUSINESS_SERVER"></span><span id="product_smallbusiness_server"></span>
 
-<span id="PRODUCT_SMALLBUSINESS_SERVER"></span><span id="product_smallbusiness_server"></span>**Producto \_ de \_Servidor SMALLBUSINESS** (9)
+<span id="PRODUCT_SMALLBUSINESS_SERVER"></span><span id="product_smallbusiness_server"></span>**PRODUCT \_ SMALLBUSINESS \_ SERVER** (9)
 
 
 </dt> <dd>
 
-Edición de Small Business Server
+Small Business Server Edition
 
 </dd> <dt>
 
 <span id="PRODUCT_ENTERPRISE_SERVER"></span><span id="product_enterprise_server"></span>
 
-<span id="PRODUCT_ENTERPRISE_SERVER"></span><span id="product_enterprise_server"></span>**Producto \_ de ENTERPRISE \_ Server** (10)
+<span id="PRODUCT_ENTERPRISE_SERVER"></span><span id="product_enterprise_server"></span>**PRODUCT \_ ENTERPRISE \_ SERVER** (10)
 
 
 </dt> <dd>
 
-Edición Enterprise Server
+Enterprise Server Edition
 
 </dd> <dt>
 
 <span id="PRODUCT_STARTER"></span><span id="product_starter"></span>
 
-<span id="PRODUCT_STARTER"></span><span id="product_starter"></span>**Producto \_ de Inicio** (11)
+<span id="PRODUCT_STARTER"></span><span id="product_starter"></span>**PRODUCT \_ STARTER** (11)
 
 
 </dt> <dd>
@@ -1087,7 +1087,7 @@ Edición Enterprise Server
 
 <span id="PRODUCT_DATACENTER_SERVER_CORE"></span><span id="product_datacenter_server_core"></span>
 
-<span id="PRODUCT_DATACENTER_SERVER_CORE"></span><span id="product_datacenter_server_core"></span>**Producto \_ de Datacenter \_ Server \_ Core** (12)
+<span id="PRODUCT_DATACENTER_SERVER_CORE"></span><span id="product_datacenter_server_core"></span>**PRODUCT \_ DATACENTER \_ SERVER \_ CORE** (12)
 
 
 </dt> <dd>
@@ -1098,7 +1098,7 @@ Datacenter Server Core Edition
 
 <span id="PRODUCT_STANDARD_SERVER_CORE"></span><span id="product_standard_server_core"></span>
 
-<span id="PRODUCT_STANDARD_SERVER_CORE"></span><span id="product_standard_server_core"></span>**Producto \_ de STANDARD \_ Server \_ Core** (13)
+<span id="PRODUCT_STANDARD_SERVER_CORE"></span><span id="product_standard_server_core"></span>**PRODUCT \_ STANDARD \_ SERVER \_ CORE** (13)
 
 
 </dt> <dd>
@@ -1109,7 +1109,7 @@ Standard Server Core Edition
 
 <span id="PRODUCT_ENTERPRISE_SERVER_CORE"></span><span id="product_enterprise_server_core"></span>
 
-<span id="PRODUCT_ENTERPRISE_SERVER_CORE"></span><span id="product_enterprise_server_core"></span>**Producto \_ de ENTERPRISE \_ Server \_ Core** (14)
+<span id="PRODUCT_ENTERPRISE_SERVER_CORE"></span><span id="product_enterprise_server_core"></span>**PRODUCT \_ ENTERPRISE \_ SERVER \_ CORE** (14)
 
 
 </dt> <dd>
@@ -1120,18 +1120,18 @@ Enterprise Server Core Edition
 
 <span id="PRODUCT_WEB_SERVER"></span><span id="product_web_server"></span>
 
-<span id="PRODUCT_WEB_SERVER"></span><span id="product_web_server"></span>**Producto \_ de \_Servidor Web** (17)
+<span id="PRODUCT_WEB_SERVER"></span><span id="product_web_server"></span>**PRODUCT \_ SERVIDOR \_ WEB** (17)
 
 
 </dt> <dd>
 
-Edición del servidor Web
+Web Server Edition
 
 </dd> <dt>
 
 <span id="PRODUCT_HOME_SERVER"></span><span id="product_home_server"></span>
 
-<span id="PRODUCT_HOME_SERVER"></span><span id="product_home_server"></span>**Producto \_ de \_Servidor principal** (19)
+<span id="PRODUCT_HOME_SERVER"></span><span id="product_home_server"></span>**PRODUCT \_ SERVIDOR \_ PRINCIPAL** (19)
 
 
 </dt> <dd>
@@ -1142,7 +1142,7 @@ Home Server Edition
 
 <span id="PRODUCT_STORAGE_EXPRESS_SERVER"></span><span id="product_storage_express_server"></span>
 
-<span id="PRODUCT_STORAGE_EXPRESS_SERVER"></span><span id="product_storage_express_server"></span>**Producto \_ de \_ \_ Servidor de almacenamiento rápido** (20)
+<span id="PRODUCT_STORAGE_EXPRESS_SERVER"></span><span id="product_storage_express_server"></span>**PRODUCT \_ STORAGE \_ EXPRESS \_ SERVER** (20)
 
 
 </dt> <dd>
@@ -1153,7 +1153,7 @@ Storage Express Server Edition
 
 <span id="PRODUCT_STORAGE_STANDARD_SERVER"></span><span id="product_storage_standard_server"></span>
 
-<span id="PRODUCT_STORAGE_STANDARD_SERVER"></span><span id="product_storage_standard_server"></span>**Producto \_ de STORAGE \_ Standard \_ Server** (21)
+<span id="PRODUCT_STORAGE_STANDARD_SERVER"></span><span id="product_storage_standard_server"></span>**PRODUCT \_ SERVIDOR \_ ESTÁNDAR \_ DE ALMACENAMIENTO** (21)
 
 
 </dt> <dd>
@@ -1164,7 +1164,7 @@ Windows Storage Server Standard Edition (instalación de experiencia de escritor
 
 <span id="PRODUCT_STORAGE_WORKGROUP_SERVER"></span><span id="product_storage_workgroup_server"></span>
 
-<span id="PRODUCT_STORAGE_WORKGROUP_SERVER"></span><span id="product_storage_workgroup_server"></span>**Producto \_ de \_ \_ Servidor de grupo de trabajo de almacenamiento** (22)
+<span id="PRODUCT_STORAGE_WORKGROUP_SERVER"></span><span id="product_storage_workgroup_server"></span>**PRODUCT \_ SERVIDOR DE \_ GRUPO \_ DE TRABAJO DE** ALMACENAMIENTO (22)
 
 
 </dt> <dd>
@@ -1175,7 +1175,7 @@ Windows Storage Server Workgroup Edition (instalación de experiencia de escrito
 
 <span id="PRODUCT_STORAGE_ENTERPRISE_SERVER"></span><span id="product_storage_enterprise_server"></span>
 
-<span id="PRODUCT_STORAGE_ENTERPRISE_SERVER"></span><span id="product_storage_enterprise_server"></span>**Producto \_ de STORAGE \_ Enterprise \_ Server** (23)
+<span id="PRODUCT_STORAGE_ENTERPRISE_SERVER"></span><span id="product_storage_enterprise_server"></span>**PRODUCT \_ STORAGE \_ ENTERPRISE \_ SERVER** (23)
 
 
 </dt> <dd>
@@ -1186,40 +1186,40 @@ Storage Enterprise Server Edition
 
 <span id="PRODUCT_SERVER_FOR_SMALLBUSINESS"></span><span id="product_server_for_smallbusiness"></span>
 
-<span id="PRODUCT_SERVER_FOR_SMALLBUSINESS"></span><span id="product_server_for_smallbusiness"></span>**Producto \_ de SERVIDOR \_ para \_ SMALLBUSINESS** (24)
+<span id="PRODUCT_SERVER_FOR_SMALLBUSINESS"></span><span id="product_server_for_smallbusiness"></span>**PRODUCT \_ SERVER \_ FOR \_ SMALLBUSINESS** (24)
 
 
 </dt> <dd>
 
-Servidor para Small Business Edition
+Server For Small Business Edition
 
 </dd> <dt>
 
 <span id="PRODUCT_SMALLBUSINESS_SERVER_PREMIUM"></span><span id="product_smallbusiness_server_premium"></span>
 
-<span id="PRODUCT_SMALLBUSINESS_SERVER_PREMIUM"></span><span id="product_smallbusiness_server_premium"></span>**Producto \_ de SMALLBUSINESS \_ Server \_ Premium** (25)
+<span id="PRODUCT_SMALLBUSINESS_SERVER_PREMIUM"></span><span id="product_smallbusiness_server_premium"></span>**PRODUCT \_ SMALLBUSINESS \_ SERVER \_ PREMIUM** (25)
 
 
 </dt> <dd>
 
-Edición Premium de Small Business Server
+Small Business Server Premium Edition
 
 </dd> <dt>
 
 <span id="PRODUCT_ENTERPRISE_N"></span><span id="product_enterprise_n"></span>
 
-<span id="PRODUCT_ENTERPRISE_N"></span><span id="product_enterprise_n"></span>**Producto \_ de ENTERPRISE \_ N** (27)
+<span id="PRODUCT_ENTERPRISE_N"></span><span id="product_enterprise_n"></span>**PRODUCT \_ ENTERPRISE \_ N** (27)
 
 
 </dt> <dd>
 
-Edición Enterprise de Windows
+Windows Enterprise Edition
 
 </dd> <dt>
 
 <span id="PRODUCT_ULTIMATE_N"></span><span id="product_ultimate_n"></span>
 
-<span id="PRODUCT_ULTIMATE_N"></span><span id="product_ultimate_n"></span>**Producto \_ de ULTIMATE \_ N** (28)
+<span id="PRODUCT_ULTIMATE_N"></span><span id="product_ultimate_n"></span>**PRODUCT \_ ULTIMATE \_ N** (28)
 
 
 </dt> <dd>
@@ -1230,29 +1230,29 @@ Windows Ultimate Edition
 
 <span id="PRODUCT_WEB_SERVER_CORE"></span><span id="product_web_server_core"></span>
 
-<span id="PRODUCT_WEB_SERVER_CORE"></span><span id="product_web_server_core"></span>**Producto \_ de \_Servidor Web \_ Core** (29)
+<span id="PRODUCT_WEB_SERVER_CORE"></span><span id="product_web_server_core"></span>**PRODUCT \_ WEB \_ SERVER \_ CORE** (29)
 
 
 </dt> <dd>
 
-Windows Server Web Server Edition (instalación Server Core)
+Windows Server Web Server Edition (instalación server core)
 
 </dd> <dt>
 
 <span id="PRODUCT_STANDARD_SERVER_V"></span><span id="product_standard_server_v"></span>
 
-<span id="PRODUCT_STANDARD_SERVER_V"></span><span id="product_standard_server_v"></span>**Producto \_ de STANDARD \_ Server \_ V** (36)
+<span id="PRODUCT_STANDARD_SERVER_V"></span><span id="product_standard_server_v"></span>**PRODUCT \_ STANDARD \_ SERVER \_ V** (36)
 
 
 </dt> <dd>
 
-Windows Server Standard Edition sin Hyper-V
+Windows Servidor Standard Edition sin Hyper-V
 
 </dd> <dt>
 
 <span id="PRODUCT_DATACENTER_SERVER_V"></span><span id="product_datacenter_server_v"></span>
 
-<span id="PRODUCT_DATACENTER_SERVER_V"></span><span id="product_datacenter_server_v"></span>**Producto \_ de Datacenter \_ Server \_ V** (37)
+<span id="PRODUCT_DATACENTER_SERVER_V"></span><span id="product_datacenter_server_v"></span>**PRODUCT \_ DATACENTER \_ SERVER \_ V** (37)
 
 
 </dt> <dd>
@@ -1263,51 +1263,51 @@ Windows Server Datacenter Edition sin Hyper-V (instalación completa)
 
 <span id="PRODUCT_ENTERPRISE_SERVER_V"></span><span id="product_enterprise_server_v"></span>
 
-<span id="PRODUCT_ENTERPRISE_SERVER_V"></span><span id="product_enterprise_server_v"></span>**Producto \_ de ENTERPRISE \_ Server \_ V** (38)
+<span id="PRODUCT_ENTERPRISE_SERVER_V"></span><span id="product_enterprise_server_v"></span>**PRODUCT \_ ENTERPRISE \_ SERVER \_ V** (38)
 
 
 </dt> <dd>
 
-Windows Server Enterprise Edition sin Hyper-V (instalación completa)
+Windows Servidor Enterprise Edition sin Hyper-V (instalación completa)
 
 </dd> <dt>
 
 <span id="PRODUCT_DATACENTER_SERVER_CORE_V"></span><span id="product_datacenter_server_core_v"></span>
 
-<span id="PRODUCT_DATACENTER_SERVER_CORE_V"></span><span id="product_datacenter_server_core_v"></span>**Producto \_ de Datacenter \_ Server \_ Core \_ V** (39)
+<span id="PRODUCT_DATACENTER_SERVER_CORE_V"></span><span id="product_datacenter_server_core_v"></span>**PRODUCT \_ DATACENTER \_ SERVER \_ CORE \_ V** (39)
 
 
 </dt> <dd>
 
-Windows Server Datacenter Edition sin Hyper-V (instalación Server Core)
+Windows Server Datacenter Edition sin Hyper-V (instalación de Server Core)
 
 </dd> <dt>
 
 <span id="PRODUCT_STANDARD_SERVER_CORE_V"></span><span id="product_standard_server_core_v"></span>
 
-<span id="PRODUCT_STANDARD_SERVER_CORE_V"></span><span id="product_standard_server_core_v"></span>**Producto \_ de STANDARD \_ Server \_ Core \_ V** (40)
+<span id="PRODUCT_STANDARD_SERVER_CORE_V"></span><span id="product_standard_server_core_v"></span>**PRODUCT \_ STANDARD \_ SERVER \_ CORE \_ V** (40)
 
 
 </dt> <dd>
 
-Windows Server Standard Edition sin Hyper-V (instalación Server Core)
+Windows Servidor Standard Edition sin Hyper-V (instalación de Server Core)
 
 </dd> <dt>
 
 <span id="PRODUCT_ENTERPRISE_SERVER_CORE_V"></span><span id="product_enterprise_server_core_v"></span>
 
-<span id="PRODUCT_ENTERPRISE_SERVER_CORE_V"></span><span id="product_enterprise_server_core_v"></span>**Producto \_ de ENTERPRISE \_ Server \_ Core \_ V** (41)
+<span id="PRODUCT_ENTERPRISE_SERVER_CORE_V"></span><span id="product_enterprise_server_core_v"></span>**PRODUCT \_ ENTERPRISE \_ SERVER \_ CORE \_ V** (41)
 
 
 </dt> <dd>
 
-Windows Server Enterprise Edition sin Hyper-V (instalación Server Core)
+Windows Server Enterprise Edition sin Hyper-V (instalación de Server Core)
 
 </dd> <dt>
 
 <span id="PRODUCT_HYPERV"></span><span id="product_hyperv"></span>
 
-<span id="PRODUCT_HYPERV"></span><span id="product_hyperv"></span>**Producto \_ de HYPERV** (42)
+<span id="PRODUCT_HYPERV"></span><span id="product_hyperv"></span>**PRODUCT \_ HYPERV** (42)
 
 
 </dt> <dd>
@@ -1318,51 +1318,51 @@ Microsoft Hyper-V Server
 
 <span id="PRODUCT_STORAGE_EXPRESS_SERVER_CORE"></span><span id="product_storage_express_server_core"></span>
 
-<span id="PRODUCT_STORAGE_EXPRESS_SERVER_CORE"></span><span id="product_storage_express_server_core"></span>**Producto \_ de STORAGE \_ Express \_ Server \_ Core** (43)
+<span id="PRODUCT_STORAGE_EXPRESS_SERVER_CORE"></span><span id="product_storage_express_server_core"></span>**PRODUCT \_ STORAGE \_ EXPRESS \_ SERVER \_ CORE** (43)
 
 
 </dt> <dd>
 
-Storage Server Express Edition (instalación Server Core)
+Storage Server Express Edition (instalación de Server Core)
 
 </dd> <dt>
 
 <span id="PRODUCT_STORAGE_STANDARD_SERVER_CORE"></span><span id="product_storage_standard_server_core"></span>
 
-<span id="PRODUCT_STORAGE_STANDARD_SERVER_CORE"></span><span id="product_storage_standard_server_core"></span>**Producto \_ de STORAGE \_ Standard \_ Server \_ Core** (44)
+<span id="PRODUCT_STORAGE_STANDARD_SERVER_CORE"></span><span id="product_storage_standard_server_core"></span>**PRODUCT \_ STORAGE \_ STANDARD \_ SERVER \_ CORE** (44)
 
 
 </dt> <dd>
 
-Storage Server Standard Edition (instalación Server Core)
+Storage Server Standard Edition (instalación de Server Core)
 
 </dd> <dt>
 
 <span id="PRODUCT_STORAGE_WORKGROUP_SERVER_CORE"></span><span id="product_storage_workgroup_server_core"></span>
 
-<span id="PRODUCT_STORAGE_WORKGROUP_SERVER_CORE"></span><span id="product_storage_workgroup_server_core"></span>**Producto \_ de STORAGE \_ Workgroup \_ Server \_ Core** (45)
+<span id="PRODUCT_STORAGE_WORKGROUP_SERVER_CORE"></span><span id="product_storage_workgroup_server_core"></span>**PRODUCT \_ STORAGE \_ WORKGROUP \_ SERVER \_ CORE** (45)
 
 
 </dt> <dd>
 
-Storage Server Workgroup Edition (instalación Server Core)
+Storage Server Workgroup Edition (instalación de Server Core)
 
 </dd> <dt>
 
 <span id="PRODUCT_STORAGE_ENTERPRISE_SERVER_CORE"></span><span id="product_storage_enterprise_server_core"></span>
 
-<span id="PRODUCT_STORAGE_ENTERPRISE_SERVER_CORE"></span><span id="product_storage_enterprise_server_core"></span>**Producto \_ de STORAGE \_ Enterprise \_ Server \_ Core** (46)
+<span id="PRODUCT_STORAGE_ENTERPRISE_SERVER_CORE"></span><span id="product_storage_enterprise_server_core"></span>**PRODUCT \_ STORAGE \_ ENTERPRISE \_ SERVER \_ CORE** (46)
 
 
 </dt> <dd>
 
-Storage Server Workgroup Edition (instalación Server Core)
+Storage Server Workgroup Edition (instalación de Server Core)
 
 </dd> <dt>
 
 <span id="PRODUCT_PROFESSIONAL"></span><span id="product_professional"></span>
 
-<span id="PRODUCT_PROFESSIONAL"></span><span id="product_professional"></span>**Producto \_ de PROFESSIONAL** (48)
+<span id="PRODUCT_PROFESSIONAL"></span><span id="product_professional"></span>**PRODUCT \_ PROFESSIONAL** (48)
 
 
 </dt> <dd>
@@ -1373,40 +1373,40 @@ Windows Professional
 
 <span id="PRODUCT_SB_SOLUTION_SERVER"></span><span id="product_sb_solution_server"></span>
 
-<span id="PRODUCT_SB_SOLUTION_SERVER"></span><span id="product_sb_solution_server"></span>**Producto \_ de \_ \_ Servidor de soluciones SB** (50)
+<span id="PRODUCT_SB_SOLUTION_SERVER"></span><span id="product_sb_solution_server"></span>**PRODUCT \_ SB \_ SOLUTION \_ SERVER** (50)
 
 
 </dt> <dd>
 
-Windows Server Essentials (instalación de experiencia de escritorio)
+Windows Server Essentials (instalación de la experiencia de escritorio)
 
 </dd> <dt>
 
 <span id="PRODUCT_SMALLBUSINESS_SERVER_PREMIUM_CORE"></span><span id="product_smallbusiness_server_premium_core"></span>
 
-<span id="PRODUCT_SMALLBUSINESS_SERVER_PREMIUM_CORE"></span><span id="product_smallbusiness_server_premium_core"></span>**Producto \_ de Servidor de SMALLBUSINESS \_ \_ Premium \_ Core** (63)
+<span id="PRODUCT_SMALLBUSINESS_SERVER_PREMIUM_CORE"></span><span id="product_smallbusiness_server_premium_core"></span>**PRODUCT \_ SMALLBUSINESS \_ SERVER \_ PREMIUM \_ CORE** (63)
 
 
 </dt> <dd>
 
-Small Business Server Premium (instalación Server Core)
+Small Business Server Premium (instalación de Server Core)
 
 </dd> <dt>
 
 <span id="PRODUCT_CLUSTER_SERVER_V"></span><span id="product_cluster_server_v"></span>
 
-<span id="PRODUCT_CLUSTER_SERVER_V"></span><span id="product_cluster_server_v"></span>**Producto \_ de CLUSTER \_ Server \_ V** (64)
+<span id="PRODUCT_CLUSTER_SERVER_V"></span><span id="product_cluster_server_v"></span>**PRODUCT \_ SERVIDOR \_ DE \_ CLÚSTER V** (64)
 
 
 </dt> <dd>
 
-Windows Compute Cluster Server sin Hyper-V
+Windows Servidor de clúster de proceso sin Hyper-V
 
 </dd> <dt>
 
 <span id="PRODUCT_CORE_ARM"></span><span id="product_core_arm"></span>
 
-<span id="PRODUCT_CORE_ARM"></span><span id="product_core_arm"></span>**Producto \_ de CORE \_ ARM** (97)
+<span id="PRODUCT_CORE_ARM"></span><span id="product_core_arm"></span>**PRODUCT \_ CORE \_ ARM** (97)
 
 
 </dt> <dd>
@@ -1417,18 +1417,18 @@ Windows RT
 
 <span id="PRODUCT_CORE"></span><span id="product_core"></span>
 
-<span id="PRODUCT_CORE"></span><span id="product_core"></span>**Producto \_ de NÚCLEO** (101)
+<span id="PRODUCT_CORE"></span><span id="product_core"></span>**PRODUCT \_ CORE** (101)
 
 
 </dt> <dd>
 
-Inicio de Windows
+Windows Casa
 
 </dd> <dt>
 
 <span id="PRODUCT_PROFESSIONAL_WMC"></span><span id="product_professional_wmc"></span>
 
-<span id="PRODUCT_PROFESSIONAL_WMC"></span><span id="product_professional_wmc"></span>**Producto \_ de PROFESSIONAL \_ WMC** (103)
+<span id="PRODUCT_PROFESSIONAL_WMC"></span><span id="product_professional_wmc"></span>**PRODUCT \_ PROFESSIONAL \_ WMC** (103)
 
 
 </dt> <dd>
@@ -1439,7 +1439,7 @@ Windows Professional con Media Center
 
 <span id="PRODUCT_MOBILE_CORE"></span><span id="product_mobile_core"></span>
 
-<span id="PRODUCT_MOBILE_CORE"></span><span id="product_mobile_core"></span>**Producto \_ de MOBILE \_ Core** (104)
+<span id="PRODUCT_MOBILE_CORE"></span><span id="product_mobile_core"></span>**PRODUCT \_ MOBILE \_ CORE** (104)
 
 
 </dt> <dd>
@@ -1450,7 +1450,7 @@ Windows Mobile
 
 <span id="PRODUCT_IOTUAP"></span><span id="product_iotuap"></span>
 
-<span id="PRODUCT_IOTUAP"></span><span id="product_iotuap"></span>**Producto \_ de IOTUAP** (123)
+<span id="PRODUCT_IOTUAP"></span><span id="product_iotuap"></span>**PRODUCT \_ IOTUAP** (123)
 
 
 </dt> <dd>
@@ -1461,45 +1461,45 @@ Windows IoT (Internet de las cosas) Core
 
 <span id="PRODUCT_DATACENTER_NANO_SERVER"></span><span id="product_datacenter_nano_server"></span>
 
-<span id="PRODUCT_DATACENTER_NANO_SERVER"></span><span id="product_datacenter_nano_server"></span>**Producto \_ de Datacenter \_ nano \_ SERVER** (143)
+<span id="PRODUCT_DATACENTER_NANO_SERVER"></span><span id="product_datacenter_nano_server"></span>**PRODUCT \_ DATACENTER \_ NANO \_ SERVER** (143)
 
 
 </dt> <dd>
 
-Windows Server Datacenter Edition (instalación de nano Server)
+Windows Server Datacenter Edition (instalación de Nano Server)
 
 </dd> <dt>
 
 <span id="PRODUCT_STANDARD_NANO_SERVER"></span><span id="product_standard_nano_server"></span>
 
-<span id="PRODUCT_STANDARD_NANO_SERVER"></span><span id="product_standard_nano_server"></span>**Producto \_ de \_Nano \_ Server estándar** (144)
+<span id="PRODUCT_STANDARD_NANO_SERVER"></span><span id="product_standard_nano_server"></span>**PRODUCT \_ SERVIDOR \_ NANO \_ ESTÁNDAR** (144)
 
 
 </dt> <dd>
 
-Windows Server Standard Edition (instalación de nano Server)
+Windows Server Standard Edition (instalación de Nano Server)
 
 </dd> <dt>
 
 <span id="PRODUCT_DATACENTER_WS_SERVER_CORE"></span><span id="product_datacenter_ws_server_core"></span>
 
-<span id="PRODUCT_DATACENTER_WS_SERVER_CORE"></span><span id="product_datacenter_ws_server_core"></span>**Producto \_ de Datacenter \_ WS \_ Server \_ Core** (147)
+<span id="PRODUCT_DATACENTER_WS_SERVER_CORE"></span><span id="product_datacenter_ws_server_core"></span>**PRODUCT \_ DATACENTER \_ WS \_ SERVER \_ CORE** (147)
 
 
 </dt> <dd>
 
-Windows Server Datacenter Edition (instalación Server Core)
+Windows Server Datacenter Edition (instalación de Server Core)
 
 </dd> <dt>
 
 <span id="PRODUCT_STANDARD_WS_SERVER_CORE"></span><span id="product_standard_ws_server_core"></span>
 
-<span id="PRODUCT_STANDARD_WS_SERVER_CORE"></span><span id="product_standard_ws_server_core"></span>**Producto \_ de STANDARD \_ WS \_ Server \_ Core** (148)
+<span id="PRODUCT_STANDARD_WS_SERVER_CORE"></span><span id="product_standard_ws_server_core"></span>**PRODUCT \_ STANDARD \_ WS \_ SERVER \_ CORE** (148)
 
 
 </dt> <dd>
 
-Windows Server Standard Edition (instalación Server Core)
+Windows Server Standard Edition (instalación de Server Core)
 
 </dd> </dl>
 
@@ -1514,10 +1514,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows \\ \\ CurrentVersion \| RegisteredOrganization")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft Windows \\ \\ \\ \\ \\ \\ CurrentVersion \| RegisteredOrganization")
 </dt> </dl>
 
-Nombre de la compañía para el usuario registrado del sistema operativo.
+Nombre de la compañía del usuario registrado del sistema operativo.
 
 Ejemplo: "Microsoft Corporation"
 
@@ -1541,16 +1541,16 @@ Ejemplo: 32 bits
 **OSLanguage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| \\ \\ \\ \\ configuración regional internacional del panel de control \| ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| DEFAULT Panel de control configuración regional \\ \\ \\ \\ \| internacional")
 </dt> </dl>
 
-Versión de idioma del sistema operativo instalado. En la lista siguiente se enumeran los valores posibles. Ejemplo: 0x0807 (alemán, Suiza).
+Versión de idioma del sistema operativo instalada. En la lista siguiente se enumeran los valores posibles. Ejemplo: 0x0807 (Alemán, Suiza).
 
 <dt>
 
@@ -1564,7 +1564,7 @@ Versión de idioma del sistema operativo instalado. En la lista siguiente se enu
 4 (0x4)
 </dt> <dd>
 
-Chino (simplificado) – China
+Chino (simplificado): China
 
 </dd> <dt>
 
@@ -1578,7 +1578,7 @@ Inglés
 1025 (0x401)
 </dt> <dd>
 
-Árabe – Arabia Saudí
+Árabe: Emiratos Árabes Unidos
 
 </dd> <dt>
 
@@ -1599,7 +1599,7 @@ Catalán
 1028 (0x404)
 </dt> <dd>
 
-Chino (tradicional) – Taiwán
+Chino (tradicional): Taiwán
 
 </dd> <dt>
 
@@ -1631,17 +1631,17 @@ Griego
 
 </dd> <dt>
 
-1033 (0xC0A)
+1033 (0x409)
 </dt> <dd>
 
-Inglés – Estados Unidos
+Inglés: Estados Unidos
 
 </dd> <dt>
 
 1034 (0x40A)
 </dt> <dd>
 
-Español – Alfabetización tradicional
+Español: ordenación tradicional
 
 </dd> <dt>
 
@@ -1711,7 +1711,7 @@ Neerlandés – Países Bajos
 1044 (0x414)
 </dt> <dd>
 
-Noruego – Bokmal
+Noruego: Bokmal
 
 </dd> <dt>
 
@@ -1834,7 +1834,7 @@ Estonio
 
 </dd> <dt>
 
-1062 (0x426 al)
+1062 (0x426)
 </dt> <dd>
 
 Letón
@@ -1879,7 +1879,7 @@ Serbio
 1071 (0x42F)
 </dt> <dd>
 
-Macedonio (norte de Macedonia)
+Nordeste (Norte de Nordeste)
 
 </dd> <dt>
 
@@ -1949,7 +1949,7 @@ Maltés
 1084 (0x43C)
 </dt> <dd>
 
-Gaélico escocés (Reino Unido)
+Gaélico Desfila (Reino Unido)
 
 </dd> <dt>
 
@@ -1960,24 +1960,24 @@ Yidis
 
 </dd> <dt>
 
-1086 (establézcalo 0x43e)
+1086 (0x43E)
 </dt> <dd>
 
-Malayo: Malasia
+Malayo – Australia
 
 </dd> <dt>
 
 2049 (0x801)
 </dt> <dd>
 
-Árabe – Iraq
+Árabe – Países Árabes
 
 </dd> <dt>
 
 2052 (0x804)
 </dt> <dd>
 
-Chino (simplificado) – PRC
+Chino (simplificado): PRC
 
 </dd> <dt>
 
@@ -1991,7 +1991,7 @@ Alemán – Suiza
 2057 (0x809)
 </dt> <dd>
 
-Inglés (Reino Unido)
+Inglés – Reino Unido
 
 </dd> <dt>
 
@@ -2005,7 +2005,7 @@ Español – México
 2060 (0x80C)
 </dt> <dd>
 
-Francés (Bélgica)
+Francés : Alemania
 
 </dd> <dt>
 
@@ -2019,14 +2019,14 @@ Italiano – Suiza
 2067 (0x813)
 </dt> <dd>
 
-Holandés – Bélgica
+Neerlandés : Alemania
 
 </dd> <dt>
 
 2068 (0x814)
 </dt> <dd>
 
-Noruego – nynorsk
+Noruego : Nyno norwegian
 
 </dd> <dt>
 
@@ -2040,70 +2040,70 @@ Portugués – Portugal
 2072 (0x818)
 </dt> <dd>
 
-Rumano – Moldavia
+Mosso – Reinoso
 
 </dd> <dt>
 
 2073 (0x819)
 </dt> <dd>
 
-Ruso (Moldova)
+Ruso: Rusia
 
 </dd> <dt>
 
 2074 (0x81A)
 </dt> <dd>
 
-Serbio: Latín
+Serbio – latino
 
 </dd> <dt>
 
 2077 (0x81D)
 </dt> <dd>
 
-Sueco – Finlandia
+Sueco – Estados Unidos
 
 </dd> <dt>
 
 3073 (0xC01)
 </dt> <dd>
 
-Árabe – Egipto
+Árabe : Arábigo
 
 </dd> <dt>
 
 3076 (0xC04)
 </dt> <dd>
 
-Chino (tradicional): Hong Kong RAE
+Chino (tradicional): RAE de Hong Kong
 
 </dd> <dt>
 
 3079 (0xC07)
 </dt> <dd>
 
-Alemán – Austria
+Alemán : Francia
 
 </dd> <dt>
 
 3081 (0xC09)
 </dt> <dd>
 
-Inglés (Australia)
+Inglés : Australia
 
 </dd> <dt>
 
 3082 (0xC0A)
 </dt> <dd>
 
-Español – alfabetización internacional
+Español: ordenación internacional
 
 </dd> <dt>
 
 3084 (0xC0C)
 </dt> <dd>
 
-Francés (Canadá)
+Francés – Canadá
 
 </dd> <dt>
 
@@ -2117,7 +2117,7 @@ Serbio: cirílico
 4097 (0x1001)
 </dt> <dd>
 
-Árabe – Libia
+Árabe : Infiesa
 
 </dd> <dt>
 
@@ -2131,7 +2131,7 @@ Chino (simplificado): Singapur
 4103 (0x1007)
 </dt> <dd>
 
-Alemán – Luxemburgo
+Alemán: Alemania: Alemania
 
 </dd> <dt>
 
@@ -2145,56 +2145,56 @@ Inglés – Canadá
 4106 (0x100A)
 </dt> <dd>
 
-Español – Guatemala
+Español: España
 
 </dd> <dt>
 
 4108 (0x100C)
 </dt> <dd>
 
-Francés (Suiza)
+Francés : Suiza
 
 </dd> <dt>
 
 5121 (0x1401)
 </dt> <dd>
 
-Árabe (Argelia)
+Árabe: insólo
 
 </dd> <dt>
 
 5127 (0x1407)
 </dt> <dd>
 
-Alemán – Liechtenstein
+German – Liechtenstein
 
 </dd> <dt>
 
 5129 (0x1409)
 </dt> <dd>
 
-Inglés – Nueva Zelanda
+Inglés : Nueva Zelanda
 
 </dd> <dt>
 
 5130 (0x140A)
 </dt> <dd>
 
-Español – Costa Rica
+Español : Costa Rica
 
 </dd> <dt>
 
 5132 (0x140C)
 </dt> <dd>
 
-Francés – Luxemburgo
+Francés: Conste
 
 </dd> <dt>
 
 6145 (0x1801)
 </dt> <dd>
 
-Árabe – Marruecos
+Árabe : Francia
 
 </dd> <dt>
 
@@ -2208,203 +2208,203 @@ Inglés – Irlanda
 6154 (0x180A)
 </dt> <dd>
 
-Español – Panamá
+Español : España
 
 </dd> <dt>
 
 7169 (0x1C01)
 </dt> <dd>
 
-Árabe – Túnez
+Árabe: insondía
 
 </dd> <dt>
 
 7177 (0x1C09)
 </dt> <dd>
 
-Inglés (Sudáfrica)
+Inglés – Sudáfrica
 
 </dd> <dt>
 
 7178 (0x1C0A)
 </dt> <dd>
 
-Español (República Dominicana)
+Español – República De Corea del Suba
 
 </dd> <dt>
 
 8193 (0x2001)
 </dt> <dd>
 
-Árabe – Omán
+Árabe : Omán
 
 </dd> <dt>
 
 8201 (0x2009)
 </dt> <dd>
 
-Inglés – Jamaica
+English – Jamaica
 
 </dd> <dt>
 
 8202 (0x200A)
 </dt> <dd>
 
-Español – Venezuela
+Español: España
 
 </dd> <dt>
 
 9217 (0x2401)
 </dt> <dd>
 
-Árabe – Yemen
+Árabe – Países Árabes
 
 </dd> <dt>
 
 9226 (0x240A)
 </dt> <dd>
 
-Español – Colombia
+Español : España
 
 </dd> <dt>
 
 10241 (0x2801)
 </dt> <dd>
 
-Árabe – Siria
+Árabe – Rusia
 
 </dd> <dt>
 
 10249 (0x2809)
 </dt> <dd>
 
-Inglés – Belice
+Inglés : Leal
 
 </dd> <dt>
 
 10250 (0x280A)
 </dt> <dd>
 
-Español – Perú
+Español – País
 
 </dd> <dt>
 
 11265 (0x2C01)
 </dt> <dd>
 
-Árabe – Jordania
+Árabe – Surábigo
 
 </dd> <dt>
 
 11273 (0x2C09)
 </dt> <dd>
 
-Inglés – Trinidad
+English – Trinidad
 
 </dd> <dt>
 
 11274 (0x2C0A)
 </dt> <dd>
 
-Español – Argentina
+Español : Argentina
 
 </dd> <dt>
 
 12289 (0x3001)
 </dt> <dd>
 
-Árabe – Líbano
+Árabe : insocenario
 
 </dd> <dt>
 
 12298 (0x300A)
 </dt> <dd>
 
-Español – Ecuador
+Español – Ecuatoriano
 
 </dd> <dt>
 
 13313 (0x3401)
 </dt> <dd>
 
-Árabe – Kuwait
+Árabe – Países Árabes
 
 </dd> <dt>
 
 13322 (0x340A)
 </dt> <dd>
 
-Español – Chile
+Español: México
 
 </dd> <dt>
 
 14337 (0x3801)
 </dt> <dd>
 
-Árabe – Emiratos Árabes Unidos
+Árabe : Ee. UU.
 
 </dd> <dt>
 
 14346 (0x380A)
 </dt> <dd>
 
-Español – Uruguay
+Español: España
 
 </dd> <dt>
 
 15361 (0x3C01)
 </dt> <dd>
 
-Árabe – Bahrein
+Árabe – Surábigo
 
 </dd> <dt>
 
 15370 (0x3C0A)
 </dt> <dd>
 
-Español – Paraguay
+Español: España
 
 </dd> <dt>
 
 16385 (0x4001)
 </dt> <dd>
 
-Árabe – Qatar
+Árabe – Países Árabes
 
 </dd> <dt>
 
 16394 (0x400A)
 </dt> <dd>
 
-Español (Bolivia)
+Español: Argentina
 
 </dd> <dt>
 
 17418 (0x440A)
 </dt> <dd>
 
-Español – El Salvador
+Español: El País
 
 </dd> <dt>
 
 18442 (0x480A)
 </dt> <dd>
 
-Español – Honduras
+Español: Nociones
 
 </dd> <dt>
 
 19466 (0x4C0A)
 </dt> <dd>
 
-Español (Nicaragua)
+Español: Asínco
 
 </dd> <dt>
 
 20490 (0x500A)
 </dt> <dd>
 
-Español (Puerto Rico)
+Español: Puerto Rico
 
 </dd> </dl>
 
@@ -2413,27 +2413,27 @@ Español (Puerto Rico)
 **OSProductSuite**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ PRODUCTOPTIONS \| ProductSuite"), [**BitValues**](../wmisdk/standard-qualifiers.md) ("Small Business", "Enterprise", "BackOffice", "Communication Server", "Terminal Server", "Small Business (Restricted)", "Embedded NT", "Data Center")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ ProductOptions \| ProductSuite"), [**BitValues**](../wmisdk/standard-qualifiers.md) ("Small Business", "Enterprise", "BackOffice", "Communication Server", "Terminal Server", "Small Business(Restricted)", "Embedded NT", "Data Center")
 </dt> </dl>
 
-Se han instalado y con licencia las adiciones de productos del sistema al sistema operativo. Por ejemplo, el valor 146 (0x92) para **OSProductSuite** indica Enterprise, Terminal Services y Data Center (bits uno, cuatro y siete establecidos). En la lista siguiente se enumeran los valores posibles.
+Adiciones de productos del sistema instalados y con licencia al sistema operativo. Por ejemplo, el valor de 146 (0x92) para **OSProductSuite** indica Enterprise, Terminal Services y Data Center (bits uno, cuatro y siete conjuntos). En la lista siguiente se enumeran los valores posibles.
 
 <dt>
 
 1 (0x1)
 </dt> <dd>
 
-Microsoft Small Business Server se instaló una vez, pero es posible que se haya actualizado a otra versión de Windows.
+Microsoft Small Business Server se instaló una vez, pero puede que se haya actualizado a otra versión de Windows.
 
 </dd> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dd>
 
 Windows Server 2008 Enterprise está instalado.
@@ -2443,14 +2443,14 @@ Windows Server 2008 Enterprise está instalado.
 4 (0x4)
 </dt> <dd>
 
-Los componentes de Windows BackOffice están instalados.
+Windows Los componentes de BackOffice están instalados.
 
 </dd> <dt>
 
 8 (0x8)
 </dt> <dd>
 
-El servidor de comunicación está instalado.
+Communication Server está instalado.
 
 </dd> <dt>
 
@@ -2478,7 +2478,7 @@ Windows Embedded está instalado.
 128 (0x80)
 </dt> <dd>
 
-Se instala una edición de Datacenter.
+Se instala una edición datacenter.
 
 </dd> <dt>
 
@@ -2522,7 +2522,7 @@ Compute Cluster Edition está instalado.
 **OSType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -2531,9 +2531,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OtherTypeDescription**")
 </dt> </dl>
 
-Tipo de sistema operativo. La lista siguiente identifica los valores posibles.
+Tipo de sistema operativo. En la lista siguiente se identifican los valores posibles.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 <dt>
 
@@ -2546,19 +2546,19 @@ Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="MACOS"></span><span id="macos"></span>
 
-<span id="MACOS"></span><span id="macos"></span>**MacOS** (2)
+<span id="MACOS"></span><span id="macos"></span>**MACOS** (2)
 
 
 </dt> <dd>
 
-MACROS
+Macros
 
 </dd> <dt>
 
@@ -2585,7 +2585,7 @@ MACROS
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**UNIX digital** (6)
+<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Unix digital** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -2606,7 +2606,7 @@ MACROS
 
 <span id="AIX"></span><span id="aix"></span>
 
-<span id="AIX"></span><span id="aix"></span>**Aix** (9)
+<span id="AIX"></span><span id="aix"></span>**AIX** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -2627,7 +2627,7 @@ MACROS
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**Os/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -2641,7 +2641,7 @@ MACROS
 
 <span id="MSDOS"></span><span id="msdos"></span>
 
-<span id="MSDOS"></span><span id="msdos"></span>**Msdos** (14)
+<span id="MSDOS"></span><span id="msdos"></span>**MSDOS** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -2655,28 +2655,28 @@ MACROS
 
 <span id="WIN95"></span><span id="win95"></span>
 
-<span id="WIN95"></span><span id="win95"></span>**Win95** (16)
+<span id="WIN95"></span><span id="win95"></span>**WIN95** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WIN98"></span><span id="win98"></span>
 
-<span id="WIN98"></span><span id="win98"></span>**Win98** (17)
+<span id="WIN98"></span><span id="win98"></span>**WIN98** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WINNT"></span><span id="winnt"></span>
 
-<span id="WINNT"></span><span id="winnt"></span>**WinNT** (18)
+<span id="WINNT"></span><span id="winnt"></span>**WINNT** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WINCE"></span><span id="wince"></span>
 
-<span id="WINCE"></span><span id="wince"></span>**WinCE** (19)
+<span id="WINCE"></span><span id="wince"></span>**WINCE** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -2704,14 +2704,14 @@ MACROS
 
 <span id="DC_OS"></span><span id="dc_os"></span>
 
-<span id="DC_OS"></span><span id="dc_os"></span>**DC/os** (23)
+<span id="DC_OS"></span><span id="dc_os"></span>**DC/OS** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX que depende** de (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Reliant UNIX** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -2739,7 +2739,7 @@ MACROS
 
 <span id="IRIX"></span><span id="irix"></span>
 
-<span id="IRIX"></span><span id="irix"></span>**IRIX** (28)
+<span id="IRIX"></span><span id="irix"></span>**IIONES** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -2799,35 +2799,35 @@ Solaris
 
 <span id="LINUX"></span><span id="linux"></span>
 
-<span id="LINUX"></span><span id="linux"></span>**Linux** (36)
+<span id="LINUX"></span><span id="linux"></span>**LINUX** (36)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Lynx** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estaciones** (37)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="XENIX"></span><span id="xenix"></span>
 
-<span id="XENIX"></span><span id="xenix"></span>**Xenix** (38)
+<span id="XENIX"></span><span id="xenix"></span>**XENIX** (38)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="VM_ESA"></span><span id="vm_esa"></span>
 
-<span id="VM_ESA"></span><span id="vm_esa"></span>**VM/sec** (39)
+<span id="VM_ESA"></span><span id="vm_esa"></span>**VM/ESA** (39)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interactivo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Interactive UNIX** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -2869,7 +2869,7 @@ Solaris
 
 <span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>
 
-<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel de Mach** (46)
+<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel de MACH** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -2911,7 +2911,7 @@ Solaris
 
 <span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>
 
-<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**Menta** (52)
+<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**MiNT** (52)
 
 
 </dt> <dd></dd> <dt>
@@ -3000,9 +3000,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OSType**")
 </dt> </dl>
 
-Descripción adicional para la versión del sistema operativo actual.
+Descripción adicional de la versión actual del sistema operativo.
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
@@ -3015,7 +3015,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, el sistema operativo que ejecuta los procesadores Intel habilita las extensiones de dirección física (PAE). PAE permite a las aplicaciones abordar más de 4 GB de memoria física. Cuando PAE está habilitado, el sistema operativo utiliza la traducción de direcciones lineales de tres niveles en lugar de dos. Proporcionar más memoria física a una aplicación reduce la necesidad de intercambiar memoria con el archivo de paginación y aumenta el rendimiento. Para habilitar, PAE, use el modificador "/PAE" en el archivo de Boot.ini. Para obtener más información acerca de la característica de extensión de dirección física, vea <https://Go.Microsoft.Com/FWLink/p/?LinkID=45912> .
+Si **es True,** el sistema operativo que se ejecuta en procesadores Intel habilita las extensiones de dirección física (PAE). PAE permite a las aplicaciones abordar más de 4 GB de memoria física. Cuando se habilita PAE, el sistema operativo usa la traducción de direcciones lineales de tres niveles en lugar de dos niveles. Proporcionar más memoria física a una aplicación reduce la necesidad de intercambiar memoria al archivo de página y aumenta el rendimiento. Para habilitar, PAE, use el modificador "/PAE" en el Boot.ini archivo. Para obtener más información sobre la característica extensión de dirección física, vea <https://Go.Microsoft.Com/FWLink/p/?LinkID=45912> .
 
 </dd> <dt>
 
@@ -3028,10 +3028,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| software WIN32REGISTRY \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \| Plus ProductId ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \| Plus! ProductId")
 </dt> </dl>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
@@ -3044,10 +3044,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| software WIN32REGISTRY \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \| Plus VersionNumber ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \| Plus! VersionNumber")
 </dt> </dl>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
@@ -3060,9 +3060,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si el sistema operativo arrancó desde un dispositivo USB externo. Si es true, el sistema operativo ha detectado que se está iniciando en un dispositivo de almacenamiento conectado localmente compatible.
+Especifica si el sistema operativo se ha arrancado desde un dispositivo USB externo. Si es true, el sistema operativo ha detectado que arranca en un dispositivo de almacenamiento conectado localmente compatible.
 
-**Windows server 2008 R2, Windows 7, Windows server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 8 y Windows Server 2012.
+**Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 8 y Windows Server 2012.
 
 </dd> <dt>
 
@@ -3078,14 +3078,14 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Especifica si este es el sistema operativo principal.
+Especifica si se trata del sistema operativo principal.
 
 </dd> <dt>
 
 **ProductType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -3121,20 +3121,20 @@ Información adicional del sistema.
 **QuantumLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ PriorityControl \| Win32PrioritySeparation")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ PriorityControl \| Win32PrioritySeparation")
 </dt> </dl>
 
 No compatible
 
-* * Windows Server 2008 y Windows Vista: * *
+**Windows Server 2008 y Windows Vista: **
 
-La propiedad **QuantumLength** define el número de TICs de reloj por cuanto. Un Quantum es una unidad de tiempo de ejecución que el programador puede conceder a una aplicación antes de cambiar a otras aplicaciones. Cuando un subproceso ejecuta un Quantum, el kernel lo adelanta y lo mueve al final de una cola para las aplicaciones con las mismas prioridades. La longitud real del Quantum de un subproceso varía en distintas plataformas de Windows. Solo para Windows NT/Windows 2000.
+La **propiedad QuantumLength** define el número de tics de reloj por cuántico. Un cuántico es una unidad de tiempo de ejecución que el programador puede dar a una aplicación antes de cambiar a otras aplicaciones. Cuando un subproceso ejecuta un cuántico, el kernel lo adelanta y lo mueve al final de una cola para las aplicaciones con las mismas prioridades. La longitud real del cuántico de un subproceso varía según las distintas plataformas Windows subprocesos. Solo Windows NT/Windows 2000.
 
 Los valores posibles son.
 
@@ -3149,14 +3149,14 @@ Los valores posibles son.
 
 <span id="One_tick"></span><span id="one_tick"></span><span id="ONE_TICK"></span>
 
-**Un TIC** (1)
+**Un tic** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Two_ticks"></span><span id="two_ticks"></span><span id="TWO_TICKS"></span>
 
-**Dos TICs** (2)
+**Dos pasos** (2)
 
 
 </dt> <dd></dd> </dl>
@@ -3166,17 +3166,17 @@ Los valores posibles son.
 **QuantumType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 No compatible
 
-* * Windows Server 2008 y Windows Vista: * *
+**Windows Server 2008 y Windows Vista: **
 
-La propiedad **QuantumType** especifica quantums de longitud fija o variable. Windows toma como valor predeterminado los quantums de longitud variable en los que la aplicación de primer plano tiene un Quantum más largo que las aplicaciones en segundo plano. Windows Server tiene como valor predeterminado quantums de longitud fija. Un Quantum es una unidad de tiempo de ejecución que el programador puede conceder a una aplicación antes de cambiar a otra aplicación. Cuando un subproceso ejecuta un Quantum, el kernel lo adelanta y lo mueve al final de una cola para las aplicaciones con las mismas prioridades. La longitud real del Quantum de un subproceso varía en distintas plataformas de Windows.
+La **propiedad QuantumType** especifica los cuánticos de longitud fija o variable. Windows de forma predeterminada en los cuánticos de longitud variable, donde la aplicación en primer plano tiene un cuanto más largo que las aplicaciones en segundo plano. Windows El servidor tiene como valor predeterminado los cuánticos de longitud fija. Un cuántico es una unidad de tiempo de ejecución que el programador puede dar a una aplicación antes de cambiar a otra aplicación. Cuando un subproceso ejecuta un cuántico, el kernel lo adelanta y lo mueve al final de una cola para las aplicaciones con las mismas prioridades. La longitud real del cuántico de un subproceso varía según las distintas plataformas Windows subprocesos.
 
 Los valores posibles son.
 
@@ -3191,7 +3191,7 @@ Los valores posibles son.
 
 <span id="Fixed"></span><span id="fixed"></span><span id="FIXED"></span>
 
-**Fijo** (1)
+**Corregido** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -3214,7 +3214,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \| RegisteredOwner")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \| RegisteredOwner")
 </dt> </dl>
 
 Nombre del usuario registrado del sistema operativo.
@@ -3232,7 +3232,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \| ProductID")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \| ProductId")
 </dt> </dl>
 
 Número de identificación de serie del producto del sistema operativo.
@@ -3244,13 +3244,13 @@ Ejemplo: "10497-OEM-0031416-71674"
 **ServicePackMajorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| System Information Structures \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **wServicePackMajor**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Información del sistema Structures \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **wServicePackMajor**")
 </dt> </dl>
 
 Número de versión principal del Service Pack instalado en el sistema del equipo. Si no se ha instalado ningún Service Pack, el valor es 0 (cero).
@@ -3260,13 +3260,13 @@ Número de versión principal del Service Pack instalado en el sistema del equip
 **ServicePackMinorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| System Information Structures \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **wServicePackMinor**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Información del sistema Structures \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **wServicePackMinor**")
 </dt> </dl>
 
 Número de versión secundaria del Service Pack instalado en el sistema del equipo. Si no se ha instalado ningún Service Pack, el valor es 0 (cero).
@@ -3276,20 +3276,20 @@ Número de versión secundaria del Service Pack instalado en el sistema del equi
 **SizeStoredInPagingFiles**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Configuración de la memoria del sistema DMTF \| 001,3 "), [**unidades**](../wmisdk/standard-qualifiers.md) (" kilobytes ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Dmtf \| System Memory Configuración \| 001.3"), [**Units**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Número total de kilobytes que se pueden almacenar en los archivos de paginación del sistema operativo: 0 (cero) indica que no hay ningún archivo de paginación. Tenga en cuenta que este número no representa el tamaño físico real del archivo de paginación en el disco.
+Número total de kilobytes que se pueden almacenar en los archivos de paginación del sistema operativo: 0 (cero) indica que no hay archivos de paginación. Tenga en cuenta que este número no representa el tamaño físico real del archivo de paginación en el disco.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
@@ -3302,95 +3302,95 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART puede funcionar correctamente, pero predice un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El estado del servicio se aplica a la tarea administrativa, como la reduplicación de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni en ninguno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente, pero predice un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El estado del servicio se aplica al trabajo administrativo, como la resilvering reflejada de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -3400,18 +3400,18 @@ Con **estrés** ("acentuado")
 **SuiteMask**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**mapa de bits**](../wmisdk/standard-qualifiers.md) ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"), [**BitValues**](../wmisdk/standard-qualifiers.md) ("Windows Server, Small Business Edition", "Windows Server, Enterprise Edition", "Windows Server, BackOffice Edition", "Windows Server, Communications Edition", "Microsoft Terminal Services", "Windows Server, Small Business Edition restricted", "Windows Embedded", "Windows Server, Datacenter Edition", "single user", "Windows Home Edition", "Windows Server, Web Edition")
+Calificadores: [**BitMap**](../wmisdk/standard-qualifiers.md) ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"), [**BitValues**](../wmisdk/standard-qualifiers.md) ("Windows Server, Small Business Edition", "Windows Server, Enterprise Edition", "Windows Server, Backoffice Edition", "Windows Server, Communications Edition", "Microsoft Terminal Services", "Windows Server, Small Business Edition Restricted", "Windows Embedded", "Windows Server, Datacenter Edition", "Single User", "Windows Home Edition", "Windows Server, Web Edition")
 </dt> </dl>
 
 Marcas de bits que identifican los conjuntos de productos disponibles en el sistema.
 
-Por ejemplo, para especificar personal y BackOffice, establezca **SuiteMask** en `4 | 512` o `516` .
+Por ejemplo, para especificar Personal y BackOffice, establezca **SuiteMask** `4 | 512` en o `516` .
 
 <dt>
 
@@ -3432,7 +3432,7 @@ Enterprise
 4
 </dt> <dd>
 
-BackOffice
+Backoffice
 
 </dd> <dt>
 
@@ -3460,7 +3460,7 @@ Pequeña empresa restringida
 64
 </dt> <dd>
 
-Edición incrustada
+Embedded Edition
 
 </dd> <dt>
 
@@ -3481,14 +3481,14 @@ Usuario único
 512
 </dt> <dd>
 
-Edición Home
+Home Edition
 
 </dd> <dt>
 
 1024
 </dt> <dd>
 
-Edición del servidor Web
+Web Server Edition
 
 </dd> </dl>
 
@@ -3503,7 +3503,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Functions \| [**GetPrivateProfileString**](/windows/win32/api/winbase/nf-winbase-getprivateprofilestring) \| paths \| dispositivo")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Registry Functions \| [**GetPrivateProfileString**](/windows/win32/api/winbase/nf-winbase-getprivateprofilestring)Paths \| \| TargetDevice")
 </dt> </dl>
 
 Partición de disco físico en la que está instalado el sistema operativo.
@@ -3519,12 +3519,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| System Information Functions [**GetSystemDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya))
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Información del sistema Functions [**GetSystemDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya))
 </dt> </dl>
 
 Directorio del sistema operativo.
 
-Ejemplo: "C: \\ Windows \\ system32"
+Ejemplo: "C: \\ WINDOWS \\ SYSTEM32"
 
 </dd> <dt>
 
@@ -3544,7 +3544,7 @@ Letra de la unidad de disco en la que reside el sistema operativo. Ejemplo: "C:"
 **TotalSwapSpaceSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -3553,18 +3553,18 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Espacio de intercambio total en kilobytes. Este valor puede ser **null** (no especificado) si el espacio de intercambio no se distingue de los archivos de paginación. Sin embargo, algunos sistemas operativos distinguen estos conceptos. Por ejemplo, en UNIX, se pueden intercambiar procesos completos cuando la lista de páginas disponibles cae y permanece por debajo de una cantidad especificada.
+Espacio de intercambio total en kilobytes. Este valor puede ser **NULL** (sin especificar) si el espacio de intercambio no se distingue de los archivos de página. Sin embargo, algunos sistemas operativos distinguen estos conceptos. Por ejemplo, en UNIX, se pueden intercambiar procesos completos cuando la lista de páginas libres cae y permanece por debajo de una cantidad especificada.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
 **TotalVirtualMemorySize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -3573,18 +3573,18 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Número, en kilobytes, de la memoria virtual. Por ejemplo, esto puede calcularse agregando la cantidad de RAM total a la cantidad de espacio de paginación, es decir, agregando la cantidad de memoria en el sistema del equipo o la agregará a la propiedad **SizeStoredInPagingFiles**.
+Número, en kilobytes, de memoria virtual. Por ejemplo, esto se puede calcular agregando la cantidad de RAM total a la cantidad de espacio de paginación, es decir, agregando la cantidad de memoria en o agregada por el sistema del equipo a la propiedad **SizeStoredInPagingFiles**.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
 **TotalVisibleMemorySize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -3593,11 +3593,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Cantidad total, en kilobytes, de la memoria física disponible para el sistema operativo. Este valor no indica necesariamente la cantidad real de memoria física, sino lo que se notifica al sistema operativo como disponible para ella.
+Cantidad total, en kilobytes, de memoria física disponible para el sistema operativo. Este valor no indica necesariamente la cantidad verdadera de memoria física, sino lo que se notifica al sistema operativo como disponible para él.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
-Esta propiedad se hereda del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+Esta propiedad se hereda de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
@@ -3610,12 +3610,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("version"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| System Information Structures \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| dwMajorVersion, dwMinorVersion")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Version"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Información del sistema Structures \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| dwMajorVersion, dwMinorVersion")
 </dt> </dl>
 
 Número de versión del sistema operativo.
 
-Ejemplo: "4,0"
+Ejemplo: "4.0"
 
 </dd> <dt>
 
@@ -3628,22 +3628,22 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| System Information Functions \| [**GetWindowsDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya)")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Información del sistema Functions \| [**GetWindowsDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya)")
 </dt> </dl>
 
-Directorio de Windows del sistema operativo.
+Windows directorio del sistema operativo.
 
-Ejemplo: "C: \\ Windows"
+Ejemplo: "C: \\ WINDOWS"
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **Win32 \_ OperatingSystem** se deriva del [**\_ OperatingSystem de CIM**](cim-operatingsystem.md).
+La **clase \_ OperatingSystem de Win32** se deriva de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
-Los sistemas operativos que se pueden instalar en un equipo que puede ejecutar un sistema operativo basado en Windows son descendientes o miembros de esta clase. **Win32 \_ OperatingSystem** es una clase singleton. Para obtener la instancia única, use "@" para la clave.
+Cualquier sistema operativo que se pueda instalar en un equipo que pueda ejecutar un sistema operativo basado en Windows es un descendiente o miembro de esta clase. **Win32 \_ OperatingSystem** es una clase singleton. Para obtener la instancia única, use "@" para la clave.
 
-A diferencia de la mayoría de las otras clases WMI generadas por MgmtClassGen, el método **OperatingSystem. CreateInstance**() devolverá un objeto **OperatingSystem** en blanco. Por lo tanto, si usa C \# con MgmtClassGen, puede usar el código siguiente:
+A diferencia de la mayoría de las demás clases WMI generadas por MgmtClassGen, el método **OperatingSystem.CreateInstance**() devolverá un objeto **OperatingSystem en** blanco. Por lo tanto, si usa C \# con MgmtClassGen, puede usar el código siguiente:
 
 
 ```CSharp
@@ -3654,15 +3654,15 @@ WMI.OperatingSystem os = new ROOT.CIMV2.win32.OperatingSystem();
 
 ## <a name="examples"></a>Ejemplos
 
-Puede encontrar un ejemplo de VBScript que obtiene los datos del sistema operativo y del procesador de [**Win32 \_ ComputerSystem**](win32-computersystem.md), el [**\_ procesador Win32**](win32-processor.md)y el **\_ OperatingSystem de Win32** en los ejemplos de temas del [**\_ procesador Win32**](win32-processor.md) .
+Puede encontrar un ejemplo de VBScript que obtiene datos del sistema operativo y del procesador de [**Win32 \_ ComputerSystem,**](win32-computersystem.md) [**Win32 \_ Processor**](win32-processor.md)y **Win32 \_ OperatingSystem** en los ejemplos del tema Procesador [**Win32. \_**](win32-processor.md)
 
-El ejemplo de [generación de informes de entorno de Exchange con](https://Gallery.TechNet.Microsoft.Com/scriptcenter/Generate-Exchange-2388e7c9) PowerShell PowerShell en la galería de TechNet usa una clase **Win32 \_ OperatingSystem** como parte de una aplicación más grande para generar informes de entorno de Exchange.
+El [ejemplo Generate Exchange Environment Reports using PowerShell](https://Gallery.TechNet.Microsoft.Com/scriptcenter/Generate-Exchange-2388e7c9) PowerShell (Generar informes de entorno de Exchange con PowerShell de PowerShell) en la Galería de TechNet usa una clase **\_ OperatingSystem de Win32** como parte de una aplicación más grande para generar informes de entorno de intercambio.
 
-El ejemplo de [obtención de tiempo de actividad del servidor mediante WMI](https://Gallery.TechNet.Microsoft.Com/Get-Server-Uptime-Using-WMI-15aaa8ac) en la galería de TechNet usa la propiedad **LastBootupTime** para determinar cuánto tiempo el servidor ha estado activo. En el ejemplo también se usa la opción timeout para asegurarse de que la llamada WMI no se bloquea.
+El [ejemplo Get Server Uptime Using WMI](https://Gallery.TechNet.Microsoft.Com/Get-Server-Uptime-Using-WMI-15aaa8ac) (Obtener tiempo de actividad del servidor mediante WMI) de la Galería de TechNet usa la propiedad **LastBootupTime** para determinar cuánto tiempo ha estado activo el servidor. El ejemplo también usa la opción de tiempo de espera para asegurarse de que la llamada WMI no se bloqueo.
 
-El ejemplo de código VBScript del administrador de [información de WMI](https://Gallery.TechNet.Microsoft.Com/e493376c-1286-456b-bd4b-4ac3b0e9bb45) de la galería de TechNet utiliza la clase de **Win32 \_ OperatingSystem** para recuperar información del sistema operativo de varios equipos remotos.
+En el ejemplo de código VBScript de WMI [Information Retriever](https://Gallery.TechNet.Microsoft.Com/e493376c-1286-456b-bd4b-4ac3b0e9bb45) de la Galería de TechNet se usa la clase **\_ OperatingSystem de Win32** para recuperar información del sistema operativo de varios equipos remotos.
 
-El siguiente script obtiene las instancias de **Win32 \_ OperatingSystem** en el espacio de nombres predeterminado "root \\ CIMv2" y, a continuación, muestra información sobre el sistema operativo.
+El siguiente script obtiene las instancias de **Win32 \_ OperatingSystem** en el espacio de nombres \\ "ROOT CIMv2" predeterminado y, a continuación, muestra información sobre el sistema operativo.
 
 
 ```VB
@@ -3684,7 +3684,7 @@ End if
 
 
 
-En el siguiente ejemplo de código de PowerShell se muestra toda la información operativa sobre el sistema operativo actual.
+El siguiente ejemplo de código de PowerShell muestra toda la información operativa sobre el sistema operativo actual.
 
 
 ```PowerShell
@@ -3707,8 +3707,8 @@ $os | Format-List *
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -3717,19 +3717,19 @@ $os | Format-List *
 
 <dl> <dt>
 
-[**OperatingSystem de CIM \_**](cim-operatingsystem.md)
+[**\_Sistema operativo CIM**](cim-operatingsystem.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)
 </dt> <dt>
 
-[Tareas WMI: sistemas operativos](../wmisdk/wmi-tasks--operating-systems.md)
+[Tareas wmi: sistemas operativos](../wmisdk/wmi-tasks--operating-systems.md)
 </dt> <dt>
 
-[Tareas WMI: hardware del equipo](../wmisdk/wmi-tasks--computer-hardware.md)
+[Tareas wmi: hardware del equipo](../wmisdk/wmi-tasks--computer-hardware.md)
 </dt> <dt>
 
-[Tareas WMI: administración de escritorio](../wmisdk/wmi-tasks--desktop-management.md)
+[Tareas wmi: administración de escritorio](../wmisdk/wmi-tasks--desktop-management.md)
 </dt> </dl>
 
  

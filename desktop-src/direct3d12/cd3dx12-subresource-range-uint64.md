@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_SUBRESOURCE_RANGE_UINT64 estructura (D3dx12. h)
-description: Una estructura auxiliar para habilitar la inicialización sencilla de una \_ estructura UINT64 del intervalo de SUBRECURSO D3D12 \_ \_ .
+title: CD3DX12_SUBRESOURCE_RANGE_UINT64 estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura \_ \_ UINT64 D3D12 SUBRESOURCE \_ RANGE.
 ms.assetid: 607A60ED-98D2-4A77-9A7A-6B54342EA101
 keywords:
-- Estructura de CD3DX12_SUBRESOURCE_RANGE_UINT64
+- CD3DX12_SUBRESOURCE_RANGE_UINT64 estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2aea83d993c0c7b58ded8d0b92374d1dcbacdcc8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: df38d5b2e7a4230d023aeba6c8c3517fbd2b9f4e35a09b5e4439269b228eb82e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987995"
 ---
-# <a name="cd3dx12_subresource_range_uint64-structure"></a>\_ \_ Estructura UINT64 del intervalo de Subrecursos de CD3DX12 \_
+# <a name="cd3dx12_subresource_range_uint64-structure"></a>Cd3DX12 \_ SUBRESOURCE \_ RANGE \_ (Estructura UINT64)
 
-Una estructura auxiliar para habilitar la inicialización sencilla de una estructura [**\_ UINT64 del \_ intervalo \_ de subrecurso D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_range_uint64) .
+Estructura auxiliar para permitir la inicialización sencilla de una estructura [**\_ \_ \_ UINT64 D3D12 SUBRESOURCE RANGE.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_range_uint64)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,38 +45,38 @@ struct CD3DX12_SUBRESOURCE_RANGE_UINT64  : public D3D12_SUBRESOURCE_RANGE_UINT64
 
 <dl> <dt>
 
-**\_Intervalo de SUBRECURSO CD3DX12 \_ \_ UINT64 ()**
+**INTERVALO DE \_ SUBRECURSOS CD3DX12 \_ \_ UINT64()**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de un \_ intervalo de subrecurso de \_ CD3DX12 \_ UINT64.
+Crea una nueva instancia de CD3DX12 \_ SUBRESOURCE \_ RANGE \_ UINT64 sin inicializar.
 
 </dd> <dt>
 
-**intervalo de \_ SUBRECURSO CD3DX12 explícito \_ \_ UINT64 (const D3D12 \_ subresource \_ intervalo \_ UInt64 &o)**
+**explicit CD3DX12 \_ SUBRESOURCE \_ RANGE \_ UINT64(const D3D12 \_ SUBRESOURCE \_ RANGE \_ UINT64 &o)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ intervalo de SUBRECURSO CD3DX12 \_ \_ UInt64, inicializado con los valores copiados de una estructura UInt64 del [**\_ \_ intervalo \_ de Subrecursos D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_range_uint64) .
+Crea una nueva instancia de UN CD3DX12 SUBRESOURCE RANGE UINT64, inicializado con valores copiados de una estructura \_ \_ \_ [**D3D12 \_ SUBRESOURCE \_ RANGE \_ UINT64.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_range_uint64)
 
 </dd> <dt>
 
-**\_ \_ Intervalo de subrecurso \_ de CD3DX12 UInt64 (subrecurso uint, const D3D12 \_ intervalo \_ UInt64& intervalo)**
+**CD3DX12 \_ SUBRESOURCE \_ RANGE \_ UINT64(UINT subresource, const D3D12 \_ RANGE \_ UINT64& range)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ Galería de símbolos de profundidad CD3DX12 \_ \_ DESC1, inicializada con los valores pasados en la lista de parámetros.
+Crea una nueva instancia de CD3DX12 \_ DEPTH \_ STENCIL DESC1, inicializada con los \_ valores pasados en la lista de parámetros.
 
 </dd> <dt>
 
-**\_Intervalo de SUBRECURSO CD3DX12 \_ \_ UInt64 (subrecurso uint, UINT64 Begin, UInt64 end)**
+**CD3DX12 \_ SUBRESOURCE \_ RANGE \_ UINT64(subcurso UINT, UINT64 begin, UINT64 end)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ Galería de símbolos de profundidad CD3DX12 \_ \_ DESC1, inicializada con los valores pasados en la lista de parámetros.
+Crea una nueva instancia de CD3DX12 \_ DEPTH \_ STENCIL DESC1, inicializada con los \_ valores pasados en la lista de parámetros.
 
 </dd> <dt>
 
-**operador const D3D12 \_ subresource \_ intervalo \_ UINT64& () Const**
+**operator const D3D12 \_ SUBRESOURCE \_ RANGE \_ UINT64&() const**
 </dt> <dd>
 
-Conversión implícita a una \_ estructura UINT64 del intervalo de SUBRECURSO D3D12 \_ \_ . Dado que \_ \_ el intervalo de Subrecursos \_ de D3D12 UInt64 es el tipo subyacente del \_ intervalo de subrecurso de CD3DX12 \_ \_ UInt64, el objeto simplemente se devuelve como una \_ referencia de galería de símbolos de profundidad const D3D12 \_ \_ DESC1 a sí mismo.
+Conversión implícita a una estructura D3D12 \_ SUBRESOURCE \_ RANGE \_ UINT64. Dado que D3D12 SUBRESOURCE RANGE UINT64 es el tipo subyacente de CD3DX12 SUBRESOURCE RANGE UINT64, el objeto simplemente se devuelve como una referencia \_ \_ \_ \_ \_ \_ const D3D12 \_ DEPTH \_ STENCIL \_ DESC1 a sí mismo.
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Conversión implícita a una \_ estructura UINT64 del intervalo de SUBRECURSO D3
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -97,7 +97,7 @@ Conversión implícita a una \_ estructura UINT64 del intervalo de SUBRECURSO D3
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**\_Intervalo de SUBrecurso de D3D12 \_ \_ UINT64**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_range_uint64)
+[**INTERVALO DE SUBRECURSOS D3D12 \_ \_ \_ UINT64**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_range_uint64)
 </dt> </dl>
 
  

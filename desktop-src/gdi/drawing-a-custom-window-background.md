@@ -1,21 +1,21 @@
 ---
-description: Puede dibujar su propio fondo de la ventana en lugar de hacer que el sistema lo dibuje automáticamente.
+description: Puede dibujar su propio fondo de ventana en lugar de hacer que el sistema lo dibuje por usted.
 ms.assetid: 72a342dc-2766-4ec9-b4c6-5ac3c550ea25
-title: Dibujo de un fondo de ventana personalizado
+title: Dibujar un fondo de ventana personalizado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 437a88bec680a6f35e84f5444fc90a45f98da533
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4248f7d7a1ae27ae09c93e95734fd72285028e1185b6d35110e5141fcbf88c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966015"
 ---
-# <a name="drawing-a-custom-window-background"></a>Dibujo de un fondo de ventana personalizado
+# <a name="drawing-a-custom-window-background"></a>Dibujar un fondo de ventana personalizado
 
-Puede dibujar su propio fondo de la ventana en lugar de hacer que el sistema lo dibuje automáticamente. La mayoría de las aplicaciones especifican un identificador de pincel o un valor de color del sistema para el pincel de fondo de clase al registrar la clase de ventana. el sistema utiliza el pincel o el color para dibujar el fondo. Sin embargo, si establece el pincel de fondo de clase en **null**, el sistema envía un mensaje de [**WM \_ ERASEBKGND**](../winmsg/wm-erasebkgnd.md) al procedimiento de ventana cada vez que se debe dibujar el fondo de la ventana, lo que le permite dibujar un fondo personalizado.
+Puede dibujar su propio fondo de ventana en lugar de hacer que el sistema lo dibuje por usted. La mayoría de las aplicaciones especifican un identificador de pincel o un valor de color del sistema para el pincel de fondo de clase al registrar la clase de ventana; el sistema usa el pincel o el color para dibujar el fondo. Sin embargo, si establece el pincel de fondo de clase en **NULL,** el sistema envía un mensaje [**WM \_ ERASEB DOMAINND**](../winmsg/wm-erasebkgnd.md) al procedimiento de ventana cada vez que se debe dibujar el fondo de la ventana, lo que le permite dibujar un fondo personalizado.
 
-En el ejemplo siguiente, el procedimiento de ventana dibuja un patrón de tablero de ajedrez grande que se adapta perfectamente a la ventana. El procedimiento rellena el área cliente con un pincel blanco y, a continuación, dibuja los rectángulos 13 20 por 20 con un pincel gris. El contexto de dispositivo de pantalla que se va a usar al dibujar el fondo se especifica en el parámetro *wParam* del mensaje.
+En el ejemplo siguiente, el procedimiento de ventana dibuja un patrón de tablero de comprobación grande que se ajusta perfectamente en la ventana. El procedimiento rellena el área cliente con un pincel blanco y, a continuación, dibuja decimotercer rectángulos de 20 por 20 con un pincel gris. El contexto del dispositivo para mostrar que se va a usar al dibujar el fondo se especifica en el *parámetro wParam* del mensaje.
 
 
 ```C++
@@ -50,7 +50,7 @@ case WM_ERASEBKGND:
 
 
 
-Si la aplicación dibuja su propia ventana minimizada, el sistema también envía el mensaje de [**\_ ERASEBKGND de WM**](../winmsg/wm-erasebkgnd.md) al procedimiento de ventana para dibujar el fondo de la ventana minimizada. Puede usar la misma técnica usada por [**WM \_ Paint**](wm-paint.md) para determinar si la ventana está minimizada es decir, llamar a la función [**IsIconic**](/windows/win32/api/winuser/nf-winuser-isiconic) y comprobar el valor devuelto **true**.
+Si la aplicación dibuja su propia ventana minimizada, el sistema también envía el mensaje [**\_ WM ERASEB DOMAINND**](../winmsg/wm-erasebkgnd.md) al procedimiento de ventana para dibujar el fondo de la ventana minimizada. Puede usar la misma técnica que [**usa WM \_ PAINT**](wm-paint.md) para determinar si la ventana está minimizada, es decir, llamar a la función [**IsIconic**](/windows/win32/api/winuser/nf-winuser-isiconic) y comprobar el valor devuelto **TRUE.**
 
  
 

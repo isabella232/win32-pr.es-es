@@ -1,7 +1,7 @@
 ---
-description: Devuelve el tamaño de un vértice a partir de la declaración de vértice.
+description: Devuelve el tamaño de un vértice de la declaración de vértice.
 ms.assetid: a2524f96-103e-43ab-bdcb-b99e7402fd89
-title: Función D3DXGetDeclVertexSize (D3DX9Mesh. h)
+title: Función D3DXGetDeclVertexSize (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c962064faa61dc7045b0111c5efbf1d1bea9fd40
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1c120e0089c350133372526f1b030eb1a94ede5a511ba44fb21b5ae320aa7090
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986865"
 ---
-# <a name="d3dxgetdeclvertexsize-function"></a>D3DXGetDeclVertexSize función)
+# <a name="d3dxgetdeclvertexsize-function"></a>Función D3DXGetDeclVertexSize
 
-Devuelve el tamaño de un vértice a partir de la declaración de vértice.
+Devuelve el tamaño de un vértice de la declaración de vértice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,29 +41,29 @@ UINT D3DXGetDeclVertexSize(
 
 <dl> <dt>
 
-*pDecl* \[ de\]
+*pDecl* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Puntero a la declaración de vértice. Vea [**D3DVERTEXELEMENT9**](d3dvertexelement9.md).
+Puntero a la declaración de vértice. Vea [**D3DVERTEXELEMENT9.**](d3dvertexelement9.md)
 
 </dd> <dt>
 
-*Flujo* \[ de de\]
+*Stream* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Índice de la secuencia de base cero.
+Índice de flujo de base cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Tamaño de la declaración de vértices, en bytes.
+Tamaño de declaración de vértice, en bytes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Tamaño de la declaración de vértices, en bytes.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

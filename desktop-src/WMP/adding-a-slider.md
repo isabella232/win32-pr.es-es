@@ -4,23 +4,23 @@ description: Agregar un control deslizante
 ms.assetid: 7062d580-a9d1-4fd7-bc28-db2615464838
 keywords:
 - crear máscaras, controles deslizantes
-- Aspectos de Windows Media Player, controles deslizantes
+- Reproductor de Windows Media máscaras, controles deslizantes
 - máscaras, controles deslizantes
 - controles deslizantes en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3efcae55b3826b69a7c88fed5a23a262526c9dd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c6c3644e1b243188664295bbc00101a74377cbef17632217ff0a81dac0d377a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004385"
 ---
 # <a name="adding-a-slider"></a>Agregar un control deslizante
 
-Puede Agregar un control deslizante para mostrar la posición actual del medio y permitir que el usuario cambie la posición en el archivo multimedia actual.
+Puede agregar un control deslizante para mostrar la posición actual del medio y también permitir que el usuario cambie la posición en el archivo multimedia actual.
 
-En primer lugar, debe agregar el elemento **Slider** :
+En primer lugar, debe agregar el **elemento SLIDER:**
 
 
 ```C++
@@ -42,9 +42,9 @@ En primer lugar, debe agregar el elemento **Slider** :
 
 
 
-Esto establece un valor máximo en función de la duración del archivo multimedia actual. Utiliza un mapa de bits de imagen Thumb pequeño que es simplemente un cuadrado verde de 10 píxeles por 10 píxeles. El fondo del control deslizante será rojo y el primer plano será azul. Cuando el usuario arrastra la imagen Thumb a una nueva posición y permite ir al botón del mouse, el medio cambiará a esa posición.
+Esto establece un valor máximo en función de la duración del archivo multimedia actual. Esto usa un mapa de bits de imagen de miniatura diminuta que es solo un cuadrado verde de 10 píxeles por 10 píxeles. El fondo del control deslizante será rojo y el primer plano será azul. Cuando el usuario arrastra la imagen de posición a una nueva posición y suelta el botón del mouse, el medio cambia a esa posición.
 
-Pero el control deslizante no se moverá por sí solo a menos que mida la posición actual con el atributo **currentPosition \_ onchange** del elemento **Controls** , que se incrusta en el elemento **Player** .
+Pero el control deslizante no se moverá por sí solo a menos que mida la posición actual con el atributo **currentPosition \_ onchange** del elemento **CONTROLS,** que se incrusta en el **elemento PLAYER.**
 
 
 ```C++
@@ -60,7 +60,7 @@ Pero el control deslizante no se moverá por sí solo a menos que mida la posici
 
 
 
-Cuando cambia la posición del elemento multimedia, se desencadena un evento que, a continuación, ejecuta la línea de código que cambia el valor del control deslizante a la posición actual del medio.
+Cuando cambia la posición del medio, se produce un evento que ejecuta la línea de código que cambia el valor del control deslizante a la posición actual del medio.
 
 Puede ver una máscara de control deslizante de trabajo similar en la sección de ejemplo del SDK.
 
@@ -71,9 +71,9 @@ Puede ver una máscara de control deslizante de trabajo similar en la sección d
 [**Guía de creación de máscaras**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

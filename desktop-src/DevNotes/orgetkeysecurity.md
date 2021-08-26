@@ -1,7 +1,7 @@
 ---
-description: Recupera una copia del descriptor de seguridad que protege la clave del registro abierta especificada en un subárbol del registro sin conexión.
+description: Recupera una copia del descriptor de seguridad que protege la clave del Registro abierta especificada en un subárbol del Registro sin conexión.
 ms.assetid: 676d5be5-d9d8-48c6-848a-917d1a0474c6
-title: Función ORGetKeySecurity (Offreg. h)
+title: Función ORGetKeySecurity (Offreg.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: 13594493af2e7992471d13dce30f0a848501c4bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 786321db22c513e7698fcd1661d173ccb5fdf76f1b09d9dd3e739ddf3fb2ca47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984165"
 ---
-# <a name="orgetkeysecurity-function"></a>ORGetKeySecurity función)
+# <a name="orgetkeysecurity-function"></a>Función ORGetKeySecurity
 
-Recupera una copia del descriptor de seguridad que protege la clave del registro abierta especificada en un subárbol del registro sin conexión.
+Recupera una copia del descriptor de seguridad que protege la clave del Registro abierta especificada en un subárbol del Registro sin conexión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,41 +42,41 @@ DWORD ORGetKeySecurity(
 
 <dl> <dt>
 
-*Identificador* \[ de de\]
+*Identificador* \[ En\]
 </dt> <dd>
 
-Identificador de una clave del registro abierta en un subárbol del registro sin conexión.
+Identificador de una clave del Registro abierta en un subárbol del Registro sin conexión.
 
 </dd> <dt>
 
-*SecurityInformation* \[ de\]
+*SecurityInformation* \[ En\]
 </dt> <dd>
 
-Valor [de \_ información de seguridad](../secauthz/security-information.md) que indica la información de seguridad solicitada.
+Valor [DE \_ INFORMACIÓN DE](../secauthz/security-information.md) SEGURIDAD que indica la información de seguridad solicitada.
 
 </dd> <dt>
 
 *pSecurityDescriptor* \[ out, opcional\]
 </dt> <dd>
 
-Un puntero a un búfer que recibe una copia del descriptor de seguridad solicitado. Este parámetro puede ser **NULL**.
+Puntero a un búfer que recibe una copia del descriptor de seguridad solicitado. Este parámetro puede ser **NULL**.
 
 </dd> <dt>
 
 *lpcbSecurityDescriptor* \[ in, out\]
 </dt> <dd>
 
-Puntero a una variable que especifica el tamaño, en bytes, del búfer al que apunta el parámetro *pSecurityDescriptor* . Cuando la función devuelve, la variable contiene el número de bytes escritos en el búfer.
+Puntero a una variable que especifica el tamaño, en bytes, del búfer al que apunta el *parámetro pSecurityDescriptor.* Cuando la función devuelve un resultado, la variable contiene el número de bytes escritos en el búfer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, la función devuelve el ERROR \_ Success.
+Si la función se realiza correctamente, la función devuelve ERROR \_ SUCCESS.
 
-Si se produce un error en la función, devuelve un código de error distinto de cero definido en Winerror. h. Puede usar la función [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con la \_ \_ marca de formato mensaje de \_ sistema para obtener una descripción genérica del error.
+Si se produce un error en la función, devuelve un código de error distinto de cero definido en Winerror.h. Puede usar la función [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con la marca FORMAT \_ MESSAGE FROM SYSTEM para obtener una descripción genérica del \_ \_ error.
 
-Si el búfer especificado por el parámetro *pSecurityDescriptor* es demasiado pequeño, la función devuelve un error de \_ búfer insuficiente \_ y el parámetro *lpcbSecurityDescriptor* contiene el número de bytes necesarios para el descriptor de seguridad solicitado.
+Si el búfer especificado por el parámetro *pSecurityDescriptor* es demasiado pequeño, la función devuelve ERROR INSUFFICIENT BUFFER y el parámetro \_ \_ *lpcbSecurityDescriptor* contiene el número de bytes necesarios para el descriptor de seguridad solicitado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,8 +84,8 @@ Si el búfer especificado por el parámetro *pSecurityDescriptor* es demasiado p
 
 | Requisito | Value |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Redistribuible<br/> | Windows offline Registry Library versión 1,0 o posterior<br/>                      |
-| Encabezado<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Redistribuible<br/> | Windows Biblioteca del Registro sin conexión versión 1.0 o posterior<br/>                      |
+| Header<br/>          | <dl> <dt>Offreg.h</dt> </dl>   |
 | Archivo DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 
@@ -103,7 +103,7 @@ Si el búfer especificado por el parámetro *pSecurityDescriptor* es demasiado p
 [**ORSetKeySecurity**](orsetkeysecurity.md)
 </dt> <dt>
 
-[información de seguridad \_](../secauthz/security-information.md)
+[INFORMACIÓN DE \_ SEGURIDAD](../secauthz/security-information.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: CIM \_ ProcessIndication es una superclase abstracta para las clases de indicación especializadas que abordan cambios y alertas específicos publicados por proveedores e instrumentación.
+description: CIM ProcessIndication es una superclase abstracta para clases de indicación especializadas que abordan cambios y alertas específicos publicados por \_ proveedores e instrumentación.
 ms.assetid: b321b5ec-4868-4149-99ad-4596fd49c39b
-title: CIM_ProcessIndication (clase)
+title: CIM_ProcessIndication clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5e0bd9539c43290e4972494d062e6983e64defb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c4bfc94bf75150c1c84efb5c1803ad03f164e4615eb9e1c171066f516aa5544
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981255"
 ---
-# <a name="cim_processindication-class"></a>\_Clase ProcessIndication de CIM
+# <a name="cim_processindication-class"></a>Cim \_ ProcessIndication (clase)
 
-**CIM \_ ProcessIndication** es una superclase abstracta para las clases de indicación especializadas que abordan cambios y alertas específicos publicados por proveedores e instrumentación.
+**CIM \_ ProcessIndication es una** superclase abstracta para clases de indicación especializadas que abordan cambios y alertas específicos publicados por proveedores e instrumentación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,7 +35,7 @@ class CIM_ProcessIndication : CIM_Indication
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ ProcessIndication de CIM** no define ningún miembro.
+La **clase \_ Cim ProcessIndication** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,9 +44,9 @@ La **clase \_ ProcessIndication de CIM** no define ningún miembro.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -55,7 +55,7 @@ La **clase \_ ProcessIndication de CIM** no define ningún miembro.
 
 <dl> <dt>
 
-[**\_Indicación CIM**](cim-indication.md)
+[**Indicación de CIM \_**](cim-indication.md)
 </dt> </dl>
 
  

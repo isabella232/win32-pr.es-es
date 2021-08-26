@@ -1,25 +1,25 @@
 ---
-description: 'Más información sobre: métodos JET_ERRINFOBASIC'
-title: Métodos JET_ERRINFOBASIC (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información acerca de: JET_ERRINFOBASIC métodos'
+title: JET_ERRINFOBASIC métodos (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_ERRINFOBASIC methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errinfobasic_methods(v=EXCHG.10)
 ms:contentKeyID: 55104418
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 888377ce9ae7cb08f5ab9459e0336f0d89c585c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5c5b6d3a795a4f0662f098605d5402cd1993f74bbd1375587093ccbb3b696a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017265"
 ---
-# <a name="jet_errinfobasic-methods"></a>Métodos JET_ERRINFOBASIC
+# <a name="jet_errinfobasic-methods"></a>JET_ERRINFOBASIC métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los siguientes miembros.
+El [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -35,12 +35,12 @@ El tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los siguientes
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335338(v=exchg.10).md">ContentEquals</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de.</td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335471(v=exchg.10).md">DeepClone</a></td>
-<td>Devuelve una copia en profundidad del objeto.</td>
+<td>Devuelve una copia en profundidad del objeto .</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -49,7 +49,7 @@ El tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los siguientes
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -59,7 +59,7 @@ El tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los siguientes
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ El tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los siguientes
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335337(v=exchg.10).md">ToString</a></td>
-<td>Generar una representación de cadena de la instancia. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Genere una representación de cadena de la instancia. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -82,6 +82,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_ERRINFOBASIC (clase)](./jet-errinfobasic-class.md)
+[JET_ERRINFOBASIC clase](./jet-errinfobasic-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

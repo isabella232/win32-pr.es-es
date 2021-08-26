@@ -1,34 +1,34 @@
 ---
-title: Otros tipos de RPC
-description: Tipos de llamada a procedimiento remoto (RPC) que no sean estructuras y tipos enumerados.
+title: Otros tipos RPC
+description: Tipos de llamada a procedimiento remoto (RPC) distintos de estructuras y tipos enumerados.
 ms.assetid: 7f99f997-4cf2-4815-adb8-6939d0cd3ac5
 keywords:
 - Llamada a procedimiento remoto RPC, referencia, otros tipos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 173adedfc53bebe6c1985e2dd750b71ab8de9373
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 45b4b3f04ae25af92a6e0a80c8d4727a45dc7306ce54ee5e69361587de875fda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019305"
 ---
-# <a name="other-rpc-types"></a>Otros tipos de RPC
+# <a name="other-rpc-types"></a>Otros tipos RPC
 
-Esta sección contiene información sobre los siguientes tipos de RPC que no son estructuras ni tipos enumerados:
+Esta sección contiene información sobre los siguientes tipos RPC que no son estructuras ni tipos enumerados:
 
--   [identificador \_ t](/windows/desktop/Midl/handle-t)
--   [**\_identificador de \_ identidad de autenticación RPC \_**](rpc-auth-identity-handle.md)
--   [**identificador de RPC \_ AUTHZ \_**](rpc-authz-handle.md)
--   [**\_identificador de enlace RPC \_**](rpc-binding-handle.md)
--   [**\_ \_ controlador INQ de RPC EP \_**](rpc-ep-inq-handle.md)
--   [**identificador de RPC \_ If \_**](rpc-if-handle.md)
--   [**\_EPV de administrador de RPC \_**](rpc-mgr-epv.md)
--   [**identificador de RPC \_ NS \_**](rpc-ns-handle.md)
--   [**Estado de RPC \_**](rpc-status.md)
--   [Enlace de cadenas](string-binding.md)
+-   [handle \_ t](/windows/desktop/Midl/handle-t)
+-   [**IDENTIFICADOR \_ DE IDENTIDAD DE \_ AUTENTICACIÓN \_ RPC**](rpc-auth-identity-handle.md)
+-   [**IDENTIFICADOR \_ DE RPC \_ AUTHZ**](rpc-authz-handle.md)
+-   [**IDENTIFICADOR \_ DE ENLACE \_ RPC**](rpc-binding-handle.md)
+-   [**IDENTIFICADOR \_ DE RPC EP \_ \_ INQ**](rpc-ep-inq-handle.md)
+-   [**RPC \_ IF \_ HANDLE**](rpc-if-handle.md)
+-   [**RPC \_ MGR \_ EPV**](rpc-mgr-epv.md)
+-   [**IDENTIFICADOR \_ DE RPC NS \_**](rpc-ns-handle.md)
+-   [**ESTADO \_ DE RPC**](rpc-status.md)
+-   [Enlace de cadena](string-binding.md)
 -   [UUID de cadena](string-uuid.md)
 
- 
+ 
 
- 
+ 

@@ -1,19 +1,19 @@
 ---
-description: Especifica si el códec debe utilizar la optimización perceptual conservadora al codificar.
+description: Especifica si el códec debe usar la optimización perceptual conservadora al codificar.
 ms.assetid: f44fd932-d8f8-46c7-b17c-27e6141408ab
-title: Propiedad MFPKEY_PERCEPTUALOPTLEVEL (Wmcodecdsp. h)
+title: MFPKEY_PERCEPTUALOPTLEVEL propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d86857ca9d7e4205afc0baf9c212e92606511ffc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f9eb74ae025dbddbdea7f76c2af8b15e912cf80ebd06e810a5214bf9798d1bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953855"
 ---
-# <a name="mfpkey_perceptualoptlevel-property"></a>\_Propiedad PERCEPTUALOPTLEVEL de MFPKEY
+# <a name="mfpkey_perceptualoptlevel-property"></a>Propiedad \_ PERCEPTUALOPTLEVEL de MFPKEY
 
-Especifica si el códec debe utilizar la optimización perceptual conservadora al codificar.
+Especifica si el códec debe usar la optimización perceptual conservadora al codificar.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -27,13 +27,13 @@ VT \_ I4
 
 0
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La optimización perceptual conservadora es un proceso por el cual el códec intenta identificar regiones "importantes" y "no importantes" en el fotograma de vídeo. Después de identificar estas regiones del fotograma, el códec dará una prioridad más alta a la calidad de las regiones importantes, a costa de la calidad de las regiones no importantes.
+La optimización perceptual conservadora es un proceso por el que el códec intenta identificar regiones "importantes" y "no importantes" en el fotograma de vídeo. Después de identificar estas regiones del marco, el códec dará una prioridad más alta a la calidad de las regiones importantes, a costa de la calidad de las regiones no importantes.
 
-La optimización perceptual hace hincapié en hacer que la imagen parezca correcta para el ojo humano en lugar de insistir en una precisión matemática estricta.
+La optimización perceptual hace que la imagen parezca correcta para el ojo humano en lugar de insospecar una precisión matemática estricta.
 
-Los resultados de la optimización variarán considerablemente según el tipo de vídeo que se está codificando. Esta característica puede ser adecuada para la codificación de baja velocidad y bajo nivel de bits (por ejemplo, transmisión por secuencias en Web), pero probablemente debe evitarse cuando se pretende tener una calidad de vídeo de archivo.
+Los resultados de la optimización variarán considerablemente en función del tipo de vídeo que se va a codificar. Esta característica podría ser adecuada para codificación de baja velocidad de bits y baja resolución (por ejemplo, streaming web), pero probablemente se debe evitar al apuntar a la calidad del vídeo de archivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,9 +41,9 @@ Los resultados de la optimización variarán considerablemente según el tipo de
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ Los resultados de la optimización variarán considerablemente según el tipo de
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

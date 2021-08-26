@@ -1,7 +1,7 @@
 ---
-description: Determina si el sistema virtual especificado se puede migrar.
+description: Determina si se puede migrar el sistema virtual especificado.
 ms.assetid: 1bf1b385-162e-41c9-a408-f7ee755a9646
-title: Método CheckVirtualSystemIsMigratable de la clase Msvm_VirtualSystemMigrationService
+title: Método CheckVirtualSystemIsMigratable de la Msvm_VirtualSystemMigrationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1aed843f3f0f4c6c30eb6125cdd5859cdba902d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7da99fc5fe2eb69ff93ce85fa2335ca63a36291975b1349097e1586fe15e2cf1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041935"
 ---
-# <a name="checkvirtualsystemismigratable-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método CheckVirtualSystemIsMigratable de la \_ clase VirtualSystemMigrationService de MSVM
+# <a name="checkvirtualsystemismigratable-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método CheckVirtualSystemIsMigratable de la clase \_ VirtualSystemMigrationService de Msvm
 
-Determina si el sistema virtual especificado se puede migrar.
+Determina si se puede migrar el sistema virtual especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,45 +44,45 @@ uint32 CheckVirtualSystemIsMigratable(
 
 <dl> <dt>
 
-*ComputerSystem* \[ de\]
+*ComputerSystem* \[ En\]
 </dt> <dd>
 
-Referencia a una instancia de la clase [**de \_ ComputerSystem de CIM**](cim-computersystem.md) que representa la máquina virtual de la que se va a probar la capacidad de migración.
+Referencia a una instancia de la clase [**\_ ComputerSystem de CIM**](cim-computersystem.md) que representa la máquina virtual de la que se probará la capacidad de migración.
 
 </dd> <dt>
 
-*DestinationHost* \[ de\]
+*DestinationHost* \[ En\]
 </dt> <dd>
 
-Nombre del sistema host para la migración. El formato de este nombre se especifica mediante la propiedad **DestinationHostFormatsSupported** de la clase [**MSVM \_ VirtualSystemMigrationCapabilities**](msvm-virtualsystemmigrationcapabilities.md) asociada a esta clase.
+Nombre del sistema host para la migración. La propiedad **DestinationHostFormatsSupported** de la clase [**Msvm \_ VirtualSystemMigrationCapabilities**](msvm-virtualsystemmigrationcapabilities.md) asociada a esta clase especifica el formato de este nombre.
 
 </dd> <dt>
 
-*MigrationSettingData* \[ de\]
+*MigrationSettingData* \[ En\]
 </dt> <dd>
 
-Instancia insertada de la clase [**MSVM \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md) que representa la configuración de la operación de migración.
+Instancia insertada de la [**clase Msvm \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md) que representa la configuración de la operación de migración.
 
 </dd> <dt>
 
-*NewSystemSettingData* \[ de\]
+*NewSystemSettingData* \[ En\]
 </dt> <dd>
 
-Instancia insertada de la clase [**MSVM \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representa las nuevas propiedades aplicables al sistema virtual después de su migración.
+Instancia incrustada de la clase [**\_ Msvm VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representa las nuevas propiedades aplicables al sistema virtual después de migrarla.
 
 </dd> <dt>
 
-*NewResourceSettingData* \[ de\]
+*NewResourceSettingData* \[ En\]
 </dt> <dd>
 
-Matriz de cadenas que contiene una instancia incrustada de la clase [**MSVM \_ ResourceAllocationSettingData**](msvm-resourceallocationsettingdata.md) que representa las nuevas propiedades aplicables a los recursos virtuales del sistema virtual después de su migración.
+Matriz de cadenas que contienen una instancia incrustada de la clase [**\_ ResourceAllocationSettingData de Msvm**](msvm-resourceallocationsettingdata.md) que representa las nuevas propiedades aplicables a los recursos virtuales del sistema virtual después de migrarlo.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -104,16 +104,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -122,10 +122,10 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -134,10 +134,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -146,7 +146,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
+[**Msvm \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
 </dt> </dl>
 
  

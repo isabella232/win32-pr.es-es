@@ -1,8 +1,8 @@
 ---
-description: Elimine el archivo de códec de audio o vídeo lógico (o directorio) especificado en la ruta de acceso del objeto.
+description: Elimine el archivo lógico de códec de audio o vídeo (o directorio) especificado en la ruta de acceso del objeto.
 ms.assetid: df85c8a4-3be3-4bde-b36e-6bc8af6495a9
 ms.tgt_platform: multiple
-title: Método DeleteEx de la clase Win32_CodecFile
+title: Método DeleteEx de la Win32_CodecFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: df5527be497176f167ac368b872253fa3254a404
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f749455a15e92427f4f0fec50abce7ea8ba83b44f9244b3b61208fb27dd12b9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077675"
 ---
-# <a name="deleteex-method-of-the-win32_codecfile-class"></a>Método DeleteEx de la \_ clase CodecFile de Win32
+# <a name="deleteex-method-of-the-win32_codecfile-class"></a>Método DeleteEx de la clase CodecFile de Win32 \_
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **DeleteEx** eliminará el archivo de códec de audio o vídeo lógico (o directorio) especificado en la ruta de acceso del objeto. **DeleteEx** es una versión extendida del método [**Delete**](delete-method-in-class-win32-directory.md) .
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **DeleteEx** eliminará el archivo lógico de códec de audio o vídeo (o directorio) especificado en la ruta de acceso del objeto. **DeleteEx** es una versión extendida del [**método Delete.**](delete-method-in-class-win32-directory.md)
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,23 +43,23 @@ uint32 DeleteEx(
 
 <dl> <dt>
 
-*StopFileName* \[ enuncia\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Nombre del archivo o directorio en el que se produjo un error en el método **DeleteEx** . Este parámetro será **null** si el método se ejecuta correctamente.
+Nombre del archivo o directorio en el que se ha fallado **el método DeleteEx.** Este parámetro será **NULL si** el método se realiza correctamente.
 
 </dd> <dt>
 
-*StartFileName* \[ de\]
+*StartFileName* \[ En\]
 </dt> <dd>
 
-Asigna un nombre al archivo o directorio secundario que se va a usar como punto de partida para **DeleteEx**. El parámetro *StartFileName* es normalmente el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **null**, la operación se realiza en el archivo o directorio especificado en la llamada **ExecMethod** . Este parámetro es opcional.
+Denomina el archivo o directorio secundario que se usará como punto de partida para **DeleteEx.** El *parámetro StartFileName suele* ser el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL**, la operación se realiza en el archivo o directorio especificado en la **llamada a ExecMethod.** Este parámetro es opcional.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor entero de 0 (cero) si el archivo se ha eliminado correctamente y cualquier otro número para indicar un error.
+Devuelve un valor entero de 0 (cero) si el archivo se eliminó correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -80,7 +80,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -129,7 +129,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Se ha infringido el uso compartido.
 
 </dd> <dt>
 
@@ -158,12 +158,12 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -175,7 +175,7 @@ Un parámetro especificado no es válido.
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Win32 \_ CodecFile**](win32-codecfile.md)
+[**CódecFile de \_ Win32**](win32-codecfile.md)
 </dt> </dl>
 
  

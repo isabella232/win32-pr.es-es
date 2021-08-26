@@ -1,9 +1,9 @@
 ---
-title: Elemento Channel (ChannelListType)
+title: channel (ChannelListType) (Elemento)
 description: Define un canal en el que se pueden registrar los eventos.
 ms.assetid: 4af740d7-2ab8-4f3e-86b3-501e5a6a60f6
 keywords:
-- EventLog del elemento de canal
+- elemento channel EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6c90d1f831157d2a4a2d4f3519b4e1baa07d6af2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f19e90f3f66aa017ecb7183e1ad3dc5c614832b8ec2f832d4ec6656674f0ea7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032315"
 ---
-# <a name="channel-channellisttype-element"></a>Elemento Channel (ChannelListType)
+# <a name="channel-channellisttype-element"></a>channel (ChannelListType) (Elemento)
 
 Define un canal en el que se pueden registrar los eventos.
 
@@ -30,7 +30,7 @@ Define un canal en el que se pueden registrar los eventos.
  />
 ```
 
-El elemento de **canal** se define mediante el tipo complejo de [**ChannelListType**](eventmanifestschema-channellisttype-complextype.md) .
+El **tipo** complejo [**ChannelListType**](eventmanifestschema-channellisttype-complextype.md) define el elemento channel.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento de **canal** se define mediante el tipo complejo de [**ChannelListTy
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,10 +50,10 @@ El elemento de **canal** se define mediante el tipo complejo de [**ChannelListTy
 **Elementos primarios**
 </dt> <dt>
 
-[**canales (ProviderType)**](eventmanifestschema-channels-providertype-element.md)
+[**channels (ProviderType)**](eventmanifestschema-channels-providertype-element.md)
 </dt> <dt>
 
-[**canales (MetadataType)**](eventmanifestschema-channels-metadatatype-element.md)
+[**channels (MetadataType)**](eventmanifestschema-channels-metadatatype-element.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: documentAuthor (atributo)
+title: atributo documentAuthor
 description: El tipo de atributo documentAuthor especifica el nombre distintivo del autor de un documento.
 ms.assetid: 52d25349-ef79-44d0-a892-65984898fa1c
 ms.tgt_platform: multiple
 keywords:
-- atributo documentAuthor esquema de AD
+- DocumentAuthor attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0abd07ce87dbc341e3392a91156021e2b603e71f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f3e55720c57f3543e3ddab13d0bc61aa793894d701ed0bb0f7980374123d0bbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077855"
 ---
-# <a name="documentauthor-attribute"></a>documentAuthor (atributo)
+# <a name="documentauthor-attribute"></a>atributo documentAuthor
 
 El tipo de atributo documentAuthor especifica el nombre distintivo del autor de un documento.
 
@@ -29,13 +29,13 @@ El tipo de atributo documentAuthor especifica el nombre distintivo del autor de 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | documentAuthor                          |
-| Nombre para mostrar de LDAP | documentAuthor                          |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| Ldap-Display-Name | documentAuthor                          |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 0.9.2342.19200300.100.1.14              |
-| System-ID-GUID    | f18a8e19-AF5F-4478-b096-6f35c27eb83f    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | f18a8e19-af5f-4478-b096-6f35c27eb83f    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,18 +53,18 @@ El tipo de atributo documentAuthor especifica el nombre distintivo del autor de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ El tipo de atributo documentAuthor especifica el nombre distintivo del autor de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ El tipo de atributo documentAuthor especifica el nombre distintivo del autor de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -116,18 +116,18 @@ El tipo de atributo documentAuthor especifica el nombre distintivo del autor de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -137,18 +137,18 @@ El tipo de atributo documentAuthor especifica el nombre distintivo del autor de 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 

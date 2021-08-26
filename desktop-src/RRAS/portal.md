@@ -4,12 +4,12 @@ description: Servicio de acceso remoto y enrutamiento
 ms.assetid: fa0a183a-0254-401e-8b78-441cb3f83e8b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49d81e743f640e600588413f0c15c44e0410c5ea
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2d827150b84806afe4a9290436620def7675ee03163bf5f63c0c0d6556932a1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120029005"
 ---
 # <a name="routing-and-remote-access-service"></a>Servicio de acceso remoto y enrutamiento
 
@@ -35,7 +35,7 @@ Para obtener información más específica sobre qué sistemas operativos admite
 
 | Tema                                                                                                             | Descripción                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Arquitectura de servicios de enrutamiento y acceso remoto](routing-and-remote-access-services-architecture.md)<br/> | Información general de la arquitectura de servicios de enrutamiento y acceso remoto.<br/>                                           |
+| [Arquitectura de enrutamiento y Access Services remoto](routing-and-remote-access-services-architecture.md)<br/> | Información general sobre la arquitectura de enrutamiento y Access Services remoto.<br/>                                           |
 | [Diseño del Registro de enrutamiento y acceso remoto](routing-and-remote-access-registry-layout.md)<br/>             | Un diseño de registro de ejemplo para el servicio de enrutador<br/>                                                          |
 | [Códigos de error de enrutamiento y acceso remoto](routing-and-remote-access-error-codes.md)<br/>                     | Lista de todos los códigos de error de enrutamiento y acceso remoto.<br/>                                                         |
 | [Acceso remoto](remote-access-start-page.md)<br/>                                                          | Documentación de LAS API de administración de RAS y RAS.<br/>                                                         |

@@ -62,7 +62,7 @@ Este método solo está disponible en Windows Server 2012 R2 con [KB3091411](htt
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                             |
@@ -72,7 +72,7 @@ Este método solo está disponible en Windows Server 2012 R2 con [KB3091411](htt
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

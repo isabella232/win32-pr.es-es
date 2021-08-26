@@ -1,11 +1,11 @@
 ---
-title: Dominio-atributo de referencia cruzada
+title: Atributo Domain-Cross-Ref
 description: Se trata de una referencia de un objeto de dominio de confianza al objeto de referencia cruzada del dominio de confianza.
 ms.assetid: aa6fe6f9-a45c-448c-9fc5-17bc2994c764
 ms.tgt_platform: multiple
 keywords:
-- Dominio-esquema de AD de atributo de referencia cruzada
-- domainCrossRef esquema de AD de atributos
+- Esquema de AD del atributo Domain-Cross-Ref
+- DomainCrossRef attribute AD Schema (Esquema de AD del atributo domainCrossRef)
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b85e1293ce8141a3614c9401dbb34c1031de5935
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: eba4cecd6bc89a83b309c314dfdb3bee0968a2e8dd089da7e2f1e2afe5901aa0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077735"
 ---
-# <a name="domain-cross-ref-attribute"></a>Dominio-atributo de referencia cruzada
+# <a name="domain-cross-ref-attribute"></a>Atributo Domain-Cross-Ref
 
 Se trata de una referencia de un objeto de dominio de confianza al objeto de referencia cruzada del dominio de confianza.
 
@@ -29,14 +29,14 @@ Se trata de una referencia de un objeto de dominio de confianza al objeto de ref
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | Dominio-referencia cruzada                        |
-| Nombre para mostrar de LDAP | domainCrossRef                          |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Domain-Cross-Ref                        |
+| Ldap-Display-Name | domainCrossRef                          |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.472                  |
-| System-ID-GUID    | b000ea7b-a086-11d0-afdd-00c04fd930c9    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | b000ea7b-a086-11d0-afdd-00c04fd930c9    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ Se trata de una referencia de un objeto de dominio de confianza al objeto de ref
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -76,13 +76,13 @@ Se trata de una referencia de un objeto de dominio de confianza al objeto de ref
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -97,13 +97,13 @@ Se trata de una referencia de un objeto de dominio de confianza al objeto de ref
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -118,13 +118,13 @@ Se trata de una referencia de un objeto de dominio de confianza al objeto de ref
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -139,13 +139,13 @@ Se trata de una referencia de un objeto de dominio de confianza al objeto de ref
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -160,13 +160,13 @@ Se trata de una referencia de un objeto de dominio de confianza al objeto de ref
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |

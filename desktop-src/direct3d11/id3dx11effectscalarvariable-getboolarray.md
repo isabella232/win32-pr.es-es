@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX11EffectScalarVariable GetBoolArray (D3dx11effect. h)
-description: Obtiene una matriz de variables Booleanas.
+title: Método ID3DX11EffectScalarVariable GetBoolArray (D3dx11effect.h)
+description: Obtiene una matriz de variables booleanas.
 ms.assetid: 0335417a-a0aa-4157-881d-7828ffb3f47a
 keywords:
 - Método GetBoolArray Direct3D 11
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff039fb90bae187cc86eda14d80d541b3b050634
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c0ad7cb09788d8eabc75917e371b7cde33b5cd64abc24c4309182e925281d823
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952735"
 ---
-# <a name="id3dx11effectscalarvariablegetboolarray-method"></a>ID3DX11EffectScalarVariable:: GetBoolArray (método)
+# <a name="id3dx11effectscalarvariablegetboolarray-method"></a>Método ID3DX11EffectScalarVariable::GetBoolArray
 
-Obtiene una matriz de variables Booleanas.
+Obtiene una matriz de variables booleanas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,27 +48,27 @@ HRESULT GetBoolArray(
 *pData* 
 </dt> <dd>
 
-Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)\***
+Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)\***
 
-Puntero al principio de los datos que se van a establecer.
+Puntero al inicio de los datos que se establecerán.
 
 </dd> <dt>
 
 *Offset* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Debe establecerse en 0; está reservado para uso futuro.
+Debe establecerse en 0; se reserva para su uso futuro.
 
 </dd> <dt>
 
 *Recuento* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Número de elementos de matriz que se van a establecer.
+Número de elementos de matriz que se establecerán.
 
 </dd> </dl>
 
@@ -76,12 +76,12 @@ Número de elementos de matriz que se van a establecer.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -91,8 +91,8 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
 description: El control SelectionTree usa el evento SelectionPath para publicar la ruta de acceso del elemento resaltado.
 ms.assetid: 755e5bf2-42c4-4213-9bb7-4f15ad22041f
-title: SelectionPath ControlEvent,
+title: SelectionPath ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8314b12d14e10ccf96c7db9db32e63172050c0bc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f45dfcb017c18b026f03bf9fa9b89d7be33db49bafc3dd9f899846cbada1047
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040445"
 ---
-# <a name="selectionpath-controlevent"></a>SelectionPath ControlEvent,
+# <a name="selectionpath-controlevent"></a>SelectionPath ControlEvent
 
-El [control SelectionTree](selectiontree-control.md) usa el evento SelectionPath para publicar la ruta de acceso del elemento resaltado. Si el elemento está seleccionado para ejecutarse desde el origen, se trata de la ruta de acceso del origen. Si el elemento está seleccionado para estar ausente, la cadena es la cadena **AbsentPath** de la [tabla UIText](uitext-table.md). Este evento debe crearse en la [tabla EventMapping](eventmapping-table.md).
+El [control SelectionTree](selectiontree-control.md) usa el evento SelectionPath para publicar la ruta de acceso del elemento resaltado. Si el elemento está seleccionado para ejecutarse desde el origen, esta es la ruta de acceso del origen. Si se selecciona que el elemento esté ausente, la cadena es la cadena **AbsentPath** de la [tabla UIText](uitext-table.md). Este evento debe crearse en la [tabla EventMapping](eventmapping-table.md).
 
-Este ControlEvent, requiere que la interfaz de usuario se ejecute en el nivel de interfaz de usuario [*completo*](f-gly.md) . Este evento no funcionará con una [*interfaz*](r-gly.md) de usuario [*básica*](b-gly.md)o no reducida. Para obtener más información, consulte niveles de la [interfaz de usuario](user-interface-levels.md).
+Este control ControlEvent requiere que la interfaz de usuario se ejecute en el [*nivel completo de la interfaz de*](f-gly.md) usuario. Este evento no funcionará con una interfaz de usuario [*reducida o*](r-gly.md) una interfaz de [*usuario básica.*](b-gly.md) Para obtener información, [vea Interfaz de usuario Levels](user-interface-levels.md).
 
 Este evento solo puede afectar a los controles que se encuentran en el mismo cuadro de diálogo que el control SelectionTree.
 
@@ -27,13 +27,13 @@ Este evento solo puede afectar a los controles que se encuentran en el mismo cua
 
 Ninguno.
 
-## <a name="action-on-subscribers"></a>Acción en los suscriptores
+## <a name="action-on-subscribers"></a>Acción en suscriptores
 
 Ninguno.
 
 ## <a name="typical-use"></a>Uso típico
 
-Un control de [texto](text-control.md) en el mismo cuadro de diálogo modal que el SelectionTree debe suscribirse al evento a través de la [tabla EventMapping](eventmapping-table.md). El control de texto muestra la ruta de acceso del elemento resaltado.
+Un [control Text](text-control.md) en el mismo cuadro de diálogo modal que SelectionTree debe suscribirse al evento a través de la tabla [EventMapping](eventmapping-table.md). El Control de texto muestra la ruta de acceso del elemento resaltado.
 
  
 

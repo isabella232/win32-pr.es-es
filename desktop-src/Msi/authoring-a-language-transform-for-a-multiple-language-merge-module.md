@@ -1,33 +1,33 @@
 ---
-description: Cuando un módulo se combina en una base de datos que tiene un idioma predeterminado diferente, es posible que la herramienta de combinación tenga que aplicar una transformación de lenguaje al módulo para proporcionar el lenguaje final. Para obtener más información, vea módulos de combinación en varios idiomas.
+description: Cuando un módulo se combina en una base de datos que tiene un idioma predeterminado diferente, es posible que la herramienta de combinación tenga que aplicar una transformación de idioma al módulo para proporcionar el idioma final. Para obtener más información, vea Módulos de combinación de varios lenguajes.
 ms.assetid: 51e8774e-f358-423f-a283-ad7beeabbbdb
-title: Crear una transformación de idioma para un módulo de combinación de varios idiomas
+title: Creación de una transformación de idioma para un módulo de combinación de varios idiomas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 970c8908ddbf89e31f0fc7a415358bb887f0838e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9cf9a9c2294d310959bcd82f13010c88eb513e40ad4536c4dbca61e50d260873
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078065"
 ---
-# <a name="authoring-a-language-transform-for-a-multiple-language-merge-module"></a>Crear una transformación de idioma para un módulo de combinación de varios idiomas
+# <a name="authoring-a-language-transform-for-a-multiple-language-merge-module"></a>Creación de una transformación de idioma para un módulo de combinación de varios idiomas
 
-Cuando un módulo se combina en una base de datos que tiene un idioma predeterminado diferente, es posible que la herramienta de combinación tenga que aplicar una transformación de lenguaje al módulo para proporcionar el lenguaje final. Para obtener más información, vea [módulos de combinación en varios idiomas](multiple-language-merge-modules.md).
+Cuando un módulo se combina en una base de datos que tiene un idioma predeterminado diferente, es posible que la herramienta de combinación tenga que aplicar una transformación de idioma al módulo para proporcionar el idioma final. Para obtener más información, vea [Módulos de combinación de varios lenguajes.](multiple-language-merge-modules.md)
 
-Las transformaciones del lenguaje se almacenan en el archivo. MSM del módulo y deben tener el nombre y el formato: módulo CRT. lang \# \# \# \# . \# \# \# \# Representa el [LANGID](localizing-the-error-and-actiontext-tables.md) de hasta cuatro dígitos del idioma final. Por ejemplo, módulo CRT. Lang1033, módulo CRT. Lang9 y módulo CRT. Lang0 para las transformaciones con el Inglés de EE. UU., el inglés mundial y el idioma neutro. Son las mismas que las [transformaciones incrustadas](embedded-transforms.md) y se pueden agregar a los subalmacénes en el archivo. msm.
+Las transformaciones de lenguaje se almacenan en el archivo .msm del módulo y deben tener el nombre y el formato: MergeModule.Lang \# \# \# \# . representa el LANGID de \# \# \# \# hasta cuatro [dígitos](localizing-the-error-and-actiontext-tables.md) del idioma final. Por ejemplo, MergeModule.Lang1033, MergeModule.Lang9 y MergeModule.Lang0 para transformaciones en inglés de EE. UU., inglés del mundo e idioma neutro. Son iguales que [las transformaciones insertadas](embedded-transforms.md) y puede agregarlas a los subalmacenamientos en el archivo .msm.
 
 La transformación de idioma debe hacer lo siguiente:
 
--   Cambie el idioma predeterminado en la columna idioma de la [tabla ModuleSignature](modulesignature-table.md) al nuevo lenguaje del módulo.
--   Cambie el idioma predeterminado en la columna idioma de la [tabla ModuleComponents](modulecomponents-table.md) por el nuevo idioma del módulo. La transformación puede Agregar o quitar filas de esta tabla.
--   Si es necesario, cambie el idioma de la columna RequiredLanguage, o agregue o elimine filas, a la [tabla ModuleDependency](moduledependency-table.md).
--   Si es necesario, cambie el idioma de la columna ExcludedLanguage, o agregue o elimine filas, a la [tabla ModuleExclusion](moduleexclusion-table.md).
--   La transformación puede realizar cualquier operación de transformación válida en el módulo, incluida la adición o eliminación de componentes, archivos, entradas del registro o acciones.
+-   Cambie el idioma predeterminado de la columna Idioma de [la tabla ModuleSignature](modulesignature-table.md) al nuevo idioma del módulo.
+-   Cambie el idioma predeterminado de la columna Idioma de [la tabla ModuleComponents](modulecomponents-table.md) al nuevo idioma del módulo. La transformación puede agregar o quitar filas de esta tabla.
+-   Si es necesario, cambie el idioma de la columna RequiredLanguage o agregue o elimine filas a la [tabla ModuleDependency](moduledependency-table.md).
+-   Si es necesario, cambie el idioma de la columna ExcludedLanguage o agregue o elimine filas a la [tabla ModuleExclusion](moduleexclusion-table.md).
+-   La transformación puede realizar cualquier operación de transformación válida en el módulo, incluida la adición o eliminación de componentes, archivos, entradas del Registro o acciones.
 
-Tenga en cuenta que la aplicación de una transformación de idioma al abrir el módulo no cambia el idioma predeterminado o los idiomas que admite el módulo, sino que simplemente cambia el idioma que se solicita. Por lo tanto, la propiedad de [**Resumen de plantilla**](template-summary.md) no cambia, ya que debe mostrar todos los idiomas admitidos por el módulo con el idioma predeterminado que se muestra en primer lugar.
+Tenga en cuenta que la aplicación de una transformación de idioma al abrir el módulo no cambia el idioma predeterminado ni los idiomas admitidos por el módulo, solo cambia el idioma que se solicita. Por lo [**tanto,**](template-summary.md) la propiedad Resumen de plantilla no cambia, ya debería enumerar todos los idiomas admitidos por el módulo con el idioma predeterminado enumerado primero.
 
-Todos los archivos necesarios para todas las transformaciones de lenguaje posibles se almacenan normalmente en un único archivo. cab incluido con el módulo. Dado que no es práctico que la transformación de idioma modifique este archivo. cab, es mejor usar una secuencia de archivos global en el archivo. cab, la [tabla de archivos](file-table.md)y la transformación de idioma. Para obtener más información, consulte [ordenar la secuencia de archivos en el archivo. cab de un módulo de combinación de varios idiomas](ordering-the-file-sequence-in-the-cab-of-a-multiple-language-merge-module.md) .
+Todos los archivos necesarios para todas las transformaciones de lenguaje posibles se almacenan normalmente en un único archivo de archivador incluido con el módulo. Dado que no es práctico hacer que la transformación de lenguaje modifique este archivo de [](file-table.md)archivador, es mejor usar una secuencia de archivos global en el archivo de archivador, la tabla de archivos y la transformación de lenguaje. Para obtener más información, [vea Ordenar la secuencia de archivos en la CAB de un módulo de combinación de varios lenguajes.](ordering-the-file-sequence-in-the-cab-of-a-multiple-language-merge-module.md)
 
  
 

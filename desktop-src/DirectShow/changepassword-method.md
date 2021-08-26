@@ -1,15 +1,15 @@
 ---
-description: El método DVDAdm. ChangePassword guarda una nueva contraseña de aplicación en el registro.
+description: El método DVDAdm.ChangePassword guarda una nueva contraseña de aplicación en el Registro.
 ms.assetid: 58dac785-e20e-4a41-89cf-56644964da19
 title: ChangePassword (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bba8bfb9adcecdb88f19f3ac1b8061f93486e269
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9f5d15eef943afa019f1b1bba4e3b1412978bc5dd8f52f411c504e880428848a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999335"
 ---
 # <a name="changepassword-method"></a>ChangePassword (método)
 
@@ -18,7 +18,7 @@ ms.locfileid: "104494525"
 
  
 
-El `DVDAdm.ChangePassword` método guarda una nueva contraseña de aplicación en el registro.
+El `DVDAdm.ChangePassword` método guarda una nueva contraseña de aplicación en el Registro.
 
 ``` syntax
         DVD.DVDAdm.ChangePassword(sUserName, sOld, sNew)
@@ -31,14 +31,14 @@ El `DVDAdm.ChangePassword` método guarda una nueva contraseña de aplicación e
 <span id="sUserName"></span><span id="susername"></span><span id="SUSERNAME"></span>*sUserName*
 </dt> <dd>
 
-Especifica el nombre de inicio de sesión del usuario actual como una cadena. El objeto MSDVDAdm omite este parámetro. Vea la sección Comentarios.
+Especifica el nombre de inicio de sesión del usuario actual como string. El objeto MSDVDAdm omite este parámetro. Vea la sección Comentarios.
 
 </dd> <dt>
 
-<span id="sOld"></span><span id="sold"></span><span id="SOLD"></span>*Venda*
+<span id="sOld"></span><span id="sold"></span><span id="SOLD"></span>*Vendido*
 </dt> <dd>
 
-Especifica la contraseña anterior del usuario como una cadena.
+Especifica la contraseña antigua del usuario como una cadena.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Especifica la nueva contraseña del usuario como una cadena. No puede ser una ca
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Actualmente, el parámetro *sUserName* se omite en este y todos los métodos relacionados. Esto significa que quien sabe que la contraseña puede establecer el nivel parental. Solo hay una contraseña y un nivel parental para la aplicación. No se admiten nombres de inicio de sesión de usuario individuales ni administración de varias contraseñas. Para aplicar los niveles de administración parental, los padres deben establecer la contraseña y, a continuación, establecer el nivel parental adecuado para los miembros jóvenes del grupo de familiares. Cuando los padres quieren ver un disco con contenido clasificado por adultos, pueden cambiar el nivel y, a continuación, cambiarlo de nuevo cuando hayan terminado de verlo. Siempre que los elementos secundarios no conozcan la contraseña, solo podrán ver el contenido en el nivel establecido o debajo de él.
+Actualmente, el *parámetro sUserName* se omite en este y en todos los métodos relacionados. Esto significa que quien conoce la contraseña puede establecer el nivel parental. Solo hay una contraseña y un nivel parental para la aplicación. No se admiten nombres de inicio de sesión de usuario individuales ni administración de varias contraseñas. Para aplicar los niveles de administración parental, los padres deben establecer la contraseña y, a continuación, establecer el nivel parental adecuado para los miembros más pequeños del grupo de familiares. Cuando los padres desean ver un disco con contenido clasificado para adultos, pueden cambiar el nivel y, a continuación, cambiarlo de nuevo cuando terminen de verlo. Siempre que los secundarios no conozcan la contraseña, solo pueden ver contenido en el nivel establecido para ellos o por debajo de él.
 
 ## <a name="see-also"></a>Vea también
 

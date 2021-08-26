@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. dropDownToolTip
-description: El atributo dropDownToolTip especifica o recupera la información sobre herramientas que se muestra cuando el usuario mantiene el mouse sobre la lista desplegable de elementos de la lista de reproducción.
+title: PLAYLIST.dropDownToolTip
+description: El atributo dropDownToolTip especifica o recupera la información sobre herramientas que se muestra cuando el usuario mantiene el puntero sobre la lista desplegable del elemento PLAYLIST.
 ms.assetid: 36eefea4-9f34-4428-bac6-e3e1a8b8f20d
 keywords:
-- Windows Media Player de lista de reproducción. dropDownToolTip
+- LISTA DE REPRODUCCIÓN.dropDownToolTip Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39cc6f92293750713dde2bfb5eaf097576e6c00e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7ca6af0e1e253a1645cc3d4e8914867ef0ec583cc19d26ae1e000a527b7cf838
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003155"
 ---
-# <a name="playlistdropdowntooltip"></a>Lista de reproducción. dropDownToolTip
+# <a name="playlistdropdowntooltip"></a>PLAYLIST.dropDownToolTip
 
-El atributo **dropDownToolTip** especifica o recupera la información sobre herramientas que se muestra cuando el usuario mantiene el mouse sobre la lista desplegable de elementos de la lista de **reproducción** .
+El **atributo dropDownToolTip** especifica o recupera la información sobre herramientas que se muestra cuando el usuario mantiene el puntero sobre la lista desplegable del elemento **PLAYLIST.**
 
 ``` syntax
         elementID.dropDownToolTip
@@ -29,11 +29,11 @@ El atributo **dropDownToolTip** especifica o recupera la información sobre herr
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura con un valor predeterminado de "Mostrar listas de reproducción, audio, vídeo o emisoras de radio".
+Este atributo es una cadena de lectura y **escritura** con un valor predeterminado de "Mostrar listas de reproducción, audio, vídeo o estaciones de radio".
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando este atributo se establece en "" (cadena vacía), no se muestra ninguna información sobre herramientas.
+Cuando este atributo se establece en "" (cadena vacía), no se muestra información sobre herramientas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Cuando este atributo se establece en "" (cadena vacía), no se muestra ninguna i
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -49,7 +49,7 @@ Cuando este atributo se establece en "" (cadena vacía), no se muestra ninguna i
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

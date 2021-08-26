@@ -1,7 +1,7 @@
 - name: Windows Mixed Reality
   href: mixed-reality-portal.md
   items:
-    - name: Interfaces COM de realidad mixta de Windows
+    - name: Windows Mixed Reality COM Interfaces
       href: mixed-reality-com-interfaces.md
       items:
         - name: ISpatialInteractionManagerInterop

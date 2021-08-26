@@ -19,7 +19,7 @@ ms.locfileid: "119976245"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentApiException](./esentapiexception-class.md) expone los miembros siguientes.
+El [tipo EsentApiException](./esentapiexception-class.md) expone los siguientes miembros.
 
 ## <a name="properties"></a>Propiedades
 
@@ -83,7 +83,7 @@ El [tipo EsentApiException](./esentapiexception-class.md) expone los miembros si
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

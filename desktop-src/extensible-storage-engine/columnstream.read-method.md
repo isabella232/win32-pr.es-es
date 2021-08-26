@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: ColumnStream. Read (método)'
-title: ColumnStream. Read (método)
+description: Más información sobre el método ColumnStream.Read
+title: Método ColumnStream.Read
 TOCTitle: 'Read method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnStream.Read(System.Byte[],System.Int32,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnstream.read(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4e407a9069807d10eaabf4f7ac3fce3919576bc7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34c2bd13a2cc436ea192433e4f70098e328d1658a484c5dca9b092fe18f99a50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119976635"
 ---
-# <a name="columnstreamread-method"></a>ColumnStream. Read (método)
+# <a name="columnstreamread-method"></a>Método ColumnStream.Read
 
 Lee una secuencia de bytes en el flujo actual y avanza la posición en el flujo según el número de bytes leídos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -69,35 +69,35 @@ public override int Read(
 #### <a name="parameters"></a>Parámetros
 
   - buffer  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Búfer en el que se va a leer.
+    Búfer en el que se leerá.
 
 <!-- end list -->
 
   - offset  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Desplazamiento en el búfer en el que se va a leer.
+    Desplazamiento en el búfer en el que se leerá.
 
 <!-- end list -->
 
-  - count  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+  - recuento  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de bytes que se va a leer.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 Número de bytes leídos en el búfer.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnStream](./columnstream-class.md)
+[ColumnStream (clase)](./columnstream-class.md)
 
-[Miembros de ColumnStream](./columnstream-members.md)
+[Miembros ColumnStream](./columnstream-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

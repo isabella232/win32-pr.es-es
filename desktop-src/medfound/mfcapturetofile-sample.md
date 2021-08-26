@@ -1,23 +1,23 @@
 ---
-description: Muestra cómo capturar vídeo de una cámara de vídeo a un archivo.
+description: Muestra cómo capturar vídeo desde una cámara de vídeo a un archivo.
 ms.assetid: 910eb010-07df-4384-a489-3c268e4cd531
-title: Ejemplo de MFCaptureToFile
+title: Ejemplo MFCaptureToFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a0f8d8bb71eabb1faeb72bd8ce345b7a3eea0fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a1d5a588a573d7e2bc89fab25383210b275476a5285e377d651e44ecef47896
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119940345"
 ---
-# <a name="mfcapturetofile-sample"></a>Ejemplo de MFCaptureToFile
+# <a name="mfcapturetofile-sample"></a>Ejemplo MFCaptureToFile
 
-Muestra cómo capturar vídeo de una cámara de vídeo a un archivo.
+Muestra cómo capturar vídeo desde una cámara de vídeo a un archivo.
 
-## <a name="apis-demonstrated"></a>API mostradas
+## <a name="apis-demonstrated"></a>API demostradas
 
-Este ejemplo muestra las siguientes API.
+En este ejemplo se muestran las siguientes API.
 
 -   [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource)
 -   [**IMFSinkWriter**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsinkwriter)
@@ -30,7 +30,7 @@ Este ejemplo muestra las siguientes API.
 
 | Producto                                                        | Versión   |
 |----------------------------------------------------------------|-----------|
-| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
+| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
 
 
 
@@ -38,7 +38,7 @@ Este ejemplo muestra las siguientes API.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Este ejemplo está disponible en el [repositorio de github de ejemplos de Windows clásico](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureToFile).
+Este ejemplo está disponible en el repositorio [de GitHub Windows ejemplos clásicos.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureToFile)
 
 ## <a name="related-topics"></a>Temas relacionados
 

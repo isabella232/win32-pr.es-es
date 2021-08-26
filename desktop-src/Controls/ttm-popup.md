@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_POPUP (commctrl. h)
+title: TTM_POPUP mensaje (Commctrl.h)
 description: Hace que la información sobre herramientas se muestre en las coordenadas del último mensaje del mouse.
 ms.assetid: 6b7b430b-4f59-49f9-bd3f-70099485fac8
 keywords:
-- TTM_POPUP controles de mensajes de Windows
+- TTM_POPUP controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dabcbf710b57cdb110eb349a928bdceaf389dbb1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8ba2668af3ba53618147b1afccfdbb71347e3074ca113b68fde00bb61c32d3d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967835"
 ---
-# <a name="ttm_popup-message"></a>\_Mensaje emergente de TTM
+# <a name="ttm_popup-message"></a>Mensaje POPUP de TTM \_
 
 Hace que la información sobre herramientas se muestre en las coordenadas del último mensaje del mouse.
 
@@ -37,12 +37,12 @@ Hace que la información sobre herramientas se muestre en las coordenadas del ú
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -52,9 +52,9 @@ No se utiliza el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

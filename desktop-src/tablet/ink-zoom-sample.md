@@ -1,36 +1,36 @@
 ---
-description: Este programa de ejemplo muestra cómo hacer zoom y desplazar la entrada manuscrita.
+description: En este programa de ejemplo se muestra cómo acercar y desplazar la entrada de lápiz.
 ms.assetid: d3b5668a-29bf-4846-8ab0-1bda7b6160f9
-title: Ejemplo de zoom de tinta
+title: Ejemplo de zoom de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f20253a3f56b2a03b5a6dad45ab9a8b72090b5ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d786fe502e1510a44df39049e845f05694a1befae0d4a21bcfa2ba2bd2b19b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939445"
 ---
-# <a name="ink-zoom-sample"></a>Ejemplo de zoom de tinta
+# <a name="ink-zoom-sample"></a>Ejemplo de zoom de lápiz
 
-Este programa de ejemplo muestra cómo hacer zoom y desplazar la entrada manuscrita. En concreto, permite al usuario acercar y alejar la entrada de lápiz en incrementos. También muestra cómo hacer zoom en una región determinada mediante un rectángulo de zoom. Por último, en este ejemplo se muestra cómo recopilar la entrada de lápiz con distintas proporciones de zoom y cómo configurar el desplazamiento dentro del área de dibujo ampliada.
+En este programa de ejemplo se muestra cómo acercar y desplazar la entrada de lápiz. En concreto, permite al usuario acercar y alejar la entrada de lápiz en incrementos. También muestra cómo acercar una región determinada mediante un rectángulo de zoom. Por último, en este ejemplo se muestra cómo recopilar la entrada de lápiz en diferentes relaciones de zoom y cómo configurar el desplazamiento dentro del área de dibujo con zoom.
 
-En el ejemplo, las transformaciones vista y objeto del objeto [representador](/previous-versions/ms828481(v=msdn.10)) se utilizan para realizar el zoom y el desplazamiento. La transformación de la vista se aplica a los puntos y al ancho del lápiz. La transformación de objeto solo se aplica a los puntos. El usuario puede controlar qué transformación se usa cambiando el elemento ancho del lápiz de escala en el menú modo.
+En el ejemplo, las [transformaciones de](/previous-versions/ms828481(v=msdn.10)) objetos y vistas del objeto representador se usan para realizar zoom y desplazamiento. La transformación de vista se aplica a los puntos y el ancho del lápiz. La transformación de objetos solo se aplica a los puntos. El usuario puede controlar qué transformación se usa cambiando el elemento Ancho del lápiz de escala en el menú Modo.
 
 > [!Note]  
-> Es problemático realizar algunas llamadas COM en determinados métodos de interfaz ([**InkRenderer. SetViewTransform**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-setviewtransform) y [**InkRenderer. SetObjectTransform**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-setobjecttransform), por ejemplo) cuando se ha enviado un mensaje. Cuando se envían mensajes, deben calcularse en la cola de mensajes posteriores. Para abordar este escenario, pruebe si está controlando un mensaje desde POST llamando a [**InSendMesssageEx**](/windows/desktop/api/winuser/nf-winuser-insendmessageex) y envíe el mensaje a sí mismo si se ha enviado el mensaje.
+> Es problemático realizar algunas llamadas COM en determinados métodos de interfaz [**(InkRenderer.SetViewTransform**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-setviewtransform) y [**InkRenderer.SetObjectTransform,**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-setobjecttransform)por ejemplo) cuando se ha enviado un mensaje. Cuando los mensajes se envían, deben estar en la cola de mensajes POST. Para solucionar este escenario, pruebe si está controlando un mensaje de POST mediante una llamada a [**InSendMesssageEx**](/windows/desktop/api/winuser/nf-winuser-insendmessageex) y POST, si el mensaje se envió.
 
  
 
 En este ejemplo se usan las siguientes características:
 
--   El objeto [InkCollector](/previous-versions/ms583683(v=vs.100))
--   El método [SetViewTransform](/previous-versions/ms828514(v=msdn.10)) del objeto [representador](/previous-versions/ms828481(v=msdn.10))
--   El método [SetObjectTransform](/previous-versions/ms828513(v=msdn.10)) del objeto [representador](/previous-versions/ms828481(v=msdn.10))
+-   El [objeto InkCollector](/previous-versions/ms583683(v=vs.100))
+-   Método [SetViewTransform](/previous-versions/ms828514(v=msdn.10)) del objeto [Renderer](/previous-versions/ms828481(v=msdn.10))
+-   Método [SetObjectTransform](/previous-versions/ms828513(v=msdn.10)) del objeto [Renderer](/previous-versions/ms828481(v=msdn.10))
 
 ## <a name="initializing-the-form"></a>Inicializar el formulario
 
-En primer lugar, el ejemplo hace referencia a las interfaces de automatización de Tablet PC que se proporcionan en el kit de desarrollo de software (SDK) de Windows Vista o Windows XP Tablet PC Edition.
+En primer lugar, el ejemplo hace referencia a las interfaces de automatización de Tablet PC, que se proporcionan en Windows Vista o Windows XP Tablet PC Edition Software Development Kit (SDK).
 
 
 ```C++
@@ -39,7 +39,7 @@ using Microsoft.Ink;
 
 
 
-En el ejemplo se declara un [InkCollector](/previous-versions/ms583683(v=vs.100)), `myInkCollector` , y algunos miembros privados para ayudar con el escalado.
+El ejemplo declara un [InkCollector](/previous-versions/ms583683(v=vs.100)), `myInkCollector` y algunos miembros privados para ayudar con el escalado.
 
 
 ```C++
@@ -63,7 +63,7 @@ private const float MediumInkWidth = 100;
 
 
 
-A continuación, el ejemplo crea y habilita [InkCollector](/previous-versions/ms583683(v=vs.100)) en el controlador de eventos de [carga](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del formulario. Además, la propiedad [ancho](/previous-versions/ms837941(v=msdn.10)) de la propiedad [DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) del objeto InkCollector está establecida. Por último, se definen los intervalos de la barra de desplazamiento y se llama al método de la aplicación `UpdateZoomAndScroll` .
+A continuación, el ejemplo crea y habilita [InkCollector en](/previous-versions/ms583683(v=vs.100)) el controlador de eventos [Load](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del formulario. Además, se [establece la](/previous-versions/ms837941(v=msdn.10)) propiedad Width de la [propiedad DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) del objeto InkCollector. Por último, se definen los intervalos de la barra de desplazamiento y se llama al `UpdateZoomAndScroll` método de la aplicación.
 
 
 ```C++
@@ -97,14 +97,14 @@ private void InkZoom_Load(object sender, System.EventArgs e)
 
 ## <a name="updating-the-zoom-and-scroll-values"></a>Actualizar los valores de zoom y desplazamiento
 
-Muchos eventos afectan al área de dibujo del recopilador de tinta. En el `UpdateZoomAndScroll` método, una matriz de transformación se usa para escalar y trasladar el recolector de tinta dentro de la ventana.
+El área de dibujo del recopilador de lápiz se ve afectada por muchos eventos. En el `UpdateZoomAndScroll` método , se usa una matriz de transformación para escalar y traducir el recopilador de entrada de lápiz dentro de la ventana.
 
 > [!Note]  
-> El método [SetViewTransform](/previous-versions/ms828514(v=msdn.10)) del objeto [representador](/previous-versions/ms828481(v=msdn.10)) aplica la transformación a los trazos y al ancho del lápiz, mientras que el método [SetObjectTransform](/previous-versions/ms828513(v=msdn.10)) solo aplica la transformación a los trazos.
+> El método [SetViewTransform](/previous-versions/ms828514(v=msdn.10)) del objeto [Renderer](/previous-versions/ms828481(v=msdn.10)) aplica la transformación tanto a los trazos como al ancho del lápiz, mientras que el [método SetObjectTransform](/previous-versions/ms828513(v=msdn.10)) solo aplica la transformación a los trazos.
 
  
 
-Por último, se llama al método de la aplicación `UpdateScrollBars` y se fuerza la actualización del formulario.
+Por último, se llama al `UpdateScrollBars` método de la aplicación y se fuerza la actualización del formulario.
 
 
 ```C++
@@ -137,9 +137,9 @@ Refresh();
 
 
 
-## <a name="managing-the-scroll-bars"></a>Administrar las barras de desplazamiento
+## <a name="managing-the-scroll-bars"></a>Administración de las barras de desplazamiento
 
-El `UpdateScrollBars` método configura las barras de desplazamiento para que funcionen correctamente con el tamaño de la ventana actual, la configuración del zoom y la ubicación de desplazamiento en [InkCollector](/previous-versions/ms583683(v=vs.100)). Este método calcula el cambio grande y los valores pequeños para las barras de desplazamiento vertical y horizontal. También calcula el valor actual de las barras de desplazamiento y si deben ser visibles. El método [PixelToInkSpace](/previous-versions/ms828505(v=msdn.10)) del objeto de [representador](/previous-versions/ms828481(v=msdn.10)) controla la conversión de píxeles al espacio de coordenadas y a las cuentas de zoom para cualquier ajuste de escala y desplazamiento que se aplique a través de las transformaciones de objeto y vista.
+El método configura las barras de desplazamiento para que funcionen correctamente con el tamaño de la ventana actual, la configuración de zoom y la ubicación de desplazamiento dentro `UpdateScrollBars` de [InkCollector](/previous-versions/ms583683(v=vs.100)). Este método calcula los valores de cambio grande y pequeño para las barras de desplazamiento vertical y horizontal. También calcula el valor actual de las barras de desplazamiento y si deben estar visibles. El método [PixelToInkSpace](/previous-versions/ms828505(v=msdn.10)) del objeto [Renderer](/previous-versions/ms828481(v=msdn.10)) controla la conversión de píxeles al espacio de coordenadas zoomed y tiene en cuenta cualquier escalado y desplazamiento que se aplica a través de la vista y las transformaciones de objetos.
 
 
 ```C++
@@ -193,13 +193,13 @@ if(vScrollBar.Visible && (vScrollBar.Value + vScrollBar.LargeChange > vScrollBar
 
 
 
-## <a name="zooming-to-a-rectangle"></a>Acercar un rectángulo
+## <a name="zooming-to-a-rectangle"></a>Acercar a un rectángulo
 
-Los `pnlDrawingArea` controladores de eventos de panel administran el dibujo del rectángulo en la ventana. Si el comando zoom to Rect está activado en el menú modo, el controlador de eventos [MouseUp](/previous-versions/ms567618(v=vs.100)) llama al método de la aplicación `ZoomToRectangle` . El `ZoomToRectangle` método calcula el ancho y el alto del rectángulo, comprueba las condiciones de límite, actualiza los valores de la barra de desplazamiento y el factor de escala y, a continuación, llama al método de la aplicación `UpdateZoomAndScroll` para aplicar la nueva configuración.
+Los `pnlDrawingArea` controladores de eventos del panel administran el dibujo del rectángulo en la ventana. Si el comando Zoom To Rect está activado en el menú Modo, el controlador de eventos [MouseUp](/previous-versions/ms567618(v=vs.100)) llama al método de la `ZoomToRectangle` aplicación. El método calcula el ancho y el alto del rectángulo, comprueba las condiciones de límite, actualiza los valores de la barra de desplazamiento y el factor de escala y, a continuación, llama al método de la aplicación para aplicar la `ZoomToRectangle` `UpdateZoomAndScroll` nueva configuración.
 
-## <a name="closing-the-form"></a>Cierre del formulario
+## <a name="closing-the-form"></a>Cerrar el formulario
 
-El método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) del formulario desecha el objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) .
+El método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) del formulario elimina el [objeto InkCollector.](/previous-versions/ms583683(v=vs.100))
 
  
 

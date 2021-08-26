@@ -1,41 +1,41 @@
 ---
 title: Recuperación de encabezados HTTP
-description: En este tutorial se describe cómo recuperar información de encabezado de las solicitudes HTTP.
+description: En este tutorial se describe cómo recuperar información de encabezado de solicitudes HTTP.
 ms.assetid: 347e4fb3-5f96-488a-bef8-4df0b8d1ade1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5b31043940b8c2127d1cfa1696d2821641d0784
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ba9c1dbae3447d5ae44c8d348394f2dc802ed9d7b4af7d99fde19d0b5d2c3d22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105656381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955515"
 ---
 # <a name="retrieving-http-headers"></a>Recuperación de encabezados HTTP
 
-En este tutorial se describe cómo recuperar información de encabezado de las solicitudes HTTP.
+En este tutorial se describe cómo recuperar información de encabezado de solicitudes HTTP.
 
 ## <a name="implementation-steps"></a>Pasos de implementación
 
 Hay dos maneras de recuperar la información del encabezado:
 
--   Use una de las constantes de [**marca de información de consulta**](query-info-flags.md) asociadas al encabezado HTTP que necesita su aplicación.
--   Use la \_ \_ marca de atributo personalizado de consulta http y pase el nombre del encabezado HTTP.
+-   Use una de las [**constantes de la**](query-info-flags.md) marca de información de consulta asociadas al encabezado HTTP que necesita la aplicación.
+-   Use la marca \_ de atributo HTTP QUERY CUSTOM y pase el nombre del encabezado \_ HTTP.
 
-El uso de la constante asociada con el encabezado HTTP que necesita su aplicación es más rápido internamente, pero puede haber encabezados HTTP que no tengan una constante asociada. En esos casos, el método que utiliza la \_ marca de atributo personalizado de consulta HTTP \_ está disponible.
+El uso de la constante asociada al encabezado HTTP que la aplicación necesita es más rápido internamente, pero puede haber encabezados HTTP que no tengan una constante asociada a ellos. En esos casos, el método que usa la marca de atributo HTTP \_ QUERY \_ CUSTOM está disponible.
 
-Ambos métodos usan la función [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) . [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) toma el identificador [**HINTERNET**](appendix-a-hinternet-handles.md) en el que se realizó la solicitud HTTP, un atributo, un búfer, un valor DWORD que contiene el tamaño de búfer y un valor de índice. También se puede Agregar un modificador al atributo que se pasa a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) para indicar en qué formato se deben devolver los datos.
+Ambos métodos usan la [**función HttpQueryInfo.**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) toma el identificador [**HINTERNET**](appendix-a-hinternet-handles.md) en el que se realizó la solicitud HTTP, un atributo, un búfer, un valor DWORD que contiene el tamaño del búfer y un valor de índice. También se puede agregar un modificador al atributo pasado a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) para indicar en qué formato se deben devolver los datos.
 
 ### <a name="retrieving-headers-using-a-constant"></a>Recuperar encabezados mediante una constante
 
-Para usar la función [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) para recuperar un encabezado HTTP mediante una constante, siga estos pasos:
+Para usar la [**función HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) para recuperar un encabezado HTTP mediante una constante, siga estos pasos:
 
-1.  Llame a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) con una constante de la lista de [**atributos**](query-info-flags.md) , un búfer **null** y la variable que contiene el tamaño de búfer establecido en cero. Además, si la aplicación necesita los datos en un formato determinado, puede Agregar una constante desde la lista de [**Modificadores**](query-info-flags.md) .
-2.  Si el encabezado HTTP solicitado existe, se debe producir un error en la llamada a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) . [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) debe devolver el error \_ búfer insuficiente \_ y la variable que se ha pasado para el parámetro *lpdwBufferLength* debe establecerse en el número de bytes necesario.
-3.  Asigne un búfer con el número de bytes necesario.
-4.  Vuelva a intentar la llamada a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa).
+1.  Llame [**a HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) con una constante de la lista [**Atributos,**](query-info-flags.md) un búfer **NULL** y la variable que contiene el tamaño de búfer establecido en cero. Además, si la aplicación necesita los datos en un formato determinado, puede agregar una constante de la [**lista Modificadores.**](query-info-flags.md)
+2.  Si existe el encabezado HTTP solicitado, se debe producir un error en la llamada a [**HttpQueryInfo,**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) debe devolver ERROR INSUFFICIENT BUFFER y la variable pasada para el parámetro \_ \_ *lpdwBufferLength* debe establecerse en el número de bytes necesarios.
+3.  Asigne un búfer con el número de bytes necesarios.
+4.  Vuelva a intentar la llamada [**a HttpQueryInfo.**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa)
 
-En el ejemplo siguiente se muestra una llamada a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) mediante la \_ constante CRLF de encabezados de consulta HTTP \_ \_ \_ , que es un valor especial que solicita todos los encabezados HTTP devueltos.
+En el ejemplo siguiente se muestra una llamada a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) mediante la constante CRLF HTTP QUERY RAW HEADERS, que es un valor especial que solicita todos los \_ \_ \_ \_ encabezados HTTP devueltos.
 
 
 ```C++
@@ -91,18 +91,18 @@ retry:
 
 
 
-### <a name="retrieving-headers-using-http_query_custom"></a>Recuperación de encabezados mediante la \_ consulta HTTP \_ personalizada
+### <a name="retrieving-headers-using-http_query_custom"></a>Recuperar encabezados mediante HTTP \_ QUERY \_ CUSTOM
 
-Para usar la función [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) para recuperar un encabezado HTTP mediante la \_ consulta HTTP \_ personalizada, siga estos pasos:
+Para usar la [**función HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) para recuperar un encabezado HTTP mediante HTTP \_ QUERY \_ CUSTOM, siga estos pasos:
 
-1.  Asigne un búfer lo suficientemente grande como para contener el nombre de la cadena del encabezado HTTP.
-2.  Escriba el nombre de la cadena del encabezado HTTP en el búfer.
-3.  Llame a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) con la \_ consulta HTTP \_ Custom, el búfer que contiene el nombre de cadena del encabezado HTTP y la variable que contiene el tamaño del búfer. Además, si la aplicación necesita los datos en un formato determinado, puede Agregar una constante desde la lista de [**Modificadores**](query-info-flags.md) .
-4.  Si se produce un error en la llamada a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) y [**GETLASTERROR**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve un error de \_ búfer insuficiente \_ , reasigne un búfer con el número de bytes necesario.
+1.  Asigne un búfer lo suficientemente grande como para contener el nombre de cadena del encabezado HTTP.
+2.  Escriba el nombre de cadena del encabezado HTTP en el búfer.
+3.  Llame [**a HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) con HTTP QUERY CUSTOM, el búfer que contiene el nombre de cadena del encabezado HTTP y la variable que \_ contiene el tamaño del \_ búfer. Además, si la aplicación necesita los datos en un formato determinado, puede agregar una constante de la [**lista Modificadores.**](query-info-flags.md)
+4.  Si se produce un error en la llamada a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve ERROR INSUFFICIENT BUFFER, vuelva a crear un búfer con el \_ número de bytes \_ necesarios.
 5.  Vuelva a escribir el nombre de cadena del encabezado HTTP en el búfer.
-6.  Vuelva a intentar la llamada a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa).
+6.  Vuelva a intentar la llamada [**a HttpQueryInfo.**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa)
 
-En el ejemplo siguiente se muestra una llamada a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) mediante la \_ constante personalizada de consulta HTTP \_ para solicitar el encabezado HTTP Content-Type.
+En el ejemplo siguiente se muestra una llamada a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) mediante la constante HTTP \_ QUERY CUSTOM para solicitar el encabezado HTTP \_ Content-Type.
 
 
 ```C++
@@ -157,10 +157,10 @@ retry:
 
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. En el caso de servicios o implementaciones de servidor, use los [servicios http de Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows HTTP Services (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
 
- 
+ 
 
- 
+ 
 
- 
+ 
