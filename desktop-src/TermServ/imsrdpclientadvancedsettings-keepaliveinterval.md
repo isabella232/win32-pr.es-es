@@ -1,26 +1,26 @@
 ---
-title: Propiedad keepAliveInterval de IMsRdpClientAdvancedSettings
-description: Especifica un intervalo, en milisegundos, en el que el cliente envía mensajes persistentes al servidor.
+title: IMsRdpClientAdvancedSettings keepAliveInterval, propiedad
+description: Especifica un intervalo, en milisegundos, en el que el cliente envía mensajes de conexión continua al servidor.
 ms.assetid: 0d1b7d8f-f81c-4591-bb08-adab307e87fe
 ms.tgt_platform: multiple
 keywords:
-- propiedad keepAliveInterval Servicios de Escritorio remoto
-- propiedad keepAliveInterval Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad keepAliveInterval
-- propiedad keepAliveInterval Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad keepAliveInterval
-- propiedad keepAliveInterval Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad keepAliveInterval
-- propiedad keepAliveInterval Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad keepAliveInterval
-- propiedad keepAliveInterval Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad keepAliveInterval
-- propiedad keepAliveInterval Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad keepAliveInterval
-- propiedad keepAliveInterval Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad keepAliveInterval
-- propiedad keepAliveInterval Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad keepAliveInterval
+- Propiedad keepAliveInterval Servicios de Escritorio remoto
+- Propiedad keepAliveInterval Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad keepAliveInterval
+- Propiedad keepAliveInterval Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad keepAliveInterval
+- Propiedad keepAliveInterval Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad keepAliveInterval
+- Propiedad keepAliveInterval Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad keepAliveInterval
+- Propiedad keepAliveInterval Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad keepAliveInterval
+- Propiedad keepAliveInterval Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad keepAliveInterval
+- Propiedad keepAliveInterval Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad keepAliveInterval
+- Propiedad keepAliveInterval Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad keepAliveInterval
 topic_type:
 - apiref
 api_name:
@@ -54,22 +54,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d15412b5b1803aadcffa08a8617742e0c90b1a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1dad34455d1203fb353672b8ef3797866b8ad2aa8b5686f71f769eccc5f3c9ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033305"
 ---
-# <a name="imsrdpclientadvancedsettingskeepaliveinterval-property"></a>IMsRdpClientAdvancedSettings:: keepAliveInterval (propiedad)
+# <a name="imsrdpclientadvancedsettingskeepaliveinterval-property"></a>Propiedad IMsRdpClientAdvancedSettings::keepAliveInterval
 
-Especifica un intervalo, en milisegundos, en el que el cliente envía mensajes persistentes al servidor.
+Especifica un intervalo, en milisegundos, en el que el cliente envía mensajes de conexión continua al servidor.
 
 Una configuración de directiva de grupo que especifica si se permiten conexiones de cliente persistentes al servidor puede invalidar esta configuración de propiedad.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -86,15 +86,15 @@ HRESULT get_keepAliveInterval(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Nuevo intervalo, en milisegundos. El valor predeterminado de la propiedad es cero, lo que deshabilita los mensajes persistentes. El valor mínimo válido de esta propiedad es 10.000, que representa 10 segundos.
+El nuevo intervalo, en milisegundos. El valor predeterminado de la propiedad es cero, lo que deshabilita los mensajes de conexión continua. El valor mínimo válido de esta propiedad es 10 000, que representa 10 segundos.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

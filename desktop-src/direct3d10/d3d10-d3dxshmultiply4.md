@@ -1,7 +1,7 @@
 ---
-description: Calcula el producto de dos funciones de armónicos esféricos (f y g). Ambas funciones son del orden N = 4.
+description: Calcula el producto de dos funciones armónicas esféricas (f y g). Ambas funciones son del orden N = 4.
 ms.assetid: 05427a18-447e-45d7-a851-e580298c9a1f
-title: Función D3DXSHMultiply4 (D3DX10Math. h)
+title: Función D3DXSHMultiply4 (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 13e8b62674ccbabbb03259f06b79f330424ddf84
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 78305930eb76b3632737c10482768b9db363deae84f14cf5b73f962d265de2a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990015"
 ---
-# <a name="d3dxshmultiply4-function"></a>D3DXSHMultiply4 función)
+# <a name="d3dxshmultiply4-function"></a>Función D3DXSHMultiply4
 
-Calcula el producto de dos funciones de armónicos esféricos (*f* y *g*). Ambas funciones son del orden N = 4.
+Calcula el producto de dos funciones armónicas esféricas *(f* y *g*). Ambas funciones son del orden N = 4.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,28 +42,28 @@ FLOAT* D3DXSHMultiply4(
 
 <dl> <dt>
 
-*pOut* \[ de\]
+*pOut* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a los coeficientes SH de salida: función base *Y* LM se almacena en l ² + *m* + l. El orden *N* determina la longitud de la matriz, donde siempre debe haber un coeficiente de *N*².
+Puntero a los coeficientes SH de salida: la función base *Y* lm se almacena en lntes + *m* + l. El orden *N* determina la longitud de la matriz, donde siempre debe haber *N* coeficientes ntes.
 
 </dd> <dt>
 
-*PF* \[ de\]
+*pF* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Los coeficientes SH de entrada para la primera función.
+Coeficientes SH de entrada para la primera función.
 
 </dd> <dt>
 
-*PG* \[ de\]
+*pG* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
 Segundo conjunto de coeficientes SH de entrada.
 
@@ -71,13 +71,13 @@ Segundo conjunto de coeficientes SH de entrada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a los coeficientes de salida SH.
+Puntero a coeficientes de salida sh.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El producto de dos funciones SH de orden N = 4 genera una función SH de orden 2 × *N* -1 = 7, pero los resultados se truncan. Esto significa que el producto se desactivará ( *f* × *g*  =  *g* × *f* ), pero no se asocia ( *f* × ( *g* × *h* ) ≠ ( *f* × *g* ) × *h* ).
+El producto de dos funciones SH del orden N = 4 genera una función SH del orden 2 × *N* - 1 = 7, pero los resultados se truncan. Esto significa que el producto se desplaza ( *f* × *g* g × f ) pero no se asocia  =   ( *f* × ( *g* × *h* ) ≠ ( *f* × *g* ) × *h* ). 
 
 Esta función usa la siguiente ecuación:
 
@@ -88,7 +88,7 @@ pOut[i] = int(y_i(s) * f(s) * g(s))
 
 
 
-donde y \_ son las funciones de base de l l, donde f (s) y g (s) usan la siguiente función SH:
+donde y i(s) es la función base de ith SH y donde \_ f(s) y g(s) usan la siguiente función SH:
 
 
 ```
@@ -103,8 +103,8 @@ sum_i(y_i(s)*c_i)
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

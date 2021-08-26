@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Texture2DArray:: Texture2DArray SampleBias'
-description: Muestrea un Texture2DArray, después de aplicar el valor de diferencia al nivel de mipmap.
+title: Métodos Texture2DArray::Texture2DArray SampleBias
+description: Muestrea texture2DArray después de aplicar el valor de sesgo al nivel de mapa mip.
 ms.assetid: E7AF7EA0-4A7D-4B6B-980C-BA74473D3956
 keywords:
-- SampleBias métodos HLSL
+- Métodos HLSL de SampleBias
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 718feac9dd80b2cdc5adf0d5005e9a7b997cf5a0
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: a947ed2aca7c6372547ff9eeb36f03477bc48f3bf8ddaae0bbafa16e7b85234f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104076983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067455"
 ---
-# <a name="texture2darraysamplebias-methods"></a>Texture2DArray:: SampleBias (métodos)
+# <a name="texture2darraysamplebias-methods"></a>Métodos Texture2DArray::SampleBias
 
-Muestrea un [**Texture2DArray**](sm5-object-texture2darray.md), después de aplicar el valor de diferencia al nivel de mipmap.
+Muestrea [**un objeto Texture2DArray**](sm5-object-texture2darray.md)después de aplicar el valor de sesgo al nivel de mapa mip.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,9 +29,9 @@ Muestrea un [**Texture2DArray**](sm5-object-texture2darray.md), después de apli
 
 | Método                                                                                                | Descripción                                                                                                                                                                                  |
 |:------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleBias (S, Float, Float, int)**](dx-graphics-hlsl-to-samplebias.md)                               | Muestrea una textura, después de aplicar el valor de diferencia al nivel de mipmap.<br/>                                                                                                             |
-| [**SampleBias (S, Float, Float, int, float)**](t2darray-samplebias-s-float-float-int-float-.md)           | Muestrea una textura, después de aplicar el valor de diferencia al nivel de mipmap, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en.<br/>                                     |
-| [**SampleBias (S, Float, Float, int, Float, uint)**](t2darray-samplebias-s-float-float-int-float-uint-.md) | Muestrea una textura, después de aplicar el valor de diferencia al nivel de mipmap, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en. Devuelve el estado de la operación.<br/> |
+| [**SampleBias(S,float,float,int)**](dx-graphics-hlsl-to-samplebias.md)                               | Muestrea una textura después de aplicar el valor de sesgo al nivel de mapa mip.<br/>                                                                                                             |
+| [**SampleBias(S,float,float,int,float)**](t2darray-samplebias-s-float-float-int-float-.md)           | Muestrea una textura después de aplicar el valor de sesgo al nivel de mapa mip, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.<br/>                                     |
+| [**SampleBias(S,float,float,int,float,uint)**](t2darray-samplebias-s-float-float-int-float-uint-.md) | Muestrea una textura después de aplicar el valor de sesgo al nivel de mapa mip, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Devuelve el estado de la operación.<br/> |
 
 
 

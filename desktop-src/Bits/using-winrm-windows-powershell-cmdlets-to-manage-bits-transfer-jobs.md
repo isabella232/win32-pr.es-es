@@ -1,21 +1,21 @@
 ---
 title: Uso de los cmdlets de Windows PowerShell para WinRM para administrar trabajos de transferencia de BITS
-description: Administración remota de Windows los cmdlets de PowerShell pueden administrar trabajos de transferencia de Servicio de transferencia inteligente en segundo plano (BITS).
+description: Windows Los cmdlets de PowerShell de administración remota pueden administrar Servicio de transferencia inteligente en segundo plano de transferencia de datos (BITS).
 ms.assetid: 9fbef8a1-ed3f-4277-9a07-ed427f60d7a8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eefd874a1056e959d1516d515891ae216e4aca3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9f24f4776d8a8431ac8c910fb8145633961bf353721698f8c3e5b4737ee0a1c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004645"
 ---
 # <a name="using-winrm-windows-powershell-cmdlets-to-manage-bits-transfer-jobs"></a>Uso de los cmdlets de Windows PowerShell para WinRM para administrar trabajos de transferencia de BITS
 
-Administración remota de Windows los cmdlets de PowerShell pueden administrar trabajos de transferencia de Servicio de transferencia inteligente en segundo plano (BITS). Para obtener más información acerca de la administración remota de BITS, consulte [clases]( /previous-versions//dd904507(v=vs.85))de proveedor bits [y proveedor bits](/previous-versions/windows/desktop/bitsprov/bits-provider) .
+Windows Los cmdlets de PowerShell de administración remota pueden administrar Servicio de transferencia inteligente en segundo plano de transferencia de datos (BITS). Para obtener más información sobre la administración remota de BITS, vea [Proveedor de BITS](/previous-versions/windows/desktop/bitsprov/bits-provider) y Clases de proveedor de [BITS]( /previous-versions//dd904507(v=vs.85)).
 
-En los siguientes ejemplos se requiere el [proveedor de bits](/previous-versions/windows/desktop/bitsprov/bits-provider). El proveedor de BITS está disponible después de instalar el servidor BITS compacto. Para obtener información acerca de cómo instalar el servidor compacto, consulte la documentación del [servidor de bits Compact](bits-compact-server.md) .
+En los ejemplos siguientes se requiere el [proveedor bits](/previous-versions/windows/desktop/bitsprov/bits-provider). El proveedor de BITS está disponible después de instalar el servidor de BITS Compact. Para obtener información sobre cómo instalar el servidor compact, consulte la [documentación de BITS Compact Server.](bits-compact-server.md)
 
 1.  Cree un trabajo de transferencia de BITS.
 
@@ -29,11 +29,11 @@ En los siguientes ejemplos se requiere el [proveedor de bits](/previous-versions
 
     
 
-    El cmdlet [Get-Credential](/previous-versions//dd315327(v=technet.10)) solicita las credenciales del usuario para conectarse al equipo remoto y asigna las credenciales al objeto $cred.
+    El cmdlet [Get-Credential](/previous-versions//dd315327(v=technet.10)) solicita las credenciales del usuario para conectarse al equipo remoto y asigna las credenciales al objeto $cred usuario.
 
-    El cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1) crea el trabajo de transferencia de bits en Client1 creando una instancia de la clase [BitsClientJob](/previous-versions/windows/desktop/legacy/dd904502(v=vs.85)) y usando la información de la tabla hash definida en el parámetro *Valueset* . El parámetro *Valueset* especifica la información necesaria para rellenar los parámetros del método [CreateJob](/previous-versions/windows/desktop/bitsprov/createjob-bitsclientjob) . En el ejemplo anterior, el usuario establece el parámetro de *tipo* en 0 (descargar). El usuario también especifica el nombre de los archivos remotos y locales para el trabajo de descarga. Para obtener más información sobre cómo crear trabajos de transferencia de BITS y obtener información detallada sobre los parámetros, vea método [CreateJob](/previous-versions/windows/desktop/bitsprov/createjob-bitsclientjob) .
+    El cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1) crea el trabajo de transferencia de BITS en Client1 creando una instancia de la [clase BitsClientJob](/previous-versions/windows/desktop/legacy/dd904502(v=vs.85)) y usando la información de la tabla hash definida en el *parámetro Valueset.* El *parámetro Valueset* especifica la información necesaria para rellenar los parámetros del [método CreateJob.](/previous-versions/windows/desktop/bitsprov/createjob-bitsclientjob) En el ejemplo anterior, el usuario establece el parámetro *Type* en 0 (descargar). El usuario también especifica el nombre de los archivos remotos y locales para el trabajo de descarga. Para obtener más información sobre cómo crear trabajos de transferencia de BITS y para obtener información detallada sobre los parámetros, vea [Método CreateJob.](/previous-versions/windows/desktop/bitsprov/createjob-bitsclientjob)
 
-    El cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1&preserve-view=true) asigna el resultado a la variable $result.
+    El cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1&preserve-view=true) asigna el resultado a la $result variable.
 
     > [!Note]  
     > El carácter de acento grave ( \` ) se usa para indicar un salto de línea.
@@ -49,7 +49,7 @@ En los siguientes ejemplos se requiere el [proveedor de bits](/previous-versions
 
     
 
-    El cmdlet [set-WsmanInstance](/powershell/module/Microsoft.WsMan.Management/Set-WSManInstance?view=powershell-5.1&preserve-view=true) cambia la prioridad del nuevo trabajo de transferencia de bits a 0 (**\_ \_ \_ primer plano de prioridad del trabajo de BG**). Para obtener más información sobre los niveles de prioridad, consulte la enumeración [**\_ \_ prioridad del trabajo de BG**](/windows/desktop/api/Bits/ne-bits-bg_job_priority) .
+    El cmdlet [Set-WsmanInstance](/powershell/module/Microsoft.WsMan.Management/Set-WSManInstance?view=powershell-5.1&preserve-view=true) cambia la nueva prioridad del trabajo de transferencia de BITS a 0 (**BG JOB PRIORITY \_ \_ \_ FOREGROUND**). Para obtener más información sobre los niveles de prioridad, vea la [**enumeración BG \_ JOB \_ PRIORITY.**](/windows/desktop/api/Bits/ne-bits-bg_job_priority)
 
 3.  Reanude el trabajo de transferencia de BITS.
 
@@ -60,7 +60,7 @@ En los siguientes ejemplos se requiere el [proveedor de bits](/previous-versions
 
     
 
-    El cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1&preserve-view=true) llama al método [SetJobState](/previous-versions/windows/desktop/bitsprov/setjobstate-bitsclientjob) , que establece el estado del trabajo en 2 (reanudar el trabajo).
+    El cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1&preserve-view=true) llama al [método SetJobState,](/previous-versions/windows/desktop/bitsprov/setjobstate-bitsclientjob) que establece el estado del trabajo en 2 (Reanudar el trabajo).
 
 4.  Administrar el trabajo de transferencia de BITS.
 
@@ -101,13 +101,13 @@ En los siguientes ejemplos se requiere el [proveedor de bits](/previous-versions
 
     
 
-    El ejemplo anterior es un script para sondear el estado del trabajo y realizar una acción basada en el estado. Se pueden realizar las siguientes acciones:
+    El ejemplo anterior es un script para sondear el estado del trabajo y realizar una acción basada en el estado. Las siguientes acciones son posibles:
 
-    -   Si $result. El estado es 4 **( \_ \_ \_ error de estado del trabajo de BG**), el cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1&preserve-view=true) llama al método [SetJobState](/previous-versions/windows/desktop/bitsprov/setjobstate-bitsclientjob) y cancela el trabajo.
-    -   Si $result. El estado es 5 **( \_ \_ \_ \_ error transitorio de estado de trabajo de BG**), el cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1&preserve-view=true) llama al método [SetJobState](/previous-versions/windows/desktop/bitsprov/setjobstate-bitsclientjob) y cancela el trabajo.
-    -   Si $result. El estado es 6 (se **\_ \_ \_ transfirió el estado del trabajo de BG**), el cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1&preserve-view=true) llama al método [SetJobState](/previous-versions/windows/desktop/bitsprov/setjobstate-bitsclientjob) y establece el estado en completado.
+    -   Si $result. El estado es 4 **(BG \_ JOB STATE \_ \_ ERROR),** el cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1&preserve-view=true) llama al [método SetJobState](/previous-versions/windows/desktop/bitsprov/setjobstate-bitsclientjob) y cancela el trabajo.
+    -   Si $result. El estado es 5 **(BG \_ JOB STATE TRANSIENT \_ \_ \_ ERROR),** el cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1&preserve-view=true) llama al [método SetJobState](/previous-versions/windows/desktop/bitsprov/setjobstate-bitsclientjob) y cancela el trabajo.
+    -   Si $result. El estado es 6 **(BG \_ JOB STATE \_ \_ TRANSFERRED),** el cmdlet [Invoke-WsmanAction](/powershell/module/Microsoft.WsMan.Management/Invoke-WSManAction?view=powershell-5.1&preserve-view=true) llama al [método SetJobState](/previous-versions/windows/desktop/bitsprov/setjobstate-bitsclientjob) y establece el estado para completarse.
 
-    Para obtener más información sobre los Estados de trabajo, consulte la enumeración [**\_ \_ Estado del trabajo de BG**](/windows/desktop/api/Bits/ne-bits-bg_job_state) .
+    Para obtener más información sobre los estados de trabajo, vea la [**enumeración BG \_ JOB \_ STATE.**](/windows/desktop/api/Bits/ne-bits-bg_job_state)
 
 ## <a name="related-topics"></a>Temas relacionados
 

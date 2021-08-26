@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71168d08b8a91e09429a6f4e004c48c699635414
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 39ec30fd4966e46bd511729671c39653640fe3f8f858d74db96e59fa1f09d242
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067275"
 ---
 # <a name="xmuint2-structure"></a>Estructura XMUINT2
 
@@ -37,7 +37,7 @@ typedef struct _XMUINT2 {
 
 
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 <dl> <dt>
 
@@ -59,7 +59,7 @@ Componente y del vector.
 
 ## <a name="remarks"></a>Comentarios
 
-Esta estructura se define en el encabezado del ``D3DX\_DXGIFormatConvert.inl`` SDK de DirectX (junio de 2010) para su uso desde C++. La versión más reciente de este encabezado en el paquete NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) ya no lo define y se basa en [DirectX::XMUINT2](/windows/win32/api/directxmath/ns-directxmath-xmuint2) en DirectXMath en su lugar.
+Esta estructura se define en el encabezado ``D3DX\_DXGIFormatConvert.inl`` del SDK de DirectX (junio de 2010) para su uso desde C++. La versión más reciente de este encabezado en el paquete de NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) ya no lo define y se basa en [DirectX::XMUINT2](/windows/win32/api/directxmath/ns-directxmath-xmuint2) en DirectXMath en su lugar.
 
 
 
@@ -73,12 +73,12 @@ Esta estructura se define en el encabezado del ``D3DX\_DXGIFormatConvert.inl`` S
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Estructuras](format-conversion-structures.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar DXGI \_ FORMAT para In-Place de imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>

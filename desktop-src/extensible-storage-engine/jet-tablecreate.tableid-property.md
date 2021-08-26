@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_TABLECREATE. TABLEID (propiedad)'
-title: JET_TABLECREATE. TABLEID (propiedad)
+description: 'Más información sobre: JET_TABLECREATE.tableid'
+title: JET_TABLECREATE.tableid, propiedad
 TOCTitle: 'tableid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.tableid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.tableid(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9cc66f2d0b8d7ff91af2b87215c228f44813b54e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44e7c6931509302f6edeec460130ee864b60f0ba6634e68821a296c08a430a73
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103817155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016425"
 ---
-# <a name="jet_tablecreatetableid-property"></a>JET_TABLECREATE. TABLEID (propiedad)
+# <a name="jet_tablecreatetableid-property"></a>JET_TABLECREATE.tableid, propiedad
 
 Obtiene o establece el tabledid devuelto.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public JET_TABLEID tableid { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_TABLECREATE (clase)](./jet-tablecreate-class.md)
+[JET_TABLECREATE clase](./jet-tablecreate-class.md)
 
-[Miembros de JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE miembros](./jet-tablecreate-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

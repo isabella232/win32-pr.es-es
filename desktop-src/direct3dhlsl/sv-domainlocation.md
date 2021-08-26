@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fc39a71bcbfb6f3719ecfc7d0abe463a1fd127e4
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 481d4def3d13ee69138f31adaae3c7d90c2e27ab11702fe3191db94540d9835c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111827054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067535"
 ---
 # <a name="sv_domainlocation"></a>SV \_ DomainLocation
 
@@ -31,7 +31,7 @@ Define la ubicación en el casco del punto de dominio actual que se está evalua
 | Tipo       | Topología de entrada               |
 |--------|----------------|
 | float2 | revisión quad     |
-| float3 | revisión tri      |
+| float3 | tri patch      |
 | float2 | Isolínea        |
 
 
@@ -46,7 +46,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      | x      |          |       |         |
 
@@ -61,7 +61,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Semántica](dx-graphics-hlsl-semantics.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

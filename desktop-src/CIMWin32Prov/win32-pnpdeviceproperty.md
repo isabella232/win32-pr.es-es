@@ -1,5 +1,5 @@
 ---
-description: 'Tipo base para las clases que representan una propiedad devuelta por el \_ método PnPEntity:: GetDeviceProperties de Win32.'
+description: Tipo base de las clases que representan una propiedad devuelta por el método Win32 \_ PnPEntity::GetDeviceProperties.
 ms.assetid: f636c106-6ca6-407f-804a-0ec554ed565c
 ms.tgt_platform: multiple
 title: Clase Win32_PnPDeviceProperty
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d8e1869e5d6cde35404ff9c12eabd35631b3227c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e111ce65f5902d7acce95a3e7ca000f4309706eca396d3693ddac56bd7bae0a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972055"
 ---
-# <a name="win32_pnpdeviceproperty-class"></a>\_Clase Win32 PnPDeviceProperty
+# <a name="win32_pnpdeviceproperty-class"></a>Clase \_ PnPDeviceProperty de Win32
 
-Tipo base para las clases que representan una propiedad devuelta por el método [**\_ PnPEntity**](win32-pnpentity.md)::[**GetDeviceProperties**](getdeviceproperties-win32-pnpentity.md) de Win32.
+Tipo base de las clases que representan una propiedad devuelta por el [**método Win32 \_ PnPEntity**](win32-pnpentity.md)::[**GetDeviceProperties.**](getdeviceproperties-win32-pnpentity.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -56,7 +56,7 @@ La **clase \_ PnPDeviceProperty de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -78,11 +78,11 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor del par de Name-Value de claves que identifica la propiedad de **datos** .
+Valor del par clave Name-Value que identifica la **propiedad** Data.
 
 </dd> <dt>
 
-**Clave**
+**Keyname**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -91,7 +91,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del par de Name-Value de claves que identifica la propiedad de **datos** .
+Nombre del par de Name-Value clave que identifica la **propiedad** Data.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Tipo de datos: **Uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de la propiedad de **datos** .
+Tipo de la **propiedad** Data.
 
 Los valores posibles son.
 
@@ -203,7 +203,7 @@ Los valores posibles son.
 
 <span id="Guid"></span><span id="guid"></span><span id="GUID"></span>
 
-**GUID** (13)
+**Guid** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -297,7 +297,7 @@ Los valores posibles son.
 **Reserved**
 
 
-</dt> <dd>26 –</dd> <dt>
+</dt> <dd>26–4097</dd> <dt>
 
 <span id="SByteArray"></span><span id="sbytearray"></span><span id="SBYTEARRAY"></span>
 
@@ -315,14 +315,14 @@ Los valores posibles son.
 
 <span id="Int16Array"></span><span id="int16array"></span><span id="INT16ARRAY"></span>
 
-**, Int16array** (4100)
+**Int16Array** (4100)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UInt16Array"></span><span id="uint16array"></span><span id="UINT16ARRAY"></span>
 
-**, Uint16array** (4101)
+**UInt16Array** (4101)
 
 
 </dt> <dd></dd> <dt>
@@ -455,7 +455,7 @@ Los valores posibles son.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Unknown-check en devpropdef. h** (4120)
+**Desconocido: check in devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>
@@ -472,7 +472,7 @@ Los valores posibles son.
 **Reserved**
 
 
-</dt> <dd>8218:4294967295</dd> </dl>
+</dt> <dd>8218–4294967295</dd> </dl>
 
 </dd> </dl>
 
@@ -482,10 +482,10 @@ Los valores posibles son.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -494,7 +494,7 @@ Los valores posibles son.
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
 [**GetDeviceProperties**](getdeviceproperties-win32-pnpentity.md)

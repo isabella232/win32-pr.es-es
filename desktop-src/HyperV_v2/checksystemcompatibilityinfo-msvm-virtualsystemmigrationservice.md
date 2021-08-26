@@ -1,7 +1,7 @@
 ---
-description: Comprueba la información de compatibilidad para la compatibilidad con el sistema del equipo host.
+description: Comprueba la compatibilidad de la información de compatibilidad con el sistema del equipo host.
 ms.assetid: 1991c58e-2d0b-4fc3-a04a-c18f358451f6
-title: Método CheckSystemCompatibilityInfo de la clase Msvm_VirtualSystemMigrationService
+title: Método CheckSystemCompatibilityInfo de la Msvm_VirtualSystemMigrationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e47b72c6cac6e8a6061b4560b77b82cb0b845a8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7492d3f7dcdc20abca5cd574d1006b5e2090d02d28f7446dd94ec7b777541b39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041985"
 ---
-# <a name="checksystemcompatibilityinfo-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método CheckSystemCompatibilityInfo de la \_ clase VirtualSystemMigrationService de MSVM
+# <a name="checksystemcompatibilityinfo-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método CheckSystemCompatibilityInfo de la clase Msvm \_ VirtualSystemMigrationService
 
-Comprueba la información de compatibilidad para la compatibilidad con el sistema del equipo host.
+Comprueba la compatibilidad de la información de compatibilidad con el sistema del equipo host.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ uint32 CheckSystemCompatibilityInfo(
 
 <dl> <dt>
 
-*CompatibilityInfo* \[ de\]
+*CompatibilityInfo* \[ En\]
 </dt> <dd>
 
-Un BLOB de datos obtenidos mediante una llamada al método [**GetSystemCompatibilityInfo**](getsystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md) en el sistema del equipo host.
+Blob de datos obtenido mediante una llamada al [**método GetSystemCompatibilityInfo**](getsystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md) en el sistema de equipo host.
 
 </dd> <dt>
 
-*Motivos* \[ enuncia\]
+*Motivos* \[ out\]
 </dt> <dd>
 
-Matriz de cadenas que recibe las instancias incrustadas de la clase de [**\_ error MSVM**](msvm-error.md) que representan cualquier advertencia o error.
+Matriz de cadenas que recibe las instancias incrustadas de la clase Error de [**Msvm \_**](msvm-error.md) que representan advertencias o errores.
 
 </dd> </dl>
 
@@ -75,16 +75,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,10 +93,10 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
 **No compatible** (32784)
@@ -108,10 +108,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -120,7 +120,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
+[**Msvm \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
 </dt> </dl>
 
  

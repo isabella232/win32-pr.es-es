@@ -1,11 +1,11 @@
 ---
-title: Propiedad driveSpecifier de IWMPCdrom
+title: Propiedad IWMPCdrom driveSpecifier
 description: La propiedad driveSpecifier obtiene la letra de unidad de CD o DVD.
 ms.assetid: 8865232a-08a3-447b-a6d6-2bfda3a689e1
 keywords:
-- propiedades de driveSpecifier Media Player de Windows
-- propiedad driveSpecifier de Windows Media Player, interfaz IWMPCdrom
-- Interfaz IWMPCdrom Windows Media Player, propiedad driveSpecifier
+- Propiedad driveSpecifier Reproductor de Windows Media
+- Propiedad driveSpecifier Reproductor de Windows Media , interfaz IWMPCdrom
+- Interfaz IWMPCdrom Reproductor de Windows Media , propiedad driveSpecifier
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0a6c439523d90824da708700d48274f5a2e5ef4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b555cba0ec694a19a01c040a0369aeb473c6811933d45892cbf3c69ef640b8b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031465"
 ---
-# <a name="iwmpcdromdrivespecifier-property"></a>IWMPCdrom::d propiedad riveSpecifier
+# <a name="iwmpcdromdrivespecifier-property"></a>IWMPCdrom::d riveSpecifier
 
-La propiedad **driveSpecifier** obtiene la letra de unidad de CD o DVD.
+La **propiedad driveSpecifier** obtiene la letra de unidad de CD o DVD.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,19 +46,19 @@ Public ReadOnly Property driveSpecifier As System.String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. String** que es la letra de la unidad.
+**System.String que** es la letra de unidad.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, las unidades de DVD pueden reproducir un CD, pero las unidades de CD no pueden reproducir medios de DVD.
+Normalmente, las unidades de DVD pueden reproducir medios de CD, pero las unidades de CD no pueden reproducir medios de DVD.
 
-Esta propiedad obtiene una letra de unidad para un índice de unidad de base cero dentro del intervalo recuperado mediante **IWMPCdromCollection. Count**. El valor recuperado toma la forma *x*:, donde *X* representa la letra de unidad.
+Esta propiedad obtiene una letra de unidad para un índice de unidad de base cero dentro del intervalo recuperado mediante **IWMPCdromCollection.count**. El valor recuperado tiene la forma *X*:, donde *X* representa la letra de unidad.
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **driveSpecifier** para crear una cadena que contiene una lista de unidades de CD y DVD disponibles y muestra esa cadena en un cuadro de mensaje. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa driveSpecifier** para compilar una cadena que contiene una lista de unidades de CD y DVD disponibles y muestra esa cadena en un cuadro de mensaje. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -108,7 +108,7 @@ System.Windows.Forms.MessageBox.Show(MyDriveSpecifiers)
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -121,13 +121,13 @@ System.Windows.Forms.MessageBox.Show(MyDriveSpecifiers)
 [**Interfaz IWMPCdrom (VB y C#)**](iwmpcdrom--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdromCollection. Count (VB y C#)**](wmplibiwmpcdromcollection-iwmpcdromcollection-count--vb-and-c.md)
+[**IWMPCdromCollection.count (VB y C#)**](wmplibiwmpcdromcollection-iwmpcdromcollection-count--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

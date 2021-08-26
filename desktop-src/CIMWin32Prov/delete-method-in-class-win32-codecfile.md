@@ -1,8 +1,8 @@
 ---
-description: Elimina el archivo de códec de audio o vídeo lógico (o directorio) especificado en la ruta de acceso del objeto.
+description: Elimina el archivo lógico de códec de audio o vídeo (o directorio) especificado en la ruta de acceso del objeto.
 ms.assetid: 70233615-8924-4bd4-8a20-279a18b5c807
 ms.tgt_platform: multiple
-title: Método Delete de la clase Win32_CodecFile
+title: Método Delete de la Win32_CodecFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9d9395f5c5ebaf2948043fe43e84685e4c39d4d0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ecdd0989530810ee4eafc33fb447c35b6f97c90388a5145df0b423b9726d84c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003715"
 ---
-# <a name="delete-method-of-the-win32_codecfile-class"></a>Método Delete de la \_ clase Win32 CodecFile
+# <a name="delete-method-of-the-win32_codecfile-class"></a>Método Delete de la clase CodecFile de Win32 \_
 
-El método **Delete** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) elimina el archivo de códec de audio o vídeo lógico (o directorio) especificado en la ruta de acceso del objeto.
+El **método de** clase WMI [Delete](/windows/desktop/WmiSdk/retrieving-a-class) elimina el archivo lógico de códec de audio o vídeo (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows NT ni Windows 2000.
+La plataforma no se Windows NT ni Windows 2000.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Se ha infringido el uso compartido.
 
 </dd> <dt>
 
@@ -145,8 +145,8 @@ Un parámetro especificado no es válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -158,7 +158,7 @@ Un parámetro especificado no es válido.
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Win32 \_ CodecFile**](win32-codecfile.md)
+[**CódecFile de \_ Win32**](win32-codecfile.md)
 </dt> </dl>
 
  

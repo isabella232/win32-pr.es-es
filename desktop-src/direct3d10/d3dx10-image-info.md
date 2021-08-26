@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 228ddf777217e9e61369b0a7fc3b3eb1ca012b1d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bf3aa2eeb3e908a76e05588940927fff53dd1583c937d95a1c862f6021bd630f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989525"
 ---
 # <a name="d3dx10_image_info-structure"></a>Estructura DE INFORMACIÓN DE IMAGEN de D3DX10 \_ \_
 
@@ -87,7 +87,7 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tamaño de la matriz de textura. *ArraySize* será 1 para una sola imagen.
+Tamaño de la matriz de texturas. *ArraySize* será 1 para una sola imagen.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Propiedades de recursos varios (vea [**D3D10 \_ RESOURCE \_ MISC \_ FLAG**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_resource_misc_flag)).
+Propiedades de recursos varios (consulte [**D3D10 \_ RESOURCE \_ MISC \_ FLAG**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_resource_misc_flag)).
 
 </dd> <dt>
 
@@ -156,7 +156,7 @@ Representa el formato del archivo de imagen. Vea FORMATO DE ARCHIVO DE [**IMAGEN
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

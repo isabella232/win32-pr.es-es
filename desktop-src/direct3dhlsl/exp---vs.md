@@ -1,6 +1,6 @@
 ---
-title: EXP-vs
-description: Proporciona el doble de precisión exponencial. | EXP-vs
+title: 'exp : frente a'
+description: 'Proporciona una precisión total exponencial de 2x. | exp : frente a'
 ms.assetid: 3644046b-3257-4257-9880-146ca50f6b0b
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,38 +9,38 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c5b49b69e1270075aef4368dedca5791c2784657
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2b5b27067e83cbfd7604165ec1191d3371634aac15781a719377c92c69e29e6f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067955"
 ---
-# <a name="exp---vs"></a>EXP-vs
+# <a name="exp---vs"></a>exp : frente a
 
-Proporciona una precisión completa exponencial 2<sup>x</sup>.
+Proporciona una precisión total exponencial de 2<sup>x</sup>.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| EXP DST, src |
+| exp dst, src |
 |--------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
--   src es un registro de origen. El registro de origen requiere el uso explícito de replicate swizzle, es decir, se debe especificar exactamente uno de los componentes. x,. y,. z,. w swizzle (o. r,. g,. b,. a equivalentes). Consulte [source Register permutación](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md).
+-   dst es el registro de destino.
+-   src es un registro de origen. El registro de origen requiere el uso explícito de replicar swzzle, es decir, debe especificarse exactamente uno de los componentes .x, .y, .z, .w swzzle (o .r, .g, .b, .a equivalentes). Consulte [Source Register Swlingling](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | exp                    | x    | x    | x    | x     | x    | x     |
 
@@ -50,7 +50,7 @@ Proporciona una precisión completa exponencial 2<sup>x</sup>.
 
 Esta instrucción proporciona al menos 21 bits de precisión.
 
-En el siguiente fragmento de código se muestran las operaciones realizadas:
+El fragmento de código siguiente muestra las operaciones realizadas:
 
 
 ```

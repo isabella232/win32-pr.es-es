@@ -1,6 +1,6 @@
 ---
 title: Bluetooth y getaddrinfo
-description: La función getaddrinfo proporciona la traducción del nombre de host a la dirección para los transportes basados en IP. Dado que la función getaddrinfo es específica de los transportes basados en IP, se produce un error en Bluetooth sockets.
+description: La función getaddrinfo proporciona la traducción del nombre de host a la dirección de los transportes basados en IP. Dado que la función getaddrinfo es específica de los transportes basados en IP, se produce un error en Bluetooth sockets.
 ms.assetid: e17d8542-d4bc-499c-bae4-1f41bff493c3
 keywords:
 - Bluetooth y getaddrinfo Bluetooth
@@ -15,9 +15,9 @@ ms.locfileid: "120004535"
 ---
 # <a name="bluetooth-and-getaddrinfo"></a>Bluetooth y getaddrinfo
 
-La [**función getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) proporciona la traducción del nombre de host a la dirección para los transportes basados en IP. Dado que **la función getaddrinfo** es específica de los transportes basados en IP, se produce un error en Bluetooth sockets.
+La [**función getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) proporciona la traducción del nombre de host a la dirección de los transportes basados en IP. Dado que **la función getaddrinfo** es específica de los transportes basados en IP, se produce un error en Bluetooth sockets.
 
-Para realizar la traducción del nombre de host a la dirección de los sockets de Bluetooth, use la función [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) con **LUP \_ CONTAINERS** para consultar dispositivos remotos y, a continuación, busque un nombre remoto correspondiente específico y la dirección correspondiente.
+Para realizar la traducción del nombre de host a la dirección de los sockets de Bluetooth, use la función [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) con **LUP \_ CONTAINERS** para consultar dispositivos remotos y, a continuación, busque un nombre remoto correspondiente y la dirección correspondiente.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 41b61d9488e09b72c73cba885d836c6451631c56
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bfa83302c62c7e09991cb8c3cc9282b41cdd17ec396bc721511d7e13e59ed95a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989955"
 ---
 # <a name="d3dxvec2catmullrom-function-d3dx10mathh"></a>Función D3DXVec2CatmullRom (D3DX10Math.h)
 
-Realiza una interpolación Catmull-Rom, utilizando los vectores 2D especificados.
+Realiza una Catmull-Rom interpolación mediante los vectores 2D especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -103,7 +103,7 @@ Factor de ponderación. Vea la sección Comentarios.
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
-Puntero a una estructura D3DXVECTOR2 que es el resultado de la Catmull-Rom interpolación.
+Puntero a una estructura D3DXVECTOR2 que es el resultado del Catmull-Rom interpolación.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -119,7 +119,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-La Catmull-Rom spline se puede derivar de la spline Hermite estableciendo:
+La Catmull-Rom spline se puede derivar de la curva spline de Hermite estableciendo:
 
 
 ```
@@ -141,7 +141,7 @@ p3 es el contenido de pV2.
 
 p4 es el contenido de pV3.
 
-Uso de la ecuación spline hermite:
+Uso de la ecuación spline de Hermite:
 
 
 ```
@@ -159,7 +159,7 @@ Q(s) = (2s3 - 3s2 + 1)p2 + (-2s3 + 3s2)p3 + (s3 - 2s2 + s)(p3 - p1) / 2 + (s3 - 
 
 
 
-Esto se puede reorganizar como:
+Esto se puede reorganizar de la siguiente forma:
 
 
 ```
@@ -179,7 +179,7 @@ Q(s) = [(-s3 + 2s2 - s)p1 + (3s3 - 5s2 + 2)p2 + (-3s3 + 4s2 + s)p3 + (s3 - s2)p4
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

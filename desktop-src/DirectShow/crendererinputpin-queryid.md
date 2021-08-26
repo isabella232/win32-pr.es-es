@@ -1,7 +1,7 @@
 ---
-description: 'El método QueryId recupera el identificador del PIN. Este método invalida el método CBasePin:: QueryId.'
+description: El método QueryId recupera el identificador de pin. Este método invalida el método CBasePin::QueryId.
 ms.assetid: 9543234c-5349-49d0-b410-1c461ee4eabe
-title: Método CRendererInputPin. QueryId (Renbase. h)
+title: Método CRendererInputPin.QueryId (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b56ae2a846b4d89da4c6a9d4c8f88bd3094c5cff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 732bf7aa6d0d247c93c0334db48b86bccd2ac15715dd2da9a4d60a0d315966bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054581"
 ---
-# <a name="crendererinputpinqueryid-method"></a>CRendererInputPin. QueryId (método)
+# <a name="crendererinputpinqueryid-method"></a>Método CRendererInputPin.QueryId
 
-El `QueryId` método recupera el identificador del PIN. Este método invalida el método [**CBasePin:: queryId**](cbasepin-queryid.md) .
+El `QueryId` método recupera el identificador de pin. Este método invalida el [**método CBasePin::QueryId.**](cbasepin-queryid.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,29 +45,29 @@ HRESULT QueryId(
 *Id* 
 </dt> <dd>
 
-Recibe una cadena que contiene el identificador del PIN.
+Recibe una cadena que contiene el identificador de pin.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                   | Descripción                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | Correcto<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Correcto<br/>                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>       |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | Argumento de puntero **nulo**<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | **Argumento de** puntero NULL<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método asigna la cadena de caracteres anchos "in" y la asigna al parámetro *ID* . El llamador debe liberar la memoria asignada mediante la función **CoTaskMemFree** .
+Este método asigna la cadena de caracteres anchos "In" y la asigna al *parámetro Id.* El autor de la llamada debe liberar la memoria asignada mediante la **función CoTaskMemFree.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Este método asigna la cadena de caracteres anchos "in" y la asigna al parámetr
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Este método asigna la cadena de caracteres anchos "in" y la asigna al parámetr
 
 <dl> <dt>
 
-[**Clase CRendererInputPin**](crendererinputpin.md)
+[**CRendererInputPin (clase)**](crendererinputpin.md)
 </dt> </dl>
 
  

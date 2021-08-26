@@ -31,10 +31,10 @@ ms.locfileid: "120002075"
 ---
 # <a name="support-for-multiple-languages"></a>Compatibilidad con varios idiomas
 
-Reproductor de Windows Media serie 9 o posterior admite metadatos Windows multimedia creados mediante el juego de caracteres Unicode. Esto le permite incluir metadatos multilingües en la lista de reproducción de metarchivo. Las reglas siguientes rigen el uso de metadatos multilingües en Windows metarchivos multimedia:
+Reproductor de Windows Media serie 9 o posterior admite Windows metarchivos multimedia creados mediante el juego de caracteres Unicode. Esto le permite incluir metadatos multilingües en la lista de reproducción de metarchivos. Las reglas siguientes rigen el uso de metadatos multilingües en Windows metarchivos multimedia:
 
--   Los caracteres se deben codificar mediante el esquema de codificación UTF-8.
--   La lista de reproducción de metarchivo debe incluir el **siguiente PARÁMETRO en** el nivel de lista de reproducción:
+-   Los caracteres deben codificarse mediante el esquema de codificación UTF-8.
+-   La lista de reproducción de metarchivo debe incluir el **parámetro PARAM** siguiente en el nivel de lista de reproducción:
     ```XML
     <PARAM  NAME = "Encoding"  VALUE = "utf-8">
     

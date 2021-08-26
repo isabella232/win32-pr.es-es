@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidBufferSizeException'
-title: Constructor de EsentInvalidBufferSizeException
+description: 'Más información sobre: Constructor EsentInvalidBufferSizeException'
+title: Constructor EsentInvalidBufferSizeException
 TOCTitle: 'EsentInvalidBufferSizeException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidBufferSizeException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidbuffersizeexception.esentinvalidbuffersizeexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b1138c8f5becfd3ce06bf76d6ed00832716e4938
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7603336c478cc1565739cefe89200e5210b25ae078ec559d002d112c6dfe57f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972685"
 ---
-# <a name="esentinvalidbuffersizeexception-constructor"></a>Constructor de EsentInvalidBufferSizeException
+# <a name="esentinvalidbuffersizeexception-constructor"></a>Constructor EsentInvalidBufferSizeException
 
 Inicializa una nueva instancia de la clase EsentInvalidBufferSizeException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidBufferSizeException()
 public EsentInvalidBufferSizeException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInvalidBufferSizeException()
 
 [Miembros de EsentInvalidBufferSizeException](./esentinvalidbuffersizeexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
 description: Cree un cargador de memoria asincrónica.
 ms.assetid: 92177390-cb09-445e-9828-806a23ef91b5
-title: Función D3DX10CreateAsyncMemoryLoader (D3DX10Async. h)
+title: Función D3DX10CreateAsyncMemoryLoader (D3DX10Async.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Async.h
-ms.openlocfilehash: 0219026eabfcff6dfcec0df4721716302f09f5e7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 897977147157c754c0f0da1c68e5e64b3fa64ea792c573c1f901aca6aec433fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989235"
 ---
-# <a name="d3dx10createasyncmemoryloader-function"></a>D3DX10CreateAsyncMemoryLoader función)
+# <a name="d3dx10createasyncmemoryloader-function"></a>Función D3DX10CreateAsyncMemoryLoader
 
 Cree un cargador de memoria asincrónica.
 
@@ -41,7 +41,7 @@ HRESULT D3DX10CreateAsyncMemoryLoader(
 
 <dl> <dt>
 
-*pdata* \[ de\]
+*pData* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
@@ -50,21 +50,21 @@ Puntero en los datos.
 
 </dd> <dt>
 
-*cbData* \[ de\]
+*cbData* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **tamaño \_ T**](../winprog/windows-data-types.md)**
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)**
 
 Tamaño de los datos.
 
 </dd> <dt>
 
-*ppDataLoader* \[ enuncia\]
+*ppDataLoader* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10DataLoader**](id3dx10dataloader.md)\*\***
 
-La dirección de un puntero al procesador de datos asincrónicos (consulte la [**interfaz ID3DX10DataProcessor**](id3dx10dataprocessor.md)).
+Dirección de un puntero al procesador de datos asincrónicos (vea [**ID3DX10DataProcessor Interface**](id3dx10dataprocessor.md)).
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ La dirección de un puntero al procesador de datos asincrónicos (consulte la [*
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Async. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Async.h</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 <dl> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

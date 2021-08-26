@@ -1,27 +1,27 @@
 ---
-description: Puede notificar al código de cliente de XAudio2 los eventos del motor registrando una instancia de una clase que implementa la interfaz IXAudio2EngineCallback con el motor de XAudio2.
+description: Puede notificar al código de cliente XAudio2 de eventos del motor registrando una instancia de una clase que implementa la interfaz IXAudio2EngineCallback con el motor XAudio2.
 ms.assetid: 006a8cb6-c24c-f7d1-9e8b-9cb2baa046c0
 title: 'Cómo: usar devoluciones de llamadas de motores'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04adec0efd0625157740488d70be7896688d1176
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffc51e673be6972c1c5ba012c12f616e1bfe78a345081fee683aba83b6944c17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104424012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054375"
 ---
 # <a name="how-to-use-engine-callbacks"></a>Cómo: usar devoluciones de llamadas de motores
 
-Puede notificar al código de cliente de XAudio2 los eventos del motor registrando una instancia de una clase que implementa la interfaz [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback) con el motor de xaudio2. Esto permite al código de cliente de XAudio2 realizar un seguimiento de Cuándo se está produciendo el procesamiento de audio y cuándo reiniciar el motor en caso de que se produzca un error crítico.
+Puede notificar al código de cliente XAudio2 de eventos del motor registrando una instancia de una clase que implementa la interfaz [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback) con el motor XAudio2. Esto permite que el código de cliente XAudio2 realice un seguimiento de cuándo se está produciendo el procesamiento de audio y cuándo reiniciar el motor en caso de error crítico.
 
-## <a name="to-use-an-engine-callback"></a>Para utilizar una devolución de llamada del motor
+## <a name="to-use-an-engine-callback"></a>Para usar una devolución de llamada del motor
 
 En los pasos siguientes se registra un objeto para controlar los eventos del motor.
 
-1.  Cree una clase que herede de la interfaz [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback) .
+1.  Cree una clase que herede de la [**interfaz IXAudio2EngineCallback.**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback)
 
-    Todos los métodos de [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback) son puramente virtuales y deben definirse. El método de interés en este ejemplo es [**IXAudio2EngineCallback:: OnCriticalError**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2enginecallback-oncriticalerror), que establece una marca para señalar el bucle principal del juego que se ha producido un error crítico. Los métodos restantes, [**IXAudio2EngineCallback:: OnProcessingPassStart**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2enginecallback-onprocessingpassstart) y [**IXAudio2EngineCallback:: OnProcessingPassEnd**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2enginecallback-onprocessingpassend), son códigos auxiliares en este ejemplo.
+    Todos los métodos [**de IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback) son puramente virtuales y deben definirse. El método de interés en este ejemplo es [**IXAudio2EngineCallback::OnCriticalError**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2enginecallback-oncriticalerror), que establece una marca para indicar al bucle de juego principal que se ha producido un error crítico. Los métodos restantes, [**IXAudio2EngineCallback::OnProcessingPassStart**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2enginecallback-onprocessingpassstart) e [**IXAudio2EngineCallback::OnProcessingPassEnd,**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2enginecallback-onprocessingpassend)son códigos auxiliares en este ejemplo.
 
     ```
     class EngineCallback : public IXAudio2EngineCallback
@@ -34,7 +34,7 @@ En los pasos siguientes se registra un objeto para controlar los eventos del mot
 
     
 
-2.  Use [**XAudio2Create**](/windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create) para crear una instancia del motor de XAudio2.
+2.  Use [**XAudio2Create para**](/windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create) crear una instancia del motor XAudio2.
 
     ```
     if ( FAILED(hr = XAudio2Create( &pXAudio2, 0, XAUDIO2_DEFAULT_PROCESSOR ) ) )
@@ -43,7 +43,7 @@ En los pasos siguientes se registra un objeto para controlar los eventos del mot
 
     
 
-3.  Use [**IXAudio2:: RegisterForCallbacks**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-registerforcallbacks) para registrar la devolución de llamada del motor.
+3.  Use [**IXAudio2::RegisterForCallbacks**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-registerforcallbacks) para registrar la devolución de llamada del motor.
 
     ```
     pXAudio2->RegisterForCallbacks( &engineCallback );
@@ -51,7 +51,7 @@ En los pasos siguientes se registra un objeto para controlar los eventos del mot
 
     
 
-4.  Si no necesita más devoluciones de llamada del motor, llame a [**IXAudio2:: UnregisterForCallbacks**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-unregisterforcallbacks).
+4.  Si ya no necesita la devolución de llamada del motor, llame [**a IXAudio2::UnregisterForCallbacks**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-unregisterforcallbacks).
 
     ```
     pXAudio2->UnregisterForCallbacks( &engineCallback );

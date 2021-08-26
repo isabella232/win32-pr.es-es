@@ -1,20 +1,20 @@
 ---
 title: Mostrar el estado de una suscripción del recopilador de eventos
-description: Puede mostrar el estado de una suscripción del recopilador de eventos. El estado incluye la disponibilidad de la suscripción, el último error que se produjo para la suscripción, la hora del último error y la próxima vez que se vuelva a intentar la suscripción.
+description: Puede mostrar el estado de una suscripción del recopilador de eventos. El estado incluye la disponibilidad de la suscripción, el último error que se produjo para la suscripción, la hora del último error y la próxima vez que se vuelva a realizar la suscripción.
 ms.assetid: e1c3c3ed-2f7c-433d-a51d-66c2abd2e961
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d7c806d72d4945e2e45384b91bc94fbef3ed08b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2a6efd0268ef571d8f9ad984bb70a9e69e489e6349f8af0ee9e47e9aa18a1cc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032655"
 ---
 # <a name="displaying-the-status-of-an-event-collector-subscription"></a>Mostrar el estado de una suscripción del recopilador de eventos
 
-Puede mostrar el estado de una suscripción del recopilador de eventos. El estado incluye la disponibilidad de la suscripción, el último error que se produjo para la suscripción, la hora del último error y la próxima vez que se vuelva a intentar la suscripción.
+Puede mostrar el estado de una suscripción del recopilador de eventos. El estado incluye la disponibilidad de la suscripción, el último error que se produjo para la suscripción, la hora del último error y la próxima vez que se vuelva a realizar la suscripción.
 
 > [!Note]
 >
@@ -22,24 +22,24 @@ Puede mostrar el estado de una suscripción del recopilador de eventos. El estad
 >
 > **wecutil gr** *SubscriptionName*
 
- 
+ 
 
-Necesitará el nombre de una suscripción para mostrar su estado. Para enumerar los nombres de las suscripciones actuales en un equipo local, puede usar el ejemplo de C++ de que se muestra en [enumerar suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)o puede escribir el siguiente comando en el símbolo del sistema:
+Necesitará el nombre de una suscripción para mostrar su estado. Para enumerar los nombres de las suscripciones actuales en un equipo local, puede usar el ejemplo de C++ que se muestra en Enumerar suscripciones del recopilador de eventos [o](listing-event-collector-subscriptions.md)puede escribir el siguiente comando en el símbolo del sistema:
 
 **wecutil es**
 
 En el ejemplo siguiente se sigue un procedimiento para mostrar el estado de una suscripción del recopilador de eventos:
 
-**Para mostrar el estado de una suscripción del recopilador de eventos**
+**Para mostrar el estado de una suscripción al recopilador de eventos**
 
-1.  Abra la suscripción proporcionando el nombre de la suscripción y los derechos de acceso como parámetros a la función [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Para obtener más información sobre los derechos de acceso, consulte [**constantes del recopilador de eventos de Windows**](windows-event-collector-constants.md).
-2.  Obtenga el estado de la suscripción mediante una llamada a la función [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) (no especifique un origen de eventos al llamar a la función).
-3.  Obtenga la matriz de orígenes de eventos de la suscripción mediante una llamada a la función [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) y pasando la marca EcSubscriptionRunTimeStatusEventSources.
-4.  Para obtener la información de estado de cada origen de eventos, llame a la función [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) y pase el nombre del origen del evento. Para obtener más información sobre la información de estado que se puede recuperar, consulte la enumeración de ID. de [**información de estado de tiempo de ejecución de suscripción de EC \_ \_ \_ \_ \_**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_runtime_status_info_id) .
-5.  Imprime la información de estado de la suscripción.
-6.  Cierre la suscripción mediante una llamada a la función [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Abra la suscripción proporcionando el nombre de la suscripción y los derechos de acceso como parámetros a la [**función EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obtener más información sobre los derechos de acceso, [**vea Windows constantes del recopilador de eventos**](windows-event-collector-constants.md).
+2.  Para obtener el estado de la suscripción, llame a la función [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) (no especifique un origen de eventos al llamar a la función).
+3.  Obtenga la matriz de orígenes de eventos de la suscripción llamando a la función [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) y pasando la marca EcSubscriptionRunTimeStatusEventSources.
+4.  Obtenga la información de estado de cada origen de eventos llamando a la función [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) y pasando el nombre del origen del evento. Para obtener más información sobre la información de estado que se puede recuperar, vea la enumeración [**EC SUBSCRIPTION RUNTIME STATUS INFO \_ \_ \_ \_ \_ ID**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_runtime_status_info_id) .
+5.  Imprima la información de estado de la suscripción.
+6.  Cierre la suscripción mediante una llamada a [**la función EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-En el ejemplo de código de C++ siguiente se muestra cómo mostrar el estado de una suscripción del recopilador de eventos.
+En el siguiente ejemplo de código de C++ se muestra cómo mostrar el estado de una suscripción del recopilador de eventos.
 
 
 ```C++
@@ -429,15 +429,15 @@ std::wstring ConvertEcDateTime( ULONGLONG code )
 
 <dl> <dt>
 
-[Enumerar las suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
+[Enumerar suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Referencia del recopilador de eventos de Windows](windows-event-collector-reference.md)
+[Windows Referencia del recopilador de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

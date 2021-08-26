@@ -1,7 +1,7 @@
 ---
-description: Especifica que el conjunto de instrucciones D3DX está optimizado actualmente para.
+description: Especifica el conjunto de instrucciones para el que D3DX está optimizado actualmente.
 ms.assetid: 5fc97028-4a9d-4bc7-9c90-236a70e570e1
-title: Enumeración D3DX_CPU_OPTIMIZATION (D3DX10Math. h)
+title: D3DX_CPU_OPTIMIZATION enumeración (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 208422604e79b3ef7a87b548e7d71eceedd9fb78
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7bb36b3aeb448933416148b087cb7e82619beef04186637c0bb3fa944a143da5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989545"
 ---
-# <a name="d3dx_cpu_optimization-enumeration"></a>\_Enumeración de la optimización de CPU de D3DX \_
+# <a name="d3dx_cpu_optimization-enumeration"></a>Enumeración D3DX \_ CPU \_ OPTIMIZATION
 
-Especifica que el conjunto de instrucciones D3DX está optimizado actualmente para.
+Especifica el conjunto de instrucciones para el que D3DX está optimizado actualmente.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,31 +42,31 @@ typedef enum _D3DX_CPU_OPTIMIZATION {
 
 <dl> <dt>
 
-<span id="D3DX_NOT_OPTIMIZED"></span><span id="d3dx_not_optimized"></span>**D3DX \_ no está \_ optimizado**
+<span id="D3DX_NOT_OPTIMIZED"></span><span id="d3dx_not_optimized"></span>**D3DX \_ NO \_ OPTIMIZADO**
 </dt> <dd>
 
-No optimizar.
+No optimice.
 
 </dd> <dt>
 
-<span id="D3DX_3DNOW_OPTIMIZED"></span><span id="d3dx_3dnow_optimized"></span>**De D3DX \_ 3DNow \_ optimizado**
+<span id="D3DX_3DNOW_OPTIMIZED"></span><span id="d3dx_3dnow_optimized"></span>**D3DX \_ 3DNOW \_ OPTIMIZADO**
 </dt> <dd>
 
-Optimizar para un 3DNow! conjunto de instrucciones.
+Optimice para 3DNow. conjunto de instrucciones.
 
 </dd> <dt>
 
-<span id="D3DX_SSE2_OPTIMIZED"></span><span id="d3dx_sse2_optimized"></span>**D3DX \_ SSE2 \_ optimizado**
+<span id="D3DX_SSE2_OPTIMIZED"></span><span id="d3dx_sse2_optimized"></span>**D3DX \_ SSE2 \_ OPTIMIZADO**
 </dt> <dd>
 
-Optimizar para un conjunto de instrucciones SSE2.
+Optimice para un conjunto de instrucciones SSE2.
 
 </dd> <dt>
 
-<span id="D3DX_SSE_OPTIMIZED"></span><span id="d3dx_sse_optimized"></span>**D3DX \_ SSE \_ Optimized**
+<span id="D3DX_SSE_OPTIMIZED"></span><span id="d3dx_sse_optimized"></span>**D3DX \_ SSE \_ OPTIMIZADO**
 </dt> <dd>
 
-Optimizar para un conjunto de instrucciones de SSE.
+Optimice para un conjunto de instrucciones SSE.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Optimizar para un conjunto de instrucciones de SSE.
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Optimizar para un conjunto de instrucciones de SSE.
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](d3d10-graphics-reference-d3dx10-enums.md)
+[Enumeraciones D3DX](d3d10-graphics-reference-d3dx10-enums.md)
 </dt> </dl>
 
  

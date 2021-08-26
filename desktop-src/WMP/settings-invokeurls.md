@@ -1,9 +1,9 @@
 ---
-title: Settings. invokeURLs
-description: La propiedad invokeURLs especifica o recupera un valor que indica si los eventos de dirección URL deben iniciar un explorador Web.
+title: Configuración.invokeURLs
+description: La propiedad invokeURLs especifica o recupera un valor que indica si los eventos de dirección URL deben iniciar un explorador web.
 ms.assetid: 3a28d949-96b7-4c21-97c5-2442c2f7baa5
 keywords:
-- Settings. invokeURLs Windows Media Player
+- Configuración.invokeURLs Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,41 +14,41 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb55bb61243e6905a51a943a26adc120511335c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 75de25c5b4a18b6d53423657dc7180fe58cb095f3244800c2c42593d1d450e7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002407"
 ---
-# <a name="settingsinvokeurls"></a>Settings. invokeURLs
+# <a name="settingsinvokeurls"></a>Configuración.invokeURLs
 
-La propiedad **invokeURLs** especifica o recupera un valor que indica si los eventos de dirección URL deben iniciar un explorador Web.
+La **propiedad invokeURLs** especifica o recupera un valor que indica si los eventos de dirección URL deben iniciar un explorador web.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-Player. Settings. invokeURLs
+player.settings.invokeURLs
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **valor booleano** de lectura/escritura.
+Esta propiedad es un booleano de lectura **y escritura.**
 
 
 
 | Value | Descripción                                  |
 |-------|----------------------------------------------|
-| true  | Predeterminada. Los eventos de URL deben iniciar un explorador. |
-| false | Los eventos de URL no deben iniciar un explorador.      |
+| true  | Predeterminada. Los eventos de dirección URL deben iniciar un explorador. |
+| false | Los eventos de dirección URL no deben iniciar un explorador.      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos multimedia pueden contener direcciones URL. Cuando se envía una dirección URL al control de Media Player de Windows, se pasa primero al controlador de eventos **comando** independientemente del valor de **invokeURLs**. Después de que **comando** se cierre, Windows Media Player comprueba **invokeURLs** para determinar si se debe iniciar el explorador de Internet predeterminado con la dirección URL. Puede mostrar las direcciones URL de forma selectiva al comprobarlas en **comando** y establecer **invokeURLs** como desee.
+Los archivos multimedia pueden contener direcciones URL. Cuando se envía una dirección URL al control Reproductor de Windows Media, se pasa primero al controlador de eventos **ScriptCommand** independientemente del valor de **invokeURLs**. Una vez que se cierre **ScriptCommand,** Reproductor de Windows Media **invokeURLs** para determinar si se debe iniciar el explorador de Internet predeterminado con la dirección URL. Puede mostrar direcciones URL de forma selectiva si las comprueba en **ScriptCommand** y establece **invokeURLs** como desee.
 
-**Windows Media Player 10 Mobile**: esta propiedad solo acepta o devuelve false.
+**Reproductor de Windows Media 10 Mobile:** esta propiedad solo acepta o devuelve false.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Los archivos multimedia pueden contener direcciones URL. Cuando se envía una di
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -65,10 +65,10 @@ Los archivos multimedia pueden contener direcciones URL. Cuando se envía una di
 
 <dl> <dt>
 
-[**Evento Player. comando**](player-player-scriptcommand.md)
+[**Evento Player.ScriptCommand**](player-player-scriptcommand.md)
 </dt> <dt>
 
-[**Objeto de configuración**](settings-object.md)
+[**Configuración Objeto**](settings-object.md)
 </dt> </dl>
 
  

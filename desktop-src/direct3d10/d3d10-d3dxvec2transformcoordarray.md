@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec2TransformCoordArray (D3DX10Math.h): transforma una matriz (x, y, 0, 1) por una matriz determinada y proyecta el resultado de nuevo en w = 1.'
+description: 'Función D3DXVec2TransformCoordArray (D3DX10Math.h): transforma una matriz (x, y, 0, 1) por una matriz determinada y proyecta el resultado en w = 1.'
 ms.assetid: dba68678-2ab4-4f64-9975-5e9f2a20f66a
 title: Función D3DXVec2TransformCoordArray (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f36b5fb5a5263f83c42ac66cc5f606fa1c4b75ab
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6d4f7e48a274b8a1b590adc76dff683019e9e0ec7ae523d16decd09421093ce1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989875"
 ---
 # <a name="d3dxvec2transformcoordarray-function-d3dx10mathh"></a>Función D3DXVec2TransformCoordArray (D3DX10Math.h)
 
-Transforma una matriz (x, y, 0, 1) por una matriz determinada y proyecta el resultado en w = 1.
+Transforma una matriz (x, y, 0, 1) por una matriz determinada y proyecta el resultado de nuevo en w = 1.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ Puntero a [**D3DXVECTOR2**](d3d10-d3dxvector2.md) que es el resultado de la oper
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Paso entre vectores en el flujo de datos de salida.
+Pasos entre vectores en el flujo de datos de salida.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Puntero a la matriz D3DXVECTOR2 de origen.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Paso entre vectores en el flujo de datos de entrada.
+Pasos entre vectores en el flujo de datos de entrada.
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

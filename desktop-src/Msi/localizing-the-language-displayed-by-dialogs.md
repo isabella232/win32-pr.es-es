@@ -1,21 +1,21 @@
 ---
-description: El servicio Windows Installer usa el idioma del usuario actual en todos los cuadros de diálogo hasta que se abre un paquete de Windows Installer.
+description: El Windows installer usa el idioma del usuario actual en todos los cuadros de diálogo hasta que se Windows paquete del instalador.
 ms.assetid: c9902990-7a26-48fd-96ac-4d5a749e34be
-title: Localizar el idioma que se muestra en los cuadros de diálogo
+title: Localización del idioma mostrado por los diálogos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 042b2b7f9ac256ebad265b75a8756fc422403e37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72142ce0f479379ebc929807294e6bbab7699738ee41e70be87e8e65f57c1ea3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043185"
 ---
-# <a name="localizing-the-language-displayed-by-dialogs"></a>Localizar el idioma que se muestra en los cuadros de diálogo
+# <a name="localizing-the-language-displayed-by-dialogs"></a>Localización del idioma mostrado por los diálogos
 
-El servicio Windows Installer usa el idioma del usuario actual en todos los cuadros de diálogo hasta que se abre un paquete de Windows Installer. El Windows Installer determina esto mediante **GetUserDefaultUILanguage**. Cuando se abre un paquete de Windows Installer, el instalador muestra los cuadros de diálogo con el idioma del paquete tal y como se especifica en la propiedad de Resumen de la [**plantilla**](template-summary.md) .
+El Windows installer usa el idioma del usuario actual en todos los cuadros de diálogo hasta que se Windows paquete del instalador. El Windows determina esto mediante **GetUserDefaultUILanguage**. Cuando se Windows paquete del instalador, el instalador muestra cuadros de diálogo con el idioma del paquete, tal como se especifica en la [**propiedad Resumen de**](template-summary.md) plantilla.
 
-Para obtener más información sobre cómo localizar el idioma de un paquete de Windows Installer, vea también [un ejemplo de localización](a-localization-example.md).
+Para obtener más información sobre la localización del idioma de un paquete Windows Installer, vea también [Un ejemplo de localización](a-localization-example.md).
 
  
 

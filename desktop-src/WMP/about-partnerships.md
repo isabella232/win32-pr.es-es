@@ -3,34 +3,34 @@ title: Acerca de las asociaciones
 description: Acerca de las asociaciones
 ms.assetid: d21813ed-efe0-48a2-a1bf-f10f4b7ac3e6
 keywords:
-- Windows Media Player, asociaciones
-- Modelo de objetos de Windows Media Player, asociaciones
+- Reproductor de Windows Media,partnerships
+- Reproductor de Windows Media modelo de objetos, asociaciones
 - modelo de objetos, asociaciones
-- Control ActiveX de Windows Media Player, asociaciones
-- Control ActiveX, asociaciones
-- Control ActiveX móvil de Windows Media Player, asociaciones
-- Windows Media Player Mobile, asociaciones
+- Reproductor de Windows Media ActiveX control, asociaciones
+- ActiveX control, asociaciones
+- Reproductor de Windows Media Control de ActiveX móviles, asociaciones
+- Reproductor de Windows Media Móvil, asociaciones
 - sincronizar dispositivos, asociaciones
 - sincronización de dispositivos, asociaciones
-- asociaciones entre dispositivos y Windows Media Player
+- asociaciones entre dispositivos y Reproductor de Windows Media
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cfc3fa20e1e8a4b6a4c7993ea7dcc5842719f2a
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: e4c018934ed06e5872d5866a463bdd909ea2501a1872ded29231be222572b2ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104487283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004495"
 ---
 # <a name="about-partnerships"></a>Acerca de las asociaciones
 
-Una asociación es una relación especial entre un dispositivo portátil y un Media Player de Windows. Los usuarios pueden establecer una asociación para un dispositivo determinado mediante el uso de la interfaz de usuario de Windows Media Player. Puede administrar mediante programación las asociaciones mediante [IWMPSyncDevice:: createPartnership](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-createpartnership) y [IWMPSyncDevice::d eletepartnership](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-deletepartnership). El método **createPartnership** inicia un proceso asincrónico que finaliza cuando se recibe el evento **CreatePartnershipComplete** a través de la interfaz **IWMPEvents2** .
+Una asociación es una relación especial entre un dispositivo portátil y Reproductor de Windows Media. Los usuarios pueden establecer una asociación para un dispositivo determinado mediante la interfaz Reproductor de Windows Media usuario. Puede administrar asociaciones mediante programación mediante [IWMPSyncDevice::createPartnership](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-createpartnership) e [IWMPSyncDevice::d eletePartnership](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-deletepartnership). El **método createPartnership** inicia un proceso asincrónico que finaliza cuando se recibe el evento **CreatePartnershipComplete** a través de la **interfaz IWMPEvents2.**
 
-Windows Media Player 10 o versiones posteriores admiten la creación de asociaciones con hasta 16 dispositivos. Cada asociación tiene un índice de asociación asociado. Puede recuperar el índice de Asociación para un dispositivo determinado mediante una llamada a [IWMPSyncDevice:: get \_ partnershipIndex](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_partnershipindex). Los índices de asociación se numeran de 1 a 16. Cuando un dispositivo determinado no tiene una asociación con Windows Media Player, **getPartnershipIndex** devuelve cero para el índice.
+Reproductor de Windows Media 10 o posterior admite la creación de asociaciones con hasta 16 dispositivos. Cada asociación tiene un índice de asociación asociado. Puede recuperar el índice de asociación de un dispositivo determinado llamando a [IWMPSyncDevice::get \_ partnershipIndex](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_partnershipindex). Los índices de asociación se numeran de 1 a 16. Cuando un dispositivo determinado no tiene una asociación con Reproductor de Windows Media, **getPartnershipIndex** devuelve cero para el índice.
 
-Puede recuperar el estado de Asociación de un dispositivo determinado llamando a [IWMPSyncDevice:: get \_ status](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_status) y, a continuación, inspeccionando el valor de [WMPDeviceStatus](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpdevicestatus) recuperado. Windows Media Player permite una asociación con una biblioteca de un usuario en un equipo para cada dispositivo. Esto significa que la creación de una nueva asociación destruye cualquier asociación existente que el dispositivo actual pueda tener con otro equipo. Para saber cuándo cambia el estado de un dispositivo, puede recibir el evento **DeviceStatusChange** .
+Puede recuperar el estado de asociación de un dispositivo determinado llamando a [IWMPSyncDevice::get \_ status](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_status) y, a continuación, inspeccionando el [valor WMPDeviceStatus](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpdevicestatus) recuperado. Reproductor de Windows Media permite una asociación con la biblioteca de un usuario en un equipo para cada dispositivo. Esto significa que la creación de una nueva asociación destruye cualquier asociación existente que el dispositivo actual pueda tener con otro equipo. Para saber cuándo cambia el estado de un dispositivo, puede recibir el **evento DeviceStatusChange.**
 
-Windows Media Player no puede crear una asociación con un dispositivo que tenga el estado **wmpdsManualDevice**.
+Reproductor de Windows Media crear una asociación con un dispositivo que tenga el estado **wmpdsManualDevice**.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -39,15 +39,15 @@ Windows Media Player no puede crear una asociación con un dispositivo que tenga
 [**Acerca de la sincronización de dispositivos**](about-device-synchronization.md)
 </dt> <dt>
 
-[**Interfaz IWMPEvents2**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents2)
+[**IWMPEvents2 (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents2)
 </dt> <dt>
 
 [**Trabajar con dispositivos portátiles**](working-with-portable-devices.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

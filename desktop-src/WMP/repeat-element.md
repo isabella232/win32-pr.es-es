@@ -1,9 +1,9 @@
 ---
-title: Elemento REPEAT
-description: El elemento REPEAT define el número de veces que Windows Media Player repetirá uno o varios elementos ENTRYREF o ENTRY.
+title: ELEMENTO REPEAT
+description: El elemento REPEAT define el número de veces que Reproductor de Windows Media repite uno o varios elementos ENTRY o ENTRYREF.
 ms.assetid: 1a825f2b-29a7-4180-93df-51b3b5dd14e5
 keywords:
-- Ventanas de elementos de repetición Media Player
+- Elemento REPEAT Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aff7d5eaa9594882b029f0b02f4888d93fff01d9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 330eda0757acb29b48ed10636d8f479b6ebb1395d088020876c717a78f41ae6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002545"
 ---
-# <a name="repeat-element"></a>Elemento REPEAT
+# <a name="repeat-element"></a>ELEMENTO REPEAT
 
-El elemento **REPEAT** define el número de veces que Windows Media Player repetirá uno o varios elementos **ENTRYREF** o **entry** .
+El **elemento REPEAT** define el número de veces Reproductor de Windows Media repite uno o varios elementos **ENTRY** **o ENTRYREF.**
 
 ``` syntax
 <REPEAT   
@@ -35,7 +35,7 @@ El elemento **REPEAT** define el número de veces que Windows Media Player repet
 
 **COUNT**
 
-Entero que representa el número de veces que Windows Media Player repite los elementos **entry** y **ENTRYREF** dentro del ámbito de este elemento.
+Entero que representa el número de Reproductor de Windows Media repite los elementos **ENTRY** y **ENTRYREF** dentro del ámbito de este elemento.
 
 ## <a name="parentchild-elements"></a>Elementos primarios y secundarios
 
@@ -43,18 +43,18 @@ Entero que representa el número de veces que Windows Media Player repite los el
 
 | Hierarchy       | Elementos                |
 |-----------------|-------------------------|
-| Elementos primarios | **ASX**                 |
-| Elementos secundarios  | **entry**, **ENTRYREF** |
+| Elementos primarios | **Asx**                 |
+| Elementos secundarios  | **ENTRY**, **ENTRYREF** |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este elemento define el número de veces que Windows Media Player repite, o recorre en bucle, los clips definidos por los elementos **entry** y **ENTRYREF** dentro del ámbito de este elemento. Solo es válido el primer elemento **REPEAT** de un metarchivo; los elementos de **repetición** subsiguientes se omiten.
+Este elemento define el número de veces Reproductor de Windows Media repite o recorre en bucle los clips definidos por los elementos **ENTRY** y **ENTRYREF** dentro del ámbito de este elemento. Solo el primer **elemento REPEAT** de un metarchivo es válido; Se **omiten los** elementos REPEAT posteriores.
 
-Si no se define ningún atributo de **recuento** , el contenido de los elementos de **entrada** y **ENTRYREF** asociados se repite un número infinito de veces. Un valor de cero hace que Windows Media Player omita el elemento **REPEAT** y reproduzca el contenido una vez.
+Si no se define ningún atributo **COUNT,** el contenido de los elementos **ENTRY** y **ENTRYREF** asociados repite un número infinito de veces. Un valor de cero hace Reproductor de Windows Media omitir el **elemento REPEAT** y reproducir el contenido una vez.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -84,7 +84,7 @@ Si no se define ningún atributo de **recuento** , el contenido de los elementos
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -92,10 +92,10 @@ Si no se define ningún atributo de **recuento** , el contenido de los elementos
 
 <dl> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referencia de metarchivos de Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referencia de metarchivo multimedia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Este operador comprueba la igualdad entre los objetos CMediaType.
+description: Este operador comprueba la igualdad entre objetos CMediaType.
 ms.assetid: d50f3a72-c5e8-44a5-aa0e-b1c40a19fee3
-title: 'CMediaType. CMediaType:: Operator = = (método, mtype. h)'
+title: Método CMediaType.CMediaType::operator== (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 79631415ce562f1cf3d7251e1f325960f5baa28b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93bc74338f994b967f313b7ed77529f9d90a8d01992b74cf4010f9aa51ab6a9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043663"
 ---
-# <a name="cmediatypecmediatypeoperator-method"></a>CMediaType. CMediaType:: Operator = = (método)
+# <a name="cmediatypecmediatypeoperator-method"></a>CMediaType.CMediaType::operator== (método)
 
-Este operador comprueba la igualdad entre los objetos [**CMediaType**](cmediatype.md) .
+Este operador comprueba la igualdad entre [**objetos CMediaType.**](cmediatype.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ BOOL CMediaType::operator==(
 
 <dl> <dt>
 
-*RT* \[ CLI\]
+*rt* \[ Ref\]
 </dt> <dd>
 
-Referencia al objeto **CMediaType** que se va a comparar.
+Referencia al **objeto CMediaType** que se comparará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si *RT* es igual a este objeto. De lo contrario, devuelve **false**.
+Devuelve **TRUE** si *rt* es igual a este objeto. De lo contrario, **devuelve FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve **true** si *RT* es igual a este objeto. De lo contrario, devuelve **fa
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve **true** si *RT* es igual a este objeto. De lo contrario, devuelve **fa
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

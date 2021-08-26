@@ -1,9 +1,9 @@
 ---
 title: Atributo AcquisitionTime
-description: El atributo AcquisitionTime es la fecha y la hora en que se agregó el elemento a la biblioteca.
+description: El atributo AcquisitionTime es la fecha y hora en que se agregó el elemento a la biblioteca.
 ms.assetid: 5184aa35-ef07-47ec-97b3-2d602bd00568
 keywords:
-- AcquisitionTime Media Player de Windows
+- Atributo AcquisitionTime Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,31 +12,31 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82de862b1bea58c27a245c2fdfe415fb137bf4f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac78dd663addd35657b2aa1b76096b00a26cf3c91770ec0da16fa0f0b9861a03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004382"
 ---
 # <a name="acquisitiontime-attribute"></a>Atributo AcquisitionTime
 
-El atributo **AcquisitionTime** es la fecha y la hora en que se agregó el elemento a la biblioteca.
+El **atributo AcquisitionTime** es la fecha y hora en que se agregó el elemento a la biblioteca.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Otros elementos](other-item-attributes.md)
--   [Elementos de fotografía](photo-item-attributes.md)
--   [Reproducción](playlist-attributes-ref.md)
+-   [Elementos de fotos](photo-item-attributes.md)
+-   [Listas](playlist-attributes-ref.md)
 -   [Elementos de radio](radio-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en la biblioteca.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,7 +44,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -52,7 +52,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

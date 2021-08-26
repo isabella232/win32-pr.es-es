@@ -1,6 +1,6 @@
 ---
 title: Elemento TimeCreated (SystemPropertiesType)
-description: Marca de tiempo que identifica Cuándo se registró el evento.
+description: Marca de tiempo que identifica cuándo se registró el evento.
 ms.assetid: 16b2b71b-078e-4862-b1be-ef7cec315bc5
 keywords:
 - Elemento TimeCreated EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 998bb03601f0ecbe87c571daa94b1f33e307d6af
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5026bed56e3e065a403c0e6076daa0ec478223c4d742db0a35109a41cc98d5c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005305"
 ---
 # <a name="timecreated-systempropertiestype-element"></a>Elemento TimeCreated (SystemPropertiesType)
 
-Marca de tiempo que identifica Cuándo se registró el evento.
+Marca de tiempo que identifica cuándo se registró el evento.
 
 ``` syntax
 <xs:element name="TimeCreated">
@@ -35,7 +35,7 @@ Marca de tiempo que identifica Cuándo se registró el evento.
 </xs:element>
 ```
 
-El elemento **TimeCreated** se define mediante el tipo complejo de [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+El tipo complejo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) define el elemento **TimeCreated.**
 
 ## <a name="attributes"></a>Atributos
 
@@ -43,7 +43,7 @@ El elemento **TimeCreated** se define mediante el tipo complejo de [**SystemProp
 
 | Nombre       | Tipo     | Descripción                                              |
 |------------|----------|----------------------------------------------------------|
-| SystemTime | dateTime | Hora del sistema en la que se registró el evento.<br/> |
+| SystemTime | dateTime | La hora del sistema de cuando se registró el evento.<br/> |
 
 
 
@@ -53,8 +53,8 @@ El elemento **TimeCreated** se define mediante el tipo complejo de [**SystemProp
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -65,7 +65,7 @@ El elemento **TimeCreated** se define mediante el tipo complejo de [**SystemProp
 **Elemento primario**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

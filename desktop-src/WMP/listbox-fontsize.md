@@ -29,19 +29,19 @@ El **atributo fontSize** especifica o recupera el tamaño de fuente del control 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un número de lectura **y** escritura **(long)** que especifica el tamaño de fuente en puntos. El valor predeterminado es 10.
+Este atributo es un número de lectura y **escritura** **(long)** que especifica el tamaño de fuente en puntos. El valor predeterminado es 10.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

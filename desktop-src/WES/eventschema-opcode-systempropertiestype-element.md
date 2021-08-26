@@ -1,9 +1,9 @@
 ---
-title: OpCode (SystemPropertiesType) (elemento)
+title: Elemento Opcode (SystemPropertiesType)
 description: Código de operación definido en el evento.
 ms.assetid: ec59a0f0-0573-4e0d-b108-cfca5ffecfba
 keywords:
-- Elemento OpCode EventLog
+- Elemento Opcode EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8c2d9b5ae9d49b9030675beca92b2c5af28c51a6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 07f774363c9f57f0eb9fb5540bb079fe4511950a0d7187a75e2c483150b8205c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005405"
 ---
-# <a name="opcode-systempropertiestype-element"></a>OpCode (SystemPropertiesType) (elemento)
+# <a name="opcode-systempropertiestype-element"></a>Elemento Opcode (SystemPropertiesType)
 
 Código de operación definido en el evento.
 
@@ -30,7 +30,7 @@ Código de operación definido en el evento.
  />
 ```
 
-El elemento **OpCode** se define mediante el tipo complejo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+El tipo complejo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) define el elemento **Opcode.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **OpCode** se define mediante el tipo complejo [**SystemPropertiesTy
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **OpCode** se define mediante el tipo complejo [**SystemPropertiesTy
 **Elemento primario**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

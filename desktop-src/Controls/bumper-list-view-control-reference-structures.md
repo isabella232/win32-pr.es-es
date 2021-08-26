@@ -1,17 +1,17 @@
 ---
-title: Estructuras de vistas de lista
-description: Estructuras de vistas de lista
+title: Estructuras de vista de lista
+description: Estructuras de vista de lista
 ms.assetid: 12d77514-7281-4873-b456-252ff80ed7f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b603e9acd65448b3c4970aa9552f4d2b91ebccd
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b5898a1dc098b5b173ff8c3cbea2c9ab684d7d147e5523601e694baf57c364a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971295"
 ---
-# <a name="list-view-structures"></a>Estructuras de vistas de lista
+# <a name="list-view-structures"></a>Estructuras de vista de lista
 
 ## <a name="in-this-section"></a>En esta sección
 

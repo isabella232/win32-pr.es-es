@@ -14,7 +14,7 @@ ms.locfileid: "120002825"
 ---
 # <a name="win32_directory-methods"></a>Métodos de directorio de Win32 \_
 
-La [**clase Directory \_ de Win32**](win32-directory.md) expone los métodos siguientes.
+La [**clase \_ Directory de Win32**](win32-directory.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

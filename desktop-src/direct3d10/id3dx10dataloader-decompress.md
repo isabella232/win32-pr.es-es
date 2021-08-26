@@ -1,7 +1,7 @@
 ---
-description: Se usa para descomprimir datos codificados. Normalmente, esto se utilizaría para cargar recursos desde sistemas de archivos, como archivos ZIP. Al cargar desde un recurso sin comprimir, la fase de descompresión no tiene que realizar ningún trabajo.
+description: Se usa para descomprimir los datos codificados. Normalmente, esto se usaría para cargar recursos desde sistemas de archivos, como archivos ZIP. Al cargar desde un recurso sin comprimir, la fase de descompresión no tiene que realizar ningún trabajo.
 ms.assetid: 7f7e3ffd-8dac-403f-813b-d6d21d146fa7
-title: ID3DX10DataLoader::D método ecompress (D3DX10. h)
+title: Método ID3DX10DataLoader::D ecompress (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e6f711722852cba4b671cc84416055d279fd7cc6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c9e532bae8cb121fc93f3fdf2a5a1ee23e597c66599277b73b3b36b15ebbb963
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989125"
 ---
-# <a name="id3dx10dataloaderdecompress-method"></a>ID3DX10DataLoader::D método ecompress
+# <a name="id3dx10dataloaderdecompress-method"></a>Método ID3DX10DataLoader::D ecompress
 
-Se usa para descomprimir datos codificados. Normalmente, esto se utilizaría para cargar recursos desde sistemas de archivos, como archivos ZIP. Al cargar desde un recurso sin comprimir, la fase de descompresión no tiene que realizar ningún trabajo.
+Se usa para descomprimir los datos codificados. Normalmente, esto se usaría para cargar recursos desde sistemas de archivos, como archivos ZIP. Al cargar desde un recurso sin comprimir, la fase de descompresión no tiene que realizar ningún trabajo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,19 +41,19 @@ HRESULT Decompress(
 
 <dl> <dt>
 
-*ppData* \[ enuncia\]
+*ppData* \[ out\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* void**
 
-Puntero a los datos sin procesar que se van a descomprimir.
+Puntero a los datos sin procesar que se descomprimen.
 
 </dd> <dt>
 
-*pcBytes* \[ de\]
+*pcBytes* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **tamaño \_ T**](../winprog/windows-data-types.md)\***
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)\***
 
 Tamaño de los datos a los que apunta ppData.
 
@@ -63,11 +63,11 @@ Tamaño de los datos a los que apunta ppData.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La [**interfaz ID3DX10DataLoader**](id3dx10dataloader.md) se puede heredar y sus miembros se pueden redefinir. La descompresión se puede redefinir para admitir sus propios formatos de archivo personalizados.
+[**La interfaz ID3DX10DataLoader**](id3dx10dataloader.md) se puede heredar y sus miembros se pueden volver a definir. La descompresión se podría volver a definir para admitir sus propios formatos de archivo personalizados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ La [**interfaz ID3DX10DataLoader**](id3dx10dataloader.md) se puede heredar y sus
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ La [**interfaz ID3DX10DataLoader**](id3dx10dataloader.md) se puede heredar y sus
 [ID3DX10DataLoader](id3dx10dataloader.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  
