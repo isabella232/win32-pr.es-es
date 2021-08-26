@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1f1f6ffc45098ba8f8b689e6f6212e5bec4fd679
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c4376319d8ac2d49c480110d5119af5a3cefc9fe491f4997efdc15e30bf50db9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986465"
 ---
 # <a name="d3dxplanetransform-function-d3dx9mathh"></a>Función D3DXPlaneTransform (D3dx9math.h)
 
@@ -96,9 +96,9 @@ D3DXPlaneTransform(&planeNew, &plane, &matrix);
 
 
 
-Un plano se describe por ax + by + dw + dw = 0. El primer plano se crea con (a,b,c,d) = (0,1,1,0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), que muestra el nuevo plano descrito por 0,353y + 0,235z = 0.
+Un plano se describe mediante ax + by + dw + dw = 0. El primer plano se crea con (a,b,c,d) = (0,1,1,0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), que muestra el nuevo plano descrito por 0,353y + 0,235z = 0.
 
-El parámetro pM contiene la transpuesta inversa de la matriz de transformación. Este método requiere la transponer inversa para que el vector normal del plano transformado también se pueda transformar correctamente.
+El parámetro pM contiene la transpuesta inversa de la matriz de transformación. Este método requiere la transpuesta inversa para que el vector normal del plano transformado también se pueda transformar correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ El parámetro pM contiene la transpuesta inversa de la matriz de transformación
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

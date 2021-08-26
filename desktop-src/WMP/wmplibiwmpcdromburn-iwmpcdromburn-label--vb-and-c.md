@@ -1,11 +1,11 @@
 ---
-title: Propiedad de etiqueta IWMPCdromBurn
-description: La propiedad etiqueta obtiene la cadena de etiqueta del volumen del CD.
+title: Propiedad de etiqueta IWMPCdromRomRom
+description: La propiedad label obtiene la cadena de etiqueta del volumen de CD.
 ms.assetid: 46e7741c-59c5-46d8-b9ca-09892d907cd7
 keywords:
-- propiedades de etiqueta Media Player de Windows
-- propiedad etiqueta Media Player Windows, interfaz IWMPCdromBurn
-- Interfaz IWMPCdromBurn Windows Media Player, propiedad label
+- propiedad label Reproductor de Windows Media
+- Propiedad label Reproductor de Windows Media , interfaz IWMPCdromRomRom
+- IWMPCdromRom Interface Reproductor de Windows Media , propiedad de etiqueta
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05da344f1148de7e79cb605135964c6ab8225ac0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8b8917706e20b5d1361054ac5f6fd209c0026837c428ecba715727e3d828a4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000555"
 ---
-# <a name="iwmpcdromburnlabel-property"></a>IWMPCdromBurn:: Label (propiedad)
+# <a name="iwmpcdromburnlabel-property"></a>Propiedad IWMPCdromRomRom::label
 
-La propiedad *etiqueta* obtiene la cadena de etiqueta del volumen del CD.
+La *propiedad label* obtiene la cadena de etiqueta del volumen de CD.
 
 Esta propiedad es de solo lectura.
 
@@ -49,11 +49,11 @@ Public ReadOnly Property label As System.String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. String** que es la cadena de la etiqueta de volumen.
+**System.String que** es la cadena de etiqueta de volumen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debido a la forma en que se almacenan las etiquetas de CD, la etiqueta del CD puede ser menor que la longitud de la cadena de etiqueta de volumen especificada. Si la cadena es mayor que la longitud máxima de una etiqueta de CD, se truncará el texto.
+Debido a la forma en que se almacenan las etiquetas de CD, la etiqueta del CD puede ser más corta que la longitud de la cadena de etiqueta de volumen especificada. Si la cadena es mayor que la longitud máxima de una etiqueta de CD, el texto se truncará.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Debido a la forma en que se almacenan las etiquetas de CD, la etiqueta del CD pu
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -71,7 +71,7 @@ Debido a la forma en que se almacenan las etiquetas de CD, la etiqueta del CD pu
 
 <dl> <dt>
 
-[**Interfaz IWMPCdromBurn (VB y C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interfaz IWMPCdromRomRom (VB y C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> </dl>
 
  

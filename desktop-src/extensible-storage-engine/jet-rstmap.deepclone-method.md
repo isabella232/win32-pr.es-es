@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_RSTMAP. Método DeepClone'
+description: 'Más información sobre: JET_RSTMAP. Método DeepClone'
 title: JET_RSTMAP. Método DeepClone
 TOCTitle: 'DeepClone method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_RSTMAP.DeepClone
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d18924a31e116f6b2dafa6ab6683f67911876b91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f186f71d0382d75d2360d0742806421de5e50b8dd4a768bd27306bf338e7fbce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016525"
 ---
 # <a name="jet_rstmapdeepclone-method"></a>JET_RSTMAP. Método DeepClone
 
-Devuelve una copia en profundidad del objeto.
+Devuelve una copia en profundidad del objeto .
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,8 +56,8 @@ public JET_RSTMAP DeepClone()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_RSTMAP](./jet-rstmap-class.md)  
-Una copia en profundidad del objeto.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_RSTMAP](./jet-rstmap-class.md)  
+Copia en profundidad del objeto.  
 
 #### <a name="implements"></a>Implementaciones
 
@@ -67,8 +67,8 @@ Una copia en profundidad del objeto.
 
 #### <a name="reference"></a>Referencia
 
-[JET_RSTMAP (clase)](./jet-rstmap-class.md)
+[JET_RSTMAP clase](./jet-rstmap-class.md)
 
-[Miembros de JET_RSTMAP](./jet-rstmap-members.md)
+[JET_RSTMAP miembros](./jet-rstmap-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

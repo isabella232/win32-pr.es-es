@@ -1,7 +1,7 @@
 ---
 description: Crea un contexto de dispositivo (DC) para la superficie especificada.
 ms.assetid: c2eaaed6-db19-4dab-ac12-6b4e7eeb58e4
-title: Función NtGdiDdGetDC (Ntgdi. h)
+title: Función NtGdiDdGetDC (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 4f930334f0712107d5651a22b35d6917c7977011
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 200635ca71ab16a84a137f85be13cc4fdbb6db200e4c0da795d07f945f06e9f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053345"
 ---
-# <a name="ntgdiddgetdc-function"></a>NtGdiDdGetDC función)
+# <a name="ntgdiddgetdc-function"></a>Función NtGdiDdGetDC
 
-\[Esta función está sujeta a cambios en cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades para interactuar directamente con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios en el sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
 Crea un contexto de dispositivo (DC) para la superficie especificada.
 
@@ -45,14 +45,14 @@ HDC APIENTRY NtGdiDdGetDC(
 
 <dl> <dt>
 
-*hSurface* \[ de\]
+*hSurface* \[ En\]
 </dt> <dd>
 
-Identificador de una superficie de DirectDraw en modo kernel previamente devuelta por [**NtGdiDdCreateSurface**](-dxgkernel-ntgdiddcreatesurface.md) o [**NtGdiDdCreateSurfaceObject**](-dxgkernel-ntgdiddcreatesurfaceobject.md).
+Identificador de una superficie de DirectDraw en modo kernel devuelta anteriormente por [**NtGdiDdCreateSurface**](-dxgkernel-ntgdiddcreatesurface.md) o [**NtGdiDdCreateSurfaceObject**](-dxgkernel-ntgdiddcreatesurfaceobject.md).
 
 </dd> <dt>
 
-*puColorTable* \[ de\]
+*puColorTable* \[ En\]
 </dt> <dd>
 
 Puntero a una tabla de colores de invalidación para el controlador de dominio devuelto.
@@ -61,13 +61,13 @@ Puntero a una tabla de colores de invalidación para el controlador de dominio d
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se realiza correctamente, esta función devuelve una **HDC**; válida. en caso contrario, devuelve **null**.
+Si se realiza correctamente, esta función devuelve un **HDC válido;** de lo contrario, **devuelve NULL.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo se permite un DC por superficie en un momento dado. Las llamadas posteriores a **NtGdiDdGetDC** producirán un error hasta que se libere el controlador de dominio anterior.
+Solo se permite un controlador de dominio por superficie en un momento dado. Las llamadas posteriores **a NtGdiDdGetDC producirán** un error hasta que se libera el controlador de dominio anterior.
 
-Se recomienda que las aplicaciones llamen a [IDirectDrawSurface7:: GetDC](/windows/win32/api/ddraw/nf-ddraw-idirectdrawsurface7-getdc) en su lugar, lo que proporciona la misma funcionalidad de una manera independiente del sistema operativo.
+En su lugar, se recomienda a las aplicaciones llamar a [IDirectDrawSurface7::GetDC,](/windows/win32/api/ddraw/nf-ddraw-idirectdrawsurface7-getdc) que proporciona la misma funcionalidad de una manera independiente del sistema operativo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,7 +77,7 @@ Se recomienda que las aplicaciones llamen a [IDirectDrawSurface7:: GetDC](/windo
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ Se recomienda que las aplicaciones llamen a [IDirectDrawSurface7:: GetDC](/windo
 
 <dl> <dt>
 
-[Compatibilidad con clientes de nivel inferior de gráficos](-dxgkernel-low-level-client-support.md)
+[Compatibilidad con clientes de bajo nivel de gráficos](-dxgkernel-low-level-client-support.md)
 </dt> <dt>
 
 [**DdGetDC**](/windows/desktop/api/Ddrawgdi/nf-ddrawgdi-ddgetdc)

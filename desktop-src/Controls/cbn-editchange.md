@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de CBN_EDITCHANGE (Winuser. h)
-description: Se envía una vez que el usuario ha realizado una acción que puede haber alterado el texto en la parte del control de edición de un cuadro combinado.
+title: CBN_EDITCHANGE de notificación (Winuser.h)
+description: Se envía después de que el usuario haya realizado una acción que puede haber modificado el texto en la parte del control de edición de un cuadro combinado.
 ms.assetid: 2c5de5cd-24d3-4198-906e-b520369e0f61
 keywords:
-- CBN_EDITCHANGE controles de código de notificación de Windows
+- CBN_EDITCHANGE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29a661d647d0879b93675563777d77bba2dfe8c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0897c8e2de2417d304a1b8737a7358322a42073ec87442d75c21e954fa6ac805
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054125"
 ---
-# <a name="cbn_editchange-notification-code"></a>Código de notificación de EDITCHANGE de CBN \_
+# <a name="cbn_editchange-notification-code"></a>Código de notificación EDITCHANGE de CBN \_
 
-Se envía una vez que el usuario ha realizado una acción que puede haber alterado el texto en la parte del control de edición de un cuadro combinado. A diferencia del código de notificación de [CBN \_ EDITUPDATE](cbn-editupdate.md) , este código de notificación se envía cuando el sistema actualiza la pantalla. La ventana primaria del cuadro combinado recibe este código de notificación a través del mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+Se envía después de que el usuario haya realizado una acción que puede haber modificado el texto en la parte del control de edición de un cuadro combinado. A diferencia [del código de notificación \_ EDITUPDATE de CBN,](cbn-editupdate.md) este código de notificación se envía después de que el sistema actualice la pantalla. La ventana primaria del cuadro combinado recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_EDITCHANGE
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador de control del cuadro combinado. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del cuadro combinado. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Identificador del cuadro combinado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el cuadro combinado tiene el estilo [**CBS \_ DROPDOWNLIST**](combo-box-styles.md) , no se envía este código de notificación.
+Si el cuadro combinado tiene el [**estilo \_ DROPDOWNLIST de CBS,**](combo-box-styles.md) este código de notificación no se envía.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Si el cuadro combinado tiene el estilo [**CBS \_ DROPDOWNLIST**](combo-box-style
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Si el cuadro combinado tiene el estilo [**CBS \_ DROPDOWNLIST**](combo-box-style
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

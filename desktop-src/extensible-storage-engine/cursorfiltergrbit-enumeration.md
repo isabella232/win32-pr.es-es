@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración CursorFilterGrbit'
-title: Enumeración CursorFilterGrbit (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: CursorFilterGrbit (enumeración)'
+title: Enumeración CursorFilterGrbit (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: CursorFilterGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.CursorFilterGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.cursorfiltergrbit(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eeb64d74e2ec52a89afea41d98df2add0729000d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcb89fc69616bf868536aa9eef516bc5cacc7dd89b9b3bd29eadd3fe1ae06677
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104497933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066822"
 ---
-# <a name="cursorfiltergrbit-enumeration"></a>Enumeración CursorFilterGrbit
+# <a name="cursorfiltergrbit-enumeration"></a>CursorFilterGrbit (enumeración)
 
-Opciones que se pasan al establecer filtros de cursor.
+Opciones pasadas al establecer filtros de cursor.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,7 +70,7 @@ public enum CursorFilterGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 </tbody>
@@ -81,4 +81,4 @@ public enum CursorFilterGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

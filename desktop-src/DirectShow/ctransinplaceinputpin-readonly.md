@@ -1,7 +1,7 @@
 ---
 description: El método ReadOnly indica si el flujo de entrada es de solo lectura.
 ms.assetid: 25b8230d-be2b-4129-a1aa-f6b36e95199e
-title: Método CTransInPlaceInputPin. ReadOnly (TRANSip. h)
+title: Método CTransInPlaceInputPin.ReadOnly (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 33e71f8fd0aa7bf37f76ed6446fb5132c1808fb7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f0dd3ae23da6832911b58e50cba67bcf8e6ec6092c3a31a193bd5a027c5566c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999095"
 ---
-# <a name="ctransinplaceinputpinreadonly-method"></a>CTransInPlaceInputPin. ReadOnly (método)
+# <a name="ctransinplaceinputpinreadonly-method"></a>Método CTransInPlaceInputPin.ReadOnly
 
 El `ReadOnly` método indica si el flujo de entrada es de solo lectura.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor de la variable de miembro [**m \_ bReadOnly**](ctransinplaceinputpin-m-breadonly.md) .
+Devuelve el valor de la [**variable miembro m \_ bReadOnly.**](ctransinplaceinputpin-m-breadonly.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve el valor de la variable de miembro [**m \_ bReadOnly**](ctransinplacein
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el valor de la variable de miembro [**m \_ bReadOnly**](ctransinplacein
 
 <dl> <dt>
 
-[**Clase CTransInPlaceInputPin**](ctransinplaceinputpin.md)
+[**CTransInPlaceInputPin (clase)**](ctransinplaceinputpin.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_INSTANCE. Lista de sobrecargas del método ToString'
+description: 'Más información sobre: JET_INSTANCE. Lista de sobrecargas del método ToString'
 title: JET_INSTANCE. Lista de sobrecargas del método ToString
 TOCTitle: 'ToString method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_INSTANCE.ToString
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 3eae18ed5788add4962930f124394bbf0bd52be8
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 624e1e829ca2f5ed1e525d2d2cc49872c91e51b205775bd0af18fffffc6076cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016795"
 ---
 # <a name="jet_instancetostring-method-overload-list"></a>JET_INSTANCE. Lista de sobrecargas del método ToString
 
@@ -40,11 +40,11 @@ Incluir miembros heredados
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="hh577403(v=exchg.10).md">ToString()</a></td>
-<td>Generar una representación de cadena de la estructura. (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType. ToString ()</a>).</td>
+<td>Genere una representación de cadena de la estructura . (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh578011(v=exchg.10).md">ToString (String, IFormatProvider)</a></td>
+<td><a href="hh578011(v=exchg.10).md">ToString(String, IFormatProvider)</a></td>
 <td>Da formato al valor de la instancia actual usando el formato especificado.</td>
 </tr>
 </tbody>
@@ -57,8 +57,8 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_INSTANCE](./jet-instance-structure.md)
+[JET_INSTANCE estructura](./jet-instance-structure.md)
 
-[Miembros de JET_INSTANCE](./jet-instance-members.md)
+[JET_INSTANCE miembros](./jet-instance-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

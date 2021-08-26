@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI ComClassAutoEmulator Association de Win32 relaciona una clase de modelo de objetos componentes (com) y otra clase com que emula automáticamente.
+description: La clase WMI de asociación ComClassAutoEmulator de Win32 relaciona una clase de Modelo de objetos componentes (COM) y otra clase COM que \_ emula automáticamente.
 ms.assetid: e060ba26-98e7-47cb-bf21-1ca80d0e8a07
 ms.tgt_platform: multiple
-title: Win32_ComClassAutoEmulator (clase)
+title: Win32_ComClassAutoEmulator clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9442036d43859caa5fa277109c7e85553e7d42f0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ba849eed744ff342cfde10d0f31072d4e898cf52cf4e6966760f780236c56df4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986385"
 ---
-# <a name="win32_comclassautoemulator-class"></a>\_Clase Win32 ComClassAutoEmulator
+# <a name="win32_comclassautoemulator-class"></a>Clase \_ ComClassAutoEmulator de Win32
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ ComClassAutoEmulator** Association de Win32 relaciona una clase de modelo de objetos componentes (COM) y otra clase com que emula automáticamente.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) de asociación **\_ ComClassAutoEmulator de Win32** relaciona una clase de Modelo de objetos componentes (COM) y otra clase COM que emula automáticamente.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -40,7 +40,7 @@ class Win32_ComClassAutoEmulator
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **clase \_ ComClassAutoEmulator de Win32** tiene estos tipos de miembros:
 
@@ -61,10 +61,10 @@ Tipo de datos: **Win32 \_ ClassicCOMClass**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")
 </dt> </dl>
 
-Referencia a la instancia de que representa el componente COM que puede emular automáticamente el componente COM asociado. Esta información se obtiene a través de la entrada del registro autotreatas.
+Referencia a la instancia de que representa el componente COM que puede emular automáticamente el componente COM asociado. Esta información se obtiene a través de la entrada del Registro AutoTreatAs.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Tipo de datos: **Win32 \_ ClassicCOMClass**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")
 </dt> </dl>
 
 Referencia a la instancia de que representa el componente COM emulado automáticamente por otro componente.
@@ -92,13 +92,13 @@ Referencia a la instancia de que representa el componente COM emulado automátic
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

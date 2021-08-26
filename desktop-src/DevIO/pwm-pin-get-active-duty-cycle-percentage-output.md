@@ -1,7 +1,7 @@
 ---
-description: Contiene el porcentaje de ciclo de servicio actual de un PIN o canal en un controlador de modulación de ancho de pulso (PWM).
+description: Contiene el porcentaje del ciclo de servicio actual para un pin o canal en un controlador de pulse Width Width (PWM).
 ms.assetid: 09C0232A-DF5C-4A1C-8138-D3D65E45731B
-title: Estructura de PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE_OUTPUT (PWM. h)
+title: PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE_OUTPUT estructura (Pwm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Pwm.h
-ms.openlocfilehash: 607fcb1ab429e7cbe9aee593f75d48f0f9d308bd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dda05c06ee8c53968647bc29da2febee14abf758d4ad228c16178703c2d1da08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053325"
 ---
-# <a name="pwm_pin_get_active_duty_cycle_percentage_output-structure"></a>La \_ \_ estructura de \_ \_ salida del \_ porcentaje del ciclo de servicio \_ de un \_ PIN de PWM
+# <a name="pwm_pin_get_active_duty_cycle_percentage_output-structure"></a>ESTRUCTURA DE SALIDA DE \_ PORCENTAJE DE CICLO DE SERVICIO \_ \_ \_ \_ ACTIVO \_ \_ DE PIN DE PWM
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Contiene el porcentaje de ciclo de servicio actual de un PIN o canal en un controlador de modulación de ancho de pulso (PWM).
+Contiene el porcentaje del ciclo de servicio actual para un pin o canal en un controlador de pulse Width Width (PWM).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ typedef struct _PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE_OUTPUT {
 **Porcentaje**
 </dt> <dd>
 
-Ciclo de arancel de la señal de PWM actual, como un porcentaje de PWM \_ , que es un valor de ULONGLONG.
+El ciclo de servicio de señal de PWM actual, como porcentaje de \_ PWM, que es un valor ULONGLONG.
 
 </dd> </dl>
 
@@ -54,11 +54,11 @@ Ciclo de arancel de la señal de PWM actual, como un porcentaje de PWM \_ , que 
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                      |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                             |
 | Versión mínima de KMDF<br/>     | 1.19<br/>                                                                                  |
 | Versión mínima de UMDF<br/>     | 2.19<br/>                                                                                  |
-| Encabezado<br/>                   | <dl> <dt>PWM. h (incluir PWM. h)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Pwm.h (incluir Pwm.h)</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ Ciclo de arancel de la señal de PWM actual, como un porcentaje de PWM \_ , que 
 
 <dl> <dt>
 
-[**\_porcentaje de \_ \_ ciclo de \_ \_ servicio activo \_ \_ de ioctl de ioctl**](https://www.bing.com/search?q=**IOCTL\_PWM\_PIN\_GET\_ACTIVE\_DUTY\_CYCLE\_PERCENTAGE**)
+[**PORCENTAJE DEL CICLO DE \_ SERVICIO ACTIVO DEL PIN DE PWM \_ \_ \_ \_ \_ DE \_ IOCTL**](https://www.bing.com/search?q=**IOCTL\_PWM\_PIN\_GET\_ACTIVE\_DUTY\_CYCLE\_PERCENTAGE**)
 </dt> </dl>
 
  

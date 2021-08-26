@@ -1,7 +1,7 @@
 ---
-description: Velocidad de reproducción. De forma predeterminada, el valor se establece en 1,0.
+description: Velocidad de reproducción. De forma predeterminada, el valor se establece en 1.0.
 ms.assetid: 835ddbe8-2017-4a4a-8f10-b3f33a8215a7
-title: 'Miembro CSourceSeeking:: m_dRateSeeking (Ctlutil. h)'
+title: CSourceSeeking::m_dRateSeeking miembro (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1055a420316868db6374798c0295339dd74ac172
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65a21cbae87c25e0f37791129f1699349ea4bb4a8591097978e04010a925962b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054215"
 ---
-# <a name="csourceseekingm_drateseeking-member"></a>Miembro dRateSeeking CSourceSeeking:: m \_
+# <a name="csourceseekingm_drateseeking-member"></a>Miembro CSourceSeeking::m \_ dRateSeeking
 
-Velocidad de reproducción. De forma predeterminada, el valor se establece en 1,0.
+Velocidad de reproducción. De forma predeterminada, el valor se establece en 1.0.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ double m_dRateSeeking;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Mantenga presionada la sección **m \_ Plock** Critical antes de tener acceso a esta variable.
+Mantenga **presionada \_ la sección m pLock** critical antes de acceder a esta variable.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Mantenga presionada la sección **m \_ Plock** Critical antes de tener acceso a 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Mantenga presionada la sección **m \_ Plock** Critical antes de tener acceso a 
 
 <dl> <dt>
 
-[**Clase CSourceSeeking**](csourceseeking.md)
+[**CSourceSeeking (clase)**](csourceseeking.md)
 </dt> </dl>
 
  

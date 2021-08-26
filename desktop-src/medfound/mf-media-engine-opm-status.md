@@ -1,7 +1,7 @@
 ---
-description: Define el estado del administrador de protección de salida (OPM).
+description: Define el estado de Output Protection Manager (OPM).
 ms.assetid: 7C4D88F6-369B-4364-90C4-6D0F8DD1523B
-title: Enumeración MF_MEDIA_ENGINE_OPM_STATUS
+title: MF_MEDIA_ENGINE_OPM_STATUS enumeración
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 73585bf63bc559f30ce114730274e30518497b05
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 98efb0054402f8bf019e91d639f16322a1378a23dfeee76cd31daea9d12bf6fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105678627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013045"
 ---
-# <a name="mf_media_engine_opm_status-enumeration"></a>\_ \_ \_ Enumeración de estado de OPM del motor multimedia MF \_
+# <a name="mf_media_engine_opm_status-enumeration"></a>MF \_ MEDIA \_ ENGINE \_ OPM STATUS \_ (enumeración)
 
-Define el estado del [Administrador de protección de salida](output-protection-manager.md) (OPM).
+Define el estado de [Output Protection Manager](output-protection-manager.md) (OPM).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,45 +44,45 @@ typedef enum _MF_MEDIA_ENGINE_OPM_STATUS {
 
 <dl> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_NOT_REQUESTED"></span><span id="mf_media_engine_opm_not_requested"></span>**\_no se \_ \_ \_ \_ solicitó el OPM del motor de multimedia MF**
+<span id="MF_MEDIA_ENGINE_OPM_NOT_REQUESTED"></span><span id="mf_media_engine_opm_not_requested"></span>**MF \_ MEDIA \_ ENGINE \_ OPM \_ NOT \_ REQUESTED**
 </dt> <dd>
 
-Estado predeterminado. Se usa para devolver el estado correcto cuando el contenido no está protegido.
+Estado predeterminado. Se usa para devolver el estado correcto cuando el contenido está desprotegido.
 
 </dd> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_ESTABLISHED"></span><span id="mf_media_engine_opm_established"></span>**se \_ \_ estableció el \_ OPM del motor de multimedia MF \_**
+<span id="MF_MEDIA_ENGINE_OPM_ESTABLISHED"></span><span id="mf_media_engine_opm_established"></span>**MF \_ MEDIA \_ ENGINE \_ OPM \_ ESTABLISHED**
 </dt> <dd>
 
-OPM se estableció correctamente.
+OPM establecido correctamente.
 
 </dd> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_FAILED_VM"></span><span id="mf_media_engine_opm_failed_vm"></span>**\_error de \_ \_ \_ \_ máquina virtual de OPM del motor multimedia MF**
+<span id="MF_MEDIA_ENGINE_OPM_FAILED_VM"></span><span id="mf_media_engine_opm_failed_vm"></span>**MF \_ MEDIA \_ ENGINE \_ OPM \_ FAILED \_ VM**
 </dt> <dd>
 
-Error de OPM porque se está ejecutando en una máquina virtual (VM).
+Error de OPM porque se ejecuta en una máquina virtual (VM).
 
 </dd> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_FAILED_BDA"></span><span id="mf_media_engine_opm_failed_bda"></span>**\_ \_ \_ \_ se produjo un error de OPM \_ BDA del motor multimedia MF**
+<span id="MF_MEDIA_ENGINE_OPM_FAILED_BDA"></span><span id="mf_media_engine_opm_failed_bda"></span>**MF \_ MEDIA \_ ENGINE \_ OPM \_ FAILED \_ BDA**
 </dt> <dd>
 
-No se pudo usar OPM porque no hay ningún controlador de gráficos y el sistema usa el adaptador de pantalla básico (BDA).
+Error de OPM porque no hay ningún controlador de gráficos y el sistema usa el adaptador de pantalla básico (BDA).
 
 </dd> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_FAILED_UNSIGNED_DRIVER"></span><span id="mf_media_engine_opm_failed_unsigned_driver"></span>**\_ \_ \_ \_ no se pudo iniciar el \_ controlador no firmado de OPM del motor \_ de multimedia MF**
+<span id="MF_MEDIA_ENGINE_OPM_FAILED_UNSIGNED_DRIVER"></span><span id="mf_media_engine_opm_failed_unsigned_driver"></span>**MF \_ MEDIA \_ ENGINE \_ OPM \_ FAILED \_ UNSIGNED \_ DRIVER**
 </dt> <dd>
 
-No se pudo ejecutar OPM porque el controlador de gráficos no está firmado por PE, revirtiendo a WARP.
+Error de OPM porque el controlador de gráficos no está firmado por PE y vuelve a WARP.
 
 </dd> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_FAILED"></span><span id="mf_media_engine_opm_failed"></span>**\_error de \_ OPM del motor multimedia \_ MF \_**
+<span id="MF_MEDIA_ENGINE_OPM_FAILED"></span><span id="mf_media_engine_opm_failed"></span>**MF \_ MEDIA \_ ENGINE \_ OPM \_ FAILED**
 </dt> <dd>
 
-No se pudo ejecutar OPM por otras razones.
+Error de OPM por otros motivos.
 
 </dd> </dl>
 
@@ -92,9 +92,9 @@ No se pudo ejecutar OPM por otras razones.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -102,7 +102,7 @@ No se pudo ejecutar OPM por otras razones.
 
 <dl> <dt>
 
-[Enumeraciones de Media Foundation](media-foundation-enumerations.md)
+[Media Foundation enumeraciones](media-foundation-enumerations.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: DurableCommitCallback. end (método)'
-title: Método DurableCommitCallback. end (Microsoft. ISAM. esent. Interop. Windows8)
+description: Más información sobre el método DurableCommitCallback.End
+title: Método DurableCommitCallback.End (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'End method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallback.End
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.durablecommitcallback.end(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d9f8286e49157a177aa83e6106fb45e5d1819e52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44b6639a14fbb843f9634a65686a111213e6cb0a6678677b710d30a011900b5e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066775"
 ---
-# <a name="durablecommitcallbackend-method"></a>DurableCommitCallback. end (método)
+# <a name="durablecommitcallbackend-method"></a>Método DurableCommitCallback.End
 
 Finaliza la sesión de confirmación duradera.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ instance.End()
 public void End()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase DurableCommitCallback](./durablecommitcallback-class.md)
+[DurableCommitCallback (clase)](./durablecommitcallback-class.md)
 
-[Miembros de DurableCommitCallback](./durablecommitcallback-members.md)
+[Miembros durableCommitCallback](./durablecommitcallback-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -1,11 +1,11 @@
 ---
 title: Atributo EFSPolicy
-description: La Directiva de Sistema de cifrado de archivos.
+description: Directiva de Sistema de cifrado de archivos.
 ms.assetid: e5d5e0f8-5bce-4ada-a2ec-734532a968e9
 ms.tgt_platform: multiple
 keywords:
-- EFSPolicy esquema de AD de atributos
-- eFSPolicy esquema de AD de atributos
+- Esquema de AD del atributo EFSPolicy
+- Esquema de AD del atributo eFSPolicy
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b00e1b589567f945861fe34055a8aa3f0be3e5bb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ee6ae775e74ffd72009d9ac45e9c8926a37186362533cdb478ffb11f694d0ca0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054175"
 ---
 # <a name="efspolicy-attribute"></a>Atributo EFSPolicy
 
-La Directiva de Sistema de cifrado de archivos.
+Directiva de Sistema de cifrado de archivos.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | EFSPolicy                                             |
-| Nombre para mostrar de LDAP | eFSPolicy                                             |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | eFSPolicy                                             |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.268                                |
-| System-ID-GUID    | 8e4eb2ec-4712-11d0-a1a0-00c04fd930c9                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 8e4eb2ec-4712-11d0-a1a0-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ La Directiva de Sistema de cifrado de archivos.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                              |
+| Id. de vínculo                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
-| System-Only            | False                                                                                           |
-| Tiene un único valor       | False                                                                                           |
-| Está indexado             | False                                                                                           |
-| En el catálogo global      | False                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                    |
+| System-Only            | Falso                                                                                           |
+| Es de un solo valor       | Falso                                                                                           |
+| Está indexado             | Falso                                                                                           |
+| En el catálogo global      | Falso                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ La Directiva de Sistema de cifrado de archivos.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                              |
+| Id. de vínculo                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
-| System-Only            | False                                                                                           |
-| Tiene un único valor       | False                                                                                           |
-| Está indexado             | False                                                                                           |
-| En el catálogo global      | False                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                    |
+| System-Only            | Falso                                                                                           |
+| Es de un solo valor       | Falso                                                                                           |
+| Está indexado             | Falso                                                                                           |
+| En el catálogo global      | Falso                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ La Directiva de Sistema de cifrado de archivos.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                              |
+| Id. de vínculo                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
-| System-Only            | False                                                                                           |
-| Tiene un único valor       | False                                                                                           |
-| Está indexado             | False                                                                                           |
-| En el catálogo global      | False                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                    |
+| System-Only            | Falso                                                                                           |
+| Es de un solo valor       | Falso                                                                                           |
+| Está indexado             | Falso                                                                                           |
+| En el catálogo global      | Falso                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ La Directiva de Sistema de cifrado de archivos.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                              |
+| Id. de vínculo                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
-| System-Only            | False                                                                                           |
-| Tiene un único valor       | False                                                                                           |
-| Está indexado             | False                                                                                           |
-| En el catálogo global      | False                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                    |
+| System-Only            | Falso                                                                                           |
+| Es de un solo valor       | Falso                                                                                           |
+| Está indexado             | Falso                                                                                           |
+| En el catálogo global      | Falso                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La Directiva de Sistema de cifrado de archivos.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                              |
+| Id. de vínculo                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
-| System-Only            | False                                                                                           |
-| Tiene un único valor       | False                                                                                           |
-| Está indexado             | False                                                                                           |
-| En el catálogo global      | False                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                    |
+| System-Only            | Falso                                                                                           |
+| Es de un solo valor       | Falso                                                                                           |
+| Está indexado             | Falso                                                                                           |
+| En el catálogo global      | Falso                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La Directiva de Sistema de cifrado de archivos.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                              |
+| Id. de vínculo                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
-| System-Only            | False                                                                                           |
-| Tiene un único valor       | False                                                                                           |
-| Está indexado             | False                                                                                           |
-| En el catálogo global      | False                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                    |
+| System-Only            | Falso                                                                                           |
+| Es de un solo valor       | Falso                                                                                           |
+| Está indexado             | Falso                                                                                           |
+| En el catálogo global      | Falso                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

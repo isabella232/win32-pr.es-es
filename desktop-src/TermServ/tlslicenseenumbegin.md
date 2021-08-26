@@ -1,10 +1,10 @@
 ---
-title: TLSLicenseEnumBegin función)
-description: Comienza la enumeración de licencias emitidas por el servidor de licencias de Escritorio remoto basado en criterios de búsqueda.
+title: Función TLSLicenseEnumBegin
+description: Comienza la enumeración de licencias emitidas por el Escritorio remoto de licencias en función de los criterios de búsqueda.
 ms.assetid: ec575632-b828-49c0-b326-1ab420381875
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la función TLSLicenseEnumBegin
+- Función TLSLicenseEnumBegin Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95913337de968d0b30780b5898b7f204d947dd4b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 620f6487bb516a76ac5cb7f77da9983178933c24ac03151bd9a4c8455f694ec9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986885"
 ---
-# <a name="tlslicenseenumbegin-function"></a>TLSLicenseEnumBegin función)
+# <a name="tlslicenseenumbegin-function"></a>Función TLSLicenseEnumBegin
 
-Comienza la enumeración de licencias emitidas por el servidor de licencias de Escritorio remoto basado en criterios de búsqueda.
+Comienza la enumeración de licencias emitidas por el Escritorio remoto de licencias en función de los criterios de búsqueda.
 
 > [!Note]  
-> Esta función no tiene asociado ningún archivo de encabezado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
+> Esta función no tiene ningún archivo de encabezado asociado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
 
  
 
@@ -50,23 +50,23 @@ DWORD WINAPI TLSLicenseEnumBegin(
 
 <dl> <dt>
 
-*hHandle* \[ de\]
+*hHandle* \[ En\]
 </dt> <dd>
 
-Identificador de un servidor de licencias de Escritorio remoto. Especifique un identificador abierto por la función [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Identificador de un Escritorio remoto de licencias. Especifique un identificador abierto por la [**función TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 </dd> <dt>
 
-*dwSearchParm* \[ de\]
+*dwSearchParm* \[ En\]
 </dt> <dd>
 
-Especifica los criterios de búsqueda. El parámetro puede ser uno o una combinación de los valores que se describen en la lista siguiente. El parámetro especifica el tipo de paquete de claves y el paquete de claves que se va a buscar.
+Especifica los criterios de búsqueda. El parámetro puede ser uno o una combinación de los valores que se describen en la lista siguiente. El parámetro especifica el tipo de key pack y el paquete de claves que se va a buscar.
 
 <dt>
 
 <span id="LSLICENSE_SEARCH_LICENSEID"></span><span id="lslicense_search_licenseid"></span>
 
-<span id="LSLICENSE_SEARCH_LICENSEID"></span><span id="lslicense_search_licenseid"></span>**LSLICENSE \_ BUSCAR \_ LICENSEID** (0x00000001)
+<span id="LSLICENSE_SEARCH_LICENSEID"></span><span id="lslicense_search_licenseid"></span>**LSLICENSE \_ SEARCH \_ LICENSEID** (0x00000001)
 
 
 </dt> <dd>
@@ -77,7 +77,7 @@ Busque por identificador de licencia.
 
 <span id="LSLICENSE_SEARCH_KEYPACKID"></span><span id="lslicense_search_keypackid"></span>
 
-<span id="LSLICENSE_SEARCH_KEYPACKID"></span><span id="lslicense_search_keypackid"></span>**LSLICENSE \_ BUSCAR \_ KEYPACKID** (0x00000002)
+<span id="LSLICENSE_SEARCH_KEYPACKID"></span><span id="lslicense_search_keypackid"></span>**LSLICENSE \_ SEARCH \_ KEYPACKID** (0x00000002)
 
 
 </dt> <dd>
@@ -88,18 +88,18 @@ Busque por identificador de paquete de claves.
 
 <span id="LSLICENSE_SEARCH_MACHINENAME"></span><span id="lslicense_search_machinename"></span>
 
-<span id="LSLICENSE_SEARCH_MACHINENAME"></span><span id="lslicense_search_machinename"></span>**LSLICENSE \_ BUSCAR \_ MACHINENAME** (0x00000008)
+<span id="LSLICENSE_SEARCH_MACHINENAME"></span><span id="lslicense_search_machinename"></span>**LSLICENSE \_ SEARCH \_ MACHINENAME** (0x00000008)
 
 
 </dt> <dd>
 
-Busque por nombre de equipo.
+Busque por nombre de máquina.
 
 </dd> <dt>
 
 <span id="LSLICENSE_SEARCH_USERNAME"></span><span id="lslicense_search_username"></span>
 
-<span id="LSLICENSE_SEARCH_USERNAME"></span><span id="lslicense_search_username"></span>**LSLICENSE \_ BUSCAR el \_ nombre de usuario** (0x00000010)
+<span id="LSLICENSE_SEARCH_USERNAME"></span><span id="lslicense_search_username"></span>**LSLICENSE \_ SEARCH \_ USERNAME** (nombre de usuario) (0x00000010)
 
 
 </dt> <dd>
@@ -110,18 +110,18 @@ Busque por nombre de usuario.
 
 <span id="LSLICENSE_SEARCH_ISSUEDATE"></span><span id="lslicense_search_issuedate"></span>
 
-<span id="LSLICENSE_SEARCH_ISSUEDATE"></span><span id="lslicense_search_issuedate"></span>**LSLICENSE \_ BUSCAR \_ ISSUEDATE** (0x00000080)
+<span id="LSLICENSE_SEARCH_ISSUEDATE"></span><span id="lslicense_search_issuedate"></span>**LSLICENSE \_ SEARCH \_ ISSUEDATE** (0x00000080)
 
 
 </dt> <dd>
 
-Busque por fecha del problema.
+Buscar por fecha de problema.
 
 </dd> <dt>
 
 <span id="LSLICENSE_SEARCH_EXPIREDATE"></span><span id="lslicense_search_expiredate"></span>
 
-<span id="LSLICENSE_SEARCH_EXPIREDATE"></span><span id="lslicense_search_expiredate"></span>**LSLICENSE \_ BUSCAR \_ EXPIREDATE** (0x00000100)
+<span id="LSLICENSE_SEARCH_EXPIREDATE"></span><span id="lslicense_search_expiredate"></span>**LSLICENSE \_ SEARCH \_ EXPIREDATE** (0x00000100)
 
 
 </dt> <dd>
@@ -137,58 +137,58 @@ Buscar por fecha de expiración.
 
 </dt> <dd>
 
-Busque por número de licencias.
+Buscar por número de licencias.
 
 </dd> <dt>
 
 <span id="LSLICENSE_SEARCH___ENTRY_STATUS"></span><span id="lslicense_search___entry_status"></span>
 
-<span id="LSLICENSE_SEARCH___ENTRY_STATUS"></span><span id="lslicense_search___entry_status"></span>**LSLICENSE \_ \_ \_ Estado** de la entrada de búsqueda (0x20000000)
+<span id="LSLICENSE_SEARCH___ENTRY_STATUS"></span><span id="lslicense_search___entry_status"></span>**LSLICENSE \_ ESTADO \_ DE ENTRADA DE \_ BÚSQUEDA** (0x20000000)
 
 
 </dt> <dd>
 
-Busque por estado de entrada.
+Buscar por estado de entrada.
 
 </dd> <dt>
 
 <span id="LSLICENSE_EXSEARCH_LICENSESTATUS"></span><span id="lslicense_exsearch_licensestatus"></span>
 
-<span id="LSLICENSE_EXSEARCH_LICENSESTATUS"></span><span id="lslicense_exsearch_licensestatus"></span>**LSLICENSE \_ \_Licencia de búsqueda** (0x00100000)
+<span id="LSLICENSE_EXSEARCH_LICENSESTATUS"></span><span id="lslicense_exsearch_licensestatus"></span>**LSLICENSE \_ EXSEARCH \_ LICENSESTATUS** (0x00100000)
 
 
 </dt> <dd>
 
-Busque por estado de licencia.
+Buscar por estado de licencia.
 
 </dd> <dt>
 
 <span id="LSKEYPACK_SEARCH_ALL"></span><span id="lskeypack_search_all"></span>
 
-<span id="LSKEYPACK_SEARCH_ALL"></span><span id="lskeypack_search_all"></span>**LSKEYPACK \_ BUSCAR \_ todo** (0xFFFFFFFF)
+<span id="LSKEYPACK_SEARCH_ALL"></span><span id="lskeypack_search_all"></span>**LSKEYPACK \_ BUSCAR \_ TODO** (0xFFFFFFFF)
 
 
 </dt> <dd>
 
-Buscar todas las licencias.
+Busque todas las licencias.
 
 </dd> </dl> </dd> <dt>
 
-*bMatchAll* \[ de\]
+*bMatchAll* \[ En\]
 </dt> <dd>
 
-Especifica si se deben buscar coincidencias con todos los valores de búsqueda.
+Especifica si se deben coincidir todos los valores de búsqueda.
 
 </dd> <dt>
 
-*lpSearchParm* \[ de\]
+*lpSearchParm* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**LSLicense**](lslicense.md) que especifica los parámetros de búsqueda que se van a buscar.
+Puntero a una [**estructura LSLicense**](lslicense.md) que especifica los parámetros de búsqueda que se buscarán.
 
 </dd> <dt>
 
-*pdwErrCode* \[ enuncia\]
+*pdwErrCode* \[ out\]
 </dt> <dd>
 
 Puntero a una variable que recibe uno de los siguientes códigos de error en la devolución.
@@ -197,7 +197,7 @@ Puntero a una variable que recibe uno de los siguientes códigos de error en la 
 
 <span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>
 
-<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ correcto** (0)
+<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ SUCCESS** (0)
 
 
 </dt> <dd>
@@ -208,7 +208,7 @@ La llamada se realiza correctamente.
 
 <span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>
 
-<span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>**LSERVER \_ E \_ \_ error interno** (5001)
+<span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>**LSERVER \_ E \_ ERROR \_ INTERNO** (5001)
 
 
 </dt> <dd>
@@ -219,18 +219,18 @@ Error interno en el servidor de licencias.
 
 <span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>
 
-<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ E \_ \_ secuencia no válida** (5006)
+<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ E \_ SECUENCIA NO \_ VÁLIDA** (5006)
 
 
 </dt> <dd>
 
-La secuencia de llamada no era válida. Lo más probable es que una enumeración anterior no haya finalizado.
+La secuencia de llamada no era válida. Lo más probable es que no haya finalizado una enumeración anterior.
 
 </dd> <dt>
 
 <span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>
 
-<span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>**LSERVER \_ E \_ servidor \_ ocupado** (5007)
+<span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>**LSERVER \_ E \_ SERVER \_ BUSY** (5007)
 
 
 </dt> <dd>
@@ -246,13 +246,13 @@ El servidor de licencias está demasiado ocupado para procesar la solicitud.
 
 </dt> <dd>
 
-No se puede procesar la solicitud porque no hay memoria suficiente.
+No se puede procesar la solicitud debido a una memoria insuficiente.
 
 </dd> <dt>
 
 <span id="LSERVER_E_INVALID_DATA"></span><span id="lserver_e_invalid_data"></span>
 
-<span id="LSERVER_E_INVALID_DATA"></span><span id="lserver_e_invalid_data"></span>**LSERVER \_ E \_ \_ datos no válidos** (5009)
+<span id="LSERVER_E_INVALID_DATA"></span><span id="lserver_e_invalid_data"></span>**LSERVER \_ E \_ DATOS NO \_ VÁLIDOS** (5009)
 
 
 </dt> <dd>
@@ -263,18 +263,18 @@ Los datos del parámetro de búsqueda no son válidos.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve los siguientes posibles valores devueltos.
+Esta función devuelve los siguientes valores devueltos posibles.
 
 <dl> <dt>
 
-**RPC \_ S \_ correcto**
+**RPC \_ S \_ OK**
 </dt> <dd>
 
-La llamada se realizó correctamente. Compruebe el valor del parámetro *pdwErrCode* para obtener el código de retorno de la llamada.
+La llamada se ha realiza correctamente. Compruebe el valor del parámetro *pdwErrCode* para obtener el código de retorno de la llamada.
 
 </dd> <dt>
 
-**\_ \_ argumento no válido de RPC S \_**
+**RPC \_ S \_ INVALID \_ ARG**
 </dt> <dd>
 
 El argumento no era válido.

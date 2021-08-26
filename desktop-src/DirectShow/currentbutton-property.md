@@ -4,12 +4,12 @@ ms.assetid: bd9720bc-068a-4f29-aa2d-1c6b550f789c
 title: Propiedad CurrentButton
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c12def9f9a73c9538781bde6940b03bfb376fcc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d85b246b77283a2632f2feac4c2b374075ef9d9a205bcb71813856b9847df21b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104359971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053145"
 ---
 # <a name="currentbutton-property"></a>Propiedad CurrentButton
 
@@ -28,9 +28,9 @@ La `CurrentButton` propiedad recupera el número del botón de menú seleccionad
 
 Devuelve un valor entero que representa el botón.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de solo lectura y no tiene ningún valor predeterminado. Use este método al implementar el control de mouse personalizado después de establecer [**DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) en **true**.
+Esta propiedad es de solo lectura sin ningún valor predeterminado. Use este método al implementar el control personalizado del mouse después de establecer [**DisableAutoMouseProcessing en**](disableautomouseprocessing-property.md) **true.**
 
 ## <a name="see-also"></a>Vea también
 
@@ -39,7 +39,7 @@ Esta propiedad es de solo lectura y no tiene ningún valor predeterminado. Use e
 [**ActivateButton**](activatebutton-method.md)
 </dt> <dt>
 
-[**ButtonsAvailable**](buttonsavailable-property.md)
+[**Botones Disponibles**](buttonsavailable-property.md)
 </dt> <dt>
 
 [**GetButtonAtPosition**](getbuttonatposition-method.md)

@@ -1,7 +1,7 @@
 ---
-description: El método Seek cambia el puntero de búsqueda a una nueva ubicación con respecto al principio del búfer, al final del búfer o al puntero de búsqueda actual.
+description: El método Seek cambia el puntero de búsqueda a una nueva ubicación relativa al principio del búfer, al final del búfer o al puntero de búsqueda actual.
 ms.assetid: 3541f3dd-7b92-4f72-89b7-4e04e007aaa3
-title: 'IByteBuffer:: Seek (método) (Scardssp. h)'
+title: Método IByteBuffer::Seek (Scardssp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: eacfedc3ed23a7a4cf1f60e6c6ac21936c3c94f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70c4af327fad5014c5d6dec80dd29441f51a03639a108249991c83f53e5d2be8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016255"
 ---
-# <a name="ibytebufferseek-method"></a>IByteBuffer:: Seek (método)
+# <a name="ibytebufferseek-method"></a>IByteBuffer::Seek (método)
 
-\[El método **Seek** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La interfaz [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) proporciona una funcionalidad similar.\]
+\[El **método Seek** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La [**interfaz IStream**](/windows/desktop/api/objidl/nn-objidl-istream) proporciona una funcionalidad similar.\]
 
-El método **Seek** cambia el puntero de búsqueda a una nueva ubicación con respecto al principio del búfer, al final del búfer o al puntero de búsqueda actual.
+El **método Seek** cambia el puntero de búsqueda a una nueva ubicación relativa al principio del búfer, al final del búfer o al puntero de búsqueda actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ HRESULT Seek(
 
 <dl> <dt>
 
-*dlibMove* \[ de\]
+*dlibMove* \[ En\]
 </dt> <dd>
 
-Desplazamiento que se va a agregar a la ubicación indicada por *dwOrigin*. Si *dwOrigin* es \_ el conjunto de búsqueda de secuencias \_ , se interpreta como un valor sin signo en lugar de con signo.
+Desplazamiento que se va a agregar a la ubicación indicada por *dwOrigin*. Si *dwOrigin* es STREAM SEEK SET, se interpreta como un valor sin signo en \_ lugar de con \_ signo.
 
 </dd> <dt>
 
-*dwOrigin* \[ de\]
+*dwOrigin* \[ En\]
 </dt> <dd>
 
 Especifica el origen del desplazamiento especificado en *dlibMove*. El origen puede ser uno de los valores de la tabla siguiente.
@@ -59,9 +59,9 @@ Especifica el origen del desplazamiento especificado en *dlibMove*. El origen pu
 
 | Value                                                                                                                                                                | Significado                                                                                                                                                                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="STREAM_SEEK_SET"></span><span id="stream_seek_set"></span><dl> <dt>**\_conjunto de búsqueda de secuencias \_**</dt> </dl> | El nuevo puntero de búsqueda es un desplazamiento relativo al principio de la secuencia. En este caso, el parámetro *dlibMove* es la nueva posición de búsqueda en relación con el principio de la secuencia.<br/> |
-| <span id="STREAM_SEEK_CUR"></span><span id="stream_seek_cur"></span><dl> <dt>**STREAM \_ Seek \_ CUR**</dt> </dl> | El nuevo puntero de búsqueda es un desplazamiento relativo a la ubicación del puntero de búsqueda actual. En este caso, el parámetro *dlibMove* es el desplazamiento con signo de la posición de búsqueda actual.<br/>  |
-| <span id="STREAM_SEEK_END"></span><span id="stream_seek_end"></span><dl> <dt>**\_final de búsqueda de flujo \_**</dt> </dl> | El nuevo puntero de búsqueda es un desplazamiento relativo al final de la secuencia. En este caso, el parámetro *dlibMove* es la nueva posición de búsqueda en relación con el final de la secuencia.<br/>             |
+| <span id="STREAM_SEEK_SET"></span><span id="stream_seek_set"></span><dl> <dt>**CONJUNTO \_ DE STREAM SEEK \_**</dt> </dl> | El nuevo puntero de búsqueda es un desplazamiento relativo al principio de la secuencia. En este caso, el *parámetro dlibMove* es la nueva posición de búsqueda relativa al principio de la secuencia.<br/> |
+| <span id="STREAM_SEEK_CUR"></span><span id="stream_seek_cur"></span><dl> <dt>**STREAM \_ SEEK \_ CUR**</dt> </dl> | El nuevo puntero de búsqueda es un desplazamiento relativo a la ubicación actual del puntero de búsqueda. En este caso, el *parámetro dlibMove* es el desplazamiento firmado de la posición de búsqueda actual.<br/>  |
+| <span id="STREAM_SEEK_END"></span><span id="stream_seek_end"></span><dl> <dt>**STREAM \_ SEEK \_ END**</dt> </dl> | El nuevo puntero de búsqueda es un desplazamiento relativo al final de la secuencia. En este caso, el *parámetro dlibMove* es la nueva posición de búsqueda con respecto al final de la secuencia.<br/>             |
 
 
 
@@ -69,26 +69,26 @@ Especifica el origen del desplazamiento especificado en *dlibMove*. El origen pu
 
 </dd> <dt>
 
-*plibNewPosition* \[ enuncia\]
+*plibNewPosition* \[ out\]
 </dt> <dd>
 
-Puntero a la ubicación donde este método escribe el valor del nuevo puntero de búsqueda desde el principio de la secuencia. Puede establecer este puntero en **null** para indicar que no está interesado en este valor. En este caso, este método no proporciona el nuevo puntero de búsqueda.
+Puntero a la ubicación donde este método escribe el valor del nuevo puntero de búsqueda desde el principio de la secuencia. Puede establecer este puntero en **NULL** para indicar que no está interesado en este valor. En este caso, este método no proporciona el nuevo puntero de búsqueda.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es **HRESULT**. Un valor de S \_ correcto indica que la llamada se realizó correctamente.
+El valor devuelto es **un HRESULT.** Un valor de S \_ OK indica que la llamada se ha realizado correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método de **búsqueda** cambia el puntero de búsqueda, por lo que las operaciones de lectura y escritura posteriores pueden tener lugar en una ubicación diferente en el objeto de secuencia. Es un error buscar antes del principio de la secuencia. No obstante, no se trata de un error para buscar más allá del final de la secuencia. Buscar más allá del final de la secuencia es útil para las operaciones de escritura posteriores, ya que la secuencia en ese momento se extenderá a la posición de búsqueda inmediatamente antes de que se realice la operación de escritura.
+El **método Seek** cambia el puntero de búsqueda para que las operaciones de lectura y escritura posteriores puedan tener lugar en una ubicación diferente en el objeto de secuencia. Es un error buscar antes del principio de la secuencia. Sin embargo, no es un error buscar más allá del final de la secuencia. Buscar más allá del final de la secuencia es útil para las operaciones de escritura posteriores, ya que la secuencia se extenderá en ese momento a la posición de búsqueda inmediatamente antes de que se haga la operación de escritura.
 
-También puede usar este método para obtener el valor actual del puntero de búsqueda llamando a este método con el parámetro *dwOrigin* establecido en Stream \_ Seek \_ CUR y el parámetro *dlibMove* establecido en cero para que no se cambie el puntero de búsqueda. El puntero de búsqueda actual se devuelve en el parámetro *plibNewPosition* .
+También puede usar este método para obtener el valor actual del puntero seek llamando a este método con el parámetro *dwOrigin* establecido en STREAM SEEK CUR y el parámetro \_ \_ *dlibMove* establecido en cero para que el puntero seek no cambie. El puntero de búsqueda actual se devuelve en el *parámetro plibNewPosition.*
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo colocar el puntero de búsqueda a una nueva ubicación.
+En el ejemplo siguiente se muestra cómo colocar el puntero de búsqueda en una nueva ubicación.
 
 
 ```C++
@@ -111,12 +111,12 @@ else
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Scardssp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Scardssp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IByteBuffer se define como E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |
 

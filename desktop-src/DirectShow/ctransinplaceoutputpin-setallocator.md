@@ -1,7 +1,7 @@
 ---
 description: El método SetAllocator especifica un asignador para la conexión.
 ms.assetid: 6b8e80f9-3b0d-498f-b1b0-bae491c25e81
-title: Método CTransInPlaceOutputPin. SetAllocator (TRANSip. h)
+title: Método CTransInPlaceOutputPin.SetAllocator (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: aacc2680bebcdd7de74f6f357380066a8fd37f1f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 568a95df0d0cee39245c268fa1c49505531ddc84e1fd1542a1eae170e5c7d0da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053185"
 ---
-# <a name="ctransinplaceoutputpinsetallocator-method"></a>CTransInPlaceOutputPin. SetAllocator, método
+# <a name="ctransinplaceoutputpinsetallocator-method"></a>CTransInPlaceOutputPin.SetAllocator (método)
 
 El `SetAllocator` método especifica un asignador para la conexión.
 
@@ -45,7 +45,7 @@ void SetAllocator(
 *pAllocator* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) del asignador.
+Puntero a la interfaz [**IMemAllocator del asignador.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator)
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Puntero a la interfaz [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El PIN de salida de este filtro nunca proporciona un asignador. Este método especifica el asignador para el PIN de salida. Establece el valor de la variable miembro [**CBaseOutputPin:: m \_ pAllocator**](cbaseoutputpin-m-pallocator.md) .
+El pin de salida de este filtro nunca proporciona un asignador. Este método especifica el asignador para el pin de salida. Establece el valor de la variable [**miembro CBaseOutputPin::m \_ pAllocator.**](cbaseoutputpin-m-pallocator.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ El PIN de salida de este filtro nunca proporciona un asignador. Este método esp
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ El PIN de salida de este filtro nunca proporciona un asignador. Este método esp
 
 <dl> <dt>
 
-[**Clase CTransInPlaceOutputPin**](ctransinplaceoutputpin.md)
+[**CTransInPlaceOutputPin (clase)**](ctransinplaceoutputpin.md)
 </dt> </dl>
 
  

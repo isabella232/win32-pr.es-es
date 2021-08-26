@@ -1,21 +1,21 @@
 ---
-title: Constantes de edición enriquecidas
-description: Constantes de edición enriquecidas
+title: Constantes de edición enriquecciones
+description: Constantes de edición enriquecciones
 ms.assetid: 4e5c1e91-d949-4876-9b9f-1277f320ee64
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 913b040538687eebb1fcbf9034362c0444aab755
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4a034ee9c4f331d2fede150fd577e7d634659b8dd7b20cd1ebd24c4169c3741f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119970405"
 ---
-# <a name="rich-edit-constants"></a>Constantes de edición enriquecidas
+# <a name="rich-edit-constants"></a>Constantes de edición enriquecciones
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Marcas de máscara de eventos de control de edición enriquecida**](rich-edit-control-event-mask-flags.md)
+-   [**Marcas de máscara de eventos del control Rich Edit**](rich-edit-control-event-mask-flags.md)
 -   [**Estilos de control Rich Edit**](rich-edit-control-styles.md)
 
  

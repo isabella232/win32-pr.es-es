@@ -1,7 +1,7 @@
 ---
-description: Señala la hora actual, en \_ formato de código de tiempo HMSF de DVD \_ , con respecto al inicio del título. Este evento se desencadena al principio de cada VOBU, que se produce cada 0,4 a 1,0 segundos.
+description: Indica la hora actual, en formato DVD \_ HMSF \_ TIMECODE, con respecto al inicio del título. Este evento se desencadena al principio de cada VOBU, que se produce cada 0,4 a 1,0 segundos.
 ms.assetid: 7c81a09a-21f3-49b2-b90a-7cbc9c815bad
-title: EC_DVD_CURRENT_HMSF_TIME (Dvdevcode. h)
+title: EC_DVD_CURRENT_HMSF_TIME (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 36306b95682e62ffebf8fb819dcc4b7c5185493c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 52a6eb077599b4fe6dfd89267974cb71c0c5a58a65d6c52307d77eb3e98201d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965815"
 ---
-# <a name="ec_dvd_current_hmsf_time"></a>\_hora de \_ \_ HMSF actual del DVD \_ de EC
+# <a name="ec_dvd_current_hmsf_time"></a>EC \_ DVD \_ CURRENT \_ HMSF \_ TIME
 
-Señala la hora actual, en formato de [**\_ código de \_ tiempo HMSF de DVD**](/windows/win32/api/strmif/ns-strmif-dvd_hmsf_timecode) , con respecto al inicio del título. Este evento se desencadena al principio de cada VOBU, que se produce cada 0,4 a 1,0 segundos.
+Indica la hora actual, en formato [**DVD \_ HMSF \_ TIMECODE,**](/windows/win32/api/strmif/ns-strmif-dvd_hmsf_timecode) con respecto al inicio del título. Este evento se desencadena al principio de cada VOBU, que se produce cada 0,4 a 1,0 segundos.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,22 +31,22 @@ Señala la hora actual, en formato de [**\_ código de \_ tiempo HMSF de DVD**](
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valor ULONG que contiene la estructura de \_ código de tiempo HMSF de DVD \_ . Asigne lParam1 a una variable ULONG y, a continuación, convierta esa variable en un \_ \_ código de tiempo HMSF de DVD para tener acceso a sus valores.
+Valor ULONG que contiene la estructura \_ TIMECODE de DVD HMSF. \_ Asigne lParam1 a una variable ULONG y, a continuación, la convierte en un CÓDIGO DE TIEMPO HMSF de DVD para acceder a \_ \_ sus valores.
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-Valor ULONG que contiene una Unión de [**\_ \_ marcas de código de tiempo de DVD**](/windows/win32/api/strmif/ne-strmif-dvd_timecode_flags).
+Valor ULONG que contiene una unión de [**MARCAS DE CÓDIGO DE TIEMPO \_ \_ de DVD.**](/windows/win32/api/strmif/ne-strmif-dvd_timecode_flags)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El formato de código de tiempo de HMSF de DVD \_ \_ está pensado para reemplazar el formato BCD anterior que se devuelve en \_ \_ los eventos de hora actual de DVD de EC \_ . Los códigos de tiempo de HMSF son más fáciles de usar. Para que el navegador envíe \_ eventos de \_ \_ \_ tiempo de HMSF actual de DVD de EC en lugar de \_ eventos de hora actual de DVD de EC \_ \_ , una aplicación debe llamar a `IDvdControl2::SetOption(DVD_HMSF_TimeCodeEvents, TRUE)` . Cuando se establece esta marca, el navegador también espera que todos los parámetros de tiempo de los métodos [**IDvdControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) y [**IDvdInfo2**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2) se pasen como códigos de tiempo de HMSF de DVD \_ \_ .
+El formato TIMECODE de DVD HMSF está pensado para reemplazar el formato BCD antiguo que se devuelve en los eventos \_ \_ EC DVD CURRENT \_ \_ \_ TIME. Los códigos de tiempo de HMSF son más fáciles de trabajar. Para que el navegador envíe eventos EC DVD CURRENT HMSF TIME en lugar de \_ eventos EC DVD CURRENT \_ \_ \_ \_ \_ \_ TIME, una aplicación debe llamar a `IDvdControl2::SetOption(DVD_HMSF_TimeCodeEvents, TRUE)` . Cuando se establece esta marca, el navegador también esperará que todos los parámetros de tiempo de los métodos [**IDvdControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) e [**IDvdInfo2**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2) se pasen como \_ \_ TIMECOD de DVD HMSF.
 
-Este evento se desencadena en los dominios de título.
+Este evento se genera en los dominios de título.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Este evento se desencadena en los dominios de título.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

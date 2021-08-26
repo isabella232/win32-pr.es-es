@@ -1,7 +1,7 @@
 ---
-description: Marcas que indican el método que el rasterizador utiliza para crear una imagen en una superficie.
+description: Marcas que indican el método que usa el rasterizador para crear una imagen en una superficie.
 ms.assetid: 55cf790e-ebe9-4791-a2be-a90fc76bae57
-title: Enumeración D3DSCANLINEORDERING (D3d9types. h)
+title: Enumeración D3DSCANLINEORDERING (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 2eaed36577f881266c12b0a927cfcdc2494f0d57
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e5265387973c3c1605ac0022d88df3afa676dda614d7cc238e29a1ddd4a73f5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987235"
 ---
-# <a name="d3dscanlineordering-enumeration"></a>Enumeración D3DSCANLINEORDERING
+# <a name="d3dscanlineordering-enumeration"></a>D3DSCANLINEORDERING (enumeración)
 
-Marcas que indican el método que el rasterizador utiliza para crear una imagen en una superficie.
+Marcas que indican el método que usa el rasterizador para crear una imagen en una superficie.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -40,23 +40,23 @@ typedef enum D3DSCANLINEORDERING {
 
 <dl> <dt>
 
-<span id="D3DSCANLINEORDERING_PROGRESSIVE"></span><span id="d3dscanlineordering_progressive"></span>**\_Progresiva D3DSCANLINEORDERING**
+<span id="D3DSCANLINEORDERING_PROGRESSIVE"></span><span id="d3dscanlineordering_progressive"></span>**D3DSCANLINEORDERING \_ PROGRESSIVE**
 </dt> <dd>
 
-La imagen se crea desde la primera Scanline hasta la última sin omitir ninguna.
+La imagen se crea desde la primera línea de exploración hasta la última sin omitir ninguna.
 
 </dd> <dt>
 
-<span id="D3DSCANLINEORDERING_INTERLACED"></span><span id="d3dscanlineordering_interlaced"></span>**D3DSCANLINEORDERING \_ entrelazado**
+<span id="D3DSCANLINEORDERING_INTERLACED"></span><span id="d3dscanlineordering_interlaced"></span>**D3DSCANLINEORDERING \_ ENTRELAZADO**
 </dt> <dd>
 
-La imagen se crea mediante el método entrelazado, en el que las líneas impares se dibujan en las pasadas con números impares y las líneas pares se dibujan en pasos con número par.
+La imagen se crea mediante el método entrelazado en el que las líneas con números impares se dibujan en pases impares e incluso las líneas se dibujan en pases con números pares.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración se usa como miembro en [**D3DDISPLAYMODEFILTER**](d3ddisplaymodefilter.md) y [**D3DDISPLAYMODEEX**](d3ddisplaymodeex.md).
+Esta enumeración se usa como miembro en [**D3DDISPLAYMODEFILTER**](d3ddisplaymodefilter.md) y [**D3DDISPLAYMODEEX.**](d3ddisplaymodeex.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Esta enumeración se usa como miembro en [**D3DDISPLAYMODEFILTER**](d3ddisplaymo
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

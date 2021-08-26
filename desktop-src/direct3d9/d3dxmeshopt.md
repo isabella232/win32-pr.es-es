@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: db7c2a2411d1c846c7369fc1d925a8e5569df3b1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d4d26538832a698909ace59da42b13ae51aef93d2d4d622b687f324a62d8361e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986495"
 ---
-# <a name="d3dxmeshopt-enumeration"></a>Enumeración D3DXMESHOPT
+# <a name="d3dxmeshopt-enumeration"></a>D3DXMESHOPT (enumeración)
 
 Especifica el tipo de optimización de malla que se va a realizar.
 
@@ -99,7 +99,7 @@ Afecta al tamaño de la caché de vértices. El uso de esta marca especifica un 
 
 Las marcas de optimización D3DXMESHOPT \_ STRIPREORDER y D3DXMESHOPT \_ VERTEXCACHE son mutuamente excluyentes.
 
-La marca SHAREVB D3DXMESHOPT \_ se ha quitado de esta enumeración. Use D3DXMESH \_ VB SHARE en su \_ lugar, en [**D3DXMESH**](./d3dxmesh.md).
+La marca SHAREVB D3DXMESHOPT \_ se ha quitado de esta enumeración. Use D3DXMESH \_ VB \_ SHARE en su lugar, en [**D3DXMESH.**](./d3dxmesh.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ La marca SHAREVB D3DXMESHOPT \_ se ha quitado de esta enumeración. Use D3DXMESH
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Suppress (QueryType) (elemento)
-description: Consulta XPath que identifica los eventos que se van a excluir del conjunto de resultados de la consulta.
+title: Elemento Suppress (QueryType)
+description: Consulta XPath que identifica los eventos que se excluirán del conjunto de resultados de la consulta.
 ms.assetid: 41304a3c-bde1-49c3-8cb3-e95fc428bd96
 keywords:
-- Elemento suprimir EventLog
+- Suprimir elemento EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3a1d7fcec98d32167155ebcafc4f13d2a727d59a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2612a98c282627154a9107f2f9f77a3ddb52c191e00dbcb394c8db4d7c796b79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032015"
 ---
-# <a name="suppress-querytype-element"></a>Suppress (QueryType) (elemento)
+# <a name="suppress-querytype-element"></a>Elemento Suppress (QueryType)
 
-Consulta XPath que identifica los eventos que se van a excluir del conjunto de resultados de la consulta.
+Consulta XPath que identifica los eventos que se excluirán del conjunto de resultados de la consulta.
 
 ``` syntax
 <xs:element name="Suppress">
@@ -36,7 +36,7 @@ Consulta XPath que identifica los eventos que se van a excluir del conjunto de r
 </xs:element>
 ```
 
-El elemento **Suppress** se define mediante el tipo complejo [**QueryType**](queryschema-querytype-complextype.md) .
+El tipo complejo [**QueryType**](queryschema-querytype-complextype.md) define el elemento **Suppress.**
 
 ## <a name="attributes"></a>Atributos
 
@@ -44,7 +44,7 @@ El elemento **Suppress** se define mediante el tipo complejo [**QueryType**](que
 
 | Nombre | Tipo   | Descripción                                                                              |
 |------|--------|------------------------------------------------------------------------------------------|
-| Path | anyURI | El nombre del canal o la ruta de acceso al archivo de registro que contiene los eventos.<br/> |
+| Path | anyURI | Nombre del canal o la ruta de acceso al archivo de registro que contiene los eventos.<br/> |
 
 
 
@@ -54,8 +54,8 @@ El elemento **Suppress** se define mediante el tipo complejo [**QueryType**](que
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -66,7 +66,7 @@ El elemento **Suppress** se define mediante el tipo complejo [**QueryType**](que
 **Elemento primario**
 </dt> <dt>
 
-[**Consulta (QueryListType)**](queryschema-query-querylisttype-element.md)
+[**Query (QueryListType)**](queryschema-query-querylisttype-element.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_GETCALLBACKMASK (commctrl. h)
-description: Obtiene la máscara de devolución de llamada para un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la \_ macro GetCallbackMask de ListView.
+title: LVM_GETCALLBACKMASK mensaje (Commctrl.h)
+description: Obtiene la máscara de devolución de llamada para un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView GetCallbackMask.
 ms.assetid: fb05593d-14b9-4e53-acb3-d5ac61e517ec
 keywords:
-- LVM_GETCALLBACKMASK controles de mensajes de Windows
+- LVM_GETCALLBACKMASK controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68438b748f5260bb7cc6e43702442aa4cbe3a84e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 58cbfec76df9418c2bc94e0083928f28e462188383a203237dd03f3f175c74b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920235"
 ---
-# <a name="lvm_getcallbackmask-message"></a>\_Mensaje GETCALLBACKMASK LVM
+# <a name="lvm_getcallbackmask-message"></a>Mensaje \_ GETCALLBACKMASK de LVM
 
-Obtiene la máscara de devolución de llamada para un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ GetCallbackMask de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcallbackmask) .
+Obtiene la máscara de devolución de llamada para un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView GetCallbackMask.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcallbackmask)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,9 +45,9 @@ Devuelve la máscara de devolución de llamada.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

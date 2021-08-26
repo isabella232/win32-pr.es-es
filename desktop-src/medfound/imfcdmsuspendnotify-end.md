@@ -1,7 +1,7 @@
 ---
-description: La suspensión real está a punto de producirse y no se realizarán más llamadas en el módulo de descifrado de contenido (CDM).
+description: La suspensión real está a punto de producirse y no se realizarán más llamadas al Módulo de descifrado de contenido (CDM).
 ms.assetid: 7a319fbb-9757-45da-8a8b-51dd48f08464
-title: 'IMFCdmSuspendNotify:: end (método)'
+title: MÉTODO IMFCdmSuspendNotify::End
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 71843b53fa85fded646fe71f2caa463a71c9415f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ad64b4b02c6accae3749478e09dee6078050bf22c0b1e5d13e4d1ea37f1635c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957915"
 ---
-# <a name="imfcdmsuspendnotifyend-method"></a>IMFCdmSuspendNotify:: end (método)
+# <a name="imfcdmsuspendnotifyend-method"></a>MÉTODO IMFCdmSuspendNotify::End
 
-La suspensión real está a punto de producirse y no se realizarán más llamadas en el módulo de descifrado de contenido (CDM).
+La suspensión real está a punto de producirse y no se realizarán más llamadas al Módulo de descifrado de contenido (CDM).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,9 +47,9 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

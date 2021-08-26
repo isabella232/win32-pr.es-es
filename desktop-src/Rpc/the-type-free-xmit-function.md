@@ -1,21 +1,21 @@
 ---
-title: La función type_free_xmit
-description: El código auxiliar llama a la \_ función de transmisión libre de tipos \_ para liberar memoria asociada a los datos transmitidos.
+title: La type_free_xmit función
+description: Los códigos auxiliares llaman a la función xmit libre \_ de tipo para liberar memoria asociada a los datos \_ transmitidos.
 ms.assetid: f15ce25b-d36c-4ee5-b796-f0aba1997047
 keywords:
 - type_free_xmit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b33d5cb8079d50923de2161b0384550829a5f22f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d4c192e30ec4f18d70d6e694e6097cb77ee7a2338230868730dc37c1c3207010
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016585"
 ---
-# <a name="the-type_free_xmit-function"></a>La \_ función de \_ transmisión libre de tipos
+# <a name="the-type_free_xmit-function"></a>Función \_ \_ xmit libre de tipos
 
-El código auxiliar llama a la función de **\_ \_ transmisión libre de tipos** para liberar memoria asociada a los datos transmitidos. Después de que el [tipo de la función \_ de \_ transmisión](the-type-from-xmit-function.md) convierta los datos transmitidos a su tipo presentado, la memoria ya no es necesaria. La función se define como:
+Los códigos auxiliares llaman a **la \_ función \_ xmit** libre de tipo para liberar memoria asociada a los datos transmitidos. Una vez [que el tipo de la función \_ \_ xmit](the-type-from-xmit-function.md) convierte los datos transmitidos a su tipo presentado, la memoria ya no es necesaria. La función se define como:
 
 ``` syntax
 void __RPC_USER <type>_free_xmit(<xmit_type> __RPC_FAR *);
@@ -23,7 +23,7 @@ void __RPC_USER <type>_free_xmit(<xmit_type> __RPC_FAR *);
 
 El parámetro es un puntero a la memoria que contiene el tipo transmitido.
 
-En este ejemplo, la memoria contiene una matriz que está en una única estructura. La transmisión gratuita del tipo de vínculo de doble función \_ \_ \_ \_ usa el usuario de MIDL de la función proporcionada por el usuario \_ \_ para liberar memoria:
+En este ejemplo, la memoria contiene una matriz que está en una sola estructura. La función DOUBLE LINK TYPE free xmit usa la función proporcionada por el usuario \_ \_ \_ \_ midl \_ user free para liberar \_ la memoria:
 
 ``` syntax
 void __RPC_USER DOUBLE_LINK_TYPE_free_xmit( 
@@ -33,9 +33,9 @@ void __RPC_USER DOUBLE_LINK_TYPE_free_xmit(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,7 @@ title: Atributo WM/SubTitleDescription
 description: El atributo WM/SubTitleDescription especifica información adicional sobre los subtítulos.
 ms.assetid: ece56ccf-63d1-4edf-a349-0ac2f4ce468a
 keywords:
-- Media Player de Windows de atributos de WM/SubTitleDescription
+- Atributo WM/SubTitleDescription Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,26 +12,26 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05815ea31cd58a55123ddadc9483b5caf48b9ced
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2911be40b6260a73a20541e3a7ab7458317d4872a90aea0525933d87303ff59d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000815"
 ---
 # <a name="wmsubtitledescription-attribute"></a>Atributo WM/SubTitleDescription
 
-El atributo **WM/SubTitleDescription** especifica información adicional sobre los subtítulos.
+El **atributo WM/SubTitleDescription** especifica información adicional sobre los subtítulos.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMSubTitleDescription.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMSubTitleDescription.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------|
-| Versión<br/> | Windows Media Player 10 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media 10 o posterior<br/> |
 
 
 
@@ -47,7 +47,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

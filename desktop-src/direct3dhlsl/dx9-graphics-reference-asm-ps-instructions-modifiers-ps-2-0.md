@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dc8ed91f8e103ebbab7c43ffe53201f0e1d5dfcf
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 6875789c40a2f0fab2987927662658a821de5742b2473b7947250cfb11da8155
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982895"
 ---
 # <a name="modifiers-for-ps_2_0-and-above"></a>Modificadores para ps \_ 2 \_ 0 y superiores
 
 Los modificadores de instrucción afectan al resultado de la instrucción antes de que se escriba en el registro de destino.
 
-Esta sección contiene información de referencia para los modificadores de instrucción implementados por el sombreador de píxeles versión 2 \_ 0 y posteriores.
+Esta sección contiene información de referencia para los modificadores de instrucción implementados por la versión 2 0 y posteriores del sombreador de \_ píxeles.
 
 
 
@@ -36,7 +36,7 @@ Esta sección contiene información de referencia para los modificadores de inst
 
 ## <a name="centroid"></a>Centroide
 
-El modificador centroide es un modificador opcional que fija la interpolación de atributos dentro del intervalo de la primitiva cuando un centro de píxeles de varias muestras no está cubierto por la primitiva. Esto se puede ver en [Muestreo de centroide.](https://msdn.microsoft.com/library/ee415231(VS.85).aspx)
+El modificador centroide es un modificador opcional que fija la interpolación de atributos dentro del intervalo de la primitiva cuando un centro de píxeles multimuestreo no está cubierto por la primitiva. Esto se puede ver en [Muestreo de centroide.](https://msdn.microsoft.com/library/ee415231(VS.85).aspx)
 
 Puede aplicar el modificador centroide a una instrucción de ensamblado como se muestra aquí:
 
@@ -47,7 +47,7 @@ dcl_texcoord0_centroid v0
 
 
 
-También puede aplicar el modificador centroide a una semántica, como se muestra aquí:
+También puede aplicar el modificador centroide a una semántica como se muestra aquí:
 
 
 ```
@@ -59,15 +59,15 @@ float4 TexturePointCentroidPS( float4 TexCoord : TEXCOORD0_centroid ) : COLOR0
 
 
 
-Además, cualquier [registro de color de](dx9-graphics-reference-asm-ps-registers-input-color.md) entrada (v ) declarado con una semántica de color se aplicará \# automáticamente. No se garantiza que los degradados calculados a partir de atributos muestreados en centroide sean precisos.
+Además, cualquier registro [de color de entrada](dx9-graphics-reference-asm-ps-registers-input-color.md) (v ) declarado con una semántica de color se aplicará \# automáticamente. No se garantiza que los degradados calculados a partir de atributos muestreados con centroide sean precisos.
 
 ## <a name="partial-precision"></a>Precisión parcial
 
-El modificador de instrucción de precisión parcial (pp) indica las áreas en las que la precisión parcial es aceptable, siempre que \_ la implementación subyacente lo admita. Las implementaciones siempre pueden omitir el modificador y realizar las operaciones afectadas con precisión completa.
+El modificador de instrucción de precisión parcial ( pp) indica las áreas en las que la precisión parcial es aceptable, siempre que \_ la implementación subyacente la admita. Las implementaciones siempre son libres de omitir el modificador y realizar las operaciones afectadas con precisión completa.
 
 El \_ modificador pp puede producirse en dos contextos:
 
--   En una declaración de coordenadas de textura para permitir pasar coordenadas de textura al sombreador de píxeles en forma de precisión parcial. Esto permite, por ejemplo, el uso de coordenadas de textura para retransmitir datos de color al sombreador de píxeles, que puede ser más rápido con precisión parcial que con precisión completa en algunas implementaciones. En ausencia de este modificador, las coordenadas de textura se deben pasar con precisión completa.
+-   En una declaración de coordenada de textura para permitir pasar coordenadas de textura al sombreador de píxeles en formato de precisión parcial. Esto permite, por ejemplo, el uso de coordenadas de textura para retransmitir datos de color al sombreador de píxeles, que puede ser más rápido con precisión parcial que con precisión completa en algunas implementaciones. En ausencia de este modificador, las coordenadas de textura se deben pasar con precisión completa.
 -   En cualquier instrucción, incluidas las instrucciones de carga de textura. Esto indica que la implementación puede ejecutar la instrucción con precisión parcial y almacenar un resultado de precisión parcial. En ausencia de un modificador explícito, la instrucción debe realizarse con precisión completa (independientemente de la precisión de entrada).
 
 Ejemplos:
@@ -82,11 +82,11 @@ cmp_pp r0, r1, r2, r3
 
 ## <a name="saturate"></a>Saturar
 
-El modificador de instrucción saturada (sat) satura (o fija) el resultado de la instrucción en el intervalo \_ 0, 1 antes de escribir en el \[ \] registro de destino.
+El modificador de instrucción saturate (sat) satura (o fija) el resultado de la instrucción en el intervalo \_ 0, 1 antes de escribir en el \[ \] registro de destino.
 
-El modificador de instrucción sat se puede usar con cualquier instrucción excepto \_ [frc - ps](frc---ps.md), [sincos - ps](sincos---ps.md)y cualquier instrucción de \* texas.
+El \_ modificador de instrucción sat se puede usar con cualquier instrucción, excepto [frc - ps](frc---ps.md), [sincos - ps](sincos---ps.md)y cualquier instrucción de \* texas.
 
-Para ps \_ 2 \_ 0, ps 2 x y \_ ps \_ \_ 2 \_ sw, \_ [](dx9-graphics-reference-asm-ps-registers-output-color.md) [](dx9-graphics-reference-asm-ps-registers-output-depth.md)el modificador de instrucción sat no se puede usar con instrucciones que escriban en ningún registro de salida (Registro de color de salida o Registro de profundidad de salida). Esta restricción no se aplica a ps \_ 3 \_ 0 y posteriores.
+Para ps \_ 2 \_ 0, ps 2 x y \_ \_ ps \_ 2 sw, \_ \_ [](dx9-graphics-reference-asm-ps-registers-output-color.md) [](dx9-graphics-reference-asm-ps-registers-output-depth.md)el modificador de instrucción sat no se puede usar con instrucciones que escriban en ningún registro de salida (Registro de color de salida o Registro de profundidad de salida). Esta restricción no se aplica a ps \_ 3 \_ 0 y posteriores.
 
 Ejemplo:
 

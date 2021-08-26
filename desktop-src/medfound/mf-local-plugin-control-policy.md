@@ -1,17 +1,17 @@
 ---
 description: Especifica una directiva de control de complemento local.
 ms.assetid: 2936F3C9-3BCB-452A-8C03-35D73A200CE2
-title: MF_LOCAL_PLUGIN_CONTROL_POLICY atributo (Mfidl. h)
+title: MF_LOCAL_PLUGIN_CONTROL_POLICY atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd1bdaee17651cebfdc844bb5b6998907b1cd295
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83f32280f48895b9b6a0633613d63f787836573fe13f046126639c28467abe02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956465"
 ---
-# <a name="mf_local_plugin_control_policy-attribute"></a>MF \_ \_ atributo de \_ Directiva de control de complemento local \_
+# <a name="mf_local_plugin_control_policy-attribute"></a>Atributo \_ MF LOCAL PLUGIN CONTROL \_ \_ \_ POLICY
 
 Especifica una directiva de control de complemento local.
 
@@ -19,11 +19,11 @@ Especifica una directiva de control de complemento local.
 
 **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Establezca este atributo en uno de los valores de [**\_ Directiva de \_ control \_ de complemento MF**](/windows/desktop/api/mfobjects/ne-mfobjects-mf_plugin_control_policy) .
+Establezca este atributo en uno de los valores [**de MF PLUGIN CONTROL \_ \_ \_ POLICY.**](/windows/desktop/api/mfobjects/ne-mfobjects-mf_plugin_control_policy)
 
-Estos atributos permiten que la aplicación especifique una directiva local más restrictiva que la Directiva de proceso configurada por [**IMFPluginControl**](/windows/desktop/api/mfobjects/nn-mfobjects-imfplugincontrol).
+Estos atributos permiten a la aplicación especificar una directiva local más restrictiva que la directiva de todo el proceso configurada por [**IMFPluginControl**](/windows/desktop/api/mfobjects/nn-mfobjects-imfplugincontrol).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ Estos atributos permiten que la aplicación especifique una directiva local más
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -41,10 +41,10 @@ Estos atributos permiten que la aplicación especifique una directiva local más
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> </dl>
 
  
