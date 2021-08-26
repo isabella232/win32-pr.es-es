@@ -1,9 +1,9 @@
 ---
 title: DRM_Rights
-description: La \_ propiedad derechos DRM especifica los derechos que necesitará la aplicación en el siguiente intento de abrir un archivo protegido.
+description: La propiedad Derechos de DRM especifica los derechos que la \_ aplicación necesitará en el siguiente intento de abrir un archivo protegido.
 ms.assetid: fbf62e8d-069e-427b-9093-6c579cdaa96a
 keywords:
-- DRM_Rights formato de Windows Media
+- DRM_Rights windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,28 +12,28 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 542e511c11111bb2698d9c936a1f0973a2145c9b
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 8d655ea3f4a0a5dccc8b5e1380296948c9a55dce1d86336f824b30189f6557d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104077296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930905"
 ---
-# <a name="drm_rights"></a>Derechos de DRM \_
+# <a name="drm_rights"></a>Derechos de \_ DRM
 
-La **propiedad \_ derechos DRM** especifica los derechos que necesitará la aplicación en el siguiente intento de abrir un archivo protegido.
+La **propiedad \_ Derechos** de DRM especifica los derechos que la aplicación necesitará en el siguiente intento de abrir un archivo protegido.
 
 ## <a name="global-constant"></a>Constante global
 
-g \_ wszWMDRM \_ derechos
+g \_ wszWMDRM \_ Rights
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_cadena de tipo WMT \_**
+**CADENA DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de una propiedad de lectura y escritura que se recupera mediante [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty) y se establece mediante [**IWMDRMReader:: SetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-setdrmproperty) o [**IWMDRMWriter:: SetDRMAttribute**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmwriter-setdrmattribute).
+Se trata de una propiedad de lectura y escritura que se recupera mediante [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty) y se establece mediante [**IWMDRMReader::SetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-setdrmproperty) o [**IWMDRMWriter::SetDRMAttribute**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmwriter-setdrmattribute).
 
 En la tabla siguiente se enumeran los derechos admitidos.
 
@@ -41,19 +41,19 @@ En la tabla siguiente se enumeran los derechos admitidos.
 
 | Right                                           | Literal de cadena      | Descripción                                                                                                                                                                                                          |
 |-------------------------------------------------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| copia de seguridad de g \_ wszWMDRM \_ derecha \_                      | "Backup"            | Derecho a realizar una copia de seguridad de la licencia.                                                                                                                                                                                        |
-| g \_ wszWMDRM de colaboración de la \_ derecha \_ \_         | "CollaborativePlay" | Derecho para reproducir el archivo como parte de una lista de reproducción de colaboración.                                                                                                                                                          |
-| g \_ wszWMDRM \_ \_ copia derecha                        | “Copiar”              | Derecho para copiar el archivo en un dispositivo. Este derecho sustituye a los derechos de copia anteriores (g \_ wszWMDRM la \_ \_ copia derecha \_ a \_ CD, g \_ wszWMDRM la \_ copia derecha a un \_ \_ \_ dispositivo que no es de \_ SDMI \_ y g \_ wszWMDRM \_ \_ copia derecha en el \_ \_ dispositivo de SDMI \_ ). |
-| g \_ wszWMDRM \_ \_ copia derecha \_ a \_ CD                | "Print. Redbook"     | Derecho para copiar el archivo en un CD (formato de libro rojo). En Windows Media DRM 10, este derecho se sustituye por la copia de la derecha de g \_ wszWMDRM \_ \_ .<br/>                                                                             |
-| g \_ wszWMDRM \_ la \_ copia derecha \_ en un \_ dispositivo que no es de \_ SDMI \_ | "Transfer. NONSDMI"  | Derecho para copiar el archivo en un dispositivo que no es de SDMI. En Windows Media DRM 10, este derecho se sustituye por la copia de la derecha de g \_ wszWMDRM \_ \_ .<br/>                                                                                  |
-| g \_ wszWMDRM \_ la \_ copia derecha \_ en el dispositivo de \_ SDMI \_      | "Transfer. SDMI"     | Derecho para copiar el archivo en un dispositivo compatible con SDMI. En Windows Media DRM 10, este derecho se sustituye por la copia de la derecha de g \_ wszWMDRM \_ \_ .<br/>                                                                           |
-| g \_ wszWMDRM \_ la \_ reproducción derecha                    | Reproducción              | Derecho para reproducir el archivo multimedia.                                                                                                                                                                                        |
+| g \_ wszWMDRM \_ RIGHT \_ BACKUP                      | "Backup"            | Derecho para hacer una copia de seguridad de la licencia.                                                                                                                                                                                        |
+| g \_ wszWMDRM \_ RIGHT COLLABORATIVE \_ \_ PLAY         | "CollaborativePlay" | Derecho a reproducir el archivo como parte de una lista de reproducción colaborativa.                                                                                                                                                          |
+| g \_ wszWMDRM \_ RIGHT \_ COPY                        | “Copiar”              | Derecho para copiar el archivo en un dispositivo. Este derecho sustituye a los derechos de copia anteriores (g \_ wszWMDRM \_ RIGHT COPY TO \_ \_ \_ CD, g \_ wszWMDRM RIGHT COPY TO NON SDMI DEVICE y \_ g \_ \_ \_ \_ \_ \_ wszWMDRM \_ RIGHT COPY TO \_ \_ \_ SDMI \_ DEVICE). |
+| g \_ wszWMDRM \_ RIGHT COPY TO \_ \_ \_ CD                | "Print.redbook"     | Derecho para copiar el archivo en un CD (formato de libro rojo). En Windows DRM multimedia 10, este derecho se reemplaza por g \_ wszWMDRM \_ RIGHT \_ COPY.<br/>                                                                             |
+| g \_ wszWMDRM \_ RIGHT COPY TO NON \_ \_ \_ \_ SDMI \_ DEVICE | "Transfer.NONSDMI"  | Derecho para copiar el archivo en un dispositivo que no es SDMI. En Windows Drm multimedia 10, este derecho se reemplaza por g \_ wszWMDRM \_ RIGHT \_ COPY.<br/>                                                                                  |
+| g \_ wszWMDRM \_ RIGHT COPY TO \_ \_ \_ SDMI \_ DEVICE      | "Transfer.SDMI"     | Derecho para copiar el archivo en un dispositivo compatible con SDMI. En Windows DRM multimedia 10, este derecho se reemplaza por g \_ wszWMDRM \_ RIGHT \_ COPY.<br/>                                                                           |
+| g \_ wszWMDRM \_ RIGHT \_ PLAYBACK                    | "Reproducir"              | Derecho para reproducir el archivo multimedia.                                                                                                                                                                                        |
 
 
 
  
 
-Esta propiedad contiene una cadena de caracteres anchos de uno o más derechos separados por signos de punto y coma, por ejemplo: L "reproducción; Copiar CollaborativePlay".
+Esta propiedad contiene una cadena de caracteres anchos de uno o varios derechos separados por punto y coma, por ejemplo: L"Playback; Copy; CollaborativePlay".
 
 ## <a name="see-also"></a>Vea también
 

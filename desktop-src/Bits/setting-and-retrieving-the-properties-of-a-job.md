@@ -1,31 +1,31 @@
 ---
 title: Establecer y recuperar las propiedades de un trabajo
-description: El propietario del trabajo o de un usuario con privilegios de administrador puede establecer y recuperar las propiedades del trabajo en cualquier momento.
+description: El propietario del trabajo o un usuario con privilegios de administrador pueden establecer y recuperar las propiedades del trabajo en cualquier momento.
 ms.assetid: 5d0ab96b-b818-4b41-8317-cf50ad17c12d
 keywords:
-- transferir BITS de trabajo, propiedades
-- configuración de BITS de propiedades de trabajo
-- recuperar BITS de propiedades de trabajo
+- bits de trabajo de transferencia, propiedades
+- establecer bits de propiedades de trabajo
+- recuperación de bits de propiedades de trabajo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 609299e3e7bdee477e2008f3f4ce83ae24583ffd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c3ded532d3c99c8f8063a5c372c60086f35320d321860b056b60f2cb5a9a4003
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004835"
 ---
 # <a name="setting-and-retrieving-the-properties-of-a-job"></a>Establecer y recuperar las propiedades de un trabajo
 
-El propietario del trabajo o de un usuario con privilegios de administrador puede establecer y recuperar las propiedades del trabajo en cualquier momento. Para obtener una lista completa de las propiedades que puede establecer y recuperar, vea las interfaces [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob), [**IBackgroundCopyJob2**](/windows/desktop/api/Bits1_5/nn-bits1_5-ibackgroundcopyjob2), [**IBackgroundCopyJob3**](/windows/desktop/api/Bits2_0/nn-bits2_0-ibackgroundcopyjob3)y [**IBackgroundCopyJob4**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibackgroundcopyjob4) .
+El propietario del trabajo o un usuario con privilegios de administrador pueden establecer y recuperar las propiedades del trabajo en cualquier momento. Para obtener una lista completa de las propiedades que puede establecer y recuperar, vea las interfaces [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob), [**IBackgroundCopyJob2,**](/windows/desktop/api/Bits1_5/nn-bits1_5-ibackgroundcopyjob2) [**IBackgroundCopyJob3**](/windows/desktop/api/Bits2_0/nn-bits2_0-ibackgroundcopyjob3)e [**IBackgroundCopyJob4.**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibackgroundcopyjob4)
 
-Los archivos también contienen propiedades. Para obtener información sobre cómo recuperar un archivo y sus propiedades de un trabajo, consulte [enumerar archivos en un trabajo](enumerating-files-in-a-job.md).
+Los archivos también contienen propiedades. Para obtener información sobre cómo recuperar un archivo y sus propiedades de un trabajo, vea [Enumerar archivos en un trabajo.](enumerating-files-in-a-job.md)
 
-Para transferir archivos, no es necesario cambiar los valores predeterminados de las propiedades del trabajo; BITS usa valores predeterminados que son adecuados para la aplicación típica.
+Para transferir archivos, no es necesario cambiar los valores predeterminados de las propiedades del trabajo: BITS usa valores predeterminados que son adecuados para la aplicación típica.
 
-## <a name="setting-the-properties-of-a-job"></a>Establecer las propiedades de un trabajo
+## <a name="setting-the-properties-of-a-job"></a>Establecimiento de las propiedades de un trabajo
 
-En el ejemplo siguiente se muestra cómo establecer las propiedades que es más probable que la aplicación cambie: [Priority](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setpriority), [Notify interface](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyinterface), [Notify Flags](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags)y [reply File Name](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setreplyfilename). En el ejemplo se da por supuesto que el puntero de la interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) , pJob, es válido.
+En el ejemplo siguiente se muestra cómo establecer las propiedades que es más probable que cambie la aplicación: [priority](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setpriority), [notify interface](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyinterface), [notify flags](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags)y [reply file name](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setreplyfilename). En el ejemplo se da por supuesto que el puntero de interfaz [**IBackgroundCopyJob,**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) pJob, es válido.
 
 
 ```C++
@@ -76,13 +76,13 @@ pJob4->Release();
 
 
 
-De forma predeterminada, BITS descarga el contenido del servidor de origen. Para descargar contenido de un elemento del mismo nivel, tanto el equipo como el trabajo deben habilitar el almacenamiento en caché del mismo nivel. Para habilitar el almacenamiento en caché del mismo nivel en el equipo, establezca la configuración de directiva de grupo EnablePeerCaching. También puede llamar al método [**IBitsPeerCacheAdministration:: SetConfigurationFlags**](/windows/desktop/api/Bits3_0/nf-bits3_0-ibitspeercacheadministration-setconfigurationflags) para habilitar el almacenamiento en caché del mismo nivel en el equipo; sin embargo, la Directiva invalida la configuración de preferencia, si se establece. Para habilitar el almacenamiento en caché del mismo nivel para el trabajo, debe llamar al método [**IBackgroundCopyJob4:: SetPeerCachingFlags**](/windows/desktop/api/Bits3_0/nf-bits3_0-ibackgroundcopyjob4-setpeercachingflags) .
+De forma predeterminada, BITS descarga contenido del servidor de origen. Para descargar contenido de un elemento del mismo nivel, tanto el equipo como el trabajo deben habilitar el almacenamiento en caché del mismo nivel. Para habilitar el almacenamiento en caché del mismo nivel en el equipo, establezca la configuración de directiva de grupo EnablePeerCaching. También puede llamar al método [**IBitsPeerCacheAdministration::SetConfigurationFlags**](/windows/desktop/api/Bits3_0/nf-bits3_0-ibitspeercacheadministration-setconfigurationflags) para habilitar el almacenamiento en caché del mismo nivel en el equipo; sin embargo, la configuración de preferencias se invalida mediante la directiva, si se establece. Para habilitar el almacenamiento en caché del mismo nivel para el trabajo, debe llamar al método [**IBackgroundCopyJob4::SetPeerCachingFlags.**](/windows/desktop/api/Bits3_0/nf-bits3_0-ibackgroundcopyjob4-setpeercachingflags)
 
-Para especificar encabezados personalizados, un certificado de cliente para la autenticación del cliente y opciones HTTP como la Directiva de redireccionamiento, la comprobación de CRL y la especificación de los errores de certificado que se omitirán, use la interfaz [**IBackgroundCopyJobHttpOptions**](/windows/desktop/api/Bits2_5/nn-bits2_5-ibackgroundcopyjobhttpoptions) . Para obtener la interfaz **IBackgroundCopyJobHttpOptions** , consulte cualquiera de las interfaces de [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) .
+Para especificar encabezados personalizados, un certificado de cliente para la autenticación de cliente y opciones HTTP como la directiva de redireccionamiento, la comprobación de CRL y la especificación de los errores de certificado que se omitirán, use la interfaz [**IBackgroundCopyJobHttpOptions.**](/windows/desktop/api/Bits2_5/nn-bits2_5-ibackgroundcopyjobhttpoptions) Para obtener la **interfaz IBackgroundCopyJobHttpOptions,** consulte cualquiera de las interfaces [**IBackgroundCopyJob.**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob)
 
 ## <a name="retrieving-the-properties-of-a-job"></a>Recuperación de las propiedades de un trabajo
 
-En el ejemplo siguiente se muestra cómo recuperar el [nombre para mostrar](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getdisplayname), el [propietario](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getowner), el [progreso](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress)y los valores de propiedad de [Estado](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getstate) de un trabajo. En el ejemplo se da por supuesto que el puntero de la interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) , pJob, es válido.
+En el ejemplo siguiente se muestra cómo recuperar los valores de propiedad de [nombre](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getdisplayname)para mostrar [,](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress) [propietario,](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getowner)progreso [y](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getstate) estado de un trabajo. En el ejemplo se da por supuesto que el puntero de interfaz [**IBackgroundCopyJob,**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) pJob, es válido.
 
 
 ```C++
@@ -189,9 +189,9 @@ if (SUCCEEDED(hr))
 
 
 
- 
+ 
 
- 
+ 
 
 
 

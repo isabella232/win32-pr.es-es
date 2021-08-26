@@ -1,22 +1,22 @@
 ---
-description: La estructura XMUBYTE2 expone los siguientes operadores.
+description: La estructura XMUBYTE2 expone los operadores siguientes.
 ms.assetid: 6c58c08e-d8a1-405d-8f86-495ab4a72723
 title: Operadores XMUBYTE2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dda05c75700bca5750349d326004e652a657559
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b60cdd3961e15a2746708e661613e5612a88a2b7a92eb16d6073aa8fa10e2891
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979545"
 ---
 # <a name="xmubyte2-operators"></a>Operadores XMUBYTE2
 
-La estructura [**XMUBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyte2) expone los siguientes operadores.
+La [**estructura XMUBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyte2) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles con C++.
+> Los operadores enumerados aquí solo están disponibles con C++.
 
  
 
@@ -26,7 +26,7 @@ La estructura [**XMUBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directx
 
 | Métodos                                               | Descripción                                                                                                         |
 |-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmubyte2-operator-assign)<br/> | Asigna los datos del componente de vector de una instancia de `XMUBYTE2` a la instancia actual de `XMUBYTE2` .<br/> |
+| [**operator =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmubyte2-operator-assign)<br/> | Asigna los datos del componente vectorial de una instancia de `XMUBYTE2` a la instancia actual de `XMUBYTE2` .<br/> |
 
 
 
@@ -36,7 +36,7 @@ La estructura [**XMUBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directx
 
 <dl> <dt>
 
-[Extensiones de XMUBYTE2](ovw-xmubyte2-extensions.md)
+[Extensiones XMUBYTE2](ovw-xmubyte2-extensions.md)
 </dt> <dt>
 
 **Referencia**

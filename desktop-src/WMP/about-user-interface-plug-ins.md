@@ -1,52 +1,52 @@
 ---
-title: Acerca de los complementos de la interfaz de usuario
-description: Acerca de los complementos de la interfaz de usuario
+title: Acerca Interfaz de usuario complementos
+description: Acerca Interfaz de usuario complementos
 ms.assetid: 2f683876-02b3-48c8-a487-4f665ab7cf91
 keywords:
-- Media Player de Windows, Complementos
-- Media Player de Windows, Complementos de la interfaz de usuario
-- Complementos de Windows Media Player, interfaz de usuario
+- Reproductor de Windows Media,complementos
+- Reproductor de Windows Media,complementos de interfaz de usuario
+- Reproductor de Windows Media complementos,interfaz de usuario
 - complementos, interfaz de usuario
-- Complementos de la interfaz de usuario, acerca de
-- Complementos de la interfaz de usuario, acerca de
+- complementos de interfaz de usuario, acerca de
+- Complementos de interfaz de usuario, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3c64894b9db5d11ec4e9d8c5aee9c6e0bb103bc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bd188c34608aaa598a12e8e24f199fca657dca67287b180755fe832833c91c54
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903085"
 ---
-# <a name="about-user-interface-plug-ins"></a>Acerca de los complementos de la interfaz de usuario
+# <a name="about-user-interface-plug-ins"></a>Acerca Interfaz de usuario complementos
 
-Windows Media Player proporciona una variedad de paneles de control que permiten al usuario modificar diversos aspectos del reproductor, como la configuración del ecualizador de vídeo y gráfico. Estos paneles de control pueden mejorar la experiencia multimedia que proporciona Windows Media Player, pero no proporcionan necesariamente toda la funcionalidad que el usuario puede buscar.
+Reproductor de Windows Media proporciona una variedad de paneles de control que permiten al usuario modificar varios aspectos del reproductor, como la configuración del igualdad de vídeo y gráfico. Estos paneles de control pueden mejorar la experiencia multimedia proporcionada por Reproductor de Windows Media, pero no proporcionan necesariamente toda la funcionalidad que el usuario puede estar buscando.
 
-Las máscaras son una manera de proporcionar funcionalidad adicional, pero requieren que el desarrollador vuelva a crear la interfaz de usuario (UI). Como alternativa, Windows Media Player permite la creación de complementos de interfaz de usuario personalizados que se muestran en el modo completo del reproductor. Esta funcionalidad se proporciona a través de una interfaz de programación que sigue las directrices estándar del modelo de objetos componentes (COM) de Microsoft. Puede implementar esta interfaz en Microsoft Visual C++ mediante el Asistente para complementos de Windows Media Player para ayudarle a empezar.
+Las máscaras son una manera de proporcionar funcionalidad adicional, pero requieren que el desarrollador vuelva a crear toda la interfaz de usuario (UI). Como alternativa, Reproductor de Windows Media permite la creación de complementos de interfaz de usuario personalizados que se muestran en el modo completo del reproductor. Esta funcionalidad se proporciona a través de una interfaz de programación que sigue las directrices estándar del Modelo de objetos componentes (COM) de Microsoft. Puede implementar esta interfaz en Microsoft Visual C++ mediante el Asistente para Reproductor de Windows Media complemento para ayudarle a empezar.
 
-Los complementos de la interfaz de usuario se describen con más detalle en los temas siguientes.
+Los complementos de interfaz de usuario se describen con más detalle en los temas siguientes.
 
 
 
 | Tema                                              | Descripción                                                   |
 |----------------------------------------------------|---------------------------------------------------------------|
-| [Información general del complemento de la interfaz de usuario](ui-plug-in-overview.md)     | Proporciona información general sobre los complementos de la interfaz de usuario.                          |
-| [Compilar un complemento de IU](building-a-ui-plug-in.md) | Proporciona los detalles técnicos necesarios para crear un complemento de la interfaz de usuario. |
+| [Información general sobre el complemento de interfaz de usuario](ui-plug-in-overview.md)     | Proporciona información general sobre los complementos de interfaz de usuario.                          |
+| [Creación de un complemento de interfaz de usuario](building-a-ui-plug-in.md) | Proporciona los detalles técnicos necesarios para crear un complemento de interfaz de usuario. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Complementos de la interfaz de usuario de Windows Media Player**](windows-media-player-user-interface-plug-ins.md)
+[**Reproductor de Windows Media Interfaz de usuario complementos**](windows-media-player-user-interface-plug-ins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

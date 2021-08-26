@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1679ae310a996458aad3e25aba74955036094e00
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21462782ad14dfd977c87ab0898b7b9d2211e730bae42ed6281207fc557a4101
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905005"
 ---
 # <a name="instrumentationtype-complex-type"></a>Tipo complejo InstrumentationType
 
@@ -50,7 +50,7 @@ Define el contenido de la sección de instrumentación del manifiesto.
 
 | Elemento                                                                  | Tipo                                                             | Descripción                                                        |
 |--------------------------------------------------------------------------|------------------------------------------------------------------|--------------------------------------------------------------------|
-| [**events**](eventmanifestschema-events-instrumentationtype-element.md) | [**EventsType**](eventmanifestschema-eventstype-complextype.md) | Contiene una lista de proveedores que el manifiesto define.<br/> |
+| [**events**](eventmanifestschema-events-instrumentationtype-element.md) | [**EventsType**](eventmanifestschema-eventstype-complextype.md) | Contiene una lista de proveedores que define el manifiesto.<br/> |
 
 
 
@@ -60,8 +60,8 @@ Define el contenido de la sección de instrumentación del manifiesto.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: QuadReadAcrossDiagonal función)
-description: Devuelve el valor local especificado que se lee desde la calle opuesta en diagonal en esta cuádruple.
+title: Función QuadReadAcrossDiagonal
+description: Devuelve el valor local especificado que se lee desde el lado opuesto diagonal de este cuadrándular.
 ms.assetid: 2914F1F9-5CE2-437A-ADDB-4955D2C1490B
 keywords:
-- QuadReadAcrossDiagonal de función HLSL
+- Función HlSL de QuadReadAcrossDiagonal
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0e208a022f339e69ea63120db1f67070fa4dfed7
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 53066864ec87528406b20d5503f4e47497cb3aa80e44f01e279845fdc2674339
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104997181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981935"
 ---
-# <a name="quadreadacrossdiagonal-function"></a>QuadReadAcrossDiagonal función)
+# <a name="quadreadacrossdiagonal-function"></a>Función QuadReadAcrossDiagonal
 
-Devuelve el valor local especificado que se lee desde la calle opuesta en diagonal en esta cuádruple.
+Devuelve el valor local especificado que se lee desde el lado opuesto diagonal de este cuadrándular.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,19 +42,19 @@ Devuelve el valor local especificado que se lee desde la calle opuesta en diagon
 *localValue* 
 </dt> <dd>
 
-El tipo solicitado.
+Tipo solicitado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor local especificado que se lee desde la calle opuesta en diagonal en esta cuádruple.
+Valor local especificado que se lee desde el lado opuesto diagonal de este cuadrándular.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información sobre las cuádruples, consulte [información general sobre el modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md).
+Para obtener más información sobre los cuatros, consulte [Información general del modelo de sombreador 6.](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 
-Esta función se admite desde el modelo de sombreador 6,0 solo en los sombreadores de píxeles y de cálculo.
+Esta función solo se admite desde el modelo de sombreador 6.0 en sombreadores de cálculo y píxeles.
 
 
 

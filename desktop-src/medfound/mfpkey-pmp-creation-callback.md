@@ -1,56 +1,56 @@
 ---
-description: Establece una devolución de llamada que crea la sesión de medios de PMP durante la resolución del origen.
+description: Establece una devolución de llamada que crea la sesión de medios PMP durante la resolución de origen.
 ms.assetid: 7277C5E0-BB91-4EEA-9529-64E66D179CDC
-title: Propiedad MFPKEY_PMP_Creation_Callback (Mfidl. h)
+title: MFPKEY_PMP_Creation_Callback propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2b18e04a15e035a9e4dc04a4039ce230342031a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 655d61865eaecd89fa84664fc5c25f89762180ac9007e21cc7cbc98f7a68b056
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953865"
 ---
-# <a name="mfpkey_pmp_creation_callback-property"></a>\_Propiedad de \_ devolución de llamada de creación de MFPKEY PMP \_
+# <a name="mfpkey_pmp_creation_callback-property"></a>Propiedad MFPKEY \_ PMP \_ Creation \_ Callback
 
-Establece una devolución de llamada que crea la [sesión de medios de PMP](pmp-media-session.md) durante la resolución del origen.
+Establece una devolución de llamada que crea la [sesión de medios PMP durante](pmp-media-session.md) la resolución de origen.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
-**IUnknown \** _
+**IUnknown\***
 
-VT \_ desconocido
+VT \_ UNKNOWN
 
-_ *punkVal**
+**val**
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Algunos contenidos protegidos pueden requerir el uso de esta propiedad. Si es así, se produce un error en el proceso de resolución de origen con el código de error **MF \_ E la \_ resolución \_ requiere una devolución de llamada de \_ \_ creación \_ de PMP**.
+Es posible que algunos contenidos protegidos requieran el uso de esta propiedad. Si es así, se produce un error en el proceso de resolución de origen con el código de error **MF E RESOLUTION REQUIRES \_ \_ \_ \_ PMP CREATION \_ \_ CALLBACK**.
 
 Para usar esta propiedad, haga lo siguiente.
 
-1.  Llame a [**PSCreateMemoryPropertyStore**](/windows/win32/api/propsys/nf-propsys-pscreatememorypropertystore) para crear un almacén de propiedades.
-2.  Implemente la interfaz de devolución de llamada [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) .
-3.  Establezca la \_ \_ \_ propiedad de devolución de llamada de creación de MFPKEY PMP en el almacén de propiedades. El valor es un puntero a la implementación de [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) .
-4.  Llame a [**IMFSourceResolver:: BeginCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl). Pase un puntero al almacén de propiedades en el parámetro *pProps* .
+1.  Llame [**a PSCreateMemoryPropertyStore para**](/windows/win32/api/propsys/nf-propsys-pscreatememorypropertystore) crear un almacén de propiedades.
+2.  Implemente la [**interfaz de devolución de llamada DE DEVOLUCIÓN DE LLAMADA DE LA**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) DEVOLUCIÓN DE LLAMADA.
+3.  Establezca la propiedad MFPKEY \_ PMP \_ Creation \_ Callback en el almacén de propiedades. El valor es un puntero a la [**implementación de IMFAsyncCallback.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback)
+4.  Llame [**a IMFSourceResolver::BeginCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl). Pase un puntero al almacén de propiedades en el *parámetro pProps.*
 
-En el método [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) de la interfaz de devolución de llamada, haga lo siguiente.
+En el [**método IMFAsyncCallback::Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) de la interfaz de devolución de llamada, haga lo siguiente.
 
-1.  Llame a [**MFCreatePMPMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatepmpmediasession) para crear la [sesión de medios de PMP](pmp-media-session.md).
-2.  Llame a [**IMFGetService:: GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) en la sesión de medios de PMP a un puntero a la interfaz [**IMFPMPHost**](/windows/desktop/api/mfidl/nn-mfidl-imfpmphost) .
-3.  Llame a [**IMFAsyncResult:: GetState**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasyncresult-getstate) en el objeto de resultado que se pasa en el parámetro *pAsyncResult* de [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke). Consulte el puntero [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) devuelto para la interfaz [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) .
-4.  Llame a [**MFPutWorkItem**](/windows/desktop/api/mfapi/nf-mfapi-mfputworkitem) con los parámetros siguientes:
-    -   *dwQueue*: **\_ estándar de \_ cola \_ de devolución de llamada MFASYNC**
-    -   *pCallback*: el puntero [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) obtenido en el paso 3.
-    -   *pState*: el puntero [**IMFPMPHost**](/windows/desktop/api/mfidl/nn-mfidl-imfpmphost) obtenido en el paso 2.
+1.  Llame [**a MFCreatePMPMediaSession para**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatepmpmediasession) crear la sesión multimedia de [PMP](pmp-media-session.md).
+2.  Llame [**a IMFGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) en la sesión multimedia de PMP a un puntero a la [**interfaz DEFMPHost.**](/windows/desktop/api/mfidl/nn-mfidl-imfpmphost)
+3.  Llame [**a IMFAsyncResult::GetState**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasyncresult-getstate) en el objeto de resultado que se pasa en el *parámetro pAsyncResult* de [**IMFAsyncCallback::Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke). Consulte el puntero [**IUnknown devuelto**](/windows/win32/api/unknwn/nn-unknwn-iunknown) para la [**interfaz IMFAsyncCallback.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback)
+4.  Llame [**a MFPutWorkItem**](/windows/desktop/api/mfapi/nf-mfapi-mfputworkitem) con los parámetros siguientes:
+    -   *dwQueue:* **MFASYNC \_ CALLBACK \_ QUEUE \_ STANDARD**
+    -   *pCallback:* el [**puntero DE DEVOLUCIÓN DE**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) LLAMADA DE LA DEVOLUCIÓN DE LLAMADA obtenido en el paso 3.
+    -   *pState:* el [**puntero DE TIPO IMFPMPHost**](/windows/desktop/api/mfidl/nn-mfidl-imfpmphost) obtenido en el paso 2.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,9 +58,9 @@ En el método [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                  |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -68,13 +68,13 @@ En el método [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Sesión de medios de PMP](pmp-media-session.md)
+[Sesión multimedia de PMP](pmp-media-session.md)
 </dt> <dt>
 
-[Ruta de acceso a medios protegidos](protected-media-path.md)
+[Ruta de acceso de medios protegidos](protected-media-path.md)
 </dt> <dt>
 
 [Solucionador de origen](source-resolver.md)

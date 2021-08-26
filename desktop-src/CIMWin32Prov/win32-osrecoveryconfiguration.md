@@ -1,8 +1,8 @@
 ---
-description: Win32 \_ OSRecoveryConfiguration&\# 8194; La clase WMI representa los tipos de información que se recopilarán de la memoria cuando se produzca un error en el sistema operativo. Esto incluye los errores de arranque y los bloqueos del sistema.
+description: OSRecoveryConfiguration de Win32 \_&\# 8194; La clase WMI representa los tipos de información que se recopilarán de la memoria cuando se produce un error en el sistema operativo. Esto incluye errores de arranque y bloqueos del sistema.
 ms.assetid: 0c8a2aeb-2fd9-44b7-8f91-d19afb8d2de6
 ms.tgt_platform: multiple
-title: Win32_OSRecoveryConfiguration (clase)
+title: Win32_OSRecoveryConfiguration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -29,18 +29,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e2371ba7ee449497e2d695e60d75c59454282d54
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0a780e0997ef3a56bc644adda2842b905aaf9744d28a2075fbc4726134c16aa6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972295"
 ---
-# <a name="win32_osrecoveryconfiguration-class"></a>\_Clase Win32 OSRecoveryConfiguration
+# <a name="win32_osrecoveryconfiguration-class"></a>Clase \_ OSRecoveryConfiguration de Win32
 
-La  [clase WMI](../wmisdk/retrieving-a-class.md) **\_ OSRecoveryConfiguration de Win32** representa los tipos de información que se recopilarán de la memoria cuando se produzca un error en el sistema operativo. Esto incluye los errores de arranque y los bloqueos del sistema.
+La clase  [WMI](../wmisdk/retrieving-a-class.md) **\_ OSRecoveryConfiguration de Win32** representa los tipos de información que se recopilarán de la memoria cuando se produce un error en el sistema operativo. Esto incluye errores de arranque y bloqueos del sistema.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,16 +78,16 @@ La **clase \_ OSRecoveryConfiguration de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
-**AutoReboot**
+**Arranque automático**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ CrashControl \| AutoReboot")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ CrashControl \| AutoReboot")
 </dt> </dl>
 
 El sistema se reiniciará automáticamente durante una operación de recuperación.
@@ -108,7 +108,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Breve descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -118,25 +118,25 @@ Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ CrashControl \| dumpfile")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ CrashControl \| DumpFile")
 </dt> </dl>
 
-Ruta de acceso completa al archivo de depuración. Un archivo de depuración se crea con el estado de memoria del equipo después de un error del equipo.
+Ruta de acceso completa al archivo de depuración. Se crea un archivo de depuración con el estado de memoria del equipo después de un error del equipo.
 
-Ejemplo: "C: \\ Windows \\ Memory. DMP"
+Ejemplo: "C: \\ Windows \\ Memory.dmp"
 
 </dd> <dt>
 
 **DebugInfoType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Tipo de información de depuración escrita en el archivo de registro.
@@ -159,7 +159,7 @@ Tipo de información de depuración escrita en el archivo de registro.
 
 <span id="Kernel_memory_dump"></span><span id="kernel_memory_dump"></span><span id="KERNEL_MEMORY_DUMP"></span>
 
-**Volcado de memoria del kernel** (2)
+**Volcado de memoria del** kernel (2)
 
 
 </dt> <dd></dd> <dt>
@@ -184,7 +184,7 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -194,12 +194,12 @@ Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Versión expandida de la propiedad **DebugFilePath** .
+Versión expandida de la **propiedad DebugFilePath.**
 
-Ejemplo: "C: \\ Windows \\ Memory. DMP"
+Ejemplo: "C: \\ Windows \\ Memory.dmp"
 
 </dd> <dt>
 
@@ -209,12 +209,12 @@ Ejemplo: "C: \\ Windows \\ Memory. DMP"
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Versión expandida de la propiedad **MiniDumpDirectory** .
+Versión expandida de la **propiedad MiniDumpDirectory.**
 
-Ejemplo: "C: \\ minivolcado de Windows \\ "
+Ejemplo: "C: \\ Windows \\ MiniDump"
 
 </dd> <dt>
 
@@ -224,13 +224,13 @@ Ejemplo: "C: \\ minivolcado de Windows \\ "
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**desusados**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ CrashControl \| KernelDumpOnly")
+Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ CrashControl \| KernelDumpOnly")
 </dt> </dl>
 
-Solo la información de depuración del kernel se escribirá en el archivo de registro de depuración. Si es **true**, solo el estado del kernel se escribe en un archivo en caso de que se produzca un error del sistema. Si **es false**, el sistema intentará registrar el estado de la memoria y los dispositivos que puedan proporcionar información sobre el sistema cuando se produjo un error.
+Solo se escribirá información de depuración del kernel en el archivo de registro de depuración. Si **es TRUE,** solo se escribe el estado del kernel en un archivo en caso de error del sistema. Si **es FALSE,** el sistema intentará registrar el estado de la memoria y los dispositivos que puedan proporcionar información sobre el sistema cuando se ha fallado.
 
 </dd> <dt>
 
@@ -240,15 +240,15 @@ Solo la información de depuración del kernel se escribirá en el archivo de re
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ CrashControl \| MiniDumpDir")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ CrashControl \| MiniDumpDir")
 </dt> </dl>
 
-Directorio en el que se registrarán y acumularán pequeños archivos de volcado de memoria.
+Directorio donde se registrarán y acumularán archivos de volcado de memoria pequeños.
 
-Ejemplo: "% systemRoot% \\ minivolcado"
+Ejemplo: "%systemRoot% \\ MiniDump"
 
 </dd> <dt>
 
@@ -264,7 +264,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Nombre de identificación para esta instancia de la clase **\_ OSRecoveryConfiguration de Win32** .
+Identificar el nombre de esta instancia de la **clase \_ OSRecoveryConfiguration de Win32.**
 
 </dd> <dt>
 
@@ -274,13 +274,13 @@ Nombre de identificación para esta instancia de la clase **\_ OSRecoveryConfigu
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ CrashControl \| Overwrite")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ CrashControl \| Overwrite")
 </dt> </dl>
 
-El nuevo archivo de depuración sobrescribirá una existente.
+El nuevo archivo de depuración sobrescribirá uno existente.
 
 </dd> <dt>
 
@@ -290,13 +290,13 @@ El nuevo archivo de depuración sobrescribirá una existente.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ CrashControl \| SendAlert")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ CrashControl \| SendAlert")
 </dt> </dl>
 
-El mensaje de alerta se enviará al administrador del sistema en caso de que se produzca un error del sistema operativo.
+El mensaje de alerta se enviará al administrador del sistema en caso de error del sistema operativo.
 
 </dd> <dt>
 
@@ -314,7 +314,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 
 Identificador por el que se conoce el objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -324,13 +324,13 @@ Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**desusados**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ CrashControl \| CrashDumpEnabled")
+Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ CrashControl \| CrashDumpEnabled")
 </dt> </dl>
 
-La información de depuración se escribirá en un archivo de registro.
+La información de depuración se va a escribir en un archivo de registro.
 
 </dd> <dt>
 
@@ -340,19 +340,19 @@ La información de depuración se escribirá en un archivo de registro.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ CrashControl \| LogEvent")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ CrashControl \| LogEvent")
 </dt> </dl>
 
 Los eventos se escribirán en un registro del sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ OSRecoveryConfiguration de Win32** se deriva de la [**\_ configuración de CIM**](cim-setting.md).
+La **clase \_ OSRecoveryConfiguration de Win32** se deriva de [**cim \_ setting**](cim-setting.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -362,8 +362,8 @@ La **clase \_ OSRecoveryConfiguration de Win32** se deriva de la [**\_ configura
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

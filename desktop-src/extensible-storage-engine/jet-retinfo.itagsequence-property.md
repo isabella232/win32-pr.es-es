@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_RETINFO. itagSequence'
-title: Propiedad JET_RETINFO. itagSequence
+description: 'Más información sobre: JET_RETINFO.itagSequence'
+title: JET_RETINFO.itagSequence, propiedad
 TOCTitle: 'itagSequence property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RETINFO.itagSequence
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retinfo.itagsequence(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: df42b6a52b34ec265aceb5b069b06f39c0663b44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4ae56fff26b826198b9289fecf8edfc054d6c67f58135788260d24bce1c0b3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945715"
 ---
-# <a name="jet_retinfoitagsequence-property"></a>Propiedad JET_RETINFO. itagSequence
+# <a name="jet_retinfoitagsequence-property"></a>JET_RETINFO.itagSequence, propiedad
 
-Obtiene o establece el número de secuencia de un valor en una columna con varios valores. La matriz de valores se basa en uno. El primer valor es Sequence 1, no 0. Si la columna de registro solo tiene un valor, se debe pasar 1 como itagSequence.
+Obtiene o establece el número de secuencia del valor de una columna con varios valores. La matriz de valores se basa en uno. El primer valor es la secuencia 1, no 0. Si la columna de registro solo tiene un valor, se debe pasar 1 como itagSequence.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int itagSequence { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RETINFO (clase)](./jet-retinfo-class.md)
+[JET_RETINFO clase](./jet-retinfo-class.md)
 
-[Miembros de JET_RETINFO](./jet-retinfo-members.md)
+[JET_RETINFO miembros](./jet-retinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

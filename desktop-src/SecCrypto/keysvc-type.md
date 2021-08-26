@@ -1,7 +1,7 @@
 ---
-description: La \_ enumeración de tipo KEYSVC define si una clave se aplica a un equipo o a un servicio.
+description: La enumeración KEYSVC \_ TYPE define si una clave se aplica a un equipo o a un servicio.
 ms.assetid: 573a412a-1e9d-47ac-bd09-2319d4b9712b
-title: Enumeración KEYSVC_TYPE (Rkeysvcc. h)
+title: KEYSVC_TYPE enumeración (Rkeysvcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Rkeysvcc.h
-ms.openlocfilehash: 71d6724f7bae78a3c1ac4da83289c151b7ec1a73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c23cc259029cf76fcb1590e6261623827d59b48c9a0728e21c8250ca3e858f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119976105"
 ---
-# <a name="keysvc_type-enumeration"></a>\_Enumeración de tipo KEYSVC
+# <a name="keysvc_type-enumeration"></a>Enumeración KEYSVC \_ TYPE
 
-La enumeración de **\_ tipo KEYSVC** define si una clave se aplica a un equipo o a un servicio.
+La **enumeración KEYSVC \_ TYPE** define si una clave se aplica a un equipo o a un servicio.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -61,8 +61,8 @@ La clave es para un servicio.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETANCHORHIGHLIGHT (commctrl. h)
-description: Recupera el valor de resaltado de delimitador de una barra de herramientas.
+title: TB_GETANCHORHIGHLIGHT mensaje (Commctrl.h)
+description: Recupera la configuración de resaltado de delimitador para una barra de herramientas.
 ms.assetid: 167d481c-8684-40eb-9323-cfa238be3643
 keywords:
-- TB_GETANCHORHIGHLIGHT controles de mensajes de Windows
+- TB_GETANCHORHIGHLIGHT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bfff5ef1853bbf5657604c673dcc6a9be43af83
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eadee4fd029cfe8ffb43960070538cf6574ca3bb178829f65af1ddc0753b9ef2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919085"
 ---
-# <a name="tb_getanchorhighlight-message"></a>\_Mensaje GETANCHORHIGHLIGHT TB
+# <a name="tb_getanchorhighlight-message"></a>Mensaje \_ DE TB GETANCHORHIGHLIGHT
 
-Recupera el valor de resaltado de delimitador de una barra de herramientas.
+Recupera la configuración de resaltado de delimitador para una barra de herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,7 +37,7 @@ Recupera el valor de resaltado de delimitador de una barra de herramientas.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor booleano que indica si se ha establecido el resaltado de delimitadores. Si este valor es distinto de cero, el resaltado de delimitadores está habilitado. Si este valor es cero, se deshabilita.
+Devuelve un valor booleano que indica si se ha establecido el resaltado de delimitadores. Si este valor es distinto de cero, se habilita el resaltado de delimitadores. Si este valor es cero, se deshabilita.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Devuelve un valor booleano que indica si se ha establecido el resaltado de delim
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

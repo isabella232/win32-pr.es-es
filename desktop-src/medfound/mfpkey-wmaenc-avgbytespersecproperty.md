@@ -1,19 +1,19 @@
 ---
-description: Especifica el promedio de bytes por segundo en una secuencia de audio de velocidad de bits variable (VBR) basada en la calidad.
+description: Especifica el promedio de bytes por segundo en una secuencia de audio de velocidad de bits variable (VBR) basada en calidad.
 ms.assetid: dcee969a-617e-4045-a468-8158afb06356
-title: Propiedad MFPKEY_WMAENC_AVGBYTESPERSEC (Wmcodecdsp. h)
+title: MFPKEY_WMAENC_AVGBYTESPERSEC propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ef88b9ea0cf46829a33cb7b9901c7c9f844c1e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfadc41e9f2c9f4410bc84c6d8bf23f30c559b96c83abba80beb719e8ccb8eba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953305"
 ---
-# <a name="mfpkey_wmaenc_avgbytespersec-property"></a>\_ \_ Propiedad AVGBYTESPERSEC de MFPKEY WMAENC
+# <a name="mfpkey_wmaenc_avgbytespersec-property"></a>Propiedad MFPKEY \_ WMAENC \_ AVGBYTESPERSEC
 
-Especifica el promedio de bytes por segundo en una secuencia de audio de velocidad de bits variable (VBR) basada en la calidad.
+Especifica el promedio de bytes por segundo en una secuencia de audio de velocidad de bits variable (VBR) basada en calidad.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -23,11 +23,11 @@ g \_ wszWMACAvgBytesPerSecond
 
 VT \_ I4
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede obtener este valor desde el descodificador después de codificar la secuencia.
+Puede obtener este valor del descodificador después de codificar la secuencia.
 
-Este valor es necesario para que el descodificador de audio descomprima correctamente el contenido.
+El descodificador de audio requiere este valor para descomprimir correctamente el contenido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Este valor es necesario para que el descodificador de audio descomprima correcta
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Este valor es necesario para que el descodificador de audio descomprima correcta
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

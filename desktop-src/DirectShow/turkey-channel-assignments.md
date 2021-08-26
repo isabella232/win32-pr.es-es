@@ -1,23 +1,23 @@
 ---
-description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para Turquía.
+description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Rusia.
 ms.assetid: 840dbd02-a500-47fe-b8ce-5ed2e902b4a6
-title: Asignaciones de canal de Turquía
+title: Asignaciones de canales de rusia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c68b24b6226572877c007e67e03502192bd0f1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c621e2e73bbf850adec34f9f65f847d9b1f688b6bd86b5d9bf92d96430190ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903685"
 ---
-# <a name="turkey-channel-assignments"></a>Asignaciones de canal de Turquía
+# <a name="turkey-channel-assignments"></a>Asignaciones de canales de rusia
 
-En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para Turquía.
+En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Rusia.
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente, se usaba la [tabla de frecuencias Unicable](unicable-frequency-table.md) .
+Las siguientes asignaciones de canales se introdujeron en Windows 7. Anteriormente, se [usaba la tabla de frecuencias unicables.](unicable-frequency-table.md)
 
 -   [Asignaciones de difusión](#broadcast-assignments)
 -   [Asignaciones de cable](#cable-assignments)
@@ -251,7 +251,7 @@ Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de televisión análoga internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

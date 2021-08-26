@@ -1,19 +1,19 @@
 ---
-description: El ejemplo siguiente contiene una solicitud de renovación de PKCS \# 7. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+description: El ejemplo siguiente contiene una solicitud de renovación PKCS \# 7. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 ms.assetid: 3752600c-40a9-401b-9949-8536203d7f14
-title: Solicitud de renovación de PKCS \# 7
+title: Solicitud de renovación pkcs \# 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ec3e8985ff77876295aa73b030e1c17d3e27c3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44473282c3b0efb283c4ad3e8b5cad17bed5b143449781f4708114a868546c60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119880714"
 ---
-# <a name="pkcs-7-renewal-request"></a>Solicitud de renovación de PKCS \# 7
+# <a name="pkcs-7-renewal-request"></a>Solicitud de renovación pkcs \# 7
 
-El ejemplo siguiente contiene una solicitud de renovación de PKCS \# 7. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+El ejemplo siguiente contiene una solicitud de renovación PKCS \# 7. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 
 ``` syntax
 [NewRequest]
@@ -21,7 +21,7 @@ RequestType=pkcs7
 RenewalCert=248f7d3c00000000086e
 ```
 
-La configuración especifica el tipo de solicitud (PKCS \# 7) y el número de serie del certificado en el que se basa la solicitud. Esto genera el siguiente resultado.
+La configuración especifica el tipo de solicitud (PKCS 7) y el número de serie del certificado en el que \# se basa la solicitud. Esto genera la salida siguiente.
 
 ``` syntax
 PKCS7 Message:

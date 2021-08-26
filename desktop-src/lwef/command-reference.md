@@ -1,19 +1,19 @@
 ---
 title: Referencia de comandos (herramienta de edición de sonido de información lingüística)
-description: Esta referencia de comando describe la herramienta de edición de sonidos de información lingüística. Microsoft Agent está en desuso a partir de Windows 7.
+description: Esta referencia de comando describe la herramienta de edición de sonidos de información lingüística. Microsoft Agent está en desuso a partir Windows 7.
 ms.assetid: 084f14ee-6774-46e2-a4ec-92f480f2f74a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a929691a96cfa62417785e1348448d78cc227be
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 7d942bccfc8d995b716902b3569eb05ddcd4cad5b12dc9e5fa2a781d692b6ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963235"
 ---
 # <a name="command-reference-linguistic-information-sound-editing-tool"></a>Referencia de comandos (herramienta de edición de sonido de información lingüística)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ### <a name="the-file-menu"></a>Menú Archivo
 
@@ -36,7 +36,7 @@ Muestra el cuadro de diálogo Abrir, lo que le permite abrir un archivo de sonid
 <span id="Save"></span><span id="save"></span><span id="SAVE"></span>**Salvar**
 </dt> <dd>
 
-Guarda un archivo de sonido. Si el archivo de sonido no existe (no se ha denominado), el editor de sonido muestra el cuadro de diálogo Guardar como para la entrada del nombre de archivo.
+Guarda un archivo de sonido. Si el archivo de sonido no existe (no se ha llamado), el editor de sonido muestra el cuadro de diálogo Guardar como para la entrada del nombre de archivo.
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Muestra el cuadro de diálogo Reemplazar phoneme que le permite reemplazar la et
 
 </dd> <dt>
 
-<span id="Delete_Phoneme"></span><span id="delete_phoneme"></span><span id="DELETE_PHONEME"></span>**Eliminación de phoneme**
+<span id="Delete_Phoneme"></span><span id="delete_phoneme"></span><span id="DELETE_PHONEME"></span>**Eliminación de Phoneme**
 </dt> <dd>
 
 Elimina la etiqueta de phoneme seleccionada.

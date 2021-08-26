@@ -1,46 +1,46 @@
 ---
 title: Enumeraciones (infraestructura del mismo nivel)
-description: Mediante el uso de enumeraciones, puede obtener una lista de todas las entidades del mismo nivel específicas que coincidan con los criterios.
+description: Mediante enumeraciones, puede obtener una lista de todas las entidades del mismo nivel específicas que coincidan con sus criterios.
 ms.assetid: 81391e4f-aea1-4f5e-a32b-436a3856993b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c90a6806c9fdf7b776980abbaaa3f28643c49360
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6514866001734fb0ba0d73c94d5d4d8f8b4cfc6987d121f058a6bfcb00f792c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887635"
 ---
 # <a name="enumerations-peer-infrastructure"></a>Enumeraciones (infraestructura del mismo nivel)
 
-Mediante el uso de enumeraciones, puede obtener una lista de todas las entidades del mismo nivel específicas que coincidan con los criterios.
+Mediante enumeraciones, puede obtener una lista de todas las entidades del mismo nivel específicas que coincidan con sus criterios.
 
 **Para obtener una enumeración y recuperar los resultados**
 
-1.  Obtener un identificador de la enumeración. Llame a una función **PeerEnum** , por ejemplo, llame a la función de gráficos del mismo nivel de [**PeerGraphEnumRecords**](/windows/desktop/api/P2P/nf-p2p-peergraphenumrecords) . Las funciones **PeerEnum** crean la enumeración y devuelven un identificador a esa enumeración a la aplicación que realiza la llamada. Este identificador debe usarse para recuperar los resultados.
-2.  Opcionalmente, obtenga el número de entidades en la enumeración. Llame a una función **GetItemCount** , por ejemplo, llame a [**PeerGraphGetItemCount**](/windows/desktop/api/P2P/nf-p2p-peergraphgetitemcount) o [**PeerGetItemCount**](/windows/desktop/api/P2P/nf-p2p-peergetitemcount).
+1.  Obtenga un identificador para la enumeración . Llame a **una función PeerEnum,** por ejemplo, llame a la [**función PeerGraphEnumRecords**](/windows/desktop/api/P2P/nf-p2p-peergraphenumrecords) Peer Graphing. Las **funciones PeerEnum** crean la enumeración y devuelven un identificador a esa enumeración a la aplicación que realiza la llamada. Este identificador debe usarse para recuperar los resultados.
+2.  Opcionalmente, obtenga el número de entidades de la enumeración . Llame a **una función GetItemCount,** por ejemplo, llame a [**PeerGraphGetItemCount**](/windows/desktop/api/P2P/nf-p2p-peergraphgetitemcount) [**o PeerGetItemCount.**](/windows/desktop/api/P2P/nf-p2p-peergetitemcount)
     > [!Note]  
-    > Puede usar el valor devuelto por la función **GetItemCount** para determinar el número de elementos disponibles para recuperar.
+    > Puede usar el valor devuelto por la **función GetItemCount** para determinar el número de elementos disponibles para recuperar.
 
      
 
-3.  Recupera un grupo de resultados. Llame a una función **GetNextItem** , por ejemplo, llame a [**PeerGraphGetNextItem**](/windows/desktop/api/P2P/nf-p2p-peergraphgetnextitem).
+3.  Recupera un grupo de resultados. Llame a **una función GetNextItem,** por ejemplo, llame a [**PeerGraphGetNextItem**](/windows/desktop/api/P2P/nf-p2p-peergraphgetnextitem).
     > [!Note]  
-    > Cuando una aplicación llama a una función **GetNextItem** , especifica el número de entidades que se van a devolver y, a continuación, la función devuelve un puntero a una matriz de punteros a las entidades y el número de entidades, que es siempre menor o igual que el número especificado. Es posible que una aplicación necesite llamar a esta función muchas veces, hasta que el número de entidades devueltas sea menor que el número solicitado.
+    > Cuando una aplicación llama a una función **GetNextItem,** especifica el número de entidades que se devuelven y, a continuación, la función devuelve un puntero a una matriz de punteros a las entidades y el número de entidades, que siempre es menor o igual que el número especificado. Es posible que una aplicación tenga que llamar a esta función muchas veces, hasta que el número de entidades devueltas sea menor que el número solicitado.
 
      
 
-4.  Después de que no se necesiten los datos, libere el puntero a los datos. Llame a una función **FreeData** , por ejemplo, llame a [**PeerGraphFreeData**](/windows/desktop/api/P2P/nf-p2p-peergraphfreedata) o [**PeerFreeData**](/windows/desktop/api/P2P/nf-p2p-peerfreedata).
+4.  Una vez que no se necesiten los datos, libera el puntero a los datos. Llame a **una función FreeData,** por ejemplo, llame a [**PeerGraphFreeData**](/windows/desktop/api/P2P/nf-p2p-peergraphfreedata) o [**PeerFreeData.**](/windows/desktop/api/P2P/nf-p2p-peerfreedata)
     > [!Note]  
-    > Para obtener más información, vea [liberar datos del mismo nivel](freeing-peer-data.md).
+    > Para obtener más información, vea [Liberar datos del mismo nivel.](freeing-peer-data.md)
 
      
 
-5.  Después de que la aplicación no necesite el identificador de la enumeración, suéltelo. Llame a una función **EndEnumeration** , por ejemplo, llame a [**PeerEndEnumeration**](/windows/desktop/api/P2P/nf-p2p-peerendenumeration) o [**PeerGraphEndEnumeration**](/windows/desktop/api/P2P/nf-p2p-peergraphendenumeration).
+5.  Una vez que la aplicación no necesite el identificador de la enumeración, suéltelo. Llame a **una función EndEnumeration,** por ejemplo, llame a [**PeerEndEnumeration**](/windows/desktop/api/P2P/nf-p2p-peerendenumeration) o [**PeerGraphEndEnumeration**](/windows/desktop/api/P2P/nf-p2p-peergraphendenumeration).
 
 ## <a name="example-of-an-enumeration"></a>Ejemplo de una enumeración
 
-El siguiente fragmento de código muestra cómo enumerar a través de identidades disponibles.
+El siguiente fragmento de código muestra cómo enumerar las identidades disponibles.
 
 
 ```C++

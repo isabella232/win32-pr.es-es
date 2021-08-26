@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_RSTMAP. ToString (método)'
-title: JET_RSTMAP. ToString (método)
+description: 'Más información sobre: JET_RSTMAP. Método ToString'
+title: JET_RSTMAP. Método ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_RSTMAP.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstmap.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3e575907521ba4939ccf25334fc0c60b7eb15d1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14aaa40c1e97eb9b17981990eff99061237a10d9296a4822d418bdb053ca5be5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945385"
 ---
-# <a name="jet_rstmaptostring-method"></a>JET_RSTMAP. ToString (método)
+# <a name="jet_rstmaptostring-method"></a>JET_RSTMAP. Método ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el [JET_RSTMAP](./jet-rstmap-class.md)actual.
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el objeto [JET_RSTMAP](./jet-rstmap-class.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa el [JET_RSTMAP](./jet-rstmap-class.md)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa el objeto [JET_RSTMAP](./jet-rstmap-class.md).  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RSTMAP (clase)](./jet-rstmap-class.md)
+[JET_RSTMAP clase](./jet-rstmap-class.md)
 
-[Miembros de JET_RSTMAP](./jet-rstmap-members.md)
+[JET_RSTMAP miembros](./jet-rstmap-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

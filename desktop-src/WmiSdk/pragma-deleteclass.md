@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0d3b5b1fa209be7fd472a87aec25a5e590d93c5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cb62c9d90d5ac6346e25eaa3c254e0c6dd595805ec6901376ce9dccdf648289
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996295"
 ---
 # <a name="pragma-deleteclass"></a>pragma deleteclass
 
-El comando de preprocesador **pragma deleteclass** elimina una clase existente y sus instancias del repositorio.
+El **comando pragma deleteclass** de preprocesador elimina una clase existente y sus instancias del repositorio.
 
 A continuación se describe la sintaxis:
 
@@ -35,14 +35,14 @@ A continuación se describe la sintaxis:
 
 *ClassName* es el nombre de la clase que el compilador MOF elimina del espacio de nombres actual.
 
-La *\[ marca \]* debe ser uno de los argumentos siguientes.
+*\[ La \]* marca debe ser uno de los argumentos siguientes.
 
 
 
 | Marca   | Descripción                                                                                                  |
 |--------|--------------------------------------------------------------------------------------------------------------|
-| no superada   | Hace que el compilador MOF salga de un mensaje de error si la clase aún no existe en el repositorio. |
-| nofail | Hace que el compilador MOF continúe aunque la clase no exista todavía.                                |
+| no superada   | Hace que el compilador MOF se cierre con un mensaje de error si la clase aún no existe en el repositorio. |
+| nofail | Hace que el compilador MOF continúe incluso si la clase aún no existe.                                |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Interfaz IWMDRMNetReceiver
-description: La interfaz IWMDRMNetReceiver proporciona los métodos necesarios para usar DRM de Microsoft Windows Media para dispositivos de red como receptor. Para obtener una instancia de esta interfaz, llame a IWMDRMProvider CreateObject. Pase \_ el IID IWMDRMNetReceiver como parámetro riid.
+title: IWMDRMNetReceiver (interfaz)
+description: La interfaz IWMDRMNetReceiver proporciona los métodos necesarios para usar Microsoft Windows Media DRM para dispositivos de red como receptor. Para obtener una instancia de esta interfaz, llame a IWMDRMProvider CreateObject. Pase IID \_ IWMDRMNetReceiver como parámetro riid.
 ms.assetid: 29966260-c0aa-4e7e-b827-a872c7429333
 keywords:
-- Interfaz IWMDRMNetReceiver formato de Windows Media
-- Interfaz IWMDRMNetReceiver formato de Windows Media, descrito
+- IWMDRMNetReceiver interface windows Media Format
+- IWMDRMNetReceiver interface windows Media Format , descrito
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7a85ae1525a81e97984e29a5dd28763d934dba2b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 5cb917d7d229b81a6792461c506b2a6b50aaee2af3bd5f133e44273077924f86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104419733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930115"
 ---
-# <a name="iwmdrmnetreceiver-interface"></a>Interfaz IWMDRMNetReceiver
+# <a name="iwmdrmnetreceiver-interface"></a>IWMDRMNetReceiver (interfaz)
 
-La interfaz **IWMDRMNetReceiver** proporciona los métodos necesarios para usar DRM de Microsoft Windows Media para dispositivos de red como receptor.
+La **interfaz IWMDRMNetReceiver** proporciona los métodos necesarios para usar Microsoft Windows Media DRM para dispositivos de red como receptor.
 
-Para obtener una instancia de esta interfaz, llame a [**IWMDRMProvider:: CreateObject**](iwmdrmprovider-createobject.md). Pase el **IID \_ IWMDRMNetReceiver** como parámetro *riid* .
+Para obtener una instancia de esta interfaz, llame [**a IWMDRMProvider::CreateObject**](iwmdrmprovider-createobject.md). Pase **IID \_ IWMDRMNetReceiver como** parámetro *riid.*
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IWMDRMNetReceiver** hereda de [**IWMDRMEventGenerator**](iwmdrmeventgenerator.md). **IWMDRMNetReceiver** también tiene estos tipos de miembros:
+La **interfaz IWMDRMNetReceiver** hereda de [**IWMDRMEventGenerator**](iwmdrmeventgenerator.md). **IWMDRMNetReceiver** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IWMDRMNetReceiver** tiene estos métodos.
+La **interfaz IWMDRMNetReceiver** tiene estos métodos.
 
 
 
@@ -43,7 +43,7 @@ La interfaz **IWMDRMNetReceiver** tiene estos métodos.
 |:-------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------|
 | [**GetLicenseChallenge**](iwmdrmnetreceiver-getlicensechallenge.md)                 | Genera un desafío de licencia que se envía al transmisor al solicitar contenido protegido.<br/>                     |
 | [**GetRegistrationChallenge**](iwmdrmnetreceiver-getregistrationchallenge.md)       | Genera un desafío de registro que se envía al transmisor cuando el receptor se registra o se vuelve a validar.<br/> |
-| [**ProcessLicenseResponse**](iwmdrmnetreceiver-processlicenseresponse.md)           | Procesa la respuesta de la licencia enviada por el transmisor en respuesta a un desafío de licencia.<br/>                              |
+| [**ProcessLicenseResponse**](iwmdrmnetreceiver-processlicenseresponse.md)           | Procesa la respuesta de licencia enviada por el transmisor en respuesta a un desafío de licencia.<br/>                              |
 | [**ProcessRegistrationResponse**](iwmdrmnetreceiver-processregistrationresponse.md) | Procesa la respuesta de registro enviada por el transmisor en respuesta a un desafío de registro.<br/>                    |
 
 
@@ -60,7 +60,7 @@ La interfaz **IWMDRMNetReceiver** tiene estos métodos.
 [**IWMDRMEventGenerator**](iwmdrmeventgenerator.md)
 </dt> <dt>
 
-[**Interfaz IWMDRMNetTransmitter**](iwmdrmnettransmitter.md)
+[**IWMDRMNetTransmitter (interfaz)**](iwmdrmnettransmitter.md)
 </dt> </dl>
 
  

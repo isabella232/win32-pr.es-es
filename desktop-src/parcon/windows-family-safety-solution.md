@@ -1,39 +1,39 @@
 ---
-description: Solución de seguridad para la familia Windows
+description: Windows Solución de seguridad para familias
 ms.assetid: b89cf0c7-bf9f-4bcb-b008-8b7c792f3300
-title: Solución de seguridad para la familia Windows
+title: Windows Solución de seguridad para familias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a2d8776893468df4f4877c7220436f505ab1e6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7cc5e5749201fc849e7c9476c97c6fbd3dc5ee5b2d3f26ed3988eb72ac59c1ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951655"
 ---
-# <a name="windows-family-safety-solution"></a>Solución de seguridad para la familia Windows
+# <a name="windows-family-safety-solution"></a>Windows Solución de seguridad para familias
 
-Los requisitos clave definidos por Microsoft para una solución más completa son los siguientes. Tenga en cuenta que la definición de en línea es una tecnología principalmente orientada a Internet, a diferencia de un cliente sin conexión que normalmente está limitado en el equipo.
+Los requisitos clave definidos por Microsoft para una solución más completa son los siguientes. Tenga en cuenta que la definición de en línea es una tecnología orientada principalmente a Internet, a diferencia de un cliente sin conexión que normalmente está limitado en el equipo.
 
--   Proporcionan un área única y fácil de encontrar en la interfaz de usuario del sistema operativo donde se pueden detectar fácilmente todas las directivas de controles parentales, el control de la supervisión de la actividad y los datos de actividad de una identidad.
+-   Proporcione un área única y fácil de encontrar en la interfaz de usuario del sistema operativo donde se puedan detectar fácilmente todas las directivas de controles parentales, el control de la supervisión de la actividad y los datos de actividad de una identidad.
 
--   Admitir la supervisión de la actividad suficiente del usuario controlado para que un padre o tutor tenga una confianza razonable de que se puedan detectar actividades de riesgo. Además, registre la reconfiguración de las directivas del usuario controlado para que los cambios no deseados o no autorizados sean reconocibles.
+-   Permite supervisar la actividad suficiente del usuario controlado para que un elemento primario o guardián tenga una confianza razonable de que se puedan detectar actividades de riesgo. Además, se puede detectar la reconfiguración de registros de las directivas del usuario controlado para que se puedan detectar cambios no deseados o no autorizados.
 
--   Exponga las capacidades de supervisión de actividades a través de las interfaces estándar de registro de eventos de Windows Vista y proporcione una solución de visor integrada. Defina los eventos de actividad estándar y proporcione extensibilidad a la generación de eventos personalizados por parte de los ISV.
+-   Exponga las funcionalidades de supervisión de actividad a través Windows interfaces de registro de eventos de Vista y proporcione una solución de visor integrada. Defina eventos de actividad estándar y proporcione extensibilidad a la generación de eventos personalizados por isv.
 
--   Promueva que toda la supervisión y las restricciones de un usuario se activen solo en función de los padres o tutores. Siempre que sea posible, la funcionalidad de restricciones debe estar completamente inactiva para los usuarios no controlados con el fin de minimizar los riesgos de seguridad y compatibilidad de aplicaciones.
+-   Promueva que todas las restricciones y la supervisión de un usuario estén activadas solo de forma opt-in por parte de los padres o guardianes. Siempre que sea posible, la funcionalidad de restricciones debe estar completamente inactiva para que los usuarios no controlados minimicen los riesgos de compatibilidad de aplicaciones y seguridad.
 
--   Microsoft procurará, siempre que sea posible, no realizar resoluciones de valor por edad u otros parámetros para el usuario controlado (es posible que otros fabricantes decidan hacerlo). Dichas decisiones se dejan al padre o a la protección, que a menudo se ven afectadas por comunidades u organizaciones.
+-   Microsoft se esfuerza, siempre que sea posible, por no tomar decisiones de valor por edad u otros parámetros para el usuario controlado (es posible que terceros decidan hacerlo). Estas decisiones las deja el primario o el guardián, a menudo influenciados por comunidades u organizaciones.
 
--   Proporcionar implementaciones en el producto para la supervisión de actividades sin conexión y las restricciones en las que las ofertas o no están disponibles hoy en día, donde la funcionalidad de riesgo de seguridad asociada está disponible en el producto, o en los casos en los que una solución de Microsoft proporciona una funcionalidad compatible y sólida totalmente integrada con el diseño del sistema operativo.
+-   Proporcione implementaciones en el producto para la supervisión de la actividad sin conexión y restricciones en las que actualmente hay pocas ofertas disponibles, donde la funcionalidad de riesgo de seguridad asociada está disponible en el producto o donde una solución de Microsoft proporciona funcionalidad capaz y sólida totalmente integrada con el diseño del sistema operativo.
 
--   Por lo general, promueva que las aplicaciones realicen sus propios registros y restricciones para obtener una mejor experiencia de contexto y de interfaz de usuario.
+-   Por lo general, promueva que las aplicaciones realicen su propio registro y restricciones para obtener el mejor contexto y experiencia de interfaz de usuario.
 
-    Excepción: proporcione una supervisión y restricciones completas de la actividad en línea en áreas seleccionadas en las que la ventaja de los consumidores y del sector supere los costos.
+    Excepción: proporcione restricciones y supervisión completa de la actividad en línea en áreas seleccionadas en las que las ventajas para los consumidores y el sector superan los costos.
 
--   Exponga la configuración de la interfaz de usuario de controles parentales y las definiciones de eventos de actividad mediante el uso de API públicas para que otros usuarios puedan consultar el estado, modificar la configuración y leer los registros de actividad si se ejecutan con suficientes privilegios de cuenta de Windows.
+-   Exponga la configuración de la interfaz de usuario de los controles parentales y las definiciones de eventos de actividad mediante api públicas para que terceros puedan consultar el estado, modificar la configuración y leer los registros de actividad si se ejecutan con suficientes privilegios de Windows cuenta.
 
-Un objetivo general es promover la coexistencia de soluciones de controles parentales de terceros con la funcionalidad integrada y permitir agregar valor mediante la integración con, la extensión o el suministro de funcionalidades alternativas cuando sea adecuado.
+Un objetivo general es promover la coexistencia de las soluciones de controles parentales de terceros con la funcionalidad integrada y admitir la adición de valor mediante la integración, la ampliación o el suministro de funcionalidades alternativas cuando sea adecuado.
 
  
 

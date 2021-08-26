@@ -1,8 +1,8 @@
 ---
-description: Win32 \_ TCPIPPrinterPort&\# 32; La clase WMI representa un punto de acceso al servicio TCP/IP.
+description: Win32 \_ TCPIPPrinterPort&\# 32; La clase WMI representa un punto de acceso de servicio TCP/IP.
 ms.assetid: b1be18b6-47de-461c-a90b-c7e0537130ef
 ms.tgt_platform: multiple
-title: Win32_TCPIPPrinterPort (clase)
+title: Win32_TCPIPPrinterPort clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -31,16 +31,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7a0b0f0cb73cc60ff117399a636b0ab8542fac6e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b2861d12740f894cc17a91d6a3f4c2b6792d38f658063bc89474f3656a74b45f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917415"
 ---
-# <a name="win32_tcpipprinterport-class"></a>\_Clase Win32 TCPIPPrinterPort
+# <a name="win32_tcpipprinterport-class"></a>Clase TCPIPPrinterPort de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ TCPIPPrinterPort de Win32** representa un punto de acceso al servicio TCP/IP.
+La clase [WMI](../wmisdk/retrieving-a-class.md) **\_ WIN32 TCPIPPrinterPort** representa un punto de acceso del servicio TCP/IP.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -90,7 +90,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, el equipo cuenta los bytes de un documento antes de enviarlos a la impresora y la impresora devuelve el número de bytes leídos realmente. Esta capacidad se usa para el diagnóstico cuando se detectan bytes que faltan en la salida de impresión.
+Si **es TRUE,** el equipo cuenta los bytes de un documento antes de enviarlos a la impresora y la impresora informa del número de bytes leídos realmente. Esta funcionalidad se usa para los diagnósticos cuando se detectan bytes que faltan en la salida de impresión.
 
 </dd> <dt>
 
@@ -103,12 +103,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -121,12 +121,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**\_ clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la clase o subclase utilizada en la creación de una instancia de. Cuando se usa con otras propiedades de clave de la clase, esta propiedad permite que todas las instancias de la clase y sus subclases se identifiquen de forma única.
+Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda de [**\_ punto CIM**](cim-serviceaccesspoint.md).
+Esta propiedad se hereda de [**CIM \_ ServiceAccessPoint.**](cim-serviceaccesspoint.md)
 
 </dd> <dt>
 
@@ -139,12 +139,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
-Una descripción textual del objeto.
+Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -164,18 +164,18 @@ Dirección del dispositivo o servidor de impresión.
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
 Indica cuándo se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -188,38 +188,38 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Identifica de forma única el punto de acceso al servicio y proporciona una indicación de la funcionalidad que se administra. Esta funcionalidad se describe con más detalle en la propiedad Descripción del objeto.
+Identifica de forma única el punto de acceso de servicio y proporciona una indicación de la funcionalidad que se administra. Esta funcionalidad se describe con más detalle en la propiedad Description del objeto.
 
-Esta propiedad se hereda de [**\_ punto CIM**](cim-serviceaccesspoint.md).
+Esta propiedad se hereda de [**CIM \_ ServiceAccessPoint.**](cim-serviceaccesspoint.md)
 
 </dd> <dt>
 
-**NúmeroDePuerto**
+**Númerodepuerto**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de puertos TCP utilizados por el monitor de puerto para comunicarse con el dispositivo.
+Número de puertos TCP utilizados por el monitor de puertos para comunicarse con el dispositivo.
 
 </dd> <dt>
 
 **Protocolo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Protocolo de impresión usado. Algunas impresoras solo admiten LPR.
+Protocolo de impresión utilizado. Algunas impresoras solo admiten LPR.
 
 <dt>
 
@@ -243,9 +243,9 @@ Imprimir directamente en un dispositivo o servidor de impresión.
 
 </dt> <dd>
 
-LPR
+Lpr
 
-Protocolo heredado, que se reemplaza finalmente por RAW.
+Protocolo heredado, que finalmente se reemplaza por RAW.
 
 </dd> </dl>
 
@@ -275,20 +275,20 @@ Tipo de acceso: solo lectura
 
 Valor de nivel de seguridad para el dispositivo.
 
-Ejemplo: "Public" "
+Ejemplo: "public""
 
 </dd> <dt>
 
 **SNMPDevIndex**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de índice de SNMP de este dispositivo para el agente SNMP.
+Número de índice SNMP de este dispositivo para el agente SNMP.
 
 </dd> <dt>
 
@@ -301,7 +301,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, esta impresora admite [RFC 1759](https://www.ietf.org/rfc/rfc1759.txt) (Protocolo simple de administración de redes) y puede proporcionar información de estado enriquecida desde el dispositivo.
+Si **es TRUE,** esta impresora admite [RFC 1759](https://www.ietf.org/rfc/rfc1759.txt) (Protocolo simple de administración de redes) y puede proporcionar información de estado enriquección del dispositivo.
 
 </dd> <dt>
 
@@ -314,14 +314,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Cadena que indica el estado actual del objeto. Se puede definir un estado operativo y no operativo. El estado operativo puede ser "correcto", "degradado" y "Pred FAIL". "Pred FAIL" indica que un elemento funciona correctamente, pero está prediciendo un error (por ejemplo, una unidad de disco duro habilitada para SMART).
+Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "error", "iniciando", "deteniendo" y "servicio". "Servicio" puede aplicarse durante el reflejo del disco: Resilvering, recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni en ninguno de los otros Estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -329,84 +329,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -422,12 +422,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ Sistema CIM**](cim-system.md).**CreationClassName**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**clave CIM, \_**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito.
+Nombre de clase de creación del sistema de ámbito.
 
-Esta propiedad se hereda de [**\_ punto CIM**](cim-serviceaccesspoint.md).
+Esta propiedad se hereda de [**CIM \_ ServiceAccessPoint.**](cim-serviceaccesspoint.md)
 
 </dd> <dt>
 
@@ -440,30 +440,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ Sistema CIM**](cim-system.md).**Nombre**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**\_ punto CIM**](cim-serviceaccesspoint.md).
+Esta propiedad se hereda de [**CIM \_ ServiceAccessPoint.**](cim-serviceaccesspoint.md)
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
+Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 </dt> </dl>
 
-Tipo de SAP, como adjuntado o redirigido.
+Tipo de SAP, como asociado o redirigido.
 
-Esta propiedad se hereda de [**\_ punto CIM**](cim-serviceaccesspoint.md).
+Esta propiedad se hereda de [**CIM \_ ServiceAccessPoint.**](cim-serviceaccesspoint.md)
 
 <dt>
 
@@ -490,31 +490,31 @@ Esta propiedad se hereda de [**\_ punto CIM**](cim-serviceaccesspoint.md).
 
 <span id="Net_Attached"></span><span id="net_attached"></span><span id="NET_ATTACHED"></span>
 
-**Net \_ Adjunta** (8)
+**Net \_ Conectado** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="unknown"></span><span id="UNKNOWN"></span>
 
-**desconocido** (16)
+**unknown** (16)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ TCPIPPrinterPort de Win32** se deriva [**de \_ punto de CIM**](cim-serviceaccesspoint.md) que deriva [**de \_ CIM LogicalElement**](cim-logicalelement.md).
+La **clase \_ TCPIPPrinterPort de Win32** se deriva de [**CIM \_ ServiceAccessPoint,**](cim-serviceaccesspoint.md) que deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
-El privilegio **SeLoadDriverPrivilege** es necesario para eliminar una instancia de esta clase WMI. El siguiente fragmento de script muestra cómo establecer una conexión a WMI que usa este privilegio.
+El **privilegio SeLoadDriverPrivilege** es necesario para eliminar una instancia de esta clase WMI. El siguiente fragmento de script muestra cómo realizar una conexión a WMI que usa este privilegio.
 
 `Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate, (LoadDriver)}")`
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de PowerShell se quita una impresora y el puerto de impresora TCPIP asociado.
+El siguiente ejemplo de PowerShell quita una impresora y el puerto de impresora TCPIP asociado.
 
 
 ```PowerShell
@@ -537,8 +537,8 @@ function Remove-PrinterAndPort{
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -547,10 +547,10 @@ function Remove-PrinterAndPort{
 
 <dl> <dt>
 
-[**\_Punto CIM**](cim-serviceaccesspoint.md)
+[**Servicio \_ CIMAccessPoint**](cim-serviceaccesspoint.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

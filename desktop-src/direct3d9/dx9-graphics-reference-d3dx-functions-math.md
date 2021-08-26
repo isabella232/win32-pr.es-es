@@ -4,12 +4,12 @@ ms.assetid: 00f0f943-64fa-45e3-8bd3-ca61c8b87e1a
 title: Funciones matemáticas (gráficos de Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17fa7e56282d74dbe6a67b023ca5f64d0f88be20
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d3c9632b09c008ab0dba46f834e4faabe225f3c1ef779f59ee4214591188a065
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952165"
 ---
 # <a name="math-functions-direct3d-9-graphics"></a>Funciones matemáticas (gráficos de Direct3D 9)
 
@@ -18,13 +18,13 @@ ms.locfileid: "112408218"
 
  
 
-La biblioteca matemática proporcionada por la biblioteca de utilidades D3DX proporciona funciones para calcular operaciones matemáticas 3D. Cada una de las funciones puede tomar el mismo objeto que los parámetros \[ pasados \] y \[ \] devueltos. Además, los parámetros out normalmente se devuelven como valores devueltos, por lo que la salida de una función matemática se puede usar como parámetro para otra función matemática.
+La biblioteca matemática proporcionada por la biblioteca de utilidad D3DX proporciona funciones para calcular operaciones matemáticas 3D. Cada una de las funciones puede tomar el mismo objeto que los parámetros \[ pasados \] y \[ \] devueltos. Además, los parámetros out normalmente se devuelven como valores devueltos, por lo que la salida de una función matemática se puede usar como parámetro para otra función matemática.
 
 Muchas de las funciones se implementan en d3dx9math.inl.
 
 Las funciones de aplicación matemática 3D se pueden organizar en los grupos siguientes.
 
-## <a name="functions"></a>Functions
+## <a name="functions"></a>Funciones
 
 -   [**D3DXColorAdd**](d3dxcoloradd.md)
 -   [**D3DXColorAdjustContrast**](d3dxcoloradjustcontrast.md)

@@ -1,9 +1,9 @@
 ---
-title: Network. bufferingTime
-description: La propiedad bufferingTime especifica o recupera la cantidad de tiempo en milisegundos asignados para almacenar en búfer los datos entrantes antes de comenzar la reproducción.
+title: Network.bufferingTime
+description: La propiedad bufferingTime especifica o recupera la cantidad de tiempo en milisegundos asignada para almacenar en búfer los datos entrantes antes de que comience la reproducción.
 ms.assetid: b52b7f44-6be1-4299-94da-c37d758795af
 keywords:
-- Windows Media Player de red. bufferingTime
+- Network.bufferingTime Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27b805173403268afff473db427b58193382afe6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: afe4a68a7ad1ae8a1444f1e2f31ad09461e05d221e8fceae52960bd5927aac0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901735"
 ---
-# <a name="networkbufferingtime"></a>Network. bufferingTime
+# <a name="networkbufferingtime"></a>Network.bufferingTime
 
-La propiedad **bufferingTime** especifica o recupera la cantidad de tiempo en milisegundos asignados para almacenar en búfer los datos entrantes antes de comenzar la reproducción.
+La **propiedad bufferingTime** especifica o recupera la cantidad de tiempo en milisegundos asignada para almacenar en búfer los datos entrantes antes de que comience la reproducción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *red*. **bufferingTime**
+*player*. *network*. **bufferingTime**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de lectura y escritura (**Long**) que va desde cero hasta 60.000 con un valor predeterminado de 5.000.
+Esta propiedad es un número de lectura y **escritura** **(long)** que va de cero a 60 000 con un valor predeterminado de 5000.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **bufferingTime** para especificar el número de segundos asignados para almacenar en búfer los datos entrantes. La información se recupera de un elemento de entrada de texto HTML creado con ID = "bufText". El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **bufferingTime para** especificar el número de segundos asignados para almacenar en búfer los datos entrantes. La información se recupera de un elemento HTML TEXT INPUT creado con id. = "bufText". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -61,7 +61,7 @@ En el siguiente ejemplo de JScript se usa *Network*. **bufferingTime** para espe
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

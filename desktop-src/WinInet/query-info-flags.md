@@ -1,6 +1,6 @@
 ---
-title: Marcas de información de consulta (Wininet. h)
-description: Las listas siguientes contienen los atributos y modificadores usados por HttpQueryInfo y QueryInfo.
+title: Marcas de información de consulta (Wininet.h)
+description: Las listas siguientes contienen los atributos y modificadores utilizados por HttpQueryInfo y QueryInfo.
 ms.assetid: b1613193-ae03-411e-bf05-de42f471cd8c
 topic_type:
 - apiref
@@ -100,22 +100,22 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f3a6166c59e158d041e730d2198f6e1b066a8b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0fb2e52a30aa10161963f215e9045db006a82fee482a67947017d20372cefbdb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955555"
 ---
-# <a name="query-info-flags-winineth"></a>Marcas de información de consulta (Wininet. h)
+# <a name="query-info-flags-winineth"></a>Marcas de información de consulta (Wininet.h)
 
-Las listas siguientes contienen los atributos y modificadores usados por [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) y [**QueryInfo**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms774972(v=vs.85)).
+Las listas siguientes contienen los atributos y modificadores utilizados por [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) y [**QueryInfo**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms774972(v=vs.85)).
 
-[**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) (o [**QueryInfo**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms774972(v=vs.85))) utiliza las marcas de atributo para indicar qué datos se van a recuperar. La mayoría de las marcas de atributo se asignan directamente a un encabezado HTTP específico. También hay algunas marcas especiales, como encabezados de [ \_ consulta HTTP \_ sin \_ formato](/windows), que no están relacionadas con un encabezado específico.
+HttpQueryInfo (o [**QueryInfo)**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) usa [](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms774972(v=vs.85))las marcas de atributo para indicar qué datos se van a recuperar. La mayoría de las marcas de atributo se asignan directamente a un encabezado HTTP específico. También hay algunas marcas especiales, como [HTTP \_ QUERY RAW \_ \_ HEADERS](/windows), que no están relacionadas con un encabezado específico.
 
 <dl> <dt>
 
-<span id="HTTP_QUERY_ACCEPT"></span><span id="http_query_accept"></span>**\_aceptación de consulta HTTP \_**
+<span id="HTTP_QUERY_ACCEPT"></span><span id="http_query_accept"></span>**HTTP \_ QUERY \_ ACCEPT**
 </dt> <dd> <dl> <dt>
 
 24
@@ -128,7 +128,7 @@ Recupera los tipos de medios aceptables para la respuesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_ACCEPT_CHARSET"></span><span id="http_query_accept_charset"></span>**\_consulta HTTP \_ Accept \_ CharSet**
+<span id="HTTP_QUERY_ACCEPT_CHARSET"></span><span id="http_query_accept_charset"></span>**HTTP \_ QUERY \_ ACCEPT \_ CHARSET**
 </dt> <dd> <dl> <dt>
 
 25
@@ -141,7 +141,7 @@ Recupera los juegos de caracteres aceptables para la respuesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_ACCEPT_ENCODING"></span><span id="http_query_accept_encoding"></span>**la \_ consulta HTTP \_ acepta la \_ codificación**
+<span id="HTTP_QUERY_ACCEPT_ENCODING"></span><span id="http_query_accept_encoding"></span>**HTTP \_ QUERY \_ ACCEPT \_ ENCODING**
 </dt> <dd> <dl> <dt>
 
 26
@@ -154,7 +154,7 @@ Recupera los valores de codificación de contenido aceptables para la respuesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_ACCEPT_LANGUAGE"></span><span id="http_query_accept_language"></span>**\_idioma de \_ aceptación de consulta HTTP \_**
+<span id="HTTP_QUERY_ACCEPT_LANGUAGE"></span><span id="http_query_accept_language"></span>**HTTP \_ QUERY \_ ACCEPT \_ LANGUAGE**
 </dt> <dd> <dl> <dt>
 
 27
@@ -162,12 +162,12 @@ Recupera los valores de codificación de contenido aceptables para la respuesta.
 
 
 
-Recupera los idiomas naturales aceptables para la respuesta.
+Recupera los lenguajes naturales aceptables para la respuesta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_ACCEPT_RANGES"></span><span id="http_query_accept_ranges"></span>**\_intervalos de \_ aceptación de consulta HTTP \_**
+<span id="HTTP_QUERY_ACCEPT_RANGES"></span><span id="http_query_accept_ranges"></span>**INTERVALOS \_ DE \_ ACEPTACIÓN DE \_ CONSULTAS HTTP**
 </dt> <dd> <dl> <dt>
 
 42
@@ -180,7 +180,7 @@ Recupera los tipos de solicitudes de intervalo que se aceptan para un recurso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_AGE"></span><span id="http_query_age"></span>**antigüedad de la \_ consulta HTTP \_**
+<span id="HTTP_QUERY_AGE"></span><span id="http_query_age"></span>**\_ANTIGÜEDAD DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 48
@@ -188,12 +188,12 @@ Recupera los tipos de solicitudes de intervalo que se aceptan para un recurso.
 
 
 
-Recupera el campo de encabezado de respuesta de edad, que contiene la estimación del remitente de la cantidad de tiempo transcurrido desde que se generó la respuesta en el servidor de origen.
+Recupera el campo Age response-header ,que contiene la estimación del remitente de la cantidad de tiempo desde que se generó la respuesta en el servidor de origen.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_ALLOW"></span><span id="http_query_allow"></span>**\_permitir consulta \_ http**
+<span id="HTTP_QUERY_ALLOW"></span><span id="http_query_allow"></span>**HTTP \_ QUERY \_ ALLOW**
 </dt> <dd> <dl> <dt>
 
 7
@@ -206,7 +206,7 @@ Recibe los verbos HTTP admitidos por el servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_AUTHORIZATION"></span><span id="http_query_authorization"></span>**\_autorización de consulta HTTP \_**
+<span id="HTTP_QUERY_AUTHORIZATION"></span><span id="http_query_authorization"></span>**AUTORIZACIÓN \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 28
@@ -219,7 +219,7 @@ Recupera las credenciales de autorización usadas para una solicitud.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CACHE_CONTROL"></span><span id="http_query_cache_control"></span>**\_control de \_ caché de consulta HTTP \_**
+<span id="HTTP_QUERY_CACHE_CONTROL"></span><span id="http_query_cache_control"></span>**CONTROL DE \_ CACHÉ \_ DE CONSULTAS \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 49
@@ -232,7 +232,7 @@ Recupera las directivas de control de caché.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONNECTION"></span><span id="http_query_connection"></span>**\_conexión de consulta HTTP \_**
+<span id="HTTP_QUERY_CONNECTION"></span><span id="http_query_connection"></span>**CONEXIÓN \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 23
@@ -240,12 +240,12 @@ Recupera las directivas de control de caché.
 
 
 
-Recupera todas las opciones que se especifican para una conexión determinada y que los servidores proxy no deben comunicar con otras conexiones.
+Recupera las opciones especificadas para una conexión determinada y no deben comunicarse mediante servidores proxy a través de conexiones adicionales.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_BASE"></span><span id="http_query_content_base"></span>**\_base de \_ contenido de consulta HTTP \_**
+<span id="HTTP_QUERY_CONTENT_BASE"></span><span id="http_query_content_base"></span>**BASE \_ DE CONTENIDO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 50
@@ -253,12 +253,12 @@ Recupera todas las opciones que se especifican para una conexión determinada y 
 
 
 
-Recupera el URI base (identificador uniforme de recursos) para resolver las direcciones URL relativas dentro de la entidad.
+Recupera el URI base (identificador uniforme de recursos) para resolver direcciones URL relativas dentro de la entidad.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_DESCRIPTION"></span><span id="http_query_content_description"></span>**Descripción del contenido de la \_ consulta HTTP \_ \_**
+<span id="HTTP_QUERY_CONTENT_DESCRIPTION"></span><span id="http_query_content_description"></span>**DESCRIPCIÓN \_ DEL CONTENIDO DE LA CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 4
@@ -266,12 +266,12 @@ Recupera el URI base (identificador uniforme de recursos) para resolver las dire
 
 
 
-Obsoleto. Se mantiene únicamente por compatibilidad con aplicaciones heredadas.
+Obsoleto. Se mantiene solo para la compatibilidad de aplicaciones heredadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_DISPOSITION"></span><span id="http_query_content_disposition"></span>**\_disposición de \_ contenido de consulta HTTP \_**
+<span id="HTTP_QUERY_CONTENT_DISPOSITION"></span><span id="http_query_content_disposition"></span>**DISPOSICIÓN \_ DE CONTENIDO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 47
@@ -279,12 +279,12 @@ Obsoleto. Se mantiene únicamente por compatibilidad con aplicaciones heredadas.
 
 
 
-Obsoleto. Se mantiene únicamente por compatibilidad con aplicaciones heredadas.
+Obsoleto. Se mantiene solo para la compatibilidad de aplicaciones heredadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_ENCODING"></span><span id="http_query_content_encoding"></span>**\_codificación de \_ contenido de consulta HTTP \_**
+<span id="HTTP_QUERY_CONTENT_ENCODING"></span><span id="http_query_content_encoding"></span>**CODIFICACIÓN \_ DE CONTENIDO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 29
@@ -297,7 +297,7 @@ Recupera cualquier codificación de contenido adicional que se haya aplicado a t
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_ID"></span><span id="http_query_content_id"></span>**\_identificador de \_ contenido de consulta HTTP \_**
+<span id="HTTP_QUERY_CONTENT_ID"></span><span id="http_query_content_id"></span>**IDENTIFICADOR \_ DE CONTENIDO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 3
@@ -310,7 +310,7 @@ Recupera la identificación del contenido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_LANGUAGE"></span><span id="http_query_content_language"></span>**\_lenguaje de \_ contenido de consulta HTTP \_**
+<span id="HTTP_QUERY_CONTENT_LANGUAGE"></span><span id="http_query_content_language"></span>**LENGUAJE \_ DE CONTENIDO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 6
@@ -323,7 +323,7 @@ Recupera el idioma en el que se encuentra el contenido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_LENGTH"></span><span id="http_query_content_length"></span>**\_longitud del \_ contenido de consulta HTTP \_**
+<span id="HTTP_QUERY_CONTENT_LENGTH"></span><span id="http_query_content_length"></span>**LONGITUD \_ DEL CONTENIDO DE LA CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 5
@@ -336,7 +336,7 @@ Recupera el tamaño del recurso, en bytes.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_LOCATION"></span><span id="http_query_content_location"></span>**\_Ubicación de \_ contenido de consulta HTTP \_**
+<span id="HTTP_QUERY_CONTENT_LOCATION"></span><span id="http_query_content_location"></span>**UBICACIÓN \_ DEL CONTENIDO DE LA CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 51
@@ -344,12 +344,12 @@ Recupera el tamaño del recurso, en bytes.
 
 
 
-Recupera la ubicación del recurso para la entidad que se encuentra en el mensaje.
+Recupera la ubicación del recurso para la entidad incluida en el mensaje.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_MD5"></span><span id="http_query_content_md5"></span>**\_Contenido de consulta HTTP \_ \_ MD5**
+<span id="HTTP_QUERY_CONTENT_MD5"></span><span id="http_query_content_md5"></span>**CONTENIDO DE CONSULTA HTTP \_ \_ \_ MD5**
 </dt> <dd> <dl> <dt>
 
 52
@@ -357,12 +357,12 @@ Recupera la ubicación del recurso para la entidad que se encuentra en el mensaj
 
 
 
-Recupera un resumen MD5 del cuerpo de la entidad con el fin de proporcionar una comprobación de integridad del mensaje (MIC) de un extremo a otro para el cuerpo de la entidad. Para obtener más información, vea RFC1864, el campo Content-MD5 header, en [https://ftp.isi.edu/in-notes/rfc1864.txt](https://tools.ietf.org/html/rfc1864) .
+Recupera una síntesis MD5 del cuerpo de la entidad con el fin de proporcionar una comprobación de integridad de mensajes de un extremo a otro (MIC) para el cuerpo de la entidad. Para obtener más información, vea RFC1864, El campo de encabezado Content-MD5, en [https://ftp.isi.edu/in-notes/rfc1864.txt](https://tools.ietf.org/html/rfc1864) .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_RANGE"></span><span id="http_query_content_range"></span>**\_intervalo de \_ contenido de consulta HTTP \_**
+<span id="HTTP_QUERY_CONTENT_RANGE"></span><span id="http_query_content_range"></span>**INTERVALO \_ DE CONTENIDO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 53
@@ -370,12 +370,12 @@ Recupera un resumen MD5 del cuerpo de la entidad con el fin de proporcionar una 
 
 
 
-Recupera la ubicación en el cuerpo de entidad completo donde se debe insertar el cuerpo de entidad parcial y el tamaño total del cuerpo de entidad completo.
+Recupera la ubicación en el cuerpo completo de la entidad donde se debe insertar el cuerpo parcial de la entidad y el tamaño total del cuerpo completo de la entidad.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_TRANSFER_ENCODING"></span><span id="http_query_content_transfer_encoding"></span>**\_codificación de \_ transferencia de contenido de consulta HTTP \_ \_**
+<span id="HTTP_QUERY_CONTENT_TRANSFER_ENCODING"></span><span id="http_query_content_transfer_encoding"></span>**CODIFICACIÓN \_ DE TRANSFERENCIA DE CONTENIDO DE CONSULTA \_ \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 2
@@ -388,7 +388,7 @@ Recibe la codificación de contenido adicional que se ha aplicado al recurso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CONTENT_TYPE"></span><span id="http_query_content_type"></span>**\_tipo de \_ contenido de consulta HTTP \_**
+<span id="HTTP_QUERY_CONTENT_TYPE"></span><span id="http_query_content_type"></span>**TIPO \_ DE CONTENIDO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 1
@@ -396,12 +396,12 @@ Recibe la codificación de contenido adicional que se ha aplicado al recurso.
 
 
 
-Recibe el tipo de contenido del recurso (por ejemplo, texto/HTML).
+Recibe el tipo de contenido del recurso (por ejemplo, text/html).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_COOKIE"></span><span id="http_query_cookie"></span>**\_cookie de consulta HTTP \_**
+<span id="HTTP_QUERY_COOKIE"></span><span id="http_query_cookie"></span>**COOKIE \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 44
@@ -414,7 +414,7 @@ Recupera las cookies asociadas a la solicitud.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_COST"></span><span id="http_query_cost"></span>**\_costo de consulta HTTP \_**
+<span id="HTTP_QUERY_COST"></span><span id="http_query_cost"></span>**COSTO \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 15
@@ -427,7 +427,7 @@ Ya no se admite.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_CUSTOM"></span><span id="http_query_custom"></span>**\_consulta HTTP \_ personalizada**
+<span id="HTTP_QUERY_CUSTOM"></span><span id="http_query_custom"></span>**CONSULTA HTTP \_ \_ PERSONALIZADA**
 </dt> <dd> <dl> <dt>
 
 65535
@@ -435,12 +435,12 @@ Ya no se admite.
 
 
 
-Hace que [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) busque el nombre de encabezado especificado en *lpvBuffer* y almacene los datos de encabezado en *lpvBuffer*.
+Hace [**que HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) busque el nombre de encabezado especificado en *lpvBuffer* y almacene los datos de encabezado en *lpvBuffer.*
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_DATE"></span><span id="http_query_date"></span>**\_fecha de consulta HTTP \_**
+<span id="HTTP_QUERY_DATE"></span><span id="http_query_date"></span>**FECHA \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 9
@@ -453,7 +453,7 @@ Recibe la fecha y hora en que se originó el mensaje.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_DERIVED_FROM"></span><span id="http_query_derived_from"></span>**\_consulta HTTP \_ derivada \_ de**
+<span id="HTTP_QUERY_DERIVED_FROM"></span><span id="http_query_derived_from"></span>**CONSULTA HTTP \_ \_ DERIVADA \_ DE**
 </dt> <dd> <dl> <dt>
 
 14
@@ -466,7 +466,7 @@ Ya no se admite.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_ECHO_HEADERS"></span><span id="http_query_echo_headers"></span>**\_encabezados de \_ eco de consulta HTTP \_**
+<span id="HTTP_QUERY_ECHO_HEADERS"></span><span id="http_query_echo_headers"></span>**ENCABEZADOS \_ DE ECO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 73
@@ -479,7 +479,7 @@ No implementado actualmente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_ECHO_HEADERS_CRLF"></span><span id="http_query_echo_headers_crlf"></span>**consulta HTTP- \_ \_ encabezados de eco \_ \_ CRLF**
+<span id="HTTP_QUERY_ECHO_HEADERS_CRLF"></span><span id="http_query_echo_headers_crlf"></span>**ENCABEZADOS DE ECO DE CONSULTA HTTP \_ \_ \_ \_ CRLF**
 </dt> <dd> <dl> <dt>
 
 74
@@ -492,7 +492,7 @@ No implementado actualmente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_ECHO_REPLY"></span><span id="http_query_echo_reply"></span>**\_respuesta de \_ eco de consulta HTTP \_**
+<span id="HTTP_QUERY_ECHO_REPLY"></span><span id="http_query_echo_reply"></span>**RESPUESTA \_ DE ECO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 72
@@ -505,7 +505,7 @@ No implementado actualmente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_ECHO_REQUEST"></span><span id="http_query_echo_request"></span>**\_solicitud de \_ eco de consulta HTTP \_**
+<span id="HTTP_QUERY_ECHO_REQUEST"></span><span id="http_query_echo_request"></span>**SOLICITUD \_ DE ECO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 71
@@ -518,7 +518,7 @@ No implementado actualmente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_ETAG"></span><span id="http_query_etag"></span>**\_ETag de consulta HTTP \_**
+<span id="HTTP_QUERY_ETAG"></span><span id="http_query_etag"></span>**HTTP \_ QUERY \_ ETAG**
 </dt> <dd> <dl> <dt>
 
 54
@@ -531,7 +531,7 @@ Recupera la etiqueta de entidad para la entidad asociada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_EXPECT"></span><span id="http_query_expect"></span>**\_espera de consulta HTTP \_**
+<span id="HTTP_QUERY_EXPECT"></span><span id="http_query_expect"></span>**HTTP \_ QUERY \_ EXPECT**
 </dt> <dd> <dl> <dt>
 
 68
@@ -539,12 +539,12 @@ Recupera la etiqueta de entidad para la entidad asociada.
 
 
 
-Recupera el encabezado Expect, que indica si la aplicación cliente debe esperar respuestas de la serie 100.
+Recupera el encabezado Expect, que indica si la aplicación cliente debe esperar 100 respuestas de la serie.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_EXPIRES"></span><span id="http_query_expires"></span>**la \_ consulta HTTP \_ expira**
+<span id="HTTP_QUERY_EXPIRES"></span><span id="http_query_expires"></span>**EXPIRA \_ LA CONSULTA HTTP \_**
 </dt> <dd> <dl> <dt>
 
 10
@@ -557,7 +557,7 @@ Recibe la fecha y hora después de la cual el recurso debe considerarse obsoleto
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_FORWARDED"></span><span id="http_query_forwarded"></span>**\_consulta HTTP \_ reenviada**
+<span id="HTTP_QUERY_FORWARDED"></span><span id="http_query_forwarded"></span>**CONSULTA HTTP \_ \_ REENVIADA**
 </dt> <dd> <dl> <dt>
 
 30
@@ -565,12 +565,12 @@ Recibe la fecha y hora después de la cual el recurso debe considerarse obsoleto
 
 
 
-Obsoleto. Se mantiene únicamente por compatibilidad con aplicaciones heredadas.
+Obsoleto. Se mantiene solo para la compatibilidad de aplicaciones heredadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_FROM"></span><span id="http_query_from"></span>**\_consulta HTTP \_ desde**
+<span id="HTTP_QUERY_FROM"></span><span id="http_query_from"></span>**CONSULTA HTTP \_ \_ DESDE**
 </dt> <dd> <dl> <dt>
 
 31
@@ -578,12 +578,12 @@ Obsoleto. Se mantiene únicamente por compatibilidad con aplicaciones heredadas.
 
 
 
-Recupera la dirección de correo electrónico del usuario humano que controla el agente de usuario solicitante si se proporciona el encabezado From.
+Recupera la dirección de correo electrónico del usuario humano que controla el agente de usuario solicitante si se da el encabezado From.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_HOST"></span><span id="http_query_host"></span>**\_host de consulta HTTP \_**
+<span id="HTTP_QUERY_HOST"></span><span id="http_query_host"></span>**HOST \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 55
@@ -596,7 +596,7 @@ Recupera el host de Internet y el número de puerto del recurso que se solicita.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_IF_MATCH"></span><span id="http_query_if_match"></span>**\_consulta HTTP \_ si \_ coincide**
+<span id="HTTP_QUERY_IF_MATCH"></span><span id="http_query_if_match"></span>**CONSULTA HTTP \_ \_ IF \_ MATCH**
 </dt> <dd> <dl> <dt>
 
 56
@@ -604,12 +604,12 @@ Recupera el host de Internet y el número de puerto del recurso que se solicita.
 
 
 
-Recupera el contenido del If-Match campo de encabezado de la solicitud.
+Recupera el contenido del If-Match de encabezado de solicitud.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_IF_MODIFIED_SINCE"></span><span id="http_query_if_modified_since"></span>**\_consulta HTTP \_ si se \_ modificó \_ desde**
+<span id="HTTP_QUERY_IF_MODIFIED_SINCE"></span><span id="http_query_if_modified_since"></span>**CONSULTA HTTP \_ \_ SI SE MODIFICA \_ \_ DESDE**
 </dt> <dd> <dl> <dt>
 
 32
@@ -622,7 +622,7 @@ Recupera el contenido del encabezado If-Modified-Since.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_IF_NONE_MATCH"></span><span id="http_query_if_none_match"></span>**consulta HTTP si no hay \_ \_ \_ ninguna \_ coincidencia**
+<span id="HTTP_QUERY_IF_NONE_MATCH"></span><span id="http_query_if_none_match"></span>**CONSULTA HTTP \_ \_ SI NINGUNA \_ \_ COINCIDE**
 </dt> <dd> <dl> <dt>
 
 57
@@ -630,12 +630,12 @@ Recupera el contenido del encabezado If-Modified-Since.
 
 
 
-Recupera el contenido del campo de encabezado de solicitud if-None-Match.
+Recupera el contenido del campo request-header If-None-Match.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_IF_RANGE"></span><span id="http_query_if_range"></span>**\_consulta HTTP \_ si \_ intervalo**
+<span id="HTTP_QUERY_IF_RANGE"></span><span id="http_query_if_range"></span>**HTTP \_ QUERY \_ IF \_ RANGE**
 </dt> <dd> <dl> <dt>
 
 58
@@ -643,12 +643,12 @@ Recupera el contenido del campo de encabezado de solicitud if-None-Match.
 
 
 
-Recupera el contenido del If-Range campo de encabezado de la solicitud. Este encabezado permite a la aplicación cliente comprobar que la entidad relacionada con una copia parcial de la entidad en la memoria caché de la aplicación cliente no se ha actualizado. Si la entidad no se ha actualizado, envíe las partes que faltan en la aplicación cliente. Si la entidad se ha actualizado, envíe toda la entidad actualizada.
+Recupera el contenido del If-Range de encabezado de solicitud. Este encabezado permite a la aplicación cliente comprobar que no se ha actualizado la entidad relacionada con una copia parcial de la entidad en la memoria caché de la aplicación cliente. Si la entidad no se ha actualizado, envíe los elementos que faltan en la aplicación cliente. Si la entidad se ha actualizado, envíe toda la entidad actualizada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_IF_UNMODIFIED_SINCE"></span><span id="http_query_if_unmodified_since"></span>**consulta HTTP si no se ha \_ \_ \_ modificado \_ desde**
+<span id="HTTP_QUERY_IF_UNMODIFIED_SINCE"></span><span id="http_query_if_unmodified_since"></span>**CONSULTA HTTP \_ SI NO SE HA CAMBIADO \_ \_ \_ DESDE**
 </dt> <dd> <dl> <dt>
 
 59
@@ -656,12 +656,12 @@ Recupera el contenido del If-Range campo de encabezado de la solicitud. Este enc
 
 
 
-Recupera el contenido del campo de encabezado de solicitud if-Unmodified-Since.
+Recupera el contenido del campo de encabezado de solicitud If-Unmodified-Since.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_LAST_MODIFIED"></span><span id="http_query_last_modified"></span>**\_ \_ última \_ modificación de la consulta http**
+<span id="HTTP_QUERY_LAST_MODIFIED"></span><span id="http_query_last_modified"></span>**ÚLTIMA \_ MODIFICACIÓN DE LA CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 11
@@ -669,12 +669,12 @@ Recupera el contenido del campo de encabezado de solicitud if-Unmodified-Since.
 
 
 
-Recibe la fecha y hora en que el servidor considera que el recurso se modificó por última vez.
+Recibe la fecha y hora en que el servidor cree que el recurso se modificó por última vez.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_LINK"></span><span id="http_query_link"></span>**\_vínculo de consulta HTTP \_**
+<span id="HTTP_QUERY_LINK"></span><span id="http_query_link"></span>**VÍNCULO \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 16
@@ -682,12 +682,12 @@ Recibe la fecha y hora en que el servidor considera que el recurso se modificó 
 
 
 
-Obsoleto. Se mantiene únicamente por compatibilidad con aplicaciones heredadas.
+Obsoleto. Se mantiene solo para la compatibilidad de aplicaciones heredadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_LOCATION"></span><span id="http_query_location"></span>**Ubicación de la \_ consulta HTTP \_**
+<span id="HTTP_QUERY_LOCATION"></span><span id="http_query_location"></span>**UBICACIÓN \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 33
@@ -695,12 +695,12 @@ Obsoleto. Se mantiene únicamente por compatibilidad con aplicaciones heredadas.
 
 
 
-Recupera el identificador uniforme de recursos (URI) absoluto usado en un encabezado de respuesta de ubicación.
+Recupera el identificador uniforme de recursos (URI) absoluto que se usa en un encabezado de respuesta Location.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_MAX"></span><span id="http_query_max"></span>**\_consulta HTTP \_ máxima**
+<span id="HTTP_QUERY_MAX"></span><span id="http_query_max"></span>**HTTP \_ QUERY \_ MAX**
 </dt> <dd> <dl> <dt>
 
 78
@@ -708,12 +708,12 @@ Recupera el identificador uniforme de recursos (URI) absoluto usado en un encabe
 
 
 
-No es una marca de consulta. Indica el valor máximo de un \_ valor de consulta HTTP \_ \* .
+No es una marca de consulta. Indica el valor máximo de un valor DE \_ CONSULTA \_ \* HTTP.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_MAX_FORWARDS"></span><span id="http_query_max_forwards"></span>**\_ \_ número máximo de \_ reenvíos de consultas http**
+<span id="HTTP_QUERY_MAX_FORWARDS"></span><span id="http_query_max_forwards"></span>**REENVÍOS \_ \_ MÁXIMOS DE \_ CONSULTAS HTTP**
 </dt> <dd> <dl> <dt>
 
 60
@@ -721,12 +721,12 @@ No es una marca de consulta. Indica el valor máximo de un \_ valor de consulta 
 
 
 
-Recupera el número de servidores proxy o puertas de enlace que pueden reenviar la solicitud al siguiente servidor entrante.
+Recupera el número de servidores proxy o puertas de enlace que pueden reenviar la solicitud al siguiente servidor de entrada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_MESSAGE_ID"></span><span id="http_query_message_id"></span>**\_identificador de \_ mensaje de consulta HTTP \_**
+<span id="HTTP_QUERY_MESSAGE_ID"></span><span id="http_query_message_id"></span>**IDENTIFICADOR \_ DE MENSAJE DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 12
@@ -739,7 +739,7 @@ Ya no se admite.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_MIME_VERSION"></span><span id="http_query_mime_version"></span>**\_ \_ versión MIME de consulta HTTP \_**
+<span id="HTTP_QUERY_MIME_VERSION"></span><span id="http_query_mime_version"></span>**HTTP \_ QUERY \_ MIME \_ VERSION**
 </dt> <dd> <dl> <dt>
 
 0
@@ -752,7 +752,7 @@ Recibe la versión del protocolo MIME que se usó para construir el mensaje.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_ORIG_URI"></span><span id="http_query_orig_uri"></span>**\_ \_ URI original de consulta HTTP \_**
+<span id="HTTP_QUERY_ORIG_URI"></span><span id="http_query_orig_uri"></span>**URI \_ DE \_ ORIG DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 34
@@ -760,12 +760,12 @@ Recibe la versión del protocolo MIME que se usó para construir el mensaje.
 
 
 
-Obsoleto. Se mantiene únicamente por compatibilidad con aplicaciones heredadas.
+Obsoleto. Se mantiene solo para la compatibilidad de aplicaciones heredadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_PRAGMA"></span><span id="http_query_pragma"></span>**\_pragma de consulta HTTP \_**
+<span id="HTTP_QUERY_PRAGMA"></span><span id="http_query_pragma"></span>**\_PRAGMA DE CONSULTA HTTP \_**
 </dt> <dd> <dl> <dt>
 
 17
@@ -773,12 +773,12 @@ Obsoleto. Se mantiene únicamente por compatibilidad con aplicaciones heredadas.
 
 
 
-Recibe las directivas específicas de la implementación que se pueden aplicar a cualquier destinatario a lo largo de la cadena de solicitud/respuesta.
+Recibe las directivas específicas de la implementación que podrían aplicarse a cualquier destinatario a lo largo de la cadena de solicitud/respuesta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_PROXY_AUTHENTICATE"></span><span id="http_query_proxy_authenticate"></span>**\_autenticación de \_ proxy de consulta HTTP \_**
+<span id="HTTP_QUERY_PROXY_AUTHENTICATE"></span><span id="http_query_proxy_authenticate"></span>**AUTENTICACIÓN \_ DEL PROXY DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 41
@@ -786,12 +786,12 @@ Recibe las directivas específicas de la implementación que se pueden aplicar a
 
 
 
-Recupera el esquema de autenticación y el dominio Kerberos que devuelve el proxy.
+Recupera el esquema de autenticación y el dominio kerberos devueltos por el proxy.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_PROXY_AUTHORIZATION"></span><span id="http_query_proxy_authorization"></span>**\_autorización de \_ proxy de consulta HTTP \_**
+<span id="HTTP_QUERY_PROXY_AUTHORIZATION"></span><span id="http_query_proxy_authorization"></span>**AUTORIZACIÓN \_ DE PROXY DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 61
@@ -799,12 +799,12 @@ Recupera el esquema de autenticación y el dominio Kerberos que devuelve el prox
 
 
 
-Recupera el encabezado que se usa para identificar al usuario en un proxy que requiere autenticación. Este encabezado solo se puede recuperar antes de que se envíe la solicitud al servidor.
+Recupera el encabezado que se usa para identificar al usuario en un proxy que requiere autenticación. Este encabezado solo se puede recuperar antes de que la solicitud se envíe al servidor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_PROXY_CONNECTION"></span><span id="http_query_proxy_connection"></span>**\_conexión del \_ proxy de consulta HTTP \_**
+<span id="HTTP_QUERY_PROXY_CONNECTION"></span><span id="http_query_proxy_connection"></span>**CONEXIÓN \_ DE PROXY DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 69
@@ -812,12 +812,12 @@ Recupera el encabezado que se usa para identificar al usuario en un proxy que re
 
 
 
-Recupera el encabezado de Proxy-Connection.
+Recupera el Proxy-Connection encabezado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_PUBLIC"></span><span id="http_query_public"></span>**\_consulta HTTP \_ pública**
+<span id="HTTP_QUERY_PUBLIC"></span><span id="http_query_public"></span>**CONSULTA HTTP \_ \_ PÚBLICA**
 </dt> <dd> <dl> <dt>
 
 8
@@ -830,7 +830,7 @@ Recibe los métodos disponibles en este servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_RANGE"></span><span id="http_query_range"></span>**\_intervalo de consulta HTTP \_**
+<span id="HTTP_QUERY_RANGE"></span><span id="http_query_range"></span>**INTERVALO \_ DE CONSULTAS \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 62
@@ -843,7 +843,7 @@ Recupera el intervalo de bytes de una entidad.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_RAW_HEADERS"></span><span id="http_query_raw_headers"></span>**\_encabezados de consulta HTTP \_ sin formato \_**
+<span id="HTTP_QUERY_RAW_HEADERS"></span><span id="http_query_raw_headers"></span>**ENCABEZADOS \_ HTTP QUERY \_ RAW \_**
 </dt> <dd> <dl> <dt>
 
 21
@@ -851,12 +851,12 @@ Recupera el intervalo de bytes de una entidad.
 
 
 
-Recibe todos los encabezados devueltos por el servidor. Cada encabezado termina en " \\ 0". Un " \\ 0" adicional finaliza la lista de encabezados.
+Recibe todos los encabezados devueltos por el servidor. Cada encabezado termina con \\ "0". Un \\ "0" adicional finaliza la lista de encabezados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_RAW_HEADERS_CRLF"></span><span id="http_query_raw_headers_crlf"></span>**\_ \_ hipertítulos sin formato de consulta HTTP \_ \_ CRLF**
+<span id="HTTP_QUERY_RAW_HEADERS_CRLF"></span><span id="http_query_raw_headers_crlf"></span>**ENCABEZADOS \_ HTTP QUERY RAW \_ \_ \_ CRLF**
 </dt> <dd> <dl> <dt>
 
 22
@@ -869,7 +869,7 @@ Recibe todos los encabezados devueltos por el servidor. Cada encabezado está se
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_REFERER"></span><span id="http_query_referer"></span>**\_referencia de consulta HTTP \_**
+<span id="HTTP_QUERY_REFERER"></span><span id="http_query_referer"></span>**REFERENCIA \_ DE CONSULTA HTTP \_**
 </dt> <dd> <dl> <dt>
 
 35
@@ -877,12 +877,12 @@ Recibe todos los encabezados devueltos por el servidor. Cada encabezado está se
 
 
 
-Recibe el identificador uniforme de recursos (URI) del recurso en el que se obtuvo el URI solicitado.
+Recibe el identificador uniforme de recursos (URI) del recurso donde se obtuvo el URI solicitado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_REFRESH"></span><span id="http_query_refresh"></span>**\_actualización de consulta HTTP \_**
+<span id="HTTP_QUERY_REFRESH"></span><span id="http_query_refresh"></span>**ACTUALIZACIÓN \_ DE CONSULTAS \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 46
@@ -890,12 +890,12 @@ Recibe el identificador uniforme de recursos (URI) del recurso en el que se obtu
 
 
 
-Obsoleto. Se mantiene únicamente por compatibilidad con aplicaciones heredadas.
+Obsoleto. Se mantiene solo para la compatibilidad de aplicaciones heredadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_REQUEST_METHOD"></span><span id="http_query_request_method"></span>**\_método de \_ solicitud de consulta HTTP \_**
+<span id="HTTP_QUERY_REQUEST_METHOD"></span><span id="http_query_request_method"></span>**MÉTODO \_ DE SOLICITUD DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 45
@@ -908,7 +908,7 @@ Recibe el verbo HTTP que se usa en la solicitud, normalmente GET o POST.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_RETRY_AFTER"></span><span id="http_query_retry_after"></span>**reintento de \_ consulta HTTP \_ \_ tras**
+<span id="HTTP_QUERY_RETRY_AFTER"></span><span id="http_query_retry_after"></span>**REINTENTO DE CONSULTA HTTP \_ \_ \_ DESPUÉS**
 </dt> <dd> <dl> <dt>
 
 36
@@ -921,7 +921,7 @@ Recupera la cantidad de tiempo que se espera que el servicio no esté disponible
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_SERVER"></span><span id="http_query_server"></span>**\_servidor de consultas http \_**
+<span id="HTTP_QUERY_SERVER"></span><span id="http_query_server"></span>**SERVIDOR \_ DE CONSULTAS \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 37
@@ -929,12 +929,12 @@ Recupera la cantidad de tiempo que se espera que el servicio no esté disponible
 
 
 
-Recupera datos sobre el software usado por el servidor de origen para controlar la solicitud.
+Recupera datos sobre el software utilizado por el servidor de origen para controlar la solicitud.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_SET_COOKIE"></span><span id="http_query_set_cookie"></span>**\_cookie de \_ conjunto de consultas http \_**
+<span id="HTTP_QUERY_SET_COOKIE"></span><span id="http_query_set_cookie"></span>**HTTP \_ QUERY \_ SET \_ COOKIE**
 </dt> <dd> <dl> <dt>
 
 43
@@ -947,7 +947,7 @@ Recibe el valor del conjunto de cookies para la solicitud.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_STATUS_CODE"></span><span id="http_query_status_code"></span>**\_código de \_ Estado de consulta HTTP \_**
+<span id="HTTP_QUERY_STATUS_CODE"></span><span id="http_query_status_code"></span>**CÓDIGO \_ DE ESTADO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 19
@@ -955,12 +955,12 @@ Recibe el valor del conjunto de cookies para la solicitud.
 
 
 
-Recibe el código de estado devuelto por el servidor. Para obtener más información y una lista de valores posibles, consulte [**códigos de estado http**](http-status-codes.md).
+Recibe el código de estado devuelto por el servidor. Para obtener más información y una lista de valores posibles, vea [**Códigos de estado HTTP**](http-status-codes.md).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_STATUS_TEXT"></span><span id="http_query_status_text"></span>**\_texto de \_ Estado de consulta HTTP \_**
+<span id="HTTP_QUERY_STATUS_TEXT"></span><span id="http_query_status_text"></span>**TEXTO \_ DE ESTADO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 20
@@ -973,7 +973,7 @@ Recibe cualquier texto adicional devuelto por el servidor en la línea de respue
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_TITLE"></span><span id="http_query_title"></span>**título de la \_ consulta HTTP \_**
+<span id="HTTP_QUERY_TITLE"></span><span id="http_query_title"></span>**TÍTULO \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 38
@@ -981,12 +981,12 @@ Recibe cualquier texto adicional devuelto por el servidor en la línea de respue
 
 
 
-Obsoleto. Se mantiene únicamente por compatibilidad con aplicaciones heredadas.
+Obsoleto. Se mantiene solo para la compatibilidad de aplicaciones heredadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_TRANSFER_ENCODING"></span><span id="http_query_transfer_encoding"></span>**\_codificación de \_ transferencia de consulta HTTP \_**
+<span id="HTTP_QUERY_TRANSFER_ENCODING"></span><span id="http_query_transfer_encoding"></span>**CODIFICACIÓN \_ DE TRANSFERENCIA DE CONSULTAS \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 63
@@ -999,7 +999,7 @@ Recupera el tipo de transformación que se ha aplicado al cuerpo del mensaje par
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_UNLESS_MODIFIED_SINCE"></span><span id="http_query_unless_modified_since"></span>**\_consulta HTTP \_ a menos que se \_ modifique \_ desde**
+<span id="HTTP_QUERY_UNLESS_MODIFIED_SINCE"></span><span id="http_query_unless_modified_since"></span>**CONSULTA HTTP \_ A MENOS QUE SE MODIFIQUE \_ \_ \_ DESDE**
 </dt> <dd> <dl> <dt>
 
 70
@@ -1007,12 +1007,12 @@ Recupera el tipo de transformación que se ha aplicado al cuerpo del mensaje par
 
 
 
-Recupera el encabezado a menos que-Modified-Since.
+Recupera el encabezado Unless-Modified-Since.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_UPGRADE"></span><span id="http_query_upgrade"></span>**\_actualización de consulta HTTP \_**
+<span id="HTTP_QUERY_UPGRADE"></span><span id="http_query_upgrade"></span>**ACTUALIZACIÓN \_ DE CONSULTAS \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 64
@@ -1025,7 +1025,7 @@ Recupera los protocolos de comunicación adicionales admitidos por el servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_URI"></span><span id="http_query_uri"></span>**\_URI de consulta HTTP \_**
+<span id="HTTP_QUERY_URI"></span><span id="http_query_uri"></span>**URI \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 13
@@ -1033,12 +1033,12 @@ Recupera los protocolos de comunicación adicionales admitidos por el servidor.
 
 
 
-Recibe algunos o todos los identificadores uniformes de recursos (URI) mediante los cuales se puede identificar el recurso de URI de solicitud.
+Recibe algunos o todos los identificadores uniformes de recursos (URI) por los que se puede identificar el recurso Request-URI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_USER_AGENT"></span><span id="http_query_user_agent"></span>**\_agente de \_ usuario de consulta HTTP \_**
+<span id="HTTP_QUERY_USER_AGENT"></span><span id="http_query_user_agent"></span>**AGENTE \_ DE USUARIO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 39
@@ -1051,7 +1051,7 @@ Recupera datos sobre el agente de usuario que realizó la solicitud.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_VARY"></span><span id="http_query_vary"></span>**la \_ consulta HTTP \_ varía**
+<span id="HTTP_QUERY_VARY"></span><span id="http_query_vary"></span>**HTTP \_ QUERY \_ VARY**
 </dt> <dd> <dl> <dt>
 
 65
@@ -1059,12 +1059,12 @@ Recupera datos sobre el agente de usuario que realizó la solicitud.
 
 
 
-Recupera el encabezado que indica que la entidad se ha seleccionado de varias representaciones disponibles de la respuesta mediante la negociación controlada por el servidor.
+Recupera el encabezado que indica que la entidad se seleccionó de una serie de representaciones disponibles de la respuesta mediante la negociación controlada por el servidor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_VERSION"></span><span id="http_query_version"></span>**\_versión de consulta HTTP \_**
+<span id="HTTP_QUERY_VERSION"></span><span id="http_query_version"></span>**VERSIÓN \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 18
@@ -1077,7 +1077,7 @@ Recibe el último código de respuesta devuelto por el servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_VIA"></span><span id="http_query_via"></span>**\_consulta HTTP \_ a través de**
+<span id="HTTP_QUERY_VIA"></span><span id="http_query_via"></span>**CONSULTA HTTP \_ \_ A TRAVÉS DE**
 </dt> <dd> <dl> <dt>
 
 66
@@ -1085,12 +1085,12 @@ Recibe el último código de respuesta devuelto por el servidor.
 
 
 
-Recupera los protocolos y destinatarios intermedios entre el agente de usuario y el servidor en las solicitudes, y entre el servidor de origen y el cliente en las respuestas.
+Recupera los protocolos intermedios y los destinatarios entre el agente de usuario y el servidor en las solicitudes, y entre el servidor de origen y el cliente en las respuestas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_WARNING"></span><span id="http_query_warning"></span>**\_Advertencia de consulta HTTP \_**
+<span id="HTTP_QUERY_WARNING"></span><span id="http_query_warning"></span>**ADVERTENCIA \_ DE CONSULTA \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 67
@@ -1098,12 +1098,12 @@ Recupera los protocolos y destinatarios intermedios entre el agente de usuario y
 
 
 
-Recupera datos adicionales sobre el estado de una respuesta que podría no reflejarse en el código de estado de la respuesta.
+Recupera datos adicionales sobre el estado de una respuesta que podría no reflejarse en el código de estado de respuesta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_WWW_AUTHENTICATE"></span><span id="http_query_www_authenticate"></span>**HTTP \_ query \_ www \_ Authenticate**
+<span id="HTTP_QUERY_WWW_AUTHENTICATE"></span><span id="http_query_www_authenticate"></span>**HTTP \_ QUERY \_ WWW \_ AUTHENTICATE**
 </dt> <dd> <dl> <dt>
 
 40
@@ -1111,12 +1111,12 @@ Recupera datos adicionales sobre el estado de una respuesta que podría no refle
 
 
 
-Recupera el esquema de autenticación y el dominio Kerberos devueltos por el servidor.
+Recupera el esquema de autenticación y el dominio kerberos devueltos por el servidor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_X_CONTENT_TYPE_OPTIONS"></span><span id="http_query_x_content_type_options"></span>**\_Opciones de \_ \_ tipo de contenido X de consulta \_ http \_**
+<span id="HTTP_QUERY_X_CONTENT_TYPE_OPTIONS"></span><span id="http_query_x_content_type_options"></span>**OPCIONES DE TIPO DE CONTENIDO DE CONSULTA \_ \_ HTTP X \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 79
@@ -1129,7 +1129,7 @@ Recupera el valor del encabezado X-Content-Type-Options.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_P3P"></span><span id="http_query_p3p"></span>**\_Consulta HTTP \_ P3P**
+<span id="HTTP_QUERY_P3P"></span><span id="http_query_p3p"></span>**HTTP \_ QUERY \_ P3P**
 </dt> <dd> <dl> <dt>
 
 80
@@ -1142,7 +1142,7 @@ Recupera el valor del encabezado P3P.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_X_P2P_PEERDIST"></span><span id="http_query_x_p2p_peerdist"></span>**\_Consulta HTTP \_ X \_ P2P \_ PEERDIST**
+<span id="HTTP_QUERY_X_P2P_PEERDIST"></span><span id="http_query_x_p2p_peerdist"></span>**HTTP \_ QUERY \_ X \_ P2P \_ PEERDIST**
 </dt> <dd> <dl> <dt>
 
 81
@@ -1155,7 +1155,7 @@ Recupera el valor del encabezado X-P2P-PeerDist.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_TRANSLATE"></span><span id="http_query_translate"></span>**\_traducción de consulta HTTP \_**
+<span id="HTTP_QUERY_TRANSLATE"></span><span id="http_query_translate"></span>**TRADUCCIÓN \_ DE CONSULTAS \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 82
@@ -1163,12 +1163,12 @@ Recupera el valor del encabezado X-P2P-PeerDist.
 
 
 
-Recupera el valor de encabezado translate.
+Recupera el valor del encabezado translate.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_X_UA_COMPATIBLE"></span><span id="http_query_x_ua_compatible"></span>**\_consulta HTTP \_ X \_ UA \_ compatible**
+<span id="HTTP_QUERY_X_UA_COMPATIBLE"></span><span id="http_query_x_ua_compatible"></span>**HTTP \_ QUERY \_ X \_ UA \_ COMPATIBLE**
 </dt> <dd> <dl> <dt>
 
 83
@@ -1176,12 +1176,12 @@ Recupera el valor de encabezado translate.
 
 
 
-Recupera el valor del encabezado X-UA-compatible.
+Recupera el valor del encabezado X-UA-Compatible.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_DEFAULT_STYLE"></span><span id="http_query_default_style"></span>**\_ \_ estilo predeterminado de consulta HTTP \_**
+<span id="HTTP_QUERY_DEFAULT_STYLE"></span><span id="http_query_default_style"></span>**ESTILO \_ PREDETERMINADO DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 84
@@ -1189,12 +1189,12 @@ Recupera el valor del encabezado X-UA-compatible.
 
 
 
-Recupera el valor del encabezado Default-Style.
+Recupera el valor Default-Style encabezado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_X_FRAME_OPTIONS"></span><span id="http_query_x_frame_options"></span>**\_Opciones de \_ \_ fotograma X de consulta HTTP \_**
+<span id="HTTP_QUERY_X_FRAME_OPTIONS"></span><span id="http_query_x_frame_options"></span>**OPCIONES \_ DE MARCO X DE CONSULTA \_ \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 85
@@ -1207,7 +1207,7 @@ Recupera el valor del encabezado X-Frame-Options.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_X_XSS_PROTECTION"></span><span id="http_query_x_xss_protection"></span>**\_consulta HTTP \_ X \_ \_ protección XSS**
+<span id="HTTP_QUERY_X_XSS_PROTECTION"></span><span id="http_query_x_xss_protection"></span>**HTTP \_ QUERY \_ X \_ XSS \_ PROTECTION**
 </dt> <dd> <dl> <dt>
 
 86
@@ -1220,11 +1220,11 @@ Recupera el valor del encabezado X-XSS-Protection.
 
 </dt> </dl> </dd> </dl>
 
-Las marcas modificadoras se usan junto con una marca de atributo para modificar la solicitud. Las marcas modificadoras modifican el formato de los datos devueltos o indican dónde [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) (o [**QueryInfo**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms774972(v=vs.85))) deben buscar los datos.
+Las marcas modificadoras se usan junto con una marca de atributo para modificar la solicitud. Las marcas modificadoras modifican el formato de los datos devueltos o indican dónde [**httpQueryInfo**](/windows/desktop/api/Wininet/nf-wininet-httpqueryinfoa) (o [**QueryInfo**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms774972(v=vs.85))) deben buscar los datos.
 
 <dl> <dt>
 
-<span id="HTTP_QUERY_FLAG_COALESCE"></span><span id="http_query_flag_coalesce"></span>**fusión de la \_ marca de consulta HTTP \_ \_**
+<span id="HTTP_QUERY_FLAG_COALESCE"></span><span id="http_query_flag_coalesce"></span>**USO \_ DE LA MARCA DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 0x10000000
@@ -1237,7 +1237,7 @@ Sin implementar.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_FLAG_NUMBER"></span><span id="http_query_flag_number"></span>**\_número de \_ marca de consulta HTTP \_**
+<span id="HTTP_QUERY_FLAG_NUMBER"></span><span id="http_query_flag_number"></span>**NÚMERO \_ DE MARCA DE CONSULTA \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 0x20000000
@@ -1250,7 +1250,7 @@ Devuelve los datos como un número de 32 bits para los encabezados cuyo valor es
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_FLAG_REQUEST_HEADERS"></span><span id="http_query_flag_request_headers"></span>**\_encabezados de \_ solicitud de marca de consulta HTTP \_ \_**
+<span id="HTTP_QUERY_FLAG_REQUEST_HEADERS"></span><span id="http_query_flag_request_headers"></span>**ENCABEZADOS \_ DE SOLICITUD DE MARCA DE CONSULTA \_ \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 0x80000000
@@ -1258,12 +1258,12 @@ Devuelve los datos como un número de 32 bits para los encabezados cuyo valor es
 
 
 
-Solo solicita encabezados de solicitud.
+Consulta solo encabezados de solicitud.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_QUERY_FLAG_SYSTEMTIME"></span><span id="http_query_flag_systemtime"></span>**\_marca de consulta HTTP \_ \_ SYSTEMTIME**
+<span id="HTTP_QUERY_FLAG_SYSTEMTIME"></span><span id="http_query_flag_systemtime"></span>**MARCA DE CONSULTA HTTP \_ \_ \_ SYSTEMTIME**
 </dt> <dd> <dl> <dt>
 
 0x40000000
@@ -1271,15 +1271,15 @@ Solo solicita encabezados de solicitud.
 
 
 
-Devuelve el valor de encabezado como una estructura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) , que no requiere que la aplicación analice los datos. Se usa para los encabezados cuyo valor es una cadena de fecha y hora, como "Last-Modified-Time".
+Devuelve el valor de encabezado como [**una estructura SYSTEMTIME,**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que no requiere que la aplicación analice los datos. Se usa para los encabezados cuyo valor es una cadena de fecha y hora, como "Hora de última modificación".
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. En el caso de servicios o implementaciones de servidor, use los [servicios http de Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para implementaciones de servidor o servicios, use [Microsoft Windows SERVICIOS HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
 
  
 
@@ -1291,7 +1291,7 @@ Devuelve el valor de encabezado como una estructura [**SYSTEMTIME**](/windows/de
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Wininet. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wininet.h</dt> </dl> |
 
 
 

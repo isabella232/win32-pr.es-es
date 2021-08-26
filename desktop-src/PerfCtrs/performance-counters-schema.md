@@ -4,19 +4,19 @@ ms.assetid: fa13d13a-f2e2-4732-8bf7-cb0a0f1d4ed7
 title: Esquema de los contadores de rendimiento
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: 5c41e9d54e259d6e53453a55cc97f7734ce793fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e31aa6e42d185f95b142fac864dbaf725bbba456161c3484aba157c8afd6557
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962375"
 ---
 # <a name="performance-counters-schema"></a>Esquema de los contadores de rendimiento
 
-Los proveedores de datos de rendimiento V2 se admiten en Windows Vista o posterior. Utilizan un. Archivo MAN (manifiesto de instrumentación XML) para definir el proveedor, los valores y los contadores.
+Los proveedores de datos de rendimiento V2 se admiten Windows Vista o versiones posteriores. Usan un . Archivo MAN (manifiesto de instrumentación XML) para definir el proveedor, los conjuntos de contadores y los contadores.
 
 > [!NOTE]
-> Los manifiestos de instrumentación pueden contener información sobre los proveedores de seguimiento de eventos para Windows (ETW) y los proveedores de contadores de rendimiento. Para obtener más información sobre los manifiestos de instrumentación, vea [esquema de EventManifest](/windows/desktop/WES/eventmanifestschema-schema) y [escribir un manifiesto de instrumentación](/windows/desktop/WES/writing-an-instrumentation-manifest)).
+> Los manifiestos de instrumentación pueden contener información sobre el seguimiento de eventos para Windows (ETW) y los proveedores de contadores de rendimiento. Para obtener más información sobre los manifiestos de instrumentación, [vea Esquema eventManifest](/windows/desktop/WES/eventmanifestschema-schema) y [Escritura de un manifiesto de instrumentación](/windows/desktop/WES/writing-an-instrumentation-manifest).
 
 En esta sección se describen los siguientes elementos y tipos que se usan en la `counters` sección de un manifiesto de instrumentación:
 
@@ -24,19 +24,19 @@ En esta sección se describen los siguientes elementos y tipos que se usan en la
 - [Tipos simples de contadores de rendimiento](performance-counters-simple-types.md)
 - [Tipos complejos de contadores de rendimiento](performance-counters-complex-types.md)
 
-No use las `localization` secciones o `stringTable` del manifiesto de instrumentación para las cadenas de datos de rendimiento. En su lugar, especifique las cadenas como valores del atributo que está estableciendo.
+No use las secciones `localization` o del manifiesto de `stringTable` instrumentación para las cadenas de datos de rendimiento. En su lugar, especifique las cadenas como valores del atributo que está estableciendo.
 
-Después de crear el manifiesto, use la herramienta [CTRPP](ctrpp.md) para validar el manifiesto y generar los archivos de código ( `.h` ) y de recursos ( `.rc` ) que se usarán para compilar el proveedor.
+Después de crear el manifiesto, use la herramienta [CTRPP](ctrpp.md) para validar el manifiesto y generar archivos de código ( ) y recurso ( ) que se usarán en la creación `.h` `.rc` del proveedor.
 
-Al instalar la aplicación, ejecute la [ herramienta deLodCtr.exe](/windows-server/administration/windows-commands/lodctr) con el `/M:` parámetro para instalar los contadores de rendimiento. La herramienta de LodCtr.exe registrará la información necesaria en el registro en `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib\_V2Providers\{ProviderGuid}` , incluida la ruta de acceso completa al archivo binario que contiene los recursos de cadena para el proveedor (como se especifica en el `applicationIdentity` atributo del manifiesto). Debe tener privilegios de administrador para ejecutar LodCtr.exe. Comando de instalación de ejemplo:
+Al instalar la aplicación, ejecute la [ herramientaLodCtr.exe con](/windows-server/administration/windows-commands/lodctr) el parámetro para instalar los `/M:` contadores de rendimiento. La herramienta LodCtr.exe registrará la información necesaria en el Registro en , incluida la ruta de acceso completa al archivo binario que contiene los recursos de cadena para el proveedor (como se especifica en el atributo `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib\_V2Providers\{ProviderGuid}` `applicationIdentity` del manifiesto). Debe tener privilegios de administrador para ejecutar LodCtr.exe. Comando de instalación de ejemplo:
 
-**LodCtr.exe** /m: "*manifest*" \[ "*ApplicationIdentityDirectory*"\]
+**LodCtr.exe** /M:"*manifest*" \[ "*ApplicationIdentityDirectory*"\]
 
-Si necesita actualizar un CounterSet, asegúrese de desinstalar el CounterSet antiguo mediante la [ herramienta deUnlodCtr.exe](/windows-server/administration/windows-commands/unlodctr_1) con los `/G:` `/P:` parámetros o. Una vez desinstalado el CounterSet anterior, puede instalar el CounterSet actualizado.
+Si necesita actualizar un contraconjunto, asegúrese de desinstalar el conjunto de contadores antiguo mediante la herramientaUnlodCtr.exe [ con](/windows-server/administration/windows-commands/unlodctr_1) los `/G:` parámetros o `/P:` . Una vez desinstalado el conjunto de contadores anterior, puede instalar el conjunto de contadores actualizado.
 
-## <a name="schema"></a>Schema
+## <a name="schema"></a>Esquema
 
-A continuación se indican los esquemas de contadores de rendimiento que puede usar para validar la `counters` sección del manifiesto. Este esquema se encuentra en la Windows SDK como `counterman.xsd` . Para obtener más información sobre el esquema que se usa para validar la sección de instrumentación del manifiesto, vea [esquema EventManifest](/windows/desktop/WES/eventmanifestschema-schema).
+A continuación se muestra el esquema de contadores de rendimiento que puede usar para validar la `counters` sección del manifiesto. Este esquema se encuentra en el SDK Windows como `counterman.xsd` . Para obtener más información sobre el esquema que se usa para validar la sección de instrumentación del manifiesto, vea [Esquema EventManifest](/windows/desktop/WES/eventmanifestschema-schema).
 
 ``` syntax
 <xs:schema
@@ -376,7 +376,7 @@ A continuación se indican los esquemas de contadores de rendimiento que puede u
 </xs:schema>
 ```
 
-## <a name="example-user-mode-manifest"></a>Ejemplo de manifiesto de User-Mode
+## <a name="example-user-mode-manifest"></a>Manifiesto de User-Mode ejemplo
 
 A continuación se muestra un manifiesto de ejemplo que define los contadores de rendimiento para un proveedor de modo de usuario.
 
@@ -538,9 +538,9 @@ A continuación se muestra un manifiesto de ejemplo que define los contadores de
 </instrumentationManifest>
 ```
 
-## <a name="example-kernel-mode-manifest"></a>Ejemplo de manifiesto de Kernel-Mode
+## <a name="example-kernel-mode-manifest"></a>Manifiesto de Kernel-Mode ejemplo
 
-A continuación se muestra un manifiesto de ejemplo que define los contadores de rendimiento para un proveedor en modo kernel.
+A continuación se muestra un manifiesto de ejemplo que define los contadores de rendimiento para un proveedor de modo kernel.
 
 ```XML
 <?xml version="1.0"?>

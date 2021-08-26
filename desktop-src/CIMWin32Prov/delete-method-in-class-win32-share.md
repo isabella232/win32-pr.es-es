@@ -2,7 +2,7 @@
 description: Elimina un nombre de recurso compartido de la lista de recursos compartidos de un servidor y desconecta las conexiones al recurso compartido.
 ms.assetid: 175f9c0e-0017-4a86-8e05-ad78e2c93c11
 ms.tgt_platform: multiple
-title: Método Delete de la clase Win32_Share
+title: Método Delete de la Win32_Share clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2048ba9dac91b139888f27c037d64849de8a4ee8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c1331ce9dfa3309c1cfbd0ba0ddc3b4a0c96d431d524d8f0e74f7937c8cdb332
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918475"
 ---
-# <a name="delete-method-of-the-win32_share-class"></a>Método Delete de la \_ clase de recurso compartido Win32
+# <a name="delete-method-of-the-win32_share-class"></a>Método Delete de la clase Win32 \_ Share
 
-El método **Delete** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) elimina un nombre de recurso compartido de la lista de recursos compartidos de un servidor y desconecta las conexiones al recurso compartido.
+El **método de** clase WMI [Delete](/windows/desktop/WmiSdk/retrieving-a-class) elimina un nombre de recurso compartido de la lista de recursos compartidos de un servidor y desconecta las conexiones al recurso compartido.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -70,24 +70,24 @@ Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro va
 **Ruta de acceso redirigida** (23)
 </dt> <dt>
 
-**Dispositivo o directorio desconocido** (24)
+**Dispositivo o directorio desconocidos** (24)
 </dt> <dt>
 
-**No se encontró el nombre de red** (25)
+**Nombre de red no encontrado** (25)
 </dt> <dt>
 
-**Otro** (26 4294967295)
+**Otros** (26 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **Delete** es un método de objeto y se usa en una instancia de una clase.
+El **método Delete** es un método de objeto y se usa en una instancia de una clase .
 
-Solo los miembros del grupo local Administradores o operadores de cuenta, o los que tengan la pertenencia a un grupo de operador de servidor o de comunicación pueden ejecutar correctamente el método. El operador Print solo puede eliminar colas de impresión. El operador de comunicación solo puede eliminar colas de dispositivos de comunicación.
+Solo los miembros del grupo local Administradores u Operadores de cuenta o aquellos con pertenencia a grupos de operadores de comunicación, impresión o servidor pueden ejecutar correctamente el método . El operador Print solo puede eliminar colas de impresora. El operador Communication solo puede eliminar colas de dispositivos de comunicación.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código de VBScript se elimina el recurso compartido especificado.
+El siguiente ejemplo de código VBScript elimina el recurso compartido especificado.
 
 
 ```VB
@@ -111,7 +111,7 @@ Next
 
 
 
-En el siguiente ejemplo de código de PowerShell se eliminan los recursos compartidos en blanco.
+El siguiente ejemplo de código de PowerShell elimina recursos compartidos en blanco.
 
 
 ```PowerShell
@@ -133,8 +133,8 @@ Foreach ($Share in $Shares) {
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -146,7 +146,7 @@ Foreach ($Share in $Shares) {
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Recurso compartido de Win32**](win32-share.md)
+[**Recurso compartido de \_ Win32**](win32-share.md)
 </dt> </dl>
 
  

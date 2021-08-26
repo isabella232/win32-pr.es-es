@@ -1,19 +1,19 @@
 ---
-title: Introducción al código de ejemplo de Win32
-description: Esta sección contiene vínculos a código de ejemplo para la serie Introducción a Win32 y C++.
+title: Introducción código de ejemplo de Win32
+description: Esta sección contiene vínculos a código de ejemplo para la serie Introducción con Win32 y C++.
 ms.assetid: 062006b4-e665-4c7c-a5eb-ee370449bd98
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa8d306edf16b7c1c8981eeee57a8b0b03740e69
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9945fde22990cd7b586c2d44b59066d34e6c51d85abeff093cd69ea7a7ed2172
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105676377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897395"
 ---
-# <a name="get-started-with-win32-sample-code"></a>Introducción a Win32: código de ejemplo
+# <a name="get-started-with-win32-sample-code"></a>Introducción con Win32: código de ejemplo
 
-Esta sección contiene vínculos a código de ejemplo para la serie Introducción [a Win32 y C++](learn-to-program-for-windows.md).
+Esta sección contiene vínculos a código de ejemplo para la [serie Introducción con Win32 y C++](learn-to-program-for-windows.md).
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,13 +21,13 @@ Esta sección contiene vínculos a código de ejemplo para la serie Introducció
 
 | Tema                                                                   | Descripción                                                                                                                                       |
 |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Ejemplo de Hola mundo de Windows](windows-hello-world-sample.md)<br/> | En esta aplicación de ejemplo se muestra cómo crear un programa de Windows mínimo.<br/>                                                                 |
-| [Ejemplo de BaseWindow](basewindow-sample.md)<br/>                   | En esta aplicación de ejemplo se muestra cómo pasar datos de estado de aplicación en el mensaje de [**\_ NCCREATE de WM**](/windows/desktop/winmsg/wm-nccreate) .<br/>          |
-| [Abrir el ejemplo de cuadro de diálogo](open-dialog-box-sample.md)<br/>         | Esta aplicación de ejemplo muestra cómo inicializar la biblioteca de modelo de objetos componentes (COM) y usar una API basada en COM en un programa de Windows.<br/> |
+| [Windows Hello Ejemplo mundial](windows-hello-world-sample.md)<br/> | En esta aplicación de ejemplo se muestra cómo crear un programa Windows mínimo.<br/>                                                                 |
+| [Ejemplo baseWindow](basewindow-sample.md)<br/>                   | Esta aplicación de ejemplo muestra cómo pasar datos de estado de aplicación en el [**mensaje \_ WM NCCREATE.**](/windows/desktop/winmsg/wm-nccreate)<br/>          |
+| [Abrir ejemplo de cuadro de diálogo](open-dialog-box-sample.md)<br/>         | Esta aplicación de ejemplo muestra cómo inicializar la biblioteca del modelo de objetos componentes (COM) y usar una API basada en COM en un Windows programa.<br/> |
 | [Ejemplo de círculo de Direct2D](direct2d-circle-sample.md)<br/>         | En esta aplicación de ejemplo se muestra cómo dibujar un círculo mediante Direct2D.<br/>                                                                     |
-| [Ejemplo de reloj de Direct2D](direct2d-clock-sample.md)<br/>           | En esta aplicación de ejemplo se muestra cómo usar transformaciones en Direct2D para dibujar las manecillas de un reloj.<br/>                                          |
-| [Dibujar ejemplo de círculo](draw-circle-sample.md)<br/>                 | En esta aplicación de ejemplo se muestra cómo usar la entrada del mouse para dibujar un círculo.<br/>                                                                 |
-| [Ejemplo de dibujo simple](simple-drawing-sample.md)<br/>           | Esta aplicación de ejemplo es un programa de dibujo muy sencillo que muestra cómo usar la entrada del mouse, la entrada del teclado y las tablas de aceleradores.<br/>    |
+| [Ejemplo de reloj de Direct2D](direct2d-clock-sample.md)<br/>           | En esta aplicación de ejemplo se muestra cómo usar transformaciones en Direct2D para dibujar las manos de un reloj.<br/>                                          |
+| [Ejemplo de dibujo de círculo](draw-circle-sample.md)<br/>                 | En esta aplicación de ejemplo se muestra cómo usar la entrada del mouse para dibujar un círculo.<br/>                                                                 |
+| [Ejemplo de dibujo simple](simple-drawing-sample.md)<br/>           | Esta aplicación de ejemplo es un programa de dibujo muy sencillo que muestra cómo usar la entrada del mouse, la entrada de teclado y las tablas de aceleradores.<br/>    |
 
 
 

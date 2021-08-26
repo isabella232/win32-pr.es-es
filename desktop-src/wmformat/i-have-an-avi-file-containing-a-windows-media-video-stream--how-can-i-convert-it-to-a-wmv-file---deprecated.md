@@ -1,9 +1,9 @@
 ---
-title: Tengo un archivo AVI que contiene una secuencia de Windows Media Video. Cómo se puede convertir en un archivo WMV
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | Tengo un archivo AVI que contiene una secuencia de Windows Media Video. Cómo se puede convertir en un archivo WMV
+title: Tengo un archivo AVI que contiene un Windows de vídeo multimedia. ¿Cómo puedo convertirlo en un archivo WMV?
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | Tengo un archivo AVI que contiene un Windows de vídeo multimedia. ¿Cómo puedo convertirlo en un archivo WMV?
 ms.assetid: 208cae5f-05ac-43a7-9903-3f096bccc098
 keywords:
-- Tengo un archivo AVI que contiene una secuencia de Windows Media Video. Cómo se puede convertir en un archivo WMV formato de Windows Media
+- Tengo un archivo AVI que contiene un Windows de vídeo multimedia. ¿Cómo puedo convertirla en un archivo WMV windows Media Format?
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cce6a841eb134a52b69570eecce24970fc16c1e8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7b3a1826f9dac4fcd216343a4e964d0414fc47c11ed4aa395d9a0445266d21ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105717467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930855"
 ---
-# <a name="i-have-an-avi-file-containing-a-windows-media-video-stream-how-can-i-convert-it-to-a-wmv-file"></a>Tengo un archivo AVI que contiene una secuencia de Windows Media Video. Cómo se puede convertir en un archivo WMV
+# <a name="i-have-an-avi-file-containing-a-windows-media-video-stream-how-can-i-convert-it-to-a-wmv-file"></a>Tengo un archivo AVI que contiene un Windows de vídeo multimedia. ¿Cómo puedo convertirlo en un archivo WMV?
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener la documentación actual Windows códecs multimedia y procesadores de señales digitales, vea Windows [Media Audio and Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
  
 

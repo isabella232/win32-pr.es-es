@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_SNPROG. Equals (método JET_SNPROG)'
-title: JET_SNPROG. Equals (método JET_SNPROG)
+description: 'Más información sobre: JET_SNPROG. Método Equals (JET_SNPROG)'
+title: JET_SNPROG. Método Equals (JET_SNPROG)
 TOCTitle: Equals method (JET_SNPROG)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_SNPROG.Equals(Microsoft.Isam.Esent.Interop.JET_SNPROG)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_snprog.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9e3c14776d9c8e2167ab9e3ae8fd00e18653c87b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20ef1110a5ca297874652932bb86f620c15c75818d141c1e5536a6d5a9ee2b12
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945065"
 ---
-# <a name="jet_snprogequals-method-jet_snprog"></a>JET_SNPROG. Equals (método JET_SNPROG)
+# <a name="jet_snprogequals-method-jet_snprog"></a>JET_SNPROG. Método Equals (JET_SNPROG)
 
-Devuelve un valor que indica si esta instancia es igual a otra instancia de.
+Devuelve un valor que indica si esta instancia es igual a otra instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,27 +58,27 @@ public bool Equals(
 #### <a name="parameters"></a>Parámetros
 
   - Otros  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SNPROG](./jet-snprog-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SNPROG](./jet-snprog-class.md)  
     
     Instancia de que se va a comparar con esta instancia.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
 #### <a name="implements"></a>Implementaciones
 
-[IEquatable \<T\> . Es igual a (T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[IEquatable \<T\> . Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_SNPROG (clase)](./jet-snprog-class.md)
+[JET_SNPROG clase](./jet-snprog-class.md)
 
-[Miembros de JET_SNPROG](./jet-snprog-members.md)
+[JET_SNPROG miembros](./jet-snprog-members.md)
 
-[Equals (sobrecarga)](./jet-snprog.equals-method.md)
+[Sobrecarga igual a](./jet-snprog.equals-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

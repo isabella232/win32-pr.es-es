@@ -1,5 +1,5 @@
 ---
-description: método IShellDispatch.FindComputer: "Muestra los resultados de la búsqueda: equipos . El cuadro de diálogo muestra el resultado de la búsqueda de un equipo especificado."
+description: método IShellDispatch.FindComputer: "Muestra el cuadro de diálogo Resultados de la búsqueda: Equipos. El cuadro de diálogo muestra el resultado de la búsqueda de un equipo especificado."
 ms.assetid: 9B687A8A-BB29-49a0-8AE3-11A75FAF3257 title: IShellDispatch.FindComputer method (Shldisp.h) ms.topic: reference ms.date: 05/31/2018 topic_type: 
 - APIRef
 - kbSyntax api_name: 
@@ -10,7 +10,7 @@ ms.assetid: 9B687A8A-BB29-49a0-8AE3-11A75FAF3257 title: IShellDispatch.FindCompu
 
 # <a name="ishelldispatchfindcomputer-method"></a>Método IShellDispatch.FindComputer
 
-Muestra el cuadro **de diálogo Resultados de la búsqueda:** Equipos. El cuadro de diálogo muestra el resultado de la búsqueda de un equipo especificado.
+Muestra el cuadro **de diálogo Resultados de la búsqueda:** Equipos . El cuadro de diálogo muestra el resultado de la búsqueda de un equipo especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,9 +49,9 @@ Este método se implementa y se accede a través del [**método Shell.FindComput
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se muestra el uso **de FindComputer** en JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso de **FindComputer** en JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -107,11 +107,11 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 

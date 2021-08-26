@@ -1,30 +1,30 @@
 ---
 title: Traducción de tevdef
-description: El siguiente ejemplo de código es una definición de entorno de textura de la contabilidad de IRIS que especifica el \_ parámetro Decal Texture-Environment.
+description: El ejemplo de código siguiente es una definición de entorno de textura DECAL de IRIS que especifica el parámetro \_ de textura-entorno DECAL de TV
 ms.assetid: bb4c8231-8102-4ecb-a5d2-c41243c2682d
 keywords:
-- Migración de la contabilidad de IRIS, textura
-- portabilidad de IRIS GL, textura
-- trasladar a OpenGL desde IRIS GL, textura
-- Exportación de OpenGL desde IRIS GL, textura
+- Porte de IRIS GL, textura
+- porting from IRIS GL,texture
+- porte a OpenGL desde IRIS GL, textura
+- Porte de OpenGL desde IRIS GL, textura
 - textura
-- Migración de la contabilidad de IRIS, tevdef
-- portabilidad de IRIS GL, tevdef
-- migración a OpenGL desde IRIS GL, tevdef
-- Exportación de OpenGL desde IRIS GL, tevdef
+- Porte de IRIS GL, tevdef
+- porting from IRIS GL,tevdef
+- porting to OpenGL from IRIS GL,tevdef
+- Porte de OpenGL desde IRIS GL,tevdef
 - tevdef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dac2610d1467adb6faa1ea105fc8e8734bfb9c4d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7feef33c2aa725c6e5bb91782fe43fdc6a84d23db8aa412f02c07b6ec588f719
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887893"
 ---
 # <a name="translating-tevdef"></a>Traducción de tevdef
 
-El siguiente ejemplo de código es una definición de entorno de textura de la contabilidad de IRIS que especifica el \_ parámetro Decal Texture-Environment:
+El ejemplo de código siguiente es una definición de entorno de textura DECAL de IRIS que especifica el parámetro \_ texture-environment de TV DECAL:
 
 
 ```C++
@@ -44,28 +44,28 @@ glTexEnvfv(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
 
 
 
-En la tabla siguiente se enumeran los parámetros de entorno de textura GL de IRIS y sus parámetros de OpenGL equivalentes.
+En la tabla siguiente se enumeran los parámetros de entorno de textura DE IRIS GL y sus parámetros OpenGL equivalentes.
 
 
 
-| Parámetro de GL de IRIS     | Parámetro de OpenGL             |
+| Parámetro GL de IRIS     | Parámetro OpenGL             |
 |-----------------------|------------------------------|
-| TV \_ modular          | \_modular GL                 |
-| Calcomanía de TV \_             | \_marcas GL                    |
-| TV \_ Blend             | fusión de contabilidad \_                    |
-| COLOR de TV \_             | \_color de textura de libro de contabilidad \_ \_      |
-| TV \_ Alpha             | No es equivalente de OpenGL directo. |
-| \_selección de componentes de TV \_ | No es equivalente de OpenGL directo. |
+| \_TV MODULARTE          | \_GLMODULTE                 |
+| DECAL \_ DE TV             | GL \_ DECAL                    |
+| TV \_ BLEND             | GL \_ BLEND                    |
+| COLOR DE \_ TELEVISIÓN             | COLOR DE \_ \_ ENV DE TEXTURA \_ GL      |
+| TV \_ ALPHA             | No hay equivalente directo de OpenGL. |
+| SELECCIÓN \_ DE COMPONENTE DE \_ TELEVISIÓN | No hay equivalente directo de OpenGL. |
 
 
 
- 
+ 
 
-Para obtener más información sobre los parámetros de entorno de textura, vea [**glTexEnv**](gltexenv-functions.md).
+Para obtener más información sobre los parámetros de entorno de textura, [**vea glTexEnv**](gltexenv-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

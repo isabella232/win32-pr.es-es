@@ -1,10 +1,10 @@
 ---
-title: TLSConnectToLsServer función)
-description: Abre un identificador del servidor de licencias de Escritorio remoto especificado.
+title: Función TLSConnectToLsServer
+description: Abre un identificador para el servidor de Escritorio remoto especificado.
 ms.assetid: 9e90a8e8-9319-42ee-b541-a1d028b6ed4d
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la función TLSConnectToLsServer
+- Función TLSConnectToLsServer Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc7f36b519399f0a8c1627fad7c7768f36ece57f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dbfc3c1e365a97b8199df34c2e55a8362f48b7f6a2a43e524e3c6e937de5cb0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986975"
 ---
-# <a name="tlsconnecttolsserver-function"></a>TLSConnectToLsServer función)
+# <a name="tlsconnecttolsserver-function"></a>Función TLSConnectToLsServer
 
-Abre un identificador del servidor de licencias de Escritorio remoto especificado.
+Abre un identificador para el servidor de Escritorio remoto especificado.
 
 > [!Note]  
-> Esta función no tiene asociado ningún archivo de encabezado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
+> Esta función no tiene ningún archivo de encabezado asociado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
 
  
 
@@ -46,22 +46,22 @@ TLS_HANDLE WINAPI TLSConnectToLsServer(
 
 <dl> <dt>
 
-*pszLsServer* \[ de\]
+*pszLsServer* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en **null** que especifica el nombre NetBIOS del servidor de licencias de escritorio remoto. Si el valor de este parámetro es **null**, el servidor especificado es el equipo local.
+Puntero a una cadena terminada en **NULL** que especifica el nombre NetBIOS del servidor Escritorio remoto licencias. Si el valor de este parámetro es **NULL,** el servidor especificado es el equipo local.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un identificador del servidor especificado.
+Si la función se realiza correctamente, el valor devuelto es un identificador para el servidor especificado.
 
-Si se produce un error en la función, el valor devuelto es **null**. Para obtener información de error extendida, llame a la función [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) .
+Si se produce un error en la función, el valor devuelto es **NULL.** Para obtener información de error extendida, llame a [**la función GetLastError.**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando haya terminado de usar el identificador devuelto por la función **TLSConnectToLsServer** , suéltelo llamando a la función [**TLSDisconnectFromServer**](tlsdisconnectfromserver.md) .
+Cuando haya terminado de usar el identificador devuelto por la función **TLSConnectToLsServer,** suéltelo mediante una llamada a la [**función TLSDisconnectFromServer.**](tlsdisconnectfromserver.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,7 +79,7 @@ Cuando haya terminado de usar el identificador devuelto por la función **TLSCon
 
 <dl> <dt>
 
-[**identificador de TLS \_**](tls-handle.md)
+[**IDENTIFICADOR \_ TLS**](tls-handle.md)
 </dt> <dt>
 
 [**TLSDisconnectFromServer**](tlsdisconnectfromserver.md)

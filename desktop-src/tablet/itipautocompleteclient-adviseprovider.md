@@ -1,7 +1,7 @@
 ---
-description: Registra el proveedor con el cliente para permitir que el cliente llame al objeto de proveedor de autocompletar de la aplicación.
+description: Registra el proveedor con el cliente para permitir que el cliente llame al objeto de proveedor autocompletar de la aplicación.
 ms.assetid: 7b761b30-66f7-454a-9e0d-f45c8099f19f
-title: 'ITipAutocompleteClient:: AdviseProvider (método) (TipAutoComplete. h)'
+title: Método ITipAutocompleteClient::AdviseProvider (TipAutoComplete.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: 9ef35ac730089403ac47c14421de96e75a022192
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd48cdfbf35c5132b42f8185cdc93f53ec34c77df78a51d16da9fa5a5311c144
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938585"
 ---
-# <a name="itipautocompleteclientadviseprovider-method"></a>ITipAutocompleteClient:: AdviseProvider (método)
+# <a name="itipautocompleteclientadviseprovider-method"></a>ITipAutocompleteClient::AdviseProvider (método)
 
-Registra el proveedor con el cliente para permitir que el cliente llame al objeto de proveedor de autocompletar de la aplicación.
+Registra el proveedor con el cliente para permitir que el cliente llame al objeto de proveedor autocompletar de la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ HRESULT AdviseProvider(
 
 <dl> <dt>
 
-*hWndField* \[ de\]
+*hWndField* \[ En\]
 </dt> <dd>
 
-Identificador de ventana del campo que proporciona la característica Autocompletar.
+Identificador de ventana del campo que proporciona la característica autocompletar.
 
 </dd> <dt>
 
-*pIACProvider* \[ de\]
+*pIACProvider* \[ En\]
 </dt> <dd>
 
-Puntero de interfaz a la interfaz del proveedor de autocompletar.
+Puntero de interfaz a la interfaz del proveedor autocompletar.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
@@ -75,9 +75,9 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                       |
-| Encabezado<br/>                   | <dl> <dt>TipAutoComplete. h (también requiere Peninputpanel \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 
@@ -86,10 +86,10 @@ Este método puede devolver uno de estos valores.
 
 <dl> <dt>
 
-[**Interfaz ITipAutocompleteClient**](itipautocompleteclient.md)
+[**ITipAutocompleteClient (interfaz)**](itipautocompleteclient.md)
 </dt> <dt>
 
-[**ITipAutocompleteClient:: UnadviseProvider (método)**](itipautocompleteclient-unadviseprovider.md)
+[**ITipAutocompleteClient::UnadviseProvider (Método)**](itipautocompleteclient-unadviseprovider.md)
 </dt> <dt>
 
 [Referencia del panel de entrada de texto](text-input-panel-reference.md)

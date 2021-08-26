@@ -1,95 +1,95 @@
 ---
-description: Al trabajar con gráficos del mismo nivel, se debe llamar a las funciones en un orden concreto. El flujo de llamadas depende de si se crea o se abre un grafo del mismo nivel. En este tema se identifica el flujo de llamadas a funciones en una aplicación sencilla de gráficos del mismo nivel.
+description: Al trabajar con gráficos del mismo nivel, se debe llamar a las funciones en un orden específico. El flujo de llamadas depende de si está creando o abriendo un gráfico del mismo nivel. En este tema se identifica el flujo de llamadas de función en una aplicación de grafo del mismo nivel simple.
 ms.assetid: cb4f48d0-d1e2-4a4b-bd5a-6e8f66d03806
 title: Trabajar con gráficos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4328b7a0109139421cf03c72a7228a3dc17e375
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fcdb4a40f1c086ada772239798990c3dfb24326b3e70bd768a95eacc35ee384b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034035"
 ---
 # <a name="working-with-graphs"></a>Trabajar con gráficos
 
-Al trabajar con gráficos del mismo nivel, se debe llamar a las funciones en un orden concreto. El flujo de llamadas depende de si se crea o se abre un grafo del mismo nivel. En este tema se identifica el flujo de llamadas a funciones en una aplicación sencilla de gráficos del mismo nivel.
+Al trabajar con gráficos del mismo nivel, se debe llamar a las funciones en un orden específico. El flujo de llamadas depende de si está creando o abriendo un gráfico del mismo nivel. En este tema se identifica el flujo de llamadas de función en una aplicación de grafo del mismo nivel simple.
 
-## <a name="starting-up-a-graph"></a>Inicio de un grafo
+## <a name="starting-up-a-graph"></a>Iniciar un Graph
 
-Antes de que una aplicación llame a una función de la API de gráficos del mismo nivel, se debe llamar a [**PeerGraphStartup**](/windows/desktop/api/P2P/nf-p2p-peergraphstartup) para inicializar la API de gráficos del mismo nivel para una aplicación y, a continuación, establecer la versión compatible.
+Antes de que una aplicación llame a una función en Peer Graphing API, se debe llamar a [**PeerGraphStartup**](/windows/desktop/api/P2P/nf-p2p-peergraphstartup) para inicializar Peer Graphing API para una aplicación y, a continuación, establecer la versión admitida.
 
-## <a name="creating-a-peer-graph"></a>Crear un grafo del mismo nivel
+## <a name="creating-a-peer-graph"></a>Crear un grupo del mismo nivel Graph
 
-El procedimiento siguiente identifica el flujo de llamadas para crear un grafo del mismo nivel.
+El procedimiento siguiente identifica el flujo de llamadas para crear un gráfico del mismo nivel.
 
 > [!IMPORTANT]
-> Solo un elemento del mismo nivel debe llamar a [**PeerGraphCreate**](/windows/desktop/api/P2P/nf-p2p-peergraphcreate). Todos los demás elementos del mismo nivel deben llamar a [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen). Varias llamadas a **PeerGraphCreate** invalidan un grafo.
+> Solo un par debe llamar a [**PeerGraphCreate**](/windows/desktop/api/P2P/nf-p2p-peergraphcreate). Todos los demás elementos del mismo nivel deben [**llamar a PeerGraphOpen.**](/windows/desktop/api/P2P/nf-p2p-peergraphopen) Varias llamadas a **PeerGraphCreate** invalidan un gráfico.
 
  
 
--   Cree un grafo del mismo nivel. Llame a [**PeerGraphCreate**](/windows/desktop/api/P2P/nf-p2p-peergraphcreate).
--   Registrar para eventos del mismo nivel. Llame a [**PeerGraphRegisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent).
+-   Cree un gráfico del mismo nivel. Llame [**a PeerGraphCreate**](/windows/desktop/api/P2P/nf-p2p-peergraphcreate).
+-   Regístrese para eventos del mismo nivel. Llame [**a PeerGraphRegisterEvent.**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent)
     > [!Note]  
-    > Para obtener más información sobre el registro de eventos del mismo nivel, vea [infraestructura de eventos](peer-events-infrastructure.md).
+    > Para obtener más información sobre el registro de eventos del mismo nivel, vea [Infraestructura de eventos](peer-events-infrastructure.md).
 
      
 
--   Escucha las conexiones a un grafo del mismo nivel. Llame a [**PeerGraphListen**](/windows/desktop/api/P2P/nf-p2p-peergraphlisten).
--   Realizar funciones dependientes de la aplicación para el resto del tiempo de ejecución, por ejemplo, procesar eventos del mismo nivel y trabajar con conexiones.
--   Cierre la conexión a un grafo del mismo nivel. Llame a [**PeerGraphClose**](/windows/desktop/api/P2P/nf-p2p-peergraphclose).
+-   Escuche las conexiones a un gráfico del mismo nivel. Llame [**a PeerGraphListen**](/windows/desktop/api/P2P/nf-p2p-peergraphlisten).
+-   Realice funciones dependientes de la aplicación durante el resto del tiempo de ejecución, por ejemplo, procese eventos del mismo nivel y trabaje con conexiones.
+-   Cierre la conexión a un gráfico del mismo nivel. Llame [**a PeerGraphClose.**](/windows/desktop/api/P2P/nf-p2p-peergraphclose)
 
-## <a name="opening-a-peer-graph"></a>Abrir un grafo del mismo nivel
+## <a name="opening-a-peer-graph"></a>Abrir una cuenta del Graph
 
-El flujo de llamadas de función para abrir un grafo del mismo nivel depende del valor devuelto de la llamada a [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen). Los valores más importantes son **s \_ OK** y **datos del mismo nivel \_ \_ \_ creados**, que se explican en las siguientes secciones de este tema.
+El flujo de llamadas de función para abrir un gráfico del mismo nivel depende del valor devuelto de la llamada a [**PeerGraphOpen.**](/windows/desktop/api/P2P/nf-p2p-peergraphopen) Los valores más importantes son **S \_ OK y** PEER S DATA **\_ \_ \_ CREATED,** que se explican en las secciones siguientes de este tema.
 
 > [!Note]  
-> Si una llamada a [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen) no devuelve los **datos \_ correctos** o **del mismo nivel que se \_ \_ \_ han creado**, controle el error.
+> Si una llamada a [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen) no devuelve **S OK \_ o** **PEER S DATA \_ \_ \_ CREATED,** controle el error.
 
  
 
 ## <a name="when-peergraphopen-returns-s_ok"></a>Cuando PeerGraphOpen devuelve S \_ OK
 
-Cuando una llamada a [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen) devuelve **S \_ correcto**, se han abierto un grafo del mismo nivel y una base de datos existente. El siguiente procedimiento identifica lo que puede hacer para abrir un grafo del mismo nivel cuando una llamada a **PeerGraphOpen** devuelve **S \_ correctos** .
+Cuando una llamada a [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen) devuelve **S \_ OK**, se han abierto un gráfico del mismo nivel y una base de datos existente. El procedimiento siguiente identifica lo que puede hacer para abrir un gráfico del mismo nivel cuando una llamada a **PeerGraphOpen** devuelve **S \_ OK**
 
--   Registrar para eventos del mismo nivel. Llame a [**PeerGraphRegisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent).
+-   Regístrese para eventos del mismo nivel. Llame [**a PeerGraphRegisterEvent.**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent)
     > [!Note]  
-    > Para obtener más información sobre el registro de eventos, vea [infraestructura de eventos](peer-events-infrastructure.md).
+    > Para obtener más información sobre el registro de eventos, vea [Infraestructura de eventos](peer-events-infrastructure.md).
 
      
 
--   Busque un nodo. Se trata de un proceso realizado fuera de la infraestructura de gráficos del mismo nivel, mediante el uso de un método o una aplicación que se identifican. La API de gráficos del mismo nivel no proporciona un mecanismo específico para encontrar un nodo de gráfico inicial al que conectarse. Una aplicación debe usar otro mecanismo, como la API del [Protocolo de resolución de nombres de mismo nivel (PNRP)](pnrp-namespace-provider-api.md) , para buscar el nodo inicial.
--   Si se encuentra un nodo, conéctese a él. Llame a [**PeerGraphConnect**](/windows/desktop/api/P2P/nf-p2p-peergraphconnect)y, a continuación, llame a [**PeerGraphListen**](/windows/desktop/api/P2P/nf-p2p-peergraphlisten) para escuchar las conexiones al grafo del mismo nivel.
-    > [!Note]  
-    > Si no se encuentra un nodo, no llame a [**PeerGraphConnect**](/windows/desktop/api/P2P/nf-p2p-peergraphconnect) y [**PeerGraphListen**](/windows/desktop/api/P2P/nf-p2p-peergraphlisten).
-
-     
-
--   Realizar funciones dependientes de la aplicación durante el resto del tiempo de ejecución, por ejemplo, procesar eventos del mismo nivel y trabajar con conexiones, dependiendo de si el nodo está conectado al grafo del mismo nivel o no. Por ejemplo, la aplicación puede elegir el tiempo de espera o realizar la detección periódicamente para un nodo activo en el gráfico.
--   Cierre la conexión al grafo del mismo nivel. Llame a [**PeerGraphClose**](/windows/desktop/api/P2P/nf-p2p-peergraphclose).
-
-## <a name="when-peergraphopen-returns-peer_s_data_created"></a>Cuando PeerGraphOpen devuelve datos del mismo nivel \_ \_ \_ creados
-
-Cuando [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen) devuelve **datos del mismo nivel \_ \_ \_ creados**, significa que no se encuentra una base de datos existente para un grafo del mismo nivel, se crea una nueva base de datos y es la primera vez que se abre. Para usar o escuchar en un grafo del mismo nivel, un elemento del mismo nivel debe estar conectado y sincronizado con un grafo del mismo nivel.
-
-El siguiente procedimiento identifica lo que puede hacer para abrir un grafo del mismo nivel cuando una llamada a [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen) devuelve los **datos del mismo nivel \_ \_ \_ creados**.
-
--   Abra un grafo del mismo nivel. Llame a [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen).
--   Registrar para eventos del mismo nivel. Llame a [**PeerGraphRegisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent).
-    > [!Note]  
-    > Para obtener más información sobre el registro de eventos del mismo nivel, vea [infraestructura de eventos](peer-events-infrastructure.md).
-
-     
-
--   Busque un nodo. Se trata de un proceso realizado fuera de la infraestructura de gráficos del mismo nivel, mediante el uso de un método o una aplicación que se identifican. La API de gráficos del mismo nivel no proporciona un mecanismo específico para encontrar un nodo de gráfico inicial al que conectarse. Una aplicación debe usar otro mecanismo, como la API del [Protocolo de resolución de nombres de mismo nivel (PNRP)](pnrp-namespace-provider-api.md) , para buscar el nodo inicial.
--   Si se encuentra un nodo, conéctese a él. Llame a [**PeerGraphConnect**](/windows/desktop/api/P2P/nf-p2p-peergraphconnect)y, a continuación, llame a [**PeerGraphListen**](/windows/desktop/api/P2P/nf-p2p-peergraphlisten) para escuchar las conexiones al grafo del mismo nivel.
+-   Busque un nodo. Se trata de un proceso que se realiza fuera de la infraestructura de grafos del mismo nivel, mediante un método o aplicación que identifique. Peer Graphing API no proporciona un mecanismo específico para encontrar un nodo de grafo inicial al que conectarse. Una aplicación debe usar otro mecanismo, como la API del Protocolo de resolución de nombres del mismo nivel [(PNRP),](pnrp-namespace-provider-api.md) para localizar el nodo inicial.
+-   Si se encuentra un nodo, conéctese a él. Llame [**a PeerGraphConnect**](/windows/desktop/api/P2P/nf-p2p-peergraphconnect)y, a continuación, llame a [**PeerGraphListen**](/windows/desktop/api/P2P/nf-p2p-peergraphlisten) para escuchar las conexiones al gráfico del mismo nivel.
     > [!Note]  
     > Si no se encuentra un nodo, no llame a [**PeerGraphConnect**](/windows/desktop/api/P2P/nf-p2p-peergraphconnect) y [**PeerGraphListen**](/windows/desktop/api/P2P/nf-p2p-peergraphlisten).
 
      
 
--   Realizar funciones dependientes de la aplicación durante el resto del tiempo de ejecución, por ejemplo, procesar eventos del mismo nivel y trabajar con conexiones, dependiendo de si el nodo está conectado al grafo del mismo nivel o no. Por ejemplo, la aplicación puede elegir el tiempo de espera o realizar la detección periódicamente para un nodo activo en el gráfico.
--   Cierre la conexión al grafo del mismo nivel. Llame a [**PeerGraphClose**](/windows/desktop/api/P2P/nf-p2p-peergraphclose).
+-   Realice funciones dependientes de la aplicación durante el resto del tiempo de ejecución, por ejemplo, procese eventos del mismo nivel y trabaje con conexiones, en función de si el nodo está conectado al gráfico del mismo nivel o no. Por ejemplo, la aplicación puede optar por agotar el tiempo de espera o realizar periódicamente la detección de un nodo activo en el gráfico.
+-   Cierre la conexión al gráfico del mismo nivel. Llame [**a PeerGraphClose.**](/windows/desktop/api/P2P/nf-p2p-peergraphclose)
+
+## <a name="when-peergraphopen-returns-peer_s_data_created"></a>Cuando PeerGraphOpen devuelve PEER \_ S \_ DATA \_ CREATED
+
+Cuando [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen) devuelve **PEER S DATA \_ \_ \_ CREATED**, significa que no se encuentra una base de datos existente para un gráfico del mismo nivel, se crea una nueva base de datos y es la primera vez que se abre. Para usar o escuchar en un gráfico del mismo nivel, un grafo del mismo nivel debe estar conectado y sincronizado con un gráfico del mismo nivel.
+
+El procedimiento siguiente identifica lo que puede hacer para abrir un gráfico del mismo nivel cuando una llamada a [**PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen) devuelve **PEER S DATA \_ \_ \_ CREATED**.
+
+-   Abra un gráfico del mismo nivel. Llame [**a PeerGraphOpen**](/windows/desktop/api/P2P/nf-p2p-peergraphopen).
+-   Regístrese para eventos del mismo nivel. Llame [**a PeerGraphRegisterEvent.**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent)
+    > [!Note]  
+    > Para obtener más información sobre el registro de eventos del mismo nivel, vea [Infraestructura de eventos](peer-events-infrastructure.md).
+
+     
+
+-   Busque un nodo. Se trata de un proceso que se realiza fuera de la infraestructura de grafos del mismo nivel, mediante un método o aplicación que identifique. Peer Graphing API no proporciona un mecanismo específico para encontrar un nodo de grafo inicial al que conectarse. Una aplicación debe usar otro mecanismo, como la API del Protocolo de resolución de nombres del mismo nivel [(PNRP),](pnrp-namespace-provider-api.md) para localizar el nodo inicial.
+-   Si se encuentra un nodo, conéctese a él. Llame [**a PeerGraphConnect**](/windows/desktop/api/P2P/nf-p2p-peergraphconnect)y, a continuación, llame a [**PeerGraphListen**](/windows/desktop/api/P2P/nf-p2p-peergraphlisten) para escuchar las conexiones al gráfico del mismo nivel.
+    > [!Note]  
+    > Si no se encuentra un nodo, no llame a [**PeerGraphConnect**](/windows/desktop/api/P2P/nf-p2p-peergraphconnect) y [**PeerGraphListen**](/windows/desktop/api/P2P/nf-p2p-peergraphlisten).
+
+     
+
+-   Realice funciones dependientes de la aplicación durante el resto del tiempo de ejecución, por ejemplo, procese eventos del mismo nivel y trabaje con conexiones, en función de si el nodo está conectado al gráfico del mismo nivel o no. Por ejemplo, la aplicación puede optar por agotar el tiempo de espera o realizar periódicamente la detección de un nodo activo en el gráfico.
+-   Cierre la conexión al gráfico del mismo nivel. Llame [**a PeerGraphClose.**](/windows/desktop/api/P2P/nf-p2p-peergraphclose)
 
  
 

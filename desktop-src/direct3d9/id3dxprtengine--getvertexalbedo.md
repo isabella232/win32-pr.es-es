@@ -1,7 +1,7 @@
 ---
-description: Recupera los valores de albedo de los vértices de malla.
+description: Recupera los valores albedo de los vértices de malla.
 ms.assetid: 12b8d6d1-c806-4dcd-80ac-f3963215dcf4
-title: 'ID3DXPRTEngine:: GetVertexAlbedo (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::GetVertexAlbedo (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7926f6393221552107667c9209ef2b4c51945ab8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7bdaf264e887c12b6dd711be978c5fc233bacc14d41d0899ddda43473001fe6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985565"
 ---
-# <a name="id3dxprtenginegetvertexalbedo-method"></a>ID3DXPRTEngine:: GetVertexAlbedo (método)
+# <a name="id3dxprtenginegetvertexalbedo-method"></a>Método ID3DXPRTEngine::GetVertexAlbedo
 
-Recupera los valores de albedo de los vértices de malla.
+Recupera los valores albedo de los vértices de malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ HRESULT GetVertexAlbedo(
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntero a una matriz de destino de valores albedo de los vértices de malla. Vea [**D3DXCOLOR**](d3dxcolor.md).
+Puntero a una matriz de destino de valores albedo de los vértices de malla. Vea [**D3DXCOLOR.**](d3dxcolor.md)
 
 </dd> <dt>
 
-*NumVerts* \[ de\]
+*NumVerts* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de vértices en la malla.
 
@@ -63,7 +63,7 @@ Número de vértices en la malla.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

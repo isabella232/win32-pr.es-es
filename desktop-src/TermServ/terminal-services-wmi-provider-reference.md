@@ -1,91 +1,91 @@
 ---
 title: Servicios de Escritorio remoto referencia del proveedor WMI
-description: Enumera los temas que se tratan en la sección referencia del proveedor de WMI de Servicios de Escritorio remoto.
+description: Enumera los temas que se tratan en la Servicios de Escritorio remoto referencia del proveedor WMI.
 ms.assetid: 1efd3e7a-1102-4464-ad31-502b357a1c87
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de Servicios de Escritorio remoto, referencia del proveedor WMI
+- Servicios de Escritorio remoto Servicios de Escritorio remoto , referencia del proveedor WMI
 - Referencia del proveedor WMI Servicios de Escritorio remoto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f72645ce77e2200eb82a2caaf5d598b2269fba82
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6a484a5f874c8e14c4fba07a269d00c64a09d36afacf9f6c2ce8f7e5921220fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987075"
 ---
 # <a name="remote-desktop-services-wmi-provider-reference"></a>Servicios de Escritorio remoto referencia del proveedor WMI
 
-Los temas siguientes se tratan en esta sección.
+En esta sección se tratan los temas siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
 <dl> <dt>
 
-[Servicios de Escritorio remoto clases de configuración](terminal-services-configuration-classes.md)
+[Servicios de Escritorio remoto Configuration](terminal-services-configuration-classes.md)
 </dt> <dd>
 
-El proveedor WMI de configuración de Servicios de Escritorio remoto proporciona las siguientes clases. A continuación se muestra una ilustración.
+El Servicios de Escritorio remoto WMI de configuración de servidor proporciona las siguientes clases. A continuación se muestra una ilustración.
 
 </dd> <dt>
 
-[Clases de puerta de enlace de Escritorio remoto](terminal-services-gateway-classes.md)
+[Escritorio remoto gateway](terminal-services-gateway-classes.md)
 </dt> <dd>
 
-El proveedor WMI de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto) proporciona las siguientes clases.
+El proveedor WMI Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto) proporciona las siguientes clases.
 
 </dd> <dt>
 
-[Clases de servidor de licencias de Escritorio remoto](terminal-services-license-server-classes.md)
+[Escritorio remoto de licencias](terminal-services-license-server-classes.md)
 </dt> <dd>
 
-El proveedor WMI del servidor de licencias de Escritorio remoto proporciona las siguientes clases.
+El Escritorio remoto WMI del servidor de licencias proporciona las siguientes clases.
 
 </dd> <dt>
 
-[Clases de Conexión a Escritorio remoto Broker](terminal-services-session-broker-classes.md)
+[Conexión a Escritorio remoto Broker](terminal-services-session-broker-classes.md)
 </dt> <dd>
 
-El proveedor WMI de Conexión a Escritorio remoto Broker (agente de conexión a escritorio remoto) proporciona las siguientes clases.
+El proveedor WMI Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto) proporciona las clases siguientes.
 
 </dd> <dt>
 
-[Clases de máquinas virtuales Escritorio remoto](remote-desktop-virtual-machine-classes.md)
+[Escritorio remoto de máquina virtual](remote-desktop-virtual-machine-classes.md)
 </dt> <dd>
 
-El proveedor WMI de máquinas virtuales Escritorio remoto proporciona las siguientes clases.
+El Escritorio remoto WMI de máquina virtual proporciona las siguientes clases.
 
 </dd> <dt>
 
-[Clases RemoteApp](terminal-services-remoteapp-classes.md)
+[Clases remoteApp](terminal-services-remoteapp-classes.md)
 </dt> <dd>
 
-El proveedor de WMI de RemoteApp proporciona las siguientes clases.
+El proveedor WMI de RemoteApp proporciona las clases siguientes.
 
 </dd> <dt>
 
-[Clases de servicio Administración de conexiones de RemoteApp y Escritorio](remoteapp-and-desktop-connection-management-service-classes.md)
+[Administración de conexiones de RemoteApp y Escritorio Service](remoteapp-and-desktop-connection-management-service-classes.md)
 </dt> <dd>
 
-El proveedor WMI del servicio Administración de conexiones de RemoteApp y Escritorio proporciona las siguientes clases.
+El Administración de conexiones de RemoteApp y Escritorio WMI de servicio proporciona las siguientes clases.
 
 </dd> <dt>
 
-[**Códigos de error del proveedor de Servicios de Escritorio remoto WMI**](terminal-services-wmi-provider-error-codes.md)
+[**Servicios de Escritorio remoto de error del proveedor WMI**](terminal-services-wmi-provider-error-codes.md)
 </dt> <dd>
 
-Errores devueltos por el proveedor de WMI de Servicios de Escritorio remoto. Para obtener una lista de otros errores de WMI, vea [**constantes error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants).
+Errores devueltos por el Servicios de Escritorio remoto WMI. Para obtener una lista de otros errores de WMI, vea [**Constantes de error wmi**](/windows/desktop/WmiSdk/wmi-error-constants).
 
 </dd> </dl>
 
 > [!Note]  
-> En Windows Server 2008 R2, el nombre de la característica del agente de conexión Terminal Services se cambió al agente de conexión a escritorio remoto.
+> En Windows Server 2008 R2, el nombre de la característica Agente de conexión de Terminal Services se cambió a Agente de conexión a Escritorio remoto.
 
- 
+ 
 
-Para obtener información acerca de los problemas de seguridad y las aplicaciones WMI, consulte mantenimiento de la [seguridad WMI](/windows/desktop/WmiSdk/maintaining-wmi-security).
+Para obtener información sobre los problemas de seguridad y las aplicaciones WMI, vea [Mantener la seguridad de WMI.](/windows/desktop/WmiSdk/maintaining-wmi-security)
 
- 
+ 
 
- 
+ 

@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene información sobre los eventos que se usan en el análisis de tinta.
+description: Esta sección contiene información sobre los eventos usados en el análisis de entrada de lápiz.
 ms.assetid: e12eddd4-57fb-4d64-90b1-e05d043013a2
-title: Eventos de análisis de tinta
+title: Eventos de análisis de entrada de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cf5956e13da559676fbb63588fd81b9d98e385e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13aa32dc1274727c89c335027544ab5f11f5a41468598393402db6f39f22caf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939485"
 ---
-# <a name="ink-analysis-events"></a>Eventos de análisis de tinta
+# <a name="ink-analysis-events"></a>Eventos de análisis de entrada de lápiz
 
-Esta sección contiene información sobre los eventos que se usan en el análisis de tinta.
+Esta sección contiene información sobre los eventos usados en el análisis de entrada de lápiz.
 
 ## <a name="event-sources"></a>Orígenes de eventos
 
@@ -21,8 +21,8 @@ Esta sección contiene información sobre los eventos que se usan en el análisi
 
 | Origen de eventos                                            | Descripción                                                                                                         |
 |---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [\_IAnalysisEvents](-ianalysisevents.md)               | Especifica eventos asociados a los pasos de análisis de un objeto [**IInkAnalyzer**](iinkanalyzer.md) .<br/>   |
-| [**\_IAnalysisProxyEvents**](-ianalysisproxyevents.md) | Especifica los eventos asociados con los pasos del proxy de datos de un objeto [**IInkAnalyzer**](iinkanalyzer.md) .<br/> |
+| [\_IAnalysisEvents](-ianalysisevents.md)               | Especifica los eventos asociados a los pasos de análisis de un [**objeto IInkAnalyzer.**](iinkanalyzer.md)<br/>   |
+| [**\_IAnalysisProxyEvents**](-ianalysisproxyevents.md) | Especifica los eventos asociados a los pasos del proxy de datos de [**un objeto IInkAnalyzer.**](iinkanalyzer.md)<br/> |
 
 
 
@@ -32,7 +32,7 @@ Esta sección contiene información sobre los eventos que se usan en el análisi
 
 <dl> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

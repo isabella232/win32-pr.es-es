@@ -1,9 +1,9 @@
 ---
-title: Network. maxBitRate
+title: Network.maxBitRate
 description: La propiedad maxBitRate recupera la velocidad de bits de vídeo máxima posible.
 ms.assetid: d1e6b548-0a2e-4bd4-8859-d504309a119e
 keywords:
-- Windows Media Player de red. maxBitRate
+- Network.maxBitRate Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,24 +14,24 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77522da2ef471a3be9208a9df30bf7435a5476e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b8188b4c3019e5b420b3c8b60a7de2ea30eb7a52d1d080fa01c3d46f89308576
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901525"
 ---
-# <a name="networkmaxbitrate"></a>Network. maxBitRate
+# <a name="networkmaxbitrate"></a>Network.maxBitRate
 
-La propiedad **maxBitRate** recupera la velocidad de bits de vídeo máxima posible.
+La **propiedad maxBitRate** recupera la velocidad de bits de vídeo máxima posible.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *red*. **maxBitRate**
+*player*. *red*. **maxBitRate**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Esta propiedad es un **número** de solo lectura (**Long**).
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

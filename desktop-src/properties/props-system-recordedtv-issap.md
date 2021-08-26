@@ -4,12 +4,12 @@ ms.assetid: 9fd78517-ba1f-4832-9c1c-31acb16548f7
 title: System.RecordedTV.IsSAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72a9035b2162caf68de92c029af7ad563d5abe2b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b5a44307fa46f290ff76636dd6f075e01a3f3ddaaf8614c7077e5a73bca0b85b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938185"
 ---
 # <a name="systemrecordedtvissap"></a>System.RecordedTV.IsSAP
 

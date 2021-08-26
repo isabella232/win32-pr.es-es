@@ -1,6 +1,6 @@
 ---
-title: Tipos complejos de esquema de mspeapconnectionpropertiesv1
-description: Más información sobre el esquema de mspeapconnectionpropertiesv1. Este esquema define los tipos complejos PeapExtensionsType y ServerValidationParameters.
+title: Mspeapconnectionpropertiesv1 Schema Complex Types
+description: Obtenga información sobre el esquema mspeapconnectionpropertiesv1. Este esquema define los tipos complejos PeapExtensionsType y ServerValidationParameters.
 ms.assetid: 544ee8fc-6b96-4661-bba5-9e26a7af661d
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 87ad1b77b13d1f601431498cef4b7265524fd62c
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: bf557bbab2c7dfc8003c5fa2b97d89c5a07b517743c47738d498234394d45ac4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104149632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948095"
 ---
-# <a name="mspeapconnectionpropertiesv1-schema-complex-types"></a>Tipos complejos de esquema de mspeapconnectionpropertiesv1
+# <a name="mspeapconnectionpropertiesv1-schema-complex-types"></a>Mspeapconnectionpropertiesv1 Schema Complex Types
 
-El esquema [mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md) define los siguientes tipos complejos.
+El [esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md) define los siguientes tipos complejos.
 
 -   [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
 -   [**ServerValidationParameters**](mspeapconnectionpropertiesv1schema-servervalidationparameters-complextype.md)
@@ -30,15 +30,15 @@ El esquema [mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-sch
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md)
+[Mspeapconnectionpropertiesv1 Schema](mspeapconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Esquema mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-schema.md)
+[Mspeapconnectionpropertiesv2 Schema](mspeapconnectionpropertiesv2schema-schema.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

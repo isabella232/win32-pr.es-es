@@ -1,21 +1,21 @@
 ---
-description: Desusado. El PenInputPanel se ha reemplazado por el panel de entrada de texto (TIP). Se produce cuando el foco de entrada cambia antes de que el objeto PenInputPanel pudiera insertar la entrada del usuario en el control adjunto.
+description: Desusado. PenInputPanel se ha reemplazado por el Panel de entrada de texto (TIP). Se produce cuando el foco de entrada cambia antes de que el objeto PenInputPanel pueda insertar la entrada del usuario en el control adjunto.
 ms.assetid: a5928f78-29d6-40e8-8f87-17c188e51ba9
-title: Evento PenInputPanel. InputFailed (Msinkaut. h)
+title: Evento PenInputPanel.InputFailed (Mspanel.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 198c2b466dc03357d9851d7c8a6b7f44c6bf6884
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cc3234c73fc8ba47faa7d1f2ec89477a1bfb86b7c2abda263aff227c5961f1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119934765"
 ---
-# <a name="peninputpanelinputfailed-event"></a>Evento PenInputPanel. InputFailed
+# <a name="peninputpanelinputfailed-event"></a>PenInputPanel.InputFailed, evento
 
-En desuso. El [**PenInputPanel**](peninputpanel-class.md) se ha reemplazado por el [Panel de entrada de texto (TIP)](text-input-panel-reference.md).
+En desuso. [**PenInputPanel se**](peninputpanel-class.md) ha reemplazado por el [Panel de entrada de texto (TIP).](text-input-panel-reference.md)
 
-Se produce cuando el foco de entrada cambia antes de que el objeto [**PenInputPanel**](peninputpanel-class.md) pudiera insertar la entrada del usuario en el control adjunto.
+Se produce cuando el foco de entrada cambia antes [**de que el objeto PenInputPanel**](peninputpanel-class.md) fuera capaz de insertar la entrada del usuario en el control adjunto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,48 +35,48 @@ HRESULT InputFailed(
 
 <dl> <dt>
 
-*hWnd* \[ de\]
+*hWnd* \[ En\]
 </dt> <dd>
 
-Identificador de ventana del control que invocó el objeto [**PenInputPanel**](peninputpanel-class.md) .
+Identificador de ventana del control que invocó el [**objeto PenInputPanel.**](peninputpanel-class.md)
 
 </dd> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-La clave virtual correspondiente a la tecla presionada.
+Tecla virtual correspondiente a la tecla presionada.
 
 </dd> <dt>
 
-*Texto* \[ de de\]
+*Texto* \[ En\]
 </dt> <dd>
 
-Cadena que se va a insertar en el control representado por el parámetro *hWnd* cuando se generó el evento **InputFailed** .
+Cadena que se va a insertar en el control representado por el *parámetro hWnd* cuando se presentó el evento **InputFailed.**
 
-Para obtener más información sobre el tipo de datos BSTR, vea [usar la biblioteca com](using-the-com-library.md).
+Para obtener más información sobre el tipo de datos BSTR, vea [Uso de la biblioteca COM](using-the-com-library.md).
 
 </dd> <dt>
 
-*ShiftKey* \[ de\]
+*MayúsKey* \[ En\]
 </dt> <dd>
 
-El estado de los modificadores de teclado, incluidos Mayús, Mayús, CTRL y ALT.
+Estado de los modificadores de teclado, incluidos MAYÚS, CAPS, CTRL y ALT.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este evento se realiza correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este evento se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El evento **InputFailed** se produce cuando el foco de entrada cambia antes de que se insertara la entrada del usuario en el control adjunto. Por ejemplo, si el usuario escribe la entrada manuscrita en el panel de escritura y, a continuación, pulsa en otro control de edición antes de que el reconocedor haya tenido la oportunidad de finalizar, este evento se desencadena.
+El **evento InputFailed** tiene lugar cuando cambia el foco de entrada antes de insertar la entrada del usuario en el control adjunto. Por ejemplo, si el usuario escribe entrada de lápiz en el panel de escritura, pulsa otro control de edición antes de que el reconocedor haya tenido la oportunidad de finalizar, se produce este evento.
 
-Con el identificador de ventana que se pasa a este evento, puede optar por insertar el texto usted mismo cuando se produce este evento.
+Con el identificador de ventana pasado a este evento, puede elegir insertar el texto usted mismo cuando se produzca este evento.
 
 > [!Note]  
-> A partir de Microsoft Windows XP Tablet PC Edition 2005, el evento **InputFailed** ya no se aplica. El texto se inserta siempre antes de que cambie el foco.
+> A partir de Microsoft Windows XP Tablet PC Edition 2005, el **evento InputFailed** ya no se aplica. El texto siempre se inserta antes de que cambie el foco.
 
  
 
@@ -86,9 +86,9 @@ Con el identificador de ventana que se pasa a este evento, puede optar por inser
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

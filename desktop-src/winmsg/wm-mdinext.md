@@ -1,19 +1,19 @@
 ---
-description: Una aplicación envía el mensaje de MDINEXT de WM \_ a una ventana de cliente de la interfaz de múltiples documentos (MDI) para activar la ventana secundaria siguiente o anterior.
+description: Una aplicación envía el mensaje MDINEXT de WM a una ventana de cliente de interfaz de múltiples documentos (MDI) para activar la ventana secundaria \_ siguiente o anterior.
 ms.assetid: a4822b99-330a-4094-bad9-b9a5923e02a8
-title: Mensaje de WM_MDINEXT (Winuser. h)
+title: WM_MDINEXT mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20e0af031c11ea37129e1405e31b07b18f023b7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8aa2b88e5368db2a6b700e0b4d469d1ba680d3caa4d2c1e1c208c5143660396f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931245"
 ---
-# <a name="wm_mdinext-message"></a>Mensaje de MDINEXT de WM \_
+# <a name="wm_mdinext-message"></a>Mensaje \_ MDINEXT de WM
 
-Una aplicación envía el mensaje de **\_ MDINEXT de WM** a una ventana de cliente de la interfaz de múltiples documentos (MDI) para activar la ventana secundaria siguiente o anterior.
+Una aplicación envía el **mensaje \_ MDINEXT** de WM a una ventana de cliente de interfaz de múltiples documentos (MDI) para activar la ventana secundaria siguiente o anterior.
 
 
 ```C++
@@ -29,14 +29,14 @@ Una aplicación envía el mensaje de **\_ MDINEXT de WM** a una ventana de clien
 *wParam* 
 </dt> <dd>
 
-Identificador de la ventana secundaria MDI. El sistema activa la ventana secundaria que está inmediatamente antes o después de la ventana secundaria especificada, en función del valor del parámetro *lParam* . Si el parámetro *wParam* es **null**, el sistema activa la ventana secundaria que está inmediatamente antes o después de la ventana secundaria activa actualmente.
+Identificador de la ventana secundaria MDI. El sistema activa la ventana secundaria que está inmediatamente antes o después de la ventana secundaria especificada, en función del valor del *parámetro lParam.* Si el *parámetro wParam* es **NULL,** el sistema activa la ventana secundaria inmediatamente anterior o posterior a la ventana secundaria activa actualmente.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Si este parámetro es cero, el sistema activa la ventana secundaria MDI siguiente y coloca la ventana secundaria identificada por el parámetro *wParam* detrás de las demás ventanas secundarias. Si este parámetro es distinto de cero, el sistema activa la ventana secundaria anterior, colocándolo delante de la ventana secundaria identificada por *wParam*.
+Si este parámetro es cero, el sistema activa la siguiente ventana secundaria MDI y coloca la ventana secundaria identificada por el parámetro *wParam* detrás de todas las demás ventanas secundarias. Si este parámetro es distinto de cero, el sistema activa la ventana secundaria anterior y la coloca delante de la ventana secundaria identificada por *wParam*.
 
 </dd> </dl>
 
@@ -46,9 +46,9 @@ Tipo: **cero**
 
 El valor devuelto siempre es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si una ventana de cliente MDI recibe cualquier mensaje que cambie la activación de sus ventanas secundarias mientras la ventana secundaria MDI activa está maximizada, el sistema restaura la ventana secundaria activa y maximiza la ventana secundaria recién activada.
+Si una ventana cliente MDI recibe algún mensaje que cambia la activación de sus ventanas secundarias mientras se maximiza la ventana secundaria MDI activa, el sistema restaura la ventana secundaria activa y maximiza la ventana secundaria recién activada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Si una ventana de cliente MDI recibe cualquier mensaje que cambie la activación
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -69,13 +69,13 @@ Si una ventana de cliente MDI recibe cualquier mensaje que cambie la activación
 **Referencia**
 </dt> <dt>
 
-[**MDIACTIVATE de WM \_**](wm-mdiactivate.md)
+[**WM \_ MDIACTIVATE**](wm-mdiactivate.md)
 </dt> <dt>
 
-[**MDIGETACTIVE de WM \_**](wm-mdigetactive.md)
+[**WM \_ MDIGETACTIVE**](wm-mdigetactive.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Interfaz de varios documentos](multiple-document-interface.md)

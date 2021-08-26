@@ -4,20 +4,20 @@ ms.assetid: 3af46a07-027f-4b31-9958-4a16971c81f8
 title: Europa Occidental
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 552d2fc92b8a3c8433e863e7a69f63859b7efab8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8238078aa5b5c8fc0776fa0e604b09a1255823a6c348b2e9701087755afeadc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982365"
 ---
 # <a name="western-europe"></a>Europa Occidental
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Los índices de frecuencia de las tablas de Europa occidental no son adecuados para su uso como números de canal.
+Los índices de frecuencia de las tablas de Europa Occidental no son adecuados para su uso como números de canal.
 
-### <a name="western-europe-broadcast-assignments"></a>Asignaciones de difusión de Europa occidental
+### <a name="western-europe-broadcast-assignments"></a>Asignaciones de difusión de Europa Occidental
 
 
 ```C++
@@ -99,9 +99,9 @@ Los índices de frecuencia de las tablas de Europa occidental no son adecuados p
 
 
 
-### <a name="western-europe-cable-assignments"></a>Asignaciones de cable de Europa occidental
+### <a name="western-europe-cable-assignments"></a>Asignaciones de cable de Europa Occidental
 
-Había datos para admitir una línea de cable normalizada para algunos países o regiones. En el caso de los países o regiones que no han notificado datos de la línea de canales, se usa la [tabla de frecuencias Unicable](unicable-frequency-table.md) .
+Había datos para admitir una línea de cable estandarizada para algunos países o regiones. Para los países o regiones que no notificaron datos de alineación del canal, se usa [la tabla de](unicable-frequency-table.md) frecuencias no utilizables.
 
 ``` syntax
          1L,            // Lowest channel
@@ -221,7 +221,7 @@ Había datos para admitir una línea de cable normalizada para algunos países o
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste internacional de televisión análoga](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

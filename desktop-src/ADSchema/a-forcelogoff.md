@@ -1,11 +1,11 @@
 ---
-title: Force-Logoff atributo)
-description: Se usa para calcular el tiempo de inicio en SamIGetAccountRestrictions. La hora de cierre de sesión menos forzar el cierre del registro es igual a la hora de inicio.
+title: Force-Logoff atributo
+description: Se usa para calcular la hora de inicio en SamIGetAccountRestrictions. La hora de cierre de sesión menos Forzar cierre de sesión es igual a la hora de inicio.
 ms.assetid: 2ce1d5db-52aa-49c5-aef2-ec67122100ed
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Force-Logoff
-- forceLogoff esquema de AD de atributos
+- Force-Logoff esquema de AD del atributo
+- Esquema de AD del atributo forceLogoff
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63e31cb241cde4deb40d5978594b4354fbcc564b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1df1ab9721643edec3e03e91475c74e63dde94dcb982e0a84aad3cdf7c63b806
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925855"
 ---
-# <a name="force-logoff-attribute"></a>Force-Logoff atributo)
+# <a name="force-logoff-attribute"></a>Force-Logoff atributo
 
-Se usa para calcular el tiempo de inicio en SamIGetAccountRestrictions. La hora de cierre de sesión menos forzar el cierre del registro es igual a la hora de inicio.
+Se usa para calcular la hora de inicio en SamIGetAccountRestrictions. La hora de cierre de sesión menos Forzar cierre de sesión es igual a la hora de inicio.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Force-Logoff                         |
-| Nombre para mostrar de LDAP | forceLogoff                          |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | forceLogoff                          |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.39                |
-| System-ID-GUID    | bf967977-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf967977-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ Se usa para calcular el tiempo de inicio en SamIGetAccountRestrictions. La hora 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                       |
+| Id. de vínculo                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
-| System-Only            | False                                                                                                    |
-| Tiene un único valor       | True                                                                                                     |
-| Está indexado             | False                                                                                                    |
-| En el catálogo global      | False                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                             |
+| System-Only            | Falso                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                     |
+| Está indexado             | Falso                                                                                                    |
+| En el catálogo global      | Falso                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                             |
 | Range-Lower            | \-                                                                                                       |
 | Range-Upper            | \-                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                               |
 | System-Flags           | 0x00000010                                                                                               |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Se usa para calcular el tiempo de inicio en SamIGetAccountRestrictions. La hora 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                       |
+| Id. de vínculo                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
-| System-Only            | False                                                                                                    |
-| Tiene un único valor       | True                                                                                                     |
-| Está indexado             | False                                                                                                    |
-| En el catálogo global      | False                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                             |
+| System-Only            | Falso                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                     |
+| Está indexado             | Falso                                                                                                    |
+| En el catálogo global      | Falso                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                             |
 | Range-Lower            | \-                                                                                                       |
 | Range-Upper            | \-                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                               |
 | System-Flags           | 0x00000010                                                                                               |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Se usa para calcular el tiempo de inicio en SamIGetAccountRestrictions. La hora 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                       |
+| Id. de vínculo                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
-| System-Only            | False                                                                                                    |
-| Tiene un único valor       | True                                                                                                     |
-| Está indexado             | False                                                                                                    |
-| En el catálogo global      | False                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                             |
+| System-Only            | Falso                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                     |
+| Está indexado             | Falso                                                                                                    |
+| En el catálogo global      | Falso                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                             |
 | Range-Lower            | \-                                                                                                       |
 | Range-Upper            | \-                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                               |
 | System-Flags           | 0x00000010                                                                                               |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Se usa para calcular el tiempo de inicio en SamIGetAccountRestrictions. La hora 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                       |
+| Id. de vínculo                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
-| System-Only            | False                                                                                                    |
-| Tiene un único valor       | True                                                                                                     |
-| Está indexado             | False                                                                                                    |
-| En el catálogo global      | False                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                             |
+| System-Only            | Falso                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                     |
+| Está indexado             | Falso                                                                                                    |
+| En el catálogo global      | Falso                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                             |
 | Range-Lower            | \-                                                                                                       |
 | Range-Upper            | \-                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                               |
 | System-Flags           | 0x00000010                                                                                               |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Se usa para calcular el tiempo de inicio en SamIGetAccountRestrictions. La hora 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                       |
+| Id. de vínculo                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
-| System-Only            | False                                                                                                    |
-| Tiene un único valor       | True                                                                                                     |
-| Está indexado             | False                                                                                                    |
-| En el catálogo global      | False                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                             |
+| System-Only            | Falso                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                     |
+| Está indexado             | Falso                                                                                                    |
+| En el catálogo global      | Falso                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                             |
 | Range-Lower            | \-                                                                                                       |
 | Range-Upper            | \-                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                               |
 | System-Flags           | 0x00000010                                                                                               |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Se usa para calcular el tiempo de inicio en SamIGetAccountRestrictions. La hora 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                       |
+| Id. de vínculo                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
-| System-Only            | False                                                                                                    |
-| Tiene un único valor       | True                                                                                                     |
-| Está indexado             | False                                                                                                    |
-| En el catálogo global      | False                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                             |
+| System-Only            | Falso                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                     |
+| Está indexado             | Falso                                                                                                    |
+| En el catálogo global      | Falso                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                             |
 | Range-Lower            | \-                                                                                                       |
 | Range-Upper            | \-                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                               |
 | System-Flags           | 0x00000010                                                                                               |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

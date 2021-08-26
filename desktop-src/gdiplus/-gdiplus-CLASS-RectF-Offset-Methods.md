@@ -1,19 +1,19 @@
 ---
-description: En este tema se enumeran los métodos de desplazamiento de la clase RectF. Para obtener una lista completa de los métodos de la clase RectF, consulte métodos Rect.
+description: En este tema se enumeran los métodos Offset de la clase RectF. Para obtener una lista completa de los métodos para la clase RectF, vea Métodos Rect.
 ms.assetid: 0dcd8bc5-c38b-40ce-bc66-110d49cb96d5
-title: RectF. offset (métodos)
+title: Métodos RectF.Offset
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: eaedd8ff2a9eb522fa7f2e4b4eff3cbc94d622f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f7924f0e8a2d6109631f7cc63fedeb215bf818d1332b0b168daff5420449e87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964265"
 ---
-# <a name="rectfoffset-methods"></a>RectF. offset (métodos)
+# <a name="rectfoffset-methods"></a>Métodos RectF.Offset
 
-En este tema se enumeran los métodos de desplazamiento de la clase [**RectF**](/windows/win32/api/gdiplustypes/nl-gdiplustypes-rectf) . Para obtener una lista completa de los métodos de la clase **RectF** , consulte [métodos Rect](-gdiplus-class-rect-methods.md).
+En este tema se enumeran los métodos Offset de [**la clase RectF.**](/windows/win32/api/gdiplustypes/nl-gdiplustypes-rectf) Para obtener una lista completa de los métodos de **la clase RectF,** vea [Métodos rect](-gdiplus-class-rect-methods.md).
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -21,8 +21,8 @@ En este tema se enumeran los métodos de desplazamiento de la clase [**RectF**](
 
 | Método                                                          | Descripción                                                                                           |
 |:----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
-| [**Desplazamiento (& de PointF)**](/previous-versions//ms534948(v=vs.85))   | *Punto* de [**desplazamiento RectF::**](/previous-versions//ms534948(v=vs.85)). _Punto_ X. **Y**.<br/> |
-| [**Desplazamiento (REAL, REAL)**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-offset(inreal_inreal)) | [**RectF:: Offset**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-offset(inreal_inreal))*dxdx* verticalmente.<br/>          |
+| [**Offset(PointF&)**](/previous-versions//ms534948(v=vs.85))   | El [**punto RectF::Offset**](/previous-versions//ms534948(v=vs.85))*.* **Punto**_X_. **Y**.<br/> |
+| [**Offset(REAL,REAL)**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-offset(inreal_inreal)) | [**RectF::Offset**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-offset(inreal_inreal))*dxdx* verticalmente.<br/>          |
 
 
 

@@ -4,16 +4,16 @@ ms.assetid: 77eda0d0-247b-4c14-9bf0-7dcf70387467
 title: Métodos IInstallationProgress
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12477adc9fa4ab2b3ae0c6aec37d125f753e3e90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e556b903bf9139d477490eb305b6f7288ec0a72944efcb25b4e825f21d53914
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994715"
 ---
 # <a name="iinstallationprogress-methods"></a>Métodos IInstallationProgress
 
-La interfaz [**IInstallationProgress**](/windows/desktop/api/Wuapi/nn-wuapi-iinstallationprogress) define el método siguiente.
+La [**interfaz IInstallationProgress**](/windows/desktop/api/Wuapi/nn-wuapi-iinstallationprogress) define el método siguiente.
 
 
 

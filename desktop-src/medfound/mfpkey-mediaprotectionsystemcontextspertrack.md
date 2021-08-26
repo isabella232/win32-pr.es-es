@@ -1,35 +1,35 @@
 ---
-description: Se establece en un IPropertySet que define una asignación desde un tipo de seguimiento a una IRandomAccessStream que contiene el contexto de Rights Management digital (DRM).
+description: Se establece en un IPropertySet que define una asignación del tipo de pista a un IRandomAccessStream que contiene el contexto Rights Management digital (DRM).
 ms.assetid: 76911293-CEB3-4D0E-A021-70A2D1303ED1
-title: Propiedad MFPKEY_MediaProtectionSystemContextsPerTrack (Mfidl. h)
+title: MFPKEY_MediaProtectionSystemContextsPerTrack propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af5df5d233281a3fc437eed85cddc82297409a9a
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 578f9a3e18f420eec01db8ac8ad3ce6df4a74029217b13e54a3ed1ab00263913
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105697914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953925"
 ---
-# <a name="mfpkey_mediaprotectionsystemcontextspertrack-property"></a>\_Propiedad MediaProtectionSystemContextsPerTrack de MFPKEY
+# <a name="mfpkey_mediaprotectionsystemcontextspertrack-property"></a>Propiedad MFPKEY \_ MediaProtectionSystemContextsPerTrack
 
-Se establece en un IPropertySet que define una asignación desde un tipo de seguimiento a una [**IRandomAccessStream**](/previous-versions//hh438400(v=vs.85)) que contiene el contexto de Rights Management digital (DRM).
+Se establece en un IPropertySet que define una asignación del tipo de pista a [**un IRandomAccessStream**](/previous-versions//hh438400(v=vs.85)) que contiene el contexto Rights Management digital (DRM).
 
-**Tipo:** \* VT \_ desconocido que apunta a un HSTRING de IMap<, IInspectable\*>
+**Tipo:** \* VT \_ UNKNOWN que apunta a un IMap<HSTRING,IInspectable\*>
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
-**IUNKNOWN**
+**Iunknown**
 
-VT \_ desconocido que apunta a un HSTRING de IMap<, IInspectable\*>
+VT \_ UNKNOWN que apunta a un IMap<HSTRING,IInspectable\*>
 
-**punkVal**
+**yaldaVal**
 
 
 
@@ -39,9 +39,9 @@ VT \_ desconocido que apunta a un HSTRING de IMap<, IInspectable\*>
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones \[ para UWP de Windows 8.1 Desktop apps \|\]<br/>                                |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 R2 \|\]<br/>                     |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                     |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ VT \_ desconocido que apunta a un HSTRING de IMap<, IInspectable\*>
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  
