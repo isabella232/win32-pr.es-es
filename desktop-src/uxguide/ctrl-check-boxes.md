@@ -4,12 +4,12 @@ description: Con una casilla, los usuarios tomarán una decisión entre dos opci
 ms.assetid: 7c39987d-807b-41c1-9788-65c3d468b976
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 29666991d0a0659f7ff3a95f12953504b70c6dc782049ac8d93d70df73afa5d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90d8c342f24c1c34f20a7a8d7ec5f0e9e150fb80
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118040693"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884324"
 ---
 # <a name="check-boxes"></a>Casillas
 
@@ -112,7 +112,7 @@ Las casillas tienen varios patrones de uso:
 
     En este ejemplo, la alineación horizontal es más difícil de leer.
 
--   **No use el estado mixto para representar un tercer estado.** El estado mixto se usa para indicar que se establece una opción para algunos objetos secundarios, pero no para todos. Los usuarios no deben poder establecer un estado mixto directamente, sino que el estado mixto es un reflejo de los objetos secundarios. El estado mixto no se usa como tercer estado para un elemento individual. Para representar un tercer estado, use botones de radio o una lista desplegable en su lugar.
+-   **No use el estado mixto para representar un tercer estado.** El estado mixto se usa para indicar que se ha establecido una opción para algunos objetos secundarios, pero no para todos. Los usuarios no deben poder establecer un estado mixto directamente, sino que el estado mixto es un reflejo de los objetos secundarios. El estado mixto no se usa como tercer estado para un elemento individual. Para representar un tercer estado, use botones de radio o una lista desplegable en su lugar.
 
     **Incorrecto:**
 
@@ -126,7 +126,7 @@ Las casillas tienen varios patrones de uso:
 
     En este ejemplo, los usuarios pueden elegir entre una lista de tres opciones claras.
 
--   **Al hacer clic en una casilla de estado mixto, debe recorrer todos los estados seleccionados, todos desactivados y los estados mixtos originales.** Por motivos de restauración, es importante poder restaurar el estado mixto original porque la configuración puede ser compleja o desconocida para el usuario. De lo contrario, la única manera de restaurar el estado mixto con confianza sería cancelar la tarea e iniciar de nuevo.
+-   **Al hacer clic en una casilla de estado mixto, debe recorrer todos los estados seleccionados, desactivados y mixtos originales.** Por motivos de restauración, es importante poder restaurar el estado mixto original porque la configuración puede ser compleja o desconocida para el usuario. De lo contrario, la única manera de restaurar el estado mixto con confianza sería cancelar la tarea e iniciar de nuevo.
 -   **No use casillas como indicador de progreso.** En su lugar, use un control [de indicador](progress-bars.md) de progreso.
 
     **Incorrecto:**
@@ -154,9 +154,9 @@ Las casillas tienen varios patrones de uso:
     -   Mostrar otras ventanas, como un cuadro de diálogo para recopilar más entradas.
     -   Mostrar dinámicamente otros controles relacionados con el control seleccionado (los lectores de pantalla no pueden detectar tales eventos).
 
-### <a name="dont-show-this-item-again"></a>No mostrar esto <item> Otra vez
+### <a name="dont-show-this-ltitemgt-again"></a>No volver a mostrar este &lt; &gt; elemento
 
--   **Considere la posibilidad de usar una opción No volver a mostrar esta opción para permitir a los usuarios suprimir un cuadro de diálogo periódico solo si no <item> hay una alternativa mejor.** Intente determinar de antemano si los usuarios realmente necesitan el cuadro de diálogo. Si lo hace, muestre siempre el diálogo y, si no lo hace, elimine el diálogo.
+-   **Considere la posibilidad de usar una opción No volver a mostrar este elemento para permitir a los usuarios suprimir un cuadro de diálogo periódico solo si no &lt; &gt; hay una alternativa mejor.** Intente determinar de antemano si los usuarios realmente necesitan el cuadro de diálogo. Si lo hace, muestre siempre el diálogo y, si no lo hace, elimine el diálogo.
 
 Para obtener más instrucciones y ejemplos, vea [Cuadros de diálogo](win-dialog-box.md).
 
@@ -208,7 +208,7 @@ Para obtener más instrucciones y ejemplos, vea [Cuadros de diálogo](win-dialog
 
 ### <a name="default-values"></a>Valores predeterminados
 
--   Si una casilla es para una opción de usuario, establezca el estado más seguro (para evitar la pérdida de datos o del sistema), el estado más seguro y privado **de forma predeterminada.** Si la seguridad y la seguridad no son factores, seleccione el valor más probable o práctico.
+-   Si una casilla es para una opción de usuario, establezca el estado más seguro (para evitar la pérdida de datos o el acceso del sistema), el estado más seguro y privado **de forma predeterminada.** Si la seguridad y la seguridad no son factores, seleccione el valor más probable o práctico.
 
 ## <a name="recommended-sizing-and-spacing"></a>Tamaño y espaciado recomendados
 
@@ -230,7 +230,7 @@ Tamaño y espaciado recomendados para las casillas.
 -   Para un grupo de casillas, centre el texto de la etiqueta en las diferencias entre las opciones. Si todas las opciones tienen el mismo texto introductorio, mueva ese texto a la etiqueta de grupo.
 -   Use expresiones positivas. No frasee una etiqueta para que al activar una casilla no se realice una acción.
 
-    -   **Excepción: no vuelva a mostrar esta <item> casilla.**
+    -   **Excepción: no vuelva a mostrar este &lt; elemento. &gt;**
 
     **Incorrecto:**
 
@@ -242,7 +242,7 @@ Tamaño y espaciado recomendados para las casillas.
 
     > [!Note]
     >
-    > Agregar una explicación a una casilla de un grupo no significa que tenga que proporcionar explicaciones para todas las casillas del grupo. Proporcione la información pertinente en la etiqueta si es posible y use explicaciones solo cuando sea necesario. No vuelva a establecer simplemente la etiqueta para mantener la coherencia.
+    > Agregar una explicación a una casilla de un grupo no significa que tenga que proporcionar explicaciones para todas las casillas del grupo. Proporcione la información pertinente en la etiqueta si es posible y use explicaciones solo cuando sea necesario. No simplemente vuelva a establecer la etiqueta para mantener la coherencia.
 
      
 
@@ -283,8 +283,8 @@ Tamaño y espaciado recomendados para las casillas.
 
 Al hacer referencia a las casillas:
 
--   Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya el carácter de subrayado o dos puntos de la clave de acceso. Incluya la casilla de palabras.
--   Consulte una casilla como una casilla, no una opción, una casilla o simplemente una casilla, porque la casilla por sí sola es ambigua para los localizadores.
+-   Use el texto exacto de la etiqueta, incluida su inclusión en mayúsculas, pero no incluya el carácter de subrayado ni los dos puntos de la clave de acceso. Incluya la casilla de palabras.
+-   Haga referencia a una casilla como una casilla, no una opción, una casilla o simplemente una casilla, ya que la casilla por sí sola es ambigua para los localizadores.
 -   Para describir la interacción del usuario, use seleccionar y borrar.
 -   Cuando sea posible, formatee la etiqueta con texto en negrita. De lo contrario, coloque la etiqueta entre comillas solo si es necesario para evitar confusiones.
 

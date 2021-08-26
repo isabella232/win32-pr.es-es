@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: fb5a329e39631dff626ff1c7945ad4b05f9dcd58
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 39e2b3871365cddd70b942f6d9d9f0fc9af85eca23944f388e3afd6ad9b4fc63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989965"
 ---
 # <a name="d3dxsphereboundprobe-function-d3dx10mathh"></a>Función D3DXSphereBoundProbe (D3DX10math.h)
 
@@ -87,7 +87,7 @@ Devuelve **TRUE** si el rayo forma una intersección con el volumen del cuadro d
 
 ## <a name="remarks"></a>Comentarios
 
-**D3DXSphereBoundProbe** determina si el rayo forma una intersección con el volumen del rectángulo de selección de la esfera, no solo con la superficie de la esfera.
+**D3DXSphereBoundProbe** determina si el rayo forma una intersección con el volumen del cuadro de límite de la esfera, no solo con la superficie de la esfera.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,7 +100,7 @@ Devuelve **TRUE** si el rayo forma una intersección con el volumen del cuadro d
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

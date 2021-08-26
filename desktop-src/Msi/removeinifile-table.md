@@ -1,21 +1,21 @@
 ---
-description: La tabla RemoveIniFile contiene la información que debe eliminar una aplicación de un archivo. ini.
+description: La tabla RemoveIniFile contiene la información que una aplicación necesita eliminar de un .ini archivo.
 ms.assetid: 702cf86e-02f4-4ea7-8573-b500ac550aae
 title: Tabla RemoveIniFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b57b4ba6f2c42ee636f1b9e21e798e27665f102a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6aca38f320a8cb548faf00d284cff4c934e127a44cbaf7ca5b96013fac80d63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074585"
 ---
 # <a name="removeinifile-table"></a>Tabla RemoveIniFile
 
-La tabla RemoveIniFile contiene la información que debe eliminar una aplicación de un archivo. ini.
+La tabla RemoveIniFile contiene la información que una aplicación necesita eliminar de un .ini archivo.
 
-La tabla RemoveIniFile tiene las columnas siguientes.
+La tabla RemoveIniFile tiene las siguientes columnas.
 
 
 
@@ -24,9 +24,9 @@ La tabla RemoveIniFile tiene las columnas siguientes.
 | RemoveIniFile | [Identificador](identifier.md) | Y   | N        |
 | FileName      | [FileName](text.md)         | N   | N        |
 | DirProperty   | [Identificador](identifier.md) | N   | Y        |
-| Sección       | [Formatea](formatted.md)   | N   | N        |
-| Clave           | [Formatea](formatted.md)   | N   | N        |
-| Value         | [Formatea](formatted.md)   | N   | Y        |
+| Sección       | [Formato](formatted.md)   | N   | N        |
+| Clave           | [Formato](formatted.md)   | N   | N        |
+| Valor         | [Formato](formatted.md)   | N   | Y        |
 | Acción        | [Entero](integer.md)       | N   | N        |
 | Componente\_   | [Identificador](identifier.md) | N   | N        |
 
@@ -41,46 +41,46 @@ La tabla RemoveIniFile tiene las columnas siguientes.
 <span id="RemoveIniFile"></span><span id="removeinifile"></span><span id="REMOVEINIFILE"></span>RemoveIniFile
 </dt> <dd>
 
-La clave de esta tabla.
+Clave de esta tabla.
 
 </dd> <dt>
 
-<span id="FileName"></span><span id="filename"></span><span id="FILENAME"></span>Extensión
+<span id="FileName"></span><span id="filename"></span><span id="FILENAME"></span>Nombre
 </dt> <dd>
 
-Nombre del archivo. ini en el que se va a eliminar la información.
+Nombre .ini archivo en el que se va a eliminar la información.
 
 </dd> <dt>
 
 <span id="DirProperty"></span><span id="dirproperty"></span><span id="DIRPROPERTY"></span>DirProperty
 </dt> <dd>
 
-Nombre de una propiedad cuyo valor se supone que se va a resolver como la ruta de acceso completa a la carpeta del archivo. ini que se va a quitar. La propiedad puede ser el nombre de un directorio en la [tabla del directorio](directory-table.md), una propiedad establecida por la [tabla AppSearch](appsearch-table.md)o cualquier otra propiedad que represente una ruta de acceso completa.
+Nombre de una propiedad cuyo valor se supone que se resuelve en la ruta de acceso completa a la carpeta del archivo .ini que se va a quitar. La propiedad puede ser el nombre de un directorio de la tabla [Directory](directory-table.md), una propiedad establecida por la tabla [AppSearch](appsearch-table.md)o cualquier otra propiedad que represente una ruta de acceso completa.
 
 </dd> <dt>
 
-<span id="Section"></span><span id="section"></span><span id="SECTION"></span>Transversal
+<span id="Section"></span><span id="section"></span><span id="SECTION"></span>Sección
 </dt> <dd>
 
-La sección del archivo. ini localizable.
+Sección archivo .ini localizable.
 
 </dd> <dt>
 
 <span id="Key"></span><span id="key"></span><span id="KEY"></span>Clave
 </dt> <dd>
 
-La clave del archivo. ini traducible debajo de la sección.
+Clave de archivo .ini localizable debajo de la sección .
 
 </dd> <dt>
 
 <span id="Value"></span><span id="value"></span><span id="VALUE"></span>Valor
 </dt> <dd>
 
-Valor traducible que se va a eliminar. El valor es necesario cuando la acción es 4.
+Valor localizable que se va a eliminar. El valor es necesario cuando Action es 4.
 
 </dd> <dt>
 
-<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Actuar
+<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Acción
 </dt> <dd>
 
 Tipo de modificación que se va a realizar.
@@ -89,8 +89,8 @@ Tipo de modificación que se va a realizar.
 
 | Constante                         | Hexadecimal | Decimal | Significado                          |
 |----------------------------------|-------------|---------|----------------------------------|
-| **msidbIniFileActionRemoveLine** | 0x002       | 2       | Elimina la entrada. ini.              |
-| **msidbIniFileActionRemoveTag**  | 0x004       | 4       | Elimina una etiqueta de una entrada. ini. |
+| **msidbIniFileActionRemoveLine** | 0x002       | 2       | Elimina .ini entrada.              |
+| **msidbIniFileActionRemoveTag**  | 0x004       | 4       | Elimina una etiqueta de una .ini entrada. |
 
 
 
@@ -98,22 +98,22 @@ Tipo de modificación que se va a realizar.
 
 </dd> <dt>
 
-<span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Pone\_
+<span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Clave externa en la primera columna de la [tabla de componentes](component-table.md) que hace referencia al componente que controla la eliminación del valor. ini.
+Clave externa en la primera columna de la [tabla Component](component-table.md) que hace referencia al componente que controla la eliminación del .ini valor.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La información del archivo. ini se elimina cuando se selecciona la instalación del componente correspondiente, ya sea de forma local o se ejecuta desde el origen.
+La .ini archivo se elimina cuando se ha seleccionado el componente correspondiente para instalarse, ya sea localmente o desde el origen.
 
-Se hace referencia a esta tabla cuando se ejecuta la [acción RemoveIniValues](removeinivalues-action.md) .
+Se hace referencia a esta tabla cuando se ejecuta la acción [RemoveIniValues.](removeinivalues-action.md)
 
-Si la columna de directorio \_ se especifica como null, la ubicación del archivo ini es la ubicación estándar de Windows ini, que es el directorio de Windows de forma predeterminada.
+Si la columna Directory se especifica como null, la ubicación del archivo ini es la ubicación estándar Windows ini, que es el Windows directorio \_ de forma predeterminada.
 
-Al quitar el último valor de una sección, se elimina esa sección. No hay ninguna otra manera de eliminar una sección completa que no sea la eliminación de todos sus valores.
+Al quitar el último valor de una sección, se elimina esa sección. No hay otra manera de eliminar una sección completa que no sea quitar todos sus valores.
 
 ## <a name="validation"></a>Validación
 

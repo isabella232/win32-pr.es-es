@@ -1,9 +1,9 @@
 ---
-title: " ifdef y ifndef (directivas)"
-description: Directivas de preprocesador que determinan si se define una constante o una macro de preprocesador específica.
+title: " Directivas ifdef e ifndef"
+description: Directivas de preprocesador que determinan si se define una constante o macro de preprocesador específicos.
 ms.assetid: c1cc2e1d-2599-45ec-9629-56c4b42e0d0e
 keywords:
-- ifdef y ifndef (directivas) HLSL
+- Directivas ifdef e ifndef HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 338308b58f1cdc68ec78984e65ffbf056a36b10b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 584cde8856c48aeafed5665016a71146f8c2ffb341b837faa6bf35d627152c39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068325"
 ---
-# <a name="ifdef-and-ifndef-directives"></a>\#ifdef y \# ifndef (directivas)
+# <a name="ifdef-and-ifndef-directives"></a>\#Directivas ifdef \# e ifndef
 
-Directivas de preprocesador que determinan si se define una constante o una macro de preprocesador específica.
+Directivas de preprocesador que determinan si se define una constante o macro de preprocesador específicos.
 
 
 
-| \#ifdef ( *identificador* )...  |
+| \#identificador *ifdef* ...  |
 |---------------------------|
 | \#endif                   |
-| \#ifndef ( *identificador* )... |
+| \#Identificador *ifndef* ... |
 | \#endif                   |
 
 
@@ -42,19 +42,19 @@ Directivas de preprocesador que determinan si se define una constante o una macr
 
 | Elemento                                                                              | Descripción                                               |
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------|
-| <span id="identifier"></span><span id="IDENTIFIER"></span>*identificador*<br/> | Identificador de la constante o macro que se va a comprobar. <br/> |
+| <span id="identifier"></span><span id="IDENTIFIER"></span>*Identificador*<br/> | Identificador de la constante o macro que se comprobará. <br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede usar las \# directivas ifdef y \# ifndef en cualquier lugar donde [ \# ](dx-graphics-hlsl-appendix-pre-if.md) se pueda utilizar. La \# instrucción ifdef es equivalente a) Directive. Estas directivas solo comprueban la presencia o ausencia de identificadores definidos mediante la Directiva de [ \# definición](dx-graphics-hlsl-appendix-pre-define.md) , no para los identificadores declarados en el código fuente de C o C++.
+Puede usar las directivas ifdef e ifndef en cualquier \# lugar en el que se pueda usar \# [ \# if.](dx-graphics-hlsl-appendix-pre-if.md) La \# instrucción ifdef es equivalente a la directiva ). Estas directivas solo comprueban la presencia o ausencia de identificadores definidos mediante la directiva [ \# define,](dx-graphics-hlsl-appendix-pre-define.md) no para los identificadores declarados en el código fuente de C o C++.
 
-Estas directivas se proporcionan únicamente por compatibilidad con las versiones anteriores del lenguaje. Se prefiere el uso del operador [definido](dx-graphics-hlsl-appendix-pre-if.md) con la \# Directiva if.
+Estas directivas se proporcionan únicamente por compatibilidad con las versiones anteriores del lenguaje. Se prefiere el uso [del operador](dx-graphics-hlsl-appendix-pre-if.md) definido con la \# directiva if.
 
-La \# Directiva ifndef comprueba el opuesto de la condición comprobada por \# ifdef. Si no se define el identificador, la condición es true (distinto de cero). de lo contrario, la condición es false (cero).
+La \# directiva ifndef comprueba lo contrario de la condición activada por \# ifdef. Si el identificador no está definido, la condición es true (distinto de cero); de lo contrario, la condición es false (cero).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -73,7 +73,7 @@ int main()
 
 
 
-Cuando se compila con el siguiente comando, PROG. cpp se compilará en modo de prueba; de lo contrario, se compilará en el modo final.
+Cuando se compila con el siguiente comando, prog.cpp se compilará en modo de prueba; De lo contrario, se compilará en modo final.
 
 
 ```
@@ -86,10 +86,10 @@ CL.EXE /Dtest prog.cpp
 
 <dl> <dt>
 
-[Directivas de preprocesador (DirectX HLSL)](dx-graphics-hlsl-appendix-preprocessor.md)
+[Directivas de preprocesador (HLSL de DirectX)](dx-graphics-hlsl-appendix-preprocessor.md)
 </dt> <dt>
 
-[\#Si,)](dx-graphics-hlsl-appendix-pre-if.md)
+[\#if, )](dx-graphics-hlsl-appendix-pre-if.md)
 </dt> </dl>
 
  

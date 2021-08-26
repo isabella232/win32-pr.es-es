@@ -1,9 +1,9 @@
 ---
-title: MCI_SEEK_PARMS estructura (Mciapi. h)
-description: La \_ \_ estructura de parms de búsqueda de MCI contiene información de posicionamiento para el \_ comando MCI Seek.
+title: MCI_SEEK_PARMS estructura (Mciapi.h)
+description: La estructura \_ MCI SEEK \_ PARMS contiene información de posicionamiento para el comando MCI \_ SEEK.
 ms.assetid: 2c199855-2134-4709-9313-5b8d66ce4f03
 keywords:
-- Estructura de MCI_SEEK_PARMS de Windows multimedia
+- MCI_SEEK_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c31f419b2458dedc19c6533e8f0f7fade97026e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 283e0a0f60b4eaf438943628b92bb33974823f6525526c5e5a6cb2e55acb6c94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038255"
 ---
-# <a name="mci_seek_parms-structure"></a>\_Estructura parms de búsqueda de MCI \_
+# <a name="mci_seek_parms-structure"></a>Estructura \_ MCI SEEK \_ PARMS
 
-La estructura de **\_ \_ parms de búsqueda de MCI** contiene información de posicionamiento para el comando [**MCI \_ Seek**](mci-seek.md) .
+La **estructura \_ MCI SEEK \_ PARMS** contiene información de posicionamiento para el [**comando MCI \_ SEEK.**](mci-seek.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,18 +44,18 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
 **dwTo**
 </dt> <dd>
 
-Posición en la que se va a buscar.
+Posición a la que buscar.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -67,7 +67,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -75,13 +75,13 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**búsqueda de MCI \_**](mci-seek.md)
+[**MCI \_ SEEK**](mci-seek.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

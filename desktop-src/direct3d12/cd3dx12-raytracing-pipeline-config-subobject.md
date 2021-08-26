@@ -14,12 +14,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 08/05/2021
-ms.openlocfilehash: 153d7f777909cf3622f6c0ededeea79b9d6a27072da35d06f9fe7dce4347b357
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bd453455f6090d814e3e53dfb6d9ac32f25a6fb7
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120132311"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812206"
 ---
 # <a name="cd3dx12_raytracing_pipeline_config_subobject-class"></a>CD3DX12_RAYTRACING_PIPELINE_CONFIG_SUBOBJECT clase
 
@@ -61,7 +61,7 @@ Recupera el tipo del subobjeto, representado por la [D3D12_STATE_SUBOBJECT_TYPE_
 
 `operator const D3D12_STATE_SUBOBJECT&`
 
-Operador de conversión que devuelve una referencia a una [constante D3D12_STATE_SUBOBJECT](/windows/win32/api/d3d12/ns-d3d12-d3d12_state_subobject) objeto que describe el objeto de estado.
+Operador de conversión que devuelve una referencia a una constante [D3D12_STATE_SUBOBJECT](/windows/win32/api/d3d12/ns-d3d12-d3d12_state_subobject) objeto que describe el objeto de estado.
 
 `operator const D3D12_RAYTRACING_PIPELINE_CONFIG&`
 
@@ -73,7 +73,7 @@ Operador de conversión que devuelve una referencia a una [constante D3D12_RAYTR
 |-------------------|-------------------------------------------------------------------------------------|
 | Encabezado | [D3dx12.h](https://github.com/microsoft/DirectX-Headers/blob/main/include/directx/d3dx12.h) |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 * [Estructuras auxiliares para Direct3D 12](helper-structures-for-d3d12.md)
 * [CD3DX12_STATE_OBJECT_DESC](cd3dx12-state-object-desc.md)

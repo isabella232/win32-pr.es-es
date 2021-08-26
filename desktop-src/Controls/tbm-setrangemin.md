@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TBM_SETRANGEMIN (commctrl. h)
-description: Establece la posición lógica mínima para el control deslizante en una barra de desplazamiento.
+title: TBM_SETRANGEMIN mensaje (Commctrl.h)
+description: Establece la posición lógica mínima del control deslizante en una barra de seguimiento.
 ms.assetid: 85071be2-4df3-4b54-9122-b6dc767f6cb9
 keywords:
-- TBM_SETRANGEMIN controles de mensajes de Windows
+- TBM_SETRANGEMIN controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d34c2e70aa6247cb970e576c915bdcd28cd18d23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d35cbb162b42636d886cb5e41eb9ba6de1a2101a8327ff8ddffbc71c57fa6735
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046075"
 ---
-# <a name="tbm_setrangemin-message"></a>TBM \_ SETRANGEMIN
+# <a name="tbm_setrangemin-message"></a>Mensaje \_ TBM SETRANGEMIN
 
-Establece la posición lógica mínima para el control deslizante en una barra de desplazamiento.
+Establece la posición lógica mínima del control deslizante en una barra de seguimiento.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece la posición lógica mínima para el control deslizante en una barra d
 *wParam* 
 </dt> <dd>
 
-Volver a dibujar el marcador. Si este parámetro es **true**, el mensaje vuelve a dibujar el TrackBar una vez establecido el intervalo. Si este parámetro es **false**, el mensaje establece el intervalo pero no vuelve a dibujar el TrackBar.
+Volver a dibujar la marca. Si este parámetro es **TRUE,** el mensaje vuelve a dibujar la barra de seguimiento después de establecer el intervalo. Si este parámetro es **FALSE,** el mensaje establece el intervalo, pero no vuelve a dibujar la barra de seguimiento.
 
 </dd> <dt>
 
@@ -47,9 +47,9 @@ Posición mínima del control deslizante.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la posición del control deslizante actual es menor que el mínimo, el mensaje **TBM \_ SETRANGEMIN** establece la posición del control deslizante en el nuevo valor mínimo.
+Si la posición del control deslizante actual es menor que el nuevo mínimo, el mensaje **\_ TBM SETRANGEMIN** establece la posición del control deslizante en el nuevo valor mínimo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Si la posición del control deslizante actual es menor que el mínimo, el mensaj
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Si la posición del control deslizante actual es menor que el mínimo, el mensaj
 **Referencia**
 </dt> <dt>
 
-[**TBM \_ SetRange**](tbm-setrange.md)
+[**TBM \_ SETRANGE**](tbm-setrange.md)
 </dt> <dt>
 
 [**TBM \_ SETRANGEMAX**](tbm-setrangemax.md)

@@ -1,17 +1,17 @@
 ---
 description: Interfaces disponibles para este dispositivo.
 ms.assetid: ce4ed777-9c09-404e-9d9e-878d2a8f40eb
-title: System. Devices. InterfacePaths
+title: System.Devices.InterfacePaths
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c098dd1cc6486678489ab98dbd07a2215429f08c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 034078fdd18151f24bbd471c73dbd8677717591ed731c13360e855fd889f8d40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059505"
 ---
-# <a name="systemdevicesinterfacepaths"></a>System. Devices. InterfacePaths
+# <a name="systemdevicesinterfacepaths"></a>System.Devices.InterfacePaths
 
 Interfaces disponibles para este dispositivo.
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

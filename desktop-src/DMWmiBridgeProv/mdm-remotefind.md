@@ -1,9 +1,9 @@
 ---
-title: MDM_RemoteFind (clase)
-description: La \_ clase RemoteFind de MDM recupera la información de ubicación de un dispositivo determinado.
+title: MDM_RemoteFind clase
+description: La clase \_ RemoteFind de MDM recupera la información de ubicación de un dispositivo determinado.
 ms.assetid: 8dfbe951-b4ca-4709-bec9-0821571f9b0e
 keywords:
-- MDM_RemoteFind (clase)
+- MDM_RemoteFind clase
 - MDM_RemoteFind clase, descrita
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8930d80ede9daad5c721cd3b226c85e3d9918a19
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a456974fad1c78f45c634b3bf96d458a9ac0760f9ba36398aee2f220a88e4f2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131865"
 ---
 # <a name="mdm_remotefind-class"></a>\_Clase RemoteFind de MDM
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
 La **clase \_ RemoteFind de MDM** recupera la información de ubicación de un dispositivo determinado.
 
@@ -64,7 +64,7 @@ La **clase \_ RemoteFind de MDM** tiene estas propiedades.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -85,13 +85,13 @@ Identifica el nombre del nodo primario. Para esta clase, la cadena es "RemoteFin
 
 </dd> <dt>
 
-[Máximo](/windows/client-management/mdm/remotefind-csp#maximumage)
+[MaximumAge](/windows/client-management/mdm/remotefind-csp#maximumage)
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -108,7 +108,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/"
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -129,10 +129,10 @@ Tipo de acceso: lectura/escritura
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                     |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                     |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                       |
-| Espacio de nombres<br/>                | DMMap de MDM raíz de \\ CIMv2 \\ \\<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Espacio de nombres<br/>                | DMMap \\ \\ de MDM de CIMv2 \\ raíz<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 
@@ -141,7 +141,7 @@ Tipo de acceso: lectura/escritura
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Representa las capacidades y la administración de un dispositivo de puerto de canal de fibra (FC).
+description: Representa las funcionalidades y la administración de un dispositivo de puerto de canal de fibra (FC).
 ms.assetid: 32a11971-9e18-410d-a3cd-4921a7e986f0
-title: CIM_FCPort (clase)
+title: CIM_FCPort clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,19 +18,19 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: f6a858cbb4603743e1ddd11cac71500a9e39325a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 071a3b606d4fcb9845073877eb52dcf61b9a732a3046cf255229c6ea05451a14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046925"
 ---
-# <a name="cim_fcport-class"></a>\_Clase FCPort de CIM
+# <a name="cim_fcport-class"></a>CIM \_ FCPort (clase)
 
 > [!NOTE]
 > Este artículo contiene referencias al término esclavo, un término que Microsoft ya no usa. Cuando se quite el término del software, se quitará también del artículo.
 
-Representa las capacidades y la administración de un dispositivo de puerto de canal de fibra (FC).
+Representa las funcionalidades y la administración de un dispositivo de puerto de canal de fibra (FC).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,20 +51,20 @@ class CIM_FCPort : CIM_NetworkPort
 > [!NOTE]
 > Este artículo contiene referencias al término esclavo, un término que Microsoft ya no usa. Cuando se quite el término del software, se quitará también del artículo.
 
-La clase **CIM \_ FCPort** tiene estos tipos de miembros:
+La **clase \_ CIM FCPort** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ FCPort** tiene estas propiedades.
+La **clase \_ CIM FCPort** tiene estas propiedades.
 
 <dl> <dt>
 
 **ActiveCOS**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -73,7 +73,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ FCPort**.**SupportedCOS**")
 </dt> </dl>
 
-La configuración de clase activa de servicio (COS) para el canal de fibra.
+Configuración de clase de servicio (COS) activa para el canal de fibra.
 
 <dt>
 
@@ -138,7 +138,7 @@ La configuración de clase activa de servicio (COS) para el canal de fibra.
 **ActiveFC4Types**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -160,77 +160,77 @@ Los protocolos FC-4 que se ejecutan en el canal de fibra.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ISO_IEC_8802_-_2_LLC"></span><span id="iso_iec_8802_-_2_llc"></span>
 
-**ISO/IEC 8802-2 LLC** (4)
+**ISO/IEC 8802 - 2 LLC** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IP_over_FC"></span><span id="ip_over_fc"></span><span id="IP_OVER_FC"></span>
 
-**IP a través de FC** (5)
+**IP sobre FC** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_-_FCP"></span><span id="scsi_-_fcp"></span>
 
-**SCSI-FCP** (8)
+**SCSI: FCP** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_-_GPP"></span><span id="scsi_-_gpp"></span>
 
-**SCSI-GPP** (9)
+**SCSI: GPP** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPI_-_3_Master"></span><span id="ipi_-_3_master"></span><span id="IPI_-_3_MASTER"></span>
 
-**Patrón IPI-3** (17)
+**IPI: 3 maestros** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPI_-_3_Slave"></span><span id="ipi_-_3_slave"></span><span id="IPI_-_3_SLAVE"></span>
 
-**IPI-3 esclavo** (18)
+**IPI - 3 Slave** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPI_-_3_Peer"></span><span id="ipi_-_3_peer"></span><span id="IPI_-_3_PEER"></span>
 
-**IPI-3 del mismo nivel** (19)
+**IPI- 3 del mismo nivel** (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CP_IPI_-_3_Master"></span><span id="cp_ipi_-_3_master"></span><span id="CP_IPI_-_3_MASTER"></span>
 
-**CP IPI-3 maestro** (21)
+**CP IPI: 3 maestros** (21)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CP_IPI_-_3_Slave"></span><span id="cp_ipi_-_3_slave"></span><span id="CP_IPI_-_3_SLAVE"></span>
 
-**CP IPI-3 esclavo** (22)
+**CP IPI - 3 Slave** (22)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CP_IPI_-_3_Peer"></span><span id="cp_ipi_-_3_peer"></span><span id="CP_IPI_-_3_PEER"></span>
 
-**CP IPI-3 del mismo nivel** (23)
+**CP IPI: 3 del mismo nivel** (23)
 
 
 </dt> <dd></dd> <dt>
@@ -244,7 +244,7 @@ Los protocolos FC-4 que se ejecutan en el canal de fibra.
 
 <span id="SBCCS_Control_Unit"></span><span id="sbccs_control_unit"></span><span id="SBCCS_CONTROL_UNIT"></span>
 
-**Unidad de control SBCCS** (26)
+**SbCCS (unidad de control)** (26)
 
 
 </dt> <dd></dd> <dt>
@@ -279,14 +279,14 @@ Los protocolos FC-4 que se ejecutan en el canal de fibra.
 
 <span id="FC_-_SNMP"></span><span id="fc_-_snmp"></span>
 
-**FC-SNMP** (36)
+**FC : SNMP** (36)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="HIPPI_-_FP"></span><span id="hippi_-_fp"></span>
 
-**HIPPI-FP** (64)
+**HIPPI: FP** (64)
 
 
 </dt> <dd></dd> <dt>
@@ -300,35 +300,35 @@ Los protocolos FC-4 que se ejecutan en el canal de fibra.
 
 <span id="BBL_FDDI_Encapsulated_LAN_PDU"></span><span id="bbl_fddi_encapsulated_lan_pdu"></span><span id="BBL_FDDI_ENCAPSULATED_LAN_PDU"></span>
 
-**PDU de LAN encapsulada BBL FDDI** (81)
+**BBL FDDI Encapsulated LAN PDU** (81)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="BBL_802.3_Encapsulated_LAN_PDU"></span><span id="bbl_802.3_encapsulated_lan_pdu"></span><span id="BBL_802.3_ENCAPSULATED_LAN_PDU"></span>
 
-**PDU de LAN encapsulada BBL 802,3** (82)
+**BBL 802.3 Encapsulated LAN PDU** (82)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FC_-_VI"></span><span id="fc_-_vi"></span>
 
-**FC-VI** (88)
+**FC - VI** (88)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FC_-_AV"></span><span id="fc_-_av"></span>
 
-**FC-AV** (96)
+**FC - AV** (96)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Unique"></span><span id="vendor_unique"></span><span id="VENDOR_UNIQUE"></span>
 
-**Proveedor único** (255)
+**Vendor Unique** (255)
 
 
 </dt> <dd></dd> </dl>
@@ -338,16 +338,16 @@ Los protocolos FC-4 que se ejecutan en el canal de fibra.
 **PortType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("portType")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("PortType")
 </dt> </dl>
 
-Modo habilitado para el puerto. Los modos de puerto se definen mediante los estándares de ANSI X3. Si el puerto está conectado, será el tipo de Puerto negociado, de lo contrario, se informará del tipo de puerto configurado.
+Modo habilitado para el puerto. Los modos de puerto se definen mediante los estándares ANSI X3. Si el puerto ha iniciado sesión, será el tipo de puerto negociado; de lo contrario, se notifica el tipo de puerto configurado.
 
 <dt>
 
@@ -360,7 +360,7 @@ Modo habilitado para el puerto. Los modos de puerto se definen mediante los est�
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd>
@@ -382,30 +382,30 @@ Puerto de nodo
 
 <span id="NL"></span><span id="nl"></span>
 
-<span id="NL"></span><span id="nl"></span>**Nl** (11)
+<span id="NL"></span><span id="nl"></span>**NL** (11)
 
 
 </dt> <dd>
 
-Puerto de nodo que admite el bucle de FC Arbitrated
+Puerto de nodo que admite el bucle de FC con reanquis
 
 </dd> <dt>
 
 <span id="F_NL"></span><span id="f_nl"></span>
 
-<span id="F_NL"></span><span id="f_nl"></span>**F/nl** (12)
+<span id="F_NL"></span><span id="f_nl"></span>**F/NL** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Nx"></span><span id="nx"></span><span id="NX"></span>
 
-<span id="Nx"></span><span id="nx"></span><span id="NX"></span>**NX** (13)
+<span id="Nx"></span><span id="nx"></span><span id="NX"></span>**Nx** (13)
 
 
 </dt> <dd>
 
-El puerto puede negociar para que se convierta en un puerto de nodo (N) o en un puerto de nodo que admita FC Arbitrated Loop (NL)
+El puerto puede negociar para convertirse en un puerto de nodo (N) o en un puerto de nodo que admita el bucle de FC (NL)
 
 </dd> <dt>
 
@@ -427,7 +427,7 @@ Puerto de expansión que conecta elementos de tejido (por ejemplo, conmutadores 
 
 </dt> <dd>
 
-Puerto de tejido (elemento)
+Fabric (elemento) Port
 
 </dd> <dt>
 
@@ -438,7 +438,7 @@ Puerto de tejido (elemento)
 
 </dt> <dd>
 
-Puerto de tejido (elemento) que admite el bucle de FC Arbitrated
+Bucle de tejido (elemento) compatible con FC
 
 </dd> <dt>
 
@@ -460,13 +460,13 @@ Puerto de puente
 
 </dt> <dd>
 
-El puerto puede negociar para que se convierta en un puerto de expansión (E) o en un puerto de tejido (F)
+El puerto puede negociar para convertirse en un puerto de expansión (E) o un puerto de tejido (F)
 
 </dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Proveedor reservado** (16000.. 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Vendor Reserved** (16000..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -476,13 +476,13 @@ El puerto puede negociar para que se convierta en un puerto de expansión (E) o 
 **SupportedCOS**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La configuración de clase de servicio (COS) que es compatible con el canal de fibra.
+Configuración de la clase de servicio (COS) que admite el canal de fibra.
 
 <dt>
 
@@ -547,13 +547,13 @@ La configuración de clase de servicio (COS) que es compatible con el canal de f
 **SupportedFC4Types**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Los protocolos FC-4 que son compatibles con el canal de fibra.
+Los protocolos FC-4 compatibles con el canal de fibra.
 
 <dt>
 
@@ -566,14 +566,14 @@ Los protocolos FC-4 que son compatibles con el canal de fibra.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ISO_IEC_8802_-_2_LLC"></span><span id="iso_iec_8802_-_2_llc"></span>
 
-**ISO/IEC 8802-2 LLC** (4)
+**ISO/IEC 8802 - 2 LLC** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -587,56 +587,56 @@ Los protocolos FC-4 que son compatibles con el canal de fibra.
 
 <span id="SCSI_-_FCP"></span><span id="scsi_-_fcp"></span>
 
-**SCSI-FCP** (8)
+**SCSI: FCP** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_-_GPP"></span><span id="scsi_-_gpp"></span>
 
-**SCSI-GPP** (9)
+**SCSI: GPP** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPI_-_3_Master"></span><span id="ipi_-_3_master"></span><span id="IPI_-_3_MASTER"></span>
 
-**Patrón IPI-3** (17)
+**IPI: 3 maestros** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPI_-_3_Slave"></span><span id="ipi_-_3_slave"></span><span id="IPI_-_3_SLAVE"></span>
 
-**IPI-3 esclavo** (18)
+**IPI - 3 Slave** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPI_-_3_Peer"></span><span id="ipi_-_3_peer"></span><span id="IPI_-_3_PEER"></span>
 
-**IPI-3 del mismo nivel** (19)
+**IPI- 3 del mismo nivel** (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CP_IPI_-_3_Master"></span><span id="cp_ipi_-_3_master"></span><span id="CP_IPI_-_3_MASTER"></span>
 
-**CP IPI-3 maestro** (21)
+**CP IPI: 3 maestros** (21)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CP_IPI_-_3_Slave"></span><span id="cp_ipi_-_3_slave"></span><span id="CP_IPI_-_3_SLAVE"></span>
 
-**CP IPI-3 esclavo** (22)
+**CP IPI - 3 Slave** (22)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CP_IPI_-_3_Peer"></span><span id="cp_ipi_-_3_peer"></span><span id="CP_IPI_-_3_PEER"></span>
 
-**CP IPI-3 del mismo nivel** (23)
+**CP IPI: 3 del mismo nivel** (23)
 
 
 </dt> <dd></dd> <dt>
@@ -650,7 +650,7 @@ Los protocolos FC-4 que son compatibles con el canal de fibra.
 
 <span id="SBCCS_Control_Unit"></span><span id="sbccs_control_unit"></span><span id="SBCCS_CONTROL_UNIT"></span>
 
-**Unidad de control SBCCS** (26)
+**SbCCS (unidad de control)** (26)
 
 
 </dt> <dd></dd> <dt>
@@ -685,14 +685,14 @@ Los protocolos FC-4 que son compatibles con el canal de fibra.
 
 <span id="FC_-_SNMP"></span><span id="fc_-_snmp"></span>
 
-**FC-SNMP** (36)
+**FC : SNMP** (36)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="HIPPI_-_FP"></span><span id="hippi_-_fp"></span>
 
-**HIPPI-FP** (64)
+**HIPPI: FP** (64)
 
 
 </dt> <dd></dd> <dt>
@@ -706,35 +706,35 @@ Los protocolos FC-4 que son compatibles con el canal de fibra.
 
 <span id="BBL_FDDI_Encapsulated_LAN_PDU"></span><span id="bbl_fddi_encapsulated_lan_pdu"></span><span id="BBL_FDDI_ENCAPSULATED_LAN_PDU"></span>
 
-**PDU de LAN encapsulada BBL FDDI** (81)
+**BBL FDDI Encapsulated LAN PDU** (81)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="BBL_802.3_Encapsulated_LAN_PDU"></span><span id="bbl_802.3_encapsulated_lan_pdu"></span><span id="BBL_802.3_ENCAPSULATED_LAN_PDU"></span>
 
-**PDU de LAN encapsulada BBL 802,3** (82)
+**BBL 802.3 Encapsulated LAN PDU** (82)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FC_-_VI"></span><span id="fc_-_vi"></span>
 
-**FC-VI** (88)
+**FC - VI** (88)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FC_-_AV"></span><span id="fc_-_av"></span>
 
-**FC-AV** (96)
+**FC - AV** (96)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Unique"></span><span id="vendor_unique"></span><span id="VENDOR_UNIQUE"></span>
 
-**Proveedor único** (255)
+**Vendor Unique** (255)
 
 
 </dt> <dd></dd> </dl>
@@ -749,8 +749,8 @@ Los protocolos FC-4 que son compatibles con el canal de fibra.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -759,7 +759,7 @@ Los protocolos FC-4 que son compatibles con el canal de fibra.
 
 <dl> <dt>
 
-[**\_NETWORKPORT CIM**](cim-networkport.md)
+[**CIM \_ NetworkPort**](cim-networkport.md)
 </dt> </dl>
 
  

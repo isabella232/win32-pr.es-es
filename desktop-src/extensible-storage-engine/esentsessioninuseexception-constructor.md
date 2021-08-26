@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSessionInUseException'
-title: Constructor de EsentSessionInUseException
+description: 'Más información sobre: Constructor EsentSessionInUseException'
+title: Constructor EsentSessionInUseException
 TOCTitle: 'EsentSessionInUseException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSessionInUseException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentsessioninuseexception.esentsessioninuseexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d3c9e9f3bed3767211783bb1997c6f96ee02714d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5080000e24d56e53ebac5e813de7ab9fce27d0b42ee98ec314b240c393f7ffd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116935"
 ---
-# <a name="esentsessioninuseexception-constructor"></a>Constructor de EsentSessionInUseException
+# <a name="esentsessioninuseexception-constructor"></a>Constructor EsentSessionInUseException
 
 Inicializa una nueva instancia de la clase EsentSessionInUseException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentSessionInUseException()
 public EsentSessionInUseException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentSessionInUseException()
 
 [Miembros de EsentSessionInUseException](./esentsessioninuseexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

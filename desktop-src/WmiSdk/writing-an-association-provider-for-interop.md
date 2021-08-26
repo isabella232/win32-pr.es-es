@@ -5,18 +5,18 @@ ms.tgt_platform: multiple
 title: Escribir un proveedor de asociación para interoperabilidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2d45ceebf9f3465bf9485f4105d9ea2e4438a25c9d169193a8b68c19669b51b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 57ef4e73c35c942e56b2636b7fced4c7e468e120
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119794275"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887434"
 ---
 # <a name="writing-an-association-provider-for-interop"></a>Escribir un proveedor de asociación para interoperabilidad
 
 Un proveedor de asociaciones proporciona un mecanismo para registrar perfiles y asociarlos a perfiles que se implementan en espacios de nombres diferentes.
 
-Los proveedores de asociaciones se usan para exponer perfiles estándar, como un perfil de energía. Esto se logra mediante la escritura de un proveedor de asociación en el espacio de nombres raíz/interoperabilidad que expone instancias de asociación mediante la implementación de una clase , que se deriva de [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)). El proveedor debe estar registrado tanto en la raíz o interoperabilidad como en el espacio de nombres root/para admitir el recorrido <implemented> entre espacios de nombres.
+Los proveedores de asociaciones se usan para exponer perfiles estándar, como un perfil de energía. Esto se logra mediante la escritura de un proveedor de asociación en el espacio de nombres raíz/interoperabilidad que expone instancias de asociación mediante la implementación de una clase , que se deriva de [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)). El proveedor debe estar registrado tanto en la raíz o interoperabilidad como en el espacio de nombres raíz o implementado para admitir el recorrido &lt; &gt; entre espacios de nombres.
 
 Windows Instrumental de administración (WMI) carga el proveedor de asociación cada vez que se ejecuta una consulta de asociación en el espacio de nombres raíz o de interoperabilidad.
 
@@ -49,13 +49,13 @@ Windows Instrumental de administración (WMI) carga el proveedor de asociación 
     ```
 
     > [!Note]  
-    > Para Windows, la **propiedad RegisteredOrganization** debe establecerse en 1 y la **propiedad OtherRegisteredOrganization** establecida en "Microsoft".
+    > Para Windows clientes, la **propiedad RegisteredOrganization** debe establecerse en 1 y la **propiedad OtherRegisteredOrganization** establecida en "Microsoft".
 
      
 
 2.  Cree un proveedor que devuelva instancias de asociación [**del elemento \_ CIMConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile). Se trata de un proceso de dos pasos.
 
-    1.  Cree una clase que se derive del elemento [**\_ CIMConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) en los espacios de nombres de interoperabilidad e implementación. Dado que diferentes proveedores pueden implementar el mismo perfil, el nombre de la clase debe ser único. La convención de nomenclatura recomendada es " <Organization> \_ <ProductName> \_ <ClassName> \_ <Version> ". La propiedad **ConformantStandard** o **ManagedElement** debe especificar el calificador **\_ TARGETNamespace** de MSFT que contiene el espacio de nombres al que pertenece esta clase.
+    1.  Cree una clase que se derive del elemento [**\_ CIMConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) en los espacios de nombres de interoperabilidad e implementación. Dado que diferentes proveedores pueden implementar el mismo perfil, el nombre de la clase debe ser único. La convención de nomenclatura recomendada es &lt; "Organization &gt; \_ &lt; ProductName &gt; \_ &lt; ClassName &gt; \_ &lt; &gt; Version". La propiedad **ConformantStandard** o **ManagedElement** debe especificar el calificador **\_ TARGETNamespace** de MSFT que contiene el espacio de nombres al que pertenece esta clase.
 
         En el ejemplo de código siguiente se describe la sintaxis para derivar la clase Microsoft \_ Process \_ ElementConformsToProfile v1 del elemento \_ [**\_ CIMConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) en el espacio de nombres de \\ interoperabilidad raíz. En este ejemplo, el elemento administrado Proceso de Win32 hace referencia al espacio de nombres cimv2 raíz mediante el \_ \\ calificador **\_ TargetNamespace de MSFT.**
 
@@ -69,7 +69,7 @@ Windows Instrumental de administración (WMI) carga el proveedor de asociación 
         };
         ```
 
-        En el ejemplo de código siguiente se describe la sintaxis para derivar la clase Microsoft \_ Process \_ ElementConformsToProfile v1 del elemento \_ [**\_ CIMConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) en el espacio de nombres \\ cimv2 raíz. En este ejemplo, el estándar [**conforme a CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) hace referencia al espacio de nombres de interoperabilidad \\ raíz mediante el calificador **\_ TargetNamespace de MSFT.**
+        En el ejemplo de código siguiente se describe la sintaxis para derivar la clase Microsoft \_ Process \_ ElementConformsToProfile v1 del elemento \_ [**\_ CIMConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) en el espacio de nombres \\ cimv2 raíz. En este ejemplo, el estándar [**conforme a CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) hace referencia al espacio de nombres de interoperabilidad \\ raíz mediante el **\_ calificador TargetNamespace de MSFT.**
 
         ```syntax
         #pragma namespace("\\\\.\\root\\cimv2")
@@ -83,13 +83,13 @@ Windows Instrumental de administración (WMI) carga el proveedor de asociación 
 
         Si no se especifica el calificador **\_ TARGETNamespace** de MSFT en la propiedad que hace referencia al espacio de nombres implementado, el filtro **ResultClass** de la instrucción "Associators of" no funcionará. Por ejemplo, si no se especifica el calificador **\_ TARGETNamespace de MSFT,** la siguiente línea de comandos de Windows PowerShell no devolverá un objeto: **get-wmiobject -query "associators of {ProcessProfile.InstanceID='Process'} where resultclass='Win32 \_ Process'".**
 
-        El **calificador \_ TargetNamespace de MSFT** no puede apuntar a un espacio de nombres en un equipo remoto. Por ejemplo, no se admite el siguiente espacio de nombres: MSFT \_ TargetNamespace(interoperabilidad \\ \\ \\ \\ <RemoteMachine> \\ \\ \\ \\ raíz).
+        El **calificador \_ TargetNamespace de MSFT** no puede apuntar a un espacio de nombres en un equipo remoto. Por ejemplo, no se admite el siguiente espacio de nombres: MSFT \_ TargetNamespace( \\ \\ \\ \\ &lt; Interoperabilidad raíz de &gt; \\ \\ \\ \\ RemoteMachine).
 
     2.  Escriba un proveedor que devuelva instancias de la clase derivada creada. Para obtener más información, vea [Escribir un proveedor de instancias.](writing-an-instance-provider.md) Al acceder a instancias entre espacios de nombres, es posible que tenga que acceder a los niveles de seguridad del cliente. Para obtener más información, [vea Suplantar un cliente.](impersonating-a-client.md)
 
-        El proveedor de asociación debe implementar los [**métodos IWbemServices.CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) [**e IWbemServices.GetObjectAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) La implementación del [**IWbemServices.Exemétodo cQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) es opcional. Dado que se puede acceder a este proveedor desde la interoperabilidad raíz y los espacios de nombres raíz, no debe haber una dependencia explícita en un espacio de nombres \\ \\ <implemented> dentro del proveedor.
+        El proveedor de asociación debe implementar los [**métodos IWbemServices.CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) [**e IWbemServices.GetObjectAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) La implementación del [**IWbemServices.Exemétodo cQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) es opcional. Dado que se puede acceder a este proveedor desde la interoperabilidad raíz y los espacios de nombres \\ \\ &lt; implementados raíz, no debe haber una dependencia explícita en un espacio de nombres &gt; dentro del proveedor.
 
-3.  Registre el proveedor de asociación en la \\ interoperabilidad raíz y en los espacios \\ <implemented> de nombres raíz. Para obtener más información, vea [Registrar un proveedor de instancias.](registering-an-instance-provider.md)
+3.  Registre el proveedor de asociación en la \\ interoperabilidad raíz y en los espacios \\ &lt; de nombres &gt; implementados raíz. Para obtener más información, vea [Registrar un proveedor de instancias.](registering-an-instance-provider.md)
 
     En el ejemplo de código siguiente se describe la sintaxis para registrar el proveedor de asociación en el espacio de \\ nombres de interoperabilidad raíz.
 

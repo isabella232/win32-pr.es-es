@@ -1,7 +1,7 @@
 ---
-description: Quita un IContextNode secundario.
+description: Quita un elemento IContextNode secundario.
 ms.assetid: ed1d7b35-f6ba-4eff-888d-5cc492f02832
-title: IContextNode::D método eleteSubNode (IACom. h)
+title: Método IContextNode::D eleteSubNode (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: ffcec19e13a3ad885b3b497f80322caf9365c91a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ebad42f02ccfad0db2d119832f3495819ac18ce321d72ede3aa8d7545b999be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057885"
 ---
-# <a name="icontextnodedeletesubnode-method"></a>IContextNode::D método eleteSubNode
+# <a name="icontextnodedeletesubnode-method"></a>IContextNode::D eleteSubNode (método)
 
-Quita un [**IContextNode**](icontextnode.md)secundario.
+Quita un elemento [**IContextNode secundario.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,20 +39,20 @@ HRESULT DeleteSubNode(
 
 <dl> <dt>
 
-*pContextNodeToDelete* \[ de\]
+*pContextNodeToDelete* \[ En\]
 </dt> <dd>
 
-[**IContextNode**](icontextnode.md) que se va a quitar.
+[**IContextNode que se**](icontextnode.md) quitará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-\_Se devuelve E INVALIDARG si el parámetro *pContextNodeToDelete* no es un elemento secundario de este objeto [**IContextNode**](icontextnode.md) .
+Se \_ devuelve INVALIDARG si el *parámetro pContextNodeToDelete* no es un elemento secundario de este [**objeto IContextNode.**](icontextnode.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,9 +60,9 @@ Para obtener una descripción de los valores devueltos, vea [clases e interfaces
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -77,7 +77,7 @@ Para obtener una descripción de los valores devueltos, vea [clases e interfaces
 [**IContextNode::CreateSubNode**](icontextnode-createsubnode.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

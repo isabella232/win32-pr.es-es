@@ -1,21 +1,21 @@
 ---
-description: En esta sección se proporciona información, incluido el código de ejemplo, sobre cómo usar las características de la API de sensor. Para obtener información general sobre las distintas interfaces de programación, consulte Acerca de la API del sensor.
+description: En esta sección se proporciona información, incluido el código de ejemplo, sobre cómo usar las características de Sensor API. Para obtener información general sobre las distintas interfaces de programación, consulte Acerca de sensor API.
 ms.assetid: 4c2ffd22-49ee-4318-bfa0-e0ce4d8c67bb
-title: Guía de programación de la API de sensor
+title: Guía de programación de Sensor API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 078cc99e88a1a4fd6a232220e08c53a99dfbdfb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5886564e66a0a8db64713b280b44f85a197430dc23523266bc45e66e44c956b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073245"
 ---
-# <a name="sensor-api-programming-guide"></a>Guía de programación de la API de sensor
+# <a name="sensor-api-programming-guide"></a>Guía de programación de Sensor API
 
-En esta sección se proporciona información, incluido el código de ejemplo, sobre cómo usar las características de la API de sensor. Para obtener información general sobre las distintas interfaces de programación, consulte [acerca de la API del sensor](about-the-sensor-api.md).
+En esta sección se proporciona información, incluido el código de ejemplo, sobre cómo usar las características de Sensor API. Para obtener información general sobre las distintas interfaces de programación, consulte [Acerca de sensor API.](about-the-sensor-api.md)
 
-En el código de ejemplo de esta sección se usa el siguiente encabezado incluido adicional.
+El código de ejemplo de esta sección usa los siguientes encabezados incluidos adicionales.
 
 
 ```C++
@@ -34,9 +34,9 @@ En el código de ejemplo de esta sección se usa el siguiente encabezado incluid
 
 
 
-También debe vincular a estos archivos de biblioteca asociados adicionales: propsys. lib y PortableDeviceGuids. lib.
+También debe vincular a estos archivos de biblioteca asociados adicionales: Propsys.lib y PortableDeviceGuids.lib.
 
-En el código de ejemplo de esta sección se usan las siguientes constantes para las categorías de sensor, los tipos y los campos de datos. Estas constantes son valores personalizados que se definen en el ejemplo del controlador TimeSensor en el kit de controladores de Windows. Tenga en cuenta que, aunque la plataforma del sensor permite definir y usar tipos personalizados como estos, debe usar tipos definidos por la plataforma siempre que sea posible.
+El código de ejemplo de esta sección usa las siguientes constantes para categorías de sensores, tipos y campos de datos. Estas constantes son valores personalizados definidos por el ejemplo de controlador TimeSensor en el Windows Driver Kit. Tenga en cuenta que, aunque la plataforma sensor permite definir y usar tipos personalizados como estos, debe usar tipos definidos por la plataforma siempre que sea posible.
 
 
 ```C++
@@ -70,7 +70,7 @@ DEFINE_PROPERTYKEY(SAMPLE_SENSOR_DATA_TYPE_SECOND,
 
 
 
-En el código de ejemplo de esta sección se usan las siguientes variables.
+El código de ejemplo de esta sección usa las siguientes variables.
 
 
 ```C++
@@ -89,7 +89,7 @@ ULONG ulHour, ulMinute, ulSecond = 0;
 
 
 
-En el código de ejemplo de esta sección se usa la siguiente función para liberar punteros de interfaz COM.
+El código de ejemplo de esta sección usa la siguiente función para liberar punteros de interfaz COM.
 
 
 ```C++
@@ -107,21 +107,21 @@ template <class T> void SafeRelease(T **ppT)
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [Recuperación de un objeto de sensor](retrieving-a-sensor.md)
--   [Solicitar permisos de usuario](requesting-user-permissions.md)
--   [Recuperación y configuración de las propiedades del sensor](setting-and-retrieving-sensor-properties.md)
--   [Comprobando los campos de datos del sensor admitidos](checking-for-supported-sensor-data-fields.md)
--   [Uso de eventos de la API de sensor](using-sensor-api-events.md)
--   [Recuperación de los valores de datos del sensor](retrieving-sensor-data-fields.md)
+-   [Recuperar un objeto sensor](retrieving-a-sensor.md)
+-   [Solicitud de permisos de usuario](requesting-user-permissions.md)
+-   [Recuperar y establecer propiedades del sensor](setting-and-retrieving-sensor-properties.md)
+-   [Comprobación de los campos de datos de sensor admitidos](checking-for-supported-sensor-data-fields.md)
+-   [Uso de eventos de SENSOR API](using-sensor-api-events.md)
+-   [Recuperación de valores de datos del sensor](retrieving-sensor-data-fields.md)
 -   [Recuperar tipos de vectores](retrieving-vector-types.md)
 -   [Uso de sensores lógicos](using-logical-sensors.md)
--   [Crear interfaces de usuario Light-Aware](creating-light-aware-user-interfaces.md)
+-   [Creación de Light-Aware interfaces de usuario](creating-light-aware-user-interfaces.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Acerca de la API de sensor](about-the-sensor-api.md)
+[Acerca de Sensor API](about-the-sensor-api.md)
 </dt> </dl>
 
  

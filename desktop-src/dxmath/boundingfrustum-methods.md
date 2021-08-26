@@ -4,12 +4,12 @@ ms.assetid: f77aac4a-7fbf-4149-a1c4-ee4c58d37222
 title: Métodos BoundingFrustum
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94f5c4b7dfe7da243a61970853a241187df40e12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f21e02677ae08b20d509cab8e319d7fe968af9c8ce90d5208ae63495f5cff8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117715"
 ---
 # <a name="boundingfrustum-methods"></a>Métodos BoundingFrustum
 
@@ -17,14 +17,14 @@ ms.locfileid: "105715637"
 
 | Método                                                                  | Descripción                                                                                                    |
 |-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [**Tuviera**](boundingfrustum-contains.md)<br/>                 | Comprueba si el [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) contiene un objeto especificado.<br/>           |
-| [**Forma intersección con**](boundingfrustum-intersects.md)<br/>             | Comprueba el [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) para la intersección con otro objeto.<br/>          |
-| [**Transform**](boundingfrustum-transform.md)<br/>               | Transforma el [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                                          |
-| [**ContainedBy**](/windows/desktop/api/DirectXCollision/nf-directxcollision-boundingbox-containedby)<br/>           | Comprueba si el [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) está incluido en el frustum especificado.<br/> |
-| [**CreateFromMatrix**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-createfrommatrix)<br/> | Crea un [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) a partir de la matriz de proyección especificada.<br/>          |
-| [**GetCorners**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-getcorners)<br/>             | Obtiene las esquinas que conforman el [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                          |
-| [**GetPlanes**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-getplanes)<br/>               | Obtiene los planos que conforman el [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                           |
-| [**asignación de OP \_**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-operator-assign(boundingfrustum__))<br/>      | Copia los valores de otro [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                              |
+| [**Contiene**](boundingfrustum-contains.md)<br/>                 | Comprueba si [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) contiene un objeto especificado.<br/>           |
+| [**Intersecta**](boundingfrustum-intersects.md)<br/>             | Comprueba la [**intersección de BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) con otro objeto.<br/>          |
+| [**Transform**](boundingfrustum-transform.md)<br/>               | Transforma el [**objeto BoundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)<br/>                                          |
+| [**ContainedBy**](/windows/desktop/api/DirectXCollision/nf-directxcollision-boundingbox-containedby)<br/>           | Comprueba si [**boundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) está incluido en el frustum especificado.<br/> |
+| [**CreateFromMatrix**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-createfrommatrix)<br/> | Crea un [**objeto BoundingFrustum a**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) partir de la matriz de proyección especificada.<br/>          |
+| [**GetCorners**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-getcorners)<br/>             | Obtiene las esquinas que forma [**el boundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                          |
+| [**GetPlanes**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-getplanes)<br/>               | Obtiene los planos que forma [**el boundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                           |
+| [**Op \_ Assignment**](/windows/win32/api/directxcollision/nf-directxcollision-boundingfrustum-operator-assign(boundingfrustum__))<br/>      | Copia valores de otro [**boundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                              |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: El elemento opcional especifica la ubicación de un IPropertyStore basado en XML para <propertyStore> almacenar los metadatos abiertos para este conector de búsqueda. Este elemento no tiene atributos y solo un elemento secundario.
+description: El elemento propertyStore opcional especifica la ubicación de un IPropertyStore basado en XML para almacenar los metadatos abiertos &lt; para este conector de &gt; búsqueda. Este elemento no tiene atributos y solo un elemento secundario.
 ms.assetid: 5720c69f-af87-432b-857c-dbd66ba74e80
 title: elemento propertyStore (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0de5a9e801163bd85635b82c1915394f24c39d3dfdafcb64c81fcff0bf84a219
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 73c617f560e0471062064bcec8020dd5e6efa026
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119351855"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886794"
 ---
 # <a name="propertystore-element-search-connector-schema"></a>elemento propertyStore (esquema del conector de búsqueda)
 
-El elemento opcional especifica la ubicación de un IPropertyStore basado en XML para <propertyStore> almacenar los metadatos abiertos para este conector de búsqueda. Este elemento no tiene atributos y solo un elemento secundario.
+El elemento propertyStore opcional especifica la ubicación de un IPropertyStore basado en XML para almacenar los metadatos abiertos &lt; para este conector de &gt; búsqueda. Este elemento no tiene atributos y solo un elemento secundario.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,7 +49,7 @@ El elemento opcional especifica la ubicación de un IPropertyStore basado en XML
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra <propertyStore> un elemento con dos elementos <property> .
+En el ejemplo siguiente se muestra &lt; un elemento propertyStore &gt; con dos elementos de &lt; &gt; propiedad.
 
 
 ```

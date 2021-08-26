@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la clase Msvm_VirtualEthernetSwitchManagementService: solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_VirtualEthernetSwitchManagementService: solicita un cambio de estado.'
 ms.assetid: 0a236a99-6ddb-482f-af28-1af731b6b980
 title: Método RequestStateChange de la Msvm_VirtualEthernetSwitchManagementService clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2eceddea59f1f31ba2702c62dba798402bf60b86
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d3ab99f870b4444006f85d6ac30cd8f9a49f1836e41c04e5fc80dd0f4f128f1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075295"
 ---
 # <a name="requeststatechange-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método RequestStateChange de la clase \_ Msvm VirtualEthernetSwitchManagementService
 
@@ -128,14 +128,14 @@ El nuevo estado. La información se coloca en la propiedad **RequestedState** de
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia al [**\_ elemento ConcreteJob de CIM**](cim-concretejob.md) creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia a cim [**\_ concretejob creado**](cim-concretejob.md) para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
 
 </dd> <dt>
 
 *TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 (**Use Of Timeout Parameter Not Supported**).
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene requisitos de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 **(No** se admite el uso del parámetro de tiempo de espera).
 
 </dd> </dl>
 
@@ -165,7 +165,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

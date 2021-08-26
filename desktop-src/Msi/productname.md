@@ -1,35 +1,35 @@
 ---
-description: La propiedad ProductName contiene el nombre de la aplicación que se va a instalar. Solo se usa para fines de presentación. Anunciado como propiedad del producto. Esta propiedad es obligatoria. Esta propiedad se puede cambiar mediante una transformación.
+description: La propiedad ProductName contiene el nombre de la aplicación que se está instalando. Solo se usa con fines de visualización. Se anuncia como una propiedad de producto. Esta propiedad es REQUIRED. Una transformación puede cambiar esta propiedad.
 ms.assetid: 0a9f5be1-9da2-47a7-859b-fc6d1ec326b3
-title: ProductName (propiedad)
+title: Propiedad ProductName
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfecd7a8464395f021d09430ce1be7ca3ba4a6cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dfd250d4a3aae2fd1aa25fa2c5ff08492e8f7707fd5301d6318e9d813de423a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074695"
 ---
-# <a name="productname-property"></a>ProductName (propiedad)
+# <a name="productname-property"></a>Propiedad ProductName
 
-La propiedad **ProductName** contiene el nombre de la aplicación que se va a instalar. Solo se usa para fines de presentación. Anunciado como propiedad del producto.
+La **propiedad ProductName** contiene el nombre de la aplicación que se está instalando. Solo se usa con fines de visualización. Se anuncia como una propiedad de producto.
 
-Esta propiedad es obligatoria.
+Esta propiedad es REQUIRED.
 
-Esta propiedad se puede cambiar mediante una transformación.
+Una transformación puede cambiar esta propiedad.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La propiedad **ProductName** no puede tener más de 63 caracteres de longitud. No existe ningún límite en la longitud de la clave del registro para DisplayName.
+La **propiedad ProductName** no puede tener una longitud superior a 63 caracteres. No existe ningún límite en la longitud de la clave del Registro para DisplayName.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
 
 
 
