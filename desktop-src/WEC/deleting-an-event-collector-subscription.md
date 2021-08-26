@@ -1,20 +1,20 @@
 ---
-title: Eliminar una suscripción del recopilador de eventos
-description: Puede eliminar una suscripción del recopilador de eventos de un equipo local.
+title: Eliminación de una suscripción del recopilador de eventos
+description: Puede eliminar una suscripción del recopilador de eventos desde un equipo local.
 ms.assetid: d3102149-906d-4286-85c8-e5b1eb6dd382
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47cec036625bbb94e33e71af0f1d9808ad9252a4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9edf2f9dda2b6393ab147d5f58ff8f889952eaeb7f31f82080558697f117f3c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006095"
 ---
-# <a name="deleting-an-event-collector-subscription"></a>Eliminar una suscripción del recopilador de eventos
+# <a name="deleting-an-event-collector-subscription"></a>Eliminación de una suscripción del recopilador de eventos
 
-Puede eliminar una suscripción del recopilador de eventos de un equipo local. Debe conocer el nombre de la suscripción para poder eliminarla. Para obtener más información acerca de cómo enumerar las suscripciones actuales en un equipo local, vea [enumerar las suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)o escriba el siguiente comando en el símbolo del sistema:
+Puede eliminar una suscripción del recopilador de eventos desde un equipo local. Debe conocer el nombre de la suscripción para poder eliminarla. Para obtener más información sobre cómo enumerar las suscripciones actuales en un equipo local, vea [Enumerar](listing-event-collector-subscriptions.md)suscripciones del recopilador de eventos o escriba el siguiente comando en el símbolo del sistema:
 
 **wecutil es**
 
@@ -22,13 +22,13 @@ Puede eliminar una suscripción del recopilador de eventos de un equipo local. D
 >
 > Puede usar este ejemplo para eliminar una suscripción del recopilador de eventos o puede escribir el siguiente comando en el símbolo del sistema:
 >
-> **wecutil DS** *SubscriptionName*
+> **wecutil ds** *SubscriptionName*
 
- 
+ 
 
-Después de recuperar el nombre de la suscripción del recopilador de eventos que se va a eliminar, puede proporcionar el nombre de la suscripción como un parámetro a [**EcDeleteSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecdeletesubscription).
+Después de recuperar el nombre de la suscripción del recopilador de eventos que se va a eliminar, puede proporcionar el nombre de la suscripción como parámetro a [**EcDeleteSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecdeletesubscription).
 
-En el ejemplo de código de C++ siguiente se muestra cómo eliminar una suscripción del recopilador de eventos.
+En el siguiente ejemplo de código de C++ se muestra cómo eliminar una suscripción del recopilador de eventos.
 
 
 ```C++
@@ -78,15 +78,15 @@ void __cdecl wmain()
 
 <dl> <dt>
 
-[Enumerar las suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
+[Enumerar suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Referencia del recopilador de eventos de Windows](windows-event-collector-reference.md)
+[Windows Referencia del recopilador de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

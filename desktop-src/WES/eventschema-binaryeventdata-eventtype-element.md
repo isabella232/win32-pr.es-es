@@ -1,6 +1,6 @@
 ---
 title: Elemento BinaryEventData (EventType)
-description: Contiene los datos del evento como un BLOB binario.
+description: Contiene los datos del evento como un blob binario.
 ms.assetid: 6b083604-e97e-4fb5-bf98-5897cafc2b68
 keywords:
 - Elemento BinaryEventData EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 148d7e42a1600863ad422d689e3b229b7e77ef9d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5feab3a41752e132ce503bd293cbef32774272d5739205cb74f126972bcbee8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005595"
 ---
 # <a name="binaryeventdata-eventtype-element"></a>Elemento BinaryEventData (EventType)
 
-Contiene los datos del evento como un BLOB binario.
+Contiene los datos del evento como un blob binario.
 
 ``` syntax
 <xs:element name="BinaryEventData"
@@ -30,7 +30,7 @@ Contiene los datos del evento como un BLOB binario.
  />
 ```
 
-El elemento **BinaryEventData** se define mediante el tipo complejo de [**EventType**](eventschema-eventtype-complextype.md) .
+El tipo complejo [**EventType**](eventschema-eventtype-complextype.md) define el elemento **BinaryEventData.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **BinaryEventData** se define mediante el tipo complejo de [**EventT
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

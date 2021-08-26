@@ -4,12 +4,12 @@ description: Un grupo de efectos se declara con la sintaxis descrita en esta sec
 ms.assetid: f6695ae5-198f-45bd-853b-8c02fabd0c39
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9221341810990801f1ed07005e0dcb917df42360
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 4c1b2c72b0a67a31911a0f2c9f9ae6ac0e9e20463a850c303dab4a208401d1c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104487186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069755"
 ---
 # <a name="effect-group-syntax-direct3d-11"></a>Sintaxis de grupo de efectos (Direct3D 11)
 
@@ -41,10 +41,10 @@ fxgroup GroupName  [ <Annotations > ]
 
 | Elemento                                                                                                                                                                           | Descripción                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="fxgroup"></span><span id="FXGROUP"></span>fxgroup<br/>                                                                                                         | palabra clave ecesario.<br/>                                                                                                                                                                                                         |
-| <span id="GroupName"></span><span id="groupname"></span><span id="GROUPNAME"></span>GroupName<br/>                                                                       | Obligatorio. Cadena ASCII que identifica de forma única el nombre del grupo de efectos. A diferencia de las técnicas, los grupos deben tener nombres para asegurarse de que las técnicas tienen un identificador único (consulte la sección grupos y técnicas a continuación).<br/> |
-| <span id="_______________Annotations__"></span><span id="_______________annotations__"></span><span id="_______________ANNOTATIONS__"></span> < anotaciones ><br/> | \[en \] opcional. Una o más partes de la información proporcionada por el usuario (metadatos) que el sistema de efectos omite. Para ver la sintaxis, vea sintaxis de anotación (Direct3D 11). <br/>                                                      |
-| <span id="TechniqueVersion"></span><span id="techniqueversion"></span><span id="TECHNIQUEVERSION"></span>TechniqueVersion<br/>                                           | "Technique10" o "technique11". Las técnicas que usan la funcionalidad nueva en Direct3D 11 (5 \_ 0 sombreadores, BindInterfaces, etc.) deben usar "technique11".<br/>                                                                 |
+| <span id="fxgroup"></span><span id="FXGROUP"></span>fxgroup<br/>                                                                                                         | Palabra clave equired.<br/>                                                                                                                                                                                                         |
+| <span id="GroupName"></span><span id="groupname"></span><span id="GROUPNAME"></span>Groupname<br/>                                                                       | Obligatorio. Cadena ASCII que identifica de forma única el nombre del grupo de efectos. A diferencia de las técnicas, los grupos deben tener nombres para asegurarse de que las técnicas tienen un identificador único (consulte la sección Grupos y técnicas a continuación).<br/> |
+| <span id="_______________Annotations__"></span><span id="_______________annotations__"></span><span id="_______________ANNOTATIONS__"></span> < anotaciones ><br/> | \[en \] Opcional. Uno o varios fragmentos de información proporcionada por el usuario (metadatos) que el sistema de efectos omite. Para obtener sintaxis, vea Sintaxis de anotación (Direct3D 11). <br/>                                                      |
+| <span id="TechniqueVersion"></span><span id="techniqueversion"></span><span id="TECHNIQUEVERSION"></span>TechniqueVersion<br/>                                           | "technique10" o "technique11". Las técnicas que usan la funcionalidad nueva de Direct3D 11 (5 \_ 0 sombreadores, BindInterfaces, etc.) deben usar "technique11".<br/>                                                                 |
 | <span id="TechniqueName"></span><span id="techniquename"></span><span id="TECHNIQUENAME"></span>TechniqueName<br/>                                                       | Opcional. Cadena ASCII que identifica de forma única el nombre de la técnica de efecto. <br/>                                                                                                                                    |
 
 
@@ -53,7 +53,7 @@ fxgroup GroupName  [ <Annotations > ]
 
 ## <a name="groups-and-techniques"></a>Grupos y técnicas
 
-Para mantener la compatibilidad con efectos de FX \_ 4 \_ 0, los grupos son opcionales. Hay un grupo de nombres NULL implícito que rodea todas las técnicas globales.
+Para mantener la compatibilidad con efectos fx \_ 4 \_ 0, los grupos son opcionales. Hay un grupo con nombre NULL implícito que rodea todas las técnicas globales.
 
 Considere el ejemplo siguiente:
 
@@ -94,7 +94,7 @@ pEffect->GetGroupByName("Group2")->GetTechniqueByName( "Tech2" );
 
 
 
-Para asegurarse de que [**ID3DX11Effect:: GetTechniqueByName**](id3dx11effect-gettechniquebyname.md) funciona de forma similar a los efectos 10, todos los grupos definidos deben tener un nombre.
+Para asegurarse de que [**ID3DX11Effect::GetTechniqueByName**](id3dx11effect-gettechniquebyname.md) funciona de forma similar a Effects 10, todos los grupos definidos deben tener un nombre.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -103,7 +103,7 @@ Para asegurarse de que [**ID3DX11Effect:: GetTechniqueByName**](id3dx11effect-ge
 [Formato de efecto](d3d11-effect-format.md)
 </dt> <dt>
 
-[Sintaxis de la técnica de efectos (Direct3D 11)](d3d11-effect-technique-syntax.md)
+[Sintaxis de técnica de efecto (Direct3D 11)](d3d11-effect-technique-syntax.md)
 </dt> </dl>
 
  

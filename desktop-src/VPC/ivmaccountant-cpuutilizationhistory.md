@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMAccountant CPUUtilizationHistory (VPCCOMInterfaces. h)
-description: Recupera el uso de CPU reciente de esta máquina virtual (como una matriz de valores de porcentaje).
+title: Propiedad IVMAccountant CPUUtilizationHistory (VPCCOMInterfaces.h)
+description: Recupera el uso reciente de CPU de esta máquina virtual (como una matriz de valores de porcentaje).
 ms.assetid: f6b92b25-9455-4061-8db0-3e42f9f7391d
 keywords:
-- Propiedad CPUUtilizationHistory Virtual PC
-- Propiedad CPUUtilizationHistory Virtual PC, interfaz IVMAccountant
-- Interfaz IVMAccountant Virtual PC, propiedad CPUUtilizationHistory
+- CPUUtilizationHistory, propiedad Virtual PC
+- CPUUtilizationHistory, propiedad Virtual PC, interfaz IVMAccountant
+- IVMAccountant interface Virtual PC , CPUUtilizationHistory property
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa7e91a83be7ab4c09a0b779a729745e80e1e74
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 81014d1f72fa6bb0266ed113f40044b46ba15673aec97fdf763a81f6f22f94c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007295"
 ---
-# <a name="ivmaccountantcpuutilizationhistory-property"></a>IVMAccountant:: CPUUtilizationHistory (propiedad)
+# <a name="ivmaccountantcpuutilizationhistory-property"></a>IVMAccountant::CPUUtilizationHistory, propiedad
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recupera el uso de CPU reciente de esta máquina virtual (como una matriz de valores de porcentaje).
+Recupera el uso reciente de CPU de esta máquina virtual (como una matriz de valores de porcentaje).
 
 Esta propiedad es de solo lectura.
 
@@ -45,7 +45,7 @@ HRESULT get_CPUUtilizationHistory(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El uso de CPU reciente de esta máquina virtual. Estos datos se devuelven como una matriz de 60 elementos que representan el porcentaje de uso de CPU en cada segundo durante el último minuto. Variant Type es VT \_ array \| VT \_ UI1.
+Uso reciente de la CPU de esta máquina virtual. Estos datos se devuelven como una matriz de 60 elementos que representan el porcentaje de uso de CPU en cada segundo durante el último minuto. El tipo de variante es VT \_ ARRAY \| VT \_ UI1.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,10 +53,10 @@ El uso de CPU reciente de esta máquina virtual. Estos datos se devuelven como u
 
 | Nombre o valor                                                                                                                                                    | Significado                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>                                           |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **null**.<br/>                                              |
-| <dl> <dt>S \_ FALSO</dt> <dt>1</dt> </dl>                    | La máquina virtual no se está ejecutando. Todos los elementos de la matriz 60 se establecen en 0.<br/> |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/>                                       |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>                                           |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **NULL.**<br/>                                              |
+| <dl> <dt>S \_ FALSE</dt> <dt>1</dt> </dl>                    | La máquina virtual no se está ejecutando. Los 60 elementos de la matriz se establecen en 0.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/>                                       |
 
 
 
@@ -66,12 +66,12 @@ El uso de CPU reciente de esta máquina virtual. Estos datos se devuelven como u
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMAccountant se define como 6376c067-7f57-4D63-b754-06e2e4f51d73<br/>              |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMAccountant se define como \_ 6376c067-7f57-4d63-b754-06e2e4f51d73<br/>              |
 
 
 

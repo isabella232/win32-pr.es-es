@@ -1,35 +1,35 @@
 ---
-title: Trabajar con recursos de dispositivos DirectX
-description: Comprenda el rol de la infraestructura de gráficos de Microsoft DirectX (DXGI) en el juego DirectX de la tienda Windows.
+title: Trabajar con recursos de dispositivo DirectX
+description: Comprenda el rol de Microsoft Infraestructura de gráficos de DirectX (DXGI) en el juego Windows Store DirectX.
 ms.assetid: 24c0c81d-6b55-4116-868a-154addf0f04c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 096e2be6f957d99bc6e5055f845c14448ecd647f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 600af9c5ca2d2ba8ce8a7b078c769e195c4a7898384d102a21be3aaaf2c936bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104487931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068665"
 ---
-# <a name="work-with-directx-device-resources"></a>Trabajar con recursos de dispositivos DirectX
+# <a name="work-with-directx-device-resources"></a>Trabajar con recursos de dispositivo DirectX
 
-Comprenda el rol de la infraestructura de gráficos de Microsoft DirectX (DXGI) en el juego DirectX de la tienda Windows. DXGI es un conjunto de API que se usan para configurar y administrar los gráficos de bajo nivel y los recursos del adaptador de gráficos. Sin él, no tendría ninguna manera de dibujar los gráficos del juego en una ventana.
+Comprenda el rol de Microsoft Infraestructura de gráficos de DirectX (DXGI) en el juego Windows Store DirectX. DXGI es un conjunto de API que se usan para configurar y administrar recursos de adaptador de gráficos y gráficos de bajo nivel. Sin él, no tendría ninguna manera de dibujar los gráficos del juego en una ventana.
 
-Piense en DXGI de esta manera: para acceder directamente a la GPU y administrar sus recursos, debe tener una manera de describirla en la aplicación. La parte más importante de la información que necesita sobre la GPU es el lugar para dibujar píxeles de modo que pueda enviar esos píxeles a la pantalla. Normalmente, esto se denomina "búfer de reserva", una ubicación en la memoria de GPU en la que puede dibujar los píxeles y, a continuación, hacer que se "volteo" o "intercambie" y se envíen a la pantalla en una señal de actualización. DXGI le permite adquirir esa ubicación y los medios para usar ese búfer (denominado *cadena de intercambio* porque es una cadena de búferes intercambiables, lo que permite varias estrategias de almacenamiento en búfer).
+Piense en DXGI de esta manera: para acceder directamente a la GPU y administrar sus recursos, debe tener una manera de describirla en la aplicación. La información más importante que necesita sobre la GPU es el lugar donde dibujar píxeles para que pueda enviar esos píxeles a la pantalla. Normalmente, esto se denomina "búfer de reserva", una ubicación en la memoria de GPU en la que puede dibujar los píxeles y, a continuación, hacer que se "voltear" o "intercambiar" y enviar a la pantalla en una señal de actualización. DXGI le permite adquirir esa ubicación y los  medios para usar ese búfer (denominado cadena de intercambio porque es una cadena de búferes intercambiables, lo que permite varias estrategias de almacenamiento en búfer).
 
-Para ello, necesita acceso para escribir en la cadena de intercambio y un identificador de la ventana que mostrará el búfer de reserva actual de la cadena de intercambio. También debe conectar los dos para asegurarse de que el sistema operativo actualizará la ventana con el contenido del búfer de reserva cuando se lo solicite.
+Para ello, necesita acceso para escribir en la cadena de intercambio y un identificador en la ventana que mostrará el búfer de reserva actual para la cadena de intercambio. También debe conectar los dos para asegurarse de que el sistema operativo actualizará la ventana con el contenido del búfer de reserva cuando solicite que lo haga.
 
 El proceso general para dibujar en la pantalla es el siguiente:
 
--   Obtiene un [**CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow) para tu aplicación.
--   Obtiene una interfaz para el dispositivo Direct3D y el contexto.
--   Cree la cadena de intercambio para mostrar la imagen representada en [**CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow).
--   Cree un destino de representación para dibujar y rellenarlo con píxeles.
+-   Obtenga un [**elemento CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow) para la aplicación.
+-   Obtenga una interfaz para el dispositivo y el contexto de Direct3D.
+-   Cree la cadena de intercambio para mostrar la imagen representado en [**CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow).
+-   Cree un destino de representación para dibujar y rellene con píxeles.
 -   Presente la cadena de intercambio.
 
-## <a name="create-a-window-for-your-app"></a>Crear una ventana para la aplicación
+## <a name="create-a-window-for-your-app"></a>Creación de una ventana para la aplicación
 
-Lo primero que debemos hacer es crear una ventana. En primer lugar, cree una clase de ventana rellenando una instancia de [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa)y regístrela mediante [**RegisterClass**](/windows/desktop/api/winuser/nf-winuser-registerclassa). La clase de ventana contiene propiedades esenciales de la ventana, incluido el icono que usa, la función de procesamiento de mensajes estático (más información más adelante) y un nombre único para la clase de ventana.
+Lo primero que debemos hacer es crear una ventana. En primer lugar, cree una clase de ventana mediante la rellenar una instancia de [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa)y, a continuación, regístrela [**mediante RegisterClass**](/windows/desktop/api/winuser/nf-winuser-registerclassa). La clase window contiene propiedades esenciales de la ventana, incluido el icono que usa, la función de procesamiento de mensajes estáticos (más adelante) y un nombre único para la clase de ventana.
 
 
 ```C++
@@ -67,7 +67,7 @@ if(!RegisterClass(&wndClass))
 
 
 
-A continuación, cree la ventana. También es necesario proporcionar información de tamaño para la ventana y el nombre de la clase de ventana que acabamos de crear. Cuando se llama a [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa), se obtiene un puntero opaco a la ventana denominada HWND; deberá mantener el puntero HWND y usarlo en cualquier momento que necesite hacer referencia a la ventana, incluida la destrucción o la recreación, y (especialmente importante) al crear la cadena de intercambio de DXGI que usa para dibujar en la ventana.
+A continuación, cree la ventana. También es necesario proporcionar información de tamaño para la ventana y el nombre de la clase de ventana que acaba de crear. Cuando se llama [**a CreateWindow,**](/windows/desktop/api/winuser/nf-winuser-createwindowa)se obtiene un puntero opaco a la ventana denominado HWND; Tendrá que mantener el puntero HWND y usarlo en cualquier momento que necesite hacer referencia a la ventana, incluido destruirlo o volver a crearlo, y (especialmente importante) al crear la cadena de intercambio DXGI que use para dibujar en la ventana.
 
 
 ```C++
@@ -110,7 +110,7 @@ if(m_hWnd == NULL)
 
 
 
-El modelo de aplicación de escritorio de Windows incluye un enlace en el bucle de mensajes de Windows. Deberá basar el bucle principal del programa de este enlace escribiendo una función "StaticWindowProc" para procesar los eventos de ventana. Debe ser una función estática, ya que Windows la llamará fuera del contexto de cualquier instancia de clase. Este es un ejemplo muy sencillo de una función de procesamiento de mensajes estáticos.
+El Windows de aplicación de escritorio incluye un enlace al Windows de mensajes. Deberá basar el bucle de programa principal fuera de este enlace escribiendo una función "StaticWindowProc" para procesar eventos de ventana. Debe ser una función estática porque Windows llamará fuera del contexto de cualquier instancia de clase. Este es un ejemplo muy sencillo de una función de procesamiento de mensajes estáticos.
 
 
 ```C++
@@ -150,9 +150,9 @@ LRESULT CALLBACK MainClass::StaticWindowProc(
 
 
 
-En este sencillo ejemplo solo se comprueban las condiciones de salida del programa: el [**\_ cierre de WM**](/windows/desktop/winmsg/wm-close), el que se envía cuando se solicita el cierre de la ventana y la [**\_ destrucción de WM**](/windows/desktop/winmsg/wm-destroy), que se envía después de que la ventana se quite realmente de la pantalla. Una aplicación completa de producción debe controlar también otros eventos de ventana. para obtener la lista completa de eventos de ventana, vea [notificaciones de ventana](/windows/desktop/winmsg/window-notifications).
+En este ejemplo simple solo se comprueban las condiciones de salida del programa: [**WM \_ CLOSE**](/windows/desktop/winmsg/wm-close), que se envía cuando se solicita que se cierre la ventana, y [**WM \_ DESTROY,**](/windows/desktop/winmsg/wm-destroy)que se envía después de que la ventana se quite realmente de la pantalla. Una aplicación completa de producción también debe controlar otros eventos de ventana: para obtener la lista completa de eventos de ventana, vea [Notificaciones de ventana.](/windows/desktop/winmsg/window-notifications)
 
-El propio bucle del programa principal debe confirmar los mensajes de Windows permitiendo a Windows la oportunidad de ejecutar el procedimiento de mensaje estático. Ayude a que el programa se ejecute de forma eficaz ramificando el comportamiento: cada iteración debe elegir procesar nuevos mensajes de Windows si están disponibles y, si no hay ningún mensaje en la cola, debe representar un nuevo marco. Este es un ejemplo muy sencillo:
+El propio bucle de programa principal debe confirmar Windows mensajes al permitir Windows la oportunidad de ejecutar el procedimiento de mensaje estático. Ayude a que el programa se ejecute de forma eficaz mediante la forzamiento del comportamiento: cada iteración debe elegir procesar nuevos mensajes Windows si están disponibles y, si no hay ningún mensaje en la cola, debe representar un nuevo marco. Este es un ejemplo muy sencillo:
 
 
 ```C++
@@ -191,11 +191,11 @@ while (WM_QUIT != msg.message)
 
 ## <a name="get-an-interface-for-the-direct3d-device-and-context"></a>Obtener una interfaz para el dispositivo y el contexto de Direct3D
 
-El primer paso para usar Direct3D es adquirir una interfaz para el hardware de Direct3D (GPU), representada como instancias de [**ID3D11Device**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2) y [**ID3D11DeviceContext**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2). El primero es una representación virtual de los recursos de GPU y el último es una abstracción independiente del dispositivo de la canalización de representación y el proceso. Esta es una manera fácil de pensar en ello: **ID3D11Device** contiene los métodos gráficos a los que llama con poca frecuencia, normalmente antes de que se produzca cualquier representación, para adquirir y configurar el conjunto de recursos que necesita para empezar a dibujar píxeles. Por otro lado, **ID3D11DeviceContext** contiene los métodos a los que se llama cada fotograma: carga en búferes y vistas y otros recursos, cambiando la fusión de salida y el estado del rasterizador, administrando los sombreadores y dibujando los resultados de pasar esos recursos a través de los Estados y los sombreadores.
+El primer paso para usar Direct3D es adquirir una interfaz para el hardware de Direct3D (la GPU), representada como instancias de [**ID3D11Device**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2) e [**ID3D11DeviceContext.**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) La primera es una representación virtual de los recursos de GPU y la segunda es una abstracción independiente del dispositivo de la canalización y el proceso de representación. Esta es una manera fácil de pensar en ello: **ID3D11Device** contiene los métodos gráficos a los que llama con poca frecuencia, normalmente antes de que se produzca cualquier representación, para adquirir y configurar el conjunto de recursos que necesita para empezar a dibujar píxeles. POR otro lado, **ID3D11DeviceContext** contiene los métodos a los que se llama a cada fotograma: cargar en búferes y vistas y otros recursos, cambiar el estado de fusión de salida y rasterizador, administrar sombreadores y dibujar los resultados de pasar esos recursos a través de los estados y sombreadores.
 
-Hay una parte muy importante de este proceso: establecer el nivel de características. El nivel de característica indica a DirectX el nivel mínimo de hardware que admite la aplicación, con \_ \_ el nivel de característica de D3D \_ 9 \_ 1 como el conjunto de características más bajo y el nivel de característica de D3D \_ \_ \_ 11 \_ 1 como el valor más alto actual. Debe admitir 9 \_ 1 como mínimo si desea llegar al público más amplio posible. Tómese un tiempo para leer los niveles de [características](/previous-versions/windows/apps/hh994923(v=win.10)) de Direct3D y evalúe los niveles de características mínimo y máximo que desee que admita el juego y comprenda las implicaciones de su elección.
+Hay una parte muy importante de este proceso: establecer el nivel de característica. El nivel de característica indica a DirectX el nivel mínimo de hardware que admite la aplicación, con D3D FEATURE LEVEL 9 1 como el conjunto de características más bajo y \_ \_ \_ \_ D3D \_ FEATURE \_ LEVEL \_ \_ 11 1 como el máximo actual. Debe admitir 9 1 como mínimo si desea llegar a \_ la audiencia más amplia posible. Dedícate un tiempo a [](/previous-versions/windows/apps/hh994923(v=win.10)) leer los niveles de características de Direct3D y a evaluar por ti mismo los niveles mínimo y máximo de características que quieres que tu juego admita y para comprender las implicaciones de tu elección.
 
-Obtener referencias (punteros) en el dispositivo Direct3D y en el contexto del dispositivo y almacenarlas como variables de nivel de clase en la instancia de **DeviceResources** (como punteros inteligentes **ComPtr** ). Use estas referencias siempre que necesite tener acceso al dispositivo o contexto de dispositivo de Direct3D.
+Obtenga referencias (punteros) al contexto de dispositivo y dispositivo de Direct3D y almacénelas como variables de nivel de clase en la instancia **DeviceResources** (como punteros inteligentes **ComPtr).** Use estas referencias siempre que necesite acceder al contexto de dispositivo o dispositivo de Direct3D.
 
 
 ```C++
@@ -248,24 +248,24 @@ context.As(&m_pd3dDeviceContext);
 
 
 
-## <a name="create-the-swap-chain"></a>Crear la cadena de intercambio
+## <a name="create-the-swap-chain"></a>Creación de la cadena de intercambio
 
-Bien: tiene una ventana en la que dibujar y tiene una interfaz para enviar datos y proporcionar comandos a la GPU. Ahora veamos cómo unirlos.
+Correcto: tiene una ventana en la que dibujar y tiene una interfaz para enviar datos y proporcionar comandos a la GPU. Ahora veamos cómo reunirlos.
 
-En primer lugar, se indica a DXGI qué valores se deben usar para las propiedades de la cadena de intercambio. Para ello, use una estructura de [**DESC de cadena de intercambio de DXGI \_ \_ \_**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) . Los seis campos son especialmente importantes para las aplicaciones de escritorio:
+En primer lugar, debe decir a DXGI qué valores usar para las propiedades de la cadena de intercambio. Para ello, use [**una estructura \_ \_ \_ DESC DESC DE DXGI SWAP CHAIN.**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) Seis campos son especialmente importantes para las aplicaciones de escritorio:
 
--   **Windowed**: indica si la cadena de intercambio está en pantalla completa o recortada en la ventana. Establézcalo en TRUE para colocar la cadena de intercambio en la ventana que creó anteriormente.
--   **BufferUsage**: establezca este valor en \_ salida de destino de representación de uso de DXGI \_ \_ \_ . Esto indica que la cadena de intercambio será una superficie de dibujo, lo que le permite usarlo como destino de representación de Direct3D.
--   **SwapEffect**: establezca este valor en el efecto de intercambio de DXGI \_ \_ \_ volteo \_ secuencial.
--   **Format**: el formato de DXGI \_ \_ B8G8R8A8 \_ UNORM format especifica el color de 32 bits: 8 bits para cada uno de los tres canales de color RGB y 8 bits para el canal alfa.
--   **BufferCount**: establezca este valor en 2 para un comportamiento tradicional de búfer doble para evitar el desbordamiento. Establezca el número de búferes en 3 si el contenido de los gráficos toma más de un ciclo de actualización del monitor para representar un solo fotograma (en 60 Hz por ejemplo, el umbral es superior a 16 ms).
--   **SampleDesc**: este campo controla el muestreo múltiple. Establezca **recuento** en 1 y **calidad** en 0 para las cadenas de intercambio del modelo de volteo. (Para usar el muestreo múltiple con cadenas de intercambio de modelo Flip, dibuje en un destino de representación multimuestreado independiente y, a continuación, resuelva ese destino en la cadena de intercambio justo antes de presentarlo. El código de ejemplo se proporciona en el [muestreo múltiple en aplicaciones de la tienda Windows](/previous-versions/windows/apps/dn458384(v=win.10))).
+-   **Ventana:** indica si la cadena de intercambio es de pantalla completa o se recorta a la ventana. Establezca esta opción en TRUE para colocar la cadena de intercambio en la ventana que creó anteriormente.
+-   **BufferUsage:** esta opción se establece en DXGI \_ USAGE RENDER TARGET \_ \_ \_ OUTPUT. Esto indica que la cadena de intercambio será una superficie de dibujo, lo que le permite usarla como destino de representación de Direct3D.
+-   **SwapEffect:** esta opción se establece en DXGI \_ SWAP EFFECT FLIP \_ \_ \_ SEQUENTIAL.
+-   **Formato:** el formato DXGI \_ FORMAT \_ B8G8R8A8 UNORM especifica un color de 32 bits: 8 bits para cada uno de los tres canales de color RGB y 8 bits para el \_ canal alfa.
+-   **BufferCount:** esta opción se establece en 2 para un comportamiento tradicional de doble búfer para evitar la lágrima. Establezca el recuento de búferes en 3 si el contenido gráfico tarda más de un ciclo de actualización del monitor para representar un único fotograma (por ejemplo, a 60 Hz, el umbral es superior a 16 ms).
+-   **SampleDesc:** este campo controla la multimuestreo. Establezca **Recuento en** 1 y **Calidad** en 0 para cadenas de intercambio de modelos de volteo. (Para usar multimuestreo con cadenas de intercambio de modelos de volteo, dibuje en un destino de representación multimuestreo independiente y, a continuación, resuelva ese destino en la cadena de intercambio justo antes de presentarlo. El código de ejemplo se proporciona [en Multisampling en Windows Store).](/previous-versions/windows/apps/dn458384(v=win.10))
 
-Después de especificar una configuración para la cadena de intercambio, debe usar el mismo generador de DXGI que creó el dispositivo Direct3D (y el contexto de dispositivo) para crear la cadena de intercambio.
+Después de especificar una configuración para la cadena de intercambio, debe usar el mismo generador de DXGI que creó el dispositivo Direct3D (y el contexto del dispositivo) para crear la cadena de intercambio.
 
-**Forma abreviada:  **
+**Forma corta: **
 
-Obtenga la referencia de [**ID3D11Device**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2) que creó anteriormente. Vuelva a convertirlo en [**IDXGIDevice3**](/windows/desktop/api/dxgi1_3/nn-dxgi1_3-idxgidevice3) (si aún no lo ha hecho) y, después, llame a [**IDXGIDevice:: GetAdapter**](/windows/desktop/api/dxgi/nf-dxgi-idxgidevice-getadapter) para adquirir el adaptador de DXGI. Obtener el generador primario para ese adaptador llamando a [**IDXGIFactory2:: GetParent**](/windows/desktop/api/dxgi/nf-dxgi-idxgiobject-getparent) ([**IDXGIFactory2**](/windows/desktop/api/dxgi1_2/nn-dxgi1_2-idxgifactory2) hereda de [**IDXGIObject**](/windows/desktop/api/dxgi/nn-dxgi-idxgiobject)): ahora puede usar ese generador para crear la cadena de intercambio llamando a [**CreateSwapChainForHwnd**](/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgifactory2-createswapchainforhwnd), como se muestra en el ejemplo de código siguiente.
+Obtenga la [**referencia ID3D11Device**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2) que creó anteriormente. Consóndalo a [**IDXGIDevice3**](/windows/desktop/api/dxgi1_3/nn-dxgi1_3-idxgidevice3) (si aún no lo ha hecho) y, a continuación, llame a [**IDXGIDevice::GetAdapter**](/windows/desktop/api/dxgi/nf-dxgi-idxgidevice-getadapter) para adquirir el adaptador de DXGI. Obtenga el generador primario para ese adaptador mediante una llamada a [**IDXGIFactory2::GetParent**](/windows/desktop/api/dxgi/nf-dxgi-idxgiobject-getparent) ([**IDXGIFactory2**](/windows/desktop/api/dxgi1_2/nn-dxgi1_2-idxgifactory2) hereda de [**IDXGIObject**](/windows/desktop/api/dxgi/nn-dxgi-idxgiobject)), ahora puede usar ese generador para crear la cadena de intercambio mediante una llamada a [**CreateSwapChainForHwnd**](/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgifactory2-createswapchainforhwnd), como se muestra en el ejemplo de código siguiente.
 
 
 ```C++
@@ -304,17 +304,17 @@ if (SUCCEEDED(hr))
 
 
 
-Si acaba de empezar, probablemente sea mejor usar la configuración que se muestra aquí. En este momento, si ya está familiarizado con las versiones anteriores de DirectX, puede que esté preguntando: "¿por qué no hemos creado el dispositivo y la cadena de intercambio al mismo tiempo, en lugar de recorrer todas esas clases?" La respuesta es la eficiencia: las cadenas de intercambio son recursos de dispositivo de Direct3D y los recursos de dispositivo están vinculados al dispositivo Direct3D concreto que los creó. Si crea un dispositivo nuevo con una cadena de intercambio nueva, tendrá que volver a crear todos los recursos de dispositivo mediante el nuevo dispositivo Direct3D. Por lo tanto, al crear la cadena de intercambio con el mismo generador (como se mostró anteriormente), podrá volver a crear la cadena de intercambio y seguir usando los recursos de dispositivo Direct3D que ya ha cargado.
+Si acaba de empezar, probablemente sea mejor usar la configuración que se muestra aquí. Ahora, si ya está familiarizado con las versiones anteriores de DirectX, podría preguntar: "¿Por qué no creamos el dispositivo y la cadena de intercambio al mismo tiempo, en lugar de volver a través de todas esas clases?". La respuesta es la eficacia: las cadenas de intercambio son recursos de dispositivo Direct3D y los recursos de dispositivo están asociados al dispositivo Direct3D concreto que los creó. Si crea un dispositivo con una nueva cadena de intercambio, tendrá que volver a crear todos los recursos del dispositivo mediante el nuevo dispositivo Direct3D. Por lo tanto, al crear la cadena de intercambio con la misma fábrica (como se muestra anteriormente), puede volver a crear la cadena de intercambio y seguir usando los recursos de dispositivo Direct3D que ya ha cargado.
 
-Ahora tiene una ventana del sistema operativo, una manera de tener acceso a la GPU y sus recursos, y una cadena de intercambio para mostrar los resultados de la representación. Lo único que queda es conectar todo el conjunto.
+Ahora tiene una ventana del sistema operativo, una manera de acceder a la GPU y sus recursos y una cadena de intercambio para mostrar los resultados de la representación. Lo único que queda es conectar todo el proceso.
 
-## <a name="create-a-render-target-for-drawing"></a>Crear un destino de representación para dibujar
+## <a name="create-a-render-target-for-drawing"></a>Creación de un destino de representación para dibujar
 
-La canalización del sombreador necesita un recurso para dibujar píxeles. La manera más sencilla de crear este recurso es definir un recurso [**ID3D11Texture2D**](/windows/desktop/api/d3d11/nn-d3d11-id3d11texture2d) como un búfer de reserva para que el sombreador de píxeles dibuje en y, a continuación, leer esa textura en la cadena de intercambio.
+La canalización del sombreador necesita un recurso en el que dibujar píxeles. La manera más sencilla de crear este recurso es definir un recurso [**ID3D11Texture2D**](/windows/desktop/api/d3d11/nn-d3d11-id3d11texture2d) como búfer de reserva en el que dibujar el sombreador de píxeles y, a continuación, leer esa textura en la cadena de intercambio.
 
-Para ello, cree una *vista* de representación y destino. En Direct3D, una vista es una manera de tener acceso a un recurso específico. En este caso, la vista permite que el sombreador de píxeles escriba en la textura a medida que completa sus operaciones por píxel.
+Para ello, cree una vista render-target . En Direct3D, una vista es una manera de acceder a un recurso específico. En este caso, la vista permite que el sombreador de píxeles escriba en la textura a medida que completa sus operaciones por píxel.
 
-Echemos un vistazo al código para esto. Al establecer la \_ \_ \_ \_ salida de destino de representación de uso de DXGI en la cadena de intercambio, que permitía usar el recurso de Direct3D subyacente como una superficie de dibujo. Por lo tanto, para obtener la vista de destino de representación, solo necesitamos obtener el búfer de reserva de la cadena de intercambio y crear una vista de destino de presentación enlazada al recurso de búfer de reserva.
+Echemos un vistazo al código para esto. Al establecer DXGI USAGE RENDER TARGET OUTPUT en la cadena de intercambio, esto permitió que el recurso \_ \_ de \_ Direct3D subyacente se usara \_ como superficie de dibujo. Por lo tanto, para obtener la vista de destino de representación, basta con obtener el búfer de reserva de la cadena de intercambio y crear una vista de destino de representación enlazada al recurso de búfer de reserva.
 
 
 ```C++
@@ -334,9 +334,9 @@ m_pBackBuffer->GetDesc(&m_bbDesc);
 
 
 
-Cree también un *búfer de estarcido de profundidad*. Un búfer de estarcido de profundidad es simplemente una forma determinada de recurso [**ID3D11Texture2D**](/windows/desktop/api/d3d11/nn-d3d11-id3d11texture2d) , que normalmente se usa para determinar qué píxeles tienen prioridad de dibujo durante la rasterización en función de la distancia de los objetos de la escena de la cámara. Un búfer de estarcido de profundidad también se puede utilizar para los efectos de estarcido, donde los píxeles específicos se descartan o se omiten durante la rasterización. Este búfer debe tener el mismo tamaño que el destino de representación. Tenga en cuenta que no puede leer o representar en la textura de la galería de símbolos de profundidad del búfer de fotogramas porque la canalización del sombreador la usa exclusivamente antes y durante la rasterización final.
+Cree también un *búfer de galería de símbolos de profundidad*. Un búfer de galería de símbolos de profundidad es simplemente una forma determinada de recurso [**ID3D11Texture2D,**](/windows/desktop/api/d3d11/nn-d3d11-id3d11texture2d) que normalmente se usa para determinar qué píxeles tienen prioridad de dibujo durante la rasterización en función de la distancia de los objetos de la escena desde la cámara. También se puede usar un búfer de galería de símbolos de profundidad para efectos de galería de símbolos, donde se descartan u omiten píxeles específicos durante la rasterización. Este búfer debe tener el mismo tamaño que el destino de representación. Tenga en cuenta que no se puede leer ni representar en la textura de galería de símbolos de profundidad del búfer de marco porque la canalización del sombreador la usa exclusivamente antes y durante la rasterización final.
 
-Cree también una vista para el búfer de estarcido de profundidad como [**ID3D11DepthStencilView**](/windows/desktop/api/d3d11/nn-d3d11-id3d11depthstencilview). La vista indica a la canalización del sombreador cómo interpretar el recurso [**ID3D11Texture2D**](/windows/desktop/api/d3d11/nn-d3d11-id3d11texture2d) subyacente, por lo que si no se proporciona esta vista, no se realiza ninguna prueba de profundidad por píxel y los objetos de la escena pueden parecer un poco dentro del tiempo de espera.
+Cree también una vista para el búfer de galería de símbolos de profundidad como [**ID3D11DepthStencilView**](/windows/desktop/api/d3d11/nn-d3d11-id3d11depthstencilview). La vista indica a la canalización del sombreador cómo interpretar el recurso [**ID3D11Texture2D**](/windows/desktop/api/d3d11/nn-d3d11-id3d11texture2d) subyacente, por lo que si no proporciona esta vista, no se realiza ninguna prueba de profundidad por píxel y los objetos de la escena pueden parecer un poco dentro de la escena como mínimo.
 
 
 ```C++
@@ -366,7 +366,7 @@ m_pd3dDevice->CreateDepthStencilView(
 
 
 
-El último paso es crear una ventanilla. Esto define el rectángulo visible del búfer de reserva que se muestra en la pantalla. puede cambiar la parte del búfer que se muestra en la pantalla cambiando los parámetros de la ventanilla. Este código tiene como destino todo el tamaño de la ventana, o la resolución de pantalla, en el caso de las cadenas de intercambio de pantalla completa. Por diversión, cambie los valores de las coordenadas proporcionadas y observe los resultados.
+El último paso es crear una ventanilla. Esto define el rectángulo visible del búfer de reserva que se muestra en la pantalla; Puede cambiar la parte del búfer que se muestra en la pantalla cambiando los parámetros de la ventanilla. Este código tiene como destino todo el tamaño de la ventana o la resolución de pantalla, en el caso de cadenas de intercambio de pantalla completa. Para que sea divertido, cambie los valores de coordenadas proporcionados y observe los resultados.
 
 
 ```C++
@@ -384,9 +384,9 @@ m_pd3dDeviceContext->RSSetViewports(
 
 
 
-Y eso es cómo pasar de nada a dibujar píxeles en una ventana. A medida que empieza, es una buena idea familiarizarse con el modo en que DirectX, a través de DXGI, administra los recursos principales que necesita para empezar a dibujar píxeles.
+Y así es como se pasa de nada a dibujar píxeles en una ventana. Al empezar, es una buena idea familiarizarse con cómo DirectX, a través de DXGI, administra los recursos principales que necesita para empezar a dibujar píxeles.
 
-A continuación, examinará la estructura de la canalización de gráficos. consulte [Descripción de la canalización de representación de la plantilla de aplicación de DirectX](understand-the-directx-11-2-graphics-pipeline.md).
+A continuación, veremos la estructura de la canalización de gráficos. consulte [Información sobre la canalización de representación de la plantilla de aplicación de DirectX.](understand-the-directx-11-2-graphics-pipeline.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -395,9 +395,9 @@ A continuación, examinará la estructura de la canalización de gráficos. cons
 **Siguiente**
 </dt> <dt>
 
-[Trabajar con sombreadores y recursos del sombreador](work-with-shaders-and-shader-resources.md)
+[Trabajar con sombreadores y recursos de sombreador](work-with-shaders-and-shader-resources.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: c4a9cffe-1be2-4c6a-910d-ebae9632dd33
 title: Funciones de animación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3811f4c0abed5b4e6a64e7744a834640708af581
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 286d0c091a57088f271ebdbf99e8af5e89f3adc0c01adcd17a5af3e8e758261f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104422752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069185"
 ---
 # <a name="animation-functions"></a>Funciones de animación
 
@@ -32,7 +32,7 @@ D3DX proporciona las siguientes funciones de animación.
 
 <dl> <dt>
 
-[Funciones de D3DX](dx9-graphics-reference-d3dx-functions.md)
+[Funciones D3DX](dx9-graphics-reference-d3dx-functions.md)
 </dt> </dl>
 
  

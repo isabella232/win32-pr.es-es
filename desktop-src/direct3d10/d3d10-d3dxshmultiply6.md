@@ -77,9 +77,9 @@ Puntero a coeficientes de salida sh.
 
 ## <a name="remarks"></a>Comentarios
 
-El producto de dos funciones SH del orden N = 6 genera una función SH del orden 2 × *N* - 1 = 11, pero los resultados se truncan. Esto significa que el producto conmuta ( *f* × *g g*× f ) pero no se asocia  =   ( *f* × ( *g* × *h* ) ≠ ( *f* ×  *g* ) × *h* ).
+El producto de dos funciones SH del orden N = 6 genera una función SH del orden 2 × *N* - 1 = 11, pero los resultados se truncan. Esto significa que el producto se desplaza ( *f* × *g* g × f ) pero no se asocia  =   ( *f* × ( *g* × *h* ) ≠ ( *f* × *g* ) × *h* ). 
 
-Esta función usa la ecuación siguiente:
+Esta función usa la siguiente ecuación:
 
 
 ```
@@ -108,7 +108,7 @@ sum_i(y_i(s)*c_i)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

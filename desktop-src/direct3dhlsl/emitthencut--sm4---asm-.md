@@ -1,19 +1,19 @@
 ---
-title: emitThenCut (SM4-ASM)
-description: Equivalente a un comando Emit seguido de un comando CUT. | emitThenCut (SM4-ASM)
+title: emitThenCut (sm4 - asm)
+description: Equivalente a un comando emit seguido de un comando de corte. | emitThenCut (sm4 - asm)
 ms.assetid: 80DE112A-790A-4DDF-A5BE-51F70BD7872C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb5b413ca11e22c7cfc17691fc0a39fe96bf7c0f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ab83fa3eca853a75dca74ef32116e3d13da2dbe76f34fa407f9b0d5f2459d66a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023865"
 ---
-# <a name="emitthencut-sm4---asm"></a>emitThenCut (SM4-ASM)
+# <a name="emitthencut-sm4---asm"></a>emitThenCut (sm4 - asm)
 
-Equivalente a un comando [Emit](emit--sm4---asm-.md) seguido de un comando [CUT](cut--sm4---asm-.md) .
+Equivalente a un [comando de](emit--sm4---asm-.md) emisión seguido de un [comando de](cut--sm4---asm-.md) corte.
 
 
 
@@ -24,11 +24,11 @@ Equivalente a un comando [Emit](emit--sm4---asm-.md) seguido de un comando [CUT]
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este comando es útil cuando se genera de forma consciente el último vértice de una topología.
+Este comando es útil al generar a sabiendas el último vértice de una topología.
 
-Si se han declarado secuencias, debe usar la [ \_ secuencia emitthencut](emitthencut-stream--sm5---asm-.md).
+Si se han declarado secuencias, debe usar [emitthencut \_ stream](emitthencut-stream--sm5---asm-.md).
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -42,7 +42,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -50,12 +50,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -65,7 +65,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

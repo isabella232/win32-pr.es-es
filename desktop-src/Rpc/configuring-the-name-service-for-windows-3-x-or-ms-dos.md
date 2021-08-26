@@ -1,28 +1,28 @@
 ---
-title: Configurar el servicio de nombres para Windows 3. x o MS-DOS
-description: Llamada a procedimiento remoto (RPC) y configurar el servicio de nombres para Windows 3. x o MS-DOS.
+title: Configuración del servicio de nombres para Windows 3.x o MS-DOS
+description: Llamada a procedimiento remoto (RPC) y configuración del servicio de nombres para Windows 3.x o MS-DOS.
 ms.assetid: 7b22a12e-43d0-4e32-a191-d63a56559143
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 533a0d8556f9cc51d0842768d0df1bdd0d553b5d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 24884c782913c47806c702ff129594c6524fe7c0e731561de405f3b6a360c7c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022435"
 ---
-# <a name="configuring-the-name-service-for-windows-3x-or-ms-dos"></a>Configurar el servicio de nombres para Windows 3. x o MS-DOS
+# <a name="configuring-the-name-service-for-windows-3x-or-ms-dos"></a>Configuración del servicio de nombres para Windows 3.x o MS-DOS
 
-Al ejecutar Setup.exe para instalar la biblioteca en tiempo de ejecución de RPC de 16 bits, se le pide que seleccione un proveedor de servicios de nombres:
+Al ejecutar Setup.exe para instalar la biblioteca en tiempo de ejecución rpc de 16 bits, se le pide que seleccione un proveedor de servicios de nombres:
 
--   Si elige **instalar proveedor de servicios de nombres predeterminados**, se instalará el NSP predeterminado, localizador de Microsoft.
--   Si elige **instalar proveedor de servicios de nombres personalizados**, complete el cuadro de diálogo **definir dirección de red** para instalar el DCE servicio de directorio de celdas como NSP. El Servicio de directorio de celdas DCE es el NSP que se usa con servidores DCE.
+-   Si elige Instalar **proveedor de servicios de nombre predeterminado**, se instalará el NSP predeterminado, Microsoft Locator.
+-   Si elige Instalar proveedor de servicios  de nombres **personalizados,** complete el cuadro de diálogo Definir dirección de red para instalar el Servicio de directorio de celdas DCE como el NSP. El Servicio de directorio de celdas DCE es el NSP que se usa con los servidores DCE.
 
-La dirección de red es el nombre del equipo host que ejecuta el demonio NSI (NSID). Este equipo actúa como puerta de enlace al Servicio de directorio de celdas de DCE, pasando llamadas a la función NSI entre equipos que ejecutan sistemas operativos de Microsoft y equipos DCE. La dirección de red puede tener un máximo de 80 caracteres, por ejemplo, 11.1.9.169 es una dirección válida.
+La dirección de red es el nombre del equipo host que ejecuta el demonio NSI (nsid). Este equipo actúa como puerta de enlace a la Servicio de directorio de celdas DCE, pasando llamadas de función NSI entre equipos que ejecutan sistemas operativos de Microsoft y equipos DCE. La dirección de red puede tener 80 caracteres o menos; por ejemplo, 11.1.9.169 es una dirección válida.
 
- 
+ 
 
- 
+ 
 
 
 

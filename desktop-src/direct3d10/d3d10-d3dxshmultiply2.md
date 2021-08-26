@@ -1,7 +1,7 @@
 ---
-description: Calcula el producto de dos funciones de armónicos esféricos (f y g). Ambas funciones son del orden N = 2.
+description: Calcula el producto de dos funciones de armónicas esféricas (f y g). Ambas funciones son del orden N = 2.
 ms.assetid: 9e0942ce-e39d-4147-9472-cda8a97fd390
-title: Función D3DXSHMultiply2 (D3DX10Math. h)
+title: Función D3DXSHMultiply2 (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a72cdf7eb28b06e11b4901ebd048af143dfbdb5c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c6fba685a763a00e529e70b7c0f08a97706f3c5f2be4dba7c923ed5b4b102742
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070005"
 ---
-# <a name="d3dxshmultiply2-function-d3dx10mathh"></a>Función D3DXSHMultiply2 (D3DX10Math. h)
+# <a name="d3dxshmultiply2-function-d3dx10mathh"></a>Función D3DXSHMultiply2 (D3DX10Math.h)
 
-Calcula el producto de dos funciones de armónicos esféricos (*f* y *g*). Ambas funciones son del orden N = 2.
+Calcula el producto de dos funciones de armónicas esféricas (*f* y *g*). Ambas funciones son del orden N = 2.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,44 +42,44 @@ FLOAT* D3DXSHMultiply2(
 
 <dl> <dt>
 
-*pOut* \[ de\]
+*pOut* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a los coeficientes SH de salida: la función base *Y* LM se almacenan en l ² + *m* + l. El orden *N* determina la longitud de la matriz, donde siempre debe haber un coeficiente de *N*².
+Puntero a los coeficientes sh de salida: la función base *Y* lm se almacena en lntes + *m* + l. El orden *N* determina la longitud de la matriz, donde siempre debe haber *N* coeficientes mientos.
 
 </dd> <dt>
 
-*PF* \[ de\]
+*pF* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Los coeficientes SH de entrada para la primera función.
+Coeficientes sh de entrada para la primera función.
 
 </dd> <dt>
 
-*PG* \[ de\]
+*pG* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Segundo conjunto de coeficientes SH de entrada.
+Segundo conjunto de coeficientes sh de entrada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a los coeficientes de salida SH.
+Puntero a coeficientes de salida sh.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El producto de dos funciones SH de orden N = 2 genera una función SH de orden 2 × *N* -1 = 3, pero los resultados se truncan. Esto significa que el producto se desactivará ( *f* × *g*  =  *g* × *f* ), pero no se asocia ( *f* × (*g* × *h*) ≠ ( *f* × *g*) × *h* ).
+El producto de dos funciones SH del orden N = 2 genera una función SH del orden 2 × *N* - 1 = 3, pero los resultados se truncan. Esto significa que el producto se desplaza ( *f* × *g* g × f ) pero no se asocia  =   ( *f* × (*g* × *h*) ≠ ( *f* × *g*) × *h* ). 
 
-Esta función usa la siguiente ecuación:
+Esta función usa la ecuación siguiente:
 
 
 ```
@@ -88,7 +88,7 @@ pOut[i] = int(y_i(s) * f(s) * g(s))
 
 
 
-donde y \_ son las funciones de base de l l, donde f (s) y g (s) usan la siguiente función SH:
+donde y i(s) es la función base de ith SH y donde \_ f(s) y g(s) usan la siguiente función SH:
 
 
 ```
@@ -103,8 +103,8 @@ sum_i(y_i(s)*c_i)
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

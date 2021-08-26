@@ -1,22 +1,22 @@
 ---
-description: En el ejemplo siguiente se muestra cómo codificar un controlador de devolución de llamada simple para recibir Windows Installer mensajes de progreso durante una instalación.
+description: En el ejemplo siguiente se muestra cómo codificar un controlador de devolución de llamada simple para recibir Windows progreso del instalador durante una instalación.
 ms.assetid: ae1589ae-0ad7-4314-8bf1-c8ad51eac5a2
-title: Controlar los mensajes de progreso mediante MsiSetExternalUI
+title: Control de mensajes de progreso mediante MsiSetExternalUI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30cab15cbbed030ecaa43f7c034df4661555243d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87a0d91a38bc89511a3119a30bdd3b229b1094ce2aa834c17ea84a9cc6aabb59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044225"
 ---
-# <a name="handling-progress-messages-using-msisetexternalui"></a>Controlar los mensajes de progreso mediante MsiSetExternalUI
+# <a name="handling-progress-messages-using-msisetexternalui"></a>Control de mensajes de progreso mediante MsiSetExternalUI
 
-En el ejemplo siguiente se muestra cómo codificar un controlador de devolución de llamada simple para recibir Windows Installer mensajes de progreso durante una instalación.
+En el ejemplo siguiente se muestra cómo codificar un controlador de devolución de llamada simple para recibir Windows progreso del instalador durante una instalación.
 
 > [!Note]  
-> Cuando se usa [**MsiSetExternalUI**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia) con un tipo de mensaje INSTALLMESSAGE \_ FILESINUSE, el mensaje enviado a la función de controlador de interfaz de usuario externa no contiene información sobre los archivos en uso o los títulos de ventana que usa el cuadro de diálogo [FILESINUSE](filesinuse-dialog.md) . Debe usar [**MsiSetExternalUIRecord**](/windows/desktop/api/Msi/nf-msi-msisetexternaluirecord) para obtener información.
+> Cuando se usa [**MsiSetExternalUI**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia) con un tipo de mensaje INSTALLMESSAGE FILESINUSE, el mensaje enviado a la función de controlador de interfaz de usuario externa no contiene información sobre los archivos en uso o los títulos de ventana utilizados por el cuadro de diálogo \_ [FilesInUse.](filesinuse-dialog.md) Debe usar [**MsiSetExternalUIRecord para**](/windows/desktop/api/Msi/nf-msi-msisetexternaluirecord) obtener información.
 
  
 

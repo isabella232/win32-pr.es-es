@@ -1,7 +1,7 @@
 ---
-description: Carga el archivo de recursos de apphelp.
+description: Carga el archivo de recursos apphelp.
 ms.assetid: fca50e00-9324-410a-a572-69441f332593
-title: SdbOpenApphelpResourceFile función)
+title: Función SdbOpenApphelpResourceFile
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 2f1dfb1695e25bfb82e01ffa4f9eac4e245a6ffa
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ab865a29e0879119ca50cf4177aa7649bd82a83e70c07e1b7068a5d8fcd2cc30
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044995"
 ---
-# <a name="sdbopenapphelpresourcefile-function"></a>SdbOpenApphelpResourceFile función)
+# <a name="sdbopenapphelpresourcefile-function"></a>Función SdbOpenApphelpResourceFile
 
-Carga el archivo de recursos de apphelp.
+Carga el archivo de recursos apphelp.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,10 +39,10 @@ HMODULE WINAPI SdbOpenApphelpResourceFile(
 
 <dl> <dt>
 
-*pwszACResourceFile* \[ en, opcional\]
+*pwszACResourceFile* \[ in, opcional\]
 </dt> <dd>
 
-Ruta de acceso al archivo de recursos. Si este parámetro es **null**, se abre el archivo dll de recursos local.
+Ruta de acceso al archivo de recursos. Si este parámetro es **NULL,** se abre el archivo DLL del recurso local.
 
 </dd> </dl>
 
@@ -56,8 +56,8 @@ La función devuelve un identificador al archivo de recursos abierto.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

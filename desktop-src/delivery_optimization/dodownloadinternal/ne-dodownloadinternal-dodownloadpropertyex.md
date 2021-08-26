@@ -1,8 +1,8 @@
 ---
-title: Enumeración DODownloadPropertyEx
-description: Especifica el identificador de las propiedades extendidas para la operación de descarga.
+title: ENUMERACIÓN DODownloadPropertyEx
+description: Especifica el identificador de las propiedades extendidas para la operación de descarga de DO.
 keywords:
-- Enumeración DODownloadPropertyEx, DODownloadPropertyEx
+- ENUMERACIÓN DODownloadPropertyEx, DODownloadPropertyEx
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/29/2019
-ms.openlocfilehash: 5df0f53778d9059ef8767f5b8052940847e36c00
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5ec26d845fd6df2bfe0e84fffed0979c39e1971244788c9dfe5ddd3a0c0beca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990385"
 ---
-# <a name="dodownloadpropertyex-enumeration"></a>Enumeración DODownloadPropertyEx
+# <a name="dodownloadpropertyex-enumeration"></a>ENUMERACIÓN DODownloadPropertyEx
 
 > [!IMPORTANT]
-> La enumeración **DODownloadPropertyEx** está en desuso. En su lugar, use la enumeración [DODownloadProperty](../deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadproperty.md) con [IDODownload:: GetProperty](../do/nf-do-idodownload-getproperty.md) y [IDODownload:: SetProperty](../do/nf-do-idodownload-setproperty.md).
+> La **enumeración DODownloadPropertyEx** está en desuso. En su lugar, use [la enumeración DODownloadProperty](../deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadproperty.md) [con IDODownload::GetProperty](../do/nf-do-idodownload-getproperty.md) y [IDODownload::SetProperty](../do/nf-do-idodownload-setproperty.md).
 
-La enumeración **DODownloadPropertyEx** especifica el identificador de las propiedades extendidas para la operación de descarga. Esta enumeración la usa la interfaz **IDODownloadInternal** y se utiliza un valor **Variant** para obtener y establecer el valor de la propiedad.
+La **enumeración DODownloadPropertyEx** especifica el identificador de las propiedades extendidas para la operación de descarga de DO. La interfaz **IDODownloadInternal** usa esta enumeración y se usa un valor **VARIANT** para obtener y establecer el valor de propiedad.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef enum _DODownloadPropertyEx
@@ -47,10 +47,10 @@ typedef enum _DODownloadPropertyEx
 | Requisito | Value |
 |-|-|
 | DODownloadPropertyEx_UpdateId | Reservado. No utilizar. |
-| DODownloadPropertyEx_CorrelationVector | Opcional. Establece un vector de correlación específico para fines de telemetría. El tipo de variante es VT_BSTR. |
+| DODownloadPropertyEx_CorrelationVector | Opcional. Establece un vector de correlación específico para fines de telemetría. El tipo VARIANT VT_BSTR. |
 | DODownloadPropertyEx_DecryptionInfo | Reservado. No utilizar. |
-| DODownloadPropertyEx_IntegrityCheckInfo | Opcional de solo escritura. Establece la ubicación del archivo hash de elemento (PHF), que se usa para realizar comprobaciones de integridad en tiempo de ejecución en el contenido descargado. El tipo de variante es VT_BSTR. |
-| DODownloadPropertyEx_IntegrityCheckMandatory | Opcional. Establece una marca booleana que indica si el uso del archivo hash de la pieza (PHF) es obligatorio. Si VARIANT_TRUE, la descarga se anulará cuando se haya producido un error en la comprobación de integridad. El tipo de variante es VT_BOOL. |
+| DODownloadPropertyEx_IntegrityCheckInfo | Solo escritura opcional. Establece la ubicación del archivo hash por pieza (PHF), que usa do para realizar comprobaciones de integridad en tiempo de ejecución en el contenido descargado. El tipo VARIANT VT_BSTR. |
+| DODownloadPropertyEx_IntegrityCheckMandatory | Opcional. Establece una marca booleana que indica si el uso del archivo hash de pieza (PHF) es obligatorio. Si VARIANT_TRUE, la descarga se anulará una vez que se haya fallado la comprobación de integridad. El tipo VARIANT VT_BOOL. |
 | DODownloadPropertyEx_TotalSizeBytes | Reservado. No utilizar. |
 | DODownloadPropertyEx_TempLocalFileUsage | Reservado. No utilizar. |
 
@@ -58,6 +58,6 @@ typedef enum _DODownloadPropertyEx
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo compatible** | Solo aplicaciones Win32 de Windows 10, versión 1809 \[\] |
-| **Servidor mínimo compatible** | Windows Server, versión 1809 \[ Win32 Applications Only\] |
-| **Header** | DODownloadInternal. h |
+| **Cliente mínimo compatible** | \[Windows 10, versión 1809 Solo aplicaciones Win32\] |
+| **Servidor mínimo compatible** | Windows Servidor, versión 1809 \[ Solo aplicaciones Win32\] |
+| **Header** | DODownloadInternal.h |

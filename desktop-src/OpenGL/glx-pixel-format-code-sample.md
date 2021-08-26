@@ -1,25 +1,25 @@
 ---
-title: GLX ejemplo de código de formato de píxeles
-description: En el ejemplo de código siguiente se muestra cómo un programa OpenGL de sistema de ventana X usa funciones de formato visual/píxel de GLX.
+title: Ejemplo de código de formato de píxel GLX
+description: En el ejemplo de código siguiente se muestra cómo un programa OpenGL del sistema de ventanas X usa funciones de formato visual/píxel de GLX.
 ms.assetid: f01193a9-c0ff-4399-a86e-06bb4603b3f1
 keywords:
-- trasladar a OpenGL, píxeles
-- Portabilidad de OpenGL, píxeles
-- Sistema X ventana, píxeles
-- GLX funciones, píxeles
-- pixels, ejemplo GLX
+- porting to OpenGL,pixels
+- Porte de OpenGL, píxeles
+- X Window System,pixels
+- Funciones GLX, píxeles
+- píxeles, ejemplo GLX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f0ab6464d54e696c136a6c987b94124f52b0ee2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 312b95fb2ff4719c9ecda863b67ac926905b09d0e4b8aecbcc673a03c18c307a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035395"
 ---
-# <a name="glx-pixel-format-code-sample"></a>GLX ejemplo de código de formato de píxeles
+# <a name="glx-pixel-format-code-sample"></a>Ejemplo de código de formato de píxel GLX
 
-En el ejemplo de código siguiente se muestra cómo un programa OpenGL de sistema de ventana X usa funciones de formato visual/píxel de GLX.
+En el ejemplo de código siguiente se muestra cómo un programa OpenGL del sistema de ventanas X usa funciones de formato visual/píxel de GLX.
 
 
 ```C++
@@ -38,11 +38,11 @@ static int attributes[] = {GLX_DEPTH_SIZE, 16, GLX_DOUBLEBUFFER, None};
 
 
 
-El visual se puede usar para crear una ventana y un contexto de representación.
+El objeto visual se puede usar para crear una ventana y un contexto de representación.
 
- 
+ 
 
- 
+ 
 
 
 

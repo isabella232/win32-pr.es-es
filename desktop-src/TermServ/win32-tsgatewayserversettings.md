@@ -1,11 +1,11 @@
 ---
-title: Win32_TSGatewayServerSettings (clase)
-description: Proporciona métodos y propiedades para ver y configurar la configuración del servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+title: Win32_TSGatewayServerSettings clase
+description: Proporciona métodos y propiedades para ver y configurar las opciones Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto).
 ms.assetid: f772bf71-68ef-4345-8123-f6ad50ee4d61
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSGatewayServerSettings de clase, se describe
+- Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -39,16 +39,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c0fb9b93f75c47760da8778e4aef8bed7f4e022
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 00c199b4b8e98832dcc8dbe65b8fc2ef636df71c8bd6e3c096670e6333f83a75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008534"
 ---
-# <a name="win32_tsgatewayserversettings-class"></a>\_Clase Win32 TSGatewayServerSettings
+# <a name="win32_tsgatewayserversettings-class"></a>Clase \_ TSGatewayServerSettings de Win32
 
-Proporciona métodos y propiedades para ver y configurar la configuración del servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto). Un administrador puede utilizar esta clase para configurar un conjunto de protocolos, el conjunto de eventos que se escribirán en el registro de eventos y el número máximo de conexiones a través de la puerta de enlace de escritorio remoto.
+Proporciona métodos y propiedades para ver y configurar las opciones Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto). Un administrador puede usar esta clase para configurar un conjunto de protocolos, el conjunto de eventos que se escribirán en el registro de eventos y el número máximo de conexiones a través de puerta de enlace de Escritorio remoto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -91,40 +91,40 @@ La **clase \_ TSGatewayServerSettings de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSGatewayServerSettings** tiene estos métodos.
+La **clase \_ TSGatewayServerSettings de Win32** tiene estos métodos.
 
 
 
 | Método                                                                                                                                             | Descripción                                                                                                                                                                                                                                                      |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Configuración**](configure-win32-tsgatewayserversettings.md)                                                                                       | Configura los valores de IIS y RPC requeridos por el servicio de puerta de enlace de escritorio remoto.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                               |
-| [**EnableCentralCAP**](enablecentralcap-win32-tsgatewayserversettings.md)                                                                         | Habilita o deshabilita la propiedad **CentralCAPEnabled** , que controla si se usan los servidores de la Directiva de autorización de conexión (Cap) central escritorio remoto para controlar las directivas de autorización de conexión para este servidor.<br/>                    |
+| [**Configurar**](configure-win32-tsgatewayserversettings.md)                                                                                       | Configura los valores de IIS y RPC requeridos por el servicio puerta de enlace de Escritorio remoto.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                               |
+| [**EnableCentralCAP**](enablecentralcap-win32-tsgatewayserversettings.md)                                                                         | Habilita o deshabilita la propiedad **CentralCAPEnabled,** que controla si los servidores centrales de la directiva de autorización de conexión Escritorio remoto (CAP de Escritorio remoto) se usan para controlar las directivas de autorización de conexión para este servidor.<br/>                    |
 | [**EnableLogEvent**](enablelogevent-win32-tsgatewayserversettings.md)                                                                             | Habilita o deshabilita el registro del tipo de evento especificado.<br/>                                                                                                                                                                                              |
-| [**EnableOnlyConsentCapableClients**](enableonlyconsentcapableclients-win32-tsgatewayserversettings.md)                                           | Establece la propiedad **OnlyConsentCapableClients** .<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                                      |
-| [**EnableRequestSOH**](win32-tsgatewayserversettings-enablerequestsoh.md)                                                                         | Este método no se admite a partir de Windows Server 2016.<br/> **Windows server 2012 R2, Windows server 2012, Windows server 2008 R2 y Windows server 2008:** Habilita o deshabilita las solicitudes de un informe de mantenimiento (SoH).<br/> <br/> |
-| [**EnableTransport**](enabletransport-win32-tsgatewayserversettings.md)                                                                           | Habilita o deshabilita el transporte especificado.<br/> **Windows server 2008 R2 y Windows server 2008:** Este método no está disponible antes de Windows Server 2012.<br/>                                                                                  |
+| [**EnableOnlyConsentCapableClients**](enableonlyconsentcapableclients-win32-tsgatewayserversettings.md)                                           | Establece la **propiedad OnlyConsentCapableClients.**<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                                      |
+| [**EnableRequestS ENABLE**](win32-tsgatewayserversettings-enablerequestsoh.md)                                                                         | Este método no se admite a partir de Windows Server 2016.<br/> **Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 y Windows Server 2008:** Habilita o deshabilita las solicitudes de una instrucción de mantenimiento (SoH).<br/> <br/> |
+| [**EnableTransport**](enabletransport-win32-tsgatewayserversettings.md)                                                                           | Habilita o deshabilita el transporte especificado.<br/> **Windows Server 2008 R2 y Windows Server 2008:** Este método no está disponible antes de Windows Server 2012.<br/>                                                                                  |
 | [**EnumAuthenticationPlugins**](enumauthenticationplugins-win32-tsgatewayserversettings.md)                                                       | Enumera todos los complementos de autenticación registrados.<br/> **Windows Server 2008:** Este método no está disponible.<br/>                                                                                                                                  |
 | [**EnumAuthorizationPlugins**](enumauthorizationplugins-win32-tsgatewayserversettings.md)                                                         | Enumera todos los complementos de autorización registrados.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                                     |
-| [**GetIPAndPort**](getipandport-win32-tsgatewayserversettings.md)                                                                                 | Obtiene la dirección IP de escucha y el número de puerto para el transporte especificado.<br/> **Windows server 2008 R2 y Windows server 2008:** Este método no está disponible antes de Windows Server 2012.<br/>                                                 |
+| [**GetIPAndPort**](getipandport-win32-tsgatewayserversettings.md)                                                                                 | Obtiene la dirección IP de escucha y el número de puerto para el transporte especificado.<br/> **Windows Server 2008 R2 y Windows Server 2008:** Este método no está disponible antes de Windows Server 2012.<br/>                                                 |
 | [**GetLogEventName**](getlogeventname-win32-tsgatewayserversettings.md)                                                                           | Devuelve el nombre del evento de registro para el índice de eventos de registro especificado.<br/>                                                                                                                                                                                         |
-| [**GetProtocolName**](getprotocolname-win32-tsgatewayserversettings.md)                                                                           | Devuelve el nombre de protocolo para el índice de protocolo especificado.<br/>                                                                                                                                                                                           |
+| [**GetProtocolName**](getprotocolname-win32-tsgatewayserversettings.md)                                                                           | Devuelve el nombre del protocolo para el índice de protocolo especificado.<br/>                                                                                                                                                                                           |
 | [**IsLogEventEnabled**](islogeventenabled-win32-tsgatewayserversettings.md)                                                                       | Indica si el tipo de registro de eventos especificado está habilitado.<br/>                                                                                                                                                                                            |
-| [**IsTransportEnabled**](istransportenabled-win32-tsgatewayserversettings.md)                                                                     | Determina si el transporte especificado está habilitado.<br/> **Windows server 2008 R2 y Windows server 2008:** Este método no está disponible antes de Windows Server 2012.<br/>                                                                        |
+| [**IsTransportEnabled**](istransportenabled-win32-tsgatewayserversettings.md)                                                                     | Determina si el transporte especificado está habilitado.<br/> **Windows Server 2008 R2 y Windows Server 2008:** Este método no está disponible antes de Windows Server 2012.<br/>                                                                        |
 | [**QueryCertContext**](win32-tsgatewayserversettings-querycertcontext.md)                                                                         | Indica si el certificado especificado está instalado.<br/>                                                                                                                                                                                             |
 | [**RecycleRpcApplicationPools**](recyclerpcapplicationpools-win32-tsgatewayserversettings.md)                                                     | Recicla los grupos de aplicaciones RPC en IIS.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                                            |
-| [**RefreshCertContext**](win32-tsgatewayserversettings-refreshcertcontext.md)                                                                     | Actualiza el certificado usado por el servidor de puerta de enlace de escritorio remoto.<br/>                                                                                                                                                                                      |
-| [**SetAuthenticationPlugin**](setauthenticationplugin-win32-tsgatewayserversettings.md)                                                           | Establece el complemento de autenticación actual para el servidor de puerta de enlace de escritorio remoto.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                    |
-| [**SetAuthenticationPluginAndRecycleRpcApplicationPools**](setauthenticationpluginandrecyclerpcapplicationpools-win32-tsgatewayserversettings.md) | Establece el complemento de autenticación actual para el servidor de puerta de enlace de escritorio remoto y recicla los grupos de aplicaciones RPC en IIS.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                      |
-| [**SetAuthorizationPlugin**](setauthorizationplugin-win32-tsgatewayserversettings.md)                                                             | Establece el complemento de autorización actual para el servidor de puerta de enlace de escritorio remoto.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                     |
-| [**SetCertificate**](setcertificate-win32-tsgatewayserversettings.md)                                                                             | Establece el hash del certificado para el enlace HTTPS en el puerto 443 en IIS.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                       |
-| [**SetCertificateACL**](setcertificateacl-win32-tsgatewayserversettings.md)                                                                       | Establece las listas de control de acceso (ACL) del certificado para este servidor.<br/>                                                                                                                                                                                     |
-| [**SetDefaultPluginsAndRecycleRpcApplicationPools**](setdefaultpluginsandrecyclerpcapplicationpools-win32-tsgatewayserversettings.md)             | Establece los complementos de autenticación y autorización actuales para el servidor de puerta de enlace de escritorio remoto y recicla los grupos de aplicaciones RPC en IIS.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                   |
-| [**SetEnforceChannelBinding**](setenforcechannelbinding-win32-tsgatewayserversettings.md)                                                         | Establece la propiedad **EnforceChannelBinding** .<br/> **Windows server 2008 R2 y Windows server 2008:** Este método no está disponible antes de Windows Server 2012.<br/>                                                                                  |
-| [**SetIPAndPort**](setipandport-win32-tsgatewayserversettings.md)                                                                                 | Establece la dirección IP de escucha y el número de puerto para el transporte especificado.<br/> **Windows server 2008 R2 y Windows server 2008:** Este método no está disponible antes de Windows Server 2012.<br/>                                                    |
-| [**SetMaxConnections**](setmaxconnections-win32-tsgatewayserversettings.md)                                                                       | Establece el número máximo de conexiones permitidas a través de la puerta de enlace de escritorio remoto. Este método cambia las propiedades **MaxConnections** y **UnlimitedConnections** .<br/>                                                                                                |
-| [**SetSslBridging**](setsslbridging-win32-tsgatewayserversettings.md)                                                                             | Establece el tipo de protocolo de puente SSL que va a usar el servidor de puerta de enlace de escritorio remoto.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                    |
-| [**TSGRemoveAdminMsg**](tsgremoveadminmsg-win32-tsgatewayserversettings.md)                                                                       | Quita el mensaje administrativo del servidor de puerta de enlace.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                            |
-| [**TSGRemoveConsentMsg**](tsgremoveconsentmsg-win32-tsgatewayserversettings.md)                                                                   | Quita el mensaje administrativo del servidor de puerta de enlace.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                            |
+| [**RefreshCertContext**](win32-tsgatewayserversettings-refreshcertcontext.md)                                                                     | Actualiza el certificado que usa el servidor de puerta de enlace de Escritorio remoto.<br/>                                                                                                                                                                                      |
+| [**SetAuthenticationPlugin**](setauthenticationplugin-win32-tsgatewayserversettings.md)                                                           | Establece el complemento de autenticación actual para el servidor de puerta de enlace de Escritorio remoto.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                    |
+| [**SetAuthenticationPluginAndRecycleRpcApplicationPools**](setauthenticationpluginandrecyclerpcapplicationpools-win32-tsgatewayserversettings.md) | Establece el complemento de autenticación actual para el servidor de puerta de enlace de Escritorio remoto y recicla los grupos de aplicaciones RPC en IIS.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                      |
+| [**SetAuthorizationPlugin**](setauthorizationplugin-win32-tsgatewayserversettings.md)                                                             | Establece el complemento de autorización actual para el servidor de puerta de enlace de Escritorio remoto.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                     |
+| [**SetCertificate**](setcertificate-win32-tsgatewayserversettings.md)                                                                             | Establece el hash de certificado para el enlace HTTPS en el puerto 443 en IIS.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                       |
+| [**SetCertificateACL**](setcertificateacl-win32-tsgatewayserversettings.md)                                                                       | Establece las listas de control de acceso (ACL) de certificado para este servidor.<br/>                                                                                                                                                                                     |
+| [**SetDefaultPluginsAndRecycleRpcApplicationPools**](setdefaultpluginsandrecyclerpcapplicationpools-win32-tsgatewayserversettings.md)             | Establece los complementos de autenticación y autorización actuales para el servidor de puerta de enlace de Escritorio remoto y recicla los grupos de aplicaciones RPC en IIS.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                   |
+| [**SetEnforceChannelBinding**](setenforcechannelbinding-win32-tsgatewayserversettings.md)                                                         | Establece la **propiedad EnforceChannelBinding.**<br/> **Windows Server 2008 R2 y Windows Server 2008:** Este método no está disponible antes de Windows Server 2012.<br/>                                                                                  |
+| [**SetIPAndPort**](setipandport-win32-tsgatewayserversettings.md)                                                                                 | Establece la dirección IP de escucha y el número de puerto para el transporte especificado.<br/> **Windows Server 2008 R2 y Windows Server 2008:** Este método no está disponible antes de Windows Server 2012.<br/>                                                    |
+| [**SetMaxConnections**](setmaxconnections-win32-tsgatewayserversettings.md)                                                                       | Establece el número máximo de conexiones permitidas a través de puerta de enlace de Escritorio remoto. Este método cambia las **propiedades MaxConnections** **y UnlimitedConnections.**<br/>                                                                                                |
+| [**SetSslBridging**](setsslbridging-win32-tsgatewayserversettings.md)                                                                             | Establece el tipo de puente SSL que usará el servidor de puerta de enlace de Escritorio remoto.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                    |
+| [**TSGRemoveAdminMsg**](tsgremoveadminmsg-win32-tsgatewayserversettings.md)                                                                       | Quita el mensaje administrativo para el servidor de puerta de enlace.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                            |
+| [**TSGRemoveConsentMsg**](tsgremoveconsentmsg-win32-tsgatewayserversettings.md)                                                                   | Quita el mensaje administrativo para el servidor de puerta de enlace.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                            |
 | [**TSGStoreAdminMsg**](tsgstoreadminmsg-win32-tsgatewayserversettings.md)                                                                         | Actualiza el mensaje administrativo para el servidor de puerta de enlace.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                            |
 | [**TSGStoreConsentMsg**](tsgstoreconsentmsg-win32-tsgatewayserversettings.md)                                                                     | Actualiza el mensaje de consentimiento para el servidor de puerta de enlace.<br/> **Windows Server 2008:** Este método no está disponible antes de Windows Server 2008 R2.<br/>                                                                                                   |
 
@@ -147,7 +147,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La hora de finalización del mensaje administrativo.
+Hora de finalización del mensaje administrativo.
 
 **Windows Server 2008:** Esta propiedad no está disponible antes de Windows Server 2008 R2.
 
@@ -162,7 +162,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La hora de inicio del mensaje administrativo.
+Hora de inicio del mensaje administrativo.
 
 **Windows Server 2008:** Esta propiedad no está disponible antes de Windows Server 2008 R2.
 
@@ -177,7 +177,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El texto del mensaje administrativo.
+Texto del mensaje administrativo.
 
 **Windows Server 2008:** Esta propiedad no está disponible antes de Windows Server 2008 R2.
 
@@ -207,7 +207,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La descripción del complemento de autenticación actual.
+Descripción del complemento de autenticación actual.
 
 **Windows Server 2008:** Esta propiedad no está disponible antes de Windows Server 2008 R2.
 
@@ -252,7 +252,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La descripción del complemento de autorización actual.
+Descripción del complemento de autorización actual.
 
 **Windows Server 2008:** Esta propiedad no está disponible antes de Windows Server 2008 R2.
 
@@ -282,20 +282,20 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si se usan los servidores de CAP de RD central para controlar este servidor. Esta propiedad se puede cambiar llamando al método [**EnableCentralCAP**](enablecentralcap-win32-tsgatewayserversettings.md) .
+Especifica si se usan servidores CAP de Escritorio remoto centrales para controlar este servidor. Esta propiedad se puede cambiar llamando al [**método EnableCentralCAP.**](enablecentralcap-win32-tsgatewayserversettings.md)
 
 </dd> <dt>
 
 **CertHash**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el hash del certificado para el enlace HTTPS en el puerto 443 en IIS.
+Especifica el hash de certificado para el enlace HTTPS en el puerto 443 en IIS.
 
 **Windows Server 2008:** Esta propiedad no está disponible antes de Windows Server 2008 R2.
 
@@ -325,9 +325,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si se aplica el enlace de canal para el transporte HTTP. Este valor de propiedad se puede cambiar mediante el método [**SetEnforceChannelBinding**](setenforcechannelbinding-win32-tsgatewayserversettings.md) .
+Indica si se aplica el enlace de canal para el transporte HTTP. Este valor de propiedad se puede cambiar mediante el [**método SetEnforceChannelBinding.**](setenforcechannelbinding-win32-tsgatewayserversettings.md)
 
-**Windows server 2008 R2 y Windows server 2008:** Esta propiedad no está disponible antes de Windows Server 2012.
+**Windows Server 2008 R2 y Windows Server 2008:** Esta propiedad no está disponible antes de Windows Server 2012.
 
 </dd> <dt>
 
@@ -340,7 +340,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si la configuración de IIS y RPC requerida por el servicio de puerta de enlace de escritorio remoto está configurada.
+Especifica si se configuran los valores de IIS y RPC requeridos por el servicio puerta de enlace de Escritorio remoto.
 
 **Windows Server 2008:** Esta propiedad no está disponible antes de Windows Server 2008 R2.
 
@@ -349,7 +349,7 @@ Especifica si la configuración de IIS y RPC requerida por el servicio de puerta
 **MaxConnections**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -358,14 +358,14 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Devuelve el número máximo de conexiones permitidas a través de la puerta de enlace de escritorio remoto. Esta propiedad se puede establecer mediante el método [**SetMaxConnections**](setmaxconnections-win32-tsgatewayserversettings.md) .
+Devuelve el número máximo de conexiones que se permiten a través de puerta de enlace de Escritorio remoto. Esta propiedad se puede establecer mediante el [**método SetMaxConnections.**](setmaxconnections-win32-tsgatewayserversettings.md)
 
 </dd> <dt>
 
 **MaximumAllowedConnectionsBySku**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -378,7 +378,7 @@ Número máximo de conexiones que permite la unidad de almacén (SKU).
 **MaxLogEvents**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -391,13 +391,13 @@ Devuelve el número máximo de eventos de registro.
 **MaxProtocols**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de protocolos admitidos por la puerta de enlace de escritorio remoto.
+Número de protocolos admitidos por puerta de enlace de Escritorio remoto.
 
 </dd> <dt>
 
@@ -410,13 +410,13 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si solo se permite que los clientes con capacidad de consentimiento se conecten a la puerta de enlace de escritorio remoto.
+Especifica si solo los clientes que pueden recibir mensajes de consentimiento pueden conectarse a la puerta de enlace de Escritorio remoto.
 
 **Windows Server 2008:** Esta propiedad no está disponible antes de Windows Server 2008 R2.
 
 <dt>
 
-distinto
+Distinto
 </dt> <dd>
 
 Solo los clientes compatibles con mensajes de consentimiento pueden conectarse.
@@ -426,13 +426,13 @@ Solo los clientes compatibles con mensajes de consentimiento pueden conectarse.
 cero
 </dt> <dd>
 
-Los clientes que no son compatibles con los mensajes de consentimiento también pueden conectarse.
+Los clientes que no son compatibles con mensajes de consentimiento también pueden conectarse.
 
 </dd> </dl>
 
 </dd> <dt>
 
-**RequestSOH**
+**RequestSHH**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -443,9 +443,9 @@ Tipo de acceso: solo lectura
 
 Esta propiedad no se admite a partir de Windows Server 2016.
 
-* * Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 y Windows Server 2008: * *
+**Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 y Windows Server 2008: **
 
-Especifica si el servidor debe solicitar un informe de mantenimiento (SoH) del cliente. Esta propiedad se puede cambiar mediante el método [**EnableRequestSOH**](win32-tsgatewayserversettings-enablerequestsoh.md) .
+Especifica si el servidor debe solicitar una instrucción de estado (SoH) al cliente. Esta propiedad se puede cambiar mediante el [**método EnableRequestS EXECUTE.**](win32-tsgatewayserversettings-enablerequestsoh.md)
 
 </dd> <dt>
 
@@ -465,13 +465,13 @@ Nombre de la SKU.
 **SslBridging**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el tipo de protocolo de puente SSL que va a usar el servidor de puerta de enlace de escritorio remoto. Puede ser uno de los valores siguientes.
+Especifica qué tipo de puente SSL va a usar el servidor de puerta de enlace de Escritorio remoto. Puede ser uno de los siguientes valores.
 
 **Windows Server 2008:** Esta propiedad no está disponible antes de Windows Server 2008 R2.
 
@@ -480,21 +480,21 @@ Especifica el tipo de protocolo de puente SSL que va a usar el servidor de puert
 0
 </dt> <dd>
 
-Sin puentes SSL.
+Sin protocolo de puente SSL.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-Puente de HTTPS a HTTP.
+Protocolo de puente HTTPS a HTTP.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-Puente de HTTPS a HTTPS.
+Protocolo de puente https a HTTPS.
 
 </dd> </dl>
 
@@ -509,15 +509,15 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si se permite un número ilimitado de conexiones a través de la puerta de enlace de escritorio remoto. Esta propiedad se puede establecer mediante el método [**SetMaxConnections**](setmaxconnections-win32-tsgatewayserversettings.md) .
+Indica si se permite un número ilimitado de conexiones a través de puerta de enlace de Escritorio remoto. Esta propiedad se puede establecer mediante el [**método SetMaxConnections.**](setmaxconnections-win32-tsgatewayserversettings.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar esta clase, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para usar esta clase.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -527,8 +527,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -537,22 +537,22 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayConnection**](win32-tsgatewayconnection.md)
+[**TSGatewayConnection de Win32 \_**](win32-tsgatewayconnection.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayConnectionAuthorizationPolicy**](win32-tsgatewayconnectionauthorizationpolicy.md)
+[**\_TSGatewayConnectionAuthorizationPolicy de Win32**](win32-tsgatewayconnectionauthorizationpolicy.md)
 </dt> <dt>
 
 [**Win32 \_ TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayRADIUSServer**](win32-tsgatewayradiusserver.md)
+[**TSGatewayRADIUSServer de Win32 \_**](win32-tsgatewayradiusserver.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayResourceAuthorizationPolicy**](win32-tsgatewayresourceauthorizationpolicy.md)
+[**\_TSGatewayResourceAuthorizationPolicy de Win32**](win32-tsgatewayresourceauthorizationpolicy.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayResourceGroup**](win32-tsgatewayresourcegroup.md)
+[**TSGatewayResourceGroup de Win32 \_**](win32-tsgatewayresourcegroup.md)
 </dt> </dl>
 
  

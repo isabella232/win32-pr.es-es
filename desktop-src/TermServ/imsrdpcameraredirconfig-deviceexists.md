@@ -1,11 +1,11 @@
 ---
 title: Propiedad DeviceExists de la interfaz IMsRdpCameraRedirConfig
-description: Especifica si el dispositivo de cámara existe actualmente (es decir, si la cámara está conectada).
+description: Especifica si el dispositivo de cámara existe actualmente (es decir, la cámara está conectada).
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad DeviceExists
-- Propiedad DeviceExists Servicios de Escritorio remoto, interfaz IMsRdpCameraRedirConfig
-- Servicios de Escritorio remoto de la interfaz IMsRdpCameraRedirConfig, propiedad DeviceExists
+- Propiedad DeviceExists Servicios de Escritorio remoto
+- Propiedad DeviceExists Servicios de Escritorio remoto , interfaz IMsRdpCameraRedirConfig
+- Interfaz IMsRdpCameraRedirConfig Servicios de Escritorio remoto , propiedad DeviceExists
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 368b2d46e6dfc2c32c0bb294edceda31f8a58f4e
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 617c91491d88736ca60218d71f9dd5aa02ad0f9faeefdda6b872ba9262cec587
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104494176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990665"
 ---
-# <a name="imsrdpcameraredirconfigdeviceexists-property"></a>IMsRdpCameraRedirConfig::D propiedad eviceExists
+# <a name="imsrdpcameraredirconfigdeviceexists-property"></a>IMsRdpCameraRedirConfig::D eviceExists
 
-Especifica si el dispositivo de cámara existe actualmente (es decir, si la cámara está conectada).
+Especifica si el dispositivo de cámara existe actualmente (es decir, la cámara está conectada).
 
 Esta propiedad es de solo lectura.
 
@@ -40,7 +40,7 @@ HRESULT get_DeviceExists(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor que indica si el dispositivo de cámara existe actualmente (es decir, si la cámara está conectada).
+Valor que indica si el dispositivo de cámara existe actualmente (es decir, la cámara está conectada).
 
 ## <a name="requirements"></a>Requisitos
 

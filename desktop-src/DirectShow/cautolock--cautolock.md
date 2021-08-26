@@ -1,7 +1,7 @@
 ---
-description: Método de destructor. El destructor desbloquea el objeto de sección crítica.
+description: Método destructor. El destructor desbloquea el objeto de sección crítica.
 ms.assetid: 1148613e-03de-4c40-b7e5-cf5e9ca80f27
-title: CAutoLock. ~ CAutoLock (Wxutil. h)
+title: Destructor CAutoLock.~CAutoLock (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4bace2c4a7c79755249e78fbecd0238e6f5961bd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 81ccad647e47f5805c8cdc7bc070c336864ec455275396631338d8265d5b144c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057535"
 ---
-# <a name="cautolockcautolock-destructor"></a>CAutoLock. ~ CAutoLock (destructor)
+# <a name="cautolockcautolock-destructor"></a>Destructor CAutoLock.~CAutoLock
 
-Método de destructor. El destructor desbloquea el objeto de sección crítica.
+Método destructor. El destructor desbloquea el objeto de sección crítica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ Método de destructor. El destructor desbloquea el objeto de sección crítica.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ Método de destructor. El destructor desbloquea el objeto de sección crítica.
 
 <dl> <dt>
 
-[**Clase CAutoLock**](cautolock.md)
+[**CAutoLock (clase)**](cautolock.md)
 </dt> </dl>
 
  

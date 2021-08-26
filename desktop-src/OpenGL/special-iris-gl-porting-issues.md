@@ -1,45 +1,45 @@
 ---
-title: Problemas de migración del libro de contabilidad de IRIS especial
-description: Problemas de migración del libro de contabilidad de IRIS especial
+title: Problemas especiales de porte de IRIS GL
+description: Problemas especiales de porte de IRIS GL
 ms.assetid: dcf7967a-2867-4443-a1c8-8335c6fe016a
 keywords:
-- OpenGL en Windows, migración de la contabilidad de IRIS
-- trasladar a OpenGL, IRIS GL
-- Portabilidad de OpenGL, IRIS GL
+- OpenGL on Windows,IRIS GL porting
+- porting to OpenGL,IRIS GL
+- Porte de OpenGL, IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1273a873f3a39a5d237f9a5845a72f87156e001c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0ac9a7262bf00681c270cfe085ce8ac75e05b60eb8702a189f7d3ad36d2855f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034705"
 ---
-# <a name="special-iris-gl-porting-issues"></a>Problemas de migración del libro de contabilidad de IRIS especial
+# <a name="special-iris-gl-porting-issues"></a>Problemas especiales de porte de IRIS GL
 
-En los temas siguientes se describen las técnicas para portar partes específicas del código de la contabilidad de IRIS a código OpenGL.
+En los temas siguientes se describen técnicas para portear partes específicas del código DE IRIS GL al código OpenGL.
 
--   [Trasladar greset](porting-greset.md)
--   [Trasladar funciones de "obtener" de IRIS GL](porting-iris-gl-get-functions.md)
--   [Trasladar código que requiere una posición de gráficos actual](porting-code-that-requires-a-current-graphics-position.md)
--   [Trasladar funciones de dibujo](porting-drawing-functions.md)
--   [Trasladar el código de color, sombreado y Writemask](porting-color--shading--and-writemask-code.md)
--   [Trasladar operaciones de píxeles](porting-pixel-operations.md)
--   [Comandos de cueing y niebla de profundidad de portabilidad](porting-depth-cueing-and-fog-commands.md)
--   [Trasladar funciones de curva y superficie](porting-curve-and-surface-functions.md)
--   [Trasladar funciones de suavizado de contorno](porting-antialiasing-functions.md)
--   [Trasladar llamadas del búfer de acumulación](porting-accumulation-buffer-calls.md)
--   [Trasladar llamadas de plano de estarcido](porting-stencil-plane-calls.md)
--   [Portabilidad de listas de presentación](porting-display-lists.md)
--   [Portabilidad de los conjuntos, enlaces y conjuntos](porting-defs--binds--and-sets.md)
--   [Trasladar funciones de iluminación y de materiales](porting-lighting-and-materials-functions.md)
--   [Trasladar funciones de textura](porting-texture-functions.md)
--   [Trasladar funciones de picking](porting-picking-functions.md)
--   [Trasladar funciones de comentarios](porting-feedback-functions.md)
+-   [Porting greset](porting-greset.md)
+-   [Porting IRIS GL "Get" Functions](porting-iris-gl-get-functions.md)
+-   [Porting Code that Requires a Current Graphics Position](porting-code-that-requires-a-current-graphics-position.md)
+-   [Porte de funciones de dibujo](porting-drawing-functions.md)
+-   [Porting Color, Shading, and Writemask Code](porting-color--shading--and-writemask-code.md)
+-   [Porting Pixel Operations](porting-pixel-operations.md)
+-   [Porting Depth Cueing and Fog Commands](porting-depth-cueing-and-fog-commands.md)
+-   [Porting Curve and Surface Functions](porting-curve-and-surface-functions.md)
+-   [Porting Antialiasing Functions](porting-antialiasing-functions.md)
+-   [Porte de llamadas de búfer de acumulación](porting-accumulation-buffer-calls.md)
+-   [Porte de llamadas de plano de galería de símbolos](porting-stencil-plane-calls.md)
+-   [Porting Display Lists](porting-display-lists.md)
+-   [Portar defs, binds y sets](porting-defs--binds--and-sets.md)
+-   [Porting Lighting and Materials Functions](porting-lighting-and-materials-functions.md)
+-   [Porte de funciones de textura](porting-texture-functions.md)
+-   [Porting Picking Functions](porting-picking-functions.md)
+-   [Porting Feedback Functions](porting-feedback-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

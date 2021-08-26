@@ -1,22 +1,22 @@
 ---
-description: XMUSHORT2 describe el vector a2D para almacenar valores normalizados sin signo como enteros de 16 bits sin signo, (tipo UInt16 \_ t).
+description: XMUSHORT2 describe el vector a2D para almacenar valores normalizados sin signo como enteros de 16 bits sin signo (tipo uint16 \_ t).
 ms.assetid: 20e1c812-2c0b-483e-a9fd-e4188b04a024
-title: Extensiones de XMUSHORT2
+title: Extensiones XMUSHORT2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e2b53f9340b00f289c6363876ca831b46b15621
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9ee8398aa4cba71c8c2313654f377d067c99f9985e3692dab4886582e754377
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022011"
 ---
-# <a name="xmushort2-extensions"></a>Extensiones de XMUSHORT2
+# <a name="xmushort2-extensions"></a>Extensiones XMUSHORT2
 
-[**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2) describe el vector a2D para almacenar valores normalizados sin signo como enteros de 16 bits sin signo, (tipo `uint16_t` ).
+[**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2) describe el vector a2D para almacenar valores normalizados sin signo como enteros de 16 bits sin signo( tipo `uint16_t` ).
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: El método SetWaiting incrementa el número de subprocesos en espera.
+description: El método SetWaiting incrementa el recuento de subprocesos en espera.
 ms.assetid: 4aec6177-fb32-44be-a58e-41a4f4aaf4f2
-title: Método CBaseAllocator. SetWaiting (Amfilter. h)
+title: Método CBaseAllocator.SetWaiting (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 92cba22e128a76f7884050d74a7819142c696dc9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 674528b6da53b7835e437afac9a0564f91785b2f9a13f132e87a6763b80881c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057465"
 ---
-# <a name="cbaseallocatorsetwaiting-method"></a>CBaseAllocator. SetWaiting, método
+# <a name="cbaseallocatorsetwaiting-method"></a>CBaseAllocator.SetWaiting (método)
 
-El `SetWaiting` método incrementa el recuento de subprocesos en espera.
+El `SetWaiting` método incrementa el número de subprocesos en espera.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método incrementa la variable miembro [**CBaseAllocator:: m \_ lWaiting**](cbaseallocator-m-lwaiting.md) . Si un subproceso está bloqueado en el método [**CBaseAllocator:: getBuffer**](cbaseallocator-getbuffer.md) , el asignador llama a `SetWaiting` y, a continuación, espera a que se Señalice el semáforo [**CBaseAllocator:: m \_ hSem**](cbaseallocator-m-hsem.md) . El método [**CBaseAllocator:: ReleaseBuffer**](cbaseallocator-releasebuffer.md) señala el semáforo y establece *m \_ lWaiting* en cero.
+Este método incrementa la variable [**miembro CBaseAllocator::m \_ lWaiting.**](cbaseallocator-m-lwaiting.md) Si un subproceso está bloqueado en el método [**CBaseAllocator::GetBuffer,**](cbaseallocator-getbuffer.md) el asignador llama a y espera a que se señale el `SetWaiting` semáforo de [**CBaseAllocator::m \_ hSem.**](cbaseallocator-m-hsem.md) El [**método CBaseAllocator::ReleaseBuffer**](cbaseallocator-releasebuffer.md) señala el semáforo y establece *m \_ lWaiting* de nuevo en cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método incrementa la variable miembro [**CBaseAllocator:: m \_ lWaiting**]
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método incrementa la variable miembro [**CBaseAllocator:: m \_ lWaiting**]
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

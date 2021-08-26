@@ -1,19 +1,19 @@
 ---
 title: Permitir y bloquear aplicaciones y usuarios
-description: En el código de ejemplo siguiente se muestra cómo agregar un filtro que se evalúa por identificador de usuario o de aplicación.
+description: El código de ejemplo siguiente muestra cómo agregar un filtro que se evalúa por identificador de usuario o aplicación.
 ms.assetid: f1ca483e-cf60-499f-8a4a-29656ed9503a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f00ddd6f1d5f7a7515abbdb32047c530dd5c3db4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8aa513809b294451235c5e14cf8b7c79bf41ca754b27134e9366ffce77b4c7cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078495"
 ---
 # <a name="permitting-and-blocking-applications-and-users"></a>Permitir y bloquear aplicaciones y usuarios
 
-En el código de ejemplo siguiente se muestra cómo agregar un filtro que se evalúa según el identificador de usuario o de aplicación.
+El código de ejemplo siguiente muestra cómo agregar un filtro que se evalúa por identificador de usuario o aplicación.
 
 
 ```C++
@@ -152,12 +152,12 @@ CLEANUP:
 
 <dl> <dt>
 
-[**Condiciones de filtrado disponibles en cada nivel de filtrado**](filtering-conditions-available-at-each-filtering-layer.md)
+[**Condiciones de filtrado disponibles en cada capa de filtrado**](filtering-conditions-available-at-each-filtering-layer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

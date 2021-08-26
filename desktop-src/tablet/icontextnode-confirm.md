@@ -1,7 +1,7 @@
 ---
-description: Modifica el tipo de confirmación, que controla lo que el objeto IInkAnalyzer puede cambiar sobre IContextNode.
+description: Modifica el tipo de confirmación, que controla lo que el objeto IInkAnalyzer puede cambiar sobre el IContextNode.
 ms.assetid: a506f27e-3909-453e-a2f3-10d4c04d78a4
-title: 'IContextNode:: confirm (método) (IACom. h)'
+title: Método IContextNode::Confirm (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 3703bb735c0707c412b7c1e41c43819904d83ce8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 248eb78f364f7e938d78846c3e830cc170587961b81dfedcc046e10c59e4fd18
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008455"
 ---
-# <a name="icontextnodeconfirm-method"></a>IContextNode:: confirm (método)
+# <a name="icontextnodeconfirm-method"></a>IContextNode::Confirm (método)
 
-Modifica el tipo de confirmación, que controla lo que el objeto [**IInkAnalyzer**](iinkanalyzer.md) puede cambiar sobre [**IContextNode**](icontextnode.md).
+Modifica el tipo de confirmación, que controla lo que [**el objeto IInkAnalyzer**](iinkanalyzer.md) puede cambiar sobre [**IContextNode**](icontextnode.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,30 +39,30 @@ HRESULT Confirm(
 
 <dl> <dt>
 
-*confirmedType* \[ de\]
+*confirmedType* \[ En\]
 </dt> <dd>
 
-[**ConfirmationType**](confirmationtype.md) que se aplica al nodo.
+ConfirmationType [**que**](confirmationtype.md) se aplica al nodo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use este método para permitir que el usuario final confirme que [**IInkAnalyzer**](iinkanalyzer.md) ha analizado correctamente los trazos. Después de llamar a **IContextNode:: CONFIRM** , **IInkAnalyzer** no cambiará los objetos [**IContextNode**](icontextnode.md) para esos trazos durante el análisis posterior.
+Use este método para permitir que el usuario final confirme que [**IInkAnalyzer**](iinkanalyzer.md) ha analizado correctamente los trazos. Después de llamar a **IContextNode::Confirm,** **IInkAnalyzer** no cambiará los objetos [**IContextNode**](icontextnode.md) para esos trazos durante el análisis posterior.
 
-Use **IContextNode:: CONFIRM** cuando el usuario haya confirmado los resultados del análisis y no desee que [**IInkAnalyzer**](iinkanalyzer.md) cambie un [**IContextNode**](icontextnode.md) durante el análisis posterior. Por ejemplo, si el usuario escribe la palabra "en" y, a continuación, la aplicación llama al [**método IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md), el analizador de tinta genera un nodo InkWord con el valor de "a". Si el usuario agrega entonces "me" después de "to" como una palabra y la aplicación llama de nuevo al **método IInkAnalyzer:: Analyze** , el analizador de tinta puede quitar el nodo InkWord anterior y crear un nuevo nodo InkWord con el valor "Tomé". Sin embargo, si después de la primera llamada al **método IInkAnalyzer:: Analyze**, la aplicación llama a **IContextNode:: CONFIRM** en el nodo InkWord de "to" con el valor [**ConfirmationType**](confirmationtype.md) **NodeTypeAndProperties**, antes de que el usuario agregue "me", cuando la aplicación llama al **método IInkAnalyzer:: Analyze**, el analizador de tinta no quita ni cambia el nodo "to". En su lugar, el analizador de tinta puede reconocer dos nodos InkWord para "to" y "me".
+Use **IContextNode::Confirm** cuando el usuario haya confirmado los resultados del análisis y no desee que [**IInkAnalyzer**](iinkanalyzer.md) cambie un [**IContextNode**](icontextnode.md) durante el análisis posterior. Por ejemplo, si el usuario escribe la palabra "to" y, a continuación, la aplicación llama al método [**IInkAnalyzer::Analyze**](iinkanalyzer-analyze.md), el analizador de entrada de lápiz genera un nodo InkWord con el valor "to". Si el usuario agrega "me" después de "to" como una palabra y la aplicación llama de nuevo al método **IInkAnalyzer::Analyze,** el analizador de entrada de lápiz puede quitar el nodo InkWord anterior y crear un nuevo nodo InkWord con el valor "tome". Sin embargo, si después de la primera llamada a **IInkAnalyzer::Analyze**(Método), la aplicación llama a **IContextNode::Confirm** en el nodo InkWord para "to" con el valor [**ConfirmationType**](confirmationtype.md) **NodeTypeAndProperties**, antes de que el usuario agrega "me", después, cuando la aplicación llama al método **IInkAnalyzer::Analyze**, el analizador de entrada de lápiz no quita ni cambia el nodo "a". En su lugar, el analizador de entrada de lápiz puede reconocer dos nodos InkWord para "to" y "me".
 
-[**IContextNode**](icontextnode.md) solo puede confirmar objetos de tipo InkWord y InkDrawing (consulte [tipos de nodos de contexto](context-node-types.md)). **IContextNode:: CONFIRM** devuelve **E \_ INVALIDARG** cuando el nodo no es un nodo hoja.
+[**IContextNode solo**](icontextnode.md) puede confirmar objetos de tipo InkWord e InkDrawing (vea [Tipos de nodos de contexto).](context-node-types.md) **IContextNode::Confirm** devuelve **E \_ INVALIDARG** cuando el nodo no es un nodo hoja.
 
-El [**método IInkAnalyzer:: RemoveStroke**](iinkanalyzer-removestroke.md) y [**IInkAnalyzer:: RemoveStrokes**](iinkanalyzer-removestrokes.md) no confirman ningún nodo del que se quiten los datos de trazo.
+[**El método IInkAnalyzer::RemoveStroke y**](iinkanalyzer-removestroke.md) el método [**IInkAnalyzer::RemoveStrokes**](iinkanalyzer-removestrokes.md) no confirman ningún nodo del que quiten los datos del trazo.
 
-[**IContextNode:: SetStrokes**](icontextnode-setstrokes.md), [**IInkAnalyzer:: SetStrokesType**](iinkanalyzer-setstrokestype.md)y [**IInkAnalyzer:: SetStrokeType**](iinkanalyzer-setstroketype.md) devuelven el **núcleo \_ E \_ INVALIDOPERATION** si el objeto [**IContextNode**](icontextnode.md) ya está confirmado.
+[**IContextNode::SetStrokes**](icontextnode-setstrokes.md), [**IInkAnalyzer::SetStrokesType**](iinkanalyzer-setstrokestype.md)e [**IInkAnalyzer::SetStrokeType**](iinkanalyzer-setstroketype.md) **devuelven CORE \_ E \_ INVALIDOPERATION** si el objeto [**IContextNode**](icontextnode.md) ya está confirmado.
 
-[**IContextNode:: ReparentStrokeByIdToNode**](icontextnode-reparentstrokebyidtonode.md) devuelve un error si se confirma el nodo de origen o de destino.
+[**IContextNode::ReparentStrokeByIdToNode**](icontextnode-reparentstrokebyidtonode.md) devuelve un error si se confirma el nodo de origen o de destino.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,9 +70,9 @@ El [**método IInkAnalyzer:: RemoveStroke**](iinkanalyzer-removestroke.md) y [**
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -87,7 +87,7 @@ El [**método IInkAnalyzer:: RemoveStroke**](iinkanalyzer-removestroke.md) y [**
 [**IContextNode::IsConfirmed**](icontextnode-isconfirmed.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

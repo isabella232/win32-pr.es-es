@@ -1,9 +1,9 @@
 ---
 title: Elemento xmlTypes (TypeListType)
-description: Define una lista de tipos de salida que el servicio usa para determinar cómo se representa un tipo de datos de entrada.
+description: Define una lista de tipos de salida que el servicio usa para determinar cómo representar un tipo de datos de entrada.
 ms.assetid: 780f522c-d819-4b74-b7eb-4d154eeddebc
 keywords:
-- elemento xmlTypes EventLog
+- Elemento xmlTypes EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76ed163f1c947b7cf0481c7aa2b7e5c125f36b57
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bdbeff03626903a77ca9eb42b3b47969dbf84b66e0496f90ae2b279b13655141
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005675"
 ---
 # <a name="xmltypes-typelisttype-element"></a>Elemento xmlTypes (TypeListType)
 
-Define una lista de tipos de salida que el servicio usa para determinar cómo se representa un tipo de datos de entrada.
+Define una lista de tipos de salida que el servicio usa para determinar cómo representar un tipo de datos de entrada.
 
 ``` syntax
 <xs:element name="xmlTypes"
@@ -30,7 +30,7 @@ Define una lista de tipos de salida que el servicio usa para determinar cómo se
  />
 ```
 
-El elemento **xmlTypes** se define mediante el tipo complejo de [**TypeListType**](eventmanifestschema-typelisttype-complextype.md) .
+El **elemento xmlTypes** se define mediante el [**tipo complejo TypeListType.**](eventmanifestschema-typelisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **xmlTypes** se define mediante el tipo complejo de [**TypeListType*
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **xmlTypes** se define mediante el tipo complejo de [**TypeListType*
 **Elemento primario**
 </dt> <dt>
 
-[**tipos (MetadataType)**](eventmanifestschema-types-metadatatype-element.md)
+[**types (MetadataType)**](eventmanifestschema-types-metadatatype-element.md)
 </dt> </dl>
 
  

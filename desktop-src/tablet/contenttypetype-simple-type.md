@@ -1,7 +1,7 @@
 ---
-description: Define el tipo que define los valores válidos para el atributo de tipo del lector de diario del elemento de contenido \[ \] .
+description: Define el tipo que define los valores válidos para el atributo Type del elemento Content \[ Lector de \] diario.
 ms.assetid: f38f7a7e-a517-4156-9c60-e1b6d35baa07
-title: Tipo simple de ContentTypeType
+title: Tipo simple ContentTypeType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 55297be38dfd75f9ca11bfb6213cd99d52d2a7e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83b49427e65bb5190554a0c995bec119de1230f0baab869ea4c5ce48dc5616f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008975"
 ---
-# <a name="contenttypetype-simple-type"></a>Tipo simple de ContentTypeType
+# <a name="contenttypetype-simple-type"></a>Tipo simple ContentTypeType
 
-Define el tipo que define los valores válidos para el atributo de *tipo* del [ \[ lector \] de diario del elemento de contenido](content-element--journal-reader.md).
+Define el tipo que define los valores válidos para el *atributo Type* del elemento Content Lector [de \[ diario. \]](content-element--journal-reader.md)
 
 ``` syntax
 <xs:simpleType name="ContentTypeType">
@@ -37,15 +37,15 @@ Define el tipo que define los valores válidos para el atributo de *tipo* del [ 
 
 ## <a name="patterns"></a>Patrones
 
-El tipo simple **ContentTypeType** es una cadena restringida por el siguiente patrón:
+El **tipo simple ContentTypeType** es una cadena que está restringida por el siguiente patrón:
 
 -   `Normal|Inert`
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores válidos son "normal" y "inerte".
+Los valores válidos son "Normal" e "Inert".
 
-Si el tipo es "inerte", el contenido contenido es una página de diario que es el "fondo" de solo lectura/no editable para el documento. Esto ocurre cuando se crea un documento con el controlador de impresora Escritura de notas de Journal.
+Si el tipo es "Inert", el contenido contenido es una página de diario que es el "fondo" de solo lectura o no editable del documento. Esto sucede cuando se crea un documento mediante el controlador Escritura de notas de Journal impresora.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,7 +53,7 @@ Si el tipo es "inerte", el contenido contenido es una página de diario que es e
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

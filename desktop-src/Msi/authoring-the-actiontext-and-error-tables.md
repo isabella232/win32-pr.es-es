@@ -1,39 +1,39 @@
 ---
-description: Las especificaciones de ejemplo incluyen el envío de mensajes de ActionData cuando una acción personalizada crea o quita una cuenta de usuario y notifica un error si no se puede crear una cuenta.
+description: Las especificaciones de ejemplo incluyen el envío de mensajes ActionData cuando una acción personalizada crea o quita una cuenta de usuario e informa de un error si no se puede crear una cuenta.
 ms.assetid: ee90fe3d-51f4-433b-a5ce-950a03e1d8fb
-title: Creación de las tablas de error y de ActionText
+title: Creación de las tablas ActionText y Error
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e20646a90ca76c159a88bdd8a6d026ff10845da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a7b89c8150e3767841fe914cf55fc7be8c92e8cecf8f54f8486993d955349be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045405"
 ---
-# <a name="authoring-the-actiontext-and-error-tables"></a>Creación de las tablas de error y de ActionText
+# <a name="authoring-the-actiontext-and-error-tables"></a>Creación de las tablas ActionText y Error
 
-Las especificaciones de ejemplo incluyen el envío de mensajes de ActionData cuando una acción personalizada crea o quita una cuenta de usuario y notifica un error si no se puede crear una cuenta.
+Las especificaciones de ejemplo incluyen el envío de mensajes ActionData cuando una acción personalizada crea o quita una cuenta de usuario e informa de un error si no se puede crear una cuenta.
 
-Escriba las siguientes entradas en la tabla de ActionText para proporcionar información usada por los mensajes de ActionText.
+Escriba las siguientes entradas en la tabla ActionText para proporcionar información que usan los mensajes ActionText.
 
-[Tabla de ActionText](actiontext-table.md)
+[ActionText (tabla)](actiontext-table.md)
 
 
 
 | Acción            | Descripción                                                       | Plantilla                          |
 |-------------------|-------------------------------------------------------------------|-----------------------------------|
-| ProcessAccounts   | Generar acciones para crear cuentas de usuario en el equipo local. | Cuenta: \[ 1 \] , atributos: \[ 2\] |
-| CreateAccount     | Creando una cuenta de usuario en el equipo local.                      | Cuenta: \[ 1\]                    |
-| RemoveAccount     | Quitando la cuenta de usuario del equipo local.                    | Cuenta: \[ 1\]                    |
+| ProcessAccounts   | Generación de acciones para crear cuentas de usuario en el equipo local. | Cuenta: \[ 1 \] , Atributos: \[ 2\] |
+| CreateAccount     | Creación de una cuenta de usuario en el equipo local.                      | Cuenta: \[ 1\]                    |
+| RemoveAccount     | Quitar la cuenta de usuario del equipo local.                    | Cuenta: \[ 1\]                    |
 | RollbackAccount   | Revertir la creación de cuentas de usuario en el equipo local. | Cuenta: \[ 1\]                    |
-| UninstallAccounts | Generar acciones para quitar cuentas de usuario en el equipo local. | Cuenta: \[ 1\]                    |
+| UninstallAccounts | Generación de acciones para quitar cuentas de usuario en el equipo local. | Cuenta: \[ 1\]                    |
 
 
 
  
 
-Escriba las siguientes entradas en la tabla de errores para proporcionar la información que utiliza el informe de errores.
+Escriba las siguientes entradas en la tabla Error para proporcionar información utilizada por los informes de errores.
 
 [Tabla de errores](error-table.md)
 
@@ -41,16 +41,16 @@ Escriba las siguientes entradas en la tabla de errores para proporcionar la info
 
 | Error | Message                                                                        |
 |-------|--------------------------------------------------------------------------------|
-| 25001 | No se puede crear la cuenta \[ de usuario ' 2 \] ' en el equipo local. Código de error: \[ 3 \] . |
-| 25002 | La cuenta de usuario ' \[ 2 \] ' ya existe en el equipo local.                      |
-| 25003 | No se puede quitar la cuenta \[ de usuario ' 2 \] ' en el equipo local. Código de error: \[ 3 \] . |
-| 25004 | La cuenta de usuario ' \[ 2 \] ' no existe en el equipo local.                      |
+| 25001 | No se puede crear la cuenta de usuario \[ '2' \] en el equipo local. Código de error: \[ 3 \] . |
+| 25002 | La cuenta de usuario \[ "2" \] ya existe en el equipo local.                      |
+| 25003 | No se puede quitar la cuenta de usuario \[ '2' \] en el equipo local. Código de error: \[ 3 \] . |
+| 25004 | La cuenta de usuario \[ '2' \] no existe en el equipo local.                      |
 
 
 
  
 
-Continúe con [la creación de la tabla InstallExecuteSequence](authoring-the-installexecutesequence-table.md).
+Continúe con [Creación de la tabla InstallExecuteSequence](authoring-the-installexecutesequence-table.md).
 
  
 

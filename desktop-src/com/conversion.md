@@ -1,45 +1,45 @@
 ---
 title: Conversión
-description: Lo utiliza el cuadro de diálogo convertir para determinar los formatos que una aplicación puede leer y escribir.
+description: Usado por el cuadro de diálogo Convertir para determinar los formatos que una aplicación puede leer y escribir.
 ms.assetid: ff12c4b3-9548-4135-aaf4-d8b49f9aed41
 keywords:
-- Clave del registro de conversión COM
+- COM de clave del Registro de conversión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce7f3a87594513c37a558d21fb7d001fc393763d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 272090fb48b214daecd6350e6966350861366341fae055298a2fb2c90c9fb983
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993494"
 ---
 # <a name="conversion"></a>Conversión
 
-Lo utiliza el cuadro de diálogo **convertir** para determinar los formatos que una aplicación puede leer y escribir.
+Usado por el **cuadro de** diálogo Convertir para determinar los formatos que una aplicación puede leer y escribir.
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      Conversion
-         Readable
-            Main = rformat, ...
-         ReadWritable
-            Main = rwformat, ...
+   {CLSID}
+      Conversion
+         Readable
+            Main = rformat, ...
+         ReadWritable
+            Main = rwformat, ...
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La información de conversión se usa en el cuadro de diálogo **convertir** para determinar qué formatos puede leer y escribir una aplicación. Un formato de archivo delimitado por comas se indica mediante un número si es uno de los formatos del portapapeles definido en Windows. h. Una cadena indica que el formato no es uno definido en Windows. h (privado). En este caso, el formato legible y grabable es CF \_ Outline (Private).
+El cuadro de diálogo Convertir usa **la** información de conversión para determinar qué formatos puede leer y escribir una aplicación. Un número indica un formato de archivo delimitado por comas si es uno de los formatos del Portapapeles definidos en Windows.h. Una cadena indica que el formato no está definido en Windows.h (privado). En este caso, el formato legible y grabable es CF \_ OUTLINE (privado).
 
-El valor *rformat* especifica el formato de archivo que una aplicación puede leer (convertir de).
+El *valor rformat* especifica el formato de archivo que puede leer una aplicación (desde el que se convierte).
 
-El valor *rwformat* especifica el formato de archivo que una aplicación puede leer y escribir (activar como).
+El *valor rwformat* especifica el formato de archivo que una aplicación puede leer y escribir (activar como).
 
- 
+ 
 
- 
+ 
 
 
 

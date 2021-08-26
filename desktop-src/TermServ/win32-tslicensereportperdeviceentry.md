@@ -1,11 +1,11 @@
 ---
-title: Win32_TSLicenseReportPerDeviceEntry (clase)
-description: Proporciona detalles acerca de la licencia de acceso de cliente por dispositivo de Servicios de Escritorio remoto con errores (RDS \ 160; CAL por dispositivo).
+title: Win32_TSLicenseReportPerDeviceEntry clase
+description: Proporciona detalles sobre el error Servicios de Escritorio remoto licencia de acceso de cliente por dispositivo (RDS \ 160; Cal por dispositivo).
 ms.assetid: b26f2518-439c-4562-9492-a0cfa60c457a
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSLicenseReportPerDeviceEntry clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSLicenseReportPerDeviceEntry de clase, se describe
+- Win32_TSLicenseReportPerDeviceEntry clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -22,16 +22,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a120d477ff03675f160d94f1506f59cdf1462fa1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dfbcdad271a346820b318c94bed7ce6b9b9527d3fdd7df9cc3f1dc9d9a97aae3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008425"
 ---
-# <a name="win32_tslicensereportperdeviceentry-class"></a>\_Clase Win32 TSLicenseReportPerDeviceEntry
+# <a name="win32_tslicensereportperdeviceentry-class"></a>Clase \_ TSLicenseReportPerDeviceEntry de Win32
 
-Proporciona detalles acerca de la licencia de acceso de cliente por dispositivo de Servicios de Escritorio remoto con errores (CAL por dispositivo de RDS).
+Proporciona detalles sobre el error Servicios de Escritorio remoto licencia de acceso de cliente por dispositivo (CAL de RDS por dispositivo).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -71,34 +71,34 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el tipo de CAL emitida. Será uno de los valores siguientes.
+Especifica el tipo de CAL emitido. Este será uno de los siguientes valores.
 
-"CAL por dispositivo de TS integrada"
+"CAL de TS por dispositivo integrada"
 
-"CAL por dispositivo de TS"
+"TS per Device CAL"
 
-"CAL de conector de Internet de TS"
+"TS Internet Connector CAL"
 
-"CAL por usuario de TS"
+"TS per User CAL"
 
-"CAL por dispositivo de TS o RDS"
+"CAL de TS o RDS por dispositivo"
 
-"CAL por usuario de TS o RDS"
+"CAL de TS o RDS por usuario"
 
-"Licencia de suscripción por dispositivo de VDI Standard Suite"
+"Licencia de suscripción de VDI Standard Suite per Device"
 
-"Licencia de suscripción por dispositivo de VDI Premium Suite"
+"Licencia de suscripción de VDI Premium Suite por dispositivo"
 
-"CAL por dispositivo de RDS"
+"CAL de RDS por dispositivo"
 
-"CAL por usuario de RDS"
+"CAL de RDS por usuario"
 
 </dd> <dt>
 
 **ExpirationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **DATETIME**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -117,28 +117,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Versión de Servicios de Escritorio remoto para la que se emitió la CAL por usuario de RDS. Será uno de los valores siguientes.
+La versión de Servicios de Escritorio remoto para la que se emitió la CAL de RDS por usuario. Este será uno de los siguientes valores.
 
 <dt>
 
 "Windows Server 2012"
 </dt> <dd>
 
-En esta licencia solo se admiten servidores que ejecuten Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008.
+Con esta licencia solo se admiten los servidores Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008.
 
 </dd> <dt>
 
 "Windows Server 7"
 </dt> <dd>
 
-Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008 R2 o Windows Server 2008.
+Solo los servidores que Windows Server 2008 R2 o Windows Server 2008 son compatibles con esta licencia.
 
 </dd> <dt>
 
 "Windows Server 2008"
 </dt> <dd>
 
-Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008.
+Solo los servidores que Windows Server 2008 se admiten con esta licencia.
 
 </dd> </dl>
 
@@ -147,13 +147,13 @@ Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008.
 **ProductVersionID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de la versión del producto para el paquete de claves de licencia de Servicios de Escritorio remoto.
+Identificador de versión del producto para el Servicios de Escritorio remoto de claves de licencia.
 
 <dt>
 
@@ -181,14 +181,14 @@ Windows Server 2008
 1
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
 0
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> </dl>
 
@@ -203,10 +203,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-El identificador de hardware del equipo.
+Identificador de hardware del equipo.
 
 </dd> <dt>
 
@@ -219,7 +219,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del equipo para el que se intentó la emisión de licencias.
+Nombre del equipo para el que se intentó emitir la licencia.
 
 </dd> </dl>
 
@@ -232,7 +232,7 @@ Nombre del equipo para el que se intentó la emisión de licencias.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

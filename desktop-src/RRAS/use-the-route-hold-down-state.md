@@ -1,19 +1,19 @@
 ---
-title: Usar el estado de Hold-Down de ruta
-description: En el código de ejemplo siguiente se muestra cómo marcar un destino para el estado de suspensión y cómo crear una enumeración de destino que incluya rutas que están en estado de suspensión.
+title: Uso del estado de Hold-Down ruta
+description: En el código de ejemplo siguiente se muestra cómo marcar un destino para el estado de retención y cómo crear una enumeración de destino que incluya rutas que se encuentran en estado de retención.
 ms.assetid: bdc97fad-4805-4432-96ca-9225a51c92eb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bcdff6b05f254b03d5aff30b177135702d64f3db
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: efed37238afff1606585f044b1f8366213a79dc0ea88a3622f231a01f37a1f96
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035545"
 ---
-# <a name="use-the-route-hold-down-state"></a>Usar el estado de Hold-Down de ruta
+# <a name="use-the-route-hold-down-state"></a>Uso del estado de Hold-Down ruta
 
-En el código de ejemplo siguiente se muestra cómo marcar un destino para el estado de suspensión y cómo crear una enumeración de destino que incluya rutas que están en estado de suspensión.
+En el código de ejemplo siguiente se muestra cómo marcar un destino para el estado de retención y cómo crear una enumeración de destino que incluya rutas que se encuentran en estado de retención.
 
 
 ```C++
@@ -123,9 +123,9 @@ if (Status == NO_ERROR)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

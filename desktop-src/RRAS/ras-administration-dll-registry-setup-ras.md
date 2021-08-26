@@ -4,12 +4,12 @@ description: Comprenda los requisitos para registrar un archivo DLL de administr
 ms.assetid: 8108a0ac-8562-4251-99be-5f2b2f5c67c4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed0af8e4b189de69f254429c18beb4756e01ad56
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 1e40ed8fe4fe853c12e33e6168cb72cf1b3ec5b33afc92e8767731a13ec37412
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036375"
 ---
 # <a name="ras-administration-dll-registry-setup"></a>Instalación del Registro DLL de administración de RAS
 
@@ -36,7 +36,7 @@ Para registrar el archivo DLL, establezca los siguientes valores en esta clave.
 
  
 
-Por ejemplo, la entrada del Registro para un archivo DLL de administración de RAS de una empresa ficticia denominada ProElectrón, Inc. podría ser:
+Por ejemplo, la entrada del Registro para un archivo DLL de administración de RAS de una compañía ficticia denominada ProElectrón, Inc. podría ser:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -46,7 +46,7 @@ HKEY_LOCAL_MACHINE
             AdminDll
 ```
 
-*DisplayName* : **REG \_ SZ** : DLL de administración de RAS de ProElectrón
+*DisplayName* : **REG \_ SZ** : ARCHIVO DLL de administración de RAS de ProElectrón
 
 *DLLPath* : **REG \_ SZ** : C: \\ nt \\ system32 \\ntwkadm.dll
 

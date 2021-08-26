@@ -1,40 +1,40 @@
 ---
-title: Usar el recopilador de eventos de Windows
-description: En esta sección se enumeran los temas en los que se explican las tareas que se pueden realizar con el SDK del recopilador de eventos de Windows. En cada uno de los temas siguientes se incluyen ejemplos de código y explicaciones para todas las tareas.
+title: Uso del Windows de eventos
+description: En esta sección se enumeran los temas que explican las tareas que se pueden realizar mediante el SDK Windows Recopilador de eventos. En cada uno de los temas siguientes se incluyen ejemplos de código y explicaciones de todas las tareas.
 ms.assetid: 3396454a-4f43-45d0-951e-3096b9a4a077
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc618ced4cefc7f17fb63b27bb1e097e65b3adac
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cb8b928dddcd3e70848d510a8986962d478bedbe6f2f8bffcbec19c276983328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006015"
 ---
-# <a name="using-windows-event-collector"></a>Usar el recopilador de eventos de Windows
+# <a name="using-windows-event-collector"></a>Uso del Windows de eventos
 
-En esta sección se enumeran los temas en los que se explican las tareas que se pueden realizar con el SDK del recopilador de eventos de Windows. En cada uno de los temas siguientes se incluyen ejemplos de código y explicaciones para todas las tareas.
+En esta sección se enumeran los temas que explican las tareas que se pueden realizar mediante el SDK Windows Recopilador de eventos. En cada uno de los temas siguientes se incluyen ejemplos de código y explicaciones de todas las tareas.
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [Creación de una suscripción iniciada por el recopilador](creating-an-event-collector-subscription.md)
 
-    Proporciona información y un ejemplo de código de C++ para crear una suscripción iniciada por el recopilador. Una suscripción iniciada por el recopilador permite recibir eventos en un equipo local (el recopilador de eventos) que se reenvían desde un equipo remoto (un origen de eventos).
+    Proporciona información y un ejemplo de código de C++ para crear una suscripción iniciada por el recopilador. Una suscripción iniciada por el recopilador le permite recibir eventos en un equipo local (el recopilador de eventos) que se reenvían desde un equipo remoto (un origen de eventos).
 
--   [Configuración de una suscripción iniciada por el origen](setting-up-a-source-initiated-subscription.md)
+-   [Configuración de una suscripción iniciada por origen](setting-up-a-source-initiated-subscription.md)
 
-    Proporciona información y un ejemplo de código de C++ para crear una suscripción iniciada por el origen. Una suscripción iniciada por el origen le permite recibir eventos en un equipo local (el recopilador de eventos) que se reenvían desde un equipo remoto (un origen de eventos) sin especificar los orígenes de eventos de la suscripción.
+    Proporciona información y un ejemplo de código de C++ para crear una suscripción iniciada por el origen. Una suscripción iniciada por el origen le permite recibir eventos en un equipo local (el recopilador de eventos) que se reenvían desde un equipo remoto (un origen de eventos) sin especificar los orígenes de eventos en la suscripción.
 
 -   [Agregar un origen de eventos a una suscripción iniciada por el recopilador](adding-an-event-source-to-an-event-collector-subscription.md)
 
-    Proporciona información y un ejemplo de código de C++ para agregar un origen de eventos (equipo local o equipo remoto) a una suscripción iniciada por el recopilador. Una suscripción iniciada por el recopilador no puede iniciar la recopilación de eventos hasta que se agrega un origen de eventos a la suscripción.
+    Proporciona información y un ejemplo de código de C++ para agregar un origen de eventos (equipo local o equipo remoto) a una suscripción iniciada por el recopilador. Una suscripción iniciada por el recopilador no puede empezar a recopilar eventos hasta que se agrega un origen de eventos a la suscripción.
 
 -   [Creación de suscripciones de eventos de hardware](creating-hardware-event-subscriptions.md)
 
-    Proporciona información acerca de cómo crear una suscripción de eventos para recibir eventos de hardware de un equipo que tiene instalado un controlador de administración de placa base (BMC).
+    Proporciona información sobre cómo crear una suscripción de eventos para recibir eventos de hardware desde un equipo que tenga instalado un controlador de administración de placa base (BMC).
 
--   [Eliminar una suscripción del recopilador de eventos](deleting-an-event-collector-subscription.md)
+-   [Eliminación de una suscripción del recopilador de eventos](deleting-an-event-collector-subscription.md)
 
     Proporciona información y un ejemplo de código de C++ para eliminar una suscripción del recopilador de eventos de un equipo local.
 
@@ -44,9 +44,9 @@ En esta sección se enumeran los temas en los que se explican las tareas que se 
 
 -   [Mostrar el estado de una suscripción del recopilador de eventos](displaying-the-status-of-an-event-collector-subscription.md)
 
-    Proporciona información y un ejemplo de código de C++ para mostrar el estado de tiempo de ejecución de los orígenes de eventos que están asociados a una suscripción del recopilador de eventos. Esto le permite ver los mensajes de error que pueden ayudar a resolver problemas, lo que impide que un origen de eventos reenvíe eventos.
+    Proporciona información y un ejemplo de código de C++ para mostrar el estado en tiempo de ejecución de los orígenes de eventos asociados a una suscripción del Recopilador de eventos. Esto le permite ver mensajes de error que pueden ayudar a resolver problemas, lo que impide que un origen de eventos reenvía eventos.
 
--   [Enumerar las suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
+-   [Enumerar suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
 
     Proporciona información y un ejemplo de código de C++ para enumerar las suscripciones que existen en un equipo local. Puede usar los nombres de suscripción que se obtienen con este ejemplo para eliminar una suscripción, agregar un origen de eventos a una suscripción, recuperar las propiedades de una suscripción o ver el estado de una suscripción.
 
@@ -54,13 +54,13 @@ En esta sección se enumeran los temas en los que se explican las tareas que se 
 
     Proporciona información y un ejemplo de código de C++ para quitar un origen de eventos de una suscripción iniciada por el recopilador. Puede quitar un origen de eventos de una suscripción iniciada por el recopilador sin deshabilitar la suscripción.
 
--   [Volver a intentar una suscripción del recopilador de eventos](retrying-an-event-collector-subscription.md)
+-   [Reintentar una suscripción del recopilador de eventos](retrying-an-event-collector-subscription.md)
 
-    Proporciona información y un ejemplo de código de C++ para volver a intentar una suscripción del recopilador de eventos cuando se han producido errores en uno o varios orígenes de eventos. Puede reintentar un solo origen de eventos o puede reintentar toda la suscripción.
+    Proporciona información y un ejemplo de código de C++ para reintentar una suscripción del recopilador de eventos cuando se produce un error en uno o varios orígenes de eventos. Puede reintentar un único origen de eventos o puede volver a intentar toda la suscripción.
 
- 
+ 
 
- 
+ 
 
 
 

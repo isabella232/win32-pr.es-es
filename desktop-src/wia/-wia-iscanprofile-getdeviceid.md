@@ -1,7 +1,7 @@
 ---
 description: Devuelve el identificador del dispositivo.
 ms.assetid: 72a0843d-36f2-463f-8269-0e91233f1931
-title: 'IScanProfile:: GetDeviceID (método) (Scanprofile. h)'
+title: Método IScanProfile::GetDeviceID (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: fb0e2597164cb0a82c15cecf394ce7a9e0bec16d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 484c9a53542b0f7b62c00ca030b4bee9276914dce28bd3034865f308ba80705e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007615"
 ---
-# <a name="iscanprofilegetdeviceid-method"></a>IScanProfile:: GetDeviceID (método)
+# <a name="iscanprofilegetdeviceid-method"></a>IScanProfile::GetDeviceID (método)
 
 Devuelve el identificador del dispositivo.
 
@@ -39,20 +39,20 @@ HRESULT GetDeviceID(
 
 <dl> <dt>
 
-*pbstrDeviceID* \[ enuncia\]
+*pbstrDeviceID* \[ out\]
 </dt> <dd>
 
-Tipo: **BSTR \** _
+Tipo: **BSTR \***
 
-Puntero al identificador de dispositivo.
+Puntero al identificador del dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,10 +60,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofile. h</dt> </dl>    |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 [**IScanProfile**](-wia-iscanprofile.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

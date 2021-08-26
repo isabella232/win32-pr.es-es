@@ -1,6 +1,6 @@
 ---
-title: Task (DefinitionType), elemento
-description: Define un evento específico de la tarea que el proveedor puede registrar. | Task (DefinitionType), elemento
+title: elemento task (DefinitionType)
+description: Define un evento específico de la tarea que el proveedor puede registrar. | elemento task (DefinitionType)
 ms.assetid: 0e880720-1896-43cf-b702-cabca8ab1430
 keywords:
 - elemento de tarea EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 35fe629c17b8ede4064de3fb11d05c8e8c84f202
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9cdd0cfbf1cd9295b3ac3ff1cc12c087819974c82c7510c7558519aec471b18e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005955"
 ---
-# <a name="task-definitiontype-element"></a>Task (DefinitionType), elemento
+# <a name="task-definitiontype-element"></a>elemento task (DefinitionType)
 
-\[A partir del compilador de mensajes que se incluye con la versión de Windows 7 del Windows SDK, este elemento ya no está disponible.\]
+\[A partir del compilador de mensajes que se incluye Windows versión 7 del SDK de Windows, este elemento ya no está disponible.\]
 
 Define un evento específico de la tarea que el proveedor puede registrar.
 
@@ -32,7 +32,7 @@ Define un evento específico de la tarea que el proveedor puede registrar.
  />
 ```
 
-El elemento **Task** se define mediante el tipo complejo [**DefinitionType**](eventmanifestschema-definitiontype-complextype.md) .
+El **elemento task** se define mediante el tipo complejo [**DefinitionType.**](eventmanifestschema-definitiontype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,8 +40,8 @@ El elemento **Task** se define mediante el tipo complejo [**DefinitionType**](ev
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -52,7 +52,7 @@ El elemento **Task** se define mediante el tipo complejo [**DefinitionType**](ev
 **Elemento primario**
 </dt> <dt>
 
-[**eventos (ProviderType)**](eventmanifestschema-events-providertype-element.md)
+[**events (ProviderType)**](eventmanifestschema-events-providertype-element.md)
 </dt> </dl>
 
  

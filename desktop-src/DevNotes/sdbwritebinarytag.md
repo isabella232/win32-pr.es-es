@@ -1,7 +1,7 @@
 ---
 description: Escribe datos binarios en la base de datos especificada.
 ms.assetid: 935321b8-904e-46be-ad11-77d89670a072
-title: SdbWriteBinaryTag función)
+title: Función SdbWriteBinaryTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: e79de8549eb4c0a0f1b8a914c59d21ccfb3bcf7a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 06900cf49445b52c519b04f88ffc6d5b3ba539404bf64bd7f820a502f70ec2e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044855"
 ---
-# <a name="sdbwritebinarytag-function"></a>SdbWriteBinaryTag función)
+# <a name="sdbwritebinarytag-function"></a>Función SdbWriteBinaryTag
 
 Escribe datos binarios en la base de datos especificada.
 
@@ -42,37 +42,37 @@ BOOL WINAPI SdbWriteBinaryTag(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tTag* \[ de\]
+*tTag* \[ En\]
 </dt> <dd>
 
-ETIQUETA de la entrada. Esta etiqueta debe ser de tipo **etiqueta \_ \_ binaria**.
+ETIQUETA de la entrada. Esta ETIQUETA debe ser de tipo **TAG \_ TYPE \_ BINARY.**
 
 </dd> <dt>
 
-*pBuffer* \[ de\]
+*pBuffer* \[ En\]
 </dt> <dd>
 
-Búfer que contiene los datos. Este parámetro no puede ser **null**.
+Búfer que contiene los datos. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
-*dwSize* \[ de\]
+*dwSize* \[ En\]
 </dt> <dd>
 
-Tamaño del búfer de *pBuffer* , en bytes.
+Tamaño del búfer *pBuffer,* en bytes.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se ejecuta correctamente o **false** en caso de error.
+La función devuelve **TRUE si** se ejecuta correctamente o **FALSE** en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ La función devuelve **true** si se ejecuta correctamente o **false** en caso de
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

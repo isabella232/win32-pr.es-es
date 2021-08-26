@@ -1,23 +1,23 @@
 ---
-description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para los países bajos.
+description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Países Bajos.
 ms.assetid: bdbd88f0-43d8-456d-87ca-37e718c08ec4
-title: Asignaciones de canal de Holanda
+title: Asignaciones de canales de Países Bajos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b341bc99bbab99f2d78abee21dfbfca1f9a852aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f9c47777b404a152271fc494f460ecd3f3d9ca8daa59a84064b0d977958948d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078765"
 ---
-# <a name="the-netherlands-channel-assignments"></a>Asignaciones de canal de Holanda
+# <a name="the-netherlands-channel-assignments"></a>Asignaciones de canales de Países Bajos
 
-En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para los países bajos.
+En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Países Bajos.
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente, se usaba la [tabla de frecuencias Unicable](unicable-frequency-table.md) .
+Las siguientes asignaciones de canales se introdujeron en Windows 7. Anteriormente, se [usaba la tabla de frecuencias unicables.](unicable-frequency-table.md)
 
 ## <a name="cable-assignments"></a>Asignaciones de cable
 
@@ -522,7 +522,7 @@ Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de televisión análoga internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

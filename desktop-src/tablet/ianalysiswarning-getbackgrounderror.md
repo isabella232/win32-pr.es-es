@@ -1,7 +1,7 @@
 ---
-description: Recupera el código de error de la operación de análisis de tinta de fondo si se produce un error.
+description: Recupera el código de error para la operación de análisis de entrada de lápiz en segundo plano si se produjo un error.
 ms.assetid: 0255751e-9b2a-46f1-aa45-6509f9d1c658
-title: 'IAnalysisWarning:: GetBackgroundError (método) (IACom. h)'
+title: Método IAnalysisWarning::GetBackgroundError (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 4367b1d52ee5d2a3bb65af0e4edd4922b8ae9a92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa8c9c3c60f51ffd854ccdfebb6538337e7676a8c63e45899737333c41d99aad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057965"
 ---
-# <a name="ianalysiswarninggetbackgrounderror-method"></a>IAnalysisWarning:: GetBackgroundError (método)
+# <a name="ianalysiswarninggetbackgrounderror-method"></a>IAnalysisWarning::GetBackgroundError (método)
 
-Recupera el código de error de la operación de análisis de tinta de fondo si se produce un error.
+Recupera el código de error para la operación de análisis de entrada de lápiz en segundo plano si se produjo un error.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,11 +39,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se produce un error en una operación de análisis en segundo plano, el [**IInkAnalyzer**](iinkanalyzer.md) no puede devolver el código de error porque se está produciendo en un subproceso diferente. En su lugar, el controlador de eventos [**\_ IAnalysisEvents:: Results**](-ianalysisevents-results.md) recibe un [**IAnalysisStatus**](ianalysisstatus.md) que contiene un [**IAnalysisWarning**](ianalysiswarning.md) con un [**AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode) de **AnalysisWarningCode \_ BackgroundException**. Este **IAnalysisWarning** contiene el código de error de la operación de análisis en segundo plano. En general, el controlador de eventos **\_ IAnalysisEvents:: Results** devolverá este código de error para que se pueda administrar en cualquier parte de la aplicación.
+Si se produce un error dentro de una operación de análisis en segundo plano, [**IInkAnalyzer**](iinkanalyzer.md) no puede devolver el código de error porque se está produciendo en un subproceso diferente. En su lugar, el controlador de eventos [**\_ IAnalysisEvents::Results**](-ianalysisevents-results.md) recibe un [**IAnalysisStatus**](ianalysisstatus.md) que contiene [**un objeto IAnalysisWarning**](ianalysiswarning.md) con una [**excepción AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode) de **AnalysisWarningCode \_ BackgroundException.** **IAnalysisWarning contiene** el código de error de la operación de análisis en segundo plano. En general, el controlador de eventos **\_ IAnalysisEvents::Results** devolverá este código de error para que se pueda controlar en otra parte de la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ Si se produce un error en una operación de análisis en segundo plano, el [**II
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -68,16 +68,16 @@ Si se produce un error en una operación de análisis en segundo plano, el [**II
 [**IAnalysisStatus**](ianalysisstatus.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: BackgroundAnalyze (método)**](iinkanalyzer-backgroundanalyze.md)
+[**IInkAnalyzer::BackgroundAnalyze (Método)**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[**\_IAnalysisEvents:: results**](-ianalysisevents-results.md)
+[**\_IAnalysisEvents::Results**](-ianalysisevents-results.md)
 </dt> <dt>
 
 [**AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

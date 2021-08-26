@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene información sobre las estructuras utilizadas en el análisis de tinta.
+description: Esta sección contiene información sobre las estructuras usadas en el análisis de entrada de lápiz.
 ms.assetid: 25d0e01e-6f6b-4bf5-8a40-9f4ac8491373
-title: Estructuras de análisis de tinta
+title: Estructuras de análisis de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d9d5063bdb4b7cea068626333c4b0f453647d48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a761dea966da5a131f41c405b4cb301a3a19bdb831bff4e572a43ad945b2f17e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057844"
 ---
-# <a name="ink-analysis-structures"></a>Estructuras de análisis de tinta
+# <a name="ink-analysis-structures"></a>Estructuras de análisis de lápiz
 
-Esta sección contiene información sobre las estructuras utilizadas en el análisis de tinta.
+Esta sección contiene información sobre las estructuras usadas en el análisis de entrada de lápiz.
 
 ## <a name="structures"></a>Estructuras
 
@@ -21,7 +21,7 @@ Esta sección contiene información sobre las estructuras utilizadas en el anál
 
 | Estructura                                                        | Descripción                                                                                                                                                                             |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**InkAnalysisRecognizerGuide**](inkanalysisrecognizerguide.md) | Representa el área que utiliza el objeto [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) y en la que se puede dibujar la tinta. El área se conoce como la guía de reconocimiento.<br/> |
+| [**InkAnalysisRecognizerGuide**](inkanalysisrecognizerguide.md) | Representa el área que usa [**el objeto IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) y en el que se puede dibujar la entrada de lápiz. El área se conoce como guía de reconocimiento.<br/> |
 
 
 
@@ -31,7 +31,7 @@ Esta sección contiene información sobre las estructuras utilizadas en el anál
 
 <dl> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

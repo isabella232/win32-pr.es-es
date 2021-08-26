@@ -1,19 +1,19 @@
 ---
-description: Los servicios telefónicos complementarios son un conjunto de servicios avanzados más allá de los servicios telefónicos básicos, que admiten los dispositivos telefónicos.
+description: Los servicios telefónicos adicionales son un conjunto de servicios avanzados más allá de los servicios telefónicos básicos, compatibles con dispositivos telefónicos.
 ms.assetid: e8bcb5f4-a843-4fe1-828e-6a771f31af4e
-title: Servicios telefónicos complementarios
+title: Servicios de Teléfono adicionales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8d58c8916cd857b52facb690a6ef723abefe3d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f41718059ce3087110d03d76894862972f74496b7d3655a8ee7bdd7320ce1840
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034345"
 ---
-# <a name="supplementary-phone-services"></a>Servicios telefónicos complementarios
+# <a name="supplementary-phone-services"></a>Servicios de Teléfono adicionales
 
-Los servicios telefónicos complementarios son un conjunto de servicios avanzados más allá de los servicios telefónicos básicos, que admiten los dispositivos telefónicos. Normalmente, este conjunto incluye las siguientes características de dispositivo: [conmutador](/previous-versions/windows/desktop/legacy/ms725202(v=vs.85)), [Display](/previous-versions/windows/desktop/legacy/ms725186(v=vs.85)), [timbre](/previous-versions/windows/desktop/legacy/ms725264(v=vs.85))distintivo, [botones](buttons.md), [lámparas](/previous-versions/windows/desktop/legacy/ms725210(v=vs.85))distintivas, [área de datos](/previous-versions/windows/desktop/legacy/ms725182(v=vs.85))y la capacidad de comprobar el [Estado](/previous-versions/windows/desktop/legacy/ms725508(v=vs.85))de la llamada.
+Los servicios telefónicos adicionales son un conjunto de servicios avanzados más allá de los servicios telefónicos básicos, compatibles con dispositivos telefónicos. Normalmente, este conjunto incluye las siguientes características de dispositivo: [hookswitch](/previous-versions/windows/desktop/legacy/ms725202(v=vs.85)), [](/previous-versions/windows/desktop/legacy/ms725182(v=vs.85)) [display](/previous-versions/windows/desktop/legacy/ms725186(v=vs.85)), [ring](/previous-versions/windows/desktop/legacy/ms725264(v=vs.85))distintivo, [botones, bombillas distintivas,](/previous-versions/windows/desktop/legacy/ms725210(v=vs.85))área de datos y la capacidad de comprobar el estado de [la llamada](/previous-versions/windows/desktop/legacy/ms725508(v=vs.85)). [](buttons.md)
 
  
 

@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo de código siguiente se muestra el uso de las funciones NUMA GetNumaHighestNodeNumber, GetNumaProcessorNode y VirtualAllocExNuma.
+description: El código de ejemplo siguiente muestra el uso de las funciones NUMA GetNumaHighestNodeNumber, GetNumaProcessorNode y VirtualAllocExNuma.
 ms.assetid: df025b35-fb6b-4987-806e-9c76e6b130a1
 title: Asignación de memoria desde un nodo NUMA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5eb4a9af260c9d8b28a6bf83fa37744a85d5d4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7d6f845b5b071b48561c18aab81848bee1bb36675bff1ca2f634b46c291f066
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078255"
 ---
 # <a name="allocating-memory-from-a-numa-node"></a>Asignación de memoria desde un nodo NUMA
 
-En el ejemplo de código siguiente se muestra el uso de las funciones NUMA [**GetNumaHighestNodeNumber**](/windows/win32/api/systemtopologyapi/nf-systemtopologyapi-getnumahighestnodenumber), [**GetNumaProcessorNode**](/windows/win32/api/winbase/nf-winbase-getnumaprocessornode)y [**VirtualAllocExNuma**](/windows/win32/api/memoryapi/nf-memoryapi-virtualallocexnuma). También se muestra el uso de la función [**QueryWorkingSetEx**](/windows/win32/api/psapi/nf-psapi-queryworkingsetex) para recuperar el nodo Numa en el que se asignan las páginas.
+El código de ejemplo siguiente muestra el uso de las funciones NUMA [**GetNumaHighestNodeNumber,**](/windows/win32/api/systemtopologyapi/nf-systemtopologyapi-getnumahighestnodenumber) [**GetNumaProcessorNode**](/windows/win32/api/winbase/nf-winbase-getnumaprocessornode)y [**VirtualAllocExNuma**](/windows/win32/api/memoryapi/nf-memoryapi-virtualallocexnuma). También se muestra el uso de la [**función QueryWorkingSetEx**](/windows/win32/api/psapi/nf-psapi-queryworkingsetex) para recuperar el nodo NUMA en el que se asignan las páginas.
 
 
 ```C++
@@ -256,7 +256,7 @@ void DumpNumaNodeInfo (PVOID Buffer, SIZE_T Size)
 
 <dl> <dt>
 
-[Compatibilidad con NUMA](../procthread/numa-support.md)
+[Compatibilidad NUMA](../procthread/numa-support.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Borra los datos de los paquetes de trazos de IInkAnalyzer.
+description: Borra los datos del paquete de trazo de IInkAnalyzer.
 ms.assetid: c87a1e73-5e3f-4d27-93e9-e30d9ec5d9e3
-title: 'IInkAnalyzer:: ClearStrokeData (método) (IACom. h)'
+title: Método IInkAnalyzer::ClearStrokeData (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 823ceaa825b454af851fab43e233526285445c80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3413d8d6fb322030afdcffb97e8739ae4ca5e2314fe968f366ce25e58d90351e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057875"
 ---
-# <a name="iinkanalyzerclearstrokedata-method"></a>IInkAnalyzer:: ClearStrokeData (método)
+# <a name="iinkanalyzerclearstrokedata-method"></a>IInkAnalyzer::ClearStrokeData (método)
 
-Borra los datos de los paquetes de trazos de [**IInkAnalyzer**](iinkanalyzer.md).
+Borra los datos del paquete de trazo de [**IInkAnalyzer.**](iinkanalyzer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ HRESULT ClearStrokeData(
 
 <dl> <dt>
 
-*lStrokeId* \[ de\]
+*lStrokeId* \[ En\]
 </dt> <dd>
 
 Identificador del trazo para el que se borran los datos del paquete.
@@ -48,11 +48,11 @@ Identificador del trazo para el que se borran los datos del paquete.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use este método cuando los datos de paquetes de un trazo cambien, por ejemplo, cuando un trazo se mueve o se transforma de otro modo. [**IInkAnalyzer**](iinkanalyzer.md) genera el evento [**\_ IAnalysisEvents:: UpdateStrokesCache**](-ianalysisevents-updatestrokescache.md) cuando necesita datos de paquetes de trazos de un trazo para el que se han borrado los datos del paquete.
+Use este método cuando cambien los datos de paquetes para un trazo, por ejemplo, cuando un trazo se mueve o se transforma de otro modo. [**IInkAnalyzer**](iinkanalyzer.md) genera el evento [**\_ IAnalysisEvents::UpdateStrokesCache**](-ianalysisevents-updatestrokescache.md) cuando necesita datos de paquetes de trazo de un trazo para el que se han borrado los datos del paquete.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,9 +60,9 @@ Use este método cuando los datos de paquetes de un trazo cambien, por ejemplo, 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -74,10 +74,10 @@ Use este método cuando los datos de paquetes de un trazo cambien, por ejemplo, 
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: UpdateStrokesData (método)**](iinkanalyzer-updatestrokesdata.md)
+[**IInkAnalyzer::UpdateStrokesData (Método)**](iinkanalyzer-updatestrokesdata.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

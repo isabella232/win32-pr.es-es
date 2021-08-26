@@ -1,7 +1,7 @@
 ---
 Description: Recupera el valor DWORD para el TAGID especificado.
 ms.assetid: 6610e101-9068-4812-b0ca-528658b62535
-title: SdbReadDWORDTag función)
+title: Función SdbReadDWORDTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 0f1f7acc113bc40388d62927b6d98f8ff7bdebf1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ce168aab7755dcd11f145caf44678a489bca152753ea010edbd7387b3e730f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044955"
 ---
-# <a name="sdbreaddwordtag-function"></a>SdbReadDWORDTag función)
+# <a name="sdbreaddwordtag-function"></a>Función SdbReadDWORDTag
 
-Recupera el valor **DWORD** para el **TAGID** especificado.
+Recupera el **valor DWORD** para el **TAGID especificado.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,30 +41,30 @@ DWORD WINAPI SdbReadDWORDTag(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tiWhich* \[ de\]
+*tiWhich* \[ En\]
 </dt> <dd>
 
-**TAGID** que corresponde a los datos que se van a recuperar.
+TagID **que** corresponde a los datos que se recuperarán.
 
 </dd> <dt>
 
-*dwDefault* \[ de\]
+*dwDefault* \[ En\]
 </dt> <dd>
 
-El valor predeterminado que se devolverá en caso de error.
+Valor predeterminado que se va a devolver en caso de error.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve el valor si se ejecuta correctamente o *dwDefault* en caso de error.
+La función devuelve el valor si se ha ejecutado correctamente o *dwDefault* en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ La función devuelve el valor si se ejecuta correctamente o *dwDefault* en caso 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

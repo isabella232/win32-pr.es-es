@@ -1,57 +1,57 @@
 ---
-description: Hay varios tipos de consultas que se han diseñado para consultar el estado de los recursos.
+description: Hay varios tipos de consultas diseñadas para consultar el estado de los recursos.
 ms.assetid: 2c65d199-141d-43a7-b513-4cb4459d7c27
 title: Consultas (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22f450aa7015d4b66ad28b6c4d0632b2995bedd7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2113500673def3e2cca5816e534b567a29fc322fb51f853db98eada20ba62674
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069004"
 ---
 # <a name="queries-direct3d-9"></a>Consultas (Direct3D 9)
 
-Hay varios tipos de consultas que se han diseñado para consultar el estado de los recursos. El estado de un recurso determinado incluye el estado de la unidad de procesamiento de gráficos (GPU), el estado del controlador o el estado en tiempo de ejecución. Para comprender la diferencia entre los distintos tipos de consulta, debe comprender los Estados de la consulta. En el siguiente diagrama de transición de estado se explica cada uno de los Estados de la consulta.
+Hay varios tipos de consultas diseñadas para consultar el estado de los recursos. El estado de un recurso determinado incluye el estado de la unidad de procesamiento gráfico (GPU), el estado del controlador o el estado de tiempo de ejecución. Para comprender la diferencia entre los distintos tipos de consulta, debe comprender los estados de consulta. En el siguiente diagrama de transición de estado se explica cada uno de los estados de consulta.
 
-![diagrama que muestra las transiciones entre Estados de consulta](images/queries.png)
+![diagrama que muestra las transiciones entre estados de consulta](images/queries.png)
 
-En el diagrama se muestran tres Estados, cada uno definido por círculos. Cada una de las líneas sólidas son eventos controlados por la aplicación que causan una transición de estado. La línea discontinua es un evento controlado por recursos que cambia una consulta del estado emitido al estado señalado. Cada uno de estos Estados tiene un propósito diferente:
+El diagrama muestra tres estados, cada uno definido por círculos. Cada una de las líneas sólidas son eventos controlados por la aplicación que provocan una transición de estado. La línea discontinua es un evento controlado por recursos que cambia una consulta del estado emitido al estado señalado. Cada uno de estos estados tiene un propósito diferente:
 
--   El estado señalado es como un estado de inactividad. El objeto de consulta se ha generado y está esperando a que la aplicación emita la consulta. Una vez que se completa una consulta y se vuelve a pasar al estado señalado, se puede recuperar la respuesta a la consulta.
--   El estado de creación es como un área de ensayo para una consulta. Desde el estado de compilación, se ha emitido una consulta (llamando a [**D3DISSUE \_ Begin**](d3dissue-begin.md)) pero aún no ha pasado al estado emitido. Cuando una aplicación emite un final de consulta (mediante una llamada a [**D3DISSUE \_ End**](d3dissue-end.md)), la consulta pasa al estado emitido.
--   El estado emitido significa que el recurso que se consulta tiene el control de la consulta. Una vez que el recurso finaliza su trabajo, el recurso realiza la transición de la máquina de Estados al estado señalado. Durante el estado emitido, la aplicación debe sondear para detectar la transición al estado señalado. Una vez que se produce la transición al estado señalado, [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) devuelve el resultado de la consulta (a través de un argumento) a la aplicación.
+-   El estado señalado es como un estado inactivo. El objeto de consulta se ha generado y está esperando a que la aplicación emita la consulta. Una vez que se ha completado una consulta y ha pasado de nuevo al estado señalado, se puede recuperar la respuesta a la consulta.
+-   El estado de creación es como un área de ensayo para una consulta. Desde el estado de creación, se ha emitido una consulta (mediante una llamada a [**D3DISSUE \_ BEGIN**](d3dissue-begin.md)), pero aún no ha pasado al estado emitido. Cuando una aplicación emite un final de consulta (llamando a [**D3DISSUE \_ END),**](d3dissue-end.md)la consulta realiza la transición al estado emitido.
+-   El estado emitido significa que el recurso que se consulta tiene el control de la consulta. Una vez que el recurso finaliza su trabajo, el recurso pasa la máquina de estado al estado señalado. Durante el estado emitido, la aplicación debe sondear para detectar la transición al estado señalado. Una vez que se produce la transición al estado señalado, [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) devuelve el resultado de la consulta (a través de un argumento) a la aplicación.
 
 En la tabla siguiente se enumeran los tipos de consulta disponibles.
 
 
 
-| Tipo de consulta        | Evento Issue                                                                      | Búfer GetData                                                              | Tiempo de ejecución      | Inicio implícito de la consulta                      |
+| Tipo de consulta        | Evento de problema                                                                      | Búfer GetData                                                              | Tiempo de ejecución      | Inicio implícito de la consulta                      |
 |-------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------|--------------------------------------------------|
-| BANDWIDTHTIMINGS  | [**D3DISSUE \_ Inicio**](d3dissue-begin.md), [ **D3DISSUE \_ End**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9BANDWIDTHTIMINGS**](d3ddevinfo-d3d9bandwidthtimings.md) | Venta directa/depuración | N/D                                              |
-| CACHEUTILIZATION  | [**D3DISSUE \_ Inicio**](d3dissue-begin.md), [ **D3DISSUE \_ End**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9CACHEUTILIZATION**](d3ddevinfo-d3d9cacheutilization.md) | Venta directa/depuración | N/D                                              |
-| CESO             | [**Final de D3DISSUE \_**](d3dissue-end.md)                                            | BOOL                                                                        | Venta directa/depuración | [**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) |
-| INTERFACETIMINGS  | [**D3DISSUE \_ Inicio**](d3dissue-begin.md), [ **D3DISSUE \_ End**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9INTERFACETIMINGS**](d3ddevinfo-d3d9interfacetimings.md) | Venta directa/depuración | N/D                                              |
-| OCULTO         | [**D3DISSUE \_ Inicio**](d3dissue-begin.md), [ **D3DISSUE \_ End**](d3dissue-end.md) | DWORD                                                                       | Venta directa/depuración | N/D                                              |
-| PIPELINETIMINGS   | [**D3DISSUE \_ Inicio**](d3dissue-begin.md), [ **D3DISSUE \_ End**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9PIPELINETIMINGS**](d3ddevinfo-d3d9pipelinetimings.md)   | Venta directa/depuración | N/D                                              |
-| RESOURCEMANAGER   | [**Final de D3DISSUE \_**](d3dissue-end.md)                                            | [**D3DDEVINFO \_ ResourceManager**](d3ddevinfo-resourcemanager.md)           | Solo depuración   | [**Presente**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)     |
-| timestamp         | [**Final de D3DISSUE \_**](d3dissue-end.md)                                            | UINT64                                                                      | Venta directa/depuración | N/D                                              |
-| TIMESTAMPDISJOINT | [**D3DISSUE \_ Inicio**](d3dissue-begin.md), [ **D3DISSUE \_ End**](d3dissue-end.md) | BOOL                                                                        | Venta directa/depuración | N/D                                              |
-| TIMESTAMPFREQ     | [**Final de D3DISSUE \_**](d3dissue-end.md)                                            | UINT64                                                                      | Venta directa/depuración | N/D                                              |
-| VCACHE            | [**Final de D3DISSUE \_**](d3dissue-end.md)                                            | [**D3DDEVINFO \_ VCACHE**](d3ddevinfo-vcache.md)                             | Venta directa/depuración | [**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) |
-| VERTEXSTATS       | [**Final de D3DISSUE \_**](d3dissue-end.md)                                            | [**D3DDEVINFO \_ D3DVERTEXSTATS**](d3ddevinfo-d3dvertexstats.md)             | Solo depuración   | [**Presente**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)     |
-| VERTEXTIMINGS     | [**D3DISSUE \_ Inicio**](d3dissue-begin.md), [ **D3DISSUE \_ End**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9STAGETIMINGS**](d3ddevinfo-d3d9stagetimings.md)         | Venta directa/depuración | N/D                                              |
+| BANDWIDTHTIMINGS  | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9BANDWIDTHTIMINGS**](d3ddevinfo-d3d9bandwidthtimings.md) | Retail/Debug | No procede                                              |
+| CACHEUTILIZATION  | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9CACHEUTILIZATION**](d3ddevinfo-d3d9cacheutilization.md) | Retail/Debug | No procede                                              |
+| Evento             | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | BOOL                                                                        | Retail/Debug | [**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) |
+| INTERFACETIMINGS  | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9INTERFACETIMINGS**](d3ddevinfo-d3d9interfacetimings.md) | Retail/Debug | No procede                                              |
+| Oclusión         | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | DWORD                                                                       | Retail/Debug | No procede                                              |
+| PIPELINETIMINGS   | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9PIPELINETIMINGS**](d3ddevinfo-d3d9pipelinetimings.md)   | Retail/Debug | No procede                                              |
+| Resourcemanager   | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | [**D3DDEVINFO \_ ResourceManager**](d3ddevinfo-resourcemanager.md)           | Solo depuración   | [**Presente**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)     |
+| timestamp         | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | UINT64                                                                      | Retail/Debug | No procede                                              |
+| TIMESTAMPDISJOINT | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | BOOL                                                                        | Retail/Debug | No procede                                              |
+| TIMESTAMPFREQ     | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | UINT64                                                                      | Retail/Debug | No procede                                              |
+| VCACHE            | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | [**D3DDEVINFO \_ VCACHE**](d3ddevinfo-vcache.md)                             | Retail/Debug | [**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) |
+| VERTEXSTATS       | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | [**D3DDEVINFO \_ D3DVERTEXSTATS**](d3ddevinfo-d3dvertexstats.md)             | Solo depuración   | [**Presente**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)     |
+| VERTEXTIMINGS     | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9STAGETIMINGS**](d3ddevinfo-d3d9stagetimings.md)         | Retail/Debug | No procede                                              |
 
 
 
  
 
-Algunas de las consultas requieren un evento Begin y end, mientras que otras solo requieren un evento End. Las consultas que solo requieren un evento End comienzan cuando se produce otro evento implícito (que aparece en la tabla). Todas las consultas devuelven una respuesta, excepto la consulta de eventos cuya respuesta siempre es **true**. Una aplicación utiliza el estado de la consulta o el código de retorno de [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata).
+Algunas de las consultas requieren un evento de inicio y finalización, mientras que otras solo requieren un evento final. Las consultas que solo requieren un evento final comienzan cuando se produce otro evento implícito (que se muestra en la tabla). Todas las consultas devuelven una respuesta, excepto la consulta de eventos cuya respuesta es siempre **TRUE.** Una aplicación usa el estado de la consulta o el código de retorno de [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata).
 
 ## <a name="create-a-query"></a>Crear una consulta
 
-Antes de crear una consulta, puede comprobar si el tiempo de ejecución admite consultas llamando a [**CreateQuery**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createquery) con un puntero **nulo** como este:
+Antes de crear una consulta, puede comprobar si el tiempo de ejecución admite consultas mediante una llamada a [**CreateQuery**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createquery) con un **puntero NULL** como este:
 
 
 ```
@@ -65,7 +65,7 @@ HRESULT hr = m_pd3dDevice->CreateQuery(D3DQUERYTYPE_EVENT, NULL);
 
 
 
-Este método devuelve un código de operación correcta si se puede crear una consulta; en caso contrario, devuelve un código de error. Una vez que [**CreateQuery**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createquery) se ejecute correctamente, puede crear un objeto de consulta similar al siguiente:
+Este método devuelve un código correcto si se puede crear una consulta; de lo contrario, devuelve un código de error. Una [**vez que CreateQuery**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createquery) se realiza correctamente, puede crear un objeto de consulta como este:
 
 
 ```
@@ -75,11 +75,11 @@ m_pd3dDevice->CreateQuery(D3DQUERYTYPE_EVENT, &pEventQuery);
 
 
 
-Si la llamada se realiza correctamente, se crea un objeto de consulta. La consulta está esencialmente inactiva en el estado señalado (con una respuesta no inicializada) en espera de ser emitida. Cuando haya terminado con la consulta, suéltelo como cualquier otra interfaz.
+Si esta llamada se realiza correctamente, se crea un objeto de consulta. La consulta está esencialmente inactiva en el estado señalado (con una respuesta sin inicializar) a la espera de ser emitida. Cuando haya terminado con la consulta, suélcela como cualquier otra interfaz.
 
-## <a name="issue-a-query"></a>Emisión de una consulta
+## <a name="issue-a-query"></a>Emitir una consulta
 
-Una aplicación cambia el estado de una consulta mediante la emisión de una consulta. Este es un ejemplo de la emisión de una consulta:
+Una aplicación cambia un estado de consulta mediante la emisión de una consulta. Este es un ejemplo de emisión de una consulta:
 
 
 ```
@@ -97,40 +97,40 @@ pEventQuery->Issue(D3DISSUE_END);
 
 
 
-Una consulta en el estado señalado pasará a ser similar a la siguiente cuando se emita:
+Una consulta en el estado señalado realizará una transición como esta cuando se emita:
 
 
 
-| Tipo de problema                                | Las transiciones de consulta a. . . |
+| Tipo de problema                                | Transiciones de consulta a . . . |
 |-------------------------------------------|--------------------------------|
-| [**Inicio de D3DISSUE \_**](d3dissue-begin.md) | Estado de compilación.                |
-| [**Final de D3DISSUE \_**](d3dissue-end.md)     | Estado emitido.                  |
+| [**D3DISSUE \_ BEGIN**](d3dissue-begin.md) | Estado de la creación.                |
+| [**D3DISSUE \_ END**](d3dissue-end.md)     | Estado emitido.                  |
 
 
 
  
 
-Una consulta en el estado de creación cambiará de este modo cuando se emita:
+Una consulta en el estado de creación realizará una transición como esta cuando se emita:
 
 
 
-| Tipo de problema                                | Las transiciones de consulta a. . .                                            |
+| Tipo de problema                                | Transiciones de consulta a . . .                                            |
 |-------------------------------------------|---------------------------------------------------------------------------|
-| [**Inicio de D3DISSUE \_**](d3dissue-begin.md) | (Ninguna transición permanece en el estado de compilación. Reinicia el corchete de consulta). |
-| [**Final de D3DISSUE \_**](d3dissue-end.md)     | Estado emitido.                                                             |
+| [**D3DISSUE \_ BEGIN**](d3dissue-begin.md) | (Sin transición, permanece en el estado de creación. Reinicia el corchete de consulta). |
+| [**D3DISSUE \_ END**](d3dissue-end.md)     | Estado emitido.                                                             |
 
 
 
  
 
-Una consulta en el estado emitido se realizará una transición similar a la siguiente cuando se emita:
+Una consulta en el estado emitido realizará una transición como esta cuando se emita:
 
 
 
-| Tipo de problema                                | Las transiciones de consulta a. . .                    |
+| Tipo de problema                                | Transiciones de consulta a . . .                    |
 |-------------------------------------------|---------------------------------------------------|
-| [**Inicio de D3DISSUE \_**](d3dissue-begin.md) | Compilar el estado y reinicia el corchete de consulta.    |
-| [**Final de D3DISSUE \_**](d3dissue-end.md)     | Estado emitido después de abandonar la consulta existente. |
+| [**D3DISSUE \_ BEGIN**](d3dissue-begin.md) | Estado de creación y reinicia el corchete de consulta.    |
+| [**D3DISSUE \_ END**](d3dissue-end.md)     | Estado emitido después de abandonar la consulta existente. |
 
 
 
@@ -140,31 +140,31 @@ Una consulta en el estado emitido se realizará una transición similar a la sig
 
 [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) hace dos cosas:
 
-1.  Devuelve el estado de la consulta en el código de retorno.
-2.  Devuelve la respuesta a la consulta en *pdata*.
+1.  Devuelve el estado de consulta en el código de retorno.
+2.  Devuelve la respuesta a la consulta en *pData*.
 
-En cada uno de los tres Estados de la consulta, estos son los códigos de retorno [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) :
+De cada uno de los tres estados de consulta, estos son los códigos de [**retorno de GetData:**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata)
 
 
 
 | Estado de la consulta | Código de retorno GetData |
 |-------------|---------------------|
-| Señalado    | S \_ correcto               |
+| Señalado    | S \_ OK               |
 | Compilación    | Código de error          |
-| Emitido      | S \_ false            |
+| Emitido      | S \_ FALSE            |
 
 
 
  
 
-Por ejemplo, cuando una consulta está en el estado emitido y la respuesta a la consulta no está disponible, [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) devuelve S \_ false. Cuando el recurso finaliza su trabajo y la aplicación ha emitido un fin de consulta, el recurso realiza la transición de la consulta al estado señalado. En el estado señalado, **GetData** devuelve S, \_ lo que significa que la respuesta a la consulta también se devuelve en *pdata*. Por ejemplo, esta es la secuencia de eventos para devolver el número de píxeles dibujados en una secuencia de representación:
+Por ejemplo, cuando una consulta está en el estado emitido y la respuesta a la consulta no está disponible, [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) devuelve S \_ FALSE. Cuando el recurso finaliza su trabajo y la aplicación ha emitido un final de consulta, el recurso pasa la consulta al estado señalado. Desde el estado señalado, **GetData** devuelve S OK, lo que significa que la respuesta a la consulta \_ también se devuelve en *pData*. Por ejemplo, esta es la secuencia de eventos para devolver el número de píxeles dibujados en una secuencia de representación:
 
 -   Crear la consulta.
--   Emita un evento Begin.
+-   Emita un evento de inicio.
 -   Dibuje algo.
--   Emite un evento de finalización.
+-   Emitir un evento final.
 
-A continuación se encuentra la secuencia de código correspondiente:
+A continuación se muestra la secuencia de código correspondiente:
 
 
 ```
@@ -195,26 +195,26 @@ while(S_FALSE == pOcclusionQuery->GetData( &numberOfPixelsDrawn,
 
 Estas líneas de código hacen varias cosas:
 
--   Llame a [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) para devolver el número de píxeles dibujados.
--   Especifique [**el \_ vaciado de D3DGETDATA**](d3dgetdata-flush.md) para permitir que el recurso pase la consulta al estado señalado.
--   Sondee el recurso de consulta mediante una llamada a [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) desde un bucle. Siempre que **GetData** devuelva S \_ , esto significa que el recurso aún no ha devuelto la respuesta.
+-   Llame [**a GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) para devolver el número de píxeles dibujados.
+-   Especifique [**D3DGETDATA \_ FLUSH para**](d3dgetdata-flush.md) permitir que el recurso pueda realizar la transición de la consulta al estado señalado.
+-   Sondee el recurso de consulta llamando a [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) desde un bucle. Siempre que **GetData** devuelva S FALSE, significa \_ que el recurso aún no ha devuelto la respuesta.
 
-En esencia, el valor devuelto por [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) indica en qué estado se encuentra la consulta. Los valores posibles son \_ OK, s \_ false y un error. No llame a **GetData** en una consulta que se encuentra en el estado de compilación.
+El valor devuelto de [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) indica básicamente en qué estado se encuentra la consulta. Los valores posibles son S \_ OK, S \_ FALSE y un error. No llame a **GetData** en una consulta que se encuentra en estado de creación.
 
--   S \_ correcto significa que el recurso (GPU o controlador o tiempo de ejecución) ha finalizado. La consulta devuelve el estado señalado. La respuesta (si existe) la devuelve [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata).
--   S \_ false significa que el recurso (GPU o controlador o tiempo de ejecución) no puede devolver una respuesta todavía. Esto puede deberse a que la GPU no se ha terminado o no ha detectado aún el trabajo.
--   Un error significa que la consulta ha generado un error del que no se puede recuperar. Este podría ser el caso si se pierde el dispositivo durante una consulta. Una vez que una consulta ha generado un error (distinto de S \_ false), se debe volver a crear la consulta, lo que reiniciará la secuencia de consulta desde el estado señalado.
+-   S \_ OK significa que el recurso (GPU, controlador o runtime) ha finalizado. La consulta vuelve al estado señalado. [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata)devuelve la respuesta (si existe).
+-   S \_ FALSE significa que el recurso (GPU, controlador o tiempo de ejecución) todavía no puede devolver una respuesta. Esto podría deberse a que la GPU no ha finalizado o aún no ha visto el trabajo.
+-   Un error significa que la consulta ha generado un error del que no se puede recuperar. Este podría ser el caso si el dispositivo se pierde durante una consulta. Una vez que una consulta ha generado un error (distinto de S FALSE), se debe volver a crear la consulta, lo que reiniciará la secuencia de consulta desde \_ el estado señalado.
 
-En lugar de especificar el [**\_ vaciado de D3DGETDATA**](d3dgetdata-flush.md), que proporciona información más actualizada, puede proporcionar cero, que es una comprobación más ligera si la consulta está en el estado emitido. Si se proporciona cero, [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) no vaciará el búfer de comandos. Por este motivo, se debe tener cuidado para evitar los bucles infinate (consulte **GetData** para obtener más detalles). Dado que el Runtime pone en cola el trabajo en el búfer de comandos, **D3DGETDATA \_ Flush** es un mecanismo para vaciar el búfer de comandos en el controlador (y, por lo tanto, la GPU; consulte generación de perfiles de llamadas de la [API de Direct3D con precisión (Direct3D 9)](accurately-profiling-direct3d-api-calls.md)). Durante el vaciado del búfer de comandos, una consulta puede pasar al estado señalado.
+En lugar de especificar [**D3DGETDATA \_ FLUSH**](d3dgetdata-flush.md), que proporciona información más actualizada, podría proporcionar cero, que es una comprobación más ligera si la consulta está en el estado emitido. Si se proporciona cero, [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) no vaciará el búfer de comandos. Por esta razón, debe tener cuidado para evitar bucles de infinación (consulte **GetData** para obtener más información). Dado que el tiempo de ejecución pone en cola el trabajo en el búfer de comandos, **D3DGETDATA \_ FLUSH** es un mecanismo para vaciar el búfer de comandos en el controlador (y, por lo tanto, la GPU; vea Generar perfiles precisos de llamadas API de [Direct3D (Direct3D 9).](accurately-profiling-direct3d-api-calls.md) Durante el vaciado del búfer de comandos, una consulta puede realizar la transición al estado señalado.
 
-## <a name="example-an-event-query"></a>Ejemplo: una consulta de evento
+## <a name="example-an-event-query"></a>Ejemplo: una consulta de eventos
 
-Una consulta de evento no admite un evento Begin.
+Una consulta de eventos no admite un evento begin.
 
 -   Crear la consulta.
--   Emite un evento de finalización.
--   Sondear hasta que la GPU esté inactiva.
--   Emite un evento de finalización.
+-   Emitir un evento final.
+-   Sondee hasta que la GPU esté inactiva.
+-   Emitir un evento final.
 
 
 ```
@@ -241,13 +241,13 @@ while(S_FALSE == pEventQuery->GetData( NULL, 0, D3DGETDATA_FLUSH ))
 
 
 
-Esta es la secuencia de comandos que usa una consulta de eventos para generar perfiles de llamadas de la interfaz de programación de aplicaciones (API) (consulte generación de perfiles de llamadas de la [API de Direct3D (Direct3D 9) con precisión](accurately-profiling-direct3d-api-calls.md). Esta secuencia usa marcadores para ayudar a controlar la cantidad de trabajo en el búfer de comandos.
+Esta es la secuencia de comandos que usa una consulta de eventos para generar perfiles de llamadas de la interfaz de programación de aplicaciones (API) (consulte Generación precisa de perfiles de llamadas a la API de [Direct3D (Direct3D 9).](accurately-profiling-direct3d-api-calls.md) Esta secuencia usa marcadores para ayudar a controlar la cantidad de trabajo en el búfer de comandos.
 
-Tenga en cuenta que las aplicaciones deben prestar especial atención al gran costo asociado con el vaciado del búfer de comandos, ya que esto hace que el sistema operativo cambie al modo kernel, lo que incurre en una penalización de rendimiento considerable. Las aplicaciones también deben tener en cuenta la pérdida de ciclos de CPU al esperar a que se completen las consultas.
+Tenga en cuenta que las aplicaciones deben prestar especial atención al gran costo asociado con el vaciado del búfer de comandos, ya que esto hace que el sistema operativo cambie al modo kernel, lo que incurrirá en una reducción de rendimiento importante. Las aplicaciones también deben ser conscientes de la pérdida de ciclos de CPU al esperar a que se completen las consultas.
 
-Las consultas son una optimización que se va a utilizar durante la representación para aumentar el rendimiento. Por lo tanto, no es beneficioso dedicar tiempo a esperar a que finalice una consulta. Si se emite una consulta y los resultados aún no están listos en el momento en que la aplicación los comprueba, el intento de optimización no se realizó correctamente y la representación debería continuar de la forma habitual.
+Las consultas son una optimización que se usará durante la representación para aumentar el rendimiento. Por lo tanto, no es beneficioso dedicar tiempo a esperar a que finalice una consulta. Si se emite una consulta y los resultados aún no están listos en el momento en que la aplicación los comprueba, el intento de optimización no se ha hecho correctamente y la representación debe continuar con normalidad.
 
-El ejemplo clásico es durante la selección de la oclusión. En lugar del bucle **While** anterior, una aplicación que usa consultas puede implementar la selección de la oclusión para comprobar si una consulta ha finalizado en el momento en que necesita el resultado. Si la consulta no ha finalizado, continúe (como un escenario en el peor de los casos) como si el objeto que se está probando no es ocluidos (es decir, es visible) y lo representa. El código tendría un aspecto similar al siguiente.
+El ejemplo clásico de esto es durante la selección de oclusión. En lugar del **bucle while** anterior, una aplicación que usa consultas puede implementar la selección de oclusión para comprobar si una consulta ha finalizado en el momento en que necesita el resultado. Si la consulta no ha finalizado, continúe (como escenario en el peor de los casos) como si el objeto con el que se está probando no se haya ocluido (es decir, esté visible) y represente el objeto. El código tendría un aspecto similar al siguiente.
 
 
 ```

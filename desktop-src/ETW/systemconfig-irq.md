@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para eventos de solicitud de interrupción (IRQ). La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de solicitud de interrupción (IRQ). La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 9d4692e8-f19f-478c-a003-396722e426c3
-title: SystemConfig_IRQ (clase)
+title: SystemConfig_IRQ clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e1dd674c34c06259bc343615c17d165be3f57d32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3da720de11aa7dbbd759131a521e44e546b7cad6d2525565c81d0aa6920dd0ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078295"
 ---
-# <a name="systemconfig_irq-class"></a>SystemConfig ( \_ clase de IRQ)
+# <a name="systemconfig_irq-class"></a>SystemConfig \_ IRQ (clase)
 
-Esta clase es la clase de tipo de evento para eventos de solicitud de interrupción (IRQ).
+Esta clase es la clase de tipo de evento para los eventos de solicitud de interrupción (IRQ).
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,13 +44,13 @@ class SystemConfig_IRQ : SystemConfig
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ IRQ SystemConfig** tiene estos tipos de miembros:
+La **clase SystemConfig \_ IRQ** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ IRQ SystemConfig** tiene estas propiedades.
+La **clase \_ SystemConfig IRQ** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(4), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Descripción del dispositivo o software que realiza la solicitud.
@@ -73,13 +73,13 @@ Descripción del dispositivo o software que realiza la solicitud.
 **DeviceDescriptionLen**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
 Longitud, en caracteres, de la cadena en **DeviceDescription**.
@@ -89,32 +89,32 @@ Longitud, en caracteres, de la cadena en **DeviceDescription**.
 **IRQAffinity**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), Format ("x")
+Calificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
-Máscara de afinidad de IRQ. La máscara de afinidad identifica los procesadores (o grupos de procesadores) específicos que pueden recibir la IRQ.
+Máscara de afinidad IRQ. La máscara de afinidad identifica los procesadores específicos (o grupos de procesadores) que pueden recibir el IRQ.
 
 </dd> <dt>
 
 **IRQNum**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
-Número de línea de solicitud de interrupción.
+Número de línea de la solicitud de interrupción.
 
 </dd> </dl>
 
@@ -124,8 +124,8 @@ Número de línea de solicitud de interrupción.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: 'Función SampleGrad:: SampleGrad (S, Float, Float, Float, Float, uint) para TextureCubeArray'
-description: Obtenga información sobre cómo esta función muestra una textura mediante un degradado para influir en la forma en que se calcula la ubicación de ejemplo, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en. Para TextureCubeArray.
+title: Función SampleGrad::SampleGrad(S,float,float,float,float,uint) para TextureCubeArray
+description: Obtenga información sobre cómo esta función muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Para TextureCubeArray.
 ms.assetid: 849FAF04-A133-4E5B-967E-0679AE335CCC
 keywords:
-- SampleGrad de función HLSL
+- Función SampleGrad HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 00adfb5c7a1a95e5462b1bc524a6c7d86f71c2e8
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 4ca8b238b1ff4478492142136e4b51b79ef703669a99c00030e71c97ad9a19b4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104987276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023085"
 ---
-# <a name="samplegradsamplegradsfloatfloatfloatfloatuint-function-for-texturecubearray"></a>Función SampleGrad:: SampleGrad (S, Float, Float, Float, Float, uint) para TextureCubeArray
+# <a name="samplegradsamplegradsfloatfloatfloatfloatuint-function-for-texturecubearray"></a>Función SampleGrad::SampleGrad(S,float,float,float,float,uint) para TextureCubeArray
 
-Muestrea una textura, utilizando un degradado para influir en la forma en que se calcula la ubicación de ejemplo, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo. Devuelve el estado de la operación.
+Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Devuelve el estado de la operación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,20 +49,20 @@ DXGI_FORMAT SampleGrad(
 
 Tipo: **SamplerState**
 
-Un [Estado de muestra](dx-graphics-hlsl-sampler.md). Se trata de un objeto declarado en un archivo de efectos que contiene las asignaciones de estado.
+Un [estado sampler](dx-graphics-hlsl-sampler.md). Se trata de un objeto declarado en un archivo de efecto que contiene asignaciones de estado.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Las coordenadas de textura. El tipo de argumento depende del tipo de objeto de textura.
+Las coordenadas de textura. El tipo de argumento depende del tipo texture-object.
 
 
 
-| Tipo de Texture-Object                    | Tipo de parámetro |
+| Texture-Object tipo                    | Tipo de parámetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -80,11 +80,11 @@ Las coordenadas de textura. El tipo de argumento depende del tipo de objeto de t
 
 Tipo: **float**
 
-La tasa de cambio de la geometría de la superficie en la dirección x. El tipo de argumento depende del tipo de objeto de textura.
+Velocidad de cambio de la geometría de la superficie en la dirección x. El tipo de argumento depende del tipo texture-object.
 
 
 
-| Tipo de Texture-Object                      | Tipo de parámetro |
+| Texture-Object tipo                      | Tipo de parámetro |
 |------------------------------------------|----------------|
 | Texture1D, Texture1DArray                | FLOAT          |
 | Texture2D, Texture2DArray                | float2         |
@@ -97,16 +97,16 @@ La tasa de cambio de la geometría de la superficie en la dirección x. El tipo 
 
 </dd> <dt>
 
-*DDY* \[ de\]
+*DDY* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-La tasa de cambio de la geometría de la superficie en la dirección y. El tipo de argumento depende del tipo de objeto de textura.
+Velocidad de cambio de la geometría de la superficie en la dirección y. El tipo de argumento depende del tipo texture-object.
 
 
 
-| Tipo de Texture-Object                      | Tipo de parámetro |
+| Texture-Object tipo                      | Tipo de parámetro |
 |------------------------------------------|----------------|
 | Texture1D, Texture1DArray                | FLOAT          |
 | Texture2D, Texture2DArray                | float2         |
@@ -119,29 +119,29 @@ La tasa de cambio de la geometría de la superficie en la dirección y. El tipo 
 
 </dd> <dt>
 
-*Abrazadera* \[ de\]
+*Fijación* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Un valor opcional en el que se van a fijar los valores LOD de ejemplo. Por ejemplo, si se pasa 2.0 f para el valor Clamp, se asegura de que ningún ejemplo individual tenga acceso a un nivel de MIP inferior a 2.0 f.
+Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de fijación, asegúrese de que ninguna muestra individual tiene acceso a un nivel de mip inferior a 2,0f.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*Estado* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **\_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Formato de textura, que es uno de los valores con tipo que aparecen [**en \_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 ## <a name="see-also"></a>Vea también
 

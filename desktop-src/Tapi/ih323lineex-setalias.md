@@ -1,25 +1,25 @@
 ---
-description: El método SetAlias configura un alias H. 323 predeterminado para la dirección. Este alias se usará en la llamada H. 323 configuración de Exchange para que la otra parte conozca el nombre de esta entidad.
+description: El método SetAlias configura un alias H.323 predeterminado para la dirección. Este alias se usará en el intercambio de configuración de llamadas H.323 para que la otra parte conozca el nombre de esta entidad.
 ms.assetid: 09608214-7346-4ee8-bbfd-0877d3ad0766
-title: 'IH323LineEx:: SetAlias (método) (H323priv. h)'
+title: Método IH323LineEx::SetAlias (H323priv.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7341d177297cf95f46d07e503244f06b2c4dea71
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 464c6707c3221fda1ef245e0302731ee7c6a1cf274c7ecac537c55f7f48437a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992195"
 ---
-# <a name="ih323lineexsetalias-method"></a>IH323LineEx:: SetAlias (método)
+# <a name="ih323lineexsetalias-method"></a>IH323LineEx::SetAlias (método)
 
-\[**SetAlias** no está disponible para su uso en Windows Vista, windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[**SetAlias** no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **SetAlias** configura un alias H. 323 predeterminado para la dirección. Este alias se usará en la llamada H. 323 configuración de Exchange para que la otra parte conozca el nombre de esta entidad.
+El **método SetAlias** configura un alias H.323 predeterminado para la dirección. Este alias se usará en el intercambio de configuración de llamadas H.323 para que la otra parte conozca el nombre de esta entidad.
 
-Si se llama a este método por segunda vez, se sobrescribirá el alias anterior.
+Al llamar a este método una segunda vez, se sobrescribirá el alias anterior.
 
-El alias establecido en esta interfaz solo se usará cuando no haya ninguna otra manera de que el TSP busque un alias adecuado. En el futuro, cuando se agrega la compatibilidad con Gatekeeper al TSP, el alias registrado en el equipo selector o asignado por el equipo selector invalidará lo que se establezca a través de este método.
+El alias establecido en esta interfaz solo se usará cuando no haya otra manera de que el TSP encuentre un alias adecuado. En el futuro, cuando se agrega compatibilidad con gatekeeper al TSP, el alias registrado en el equipo selector o asignado por el selector invalidará lo que se establezca a través de este método.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,17 +37,17 @@ HRESULT SetAlias(
 
 <dl> <dt>
 
-*strAlias* \[ de\]
+*strAlias* \[ En\]
 </dt> <dd>
 
-El alias que se va a usar, en Unicode. No es necesaria la terminación **nula** .
+Alias que se va a usar en Unicode. **No se** requiere la terminación NULL.
 
 </dd> <dt>
 
-*dwLength* \[ de\]
+*dwLength* \[ En\]
 </dt> <dd>
 
-La longitud del nombre de alias en número de caracteres, incluido el terminador **null** .
+Longitud del nombre de alias en número de caracteres, incluido el **terminador** nulo.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                               | Descripción                                                                                                                      |
 |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | El método se realizó correctamente.<br/>                                                                                                     |
-| <dl> <dt>**\_puntero E**</dt> </dl> | El número de caracteres indicado en *dwLength* supera el número real de caracteres en el parámetro *strAlias* .<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | El método se realizó correctamente.<br/>                                                                                                     |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | El número de caracteres indicado en *dwLength* supera el número real de caracteres del *parámetro strAlias.*<br/> |
 
 
 
@@ -72,9 +72,9 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>H323priv. h</dt> </dl> |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>H323priv.h</dt> </dl> |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 
 

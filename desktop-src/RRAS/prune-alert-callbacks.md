@@ -1,33 +1,33 @@
 ---
-title: Eliminar devoluciones de llamada de alerta
-description: Cuando se notifica al administrador del grupo de multidifusión que los receptores están abandonando un grupo en una interfaz, el administrador del grupo de multidifusión invoca la devolución de llamada de devolución de llamada de la alerta de eliminación de PMGM \_ \_ \_ .
+title: Devoluciones de llamada de alertas de prune
+description: Cuando se notifica al administrador de grupos de multidifusión que los receptores abandonan un grupo en una interfaz, el administrador de grupos de multidifusión invoca la devolución de llamada PMGM \_ PRUNE \_ ALERT \_ CALLBACK.
 ms.assetid: 34eb6941-9488-481f-93ca-821789acc140
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a81dab70eaded0fd1fe21bd1b5ec1b5ca495272
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5b5aa4d95742a2976ea46367b0f1af9442528c2821dc9d27b09b9e1c29eee6d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036405"
 ---
-# <a name="prune-alert-callbacks"></a>Eliminar devoluciones de llamada de alerta
+# <a name="prune-alert-callbacks"></a>Devoluciones de llamada de alertas de prune
 
-Cuando se notifica al administrador del grupo de multidifusión que los receptores están abandonando un grupo en una interfaz, el administrador del grupo de multidifusión invoca la devolución de llamada de devolución de llamada de la [**\_ alerta de eliminación de \_ \_ PMGM**](/windows/desktop/api/Mgm/nc-mgm-pmgm_prune_alert_callback) . Esta devolución de llamada notifica a los protocolos de enrutamiento que los clientes ya no pertenecen al grupo especificado. Por lo tanto, los protocolos de enrutamiento deben dejar de solicitar datos de multidifusión para los grupos especificados.
+Cuando se notifica al administrador de grupos de multidifusión que los receptores abandonan un grupo en una interfaz, el administrador de grupos de multidifusión invoca la devolución de llamada [**PMGM \_ PRUNE \_ ALERT \_ CALLBACK.**](/windows/desktop/api/Mgm/nc-mgm-pmgm_prune_alert_callback) Esta devolución de llamada notifica a los protocolos de enrutamiento que los clientes ya no pertenecen al grupo especificado. Por lo tanto, los protocolos de enrutamiento deben dejar de solicitar datos de multidifusión para los grupos especificados.
 
-El administrador del grupo de multidifusión tiene un conjunto predefinido de reglas que se utilizan para determinar cuándo se invoca esta devolución de llamada. Estas reglas se basan en el tipo de solicitud de eliminación enviada por el cliente y en el orden en que se recibieron las solicitudes de eliminación.
+El administrador de grupos de multidifusión tiene un conjunto predefinido de reglas que se usan para determinar cuándo se invoca esta devolución de llamada. Estas reglas se basan en el tipo de solicitud de prune enviada por el cliente y en el orden en que se recibieron las solicitudes de prune.
 
-## <a name="wildcard-prune-requests"></a>Solicitudes de eliminación de caracteres comodín
+## <a name="wildcard-prune-requests"></a>Solicitudes de prune con caracteres comodín
 
-Cuando se recibe una eliminación de caracteres comodín para un grupo ( \* , g) y se quita la interfaz final del segundo al último cliente (es decir, cuando se conservan interfaces para un solo cliente), el administrador del grupo de multidifusión invoca la devolución de llamada de devolución de llamada de la alerta de eliminación de PMGM al cliente [**\_ \_ \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_prune_alert_callback) restante. Después de quitar la interfaz final del último cliente (es decir, cuando no quedan otras interfaces), se invoca esta devolución de llamada para todos los demás clientes registrados con el administrador del grupo de multidifusión.
+Cuando se recibe una eliminación de caracteres comodín para un grupo ( , g) y se quita la interfaz final para el segundo y último cliente (es decir, cuando solo permanecen las interfaces para un solo cliente), el administrador de grupos de multidifusión invoca la devolución de llamada DE DEvolución de llamada de ALERTA DE \* [**\_ PRUNE \_ \_ PMGM**](/windows/desktop/api/Mgm/nc-mgm-pmgm_prune_alert_callback) a ese cliente restante. Después de quitar la interfaz final para el último cliente (es decir, cuando no quedan otras interfaces), se invoca esta devolución de llamada para todos los demás clientes registrados con el administrador de grupos de multidifusión.
 
-## <a name="source-specific-prune-requests"></a>Solicitudes de eliminación de Source-Specific
+## <a name="source-specific-prune-requests"></a>Source-Specific solicitudes de prune
 
-Cuando se recibe una eliminación específica del origen de un grupo (s, g), el administrador del grupo de multidifusión invoca la devolución de llamada de devolución de llamada de la alerta de eliminación de PMGM solo para el cliente que posee la interfaz de entrada hacia los orígenes. [**\_ \_ \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_prune_alert_callback)
+Cuando se recibe una poda específica de origen para un grupo (s, g), el administrador de grupos de multidifusión invoca la devolución de llamada DE DEvolución de llamada [**PMGM \_ PRUNE \_ ALERT \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_prune_alert_callback) solo para el cliente que posee la interfaz entrante hacia los de origen.
 
- 
+ 
 
- 
+ 
 
 
 
