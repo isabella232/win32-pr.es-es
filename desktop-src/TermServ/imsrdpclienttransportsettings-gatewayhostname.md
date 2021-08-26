@@ -1,12 +1,12 @@
 ---
-title: Propiedad GatewayHostname de IMsRdpClientTransportSettings
-description: Especifica el nombre de host del servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+title: Propiedad IMsRdpClientTransportSettings GatewayHostname
+description: Especifica el nombre de host del servidor Escritorio remoto gateway (puerta de enlace de Escritorio remoto).
 ms.assetid: 34c4b3b7-3768-4d98-b1e8-7fcb8f9c758d
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad GatewayHostname
-- Propiedad GatewayHostname Servicios de Escritorio remoto, interfaz IMsRdpClientTransportSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientTransportSettings, propiedad GatewayHostname
+- Propiedad GatewayHostname Servicios de Escritorio remoto
+- Propiedad GatewayHostname Servicios de Escritorio remoto , interfaz IMsRdpClientTransportSettings
+- Interfaz IMsRdpClientTransportSettings Servicios de Escritorio remoto , propiedad GatewayHostname
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03835faf48fa8aba557f82da158fdba827a84831
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: de618d31f4d0989ebce319260f0afe4548d658e3c28891a9d26dad0580d62452
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870845"
 ---
-# <a name="imsrdpclienttransportsettingsgatewayhostname-property"></a>IMsRdpClientTransportSettings:: GatewayHostname (propiedad)
+# <a name="imsrdpclienttransportsettingsgatewayhostname-property"></a>Propiedad IMsRdpClientTransportSettings::GatewayHostname
 
-Especifica el nombre de host del servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+Especifica el nombre de host del servidor Escritorio remoto gateway (puerta de enlace de Escritorio remoto).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,11 +49,11 @@ HRESULT get_GatewayHostname(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Cadena que contiene el nombre de host del servidor de puerta de enlace de escritorio remoto.
+Cadena que contiene el nombre de host del servidor de puerta de enlace de Escritorio remoto.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 5b3b6a69deeaa30c3fa0e16b1b36094dceaff304
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da5c26a0a9d7d080a9787fef0b7ba2fdb919e473fd66c989fca478c4ac7d0ac3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883525"
 ---
 # <a name="itabletcontextp-interface"></a>Interfaz ITabletContextP
 
@@ -27,35 +27,35 @@ Representa el contexto de la tableta.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **ITabletContextP** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITabletContextP** también tiene estos tipos de miembros:
+La **interfaz ITabletContextP** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITabletContextP también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **ITabletContextP** tiene estos métodos.
+La **interfaz ITabletContextP** tiene estos métodos.
 
 
 
 | Método                                                                                           | Descripción                                                                     |
 |:-------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| [**IsTopMostHook**](itabletcontextp-istopmosthook.md)                                           | Indica si el contexto de la tableta está en el enlace más alto.<br/>             |
-| [**Superpone**](itabletcontextp-overlap.md)                                                       | Mueve un contexto de tableta al principio o al final de la cola de entrada.<br/>      |
-| [**TrackInputRect**](itabletcontextp-trackinputrect.md)                                         | Actualiza el digitalizador de Tablet PC a las coordenadas de asignación de ubicación de la ventana.<br/> |
-| [**UseNamedSharedMemoryCommunications**](itabletcontextp-usenamedsharedmemorycommunications.md) | Proporciona acceso a la memoria compartida entre los subprocesos de tableta.<br/>             |
-| [**UseSharedMemoryCommunications**](itabletcontextp-usesharedmemorycommunications.md)           | Proporciona acceso a la memoria compartida entre los subprocesos de tableta.<br/>             |
+| [**IsTopMostHook**](itabletcontextp-istopmosthook.md)                                           | Indica si el contexto de la tableta está en la parte superior del enlace.<br/>             |
+| [**Traslapo**](itabletcontextp-overlap.md)                                                       | Mueve un contexto de tableta al frente o al final de la cola de entrada.<br/>      |
+| [**TrackInputRect**](itabletcontextp-trackinputrect.md)                                         | Actualiza el digitalizador de tabletas a coordenadas de asignación de ubicación de ventana.<br/> |
+| [**UseNamedSharedMemoryCommunications**](itabletcontextp-usenamedsharedmemorycommunications.md) | Proporciona acceso a la memoria compartida entre subprocesos de tableta.<br/>             |
+| [**UseSharedMemoryCommunications**](itabletcontextp-usesharedmemorycommunications.md)           | Proporciona acceso a la memoria compartida entre subprocesos de tableta.<br/>             |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los desarrolladores no deben utilizar esta interfaz.
+Los desarrolladores no deben usar esta interfaz.
 
 [**UseNamedSharedMemoryCommunications**](itabletcontextp-usenamedsharedmemorycommunications.md) solo está disponible en Windows Vista y versiones posteriores.
 
-En el código siguiente se describe cómo se define la interfaz **ITabletContextP** .
+En el código siguiente se describe cómo se define la interfaz **ITabletContextP.**
 
 ``` syntax
 [
@@ -101,7 +101,7 @@ interface ITabletContextP : ITabletContext
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

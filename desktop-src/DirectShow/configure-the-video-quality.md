@@ -1,49 +1,49 @@
 ---
-description: En este tema se describe cómo una aplicación puede cambiar mediante programación la configuración de la cámara y la imagen en un dispositivo de captura de vídeo.
+description: En este tema se describe cómo una aplicación puede cambiar mediante programación la configuración de la imagen y la cámara en un dispositivo de captura de vídeo.
 ms.assetid: f789db78-292e-4092-a5dc-1906845fb1dd
-title: Configurar la calidad del vídeo
+title: Configuración de la calidad del vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cb8d2d28e39f0083aac521f1953ebbb1ca8d5b6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c5987352eb329410efd3fc74d6bf12539e968da8e24d2f0a65af9c9ac7b5cb85
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103805690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871775"
 ---
-# <a name="configure-the-video-quality"></a>Configurar la calidad del vídeo
+# <a name="configure-the-video-quality"></a>Configuración de la calidad del vídeo
 
-En este tema se describe cómo una aplicación puede cambiar mediante programación la configuración de la cámara y la imagen en un dispositivo de captura de vídeo.
+En este tema se describe cómo una aplicación puede cambiar mediante programación la configuración de la imagen y la cámara en un dispositivo de captura de vídeo.
 
--   [Configuración de ProcAmp](#procamp-settings)
+-   [ProcAmp Configuración](#procamp-settings)
 -   [Configuración de la cámara](#camera-settings)
 -   [Temas relacionados](#related-topics)
 
-## <a name="procamp-settings"></a>Configuración de ProcAmp
+## <a name="procamp-settings"></a>ProcAmp Configuración
 
-Las cámaras de vídeo Modelo de controlador de Windows (WDM) pueden admitir propiedades que controlan la calidad de la imagen:
+Windows Las cámaras de vídeo del modelo de controlador (WDM) pueden admitir propiedades que controlan la calidad de la imagen:
 
--   Compensación de contraluz
+-   Compensación de retroiluminación
 -   Luminosidad
 -   Compare
--   Beneficios
+-   Ganar
 -   Gamma
 -   Matiz
 -   Saturación
 -   Nitidez
 -   Balance de blancos
 
-Estas propiedades se controlan a través de la interfaz [**IAMVideoProcAmp**](/windows/desktop/api/Strmif/nn-strmif-iamvideoprocamp) . Use esta interfaz como se indica a continuación:
+Estas propiedades se controlan a través de [**la interfaz IAMVideoProcAmp.**](/windows/desktop/api/Strmif/nn-strmif-iamvideoprocamp) Use esta interfaz como se muestra a continuación:
 
-1.  Llame a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el filtro de captura para la interfaz [**IAMVideoProcAmp**](/windows/desktop/api/Strmif/nn-strmif-iamvideoprocamp) .
-2.  Para cada propiedad que desee establecer, llame al método [**IAMVideoProcAmp:: GetRange**](/windows/desktop/api/Strmif/nf-strmif-iamvideoprocamp-getrange) . Las propiedades se especifican mediante la enumeración [**VideoProcAmpProperty**](/windows/win32/api/strmif/ne-strmif-videoprocampproperty) . Si se produce un error en el método **GetRange** , significa que la cámara no es compatible con esa propiedad determinada.
-3.  Si [**GetRange**](/windows/desktop/api/Strmif/nf-strmif-iamvideoprocamp-getrange) se ejecuta correctamente, devuelve el intervalo de valores admitidos para la propiedad, el valor predeterminado y el incremento mínimo.
-4.  Para obtener el valor actual de una propiedad, llame a [**IAMVideoProcAmp:: get**](/windows/desktop/api/Strmif/nf-strmif-iamvideoprocamp-get).
-5.  Para establecer una propiedad, llame al método [**IAMVideoProcAmp:: set**](/windows/desktop/api/Strmif/nf-strmif-iamvideoprocamp-set) . Para restaurar una propiedad a su valor predeterminado, llame a [**GetRange**](/windows/desktop/api/Strmif/nf-strmif-iamvideoprocamp-getrange) para buscar el valor predeterminado y pasarlo al método **set** .
+1.  Llame [**a QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el filtro de captura para [**la interfaz IAMVideoProcAmp.**](/windows/desktop/api/Strmif/nn-strmif-iamvideoprocamp)
+2.  Para cada propiedad que quiera establecer, llame al [**método IAMVideoProcAmp::GetRange.**](/windows/desktop/api/Strmif/nf-strmif-iamvideoprocamp-getrange) Las propiedades se especifican mediante la [**enumeración VideoProcAmpProperty.**](/windows/win32/api/strmif/ne-strmif-videoprocampproperty) Si se produce un error en el método **GetRange,** significa que la cámara no admite esa propiedad determinada.
+3.  Si [**GetRange se**](/windows/desktop/api/Strmif/nf-strmif-iamvideoprocamp-getrange) realiza correctamente, devuelve el intervalo de valores admitidos para la propiedad , el valor predeterminado y el incremento mínimo.
+4.  Para obtener el valor actual de una propiedad, llame a [**IAMVideoProcAmp::Get**](/windows/desktop/api/Strmif/nf-strmif-iamvideoprocamp-get).
+5.  Para establecer una propiedad, llame al [**método IAMVideoProcAmp::Set.**](/windows/desktop/api/Strmif/nf-strmif-iamvideoprocamp-set) Para restaurar una propiedad a su valor predeterminado, llame a [**GetRange**](/windows/desktop/api/Strmif/nf-strmif-iamvideoprocamp-getrange) para buscar el valor predeterminado y pasar ese valor al **método Set.**
 
 No es necesario detener el gráfico de filtros al establecer las propiedades.
 
-En el código siguiente se configura un control TrackBar para que se pueda usar para establecer el brillo. El intervalo de la barra de inicio corresponde al intervalo de brillo que admite el dispositivo y la posición de la barra de inicio corresponde a la configuración de brillo inicial del dispositivo.
+El código siguiente configura un control trackbar para que se pueda usar para establecer el brillo. El intervalo de la barra de seguimiento corresponde al intervalo de brillo que admite el dispositivo y la posición de la barra de seguimiento corresponde a la configuración de brillo inicial del dispositivo.
 
 
 ```C++
@@ -89,22 +89,22 @@ else
 
 ## <a name="camera-settings"></a>Configuración de la cámara
 
-La interfaz [**IAMCameraControl**](/windows/desktop/api/Strmif/nn-strmif-iamcameracontrol) es similar a [**IAMVideoProcAmp**](/windows/desktop/api/Strmif/nn-strmif-iamvideoprocamp), pero controla diversas configuraciones en la propia cámara:
+La [**interfaz IAMCameraControl**](/windows/desktop/api/Strmif/nn-strmif-iamcameracontrol) es similar a [**IAMVideoProcAmp,**](/windows/desktop/api/Strmif/nn-strmif-iamvideoprocamp)pero controla varios ajustes en la propia cámara:
 
 -   Exposure
 -   Foco
 -   Iris
 -   Movimiento panorámico
--   Volver
--   Cline
+-   Rodillo
+-   Inclinación
 -   Zoom
 
-Para usar esta interfaz, siga los mismos pasos que se usan para [**IAMVideoProcAmp**](/windows/desktop/api/Strmif/nn-strmif-iamvideoprocamp):
+Para usar esta interfaz, siga los mismos pasos que se usan [**para IAMVideoProcAmp**](/windows/desktop/api/Strmif/nn-strmif-iamvideoprocamp):
 
-1.  Consulte el filtro de captura para el [**IAMCameraControl**](/windows/desktop/api/Strmif/nn-strmif-iamcameracontrol).
-2.  Llame a [**IAMCameraControl:: GetRange**](/windows/desktop/api/Strmif/nf-strmif-iamcameracontrol-getrange) para averiguar qué valores de configuración se admiten y el intervalo posible para cada configuración.
-3.  Llame a [**IAMCameraControl:: get**](/windows/desktop/api/Strmif/nf-strmif-iamcameracontrol-get) para obtener el valor actual de una configuración.
-4.  Llame a [**IAMCameraControl:: set**](/windows/desktop/api/Strmif/nf-strmif-iamcameracontrol-set) para establecer el valor.
+1.  Consulte el filtro de captura para [**IAMCameraControl.**](/windows/desktop/api/Strmif/nn-strmif-iamcameracontrol)
+2.  Llame [**a IAMCameraControl::GetRange**](/windows/desktop/api/Strmif/nf-strmif-iamcameracontrol-getrange) para buscar qué configuración se admite y el intervalo posible para cada configuración.
+3.  Llame [**a IAMCameraControl::Get**](/windows/desktop/api/Strmif/nf-strmif-iamcameracontrol-get) para obtener el valor actual de una configuración.
+4.  Llame [**a IAMCameraControl::Set**](/windows/desktop/api/Strmif/nf-strmif-iamcameracontrol-set) para establecer el valor.
 
 ## <a name="related-topics"></a>Temas relacionados
 

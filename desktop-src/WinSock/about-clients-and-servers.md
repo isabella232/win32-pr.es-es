@@ -1,33 +1,33 @@
 ---
-description: 'Hay dos tipos distintos de aplicaciones de red de socket: servidor y cliente.'
+description: 'Hay dos tipos distintos de aplicaciones de red de socket: Servidor y Cliente.'
 ms.assetid: 05e42384-1746-462d-82c7-8df848b4525e
 title: Acerca de los servidores y clientes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a951d23ba1c6ad4f0f5ffd1f674b056a36c3f8dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07e6d8016d1fc9c23b901a03a924cd0e3ade3982dc2e1bf0db277eac47170d89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898645"
 ---
 # <a name="about-servers-and-clients"></a>Acerca de los servidores y clientes
 
-Hay dos tipos distintos de aplicaciones de red de socket: servidor y cliente.
+Hay dos tipos distintos de aplicaciones de red de socket: Servidor y Cliente.
 
-Los servidores y los clientes tienen distintos comportamientos. por lo tanto, el proceso de crearlos es diferente. A continuación se muestra el modelo general para crear un cliente y un servidor TCP/IP de transmisión por secuencias.
+Los servidores y los clientes tienen comportamientos diferentes; por lo tanto, el proceso de crearlos es diferente. Lo que sigue es el modelo general para crear un servidor TCP/IP de streaming y un cliente.
 
 ## <a name="server"></a>Servidor
 
 1.  Inicialice Winsock.
 2.  Cree un socket.
-3.  Enlazar el socket.
-4.  Escuche en el socket para un cliente.
-5.  Acepte una conexión desde un cliente.
+3.  Enlace el socket.
+4.  Escucha en el socket de un cliente.
+5.  Acepte una conexión de un cliente.
 6.  Recibir y enviar datos.
 7.  Desconectarte.
 
-## <a name="client"></a>Remoto
+## <a name="client"></a>Cliente
 
 1.  Inicialice Winsock.
 2.  Cree un socket.
@@ -36,17 +36,17 @@ Los servidores y los clientes tienen distintos comportamientos. por lo tanto, el
 5.  Desconectarte.
 
 > [!Note]  
-> Algunos de los pasos son los mismos para un cliente y un servidor. Estos pasos se implementan casi exactamente igual. Algunos de los pasos de esta guía serán específicos para el tipo de aplicación que se va a crear.
+> Algunos de los pasos son los mismos para un cliente y un servidor. Estos pasos se implementan casi exactamente iguales. Algunos de los pasos de esta guía serán específicos del tipo de aplicación que se va a crear.
 
  
 
-Primer paso: [creación de una aplicación de Winsock básica](creating-a-basic-winsock-application.md)
+Primer paso: [Creación de una aplicación Winsock básica](creating-a-basic-winsock-application.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Introducción con Winsock](getting-started-with-winsock.md)
+[Tareas iniciales con Winsock](getting-started-with-winsock.md)
 </dt> </dl>
 
  

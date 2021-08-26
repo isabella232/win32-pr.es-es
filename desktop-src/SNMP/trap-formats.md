@@ -1,45 +1,45 @@
 ---
 title: Formatos de captura
-description: El formato de las PDU de captura es diferente del de otras PDU. El formato de las capturas de SNMPv1 y las capturas de SNMPv2C también es diferente.
+description: El formato de las PDU de captura es diferente del de otras PDU. El formato de las capturas SNMPv1 y las capturas de SNMPv2C también es diferente.
 ms.assetid: 2d2b4520-28b7-4a2e-8dee-456e17d9d6f6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e87adc3222808fcc7e81904ade07c09afa13bc6d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b73e9cd2a5396bbe258fcb67c88cc207ea0243a9e8aff9f31e4866b9ee8adcc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885685"
 ---
 # <a name="trap-formats"></a>Formatos de captura
 
-El formato de las PDU de captura es diferente del de otras PDU. El formato de las capturas de SNMPv1 y las capturas de SNMPv2C también es diferente.
+El formato de las PDU de captura es diferente del de otras PDU. El formato de las capturas SNMPv1 y las capturas de SNMPv2C también es diferente.
 
-En el marco de SNMPv2C, el formato de reventado de PDU es una lista de enlaces variables de *n* entradas de enlace variable organizadas de la siguiente manera:
+En el marco SNMPv2C, el formato de captura de PDU es una lista de enlace de variables de *n* entradas de enlace de variables organizadas de la siguiente manera:
 
 -   La primera entrada de enlace de variable contiene una marca de tiempo.
--   La segunda entrada de enlace de variables es un identificador de objeto que identifica la captura.
--   Las demás entradas de enlace de variables, si están presentes, contienen información adicional *asociada a la* captura.
+-   La segunda entrada de enlace de variable es un identificador de objeto que identifica la captura.
+-   Las entradas de enlace de variables de la tercera a *n,* si están presentes, contienen información adicional asociada a la captura.
 
-En la plataforma SNMPv1, el formato de la captura PDU es el siguiente.
+En el marco SNMPv1, el formato de captura de PDU es el siguiente.
 
 | Campo                      | Descripción                                                      |
 |----------------------------|------------------------------------------------------------------|
 | empresa                 | Identifica el tipo de dispositivo que generó la captura.           |
-| Agent-addr                 | Identifica la dirección IP del dispositivo que generó la captura. |
-| captura de tipos genéricos y de captura específica | Identifica un tipo de captura predefinido.                               |
-| marca de tiempo                 | Identifica Cuándo se generó la captura.                          |
+| agent-addr                 | Identifica la dirección IP del dispositivo que generó la captura. |
+| generic-trap/specific-trap | Identifica un tipo de captura predefinido.                               |
+| marca de tiempo                 | Identifica cuándo se generó la captura.                          |
 | enlaces de variables          | Contiene información adicional asociada a la captura.        |
 
 
 
- 
+ 
 
-La función [**SnmpRecvMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg) siempre devuelve un mensaje en el formato SNMPv2c. Si el mensaje contiene el tipo de **operación \_ \_ captura de PDU de SNMP**, la aplicación puede leer las entradas de enlace de variables del mensaje y recuperar la información asociada a la captura.
+La [**función SnmpRecvMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg) siempre devuelve un mensaje en formato SNMPv2C. Si el mensaje contiene el tipo de operación **\_ SNMP PDU \_ TRAP**, la aplicación puede leer las entradas de enlace de variables del mensaje y recuperar la información asociada a la captura.
 
- 
+ 
 
- 
+ 
 
 
 

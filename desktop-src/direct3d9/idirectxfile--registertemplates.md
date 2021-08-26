@@ -1,7 +1,7 @@
 ---
 description: Registra plantillas personalizadas. En desuso.
 ms.assetid: f9b24800-83a5-45bf-b19f-b247c88a2c2c
-title: 'IDirectXFile:: RegisterTemplates (método) (DXFile. h)'
+title: Método IDirectXFile::RegisterTemplates (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 683a495398e7fe0718ee0642c7760b0a8590538c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 685e97ec28241348ff4a969c444b6da5638aeba01af8be35cc5490a0d2be0a95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105670225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846965"
 ---
-# <a name="idirectxfileregistertemplates-method"></a>IDirectXFile:: RegisterTemplates (método)
+# <a name="idirectxfileregistertemplates-method"></a>IDirectXFile::RegisterTemplates (método)
 
 Registra plantillas personalizadas. En desuso.
 
@@ -41,16 +41,16 @@ HRESULT RegisterTemplates(
 
 <dl> <dt>
 
-*pvData* \[ de\]
+*pvData* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntero a un búfer que se compone de un archivo de DirectX en formato de texto o binario que contiene plantillas.
+Puntero a un búfer que consta de un archivo DirectX en formato de texto o binario que contiene plantillas.
 
 </dd> <dt>
 
-*cbSize* \[ de\]
+*cbSize* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -63,11 +63,11 @@ Tamaño del búfer al que apunta pvData, en bytes.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: DXFILEERR \_ BADFILEFLOATSIZE, DXFILEERR \_ BADFILETYPE, DXFILEERR \_ BADFILEVERSION, DXFILEERR \_ BADVALUE, DXFILEERR \_ Nº.
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: DXFILEERR \_ BADFILEFLOATSIZE, DXFILEERR \_ BADFILETYPE, DXFILEERR \_ BADFILEVERSION, DXFILEERR \_ BADVALUE, DXFILEERR \_ PARSEERROR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El siguiente fragmento de código proporciona una llamada de ejemplo a **RegisterTemplates** y el contenido de ejemplo para el búfer al que apunta pvData.
+El fragmento de código siguiente proporciona una llamada de ejemplo **a RegisterTemplates** y el contenido de ejemplo para el búfer al que apunta pvData.
 
 
 ```
@@ -97,8 +97,8 @@ Todas las plantillas deben especificar un nombre y un identificador único unive
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

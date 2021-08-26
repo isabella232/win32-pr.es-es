@@ -1,5 +1,5 @@
 ---
-description: 'Método Shell.DisposePC: expulsa el equipo de su estación de acoplamiento. Esto es lo mismo que hacer clic en menú Inicio y seleccionar Expulsión de PC, si el equipo admite este comando.'
+description: 'Método Shell.DisposePC: expulsa el equipo de su estación de acoplamiento. Esto es lo mismo que hacer clic en el menú Inicio y seleccionar Expulsar PC, si el equipo admite este comando.'
 ms.assetid: eaba3dce-8fea-453f-90c2-4a9b5cb05ecc
 title: Método Shell.DisposePC (Shldisp.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5ec08aaa82d2f752fa06537434adede86b9d5a3a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3f774b666647ebf8a255950fe8427a87e55ca514db9ed841a5fc7f2e7edb2e69
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883885"
 ---
 # <a name="shellejectpc-method"></a>Método Shell.DisposePC
 
@@ -57,9 +57,9 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **muestra Desanudpc** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **muestra Desanudpc** en uso. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -113,9 +113,9 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

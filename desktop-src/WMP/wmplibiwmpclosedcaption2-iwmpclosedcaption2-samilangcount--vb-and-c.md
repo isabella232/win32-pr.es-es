@@ -3,9 +3,9 @@ title: Propiedad SAMILangCount de IWMPClosedCaption2
 description: La propiedad SAMILangCount obtiene el número de idiomas admitidos por el archivo SAMI actual.
 ms.assetid: e3c7203d-66cb-49e2-9204-795c0f27248f
 keywords:
-- Propiedades de SAMILangCount Media Player de Windows
-- Propiedad SAMILangCount de Windows Media Player, interfaz IWMPClosedCaption2
-- Interfaz IWMPClosedCaption2 Windows Media Player, propiedad SAMILangCount
+- Propiedad SAMILangCount Reproductor de Windows Media
+- Propiedad SAMILangCount Reproductor de Windows Media , interfaz IWMPClosedCaption2
+- Interfaz IWMPClosedCaption2 Reproductor de Windows Media , propiedad SAMILangCount
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea01357de508dea319389cd14ab85ebafe0329e6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 23b85ce04bd672f0219b8dd96f91172241689a80042a37a7680e2f8e26b65c85
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900005"
 ---
-# <a name="iwmpclosedcaption2samilangcount-property"></a>IWMPClosedCaption2:: SAMILangCount (propiedad)
+# <a name="iwmpclosedcaption2samilangcount-property"></a>IWMPClosedCaption2::SAMILangCount, propiedad
 
-La propiedad **SAMILangCount** obtiene el número de idiomas admitidos por el archivo Sami actual.
+La **propiedad SAMILangCount** obtiene el número de idiomas admitidos por el archivo SAMI actual.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,19 +46,19 @@ Public ReadOnly Property SAMILangCount As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el número de idiomas admitidos.
+**System.Int32 que** es el número de idiomas admitidos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad devuelve 0 a menos que haya un archivo multimedia digital abierto (AxWindowsMediaPlayer. openState es igual a 13).
+Esta propiedad devuelve 0 a menos que un archivo multimedia digital esté abierto (AxWindowsMediaPlayer.openState es igual a 13).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -68,19 +68,19 @@ Esta propiedad devuelve 0 a menos que haya un archivo multimedia digital abierto
 
 <dl> <dt>
 
-[**Agregar subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
+[**Adición de subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Interfaz IWMPClosedCaption (VB y C#)**](iwmpclosedcaption--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPClosedCaption. SAMILang (VB y C#)**](wmplibiwmpclosedcaption-iwmpclosedcaption-samilang--vb-and-c.md)
+[**IWMPClosedCaption.SAMILang (VB y C#)**](wmplibiwmpclosedcaption-iwmpclosedcaption-samilang--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPClosedCaption2 (VB y C#)**](iwmpclosedcaption2--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPClosedCaption2. getSAMILangName (VB y C#)**](wmplibiwmpclosedcaption2-iwmpclosedcaption2-getsamilangname--vb-and-c.md)
+[**IWMPClosedCaption2.getSAMILangName (VB y C#)**](wmplibiwmpclosedcaption2-iwmpclosedcaption2-getsamilangname--vb-and-c.md)
 </dt> </dl>
 
  

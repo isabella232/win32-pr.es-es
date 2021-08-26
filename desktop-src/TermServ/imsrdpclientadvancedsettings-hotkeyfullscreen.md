@@ -1,26 +1,26 @@
 ---
-title: Propiedad HotKeyFullScreen de IMsRdpClientAdvancedSettings
-description: Especifica el código de tecla virtual que se va a agregar a CTRL + ALT para determinar el reemplazo de la tecla de cambio de teclas para cambiar al modo de pantalla completa.
+title: Propiedad IMsRdpClientAdvancedSettings HotKeyFullScreen
+description: Especifica el código de clave virtual que se agregará a CTRL+ALT para determinar el reemplazo de la tecla de acceso rápido para cambiar al modo de pantalla completa.
 ms.assetid: 75fda212-ec68-4b68-b7db-2bfcdee7a7de
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad HotKeyFullScreen
-- Propiedad HotKeyFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad HotKeyFullScreen
-- Propiedad HotKeyFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad HotKeyFullScreen
-- Propiedad HotKeyFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad HotKeyFullScreen
-- Propiedad HotKeyFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad HotKeyFullScreen
-- Propiedad HotKeyFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad HotKeyFullScreen
-- Propiedad HotKeyFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad HotKeyFullScreen
-- Propiedad HotKeyFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad HotKeyFullScreen
-- Propiedad HotKeyFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad HotKeyFullScreen
+- Propiedad HotKeyFullScreen Servicios de Escritorio remoto
+- Propiedad HotKeyFullScreen Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad HotKeyFullScreen
+- Propiedad HotKeyFullScreen Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad HotKeyFullScreen
+- Propiedad HotKeyFullScreen Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad HotKeyFullScreen
+- Propiedad HotKeyFullScreen Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad HotKeyFullScreen
+- Propiedad HotKeyFullScreen Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad HotKeyFullScreen
+- Propiedad HotKeyFullScreen Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad HotKeyFullScreen
+- Propiedad HotKeyFullScreen Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad HotKeyFullScreen
+- Propiedad HotKeyFullScreen Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad HotKeyFullScreen
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed9c53dd0c6dff9e47b87ea8c8697c20b3613a14
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3276551c826c09b60c94a637194358093dafe7ce67094af085093f65d91e1668
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871005"
 ---
-# <a name="imsrdpclientadvancedsettingshotkeyfullscreen-property"></a>IMsRdpClientAdvancedSettings:: HotKeyFullScreen (propiedad)
+# <a name="imsrdpclientadvancedsettingshotkeyfullscreen-property"></a>IMsRdpClientAdvancedSettings::HotKeyFullScreen, propiedad
 
-Especifica el código de tecla virtual que se va a agregar a CTRL + ALT para determinar el reemplazo de la tecla de cambio de teclas para cambiar al modo de pantalla completa.
+Especifica el código de clave virtual que se agregará a CTRL+ALT para determinar el reemplazo de la tecla de acceso rápido para cambiar al modo de pantalla completa.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -84,15 +84,15 @@ HRESULT get_HotKeyFullScreen(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El nuevo código de tecla virtual. **VK \_ CANCEL** es el valor predeterminado.
+Nuevo código de clave virtual. **VK \_ CANCEL** es el valor predeterminado.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

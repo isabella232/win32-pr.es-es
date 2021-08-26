@@ -4,33 +4,33 @@ ms.assetid: f8b60a75-9c0e-41c5-b6af-6a05a26b2d71
 title: Acción RegisterClassInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd916772bc236dfc86df336347514c10d5dfbce7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1a0983b77c517cb2084b21d6d1500ec9b2a54b45d403c43f65bcc29505e2afe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912895"
 ---
 # <a name="registerclassinfo-action"></a>Acción RegisterClassInfo
 
-La acción RegisterClassInfo administra el registro de información de clase COM con el sistema. Usa la [tabla AppID](appid-table.md).
+La acción RegisterClassInfo administra el registro de información de clase COM con el sistema. Usa la [tabla AppId](appid-table.md).
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
-La acción RegisterClassInfo debe aparecer después de la acción [InstallFiles](installfiles-action.md) y la acción [UnregisterClassInfo](unregisterclassinfo-action.md) .
+La acción RegisterClassInfo debe ir después de [la acción InstallFiles](installfiles-action.md) y [la acción UnregisterClassInfo.](unregisterclassinfo-action.md)
 
-La secuenciación de las acciones del grupo siguiente está restringida. Si un subconjunto de estas acciones se produce juntos en una tabla de secuencia, deben tener el mismo orden de secuencia relativo que se muestra:
+La secuenciación de las acciones del siguiente grupo está restringida. Si algún subconjunto de estas acciones se produce junto en una tabla de secuencias, debe tener el mismo orden de secuencia relativo que se muestra:
 
 -   [UnregisterClassInfo](unregisterclassinfo-action.md)
 -   [UnregisterExtensionInfo](unregisterextensioninfo-action.md)
 -   [UnregisterProgIdInfo](unregisterprogidinfo-action.md)
--   [UnregisterMIMEInfo](unregistermimeinfo-action.md)
+-   [Anulación del registroMIMEInfo](unregistermimeinfo-action.md)
 -   RegisterClassInfo
 -   [RegisterExtensionInfo](registerextensioninfo-action.md)
 -   [RegisterProgIdInfo](registerprogidinfo-action.md)
 -   [RegisterMIMEInfo](registermimeinfo-action.md)
 
-Por ejemplo, RegisterClassInfo debe aparecer después de [UnregisterMIMEInfo](unregistermimeinfo-action.md) en la tabla de secuencia.
+Por ejemplo, RegisterClassInfo debe ir después [de UnregisterMIMEInfo en](unregistermimeinfo-action.md) la tabla de secuencia.
 
 ## <a name="actiondata-messages"></a>Mensajes ActionData
 
@@ -44,9 +44,9 @@ Por ejemplo, RegisterClassInfo debe aparecer después de [UnregisterMIMEInfo](un
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el sistema admite la instalación a petición para los servidores OLE, RegisterClassInfo registra todas las clases COM en la [tabla de clases](class-table.md) asociada a una característica seleccionada que se va a instalar o anunciar. De lo contrario, esta acción solo registra las clases COM asociadas a una característica seleccionada para su instalación.
+Si el sistema admite la instalación a petición de servidores OLE, [](class-table.md) RegisterClassInfo registra todas las clases COM de la tabla Clase asociada a una característica seleccionada para instalarse o anunciarse. De lo contrario, esta acción solo registra las clases COM asociadas a una característica seleccionada para la instalación.
 
 ## <a name="related-topics"></a>Temas relacionados
 

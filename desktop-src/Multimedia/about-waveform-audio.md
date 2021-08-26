@@ -1,40 +1,40 @@
 ---
-title: Acerca del audio de onda
-description: Acerca del audio de onda
+title: Acerca del audio de forma de onda
+description: Acerca del audio de forma de onda
 ms.assetid: 2d886488-bdab-4422-b89e-15140d86fe48
 keywords:
-- Multimedia de Windows, audio de onda
-- multimedia, audio de onda
-- audio multimedia, de onda
-- audio, de onda
-- audio de una onda, acerca de
-- audio multimedia, función PlaySound
-- audio, función PlaySound
-- audio de onda, función PlaySound
+- Windows multimedia, audio de forma de onda
+- multimedia, audio de forma de onda
+- audio multimedia, forma de onda
+- audio, forma de onda
+- audio de forma de onda, acerca de
+- audio multimedia, función Play Sound
+- audio, función Play Sound
+- audio de forma de onda, función PlaySound
 - Función PlaySound, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6793e7f15756038083b2e399f143f80bdda12c02
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4d7d9805e4be4e754efbb73d7745c834c9dc3d1f48a1f02a9a99b7877bc24306
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808705"
 ---
-# <a name="about-waveform-audio"></a>Acerca del audio de onda
+# <a name="about-waveform-audio"></a>Acerca del audio de forma de onda
 
-Hay varios métodos para agregar sonido a la aplicación mediante audio de onda. El método más sencillo que se documenta aquí es el uso de la función [**PlaySound**](/previous-versions//dd743680(v=vs.85)) . La mayoría de los demás elementos de la API de audio de onda son relativamente de bajo nivel.
+Hay varios métodos para agregar sonido a la aplicación mediante audio de forma de onda. El método más sencillo que se documenta aquí es el del uso de la [**función PlaySound.**](/previous-versions//dd743680(v=vs.85)) La mayoría de los demás elementos de API de audio de forma de onda son de nivel relativamente bajo.
 
 Para obtener más información, vea los temas siguientes:
 
 -   [Reproducción de audio simple](simple-audio-playback.md)
--   [Onda: interfaz de audio](waveform-audio-interface.md)
+-   [Interfaz audio-forma de onda](waveform-audio-interface.md)
 -   [Interfaz de audio auxiliar](auxiliary-audio-interface.md)
 -   [Bloques de datos de audio](audio-data-blocks.md)
 -   [Control de errores con funciones de audio](handling-errors-with-audio-functions.md)
 
-Además de las API descritas aquí, la interfaz de control de medios se puede usar para reproducir audio de forma de onda, así como otros medios, como sonidos y vídeo MIDI. Para obtener más información, consulte [MCI](mci.md).
+Además de las API que se analizan aquí, la interfaz de control multimedia se puede usar para reproducir audio de forma de onda, así como otros medios, como sonidos y vídeo DE LÍNEA. Para obtener más información, vea [MCI](mci.md).
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de DTN_CLOSEUP (commctrl. h)
-description: Se envía mediante un control de selector de fecha y hora (DTP) cuando el usuario cierra el calendario del mes desplegable.
+title: DTN_CLOSEUP de notificación (Commctrl.h)
+description: Enviado por un control selector de fecha y hora (DTP) cuando el usuario cierra el calendario de mes desplegable.
 ms.assetid: 94ace714-55cc-4c59-8b87-8d0348b15f34
 keywords:
-- DTN_CLOSEUP controles de código de notificación de Windows
+- DTN_CLOSEUP código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cfcfb23215aeffe15bec576075fd4d930790e47
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a97cd2d799d05afc638b60adc9203eaad80feb159f985df8b3813403bf5ca0d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877725"
 ---
-# <a name="dtn_closeup-notification-code"></a>Código de notificación de primer plano de DTN \_
+# <a name="dtn_closeup-notification-code"></a>Código de notificación DE CIERRE DE DTN \_
 
-Se envía mediante un control de selector de fecha y hora (DTP) cuando el usuario cierra el calendario del mes desplegable. El calendario mensual se cierra cuando el usuario elige una fecha en el calendario mensual o hace clic en la flecha desplegable mientras el calendario está abierto. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control selector de fecha y hora (DTP) cuando el usuario cierra el calendario de mes desplegable. El calendario mensual se cierra cuando el usuario elige una fecha del calendario mensual o hace clic en la flecha desplegable mientras el calendario está abierto. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,17 +41,17 @@ DTN_CLOSEUP
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información sobre la notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información sobre la notificación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto para esta notificación.
+No se usa el valor devuelto para esta notificación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los controles de DTP no mantienen un control de calendario mensual secundario estático. El control de DTP destruye el control de calendario mensual secundario antes de enviar este código de notificación. Por lo tanto, la aplicación no debe basarse en un identificador de ventana estático para el calendario mensual del control.
+Los controles DTP no mantienen un control de calendario de mes secundario estático. El control DTP destruye el control de calendario del mes secundario antes de enviar este código de notificación. Por lo tanto, la aplicación no debe basarse en un identificador de ventana estático para el calendario del mes secundario del control.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Los controles de DTP no mantienen un control de calendario mensual secundario es
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Los controles de DTP no mantienen un control de calendario mensual secundario es
 **Referencia**
 </dt> <dt>
 
-[\_lista desplegable DTN](dtn-dropdown.md)
+[LISTA DESPLEGABLE DE DTN \_](dtn-dropdown.md)
 </dt> <dt>
 
 [**DTM \_ GETMONTHCAL**](dtm-getmonthcal.md)

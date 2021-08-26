@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMSecurity GetRevocationDataVersion (wmdrmsdk. h)
+title: Método IWMDRMSecurity GetRevocationDataVersion (Wmdrmsdk.h)
 description: El método GetRevocationDataVersion recupera el número de versión de una lista de revocación de certificados en el almacén local.
 ms.assetid: 2fa13b38-02c2-4c81-938b-409cadca00fb
 keywords:
-- Método GetRevocationDataVersion formato de Windows Media
-- Método GetRevocationDataVersion formato de Windows Media, interfaz IWMDRMSecurity
-- Interfaz IWMDRMSecurity formato de Windows Media, método GetRevocationDataVersion
+- Formato multimedia de windows del método GetRevocationDataVersion
+- Método GetRevocationDataVersion windows Media Format , interfaz IWMDRMSecurity
+- IWMDRMSecurity interface windows Media Format , GetRevocationDataVersion method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 705f02622b7298134328b513aa038804995eb1c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d139b2daf3f3bc6ad78beaa50e19c0141aecd5e8bedac2dd20582fb1536d9b74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930785"
 ---
-# <a name="iwmdrmsecuritygetrevocationdataversion-method"></a>IWMDRMSecurity:: GetRevocationDataVersion (método)
+# <a name="iwmdrmsecuritygetrevocationdataversion-method"></a>IWMDRMSecurity::GetRevocationDataVersion (método)
 
-El método **GetRevocationDataVersion** recupera el número de versión de una lista de revocación de certificados en el almacén local.
+El **método GetRevocationDataVersion** recupera el número de versión de una lista de revocación de certificados en el almacén local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ HRESULT GetRevocationDataVersion(
 
 <dl> <dt>
 
-*f \_ guidRevocationType* \[\]
+*f \_ guidRevocationType* \[ en\]
 </dt> <dd>
 
 GUID que especifica el tipo de lista de revocación. Establezca en una de las constantes de la tabla siguiente.
@@ -53,9 +53,9 @@ GUID que especifica el tipo de lista de revocación. Establezca en una de las co
 
 | Constante GUID                 | Descripción                                                                      |
 |-------------------------------|----------------------------------------------------------------------------------|
-| \_aplicación REVOCATIONTYPE de WMDRM \_    | Especifica la lista de revocación de certificados de la aplicación.                           |
-| \_dispositivo REVOCATIONTYPE \_ WMDRM | Especifica la lista de revocación de certificados de dispositivo.                                |
-| \_CARDEA REVOCATIONTYPE \_ WMDRM | Especifica la lista de revocación de certificados de DRM de Windows Media para dispositivos de red. |
+| APLICACIÓN WMDRM \_ \_ REVOCATIONTYPE    | Especifica la lista de revocación de certificados de aplicación.                           |
+| WMDRM \_ REVOCATIONTYPE \_ DEVICE | Especifica la lista de revocación de certificados de dispositivo.                                |
+| WMDRM \_ REVOCATIONTYPE \_ CARDEA | Especifica la lista Windows revocación de certificados de DRM multimedia para dispositivos de red. |
 
 
 
@@ -63,7 +63,7 @@ GUID que especifica el tipo de lista de revocación. Establezca en una de las co
 
 </dd> <dt>
 
-*f \_ pdwCRLVersion* \[\]
+*f \_ pdwCRLVersion* \[ out\]
 </dt> <dd>
 
 Variable que recibe el número de versión.
@@ -72,13 +72,13 @@ Variable que recibe el número de versión.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -90,8 +90,8 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -99,7 +99,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**Revocación y renovación de componentes automatizados**](automated-component-revocation-and-renewal.md)
+[**Revocación y renovación automatizadas de componentes**](automated-component-revocation-and-renewal.md)
 </dt> <dt>
 
 [**GetRevocationData**](iwmdrmsecurity-getrevocationdata.md)

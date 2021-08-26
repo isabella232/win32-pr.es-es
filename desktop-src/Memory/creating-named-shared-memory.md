@@ -1,29 +1,29 @@
 ---
-description: Para compartir datos, varios procesos pueden usar archivos asignados a memoria que almacena el archivo de paginación del sistema.
+description: Para compartir datos, varios procesos pueden usar archivos asignados a memoria que almacena el sistema de archivos de paginación.
 ms.assetid: 17458be2-3ef7-42f2-a717-abf73ac4846f
-title: Crear memoria compartida con nombre
+title: Creación de memoria compartida con nombre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18ac708497ceb12ed099c7a9c0b3788d7a05a925
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2fc5ec3d9865d310807d01ac9f76967d4378fc92e4c9588d00b2933a08c953f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869925"
 ---
-# <a name="creating-named-shared-memory"></a>Crear memoria compartida con nombre
+# <a name="creating-named-shared-memory"></a>Creación de memoria compartida con nombre
 
-Para compartir datos, varios procesos pueden usar archivos asignados a memoria que almacena el archivo de paginación del sistema.
+Para compartir datos, varios procesos pueden usar archivos asignados a memoria que almacena el sistema de archivos de paginación.
 
 ## <a name="first-process"></a>Primer proceso
 
-El primer proceso crea el objeto de asignación de archivos llamando a la función [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) con un **\_ \_ valor de identificador no válido** y un nombre para el objeto. Mediante el uso de la marca **\_ ReadWrite de página** , el proceso tiene permiso de lectura y escritura en la memoria a través de cualquier vista de archivo que se cree.
+El primer proceso crea el objeto de asignación de archivos llamando a la [**función CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) con **INVALID HANDLE \_ \_ VALUE** y un nombre para el objeto. Mediante el uso **de la marca PAGE \_ READWRITE,** el proceso tiene permiso de lectura y escritura en la memoria a través de las vistas de archivo que se crean.
 
-Después, el proceso usa el identificador de objeto de asignación de archivos que [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) devuelve en una llamada a [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para crear una vista del archivo en el espacio de direcciones de proceso. La función **MapViewOfFile** devuelve un puntero a la vista de archivo, `pBuf` . Después, el proceso utiliza la función [**CopyMemory**](/previous-versions/windows/desktop/legacy/aa366535(v=vs.85)) para escribir una cadena en la vista a la que pueden tener acceso otros procesos.
+A continuación, el proceso usa el identificador de objeto de asignación de archivos que [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) devuelve en una llamada a [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para crear una vista del archivo en el espacio de direcciones del proceso. La **función MapViewOfFile** devuelve un puntero a la vista de archivo, `pBuf` . A continuación, el proceso usa [**la función CopyMemory**](/previous-versions/windows/desktop/legacy/aa366535(v=vs.85)) para escribir una cadena en la vista a la que pueden tener acceso otros procesos.
 
-El prefijo de los nombres de objeto de asignación de archivos con "global \\ " permite a los procesos comunicarse entre sí incluso si se encuentran en sesiones de Terminal Server diferentes. Esto requiere que el primer proceso tenga el privilegio [**SeCreateGlobalPrivilege**](../secauthz/privilege-constants.md) .
+El prefijo de los nombres de objeto de asignación de archivos con "Global" permite que los procesos se comuniquen entre sí incluso si se encuentran \\ en sesiones de terminal Server diferentes. Esto requiere que el primer proceso tenga el [**privilegio SeCreateGlobalPrivilege.**](../secauthz/privilege-constants.md)
 
-Cuando el proceso ya no necesita tener acceso al objeto de asignación de archivos, debe llamar a la función [**CloseHandle**](/windows/win32/api/handleapi/nf-handleapi-closehandle) . Cuando se cierran todos los identificadores, el sistema puede liberar la sección del archivo de paginación que utiliza el objeto.
+Cuando el proceso ya no necesita acceso al objeto de asignación de archivos, debe llamar a la [**función CloseHandle.**](/windows/win32/api/handleapi/nf-handleapi-closehandle) Cuando se cierran todos los identificadores, el sistema puede liberar la sección del archivo de paginación que usa el objeto .
 
 
 ```C++
@@ -87,7 +87,7 @@ int _tmain()
 
 ## <a name="second-process"></a>Segundo proceso
 
-Un segundo proceso puede tener acceso a la cadena escrita en la memoria compartida por el primer proceso mediante una llamada a la función [**OpenFileMapping**](/windows/desktop/api/WinBase/nf-winbase-openfilemappinga) que especifica el mismo nombre para el objeto de asignación que el primer proceso. Después, puede usar la función [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para obtener un puntero a la vista de archivo, `pBuf` . El proceso puede mostrar esta cadena como cualquier otra cadena. En este ejemplo, el cuadro de mensaje que se muestra contiene el mensaje "mensaje del primer proceso" escrito por el primer proceso.
+Un segundo proceso puede acceder a la cadena escrita en la memoria compartida mediante el primer proceso llamando a la función [**OpenFileMapping**](/windows/desktop/api/WinBase/nf-winbase-openfilemappinga) especificando el mismo nombre para el objeto de asignación que el primer proceso. A continuación, puede usar [**la función MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para obtener un puntero a la vista de archivo, `pBuf` . El proceso puede mostrar esta cadena como lo haría con cualquier otra cadena. En este ejemplo, el cuadro de mensaje que se muestra contiene el mensaje "Mensaje del primer proceso" escrito por el primer proceso.
 
 
 ```C++
@@ -149,7 +149,7 @@ int _tmain()
 
 <dl> <dt>
 
-[Compartir archivos y memoria](sharing-files-and-memory.md)
+[Uso compartido de archivos y memoria](sharing-files-and-memory.md)
 </dt> </dl>
 
  

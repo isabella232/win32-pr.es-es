@@ -1,11 +1,11 @@
 ---
-title: IDWriteLocalFontFileLoader GetFilePathFromKey, método
-description: Obtiene la ruta de acceso del archivo de fuentes absolutas de la clave de referencia del archivo de fuente.
+title: Método IDWriteLocalFontFileLoader GetFilePathFromKey
+description: Obtiene la ruta de acceso absoluta del archivo de fuente de la clave de referencia del archivo de fuente.
 ms.assetid: a61cfe80-100d-4813-b04f-a39f626893dd
 keywords:
-- Método GetFilePathFromKey de escritura directa
-- Método GetFilePathFromKey de escritura directa, interfaz IDWriteLocalFontFileLoader
-- Interfaz IDWriteLocalFontFileLoader Direct Write, método GetFilePathFromKey
+- Método GetFilePathFromKey Direct Write
+- Método GetFilePathFromKey direct write , interfaz IDWriteLocalFontFileLoader
+- IdWriteLocalFontFileLoader interface Direct Write , Método GetFilePathFromKey
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14fb3070ddc2f0d82554c86f005343faa3c087fe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7739cfa4a03abb3506bd63a84e0c747021110198f7d0ffefa69116656cbfa616
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928035"
 ---
-# <a name="idwritelocalfontfileloadergetfilepathfromkey-method"></a>IDWriteLocalFontFileLoader:: GetFilePathFromKey (método)
+# <a name="idwritelocalfontfileloadergetfilepathfromkey-method"></a>Método IDWriteLocalFontFileLoader::GetFilePathFromKey
 
-Obtiene la ruta de acceso del archivo de fuentes absolutas de la clave de referencia del archivo de fuente.
+Obtiene la ruta de acceso absoluta del archivo de fuente de la clave de referencia del archivo de fuente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,12 +45,12 @@ virtual HRESULT GetFilePathFromKey(
 
 <dl> <dt>
 
-*fontFileReferenceKey* \[ de\]
+*fontFileReferenceKey* \[ En\]
 </dt> <dd>
 
-Tipo: **const void \***
+Tipo: **const \* void**
 
-Clave de referencia del archivo de fuente que identifica de forma única el archivo de fuente local dentro del ámbito del cargador de fuentes que se utiliza.
+Clave de referencia del archivo de fuente que identifica de forma única el archivo de fuente local dentro del ámbito del cargador de fuentes que se está utilizando.
 
 </dd> <dt>
 
@@ -59,11 +59,11 @@ Clave de referencia del archivo de fuente que identifica de forma única el arch
 
 Tipo: **UINT32**
 
-Tamaño de la clave de referencia del archivo de fuentes en bytes.
+Tamaño de la clave de referencia del archivo de fuente en bytes.
 
 </dd> <dt>
 
-*filePath* \[ enuncia\]
+*filePath* \[ out\]
 </dt> <dd>
 
 Tipo: **WCHAR \***
@@ -77,7 +77,7 @@ Matriz de caracteres que recibe la ruta de acceso del archivo local.
 
 Tipo: **UINT32**
 
-Longitud de la matriz de caracteres de la ruta de acceso del archivo.
+Longitud de la matriz de caracteres de ruta de acceso de archivo.
 
 </dd> </dl>
 
@@ -85,15 +85,15 @@ Longitud de la matriz de caracteres de la ruta de acceso del archivo.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Dwrite. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 863d471f-b8c4-4670-85fc-cd8535a1ff78
 title: D3DX10CompileShaderFromMemory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbfe3f8e7a4870b3cd124eea7d617d4a47f45209
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: e030dd084438a6411a7e0018ede63b546247c46789c0074078ef4a73c32881ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852395"
 ---
 # <a name="d3dx10compileshaderfrommemory"></a>D3DX10CompileShaderFromMemory
 

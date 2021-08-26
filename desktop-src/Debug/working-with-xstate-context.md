@@ -1,21 +1,21 @@
 ---
 description: Este documento contiene un ejemplo que muestra cómo usar las funciones de contexto XState para recuperar y establecer características extendidas en un subproceso.
 ms.assetid: F7937402-1173-4647-B9FF-856C0925C1C3
-title: Trabajar con el contexto XState
+title: Trabajar con contexto XState
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ca58a8fadb4404e2f6fc431b7b7d2a9d7f583f4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6300049f96ff6e7c1fb51759978f84e6c93c305de559a527c9791f2d33f87150
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912225"
 ---
-# <a name="working-with-xstate-context"></a>Trabajar con el contexto XState
+# <a name="working-with-xstate-context"></a>Trabajar con contexto XState
 
-Este documento contiene un ejemplo que muestra cómo usar las funciones de contexto XState para recuperar y establecer características extendidas en un subproceso. En los siguientes ejemplos se manipula el estado de las extensiones de vector avanzadas (AVX) de Intel, que se define mediante FeatureId 2 (máscara de características 4). Intel AVX se define en "referencia de programación de extensiones de vector avanzadas de Intel", disponible en <https://go.microsoft.com/fwlink/p/?linkid=212716> .
+Este documento contiene un ejemplo que muestra cómo usar las funciones de contexto XState para recuperar y establecer características extendidas en un subproceso. En los ejemplos siguientes se manipula el estado de las extensiones de vector avanzado (AVX) intel definidas por FeatureId 2 (Feature Mask 4). Intel AVX se define en la "Referencia de programación de extensiones vectoriales avanzadas de Intel" disponible en <https://go.microsoft.com/fwlink/p/?linkid=212716> .
 
-**Windows 7 con SP1:** La [API AVX](avx-support-portal.md) se implementa primero en Windows 7 con SP1. Dado que no hay ningún SDK para Windows 7 con SP1, significa que no hay ningún encabezado y archivo de biblioteca disponibles con los que trabajar. En esta situación, un llamador debe declarar las funciones necesarias a partir de esta documentación y obtener punteros a ellas mediante [**GetModuleHandle**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea) en "Kernel32.dll", seguido de llamadas a [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress).
+**Windows 7 con SP1:** La [API de AVX](avx-support-portal.md) se implementa primero en Windows 7 con SP1. Puesto que no hay ningún SDK para Windows 7 con SP1, significa que no hay encabezados y archivos de biblioteca disponibles con los que trabajar. En esta situación, un llamador debe declarar las funciones necesarias de esta documentación y obtener punteros a ellas mediante [**GetModuleHandle**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea) en "Kernel32.dll", seguida de llamadas a [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress).
 
 
 ```C++

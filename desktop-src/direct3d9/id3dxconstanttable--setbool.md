@@ -1,7 +1,7 @@
 ---
 description: Establece un valor booleano.
 ms.assetid: 652e5b68-88f3-4b05-959b-38bb530c546a
-title: 'ID3DXConstantTable:: SetBool (método) (D3DX9Shader. h)'
+title: Método ID3DXConstantTable::SetBool (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 49fb38407aeaaf042d8d606c90e075a1891b9557
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f5acc40506e3ca687faeb54c127e179c19b9830c5492caa10e9a2ab3f75bd301
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848185"
 ---
-# <a name="id3dxconstanttablesetbool-method"></a>ID3DXConstantTable:: SetBool (método)
+# <a name="id3dxconstanttablesetbool-method"></a>Método ID3DXConstantTable::SetBool
 
 Establece un valor booleano.
 
@@ -42,28 +42,28 @@ HRESULT SetBool(
 
 <dl> <dt>
 
-*pDevice* \[ de\]
+*pDevice* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntero a una interfaz [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) que representa el dispositivo asociado a la tabla de constantes.
+Puntero a una [**interfaz IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) que representa el dispositivo asociado a la tabla constante.
 
 </dd> <dt>
 
-*hConstant* \[ de\]
+*hConstant* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la constante. Vea [D3DXHANDLE](dx9-graphics-reference-effects-constants.md).
+Identificador único de la constante. Vea [D3DXHANDLE.](dx9-graphics-reference-effects-constants.md)
 
 </dd> <dt>
 
 *b* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 Valor booleano.
 
@@ -73,7 +73,7 @@ Valor booleano.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

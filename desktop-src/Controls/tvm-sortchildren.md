@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_SORTCHILDREN (commctrl. h)
-description: Ordena los elementos secundarios del elemento primario especificado en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la \_ macro SortChildren de TreeView.
+title: TVM_SORTCHILDREN mensaje (Commctrl.h)
+description: Ordena los elementos secundarios del elemento primario especificado en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ SortChildren.
 ms.assetid: c18bcd5f-c083-46ee-873b-d3100b0d7b04
 keywords:
-- TVM_SORTCHILDREN controles de mensajes de Windows
+- TVM_SORTCHILDREN controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 341591c31accb4aab0b49f611359a93ec99c0cab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f975814fadc5271c562e4e8e420c35dbb3450142bed797af83af73fdf81a55d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913805"
 ---
-# <a name="tvm_sortchildren-message"></a>\_Mensaje de SORTCHILDREN TVM
+# <a name="tvm_sortchildren-message"></a>Mensaje \_ SORTCHILDREN de TVM
 
-Ordena los elementos secundarios del elemento primario especificado en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SortChildren de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_sortchildren) .
+Ordena los elementos secundarios del elemento primario especificado en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ SortChildren.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_sortchildren)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Ordena los elementos secundarios del elemento primario especificado en un contro
 *wParam* 
 </dt> <dd>
 
-Valor que especifica si la ordenación es recursiva. Establezca *wParam* en **true** para ordenar todos los niveles de los elementos secundarios por debajo del elemento primario. De lo contrario, solo se ordenan los elementos secundarios inmediatos del elemento primario.
+Valor que especifica si la ordenación es recursiva. Establezca *wParam en* **TRUE para** ordenar todos los niveles de elementos secundarios por debajo del elemento primario. De lo contrario, solo se ordenan los elementos secundarios inmediatos del elemento primario.
 
 </dd> <dt>
 
@@ -45,11 +45,11 @@ Identificador del elemento primario cuyos elementos secundarios se van a ordenar
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje alphabetizes los elementos de árbol mediante [**lstrcmpi**](/windows/desktop/api/winbase/nf-winbase-lstrcmpia) en el nombre del elemento. Puede usar el mensaje [**TVM \_ SORTCHILDRENCB**](tvm-sortchildrencb.md) para personalizar el comportamiento de ordenación.
+Este mensaje alfabéticamente los elementos de árbol [**mediante lstrcmpi**](/windows/desktop/api/winbase/nf-winbase-lstrcmpia) en el nombre del elemento. Puede usar el mensaje [**\_ TVM SORTCHILDRENCB**](tvm-sortchildrencb.md) para personalizar el comportamiento de la ordenación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Este mensaje alphabetizes los elementos de árbol mediante [**lstrcmpi**](/windo
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

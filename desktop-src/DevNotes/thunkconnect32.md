@@ -1,7 +1,7 @@
 ---
-description: La función ThunkConnect32 se usa en los controladores de dispositivo de 16 bits (para MS-DOS) que llaman al kernel de 32 bits.
+description: Los controladores de dispositivo de 16 bits (para MS-DOS) que llaman al kernel de 32 bits usan la función ThunkConnect32.
 ms.assetid: 3376ca67-04ea-4765-a2f4-15a84d5c84d4
-title: ThunkConnect32 función)
+title: Función ThunkConnect32
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Kernel32.dll
-ms.openlocfilehash: 7f22d7ceb59732e986c23c873133b11f358364cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f754d4c0e88ee860d112a6fb99d15c2690af0014951e77425d425b65ad16e39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929115"
 ---
-# <a name="thunkconnect32-function"></a>ThunkConnect32 función)
+# <a name="thunkconnect32-function"></a>Función ThunkConnect32
 
-\[Esta función se admitía por compatibilidad con versiones anteriores, pero no está presente en las versiones actuales de Windows. Los controladores de dispositivos nuevos deben ser de 32 a 64 bits y no necesitan esta función.\]
+\[Esta función se admite por compatibilidad con versiones anteriores, pero no está presente en las versiones actuales de Windows. Los nuevos controladores de dispositivo deben ser de 32 o 64 bits y no necesitan esta función.\]
 
-La función **ThunkConnect32** se usa en los controladores de dispositivo de 16 bits (para MS-dos) que llaman al kernel de 32 bits.
+Los controladores de dispositivo de 16 bits (para MS-DOS) que llaman al kernel de 32 bits usan la función **ThunkConnect32.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -90,7 +90,7 @@ ignorado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Siempre devuelve **false**.
+Siempre devuelve **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 

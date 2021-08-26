@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX12PipelineParserCallbacks CSCb (D3DX12. h)
-description: Llama a la devolución de llamada de subobjeto del sombreador de cálculo de un objeto que implementa esta interfaz.
+title: Método CSCb ID3DX12PipelineParserCallbacks (D3DX12.h)
+description: Llama a la devolución de llamada del subobjeto del sombreador de proceso de un objeto que implementa esta interfaz.
 ms.assetid: DE1ABA3D-D372-4D7F-9DB6-4E3360EAFAC2
 keywords:
 - Método CSCb
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27dcf175d153211e06864cb73139b03f868d15db
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9ef816594b74ac3b09a73003de4bc5cf7984d2755a7b3769159a0e26a3bbf1af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894635"
 ---
-# <a name="id3dx12pipelineparsercallbackscscb-method"></a>ID3DX12PipelineParserCallbacks:: CSCb (método)
+# <a name="id3dx12pipelineparsercallbackscscb-method"></a>Método ID3DX12PipelineParserCallbacks::CSCb
 
-Llama a la devolución de llamada de subobjeto del sombreador de cálculo de un objeto que implementa esta interfaz.
+Llama a la devolución de llamada del subobjeto del sombreador de proceso de un objeto que implementa esta interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,12 +43,12 @@ void CSCb(
 
 <dl> <dt>
 
-*CS* \[ CLI\]
+*CS* \[ Ref\]
 </dt> <dd>
 
-Tipo: **const [**D3D12 \_ código de \_ byte del sombreador**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)**
+Tipo: **const [**D3D12 \_ SHADER \_ BYTECODE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)**
 
-Detalles del subobjeto del sombreador de cálculo analizado desde una secuencia de estado de canalización.
+Detalles del subobjeto del sombreador de proceso que se analiza desde una secuencia de estado de canalización.
 
 </dd> </dl>
 
@@ -62,8 +62,8 @@ No devuelve nada.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -72,13 +72,13 @@ No devuelve nada.
 
 <dl> <dt>
 
-[Interfaces auxiliares de Direct3D 12](helper-interfaces-for-d3d12.md)
+[Interfaces auxiliares para Direct3D 12](helper-interfaces-for-d3d12.md)
 </dt> <dt>
 
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**\_Código de bytes del sombreador D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
+[**CÓDIGO DE BYTES DEL SOMBREADOR D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: RunningTaskCollection. Item (propiedad)
+title: Propiedad RunningTaskCollection.Item
 description: Para el scripting, obtiene la tarea especificada de la colección.
 ms.assetid: 8b0745da-a11f-426c-9d52-f59d188e0e86
 keywords:
-- Propiedad del elemento Programador de tareas
-- Propiedad Item Programador de tareas, objeto RunningTaskCollection
-- Programador de tareas de objeto RunningTaskCollection, propiedad Item
+- Propiedad Item Programador de tareas
+- Propiedad Item Programador de tareas , objeto RunningTaskCollection
+- Objeto RunningTaskCollection Programador de tareas , propiedad Item
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49d28da7a3f5348ff9f5d6171a1a698d95b646f0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a7e2ca7abf5f1daa936509d5fae71211e8b139537fa1782daac6c08bf9a1017f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119866785"
 ---
-# <a name="runningtaskcollectionitem-property"></a>RunningTaskCollection. Item (propiedad)
+# <a name="runningtaskcollectionitem-property"></a>Propiedad RunningTaskCollection.Item
 
 Para el scripting, obtiene la tarea especificada de la colección.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -42,7 +42,7 @@ RunningTaskCollection.Item( _
 
 Objeto [**RunningTask**](runningtask.md) que contiene el contexto solicitado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Las colecciones se basan en 1. En otras palabras, el índice del primer elemento de la colección es 1.
 
@@ -52,9 +52,9 @@ Las colecciones se basan en 1. En otras palabras, el índice del primer elemento
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

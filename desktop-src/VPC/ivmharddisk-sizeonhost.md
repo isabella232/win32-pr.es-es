@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMHardDisk SizeOnHost (VPCCOMInterfaces. h)
+title: Propiedad IVMHardDisk SizeOnHost (VPCCOMInterfaces.h)
 description: Tamaño del archivo de disco duro virtual en el equipo host.
 ms.assetid: f787ec4b-7b4f-4d35-b07c-4844424d91cf
 keywords:
-- Propiedad SizeOnHost Virtual PC
-- Propiedad SizeOnHost Virtual PC, interfaz IVMHardDisk
-- Interfaz IVMHardDisk Virtual PC, propiedad SizeOnHost
+- Equipo virtual de la propiedad SizeOnHost
+- Propiedad SizeOnHost De PC virtual, interfaz IVMHardDisk
+- IVMHardDisk interface Virtual PC , Propiedad SizeOnHost
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d3a000a70e1713b28f8fb8eea3590a53fb46ff0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8952428665ef651d5d420bc457f1eed52f6c6ded78a7b448c8325ab09f352a9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119867125"
 ---
-# <a name="ivmharddisksizeonhost-property"></a>IVMHardDisk:: SizeOnHost (propiedad)
+# <a name="ivmharddisksizeonhost-property"></a>IVMHardDisk::SizeOnHost, propiedad
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera el tamaño del archivo de disco duro virtual en el equipo host.
 
@@ -45,7 +45,7 @@ HRESULT get_SizeOnHost(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Tamaño, en bytes, del archivo de imagen del disco duro. Este valor es una **variante** de tipo **VT \_ decimal**.
+Tamaño, en bytes, del archivo de imagen de disco duro. Este valor es una **VARIANTE de** tipo **VT \_ DECIMAL.**
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,10 +53,10 @@ Tamaño, en bytes, del archivo de imagen del disco duro. Este valor es una **var
 
 | Nombre o valor                                                                                                                                                                               | Significado                                            |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                                                  | La operación se realizó correctamente.<br/>           |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>                                    | El parámetro es **null**.<br/>              |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl>                            | Se produjo un error inesperado.<br/>       |
-| <dl> <dt>HRESULT \_ DE \_ Win32 ( \_ \_ no \_ se encontró el archivo de error)</dt> <dt>0x80070002</dt> </dl> | No se encontró el archivo de imagen de disco duro.<br/> |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                                                  | La operación se realizó correctamente.<br/>           |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                                    | El parámetro es **NULL.**<br/>              |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                            | Se produjo un error inesperado.<br/>       |
+| <dl> <dt>HRESULT \_ DESDE \_ WIN32(ARCHIVO DE ERROR \_ \_ NO \_ ENCONTRADO)</dt> <dt>0X80070002</dt> </dl> | No se encontró el archivo de imagen de disco duro.<br/> |
 
 
 
@@ -66,12 +66,12 @@ Tamaño, en bytes, del archivo de imagen del disco duro. Este valor es una **var
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMHardDisk se define como ffa14ae6-48f5-42a4-8a22-186f2e5c7db0<br/>                |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMHardDisk se define como \_ ffa14ae6-48f5-42a4-8a22-186f2e5c7db0<br/>                |
 
 
 

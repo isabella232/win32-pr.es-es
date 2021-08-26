@@ -1,7 +1,7 @@
 ---
 Description: Recupera los datos binarios para el TAGID especificado.
 ms.assetid: b349f2af-2505-4efc-bd59-203f7666ce61
-title: SdbReadBinaryTag función)
+title: Función SdbReadBinaryTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 024b432c3210b98721a0cf3058bad0f765287fde
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92d63182273c96707bb155071164a6b6838378615f603d8ef6d332d6c65be460
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911575"
 ---
-# <a name="sdbreadbinarytag-function"></a>SdbReadBinaryTag función)
+# <a name="sdbreadbinarytag-function"></a>Función SdbReadBinaryTag
 
-Recupera los datos binarios para el **TAGID** especificado.
+Recupera los datos binarios para el **TAGID especificado.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,37 +42,37 @@ BOOL WINAPI SdbReadBinaryTag(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tiWhich* \[ de\]
+*tiWhich* \[ En\]
 </dt> <dd>
 
-**TAGID** que corresponde a los datos que se van a recuperar.
+TAGID **que** corresponde a los datos que se recuperarán.
 
 </dd> <dt>
 
-*pBuffer* \[ enuncia\]
+*pBuffer* \[ out\]
 </dt> <dd>
 
-Búfer que recibe los datos binarios. Este parámetro no puede ser **null**.
+Búfer que recibe los datos binarios. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
-*dwBufferSize* \[ de\]
+*dwBufferSize* \[ En\]
 </dt> <dd>
 
-Tamaño del búfer de *pBuffer* , en bytes.
+Tamaño del búfer *pBuffer,* en bytes.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se ejecuta correctamente o **false** en caso de error.
+La función devuelve **TRUE si** se ejecuta correctamente o **FALSE** en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ La función devuelve **true** si se ejecuta correctamente o **false** en caso de
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

@@ -1,6 +1,6 @@
 ---
-title: stringTable (LocalizationType), elemento
-description: Define una lista de cadenas traducidas a las que se puede hacer referencia en el manifiesto. | stringTable (LocalizationType), elemento
+title: elemento stringTable (LocalizationType)
+description: Define una lista de cadenas localizadas a las que puede hacer referencia en el manifiesto. | elemento stringTable (LocalizationType)
 ms.assetid: 00144c76-c8de-448a-9884-2c95c4b73f53
 keywords:
 - elemento stringTable EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1cbaca6e0d496e248a5c870ef7e51c9553a58f56
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 66dd0bedca88909efed3f2a6b1968a34df774ac78bc4929894a3b8708d80919d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119958245"
 ---
-# <a name="stringtable-localizationtype-element"></a>stringTable (LocalizationType), elemento
+# <a name="stringtable-localizationtype-element"></a>elemento stringTable (LocalizationType)
 
-Define una lista de cadenas traducidas a las que se puede hacer referencia en el manifiesto.
+Define una lista de cadenas localizadas a las que puede hacer referencia en el manifiesto.
 
 ``` syntax
 <xs:element name="stringTable"
@@ -30,7 +30,7 @@ Define una lista de cadenas traducidas a las que se puede hacer referencia en el
  />
 ```
 
-El elemento **stringTable** se define mediante el tipo complejo [**LocalizationType**](eventmanifestschema-localizationtype-complextype.md) .
+El tipo complejo [**LocalizationType**](eventmanifestschema-localizationtype-complextype.md) define el elemento **stringTable.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **stringTable** se define mediante el tipo complejo [**LocalizationT
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

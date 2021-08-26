@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicenseManagement ProcessLicenseRevocationResponse (wmdrmsdk. h)
-description: El método ProcessLicenseRevocationResponse revoca las licencias del almacén de licencias local. Este método usa un BLOB de revocación de licencias (LRB) recibido de un servidor de revocación de licencias para identificar las licencias que se van a revocar.
+title: Método IWMDRMLicenseManagement ProcessLicenseRevocationResponse (Wmdrmsdk.h)
+description: El método ProcessLicenseRevocationResponse revoca las licencias del almacén de licencias local. Este método usa un blob de revocación de licencias (LRB) recibido de un servidor de revocación de licencias para identificar las licencias que se deben revocar.
 ms.assetid: 4428ac44-c3f4-404e-9997-cbc7360faedf
 keywords:
-- Método ProcessLicenseRevocationResponse formato de Windows Media
-- Método ProcessLicenseRevocationResponse formato de Windows Media, interfaz IWMDRMLicenseManagement
-- Interfaz IWMDRMLicenseManagement formato de Windows Media, método ProcessLicenseRevocationResponse
+- Formato multimedia del método ProcessLicenseRevocationResponse
+- Método ProcessLicenseRevocationResponse windows Media Format , interfaz IWMDRMLicenseManagement
+- IWMDRMLicenseManagement interface windows Media Format , ProcessLicenseRevocationResponse method
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 534ead406107957971bbf1501dff2850478fae08
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d58c33f79db575dec37d7d2ac51e3c65b10416b9ca35a50084f36a56693854be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930315"
 ---
-# <a name="iwmdrmlicensemanagementprocesslicenserevocationresponse-method"></a>IWMDRMLicenseManagement::P método rocessLicenseRevocationResponse
+# <a name="iwmdrmlicensemanagementprocesslicenserevocationresponse-method"></a>Método IWMDRMLicenseManagement::P rocessLicenseRevocationResponse
 
-El método **ProcessLicenseRevocationResponse** revoca las licencias del almacén de licencias local. Este método usa un BLOB de revocación de licencias (LRB) recibido de un servidor de revocación de licencias para identificar las licencias que se van a revocar.
+El **método ProcessLicenseRevocationResponse** revoca las licencias del almacén de licencias local. Este método usa un blob de revocación de licencias (LRB) recibido de un servidor de revocación de licencias para identificar las licencias que se deben revocar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,28 +45,28 @@ HRESULT ProcessLicenseRevocationResponse(
 
 <dl> <dt>
 
-*pbSignedLRB* \[ de\]
+*pbSignedLRB* \[ En\]
 </dt> <dd>
 
-El BLOB de revocación de licencias (LRB) recibido del servidor de revocación de licencias en respuesta a un desafío que se generó llamando al método [**CreateLicenseRevocationChallenge**](iwmdrmlicensemanagement-createlicenserevocationchallenge.md) .
+Blob de revocación de licencias (LRB) recibido del servidor de revocación de licencias en respuesta a un desafío generado al llamar al [**método CreateLicenseRevocationChallenge.**](iwmdrmlicensemanagement-createlicenserevocationchallenge.md)
 
 </dd> <dt>
 
-*cbSignedLRB* \[ de\]
+*cbSignedLRB* \[ En\]
 </dt> <dd>
 
-Tamaño de LRB en bytes.
+Tamaño del LRB en bytes.
 
 </dd> <dt>
 
-*ppbSignedACK* \[ enuncia\]
+*ppbSignedACK* \[ out\]
 </dt> <dd>
 
-Dirección de un puntero que recibe la dirección de la confirmación de revocación de licencia. La confirmación se debe enviar al servicio de revocación de licencias. Cuando termine con estos datos, debe liberar la memoria mediante una llamada a **CoTaskMemFree**.
+Dirección de un puntero que recibe la dirección de la confirmación de revocación de licencia. La confirmación debe enviarse al servicio de revocación de licencias. Cuando termine con estos datos, debe liberar la memoria llamando a **CoTaskMemFree**.
 
 </dd> <dt>
 
-*pcbSignedACK* \[ enuncia\]
+*pwSignedACK* \[ out\]
 </dt> <dd>
 
 Dirección de una variable que recibe el tamaño de la confirmación en bytes.
@@ -75,13 +75,13 @@ Dirección de una variable que recibe el tamaño de la confirmación en bytes.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -97,7 +97,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -105,7 +105,7 @@ Ninguno.
 
 <dl> <dt>
 
-[**Interfaz IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)
+[**IWMDRMLicenseManagement (interfaz)**](iwmdrmlicensemanagement.md)
 </dt> </dl>
 
  

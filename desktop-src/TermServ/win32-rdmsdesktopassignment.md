@@ -1,11 +1,11 @@
 ---
-title: Win32_RDMSDesktopAssignment (clase)
-description: Describe la asignación de escritorio de usuario de la colección de RD.
+title: Win32_RDMSDesktopAssignment clase
+description: Describe la asignación de escritorio de usuario de la colección de Escritorio remoto.
 ms.assetid: d3370cf2-65db-4e01-9ea3-9a71340bf71b
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDMSDesktopAssignment clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDMSDesktopAssignment de clase, se describe
+- Win32_RDMSDesktopAssignment clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72bb252bd2efb71e3192ebd16160cecf18196cb0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 88576607777fe55d2fb2d4d9232ddc9d4b23849503e56f53fe4cd99f3931ddea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868215"
 ---
-# <a name="win32_rdmsdesktopassignment-class"></a>\_Clase Win32 RDMSDesktopAssignment
+# <a name="win32_rdmsdesktopassignment-class"></a>Clase \_ RDMSDesktopAssignment de Win32
 
-Describe la asignación de escritorio de usuario de la colección de RD.
+Describe la asignación de escritorio de usuario de la colección de Escritorio remoto.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -55,7 +55,7 @@ La **clase \_ RDMSDesktopAssignment de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ RDMSDesktopAssignment** tiene estos métodos.
+La **clase \_ RDMSDesktopAssignment de Win32** tiene estos métodos.
 
 
 
@@ -80,10 +80,10 @@ La **clase \_ RDMSDesktopAssignment de Win32** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Alias de la colección.
@@ -96,10 +96,10 @@ Alias de la colección.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nombre del escritorio.
@@ -112,13 +112,13 @@ Nombre del escritorio.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-El nombre de dominio de la cuenta de usuario.
+Nombre de dominio de la cuenta de usuario.
 
 </dd> <dt>
 
@@ -128,13 +128,13 @@ El nombre de dominio de la cuenta de usuario.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-El nombre de la cuenta de usuario.
+Nombre de la cuenta de usuario.
 
 </dd> </dl>
 
@@ -146,8 +146,8 @@ El nombre de la cuenta de usuario.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 

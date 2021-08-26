@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentVersion. SupportsVistaFeatures (propiedad)'
-title: Propiedad EsentVersion. SupportsVistaFeatures
+description: 'Más información sobre: Propiedad EsentVersion.SupportsVistaFeatures'
+title: Propiedad EsentVersion.SupportsVistaFeatures
 TOCTitle: 'SupportsVistaFeatures property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentVersion.SupportsVistaFeatures
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentversion.supportsvistafeatures(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e623000d4ab176ccb9592191499608801bcb81be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aff156f868cad30f8159ed1bc186cd5cf129da374826229757c9f86864846e14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850375"
 ---
-# <a name="esentversionsupportsvistafeatures-property"></a>Propiedad EsentVersion. SupportsVistaFeatures
+# <a name="esentversionsupportsvistafeatures-property"></a>Propiedad EsentVersion.SupportsVistaFeatures
 
-Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en la versión de Windows Vista de ESENT.
+Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en la versión Windows Vista de ESENT.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,7 +57,7 @@ public static bool SupportsVistaFeatures { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -67,4 +67,4 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Miembros de EsentVersion](./esentversion-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

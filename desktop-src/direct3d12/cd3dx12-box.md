@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_BOX estructura (D3dx12. h)
-description: Una estructura auxiliar para habilitar la inicialización sencilla de una \_ estructura de cuadro de D3D12.
+title: CD3DX12_BOX estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura BOX D3D12. \_
 ms.assetid: 7E1A352C-D664-4538-BA78-91493980559D
 keywords:
-- Estructura de CD3DX12_BOX
+- CD3DX12_BOX estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.localizationpriority: low
 ms.date: 05/31/2018
-ms.openlocfilehash: c689c9bfe611651248280f7536bd91a9f4d003d4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f2aa358d8b2d772d45c6387221dd9e660a9630fbf90535ada7dcceefc3257879
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851415"
 ---
-# <a name="cd3dx12_box-structure"></a>Estructura del cuadro de CD3DX12 \_
+# <a name="cd3dx12_box-structure"></a>Cd3DX12 \_ (estructura BOX)
 
-Una estructura auxiliar para habilitar la inicialización sencilla de una estructura de [**\_ cuadro de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box) .
+Estructura auxiliar para permitir la inicialización sencilla de una [**estructura \_ BOX D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,76 +47,76 @@ struct CD3DX12_BOX  : public D3D12_BOX{
 
 <dl> <dt>
 
-**Cuadro de CD3DX12 \_ ()**
+**CD3DX12 \_ BOX()**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de un \_ cuadro CD3DX12.
+Crea una nueva instancia sin inicializar de un cuadro CD3DX12. \_
 
 </dd> <dt>
 
-**cuadro CD3DX12 explícito \_ (const D3D12 \_ Box& o)**
+**explicit CD3DX12 \_ BOX(const D3D12 \_ BOX& o)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ cuadro CD3DX12, inicializada con el contenido de otra estructura de [**\_ cuadros de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box) .
+Crea una nueva instancia de un cuadro CD3DX12, inicializado con el contenido de otra estructura \_ [**BOX D3D12. \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box)
 
 </dd> <dt>
 
-**cuadro CD3DX12 explícito \_ (largo izquierdo, largo derecho)**
+**explicit CD3DX12 \_ BOX(LONG Left, LONG Right)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ cuadro CD3DX12, inicializando los siguientes parámetros:
+Crea una nueva instancia de UN CD3DX12 \_ BOX, inicializando los parámetros siguientes:
 
-LARGA izquierda
+LONG Left
 
-LARGA a la derecha
+LONG Right
 
 </dd> <dt>
 
-**cuadro CD3DX12 explícito \_ (largo izquierdo, largo superior, largo derecho, largo inferior)**
+**explicit CD3DX12 \_ BOX(LONG Left, LONG Top, LONG Right, LONG Bottom)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ cuadro CD3DX12, inicializando los siguientes parámetros:
+Crea una nueva instancia de UN CD3DX12 \_ BOX, inicializando los parámetros siguientes:
 
-LARGA izquierda
+LONG Left
 
-Superior larga
+LONG Top
 
-LARGA a la derecha
+LONG Right
 
-Inferior largo
+LONG Bottom
 
 </dd> <dt>
 
-**cuadro CD3DX12 explícito \_ (Long Left, Long Top, Long Front, Long Right, Long Bottom, Long back)**
+**explicit CD3DX12 \_ BOX(LONG Left, LONG Top, LONG Front, LONG Right, LONG Bottom, LONG Back)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ cuadro CD3DX12, inicializando los siguientes parámetros:
+Crea una nueva instancia de UN CD3DX12 \_ BOX, inicializando los parámetros siguientes:
 
-LARGA izquierda
+LONG Left
 
-Superior larga
+LONG Top
 
-Inicial larga
+LONG Front
 
-LARGA a la derecha
+LONG Right
 
-Inferior largo
+LONG Bottom
 
-LARGA
+LONG Back
 
 </dd> <dt>
 
-**~ CD3DX12 \_ Box ()**
+**~CD3DX12 \_ BOX()**
 </dt> <dd>
 
-Destruye una instancia de un cuadro de CD3DX12 \_ .
+Destruye una instancia de UN CD3DX12 \_ BOX.
 
 </dd> <dt>
 
-**Operator const D3D12 \_ BOX& () Const**
+**operator const D3D12 \_ BOX&() const**
 </dt> <dd>
 
-Define el & operador de paso por referencia para el tipo de estructura primaria.
+Define el & de paso por referencia para el tipo de estructura primaria.
 
 </dd> </dl>
 
@@ -126,7 +126,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -134,7 +134,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 <dl> <dt>
 
-[**Cuadro de D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box)
+[**D3D12 \_ BOX**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

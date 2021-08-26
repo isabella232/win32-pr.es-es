@@ -1,85 +1,85 @@
 ---
-title: Especificar recursos de imagen de cinta
-description: Como sistema de presentación de comandos enriquecido, el marco de la cinta de opciones de Windows está diseñado para admitir los recursos de imagen en gran medida a través de la interfaz de usuario (UI) de la cinta. Todos los recursos de imagen se declaran en el marcado de la cinta o se consultan desde una aplicación host de cinta.
+title: Especificar recursos de imagen de cinta de opciones
+description: Como sistema de presentación de comandos enriquecido, el marco Windows Ribbon está diseñado para admitir ampliamente los recursos de imagen en toda la interfaz de usuario (UI) de la cinta de opciones. Todos los recursos de imagen se declaran en el marcado de la cinta de opciones o se consultan desde una aplicación host de la cinta de opciones.
 ms.assetid: 37b57992-8da8-4e6b-869d-72a136f6ad77
 keywords:
-- Cinta de Windows, recursos de imagen
-- Cinta, recursos de imagen
-- Cinta de Windows, transparencia
+- Windows Cinta de opciones, recursos de imagen
+- Cinta de opciones, recursos de imagen
+- Windows Cinta de opciones, transparencia
 - Cinta de opciones, transparencia
-- Cinta de Windows, profundidad de color
+- Windows Cinta, profundidad de color
 - Cinta, profundidad de color
-- Cinta de opciones de Windows, contraste
-- Cinta, contraste
-- recursos de imagen en la cinta de Windows
+- Windows Cinta de opciones, contraste
+- Cinta de opciones, contraste
+- recursos de imagen en Windows cinta de opciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13e7666126e5b8f7fbe8b610678a8a1d71589373
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c485de9c0d9d1b51b09d4a2b9dba95dd30a778922750a7f388c7a5c8963cda6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119932600"
 ---
-# <a name="specifying-ribbon-image-resources"></a>Especificar recursos de imagen de cinta
+# <a name="specifying-ribbon-image-resources"></a>Especificar recursos de imagen de cinta de opciones
 
-Como sistema de presentación de comandos enriquecido, el marco de la cinta de opciones de Windows está diseñado para admitir los recursos de imagen en gran medida a través de la interfaz de usuario (UI) de la cinta. Todos los recursos de imagen se declaran en el [marcado de la cinta](windowsribbon-schema.md) o se consultan desde una aplicación host de cinta.
+Como sistema de presentación de comandos enriquecido, el marco Windows Ribbon está diseñado para admitir ampliamente los recursos de imagen en toda la interfaz de usuario (UI) de la cinta de opciones. Todos los recursos de imagen se declaran en el [marcado de la](windowsribbon-schema.md) cinta de opciones o se consultan desde una aplicación host de la cinta de opciones.
 
-En Windows 8 y versiones posteriores, el marco de la cinta de opciones admite los siguientes formatos de gráficos: archivos de mapa de bits ARGB de 32 bits (BMP) y archivos PNG (Portable Network Graphics) con transparencia.
+Para Windows 8 y versiones posteriores, el marco de la cinta de opciones admite los siguientes formatos gráficos: archivos de mapa de bits ARGB (BMP) de 32 bits y archivos de gráficos de red portátiles (PNG) con transparencia.
 
-En Windows 7 y versiones anteriores, los recursos de imagen deben ajustarse al formato de gráficos BMP estándar usado en Windows.
+Para Windows 7 y versiones anteriores, los recursos de imagen deben ajustarse al formato de gráfico BMP estándar que se usa en Windows.
 
 > [!Note]  
 > Puede producirse un error de compilación si se proporciona un formato de imagen no compatible al marco.
 
- 
+ 
 
 ## <a name="image-sizes"></a>Tamaños de imagen
 
-Para proporcionar mayor flexibilidad a los diseños de controles de la cinta al cambiar el tamaño de una ventana de la aplicación, el marco de cinta acepta y representa imágenes en uno de dos tamaños: grande o pequeño.
+Para proporcionar mayor flexibilidad a los diseños de control de la cinta de opciones al cambiar el tamaño de una ventana de aplicación, el marco de la cinta de opciones acepta y representa imágenes en uno de estos dos tamaños: grande o pequeño.
 
-Las siguientes imágenes ilustran una aplicación de cinta que admite varios tamaños de cinta a través de diseños de control flexibles y la sustitución de imágenes grandes con imágenes pequeñas cuando están disponibles.
+Las imágenes siguientes ilustran una aplicación de cinta de opciones que admite varios tamaños de cinta a través de diseños de control flexibles y el reemplazo de imágenes grandes por imágenes pequeñas cuando estén disponibles.
 
-En la captura de pantalla siguiente se muestra la cinta de opciones con imágenes grandes para los controles de zoom.
+En la siguiente captura de pantalla se muestra la cinta de opciones con imágenes grandes para los controles zoom.
 
-![captura de pantalla que muestra una cinta que usa imágenes grandes para los controles de zoom.](images/overviews/imageresources-largeimage.png)
+![captura de pantalla que muestra una cinta de opciones que usa imágenes grandes para los controles de zoom.](images/overviews/imageresources-largeimage.png)
 
-En la captura de pantalla siguiente se muestra la misma cinta cuyo tamaño se ha cambiado con imágenes pequeñas para los controles de zoom
+En la siguiente captura de pantalla se muestra el mismo tamaño de cinta con imágenes pequeñas para los controles de zoom.
 
-![captura de pantalla que muestra una cinta que usa imágenes pequeñas para los controles de zoom.](images/overviews/imageresources-smallimage.png)
+![captura de pantalla que muestra una cinta de opciones que usa imágenes pequeñas para los controles de zoom.](images/overviews/imageresources-smallimage.png)
 
-En la captura de pantalla siguiente se muestra la cinta de opciones en estado oculto. La cinta de opciones se oculta cuando se han agotado todos los diseños de control potenciales y la cinta de opciones no se puede representar con un área de trabajo de aplicación utilizable.
+En la siguiente captura de pantalla se muestra la cinta en estado oculto. La cinta de opciones está oculta cuando se han agotado todos los diseños de control potenciales y la cinta de opciones no se puede representar con un área de trabajo de aplicación utilizable.
 
-![captura de pantalla que muestra una cinta contraída.](images/overviews/imageresources-noimage.png)
+![captura de pantalla que muestra una cinta de opciones contraigada.](images/overviews/imageresources-noimage.png)
 
-En cualquier imagen, el tamaño exacto en píxeles depende de la resolución de la pantalla, o de puntos por pulgada (PPP), del monitor que se está usando. En 96 PPP, las imágenes grandes tienen un tamaño de 32 x 32 píxeles y las imágenes pequeñas son de 16 x 16 píxeles. Los tamaños de imagen aumentan de manera lineal en relación con los PPP, como se muestra en la tabla siguiente.
+Para cualquier imagen, el tamaño exacto de los píxeles depende de la resolución de la pantalla, o de los puntos por pulgada (ppp) del monitor que se usa. A 96 ppp, las imágenes grandes tienen un tamaño de 32 x 32 píxeles y las imágenes pequeñas tienen un tamaño de 16 x 16 píxeles. Los tamaños de imagen aumentan de forma lineal en relación con ppp, como se muestra en la tabla siguiente.
 
 
 
 | ppp     | Imagen pequeña  | Imagen grande  |
 |---------|--------------|--------------|
-| 96 PPP  | 16x16 píxeles | 32x32 píxeles |
-| 120 ppp | 20x20 píxeles | 40 x 40 píxeles |
-| 144 ppp | 24x24 píxeles | 48x48 píxeles |
-| 192 PPP | 32x32 píxeles | 64 x 64 píxeles |
+| 96 ppp  | 16 x 16 píxeles | 32 x 32 píxeles |
+| 120 ppp | 20 x 20 píxeles | 40 x 40 píxeles |
+| 144 ppp | 24 x 24 píxeles | 48 x 48 píxeles |
+| 192 ppp | 32 x 32 píxeles | 64 x 64 píxeles |
 
 
 
- 
+ 
 
-El marco de cinta escala los recursos de imagen según sea necesario. Sin embargo, dado que el cambio de tamaño puede producir artefactos no deseados y degradación de la imagen, se recomienda encarecidamente que la aplicación proporcione un pequeño conjunto de recursos de imagen que abarquen varios valores de PPP usados con frecuencia. Si no se encuentra una coincidencia exacta, la imagen más cercana se escalará o reducirá verticalmente.
+El marco de la cinta escala los recursos de imagen según sea necesario. Sin embargo, dado que el cambio de tamaño puede producir artefactos no deseados y degradación de la imagen, se recomienda encarecidamente que la aplicación proporcione un pequeño conjunto de recursos de imagen que abarquen varias configuraciones de ppp de uso frecuente. Si no se encuentra una coincidencia exacta, la imagen más cercana se escalará o reducirá verticalmente.
 
-Para facilitar esto, los recursos de imagen se pueden declarar en el marcado de la cinta de opciones mediante un conjunto de elementos [**Image**](windowsribbon-element-image.md) para cada elemento [**Command**](windowsribbon-element-command.md) . En tiempo de ejecución, el marco de trabajo selecciona la imagen que se va a mostrar basándose en el atributo *MinDPI* de cada elemento de **imagen** .
+Para facilitar esto, los recursos de imagen se pueden declarar en el marcado de la cinta de opciones mediante un conjunto de elementos [**Image**](windowsribbon-element-image.md) para cada [**elemento**](windowsribbon-element-command.md) Command. En tiempo de ejecución, el marco selecciona la imagen que se mostrará en función del *atributo MinDPI* de cada **elemento Image.**
 
 > [!IMPORTANT]
 >
-> Cuando se proporciona una colección de recursos de imagen que están diseñados para admitir valores de PPP de pantalla específicos para el marco de cinta a través de un conjunto de elementos de [**imagen**](windowsribbon-element-image.md) , el marco de trabajo usa la **imagen** con un valor de atributo *MinDPI* que coincide con la configuración de PPP de pantalla actual.
+> Cuando se proporciona una colección de recursos de imagen diseñados para admitir la configuración de ppp  de pantalla específica al marco de la cinta de opciones a través de un conjunto de elementos [**Image,**](windowsribbon-element-image.md) el marco usa la imagen con un valor de atributo *MinDPI* que coincide con la configuración de ppp de la pantalla actual.
 >
-> Si no se declara ningún elemento de [**imagen**](windowsribbon-element-image.md) con un valor de *MinDPI* que coincida con la configuración de PPP de pantalla actual, el marco de trabajo selecciona la **imagen** que tiene el valor de *MinDPI* más cercano menor que la configuración de PPP de pantalla actual y escala el recurso de imagen hacia arriba. De lo contrario, si no se declara ningún elemento de **imagen** con un valor de atributo *MinDPI* inferior al valor de PPP de pantalla actual, el marco de trabajo selecciona el valor de *MinDPI* más cercano mayor que la configuración de PPP de pantalla actual y escala el recurso de imagen hacia abajo.
+> Si no se declara ningún elemento [**Image**](windowsribbon-element-image.md) con un valor *MinDPI* que  coincida con la configuración de ppp de la pantalla actual, el marco elige la imagen que tiene el valor *MinDPI* más próximo menos que el valor de ppp de la pantalla actual y escala verticalmente el recurso de imagen. De lo contrario, si no se declara ningún elemento **Image** con un valor de atributo *MinDPI* menor que el valor de ppp de la pantalla actual, el marco elige el valor *MinDPI* más cercano mayor que el valor de ppp de pantalla actual y escala el recurso de imagen hacia abajo.
 
- 
+ 
 
-En el ejemplo siguiente se muestra cómo declarar un conjunto de imágenes para acomodar varios tamaños de cinta y configuraciones del sistema.
+En el ejemplo siguiente se muestra cómo declarar un conjunto de imágenes para adaptarse a los distintos tamaños de cinta y la configuración del sistema.
 
 
 ```C++
@@ -111,25 +111,25 @@ En el ejemplo siguiente se muestra cómo declarar un conjunto de imágenes para 
 
 
 
-Si las imágenes declaradas en el marcado se invalidan en tiempo de ejecución por cualquier motivo, se consultan las nuevas imágenes de la aplicación host. Cuando estas imágenes se generan y se cargan mediante programación, la aplicación debe intentar devolver imágenes cuyo tamaño se ajusta a los tamaños de icono del sistema predeterminados determinados por la [ \_ métrica del sistema SM CXICON](/windows/win32/api/winuser/nf-winuser-getsystemmetrics).
+Si las imágenes declaradas en marcado se invalidan en tiempo de ejecución por cualquier motivo, se consulta la aplicación host para obtener nuevas imágenes. Cuando estas imágenes se generan y se cargan mediante programación, la aplicación debe intentar devolver imágenes con tamaño según los tamaños predeterminados de los iconos del sistema determinados por la métrica del sistema [SM \_ CXICON](/windows/win32/api/winuser/nf-winuser-getsystemmetrics).
 
 > [!Note]  
-> Las imágenes grandes tienen un tamaño de SM \_ CXICON por SM \_ CXICON y las imágenes pequeñas tienen un tamaño de SM \_ CXICON/2 por SM \_ CXICON/2.
+> Las imágenes grandes tienen un tamaño de SM CXICON de SM CXICON y las imágenes pequeñas tienen un tamaño de \_ \_ SM \_ CXICON/2 por SM \_ CXICON/2.
 
- 
+ 
 
 ## <a name="color-depth-transparency-and-contrast"></a>Profundidad de color, transparencia y contraste
 
-Se espera que las imágenes normales tengan el formato de píxel ARGB de 32 bits por píxel (BPP) y que se escalen al tamaño del icono del sistema predeterminado. Este formato admite la transparencia y el suavizado de contorno (usando 8 bits por canal).
+Se espera que las imágenes normales estén en formato argb de 32 bits por píxel (BPP) y que se escalan al tamaño predeterminado del icono del sistema. Este formato admite transparencia y suavizado de contorno (con 8 bits por canal).
 
 > [!WARNING]
-> Muchas herramientas de edición de imágenes no conservan el canal alfa de 8 bits de orden superior al cargar o guardar imágenes de 32 BPP.
+> Muchas herramientas de edición de imágenes no conservan el canal alfa de 8 bits de orden más alto al cargar o guardar 32 imágenes BPP.
 
- 
+ 
 
-Para que una imagen se muestre correctamente en el modo de contraste alto, debe tener un formato de píxel de 4 BPP con un formato de píxeles. Cuando se representa la imagen, el marco de la cinta de opciones reasigna los colores específicos en función del contexto de alto contraste de la imagen.
+Para que una imagen se muestre correctamente en modo de contraste alto, debe tener un formato de píxel de paleta de 4 BPP. Cuando se representa la imagen, el marco de la cinta de opciones reasigna colores específicos en función del contexto de contraste alto de la imagen.
 
-En la tabla siguiente se muestra el comportamiento de representación de color de alto contraste del marco de trabajo.
+En la tabla siguiente se muestra el comportamiento de representación de color de contraste alto del marco.
 
 
 
@@ -143,7 +143,7 @@ Fondo blanco
 
 Fondo oscuro
 
-FUCSIA
+Magenta
 
 800080
 
@@ -151,7 +151,7 @@ Transparente
 
 Transparente
 
-BLANCO
+Negro
 
 000000
 
@@ -163,9 +163,9 @@ Blanco
 
 FFFFFF
 
-ventana de COLOR \_
+VENTANA DE \_ COLOR
 
-BLANCO
+Negro
 
 GRIS OSCURO
 
@@ -175,7 +175,7 @@ COLOR \_ 3DSHADOW
 
 COLOR \_ 3DSHADOW
 
-AMBIGUO
+Gris
 
 C0C0C0
 
@@ -191,7 +191,7 @@ COLOR \_ 3DLIGHT
 
 COLOR \_ 3DLIGHT
 
-AZUL MARINO
+AZUL OSCURO
 
 000080
 
@@ -201,19 +201,19 @@ Blanco
 
 
 
- 
+ 
 
-Para obtener más información sobre los formatos de imagen admitidos por el marco de la cinta de opciones, consulte lo siguiente:
+Para obtener más información sobre los formatos de imagen admitidos por el marco de la cinta de opciones, vea lo siguiente:
 
--   [Estructura BITMAPINFOHEADER](/previous-versions//dd183376(v=vs.85)) : describe el formato de píxel ARGB 32 bpp.
--   [Función CreateDIBSection](/windows/win32/api/wingdi/nf-wingdi-createdibsection) : describe cómo crear una imagen de formato de píxel ARGB de 32 bpp.
--   [Función LoadImage](/windows/win32/api/winuser/nf-winuser-loadimagea) : describe cómo cargar una imagen de formato de píxel ARGB 32 bpp.
+-   [Estructura BITMAPINFOHEADER:](/previous-versions//dd183376(v=vs.85)) describe el formato de píxel argb de 32 BPP.
+-   [Función CreateDIBSection:](/windows/win32/api/wingdi/nf-wingdi-createdibsection) describe cómo crear una imagen de formato de píxel ARGB de 32 BPP.
+-   [Función LoadImage:](/windows/win32/api/winuser/nf-winuser-loadimagea) describe cómo cargar una imagen de formato argb de 32 BPP.
 
 ## <a name="accessibility"></a>Accesibilidad
 
-Basándose en los recursos de imagen para proporcionar información, transmitir la funcionalidad de control y exponer el estado de la aplicación, aumenta la necesidad de los requisitos de accesibilidad durante el desarrollo y el diseño de la aplicación.
+Confiar en recursos de imagen para proporcionar información, transmitir la funcionalidad de control y exponer el estado de la aplicación aumenta la necesidad de requisitos de accesibilidad durante el diseño y el desarrollo de aplicaciones.
 
-En el caso de la compatibilidad básica de contraste alto, la cinta permite que se muestre un conjunto independiente de archivos de imagen cuando un tema de contraste alto está activo. Estas imágenes pueden ser de 32 BPP o 4 BPP, con colores asignados a una paleta especial en la que se invierten los colores oscuros y claros en función de los colores de primer plano y de fondo del tema activo de contraste alto.
+Para obtener compatibilidad básica con contraste alto, la cinta de opciones permite que se muestre un conjunto independiente de archivos de imagen cuando un tema de contraste alto está activo. Estas imágenes pueden ser 32 BPP o 4 BPP, con colores asignados a una paleta especial donde los colores oscuros y claros se invierten en función de los colores de primer plano y de fondo del tema activo de contraste alto.
 
 En el ejemplo siguiente se muestra cómo se declaran los recursos de imagen de contraste alto en el marcado de la cinta de opciones:
 
@@ -255,30 +255,30 @@ En el ejemplo siguiente se muestra cómo se declaran los recursos de imagen de c
 
 <dl> <dt>
 
-[**Comando. SmallImages**](windowsribbon-element-command-smallimages.md)
+[**Command.SmallImages**](windowsribbon-element-command-smallimages.md)
 </dt> <dt>
 
 [UI \_ PKEY \_ SmallImage](windowsribbon-reference-properties-uipkey-smallimage.md)
 </dt> <dt>
 
-[**Comando. LargeImages**](windowsribbon-element-command-largeimages.md)
+[**Command.LargeImages**](windowsribbon-element-command-largeimages.md)
 </dt> <dt>
 
 [UI \_ PKEY \_ LargeImage](windowsribbon-reference-properties-uipkey-largeimage.md)
 </dt> <dt>
 
-[**Comando. SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)
+[**Command.SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)
 </dt> <dt>
 
 [UI \_ PKEY \_ SmallHighContrastImage](windowsribbon-reference-properties-uipkey-smallhighcontrastimage.md)
 </dt> <dt>
 
-[**Comando. LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)
+[**Command.LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)
 </dt> <dt>
 
 [UI \_ PKEY \_ LargeHighContrastImage](windowsribbon-reference-properties-uipkey-largehighcontrastimage.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

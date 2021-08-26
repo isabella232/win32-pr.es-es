@@ -1,30 +1,30 @@
 ---
-title: IMsRdpClient SetVirtualChannelOptions, método
-description: Establece las opciones de canal virtual para el control ActiveX Escritorio remoto.
+title: Método IMsRdpClient SetVirtualChannelOptions
+description: Establece las opciones de canal virtual para el control Escritorio remoto ActiveX virtual.
 ms.assetid: c74c3917-5766-4d5b-8458-b051eb91cb28
 ms.tgt_platform: multiple
 keywords:
 - Método SetVirtualChannelOptions Servicios de Escritorio remoto
-- Método SetVirtualChannelOptions Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Interfaz IMsRdpClient Servicios de Escritorio remoto, método SetVirtualChannelOptions
-- Método SetVirtualChannelOptions Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Interfaz IMsRdpClient2 Servicios de Escritorio remoto, método SetVirtualChannelOptions
-- Método SetVirtualChannelOptions Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Interfaz IMsRdpClient3 Servicios de Escritorio remoto, método SetVirtualChannelOptions
-- Método SetVirtualChannelOptions Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Interfaz IMsRdpClient4 Servicios de Escritorio remoto, método SetVirtualChannelOptions
-- Método SetVirtualChannelOptions Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Interfaz IMsRdpClient5 Servicios de Escritorio remoto, método SetVirtualChannelOptions
-- Método SetVirtualChannelOptions Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Interfaz IMsRdpClient6 Servicios de Escritorio remoto, método SetVirtualChannelOptions
-- Método SetVirtualChannelOptions Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Interfaz IMsRdpClient7 Servicios de Escritorio remoto, método SetVirtualChannelOptions
-- Método SetVirtualChannelOptions Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Interfaz IMsRdpClient8 Servicios de Escritorio remoto, método SetVirtualChannelOptions
-- Método SetVirtualChannelOptions Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto, método SetVirtualChannelOptions
-- Método SetVirtualChannelOptions Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Interfaz IMsRdpClient10 Servicios de Escritorio remoto, método SetVirtualChannelOptions
+- Método SetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , método SetVirtualChannelOptions
+- Método SetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , método SetVirtualChannelOptions
+- Método SetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , método SetVirtualChannelOptions
+- Método SetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , método SetVirtualChannelOptions
+- Método SetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , método SetVirtualChannelOptions
+- Método SetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , método SetVirtualChannelOptions
+- Método SetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , método SetVirtualChannelOptions
+- Método SetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , método SetVirtualChannelOptions
+- Método SetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , método SetVirtualChannelOptions
+- Método SetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , método SetVirtualChannelOptions
 topic_type:
 - apiref
 api_name:
@@ -44,18 +44,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10e727fd3486b9d1b31fb3a421ea6ff268949790
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 804d4bde2fec9cb6273cc78f79d733f61a08772746439aa1cbb6e7b2d3c29716
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871595"
 ---
-# <a name="imsrdpclientsetvirtualchanneloptions-method"></a>IMsRdpClient:: SetVirtualChannelOptions (método)
+# <a name="imsrdpclientsetvirtualchanneloptions-method"></a>Método IMsRdpClient::SetVirtualChannelOptions
 
-Establece las opciones de canal virtual para el control ActiveX Escritorio remoto.
+Establece las opciones de canal virtual para el control Escritorio remoto ActiveX virtual.
 
-Llame a este método después de llamar al método [**CreateVirtualChannels**](imstscax-createvirtualchannels.md) , pero antes de establecer una conexión con el método [**Connect**](imstscax-connect.md) . Este método establece opciones adicionales en los canales virtuales creados con **CreateVirtualChannels**.
+Llame a este método después de llamar al [**método CreateVirtualChannels,**](imstscax-createvirtualchannels.md) pero antes de establecer una conexión con [**Conectar**](imstscax-connect.md) método. Este método establece opciones adicionales en los canales virtuales que se han creado **con CreateVirtualChannels**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,29 +73,29 @@ HRESULT SetVirtualChannelOptions(
 
 <dl> <dt>
 
-*ChanName* \[ de\]
+*ChanName* \[ En\]
 </dt> <dd>
 
-Nombre del canal virtual que se especificó en la llamada al método [**CreateVirtualChannels**](imstscax-createvirtualchannels.md) .
+Nombre del canal virtual especificado en la llamada al [**método CreateVirtualChannels.**](imstscax-createvirtualchannels.md)
 
 </dd> <dt>
 
-*chanOptions* \[ de\]
+*yopciones* \[ En\]
 </dt> <dd>
 
-Opciones que se van a establecer para el canal virtual especificado por el parámetro *ChanName* . Para obtener una descripción de las opciones posibles, consulte [**Channel \_ Def**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def). Para obtener más información, vea la sección Comentarios que se muestra más adelante.
+Opciones que se establecerán para el canal virtual especificado por el *parámetroMosnombreDeMos.* Para obtener una descripción de las posibles opciones, vea [**CHANNEL \_ DEF**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def). Para obtener más información, vea la sección Comentarios que se muestra más adelante.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un ejemplo del uso de este método sería declarar el canal como control remoto persistente mediante la configuración de **la \_ opción de canal \_ \_ \_ persistencia persistente de control remoto** . Esto significa que el canal no se cerrará cuando un control remoto se conecte o desconecte de la sesión conectada al cliente. Para obtener más información, consulte [Remote control remoto canales virtuales persistentes](remote-control-persistent-virtual-channels.md).
+Un ejemplo de uso de este método sería declarar el canal como control remoto persistente estableciendo la marca **CHANNEL OPTION REMOTE CONTROL \_ \_ \_ \_ PERSISTENT.** Esto significa que el canal no se cerrará cuando un control remoto se conecte a la sesión conectada al cliente o se desconecte de ella. Para obtener más información, [vea Remote Control Persistent Virtual Channels](remote-control-persistent-virtual-channels.md).
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -145,7 +145,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 [**IMsRdpClient10**](imsrdpclient10.md)
 </dt> <dt>
 
-[**DEF. de canal \_**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def)
+[**CHANNEL \_ DEF**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def)
 </dt> <dt>
 
 [**CreateVirtualChannels**](imstscax-createvirtualchannels.md)

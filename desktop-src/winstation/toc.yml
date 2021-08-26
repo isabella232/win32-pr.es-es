@@ -1,4 +1,4 @@
-- name: Estaciones de ventana y equipos de escritorio
+- name: Estaciones de ventana y escritorios
   href: window-stations-and-desktops.md
   items:
     - name: Acerca de las estaciones de ventana y los escritorios
@@ -8,20 +8,20 @@
           href: window-stations.md
         - name: Escritorios
           href: desktops.md
-        - name: Creación de estación de ventana y escritorio
+        - name: Estación de ventana y creación de escritorio
           href: window-station-and-desktop-creation.md
-        - name: Proceso de conexión a una estación de ventana
+        - name: Procesar la conexión a una estación de ventana
           href: process-connection-to-a-window-station.md
         - name: Conexión de subprocesos a un escritorio
           href: thread-connection-to-a-desktop.md
-        - name: Seguridad y derechos de acceso de la estación de ventana
+        - name: Derechos de acceso y seguridad de la estación de windows
           href: window-station-security-and-access-rights.md
-        - name: Seguridad de escritorio y derechos de acceso
+        - name: Derechos de acceso y seguridad de escritorio
           href: desktop-security-and-access-rights.md
     - name: Estación de ventana y referencia de escritorio
       href: window-station-and-desktop-reference.md
       items:
-        - name: Estaciones de ventana y funciones de escritorio
+        - name: Funciones de escritorio y estación de ventana
           href: window-station-and-desktop-functions.md
           items:
             - name: CloseDesktop
@@ -64,7 +64,7 @@
               href: /windows/desktop/api/winuser/nf-winuser-setuserobjectinformationa
             - name: SwitchDesktop
               href: /windows/desktop/api/winuser/nf-winuser-switchdesktop
-        - name: Windows Station y estructuras de escritorio
+        - name: Estación de ventana y estructuras de escritorio
           href: window-station-and-desktop-structures.md
           items:
             - name: USEROBJECTFLAGS

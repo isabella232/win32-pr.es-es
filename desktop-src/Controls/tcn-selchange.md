@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TCN_SELCHANGE (commctrl. h)
-description: Notifica a la ventana primaria de un control de pestaña que la pestaña seleccionada actualmente ha cambiado. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TCN_SELCHANGE de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de pestaña que la pestaña seleccionada actualmente ha cambiado. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: f40e30f6-169b-4381-a300-12c3befb5fc5
 keywords:
-- TCN_SELCHANGE controles de código de notificación de Windows
+- TCN_SELCHANGE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8578ac9fee7754b1ae27c05c6ec1b15636090040
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e54ad012e98005e8fbf5148af58aab10d90e3127afeab6311cc8b8f3f84e2988
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876185"
 ---
-# <a name="tcn_selchange-notification-code"></a>Código de notificación de SELCHANGE de TCN \_
+# <a name="tcn_selchange-notification-code"></a>Código de notificación DE TCN \_ SELCHANGE
 
-Notifica a la ventana primaria de un control de pestaña que la pestaña seleccionada actualmente ha cambiado. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de pestaña que la pestaña seleccionada actualmente ha cambiado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ TCN_SELCHANGE
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-n
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar la pestaña actualmente seleccionada, use la macro [**TabCtrl \_ GetCurSel**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel) .
+Para determinar la pestaña seleccionada actualmente, use la [**macro TabCtrl \_ GetCurSel.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Para determinar la pestaña actualmente seleccionada, use la macro [**TabCtrl \_
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

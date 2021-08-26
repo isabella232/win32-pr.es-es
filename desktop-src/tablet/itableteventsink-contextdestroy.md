@@ -1,7 +1,7 @@
 ---
-description: Se produce cuando se destruye un contexto de Tablet PC.
+description: Se produce cuando se destruye un contexto de tableta.
 ms.assetid: 805289d8-267e-488b-8092-6b07b37dd6d4
-title: 'ITabletEventSink:: ContextDestroy (método)'
+title: ITabletEventSink::ContextDestroy (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: c9b5d78d4ce4032c1a7a2082fb749afc5a39949a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e220b812c046420d8d0fa057bf2defddd9b50666665ab2ccdfdc5df7aa46438
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883505"
 ---
-# <a name="itableteventsinkcontextdestroy-method"></a>ITabletEventSink:: ContextDestroy (método)
+# <a name="itableteventsinkcontextdestroy-method"></a>ITabletEventSink::ContextDestroy (método)
 
-Se produce cuando se destruye un contexto de Tablet PC.
+Se produce cuando se destruye un contexto de tableta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,10 +40,10 @@ HRESULT ContextDestroy(
 
 <dl> <dt>
 
-*TCID* \[ de\]
+*tcid* \[ En\]
 </dt> <dd>
 
-Identificador del contexto de Tablet PC que se va a destruir.
+Identificador del contexto de tableta que se va a destruir.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
@@ -68,7 +68,7 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -78,7 +78,7 @@ Este método puede devolver uno de estos valores.
 
 <dl> <dt>
 
-[**Interfaz ITabletEventSink**](itableteventsink.md)
+[**ITabletEventSink (interfaz)**](itableteventsink.md)
 </dt> </dl>
 
  

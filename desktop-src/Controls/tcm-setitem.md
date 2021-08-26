@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TCM_SETITEM (commctrl. h)
-description: Establece algunos o todos los atributos de una pestaña. Puede enviar este mensaje explícitamente o mediante la macro TabCtrl \_ setItem.
+title: TCM_SETITEM mensaje (Commctrl.h)
+description: Establece algunos o todos los atributos de una pestaña. Puede enviar este mensaje explícitamente o mediante la macro TabCtrl \_ SetItem.
 ms.assetid: 1d9c6607-d8ec-4644-a714-22bc2677aa78
 keywords:
-- TCM_SETITEM controles de mensajes de Windows
+- TCM_SETITEM controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee86cd0737c3c50c89a97d3881e2cdfd3850f481
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c27f93e2743e5676c0fcca932cfa1936bb72667ef4fa4a5334eaae3e78d2be08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876334"
 ---
-# <a name="tcm_setitem-message"></a>\_Mensaje SETITEM de TCM
+# <a name="tcm_setitem-message"></a>Mensaje \_ SETITEM de TCM
 
-Establece algunos o todos los atributos de una pestaña. Puede enviar este mensaje explícitamente o mediante la macro [**TabCtrl \_ SetItem**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_setitem) .
+Establece algunos o todos los atributos de una pestaña. Puede enviar este mensaje explícitamente o mediante la macro [**TabCtrl \_ SetItem.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_setitem)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -41,13 +41,13 @@ Establece algunos o todos los atributos de una pestaña. Puede enviar este mensa
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**TCITEM**](/windows/win32/api/commctrl/ns-commctrl-tcitema) que contiene los nuevos atributos de elemento. El miembro **Mask** especifica los atributos que se van a establecer. Si el miembro **Mask** especifica el \_ valor de texto TCIF, el miembro **miembros pszText** es la dirección de una cadena terminada en NULL y se omite el miembro **cchTextMax** .
+Puntero a una [**estructura TCITEM**](/windows/win32/api/commctrl/ns-commctrl-tcitema) que contiene los nuevos atributos de elemento. El **miembro mask** especifica qué atributos se establecerán. Si el **miembro mask** especifica el valor TEXT de TCIF, el miembro pszText es la dirección de una cadena terminada en NULL y el miembro \_ **cchTextMax** se omite. 
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Devuelve **true** si es correcto, o **false** en caso contrario.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TCM \_ SETITEMW** (Unicode) y **TCM \_ SETITEMA** (ANSI)<br/>                   |
 
 

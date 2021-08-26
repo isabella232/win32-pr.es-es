@@ -4,12 +4,12 @@ ms.assetid: 1c73fe50-8a0d-4462-bf8a-fc53d8153eda
 title: Enumeraciones de aplicación auxiliar IP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3278629c994e02c285a3b29c2c628a46005170b
-ms.sourcegitcommit: ea0069adb72dbfa717e73f3a96c3407a49ec0dab
+ms.openlocfilehash: c56c1f5a1822e2b10166b33ba14089fe46607c91aaa80fadf5ce47416b5290cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "114394239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897805"
 ---
 # <a name="ip-helper-enumerations"></a>Enumeraciones de aplicación auxiliar IP
 

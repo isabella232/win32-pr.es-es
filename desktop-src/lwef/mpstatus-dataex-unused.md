@@ -1,10 +1,10 @@
 ---
-title: MPSTATUS_DATAEX_UNUSED estructura (MpClient. h)
+title: MPSTATUS_DATAEX_UNUSED estructura (MpClient.h)
 description: Estructura ficticia para no SRP.
 ms.assetid: 396744CE-2435-4591-B0CF-A4392C88640F
 keywords:
-- MPSTATUS_DATAEX_UNUSED estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPSTATUS_DATAEX_UNUSED características de entorno heredado de Windows
+- MPSTATUS_DATAEX_UNUSED estructura heredada de Windows environment
+- PMPSTATUS_DATAEX_UNUSED puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfcbc987a97a8cc47501a24e633c5da2d776a42d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 245315d12b5fbe76ec2f552e510336aa3974753678e04f87c33546737f180c56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961095"
 ---
-# <a name="mpstatus_dataex_unused-structure"></a>MPSTATUS \_ DATAEX de la \_ estructura no usada
+# <a name="mpstatus_dataex_unused-structure"></a>Estructura NO \_ UTILIZADA DE MPSTATUS DATAEX \_
 
 Estructura ficticia para no SRP.
 
@@ -54,9 +54,9 @@ Tipo: **DWORD**
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
