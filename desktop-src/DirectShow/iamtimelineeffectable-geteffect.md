@@ -1,7 +1,7 @@
 ---
 description: El método GetEffect recupera el efecto en el nivel de prioridad especificado.
 ms.assetid: 8606c457-1c4d-4a20-b674-aaf82abeb451
-title: 'IAMTimelineEffectable:: GetEffect (método) (QEDIT. h)'
+title: Método IAMTimelineEffectable::GetEffect (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: b7a769fca28ea1f8f698b23de7df6b7c15f05234
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d53ecc7c3d5291ddb6b894b24835eeb236f036e94eb166383da907a9f469c960
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905185"
 ---
-# <a name="iamtimelineeffectablegeteffect-method"></a>IAMTimelineEffectable:: GetEffect (método)
+# <a name="iamtimelineeffectablegeteffect-method"></a>IamTimelineEffectable::GetEffect (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El método **GetEffect** recupera el efecto en el nivel de prioridad especificado.
+El **método GetEffect** recupera el efecto en el nivel de prioridad especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,17 +46,17 @@ HRESULT GetEffect(
 
 <dl> <dt>
 
-*ppFX* \[ enuncia\]
+*ppFX* \[ out\]
 </dt> <dd>
 
-Recibe la interfaz [**IAMTimelineObj**](iamtimelineobj.md) del efecto.
+Recibe la interfaz [**IAMTimelineObj del**](iamtimelineobj.md) efecto.
 
 </dd> <dt>
 
-*Cuales* 
+*Que* 
 </dt> <dd>
 
-Nivel de prioridad del efecto que se va a recuperar.
+Nivel de prioridad del efecto que se recuperará.
 
 </dd> </dl>
 
@@ -68,25 +68,25 @@ Devuelve un valor HRESULT. Entre los valores posibles figuran los siguientes:
 
 | Código devuelto                                                                               | Descripción                                     |
 |-------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>   | Ningún efecto con la prioridad especificada.<br/> |
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | Correcto.<br/>                             |
-| <dl> <dt>**\_puntero E**</dt> </dl> | Argumento de puntero **nulo** .<br/>           |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>   | Ningún efecto en la prioridad especificada,<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Correcto.<br/>                             |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | **Argumento de** puntero NULL.<br/>           |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el método devuelve S \_ correcto, la interfaz **IAMTimelineObj** que devuelve tiene un recuento de referencias pendiente. Asegúrese de liberar la interfaz cuando termine de usarla.
+Si el método devuelve S \_ OK, la **interfaz IAMTimelineObj** que devuelve tiene un recuento de referencias pendiente. Asegúrese de liberar la interfaz cuando haya terminado de usarlo.
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -96,8 +96,8 @@ Si el método devuelve S \_ correcto, la interfaz **IAMTimelineObj** que devuelv
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -105,7 +105,7 @@ Si el método devuelve S \_ correcto, la interfaz **IAMTimelineObj** que devuelv
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineEffectable**](iamtimelineeffectable.md)
+[**IAMTimelineEffectable (Interfaz)**](iamtimelineeffectable.md)
 </dt> <dt>
 
 [Códigos de error y de éxito](error-and-success-codes.md)

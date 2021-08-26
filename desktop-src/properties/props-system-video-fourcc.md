@@ -1,17 +1,17 @@
 ---
 description: Especifica el código FOURCC para la secuencia de vídeo.
 ms.assetid: c5054fc6-1273-4491-8fb9-30c4b8fc663f
-title: System. video. FourCC
+title: System.Video.FourCC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 475b1cebc0d19a89c70e0ebae2be4b7673697c23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb575eff3a39de7ee737ff947113d0d4dab501bc07215319a13667b9f9869c14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945005"
 ---
-# <a name="systemvideofourcc"></a>System. video. FourCC
+# <a name="systemvideofourcc"></a>System.Video.FourCC
 
 Especifica el código FOURCC para la secuencia de vídeo.
 
@@ -30,11 +30,11 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un código FOURCC es un entero de 32 bits sin signo que se crea mediante la concatenación de cuatro caracteres ASCII. Por ejemplo, el FOURCC para el vídeo H. 264 es "H264" o 0x34363248.
+Un código FOURCC es un entero de 32 bits sin signo que se crea concatenando cuatro caracteres ASCII. Por ejemplo, el vídeo de FOURCC para H.264 es "H264" o 0x34363248.
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -49,7 +49,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -61,7 +61,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -79,7 +79,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

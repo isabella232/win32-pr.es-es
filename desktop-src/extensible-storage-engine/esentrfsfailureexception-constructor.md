@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentRfsFailureException'
-title: Constructor de EsentRfsFailureException
+description: 'Más información sobre: Constructor EsentRfsFailureException'
+title: Constructor EsentRfsFailureException
 TOCTitle: 'EsentRfsFailureException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRfsFailureException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrfsfailureexception.esentrfsfailureexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 262abf623b34a1e3e640adb588cbe754c4247f79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f43403186e38a96498c69b2a1e264a74f17263fb439043c62b53372a54cae610
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851323"
 ---
-# <a name="esentrfsfailureexception-constructor"></a>Constructor de EsentRfsFailureException
+# <a name="esentrfsfailureexception-constructor"></a>Constructor EsentRfsFailureException
 
 Inicializa una nueva instancia de la clase EsentRfsFailureException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentRfsFailureException()
 public EsentRfsFailureException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentRfsFailureException()
 
 [Miembros de EsentRfsFailureException](./esentrfsfailureexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

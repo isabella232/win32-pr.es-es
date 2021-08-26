@@ -1,19 +1,19 @@
 ---
 title: Funciones del Servicio de acceso remoto
-description: Utilice las siguientes funciones para implementar la funcionalidad de RAS.
+description: Use las siguientes funciones para implementar la funcionalidad RAS.
 ms.assetid: 5883a77a-6af8-47a8-bb28-6ef60a5aa2f1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d272403c8cd485f5e9d3d1de0c7fe5ac1cac9442
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0698adac4f49165c49b90bba3b0d3e4890f5ae51e76ea260077ecc42c0f078fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028165"
 ---
 # <a name="remote-access-service-functions"></a>Funciones del Servicio de acceso remoto
 
-Utilice las siguientes funciones para implementar la funcionalidad de RAS.
+Use las siguientes funciones para implementar la funcionalidad RAS.
 
 **CmFree**
 
@@ -39,13 +39,13 @@ Utilice las siguientes funciones para implementar la funcionalidad de RAS.
 
 [**RasCustomEntryDlg**](/windows/desktop/api/Rasdlg/nc-rasdlg-rascustomentrydlgfn)
 
-[**RasCustomHangUp**](/windows/desktop/api/Ras/nc-ras-rascustomhangupfn)
+[**RasCustomCustomCustomUp**](/windows/desktop/api/Ras/nc-ras-rascustomhangupfn)
 
 [**RasDeleteEntry**](/windows/desktop/api/Ras/nf-ras-rasdeleteentrya)
 
 [**RasDeleteSubEntry**](/windows/desktop/api/Ras/nf-ras-rasdeletesubentrya)
 
-[**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala)
+[**Rasdial**](/windows/desktop/api/Ras/nf-ras-rasdiala)
 
 [**RasDialDlg**](/windows/desktop/api/Rasdlg/nf-rasdlg-rasdialdlga)
 
@@ -145,8 +145,8 @@ Utilice las siguientes funciones para implementar la funcionalidad de RAS.
 
 [**RasValidateEntryName**](/windows/desktop/api/Ras/nf-ras-rasvalidateentrynamea)
 
-[Funciones DLL de scripting personalizado de RAS](ras-custom-scripting-dll-functions.md)
+[Funciones DLL de scripting personalizadas de RAS](ras-custom-scripting-dll-functions.md)
 
- 
+ 
 
- 
+ 

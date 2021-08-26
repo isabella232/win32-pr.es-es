@@ -1,7 +1,7 @@
 ---
 description: Representa un dispositivo que puede usar medios para almacenar y recuperar datos.
 ms.assetid: c63b1731-dbc0-4e5e-acb8-cd91b5569dd2
-title: CIM_MediaAccessDevice (clase, administración de Hyper-V)
+title: CIM_MediaAccessDevice (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -36,14 +36,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 616148f6749f3ec00d019a903e8f9046d3aba602
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: bb97ded03cfc853fc0dde6ede26083be01cf218f210c31f947f315634599e179
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105689620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900265"
 ---
-# <a name="cim_mediaaccessdevice-class-hyper-v-management"></a>CIM_MediaAccessDevice (clase, administración de Hyper-V)
+# <a name="cim_mediaaccessdevice-class-hyper-v-management"></a>CIM_MediaAccessDevice (administración de Hyper-V)
 
 Representa un dispositivo que puede usar medios para almacenar y recuperar datos.
 
@@ -81,20 +81,20 @@ class CIM_MediaAccessDevice : CIM_LogicalDevice
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ MediaAccessDevice** tiene estos tipos de miembros:
+La **clase \_ Cim MediaAccessDevice** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **CIM \_ MediaAccessDevice** tiene estos métodos.
+La **clase \_ MediaAccessDevice** de CIM tiene estos métodos.
 
 
 
 | Método                                               | Descripción                                                            |
 |:-----------------------------------------------------|:-----------------------------------------------------------------------|
-| [**LockMedia**](cim-mediaaccessdevice-lockmedia.md) | Bloquea y desbloquea los medios extraíbles en un dispositivo de acceso a medios.<br/> |
+| [**LockMedia**](cim-mediaaccessdevice-lockmedia.md) | Bloquea y desbloquea medios extraíbles en un dispositivo de acceso multimedia.<br/> |
 
 
 
@@ -102,23 +102,23 @@ La clase **CIM \_ MediaAccessDevice** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ MediaAccessDevice** tiene estas propiedades.
+La **clase \_ Cim MediaAccessDevice** tiene estas propiedades.
 
 <dl> <dt>
 
 **Capabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Dispositivos de almacenamiento DMTF \| 001,9 "," MIF. \|Dispositivos de almacenamiento DMTF \| 001,11 "," MIF. \|Dispositivos de almacenamiento DMTF \| 001,12 "," MIF. \|Discos DMTF \| 003,7 "," MIF. \|Disco de host DMTF \| 001,2 "," MIF. \|Disco de host DMTF \| 001,4 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**CapabilityDescriptions**")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Storage Devices \| 001.9", "MIF. DMTF \| Storage Devices \| 001.11", "MIF. DMTF \| Storage Devices \| 001.12", "MIF. DISCOS DMTF \| \| 003.7", "MIF. Disco host DMTF \| \| 001.2", "MIF. Disco host DMTF \| \| 001.4"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**CapabilityDescriptions**")
 </dt> </dl>
 
-Una matriz que contiene las funciones del dispositivo de acceso a medios.
+Matriz que contiene las funciones del dispositivo de acceso multimedia.
 
 <dt>
 
@@ -131,7 +131,7 @@ Una matriz que contiene las funciones del dispositivo de acceso a medios.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -173,7 +173,7 @@ Una matriz que contiene las funciones del dispositivo de acceso a medios.
 
 <span id="Supports_Removeable_Media"></span><span id="supports_removeable_media"></span><span id="SUPPORTS_REMOVEABLE_MEDIA"></span>
 
-**Admite medios** extraíbles (7)
+**Admite medios extraíbles** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -194,7 +194,7 @@ Una matriz que contiene las funciones del dispositivo de acceso a medios.
 
 <span id="SMART_Notification"></span><span id="smart_notification"></span><span id="SMART_NOTIFICATION"></span>
 
-**Notificación inteligente** (10)
+**Notificación INTELIGENTE** (10)
 
 
 </dt> <dd></dd> <dt>
@@ -208,7 +208,7 @@ Una matriz que contiene las funciones del dispositivo de acceso a medios.
 
 <span id="Predismount_Eject_Not_Required"></span><span id="predismount_eject_not_required"></span><span id="PREDISMOUNT_EJECT_NOT_REQUIRED"></span>
 
-**Predismount EJECT no requerido** (12)
+**Expulsión previa no necesaria** (12)
 
 
 </dt> <dd></dd> </dl>
@@ -218,16 +218,16 @@ Una matriz que contiene las funciones del dispositivo de acceso a medios.
 **CapabilityDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**Funcionalidades**")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**Funcionalidades**")
 </dt> </dl>
 
-Matriz de descripciones de características para los elementos de la matriz de **funcionalidades** .
+Matriz de descripciones de características para los elementos de la matriz **Capabilities.**
 
 </dd> <dt>
 
@@ -240,26 +240,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del algoritmo o herramienta que usa el dispositivo para admitir la compresión.
+Nombre del algoritmo o la herramienta que usa el dispositivo para admitir la compresión.
 
 Si no se especifica un tipo de compresión, se puede usar uno de los siguientes valores:
 
--   La compatibilidad con la compresión "desconocida" es desconocida o no se ha especificado.
--   Se admite la compresión "comprimida", pero el tipo es desconocido o no se ha especificado.
--   "No comprimido" el dispositivo no admite capacidades de compresión.
+-   La compatibilidad con la compresión "Desconocido" es desconocida o no se ha especificado.
+-   Se admite la compresión "Compressed", pero el tipo es desconocido o no especificado.
+-   "No comprimido", el dispositivo no admite funcionalidades de compresión.
 
 </dd> <dt>
 
 **DefaultBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes"), **punitivo** ("byte")
+Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes"), **PUnit** ("byte")
 </dt> </dl>
 
 Tamaño de bloque predeterminado, en bytes, para el dispositivo.
@@ -275,81 +275,81 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El tipo de detección y corrección de errores admitidos por el dispositivo.
+Tipo de detección y corrección de errores admitidos por el dispositivo.
 
 </dd> <dt>
 
 **LastCleaned**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora en que se limpió por última vez el dispositivo.
+Fecha y hora de la última limpieza del dispositivo.
 
 </dd> <dt>
 
 **LoadTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milisegundos"), **punitivo** ("segundo \* 10 ^-3")
+Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Milegundos"), **PUnit** ("segundo \* 10^-3")
 </dt> </dl>
 
-El tiempo que tarda, en milisegundos, para que el dispositivo pueda leer o escribir un medio después de que el dispositivo empiece a cargarse. Por ejemplo, en el caso de las unidades de disco, es el intervalo entre un disco que no gira hasta el disco que informa de que está listo para las operaciones de lectura y escritura. En el caso de las unidades de cinta, esto se inicia cuando se inserta el medio y finaliza cuando la unidad informa de que está listo para una aplicación. Normalmente, se encuentra en el área de inicio de cinta (BOT) de la cinta.
+El tiempo necesario, en milisegundos, para que el dispositivo pueda leer o escribir un medio después de que el dispositivo empiece a cargarse. Por ejemplo, para las unidades de disco, este es el intervalo entre un disco que no gira al disco y que informa de que está listo para las operaciones de lectura y escritura. En el caso de las unidades de cinta, esto se inicia cuando se insertan medios y finaliza cuando la unidad informa de que está lista para una aplicación. Esto suele estar en el área de inicio de cinta (BOT) de la cinta.
 
 </dd> <dt>
 
 **MaxAccessTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milisegundos"), **punitivo** ("segundo \* 10 ^-3")
+Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Milegundos"), **PUnit** ("segundo \* 10^-3")
 </dt> </dl>
 
-El tiempo máximo de acceso del medio, en milisegundos. En el caso de una unidad de disco, representa la búsqueda completa y el retraso de rotación completo. En el caso de las unidades de cinta, representa una búsqueda desde el principio de la cinta hasta el punto más alejado físicamente.
+Tiempo de acceso máximo del medio, en milisegundos. Para una unidad de disco, esto representa la búsqueda completa y el retraso de rotación completo. En el caso de las unidades de cinta, esto representa una búsqueda desde el principio de la cinta hasta el punto más alejado físicamente.
 
 </dd> <dt>
 
 **MaxBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes"), **punitivo** ("byte")
+Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes"), **PUnit** ("byte")
 </dt> </dl>
 
-Tamaño máximo del bloque, en bytes, para los medios a los que tiene acceso el dispositivo.
+Tamaño máximo de bloque, en bytes, para los medios a los que tiene acceso el dispositivo.
 
 </dd> <dt>
 
 **MaxMediaSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Dispositivos de acceso secuencial \| de DMTF 001,2 "," MIF. \|Disco host DMTF \| 001,5 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Sequential Access Devices \| 001.2", "MIF. Disco host DMTF \| \| 001.5")
 </dt> </dl>
 
 Tamaño máximo, en kilobytes, de los medios admitidos por este dispositivo.
@@ -359,7 +359,7 @@ Tamaño máximo, en kilobytes, de los medios admitidos por este dispositivo.
 **MaxUnitsBeforeCleaning**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -368,7 +368,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**UnitsDescription**")
 </dt> </dl>
 
-El número máximo de unidades que se pueden usar antes de que se limpie el dispositivo. **UnitsDescription** define el tipo de unidad.
+Número máximo de unidades que se pueden usar antes de que se limpie el dispositivo. **UnitsDescription** define cómo el tipo de unidad.
 
 </dd> <dt>
 
@@ -381,39 +381,39 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-**true** si el medio está bloqueado en el dispositivo y no se puede expulsar; en caso contrario, **false**. En el caso de los dispositivos no extraíbles, este valor debe ser **true**.
+**True** si el medio está bloqueado en el dispositivo y no se puede expulsar; de lo contrario, **false**. En el caso de los dispositivos no extraíbles, este valor debe ser **true.**
 
 </dd> <dt>
 
 **MinBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes"), **punitivo** ("byte")
+Calificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bytes"), **PUnit** ("byte")
 </dt> </dl>
 
-Tamaño mínimo del bloque, en bytes, para los medios a los que tiene acceso el dispositivo.
+Tamaño mínimo del bloque, en bytes, para los medios a los que accede el dispositivo.
 
 </dd> <dt>
 
 **MountCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **contador**
+Calificadores: **Contador**
 </dt> </dl>
 
-El número de veces que se ha montado el medio para la transferencia de datos o para limpiar el dispositivo. Si el dispositivo no admite medios extraíbles, esta propiedad debe establecerse en cero.
+Número de veces que se ha montado ese medio para la transferencia de datos o para limpiar el dispositivo. Si el dispositivo no admite medios extraíbles, esta propiedad debe establecerse en cero.
 
 </dd> <dt>
 
@@ -426,10 +426,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-**true** si el dispositivo necesita limpieza; en caso contrario, **false**.
+**true** si el dispositivo necesita limpieza; de lo contrario, **false**.
 
 > [!Note]  
-> La propiedad **Capabilities** indica si es posible la limpieza manual o automática.
+> La **propiedad Capabilities** indica si es posible realizar una limpieza manual o automática.
 
  
 
@@ -438,26 +438,26 @@ Tipo de acceso: solo lectura
 **NumberOfMediaSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si el dispositivo admite varios medios individuales, esta propiedad define el número máximo que se puede admitir o insertar.
+Si el dispositivo admite varios medios individuales, esta propiedad define el número máximo que se puede usar o insertar.
 
 </dd> <dt>
 
 **Seguridad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Discos DMTF \| 003,22 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Discos DMTF \| \| 003.22")
 </dt> </dl>
 
 La seguridad operativa del dispositivo.
@@ -466,7 +466,7 @@ La seguridad operativa del dispositivo.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -501,7 +501,7 @@ La seguridad operativa del dispositivo.
 
 <span id="Boot_Bypass"></span><span id="boot_bypass"></span><span id="BOOT_BYPASS"></span>
 
-**Omisión de arranque** (6)
+**Omisión de** arranque (6)
 
 
 </dt> <dd></dd> <dt>
@@ -518,42 +518,42 @@ La seguridad operativa del dispositivo.
 **TimeOfLastMount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La fecha y hora más recientes en que se montó el medio en el dispositivo. Esta propiedad solo la usan los dispositivos que admiten medios extraíbles.
+Fecha y hora más recientes en que se montaron los medios en el dispositivo. Esta propiedad solo la usan los dispositivos que admiten medios extraíbles.
 
 </dd> <dt>
 
 **TotalMountTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El tiempo, en segundos, que los medios se han montado para la transferencia de datos o para limpiar el dispositivo. Si el dispositivo no admite medios extraíbles, esta propiedad debe establecerse en cero.
+Tiempo, en segundos, que se ha montado ese medio para la transferencia de datos o para limpiar el dispositivo. Si el dispositivo no admite medios extraíbles, esta propiedad debe establecerse en cero.
 
 </dd> <dt>
 
 **UncompressedDataRate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes por segundo"), **punitivo** ("byte/segundo \* 10 ^ 3")
+Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("KiloBytes por segundo"), **PUnit** ("byte/segundo \* 10^3")
 </dt> </dl>
 
-La velocidad de transferencia de datos sostenida en kilobytes en la que el dispositivo puede leer y escribir en un medio. Se trata de una velocidad de datos sin procesar y sostenida. No se deben informar de las tarifas máximas con compresión en esta propiedad.
+Velocidad de transferencia de datos sostenida en kilobytes en los que el dispositivo puede leer y escribir en un medio. Se trata de una tasa de datos continuada y sin procesar. Las tasas máximas o las tasas con compresión no deben informarse en esta propiedad.
 
 </dd> <dt>
 
@@ -566,42 +566,42 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**MaxUnitsBeforeCleaning**","**\_ MediaAccessDevice CIM**.**UnitsUsed**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**MaxUnitsBeforeCleaning**","**CIM \_ MediaAccessDevice**.**UnitsUsed**")
 </dt> </dl>
 
-Describe el tipo de unidad de las propiedades **MaxUnitsBeforeCleaning** y **UnitsUsed** .
+Describe el tipo de unidad de las **propiedades MaxUnitsBeforeCleaning** **y UnitsUsed.**
 
 </dd> <dt>
 
 **UnitsUsed**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**medidor**](/windows/desktop/WmiSdk/standard-qualifiers), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**UnitsDescription**","**\_ MediaAccessDevice CIM**.**MaxUnitsBeforeCleaning**")
+Calificadores: [**Gauge**](/windows/desktop/WmiSdk/standard-qualifiers), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**UnitsDescription**", "**CIM \_ MediaAccessDevice**.**MaxUnitsBeforeCleaning**")
 </dt> </dl>
 
-El número de unidades utilizadas por el dispositivo. Esta propiedad se usa para determinar cuándo se debe limpiar el dispositivo. **UnitsDescription** define el tipo de unidad.
+Número de unidades usadas por el dispositivo. Esta propiedad se usa para determinar cuándo se debe limpiar el dispositivo. **UnitsDescription** define cómo el tipo de unidad.
 
 </dd> <dt>
 
 **UnloadTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milisegundos"), **punitivo** ("segundo \* 10 ^-3")
+Calificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("MilliSeconds"), **PUnit** ("second \* 10^-3")
 </dt> </dl>
 
-El tiempo que tarda, en milisegundos, para que el dispositivo pase de la lectura o escritura de archivos multimedia a la descarga. Por ejemplo, en el caso de las unidades de disco, es el intervalo entre un giro de disco a velocidades nominales y un disco que no gira. En el caso de las unidades de cinta, es el momento en que un medio puede pasar de su BOT a ser completamente expulsado y accesible a un elemento selector o operador humano.
+El tiempo que tarda el dispositivo, en milisegundos, en pasar de leer o escribir medios a descargarse. Por ejemplo, para las unidades de disco, este es el intervalo entre un disco girando a velocidad nominal y un disco que no gira. En el caso de las unidades de cinta, es el momento de que un medio vaya de su BOT a ser totalmente expulsada y accesible para un elemento selector o un operador humano.
 
 </dd> </dl>
 
@@ -609,12 +609,12 @@ El tiempo que tarda, en milisegundos, para que el dispositivo pase de la lectura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -623,7 +623,7 @@ El tiempo que tarda, en milisegundos, para que el dispositivo pase de la lectura
 
 <dl> <dt>
 
-[**LogicalDevice de CIM \_**](cim-logicaldevice.md)
+[**\_Dispositivo lógico CIM**](cim-logicaldevice.md)
 </dt> </dl>
 
  

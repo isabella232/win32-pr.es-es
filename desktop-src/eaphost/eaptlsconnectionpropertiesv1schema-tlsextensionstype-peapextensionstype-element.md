@@ -1,6 +1,6 @@
 ---
 title: AcceptServerName
-description: Indica si el nombre del servidor se valida con respecto a la cadena de nombre especificada en el elemento ServerNames (ServerValidationParameters). | AcceptServerName
+description: Indica si el nombre del servidor se valida con la cadena de nombre especificada en el elemento ServerNames (ServerValidationParameters). | AcceptServerName
 ms.assetid: 440a46ae-7fef-4e97-9fd7-cbd20143597b
 keywords:
 - elemento EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: beb12da9897cc0e77480f609edee632c135b5c5d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1562d0de8d47e901d7e9815f44e1cf4f283c6bc7488f3a9476531d35bb9d3598
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948165"
 ---
 # <a name="acceptservername"></a>AcceptServerName
 
-El elemento **AcceptServerName (EapType)** indica si el nombre del servidor se valida con respecto a la cadena de nombre especificada en el elemento [**servernames (ServerValidationParameters)**](eaptlsconnectionpropertiesv1schema-servernames-servervalidationparameters-element.md) .
+El **elemento AcceptServerName (EapType)** indica si el nombre del servidor se valida con la cadena de nombre especificada en el elemento [**ServerNames (ServerValidationParameters).**](eaptlsconnectionpropertiesv1schema-servernames-servervalidationparameters-element.md)
 
 ``` syntax
 <xs:element
@@ -33,11 +33,11 @@ El elemento **AcceptServerName (EapType)** indica si el nombre del servidor se v
  />
 ```
 
-El elemento se define mediante el elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) .
+El elemento [**eapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) define el elemento .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **AcceptServerName** es opcional.
+El **elemento AcceptServerName** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,8 +45,8 @@ El elemento **AcceptServerName** es opcional.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -75,7 +75,7 @@ El elemento **AcceptServerName** es opcional.
 [Esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Elementos de esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-elements.md)
+[Eaptlsconnectionpropertiesv1 Schema Elements](eaptlsconnectionpropertiesv1schema-elements.md)
 </dt> <dt>
 
 [**AcceptServerName (EapType)**](eaptlsconnectionpropertiesv2schema-acceptservername-eaptype-element.md)

@@ -1,7 +1,7 @@
 ---
-description: Se llama en respuesta a la vista Web Barricade que el usuario está descartando.
+description: Se llama en respuesta a la vista web descartada por el usuario.
 ms.assetid: 170893b6-c947-45b1-b717-a93a0b083bda
-title: Método Carpeta2. DismissedWebViewBarricade (Shldisp. h)
+title: Método Folder2.DismissedWebViewBarricade (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: cdedc7292b0dd52ca903b944993e32df1ec2c3b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a5380330e807eabe76cf1223811fd06147468e12d0c13244b0e44d391aa6e83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119937105"
 ---
-# <a name="folder2dismissedwebviewbarricade-method"></a>Carpeta2. DismissedWebViewBarricade (método)
+# <a name="folder2dismissedwebviewbarricade-method"></a>Método Folder2.DismissedWebViewBarricade
 
-Se llama en respuesta a la vista Web Barricade que el usuario está descartando.
+Se llama en respuesta a la vista web descartada por el usuario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,15 +41,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación llama a este método después de que el usuario descarte la vista Web Barricade.
+Una aplicación llama a este método después de que el usuario descarte la vista web.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **DismissedWebViewBarricade** para especificar que se ha descartado la vista Web Barricade para la carpeta C: \\ Windows. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa DismissedWebViewBarricade para** especificar que se ha descartado la vista web para C: Windows \\ carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -70,7 +70,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -122,11 +122,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

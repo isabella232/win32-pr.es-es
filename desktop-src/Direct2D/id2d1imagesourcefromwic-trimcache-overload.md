@@ -1,6 +1,6 @@
 ---
-title: Métodos de TrimCache de ID2D1ImageSourceFromWic (D2d1 \_ 3. h)
-description: Recorta las regiones rellenadas de la memoria caché de origen de la imagen solo en el rectángulo especificado.
+title: Métodos de TrimCache ID2D1ImageSourceFromWic (D2d1 \_ 3.h)
+description: Recorta las regiones rellenadas de la caché de origen de la imagen en solo el rectángulo especificado.
 ms.assetid: 04e6e010-3642-6775-8a95-f20ff0461b09
 keywords:
 - Métodos de TrimCache Direct2D
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 7555d82ba07af58a4823a14fb67a770b16c8ccbd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c4182804ff65abf4312c377fa513a3cca8b33bd67d617aa71d1cdebe060127c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917532"
 ---
-# <a name="id2d1imagesourcefromwictrimcache-methods"></a>ID2D1ImageSourceFromWic:: TrimCache (métodos)
+# <a name="id2d1imagesourcefromwictrimcache-methods"></a>Métodos ID2D1ImageSourceFromWic::TrimCache
 
-Recorta las regiones rellenadas de la memoria caché de origen de la imagen solo en el rectángulo especificado.
+Recorta las regiones rellenadas de la caché de origen de la imagen en solo el rectángulo especificado.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Recorta las regiones rellenadas de la memoria caché de origen de la imagen solo
 
 | Método                                                                    | Descripción                                                                                                   |
 |:--------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
-| [**TrimCache (D2D1 \_ Rect \_ U \* )**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u))  | Este método recorta las regiones rellenadas de la memoria caché de origen de la imagen solo en el rectángulo especificado.<br/> |
-| [**TrimCache (D2D1 \_ Rect \_ U&)**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u_)) | Este método recorta las regiones rellenadas de la memoria caché de origen de la imagen solo en el rectángulo especificado.<br/> |
+| [**TrimCache (D2D1 \_ RECT \_ U \* )**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u))  | Este método recorta las regiones rellenadas de la caché de origen de la imagen en solo el rectángulo especificado.<br/> |
+| [**TrimCache (D2D1 \_ RECT \_ U&)**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u_)) | Este método recorta las regiones rellenadas de la caché de origen de la imagen en solo el rectángulo especificado.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Recorta las regiones rellenadas de la memoria caché de origen de la imagen solo
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D2d1 \_ 3. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D2d1 \_ 3.h</dt> </dl> |
 
 
 

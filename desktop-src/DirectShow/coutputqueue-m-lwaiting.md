@@ -1,7 +1,7 @@
 ---
 description: Marca que tiene un valor distinto de cero cuando el subproceso está esperando un ejemplo.
 ms.assetid: bc628f47-fa5b-4742-aed4-351081a61c13
-title: 'Miembro COutputQueue:: m_lWaiting (Outputq. h)'
+title: COutputQueue::m_lWaiting miembro (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 854f83901a7f2fce03ffb04dc8417e850cb9bda3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a04feda58a7c4f317ed6bd2112d5a563c5222d7dedbdf34114e6dea5ce04b86b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871551"
 ---
-# <a name="coutputqueuem_lwaiting-member"></a>Miembro lWaiting COutputQueue:: m \_
+# <a name="coutputqueuem_lwaiting-member"></a>COutputQueue::m \_ lWaiting member
 
 Marca que tiene un valor distinto de cero cuando el subproceso está esperando un ejemplo.
 
@@ -42,8 +42,8 @@ LONG m_lWaiting;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ LONG m_lWaiting;
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

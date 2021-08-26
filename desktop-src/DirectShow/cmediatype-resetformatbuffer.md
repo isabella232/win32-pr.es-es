@@ -1,7 +1,7 @@
 ---
-description: El método ResetFormatBuffer elimina el bloque de formato. El método establece los miembros cbFormat y pbFormat de la \_ estructura de tipo de medio am \_ en NULL.
+description: El método ResetFormatBuffer elimina el bloque de formato. El método establece los miembros cbFormat y pbFormat de la estructura \_ AM MEDIA TYPE en \_ NULL.
 ms.assetid: 5eb6dfc8-cfba-41dd-b422-8fe93ca904c1
-title: Método CMediaType. ResetFormatBuffer (mtype. h)
+title: Método CMediaType.ResetFormatBuffer (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 25047060b956e2374964c1620c010dbdf458307c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90175600cf46c09de173c321a0db3f4f9b9466c0416014fcbb08433f57a1ca91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916012"
 ---
-# <a name="cmediatyperesetformatbuffer-method"></a>CMediaType. ResetFormatBuffer, método
+# <a name="cmediatyperesetformatbuffer-method"></a>Método CMediaType.ResetFormatBuffer
 
-El `ResetFormatBuffer` método elimina el bloque de formato. El método establece los miembros **cbFormat** y **pbFormat** de la estructura de **\_ \_ tipo de medio am** en **null**.
+El `ResetFormatBuffer` método elimina el bloque de formato. El método establece los **miembros cbFormat** y **pbFormat** de la estructura **AM MEDIA \_ \_ TYPE** en **NULL.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,8 +50,8 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

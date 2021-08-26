@@ -1,22 +1,22 @@
 ---
-description: XMSHORTN2 describe un vector 2D para almacenar valores normalizados y firmados como enteros de 16 bits con signo, (tipo Int16 \_ t).
+description: XMSHORTN2 describe un vector 2D para almacenar valores con signo normalizados como enteros de 16 bits con signo (tipo int16 \_ t).
 ms.assetid: 78e718b4-8107-47e1-a7ed-529b3c7aa935
-title: Extensiones de XMSHORTN2
+title: Extensiones XMSHORTN2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d2cce3a18d333af2fe9d427b7611f1875a61509
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c3c3ae5c891b590e3b7358a69c171c622e2d6c9a74206df45973ef066e57bee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948905"
 ---
-# <a name="xmshortn2-extensions"></a>Extensiones de XMSHORTN2
+# <a name="xmshortn2-extensions"></a>Extensiones XMSHORTN2
 
-[**XMSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2) describe un vector 2D para almacenar valores normalizados y firmados como enteros de 16 bits con signo, (tipo `int16_t` ).
+[**XMSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2) describe un vector 2D para almacenar valores con signo y normalizados como enteros de 16 bits con signo(tipo `int16_t` ).
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

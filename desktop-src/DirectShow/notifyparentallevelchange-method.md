@@ -1,24 +1,24 @@
 ---
-description: El método NotifyParentalLevelChange habilita o deshabilita el control de eventos para los comandos del nivel de administración parental temporal.
+description: El método NotifyParentalLevelChange habilita o deshabilita el control de eventos para los comandos temporales de nivel de administración parental.
 ms.assetid: c8252cc6-a83f-4cce-ba3e-7db669eeb465
-title: Método NotifyParentalLevelChange (Segment. h)
+title: Método NotifyParentalLevelChange (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc47b7d78af8cfdd32aa63361411e769c375ddf1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8382b52f64d4196b0ef74e5f3285e9bb047a4e1f77d3b0e5bec4da218ee753b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997365"
 ---
-# <a name="notifyparentallevelchange-method"></a>Método NotifyParentalLevelChange
+# <a name="notifyparentallevelchange-method"></a>NotifyParentalLevelChange (método)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.
 
  
 
-El `NotifyParentalLevelChange` método habilita o deshabilita el control de eventos para los comandos del nivel de administración parental temporal.
+El `NotifyParentalLevelChange` método habilita o deshabilita el control de eventos para los comandos temporales de nivel de administración parental.
 
 ``` syntax
 MSWebDVD.NotifyParentalLevelChange(bNotify)
@@ -39,9 +39,9 @@ Especifica un valor booleano que indica si se notifica o no a la aplicación cua
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las notificaciones de administración parental están deshabilitadas de forma predeterminada. Esto significa que se permiten los comandos parentales temporales del disco, pero se omiten y el disco se reproducirá sin interrupción. Llame a este método durante la inicialización de la aplicación si necesita controlar los comandos del nivel de administración parental temporal del disco. Para deshabilitar la administración parental una vez habilitada, llame a este método con un argumento de false. Para obtener más información sobre la administración parental, vea [**AcceptParentalLevelChange**](acceptparentallevelchange-method.md).
+Las notificaciones de administración parental están deshabilitadas de forma predeterminada. Esto significa que se permiten los comandos parentales temporales del disco, pero se omiten y el disco se reproducirá sin interrupción. Llame a este método durante la inicialización de la aplicación si necesita controlar comandos temporales de nivel de administración parental desde el disco. Para deshabilitar la administración parental una vez habilitada, llame a este método con un argumento false. Para obtener más información sobre la administración parental, [**vea AcceptParentalLevelChange**](acceptparentallevelchange-method.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ Las notificaciones de administración parental están deshabilitadas de forma pr
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 
@@ -57,7 +57,7 @@ Las notificaciones de administración parental están deshabilitadas de forma pr
 
 <dl> <dt>
 
-[**SelectParentalLevel**](selectparentallevel-method.md)
+[**SeleccioneParentalLevel.**](selectparentallevel-method.md)
 </dt> <dt>
 
 [**GetTitleParentalLevels**](gettitleparentallevels-method.md)
@@ -69,7 +69,7 @@ Las notificaciones de administración parental están deshabilitadas de forma pr
 [**GetPlayerParentalLevel**](getplayerparentallevel-method.md)
 </dt> <dt>
 
-[**SelectParentalCountry**](selectparentalcountry-method.md)
+[**SeleccioneParentalCountry.**](selectparentalcountry-method.md)
 </dt> </dl>
 
  

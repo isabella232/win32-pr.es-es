@@ -1,7 +1,7 @@
 ---
 description: Representa información general sobre un botón en un dispositivo de lápiz óptico.
 ms.assetid: 20c9f8bb-8f8d-4469-baff-b9001c8adb3b
-title: Interfaz ITabletCursorButton
+title: ITabletCursorButton (interfaz)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,43 +14,43 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: c8f13e46699c1bea42bd8f8a7f78313aeba68aaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 76f5e581a4db81d9e260b388cc129d915121a69f3b360441e4220fd58aa0e623
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938605"
 ---
-# <a name="itabletcursorbutton-interface"></a>Interfaz ITabletCursorButton
+# <a name="itabletcursorbutton-interface"></a>ITabletCursorButton (interfaz)
 
 Representa información general sobre un botón en un dispositivo de lápiz óptico.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **ITabletCursorButton** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITabletCursorButton** también tiene estos tipos de miembros:
+La **interfaz ITabletCursorButton** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITabletCursorButton** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **ITabletCursorButton** tiene estos métodos.
+La **interfaz ITabletCursorButton** tiene estos métodos.
 
 
 
 | Método                                         | Descripción                                                      |
 |:-----------------------------------------------|:-----------------------------------------------------------------|
-| [**GetGuid**](itabletcursorbutton-getguid.md) | Recupera el identificador único del botón del lápiz óptico.<br/> |
+| [**GetGuid**](itabletcursorbutton-getguid.md) | Recupera el identificador único del botón de lápiz óptico.<br/> |
 | [**GetName**](itabletcursorbutton-getname.md) | Recupera el nombre del botón del lápiz óptico.<br/>              |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los desarrolladores no deben utilizar esta interfaz.
+Los desarrolladores no deben usar esta interfaz.
 
-En el código siguiente se muestra cómo se define la interfaz **ITabletCursorButton** .
+El código siguiente muestra cómo se define la interfaz **ITabletCursorButton.**
 
 ``` syntax
 [
@@ -74,7 +74,7 @@ interface ITabletCursorButton : IUnknown
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -84,7 +84,7 @@ interface ITabletCursorButton : IUnknown
 
 <dl> <dt>
 
-[**Interfaz ITabletCursorButton**](itabletcursorbutton.md)
+[**ITabletCursorButton (Interfaz)**](itabletcursorbutton.md)
 </dt> </dl>
 
  

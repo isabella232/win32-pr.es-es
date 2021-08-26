@@ -4,12 +4,12 @@ ms.assetid: a773c7b3-a1a2-4cce-ae5f-b54217ea06f4
 title: Descripción de los controladores de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b44d0a3a6d0a1b6c929eb151551155d0b5435a0
-ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
+ms.openlocfilehash: 42139a869551f0f4dc786f02c66c673a49495ba01f5258aeeff12051bd3f60b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113481940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119946975"
 ---
 # <a name="understanding-property-handlers"></a>Descripción de los controladores de propiedades
 
@@ -22,7 +22,7 @@ Las propiedades se representan mediante identificadores conocidos como identific
 
 Este tema se organiza de la siguiente manera:
 
--   [Metadatos](#metadata)
+-   [Metadata](#metadata)
     -   [Abrir metadatos](#open-metadata)
 -   [Acerca de los controladores de propiedades](#about-property-handlers)
 -   [Tecnología heredada](#legacy-technology)
@@ -47,15 +47,15 @@ El sistema de propiedades de Windows Vista y versiones posteriores es un sistema
 
 En Windows Vista y versiones posteriores, Windows un sistema de propiedades extensible para almacenar y recuperar metadatos en los archivos y elementos de datos a los que tiene acceso. Windows El Explorador y el Windows Search, junto con otras aplicaciones, usan controladores de propiedades para leer y modificar estos metadatos. Si es un desarrollador propietario de un tipo de archivo específico, debe registrar un controlador de propiedades para proporcionar al sistema de propiedades acceso a los metadatos de los archivos. En algunos casos, es posible que pueda usar un controlador de propiedades existente que pueda leer y comprender el formato de archivo y sus propiedades. En otros casos, es posible que tenga que desarrollar un nuevo controlador de propiedades para el tipo de archivo.
 
-El primer paso para escribir un controlador de propiedades es tener en cuenta las propiedades que admite el tipo de archivo. Los valores de propiedad se almacenan en la secuencia de archivos, principalmente para habilitar la transportabilidad. Cuando los valores de propiedad se almacenan en el propio archivo, al igual que en este sistema, un usuario puede copiar un archivo en otro equipo, una unidad flash USB u otro sistema de archivos, o enviar el archivo como datos adjuntos de correo electrónico, las propiedades viajan con el archivo y nunca se pierden ni se sincronizan. Por lo tanto, si el formato de archivo admite el almacenamiento de información adicional, es mejor almacenar las propiedades en el propio archivo.
+El primer paso para escribir un controlador de propiedades es tener en cuenta las propiedades que admite el tipo de archivo. Los valores de propiedad se almacenan en la secuencia de archivos, principalmente para habilitar la transportabilidad. Cuando los valores de propiedad se almacenan en el propio archivo, como en este sistema, un usuario puede copiar un archivo en otro equipo, una unidad flash USB u otro sistema de archivos, o enviar el archivo como datos adjuntos de correo electrónico, las propiedades viajan con el archivo y nunca se pierden ni se sincronizan. Por lo tanto, si el formato de archivo admite el almacenamiento de información adicional, es mejor almacenar las propiedades en el propio archivo.
 
-El siguiente paso consiste en determinar qué propiedades debe proporcionar el archivo. Inicialmente, podría pensar que un conjunto limitado de propiedades es adecuado. Un archivo de audio solo podría admitir propiedades relacionadas con audio y terminar allí. Sin embargo, ese archivo de audio podría ser una grabación de una sesión de un abogado, archivada por un estudio de abogados. En ese caso, el bufete de abogados ciertamente querrá asociar otras propiedades que no son de audio a este archivo, como el número de caso. El proveedor del formato de archivo de audio no puede determinar posiblemente todos los escenarios en los que se usará su formato. Por lo tanto, deben considerar la posibilidad de habilitar el almacenamiento de las propiedades arbitrarias admitidas por el sistema de propiedades.
+El siguiente paso consiste en determinar qué propiedades debe proporcionar el archivo. Inicialmente, podría pensar que un conjunto limitado de propiedades es adecuado. Un archivo de audio solo podría admitir propiedades relacionadas con audio y terminar allí. Sin embargo, ese archivo de audio podría ser una grabación de una sesión de un abogado, archivada por un estudio de abogados. En ese caso, el abogado ciertamente querrá asociar otras propiedades que no son de audio a este archivo, como el número de caso. El proveedor del formato de archivo de audio no puede determinar posiblemente todos los escenarios en los que se usará su formato. Por lo tanto, deben considerar la posibilidad de habilitar el almacenamiento de las propiedades arbitrarias admitidas por el sistema de propiedades.
 
 ## <a name="legacy-technology"></a>Tecnología heredada
 
-Microsoft Windows tecnología de flujo secundario del sistema de archivos NT (NTFS) se desarrolló para admitir la persistencia de información adicional con el archivo a través de un flujo alternativo establecido en la capa del sistema de archivos. Es posible que se pregunte por qué esas secuencias secundarias no se usan como método principal para almacenar propiedades, especialmente con compatibilidad con metadatos abiertos. La razón principal es la transportabilidad de esta información adicional. Desafortunadamente, estas secuencias alternativas se quitan en muchos escenarios, incluida la compatibilidad con el almacenamiento en caché del lado cliente (CSC), el envío de archivos como datos adjuntos y la copia de archivos a un almacén que no es NTFS.
+La tecnología de flujo secundario del sistema de archivos DE MICROSOFT Windows NT (NTFS) se desarrolló para admitir la persistencia de información adicional con el archivo a través de un flujo alternativo establecido en la capa del sistema de archivos. Es posible que se pregunte por qué esas secuencias secundarias no se usan como método principal para almacenar propiedades, especialmente con compatibilidad con metadatos abiertos. La razón principal es la transportabilidad de esta información adicional. Desafortunadamente, estas secuencias alternativas se quitan en muchos escenarios, incluida la compatibilidad con el almacenamiento en caché del lado cliente (CSC), el envío de archivos como datos adjuntos y la copia de archivos a un almacén que no es NTFS.
 
-Las secuencias secundarias no proporcionan una solución sólida en la que se garantiza que las propiedades viajen con el archivo y, por tanto, el sistema de propiedades Windows Vista no proporciona un mecanismo integrado que aproveche los flujos NTFS secundarios para el almacenamiento de propiedades. También se desaconseja encarecidamente a los ISV la creación de controladores de propiedades que usan secuencias secundarias para el almacenamiento de propiedades. Por supuesto, hay escenarios en los que los flujos secundarios NTFS son adecuados, especialmente cuando las aplicaciones pueden garantizar que el archivo con el que están trabajando siempre se almacena en un volumen NTFS y no viajará como resultado de la interacción del usuario final.
+Las secuencias secundarias no proporcionan una solución sólida en la que se garantiza que las propiedades viajen con el archivo y, por tanto, el sistema de propiedades Windows Vista no proporciona un mecanismo integrado que aproveche las secuencias NTFS secundarias para el almacenamiento de propiedades. También se desaconseja encarecidamente a los ISV la creación de controladores de propiedades que usan secuencias secundarias para el almacenamiento de propiedades. Por supuesto, hay escenarios en los que los flujos secundarios NTFS son adecuados, especialmente cuando las aplicaciones pueden garantizar que el archivo con el que están trabajando siempre se almacena en un volumen NTFS y no viajará como resultado de la interacción del usuario final.
 
 ## <a name="related-topics"></a>Temas relacionados
 

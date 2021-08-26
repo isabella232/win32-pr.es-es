@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1GeometrySink AddBezier (D2d1. h)
-description: Crea una curva Bézier cúbica entre el punto actual y el punto final especificado y lo agrega al receptor de geometría.
+title: Métodos ID2D1GeometrySink AddBezier (D2d1.h)
+description: Crea una curva Bézier cúbica entre el punto actual y el punto de conexión especificado y la agrega al receptor de geometría.
 ms.assetid: d1e228eb-dac6-485d-b3c9-69b2bd45e531
 keywords:
-- Métodos de AddBezier Direct2D
+- Métodos AddBezier de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: b470129350463920583c34bec5f886f60b16485e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5dff3f4a59b592b4820bf6e91f9415da98a0960cf333afc48115f894111d423b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917825"
 ---
-# <a name="id2d1geometrysinkaddbezier-methods"></a>ID2D1GeometrySink:: AddBezier (métodos)
+# <a name="id2d1geometrysinkaddbezier-methods"></a>Métodos ID2D1GeometrySink::AddBezier
 
-Crea una curva Bézier cúbica entre el punto actual y el punto final especificado y lo agrega al receptor de geometría.
+Crea una curva Bézier cúbica entre el punto actual y el punto de conexión especificado y la agrega al receptor de geometría.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,14 +29,14 @@ Crea una curva Bézier cúbica entre el punto actual y el punto final especifica
 
 | Método                                                                                            | Descripción                                                                                    |
 |:--------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
-| [**AddBezier (D2D1 \_ Bézier \_ Segment&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment_))  | Crea una curva Bézier cúbica entre el punto actual y el punto final especificado.<br/> |
-| [**AddBezier ( \_ segmento de BÉZIER D2D1 \_ \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment)) | Crea una curva Bézier cúbica entre el punto actual y el punto de conexión especificado.<br/>  |
+| [**AddBezier(D2D1 \_ BEZIER \_ SEGMENT&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment_))  | Crea una curva Bézier cúbica entre el punto actual y el punto final especificado.<br/> |
+| [**AddBezier(D2D1 \_ BEZIER \_ SEGMENT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment)) | Crea una curva Bézier cúbica entre el punto actual y el punto de conexión especificado.<br/>  |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry), se recupera un receptor y se usa para definir una forma de reloj de arena. Para obtener el ejemplo completo, vea [Cómo dibujar y rellenar una forma compleja](how-to-draw-and-fill-a-complex-shape.md).
+En el ejemplo siguiente se crea [**un id2D1PathGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry)se recupera un receptor y se usa para definir una forma de reloj de reloj. Para obtener el ejemplo completo, [vea Cómo dibujar y rellenar una forma compleja.](how-to-draw-and-fill-a-complex-shape.md)
 
 
 ```C++
@@ -98,8 +98,8 @@ if (SUCCEEDED(hr))
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

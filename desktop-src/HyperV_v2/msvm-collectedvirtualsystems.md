@@ -1,5 +1,5 @@
 ---
-description: 'Msvm_CollectedVirtualSystems clase : asocia Msvm \_ VirtualSystemCollection a los objetos ComputerSystem de Msvm \_ contenidos.'
+description: 'Msvm_CollectedVirtualSystems clase : asocia Msvm VirtualSystemCollection a los objetos ComputerSystem de \_ Msvm \_ contenidos.'
 ms.assetid: ad783188-b60a-4271-aa2d-8050c36e70eb
 title: Msvm_CollectedVirtualSystems clase
 ms.topic: reference
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d6775f41a6e2ae7e45bac642fcd32b8deaec3fda
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8d6d4427ca2419660cb7faa82ea197e1bdd2a5e0c2ade1935a7d79abd3ebdfaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870375"
 ---
 # <a name="msvm_collectedvirtualsystems-class"></a>Clase Msvm \_ CollectedVirtualSystems
 
-Asocia [**Msvm \_ VirtualSystemCollection a**](msvm-virtualsystemcollection.md) los objetos [**\_ Msvm ComputerSystem contenidos.**](msvm-computersystem.md)
+Asocia [**Msvm \_ VirtualSystemCollection a**](msvm-virtualsystemcollection.md) los objetos [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) contenidos.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -67,7 +67,7 @@ Objeto [**Msvm \_ VirtualSystemCollection**](msvm-virtualsystemcollection.md) qu
 
 </dd> <dt>
 
-**Member**
+**Miembro**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Msvm \_ ComputerSystem**
@@ -87,9 +87,9 @@ Objeto [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que contiene los 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
 | Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
@@ -97,7 +97,7 @@ Objeto [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que contiene los 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

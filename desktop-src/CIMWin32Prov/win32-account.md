@@ -1,8 +1,8 @@
 ---
-description: Contiene información acerca de las cuentas de usuario y las cuentas de grupo que conoce el equipo que ejecuta Windows.
+description: Contiene información sobre las cuentas de usuario y las cuentas de grupo conocidas por el sistema informático que ejecuta Windows.
 ms.assetid: c0916f20-05be-4282-9642-28cec606bfd7
 ms.tgt_platform: multiple
-title: Win32_Account (clase)
+title: Win32_Account clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2af601799095192d7af4ffedce0c8e0cd28bff21
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dc98f826ddae09bd507517e564ec2d9387d6bf17147d5eac36596bdb9d1e81ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918125"
 ---
-# <a name="win32_account-class"></a>Win32 ( \_ clase de cuenta)
+# <a name="win32_account-class"></a>Clase De \_ cuenta win32
 
-La [clase de WMI](/windows/desktop/WmiSdk/retrieving-a-class) abstracta de la **\_ cuenta de Win32** contiene información acerca de las cuentas de usuario y las cuentas de grupo que conoce el equipo que ejecuta Windows. Los nombres de usuario o grupo reconocidos por un dominio de Windows son descendientes (o miembros) de esta clase.
+La clase WMI **\_ abstracta Cuenta win32** contiene información sobre las cuentas de usuario y las cuentas de grupo conocidas por el sistema informático que ejecuta Windows. [](/windows/desktop/WmiSdk/retrieving-a-class) Los nombres de usuario o grupo reconocidos por Windows dominio son descendientes (o miembros) de esta clase.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -56,13 +56,13 @@ class Win32_Account : CIM_LogicalElement
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ cuenta de Win32** tiene estos tipos de miembros:
+La **clase \_ Cuenta win32** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ cuenta de Win32** tiene estas propiedades.
+La **clase \_ Cuenta win32** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -75,12 +75,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descripción del objeto.
 
-Esta propiedad se hereda de la clase del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) .
+Esta propiedad se hereda de la [**clase \_ ManagedSystemElement de CIM.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -93,12 +93,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descripción")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
 Descripción del objeto.
 
-Esta propiedad se hereda de la clase del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) .
+Esta propiedad se hereda de la [**clase \_ ManagedSystemElement de CIM.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -111,10 +111,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("dominio de funciones de administración de red de inesperados win32api \| \| ")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dominio de Funciones de administración de red win32API") \| \|
 </dt> </dl>
 
-Nombre del dominio de Windows al que pertenece un grupo o usuario.
+Nombre del dominio Windows al que pertenece un grupo o usuario.
 
 Ejemplo: "NA-SALES"
 
@@ -123,18 +123,18 @@ Ejemplo: "NA-SALES"
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Fecha de instalación")
 </dt> </dl>
 
 Fecha y hora en que se instaló el objeto. Esta propiedad no requiere un valor para indicar que el objeto está instalado.
 
-Esta propiedad se hereda de la clase del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) .
+Esta propiedad se hereda de la [**clase \_ ManagedSystemElement de CIM.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -147,10 +147,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Si es **true**, la cuenta se define en el equipo local. Para recuperar solo las cuentas definidas en el equipo local, diseñe una consulta que incluya la condición "LocalAccount =**true**".
+Si **es TRUE,** la cuenta se define en el equipo local. Para recuperar solo las cuentas definidas en el equipo local, diseñe una consulta que incluya la condición "LocalAccount=**TRUE".**
 
 </dd> <dt>
 
@@ -163,10 +163,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("nombre"), [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("nombre de estructuras de administración de red de inesperados win32api \| \| ")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures \| name")
 </dt> </dl>
 
-Nombre de la cuenta del sistema de Windows en el dominio especificado por la propiedad de **dominio** de esta clase. Esta propiedad invalida la propiedad de **nombre** heredada de [**un \_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Nombre de la Windows del sistema en el dominio especificado por la **propiedad Domain** de esta clase. Esta propiedad invalida la propiedad **Name** heredada de [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
@@ -179,23 +179,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("inesperados win32api \| (identificadores de seguridad (SID)")
+Calificadores: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Security Identifiers (SIDs)")
 </dt> </dl>
 
-Identificador de seguridad (SID) para esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar un administrador de confianza. Cada cuenta tiene un SID único emitido por una autoridad (como un dominio de Windows), almacenado en una base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID del usuario de la base de datos y lo coloca en el token de acceso del usuario. El sistema utiliza el SID en el token de acceso del usuario para identificar al usuario en todas las interacciones posteriores con la seguridad de Windows. Cuando se ha usado un SID como identificador único para un usuario o grupo, no se puede volver a usar para identificar a otro usuario o grupo.
+Identificador de seguridad (SID) de esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar a un administrador de confianza. Cada cuenta tiene un SID único emitido por una autoridad (por ejemplo, un dominio Windows), almacenado en una base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID del usuario de la base de datos y lo coloca en el token de acceso del usuario. El sistema usa el SID en el token de acceso del usuario para identificar al usuario en todas las interacciones posteriores con Windows seguridad. Cuando se ha usado un SID como identificador único de un usuario o grupo, no se puede usar de nuevo para identificar a otro usuario o grupo.
 
 </dd> <dt>
 
-**SID**
+**SIDType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("inesperados win32api \| Access Control tipos de enumeración \| \_ nombre SID \_ usar")
+Calificadores: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Access Control Enumeration Types \| SID NAME \_ \_ USE")
 </dt> </dl>
 
 Valores enumerados que especifican el tipo de identificador de seguridad (SID).
@@ -276,12 +276,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero predice un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente, pero predice un error en un futuro próximo). Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service". Este último, "Servicio", se puede aplicar durante la resilvering de reflejo de un disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda de la clase del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) .
+Esta propiedad se hereda de la [**clase \_ ManagedSystemElement de CIM.**](cim-managedsystemelement.md)
 
 Los valores son:
 
@@ -289,93 +289,93 @@ Los valores son:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase de **\_ cuenta de Win32** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
+La **clase \_ Account de Win32** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -405,8 +405,8 @@ El siguiente código de PowerShell recupera las cuentas de dominio.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -415,7 +415,7 @@ El siguiente código de PowerShell recupera las cuentas de dominio.
 
 <dl> <dt>
 
-[**\_LOGICALELEMENT CIM**](cim-logicalelement.md)
+[**Elemento \_ lógico CIM**](cim-logicalelement.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))

@@ -1,20 +1,20 @@
 ---
-title: Funciones de la versión 2 del administrador de tablas de enrutamiento
+title: Funciones de Routing Table Manager versión 2
 description: Las siguientes funciones se usan para interactuar con el administrador de tablas de enrutamiento.
 ms.assetid: ac5c6ada-c38e-476a-9896-cdd8c51cc0be
 keywords:
-- Servicio de enrutamiento y acceso remoto RRAS, administrador de tablas de enrutamiento versión 2, funciones
-- Administrador de tablas de enrutamiento versión 2 RRAS, funciones
+- RRAS del servicio de enrutamiento y acceso remoto,Routing Table Manager versión 2, funciones
+- RRAS RRAS, versión 2 de Routing Table Manager, funciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f59e4a1ad2bf091d8a74672f1f473589c5fa1d3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3cb7138b54ee0fa747c7d367c54d7a0fb893c3d2d451577932c669650a0fc76e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026925"
 ---
-# <a name="routing-table-manager-version-2-functions"></a>Funciones de la versión 2 del administrador de tablas de enrutamiento
+# <a name="routing-table-manager-version-2-functions"></a>Funciones de Routing Table Manager versión 2
 
 Las siguientes funciones se usan para interactuar con el administrador de tablas de enrutamiento.
 
@@ -28,13 +28,13 @@ Las siguientes funciones se usan para interactuar con el administrador de tablas
 
 [**RtmReleaseEntities**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleaseentities)
 
-## <a name="opaque-pointer-functions"></a>Funciones de puntero opacas
+## <a name="opaque-pointer-functions"></a>Funciones de puntero opaco
 
 [**RtmLockDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmlockdestination)
 
 [**RtmGetOpaqueInformationPointer**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetopaqueinformationpointer)
 
-## <a name="export-method-functions"></a>Exportar funciones de método
+## <a name="export-method-functions"></a>Funciones del método Export
 
 [**RtmGetEntityMethods**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetentitymethods)
 
@@ -42,7 +42,7 @@ Las siguientes funciones se usan para interactuar con el administrador de tablas
 
 [**RtmBlockMethods**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmblockmethods)
 
-## <a name="handle-to-information-structure-functions"></a>Identificador de las funciones de la estructura de información
+## <a name="handle-to-information-structure-functions"></a>Controlar funciones de estructura de información
 
 [**RtmGetEntityInfo**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetentityinfo)
 
@@ -98,7 +98,7 @@ Las siguientes funciones se usan para interactuar con el administrador de tablas
 
 [**RtmLockNextHop**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmlocknexthop)
 
-## <a name="routing-table-enumeration-functions"></a>Funciones de enumeración de tabla de enrutamiento
+## <a name="routing-table-enumeration-functions"></a>Funciones de enumeración de tablas de enrutamiento
 
 [**RtmCreateDestEnum**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmcreatedestenum)
 
@@ -120,7 +120,7 @@ Las siguientes funciones se usan para interactuar con el administrador de tablas
 
 [**RtmDeleteEnumHandle**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmdeleteenumhandle)
 
-## <a name="change-notification-functions"></a>Cambiar funciones de notificación
+## <a name="change-notification-functions"></a>Funciones de notificación de cambios
 
 [**RtmRegisterForChangeNotification**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmregisterforchangenotification)
 
@@ -138,7 +138,7 @@ Las siguientes funciones se usan para interactuar con el administrador de tablas
 
 [**RtmDeregisterFromChangeNotification**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmderegisterfromchangenotification)
 
-## <a name="route-list-function"></a>Función de lista de rutas
+## <a name="route-list-function"></a>Función Route List
 
 [**RtmCreateRouteList**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmcreateroutelist)
 
@@ -150,13 +150,13 @@ Las siguientes funciones se usan para interactuar con el administrador de tablas
 
 [**RtmDeleteRouteList**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmdeleteroutelist)
 
-## <a name="handle-management-functions"></a>Administrar funciones de administración
+## <a name="handle-management-functions"></a>Control de funciones de administración
 
 [**RtmReferenceHandles**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreferencehandles)
 
- 
+ 
 
- 
+ 
 
 
 

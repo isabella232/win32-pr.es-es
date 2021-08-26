@@ -4,16 +4,16 @@ description: XInput es una API que permite a las aplicaciones recibir entradas d
 ms.assetid: 0f29a47b-24ed-c0fa-e9e9-8a061619845c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58339616f1e9e3a43529b6853bfc193d359ef11e
-ms.sourcegitcommit: b3839bea8d55c981d53cb8802d666bf49093b428
+ms.openlocfilehash: b01484e7c1419dea097ddf440d82a92edb527327f8696afa5f5864fb1b12453b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114373190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926225"
 ---
 # <a name="xinput-and-directinput"></a>XInput y DirectInput
 
-XInput es una API que permite a las aplicaciones recibir entradas del controlador de Xbox para Windows. En este documento se describen las diferencias entre las implementaciones de XInput y [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) del controlador de Xbox y cómo puede admitir dispositivos XInput y dispositivos DirectInput heredados al mismo tiempo.
+XInput es una API que permite a las aplicaciones recibir entradas del controlador de Xbox para Windows. En este documento se describen las diferencias entre las implementaciones XInput y [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) del controlador de Xbox y cómo se pueden admitir dispositivos XInput y dispositivos DirectInput heredados al mismo tiempo.
 
 > [!Note]  
 > No se recomienda el [uso de DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) heredado y DirectInput no está disponible para Windows Store.
@@ -25,22 +25,22 @@ XInput ya está disponible para el desarrollo de juegos. Este es el nuevo están
 El uso de XInput sobre DirectInput tiene varias [ventajas:](/previous-versions/windows/desktop/ee416842(v=vs.85))
 
 -   XInput es más fácil de usar y requiere menos configuración que [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85))
--   Tanto Xbox como Windows programación usarán los mismos conjuntos de API principales, lo que permite que la programación traduzca la multiplataforma mucho más fácil.
+-   Tanto xbox como Windows programación usarán los mismos conjuntos de API principales, lo que permite que la programación traduzca la multiplataforma mucho más fácil.
 -   Habrá una gran base instalada de controladores de Xbox.
 -   Los dispositivos XInput (es decir, los controladores de Xbox) solo tendrán funcionalidad de vibración cuando se usen las API XInput.
--   Los controladores futuros publicados para la consola Xbox (es decir, las ruedas de ruedas) también funcionarán en Windows
+-   Los controladores futuros publicados para la consola Xbox (es decir, ruedas de ruedas) también funcionarán en Windows
 
 ### <a name="using-the-xbox-controller-with-directinput"></a>Uso del controlador xbox con DirectInput
 
 El controlador de Xbox se enumera correctamente en [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85))y se puede usar con directInputAPIs. Sin embargo, faltará alguna funcionalidad proporcionada por XInput en la implementación de DirectInput:
 
--   Los botones de desencadenador izquierdo y derecho actuarán como un botón único, no de forma independiente.
+-   Los botones de desencadenador izquierdo y derecho actuarán como un solo botón, no de forma independiente
 -   Los efectos de vibración no estarán disponibles
--   Las consultas de dispositivos de casco no estarán disponibles
+-   La consulta de dispositivos de casco no estará disponible
 
-La combinación de los desencadenadores izquierdo y derecho [en DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) es por diseño. Los juegos siempre han asumido que los ejes del dispositivo DirectInput están centrados cuando no hay ninguna interacción del usuario con el dispositivo. Sin embargo, el controlador de Xbox se diseñó para registrar el valor mínimo, no el centro, cuando no se mantienen los desencadenadores. Por lo tanto, los juegos más antiguos asumirían la interacción del usuario.
+La combinación de los desencadenadores izquierdo y derecho en [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) es por diseño. Los juegos siempre han asumido que los ejes del dispositivo DirectInput están centrados cuando no hay ninguna interacción del usuario con el dispositivo. Sin embargo, el controlador de Xbox se diseñó para registrar el valor mínimo, no el centro, cuando no se mantienen los desencadenadores. Por lo tanto, los juegos más antiguos asumirían la interacción del usuario.
 
-La solución era combinar los desencadenadores, estableciendo un desencadenador en una dirección positiva y el otro en una dirección negativa, por lo que ninguna interacción del usuario es indicativa a [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) de que el "control" está en el centro.
+La solución era combinar los desencadenadores, estableciendo un desencadenador en una dirección positiva y el otro en una dirección negativa, por lo que ninguna interacción del usuario indica a [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) que el "control" está en el centro.
 
 Para probar los valores del desencadenador por separado, debe usar XInput.
 
@@ -48,7 +48,7 @@ Para probar los valores del desencadenador por separado, debe usar XInput.
 
 Al admitir solo XInput, el juego no funcionará con dispositivos [DirectInput heredados.](/previous-versions/windows/desktop/ee416842(v=vs.85)) XInput no reconocerá estos dispositivos.
 
-Si quiere que el juego admita dispositivos [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) heredados, puede usar DirectInput y XInput en paralelo. Al enumerar los dispositivos DirectInput, todos los dispositivos DirectInput se enumerarán correctamente. Todos los dispositivos XInput se mostrarán como dispositivos XInput y DirectInput, pero no se deben controlar a través de DirectInput. Deberá determinar cuáles de los dispositivos DirectInput son dispositivos heredados y cuáles son dispositivos XInput y quitarlos de la enumeración de dispositivos DirectInput.
+Si quiere que el juego admita dispositivos [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) heredados, puede usar DirectInput y XInput en paralelo. Al enumerar los dispositivos DirectInput, todos los dispositivos DirectInput se enumerarán correctamente. Todos los dispositivos XInput se mostrarán como dispositivos XInput y DirectInput, pero no se deben controlar a través de DirectInput. Deberá determinar cuáles de los dispositivos DirectInput son dispositivos heredados y cuáles son dispositivos XInput, y quitarlos de la enumeración de dispositivos DirectInput.
 
 Para ello, inserte este código en la devolución de llamada de enumeración DirectInput:
 
@@ -199,7 +199,7 @@ BOOL CALLBACK EnumJoysticksCallback( const DIDEVICEINSTANCE* pdidInstance,
 }
 ```
 
-> Hay una versión ligeramente mejorada de este código en el ejemplo heredado de DirectInput [Qr.](https://github.com/walbourn/directx-sdk-samples/tree/master/DirectInput/Joystick)
+> Hay una versión ligeramente mejorada de este código en el ejemplo heredado de [DirectInputInput.](https://github.com/walbourn/directx-sdk-samples/tree/master/DirectInput/Joystick)
 
 ## <a name="related-topics"></a>Temas relacionados
 

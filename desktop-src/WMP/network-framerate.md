@@ -1,9 +1,9 @@
 ---
-title: Red. velocidad de fotogramas
-description: La propiedad de velocidad de fotogramas recupera la velocidad actual de fotogramas de vídeo en fotogramas por cien segundos. Por ejemplo, un valor de 2998 indica 29,98 fotogramas por segundo.
+title: Network.frameRate
+description: La propiedad frameRate recupera la velocidad de fotogramas de vídeo actual en fotogramas por cien segundos. Por ejemplo, un valor de 2998 indica 29,98 fotogramas por segundo.
 ms.assetid: ee30dce5-a42e-4be5-ab4b-0d5f8869d23a
 keywords:
-- Red. velocidad de Media Player de Windows
+- Network.frameRate Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30ec6e16a3cef86a385525a793d73a50c3124e21
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4da4a0f292c4693c263115dc1ad59ea3c71946d81838d427e6d8e043ac499709
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901655"
 ---
-# <a name="networkframerate"></a>Red. velocidad de fotogramas
+# <a name="networkframerate"></a>Network.frameRate
 
-La propiedad de **velocidad** de fotogramas recupera la velocidad actual de fotogramas de vídeo en fotogramas por cien segundos. Por ejemplo, un valor de 2998 indica 29,98 fotogramas por segundo.
+La **propiedad frameRate** recupera la velocidad de fotogramas de vídeo actual en fotogramas por cien segundos. Por ejemplo, un valor de 2998 indica 29,98 fotogramas por segundo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *red*. **velocidad de fotograma**
+*player*. *network*. **frameRate**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **velocidad de** fotogramas para mostrar la velocidad de fotogramas actual. La información se muestra en un DIV HTML creado con ID = "FR". El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **frameRate** para mostrar la velocidad de fotogramas actual. La información se muestra en una DIV HTML creada con id. = "FR". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -62,7 +62,7 @@ En el siguiente ejemplo de JScript se usa *Network*. **velocidad de** fotogramas
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -74,7 +74,7 @@ En el siguiente ejemplo de JScript se usa *Network*. **velocidad de** fotogramas
 [**Objeto de red**](network-object.md)
 </dt> <dt>
 
-[**Network. encodedFrameRate**](network-encodedframerate.md)
+[**Network.encodedFrameRate**](network-encodedframerate.md)
 </dt> </dl>
 
  

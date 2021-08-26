@@ -1,19 +1,19 @@
 ---
-description: Se envía a una aplicación para proporcionar comandos y solicitar información. Una ventana recibe este mensaje a través de su función WindowProc.
+description: Se envía a una aplicación para proporcionar comandos e información de solicitud. Una ventana recibe este mensaje a través de su función WindowProc.
 ms.assetid: c5e9f256-eed2-46cb-bb33-0e640a975f1f
-title: Mensaje de WM_IME_REQUEST (Winuser. h)
+title: WM_IME_REQUEST mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d0cea120d088fe1423b1d7dcb822307886675b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d73f1f920efb2908104304fcbc08fd19d648e52fdb737f12027b47436531eb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927635"
 ---
-# <a name="wm_ime_request-message"></a>Mensaje WM_IME_REQUEST
+# <a name="wm_ime_request-message"></a>WM_IME_REQUEST mensaje
 
-Se envía a una aplicación para proporcionar comandos y solicitar información. Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Se envía a una aplicación para proporcionar comandos e información de solicitud. Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,7 +31,7 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador de la ventana.
@@ -58,7 +58,7 @@ Comando. Este parámetro puede tener uno de los valores siguientes:
 *lParam* 
 </dt> <dd>
 
-Datos específicos del comando. Para obtener más información, consulte la descripción de cada comando.
+Datos específicos del comando. Para obtener más información, vea la descripción de cada comando.
 
 </dd> </dl>
 
@@ -74,7 +74,7 @@ Devuelve un valor específico del comando.
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (include Windows. h); </dt> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h);</dt> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ Devuelve un valor específico del comando.
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Mensajes del administrador de métodos de entrada](input-method-manager-messages.md)
+[Mensajes del Administrador de métodos de entrada](input-method-manager-messages.md)
 </dt> <dt>
 
 [IMR_CANDIDATEWINDOW](imr-candidatewindow.md)

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_EMPTYUNDOBUFFER (Winuser. h)
-description: Restablece la marca de deshacer de un control de edición. La marca de deshacer se establece siempre que se puede deshacer una operación dentro del control de edición. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+title: EM_EMPTYUNDOBUFFER mensaje (Winuser.h)
+description: Restablece la marca de deshacer de un control de edición. La marca deshacer se establece siempre que se puede deshacer una operación dentro del control de edición. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 ms.assetid: a4ff7bd9-f8ae-4f18-8429-4ceaaeeb0f94
 keywords:
-- EM_EMPTYUNDOBUFFER controles de mensajes de Windows
+- EM_EMPTYUNDOBUFFER controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0abbdc067b603a032b8d311ddd7930a8ca6de01c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 63d59dab38bca921e2125377889f8d18ddf6eb45c023badeead47f7e07b860fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915905"
 ---
-# <a name="em_emptyundobuffer-message"></a>\_Mensaje EMPTYUNDOBUFFER em
+# <a name="em_emptyundobuffer-message"></a>Mensaje \_ EM EMPTYUNDOBUFFER
 
-Restablece la marca de deshacer de un control de edición. La marca de deshacer se establece siempre que se puede deshacer una operación dentro del control de edición. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+Restablece la marca de deshacer de un control de edición. La marca deshacer se establece siempre que se puede deshacer una operación dentro del control de edición. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,30 +32,30 @@ Restablece la marca de deshacer de un control de edición. La marca de deshacer 
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El indicador de deshacer se restablece automáticamente siempre que el control de edición recibe un mensaje de [**\_ SETHANDLE**](em-sethandle.md) de [**WM \_ SETTEXT**](/windows/desktop/winmsg/wm-settext) o EM.
+La marca de deshacer se restablece automáticamente cada vez que el control de edición recibe un mensaje [**\_ WM SETTEXT**](/windows/desktop/winmsg/wm-settext) [**o EM \_ SETHANDLE.**](em-sethandle.md)
 
-**Controles de edición y edición enriquecida 1,0:** El control solo puede deshacer o rehacer la operación más reciente.
+**Editar controles y Rich Edit 1.0:** El control solo puede deshacer o rehacer la operación más reciente.
 
-**Edición enriquecida 2,0 y versiones posteriores:** El **mensaje \_ EMPTYUNDOBUFFER em** vacía todos los búferes de deshacer y rehacer. Los controles Rich Edit permiten al usuario deshacer o rehacer varias operaciones.
+**Rich Edit 2.0 y versiones posteriores:** El **mensaje EM \_ EMPTYUNDOBUFFER** vacía todos los búferes de deshacer y rehacer. Los controles de edición enriquecciones permiten al usuario deshacer o rehacer varias operaciones.
 
-**Edición enriquecida:** Compatible con Microsoft Rich Edit 1,0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [Acerca de los controles rich edit](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ El indicador de deshacer se restablece automáticamente siempre que el control d
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -76,19 +76,19 @@ El indicador de deshacer se restablece automáticamente siempre que el control d
 **Referencia**
 </dt> <dt>
 
-[**la \_ CANUNDO em**](em-canundo.md)
+[**EM \_ CANUNDO**](em-canundo.md)
 </dt> <dt>
 
-[**\_SETHANDLE em**](em-sethandle.md)
+[**EM \_ SETHANDLE**](em-sethandle.md)
 </dt> <dt>
 
-[**deshacer EM \_**](em-undo.md)
+[**EM \_ UNDO**](em-undo.md)
 </dt> <dt>
 
 **Otros recursos**
 </dt> <dt>
 
-[**SETTEXT de WM \_**](/windows/desktop/winmsg/wm-settext)
+[**WM \_ SETTEXT**](/windows/desktop/winmsg/wm-settext)
 </dt> </dl>
 
  

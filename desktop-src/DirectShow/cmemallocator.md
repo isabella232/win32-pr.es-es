@@ -1,7 +1,7 @@
 ---
 description: Implementa un asignador que admite la interfaz IMemAllocator.
 ms.assetid: c40eccef-d915-4bf3-81b2-b20e000718fb
-title: Clase CMemAllocator (Amfilter. h)
+title: CMemAllocator (clase, Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,36 +16,36 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5adf390b7abf8fcbdb017ecde04bde76bf4bc001
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb94d5fae92d7494a4ac347591e9d571a7765d2be88072559fd74687eea87e97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915935"
 ---
-# <a name="cmemallocator-class"></a>Clase CMemAllocator
+# <a name="cmemallocator-class"></a>CMemAllocator (clase)
 
-![jerarquía de clases cmemallocator](images/filter10.png)
+![Jerarquía de clases cmemallocator](images/filter10.png)
 
-Implementa un asignador que admite la interfaz [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) .
+Implementa un asignador que admite la [**interfaz IMemAllocator.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator)
 
-Esta clase se deriva de [**CBaseAllocator**](cbaseallocator.md). Para obtener más información acerca de los asignadores, consulte la documentación de [**CBaseAllocator**](cbaseallocator.md).
+Esta clase se deriva de [**CBaseAllocator.**](cbaseallocator.md) Para obtener más información sobre los asignadores, consulte la documentación de [**CBaseAllocator**](cbaseallocator.md).
 
 
 
-| Variables de miembro protegidas                              | Descripción                                                              |
+| Variables miembro protegidas                              | Descripción                                                              |
 |---------------------------------------------------------|--------------------------------------------------------------------------|
 | [**m \_ pBuffer**](cmemallocator-m-pbuffer.md)           | Puntero al bloque de memoria que contiene los búferes.                   |
 | Métodos protegidos                                       | Descripción                                                              |
-| [**Gratuito**](cmemallocator-free.md)                      | Método placeholder; se llama durante una operación de desconfirmación.                  |
+| [**Gratuito**](cmemallocator-free.md)                      | Método de marcador de posición; se llama durante una operación de confirmación.                  |
 | [**ReallyFree**](cmemallocator-reallyfree.md)          | Libera la memoria de los búferes.                                     |
-| [**Alloc**](cmemallocator-alloc.md)                    | Asigna memoria a los búferes.                                        |
+| [**Alloc**](cmemallocator-alloc.md)                    | Asigna memoria para los búferes.                                        |
 | Métodos públicos                                          | Descripción                                                              |
-| [**CMemAllocator**](cmemallocator-cmemallocator.md)    | Método de constructor.                                                      |
-| [**~ CMemAllocator**](cmemallocator--cmemallocator.md) | Método de destructor.                                                       |
-| [**CreateInstance**](cmemallocator-createinstance.md)  | Crea una nueva instancia de la clase **CMemAllocator** .                   |
+| [**CMemAllocator**](cmemallocator-cmemallocator.md)    | Método constructor.                                                      |
+| [**~ CMemAllocator**](cmemallocator--cmemallocator.md) | Método destructor.                                                       |
+| [**CreateInstance**](cmemallocator-createinstance.md)  | Crea una nueva instancia de la **clase CMemAllocator.**                   |
 | Métodos IMemAllocator                                   | Descripción                                                              |
-| [**SetProperties**](cmemallocator-setproperties.md)    | Especifica el número de búferes que se van a asignar y el tamaño de cada búfer. |
+| [**SetProperties**](cmemallocator-setproperties.md)    | Especifica el número de búferes que se asignarán y el tamaño de cada búfer. |
 
 
 
@@ -57,8 +57,8 @@ Esta clase se deriva de [**CBaseAllocator**](cbaseallocator.md). Para obtener m�
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

@@ -4,20 +4,20 @@ ms.assetid: ef37d644-473f-4e51-9785-5b44fe0dce42
 title: Enumerar un montón
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79ad6ea7e23f480b4d4e27885d296f1be1632053
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c8e995dde36911947e1c510103503a99a307219bc2661a7efb9569fdab4ca20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869845"
 ---
 # <a name="enumerating-a-heap"></a>Enumerar un montón
 
-En el ejemplo siguiente se muestra el uso de la función [**HeapWalk**](/windows/desktop/api/HeapApi/nf-heapapi-heapwalk) para enumerar un montón.
+En el ejemplo siguiente se muestra el uso de la [**función HeapWalk**](/windows/desktop/api/HeapApi/nf-heapapi-heapwalk) para enumerar un montón.
 
-En primer lugar, el ejemplo crea un montón privado con la función [**HeapCreate**](/windows/desktop/api/HeapApi/nf-heapapi-heapcreate) . A continuación, usa [**HeapLock**](/windows/desktop/api/HeapApi/nf-heapapi-heaplock) para bloquear el montón, de modo que otros subprocesos no puedan tener acceso al montón mientras se está enumerando. A continuación, en el ejemplo se llama a [**HeapWalk**](/windows/desktop/api/HeapApi/nf-heapapi-heapwalk) con un puntero a una estructura de [**entrada del \_ montón \_ de proceso**](/windows/win32/api/minwinbase/ns-minwinbase-process_heap_entry) y se recorre en iteración el montón, imprimiendo cada entrada en la consola.
+En primer lugar, en el ejemplo se crea un montón privado con [**la función HeapCreate.**](/windows/desktop/api/HeapApi/nf-heapapi-heapcreate) A continuación, [**usa HeapLock para**](/windows/desktop/api/HeapApi/nf-heapapi-heaplock) bloquear el montón para que otros subprocesos no puedan acceder al montón mientras se enumera. A continuación, el ejemplo llama a [**HeapWalk**](/windows/desktop/api/HeapApi/nf-heapapi-heapwalk) con un puntero a una estructura [**PROCESS \_ HEAP \_ ENTRY**](/windows/win32/api/minwinbase/ns-minwinbase-process_heap_entry) y recorre en iteración el montón e imprime cada entrada en la consola.
 
-Una vez finalizada la enumeración, en el ejemplo se usa [**HeapUnlock**](/windows/desktop/api/HeapApi/nf-heapapi-heapunlock) para desbloquear el montón, de modo que otros subprocesos puedan tener acceso a él. Por último, en el ejemplo se llama a [**HeapDestroy**](/windows/desktop/api/HeapApi/nf-heapapi-heapdestroy) para destruir el montón privado.
+Una vez finalizada la enumeración, en el ejemplo se [**usa HeapUnlock para**](/windows/desktop/api/HeapApi/nf-heapapi-heapunlock) desbloquear el montón para que otros subprocesos puedan acceder a él. Por último, en el ejemplo [**se llama a HeapDestroy**](/windows/desktop/api/HeapApi/nf-heapapi-heapdestroy) para destruir el montón privado.
 
 
 ```C++

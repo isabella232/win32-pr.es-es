@@ -1,36 +1,36 @@
 ---
 title: InprocServer
-description: Especifica la ruta de acceso al archivo DLL de servidor en proceso.
+description: Especifica la ruta de acceso al archivo DLL del servidor en proceso.
 ms.assetid: f14cc8f7-e93e-4db8-8b0d-ea77a6301f33
 keywords:
-- Clave del registro de InprocServer COM
+- Com de clave del Registro InprocServer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5682693d711f734bbc60def8a711f11e2bad0ef9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1b6cd1c7ab32733687292f01ddb48167c68243c62345fb17af3b6533a5cb454d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120029895"
 ---
 # <a name="inprocserver"></a>InprocServer
 
-Especifica la ruta de acceso al archivo DLL de servidor en proceso.
+Especifica la ruta de acceso al archivo DLL del servidor en proceso.
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      InprocServer
-         (Default) = path
+   {CLSID}
+      InprocServer
+         (Default) = path
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La entrada **InprocServer** es relativamente inusual para las clases que se van a insertar.
+La **entrada InprocServer** es relativamente poco frecuente para las clases insertables.
 
-Los servidores en proceso están registrados actualmente mediante la entrada del registro **InprocServer** . Los servidores en proceso de 32 y 64 bits deben usar la entrada [**InProcServer32**](inprocserver32.md) . Si un contenedor está buscando en el registro un servidor en proceso, la versión de 16 bits tiene prioridad con un contenedor de 16 bits y la versión de 32 bits tiene prioridad con un contenedor de 32 bits.
+Los servidores en proceso se registran actualmente mediante la entrada del Registro **InprocServer.** Los servidores en proceso de 32 y 64 bits deben usar la [**entrada InprocServer32.**](inprocserver32.md) Si un contenedor busca en el Registro un servidor en proceso, la versión de 16 bits tiene prioridad con un contenedor de 16 bits y la versión de 32 bits tiene prioridad con un contenedor de 32 bits.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -39,9 +39,9 @@ Los servidores en proceso están registrados actualmente mediante la entrada del
 [**InprocServer32**](inprocserver32.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

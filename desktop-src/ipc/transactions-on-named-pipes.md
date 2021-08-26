@@ -1,25 +1,25 @@
 ---
-description: Una transacción de canalización con nombre es una comunicación cliente/servidor que combina una operación de escritura y una operación de lectura en una sola operación de red. Las transacciones mejoran el rendimiento de las comunicaciones de red entre un cliente y un servidor remoto.
+description: Una transacción de canalización con nombre es una comunicación cliente-servidor que combina una operación de escritura y una operación de lectura en una sola operación de red. Las transacciones mejoran el rendimiento de las comunicaciones de red entre un cliente y un servidor remoto.
 ms.assetid: aedce207-7dea-4670-b6dd-0c61b3f6f690
 title: Transacciones en canalizaciones con nombre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 489039b92b65f57cefc71c5d78a01b1824b1418a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 524f9ae453eb958efd59d8ef6ee5adfda12dd2701e4c719be51299e2873913dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963905"
 ---
 # <a name="transactions-on-named-pipes"></a>Transacciones en canalizaciones con nombre
 
-Una transacción de canalización con nombre es una comunicación cliente/servidor que combina una operación de escritura y una operación de lectura en una sola operación de red. Una transacción solo se puede usar en una canalización de tipo de mensaje dúplex. Las transacciones mejoran el rendimiento de las comunicaciones de red entre un cliente y un servidor remoto. Los procesos pueden usar las funciones [**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) y [**CallNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-callnamedpipea) para realizar transacciones de canalización con nombre.
+Una transacción de canalización con nombre es una comunicación cliente-servidor que combina una operación de escritura y una operación de lectura en una sola operación de red. Una transacción solo se puede usar en una canalización dúplex de tipo mensaje. Las transacciones mejoran el rendimiento de las comunicaciones de red entre un cliente y un servidor remoto. Los procesos pueden usar las [**funciones TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) [**y CallNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-callnamedpipea) para realizar transacciones de canalización con nombre.
 
-Normalmente, un cliente de canalización usa la función [**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) para escribir un mensaje de solicitud en el servidor de canalización con nombre y leer el mensaje de respuesta del servidor. El cliente de canalización debe \_ especificar \| \_ el acceso de escritura genérico de lectura genérico cuando abre su identificador de canalización mediante una llamada a la función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) . A continuación, el cliente de canalización establece el identificador de canalización en modo de lectura de mensaje mediante una llamada a la función [**SetNamedPipeHandleState**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) . Si el búfer de lectura especificado en la llamada a **TransactNamedPipe** no es lo suficientemente grande como para contener todo el mensaje escrito por el servidor, la función devuelve cero y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve los datos de error \_ \_ . El cliente puede leer el resto del mensaje mediante una llamada a la función [**readfile**](/windows/desktop/api/fileapi/nf-fileapi-readfile), [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex)o [**PeekNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-peeknamedpipe) .
+La [**función TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) la usa normalmente un cliente de canalización para escribir un mensaje de solicitud en el servidor de canalización con nombre y leer el mensaje de respuesta del servidor. El cliente de canalización debe especificar el acceso GENERIC READ GENERIC WRITE cuando abre su identificador de canalización mediante \_ una llamada a la función \| \_ [**CreateFile.**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) A continuación, el cliente de canalización establece el identificador de canalización en modo de lectura de mensajes mediante una llamada a la [**función SetNamedPipeHandleState.**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) Si el búfer de lectura especificado en la llamada a **TransactNamedPipe** no es lo suficientemente grande como para contener todo el mensaje escrito por el servidor, la función devuelve cero y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve ERROR \_ MORE \_ DATA. El cliente puede leer el resto del mensaje llamando a la función [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile), [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex)o [**PeekNamedPipe.**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-peeknamedpipe)
 
-Los clientes de canalización suelen llamar a [**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) , pero también se pueden usar en un servidor de canalización.
+Normalmente, los clientes de canalización llaman a [**TransactNamedPipe,**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) pero también lo puede usar un servidor de canalización.
 
-En el ejemplo siguiente se muestra un cliente de canalización con [**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe). Este cliente de canalización se puede usar con cualquiera de los servidores de canalización que se enumeran en vea también.
+En el ejemplo siguiente se muestra un cliente de canalización [**que usa TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe). Este cliente de canalización se puede usar con cualquiera de los servidores de canalización enumerados en Vea también.
 
 
 ```C++
@@ -137,7 +137,7 @@ int _tmain(int argc, TCHAR *argv[])
 
 
 
-Un cliente de canalización usa [**CallNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-callnamedpipea) para combinar las llamadas a funciones [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WaitNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-waitnamedpipea) (si es necesario), [**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe)y [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) en una sola llamada. Dado que el identificador de canalización se cierra antes de que se devuelva la función, se perderán los bytes adicionales del mensaje si el mensaje es mayor que el tamaño especificado del búfer de lectura. En el ejemplo siguiente se reescribió el ejemplo anterior para usar **CallNamedPipe**.
+Un cliente de canalización usa [**CallNamedPipe para**](/windows/desktop/api/Winbase/nf-winbase-callnamedpipea) combinar las llamadas de función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WaitNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-waitnamedpipea) (si es necesario), [**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe)y [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) en una sola llamada. Dado que el identificador de canalización se cierra antes de que se devuelva la función, los bytes adicionales del mensaje se pierden si el mensaje es mayor que el tamaño especificado del búfer de lectura. El ejemplo siguiente es el ejemplo anterior reescrito para usar **CallNamedPipe**.
 
 
 ```C++
@@ -197,10 +197,10 @@ int _tmain(int argc, TCHAR *argv[])
 [Servidor de canalización multiproceso](multithreaded-pipe-server.md)
 </dt> <dt>
 
-[Servidor de canalización con nombre mediante e/s superpuestas](named-pipe-server-using-overlapped-i-o.md)
+[Servidor de canalización con nombre que usa E/S superpuesta](named-pipe-server-using-overlapped-i-o.md)
 </dt> <dt>
 
-[Servidor de canalización con nombre mediante rutinas de finalización](named-pipe-server-using-completion-routines.md)
+[Servidor de canalización con nombre que usa rutinas de finalización](named-pipe-server-using-completion-routines.md)
 </dt> </dl>
 
  

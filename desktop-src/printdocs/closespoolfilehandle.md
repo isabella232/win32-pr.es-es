@@ -1,7 +1,7 @@
 ---
-description: La función CloseSpoolFileHandle cierra un identificador a un archivo de cola de impresión asociado al trabajo de impresión actualmente enviado por la aplicación.
+description: La función CloseSpoolFileHandle cierra un identificador a un archivo de cola asociado al trabajo de impresión enviado actualmente por la aplicación.
 ms.assetid: e2c0e68f-b72e-4a97-ba18-8943bc5789c1
-title: Función CloseSpoolFileHandle (winspool. h)
+title: Función CloseSpoolFileHandle (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - WinSpool.drv
-ms.openlocfilehash: c808bddde5b9b4e4a87a8608c1efb3999ce1f391
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f62173747472820f1642578778b67f3cdc3403523d6ae28453888dae3d6d1a23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950535"
 ---
-# <a name="closespoolfilehandle-function"></a>CloseSpoolFileHandle función)
+# <a name="closespoolfilehandle-function"></a>Función CloseSpoolFileHandle
 
-La función **CloseSpoolFileHandle** cierra un identificador a un archivo de cola de impresión asociado al trabajo de impresión actualmente enviado por la aplicación.
+La **función CloseSpoolFileHandle** cierra un identificador a un archivo de cola asociado al trabajo de impresión enviado actualmente por la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,27 +40,27 @@ BOOL CloseSpoolFileHandle(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador de la impresora a la que se envió el trabajo. Debe ser el mismo identificador que se usó para obtener *hSpoolFile* con [**GetSpoolFileHandle**](getspoolfilehandle.md).
+Identificador de la impresora a la que se envió el trabajo. Debe ser el mismo identificador que se usó para obtener *hSpoolFile* con [**GetSpoolFileHandle.**](getspoolfilehandle.md)
 
 </dd> <dt>
 
-*hSpoolFile* \[ de\]
+*hSpoolFile* \[ En\]
 </dt> <dd>
 
-Identificador del archivo de cola que se está cerrando. Si no se ha llamado a [**CommitSpoolData**](commitspooldata.md) desde que se llamó a [**GetSpoolFileHandle**](getspoolfilehandle.md) , debe ser el mismo identificador que devolvió **GetSpoolFileHandle**. De lo contrario, debe ser el identificador devuelto por la llamada más reciente a **CommitSpoolData**.
+Identificador del archivo de cola de trabajos que se va a cerrar. Si [**no se ha llamado a CommitSpoolData**](commitspooldata.md) desde que se llamó a [**GetSpoolFileHandle,**](getspoolfilehandle.md) debe ser el mismo identificador devuelto por **GetSpoolFileHandle.** De lo contrario, debe ser el identificador devuelto por la llamada más reciente a **CommitSpoolData**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**True**, si se realiza correctamente, **false** en caso contrario.
+**TRUE**, si se realiza correctamente, FALSE en **caso** contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación no debe llamar a [**ClosePrinter**](closeprinter.md) en *hPrinter* hasta que haya tenido acceso por última vez al archivo de cola de impresión. Después, debe llamar a **CloseSpoolFileHandle** seguido de **ClosePrinter**. Los intentos de obtener acceso al identificador de la cola de impresión una vez cerrado el *hPrinter* original producirán un error aunque no se haya cerrado el propio identificador de archivo. **CloseSpoolFileHandle** producirá un error si se llama primero a **ClosePrinter** .
+La aplicación no debe llamar a [**ClosePrinter**](closeprinter.md) en *hPrinter* hasta que haya accedido al archivo spool por última vez. A continuación, debe **llamar a CloseSpoolFileHandle** seguido de **ClosePrinter**. Los intentos de acceder al identificador de archivo de cola después de que se haya cerrado *el hPrinter* original producirán un error incluso si el propio identificador de archivo no se ha cerrado. **CloseSpoolFileHandle producirá** un error si se llama primero a **ClosePrinter.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,11 +68,11 @@ La aplicación no debe llamar a [**ClosePrinter**](closeprinter.md) en *hPrinter
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>WinSpool. drv</dt> </dl>                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
+| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>WinSpool.drv</dt> </dl>                   |
 
 
 

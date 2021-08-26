@@ -1,21 +1,21 @@
 ---
-title: Asegurarse de que el texto se muestra con la dirección de lectura correcta
-description: Algunos idiomas, como el árabe y el hebreo, requieren una dirección de lectura de derecha a izquierda.
+title: Asegúrese de que el texto se muestra con la dirección de lectura correcta.
+description: Algunos idiomas, como árabe y hebreo, requieren una dirección de lectura de derecha a izquierda.
 ms.assetid: fa9a3dd6-575a-4877-a488-22845c6726c8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5d97eee49a830986718c04b4adab7443e488093
-ms.sourcegitcommit: 43b2f5209d67eae96b17c03bac2a2afab1f4d30a
+ms.openlocfilehash: 3774e4d237863a218cadf5206e4dc4921bceaeaa06c00ab81057f80dd8ee6549
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103793779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982175"
 ---
-# <a name="ensure-text-is-displayed-with-the-correct-reading-direction"></a>Asegurarse de que el texto se muestra con la dirección de lectura correcta
+# <a name="ensure-text-is-displayed-with-the-correct-reading-direction"></a>Asegúrese de que el texto se muestra con la dirección de lectura correcta.
 
-Algunos idiomas, como el árabe y el hebreo, requieren una dirección de lectura de derecha a izquierda. En el caso de un objeto de formato de texto [DirectWrite](direct-write-portal.md) , la dirección de lectura predeterminada es de izquierda a derecha. DirectWrite no infiere automáticamente la dirección de lectura de la configuración regional, por lo que debe hacerlo usted mismo.
+Algunos idiomas, como árabe y hebreo, requieren una dirección de lectura de derecha a izquierda. Para un [DirectWrite](direct-write-portal.md) de formato de texto, la dirección de lectura predeterminada es de izquierda a derecha. DirectWrite no deduce automáticamente la dirección de lectura de la configuración regional, por lo que debe hacerlo usted mismo.
 
-En primer lugar, obtenga las marcas de estilo extendido para la ventana en la que se representará el texto mediante la macro GetWindowStyleEx definida en windowsx. h.
+En primer lugar, obtenga las marcas de estilo extendidas para la ventana en la que se representará el texto mediante la macro GetWindowStyleEx definida en windowsx.h.
 
 
 ```C++
@@ -25,11 +25,11 @@ DWORD dwStyle = GetWindowExStyle(hwnd_);
 
 
 
-La macro devuelve un valor DWORD compuesto por varias marcas combinadas con operaciones OR bit a bit. Debe determinar si existen las marcas específicas que afectan a la dirección de lectura.
+La macro devuelve un valor DWORD que se forma con varias marcas combinadas con operaciones OR bit a bit. Debe determinar si las marcas específicas que afectan a la dirección de lectura están ahí.
 
-Hay dos marcas diferentes que están relacionadas con la dirección de lectura: WS \_ ex \_ LAYOUTRTL y WS \_ ex \_ RTLREADING.
+Hay dos marcas diferentes relacionadas con la dirección de lectura: WS \_ EX \_ LAYOUTRTL y WS \_ EX \_ RTLREADING.
 
-Use el operador and bit a bit (&) con la variable dwStyle y \_ la \_ macro WS ex LAYOUTRTL para almacenar un valor booleano que indica si el diseño está reflejado.
+Use el operador AND bit a bit (&) con la variable dwStyle y la macro LAYOUTRTL de WS EX para almacenar un valor BOOL que indica si el diseño está \_ \_ reflejado.
 
 
 ```C++
@@ -39,7 +39,7 @@ BOOL bWSLayout = dwStyle & WS_EX_LAYOUTRTL;
 
 
 
-Haga lo mismo para la marca WS \_ ex \_ RTLREADING.
+Haga lo mismo con la marca WS \_ EX \_ RTLREADING.
 
 
 ```C++
@@ -49,12 +49,12 @@ BOOL bWSReading = dwStyle & WS_EX_RTLREADING;
 
 
 
-Establezca la dirección de lectura mediante el método [**IDWriteTextFormat:: SetReadingDirection**](/windows/win32/api/dwrite/nf-dwrite-idwritetextformat-setreadingdirection) . El valor predeterminado es de izquierda a derecha, por lo que solo tiene que establecer la dirección de lectura si es de derecha a izquierda.
+Establezca la dirección de lectura mediante el [**método IDWriteTextFormat::SetReadingDirection.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextformat-setreadingdirection) El valor predeterminado es de izquierda a derecha, por lo que solo debe establecer la dirección de lectura si es de derecha a izquierda.
 
 > [!Note]  
-> WS \_ ex \_ LAYOUTRTL refleja el diseño completo e implica la dirección de lectura de derecha a izquierda, por lo que debe establecer la dirección de lectura solo si una de estas marcas está presente. Si ambos están presentes, se cancelan entre sí y la dirección de lectura para el formato de texto debe ser de izquierda a derecha.
+> WS \_ EX LAYOUTRTL refleja todo el diseño e implica la dirección de lectura de derecha a izquierda, por lo que establezca la dirección de lectura solo si una de estas marcas \_ está presente. Si ambos están presentes, se cancelan entre sí y la dirección de lectura del formato de texto debe ser de izquierda a derecha.
 
- 
+ 
 
 
 ```C++
@@ -69,6 +69,6 @@ if ((bWSLayout && !bWSReading)
 
 
 
- 
+ 
 
- 
+ 

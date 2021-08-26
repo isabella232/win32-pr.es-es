@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. Differential.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.Differential.
 ms.assetid: 330d1f88-5f54-4e29-b57f-eb7112203e04
-title: Directiva de metadatos de fotografía de System. GPS. Differential
+title: Directiva de metadatos de fotos System.GPS.Differential
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dc3f114683d324a067fe4ce4034e2de5cfc88da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 728df47fd8e6e9748b7208b79444ba8fa257fa49c92587df199441de941f4fdd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931805"
 ---
-# <a name="systemgpsdifferential-photo-metadata-policy"></a>Directiva de metadatos de fotografía de System. GPS. Differential
+# <a name="systemgpsdifferential-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.Differential
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. Differential](../properties/props-system-gps-differential.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.Differential.](../properties/props-system-gps-differential.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Diferencial de GPS de PKEY \_
+Diferencial gps PKEY \_ \_
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,17 +27,17 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI2
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-VT \_ UI1, VT \_ UI2 y VT \_ UI4 se aceptan.
+Se \_ aceptan VT UI1, VT \_ UI2 y VT \_ UI4.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policies"></a>Directivas JPEG
 
@@ -45,22 +45,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 30} | ushort      |
+| 1     | /app1/ifd/gps/{ushort=30} | ushort      |
 | 2     | /xmp/exif:GPSDifferential | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 30} | ushort      |
+| 1     | /app1/ifd/gps/{ushort=30} | ushort      |
 | 2     | /xmp/exif:GPSDifferential | unicode     |
 
 
@@ -71,9 +71,9 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                      |
+| Pedido | Ruta de acceso                      |
 |-------|---------------------------|
-| 1     | /app1/IFD/GPS/{ushort = 30} |
+| 1     | /app1/ifd/gps/{ushort=30} |
 | 2     | /xmp/exif:gpsdifferential |
 
 
@@ -86,22 +86,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 30}          | ushort      |
+| 1     | /ifd/gps/{ushort=30}          | ushort      |
 | 2     | /ifd/xmp/exif:GPSDifferential | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 30}          | ushort      |
+| 1     | /ifd/gps/{ushort=30}          | ushort      |
 | 2     | /ifd/xmp/exif:GPSDifferential | unicode     |
 
 
@@ -112,22 +112,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          |
+| Pedido | Ruta de acceso                          |
 |-------|-------------------------------|
-| 1     | /IFD/GPS/{ushort = 30}          |
+| 1     | /ifd/gps/{ushort=30}          |
 | 2     | /ifd/xmp/exif:gpsdifferential |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. GPS. Differential](../properties/props-system-gps-differential.md)
+[System.GPS.Differential](../properties/props-system-gps-differential.md)
 </dt> </dl>
 
  

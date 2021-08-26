@@ -1,21 +1,21 @@
 ---
-title: Diseño del registro de enrutamiento y acceso remoto
-description: La sintaxis siguiente muestra un ejemplo de diseño del registro para el servicio del enrutador.
+title: Diseño del Registro de enrutamiento y acceso remoto
+description: La sintaxis siguiente muestra un diseño del Registro de ejemplo para el servicio de enrutador.
 ms.assetid: 5464c2f7-6bb8-4838-939d-d58508715505
 keywords:
-- Servicio de enrutamiento y acceso remoto RRAS, diseño del registro de enrutamiento y acceso remoto
+- RRAS del servicio de enrutamiento y acceso remoto, diseño del Registro de enrutamiento y acceso remoto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f6ed72b569a8fe2efe1423ce2429c31cd0a0a65
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cd3388c2a11f69a473a334105d2872872b98b17b4956f12f886e50ada89f406f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027405"
 ---
-# <a name="routing-and-remote-access-registry-layout"></a>Diseño del registro de enrutamiento y acceso remoto
+# <a name="routing-and-remote-access-registry-layout"></a>Diseño del Registro de enrutamiento y acceso remoto
 
-La sintaxis siguiente muestra un ejemplo de diseño del registro para el servicio del enrutador.
+La sintaxis siguiente muestra un diseño del Registro de ejemplo para el servicio de enrutador.
 
 ``` syntax
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RasMan 
@@ -132,13 +132,13 @@ HKEY_LOCAL_MACHINE\Software\Microsoft
                 <guid4>: REG_SZ: ddmadmin.dll
 ```
 
-Cada administrador de enrutador instalado en el sistema tiene una clave del registro creada en la clave del enrutador. La variable DLLPath especifica la ubicación del archivo DLL que corresponde al administrador de enrutador y la variable ProtocolID especifica el identificador de la familia de protocolos para el administrador de enrutadores.
+Cada administrador de enrutadores instalado en el sistema tiene una clave del Registro creada en la clave del enrutador. La variable DLLPath especifica la ubicación del archivo DLL que corresponde al administrador de enrutadores y la variable ProtocolID especifica el identificador de familia de protocolos para el administrador de enrutadores.
 
-La clave interfaces se rellena con las interfaces que se han agregado al sistema local desde la configuración del enrutador. Cada interfaz tiene un tipo asociado (interno, dedicado o dinámico) y subclaves para cada administrador de enrutador (IP e IPX, por ejemplo).
+La clave Interfaces se rellena con las interfaces que se han agregado al sistema local desde la configuración del enrutador. Cada interfaz tiene un tipo asociado (interno, dedicado o dinámico) y subclaves para cada administrador de enrutadores (IP e IPX, por ejemplo).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Representa la configuración para el servicio de migración del sistema virtual en un host.
+description: Representa la configuración del servicio de migración del sistema virtual en un host.
 ms.assetid: 56711134-9a4a-49bd-8a0e-ce679b959adf
-title: Msvm_VirtualSystemMigrationServiceSettingData (clase)
+title: Msvm_VirtualSystemMigrationServiceSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,18 +23,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8c8685e468d60983408c52a985169c61be91f632
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ab3feab1f34d0f44ce5cd0618915d8575af9e463a9ec772961c185e946ac094
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963505"
 ---
-# <a name="msvm_virtualsystemmigrationservicesettingdata-class"></a>MSVM \_ VirtualSystemMigrationServiceSettingData (clase)
+# <a name="msvm_virtualsystemmigrationservicesettingdata-class"></a>Clase Msvm \_ VirtualSystemMigrationServiceSettingData
 
-Representa la configuración para el servicio de migración del sistema virtual en un host. Las propiedades de esta clase no se pueden modificar directamente. El cliente debe llamar al método **MSVM \_ VirtualSystemMigrationService. ModifyServiceSettings** para modificar cualquiera de estas propiedades.
+Representa la configuración del servicio de migración del sistema virtual en un host. Las propiedades de esta clase no se pueden modificar directamente. El cliente debe llamar al **método Msvm \_ VirtualSystemMigrationService.ModifyServiceSettings** para modificar cualquiera de estas propiedades.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,26 +57,26 @@ class Msvm_VirtualSystemMigrationServiceSettingData : CIM_SettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualSystemMigrationServiceSettingData** tiene estos tipos de miembros:
+La **clase \_ VirtualSystemMigrationServiceSettingData de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualSystemMigrationServiceSettingData** tiene estas propiedades.
+La **clase Msvm \_ VirtualSystemMigrationServiceSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **AuthenticationType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el mecanismo de autenticación usado para las conexiones de red de migración del sistema virtual. Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md) de la clase [**MSVM \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md) .
+Especifica el mecanismo de autenticación utilizado para las conexiones de red de migración de sistema virtual. Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md) de la clase [**\_ Msvm VirtualSystemMigrationService.**](msvm-virtualsystemmigrationservice.md)
 
 <dt>
 
@@ -105,7 +105,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de la clase [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) .
+Breve descripción del objeto. Esta propiedad se hereda de la [**clase \_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda del [**\_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85)).
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
 
 </dd> <dt>
 
@@ -141,12 +141,12 @@ Nombre para mostrar del objeto. Esta propiedad se hereda del [**\_ SettingData d
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si la compresión del tráfico de migración en vivo está habilitada o deshabilitada. True indica que está habilitado.
+Indica si la compresión del tráfico de migración en vivo está habilitada o deshabilitada. True indica habilitado.
 
-Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) de la clase [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) de la clase [**Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 **Windows 8.1:** Este valor no se admite hasta Windows 8.1 y Windows Server 2012 R2.
 
@@ -158,12 +158,12 @@ Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el mé
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si el uso de SMB como un tipo de transporte para transferir el estado de la máquina virtual entre los hosts de Hyper-V durante la migración del sistema virtual está habilitado o deshabilitado. **True** indica que está habilitado. Se consigue un mayor rendimiento si las NIC RDMA están configuradas para el transporte SMB durante la migración en vivo de máquinas virtuales. Si el valor de **EnableSmbTransport** es true, se omite el valor de **EnableCompression** .
+Indica si el uso de SMB como tipo de transporte para transferir el estado de la máquina virtual entre los hosts de Hyper-V durante la migración del sistema virtual está habilitado o deshabilitado. **True** indica habilitado. Se consigue un mayor rendimiento si las NIC RDMA están configuradas para el transporte SMB durante la migración en vivo de la máquina virtual. Si **el valor enableSmbTransport** es true, se omite el valor de **EnableCompression.**
 
-Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) de la clase [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) de la clase [**Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 **Windows 8.1:** Este valor no se admite hasta Windows 8.1 y Windows Server 2012 R2.
 
@@ -178,7 +178,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si la migración del sistema virtual está habilitada o deshabilitada. La migración de almacenamiento siempre está habilitada. Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md) de la clase [**MSVM \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md) .
+Especifica si la migración del sistema virtual está habilitada o deshabilitada. Storage la migración siempre está habilitada. Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md) de la clase [**\_ Msvm VirtualSystemMigrationService.**](msvm-virtualsystemmigrationservice.md)
 
 </dd> <dt>
 
@@ -191,36 +191,36 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **MaximumActiveStorageMigration**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el número máximo de migraciones de almacenamiento activas permitidas. Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md) de la clase [**MSVM \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md) .
+Especifica el número máximo de migraciones de almacenamiento activas permitidas. Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md) de la clase [**\_ Msvm VirtualSystemMigrationService.**](msvm-virtualsystemmigrationservice.md)
 
 </dd> <dt>
 
 **MaximumActiveVirtualSystemMigration**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el número máximo de migraciones de sistema virtuales activas permitidas. Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md) de la clase [**MSVM \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md) .
+Especifica el número máximo de migraciones activas del sistema virtual permitidas. Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md) de la clase [**\_ Msvm VirtualSystemMigrationService.**](msvm-virtualsystemmigrationservice.md)
 
 </dd> </dl>
 
@@ -230,10 +230,10 @@ Especifica el número máximo de migraciones de sistema virtuales activas permit
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -242,7 +242,7 @@ Especifica el número máximo de migraciones de sistema virtuales activas permit
 
 <dl> <dt>
 
-[**SettingData de CIM \_**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> <dt>
 
 [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md)

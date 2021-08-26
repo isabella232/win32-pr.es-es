@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CLEAR (Winuser. h)
-description: Una aplicación envía un mensaje de borrar de WM \_ a un control de edición o un cuadro combinado para eliminar (borrar) la selección actual, si la hay, del control de edición.
+title: WM_CLEAR mensaje (Winuser.h)
+description: Una aplicación envía un mensaje WM CLEAR a un control de edición o a un cuadro combinado para eliminar (borrar) la selección actual, si la \_ hay, del control de edición.
 ms.assetid: 6730a725-01ec-4821-9ffc-1ea267d665b3
 keywords:
-- Intercambio de datos de mensajes de WM_CLEAR
+- WM_CLEAR mensaje Datos Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61a8e325704d1e8b953fe59bfaf4e8fcee62cf40
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c6820a9134f112b51474cd5b73e8545583cb02969b02a1bd1428138ebf1049dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120029115"
 ---
-# <a name="wm_clear-message"></a>\_Mensaje de borrado de WM
+# <a name="wm_clear-message"></a>Mensaje CLEAR de WM \_
 
-Una aplicación envía un mensaje de **\_ Borrar de WM** a un control de edición o un cuadro combinado para eliminar (borrar) la selección actual, si la hay, del control de edición.
+Una aplicación envía un mensaje **\_ WM CLEAR** a un control de edición o a un cuadro combinado para eliminar (borrar) la selección actual, si la hay, del control de edición.
 
 
 ```C++
@@ -39,28 +39,28 @@ Una aplicación envía un mensaje de **\_ Borrar de WM** a un control de edició
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser cero.
+Este parámetro no se usa y debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser cero.
+Este parámetro no se usa y debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La eliminación realizada por el mensaje de **\_ borrado de WM** se puede deshacer enviando el control de edición de un mensaje de [**\_ Deshacer de EM**](../controls/em-undo.md) .
+La eliminación realizada por el **mensaje WM \_ CLEAR** se puede deshacer enviando al control de edición un [**mensaje EM \_ UNDO.**](../controls/em-undo.md)
 
-Para eliminar la selección actual y colocar el contenido eliminado en el portapapeles, utilice el mensaje de [**\_ corte de WM**](wm-cut.md) .
+Para eliminar la selección actual y colocar el contenido eliminado en el Portapapeles, use el [**mensaje WM \_ CUT.**](wm-cut.md)
 
-Cuando se envía a un cuadro combinado, el mensaje de **\_ borrado de WM** se controla mediante su control de edición. Este mensaje no tiene ningún efecto cuando se envía a un cuadro combinado con el estilo [**CBS \_ DROPDOWNLIST**](../controls/combo-box-styles.md) .
+Cuando se envía a un cuadro combinado, el control de edición controla el mensaje CLEAR de **WM. \_** Este mensaje no tiene ningún efecto cuando se envía a un cuadro combinado con el estilo [**\_ DROPDOWNLIST de CBS.**](../controls/combo-box-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Cuando se envía a un cuadro combinado, el mensaje de **\_ borrado de WM** se co
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -81,19 +81,19 @@ Cuando se envía a un cuadro combinado, el mensaje de **\_ borrado de WM** se co
 **Referencia**
 </dt> <dt>
 
-[**copia de WM \_**](wm-copy.md)
+[**WM \_ COPY**](wm-copy.md)
 </dt> <dt>
 
-[**cortar de WM \_**](wm-cut.md)
+[**WM \_ CUT**](wm-cut.md)
 </dt> <dt>
 
-[**pegar de WM \_**](wm-paste.md)
+[**WM \_ PASTE**](wm-paste.md)
 </dt> <dt>
 
-[**deshacer de WM \_**](/windows/desktop/Controls/wm-undo)
+[**WM \_ UNDO**](/windows/desktop/Controls/wm-undo)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Portapapeles](clipboard.md)

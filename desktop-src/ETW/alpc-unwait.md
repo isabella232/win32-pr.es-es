@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para eventos de fin de espera de ALPC. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de espera de finalización de ALPC. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 89a357dd-c217-4b55-994a-4252fa3cae1c
-title: ALPC_Unwait (clase)
+title: ALPC_Unwait clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f0846eae1ebb88e8892f1fe9b8dd07fd1be9d146
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de6e04fce0f581b3f37e3a049590914b1355d197952c74190457a402e597edcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901715"
 ---
-# <a name="alpc_unwait-class"></a>ALPC ( \_ clase)
+# <a name="alpc_unwait-class"></a>ALPC \_ Unwait (clase)
 
-Esta clase es la clase de tipo de evento para eventos de fin de espera de ALPC.
+Esta clase es la clase de tipo de evento para los eventos de espera de finalización de ALPC.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,20 +38,20 @@ class ALPC_Unwait : ALPC
 
 ## <a name="members"></a>Miembros
 
-La clase **ALPC \_ unwait** tiene estos tipos de miembros:
+La **clase ALPC \_ Unwait** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **ALPC \_ unwait** tiene estas propiedades.
+La **clase ALPC \_ Unwait** tiene estas propiedades.
 
 <dl> <dt>
 
 **Estado**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -67,8 +67,8 @@ Estado de la operación de espera.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

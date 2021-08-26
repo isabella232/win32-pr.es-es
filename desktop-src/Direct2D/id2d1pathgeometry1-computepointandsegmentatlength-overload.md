@@ -12,14 +12,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: f1776643d062db048a7448d2cd032b49dd6d5d77
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7623d9e9e5801ee88a4965834d8f00bb3ba53c1fbe4cfea0f2030f01e80c32d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917475"
 ---
-# <a name="id2d1pathgeometry1computepointandsegmentatlength-methods"></a>ID2D1PathGeometry1:: ComputePointAndSegmentAtLength (métodos)
+# <a name="id2d1pathgeometry1computepointandsegmentatlength-methods"></a>Métodos ID2D1PathGeometry1::ComputePointAndSegmentAtLength
 
 Calcula el punto que existe a una distancia determinada a lo largo de la geometría de trazado junto con el índice del segmento en el que se encuentra el punto y el vector direccional en ese punto.
 
@@ -29,10 +29,10 @@ Calcula el punto que existe a una distancia determinada a lo largo de la geometr
 
 | Método                                                                                                                                                                | Descripción                                                                                                                                                                         |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1 \_ Matrix \_ 3x2 \_ F \* , descripción de punto de D2D1 \_ \_ \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f_d2d1_point_description))       | Calcula el punto que existe a una distancia determinada a lo largo de la geometría de trazado junto con el índice del segmento en el que se encuentra el punto y el vector direccional en ese punto.<br/> |
-| [**ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1 \_ Matrix \_ 3X2 \_ F&, D2D1 \_ Point \_ Description \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f__d2d1_point_description))        | Calcula el punto que existe a una distancia determinada a lo largo de la geometría de trazado junto con el índice del segmento en el que se encuentra el punto y el vector direccional en ese punto.<br/> |
-| [**ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1 \_ Matrix \_ 3x2 \_ F \* , Float, D2D1 \_ Point \_ Description \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f_float_d2d1_point_description))  | Calcula el punto que existe a una distancia determinada a lo largo de la geometría de trazado junto con el índice del segmento en el que se encuentra el punto y el vector direccional en ese punto.<br/> |
-| [**ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1 \_ Matrix \_ 3X2 \_ F&, Float, D2D1 \_ Point \_ Description \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f__float_d2d1_point_description)) | Calcula el punto que existe a una distancia determinada a lo largo de la geometría de trazado junto con el índice del segmento en el que se encuentra el punto y el vector direccional en ese punto.<br/> |
+| [**ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1 \_ MATRIX \_ 3X2 \_ F , \* D2D1 \_ POINT DESCRIPTION \_ \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f_d2d1_point_description))       | Calcula el punto que existe a una distancia determinada a lo largo de la geometría de trazado junto con el índice del segmento en el que se encuentra el punto y el vector direccional en ese punto.<br/> |
+| [**ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1 \_ MATRIX \_ 3X2 \_ F&, D2D1 \_ POINT DESCRIPTION \_ \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f__d2d1_point_description))        | Calcula el punto que existe a una distancia determinada a lo largo de la geometría de trazado junto con el índice del segmento en el que se encuentra el punto y el vector direccional en ese punto.<br/> |
+| [**ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1 \_ MATRIX \_ 3X2 \_ F , \* FLOAT, D2D1 \_ POINT DESCRIPTION \_ \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f_float_d2d1_point_description))  | Calcula el punto que existe a una distancia determinada a lo largo de la geometría de trazado junto con el índice del segmento en el que se encuentra el punto y el vector direccional en ese punto.<br/> |
+| [**ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1 \_ MATRIX \_ 3X2 \_ F&, FLOAT, D2D1 \_ POINT DESCRIPTION \_ \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f__float_d2d1_point_description)) | Calcula el punto que existe a una distancia determinada a lo largo de la geometría de trazado junto con el índice del segmento en el que se encuentra el punto y el vector direccional en ese punto.<br/> |
 
 
 

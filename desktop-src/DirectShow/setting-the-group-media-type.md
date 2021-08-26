@@ -4,24 +4,24 @@ ms.assetid: 05f0fdcb-74a4-441e-ac3c-d3d2c1dfee80
 title: Establecer el tipo de medio de grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 365bd2171100a9d4bcfc48d70dbeb94d8a6639dd
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: c758e089a4f1240debb14c8159d039380b3473991860fef54470c12c1c00b1e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105678635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928185"
 ---
 # <a name="setting-the-group-media-type"></a>Establecer el tipo de medio de grupo
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-Todos los grupos deben definir un tipo de medio sin comprimir, ya sea audio o vídeo. El tipo de medio sin comprimir es el formato que los visores ven o oyen durante la reproducción. Normalmente, la salida final tendrá un formato comprimido. Para obtener más información, vea [representar un proyecto](rendering-a-project.md).
+Todos los grupos deben definir un tipo de medio sin comprimir, ya sea audio o vídeo. El tipo de medio sin comprimir es el formato que ven o escuchan los espectadores durante la reproducción. Normalmente, la salida final estará en un formato comprimido. Para obtener más información, vea [Representación de un Project](rendering-a-project.md).
 
-Para establecer el formato sin comprimir, cree una estructura de [**\_ \_ tipo medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) y rellénelo con el tipo principal, el subtipo y el encabezado de formato adecuados. Para vídeo, asigne una estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) para el bloque de formato y establezca el ancho, el alto y la profundidad de bits. En el caso de audio, asigne una estructura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) para el bloque de formato y establezca la velocidad de muestra, la profundidad de bits y el número de canales. Si establece solo el tipo principal, DES proporciona valores predeterminados razonables para los demás valores. En la práctica, debe establecer los valores explícitamente para controlar el resultado.
+Para establecer el formato sin comprimir, cree una estructura [**\_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) y rellene con el tipo principal, el subtipo y el encabezado de formato adecuados. Para vídeo, asigne una [**estructura VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) para el bloque de formato y establezca el ancho, el alto y la profundidad de bits. Para el audio, asigne una estructura [**DESATEX para**](/previous-versions/dd757713(v=vs.85)) el bloque de formato y establezca la frecuencia de muestreo, la profundidad de bits y el número de canales. Si establece solo el tipo principal, DES proporciona valores predeterminados razonables para los demás valores. En la práctica, debe establecer los valores explícitamente para controlar la salida.
 
-Después de inicializar la estructura de tipo de medio, llame al método [**IAMTimelineGroup:: SetMediaType**](iamtimelinegroup-setmediatype.md) para establecer el tipo de medio para el grupo.
+Después de inicializar la estructura del tipo de medio, llame al método [**IAMTimelineGroup::SetMediaType**](iamtimelinegroup-setmediatype.md) para establecer el tipo de medio para el grupo.
 
-En el ejemplo siguiente se especifica el vídeo RGB de 16 bits, 320 píxeles de ancho por 240 píxeles de alto:
+En el ejemplo siguiente se especifica un vídeo RGB de 16 bits, de 320 píxeles de ancho por 240 píxeles de alto:
 
 
 ```C++
@@ -62,7 +62,7 @@ CoTaskMemFree(mtGroup.pbFormat);
 
 
 
-En el ejemplo siguiente se especifica un grupo de audio, estableciendo el tipo de medio de grupo en estéreo de 16 bits, 44100 muestras por segundo:
+En el ejemplo siguiente se especifica un grupo de audio estableciendo el tipo de medio de grupo en estéreo de 16 bits, 44100 muestras por segundo:
 
 
 ```C++
@@ -97,7 +97,7 @@ CoTaskMemFree(mt.pbFormat);
 
 
 
-También puede usar la clase [**CMediaType**](cmediatype.md) en las [clases base de DirectShow](directshow-base-classes.md) para administrar los tipos de medios. Contiene algunos métodos auxiliares útiles y libera automáticamente el bloque de formato.
+También puede usar la clase [**CMediaType**](cmediatype.md) en el DirectShow [base para](directshow-base-classes.md) administrar tipos de medios. Contiene algunos métodos auxiliares útiles y libera automáticamente el bloque de formato.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -4,22 +4,22 @@ ms.assetid: 0e37f0d3-a37b-4f36-a133-7b1922e9944b
 title: Leer el objeto de encabezado ASF de un archivo existente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b231cb0b9af6b24f84efaa6403a4774e66bbb646
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e653154d632786995bdf45dcfa8e67e3cfd55cdf3f90103ce1cf995179e1266b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887345"
 ---
 # <a name="reading-the-asf-header-object-of-an-existing-file"></a>Leer el objeto de encabezado ASF de un archivo existente
 
 El objeto ContentInfo de ASF almacena información que representa los objetos de encabezado ASF de un archivo multimedia. Se requiere un objeto ContentInfo rellenado para leer y analizar un archivo ASF existente.
 
-Después de crear el objeto ContentInfo mediante una llamada a la función [**MFCreateASFContentInfo**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) , la aplicación debe inicializarlo con la información de encabezado del archivo ASF que se va a leer. Para rellenar el objeto, llame a [**IMFASFContentInfo::P arseheader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader).
+Después de crear el objeto ContentInfo llamando a la función [**MFCreateASFContentInfo,**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) la aplicación debe inicializarse con información de encabezado del archivo ASF que se va a leer. Para rellenar el objeto , llame [**a IMFASFContentInfo::P arseHeader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader).
 
-**ParseHeader** requiere un búfer de medios que contenga el objeto de encabezado del archivo ASF. Una opción consiste en rellenar un búfer multimedia con el objeto de encabezado para crear una secuencia de bytes para el archivo y, a continuación, leer los primeros 30 bytes de datos de la secuencia de bytes en un búfer multimedia. A continuación, puede obtener el tamaño pasando los primeros 24 bytes del objeto de encabezado al método [**IMFASFContentInfo:: GetHeaderSize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getheadersize) . Después de obtener el tamaño, puede leer el objeto de encabezado completo en un búfer multimedia y pasarlo a **ParseHeader**. El método comienza el análisis en el desplazamiento desde el inicio del búfer de medios especificado en el parámetro *cbOffsetWithinHeader* .
+**ParseHeader requiere** un búfer multimedia que contenga el objeto de encabezado del archivo ASF. Una opción es rellenar un búfer multimedia con el objeto de encabezado para crear una secuencia de bytes para el archivo y, a continuación, leer los primeros 30 bytes de datos de la secuencia de bytes en un búfer multimedia. A continuación, puede obtener el tamaño pasando los primeros 24 bytes del objeto header al [**método IMFASFContentInfo::GetHeaderSize.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getheadersize) Después de obtener el tamaño, puede leer todo el objeto de encabezado en un búfer multimedia y pasarlo a **ParseHeader**. El método inicia el análisis en el desplazamiento desde el inicio del búfer multimedia especificado en el *parámetro cbOffsetWithinHeader.*
 
-En el ejemplo de código siguiente se crea e inicializa un objeto ContentInfo para leer un archivo ASF existente contenido en una secuencia de bytes. En primer lugar, se define una función auxiliar que lee los datos de una secuencia de bytes y asigna un búfer multimedia para almacenar los datos:
+El código de ejemplo siguiente crea e inicializa un objeto ContentInfo para leer un archivo ASF existente contenido en una secuencia de bytes. En primer lugar, definimos una función auxiliar que lee datos de una secuencia de bytes y asigna un búfer multimedia para contener los datos:
 
 
 ```C++
@@ -96,7 +96,7 @@ HRESULT CreateContentInfo(IMFByteStream *pStream,
 
 
 
-En el ejemplo siguiente se lee el objeto de encabezado ASF de una secuencia de bytes y se rellena un objeto ContentInfo ASF.
+En el ejemplo siguiente se lee el objeto de encabezado asf de una secuencia de bytes y se rellena un objeto ContentInfo de ASF.
 
 
 ```C++
@@ -174,7 +174,7 @@ HRESULT CreateContentInfo(IMFByteStream *pStream,
 
 
 > [!Note]  
-> En estos ejemplos se usa la función [SafeRelease](saferelease.md) para liberar punteros de interfaz.
+> En estos ejemplos se usa [la función SafeRelease para](saferelease.md) liberar punteros de interfaz.
 
  
 
@@ -191,7 +191,7 @@ HRESULT CreateContentInfo(IMFByteStream *pStream,
 [Compatibilidad con ASF en Media Foundation](asf-support-in-media-foundation.md)
 </dt> <dt>
 
-[Obtener información de los objetos de encabezado ASF](getting-information-from-asf-header-objects.md)
+[Obtener información de objetos de encabezado de ASF](getting-information-from-asf-header-objects.md)
 </dt> </dl>
 
  

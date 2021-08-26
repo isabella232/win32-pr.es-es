@@ -4,12 +4,12 @@ ms.assetid: dd24166c-d5e2-420e-8a8c-e1a25728ab2f
 title: JobDuplexAllDocumentsContiguously
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20a8911a4c62644bfc073a2a9c1dcfd67dad536a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ffd5dbb115cf6a8e1775f2d8e74195ff3c1a228a773b94a60d234d0f1c4ff4ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948665"
 ---
 # <a name="jobduplexalldocumentscontiguously"></a>JobDuplexAllDocumentsContiguously
 
@@ -19,13 +19,13 @@ Describe las características dúplex de la salida. La característica dúplex p
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
+-   [contenido lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Trabajo<br/>     |
@@ -65,13 +65,13 @@ En la tabla siguiente se describen las características de las variables definid
 |------------------------------------|-------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como se define en https://www.w3.org/TR/1999/REC-xml-names-19990114/\#dt-qname . Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                     |
 | \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                      | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>                                                           |
-| \_DuplexModeValue\_<br/>     | string<br/> | N/D<br/>        | Automático, Manual.<br/>                                                                                                                                                | Define el modo dúplex. El dúplex automático lo realiza el hardware. El dúplex manual lo realizan el software y el usuario.<br/> |
+| \_DuplexModeValue\_<br/>     | string<br/> | N/D<br/>        | Automático, Manual.<br/>                                                                                                                                                | Define el modo dúplex. El dúplex automático lo realiza el hardware. El software y el usuario realizan el dúplex manual.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
+## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
 
 Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
@@ -101,7 +101,7 @@ Las palabras clave del esquema de impresión público se definen en el espacio d
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Command. LargeImages (propiedad)
-description: Representa un contenedor de imágenes; en este caso, imágenes grandes.
+title: Propiedad Command.LargeImages
+description: Representa un contenedor de imágenes; En este caso, imágenes grandes.
 ms.assetid: 9fcd3694-7847-43e2-9877-47daf47aae9a
 keywords:
-- Command. LargeImages (propiedad) cinta de Windows
+- Command.LargeImages, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf71557506d4b9cced21069473d1a6db9b208b8c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 66214eb05910296b2c03a749d88134bef68f86badc2ffd7f7b69d0ba6adfdd5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931625"
 ---
-# <a name="commandlargeimages-property"></a>Command. LargeImages (propiedad)
+# <a name="commandlargeimages-property"></a>Propiedad Command.LargeImages
 
-Representa un contenedor de imágenes; en este caso, imágenes grandes.
+Representa un contenedor de imágenes; En este caso, imágenes grandes.
 
 ## <a name="usage"></a>Uso
 
@@ -55,19 +55,19 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**comando**](windowsribbon-element-command.md).
+Puede producirse como máximo una vez para cada [**comando**](windowsribbon-element-command.md).
 
-Los recursos de imagen deben cumplir el formato de gráficos de mapa de bits estándar (BMP) usado en Windows.
+Los recursos de imagen deben ajustarse al formato de gráfico estándar de mapa de bits (BMP) que se usa Windows.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para [**splitButton**](windowsribbon-element-splitbutton.md) con un elemento [**MenuGroup**](windowsribbon-element-menugroup.md) .
+En el ejemplo siguiente se muestra el marcado básico para [**SplitButton**](windowsribbon-element-splitbutton.md) con un [**elemento MenuGroup.**](windowsribbon-element-menugroup.md)
 
-En esta sección de código se muestran las declaraciones de comandos [**splitButton**](windowsribbon-element-splitbutton.md) y [**MenuGroup**](windowsribbon-element-menugroup.md) con un recurso de imagen grande y pequeño. También se declara un [**Grupo**](windowsribbon-element-group.md) asociado que actúa como contenedor primario para el elemento **splitButton** .
+En esta sección de código se muestran las [**declaraciones de**](windowsribbon-element-splitbutton.md) los comandos SplitButton y [**MenuGroup**](windowsribbon-element-menugroup.md) con un recurso de imagen grande y pequeño. También se [**declara**](windowsribbon-element-group.md) un grupo asociado que actúa como contenedor primario para el elemento **SplitButton.**
 
 
 ```XML
@@ -117,8 +117,8 @@ En esta sección de código se muestran las declaraciones de comandos [**splitBu
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -126,7 +126,7 @@ En esta sección de código se muestran las declaraciones de comandos [**splitBu
 
 <dl> <dt>
 
-[Especificar recursos de imagen de cinta](windowsribbon-imageformats.md)
+[Especificar recursos de imagen de cinta de opciones](windowsribbon-imageformats.md)
 </dt> <dt>
 
 [UI \_ PKEY \_ LargeImage](windowsribbon-reference-properties-uipkey-largeimage.md)

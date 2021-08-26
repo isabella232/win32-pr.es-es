@@ -1,23 +1,23 @@
 ---
-description: KTM define las siguientes máscaras de acceso de inscripción que se usarán al abrir las inlistas.
+description: KTM define las siguientes máscaras de acceso de registro que se usarán al abrir las inscciones.
 ms.assetid: 93773eb7-141a-49f3-9306-ffbda2f4ab9f
-title: Máscaras de acceso de inscripción (Winnt. h)
+title: Enlistment Access Masks (WinNT.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63e4ebd67f93368215ebcdcd362595d0341adb52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85f3d774c474c27896c16bba5c7552713f248519aa86ef56da0da5b704234b19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870115"
 ---
-# <a name="enlistment-access-masks"></a>Máscaras de acceso de inscripción
+# <a name="enlistment-access-masks"></a>Enlistment Access Masks
 
-KTM define las siguientes máscaras de acceso de inscripción que se usarán al abrir las inlistas.
+KTM define las siguientes máscaras de acceso de registro que se usarán al abrir las inscciones.
 
 <dl> <dt>
 
-<span id="ENLISTMENT_QUERY_INFORMATION"></span><span id="enlistment_query_information"></span>**información de la \_ consulta de inscripción \_**
+<span id="ENLISTMENT_QUERY_INFORMATION"></span><span id="enlistment_query_information"></span>**INFORMACIÓN DE CONSULTA \_ DE \_ ENLISTMENT**
 </dt> <dd> <dl> <dt>
 
 0x00001
@@ -25,12 +25,12 @@ KTM define las siguientes máscaras de acceso de inscripción que se usarán al 
 
 
 
-El autor de la llamada puede consultar el KTM para obtener información sobre la inscripción.
+El autor de la llamada puede consultar KTM para obtener información sobre la alistación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ENLISTMENT_SET_INFORMATION"></span><span id="enlistment_set_information"></span>**información del conjunto de inscripción \_ \_**
+<span id="ENLISTMENT_SET_INFORMATION"></span><span id="enlistment_set_information"></span>**INFORMACIÓN DEL CONJUNTO \_ DE \_ ALISTMENT**
 </dt> <dd> <dl> <dt>
 
 0x00002
@@ -38,12 +38,12 @@ El autor de la llamada puede consultar el KTM para obtener información sobre la
 
 
 
-El autor de la llamada puede establecer información sobre la inscripción.
+El autor de la llamada puede establecer información sobre la alta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ENLISTMENT_RECOVER"></span><span id="enlistment_recover"></span>**recuperación de inscripción \_**
+<span id="ENLISTMENT_RECOVER"></span><span id="enlistment_recover"></span>**RECUPERACIÓN DE LA \_ ALISTMENT**
 </dt> <dd> <dl> <dt>
 
 0x00004
@@ -51,12 +51,12 @@ El autor de la llamada puede establecer información sobre la inscripción.
 
 
 
-El autor de la llamada puede recuperar una inscripción.
+El autor de la llamada puede recuperar una alta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ENLISTMENT_SUBORDINATE_RIGHTS"></span><span id="enlistment_subordinate_rights"></span>**\_derechos subordinados de \_ inscripción**
+<span id="ENLISTMENT_SUBORDINATE_RIGHTS"></span><span id="enlistment_subordinate_rights"></span>**DERECHOS \_ SUBORDINADOS DE \_ ALISTMENT**
 </dt> <dd> <dl> <dt>
 
 0x00008
@@ -77,7 +77,7 @@ El autor de la llamada puede completar las acciones que realiza un administrador
 
 </dt> </dl> </dd> <dt>
 
-<span id="ENLISTMENT_SUPERIOR_RIGHTS"></span><span id="enlistment_superior_rights"></span>**\_derechos superiores de inscripción \_**
+<span id="ENLISTMENT_SUPERIOR_RIGHTS"></span><span id="enlistment_superior_rights"></span>**DERECHOS SUPERIORES \_ DE \_ ALISTMENT**
 </dt> <dd> <dl> <dt>
 
 0x00010
@@ -85,12 +85,12 @@ El autor de la llamada puede completar las acciones que realiza un administrador
 
 
 
-El autor de la llamada puede darse de alta en la transacción como un administrador de transacciones superior.
+El autor de la llamada puede alistarse en la transacción como administrador de transacciones superior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ENLISTMENT_GENERIC_READ"></span><span id="enlistment_generic_read"></span>**\_lectura genérica de inscripción \_**
+<span id="ENLISTMENT_GENERIC_READ"></span><span id="enlistment_generic_read"></span>**ENLISTMENT \_ GENERIC \_ READ**
 </dt> <dd> <dl> <dt>
 
 0x20001
@@ -98,12 +98,12 @@ El autor de la llamada puede darse de alta en la transacción como un administra
 
 
 
-El autor de la llamada tiene los privilegios siguientes: **\_ \_ información** de la consulta de inscripción y de **\_ \_ lectura de derechos estándar** .
+El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_ READ** y **ENLISTMENT \_ QUERY \_ INFORMATION**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ENLISTMENT_GENERIC_WRITE"></span><span id="enlistment_generic_write"></span>**\_escritura genérica de inscripción \_**
+<span id="ENLISTMENT_GENERIC_WRITE"></span><span id="enlistment_generic_write"></span>**REGISTRO DE ESCRITURA \_ \_ GENÉRICA**
 </dt> <dd> <dl> <dt>
 
 0x2001E
@@ -111,12 +111,12 @@ El autor de la llamada tiene los privilegios siguientes: **\_ \_ información** 
 
 
 
-El autor de la llamada tiene los siguientes privilegios: **\_ \_ escritura de derechos estándar**, **información de \_ conjunto \_ de inscripción** y **\_ recuperación de inscripción**.
+El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_ WRITE**, **ENLISTMENT \_ SET \_ INFORMATION** y **ENLISTMENT \_ RECOVER**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ENLISTMENT_GENERIC_EXECUTE"></span><span id="enlistment_generic_execute"></span>**\_ejecución genérica de inscripción \_**
+<span id="ENLISTMENT_GENERIC_EXECUTE"></span><span id="enlistment_generic_execute"></span>**ENLISTMENT \_ GENERIC \_ EXECUTE**
 </dt> <dd> <dl> <dt>
 
 0x2001C
@@ -124,12 +124,12 @@ El autor de la llamada tiene los siguientes privilegios: **\_ \_ escritura de de
 
 
 
-El autor de la llamada tiene los siguientes privilegios: **derechos estándar de \_ \_ ejecución**, **\_ recuperación de alta** y **inscripción \_ subordinada \_**.
+El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_ EXECUTE**, **ENLISTMENT \_ RECOVER** y **ENLISTMENT \_ SUBORDINATE \_ RIGHTS**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ENLISTMENT_ALL_ACCESS"></span><span id="enlistment_all_access"></span>**DAR de alta \_ todo el \_ acceso**
+<span id="ENLISTMENT_ALL_ACCESS"></span><span id="enlistment_all_access"></span>**ALISTMENT \_ ALL \_ ACCESS**
 </dt> <dd> <dl> <dt>
 
 0xF001F
@@ -137,7 +137,7 @@ El autor de la llamada tiene los siguientes privilegios: **derechos estándar de
 
 
 
-Este valor establece todos los bits válidos para un valor de acceso de inscripción.
+Este valor establece todos los bits válidos para un valor de acceso de alta.
 
 
 </dt> </dl> </dd> </dl>
@@ -150,7 +150,7 @@ Este valor establece todos los bits válidos para un valor de acceso de inscripc
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winnt. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>WinNT.h</dt> </dl> |
 
 
 

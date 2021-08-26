@@ -1,17 +1,17 @@
 ---
 description: Si esta propiedad es true, el dispositivo está conectado a una red.
 ms.assetid: 4d0aa672-1ff8-4fb1-82d2-76553c2b0209
-title: System. Devices. IsNetworkConnected
+title: System.Devices.IsNetworkConnected
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c016b97dc3e966407582e0447ddeae1c4ffb86d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bde5dfb7738c46cf8797286ef5894b6e993c6aed9a43b0d6dea67fa15fdf7302
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885555"
 ---
-# <a name="systemdevicesisnetworkconnected"></a>System. Devices. IsNetworkConnected
+# <a name="systemdevicesisnetworkconnected"></a>System.Devices.IsNetworkConnected
 
 Si esta propiedad es true, el dispositivo está conectado a una red.
 
@@ -43,7 +43,7 @@ propertyDescription
             defineToken = ISNETWORKDEVICE_NOTNETWORKDEVICE
 ```
 
-## <a name="windows-7"></a>Windows 7
+## <a name="windows-7"></a>Windows 7
 
 ```
 propertyDescription
@@ -71,9 +71,9 @@ propertyDescription
             defineToken = ISNETWORKDEVICE_NOTNETWORKDEVICE
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -88,7 +88,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -100,7 +100,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -118,7 +118,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

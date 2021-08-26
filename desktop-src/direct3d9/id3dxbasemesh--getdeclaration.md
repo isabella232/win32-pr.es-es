@@ -1,7 +1,7 @@
 ---
 description: Recupera una declaración que describe los vértices de la malla.
 ms.assetid: e9028282-acf1-4ca4-8af0-7fb655dcb5d1
-title: 'ID3DXBaseMesh:: GetDeclaration (método) (D3DX9Mesh. h)'
+title: Método ID3DXBaseMesh::GetDeclaration (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 34f8736e822bfe4a959f35f60bb79783e79f2d52
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4d66afd8daf6a8cc60fa63dcf38e6bb853c33ca05986d2a37b94eba1250eb01b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026475"
 ---
-# <a name="id3dxbasemeshgetdeclaration-method"></a>ID3DXBaseMesh:: GetDeclaration (método)
+# <a name="id3dxbasemeshgetdeclaration-method"></a>Método ID3DXBaseMesh::GetDeclaration
 
 Recupera una declaración que describe los vértices de la malla.
 
@@ -40,12 +40,12 @@ HRESULT GetDeclaration(
 
 <dl> <dt>
 
-*Declaración* \[ de in, out\]
+*Declaración* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DVERTEXELEMENT9**](d3dvertexelement9.md)**
 
-Matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) que describe el formato de vértice de los vértices de malla. El límite superior de esta matriz de declarador es el [**tamaño máximo de \_ FVF \_ decl \_**](./max-fvf-decl-size.md). La matriz de elementos de vértice finaliza con la macro [**D3DDECL \_ End**](d3ddecl-end.md) .
+Matriz [**de elementos D3DVERTEXELEMENT9**](d3dvertexelement9.md) que describen el formato de vértice de los vértices de malla. El límite superior de esta matriz declarativa es [**MAX \_ FVF \_ DECL \_ SIZE.**](./max-fvf-decl-size.md) La matriz de elementos de vértice termina con la macro [**END D3DDECL. \_**](d3ddecl-end.md)
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) que describe e
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La matriz de elementos incluye la macro [**D3DDECL \_ End**](d3ddecl-end.md) , que finaliza la declaración.
+La matriz de elementos incluye la macro [**\_ END D3DDECL,**](d3ddecl-end.md) que finaliza la declaración.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ La matriz de elementos incluye la macro [**D3DDECL \_ End**](d3ddecl-end.md) , q
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -4,16 +4,16 @@ ms.assetid: 55b4545c-c9ab-49c6-b22f-6cd93b5fb8c1
 title: Propiedad RestrictedUserControl
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f616dcf9e8eaad4df9c238162257f149ee7634a3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 29158c485592a35d2dcc441fd048ee4ef8f321e57bdc6b8c524846bdb87a62e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979285"
 ---
 # <a name="restrictedusercontrol-property"></a>Propiedad RestrictedUserControl
 
-La propiedad **RestrictedUserControl** debe establecerse en 1 si se restringen las [propiedades públicas](public-properties.md) que se pueden enviar al lado del servidor. Los autores pueden utilizar esta propiedad en la instrucción condicional para que la ejecución de diálogos o acciones dependa de si hay restricciones en las propiedades públicas.
+La **propiedad RestrictedUserControl** debe establecerse en [](public-properties.md) 1 si se restringen las propiedades públicas que se pueden enviar al lado del servidor. Los autores pueden usar esta propiedad en una instrucción condicional para que la ejecución de diálogos o acciones dependa de si hay restricciones en las propiedades públicas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ La propiedad **RestrictedUserControl** debe establecerse en 1 si se restringen l
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
 
 
 

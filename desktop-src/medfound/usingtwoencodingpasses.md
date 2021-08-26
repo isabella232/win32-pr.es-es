@@ -1,23 +1,23 @@
 ---
-description: La codificación de dos pasos se puede usar para la velocidad de bits constante (CBR) y para la codificación de velocidad de bits variable (VBR) con algunos de los códecs de Windows Media.
+description: La codificación de dos pases se puede usar para la velocidad de bits constante (CBR) y para la codificación de velocidad de bits variable (VBR) con algunos de los códecs Windows media.
 ms.assetid: eec5085c-9441-496a-8127-cf5d2686d917
-title: Uso de la codificación de Two-Pass (Microsoft Media Foundation)
+title: Usar Two-Pass codificación (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 993af0015452db410b5a9f2c13233566fc17a3a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58a79678e3b4396dfe87b93dfda7c9fd26487b8fdba83d2214509675ee742951
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887115"
 ---
-# <a name="using-two-pass-encoding-microsoft-media-foundation"></a>Uso de la codificación de Two-Pass (Microsoft Media Foundation)
+# <a name="using-two-pass-encoding-microsoft-media-foundation"></a>Usar Two-Pass codificación (Microsoft Media Foundation)
 
-La codificación de dos pasos se puede usar para la velocidad de bits constante (CBR) y para la codificación de velocidad de bits variable (VBR) con algunos de los códecs de Windows Media. Puede encontrar el número máximo de pasos de codificación admitidos por un códec mediante la recuperación de la propiedad [MFPKEY \_ PASSESRECOMMENDED](mfpkey-passesrecommendedproperty.md) . Ninguno de los códecs admite más de dos pasos. Configure el DMO para que use dos pasos mediante el establecimiento de la propiedad [MFPKEY \_ PASSESUSED](mfpkey-passesusedproperty.md) en 2.
+La codificación de dos pases se puede usar para la velocidad de bits constante (CBR) y para la codificación de velocidad de bits variable (VBR) con algunos de los códecs Windows media. Puede encontrar el número máximo de pases de codificación admitidos por un códec mediante la recuperación de la propiedad [ \_ MFPKEY PASSESRECOMMENDED.](mfpkey-passesrecommendedproperty.md) Ninguno de los códecs admite más de dos pases. Configure el DMO para usar dos pases estableciendo la propiedad [ \_ MFPKEY PASSESUSED](mfpkey-passesusedproperty.md) en 2.
 
-Entregue los ejemplos al codificador DMO de uno en uno, como lo haría en un modo de un solo paso. Al procesar los ejemplos de entrada para el paso de preprocesamiento, las llamadas a [**IMediaObject::P rocessinput**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-processinput) o [**IMFTransform::P rocessinput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) devolverán **S \_ false** para indicar que no se produce ninguna salida.
+Entregue los ejemplos al codificador DMO de uno en uno, como lo haría en un modo de paso único. Al procesar los ejemplos de entrada para el paso de preprocesamiento, las llamadas a [**IMediaObject::P rocessInput**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-processinput) o [**IMFTransform::P processInput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) **devolverán S \_ FALSE**, para indicar que no se genera ninguna salida.
 
-Al final del primer paso (después de procesar la última entrada por primera vez), debe establecer la propiedad [MFPKEY \_ ENDOFPASS](mfpkey-endofpassproperty.md) para notificar al códec que la siguiente entrada procesada es la primera entrada del segundo paso. No se requiere ningún valor para esta propiedad, por lo que debe usar una estructura de **variante** vacía.
+Al final del primer paso (después de que la última entrada se procese por primera vez), debe establecer la propiedad [ \_ MFPKEY ENDOFPASS](mfpkey-endofpassproperty.md) para notificar al códec que la siguiente entrada procesada es la primera entrada del segundo paso. No se requiere ningún valor para esta propiedad, por lo que debe usar una estructura **VARIANT** vacía.
 
 ## <a name="related-topics"></a>Temas relacionados
 

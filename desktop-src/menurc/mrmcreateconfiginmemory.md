@@ -1,6 +1,6 @@
 ---
-title: Función MrmCreateConfigInMemory (MrmResourceIndexer. h)
-description: Crea una nueva información de configuración de PRI inicializada (como datos en memoria, no como un archivo) que define los valores predeterminados del calificador que especifique.
+title: Función MrmCreateConfigInMemory (MrmResourceIndexer.h)
+description: Crea nueva información de configuración de PRI inicializada (como datos en memoria, no como un archivo) que define los valores predeterminados del calificador que especifique.
 ms.assetid: D8822D6E-5F68-46A1-B99F-52575DB1D277
 keywords:
 - Menús de la función MrmCreateConfigInMemory y otros recursos
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d809ac640061ecf8bd51b9e2016aefe537b1ee8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b30b4a64313952d48662a82e2f62cdef25106136e7757220668fc094c9258d4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011795"
 ---
-# <a name="mrmcreateconfiginmemory-function"></a>MrmCreateConfigInMemory función)
+# <a name="mrmcreateconfiginmemory-function"></a>Función MrmCreateConfigInMemory
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Crea una nueva información de configuración de PRI inicializada (como datos en memoria, no como un archivo) que define los valores predeterminados del calificador que especifique. La función asigna memoria y devuelve un puntero a esa memoria en *outputXmlData*. Llame a [**MrmFreeMemory**](mrmfreememory.md) con el mismo puntero para liberar esa memoria. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea [API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Crea nueva información de configuración de PRI inicializada (como datos en memoria, no como un archivo) que define los valores predeterminados del calificador que especifique. La función asigna memoria y devuelve un puntero a esa memoria en *outputXmlData.* Llame [**a MrmFreeMemory con**](mrmfreememory.md) el mismo puntero para liberar esa memoria. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de paquetes (PRI) y sistemas [de compilación personalizados.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,12 +45,12 @@ HRESULT HRESULT MrmCreateConfigInMemory(
 
 <dl> <dt>
 
-*platformVersion* \[ de\]
+*platformVersion* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **MrmPlatformVersion**](mrmplatformversion.md)**
 
-Versión de la plataforma (*targetOsVersion*) que se va a usar para la información de configuración generada.
+La versión de la plataforma *(targetOsVersion)* que se usará para la información de configuración generada.
 
 </dd> <dt>
 
@@ -59,25 +59,25 @@ Versión de la plataforma (*targetOsVersion*) que se va a usar para la informaci
 
 Tipo: **PCWSTR**
 
-Una lista de calificadores de recursos predeterminados. Por ejemplo, L "Language-en-US \_ Scale-100 \_ Contrast-Standard"
+Lista de calificadores de recursos predeterminados. Por ejemplo, L"language-en-US \_ scale-100 \_ contrast-standard"
 
 </dd> <dt>
 
-*outputXmlData* \[ enuncia\]
+*outputXmlData* \[ out\]
 </dt> <dd>
 
-Tipo: **byte \* \***
+Tipo: **\* \* BYTE**
 
-Dirección de un puntero a BYTE. La función asigna memoria y devuelve un puntero a esa memoria en *outputXmlData*. Llame a [**MrmFreeMemory**](mrmfreememory.md) con el puntero en byte para liberar esa memoria.
+Dirección de un puntero a BYTE. La función asigna memoria y devuelve un puntero a esa memoria en *outputXmlData.* Llame [**a MrmFreeMemory con**](mrmfreememory.md) el puntero a BYTE para liberar esa memoria.
 
 </dd> <dt>
 
-*outputXmlSize* \[ enuncia\]
+*outputXmlSize* \[ out\]
 </dt> <dd>
 
-Tipo: **ULong \** _
+Tipo: **ULONG \***
 
-Dirección de un ULONG. En _outputXmlSize *, la función devuelve el tamaño de la memoria asignada a la que apunta *outputXmlData*.
+Dirección de un ULONG. En *outputXmlSize*, la función devuelve el tamaño de la memoria asignada a la que *apunta outputXmlData*.
 
 </dd> </dl>
 
@@ -85,7 +85,7 @@ Dirección de un ULONG. En _outputXmlSize *, la función devuelve el tamaño de 
 
 Tipo: **HRESULT**
 
-Es \_ correcto si la función se realizó correctamente; de lo contrario, es algún otro valor. Use las macros SUCCEEDED () o FAILed () (definidas en Winerror. h) para determinar si la operación se ha realizado correctamente o no.
+S \_ Ok si la función se ha hecho correctamente; de lo contrario, algún otro valor. Use las macros SUCCEEDED() o FAILED() (definidas en winerror.h) para determinar el éxito o el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,10 +93,10 @@ Es \_ correcto si la función se realizó correctamente; de lo contrario, es alg
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de servidor\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 
