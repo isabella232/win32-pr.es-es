@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 377c86045b2abca9c009a00e47eaf34ae87af216
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df97113629ddfabdef9d8f50038d62413ba0cf4a3683c8ab839600e00bee660a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904555"
 ---
 # <a name="processingerrordata-eventtype-element"></a>Elemento ProcessingErrorData (EventType)
 
@@ -30,7 +30,7 @@ Contiene detalles del error que se produjo al intentar representar el evento.
  />
 ```
 
-El elemento **ProcessingErrorData** se define mediante el tipo complejo de [**EventType**](eventschema-eventtype-complextype.md) .
+El **elemento ProcessingErrorData** se define mediante el [**tipo complejo EventType.**](eventschema-eventtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **ProcessingErrorData** se define mediante el tipo complejo de [**Ev
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

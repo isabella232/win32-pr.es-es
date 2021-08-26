@@ -1,11 +1,11 @@
 ---
-title: IDWriteInlineObject GetOverhangMetrics, método
-description: IDWriteTextLayout llama a esta función de devolución de llamada para obtener las extensiones visibles (en DIP) del objeto insertado. En el caso de un mapa de bits simple, sin relleno y sin voladizo, todos los sobrebloqueos serán simplemente ceros.
+title: Método IDWriteInlineObject GetOvermetrics
+description: IDWriteTextLayout llama a esta función de devolución de llamada para obtener las extensiones visibles (en DIP) del objeto en línea. En el caso de un mapa de bits simple, sin relleno y sin sobresalga, todos los sobresalciones serán simplemente ceros.
 ms.assetid: b3b3e9f0-ee35-4117-9a62-a975c03b5ca9
 keywords:
-- Método GetOverhangMetrics de escritura directa
-- Método GetOverhangMetrics de escritura directa, interfaz IDWriteInlineObject
-- Interfaz IDWriteInlineObject Direct Write, método GetOverhangMetrics
+- Escritura directa del método GetOvermetrics
+- Método GetOvermetrics direct write , interfaz IDWriteInlineObject
+- IdWriteInlineObject interface Direct Write , GetOvermetrics method
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a0960f28394c5b55c3377136451a5c13748edc1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 011794fc3804435dd565a00035247436814c41474c60b66f90c5cb5d9594f6c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928155"
 ---
-# <a name="idwriteinlineobjectgetoverhangmetrics-method"></a>IDWriteInlineObject:: GetOverhangMetrics (método)
+# <a name="idwriteinlineobjectgetoverhangmetrics-method"></a>Método IDWriteInlineObject::GetOvermetrics
 
-[**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) llama a esta función de devolución de llamada para obtener las extensiones visibles (en DIP) del objeto insertado. En el caso de un mapa de bits simple, sin relleno y sin voladizo, todos los sobrebloqueos serán simplemente ceros.
+[**IDWriteTextLayout llama**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) a esta función de devolución de llamada para obtener las extensiones visibles (en DIP) del objeto en línea. En el caso de un mapa de bits simple, sin relleno y sin sobresalga, todos los sobresalciones serán simplemente ceros.
 
-Los sobrebloqueos deben devolverse en relación con el tamaño del objeto indicado (vea [**DWRITE \_ en \_ línea \_ métricas de objeto**](/windows/win32/api/dwrite/ns-dwrite-dwrite_inline_object_metrics)) y no deben ajustarse a la línea base.
+Los sobresalciones deben devolverse en relación con el tamaño notificado del objeto (vea [**DWRITE \_ INLINE \_ OBJECT \_ METRICS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_inline_object_metrics)) y no se deben ajustar en línea de base.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,12 +44,12 @@ virtual HRESULT GetOverhangMetrics(
 
 <dl> <dt>
 
-*sobrebloqueos* \[ enuncia\]
+*sobresalciones* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ métricas salientes de DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_overhang_metrics)\***
+Tipo: **[ **DWRITE \_ OVER METRICS \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_overhang_metrics)\***
 
-Exceso de extensiones visibles (en DIP) fuera del objeto.
+Sobreshoot de extensiones visibles (en DIP) fuera del objeto .
 
 </dd> </dl>
 
@@ -57,15 +57,15 @@ Exceso de extensiones visibles (en DIP) fuera del objeto.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Dwrite. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

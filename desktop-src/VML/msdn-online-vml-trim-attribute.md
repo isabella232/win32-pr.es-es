@@ -1,26 +1,26 @@
 ---
-title: Atributo Trim de VML
-description: Atributo Trim de VML
+title: Atributo de recorte de VML
+description: Atributo de recorte de VML
 ms.assetid: c8038361-00bd-4787-9759-506a8a47b19a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25f7aa2ce17d5b2b8df772954cee323e3d5ea2db
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a05f7463465c10abb4f4f01267a7ebeac878cbf36c41f1effde6ec218bad1088
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974620"
 ---
-# <a name="vml-trim-attribute"></a>Atributo Trim de VML
+# <a name="vml-trim-attribute"></a>Atributo de recorte de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina si el espacio adicional se quita por encima y por debajo del texto. Lectura/escritura **VgTriState**.
+Determina si se quita espacio adicional encima y debajo del texto. Lectura/escritura **DvTriState**.
 
 **Se aplica a**
 
@@ -28,23 +28,23 @@ Determina si el espacio adicional se quita por encima y por debajo del texto. Le
 
 **Sintaxis de etiquetas**
 
-<v: *Element* style = "Trim: *Expression* " >
+<v: *element* style="trim: *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Style. Trim = "*expresión*"
+*element* .style.trim="*expression*"
 
-*expresión* = de *Element*. Style. Trim
+*expresión* = *elemento*.style.trim
 
 **Comentarios:**
 
-Si es **true**, se quita el espacio reservado para ascendentes y descendentes. El valor predeterminado es **False**.
+Si **es True,** se quita el espacio reservado para ascendentes y descendientes. El valor predeterminado es **False**.
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-Se recorta el espacio adicional por encima y debajo de.
+Se recorta el espacio adicional por encima y por debajo.
 
 
 ```HTML
@@ -58,6 +58,6 @@ Se recorta el espacio adicional por encima y debajo de.
 
 
 
- 
+ 
 
- 
+ 

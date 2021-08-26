@@ -1,7 +1,7 @@
 ---
-description: Número de clavijas en el filtro.
+description: Número de pines en el filtro.
 ms.assetid: dcd3a240-beff-4481-8768-a0c0f69f0bfd
-title: 'Miembro CSource:: m_iPins (Source. h)'
+title: CSource::m_iPins miembro (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ce95af44b639b02095b6bae120bb23fd8a7d6bf9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c6a876637b3c4351d6f4ffa70c84b7d7f22f2c0b1c9f7587eee591bc9a458d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871394"
 ---
-# <a name="csourcem_ipins-member"></a>Miembro iPins CSource:: m \_
+# <a name="csourcem_ipins-member"></a>Miembro IPins de CSource::m \_
 
-Número de clavijas en el filtro.
+Número de pines en el filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ int m_iPins;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ int m_iPins;
 
 <dl> <dt>
 
-[**Clase CSource**](csource.md)
+[**CSource (clase)**](csource.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Quita los segmentos multimedia definidos por el intervalo de tiempo especificado de IMFSourceBuffer.
 ms.assetid: 86536d73-18c0-4acc-81ec-72f1dfe400c5
-title: 'IMFSourceBuffer:: Remove (método)'
+title: MÉTODO IMFSourceBuffer::Remove
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: d82660d08efe651b321672b6ccd0cb475875beee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af9aed011a1a4b53733d70646fc14b21e7c97f9d193a60e679f5f5f532679e2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941915"
 ---
-# <a name="imfsourcebufferremove-method"></a>IMFSourceBuffer:: Remove (método)
+# <a name="imfsourcebufferremove-method"></a>MÉTODO IMFSourceBuffer::Remove
 
-Quita los segmentos multimedia definidos por el intervalo de tiempo especificado de [**IMFSourceBuffer**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer).
+Quita los segmentos de medios definidos por el intervalo de tiempo especificado del [**elemento IMFSourceBuffer.**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,14 +40,14 @@ HRESULT Remove(
 
 <dl> <dt>
 
-*iniciar* \[ de\]
+*start* \[ En\]
 </dt> <dd>
 
 Inicio del intervalo de tiempo.
 
 </dd> <dt>
 
-*fin* \[ de de\]
+*end* \[ En\]
 </dt> <dd>
 
 Final del intervalo de tiempo.
@@ -56,7 +56,7 @@ Final del intervalo de tiempo.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

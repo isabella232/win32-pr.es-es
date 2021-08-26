@@ -1,19 +1,19 @@
 ---
-description: Especifica un archivo XSD que se va a procesar para obtener información del contrato.
+description: Especifica un archivo XSD para procesar la información del contrato.
 ms.assetid: 6fe40e77-d23f-4ae9-a4d6-1f567a0fffe7
 title: elemento xsd
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 851ce31230ff88ea2465040c33dc131e0902392c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 3f790375c34a4d5afc3dc345691c8e26e5f95cebe0bbde283e2986e838cce554
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995095"
 ---
 # <a name="xsd-element"></a>elemento xsd
 
-Especifica un archivo XSD que se va a procesar para obtener información del contrato.
+Especifica un archivo XSD para procesar la información del contrato.
 
 ## <a name="usage"></a>Uso
 
@@ -28,9 +28,9 @@ Especifica un archivo XSD que se va a procesar para obtener información del con
 
 
 
-| Atributo           | Tipo                       | Obligatorio       | Descripción                                                 |
+| Atributo           | Tipo                       | Requerido       | Descripción                                                 |
 |---------------------|----------------------------|----------------|-------------------------------------------------------------|
-| **path**<br/> | pathname string<br/> | Sí<br/> | Archivo y ruta de acceso del archivo de entrada XSD.<br/> <br/> |
+| **path**<br/> | cadena pathname<br/> | Sí<br/> | Archivo y ruta de acceso del archivo de entrada XSD.<br/> <br/> |
 
 
 

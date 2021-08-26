@@ -1,27 +1,27 @@
 ---
 title: Un puerto de ejemplo de una lista de visualización
-description: En este tema se proporciona un ejemplo de GL de IRIS de código que define tres listas de presentación. una de las listas de visualización hace referencia a las demás en su definición. A continuación, se muestra un ejemplo de la apariencia del código cuando se traslada a OpenGL.
+description: En este tema se proporciona un ejemplo de código de IRIS GL que define tres listas de visualización; una de las listas de visualización hace referencia a las demás en su definición. Después del ejemplo de IRIS GL se muestra el aspecto del código cuando se porte a OpenGL.
 ms.assetid: 03283b00-fb5b-4e89-9384-171b38f141ee
 keywords:
-- Migración de la contabilidad de IRIS, mostrar listas
-- trasladar de IRIS GL, mostrar listas
-- trasladar a OpenGL desde IRIS GL, mostrar listas
-- Exportación de OpenGL desde IRIS GL, mostrar listas
-- Mostrar listas, trasladar de IRIS GL
+- Porte de IRIS GL, listas de visualización
+- porting from IRIS GL,display lists
+- porte a OpenGL desde IRIS GL, mostrar listas
+- Porte de OpenGL desde IRIS GL, mostrar listas
+- mostrar listas, porte desde IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77a856350a0a248bf7dcac51c36b9d35cf114956
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5fbb696673da7f4dc83abd625bb616b67449de64a40df1cfc99bd429a2a980e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962435"
 ---
 # <a name="a-sample-port-of-a-display-list"></a>Un puerto de ejemplo de una lista de visualización
 
-En este tema se proporciona un ejemplo de GL de IRIS de código que define tres listas de presentación. una de las listas de visualización hace referencia a las demás en su definición. A continuación, se muestra un ejemplo de la apariencia del código cuando se traslada a OpenGL.
+En este tema se proporciona un ejemplo de código de IRIS GL que define tres listas de visualización; una de las listas de visualización hace referencia a las demás en su definición. Después del ejemplo de IRIS GL se muestra el aspecto del código cuando se porte a OpenGL.
 
-## <a name="iris-gl-sample-display-list-code"></a>Ejemplo de código de lista de visualización de la contabilidad de IRIS
+## <a name="iris-gl-sample-display-list-code"></a>Código de lista de visualización de ejemplo de IRIS GL
 
 
 ```C++
@@ -49,9 +49,9 @@ call(30);
 
 
 
-## <a name="opengl-sample-display-list-code"></a>Ejemplo de código de lista de visualización de OpenGL
+## <a name="opengl-sample-display-list-code"></a>Código de lista de visualización de ejemplo de OpenGL
 
-Este es el código de contabilidad del IRIS anterior que se traduce a OpenGL:
+Este es el código GL de IRIS anterior traducido a OpenGL:
 
 
 ```C++
@@ -92,9 +92,9 @@ glCallList(30);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

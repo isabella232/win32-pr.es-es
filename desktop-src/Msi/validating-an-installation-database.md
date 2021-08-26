@@ -1,37 +1,37 @@
 ---
-description: Los autores de los paquetes de instalación siempre deben ejecutar la validación en sus paquetes antes de intentar instalar el paquete por primera vez y volver a ejecutar la validación cada vez que realice cambios en el paquete.
+description: Los autores de paquetes de instalación siempre deben ejecutar la validación en sus paquetes antes de intentar instalar el paquete por primera vez y volver a ejecutar la validación cada vez que realicen cambios en el paquete.
 ms.assetid: 1f16a349-4919-46d2-9b78-2533b8679a73
 title: Validar una base de datos de instalación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6db262a280afa1d9222696d40a6f5949d69ece0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d28d4d1937b5946d6c1df85a4c6c21ec8113ef6463b5aaad0e181f4bdc711e70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995825"
 ---
 # <a name="validating-an-installation-database"></a>Validar una base de datos de instalación
 
-Los autores de los paquetes de instalación siempre deben ejecutar la validación en sus paquetes antes de intentar instalar el paquete por primera vez y volver a ejecutar la validación cada vez que realice cambios en el paquete. La validación examina la base de datos en busca de errores que pueden parecer válidos de forma individual, pero que causan un comportamiento incorrecto en el contexto de toda la base de datos. Si intenta instalar un paquete que no supera la validación, puede dañar el sistema del usuario. Vea las secciones [validación de paquetes](package-validation.md) y [evaluadores de coherencia interna-CIEM](internal-consistency-evaluators-ices.md).
+Los autores de paquetes de instalación siempre deben ejecutar la validación en sus paquetes antes de intentar instalar el paquete por primera vez y volver a ejecutar la validación cada vez que realicen cambios en el paquete. La validación examina la base de datos en busca de errores que pueden parecer válidos individualmente, pero que provocan un comportamiento incorrecto en el contexto de toda la base de datos. Si se intenta instalar un paquete que produce un error en la validación, se puede dañar el sistema del usuario. Consulte las secciones Validación de [paquetes](package-validation.md) y Evaluadores de coherencia [interna : ICEs](internal-consistency-evaluators-ices.md).
 
-Puede validar el paquete de ejemplo mediante [Orca.exe](orca-exe.md) o [Msival2.exe](msival2-exe.md). Para ver la ayuda de Msival2.exe cambie los directorios y escriba en la línea de comandos.
+Puede validar el paquete de ejemplo mediante [Orca.exe](orca-exe.md) o [Msival2.exe](msival2-exe.md). Para ver la ayuda para cambiar Msival2.exe directorios y escriba en la línea de comandos.
 
 Msival2 -?
 
-El archivo. Cub Darice. Cub contiene las acciones personalizadas de ICE que necesita Msival2.exe para realizar la validación. Para validar el MNP2000.msi escriba
+El archivo .rev darice.rev contiene las acciones personalizadas de ICE que necesita Msival2.exe para realizar la validación. Para validar el MNP2000.msi entrar
 
-msival2 MNP2000.msi Darice. Cub
+msival2 MNP2000.msi Darice.rev
 
-Para obtener una descripción de los mensajes de error y de advertencia devueltos por la validación, consulte la [referencia de ICE](ice-reference.md). Corrija todos los errores del paquete y vuelva a ejecutar la validación según sea necesario hasta que el paquete pase la validación sin errores.
+Para obtener una descripción de los mensajes de error y advertencia devueltos por la validación, vea la [referencia de ICE](ice-reference.md). Corrija todos los errores del paquete y vuelva a ejecutar la validación según sea necesario hasta que el paquete pase la validación sin errores.
 
-Una vez que el paquete pasa la validación, puede instalar el paquete de ejemplo haciendo clic en el icono de MNP2000.msi o desde la línea de comandos con las opciones de la [línea de comandos](command-line-options.md).
+Una vez que el paquete pasa la validación, puede instalar el paquete de ejemplo haciendo clic en el icono de MNP2000.msi o desde la línea de comandos mediante las opciones de [la línea de comandos](command-line-options.md).
 
 Esto completa la instalación de ejemplo.
 
 ## <a name="next-example"></a>Ejemplo siguiente
 
-[Un ejemplo de actualización](an-upgrade-example.md)
+[Ejemplo de actualización](an-upgrade-example.md)
 
  
 

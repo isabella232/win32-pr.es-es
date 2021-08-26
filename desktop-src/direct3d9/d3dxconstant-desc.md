@@ -1,7 +1,7 @@
 ---
-description: Descripción de una constante en una tabla de constantes.
+description: Descripción de una constante en una tabla constante.
 ms.assetid: d1970536-7195-4270-a1b9-b082ebe4f17f
-title: D3DXCONSTANT_DESC estructura (D3dx9shader. h)
+title: D3DXCONSTANT_DESC estructura (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: d737fa1d95a119668602aeb056e15bc4248200aa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bdb3b8276711f3165c0c138155eb6e628c19a124d6f9301de7638e5be24d1c1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952455"
 ---
 # <a name="d3dxconstant_desc-structure"></a>D3DXCONSTANT \_ DESC (estructura)
 
-Descripción de una constante en una tabla de constantes.
+Descripción de una constante en una tabla constante.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,18 +64,18 @@ Nombre de la constante.
 **RegisterSet**
 </dt> <dd>
 
-Tipo: **[ **D3DXREGISTER \_ set**](./d3dxregister-set.md)**
+Tipo: **[ **D3DXREGISTER \_ SET**](./d3dxregister-set.md)**
 
 </dd> <dd>
 
-Tipo de datos constante. Vea [**D3DXREGISTER \_ set**](./d3dxregister-set.md).
+Tipo de datos constante. Vea [**D3DXREGISTER \_ SET**](./d3dxregister-set.md).
 
 </dd> <dt>
 
 **RegisterIndex**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -86,7 +86,7 @@ Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 **RegisterCount**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -97,29 +97,29 @@ Número de registros que contienen datos.
 **Clase**
 </dt> <dd>
 
-Type: **[ **\_ clase D3DXPARAMETER**](./d3dxparameter-class.md)**
+Tipo: **[ **D3DXPARAMETER \_ (CLASE)**](./d3dxparameter-class.md)**
 
 </dd> <dd>
 
-Clase de parámetro. Vea [**\_ clase D3DXPARAMETER**](./d3dxparameter-class.md).
+Clase de parámetro. Vea [**D3DXPARAMETER \_ (CLASE).**](./d3dxparameter-class.md)
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd>
 
-Tipo: **[ **D3DXPARAMETER \_ Type**](./d3dxparameter-type.md)**
+Tipo: **[ **D3DXPARAMETER \_ TYPE**](./d3dxparameter-type.md)**
 
 </dd> <dd>
 
-Tipo de parámetro. Consulte [**\_ tipo de D3DXPARAMETER**](./d3dxparameter-type.md).
+Tipo de parámetro. Vea [**D3DXPARAMETER \_ TYPE**](./d3dxparameter-type.md).
 
 </dd> <dt>
 
 **Filas**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -130,7 +130,7 @@ Número de filas.
 **Columnas**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -141,7 +141,7 @@ Número de columnas.
 **Elementos**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -152,26 +152,26 @@ Número de elementos de la matriz.
 **StructMembers**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de subparámetros de miembro de estructura.
+Número de subámetros de miembro de estructura.
 
 </dd> <dt>
 
 **Bytes**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tamaño de los datos en número de bytes.
+Tamaño de datos en número de bytes.
 
 </dd> <dt>
 
-**DefaultValue**
+**Defaultvalue**
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
@@ -188,7 +188,7 @@ Puntero al valor predeterminado.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 
@@ -196,7 +196,7 @@ Puntero al valor predeterminado.
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> <dt>
 
 [**D3DXCONSTANTTABLE \_ DESC**](d3dxconstanttable-desc.md)

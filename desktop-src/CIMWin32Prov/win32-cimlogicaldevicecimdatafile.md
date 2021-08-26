@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI CIMLogicalDeviceCIMDataFile Association de Win32 relaciona los dispositivos lógicos y los archivos de datos, que indican los archivos de controlador utilizados por el dispositivo. Esta clase se usa para detectar los controladores de dispositivo que usa un dispositivo.
+description: La clase WMI de asociación CIMLogicalDeviceCIMDataFile de Win32 relaciona los dispositivos lógicos y los archivos de datos, lo que indica los archivos de controlador utilizados \_ por el dispositivo. Esta clase se usa para detectar qué controladores de dispositivo usa un dispositivo.
 ms.assetid: 892272de-920d-4fa0-adbc-f584ed6e8748
 ms.tgt_platform: multiple
-title: Win32_CIMLogicalDeviceCIMDataFile (clase)
+title: Win32_CIMLogicalDeviceCIMDataFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 15db6209360cbd150a722dc98b6255afd696cbe9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8124031c07091399241ce355eef0a499235892bff3875e4248641f0454671540
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917985"
 ---
-# <a name="win32_cimlogicaldevicecimdatafile-class"></a>\_Clase Win32 CIMLogicalDeviceCIMDataFile
+# <a name="win32_cimlogicaldevicecimdatafile-class"></a>Clase \_ CIMLogicalDeviceCIMDataFile de Win32
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ CIMLogicalDeviceCIMDataFile** Association de Win32 relaciona los dispositivos lógicos y los archivos de datos, que indican los archivos de controlador utilizados por el dispositivo. Esta clase se usa para detectar los controladores de dispositivo que usa un dispositivo.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) de asociación **\_ CIMLogicalDeviceCIMDataFile de Win32** relaciona los dispositivos lógicos y los archivos de datos, lo que indica los archivos de controlador utilizados por el dispositivo. Esta clase se usa para detectar qué controladores de dispositivo usa un dispositivo.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -59,39 +59,39 @@ La **clase \_ CIMLogicalDeviceCIMDataFile de Win32** tiene estas propiedades.
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ LogicalDevice de CIM**
+Tipo de datos: **\_ Cim LogicalDevice**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| lógico CIM CIM \_ ")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \| \_ LogicalDevice")
 </dt> </dl>
 
-Un [**\_ LogicalDevice de CIM**](cim-logicaldevice.md) que representa las propiedades del dispositivo lógico utilizado por el archivo de datos.
+Un [**\_ dispositivo lógico CIM**](cim-logicaldevice.md) que representa las propiedades del dispositivo lógico que usa el archivo de datos.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ archivo** de datos CIM
+Tipo de datos: **Cim \_ DataFile**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \| CIM archivo de \_ archivos")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \| \_ DataFile")
 </dt> </dl>
 
-Un [**\_ archivo**](cim-datafile.md) de datos CIM que representa las propiedades del archivo de datos asignado al dispositivo lógico.
+Un [**archivo de \_ datos CIM**](cim-datafile.md) que representa las propiedades del archivo de datos asignado al dispositivo lógico.
 
 </dd> <dt>
 
 **Propósito**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -113,7 +113,7 @@ Rol que desempeña el archivo de datos con respecto a su dispositivo lógico aso
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -167,15 +167,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM")
 </dt> </dl>
 
-Extiende el valor de la propiedad **purpose** de esta clase.
+Extiende el valor de la **propiedad Purpose** de esta clase.
 
-Ejemplo: "controlador de disquete"
+Ejemplo: "Controlador de disquete"
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ CIMLogicalDeviceCIMDataFile de Win32** se deriva de la [**\_ dependencia CIM**](cim-logicaldevice.md).
+La **clase \_ CIMLogicalDeviceCIMDataFile de Win32** se deriva de [**la dependencia \_ CIM**](cim-logicaldevice.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -185,8 +185,8 @@ La **clase \_ CIMLogicalDeviceCIMDataFile de Win32** se deriva de la [**\_ depen
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -195,7 +195,7 @@ La **clase \_ CIMLogicalDeviceCIMDataFile de Win32** se deriva de la [**\_ depen
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))

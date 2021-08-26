@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 314d3e1ce0e73e60ea07bb4f7270fa04f69750c7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0a91e936f13c76ed4d99d7c5048820777afa47c9a52c260bb7f34acb702cb777
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916855"
 ---
 # <a name="cbasepincheckconnect-method"></a>Método CBasePin.CheckConnect
 
@@ -66,7 +66,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 ## <a name="remarks"></a>Comentarios
 
-Se llama a este método en ambos pines al principio del proceso de conexión. El pin de conexión lo llama desde el método [**CBasePin::Connect**](cbasepin-connect.md) y el pin receptor lo llama desde el método [**CBasePin::ReceiveConnection.**](cbasepin-receiveconnection.md)
+Se llama a este método en ambos pines al principio del proceso de conexión. El pin de conexión lo llama desde el método [**CBasePin::Conectar**](cbasepin-connect.md) y el pin receptor lo llama desde el método [**CBasePin::ReceiveConnection.**](cbasepin-receiveconnection.md)
 
 Use este método para determinar si el pin especificado por el *parámetro pPin* es adecuado para una conexión. La clase base devuelve un error si ambos pines tienen la misma dirección (entrada o ambas salidas). Las clases derivadas pueden invalidar este método para comprobar otras características del pin. Por ejemplo, la [**clase CBaseOutputPin**](cbaseoutputpin.md) consulta la chincha de entrada para su [**interfaz IMemInputPin.**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin)
 
@@ -78,12 +78,12 @@ Si se produce un error en este método, se produce un error en la conexión y el
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 41634a89-15b9-41c8-ba3f-4bf19b786f6f
-ms.openlocfilehash: 2edaa79bd62dcee40e4f197700d2128cb0b2070d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 5141b35b9fb71b09b9b269016d0b38cdb0b9f01ec88a02070a0f936934159930
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941505"
 ---
 # <a name="shelluihelperadddesktopcomponent-method"></a>Método ShellUIHelper.AddDesktopComponent
 
@@ -93,7 +93,7 @@ Posición del borde izquierdo del componente, en coordenadas de pantalla.
 
 </dd> <dt>
 
-*Top* \[ en, opcional\]
+*Parte superior* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **Variant**
@@ -102,7 +102,7 @@ Posición del borde superior del componente, en coordenadas de pantalla.
 
 </dd> <dt>
 
-*Ancho* \[ in, opcional\]
+*Ancho* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **Variant**
@@ -122,9 +122,9 @@ Alto del componente, en unidades de pantalla.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertado en HTML y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertados en HTML y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -175,7 +175,7 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |

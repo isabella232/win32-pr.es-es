@@ -1,33 +1,33 @@
 ---
-title: Secuencias de comandos en DirectShow
-description: Secuencias de comandos en DirectShow
+title: Script Secuencias en DirectShow
+description: Script Secuencias en DirectShow
 ms.assetid: ad467897-1d25-4bb0-a0ec-84560fe7063b
 keywords:
-- Windows Media Format SDK, DirectShow
-- SDK de Windows Media Format, secuencias de scripts
-- Advanced Systems Format (ASF), DirectShow
-- ASF (formato de sistemas avanzados), DirectShow
-- Advanced Systems Format (ASF), secuencias de scripts
-- ASF (formato de sistemas avanzados), secuencias de scripts
-- DirectShow, secuencias de scripts
-- secuencias de scripts, DirectShow
-- secuencias, secuencias de scripts en DirectShow
+- Windows SDK de formato multimedia, DirectShow
+- Windows SDK de formato multimedia, secuencias de script
+- Formato de sistemas avanzados (ASF),DirectShow
+- ASF (formato de sistemas avanzados),DirectShow
+- Formato de sistemas avanzados (ASF), secuencias de script
+- ASF (formato de sistemas avanzados), secuencias de script
+- DirectShow,secuencias de script
+- secuencias de script, DirectShow
+- streams,script streams in DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09f08fab54dbdfe61dcc2ce78790cd471985cdeb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e30e832928b84ab0e1e755dcfdb8c79893c5d942e15e4beb9925f852251614bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929626"
 ---
-# <a name="script-streams-in-directshow"></a>Secuencias de comandos en DirectShow
+# <a name="script-streams-in-directshow"></a>Script Secuencias en DirectShow
 
-Cuando se proporciona al filtro de lector ASF de WM un archivo que incluye una secuencia de tipo WMMEDIATYPE \_ script, se crea un PIN de salida para él que se puede conectar al filtro de representador de comandos de script interno de DirectShow. Cuando se llama a **IGraphBuilder:: RenderFile**, ese filtro se agrega automáticamente al gráfico y se conecta. Cuando el representador del comando de script interno recibe un ejemplo que contiene un comando de script, desencadena un **\_ \_ evento OLE de EC** cuyo **lParam** contiene el script. La aplicación es totalmente responsable de controlar este evento. Para obtener más información sobre el **\_ \_ evento OLE de EC**, vea la documentación del SDK de DirectShow.
+Cuando se le da un archivo que incluye un flujo de tipo script WMMEDIATYPE al filtro lector DE ASF de WM, crea una marca de salida para él que se puede conectar al filtro representador de comandos de script interno de \_ DirectShow. Cuando se llama **a IGraphBuilder::RenderFile**, ese filtro se agrega automáticamente al gráfico y se conecta. Cuando el representador de comandos de script interno recibe un ejemplo que contiene un comando de script, se produce un evento **\_ OLE \_ DE EC** cuyo **lParam** contiene el script. La aplicación es totalmente responsable de controlar este evento. Para obtener más información sobre **EC \_ OLE \_ EVENT**, consulte la documentación DirectShow SDK.
 
- 
+ 
 
- 
+ 
 
 
 

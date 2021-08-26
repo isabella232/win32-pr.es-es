@@ -1,7 +1,7 @@
 ---
-description: El método init inicializa el subproceso de streaming.
+description: El método Init inicializa el subproceso de streaming.
 ms.assetid: c746e595-de97-478c-8b22-5c4dd5594a8f
-title: Método CSourceStream.Init (Source. h)
+title: CSourceStream.Init (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6a3abf2b4637385616862c0613f72afd676f5b79
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e656ba46b25045406fb794653078b72e2c47155635cf24ae4a99b35238aa51df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871324"
 ---
 # <a name="csourcestreaminit-method"></a>CSourceStream.Init (método)
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK u otro valor **HRESULT** .
+Devuelve S \_ OK u otro valor **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método debe ser la primera solicitud de subproceso enviada al método [**CSourceStream:: ThreadProc**](csourcestream-threadproc.md) . El método [**CSourceStream:: Active**](csourcestream-active.md) llama a este método.
+Este método debe ser la primera solicitud de subproceso enviada al [**método CSourceStream::ThreadProc.**](csourcestream-threadproc.md) El [**método CSourceStream::Active**](csourcestream-active.md) llama a este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método debe ser la primera solicitud de subproceso enviada al método [**C
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método debe ser la primera solicitud de subproceso enviada al método [**C
 
 <dl> <dt>
 
-[**Clase CSourceStream**](csourcestream.md)
+[**CSourceStream (clase)**](csourcestream.md)
 </dt> </dl>
 
  

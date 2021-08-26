@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene información sobre las constantes que se usan en el análisis de tinta.
+description: Esta sección contiene información sobre las constantes usadas en el análisis de entrada de lápiz.
 ms.assetid: f701faca-7695-4be2-bd25-fab7ebcdbf30
-title: Constantes de análisis de tinta
+title: Constantes de análisis de entrada de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 783206a0b9a0f76fdf33d166f533f53e7aa06746
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4091be533e9988df078d7a3947a74222422b83bb80bae807caa6c8ab676ce3e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939545"
 ---
-# <a name="ink-analysis-constants"></a>Constantes de análisis de tinta
+# <a name="ink-analysis-constants"></a>Constantes de análisis de entrada de lápiz
 
-Esta sección contiene información sobre las constantes que se usan en el análisis de tinta.
+Esta sección contiene información sobre las constantes usadas en el análisis de entrada de lápiz.
 
 ## <a name="constants"></a>Constantes
 
@@ -21,9 +21,9 @@ Esta sección contiene información sobre las constantes que se usan en el anál
 
 | Constantes                                                | Descripción                                                                                                                                                 |
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Propiedades de la sugerencia de análisis](analysis-hint-properties.md) | Define identificadores únicos globales (GUID) para las propiedades de un nodo de sugerencia de análisis (vea [**IContextNode:: GetType**](icontextnode-gettype.md)).<br/> |
-| [Propiedades del nodo de contexto](context-node-properties.md)   | Define identificadores únicos globales (GUID) para las propiedades de un [**IContextNode**](icontextnode.md).<br/>                                           |
-| [Tipos de nodo de contexto](context-node-types.md)             | Define valores que especifican el tipo de objetos [**IContextNode**](icontextnode.md) .<br/>                                                            |
+| [Propiedades de la sugerencia de análisis](analysis-hint-properties.md) | Define identificadores únicos globales (GUID) para las propiedades de un nodo de sugerencia de análisis (vea [**IContextNode::GetType**](icontextnode-gettype.md)).<br/> |
+| [Propiedades del nodo de contexto](context-node-properties.md)   | Define identificadores únicos globales (GUID) para las propiedades de [**un IContextNode**](icontextnode.md).<br/>                                           |
+| [Tipos de nodo de contexto](context-node-types.md)             | Define valores que especifican el tipo de [**objetos IContextNode.**](icontextnode.md)<br/>                                                            |
 
 
 
@@ -33,7 +33,7 @@ Esta sección contiene información sobre las constantes que se usan en el anál
 
 <dl> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

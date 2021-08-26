@@ -1,7 +1,7 @@
 ---
 description: Recupera un rectángulo que representa el área de entrada máxima de la tableta.
 ms.assetid: 98facd24-b019-40d1-afe1-28c9a78cae80
-title: 'ITablet:: GetMaxInputRect (método)'
+title: ITablet::GetMaxInputRect (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: de2649fe7410e6d335f653c09bfe86a8ddaac813
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 422c64a8f5f77b354f02ab9601f7a0c888669d61783afb636816efbdc2e13b27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883545"
 ---
-# <a name="itabletgetmaxinputrect-method"></a>ITablet:: GetMaxInputRect (método)
+# <a name="itabletgetmaxinputrect-method"></a>ITablet::GetMaxInputRect (método)
 
 Recupera un rectángulo que representa el área de entrada máxima de la tableta.
 
@@ -40,7 +40,7 @@ HRESULT GetMaxInputRect(
 
 <dl> <dt>
 
-*prcInput* \[ enuncia\]
+*prcInput* \[ out\]
 </dt> <dd>
 
 Puntero al rectángulo que representa el área de entrada máxima de la tableta.
@@ -55,7 +55,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
@@ -68,7 +68,7 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -78,7 +78,7 @@ Este método puede devolver uno de estos valores.
 
 <dl> <dt>
 
-[**Interfaz ITablet**](itablet.md)
+[**ITablet (interfaz)**](itablet.md)
 </dt> </dl>
 
  

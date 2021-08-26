@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6fefb5a0b62174499a4631f2fe8020c25a3a8efa
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: aa21e6a19fe3ebb8ea1ee9dfecaa9e7370c5dd412d9dea8599987a55dc1858d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951855"
 ---
 # <a name="id3dxconstanttablesetmatrixtransposepointerarray-method"></a>Método ID3DXConstantTable::SetMatrixTransposePointerArray
 
-Establece una matriz de punteros en matrices transpuestas.
+Establece una matriz de punteros para matrices transpuestas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Puntero a una [**interfaz IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la matriz de constantes de matriz. Vea [D3DXHANDLE](dx9-graphics-reference-effects-constants.md).
+Identificador único de la matriz de constantes de matriz. Vea [D3DXHANDLE.](dx9-graphics-reference-effects-constants.md)
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Una matriz transpuesta contiene datos principales de columna; es decir, cada vec
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,10 +1,10 @@
 ---
-title: TLSDisconnectFromServer función)
-description: Cierra un identificador abierto a un servidor de licencias de Escritorio remoto.
+title: Función TLSDisconnectFromServer
+description: Cierra un identificador abierto a un servidor Escritorio remoto licencias.
 ms.assetid: b4b001ec-823b-4514-bbec-839a83a9a189
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la función TLSDisconnectFromServer
+- Función TLSDisconnectFromServer Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 265a6b04186bd640943cf2b348dda7afcf8f712a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 95911536eda4bd87e45fd034626cf83d88f4d9fc768e4837316ee93abfe3c3d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869415"
 ---
-# <a name="tlsdisconnectfromserver-function"></a>TLSDisconnectFromServer función)
+# <a name="tlsdisconnectfromserver-function"></a>Función TLSDisconnectFromServer
 
-Cierra un identificador abierto a un servidor de licencias de Escritorio remoto.
+Cierra un identificador abierto a un servidor Escritorio remoto licencias.
 
 > [!Note]  
-> Esta función no tiene asociado ningún archivo de encabezado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
+> Esta función no tiene ningún archivo de encabezado asociado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
 
  
 
@@ -46,10 +46,10 @@ void WINAPI TLSDisconnectFromServer(
 
 <dl> <dt>
 
-*hHandle* \[ de\]
+*hHandle* \[ En\]
 </dt> <dd>
 
-Identificador de un servidor de licencias de Escritorio remoto abierto por una llamada a la función [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Identificador de un Escritorio remoto de licencias que se abre mediante una llamada a la [**función TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Identificador de un servidor de licencias de Escritorio remoto abierto por una l
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llame a la función **TLSDisconnectFromServer** como parte de la rutina de limpieza del programa para cerrar todos los identificadores de servidor que se abren mediante llamadas a la función [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Llame a **la función TLSDisconnectFromServer** como parte de la rutina de limpieza del programa para cerrar todos los identificadores de servidor que abren las llamadas a la [**función TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,7 +77,7 @@ Llame a la función **TLSDisconnectFromServer** como parte de la rutina de limpi
 
 <dl> <dt>
 
-[**identificador de TLS \_**](tls-handle.md)
+[**IDENTIFICADOR \_ TLS**](tls-handle.md)
 </dt> <dt>
 
 [**TLSConnectToLsServer**](tlsconnecttolsserver.md)

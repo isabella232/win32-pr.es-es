@@ -1,7 +1,7 @@
 ---
 description: Recupera el objeto de datos que tiene el nombre especificado.
 ms.assetid: ed53d871-24e8-4c51-8897-1055ef8a9af1
-title: 'ID3DXFileEnumObject:: GetDataObjectByName (método) (D3DX9Xof. h)'
+title: Método ID3DXFileEnumObject::GetDataObjectByName (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 41850615726ac15e890162c6e28df9b638c582a2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f42c82fb2eeedf6c1ec6c0f8099e6fbc1f6bac8d9e96bafbb6a94bacbf8f20e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951545"
 ---
-# <a name="id3dxfileenumobjectgetdataobjectbyname-method"></a>ID3DXFileEnumObject:: GetDataObjectByName (método)
+# <a name="id3dxfileenumobjectgetdataobjectbyname-method"></a>Método ID3DXFileEnumObject::GetDataObjectByName
 
 Recupera el objeto de datos que tiene el nombre especificado.
 
@@ -41,7 +41,7 @@ HRESULT GetDataObjectByName(
 
 <dl> <dt>
 
-*szName* \[ de\]
+*szName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -50,12 +50,12 @@ Puntero al nombre solicitado.
 
 </dd> <dt>
 
-*ppObj* \[ enuncia\]
+*ppObj* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DXFileData**](id3dxfiledata.md)\*\***
 
-Dirección de un puntero a una interfaz [**ID3DXFileData**](id3dxfiledata.md) que representa el objeto de datos de archivo devuelto.
+Dirección de un puntero a una [**interfaz ID3DXFileData,**](id3dxfiledata.md) que representa el objeto de datos de archivo devuelto.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Dirección de un puntero a una interfaz [**ID3DXFileData**](id3dxfiledata.md) qu
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOTFOUND.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOTFOUND.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Obtiene el nombre szName del objeto de datos de archivo actual con el método [**ID3DXFileData:: GetName**](id3dxfiledata--getname.md) .
+Obtenga el nombre szName del objeto de datos de archivo actual con el [**método ID3DXFileData::GetName.**](id3dxfiledata--getname.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Obtiene el nombre szName del objeto de datos de archivo actual con el método [*
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

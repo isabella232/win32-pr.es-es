@@ -1,98 +1,98 @@
 ---
 title: Compatibilidad con SVG
-description: A partir de la actualización de aniversario de Windows 10, Direct2D admite la representación de fuentes de color que contienen contornos de glifos SVG, como se describe en la especificación OpenType (vea la tabla ' SVG ').
+description: A partir Windows 10 actualización de aniversario, Direct2D admite la representación de fuentes de color que contienen contornos de glifo SVG, como se describe en la especificación OpenType (vea la tabla "SVG").
 ms.assetid: 5cb4cb7c-9b96-e110-bff9-d75ad1980010
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 678c5d9ef42a53c854bb2f175fac63816345c519
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3c8c5f34531264f95c3617d1324079895b6444cbdbc776d5468fe51fc9890992
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917105"
 ---
 # <a name="svg-support"></a>Compatibilidad con SVG
 
-A partir de la actualización de aniversario de Windows 10, Direct2D admite la representación de [fuentes de color](../directwrite/color-fonts.md) que contienen contornos de glifos SVG, como se describe en la [especificación OpenType](/typography/opentype/spec/) (vea [la tabla SVG](/typography/opentype/spec/svg)). A partir de Windows 10 Creators Update, Direct2D también admite la representación de imágenes SVG independientes. Sin embargo, algunas características de SVG no se permiten en las fuentes SVG de OpenType y las características de SVG no se admiten actualmente en Direct2D.  
+A partir de Windows 10 de aniversario, Direct2D admite la representación de fuentes de [color](../directwrite/color-fonts.md) que contienen contornos de glifo SVG, como se describe en la especificación [OpenType](/typography/opentype/spec/) (consulte [la tabla SVG](/typography/opentype/spec/svg)). A partir Windows 10 Creators Update, Direct2D también admite la representación de imágenes SVG independientes. Sin embargo, algunas características SVG no se admiten dentro de las fuentes SVG openType y direct2D no admite actualmente determinadas características SVG.  
 
-En este tema se identifica el conjunto de características de [SVG 1,1](https://www.w3.org/TR/SVG11/) compatibles con Direct2D en la actualización de aniversario de Windows 10 y versiones más recientes. Este documento se aplica a SVG en fuentes OpenType, así como imágenes SVG independientes.
+En este tema se identifica el conjunto de características [SVG 1.1](https://www.w3.org/TR/SVG11/) compatibles con Direct2D en Windows 10 de aniversario y versiones más recientes. Este documento se aplica a SVG en fuentes OpenType, así como a imágenes SVG independientes.
 
 ## <a name="supported-svg-elements-and-attributes"></a>Atributos y elementos SVG admitidos
 
-Direct2D admite la representación de los siguientes elementos SVG y de los atributos asociados para cada elemento. Se omiten otros elementos y atributos normales.
+Direct2D admite la representación de los siguientes elementos SVG y los atributos asociados para cada elemento. Se omiten otros elementos y atributos normales.
 
 
 
-| Elemento                                                                                  | Atributos regulares admitidos                                                             |
+| Elemento                                                                                  | Atributos normales admitidos                                                             |
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [círculo](https://www.w3.org/TR/SVG11/shapes.mdl#circleelement)                           | identificador, estilo, transformación, CX, CY, r                                                          |
-| [clipPath](https://www.w3.org/TR/SVG11/masking.mdl#clippathelement)                      | identificador, estilo, transformación, clipPathUnits                                                      |
-| [fichero](https://www.w3.org/TR/SVG11/struct.mdl#defselement)                               | identificador, estilo, transformación                                                                     |
-| [multilínea](https://www.w3.org/TR/SVG11/struct.mdl#descriptionandtitleelements)<sup>\*</sup>  | id                                                                                       |
-| [puntos](https://www.w3.org/TR/SVG11/shapes.mdl#ellipseelement)                         | ID, Style, Transform, CX, CY, RX, Ry                                                     |
-| [g](https://www.w3.org/TR/SVG11/struct.mdl#gelement)                                     | identificador, estilo, transformación                                                                     |
-| [image](https://www.w3.org/TR/SVG11/struct.mdl#imageelement)                             | identificador, estilo, transformación, x, y, ancho, alto, preserveAspectRatio, XLink: href               |
-| [Ondula](https://www.w3.org/TR/SVG11/shapes.mdl#lineelement)                               | identificador, estilo, transformación, x1, Y1, x2, Y2                                                     |
-| [linearGradient](https://www.w3.org/TR/SVG11/pservers.mdl#lineargradientelement)         | ID, Style, x1, Y1, x2, Y2, gradientUnits, gradientTransform, spreadMethod, XLink: href    |
-| [path](https://www.w3.org/TR/SVG11/paths.mdl#pathelement)                                | identificador, estilo, transformación, d                                                                  |
-| [Polígono](https://www.w3.org/TR/SVG11/shapes.mdl#polygonelement)                         | identificador, estilo, transformación, puntos                                                             |
-| [Polyline](https://www.w3.org/TR/SVG11/shapes.mdl#polylineelement)                       | identificador, estilo, transformación, puntos                                                             |
-| [radialGradient](https://www.w3.org/TR/SVG11/pservers.mdl#radialgradientelement)         | ID, Style, CX, CY, r, FX, AF, gradientUnits, gradientTransform, spreadMethod, XLink: href |
-| [Rect](https://www.w3.org/TR/SVG11/shapes.mdl#rectelement)                               | identificador, estilo, transformación, x, y, ancho, alto, RX, Ry                                        |
-| [stop](https://www.w3.org/TR/SVG11/pservers.mdl#stopelement)                             | identificador, estilo, desplazamiento                                                                        |
-| [Import](https://www.w3.org/TR/SVG11/struct.mdl#svgelement)                                 | ID, Style, x, y, width, height, viewBox, preserveAspectRatio                             |
-| [Titulo](https://www.w3.org/TR/SVG11/struct.mdl#descriptionandtitleelements)<sup>\*</sup> | id                                                                                       |
-| [use](https://www.w3.org/TR/SVG11/struct.mdl#useelement)                                 | identificador, estilo, transformación, x, y, ancho, alto, XLink: href                                    |
+| [circunferencia](https://www.w3.org/TR/SVG11/shapes.mdl#circleelement)                           | id, style, transform, cx, cy, r                                                          |
+| [clipPath](https://www.w3.org/TR/SVG11/masking.mdl#clippathelement)                      | id, style, transform, clipPathUnits                                                      |
+| [defs](https://www.w3.org/TR/SVG11/struct.mdl#defselement)                               | id, style, transform                                                                     |
+| [Desc](https://www.w3.org/TR/SVG11/struct.mdl#descriptionandtitleelements)<sup>\*</sup>  | id                                                                                       |
+| [ellipse](https://www.w3.org/TR/SVG11/shapes.mdl#ellipseelement)                         | id, style, transform, cx, cy, rx, ry                                                     |
+| [g](https://www.w3.org/TR/SVG11/struct.mdl#gelement)                                     | id, style, transform                                                                     |
+| [image](https://www.w3.org/TR/SVG11/struct.mdl#imageelement)                             | id, style, transform, x, y, width, height, preserveAspectRatio, xlink:href               |
+| [Línea](https://www.w3.org/TR/SVG11/shapes.mdl#lineelement)                               | id, style, transform, x1, y1, x2, y2                                                     |
+| [linearGradient](https://www.w3.org/TR/SVG11/pservers.mdl#lineargradientelement)         | id, style, x1, y1, x2, y2, gradientUnits, gradientTransform, spreadMethod, xlink:href    |
+| [path](https://www.w3.org/TR/SVG11/paths.mdl#pathelement)                                | id, style, transform, d                                                                  |
+| [Polígono](https://www.w3.org/TR/SVG11/shapes.mdl#polygonelement)                         | id, style, transform, points                                                             |
+| [Polilínea](https://www.w3.org/TR/SVG11/shapes.mdl#polylineelement)                       | id, style, transform, points                                                             |
+| [radialGradient](https://www.w3.org/TR/SVG11/pservers.mdl#radialgradientelement)         | id, style, cx, cy, r, fx, fy, gradientUnits, gradientTransform, spreadMethod, xlink:href |
+| [Rect](https://www.w3.org/TR/SVG11/shapes.mdl#rectelement)                               | id, style, transform, x, y, width, height, rx, ry                                        |
+| [stop](https://www.w3.org/TR/SVG11/pservers.mdl#stopelement)                             | id, style, offset                                                                        |
+| [Svg](https://www.w3.org/TR/SVG11/struct.mdl#svgelement)                                 | id, style, x, y, width, height, viewBox, preserveAspectRatio                             |
+| [Título](https://www.w3.org/TR/SVG11/struct.mdl#descriptionandtitleelements)<sup>\*</sup> | id                                                                                       |
+| [use](https://www.w3.org/TR/SVG11/struct.mdl#useelement)                                 | id, style, transform, x, y, width, height, xlink:href                                    |
 
 
 
- 
+ 
 
-<sup>\*</sup> Solo se admite en Windows 10 Creators Update y versiones más recientes
+<sup>\*</sup>Solo se admite en Windows 10 Creators Update y versiones más recientes
 
 ## <a name="supported-svg-presentation-attributes"></a>Atributos de presentación SVG admitidos
 
-Direct2D también admite los siguientes atributos de presentación. Se pueden especificar en cualquier elemento SVG, pero solo afectan a la apariencia de determinados elementos, tal y como se describe en la especificación SVG (vea [atributos de presentación](https://www.w3.org/TR/SVG11/attindex.mdl#presentationattributes)).
+Direct2D también admite los siguientes atributos de presentación. Se pueden especificar en cualquier elemento SVG, pero solo afectan a la apariencia de determinados elementos, como se describe en la especificación SVG (vea [Atributos de presentación](https://www.w3.org/TR/SVG11/attindex.mdl#presentationattributes)).
 
--   clip-ruta de acceso
--   clip-regla
+-   clip-path
+-   clip-rule
 -   color
--   muestra<sup>\*</sup>
+-   Monitor<sup>\*</sup>
 -   fill
--   relleno-opacidad
--   regla de relleno
+-   fill-opacity
+-   fill-rule
 -   opacidad
 -   desbordamiento
--   color de detención
--   detener: opacidad
+-   stop-color
+-   stop-opacity
 -   stroke
--   Stroke-dasharray
--   Stroke-dashoffset
--   Stroke-LineCap
--   Stroke-LineJoin
--   Stroke-miterLimit
--   trazo: opacidad
+-   stroke-dasharray
+-   stroke-dashoffset
+-   stroke-linecap
+-   stroke-linejoin
+-   stroke-miterlimit
+-   opacidad del trazo
 -   ancho de trazo
--   visibilidad<sup>\*</sup>
+-   Visibilidad<sup>\*</sup>
 
-<sup>\*</sup> Solo se admite en Windows 10 Creators Update y versiones más recientes
+<sup>\*</sup>Solo se admite en Windows 10 Creators Update y versiones más recientes
 
-## <a name="unsupported-svg-features"></a>Características de SVG no admitidas
+## <a name="unsupported-svg-features"></a>Características SVG no admitidas
 
-### <a name="unsupported-elements-and-attributes"></a>Elementos y atributos no admitidos
+### <a name="unsupported-elements-and-attributes"></a>Atributos y elementos no admitidos
 
-Los elementos o atributos no incluidos en las listas anteriores se consideran no compatibles con Direct2D. Al analizar el contenido SVG que contiene un elemento o atributo no admitido, se omite la entidad no admitida. El resto del contenido se representa tan fielmente como sea posible.
+Direct2D considera que cualquier elemento o atributo no incluido en las listas anteriores no es compatible. Al analizar contenido SVG que contiene un elemento o atributo no admitidos, se omite la entidad no admitida. El resto del contenido se representa de la manera más adecuada posible.
 
 ### <a name="unsupported-length-units"></a>Unidades de longitud no admitidas
 
-A partir de la actualización de aniversario de Windows 10, Direct2D solo admite valores de longitud de espacio de usuario y valores de longitud porcentual. No se admiten las longitudes con sufijos de unidad, como "mm" o "em".
+A Windows 10 de aniversario, Direct2D solo admite valores de longitud de espacio de usuario y valores de longitud porcentual. No se admiten las longitudes con sufijos de unidad, como "mm" o "em".
 
-A partir de Windows 10 Fall Creators Update, Direct2D también admite identificadores de unidad absoluta: PX, PT, PC, cm, mm y en. No se admiten los identificadores de unidad relativos (EM, ex).
+A partir Windows 10 Fall Creators Update, Direct2D también admite identificadores de unidad absolutos: px, pt, pc, cm, mm y in. No se admiten los identificadores de unidad relativa (em, p. ej.).
 
-### <a name="unsupported-image-sources"></a>Orígenes de imagen no admitidos
+### <a name="unsupported-image-sources"></a>Orígenes de imágenes no admitidos
 
-El elemento de imagen solo se admite si su atributo XLink: href está establecido en una imagen con codificación Base64. No se admiten referencias remotas.
+El elemento image solo se admite si su atributo xlink:href está establecido en una imagen codificada en base64. No se admiten referencias remotas.
 
- 
+ 
 
- 
+ 

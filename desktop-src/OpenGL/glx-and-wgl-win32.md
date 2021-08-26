@@ -1,27 +1,27 @@
 ---
 title: GLX y WGL/Windows
-description: Algunas de las funciones de WGL y las funciones de Windows son más o menos análogas a las funciones de ventana de GLX X. En la lista siguiente se muestran las funciones de GLX y sus funciones WGL/Windows correspondientes, si están disponibles.
+description: Algunas de las funciones WGL y Windows son más o menos análogas a las funciones de ventana GLX X. En la lista siguiente se muestran las funciones GLX y sus funciones WGL/Windows correspondientes, si están disponibles.
 ms.assetid: 428c0fdc-a541-4720-908f-99f0539d9f4b
 keywords:
-- OpenGL en Windows, funciones GLX
-- GLX (funciones) OpenGL
-- Funciones de WGL, en comparación con las funciones GLX
+- OpenGL en Windows,funciones GLX
+- Funciones GLX OpenGL
+- Funciones WGL, en comparación con las funciones GLX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eaa2c0ce28bd22e8b6efee4edc395223be2bf11
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c24b88caeed9aea7bae8e38f73818ac180aad9117806508f40550b02eb8a4e76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035394"
 ---
 # <a name="glx-and-wglwindows"></a>GLX y WGL/Windows
 
-Algunas de las funciones de WGL y las funciones de Windows son más o menos análogas a las funciones de ventana de GLX X. En la lista siguiente se muestran las funciones de GLX y sus funciones WGL/Windows correspondientes, si están disponibles.
+Algunas de las funciones WGL y Windows son más o menos análogas a las funciones de ventana GLX X. En la lista siguiente se muestran las funciones GLX y sus funciones WGL/Windows correspondientes, si están disponibles.
 
 
 
-| Funciones de GLX             | Funciones de WGL/Windows                                                                                                                                       |
+| Funciones GLX             | Funciones WGL/Windows                                                                                                                                       |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **glXChooseVisual**       | [**ChoosePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat)                                                                                                              |
 | **glXCopyContext**        |                                                                                                                                                             |
@@ -49,10 +49,10 @@ Algunas de las funciones de WGL y las funciones de Windows son más o menos aná
 
 
 
- 
+ 
 
-Para obtener más información, consulte la *Guía de migración*.
+Para obtener más información, consulte la *Guía de porte.*
 
- 
+ 
 
- 
+ 

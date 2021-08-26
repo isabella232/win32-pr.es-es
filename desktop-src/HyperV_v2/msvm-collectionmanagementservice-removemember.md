@@ -1,7 +1,7 @@
 ---
-description: Quita el elemento administrado especificado como miembro del objeto CIM CollectionOfMSEs determinado \_ .
+description: Quita el elemento administrado especificado como miembro del objeto CollectionOfMSEs de CIM \_ especificado.
 ms.assetid: ea945d24-bcff-476b-9adb-c6573cdbc0b5
-title: Método RemoveMember de la clase Msvm_CollectionManagementService
+title: Método RemoveMember de la Msvm_CollectionManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 894230dcf5e9a537ca444815f8e941a8e6fcf09a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3aeeccb8bc29dba22fb28f35df3bbc9ea178ece0ea2a2438a89c086de764aa9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870315"
 ---
-# <a name="removemember-method-of-the-msvm_collectionmanagementservice-class"></a>Método RemoveMember de la \_ clase CollectionManagementService de MSVM
+# <a name="removemember-method-of-the-msvm_collectionmanagementservice-class"></a>Método RemoveMember de la clase \_ CollectionManagementService de Msvm
 
-Quita el elemento administrado especificado como miembro del objeto [**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md) determinado.
+Quita el elemento administrado especificado como miembro del objeto [**\_ CollectionOfMSEs de CIM**](cim-collectionofmses.md) especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,30 +41,30 @@ uint32 RemoveMember(
 
 <dl> <dt>
 
-*Miembro* \[ de de\]
+*Miembro* \[ En\]
 </dt> <dd>
 
 Miembro que se va a quitar.
 
 </dd> <dt>
 
-*Colección* \[ de de\]
+*Colección* \[ En\]
 </dt> <dd>
 
-Colección de la que se va a quitar el miembro.
+Colección de la que se quitará el miembro.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia al trabajo (puede ser null si se ha completado la tarea).
+Referencia al trabajo (puede ser NULL si se completa la tarea).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se realiza correctamente, o 4096 si se inició el trabajo; de lo contrario, devuelve un error.
+Devuelve 0 si se realiza correctamente o 4096 si se inició el trabajo; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -83,16 +83,16 @@ Devuelve 0 si se realiza correctamente, o 4096 si se inició el trabajo; de lo c
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -101,13 +101,13 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -116,10 +116,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -128,7 +128,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ CollectionManagementService**](msvm-collectionmanagementservice.md)
+[**CollectionManagementService de Msvm \_**](msvm-collectionmanagementservice.md)
 </dt> </dl>
 
  

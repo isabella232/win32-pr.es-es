@@ -1,8 +1,8 @@
 ---
-description: Establece los pares/número de red IPX (intercambio de paquetes de interredes) para este adaptador de red.
+description: Establece los pares de número de red y marco de Exchange (IPX) de Internetworking Packet (IPX) para este adaptador de red.
 ms.assetid: 8190564f-7d9f-4b05-9949-2e732ce36dba
 ms.tgt_platform: multiple
-title: Método SetIPXFrameTypeNetworkPairs de la clase Win32_NetworkAdapterConfiguration
+title: Método SetIPXFrameTypeNetworkPairs de la Win32_NetworkAdapterConfiguration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - cimwin32.dll
-ms.openlocfilehash: e4d53ec7b5600a767505e517a02fbf87b5a43d13
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f914f996e26d64ae66c0be2acf1dee3988ccc2015109c6e7d3b340b406c0c23e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973044"
 ---
-# <a name="setipxframetypenetworkpairs-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetIPXFrameTypeNetworkPairs de la \_ clase NetworkAdapterConfiguration de Win32
+# <a name="setipxframetypenetworkpairs-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetIPXFrameTypeNetworkPairs de la clase \_ NetworkAdapterConfiguration de Win32
 
-Establece los pares/número de red IPX (intercambio de paquetes de interredes) para este adaptador de red.
+Establece los pares de número de red y marco de Exchange (IPX) de Internetworking Packet (IPX) para este adaptador de red.
 
-Windows 2000 y Windows NT 3,51 y versiones posteriores usan un número de red IPX para fines de enrutamiento. Se asigna a cada combinación de adaptador de red o tipo de marco configurado en el sistema del equipo. Este número se denomina a veces "número de red externa". Debe ser único para cada segmento de red. Si el tipo de marco se establece en automático, el número de red debe ser cero.
+Windows 2000 y Windows NT 3.51 y posteriores usan un número de red IPX con fines de enrutamiento. Se asigna a cada combinación de adaptador de red o tipo de marco configurado en el sistema del equipo. Este número se conoce a veces como "número de red externa". Debe ser único para cada segmento de red. Si el tipo de marco se establece en AUTO, el número de red debe ser cero.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,17 +43,17 @@ uint32 SetIPXFrameTypeNetworkPairs(
 
 <dl> <dt>
 
-*IPXNetworkNumber* \[ de\]
+*IPXNetworkNumber* \[ En\]
 </dt> <dd>
 
-Matriz de caracteres que identifica de forma única un adaptador en el sistema del equipo. El transporte compatible con IPX/SPX de NetWare Link (NWLink) en Windows 2000 y Windows NT 3,51 o superior usa dos tipos diferentes de números de red. Este número se conoce a veces como el número de red externa. Debe ser único para cada segmento de red. Los valores de esta lista de cadenas deben tener un valor correspondiente en el parámetro IPXFrameType que identifica el tipo de marco de paquetes que se usa para esta red.
+Matriz de caracteres que identifican de forma única un adaptador en el sistema del equipo. El transporte compatible con NETWare Link (NWLink) IPX/SPX en Windows 2000 y Windows NT 3.51 o posterior usa dos tipos diferentes de números de red. Este número se conoce a veces como número de red externa. Debe ser único para cada segmento de red. Los valores de esta lista de cadenas deben tener un valor correspondiente en el parámetro IPXFrameType que identifica el tipo de marco de paquete usado para esta red.
 
 </dd> <dt>
 
-*IPXFrameType* \[ de\]
+*IPXFrameType* \[ En\]
 </dt> <dd>
 
-Matriz de enteros de los identificadores de tipo de marco. Los valores de esta matriz se corresponden con los elementos del parámetro *IPXNetworkNumber* .
+Matriz de enteros de identificadores de tipo de marco. Los valores de esta matriz corresponden a los elementos del *parámetro IPXNetworkNumber.*
 
 <dt>
 
@@ -66,28 +66,28 @@ Matriz de enteros de los identificadores de tipo de marco. Los valores de esta m
 
 <span id="Ethernet_802.3"></span><span id="ethernet_802.3"></span><span id="ETHERNET_802.3"></span>
 
-**Ethernet 802,3** (1)
+**Ethernet 802.3** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ethernet_802.2"></span><span id="ethernet_802.2"></span><span id="ETHERNET_802.2"></span>
 
-**Ethernet 802,2** (2)
+**Ethernet 802.2** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ethernet_SNAP"></span><span id="ethernet_snap"></span><span id="ETHERNET_SNAP"></span>
 
-**Ajuste Ethernet** (3)
+**Ethernet SNAP** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AUTO"></span><span id="auto"></span>
 
-**Auto** (255)
+**AUTO** (255)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
@@ -96,10 +96,10 @@ Matriz de enteros de los identificadores de tipo de marco. Los valores de esta m
 
 <dl> <dt>
 
-**Finalización correcta, no es necesario reiniciar** (0)
+**Finalización correcta, no se requiere reinicio** (0)
 </dt> <dt>
 
-**Finalización correcta, se requiere un reinicio** (1)
+**Finalización correcta, reinicio necesario** (1)
 </dt> <dt>
 
 **Método no admitido en esta plataforma** (64)
@@ -108,46 +108,46 @@ Matriz de enteros de los identificadores de tipo de marco. Los valores de esta m
 **Error desconocido** (65)
 </dt> <dt>
 
-**Máscara de subred no válida** (66)
+**Máscara de subred no** válida (66)
 </dt> <dt>
 
-**Se produjo un error al procesar una instancia devuelta** (67)
+**Error al procesar una instancia devuelta** (67)
 </dt> <dt>
 
-**Parámetro de entrada no válido** (68)
+**Parámetro de entrada no** válido (68)
 </dt> <dt>
 
-Se **especificaron más de 5 puertas de enlace** (69)
+**Más de 5 puertas de enlace especificadas** (69)
 </dt> <dt>
 
 **Dirección IP no válida** (70)
 </dt> <dt>
 
-**Dirección IP de puerta de enlace no válida** (71)
+**Dirección IP de puerta de enlace no** válida (71)
 </dt> <dt>
 
-**Se produjo un error al obtener acceso al registro para obtener la información solicitada** (72)
+**Error al acceder al Registro para obtener la información solicitada** (72)
 </dt> <dt>
 
-**Nombre de dominio no válido** (73)
+**Nombre de dominio no** válido (73)
 </dt> <dt>
 
-**Nombre de host no válido** (74)
+**Nombre de host no** válido (74)
 </dt> <dt>
 
-**No se definió ningún servidor WINS principal/secundario** (75)
+**No hay ningún servidor WINS principal o secundario definido** (75)
 </dt> <dt>
 
-**Archivo no válido** (76)
+**Archivo no** válido (76)
 </dt> <dt>
 
-**Ruta de acceso del sistema no válida** (77)
+**Ruta de acceso del sistema** no válida (77)
 </dt> <dt>
 
-**No se pudo copiar el archivo** (78)
+**Error en la copia de** archivos (78)
 </dt> <dt>
 
-**Parámetro de seguridad no válido** (79)
+**Parámetro de seguridad no** válido (79)
 </dt> <dt>
 
 **No se puede configurar el servicio TCP/IP** (80)
@@ -168,25 +168,25 @@ Se **especificaron más de 5 puertas de enlace** (69)
 **IPX no habilitado en el adaptador** (85)
 </dt> <dt>
 
-**Error de límite de número de trama/red** (86)
+**Error de límites de número de marco o red** (86)
 </dt> <dt>
 
-**Tipo de marco no válido** (87)
+**Tipo de fotograma no** válido (87)
 </dt> <dt>
 
 **Número de red no válido** (88)
 </dt> <dt>
 
-**Número de red duplicada** (89)
+**Número de red duplicado** (89)
 </dt> <dt>
 
-**Parámetro fuera de los límites** (90)
+**Parámetro fuera de límites** (90)
 </dt> <dt>
 
 **Acceso denegado** (91)
 </dt> <dt>
 
-**Memoria insuficiente** (92)
+**Memoria sin memoria** (92)
 </dt> <dt>
 
 **Ya existe** (93)
@@ -204,13 +204,13 @@ Se **especificaron más de 5 puertas de enlace** (69)
 **Interfaz no configurable** (97)
 </dt> <dt>
 
-**No todas las concesiones DHCP se pueden liberar o renovar** (98)
+**No todas las concesiones DHCP se podrían liberar o renovar** (98)
 </dt> <dt>
 
-**DHCP no está habilitado en el adaptador** (100)
+**DHCP no habilitado en el adaptador** (100)
 </dt> <dt>
 
-**Otro** (101 – 4294967295)
+**Otros** (101–4294967295)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -221,8 +221,8 @@ Se **especificaron más de 5 puertas de enlace** (69)
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CimWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CimWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Cimwin32.dll</dt> </dl> |
 
 
@@ -231,7 +231,7 @@ Se **especificaron más de 5 puertas de enlace** (69)
 
 <dl> <dt>
 
-[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
+[**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Recupera el objeto IAnalysisWarning en el índice especificado.
 ms.assetid: 8f5d5642-73ec-496e-bad7-9f636fc00217
-title: 'IAnalysisWarnings:: GetAnalysisWarning (método) (IACom. h)'
+title: Método IAnalysisWarnings::GetAnalysisWarning (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 88ed3686ecf3861a2b097ebfc005214ab0cdd1c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16a2f59482f7fb2250bf60c052ccd3963fd86f1daba8d25acc9b342a5d2c984c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119935455"
 ---
-# <a name="ianalysiswarningsgetanalysiswarning-method"></a>IAnalysisWarnings:: GetAnalysisWarning (método)
+# <a name="ianalysiswarningsgetanalysiswarning-method"></a>IAnalysisWarnings::GetAnalysisWarning (método)
 
-Recupera el objeto [**IAnalysisWarning**](ianalysiswarning.md) en el índice especificado.
+Recupera el [**objeto IAnalysisWarning**](ianalysiswarning.md) en el índice especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,14 +40,14 @@ HRESULT GetAnalysisWarning(
 
 <dl> <dt>
 
-*ulIndex* \[ de\]
+*ulIndex* \[ En\]
 </dt> <dd>
 
-Índice de base cero del objeto [**IAnalysisWarning**](ianalysiswarning.md) que se va a obtener.
+Índice de base cero del objeto [**IAnalysisWarning**](ianalysiswarning.md) que se obtiene.
 
 </dd> <dt>
 
-*ppWarning* \[ enuncia\]
+*ppWarning* \[ out\]
 </dt> <dd>
 
 Puntero al objeto [**IAnalysisWarning**](ianalysiswarning.md) en el índice especificado.
@@ -56,18 +56,18 @@ Puntero al objeto [**IAnalysisWarning**](ianalysiswarning.md) en el índice espe
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *ppWarning* cuando ya no necesite usar la advertencia.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *ppWarning* cuando ya no necesite usar la advertencia.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el evento [**\_ IAnalysisEvents:: Results**](-ianalysisevents-results.md) . El controlador comprueba [**IAnalysisStatus:: IsSuccessful**](ianalysisstatus-issuccessful.md). Si la operación de análisis genera advertencias, el controlador recorre en iteración la colección de objetos [**IAnalysisWarning**](ianalysiswarning.md) .
+En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el [**\_ evento IAnalysisEvents::Results.**](-ianalysisevents-results.md) El controlador comprueba [**IAnalysisStatus::IsSuccessful.**](ianalysisstatus-issuccessful.md) Si la operación de análisis genera advertencias, el controlador recorre en iteración la colección de [**objetos IAnalysisWarning.**](ianalysiswarning.md)
 
 
 ```C++
@@ -154,9 +154,9 @@ STDMETHODIMP CMyClass::Results(
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -168,7 +168,7 @@ STDMETHODIMP CMyClass::Results(
 [**IAnalysisWarnings**](ianalysiswarnings.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

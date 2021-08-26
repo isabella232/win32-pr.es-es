@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c68fe1ab83724149dcd2fb58a60e9c6950d887ca
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 95c79071030b2f40613138e526abd1f965d3b5aeb7b233c2c53be57b65f97da7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916405"
 ---
 # <a name="cbasepinenummediatypes-method"></a>Método CBasePin.EnumMediaTypes
 
@@ -69,7 +69,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla sig
 
 Los pines de entrada no son necesarios para enumerar los tipos preferidos. Los pines de salida deben enumerar al menos un tipo preferido. De lo contrario, ambos pines podrían carecer de un tipo preferido, lo que imposibilitó una conexión.
 
-La **interfaz IEnumMediaTypes** funciona como un enumerador COM estándar. Para obtener más información, [vea Enumerar objetos en un gráfico de filtro.](enumerating-objects-in-a-filter-graph.md) Si el método se realiza correctamente, la **interfaz IEnumMediaTypes** tiene un recuento de referencias pendiente. Asegúrese de liberarlo cuando haya terminado.
+La **interfaz IEnumMediaTypes** funciona como un enumerador COM estándar. Para obtener más información, [vea Enumerar objetos en un filtro Graph](enumerating-objects-in-a-filter-graph.md). Si el método se realiza correctamente, la **interfaz IEnumMediaTypes** tiene un recuento de referencias pendiente. Asegúrese de liberarla cuando haya terminado.
 
 La clase base [**CEnumMediaTypes**](cenummediatypes.md) implementa **IEnumMediaTypes**. Llama al método [**CBasePin::GetMediaType**](cbasepin-getmediatype.md) del pin para enumerar los tipos de medios.
 
@@ -79,12 +79,12 @@ La clase base [**CEnumMediaTypes**](cenummediatypes.md) implementa **IEnumMediaT
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

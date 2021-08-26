@@ -1,23 +1,23 @@
 ---
-description: 'La enumeración StreamQualityProperty que usan los métodos ITStreamQualityControl:: GetRange, ITStreamQualityControl:: get y ITStreamQualityControl:: set para indicar la propiedad de calidad de la secuencia que se está solucionando.'
+description: Enumeración StreamQualityProperty usada por los métodos ITStreamQualityControl::GetRange, ITStreamQualityControl::Get e ITStreamQualityControl::Set para indicar la propiedad de calidad de flujo que se está abordando.
 ms.assetid: 28c9257f-6fbb-440f-9b84-c15a74229b5b
-title: Enumeración StreamQualityProperty (Ipmsp. h)
+title: Enumeración StreamQualityProperty (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f552641cd0847bb3ff8eec9d528a03171a78c2e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea006b614522ffcab6f96e630df03087b78864ff7d7af6ddcd5c515bc090e821
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905755"
 ---
 # <a name="streamqualityproperty-enumeration"></a>Enumeración StreamQualityProperty
 
-\[ Esta enumeración no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Esta enumeración no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-La enumeración **StreamQualityProperty** que usan los métodos [**ITStreamQualityControl:: GetRange**](itstreamqualitycontrol-getrange.md), [**ITStreamQualityControl:: get**](itstreamqualitycontrol-get.md)y [**ITStreamQualityControl:: set**](itstreamqualitycontrol-set.md) para indicar la propiedad de calidad de la secuencia que se está solucionando.
+Enumeración **StreamQualityProperty** usada por los métodos [**ITStreamQualityControl::GetRange**](itstreamqualitycontrol-getrange.md), [**ITStreamQualityControl::Get**](itstreamqualitycontrol-get.md)e [**ITStreamQualityControl::Set**](itstreamqualitycontrol-set.md) para indicar la propiedad de calidad de flujo que se está abordando.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -54,7 +54,7 @@ Intervalo máximo de fotogramas.
 <span id="StreamQuality_AvgFrameInterval"></span><span id="streamquality_avgframeinterval"></span><span id="STREAMQUALITY_AVGFRAMEINTERVAL"></span>**StreamQuality \_ AvgFrameInterval**
 </dt> <dd>
 
-Intervalo mínimo de fotogramas.
+Intervalo de fotogramas mínimo.
 
 </dd> </dl>
 
@@ -64,8 +64,8 @@ Intervalo mínimo de fotogramas.
 
 | Requisito | Value |
 |-------------------------|------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,1<br/>                                                       |
-| Encabezado<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                       |
+| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 
@@ -76,10 +76,10 @@ Intervalo mínimo de fotogramas.
 [**ITStreamQualityControl::GetRange**](itstreamqualitycontrol-getrange.md)
 </dt> <dt>
 
-[**ITStreamQualityControl:: get**](itstreamqualitycontrol-get.md)
+[**ITStreamQualityControl::Get**](itstreamqualitycontrol-get.md)
 </dt> <dt>
 
-[**ITStreamQualityControl:: set**](itstreamqualitycontrol-set.md)
+[**ITStreamQualityControl::Set**](itstreamqualitycontrol-set.md)
 </dt> </dl>
 
  

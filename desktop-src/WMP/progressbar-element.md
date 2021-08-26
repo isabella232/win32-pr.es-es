@@ -3,37 +3,37 @@ title: Elemento PROGRESSBAR
 description: Elemento PROGRESSBAR
 ms.assetid: 1fd0a523-dadd-4cd8-829e-ac22847c97d4
 keywords:
-- Aspectos de Windows Media Player, elemento PROGRESSBAR
-- aspectos, elemento PROGRESSBAR
+- Reproductor de Windows Media máscaras, elemento PROGRESSBAR
+- skins,PROGRESSBAR, elemento
 - Elemento PROGRESSBAR
-- referencia de las máscaras, elemento PROGRESSBAR
-- elementos, PROGRESSBAR
+- referencia de máscaras, elemento PROGRESSBAR
+- elements,PROGRESSBAR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b386d55acbfe2d767c8bca5e608648b92d98fb50
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bc3f983a1938a605220cd110b267b97e805a06ba2c16a9778bae77ba918f02da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901125"
 ---
 # <a name="progressbar-element"></a>Elemento PROGRESSBAR
 
-El elemento **PROGRESSBAR** proporciona una forma de Mostrar información de progreso en un control horizontal o vertical. Este elemento es idéntico al elemento **Slider** . Normalmente, una barra de progreso es un control deslizante que no es interactivo, pero no hay nada que le impida usarse de forma interactiva. Este elemento se proporciona únicamente como una mejor etiqueta para que el noninteractivity quede claro en el código, si decide usarlo de esta manera. No tiene ningún otro valor.
+El **elemento PROGRESSBAR** proporciona una manera de mostrar información de progreso en un control horizontal o vertical. Este elemento es idéntico al **elemento SLIDER.** Normalmente, una barra de progreso es un control deslizante que no es interactivo, pero no hay nada que impida que se utilice de forma interactiva. Este elemento se proporciona únicamente como una etiqueta de conveniencia para que la no interactividad sea clara en el código, si decide usarlo de esa manera. No tiene ningún otro valor.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Referencia de programación de máscara**](skin-programming-reference.md)
+[**Referencia de programación de máscaras**](skin-programming-reference.md)
 </dt> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

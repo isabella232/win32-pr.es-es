@@ -1,21 +1,21 @@
 ---
 title: Ejemplo de WriteRead
-description: WriteRead. cpp crea un conjunto de propiedades, escribe una propiedad, cierra y vuelve a abrir el conjunto de propiedades y vuelve a leer la propiedad.
+description: WriteRead.cpp crea un conjunto de propiedades, escribe una propiedad, cierra y vuelve a abrir el conjunto de propiedades y vuelve a leer la propiedad.
 ms.assetid: c5807dd9-2928-497b-9446-729dcaeebc8a
 keywords:
-- Strctd de almacenamiento estructurado STG, ejemplos, WriteRead
+- Structured Storage Strctd Stg , samples, WriteRead
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 362af8665f56e1dc8d7909fb1363e3e0ee7a8136
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f8d869076635904ab61dcf3f210cf5e3cb96308a3e6ce20090dbd227e1f4e34d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034745"
 ---
 # <a name="writeread-sample"></a>Ejemplo de WriteRead
 
-WriteRead. cpp crea un conjunto de propiedades, escribe una propiedad, cierra y vuelve a abrir el conjunto de propiedades y vuelve a leer la propiedad. Esta aplicación de ejemplo crea el archivo "WriteRead. STG" en el directorio actual. Crea conjuntos de propiedades en un archivo de almacenamiento de estructura, pero un cambio de una línea hace que cree conjuntos de propiedades del sistema de archivos NTFS.
+WriteRead.cpp crea un conjunto de propiedades, escribe una propiedad, cierra y vuelve a abrir el conjunto de propiedades y vuelve a leer la propiedad. Esta aplicación de ejemplo crea el archivo "WriteRead.stg" en el directorio actual. Crea conjuntos de propiedades en un archivo de almacenamiento de estructura, pero un cambio de una línea hace que cree conjuntos de propiedades del sistema de archivos NTFS.
 
 
 ```C++
@@ -168,9 +168,9 @@ EXTERN_C void wmain()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Métodos de ComputeGlyphOrigins de IDWriteFactory4 (Dwrite \_ 3. h)
-description: Convierte los lugares de ejecución del glifo en orígenes del glifo.
+title: Métodos de IDWriteFactory4 ComputeGlyphOrigins (Dwrite \_ 3.h)
+description: Convierte las ubicaciones de ejecución de glifos en orígenes de glifo.
 ms.assetid: 4cfe6667-f2ca-0cb7-8429-6050bf4fddb3
 keywords:
-- Métodos ComputeGlyphOrigins de escritura directa
+- Métodos computeGlyphOrigins de escritura directa
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e10e0ca0b0d8ec3b2cc3aba7fdf07c19a3057c08
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 85772aa5cc05cc315f8f0238a2eb0bac8318dca61afcfcde900a7d7cfc78607b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902795"
 ---
-# <a name="idwritefactory4computeglyphorigins-methods"></a>IDWriteFactory4:: ComputeGlyphOrigins (métodos)
+# <a name="idwritefactory4computeglyphorigins-methods"></a>Métodos IDWriteFactory4::ComputeGlyphOrigins
 
-Convierte los lugares de ejecución del glifo en orígenes del glifo.
+Convierte las ubicaciones de ejecución de glifos en orígenes de glifo.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Convierte los lugares de ejecución del glifo en orígenes del glifo.
 
 | Método                                                                                                                                                              | Descripción                                                                                                                                                        |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ComputeGlyphOrigins ( \_ \_ ejecución de GLIFO de DWRITE \_ , \_ modo de medición de DWRITE, punto de D2D1 \_ \_ 2F, \_ matriz de DWRITE, punto de D2D1. \_ \_ 2F \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-computeglyphorigins(dwrite_glyph_runconst_d2d1_point_2f_d2d1_point_2f)) | Convierte los lugares de ejecución del glifo en orígenes del glifo.<br/>                                                                                                         |
-| [**ComputeGlyphOrigins (DWRITE \_ GLYPH \_ Run, D2D1 \_ Point \_ 2F, D2D1 \_ Point \_ 2F \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-computeglyphorigins(dwrite_glyph_runconst_d2d1_point_2f_d2d1_point_2f))                                        | Convierte los lugares de ejecución del glifo en orígenes del glifo. Esta sobrecarga es para métricas naturales, que incluye SVG, modos naturales de TrueType y colocación de mapas de bits.<br/> |
+| [**ComputeGlyphOrigins(DWRITE \_ GLYPH \_ RUN, DWRITE \_ MEASURING \_ MODE, D2D1 \_ POINT \_ 2F, DWRITE \_ MATRIX, D2D1 \_ POINT \_ 2F \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-computeglyphorigins(dwrite_glyph_runconst_d2d1_point_2f_d2d1_point_2f)) | Convierte las ubicaciones de ejecución de glifos en orígenes de glifo.<br/>                                                                                                         |
+| [**ComputeGlyphOrigins(DWRITE \_ GLYPH \_ RUN, D2D1 \_ POINT \_ 2F, D2D1 \_ POINT \_ 2F \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-computeglyphorigins(dwrite_glyph_runconst_d2d1_point_2f_d2d1_point_2f))                                        | Convierte las ubicaciones de ejecución de glifos en orígenes de glifo. Esta sobrecarga es para métricas naturales, que incluyen SVG, modos naturales TrueType y colocación de mapa de bits.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Convierte los lugares de ejecución del glifo en orígenes del glifo.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dwrite \_ 3. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dwrite \_ 3.h</dt> </dl> |
 
 
 
