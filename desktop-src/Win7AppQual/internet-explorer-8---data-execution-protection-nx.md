@@ -44,7 +44,7 @@ ms.locfileid: "119998895"
 
 ## <a name="description"></a>Descripción
 
-DEP/NX es una característica de seguridad que ayuda a mitigar las vulnerabilidades relacionadas con la memoria. A partir Internet Explorer 8, todos los procesos Internet Explorer habilitan la característica DEP/NX de forma predeterminada.
+DEP/NX es una característica de seguridad que ayuda a mitigar las vulnerabilidades relacionadas con la memoria. A partir Internet Explorer 8, todos los Internet Explorer habilitan la característica DEP/NX de forma predeterminada.
 
 ## <a name="manifestation-of-impact"></a>Consecuencia del impacto
 
@@ -68,7 +68,7 @@ Compile aplicaciones mediante las versiones más recientes de los marcos compati
 
 -   Pruebe el código con DEP/NX habilitado mediante la versión Internet Explorer más reciente en Windows Vista SP1 o posterior.
 -   Pruebe con Internet Explorer 7 en Windows Vista después de habilitar la opción DEP/NX. Para habilitar DEP/NX para Internet Explorer 7, ejecute Internet Explorer como administrador y, a continuación, establezca la casilla adecuada en la pestaña Herramientas > Opciones de Internet > avanzadas.
--   Ejecute Internet Explorer Compatibility Test Tool (IECTT), que se proporciona con el Toolkit de compatibilidad de aplicaciones (ACT) para localizar los posibles problemas debidos a los cambios de DEP/NX.
+-   Ejecute Internet Explorer Compatibility Test Tool (IECTT), que se proporciona con application Compatibility Toolkit (ACT) para localizar los posibles problemas debidos a los cambios de DEP/NX.
 
 ## <a name="links-to-other-resources"></a>Vínculos a otros recursos
 
@@ -76,7 +76,7 @@ Compile aplicaciones mediante las versiones más recientes de los marcos compati
 -   [Prevención de ejecución de datos](../memory/data-execution-prevention.md)
 -   [Nuevas API nx agregadas a Windows Vista SP1, Windows XP SP3 y Windows Server 2008 R2](/archive/blogs/michael_howard/)
 -   [Compatibilidad de aplicaciones Toolkit descarga](/windows-hardware/get-started/adk-install)
--   [Problemas conocidos Internet Explorer características de seguridad de seguridad](/previous-versions/windows/it-pro/windows-7/cc722079(v=ws.10))
+-   [Problemas conocidos Internet Explorer características de seguridad](/previous-versions/windows/it-pro/windows-7/cc722079(v=ws.10))
 
  
 

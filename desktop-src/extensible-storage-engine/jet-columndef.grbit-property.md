@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_COLUMNDEF. grbit'
-title: Propiedad JET_COLUMNDEF. grbit
+description: 'Más información sobre: JET_COLUMNDEF.grbit'
+title: JET_COLUMNDEF.grbit, propiedad
 TOCTitle: 'grbit property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_COLUMNDEF.grbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columndef.grbit(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 68d5e2ef2bdb2c7f7e6abe9b23d94a607b3c88c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c98dbb817bdc4aa71c89847c7236542d795e175610847f2a38fcb6d5dfdaf4a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968445"
 ---
-# <a name="jet_columndefgrbit-property"></a>Propiedad JET_COLUMNDEF. grbit
+# <a name="jet_columndefgrbit-property"></a>JET_COLUMNDEF.grbit, propiedad
 
 Obtiene o establece las opciones de columna.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public ColumndefGrbit grbit { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft. ISAM. esent. Interop. ColumndefGrbit](./columndefgrbit-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.ColumndefGrbit](./columndefgrbit-enumeration.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COLUMNDEF (clase)](./jet-columndef-class.md)
+[JET_COLUMNDEF clase](./jet-columndef-class.md)
 
-[Miembros de JET_COLUMNDEF](./jet-columndef-members.md)
+[JET_COLUMNDEF miembros](./jet-columndef-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

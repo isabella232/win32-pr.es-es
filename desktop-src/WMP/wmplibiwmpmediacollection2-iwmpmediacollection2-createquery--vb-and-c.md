@@ -111,7 +111,7 @@ Next i
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -119,7 +119,7 @@ Next i
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

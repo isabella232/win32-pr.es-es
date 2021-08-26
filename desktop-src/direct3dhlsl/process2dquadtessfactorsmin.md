@@ -1,9 +1,9 @@
 ---
-title: Process2DQuadTessFactorsMin función)
-description: Genera los factores de teselación corregidos para una revisión cuádruple. | Process2DQuadTessFactorsMin función)
+title: Función Process2DQuadTessFactorsMin
+description: Genera los factores de teselación corregidos para una revisión cuadrántica. | Función Process2DQuadTessFactorsMin
 ms.assetid: 45adf78a-9386-4460-97df-59d7739a1eee
 keywords:
-- Process2DQuadTessFactorsMin de función HLSL
+- Función HLSL Process2DQuadTessFactorsMin
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 471e244936d6322e31cfd50260151bc56a9764cf
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 77f62ff1b55b9c0c36a70bd64f2b0d5ad95be747d5fd11cae33e82eb896d21d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067905"
 ---
-# <a name="process2dquadtessfactorsmin-function"></a>Process2DQuadTessFactorsMin función)
+# <a name="process2dquadtessfactorsmin-function"></a>Función Process2DQuadTessFactorsMin
 
-Genera los factores de teselación corregidos para una revisión cuádruple.
+Genera los factores de teselación corregidos para una revisión cuadrántica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,48 +40,48 @@ void Process2DQuadTessFactorsMin(
 
 <dl> <dt>
 
-*RawEdgeFactors* \[ de\]
+*RawEdgeFactors* \[ En\]
 </dt> <dd>
 
-Tipo: **FLOAT4**
+Tipo: **float4**
 
-Factores de teselación perimetral que se pasan a la fase del teselador.
+Los factores de teselación del borde, pasados a la fase del teselador.
 
 </dd> <dt>
 
-*InsideScale* \[ de\]
+*InsideScale* \[ En\]
 </dt> <dd>
 
 Tipo: **float2**
 
-Factor de escala aplicado a los factores de teselación de UV calculados por la fase de teselación. El intervalo permitido para InsideScale es de 0,0 a 1,0.
+Factor de escala aplicado a los factores de teselación UV calculados por la fase de teselación. El intervalo permitido para InsideScale es de 0,0 a 1,0.
 
 </dd> <dt>
 
-*RoundedEdgeTessFactors* \[ enuncia\]
+*RoundedEdgeTessFactors* \[ out\]
 </dt> <dd>
 
-Tipo: **FLOAT4**
+Tipo: **float4**
 
-Los factores de teselación perimetral redondeados calculados por la fase del teselador.
-
-</dd> <dt>
-
-*RoundedInsideTessFactors* \[ enuncia\]
-</dt> <dd>
-
-Tipo: **float2**
-
-Los factores de teselación redondeados calculados por la fase del teselador para los bordes interiores.
+Factores de teselación de borde redondeados calculados por la fase del teselador.
 
 </dd> <dt>
 
-*UnroundedInsideTessFactors* \[ enuncia\]
+*RoundedInsideTessFactors* \[ out\]
 </dt> <dd>
 
 Tipo: **float2**
 
-Los factores de teselación calculados por la fase del teselador para los bordes interiores.
+Factores de teselación redondeados calculados por la fase del teselador para los bordes interiores.
+
+</dd> <dt>
+
+*UnroundedInsideTessFactors* \[ out\]
+</dt> <dd>
+
+Tipo: **float2**
+
+Factores de teselación calculados por la fase del teselador para los bordes interiores.
 
 </dd> </dl>
 
@@ -89,11 +89,11 @@ Los factores de teselación calculados por la fase del teselador para los bordes
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Genera los factores de teselación corregidos para una revisión cuádruple, calculando los factores de teselación interior como el mínimo de los factores de teselación perimetral. Los factores de teselación de ti y V dentro de se calculan de forma independiente mediante los mínimos de los lados opuestos del dominio y, a continuación, se escalan por InsideScale. Después, el resultado se redondea según el modo de partición, pero los resultados no redondeados están disponibles mediante el parámetro UnroundedInsideTessFactors.
+Genera los factores de teselación corregidos para una revisión cuadrántica y computa los factores de teselación dentro como el mínimo de los factores de teselación perimetral. El usuario y la V dentro de los factores de teselación se calculan de forma independiente mediante los mínimos de los lados opuestos del dominio y, a continuación, InsideScale escala. A continuación, el resultado se redondea en función del modo de creación de particiones, pero los resultados sin dividir están disponibles mediante el parámetro UnroundedInsideTessFactors.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -101,7 +101,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 
@@ -111,7 +111,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 

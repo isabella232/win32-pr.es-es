@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de ProcessingErrorDataType
-description: Define un error que se produjo al representar los datos de evento para el evento.
+title: Tipo complejo ProcessingErrorDataType
+description: Define un error que se produjo al representar los datos del evento para el evento.
 ms.assetid: fd1cc78c-1da5-43c5-8c4b-8abe7e1dc1e1
 keywords:
-- ProcessingErrorDataType tipo complejo EventLog
+- ProcessingErrorDataType de tipo complejo EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ffcc9d2beed4050a8eed34925f30e52f67d129b0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5ee34e566bafa72812303fcb1f41b664a45aa77772e6ee818b9cb79bc94cbb51
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904535"
 ---
-# <a name="processingerrordatatype-complex-type"></a>Tipo complejo de ProcessingErrorDataType
+# <a name="processingerrordatatype-complex-type"></a>Tipo complejo ProcessingErrorDataType
 
-Define un error que se produjo al representar los datos de evento para el evento. Esto puede ocurrir si los datos de evento no coinciden con la definición de plantilla de datos de evento del manifiesto.
+Define un error que se produjo al representar los datos del evento para el evento. Esto puede ocurrir si los datos del evento no coinciden con la definición de la plantilla de datos de evento en el manifiesto.
 
 ``` syntax
 <xs:complexType name="ProcessingErrorDataType">
@@ -58,7 +58,7 @@ Define un error que se produjo al representar los datos de evento para el evento
 |----------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------|
 | [**DataItemName**](eventschema-dataitemname-processingerrordatatype-element.md) | string      | Nombre del elemento de datos de evento que produjo el error.<br/>                    |
 | [**ErrorCode**](eventschema-errorcode-processingerrordatatype-element.md)       | unsignedInt | Código de error del error que se produjo al representar los datos del evento.<br/> |
-| [**EventPayload**](eventschema-eventpayload-processingerrordatatype-element.md) | hexBinary   | Un BLOB binario que contiene los datos de evento completos.<br/>                        |
+| [**EventPayload**](eventschema-eventpayload-processingerrordatatype-element.md) | hexBinary   | Blob binario que contiene todos los datos de eventos.<br/>                        |
 
 
 
@@ -68,8 +68,8 @@ Define un error que se produjo al representar los datos de evento para el evento
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

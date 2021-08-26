@@ -1,7 +1,7 @@
 ---
 title: Esquema de eventos
 ms.assetid: 36037697-b777-4e5c-99af-77964200a3e4
-description: 'Más información acerca de: esquema de eventos'
+description: 'Más información sobre: Esquema de eventos'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,31 +9,31 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bfb26f6c71d544e0c0a6a4d833b40a5d15ae5485
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c08e22ad44cb1eec461ebe70361a8ee4640a7fdf5a7eb7040b2774a520be7a05
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904365"
 ---
 # <a name="event-schema"></a>Esquema de eventos
 
-El esquema de eventos define los siguientes elementos y tipos que identifican los elementos y los atributos de un evento registrado:
+El esquema de eventos define los siguientes elementos y tipos que identifican los elementos y atributos de un evento registrado:
 
 -   [Elementos EventSchema](eventschema-elements.md)
--   [EventSchema tipos simples](eventschema-simple-types.md)
+-   [Tipos simples de EventSchema](eventschema-simple-types.md)
 -   [Tipos complejos de EventSchema](eventschema-complex-types.md)
 
-La sección Elements contiene los nombres de los elementos que encontraría en los eventos registrados; sin embargo, para obtener los detalles de cada elemento, vea el tipo complejo que contiene el elemento.
+La sección elements contiene los nombres de los elementos que encontraría en un evento registrado; sin embargo, para obtener los detalles de cada elemento, vea el tipo complejo que contiene el elemento.
 
-El Windows SDK incluye el esquema en el \\ \\ archivo Event. xsd de inclusión.
+El SDK Windows incluye el esquema en el \\ archivo \\ Include Event.xsd.
 
-Puede utilizar este esquema para identificar los elementos y atributos al llamar a la función [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para representar secciones o propiedades específicas del evento. Para obtener un ejemplo en el que se muestra cómo usar este esquema al representar eventos, vea [representar eventos](rendering-events.md).
+Puede usar este esquema para identificar los elementos y atributos al llamar a la función [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para representar secciones o propiedades específicas del evento. Para obtener un ejemplo que muestra cómo usar este esquema al representar eventos, vea [Eventos de representación](rendering-events.md).
 
-Además del esquema de eventos, el registro de eventos de Windows también define los esquemas siguientes:
+Además del esquema de eventos, Windows registro de eventos también define los esquemas siguientes:
 
--   [Esquema EventManifest](eventmanifestschema-schema.md): define los elementos y tipos que se usan para escribir un manifiesto de instrumentación.
--   [Esquema de consulta](queryschema-schema.md): define los elementos y tipos que se usan para escribir una consulta para recuperar eventos de uno o más canales.
+-   [Esquema EventManifest:](eventmanifestschema-schema.md)define los elementos y tipos usados para escribir un manifiesto de instrumentación.
+-   [Esquema de](queryschema-schema.md)consulta: define los elementos y tipos usados para escribir una consulta para recuperar eventos de uno o varios canales.
 
  
 

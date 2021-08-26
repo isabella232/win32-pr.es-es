@@ -3,27 +3,27 @@ title: Traducción de la biblioteca GLX
 description: Traducción de la biblioteca GLX
 ms.assetid: 040fe6f1-f6ba-4dfa-b294-447efd686361
 keywords:
-- OpenGL en Windows, biblioteca GLX
-- trasladar a OpenGL, biblioteca GLX
-- Portabilidad de OpenGL, biblioteca GLX
+- OpenGL en Windows,biblioteca GLX
+- porting to OpenGL,GLX library
+- Porte de OpenGL, biblioteca GLX
 - Biblioteca GLX OpenGL
-- Xlib (funciones) OpenGL
+- Funciones de Xlib OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6e4cede2b74dc2881f867370744ee14c00cceba
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e6864173cf85e0db24e77c53a7627a90e6110a1ff3ec3d94a7c85e456f98ffd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034455"
 ---
 # <a name="translating-the-glx-library"></a>Traducción de la biblioteca GLX
 
-Los programas del sistema de Windows OpenGL X usan la extensión OpenGL con la biblioteca X Window System (GLX). La biblioteca es un conjunto de funciones y rutinas que inicializan el formato de píxeles, la representación de controles y realizan otras tareas específicas de OpenGL. Conecta la biblioteca de OpenGL al sistema de ventana X mediante la administración de los identificadores de ventana y los contextos de representación. Debe traducir estas funciones a sus funciones equivalentes de Windows. En la tabla siguiente se enumeran las funciones de GLX del sistema de ventana X y sus funciones de Windows equivalentes.
+Los programas del sistema de ventanas X de OpenGL usan la extensión OpenGL con la biblioteca X Window System (GLX). La biblioteca es un conjunto de funciones y rutinas que inicializan el formato de píxel, controlan la representación y realizan otras tareas específicas de OpenGL. Conecta la biblioteca OpenGL al sistema de ventanas X mediante la administración de identificadores de ventana y la representación de contextos. Debe traducir estas funciones a sus funciones de Windows equivalentes. En la tabla siguiente se enumeran las funciones GLX del sistema de ventanas X y sus funciones Windows equivalentes.
 
 
 
-| GLX/Xlib, función         | Función de Windows                                                                                                                                       |
+| Función GLX/Xlib         | Windows función                                                                                                                                       |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **glXChooseVisual**       | [**ChoosePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat)                                                                                                         |
 | **glXCopyContext**        | No es aplicable.                                                                                                                                        |
@@ -41,18 +41,18 @@ Los programas del sistema de Windows OpenGL X usan la extensión OpenGL con la b
 | **glXSwapBuffers**        | [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers)                                                                                                                     |
 | **glXUseXFont**           | [**wglUseFontBitmaps**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontbitmapsa)                                                                                                         |
 | **XGetVisualInfo**        | [**GetPixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-getpixelformat)                                                                                                               |
-| **XCreateWindow**         | [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa), [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa), [**GetDC**](/windows/desktop/api/winuser/nf-winuser-getdc), [**BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) |
+| **XCreateWindow**         | [**CreateWindow,**](/windows/win32/api/winuser/nf-winuser-createwindowa) [**CreateWindowEx,**](/windows/win32/api/winuser/nf-winuser-createwindowexa) [**GetDC,**](/windows/desktop/api/winuser/nf-winuser-getdc) [**BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) |
 | **XSync**                 | [**GdiFlush**](/windows/desktop/api/wingdi/nf-wingdi-gdiflush)                                                                                                                           |
 | No es aplicable.           | [**SetPixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-setpixelformat)                                                                                                               |
 
 
 
- 
+ 
 
-Algunas funciones GLX no tienen una función de Windows equivalente. Para trasladar estas funciones a Windows, reescriba el código para lograr la misma funcionalidad. Por ejemplo, **glXWaitGL** no tiene una función equivalente de Windows, pero puede lograr el mismo resultado, ejecutando cualquier comando OpenGL pendiente, llamando a [**glFinish**](glfinish.md).
+Algunas funciones GLX no tienen una función Windows equivalente. Para portabilidad de estas funciones Windows, vuelva a escribir el código para lograr la misma funcionalidad. Por ejemplo, **glXWaitGL** no tiene ninguna función Windows equivalente, pero puede lograr el mismo resultado, ejecutando los comandos de OpenGL pendientes mediante una llamada a [**glFinish**](glfinish.md).
 
-En los temas siguientes se describe cómo migrar las funciones de GLX que establecen el formato de píxel y administrar contextos de representación, pixmaps y mapas de bits.
+En los temas siguientes se describe cómo portabilidad de funciones GLX que establecen el formato de píxel y administran contextos de representación, mapas de mapas y mapas de bits.
 
- 
+ 
 
- 
+ 

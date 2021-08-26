@@ -1,26 +1,26 @@
 ---
-title: Color2 (atributo, Fill) (VML)
-description: Color2 (atributo, Fill) (VML)
+title: Atributo Color2 (Fill)(VML)
+description: Atributo Color2 (Fill)(VML)
 ms.assetid: 971c8783-8c7b-43c7-8b94-01159336eef6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5689bba52277b4056f57a171f3ffc1e197aa4c8b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8e651245ddf9fb2a3669c3529038b5d0d8cbb3922b8a112c201858d2efd786a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105676449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007895"
 ---
-# <a name="color2-attribute-fillvml"></a>Color2 (atributo, Fill) (VML)
+# <a name="color2-attribute-fillvml"></a>Atributo Color2 (Fill)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define un segundo color para los rellenos. Lectura/escritura [VgColor](msdn-online-vml-ivgcolor.md) .
+Define un segundo color para los rellenos. Lectura/escritura [DvColor](msdn-online-vml-ivgcolor.md) .
 
 **Se aplica a**
 
@@ -28,17 +28,17 @@ Define un segundo color para los rellenos. Lectura/escritura [VgColor](msdn-onli
 
 **Sintaxis de etiquetas**
 
-<v: *elemento* color2 = " *expresión* " >
+<v: *element* color2=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . color2 = "*expresión*"
+*element* .color2="*expression*"
 
-*expresión* = de *elemento*. color2
+*expresión* = *elemento*.color2
 
 **Comentarios:**
 
-Se utiliza un segundo color cuando un tipo de relleno es un patrón o un degradado. El valor predeterminado es **blanco**.
+Se usa un segundo color cuando un tipo de relleno es un patrón o un degradado. El valor predeterminado es **Blanco.**
 
 *Atributo estándar de VML*
 
@@ -59,6 +59,6 @@ El tipo de relleno de la forma es un patrón en el que la imagen de origen defin
 
 
 
- 
+ 
 
- 
+ 

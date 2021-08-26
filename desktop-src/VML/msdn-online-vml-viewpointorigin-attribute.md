@@ -20,7 +20,7 @@ En este tema se describe VML, una característica que está en desuso a partir W
 
  
 
-Define el origen del punto de vista dentro del cuadro de límite de la forma. Lectura/escritura **Dvvector2D**.
+Define el origen del punto de vista dentro del cuadro de límite de la forma. Lectura/escritura **DvVector2D**.
 
 **Se aplica a**
 

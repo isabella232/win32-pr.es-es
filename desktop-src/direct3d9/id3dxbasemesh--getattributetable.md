@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7f5d27de884f72b46db900487e26f1099bf30949
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4933c3e15faee28448a653c5479be0d976abfd7bd913a7b50ef34acf4b52f6f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026505"
 ---
 # <a name="id3dxbasemeshgetattributetable-method"></a>Método ID3DXBaseMesh::GetAttributeTable
 
@@ -55,7 +55,7 @@ Puntero a una matriz de [**estructuras D3DXATTRIBUTERANGE,**](d3dxattributerange
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntero al número de entradas almacenadas en pAttribTable o a un valor que se va a rellenar con el número de entradas almacenadas en la tabla de atributos de la malla.
+Puntero al número de entradas almacenadas en pAttribTable o un valor que se va a rellenar con el número de entradas almacenadas en la tabla de atributos de la malla.
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 [**Id3DXMesh::Optimize**](id3dxmesh--optimize.md) crea una tabla de atributos y pasa D3DXMESHOPT \_ ATTRSORT para el parámetro Flags.
 
-Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con diferentes texturas, estados de representación, materiales, entre otras. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla al no dibujar un identificador de atributo determinado al dibujar el marco.
+Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con diferentes texturas, estados de representación, materiales, entre otras. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla no dibujando un identificador de atributo determinado al dibujar el marco.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ Una tabla de atributos se usa para identificar las áreas de la malla que deben 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

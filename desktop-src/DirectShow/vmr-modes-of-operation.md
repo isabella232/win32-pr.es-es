@@ -4,24 +4,24 @@ ms.assetid: 98244af1-5934-4d1c-b9c3-7a414b065fe7
 title: Modos de funcionamiento de VMR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43427c4119bb912d2bc2cf92b1c740b1d22e1bf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88e7a1fa378ff781a712f71c877c32991cf19683a81daa10ff9b2fbbea40e7c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049375"
 ---
 # <a name="vmr-modes-of-operation"></a>Modos de funcionamiento de VMR
 
-La arquitectura de componentes de VMR permite a las aplicaciones configurarlo de varias maneras, dependiendo de cómo se realice la representación. En la tabla siguiente se muestran los tres modos de presentación y los dos modos de combinación, y los componentes que están presentes para cada configuración.
+La arquitectura de componentes de VMR permite a las aplicaciones configurarla de varias maneras, en función de cómo se realice la representación. En la tabla siguiente se muestran los tres modos de presentación y los dos modos de combinación, y los componentes que están presentes para cada configuración.
 
 
 
-| Mode       | Flujo único                                                                     | Varias secuencias (modo de combinación)                                                                                             |
+| Modo       | Secuencia única                                                                     | Varias Secuencias (modo de combinación)                                                                                             |
 |------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Ventanas   | Allocator: unidad de sincronización presenterCore<br/> Administrador de ventanas<br/> | MixerCompositor\*<br/> Allocator-Presenter<br/> Unidad de sincronización básica<br/> Administrador de ventanas<br/> |
-| Sin ventana | Allocator: unidad de sincronización presenterCore<br/>                           | MixerCompositor\*<br/> Allocator-Presenter<br/> Unidad de sincronización básica<br/>                           |
-| No rendered | Allocator-Presenter (proporcionado por la aplicación) unidad de sincronización principal<br/> | MixerCompositor\*<br/> Allocator: presentador (proporcionado por la aplicación)<br/> Unidad de sincronización básica<br/> |
+| Ventana   | Unidad de sincronización allocator-presenterCore<br/> Administrador de ventanas<br/> | MixerCompositor\*<br/> Allocator-presenter<br/> Unidad de sincronización principal<br/> Administrador de ventanas<br/> |
+| Sin ventanas | Unidad de sincronización allocator-presenterCore<br/>                           | MixerCompositor\*<br/> Allocator-presenter<br/> Unidad de sincronización principal<br/>                           |
+| Sin representación | Allocator-presenter (proporcionado por la aplicación)Unidad de sincronización principal<br/> | MixerCompositor\*<br/> Allocator-presenter (proporcionado por la aplicación)<br/> Unidad de sincronización principal<br/> |
 
 
 
@@ -29,18 +29,18 @@ La arquitectura de componentes de VMR permite a las aplicaciones configurarlo de
 
 \* Indica que la aplicación tiene la opción de proporcionar un componente personalizado o usar el componente predeterminado.
 
-En todas las configuraciones, el punto principal a recordar al crear gráficos de filtros con la VMR es que debe configurar la VMR antes de conectarla.
+En todas las configuraciones, el punto principal que se debe recordar al crear gráficos de filtro con vmr es que debe configurar el VMR antes de conectarlo.
 
-Para todas las configuraciones, los PIN no se pueden agregar ni quitar dinámicamente después de que el VMR esté conectado al filtro de nivel superior, pero se pueden conectar y desconectar. Si la aplicación no está seguro de cuántos PIN serán necesarios, debe configurar la VMR para el número máximo que podría ser necesario. La presencia de clavijas de entrada sin usar en el filtro no degrada el rendimiento de la representación. A diferencia del mezclador de superposición anterior, VMR no tiene ningún PIN de salida porque no requiere un filtro independiente para la administración de ventanas.
+Para todas las configuraciones, los pins no se pueden agregar ni quitar dinámicamente después de que el VMR esté conectado al filtro ascendente, pero se pueden conectar y desconectar. Si la aplicación no está segura de cuántos pines se van a necesitar, debe configurar el VMR para el número máximo que podría ser necesario. La presencia de pines de entrada no usados en el filtro no degrada el rendimiento de la representación. A diferencia de la versión Mixer, la máquina virtual no tiene ningún pin de salida porque no requiere un filtro independiente para la administración de ventanas.
 
-En las secciones siguientes se describe cómo configurar la VMR para un modo determinado:
+En las secciones siguientes se describe cómo configurar vmr para un modo determinado:
 
 -   [Modo de ventana de VMR (compatibilidad)](vmr-windowed--compatibility--mode.md)
--   [Modo sin ventana de VMR](vmr-windowless-mode.md)
--   [VMR con varias secuencias (modo de combinación)](vmr-with-multiple-streams--mixing-mode.md)
--   [Modo de mezcla YUV](yuv-mixing-mode.md)
+-   [Modo sin ventanas de VMR](vmr-windowless-mode.md)
+-   [VMR con varias Secuencias (modo de combinación)](vmr-with-multiple-streams--mixing-mode.md)
+-   [Modo de combinación de YUV](yuv-mixing-mode.md)
 -   [Colocar y mover rectángulos de vídeo en el espacio de composición](positioning-and-moving-video-rectangles-in-composition-space.md)
--   [Modo de reproducción no representativo de VMR (asignador personalizado)](vmr-renderless-playback-mode--custom-allocator-presenters.md)
+-   [Modo de reproducción sin representación de VMR (asignador-presentadores personalizados)](vmr-renderless-playback-mode--custom-allocator-presenters.md)
 -   [Modo exclusivo de DirectDraw](directdraw-exclusive-mode.md)
 
  

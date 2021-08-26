@@ -1,23 +1,23 @@
 ---
 description: Si desea mostrar una lista de objetos y sus contadores en una interfaz de usuario, debe recuperar los datos de rendimiento.
 ms.assetid: 0d122fa8-2ed8-4bd8-a52e-6cb20fe81741
-title: Mostrar los nombres de objeto, instancia y contador
+title: Mostrar nombres de objeto, instancia y contador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92c0b7808ede82110d28b80c371d5f88ced03912
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 1b31251b9efd9624b63543d0690e4ee7eadfb638995d3b0f265f6d059b83ef20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103995718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033925"
 ---
-# <a name="displaying-object-instance-and-counter-names"></a>Mostrar los nombres de objeto, instancia y contador
+# <a name="displaying-object-instance-and-counter-names"></a>Mostrar nombres de objeto, instancia y contador
 
-Si desea mostrar una lista de objetos y sus contadores en una interfaz de usuario, debe recuperar los datos de rendimiento. Los datos de rendimiento contienen un número variable de objetos de rendimiento y sus instancias y contadores. Para obtener información sobre el formato de los datos de rendimiento, vea [performance Data Format](performance-data-format.md).
+Si desea mostrar una lista de objetos y sus contadores en una interfaz de usuario, debe recuperar los datos de rendimiento. Los datos de rendimiento contienen un número variable de objetos de rendimiento y sus instancias y contadores. Para obtener información sobre el formato de los datos de rendimiento, vea [Formato de datos de rendimiento](performance-data-format.md).
 
-Los datos de rendimiento no contienen los nombres de objeto y de contador. En su lugar, los datos contienen valores de índice que se usan para recuperar los nombres de los objetos y contadores, que se almacenan en recursos conocidos para la infraestructura de contadores de rendimiento. Sin embargo, los nombres de instancia se almacenan en datos de rendimiento. Para obtener un ejemplo en el que se leen los nombres de objetos y contadores del registro y se crea una tabla de índice para tener acceso a los nombres más adelante, vea [recuperar nombres de contadores y texto de ayuda](retrieving-counter-names-and-help-text.md).
+Los datos de rendimiento no contienen los nombres de objeto y contador. En su lugar, los datos contienen valores de índice que se usan para recuperar los nombres de los objetos y contadores, que se almacenan en recursos conocidos para la infraestructura de contadores de rendimiento. Sin embargo, los nombres de instancia se almacenan en datos de rendimiento. Para obtener un ejemplo en el que se leen los nombres de objeto y contador del Registro y se crea una tabla de índice para tener acceso a los nombres más adelante, vea Recuperar nombres de contador y Texto [de ayuda.](retrieving-counter-names-and-help-text.md)
 
-En el ejemplo siguiente se muestra cómo recuperar los bloques de objeto, instancia y contador a partir de los datos de rendimiento. Después de recuperar los nombres de objeto, los nombres de instancia y los nombres de contador, en el ejemplo se ordenan los objetos por nombre y por cada objeto, y se ordenan sus instancias y contadores por nombre. A continuación, el ejemplo imprime las listas ordenadas.
+En el ejemplo siguiente se muestra cómo recuperar los bloques de objeto, instancia y contador de los datos de rendimiento. Después de recuperar los nombres de objeto, los nombres de instancia y los nombres de contador, el ejemplo ordena los objetos por nombre y, para cada objeto, ordena sus instancias y contadores por nombre. A continuación, el ejemplo imprime las listas ordenadas.
 
 
 ```C++
@@ -819,9 +819,9 @@ void FreePerfObjects(PPERF_OBJECT pObjects, DWORD dwNumberOfObjects)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

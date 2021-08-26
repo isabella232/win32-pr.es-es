@@ -1,7 +1,7 @@
 ---
-description: La propiedad versión de solo lectura devuelve la versión del módulo que requiere la combinación actual.
+description: La propiedad Version de solo lectura devuelve la versión del módulo requerida por la combinación actual.
 ms.assetid: 784fb75c-2ed2-411a-b441-9c81297b487d
-title: Propiedad Dependency. version (Mergemod. h)
+title: Propiedad Dependency.Version (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: aa3f95d73bdd6bda0c0f9a71fd3f4d9292e8c5fb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0de11edff94fb41e98696e1e2b16cc397f3bf05b599ad0740fb07de2c72cac37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074985"
 ---
-# <a name="dependencyversion-property"></a>Propiedad Dependency. version
+# <a name="dependencyversion-property"></a>Propiedad Dependency.Version
 
-La propiedad **versión** de solo lectura devuelve la versión del módulo que requiere la combinación actual.
+La propiedad Version **de** solo lectura devuelve la versión del módulo requerida por la combinación actual.
 
 Esta propiedad es de solo lectura.
 
@@ -40,16 +40,16 @@ propVal = Dependency.Version
 
 ## <a name="c"></a>C++
 
-Consulte [**Get \_ version**](/windows/win32/api/mergemod/nf-mergemod-imsmdependency-get_version) (función).
+Consulte [**la función get \_ Version.**](/windows/win32/api/mergemod/nf-mergemod-imsmdependency-get_version)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 1,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

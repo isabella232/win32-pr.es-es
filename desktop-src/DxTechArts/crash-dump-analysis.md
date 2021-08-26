@@ -1,55 +1,55 @@
 ---
 title: 'Análisis del volcado de memoria '
-description: En este artículo técnico se proporciona información sobre cómo escribir y usar un minivolcado.
+description: En este artículo técnico se proporciona información sobre cómo escribir y usar un minivolumen.
 ms.assetid: 575c4716-18c2-7b11-7308-aa2e3d8efac7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7558e47d08cb0183b8d9cefa5f22f0750fd1c598
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a3c68891e2e20938036bd016e6e786a2cdad0096ae44af0e8974a88052963be0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075525"
 ---
 # <a name="crash-dump-analysis"></a>Análisis del volcado de memoria 
 
-No todos los errores se pueden encontrar antes de la versión, lo que significa que no todos los errores que inician excepciones se pueden encontrar antes de la versión. Afortunadamente, Microsoft ha incluido en el SDK de la plataforma una función que ayuda a los desarrolladores a recopilar información sobre las excepciones detectadas por los usuarios. La función [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) escribe la información de volcado de memoria necesaria en un archivo sin guardar todo el espacio de proceso. Este archivo de información de volcado de memoria se denomina minivolcado. En este artículo técnico se proporciona información sobre cómo escribir y usar un minivolcado.
+No todos los errores se pueden encontrar antes de la versión, lo que significa que no todos los errores que inician excepciones se pueden encontrar antes de la versión. Afortunadamente, Microsoft ha incluido en el SDK de plataforma una función para ayudar a los desarrolladores a recopilar información sobre las excepciones detectadas por los usuarios. La [**función MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) escribe la información de volcado de memoria necesaria en un archivo sin guardar todo el espacio de proceso. Este archivo de información de volcado de memoria se denomina minivolca. En este artículo técnico se proporciona información sobre cómo escribir y usar un minivolumen.
 
--   [Escribir un minivolcado](#writing-a-minidump)
+-   [Escritura de un minivolumen](#writing-a-minidump)
 -   [Seguridad para subprocesos](#thread-safety)
--   [Escribir un minivolcado con código](#writing-a-minidump-with-code)
--   [Usar Dumpchk.exe](#using-dumpchkexe)
--   [Analizar un minivolcado](#analyzing-a-minidump)
-    -   [Usar el servidor de símbolos públicos de Microsoft](#using-the-microsoft-public-symbol-server)
-    -   [Depurar un minivolcado con WinDbg](#debugging-a-minidump-with-windbg)
-    -   [Usar herramientas de Copy-Protection con Minivolcados](#using-copy-protection-tools-with-minidumps)
+-   [Escritura de un minivolumen con código](#writing-a-minidump-with-code)
+-   [Uso de Dumpchk.exe](#using-dumpchkexe)
+-   [Análisis de un minivolumen](#analyzing-a-minidump)
+    -   [Uso del servidor de símbolos públicos de Microsoft](#using-the-microsoft-public-symbol-server)
+    -   [Depuración de un minivolumen con WinDbg](#debugging-a-minidump-with-windbg)
+    -   [Uso de Copy-Protection tools con minivolúmpos](#using-copy-protection-tools-with-minidumps)
 -   [Resumen](#summary)
 
-## <a name="writing-a-minidump"></a>Escribir un minivolcado
+## <a name="writing-a-minidump"></a>Escritura de un minivolumen
 
-Las opciones básicas para escribir un minivolcado son las siguientes:
+Las opciones básicas para escribir un minivolumen son las siguientes:
 
--   No haga nada. Windows genera automáticamente un minivolcado cada vez que un programa produce una excepción no controlada. La generación automática de un minivolcado está disponible desde Windows XP. Si el usuario lo permite, el minivolcado se enviará a Microsoft y no al desarrollador a través de Informe de errores de Windows (WER). Los desarrolladores pueden obtener acceso a estos minivolcados a través del [programa de aplicación de escritorio de Windows](../appxpkg/windows-desktop-application-program.md).
+-   No haga nada. Windows genera automáticamente un minivolumen cada vez que un programa produce una excepción no controlada. La generación automática de un minivolumen está disponible desde Windows XP. Si el usuario lo permite, el minivolquete se enviará a Microsoft, y no al desarrollador, a través Informe de errores de Windows (WER). Los desarrolladores pueden obtener acceso a estos minivolúmanes a través del Windows [aplicación de escritorio](../appxpkg/windows-desktop-application-program.md).
 
     El uso de WER requiere:
 
-    -   Desarrolladores para firmar sus aplicaciones con Authenticode
-    -   Las aplicaciones tienen un recurso VERSIONINFO válido en cada archivo ejecutable y DLL
+    -   Desarrolladores para firmar sus aplicaciones mediante Authenticode
+    -   Las aplicaciones tienen un recurso VERSIONINFO válido en todos los archivos ejecutables y DLL
 
-    Si implementa una rutina personalizada para las excepciones no controladas, se recomienda encarecidamente usar la función [**ReportFault**](/windows/desktop/api/errorrep/nf-errorrep-reportfault) en el controlador de excepciones para enviar también un minivolcado automatizado a wer. La función **ReportFault** controla todos los problemas de conexión y envío del MINIVOLCADO a wer. No enviar minivolcados a WER infringe los requisitos de juegos para Windows.
+    Si implementa una rutina personalizada para excepciones no controladas, se le pide encarecidamente que use la función [**ReportFault**](/windows/desktop/api/errorrep/nf-errorrep-reportfault) en el controlador de excepciones para enviar también un minivolumen automatizado a WER. La **función ReportFault** controla todos los problemas de conexión y envío del minivolumen a WER. Si no se envían minivolúmpos a WER, se infringen los requisitos de Juegos para Windows.
 
-    Para obtener más información sobre cómo funciona WER, vea [Cómo funciona informe de errores de Windows](https://www.microsoft.com/whdc/maintain/WER/WERWorks.mspx). Para obtener una explicación de los detalles de registro, consulte [Introducción a informe de errores de Windows](https://msdn.microsoft.com/) en la [zona de ISV](https://msdn.microsoft.com/)de MSDN.
+    Para obtener más información sobre cómo funciona WER, vea [How Informe de errores de Windows Works](https://www.microsoft.com/whdc/maintain/WER/WERWorks.mspx). Para obtener una explicación de los detalles de registro, [vea Introducción Informe de errores de Windows](https://msdn.microsoft.com/) en la zona [ISV de](https://msdn.microsoft.com/)MSDN.
 
--   Use un producto de Microsoft Visual Studio Team System. En el menú **depurar** , haga clic en **Guardar volcado como** para guardar una copia de un volcado de memoria. El uso de un volcado guardado localmente es solo una opción para las pruebas internas y la depuración.
--   Agregue código al proyecto. Agregue la función [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) y el código de control de excepciones adecuado para guardar y enviar un minivolcado directamente al desarrollador. En este artículo se muestra cómo implementar esta opción. Sin embargo, tenga en cuenta que **MiniDumpWriteDump** no funciona actualmente con código administrado y solo está disponible en Windows XP, Windows Vista, Windows 7.
+-   Use un producto de Microsoft Visual Studio Team System. En el **menú Depurar,** haga clic **en Guardar volcado como** para guardar una copia de un volcado de memoria. El uso de un volcado guardado localmente solo es una opción para realizar pruebas y depuraciones internas.
+-   Agregue código al proyecto. Agregue la [**función MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) y el código de control de excepciones adecuado para guardar y enviar un minivolumen directamente al desarrollador. En este artículo se muestra cómo implementar esta opción. Sin embargo, tenga en cuenta que **MiniDumpWriteDump** no funciona actualmente con código administrado y solo está disponible en Windows XP, Windows Vista, Windows 7.
 
 ## <a name="thread-safety"></a>Seguridad para subprocesos
 
-[**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) forma parte de la biblioteca DBGHELP. Esta biblioteca no es segura para subprocesos, por lo que cualquier programa que use **MiniDumpWriteDump** debe sincronizar todos los subprocesos antes de intentar llamar a **MiniDumpWriteDump**.
+[**MiniDumpWriteDump forma**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) parte de la biblioteca DBGHELP. Esta biblioteca no es segura para subprocesos, por lo que cualquier programa que use **MiniDumpWriteDump** debe sincronizar todos los subprocesos antes de intentar llamar a **MiniDumpWriteDump**.
 
-## <a name="writing-a-minidump-with-code"></a>Escribir un minivolcado con código
+## <a name="writing-a-minidump-with-code"></a>Escritura de un minivolumen con código
 
-La implementación real es sencilla. A continuación se facilita un ejemplo de cómo usar [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump).
+La implementación real es sencilla. A continuación se muestra un ejemplo sencillo de cómo usar [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump).
 
 
 ```C++
@@ -109,72 +109,72 @@ void SomeFunction()
 
 
 
-En este ejemplo se muestra el uso básico de [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) y la información mínima necesaria para llamarlo. El nombre del archivo de volcado de memoria es el desarrollador. sin embargo, para evitar conflictos de nombres de archivo, es aconsejable generar el nombre de archivo a partir del nombre y el número de versión de la aplicación, los identificadores de proceso y de subproceso, y la fecha y la hora. Esto también le ayudará a mantener los minivolcados agrupados por aplicación y versión. Depende del desarrollador decidir cuánta información se usa para diferenciar los nombres de los archivos de minivolcado.
+En este ejemplo se muestra el uso básico de [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) y la información mínima necesaria para llamarlo. El nombre del archivo de volcado es del desarrollador; Sin embargo, para evitar conflictos de nombres de archivo, es aconsejable generar el nombre de archivo a partir del nombre y el número de versión de la aplicación, los identificaciónes de proceso y subproceso, y la fecha y hora. Esto también ayudará a mantener los minivolúmedos agrupados por aplicación y versión. Es el desarrollador quien decide cuánta información se usa para diferenciar los nombres de archivo de minivolfón.
 
-Se debe observar que el nombre de la ruta de acceso en el ejemplo anterior se generó mediante una llamada a la función [**GetTempPath**](/windows/desktop/api/fileapi/nf-fileapi-gettemppatha) para recuperar la ruta de acceso del directorio designado para los archivos temporales. El uso de este directorio funciona incluso con cuentas de usuario con privilegios mínimos y también evita que el minivolcado ocupe el espacio de la unidad de disco duro una vez que ya no se necesita.
+Debe tenerse en cuenta que el nombre de ruta de acceso del ejemplo anterior se generó mediante una llamada a la función [**GetTempPath**](/windows/desktop/api/fileapi/nf-fileapi-gettemppatha) para recuperar la ruta de acceso del directorio designado para los archivos temporales. El uso de este directorio funciona incluso con cuentas de usuario con privilegios mínimos y también evita que el minivolumen tome espacio en la unidad de disco duro después de que ya no sea necesario.
 
-Si archiva el producto durante el proceso de compilación diario, asegúrese también de incluir símbolos para la compilación, de modo que pueda depurar una versión anterior del producto, si es necesario. También debe seguir los pasos para mantener todas las optimizaciones del compilador mientras genera símbolos. Para ello, abra las propiedades del proyecto en el entorno de desarrollo y, para la configuración de lanzamiento, haga lo siguiente:
+Si archiva el producto durante el proceso de compilación diario, asegúrese también de incluir símbolos para la compilación para que pueda depurar una versión anterior del producto, si es necesario. También debe tomar medidas para mantener las optimizaciones del compilador completa al generar símbolos. Para ello, abra las propiedades del proyecto en el entorno de desarrollo y, para la configuración de versión, haga lo siguiente:
 
-1.  En el lado izquierdo de la página de propiedades del proyecto, haga clic en C/C++. De forma predeterminada, se muestra la configuración **General** . En el lado derecho de la página de propiedades del proyecto, establezca **formato de información de depuración** en **base de datos de programa (/Zi)**.
-2.  En el lado izquierdo de la página de propiedades, expanda **vinculador** y, a continuación, haga clic en **depuración**. En el lado derecho de la página de propiedades, establezca **generar información de depuración** en **sí (/debug)**.
-3.  Haga clic en **optimización** y establezca **referencias** en E **liminate datos sin referencia (/OPT: Ref)**.
-4.  Establezca **Habilitar plegamiento de COMDAT** para **quitar COMDAT redundantes (/OPT: ICF)**.
+1.  En el lado izquierdo de la página de propiedades del proyecto, haga clic en C/C++. De forma predeterminada, se **muestra** Configuración general. En el lado derecho de la página de propiedades del proyecto, establezca Formato de información de **depuración** en Base de datos **de programa (/Zi).**
+2.  En el lado izquierdo de la página de propiedades, expanda **Vinculador** y, a continuación, haga clic **en Depurar**. En el lado derecho de la página de propiedades, establezca Generar información **de depuración** **en Sí (/DEBUG).**
+3.  Haga **clic en** Optimización y establezca **Referencias** en E **liminar datos sin referencia (/OPT:REF).**
+4.  Establezca **Habilitar plegado COMDAT para** quitar LOS **COMDAT redundantes (/OPT:ICF).**
 
-MSDN tiene información más detallada sobre la estructura de [**\_ \_ información de excepción de minivolcado**](/windows/desktop/api/minidumpapiset/ns-minidumpapiset-minidump_exception_information) y la función [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) .
+MSDN tiene información más detallada sobre la estructura [**MINIDUMP \_ EXCEPTION \_ INFORMATION**](/windows/desktop/api/minidumpapiset/ns-minidumpapiset-minidump_exception_information) y la [**función MiniDumpWriteDump.**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump)
 
-## <a name="using-dumpchkexe"></a>Usar Dumpchk.exe
+## <a name="using-dumpchkexe"></a>Uso de Dumpchk.exe
 
-Dumpchk.exe es una utilidad de línea de comandos que se puede utilizar para comprobar que un archivo de volcado de memoria se ha creado correctamente. Si Dumpchk.exe genera un error, el archivo de volcado de memoria está dañado y no se puede analizar. Para obtener información sobre el uso de Dumpchk.exe, consulte [Cómo usar Dumpchk.exe para comprobar un archivo de volcado de memoria](https://support.microsoft.com/kb/315271/).
+Dumpchk.exe es una utilidad de línea de comandos que se puede usar para comprobar que un archivo de volcado de memoria se ha creado correctamente. Si Dumpchk.exe genera un error, el archivo de volcado de memoria está dañado y no se puede analizar. Para obtener información sobre el Dumpchk.exe, vea [How to Use Dumpchk.exe to Check a Memory Dump File](https://support.microsoft.com/kb/315271/).
 
-Dumpchk.exe se incluye en el CD del producto de Windows XP y se puede instalar en las herramientas de soporte técnico de los archivos de programa de la unidad del sistema \\ \\ mediante la \\ ejecución de Setup.exe en la carpeta Herramientas de soporte del \\ \\ CD del producto de Windows XP. También puede obtener la versión más reciente de Dumpchk.exe si descarga e instala las herramientas de depuración disponibles en [las herramientas de depuración de Windows](https://www.microsoft.com/whdc/devtools/debugging/) en el [centro de desarrollo de hardware de Windows](https://www.microsoft.com/whdc/).
+Dumpchk.exe se incluye en el CD del producto Windows XP y se puede instalar en las herramientas de soporte técnico de archivos de programa de unidad del sistema mediante la ejecución de Setup.exe en la carpeta Herramientas de soporte técnico del CD del producto \\ \\ Windows \\ \\ \\ XP. También puede obtener la versión más reciente de Dumpchk.exe descargando e instalando las herramientas de depuración disponibles en herramientas [de](https://www.microsoft.com/whdc/devtools/debugging/) depuración de Windows en [Windows Hardware Developer Central](https://www.microsoft.com/whdc/).
 
-## <a name="analyzing-a-minidump"></a>Analizar un minivolcado
+## <a name="analyzing-a-minidump"></a>Análisis de un minivolumen
 
-Abrir un minivolcado para el análisis es tan sencillo como crear uno.
+Abrir un minivolumen para el análisis es tan fácil como crear uno.
 
-**Para analizar un minivolcado**
+**Para analizar un minivolumen**
 
 1.  Abra Visual Studio.
-2.  En el menú **archivo** , haga clic en **Abrir proyecto**.
-3.  Establezca **archivos de tipo** en **archivos de volcado** de memoria, desplácese hasta el archivo de volcado de memoria, selecciónelo y haga clic en **abrir.**
-4.  Ejecutar el depurador.
+2.  En el **menú Archivo** , haga clic en **Abrir Project**.
+3.  Establezca **Archivos de tipo en** Archivos **de** volcado, vaya al archivo de volcado, selecciónelo y haga clic en **Abrir.**
+4.  Ejecute el depurador.
 
-El depurador creará un proceso simulado. El proceso simulado se detendrá en la instrucción que provocó el bloqueo.
+El depurador creará un proceso simulado. El proceso simulado se detendrá en la instrucción que produjo el bloqueo.
 
-### <a name="using-the-microsoft-public-symbol-server"></a>Usar el servidor de símbolos públicos de Microsoft
+### <a name="using-the-microsoft-public-symbol-server"></a>Uso del servidor de símbolos públicos de Microsoft
 
-Para obtener la pila de bloqueos de nivel de controlador o de sistema, podría ser necesario configurar Visual Studio para que apunte al servidor de símbolos públicos de Microsoft.
+Para obtener la pila de bloqueos de nivel de sistema o controlador, puede que sea necesario configurar Visual Studio para que apunte al servidor de símbolos público de Microsoft.
 
 **Para establecer una ruta de acceso al servidor de símbolos de Microsoft**
 
-1.  En el menú **depurar** , haga clic en **Opciones**.
-2.  En el cuadro de diálogo **Opciones** , abra el nodo **depuración** y haga clic en **símbolos**.
-3.  Asegúrese de que **la opción Buscar en las ubicaciones anteriores solo cuando los símbolos se cargan manualmente** no esté seleccionada, a menos que desee cargar símbolos manualmente al depurar.
-4.  Si usa símbolos en un servidor de símbolos remoto, puede mejorar el rendimiento especificando un directorio local en el que se pueden copiar los símbolos. Para ello, escriba una ruta de acceso para **almacenar en caché los símbolos del servidor de símbolos en este directorio**. Para conectarse al servidor de símbolos públicos de Microsoft, debe habilitar esta configuración. Tenga en cuenta que si está depurando un programa en un equipo remoto, el directorio de caché hace referencia a un directorio del equipo remoto.
-5.  Haga clic en **OK**.
-6.  Dado que está utilizando el servidor de símbolos públicos de Microsoft, aparece un cuadro de diálogo contrato de licencia para el usuario final. Haga clic en **sí** para aceptar el contrato y descargar los símbolos en la memoria caché local.
+1.  En el menú **Depurar** , haga clic en **Opciones**.
+2.  En el **cuadro de** diálogo Opciones , abra el **nodo Depuración** y haga clic en **Símbolos**.
+3.  Asegúrese de **buscar las ubicaciones anteriores** solo cuando los símbolos se carguen manualmente no esté seleccionado, a menos que desee cargar símbolos manualmente al depurar.
+4.  Si usa símbolos en un servidor de símbolos remoto, puede mejorar el rendimiento especificando un directorio local en el que se puedan copiar símbolos. Para ello, escriba una ruta de acceso para Almacenar en caché **símbolos del servidor de símbolos a este directorio.** Para conectarse al servidor de símbolos público de Microsoft, debe habilitar esta configuración. Tenga en cuenta que si está depurando un programa en un equipo remoto, el directorio de caché hace referencia a un directorio en el equipo remoto.
+5.  Haga clic en **Aceptar**.
+6.  Dado que usa el servidor de símbolos público de Microsoft, aparece un cuadro de diálogo Contrato de licencia de usuario final. Haga **clic en** Sí para aceptar el contrato y descargar símbolos en la memoria caché local.
 
-### <a name="debugging-a-minidump-with-windbg"></a>Depurar un minivolcado con WinDbg
+### <a name="debugging-a-minidump-with-windbg"></a>Depuración de un minivolumen con WinDbg
 
-También puede usar WinDbg, un depurador que forma parte de las herramientas de depuración de Windows, para depurar un minivolcado. WinDbg le permite depurar sin tener que usar Visual Studio. Para descargar las herramientas de depuración de Windows, vea [herramientas de depuración](https://www.microsoft.com/whdc/devtools/debugging/) de Windows en [Centro para desarrolladores de hardware de Windows](https://www.microsoft.com/whdc/).
+También puede usar WinDbg, un depurador que forma parte de Windows Debugging Tools, para depurar un minivolumen. WinDbg permite depurar sin tener que usar Visual Studio. Para descargar Windows de depuración, [vea Windows Debugging Tools](https://www.microsoft.com/whdc/devtools/debugging/) on Windows Hardware Developer [Central](https://www.microsoft.com/whdc/).
 
-Después de instalar las herramientas de depuración de Windows, debe escribir la ruta de acceso de símbolos en WinDbg.
+Después de instalar Windows herramientas de depuración, debe escribir la ruta de acceso de símbolos en WinDbg.
 
-**Para especificar una ruta de acceso de símbolos en WinDbg**
+**Para escribir una ruta de acceso de símbolos en WinDbg**
 
-1.  En el menú **archivo** , haga clic en **ruta de acceso de símbolos**.
-2.  En la ventana **ruta de acceso de búsqueda de símbolos** , escriba lo siguiente:
+1.  En el menú **Archivo** , haga clic en **Ruta de acceso de símbolos**.
+2.  En la **ventana Ruta de búsqueda de** símbolos, escriba lo siguiente:
 
-    "SRV \* c: \\ caché \* https://msdl.microsoft.com/download/symbols ;"
+    "srv \* c: \\ cache \* https://msdl.microsoft.com/download/symbols ;"
 
-### <a name="using-copy-protection-tools-with-minidumps"></a>Usar herramientas de Copy-Protection con Minivolcados
+### <a name="using-copy-protection-tools-with-minidumps"></a>Uso de Copy-Protection tools con minivolúmpos
 
-Los desarrolladores también deben tener en cuenta la forma en que su esquema de protección de copia podría afectar al minivolcado. La mayoría de los esquemas de protección de copia tienen sus propias herramientas de descifrado, y depende del desarrollador obtener información sobre cómo usar esas herramientas con [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump).
+Los desarrolladores también deben tener en cuenta cómo su esquema de protección de copia puede afectar al minivolfón. La mayoría de los esquemas de protección de copia tienen sus propias herramientas de descramble y es el desarrollador quien debe aprender a usar esas herramientas con [**MiniDumpWriteDump.**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump)
 
 ## <a name="summary"></a>Resumen
 
-La función [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) puede ser una herramienta muy útil para recopilar y resolver errores una vez que se ha lanzado el producto. La escritura de un controlador de excepciones personalizado que utiliza **MiniDumpWriteDump** permite al desarrollador personalizar la colección de información y mejorar el proceso de depuración. La función es lo suficientemente flexible como para ser utilizada en cualquier proyecto basado en C++ y debe considerarse parte del proceso de estabilidad de un proyecto.
+La [**función MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) puede ser una herramienta muy útil para recopilar y resolver errores una vez publicado el producto. Escribir un controlador de excepciones personalizado que use **MiniDumpWriteDump** permite al desarrollador personalizar la colección de información y mejorar el proceso de depuración. La función es lo suficientemente flexible como para usarse en cualquier proyecto basado en C++ y debe considerarse parte del proceso de estabilidad de cualquier proyecto.
 
- 
+ 
 
- 
+ 

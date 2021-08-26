@@ -440,7 +440,7 @@
           href: fhconfigmgr.md
         - name: FhManagew.exe
           href: fhmanagew-exe.md
-        - name: Reassociation
+        - name: FhReassociation
           href: fhreassociation.md
         - name: FhServiceClosePipe
           href: /windows/desktop/api/FhSvcCtl/nf-fhsvcctl-fhserviceclosepipe
@@ -469,19 +469,19 @@
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhconfigmgr-getbackupstatus
             - name: GetDefaultTarget (método)
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhconfigmgr-getdefaulttarget
-            - name: Método GetIncludeExcludeRules
+            - name: GetIncludeExcludeRules (método)
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhconfigmgr-getincludeexcluderules
             - name: GetLocalPolicy (método)
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhconfigmgr-getlocalpolicy
             - name: LoadConfiguration (método)
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhconfigmgr-loadconfiguration
-            - name: ProvisionAndSetNewTarget (método)
+            - name: Método ProvisionAndSetNewTarget
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhconfigmgr-provisionandsetnewtarget
             - name: QueryProtectionStatus (método)
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhconfigmgr-queryprotectionstatus
             - name: SaveConfiguration (método)
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhconfigmgr-saveconfiguration
-            - name: Método SetBackupStatus
+            - name: SetBackupStatus (método)
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhconfigmgr-setbackupstatus
             - name: Método SetLocalPolicy
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhconfigmgr-setlocalpolicy
@@ -785,7 +785,7 @@
           href: /windows/desktop/api/comppkgsup/nf-comppkgsup-getserverforpmp
         - name: IMESTRUCT
           href: /windows/desktop/api/Ime/ns-ime-imestruct
-        - name: Creación de una instancia deComponentFromPackage
+        - name: InstantiateComponentFromPackage
           href: /windows/desktop/api/comppkgsup/nf-comppkgsup-instantiatecomponentfrompackage
         - name: IsMediaBehaviorEnabled
           href: /windows/desktop/api/comppkgsup/nf-comppkgsup-ismediabehaviorenabled

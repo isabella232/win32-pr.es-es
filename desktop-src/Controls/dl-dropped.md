@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de DL_DROPPED (commctrl. h)
-description: Indica que el usuario ha completado una operación de arrastre soltando el botón primario del mouse. Un cuadro de lista de arrastre envía este código de notificación a su ventana primaria en forma de mensaje de la lista de arrastre. Para obtener más información, vea arrastrar mensajes de cuadro de lista.
+title: DL_DROPPED de notificación (Commctrl.h)
+description: Indica que el usuario ha completado una operación de arrastrar al soltar el botón izquierdo del mouse. Un cuadro de lista de arrastrar envía este código de notificación a su ventana primaria en forma de mensaje de lista de arrastre. Para obtener más información, vea Arrastrar mensajes de cuadro de lista.
 ms.assetid: 81b9b424-2735-407d-bac9-f03ea2f48b4e
 keywords:
-- DL_DROPPED controles de código de notificación de Windows
+- DL_DROPPED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1b2480360ea38a00c4dd8efe6eb84eed8999890
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c245cbb85a4e67845bd86a25b4cccb2f2aa0dc1d9d9613afd1d685037c5e1ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002725"
 ---
-# <a name="dl_dropped-notification-code"></a>\_Código de notificación DL quitado
+# <a name="dl_dropped-notification-code"></a>Código \_ de notificación DL DROPPED
 
-Indica que el usuario ha completado una operación de arrastre soltando el botón primario del mouse. Un cuadro de lista de arrastre envía este código de notificación a su ventana primaria en forma de mensaje de la lista de arrastre. Para obtener más información, vea [arrastrar mensajes de cuadro de lista](about-list-boxes.md).
+Indica que el usuario ha completado una operación de arrastrar al soltar el botón izquierdo del mouse. Un cuadro de lista de arrastrar envía este código de notificación a su ventana primaria en forma de mensaje de lista de arrastre. Para obtener más información, vea [Arrastrar mensajes de cuadro de lista.](about-list-boxes.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ DL_DROPPED
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**DRAGLISTINFO**](/windows/win32/api/commctrl/ns-commctrl-draglistinfo) que contiene el código de \_ notificación DL quitado, el identificador del cuadro de lista de arrastre y la posición del cursor.
+Puntero a una estructura [**DRAGLISTINFO**](/windows/win32/api/commctrl/ns-commctrl-draglistinfo) que contiene el código de notificación DL DROPPED, el identificador del cuadro de lista de arrastre \_ y la posición del cursor.
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Puntero a una estructura [**DRAGLISTINFO**](/windows/win32/api/commctrl/ns-commc
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, este código de notificación se procesa insertando el elemento que se está arrastrando a la lista delante del elemento bajo el cursor. Para recuperar el índice del elemento en la posición del cursor, utilice la función [**LBItemFromPt**](/windows/desktop/api/Commctrl/nf-commctrl-lbitemfrompt) . Tenga en cuenta que el \_ código de notificación DL quitado se envía incluso si el cursor no está en un elemento de lista. En ese caso, **LBItemFromPt** devuelve-1.
+Este código de notificación se procesa normalmente insertando el elemento que se arrastra a la lista delante del elemento bajo el cursor. Para recuperar el índice del elemento en la posición del cursor, use la [**función LBItemFromPt.**](/windows/desktop/api/Commctrl/nf-commctrl-lbitemfrompt) Tenga en cuenta que el código de \_ notificación DL DROPPED se envía incluso si el cursor no está en un elemento de lista. En ese caso, **LBItemFromPt** devuelve -1.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Normalmente, este código de notificación se procesa insertando el elemento que
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

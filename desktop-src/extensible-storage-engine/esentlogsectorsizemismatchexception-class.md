@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentLogSectorSizeMismatchException'
+description: 'Más información sobre: Clase EsentLogSectorSizeMismatchException'
 title: Clase EsentLogSectorSizeMismatchException
 TOCTitle: EsentLogSectorSizeMismatchException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentLogSectorSizeMismatchException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a78b31212cd769d4e418b382f5cc4aa8ab7e0dca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 275bedabba24e4bd437363aed6bccc2aa47e60fdf1e7b736ab95196551cd4ae3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019555"
 ---
 # <a name="esentlogsectorsizemismatchexception-class"></a>Clase EsentLogSectorSizeMismatchException
 
@@ -39,16 +39,16 @@ Clase base para JET_err. Excepciones LogSectorSizeMismatch.
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentDataException](./esentdataexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentFragmentationException](./esentfragmentationexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentLogSectorSizeMismatchException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentFragmentationException](./esentfragmentationexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentLogSectorSizeMismatchException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -74,4 +74,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentLogSectorSizeMismatchException](./esentlogsectorsizemismatchexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

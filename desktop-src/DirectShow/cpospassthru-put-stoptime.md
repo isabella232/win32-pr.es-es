@@ -1,7 +1,7 @@
 ---
-description: El \_ método put StopTime establece la hora a la que se detendrá la reproducción, en relación con la duración de la secuencia. Este método implementa el método IMediaPosition::p UT \_ StopTime.
+description: El método put StopTime establece la hora a la que se detendrá la \_ reproducción, en relación con la duración de la secuencia. Este método implementa el método IMediaPosition::p ut \_ StopTime.
 ms.assetid: 0a344cad-df93-47f1-8c7f-5d5ef775b850
-title: Método CPosPassThru.put_StopTime (Ctlutil. h)
+title: CPosPassThru.put_StopTime método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4f5763700947596a0fb437ba3840df058d4d3239
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d91d49f2517a3d3b9efc50d70ace1b75562b50df8acda7c48826e7c088439928
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055095"
 ---
-# <a name="cpospassthruput_stoptime-method"></a>CPosPassThru. put \_ StopTime (método)
+# <a name="cpospassthruput_stoptime-method"></a>Método CPosPassThru.put \_ StopTime
 
-El `put_StopTime` método establece la hora a la que se detendrá la reproducción, en relación con la duración de la secuencia. Este método implementa el método [**IMediaPosition::p UT \_ StopTime**](/windows/desktop/api/Control/nf-control-imediaposition-put_stoptime) .
+El `put_StopTime` método establece la hora a la que se detendrá la reproducción, en relación con la duración de la secuencia. Este método implementa el [**método IMediaPosition::p ut \_ StopTime.**](/windows/desktop/api/Control/nf-control-imediaposition-put_stoptime)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT put_StopTime(
 *llTime* 
 </dt> <dd>
 
-Detiene la hora como un valor **doble** , en segundos.
+Tiempo de detenerse como **un valor** doble, en segundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor **HRESULT** del PIN conectado.
+Devuelve el **valor HRESULT** del pin conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> </dl>
 
  

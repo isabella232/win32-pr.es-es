@@ -1,6 +1,6 @@
 ---
 title: Atributo WM/OriginalLyricist
-description: El atributo WM/Denistist es el nombre de la persona que escribió el texto original.
+description: El atributo WM/Delicionista es el nombre de la persona que escribió la obra original.
 ms.assetid: 8b8d8f7d-fb1a-4f29-b015-c6d0fff4fb81
 keywords:
 - Atributo WM/OriginalLyricist Reproductor de Windows Media
@@ -21,7 +21,7 @@ ms.locfileid: "120000925"
 ---
 # <a name="wmoriginallyricist-attribute"></a>Atributo WM/OriginalLyricist
 
-El **atributo WM/Denistist** es el nombre de la persona que escribió el texto original.
+El **atributo WM/Delicionista** es el nombre de la persona que escribió la obra original.
 
 ## <a name="applies-to"></a>Se aplica a
 
@@ -39,13 +39,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: función glVertex3dv (GL. h)
-description: Especifica un vértice. | función glVertex3dv (GL. h)
+title: Función glVertex3dv (Gl.h)
+description: Especifica un vértice. | Función glVertex3dv (Gl.h)
 ms.assetid: 8424735c-2424-4594-aa46-8ce635aabe34
 keywords:
-- glVertex3dv (función) OpenGL
+- Función glVertex3dv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1557afc60ee79d02e356a87dd6296d72c1d0f00f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e8c9d34b14144ca0d8b8157f93811981c19e02daf6f404ea3a85c9139feb7391
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104157089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036025"
 ---
-# <a name="glvertex3dv-function"></a>glVertex3dv función)
+# <a name="glvertex3dv-function"></a>Función glVertex3dv
 
 Especifica un vértice.
 
@@ -40,10 +40,10 @@ void WINAPI glVertex3dv(
 
 <dl> <dt>
 
-*v* 
+*V* 
 </dt> <dd>
 
-Puntero a una matriz de tres elementos. Los elementos son las coordenadas x, y y z de un vértice.
+Puntero a una matriz de tres elementos. Los elementos son las coordenadas x, y y y z de un vértice.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Esta función no devuelve ningún valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

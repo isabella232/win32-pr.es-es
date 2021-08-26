@@ -1,9 +1,9 @@
 ---
-title: MDM_Personalization (clase)
-description: La \_ clase de personalización de MDM se usa para establecer la pantalla de bloqueo y las imágenes de fondo de escritorio. La configuración de estas directivas también impide que el usuario cambie la imagen.
+title: MDM_Personalization clase
+description: La clase MDM Personalization se usa para establecer las imágenes de fondo de escritorio y la pantalla \_ de bloqueo. Establecer estas directivas también impide que el usuario cambie la imagen.
 ms.assetid: 99b60767-b321-4ec6-9802-76221d26c830
 keywords:
-- MDM_Personalization (clase)
+- MDM_Personalization clase
 - MDM_Personalization clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f78986422cce15d750e1ae678aef352bbb369bfc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c0039021d8c05599f91513344d4cbee010944e0944f08f0b258294d91e9714f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967515"
 ---
-# <a name="mdm_personalization-class"></a>\_Clase de personalización MDM
+# <a name="mdm_personalization-class"></a>Mdm \_ Personalization (clase)
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La \_ clase de personalización de MDM se usa para establecer la pantalla de bloqueo y las imágenes de fondo de escritorio. La configuración de estas directivas también impide que el usuario cambie la imagen.
+La clase MDM Personalization se usa para establecer las imágenes de fondo de escritorio y la pantalla \_ de bloqueo. Establecer estas directivas también impide que el usuario cambie la imagen.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -49,13 +49,13 @@ class MDM_Personalization
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ Personalización de MDM** tiene estos tipos de miembros:
+La **clase MDM \_ Personalization** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ Personalización de MDM** tiene estas propiedades.
+La **clase MDM \_ Personalization** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ La clase de **\_ Personalización de MDM** tiene estas propiedades.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -76,7 +76,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -101,7 +101,7 @@ Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -112,7 +112,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -137,10 +137,10 @@ Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                     |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                     |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                       |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 

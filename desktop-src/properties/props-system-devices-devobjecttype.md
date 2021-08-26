@@ -1,17 +1,17 @@
 ---
 description: Tipo de objeto de dispositivo DevQuery.
 ms.assetid: 765ef06c-957e-48fa-be5f-9cedc7823564
-title: System. Devices. DevObjectType
+title: System.Devices.DevObjectType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fde6917b241b5f0e6080deedb78ab2ab7f9f045f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c9cad5ff647102c5b39a056b33467edd3266f080051044347667a28a6163349
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010675"
 ---
-# <a name="systemdevicesdevobjecttype"></a>System. Devices. DevObjectType
+# <a name="systemdevicesdevobjecttype"></a>System.Devices.DevObjectType
 
 Tipo de objeto de dispositivo DevQuery
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

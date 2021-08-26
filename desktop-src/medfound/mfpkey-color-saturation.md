@@ -1,17 +1,17 @@
 ---
 description: Ajusta la saturación.
 ms.assetid: bd71f542-36d9-4dfc-b402-35ee8e574731
-title: Propiedad MFPKEY_COLOR_SATURATION (Wmcodecdsp. h)
+title: MFPKEY_COLOR_SATURATION propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 496b1f017ceff6ab4bd01ce01ccfd5da0759befc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b357521327bc913a0ace6b630cb9f2a27b553c3dfc8303e1a6bd9af218c5b743
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954405"
 ---
-# <a name="mfpkey_color_saturation-property"></a>\_Propiedad saturación de color MFPKEY \_
+# <a name="mfpkey_color_saturation-property"></a>Propiedad MFPKEY \_ COLOR \_ SATURATION
 
 Ajusta la saturación.
 
@@ -31,11 +31,11 @@ VT \_ I4
 
 -   [DSP de transformación de control de color](colorcontroltransform.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El ajuste de saturación se realiza multiplicando los valores CB y CR por una constante.
+El ajuste de saturación se realiza multiplicando los valores Cb y Cr por una constante.
 
-Esta propiedad tiene un intervalo de-127 a 127. Cero indica que no hay ningún cambio en la saturación.
+Esta propiedad tiene un intervalo de -127 a 127. Cero indica que no hay ningún cambio en la saturación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Esta propiedad tiene un intervalo de-127 a 127. Cero indica que no hay ningún c
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ Esta propiedad tiene un intervalo de-127 a 127. Cero indica que no hay ningún c
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

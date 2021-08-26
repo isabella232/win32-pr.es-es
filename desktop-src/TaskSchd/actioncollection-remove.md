@@ -1,11 +1,11 @@
 ---
-title: ActionCollection. Remove (método)
-description: En el caso de scripting, quita la acción especificada de la colección.
+title: Método ActionCollection.Remove
+description: Para el scripting, quita la acción especificada de la colección.
 ms.assetid: ae1da6a9-5851-4ccb-80dc-75d7a99e7c6a
 keywords:
 - Quitar método Programador de tareas
-- Quitar método Programador de tareas, objeto ActionCollection
-- Objeto ActionCollection Programador de tareas, Remove (método)
+- Remove method Programador de tareas , ActionCollection object
+- ActionCollection object Programador de tareas , Remove (método)
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e110f870f4f192051b47cb3b65f0ebb41a490708
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c0c176f41c59bd473e25e82082ada1934a25641e6144f4187e7f25075779b25a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011745"
 ---
-# <a name="actioncollectionremove-method"></a>ActionCollection. Remove (método)
+# <a name="actioncollectionremove-method"></a>Método ActionCollection.Remove
 
-En el caso de scripting, quita la acción especificada de la colección.
+Para el scripting, quita la acción especificada de la colección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ ActionCollection.Remove( _
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*index* \[ En\]
 </dt> <dd>
 
 Índice de la acción que se va a quitar.
@@ -53,9 +53,9 @@ ActionCollection.Remove( _
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al quitar los elementos, tenga en cuenta que el índice del primer elemento de la colección es 1 y el índice del último elemento es el valor de la propiedad [**ActionCollection. Count**](actioncollection-count.md) .
+Al quitar elementos, tenga en cuenta que el índice del primer elemento de la colección es 1 y que el índice del último elemento es el valor de la [**propiedad ActionCollection.Count.**](actioncollection-count.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Al quitar los elementos, tenga en cuenta que el índice del primer elemento de l
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

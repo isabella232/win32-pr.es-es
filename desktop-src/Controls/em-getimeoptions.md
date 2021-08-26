@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETIMEOPTIONS (RichEdit. h)
-description: Recupera las opciones actuales del editor de métodos de entrada (IME).
+title: EM_GETIMEOPTIONS mensaje (Richedit.h)
+description: Recupera las opciones actuales del Editor de métodos de entrada (IME).
 ms.assetid: 81ec89b9-dabd-487e-805e-e3c2e58e3068
 keywords:
-- EM_GETIMEOPTIONS controles de mensajes de Windows
+- EM_GETIMEOPTIONS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bd805f2407fbe9e055df3d9174f106d33991aca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aea4513189014969dbfdf69a0ad257cbfde6a4ff99c2499f478c4865100a23c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049065"
 ---
-# <a name="em_getimeoptions-message"></a>\_Mensaje GETIMEOPTIONS em
+# <a name="em_getimeoptions-message"></a>Mensaje DE EM \_ GETIMEOPTIONS
 
-Recupera las opciones actuales del editor de métodos de entrada (IME).
+Recupera las opciones actuales del Editor de métodos de entrada (IME).
 
 > [!Note]  
-> Este mensaje solo se admite en las versiones en idioma asiático de Microsoft Rich Edit 1,0. No se admite en las versiones posteriores de Rich Edit.
+> Este mensaje solo se admite en las versiones en idioma asiático de Microsoft Rich Edit 1.0. No se admite en versiones posteriores de Rich Edit.
 
  
 
@@ -37,20 +37,20 @@ Recupera las opciones actuales del editor de métodos de entrada (IME).
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje devuelve uno o varios de los valores de marca de la opción IME descritos en el mensaje [**\_ SETIMEOPTIONS em**](em-setimeoptions.md) .
+Este mensaje devuelve uno o varios de los valores de marca de opción de IME descritos en el [**mensaje EM \_ SETIMEOPTIONS.**](em-setimeoptions.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,9 +58,9 @@ Este mensaje devuelve uno o varios de los valores de marca de la opción IME des
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Este mensaje devuelve uno o varios de los valores de marca de la opción IME des
 
 <dl> <dt>
 
-[**\_SETIMEOPTIONS em**](em-setimeoptions.md)
+[**EM \_ SETIMEOPTIONS**](em-setimeoptions.md)
 </dt> </dl>
 
  

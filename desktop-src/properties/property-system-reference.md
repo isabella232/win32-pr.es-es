@@ -4,12 +4,12 @@ ms.assetid: 8f2df462-c22d-4059-8599-4eefd24560f1
 title: Referencia del sistema de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e55f3146b9431aa901f867fb545e27a9f6dfd446
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6278fc444ed3847cacd204810f507b180de0d77d283ef4c998ca3061158fdbcb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011435"
 ---
 # <a name="property-system-reference"></a>Referencia del sistema de propiedades
 
@@ -29,7 +29,7 @@ ms.locfileid: "108087393"
 [Información general del sistema de propiedades](property-system-overview.md)
 </dt> <dt>
 
-[Sistema de propiedades de Windows developer's Guide](property-system-developer-s-guide.md)
+[Windows Guía del desarrollador del sistema de propiedades](property-system-developer-s-guide.md)
 </dt> <dt>
 
 [Ejemplos de código del sistema de propiedades](property-system-code-samples.md)

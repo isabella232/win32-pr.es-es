@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 87aaa45e7a7a16884d17ab340f0bf1efeccd93bb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a33f6e1938acb3381d1f14190d3a2e1adbc6afe32147ff793cfc7597f5c3bacc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027375"
 ---
 # <a name="d3dxmatrixmultiplytranspose-function-d3dx9mathh"></a>Función D3DXMatrixMultiplyTranspose (D3dx9math.h)
 
@@ -94,7 +94,7 @@ Esta función es útil para establecer matrices como constantes para sombreadore
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,8 +1,8 @@
 ---
-description: La \_ Asociación ChassisInRack de CIM representa el &\# 0034; que contiene&\# 0034; relación entre un bastidor y un chasis que contiene.
+description: La asociación CIM ChassisInRack representa la relación \_ &\# 0034; que contiene&0034; entre un bastidor y un chasis que \# contiene.
 ms.assetid: 1c8a5058-58fe-42e0-b337-7e1a05120789
 ms.tgt_platform: multiple
-title: CIM_ChassisInRack (clase)
+title: CIM_ChassisInRack clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,19 +18,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fd582991df30bc36cd71c4c3fa08d9a5a5153819
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 765b5e36fcb5f2cfe400d9dec9ba86d37cd29af8c756ae8416f7aece803f9052
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065215"
 ---
-# <a name="cim_chassisinrack-class"></a>\_Clase ChassisInRack de CIM
+# <a name="cim_chassisinrack-class"></a>Cim \_ ChassisInRack (clase)
 
-La **Asociación \_ ChassisInRack de CIM** representa la relación "que contiene" entre un bastidor y un chasis que contiene.
+La **\_ asociación CIM ChassisInRack** representa la relación "que contiene" entre un bastidor y un chasis que contiene.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -51,45 +51,45 @@ class CIM_ChassisInRack : CIM_Container
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ChassisInRack** tiene estos tipos de miembros:
+La **clase \_ CIM ChassisInRack** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ChassisInRack** tiene estas propiedades.
+La **clase CIM \_ ChassisInRack** tiene estas propiedades.
 
 <dl> <dt>
 
 **BottomU**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("EE. UU.")
+Calificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Us")
 </dt> </dl>
 
-Entero que indica la "U" más baja o inferior en la que se monta el chasis. Una "U" es una unidad de medida estándar para el alto de un bastidor, o componente montable en bastidor, y es igual a 1,75 pulgadas o 4,445 centímetros.
+Entero que indica la "U" más baja o inferior en la que está montado el chasis. Una "U" es una unidad de medida estándar para la altura de un bastidor, o componente montable en bastidor, y es igual a 1,75 pulgadas o 4,445 cm.
 
 </dd> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ bastidor CIM**
+Tipo de datos: **Bastidor CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Un [**\_ bastidor CIM**](cim-rack.md) que describe el bastidor que contiene el chasis.
+Bastidor [**CIM \_ que**](cim-rack.md) describe el bastidor que contiene el chasis.
 
 </dd> <dt>
 
@@ -102,35 +102,35 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena de forma libre que representa la posición del elemento físico en el paquete físico. La información relativa a los elementos estacionarios del contenedor (por ejemplo, "segunda Bahía de unidad de la parte superior"), ángulos, altitudes y otros datos se puede grabar en esta propiedad. Esta cadena se puede complementar o utilizar en lugar de crear una instancia del objeto de [**\_ Ubicación CIM**](cim-location.md) .
+Cadena de forma libre que representa el posicionamiento del elemento físico dentro del paquete físico. La información relativa a los elementos estacionados del contenedor (por ejemplo, "segunda unidad desde la parte superior"), los ángulos, las altitudes y otros datos se pueden registrar en esta propiedad. Esta cadena podría complementar o usarse en lugar de crear instancias del [**objeto Cim \_ Location.**](cim-location.md)
 
-Esta propiedad se hereda del [**\_ contenedor CIM**](cim-container.md).
+Esta propiedad se hereda del [**contenedor CIM \_**](cim-container.md).
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ chasis CIM**
+Tipo de datos: **\_ Chasis CIM**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Un [**\_ chasis CIM**](cim-chassis.md) que describe el chasis que se monta en el bastidor.
+Chasis [**CIM \_ que**](cim-chassis.md) describe el chasis montado en el bastidor.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ ChassisInRack** se deriva del [**\_ contenedor CIM**](cim-container.md).
+La **clase \_ CIM ChassisInRack** se deriva del [**contenedor CIM \_**](cim-container.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -140,8 +140,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -150,7 +150,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_Contenedor CIM**](cim-container.md)
+[**Contenedor \_ CIM**](cim-container.md)
 </dt> </dl>
 
  

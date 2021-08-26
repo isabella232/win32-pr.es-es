@@ -4,17 +4,17 @@ ms.assetid: a727c47c-b925-436c-b1e8-d5f407120dc9
 title: elemento param (DirectShow)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a10f902e85066f6cea14023e8cff9250126add0
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 35c58543c5daae7ad0a77f6380bc3f3db48cf8443461eaf919c4c727163436cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050825"
 ---
 # <a name="param-element"></a>elemento param
 
 > [!Note]  
-> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -39,7 +39,7 @@ El `param` elemento especifica el valor de una propiedad en una transición, un 
 
 ## <a name="remarks"></a>Comentarios
 
-El **atributo** value especifica el valor de la propiedad al principio de la transición o efecto. Use el **elemento en** o **lineal** para especificar valores cambiantes. Si el **elemento param** no contiene elementos **en** o **lineales,** el valor permanece constante durante la duración del efecto o la transición.
+El **atributo** value especifica el valor de la propiedad al principio de la transición o el efecto. Use el **elemento en** o **lineal** para especificar valores cambiantes. Si el **elemento param** no contiene elementos **en** o **lineales,** el valor permanece constante durante la duración del efecto o la transición.
 
 > [!Note]  
 > Un **elemento param** dentro de un **elemento clip** no puede contener elementos **en** o **lineales.**
@@ -50,7 +50,7 @@ Muchas transiciones admiten una propiedad **Progress** estándar que oscila entr
 
 Otras propiedades suelen ser específicas de una transición o efecto determinados. Por ejemplo, la transición de borrado admite una **propiedad GradientSize** que controla el ancho del área de transición.
 
-Para ejecutar una transición hacia atrás, establezca la propiedad **Progress** en 1.0 al principio de la transición y use el elemento **lineal** para cambiar el valor a 0.0, como se muestra en el ejemplo siguiente:
+Para ejecutar una transición hacia atrás, establezca la propiedad **Progress** en 1.0 al principio de la transición y use el elemento lineal para cambiar el valor a 0.0, como se muestra en el ejemplo siguiente: 
 
 
 ```

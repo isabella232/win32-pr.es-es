@@ -1,37 +1,37 @@
 ---
-title: Cómo agregar List-View columnas
+title: Cómo agregar columnas List-View datos
 description: En este tema se muestra cómo agregar columnas a un control de vista de lista.
 ms.assetid: 9DBDFF56-7CD6-467C-AD2E-64213615E241
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75e478c57a31fdd7ad91e0089106e93c24c47d5c
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: ee71065729502410d189493527af0e3e37663a4a2aaf541852454af7fa4a5aac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104078621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922085"
 ---
-# <a name="how-to-add-list-view-columns"></a>Cómo agregar List-View columnas
+# <a name="how-to-add-list-view-columns"></a>Cómo agregar columnas List-View datos
 
-En este tema se muestra cómo agregar columnas a un control de vista de lista. Las columnas se usan para mostrar los elementos y subelementos cuando un control de vista de lista está en la vista de informe (detalles). El texto de las columnas seleccionadas también se puede mostrar en la vista en mosaico.
+En este tema se muestra cómo agregar columnas a un control de vista de lista. Las columnas se usan para mostrar los elementos y subelementos cuando un control de vista de lista está en la vista de informe (detalles). El texto de las columnas seleccionadas también se puede mostrar en la vista de mosaico.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-Para agregar una columna a un control de vista de lista, envíe el mensaje [**LVM \_ INSERTCOLUMN**](lvm-insertcolumn.md) o use la macro [**ListView \_ INSERTCOLUMN**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertcolumn) . Para eliminar una columna, use el mensaje [**LVM \_ DELETECOLUMN**](lvm-deletecolumn.md) .
+Para agregar una columna a un control list-view, envíe el [**mensaje \_ LVM INSERTCOLUMN**](lvm-insertcolumn.md) o use la macro [**ListView \_ InsertColumn.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertcolumn) Para eliminar una columna, use el [**mensaje \_ LVM DELETECOLUMN.**](lvm-deletecolumn.md)
 
-En el siguiente ejemplo de código de C++ se llama a la macro [**\_ InsertColumn de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertcolumn) para agregar columnas a un control de vista de lista. Los encabezados de columna se definen en el archivo de encabezado de la aplicación como recursos de cadena, que se numeran consecutivamente a partir de los IDENTIFICADOres \_ FIRSTCOLUMN. El número de columnas se define en el archivo de encabezado **como \_ columnas de C**.
+En el siguiente ejemplo de código de C++ se llama a la macro [**\_ ListView InsertColumn**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertcolumn) para agregar columnas a un control list-view. Los encabezados de columna se definen en el archivo de encabezado de la aplicación como recursos de cadena, que se numeran consecutivamente a partir de IDS \_ FIRSTCOLUMN. El número de columnas se define en el archivo de encabezado como **C \_ COLUMNS**.
 
 
 ```C++
@@ -82,13 +82,13 @@ BOOL InitListViewColumns(HWND hWndListView)
 
 <dl> <dt>
 
-[Referencia de control de vista de lista](bumper-list-view-list-view-control-reference.md)
+[Referencia del control List-View](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Acerca de los controles List-View](list-view-controls-overview.md)
+[Acerca de List-View controles](list-view-controls-overview.md)
 </dt> <dt>
 
-[Usar controles List-View](using-list-view-controls.md)
+[Usar List-View controles](using-list-view-controls.md)
 </dt> </dl>
 
  

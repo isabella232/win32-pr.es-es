@@ -1,11 +1,11 @@
 ---
-title: Poss-Superiors atributo)
+title: Poss-Superiors atributo
 description: Lista de objetos que pueden contener esta clase.
 ms.assetid: 7d16c0bd-e27c-4c4a-b6cc-bc59cc295559
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Poss-Superiors
-- possSuperiors esquema de AD de atributos
+- Poss-Superiors esquema de AD de atributo
+- Esquema de AD del atributo possSuperiors
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b4a2610ff4ada2c433da6eb28c51d36798f5db9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e3e54ce56237a487ef2c44cf318c5672733dd14ed222f1ed349f62c0b329e99a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065992"
 ---
-# <a name="poss-superiors-attribute"></a>Poss-Superiors atributo)
+# <a name="poss-superiors-attribute"></a>Poss-Superiors atributo
 
 Lista de objetos que pueden contener esta clase.
 
@@ -30,13 +30,13 @@ Lista de objetos que pueden contener esta clase.
 | Entrada | Value |
 |-------------------|-----------------------------------------------------------------|
 | CN                | Poss-Superiors                                                  |
-| Nombre para mostrar de LDAP | possSuperiors                                                   |
-| Tamaño              | \-                                                              |
-| Actualizar privilegio  | Administrador de dominio                                            |
-| Frecuencia de actualización  | Cuando se define la clase.                                      |
+| Ldap-Display-Name | possSuperiors                                                   |
+| Size              | \-                                                              |
+| Actualizar privilegios  | Administrador de dominio                                            |
+| Frecuencia de actualización  | Cuando se define la clase .                                      |
 | Attribute-Id      | 1.2.840.113556.1.2.8                                            |
-| System-ID-GUID    | bf9679fa-0de6-11d0-a285-00aa003049e2                            |
-| Sintaxis            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
+| System-Id-Guid    | bf9679fa-0de6-11d0-a285-00aa003049e2                            |
+| Syntax            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
 
@@ -44,7 +44,7 @@ Lista de objetos que pueden contener esta clase.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Lista de objetos que pueden contener esta clase.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -77,13 +77,13 @@ Lista de objetos que pueden contener esta clase.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -92,19 +92,19 @@ Lista de objetos que pueden contener esta clase.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -119,18 +119,18 @@ Lista de objetos que pueden contener esta clase.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Lista de objetos que pueden contener esta clase.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Lista de objetos que pueden contener esta clase.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ Lista de objetos que pueden contener esta clase.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 

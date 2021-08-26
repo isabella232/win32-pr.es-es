@@ -1,15 +1,15 @@
 ---
-description: El evento ShowMenu se envía cuando el disco habilita o deshabilita el modo en que se muestra un menú.
+description: El evento ShowMenu se envía cuando el disco habilita o deshabilita la presentación de un menú.
 ms.assetid: 78fd0b80-baec-4174-9c55-f061627c3599
 title: ShowMenu
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53b78c2751a270b56f95bac223ab80b2e2143b04
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b56eb6767a8144bab3de832570db63bc4e2cdc012490f776f52b6c8977cce9d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050455"
 ---
 # <a name="showmenu"></a>ShowMenu
 
@@ -18,7 +18,7 @@ ms.locfileid: "103997885"
 
  
 
-El `ShowMenu` evento se envía cuando el disco habilita o deshabilita el modo en que se muestra un menú.
+El `ShowMenu` evento se envía cuando el disco habilita o deshabilita la presentación de un menú.
 
 ``` syntax
 ShowMenu(DVDMenuIDConstants, bEnabled)
@@ -31,7 +31,7 @@ ShowMenu(DVDMenuIDConstants, bEnabled)
 <span id="DVDMenuIDConstants"></span><span id="dvdmenuidconstants"></span><span id="DVDMENUIDCONSTANTS"></span>*DVDMenuIDConstants*
 </dt> <dd>
 
-Especifica el menú que se ha habilitado o deshabilitado como valor numérico.
+Especifica qué menú se ha habilitado o deshabilitado como un valor number.
 
 
 

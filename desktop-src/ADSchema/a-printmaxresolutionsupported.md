@@ -1,11 +1,11 @@
 ---
-title: Print-Max-Resolution-atributo compatible
-description: La resolución máxima de la impresora.
+title: Atributo Print-Max-Resolution-Supported
+description: Resolución máxima de impresora.
 ms.assetid: 0036d92f-47d1-471d-8bcf-f5a484ab8110
 ms.tgt_platform: multiple
 keywords:
-- Print-Max-Resolution-esquema de AD de atributos admitidos
-- printMaxResolutionSupported esquema de AD de atributos
+- Esquema de AD de atributo Print-Max-Resolution-Supported
+- Esquema de AD del atributo printMaxResolutionSupported
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c99f1aef09f73473b3f1f325e4bc9728fe6ded14
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9ed462cd8cde4020179ee7c63ae64289345cc45e3704a6185da81a7bf737ece1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065683"
 ---
-# <a name="print-max-resolution-supported-attribute"></a>Print-Max-Resolution-atributo compatible
+# <a name="print-max-resolution-supported-attribute"></a>Atributo Print-Max-Resolution-Supported
 
-La resolución máxima de la impresora.
+Resolución máxima de impresora.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | Print-Max-Resolution: compatible       |
-| Nombre para mostrar de LDAP | printMaxResolutionSupported          |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | Se admite la resolución máxima de impresión       |
+| Ldap-Display-Name | printMaxResolutionSupported          |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.238               |
-| System-ID-GUID    | 281416cf-1968-11d0-a28f-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 281416cf-1968-11d0-a28f-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,13 +55,13 @@ La resolución máxima de la impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Verdadero                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -76,13 +76,13 @@ La resolución máxima de la impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Verdadero                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -97,13 +97,13 @@ La resolución máxima de la impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Verdadero                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -118,13 +118,13 @@ La resolución máxima de la impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Verdadero                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -139,13 +139,13 @@ La resolución máxima de la impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Verdadero                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -160,13 +160,13 @@ La resolución máxima de la impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Verdadero                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |

@@ -1,7 +1,7 @@
 ---
-description: Cree una matriz de traslación.
+description: Cree una matriz de traducción.
 ms.assetid: a3565a06-22af-4ded-8835-da4c7ae81805
-title: Función D3DXMatrixTranslation (D3DX10Math. h)
+title: Función D3DXMatrixTranslation (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 7abf55e5b51091de5d823ba837cdc8ad51e3940b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5e6b5daf7bc3504e9ab79bc9ea5db70057e1b1e0f7dc20e8fd53a09958c2deb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105721525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028705"
 ---
-# <a name="d3dxmatrixtranslation-function-d3dx10mathh"></a>Función D3DXMatrixTranslation (D3DX10Math. h)
+# <a name="d3dxmatrixtranslation-function-d3dx10mathh"></a>Función D3DXMatrixTranslation (D3DX10Math.h)
 
-Cree una matriz de traslación.
+Cree una matriz de traducción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,14 +48,14 @@ D3DXMATRIX* D3DXMatrixTranslation(
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Matriz que se convertirá en una matriz de traslación. Vea [**D3DXMATRIX**](d3d10-d3dxmatrix.md).
+Matriz que se convertirá en una matriz de traducción. Vea [**D3DXMATRIX.**](d3d10-d3dxmatrix.md)
 
 </dd> <dt>
 
 *x* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Componente x de la traducción.
 
@@ -64,16 +64,16 @@ Componente x de la traducción.
 *y* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Componente y de la traducción.
 
 </dd> <dt>
 
-*z* \[ en\]
+*z* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Componente z de la traducción.
 
@@ -91,8 +91,8 @@ Matriz de traslación.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

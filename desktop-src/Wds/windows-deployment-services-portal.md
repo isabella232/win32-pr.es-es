@@ -26,13 +26,13 @@ Windows Deployment Services (WDS) es la versión revisada de Servicios de instal
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-La audiencia principal para desarrolladores de la API de WDS es para los grupos que desarrollan herramientas y procesos personalizados para TI y otros grupos de administración de equipos. En entornos en los que no se puede usar la solución Windows Deployment Services (WDS) estándar, la API de WDS permite el acceso mediante programación a algunos componentes de WDS.
+La audiencia principal para desarrolladores de la API de WDS es para los grupos que desarrollan herramientas y procesos personalizados para TI y otros grupos de administración de equipos. En entornos en los que no Windows la solución estándar de Servicios de implementación de aplicaciones (WDS), la API de WDS permite el acceso mediante programación a algunos componentes de WDS.
 
-Los fabricantes de equipos originales (OEM), los generadores de sistemas y los profesionales de TI corporativos que buscan información sobre cómo implementar Windows en equipos nuevos deben ver la información sobre la solución estándar Windows Deployment Services (WDS) en la Guía paso a paso de actualización de [Windows Deployment Services](/previous-versions/windows/it-pro/windows-vista/cc766320(v=ws.10)) y el Kit de instalación automatizada [(IAMK)](https://www.microsoft.com/download/details.aspx?id=10333)de Windows.
+Los fabricantes de equipos originales (OEM), los generadores de sistemas y los profesionales de TI corporativos que buscan información sobre cómo implementar Windows en equipos nuevos deben ver la información sobre la solución estándar Windows Deployment Services (WDS) en la Guía paso a paso de actualización de [Windows Deployment Services](/previous-versions/windows/it-pro/windows-vista/cc766320(v=ws.10)) y el Kit de instalación automatizada de Windows [(IAMK).](https://www.microsoft.com/download/details.aspx?id=10333)
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
-WDS está disponible como complemento para Windows Server 2003 con Service Pack 1 (SP1) y se incluye en el sistema operativo a partir de Windows Server 2003 con Service Pack 2 (SP2) y Windows Server 2008. La API de servidor PXE de WDS requiere el rol de servidor WDS en el servidor para implementar proveedores PXE personalizados. La API de cliente de WDS requiere la fase Windows de preinstalación de Microsoft (Windows PE 2.0) del procesamiento de la instalación. Imagen de arranque de RAMDISK Windows PE 2.0 en . El formato WIM debe descargarse como parte del proceso de arranque de red para implementar clientes WDS personalizados.
+WDS está disponible como complemento para Windows Server 2003 con Service Pack 1 (SP1) y se incluye en el sistema operativo a partir de Windows Server 2003 con Service Pack 2 (SP2) y Windows Server 2008. La API de servidor PXE de WDS requiere el rol de servidor WDS en el servidor para implementar proveedores PXE personalizados. La API de cliente de WDS requiere la fase Windows de preinstalación de Microsoft (Windows PE 2.0) del procesamiento de la instalación. Imagen de arranque de RAMDISK de Windows PE 2.0 en . El formato WIM debe descargarse como parte del proceso de arranque de red para implementar clientes WDS personalizados.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -41,7 +41,7 @@ WDS está disponible como complemento para Windows Server 2003 con Service Pack 
 | Tema                                                                                                 | Descripción                                                                    |
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Acerca de la API Windows Deployment Services](about-the-windows-deployment-services-api.md)<br/> | Información general sobre la API del servidor WDS y la API de cliente de WDS.<br/>    |
-| [Windows Referencia de Servicios de implementación](windows-deployment-services-reference.md)<br/>         | Describe las funciones y estructuras Windows Deployment Services.<br/> |
+| [Windows Referencia de servicios de implementación](windows-deployment-services-reference.md)<br/>         | Describe las funciones y estructuras Windows Deployment Services.<br/> |
 
 
 

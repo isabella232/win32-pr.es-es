@@ -1,7 +1,7 @@
 ---
-description: El método IsUsingTimeFormat determina si un formato de hora especificado es el formato que se está usando actualmente.
+description: El método IsUsingTimeFormat determina si un formato de hora especificado es el formato actualmente en uso.
 ms.assetid: 86965bfc-fc9f-42d3-bcaa-2049195b98bd
-title: Método CSourceSeeking. IsUsingTimeFormat (Ctlutil. h)
+title: Método CSourceSeeking.IsUsingTimeFormat (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8229387364a061febc7bd825e7bc76ee5d9b4a2d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b930746102bc43e3549b4565a7591f4ac5fee8cc6503d9fb6aadcbe1659a52f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054245"
 ---
-# <a name="csourceseekingisusingtimeformat-method"></a>CSourceSeeking. IsUsingTimeFormat, método
+# <a name="csourceseekingisusingtimeformat-method"></a>Método CSourceSeeking.IsUsingTimeFormat
 
-El `IsUsingTimeFormat` método determina si un formato de hora especificado es el formato que se está usando actualmente.
+El `IsUsingTimeFormat` método determina si un formato de hora especificado es el formato actualmente en uso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,23 +51,23 @@ Puntero a un GUID de formato de hora. Consulte [**GUID de formato de hora**](tim
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** enumerados en la tabla siguiente.
 
 
 
 | Código devuelto                                                                               | Descripción                                                |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>   | El formato especificado no es el formato actual.<br/> |
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | El formato especificado es el formato actual.<br/>     |
-| <dl> <dt>**\_puntero E**</dt> </dl> | Argumento de puntero **nulo** .<br/>                      |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>   | El formato especificado no es el formato actual.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | El formato especificado es el formato actual.<br/>     |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | **Argumento de** puntero NULL.<br/>                      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El único formato de hora admitido por la clase base es el \_ formato \_ de hora \_ tiempo medio (100-nanosegundos).
+El único formato de hora admitido por la clase base es TIME \_ FORMAT \_ MEDIA TIME \_ (unidades de 100 nanosegundos).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ El único formato de hora admitido por la clase base es el \_ formato \_ de hora
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ El único formato de hora admitido por la clase base es el \_ formato \_ de hora
 
 <dl> <dt>
 
-[**Clase CSourceSeeking**](csourceseeking.md)
+[**CSourceSeeking (clase)**](csourceseeking.md)
 </dt> </dl>
 
  

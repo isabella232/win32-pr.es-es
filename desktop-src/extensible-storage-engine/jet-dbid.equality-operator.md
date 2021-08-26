@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_DBID. Operador de igualdad'
+description: 'Más información sobre: JET_DBID. Operador de igualdad'
 title: JET_DBID. Operador de igualdad
 TOCTitle: 'Equality operator '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_DBID.op_Equality(Microsoft.Isam.Esent.Interop.JET_DBID,Microsoft.Isam.Esent.Interop.JET_DBID)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7f9e99de78665d07e1e5a800f5520a39eb05e74e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 403c9f7b45bffe5a42806156868466f291dbcbdff39b4a36ac8f944cb475fa67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968015"
 ---
 # <a name="jet_dbidequality-operator"></a>JET_DBID. Operador de igualdad
 
 Determina si dos instancias especificadas de JET_DBID son iguales.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,29 +64,29 @@ public static bool operator ==(
 
 #### <a name="parameters"></a>Parámetros
 
-  - LHS  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     Primera instancia que se va a comparar.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     Segunda instancia que se va a comparar.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_DBID](./jet-dbid-structure.md)
+[JET_DBID estructura](./jet-dbid-structure.md)
 
-[Miembros de JET_DBID](./jet-dbid-members.md)
+[JET_DBID miembros](./jet-dbid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
