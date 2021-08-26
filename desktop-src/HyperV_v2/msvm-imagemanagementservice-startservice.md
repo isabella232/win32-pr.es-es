@@ -1,5 +1,5 @@
 ---
-description: 'Método StartService de la Msvm_ImageManagementService : inicia el servicio.'
+description: 'Método StartService de la clase Msvm_ImageManagementService : inicia el servicio.'
 ms.assetid: d1e11947-4f48-404f-a359-627a3b7716fd
 title: Método StartService de la Msvm_ImageManagementService clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5fb895687960348bf030efe5f668f7a914157ff5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ec12863893e603f7f6fe00d9b619386420ee69d40ea31fc586c00e12ce75af9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046575"
 ---
 # <a name="startservice-method-of-the-msvm_imagemanagementservice-class"></a>Método StartService de la clase \_ Msvm ImageManagementService
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

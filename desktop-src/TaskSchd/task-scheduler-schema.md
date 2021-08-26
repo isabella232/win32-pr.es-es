@@ -1,9 +1,9 @@
 ---
-title: Esquema de Programador de tareas
-description: El esquema Programador de tareas define XML válido que se usa para registrar tareas con el servicio Programador de tareas. Los desarrolladores pueden crear su propio XML, validarlo con respecto a este esquema y registrar tareas mediante el método ITaskFolder RegisterTask.
+title: Programador de tareas esquema
+description: El Programador de tareas define xml válido que se usa para registrar tareas con el Programador de tareas servicio. Los desarrolladores pueden crear su propio XML, validarlo con este esquema y registrar tareas mediante el método ITaskFolder RegisterTask.
 ms.assetid: 9b1b8e34-c635-413a-a230-79a58017cf21
 keywords:
-- Programador de tareas de Programador de tareas, referencia, esquema XML
+- Programador de tareas Programador de tareas , referencia, esquema XML
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -11,25 +11,25 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 143633fbc983a4ff828c3406b5015995b4bc7842
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: 7b03744b864aea8903cb77482d2ce377186266be5ad160c2c037f996d7b5ed91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "104149043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080375"
 ---
-# <a name="task-scheduler-schema"></a>Esquema de Programador de tareas
+# <a name="task-scheduler-schema"></a>Programador de tareas esquema
 
-El esquema Programador de tareas define XML válido que se usa para registrar tareas con el servicio Programador de tareas. Los desarrolladores pueden crear su propio XML, validarlo con respecto a este esquema y registrar tareas mediante el método [**ITaskFolder:: RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) .
+El Programador de tareas define xml válido que se usa para registrar tareas con el Programador de tareas servicio. Los desarrolladores pueden crear su propio XML, validarlo con este esquema y registrar tareas mediante el [**método ITaskFolder::RegisterTask.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask)
 
-Los tipos y elementos del esquema de Programador de tareas se documentan individualmente en las secciones siguientes.
+Los tipos y elementos del esquema Programador de tareas se documentan individualmente en las secciones siguientes.
 
--   [Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
--   [Tipos simples de esquema de Programador de tareas](task-scheduler-schema-simple-types.md)
--   [Tipos complejos de esquema Programador de tareas](task-scheduler-schema-complex-types.md)
--   [Programador de tareas grupos de esquemas](task-scheduler-schema-groups.md)
+-   [Programador de tareas de esquema](task-scheduler-schema-elements.md)
+-   [Programador de tareas tipos simples de esquema](task-scheduler-schema-simple-types.md)
+-   [Programador de tareas complejos de esquema](task-scheduler-schema-complex-types.md)
+-   [Programador de tareas de esquema](task-scheduler-schema-groups.md)
 
-El esquema de Programador de tareas completo se define mediante el siguiente archivo XSD.
+El esquema Programador de tareas completo se define mediante el siguiente archivo XSD.
 
 
 ```XML
@@ -695,9 +695,9 @@ El esquema de Programador de tareas completo se define mediante el siguiente arc
 
 
 
- 
+ 
 
- 
+ 
 
 
 

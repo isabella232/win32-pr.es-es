@@ -3,27 +3,27 @@ title: Introducción a OpenGL
 description: Introducción a OpenGL
 ms.assetid: 8fe214a9-f071-470b-ac72-182a7bd54fbd
 keywords:
-- OpenGL, introducción
+- OpenGL,introduction
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cece636e51348288e587116bf13f95696b93ab9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aa30507db7d7994fe9bf88d6b056d48ee0266b9e7f4959d82a31134a9c3ce5dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035025"
 ---
 # <a name="introduction-to-opengl"></a>Introducción a OpenGL
 
-Como interfaz de software para el hardware de gráficos, el propósito principal de OpenGL es representar objetos bidimensionales y bidimensionales en un fotogramas. Estos objetos se describen como secuencias de vértices (que definen objetos geométricos) o píxeles (que definen imágenes). OpenGL realiza varios procesos en estos datos para convertirlos en píxeles para formar la imagen final deseada en el fotogramas.
+Como interfaz de software para hardware gráfico, el propósito principal de OpenGL es representar objetos bidimensionales y tridimensionales en un búfer de fotogramas. Estos objetos se describen como secuencias de vértices (que definen objetos geométricos) o píxeles (que definen imágenes). OpenGL realiza varios procesos en estos datos para convertirlos en píxeles para formar la imagen deseada final en el búfer de fotogramas.
 
-En los temas siguientes se presenta una vista global de cómo funciona OpenGL:
+Los temas siguientes presentan una vista global de cómo funciona OpenGL:
 
--   [Primitivas y comandos](primitives-and-commands.md) describe puntos, segmentos de línea y polígonos como unidades básicas de dibujo; y el procesamiento de comandos.
--   El [control gráfico OpenGL](opengl-graphic-control.md) describe qué operaciones gráficas Controls OpenGL y qué no controla.
--   En el [modelo de ejecución](execution-model.md) se describe el modelo de cliente/servidor para interpretar los comandos OpenGL.
--   La [operación básica de OpenGL](basic-opengl-operation.md) proporciona una descripción de alto nivel de cómo OpenGL procesa los datos para generar una imagen correspondiente en fotogramas.
--   [Nombres de función de OpenGL](opengl-function-names.md) describe las convenciones de nomenclatura utilizadas en OpenGL.
+-   [Primitivos y comandos describe](primitives-and-commands.md) puntos, segmentos de línea y polígonos como unidades básicas de dibujo; y el procesamiento de comandos.
+-   [OpenGL Graphic Control](opengl-graphic-control.md) describe qué operaciones gráficas controla OpenGL y cuáles no.
+-   [Modelo de](execution-model.md) ejecución describe el modelo de cliente/servidor para interpretar comandos OpenGL.
+-   [Basic OpenGL Operation (Operación](basic-opengl-operation.md) básica de OpenGL) proporciona una descripción general de cómo OpenGL procesa los datos para generar una imagen correspondiente en el búfer de fotogramas.
+-   [OpenGL Function Names](opengl-function-names.md) describe las convenciones de nomenclatura usadas en OpenGL.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -32,27 +32,27 @@ En los temas siguientes se presenta una vista global de cómo funciona OpenGL:
 [Canalización de procesamiento de OpenGL](opengl-processing-pipeline.md)
 </dt> <dt>
 
-[Usar evaluadores](using-evaluators.md)
+[Uso de evaluadores](using-evaluators.md)
 </dt> <dt>
 
-[Realización de una selección y comentarios](performing-selection-and-feedback.md)
+[Realización de la selección y los comentarios](performing-selection-and-feedback.md)
 </dt> <dt>
 
-[Usar listas de visualización](using-display-lists.md)
+[Uso de listas para mostrar](using-display-lists.md)
 </dt> <dt>
 
-[Administrar modos y ejecución](managing-modes-and-execution.md)
+[Administración de modos y ejecución](managing-modes-and-execution.md)
 </dt> <dt>
 
-[Obtención de información de estado](obtaining-state-information.md)
+[Obtener información de estado](obtaining-state-information.md)
 </dt> <dt>
 
-[Biblioteca de utilidades OpenGL](opengl-utility-library.md)
+[Biblioteca de la utilidad OpenGL](opengl-utility-library.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,16 +4,16 @@ ms.assetid: 9531947d-4cd8-43c3-8825-4c48a0d69395
 title: Establecer el modo de sombreado (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62f93d79e4507d9e9d08569e5cbd75bb8b42aa4f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 769908513d4388fafae73f5a6788aef37c3ac9456a00f2e3280c57e04c18b462
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104495316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068965"
 ---
 # <a name="setting-the-shading-mode-direct3d-9"></a>Establecer el modo de sombreado (Direct3D 9)
 
-Direct3D permite seleccionar un modo de sombreado a la vez. De forma predeterminada, se selecciona sombreado Gouraud. En C++, puede cambiar el modo de sombreado llamando al método [**IDirect3DDevice9:: SetRenderState**](/windows/desktop/api) . Establezca el parámetro de *Estado* en D3DRS \_ SHADEMODE. El parámetro *State* debe establecerse en un miembro de la enumeración [**D3DSHADEMODE**](./d3dshademode.md) . En los siguientes ejemplos de código de ejemplo se muestra cómo se puede establecer el modo de sombreado actual de una aplicación Direct3D en modo de sombreado plano o Gouraud.
+Direct3D permite seleccionar un modo de sombreado a la vez. De forma predeterminada, el sombreado de Gouraud está seleccionado. En C++, puede cambiar el modo de sombreado llamando al método [**IDirect3DDevice9::SetRenderState.**](/windows/desktop/api) Establezca el *parámetro State* en D3DRS \_ SHADEMODE. El *parámetro State* debe establecerse en un miembro de la [**enumeración D3DSHADEMODE.**](./d3dshademode.md) En los ejemplos de código de ejemplo siguientes se muestra cómo se puede establecer el modo de sombreado actual de una aplicación Direct3D en modo plano o en modo de sombreado de Gouraud.
 
 
 ```

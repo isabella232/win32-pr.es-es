@@ -4,12 +4,12 @@ ms.assetid: 14389eea-8091-4c10-849e-53db3e98a7c8
 title: Ejemplos de medios (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef5d29b11fb6db316e3fbf6e33e24218ddbbf062
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 83bad0186d54d99b6c7f7666a5971f6c35e8e2a561109e7bfd6afd45fd5f5e6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061075"
 ---
 # <a name="media-samples-microsoft-media-foundation"></a>Ejemplos de medios (Microsoft Media Foundation)
 

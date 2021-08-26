@@ -1,7 +1,7 @@
 ---
-description: Toma un flujo a un archivo de notas de Journal y devuelve una secuencia XML que representa el contenido del documento.
+description: Toma una secuencia a un archivo de nota de diario y devuelve una secuencia XML que representa el contenido del documento.
 ms.assetid: 5a169dfe-b102-4aef-9efe-5db2cd2fb96f
-title: 'IJournalReader:: ReadFromStream (método) (Journal. h)'
+title: Método IJournalReader::ReadFromStream (Journal.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - COM
 api_location:
 - Journal.dll
-ms.openlocfilehash: 258ac30b8857fa4ef24bd86a08c7e402229f4bff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7dbe9d7929f616914d06cad237f486677cd8e5616cb04bf28a5836751ca0a3c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057855"
 ---
-# <a name="ijournalreaderreadfromstream-method"></a>IJournalReader:: ReadFromStream (método)
+# <a name="ijournalreaderreadfromstream-method"></a>IJournalReader::ReadFromStream (método)
 
-Toma un flujo a un archivo de notas de Journal y devuelve una secuencia XML que representa el contenido del documento.
+Toma una secuencia a un archivo de nota de diario y devuelve una secuencia XML que representa el contenido del documento.
 
 > [!Note]  
-> El componente lector del diario no puede leer archivos de Windows Journal creados por equipos que ejecutan Windows 7 o posterior. La interfaz IJournalReader se debe considerar en desuso u obsoleta y no debe usarse.
+> El componente Lector de diario no puede Windows archivos de diario creados por máquinas que ejecutan Windows 7 o posterior. La interfaz IJournalReader debe considerarse en desuso o obsoleta y no debe usarse.
 
  
 
@@ -45,31 +45,31 @@ HRESULT ReadFromStream(
 
 <dl> <dt>
 
-*pJournalFileStream* \[ de\]
+*pJournalFileStream* \[ En\]
 </dt> <dd>
 
-Objeto [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) que representa el archivo de diario que se va a leer.
+Objeto [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) que representa el archivo Journal que se leerá.
 
 </dd> <dt>
 
 *ppXmlStream* \[ out, retval\]
 </dt> <dd>
 
-Un puntero a la dirección de un objeto [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) que recibirá el flujo XML creado mediante la lectura del archivo de diario.
+Puntero a la dirección de un [**objeto IStream**](/windows/desktop/api/objidl/nn-objidl-istream) que recibirá la secuencia XML creada mediante la lectura del archivo Journal.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las secuencias se utilizan para evitar el acceso directo al sistema de archivos y para permitir la elección del método de análisis de XML que se va a usar.
+Secuencias se usan para evitar el acceso directo al sistema de archivos y para permitir la elección en qué método de análisis XML se va a usar.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente de un controlador del evento [**click**](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) de un botón se crea una instancia de la interfaz de la [**interfaz IJournalReader**](ijournalreader.md) y se usa para leer un archivo de diario existente.
+En el ejemplo siguiente de un controlador para el evento [**Click**](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) de un botón se crea una instancia de la interfaz [**IJournalReader Interface**](ijournalreader.md) y se usa para leer un archivo journal existente.
 
 
 ```C++
@@ -154,9 +154,9 @@ void CJntlReaderMFCDlg::OnBnClickedButton1()
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                     |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                     |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                         |
-| Encabezado<br/>                   | <dl> <dt>Journal. h (también requiere Journal \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Journal.h (también requiere journal \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Journal.dll</dt> </dl>                            |
 
 
@@ -165,10 +165,10 @@ void CJntlReaderMFCDlg::OnBnClickedButton1()
 
 <dl> <dt>
 
-[**Interfaz IJournalReader**](ijournalreader.md)
+[**IJournalReader (Interfaz)**](ijournalreader.md)
 </dt> <dt>
 
-[Referencia del esquema del lector de Journal](journal-reader-schema-reference.md)
+[Referencia del esquema del lector de diario](journal-reader-schema-reference.md)
 </dt> </dl>
 
  

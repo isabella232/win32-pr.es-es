@@ -1,7 +1,7 @@
 ---
 description: Se llama al método OnActivate cuando se activa la página de propiedades.
 ms.assetid: aff843d4-cfb2-4255-a59c-0579f1cd24bd
-title: Método CBasePropertyPage. OnActivate (Cprop. h)
+title: Método CBasePropertyPage.OnActivate (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5093cb2ac71e8010bc689e4517b3d8bb758c8436
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f779f5bc6c33f15b5e2b1da83a72d38b91c1785564e9cace99b91469e9fdfc6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052575"
 ---
-# <a name="cbasepropertypageonactivate-method"></a>CBasePropertyPage. OnActivate (método)
+# <a name="cbasepropertypageonactivate-method"></a>Método CBasePropertyPage.OnActivate
 
-`OnActivate`Se llama al método cuando se activa la página de propiedades.
+Se `OnActivate` llama al método cuando se activa la página de propiedades.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,15 +42,15 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La implementación de la clase base devuelve S \_ correcto.
+La implementación de clase base devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CBasePropertyPage:: Activate**](cbasepropertypage-activate.md) llama al `OnActivate` método. En la clase derivada, invalide `OnActivate` para inicializar el cuadro de diálogo.
+El [**método CBasePropertyPage::Activate**](cbasepropertypage-activate.md) llama al `OnActivate` método . En la clase derivada, invalide `OnActivate` para inicializar el cuadro de diálogo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se inicializa un control TrackBar. En este ejemplo se da por supuesto que **m \_ pOwningFilter** es un puntero a una interfaz personalizada en el filtro asociado a la página de propiedades. (Use el método [**CBasePropertyPage:: alconnect**](cbasepropertypage-onconnect.md) para inicializar estos punteros).
+En el ejemplo siguiente se inicializa un control trackbar. En este ejemplo se supone **que m \_ pOwningFilter** es un puntero a una interfaz personalizada en el filtro asociado a la página de propiedades. (Use el [**método CBasePropertyPage::OnConnect**](cbasepropertypage-onconnect.md) para inicializar dichos punteros).
 
 
 ```C++
@@ -74,8 +74,8 @@ HRESULT CMyProp::OnActivate(void)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ HRESULT CMyProp::OnActivate(void)
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
 description: Valor que define las unidades de un valor de profundidad en un fotograma de vídeo.
 ms.assetid: 0D7238F3-C224-48BD-8654-B3182DFB244C
-title: MF_MT_DEPTH_VALUE_UNIT atributo (mfapi. h)
+title: MF_MT_DEPTH_VALUE_UNIT atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f6086a34f62c26b3fe1fa611318792c9056a50c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca57fa5cf72be266ac58ee504b1d4b7c4f2506646f33295e468d2ed0781ab8d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060645"
 ---
-# <a name="mf_mt_depth_value_unit-attribute"></a>\_Atributo de \_ unidad de valor de profundidad MF MT \_ \_
+# <a name="mf_mt_depth_value_unit-attribute"></a>Atributo MF \_ MT \_ DEPTH VALUE \_ \_ UNIT
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
 Valor que define las unidades de un valor de profundidad en un fotograma de vídeo.
 
@@ -21,15 +21,15 @@ Valor que define las unidades de un valor de profundidad en un fotograma de víd
 
 **UINT64**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de unidad es un valor UINT64 en nanometros, en el intervalo 1E-9 metros. Si este valor no está presente, el valor predeterminado de la unidad es 1E-3, lo que indica que cada nivel de píxel se mide en 1 milímetro en el espacio físico.
+El valor de unidad es un valor UINT64 en nanometers, en el intervalo de 1e a 9 metros. Si este valor no está presente, el valor predeterminado de la unidad es 1e-3, lo que indica que cada nivel de píxel se mide en 1 milímetro en el espacio físico.
 
-Las cámaras de profundidad no pueden detectar la profundidad de todos los píxeles. Cuando la confianza de un píxel es baja, debido a material, oclusión o fuera del intervalo, etc., el valor de profundidad en ese píxel puede ser no válido.
+Las cámaras de profundidad no pueden entender la profundidad de todos los píxeles. Cuando la confianza de un píxel es baja, debido a material, oclusión o fuera del intervalo, etc., el valor de profundidad de ese píxel puede no ser válido.
 
 Cuando un valor de píxel de profundidad es 0, el píxel no es válido.
 
-Algunas cámaras de profundidad adjuntan metadatos de máscara de archivos para cada píxel, además del valor de profundidad, para representar la razón por la que la profundidad del píxel no es válida, debido a material, oclusión o fuera del intervalo, etc. Se recomienda evitar la Asociación de metadatos como bits en valor de profundidad, ya que normalmente dará lugar a dificultades al usar estos valores en el sombreador de píxeles. En lugar. se recomienda usar un búfer de imagen 8 bits independiente con la misma resolución y adjuntarlo como atributo de [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample). Estos metadatos varían para cada proveedor de la cámara y no están estandarizados por la plataforma. Se recomienda usar 16 bits completos para el valor de profundidad a fin de facilitar el procesamiento de bajada y el uso de un valor fijo como 0 para la invalidación.
+Algunas cámaras de profundidad adjuntan metadatos de máscara de bits para cada píxel además del valor de profundidad para representar el motivo por el que la profundidad del píxel no es válida, debido a material, oclusión o fuera del intervalo, etc. Se recomienda evitar adjuntar estos metadatos como bits en el valor de profundidad, ya que normalmente dará lugar a dificultades al usar estos valores en el sombreador de píxeles. en lugar de. Se recomienda usar un búfer de imagen de 8 bits independiente con la misma resolución y adjuntarlo como atributo de [**LAMUEJEMPLO.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) Estos metadatos varían para cada proveedor de cámara y no están estandarizados por la plataforma. Se recomienda usar 16 bits completos para el valor de profundidad para facilitar el procesamiento de bajada y el uso de un valor fijo como 0 para la invalidación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Algunas cámaras de profundidad adjuntan metadatos de máscara de archivos para 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                          |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                      |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                          |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                      |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Pausar (comando)
-description: El comando PAUSE pausa la reproducción o grabación.
+title: comando pause
+description: El comando pause pausa la reproducción o la grabación.
 ms.assetid: 8fa1a40d-fdb1-4c9f-a8db-9dd6a0d83b87
 keywords:
-- comando pausar de Windows multimedia
+- comando pause Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25957defa4db514ce84f2e013dcc3751e21779b8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05f91441113d060a98219263e49388b99396fa2eeeb78d8f3eabdd6c71d8a3a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038095"
 ---
-# <a name="pause-command"></a>Pausar (comando)
+# <a name="pause-command"></a>comando pause
 
-El comando PAUSE pausa la reproducción o grabación. La mayoría de los controladores conservan la posición actual y finalmente reanudan la reproducción o grabación en esta posición. Los dispositivos de audio de CD, digital-video, MIDI Sequencer, VCR, Videodisc y de onda-audio reconocen este comando.
+El comando pause pausa la reproducción o la grabación. La mayoría de los controladores conservan la posición actual y finalmente reanudan la reproducción o grabación en esta posición. Los dispositivos cd audio, digital-video, secuenciador MIDI, VCR, videodisc y audio de forma de onda reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -48,21 +48,21 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. En el caso de los dispositivos de vídeo digital y vídeo, también se puede especificar "prueba". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo digital y VCR, también se puede especificar "prueba". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Con los controladores MCICDA, MCISEQ y MCIPIONR, el comando PAUSE funciona igual que el comando [Stop](stop.md) .
+Con los controladores MCICDA, MCISEQ y MCIPIONR, el comando pause funciona igual que el [comando stop.](stop.md)
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente comando pausa el dispositivo "de".
+El comando siguiente pausa el dispositivo "my sound".
 
 ``` syntax
 pause mysound
@@ -83,10 +83,10 @@ pause mysound
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> <dt>
 
 [stop](stop.md)

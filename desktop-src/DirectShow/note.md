@@ -1,7 +1,7 @@
 ---
 description: La macro NOTE envía una cadena a la ubicación de salida de depuración. Se omite en las compilaciones comerciales.
 ms.assetid: 8b85861a-b4d6-4cc6-9ac9-77d06f173869
-title: Nota (Wxdebug. h)
+title: NOTA (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 898d31c48807c3bf0826dc643d89126db36b0f0b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0becacba37f3f474577c36a694539de77795f1c19ccf3b1655cb80370be9e297
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050925"
 ---
 # <a name="note"></a>NOTA
 
@@ -45,20 +45,20 @@ NOTEn(
 <span id="pFormat"></span><span id="pformat"></span><span id="PFORMAT"></span>*pFormat*
 </dt> <dd>
 
-Una cadena de formato de estilo printf.
+Cadena de formato printf-style.
 
 </dd> <dt>
 
-<span id="arg1arg5"></span><span id="ARG1ARG5"></span>*arg1*:*arg5*
+<span id="arg1arg5"></span><span id="ARG1ARG5"></span>*arg1*–*arg5*
 </dt> <dd>
 
 Argumentos adicionales para la cadena de formato. El número de argumentos debe coincidir con el nombre de la macro. Por ejemplo, **NOTE1** toma un argumento y **NOTE5** toma cinco argumentos.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Estas macros son variantes de la macro [**DbgLog**](dbglog.md) . Generan mensajes de seguimiento de registro de nivel 5 \_ .
+Estas macros son variantes de la [**macro DbgLog.**](dbglog.md) Generan mensajes LOG TRACE de nivel \_ 5.
 
 ## <a name="example"></a>Ejemplo
 
@@ -76,8 +76,8 @@ NOTE2("Width: %d, Height: %d", width, height);
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxdebug. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxdebug.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

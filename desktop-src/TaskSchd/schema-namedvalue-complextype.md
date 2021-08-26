@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de namedValue
-description: Define un nombre que está asociado a un valor en un par nombre-valor.
+title: tipo complejo namedValue
+description: Define un nombre asociado a un valor en un par nombre-valor.
 ms.assetid: 5e3ce01a-9be6-4f12-be02-42065aba46cd
 keywords:
-- tipo complejo de namedValue Programador de tareas
+- tipo complejo namedValue Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 39d6990194350dcc032d42838f30bdd7339b0d38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1f0f92b89114dfedfbfdbc61d476aff99332191317c1f67b2163eb9416ef3a42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080425"
 ---
-# <a name="namedvalue-complex-type"></a>Tipo complejo de namedValue
+# <a name="namedvalue-complex-type"></a>tipo complejo namedValue
 
-Define un nombre que está asociado a un valor en un par nombre-valor.
+Define un nombre asociado a un valor en un par nombre-valor.
 
 ``` syntax
 <xs:complexType name="namedValue">
@@ -45,7 +45,7 @@ Define un nombre que está asociado a un valor en un par nombre-valor.
 
 | Nombre | Tipo                                                                    | Descripción                                                                          |
 |------|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| name | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md) | Especifica el nombre que está asociado a un valor en un par nombre-valor. <br/> |
+| name | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md) | Especifica el nombre asociado a un valor en un par nombre-valor. <br/> |
 
 
 
@@ -53,10 +53,10 @@ Define un nombre que está asociado a un valor en un par nombre-valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

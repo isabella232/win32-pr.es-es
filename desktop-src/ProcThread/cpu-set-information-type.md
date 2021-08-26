@@ -1,7 +1,7 @@
 ---
-description: Representa el tipo de información de la estructura de información de conjunto de CPU del sistema \_ \_ \_ .
+description: Representa el tipo de información de la estructura SYSTEM \_ CPU \_ SET \_ INFORMATION.
 ms.assetid: B42CB8E8-0010-4B11-AB0D-6D196DCCC90A
-title: Enumeración CPU_SET_INFORMATION_TYPE (Processthreadapi. h)
+title: CPU_SET_INFORMATION_TYPE enumeración (Processthreadapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Processthreadapi.h
-ms.openlocfilehash: 0283275856e8e68bf983aaeb9a7660a5a0a6bf59
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c932a143553c1101d6a81bac86ba54e21603eaf80ed5d2613484bff22a7e625
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101935"
 ---
-# <a name="cpu_set_information_type-enumeration"></a>\_ \_ Enumeración de tipo de información de conjunto de CPU \_
+# <a name="cpu_set_information_type-enumeration"></a>Enumeración \_ SET \_ INFORMATION TYPE \_ de CPU
 
-Representa el tipo de información de la estructura de [**\_ información de \_ conjunto \_ de CPU del sistema**](/windows/desktop/api/winnt/ns-winnt-system_cpu_set_information) .
+Representa el tipo de información de la estructura [**SYSTEM \_ CPU SET \_ \_ INFORMATION.**](/windows/desktop/api/winnt/ns-winnt-system_cpu_set_information)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,7 +42,7 @@ typedef enum _CPU_SET_INFORMATION_TYPE {
 <span id="CpuSetInformation"></span><span id="cpusetinformation"></span><span id="CPUSETINFORMATION"></span>**CpuSetInformation**
 </dt> <dd>
 
-La estructura contiene información de conjunto de CPU.
+La estructura contiene información del conjunto de CPU.
 
 </dd> </dl>
 
@@ -52,9 +52,9 @@ La estructura contiene información de conjunto de CPU.
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                              |
-| Encabezado<br/>                   | <dl> <dt>Processthreadsapi. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                       |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                              |
+| Header<br/>                   | <dl> <dt>Processthreadsapi.h (incluir Windows.h)</dt> </dl> |
 
 
 

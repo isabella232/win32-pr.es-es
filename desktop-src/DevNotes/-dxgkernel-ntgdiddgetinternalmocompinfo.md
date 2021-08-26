@@ -1,7 +1,7 @@
 ---
-description: Permite que el controlador informe de que asigna internamente la memoria de la pantalla para realizar la compensación de movimiento.
+description: Permite que el controlador informe de que asigna internamente memoria de presentación para realizar la compensación del movimiento.
 ms.assetid: cf2878ae-7eff-4214-bb9e-e8b608831108
-title: Función NtGdiDdGetInternalMoCompInfo (Ntgdi. h)
+title: Función NtGdiDdGetInternalMoCompInfo (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: a9ddbb7843c7a1142ac6cd9906ef1ed3265e5d11
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 323c6d36284032f5d9fb1ee73b90393ed3d00c0c8247002c1f8b0f42484784fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103865"
 ---
-# <a name="ntgdiddgetinternalmocompinfo-function"></a>NtGdiDdGetInternalMoCompInfo función)
+# <a name="ntgdiddgetinternalmocompinfo-function"></a>Función NtGdiDdGetInternalMoCompInfo
 
-\[Esta función está sujeta a cambios en cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades para interactuar directamente con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios en el sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
-Permite que el controlador informe de que asigna internamente la memoria de la pantalla para realizar la compensación de movimiento.
+Permite que el controlador informe de que asigna internamente memoria de presentación para realizar la compensación del movimiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,38 +45,38 @@ DWORD APIENTRY NtGdiDdGetInternalMoCompInfo(
 
 <dl> <dt>
 
-*hDirectDraw* \[ de\]
+*hDirectDraw* \[ En\]
 </dt> <dd>
 
-Identificador del objeto DirectDraw en modo kernel creado previamente.
+Controle el objeto DirectDraw en modo kernel creado previamente.
 
 </dd> <dt>
 
 *puGetInternalData* \[ in, out\]
 </dt> <dd>
 
-Puntero a una estructura [**DD \_ GETINTERNALMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getinternalmocompdata) que contiene los requisitos de memoria interna.
+Puntero a una [**estructura \_ GETINTERNALMOCOMPDATA de DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getinternalmocompdata) que contiene los requisitos de memoria internos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**NtGdiDdGetInternalMoCompInfo** devuelve uno de los siguientes códigos de devolución de llamada.
+**NtGdiDdGetInternalMoCompInfo devuelve** uno de los siguientes códigos de devolución de llamada.
 
 
 
 | Código devuelto                                                                                              | Descripción                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_controlador DDHAL \_ controlado**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es DD \_ Aceptar, DirectDraw o Direct3D continúa con la función. De lo contrario, DirectDraw o Direct3D devuelve el código de error proporcionado por el controlador y anula la función.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED del controlador DDHAL \_**</dt> </dl> | El controlador no tiene ningún comentario en la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D informa de una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido ejecutando la implementación independiente de dispositivos DirectDraw o Direct3D.<br/> |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ MANIPULADO**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es DD \_ correcto, DirectDraw o Direct3D continúa con la función . De lo contrario, DirectDraw o Direct3D devuelven el código de error proporcionado por el controlador y anulan la función.<br/>                                                                                 |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ NO CONTROLADA**</dt> </dl> | El controlador no tiene ningún comentario sobre la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D notifica una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido mediante la ejecución de la implementación independiente del dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información, vea el kit de desarrollo de controladores (DDK) de Microsoft DirectX video Acceleration.
+Para más información, consulte Microsoft DirectX Video Acceleration Driver Development Kit (DDK).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Para obtener más información, vea el kit de desarrollo de controladores (DDK) 
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ Para obtener más información, vea el kit de desarrollo de controladores (DDK) 
 
 <dl> <dt>
 
-[Compatibilidad con clientes de nivel inferior de gráficos](-dxgkernel-low-level-client-support.md)
+[Compatibilidad con clientes de bajo nivel de gráficos](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

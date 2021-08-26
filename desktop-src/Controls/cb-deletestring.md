@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CB_DELETESTRING (Winuser. h)
+title: CB_DELETESTRING mensaje (Winuser.h)
 description: Elimina una cadena en el cuadro de lista de un cuadro combinado.
 ms.assetid: 8d526796-04ef-4c01-94d6-fb50e6fef27b
 keywords:
-- CB_DELETESTRING controles de mensajes de Windows
+- CB_DELETESTRING controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb0d3900c86874db1113c219fd9f7967c5f6bb6e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b0bed1d654b86ffeb4a02c780678822e1999847ef0e163e35ecba081af099f66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063585"
 ---
-# <a name="cb_deletestring-message"></a>\_Mensaje DELETESTRING CB
+# <a name="cb_deletestring-message"></a>Mensaje \_ DELETESTRING de CB
 
 Elimina una cadena en el cuadro de lista de un cuadro combinado.
 
@@ -32,7 +32,7 @@ Elimina una cadena en el cuadro de lista de un cuadro combinado.
 *wParam* 
 </dt> <dd>
 
-Índice de base cero de la cadena que se va a eliminar.
+Índice de base cero de la cadena que se eliminará.
 
 </dd> <dt>
 
@@ -45,11 +45,11 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un recuento de las cadenas que permanecen en la lista. Si el parámetro *wParam* especifica un índice mayor que el número de elementos de la lista, el valor devuelto es CB \_ Err.
+El valor devuelto es un recuento de las cadenas restantes en la lista. Si el *parámetro wParam* especifica un índice mayor que el número de elementos de la lista, el valor devuelto es CB \_ ERR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si crea el cuadro combinado con un estilo dibujado por el propietario pero sin el estilo [**CBS \_ HASSTRINGS**](combo-box-styles.md) , el sistema envía un mensaje de [**WM \_ DELETEITEM**](wm-deleteitem.md) al propietario del cuadro combinado para que la aplicación pueda liberar cualquier dato adicional asociado al elemento.
+Si crea el cuadro combinado con un estilo dibujado por el propietario pero sin el estilo [**\_ HASSTRINGS de CBS,**](combo-box-styles.md) el sistema envía un mensaje [**\_ DELETEITEM**](wm-deleteitem.md) de WM al propietario del cuadro combinado para que la aplicación pueda liberar los datos adicionales asociados al elemento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Si crea el cuadro combinado con un estilo dibujado por el propietario pero sin e
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

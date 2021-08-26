@@ -1,37 +1,38 @@
 ---
-description: En este artículo se proporciona un índice de documentación sobre las API de Win32 disponibles para las características y tecnologías de Windows.
+description: En este artículo se proporciona un índice de documentación sobre las API win32 disponibles para Windows características y tecnologías.
 ms.assetid: FF115416-220F-4FCD-8690-F9C0890CD6CC
 title: Tecnologías de aplicaciones de escritorio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b5b6e077c5f8fde2e723fbf9a971cbe09b8d008
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: fd764c23b38e7239cea1d4d26d018ecbf9711b22
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105708133"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812219"
 ---
 # <a name="desktop-app-technologies"></a>Tecnologías de aplicaciones de escritorio
 
-En esta sección se proporcionan instrucciones detalladas y ejemplos de código sobre las características de Windows que están disponibles para las aplicaciones de escritorio mediante la API de Win32.
+En esta sección se proporcionan instrucciones detalladas y ejemplos de código sobre las Windows disponibles para las aplicaciones de escritorio mediante la API win32.
 
 ## <a name="in-this-section"></a>En esta sección
 
 | Tema | Descripción  |  
 |----------------------------------|---|
-| [Accesibilidad](accessibility/accessibility.md) | Proporciona instrucciones para los desarrolladores de Windows que diseñan aplicaciones accesibles, desarrolladores de tecnología de asistencia, que crean herramientas como lectores de pantalla y ampliadores e ingenieros de pruebas de software que crean scripts automatizados para probar aplicaciones de Windows. |
-| [Interfaz de usuario del escritorio](windows-application-ui-development.md) | Proporciona información que permite desarrollar interfaces gráficas de usuario para las aplicaciones, incluidas características como ventanas y mensajes, recursos y controles. |
-| [Entorno de escritorio](user-interface.md) | Proporciona instrucciones para integrar y extender las características orientadas al usuario de escritorio de Windows, incluida la barra de tareas, el escritorio y el explorador de archivos. |
-| [Instalación y mantenimiento de aplicaciones](application-installing-and-servicing.md) | Proporciona información sobre el uso de las API y los servicios proporcionados por Windows para instalar, administrar y proporcionar servicio a las aplicaciones de escritorio. |
+| [Accesibilidad](accessibility/accessibility.md) | Proporciona instrucciones para Windows desarrolladores que diseñan aplicaciones accesibles, desarrolladores de tecnología de asistencia que crean herramientas como lectores de pantalla y lupa, e ingenieros de pruebas de software que crean scripts automatizados para probar Windows aplicaciones. |
+| [Interfaz de usuario del escritorio](windows-application-ui-development.md) | Proporciona información que le permite desarrollar interfaces gráficas de usuario para las aplicaciones, incluidas características como ventanas y mensajes, recursos y controles. |
+| [Entorno de escritorio](user-interface.md) | Proporciona instrucciones para integrar y ampliar las características orientadas al usuario de escritorio de Windows, incluida la barra de tareas, el escritorio y Explorador de archivos. |
+| [Instalación y mantenimiento de aplicaciones](application-installing-and-servicing.md) | Proporciona información sobre el uso de las API y los servicios proporcionados por Windows para instalar, administrar y dar servicio a las aplicaciones de escritorio. |
 | [Audio y vídeo](audio-and-video.md) | Proporciona instrucciones sobre el uso de las características de audio y vídeo proporcionadas por Windows. |
-| [Acceso y almacenamiento de datos](data-access-and-storage.md) | Proporciona información sobre el acceso a datos y las características de almacenamiento que se pueden usar en las aplicaciones de escritorio, incluidos los motores de administración del sistema de archivos y de sincronización en la nube.  |
+| [Acceso y almacenamiento de datos](data-access-and-storage.md) | Proporciona información sobre las características de acceso a datos y almacenamiento que puede usar en las aplicaciones de escritorio, incluida la administración del sistema de archivos y los motores de sincronización en la nube.  |
 | [Dispositivos](devices.md) | Describe las API para interactuar con dispositivos y sensores. |
 | [Diagnóstico](diagnostics.md) | Proporciona instrucciones sobre la depuración y el control de errores, la generación de perfiles de rendimiento, la supervisión de red y otras características de diagnóstico. |
 | [Documentos e impresión](printdocs/documents-and-printing.md) | Describe los documentos y las características de impresión de Windows que permiten a las aplicaciones guardar, ver e imprimir.  |
-| [Gráficos y juegos](graphics-and-multimedia.md) | Proporciona información sobre las características de gráficos y juegos de Windows, incluidos DirectX y Digital Imaging.  |
-| [Redes e Internet](networking.md) | Proporciona instrucciones sobre las funciones de red y las características relacionadas con Internet de Windows, incluida la administración de redes, las API HTTP y la llamada a procedimiento remoto (RPC). |
-| [Seguridad e identidad](security.md) | Proporciona información sobre la autenticación, la autorización, la criptografía y otras características de seguridad de Windows. |
-| [Servicios del sistema](system-services.md) | Proporciona instrucciones sobre características básicas del sistema operativo, como procesos y subprocesos, servicios, bibliotecas de vínculos dinámicos, COM, el registro, etc. |
+| [Gráficos y juegos](graphics-and-multimedia.md) | Proporciona información sobre las características de gráficos y juegos Windows, como DirectX y la creación de imágenes digitales.  |
+| [Redes e Internet](networking.md) | Proporciona instrucciones sobre las redes y las características relacionadas con Internet de Windows, incluida la administración de redes, las API HTTP y la llamada a procedimiento remoto (RPC). |
+| [Seguridad e identidad](security.md) | Proporciona información sobre la autenticación, autorización, criptografía y otras características de seguridad de Windows. |
+| [Servicios del sistema](system-services.md) | Proporciona instrucciones sobre las características fundamentales del sistema operativo, como procesos y subprocesos, servicios, bibliotecas de vínculos dinámicos, COM, el registro, etc. |
+| [Inteligencia artificial y aprendizaje automático](/windows/ai/) | Transforme su aplicación de Windows con la potencia de la inteligencia artificial. La inteligencia artificial de Windows le permite a usted y a su empresa conseguir más objetivos al proporcionar soluciones inteligentes a problemas complejos. |
 
 <!--
 <br/>

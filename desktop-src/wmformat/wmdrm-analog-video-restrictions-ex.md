@@ -1,10 +1,10 @@
 ---
-title: WMDRM_ANALOG_VIDEO_RESTRICTIONS_EX estructura (wmdrmsdk. h)
-description: La \_ \_ \_ \_ estructura de restricciones de vídeo analógico de WMDRM contiene información amplia sobre una restricción para reproducir el contenido como vídeo analógico.
+title: WMDRM_ANALOG_VIDEO_RESTRICTIONS_EX estructura (Wmdrmsdk.h)
+description: La estructura WMDRM ANALOG VIDEO RESTRICTIONS EX contiene información extendida sobre una restricción para reproducir \_ \_ contenido como vídeo \_ \_ análogo.
 ms.assetid: fe9092fe-a717-4377-9653-1cc07795319f
 keywords:
-- WMDRM_ANALOG_VIDEO_RESTRICTIONS_EX estructura de Windows Media Format
-- Formato de Windows Media de estructura
+- WMDRM_ANALOG_VIDEO_RESTRICTIONS_EX estructura windows Formato multimedia
+- estructura windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59c9ca5f58cf2adadeb5a6a0618457472cde976c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0e9cbacff2d330c869c35eb7a3d1ca46ae6c80a030495ffec42eabc3726436c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006545"
 ---
-# <a name="wmdrm_analog_video_restrictions_ex-structure"></a>\_Restricciones de vídeo analógico de WMDRM ( \_ \_ \_ estructura)
+# <a name="wmdrm_analog_video_restrictions_ex-structure"></a>Estructura EX \_ DE \_ \_ RESTRICCIONES DE VÍDEO ANÁLOGO DE WMDRM \_
 
-La estructura de **\_ \_ \_ restricciones de \_ vídeo analógico de WMDRM** contiene información amplia sobre una restricción para reproducir el contenido como vídeo analógico.
+La **estructura WMDRM \_ ANALOG VIDEO \_ \_ RESTRICTIONS \_ EX** contiene información extendida sobre una restricción para reproducir contenido como vídeo análogo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,7 +54,7 @@ Número de versión.
 **guidRestrictionID**
 </dt> <dd>
 
-IDENTIFICADOR de restricción.
+Id. de restricción.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ Ninguno.
 [**Estructuras**](drm-structures.md)
 </dt> <dt>
 
-[**\_restricciones de \_ vídeo \_ analógico de WMDRM**](wmdrm-analog-video-restrictions.md)
+[**RESTRICCIONES DE \_ VÍDEO ANÁLOGO \_ DE WMDRM \_**](wmdrm-analog-video-restrictions.md)
 </dt> </dl>
 
  

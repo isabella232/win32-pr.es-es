@@ -1,19 +1,19 @@
 ---
-description: TAPI admite funciones de dispositivo de teléfono para configurar e inicializar el dispositivo de teléfono.
+description: TAPI admite funciones de dispositivo de teléfono para configurar e inicializar el dispositivo telefónico.
 ms.assetid: 04914c9c-ec23-4a04-af6a-8e31bec20595
-title: Funciones de dispositivo de teléfono
+title: Teléfono Funciones de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b50d10f308576920be6d343590f313930ac96141
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a2380769269d0bd6b128931babdfaf37827a0cc066323dfdf58ad5592b8f03d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034505"
 ---
-# <a name="phone-device-functions"></a>Funciones de dispositivo de teléfono
+# <a name="phone-device-functions"></a>Teléfono Funciones de dispositivo
 
-TAPI admite las siguientes funciones de dispositivo de teléfono:
+TAPI admite las siguientes funciones de dispositivo telefónico:
 
 -   [**phoneCallbackFunc**](/windows/desktop/api/Tapi/nc-tapi-phonecallback)
 -   [**phoneClose**](/windows/desktop/api/Tapi/nf-tapi-phoneclose)
@@ -49,7 +49,7 @@ TAPI admite las siguientes funciones de dispositivo de teléfono:
 -   [**phoneSetVolume**](/windows/desktop/api/Tapi/nf-tapi-phonesetvolume)
 -   [**phoneShutdown**](/windows/desktop/api/Tapi/nf-tapi-phoneshutdown)
 
-    Para una categorización de las funciones de TAPI por nivel de servicio y tarea, consulte [referencia de funciones rápidas de TAPI](tapi-quick-function-reference.md).
+    Para obtener una categorización de las funciones TAPI por nivel de servicio y tarea, vea [Referencia de funciones rápidas de TAPI.](tapi-quick-function-reference.md)
 
  
 

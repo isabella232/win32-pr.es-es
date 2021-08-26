@@ -1,24 +1,24 @@
 ---
-description: Pruebas de WHQL
+description: Pruebas WHQL
 ms.assetid: ca24fe89-d2fe-4aa9-8643-319ed16ba1a3
-title: Pruebas de WHQL
+title: Pruebas WHQL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c03b9ade23f82a4ac7ac038260846e458c24b78
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95715e037ce567c946528733f9e18fbd939b0d5edba1decfcf746e56ef5ef1df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049185"
 ---
-# <a name="whql-tests"></a>Pruebas de WHQL
+# <a name="whql-tests"></a>Pruebas WHQL
 
-Pruebe varias combinaciones de PanScan/panorámico y 704/720 imágenes anchas:
+Pruebe varias combinaciones de PanScan/Letterbox e imágenes de ancho 704/720:
 
--   vídeo 16x9 (ancho 704 o 720), subimagen 16x9 720 (en ancho)
--   16x9 vídeo (ancho de 704 o 720), subimagen 4x3
--   vídeo de 16x9 (704 o 720 de ancho) PanScan, subimagen de 4x3
--   vídeo 4x3 (ancho 704 o 720), subimagen 4x3
+-   Vídeo de 16x9 (704 o 720 de ancho), subimagen de 16 x 9 (720 de ancho)
+-   Vídeo de 16x9 (704 o 720 de ancho) Letterbox, subpicture 4x3
+-   Vídeo de 16x9 (704 o 720 de ancho) PanScan, subpicture 4x3
+-   Vídeo de 4x3 (704 o 720 de ancho), subimagen de 4x3
 
  
 

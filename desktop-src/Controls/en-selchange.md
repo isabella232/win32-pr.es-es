@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_SELCHANGE (RichEdit. h)
-description: Notifica a la ventana primaria de un control Rich Edit que la selección actual ha cambiado. Un control Rich Edit envía este código de notificación en forma de mensaje de \_ notificación de WM.
+title: EN_SELCHANGE de notificación (Richedit.h)
+description: Notifica a la ventana primaria de un control de edición enriquecido que la selección actual ha cambiado. Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 53d47b53-a73c-4652-889c-2374f8e99382
 keywords:
-- EN_SELCHANGE controles de código de notificación de Windows
+- EN_SELCHANGE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79dfcf951f88fa1e10f4723bd9843421f0e20ae5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e9a2398abd5058f57eeef6ad73f559a723e7df29315d38dfc9794a707740c89f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047425"
 ---
-# <a name="en_selchange-notification-code"></a>\_Código de notificación en SELCHANGE
+# <a name="en_selchange-notification-code"></a>Código \_ de notificación DE EN SELCHANGE
 
-Notifica a la ventana primaria de un control Rich Edit que la selección actual ha cambiado. Un control Rich Edit envía este código de notificación en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de edición enriquecido que la selección actual ha cambiado. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ EN_SELCHANGE
 *lParam* 
 </dt> <dd>
 
-Una estructura [**SELCHANGE**](/windows/desktop/api/Richedit/ns-richedit-selchange) que recibe información sobre la selección.
+Estructura [**SELCHANGE**](/windows/desktop/api/Richedit/ns-richedit-selchange) que recibe información sobre la selección.
 
 </dd> </dl>
 
@@ -49,11 +49,11 @@ Una estructura [**SELCHANGE**](/windows/desktop/api/Richedit/ns-richedit-selchan
 
 Este código de notificación no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recibir los \_ códigos de notificación en SELCHANGE, especifique [**ENM \_ SELCHANGE**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el mensaje [**em \_ SETEVENTMASK**](em-seteventmask.md) .
+Para recibir códigos de \_ notificación EN SELCHANGE, especifique [**ENM \_ SELCHANGE**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el [**mensaje EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
-Este código de notificación se envía cuando cambia la posición del símbolo de intercalación y no se selecciona ningún texto (la selección está vacía). La posición del símbolo de intercalación puede cambiar cuando el usuario hace clic con el mouse, escribe o presiona una tecla de dirección.
+Este código de notificación se envía cuando cambia la posición del cursor de inserción y no se selecciona ningún texto (la selección está vacía). La posición del cursor de referencia puede cambiar cuando el usuario hace clic en el mouse, los tipos o presiona una tecla de flecha.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ Este código de notificación se envía cuando cambia la posición del símbolo 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Este código de notificación se envía cuando cambia la posición del símbolo 
 [**SELCHANGE**](/windows/desktop/api/Richedit/ns-richedit-selchange)
 </dt> <dt>
 
-[**\_notificaciones de WM**](wm-notify.md)
+[**WM \_ NOTIFY**](wm-notify.md)
 </dt> </dl>
 
  

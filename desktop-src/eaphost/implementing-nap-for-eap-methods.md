@@ -4,16 +4,16 @@ description: Obtenga información sobre cómo implementar la compatibilidad con 
 ms.assetid: c25e4f03-759a-47a7-8b35-bbe669501c5c
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cff84c24aeb475b83146f2c56e9e139fd930eac27656349c594f05d91c1036fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00860057baeedbfdbae1939ab402db6f28fd74bd
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118273319"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812384"
 ---
 # <a name="implementing-nap-support-for-eap-methods"></a>Implementación de la compatibilidad de NAP con métodos EAP
 
-En este tema se explica cómo implementar NAP para un suplicante EAPHost. En Windows Vista y Windows Server 2008 un cliente de cumplimiento nap (NAP EC) está disponible para las conexiones [autenticadas 802.1X.](/previous-versions/windows/embedded/ms890287(v=msdn.10))
+En este tema se explica cómo implementar NAP para un suplicante EAPHost. En Windows Vista y Windows Server 2008, está disponible un cliente de cumplimiento nap (NAP EC) para las conexiones [autenticadas 802.1X.](/previous-versions/windows/embedded/ms890287(v=msdn.10))
 
 ## <a name="implementing-network-access-protection-nap"></a>Implementación de la protección de acceso a redes (NAP)
 
@@ -36,7 +36,7 @@ Para obtener información de NAP relacionada con la API de EAPHost, consulte los
 
 -   [**TIPO DE \_ ATRIBUTO \_ EAP**](/windows/desktop/api/eaptypes/ne-eaptypes-eap_attribute_type)
 -   [**ERROR DE EAP \_**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_error)
--   [Preguntas más frecuentes sobre el suplicante de EAPHost](eaphost-supplicant-frequently-asked-questions.md)
+-   [Preguntas más frecuentes sobre el suplicante de EAPHost](eaphost-supplicant-frequently-asked-questions.yml)
 -   [**Propiedades del método EAP**](eap-method-properties.md)
 -   [**EapHostPeerBeginSession**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerbeginsession)
 -   [**Errores relacionados con EAP e constantes de información**](eap-related-error-and-information-constants.md)
@@ -62,7 +62,7 @@ Para obtener información de NAP relacionada con la API de EAPHost, consulte los
 [Habilitar directiva de grupo](enabling-group-policy.md)
 </dt> <dt>
 
-[Implementar la compatibilidad In-Band NAP para los métodos EAP](enabling-in-band-nap-support.md)
+[Implementación de In-Band NAP para métodos EAP](enabling-in-band-nap-support.md)
 </dt> <dt>
 
 [Transferencia de datos entre los métodos supplicant y EAP](transferring-data-between-the-supplicant-and-eap-methods.md)

@@ -1,7 +1,7 @@
 ---
-description: El método SetCutPoint establece la hora a la que la transición corta de un origen al siguiente, si la transición se representa como un corte.
+description: El método SetCutPoint establece la hora a la que la transición se reduce de un origen al siguiente, si la transición se representa como un corte.
 ms.assetid: 2660f4a8-e249-45d7-8866-02a9f2ef52b8
-title: 'IAMTimelineTrans:: SetCutPoint (método) (QEDIT. h)'
+title: Método IAMTimelineTrans::SetCutPoint (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: c1dad934d373a52b7e6c076c8c20dc8e1c6809ac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c411925ebe10ad35641e38ae2332605d7691ae24f0cc96ff716bd7d00e6603f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052075"
 ---
-# <a name="iamtimelinetranssetcutpoint-method"></a>IAMTimelineTrans:: SetCutPoint (método)
+# <a name="iamtimelinetranssetcutpoint-method"></a>IamTimelineTrans::SetCutPoint (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `SetCutPoint` método establece la hora a la que la transición corta de un origen al siguiente, si la transición se representa como un corte.
+El método establece la hora a la que la transición se reduce de un origen al siguiente, si la transición `SetCutPoint` se representa como un corte.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,25 +48,25 @@ HRESULT SetCutPoint(
 *TLTime* 
 </dt> <dd>
 
-Punto de corte relativo al inicio de la transición, en unidades de 100-nanosegundos. Si el valor está fuera de los límites de la transición, se trunca a la hora válida más cercana.
+Punto de corte relativo al inicio de la transición, en unidades de 100 nanosegundos. Si el valor queda fuera de los límites de la transición, se trunca al tiempo válido más cercano.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-De forma predeterminada, el punto de corte es el medio de la transición. Por ejemplo, en una transición que abarca un segundo, el punto de corte predeterminado es de 0,5 segundos en la transición.
+De forma predeterminada, el punto de corte es el centro de la transición. Por ejemplo, en una transición que abarca un segundo, el punto de corte predeterminado es 0,5 segundos en la transición.
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ De forma predeterminada, el punto de corte es el medio de la transición. Por ej
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,10 +85,10 @@ De forma predeterminada, el punto de corte es el medio de la transición. Por ej
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineTrans**](iamtimelinetrans.md)
+[**IamTimelineTrans (interfaz)**](iamtimelinetrans.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

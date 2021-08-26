@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m TargetRect especifica el rectángulo de destino del dibujo. El valor inicial es un rectángulo vacío, que indica que la imagen debe dibujarse en la ventana de destino completa.
+description: La variable miembro m \_ TargetRect especifica el rectángulo de destino para dibujar. El valor inicial es un rectángulo vacío, que indica que la imagen se debe dibujar en toda la ventana de destino.
 ms.assetid: f4b4dbe8-154d-44d9-ac2d-ab479cae9b4e
-title: 'Miembro CDrawImage:: m_TargetRect (Winutil. h)'
+title: CDrawImage::m_TargetRect miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 458dcfca5d556799a36c51fd1754e885141ebd3a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db75f05b1e8f197d54cb64f250c4cb1d20f5b6324aefe7468b9043291fdea5d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076365"
 ---
-# <a name="cdrawimagem_targetrect-member"></a>Miembro TargetRect CDrawImage:: m \_
+# <a name="cdrawimagem_targetrect-member"></a>Miembro CDrawImage::m \_ TargetRect
 
-La `m_TargetRect` variable miembro especifica el rectángulo de destino del dibujo. El valor inicial es un rectángulo vacío, que indica que la imagen debe dibujarse en la ventana de destino completa.
+La `m_TargetRect` variable miembro especifica el rectángulo de destino para dibujar. El valor inicial es un rectángulo vacío, que indica que la imagen se debe dibujar en toda la ventana de destino.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ RECT m_TargetRect;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ RECT m_TargetRect;
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> <dt>
 
 [**CDrawImage::SetTargetRect**](cdrawimage-settargetrect.md)

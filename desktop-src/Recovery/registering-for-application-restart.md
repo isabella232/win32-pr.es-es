@@ -1,27 +1,27 @@
 ---
-title: Registrando el reinicio de la aplicación
-description: Para registrar la aplicación para que se reinicie, llame a la función RegisterApplicationRestart.
+title: Registro para el reinicio de la aplicación
+description: Para registrar la aplicación que se va a reiniciar, llame a la función RegisterApplicationRestart.
 ms.assetid: 4dfbced7-77db-4042-823f-b4b81b2b27a6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 717f8984f26570284a70b40eef70a9d6f753d66a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fe5777d3ed6b99d421f7eba6b5b104b92a1c2c71462c675b2573f18da0ba69f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104271355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024575"
 ---
-# <a name="registering-for-application-restart"></a>Registrando el reinicio de la aplicación
+# <a name="registering-for-application-restart"></a>Registro para el reinicio de la aplicación
 
-Para registrar la aplicación para que se reinicie, llame a la función [**RegisterApplicationRestart**](/windows/win32/api/winbase/nf-winbase-registerapplicationrestart) . [Informe de errores de Windows (WER)](/windows/desktop/wer/windows-error-reporting) reiniciará la aplicación si se ha estado ejecutando durante al menos 60 segundos antes de dejar de responder o encontrar una excepción no controlada.
+Para registrar la aplicación que se va a reiniciar, llame a [**la función RegisterApplicationRestart.**](/windows/win32/api/winbase/nf-winbase-registerapplicationrestart) [Informe de errores de Windows (WER)](/windows/desktop/wer/windows-error-reporting) reiniciará la aplicación si se ha estado ejecutando durante al menos 60 segundos antes de dejar de responder o de encontrar una excepción no controlada.
 
-También debe considerar la posibilidad [de registrarse para la recuperación](registering-for-application-recovery.md), lo que le permite guardar datos e información de estado que puede resultar útil cuando wer reinicie la aplicación. WER reiniciará la aplicación después de que se complete el proceso de recuperación, si también se registra para la recuperación.
+También debe considerar la [posibilidad de registrarse](registering-for-application-recovery.md)para la recuperación, lo que le permite guardar datos y la información de estado que puede resultar útil cuando WER reinicia la aplicación. WER reiniciará la aplicación una vez completado el proceso de recuperación, si también se registra para la recuperación.
 
-Una vez finalizado el proceso de recuperación, WER finaliza la aplicación y, a continuación, la reinicia. En el caso de las aplicaciones de consola, la aplicación se inicia en una ventana de consola independiente que se cierra cuando se cierra la aplicación.
+Una vez completado el proceso de recuperación, WER finaliza la aplicación y, a continuación, la reinicia. Para las aplicaciones de consola, la aplicación se inicia en una ventana de consola independiente que se cierra cuando se cierra la aplicación.
 
-**Nota para los autores de instalador de aplicaciones:** El registro para el reinicio de la aplicación también hará que Windows reinicie automáticamente la aplicación después de reiniciar el equipo en los casos en los que el equipo se reinicie debido a una actualización de software. Para que esto funcione, el instalador de la aplicación debe llamar a la función [**ExitWindowsEx**](/windows/desktop/api/winuser/nf-winuser-exitwindowsex) con el \_ conjunto de marcas EWX RESTARTAPPS o la función [**INITIATESHUTDOWN**](/windows/desktop/api/winreg/nf-winreg-initiateshutdowna) con la \_ marca Shutdown RESTARTAPPS establecida.
+**Nota para los autores del instalador de aplicaciones:** El registro para el reinicio de la aplicación también hará que Windows reinicie automáticamente la aplicación después de reiniciar el equipo en los casos en los que el equipo se reinicie debido a una actualización de software. Para que esto funcione, el instalador de la aplicación debe llamar a la función [**ExitWindowsEx**](/windows/desktop/api/winuser/nf-winuser-exitwindowsex) con la marca RESTARTAPPS de EWX establecida o la función \_ [**InitiateShutdown**](/windows/desktop/api/winreg/nf-winreg-initiateshutdowna) con la marca SHUTDOWN \_ RESTARTAPPS establecida.
 
-En el ejemplo siguiente se muestra cómo registrar para que WER reinicie la aplicación. En el ejemplo se produce una infracción de acceso después del registro para el reinicio de la aplicación. Informe de errores de Windows recogerá la infracción de acceso y mostrará la experiencia del usuario de informes de errores, incluido el reinicio de la aplicación. Debe ejecutarse desde una ventana de consola sin argumentos de línea de comandos.
+En el ejemplo siguiente se muestra cómo registrarse para que WER reinicie la aplicación. En el ejemplo se produce una infracción de acceso después de registrarse para el reinicio de la aplicación. El usuario seleccionará la infracción de acceso Informe de errores de Windows mostrará la experiencia del usuario de informes de errores, incluido el reinicio de la aplicación. Debe ejecutarse desde una ventana de consola sin argumentos de línea de comandos.
 
 
 ```C++
@@ -240,6 +240,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

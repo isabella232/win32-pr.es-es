@@ -1,30 +1,30 @@
 ---
-title: Propiedad CipherStrength de IMsTscAx
-description: Recupera la intensidad máxima de cifrado del control actual.
+title: Propiedad IMsTscAx CipherStrength
+description: Recupera la intensidad de cifrado máxima del control actual.
 ms.assetid: 94efe3e5-4074-4187-b58a-b812f37f3622
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad CipherStrength
-- Propiedad CipherStrength Servicios de Escritorio remoto, interfaz IMsTscAx
-- Servicios de Escritorio remoto de la interfaz IMsTscAx, propiedad CipherStrength
-- Propiedad CipherStrength Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient, propiedad CipherStrength
-- Propiedad CipherStrength Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient2, propiedad CipherStrength
-- Propiedad CipherStrength Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient3, propiedad CipherStrength
-- Propiedad CipherStrength Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient4, propiedad CipherStrength
-- Propiedad CipherStrength Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient5, propiedad CipherStrength
-- Propiedad CipherStrength Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient6, propiedad CipherStrength
-- Propiedad CipherStrength Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad CipherStrength
-- Propiedad CipherStrength Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad CipherStrength
-- Propiedad CipherStrength Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad CipherStrength
+- Propiedad CipherStrength Servicios de Escritorio remoto
+- Propiedad CipherStrength Servicios de Escritorio remoto interfaz , IMsTscAx
+- Interfaz IMsTscAx Servicios de Escritorio remoto , propiedad CipherStrength
+- Propiedad CipherStrength Servicios de Escritorio remoto , interfaz IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad CipherStrength
+- Propiedad CipherStrength Servicios de Escritorio remoto interfaz , IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad CipherStrength
+- Propiedad CipherStrength Servicios de Escritorio remoto interfaz , IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad CipherStrength
+- Propiedad CipherStrength Servicios de Escritorio remoto interfaz , IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad CipherStrength
+- Propiedad CipherStrength Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto propiedad , CipherStrength
+- Propiedad CipherStrength Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad CipherStrength
+- Propiedad CipherStrength Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad CipherStrength
+- Propiedad CipherStrength Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto propiedad , CipherStrength
+- Propiedad CipherStrength Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad CipherStrength
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 401cf3796d349aaa6764eae46a371a9d485f763c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b66418f2e956afcf6c5b9f1f9a0d5971119e7fddae1c1d46d115f4bbe0e6391
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125454"
 ---
-# <a name="imstscaxcipherstrength-property"></a>IMsTscAx:: CipherStrength (propiedad)
+# <a name="imstscaxcipherstrength-property"></a>Propiedad IMsTscAx::CipherStrength
 
-Recupera la intensidad máxima de cifrado del control actual.
+Recupera la intensidad de cifrado máxima del control actual.
 
 Esta propiedad es de solo lectura.
 
@@ -80,17 +80,17 @@ HRESULT get_CipherStrength(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La intensidad de cifrado.
+El nivel de cifrado.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Por Conexión web a Escritorio remoto, la intensidad de cifrado siempre es 128 porque el control ActiveX Escritorio remoto admite el cifrado hasta 128 bits inclusive. El control de 128 bits todavía puede conectarse al cifrado de 56 bits Escritorio remoto los servidores host de sesión de escritorio remoto.
+Por Conexión web a Escritorio remoto, el nivel de cifrado siempre es 128 porque el control Escritorio remoto ActiveX admite el cifrado hasta 128 bits, incluidos. El control de 128 bits todavía puede conectarse a servidores de cifrado de 56 Escritorio remoto host de sesión (host de sesión de Escritorio remoto).
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

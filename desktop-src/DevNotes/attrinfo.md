@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 01c061330db3e97989e0700452fd4a205488a9fc
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 090f2ab58d8bf1eb4e379166086d31389b533712a3df23f987bba1331f990891
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103906964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103735"
 ---
 # <a name="attrinfo-structure"></a>Estructura ATTRINFO
 
@@ -47,7 +47,7 @@ typedef struct tagATTRINFO {
 **tAttrID**
 </dt> <dd>
 
-Tipo de atributo. Vea [tipos de etiqueta](tag-types.md).
+Tipo de atributo. Vea [Tipos DE ETIQUETA.](tag-types.md)
 
 </dd> <dt>
 
@@ -60,8 +60,8 @@ Marcas para este atributo.
 
 | Value                                                                                                                                                                                                                                           | Significado                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <span id="ATTRIBUTE_AVAILABLE"></span><span id="attribute_available"></span><dl> <dt>**Atributo \_ de DISPONIBLE**</dt> <dt>0x00000001</dt> </dl> | El atributo está disponible.<br/>                             |
-| <span id="ATTRIBUTE_FAILED"></span><span id="attribute_failed"></span><dl> <dt>**Atributo \_ de ERROR**</dt> <dt>0x00000002</dt> </dl>          | Error en la llamada porque el atributo no está disponible.<br/> |
+| <span id="ATTRIBUTE_AVAILABLE"></span><span id="attribute_available"></span><dl> <dt>**ATTRIBUTE \_ DISPONIBLE**</dt> <dt>0x00000001</dt> </dl> | El atributo está disponible.<br/>                             |
+| <span id="ATTRIBUTE_FAILED"></span><span id="attribute_failed"></span><dl> <dt>**ATTRIBUTE \_ Error**</dt> <dt>0x00000002</dt> </dl>          | Error en la llamada porque el atributo no está disponible.<br/> |
 
 
 
@@ -72,21 +72,21 @@ Marcas para este atributo.
 **ullAttr**
 </dt> <dd>
 
-Un valor **QWord** (si el tipo de etiqueta es el **tipo de etiqueta \_ \_ QWord**).
+Un **valor QWORD** (si el tipo de etiqueta es **TAG TYPE \_ \_ QWORD**).
 
 </dd> <dt>
 
 **dwAttr**
 </dt> <dd>
 
-Valor **DWORD** (si el tipo de etiqueta es **el \_ tipo \_ de etiqueta DWORD**).
+Valor **DWORD** (si el tipo de etiqueta es **TAG TYPE \_ \_ DWORD).**
 
 </dd> <dt>
 
 **lpAttr**
 </dt> <dd>
 
-Un puntero a una cadena (si el tipo de etiqueta es el **tipo de etiqueta \_ \_ STRINGREF**).
+Puntero a una cadena (si el tipo de etiqueta es **TAG \_ TYPE \_ STRINGREF).**
 
 </dd> </dl>
 
@@ -96,8 +96,8 @@ Un puntero a una cadena (si el tipo de etiqueta es el **tipo de etiqueta \_ \_ S
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

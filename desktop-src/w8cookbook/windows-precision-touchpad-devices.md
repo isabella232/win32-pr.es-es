@@ -1,40 +1,40 @@
 ---
-title: Dispositivos Touchpad de Windows Precision
-description: Dispositivos Touchpad de Windows Precision
+title: Windows táctiles de precisión
+description: Windows táctiles de precisión
 ms.assetid: 026F9940-C985-4F3A-BDBB-2977B14EAB1F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07107c1d9532c4a4663a667a8e3db64124f23e5d
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: bfb81978c9c9849dfa0d073a4b37af3760d1d4e5bc8e8fa2e81317293db04fc6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "104420126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007905"
 ---
-# <a name="windows-precision-touchpad-devices"></a>Dispositivos Touchpad de Windows Precision
+# <a name="windows-precision-touchpad-devices"></a>Windows táctiles de precisión
 
 ## <a name="platforms"></a>Plataformas
 
-<dl> Clientes-Windows 8.1  
+<dl> Clientes: Windows 8.1  
 </dl>
 
 ## <a name="description"></a>Descripción
 
-Touchpad de precisión de Windows es una nueva clase de dispositivos de entrada que proporcionan funcionalidad de movimiento y entrada de puntero de alta precisión. De forma predeterminada, estos dispositivos generan mensajes de rueda de desplazamiento de precisión ultra alta para el consumo de aplicaciones de escritorio.
+El Windows Precision Touchpad es una nueva clase de dispositivos de entrada que proporcionan una entrada de puntero de alta precisión y funcionalidad de gestos. De forma predeterminada, estos dispositivos generan mensajes de rueda de desplazamiento de precisión ultra alta para el consumo de aplicaciones de escritorio.
 
 ## <a name="manifestations"></a>Manifestaciones
 
-Las aplicaciones que no están diseñadas para controlar los mensajes de rueda de desplazamiento de precisión ultra alta pueden desplazarse por encima o no desplazarse correctamente.
+Las aplicaciones que no están diseñadas para controlar mensajes de rueda de desplazamiento de precisión ultra alta pueden desplazarse por encima o no desplazarse correctamente.
 
 ## <a name="mitigation"></a>Mitigación
 
-Los desarrolladores de aplicaciones deben mirar el delta de desplazamiento en los mensajes de la rueda de desplazamiento del mouse y modificar sus aplicaciones en consecuencia. sin embargo, en la versión provisional, una aplicación puede optar por mensajes de rueda de desplazamiento de precisión ultra alta (Delta = 1) y elegir recibir mensajes de rueda de desplazamiento de alta precisión (Delta = 40) o mensajes de rueda de desplazamiento estándar (Delta = 120).
+Los desarrolladores de aplicaciones deben ver la diferencia de desplazamiento en los mensajes de la rueda de desplazamiento del mouse y modificar sus aplicaciones en consecuencia. sin embargo, mientras tanto, una aplicación puede rechazar los mensajes de rueda de desplazamiento de precisión ultra alta (delta = 1) y optar por recibir mensajes de rueda de desplazamiento de alta precisión (delta = 40) o mensajes de rueda de desplazamiento estándar (delta = 120).
 
 ## <a name="solution"></a>Solución
 
-Si la aplicación es capaz de controlar los mensajes de la rueda de desplazamiento de precisión muy alta, no es necesario hacer nada, ya que este es el mensaje predeterminado que envían los Touchpad de precisión de Windows.
+Si la aplicación es capaz de controlar mensajes de rueda de desplazamiento de precisión ultra alta, no es necesario hacer nada, ya que este es el mensaje predeterminado enviado por Windows touchpads de precisión.
 
-Si la aplicación es capaz de controlar los mensajes de la rueda de desplazamiento de alta precisión, pero no los mensajes de rueda de precisión muy alta, agregue lo siguiente al manifiesto de aplicación:
+Si la aplicación es capaz de controlar mensajes de rueda de desplazamiento de alta precisión, pero no mensajes de rueda de precisión ultra alta, agregue lo siguiente al manifiesto de aplicación:
 
 
 ```
@@ -47,7 +47,7 @@ Si la aplicación es capaz de controlar los mensajes de la rueda de desplazamien
 
 
 
-Si la aplicación no es capaz de controlar los mensajes de la rueda de desplazamiento de alta precisión o los mensajes con una rueda de precisión muy alta, agregue lo siguiente al manifiesto de aplicación para indicar que se desean mensajes de rueda de desplazamiento estándar:
+Si la aplicación no es capaz de controlar mensajes de rueda de desplazamiento de alta precisión o mensajes de rueda de precisión ultra alta, agregue lo siguiente al manifiesto de aplicación para indicar que se desean mensajes de rueda de desplazamiento estándar:
 
 
 ```
@@ -60,9 +60,9 @@ Si la aplicación no es capaz de controlar los mensajes de la rueda de desplazam
 
 
 
- 
+ 
 
- 
+ 
 
 
 
