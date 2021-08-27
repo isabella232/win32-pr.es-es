@@ -1,9 +1,9 @@
 ---
 title: Elemento SessionStateChangeTrigger (triggerGroup)
-description: Especifica un desencadenador que inicia una tarea cuando se cambia el estado de una sesión de Terminal Server.
+description: Especifica un desencadenador que inicia una tarea cuando una sesión de Terminal Server cambia de estado.
 ms.assetid: 38b0da3c-205f-48c5-83e6-ff7c432c02b9
 keywords:
-- Programador de tareas del elemento SessionStateChangeTrigger
+- Elemento SessionStateChangeTrigger Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d21847a929e79e2da53b1e66a23aec0c2f1c630f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d22b2f47584f437c01575ffecfb6d5c25e312b9584ba46abc9d6997e14187eaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099825"
 ---
 # <a name="sessionstatechangetrigger-triggergroup-element"></a>Elemento SessionStateChangeTrigger (triggerGroup)
 
-Especifica un desencadenador que inicia una tarea cuando se cambia el estado de una sesión de Terminal Server.
+Especifica un desencadenador que inicia una tarea cuando una sesión de Terminal Server cambia de estado.
 
 ``` syntax
 <xs:element name="SessionStateChangeTrigger"
@@ -30,7 +30,7 @@ Especifica un desencadenador que inicia una tarea cuando se cambia el estado de 
  />
 ```
 
-El elemento **SessionStateChangeTrigger** se define mediante [**triggerGroup**](taskschedulerschema-triggergroup-group.md) .
+El **elemento SessionStateChangeTrigger** se define mediante [**triggerGroup**](taskschedulerschema-triggergroup-group.md) .
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -48,17 +48,17 @@ El elemento **SessionStateChangeTrigger** se define mediante [**triggerGroup**](
 
 | Elemento                                                                                      | Tipo                                                                                    | Descripción                                                                                                                                           |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Delay**](taskschedulerschema-delay-sessionstatechangetriggertype-element.md)             | duration                                                                                | Especifica un valor que indica la duración del retraso antes de que se inicie una tarea cuando se detecta un cambio de estado de sesión Terminal Server.<br/> |
-| [**StateChange**](taskschedulerschema-statechange-sessionstatechangetriggertype-element.md) | [**sessionStateChangeType**](taskschedulerschema-sessionstatechangetype-simpletype.md) | Especifica el tipo de Terminal Server cambio de sesión que desencadenaría el inicio de una tarea.<br/>                                                     |
-| [**Deberían**](taskschedulerschema-userid-sessionstatechangetriggertype-element.md)           | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md)                 | Especifica el usuario de la sesión de Terminal Server. Cuando se detecta un cambio de estado de sesión para este usuario, se inicia una tarea.<br/>              |
+| [**Delay**](taskschedulerschema-delay-sessionstatechangetriggertype-element.md)             | duration                                                                                | Especifica un valor que indica la longitud del retraso antes de que se inicia una tarea cuando se detecta un cambio de estado de sesión de Terminal Server.<br/> |
+| [**StateChange**](taskschedulerschema-statechange-sessionstatechangetriggertype-element.md) | [**sessionStateChangeType**](taskschedulerschema-sessionstatechangetype-simpletype.md) | Especifica el tipo de cambio de sesión de Terminal Server que desencadenaría el inicio de una tarea.<br/>                                                     |
+| [**Userid**](taskschedulerschema-userid-sessionstatechangetriggertype-element.md)           | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md)                 | Especifica el usuario para la sesión de Terminal Server. Cuando se detecta un cambio de estado de sesión para este usuario, se inicia una tarea.<br/>              |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripting, se especifica un desencadenador de cambio de estado de sesión mediante el objeto [**SessionStateChangeTrigger**](sessionstatechangetrigger.md) .
+Para el desarrollo de scripting, se especifica un desencadenador de cambio de estado de sesión mediante el [**objeto SessionStateChangeTrigger.**](sessionstatechangetrigger.md)
 
-En el desarrollo de C++, se especifica un desencadenador de cambio de estado de sesión mediante la interfaz [**ISessionStateChangeTrigger**](/windows/desktop/api/taskschd/nn-taskschd-isessionstatechangetrigger) .
+Para el desarrollo de C++, se especifica un desencadenador de cambio de estado de sesión mediante la [**interfaz ISessionStateChangeTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-isessionstatechangetrigger)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,8 +66,8 @@ En el desarrollo de C++, se especifica un desencadenador de cambio de estado de 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

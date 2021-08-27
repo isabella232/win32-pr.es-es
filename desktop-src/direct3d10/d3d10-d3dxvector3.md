@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 7b43348b6b5683e9fe75c5340fd0c2cab5efe719
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 61c9791f4e97fbde77f3b42154b2855f2fc31694efd19087dd78fdced9908e56
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120225"
 ---
 # <a name="d3dxvector3-structure-d3dx10mathh"></a>Estructura D3DXVECTOR3 (D3DX10Math.h)
 
-Describe un vector de tres componentes que incluye sobrecargas de operador y conversión de tipos.
+Describe un vector de tres componentes, incluidas las sobrecargas de operadores y las conversión de tipos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,11 +59,11 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Componente y.
+Componente Y.
 
 </dd> <dt>
 
-**z**
+**Z**
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -137,7 +137,7 @@ typedef struct _D3DVECTOR D3DXVECTOR3, *LPD3DXVECTOR3;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

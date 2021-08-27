@@ -1,18 +1,18 @@
 ---
-title: Propiedad AdvancedSettings8 de IMsRdpClient7
+title: Propiedad IMsRdpClient7 AdvancedSettings8
 description: Recupera un objeto que admite la interfaz IMsRdpClientAdvancedSettings7.
 ms.assetid: e3bb3b74-52db-4ec2-999c-9d12c24f65be
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad AdvancedSettings8
-- Propiedad AdvancedSettings8 Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad AdvancedSettings8
-- Propiedad AdvancedSettings8 Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad AdvancedSettings8
-- Propiedad AdvancedSettings8 Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad AdvancedSettings8
-- Propiedad AdvancedSettings8 Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient10, propiedad AdvancedSettings8
+- Propiedad AdvancedSettings8 Servicios de Escritorio remoto
+- Propiedad AdvancedSettings8 Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto propiedad , AdvancedSettings8
+- Propiedad AdvancedSettings8 Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto propiedad , AdvancedSettings8
+- Propiedad AdvancedSettings8 Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto propiedad , AdvancedSettings8
+- Propiedad AdvancedSettings8 Servicios de Escritorio remoto interfaz , IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto propiedad , AdvancedSettings8
 topic_type:
 - apiref
 api_name:
@@ -30,16 +30,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 887306216682ba1555739a4258b8337694fabe0d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 07fb08feba16331f02390ca65f1823d162b19204ddc099ea48e7672209766d01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099455"
 ---
-# <a name="imsrdpclient7advancedsettings8-property"></a>IMsRdpClient7:: AdvancedSettings8 (propiedad)
+# <a name="imsrdpclient7advancedsettings8-property"></a>Propiedad IMsRdpClient7::AdvancedSettings8
 
-Recupera un objeto que admite la interfaz [**IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md) .
+Recupera un objeto que admite la [**interfaz IMsRdpClientAdvancedSettings7.**](imsrdpclientadvancedsettings7.md)
 
 Esta propiedad es de solo lectura.
 
@@ -56,7 +56,7 @@ HRESULT get_AdvancedSettings8(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Dirección de un puntero de interfaz [**IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md) que recibe el objeto.
+Dirección de un [**puntero de interfaz IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md) que recibe el objeto .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,11 +64,11 @@ Dirección de un puntero de interfaz [**IMsRdpClientAdvancedSettings7**](imsrdpc
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                      |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient7 se define como b2a5b5ce-3461-444A-91d4-add26d070638<br/>       |
+| IID<br/>                      | IID IMsRdpClient7 se define como \_ b2a5b5ce-3461-444a-91d4-add26d070638<br/>       |
 
 
 

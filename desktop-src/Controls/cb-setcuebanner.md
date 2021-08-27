@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CB_SETCUEBANNER (Winuser. h)
-description: Establece el texto del titular de indicación que se muestra para el control de edición de un cuadro combinado.
+title: CB_SETCUEBANNER mensaje (Winuser.h)
+description: Establece el texto del banner de la indicación que se muestra para el control de edición de un cuadro combinado.
 ms.assetid: 4b2b5042-ba64-4e3f-adeb-9aea66773b0e
 keywords:
-- CB_SETCUEBANNER controles de mensajes de Windows
+- CB_SETCUEBANNER controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5799b1b1be5e938ce1e234948a1f7d878122f30
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb546b7113247f09d8929364984d5e73c3e28b6541d2ca04bd631405040bf6fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089045"
 ---
-# <a name="cb_setcuebanner-message"></a>\_Mensaje SETCUEBANNER CB
+# <a name="cb_setcuebanner-message"></a>Mensaje \_ DE CB SETCUEBANNER
 
-Establece el texto del titular de indicación que se muestra para el control de edición de un cuadro combinado.
+Establece el texto del banner de la indicación que se muestra para el control de edición de un cuadro combinado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,27 +39,27 @@ Debe ser cero.
 *lParam* 
 </dt> <dd>
 
-Un puntero a un búfer de cadena Unicode terminada en null que contiene el texto.
+Puntero a un búfer de cadena Unicode terminada en NULL que contiene el texto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 1 si se realiza correctamente, o un valor de error en caso contrario.
+Devuelve 1 si se realiza correctamente o, de lo contrario, devuelve un valor de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El banner de indicación es el texto que se muestra en el control de edición de un cuadro combinado cuando no hay ninguna selección.
+El banner de indicación es texto que se muestra en el control de edición de un cuadro combinado cuando no hay ninguna selección.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: 'El \_ método get CurrentPosition recupera la posición actual, en relación con la duración total de la secuencia. Este método implementa el método IMediaPosition:: get \_ CurrentPosition.'
+description: El método \_ get CurrentPosition recupera la posición actual, en relación con la duración total de la secuencia. Este método implementa el método IMediaPosition::get \_ CurrentPosition.
 ms.assetid: 6e68af98-440d-4ecc-b1aa-d5e241de4999
-title: Método CPosPassThru.get_CurrentPosition (Ctlutil. h)
+title: CPosPassThru.get_CurrentPosition método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6c146eb1ee3d0a48da90973ab181a4bd02182331
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db49717284f597249603b3c18340855793ebd342632aeb2091861f9742963a02
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084245"
 ---
-# <a name="cpospassthruget_currentposition-method"></a>CPosPassThru. Get \_ CurrentPosition (método)
+# <a name="cpospassthruget_currentposition-method"></a>Método CPosPassThru.get \_ CurrentPosition
 
-El `get_CurrentPosition` método recupera la posición actual, en relación con la duración total de la secuencia. Este método implementa el método [**IMediaPosition:: get \_ CurrentPosition**](/windows/desktop/api/Control/nf-control-imediaposition-get_currentposition) .
+El `get_CurrentPosition` método recupera la posición actual, en relación con la duración total de la secuencia. Este método implementa el [**método IMediaPosition::get \_ CurrentPosition.**](/windows/desktop/api/Control/nf-control-imediaposition-get_currentposition)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Puntero a una variable que recibe la posición actual, en segundos.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor **HRESULT** del PIN conectado.
+Devuelve el **valor HRESULT** del pin conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> </dl>
 
  

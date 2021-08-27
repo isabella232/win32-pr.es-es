@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Consultar el estado de las características opcionales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec27457336adcc5c358aad0a5e139c1c7c07f6bcb72335ec549f9ca98cc1e5a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ecffe6ddbe9b860c6f49fe12d3fed500c169bef
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119996035"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476711"
 ---
 # <a name="querying-the-status-of-optional-features"></a>Consultar el estado de las características opcionales
 
@@ -21,72 +21,42 @@ Puede usar Windows PowerShell cmdlets para consultar el estado de las caracterí
 **Para recuperar todas las instancias de características opcionales presentes en un equipo**
 
 -   <span codelanguage="PowerShell"></span>
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>PowerShell</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><pre><code>Get-WmiObject Win32_OptionalFeature</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| PowerShell | 
+|------------|
+| <pre><code>Get-WmiObject Win32_OptionalFeature</code></pre> | 
+
 
     
 
 **Para consultar una característica opcional especificando el nombre de la característica**
 
 -   <span codelanguage="PowerShell"></span>
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>PowerShell</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><pre><code>Get-WmiObject -query &quot;select * from Win32_OptionalFeature where name = &#39;TelnetClient&#39;&quot;</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| PowerShell | 
+|------------|
+| <pre><code>Get-WmiObject -query "select * from Win32_OptionalFeature where name = 'TelnetClient'"</code></pre> | 
+
 
     
 
     > [!Note]  
-    > La **propiedad name** distingue mayúsculas de minúsculas.
+    > The **name** property is case-sensitive.
 
      
 
 **Para consultar características opcionales especificando el estado de instalación**
 
 -   <span codelanguage="PowerShell"></span>
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>PowerShell</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><pre><code>Get-WmiObject -query &quot;select * from win32_optionalfeature where installstate= 1&quot;</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| PowerShell | 
+|------------|
+| <pre><code>Get-WmiObject -query "select * from win32_optionalfeature where installstate= 1"</code></pre> | 
+
 
     
 
-    Para obtener más información sobre los valores posibles para **la propiedad InstallState,** vea [**Win32 \_ OptionalFeature**](/windows/desktop/CIMWin32Prov/win32-optionalfeature).
+    For more information about the possible values for the **InstallState** property, see [**Win32\_OptionalFeature**](/windows/desktop/CIMWin32Prov/win32-optionalfeature).
 
 ## <a name="related-topics"></a>Temas relacionados
 

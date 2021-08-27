@@ -1,7 +1,7 @@
 ---
 description: Desbloquea un búfer de vértices.
 ms.assetid: 31f9529c-f5ec-41f8-bd3a-a4484f95caf7
-title: 'ID3DXBaseMesh:: UnlockVertexBuffer (método) (D3DX9Mesh. h)'
+title: Método ID3DXBaseMesh::UnlockVertexBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 26e0b4d9781598495f358d21c0b06fbb7a34f466
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 447be3f91917d7aa7e1b606186aea32bc77f8f00f178495c35d2ae933ae936d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103914741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118805"
 ---
-# <a name="id3dxbasemeshunlockvertexbuffer-method"></a>ID3DXBaseMesh:: UnlockVertexBuffer (método)
+# <a name="id3dxbasemeshunlockvertexbuffer-method"></a>Método ID3DXBaseMesh::UnlockVertexBuffer
 
 Desbloquea un búfer de vértices.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: El método NotifyFilterState notifica al pin cuando cambia el estado del filtro.
 ms.assetid: 0eb3b0e5-9c44-464e-b4ca-bcded731e813
-title: Método CBaseStreamControl. NotifyFilterState (Strmctl. h)
+title: Método CBaseStreamControl.NotifyFilterState (Strmctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ccb96361c8f4938bd95ffdc29229a035a239cc25
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3433e5c40f86a9e333696774fe671eb7bb90d9803cb9cd6501d7971111e5d36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131425"
 ---
-# <a name="cbasestreamcontrolnotifyfilterstate-method"></a>CBaseStreamControl. NotifyFilterState, método
+# <a name="cbasestreamcontrolnotifyfilterstate-method"></a>Método CBaseStreamControl.NotifyFilterState
 
 El `NotifyFilterState` método notifica al pin cuando cambia el estado del filtro.
 
@@ -43,17 +43,17 @@ void NotifyFilterState(
 
 <dl> <dt>
 
-*nuevo \_ Estado* 
+*nuevo \_ estado* 
 </dt> <dd>
 
-Especifica el nuevo estado, como miembro de la enumeración de [**\_ Estado del filtro**](/windows/win32/api/strmif/ne-strmif-filter_state) .
+Especifica el nuevo estado, como miembro de la [**enumeración FILTER \_ STATE.**](/windows/win32/api/strmif/ne-strmif-filter_state)
 
 </dd> <dt>
 
 *tStart* 
 </dt> <dd>
 
-Especifica la hora de inicio. Si el nuevo estado del filtro es State \_ Running, pase el valor del método [**IMediaFilter:: Run**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-run) . De lo contrario, use el valor predeterminado.
+Especifica la hora de inicio. Si el nuevo estado de filtro es State Running, pase el valor \_ del [**método IMediaFilter::Run.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-run) De lo contrario, use el valor predeterminado.
 
 </dd> </dl>
 
@@ -61,9 +61,9 @@ Especifica la hora de inicio. Si el nuevo estado del filtro es State \_ Running,
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método hace que el método [**CBaseStreamControl:: CheckStreamState**](cbasestreamcontrol-checkstreamstate.md) deje de esperar. Llame a este método cada vez que el filtro propietario cambie de estado.
+Este método hace que [**el método CBaseStreamControl::CheckStreamState**](cbasestreamcontrol-checkstreamstate.md) deje de esperar. Llame a este método cada vez que el filtro propietario cambie de estado.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -99,8 +99,8 @@ STDMETHODIMP CMyFilter::Stop()
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Strmctl. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Strmctl.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -108,7 +108,7 @@ STDMETHODIMP CMyFilter::Stop()
 
 <dl> <dt>
 
-[**Clase CBaseStreamControl**](cbasestreamcontrol.md)
+[**CBaseStreamControl (clase)**](cbasestreamcontrol.md)
 </dt> </dl>
 
  

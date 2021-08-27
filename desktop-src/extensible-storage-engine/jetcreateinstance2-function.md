@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JetCreateInstance2 (función)'
+description: 'Más información sobre: JetCreateInstance2 (Función)'
 title: Función JetCreateInstance2
 TOCTitle: JetCreateInstance2 Function
 ms:assetid: 1f894b19-fa15-4d89-a3d1-ee13b346f545
@@ -20,23 +20,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: af31e7e66d92cf7ebbc238ac54a9b331e6dc5362
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc09639d48fe4cea93b115c9243587653ad70f44
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720637"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465052"
 ---
 # <a name="jetcreateinstance2-function"></a>Función JetCreateInstance2
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetcreateinstance2-function"></a>Función JetCreateInstance2
 
-La función **JetCreateInstance2** se usa para asignar una nueva instancia del motor de base de datos para su uso en un único proceso, con un nombre para mostrar especificado.
+La **función JetCreateInstance2** se usa para asignar una nueva instancia del motor de base de datos para su uso en un único proceso, con un nombre para mostrar especificado.
 
-**Windows XP:**  **JetCreateInstance2** se presentó en Windows XP.
+**Windows XP:****JetCreateInstance2** se introdujo en Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetCreateInstance2(
@@ -51,17 +51,17 @@ La función **JetCreateInstance2** se usa para asignar una nueva instancia del m
 
 *pinstance*
 
-Búfer de salida que recibirá la instancia que se acaba de crear.
+Búfer de salida que recibirá la instancia recién creada.
 
 *szInstanceName*
 
-Especifica un identificador de cadena único para la instancia que se va a crear. Esta cadena debe ser única dentro de un proceso determinado que hospede el motor de base de datos.
+Especifica un identificador de cadena único para la instancia que se va a crear. Esta cadena debe ser única dentro de un proceso determinado que hospeda el motor de base de datos.
 
-**Nota:** Un valor NULL se trata como un identificador de cadena válido para una instancia de. Solo una instancia puede tener un identificador de cadena NULL.
+**Nota** Un valor NULL se trata como un identificador de cadena válido para una instancia de . Solo una instancia puede tener un identificador de cadena NULL.
 
 *szDisplayName*
 
-Nombre para mostrar de la instancia de que se va a crear. Cuando este parámetro no está presente, se supone que su valor es NULL.
+Nombre para mostrar de la instancia que se va a crear. Cuando este parámetro no está presente, se supone que su valor es NULL.
 
 *grbit*
 
@@ -69,102 +69,48 @@ Reservado para uso futuro. Cuando este parámetro no está presente, se supone q
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInstanceNameInUse</p></td>
-<td><p>El nombre de instancia especificado ya está en uso para este proceso.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinó con el valor de otro parámetro. Esto puede ocurrir para <a href="gg269354(v=exchg.10).md">JetCreateInstance</a> cuando <em>pinstance</em> es NULL.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRunningInOneInstanceMode</p></td>
-<td><p>No se pudo realizar la operación porque no se puede usar cuando el motor de base de datos está funcionando en modo de instancia única (modo de compatibilidad de Windows 2000).</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTooManyInstances</p></td>
-<td><p>No se pudo crear una nueva instancia porque se ha alcanzado el número máximo de instancias. El número máximo de instancias admitidas se configura mediante <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> con <em>JET_paramMaxInstances</em>.</p></td>
-</tr>
-</tbody>
-</table>
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
-Si se ejecuta correctamente, se asignará una nueva instancia de y se devolverá el identificador de la misma. En este momento, todos los parámetros del sistema para la instancia de tendrán los valores de los parámetros globales del sistema predeterminados. Una vez que se asigna una instancia, debe terminarse o liberarse más adelante.
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errInstanceNameInUse</p> | <p>El nombre de instancia especificado ya está en uso para este proceso.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro. Esto puede ocurrir para <a href="gg269354(v=exchg.10).md">JetCreateInstance cuando</a> <em>pinstance</em> es NULL.</p> | 
+| <p>JET_errRunningInOneInstanceMode</p> | <p>Error en la operación porque no se puede usar cuando el motor de base de datos funciona en modo de instancia única (Windows modo de compatibilidad 2000).</p> | 
+| <p>JET_errTooManyInstances</p> | <p>No se pudo crear una nueva instancia porque se ha alcanzado el número máximo de instancias. El número máximo de instancias admitidas se configura mediante <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> <em>mediante JET_paramMaxInstances</em>.</p> | 
+
+
+
+Si se ejecuta correctamente, se asignará una nueva instancia y se devolverá el identificador de ella. En este momento, todos los parámetros del sistema de la instancia tendrán los valores de los parámetros del sistema predeterminados globales. Una vez asignada una instancia, debe terminarse o liberarse más adelante.
 
 En caso de error, se devolverá un error que representa la causa del error y no se asignará ninguna instancia.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-Una instancia de se debe inicializar con una llamada a [JetInit](./jetinit-function.md) para que pueda ser utilizada por cualquier cosa que no sea [JetSetSystemParameter](./jetsetsystemparameter-function.md).
+Una instancia debe inicializarse con una llamada a [JetInit](./jetinit-function.md) antes de que pueda ser utilizada por cualquier otro elemento que no [sea JetSetSystemParameter.](./jetsetsystemparameter-function.md)
 
-Una instancia de se destruye mediante una llamada a la función [JetTerm](./jetterm-function.md) , incluso si esa instancia nunca se inicializó con [JetInit](./jetinit-function.md). El número máximo de instancias que se pueden crear en un momento determinado se controla mediante *JET_paramMaxInstances*, que se puede configurar mediante una llamada a [JetSetSystemParameter](./jetsetsystemparameter-function.md). Una instancia es la unidad de capacidad de recuperación del motor de base de datos. Controla el ciclo de vida de todos los archivos utilizados para proteger la integridad de los datos en un conjunto de archivos de base de datos. Estos archivos incluyen el archivo de punto de comprobación y los archivos de registro de transacciones.
+Una llamada a la función [JetTerm](./jetterm-function.md) destruye una instancia de , incluso si esa instancia nunca se inicializó mediante [JetInit](./jetinit-function.md). El número máximo de instancias que se pueden crear en cualquier momento se controla mediante *JET_paramMaxInstances*, que se puede configurar mediante una llamada a [JetSetSystemParameter](./jetsetsystemparameter-function.md). Una instancia es la unidad de capacidad de recuperación del motor de base de datos. Controla el ciclo de vida de todos los archivos usados para proteger la integridad de los datos en un conjunto de archivos de base de datos. Estos archivos incluyen el archivo de punto de comprobación y los archivos de registro de transacciones.
 
-Si la función se ejecuta correctamente, el motor de base de datos se cambiará automáticamente al modo de varias instancias como un efecto secundario de esta llamada. Si la aplicación desea permitir solo una instancia en el proceso, se debe utilizar [JetInit](./jetinit-function.md) para iniciar el motor de base de datos en el modo de compatibilidad de Windows 2000.
+Si la función se realiza correctamente, el motor de base de datos se cambiará automáticamente al modo de varias instancias como efecto secundario de esta llamada. Si la aplicación desea permitir solo una instancia en el proceso, se debe usar [JetInit](./jetinit-function.md) para iniciar el motor de base de datos Windows modo de compatibilidad 2000.
 
-Si está presente, el parámetro *szDisplayName* se usará para identificar la instancia en lugares como el registro de eventos o en otros llamadores como aplicaciones de copia de seguridad (a través de funciones como [JetGetInstanceInfo](./jetgetinstanceinfo-function.md) o [JetOSSnapshotFreeze](./jetossnapshotfreeze-function.md)). Si no se proporciona el nombre para mostrar, se usará en su lugar el parámetro *szInstanceName* único, si está presente; de lo contrario, se devolverá una cadena vacía. Si el motor no tenía establecido el modo de ejecución, después de esta llamada se establecerá en modo de varias instancias.
+Si está presente, el parámetro *szDisplayName* se usará para identificar la instancia en lugares como el registro de eventos o hacia otros llamadores como aplicaciones de copia de seguridad (a través de funciones como [JetGetInstanceInfo](./jetgetinstanceinfo-function.md) o [JetOSSnapshotFreeze).](./jetossnapshotfreeze-function.md) Si no se proporciona el nombre para mostrar, se usará el parámetro *szInstanceName* único en su lugar, si está presente, de lo contrario, se devolverá una cadena vacía. Si el motor no tenía establecido el modo de ejecución, después de esta llamada, se establecerá en modo de varias instancias.
 
-La secuencia de inicio típica para un proceso que puede ejecutar varias instancias de jet sería:
+La secuencia de inicio típica de un proceso que podría ejecutar varias instancias de Jet sería:
 
-  - Una llamada a **JetCreateInstance2** que asignará y denominará a la instancia.
+  - Una llamada a **JetCreateInstance2** que asignará y asignará un nombre a la instancia.
 
-  - Varias llamadas a [JetSetSystemParameter](./jetsetsystemparameter-function.md) para esa instancia con el fin de establecer diferentes parámetros del sistema. Tenga en cuenta que algunos parámetros del sistema deben ser únicos para cada instancia (como *JET_paramSystemPath* o *JET_paramLogFilePath*), lo más probable es que se establezca cada uno de ellos.
+  - Varias llamadas a [JetSetSystemParameter para](./jetsetsystemparameter-function.md) esa instancia con el fin de establecer distintos parámetros del sistema. Tenga en cuenta que algunos parámetros del sistema deben ser únicos para cada instancia (como *JET_paramSystemPath* o *JET_paramLogFilePath*), por lo que lo más probable es que cada uno de ellos tenga que establecerse.
 
-  - Inicie la instancia de mediante [JetInit](./jetinit-function.md) o [JetInit2](./jetinit2-function.md). Para finalizar y/o liberar una instancia, use [JetTerm](./jetterm-function.md) o [JetTerm2](./jetterm2-function.md).
+  - Inicie la instancia mediante [JetInit](./jetinit-function.md) o [JetInit2.](./jetinit2-function.md) Para finalizar o liberar una instancia, use [JetTerm](./jetterm-function.md) o [JetTerm2.](./jetterm2-function.md)
 
-Si esta es la primera instancia que se va a iniciar, hay una serie de pasos adicionales que se ejecutarán durante esta llamada para realizar la inicialización y configuración básicas del sistema. Algunos de estos pasos pueden dar lugar a errores concretos a partir de JET_errOutOfMemory pero otros también (vea valores devueltos para obtener más información).
+Si se trata de la primera instancia que se va a iniciar, hay una serie de pasos adicionales que se ejecutarán durante esta llamada para realizar la inicialización y configuración básicas del sistema. Algunos de estos pasos pueden dar lugar a errores específicos a partir de JET_errOutOfMemory pero también otros (consulte Valores devueltos para obtener más información).
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JetCreateInstance2W</strong> (Unicode) y <strong>JetCreateInstance2A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetCreateInstance2W</strong> (Unicode) y <strong>JetCreateInstance2A</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

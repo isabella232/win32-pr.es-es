@@ -4,8 +4,8 @@ description: Representa una colección de objetos de dispositivo. Se trata de un
 ms.assetid: df4d704c-e031-4df1-aed1-11aacf8a6992
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la interfaz IMsRdpDeviceCollection2
-- Servicios de Escritorio remoto de la interfaz IMsRdpDeviceCollection2, descrito
+- Interfaz IMsRdpDeviceCollection2 Servicios de Escritorio remoto
+- Interfaz IMsRdpDeviceCollection2 Servicios de Escritorio remoto , descrito
 topic_type:
 - apiref
 api_name:
@@ -16,33 +16,33 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ea35c0a66ad8bf5d291062eafb7be3ceae4ac58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0ebfadf28cf6dc389ac615554e704f90a2b6b86533ce58018bdec5623f2637af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099445"
 ---
 # <a name="imsrdpdevicecollection2-interface"></a>Interfaz IMsRdpDeviceCollection2
 
-Representa una colección de objetos de dispositivo. Se trata de una mejora de la interfaz [**IMsRdpDeviceCollection**](imsrdpdevicecollection.md) .
+Representa una colección de objetos de dispositivo. Se trata de una mejora de la [**interfaz IMsRdpDeviceCollection.**](imsrdpdevicecollection.md)
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IMsRdpDeviceCollection2** hereda de [**IMsRdpDeviceCollection**](imsrdpdevicecollection.md). **IMsRdpDeviceCollection2** también tiene estos tipos de miembros:
+La **interfaz IMsRdpDeviceCollection2** hereda de [**IMsRdpDeviceCollection**](imsrdpdevicecollection.md). **IMsRdpDeviceCollection2** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IMsRdpDeviceCollection2** tiene estos métodos.
+La **interfaz IMsRdpDeviceCollection2** tiene estos métodos.
 
 
 
 | Método                                                                         | Descripción                                                                                                 |
 |:-------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-| [**AddDeviceByInstanceId**](imsrdpdevicecollection2-adddevicebyinstanceid.md) | Agrega un dispositivo que no está en la lista a la recopilación de dispositivos.<br/>                                                |
-| [**RedirectNow**](imsrdpdevicecollection2-redirectnow.md)                     | Fuerza la redirección o eliminación de los dispositivos que se seleccionaron o anularon de la colección.<br/> |
+| [**AddDeviceByInstanceId**](imsrdpdevicecollection2-adddevicebyinstanceid.md) | Agrega un dispositivo no publicado a la recopilación de dispositivos.<br/>                                                |
+| [**RedirectNow**](imsrdpdevicecollection2-redirectnow.md)                     | Obliga a que los dispositivos seleccionados o no seleccionados de la colección se redirijan o quiten.<br/> |
 
 
 
@@ -58,7 +58,7 @@ La interfaz **IMsRdpDeviceCollection2** tiene estos métodos.
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                             |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>     |
-| IID<br/>                      | IID \_ IMsRdpDeviceCollection2 se define como e0e5d68a-f2e7-4350-ADFE-ac0e08d74de0<br/> |
+| IID<br/>                      | IID \_ IMsRdpDeviceCollection2 se define como e0e5d68a-f2e7-4350-adfe-ac0e08d74de0<br/> |
 
 
 

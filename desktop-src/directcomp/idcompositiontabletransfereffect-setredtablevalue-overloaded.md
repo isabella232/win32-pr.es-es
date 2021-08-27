@@ -1,9 +1,9 @@
 ---
-title: Métodos IDCompositionTableTransferEffect SetRedTableValue (Dcomp. h)
+title: Métodos IDCompositionTableTransferEffect SetRedTableValue (Dcomp.h)
 description: Establece un valor en la tabla roja.
 ms.assetid: 9cfa766c-b88d-9a8f-109f-b42e9df79cbf
 keywords:
-- Métodos SetRedTableValue DirectComposition
+- Métodos SetRedTableValue de DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 6be960c9cfdff67eaf7671c2d3679b20ffbcd5d3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c572981ea35ff190b5fe949101a24d568a1fe6fe098592ea82138392a072496a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118005"
 ---
-# <a name="idcompositiontabletransfereffectsetredtablevalue-methods"></a>IDCompositionTableTransferEffect:: SetRedTableValue (métodos)
+# <a name="idcompositiontabletransfereffectsetredtablevalue-methods"></a>Métodos IDCompositionTableTransferEffect::SetRedTableValue
 
 Establece un valor en la tabla roja.
 
@@ -40,7 +40,7 @@ Establece un valor en la tabla roja.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

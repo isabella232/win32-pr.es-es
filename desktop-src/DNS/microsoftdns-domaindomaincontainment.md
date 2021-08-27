@@ -1,10 +1,10 @@
 ---
-title: MicrosoftDNS_DomainDomainContainment (clase)
-description: La \_ clase MicrosoftDNS DomainDomainContainment se usa para la contención de dominio; Los dominios DNS pueden contener otros dominios DNS.
+title: MicrosoftDNS_DomainDomainContainment clase
+description: La clase DomainDomainContainment de MicrosoftDNS se \_ usa para la contención del dominio; Los dominios DNS pueden contener otros dominios DNS.
 ms.assetid: 43faa046-30bf-4fb3-9698-98d09c424fad
 keywords:
-- DNS de la clase MicrosoftDNS_DomainDomainContainment
-- MicrosoftDNS_DomainDomainContainment de la clase DNS, descrito
+- MicrosoftDNS_DomainDomainContainment dns de clase
+- MicrosoftDNS_DomainDomainContainment clase DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a55c5b67ee8026055bc2fa8098cb33e8c767528f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8f96d03f007af463fb4c4f672eb0d1374867636f4a4224469589563b9c5882e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084755"
 ---
-# <a name="microsoftdns_domaindomaincontainment-class"></a>MicrosoftDNS ( \_ clase DomainDomainContainment)
+# <a name="microsoftdns_domaindomaincontainment-class"></a>Clase DomainDomainContainment de MicrosoftDNS \_
 
-La clase **MicrosoftDNS \_ DomainDomainContainment** se usa para la contención de dominio; Los dominios DNS pueden contener otros dominios DNS. Cada instancia de la clase de [**\_ dominio microsoftdns**](microsoftdns-domain.md) puede contener varias instancias del **\_ dominio microsoftdns**. Una instancia de un objeto de **\_ dominio microsoftdns** se encuentra directamente en no más de un **\_ dominio MicrosoftDNS** de nivel superior.
+La **clase \_ DomainDomainContainment de MicrosoftDNS** se usa para la contención del dominio; Los dominios DNS pueden contener otros dominios DNS. Cada instancia de la [**clase de dominio MicrosoftDNS \_**](microsoftdns-domain.md) puede contener varias otras instancias del **dominio MicrosoftDNS \_**. Una instancia de un **objeto de dominio MicrosoftDNS \_** se encuentra directamente en no más de un dominio **MicrosoftDNS de nivel \_ superior.**
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,47 +42,47 @@ class MicrosoftDNS_DomainDomainContainment : CIM_Component
 
 ## <a name="members"></a>Miembros
 
-La clase **MicrosoftDNS \_ DomainDomainContainment** tiene estos tipos de miembros:
+La **clase \_ DomainDomainContainment de MicrosoftDNS** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MicrosoftDNS \_ DomainDomainContainment** tiene estas propiedades.
+La **clase \_ DomainDomainContainment de MicrosoftDNS** tiene estas propiedades.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ dominio MicrosoftDNS**
+Tipo de datos: **Dominio MicrosoftDNS \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Calificadores: clave, máximo (1), invalidación ("GroupComponent")
+Calificadores: Key, Max(1), Override("GroupComponent")
 
-Descripción: un dominio de nivel superior, zona, caché o RootHints.
+Descripción: dominio, zona, caché o roothints de nivel superior.
 
-Heredado del \_ componente CIM
+Se hereda del \_ componente CIM
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ dominio MicrosoftDNS**
+Tipo de datos: **Dominio MicrosoftDNS \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Calificadores: clave, invalidación ("PartComponent")
+Calificadores: Key, Override("PartComponent")
 
-Descripción: el dominio contenido en un dominio de nivel superior, zona, caché o RootHints.
+Descripción: dominio contenido por un dominio, zona, caché o roothints de nivel superior.
 
-Heredado del \_ componente CIM.
+Se hereda del componente \_ CIM.
 
 </dd> </dl>
 
@@ -95,7 +95,7 @@ Heredado del \_ componente CIM.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ Heredado del \_ componente CIM.
 [**MicrosoftDNS \_ DomainResourceRecordContainment**](microsoftdns-domainresourcerecordcontainment.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ServerDomainContainment**](microsoftdns-serverdomaincontainment.md)

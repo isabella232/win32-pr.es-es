@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 549b75b6fbc422c417f16819d0ebeec20b0774b2
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 6013de4bb32a9cc54aa6ddfed6a2670f745e280a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786757"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622881"
 ---
 # <a name="span-idvspixengineiframebufferrequestspaniframebufferrequest-interface"></a><span id="vspixengine.iframebufferrequest"></span>Interfaz IFrameBufferRequest
 
 Devolución de llamada para solicitar un destino de representación.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz IFrameBufferRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IFrameBufferRequest** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IFrameBufferRequest** hereda de la [**interfaz IUnknown.**](/windo
 
 La **interfaz IFrameBufferRequest** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iframebufferrequest-requestasync-dword-eventid-dword-iframebuffercallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Solicita la salida del búfer de fotogramas del destino de representación, el evento y el marco especificados.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iframebufferrequest-requestasync-dword-eventid-dword-iframebuffercallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Solicita la salida del búfer de fotogramas del destino de representación, el evento y el marco especificados.</p></td></tr></tbody></table>
 
  
 

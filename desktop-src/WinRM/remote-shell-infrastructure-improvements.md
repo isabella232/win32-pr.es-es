@@ -1,25 +1,25 @@
 ---
-title: Mejoras en la infraestructura de shell remoto
-description: Administración remota de Windows versión 2,0 (WinRM 2,0) ofrece muchas mejoras en la infraestructura de shell remoto.
+title: Mejoras en la infraestructura de Remote Shell
+description: Windows Administración remota versión 2.0 (WinRM 2.0) ofrece muchas mejoras en la infraestructura de shell remoto.
 ms.assetid: b22693ba-fa43-44bb-9b2d-0c64fad6e3cc
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53c67752222f1ca969ea254164a25144168d1eb3
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: bf88a472319b4b4677992f97509a3603cfe4a32f272388caf9db100b6e7457ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "104077233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121665"
 ---
-# <a name="remote-shell-infrastructure-improvements"></a>Mejoras en la infraestructura de shell remoto
+# <a name="remote-shell-infrastructure-improvements"></a>Mejoras en la infraestructura de Remote Shell
 
-Administración remota de Windows versión 2,0 (WinRM 2,0) ofrece muchas mejoras en la infraestructura de shell remoto. En los temas siguientes se describen estas mejoras en detalle:
+Windows Administración remota versión 2.0 (WinRM 2.0) ofrece muchas mejoras en la infraestructura de shell remoto. En los temas siguientes se describen estas mejoras en detalle:
 
--   [Compatibilidad con múltiples saltos](multi-hop-support.md)
+-   [Compatibilidad con varios saltos](multi-hop-support.md)
 -   [Administración de cuotas para shells remotos](quotas.md)
 
-Una de las mejoras de la infraestructura de shell remoto de WinRM es la adición de un administrador de Shell más robusto que mantiene la información de Shell específica del usuario. Los usuarios de WinRM pueden crear shells en equipos remotos para ejecutar comandos o scripts. Además, los usuarios pueden crear varios shells en un equipo. Los usuarios y los administradores necesitan la capacidad de administrar shells. Los usuarios pueden enumerar, obtener y eliminar los shells que han creado. Los administradores pueden enumerar todos los shells activos y recuperar detalles sobre shells específicos en un host local o remoto. Los administradores también pueden eliminar cualquier Shell activo en un host local o remoto.
+Una de las mejoras en la infraestructura de shell remoto de WinRM es la adición de un administrador de shell más sólido que mantiene la información de shell específica del usuario. Los usuarios de WinRM pueden crear shells en equipos remotos para ejecutar comandos o scripts. Además, los usuarios pueden crear varios shells en un equipo. Tanto los usuarios como los administradores necesitan la capacidad de administrar shells. Los usuarios pueden enumerar, obtener y eliminar los shells que han creado. Los administradores pueden enumerar todos los shells activos y recuperar detalles sobre shells específicos en un host local o remoto. Los administradores también pueden eliminar cualquier shell activo en un host local o remoto.
 
 Cuando un usuario o administrador enumera los shells activos, el servicio WinRM puede devolver la siguiente información.
 
@@ -42,14 +42,14 @@ Especifica las variables de entorno establecidas por el usuario.
 <span id="WorkingDirectory"></span><span id="workingdirectory"></span><span id="WORKINGDIRECTORY"></span>WorkingDirectory
 </dt> <dd>
 
-Especifica el directorio de inicio del shell.
+Especifica el directorio inicial del shell.
 
 </dd> <dt>
 
 <span id="ResourceURI"></span><span id="resourceuri"></span><span id="RESOURCEURI"></span>ResourceURI
 </dt> <dd>
 
-Especifica el URI de recurso para la operación de Shell. El URI de recurso se puede usar para recuperar la configuración del complemento que es específica de la instancia del shell.
+Especifica el URI del recurso para la operación de shell. El URI del recurso se puede usar para recuperar la configuración del complemento que es específica de la instancia del shell.
 
 </dd> <dt>
 
@@ -81,17 +81,17 @@ Especifica la marca de tiempo de creación del shell.
 
 </dd> <dt>
 
-<span id="IdleTime"></span><span id="idletime"></span><span id="IDLETIME"></span>Tiempodeinactividad
+<span id="IdleTime"></span><span id="idletime"></span><span id="IDLETIME"></span>IdleTime
 </dt> <dd>
 
-Especifica la duración, en milisegundos, que el Shell ha estado inactivo.
+Especifica la duración, en milisegundos, de que el shell ha estado inactivo.
 
 </dd> <dt>
 
-<span id="UserId"></span><span id="userid"></span><span id="USERID"></span>Deberían
+<span id="UserId"></span><span id="userid"></span><span id="USERID"></span>Userid
 </dt> <dd>
 
-Especifica el ID. de usuario.
+Especifica el identificador de usuario.
 
 </dd> <dt>
 
@@ -102,10 +102,10 @@ Especifica el nombre de host o la dirección IP del equipo que creó el shell.
 
 </dd> <dt>
 
-<span id="Shell_memory_usage"></span><span id="shell_memory_usage"></span><span id="SHELL_MEMORY_USAGE"></span>Uso de memoria de Shell
+<span id="Shell_memory_usage"></span><span id="shell_memory_usage"></span><span id="SHELL_MEMORY_USAGE"></span>Uso de memoria del shell
 </dt> <dd>
 
-Especifica la cantidad de memoria usada por el shell.
+Especifica la cantidad de memoria que ha usado el shell.
 
 </dd> <dt>
 
@@ -118,9 +118,9 @@ Especifica el número de procesos creados por el shell.
 
 ## <a name="enumerating-a-shell-on-a-local-host"></a>Enumerar un shell en un host local
 
-El siguiente comando muestra cómo usar la utilidad WinRM para enumerar los shells en un cliente WinRM: **WinRM Enumerate Shell**.
+El siguiente comando muestra cómo usar la utilidad winrm para enumerar los shells en un cliente winRM: **winrm enumerar shell**.
 
-En el ejemplo de texto siguiente se muestra el resultado de la enumeración de Shell:
+En el siguiente ejemplo basado en texto se muestra la salida de la enumeración de shell:
 
 ``` syntax
 Shell
@@ -161,13 +161,13 @@ Shell
     ChildProcesses = 0
 ```
 
-Para obtener más información, vea la ayuda en pantalla que se proporciona mediante la ejecución del siguiente comando: **WinRM Enumerate-?**.
+Para obtener más información, vea la ayuda en línea proporcionada mediante la ejecución del siguiente comando: **winrm enumerate -?**.
 
-## <a name="retrieving-information-about-a-specific-shell"></a>Recuperación de información sobre un shell específico
+## <a name="retrieving-information-about-a-specific-shell"></a>Recuperar información sobre un shell específico
 
-Un administrador o un usuario también puede usar el identificador ShellId para recuperar información sobre el shell. El siguiente comando muestra cómo usar la utilidad WinRM para obtener información sobre un shell específico: **WinRM Get Shell. ShellId = 0A6E6A01-8AB2-4037-86CC-BFC826A1244E**.
+Un administrador o usuario también puede usar el identificador ShellId para recuperar información sobre el shell. El siguiente comando muestra cómo usar la utilidad winrm para obtener información sobre un shell específico: **winrm get shell? ShellId=0A6E6A01-8AB2-4037-86CC-BFC826A1244E**.
 
-En el ejemplo de texto siguiente se muestra el resultado de la información de Shell:
+En el siguiente ejemplo basado en texto se muestra la salida de la información del shell:
 
 ``` syntax
 Shell
@@ -182,24 +182,24 @@ Shell
     ShellInactivity = P0DT0H0M35S
 ```
 
-Para obtener más información, vea la ayuda en pantalla proporcionada por el siguiente comando: **WinRM Get-?**.
+Para obtener más información, consulte la ayuda en línea proporcionada por el siguiente comando: **winrm get -?**.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Compatibilidad con múltiples saltos](multi-hop-support.md)
+[Compatibilidad con varios saltos](multi-hop-support.md)
 </dt> <dt>
 
 [Administración de cuotas para shells remotos](quotas.md)
 </dt> <dt>
 
-[Referencia administrada para comandos de PowerShell de WS-Management](winrm-powershell-commandlets.md)
+[Referencia administrada para WS-Management comandos de PowerShell](winrm-powershell-commandlets.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

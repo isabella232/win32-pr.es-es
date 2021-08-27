@@ -4,18 +4,18 @@ description: Este artículo está pensado para abordar algunas de las preguntas 
 ms.assetid: 2ab439be-8d99-bcf8-89af-d4274e044c88
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bcd694243adad852d68e5db5fc342f9259ace7ebbc71923bf56a60bbc1b511b1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0509084232f1dcfe63a7d956516aa723f8cd724b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119070545"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477291"
 ---
 # <a name="directx-installation-for-game-developers"></a>Instalación de DirectX para desarrolladores de juegos
 
 Este artículo está pensado para abordar algunas de las preguntas comunes sobre el entorno de ejecución de DirectX y el uso de DirectSetup para instalar DirectX.
 
--   [Tiempo de ejecución de DirectX](#directx-runtime)
+-   [DirectX Runtime](#directx-runtime)
 -   [Número de versión de DirectX](#directx-version-number)
 -   [Bibliotecas de DirectX](#directx-libraries)
 -   [Instalación de DirectX mediante el instalador del juego](#installation-of-directx-by-the-games-installer)
@@ -25,7 +25,7 @@ Este artículo está pensado para abordar algunas de las preguntas comunes sobre
 > [!IMPORTANT]
 > El SDK de DirectX heredado está al final del ciclo de vida, pero sigue estando disponible para admitir juegos, tutoriales y proyectos antiguos. Los proyectos nuevos no deben usarlo. El uso del SDK de DirectX heredado requiere el uso de DirectSetup en desuso para componentes como D3DX9, D3DX10, D3DX11, XAudio 2.7, XInput 1.3 y XACT. Para obtener más información sobre el estado actual del SDK de DirectX, consulte ¿Dónde está el [SDK de DirectX?](../directx-sdk--august-2009-.md)y la entrada de blog [Not So Direct Setup](https://walbourn.github.io/not-so-direct-setup/).
 
-## <a name="directx-runtime"></a>Tiempo de ejecución de DirectX
+## <a name="directx-runtime"></a>DirectX Runtime
 
 El entorno de ejecución de DirectX consta de componentes principales y componentes opcionales.
 
@@ -37,18 +37,18 @@ Los componentes opcionales se lanzan en las actualizaciones del SDK de DirectX e
 
 El número de versión de DirectX, como 9.0c, solo hace referencia a la versión de los componentes principales, como Direct3D, DirectInput o Direct Sound. Este número no cubre las versiones de los distintos componentes opcionales que se lanzan en el SDK de DirectX, como D3DX, XACT, XINPUT, entre otros.
 
-Por lo general, el número de versión de DirectX no es significativo, excepto como referencia rápida a los bits principales en tiempo de ejecución. Este número no debe usarse para comprobar si el entorno de ejecución de DirectX correcto ya está instalado, ya que no tiene en cuenta los componentes opcionales de DirectX.
+Por lo general, el número de versión de DirectX no es significativo, excepto como referencia rápida a los bits en tiempo de ejecución principales. Este número no debe usarse para comprobar si el entorno de ejecución de DirectX correcto ya está instalado, ya que no tiene en cuenta los componentes opcionales de DirectX.
 
 ## <a name="directx-libraries"></a>Bibliotecas de DirectX
 
-En el pasado, los componentes opcionales del SDK de DirectX, incluido D3DX, se publicaron como bibliotecas estáticas. Sin embargo, ahora se lanzan como bibliotecas de tipo dinámico (DLL) debido al aumento de la demanda de mejores prácticas de seguridad. Los archivos DLL permiten el mantenimiento del código publicado anteriormente. Si estos componentes se implementaron como bibliotecas estáticas, no habría ninguna manera de que Microsoft solucionara los problemas de seguridad encontrados después del lanzamiento.
+En el pasado, los componentes opcionales del SDK de DirectX, incluido D3DX, se publicaron como bibliotecas estáticas. Sin embargo, ahora se lanzan como bibliotecas de tipo dinámico (DLL) debido al aumento de la demanda de mejores prácticas de seguridad. Los archivos DLL permiten el mantenimiento del código publicado anteriormente. Si estos componentes se implementaron como bibliotecas estáticas, no habría ninguna manera de que Microsoft solucionara los problemas de seguridad encontrados después de la versión.
 
 A medida que las características se agregan o cambian a los componentes opcionales, los nombres de los archivos DLL correspondientes también se cambian para asegurarse de que no se produce ninguna regresión en los juegos existentes que usan componentes publicados. Los archivos DLL de cada componente están en directo en paralelo y los desarrolladores de juegos pueden elegir exactamente qué versión de DLL usa el juego mediante la vinculación a la biblioteca de importación correspondiente.
 
 Aunque asegurarse de que los archivos DLL están instalados en un sistema no es tan fácil como simplemente vincular a bibliotecas estáticas, se han realizado algunos cambios en el SDK de DirectX para solucionar el problema del modelo dll:
 
--   DirectX redistributable se puede configurar para que contenga solo los componentes que la aplicación requiere para minimizar los tamaños de distribución y medios.
--   La carpeta redistribuible, Archivos de programa DirectX SDK Redist, ahora contiene un archivo \\ \\ de archivador (.cab) para todos los posibles componentes opcionales, por lo que no tiene que profundizar en un SDK anterior para \\ encontrarlos.
+-   DirectX redistributable se puede configurar para contener solo los componentes que la aplicación requiere para minimizar los tamaños de distribución y multimedia.
+-   La carpeta redistribuible, Program Files DirectX SDK Redist , ahora contiene un archivo \\ \\ de archivador (.cab) para cada componente opcional posible, por lo que no tiene que profundizar en un SDK anterior para \\ encontrarlos.
 -   Al instalar el propio SDK, se instalan todos los componentes opcionales posibles.
 -   DirectX redistribuible que contiene todos los componentes opcionales está disponible como instalador basado en web y como paquete descargable. Consulte el Centro para desarrolladores de DirectX[(DirectX)](/previous-versions/windows/apps/hh452744(v=win.10))para obtener más información.
 
@@ -63,42 +63,15 @@ Estos son los procedimientos recomendados para agregar la instalación de Direct
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Término</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="Install_the_redistributable_components_every_time.__"></span><span id="install_the_redistributable_components_every_time.__"></span><span id="INSTALL_THE_REDISTRIBUTABLE_COMPONENTS_EVERY_TIME.__"></span>Instale los componentes redistribuibles cada vez. <br/></td>
-<td>El proceso de instalación de un juego debe instalar los componentes redistribuibles de DirectX durante cada instalación sin permitir que los usuarios no lo usen. Si permite la exclusión, algunos usuarios adivinarán que no lo necesitan y, si realmente lo hacen, el juego no se ejecutará. <br/></td>
-</tr>
-<tr class="even">
-<td><span id="Let_the_DirectX_installer_check_for_optional_components.__"></span><span id="let_the_directx_installer_check_for_optional_components.__"></span><span id="LET_THE_DIRECTX_INSTALLER_CHECK_FOR_OPTIONAL_COMPONENTS.__"></span>Deje que el instalador de DirectX compruebe si hay componentes opcionales. <br/></td>
-<td>No suponga que los componentes opcionales más recientes ya están instalados en un sistema, ya que Windows Update y Service Packs no proporcionan ninguno de los componentes opcionales de DirectX. Debe instalar el entorno de ejecución de DirectX ejecutando dxsetup.exe directamente o llamando a DirectSetup. <br/></td>
-</tr>
-<tr class="odd">
-<td><span id="Set_up_silently.__"></span><span id="set_up_silently.__"></span><span id="SET_UP_SILENTLY.__"></span>Configurar en modo silencioso. <br/></td>
-<td>Inicie la instalación en modo silencioso para que los usuarios no omita accidentalmente la actualización del entorno de ejecución de DirectX. Para ello, inicie dxsetup.exe con el siguiente comando: <br/>
-<pre class="syntax" data-space="preserve"><code>   path-to-redistributable\dxsetup.exe /silent</code></pre>
-o llamando a DirectSetup y sin mostrar ninguna interfaz de usuario. <br/></td>
-</tr>
-<tr class="even">
-<td><span id="Combine_EULA_acceptances.__"></span><span id="combine_eula_acceptances.__"></span><span id="COMBINE_EULA_ACCEPTANCES.__"></span>Combinar las aceptaciones del CLUF. <br/></td>
-<td>Si solicita al usuario que acepte un CLUF, combine esto con la solicitud de aceptación del CLUF de DirectX al realizar la instalación en modo silencioso para que la solicitud de aceptación de las EULA se haga una sola vez. Las solicitudes deben producirse antes de instalar nada para que, si el usuario no acepta, no termine con una instalación parcial y con errores. <br/></td>
-</tr>
-<tr class="odd">
-<td><span id="Just_run_dxsetup_or_call_DirectSetup.__"></span><span id="just_run_dxsetup_or_call_directsetup.__"></span><span id="JUST_RUN_DXSETUP_OR_CALL_DIRECTSETUP.__"></span>Simplemente ejecute dxsetup o llame a DirectSetup. <br/></td>
-<td>Dado que el número de versión de DirectX no hace referencia a nada excepto a los componentes principales de DirectX, no compruebe una versión instalada antes de ejecutar dxsetup.exe o llamar a DirectSetup. Además, no compruebe la existencia de un archivo para probar si ya está instalado un componente opcional, ya que normalmente no determinará correctamente cuándo existe un componente, pero debe actualizarse. Sin embargo, el paquete de instalación de DirectX lo determinará rápidamente y realizará la acción correcta. <br/></td>
-</tr>
-</tbody>
-</table>
+
+| Término | Descripción | 
+|------|-------------|
+| <span id="Install_the_redistributable_components_every_time.__"></span><span id="install_the_redistributable_components_every_time.__"></span><span id="INSTALL_THE_REDISTRIBUTABLE_COMPONENTS_EVERY_TIME.__"></span>Instale los componentes redistribuibles cada vez. <br /> | El proceso de instalación de un juego debe instalar los componentes redistribuibles de DirectX durante cada instalación sin permitir que los usuarios no lo usen. Si permite la exclusión, algunos usuarios adivinarán que no lo necesitan y, si realmente lo hacen, el juego no se ejecutará. <br /> | 
+| <span id="Let_the_DirectX_installer_check_for_optional_components.__"></span><span id="let_the_directx_installer_check_for_optional_components.__"></span><span id="LET_THE_DIRECTX_INSTALLER_CHECK_FOR_OPTIONAL_COMPONENTS.__"></span>Deje que el instalador de DirectX compruebe si hay componentes opcionales. <br /> | No suponga que los componentes opcionales más recientes ya están instalados en un sistema, ya que Windows Update y Service Pack no proporcionan ninguno de los componentes opcionales de DirectX. Debe instalar el entorno de ejecución de DirectX ejecutando dxsetup.exe directamente o llamando a DirectSetup. <br /> | 
+| <span id="Set_up_silently.__"></span><span id="set_up_silently.__"></span><span id="SET_UP_SILENTLY.__"></span>Configurar en modo silencioso. <br /> | Inicie la instalación en modo silencioso para que los usuarios no omita accidentalmente la actualización del entorno de ejecución de DirectX. Para ello, inicie dxsetup.exe con el siguiente comando: <br /><pre class="syntax" data-space="preserve"><code>   path-to-redistributable\dxsetup.exe /silent</code></pre>o llamando a DirectSetup y sin mostrar ninguna interfaz de usuario. <br /> | 
+| <span id="Combine_EULA_acceptances.__"></span><span id="combine_eula_acceptances.__"></span><span id="COMBINE_EULA_ACCEPTANCES.__"></span>Combinar las aceptaciones del CLUF. <br /> | Si solicita al usuario que acepte un CLUF, combine esto con la solicitud de aceptación del CLUF de DirectX al realizar la instalación en modo silencioso para que la solicitud de aceptación de las EULA se haga una sola vez. Las solicitudes deben producirse antes de instalar nada para que, si el usuario no acepta, no termine con una instalación parcial y con errores. <br /> | 
+| <span id="Just_run_dxsetup_or_call_DirectSetup.__"></span><span id="just_run_dxsetup_or_call_directsetup.__"></span><span id="JUST_RUN_DXSETUP_OR_CALL_DIRECTSETUP.__"></span>Simplemente ejecute dxsetup o llame a DirectSetup. <br /> | Dado que el número de versión de DirectX no hace referencia a nada excepto a los componentes principales de DirectX, no compruebe una versión instalada antes de ejecutar dxsetup.exe o llamar a DirectSetup. Además, no compruebe la existencia de un archivo para probar si ya está instalado un componente opcional, ya que normalmente no determinará correctamente cuándo existe un componente, pero debe actualizarse. Sin embargo, el paquete de instalación de DirectX lo determinará rápidamente y realizará la acción correcta. <br /> | 
+
 
 
 
@@ -132,7 +105,7 @@ A continuación, puede distribuir este paquete de archivos e iniciar DirectSetup
 
 ## <a name="internal-deployment-of-the-debug-directx-runtime"></a>Implementación interna del entorno de ejecución de DirectX de depuración
 
-Los tiempos de ejecución de depuración de los componentes de DirectX se instalan cuando se instala el SDK de DirectX, pero la instalación del SDK en cada equipo de prueba puede ser difícil. Debe diseñar el proceso de instalación para copiar los archivos DLL del entorno de ejecución de depuración de la arquitectura del entorno de ejecución para desarrolladores del SDK de Microsoft DirectX de Archivos de programa a Windows \\ \\ \\ \\ system32 o a la carpeta \\ \\ del juego.
+Los entornos de ejecución de depuración de los componentes de DirectX se instalan cuando se instala el SDK de DirectX, pero la instalación del SDK en cada equipo de prueba puede ser difícil. Debe diseñar el proceso de instalación para copiar los archivos DLL del entorno de ejecución de depuración de la arquitectura del entorno de ejecución para desarrolladores del SDK de Microsoft DirectX de Archivos de programa \\ \\ Windows \\ \\ \\ system32 o en la carpeta \\ del juego.
 
 Sin embargo, se recomienda encarecidamente no copiar simplemente los archivos DLL en tiempo de ejecución publicados, ya que es fácil olvidarse de quitarlos para el producto final. En su lugar, coloque los archivos de instalación de DirectX en una carpeta compartida y ejecute el programa de instalación en modo silencioso desde la carpeta compartida.
 

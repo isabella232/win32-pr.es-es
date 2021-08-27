@@ -1,7 +1,7 @@
 ---
 description: El método SetDefaultTimerResolution establece la resolución del temporizador del reloj de referencia.
 ms.assetid: 891b809a-15d3-41f3-853e-aca9ddcd56e8
-title: Método CBaseReferenceClock. SetDefaultTimerResolution (Refclock. h)
+title: Método CBaseReferenceClock.SetDefaultTimerResolution (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 146162784ad52a7f7930613ec5c648e40d22900f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 980f31856aba14079da0f5b9625dca40846255d6f02361b2798d7c38c1cd4f94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087425"
 ---
-# <a name="cbasereferenceclocksetdefaulttimerresolution-method"></a>CBaseReferenceClock. SetDefaultTimerResolution, método
+# <a name="cbasereferenceclocksetdefaulttimerresolution-method"></a>CBaseReferenceClock.SetDefaultTimerResolution (método)
 
 El `SetDefaultTimerResolution` método establece la resolución del temporizador del reloj de referencia.
 
@@ -45,17 +45,17 @@ STDMETHODIMP SetDefaultTimerResolution(
 *timerResolution* 
 </dt> <dd>
 
-Resolución mínima del temporizador, en unidades de 100-nanosegundos. Si el valor es cero, el reloj de referencia cancela su solicitud anterior.
+Resolución mínima del temporizador, en unidades de 100 nanosegundos. Si el valor es cero, el reloj de referencia cancela su solicitud anterior.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método implementa el método [**IReferenceClockTimerControl:: SetDefaultTimerResolution**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclocktimercontrol-setdefaulttimerresolution) .
+Este método implementa el [**método IReferenceClockTimerControl::SetDefaultTimerResolution.**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclocktimercontrol-setdefaulttimerresolution)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Este método implementa el método [**IReferenceClockTimerControl:: SetDefaultTi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Refclock. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Refclock.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Este método implementa el método [**IReferenceClockTimerControl:: SetDefaultTi
 
 <dl> <dt>
 
-[**Clase CBaseReferenceClock**](cbasereferenceclock.md)
+[**CBaseReferenceClock (clase)**](cbasereferenceclock.md)
 </dt> </dl>
 
  

@@ -1,15 +1,15 @@
 ---
 description: Especifica cómo se entrelaza la secuencia de vídeo descodificada.
 ms.assetid: a2b95b90-1c58-47f3-b6a8-0f3f6f1a416c
-title: Propiedad AVDecVideoInputScanType (Codecapi. h)
+title: Propiedad AVDecVideoInputScanType (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 560db1cd1cf0238fc9e50257f2f24559e9a94c8f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6b86c9499019cdc07f095bf65be5817b828c78d277b02810bc1612cc0365edce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108705"
 ---
 # <a name="avdecvideoinputscantype-property"></a>Propiedad AVDecVideoInputScanType
 
@@ -27,9 +27,9 @@ Esta propiedad es de solo lectura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es un miembro de la enumeración [**eAVDecVideoInputScanType**](/windows/win32/api/codecapi/ne-codecapi-eavdecvideoinputscantype) .
+El valor de esta propiedad es un miembro de la [**enumeración eAVDecVideoInputScanType.**](/windows/win32/api/codecapi/ne-codecapi-eavdecvideoinputscantype)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los 16 bits superiores del valor contienen el ancho y los 16 bits inferiores contienen el alto.
 
@@ -39,9 +39,9 @@ Los 16 bits superiores del valor contienen el ancho y los 16 bits inferiores con
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ Los 16 bits superiores del valor contienen el ancho y los 16 bits inferiores con
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

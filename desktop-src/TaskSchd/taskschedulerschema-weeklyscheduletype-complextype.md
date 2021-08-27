@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de weeklyScheduleType
+title: weeklyScheduleType Complex Type
 description: Define los elementos secundarios y la información de secuenciación para el elemento ScheduleByWeek.
 ms.assetid: 048832fa-2262-4461-9cfc-823a4eb7a1df
 keywords:
-- tipo complejo de weeklyScheduleType Programador de tareas
+- tipo complejo weeklyScheduleType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 797e01c20e749593d64bad12f017af8be613992e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5f886b2901a5cf1ff1c9db0c8ec761a796b8e68a0f3bdc746afa13a9d8e32ee6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099785"
 ---
-# <a name="weeklyscheduletype-complex-type"></a>Tipo complejo de weeklyScheduleType
+# <a name="weeklyscheduletype-complex-type"></a>weeklyScheduleType Complex Type
 
-Define los elementos secundarios y la información de secuenciación para el elemento [**ScheduleByWeek**](taskschedulerschema-schedulebyweek-calendartriggertype-element.md) .
+Define los elementos secundarios y la información de secuenciación para [**el elemento ScheduleByWeek.**](taskschedulerschema-schedulebyweek-calendartriggertype-element.md)
 
 ``` syntax
 <xs:complexType name="weeklyScheduleType">
@@ -68,8 +68,8 @@ Define los elementos secundarios y la información de secuenciación para el ele
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

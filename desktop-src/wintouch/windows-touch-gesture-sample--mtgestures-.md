@@ -1,35 +1,35 @@
 ---
-title: Ejemplo de gesto de toque de Windows (MTGestures)
-description: En esta sección se describe el ejemplo de gestos táctiles de Windows.
+title: Windows Ejemplo de gesto táctil (MTGestures)
+description: En esta sección se describe el ejemplo Windows Touch Gesture.
 ms.assetid: 04166c9c-5de7-409e-9d5e-dd210a3a3f11
 keywords:
 - Windows Touch, ejemplos de código
 - Windows Touch, código de ejemplo
-- Windows Touch, gestos
-- Windows Touch, ejemplos de gestos
+- Windows Táctil, gestos
+- Windows Touch,Gesture samples
 - Ejemplos de gestos
-- gestos, código de ejemplo
+- gestures,sample code
 - gestos, ejemplos de código
 ms.topic: article
 ms.date: 02/18/2020
-ms.openlocfilehash: 0e01d97e844af37caeb5c33f3cb780601da4629d
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 656b269eae779cd999680e165ba071d983d18526c2e9b873c5a916d61ccdb9f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103788722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110594"
 ---
-# <a name="windows-touch-gesture-sample-mtgestures"></a>Ejemplo de gesto de toque de Windows (MTGestures)
+# <a name="windows-touch-gesture-sample-mtgestures"></a>Windows Ejemplo de gesto táctil (MTGestures)
 
-En esta sección se describe el ejemplo de gestos táctiles de Windows.
+En esta sección se describe el ejemplo Windows Touch Gesture.
 
-En el ejemplo de gestos táctiles de Windows se muestra cómo usar mensajes de movimiento para traducir, girar y escalar un cuadro representado por el Interfaz de dispositivo gráfico (GDI) mediante el control del mensaje de [**WM_GESTURE**](wm-gesture.md) . En la captura de pantalla siguiente se muestra el aspecto del ejemplo cuando se está ejecutando.
+El ejemplo Windows touch gesture muestra cómo usar mensajes de gesto para traducir, girar y escalar un cuadro representado por el Interfaz de dispositivo gráfico (GDI) controlando el mensaje [**WM_GESTURE.**](wm-gesture.md) En la siguiente captura de pantalla se muestra el aspecto del ejemplo cuando se ejecuta.
 
-![captura de pantalla que muestra el ejemplo de gesto de toque de Windows cuando se está ejecutando, con un rectángulo blanco girado y con contorno negro en la pantalla](images/mtgestures.png)
+![captura de pantalla que muestra el ejemplo de gesto táctil de windows cuando se ejecuta, con un rectángulo blanco girado y de contorno negro en la pantalla](images/mtgestures.png)
 
-En este ejemplo, los mensajes de gestos se pasan a un motor de gestos, que después llama a métodos en objetos de dibujo para traducir, girar y escalar un objeto que tiene métodos para controlar estos comandos. Para ayudar a mostrar cómo funciona el ejemplo, tenga en cuenta los pasos para usar el comando TAP de dos dedos para habilitar o deshabilitar las líneas diagonales en el cuadro representado. Un usuario realiza el gesto de puntear dos dedos, que genera un mensaje controlado por el programa. Cuando se controla el mensaje, cambiará un valor booleano para representar las diagonales en el objeto de dibujo y, a continuación, el objeto representará las líneas diagonales.
+En este ejemplo, los mensajes de gesto se pasan a un motor de gestos, que llama a métodos en objetos de dibujo para traducir, girar y escalar un objeto que tiene métodos para controlar estos comandos. Para ayudar a mostrar cómo funciona el ejemplo, tenga en cuenta los pasos para usar el comando pulsar con dos dedos para habilitar o deshabilitar las líneas diagonales en el cuadro representado. Un usuario realiza el gesto de pulsar con dos dedos, que genera un mensaje que controla el programa. Cuando se controla el mensaje, alterna un booleano para representar diagonales en el objeto de dibujo y, a continuación, el objeto representará las líneas diagonales.
 
-En el código siguiente se muestra cómo se pasan mensajes de gesto al motor de gestos desde el método WndProc.
+El código siguiente muestra cómo se pasan los mensajes de gesto al motor de gestos desde el método WndProc.
 
 ```C++
     case WM_GESTURE:
@@ -39,7 +39,7 @@ En el código siguiente se muestra cómo se pasan mensajes de gesto al motor de 
         break;
 ```
 
-En el código siguiente se muestra cómo el motor de gestos controla el comando TAP de dos dedos.
+El código siguiente muestra cómo el motor de gestos controla el comando pulsar con dos dedos.
 
 ```C++
 // Two-finger tap command
@@ -52,13 +52,13 @@ void CMyGestureEngine::ProcessTwoFingerTap(void)
 }
 ```
 
-En el código siguiente se muestra cómo el objeto de dibujo alterna sus diagonales.
+El código siguiente muestra cómo el objeto de dibujo alterna sus diagonales.
 
 ```C++
 void ToggleDrawDiagonals(void){_bDrawDiagonals = !_bDrawDiagonals;}
 ```
 
-En el código siguiente se muestra cómo el objeto representa las líneas diagonales en su método draw.
+El código siguiente muestra cómo el objeto representa líneas diagonales en su método draw.
 
 ```C++
     if(_bDrawDiagonals)
@@ -73,4 +73,4 @@ En el código siguiente se muestra cómo el objeto representa las líneas diagon
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Aplicación de gestos multitáctil (C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/CS), [aplicación de gestos múltiples táctiles (C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/cpp), [ejemplos de Windows Touch](windows-touch-samples.md)
+[Aplicación de gestos multi táctil (C#),](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/CS)Aplicación de gestos multi táctil [(C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/cpp), [Windows touch samples](windows-touch-samples.md)

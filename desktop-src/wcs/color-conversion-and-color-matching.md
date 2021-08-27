@@ -1,51 +1,51 @@
 ---
 title: Conversión de colores y coincidencia de color
-description: El proceso de conversión de colores de un espacio de colores a otro se denomina conversión de color.
+description: El proceso de conversión de colores de un espacio de color a otro se denomina conversión de color.
 ms.assetid: 52f68779-d4d6-4f1e-88a4-f872e9e90054
 keywords:
-- Sistema de color de Windows (WCS), conversión de color
-- WCS (sistema de color de Windows), conversión de color
-- Administración del color de imagen, conversión de color
-- Administración del color, conversión de color
-- colores, conversión de color
-- conversión de color
-- Sistema de color de Windows (WCS), coincidencia de color
-- WCS (sistema de colores de Windows), coincidencia de color
-- Administración del color de imagen, coincidencia de color
-- Administración del color, coincidencia de color
-- colores, coincidencia de color
-- coincidencia de color
-- Sistema de color de Windows (WCS), asignación de colores
-- WCS (sistema de colores de Windows), asignación de colores
-- Administración del color de imagen, asignación de colores
-- Administración del color, asignación de colores
-- colores, asignación de colores
+- Windows Sistema de colores (WCS), conversión de color
+- WCS (Windows de color),conversión de color
+- administración de colores de imagen, conversión de colores
+- administración de colores, conversión de colores
+- colors,color conversion
+- conversión de colores
+- Windows Sistema de colores (WCS), coincidencia de colores
+- WCS (Windows de color), coincidencia de colores
+- administración del color de imagen, coincidencia de colores
+- administración de colores, coincidencia de colores
+- colores, coincidencia de colores
+- coincidencia de colores
+- Windows Sistema de colores (WCS), asignación de colores
+- WCS (Windows de color), asignación de colores
+- administración de colores de imagen, asignación de colores
+- administración de colores, asignación de colores
+- colors,color mapping
 - asignación de colores
 - punto blanco
-- colorants
+- Colorantes
 - corrección gamma
-- espectro
+- Gama
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b74de95238472f58d49c5033a601c6d5458773c8
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 0071e15c2d572c134d61aee7a018b41c8d09507e87963eeeed1488909cdafeba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105721130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110805"
 ---
 # <a name="color-conversion-and-color-matching"></a>Conversión de colores y coincidencia de color
 
-El proceso de conversión de colores de un [espacio de colores](c.md) a otro se denomina conversión de *color*. Todos los colores de un espacio de colores son fijos en relación con el [punto blanco](w.md)del espacio de colores. Dado que el punto blanco de un espacio de colores varía de un dispositivo a otro, un color convertido debe coincidir con su color visualmente más cercano en el espacio de colores de destino. Este proceso se denomina *asignación de colores*.
+El proceso de conversión de colores de un [espacio de colores](c.md) a otro se denomina conversión de *color.* Todos los colores de un espacio de colores se fijan en relación con el punto en blanco [del espacio de colores.](w.md) Puesto que el punto en blanco de un espacio de color varía de un dispositivo a otro, un color convertido debe coincidir con su color visualmente más cercano en el espacio de color de destino. Este proceso se denomina *asignación de colores.*
 
-Por ejemplo, si tiene una imagen digital que ha creado en la pantalla, puede que esté en un espacio de colores RGB dependiente del dispositivo. Si desea imprimirlo en una impresora, debe convertirse en el espacio de colores de la impresora. Dado que es probable que la impresora use un espacio de colores CMYK dependiente del dispositivo, todos los valores RGB se deben convertir a CYMK. Esta es la [conversión de color](c.md). Una vez que los valores se especifican en términos del espacio CYMK, tienen que coincidir con el color más cercano que puede producir la impresora. Esto se denomina asignación de colores o [coincidencia de color](c.md).
+Por ejemplo, si tiene una imagen digital que creó en la pantalla, puede estar en un espacio de color RGB dependiente del dispositivo. Si desea imprimirla en una impresora, debe convertirse en el espacio de color de la impresora. Puesto que la impresora probablemente usa un espacio de colores CONVERT dependiente del dispositivo, todos los valores RGB deben convertirse a CYMK. Se trata de la [conversión de colores](c.md). Una vez especificados los valores en términos del espacio CYMK, deben coincidir con el color más cercano que puede producir la impresora. Esto se denomina asignación de colores o [color que coincide con](c.md).
 
-Tanto la conversión de color como la asignación de colores deben tener en cuenta varios factores específicos del dispositivo. Por ejemplo, los bloques de creación de las imágenes de pantalla son píxeles. Cada píxel tiene un número de bits establecido para almacenar su valor de índice de color o color. El número de bits por píxel depende del tipo de adaptador de pantalla y de pantalla que se use, y del modo en el que se establece el adaptador. La mayoría de los tipos de impresora utiliza diferentes [Colorants](c.md) e imprime en determinadas resoluciones.
+Tanto la conversión de colores como la asignación de colores deben tener en cuenta una serie de factores específicos del dispositivo. Por ejemplo, los bloques de creación de imágenes de pantalla son píxeles. Cada píxel tiene un número establecido de bits para almacenar su valor de índice de color o color. El número de bits por píxel depende del tipo de adaptador para mostrar y mostrar que se usa y del modo en el que se establece el adaptador. La mayoría de los tipos de impresora [usan diferentes colores](c.md) e imprime con resoluciones concretas.
 
-Además, las características de tono físico de un dispositivo suelen ser diferentes en distintos dispositivos. Por ejemplo, cuando los monitores de equipo generan colores, pueden aparecer diferentes de lo que si se hubieran producido en una imprenta. Un factor de corrección, denominado *corrección Gamma*, se usa con frecuencia para compensar tales diferencias.
+Además, las características de tono físico de un dispositivo suelen ser diferentes en distintos dispositivos. Por ejemplo, cuando los monitores de equipo producen colores, pueden parecer diferentes de los que tendrían si se hubieran producido en una impresión. Un factor de corrección, denominado *corrección gamma,* se usa con frecuencia para compensar estas diferencias.
 
-El resultado de estos factores dependientes del dispositivo es que cada dispositivo de color tiene un conjunto determinado de colores que puede generar. Este conjunto de colores se conoce como su *gama*. Para realizar la conversión de colores y la asignación de colores, los colores de una imagen se deben convertir del espacio de colores y la gama del dispositivo de origen en el espacio de colores del dispositivo de destino. Después, se asocian a la gama del dispositivo de destino.
+El resultado de estos factores dependientes del dispositivo es que cada dispositivo de color tiene un conjunto determinado de colores que puede producir. Este conjunto de colores se conoce como *su gama*. Para realizar la conversión de colores y la asignación de colores, los colores de una imagen deben convertirse del espacio de colores y la gama del dispositivo de origen en el espacio de colores del dispositivo de destino. A continuación, se comparan con la gama del dispositivo de destino.
 
  
 

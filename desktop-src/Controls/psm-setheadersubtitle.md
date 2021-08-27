@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PSM_SETHEADERSUBTITLE (Prsht. h)
-description: Establece el texto del subtítulo para el encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o utilizar la \_ macro PropSheet SetHeaderSubTitle.
+title: PSM_SETHEADERSUBTITLE mensaje (Prsht.h)
+description: Establece el texto del subtítulo para el encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o usar la macro PropSheet \_ SetHeaderSubTitle.
 ms.assetid: 6ef3017b-8a20-4d62-a604-135410d8bdf7
 keywords:
-- PSM_SETHEADERSUBTITLE controles de mensajes de Windows
+- PSM_SETHEADERSUBTITLE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d73376b5ed35f20b43c743b31a4a78d3a4fa809
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 20e030b75a933ba7f647f8b3dffa5e45637999d45f3299f8280fd1db3afb9857
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088505"
 ---
-# <a name="psm_setheadersubtitle-message"></a>Mensaje de PSM \_ SETHEADERSUBTITLE
+# <a name="psm_setheadersubtitle-message"></a>Mensaje \_ SETHEADERSUBTITLE de PSM
 
-Establece el texto del subtítulo para el encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o utilizar la macro [**PropSheet \_ SetHeaderSubTitle**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setheadersubtitle) .
+Establece el texto del subtítulo para el encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o usar la macro [**PropSheet \_ SetHeaderSubTitle.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setheadersubtitle)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -49,7 +49,7 @@ Nuevo subtítulo de encabezado.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si especifica la página actual, se volverá a dibujar inmediatamente para mostrar el nuevo subtítulo.
 
@@ -62,11 +62,11 @@ Si especifica la página actual, se volverá a dibujar inmediatamente para mostr
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Prsht. h</dt> </dl>      |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl>      |
 | Nombres Unicode y ANSI<br/>   | **PSM \_ SETHEADERSUBTITLEW** (Unicode) y **PSM \_ SETHEADERSUBTITLEA** (ANSI)<br/> |
 
 

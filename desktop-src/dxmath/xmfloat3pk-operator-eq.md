@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: fbbeb1c05cdf9480d850e03b2291495d21b05a88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d010f4981103da24657458d269c26a4176f334bb
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360494"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122621931"
 ---
 # <a name="xmfloat3pk-operator--operators"></a>Operador XMFLOAT3PK = operadores
 
 Asigna datos de componentes vectoriales a la instancia actual de `XMFLOAT3PK` .
 
-Asigna datos de componentes vectoriales a la instancia actual de [**XMFLOAT3PK**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk).
+Asigna datos de componentes vectoriales a la instancia actual de [**XMFLOAT3PK.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk)
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -30,19 +30,19 @@ Asigna datos de componentes vectoriales a la instancia actual de [**XMFLOAT3PK**
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Operator</th>
-<th style="text-align: left;">Descripción</th>
+<th >Operador</th>
+<th >Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-operator-assign(uint32_t)"><strong>XMFLOAT3PK:: Operator = (const uint32_t)</strong></a></td>
-<td style="text-align: left;">Asigna los datos del componente de vector empaquetados en una instancia de <code>uint32_t</code> a la instancia actual de <code>XMFLOAT3PK</code> . <br/> Este operador asigna los datos del componente de vector empaquetados en una instancia de <code>uint64_t</code> a la instancia actual de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a>. <br/>
+<td ><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-operator-assign(uint32_t)"><strong>XMFLOAT3PK::operator = (const uint32_t)</strong></a></td>
+<td >Asigna los datos del componente vectorial empaquetados en una instancia de <code>uint32_t</code> a la instancia actual de <code>XMFLOAT3PK</code> . <br/> Este operador asigna los datos del componente vectorial empaquetados en una instancia de a la instancia <code>uint64_t</code> actual de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a>. <br/>
 <blockquote>
 [!Note]<br />
 Este operador solo está disponible en C++.
@@ -50,8 +50,8 @@ Este operador solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-operator-assign(xmfloat3pk__)"><strong>XMFLOAT3PK:: Operator = (const XMFLOAT3PK&)</strong></a></td>
-<td style="text-align: left;">Asigna los datos del componente de vector de una instancia de <code>XMFLOAT3PK</code> a la instancia actual de <code>XMFLOAT3PK</code> . <br/> Este operador asigna los datos del componente de vector de una instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> a la instancia actual de <code>XMFLOAT3PK</code> . <br/>
+<td ><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-operator-assign(xmfloat3pk__)"><strong>XMFLOAT3PK::operator = (const XMFLOAT3PK&)</strong></a></td>
+<td >Asigna los datos del componente vectorial de una instancia de <code>XMFLOAT3PK</code> a la instancia actual de <code>XMFLOAT3PK</code> . <br/> Este operador asigna los datos del componente vectorial de una instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> a la instancia actual de <code>XMFLOAT3PK</code> . <br/>
 <blockquote>
 [!Note]<br />
 Este operador solo está disponible en C++.

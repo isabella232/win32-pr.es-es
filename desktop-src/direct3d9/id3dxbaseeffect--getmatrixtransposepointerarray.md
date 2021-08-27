@@ -1,7 +1,7 @@
 ---
 description: Obtiene una matriz de punteros a matrices transpuestas.
 ms.assetid: b859ff2f-cf62-4619-b8be-b940fa0513b3
-title: 'ID3DXBaseEffect:: GetMatrixTransposePointerArray (método) (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::GetMatrixTransposePointerArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: e69c01395582691e6fdd0a695991ff1f726a362b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 42014ed5a829f6dc0d45d7fe0dbcc96f52e945d47ae02b8effd217329e92bda8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118835"
 ---
-# <a name="id3dxbaseeffectgetmatrixtransposepointerarray-method"></a>ID3DXBaseEffect:: GetMatrixTransposePointerArray (método)
+# <a name="id3dxbaseeffectgetmatrixtransposepointerarray-method"></a>Método ID3DXBaseEffect::GetMatrixTransposePointerArray
 
 Obtiene una matriz de punteros a matrices transpuestas.
 
@@ -42,28 +42,28 @@ HRESULT GetMatrixTransposePointerArray(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*ppMatrix* \[ enuncia\]
+*ppMatrix* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\*\***
 
-Matriz de punteros a matrices transpuestas. Vea [**D3DXMATRIX**](d3dxmatrix.md).
+Matriz de punteros a matrices transpuestas. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 </dd> <dt>
 
-*Recuento* \[ de\]
+*Recuento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de matrices de la matriz.
 
@@ -73,13 +73,13 @@ Número de matrices de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una matriz transpuesta contiene datos principales de columna; es decir, cada vector está contenido en una columna.
 
-Si las matrices de destino son mayores que las matrices de origen, solo se rellenarán los componentes de la parte superior izquierda de cada matriz de destino y los demás componentes de la matriz de destino se establecerán en cero.
+Si las matrices de destino son mayores que las matrices de origen, solo se rellenarán los componentes superiores izquierdos de cada matriz de destino y los componentes restantes de la matriz de destino se establecerán en cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ Si las matrices de destino son mayores que las matrices de origen, solo se relle
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

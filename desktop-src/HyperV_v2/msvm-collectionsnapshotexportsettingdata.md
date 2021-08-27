@@ -1,7 +1,7 @@
 ---
-description: Exportar los datos de configuración que se van a pasar al método ExportSnapshot de la \_ clase MSVM CollectionSnapshotService.
+description: Exporte los datos de configuración que se pasarán al método ExportSnapshot de la \_ clase CollectionSnapshotService de Msvm.
 ms.assetid: 03b448ed-72bc-485e-bb31-4445c53baa1c
-title: Msvm_CollectionSnapshotExportSettingData (clase)
+title: Msvm_CollectionSnapshotExportSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3e146fe2e2af17223e792d86cff16bf1c4149dd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd148b7ea73bf7c2eaff7f648c7084c37a8669779515749611c675e7f5564d1c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130635"
 ---
-# <a name="msvm_collectionsnapshotexportsettingdata-class"></a>MSVM \_ CollectionSnapshotExportSettingData (clase)
+# <a name="msvm_collectionsnapshotexportsettingdata-class"></a>Clase Msvm \_ CollectionSnapshotExportSettingData
 
-Exportar los datos de configuración que se van a pasar al método ExportSnapshot de la clase [**MSVM \_ CollectionSnapshotService**](msvm-collectionsnapshotservice.md) .
+Exporte los datos de configuración que se pasarán al método ExportSnapshot de la [**\_ clase CollectionSnapshotService de Msvm.**](msvm-collectionsnapshotservice.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -43,26 +43,26 @@ class Msvm_CollectionSnapshotExportSettingData : CIM_SettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ CollectionSnapshotExportSettingData** tiene estos tipos de miembros:
+La **clase \_ CollectionSnapshotExportSettingData de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ CollectionSnapshotExportSettingData** tiene estas propiedades.
+La **clase Msvm \_ CollectionSnapshotExportSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **BackupIntent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica la intención de usar los conjuntos de copia de seguridad exportados:
+Indica la intención de cómo se usarían los conjuntos de copia de seguridad exportados:
 
 <dt>
 
@@ -73,7 +73,7 @@ Indica la intención de usar los conjuntos de copia de seguridad exportados:
 
 </dt> <dd>
 
-Todos los conjuntos de copia de seguridad completos y diferenciales exportados se conservarán tal como están.
+Todos los conjuntos de copia de seguridad completos y diferenciales exportados se conservarían tal y como están.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Todos los conjuntos de copia de seguridad completos y diferenciales exportados s
 
 </dt> <dd>
 
-Los conjuntos de copia de seguridad completos y diferenciales exportados se combinarán para sintetizar los conjuntos de copia de seguridad completos.
+Los conjuntos de copia de seguridad completos y diferenciales exportados se combinarían para sintetizar conjuntos de copia de seguridad completos.
 
 </dd> </dl>
 
@@ -96,10 +96,10 @@ Los conjuntos de copia de seguridad completos y diferenciales exportados se comb
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si es **true**, el almacenamiento de la máquina virtual se copiará cuando se exporte la máquina virtual. En caso contrario, **false.**
+Si **es true,** el almacenamiento de la máquina virtual se copiará cuando se exporte la máquina virtual. De lo contrario, **false.**
 
 </dd> <dt>
 
@@ -109,10 +109,10 @@ Si es **true**, el almacenamiento de la máquina virtual se copiará cuando se e
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Base para la exportación diferencial. Se trata de una ruta de acceso a una instancia de [**MSVM \_ ReferencePointCollection**](msvm-referencepointcollection.md) que representa el punto de referencia, o la ruta de acceso a una instancia de [**MSVM \_ SnapshotCollection**](msvm-snapshotcollection.md) que representa la instantánea que se va a usar como base para la exportación diferencial.
+Base para la exportación diferencial. Se trata de una ruta de acceso a una instancia [**\_ de Msvm ReferencePointCollection**](msvm-referencepointcollection.md) que representa el punto de referencia, o bien una ruta de acceso a una instancia de [**\_ SnapshotCollection de Msvm**](msvm-snapshotcollection.md) que representa la instantánea que se va a usar como base para la exportación diferencial.
 
 </dd> </dl>
 
@@ -122,10 +122,10 @@ Base para la exportación diferencial. Se trata de una ruta de acceso a una inst
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -134,7 +134,7 @@ Base para la exportación diferencial. Se trata de una ruta de acceso a una inst
 
 <dl> <dt>
 
-[**SettingData de CIM \_**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> </dl>
 
  

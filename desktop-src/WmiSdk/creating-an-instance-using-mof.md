@@ -1,28 +1,28 @@
 ---
-description: Puede declarar una instancia básica de una clase en el servicio de administración de Windows mediante Managed Object Format (MOF). También puede invalidar los valores predeterminados para una instancia de. Para obtener más información, vea establecer un valor de propiedad de instancia.
+description: Puede declarar una instancia básica de una clase en el servicio Windows Management mediante Managed Object Format (MOF). También puede invalidar los valores predeterminados de una instancia de . Para obtener más información, vea Establecer un valor de propiedad de instancia.
 ms.assetid: 12eda062-9614-455d-ae99-7706c685137b
 ms.tgt_platform: multiple
-title: Crear una instancia mediante MOF
+title: Creación de una instancia mediante MOF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5078c5fcddaab4e8437a33e8cb3210d515360fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05290fd02de80a905e74eeddeb1a04f316901209a97e0e298d038ac2f8888552
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097325"
 ---
-# <a name="creating-an-instance-using-mof"></a>Crear una instancia mediante MOF
+# <a name="creating-an-instance-using-mof"></a>Creación de una instancia mediante MOF
 
-Puede declarar una instancia básica de una clase en el servicio de administración de Windows mediante Managed Object Format (MOF). También puede invalidar los valores predeterminados para una instancia de. Para obtener más información, vea [establecer un valor de propiedad de instancia](#setting-an-instance-property-value).
+Puede declarar una instancia básica de una clase en el servicio Windows Management mediante Managed Object Format (MOF). También puede invalidar los valores predeterminados de una instancia de . Para obtener más información, vea [Establecer un valor de propiedad de instancia.](#setting-an-instance-property-value)
 
 En el procedimiento siguiente se describe cómo declarar una instancia básica de una clase mediante código MOF.
 
 **Para declarar una instancia básica de una clase mediante código MOF**
 
-1.  Use la **instancia de** Keywords seguida del nombre de clase, llaves y un punto y coma.
+1.  Use la **instancia de palabras** clave seguidas del nombre de clase, las llaves y un punto y coma.
 
-    En el ejemplo de código siguiente se muestra cómo declarar una instancia de una clase.
+    En el ejemplo de código siguiente se muestra cómo declarar una instancia de una clase .
 
     ```mof
     instance of ClassName
@@ -34,13 +34,13 @@ En el procedimiento siguiente se describe cómo declarar una instancia básica d
 
 2.  Cuando termine, inserte el código MOF en el repositorio WMI mediante el compilador MOF.
 
-    Para obtener más información, vea [compilar archivos MOF](compiling-mof-files.md).
+    Para obtener más información, [vea Compilar archivos MOF.](compiling-mof-files.md)
 
-Una instancia de una clase incluye todas las propiedades de la clase. Si la clase es una clase derivada, las instancias de incluyen las propiedades que pertenecen a todas las clases que se encuentran en una posición superior en la jerarquía. Cada clase de la que se crea una instancia tiene una o más propiedades de clave. No se puede crear una instancia de con más de 256 claves.
+Una instancia de una clase incluye todas las propiedades de la clase . Si la clase es una clase derivada, las instancias incluyen las propiedades que pertenecen a todas las clases superiores de la jerarquía. Cada clase a partir de la que se crea una instancia tiene una o varias propiedades clave. No se puede crear una instancia con más de 256 claves.
 
 ## <a name="setting-an-instance-property-value"></a>Establecer un valor de propiedad de instancia
 
-Dado que las propiedades de los tipos fuertemente de WMI, no se pueden modificar los tipos de propiedad. Sin embargo, puede establecer valores de propiedad en instancias de. Cuando una clase asigna un valor predeterminado a una propiedad, WMI asigna el valor predeterminado a cada instancia. Puede invalidar este valor en la declaración de instancia.
+Dado que WMI fuertemente los tipos de propiedades, no se pueden modificar los tipos de propiedad. Sin embargo, puede establecer valores de propiedad en instancias de . Cuando una clase asigna un valor predeterminado a una propiedad, WMI asigna el valor predeterminado a cada instancia. Puede invalidar este valor en la declaración de instancia.
 
 En el procedimiento siguiente se describe cómo establecer un valor de propiedad o sobrescribir un valor predeterminado mediante código MOF.
 
@@ -57,13 +57,13 @@ En el procedimiento siguiente se describe cómo establecer un valor de propiedad
     };
     ```
 
-    WMI no requiere que se establezca ninguna propiedad durante la creación de la instancia. La excepción es cualquier propiedad marcada con el calificador de [**clave**](key-qualifier.md) . Dado que WMI utiliza propiedades de clave para identificar de forma única las instancias, debe establecer todas las propiedades clave a medida que se encuentren. Por el contrario, no debe establecer una propiedad del sistema en una declaración de instancia. En su lugar, WMI asigna los valores adecuados a una propiedad del sistema cuando es necesario.
+    WMI no requiere que establezca ninguna propiedad durante la creación de la instancia. La excepción es cualquier propiedad marcada con el [**calificador Key.**](key-qualifier.md) Dado que WMI usa propiedades de clave para identificar de forma única las instancias, debe establecer todas las propiedades de clave a medida que las encuentre. Por el contrario, no debe establecer una propiedad del sistema en una declaración de instancia. En su lugar, WMI asigna los valores adecuados a una propiedad del sistema cuando es necesario.
 
 2.  Cuando termine, inserte el código MOF en el repositorio WMI con una llamada al compilador MOF.
 
-    Para obtener más información, vea [compilar archivos MOF](compiling-mof-files.md).
+    Para obtener más información, [vea Compilar archivos MOF.](compiling-mof-files.md)
 
-En los ejemplos de código siguientes se muestra cómo una instancia de especifica los datos para las propiedades definidas por una clase.
+En los ejemplos de código siguientes se muestra cómo una instancia de especifica datos para las propiedades definidas por una clase.
 
 ``` syntax
 class MyClass 
@@ -81,7 +81,7 @@ instance of MyClass
 };
 ```
 
-En el ejemplo anterior, la clase define tres propiedades: una cadena de caracteres, un entero con signo de 32 bits y un entero de 32 bits sin signo. La instancia de proporciona valores de datos para cada una de estas propiedades.
+En el ejemplo anterior, la clase define tres propiedades: una cadena de caracteres, un entero de 32 bits con signo y un entero de 32 bits sin signo. La instancia proporciona valores de datos para cada una de estas propiedades.
 
  
 

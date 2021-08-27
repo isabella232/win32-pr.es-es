@@ -1,7 +1,7 @@
 ---
-description: Adjunta dos representaciones de superficie en modo kernel.
+description: Asocia dos representaciones de superficie en modo kernel.
 ms.assetid: f1b1859f-8b62-4385-9e8a-296086446fe7
-title: Función NtGdiDdAttachSurface (Ntgdi. h)
+title: Función NtGdiDdAttachSurface (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: a3d099e7b3a3106e0e1e4285b37d2ea205baf3d5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8ec07f539cfa2a99338d8366f10f7c3d79dbdd5ef26a6de0ee0296941e2c84ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088035"
 ---
-# <a name="ntgdiddattachsurface-function"></a>NtGdiDdAttachSurface función)
+# <a name="ntgdiddattachsurface-function"></a>Función NtGdiDdAttachSurface
 
-\[Esta función está sujeta a cambios en cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades para interactuar directamente con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios en el sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
-Adjunta dos representaciones de superficie en modo kernel.
+Asocia dos representaciones de superficie en modo kernel.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,41 +45,41 @@ BOOL APIENTRY NtGdiDdAttachSurface(
 
 <dl> <dt>
 
-*hSurfaceFrom* \[ de\]
+*hSurfaceFrom* \[ En\]
 </dt> <dd>
 
-Identificador del objeto de superficie de modo kernel que será el punto de inicio de los nuevos datos adjuntos.
+Identificador del objeto de superficie en modo kernel que será el punto inicial de los nuevos datos adjuntos.
 
 </dd> <dt>
 
-*hSurfaceTo* \[ de\]
+*hSurfaceTo* \[ En\]
 </dt> <dd>
 
-Identificador del objeto de superficie de modo kernel que será el punto final de los nuevos datos adjuntos.
+Controle el objeto de superficie en modo kernel que será el punto final de los nuevos datos adjuntos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**NtGdiDdAttachSurface** devuelve uno de los siguientes:
+**NtGdiDdAttachSurface** devuelve una de las siguientes opciones:
 
 
 
 | Código devuelto                                                                          | Descripción                             |
 |--------------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <dt>**REALES**</dt> </dl>  | La llamada de función se realizó correctamente.<br/> |
-| <dl> <dt>**ES**</dt> </dl> | Error en la llamada de función.<br/>    |
+| <dl> <dt>**Verdad**</dt> </dl>  | La llamada de función se ha realiza correctamente.<br/> |
+| <dl> <dt>**Falso**</dt> </dl> | Error en la llamada de función.<br/>    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Vea el kit de desarrollo de software (SDK) de DirectDraw y el kit de desarrollo de controladores (DDK) para obtener una descripción completa de los datos adjuntos de la superficie.
+Consulte el kit de desarrollo de software (SDK) de DirectDraw y el Kit de desarrollo de controladores (DDK) para obtener una descripción completa de los datos adjuntos de la superficie.
 
 > [!Note]  
-> Como con otros datos adjuntos de la superficie, los datos adjuntos resultantes son unidireccionales. Después de llamar a esta función, *hSurfaceTo* no se adjuntará a *hSurfaceFrom*.
+> Al igual que con otros datos adjuntos de superficie, los datos adjuntos resultantes son un únicos. Después de llamar a esta función, *hSurfaceTo* no se adjuntará a *hSurfaceFrom*.
 
  
 
@@ -91,7 +91,7 @@ Vea el kit de desarrollo de software (SDK) de DirectDraw y el kit de desarrollo 
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -99,7 +99,7 @@ Vea el kit de desarrollo de software (SDK) de DirectDraw y el kit de desarrollo 
 
 <dl> <dt>
 
-[Compatibilidad con clientes de nivel inferior de gráficos](-dxgkernel-low-level-client-support.md)
+[Compatibilidad con clientes de bajo nivel de gráficos](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: NOP-PS
-description: No se realiza ninguna operación. | NOP-PS
+title: nop - ps
+description: No se realiza ninguna operación. | nop - ps
 ms.assetid: db2a383e-9a4d-4409-8801-483622c124ae
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,41 +9,41 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 61c72ca8adcff50e40be9fa73eb70d41a185af06
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f9aaa485026b9aac3cf3714ba50b336e0075588e2662dd522178cec11f227f90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104547622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118335"
 ---
-# <a name="nop---ps"></a>NOP-PS
+# <a name="nop---ps"></a>nop - ps
 
 No se realiza ninguna operación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| instrucción |
+| Nop |
 |-----|
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| instrucción                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
+| Nop                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 
 
 
  
 
-Esta instrucción realiza una operación no operativa o no. La sintaxis para llamar a este método es la siguiente:
+Esta instrucción realiza una operación no operativa o ninguna. La sintaxis para llamarla es la siguiente:
 
 
 ```

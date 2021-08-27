@@ -1,10 +1,10 @@
 ---
-title: Enumeración DRM_ATTR_DATATYPE (wmdrmsdk. h)
-description: La \_ \_ enumeración del tipo de datos DRM ATTR define los tipos de datos utilizados para los atributos y propiedades de DRM.
+title: DRM_ATTR_DATATYPE enumeración (Wmdrmsdk.h)
+description: La \_ enumeración \_ DATATYPE DE ATTR de DRM define los tipos de datos usados para los atributos y propiedades de DRM.
 ms.assetid: ccad16e2-475d-4cc7-b773-f17038d2754a
 keywords:
-- DRM_ATTR_DATATYPE enumeración formato de Windows Media
-- enumeración Windows Media Format
+- DRM_ATTR_DATATYPE enumeración windows Media Format
+- enumeración windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e684ba1c09a86c65a13adbd189bb185f65598b77
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 09f55c3d218aa86c33f699d4cb762e752a0bf4e1029e8ca42eee797aaf8ac721
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110535"
 ---
-# <a name="drm_attr_datatype-enumeration"></a>\_ \_ Enumeración de tipos de tipo de texto DRM ATTR
+# <a name="drm_attr_datatype-enumeration"></a>Enumeración \_ DATATYPE de ATTR de DRM \_
 
-La enumeración del **\_ \_ tipo de datos DRM ATTR** define los tipos de datos utilizados para los atributos y propiedades de DRM.
+La **\_ enumeración \_ DATATYPE DE ATTR de DRM** define los tipos de datos usados para los atributos y propiedades de DRM.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -47,52 +47,52 @@ typedef enum DRM_ATTR_DATATYPE {
 
 <dl> <dt>
 
-<span id="DRM_TYPE_DWORD"></span><span id="drm_type_dword"></span>**tipo de DRM \_ \_ DWORD**
+<span id="DRM_TYPE_DWORD"></span><span id="drm_type_dword"></span>**DRM \_ TYPE \_ DWORD**
 </dt> <dd>
 
 La propiedad es un valor **DWORD** de 4 bytes.
 
 </dd> <dt>
 
-<span id="DRM_TYPE_STRING"></span><span id="drm_type_string"></span>**\_cadena de tipo DRM \_**
+<span id="DRM_TYPE_STRING"></span><span id="drm_type_string"></span>**CADENA \_ DE TIPO \_ DRM**
 </dt> <dd>
 
 La propiedad es una cadena Unicode terminada en NULL.
 
 </dd> <dt>
 
-<span id="DRM_TYPE_BINARY"></span><span id="drm_type_binary"></span>**tipo de DRM \_ \_ binario**
+<span id="DRM_TYPE_BINARY"></span><span id="drm_type_binary"></span>**DRM \_ TYPE \_ BINARY**
 </dt> <dd>
 
 La propiedad es una matriz de bytes.
 
 </dd> <dt>
 
-<span id="DRM_TYPE_BOOL"></span><span id="drm_type_bool"></span>**tipo de DRM \_ \_ bool**
+<span id="DRM_TYPE_BOOL"></span><span id="drm_type_bool"></span>**DRM \_ TYPE \_ BOOL**
 </dt> <dd>
 
 La propiedad es un valor booleano de 4 bytes.
 
 </dd> <dt>
 
-<span id="DRM_TYPE_QWORD"></span><span id="drm_type_qword"></span>**tipo de DRM \_ \_ QWord**
+<span id="DRM_TYPE_QWORD"></span><span id="drm_type_qword"></span>**TIPO DRM \_ \_ QWORD**
 </dt> <dd>
 
-La propiedad es un valor **QWord** de 8 bytes.
+La propiedad es un valor **QWORD** de 8 bytes.
 
 </dd> <dt>
 
-<span id="DRM_TYPE_WORD"></span><span id="drm_type_word"></span>**tipo DRM de \_ \_ Word**
+<span id="DRM_TYPE_WORD"></span><span id="drm_type_word"></span>**PALABRA \_ DE TIPO \_ DRM**
 </dt> <dd>
 
-La propiedad es un valor de **palabra** de 2 bytes.
+La propiedad es un valor **WORD** de 2 bytes.
 
 </dd> <dt>
 
-<span id="DRM_TYPE_GUID"></span><span id="drm_type_guid"></span>**\_GUID de tipo DRM \_**
+<span id="DRM_TYPE_GUID"></span><span id="drm_type_guid"></span>**GUID \_ DE TIPO \_ DRM**
 </dt> <dd>
 
-La propiedad es un valor de GUID de 128 bits (6 bytes).
+La propiedad es un valor GUID de 128 bits (6 bytes).
 
 </dd> </dl>
 
@@ -102,7 +102,7 @@ La propiedad es un valor de GUID de 128 bits (6 bytes).
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

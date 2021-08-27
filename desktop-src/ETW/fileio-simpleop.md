@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de operación de archivo simples. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para eventos de operación de archivo simples. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 5b6374e0-b39a-4d5a-acbd-25b410f1ba52
-title: FileIo_SimpleOp (clase)
+title: FileIo_SimpleOp clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f7ff09830653278c9b37cfefa81b182b0f1dc054
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 246bf356786b1b884380faa1feaad11db4d3f406a296d3292c571ff02698f454
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130575"
 ---
-# <a name="fileio_simpleop-class"></a>\_Clase FileIo SimpleOp
+# <a name="fileio_simpleop-class"></a>Clase FileIo \_ SimpleOp
 
-Esta clase es la clase de tipo de evento para los eventos de operación de archivo simples.
+Esta clase es la clase de tipo de evento para eventos de operación de archivo simples.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,83 +44,83 @@ class FileIo_SimpleOp : FileIo
 
 ## <a name="members"></a>Miembros
 
-La clase **FileIo \_ SimpleOp** tiene estos tipos de miembros:
+La **clase FileIo \_ SimpleOp** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **FileIo \_ SimpleOp** tiene estas propiedades.
+La **clase FileIo \_ SimpleOp** tiene estas propiedades.
 
 <dl> <dt>
 
 **FileKey**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), puntero
+Calificadores: WmiDataId(4), Pointer
 </dt> </dl>
 
-Para determinar el nombre de archivo, haga coincidir el valor de esta propiedad con la propiedad **FileObject** de un evento de [**\_ nombre FileIo**](fileio-name.md) .
+Para determinar el nombre de archivo, haga coincidir el valor de esta propiedad con la **propiedad FileObject** de un [**evento FileIo \_ Name.**](fileio-name.md)
 
 </dd> <dt>
 
 **FileObject**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3), puntero
+Calificadores: WmiDataId(3), Pointer
 </dt> </dl>
 
-Identificador que se puede utilizar para correlacionar las operaciones con la misma instancia de objeto de archivo abierta entre los eventos de creación y cierre de archivo.
+Identificador que se puede usar para correlacionar las operaciones con la misma instancia de objeto de archivo abierta entre eventos de creación y cierre de archivos.
 
 </dd> <dt>
 
 **IrpPtr**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Paquete de solicitud de e/s. Esta propiedad identifica la actividad de e/s.
+Paquete de solicitud de E/S. Esta propiedad identifica la actividad de E/S.
 
 </dd> <dt>
 
 **TTID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), puntero
+Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Identificador de subproceso del subproceso que está realizando la operación.
+Identificador de subproceso del subproceso que realiza la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El evento de limpieza se registra cuando se cierra el último identificador del archivo. El evento Close especifica que se va a liberar un objeto de archivo. El evento Flush especifica cuándo se vacían por completo los búferes de archivo en el disco.
+El evento Cleanup se registra cuando se cierra el último identificador del archivo. El evento Close especifica que se está liberando un objeto de archivo. El evento Flush especifica cuándo los búferes de archivo se vacían completamente en el disco.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -128,8 +128,8 @@ El evento de limpieza se registra cuando se cierra el último identificador del 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

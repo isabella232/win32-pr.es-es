@@ -1,9 +1,9 @@
 ---
-title: Mensaje de UDM_SETPOS32 (commctrl. h)
-description: Establece la posición de un control de flechas con una precisión de 32 bits.
+title: UDM_SETPOS32 mensaje (Commctrl.h)
+description: Establece la posición de un control de arriba a abajo con una precisión de 32 bits.
 ms.assetid: a337f2a1-0e3d-4ff4-a224-57b7f25c4bd0
 keywords:
-- UDM_SETPOS32 controles de mensajes de Windows
+- UDM_SETPOS32 controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0153305bb535a79dbed59e8d42a7c25157c30cd1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83d8dee48c580df72a32bb2072b00cc2dfbdf38b386825d686e8bc8510ba47e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088425"
 ---
-# <a name="udm_setpos32-message"></a>\_Mensaje SETPOS32 UDM
+# <a name="udm_setpos32-message"></a>Mensaje \_ SETPOS32 de UDM
 
-Establece la posición de un control de flechas con una precisión de 32 bits.
+Establece la posición de un control de arriba a abajo con una precisión de 32 bits.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,7 +35,7 @@ Establece la posición de un control de flechas con una precisión de 32 bits.
 *lParam* 
 </dt> <dd>
 
-Variable de tipo Integer que especifica la nueva posición del control de flechas. Si el parámetro está fuera del intervalo especificado del control, *lParam* se establece en el valor válido más próximo.
+Variable de tipo entero que especifica la nueva posición para el control de arriba a abajo. Si el parámetro está fuera del intervalo especificado del control, *lParam* se establece en el valor válido más cercano.
 
 </dd> </dl>
 
@@ -47,11 +47,11 @@ Devuelve la posición anterior.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

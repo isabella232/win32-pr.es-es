@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_SETCALLBACKMASK (commctrl. h)
-description: Cambia la máscara de devolución de llamada de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la \_ macro SetCallbackMask de ListView.
+title: LVM_SETCALLBACKMASK mensaje (Commctrl.h)
+description: Cambia la máscara de devolución de llamada para un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro ListView \_ SetCallbackMask.
 ms.assetid: d7828bab-9897-408c-99ca-fad42b431be8
 keywords:
-- LVM_SETCALLBACKMASK controles de mensajes de Windows
+- LVM_SETCALLBACKMASK controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef6dd46228c4e4aeada30f469a77f9e67aff3a37
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79e33b106eb0c59f83e40b9f170dd017fcdda412072ed51a26572fcf368f5215
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088855"
 ---
-# <a name="lvm_setcallbackmask-message"></a>\_Mensaje SETCALLBACKMASK LVM
+# <a name="lvm_setcallbackmask-message"></a>Mensaje \_ SETCALLBACKMASK de LVM
 
-Cambia la máscara de devolución de llamada de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetCallbackMask de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setcallbackmask) .
+Cambia la máscara de devolución de llamada para un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**ListView \_ SetCallbackMask.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setcallbackmask)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,17 +32,17 @@ Cambia la máscara de devolución de llamada de un control de vista de lista. Pu
 *wParam* 
 </dt> <dd>
 
-Valor de la máscara de devolución de llamada. Los bits de la máscara indican los Estados o las imágenes del elemento para los que la aplicación almacena los datos de estado actuales. Este valor puede ser cualquier combinación de las siguientes constantes:
+Valor de la máscara de devolución de llamada. Los bits de la máscara indican los estados o imágenes de los elementos para los que la aplicación almacena los datos de estado actuales. Este valor puede ser cualquier combinación de las siguientes constantes:
 
 
 
-| Value                                                                                                                                                                           | Significado                                                                                            |
+| Valor                                                                                                                                                                           | Significado                                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| <span id="LVIS_CUT"></span><span id="lvis_cut"></span><dl> <dt>**LVIS \_ cortar**</dt> </dl>                                  | El elemento está marcado para una operación de cortar y pegar.<br/>                                       |
+| <span id="LVIS_CUT"></span><span id="lvis_cut"></span><dl> <dt>**LVIS \_ CUT**</dt> </dl>                                  | El elemento está marcado para una operación de cortar y pegar.<br/>                                       |
 | <span id="LVIS_DROPHILITED"></span><span id="lvis_drophilited"></span><dl> <dt>**LVIS \_ DROPHILITED**</dt> </dl>          | El elemento se resalta como un destino de arrastrar y colocar.<br/>                                      |
-| <span id="LVIS_FOCUSED"></span><span id="lvis_focused"></span><dl> <dt>**LVIS \_ centrado**</dt> </dl>                      | El elemento tiene el foco.<br/>                                                                 |
-| <span id="LVIS_SELECTED"></span><span id="lvis_selected"></span><dl> <dt>**LVIS \_ seleccionado**</dt> </dl>                   | El elemento está seleccionado. <br/>                                                                  |
-| <span id="LVIS_OVERLAYMASK"></span><span id="lvis_overlaymask"></span><dl> <dt>**LVIS \_ OVERLAYMASK**</dt> </dl>          | La aplicación almacena el índice de la lista de imágenes de la imagen de superposición actual para cada elemento.<br/> |
+| <span id="LVIS_FOCUSED"></span><span id="lvis_focused"></span><dl> <dt>**LVIS \_ CENTRADO**</dt> </dl>                      | El elemento tiene el foco.<br/>                                                                 |
+| <span id="LVIS_SELECTED"></span><span id="lvis_selected"></span><dl> <dt>**LVIS \_ SELECCIONADO**</dt> </dl>                   | El elemento está seleccionado. <br/>                                                                  |
+| <span id="LVIS_OVERLAYMASK"></span><span id="lvis_overlaymask"></span><dl> <dt>**SUPERPOSICIÓN \_ DE LVISMASK**</dt> </dl>          | La aplicación almacena el índice de la lista de imágenes de la imagen superpuesta actual para cada elemento.<br/> |
 | <span id="LVIS_STATEIMAGEMASK"></span><span id="lvis_stateimagemask"></span><dl> <dt>**LVIS \_ STATEIMAGEMASK**</dt> </dl> | La aplicación almacena el índice de la lista de imágenes de la imagen de estado actual para cada elemento. <br/>  |
 
 
@@ -56,15 +56,15 @@ Valor de la máscara de devolución de llamada. Los bits de la máscara indican 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La *máscara de devolución de llamada* de un control de vista de lista es un conjunto de marcadores de bits que especifican los Estados del elemento para los que la aplicación, en lugar del control, almacena los datos actuales. La máscara de devolución de llamada se aplica a todos los elementos del control, a diferencia de la designación del elemento de devolución de llamada, que se aplica a un elemento específico. De forma predeterminada, la máscara de devolución de llamada es cero, lo que significa que el control de vista de lista almacena toda la información de estado de los elementos. Después de crear un control de vista de lista e inicializar sus elementos, puede enviar el mensaje **LVM \_ SETCALLBACKMASK** para cambiar la máscara de devolución de llamada. Para recuperar la máscara de devolución de llamada actual, envíe el mensaje [**LVM \_ GETCALLBACKMASK**](lvm-getcallbackmask.md) .
+La *máscara de devolución* de llamada de un control de vista de lista es un conjunto de marcas de bits que especifican los estados de elemento para los que la aplicación, en lugar del control , almacena los datos actuales. La máscara de devolución de llamada se aplica a todos los elementos del control, a diferencia de la designación del elemento de devolución de llamada, que se aplica a un elemento específico. La máscara de devolución de llamada es cero de forma predeterminada, lo que significa que el control list-view almacena toda la información de estado del elemento. Después de crear un control de vista de lista e inicializar sus elementos, puede enviar el mensaje **LVM \_ SETCALLBACKMASK** para cambiar la máscara de devolución de llamada. Para recuperar la máscara de devolución de llamada actual, envíe el [**mensaje \_ LVM GETCALLBACKMASK.**](lvm-getcallbackmask.md)
 
-Para obtener más información sobre las imágenes de superposición y las imágenes de estado, vea [agregar List-View listas de imágenes](using-list-view-controls.md).
+Para obtener más información sobre las imágenes de superposición y las imágenes de estado, vea [Adding List-View Image Lists](using-list-view-controls.md).
 
-Para obtener más información sobre las devoluciones de llamada de vista de lista, vea [elementos de devolución de llamada y máscara de devolución de llamada](list-view-controls-overview.md).
+Para obtener más información sobre las devoluciones de llamada de vista de lista, vea Elementos de devolución de [llamada y máscara de devolución de llamada](list-view-controls-overview.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,9 +72,9 @@ Para obtener más información sobre las devoluciones de llamada de vista de lis
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

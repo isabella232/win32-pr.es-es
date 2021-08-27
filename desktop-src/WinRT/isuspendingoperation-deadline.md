@@ -1,7 +1,7 @@
 ---
-description: Obtiene el tiempo restante antes de que continúe una operación de suspensión de aplicación retrasada.
+description: Obtiene el tiempo restante antes de que continúe una operación de suspensión de aplicaciones retrasada.
 ms.assetid: A90347F3-75CB-4EEB-930D-30882F43D192
-title: ISuspendingOperation::D propiedad eadline (Windows. ApplicationModel. h)
+title: Propiedad ISuspendingOperation::D eadline (Windows. ApplicationModel.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,20 +15,20 @@ api_type:
 - COM
 api_location:
 - Windows.ApplicationModel.h
-ms.openlocfilehash: 305610108b7a138693ccdce97e35ddbe90451806
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 448f4d89ec2f1b7e3f68255897b32b3f4cba2ec753ae8f6cc7751c9041b01266
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121505"
 ---
-# <a name="isuspendingoperationdeadline-property"></a>ISuspendingOperation::D propiedad eadline
+# <a name="isuspendingoperationdeadline-property"></a>ISuspendingOperation::D eadline
 
-Obtiene el tiempo restante antes de que continúe una operación de suspensión de aplicación retrasada.
+Obtiene el tiempo restante antes de que continúe una operación de suspensión de aplicaciones retrasada.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,7 +43,7 @@ HRESULT get_Deadline(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El tiempo restante antes de que continúe una operación de suspensión de aplicación retrasada.
+El tiempo restante antes de que continúe una operación de suspensión de aplicaciones retrasada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,8 +53,8 @@ El tiempo restante antes de que continúe una operación de suspensión de aplic
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Encabezado<br/>                   | <dl> <dt>Windows. ApplicationModel. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Windows. ApplicationModel. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Windows. ApplicationModel.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Windows. ApplicationModel.idl</dt> </dl> |
 
 
 

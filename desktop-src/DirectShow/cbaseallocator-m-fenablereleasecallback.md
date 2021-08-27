@@ -1,7 +1,7 @@
 ---
-description: 'Marca que indica si la devolución de llamada de versión está habilitada. Esta marca se establece en el método de constructor. Si el valor es FALSE, al llamar al método CBaseAllocator:: SetNotify, se desencadena una aserción (en las compilaciones de depuración).'
+description: Marca que indica si la devolución de llamada de versión está habilitada. Esta marca se establece en el método constructor. Si el valor es FALSE, al llamar al método CBaseAllocator::SetNotify se produce una aserción (en compilaciones de depuración).
 ms.assetid: cc9adc7c-ec44-41e7-875a-b3e553120804
-title: 'Miembro CBaseAllocator:: m_fEnableReleaseCallback (Amfilter. h)'
+title: CBaseAllocator::m_fEnableReleaseCallback miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 626f1e8f4101eb48e79bc1cf679d1b91be9b2b31
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2fc1dfebb051ddffffce341547562901153b47bd5da002ebd847965593a73d93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131465"
 ---
-# <a name="cbaseallocatorm_fenablereleasecallback-member"></a>Miembro fEnableReleaseCallback CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_fenablereleasecallback-member"></a>Miembro CBaseAllocator::m \_ fEnableReleaseCallback
 
-Marca que indica si la devolución de llamada de versión está habilitada. Esta marca se establece en el método de constructor. Si el valor es **false**, al llamar al método [**CBaseAllocator:: SetNotify**](cbaseallocator-setnotify.md) , se desencadena una aserción (en las compilaciones de depuración).
+Marca que indica si la devolución de llamada de versión está habilitada. Esta marca se establece en el método constructor. Si el valor es **FALSE**, la llamada al método [**CBaseAllocator::SetNotify**](cbaseallocator-setnotify.md) hace que se desasozca una aserción (en compilaciones de depuración).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_fEnableReleaseCallback;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_fEnableReleaseCallback;
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  
