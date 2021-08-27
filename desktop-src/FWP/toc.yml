@@ -1,30 +1,30 @@
 - name: Plataforma de filtrado de Windows
   href: windows-filtering-platform-start-page.md
   items:
-    - name: Novedades de la plataforma de filtrado de Windows
+    - name: Novedades de la plataforma Windows filtrado de datos
       href: what-s-new-in-windows-filtering-platform.md
-    - name: Acerca de la plataforma de filtrado de Windows
+    - name: Acerca de Windows de filtrado de datos
       href: about-windows-filtering-platform.md
       items:
         - name: Arquitectura de WFP
           href: windows-filtering-platform-architecture-overview.md
-        - name: API DE WFP
+        - name: WFP API
           href: api-sets.md
           items:
             - name: Modelo de objetos
               href: object-model.md
             - name: Administración de objetos
               href: object-management.md
-            - name: Los nombres de Version-Independent de WFP y el destino de versiones específicas de Windows
+            - name: WfP Version-Independent nombres y versiones específicas de destino de Windows
               href: wfp-version-independent-names-and-targeting-specific-versions-of-windows.md
-        - name: Operación de WFP
+        - name: Operación WFP
           href: basic-operation.md
           items:
             - name: Flujos de paquetes TCP
               href: tcp-packet-flows.md
             - name: Flujos de paquetes UDP
               href: udp-packet-flows.md
-            - name: Arbitraje de filtro
+            - name: Filtro de cláusulas de conciliación
               href: filter-arbitration.md
         - name: Configuración de WFP
           href: wfp-configuration.md
@@ -33,18 +33,18 @@
               href: access-control.md
             - name: Asignación del peso del filtro
               href: filter-weight-assignment.md
-        - name: Aplicación del nivel de aplicación (ALE)
+        - name: Aplicación de la capa de aplicación (ALE)
           href: application-layer-enforcement--ale-.md
           items:
-            - name: Niveles ALE
+            - name: Capas de ALE
               href: ale-layers.md
-            - name: Filtrado con estado ALE
+            - name: Filtrado con estado de ALE
               href: ale-stateful-filtering.md
-            - name: Tráfico de multidifusión/difusión ALE
+            - name: Tráfico de multidifusión/difusión de ALE
               href: ale-multicast-broadcast-traffic.md
             - name: Reautorización de ALE
               href: ale-re-authorization.md
-            - name: Personalización del flujo ALE
+            - name: Personalización de Flow ALE
               href: ale-flow-customization.md
         - name: Configuración de IPsec
           href: ipsec-configuration.md
@@ -55,13 +55,13 @@
               href: negotiation-discovery-transport-mode.md
             - name: Modo de transporte de detección de negociación en modo de límite
               href: negotiation-discovery-transport-mode-in-boundary-mode.md
-            - name: Modo de túnel
+            - name: Tunnel Modo
               href: tunnel-mode.md
             - name: Cifrado garantizado
               href: guaranteed-encryption.md
             - name: Autorización de identidad remota
               href: remote-identity-authorization.md
-            - name: SA manual
+            - name: Manual SA
               href: manual-ipsec-sas.md
             - name: Exenciones de IKE/AuthIP
               href: ike-exemptions.md
@@ -72,9 +72,9 @@
               href: auditing-and-logging.md
             - name: Registro
               href: logging.md
-            - name: Notificaciones de cambios
+            - name: Notificaciones de cambio
               href: change-notifications.md
-    - name: Uso de la plataforma de filtrado de Windows
+    - name: Uso de Windows de filtrado de datos
       href: using-windows-filtering-platform.md
       items:
         - name: Introducción
@@ -89,80 +89,80 @@
           items:
             - name: Permitir y bloquear aplicaciones y usuarios
               href: permitting-and-blocking-applications-and-users.md
-            - name: Reservar puertos
+            - name: Reserva de puertos
               href: reserving-ports.md
             - name: Usar opciones de clasificación
               href: using-classify-options.md
-            - name: Impedir el análisis de puertos
+            - name: Evitar el examen de puertos
               href: preventing-port-scanning.md
-        - name: Observando el sistema
+        - name: Observar el sistema
           href: observing-the-system.md
           items:
             - name: Rellenar condiciones de filtro
               href: populating-filter-conditions.md
             - name: Ver el estado actual
               href: viewing-current-state.md
-            - name: Cambios del filtro de supervisión
+            - name: Supervisión de cambios de filtro
               href: monitoring-filter-changes.md
-            - name: Mostrar eventos net
+            - name: Mostrar eventos de red
               href: displaying-net-events.md
         - name: Managing Security
           href: managing-security.md
           items:
-            - name: Impedir la eliminación de filtros
+            - name: Dificultar la eliminación de filtros
               href: hindering-filter-deletion.md
             - name: Forzar la eliminación de filtros
               href: forcing-filter-deletion.md
         - name: Configuración de IPSec
           href: configuring-ipsec.md
           items:
-            - name: Usar el modo de transporte
+            - name: Uso del modo de transporte
               href: using-transport-mode.md
-            - name: Usar el modo de túnel
+            - name: Uso del Tunnel automático
               href: using-tunnel-mode.md
-            - name: Creación manual de claves SA
+            - name: Clave de SA manual
               href: manual-sa-keying.md
         - name: Prácticas recomendadas
           href: best-practices.md
-    - name: Referencia de API de la plataforma de filtrado de Windows
+    - name: Windows Referencia de API de la plataforma de filtrado
       href: fwp-reference.md
       items:
-        - name: Constantes de WFP
+        - name: Constantes WFP
           href: windows-filtering-platform-api-constants.md
           items:
-            - name: Acceder a los identificadores de derechos
+            - name: Identificadores de derecho de acceso
               href: access-right-identifiers.md
             - name: Identificadores de llamada integrados
               href: built-in-callout-identifiers.md
-            - name: Identificadores de módulo de incrustación integrados
+            - name: Identificadores de módulo de claves integrados
               href: built-in-keying-module-identifiers.md
             - name: Identificadores de contexto de proveedor integrados
               href: built-in-provider-context-identifiers.md
             - name: Identificadores de proveedor integrados
               href: built-in-provider-identifiers.md
-            - name: Identificadores de contexto de filtro
+            - name: Filtrar identificadores de contexto
               href: filter-context-identifiers.md
-            - name: Identificadores de peso de filtro
+            - name: Filtrar identificadores de peso
               href: filter-weight-identifiers.md
             - name: Condiciones de filtrado
               href: filtering-conditions.md
               items:
-                - name: Filtrado de identificadores de condición
+                - name: Filtrar identificadores de condición
                   href: filtering-condition-identifiers-.md
-                - name: Marcas de condición de filtrado
+                - name: Filtrar marcas de condición
                   href: filtering-condition-flags-.md
-                - name: Condiciones de filtrado disponibles en cada nivel de filtrado
+                - name: Condiciones de filtrado disponibles en cada capa de filtrado
                   href: filtering-conditions-available-at-each-filtering-layer.md
-            - name: Filtrado de identificadores de capas
+            - name: Filtrado de identificadores de capa
               href: management-filtering-layer-identifiers-.md
-            - name: Filtrado de identificadores de subnivel
+            - name: Filtrado de identificadores de subcapa
               href: management-filtering-sublayer-identifiers.md
             - name: Códigos de error de WFP
               href: wfp-error-codes.md
         - name: Tipos enumerados de WFP
           href: fwp-enums.md
           items:
-            - name: Tipos de IKE/AuthIP
+            - name: Tipos IKE/AuthIP
               href: ike-authip-types.md
               items:
                 - name: IKEEXT_AUTHENTICATION_IMPERSONATION_TYPE
@@ -261,34 +261,34 @@
         - name: Funciones de WFP
           href: fwp-functions.md
           items:
-            - name: Funciones de IKE/AuthIP
+            - name: Funciones IKE/AuthIP
               href: fwp-ike-functions.md
               items:
-                - name: IkeextGetStatistics0
+                - name: IxtGetStatistics0
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextgetstatistics0
-                - name: IkeextGetStatistics1
+                - name: IxtGetStatistics1
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextgetstatistics1
-                - name: IkeextSaCreateEnumHandle0
+                - name: IxtSaCreateEnumHandle0
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsacreateenumhandle0
-                - name: IkeextSaDbGetSecurityInfo0
+                - name: IxtSaDbGetSecurityInfo0
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsadbgetsecurityinfo0
-                - name: IkeextSaDbSetSecurityInfo0
+                - name: IxtSaDbSetSecurityInfo0
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsadbsetsecurityinfo0
-                - name: IkeextSaDeleteById0
+                - name: IxtSaDeleteById0
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsadeletebyid0
-                - name: IkeextSaDestroyEnumHandle0
+                - name: IxtSaDestroyEnumHandle0
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsadestroyenumhandle0
-                - name: IkeextSaEnum0
+                - name: IxtSaEnum0
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsaenum0
-                - name: IkeextSaEnum1
+                - name: IxtSaEnum1
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsaenum1
-                - name: IkeextSaEnum2
+                - name: IxtSaEnum2
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsaenum2
-                - name: IkeextSaGetById0
+                - name: IxtSaGetById0
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsagetbyid0
-                - name: IkeextSaGetById1
+                - name: IxtSaGetById1
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsagetbyid1
-                - name: IkeextSaGetById2
+                - name: IxtSaGetById2
                   href: /windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsagetbyid2
             - name: Funciones de IPsec
               href: fwp-ipsec-functions.md
@@ -531,7 +531,7 @@
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmlayergetsecurityinfobykey0
                     - name: FwpmLayerSetSecurityInfoByKey0
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmlayersetsecurityinfobykey0
-                - name: Administración de contexto de proveedor
+                - name: Administración del contexto del proveedor
                   href: provider-context-management.md
                   items:
                     - name: FWPM_PROVIDER_CONTEXT_CHANGE_CALLBACK0
@@ -626,7 +626,7 @@
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsessiondestroyenumhandle0
                     - name: FwpmSessionEnum0
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsessionenum0
-                - name: Administración de Sub-Layer
+                - name: Sub-Layer management
                   href: sub-layer-management.md
                   items:
                     - name: FWPM_SUBLAYER_CHANGE_CALLBACK0
@@ -673,7 +673,7 @@
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmtransactionbegin0
                     - name: FwpmTransactionCommit0
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmtransactioncommit0
-                - name: Administración de vSwitch
+                - name: vSwitch Management
                   href: vswitch-management.md
                   items:
                     - name: FWPM_VSWITCH_EVENT_CALLBACK0
@@ -694,7 +694,7 @@
         - name: Estructuras de WFP
           href: fwp-structs.md
           items:
-            - name: Estructuras de IKE/AuthIP
+            - name: Estructuras IKE/AuthIP
               href: ike-authip-structures.md
               items:
                 - name: IKEEXT_AUTHENTICATION_METHOD0

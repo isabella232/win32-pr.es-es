@@ -1,7 +1,7 @@
 ---
 description: Comprueba si la replicación se puede habilitar desde el sistema host actual al sistema de recuperación especificado.
 ms.assetid: 404855d5-9a1f-4079-b46d-b378fafff5bb
-title: Método TestReplicationConnection de la clase Msvm_ReplicationService
+title: Método TestReplicationConnection de la Msvm_ReplicationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6644ead653509d879e779928030ff8912a124ad5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 729412ea2b506aedf09bcc77385c4c8b22d560d8cd8e6fc88b12c059c0bf049c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050385"
 ---
-# <a name="testreplicationconnection-method-of-the-msvm_replicationservice-class"></a>Método TestReplicationConnection de la \_ clase ReplicationService de MSVM
+# <a name="testreplicationconnection-method-of-the-msvm_replicationservice-class"></a>Método TestReplicationConnection de la clase ReplicationService de Msvm \_
 
 Comprueba si la replicación se puede habilitar desde el sistema host actual al sistema de recuperación especificado.
 
@@ -44,24 +44,24 @@ uint32 TestReplicationConnection(
 
 <dl> <dt>
 
-*RecoveryConnectionPoint* \[ de\]
+*RecoveryConnectionPoint* \[ En\]
 </dt> <dd>
 
-Nombre del punto de conexión. Para un clúster de recuperación, este es el nombre de la CAP de agente. Para un servidor de recuperación independiente, es el nombre del sistema host.
+Nombre del punto de conexión. Para un clúster de recuperación, este es el nombre cap del agente. Para un servidor de recuperación independiente, este es el nombre del sistema host.
 
 </dd> <dt>
 
-*RecoveryServerPortNumber* \[ de\]
+*RecoveryServerPortNumber* \[ En\]
 </dt> <dd>
 
 Número de puerto del punto de conexión de recuperación.
 
 </dd> <dt>
 
-*AuthenticationType* \[ de\]
+*AuthenticationType* \[ En\]
 </dt> <dd>
 
-El esquema de autenticación de recuperación. Debe ser uno de los valores siguientes.
+Esquema de autenticación de recuperación. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -87,24 +87,24 @@ Autenticación basada en certificados.
 
 </dd> </dl> </dd> <dt>
 
-*CertificateThumbPrint* \[ de\]
+*CertificateThumbPrint* \[ En\]
 </dt> <dd>
 
-Huella digital del certificado que se usará cuando el parámetro *AuthenticationType* sea autenticación basada en certificados.
+Huella digital del certificado que se va a usar *cuando el parámetro AuthenticationType* es la autenticación basada en certificados.
 
 </dd> <dt>
 
-*BypassProxyServer* \[ de\]
+*BypassProxyServer* \[ En\]
 </dt> <dd>
 
-Omitir el servidor proxy al conectarse al servidor réplica.
+Omita el servidor proxy al conectarse al servidor de réplica.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -129,16 +129,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -147,13 +147,13 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -162,10 +162,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -174,7 +174,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ReplicationService**](msvm-replicationservice.md)
+[**ReplicationService de Msvm \_**](msvm-replicationservice.md)
 </dt> </dl>
 
  

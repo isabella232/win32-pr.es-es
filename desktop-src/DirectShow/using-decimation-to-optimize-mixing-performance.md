@@ -1,38 +1,38 @@
 ---
-description: Usar la Diezmación para optimizar el rendimiento de combinación
+description: Uso de Decimation para optimizar el rendimiento de la mezcla
 ms.assetid: 94d4ce86-9d60-4fd4-ab01-851dc073680b
-title: Usar la Diezmación para optimizar el rendimiento de combinación
+title: Uso de Decimation para optimizar el rendimiento de la mezcla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9e9e4ddfe3bbba3eb5eeab91b7cf0e8b9cbfa03
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2218566ab31d159f6d0ab74320aa45eb5780bdc3de151de8a7c642016441bacf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049625"
 ---
-# <a name="using-decimation-to-optimize-mixing-performance"></a>Usar la Diezmación para optimizar el rendimiento de combinación
+# <a name="using-decimation-to-optimize-mixing-performance"></a>Uso de Decimation para optimizar el rendimiento de la mezcla
 
 > [!IMPORTANT]
-> La optimización descrita en esta sección depende en gran medida del hardware subyacente. A menos que pueda garantizar el tipo de hardware de gráficos que se utilizará con la aplicación, puede degradar gravemente la apariencia de la imagen de vídeo.
+> La optimización descrita en esta sección depende en gran medida del hardware subyacente. A menos que pueda garantizar qué tipo de hardware gráfico se usará con la aplicación, puede degradar gravemente la apariencia de la imagen de vídeo.
 
  
 
-HDTV requiere una gran cantidad de potencia de procesamiento, que en la mayoría de los sistemas se proporciona principalmente mediante la tarjeta gráfica. Pero incluso si la tarjeta gráfica y el descodificador pueden admitir resoluciones de 1920 x 1080, es posible que el monitor no tenga siempre el monitor establecido en esta resolución. En este caso, se necesita el chip de gráficos para crear una imagen 1920 x 1080 y, a continuación, reducir la resolución antes de enviarla al búfer de fotogramas.
+LA FUNCIÓN requiere una gran capacidad de procesamiento, que en sistemas más recientes se proporciona principalmente mediante la tarjeta gráfica. Pero incluso si la tarjeta gráfica y el descodificador pueden admitir resoluciones de 1920 x 1080, es posible que el usuario no siempre tenga el monitor establecido en esta resolución. En este caso, el chip gráfico es necesario para crear una imagen de 1920 x 1080 y, a continuación, reducir la resolución antes de enviarla al búfer de fotogramas.
 
-Dado que se trata de un desperdicio de la potencia de procesamiento, el VMR proporciona una manera de diezmar (reducir) la imagen en el momento en que se representa en la superficie de DirectDraw. Esto elimina la copia de memoria adicional requerida si se tiene que cambiar el tamaño de la imagen después de representarla.
+Dado que se trata de una pérdida de potencia de procesamiento, el VMR proporciona una manera de diezmar (reducir) la imagen en el momento en que se representa en la superficie de DirectDraw. Esto elimina la copia de memoria adicional necesaria si es necesario cambiar el tamaño de la imagen una vez que se ha representado.
 
-**VMR-7:** Para habilitar la diezmación, llame a [**IVMRMixerControl:: SetMixingPrefs**](/windows/desktop/api/Strmif/nf-strmif-ivmrmixercontrol-setoutputrect) con la \_ marca DecimateOutput de MixerPref.
+**VMR-7:** Para habilitar la decimación, llame a [**IVMRMixerControl::SetMixingPrefs con**](/windows/desktop/api/Strmif/nf-strmif-ivmrmixercontrol-setoutputrect) la marca MixerPref \_ DecimateOutput.
 
-**VMR-9:** Para habilitar la diezmación, llame a [**IVMRMixerControl9:: SetMixingPrefs**](/previous-versions/windows/desktop/api/Vmr9/nf-vmr9-ivmrmixercontrol9-setmixingprefs) con la \_ marca DecimateOutput de MixerPref9.
+**VMR-9:** Para habilitar la decimación, llame a [**IVMRMixerControl9::SetMixingPrefs**](/previous-versions/windows/desktop/api/Vmr9/nf-vmr9-ivmrmixercontrol9-setmixingprefs) con la marca MixerPref9 \_ DecimateOutput.
 
-Se debe llamar al método **SetMixingPrefs** antes de que se conecte el VMR. Las marcas de preferencia de combinación no se pueden cambiar una vez que el gráfico se está ejecutando.
+Se **debe llamar al método SetMixingPrefs** antes de que se conecte vmr. Las marcas de preferencias de combinación no se pueden cambiar una vez que se ejecuta el gráfico.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar el modo de mezcla de VMR](using-vmr-mixing-mode.md)
+[Uso del modo de combinación de VMR](using-vmr-mixing-mode.md)
 </dt> </dl>
 
  

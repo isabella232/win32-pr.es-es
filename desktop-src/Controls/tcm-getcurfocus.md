@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TCM_GETCURFOCUS (commctrl. h)
-description: Devuelve el índice del elemento que tiene el foco en un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro TabCtrl \_ GetCurFocus.
+title: TCM_GETCURFOCUS mensaje (Commctrl.h)
+description: Devuelve el índice del elemento que tiene el foco en un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro \_ TabCtrl GetCurFocus.
 ms.assetid: ae6ee159-c769-41d6-b0bb-2a9ade4c0e71
 keywords:
-- TCM_GETCURFOCUS controles de mensajes de Windows
+- TCM_GETCURFOCUS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0b0d0f3d2bbd4a7cf0ab2a63c5a988f60768eec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 694fb64b033d279292a687c39959925a68999c0b232c847bdf6ec6b476c725e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104945"
 ---
-# <a name="tcm_getcurfocus-message"></a>\_Mensaje GETCURFOCUS de TCM
+# <a name="tcm_getcurfocus-message"></a>Mensaje \_ GETCURFOCUS de TCM
 
-Devuelve el índice del elemento que tiene el foco en un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro [**TabCtrl \_ GetCurFocus**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcurfocus) .
+Devuelve el índice del elemento que tiene el foco en un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro [**\_ TabCtrl GetCurFocus.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcurfocus)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,9 +37,9 @@ Devuelve el índice del elemento que tiene el foco en un control de ficha. Puede
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el índice del elemento de pestaña que tiene el foco.
+Devuelve el índice del elemento de ficha que tiene el foco.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El elemento que tiene el foco puede ser diferente del elemento seleccionado.
 
@@ -49,9 +49,9 @@ El elemento que tiene el foco puede ser diferente del elemento seleccionado.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

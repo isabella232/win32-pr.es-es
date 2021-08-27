@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PSM_IDTOINDEX (Prsht. h)
-description: Toma el identificador de recurso de una página de hoja de propiedades y devuelve su índice basado en cero. Puede enviar este mensaje explícitamente o utilizar la \_ macro PropSheet IdToIndex.
+title: PSM_IDTOINDEX mensaje (Prsht.h)
+description: Toma el identificador de recurso de una página de hoja de propiedades y devuelve su índice de base cero. Puede enviar este mensaje explícitamente o usar la \_ macro PropSheet IdToIndex.
 ms.assetid: vs|controls|~\controls\propsheet\messages\psm_idtoindex.htm
 keywords:
-- PSM_IDTOINDEX controles de mensajes de Windows
+- PSM_IDTOINDEX controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f098c37ba30e33685abedf9dccd3ffc7c303acb9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83bce0bfeecd2f233b2108133b08e49c27c90625c1bd07f2d4273bd77bbd0b54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061525"
 ---
-# <a name="psm_idtoindex-message"></a>Mensaje de PSM \_ IDTOINDEX
+# <a name="psm_idtoindex-message"></a>Mensaje \_ IDTOINDEX de PSM
 
-Toma el identificador de recurso de una página de hoja de propiedades y devuelve su índice basado en cero. Puede enviar este mensaje explícitamente o utilizar la macro [**PropSheet \_ IdToIndex**](/windows/desktop/api/Prsht/nf-prsht-propsheet_idtoindex) .
+Toma el identificador de recurso de una página de hoja de propiedades y devuelve su índice de base cero. Puede enviar este mensaje explícitamente o usar la [**macro \_ PropSheet IdToIndex.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_idtoindex)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,13 +39,13 @@ Debe ser cero.
 *lParam* 
 </dt> <dd>
 
-IDENTIFICADOR de recurso de la página.
+Identificador de recurso de la página.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el índice de base cero de la página de la hoja de propiedades especificada por *lParam* si se realiza correctamente. De lo contrario, devuelve -1.
+Devuelve el índice de base cero de la página de hoja de propiedades especificada por *lParam* si se realiza correctamente. De lo contrario, devuelve -1.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Devuelve el índice de base cero de la página de la hoja de propiedades especif
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

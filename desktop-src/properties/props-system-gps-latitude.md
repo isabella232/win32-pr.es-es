@@ -1,19 +1,19 @@
 ---
-description: Indica latitud.
+description: Indica la latitud.
 ms.assetid: f36f81b3-4e3d-4e06-a039-c243fd69c937
-title: System. GPS. Latitude
+title: System.GPS.Latitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 996c0edf41e03bc7f4a824ae9ed812450eb36e6e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4895e09a20c2a13aa1a6b003289d61d6802ef164b47c8cca63a5e45a5cacbcf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091215"
 ---
-# <a name="systemgpslatitude"></a>System. GPS. Latitude
+# <a name="systemgpslatitude"></a>System.GPS.Latitude
 
-Indica latitud. Se trata de una matriz de tres valores, como se indica a continuación: el índice 0 es el grado, el índice 1 es el minuto, el índice 2 es el segundo. Cada se calcula a partir de los valores de PKEY \_ GPS \_ LATITUDENUMERATOR y PKEY \_ GPS \_ LatitudeDenominator.
+Indica la latitud. Se trata de una matriz de tres valores, como se muestra a continuación: el índice 0 es el grado, el índice 1 son los minutos, el índice 2 son los segundos. Cada uno se calcula a partir de los valores de PKEY \_ GPS \_ LatitudeNumerator y PKEY \_ GPS \_ LatitudeDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -47,11 +47,11 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-El requisito de una referencia de cadena indirecta específica para el `label` atributo de **labelInfo** se agregó para Windows Vista con Service Pack 1 (SP1).
+El requisito de una referencia de cadena indirecta específica para el atributo de labelInfo se agregó para Windows Vista con `label` Service Pack 1 (SP1). 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -66,7 +66,7 @@ El requisito de una referencia de cadena indirecta específica para el `label` a
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -78,7 +78,7 @@ El requisito de una referencia de cadena indirecta específica para el `label` a
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -96,7 +96,7 @@ El requisito de una referencia de cadena indirecta específica para el `label` a
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

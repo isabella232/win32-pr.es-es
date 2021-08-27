@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TDN_TIMER (commctrl. h)
+title: TDN_TIMER de notificación (Commctrl.h)
 description: Enviado por un cuadro de diálogo de tarea aproximadamente cada 200 milisegundos.
 ms.assetid: 5a162d97-6912-45bc-8151-1ea56cc459ea
 keywords:
-- TDN_TIMER controles de código de notificación de Windows
+- TDN_TIMER código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2eea7a1604c70c187299c9f2c99abbe934926317
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eaf3f5d72ef8267c6600decf070875b2dd109114f910d09a5ca343f8fde44005
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104455"
 ---
-# <a name="tdn_timer-notification-code"></a>\_Código de notificación del temporizador de TDN
+# <a name="tdn_timer-notification-code"></a>Código de notificación del temporizador de TDN \_
 
-Enviado por un cuadro de diálogo de tarea aproximadamente cada 200 milisegundos. Este código de notificación se envía cuando se ha \_ establecido la marca de temporizador de devolución de llamada TDF \_ en el miembro **dwFlags** de la estructura [**TASKDIALOGCONFIG**](/windows/desktop/api/Commctrl/ns-commctrl-taskdialogconfig) que se pasó a la función [**TaskDialogIndirect**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) . Este código de notificación se recibe solo a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método **TaskDialogIndirect** .
+Enviado por un cuadro de diálogo de tarea aproximadamente cada 200 milisegundos. Este código de notificación se envía cuando se ha establecido la marca TDF CALLBACK TIMER en el miembro dwFlags de la estructura TASKDIALOGCONFIG que se pasó a la \_ \_ función [**TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)  [](/windows/desktop/api/Commctrl/ns-commctrl-taskdialogconfig) Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el **método TaskDialogIndirect.**
 
 
 ```C++
@@ -42,7 +42,7 @@ TDN_TIMER
 *wParam* 
 </dt> <dd>
 
-**DWORD** que especifica el número de milisegundos transcurridos desde que se creó el cuadro de diálogo o el código de notificación devolvió **S \_ false**.
+DWORD **que** especifica el número de milisegundos desde que se creó el cuadro de diálogo o este código de notificación **devolvió S \_ FALSE.**
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para restablecer el TickCount, la aplicación debe devolver **S \_ false**; de lo contrario, el TickCount seguirá aumentando.
+Para restablecer el recuento de tics, la aplicación debe devolver **S \_ FALSE;** de lo contrario, el recuento seguirá incrementando.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Para restablecer el TickCount, la aplicación debe devolver **S \_ false**; de l
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de actionsType
-description: Define los elementos secundarios y el atributo para el elemento actions.
+title: actionsType Complex Type
+description: Define los elementos secundarios y el atributo para el elemento Actions.
 ms.assetid: 01577b65-4bfa-4b9f-b9b9-6b2b0dbd582a
 keywords:
-- tipo complejo de actionsType Programador de tareas
+- actionsType complex type Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ebc2cf95803f6e4a02d4ec00d7aa767aa4e8a8a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d84cab2f0977a3b5bf980f594f1b26b543d8e5e7de000959488e874e640dc9d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010935"
 ---
-# <a name="actionstype-complex-type"></a>Tipo complejo de actionsType
+# <a name="actionstype-complex-type"></a>actionsType Complex Type
 
-Define los elementos secundarios y el atributo para el elemento [**Actions**](taskschedulerschema-actions-tasktype-element.md) .
+Define los elementos secundarios y el atributo para el [**elemento**](taskschedulerschema-actions-tasktype-element.md) Actions.
 
 ``` syntax
 <xs:complexType name="actionsType">
@@ -45,7 +45,7 @@ Define los elementos secundarios y el atributo para el elemento [**Actions**](ta
 
 | Nombre    | Tipo  | Descripción                                                                                          |
 |---------|-------|------------------------------------------------------------------------------------------------------|
-| Context | IDREF | Identificador de la entidad de seguridad utilizada que es el contexto de seguridad para las acciones de la tarea.<br/> |
+| Context | IDREF | Identificador principal del utilizado que es el contexto de seguridad para las acciones de la tarea.<br/> |
 
 
 
@@ -55,8 +55,8 @@ Define los elementos secundarios y el atributo para el elemento [**Actions**](ta
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -64,7 +64,7 @@ Define los elementos secundarios y el atributo para el elemento [**Actions**](ta
 
 <dl> <dt>
 
-[Tipos complejos de esquema Programador de tareas](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_SETEVENTMASK (RichEdit. h)
-description: Establece la máscara de eventos para un control Rich Edit. La máscara de eventos especifica los códigos de notificación que el control envía a su ventana primaria.
+title: EM_SETEVENTMASK mensaje (Richedit.h)
+description: Establece la máscara de evento para un control de edición enriquecido. La máscara de eventos especifica qué códigos de notificación envía el control a su ventana primaria.
 ms.assetid: 139f6e44-fc54-40f2-a3f6-2b7efc819cae
 keywords:
-- EM_SETEVENTMASK controles de mensajes de Windows
+- EM_SETEVENTMASK de mensajes controles de Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd4d79d23f7b56a29bc4f5142ed03b23e8081687
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 244274d969473531bae7c1d124af24a88d6b98d9db8bdbe073d054a3a9e36ac1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048505"
 ---
-# <a name="em_seteventmask-message"></a>\_Mensaje em SETEVENTMASK
+# <a name="em_seteventmask-message"></a>Mensaje \_ EM SETEVENTMASK
 
-Establece la máscara de eventos para un control Rich Edit. La máscara de eventos especifica los códigos de notificación que el control envía a su ventana primaria.
+Establece la máscara de evento para un control de edición enriquecido. La máscara de eventos especifica qué códigos de notificación envía el control a su ventana primaria.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,17 +39,17 @@ Este parámetro no se usa; debe ser cero.
 *lParam* 
 </dt> <dd>
 
-Nueva máscara de eventos para el control Rich Edit. Para obtener una lista de máscaras de eventos, vea [**marcas de máscara de eventos de control de edición enriquecida**](rich-edit-control-event-mask-flags.md).
+Nueva máscara de evento para el control de edición enriquecido. Para obtener una lista de máscaras de eventos, vea [**Rich Edit Control Event Mask Flags**](rich-edit-control-event-mask-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje devuelve la máscara de eventos anterior.
+Este mensaje devuelve la máscara de evento anterior.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La máscara de eventos predeterminada (antes de que se establezca) es ENM \_ None.
+La máscara de evento predeterminada (antes de establecer ninguna) es ENM \_ NONE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ La máscara de eventos predeterminada (antes de que se establezca) es ENM \_ Non
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ La máscara de eventos predeterminada (antes de que se establezca) es ENM \_ Non
 **Referencia**
 </dt> <dt>
 
-[**\_GETEVENTMASK (EM**](em-geteventmask.md)
+[**EM \_ GETEVENTMASK**](em-geteventmask.md)
 </dt> <dt>
 
-[**Marcas de máscara de eventos de control de edición enriquecida**](rich-edit-control-event-mask-flags.md)
+[**Marcas de máscara de eventos del control Rich Edit**](rich-edit-control-event-mask-flags.md)
 </dt> </dl>
 
  
