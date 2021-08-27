@@ -1,5 +1,5 @@
 ---
-title: Estilos extendidos de barra de herramientas (CommCtrl. h)
+title: Estilos extendidos de la barra de herramientas (CommCtrl.h)
 description: En esta sección se enumeran los estilos extendidos admitidos por los controles de barra de herramientas.
 ms.assetid: da31dbbf-8d0a-4711-a1af-382c62e653cd
 topic_type:
@@ -17,78 +17,35 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 056e48753485364017f04f7b84e609b19473bf5a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 71e242426269d4049b913a41910d325c360886f3
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649686"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476790"
 ---
-# <a name="toolbar-extended-styles"></a>Estilos extendidos de barra de herramientas
+# <a name="toolbar-extended-styles"></a>Estilos extendidos de la barra de herramientas
 
 En esta sección se enumeran los estilos extendidos admitidos por los controles de barra de herramientas.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constante</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span id="TBSTYLE_EX_DRAWDDARROWS"></span><span id="tbstyle_ex_drawddarrows"></span><dl> <dt><strong>TBSTYLE_EX_DRAWDDARROWS</strong></dt> </dl></td>
-<td style="text-align: left;"><a href="common-control-versions.md">Versión 4,71</a>. Este estilo permite que los botones tengan una flecha de lista desplegable independiente. Los botones que tienen el estilo de <a href="toolbar-control-and-button-styles.md"><strong>BTNS_DROPDOWN</strong></a> se dibujarán con una flecha de lista desplegable en una sección independiente, a la derecha del botón. Si se hace clic en la flecha, solo se detendrá la parte de la flecha del botón y el control de barra de herramientas enviará un <a href="tbn-dropdown.md">TBN_DROPDOWN</a> código de notificación para solicitar a la aplicación que muestre el menú desplegable. Si se hace clic en la parte principal del botón, el control de barra de herramientas envía un mensaje de WM_COMMAND con el identificador del botón. Normalmente, la aplicación responde iniciando el primer comando en el menú.<br/> Hay muchas situaciones en las que quizás desee tener solo algunos de los botones de lista desplegable en una barra de herramientas con flechas separadas. Para ello, establezca el estilo extendido TBSTYLE_EX_DRAWDDARROWS. Asigne a los botones que no tendrán flechas separadas el estilo de <a href="toolbar-control-and-button-styles.md"><strong>BTNS_WHOLEDROPDOWN</strong></a> . Los botones con este estilo tendrán una flecha junto a la imagen. Sin embargo, la flecha no será independiente y cuando se haga clic en cualquier parte del botón, el control de barra de herramientas enviará un código de notificación <a href="tbn-dropdown.md">TBN_DROPDOWN</a> . Para evitar problemas de repintado, este estilo debe establecerse antes de que el control de barra de herramientas se vuelva visible.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="TBSTYLE_EX_HIDECLIPPEDBUTTONS"></span><span id="tbstyle_ex_hideclippedbuttons"></span><dl> <dt><strong>TBSTYLE_EX_HIDECLIPPEDBUTTONS</strong></dt> </dl></td>
-<td style="text-align: left;"><a href="common-control-versions.md">Versión 5,81</a>. Este estilo oculta los botones recortados parcialmente. El uso más común de este estilo es para las barras de herramientas que forman parte de un control rebar. Si una banda adyacente cubre parte de un botón, el botón no se mostrará. Sin embargo, si la banda rebar tiene el estilo de <a href="/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa"><strong>RBBS_USECHEVRON</strong></a> , el botón se mostrará en el menú desplegable del botón de contenido adicional. <br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="TBSTYLE_EX_DOUBLEBUFFER"></span><span id="tbstyle_ex_doublebuffer"></span><dl> <dt><strong>TBSTYLE_EX_DOUBLEBUFFER</strong></dt> </dl></td>
-<td style="text-align: left;"><a href="common-control-versions.md">Versión 6</a>. Este estilo requiere que la barra de herramientas tenga doble búfer. El doble búfer es un mecanismo que detecta cuándo ha cambiado la barra de herramientas. <br/>
-<blockquote>
-[!Note]<br />
-Comctl32.dll versión 6 no es redistribuible, pero se incluye en Windows o posterior. Para usar Comctl32.dll versión 6, especifíquelo en un manifiesto. Para obtener más información sobre los manifiestos, vea <a href="cookbook-overview.md">habilitar estilos visuales</a>.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="TBSTYLE_EX_MIXEDBUTTONS"></span><span id="tbstyle_ex_mixedbuttons"></span><dl> <dt><strong>TBSTYLE_EX_MIXEDBUTTONS</strong></dt> </dl></td>
-<td style="text-align: left;"><a href="common-control-versions.md">Versión 5,81</a>. Este estilo permite establecer el texto de todos los botones, pero solo se muestra para esos botones con el estilo de botón de <a href="toolbar-control-and-button-styles.md"><strong>BTNS_SHOWTEXT</strong></a> . También se debe establecer el estilo <a href="toolbar-control-and-button-styles.md"><strong>TBSTYLE_LIST</strong></a> . Normalmente, cuando un botón no muestra texto, la aplicación debe controlar <a href="tbn-getinfotip.md">TBN_GETINFOTIP</a> o <a href="ttn-getdispinfo.md">TTN_GETDISPINFO</a> para mostrar una información sobre herramientas. Con el TBSTYLE_EX_MIXEDBUTTONS estilo extendido, el texto que se establece pero no se muestra en un botón se usará automáticamente como texto de la información sobre herramientas del botón. La aplicación solo necesita controlar TBN_GETINFOTIP o TTN_GETDISPINFO si necesita más flexibilidad para especificar el texto de la información sobre herramientas. <br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="TBSTYLE_EX_MULTICOLUMN"></span><span id="tbstyle_ex_multicolumn"></span><dl> <dt><strong>TBSTYLE_EX_MULTICOLUMN</strong></dt> </dl></td>
-<td style="text-align: left;"><a href="common-control-versions.md">Versión 5,82</a>. <strong>Diseñado para uso interno; no se recomienda para su uso en aplicaciones de.</strong> Este estilo proporciona a la barra de herramientas una orientación vertical y organiza los botones de la barra de herramientas en columnas. Los botones fluyen verticalmente hasta que un botón supera el alto de límite de la barra de herramientas (vea <a href="tb-setboundingsize.md"><strong>TB_SETBOUNDINGSIZE</strong></a>) y, a continuación, se crea una nueva columna. La barra de herramientas fluye los botones de esta manera hasta que se coloquen todos los botones. Para usar este estilo, también se debe establecer el estilo TBSTYLE_EX_VERTICAL. <br/>
-<blockquote>
-[!Note]<br />
-Es posible que este estilo no se admita en versiones futuras de Comctl32.dll. Además, este estilo no se define en commctrl. h. Agregue la siguiente definición a los archivos de origen de la aplicación para usar este estilo: <code>#define TBSTYLE_EX_MULTICOLUMN 0x00000002</code>
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="TBSTYLE_EX_VERTICAL"></span><span id="tbstyle_ex_vertical"></span><dl> <dt><strong>TBSTYLE_EX_VERTICAL</strong></dt> </dl></td>
-<td style="text-align: left;"><a href="common-control-versions.md">Versión 5,82</a>. <strong>Diseñado para uso interno; no se recomienda para su uso en aplicaciones de.</strong> Este estilo proporciona a la barra de herramientas una orientación vertical. Los botones de la barra de herramientas fluyen de arriba abajo en lugar de horizontalmente. <br/>
-<blockquote>
-[!Note]<br />
-Es posible que este estilo no se admita en versiones futuras de Comctl32.dll. Además, este estilo no se define en commctrl. h. Agregue la siguiente definición a los archivos de origen de la aplicación para usar este estilo: <code>#define TBSTYLE_EX_VERTICAL 0x00000004</code>
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constante | Descripción | 
+|----------|-------------|
+| <span id="TBSTYLE_EX_DRAWDDARROWS"></span><span id="tbstyle_ex_drawddarrows"></span><dl><dt><strong>TBSTYLE_EX_DRAWDDARROWS</strong></dt></dl> | <a href="common-control-versions.md">Versión 4.71.</a> Este estilo permite que los botones tengan una flecha desplegable independiente. Los botones que <a href="toolbar-control-and-button-styles.md"><strong>tienen el BTNS_DROPDOWN</strong></a> se dibujarán con una flecha desplegable en una sección independiente, a la derecha del botón. Si se hace clic en la flecha, solo se desprime la parte de la flecha del botón y el control de barra de herramientas enviará un código de notificación TBN_DROPDOWN para solicitar <a href="tbn-dropdown.md">a</a> la aplicación que muestre el menú desplegable. Si se hace clic en la parte principal del botón, el control de barra de herramientas envía un WM_COMMAND con el identificador del botón. Normalmente, la aplicación responde iniciando el primer comando en el menú.<br /> Hay muchas situaciones en las que puede que desee tener solo algunos de los botones desplegables en una barra de herramientas con flechas separadas. Para ello, establezca el TBSTYLE_EX_DRAWDDARROWS estilo extendido. Dé a los botones que no tengan flechas separadas <a href="toolbar-control-and-button-styles.md"><strong>el BTNS_WHOLEDROPDOWN</strong></a> de texto. Los botones con este estilo tendrán una flecha que se muestra junto a la imagen. Sin embargo, la flecha no será independiente y cuando se haga clic en cualquier parte del botón, el control de barra de herramientas enviará <a href="tbn-dropdown.md">un</a> TBN_DROPDOWN de notificación. Para evitar problemas de repintado, este estilo debe establecerse antes de que el control de barra de herramientas se vuelva visible.<br /> | 
+| <span id="TBSTYLE_EX_HIDECLIPPEDBUTTONS"></span><span id="tbstyle_ex_hideclippedbuttons"></span><dl><dt><strong>TBSTYLE_EX_HIDECLIPPEDBUTTONS</strong></dt></dl> | <a href="common-control-versions.md">Versión 5.81.</a> Este estilo oculta los botones recortados parcialmente. El uso más común de este estilo es para las barras de herramientas que forman parte de un control rebar. Si una banda adyacente cubre parte de un botón, no se mostrará el botón. Sin embargo, si la banda de rebar <a href="/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa"><strong>tiene</strong></a> el RBBS_USECHEVRON, el botón se mostrará en el menú desplegable del botón adicional. <br /> | 
+| <span id="TBSTYLE_EX_DOUBLEBUFFER"></span><span id="tbstyle_ex_doublebuffer"></span><dl><dt><strong>TBSTYLE_EX_DOUBLEBUFFER</strong></dt></dl> | <a href="common-control-versions.md">Versión 6.</a> Este estilo requiere que la barra de herramientas esté doble en búfer. El almacenamiento en búfer doble es un mecanismo que detecta cuándo ha cambiado la barra de herramientas. <br /><blockquote>[!Note]<br />Comctl32.dll versión 6 no es redistribuible, pero se incluye en Windows o posterior. Para usar Comctl32.dll versión 6, es especificarlo en un manifiesto. Para obtener más información sobre los manifiestos, vea <a href="cookbook-overview.md">Habilitar estilos visuales.</a></blockquote><br /> | 
+| <span id="TBSTYLE_EX_MIXEDBUTTONS"></span><span id="tbstyle_ex_mixedbuttons"></span><dl><dt><strong>TBSTYLE_EX_MIXEDBUTTONS</strong></dt></dl> | <a href="common-control-versions.md">Versión 5.81.</a> Este estilo permite establecer texto para todos los botones, pero solo se muestra para esos botones con BTNS_SHOWTEXT <a href="toolbar-control-and-button-styles.md"><strong>estilo</strong></a> de botón. También <a href="toolbar-control-and-button-styles.md"><strong>TBSTYLE_LIST</strong></a> debe establecerse el estilo de la tabla. Normalmente, cuando un botón no muestra texto, la aplicación debe controlar TBN_GETINFOTIP <a href="tbn-getinfotip.md">o</a> <a href="ttn-getdispinfo.md">TTN_GETDISPINFO</a> mostrar una información sobre herramientas. Con el TBSTYLE_EX_MIXEDBUTTONS extendido, el texto que se establece pero no se muestra en un botón se usará automáticamente como texto de información sobre herramientas del botón. La aplicación solo necesita controlar TBN_GETINFOTIP o TTN_GETDISPINFO si necesita más flexibilidad para especificar el texto de la información sobre herramientas. <br /> | 
+| <span id="TBSTYLE_EX_MULTICOLUMN"></span><span id="tbstyle_ex_multicolumn"></span><dl><dt><strong>TBSTYLE_EX_MULTICOLUMN</strong></dt></dl> | <a href="common-control-versions.md">Versión 5.82.</a> <strong>Destinado a uso interno; no se recomienda para su uso en aplicaciones.</strong> Este estilo proporciona a la barra de herramientas una orientación vertical y organiza los botones de la barra de herramientas en columnas. Los botones fluyen verticalmente hasta que un botón ha superado el alto delimitador de la barra de herramientas (vea <a href="tb-setboundingsize.md"><strong>TB_SETBOUNDINGSIZE</strong></a>) y, a continuación, se crea una nueva columna. La barra de herramientas fluye los botones de esta manera hasta que se coloquen todos los botones. Para usar este estilo, también TBSTYLE_EX_VERTICAL el estilo de la aplicación. <br /><blockquote>[!Note]<br />Es posible que este estilo no se pueda usar en versiones futuras de Comctl32.dll. Además, este estilo no está definido en commctrl.h. Agregue la siguiente definición a los archivos de origen de la aplicación para usar este estilo: <code>#define TBSTYLE_EX_MULTICOLUMN 0x00000002</code></blockquote><br /> | 
+| <span id="TBSTYLE_EX_VERTICAL"></span><span id="tbstyle_ex_vertical"></span><dl><dt><strong>TBSTYLE_EX_VERTICAL</strong></dt></dl> | <a href="common-control-versions.md">Versión 5.82.</a> <strong>Destinado a uso interno; no se recomienda para su uso en aplicaciones.</strong> Este estilo proporciona a la barra de herramientas una orientación vertical. Los botones de la barra de herramientas fluyen de arriba abajo en lugar de horizontalmente. <br /><blockquote>[!Note]<br />Es posible que este estilo no se pueda usar en versiones futuras de Comctl32.dll. Además, este estilo no está definido en commctrl.h. Agregue la siguiente definición a los archivos de origen de la aplicación para usar este estilo: <code>#define TBSTYLE_EX_VERTICAL 0x00000004</code></blockquote><br /> | 
 
 
 
-## <a name="remarks"></a>Observaciones
 
-Para establecer un estilo extendido, envíe el control de barra de herramientas a un mensaje [**TB \_ SETEXTENDEDSTYLE**](tb-setextendedstyle.md) . Para determinar qué estilos extendidos están establecidos actualmente, envíe un mensaje de [**TB \_ GETEXTENDEDSTYLE**](tb-getextendedstyle.md) .
+## <a name="remarks"></a>Comentarios
+
+Para establecer un estilo extendido, envíe al control de barra de herramientas [**\_ un mensaje TB SETEXTENDEDSTYLE.**](tb-setextendedstyle.md) Para determinar qué estilos extendidos están establecidos actualmente, envíe un mensaje [**\_ GETEXTENDEDSTYLE de**](tb-getextendedstyle.md) TB.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,7 +53,7 @@ Para establecer un estilo extendido, envíe el control de barra de herramientas 
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 

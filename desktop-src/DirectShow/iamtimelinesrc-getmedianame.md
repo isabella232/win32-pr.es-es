@@ -1,7 +1,7 @@
 ---
-description: El método GetMediaName recupera el nombre del archivo de código fuente representado por este objeto de origen.
+description: El método GetMediaName recupera el nombre del archivo de origen representado por este objeto de origen.
 ms.assetid: 6f468628-10e1-4746-9c3a-6dae9aa3f6ad
-title: 'IAMTimelineSrc:: GetMediaName (método) (QEDIT. h)'
+title: Método IAMTimelineSrc::GetMediaName (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 3727d57371e5c7bab4f9d693a247b6b62a3ada17
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9919e89c61a07f9dd4c539bfb2bd04cbaefde1be3f06eae501a1c03c8df285bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131095"
 ---
-# <a name="iamtimelinesrcgetmedianame-method"></a>IAMTimelineSrc:: GetMediaName (método)
+# <a name="iamtimelinesrcgetmedianame-method"></a>IamTimelineSrc::GetMediaName (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `GetMediaName` método recupera el nombre del archivo de código fuente representado por este objeto de origen.
+El `GetMediaName` método recupera el nombre del archivo de origen representado por este objeto de origen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT GetMediaName(
 
 <dl> <dt>
 
-*pval* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
 Recibe el nombre del archivo.
@@ -54,19 +54,19 @@ Recibe el nombre del archivo.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método asigna memoria para la cadena. La aplicación debe llamar a **SysFreeString** para liberar memoria.
+El método asigna memoria para la cadena. La aplicación debe llamar **a SysFreeString para** liberar la memoria.
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ El método asigna memoria para la cadena. La aplicación debe llamar a **SysFree
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,10 +85,10 @@ El método asigna memoria para la cadena. La aplicación debe llamar a **SysFree
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineSrc**](iamtimelinesrc.md)
+[**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

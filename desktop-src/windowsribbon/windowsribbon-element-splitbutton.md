@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 53445bc3f57f8a861800f9edcd95d8af2ecfbd54f4055cf8787695dab1f25cb0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 07bc97a3c75a16c1a11783a13514a8ab5b3478c6
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117850783"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622743"
 ---
 # <a name="splitbutton-element"></a>Elemento SplitButton
 
@@ -40,16 +40,16 @@ Representa un control [Split Button](windowsribbon-controls-splitbutton.md) est�
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -58,7 +58,7 @@ Representa un control [Split Button](windowsribbon-controls-splitbutton.md) est�
 <td><strong>ApplicationModes</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Solo es válido <a href="windowsribbon-element-menugroup.md"><strong>si MenuGroup</strong></a> es el elemento primario.<br/> <br/>
+<td>Válido solo si <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> es el elemento primario.<br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena que contiene una lista separada por comas de enteros entre 0 y 31.<br/> El espacio en blanco es válido y se omite.<br/> Longitud máxima: 250 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
@@ -79,8 +79,8 @@ Representa un control [Split Button](windowsribbon-controls-splitbutton.md) est�
 
 | Elemento                                                                                   | Descripción                                        |
 |-------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Botón**](windowsribbon-element-button.md)<br/>                                 | Puede producirse una o varias veces<br/> <br/> |
-| [**Casilla**](windowsribbon-element-checkbox.md)<br/>                             | Puede producirse una o varias veces<br/> <br/> |
+| [**Button**](windowsribbon-element-button.md)<br/>                                 | Puede producirse una o varias veces<br/> <br/> |
+| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                             | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>                 | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/>       | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>               | Puede producirse una o varias veces<br/> <br/> |
@@ -111,16 +111,16 @@ Representa un control [Split Button](windowsribbon-controls-splitbutton.md) est�
 
 Opcional.
 
-Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md), **SplitButton** o [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
+Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup,**](windowsribbon-element-menugroup.md) **SplitButton** [**o SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
-**SplitButton** admite [modos de](ribbon-applicationmodes.md) aplicación cuando se hospeda en la columna izquierda del menú de la aplicación.
+**SplitButton** admite [modos de](ribbon-applicationmodes.md) aplicación cuando se hospeda en la columna izquierda del menú aplicación.
 
-[**DropDownGallery**](windowsribbon-element-dropdowngallery.md) y [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) no son elementos secundarios válidos de [**DropDownButton**](windowsribbon-element-dropdownbutton.md) cuando **DropDownButton** es un descendiente de [**ApplicationMenu.**](windowsribbon-element-applicationmenu.md)
+[**DropDownGallery**](windowsribbon-element-dropdowngallery.md) y [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) no son elementos secundarios válidos de [**DropDownButton**](windowsribbon-element-dropdownbutton.md) cuando **DropDownButton** es un descendiente de [**ApplicationMenu**](windowsribbon-element-applicationmenu.md).
 
-[**SplitButton.MenuGroups**](windowsribbon-element-splitbutton-menugroups.md) debe producirse una vez si lo siguiente no está presente como elementos secundarios de **SplitButton**:
+[**SplitButton.MenuGroups debe**](windowsribbon-element-splitbutton-menugroups.md) producirse una vez si lo siguiente no está presente como elementos secundarios de **SplitButton**:
 
--   [**Botón**](windowsribbon-element-button.md)
--   [**Casilla**](windowsribbon-element-checkbox.md)
+-   [**Button**](windowsribbon-element-button.md)
+-   [**CheckBox**](windowsribbon-element-checkbox.md)
 -   [**DropDownButton**](windowsribbon-element-dropdownbutton.md)
 -   [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)
 -   [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)
@@ -132,7 +132,7 @@ Estos controles se tratan como elementos secundarios de un único [**elemento Sp
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el [botón Dividir](windowsribbon-controls-splitbutton.md).
+En el ejemplo siguiente se muestra el marcado básico para el [botón De división](windowsribbon-controls-splitbutton.md).
 
 En esta sección de código se muestran las declaraciones del comando **SplitButton,** con un [**grupo**](windowsribbon-element-group.md) asociado que funciona como contenedor primario para el **elemento SplitButton.**
 
@@ -216,11 +216,11 @@ En esta sección de código se muestran las declaraciones de control **SplitButt
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Split Button (Control)](windowsribbon-controls-splitbutton.md)
+[Control Botón de división](windowsribbon-controls-splitbutton.md)
 </dt> <dt>
 
 [**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)

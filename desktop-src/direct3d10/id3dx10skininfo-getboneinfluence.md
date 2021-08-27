@@ -1,7 +1,7 @@
 ---
-description: Obtiene la cantidad de influencia que un hueso determinado tiene sobre un vértice determinado.
+description: Obtiene la cantidad de influencia que tiene un ángulo determinado sobre un vértice determinado.
 ms.assetid: 0586fdfd-e5b1-4699-b489-c54a0f305ee4
-title: 'ID3DX10SkinInfo:: GetBoneInfluence (método) (D3DX10. h)'
+title: Método ID3DX10SkinInfo::GetIonalInfluence (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: b2f7e6b75e9c0f9f08463b6dacf9d7c9d72f4f28
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9b53f642b6e62bb37c6979602b1ae66e09ffc2eb42a6d47c70c6b895a01ba273
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096555"
 ---
-# <a name="id3dx10skininfogetboneinfluence-method"></a>ID3DX10SkinInfo:: GetBoneInfluence (método)
+# <a name="id3dx10skininfogetboneinfluence-method"></a>Método ID3DX10SkinInfo::GetIonalInfluence
 
-Obtiene la cantidad de influencia que un hueso determinado tiene sobre un vértice determinado.
+Obtiene la cantidad de influencia que tiene un ángulo determinado sobre un vértice determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT GetBoneInfluence(
 
 <dl> <dt>
 
-*BoneIndex* \[ de\]
+*IndexIndex* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice que especifica un hueso existente. Debe estar comprendido entre 0 y el valor devuelto por [**ID3DX10SkinInfo:: GetNumBones**](id3dx10skininfo-getnumbones.md).
+Índice que especifica un fragmento existente. Debe estar entre 0 y el valor devuelto por [**ID3DX10SkinInfo::GetNumPxs**](id3dx10skininfo-getnumbones.md).
 
 </dd> <dt>
 
-*InfluenceIndex* \[ de\]
+*InfluenceIndex* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice de la lista de vértices del hueso a la que influye.
+Índice en la lista de vértices del tejido que influye.
 
 </dd> <dt>
 
-*pWeight* \[ de\]
+*pWeight* \[ En\]
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
-La cantidad de influencia, entre 0 y 1, que tiene el hueso en el vértice.
+La cantidad de influencia, entre 0 y 1, que el extremo tiene sobre el vértice.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ La cantidad de influencia, entre 0 y 1, que tiene el hueso en el vértice.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser E \_ INVALIDARG.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser E \_ INVALIDARG.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use ID3DX10SkinInfo:: GetBoneInfluenceCount para averiguar el número de vértices que influyen en el hueso.
+Use ID3DX10SkinInfo::GetIonalInfluenceCount para averiguar cuántos vértices influye el infierto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Use ID3DX10SkinInfo:: GetBoneInfluenceCount para averiguar el número de vértic
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -97,7 +97,7 @@ Use ID3DX10SkinInfo:: GetBoneInfluenceCount para averiguar el número de vértic
 [ID3DX10SkinInfo](id3dx10skininfo.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

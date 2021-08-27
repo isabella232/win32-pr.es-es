@@ -1,11 +1,11 @@
 ---
-title: Propiedad de ancho de banda IWMPNetwork
-description: La propiedad de ancho de banda obtiene el ancho de banda actual del elemento multimedia.
+title: Propiedad bandWidth de IWMPNetwork
+description: La propiedad bandWidth obtiene el ancho de banda actual del elemento multimedia.
 ms.assetid: 4355aa14-bca7-4b46-aad5-3e3796a54735
 keywords:
-- propiedades de ancho de banda Media Player de Windows
-- propiedad de ancho de banda Media Player de Windows, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, propiedad ancho de banda
+- propiedad bandWidth Reproductor de Windows Media
+- Propiedad bandWidth Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , propiedad bandWidth
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df9a55f9d5c6724c428b75a4171c2e8b7ca13d18
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fd3cccc47d16f272a28fb732641a9fca743003f716e79a340df8de5d55e9ce6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098735"
 ---
-# <a name="iwmpnetworkbandwidth-property"></a>IWMPNetwork:: bandWidth (propiedad)
+# <a name="iwmpnetworkbandwidth-property"></a>IWMPNetwork::bandWidth, propiedad
 
-La propiedad de **ancho** de banda obtiene el ancho de banda actual del elemento multimedia.
+La **propiedad bandWidth** obtiene el ancho de banda actual del elemento multimedia.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,15 +46,15 @@ Public ReadOnly Property bandWidth As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el ancho de banda.
+**System.Int32 que** es el ancho de banda.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor recuperado a través de **AxWindowsMediaPlayer. URL** será cero si no se establece la dirección URL. Esta propiedad solo es válida para los medios de streaming.
+El valor recuperado a **través de AxWindowsMediaPlayer.URL** será cero si no se establece la dirección URL. Esta propiedad solo es válida para los medios de streaming.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **ancho de banda** para mostrar el ancho de banda multimedia actual. La información se muestra en una etiqueta en respuesta al evento **PlayStateChange** . El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa bandWidth para** mostrar el ancho de banda multimedia actual. La información se muestra en una etiqueta en respuesta al **evento PlayStateChange.** El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -120,7 +120,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -130,7 +130,7 @@ End Sub
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. URL (VB y C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
+[**AxWindowsMediaPlayer.URL (VB y C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)

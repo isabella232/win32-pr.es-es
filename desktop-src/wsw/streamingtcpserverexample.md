@@ -1,29 +1,29 @@
 ---
 title: StreamingTcpServerExample
-description: Este ejemplo muestra un servidor TCP que acepta un canal y Lee los mensajes unidireccionales de una manera de transmisión por secuencias.
+description: En este ejemplo se muestra un servidor TCP que acepta un canal y lee mensajes un solo sentido en modo de streaming.
 ms.assetid: 0b9c6fba-9dee-4409-b715-7827793a5522
 keywords:
 - StreamingTcpServerExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9eb6e4e5c56fe422ce3bbc522013dbc666f5b68c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fb02ef32b93b02f0c12a8266274da09427b168294bdb821b02e9cb57c9a39270
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109825"
 ---
 # <a name="streamingtcpserverexample"></a>StreamingTcpServerExample
 
-Este ejemplo muestra un servidor TCP que acepta un canal y Lee los mensajes unidireccionales de una manera de transmisión por secuencias.
+En este ejemplo se muestra un servidor TCP que acepta un canal y lee mensajes un solo sentido en modo de streaming.
 
--   [StreamingTcpServer. cpp](#streamingtcpservercpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [StreamingTcpServer.cpp](#streamingtcpservercpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="streamingtcpservercpp"></a>StreamingTcpServer. cpp
+## <a name="streamingtcpservercpp"></a>StreamingTcpServer.cpp
 
 
 ```C++
@@ -378,7 +378,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -517,9 +517,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

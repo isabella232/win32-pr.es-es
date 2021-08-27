@@ -4,7 +4,7 @@ MS-HAID: vspixengine.PixEngineTextureDescriptor
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Estructura DeScriptor deEngineTexture
+title: Estructura DeScriptor deEngineEngineTexture
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: E28D5707-C4C4-4C99-9AA2-3397FEDC388B
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: e5725efaca9ccebb8e3cbcdee85bce55ea1dcd4b1e99cf2cf798d2f1678a2c28
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41f16744754286d38b195bffe530aed297fcf52a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117905185"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623351"
 ---
-# <a name="span-idvspixenginepixenginetexturedescriptorspanpixenginetexturedescriptor-structure"></a><span id="vspixengine.pixenginetexturedescriptor"></span>Estructura DeScriptor deEngineTexture
+# <a name="span-idvspixenginepixenginetexturedescriptorspanpixenginetexturedescriptor-structure"></a><span id="vspixengine.pixenginetexturedescriptor"></span>Estructura DeScriptor deEngineEngineTexture
 
 Representa una descripción de un recurso de textura.
 
@@ -41,7 +41,7 @@ Representa una descripción de un recurso de textura.
 Describe el formato de la textura.
 
 **mipmapCount**  
-Número de mapas MIP asociados a la textura.
+Número de mapas mip asociados a la textura.
 
 **arrayCount**  
 Cuando la textura es una matriz de texturas, el número de texturas de la matriz.
@@ -53,7 +53,7 @@ Número de muestras asociadas a la textura.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

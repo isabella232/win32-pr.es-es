@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVOwnerMapAlreadyExistsException'
-title: Constructor de EsentSLVOwnerMapAlreadyExistsException
+description: 'Más información sobre: Constructor EsentSLVOwnerMapAlreadyExistsException'
+title: Constructor EsentSLVOwnerMapAlreadyExistsException
 TOCTitle: 'EsentSLVOwnerMapAlreadyExistsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVOwnerMapAlreadyExistsException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvownermapalreadyexistsexception.esentslvownermapalreadyexistsexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5563fe10c2f6a29682e1497e93145649c3701a9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 480031884edcca3accf47057b98a55c04afd75e1f29a7174a97f33ea62cf40a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116745"
 ---
-# <a name="esentslvownermapalreadyexistsexception-constructor"></a>Constructor de EsentSLVOwnerMapAlreadyExistsException
+# <a name="esentslvownermapalreadyexistsexception-constructor"></a>Constructor EsentSLVOwnerMapAlreadyExistsException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVOwnerMapAlreadyExistsException()
 public EsentSLVOwnerMapAlreadyExistsException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -58,4 +58,4 @@ public EsentSLVOwnerMapAlreadyExistsException()
 
 [Miembros de EsentSLVOwnerMapAlreadyExistsException](./esentslvownermapalreadyexistsexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

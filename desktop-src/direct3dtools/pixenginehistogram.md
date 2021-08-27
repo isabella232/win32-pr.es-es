@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: afa9de8ecb598c76daee56367cc9f3ee80a0d0a43f706d11d2eaaa33cd814f76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6235287d2d87bf6fe1bd79c13813e6bb8500bc3
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118282314"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622171"
 ---
 # <a name="span-idvspixenginepixenginehistogramspanpixenginehistogram-structure"></a><span id="vspixengine.pixenginehistogram"></span>Estructura DegEngineHistogram
 
@@ -38,7 +38,7 @@ Representa un histograma de una textura.
 ## <a name="members"></a>Miembros
 
 **horizontalMin**  
-Valores mínimos para cada uno de los componentes X, Y, Z y W del eje horizontal (dominio) del histograma.
+Los valores mínimos para cada uno de los componentes X, Y, Z y W del eje horizontal (dominio) del histograma.
 
 **horizontalMax**  
 Valores máximos para cada uno de los componentes X, Y, Z y W del eje horizontal (dominio) del histograma.
@@ -54,7 +54,7 @@ Número de muestras que se consideran en el histograma.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

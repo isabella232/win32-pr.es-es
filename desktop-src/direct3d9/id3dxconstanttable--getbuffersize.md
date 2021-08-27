@@ -1,7 +1,7 @@
 ---
-description: Obtiene el tamaño de búfer de la tabla de constantes.
+description: Obtiene el tamaño de búfer de la tabla constante.
 ms.assetid: 77dbff34-a6b4-43d8-a790-d9e69ff09cfb
-title: 'ID3DXConstantTable:: GetBufferSize (método) (D3DX9Shader. h)'
+title: Método ID3DXConstantTable::GetBufferSize (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 68731f86db5aeae14bda4b0f2107c3f9d2f6d357
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b43bbc6064ab8d52fd961294b57a6faea0c2b83861e30c3e965b0bb9c7bd25cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096025"
 ---
-# <a name="id3dxconstanttablegetbuffersize-method"></a>ID3DXConstantTable:: GetBufferSize (método)
+# <a name="id3dxconstanttablegetbuffersize-method"></a>Método ID3DXConstantTable::GetBufferSize
 
-Obtiene el tamaño de búfer de la tabla de constantes.
+Obtiene el tamaño de búfer de la tabla constante.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,8 +50,8 @@ Devuelve el tamaño del búfer, en bytes.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: 'Texture2DArray:: GatherAlpha (S, Float, int) (función)'
-description: 'Devuelve los componentes alfa de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal. | Texture2DArray:: GatherAlpha (S, Float, int) (función)'
+title: Función Texture2DArray::GatherAlpha(S,float,int)
+description: Devuelve los componentes alfa de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Función Texture2DArray::GatherAlpha(S,float,int)
 ms.assetid: d7270277-53c1-4034-bf66-9a95bc1b51e4
 keywords:
-- GatherAlpha de función HLSL
+- Función GatherAlpha HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2052b780ab628a6a5bc174729119a9c2c8b8c8f4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e79805ff931c6fe2da880c3ae090b72b87713b1c0547e6bafcf5986f07b810f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118225"
 ---
-# <a name="texture2darraygatheralphasfloatint-function"></a>Texture2DArray:: GatherAlpha (S, Float, int) (función)
+# <a name="texture2darraygatheralphasfloatint-function"></a>Función Texture2DArray::GatherAlpha(S,float,int)
 
-Devuelve los componentes alfa de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.
+Devuelve los componentes alfa de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,25 +41,25 @@ TemplateType GatherAlpha(
 *s* \[ en\]
 </dt> <dd>
 
-Tipo: **muestra**
+Tipo: **sampler**
 
-Índice de muestra de base cero.
+Índice de sampler de base cero.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float3**
 
-Coordenadas de ejemplo (u, v).
+Coordenadas de ejemplo (u,v).
 
 </dd> <dt>
 
-*desplazamiento* \[ de\]
+*desplazamiento* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Desplazamiento que se aplica a la coordenada de textura antes del muestreo.
 
@@ -69,17 +69,17 @@ Desplazamiento que se aplica a la coordenada de textura antes del muestreo.
 
 Tipo: **TemplateType**
 
-Un valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
+Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los ejemplos de textura se pueden usar para la interpolación bilineal.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

@@ -1,7 +1,7 @@
 ---
 description: 'Método CRenderedInputPin.EndFlush: el método EndFlush finaliza una operación de vaciado. Este método implementa el método IPin::EndFlush.'
 ms.assetid: 5c27bf76-6886-431d-9958-5064c53909ec
-title: Método CRenderedInputPin.EndFlush (Amextra.h)
+title: Método CRenderedInputPin.EndFlush (Arendertra.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7be740df2b3b45d0b681a86b8f70bed8e1395e8f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 723ba917d7fc9c0a1d7ac0bb0c2e8dcaf1510212b0811d6e608d10f3a0a88224
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108025"
 ---
 # <a name="crenderedinputpinendflush-method"></a>Método CRenderedInputPin.EndFlush
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK si se realiza correctamente o un código de error de lo contrario.
+Devuelve S \_ OK si se realiza correctamente o un código de error en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -54,12 +54,12 @@ Este método borra los eventos [**EC \_ COMPLETE pendientes.**](ec-complete.md)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amextra.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Anicetra.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

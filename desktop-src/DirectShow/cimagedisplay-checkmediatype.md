@@ -1,7 +1,7 @@
 ---
 description: El método CheckMediaType determina si un tipo de medio propuesto es compatible con el formato de presentación.
 ms.assetid: 567663cf-c79f-4549-9fa9-b16da957d2b1
-title: Método CImageDisplay. CheckMediaType (Winutil. h)
+title: Método CImageDisplay.CheckMediaType (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a8ebcdbe6bbfe6538a2ea166be0816f31954c7d2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bad6a7242ba110ad3916d08070eef40a8fa1d5d658ea366732e14a1cd107d04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087395"
 ---
-# <a name="cimagedisplaycheckmediatype-method"></a>CImageDisplay. CheckMediaType, método
+# <a name="cimagedisplaycheckmediatype-method"></a>Método CImageDisplay.CheckMediaType
 
 El `CheckMediaType` método determina si un tipo de medio propuesto es compatible con el formato de presentación.
 
@@ -45,13 +45,13 @@ HRESULT CheckMediaType(
 *pmtIn* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que contiene el tipo de medio.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que contiene el tipo de medio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
@@ -59,7 +59,7 @@ Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
 |----------------------------------------------------------------------------------------------|------------------------------------------|
 | <dl> <dt>**E \_ FAIL**</dt> </dl>       | Tipo de medio no válido.<br/>           |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Tipo de medio no válido.<br/>           |
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | El tipo de medio es compatible.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | El tipo de medio es compatible.<br/> |
 
 
 
@@ -71,8 +71,8 @@ Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
 
 <dl> <dt>
 
-[**Clase CImageDisplay**](cimagedisplay.md)
+[**CImageDisplay (clase)**](cimagedisplay.md)
 </dt> </dl>
 
  

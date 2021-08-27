@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6e731582364df23bdef800ab5d2cf15dd5c882ae
-ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
+ms.openlocfilehash: 2362a5d6ec1a6a9d0d876ef0673f4775e2db3ade0a83696ad2b993e31e02a9ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107734190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099995"
 ---
 # <a name="interval-restarttype-element"></a>Elemento Interval (restartType)
 
@@ -47,7 +47,7 @@ El elemento se define mediante el [**tipo complejo restartType.**](taskscheduler
 
 
 
-| Elemento                                                                               | Derivado de                                                       | Description                                                                                                     |
+| Elemento                                                                               | Derivado de                                                       | Descripción                                                                                                     |
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | [**RestartOnFailure**](taskschedulerschema-restartonfailure-settingstype-element.md) | [**restartType**](taskschedulerschema-restarttype-complextype.md) | Especifica que el Programador de tareas intentará reiniciar la tarea si se produce un error en la tarea por cualquier motivo.<br/> |
 
@@ -55,24 +55,24 @@ El elemento se define mediante el [**tipo complejo restartType.**](taskscheduler
 
 ## <a name="remarks"></a>Comentarios
 
-Si se especifica este elemento, también se debe especificar el elemento [**Count**](taskschedulerschema-count-restarttype-element.md) para que el Programador de tareas el número de veces que debe intentar reiniciar la tarea.
+Si se especifica este elemento, también se debe especificar el elemento [**Count**](taskschedulerschema-count-restarttype-element.md) para que le informe al Programador de tareas el número de veces que debe intentar reiniciar la tarea.
 
 Para el desarrollo de C++, [**vea Propiedad RestartInterval de ITaskSettings.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_restartinterval)
 
-Para el desarrollo de scripts, [**vea TaskSettings.RestartInterval**](tasksettings-restartinterval.md).
+Para el desarrollo de scripts, [**vea TaskSettings.RestartInterval.**](tasksettings-restartinterval.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

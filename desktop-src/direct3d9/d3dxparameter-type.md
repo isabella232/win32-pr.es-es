@@ -1,7 +1,7 @@
 ---
-description: Describe los datos incluidos en la enumeración.
+description: Describe los datos contenidos en la enumeración .
 ms.assetid: 6d494fe6-fcd5-4e71-939c-257978b41499
-title: Enumeración D3DXPARAMETER_TYPE (D3dx9shader. h)
+title: D3DXPARAMETER_TYPE enumeración (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: 16ff89feb694bb6aae550422b6f9546c2268fc07
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2d342e664aac81cf337cde2de7669c94a4ac6c94ce85c564a29da1f38dd93bd0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096195"
 ---
-# <a name="d3dxparameter_type-enumeration"></a>\_Enumeración de tipo D3DXPARAMETER
+# <a name="d3dxparameter_type-enumeration"></a>D3DXPARAMETER \_ TYPE (enumeración)
 
-Describe los datos incluidos en la enumeración.
+Describe los datos contenidos en la enumeración .
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -59,42 +59,42 @@ typedef enum D3DXPARAMETER_TYPE {
 
 <dl> <dt>
 
-<span id="D3DXPT_VOID"></span><span id="d3dxpt_void"></span>**D3DXPT \_ void**
+<span id="D3DXPT_VOID"></span><span id="d3dxpt_void"></span>**D3DXPT \_ VOID**
 </dt> <dd>
 
 El parámetro es un puntero void.
 
 </dd> <dt>
 
-<span id="D3DXPT_BOOL"></span><span id="d3dxpt_bool"></span>**D3DXPT \_ bool**
+<span id="D3DXPT_BOOL"></span><span id="d3dxpt_bool"></span>**D3DXPT \_ BOOL**
 </dt> <dd>
 
-El parámetro es un valor booleano. Cualquier valor distinto de cero que se pase a [**ID3DXConstantTable:: SetBool**](id3dxconstanttable--setbool.md), [**ID3DXConstantTable:: SetBoolArray**](id3dxconstanttable--setboolarray.md), [**ID3DXConstantTable:: SetValue**](id3dxconstanttable--setvalue.md), [**ID3DXConstantTable:: SetVector**](id3dxconstanttable--setvector.md)o [**ID3DXConstantTable:: SetVectorArray**](id3dxconstanttable--setvectorarray.md) se asignará a 1 (true) antes de escribirse en la tabla de constantes. de lo contrario, el valor se establecerá en 0 en la tabla Constant.
+El parámetro es un valor booleano. Cualquier valor distinto de cero pasado a [**ID3DXConstantTable::SetBool**](id3dxconstanttable--setbool.md), [**ID3DXConstantTable::SetBoolArray**](id3dxconstanttable--setboolarray.md), [**ID3DXConstantTable::SetValue**](id3dxconstanttable--setvalue.md), [**ID3DXConstantTable::SetVector o**](id3dxconstanttable--setvector.md) [**ID3DXConstantTable::SetVectorArray**](id3dxconstanttable--setvectorarray.md) se asignará a 1 (TRUE) antes de escribirse en la tabla constante; De lo contrario, el valor se establecerá en 0 en la tabla constante.
 
 </dd> <dt>
 
-<span id="D3DXPT_INT"></span><span id="d3dxpt_int"></span>**D3DXPT \_ int**
+<span id="D3DXPT_INT"></span><span id="d3dxpt_int"></span>**D3DXPT \_ INT**
 </dt> <dd>
 
-El parámetro es un entero. Los valores de punto flotante pasados en [**ID3DXConstantTable:: SetValue**](id3dxconstanttable--setvalue.md), [**ID3DXConstantTable:: SetVector**](id3dxconstanttable--setvector.md)o [**ID3DXConstantTable:: SetVectorArray**](id3dxconstanttable--setvectorarray.md) se redondearán (a cero posiciones decimales) antes de escribirse en la tabla de constantes.
+El parámetro es un entero. Cualquier valor de punto flotante pasado a [**ID3DXConstantTable::SetValue**](id3dxconstanttable--setvalue.md), [**ID3DXConstantTable::SetVector**](id3dxconstanttable--setvector.md)o [**ID3DXConstantTable::SetVectorArray**](id3dxconstanttable--setvectorarray.md) se redondeará (a cero posiciones decimales) antes de escribirse en la tabla constante.
 
 </dd> <dt>
 
-<span id="D3DXPT_FLOAT"></span><span id="d3dxpt_float"></span>**D3DXPT \_ float**
+<span id="D3DXPT_FLOAT"></span><span id="d3dxpt_float"></span>**D3DXPT \_ FLOAT**
 </dt> <dd>
 
 El parámetro es un número de punto flotante.
 
 </dd> <dt>
 
-<span id="D3DXPT_STRING"></span><span id="d3dxpt_string"></span>**\_Cadena D3DXPT**
+<span id="D3DXPT_STRING"></span><span id="d3dxpt_string"></span>**D3DXPT \_ STRING**
 </dt> <dd>
 
 El parámetro es una cadena.
 
 </dd> <dt>
 
-<span id="D3DXPT_TEXTURE"></span><span id="d3dxpt_texture"></span>**\_Textura D3DXPT**
+<span id="D3DXPT_TEXTURE"></span><span id="d3dxpt_texture"></span>**TEXTURA \_ D3DXPT**
 </dt> <dd>
 
 El parámetro es una textura.
@@ -125,46 +125,46 @@ El parámetro es una textura 3D.
 <span id="D3DXPT_TEXTURECUBE"></span><span id="d3dxpt_texturecube"></span>**D3DXPT \_ TEXTURECUBE**
 </dt> <dd>
 
-El parámetro es una textura del cubo.
+El parámetro es una textura de cubo.
 
 </dd> <dt>
 
-<span id="D3DXPT_SAMPLER"></span><span id="d3dxpt_sampler"></span>**Muestra de D3DXPT \_**
+<span id="D3DXPT_SAMPLER"></span><span id="d3dxpt_sampler"></span>**D3DXPT \_ SAMPLER**
 </dt> <dd>
 
-El parámetro es una muestra.
+El parámetro es un sampler.
 
 </dd> <dt>
 
 <span id="D3DXPT_SAMPLER1D"></span><span id="d3dxpt_sampler1d"></span>**D3DXPT \_ SAMPLER1D**
 </dt> <dd>
 
-El parámetro es una muestra 1D.
+El parámetro es un sampler 1D.
 
 </dd> <dt>
 
 <span id="D3DXPT_SAMPLER2D"></span><span id="d3dxpt_sampler2d"></span>**D3DXPT \_ SAMPLER2D**
 </dt> <dd>
 
-El parámetro es una muestra 2D.
+El parámetro es un sampler 2D.
 
 </dd> <dt>
 
 <span id="D3DXPT_SAMPLER3D"></span><span id="d3dxpt_sampler3d"></span>**D3DXPT \_ SAMPLER3D**
 </dt> <dd>
 
-El parámetro es una muestra 3D.
+El parámetro es un sampler 3D.
 
 </dd> <dt>
 
 <span id="D3DXPT_SAMPLERCUBE"></span><span id="d3dxpt_samplercube"></span>**D3DXPT \_ SAMPLERCUBE**
 </dt> <dd>
 
-El parámetro es una muestra de cubo.
+El parámetro es un sampler de cubo.
 
 </dd> <dt>
 
-<span id="D3DXPT_PIXELSHADER"></span><span id="d3dxpt_pixelshader"></span>**D3DXPT \_ u**
+<span id="D3DXPT_PIXELSHADER"></span><span id="d3dxpt_pixelshader"></span>**D3DXPT \_ PIXELSHADER**
 </dt> <dd>
 
 El parámetro es un sombreador de píxeles.
@@ -188,21 +188,21 @@ El parámetro es un fragmento de sombreador de píxeles.
 <span id="D3DXPT_VERTEXFRAGMENT"></span><span id="d3dxpt_vertexfragment"></span>**D3DXPT \_ VERTEXFRAGMENT**
 </dt> <dd>
 
-El parámetro es un fragmento de sombreador de vértices.
+El parámetro es un fragmento del sombreador de vértices.
 
 </dd> <dt>
 
-<span id="D3DXPT_UNSUPPORTED"></span><span id="d3dxpt_unsupported"></span>**D3DXPT \_ no compatible**
+<span id="D3DXPT_UNSUPPORTED"></span><span id="d3dxpt_unsupported"></span>**D3DXPT \_ NO COMPATIBLE**
 </dt> <dd>
 
-No se admite el parámetro.
+No se admite el parámetro .
 
 </dd> <dt>
 
-<span id="D3DXPT_FORCE_DWORD"></span><span id="d3dxpt_force_dword"></span>**D3DXPT \_ forzar \_ DWORD**
+<span id="D3DXPT_FORCE_DWORD"></span><span id="d3dxpt_force_dword"></span>**D3DXPT \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -212,7 +212,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 
@@ -220,7 +220,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> <dt>
 
 [**D3DXSHADER \_ TYPEINFO**](d3dxshader-typeinfo.md)

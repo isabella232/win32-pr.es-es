@@ -1,19 +1,19 @@
 ---
-description: El ejemplo siguiente contiene una \# solicitud de inscripción PKCS 7 en nombre de (EOBO) que se muestra en formato ASN. 1. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+description: El ejemplo siguiente contiene una solicitud de inscripción en nombre de PKCS 7 (EOBO) que se muestra en formato \# ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 ms.assetid: b6945071-8019-40bb-9f71-13ae3bd57948
-title: ASN de PKCS \# 7 EOBO codificado. 1
+title: PKCS \# 7 EOBO codificado ASN.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 165c0ac9f1924a8cde0298ae1d21c3d8cd330cda
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b95d2d8901b1ca1eff5a7e88fa776dab1815627d970bb83a8d1e231fe5ab010a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127215"
 ---
-# <a name="pkcs-7-eobo-encoded-asn1"></a>ASN de PKCS \# 7 EOBO codificado. 1
+# <a name="pkcs-7-eobo-encoded-asn1"></a>PKCS \# 7 EOBO codificado ASN.1
 
-El ejemplo siguiente contiene una \# solicitud de inscripción PKCS 7 en nombre de (EOBO) que se muestra en formato ASN. 1. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+El ejemplo siguiente contiene una solicitud de inscripción en nombre de PKCS 7 (EOBO) que se muestra en formato \# ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 
 ``` syntax
 [NewRequest]
@@ -24,11 +24,11 @@ RequesterName=Domain\TargetUser
 CertificateTemplate=User
 ```
 
-Esta configuración genera el siguiente resultado de ejemplo. La configuración especifica el tipo de solicitud (PKCS \# 7), el nombre de la entidad que solicita la inscripción y el nombre de la plantilla. La plantilla de usuario especifica que:
+Esta configuración genera la siguiente salida de ejemplo. La configuración especifica el tipo de solicitud (PKCS 7), el nombre de la entidad que solicita la inscripción y el \# nombre de la plantilla. La plantilla Usuario especifica que:
 
--   La solicitud debe usar el proveedor de servicios criptográficos de base de Microsoft 1,0 o el proveedor de servicios criptográficos de Microsoft mejorado 1,0.
--   El nombre del firmante se debe crear a partir de Active Directory.
--   La solicitud incluye el nombre de la plantilla de certificado, el uso mejorado de clave (EKU) y las extensiones de uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), correo electrónico seguro y autenticación del cliente.
+-   La solicitud debe usar el proveedor de servicios criptográficos base de Microsoft 1.0 o el proveedor de servicios criptográficos mejorado de Microsoft 1.0.
+-   El nombre del sujeto debe crearse a partir Active Directory.
+-   La solicitud incluye las extensiones Nombre de plantilla de certificado, Uso mejorado de clave (EKU) y Uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), el correo electrónico seguro y la autenticación de cliente.
 
 ``` syntax
 0000: 30 82 0a de               ; SEQUENCE (ade Bytes)

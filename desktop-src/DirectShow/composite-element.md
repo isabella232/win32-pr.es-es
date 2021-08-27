@@ -4,17 +4,17 @@ ms.assetid: 7551da3a-1da6-426a-ba9d-f715df53718f
 title: elemento composite
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5eff3e0c16040f837e4c8a792ebac3124d723d1
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: dec9ce7c889829ee227ce31df25d5d17985e877ed107870170f6939aebf14fd3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084315"
 ---
 # <a name="composite-element"></a>elemento composite
 
 > [!Note]  
-> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 

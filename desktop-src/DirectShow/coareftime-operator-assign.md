@@ -1,7 +1,7 @@
 ---
 description: Este operador asigna una nueva hora de referencia.
 ms.assetid: ae6a33ab-f4e0-4f1c-80a0-8a25ee1e9dc5
-title: Método COARefTime. Operator = (Ctlutil. h)
+title: Método COARefTime.operator= (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3f5a051cea555975fd8606c3693d4b7d63cb9ce4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 31784a008a2074156c69abf868739ec27c459dabdba1437397780086d28f9847
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084465"
 ---
-# <a name="coareftimeoperator-method-ctlutilh"></a>Método COARefTime. Operator = (Ctlutil. h)
+# <a name="coareftimeoperator-method-ctlutilh"></a>Método COARefTime.operator= (Ctlutil.h)
 
 Este operador asigna una nueva hora de referencia.
 
@@ -42,16 +42,16 @@ COARefTime& operator=(
 
 <dl> <dt>
 
-*Rd* \[ CLI\]
+*rd* \[ Ref\]
 </dt> <dd>
 
-Referencia a un valor **Double** que especifica el nuevo tiempo de referencia en segundos.
+Referencia a un **valor double** que especifica el nuevo tiempo de referencia en segundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve una referencia al objeto.
+Devuelve una referencia al objeto .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve una referencia al objeto.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve una referencia al objeto.
 
 <dl> <dt>
 
-[**Clase COARefTime**](coareftime.md)
+[**COARefTime (clase)**](coareftime.md)
 </dt> </dl>
 
  

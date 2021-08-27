@@ -1,5 +1,5 @@
 ---
-description: Las tareas de WMI para discos y sistemas de archivos obtienen información sobre el estado de hardware de la unidad de disco y los volúmenes lógicos. Para ver otros ejemplos, vea el ScriptCenter de TechNet en https://www.microsoft.com/technet .
+description: Las tareas WMI para discos y sistemas de archivos obtienen información sobre el estado de hardware de la unidad de disco y los volúmenes lógicos. Para ver otros ejemplos, consulte ScriptCenter de TechNet en https://www.microsoft.com/technet .
 ms.assetid: d310e5e6-3b67-41bc-b5f2-cea33d0a7a2b
 ms.tgt_platform: multiple
 title: 'Tareas de WMI: Discos y sistemas de archivos '
@@ -10,42 +10,42 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0357a91d893120ec1bb72a7c1d54ad4a5e9a0acf
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 9d4bd8b99374cb8e8367470eb6c7e7d750ad077d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105718581"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625411"
 ---
 # <a name="wmi-tasks-disks-and-file-systems"></a>Tareas de WMI: Discos y sistemas de archivos 
 
-Las tareas de WMI para discos y sistemas de archivos obtienen información sobre el estado de hardware de la unidad de disco y los volúmenes lógicos. Para ver otros ejemplos, vea el ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Las tareas WMI para discos y sistemas de archivos obtienen información sobre el estado de hardware de la unidad de disco y los volúmenes lógicos. Para ver otros ejemplos, consulte ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Los ejemplos de scripts que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información acerca de cómo usar el script para obtener datos de equipos remotos, consulte [conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md).
+Los ejemplos de script que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información sobre cómo usar el script para obtener datos de equipos remotos, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 
 En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con la extensión. vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una extensión. txt al archivo.
-2.  Abra una ventana del símbolo del sistema y navegue hasta el directorio en el que guardó el archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, *comofilename.vbs*. Asegúrese de que el editor de texto no agrega .txt extensión al archivo.
+2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
-4.  Si no puede obtener acceso a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
+4.  Si no puede acceder a un registro de eventos, compruebe si se ejecuta desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
 
 > [!Note]  
-> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts de WMI pueden generar grandes cantidades de resultados, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script de *filename.vbs* a *outfile.txt*.
+> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script *filename.vbs* a *outfile.txt*.
 
  
 
-En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para obtener distintos tipos de datos del equipo local.
+En la tabla siguiente se muestran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -55,11 +55,11 @@ En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para ob
 </thead>
 <tbody>
 <tr class="odd">
-<td>... ¿Cuánto espacio en disco usa actualmente cada usuario en un equipo?</td>
-<td>Si utiliza cuotas de disco, use la clase <a href="/previous-versions/windows/desktop/wmipdskq/win32-diskquota"><strong>Win32_DiskQuota</strong></a> y recupere los valores de las propiedades <strong>User</strong> y <strong>DiskSpaceUsed</strong> .<br/> <span data-codelanguage="VisualBasic"></span>
+<td>... averigue cuánto espacio en disco usa actualmente cada usuario en un equipo?</td>
+<td>Si usa cuotas de disco, use la clase <a href="/previous-versions/windows/desktop/wmipdskq/win32-diskquota"><strong>Win32_DiskQuota</strong></a> y recupere los valores de las propiedades <strong>User</strong> y <strong>DiskSpaceUsed.</strong><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -82,7 +82,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -105,13 +105,13 @@ foreach ($objQuota in $colItems)
 </td>
 </tr>
 <tr class="even">
-<td>... ¿determinar cuándo se ha agregado o quitado una unidad extraíble de un equipo?</td>
-<td><p>Use un script de supervisión que consulte la clase <a href="/windows/desktop/CIMWin32Prov/win32-volumechangeevent"><strong>Win32_VolumeChangeEvent</strong></a> .</p>
+<td>... determinar cuándo se ha agregado o quitado una unidad extraíble de un equipo?</td>
+<td><p>Use un script de supervisión que consulta la <a href="/windows/desktop/CIMWin32Prov/win32-volumechangeevent"><strong>Win32_VolumeChangeEvent</strong></a> clase.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -137,12 +137,12 @@ Loop</code></pre></td>
 </tr>
 <tr class="odd">
 <td>... determinar si un CD está en una unidad de CD-ROM?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-cdromdrive"><strong>Win32_CDROMDrive</strong></a> y la propiedad <strong>MediaLoaded</strong> .</p>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-cdromdrive"><strong>Win32_CDROMDrive</strong></a> clase y la <strong>propiedad MediaLoaded.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -164,7 +164,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -187,13 +187,13 @@ foreach ($objItem in $colItems)
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿determinar si un disco está en la unidad de disquete?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> y Compruebe la propiedad <strong>FreeSpace</strong> . Si el valor es null, no hay ningún disco en la unidad.</p>
+<td>... determinar si un disco está en la unidad de disquete?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> clase y compruebe la <strong>propiedad FreeSpace.</strong> Si el valor es Null, no hay ningún disco en la unidad.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -220,7 +220,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -246,13 +246,13 @@ foreach ($objItem in $colItems)
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿distinguir entre un disco duro fijo y un disco duro extraíble?</td>
-<td><p>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> y compruebe el valor de la propiedad <strong>Drivetype</strong> .</p>
+<td>... distinguir entre un disco duro fijo y un disco duro extraíble?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> clase y compruebe el valor de la <strong>propiedad DriveType.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -293,7 +293,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -326,13 +326,13 @@ foreach ($objDisk in $colDisks)
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿determinar qué sistema de archivos se está usando en una unidad?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> y la propiedad <strong>filesystem</strong> .</p>
+<td>... determinar qué sistema de archivos está en uso en una unidad?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> clase y la <strong>propiedad FileSystem.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -355,13 +355,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿Cuál es la cantidad de espacio libre disponible en una unidad?</td>
-<td><p>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> y la propiedad <strong>FreeSpace</strong> .</p>
+<td>... determinar la cantidad de espacio disponible en una unidad?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> clase y la <strong>propiedad FreeSpace.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -384,13 +384,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿determinar el tamaño de una unidad?</td>
-<td><p>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> y la propiedad <strong>size</strong> .</p>
+<td>... determinar el tamaño de una unidad?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> clase y la <strong>propiedad Size.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -413,13 +413,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿averiguar qué unidades están asignadas en un equipo?</td>
-<td><p>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-mappedlogicaldisk"><strong>Win32_MappedLogicalDisk</strong></a> .</p>
+<td>... averiguar qué unidades están asignadas en un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-mappedlogicaldisk"><strong>Win32_MappedLogicalDisk</strong></a> clase .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -444,13 +444,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿desfragmentar un disco duro?</td>
-<td><p>Use la clase <a href="/previous-versions/windows/desktop/legacy/aa394515(v=vs.85)"><strong>Win32_Volume</strong></a> y el método <a href="/previous-versions/windows/desktop/vdswmi/defrag-method-in-class-win32-volume"><strong>Defrag</strong></a> .</p>
+<td>... desfragmentar un disco duro?</td>
+<td><p>Use la <a href="/previous-versions/windows/desktop/legacy/aa394515(v=vs.85)"><strong>Win32_Volume</strong></a> y el <a href="/previous-versions/windows/desktop/vdswmi/defrag-method-in-class-win32-volume"><strong>método Defrag.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -472,17 +472,17 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿detectar la letra de unidad asociada a una partición de disco lógico?</td>
+<td>... detectar qué letra de unidad está asociada a una partición de disco lógico?</td>
 <td><ol>
-<li>Comience con la clase <a href="/windows/desktop/CIMWin32Prov/win32-diskdrive"><strong>Win32_DiskDrive</strong></a> y consulte las instancias de <a href="/windows/desktop/CIMWin32Prov/win32-diskpartition"><strong>Win32_DiskPartition</strong></a> mediante la propiedad <strong>DeviceID</strong> y la clase de asociación <a href="/windows/desktop/CIMWin32Prov/win32-diskdrivetodiskpartition"><strong>Win32_DiskDriveToDiskPartition</strong></a> . Ahora tiene una colección de las particiones en la unidad física.</li>
-<li>Consulte el <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> que representa la partición mediante la propiedad <a href="/windows/desktop/CIMWin32Prov/win32-diskpartition"><strong>Win32_DiskPartition. DeviceID</strong></a> y la clase de asociación <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisktopartition"><strong>Win32_LogicalDiskToPartition</strong></a> .</li>
-<li>Obtenga la letra de unidad del <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk. DeviceID</strong></a>.</li>
+<li>Comience con la <a href="/windows/desktop/CIMWin32Prov/win32-diskdrive"><strong>clase Win32_DiskDrive</strong></a> consulta y <a href="/windows/desktop/CIMWin32Prov/win32-diskpartition"><strong></strong></a> las instancias de Win32_DiskPartition mediante la propiedad <strong>DeviceID</strong> y la <a href="/windows/desktop/CIMWin32Prov/win32-diskdrivetodiskpartition"><strong>Win32_DiskDriveToDiskPartition</strong></a> asociación. Ahora tiene una colección de las particiones en la unidad física.</li>
+<li>Consulta de la <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk</strong></a> que representa la partición mediante la <a href="/windows/desktop/CIMWin32Prov/win32-diskpartition"><strong>propiedad Win32_DiskPartition.DeviceID</strong></a> <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisktopartition"><strong>y Win32_LogicalDiskToPartition</strong></a> clase de asociación.</li>
+<li>Obtenga la letra de unidad del <a href="/windows/desktop/CIMWin32Prov/win32-logicaldisk"><strong>Win32_LogicalDisk.DeviceID</strong></a>.</li>
 </ol>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -541,13 +541,13 @@ Next</code></pre></td>
 
 <dl> <dt>
 
-[Tareas de WMI para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
+[Tareas wmi para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Ejemplos de aplicaciones de C++ de WMI](wmi-c---application-examples.md)
+[Ejemplos de aplicación C++ de WMI](wmi-c---application-examples.md)
 </dt> <dt>
 
-[ScriptCenter de TechNet](https://www.microsoft.com/technet/scriptcenter)
+[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>
 
  

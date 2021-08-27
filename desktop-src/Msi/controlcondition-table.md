@@ -1,19 +1,19 @@
 ---
-description: La tabla ControlCondition permite que un autor especifique acciones especiales que se aplicarán a los controles basándose en el resultado de una instrucción condicional. Por ejemplo, al usar esta tabla, el autor podría optar por ocultar un control basado en la propiedad VersionNT.
+description: La tabla ControlCondition permite a un autor especificar acciones especiales que se aplicarán a los controles en función del resultado de una instrucción condicional. Por ejemplo, con esta tabla, el autor podría optar por ocultar un control basado en la propiedad VersionNT.
 ms.assetid: e36d20ec-cd7b-494f-b517-c07b40d2a338
 title: Tabla ControlCondition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 671dcdee6e2ed1067c51a04084693c276b8db2d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 637d9470af21ad1f8a15c2697ba34a6c9866c822c21c6f3a85241bac1309f76b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105262"
 ---
 # <a name="controlcondition-table"></a>Tabla ControlCondition
 
-La tabla ControlCondition permite que un autor especifique acciones especiales que se aplicarán a los controles basándose en el resultado de una instrucción condicional. Por ejemplo, al usar esta tabla, el autor podría optar por ocultar un control basado en la propiedad [**VersionNT**](versionnt.md) .
+La tabla ControlCondition permite a un autor especificar acciones especiales que se aplicarán a los controles en función del resultado de una instrucción condicional. Por ejemplo, con esta tabla, el autor podría optar por ocultar un control basado en la [**propiedad VersionNT.**](versionnt.md)
 
 La tabla ControlCondition tiene las columnas siguientes.
 
@@ -37,29 +37,29 @@ La tabla ControlCondition tiene las columnas siguientes.
 <span id="Dialog_"></span><span id="dialog_"></span><span id="DIALOG_"></span>Diálogo\_
 </dt> <dd>
 
-Una clave externa a la primera columna de la [tabla del cuadro de diálogo](dialog-table.md). La combinación de este campo con el campo de control \_ identifica un control único.
+Clave externa de la primera columna de la tabla [Dialog](dialog-table.md). La combinación de este campo con el campo Control \_ identifica un control único.
 
 </dd> <dt>
 
 <span id="Control_"></span><span id="control_"></span><span id="CONTROL_"></span>Control\_
 </dt> <dd>
 
-Una clave externa a la segunda columna de la [tabla de control](control-table.md). Al combinar este campo, el campo del cuadro de diálogo \_ identifica un control único.
+Clave externa de la segunda columna de la [tabla Control](control-table.md). Al combinar este campo, el \_ campo Diálogo identifica un control único.
 
 </dd> <dt>
 
-<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Actuar
+<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Acción
 </dt> <dd>
 
-Acción que se va a realizar en el control. En la tabla siguiente se muestran las acciones posibles.
+Acción que se va a realizar en el control . Las acciones posibles se muestran en la tabla siguiente.
 
 
 
 | Value   | Significado                     |
 |---------|-----------------------------|
-| Valor predeterminado | Establecer el control como el valor predeterminado. |
-| Disable | Deshabilite el control.        |
-| Habilitar  | Habilite el control.         |
+| Valor predeterminado | Establezca el control como predeterminado. |
+| Deshabilitar | Deshabilite el control .        |
+| Habilitar  | Habilite el control .         |
 | Ocultar    | Oculte el control.           |
 | Mostrar    | Mostrar el control.        |
 
@@ -69,27 +69,27 @@ Acción que se va a realizar en el control. En la tabla siguiente se muestran la
 
 </dd> <dt>
 
-<span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Cumple
+<span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Condición
 </dt> <dd>
 
-Instrucción condicional que especifica en qué condiciones se debe desencadenar la acción. Esta columna no se puede dejar en blanco. Si esta instrucción no se evalúa como TRUE, la acción no tiene lugar. Si se establece en 1, siempre se aplica la acción. Para obtener información sobre la sintaxis de las instrucciones condicionales, vea sintaxis de la [instrucción condicional](conditional-statement-syntax.md).
+Instrucción condicional que especifica en qué condiciones se debe desencadenar la acción. Es posible que esta columna no se haya dejado en blanco. Si esta instrucción no se evalúa como TRUE, la acción no tiene lugar. Si se establece en 1, la acción siempre se aplica. Para obtener información sobre la sintaxis de las instrucciones condicionales, vea [Sintaxis de instrucciones condicionales.](conditional-statement-syntax.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si desea ocultar y deshabilitar un control [Pushbutton](pushbutton-control.md) o un [control de casilla](checkbox-control.md) basado en una instrucción condicional en el campo condición de la tabla ControlCondition, debe usar cuatro registros para que cada control se deshabilite y oculte el control. Todavía se puede tener acceso a los controles de pulsador o casilla que solo se han ocultado mediante teclas de método abreviado.
+Si desea ocultar y deshabilitar un [control PushButton](pushbutton-control.md) o [un control CheckBox](checkbox-control.md) basado en una instrucción condicional en el campo Condición de la tabla ControlCondition, debe usar cuatro registros para que cada control se deshabilite y oculte el control. Todavía se puede acceder a los controles PushButton o CheckBox que solo se han ocultado mediante teclas de método abreviado.
 
-Por ejemplo, los registros siguientes ocultan y deshabilitan controla en el cuadro de diálogo cuando se instala el producto. El control estará visible y habilitado cuando el producto no esté instalado.
+Por ejemplo, los registros siguientes ocultan y deshabilitan ControlA en DialogA cuando se instala el producto. El control estará visible y habilitado cuando el producto no esté instalado.
 
 
 
 | Diálogo  | Control  | Acción  | Condición                      |
 |---------|----------|---------|--------------------------------|
-| Cuadro de diálogo | ControlA | Ocultar    | [**Instalado**](installed.md) |
-| Cuadro de diálogo | ControlA | Disable | Instalado                      |
-| Cuadro de diálogo | ControlA | Mostrar    | NO instalado                  |
-| Cuadro de diálogo | ControlA | Habilitar  | NO instalado                  |
+| DialogA | ControlA | Ocultar    | [**Instalado**](installed.md) |
+| DialogA | ControlA | Deshabilitar | Instalado                      |
+| DialogA | ControlA | Mostrar    | NO instalado                  |
+| DialogA | ControlA | Habilitar  | NO instalado                  |
 
 
 

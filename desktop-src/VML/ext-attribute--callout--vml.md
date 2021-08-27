@@ -1,24 +1,24 @@
 ---
-title: EXT (atributo, Callout) (VML)
-description: EXT (atributo, Callout) (VML)
+title: Atributo Ext (llamada)(VML)
+description: Atributo Ext (llamada)(VML)
 ms.assetid: 4d701205-8c30-4251-86f0-dc25654c42f4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86b8ac85219d04fd71cd0e4c24bf97d77fdf4a9c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 19801799232f0e6dea320e7ea0fa0697d2e4c868e7c5f99944157365e4cff978
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099325"
 ---
-# <a name="ext-attribute-calloutvml"></a>EXT (atributo, Callout) (VML)
+# <a name="ext-attribute-calloutvml"></a>Atributo Ext (llamada)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define cómo se procesa una llamada. Lectura/escritura **Cadena**.
 
@@ -28,14 +28,14 @@ Define cómo se procesa una llamada. Lectura/escritura **Cadena**.
 
 **Sintaxis de etiquetas**
 
-<o: *elemento* v:EXT = " *expresión* " >
+<o: *element* v:ext=" *expression* ">
 
 **Comentarios:**
 
-Este atributo se utiliza para indicar a los Editores gráficos cómo procesar el elemento de **llamada** . El valor predeterminado es **Edit**. Se pueden definir otros valores para Editores gráficos específicos.
+Este atributo se usa para decir a los editores gráficos cómo procesar el **elemento Callout.** El valor predeterminado es **edit**. Se pueden definir otros valores para editores gráficos específicos.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

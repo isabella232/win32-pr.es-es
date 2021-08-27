@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_OBJECTLIST estructura'
+description: 'Más información sobre: JET_OBJECTLIST structure'
 title: Estructura de JET_OBJECTLIST
 TOCTitle: JET_OBJECTLIST Structure
 ms:assetid: 95f12f2a-13da-48d4-a254-fc0cb718b17d
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 21a3ea030421406a5bc571bb5cc1887f77b4710d
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: a2f035a15c0f0f2861c7c6698878e0782feb35ce
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983128"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476541"
 ---
 # <a name="jet_objectlist-structure"></a>Estructura de JET_OBJECTLIST
 
@@ -112,7 +112,7 @@ Identificador de columna del número de páginas que usa el objeto.
 
 Esta columna es una [JET_coltypLong](./jet-coltyp.md).
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
 Cada fila de la tabla temporal corresponde a un objeto de la base de datos.
 
@@ -123,11 +123,7 @@ Actualmente, solo la información sobre las tablas estará en la tabla temporal.
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

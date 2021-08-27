@@ -1,7 +1,7 @@
 ---
-description: Establece la tabla de constantes con los datos en el búfer.
+description: Establece la tabla constante con los datos del búfer.
 ms.assetid: 55cf5456-8f23-405d-9329-8ff737c5c139
-title: 'ID3DXTextureShader:: SetValue (método) (D3DX9Shader. h)'
+title: Método ID3DXTextureShader::SetValue (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2f18902c73f44bc4294e5152f8da5ea3e37f27ba
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9ba652d4fd295103409c073287264d3a01b6352c465532719f01e427ad4dedcd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105670217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095645"
 ---
-# <a name="id3dxtextureshadersetvalue-method"></a>ID3DXTextureShader:: SetValue (método)
+# <a name="id3dxtextureshadersetvalue-method"></a>Método ID3DXTextureShader::SetValue
 
-Establece la tabla de constantes con los datos en el búfer.
+Establece la tabla constante con los datos del búfer.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,28 +42,28 @@ HRESULT SetValue(
 
 <dl> <dt>
 
-*hConstant* \[ de\]
+*hConstant* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de una constante. Vea [D3DXHANDLE](d3dxfx.md).
+Identificador único de una constante. Vea [D3DXHANDLE.](d3dxfx.md)
 
 </dd> <dt>
 
-*pdata* \[ de\]
+*pData* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Un puntero a un búfer que contiene los datos de constante.
+Puntero a un búfer que contiene los datos constantes.
 
 </dd> <dt>
 
-*Bytes* \[ de\]
+*Bytes* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Tamaño del búfer, en bytes.
 
@@ -73,7 +73,7 @@ Tamaño del búfer, en bytes.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

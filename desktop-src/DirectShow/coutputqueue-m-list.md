@@ -1,7 +1,7 @@
 ---
 description: Cola de ejemplo multimedia.
 ms.assetid: 910f1c0c-2ce9-452f-a97b-aa424da9a93e
-title: 'Miembro COutputQueue:: m_List (Outputq. h)'
+title: COutputQueue::m_List miembro (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 32840ed0ed9f976cceb1e0dc6dc8debc3f774377
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3e261116961f23c845ec2e27c6f20748b2c50cd9c036d9bc7d42bfe24b9b4fb9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087075"
 ---
-# <a name="coutputqueuem_list-member"></a>Miembro de la lista COutputQueue:: m \_
+# <a name="coutputqueuem_list-member"></a>Miembro de lista COutputQueue::m \_
 
 Cola de ejemplo multimedia.
 
@@ -36,9 +36,9 @@ CSampleList *m_List;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta variable miembro es un puntero a un objeto [**CGenericList**](cgenericlist.md) que contiene punteros [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) . El tipo **CSampleList** se define de la siguiente manera:
+Esta variable miembro es un puntero a [**un objeto CGenericList**](cgenericlist.md) que contiene [**punteros IMediaSample.**](/windows/desktop/api/Strmif/nn-strmif-imediasample) El **tipo CSampleList** se define de la siguiente manera:
 
 ``` syntax
 typedef CGenericList<IMediaSample> CSampleList;
@@ -50,8 +50,8 @@ typedef CGenericList<IMediaSample> CSampleList;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ typedef CGenericList<IMediaSample> CSampleList;
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

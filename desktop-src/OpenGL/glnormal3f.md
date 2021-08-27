@@ -1,9 +1,9 @@
 ---
-title: función glNormal3f (GL. h)
-description: Establece el vector normal actual. | función glNormal3f (GL. h)
+title: Función glNormal3f (Gl.h)
+description: Establece el vector normal actual. | Función glNormal3f (Gl.h)
 ms.assetid: 8407996e-47fd-4c30-91f6-53d4341a1fca
 keywords:
-- glNormal3f (función) OpenGL
+- Función glNormal3f OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72e83b874b1588ad8bd91da9e5c9f831062de9cc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2de6edaab0f83c9b05a561eb8f857086fea76f41a84a4869d5d9f99149482df1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128155"
 ---
-# <a name="glnormal3f-function"></a>glNormal3f función)
+# <a name="glnormal3f-function"></a>Función glNormal3f
 
 Establece el vector normal actual.
 
@@ -42,24 +42,24 @@ void WINAPI glNormal3f(
 
 <dl> <dt>
 
-*NX* 
+*Nx* 
 </dt> <dd>
 
-Especifica la coordenada x del nuevo vector normal actual.
+Especifica la coordenada x para el nuevo vector normal actual.
 
 </dd> <dt>
 
-*1002* 
+*Ny* 
 </dt> <dd>
 
-Especifica la coordenada y del nuevo vector normal actual.
+Especifica la coordenada Y para el nuevo vector normal actual.
 
 </dd> <dt>
 
-*Zelanda* 
+*Nz* 
 </dt> <dd>
 
-Especifica la coordenada z del nuevo vector normal actual.
+Especifica la coordenada z para el nuevo vector normal actual.
 
 </dd> </dl>
 
@@ -67,17 +67,17 @@ Especifica la coordenada z del nuevo vector normal actual.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La normal actual se establece en las coordenadas especificadas siempre que se llama a la función **glNormal3f** .
+La normal actual se establece en las coordenadas dadas cada vez que se llama a la **función glNormal3f.**
 
-Los argumentos byte, Short o Integer se convierten al formato de punto flotante con una asignación lineal que asigna el valor entero representable más positivo a 1,0 y el valor entero representable más negativo a-1,0.
+Los argumentos byte, short o integer se convierten al formato de punto flotante con una asignación lineal que asigna el valor entero representable más positivo a 1,0 y el valor entero representable más negativo a -1,0.
 
-Las normales especificadas mediante **glNormal3f** no necesitan tener una longitud de unidad. Si la normalización está habilitada, las normales especificadas con **glNormal3f** se normalizan después de la transformación. Puede controlar la normalización mediante [**glEnable**](glenable.md) y [**glDisable**](gldisable.md) con el argumento libro de contabilidad \_ . De forma predeterminada, la normalización está deshabilitada. Puede actualizar la normal actual en cualquier momento. En concreto, puede llamar a **glNormal3f** entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md). Las siguientes funciones recuperan información relacionada con **glNormal3f**:
+Las normales especificadas mediante **glNormal3f** no necesitan tener longitud de unidad. Si la normalización está habilitada, las normales especificadas **con glNormal3f** se normalizan después de la transformación. Puede controlar la normalización mediante [**glEnable**](glenable.md) y [**glDisable**](gldisable.md) con el argumento GL \_ NORMALIZE. De forma predeterminada, la normalización está deshabilitada. Puede actualizar la normal actual en cualquier momento. En concreto, puede llamar a **glNormal3f** entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). Las siguientes funciones recuperan información relacionada **con glNormal3f**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ actual \_ normal
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ CURRENT \_ NORMAL
 
-[**glIsEnable**](glisenabled.md) con el argumento \_ normalizar libro de contabilidad
+[**glIsEnable**](glisenabled.md) con el argumento GL \_ NORMALIZE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ Las normales especificadas mediante **glNormal3f** no necesitan tener una longit
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

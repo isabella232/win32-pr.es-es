@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aa8fd3a6b082d4bba54fdc3d43848d6a6cbe5ff6deacb4e041dba5cb4c0e3b09
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9e4db4db1940da3f8df26eb0151344eef99e0de2
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119931465"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623111"
 ---
 # <a name="contextmap-element"></a>Elemento ContextMap
 
-Representa una [**asignación de pares ContextMenu**](windowsribbon-element-contextmenu.md) [**y MiniToolbar.**](windowsribbon-element-minitoolbar.md)
+Representa una [**asignación de pares ContextMenu**](windowsribbon-element-contextmenu.md) y [**MiniToolbar.**](windowsribbon-element-minitoolbar.md)
 
 ## <a name="usage"></a>Uso
 
@@ -39,16 +39,16 @@ Representa una [**asignación de pares ContextMenu**](windowsribbon-element-cont
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -64,15 +64,15 @@ Representa una [**asignación de pares ContextMenu**](windowsribbon-element-cont
 <td><strong>ContextMenu</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Debe corresponder a un <a href="windowsribbon-element-contextmenu.md"><strong>nombre ContextMenu</strong></a> <em>existente.</em><br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<td>Debe corresponder a un nombre <a href="windowsribbon-element-contextmenu.md"><strong>ContextMenu</strong></a> <em>existente.</em><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena compuesta de cualquier secuencia de caracteres, incluidos los espacios en blanco y los caracteres de salto de línea.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>MiniToolbar</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Debe corresponder a un nombre <a href="windowsribbon-element-minitoolbar.md"><strong>de MiniToolbar</strong></a> <em>existente.</em><br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena compuesta de cualquier secuencia de caracteres, incluidos los espacios en blanco y los caracteres de salto de línea.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>

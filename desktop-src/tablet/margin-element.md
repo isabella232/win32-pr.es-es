@@ -4,12 +4,12 @@ ms.assetid: c3047706-affd-4feb-9d48-cfb4c7dd6fa0
 title: Elemento Margin
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0ff764585919ff144ebc25ac568caf1af74410a2f337beb03d5ce484f7d1abe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 78c264c2470d070353d1fd19340a161cf765bc05
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119350445"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478671"
 ---
 # <a name="margin-element"></a>Elemento Margin
 
@@ -38,65 +38,14 @@ Ninguno..
 
 
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Tipo</th>
-<th>Requerido</th>
-<th>Descripción</th>
-<th>Valores posibles</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Estilo</strong></td>
-<td><a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a> simpleType</td>
-<td>Requerido</td>
-<td>Especifica el tipo de línea que se va a dibujar.</td>
-<td><ul>
-<li>Ninguno</li>
-<li>Sólido</li>
-<li>Guión</li>
-<li>Punto</li>
-<li>DashDot</li>
-<li>DashDotDot</li>
-<li>Doble</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Color</strong></td>
-<td><a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType</td>
-<td>Opcionales</td>
-<td>Color del elemento.</td>
-<td>Valor RGB hexadecimal. Coincide con la siguiente expresión regular: #[0-9a-zA-Z] {6} . Por ejemplo, #4a79B5.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>Tipo</strong></td>
-<td><a href="margintypetype-simple-type.md"><strong>MarginTypeType</strong></a> simpleType</td>
-<td>Opcionales</td>
-<td>Indica el margen izquierdo o derecho.</td>
-<td><ul>
-<li>Left</li>
-<li>Right</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Espaciado</strong></td>
-<td><strong>xs:nonNegativeInteger</strong></td>
-<td>Opcionales</td>
-<td>Espaciado entre el borde de la página y el margen.</td>
-<td>Cualquier entero no negativo.</td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Tipo | Requerido | Descripción | Valores posibles | 
+|-----------|------|----------|-------------|-----------------|
+| <strong>Estilo</strong> | <a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a> simpleType | Requerido | Especifica el tipo de línea que se va a dibujar. | <ul><li>Ninguno</li><li>Sólido</li><li>Guión</li><li>Punto</li><li>DashDot</li><li>DashDotDot</li><li>Doble</li></ul> | 
+| <strong>Color</strong> | <a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType | Opcionales | Color del elemento. | Valor RGB hexadecimal. Coincide con la siguiente expresión regular: #[0-9a-zA-Z] {6} . Por ejemplo, #4a79B5.<br /> | 
+| <strong>Tipo</strong> | <a href="margintypetype-simple-type.md"><strong>MarginTypeType</strong></a> simpleType | Opcionales | Indica el margen izquierdo o derecho. | <ul><li>Left</li><li>Right</li></ul> | 
+| <strong>Espaciado</strong> | <strong>xs:nonNegativeInteger</strong> | Opcionales | Espaciado entre el borde de la página y el margen. | Cualquier entero no negativo. | 
+
 
 
 

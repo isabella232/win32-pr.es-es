@@ -4,24 +4,24 @@ ms.assetid: c7ae0137-0d02-46da-9532-738d805e327d
 title: Transformaciones de preprocesamiento del descodificador MPEG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82d7bcf8eeda8062606ce0046a55e34d3c2d90fe
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: d0c05ecf25bedb2a90af239715a3becb9a0adc198ed315d2b2c4deea4b380711
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075815"
 ---
 # <a name="mpeg-decoder-preprocessing-transformations"></a>Transformaciones de preprocesamiento del descodificador MPEG
 
 **Letterbox y PanScan**
 
-La imagen de 4x3 se puede formar mediante el relleno de la parte superior e inferior de la imagen (denominada imagen letterbox) o mediante la extracción de una parte 4x3 de la imagen (denominada imagen de PanScan). Los menús y las secuencias de subimagen se sobrelagen encima de la imagen de vídeo final. Las imágenes de proporción de 16 x 9 se almacenan en un formato anamórfico de 4x3. La extensión del vídeo de origen anamórfico de relación de aspecto 4x3 de 720 x 480 a una relación de aspecto de 16 x 9 forma la imagen de aspecto original de 16 x 9.
+La imagen 4x3 se puede formar mediante el relleno de la parte superior e inferior de la imagen (denominada imagen de Letterbox) o mediante la extracción de una parte 4x3 de la imagen (denominada imagen panscan). Los menús y secuencias de subimagen se sobrelagen encima de la imagen de vídeo final. Las imágenes de proporción de 16x9 se almacenan en un formato anamórfico de 4x3. La extensión del vídeo de origen anamórfico de relación de aspecto de 4x3 de 720 x 480 a una relación de aspecto de 16x9 forma la imagen de aspecto original de 16x9.
 
 A continuación se muestra una descripción de cómo mostrar correctamente cada uno de los modos y sus aspectos destacados:
 
--   **Widescreen:** El vídeo de origen se extendió en el área más grande de 16 x 9 de la ventana de salida. Los resaltados son relativos al interior del área 16x9. Las barras negras se deben agregar a la parte superior e inferior o a los lados para mantener un área de 16 x 9.
+-   **Widescreen:** El vídeo de origen se extendió al área de 16x9 más grande de la ventana de salida. Los resaltados son relativos al interior del área 16x9. Las barras negras se deben agregar a la parte superior e inferior o a los lados para mantener un área de 16 x 9.
 -   **Examen de panorámica:** En el vídeo de 16x9, use el desplazamiento horizontal proporcionado en la secuencia MPEG2 para extraer una subventana 4x3. Coloque la subventana 4x3 en el área 4x3 más grande de la ventana del cliente de salida. Las coordenadas del resaltado son relativas a la ventana de salida 4x3 y no tienen ninguna relación con el vídeo de origen 16x9. Las barras negras se deben agregar a la parte superior e inferior o a los lados para mantener un área de 4x3.
--   **Cuadro de letras:** Calcule el área 4x3 más grande de la ventana de salida. Las barras negras se deben agregar a la parte superior e inferior o a los lados para mantener un área de 4x3. El vídeo anamórfico de origen 4x3 (que representa una imagen de 16 x 9) se coloca en la subventana 16x9 más grande dentro del área 4x3. Las barras negras se deben agregar a la parte superior e inferior de la subventana para mantener un área de 16 x 9. Las coordenadas del resaltado son relativas al área 4x3 y no tienen ninguna relación con el vídeo de origen 16x9. Es posible que un disco especifique un resaltado que se encuentra fuera del área 16x9 (pero todavía en la ventana 4x3). Para el vídeo 4x3, el vídeo se coloca en el área de salida 4x3 más grande de la ventana del cliente de salida. Las barras negras se deben agregar a la parte superior e inferior o a los lados para mantener un área de 4x3.
+-   **Cuadro de letra:** Calcule el área 4x3 más grande de la ventana de salida. Las barras negras se deben agregar a la parte superior e inferior o a los lados para mantener un área de 4x3. El vídeo anamórfico de origen 4x3 (que representa una imagen de 16x9) se coloca en la subventana 16x9 más grande dentro del área 4x3. Las barras negras se deben agregar a la parte superior e inferior de la subventana para mantener un área de 16 x 9. Las coordenadas del resaltado son relativas al área 4x3 y no tienen ninguna relación con el vídeo de origen 16x9. Es posible que un disco especifique un resaltado que se encuentra fuera del área 16x9 (pero todavía en la ventana 4x3). Para el vídeo 4x3, el vídeo se coloca en el área de salida 4x3 más grande de la ventana del cliente de salida. Las barras negras se deben agregar a la parte superior e inferior o a los lados para mantener un área de 4x3.
 
 **Preprocesamiento MPEG con DVD Navigator y VMR**
 
@@ -51,22 +51,22 @@ El descodificador debe copiar o procesar los bits de forma invidente. Si el desc
 
 MPEG2VIDEOINFO.dwFlags ahora contiene tres marcas para controlar cómo se debe mostrar el contenido:
 
--   `AMMPEG2_DoPanScan (0x00000001)`: si se establece esta marca, el descodificador de vídeo MPEG-2 debe recortar la imagen de salida en función de los vectores de examen pan en la extensión de visualización de imagen y cambiar la relación de aspecto de la imagen a \_ \_ 4x3. El VMR no debe recibir un ejemplo de 16 x 9 con esta marca. Una implementación simple podría modificar el rectángulo de origen para indicar una región de origen de 540 anchos con un borde izquierdo igual al desplazamiento de presentación en la extensión de visualización \_ de \_ imagen.
--   `AMMPEG2_LetterboxAnalogOut (0x00000020)`: cuando un descodificador de hardware muestra esta secuencia en una salida de vídeo (normalmente un conector SVIDEO en la tarjeta), debe aplicar las reglas para mostrar un ejemplo de 16x9 en una pantalla de 4x3.
+-   `AMMPEG2_DoPanScan (0x00000001)`: si se establece esta marca, el descodificador de vídeo MPEG-2 debe recortar la imagen de salida en función de vectores de examen panorámica en la extensión de visualización de imágenes y cambiar la relación de aspecto de la imagen a \_ \_ 4x3. VmR no debe recibir un ejemplo de 16 x 9 con esta marca. Una implementación simple podría modificar el rectángulo de origen para indicar una región de origen de 540 anchos con un borde izquierdo igual al desplazamiento de pantalla en la extensión de visualización \_ de \_ la imagen.
+-   `AMMPEG2_LetterboxAnalogOut (0x00000020)`: cuando un descodificador de hardware muestra esta secuencia en una salida de vídeo (normalmente un conector SVIDEO en la tarjeta), debe aplicar las reglas para mostrar un ejemplo de 16 x 9 en una pantalla de 4x3.
 
-    Un descodificador de software (o un descodificador de hardware que genera la salida enviada al VMR) tiene dos opciones al procesar imágenes:
+    Un descodificador de software (o un descodificador de hardware que genera la salida enviada a vmr) tiene dos opciones al procesar imágenes:
 
-    1.  Ignore esta marca y pase el contenido de VideoInfoHeader2 a VMR (la marca AMCONTROL \_ PAD \_ TO \_ 4x3 [](dvd-navigator-filter.md) ya la establecerá el navegador de DVD en el ejemplo). El VMR encontrará un ejemplo de vídeo de 16 x 9 con la marca AMCONTROL PAD TO 4x3 establecida y una secuencia \_ \_ de \_ subapicture 4x3. La aplicación debe establecer los rectángulos de destino normalizados de salida de las dos secuencias para que sean del mismo ancho.
-    2.  Convierta la secuencia anamórfica en una imagen de 4x3 mediante el relleno de la parte superior e inferior de la imagen y el establecimiento de la relación de aspecto de la imagen en 4x3 (consulte Letterbox más arriba) y quitando el PANEL DE AMCONTROL a \_ \_ \_ 4x3 bits de VIDEOINFOHEADER2.
+    1.  Ignore esta marca y pase el contenido de VideoInfoHeader2 a VMR (la marca AMCONTROL \_ PAD \_ TO \_ 4x3 [](dvd-navigator-filter.md) ya la establecerá el navegador de DVD en el ejemplo). VmR encontrará un ejemplo de vídeo de 16 x 9 con la marca AMCONTROL PAD TO 4x3 establecida y una secuencia de \_ \_ \_ subimagen de 4x3. La aplicación debe establecer los rectángulos de destino normalizados de salida de las dos secuencias para que sean del mismo ancho.
+    2.  Convierta la secuencia anamórfica en una imagen de 4x3 mediante el relleno de la parte superior e inferior de la imagen y el establecimiento de la relación de aspecto de la imagen en 4x3 (vea Letterbox más arriba) y quitando el PAD DE AMCONTROL \_ \_ A \_ 4x3 bit de VIDEOINFOHEADER2.
 
-    Los descodificadores de DirectXVA que mezclan los flujos de vídeo y subpicture tendrán que procesar esta marca. Si el hardware no puede escalar la subaspección mezclada, el descodificador debe generar una secuencia de subimagen independiente para que vmr se mezcle con el vídeo.
+    Los descodificadores de DirectXVA que combinan las secuencias de vídeo y subpicture tendrán que procesar esta marca. Si el hardware no puede escalar la subaspección mezclada, el descodificador debe generar una secuencia de subimagen independiente para que vmr se combine con el vídeo.
 
--   `AMMPEG2_WidescreenAnalogOut (0x00000200)`: cuando un descodificador de hardware muestra esta secuencia en una salida de vídeo (normalmente un conector SVIDEO en la tarjeta), debe suponer una pantalla 16x9 (anamórfica).
+-   `AMMPEG2_WidescreenAnalogOut (0x00000200)`: cuando un descodificador de hardware muestra esta secuencia en una salida de vídeo (normalmente un conector SVIDEO en la tarjeta), debe suponer una pantalla de 16 x 9 (anamórfica).
 
-    Un descodificador de software (o un descodificador de hardware que genera la salida enviada al VMR) tiene dos opciones al procesar una imagen anamórfica:
+    Un descodificador de software (o un descodificador de hardware que genera la salida enviada a vmr) tiene dos opciones al procesar una imagen anamórfica:
 
     1.  Ignore esta marca y copie el contenido de VideoInfoHeader2 en vmr. La VMR va a usar imágenes de 4 x 3 a 16 x 9 si tienen establecido AMCONTROL \_ PAD \_ TO \_ 16x9.
-    2.  Ajádala a una imagen de 16 x 9 y quite el PAD DE AMCONTROL \_ \_ A \_ 16 x 9 bits.
+    2.  Ajádala a una imagen de 16 x 9 y quite amcontrol \_ PAD \_ TO \_ 16x9 bit.
 
 La mayoría de los descodificadores deben usar **GetMediaType** para detectar un cambio multimedia en el pin de entrada y copiar el contenido **de VIDEOINFOHEADER2** (incluido en **MPEG2INFOHEADER)** en el pin de salida. Probablemente solo procesarán el bit PanScan.
 

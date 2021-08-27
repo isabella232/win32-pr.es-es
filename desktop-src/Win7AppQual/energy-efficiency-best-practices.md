@@ -4,27 +4,27 @@ ms.assetid: 355abd0e-928e-442e-a724-855d9dd946fc
 title: Procedimientos recomendados para la eficiencia energética
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67d9a348b9df49531358de2db50acc0936622c36
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9cf56459dbd2762bd58af0e71ce8ca509d684f1f6a8643861b2696a7d25115ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122445"
 ---
 # <a name="best-practices-for-energy-efficiency"></a>Procedimientos recomendados para la eficiencia energética
 
 ## <a name="platform"></a>Plataforma
 
- **Clientes:** Windows XP \| Windows Vista Windows \| 7  
+ **Clientes:** Windows XP \| Windows Vista \| Windows 7  
 
 ## <a name="description"></a>Descripción
 
-Los equipos portátiles basados en Windows deben cumplir los requisitos normativos de eficiencia energética, como los del programa energy star Estados Unidos Environmental Protection Agency (ENERGY Star). Además, las encuestas han demostrado que una mayor duración de la batería sigue siendo lo que más quieren y necesitan los consumidores en los portátiles. Para satisfacer las demandas de los consumidores, los equipos portátiles Windows deben avanzar continuamente en las siguientes áreas:
+Windows portátiles basados en aplicaciones deben cumplir los requisitos normativos de eficiencia energética, como los del programa Energy Star de Estados Unidos Environmental Protection Agency (ENERGY). Además, las encuestas han demostrado que una mayor duración de la batería sigue siendo lo que los consumidores más quieren y necesitan en los portátiles. Para satisfacer las demandas de los consumidores, Windows portátiles deben avanzar continuamente en las áreas siguientes:
 
 -   Eficiencia energética en todos los escenarios de uso, incluidas las cargas de trabajo inactivas, las cargas de trabajo de productividad, la reproducción de DVD y multimedia, y las pruebas comparativas del sector
--   Duración de la batería de pc móvil: para plataformas de hardware y para Windows
+-   Duración de la batería del equipo móvil: para plataformas de hardware y para Windows
 
-La plataforma Windows es altamente confiable y permite un rendimiento rápido de inicio y apagado. Sin embargo, las extensiones proporcionadas con sistemas de PC móviles, como servicios, applets de bandeja del sistema, controladores y otro software, pueden afectar significativamente al rendimiento, la confiabilidad y la eficiencia energética.
+La Windows es altamente confiable y permite un rendimiento rápido de conexión y apagado. Sin embargo, las extensiones proporcionadas con sistemas de PC móviles, como servicios, applets de bandeja del sistema, controladores y otro software, pueden afectar significativamente al rendimiento, la confiabilidad y la eficiencia energética.
 
 La eficiencia energética es un problema complejo, con factores afectados por y que afectan a todos los elementos del ecosistema de PC. Las pequeñas mejoras en varios escenarios pueden mejorar la eficiencia energética, pero una única característica de aplicación, dispositivo o sistema de bajo rendimiento puede aumentar significativamente el consumo de energía.
 
@@ -44,25 +44,25 @@ Los principales problemas y componentes que afectan a la duración de la baterí
 -   Compatibilidad de hardware con estados de energía inferiores
 -   Optimización del controlador para la eficiencia energética
 
-**Administración de energía dirigida por el sistema operativo**
+**Administración de energía dirigida al sistema operativo**
 
--   Eficiencia del código de Windows mientras está bajo una carga frente a inactivo
--   Nivel de cooperación de todos los componentes con la administración de energía dirigida a Windows
+-   Eficiencia del código Windows mientras está bajo una carga frente a inactivo
+-   Nivel de cooperación de todos los componentes con Windows administración de energía dirigida
 -   Configuración adecuada del sistema operativo para optimizar la administración de energía a través de la configuración de la directiva de energía
 
-**Software y servicios de aplicaciones**
+**Software y servicios de aplicación**
 
--   Eficiencia de las aplicaciones, los controladores y los servicios mientras se está bajo una carga frente a la inactividad
--   Nivel de cooperación de las aplicaciones con administración de energía dirigida a Windows
--   Concesión de software del sistema o dispositivos para entrar en estados inactivos de bajo consumo de energía
+-   Eficiencia de aplicaciones, controladores y servicios mientras está bajo una carga frente a inactivo
+-   Nivel de cooperación de aplicaciones con Windows administración de energía dirigida a aplicaciones
+-   Concesión de software del sistema o dispositivos para entrar en estados inactivos de bajo consumo
 
-Un único componente de aplicación o servicio puede impedir que un sistema se dé cuenta de una duración óptima de la batería. Aunque Windows proporciona muchas opciones de configuración de energía, la configuración de directivas de energía o software preinstalada en muchos sistemas no está optimizada para la plataforma de hardware del host.
+Un único componente de aplicación o servicio puede impedir que un sistema pueda lograr una duración óptima de la batería. Aunque Windows proporciona muchas opciones de configuración de energía, la configuración de directiva de energía o software preinstalada en muchos sistemas no está optimizada para la plataforma de hardware del host.
 
-Un método común para evaluar el impacto de la duración de la batería del software preinstalado es comparar el consumo de energía del sistema con una instalación limpia de Windows frente a una instalación de Windows que incluye software y servicios de valor añadido. Aunque una instalación limpia no representa la plataforma típica que los OEM envían a los clientes, la comparación del consumo de energía puede proporcionar información sobre la eficiencia energética del software preinstalado.
+Un método común para evaluar el impacto de la batería del software preinstalado es comparar el consumo de energía del sistema con una instalación limpia de Windows frente a una instalación de Windows que incluye servicios y software de valor añadido. Aunque una instalación limpia no representa la plataforma típica que los OEM envían a los clientes, la comparación del consumo de energía puede proporcionar información sobre la eficiencia energética del software preinstalado.
 
 ## <a name="best-practices"></a>Prácticas recomendadas
 
-Para asegurarse de que la aplicación está optimizada en plataformas Windows, siga estos procedimientos recomendados al diseñar aplicaciones o servicios:
+Para asegurarse de que la aplicación está optimizada en Windows plataformas, siga estos procedimientos recomendados al diseñar aplicaciones o servicios:
 
 -   **Evitar el uso de temporizadores periódicos de alta resolución**
 
@@ -76,7 +76,7 @@ Para asegurarse de que la aplicación está optimizada en plataformas Windows, s
 
 -   **Ajuste a la directiva de energía del usuario**
 
-<dl> Windows Vista y versiones posteriores hacen que sea fácil para el usuario elegir el ahorro de energía general o el comportamiento del rendimiento del sistema. La aplicación debe responder a los cambios en la directiva de energía y reducir el uso de recursos o aumentar el rendimiento en consecuencia. Por ejemplo, una aplicación debe deshabilitar la actividad en segundo plano, como la indexación o el examen del sistema, cuando el usuario ha seleccionado un plan de energía de ahorro de energía.  
+<dl> Windows Vista y versiones posteriores hacen que sea fácil para el usuario elegir el ahorro de energía general o el comportamiento del rendimiento del sistema. La aplicación debe responder a los cambios en la directiva de energía y reducir el uso de recursos o aumentar el rendimiento en consecuencia. Por ejemplo, una aplicación debe deshabilitar la actividad en segundo plano, como la indexación o el examen del sistema cuando el usuario ha seleccionado un plan de energía de ahorro de energía.  
 </dl>
 
 -   **Reducir el uso de recursos cuando el sistema está encendido por batería**
@@ -86,7 +86,7 @@ Para asegurarse de que la aplicación está optimizada en plataformas Windows, s
 
 -   **No representar en la pantalla cuando está desactivada**
 
-<dl> La pantalla del sistema podría estar desactivada para ahorrar energía. La aplicación no debe realizar una representación de gráficos innecesaria cuando la pantalla está desactivada porque esto desperdicia los recursos y la energía del sistema.  
+<dl> La pantalla del sistema podría estar desactivada para ahorrar energía. La aplicación no debe realizar una representación de gráficos innecesaria cuando la pantalla está desactivada porque esto desperdicia los recursos del sistema y la energía.  
 </dl>
 
 -   **Evitar el sondeo y el giro en bucles ajustados**
@@ -96,7 +96,7 @@ Para asegurarse de que la aplicación está optimizada en plataformas Windows, s
 
 -   **No impida que el sistema apague la pantalla o se apague.**
 
-<dl> La aplicación debe realizar solicitudes de energía con la API SetThreadExecutionState. El sistema debe realizar estas solicitudes solo cuando las operaciones críticas deba retrasar el apagado del sistema de la pantalla o de entrar automáticamente en suspensión.  
+<dl> La aplicación debe realizar solicitudes de energía con la API SetThreadExecutionState. El sistema debe realizar estas solicitudes solo cuando las operaciones críticas deben retrasar el apagado del sistema de la pantalla o de entrar automáticamente en suspensión.  
 </dl>
 
 -   **Respuesta a eventos comunes de administración de energía**
@@ -104,7 +104,7 @@ Para asegurarse de que la aplicación está optimizada en plataformas Windows, s
 <dl> La aplicación debe registrarse y responder a eventos comunes de administración de energía, como cambios en el origen de energía del sistema y notificaciones de encendido y apagado para la pantalla.  
 </dl>
 
--   **No habilite el registro de depuración de forma predeterminada; use Seguimiento de eventos para Windows en su lugar**
+-   **No habilite el registro de depuración de forma predeterminada; usar seguimiento de eventos para Windows en su lugar**
 
 <dl> El registro de depuración periódico puede impedir la rotación del disco.  
 </dl>

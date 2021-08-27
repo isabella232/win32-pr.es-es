@@ -1,9 +1,9 @@
 ---
-title: user_marshal atributo)
-description: El \_ atributo ACF de serialización de usuario asocia un tipo local con nombre en el idioma de destino (userm-Type) con un tipo de transferencia (tipo de conexión) que se transfiere entre el cliente y el servidor.
+title: user_marshal atributo
+description: El atributo ACF de serialización de usuario asocia un tipo local con nombre en el idioma de destino (userm-type) a un tipo de transferencia (wire-type) que se transfiere entre el cliente \_ y el servidor.
 ms.assetid: a2407aa3-574d-4690-8cdf-cb1c01ca8c49
 keywords:
-- user_marshal el atributo MIDL
+- user_marshal atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5326c9390362193a1be9dc06ee3a57f174474cc2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3f17b4ef9d4376309307403ee12e2c5aae507556beaf091f9d742998d18671a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105575"
 ---
-# <a name="user_marshal-attribute"></a>\_atributo User Marshal
+# <a name="user_marshal-attribute"></a>atributo \_ de serialización de usuario
 
-El atributo ACF de **\_ serialización de usuario** asocia un tipo local con nombre en el idioma de destino (*userm-Type*) con un tipo de transferencia (*tipo de conexión*) que se transfiere entre el cliente y el servidor.
+El atributo ACF de serialización de usuario asocia un tipo local con nombre en el idioma de destino *(userm-type*) a un tipo de transferencia *(tipo* de conexión) que se transfiere entre el cliente y el servidor. **\_**
 
 ``` syntax
 typedef [user_marshal(userm_type)] wire-type; 
@@ -46,38 +46,38 @@ void __RPC_USER  < userm_type >_UserFree(
 
 <dl> <dt>
 
-*tipo de userm* 
+*userm-type* 
 </dt> <dd>
 
-Especifica el identificador del tipo de datos de usuario del que se van a calcular las referencias. No es necesario transmitir el *tipo userm* y no es necesario que sea un tipo conocido para el compilador de MIDL.
+Especifica el identificador del tipo de datos de usuario que se va a serializar. El *userm-type* no debe ser transmitible y no necesita ser un tipo conocido por el compilador MIDL.
 
 </dd> <dt>
 
-*tipo de conexión* 
+*wire-type* 
 </dt> <dd>
 
-Especifica el tipo de datos de transferencia con nombre que se transfiere realmente entre el cliente y el servidor. El tipo de conexión debe ser un tipo base de MIDL, un tipo predefinido o un identificador de tipo de un tipo que se pueda transmitir a través de la red.
+Especifica el tipo de datos de transferencia con nombre que se transfiere realmente entre el cliente y el servidor. El tipo de conexión debe ser un tipo base MIDL, un tipo predefinido o un identificador de tipo de un tipo que se pueda transmitir a través de la red.
 
 </dd> <dt>
 
 *pFlags* 
 </dt> <dd>
 
-Especifica un puntero a un campo de marca ( [**unsigned**](unsigned.md) [**Long**](long.md)). La palabra de orden superior especifica las marcas de representación de datos NDR definidas por DCE para el punto flotante, el Big-endian y la representación de caracteres. La palabra de orden inferior especifica una marca de contexto de cálculo de referencias. El diseño exacto de las marcas se describe en [la función de tipo de \_ usuario](/windows/desktop/Rpc/the-type-usersize-function).
+Especifica un puntero a un campo de marca ( [**unsigned**](unsigned.md) [**long**](long.md)). La palabra de orden superior especifica las marcas de representación de datos BAND, tal y como se define en DCE, para la representación de punto flotante, big o little-endian y caracteres. La palabra de orden bajo especifica una marca de contexto de serialización. El diseño exacto de las marcas se describe en [El tipo \_ Función UserSize](/windows/desktop/Rpc/the-type-usersize-function).
 
 </dd> <dt>
 
 *StartingSize* 
 </dt> <dd>
 
-Especifica el tamaño de búfer actual (desplazamiento) antes de ajustar el tamaño del objeto.
+Especifica el tamaño del búfer actual (desplazamiento) antes de dimensionar el objeto.
 
 </dd> <dt>
 
 *pUser \_ typeObject* 
 </dt> <dd>
 
-Especifica un puntero a un objeto de *\_ tipo userm*.
+Especifica un puntero a un objeto de *tipo userm \_*.
 
 </dd> <dt>
 
@@ -88,13 +88,13 @@ Especifica el puntero de búfer actual.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada tipo local con nombre, *userm-Type*, tiene una correspondencia uno a uno con un *tipo de conexión* que define la representación de la conexión del tipo. Debe proporcionar rutinas para ajustar el tamaño de los datos para el cálculo de referencias, para calcular las referencias de los datos y para deserializarlos, y para liberar memoria. Para obtener más información sobre estas rutinas, vea [el \_ atributo User Marshal](/windows/desktop/Rpc/the-user-marshal-attribute). Tenga en cuenta que si hay tipos incrustados en los datos que también se definen con serialización de **usuario \_** o \[ [**\[ \_ serialización \] de conexión**](wire-marshal.md), también debe administrar el servicio de esos tipos incrustados.
+Cada tipo local con nombre, *userm-type*, tiene una correspondencia uno *a* uno con un tipo de conexión que define la representación de conexión del tipo. Debe proporcionar rutinas para cambiar el tamaño de los datos para la serialización, serializar y desmarmar los datos y liberar memoria. Para obtener más información sobre estas rutinas, vea [Atributo de \_ serialización de usuario](/windows/desktop/Rpc/the-user-marshal-attribute). Tenga en cuenta **\_** \[ [**\[ \_ \]**](wire-marshal.md)que si hay tipos incrustados en los datos que también se definen con referencias de usuario o referencias de conexión , también debe administrar el mantenimiento de esos tipos incrustados.
 
-El *tipo de conexión* no puede ser un puntero de interfaz ni un puntero completo. El *tipo de conexión* debe tener un tamaño de memoria bien definido. Vea [serialización de reglas para la serialización de usuarios \_ y \_ serialización de conexión](/windows/desktop/Rpc/marshaling-rules-for-user-marshal-and-wire-marshal) para más información sobre cómo calcular las referencias de un *tipo de conexión* determinado.
+El *tipo de conexión no* puede ser un puntero de interfaz ni un puntero completo. El *tipo de conexión* debe tener un tamaño de memoria bien definido. Consulte [Reglas de serialización para la serialización de usuarios y \_ \_](/windows/desktop/Rpc/marshaling-rules-for-user-marshal-and-wire-marshal) la serialización de conexión para obtener más información sobre cómo serializar un tipo *de conexión determinado.*
 
-El *tipo de userm* no debe ser un puntero de interfaz, ya que estas referencias se pueden calcular directamente. Si el tipo de usuario es un puntero completo, debe administrar el alias.
+*Userm-type no* debe ser un puntero de interfaz, ya que se pueden serializar directamente. Si el tipo de usuario es un puntero completo, debe administrar el alias usted mismo.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -147,27 +147,27 @@ void __RPC_USER FOUR_BYTE_DATA_UserFree(
 [Archivo de configuración de la aplicación (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
-[**tal**](long.md)
+[**long**](long.md)
 </dt> <dt>
 
 [**representar \_ como**](represent-as.md)
 </dt> <dt>
 
-[**sin signo**](unsigned.md)
+[**Unsigned**](unsigned.md)
 </dt> <dt>
 
-[Atributo User \_ Marshal](/windows/desktop/Rpc/the-user-marshal-attribute)
+[Atributo de \_ serialización de usuario](/windows/desktop/Rpc/the-user-marshal-attribute)
 </dt> <dt>
 
-[**\_serialización de cable**](wire-marshal.md)
+[**wire \_ marshal**](wire-marshal.md)
 </dt> <dt>
 
-[**NdrGetUserMarshalInfo**](/windows/desktop/api/rpcndr/nf-rpcndr-ndrgetusermarshalinfo)
+[**GetGetUserMarshalInfo**](/windows/desktop/api/rpcndr/nf-rpcndr-ndrgetusermarshalinfo)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

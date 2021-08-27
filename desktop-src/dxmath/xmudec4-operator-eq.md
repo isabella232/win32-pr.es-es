@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: de0ca71d8792f343fa374b1ac429811f6e036e10d986563dce682836b8539839
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e5d873469fa35aa046b11557e81ad967d0bf110
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119117935"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122621891"
 ---
 # <a name="xmudec4-operator--operators"></a>Operador XMUDEC4 = operadores
 
@@ -30,19 +30,19 @@ Asigna datos de componentes vectoriales a la instancia actual de [**XMUDEC4.**](
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Operador</th>
-<th style="text-align: left;">Descripción</th>
+<th >Operador</th>
+<th >Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudec4-xmudec4(xmudec4__)"><strong>XMUDEC4::operator = (const XMUDEC4&)</strong></a></td>
-<td style="text-align: left;">Asigna los datos del componente vectorial de una instancia de <code>XMUDEC4</code> a la instancia actual de <code>XMUDEC4</code> . <br/> Este operador asigna los datos del componente vectorial de una instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudec4"><strong>XMUDEC4</strong></a> a la instancia actual de <code>XMUDEC4</code> . <br/>
+<td ><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudec4-xmudec4(xmudec4__)"><strong>XMUDEC4::operator = (const XMUDEC4&)</strong></a></td>
+<td >Asigna los datos del componente vectorial de una instancia de <code>XMUDEC4</code> a la instancia actual de <code>XMUDEC4</code> . <br/> Este operador asigna los datos del componente vectorial de una instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudec4"><strong>XMUDEC4</strong></a> a la instancia actual de <code>XMUDEC4</code> . <br/>
 <blockquote>
 [!Note]<br />
 Este operador solo está disponible en C++.
@@ -50,8 +50,8 @@ Este operador solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudec4-xmudec4(xmudec4__)"><strong>XMUDEC4::operator = (const uint32_t)</strong></a></td>
-<td style="text-align: left;">Asigna los datos del componente vectorial empaquetados en una instancia de <code>uint32_t</code> a la instancia actual de <code>XMUDEC4</code> . <br/> Este operador asigna los datos del componente vectorial empaquetados en una instancia de a <code>uint32_t</code> la instancia actual de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudec4"><strong>XMUDEC4</strong></a>. <br/>
+<td ><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudec4-xmudec4(xmudec4__)"><strong>XMUDEC4::operator = (const uint32_t)</strong></a></td>
+<td >Asigna los datos del componente vectorial empaquetados en una instancia de <code>uint32_t</code> a la instancia actual de <code>XMUDEC4</code> . <br/> Este operador asigna los datos del componente vectorial empaquetados en una instancia de a <code>uint32_t</code> la instancia actual de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudec4"><strong>XMUDEC4</strong></a>. <br/>
 <blockquote>
 [!Note]<br />
 Este operador solo está disponible en C++.
@@ -63,7 +63,7 @@ Este operador solo está disponible en C++.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

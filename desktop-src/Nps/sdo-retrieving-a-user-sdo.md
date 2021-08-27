@@ -1,20 +1,20 @@
 ---
-title: Recuperación de un SDO de usuarios
-description: Recuperación de un SDO de usuarios
+title: Recuperar un SDO de usuario
+description: Recuperar un SDO de usuario
 ms.assetid: 440628f8-081b-4e7f-bdb2-760ff9bd0d77
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43c1d6320398afb4eed22f72f0c5e12495010323
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cfcb5fa88f8febc210e21d223f8dd9e455478311026f2c1fac202f2a5781f161
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128575"
 ---
-# <a name="retrieving-a-user-sdo"></a>Recuperación de un SDO de usuarios
+# <a name="retrieving-a-user-sdo"></a>Recuperar un SDO de usuario
 
-El siguiente código recupera un objeto de datos del servidor (SDO) para el administrador.
+El código siguiente recupera un objeto de datos de servidor (SDO) para el administrador.
 
 
 ```C++
@@ -49,7 +49,7 @@ El siguiente código recupera un objeto de datos del servidor (SDO) para el admi
 
 <dl> <dt>
 
-[Asociar a un equipo SDO-Enabled](/windows/desktop/Nps/sdo-attaching-to-an-sdo-enabled-computer)
+[Asociación a un SDO-Enabled equipo](/windows/desktop/Nps/sdo-attaching-to-an-sdo-enabled-computer)
 </dt> <dt>
 
 [**ISdo**](/windows/desktop/api/sdoias/nn-sdoias-isdo)
@@ -67,6 +67,6 @@ El siguiente código recupera un objeto de datos del servidor (SDO) para el admi
 [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

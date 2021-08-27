@@ -1,25 +1,25 @@
 ---
 title: MetadataImportWithX509OverSslExample
-description: En este ejemplo se muestra la importación de metadatos de un punto de conexión que admite el uso de un token X509 mediante el enlace de seguridad de mensaje de token de WS \_ XML \_ con el \_ \_ \_ \_ enlace de seguridad de transporte WS SSL \_ \_ \_ .
+description: En este ejemplo se muestra la importación de metadatos desde un punto de conexión que admite el uso de un token X509 mediante WS \_ XML TOKEN MESSAGE SECURITY BINDING con \_ \_ \_ \_ WS SSL TRANSPORT SECURITY \_ \_ \_ \_ BINDING.
 ms.assetid: 9dbeea65-1752-4fe1-b425-f622e24acef0
 keywords:
-- MetadataImportWithX509OverSslExample API de servicios Web de Windows
+- MetadataImportWithX509OverSslExample Windows Web Services API
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ff6ca4c24b05a3c5757d1d82788e7acc8175e9b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d7b342b3de02a4cbe098276fc20776bb7ed15baa2cb5c1684a1a6c7e8d30cfb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109875"
 ---
 # <a name="metadataimportwithx509oversslexample"></a>MetadataImportWithX509OverSslExample
 
-En este ejemplo se muestra la importación de metadatos de un punto de conexión que admite el uso de un token X509 mediante el [**enlace de seguridad de mensaje de token de WS \_ XML \_ \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding) con el enlace de [**\_ seguridad de \_ transporte \_ \_ WS SSL**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding).
+En este ejemplo se muestra la importación de metadatos desde un punto de conexión que admite el uso de un token X509 mediante [**WS \_ XML TOKEN MESSAGE SECURITY \_ \_ \_ \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding) con [**WS SSL TRANSPORT SECURITY \_ \_ \_ \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding).
 
-## <a name="metadataimportwithx509oversslexamplecpp"></a>MetadataImportWithX509OverSslExample. cpp
+## <a name="metadataimportwithx509oversslexamplecpp"></a>MetadataImportWithX509OverSslExample.cpp
 
 
 ```C++
@@ -587,15 +587,15 @@ Exit:
 
 <dl> <dt>
 
-[**\_enlace de \_ seguridad de mensaje de token \_ \_ de WS XML \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding)
+[**ENLACE DE \_ SEGURIDAD DE MENSAJES DE TOKEN XML \_ \_ \_ DE \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding)
 </dt> <dt>
 
-[**\_enlace de \_ seguridad de transporte WS SSL \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding)
+[**ENLACE DE \_ SEGURIDAD DE TRANSPORTE SSL \_ \_ DE \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

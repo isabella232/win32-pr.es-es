@@ -1,54 +1,54 @@
 ---
 title: Mensajes de registro de comprobación
-description: En esta sección se describen los mensajes de registro de comprobación del comprobador de accesibilidad de la interfaz de usuario (AccChecker).
+description: En esta sección se describen los mensajes del registro de comprobación del comprobador de accesibilidad de la interfaz de usuario (AccChecker).
 ms.assetid: 27BA13D8-162B-4604-A048-2C8D49060FA9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c4d0d9afd30307c77ebebb1039ba2f2e0817884
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 44bef7e2372fe3374971bf9cf26c8cc420ad94ad679e8dcc4489f559ac337e25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097955"
 ---
 # <a name="verification-log-messages"></a>Mensajes de registro de comprobación
 
-En esta sección se describen los mensajes de registro de comprobación del comprobador de accesibilidad de la interfaz de usuario (AccChecker).
+En esta sección se describen los mensajes del registro de comprobación del comprobador de accesibilidad de la interfaz de usuario (AccChecker).
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [AccessibleObjectFromPointReturnedNullIAccessible](accessibleobjectfrompointreturnednulliaccessible.md)
--   [AccessibleObjectFromPointReturnedNot \_ S \_ correcto](accessibleobjectfrompointreturnednot-s-ok.md)
+-   [AccessibleObjectFromPointReturnedNot \_ S \_ OK](accessibleobjectfrompointreturnednot-s-ok.md)
 -   [AccessibleObjectFromPointReturnedNullChildId](accessibleobjectfrompointreturnednullchildid.md)
 -   [AccNameContainsInvalidString](accnamecontainsinvalidstring.md)
 -   [AccNameLengthTooLong](accnamelengthtoolong.md)
 -   [AccNameShouldNotContainRole](accnameshouldnotcontainrole.md)
 -   [AccNavigate \_ ReturnedElementWithIncorrectParent](accnavigate-returnedelementwithincorrectparent.md)
 -   [AppearsToNotSupportTabbing](appearstonotsupporttabbing.md)
--   [Error de tabIndex del contenedor de ARIA](aria-container-tabindex.md)
--   [Error de accesibilidad de teclado del rol de contenedor de ARIA](aria-container-keyboard-events.md)
--   [Error de tabIndex del rol de contenedor de ARIA (sin activos descendientes)](aria-container--no-active-descendant--tabindex.md)
--   [Rol de contenedor de ARIA (sin descendientes activo) error de accesibilidad de teclado](aria-container--no-active-descendants--keyboard-events.md)
+-   [Error de tabindex del contenedor de ARIA](aria-container-tabindex.md)
+-   [Error de accesibilidad del teclado del rol de contenedor ARIA](aria-container-keyboard-events.md)
+-   [Error de tabindex del rol de contenedor ARIA (sin descendiente activo)](aria-container--no-active-descendant--tabindex.md)
+-   [Error de accesibilidad del teclado del rol de contenedor ARIA (sin descendiente activo)](aria-container--no-active-descendants--keyboard-events.md)
 -   [Error de rol de contenedor de ARIA](aria-container-role.md)
--   [Error de la tabla de datos ARIA](aria-table-name-and-header.md)
--   [ADVERTENCIA de la tabla de datos ARIA](aria-data-table-description.md)
--   [Error de estructura de cuadrícula ARIA](aria-grid-structure.md)
--   [Error de etiqueta ARIA](aria-label.md)
+-   [Error de tabla de datos de ARIA](aria-table-name-and-header.md)
+-   [Advertencia de la tabla de datos ARIA](aria-data-table-description.md)
+-   [Error de estructura de cuadrícula de ARIA](aria-grid-structure.md)
+-   [Error de etiqueta de ARIA](aria-label.md)
 -   [Error de tabla de presentación de ARIA](aria-layout-table.md)
--   [Faltan atributos de control de intervalo ARIA](aria-range-control-attributes-missing.md)
+-   [Faltan atributos de control de intervalo de ARIA](aria-range-control-attributes-missing.md)
 -   [Atributos de control de intervalo de ARIA incompatibles](aria-range-control-attribute-out-of-range.md)
 -   [Error de rol de ARIA](aria-role-invalid.md)
 -   [Error de rol de ARIA para elementos con controladores de eventos](aria-role-missing.md)
--   [Error de TabIndex de ARIA](aria-click-tabindex.md)
+-   [ARIA Tabindex Error](aria-click-tabindex.md)
 -   [BoundingRectIsIncorrect](boundingrectisincorrect.md)
 -   [BoundingRectNotHitTestable](boundingrectnothittestable.md)
 -   [CheckTreeDepth](checktreedepth.md)
--   [ControlShouldHaveValue](controlshouldhavevalue.md)
+-   [ControlShouldValue](controlshouldhavevalue.md)
 -   [ControlTypeNoExpectedPatternsSupported](controltypenoexpectedpatternssupported.md)
 -   [ControlTypeRequiredPatternNotSupported](controltyperequiredpatternnotsupported.md)
 -   [CustomControlTypeWithoutLocalizedControlType](customcontroltypewithoutlocalizedcontroltype.md)
--   [Los elementos DragPattern/DragDropPattern requieren el nombre](dragpattern-dragdroppattern-elements-requires-name-.md)
--   [Los elementos DragPattern/DragDropPattern requieren DropEffect válido](dragpattern-dragdroppattern-elements-requires-valid-dropeffect.md)
+-   [Los elementos DragPattern/DragDropPattern requieren Name](dragpattern-dragdroppattern-elements-requires-name-.md)
+-   [Los elementos DragPattern/DragDropPattern requieren dropEffect válido](dragpattern-dragdroppattern-elements-requires-valid-dropeffect.md)
 -   [DuplicateAccessKey](duplicateaccesskey.md)
 -   [DuplicateSiblingIDs](duplicatesiblingids.md)
 -   [DuplicateSiblingNames](duplicatesiblingnames.md)
@@ -96,9 +96,9 @@ En esta sección se describen los mensajes de registro de comprobación del comp
 [UI Accessibility Checker](ui-accessibility-checker.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

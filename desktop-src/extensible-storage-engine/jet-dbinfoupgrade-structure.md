@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f8a62245ee4b09ec3e8764e6d4e51841fa057c789bdc2fb4a142380d62e8d598
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57c9265f45412bd31e087a52ab2b923c9c55c430
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119112184"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467662"
 ---
 # <a name="jet_dbinfoupgrade-structure"></a>Estructura de JET_DBINFOUPGRADE
 
@@ -65,11 +65,11 @@ DWORD **alto que** refleja el tamaño de archivo actual de la base de datos.
 
 **cbFreeSpaceRequiredLow**
 
-DWORD **bajo de** espacio libre estimado en disco necesario para una actualización local.
+DWORD **bajo del** espacio en disco libre estimado necesario para una actualización local.
 
 **cbFreeSpaceRequiredHigh**
 
-DWORD **elevado de** espacio libre estimado en disco necesario para una actualización local.
+DWORD **elevado del** espacio en disco libre estimado necesario para una actualización local.
 
 **csecToUpgrade**
 
@@ -89,30 +89,13 @@ La base de datos se actualiza al formato de base de datos actual.
 
 ### <a name="remarks"></a>Comentarios
 
-Una **JET_DBINFOUPGRADE** estructura se rellena mediante una llamada a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md). Si la función no se realiza correctamente, el contenido de la estructura no está definido.
+Una **JET_DBINFOUPGRADE** estructura se rellena mediante una llamada a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo.](./jetgetdatabasefileinfo-function.md) Si la función no se realiza correctamente, el contenido de la estructura no está definido.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también
