@@ -1,19 +1,19 @@
 ---
-description: La notificación de STARTQUEUE de SPFILENOTIFY \_ se envía a la rutina de devolución de llamada cuando se inicia el proceso de compromiso de cola.
+description: La notificación SPFILENOTIFY \_ STARTQUEUE se envía a la rutina de devolución de llamada cuando se inicia el proceso de compromiso de la cola.
 ms.assetid: 682c2ce0-0c82-402c-a487-db5f2c377f3f
-title: Mensaje de SPFILENOTIFY_STARTQUEUE (setupapi. h)
+title: SPFILENOTIFY_STARTQUEUE mensaje (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 090e3f97dceb1843d75934dd99cca500e6f93086
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a40d4fedde850d975edd697423339c686fe697911b9bef2fdc252baffda0158f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073215"
 ---
-# <a name="spfilenotify_startqueue-message"></a>SPFILENOTIFY \_ STARTQUEUE
+# <a name="spfilenotify_startqueue-message"></a>Mensaje SPFILENOTIFY \_ STARTQUEUE
 
-La notificación de **\_ STARTQUEUE de SPFILENOTIFY** se envía a la rutina de devolución de llamada cuando se inicia el proceso de compromiso de cola.
+La **notificación SPFILENOTIFY \_ STARTQUEUE** se envía a la rutina de devolución de llamada cuando se inicia el proceso de compromiso de la cola.
 
 
 ```C++
@@ -29,10 +29,10 @@ SPFILENOTIFY_STARTQUEUE
 
 <dl> <dt>
 
-*Parámetro1* 
+*Param1* 
 </dt> <dd>
 
-Identificador de la ventana que va a ser propietaria de los cuadros de diálogo generados por la rutina de devolución de llamada.
+Controlar a la ventana que va a ser propietaria de los cuadros de diálogo que genera la rutina de devolución de llamada.
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ Sin usar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se produce un error, la rutina de devolución de llamada debe llamar a [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror), especificar el error y, a continuación, devolver cero. La función [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) devolverá **false** y una llamada subsiguiente a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devolverá el código de error establecido por la rutina de devolución de llamada.
+Si se produce un error, la rutina de devolución de llamada debe llamar a [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror), especificando el error y, a continuación, devolver cero. La [**función SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) devolverá **FALSE** y una llamada posterior a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devolverá el código de error establecido por la rutina de devolución de llamada.
 
 Si no se produce ningún error, la rutina de devolución de llamada debe devolver un valor distinto de cero.
 
@@ -53,11 +53,11 @@ Si no se produce ningún error, la rutina de devolución de llamada debe devolve
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

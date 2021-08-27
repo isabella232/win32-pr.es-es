@@ -1,24 +1,24 @@
 ---
-title: HRef (atributo, Fill) (VML)
-description: HRef (atributo, Fill) (VML)
+title: Atributo HRef (Fill)(VML)
+description: Atributo HRef (Fill)(VML)
 ms.assetid: vs|vml|~\shape\fill\fill_href.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9e4966b2f63daffc503efed01fbf67fd959b6c7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 850aa26f3f99815f6c76e6e29963c48d3de823328151aad4ddb2a739540f9292
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072035"
 ---
-# <a name="href-attribute-fillvml"></a>HRef (atributo, Fill) (VML)
+# <a name="href-attribute-fillvml"></a>Atributo HRef (Fill)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define una dirección URL para el archivo de imagen original. Lectura/escritura **Cadena**.
 
@@ -28,14 +28,14 @@ Define una dirección URL para el archivo de imagen original. Lectura/escritura 
 
 **Sintaxis de etiquetas**
 
-<v: *Element* o:href = " *expresión* " >
+<v: *elemento* o:href=" *expresión* ">
 
 **Comentarios:**
 
-Se usa solo si la imagen se ha vinculado e incrustado.
+Solo se usa si la imagen se ha vinculado e insertado.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

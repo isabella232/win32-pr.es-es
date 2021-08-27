@@ -1,7 +1,7 @@
 ---
 description: El método AddFoundLocation agrega un directorio a la memoria caché del directorio.
 ms.assetid: 0323c4ea-2e86-433b-87d0-34d1800a5627
-title: 'IMediaLocator:: AddFoundLocation (método) (QEDIT. h)'
+title: Método IMediaLocator::AddFoundLocation (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 76d878e5b013b8c6a061d777d4ec837bca85f8e5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4ba466338e6d148e3c39a6bed4f7db413ad444ee792a4fd49b6e1499f29f0403
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051645"
 ---
-# <a name="imedialocatoraddfoundlocation-method"></a>IMediaLocator:: AddFoundLocation (método)
+# <a name="imedialocatoraddfoundlocation-method"></a>IMediaLocator::AddFoundLocation (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `AddFoundLocation` método agrega un directorio a la memoria caché del directorio.
+El `AddFoundLocation` método agrega un directorio a la caché de directorios.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,25 +48,25 @@ HRESULT AddFoundLocation(
 *DirectoryName* 
 </dt> <dd>
 
-Ruta de acceso al directorio que se va a agregar a la caché.
+Ruta de acceso del directorio que se agregará a la memoria caché.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El localizador de medios mantiene una memoria caché de rutas de acceso de directorio donde ha encontrado correctamente archivos en búsquedas anteriores. Cuando localiza correctamente un archivo, agrega el directorio a la memoria caché.
+El localizador de medios mantiene una caché de rutas de acceso de directorio donde ha encontrado correctamente archivos en búsquedas anteriores. Cuando encuentra correctamente un archivo, agrega el directorio a la memoria caché.
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ El localizador de medios mantiene una memoria caché de rutas de acceso de direc
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,10 +85,10 @@ El localizador de medios mantiene una memoria caché de rutas de acceso de direc
 
 <dl> <dt>
 
-[**Interfaz IMediaLocator**](imedialocator.md)
+[**IMediaLocator (interfaz)**](imedialocator.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

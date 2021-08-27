@@ -5,15 +5,15 @@ ms.assetid: 3ee16279-7e11-4587-ae43-f0296b7e7594
 ms.tgt_platform: multiple
 keywords:
 - IAS del servicio de autenticación de Internet, tareas
-- Internet Authentication Service IAS , mediante
+- IAS del servicio de autenticación de Internet , mediante
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06f422c005d6810a4035450e24de1324b28361f1
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 4db3590ed10ec77e57c86bfad3e0e0b1160e70a2d6fcc08abc911a14614543f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074305"
 ---
 # <a name="using-nps-extensions"></a>Uso de extensiones NPS
 
@@ -34,7 +34,7 @@ Los ejemplos de DialIn y MapName amplían la funcionalidad nps.
 
  
 
-Puede encontrar el código fuente de las aplicaciones de ejemplo MapName y DialIn en la lista siguiente. *Ubicación*, %Ruta de instalación%, designa el directorio de instalación base para equipos x64. Consulte también [Kit de desarrollo de software de Windows (SDK)](https://developer.microsoft.com/windows/downloads/windows-8-sdk)para Windows 8 , Microsoft Kit de desarrollo de software de Windows (SDK) y Descargas para el desarrollo de [aplicaciones de la Tienda Windows.](https://msdn.microsoft.com/windows/apps/br229516)
+Puede encontrar el código fuente de las aplicaciones de ejemplo MapName y DialIn en la lista siguiente. *Ubicación*, %Ruta de instalación%, designa el directorio de instalación base para equipos x64. Consulte también [Windows Software Development Kit (SDK) for Windows 8](https://developer.microsoft.com/windows/downloads/windows-8-sdk), Microsoft Windows Software Development Kit (SDK) y Downloads for Windows Store app [development](https://msdn.microsoft.com/windows/apps/br229516).
 
 <dl> <dt>
 
@@ -53,7 +53,7 @@ Ubicación: N/A
 
 </dd> <dt>
 
-Microsoft Kit de desarrollo de software de Windows (SDK) para Windows 7 y .NET Framework 4.0
+Kit de desarrollo de software (SDK) de Microsoft Windows para Windows 7 y .NET Framework 4.0
 </dt> <dd>
 
 Windows Server 2008 R2
@@ -64,7 +64,7 @@ MapName: Sí
 
 DialIn: No
 
-Ubicación: %Ruta de instalación% \\ SDK de Microsoft Windows \\ \\ v7.1 \\ Ejemplos \\ netds \\ ias
+Ubicación: %Ruta de instalación% SDK de \\ Microsoft \\ Windows \\ v7.1 \\ Ejemplos \\ netds \\ ias
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ MapName: Sí
 
 DialIn: No
 
-Ubicación: %Install Path% \\ Microsoft SDKs \\ Windows \\ v6.1 \\ Samples \\ NetDs \\ IAS
+Ubicación: %Ruta de instalación% SDK de \\ Microsoft \\ Windows \\ \\ \\ iAS de netD de ejemplo v6.1 \\
 
 </dd> </dl>
 

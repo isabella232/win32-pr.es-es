@@ -1,19 +1,19 @@
 ---
-description: El mensaje de solicitud de línea TAPI \_ se envía para informar de la llegada de una nueva solicitud desde otra aplicación.
+description: El mensaje TAPI LINE REQUEST se envía para informar de la llegada \_ de una nueva solicitud desde otra aplicación.
 ms.assetid: d4dbba0d-8225-48d7-a66b-b189fdae70a8
-title: Mensaje de LINE_REQUEST (TAPI. h)
+title: LINE_REQUEST mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23987e370d5ae9c8eeb579780c5659f8075ac865
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce3cd49b14aafabfdd4d7ab37c5f2beec1487a08a53385ae8a1439b7443d49cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126235"
 ---
-# <a name="line_request-message"></a>Mensaje de solicitud de línea \_
+# <a name="line_request-message"></a>Mensaje \_ DE SOLICITUD DE LÍNEA
 
-El mensaje **de \_ solicitud de línea** TAPI se envía para informar de la llegada de una nueva solicitud desde otra aplicación.
+El mensaje TAPI **LINE \_ REQUEST se** envía para informar de la llegada de una nueva solicitud desde otra aplicación.
 
 
 ```C++
@@ -29,7 +29,7 @@ El mensaje **de \_ solicitud de línea** TAPI se envía para informar de la lleg
 *hDevice* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -43,21 +43,21 @@ Instancia de registro de la aplicación especificada en [**lineRegisterRequestRe
 *dwParam1* 
 </dt> <dd>
 
-Modo de solicitud de la solicitud recién pendiente. Este parámetro usa las [**\_ constantes LINEREQUESTMODE**](linerequestmode--constants.md).
+Modo de solicitud de la solicitud recién pendiente. Este parámetro usa las [**constantes LINEREQUESTMODE \_**](linerequestmode--constants.md).
 
 </dd> <dt>
 
 *dwParam2* 
 </dt> <dd>
 
-Las condiciones para este parámetro son, si *dwParam1* se establece en LINEREQUESTMODE \_ Drop, *dwParam2* contiene el *hWnd* de la aplicación que solicita la eliminación. De lo contrario, *dwParam2* no se utiliza.
+Las condiciones para este parámetro son: si *dwParam1* se establece en LINEREQUESTMODE \_ DROP, *dwParam2* contiene *el hWnd* de la aplicación que solicita la colocación. De lo contrario, *dwParam2* no se usa.
 
 </dd> <dt>
 
 *dwParam3* 
 </dt> <dd>
 
-Si *dwParam1* se establece en LINEREQUESTMODE \_ Drop, la palabra de orden inferior de *dwParam3* contiene el *wRequestID* tal como lo especifica la aplicación que solicitó la eliminación. De lo contrario, *dwParam3* no se utiliza.
+Si *dwParam1* se establece en LINEREQUESTMODE DROP, la palabra de orden bajo \_ de *dwParam3* contiene *el wRequestID* especificado por la aplicación que solicitó la colocación. De lo contrario, *dwParam3* no se usa.
 
 </dd> </dl>
 
@@ -65,9 +65,9 @@ Si *dwParam1* se establece en LINEREQUESTMODE \_ Drop, la palabra de orden infer
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El mensaje de **\_ solicitud de línea** se envía a la aplicación de prioridad más alta que se ha registrado para el modo de solicitud correspondiente. Este mensaje indica la llegada de una solicitud de telefonía asistida del modo de solicitud especificado. Si *dwParam1* es LINEREQUESTMODE \_ MAKECALL, la aplicación puede invocar [**lineGetRequest**](/windows/desktop/api/Tapi/nf-tapi-linegetrequest) mediante el modo de solicitud correspondiente para recibir la solicitud. Si *dwParam1* es LINEREQUESTMODE \_ Drop, el mensaje contiene todos los datos que el destinatario de la solicitud necesita para realizar la solicitud.
+El **mensaje \_ LINE REQUEST** se envía a la aplicación de prioridad más alta que se ha registrado para el modo de solicitud correspondiente. Este mensaje indica la llegada de una solicitud de telefonía asistida del modo de solicitud especificado. Si *dwParam1* es LINEREQUESTMODE MAKECALL, la aplicación puede invocar lineGetRequest mediante el modo de solicitud \_ correspondiente para recibir la solicitud. [](/windows/desktop/api/Tapi/nf-tapi-linegetrequest) Si *dwParam1* es LINEREQUESTMODE DROP, el mensaje contiene todos los datos que el destinatario de la solicitud \_ necesita para realizar la solicitud.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ El mensaje de **\_ solicitud de línea** se envía a la aplicación de prioridad
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

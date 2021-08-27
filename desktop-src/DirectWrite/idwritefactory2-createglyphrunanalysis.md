@@ -1,11 +1,11 @@
 ---
-title: IDWriteFactory2 CreateGlyphRunAnalysis, método
-description: Crea un objeto de análisis de ejecución de glifos, que encapsula la información utilizada para representar una ejecución de glifo.
+title: Método IDWriteFactory2 CreateGlyphRunAnalysis
+description: Crea un objeto de análisis de ejecución de glifo, que encapsula la información utilizada para representar una ejecución de glifo.
 ms.assetid: 13cecfbf-8bb6-88a2-c8b2-3243f6cb92fd
 keywords:
 - Método CreateGlyphRunAnalysis de escritura directa
-- Método CreateGlyphRunAnalysis de escritura directa, interfaz IDWriteFactory2
-- Interfaz IDWriteFactory2 Direct Write, método CreateGlyphRunAnalysis
+- Método CreateGlyphRunAnalysis direct write , interfaz IDWriteFactory2
+- Método CreateGlyphRunAnalysis de la interfaz IDWriteFactory2
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abd944c45fc271a22a0942556038073ebcc591cc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c4ea5c2dc4cb97b1b9ba02e786efc20a4e2a44990b9a1d28b862aeab254079a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048835"
 ---
-# <a name="idwritefactory2createglyphrunanalysis-method"></a>IDWriteFactory2:: CreateGlyphRunAnalysis (método)
+# <a name="idwritefactory2createglyphrunanalysis-method"></a>Método IDWriteFactory2::CreateGlyphRunAnalysis
 
-Crea un objeto de análisis de ejecución de glifos, que encapsula la información utilizada para representar una ejecución de glifo.
+Crea un objeto de análisis de ejecución de glifo, que encapsula la información utilizada para representar una ejecución de glifo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,37 +50,37 @@ virtual HRESULT CreateGlyphRunAnalysis(
 
 <dl> <dt>
 
-*glyphRun* \[ de\]
+*glyphRun* \[ En\]
 </dt> <dd>
 
-Tipo: **\* const [**DWRITE \_ \_ ejecución del glifo**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run)* _
+Tipo: **const [**DWRITE \_ GLYPH \_ RUN**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run) \***
 
 Estructura que especifica las propiedades de la ejecución del glifo.
 
 </dd> <dt>
 
-_transform * \[ en, opcional\]
+*transformación* \[ en, opcional\]
 </dt> <dd>
 
-Tipo: **const [**DWRITE \_ Matrix**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \** _
+Tipo: **const [**DWRITE \_ MATRIX**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \***
 
-Transformación opcional aplicada a los glifos y sus posiciones. Esta transformación se aplica después del ajuste de escala especificado por emSize y pixelsPerDip.
+Transformación opcional aplicada a los glifos y sus posiciones. Esta transformación se aplica después del escalado especificado por emSize y pixelsPerDip.
 
 </dd> <dt>
 
-_renderingMode * 
+*renderingMode* 
 </dt> <dd>
 
-Tipo: **\_ \_ modo de representación DWRITE**
+Tipo: **DWRITE \_ RENDERING \_ MODE**
 
-Especifica el modo de representación, que debe ser uno de los modos de representación de tramas (es decir, no tiene valor predeterminado y no contorno).
+Especifica el modo de representación, que debe ser uno de los modos de representación de trama (es decir, no predeterminado y no esquema).
 
 </dd> <dt>
 
 *measuringMode* 
 </dt> <dd>
 
-Tipo: **[ **\_ \_ modo de medición DWRITE**](/windows/win32/api/dcommon/ne-dcommon-dwrite_measuring_mode)**
+Tipo: **[ **MODO DE \_ MEDICIÓN \_ DE DWRITE**](/windows/win32/api/dcommon/ne-dcommon-dwrite_measuring_mode)**
 
 Especifica el método para medir glifos.
 
@@ -89,45 +89,45 @@ Especifica el método para medir glifos.
 *gridFitMode* 
 </dt> <dd>
 
-Tipo: **[ **DWRITE \_ \_ \_ modo de ajuste de cuadrícula**](/windows/win32/api/dwrite_2/ne-dwrite_2-dwrite_grid_fit_mode)**
+Tipo: **[ **DWRITE \_ GRID \_ FIT \_ MODE**](/windows/win32/api/dwrite_2/ne-dwrite_2-dwrite_grid_fit_mode)**
 
-Cómo ajustar el glifo a la cuadrícula. Este no debe ser predeterminado.
+Cómo ajustar a la cuadrícula los contornos del glifo. Debe ser no predeterminado.
 
 </dd> <dt>
 
 *antialiasMode* 
 </dt> <dd>
 
-Tipo: **[ **DWRITE \_ \_ \_ modo de suavizado de texto**](/windows/win32/api/Dwrite_1/ne-dwrite_1-dwrite_text_antialias_mode)**
+Tipo: **[ **DWRITE \_ TEXT \_ ANTIALIAS \_ MODE**](/windows/win32/api/Dwrite_1/ne-dwrite_1-dwrite_text_antialias_mode)**
 
-Especifica el modo antialias.
+Especifica el modo de suavizado de contorno.
 
 </dd> <dt>
 
 *baselineOriginX* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Posición horizontal del origen de la línea base, en DIP.
+Posición horizontal del origen de línea base, en DIP.
 
 </dd> <dt>
 
 *baselineOriginY* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Posición vertical del origen de la línea base, en DIP.
+Posición vertical del origen de línea base, en DIP.
 
 </dd> <dt>
 
-*glyphRunAnalysis* \[ enuncia\]
+*glyphRunAnalysis* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IDWriteGlyphRunAnalysis**](/windows/win32/api/dwrite/nn-dwrite-idwriteglyphrunanalysis)\*\***
 
-Recibe un puntero al objeto que se acaba de crear.
+Recibe un puntero al objeto recién creado.
 
 </dd> </dl>
 
@@ -135,7 +135,7 @@ Recibe un puntero al objeto que se acaba de crear.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -143,10 +143,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones \[ para UWP de Windows 8.1 Desktop apps \|\]<br/>                                     |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 R2 \|\]<br/>                          |
-| Teléfono mínimo compatible<br/>  | Windows Phone 8,1 \[ Windows Phone aplicaciones de Windows Runtime Silverlight 8,1 y\]<br/> |
-| Biblioteca<br/>                  | <dl> <dt>Dwrite. lib</dt> </dl>   |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| para aplicaciones para UWP\]<br/>                          |
+| Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/> |
+| Biblioteca<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |
 
 

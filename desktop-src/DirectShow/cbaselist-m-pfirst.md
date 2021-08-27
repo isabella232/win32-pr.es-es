@@ -1,7 +1,7 @@
 ---
 description: Puntero al primer nodo de la lista.
 ms.assetid: 00a9e7c8-e536-46e2-96a0-e26eb6c34e54
-title: 'Miembro CBaseList:: m_pFirst (Wxlist. h)'
+title: CBaseList::m_pFirst miembro (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ece5bb8d3c19b62448d582314c2908279eba9852
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b99ec844746d58668164b45bd5cf6dcff867b6c647a9cc3512ec9b4b690b6916
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052735"
 ---
-# <a name="cbaselistm_pfirst-member"></a>Miembro pFirst CBaseList:: m \_
+# <a name="cbaselistm_pfirst-member"></a>Miembro CBaseList::m \_ pFirst
 
 Puntero al primer nodo de la lista.
 
@@ -42,8 +42,8 @@ CNode *m_pFirst;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CNode *m_pFirst;
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

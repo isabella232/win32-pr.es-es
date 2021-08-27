@@ -1,48 +1,48 @@
 ---
-title: Estructuras de la versión 1 del administrador de tablas de enrutamiento
-description: Las funciones de la versión 1 del administrador de tablas de enrutamiento usan las siguientes estructuras
+title: Estructuras de la versión 1 del Administrador de tablas de enrutamiento
+description: Las funciones de Routing Table Manager versión 1 usan las estructuras siguientes
 ms.assetid: 9bcf1dc6-0032-4825-bf96-e72970fb76ce
 keywords:
-- Servicio de enrutamiento y acceso remoto RRAS, administrador de tablas de enrutamiento versión 1, estructuras
-- Administrador de tablas de enrutamiento versión 1 RRAS, estructuras
+- RRAS del servicio de enrutamiento y acceso remoto, versión 1 de Routing Table Manager, estructuras
+- RRAS de la versión 1 de Routing Table Manager, estructuras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 592982dd64c57daf146885659f68f15ca7c3f829
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2ba556b537ec58b5d4412571b7adf74f05f37f83396eeb60c1c41532c011d990
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073915"
 ---
-# <a name="routing-table-manager-version-1-structures"></a>Estructuras de la versión 1 del administrador de tablas de enrutamiento
+# <a name="routing-table-manager-version-1-structures"></a>Estructuras de la versión 1 del Administrador de tablas de enrutamiento
 
-**Windows Server 2003:** Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las nuevas aplicaciones deben usar la API del administrador de tablas de enrutamiento versión 2.
+**Windows Server 2003:** Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las nuevas aplicaciones deben usar la API de Routing Table Manager versión 2.
 
-Las [funciones de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-functions.md) usan las siguientes estructuras:
+Las [funciones de Routing Table Manager versión 1](routing-table-manager-version-1-functions.md) usan las estructuras siguientes:
 
-[**\_red IP**](ip-network.md)
+[**RED \_ IP**](ip-network.md)
 
-[**Dirección IP del \_ próximo \_ salto \_**](ip-next-hop-address.md)
+[**DIRECCIÓN IP \_ DEL \_ PRÓXIMO \_ SALTO**](ip-next-hop-address.md)
 
-[**\_datos específicos de IP \_**](ip-specific-data.md)
+[**DATOS \_ ESPECÍFICOS DE \_ IP**](ip-specific-data.md)
 
-[**\_red IPX**](ipx-network.md)
+[**IPX \_ NETWORK**](ipx-network.md)
 
-[**\_dirección de próximo \_ salto \_ de IPX**](ipx-next-hop-address.md)
+[**DIRECCIÓN DEL \_ PRÓXIMO \_ SALTO DE \_ IPX**](ipx-next-hop-address.md)
 
-[**\_datos específicos de IPX \_**](ipx-specific-data.md)
+[**DATOS \_ ESPECÍFICOS DE IPX \_**](ipx-specific-data.md)
 
-[**\_datos específicos del protocolo \_**](protocol-specific-data.md)
+[**DATOS \_ ESPECÍFICOS DEL \_ PROTOCOLO**](protocol-specific-data.md)
 
-[Identificadores de la familia de protocolos del administrador de tablas de enrutamiento versión 1](routing-table-manager-version-1-protocol-family-identifiers.md)
+[Identificadores de familia de protocolos de Routing Table Manager versión 1](routing-table-manager-version-1-protocol-family-identifiers.md)
 
-[**\_ruta IP de RTM \_**](rtm-ip-route.md)
+[**RTM \_ IP \_ ROUTE**](rtm-ip-route.md)
 
-[**\_ruta IPX de RTM \_**](rtm-ipx-route.md)
+[**RTM \_ IPX \_ ROUTE**](rtm-ipx-route.md)
 
- 
+ 
 
- 
+ 
 
 
 

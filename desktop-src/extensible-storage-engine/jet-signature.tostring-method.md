@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_SIGNATURE. ToString (método)'
-title: JET_SIGNATURE. ToString (método)
+description: 'Más información sobre: JET_SIGNATURE. Método ToString'
+title: JET_SIGNATURE. Método ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_SIGNATURE.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_signature.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1fc62b33512515dafd6b8b9dc9791c61a2873dce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39d2aa3c6ac41e4818d6cf77be6dbeaf820f2c86cbba4ded68f09bd8e488b746
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115985"
 ---
-# <a name="jet_signaturetostring-method"></a>JET_SIGNATURE. ToString (método)
+# <a name="jet_signaturetostring-method"></a>JET_SIGNATURE. Método ToString
 
-Generar una representación de cadena de la estructura.
+Genere una representación de cadena de la estructura .
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-La estructura como una cadena.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Estructura como una cadena.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_SIGNATURE](./jet-signature-structure2.md)
+[JET_SIGNATURE estructura](./jet-signature-structure2.md)
 
-[Miembros de JET_SIGNATURE](./jet-signature-members.md)
+[JET_SIGNATURE miembros](./jet-signature-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

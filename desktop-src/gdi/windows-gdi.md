@@ -1,33 +1,33 @@
 ---
-description: La interfaz de dispositivo gráfico (GDI) de Microsoft Windows permite a las aplicaciones utilizar gráficos y texto con formato tanto en la pantalla de vídeo como en la impresora.
+description: La interfaz de Windows gráficos (GDI) de Microsoft permite a las aplicaciones usar gráficos y texto con formato tanto en la pantalla de vídeo como en la impresora.
 ms.assetid: b58ab70a-2071-4264-9d20-c0b0aaf8dc5c
 title: GDI de Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41f5fc6ba9f4eb99786b21daeff2e1c48b9ce09d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0bbdd515379c5c3d1f2c17ff0b991141b3a40a8cb42594be95e391da6dabb28
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092545"
 ---
 # <a name="windows-gdi"></a>GDI de Windows
 
 ## <a name="purpose"></a>Propósito
 
-La interfaz de dispositivo gráfico (GDI) de Microsoft Windows permite a las aplicaciones utilizar gráficos y texto con formato tanto en la pantalla de vídeo como en la impresora. Las aplicaciones basadas en Windows no tienen acceso al hardware gráfico directamente. En su lugar, GDI interactúa con los controladores de dispositivo en nombre de las aplicaciones.
+La interfaz de Windows gráficos (GDI) de Microsoft permite a las aplicaciones usar gráficos y texto con formato tanto en la pantalla de vídeo como en la impresora. Windows aplicaciones basadas en archivos no acceden directamente al hardware gráfico. En su lugar, GDI interactúa con los controladores de dispositivo en nombre de las aplicaciones.
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
-GDI se puede usar en todas las aplicaciones basadas en Windows.
+GDI se puede usar en todas las Windows basadas en aplicaciones.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-Esta API está diseñada para que la usen los programadores de C/C++. Es necesario estar familiarizado con la [arquitectura controlada por mensajes](../learnwin32/window-messages.md) de Windows.
+Esta API está diseñada para su uso por los programadores de C/C++. Es necesario estar familiarizado Windows [arquitectura controlada por](../learnwin32/window-messages.md) mensajes.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
-Para obtener información sobre los sistemas operativos necesarios para usar una función determinada, consulte la sección de requisitos de la documentación de la función.
+Para obtener información sobre qué sistemas operativos deben usar una función determinada, consulte la sección Requisitos de la documentación de la función.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -42,10 +42,10 @@ Para obtener información sobre los sistemas operativos necesarios para usar una
 -   [Líneas y curvas](lines-and-curves.md)
 -   [Metarchivos](metafiles.md)
 -   [Varios monitores de pantalla](multiple-display-monitors.md)
--   [Dibujar y dibujar](painting-and-drawing.md)
+-   [Dibujo y dibujo](painting-and-drawing.md)
 -   [Paths](paths.md)
 -   [Lápices](pens.md)
--   [Impresión y cola de impresión](/previous-versions//dd162860(v=vs.85))
+-   [Impresión e impresión de cola de impresión](/previous-versions//dd162860(v=vs.85))
 -   [Rectángulos](rectangles.md)
 -   [Regiones](regions.md)
 
@@ -59,10 +59,10 @@ Para obtener información sobre los sistemas operativos necesarios para usar una
 [GDI+](../gdiplus/-gdiplus-gdi-start.md)
 </dt> <dt>
 
-[OpenGL](../opengl/opengl.md)
+[Opengl](../opengl/opengl.md)
 </dt> <dt>
 
-[Adquisición de imágenes de Windows](../wia/-wia-startpage.md)
+[Windows Adquisición de imágenes](../wia/-wia-startpage.md)
 </dt> </dl>
 
  

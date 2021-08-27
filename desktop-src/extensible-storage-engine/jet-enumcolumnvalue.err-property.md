@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_ENUMCOLUMNVALUE. err (propiedad)'
-title: JET_ENUMCOLUMNVALUE. err (propiedad)
+description: 'Más información sobre: JET_ENUMCOLUMNVALUE.err'
+title: JET_ENUMCOLUMNVALUE.err, propiedad
 TOCTitle: 'err property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMNVALUE.err
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumnvalue.err(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f797d82ad09b75d961be24f2382b0895880427f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e87abbb77cb472048725f9ee0d797a565625cb0872aed6066ff9e5bfb7aaaf0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116135"
 ---
-# <a name="jet_enumcolumnvalueerr-property"></a>JET_ENUMCOLUMNVALUE. err (propiedad)
+# <a name="jet_enumcolumnvalueerr-property"></a>JET_ENUMCOLUMNVALUE.err, propiedad
 
-Obtiene el código de estado de la columna resultante de la enumeración del valor de la columna.
+Obtiene el código de estado de columna resultante de la enumeración del valor de columna.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,17 +60,17 @@ public JET_wrn err { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ENUMCOLUMNVALUE (clase)](./jet-enumcolumnvalue-class.md)
+[JET_ENUMCOLUMNVALUE clase](./jet-enumcolumnvalue-class.md)
 
-[Miembros de JET_ENUMCOLUMNVALUE](./jet-enumcolumnvalue-members.md)
+[JET_ENUMCOLUMNVALUE miembros](./jet-enumcolumnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
 
 [ColumnNull](./jet-wrn-enumeration.md)
 

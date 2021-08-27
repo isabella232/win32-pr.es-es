@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_SPACEHINTS. Método DeepClone'
+description: 'Más información sobre: JET_SPACEHINTS. Método DeepClone'
 title: JET_SPACEHINTS. Método DeepClone
 TOCTitle: 'DeepClone method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_SPACEHINTS.DeepClone
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ee47492de139df7c0ee91ad21846d0a56b6ab4f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf60f41b9b4d439e27ec9d9044599606691b846d61c3a88178d4e62a599d8bda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115945"
 ---
 # <a name="jet_spacehintsdeepclone-method"></a>JET_SPACEHINTS. Método DeepClone
 
-Devuelve una copia en profundidad del objeto.
+Devuelve una copia en profundidad del objeto .
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,8 +56,8 @@ public JET_SPACEHINTS DeepClone()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_SPACEHINTS](./jet-spacehints-class.md)  
-Una copia en profundidad del objeto.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_SPACEHINTS](./jet-spacehints-class.md)  
+Copia en profundidad del objeto.  
 
 #### <a name="implements"></a>Implementaciones
 
@@ -67,8 +67,8 @@ Una copia en profundidad del objeto.
 
 #### <a name="reference"></a>Referencia
 
-[JET_SPACEHINTS (clase)](./jet-spacehints-class.md)
+[JET_SPACEHINTS clase](./jet-spacehints-class.md)
 
-[Miembros de JET_SPACEHINTS](./jet-spacehints-members.md)
+[JET_SPACEHINTS miembros](./jet-spacehints-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

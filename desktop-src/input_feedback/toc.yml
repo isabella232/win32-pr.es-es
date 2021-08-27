@@ -11,7 +11,7 @@
           items:
             - name: FEEDBACK_TYPE
               href: /windows/win32/api/winuser/ne-winuser-feedback_type
-        - name: Functions
+        - name: Funciones
           href: functions.md
           items:
             - name: GetWindowFeedbackSetting

@@ -1,7 +1,7 @@
 ---
-description: El método SetSwapInputs especifica si se intercambian las entradas de la transición.
+description: El método SetSwapInputs especifica si se intercambian las entradas de transición.
 ms.assetid: c7303302-dbc4-41b6-8049-5c4496ee9264
-title: 'IAMTimelineTrans:: SetSwapInputs (método) (QEDIT. h)'
+title: Método IAMTimelineTrans::SetSwapInputs (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 4b2deecb393d6532015cf1490aacd1bd50501920
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3da350c6fe34f671d7af53ca67c404b4e327690918434b5e2fb1426e4a0953ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052085"
 ---
-# <a name="iamtimelinetranssetswapinputs-method"></a>IAMTimelineTrans:: SetSwapInputs (método)
+# <a name="iamtimelinetranssetswapinputs-method"></a>Método IAMTimelineTrans::SetSwapInputs
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `SetSwapInputs` método especifica si se intercambian las entradas de la transición.
+El `SetSwapInputs` método especifica si se intercambian las entradas de transición.
 
-De forma predeterminada, una transición va desde el compuesto de todas las capas de prioridad inferior hasta la capa en la que reside la transición. Puede invertir esta progresión, por lo que la transición va desde la capa en la que reside hasta el compuesto de capas de menor prioridad. Para obtener más información, consulte dirección de la [transición](transition-direction.md).
+De forma predeterminada, una transición pasa de la composición de todas las capas de prioridad inferior a la capa donde reside la transición. Puede invertir esta progresión, por lo que la transición pasa de la capa donde reside de nuevo a la composición de capas de prioridad inferior. Para obtener más información, vea [Dirección de transición](transition-direction.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,25 +50,25 @@ HRESULT SetSwapInputs(
 *Val* 
 </dt> <dd>
 
-Especifica si se intercambian las entradas. Si **es false**, la transición va del compuesto de todas las capas de prioridad inferior a la capa de transición. Si **es true**, la transición va en la dirección opuesta.
+Especifica si se intercambian las entradas. Si **es FALSE,** la transición pasa de la composición de todas las capas de prioridad inferior a la capa de transición. Si **es TRUE,** la transición va en la dirección opuesta.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no cambia la dirección del efecto visual. Por ejemplo, un borrado de izquierda a derecha seguirá desplazando de izquierda a derecha. Para cambiar la dirección, establezca la propiedad **Progress** mediante la interfaz [**IPropertySetter**](ipropertysetter.md) .
+Este método no cambia la dirección del efecto visual. Por ejemplo, un borrado de izquierda a derecha seguirá siendo de izquierda a derecha. Para cambiar la dirección, establezca la **propiedad Progress** mediante la [**interfaz IPropertySetter.**](ipropertysetter.md)
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -78,8 +78,8 @@ Este método no cambia la dirección del efecto visual. Por ejemplo, un borrado 
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ Este método no cambia la dirección del efecto visual. Por ejemplo, un borrado 
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineTrans**](iamtimelinetrans.md)
+[**IAMTimelineTrans (interfaz)**](iamtimelinetrans.md)
 </dt> <dt>
 
 [Códigos de error y de éxito](error-and-success-codes.md)

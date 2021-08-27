@@ -1,7 +1,7 @@
 ---
-description: Hora de detención en el ejemplo actual.
+description: Tiempo de detenerse en el ejemplo actual.
 ms.assetid: 78045c9f-76bd-42a8-b40a-6b18ac93c9b2
-title: 'Miembro CBaseRenderer:: m_SignalTime (Renbase. h)'
+title: CBaseRenderer::m_SignalTime miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b61e5715c96c9233d5d8d25d14b62de093e87bea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b8fca6274cd12d601dd205d657a34118c579dc65715e9f52e072edf20101436
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103175"
 ---
-# <a name="cbaserendererm_signaltime-member"></a>Miembro SignalTime CBaseRenderer:: m \_
+# <a name="cbaserendererm_signaltime-member"></a>Miembro CBaseRenderer::m \_ SignalTime
 
-Hora de detención en el ejemplo actual.
+Tiempo de detenerse en el ejemplo actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ REFERENCE_TIME m_SignalTime;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ REFERENCE_TIME m_SignalTime;
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

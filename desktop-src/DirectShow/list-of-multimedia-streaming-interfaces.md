@@ -4,27 +4,27 @@ ms.assetid: 19dae9fc-e26a-4777-9190-d8a86da1ea75
 title: Lista de interfaces de streaming multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3720d6ba4dd3e1fbc714bbe7f5af07572b3303f6
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 360524cc27e9215d8340db01c079c231241c352563046001136a9d35b479d9b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105689628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051275"
 ---
 # <a name="list-of-multimedia-streaming-interfaces"></a>Lista de interfaces de streaming multimedia
 
 > [!Note]  
-> Estas API están en desuso. Las aplicaciones deben usar el filtro de [**enganche de ejemplo**](sample-grabber-filter.md) o implementar un filtro personalizado para obtener datos de un gráfico de filtros de DirectShow.
+> Estas API están en desuso. Las aplicaciones deben usar el [**filtro Sample Grabber**](sample-grabber-filter.md) o implementar un filtro personalizado para obtener datos de un DirectShow gráfico de filtros.
 
  
 
-La transmisión por secuencias multimedia incluye una serie de interfaces; en este artículo se proporciona una breve descripción de cada interfaz. Para obtener más información sobre streaming multimedia, consulte [acerca de la arquitectura de streaming multimedia](about-the-multimedia-streaming-architecture.md).
+El streaming multimedia consta de varias interfaces; En este artículo se proporciona una breve descripción de cada interfaz. Para obtener información adicional sobre el streaming multimedia, vea [Acerca de la arquitectura de streaming multimedia.](about-the-multimedia-streaming-architecture.md)
 
 Este artículo contiene las secciones siguientes.
 
--   [Interfaces de streaming multimedia de base](base-multimedia-streaming-interfaces.md)
--   [Interfaces de streaming de DirectDraw](directdraw-streaming-interfaces.md)
--   [Interfaces de streaming de audio](audio-streaming-interfaces.md)
+-   [Base Multimedia Streaming Interfaces](base-multimedia-streaming-interfaces.md)
+-   [DirectDraw Streaming Interfaces](directdraw-streaming-interfaces.md)
+-   [Audio Streaming Interfaces](audio-streaming-interfaces.md)
 
  
 

@@ -1,11 +1,11 @@
 ---
-title: RegisteredTask. GetInstances, método
-description: En el caso de scripting, devuelve todas las instancias de la tarea registrada actualmente en ejecución.
+title: Método RegisteredTask.GetInstances
+description: Para el scripting, devuelve todas las instancias en ejecución de la tarea registrada.
 ms.assetid: 01fea94e-fdec-4edf-886a-f6d9b566f201
 keywords:
 - Método GetInstances Programador de tareas
-- Método GetInstances Programador de tareas, objeto RegisteredTask
-- Programador de tareas de objeto RegisteredTask, método GetInstances
+- Método GetInstances Programador de tareas , objeto RegisteredTask
+- Método RegisteredTask Programador de tareas , GetInstances
 topic_type:
 - apiref
 api_name:
@@ -16,19 +16,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78b1579df1124fcd6d26ea658730190b5eb0f5de
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f9224922e70242304423950a67bf4acd866d1a551a90f4c9a6dadb94470ba1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126065"
 ---
-# <a name="registeredtaskgetinstances-method"></a>RegisteredTask. GetInstances, método
+# <a name="registeredtaskgetinstances-method"></a>Método RegisteredTask.GetInstances
 
-En el caso de scripting, devuelve todas las instancias de la tarea registrada actualmente en ejecución.
+Para el scripting, devuelve todas las instancias en ejecución de la tarea registrada.
 
 > [!Note]  
-> **RegisteredTask. GetInstances** solo devolverá las instancias de la tarea registrada actualmente en ejecución que se ejecutan en el contexto de seguridad de un usuario o debajo de él. Por ejemplo, para los miembros del grupo administradores, **GetInstances** devolverá todas las instancias de la tarea registrada actualmente en ejecución, pero para los miembros del grupo usuarios, **GetInstances** solo devolverá las instancias de la tarea registrada actualmente en ejecución que se ejecutan en el contexto de seguridad del grupo usuarios.
+> **RegisteredTask.GetInstances** solo devolverá instancias de la tarea registrada que se está ejecutando actualmente en o por debajo del contexto de seguridad de un usuario. Por ejemplo, para los miembros del grupo Administradores, **GetInstances** devolverá todas las instancias de la tarea registrada que se está ejecutando actualmente, pero para los miembros del grupo Usuarios, **GetInstances** solo devolverá instancias de la tarea registrada que se está ejecutando actualmente en el contexto de seguridad del grupo Usuarios.
 
  
 
@@ -51,14 +51,14 @@ RegisteredTask.GetInstances( _
 *flags* 
 </dt> <dd>
 
-Este parámetro se reserva para uso futuro y debe establecerse en 0.
+Este parámetro está reservado para uso futuro y debe establecerse en 0.
 
 </dd> <dt>
 
-*runningTasks* \[ enuncia\]
+*runningTasks* \[ out\]
 </dt> <dd>
 
-Un objeto [**RunningTaskCollection**](runningtaskcollection.md) que contiene todas las instancias de la tarea que se están ejecutando actualmente.
+Objeto [**RunningTaskCollection**](runningtaskcollection.md) que contiene todas las instancias en ejecución de la tarea.
 
 </dd> </dl>
 
@@ -72,9 +72,9 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

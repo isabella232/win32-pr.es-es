@@ -1,15 +1,15 @@
 ---
-description: El método Step avanza el flujo de DVD-Video por el número especificado de fotogramas.
+description: El método Step avanza el DVD-Video secuencia según el número de fotogramas especificado.
 ms.assetid: 6f67335e-51c7-4b81-8ab3-86a3d70ac871
 title: Método Step
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29b9c3f20e41c52bfa32c2cf0138c9e286c98e13
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be5738e8704b24d64a429d8d38f1b9eac2f9b8ff7e22a7e9d1d2a29fb9df4f03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050315"
 ---
 # <a name="step-method"></a>Método Step
 
@@ -18,7 +18,7 @@ ms.locfileid: "105678262"
 
  
 
-El `Step` método avanza el flujo de DVD-Video por el número de fotogramas especificado.
+El `Step` método avanza el DVD-Video secuencia según el número de fotogramas especificado.
 
 ``` syntax
 MSWebDVD.Step(iFrames)
@@ -28,10 +28,10 @@ MSWebDVD.Step(iFrames)
 
 <dl> <dt>
 
-<span id="iFrames"></span><span id="iframes"></span><span id="IFRAMES"></span>*iFrames*
+<span id="iFrames"></span><span id="iframes"></span><span id="IFRAMES"></span>*Iframes*
 </dt> <dd>
 
-Especifica el número de fotogramas que se van a recorrer como un entero.
+Especifica el número de fotogramas que se pueden ir paso a paso como un entero.
 
 </dd> </dl>
 
@@ -39,11 +39,11 @@ Especifica el número de fotogramas que se van a recorrer como un entero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de llamar a este método, llame a [**CanStep**](canstep-method.md) para determinar si el descodificador admite la ejecución de fotogramas.
+Antes de llamar a este método, llame [**a CanStep**](canstep-method.md) para determinar si el descodificador admite la ejecución paso a paso de fotogramas.
 
-Si el DVD-Video se está reproduciendo en modo inverso cuando se llama a este método y el descodificador admite el recorrido de fotogramas inverso, el fotograma se ejecuta en orden inverso.
+Si el DVD-Video está reproduciendo en modo inverso cuando se llama a este método y el descodificador admite la ejecución paso a paso de fotograma inverso, la ejecución paso a paso del marco se realiza a la inversa.
 
  
 

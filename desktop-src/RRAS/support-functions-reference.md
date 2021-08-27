@@ -1,21 +1,21 @@
 ---
-title: Referencia de funciones de soporte
-description: Las siguientes funciones se proporcionan a los protocolos de enrutamiento por parte del administrador de enrutadores.
+title: Referencia de funciones de soporte técnico
+description: El administrador de enrutadores proporciona las siguientes funciones a los protocolos de enrutamiento.
 ms.assetid: 4e88c9fe-f6ec-4f9c-88b1-8726e10d0f6d
 keywords:
-- Interfaz de protocolo de enrutamiento RRAS, funciones de soporte
+- Interface de protocolo de enrutamiento RRAS, funciones de compatibilidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbbaba49c5f7e4130491a50176d560ee565b0046
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7fa2af1b38e88e9f3b7a55e8026ad42f4b1d0cff26de3798fb04621a1288ad9f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073715"
 ---
-# <a name="support-functions-reference"></a>Referencia de funciones de soporte
+# <a name="support-functions-reference"></a>Referencia de funciones de soporte técnico
 
-Las siguientes funciones se proporcionan a los protocolos de enrutamiento por parte del administrador de enrutadores. Cuando el administrador de enrutadores llama a la función [**StartProtocol**](/windows/desktop/api/Routprot/nc-routprot-pstart_protocol) (implementada por el protocolo de enrutamiento), el administrador de enrutadores pasa el protocolo de enrutamiento a una estructura de [**\_ funciones de soporte**](/windows/desktop/api/Routprot/ns-routprot-support_functions_50) que contiene punteros a estas funciones:
+El administrador de enrutadores proporciona las siguientes funciones a los protocolos de enrutamiento. Cuando el administrador de enrutadores llama a la función [**StartProtocol**](/windows/desktop/api/Routprot/nc-routprot-pstart_protocol) (implementada por el protocolo de enrutamiento), el administrador de enrutadores pasa al protocolo de enrutamiento una estructura [**SUPPORT \_ FUNCTIONS**](/windows/desktop/api/Routprot/ns-routprot-support_functions_50) que contiene punteros a estas funciones:
 
 [**DemandDialRequest**](/previous-versions/windows/desktop/legacy/aa373924(v=vs.85))
 
@@ -35,6 +35,6 @@ Las siguientes funciones se proporcionan a los protocolos de enrutamiento por pa
 
 [**ValidateRoute**](/previous-versions/windows/desktop/legacy/aa382342(v=vs.85))
 
- 
+ 
 
- 
+ 

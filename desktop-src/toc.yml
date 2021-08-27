@@ -9,7 +9,7 @@
           href: ./whats-new.md
         - name: Creación de la primera aplicación Win32 de C++
           href: ./learnwin32/learn-to-program-for-windows.md
-        - name: Creación de la primera aplicación Windows con DirectX
+        - name: Creación de la primera Windows aplicación mediante DirectX
           href: ./direct3dgetstarted/building-your-first-directx-app.md
         - name: Uso de los Windows encabezados
           href: ./winprog/using-the-windows-headers.md
@@ -22,7 +22,7 @@
             - name: Windows 7 guías
               href: ./windows-7.md
               items:
-                - name: Windows guía de calidad de aplicaciones de Windows Server 2008 R2 y 7
+                - name: Windows guía de calidad de aplicaciones de Windows Server 2008 R2
                   href: ./win7appqual/windows-7-application-quality-cookbook.md
                 - name: Windows 7 Developer Guide (Guía para desarrolladores de Windows 7)
                   href: ./win7devguide/windows-7-developer-guide.md
@@ -51,7 +51,7 @@
                   href: ./accessibility/accessibility-atdev.md
                 - name: Pruebas de accesibilidad
                   href: ./accessibility/accessibility-testwithuia.md
-                - name: Tecnología heredada de automatización y accesibilidad
+                - name: Tecnología heredada de accesibilidad y automatización
                   href: ./accessibility/accessibility-legacy.md
                 - name: Referencia de características de accesibilidad y automatización
                   href: ./accessibility/accessibility-reference-old.md
@@ -79,7 +79,7 @@
                       href: ./input_intcontext/interaction-context-portal.md
                     - name: Pila de dispositivos de puntero
                       href: ./input_pointerdevice/pointer-device-stack-portal.md
-                    - name: Notificaciones y mensajes de entrada de puntero
+                    - name: Mensajes y notificaciones de entrada de puntero
                       href: ./inputmsg/messages-and-notifications-portal.md
                     - name: Entrada del controlador radial
                       href: ./input_radial/radialcontroller-portal.md
@@ -123,7 +123,7 @@
               items:
                 - name: Información general
                   href: ./user-interface.md
-                - name: Shell de Windows
+                - name: Shell Windows
                   href: ./shell/shell-entry.md
                 - name: Windows Sistema de propiedades
                   href: ./properties/windows-properties-system.md
@@ -153,7 +153,7 @@
               items:
                 - name: Información general
                   href: ./audio-and-video.md
-                - name: API de audio principales
+                - name: API de audio principal
                   href: ./coreaudio/core-audio-apis-in-windows-vista.md
                 - name: DirectShow
                   href: ./directshow/directshow.md
@@ -175,7 +175,7 @@
                   href: ./bits/background-intelligent-transfer-service-portal.md
                 - name: Backup
                   href: ./backup/backup.md
-                - name: Motores de Sincronización en la nube
+                - name: Motores de sincronización en la nube
                   href: ./cfapi/cloud-files-api-portal.md
                 - name: Sistema de archivos distribuido
                   href: /windows/win32/api/_dfs/
@@ -215,7 +215,7 @@
                   href: wsdapi/wsd-portal.md
                 - name: Wia
                   href: ./wsdapi/wsd-portal.md
-            - name: Windows SDK Administrador de dispositivos 11
+            - name: Windows SDK Administrador de dispositivos 11 de Media
               href: ./wmdm/windows-media-device-manager-11-sdk.md
             - name: Windows Dispositivos portátiles
               items:
@@ -305,7 +305,7 @@
                       href: ./directwrite/direct-write-portal.md
                     - name: DirectXMath
                       href: ./dxmath/directxmath-portal.md
-                    - name: API windowsnumerics.h
+                    - name: API de windowsnumerics.h
                       href: ./numerics_h/windowsnumerics-h-apis-portal.md
                     - name: Gráficos clásicos de DirectX
                       items:
@@ -379,7 +379,7 @@
                   href: Tapi/telephony-application-programming-interfaces.md
                 - name: Teredo
                   href: ./teredo/portal.md
-                - name: Api de componentes del protocolo WebSocket
+                - name: API de componentes del protocolo WebSocket
                   href: ./websock/web-socket-protocol-component-api-portal.md
                 - name: Plataforma de filtrado de Windows
                   href: ./fwp/windows-filtering-platform-start-page.md
@@ -413,11 +413,11 @@
               items:
                 - name: Información general
                   href: ./security.md
-                - name: Antimalware Scan (interfaz)
+                - name: Antimalware Scan (Interfaz)
                   href: ./amsi/antimalware-scan-interface-portal.md
-                - name: Autenticación
+                - name: Authentication
                   href: ./secauthn/authentication-portal.md
-                - name: Autorización
+                - name: Authorization
                   href: ./secauthz/authorization-portal.md
                 - name: Procedimientos recomendados para las API de seguridad
                   href: ./secbp/best-practices-for-the-security-apis.md
@@ -486,7 +486,7 @@
                   href: ./com/component-object-model--com--portal.md
                 - name: Lenguaje de definición de interfaz de Microsoft
                   href: ./midl/midl-start-page.md
-                - name: Estructura Storage
+                - name: Estructurada Storage
                   href: ./stg/structured-storage-start-page.md
                 - name: COM+
                   href: ./cossdk/component-services-portal.md
@@ -600,7 +600,7 @@
                       href: ./dmwmibridgeprov/mdm-bridge-wmi-provider-portal.md
                     - name: Windows Herramienta de evaluación del sistema
                       href: ./winsat/windows-system-assessment-tool-portal.md
-                    - name: Proveedor principal wmi
+                    - name: Proveedor principal de WMI
                       href: ./wmicoreprov/wmi-core-provider-.md
                 - name: Administración remota de Windows
                   href: ./winrm/portal.md

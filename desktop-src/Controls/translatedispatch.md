@@ -1,9 +1,9 @@
 ---
 title: Función de devolución de llamada TranslateDispatch
-description: Lo usa el cliente de la función DoReaderMode para interceptar y controlar explícitamente los mensajes de Windows destinados al área de desplazamiento de la ventana de modo lector. Se trata de una función de devolución de llamada definida por la aplicación.
+description: Usado por el cliente de la función DoReaderMode para interceptar y controlar explícitamente los mensajes de Windows destinados al área de desplazamiento de la ventana del modo de lector. Se trata de una función de devolución de llamada definida por la aplicación.
 ms.assetid: a50cff4f-ae10-4c3c-a386-9ec7c7d6256f
 keywords:
-- TranslateDispatch (función de devolución de llamada) controles de Windows
+- Función de devolución de llamada TranslateDispatch Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1230ed1e65f8d739f9a0a05e4788eb919c45c4cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08f726c3f56579260e96a882f1123d035df37cb3f7f71fd0ecbc47d41672359c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060535"
 ---
 # <a name="translatedispatch-callback-function"></a>Función de devolución de llamada TranslateDispatch
 
-\[*TranslateDispatch* está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
+\[*TranslateDispatch* está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
 
-Lo usa el cliente de la función [**DoReaderMode**](doreadermode.md) para interceptar y controlar explícitamente los mensajes de Windows destinados al área de desplazamiento de la ventana de modo lector. Se trata de una función de devolución de llamada definida por la aplicación.
+Usado por el cliente de la función [**DoReaderMode**](doreadermode.md) para interceptar y controlar explícitamente los mensajes de Windows destinados al área de desplazamiento de la ventana del modo de lector. Se trata de una función de devolución de llamada definida por la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,24 +42,24 @@ BOOL CALLBACK TranslateDispatch(
 
 <dl> <dt>
 
-*lpmsg* \[ de\]
+*lpmsg* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**MSG**](/windows/win32/api/winuser/ns-winuser-msg) \** _
+Tipo: **const [**MSG**](/windows/win32/api/winuser/ns-winuser-msg) \***
 
-Puntero a una estructura [_ *MSG* *](/windows/win32/api/winuser/ns-winuser-msg) que contiene el mensaje interceptado.
+Puntero a una [**estructura MSG**](/windows/win32/api/winuser/ns-winuser-msg) que contiene el mensaje interceptado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)**
 
-**True** si esta función controla el mensaje; en caso contrario, **false**. Si es **false**, el mensaje se controla mediante la implementación del modo de lectura predeterminada. Esa implementación controla el movimiento y los botones del mouse, así como las pulsaciones de teclas.
+**TRUE** si esta función controló el mensaje; de lo contrario, **FALSE**. Si **es FALSE**, el mensaje se controla mediante la implementación predeterminada del modo de lector. Esa implementación controla el movimiento del mouse y los botones, así como las pulsaciones de tecla.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo se describe una implementación de esta función.
+En el ejemplo siguiente se describe una implementación de esta función.
 
 
 ```C++
@@ -87,8 +87,8 @@ TranslateDispatchCallback(LPMSG lpmsg)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, \[ solo aplicaciones de escritorio de Windows Vista\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows Vista, solo Windows \[ aplicaciones de escritorio de Vista\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>          |
 
 
 

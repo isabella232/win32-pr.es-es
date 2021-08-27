@@ -1,6 +1,6 @@
 ---
 title: Códigos de error de WFP (Winerror.h)
-description: Códigos de error específicos de (WFP).
+description: (WFP) códigos de error específicos.
 ms.assetid: 11f3085a-f044-4a78-b47a-59b9086562bf
 topic_type:
 - apiref
@@ -68,20 +68,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a0e7ee1ab0364a31f136f0c0cdbf87f459225b1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21550e0c8872f0d0f8c067b38044a946f10f452d06ca213dea414d34756ce7ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083205"
 ---
 # <a name="wfp-error-codes"></a>Códigos de error de WFP
 
-Los códigos de error específicos de la plataforma de filtrado de Windows (WFP) son los siguientes.
+Windows Los códigos de error específicos de la plataforma de filtrado (WFP) son los siguientes.
 
 <dl> <dt>
 
-<span id="FWP_E_CALLOUT_NOT_FOUND"></span><span id="fwp_e_callout_not_found"></span>**\_ \_ \_ no \_ se encontró el FWP E llamada**
+<span id="FWP_E_CALLOUT_NOT_FOUND"></span><span id="fwp_e_callout_not_found"></span>**NO SE ENCONTRÓ LA LLAMADA FWP \_ \_ \_ E \_**
 </dt> <dd> <dl> <dt>
 
 0x80320001
@@ -94,7 +94,7 @@ La llamada no existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_CONDITION_NOT_FOUND"></span><span id="fwp_e_condition_not_found"></span>**\_ \_ \_ no \_ se encontró la condición de FWP E**
+<span id="FWP_E_CONDITION_NOT_FOUND"></span><span id="fwp_e_condition_not_found"></span>**NO SE \_ ENCONTRÓ LA CONDICIÓN FWP E \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80320002
@@ -107,7 +107,7 @@ La condición de filtro no existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_FILTER_NOT_FOUND"></span><span id="fwp_e_filter_not_found"></span>**\_ \_ \_ no \_ se encontró el filtro de FWP E**
+<span id="FWP_E_FILTER_NOT_FOUND"></span><span id="fwp_e_filter_not_found"></span>**NO SE \_ ENCONTRÓ EL FILTRO FWP \_ \_ \_ E**
 </dt> <dd> <dl> <dt>
 
 0x80320003
@@ -120,7 +120,7 @@ El filtro no existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_LAYER_NOT_FOUND"></span><span id="fwp_e_layer_not_found"></span>**\_ \_ \_ no \_ se encontró el nivel de FWP E**
+<span id="FWP_E_LAYER_NOT_FOUND"></span><span id="fwp_e_layer_not_found"></span>**NO SE \_ ENCONTRÓ LA CAPA DE FWP \_ \_ \_ E**
 </dt> <dd> <dl> <dt>
 
 0x80320004
@@ -133,7 +133,7 @@ La capa no existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_PROVIDER_NOT_FOUND"></span><span id="fwp_e_provider_not_found"></span>**\_ \_ \_ no \_ se encontró el proveedor de FWP E**
+<span id="FWP_E_PROVIDER_NOT_FOUND"></span><span id="fwp_e_provider_not_found"></span>**NO SE \_ ENCONTRÓ EL \_ PROVEEDOR FWP \_ \_ E**
 </dt> <dd> <dl> <dt>
 
 0x80320005
@@ -146,7 +146,7 @@ El proveedor no existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_PROVIDER_CONTEXT_NOT_FOUND"></span><span id="fwp_e_provider_context_not_found"></span>**\_ \_ \_ \_ no se encontró el contexto \_ del proveedor de FWP E**
+<span id="FWP_E_PROVIDER_CONTEXT_NOT_FOUND"></span><span id="fwp_e_provider_context_not_found"></span>**NO SE ENCONTRÓ EL CONTEXTO DEL PROVEEDOR FWP \_ \_ \_ \_ \_ E**
 </dt> <dd> <dl> <dt>
 
 0x80320006
@@ -159,7 +159,7 @@ El contexto del proveedor no existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_SUBLAYER_NOT_FOUND"></span><span id="fwp_e_sublayer_not_found"></span>**\_ \_ \_ no \_ se encontró el subnivel de FWP E**
+<span id="FWP_E_SUBLAYER_NOT_FOUND"></span><span id="fwp_e_sublayer_not_found"></span>**NO SE \_ ENCONTRÓ \_ LA SUBCAPA FWP \_ E \_**
 </dt> <dd> <dl> <dt>
 
 0x80320007
@@ -172,7 +172,7 @@ La subcapa no existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_NOT_FOUND"></span><span id="fwp_e_not_found"></span>**\_ \_ no \_ se encontró el FWP E**
+<span id="FWP_E_NOT_FOUND"></span><span id="fwp_e_not_found"></span>**FWP \_ E \_ NO \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 0x80320008
@@ -182,12 +182,12 @@ La subcapa no existe.
 
 El objeto no existe.
 
-Las [funciones \* IPsecSaContext](fwp-ipsec-functions.md) devuelven este error si no se encuentra el identificador de contexto de SA.
+Las [funciones IPsecSaContext \* ](fwp-ipsec-functions.md) devuelven este error si no se encuentra el identificador de contexto de SA.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_ALREADY_EXISTS"></span><span id="fwp_e_already_exists"></span>**el FWP \_ E \_ ya \_ existe**
+<span id="FWP_E_ALREADY_EXISTS"></span><span id="fwp_e_already_exists"></span>**FWP \_ E \_ YA \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 0x80320009
@@ -200,7 +200,7 @@ Ya existe un objeto con ese GUID o LUID.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_IN_USE"></span><span id="fwp_e_in_use"></span>**FWP \_ E \_ en \_ uso**
+<span id="FWP_E_IN_USE"></span><span id="fwp_e_in_use"></span>**FWP \_ E \_ EN \_ USO**
 </dt> <dd> <dl> <dt>
 
 0x8032000A
@@ -213,7 +213,7 @@ Otros objetos hacen referencia al objeto, por lo que no se puede eliminar.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_DYNAMIC_SESSION_IN_PROGRESS"></span><span id="fwp_e_dynamic_session_in_progress"></span>**\_ \_ sesión dinámica de FWP E \_ \_ en \_ curso**
+<span id="FWP_E_DYNAMIC_SESSION_IN_PROGRESS"></span><span id="fwp_e_dynamic_session_in_progress"></span>**SESIÓN DINÁMICA \_ FWP E \_ EN \_ \_ \_ CURSO**
 </dt> <dd> <dl> <dt>
 
 0x8032000B
@@ -226,7 +226,7 @@ No se permite la llamada desde dentro de una sesión dinámica.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_WRONG_SESSION"></span><span id="fwp_e_wrong_session"></span>**sesión de FWP \_ E \_ incorrecta \_**
+<span id="FWP_E_WRONG_SESSION"></span><span id="fwp_e_wrong_session"></span>**FWP \_ E \_ SESIÓN \_ INCORRECTA**
 </dt> <dd> <dl> <dt>
 
 0x8032000C
@@ -239,7 +239,7 @@ La llamada se realizó desde una sesión incorrecta, por lo que no se puede comp
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_NO_TXN_IN_PROGRESS"></span><span id="fwp_e_no_txn_in_progress"></span>**FWP \_ E \_ no \_ TXN \_ en \_ curso**
+<span id="FWP_E_NO_TXN_IN_PROGRESS"></span><span id="fwp_e_no_txn_in_progress"></span>**FWP \_ E \_ NO \_ TXN EN \_ \_ CURSO**
 </dt> <dd> <dl> <dt>
 
 0x8032000D
@@ -247,12 +247,12 @@ La llamada se realizó desde una sesión incorrecta, por lo que no se puede comp
 
 
 
-La llamada se debe realizar desde una transacción explícita.
+La llamada debe realizarse desde una transacción explícita.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_TXN_IN_PROGRESS"></span><span id="fwp_e_txn_in_progress"></span>**FWP \_ E \_ TXN \_ en \_ curso**
+<span id="FWP_E_TXN_IN_PROGRESS"></span><span id="fwp_e_txn_in_progress"></span>**FWP \_ E \_ TXN EN \_ \_ CURSO**
 </dt> <dd> <dl> <dt>
 
 0x8032000E
@@ -265,7 +265,7 @@ No se permite la llamada desde dentro de una transacción explícita.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_TXN_ABORTED"></span><span id="fwp_e_txn_aborted"></span>**FWP \_ E \_ TXN \_ anulado**
+<span id="FWP_E_TXN_ABORTED"></span><span id="fwp_e_txn_aborted"></span>**FWP \_ E \_ TXN \_ ABORTED**
 </dt> <dd> <dl> <dt>
 
 0x8032000F
@@ -273,12 +273,12 @@ No se permite la llamada desde dentro de una transacción explícita.
 
 
 
-Se ha cancelado la transacción explícita.
+La transacción explícita se ha cancelado forzadamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_SESSION_ABORTED"></span><span id="fwp_e_session_aborted"></span>**se \_ \_ anuló la sesión \_ de FWP E**
+<span id="FWP_E_SESSION_ABORTED"></span><span id="fwp_e_session_aborted"></span>**SESIÓN FWP \_ E \_ \_ ANULADA**
 </dt> <dd> <dl> <dt>
 
 0x80320010
@@ -286,14 +286,14 @@ Se ha cancelado la transacción explícita.
 
 
 
-Se ha cancelado la sesión.
+La sesión se ha cancelado.
 
-El identificador de sesión debe cerrarse llamando a [**FwpmEngineClose0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmengineclose0), aunque ya no sea válido. de lo contrario, se filtrará el estado del lado cliente. Se debe crear una nueva sesión mediante una llamada a [**FwpmEngineOpen0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmengineopen0).
+El identificador de sesión debe cerrarse mediante una llamada [**a FwpmEngineClose0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmengineclose0), aunque ya no sea válido; De lo contrario, se filtrará el estado del lado cliente. Se debe crear una nueva sesión llamando [**a FwpmEngineOpen0.**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmengineopen0)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INCOMPATIBLE_TXN"></span><span id="fwp_e_incompatible_txn"></span>**\_ \_ TXN incompatible de FWP E incompatible \_**
+<span id="FWP_E_INCOMPATIBLE_TXN"></span><span id="fwp_e_incompatible_txn"></span>**FWP \_ E \_ INCOMPATIBLE \_ TXN**
 </dt> <dd> <dl> <dt>
 
 0x80320011
@@ -301,12 +301,12 @@ El identificador de sesión debe cerrarse llamando a [**FwpmEngineClose0**](/win
 
 
 
-No se permite la llamada desde una transacción de solo lectura.
+No se permite la llamada desde dentro de una transacción de solo lectura.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_TIMEOUT"></span><span id="fwp_e_timeout"></span>**tiempo de espera de FWP \_ E \_**
+<span id="FWP_E_TIMEOUT"></span><span id="fwp_e_timeout"></span>**TIEMPO DE ESPERA \_ DE FWP E \_**
 </dt> <dd> <dl> <dt>
 
 0x80320012
@@ -314,12 +314,12 @@ No se permite la llamada desde una transacción de solo lectura.
 
 
 
-Se agotó el tiempo de espera de la llamada mientras se esperaba a adquirir el bloqueo de la transacción.
+Se ha producido un tiempo de espera de la llamada mientras se esperaba adquirir el bloqueo de transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_NET_EVENTS_DISABLED"></span><span id="fwp_e_net_events_disabled"></span>**\_eventos net de FWP E \_ \_ \_ deshabilitados**
+<span id="FWP_E_NET_EVENTS_DISABLED"></span><span id="fwp_e_net_events_disabled"></span>**EVENTOS FWP \_ E \_ NET \_ \_ DESHABILITADOS**
 </dt> <dd> <dl> <dt>
 
 0x80320013
@@ -332,7 +332,7 @@ La colección de eventos de diagnóstico de red está deshabilitada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INCOMPATIBLE_LAYER"></span><span id="fwp_e_incompatible_layer"></span>**nivel de FWP \_ E \_ incompatible \_**
+<span id="FWP_E_INCOMPATIBLE_LAYER"></span><span id="fwp_e_incompatible_layer"></span>**FWP \_ E \_ CAPA INCOMPATIBLE \_**
 </dt> <dd> <dl> <dt>
 
 0x80320014
@@ -345,7 +345,7 @@ La capa especificada no admite la operación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_KM_CLIENTS_ONLY"></span><span id="fwp_e_km_clients_only"></span>**solo clientes de FWP \_ E \_ km \_ \_**
+<span id="FWP_E_KM_CLIENTS_ONLY"></span><span id="fwp_e_km_clients_only"></span>**SOLO CLIENTES \_ FWP E \_ KM \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80320015
@@ -353,12 +353,12 @@ La capa especificada no admite la operación.
 
 
 
-Solo se permite la llamada a los autores de llamadas en modo kernel.
+La llamada solo se permite para los autores de llamadas en modo kernel.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_LIFETIME_MISMATCH"></span><span id="fwp_e_lifetime_mismatch"></span>**\_ \_ duración \_ no coincidente de FWP E**
+<span id="FWP_E_LIFETIME_MISMATCH"></span><span id="fwp_e_lifetime_mismatch"></span>**FWP \_ E \_ LIFETIME \_ MISMATCH**
 </dt> <dd> <dl> <dt>
 
 0x80320016
@@ -366,14 +366,14 @@ Solo se permite la llamada a los autores de llamadas en modo kernel.
 
 
 
-La llamada intentó asociar dos objetos con duraciones incompatibles.
+La llamada intentó asociar dos objetos a duraciones incompatibles.
 
-Vea [Administración de objetos](object-management.md) para obtener más información sobre la duración de los objetos y la Asociación de objetos.
+Vea [Administración de objetos para](object-management.md) obtener más información sobre la duración de los objetos y la asociación de objetos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_BUILTIN_OBJECT"></span><span id="fwp_e_builtin_object"></span>**FWP \_ E \_ Builtin ( \_ objeto)**
+<span id="FWP_E_BUILTIN_OBJECT"></span><span id="fwp_e_builtin_object"></span>**FWP \_ E \_ BUILTIN \_ (OBJETO)**
 </dt> <dd> <dl> <dt>
 
 0x80320017
@@ -386,7 +386,7 @@ El objeto está integrado, por lo que no se puede eliminar.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_TOO_MANY_CALLOUTS"></span><span id="fwp_e_too_many_callouts"></span>**FWP \_ E \_ demasiadas \_ \_ llamadas**
+<span id="FWP_E_TOO_MANY_CALLOUTS"></span><span id="fwp_e_too_many_callouts"></span>**FWP \_ E \_ \_ DEMASIADAS \_ LLAMADAS**
 </dt> <dd> <dl> <dt>
 
 0x80320018
@@ -396,12 +396,12 @@ El objeto está integrado, por lo que no se puede eliminar.
 
 Se ha alcanzado el número máximo de llamadas.
 
-Como máximo, se pueden registrar 100.000 llamadas al mismo tiempo.
+Como máximo, se pueden registrar 100 000 llamadas al mismo tiempo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_NOTIFICATION_DROPPED"></span><span id="fwp_e_notification_dropped"></span>**se \_ \_ quitó la notificación de FWP E \_**
+<span id="FWP_E_NOTIFICATION_DROPPED"></span><span id="fwp_e_notification_dropped"></span>**NOTIFICACIÓN FWP \_ E \_ \_ DESCARTADA**
 </dt> <dd> <dl> <dt>
 
 0x80320019
@@ -409,12 +409,12 @@ Como máximo, se pueden registrar 100.000 llamadas al mismo tiempo.
 
 
 
-No se pudo entregar una notificación porque una cola de mensajes está a su capacidad máxima.
+No se pudo entregar una notificación porque una cola de mensajes está en su capacidad máxima.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_TRAFFIC_MISMATCH"></span><span id="fwp_e_traffic_mismatch"></span>**el \_ tráfico de FWP E \_ \_ no coincide**
+<span id="FWP_E_TRAFFIC_MISMATCH"></span><span id="fwp_e_traffic_mismatch"></span>**ERROR DE COINCIDENCIA DE TRÁFICO DE FWP \_ E \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x8032001A
@@ -422,14 +422,14 @@ No se pudo entregar una notificación porque una cola de mensajes está a su cap
 
 
 
-Los parámetros de tráfico de red no coinciden con los del contexto de la Asociación de seguridad.
+Los parámetros de tráfico de red no coinciden con los del contexto de asociación de seguridad.
 
-Se puede llamar a [**IPsecSaContextGetSpi0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextgetspi0) varias veces, pero el autor de la llamada debe especificar el mismo [**\_ TRAFFIC0 de IPSec**](/windows/desktop/api/Ipsectypes/ns-ipsectypes-ipsec_traffic0) cada vez. Se devuelve este error si una llamada subsiguiente proporciona un **\_ TRAFFIC0 de IPSec** diferente.
+[**Se puede llamar a IPsecSaContextGetSpi0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextgetspi0) varias veces, pero el autor de la llamada debe especificar el mismo [**\_ IPSEC TRAFFIC0**](/windows/desktop/api/Ipsectypes/ns-ipsectypes-ipsec_traffic0) cada vez. Este error se devuelve si una llamada posterior proporciona un **\_ traffic0 de IPSEC diferente.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INCOMPATIBLE_SA_STATE"></span><span id="fwp_e_incompatible_sa_state"></span>**\_Estado de \_ SA incompatible de FWP E \_ \_**
+<span id="FWP_E_INCOMPATIBLE_SA_STATE"></span><span id="fwp_e_incompatible_sa_state"></span>**FWP \_ E ESTADO DE \_ SA INCOMPATIBLE \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x8032001B
@@ -437,21 +437,21 @@ Se puede llamar a [**IPsecSaContextGetSpi0**](/windows/desktop/api/Fwpmu/nf-fwpm
 
 
 
-La llamada no está permitida para el estado de la Asociación de seguridad (SA) actual.
+No se permite la llamada para el estado de asociación de seguridad (SA) actual.
 
-Las funciones de contexto SA deben llamarse en un orden específico:
+Se debe llamar a las funciones de contexto de SA en un orden específico:
 
 -   [**IPsecSaContextCreate0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextcreate0)
 -   [**IPsecSaContextGetSpi0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextgetspi0)
 -   [**IPsecSaContextAddInbound0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextaddinbound0)
 -   [**IPsecSaContextAddOutbound0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextaddoutbound0)
 
-Se devuelve este error si se llama fuera de orden.
+Este error se devuelve si se llaman fuera de servicio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_NULL_POINTER"></span><span id="fwp_e_null_pointer"></span>**\_ \_ puntero nulo de FWP E \_**
+<span id="FWP_E_NULL_POINTER"></span><span id="fwp_e_null_pointer"></span>**FWP \_ E \_ PUNTERO \_ NULO**
 </dt> <dd> <dl> <dt>
 
 0x8032001C
@@ -459,12 +459,12 @@ Se devuelve este error si se llama fuera de orden.
 
 
 
-Un puntero requerido es NULL.
+Un puntero necesario es NULL.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INVALID_ENUMERATOR"></span><span id="fwp_e_invalid_enumerator"></span>**\_enumerador de FWP E \_ no válido \_**
+<span id="FWP_E_INVALID_ENUMERATOR"></span><span id="fwp_e_invalid_enumerator"></span>**ENUMERADOR FWP \_ E \_ NO \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 0x8032001D
@@ -477,7 +477,7 @@ Un valor de enumerador de una estructura está fuera del intervalo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INVALID_FLAGS"></span><span id="fwp_e_invalid_flags"></span>**\_ \_ marcas no válidas de FWP E \_**
+<span id="FWP_E_INVALID_FLAGS"></span><span id="fwp_e_invalid_flags"></span>**FWP \_ E MARCAS NO \_ \_ VÁLIDAS**
 </dt> <dd> <dl> <dt>
 
 0x8032001E
@@ -485,12 +485,12 @@ Un valor de enumerador de una estructura está fuera del intervalo.
 
 
 
-El campo Flags contiene un valor no válido.
+El campo flags contiene un valor no válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INVALID_NET_MASK"></span><span id="fwp_e_invalid_net_mask"></span>**\_máscara de \_ red no válida de FWP E \_ \_**
+<span id="FWP_E_INVALID_NET_MASK"></span><span id="fwp_e_invalid_net_mask"></span>**FWP \_ E \_ INVALID \_ NET \_ MASK**
 </dt> <dd> <dl> <dt>
 
 0x8032001F
@@ -503,7 +503,7 @@ Una máscara de red no es válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INVALID_RANGE"></span><span id="fwp_e_invalid_range"></span>**\_ \_ rango no válido de FWP E \_**
+<span id="FWP_E_INVALID_RANGE"></span><span id="fwp_e_invalid_range"></span>**FWP \_ E INTERVALO NO \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 0x80320020
@@ -511,12 +511,12 @@ Una máscara de red no es válida.
 
 
 
-Una estructura de [**FWP \_ RANGE0**](/windows/desktop/api/Fwptypes/ns-fwptypes-fwp_range0) no es válida.
+Una [**estructura \_ RANGE0 FWP**](/windows/desktop/api/Fwptypes/ns-fwptypes-fwp_range0) no es válida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INVALID_INTERVAL"></span><span id="fwp_e_invalid_interval"></span>**\_ \_ intervalo no válido de FWP E \_**
+<span id="FWP_E_INVALID_INTERVAL"></span><span id="fwp_e_invalid_interval"></span>**FWP \_ E \_ INVALID \_ INTERVAL**
 </dt> <dd> <dl> <dt>
 
 0x80320021
@@ -529,7 +529,7 @@ El intervalo de tiempo no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_ZERO_LENGTH_ARRAY"></span><span id="fwp_e_zero_length_array"></span>**\_matriz de \_ longitud de cero \_ \_ de FWP**
+<span id="FWP_E_ZERO_LENGTH_ARRAY"></span><span id="fwp_e_zero_length_array"></span>**FWP \_ E \_ MATRIZ DE LONGITUD \_ \_ CERO**
 </dt> <dd> <dl> <dt>
 
 0x80320022
@@ -542,7 +542,7 @@ Una matriz que debe contener al menos un elemento tiene una longitud cero.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_NULL_DISPLAY_NAME"></span><span id="fwp_e_null_display_name"></span>**nombre para mostrar de FWP \_ E \_ null \_ \_**
+<span id="FWP_E_NULL_DISPLAY_NAME"></span><span id="fwp_e_null_display_name"></span>**FWP \_ E \_ NULL \_ DISPLAY \_ NAME**
 </dt> <dd> <dl> <dt>
 
 0x80320023
@@ -550,12 +550,12 @@ Una matriz que debe contener al menos un elemento tiene una longitud cero.
 
 
 
-El campo **displayData.Name** no puede ser null.
+El **displayData.name** campo no puede ser NULL.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INVALID_ACTION_TYPE"></span><span id="fwp_e_invalid_action_type"></span>**\_tipo de \_ acción no válido de FWP E \_ \_**
+<span id="FWP_E_INVALID_ACTION_TYPE"></span><span id="fwp_e_invalid_action_type"></span>**FWP \_ E TIPO DE ACCIÓN NO \_ \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 0x80320024
@@ -563,12 +563,12 @@ El campo **displayData.Name** no puede ser null.
 
 
 
-El tipo de acción no es ninguno de los tipos de acción permitidos para un filtro.
+El tipo de acción no es uno de los tipos de acción permitidos para un filtro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INVALID_WEIGHT"></span><span id="fwp_e_invalid_weight"></span>**\_ \_ peso no válido de FWP E \_**
+<span id="FWP_E_INVALID_WEIGHT"></span><span id="fwp_e_invalid_weight"></span>**FWP \_ E PESO NO \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 0x80320025
@@ -576,14 +576,14 @@ El tipo de acción no es ninguno de los tipos de acción permitidos para un filt
 
 
 
-El peso del filtro no es válido.
+El grosor del filtro no es válido.
 
-Para obtener más información, vea [asignación de pesos de filtro](filter-weight-assignment.md) .
+Consulte [Asignación de peso de filtro](filter-weight-assignment.md) para obtener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_MATCH_TYPE_MISMATCH"></span><span id="fwp_e_match_type_mismatch"></span>**\_ \_ \_ no coinciden los tipos de coincidencia de FWP E \_**
+<span id="FWP_E_MATCH_TYPE_MISMATCH"></span><span id="fwp_e_match_type_mismatch"></span>**FWP \_ E \_ MATCH \_ TYPE \_ MISMATCH**
 </dt> <dd> <dl> <dt>
 
 0x80320026
@@ -593,12 +593,12 @@ Para obtener más información, vea [asignación de pesos de filtro](filter-weig
 
 Una condición de filtro contiene un tipo de coincidencia que no es compatible con los operandos.
 
-Consulte [**\_ \_ tipo de coincidencia de FWP**](/windows/desktop/api/Fwptypes/ne-fwptypes-fwp_match_type) para obtener más información.
+Vea [**FWP \_ MATCH TYPE \_ (TIPO DE COINCIDENCIA DE FWP)**](/windows/desktop/api/Fwptypes/ne-fwptypes-fwp_match_type) para obtener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_TYPE_MISMATCH"></span><span id="fwp_e_type_mismatch"></span>**error \_ de \_ coincidencia de tipo de FWP E \_**
+<span id="FWP_E_TYPE_MISMATCH"></span><span id="fwp_e_type_mismatch"></span>**FWP \_ E \_ TYPE \_ MISMATCH**
 </dt> <dd> <dl> <dt>
 
 0x80320027
@@ -606,12 +606,12 @@ Consulte [**\_ \_ tipo de coincidencia de FWP**](/windows/desktop/api/Fwptypes/n
 
 
 
-Una estructura de [**FWP \_ VALUE0**](/windows/desktop/api/Fwptypes/ns-fwptypes-fwp_value0) o una estructura VALUE0 de la [**\_ \_ condición FWPM**](/windows/desktop/api/Fwptypes/ns-fwptypes-fwp_condition_value0) es de tipo incorrecto.
+Una [**estructura \_ FWP VALUE0**](/windows/desktop/api/Fwptypes/ns-fwptypes-fwp_value0) o una estructura [**\_ FWPM CONDITION \_ VALUE0**](/windows/desktop/api/Fwptypes/ns-fwptypes-fwp_condition_value0) es del tipo incorrecto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_OUT_OF_BOUNDS"></span><span id="fwp_e_out_of_bounds"></span>**FWP \_ E \_ fuera \_ de los \_ límites**
+<span id="FWP_E_OUT_OF_BOUNDS"></span><span id="fwp_e_out_of_bounds"></span>**FWP \_ E FUERA DE \_ \_ \_ LÍMITES**
 </dt> <dd> <dl> <dt>
 
 0x80320028
@@ -624,7 +624,7 @@ Un valor entero está fuera del intervalo permitido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_RESERVED"></span><span id="fwp_e_reserved"></span>**FWP \_ E \_ reservado**
+<span id="FWP_E_RESERVED"></span><span id="fwp_e_reserved"></span>**FWP \_ E \_ RESERVED**
 </dt> <dd> <dl> <dt>
 
 0x80320029
@@ -637,7 +637,7 @@ Un campo reservado es distinto de cero.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_DUPLICATE_CONDITION"></span><span id="fwp_e_duplicate_condition"></span>**\_ \_ condición duplicada de FWP E \_**
+<span id="FWP_E_DUPLICATE_CONDITION"></span><span id="fwp_e_duplicate_condition"></span>**FWP \_ E \_ DUPLICATE \_ CONDITION**
 </dt> <dd> <dl> <dt>
 
 0x8032002A
@@ -645,12 +645,12 @@ Un campo reservado es distinto de cero.
 
 
 
-Un filtro no puede contener varias condiciones que operan en un único campo.
+Un filtro no puede contener varias condiciones que funcionan en un solo campo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_DUPLICATE_KEYMOD"></span><span id="fwp_e_duplicate_keymod"></span>**\_ \_ KEYMOD duplicado de FWP E \_**
+<span id="FWP_E_DUPLICATE_KEYMOD"></span><span id="fwp_e_duplicate_keymod"></span>**FWP \_ E \_ DUPLICATE \_ KEYMOD**
 </dt> <dd> <dl> <dt>
 
 0x8032002B
@@ -658,12 +658,12 @@ Un filtro no puede contener varias condiciones que operan en un único campo.
 
 
 
-Una directiva no puede contener el mismo módulo de creación de claves más de una vez.
+Una directiva no puede contener el mismo módulo de claves más de una vez.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_ACTION_INCOMPATIBLE_WITH_LAYER"></span><span id="fwp_e_action_incompatible_with_layer"></span>**\_ \_ acción de FWP E \_ incompatible \_ con el \_ nivel**
+<span id="FWP_E_ACTION_INCOMPATIBLE_WITH_LAYER"></span><span id="fwp_e_action_incompatible_with_layer"></span>**ACCIÓN FWP \_ E \_ INCOMPATIBLE CON \_ \_ \_ LAYER**
 </dt> <dd> <dl> <dt>
 
 0x8032002C
@@ -676,7 +676,7 @@ El tipo de acción no es compatible con la capa.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_ACTION_INCOMPATIBLE_WITH_SUBLAYER"></span><span id="fwp_e_action_incompatible_with_sublayer"></span>**\_ \_ acción de FWP E \_ incompatible \_ con \_ subcapa**
+<span id="FWP_E_ACTION_INCOMPATIBLE_WITH_SUBLAYER"></span><span id="fwp_e_action_incompatible_with_sublayer"></span>**ACCIÓN FWP \_ E \_ INCOMPATIBLE CON \_ \_ \_ SUBCAPA**
 </dt> <dd> <dl> <dt>
 
 0x8032002D
@@ -689,7 +689,7 @@ El tipo de acción no es compatible con la subcapa.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_CONTEXT_INCOMPATIBLE_WITH_LAYER"></span><span id="fwp_e_context_incompatible_with_layer"></span>**\_ \_ contexto de FWP E \_ incompatible \_ con el \_ nivel**
+<span id="FWP_E_CONTEXT_INCOMPATIBLE_WITH_LAYER"></span><span id="fwp_e_context_incompatible_with_layer"></span>**FWP \_ E \_ CONTEXT \_ INCOMPATIBLE \_ WITH \_ LAYER**
 </dt> <dd> <dl> <dt>
 
 0x8032002E
@@ -702,7 +702,7 @@ El contexto sin formato o el contexto del proveedor no es compatible con la capa
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_CONTEXT_INCOMPATIBLE_WITH_CALLOUT"></span><span id="fwp_e_context_incompatible_with_callout"></span>**\_ \_ contexto de FWP E \_ incompatible \_ con la \_ llamada**
+<span id="FWP_E_CONTEXT_INCOMPATIBLE_WITH_CALLOUT"></span><span id="fwp_e_context_incompatible_with_callout"></span>**FWP \_ E \_ CONTEXT \_ INCOMPATIBLE \_ WITH \_ CALLOUT**
 </dt> <dd> <dl> <dt>
 
 0x8032002F
@@ -715,7 +715,7 @@ El contexto sin formato o el contexto del proveedor no es compatible con la llam
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INCOMPATIBLE_AUTH_METHOD"></span><span id="fwp_e_incompatible_auth_method"></span>**método de autenticación de FWP \_ E \_ incompatible \_ \_**
+<span id="FWP_E_INCOMPATIBLE_AUTH_METHOD"></span><span id="fwp_e_incompatible_auth_method"></span>**FWP \_ E MÉTODO DE \_ \_ AUTENTICACIÓN INCOMPATIBLE \_**
 </dt> <dd> <dl> <dt>
 
 0x80320030
@@ -728,7 +728,7 @@ El método de autenticación no es compatible con el tipo de directiva.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INCOMPATIBLE_DH_GROUP"></span><span id="fwp_e_incompatible_dh_group"></span>**\_Grupo DH de FWP E \_ incompatible \_ \_**
+<span id="FWP_E_INCOMPATIBLE_DH_GROUP"></span><span id="fwp_e_incompatible_dh_group"></span>**FWP \_ E GRUPO \_ DH INCOMPATIBLE \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80320031L
@@ -736,12 +736,12 @@ El método de autenticación no es compatible con el tipo de directiva.
 
 
 
-El grupo de Diffie-Hellman no es compatible con el tipo de directiva.
+El Diffie-Hellman no es compatible con el tipo de directiva.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_EM_NOT_SUPPORTED"></span><span id="fwp_e_em_not_supported"></span>**no se admite el FWP \_ E \_ em \_ \_**
+<span id="FWP_E_EM_NOT_SUPPORTED"></span><span id="fwp_e_em_not_supported"></span>**FWP \_ E EM NO SE \_ \_ \_ ADMITE**
 </dt> <dd> <dl> <dt>
 
 0x80320032
@@ -749,12 +749,12 @@ El grupo de Diffie-Hellman no es compatible con el tipo de directiva.
 
 
 
-Una directiva IKE no puede contener una directiva de modo extendido.
+Una directiva de IKE no puede contener una directiva de modo extendido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_NEVER_MATCH"></span><span id="fwp_e_never_match"></span>**FWP \_ E \_ nunca \_ coinciden**
+<span id="FWP_E_NEVER_MATCH"></span><span id="fwp_e_never_match"></span>**FWP \_ E \_ NEVER \_ MATCH**
 </dt> <dd> <dl> <dt>
 
 0x80320033
@@ -762,12 +762,12 @@ Una directiva IKE no puede contener una directiva de modo extendido.
 
 
 
-La plantilla o la suscripción de enumeración nunca coincidirán con ningún objeto.
+La plantilla de enumeración o la suscripción nunca coincidirán con ningún objeto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_PROVIDER_CONTEXT_MISMATCH"></span><span id="fwp_e_provider_context_mismatch"></span>**\_ \_ \_ no coincide el contexto del proveedor \_ de FWP E**
+<span id="FWP_E_PROVIDER_CONTEXT_MISMATCH"></span><span id="fwp_e_provider_context_mismatch"></span>**ERROR DE COINCIDENCIA \_ DEL CONTEXTO \_ DEL \_ PROVEEDOR \_ FWP E**
 </dt> <dd> <dl> <dt>
 
 0x80320034
@@ -775,12 +775,12 @@ La plantilla o la suscripción de enumeración nunca coincidirán con ningún ob
 
 
 
-El contexto del proveedor es de un tipo incorrecto.
+El contexto del proveedor es del tipo incorrecto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INVALID_PARAMETER"></span><span id="fwp_e_invalid_parameter"></span>**\_ \_ parámetro no válido de FWP E \_**
+<span id="FWP_E_INVALID_PARAMETER"></span><span id="fwp_e_invalid_parameter"></span>**FWP \_ E PARÁMETRO NO \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 0x80320035
@@ -790,15 +790,15 @@ El contexto del proveedor es de un tipo incorrecto.
 
 El parámetro no es correcto.
 
-Causas posibles de este error:
+Posibles motivos de este error:
 
--   Se llamó a [**FwpmIPsecTunnelAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmipsectunneladd0) sin establecer la marca de túnel de marca **FWPM \_ \_ \_ \_ en \_ punto** y con condiciones distintas de la dirección local o remota.
+-   [**Se llamó a FwpmIPsecTunnelAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmipsectunneladd0) sin establecer la marca **FWPM \_ TUNNEL FLAG POINT TO \_ \_ \_ \_ POINT** y con condiciones que no son la dirección local o remota.
 -   Una cadena Unicode no válida o una cadena Unicode que contiene caracteres no imprimibles.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_TOO_MANY_SUBLAYERS"></span><span id="fwp_e_too_many_sublayers"></span>**FWP \_ E \_ demasiadas \_ \_ subcapas**
+<span id="FWP_E_TOO_MANY_SUBLAYERS"></span><span id="fwp_e_too_many_sublayers"></span>**FWP \_ E \_ \_ \_ DEMASIADAS SUBCAPAS**
 </dt> <dd> <dl> <dt>
 
 0x80320036
@@ -813,7 +813,7 @@ WFP admite como máximo 2 6 subcapas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_CALLOUT_NOTIFICATION_FAILED"></span><span id="fwp_e_callout_notification_failed"></span>**error en la notificación de llamada de FWP \_ E \_ \_ \_**
+<span id="FWP_E_CALLOUT_NOTIFICATION_FAILED"></span><span id="fwp_e_callout_notification_failed"></span>**ERROR EN LA NOTIFICACIÓN DE LLAMADA DE FWP \_ \_ \_ E \_**
 </dt> <dd> <dl> <dt>
 
 0x80320037
@@ -826,7 +826,7 @@ La función de notificación de una llamada devolvió un error.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INVALID_AUTH_TRANSFORM"></span><span id="fwp_e_invalid_auth_transform"></span>**transformación de autenticación de FWP \_ E \_ no válida \_ \_**
+<span id="FWP_E_INVALID_AUTH_TRANSFORM"></span><span id="fwp_e_invalid_auth_transform"></span>**FWP \_ E TRANSFORMACIÓN DE \_ \_ AUTENTICACIÓN NO \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 0x80320038
@@ -839,7 +839,7 @@ La transformación de autenticación de IPsec no es válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_E_INVALID_CIPHER_TRANSFORM"></span><span id="fwp_e_invalid_cipher_transform"></span>**\_transformación de \_ \_ cifrado de FWP E no válida \_**
+<span id="FWP_E_INVALID_CIPHER_TRANSFORM"></span><span id="fwp_e_invalid_cipher_transform"></span>**FWP \_ E \_ INVALID \_ CIPHER \_ TRANSFORM**
 </dt> <dd> <dl> <dt>
 
 0x80320039
@@ -847,7 +847,7 @@ La transformación de autenticación de IPsec no es válida.
 
 
 
-La transformación de cifrado de IPsec no es válida.
+La transformación de cifrado IPsec no es válida.
 
 
 </dt> </dl> </dd> </dl>
@@ -858,9 +858,9 @@ La transformación de cifrado de IPsec no es válida.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Winerror. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Winerror.h</dt> </dl> |
 
 
 

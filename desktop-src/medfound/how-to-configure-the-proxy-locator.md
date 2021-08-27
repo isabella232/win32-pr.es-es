@@ -4,31 +4,31 @@ ms.assetid: ddc28add-ebf5-4a68-bdf4-dc5f33ab74da
 title: Cómo configurar el localizador de proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a6b383dda9ac78b2c62aa8481a09cc5c0d7b3ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51dcade0909159856c4286d9c2cd5d4851d10b6d2c5e56054545bdac312e21b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061545"
 ---
 # <a name="how-to-configure-the-proxy-locator"></a>Cómo configurar el localizador de proxy
 
-La aplicación puede cambiar la configuración predeterminada del localizador de proxy mediante el establecimiento de la propiedad [MFNETSOURCE \_ PROXYLOCATORFACTORY](mfnetsource-proxylocatorfactory-property.md) en el objeto de generador de localizador de proxy implementado por la aplicación. Cuando la aplicación llama a los métodos de resolución de origen para crear el origen de red, Media Foundation llama al generador de localizador de proxy. Este objeto crea el localizador de proxy con la configuración personalizada.
+La aplicación puede cambiar la configuración predeterminada del localizador de proxy estableciendo la propiedad [MFNETSOURCE \_ PROXYLOCATORFACTORY](mfnetsource-proxylocatorfactory-property.md) en el objeto de generador de localizadores de proxy que implementa la aplicación. Cuando la aplicación llama a métodos de resolución de origen para crear el origen de red, Media Foundation llama al generador de localizadores de proxy. Este objeto crea el localizador de proxy con una configuración personalizada.
 
 ## <a name="to-change-the-default-configuration-setting-of-the-proxy-locator"></a>Para cambiar la configuración predeterminada del localizador de proxy
 
-1.  Implemente la interfaz [**IMFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) .
-2.  En el método [**IMFNetProxyLocatorFactory:: CreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator) , haga lo siguiente:
+1.  Implemente [**la interfaz IMFNetProxyLocatorFactory.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory)
+2.  En el [**método IMFNetProxyLocatorFactory::CreateProxyLocator,**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator) haga lo siguiente:
     1.  Cree un almacén de propiedades.
-    2.  Establezca la configuración del localizador de proxy. Para obtener información acerca de esta configuración, consulte [configuración del localizador de proxy](proxy-locator-configuration-settings.md).
-    3.  Llame a la función [**MFCreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateproxylocator) . Pase el almacén de propiedades y el protocolo. El protocolo se especifica en el parámetro *pszProtocol* de [**CreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator).
-3.  Cree una instancia de la clase de generador de localizador proxy y obtenga un puntero a su interfaz [**IMFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) .
-4.  Cree otro almacén de propiedades y establezca el valor de la propiedad [**MFNETSOURCE \_ PROXYLOCATORFACTORY**](mfnetsource-proxylocatorfactory-property.md) en el puntero [**IMFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) del paso 3.
-5.  Al crear el origen de red, pase el almacén de propiedades en el parámetro *pProps* de los métodos de resolución de origen como [**IMFSourceResolver:: BeginCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl).
+    2.  Establezca los valores de configuración para el localizador de proxy. Para obtener información sobre esta configuración, vea [Configuración del localizador de proxy Configuración](proxy-locator-configuration-settings.md).
+    3.  Llame a [**la función MFCreateProxyLocator.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateproxylocator) Pase el almacén de propiedades y el protocolo. El protocolo se especifica en el *parámetro pszProtocol* [**de CreateProxyLocator.**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator)
+3.  Cree una instancia de la clase de generador de localizadores de proxy y obtenga un puntero a su interfaz [**IMFNetProxyLocatorFactory.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory)
+4.  Cree otro almacén de propiedades y establezca el valor de la propiedad [**MFNETSOURCE \_ PROXYLOCATORFACTORY**](mfnetsource-proxylocatorfactory-property.md) igual al puntero [**MFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) del paso 3.
+5.  Al crear el origen de red, pase el almacén de propiedades en el *parámetro pProps* de los métodos de resolución de origen, como [**IMFSourceResolver::BeginCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl).
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo de código siguiente se implementa la interfaz [**IMFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) . El método [**IMFNetProxyLocatorFactory:: CreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator) crea una instancia del localizador de proxy predeterminado y la configura para que funcione en modo de detección automática.
+En el ejemplo de código siguiente se implementa la [**interfaz IMFNetProxyLocatorFactory.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) El [**método IMFNetProxyLocatorFactory::CreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator) crea una instancia del localizador de proxy predeterminado y la configura para que funcione en modo de detección automática.
 
 
 ```C++
