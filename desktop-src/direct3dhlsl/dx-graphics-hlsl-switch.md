@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4af131ca3a126cd6f1fd54160418bfbe70cc9cce
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 8527853bf88b073f3505f4b4170ff6165f7f9aa7
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119090"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477491"
 ---
 # <a name="switch-statement"></a>switch (Instrucción)
 
@@ -43,51 +43,14 @@ Parámetro opcional que controla cómo se compila la instrucción. Cuando no se 
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>quitar información de estructura jerárquica</td>
-<td>Compile la instrucción como una serie de <strong>instrucciones if,</strong> cada una con el <strong>atributo flatten.</strong></td>
-</tr>
-<tr class="even">
-<td>branch</td>
-<td>Compile la instrucción como una serie de <strong>instrucciones if</strong> cada una con el <strong>atributo branch.</strong>
-<blockquote>
-[!Note]<br />
-Cuando se usa <a href="dx-graphics-hlsl-sm2.md">Shader Model 2.x</a> o <a href="dx-graphics-hlsl-sm3.md">Shader Model 3.0,</a>cada vez que se usa la bifurcación dinámica se consumen recursos. Por lo tanto, si usa la bifurcación dinámica excesivamente cuando tiene como destino estos perfiles, puede recibir errores de compilación.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td>forcecase</td>
-<td>Forzar una instrucción switch en el hardware.
-<blockquote>
-[!Note]<br />
-Requiere <a href="/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">hardware de</a> nivel de característica 10_0 o posterior.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td>llamada</td>
-<td>Los cuerpos de los casos individuales del conmutador se trasladarán a subrutinas de hardware y el conmutador será una serie de llamadas de subrutina.
-<blockquote>
-[!Note]<br />
-Requiere <a href="/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">hardware de</a> nivel de característica 10_0 o posterior.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descripción | 
+|-----------|-------------|
+| quitar información de estructura jerárquica | Compile la instrucción como una serie de <strong>instrucciones if,</strong> cada una con el <strong>atributo flatten.</strong> | 
+| branch | Compile la instrucción como una serie de <strong>instrucciones if</strong> cada una con el <strong>atributo branch.</strong><blockquote>[!Note]<br />Cuando se usa <a href="dx-graphics-hlsl-sm2.md">Shader Model 2.x</a> o <a href="dx-graphics-hlsl-sm3.md">Shader Model 3.0</a>, cada vez que se usa la bifurcación dinámica se consumen recursos. Por lo tanto, si usa la bifurcación dinámica excesivamente cuando tiene como destino estos perfiles, puede recibir errores de compilación.</blockquote><br /> | 
+| forcecase | Forzar una instrucción switch en el hardware.<blockquote>[!Note]<br />Requiere <a href="/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">hardware de nivel</a> de característica 10_0 o posterior.</blockquote><br /> | 
+| llamada | Los cuerpos de los casos individuales del conmutador se trasladarán a subrutinas de hardware y el modificador será una serie de llamadas de subrutina.<blockquote>[!Note]<br />Requiere <a href="/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">hardware de nivel</a> de característica 10_0 o posterior.</blockquote><br /> | 
+
 
 
 
@@ -109,7 +72,7 @@ Una o varias [instrucciones](dx-graphics-hlsl-statement-blocks.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 ```
@@ -144,7 +107,7 @@ else
 
 
 
-Estos son ejemplos de usos de atributos de control de flujo de llamadas y forcecase:
+Estos son ejemplos de usos de atributos de control de flujo de llamada y de mayúsculas y minúsculas:
 
 
 ```
@@ -189,7 +152,7 @@ Estos son ejemplos de usos de atributos de control de flujo de llamadas y forcec
 
 <dl> <dt>
 
-[Control de flujo](dx-graphics-hlsl-flow-control.md)
+[Flow Control](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
  

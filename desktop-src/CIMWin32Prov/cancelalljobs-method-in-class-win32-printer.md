@@ -1,8 +1,8 @@
 ---
-description: Quita todos los trabajos, incluido el que imprime actualmente de la cola.
+description: Quita todos los trabajos, incluido el que se imprime actualmente de la cola.
 ms.assetid: d7466513-b123-43af-ab17-b3213ba80284
 ms.tgt_platform: multiple
-title: Método CancelAllJobs de la clase Win32_Printer
+title: Método CancelAllJobs de la Win32_Printer clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d2d816dab837aafd7b6e9c6beff75c4e62b19b2f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 06aae96cec4e38c7ff9c213cd19dc35e9843a077c262aafcaf0aed43160505a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085845"
 ---
-# <a name="cancelalljobs-method-of-the-win32_printer-class"></a>Método CancelAllJobs de la \_ clase Printer de Win32
+# <a name="cancelalljobs-method-of-the-win32_printer-class"></a>Método CancelAllJobs de la clase Printer de Win32 \_
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CancelAllJobs** quita todos los trabajos, incluido el que se imprime actualmente de la cola.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CancelAllJobs** quita todos los trabajos, incluido el que se imprime actualmente de la cola.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -62,11 +62,11 @@ Acceso denegado
 
 ## <a name="examples"></a>Ejemplos
 
-El mensaje [notificar a los usuarios cuando se purgue una cola de impresión](https://Gallery.TechNet.Microsoft.Com/9f8ad84e-239d-45bf-a14f-ad8f3fc4988a) utiliza Msg.exe para enviar una alerta de red a los usuarios que tengan documentos en una cola de impresión que se va a purgar. Después de enviar las alertas, el script purga la cola de impresión.
+La [página Notificar a los usuarios](https://Gallery.TechNet.Microsoft.Com/9f8ad84e-239d-45bf-a14f-ad8f3fc4988a) cuando se purga una cola de impresión usa Msg.exe enviar una alerta de red a los usuarios que tenían documentos en una cola de impresión a punto de purgarse. Después de enviar las alertas, el script purga la cola de impresión.
 
-El ejemplo de código de VBScript [eliminar todos los trabajos de impresión](https://Gallery.TechNet.Microsoft.Com/0e89fa7c-a837-4607-b421-c870142e7323) elimina todos los trabajos de impresión en el equipo local.
+El [ejemplo de código](https://Gallery.TechNet.Microsoft.Com/0e89fa7c-a837-4607-b421-c870142e7323) DE VBScript Eliminar todos los trabajos de impresión elimina todos los trabajos de impresión del equipo local.
 
-El siguiente ejemplo de VBScript elimina todos los trabajos de impresión de una impresora denominada HP QuietJet.
+En el ejemplo de VBScript siguiente se eliminan todos los trabajos de impresión de una impresora denominada HP QuietJet.
 
 
 ```VB
@@ -92,8 +92,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -102,10 +102,10 @@ Next
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_Impresora Win32**](win32-printer.md)
+[**Impresora \_ Win32**](win32-printer.md)
 </dt> </dl>
 
  

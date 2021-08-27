@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bba86b4773ac35a6895ae3c7812b9bf74d931370
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 8c09a1d5752fb9c179cc827aedec562b7858cbdf
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625751"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786161"
 ---
 # <a name="span-idvspixengineiframelistcallbackspaniframelistcallback-interface"></a><span id="vspixengine.iframelistcallback"></span>IFrameListCallback (interfaz)
 
 Devolución de llamada para devolver la lista de fotogramas con su identificador de evento y número de fotograma.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IFrameListCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IFrameListCallback** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IFrameListCallback** hereda de la [**interfaz IUnknown.**](/window
 
 La **interfaz IFrameListCallback** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iframelistcallback-resultcallback-dword-dword-arr-dword-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Función de devolución de llamada que se usa para notificar al host de qué fotogramas se capturaron.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iframelistcallback-resultcallback-dword-dword-arr-dword-arr"><strong>ResultCallback</strong></a></td><td ><p>Función de devolución de llamada que se usa para notificar al host de qué fotogramas se capturaron.</p></td></tr></tbody></table>
 
  
 

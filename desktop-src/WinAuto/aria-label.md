@@ -1,23 +1,23 @@
 ---
-title: Error de etiqueta ARIA
-description: Error de etiqueta ARIA
+title: Error de etiqueta de ARIA
+description: Error de etiqueta de ARIA
 ms.assetid: DF45E38D-9AD3-48C8-911E-8C6233F17F43
 keywords:
 - AriaLabelErrorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1091c46dbb660c4c3568d24bfca34d94ef869f1e
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 42abee9028db8c3a4070d9b60d0650187339fc4c9ec34d0b70f720c27e973897
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104078538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122325"
 ---
-# <a name="aria-label-error"></a>Error de etiqueta ARIA
+# <a name="aria-label-error"></a>Error de etiqueta de ARIA
 
 ## <a name="text"></a>Texto
 
-El elemento es de tipo **Input**, **Button**, **Image-Button** o **monumentos** pero no tiene un nombre accesible.
+El elemento es de tipo **entrada**, **botón**, botón **de imagen** o **punto** de referencia, pero no tiene un nombre accesible.
 
 ## <a name="type"></a>Tipo
 
@@ -28,30 +28,30 @@ Error
 Este error se aplica a:
 
 -   Campos de entrada de formulario:
-    -   Etiquetas HTML:**tipo de entrada \[ = "texto de la \| casilla de verificación de contraseña \| archivo de \| radio \| \| correo electrónico \| de Tel. fecha y hora fecha y \| \| \| \| hora del día de la \| \| \| \| \| \| búsqueda \| URL \] "**, **Select**, **DataList** y **TextArea**.
-    -   Roles WAI-ARIA:**CheckBox**, **ComboBox**, **ListBox**, **RadioGroup**, **radio**, **TextBox**, **Tree**, **Slider** y **SpinButton**.
+    -   Etiquetas HTML: input **\[ type= "text password checkbox radio file \| email tel color \| date \| \| \| \| \| \| \| datetime \| datetime-local \| time week month number search \| \| \| \| \| \| url", \]** **select**, **datalist** y **textarea**.
+    -   Roles DE ARIA: casilla **,** **cuadro** **combinado,** cuadro de lista, grupo de **radio,** **radio,** cuadro de **texto,** **árbol,** **control deslizante** y botón **de giro**.
 -   Imágenes/botones de imagen/botones
-    -   Etiquetas HTML:**IMG**, **Input \[ type = "Image \| Button" \]** y **Button**.
-    -   Roles WAI-ARIA:**IMG** y **Button**.
+    -   Etiquetas HTML:**img**, **input \[ type="image \| button" \]** y **el botón**.
+    -   Roles DE ARIA DE ARIA:**img** y **botón**.
 -   Puntos de referencia
-    -   Roles WAI-ARIA:**región**, **banner**, **complementario**, **ContentInfo**, **formulario**, **principal**, **navegación** y **búsqueda**.
+    -   Roles DE ARIA:**región,** **banner,** **complementario,** **contentinfo,** **formulario**, **principal,** **navegación** y **búsqueda.**
 
 > [!Note]  
-> AccChecker muestra este error incluso para los elementos para los que el nombre accesible se establece de forma predeterminada en función del contenido HTML interno (vea el elemento **banner** en el ejemplo anterior). En estos casos, puede suprimir este error.
+> AccChecker muestra este error incluso para los elementos para los que el  nombre accesible se establece de forma predeterminada en función del contenido HTML interno (vea el elemento banner en el ejemplo anterior). En estos casos, puede suprimir estos errores.
 
- 
+ 
 
-Todos los elementos de la interfaz de usuario semánticamente importantes, como campos de formulario (por ejemplo, **Input**, **Select**, **TextArea**), imágenes, botones y puntos de referencia (etiquetas que representan regiones lógicas) deben tener el nombre accesible para permitir que los lectores de pantalla los anuncien correctamente.
+Todos los elementos de interfaz de usuario semánticamente importantes, como los campos de formulario (por **ejemplo,** entrada **,** seleccione , **textarea**), imágenes, botones y puntos de referencia (etiquetas que representan regiones lógicas) deben tener el nombre accesible para permitir que los lectores de pantalla los anuncien correctamente.
 
-Para corregir este error, establezca el nombre accesible de una de las siguientes maneras (en orden de preferencia).
+Para corregir este error, establezca el nombre accesible de una de las maneras siguientes (enumeradas en el orden de preferencia).
 
--   Campos de formulario: Use la etiqueta **etiqueta** y establezca el atributo **for** en el valor de **identificador** del campo de destino.
--   Botón imagen/imagen: establezca el atributo **Alt** .
+-   Campos de formulario: use la **etiqueta de** etiqueta y establezca el atributo **for** en el valor **de identificador** del campo de destino.
+-   Botón Imagen/imagen: establezca el **atributo alt.**
 -   Botones: establezca el texto del título del botón.
 -   Para cualquier elemento:
-    -   atributo [**Aria-labelledby**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) : establézcalo en el valor de **identificador** del elemento que contiene la cadena de nombre accesible.
-    -   atributo [**de etiqueta Aria**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) : se establece en la cadena de nombre accesible.
-    -   atributo de [**título**](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/title) : establézcalo en la cadena de nombre accesible (también puede crear una **información sobre herramientas**).
+    -   [**Atributo aria-labelledby:**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) establezca en el valor **de identificador** del elemento que contiene la cadena de nombre accesible.
+    -   [**Atributo aria-label:**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) se establece en la cadena de nombre accesible.
+    -   [**atributo title:**](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/title) establezca en la cadena de nombre accesible (también cree una información sobre **herramientas).**
 
 ## <a name="example"></a>Ejemplo
 
@@ -87,9 +87,9 @@ attribute to reference the visible headers. -->
 
 
 
- 
+ 
 
- 
+ 
 
 
 

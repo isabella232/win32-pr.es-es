@@ -1,36 +1,36 @@
 ---
-title: Cómo obtener el nivel de características del dispositivo
-description: En este tema se muestra cómo obtener el nivel de características más alto compatible con un dispositivo.
+title: Cómo obtener el nivel de característica de dispositivo
+description: En estos temas se muestra cómo obtener el nivel de características más alto admitido por un dispositivo.
 ms.assetid: 5eb7dd5b-3be3-4b7f-bcc7-20027fdfe6b5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e587ad488a84641a92f0058d201014030e3467e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ac21d00aeef8ae6c82ffd9f55a40415b6af1d0a780cc6878d8c30bf453457eb9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119605"
 ---
-# <a name="how-to-get-the-device-feature-level"></a>Cómo: obtener el nivel de características del dispositivo
+# <a name="how-to-get-the-device-feature-level"></a>Cómo: Obtener el nivel de característica de dispositivo
 
-En este tema se muestra cómo obtener el [nivel de características](overviews-direct3d-11-devices-downlevel-intro.md) más alto compatible con un [dispositivo](overviews-direct3d-11-devices-intro.md). Los dispositivos de Direct3D 11 admiten un conjunto fijo de niveles de características que se definen en la enumeración de [**\_ \_ nivel de característica D3D**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) . Cuando conozca el nivel de [característica](overviews-direct3d-11-devices-downlevel-intro.md) más alto compatible con un dispositivo, puede ejecutar rutas de acceso de código apropiadas para ese dispositivo.
+En estos temas se muestra cómo obtener el nivel [de característica más alto](overviews-direct3d-11-devices-downlevel-intro.md) compatible con un [dispositivo](overviews-direct3d-11-devices-intro.md). Los dispositivos Direct3D 11 admiten un conjunto fijo de niveles de características que se definen en la [**enumeración D3D \_ FEATURE \_ LEVEL.**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) Cuando conozca el nivel de [características más alto](overviews-direct3d-11-devices-downlevel-intro.md) admitido por un dispositivo, puede ejecutar rutas de acceso de código adecuadas para ese dispositivo.
 
 **Para obtener el nivel de características del dispositivo**
 
-1.  Llame a la función [**D3D11CreateDevice**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice) o a las funciones [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) al especificar **null** para el parámetro *ppDevice* . Puede hacerlo antes de crear el dispositivo.
+1.  Llame a la [**función D3D11CreateDevice**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice) o a las funciones [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) y especifique **NULL** para el *parámetro ppDevice.* Puede hacerlo antes de crear el dispositivo.
 
-    \- o -
+    \- O bien
 
-    Llame a [**ID3D11Device:: GetFeatureLevel**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-getfeaturelevel) después de la creación del dispositivo.
+    Llame [**a ID3D11Device::GetFeatureLevel después**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-getfeaturelevel) de la creación del dispositivo.
 
-2.  Examine el valor de la enumeración de [**\_ \_ nivel de característica D3D**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) devuelta desde el último paso para determinar el nivel de característica admitido.
+2.  Examine el valor de la enumeración [**D3D \_ FEATURE \_ LEVEL devuelta**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) del último paso para determinar el nivel de característica admitido.
 
-En el ejemplo de código siguiente se muestra cómo determinar el nivel de característica compatible más alto mediante una llamada a la función [**D3D11CreateDevice**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice) . **D3D11CreateDevice** almacena el nivel de características admitido más alto en la variable FeatureLevel. Puede usar este código para examinar el valor del tipo enumerado del [**\_ \_ nivel de característica D3D**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) que devuelve **D3D11CreateDevice** . Tenga en cuenta que en este código se enumeran todos los niveles de características explícitamente (para Direct3D 11,1 y Direct3D 11,2).
+En el ejemplo de código siguiente se muestra cómo determinar el nivel de característica más alto admitido mediante una llamada a la [**función D3D11CreateDevice.**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice) **D3D11CreateDevice almacena** el nivel de característica más alto admitido en la variable FeatureLevel. Puede usar este código para examinar el valor del tipo enumerado [**D3D \_ FEATURE \_ LEVEL**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) que **devuelve D3D11CreateDevice.** Tenga en cuenta que este código enumera todos los niveles de características explícitamente (para Direct3D 11.1 y Direct3D 11.2).
 
 > [!Note]  
-> Si el tiempo de ejecución de Direct3D 11,1 está presente en el equipo y *pFeatureLevels* está establecido en **null**, esta función no creará un dispositivo de [**nivel de característica de D3D \_ \_ \_ 11 \_ 1**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) . Para crear un dispositivo de **nivel de característica de D3D \_ \_ \_ 11 \_ 1** , debe proporcionar explícitamente una matriz de **\_ \_ nivel de característica D3D** que incluya el **nivel de característica de D3D \_ \_ \_ 11 \_ 1**. Si proporciona una matriz **de \_ \_ nivel de característica D3D** que contiene el **nivel de característica de D3D \_ \_ \_ 11 \_ 1** en un equipo que no tiene instalado el tiempo de ejecución de Direct3D 11,1, esta función genera un error inmediatamente con E \_ INVALIDARG.
+> Si el tiempo de ejecución de Direct3D 11.1 está presente en el equipo y *pFeatureLevels* está establecido en **NULL,** esta función no creará un dispositivo [**D3D \_ FEATURE LEVEL \_ \_ \_ 11 1.**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) Para crear un dispositivo **D3D \_ FEATURE \_ LEVEL \_ \_ 11 1,** debe proporcionar explícitamente una matriz **D3D \_ FEATURE \_ LEVEL** que incluya **D3D \_ FEATURE LEVEL \_ \_ 11 \_ 1**. Si proporciona una matriz D3D FEATURE LEVEL que contiene **D3D \_ FEATURE \_ LEVEL \_ 11 \_ 1** en un equipo que no tiene instalado el entorno de ejecución de Direct3D 11.1, esta función produce un error inmediatamente con E **\_ \_** \_ INVALIDARG.
 
- 
+ 
 
 
 ```C++
@@ -67,7 +67,7 @@ if(FAILED(hr))
 
 
 
-En la sección de [referencia de 10Level9 se](d3d11-graphics-reference-10level9.md) enumeran las diferencias entre el comportamiento de varios métodos [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) y [**ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) en distintos niveles de características de 10Level9.
+En la sección 10Level9 Reference (Referencia de [10Level9)](d3d11-graphics-reference-10level9.md) se enumeran las diferencias entre el comportamiento de los distintos métodos [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) e [**ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) en varios niveles de características de 10Level9.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -76,12 +76,12 @@ En la sección de [referencia de 10Level9 se](d3d11-graphics-reference-10level9.
 [Direct3D 11 en hardware de nivel inferior](overviews-direct3d-11-devices-downlevel.md)
 </dt> <dt>
 
-[Cómo usar Direct3D 11](how-to-use-direct3d-11.md)
+[Uso de Direct3D 11](how-to-use-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: MOV-PS
-description: Mueve los datos entre los registros.
+title: mov - ps
+description: Mover datos entre registros.
 ms.assetid: be89b6e8-6f71-43f4-9970-0631adbaef80
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,44 +9,44 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9520915e018456cec2cde4298eba8a3d7aab10ff
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: a095d762ffef28fec0a6b820f2aec08da9e5142a7a9521a086d1d49f65685923
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104983899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118365"
 ---
-# <a name="mov---ps"></a>MOV-PS
+# <a name="mov---ps"></a>mov - ps
 
-Mueve los datos entre los registros.
+Mover datos entre registros.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| MOV. DST, src |
+| mov dst, src |
 |--------------|
 
 
 
- 
+ 
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| MOV                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
+| Mov                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -55,9 +55,9 @@ Mueve los datos entre los registros.
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

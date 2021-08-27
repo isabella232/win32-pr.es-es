@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bfb87884438f1a39a5bd6f08eb9bb855311eb5d3
-ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
+ms.openlocfilehash: ec6f2724f4374ed94fff47e6577a2887ca953cae0af66de9c64971cd80aa2050
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107734200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100005"
 ---
 # <a name="interval-repetitiontype-element"></a>Elemento Interval (repetitionType)
 
@@ -47,7 +47,7 @@ El elemento se define mediante el [**tipo complejo repetitionType.**](taskschedu
 
 
 
-| Elemento                                                                      | Derivado de                                                             | Description                                                                                                               |
+| Elemento                                                                      | Derivado de                                                             | Descripción                                                                                                               |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | [**Repetición**](taskschedulerschema-repetition-triggerbasetype-element.md) | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Especifica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición después de iniciar la tarea.<br/> |
 
@@ -61,20 +61,20 @@ Para el desarrollo de C++, el intervalo del patrón de repetición se especifica
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo completo del XML para una tarea que usa un intervalo de repetición, vea [Ejemplo de desencadenador diario (XML).](daily-trigger-example--xml-.md)
+Para obtener un ejemplo completo del XML para una tarea que usa un intervalo de repetición, vea Ejemplo de desencadenador [diario (XML).](daily-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,56 +1,56 @@
 ---
-description: La taxonomía descrita en esta sección primero distingue el plano de control que se relaciona con la forma en que se establece una sesión Multipoint, desde el plano de datos que se ocupa de la transferencia de datos entre los participantes de la sesión.
+description: La taxonomía descrita en esta sección distingue primero el plano de control que se ocupa de la forma en que se establece una sesión de varios puntos, del plano de datos que se ocupa de la transferencia de datos entre los participantes de la sesión.
 ms.assetid: f411acd7-5e33-4760-8a12-31c2d615426f
-title: Taxonomía de Multipoint
+title: Taxonomía multipunto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f97159312a2e431cb82b73336a13904c6b5ab021
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9d1928dde2935ab803d95d73db225f7b3be0bc051a082d3bdae937e9b8e7da0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097725"
 ---
-# <a name="multipoint-taxonomy"></a>Taxonomía de Multipoint
+# <a name="multipoint-taxonomy"></a>Taxonomía multipunto
 
-La taxonomía descrita en esta sección primero distingue el plano de control que se relaciona con la forma en que se establece una sesión Multipoint, desde el plano de datos que se ocupa de la transferencia de datos entre los participantes de la sesión.
+La taxonomía descrita en esta sección distingue primero el plano de control que se ocupa de la forma en que se establece una sesión de varios puntos, del plano de datos que se ocupa de la transferencia de datos entre los participantes de la sesión.
 
-## <a name="session-establishment-in-the-control-plane"></a>Establecimiento de la sesión en el plano de control
+## <a name="session-establishment-in-the-control-plane"></a>Establecimiento de sesión en el plano de control
 
 En el plano de control hay dos tipos distintos de establecimiento de sesión:
 
--   raíz
+-   Arraigada
 -   no raíz
 
-En el caso del control con raíz, existe un participante especial, la \_ raíz de c, que es diferente del resto de los miembros de esta sesión Multipoint, cada uno de los cuales se denomina \_ hoja c. La \_ raíz de c debe permanecer presente durante todo el tiempo de la sesión de Multipoint, ya que la sesión se divide en ausencia de la raíz de c \_ . La raíz de c \_ normalmente inicia la sesión de Multipoint mediante la configuración de la conexión a una \_ hoja de c o un número de hojas de c \_ . La raíz de c \_ puede agregar más \_ hojas de c o, en algunos casos, una \_ hoja c puede unir la raíz de c \_ en un momento posterior. Los ejemplos del plano de control con raíz se pueden encontrar en ATM y ST-II.
+En el caso del control con raíz, existe un participante especial, raíz c, que es diferente del resto de los miembros de esta sesión de varios puntos, cada uno de los cuales se denomina \_ hoja \_ c. La raíz de c debe permanecer presente durante todo el tiempo que dure la sesión multipunto, ya que la sesión se divide en ausencia \_ de la raíz de \_ c. Normalmente, la raíz de c inicia la sesión de varios puntos configurando la conexión a una hoja \_ c o varias hojas de \_ \_ c. La raíz de c puede agregar más hojas de c o, en algunos casos, una hoja c puede unirse a la raíz \_ \_ de c más \_ \_ adelante. Puede encontrar ejemplos del plano de control con raíz en ATM y ST-II.
 
-En el caso de un plano de control no raíz, todos los miembros que pertenecen a una sesión de Multipoint son, es decir, no existe ningún participante especial que actúe como raíz de c \_ . Cada \_ hoja de c debe agregarse a una sesión de Multipoint existente que siempre esté disponible (como en el caso de una dirección IP de multidifusión) o se haya configurado a través de algún mecanismo fuera de banda (OOB) que esté fuera del ámbito de la especificación de Windows Sockets.
+En el caso de un plano de control no raíz, todos los miembros que pertenecen a una sesión de varios puntos son hojas, es decir, no existe ningún participante especial que actúe como raíz \_ de C. Cada hoja c debe agregarse a una sesión multipunto preexistencia que esté siempre disponible (como en el caso de una dirección de multidifusión IP) o que se haya configurado a través de algún mecanismo fuera de banda (OOB) que esté fuera del ámbito de la especificación \_ de sockets de Windows.
 
-Otra forma de ver esto es que una \_ raíz de c todavía existe, pero se puede considerar que está en la nube de red en lugar de uno de los participantes. Dado que una raíz de control sigue existiendo, también se podría considerar que un plano de control no raíz se ha modificado de forma implícita. Ejemplos de este tipo de esquemas de multipoint con raíz implícita:
+Otra manera de ver esto es que todavía existe una raíz de C, pero se puede considerar que está en la nube de red en lugar de uno \_ de los participantes. Dado que todavía existe una raíz de control, también se podría considerar que un plano de control no raíz tiene raíz implícita. Algunos ejemplos de este tipo de esquemas multipunto con raíz implícita son:
 
 -   Un puente de teleconferencia.
 -   Sistema de multidifusión IP.
--   Una unidad de control Multipoint (MCU) en una videoconferencia H. 320.
+-   Una unidad de control multipunto (MCU) en una videoconferencia H.320.
 
 ## <a name="data-transfer-in-the-data-plane"></a>Transferencia de datos en el plano de datos
 
 En el plano de datos, hay dos tipos de estilos de transferencia de datos:
 
--   raíz
+-   Arraigada
 -   no raíz
 
-En un plano de datos raíz, existe un participante especial denominado \_ raíz d. La transferencia de datos solo se produce entre la \_ raíz d y el resto de los miembros de esta sesión Multipoint, cada una de las cuales se conoce como \_ hoja d. El tráfico puede ser unidireccional o bidireccional. Los datos que se envían desde la \_ raíz d están duplicados (si es necesario) y se entregan a cada \_ hoja d, mientras que los datos de las \_ hojas d solo van a la \_ raíz d. En el caso de un plano de datos con raíz, no se permite ningún tráfico entre las \_ hojas d. Un ejemplo de un protocolo cuya raíz se encuentra en el plano de datos es ST-II.
+En un plano de datos con raíz, existe un participante especial denominado \_ raíz d. La transferencia de datos solo se produce entre la raíz d y el resto de los miembros de esta sesión multipunto, cada uno de los cuales se conoce \_ como hoja \_ d. El tráfico podría ser unidireccional o bidireccional. Los datos enviados desde la raíz d se duplican (si es necesario) y se entregan a cada hoja d, mientras que los datos de las hojas d solo van a la \_ \_ raíz \_ \_ d. En el caso de un plano de datos con raíz, no se permite tráfico entre hojas \_ d. Un ejemplo de un protocolo que se basa en el plano de datos es ST-II.
 
-En un plano de datos no raíz, todos los participantes son iguales, es decir, todos los datos que envían se entregan a los demás participantes en la misma sesión de multipoint. Del mismo modo \_ , cada nodo de hoja d puede recibir datos de todas las demás \_ hojas d y, en algunos casos, de otros nodos que no participan en la sesión de multipoint. No existe ningún \_ nodo raíz d especial. IP: la multidifusión no tiene raíz en el plano de datos.
+En un plano de datos no raíz, todos los participantes son iguales, es decir, los datos que envían se entregan a todos los demás participantes en la misma sesión multipunto. Del mismo modo, cada nodo hoja d puede recibir datos de todas las demás hojas d y, en algunos casos, de otros nodos que no participan en la \_ \_ sesión de varios puntos. No existe ningún \_ nodo raíz d especial. La multidifusión IP no se genera en el plano de datos.
 
-Tenga en cuenta que la pregunta de dónde se produce la duplicación de la unidad de datos o si un solo árbol compartido o varios árboles de ruta de acceso más corta se usan para la distribución Multipoint son problemas de protocolo y irrelevantes para la interfaz que la aplicación usaría para realizar comunicaciones multipunto. Por lo tanto, estos problemas no se tratan en este apéndice ni en la interfaz de Windows Sockets.
+Tenga en cuenta que la pregunta de dónde se produce la duplicación de unidades de datos o si se usa un árbol único compartido o varios árboles de ruta de acceso más cortas para la distribución de varios puntos son problemas de protocolo y son irrelevantes para la interfaz que la aplicación usaría para realizar comunicaciones multipunto. Por lo tanto, estos problemas no se abordan en este apéndice ni en la Windows sockets.
 
-En la tabla siguiente se describe la taxonomía descrita anteriormente y se indica cómo se ajustan los esquemas existentes en cada una de las categorías. Tenga en cuenta que no parece haber ningún esquema existente que emplee un plano de control no raíz junto con un plano de datos raíz.
+En la tabla siguiente se muestra la taxonomía descrita anteriormente e indica cómo encajan los esquemas existentes en cada una de las categorías. Tenga en cuenta que no parece haber ningún esquema existente que emplee un plano de control no raíz junto con un plano de datos con raíz.
 
-|                      | Plano de control con raíz | Plano de control no raíz (con raíz implícita) |
+|                      | Plano de control con raíz | Plano de control no raíz (raíz implícita) |
 |----------------------|----------------------|-------------------------------------------|
 | Plano de datos con raíz    | ATM, ST-II           | No hay ejemplos conocidos.                        |
-| Plano de datos no raíz | T. 120                | IP-multidifusión, H. 320 (MCU)                 |
+| Plano de datos no raíz | T.120                | Multidifusión IP, H.320 (MCU)                 |
 
 
 

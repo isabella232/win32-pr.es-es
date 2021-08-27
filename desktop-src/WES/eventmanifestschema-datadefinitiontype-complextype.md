@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fa492acf00740b0df9b761c40797ec05feb5b2e38b84ec0682296dd845cbe613
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a637166d261c4148a81baee3597d4090542b8612
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118589610"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470931"
 ---
 # <a name="datadefinitiontype-complex-type"></a>Tipo complejo DataDefinitionType
 
@@ -69,63 +69,22 @@ Define un elemento de datos que desea incluir con el evento .
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nombre</th>
-<th>Tipo</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>count</td>
-<td><a href="eventmanifestschema-counttype-simpletype.md"><strong>CountType</strong></a></td>
-<td>Número de elementos de la matriz si el elemento de datos es una matriz. Puede especificar el recuento real o el nombre de otro elemento de datos que contiene el recuento. <br/></td>
-</tr>
-<tr class="even">
-<td>Intype</td>
-<td><strong>QName</strong></td>
-<td>Tipo de datos para este elemento de datos. Para obtener una lista de tipos de datos de entrada predefinidos, vea el <a href="eventmanifestschema-inputtype-complextype.md"><strong>tipo complejo InputType.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td>length</td>
-<td><a href="eventmanifestschema-lengthtype-simpletype.md"><strong>LengthType</strong></a></td>
-<td>Longitud de un elemento de datos de longitud variable, como un blob binario. Para los datos binarios, especifique la longitud en bytes y, para los datos de cadena, especifique la longitud en caracteres. Puede especificar la longitud real o el nombre de otro elemento de datos que contiene la longitud.<br/> Si usa el atributo length para especificar una cadena de longitud fija, debe agregar la cadena a su longitud fija, lo que permite el carácter de terminador null al final (por ejemplo, si la longitud es 5, la cadena abc debe agregarse como &quot; &quot; abc &quot; &quot; ). La longitud de cadena debe incluir el carácter de terminador NULL.<br/></td>
-</tr>
-<tr class="even">
-<td>mapa</td>
-<td>string</td>
-<td>Nombre de la asignación de nombre/valor que se usará para asignar valores enteros a cadenas. El tipo de datos del elemento de datos debe ser de uno de los siguientes tipos:<br/>
-<ul>
-<li>win:UInt8</li>
-<li>win:UInt16</li>
-<li>win:UInt32</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>name</td>
-<td>string</td>
-<td>Nombre del elemento de datos. Puede usar el nombre para hacer referencia a este elemento de datos en el fragmento XML si especifica una <a href="eventmanifestschema-userdata-templateitemtype-element.md"><strong>sección UserData</strong></a> en la plantilla. También puede hacer referencia a este nombre en un atributo length o count de otro elemento de datos si este elemento de datos contiene su valor de longitud o recuento.<br/> <strong>Windows Vista:</strong> Este atributo es opcional.<br/></td>
-</tr>
-<tr class="even">
-<td>outType</td>
-<td><strong>QName</strong></td>
-<td>Tipo de datos que se va a usar al representar este elemento de datos. Para obtener una lista de tipos de datos de salida predefinidos, vea el <a href="eventmanifestschema-outputtype-complextype.md"><strong>tipo complejo OutputType.</strong></a><br/> <strong>Windows Vista:</strong> El tipo de salida se omite y el servicio determina el tipo en función del tipo de entrada.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Nombre | Tipo | Descripción | 
+|------|------|-------------|
+| count | <a href="eventmanifestschema-counttype-simpletype.md"><strong>CountType</strong></a> | Número de elementos de la matriz si el elemento de datos es una matriz. Puede especificar el recuento real o el nombre de otro elemento de datos que contiene el recuento. <br /> | 
+| Intype | <strong>QName</strong> | Tipo de datos para este elemento de datos. Para obtener una lista de tipos de datos de entrada predefinidos, vea el <a href="eventmanifestschema-inputtype-complextype.md"><strong>tipo complejo InputType.</strong></a><br /> | 
+| length | <a href="eventmanifestschema-lengthtype-simpletype.md"><strong>LengthType</strong></a> | Longitud de un elemento de datos de longitud variable, como un blob binario. Para los datos binarios, especifique la longitud en bytes y, para los datos de cadena, especifique la longitud en caracteres. Puede especificar la longitud real o el nombre de otro elemento de datos que contiene la longitud.<br /> Si usa el atributo length para especificar una cadena de longitud fija, debe agregar la cadena a su longitud fija, lo que permite el carácter de terminador null al final (por ejemplo, si la longitud es 5, la cadena "abc" debe agregarse como "abc". La longitud de la cadena debe incluir el carácter de terminador null.<br /> | 
+| mapa | string | Nombre de la asignación de nombre/valor que se usará para asignar valores enteros a cadenas. El tipo de datos del elemento de datos debe ser de uno de los siguientes tipos:<br /><ul><li>win:UInt8</li><li>win:UInt16</li><li>win:UInt32</li></ul> | 
+| name | string | Nombre del elemento de datos. Puede usar el nombre para hacer referencia a este elemento de datos en el fragmento XML si especifica una <a href="eventmanifestschema-userdata-templateitemtype-element.md"><strong>sección UserData</strong></a> en la plantilla. También puede hacer referencia a este nombre en un atributo length o count de otro elemento de datos si este elemento de datos contiene su valor de longitud o recuento.<br /><strong>Windows Vista:</strong> Este atributo es opcional.<br /> | 
+| outType | <strong>QName</strong> | Tipo de datos que se va a usar al representar este elemento de datos. Para obtener una lista de los tipos de datos de salida predefinidos, vea el <a href="eventmanifestschema-outputtype-complextype.md"><strong>tipo complejo OutputType.</strong></a><br /><strong>Windows Vista:</strong> El tipo de salida se omite y el servicio determina el tipo en función del tipo de entrada.<br /> | 
+
 
 
 
 ## <a name="remarks"></a>Comentarios
 
-Para los tipos de entrada de longitud variable, como los blobs binarios, debe usar el atributo length para especificar explícitamente el tamaño de los datos. Para las cadenas, especifique el atributo length solo si las cadenas tienen una longitud fija.
+Para los tipos de entrada de longitud variable, como los blobs binarios, debe usar el atributo length para especificar explícitamente el tamaño de los datos. Para las cadenas, especifique el atributo de longitud solo si las cadenas tienen una longitud fija.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -207,7 +166,7 @@ A continuación se muestran algunos ejemplos de las definiciones de elementos de
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

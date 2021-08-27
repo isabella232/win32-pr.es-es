@@ -1,19 +1,19 @@
 ---
-description: Esta aplicación de ejemplo usa las API de audio principales para representar datos de audio en un dispositivo de salida, especificado por el usuario.
+description: Esta aplicación de ejemplo usa core Audio APIs para representar datos de audio en un dispositivo de salida, especificado por el usuario.
 ms.assetid: 92e644be-df8b-415d-ac8e-c0c30c85f844
 title: RenderSharedEventDriven
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9901896b962717ed72fd36d022eef9510d7cb916
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: aafab0e2a9d073a963653ebaf53106ee737327a516df300a810632b0822c26f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109415"
 ---
 # <a name="rendersharedeventdriven"></a>RenderSharedEventDriven
 
-Esta aplicación de ejemplo usa las API de audio principales para representar datos de audio en un dispositivo de salida, especificado por el usuario. Este ejemplo muestra el almacenamiento en búfer basado en eventos para un cliente de representación en modo compartido. En el caso de una secuencia en modo compartido, el cliente comparte el búfer del extremo con el motor de audio.
+Esta aplicación de ejemplo usa core Audio APIs para representar datos de audio en un dispositivo de salida, especificado por el usuario. En este ejemplo se muestra el almacenamiento en búfer controlado por eventos para un cliente de representación en modo compartido. Para una secuencia en modo compartido, el cliente comparte el búfer del punto de conexión con el motor de audio.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -21,15 +21,15 @@ En este tema se incluyen las siguientes secciones.
 -   [Requisitos](#requirements)
 -   [Descargar el ejemplo](#downloading-the-sample)
 -   [Compilar el ejemplo](#building-the-sample)
--   [Ejecutar el ejemplo](#running-the-sample)
+-   [Ejecución del ejemplo](#running-the-sample)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="description"></a>Descripción
 
-En este ejemplo se muestran las características siguientes.
+En este ejemplo se muestran las siguientes características.
 
--   [MMDEVICE API](mmdevice-api.md) para la enumeración y selección de dispositivos multimedia.
--   WASAPI para las operaciones de administración de secuencias.
+-   [MMDevice API para](mmdevice-api.md) la enumeración y selección de dispositivos multimedia.
+-   WASAPI para operaciones de administración de flujos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ En este ejemplo se muestran las características siguientes.
 
 | Producto                                                        | Versión   |
 |----------------------------------------------------------------|-----------|
-| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
+| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
 | Visual Studio                                                  | 2008      |
 
 
@@ -50,9 +50,9 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Location    | Ruta de acceso/URL                                                                                                 |
+| Ubicación    | Ruta de acceso o dirección URL                                                                                                 |
 |-------------|----------------------------------------------------------------------------------------------------------|
-| Windows SDK | \\Archivos de programa \\ Microsoft SDK \\ Windows \\ v 7.0 \\ Samples \\ multimedia \\ audio \\ RenderSharedEventDriven \\ ... |
+| Windows SDK | \\Archivos de \\ programa Sdk de Microsoft Windows ejemplos de audio multimedia \\ \\ v7.0 \\ \\ \\ \\ RenderSharedEventDriven \\ ... |
 
 
 
@@ -62,13 +62,13 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 Para compilar el ejemplo RenderSharedEventDriven, siga estos pasos:
 
-1.  Abra el shell de CMD para el Windows SDK y cambie al directorio de ejemplo RenderSharedEventDriven.
-2.  Ejecute el comando `start WASAPIRenderSharedEventDriven.sln` en el directorio RenderSharedEventDriven para abrir el proyecto WASAPIRenderSharedEventDriven en la ventana de Visual Studio.
-3.  En la ventana, seleccione la configuración de la solución de **depuración** o **versión** , seleccione el menú **compilar** en la barra de menús y seleccione la opción **compilar** . Si no abre Visual Studio desde el shell de CMD para el SDK, Visual Studio no tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto, WASAPIRenderSharedEventDriven. vcproj.
+1.  Abra el shell de CMD para el SDK Windows y cambie al directorio de ejemplo RenderSharedEventDriven.
+2.  Ejecute el comando en el directorio RenderSharedEventDriven para abrir el `start WASAPIRenderSharedEventDriven.sln` proyecto WASAPIRenderSharedEventDriven en la Visual Studio cliente.
+3.  En la ventana, seleccione  la **configuración** de  la solución Depurar o Liberar, seleccione el menú Compilar en la barra de menús y seleccione la **opción Compilar.** Si no abre una Visual Studio desde el shell de CMD para el SDK, Visual Studio tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto WASAPIRenderSharedEventDriven.vcproj.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-Si compila la aplicación de demostración correctamente, se genera un archivo ejecutable WASAPIRenderSharedEventDriven.exe. Para ejecutarlo, escriba `WASAPIRenderSharedEventDriven` en una ventana de comandos seguida de los argumentos obligatorios u opcionales. En el ejemplo siguiente se muestra cómo ejecutar el ejemplo especificando la duración de la reproducción en el dispositivo multimedia predeterminado.
+Si compila correctamente la aplicación de demostración, se genera WASAPIRenderSharedEventDriven.exe archivo ejecutable. Para ejecutarlo, escriba `WASAPIRenderSharedEventDriven` una ventana de comandos seguida de argumentos obligatorios u opcionales. En el ejemplo siguiente se muestra cómo ejecutar el ejemplo especificando la duración de reproducción en el dispositivo multimedia predeterminado.
 
 `WASAPIRenderSharedEventDriven.exe -d 20 -multimedia`
 
@@ -76,34 +76,34 @@ En la tabla siguiente se muestran los argumentos.
 
 | Argumento        | Descripción                                                |
 |-----------------|------------------------------------------------------------|
-| -?              | Muestra la ayuda.                                                |
-| -H              | Muestra la ayuda.                                                |
+| -?              | Muestra ayuda.                                                |
+| -H              | Muestra ayuda.                                                |
 | -f              | Frecuencia de onda sinusoidal en Hz.                                 |
 | -l              | Latencia de representación de audio en milisegundos.                      |
-| -d              | Duración de onda sinusoidal en segundos.                             |
+| -d              | Duración de la onda sinusoidal en segundos.                             |
 | -M              | Deshabilita el uso de MMCSS.                                 |
-| -consola        | Use el dispositivo de consola predeterminado.                            |
-| -comunicaciones | Use el dispositivo de comunicación predeterminado.                      |
+| -console        | Use el dispositivo de consola predeterminado.                            |
+| -communications | Use el dispositivo de comunicación predeterminado.                      |
 | -multimedia     | Use el dispositivo multimedia predeterminado.                         |
-| -punto de conexión       | Use el identificador de extremo especificado en el valor del modificador. |
+| -endpoint       | Use el identificador de punto de conexión especificado en el valor del modificador. |
 
 
 
  
 
-Si la aplicación se ejecuta sin argumentos, enumera los dispositivos disponibles y solicita al usuario que seleccione un dispositivo para la sesión de representación. Una vez que el usuario especifica un dispositivo, la aplicación representa una onda sinusoidal en 440 Hz durante 10 segundos. Estos valores se pueden modificar especificando los valores de modificador-f y-d.
+Si la aplicación se ejecuta sin argumentos, enumera los dispositivos disponibles y solicita al usuario que seleccione un dispositivo para la sesión de representación. Una vez que el usuario especifica un dispositivo, la aplicación representa una onda seno a 440 Hz durante 10 segundos. Estos valores se pueden modificar especificando los valores de modificador -f y -d.
 
-RenderSharedEventDriven muestra el almacenamiento en búfer basado en eventos. En el ejemplo se muestra cómo:
+RenderSharedEventDriven muestra el almacenamiento en búfer controlado por eventos. En el ejemplo se muestra cómo:
 
--   Cree una instancia de un cliente de audio, configúrela para que se ejecute en modo exclusivo y habilite el almacenamiento en búfer basado en eventos estableciendo la marca **\_ \_ EVENTCALLBACK STREAMFLAGS AUDCLNT** en la llamada a [**IAudioClient:: Initialize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize).
--   Asocie el cliente a los ejemplos que estén listos para ser representados proporcionando un identificador de evento al sistema llamando al método [**IAudioClient:: SetEventHandle**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-seteventhandle) .
--   Cree un subproceso de representación para procesar los ejemplos del motor de audio.
--   Compruebe el formato de combinación del punto de conexión del dispositivo para determinar si se pueden representar los ejemplos. Si el dispositivo no admite el formato de combinación, los datos se convierten en PCM.
--   Controlar el cambio de flujo.
+-   Cree una instancia de un cliente de audio, configúrelo para que se ejecute en modo exclusivo y habilite el almacenamiento en búfer controlado por eventos estableciendo la marca **AUDCLNT \_ STREAMFLAGS \_ EVENTCALLBACK** en la llamada a [**IAudioClient::Initialize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize).
+-   Asocie el cliente con los ejemplos que están listos para representarse proporcionando un identificador de eventos al sistema mediante una llamada al [**método IAudioClient::SetEventHandle.**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-seteventhandle)
+-   Cree un subproceso de representación para procesar ejemplos del motor de audio.
+-   Compruebe el formato de combinación del punto de conexión del dispositivo para determinar si se pueden representar las muestras. Si el dispositivo no admite el formato de combinación, los datos se convierten a PCM.
+-   Controle el cambio de flujo.
 
-Una vez iniciada la sesión de representación y iniciada la secuencia, el motor de audio señala el identificador de eventos proporcionado para notificar al cliente cada vez que un búfer está listo para que lo procese el cliente. Los datos de audio también se pueden procesar en un bucle controlado por temporizador. Este modo se muestra en el ejemplo [RenderSharedTimerDriven](rendersharedtimerdriven.md) .
+Una vez que se inicia la sesión de representación y se inicia la secuencia, el motor de audio señala el identificador de eventos proporcionado para notificar al cliente cada vez que un búfer está listo para que el cliente lo procese. Los datos de audio también se pueden procesar en un bucle controlado por temporizador. Este modo se muestra en el ejemplo [RenderSharedTimerDriven.](rendersharedtimerdriven.md)
 
-Para obtener más información sobre la representación de una secuencia, vea [representar un flujo](rendering-a-stream.md).
+Para obtener más información sobre cómo representar una secuencia, vea [Representación de una secuencia.](rendering-a-stream.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PSM_SETBUTTONTEXT (Prsht. h)
-description: Establece el texto de un botón en un asistente de Aero. Puede enviar este mensaje explícitamente o mediante la macro PropSheet \_ SetButtonText.
+title: PSM_SETBUTTONTEXT mensaje (Prsht.h)
+description: Establece el texto de un botón en un asistente de Aero. Puede enviar este mensaje explícitamente o mediante la macro \_ PropSheet SetButtonText.
 ms.assetid: 30b7afd1-5094-430f-9c48-d87832d96050
 keywords:
-- PSM_SETBUTTONTEXT controles de mensajes de Windows
+- PSM_SETBUTTONTEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41a0b55f73fc7084e89f54c1e741d12000b0f949
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: feac193beef3149140447a38c0be00b7f4fa0c1c1b28e10a5d7de2203ba21cec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088595"
 ---
-# <a name="psm_setbuttontext-message"></a>Mensaje de PSM \_ SETBUTTONTEXT
+# <a name="psm_setbuttontext-message"></a>Mensaje \_ SETBUTTONTEXT de PSM
 
-Establece el texto de un botón en un asistente de Aero. Puede enviar este mensaje explícitamente o mediante la macro [**PropSheet \_ SetButtonText**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setbuttontext) .
+Establece el texto de un botón en un asistente de Aero. Puede enviar este mensaje explícitamente o mediante la [**macro \_ PropSheet SetButtonText.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setbuttontext)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -33,17 +33,17 @@ Establece el texto de un botón en un asistente de Aero. Puede enviar este mensa
 *wParam* 
 </dt> <dd>
 
-Uno de los siguientes valores que especifican el botón cuyo texto se establece.
+Uno de los siguientes valores que especifica el botón cuyo texto se establece.
 
 
 
-| Value                                                                                                                                                                                 | Significado                           |
+| Valor                                                                                                                                                                                 | Significado                           |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| <span id="PSWIZB_BACK"></span><span id="pswizb_back"></span><dl> <dt>**PSWIZB \_ atrás**</dt> </dl>                               | Botón **atrás** .<br/>   |
-| <span id="PSWIZB_CANCEL"></span><span id="pswizb_cancel"></span><dl> <dt>**\_Cancelar PSWIZB**</dt> </dl>                         | Botón **Cancelar** .<br/> |
-| <span id="PSWIZB_DISABLEDFINISH"></span><span id="pswizb_disabledfinish"></span><dl> <dt>**PSWIZB \_ DISABLEDFINISH**</dt> </dl> | El botón **Finalizar** .<br/> |
-| <span id="PSWIZB_FINISH"></span><span id="pswizb_finish"></span><dl> <dt>**\_Finalizar PSWIZB**</dt> </dl>                         | El botón **Finalizar** .<br/> |
-| <span id="PSWIZB_NEXT"></span><span id="pswizb_next"></span><dl> <dt>**PSWIZB \_ siguiente**</dt> </dl>                               | Botón **siguiente** .<br/>   |
+| <span id="PSWIZB_BACK"></span><span id="pswizb_back"></span><dl> <dt>**PSWIWI \_ BACK**</dt> </dl>                               | Botón  Atrás.<br/>   |
+| <span id="PSWIZB_CANCEL"></span><span id="pswizb_cancel"></span><dl> <dt>**PSWIWI \_ CANCEL**</dt> </dl>                         | Botón **Cancelar.**<br/> |
+| <span id="PSWIZB_DISABLEDFINISH"></span><span id="pswizb_disabledfinish"></span><dl> <dt>**PSWIWIWI \_ DISABLEDFINISH**</dt> </dl> | Botón **Finalizar.**<br/> |
+| <span id="PSWIZB_FINISH"></span><span id="pswizb_finish"></span><dl> <dt>**PSWIWI \_ FINISH**</dt> </dl>                         | Botón **Finalizar.**<br/> |
+| <span id="PSWIZB_NEXT"></span><span id="pswizb_next"></span><dl> <dt>**PSWIWI \_ NEXT**</dt> </dl>                               | Botón  Siguiente.<br/>   |
 
 
 
@@ -54,7 +54,7 @@ Uno de los siguientes valores que especifican el botón cuyo texto se establece.
 *lParam* 
 </dt> <dd>
 
-Texto que se va a establecer.
+Texto que se establecerá.
 
 </dd> </dl>
 
@@ -66,11 +66,11 @@ No de devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **PSM \_ SETBUTTONTEXTW** (Unicode)<br/>                                       |
 
 

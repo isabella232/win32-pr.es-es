@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de finalización de operación de archivo. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos finales de la operación de archivo. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 3925d5bf-f412-4248-a61f-e667efa9debd
-title: FileIo_OpEnd (clase)
+title: FileIo_OpEnd clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d3f1c495cf44b84f8d7661b40cadec6ea255c6a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74042df74f8e128c4d92b6e4f1c886a7bba2f673c1a8a998a4b7f251475c3f93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130595"
 ---
-# <a name="fileio_opend-class"></a>FileIo ( \_ clase abierta)
+# <a name="fileio_opend-class"></a>FileIo \_ OpEnd (clase)
 
-Esta clase es la clase de tipo de evento para los eventos de finalización de operación de archivo.
+Esta clase es la clase de tipo de evento para los eventos finales de la operación de archivo.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,26 +42,26 @@ class FileIo_OpEnd : FileIo
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ abierta FileIo** tiene estos tipos de miembros:
+La **clase FileIo \_ OpEnd** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ abierta FileIo** tiene estas propiedades.
+La **clase FileIo \_ OpEnd** tiene estas propiedades.
 
 <dl> <dt>
 
 **ExtraInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), puntero
+Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
 Información adicional devuelta por el sistema de archivos para la operación. Por ejemplo, para una solicitud de lectura, el número real de bytes leídos.
@@ -71,38 +71,38 @@ Información adicional devuelta por el sistema de archivos para la operación. P
 **IrpPtr**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Paquete de solicitud de e/s. Esta propiedad identifica la actividad de e/s que está finalizando.
+Paquete de solicitud de E/S. Esta propiedad identifica la actividad de E/S que está finalizando.
 
 </dd> <dt>
 
 **NtStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
 Valor devuelto de la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los eventos [**FileIo**](fileio.md) se registran al principio de la operación. Los eventos abiertos se pueden habilitar por separado para indicar el final de esas operaciones. IRP se puede usar para poner en correlación los eventos de inicio y fin.
+[**Los eventos FileIo**](fileio.md) se registran al principio de la operación. Los eventos OpEnd se pueden habilitar por separado para indicar el final de esas operaciones. Irp se puede usar para correlacionar los eventos de inicio y fin.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,8 +110,8 @@ Los eventos [**FileIo**](fileio.md) se registran al principio de la operación. 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

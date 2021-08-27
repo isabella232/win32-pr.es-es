@@ -1,7 +1,7 @@
 ---
-description: Obtiene un puntero al búfer que contiene la tabla de constantes.
+description: Obtiene un puntero al búfer que contiene la tabla constante.
 ms.assetid: 71dda064-15f8-415c-aba7-60255886c6b4
-title: 'ID3DXConstantTable:: GetBufferPointer (método) (D3DX9Shader. h)'
+title: Método ID3DXConstantTable::GetBufferPointer (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e21efe675e0b9a87161bc940f428bdda354c050c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3ff8052b088b4cdbb01689796b32e63829554ccc0bce5295992393359b1cc7e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118815"
 ---
-# <a name="id3dxconstanttablegetbufferpointer-method"></a>ID3DXConstantTable:: GetBufferPointer (método)
+# <a name="id3dxconstanttablegetbufferpointer-method"></a>Método ID3DXConstantTable::GetBufferPointer
 
-Obtiene un puntero al búfer que contiene la tabla de constantes.
+Obtiene un puntero al búfer que contiene la tabla constante.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,8 +50,8 @@ Devuelve un puntero al búfer.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

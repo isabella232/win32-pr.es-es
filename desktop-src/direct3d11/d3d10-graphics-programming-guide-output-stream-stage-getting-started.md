@@ -1,17 +1,17 @@
 ---
-title: Tareas iniciales con la fase Stream-Output datos
+title: Tareas iniciales con la Stream-Output fase
 description: En esta sección se describe cómo usar un sombreador de geometría con la fase de salida del flujo.
 ms.assetid: 37146486-5922-4833-850c-cc4a51de0957
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 480fb75c126d89cc8db5ae79950e437ff411fcc60f3e9bf006662d0ecc2e3d4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f00b469b28601322358f348de98354f15263483
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118099618"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122621881"
 ---
-# <a name="getting-started-with-the-stream-output-stage"></a>Tareas iniciales con la fase Stream-Output datos
+# <a name="getting-started-with-the-stream-output-stage"></a>Tareas iniciales con la Stream-Output fase
 
 En esta sección se describe cómo usar un sombreador de geometría con la fase de salida del flujo.
 
@@ -99,8 +99,8 @@ Teniendo en cuenta ese código, tenga en cuenta que un sombreador de geometría 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -114,7 +114,7 @@ Teniendo en cuenta ese código, tenga en cuenta que un sombreador de geometría 
 <td>El tipo de valor devuelto de función hace una cosa, declara el número máximo de vértices que puede generar el sombreador. En este caso, <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -132,7 +132,7 @@ define la salida para que sea un máximo de 12 vértices.</td>
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -143,12 +143,12 @@ define la salida para que sea un máximo de 12 vértices.</td>
 
 </div>
 <p>El primer parámetro es una matriz de vértices (3 en este caso) definida por una estructura GSPS_INPUT (que define los datos por vértice como una posición, una coordenada normal y una coordenada de textura). El primer parámetro también usa la palabra clave triangle, lo que significa que la fase del ensamblador de entrada debe generar datos al sombreador de geometría como uno de los tipos primitivos de triángulo (lista de triángulos o franja de triángulo).</p>
-<p>El segundo parámetro es una secuencia de triángulo definida por el tipo TriangleStream &lt; GSPS_INPUTT &gt; . Esto significa que el parámetro es una matriz de triángulos, cada uno de los cuales se forma con tres vértices (que contienen los datos de los miembros de GSPS_INPUT).</p>
+<p>El segundo parámetro es una secuencia de triángulo definida por el tipo TriangleStream &lt; GSPS_INPUTT &gt; . Esto significa que el parámetro es una matriz de triángulos, cada uno de los cuales está hecho de tres vértices (que contienen los datos de los miembros de GSPS_INPUT).</p>
 <p>Use las palabras clave triangle y trianglestream para identificar triángulos individuales o una secuencia de triángulos en un GS.</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="Intrinsic_function"></span><span id="intrinsic_function"></span><span id="INTRINSIC_FUNCTION"></span>Función intrínseca</p></td>
-<td><p>Las líneas de código de la función de sombreador usan funciones intrínsecas HLSL common-shader-core, excepto las dos últimas líneas, que llaman a Append y RestartStrip. Estas funciones solo están disponibles para un sombreador de geometría. Anexar informa al sombreador de geometría para anexar la salida a la franja actual; RestartStrip crea una nueva franja primitiva. Se crea implícitamente una nueva franja en cada invocación de la fase GS.</p></td>
+<td><p>Las líneas de código de la función de sombreador usan funciones intrínsecas HLSL common-shader-core, excepto las dos últimas líneas, que llaman a Append y RestartStrip. Estas funciones solo están disponibles para un sombreador de geometría. Anexar informa al sombreador de geometría de que anexe la salida a la franja actual; RestartStrip crea una nueva franja primitiva. Se crea implícitamente una nueva franja en cada invocación de la fase GS.</p></td>
 </tr>
 </tbody>
 </table>
@@ -157,7 +157,7 @@ define la salida para que sea un máximo de 12 vértices.</td>
 
  
 
-El resto del sombreador es muy similar a un sombreador de vértices o píxeles. El sombreador de geometría usa una estructura para declarar parámetros de entrada y marca el miembro de posición con la semántica SV POSITION para decir al hardware que se trata de \_ datos posicionales. La estructura de entrada identifica los otros dos parámetros de entrada como coordenadas de textura (aunque uno de ellos contendrá una cara normal). Si lo prefiere, puede usar su propia semántica personalizada para la cara normal.
+El resto del sombreador es muy similar a un sombreador de vértices o píxeles. El sombreador de geometría usa una estructura para declarar parámetros de entrada y marca el miembro de posición con la semántica SV POSITION para decir al hardware que se trata de \_ datos posicionales. La estructura de entrada identifica los otros dos parámetros de entrada como coordenadas de textura (aunque uno de ellos contendrá una cara normal). Si lo prefiere, podría usar su propia semántica personalizada para la cara normal.
 
 Después de diseñar el sombreador de geometría, llame [**a D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile) para compilar, como se muestra en el ejemplo de código siguiente.
 
@@ -200,7 +200,7 @@ D3D11Device->CreateGeometryShaderWithStreamOut( pShaderBytecode, ShaderBytecodes
 Esta función toma varios parámetros, entre los que se incluyen:
 
 -   Puntero al sombreador de geometría compilado (o sombreador de vértices si no habrá ningún sombreador de geometría y los datos se transmitirán directamente desde el sombreador de vértices). Para obtener información sobre cómo obtener este puntero, vea [Getting a Pointer to a Compiled Shader](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-using-shaders-10).
--   Puntero a una matriz de declaraciones que describen los datos de entrada de la fase de salida del flujo. (Vea [**D3D11 \_ SO DECLARATION \_ \_ ENTRY**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_so_declaration_entry)).) Puede proporcionar hasta 64 declaraciones, una para cada tipo diferente de elemento que se va a generar desde la fase SO. La matriz de entradas de declaración describe el diseño de datos independientemente de si solo se va a enlazar un búfer único o varios búferes para la salida del flujo.
+-   Puntero a una matriz de declaraciones que describen los datos de entrada de la fase de salida del flujo. (Vea [**D3D11 \_ SO DECLARATION \_ \_ ENTRY**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_so_declaration_entry)).) Puede proporcionar hasta 64 declaraciones, una para cada tipo diferente de elemento que se va a generar desde la fase SO. La matriz de entradas de declaración describe el diseño de datos independientemente de si solo se va a enlazar un búfer o varios búferes para la salida del flujo.
 -   Número de elementos escritos por la fase SO.
 -   Puntero al objeto de sombreador de geometría que se crea (vea [**ID3D11GeometryShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11geometryshader)).
 

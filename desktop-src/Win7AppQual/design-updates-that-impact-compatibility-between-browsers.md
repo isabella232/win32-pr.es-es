@@ -4,12 +4,12 @@ ms.assetid: F2C13FEC-5537-4B0D-BFDB-E17A42A289CB
 title: Diseñar actualizaciones que afectan a la compatibilidad entre exploradores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a306a64cb03bce8b466f6367339302522109619a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7bc0600b0c0e79003a86c5b3777f7f569d8c73ef
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088483"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625931"
 ---
 # <a name="design-updates-that-impact-compatibility-between-browsers"></a>Diseñar actualizaciones que afectan a la compatibilidad entre exploradores
 
@@ -19,9 +19,9 @@ En esta sección y en la tabla siguiente se muestran las cuatro áreas principal
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

@@ -4,7 +4,7 @@ MS-HAID: vspixengine.ITextureCallback
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Interfaz ITextureCallback
+title: ITextureCallback (interfaz)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 2558C90A-7235-4A36-859C-0E74BD0B712A
@@ -17,34 +17,34 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 831de15656960cdc72ef2db50c1f3d13b8491e38
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4e0d058a9851c4c9c3df3f5757b4ae3f6eb4356e
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806679"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786091"
 ---
-# <a name="span-idvspixengineitexturecallbackspanitexturecallback-interface"></a><span id="vspixengine.itexturecallback"></span>Interfaz ITextureCallback
+# <a name="span-idvspixengineitexturecallbackspanitexturecallback-interface"></a><span id="vspixengine.itexturecallback"></span>ITextureCallback (interfaz)
 
 Devolución de llamada para escribir una textura como un archivo DDS.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La interfaz **ITextureCallback** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITextureCallback** también tiene estos tipos de miembros:
+La **interfaz ITextureCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITextureCallback también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
 
-La interfaz **ITextureCallback** tiene estos métodos.
+La **interfaz ITextureCallback** tiene estos métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/itexturecallback-resultcallback"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host que el. El archivo DDS (DirectDraw Surface) que contiene los resultados de la solicitud asociada está listo.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/itexturecallback-resultcallback"><strong>ResultCallback</strong></a></td><td ><p>Devolución de llamada que notifica al host que . El archivo DDS (DirectDraw Surface) que contiene los resultados de la solicitud asociada está listo.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

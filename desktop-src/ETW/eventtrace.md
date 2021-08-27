@@ -1,7 +1,7 @@
 ---
 description: Clase abstracta de la que se derivan todas las clases de seguimiento de eventos.
 ms.assetid: 03eea902-5050-4ab2-8a72-9bff7777e234
-title: Clase Eventtracer
+title: Clase EventTrace
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -27,18 +27,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f04399942b39a2da5b746933884a436a65bb370c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37124a1c5ef23782261cbe94462c737d137dc6965363d9c907ea895e289237d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130615"
 ---
-# <a name="eventtrace-class"></a>Clase Eventtracer
+# <a name="eventtrace-class"></a>Clase EventTrace
 
 Clase abstracta de la que se derivan todas las clases de seguimiento de eventos.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,20 +66,20 @@ class EventTrace
 
 ## <a name="members"></a>Miembros
 
-La clase **eventtracer** tiene estos tipos de miembros:
+La **clase EventTrace** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **eventtracer** tiene estas propiedades.
+La **clase EventTrace** tiene estas propiedades.
 
 <dl> <dt>
 
 **EventGuid**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -92,10 +92,10 @@ GUID de la clase de seguimiento de eventos de este evento.
 
 </dd> <dt>
 
-**Eventos**
+**EventSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -111,7 +111,7 @@ Número total de bytes del evento.
 **EventType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -120,14 +120,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (3)
 </dt> </dl>
 
-Tipo de evento definido por el proveedor. Indica la clase de tipo de evento que se va a utilizar para descifrar los datos de eventos definidos por el proveedor (los datos a los que apunta **MofData**.
+Tipo de evento definido por el proveedor. Indica qué clase de tipo de evento se va a usar para descifrar los datos de eventos definidos por el proveedor (los datos a los que **apunta MofData**.
 
 </dd> <dt>
 
 **InstanceId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -143,7 +143,7 @@ Identificador de esta instancia de evento.
 **KernelTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -152,30 +152,30 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (9)
 </dt> </dl>
 
-Tiempo de ejecución transcurrido para instrucciones en modo kernel, en TICs de CPU.
+Tiempo de ejecución transcurrido para instrucciones en modo kernel, en pasos de CPU.
 
 </dd> <dt>
 
 **MofData**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (14), **puntero**
+Calificadores: **WmiDataId** (14), **Pointer**
 </dt> </dl>
 
-Puntero a los datos de evento específicos del proveedor.
+Puntero a los datos de eventos específicos del proveedor.
 
 </dd> <dt>
 
 **MofLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -191,7 +191,7 @@ Longitud de los datos de eventos específicos del proveedor.
 **ParentGuid**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -207,7 +207,7 @@ GUID de la clase de seguimiento de eventos de la instancia primaria.
 **ParentInstanceId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -223,7 +223,7 @@ Identificador de los datos de la instancia primaria.
 **ReservedHeaderField**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -239,23 +239,23 @@ Reservado.
 **ThreadId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (6), **puntero**
+Calificadores: **WmiDataId** (6), **Pointer**
 </dt> </dl>
 
 Identifica el subproceso que ha generado el evento.
 
 </dd> <dt>
 
-**Indicaciones**
+**Timestamp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -271,7 +271,7 @@ Contiene la fecha y hora en que se produjo el evento.
 **TraceLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -280,14 +280,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (4)
 </dt> </dl>
 
-Valor definido por el proveedor que define el nivel de gravedad usado para generar el evento.
+Valor definido por el proveedor que define el nivel de gravedad utilizado para generar el evento.
 
 </dd> <dt>
 
 **TraceVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -303,7 +303,7 @@ Número de versión definido por el proveedor de la clase de seguimiento de even
 **UserTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -312,13 +312,13 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (10)
 </dt> </dl>
 
-Tiempo de ejecución transcurrido para instrucciones en modo de usuario, en TICs de CPU.
+Tiempo de ejecución transcurrido para las instrucciones en modo de usuario, en los tics de CPU.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No utilice estas propiedades.
+No use estas propiedades.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -328,7 +328,7 @@ No utilice estas propiedades.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| MOF<br/>                      | <dl> <dt>WMI. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Wmi.mof</dt> </dl> |
 
 
 

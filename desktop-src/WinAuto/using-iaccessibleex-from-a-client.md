@@ -1,34 +1,34 @@
 ---
-title: Usar IAccessibleEx desde un cliente
-description: En este tema se explica cómo los clientes acceden a la implementación de IAccessibleEx de un servidor y cómo usarlos para obtener propiedades de UI Automation y patrones de control para los elementos de la interfaz de usuario.
+title: Uso de IAccessibleEx desde un cliente
+description: En este tema se explica cómo los clientes acceden a la implementación de IAccessibleEx de un servidor y la usan para obtener Automatización de la interfaz de usuario propiedades y patrones de control para los elementos de la interfaz de usuario.
 ms.assetid: e057bbe8-5dd7-41fc-a5d5-bcf4c1c6433d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77b14b935bd7ed432ea4d378034763635309213f
-ms.sourcegitcommit: 89f99926f946dc6c5ea600fb7c41f6b19ceac516
+ms.openlocfilehash: 4f03bd58ec80a29f13e0428de4655aa7200144122b1a1889259844db078aa9dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "104421607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098105"
 ---
-# <a name="using-iaccessibleex-from-a-client"></a>Usar IAccessibleEx desde un cliente
+# <a name="using-iaccessibleex-from-a-client"></a>Uso de IAccessibleEx desde un cliente
 
-En este tema se explica cómo los clientes acceden a la implementación de [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) de un servidor y cómo usarlos para obtener propiedades de UI Automation y patrones de control para los elementos de la interfaz de usuario.
+En este tema se explica cómo los clientes acceden a la implementación [**de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) de un servidor y la usan para obtener Automatización de la interfaz de usuario propiedades y patrones de control para los elementos de la interfaz de usuario.
 
-En los procedimientos y ejemplos de esta sección se supone que hay un cliente [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) que ya está en curso y un servidor de Microsoft Active Accessibility existente. También suponen que el cliente ya ha obtenido un objeto **IAccessible** mediante una de las funciones del marco de accesibilidad como [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent), [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint)o [**AccessibleObjectFromWindow**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow).
+Los procedimientos y ejemplos de esta sección suponen un cliente [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) que ya está en proceso y un servidor Microsoft Active Accessibility existente. También suponen que el cliente ya ha obtenido un objeto **IAccessible** mediante una de las funciones del marco de accesibilidad, como [**AccessibleObjectFromEvent,**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent) [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint)o [**AccessibleObjectFromWindow.**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow)
 
-### <a name="obtaining-an-iaccessibleex-interface-from-the-iaccessible-interface"></a>Obtener una interfaz IAccessibleEx desde la interfaz IAccessible
+### <a name="obtaining-an-iaccessibleex-interface-from-the-iaccessible-interface"></a>Obtención de una interfaz IAccessibleEx desde la interfaz IAccessible
 
-Un cliente que tenga una interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para un objeto accesible puede utilizarlo para obtener la interfaz [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) correspondiente siguiendo estos pasos:
+Un cliente que tenga una [**interfaz IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para un objeto accesible puede usarla para obtener la interfaz [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) correspondiente siguiendo estos pasos:
 
--   Llame a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) original con un IID de \_ \_ uuidof (IServiceProvider).
--   Llame a **IServiceProvider:: QueryService** para obtener [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex).
+-   Llame [**a QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el [**objeto IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) original con un IID de \_ \_ uuidof(IServiceProvider).
+-   Llame **a IServiceProvider::QueryService** para obtener [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex).
 
-### <a name="handling-the-child-id"></a>Controlar el identificador secundario
+### <a name="handling-the-child-id"></a>Control del identificador secundario
 
-Los clientes deben estar preparados para servidores con un identificador secundario distinto de CHILDID \_ Self. Después de obtener una interfaz [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) de un [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible), los clientes deben llamar a [**IAccessibleEx:: GetObjectForChild**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getobjectforchild) si el identificador secundario no es CHILDID \_ Self (lo que indica un objeto primario).
+Los clientes deben estar preparados para servidores con un identificador secundario distinto de CHILDID \_ SELF. Después de obtener una [**interfaz IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) de [**IAccessible,**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)los clientes deben llamar a [**IAccessibleEx::GetObjectForChild**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getobjectforchild) si el identificador secundario no es CHILDID SELF (lo que indica un \_ objeto primario).
 
-En el ejemplo siguiente se muestra cómo obtener un [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) para un objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) determinado y un identificador secundario.
+En el ejemplo siguiente se muestra cómo obtener [**una IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) para un objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) determinado y un identificador secundario.
 
 
 ```C++
@@ -83,7 +83,7 @@ HRESULT GetIAccessibleExFromIAccessible(IAccessible * pAcc, long idChild,
 
 ### <a name="obtaining-the-irawelementprovidersimple-interface"></a>Obtención de la interfaz IRawElementProviderSimple
 
-Si un cliente tiene una interfaz [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) , puede utilizar QueryInterface para llegar a la interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) , como se muestra en el ejemplo siguiente.
+Si un cliente tiene una [**interfaz IAccessibleEx,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) puede usar QueryInterface para llegar a la [**interfaz IRawElementProviderSimple,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) como se muestra en el ejemplo siguiente.
 
 
 ```C++
@@ -107,9 +107,9 @@ HRESULT GetIRawElementProviderFromIAccessible(IAccessible * pAcc, long idChild,
 
 
 
-### <a name="retrieving-control-patterns"></a>Recuperación de patrones de control
+### <a name="retrieving-control-patterns"></a>Recuperar patrones de control
 
-Si un cliente tiene acceso a la interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) , puede recuperar interfaces de patrón de control implementadas por los proveedores y, a continuación, llamar a métodos en esas interfaces. El ejemplo siguiente muestra cómo hacerlo.
+Si un cliente tiene acceso a la interfaz [**IRawElementProviderSimple,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) puede recuperar interfaces de patrón de control implementadas por proveedores y, a continuación, llamar a métodos en esas interfaces. El ejemplo siguiente muestra cómo hacerlo.
 
 
 ```C++
@@ -162,7 +162,7 @@ HRESULT CallInvokePatternMethod(IAccessible * pAcc, long idChild)
 
 ### <a name="retrieving-property-values"></a>Recuperar valores de propiedad
 
-Si un cliente tiene acceso a [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple), puede recuperar los valores de propiedad. En el ejemplo siguiente se muestra cómo obtener los valores de las propiedades de automatización de la interfaz de usuario de Microsoft AutomationId y LabeledBy.
+Si un cliente tiene acceso a [**IRawElementProviderSimple,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple)puede recuperar valores de propiedad. En el ejemplo siguiente se muestra cómo obtener valores para las propiedades AutomationId y LabeledBy Automatización de la interfaz de usuario Microsoft.
 
 
 ```C++
@@ -213,19 +213,19 @@ if(SUCCEEDED(hr))
 
 
 
-El ejemplo anterior se aplica a las propiedades que no están asociadas a un patrón de control. Para obtener acceso a las propiedades de patrón de control, un cliente debe obtener y usar una interfaz de patrón de control.
+El ejemplo anterior se aplica a las propiedades que no están asociadas a un patrón de control. Para acceder a las propiedades del patrón de control, un cliente debe obtener y usar una interfaz de patrón de control.
 
 ### <a name="retrieving-an-iaccessible-interface-from-an-irawelementprovidersimple-interface"></a>Recuperar una interfaz IAccessible desde una interfaz IRawElementProviderSimple
 
-Si un cliente obtiene la interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) para un elemento de la interfaz de usuario, el cliente puede utilizar esa interfaz para obtener una interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) correspondiente para el elemento. Esto resulta útil si el cliente necesita tener acceso a las propiedades de Microsoft Active Accessibility para el elemento.
+Si un cliente obtiene la interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) para un elemento de interfaz de usuario, el cliente puede usar esa interfaz para obtener una interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) correspondiente para el elemento. Esto resulta útil si el cliente necesita tener acceso a las Microsoft Active Accessibility propiedades del elemento.
 
-Un cliente puede obtener la interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) como un valor de propiedad (por ejemplo, llamando a [**IRawElementProviderSimple:: GetPropertyValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpropertyvalue) con UIA \_ LabeledByPropertyId) o como un elemento recuperado por un método (por ejemplo, llamando a [**ISelectionProvider:: getSelection**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-getselection) para recuperar una matriz de interfaces **IRawElementProviderSimple** de los elementos seleccionados). Después de obtener la interfaz **IRawElementProviderSimple** , un cliente puede utilizarla para obtener un [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) correspondiente siguiendo estos pasos:
+Un cliente puede obtener la interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) como un valor de propiedad (por ejemplo, llamando a [**IRawElementProviderSimple::GetPropertyValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpropertyvalue) con UIA LabeledByPropertyId) o como un elemento recuperado por un método \_ (por ejemplo, llamando a [**ISelectionProvider::GetSelection**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-getselection) para recuperar una matriz de interfaces **IRawElementProviderSimple** de elementos seleccionados). Después de obtener la **interfaz IRawElementProviderSimple,** un cliente puede usarla para obtener un [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) correspondiente siguiendo estos pasos:
 
--   Intente usar QueryInterface para obtener la interfaz [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) .
--   Si se produce un error en QueryInterface, llame a [**IAccessibleEx:: ConvertReturnedElement**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-convertreturnedelement) en la instancia de [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) desde la que se obtuvo originalmente la propiedad.
--   Llame al método [**GetIAccessiblePair**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getiaccessiblepair) en la nueva instancia de [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) para obtener un identificador de elemento de la interfae de [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) y un identificador secundario.
+-   Intente usar QueryInterface para obtener la [**interfaz IAccessibleEx.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex)
+-   Si se produce un error en QueryInterface, llame a [**IAccessibleEx::ConvertReturnedElement**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-convertreturnedelement) en la [**instancia de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) de la que se obtuvo originalmente la propiedad.
+-   Llame al [**método GetIAccessiblePair en**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getiaccessiblepair) la nueva [**instancia de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) para obtener un identificador secundario e interfae [**de IAccessible.**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
-En el fragmento de código siguiente se muestra cómo obtener la interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) de una interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) obtenida previamente.
+El siguiente fragmento de código muestra cómo obtener la interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) de una interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) obtenida previamente.
 
 
 ```C++
