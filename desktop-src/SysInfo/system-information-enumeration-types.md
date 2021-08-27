@@ -1,26 +1,26 @@
 ---
-description: Los siguientes tipos de enumeración se utilizan para recuperar o establecer información del sistema.
+description: Los siguientes tipos de enumeración se usan para recuperar o establecer la información del sistema.
 ms.assetid: 477c1dc7-04c7-4332-95ed-3d833f5650df
-title: Tipos de enumeración de información del sistema
+title: Información del sistema Tipos de enumeración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b34cd48b93aca0efa43a142b466b3430eb3b006e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d230b0ec8344b34681587fd2bfb57cfb24ca3b384916a05a89294f3a73c5d58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118884830"
 ---
-# <a name="system-information-enumeration-types"></a>Tipos de enumeración de información del sistema
+# <a name="system-information-enumeration-types"></a>Información del sistema Tipos de enumeración
 
-Los siguientes tipos de enumeración se utilizan para recuperar o establecer información del sistema.
+Los siguientes tipos de enumeración se usan para recuperar o establecer la información del sistema.
 
 <dl>
 
-[**\_formato de nombre de equipo \_**](/windows/win32/api/sysinfoapi/ne-sysinfoapi-computer_name_format)  
-[**\_formato de nombre extendido \_**](/windows/desktop/api/Secext/ne-secext-extended_name_format)  
-[**tipo de FIRMWARE \_**](/windows/desktop/api/Winnt/ne-winnt-firmware_type)  
-[**\_máquina de archivos de imagen \_**](/previous-versions//mt804320(v=vs.85))  
+[**FORMATO DE \_ NOMBRE \_ DE EQUIPO**](/windows/win32/api/sysinfoapi/ne-sysinfoapi-computer_name_format)  
+[**FORMATO \_ DE NOMBRE \_ EXTENDIDO**](/windows/desktop/api/Secext/ne-secext-extended_name_format)  
+[**TIPO DE \_ FIRMWARE**](/windows/desktop/api/Winnt/ne-winnt-firmware_type)  
+[**MÁQUINA \_ DE ARCHIVOS DE \_ IMAGEN**](/previous-versions//mt804320(v=vs.85))  
 </dl>
 
  

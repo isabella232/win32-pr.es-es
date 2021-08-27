@@ -1,9 +1,9 @@
 ---
-title: Estructura de WINBIO_IDENTITY (Winbio \_ Types. h)
+title: WINBIO_IDENTITY estructura (Winbio \_ types.h)
 description: Contiene un valor de identificación asociado a una plantilla biométrica.
 ms.assetid: 58a5f4ba-2f58-466c-90fd-9480c3c095db
 keywords:
-- Plataforma de biometría de Windows API de WINBIO_IDENTITY Structure
+- WINBIO_IDENTITY estructura Windows API de marco biométrico
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8092754b9107029e0be5800bbd5bc98bc3efb91c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c677a341386bcc937061798f406397028c23c10b65989480da975a9fdf81a3c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910123"
 ---
-# <a name="winbio_identity-structure"></a>Estructura de identidad de WINBIO \_
+# <a name="winbio_identity-structure"></a>Estructura WINBIO \_ IDENTITY
 
-La estructura de **\_ identidad de WINBIO** contiene un valor de identificación asociado a una plantilla de biométrica.
+La **estructura WINBIO \_ IDENTITY** contiene un valor de identificación asociado a una plantilla biométrica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,19 +49,19 @@ typedef struct _WINBIO_IDENTITY {
 
 <dl> <dt>
 
-**Tipo**
+**Type**
 </dt> <dd>
 
-Especifica el formato de la información de identidad incluida en esta estructura. Puede ser uno de los siguientes valores:
+Especifica el formato de la información de identidad contenida en esta estructura. Puede ser uno de los siguientes valores:
 
 
 
 | Value                                                                                                                                                                                         | Significado                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| <span id="WINBIO_ID_TYPE_NULL"></span><span id="winbio_id_type_null"></span><dl> <dt>**WINBIO \_ ID \_ Type \_ null**</dt> </dl>             | La plantilla no tiene ningún identificador asociado.<br/>                                   |
-| <span id="WINBIO_ID_TYPE_WILDCARD"></span><span id="winbio_id_type_wildcard"></span><dl> <dt>**\_ \_ carácter comodín de tipo de identificador WINBIO \_**</dt> </dl> | La estructura coincide con todas las identidades de plantilla.<br/>                       |
-| <span id="WINBIO_ID_TYPE_GUID"></span><span id="winbio_id_type_guid"></span><dl> <dt>**\_GUID de \_ tipo de identificador WINBIO \_**</dt> </dl>             | La estructura contiene un GUID asociado a la plantilla.<br/>          |
-| <span id="WINBIO_ID_TYPE_SID"></span><span id="winbio_id_type_sid"></span><dl> <dt>**identificador de WINBIO de \_ tipo ID. \_ \_**</dt> </dl>                | La estructura contiene el SID de la cuenta asociado a la plantilla.<br/> |
+| <span id="WINBIO_ID_TYPE_NULL"></span><span id="winbio_id_type_null"></span><dl> <dt>**TIPO DE IDENTIFICADOR DE WINBIO \_ \_ \_ NULL**</dt> </dl>             | La plantilla no tiene ningún identificador asociado.<br/>                                   |
+| <span id="WINBIO_ID_TYPE_WILDCARD"></span><span id="winbio_id_type_wildcard"></span><dl> <dt>**CARÁCTER \_ COMODÍN DE TIPO \_ DE IDENTIFICADOR DE WINBIO \_**</dt> </dl> | La estructura coincide con todas las identidades de plantilla.<br/>                       |
+| <span id="WINBIO_ID_TYPE_GUID"></span><span id="winbio_id_type_guid"></span><dl> <dt>**GUID DE TIPO \_ DE IDENTIFICADOR \_ DE \_ WINBIO**</dt> </dl>             | La estructura contiene un GUID asociado a la plantilla.<br/>          |
+| <span id="WINBIO_ID_TYPE_SID"></span><span id="winbio_id_type_sid"></span><dl> <dt>**SID \_ DE TIPO DE IDENTIFICADOR \_ \_ DE WINBIO**</dt> </dl>                | La estructura contiene el SID de cuenta asociado a la plantilla.<br/> |
 
 
 
@@ -72,35 +72,35 @@ Especifica el formato de la información de identidad incluida en esta estructur
 **Valor**
 </dt> <dd>
 
-Unión que puede contener uno de los valores siguientes:
+Unión que puede contener uno de los siguientes valores:
 
 <dl> <dt>
 
 **Null**
 </dt> <dd>
 
-Contiene 1 si el miembro de **tipo** es **WINBIO \_ ID \_ Type \_ null**.
+Contiene 1 si el miembro **Type** es **WINBIO \_ ID TYPE \_ \_ NULL.**
 
 </dd> <dt>
 
-**Wildcard (Carácter comodín)**
+**Comodín**
 </dt> <dd>
 
-Contiene 1 si el miembro de **tipo** es **WINBIO \_ con el tipo de identificador \_ \_ comodín**.
+Contiene 1 si el miembro **Type** es **WINBIO \_ ID TYPE \_ \_ WILDCARD**.
 
 </dd> <dt>
 
 **TemplateGuid**
 </dt> <dd>
 
-Contiene un valor GUID de 128 bits que identifica la plantilla si el miembro de **tipo** es el **\_ identificador \_ \_ GUID de tipo WINBIO**.
+Contiene un valor GUID de 128 bits que identifica la plantilla si el miembro **Type** es **WINBIO \_ ID TYPE \_ \_ GUID**.
 
 </dd> <dt>
 
 **AccountSid**
 </dt> <dd>
 
-Una estructura que contiene un SID de cuenta si el miembro de **tipo** es el **tipo de \_ identificador WINBIO \_ \_ SID**.
+Estructura que contiene un SID de cuenta si el **miembro Type** es **WINBIO ID TYPE \_ \_ \_ SID**.
 
 <dl> <dt>
 
@@ -114,7 +114,7 @@ Número de caracteres del SID.
 **Data**
 </dt> <dd>
 
-Matriz de caracteres sin signo que contiene el SID. El tamaño máximo actual de la matriz es de 68 caracteres.
+Matriz de caracteres sin signo que contienen el SID. El tamaño máximo actual de la matriz es de 68 caracteres.
 
 </dd> </dl> </dd> </dl> </dd> </dl>
 
@@ -137,9 +137,9 @@ Esta estructura se usa en las siguientes funciones:
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

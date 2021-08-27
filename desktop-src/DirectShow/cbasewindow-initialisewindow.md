@@ -1,7 +1,7 @@
 ---
 description: El método InitialiseWindow inicializa la ventana.
 ms.assetid: 0cf07714-6846-4271-8095-bc4ab865171f
-title: CBaseWindow.Inimétodo tialiseWindow (Winutil. h)
+title: CBaseWindow.Inimétodo tialiseWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 75668846c700c33a26b7bb7ad2af2a3fd6e8eea2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f260f60111f715bfce357e264b65bb4b821c5ca890d39d4d54e7269a191df303
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954664"
 ---
 # <a name="cbasewindowinitialisewindow-method"></a>CBaseWindow.Inimétodo tialiseWindow
 
@@ -42,7 +42,7 @@ virtual HRESULT InitialiseWindow(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador de la ventana.
@@ -51,13 +51,13 @@ Identificador de la ventana.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-De forma predeterminada, este método recupera un identificador para el contexto de dispositivo (DC) de la ventana y crea un controlador de dominio de memoria compatible. Sin embargo, si el valor de la marca [**CBaseWindow:: m \_ BDoGetDC**](cbasewindow-m-bdogetdc.md) es **false**, este método no recupera los contextos de dispositivo. El controlador de dominio de memoria es útil para seleccionar mapas de bits antes de blitting a la ventana.
+De forma predeterminada, este método recupera un identificador en el contexto de dispositivo (DC) de la ventana y crea un controlador de dominio de memoria compatible. Si el valor de la [**marca CBaseWindow::m \_ bDoGetDC**](cbasewindow-m-bdogetdc.md) es **FALSE,** sin embargo, este método no recupera los contextos del dispositivo. El controlador de dominio de memoria es útil para seleccionar mapas de bits antes de su borrado en la ventana.
 
-El método [**CBaseWindow::D ocreatewindow**](cbasewindow-docreatewindow.md) llama a este método.
+El [**método CBaseWindow::D oCreateWindow**](cbasewindow-docreatewindow.md) llama a este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ El método [**CBaseWindow::D ocreatewindow**](cbasewindow-docreatewindow.md) lla
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ El método [**CBaseWindow::D ocreatewindow**](cbasewindow-docreatewindow.md) lla
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

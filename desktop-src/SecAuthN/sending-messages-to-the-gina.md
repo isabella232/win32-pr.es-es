@@ -1,57 +1,57 @@
 ---
-description: Winlogon envía mensajes a GINA mientras se muestran los cuadros de diálogo. Estos mensajes se encapsulan en el \_ mensaje SAS de WLX WM \_ como se indica a continuación.
+description: Winlogon envía mensajes a GINA mientras se muestran los cuadros de diálogo. Todos estos mensajes se encapsulan en el mensaje DE SAS de WLX \_ WM como se indica a \_ continuación.
 ms.assetid: 3da1c3d2-5116-47c3-98e4-f29b33693c69
-title: Envío de mensajes a GINA
+title: Envío de mensajes a la GINA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d2f7b5b0d8fbecafad0bcc36c84cf395813f767
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb52da6a2a66d901207485ed97592a97286902ba51c54ec4924240ab9403a885
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118918326"
 ---
-# <a name="sending-messages-to-the-gina"></a>Envío de mensajes a GINA
+# <a name="sending-messages-to-the-gina"></a>Envío de mensajes a la GINA
 
-[*Winlogon*](../secgloss/w-gly.md) envía mensajes a [*Gina*](../secgloss/g-gly.md) mientras se muestran los cuadros de diálogo. Estos mensajes se encapsulan en el \_ mensaje SAS de WLX WM \_ como se indica a continuación.
+[*Winlogon envía*](../secgloss/w-gly.md) mensajes a [*la GINA mientras*](../secgloss/g-gly.md) se muestran los cuadros de diálogo. Todos estos mensajes se encapsulan en el mensaje DE SAS de WLX \_ WM como se indica a \_ continuación.
 
 
 
 | Tipo de secuencia de atención segura en el parámetro wParam | Descripción                                                                                                                                   |
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| WLX \_ tipo de SAS \_ \_ Ctrl \_ ALT \_ Supr                     | Indica que se ha recibido una secuencia de teclas CTRL + ALT + SUPR.                                                                                      |
-| WLX \_ SAS \_ Type \_ SC \_ Insert                         | Indica que se ha insertado una [*tarjeta inteligente*](../secgloss/s-gly.md) en un dispositivo compatible. |
-| WLX \_ SAS \_ tipo \_ SC \_ Remove                         | Indica que se ha quitado una tarjeta inteligente de un dispositivo compatible.                                                                        |
-| \_cierre de \_ \_ sesión de usuario de tipo SAS de WLX \_                       | Indica que un usuario solicitó el cierre de sesión.                                                                                                       |
-| WLX \_ tipo de SAS \_ \_ SCRNSVR \_ tiempo de espera                   | Indica que se debe ejecutar el protector de pantalla debido a la falta de intervención del usuario.                                                                      |
-| WLX \_ \_ tiempo de espera de tipo SAS \_                            | Indica que no se ha recibido ninguna entrada de usuario dentro del período de tiempo de espera especificado.                                                               |
+| WLX \_ SAS TYPE CTRL ALT \_ \_ \_ \_ SUPR                     | Indica que se recibió una secuencia de claves CTRL+ALT+SUPR.                                                                                      |
+| WLX \_ SAS \_ TYPE \_ SC \_ INSERT                         | Indica que se [*ha insertado una tarjeta*](../secgloss/s-gly.md) inteligente en un dispositivo compatible. |
+| WLX \_ SAS \_ TYPE \_ SC \_ REMOVE                         | Indica que se ha quitado una tarjeta inteligente de un dispositivo compatible.                                                                        |
+| WLX \_ SAS \_ TYPE \_ USER \_ LOGOFF                       | Indica que un usuario solicitó el cierre de sesión.                                                                                                       |
+| TIEMPO DE ESPERA \_ DE WLX SAS \_ TYPE \_ SCRNSVR \_                   | Indica que el protector de pantalla debe ejecutarse debido a la falta de entrada del usuario.                                                                      |
+| TIEMPO DE ESPERA \_ DE TIPO DE SAS \_ \_ DE WLX                            | Indica que no se recibió ninguna entrada del usuario dentro del período de tiempo de espera especificado.                                                               |
 
 
 
  
 
-En el caso de los tiempos de espera y cierres de sesión, Winlogon cerrará el cuadro de diálogo después de enviar el mensaje. Este mensaje se envía para que la operación del cuadro de diálogo pueda responder de una manera útil (por ejemplo, al cerrarse si se ha producido un cierre de sesión).
+Para los tiempos de espera y los cierres de sesión, Winlogon cerrará el cuadro de diálogo después de que se haya enviado el mensaje. Este mensaje se envía para que la operación del cuadro de diálogo pueda responder de una manera útil (por ejemplo, cerrando si se ha producido un cierre de sesión).
 
-En el caso de los tiempos de espera de entrada, el cuadro de diálogo se cierra con el tiempo de espera de entrada de Code WLX \_ Dlg \_ \_ .
+Para los tiempos de espera de entrada, el cuadro de diálogo se cierra con el código WLX \_ DLG \_ INPUT \_ TIMEOUT.
 
-En el caso de los tiempos de espera del protector de pantalla, el cuadro de diálogo se cierra con el tiempo de espera del protector de pantalla Code WLX \_ Dlg \_ \_ \_ .
+Para los tiempos de espera del protector de pantalla, el cuadro de diálogo se cierra con el código WLX \_ DLG \_ SCREEN SAVER \_ \_ TIMEOUT.
 
-Para los cierres de sesión, la operación del cuadro de diálogo se cierra con el código WLX \_ Dlg \_ cierre de sesión del usuario \_ .
+Para los cierres de sesión, la operación del cuadro de diálogo se cierra con el código WLX \_ DLG \_ USER \_ LOGOFF.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Inicializando Winlogon](initializing-winlogon.md)
+[Inicialización de Winlogon](initializing-winlogon.md)
 </dt> <dt>
 
 [Estados de Winlogon](winlogon-states.md)
 </dt> <dt>
 
-[Cuadro de diálogo compatible Tiempo de servicio operaciones de salida](supported-dialog-box-service-time-out-operations.md)
+[Operaciones de tiempo de espera de servicio de cuadro de diálogo admitidas](supported-dialog-box-service-time-out-operations.md)
 </dt> <dt>
 
-[Funciones de compatibilidad con Winlogon](authentication-functions.md)
+[Funciones de soporte técnico de Winlogon](authentication-functions.md)
 </dt> </dl>
 
  

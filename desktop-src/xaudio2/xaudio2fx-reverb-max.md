@@ -1,28 +1,28 @@
 ---
-description: Valores máximos para usar con la \_ estructura de parámetros de reverberación XAUDIO2FX \_ .
+description: Valores máximos para su uso con la estructura XAUDIO2FX \_ REVERB \_ PARAMETERS.
 ms.assetid: 190d582d-651f-3174-19e6-375dc63f0540
-title: XAUDIO2FX_REVERB_MAX (Xaudio2fx. h)
+title: XAUDIO2FX_REVERB_MAX (Xaudio2fx.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58e0d7537c4314d3826b30ecdddd0527b93ff151
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d318e7b93536a7cfa4005a691951a4c12782b68b5634e03e65af881186eec86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025933"
 ---
-# <a name="xaudio2fx_reverb_max"></a>XAUDIO2FX \_ reverberación \_ máxima
+# <a name="xaudio2fx_reverb_max"></a>XAUDIO2FX \_ REVERB \_ MAX
 
-Valores máximos para usar con la estructura de [**\_ \_ parámetros de reverberación XAUDIO2FX**](/windows/desktop/api/xaudio2fx/ns-xaudio2fx-xaudio2fx_reverb_parameters) .
+Valores máximos para su uso con la estructura [**XAUDIO2FX \_ REVERB \_ PARAMETERS.**](/windows/desktop/api/xaudio2fx/ns-xaudio2fx-xaudio2fx_reverb_parameters)
 
-<dl> <span id="XAUDIO2FX_REVERB_MAX_WET_DRY_MIX"></span><span id="xaudio2fx_reverb_max_wet_dry_mix"></span>**XAUDIO2FX \_ Reverberación máxima de la \_ \_ \_ \_ mezcla seca mojada** (100,0 f) <span id="XAUDIO2FX_REVERB_MAX_REFLECTIONS_DELAY"></span> <span id="xaudio2fx_reverb_max_reflections_delay"></span> **XAUDIO2FX de \_ reverberación máx. Retardo máximo de \_ \_ reflejos \_** (300) <span id="XAUDIO2FX_REVERB_MAX_REVERB_DELAY"></span> <span id="xaudio2fx_reverb_max_reverb_delay"></span> **XAUDIO2FX \_ reverberación \_ máx. \_ \_ retardo de reverberación** (85) <span id="XAUDIO2FX_REVERB_MAX_POSITION"></span> <span id="xaudio2fx_reverb_max_position"></span> **XAUDIO2FX \_ reverberación \_ \_** máx. máximo (12) <span id="XAUDIO2FX_REVERB_MAX_DIFFUSION"></span> <span id="xaudio2fx_reverb_max_diffusion"></span> **XAUDIO2FX \_ reverberación \_ \_ máxima** de la reverberación (15) XAUDIO2FX de <span id="XAUDIO2FX_REVERB_MAX_LOW_EQ_GAIN"></span> <span id="xaudio2fx_reverb_max_low_eq_gain"></span> **\_ reverberación \_ \_ \_ \_** máx. <span id="XAUDIO2FX_REVERB_MAX_LOW_EQ_CUTOFF"></span> <span id="xaudio2fx_reverb_max_low_eq_cutoff"></span> **\_ \_ \_ \_ \_** <span id="XAUDIO2FX_REVERB_MAX_HIGH_EQ_GAIN"></span> <span id="xaudio2fx_reverb_max_high_eq_gain"></span> **\_ \_ \_ \_ \_** <span id="XAUDIO2FX_REVERB_MAX_HIGH_EQ_CUTOFF"></span> <span id="xaudio2fx_reverb_max_high_eq_cutoff"></span> **\_ \_ \_ \_ \_** <span id="XAUDIO2FX_REVERB_MAX_REAR_DELAY"></span> <span id="xaudio2fx_reverb_max_rear_delay"></span> **\_ \_ \_ \_ retraso trasero de reverberación de XAUDIO2FX** (5) <span id="XAUDIO2FX_REVERB_MAX_ROOM_FILTER_FREQ"></span> <span id="xaudio2fx_reverb_max_room_filter_freq"></span> **XAUDIO2FX \_ reverberación máx. de \_ \_ \_ filtro \_ de sala** (20000.0 f) XAUDIO2FX de <span id="XAUDIO2FX_REVERB_MAX_ROOM_FILTER_MAIN"></span> <span id="xaudio2fx_reverb_max_room_filter_main"></span> **\_ reverberación máx. de filtro de \_ \_ sala \_ \_ principal** (0.0 f) <span id="XAUDIO2FX_REVERB_MAX_ROOM_FILTER_HF"></span> <span id="xaudio2fx_reverb_max_room_filter_hf"></span> **XAUDIO2FX de \_ reverberación \_ máx. filtro de \_ habitación \_ \_ HF** (0,0 f) XAUDIO2FX reverberación máx. <span id="XAUDIO2FX_REVERB_MAX_REFLECTIONS_GAIN"></span> <span id="xaudio2fx_reverb_max_reflections_gain"></span> **\_ \_ \_ \_ ganancia de reflexiones** (20,0 f) <span id="XAUDIO2FX_REVERB_MAX_REVERB_GAIN"></span> <span id="xaudio2fx_reverb_max_reverb_gain"></span> **XAUDIO2FX \_ \_ \_ \_** <span id="XAUDIO2FX_REVERB_MAX_DENSITY"></span> <span id="xaudio2fx_reverb_max_density"></span> **\_ \_ \_** <span id="XAUDIO2FX_REVERB_MAX_ROOM_SIZE"></span> <span id="xaudio2fx_reverb_max_room_size"></span> **\_ \_ \_ \_** reverberación máx.
+<dl> <span id="XAUDIO2FX_REVERB_MAX_WET_DRY_MIX"></span><span id="xaudio2fx_reverb_max_wet_dry_mix"></span>**XAUDIO2FX \_ REVERB \_ MAX \_ DRY \_ \_ MIX** (100.0f) <span id="XAUDIO2FX_REVERB_MAX_REFLECTIONS_DELAY"></span> <span id="xaudio2fx_reverb_max_reflections_delay"></span> **XAUDIO2FX \_ REVERB \_ MAX \_ REFLECTIONS \_ DELAY** (300) <span id="XAUDIO2FX_REVERB_MAX_REVERB_DELAY"></span> <span id="xaudio2fx_reverb_max_reverb_delay"></span> **XAUDIO2FX \_ REVERB \_ MAX \_ REVERB \_ DELAY** (85) <span id="XAUDIO2FX_REVERB_MAX_POSITION"></span> <span id="xaudio2fx_reverb_max_position"></span> **XAUDIO2FX \_ REVERB \_ MAX \_ POSITION** (30) <span id="XAUDIO2FX_REVERB_MAX_DIFFUSION"></span> <span id="xaudio2fx_reverb_max_diffusion"></span> **XAUDIO2FX \_ REVERB MAX \_ \_ LOGAR** (15) XAUDIO2FX REVERB MAX LOW EQ GAIN (10) XAUDIO2FX REVERB MAX LOW EQ GAIN (10) XAUDIO2FX REVERB MAX LOW EQ GAIN (10) XAUDIO2FX REVERB MAX LOW EQ GAIN (10) XAUDIO2FX REVERB MAX LOW EQ GAIN (10) XAUDIO2FX REVERB MAX <span id="XAUDIO2FX_REVERB_MAX_LOW_EQ_GAIN"></span> <span id="xaudio2fx_reverb_max_low_eq_gain"></span> LOW EQ GAIN (10) XAUDIO2FX REVERB MAX LOW EQ GAIN (10) XAUDIO2FX REVERB MAX LOW EQ GAIN (10) XAUDIO2FX REVERB MAX LOW EQ GAIN (10) XAUDIO2FX REVERB MAX LOW EQ GAIN (10) XAUDIO2FX REVERB MAX LOW EQ GAIN (10) XAUDIO2FX REVERB MAX LOW EQ GAIN (10) **XAUDIO2FX \_ REVERB \_ MAX LOW \_ \_ EQ \_** <span id="XAUDIO2FX_REVERB_MAX_LOW_EQ_CUTOFF"></span> <span id="xaudio2fx_reverb_max_low_eq_cutoff"></span> 2) **XAUDIO2FX \_ REVERB \_ MAX LOW EQ \_ \_ \_ CUTOFF** (9) <span id="XAUDIO2FX_REVERB_MAX_HIGH_EQ_GAIN"></span> <span id="xaudio2fx_reverb_max_high_eq_gain"></span> **XAUDIO2FX \_ REVERB \_ MAX HIGH EQ \_ \_ \_ GAIN** (8) <span id="XAUDIO2FX_REVERB_MAX_HIGH_EQ_CUTOFF"></span> <span id="xaudio2fx_reverb_max_high_eq_cutoff"></span> **XAUDIO2FX \_ REVERB \_ MAX HIGH EQ \_ \_ \_ CUTOFF** (14) <span id="XAUDIO2FX_REVERB_MAX_REAR_DELAY"></span> <span id="xaudio2fx_reverb_max_rear_delay"></span> **XAUDIO2FX \_ REVERB \_ MAX REAR \_ \_ DELAY** (5) <span id="XAUDIO2FX_REVERB_MAX_ROOM_FILTER_FREQ"></span> <span id="xaudio2fx_reverb_max_room_filter_freq"></span> **XAUDIO2FX \_ REVERB \_ MAX ROOM FILTER \_ \_ \_ FREQ** (20000.0f) <span id="XAUDIO2FX_REVERB_MAX_ROOM_FILTER_MAIN"></span> <span id="xaudio2fx_reverb_max_room_filter_main"></span> **XAUDIO2FX \_REVERB \_ MAX \_ ROOM \_ FILTER \_ MAIN** (0.0f) <span id="XAUDIO2FX_REVERB_MAX_ROOM_FILTER_HF"></span> <span id="xaudio2fx_reverb_max_room_filter_hf"></span> **XAUDIO2FX \_ REVERB \_ MAX ROOM FILTER FILTER \_ \_ (0.0f) \_** <span id="XAUDIO2FX_REVERB_MAX_REFLECTIONS_GAIN"></span> <span id="xaudio2fx_reverb_max_reflections_gain"></span> **XAUDIO2FX \_ REVERB \_ MAX \_ REFLECTIONS \_ GAIN** (20.0f) XAUDIO2FX RE GANANCIA MÁXIMA <span id="XAUDIO2FX_REVERB_MAX_REVERB_GAIN"></span> <span id="xaudio2fx_reverb_max_reverb_gain"></span> **DE \_ \_ \_ REVERB DEVERB \_** (20,0f) <span id="XAUDIO2FX_REVERB_MAX_DENSITY"></span> <span id="xaudio2fx_reverb_max_density"></span> **XAUDIO2FX \_ REVERB \_ MAX \_ DENSITY** (100.0f) <span id="XAUDIO2FX_REVERB_MAX_ROOM_SIZE"></span> <span id="xaudio2fx_reverb_max_room_size"></span> **XAUDIO2FX \_ REVERB \_ MAX ROOM \_ \_ SIZE** (100.0f)
 </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Windows 10 (XAudio 2.9); Windows 8, Windows Phone 8 (XAudio 2,8); SDK de DirectX (XAudio 2,7)
+Windows 10 (XAudio2.9); Windows 8, Windows Phone 8 (XAudio 2.8); SDK de DirectX (XAudio 2.7)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -30,7 +30,7 @@ Windows 10 (XAudio 2.9); Windows 8, Windows Phone 8 (XAudio 2,8); SDK de DirectX
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Xaudio2fx. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Xaudio2fx.h</dt> </dl> |
 
 
 
@@ -38,7 +38,7 @@ Windows 10 (XAudio 2.9); Windows 8, Windows Phone 8 (XAudio 2,8); SDK de DirectX
 
 <dl> <dt>
 
-[XAudio2:: constantes](constants.md)
+[XAudio2::Constants](constants.md)
 </dt> </dl>
 
  

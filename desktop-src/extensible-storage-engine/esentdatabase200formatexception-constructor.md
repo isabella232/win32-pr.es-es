@@ -52,7 +52,7 @@ Dim instance As New EsentDatabase200FormatException()
 public EsentDatabase200FormatException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

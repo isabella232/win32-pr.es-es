@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: método CimMofDeserializer. Create (String, UInt32)'
+description: 'Más información sobre: Método CimMofDeserializer.Create (String, UInt32)'
 title: Método CimMofDeserializer.Create (String, UInt32) (Microsoft.Management.Infrastructure.Serialization)
 TOCTitle: CimMofDeserializer.Create method (String, UInt32) (Microsoft.Management.Infrastructure.Serialization)
 ms:assetid: M:Microsoft.Management.Infrastructure.Serialization.CimMofDeserializer.Create(System.String,System.UInt32)
@@ -23,19 +23,19 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: c8f9b30fb0b9b06c2f1aaeb1fcfcaf65fb3606d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8a89c628abcc9fa9b8ac54d75493c8a385ef64bddd257bd3dc193b7e04c71aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050673"
 ---
-# <a name="cimmofdeserializercreate-method-string-uint32"></a>Método CimMofDeserializer. Create (String, UInt32)
+# <a name="cimmofdeserializercreate-method-string-uint32"></a>Método CimMofDeserializer.Create (String, UInt32)
 
-Crea e inicializa un deserializador personalizado, basándose en el formato y en los marcadores especificados.
+Crea e inicializa un deserializador personalizado, en función del formato y las marcas especificados.
 
-**Espacio de nombres:**   [Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
-**Ensamblado:**  Microsoft. Management. Infrastructure (en Microsoft.Management.Infrastructure.dll)  
+**Espacio de nombres:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
+**Ensamblado:**  Microsoft.Management.Infrastructure (en Microsoft.Management.Infrastructure.dll)  
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,24 +70,24 @@ Public Shared Function Create (
 #### <a name="parameters"></a>Parámetros
 
   - format  
-    Tipo: [System. String](/dotnet/api/system.string?view=netframework-4.8)
+    Tipo: [System.String](/dotnet/api/system.string?view=netframework-4.8)
     
-    El formato de serialización. Solo se admite "MI_XML".
+    Formato de serialización. Solo se admite MI_XML "MI_XML".
 
 <!-- end list -->
 
   - flags  
-    Tipo: [System. UInt32](/dotnet/api/system.uint32?view=netframework-4.8)
+    Tipo: [System.UInt32](/dotnet/api/system.uint32?view=netframework-4.8)
     
     Marcas de serialización. Debe ser 0.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft. Management. Infrastructure. Serialization. CimMofDeserializer](microsoft.management.infrastructure.serialization.cimmofdeserializer.md)
+Tipo: [Microsoft.Management.Infrastructure.Serialization.CimMofDeserializer](microsoft.management.infrastructure.serialization.cimmofdeserializer.md)
 
-Objeto deserializador que se acaba de crear.
+Objeto deserializador recién creado.
 
 ## <a name="see-also"></a>Vea también
 
-[Clase CimMofDeserializer](microsoft.management.infrastructure.serialization.cimmofdeserializer.md) 
- [Espacio de nombres Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))
+[CimMofDeserializer (clase)](microsoft.management.infrastructure.serialization.cimmofdeserializer.md) 
+ [Espacio de nombres Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))

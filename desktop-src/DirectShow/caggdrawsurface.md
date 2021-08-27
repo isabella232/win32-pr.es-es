@@ -1,7 +1,7 @@
 ---
-description: La clase CAggDrawSurface está en desuso, aunque todavía se proporciona con la biblioteca de clases base de DirectShow para mantener la compatibilidad con versiones anteriores.
+description: La clase CAggDrawSurface está en desuso, aunque todavía se proporciona con la biblioteca de DirectShow base para la compatibilidad con versiones anteriores.
 ms.assetid: 2aa599ce-fe5c-452d-9ea3-a4b170d977f7
-title: Clase CAggDrawSurface
+title: CAggDrawSurface (clase)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: e443064901c921afc15e73b8f7d929527044facf
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9bc785bd0d2d1bdfbb6f9904b94ab710a04d4fec55713a649034e1b26c03a04a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105666103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955554"
 ---
-# <a name="caggdrawsurface-class"></a>Clase CAggDrawSurface
+# <a name="caggdrawsurface-class"></a>CAggDrawSurface (clase)
 
-La clase **CAggDrawSurface** está en desuso, aunque todavía se proporciona con la biblioteca de clases base de DirectShow para mantener la compatibilidad con versiones anteriores.
+La **clase CAggDrawSurface** está en desuso, aunque todavía se proporciona con la biblioteca de DirectShow base para la compatibilidad con versiones anteriores.
 
  
 

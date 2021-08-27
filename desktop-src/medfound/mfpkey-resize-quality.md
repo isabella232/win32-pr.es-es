@@ -1,33 +1,33 @@
 ---
-description: Especifica si se debe usar un algoritmo que genere vídeo de mayor calidad o un algoritmo más rápido.
+description: Especifica si se debe usar un algoritmo que genera vídeo de mayor calidad o un algoritmo más rápido.
 ms.assetid: a6760e7e-7c99-4412-bde5-05958fad89a1
-title: Propiedad MFPKEY_RESIZE_QUALITY (Wmcodecdsp. h)
+title: MFPKEY_RESIZE_QUALITY propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e79ae1cac78b4d836261905afdacaf14fc227fc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e8aeb59935c8fc3462b713967ed2b14a0adfcf731fa1a71fec434b0e07d4309
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973414"
 ---
-# <a name="mfpkey_resize_quality-property"></a>MFPKEY \_ propiedad de calidad de REdimensionamiento \_
+# <a name="mfpkey_resize_quality-property"></a>Propiedad RESIZE QUALITY de MFPKEY \_ \_
 
-Especifica si se debe usar un algoritmo que genere vídeo de mayor calidad o un algoritmo más rápido.
+Especifica si se debe usar un algoritmo que genera vídeo de mayor calidad o un algoritmo más rápido.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
-VT \_ bool
+VT \_ BOOL
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Vídeo de tamaño DSP](videoresizer.md)
+-   [Video Resizer DSP](videoresizer.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Utilice uno de los valores siguientes:
 
@@ -35,8 +35,8 @@ Utilice uno de los valores siguientes:
 
 | Value     | Descripción          |
 |-----------|----------------------|
-| VT \_ falso | Algoritmo más rápido     |
-| VT \_ true  | Vídeo de mayor calidad |
+| VT \_ FALSE | Algoritmo más rápido     |
+| VT \_ TRUE  | Vídeo de mayor calidad |
 
 
 
@@ -48,9 +48,9 @@ Utilice uno de los valores siguientes:
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ Utilice uno de los valores siguientes:
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

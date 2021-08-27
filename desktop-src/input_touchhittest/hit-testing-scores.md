@@ -1,6 +1,6 @@
 ---
-title: Puntuaciones de la prueba de posicionamiento táctil
-description: Las constantes siguientes identifican las puntuaciones de pruebas de posicionamiento posibles para un objeto, con respecto a otros objetos que forman una intersección con el área de contacto táctil.
+title: Puntuaciones de pruebas de impacto táctil
+description: Las constantes siguientes identifican las posibles puntuaciones de prueba de acceso para un objeto, en relación con otros objetos que intersecan con el área de contacto táctil.
 ms.assetid: EACDE6DB-ADBD-4F0C-8C31-7321AB6A73EA
 topic_type:
 - apiref
@@ -13,26 +13,26 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/07/2020
-ms.openlocfilehash: f6590e7d56c1c9d92f0ff20524b6e4222d8655b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 18b321272637f4e6931bdc9115e64f8b0553e90e94d8013147ca7a577bad1eb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118758017"
 ---
-# <a name="touch-hit-testing-scores"></a>Puntuaciones de la prueba de posicionamiento táctil
+# <a name="touch-hit-testing-scores"></a>Puntuaciones de pruebas de impacto táctil
 
-Las constantes siguientes identifican las puntuaciones de pruebas de posicionamiento posibles para un objeto, con respecto a otros objetos que forman una intersección con el área de contacto táctil.
+Las constantes siguientes identifican las posibles puntuaciones de prueba de acceso para un objeto, en relación con otros objetos que intersecan con el área de contacto táctil.
 
 | Constante o valor | Descripción |
 |---|---|
-| **TOUCH_HIT_TESTING_PROXIMITY_CLOSEST** 0X0      | El objeto es el destino más probable.<br/>  |
+| **TOUCH_HIT_TESTING_PROXIMITY_CLOSEST** 0x0      | El objeto es el destino más probable.<br/>  |
 | **TOUCH_HIT_TESTING_PROXIMITY_FARTHEST** 0xFFF | El objeto es el destino menos probable.<br/> |
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
-| Encabezado<br/>                   | Winuser. h |
+| Header<br/>                   | Winuser.h |

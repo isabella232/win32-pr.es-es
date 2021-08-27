@@ -1,23 +1,23 @@
 ---
-description: Cuando un cliente y un servidor finalizan la configuración del contexto de seguridad, se pueden usar las funciones de compatibilidad con mensajes.
+description: Cuando un cliente y un servidor terminan de configurar el contexto de seguridad, se pueden usar funciones de compatibilidad de mensajes.
 ms.assetid: a65054bd-31cb-4842-af59-82cfe799fb70
 title: Firmar un mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36f8151a66120575bfcaeda62955a7f6aa47e8e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b605ccaaa4adfe37dc2bbe5f5c0ed809f0656896e5e85478b0b63740bf6f63e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118918054"
 ---
 # <a name="signing-a-message"></a>Firmar un mensaje
 
-Cuando un cliente y un servidor finalizan la configuración del [*contexto de seguridad*](../secgloss/s-gly.md), se pueden usar las funciones de compatibilidad con mensajes. El cliente y el servidor usan el token de contexto de seguridad creado cuando se estableció la sesión para llamar a las funciones [**MakeSignature**](/windows/desktop/api/Sspi/nf-sspi-makesignature) y [**VerifySignature**](/windows/desktop/api/Sspi/nf-sspi-verifysignature) . El token de contexto se puede usar con [**EncryptMessage (general)**](/windows/win32/api/sspi/nf-sspi-encryptmessage) y [**DecryptMessage (general)**](/windows/win32/api/sspi/nf-sspi-decryptmessage) para la [*privacidad*](../secgloss/p-gly.md)de las comunicaciones.
+Cuando un cliente y un servidor terminan de configurar el contexto [*de seguridad,*](../secgloss/s-gly.md)se pueden usar funciones de compatibilidad de mensajes. El cliente y el servidor usan el token de contexto de seguridad creado cuando se estableció la sesión para llamar a las funciones [**MakeSignature**](/windows/desktop/api/Sspi/nf-sspi-makesignature) [**y VerifySignature.**](/windows/desktop/api/Sspi/nf-sspi-verifysignature) El token de contexto se puede usar [**con EncryptMessage (General)**](/windows/win32/api/sspi/nf-sspi-encryptmessage) y [**DecryptMessage (General)**](/windows/win32/api/sspi/nf-sspi-decryptmessage) para la privacidad de [*las comunicaciones.*](../secgloss/p-gly.md)
 
-En el ejemplo siguiente se muestra el lado cliente que genera un mensaje firmado para enviar al servidor. Antes de llamar a [**MakeSignature**](/windows/desktop/api/Sspi/nf-sspi-makesignature), el cliente llama a [**QueryContextAttributes (general)**](/windows/win32/api/sspi/nf-sspi-querycontextattributesa) con una estructura de [**\_ tamaños SecPkgContext**](/windows/desktop/api/Sspi/ns-sspi-secpkgcontext_sizes) para determinar la longitud del búfer necesario para contener la firma del mensaje. Si el miembro **cbMaxSignature** es cero, el [*paquete de seguridad*](../secgloss/s-gly.md) no admite la firma de mensajes. De lo contrario, este miembro indica el tamaño del búfer que se va a asignar para recibir la firma.
+En el ejemplo siguiente se muestra el lado cliente que genera un mensaje firmado para enviarlo al servidor. Antes de llamar a [**MakeSignature,**](/windows/desktop/api/Sspi/nf-sspi-makesignature)el cliente llama a [**QueryContextAttributes (General)**](/windows/win32/api/sspi/nf-sspi-querycontextattributesa) con una estructura [**SecPkgContext \_ Sizes**](/windows/desktop/api/Sspi/ns-sspi-secpkgcontext_sizes) para determinar la longitud del búfer necesario para contener la firma del mensaje. Si el **miembro cbMaxSignature** es cero, el paquete [*de seguridad*](../secgloss/s-gly.md) no admite la firma de mensajes. De lo contrario, este miembro indica el tamaño del búfer que se va a asignar para recibir la firma.
 
-En el ejemplo se da por supuesto que se inicializa una variable **SecHandle** denominada *phContext* y una estructura de **socket** denominada *s* . Para obtener las declaraciones e iniciaciones de estas variables, vea [usar SSPI con un cliente de Windows Sockets](using-sspi-with-a-windows-sockets-client.md) y [usar SSPI con un servidor de Windows Sockets](using-sspi-with-a-windows-sockets-server.md). En este ejemplo se incluyen las llamadas a funciones en SECUR32. lib, que deben incluirse entre las bibliotecas de vínculos.
+En el ejemplo se supone que se **inicializan** una variable SecHandle denominada *phContext* y una **estructura SOCKET** denominada *s.* Para obtener las declaraciones e iniciaciones de estas variables, vea Using [SSPI with a Windows Sockets Client](using-sspi-with-a-windows-sockets-client.md) y [Using SSPI with a Windows Sockets Server](using-sspi-with-a-windows-sockets-server.md). En este ejemplo se incluyen llamadas a funciones de Secur32.lib, que deben incluirse entre las bibliotecas de vínculos.
 
 
 ```C++
@@ -115,10 +115,10 @@ if(!SendMsg(
 
 
 
-[**MakeSignature**](/windows/desktop/api/Sspi/nf-sspi-makesignature) devuelve **true** si el contexto está configurado para permitir la firma de mensajes y si el descriptor de búfer de entrada tiene el formato correcto. Una vez firmado el mensaje, el mensaje y la firma con sus longitudes se envían al equipo remoto.
+[**MakeSignature devuelve**](/windows/desktop/api/Sspi/nf-sspi-makesignature) **TRUE si** el contexto está configurado para permitir la firma de mensajes y si el descriptor del búfer de entrada tiene el formato correcto. Una vez firmado el mensaje, el mensaje y la firma con sus longitudes se envían al equipo remoto.
 
 > [!Note]  
-> Se envían los datos del contenido de las estructuras [**SecBuffer**](/windows/desktop/api/Sspi/ns-sspi-secbuffer) , no las estructuras **SecBuffer** ni la estructura [**SecBufferDesc**](/windows/desktop/api/Sspi/ns-sspi-secbufferdesc) . La aplicación receptora crea nuevas estructuras **SecBuffer** y una nueva estructura **SecBufferDesc** para comprobar la firma.
+> Se envía el contenido de datos de las [**estructuras SecBuffer,**](/windows/desktop/api/Sspi/ns-sspi-secbuffer) no las propias estructuras **SecBuffer** ni [**la estructura SecBufferDesc.**](/windows/desktop/api/Sspi/ns-sspi-secbufferdesc) La aplicación receptora crea nuevas estructuras **SecBuffer** y una nueva estructura **SecBufferDesc** para comprobar la firma.
 
  
 

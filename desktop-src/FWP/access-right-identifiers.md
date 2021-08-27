@@ -1,6 +1,6 @@
 ---
-title: Acceder a los identificadores de derechos (Fwpmu. h)
-description: La plataforma de filtrado de Windows (WFP) usa los derechos de acceso estándar de Win32 junto con un conjunto de derechos de acceso específicos de WFP integrados en la plataforma de filtrado.
+title: Identificadores de derecho de acceso (Fwpmu.h)
+description: Windows La plataforma de filtrado (WFP) usa los derechos de acceso estándar de Win32 más un conjunto de derechos de acceso específicos de WFP integrados en la plataforma de filtrado.
 ms.assetid: 77f0a1ac-3e99-4cba-a7c6-b8747f35cd0c
 topic_type:
 - apiref
@@ -26,32 +26,32 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8af182a087ade590e278bd3dd1d2bb1a64b5c598
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6deee82b792f525814ac4c841da8a848e4f7b978720755c82f93a9569ba21ca7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951384"
 ---
-# <a name="access-right-identifiers"></a>Acceder a los identificadores de derechos
+# <a name="access-right-identifiers"></a>Identificadores de derecho de acceso
 
-La plataforma de filtrado de Windows (WFP) usa los [derechos de acceso estándar de Win32](/windows/desktop/SecAuthZ/standard-access-rights) junto con un conjunto de derechos de acceso específicos de WFP integrados en la plataforma de filtrado. Estos derechos de acceso se usan para proteger objetos solo en modo de usuario. Los llamadores de modo kernel omiten todas las comprobaciones de acceso.
+Windows La plataforma de filtrado (WFP) usa los derechos de acceso estándar de [Win32](/windows/desktop/SecAuthZ/standard-access-rights) más un conjunto de derechos de acceso específicos de WFP integrados en la plataforma de filtrado. Estos derechos de acceso solo se usan para proteger objetos en modo de usuario. Los llamadores en modo kernel omiten todas las comprobaciones de acceso.
 
-Los identificadores de derechos de acceso específicos de WFP son los siguientes.
+Los identificadores de derecho de acceso específicos de WFP son los siguientes.
 
 <dl> <dt>
 
-<span id="FWPM_ACTRL_ADD"></span><span id="fwpm_actrl_add"></span>**FWPM \_ ACTRL \_ Add**
+<span id="FWPM_ACTRL_ADD"></span><span id="fwpm_actrl_add"></span>**FWPM \_ ACTRL \_ ADD**
 </dt> <dd> <dl> <dt>
 
 
 
-Agregue un objeto al motor de filtrado de base (BFE). Este derecho de acceso es necesario para llamar a las funciones de [**Fwpm \* Add0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmipsectunneladd0) .
+Agregue un objeto al motor de filtrado base (BFE). Este derecho de acceso es necesario para llamar a las [**funciones Fwpm \* Add0.**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmipsectunneladd0)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_ACTRL_ADD_LINK"></span><span id="fwpm_actrl_add_link"></span>**FWPM \_ ACTRL \_ agregar \_ vínculo**
+<span id="FWPM_ACTRL_ADD_LINK"></span><span id="fwpm_actrl_add_link"></span>**FWPM \_ ACTRL \_ ADD \_ LINK**
 </dt> <dd> <dl> <dt>
 
 
@@ -61,132 +61,132 @@ Agregue un objeto al que se hace referencia a través de un vínculo. Por ejempl
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_ACTRL_BEGIN_READ_TXN"></span><span id="fwpm_actrl_begin_read_txn"></span>**FWPM \_ ACTRL \_ Begin \_ Read \_ TXN**
+<span id="FWPM_ACTRL_BEGIN_READ_TXN"></span><span id="fwpm_actrl_begin_read_txn"></span>**FWPM \_ ACTRL \_ BEGIN \_ READ \_ TXN**
 </dt> <dd> <dl> <dt>
 
 
 
-Comienza una transacción de solo lectura. Este derecho de acceso es necesario para llamar a [**FwpmTransactionBegin0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmtransactionbegin0).
+Iniciar una transacción de solo lectura. Este derecho de acceso es necesario para llamar a [**FwpmTransactionBegin0.**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmtransactionbegin0)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_ACTRL_BEGIN_WRITE_TXN"></span><span id="fwpm_actrl_begin_write_txn"></span>**FWPM \_ ACTRL \_ Begin \_ Write \_ TXN**
+<span id="FWPM_ACTRL_BEGIN_WRITE_TXN"></span><span id="fwpm_actrl_begin_write_txn"></span>**FWPM \_ ACTRL \_ BEGIN \_ WRITE \_ TXN**
 </dt> <dd> <dl> <dt>
 
 
 
-Comienza una transacción de lectura/escritura. Este derecho de acceso es necesario para llamar a [**FwpmTransactionBegin0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmtransactionbegin0) para una transacción de lectura/escritura.
+Iniciar una transacción de lectura y escritura. Este derecho de acceso es necesario para llamar a [**FwpmTransactionBegin0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmtransactionbegin0) para una transacción de lectura y escritura.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_ACTRL_CLASSIFY"></span><span id="fwpm_actrl_classify"></span>**\_clasificación de ACTRL de FWPM \_**
+<span id="FWPM_ACTRL_CLASSIFY"></span><span id="fwpm_actrl_classify"></span>**FWPM \_ ACTRL \_ CLASSIFY**
 </dt> <dd> <dl> <dt>
 
 
 
-Clasifique llamada a procedimiento remoto (RPC). Este derecho de acceso es necesario para el tiempo de ejecución de RPC con el fin de aplicar los filtros RPC.
+Clasificar llamada a procedimiento remoto (RPC). El tiempo de ejecución de RPC necesita este derecho de acceso para aplicar filtros RPC.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_ACTRL_ENUM"></span><span id="fwpm_actrl_enum"></span>**FWPM \_ ACTRL ( \_ enumeración)**
+<span id="FWPM_ACTRL_ENUM"></span><span id="fwpm_actrl_enum"></span>**FWPM \_ ACTRL \_ ENUM**
 </dt> <dd> <dl> <dt>
 
 
 
-Enumerar. Este derecho de acceso es necesario para llamar a las funciones de [**Fwpm \* CreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmcalloutcreateenumhandle0) . Para enumerar un objeto, el llamador también necesita el \_ acceso de lectura de FWPM ACTRL \_ al objeto.
+Enumerar. Este derecho de acceso es necesario para llamar a las funciones [**\* CreateEnumHandle0 de Fwpm.**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmcalloutcreateenumhandle0) Para enumerar un objeto, el autor de la llamada también necesita acceso FWPM \_ ACTRL \_ READ al objeto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_ACTRL_OPEN"></span><span id="fwpm_actrl_open"></span>**FWPM \_ ACTRL \_ Open**
+<span id="FWPM_ACTRL_OPEN"></span><span id="fwpm_actrl_open"></span>**FWPM \_ ACTRL \_ OPEN**
 </dt> <dd> <dl> <dt>
 
 
 
-Abra una sesión en el motor de filtro. Este derecho de acceso es necesario para llamar a [**FwpmEngineOpen0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmengineopen0).
+Abra una sesión en el motor de filtros. Este derecho de acceso es necesario para llamar a [**FwpmEngineOpen0.**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmengineopen0)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_ACTRL_READ"></span><span id="fwpm_actrl_read"></span>**FWPM \_ ACTRL \_ lectura**
+<span id="FWPM_ACTRL_READ"></span><span id="fwpm_actrl_read"></span>**FWPM \_ ACTRL \_ READ**
 </dt> <dd> <dl> <dt>
 
 
 
-Lectura. Este derecho de acceso es necesario para llamar a las funciones [**Fwpm \* GetById0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmcalloutgetbyid0) y [**Fwpm \* GetByKey0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmcalloutgetbykey0) .
+Lectura. Este derecho de acceso es necesario para llamar a las funciones [**Fwpm \* GetById0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmcalloutgetbyid0) y [**Fwpm \* GetByKey0.**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmcalloutgetbykey0)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_ACTRL_READ_STATS"></span><span id="fwpm_actrl_read_stats"></span>**FWPM \_ ACTRL \_ leer \_ estadísticas**
+<span id="FWPM_ACTRL_READ_STATS"></span><span id="fwpm_actrl_read_stats"></span>**FWPM \_ ACTRL \_ READ \_ STATS**
 </dt> <dd> <dl> <dt>
 
 
 
-Leer estadísticas. Este derecho de acceso es necesario para llamar a [**IPsecGetStatistics0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecgetstatistics0) y [**IkeextGetStatistics0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ikeextgetstatistics0).
+Leer estadísticas. Este derecho de acceso es necesario para llamar a [**IPsecGetStatistics0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecgetstatistics0) e [**IxtGetStatistics0.**](/windows/desktop/api/Fwpmu/nf-fwpmu-ikeextgetstatistics0)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_ACTRL_SUBSCRIBE"></span><span id="fwpm_actrl_subscribe"></span>**suscripción a FWPM \_ ACTRL \_**
+<span id="FWPM_ACTRL_SUBSCRIBE"></span><span id="fwpm_actrl_subscribe"></span>**FWPM \_ ACTRL \_ SUBSCRIBE**
 </dt> <dd> <dl> <dt>
 
 
 
-Suscríbase. Este derecho de acceso es necesario para llamar a las funciones de [**Fwpm \* SubscribeChanges0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidersubscribechanges0) . Para recibir una notificación de un objeto, un suscriptor también necesita \_ el acceso de lectura de FWPM ACTRL \_ al objeto.
+Suscríbase. Este derecho de acceso es necesario para llamar a las funciones [**\* Fwpm SubscribeChanges0.**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidersubscribechanges0) Para recibir una notificación de un objeto, un suscriptor también necesita acceso FWPM \_ ACTRL \_ READ al objeto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_ACTRL_WRITE"></span><span id="fwpm_actrl_write"></span>**FWPM \_ ACTRL \_ Write**
+<span id="FWPM_ACTRL_WRITE"></span><span id="fwpm_actrl_write"></span>**FWPM \_ ACTRL \_ WRITE**
 </dt> <dd> <dl> <dt>
 
 
 
-Opciones del motor de escritura. Este derecho de acceso es necesario para llamar a [**FwpmEngineSetOption0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmenginesetoption0).
+Opciones del motor de escritura. Este derecho de acceso es necesario para llamar a [**FwpmEngineSetOption0.**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmenginesetoption0)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_GENERIC_READ"></span><span id="fwpm_generic_read"></span>**\_lectura genérica \_ FWPM**
+<span id="FWPM_GENERIC_READ"></span><span id="fwpm_generic_read"></span>**FWPM \_ GENERIC \_ READ**
 </dt> <dd> <dl> <dt>
 
 
 
-STANDARD \_ Rights \_ Read \| FWPM \_ ACTRL \_ Begin \_ Read \_ TXN \| FWPM \_ ACTRL \_ clasifique \| FWPM \_ ACTRL \_ Open \| FWPM \_ ACTRL \_ Read \| FWPM \_ ACTRL \_ Read \_ stats
+DERECHOS \_ ESTÁNDAR READ \_ FWPM ACTRL BEGIN READ \| \_ \_ \_ \_ TXN \| FWPM \_ ACTRL \_ CLASSIFY \| FWPM \_ ACTRL OPEN \_ \| FWPM \_ ACTRL READ \_ \| FWPM ACTRL READ FWPM \_ ACTRL READ \_ \_ STATS
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_GENERIC_EXECUTE"></span><span id="fwpm_generic_execute"></span>**\_ejecución genérica de FWPM \_**
+<span id="FWPM_GENERIC_EXECUTE"></span><span id="fwpm_generic_execute"></span>**FWPM \_ GENERIC \_ EXECUTE**
 </dt> <dd> <dl> <dt>
 
 
 
-\_derechos estándar \_ Execute \| FWPM \_ ACTRL \_ enum \| FWPM \_ ACTRL \_ subscribe
+DERECHOS \_ ESTÁNDAR \_ EXECUTE \| FWPM \_ ACTRL \_ ENUM \| FWPM \_ ACTRL \_ SUBSCRIBE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_GENERIC_WRITE"></span><span id="fwpm_generic_write"></span>**\_escritura genérica de FWPM \_**
+<span id="FWPM_GENERIC_WRITE"></span><span id="fwpm_generic_write"></span>**ESCRITURA GENÉRICA \_ FWPM \_**
 </dt> <dd> <dl> <dt>
 
 
 
-STANDARD \_ Rights \_ Write \| Delete \| FWPM \_ ACTRL \_ agregar \| FWPM \_ ACTRL \_ Add \_ Link \| FWPM \_ ACTRL \_ Begin \_ Write \_ TXN \| FWPM \_ ACTRL \_ Write
+STANDARD \_ RIGHTS \_ WRITE \| DELETE \| FWPM \_ ACTRL \_ ADD \| FWPM \_ ACTRL \_ ADD \_ LINK \| FWPM \_ ACTRL \_ BEGIN \_ WRITE \_ TXN \| FWPM \_ ACTRL \_ WRITE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_GENERIC_ALL"></span><span id="fwpm_generic_all"></span>**FWPM \_ genérico \_ todo**
+<span id="FWPM_GENERIC_ALL"></span><span id="fwpm_generic_all"></span>**FWPM \_ GENERIC \_ ALL**
 </dt> <dd> <dl> <dt>
 
 
 
-\_derechos estándar \_ obligatorios \| FWPM \_ ACTRL \_ agregar \| FWPM \_ ACTRL \_ Add \_ Link \| FWPM \_ ACTRL \_ Begin \_ Read \_ TXN FWPM \| \_ ACTRL \_ Begin \_ Write \_ TXN \| FWPM \_ ACTRL \_ clasifique \| FWPM \_ ACTRL \_ enum \| FWPM \_ ACTRL \_ Open \| FWPM \_ ACTRL \_ Read \| FWPM \_ ACTRL \_ Read \_ stats \| FWPM ACTRL \_ \_ subscribe FWPM ACTRL \| \_ \_ Write
+DERECHOS ESTÁNDAR REQUERIDOS \_ \_ \| FWPM \_ ACTRL ADD \_ \| FWPM \_ ACTRL \_ ADD LINK \_ FWPM ACTRL BEGIN READ \| \_ \_ \_ \_ TXN \| FWPM \_ ACTRL \_ BEGIN WRITE \_ \_ TXN \| FWPM \_ ACTRL CLASSIFY \_ \| FWPM \_ ACTRL \_ ENUM \| FWPM \_ ACTRL OPEN \_ \| FWPM \_ ACTRL READ \_ \| FWPM \_ ACTRL READ STATS \_ \_ \| FWPM \_ ACTRL SUBSCRIBE \_ FWPM ACTRL SUBSCRIBE \| FWPM \_ ACTRL \_ WRITE
 
 
 </dt> </dl> </dd> </dl>
@@ -197,9 +197,9 @@ STANDARD \_ Rights \_ Write \| Delete \| FWPM \_ ACTRL \_ agregar \| FWPM \_ ACT
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Fwpmu.h</dt> </dl> |
 
 
 
@@ -207,7 +207,7 @@ STANDARD \_ Rights \_ Write \| Delete \| FWPM \_ ACTRL \_ agregar \| FWPM \_ ACT
 
 <dl> <dt>
 
-[Modelo de Access Control de plataforma de filtrado de Windows](access-control.md)
+[Windows Modelo de filtrado de Access Control plataforma](access-control.md)
 </dt> <dt>
 
 [Derechos de acceso estándar](/windows/desktop/SecAuthZ/standard-access-rights)

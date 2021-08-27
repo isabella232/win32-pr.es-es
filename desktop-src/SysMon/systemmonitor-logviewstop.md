@@ -1,10 +1,10 @@
 ---
-title: Propiedad SystemMonitor. LogViewStop
-description: Recupera o establece la fecha de finalización utilizada para recuperar los valores de contador de los archivos de registro.
+title: Propiedad SystemMonitor.LogViewStop
+description: Recupera o establece la fecha de finalización utilizada para recuperar valores de contador de los archivos de registro.
 ms.assetid: 5dabfb26-fa33-4fb5-a075-ed8955a56f1e
 keywords:
 - Propiedad LogViewStop SysMon
-- Propiedad LogViewStop SysMon, objeto SystemMonitor
+- Propiedad LogViewStop SysMon , objeto SystemMonitor
 - Objeto SystemMonitor SysMon, propiedad LogViewStop
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b725ee2efba22453d44f1e15fb9ce231b07cdb2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9f8c30305f99e0d9bf66dd0f00dccc7674073e0f7058bca4284411c9d24426b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882079"
 ---
-# <a name="systemmonitorlogviewstop-property"></a>Propiedad SystemMonitor. LogViewStop
+# <a name="systemmonitorlogviewstop-property"></a>Propiedad SystemMonitor.LogViewStop
 
-Recupera o establece la fecha de finalización utilizada para recuperar los valores de contador de los archivos de registro.
+Recupera o establece la fecha de finalización utilizada para recuperar valores de contador de los archivos de registro.
 
 Esta propiedad es de solo lectura.
 
@@ -40,35 +40,35 @@ Property LogViewStop As Date
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Fecha de finalización utilizada para recuperar los valores de contador de los archivos de registro.
+Fecha de finalización utilizada para recuperar valores de contador de los archivos de registro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-SYSMON recupera los valores de contador de los archivos de registro que se encuentran dentro de [**SystemMonitor. LogViewStart**](systemmonitor-logviewstart.md) y las fechas de detención, ambos inclusive.
+SYSMON recupera los valores de contador de los archivos de registro que se encuentran dentro de [**SystemMonitor.LogViewStart**](systemmonitor-logviewstart.md) y las fechas de detenerse, ambos incluidos.
 
-Si no especifica un valor de detención o establece esta propiedad en un valor de fecha posterior a la última fecha incluida en el archivo de registro, SYSMON cambia el valor al valor de fecha más reciente que se encuentra en los archivos de registro.
+Si no especifica un valor de detención o establece esta propiedad en un valor de fecha posterior a la última fecha contenida en el archivo de registro, SYSMON cambia el valor al valor de fecha más reciente que se encuentra en los archivos de registro.
 
-Si esta propiedad se establece en un valor de fecha menor que [**LogViewStart**](systemmonitor-logviewstart.md), SYSMON cambia el valor al valor de **LogViewStart**.
+Si esta propiedad se establece en un valor de fecha menor que [**LogViewStart,**](systemmonitor-logviewstart.md)SYSMON cambia el valor al valor **de LogViewStart**.
 
-Debe establecer la fecha de inicio antes de establecer la fecha de detención; de lo contrario, ambos valores se establecen en Date. MinValue y, si establece las fechas después de establecer [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md), solo se recupera el primer valor de contador del archivo de registro.
+Debe establecer la fecha de inicio antes de establecer la fecha de detenerse. De lo contrario, ambos valores se establecen en Date.MinValue y, si establece las fechas después de establecer [**SystemMonitor.DataSourceType**](systemmonitor-datasourcetype.md), solo se recupera el primer valor de contador del archivo de registro.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**SystemMonitor**](systemmonitor.md)
+[**Systemmonitor**](systemmonitor.md)
 </dt> <dt>
 
 [**SystemMonitor.GetLogViewRange**](systemmonitor-getlogviewrange.md)

@@ -1,19 +1,19 @@
 ---
-description: Formato del objeto de datos. Valor de cadena que es el nombre del formato del portapapeles.
+description: Formato del objeto de datos. Valor de cadena que es el nombre de formato del Portapapeles.
 ms.assetid: D833838E-3B5A-42D5-BA19-0476A3141C9B
-title: System. DataObjectFormat
+title: System.DataObjectFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56e44a9b608f4e55b74b89e54e9b49bee39e3af5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4548bda3415edd63f185eaf2539a2bbe1e44d70c82fe9d0a4ede7f32ed2f750a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970504"
 ---
-# <a name="systemdataobjectformat"></a>System. DataObjectFormat
+# <a name="systemdataobjectformat"></a>System.DataObjectFormat
 
-Formato del objeto de datos. Valor de cadena que es el nombre del formato del portapapeles.
+Formato del objeto de datos. Valor de cadena que es el nombre de formato del Portapapeles.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

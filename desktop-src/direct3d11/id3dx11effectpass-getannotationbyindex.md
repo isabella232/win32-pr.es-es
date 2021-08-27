@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectPass GetAnnotationByIndex (D3dx11effect. h)
-description: Obtiene una anotación por índice. | Método ID3DX11EffectPass GetAnnotationByIndex (D3dx11effect. h)
+title: Método ID3DX11EffectPass GetAnnotationByIndex (D3dx11effect.h)
+description: Obtiene una anotación por índice. | Método ID3DX11EffectPass GetAnnotationByIndex (D3dx11effect.h)
 ms.assetid: 734eeeca-58c2-4f0c-84d1-2898394a03d6
 keywords:
 - Método GetAnnotationByIndex Direct3D 11
-- Método GetAnnotationByIndex Direct3D 11, interfaz ID3DX11EffectPass
-- Interfaz ID3DX11EffectPass Direct3D 11, método GetAnnotationByIndex
+- Método GetAnnotationByIndex Direct3D 11 , interfaz ID3DX11EffectPass
+- Interfaz ID3DX11EffectPass Direct3D 11 , método GetAnnotationByIndex
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afd43a52758e82434a0e0a4161484ea0d4dcc611
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 50cb2f1df512f8726874896b7cb7c2948b6dd33b672a66f7670b75d5520cb6af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046043"
 ---
-# <a name="id3dx11effectpassgetannotationbyindex-method"></a>ID3DX11EffectPass:: GetAnnotationByIndex (método)
+# <a name="id3dx11effectpassgetannotationbyindex-method"></a>Método ID3DX11EffectPass::GetAnnotationByIndex
 
 Obtiene una anotación por índice.
 
@@ -46,7 +46,7 @@ ID3DX11EffectVariable* GetAnnotationByIndex(
 *Index* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Un índice basado en cero.
 
@@ -56,12 +56,12 @@ Un índice basado en cero.
 
 Tipo: **[ **ID3DX11EffectVariable**](id3dx11effectvariable.md)\***
 
-Un puntero a un [**ID3DX11EffectVariable**](id3dx11effectvariable.md).
+Puntero a [**id3DX11EffectVariable**](id3dx11effectvariable.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Un puntero a un [**ID3DX11EffectVariable**](id3dx11effectvariable.md).
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

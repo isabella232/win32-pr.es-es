@@ -1,16 +1,16 @@
 ---
-title: Personalización de la entrega de contenido multimedia
-description: Personalización de la entrega de contenido multimedia
+title: Personalización de la entrega multimedia
+description: Personalización de la entrega multimedia
 ms.assetid: ffd62602-8bfc-4ca7-91fd-c610faa330cd
 keywords:
-- Listas de reproducción de metarchivos de Windows Media, personalizar la entrega de contenido multimedia
-- listas de reproducción, personalización de la entrega de contenido multimedia
-- listas de reproducción de metarchivos, personalización de la entrega de contenido multimedia
-- Listas de reproducción de metarchivos de Windows Media, personalización de entrega multimedia
+- Windows Listas de reproducción de metarchivo multimedia, personalización de la entrega multimedia
+- listas de reproducción, personalización de la entrega multimedia
+- listas de reproducción de metarchivo, personalización de la entrega multimedia
+- Windows Listas de reproducción de metarchivo multimedia, personalización de entrega multimedia
 - listas de reproducción, personalización de entrega multimedia
-- listas de reproducción de metarchivos, personalización de entrega de medios
-- Personalización de la entrega multimedia
-- Personalización de la entrega de contenido multimedia
+- listas de reproducción de metarchivo, personalización de entrega multimedia
+- personalización de entrega multimedia
+- personalizar la entrega multimedia
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -18,33 +18,33 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ddb01364e2ea36214b94d01517f1d3d3b802ba63
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9483f4fc7a068c6f6456a5d170b4be73a9ba31ef85294f9a6939181dff00c826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996015"
 ---
-# <a name="personalizing-media-delivery"></a>Personalización de la entrega de contenido multimedia
+# <a name="personalizing-media-delivery"></a>Personalización de la entrega multimedia
 
-A diferencia de la comunicación unidireccional que difunde contenido idéntico a una audiencia masiva, las tecnologías de Windows Media le proporcionan las herramientas necesarias para usar los datos demográficos para individualizar las difusiones. Con Internet, la comunicación bidireccional a gran escala está disponible fácilmente. Este intercambio dinámico de información permite a los proveedores de contenido conocer su audiencia y responder con presentaciones personalizadas.
+A diferencia de la comunicación unida que difunde contenido idéntico a una audiencia masiva, Windows Media Technologies proporciona las herramientas para usar datos demográficos para individualizar las difusión. Con Internet, la comunicación bidireccional a gran escala está disponible fácilmente. Este intercambio dinámico de información permite a los proveedores de contenido conocer su audiencia y responder con presentaciones personalizadas.
 
-En el ejemplo siguiente, con una empresa ficticia, se muestra cómo se puede personalizar la entrega de contenido de streaming. En este debate se supone que está familiarizado con Active Server páginas (archivos ASP o. asp) y la definición de variables.
+En el ejemplo siguiente, con una empresa ficticia, se muestra cómo se puede personalizar la entrega de contenido de streaming. En esta explicación se supone que está familiarizado con Active Server Pages (archivos ASP o .asp) y la definición de variables.
 
-News Network es una organización de noticias de difusión ficticia que ha ampliado sus operaciones para incluir un sitio Web. La característica principal del sitio es una sección en la que los usuarios pueden crear sus propios newscasts personalizados. En lugar de ver una newscast tradicional que está destinada a una audiencia masiva, un usuario ve un programa de noticias completo que solo contiene temas de interés personal. La siguiente secuencia describe una experiencia de usuario típica.
+News Network es una organización ficticia de noticias de difusión que ha ampliado sus operaciones para incluir un sitio web. La característica principal del sitio es una sección en la que los usuarios pueden crear sus propios noticies personalizados. En lugar de ver un noticiero tradicional dirigido a una audiencia masiva, un usuario ve un programa de noticias completo que solo contiene temas de interés personal. En la secuencia siguiente se describe una experiencia de usuario típica.
 
-1.  Un nuevo usuario va al sitio y hace clic en **crear su newscast personal**.
-2.  Se abre un formulario de preferencias. En este formulario, el usuario responde preguntas relacionadas con las preferencias personales, como historias de noticias favoritas, menos historias de noticias favoritas, aficiones y el método habitual de recibir noticias diarias.
-3.  El usuario envía esta información y unos segundos más tarde ve un newscast personal completo, de 15 minutos, que contiene el contenido del programa, las transiciones y los comerciales. La selección de cada elemento multimedia, incluidos los comerciales, se basa en el perfil de usuario y se realiza de forma automática con los componentes de las tecnologías de Windows Media y las herramientas de Internet estándar.
+1.  Un nuevo usuario va al sitio y hace clic en **Crear su newscast personal.**
+2.  Se abre un formulario de preferencias. En este formulario, el usuario responde a preguntas relacionadas con las preferencias personales, como noticias favoritas, noticias menos favoritas, aficiones y el método habitual de recibir noticias diarias.
+3.  El usuario envía esta información y, unos segundos después, ve un noticiero personal completo de 15 minutos que contiene contenido del programa, transiciones y anuncios comerciales. La selección de cada elemento multimedia, incluidos los anuncios, se basa en el perfil de usuario y se realiza automáticamente con los componentes de Windows Media Technologies y herramientas de Internet estándar.
 
-En la siguiente lista se describe cómo interactúan las diversas herramientas para crear un newscast personalizado.
+En la lista siguiente se describe cómo interactúan las distintas herramientas para crear un noticiero personalizado.
 
-1.  El formulario de preferencias que el usuario rellena es una página de Active Server (ASP) (Choices. asp). Dos componentes de servidor analizan los datos obtenidos del formulario de preferencias. Un componente utiliza la información para consultar una base de datos Microsoft SQL Server de historias de noticias. El otro componente es un servidor de ad que utiliza un conjunto complejo de reglas basadas en los requisitos contractuales y los datos demográficos para programar anuncios adecuados para el usuario en ese momento.
-2.  Las dos bases de datos devuelven distintas partes de una lista de reproducción. La base de datos de casos de noticias devuelve un conjunto de entradas de historias adecuadas y el servidor de ad devuelve un conjunto de entradas comerciales adecuadas.
-3.  Una segunda página ASP (PlayShow. asp) recibe las entradas de la base de datos de noticias y el servidor de anuncios, y las combina con las entradas estándar de abrir, cerrar y transición. A continuación, todas las entradas se colocan según la plantilla proporcionada por PlayShow. asp y la página ASP devuelve al usuario una lista de reproducción.
-4.  El control Embedded Windows Media Player en el equipo del usuario reproduce la lista de reproducción de principio a fin y el usuario ve un newscast personalizado.
+1.  El formulario de preferencias que el usuario rellena es Active Server Page (ASP) (Choices.asp). Dos componentes de servidor analizan los datos obtenidos del formulario de preferencias. Un componente usa la información para consultar una base de Microsoft SQL Server de noticias. El otro componente es un servidor de anuncios que usa un conjunto complejo de reglas basadas en requisitos contractuales y datos demográficos para programar anuncios adecuados para el usuario en ese momento.
+2.  Las dos bases de datos devuelven partes diferentes de una lista de reproducción. La base de datos de noticias devuelve un conjunto de entradas de caso adecuadas y el servidor de anuncios devuelve un conjunto de entradas comerciales adecuadas.
+3.  Una segunda página ASP (PlayShow.asp) recibe las entradas de la base de datos de noticias y el servidor de anuncios, y las combina con entradas estándar de apertura, cierre y transición. Todas las entradas se disponen según la plantilla proporcionada por PlayShow.asp y la página ASP devuelve una lista de reproducción al usuario.
+4.  El control Reproductor de Windows Media integrado en el equipo del usuario reproduce la lista de reproducción de principio a fin y el usuario ve un noticiero personalizado.
 
-El ejemplo siguiente es una parte de un archivo de lista de reproducción que un usuario podría recibir. Se han agregado a ella titulares de anuncios, vínculos de MOREINFO y resúmenes.
+El ejemplo siguiente es una parte de un archivo de lista de reproducción que un usuario podría recibir. Se le han agregado banners de anuncios, vínculos MOREINFO y RESÚMENES.
 
 
 ```XML
@@ -95,24 +95,24 @@ El ejemplo siguiente es una parte de un archivo de lista de reproducción que un
 
 <dl> <dt>
 
-[**Crear listas de reproducción de metarchivo**](creating-metafile-playlists.md)
+[**Creación de listas de reproducción de metarchivo**](creating-metafile-playlists.md)
 </dt> <dt>
 
-[**Listas de reproducción de metarchivos**](metafile-playlists.md)
+[**Listas de reproducción de metarchivo**](metafile-playlists.md)
 </dt> <dt>
 
-[**Usar listas de reproducción de metarchivo**](using-metafile-playlists.md)
+[**Uso de listas de reproducción de metarchivo**](using-metafile-playlists.md)
 </dt> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guía de metarchivo de Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guía de metarchivo multimedia**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

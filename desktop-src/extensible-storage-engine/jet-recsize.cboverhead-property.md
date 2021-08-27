@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_RECSIZE. cbOverhead'
-title: Propiedad JET_RECSIZE. cbOverhead (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: JET_RECSIZE.cbOverhead'
+title: JET_RECSIZE.cbOverhead (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cbOverhead property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.cbOverhead
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.cboverhead(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2e7318428ef4b50a08a05f5021d293ad1d8d78cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2f964956741c814fe0a54831f89b43d7a8ca4c521e179028c447f4c0f8843d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979625"
 ---
-# <a name="jet_recsizecboverhead-property"></a>Propiedad JET_RECSIZE. cbOverhead
+# <a name="jet_recsizecboverhead-property"></a>JET_RECSIZE.cbOverhead, propiedad
 
-Obtiene la sobrecarga de la estructura de registro ESENT para este registro. Esto incluye el tamaño de la clave del registro.
+Obtiene la sobrecarga de la estructura de registros DEENT para este registro. Esto incluye el tamaño de clave del registro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public long cbOverhead { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE estructura](./jet-recsize-structure2.md)
 
-[Miembros de JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE miembros](./jet-recsize-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

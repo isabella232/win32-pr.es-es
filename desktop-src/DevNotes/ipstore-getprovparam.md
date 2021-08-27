@@ -1,7 +1,7 @@
 ---
-description: Diseñado para establecer la información de parámetros especificada.
+description: Diseñado para establecer la información del parámetro especificado.
 ms.assetid: e1a5766f-a303-47f1-a4bb-33f4253a5464
-title: 'IPStore:: GetProvParam (método) (pstore. h)'
+title: Método IPStore::GetProvParam (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: ac45c08f64658d176449d76456e737a1a37dc2b0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de18c4452456ed98f7e5214a33445a0780189f7864d96cfb05e08123a3b42cc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955914"
 ---
-# <a name="ipstoregetprovparam-method"></a>IPStore:: GetProvParam (método)
+# <a name="ipstoregetprovparam-method"></a>Método IPStore::GetProvParam
 
-\[El almacenamiento protegido (pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para las operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en las versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura proporcionada por las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[La Storage protegida (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 \[Este método no se implementa.\]
 
-Diseñado para establecer la información de parámetros especificada. Sin embargo, tenga en cuenta que no se implementa y que siempre producirá un error.
+Diseñado para establecer la información del parámetro especificado. Sin embargo, tenga en cuenta que no se implementa y siempre producirá un error.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,28 +46,28 @@ HRESULT GetProvParam(
 
 <dl> <dt>
 
-*dwParam* \[ de\]
+*dwParam* \[ En\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*pcbData* \[ enuncia\]
+*pwData* \[ out\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*ppbData* \[ enuncia\]
+*ppbData* \[ out\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Reservado.
@@ -76,7 +76,7 @@ Reservado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Siempre se producirá un error en las llamadas a este método.
+Las llamadas a este método siempre producirán un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Siempre se producirá un error en las llamadas a este método.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| Encabezado<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | Archivo DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 

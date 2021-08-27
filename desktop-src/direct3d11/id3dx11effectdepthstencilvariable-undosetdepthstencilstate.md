@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectDepthStencilVariable UndoSetDepthStencilState (D3dx11effect. h)
-description: Revierte un estado de estarcido de profundidad establecido previamente.
+title: Método ID3DX11EffectDepthStencilVariable UndoSetDepthStencilState (D3dx11effect.h)
+description: Revierte un estado de galería de símbolos de profundidad establecido previamente.
 ms.assetid: 558bc777-a520-4235-84d3-db2d9f1ce4b6
 keywords:
 - Método UndoSetDepthStencilState Direct3D 11
-- Método UndoSetDepthStencilState Direct3D 11, interfaz ID3DX11EffectDepthStencilVariable
-- Interfaz ID3DX11EffectDepthStencilVariable Direct3D 11, método UndoSetDepthStencilState
+- Método UndoSetDepthStencilState Direct3D 11 , ID3DX11EffectDepthStencilVariable
+- Id3DX11EffectDepthStencilVariable interface Direct3D 11 , UndoSetDepthStencilState method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bd44d486d2613406617f0534046c54818267dd9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 626c430c268c7c8c63e006bdde9e62a49d139d2212e08d7a3e4cedeea3d31722
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989825"
 ---
-# <a name="id3dx11effectdepthstencilvariableundosetdepthstencilstate-method"></a>ID3DX11EffectDepthStencilVariable:: UndoSetDepthStencilState (método)
+# <a name="id3dx11effectdepthstencilvariableundosetdepthstencilstate-method"></a>Método ID3DX11EffectDepthStencilVariable::UndoSetDepthStencilState
 
-Revierte un estado de estarcido de profundidad establecido previamente.
+Revierte un estado de galería de símbolos de profundidad establecido previamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,9 +46,9 @@ HRESULT UndoSetDepthStencilState(
 *Index* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Índice en una matriz de interfaces de estarcido de profundidad. Si solo hay una interfaz de estarcido de profundidad, use 0.
+Indexe en una matriz de interfaces de galería de símbolos de profundidad. Si solo hay una interfaz de galería de símbolos de profundidad, use 0.
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

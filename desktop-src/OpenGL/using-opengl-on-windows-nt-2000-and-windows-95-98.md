@@ -1,37 +1,37 @@
 ---
-title: Usar OpenGL en Windows
-description: Usar OpenGL en Windows
+title: Uso de OpenGL en Windows
+description: Uso de OpenGL en Windows
 ms.assetid: c1d512d2-ee5d-45ca-8b31-771a30a914cb
 keywords:
-- OpenGL en Windows, acerca de
+- OpenGL on Windows,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 817f1866c4000ec359f55360cc6369d8cfc8e1ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6883ebc03b1354d775f744e8afae5cff353f60fb7a9819573843c98c96de5599
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011913"
 ---
-# <a name="using-opengl-on-windows"></a>Usar OpenGL en Windows
+# <a name="using-opengl-on-windows"></a>Uso de OpenGL en Windows
 
 En los temas siguientes se explica cómo usar varias características específicas de Windows:
 
 -   [Archivos de encabezado](header-files.md)
--   [Tareas de formato de píxeles](pixel-format-tasks.md)
--   [Representar tareas de contexto](rendering-context-tasks.md)
--   [Dibujar con búferes dobles](drawing-with-double-buffers.md)
--   [Dibujar texto en una Double-Buffered ventana de OpenGL](drawing-text-in-a-double-buffered-opengl-window.md)
--   [Imprimir una imagen de OpenGL](printing-an-opengl-image.md)
--   [Copiar una imagen de OpenGL en el portapapeles](copying-an-opengl-image-to-the-clipboard.md)
--   [Estrategias de dibujo de OpenGL multiproceso](multithread-opengl-drawing-strategies.md)
+-   [Tareas de formato de píxel](pixel-format-tasks.md)
+-   [Representación de tareas de contexto](rendering-context-tasks.md)
+-   [Dibujo con búferes dobles](drawing-with-double-buffers.md)
+-   [Dibujar texto en una ventana Double-Buffered OpenGL](drawing-text-in-a-double-buffered-opengl-window.md)
+-   [Impresión de una imagen OpenGL](printing-an-opengl-image.md)
+-   [Copiar una imagen OpenGL en el Portapapeles](copying-an-opengl-image-to-the-clipboard.md)
+-   [Estrategias de dibujo openGL multiproceso](multithread-opengl-drawing-strategies.md)
 -   [Uso de la biblioteca auxiliar](using-the-auxiliary-library.md)
 
-Para obtener información sobre OpenGL ES que se ejecuta en Windows, consulte [MSOPENTECH Angle](https://github.com/MSOpenTech/angle/wiki).
+Para obtener información sobre OpenGL ES que se ejecuta Windows, vea [MSOpenTech ANGLE](https://github.com/MSOpenTech/angle/wiki).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Marca que especifica si la paleta debe ser una paleta de fondo. Si es TRUE, la paleta se selecciona como paleta de fondo.
+description: Marca que especifica si la paleta debe ser una paleta de fondo. Si es TRUE, la paleta se selecciona como una paleta de fondo.
 ms.assetid: 908deebc-c978-4423-8e8b-c9cf0b3a0775
-title: 'Miembro CBaseWindow:: m_bBackground (Winutil. h)'
+title: CBaseWindow::m_bBackground miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fb25972f35c7d264ae56e27e863229c8269b0b22
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 66013b0444ffff585587ba47ba52cb9b5c0946f80d64db1c2442a6e2ac52677a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954624"
 ---
-# <a name="cbasewindowm_bbackground-member"></a>Miembro bBackground CBaseWindow:: m \_
+# <a name="cbasewindowm_bbackground-member"></a>Miembro CBaseWindow::m \_ bBackground
 
-Marca que especifica si la paleta debe ser una paleta de fondo. Si es **true**, la paleta se selecciona como paleta de fondo.
+Marca que especifica si la paleta debe ser una paleta de fondo. Si **es TRUE,** la paleta se selecciona como una paleta de fondo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BYTE m_bBackground;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BYTE m_bBackground;
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

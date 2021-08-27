@@ -1,9 +1,9 @@
 ---
-title: LISTA de reproducción. lista de reproducción
-description: El atributo de lista de reproducción especifica o recupera el objeto de lista de reproducción al que el elemento de lista de reproducción proporciona una interfaz.
+title: PLAYLIST.playlist
+description: El atributo de lista de reproducción especifica o recupera el objeto Playlist al que el elemento PLAYLIST proporciona una interfaz.
 ms.assetid: 4cfbf9d1-8381-4f59-8e6f-9b07f5642c39
 keywords:
-- LISTA de reproducción de Windows Media Player
+- LISTA DE REPRODUCCIÓN.lista Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bb9fde4af32356da79e7c8941b76f51e0714b4f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d7a62fd76fd3a458640c417c2de50af510ffbb96780ed4f91cb2355564df8d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995655"
 ---
-# <a name="playlistplaylist"></a>LISTA de reproducción. lista de reproducción
+# <a name="playlistplaylist"></a>PLAYLIST.playlist
 
-El atributo de **lista** de reproducción especifica o recupera el objeto de **lista de reproducción** al que el elemento de **lista de reproducción** proporciona una interfaz.
+El **atributo de** lista de reproducción especifica o recupera el objeto **Playlist** al que el elemento **PLAYLIST** proporciona una interfaz.
 
 ``` syntax
         elementID.playlist
@@ -29,11 +29,11 @@ El atributo de **lista** de reproducción especifica o recupera el objeto de **l
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un objeto de **lista de reproducción** de lectura/escritura sin valor predeterminado.
+Este atributo es un objeto de lista de reproducción **de** lectura y escritura sin ningún valor predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la lista de reproducción especificada no es válida o no se especifica ningún valor, el elemento de **lista de reproducción** muestra el elemento multimedia que se está reproduciendo.
+Si la lista de reproducción especificada no es válida o no se especifica ningún valor, el elemento **PLAYLIST** muestra el elemento multimedia que se está reproduciendo actualmente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Si la lista de reproducción especificada no es válida o no se especifica ning�
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -49,10 +49,10 @@ Si la lista de reproducción especificada no es válida o no se especifica ning�
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Objeto Playlist**](playlist-object.md)
+[**Objeto de lista de reproducción**](playlist-object.md)
 </dt> </dl>
 
  

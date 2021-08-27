@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. popUp
-description: El atributo popUp especifica un valor que indica si el elemento representa un control popUp o de cuadro de lista.
+title: LISTBOX.popUp
+description: El atributo popUp especifica un valor que indica si el elemento representa un control emergente o de cuadro de lista.
 ms.assetid: b0ade23a-6164-4dd4-b599-43ea1fcd44e4
 keywords:
-- LISTBOX. popUp Windows Media Player
+- ListBOX.popUp Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43d197adbdf2ec27ea6ef7bf04c5c71d15ae923d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8a755a4fc8f5e1451ee118f718a9b6618e75875789faef7318164f7f2add2069
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996445"
 ---
-# <a name="listboxpopup"></a>LISTBOX. popUp
+# <a name="listboxpopup"></a>LISTBOX.popUp
 
-El atributo **popUp** especifica un valor que indica si el elemento representa un control popUp o de cuadro de lista.
+El **atributo popUp** especifica un valor que indica si el elemento representa un control emergente o de cuadro de lista.
 
 ``` syntax
 <ELEMENT popUp="value">
@@ -35,16 +35,16 @@ Este atributo es un **valor booleano** especificado solo en tiempo de diseño.
 
 | Value | Descripción                                |
 |-------|--------------------------------------------|
-| true  | El elemento representa un control Popup.    |
+| true  | El elemento representa un control emergente.    |
 | false | El elemento representa un control de cuadro de lista. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **popup** representa un control de cuadro de lista que se muestra solo cuando es necesario. Es idéntico al elemento **ListBox** excepto el valor predeterminado de este atributo, que cambia el comportamiento de presentación. En el caso de los elementos **ListBox** , el valor predeterminado es false. En el caso de los elementos **emergentes** , el valor predeterminado es true. En lugar de especificar este atributo, el **cuadro de lista** o elemento **emergente** debe usarse en función del comportamiento deseado.
+El **elemento POPUP** representa un control de cuadro de lista que solo se muestra cuando es necesario. Es idéntico al elemento **LISTBOX,** excepto el valor predeterminado de este atributo, que cambia el comportamiento de presentación. Para **los elementos LISTBOX,** el valor predeterminado es false. Para **los elementos POPUP,** el valor predeterminado es true. En lugar de especificar este atributo, se debe usar **el elemento LISTBOX** o **POPUP** según el comportamiento deseado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ El elemento **popup** representa un control de cuadro de lista que se muestra so
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 

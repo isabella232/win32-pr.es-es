@@ -1,9 +1,9 @@
 ---
-title: Función WMDRMCreateProtectedProvider (wmdrmsdk. h)
-description: La función WMDRMCreateProtectedProvider crea un generador de clases que puede crear los demás objetos de las API extendidas del cliente DRM de Windows Media.
+title: Función WMDRMCreateProtectedProvider (Wmdrmsdk.h)
+description: La función WMDRMCreateProtectedProvider crea un generador de clases que puede crear los demás objetos de las API extendidas Windows cliente DRM multimedia.
 ms.assetid: 0882062f-48a2-43bc-8853-a8a3d6bc2f52
 keywords:
-- Función WMDRMCreateProtectedProvider formato de Windows Media
+- Formato multimedia de la función WMDRMCreateProtectedProvider
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1f046de906c7753fa200de5075cf2064721940b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f4b5d71ff1deed01cc10d7342286b443b9f64b1a1c192af575a599a2fc8d8c9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026933"
 ---
-# <a name="wmdrmcreateprotectedprovider-function"></a>WMDRMCreateProtectedProvider función)
+# <a name="wmdrmcreateprotectedprovider-function"></a>Función WMDRMCreateProtectedProvider
 
-La función **WMDRMCreateProtectedProvider** crea un generador de clases que puede crear los demás objetos de las API extendidas del cliente DRM de Windows Media. Esta función requiere una biblioteca de código auxiliar de Microsoft y crea objetos que admiten las características DRM protegidas.
+La **función WMDRMCreateProtectedProvider** crea un generador de clases que puede crear los demás objetos de las API extendidas Windows cliente DRM multimedia. Esta función requiere una biblioteca de código auxiliar de Microsoft y crea objetos que admiten las características de DRM protegidas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,22 +40,22 @@ HRESULT STDMETHODCALLTYPE WMDRMCreateProtectedProvider(
 
 <dl> <dt>
 
-*ppDRMProvider* \[ enuncia\]
+*ppDRMProvider* \[ out\]
 </dt> <dd>
 
-Recibe un puntero a la interfaz [**IWMDRMProvider**](iwmdrmprovider.md) del objeto recién creado.
+Recibe un puntero a la [**interfaz IWMDRMProvider**](iwmdrmprovider.md) del objeto recién creado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -71,7 +71,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

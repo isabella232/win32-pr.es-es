@@ -1,7 +1,7 @@
 ---
 description: El método ReallyFree libera la memoria de los búferes.
 ms.assetid: c5c5d09f-b4f2-4a06-9309-3b2a8b8f8f1f
-title: Método CMemAllocator. ReallyFree (Amfilter. h)
+title: Método CMemAllocator.ReallyFree (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 187807658c8e15ddf530ca6687d860fe826f4208
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ad7ca95fc7a79e97e5aea79da79fb1b161911e5835509f3a2288578e068e0fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954364"
 ---
-# <a name="cmemallocatorreallyfree-method"></a>CMemAllocator. ReallyFree, método
+# <a name="cmemallocatorreallyfree-method"></a>Método CMemAllocator.ReallyFree
 
 El `ReallyFree` método libera la memoria de los búferes.
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase [**CMemAllocator**](cmemallocator.md) contiene memoria hasta que se elimina el objeto.
+La [**clase CMemAllocator**](cmemallocator.md) contiene memoria hasta que se elimina el objeto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ La clase [**CMemAllocator**](cmemallocator.md) contiene memoria hasta que se eli
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ La clase [**CMemAllocator**](cmemallocator.md) contiene memoria hasta que se eli
 
 <dl> <dt>
 
-[**Clase CMemAllocator**](cmemallocator.md)
+[**CMemAllocator (clase)**](cmemallocator.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_RETRIEVECOLUMN. itagSequence'
-title: Propiedad JET_RETRIEVECOLUMN. itagSequence
+description: 'Más información sobre: JET_RETRIEVECOLUMN.itagSequence'
+title: JET_RETRIEVECOLUMN.itagSequence, propiedad
 TOCTitle: 'itagSequence property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN.itagSequence
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retrievecolumn.itagsequence(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 43f2885d5bf467d282ef97172323a8de44980ded
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1e867489d04bff40062607cd1a541f2bba0b6253e9ef92fb938f0323fa1e455
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979447"
 ---
-# <a name="jet_retrievecolumnitagsequence-property"></a>Propiedad JET_RETRIEVECOLUMN. itagSequence
+# <a name="jet_retrievecolumnitagsequence-property"></a>JET_RETRIEVECOLUMN.itagSequence, propiedad
 
-Obtiene o establece el número de secuencia de los valores contenidos en una columna con varios valores. Si el valor de itagSequence es 0, se devuelve el número de instancias de una columna con varios valores en lugar de datos de columna.
+Obtiene o establece el número de secuencia de los valores contenidos en una columna con varios valores. Si itagSequence es 0, se devuelve el número de instancias de una columna con varios valores en lugar de cualquier dato de columna.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int itagSequence { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RETRIEVECOLUMN (clase)](./jet-retrievecolumn-class.md)
+[JET_RETRIEVECOLUMN clase](./jet-retrievecolumn-class.md)
 
-[Miembros de JET_RETRIEVECOLUMN](./jet-retrievecolumn-members.md)
+[JET_RETRIEVECOLUMN miembros](./jet-retrievecolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

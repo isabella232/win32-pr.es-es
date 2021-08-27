@@ -1,6 +1,6 @@
 ---
-title: D3DPERF_GetStatus función)
-description: Determine el estado actual del generador de perfiles desde el programa de destino.
+title: D3DPERF_GetStatus función
+description: Determine el estado actual del profiler desde el programa de destino.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 04/06/2020
@@ -16,16 +16,16 @@ api_location:
 api_name:
 - D3DPERF_GetStatus
 targetos: Windows
-ms.openlocfilehash: 626d56dd449b0a0aa92e85c82dabda119900680d
-ms.sourcegitcommit: 517a888e0370b9ec64c451635f12d60245ff5ae3
+ms.openlocfilehash: 78ff9eda9ab224faf4b2a117f6230e3361664bbfea35d8b2a8484ba7f5ab764a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "104358750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118805750"
 ---
-# <a name="d3dperf_getstatus-function"></a>D3DPERF_GetStatus función)
+# <a name="d3dperf_getstatus-function"></a>D3DPERF_GetStatus función
 
-Determine el estado actual del generador de perfiles desde el programa de destino.
+Determine el estado actual del profiler desde el programa de destino.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,12 +35,12 @@ DWORD WINAPI D3DPERF_GetStatus( void );
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un valor distinto de cero cuando PIX está generando perfiles del programa de destino; de lo contrario, es cero.
+Valor distinto de cero cuando SEV está generando perfiles del programa de destino; de lo contrario, cero.
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Plataforma de destino** | Windows |
-| **Header** | d3d9. h |
-| **Library** | d3d9. lib |
-| **DLL** | d3d9.dll |
+| **Header** | d3d9.h |
+| **Library** | d3d9.lib |
+| **Dll** | d3d9.dll |

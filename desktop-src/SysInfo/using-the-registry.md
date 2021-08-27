@@ -1,23 +1,23 @@
 ---
-description: En el código de ejemplo siguiente se muestra cómo utilizar las funciones del registro.
+description: En el código de ejemplo siguiente se muestra cómo usar las funciones del Registro.
 ms.assetid: 9ec22204-2e2f-4470-83ca-df0f2b52c6d5
-title: Usar el registro
+title: Uso del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34aeeeb758bfc9faace483124ecb1b77f99a1683
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c4e3096c58528432e59accedfa59da5b2b06500c10019635a82458ffd31e86a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118884257"
 ---
-# <a name="using-the-registry"></a>Usar el registro
+# <a name="using-the-registry"></a>Uso del Registro
 
-En el código de ejemplo siguiente se muestra cómo utilizar las funciones del registro.
+En el código de ejemplo siguiente se muestra cómo usar las funciones del Registro.
 
--   [Enumerar subclaves del registro](enumerating-registry-subkeys.md)
--   [Eliminar una clave con subclaves](deleting-a-key-with-subkeys.md)
--   [Determinar el tamaño del registro](determining-the-registry-size.md)
+-   [Enumeración de subclaves del Registro](enumerating-registry-subkeys.md)
+-   [Eliminación de una clave con subclaves](deleting-a-key-with-subkeys.md)
+-   [Determinar el tamaño del Registro](determining-the-registry-size.md)
 
  
 

@@ -1,19 +1,19 @@
 ---
-description: 'Indica la parte horizontal de la relación de aspecto de píxeles. La parte Y de XX: YY. Por ejemplo, 11 es la parte Y de 10:11.'
+description: Indica la parte horizontal de la relación de aspecto de píxeles. Parte Y de XX:YY. Por ejemplo, 11 es la parte Y de 10:11 .
 ms.assetid: b463b51e-3e00-4f80-a7b9-f5ff5432b7ef
-title: System. video. VerticalAspectRatio
+title: System.Video.VerticalAspectRatio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f6c5f762b9a196b0f13fd89d846c3034db32724
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41d61a617aee2afd6939ac4d39ee96e662f8dd6e4ade95d47c3ab9f9c9ca1964
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033173"
 ---
-# <a name="systemvideoverticalaspectratio"></a>System. video. VerticalAspectRatio
+# <a name="systemvideoverticalaspectratio"></a>System.Video.VerticalAspectRatio
 
-Indica la parte horizontal de la relación de aspecto de píxeles. La parte Y de XX: YY. Por ejemplo, 11 es la parte Y de 10:11.
+Indica la parte horizontal de la relación de aspecto de píxeles. Parte Y de XX:YY. Por ejemplo, 11 es la parte Y de 10:11 .
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

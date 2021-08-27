@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec3BaryCentric (D3DX10Math.h): devuelve un punto en coordenadas baricéntricas, mediante los vectores 3D especificados.'
+description: 'Función D3DXVec3BaryCentric (D3DX10Math.h): devuelve un punto en coordenadas centradas en Barycentric, mediante los vectores 3D especificados.'
 ms.assetid: 572e151d-8044-480e-92b2-3f973d92d03e
 title: Función D3DXVec3BaryCentric (D3DX10Math.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: e350bde6d1b898088ccb9b68d10a9a346935bfd5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a0911a3e9e5bf0d1aa1df4d09f0b1fbcda0db2bc0bfe0c4c4b31da0f47c62999
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990645"
 ---
 # <a name="d3dxvec3barycentric-function-d3dx10mathh"></a>Función D3DXVec3BaryCentric (D3DX10Math.h)
 
-Devuelve un punto en coordenadas baricéntricas, utilizando los vectores 3D especificados.
+Devuelve un punto en coordenadas centradas en Barycentric, utilizando los vectores 3D especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ D3DXVECTOR3* D3DXVec3BaryCentric(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
+Puntero a [**D3DXVECTOR3 que**](d3d10-d3dxvector3.md) es el resultado de la operación.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Factor de ponderación. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*g* \[ in\]
+*g* \[ en\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -102,7 +102,7 @@ Factor de ponderación. Vea la sección Comentarios.
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a una estructura D3DXVECTOR3 en coordenadas centradas en Bary.
+Puntero a una estructura D3DXVECTOR3 en coordenadas centradas en Barycentric.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -133,7 +133,7 @@ Las coordenadas centradas en barras definen un punto dentro de un triángulo en 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

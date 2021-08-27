@@ -1,9 +1,9 @@
 ---
-title: BG_FILE_PROGRESS estructura (Deliveryoptimization. h)
-description: La estructura BG_FILE_PROGRESS proporciona información de progreso relacionada con archivos, como el número de bytes transferidos.
+title: BG_FILE_PROGRESS estructura (Deliveryoptimization.h)
+description: La BG_FILE_PROGRESS proporciona información de progreso relacionada con el archivo, como el número de bytes transferidos.
 ms.assetid: 49BDFEEE-D7BF-489A-8BC1-951549B06252
 keywords:
-- Estructura de BG_FILE_PROGRESS
+- BG_FILE_PROGRESS estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 93507b8aeefa9c0ea16f70f67e221ecc4218427f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd0bec0f21fb652ccc5c8d543f04816468fff9bc28db74a68a1d05c072a895a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047253"
 ---
-# <a name="bg_file_progress-structure"></a>Estructura de BG_FILE_PROGRESS
+# <a name="bg_file_progress-structure"></a>BG_FILE_PROGRESS estructura
 
-La estructura **BG_FILE_PROGRESS** proporciona información de progreso relacionada con archivos, como el número de bytes transferidos.
+La **BG_FILE_PROGRESS** proporciona información de progreso relacionada con el archivo, como el número de bytes transferidos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,9 +46,9 @@ typedef struct _BG_FILE_PROGRESS {
 **BytesTotal**
 </dt> <dd>
 
-Tamaño del archivo en bytes. Si no puede determinar el tamaño del archivo (por ejemplo, si el archivo o el servidor no existen), el valor es DO_UNKNOWN_FILE_SIZE.
+Tamaño del archivo en bytes. Si DO no puede determinar el tamaño del archivo (por ejemplo, si el archivo o el servidor no existe), el valor se DO_UNKNOWN_FILE_SIZE.
 
-Si va a descargar intervalos de un archivo, **bytesTotal** refleja el número total de bytes que desea descargar del archivo.
+Si va a descargar intervalos desde un archivo, **BytesTotal** refleja el número total de bytes que desea descargar del archivo.
 
 </dd> <dt>
 
@@ -62,15 +62,15 @@ Número de bytes transferidos.
 **Completado**
 </dt> <dd>
 
-En el caso de las descargas, el valor es **true** si el archivo está disponible para el usuario; de lo contrario, el valor es **false**. Los archivos están disponibles para el usuario después de llamar al método [**IBackgroundCopyJob:: Complete**](ibackgroundcopyjob-complete.md) . Si el método **Complete** genera un error transitorio, los archivos procesados antes de que se produjera el error están disponibles para el usuario; los demás no lo son. Use el miembro **completado** para determinar si el archivo está disponible para el usuario cuando se produce un error de **finalización** .
+En el caso de las descargas, el valor **es TRUE** si el archivo está disponible para el usuario; de lo contrario, el valor es **FALSE.** Los archivos están disponibles para el usuario después de llamar al [**método IBackgroundCopyJob::Complete.**](ibackgroundcopyjob-complete.md) Si el **método Complete** genera un error transitorio, los archivos procesados antes de que se produjo el error estarán disponibles para el usuario. los demás no lo son. Use el **miembro Completed** para determinar si el archivo está disponible para el usuario cuando se produce un error **en Complete.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar si transfirió el archivo, puede:
+Para determinar si do ha transferido el archivo, puede hacer lo siguiente:
 
--   Compare **BytesTransferred** con **bytesTotal**.
+-   Compare **BytesTransferred** con **BytesTotal.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,9 +78,9 @@ Para determinar si transfirió el archivo, puede:
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Para determinar si transfirió el archivo, puede:
 [**BG_JOB_PROGRESS**](bg-job-progress.md)
 </dt> <dt>
 
-[**IBackgroundCopyFile:: GetProgress**](ibackgroundcopyfile-getprogress-method.md)
+[**IBackgroundCopyFile::GetProgress**](ibackgroundcopyfile-getprogress-method.md)
 </dt> </dl>
 
  

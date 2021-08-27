@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectGroup GetTechniqueByIndex (D3dx11effect. h)
-description: Obtiene una técnica por índice. | Método ID3DX11EffectGroup GetTechniqueByIndex (D3dx11effect. h)
+title: Método ID3DX11EffectGroup GetTechniqueByIndex (D3dx11effect.h)
+description: Obtenga una técnica por índice. | Método ID3DX11EffectGroup GetTechniqueByIndex (D3dx11effect.h)
 ms.assetid: b0962957-20d1-4ec6-9f8e-acc7a62c5f4e
 keywords:
 - Método GetTechniqueByIndex Direct3D 11
-- Método GetTechniqueByIndex Direct3D 11, interfaz ID3DX11EffectGroup
-- Interfaz ID3DX11EffectGroup Direct3D 11, método GetTechniqueByIndex
+- Método GetTechniqueByIndex Direct3D 11 , interfaz ID3DX11EffectGroup
+- Interfaz ID3DX11EffectGroup Direct3D 11 , método GetTechniqueByIndex
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe42d71886ae93bdaff7ac956554ff9a97fc9f8f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 654b090b3481a915557569e0801e75b8ad089c66cfca4a893d6f865345088171
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046293"
 ---
-# <a name="id3dx11effectgroupgettechniquebyindex-method"></a>ID3DX11EffectGroup:: GetTechniqueByIndex (método)
+# <a name="id3dx11effectgroupgettechniquebyindex-method"></a>Método ID3DX11EffectGroup::GetTechniqueByIndex
 
-Obtiene una técnica por índice.
+Obtenga una técnica por índice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ ID3DX11EffectTechnique* GetTechniqueByIndex(
 *Index* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Un índice basado en cero.
 
@@ -56,12 +56,12 @@ Un índice basado en cero.
 
 Tipo: **[ **ID3DX11EffectTechnique**](id3dx11effecttechnique.md)\***
 
-Un puntero a un [**ID3DX11EffectTechnique**](id3dx11effecttechnique.md).
+Puntero a [**id3DX11EffectTechnique.**](id3dx11effecttechnique.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Un puntero a un [**ID3DX11EffectTechnique**](id3dx11effecttechnique.md).
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

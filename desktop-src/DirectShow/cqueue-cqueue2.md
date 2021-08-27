@@ -1,7 +1,7 @@
 ---
-description: Este método del constructor CQueue. CQueue (Wxutil. h) no tiene parámetros.
+description: Este método del constructor CQueue.CQueue (Wxutil.h) no tiene parámetros.
 ms.assetid: 5ad31d31-7c1c-4877-bc39-218859e4137c
-title: 'Constructor CQueue. CQueue (Wxutil. h): no hay parámetros'
+title: 'Constructor CQueue.CQueue (Wxutil.h): sin parámetros'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: afdb22dc265989e923ab285a190753fd63c6842d
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: e0364b952897f26eec6d2164ba1300e4abf9e67bc8530ba78c03da8d066aac49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106187902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954004"
 ---
-# <a name="cqueuecqueue-constructor-wxutilh---no-parameters"></a>Constructor CQueue. CQueue (Wxutil. h): no hay parámetros
+# <a name="cqueuecqueue-constructor-wxutilh---no-parameters"></a>Constructor CQueue.CQueue (Wxutil.h): sin parámetros
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ CQueue();
 
 Este constructor no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tamaño de la cola se establece en el valor predeterminado \_ QUEUESIZE.
+El tamaño de la cola se establece en DEFAULT \_ QUEUESIZE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,14 +50,14 @@ El tamaño de la cola se establece en el valor predeterminado \_ QUEUESIZE.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado  | Wxutil. h (incluir streams. h)                                                                                   |
-| Biblioteca | Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
+| Encabezado  | Wxutil.h (incluir Secuencias.h)                                                                                   |
+| Biblioteca | Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Clase CQueue**](cqueue.md)
+[**CQueue (clase)**](cqueue.md)
 </dt> </dl>
 
  

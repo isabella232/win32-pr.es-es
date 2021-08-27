@@ -1,7 +1,7 @@
 ---
-description: El método GetPinCount recupera el número de clavijas en el filtro.
+description: El método GetPinCount recupera el número de pines del filtro.
 ms.assetid: 29039ada-fccd-4890-b36b-3dd5c0bbdc3e
-title: Método CTransformFilter. GetPinCount (Transfrm. h)
+title: Método CTransformFilter.GetPinCount (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ba1d2046bf7be31a9c0d3f3d43b13aeeffd1f76b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac9269149d7f2bbc95e811515f70aa279a4aafd8cf34b2d5077ed69019b86c2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953604"
 ---
-# <a name="ctransformfiltergetpincount-method"></a>CTransformFilter. GetPinCount, método
+# <a name="ctransformfiltergetpincount-method"></a>Método CTransformFilter.GetPinCount
 
-El `GetPinCount` método recupera el número de clavijas en el filtro.
+El `GetPinCount` método recupera el número de pines del filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve 2.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método invalida el método [**CBaseFilter:: GetPinCount**](cbasefilter-getpincount.md) . La clase **CTransformFilter** admite exactamente un PIN de entrada y un PIN de salida.
+Este método invalida el [**método CBaseFilter::GetPinCount.**](cbasefilter-getpincount.md) La **clase CTransformFilter** admite exactamente un pin de entrada y un pin de salida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método invalida el método [**CBaseFilter:: GetPinCount**](cbasefilter-get
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método invalida el método [**CBaseFilter:: GetPinCount**](cbasefilter-get
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

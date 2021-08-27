@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicenseManagement MonitorLicenseAcquisition (wmdrmsdk. h)
+title: Método IWMDRMLicenseManagement MonitorLicenseAcquisition (Wmdrmsdk.h)
 description: El método MonitorLicenseAcquisition inicia la supervisión de un proceso de adquisición de licencias.
 ms.assetid: 725cd51a-a50b-4ff5-a880-7f551f6dba8f
 keywords:
-- Método MonitorLicenseAcquisition formato de Windows Media
-- Método MonitorLicenseAcquisition formato de Windows Media, interfaz IWMDRMLicenseManagement
-- Interfaz IWMDRMLicenseManagement formato de Windows Media, método MonitorLicenseAcquisition
+- Método MonitorLicenseAcquisition windows Media Format
+- Método MonitorLicenseAcquisition windows Media Format , IWMDRMLicenseManagement (interfaz)
+- IWMDRMLicenseManagement interface windows Media Format , MonitorLicenseAcquisition method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25171d36a9d360f7c8eb77211c580c4f7676618f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b7ab3188425decca614ae104989fdc2f07930ac0de463e492be630a3fb54556e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027583"
 ---
-# <a name="iwmdrmlicensemanagementmonitorlicenseacquisition-method"></a>IWMDRMLicenseManagement:: MonitorLicenseAcquisition (método)
+# <a name="iwmdrmlicensemanagementmonitorlicenseacquisition-method"></a>IWMDRMLicenseManagement::MonitorLicenseAcquisition (método)
 
-El método **MonitorLicenseAcquisition** inicia la supervisión de un proceso de adquisición de licencias.
+El **método MonitorLicenseAcquisition** inicia la supervisión de un proceso de adquisición de licencias.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,43 +46,43 @@ HRESULT MonitorLicenseAcquisition(
 
 <dl> <dt>
 
-*bstrKID* \[ de\]
+*bstrKID* \[ En\]
 </dt> <dd>
 
-IDENTIFICADOR de clave (KID) de la licencia adquirida.
+Identificador de clave (KID) de la licencia que se va a adquirir.
 
 </dd> <dt>
 
-*bstrHeader* \[ de\]
+*bstrHeader* \[ En\]
 </dt> <dd>
 
-Encabezado de contenido usado en la llamada al método [**AcquireLicense**](iwmdrmlicensemanagement-acquirelicense.md) .
+Encabezado de contenido que se usó en la llamada al [**método AcquireLicense.**](iwmdrmlicensemanagement-acquirelicense.md)
 
 </dd> <dt>
 
-*bstrActions* \[ de\]
+*bstrActions* \[ En\]
 </dt> <dd>
 
-Cadena que contiene las acciones solicitadas en la llamada al método **AcquireLicense** .
+Cadena que contiene las acciones solicitadas en la llamada al **método AcquireLicense.**
 
 </dd> <dt>
 
-*ppunkCancelationCookie* \[ enuncia\]
+*piqueCancelationCookie* \[ out\]
 </dt> <dd>
 
-Puntero que recibe un puntero a la interfaz **IUnknown** de un objeto que identifica esta llamada asincrónica. Este puntero de interfaz se puede usar para cancelar la llamada asincrónica llamando al método [**IWMDRMEventGenerator:: CancelAsyncOperation**](iwmdrmeventgenerator-cancelasyncoperation.md) .
+Puntero que recibe un puntero a la **interfaz IUnknown** de un objeto que identifica esta llamada asincrónica. Este puntero de interfaz se puede usar para cancelar la llamada asincrónica llamando al método [**IWMDRMEventGenerator::CancelAsyncOperation.**](iwmdrmeventgenerator-cancelasyncoperation.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -98,8 +98,8 @@ Ninguno.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -107,7 +107,7 @@ Ninguno.
 
 <dl> <dt>
 
-[**Interfaz IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)
+[**IWMDRMLicenseManagement (interfaz)**](iwmdrmlicensemanagement.md)
 </dt> </dl>
 
  

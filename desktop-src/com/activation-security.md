@@ -4,20 +4,20 @@ description: Seguridad de activación
 ms.assetid: 0c13d473-a9f9-40b5-951b-731eab736fe6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e5b01b918666e911d96ed16528ba5045103f445
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 4be436997889edd14704d5fa7646db689bba405825c1e8bcf9d021ea850ae70f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104488366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048913"
 ---
 # <a name="activation-security"></a>Seguridad de activación
 
-La seguridad de activación (también denominada seguridad de inicio) ayuda a controlar quién puede iniciar un servidor. El administrador de control de servicios (SCM) de un equipo determinado aplica automáticamente la seguridad de activación. Tras recibir una solicitud de un cliente para activar un objeto (tal y como se describe en [funciones auxiliares de creación de instancias](instance-creation-helper-functions.md)), el SCM comprueba la solicitud con la información de seguridad de activación almacenada en el registro. (La seguridad de activación también se comprueba para las activaciones del mismo equipo).
+La seguridad de activación (también denominada seguridad de inicio) ayuda a controlar quién puede iniciar un servidor. El administrador de control de servicios (SCM) de un equipo determinado aplica automáticamente la seguridad de activación. Tras recibir una solicitud de un cliente para activar un objeto (como se describe en Funciones auxiliares de creación de [instancias),](instance-creation-helper-functions.md)el SCM comprueba la solicitud con la información de seguridad de activación almacenada en su registro. (La seguridad de activación también se comprueba para las activaciones en el mismo equipo).
 
-Al determinar la identidad del cliente, la activación examina la marca de Cloaking establecida en la llamada del cliente a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). Si se establece la marca de Cloaking (para Cloaking dinámico o estático), se utiliza el token de subproceso, si está presente, para determinar la identidad del cliente. Si no se establece ningún Cloaking, se utiliza el token de proceso en lugar del token de subproceso.
+Al determinar la identidad del cliente, la activación examina la marca de verificación establecida en la llamada del cliente a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). Si se establece la marca de protección (para la estática o dinámica), se usa el token de subproceso, si está presente, para determinar la identidad del cliente. Si no se establece ningún ajuste, se usa el token de proceso en lugar del token de subproceso.
 
-Para obtener más información sobre la seguridad de activación, consulte [**COAUTHINFO**](/windows/desktop/api/wtypesbase/ns-wtypesbase-coauthinfo) y [**COSERVERINFO**](/windows/win32/api/objidlbase/ns-objidlbase-coserverinfo).
+Para obtener más información sobre la seguridad de activación, [**vea COAUTHINFO**](/windows/desktop/api/wtypesbase/ns-wtypesbase-coauthinfo) y [**COSERVERINFO**](/windows/win32/api/objidlbase/ns-objidlbase-coserverinfo).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -26,6 +26,6 @@ Para obtener más información sobre la seguridad de activación, consulte [**CO
 [Seguridad en COM](security-in-com.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

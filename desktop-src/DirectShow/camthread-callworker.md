@@ -1,7 +1,7 @@
 ---
 description: El método CallWorker señala el subproceso con una solicitud.
 ms.assetid: 51431688-bf55-4778-afc0-91b6ab336aa3
-title: Método CAMThread. CallWorker (Wxutil. h)
+title: Método CAMThread.CallWorker (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7410fbee4ece729d1579f525731bddaceded1153
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f7ffee6a55191f8f41d7121f3801a4a6392f9869803ded40ed891817146828f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955404"
 ---
-# <a name="camthreadcallworker-method"></a>CAMThread. CallWorker, método
+# <a name="camthreadcallworker-method"></a>Método CAMThread.CallWorker
 
 El `CallWorker` método señala el subproceso con una solicitud.
 
@@ -45,7 +45,7 @@ DWORD CallWorker(
 *dwParam* 
 </dt> <dd>
 
-Parámetro de solicitud. La clase derivada define el significado del parámetro.
+Parámetro de solicitud. La clase derivada define el significado del parámetro .
 
 </dd> </dl>
 
@@ -53,13 +53,13 @@ Parámetro de solicitud. La clase derivada define el significado del parámetro.
 
 Devuelve un valor definido por la clase derivada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los métodos [**CAMThread:: GetRequest**](camthread-getrequest.md) y [**CAMThread:: CheckRequest**](camthread-checkrequest.md) recuperan el valor del parámetro *dwParam* . El método GetRequest se bloquea hasta que `CallWorker` se llama a.
+Los [**métodos CAMThread::GetRequest**](camthread-getrequest.md) y [**CAMThread::CheckRequest**](camthread-checkrequest.md) recuperan el valor del *parámetro dwParam.* El método GetRequest se bloquea hasta `CallWorker` que se llama a .
 
-Este método se bloquea hasta que se llama al método [**CAMThread:: reply**](camthread-reply.md) . El valor devuelto es el parámetro dado a reply.
+Este método se bloquea hasta que se llama al método [**CAMThread::Reply.**](camthread-reply.md) El valor devuelto es el parámetro dado a Reply.
 
-Este método contiene el bloqueo [**CAMThread:: m \_ AccessLock**](camthread-m-accesslock.md) para serializar las solicitudes. Por consiguiente, llame a este método desde el propio subproceso o desde cualquier función miembro que se ejecute en el contexto del subproceso.
+Este método contiene el bloqueo [**DE BLOQUEO DE ACCESO DE SUBPROCESO::m \_**](camthread-m-accesslock.md) para serializar las solicitudes. Por lo tanto, llame a este método desde el propio subproceso o desde cualquier función miembro que se ejecute en el contexto del subproceso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Este método contiene el bloqueo [**CAMThread:: m \_ AccessLock**](camthread-m-a
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Este método contiene el bloqueo [**CAMThread:: m \_ AccessLock**](camthread-m-a
 
 <dl> <dt>
 
-[**Clase CAMThread**](camthread.md)
+[**CLASE CAMThread**](camthread.md)
 </dt> </dl>
 
  

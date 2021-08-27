@@ -1,21 +1,21 @@
 ---
 description: En el ejemplo siguiente se muestra un mensaje cifrado que se recibe y se descifra.
 ms.assetid: 4858a43b-3084-4a03-8b6f-4a788cdb3dd5
-title: Descifrado de un mensaje
+title: Descifrar un mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3598025564e607bf25241def4171eba84aa1dbbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca3b01b37b82c3b8c2ca551e2b8113ff171668b2bb95b41fa9b8363e5b3ae4af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008643"
 ---
-# <a name="decrypting-a-message"></a>Descifrado de un mensaje
+# <a name="decrypting-a-message"></a>Descifrar un mensaje
 
 En el ejemplo siguiente se muestra un mensaje cifrado que se recibe y se descifra.
 
-En el ejemplo se da por supuesto que se inicializa una variable **SecHandle** denominada `phContext` y una estructura de **socket** denominada `s` . Para obtener las declaraciones e iniciaciones de estas variables, vea [usar SSPI con un cliente de Windows Sockets](using-sspi-with-a-windows-sockets-client.md) y [usar SSPI con un servidor de Windows Sockets](using-sspi-with-a-windows-sockets-server.md). En este ejemplo se incluyen las llamadas a funciones en SECUR32. lib, que deben incluirse entre las bibliotecas de vínculos.
+En el ejemplo se supone que se **inicializan una** variable SecHandle denominada y una `phContext` estructura **SOCKET** `s` denominada . Para obtener las declaraciones e iniciaciones de estas variables, vea Using [SSPI with a Windows Sockets Client](using-sspi-with-a-windows-sockets-client.md) y [Using SSPI with a Windows Sockets Server](using-sspi-with-a-windows-sockets-server.md). En este ejemplo se incluyen llamadas a funciones de Secur32.lib, que deben incluirse entre las bibliotecas de vínculos.
 
 
 ```C++

@@ -3,7 +3,7 @@ title: CDM_GETFILEPATH mensaje (Commdlg.h)
 description: Recupera la ruta de acceso y el nombre de archivo del archivo seleccionado en un cuadro de diálogo Abrir o Guardar como de estilo explorador.
 ms.assetid: fad8c5e2-9838-45a8-8c51-4326c989d939
 keywords:
-- CDM_GETFILEPATH cuadros de diálogo del mensaje
+- CDM_GETFILEPATH de diálogo de mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d531999757d46e127b73584adf1b563e64ea25b
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 67ac18880ef62df1d228c006f0bc33fcf4932cbb976419ee29464e49828d8173
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786338"
 ---
 # <a name="cdm_getfilepath-message"></a>Mensaje \_ GETFILEPATH de CDM
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el Cuadro [de diálogo de elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
+\[A partir Windows Vista, **los** cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md).  Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
-Recupera la ruta de acceso y el nombre  de archivo del archivo seleccionado en un cuadro de diálogo Abrir o Guardar **como** de estilo explorador. El cuadro de diálogo se debe haber creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
+Recupera la ruta de acceso y el nombre de archivo del archivo seleccionado en un cuadro de diálogo Abrir **o** Guardar **como** de estilo explorador. El cuadro de diálogo debe haber sido creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
 
 
 ```C++
@@ -72,11 +72,11 @@ int CommDlg_OpenSave_GetFilePath(hwnd, lparam, wparam);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluye Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 
 
 

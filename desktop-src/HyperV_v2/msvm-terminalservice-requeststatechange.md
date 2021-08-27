@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_TerminalService clase : solicita un cambio de estado.'
+description: 'Método RequestStateChange de la clase Msvm_TerminalService: solicita un cambio de estado.'
 ms.assetid: 5bba12da-fde0-40b6-869c-6e6822adba3b
 title: Método RequestStateChange de la Msvm_TerminalService clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 816bde8dfc58a94e15fb0d96a9915e7490c4e42b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dcaf35f7d91d56ceb70c01a96d310275fb69fbe344eb8e86164ef9e5e7d417e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949677"
 ---
 # <a name="requeststatechange-method-of-the-msvm_terminalservice-class"></a>Método RequestStateChange de la clase TerminalService de Msvm \_
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -106,7 +106,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecimiento** (11)
+**Restablecer** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -155,7 +155,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -165,7 +165,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

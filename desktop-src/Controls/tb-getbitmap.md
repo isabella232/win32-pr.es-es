@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETBITMAP (commctrl. h)
+title: TB_GETBITMAP mensaje (Commctrl.h)
 description: Recupera el índice del mapa de bits asociado a un botón en una barra de herramientas.
 ms.assetid: 64878cca-7d71-48ad-b2ed-d2bdc3067592
 keywords:
-- TB_GETBITMAP controles de mensajes de Windows
+- TB_GETBITMAP controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 771073b67b1421a5d9bda9d162bc234400c85885
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ebb976d206de0cdbd0234763f92ac0417cc974355a3371d04476d7969e1f763c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957914"
 ---
-# <a name="tb_getbitmap-message"></a>\_Mensaje GETBITMAP TB
+# <a name="tb_getbitmap-message"></a>Mensaje \_ GETBITMAP de TB
 
 Recupera el índice del mapa de bits asociado a un botón en una barra de herramientas.
 
@@ -47,11 +47,11 @@ Devuelve el índice del mapa de bits si se realiza correctamente o cero en caso 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

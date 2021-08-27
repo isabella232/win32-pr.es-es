@@ -1,6 +1,6 @@
 ---
-title: 'Métodos de recopilación TextureCubeArray:: TextureCubeArray'
-description: 'Devuelve los componentes rojo de cuatro valores textura que se utilizarían en una operación de filtrado bilineal. | Métodos de recopilación TextureCubeArray:: TextureCubeArray'
+title: Métodos TextureCubeArray::TextureCubeArray Gather
+description: Devuelve los componentes rojos de cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Métodos TextureCubeArray::TextureCubeArray Gather
 ms.assetid: B459E455-EF22-46A7-ADFE-322ED808F83E
 keywords:
 - Recopilación de métodos HLSL
@@ -12,18 +12,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 59a7dfd9170b93e1c253e7558cea7d8fb9b2f8c3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8700205ed1cb7c0356a93d6766efd8d9e3cc2fe63838b25bc5665ea194b2e1ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786472"
 ---
-# <a name="texturecubearraygather-methods"></a>TextureCubeArray:: Gather (métodos)
+# <a name="texturecubearraygather-methods"></a>Métodos TextureCubeArray::Gather
 
-Devuelve los componentes rojo de cuatro valores textura que se utilizarían en una operación de filtrado bilineal.
+Devuelve los componentes rojos de cuatro valores de texel que se usarían en una operación de filtrado bi lineal.
 
-Consulte la documentación de [gather4](./gather4--sm5---asm-.md) para obtener más información que describe la instrucción DXBC subyacente.
+Consulte la documentación de [gather4 para](./gather4--sm5---asm-.md) obtener más información sobre la instrucción DXBC subyacente.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -31,12 +31,12 @@ Consulte la documentación de [gather4](./gather4--sm5---asm-.md) para obtener m
 
 | Método                                                          | Descripción                                                                                                                                |
 |:----------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Recopilar (S, float)**](dx-graphics-hlsl-to-gather.md)           | Devuelve los componentes rojo de cuatro valores textura (solo componente rojo) que se utilizarían en una operación de filtrado bilineal. <br/>           |
-| [**Gather (S, Float, uint)**](tcubearray-gather-s-float-uint-.md) | Devuelve los componentes rojo de cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, junto con el estado de asignación de mosaicos.<br/> |
+| [**Gather(S,float)**](dx-graphics-hlsl-to-gather.md)           | Devuelve los componentes rojos de cuatro valores de texel (solo componente rojo) que se usarían en una operación de filtrado bi lineal. <br/>           |
+| [**Gather(S,float,uint)**](tcubearray-gather-s-float-uint-.md) | Devuelve los componentes rojos de cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

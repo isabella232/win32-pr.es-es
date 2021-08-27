@@ -1,7 +1,7 @@
 ---
 description: El método GetWindowWidth recupera el ancho actual de la ventana.
 ms.assetid: 0975f480-3ad8-41bd-96ec-ec088940ec3e
-title: Método CBaseWindow. GetWindowWidth (Winutil. h)
+title: Método CBaseWindow.GetWindowWidth (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4450b87573a53db9fb477a2b589909fa5b90192e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a1ceff9b33b4dff86ee87a534ad6984a4d730c3907d6c2c148c78c86ec7cef78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954734"
 ---
-# <a name="cbasewindowgetwindowwidth-method"></a>CBaseWindow. GetWindowWidth, método
+# <a name="cbasewindowgetwindowwidth-method"></a>Método CBaseWindow.GetWindowWidth
 
 El `GetWindowWidth` método recupera el ancho actual de la ventana.
 
@@ -50,8 +50,8 @@ Devuelve el ancho de la ventana, en píxeles.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el ancho de la ventana, en píxeles.
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

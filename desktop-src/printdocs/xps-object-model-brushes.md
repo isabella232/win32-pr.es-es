@@ -1,44 +1,44 @@
 ---
-description: En este tema se describe cómo usar diferentes tipos de pinceles en un OM XPS.
+description: En este tema se describe cómo usar distintos tipos de pinceles en una OM XPS.
 ms.assetid: 392ca1d5-283e-4eed-ae21-6477c469014d
-title: Pinceles de XPS OM
+title: Pinceles XPS OM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0557757bfaf81156b2015525d35897cfb042e44b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbca4174c406e0d2fda63d932ee85f2f3c3123b7255b43f77a2365bf0f05e2f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971134"
 ---
-# <a name="xps-om-brushes"></a>Pinceles de XPS OM
+# <a name="xps-om-brushes"></a>Pinceles XPS OM
 
-En este tema se describe cómo usar diferentes tipos de pinceles en un OM XPS.
+En este tema se describe cómo usar distintos tipos de pinceles en una OM XPS.
 
-Los pinceles del OM XPS se basan en la [**interfaz IXpsOMBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsombrush) e incluyen lo siguiente:
+Los pinceles de XPS OM se basan en la [**interfaz IXpsOMBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsombrush) e incluyen lo siguiente:
 
 <dl> Pinceles de mosaico
 
--   [**Interfaz IXpsOMTileBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomtilebrush)
--   [**Interfaz IXpsOMSolidColorBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomsolidcolorbrush)
--   [**Interfaz IXpsOMVisualBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomvisualbrush)
--   [**Interfaz IXpsOMImageBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomimagebrush)
+-   [**IXpsOMTileBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomtilebrush)
+-   [**IXpsOMSolidColorBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomsolidcolorbrush)
+-   [**IXpsOMVisualBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomvisualbrush)
+-   [**IXpsOMImageBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomimagebrush)
 
   
 Pinceles de degradado
 
--   [**Interfaz IXpsOMGradientBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientbrush)
--   [**Interfaz IXpsOMLinearGradientBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomlineargradientbrush)
--   [**Interfaz IXpsOMRadialGradientBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomradialgradientbrush)
+-   [**IXpsOMGradientBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientbrush)
+-   [**IXpsOMLinearGradientBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomlineargradientbrush)
+-   [**IXpsOMRadialGradientBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomradialgradientbrush)
 
   
 </dl>
 
 ## <a name="code-examples"></a>Ejemplos de código
 
-### <a name="create-a-solid-color-brush"></a>Crear un pincel de color sólido
+### <a name="create-a-solid-color-brush"></a>Creación de un pincel de color sólido
 
-En el ejemplo de código siguiente se crea un pincel de color sólido a partir de un valor de color que se define en el código.
+En el ejemplo de código siguiente se crea un pincel de color sólido a partir de un valor de color definido en el código.
 
 
 ```C++
@@ -67,7 +67,7 @@ En el ejemplo de código siguiente se crea un pincel de color sólido a partir d
 
 
 
-### <a name="create-a-visual-brush"></a>Crear un pincel visual
+### <a name="create-a-visual-brush"></a>Creación de un pincel visual
 
 En el ejemplo de código siguiente se crea un pincel a partir de un objeto visual.
 
@@ -106,9 +106,9 @@ En el ejemplo de código siguiente se crea un pincel a partir de un objeto visua
 
 
 
-### <a name="create-an-image-brush"></a>Crear un pincel de imagen
+### <a name="create-an-image-brush"></a>Creación de un pincel de imagen
 
-Consulte el ejemplo de código en [colocar imágenes en un OM XPS](place-images-in-an-xps-om.md).
+Consulte el ejemplo de código en [Colocar imágenes en un OM XPS.](place-images-in-an-xps-om.md)
 
 ### <a name="create-a-linear-gradient-brush"></a>Creación de un pincel de degradado lineal
 
@@ -177,28 +177,28 @@ En el ejemplo de código siguiente se crea un pincel de degradado lineal. El deg
 
 <dl> <dt>
 
-[**Interfaz IXpsOMGradientBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientbrush)
+[**IXpsOMGradientBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientbrush)
 </dt> <dt>
 
-[**Interfaz IXpsOMImageBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomimagebrush)
+[**IXpsOMImageBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomimagebrush)
 </dt> <dt>
 
-[**Interfaz IXpsOMLinearGradientBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomlineargradientbrush)
+[**IXpsOMLinearGradientBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomlineargradientbrush)
 </dt> <dt>
 
-[**Interfaz IXpsOMRadialGradientBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomradialgradientbrush)
+[**IXpsOMRadialGradientBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomradialgradientbrush)
 </dt> <dt>
 
-[**Interfaz IXpsOMSolidColorBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomsolidcolorbrush)
+[**IXpsOMSolidColorBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomsolidcolorbrush)
 </dt> <dt>
 
-[**Interfaz IXpsOMTileBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomtilebrush)
+[**IXpsOMTileBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomtilebrush)
 </dt> <dt>
 
-[**Interfaz IXpsOMVisualBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomvisualbrush)
+[**IXpsOMVisualBrush (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomvisualbrush)
 </dt> <dt>
 
-[**\_color XPS**](xps-color.md)
+[**XPS \_ COLOR**](xps-color.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)
