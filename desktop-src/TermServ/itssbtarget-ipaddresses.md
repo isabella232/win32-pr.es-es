@@ -31,12 +31,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2ff06e60f125590154a17cb7467deae3611a617b684e9068439c9e15609d8fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21afd8d2349bfef37dcc39b684c3f5b837728f79
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118351262"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988278"
 ---
 # <a name="itssbtargetipaddresses-property"></a>Propiedad ITsSbTarget::IpAddresses
 
@@ -44,7 +44,7 @@ Recupera o especifica las direcciones IP externas del destino.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -65,46 +65,26 @@ HRESULT get_IpAddresses(
 
 Puntero a una matriz de [**estructuras \_ connectionPoint de TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) que reciben las direcciones IP externas del destino.
 
-Puntero a una variable **DWORD** que contiene el número de direcciones IP externas en *el parámetro sockaddr.* Si se desconoce el número de direcciones, pase *sockaddr* como **NULL.** El método devolverá el número de estructuras [**de \_ ConnectionPoint de TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) necesarias para asignar en la matriz a la que apunta el *parámetro sockaddr.*
+Puntero a una variable **DWORD** que contiene el número de direcciones IP externas en *el parámetro sockaddr.* Si se desconoce el número de direcciones, pase *sockaddr* como **NULL.** El método devolverá el número de estructuras [**de \_ ConnectionPoint de TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) necesarias para asignar en la matriz a la que apunta *el parámetro sockaddr.*
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad se conocía anteriormente como **TargetExternalIpAddresses** en Windows Server 2008 R2.
 
-Si se desconoce el número de direcciones IP externas, puede llamar a este método con *sockaddr* establecido en **NULL.** A continuación, el método devolverá, en el parámetro *numAddresses,* el número de estructuras [**\_ connectionPoint de TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) necesarias para recibir todas las direcciones IP externas. Asigne la matriz para *sockaddr* en función de este número y, a continuación, llame al método de nuevo, estableciendo *sockaddr* en la matriz recién asignada y *numAddresses* en el número devuelto por la primera llamada.
+Si se desconoce el número de direcciones IP externas, puede llamar a este método con *sockaddr* establecido en **NULL.** A continuación, el método devolverá, en el parámetro *numAddresses,* el número de estructuras [**de \_ ConnectionPoint de TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) necesarias para recibir todas las direcciones IP externas. Asigne la matriz para *sockaddr* en función de este número y, a continuación, llame al método de nuevo, estableciendo *sockaddr* en la matriz recién asignada y *numAddresses* en el número devuelto por la primera llamada.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Cliente mínimo compatible<br/></td>
-<td>No se admite ninguno<br/></td>
-</tr>
-<tr class="even">
-<td>Servidor mínimo compatible<br/></td>
-<td>Windows Server 2012<br/></td>
-</tr>
-<tr class="odd">
-<td>Idl<br/></td>
-<td><dl> <dt>Sbtsv.idl</dt> </dl></td>
-</tr>
-<tr class="even">
-<td>IID<br/></td>
-<td>IID_ITsSbTarget se define como:
-<ul>
-<li>16616ECC-272D-411D-B324-126893033856</li>
-<li>e85e10ea-db0b-4752-b456-5fd5840901c0 en Windows Server 2008 R2</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|--------|-------|
+| Cliente mínimo compatible<br /> | No se admite ninguno<br /> | 
+| Servidor mínimo compatible<br /> | Windows Server 2012<br /> | 
+| IDL<br /> | <dl><dt>Sbtsv.idl</dt></dl> | 
+| IID<br /> | IID_ITsSbTarget se define como:<ul><li>16616ECC-272D-411D-B324-126893033856</li><li>e85e10ea-db0b-4752-b456-5fd5840901c0 en Windows Server 2008 R2</li></ul> | 
+
 
 
 
@@ -118,7 +98,7 @@ Si se desconoce el número de direcciones IP externas, puede llamar a este méto
 [**ITsSbTarget**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget)
 </dt> <dt>
 
-[**Punto de conexión TSSD \_**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint)
+[**Punto de conexión de TSSD \_**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint)
 </dt> </dl>
 
  

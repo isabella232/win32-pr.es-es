@@ -1,36 +1,36 @@
 ---
-description: Los servicios de servidor de certificados, un servicio que se ejecuta en un sistema operativo Windows Server, reciben solicitudes de certificados digitales nuevos a través de transportes como RPC o HTTP.
+description: Servicios de certificados, un servicio que se ejecuta en un sistema operativo de servidor Windows, recibe solicitudes de nuevos certificados digitales a través de transportes como RPC o HTTP.
 ms.assetid: 4c0098be-6b1b-4ce0-b3a0-942c1290b5b4
 title: Servicios de servidor de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1a3f25972f98a79a208719eb2bcb08de07d7894
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aaac2e1ee01b588beedbe2e632e52ef41459a885782a7975e460182f8a211bef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126855"
 ---
 # <a name="certificate-services"></a>Servicios de servidor de certificados
 
-Los servicios de servidor de [*certificados*](../secgloss/c-gly.md), un servicio que se ejecuta en un sistema operativo Windows Server, reciben solicitudes de certificados digitales nuevos a través de transportes como RPC o http. Comprueba cada solicitud según las directivas personalizadas o específicas del sitio, establece las propiedades opcionales de un certificado que se va a emitir y emite el certificado. Los servicios de Certificate Server permiten a los administradores agregar elementos a una [*lista de revocación de certificados*](../secgloss/c-gly.md) (CRL) y publicar CRL firmadas con regularidad.
+[*Servicios de*](../secgloss/c-gly.md)certificados , un servicio que se ejecuta en un sistema operativo de servidor Windows, recibe solicitudes de nuevos certificados digitales a través de transportes como RPC o HTTP. Comprueba cada solicitud con directivas personalizadas o específicas del sitio, establece propiedades opcionales para que se emita un certificado y emite el certificado. Servicios de certificados permite a los administradores agregar elementos a una lista de [*revocación*](../secgloss/c-gly.md) de certificados (CRL) y publicar CRL firmadas de forma periódica.
 
-Los servicios de Certificate Server incluyen interfaces programables para crear compatibilidad con transportes, directivas y propiedades y formatos de certificado adicionales.
+Los servicios de certificado incluyen interfaces programables para crear compatibilidad con transportes adicionales, directivas y propiedades y formatos de certificado.
 
-En Windows Server 2003, los servicios de servidor de certificados 2,0 se pueden instalar desde el **Panel de control** ; para ello, haga clic en **Agregar o quitar programas** y, a continuación, haga clic en **Agregar o quitar componentes de Windows** para instalar o desinstalar servicios de Certificate Server.
+En Windows Server 2003, Certificate Services 2.0 se puede instalar desde  **Panel de control** haciendo clic en Agregar o quitar programas y, a continuación, haciendo clic en Agregar o quitar **componentes de Windows** para instalar o desinstalar Servicios de certificados.
 
-Los conceptos de servicios de Certificate Server se detallan en las secciones siguientes. El contenido está pensado para ayudarle a desarrollar aplicaciones que interactúen con los servicios de Certificate Server.
+Los conceptos de Servicios de certificados se detallan en las secciones siguientes. El contenido está pensado para ayudarle a desarrollar aplicaciones que interactuarán con Servicios de certificados.
 
 
 
-| Contenido                                                                                                                                                           | Sección                                                                    |
+| Content                                                                                                                                                           | Sección                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| Descripción de las características de servicios de Certificate Server                                                                                                               | [Características de servicios de Certificate Server](certificate-services-features.md)         |
-| Información general sobre la arquitectura de servicios de certificados                                                                                                                     | [Arquitectura de servicios de certificados](certificate-services-architecture.md) |
-| Relación entre un certificado, el sujeto del certificado y la [ *clave pública* del sujeto](../secgloss/p-gly.md) | [Certificados y claves públicas](certificates-and-public-keys.md)           |
-| Información acerca de las propiedades de la solicitud de certificado                                                                                                              | [Instrucciones de solicitud de certificado](certificate-request-guidelines.md)       |
-| Detalles de cómo procesa un certificado los servicios de Certificate Server                                                                                                 | [Acerca de los certificados](about-certificates.md)                               |
-| Descripción del proceso de renovación de la [*entidad de certificación*](../secgloss/c-gly.md)        | [Renovación de la entidad de certificación](certification-authority-renewal.md)     |
+| Descripción de las características de Servicios de certificados                                                                                                               | [Características de Servicios de certificados](certificate-services-features.md)         |
+| Introducción a la arquitectura de Servicios de certificados                                                                                                                     | [Arquitectura de Servicios de certificados](certificate-services-architecture.md) |
+| Relación entre un certificado, el asunto del certificado y la clave pública [ *del sujeto*](../secgloss/p-gly.md) | [Certificados y claves públicas](certificates-and-public-keys.md)           |
+| Información sobre las propiedades de solicitud de certificado                                                                                                              | [Directrices de solicitud de certificado](certificate-request-guidelines.md)       |
+| Detalles de cómo certificate services procesa un certificado                                                                                                 | [Acerca de los certificados](about-certificates.md)                               |
+| Descripción del proceso de [*renovación de la entidad de*](../secgloss/c-gly.md) certificación        | [Renovación de la entidad de certificación](certification-authority-renewal.md)     |
 
 
 
@@ -40,13 +40,13 @@ También se incluyen los siguientes temas útiles adicionales.
 
 
 
-| Contenido                                                                                                                                             | Sección                                                              |
+| Content                                                                                                                                             | Sección                                                              |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| Documentación sobre el control de inscripción de certificados, que proporciona servicios para crear solicitudes de certificado, incluidas las solicitudes de usuarios de tarjetas inteligentes. | [Control de inscripción de certificados](certificate-enrollment-control.md) |
-| Documentación de la interfaz de programación de aplicaciones criptográficas de Microsoft, que proporciona servicios de seguridad basados en criptografía.                | [Cryptography Essentials](cryptography-essentials.md)               |
-| Documentación de la tarjeta inteligente, que proporciona servicios para el desarrollo y el uso de sistemas de tarjeta inteligente.                                                   | [Tarjeta inteligente](../secauthn/smart-card-authentication.md)                     |
-| Propiedades de nombre de certificados y solicitudes de certificado.                                                                                           | [Propiedades de nombre](name-properties.md)                               |
-| Lista y descripciones de las propiedades del certificado [*X. 509*](../secgloss/x-gly.md) .                                  | [Propiedades de certificado](certificate-properties.md)                 |
+| Documentación sobre el control de inscripción de certificados, que proporciona servicios para crear solicitudes de certificado, incluidas las solicitudes para los usuarios de tarjetas inteligentes. | [Control de inscripción de certificados](certificate-enrollment-control.md) |
+| Documentación sobre la interfaz de programación de aplicaciones criptográficas de Microsoft, que proporciona servicios de seguridad basados en criptografía.                | [Cryptography Essentials](cryptography-essentials.md)               |
+| Documentación sobre tarjeta inteligente, que proporciona servicios para desarrollar y usar sistemas de tarjetas inteligentes.                                                   | [Tarjeta inteligente](../secauthn/smart-card-authentication.md)                     |
+| Asigne un nombre a las propiedades de los certificados y las solicitudes de certificado.                                                                                           | [Propiedades de nombre](name-properties.md)                               |
+| Lista y descripciones de las propiedades del certificado [*X.509.*](../secgloss/x-gly.md)                                  | [Propiedades del certificado](certificate-properties.md)                 |
 
 
 

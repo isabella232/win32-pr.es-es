@@ -1,9 +1,9 @@
 ---
 title: Elemento STARTMARKER
-description: El elemento STARTMARKER especifica un marcador desde el que Windows Media Player comenzará a representar la secuencia.
+description: El elemento STARTMARKER especifica un marcador desde el que Reproductor de Windows Media comenzará a representar la secuencia.
 ms.assetid: b5c2422b-a59c-43f7-bac3-5722418192dc
 keywords:
-- Elemento STARTMARKER Media Player Windows
+- Elemento STARTMARKER Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4c3b3afbc3ab4a922d17f6a0269ed89c22f4dfeb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2fa80da249edc4b9e3ab7d8796bc6ff135cb7cfb2b19a1cb11216ebe4a9c122c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123045"
 ---
 # <a name="startmarker-element"></a>Elemento STARTMARKER
 
-El elemento **STARTMARKER** especifica un marcador desde el que Windows Media Player comenzará a representar la secuencia.
+El **elemento STARTMARKER** especifica un marcador a partir del Reproductor de Windows Media comenzará a representar la secuencia.
 
 ``` syntax
 <STARTMARKER
@@ -33,13 +33,13 @@ El elemento **STARTMARKER** especifica un marcador desde el que Windows Media Pl
 
 ## <a name="attributes"></a>Atributos
 
-**NÚMEROS**
+**Número**
 
-El número de un marcador numérico en el índice. El valor predeterminado es el principio del contenido a petición o la posición actual en un flujo en tiempo real.
+Número de un marcador numérico en el índice. El valor predeterminado es el principio del contenido a petición o la posición actual en una secuencia en tiempo real.
 
 **NOMBRE**
 
-Nombre de un marcador con nombre en el índice. El valor predeterminado es el principio del contenido a petición o la posición actual en un flujo en tiempo real.
+Nombre de un marcador con nombre en el índice. El valor predeterminado es el principio del contenido a petición o la posición actual en una secuencia en tiempo real.
 
 ## <a name="parentchild-elements"></a>Elementos primarios y secundarios
 
@@ -47,7 +47,7 @@ Nombre de un marcador con nombre en el índice. El valor predeterminado es el pr
 
 | Hierarchy       | Elementos           |
 |-----------------|--------------------|
-| Elementos primarios | **entrada**, **ref** |
+| Elementos primarios | **ENTRY**, **REF** |
 | Elementos secundarios  | Ninguno               |
 
 
@@ -56,15 +56,15 @@ Nombre de un marcador con nombre en el índice. El valor predeterminado es el pr
 
 ## <a name="remarks"></a>Observaciones
 
-Este elemento especifica el marcador desde el que Windows Media Player va a comenzar a representar la secuencia definida en el elemento primario **entry** o **ref** .
+Este elemento especifica el marcador desde el que Reproductor de Windows Media va a empezar a representar la secuencia definida en el elemento **primario ENTRY** o **REF.**
 
-**Note**
+**Nota**
 
-Use este elemento con el atributo **número** o **nombre** , pero no ambos.
+Use este elemento con el atributo **NUMBER** **o NAME,** pero no con ambos.
 
-Un elemento **STARTMARKER** definido dentro de un elemento **ref** tiene prioridad sobre un elemento **STARTMARKER** definido en el elemento de **entrada** primario del elemento **ref** . Un elemento **STARTMARKER** también tiene prioridad sobre un elemento **STARTTIME** .
+Un **elemento STARTMARKER** definido dentro de un **elemento REF** tiene prioridad  sobre un **elemento STARTMARKER** definido dentro del elemento PRIMARIO ENTRY del **elemento REF.** Un **elemento STARTMARKER** también tiene prioridad sobre **un elemento STARTTIME.**
 
-Si el marcador especificado por un elemento **STARTMARKER** se produce posteriormente en la secuencia que el marcador definido por un elemento **ENDMARKER** , no se reproduce ningún contenido, pero no se genera ningún error.
+Si el marcador especificado por un elemento **STARTMARKER** se produce más adelante en la secuencia que el marcador definido por un elemento **ENDMARKER,** no se reproduce contenido, pero no se genera ningún error.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -82,7 +82,7 @@ Si el marcador especificado por un elemento **STARTMARKER** se produce posterior
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -90,10 +90,10 @@ Si el marcador especificado por un elemento **STARTMARKER** se produce posterior
 
 <dl> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referencia de metarchivos de Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referencia de metarchivo multimedia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

@@ -4,16 +4,16 @@ description: Hay dos versiones del formato de serialización del conjunto de pro
 ms.assetid: 10544118-5e80-47e2-b75b-c1a43be15b2e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9412fd2a83ab7c71b97888d4ae7911a96fdc4cfe5a9ebbceb5d985b3a5e2b418
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d9f340b31252bfc3d99f72746e8ae791f313498c
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118886480"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989158"
 ---
 # <a name="property-set-serialization"></a>Serialización del conjunto de propiedades
 
-Hay dos versiones del formato de serialización del conjunto de propiedades. La especificación original describe la versión 0 del formato. Consulte [Format Version (Versión de](format-version.md) formato) para obtener más información. La versión 1 amplía la versión original. Todos los conjuntos de propiedades de la versión 0 son válidos como conjuntos de propiedades de la versión 1. El **campo Versión de** formato del encabezado de un conjunto de propiedades serializado indica la versión.
+Hay dos versiones del formato de serialización del conjunto de propiedades. La especificación original describe la versión 0 del formato. Consulte [Format Version (Versión](format-version.md) de formato) para obtener más información. La versión 1 amplía la versión original. Todos los conjuntos de propiedades de la versión 0 son válidos como conjuntos de propiedades de la versión 1. El **campo Versión de** formato del encabezado de un conjunto de propiedades serializado indica la versión.
 
 Los siguientes elementos identifican las diferencias entre los formatos de serialización del conjunto de propiedades de la versión 0 y la versión 1.
 
@@ -33,7 +33,7 @@ Los siguientes elementos identifican las diferencias entre los formatos de seria
 
     Además, SafeArrays se puede serializar en un conjunto de propiedades. La presencia de safeArray se indica mediante el bit VT_ARRAY combinado, mediante una operación **OR,** con los elementos de matriz en el miembro **vt** de la [**estructura PROPVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) Por ejemplo, una SafeArray de enteros de 4 bytes con signo tiene un tipo de VT_ARRAY \| VT_I4.
 
-    Los siguientes tipos de elemento son válidos para SafeArray en un conjunto de propiedades serializado:
+    Los siguientes tipos de elemento son válidos para SafeArray en un conjunto de propiedades serializada:
 
     | <!--tabular list: col headers unnecessary-->  ||||
     |-------------|----------|-------------|-----------|
@@ -54,7 +54,7 @@ Los siguientes elementos identifican las diferencias entre los formatos de seria
 
 -   Nombres de propiedad long. Los nombres de propiedad de los conjuntos de propiedades de la versión 0 deben tener menos o igual que 256 caracteres, incluido el terminador de cadena, para los conjuntos de propiedades de la página de códigos Unicode. Si no están en la página de códigos Unicode, deben tener menos de 256 bytes. Por otro lado, los conjuntos de propiedades de la versión 1 pueden tener nombres de propiedad de longitud ilimitada, aunque siguen estando limitados por el límite de tamaño total del conjunto de propiedades de 256 kilobytes (KB).
 
-Se recomienda que las implementaciones de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) creen y mantengan conjuntos de propiedades de la versión 0 de forma predeterminada. Si un llamador solicita posteriormente una característica específica del formato de versión 1, solo entonces debe actualizarse la versión del conjunto de propiedades. Por ejemplo, si se escribe una propiedad de tipo VT_ARRAY o si se escribe un nombre de propiedad long, la implementación debe actualizar el formato del conjunto de propiedades a la versión 1. Se produce una excepción a esta guía si se especifica PROPSETFLAG_CASE_SENSITIVE valor de enumeración en la llamada a [**IPropertySetStorage::Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create). En este caso, el conjunto de propiedades debe crearse como un conjunto de propiedades de la versión 1.
+Se recomienda que las implementaciones de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) creen y mantengan conjuntos de propiedades de la versión 0 de forma predeterminada. Si un llamador solicita posteriormente una característica específica del formato de versión 1, solo entonces debe actualizarse la versión del conjunto de propiedades. Por ejemplo, si se escribe una propiedad de tipo VT_ARRAY o si se escribe un nombre de propiedad long, la implementación debe actualizar el formato del conjunto de propiedades a la versión 1. Se produce una excepción a esta guía si se PROPSETFLAG_CASE_SENSITIVE valor de enumeración en la llamada a [**IPropertySetStorage::Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create). En este caso, el conjunto de propiedades debe crearse como un conjunto de propiedades de la versión 1.
 
  
 

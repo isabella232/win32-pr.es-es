@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetGetRecordSize (función)'
-title: JetGetRecordSize función)
+description: 'Más información sobre: JetGetRecordSize (Función)'
+title: JetGetRecordSize (Función)
 TOCTitle: JetGetRecordSize Function
 ms:assetid: a28567ed-c732-4509-9f8d-6f8104f62a86
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294045(v=EXCHG.10)
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 255ca71f3b57c0d1f1bc8440a9a6d4697c09c670
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15a94f14962559a63c19c6dce97b1d6dc5a234fd
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002510"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982398"
 ---
-# <a name="jetgetrecordsize-function"></a>JetGetRecordSize función)
+# <a name="jetgetrecordsize-function"></a>JetGetRecordSize (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetgetrecordsize-function"></a>JetGetRecordSize función)
+## <a name="jetgetrecordsize-function"></a>JetGetRecordSize (Función)
 
-La función **JetGetRecordSize** recupera información de tamaño del registro de la ubicación deseada.
+La **función JetGetRecordSize** recupera información de tamaño de registro de la ubicación deseada.
 
-**Windows Vista: JetGetRecordSize** se presentó en Windows Vista.
+**Windows Vista: JetGetRecordSize** se introdujo en Windows Vista.
 
 ```cpp
     JET_ERR JET_API JetGetRecordSize(
@@ -49,148 +49,65 @@ La función **JetGetRecordSize** recupera información de tamaño del registro d
 
 *sesid*
 
-Identifica el contexto de la sesión de base de datos que se utilizará para la llamada API.
+Identifica el contexto de sesión de base de datos que se usará para la llamada API.
 
-*TABLEID*
+*tableid*
 
-Identifica la tabla o el cursor que se utilizará para la llamada API. El cursor debe estar colocado en un registro o tener una actualización preparada.
+Identifica la tabla o el cursor que se usará para la llamada API. El cursor debe estar situado en un registro o tener preparada una actualización.
 
 *precsize*
 
-Puntero a un búfer de salida para la estructura de [JET_RECSIZE](./jet-recsize-structure.md) .
+Puntero a un búfer de salida para la [JET_RECSIZE](./jet-recsize-structure.md) estructura.
 
 *grbit*
 
-Se trata de uno o varios de los valores siguientes.
+Este es uno o varios de los valores siguientes.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Value</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitRecordSizeInCopyBuffer</p></td>
-<td><p>Recupera el tamaño del registro que se encuentra en el búfer de copia preparado para la actualización. De lo contrario <em>, el ID. de</em> reactivación o el cursor deben estar colocados en un registro y se utilizará ese registro.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitRecordSizeRunningTotal</p></td>
-<td><p>Cuando se especifica este bit, el <a href="gg294072(v=exchg.10).md">JET_RECSIZE</a> no se pone a cero antes de rellenar el contenido, lo que actúa de forma eficaz como acumulación de las estadísticas para varios registros visitados o actualizados.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitRecordSizeLocal</p></td>
-<td><p>Esto hace que la API omita los valores largos no intrínsecos. Por ejemplo, solo se utilizará el registro local de la página.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Value</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitRecordSizeInCopyBuffer</p> | <p>Esto recupera el tamaño del registro que se encuentra en el búfer de copia preparado para la actualización. De lo contrario, <em>el tableid</em> o el cursor deben colocarse en un registro y se usará ese registro.</p> | 
+| <p>JET_bitRecordSizeRunningTotal</p> | <p>Cuando se especifica este <a href="gg294072(v=exchg.10).md"></a> bit, el JET_RECSIZE se reduce a cero antes de rellenar el contenido, actuando eficazmente como una acumulación de las estadísticas de varios registros visitados o actualizados.</p> | 
+| <p>JET_bitRecordSizeLocal</p> | <p>Esto hace que la API ignore valores long no intrínsecos. Por ejemplo, solo se usará el registro local de la página.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidGrbit</p></td>
-<td><p>Una de las opciones solicitadas no era válida o no se implementó. Este error lo devolverá la función <strong>JetGetRecordSize</strong> cuando se especifica un <em>grbit</em> no válido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>No es posible completar la operación porque no se ha inicializado la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>No es posible completar la operación porque se ha interrumpido toda la actividad en la instancia asociada a la sesión como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irrecuperable que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p>
-<p><strong>Windows XP:</strong>  JET_errInstanceUnavailable solo se devolverán en Windows XP y versiones posteriores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>No es válido utilizar la misma sesión desde más de un subproceso al mismo tiempo.</p>
-<p><strong>Windows XP:</strong>  JET_errInstanceUnavailable solo se devolverán en Windows XP y versiones posteriores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNoCurrentRecord</p></td>
-<td><p>Esto puede ocurrir si el cursor se colocó incorrectamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRecordDeleted</p></td>
-<td><p>Si el cursor no se colocó en una transacción, esto puede ocurrir si otro subproceso elimina el registro de esta sesión.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Se puede devolver si se ha pasado un valor de<em>Precsize</em> <strong>nulo</strong>.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errInvalidGrbit</p> | <p>Una de las opciones solicitadas no era válida o no se implementó. La función <strong>JetGetRecordSize</strong> devolverá este error cuando se especifique <em>un grbit</em> no seguro.</p> | 
+| <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque no se ha inicializado la instancia asociada a la sesión.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  JET_errInstanceUnavailable solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>No es posible usar la misma sesión desde más de un subproceso al mismo tiempo.</p><p><strong>Windows XP:</strong>  JET_errInstanceUnavailable solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errNoCurrentRecord</p> | <p>Esto puede ocurrir si el cursor se ha posicionado incorrectamente.</p> | 
+| <p>JET_errRecordDeleted</p> | <p>Si el cursor no se ha situado en una transacción, esto puede ocurrir si otro subproceso elimina el registro de en esta sesión.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Se puede devolver si <strong>se</strong>ha pasado un tamaño<em>previo</em> NULL.</p> | 
+
 
 
 #### <a name="remarks"></a>Observaciones
 
-El tamaño de la clave acumulada en el campo **cbOverhead** de [JET_RECSIZE](./jet-recsize-structure.md), se ve afectado por JET_bitRecordSizeInCopyBuffer. Si se especifica este bit, el tamaño de clave acumulado en el campo **cbOverhead** es el tamaño de clave completo. Si no se usa este bit, el tamaño de clave acumulado no incluirá ningún tamaño guardado debido a la compresión de prefijo de clave.
+El tamaño de la clave acumulada en el **campo cbOverhead** [de](./jet-recsize-structure.md)JET_RECSIZE , se ve afectado por JET_bitRecordSizeInCopyBuffer. Si se especifica este bit, el tamaño de clave acumulado en el **campo cbOverhead** es el tamaño de clave completo. Si no se usa este bit, el tamaño de clave acumulado no incluirá ningún tamaño guardado debido a la compresión del prefijo de clave.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

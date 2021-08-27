@@ -1,30 +1,30 @@
 ---
-description: A continuación se muestran los tipos de enumeración de DbgHelp.
+description: A continuación se enumeran los tipos de enumeración DbgHelp.
 ms.assetid: e6c5a398-56e9-48ea-92dd-e60a8c5f33a7
-title: Enumeraciones de DbgHelp
+title: Enumeraciones DbgHelp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b176d39968a1a32b89cc1c019552710c489049f2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3650396a7fce6a9de7e1acc4bf0f1fe65370a3edb1982bf2d977b85b148f4a22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076925"
 ---
-# <a name="dbghelp-enumerations"></a>Enumeraciones de DbgHelp
+# <a name="dbghelp-enumerations"></a>Enumeraciones DbgHelp
 
-A continuación se muestran los tipos de enumeración de DbgHelp.
+A continuación se enumeran los tipos de enumeración DbgHelp.
 
 <dl>
 
-[**\_información de \_ tipo de símbolo IMAGEHLP \_**](/windows/desktop/api/DbgHelp/ne-dbghelp-imagehlp_symbol_type_info)  
-[**tipo de devolución de llamada de MINIVOLCADO \_ \_**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_callback_type)  
-[**\_tipo de \_ información de objeto de identificador de minivolcado \_ \_**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_handle_object_information_type)  
-[**\_marcas secundarias de minivolcado \_**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_secondary_flags)  
-[**\_tipo de flujo de minivolcado \_**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_stream_type)  
-[**tipo de MINIVOLCADO \_**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_type)  
-[**\_marcas de escritura de módulo \_**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-module_write_flags)  
-[**\_marcas de escritura de SUBproceso \_**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-thread_write_flags)  
+[**INFORMACIÓN DEL TIPO DE SÍMBOLO IMAGEHLP \_ \_ \_**](/windows/desktop/api/DbgHelp/ne-dbghelp-imagehlp_symbol_type_info)  
+[**TIPO DE DEVOLUCIÓN DE LLAMADA DE MINIDUMP \_ \_**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_callback_type)  
+[**MINIDUMP \_ HANDLE \_ OBJECT \_ INFORMATION \_ TYPE**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_handle_object_information_type)  
+[**MARCAS \_ SECUNDARIAS DE MINIVOLQUETE \_**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_secondary_flags)  
+[**MINIDUMP \_ STREAM \_ TYPE**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_stream_type)  
+[**TIPO \_ MINIDUMP**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_type)  
+[**MARCAS \_ DE ESCRITURA DE \_ MÓDULOS**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-module_write_flags)  
+[**MARCAS \_ DE ESCRITURA DE \_ SUBPROCESOS**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-thread_write_flags)  
 </dl>
 
  

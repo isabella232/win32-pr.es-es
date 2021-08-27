@@ -1,26 +1,26 @@
 ---
-description: Describe los códigos de error 6000-8199 definidos en el archivo de encabezado WinError. h y está destinado a los desarrolladores.
+description: Describe los códigos de error 6000-8199 definidos en el archivo de encabezado WinError.h y está pensado para desarrolladores.
 ms.assetid: eaaf9f65-e8ff-4e54-90a9-04252cdd773a
-title: Códigos de error del sistema (6000-8199) (WinError. h)
+title: Códigos de error del sistema (6000-8199) (WinError.h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: 0660009411224673481e9b65bcb62d7b194ab71f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d24a165798f0d4bf8a3ed534880cd3f9ad1f2b8b85d072e8a4d7aae8e6345508
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131665"
 ---
 # <a name="system-error-codes-6000-8199"></a>Códigos de error del sistema (6000-8199)
 
 > [!NOTE]
-> Esta información está destinada a los desarrolladores que depuran errores del sistema. En el caso de otros errores, como los problemas con Windows Update, hay una lista de recursos en la página [códigos de error](system-error-codes.md) .
+> Esta información está pensada para los desarrolladores que depuran errores del sistema. Para otros errores, como problemas con Windows Update, hay una lista de recursos en la página [Códigos de](system-error-codes.md) error.
 
-En la lista siguiente se describen los [códigos de error del sistema](system-error-codes.md) (errores 6000 a 8199). La función [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve los resultados cuando se produce un error en muchas funciones. Para recuperar el texto de la descripción del error en la aplicación, use la función [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) con **el \_ mensaje format \_ from \_ System** Flag.
+En la lista siguiente se [describen los códigos de error del](system-error-codes.md) sistema (errores 6000 a 8199). La función [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) los devuelve cuando se producirá un error en muchas funciones. Para recuperar el texto de descripción del error en la aplicación, use la [**función FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) con la **marca FORMAT MESSAGE FROM \_ \_ \_ SYSTEM.**
 
 <dl> <dt>
 
-<span id="ERROR_ENCRYPTION_FAILED"></span><span id="error_encryption_failed"></span>**ERROR de \_ cifrado de errores \_**
+<span id="ERROR_ENCRYPTION_FAILED"></span><span id="error_encryption_failed"></span>**ERROR \_ DE CIFRADO \_**
 </dt> <dd> <dl> <dt>
 
 6000 (0x1770)
@@ -33,7 +33,7 @@ No se pudo cifrar el archivo especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DECRYPTION_FAILED"></span><span id="error_decryption_failed"></span>**error en el \_ DEScifrado de errores \_**
+<span id="ERROR_DECRYPTION_FAILED"></span><span id="error_decryption_failed"></span>**ERROR \_ DE DESCIFRADO \_**
 </dt> <dd> <dl> <dt>
 
 6001 (0x1771)
@@ -46,7 +46,7 @@ No se pudo descifrar el archivo especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FILE_ENCRYPTED"></span><span id="error_file_encrypted"></span>**archivo de ERROR \_ \_ cifrado**
+<span id="ERROR_FILE_ENCRYPTED"></span><span id="error_file_encrypted"></span>**ARCHIVO \_ DE ERROR \_ CIFRADO**
 </dt> <dd> <dl> <dt>
 
 6002 (0x1772)
@@ -59,7 +59,7 @@ El archivo especificado está cifrado y el usuario no tiene la capacidad de desc
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_RECOVERY_POLICY"></span><span id="error_no_recovery_policy"></span>**ERROR: \_ no hay \_ Directiva de recuperación \_**
+<span id="ERROR_NO_RECOVERY_POLICY"></span><span id="error_no_recovery_policy"></span>**ERROR \_ NO \_ RECOVERY \_ POLICY**
 </dt> <dd> <dl> <dt>
 
 6003 (0x1773)
@@ -72,7 +72,7 @@ No hay ninguna directiva de recuperación de cifrado válida configurada para es
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_EFS"></span><span id="error_no_efs"></span>**ERROR \_ no \_ EFS**
+<span id="ERROR_NO_EFS"></span><span id="error_no_efs"></span>**ERROR \_ NO \_ EFS**
 </dt> <dd> <dl> <dt>
 
 6004 (0x1774)
@@ -80,12 +80,12 @@ No hay ninguna directiva de recuperación de cifrado válida configurada para es
 
 
 
-No se ha cargado el controlador de cifrado necesario para este sistema.
+El controlador de cifrado necesario no se carga para este sistema.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WRONG_EFS"></span><span id="error_wrong_efs"></span>**ERROR \_ de \_ EFS incorrecto**
+<span id="ERROR_WRONG_EFS"></span><span id="error_wrong_efs"></span>**ERROR \_ DE \_ EFS INCORRECTO**
 </dt> <dd> <dl> <dt>
 
 6005 (0x1775)
@@ -93,12 +93,12 @@ No se ha cargado el controlador de cifrado necesario para este sistema.
 
 
 
-El archivo se cifró con un controlador de cifrado diferente del que está cargado actualmente.
+El archivo se ha cifrado con un controlador de cifrado diferente al que está cargado actualmente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_USER_KEYS"></span><span id="error_no_user_keys"></span>**ERROR: \_ no hay \_ claves de usuario \_**
+<span id="ERROR_NO_USER_KEYS"></span><span id="error_no_user_keys"></span>**ERROR \_ SIN CLAVES DE \_ \_ USUARIO**
 </dt> <dd> <dl> <dt>
 
 6006 (0x1776)
@@ -111,7 +111,7 @@ No hay claves de EFS definidas para el usuario.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FILE_NOT_ENCRYPTED"></span><span id="error_file_not_encrypted"></span>**archivo de ERROR \_ \_ no \_ cifrado**
+<span id="ERROR_FILE_NOT_ENCRYPTED"></span><span id="error_file_not_encrypted"></span>**ARCHIVO DE \_ ERROR \_ NO \_ CIFRADO**
 </dt> <dd> <dl> <dt>
 
 6007 (0x1777)
@@ -124,7 +124,7 @@ El archivo especificado no está cifrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_EXPORT_FORMAT"></span><span id="error_not_export_format"></span>**no se pudo \_ \_ exportar el \_ formato**
+<span id="ERROR_NOT_EXPORT_FORMAT"></span><span id="error_not_export_format"></span>**ERROR \_ NO EXPORTAR \_ \_ FORMATO**
 </dt> <dd> <dl> <dt>
 
 6008 (0x1778)
@@ -137,7 +137,7 @@ El archivo especificado no está en el formato de exportación de EFS definido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FILE_READ_ONLY"></span><span id="error_file_read_only"></span>**archivo de ERROR de \_ \_ \_ solo lectura**
+<span id="ERROR_FILE_READ_ONLY"></span><span id="error_file_read_only"></span>**ARCHIVO DE ERROR \_ \_ DE SOLO \_ LECTURA**
 </dt> <dd> <dl> <dt>
 
 6009 (0x1779)
@@ -150,7 +150,7 @@ El archivo especificado es de solo lectura.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DIR_EFS_DISALLOWED"></span><span id="error_dir_efs_disallowed"></span>**ERROR en el \_ directorio \_ EFS no \_ permitido**
+<span id="ERROR_DIR_EFS_DISALLOWED"></span><span id="error_dir_efs_disallowed"></span>**ERROR \_ DIR \_ EFS NO \_ PERMITIDO**
 </dt> <dd> <dl> <dt>
 
 6010 (0x177A)
@@ -163,7 +163,7 @@ El directorio se ha deshabilitado para el cifrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EFS_SERVER_NOT_TRUSTED"></span><span id="error_efs_server_not_trusted"></span>**ERROR \_ el \_ servidor EFS no es de \_ \_ confianza**
+<span id="ERROR_EFS_SERVER_NOT_TRUSTED"></span><span id="error_efs_server_not_trusted"></span>**ERROR \_ EFS \_ SERVER \_ NOT \_ TRUSTED**
 </dt> <dd> <dl> <dt>
 
 6011 (0x177B)
@@ -171,12 +171,12 @@ El directorio se ha deshabilitado para el cifrado.
 
 
 
-No se confía en el servidor para la operación de cifrado remoto.
+El servidor no es de confianza para la operación de cifrado remoto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_RECOVERY_POLICY"></span><span id="error_bad_recovery_policy"></span>**ERROR \_ de \_ Directiva de recuperación incorrecta \_**
+<span id="ERROR_BAD_RECOVERY_POLICY"></span><span id="error_bad_recovery_policy"></span>**ERROR \_ DIRECTIVA DE \_ RECUPERACIÓN NO \_ RECUPERADA**
 </dt> <dd> <dl> <dt>
 
 6012 (0x177C)
@@ -184,12 +184,12 @@ No se confía en el servidor para la operación de cifrado remoto.
 
 
 
-La Directiva de recuperación configurada para este sistema contiene un certificado de recuperación no válido.
+La directiva de recuperación configurada para este sistema contiene un certificado de recuperación no válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EFS_ALG_BLOB_TOO_BIG"></span><span id="error_efs_alg_blob_too_big"></span>**ERROR \_ de \_ BLOB de EFS alg \_ \_ demasiado \_ grande**
+<span id="ERROR_EFS_ALG_BLOB_TOO_BIG"></span><span id="error_efs_alg_blob_too_big"></span>**ERROR \_ EFS \_ ALG \_ BLOB \_ TOO \_ BIG**
 </dt> <dd> <dl> <dt>
 
 6013 (0x177D)
@@ -202,7 +202,7 @@ El algoritmo de cifrado usado en el archivo de origen necesita un búfer de clav
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VOLUME_NOT_SUPPORT_EFS"></span><span id="error_volume_not_support_efs"></span>**el \_ volumen de error \_ no es \_ compatible con \_ EFS**
+<span id="ERROR_VOLUME_NOT_SUPPORT_EFS"></span><span id="error_volume_not_support_efs"></span>**VOLUMEN \_ DE ERROR NO COMPATIBLE CON \_ \_ \_ EFS**
 </dt> <dd> <dl> <dt>
 
 6014 (0x177E)
@@ -215,7 +215,7 @@ La partición de disco no admite el cifrado de archivos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EFS_DISABLED"></span><span id="error_efs_disabled"></span>**ERROR de \_ EFS \_ deshabilitado**
+<span id="ERROR_EFS_DISABLED"></span><span id="error_efs_disabled"></span>**ERROR \_ EFS \_ DESHABILITADO**
 </dt> <dd> <dl> <dt>
 
 6015 (0x177F)
@@ -228,7 +228,7 @@ Esta máquina está deshabilitada para el cifrado de archivos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EFS_VERSION_NOT_SUPPORT"></span><span id="error_efs_version_not_support"></span>**ERROR: la \_ versión de EFS \_ no es \_ \_ compatible**
+<span id="ERROR_EFS_VERSION_NOT_SUPPORT"></span><span id="error_efs_version_not_support"></span>**ERROR \_ NO SE ADMITE LA VERSIÓN \_ \_ DE EFS \_**
 </dt> <dd> <dl> <dt>
 
 6016 (0x1780)
@@ -241,7 +241,7 @@ Se requiere un sistema más reciente para descifrar este archivo cifrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CS_ENCRYPTION_INVALID_SERVER_RESPONSE"></span><span id="error_cs_encryption_invalid_server_response"></span>**ERROR \_ de \_ cifrado de CS \_ respuesta de servidor no válida \_ \_**
+<span id="ERROR_CS_ENCRYPTION_INVALID_SERVER_RESPONSE"></span><span id="error_cs_encryption_invalid_server_response"></span>**ERROR \_ CS \_ ENCRYPTION \_ INVALID \_ SERVER \_ RESPONSE**
 </dt> <dd> <dl> <dt>
 
 6017 (0x1781)
@@ -249,12 +249,12 @@ Se requiere un sistema más reciente para descifrar este archivo cifrado.
 
 
 
-El servidor remoto ha enviado una respuesta no válida para un archivo que se está abriendo con el cifrado del lado cliente.
+El servidor remoto envió una respuesta no válida para que se abra un archivo con cifrado del lado cliente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CS_ENCRYPTION_UNSUPPORTED_SERVER"></span><span id="error_cs_encryption_unsupported_server"></span>**ERROR en el \_ \_ servidor de cifrado CS \_ no compatible \_**
+<span id="ERROR_CS_ENCRYPTION_UNSUPPORTED_SERVER"></span><span id="error_cs_encryption_unsupported_server"></span>**ERROR \_ CS \_ ENCRYPTION \_ UNSUPPORTED \_ SERVER**
 </dt> <dd> <dl> <dt>
 
 6018 (0x1782)
@@ -262,12 +262,12 @@ El servidor remoto ha enviado una respuesta no válida para un archivo que se es
 
 
 
-El servidor remoto no admite el cifrado del lado cliente, aunque notifica que es compatible.
+El servidor remoto no admite el cifrado del lado cliente, aunque dice admitirlo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CS_ENCRYPTION_EXISTING_ENCRYPTED_FILE"></span><span id="error_cs_encryption_existing_encrypted_file"></span>**ERROR \_ CS \_ cifrado \_ \_ archivo cifrado existente \_**
+<span id="ERROR_CS_ENCRYPTION_EXISTING_ENCRYPTED_FILE"></span><span id="error_cs_encryption_existing_encrypted_file"></span>**ERROR \_ CS \_ ENCRYPTION \_ EXISTING \_ ENCRYPTED \_ FILE**
 </dt> <dd> <dl> <dt>
 
 6019 (0x1783)
@@ -275,12 +275,12 @@ El servidor remoto no admite el cifrado del lado cliente, aunque notifica que es
 
 
 
-El archivo está cifrado y debe abrirse en el modo de cifrado del lado cliente.
+El archivo está cifrado y debe abrirse en modo de cifrado del lado cliente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CS_ENCRYPTION_NEW_ENCRYPTED_FILE"></span><span id="error_cs_encryption_new_encrypted_file"></span>**ERROR \_ CS \_ cifrado \_ nuevo \_ archivo cifrado \_**
+<span id="ERROR_CS_ENCRYPTION_NEW_ENCRYPTED_FILE"></span><span id="error_cs_encryption_new_encrypted_file"></span>**ERROR \_ CS \_ ENCRYPTION \_ NEW \_ ENCRYPTED \_ FILE**
 </dt> <dd> <dl> <dt>
 
 6020 (0x1784)
@@ -288,12 +288,12 @@ El archivo está cifrado y debe abrirse en el modo de cifrado del lado cliente.
 
 
 
-Se está creando un nuevo archivo cifrado y debe proporcionarse un $EFS.
+Se está creando un nuevo archivo cifrado y $EFS se debe proporcionar un nuevo archivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CS_ENCRYPTION_FILE_NOT_CSE"></span><span id="error_cs_encryption_file_not_cse"></span>**ERROR \_ de \_ archivo de cifrado CS \_ \_ no \_ CSE**
+<span id="ERROR_CS_ENCRYPTION_FILE_NOT_CSE"></span><span id="error_cs_encryption_file_not_cse"></span>**ERROR \_ CS \_ ENCRYPTION \_ FILE \_ NOT \_ CSE**
 </dt> <dd> <dl> <dt>
 
 6021 (0x1785)
@@ -301,12 +301,12 @@ Se está creando un nuevo archivo cifrado y debe proporcionarse un $EFS.
 
 
 
-El cliente SMB solicitó un FSCTL de CSE en un archivo que no es de CSE.
+El cliente SMB solicitó un CSE FSCTL en un archivo que no es de CSE.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ENCRYPTION_POLICY_DENIES_OPERATION"></span><span id="error_encryption_policy_denies_operation"></span>**la \_ Directiva de cifrado de errores \_ \_ deniega la \_ operación**
+<span id="ERROR_ENCRYPTION_POLICY_DENIES_OPERATION"></span><span id="error_encryption_policy_denies_operation"></span>**ERROR \_ ENCRYPTION \_ POLICY \_ DENIEGA LA \_ OPERACIÓN**
 </dt> <dd> <dl> <dt>
 
 6022 (0x1786)
@@ -314,12 +314,12 @@ El cliente SMB solicitó un FSCTL de CSE en un archivo que no es de CSE.
 
 
 
-La Directiva bloqueó la operación solicitada. Para obtener más información, póngase en contacto con el administrador del sistema.
+La directiva bloqueó la operación solicitada. Para obtener más información, póngase en contacto con el administrador del sistema.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_BROWSER_SERVERS_FOUND"></span><span id="error_no_browser_servers_found"></span>**ERROR \_ no \_ \_ se encontraron servidores de explorador \_**
+<span id="ERROR_NO_BROWSER_SERVERS_FOUND"></span><span id="error_no_browser_servers_found"></span>**ERROR \_ NO SE ENCONTRARON SERVIDORES DE \_ \_ \_ EXPLORADOR**
 </dt> <dd> <dl> <dt>
 
 6118 (0x17E6)
@@ -332,7 +332,7 @@ La lista de servidores de este grupo de trabajo no está disponible actualmente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="SCHED_E_SERVICE_NOT_LOCALSYSTEM"></span><span id="sched_e_service_not_localsystem"></span>**el \_ servicio sched E \_ no es \_ \_ LOCALSYSTEM**
+<span id="SCHED_E_SERVICE_NOT_LOCALSYSTEM"></span><span id="sched_e_service_not_localsystem"></span>**SCHED \_ E \_ SERVICE \_ NOT \_ LOCALSYSTEM**
 </dt> <dd> <dl> <dt>
 
 6200 (0x1838)
@@ -340,12 +340,12 @@ La lista de servidores de este grupo de trabajo no está disponible actualmente.
 
 
 
-El servicio de Programador de tareas debe estar configurado para ejecutarse en la cuenta del sistema para funcionar correctamente. Las tareas individuales se pueden configurar para ejecutarse en otras cuentas.
+El Programador de tareas debe configurarse para que se ejecute en la cuenta del sistema para que funcione correctamente. Las tareas individuales se pueden configurar para ejecutarse en otras cuentas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_SECTOR_INVALID"></span><span id="error_log_sector_invalid"></span>**SECTOR de registro de errores \_ \_ \_ no válido**
+<span id="ERROR_LOG_SECTOR_INVALID"></span><span id="error_log_sector_invalid"></span>**SECTOR DE \_ REGISTRO DE ERRORES NO \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 6600 (0x19C8)
@@ -358,7 +358,7 @@ El servicio de registro encontró un sector de registro no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_SECTOR_PARITY_INVALID"></span><span id="error_log_sector_parity_invalid"></span>**paridad del sector de registro de errores \_ \_ \_ \_ no válida**
+<span id="ERROR_LOG_SECTOR_PARITY_INVALID"></span><span id="error_log_sector_parity_invalid"></span>**PARIDAD \_ DEL SECTOR DEL REGISTRO DE ERRORES NO \_ \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 6601 (0x19C9)
@@ -366,12 +366,12 @@ El servicio de registro encontró un sector de registro no válido.
 
 
 
-El servicio de registro encontró un sector de registro con paridad de bloque no válida.
+El servicio de registro encontró un sector de registro con paridad de bloques no válida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_SECTOR_REMAPPED"></span><span id="error_log_sector_remapped"></span>**SECTOR de registro de errores \_ \_ \_ reasignado**
+<span id="ERROR_LOG_SECTOR_REMAPPED"></span><span id="error_log_sector_remapped"></span>**SECTOR DE \_ \_ REGISTRO DE ERRORES \_ REMAPPED**
 </dt> <dd> <dl> <dt>
 
 6602 (0x19CA)
@@ -379,12 +379,12 @@ El servicio de registro encontró un sector de registro con paridad de bloque no
 
 
 
-El servicio de registro encontró un sector de registro reasignado.
+El servicio de registro encontró un sector de registro que se ha rematado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_BLOCK_INCOMPLETE"></span><span id="error_log_block_incomplete"></span>**bloque de registro de errores \_ \_ \_ incompleto**
+<span id="ERROR_LOG_BLOCK_INCOMPLETE"></span><span id="error_log_block_incomplete"></span>**BLOQUE \_ DE REGISTRO DE ERRORES \_ \_ INCOMPLETO**
 </dt> <dd> <dl> <dt>
 
 6603 (0x19CB)
@@ -397,7 +397,7 @@ El servicio de registro encontró un bloque de registro parcial o incompleto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_INVALID_RANGE"></span><span id="error_log_invalid_range"></span>**\_ \_ intervalo no válido de registro de errores \_**
+<span id="ERROR_LOG_INVALID_RANGE"></span><span id="error_log_invalid_range"></span>**INTERVALO NO \_ VÁLIDO DEL REGISTRO DE \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6604 (0x19CC)
@@ -405,12 +405,12 @@ El servicio de registro encontró un bloque de registro parcial o incompleto.
 
 
 
-El servicio de registro detectó un intento de obtener acceso a datos fuera del intervalo de registros activo.
+El servicio de registro encontró un intento de acceso a los datos fuera del intervalo de registro activo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_BLOCKS_EXHAUSTED"></span><span id="error_log_blocks_exhausted"></span>**bloques de registro de errores \_ \_ \_ agotados**
+<span id="ERROR_LOG_BLOCKS_EXHAUSTED"></span><span id="error_log_blocks_exhausted"></span>**BLOQUES \_ DE REGISTRO DE ERRORES \_ \_ AGOTADOS**
 </dt> <dd> <dl> <dt>
 
 6605 (0x19CD)
@@ -418,12 +418,12 @@ El servicio de registro detectó un intento de obtener acceso a datos fuera del 
 
 
 
-Los búferes de serialización de usuario del servicio de registro están agotados.
+Se agotan los búferes de la marshalling de usuario del servicio de registro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_READ_CONTEXT_INVALID"></span><span id="error_log_read_context_invalid"></span>**contexto de lectura de registro de errores \_ \_ \_ \_ no válido**
+<span id="ERROR_LOG_READ_CONTEXT_INVALID"></span><span id="error_log_read_context_invalid"></span>**CONTEXTO DE \_ LECTURA DEL REGISTRO DE ERRORES NO \_ \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 6606 (0x19CE)
@@ -431,12 +431,12 @@ Los búferes de serialización de usuario del servicio de registro están agotad
 
 
 
-El servicio de registro detectó un intento de leer desde un área de cálculo de referencias con un contexto de lectura no válido.
+El servicio de registro encontró un intento de lectura desde un área de marshalling con un contexto de lectura no válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_RESTART_INVALID"></span><span id="error_log_restart_invalid"></span>**reinicio de registro de errores \_ \_ \_ no válido**
+<span id="ERROR_LOG_RESTART_INVALID"></span><span id="error_log_restart_invalid"></span>**REINICIO DEL \_ REGISTRO DE ERRORES NO \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 6607 (0x19CF)
@@ -449,7 +449,7 @@ El servicio de registro encontró un área de reinicio de registro no válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_BLOCK_VERSION"></span><span id="error_log_block_version"></span>**\_versión de \_ bloque de registro de errores \_**
+<span id="ERROR_LOG_BLOCK_VERSION"></span><span id="error_log_block_version"></span>**ERROR \_ LOG \_ BLOCK \_ VERSION**
 </dt> <dd> <dl> <dt>
 
 6608 (0x19D0)
@@ -462,7 +462,7 @@ El servicio de registro encontró una versión de bloque de registro no válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_BLOCK_INVALID"></span><span id="error_log_block_invalid"></span>**bloque de registro de errores \_ \_ \_ no válido**
+<span id="ERROR_LOG_BLOCK_INVALID"></span><span id="error_log_block_invalid"></span>**BLOQUE DE \_ REGISTRO DE ERRORES NO \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 6609 (0x19D1)
@@ -475,7 +475,7 @@ El servicio de registro encontró un bloque de registro no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_READ_MODE_INVALID"></span><span id="error_log_read_mode_invalid"></span>**modo de lectura de registro de errores \_ \_ \_ \_ no válido**
+<span id="ERROR_LOG_READ_MODE_INVALID"></span><span id="error_log_read_mode_invalid"></span>**MODO DE \_ LECTURA DEL REGISTRO DE ERRORES NO \_ \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 6610 (0x19D2)
@@ -483,12 +483,12 @@ El servicio de registro encontró un bloque de registro no válido.
 
 
 
-El servicio de registro detectó un intento de leer el registro con un modo de lectura no válido.
+El servicio de registro encontró un intento de leer el registro con un modo de lectura no válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_NO_RESTART"></span><span id="error_log_no_restart"></span>**\_ \_ no reiniciar el registro de errores \_**
+<span id="ERROR_LOG_NO_RESTART"></span><span id="error_log_no_restart"></span>**REGISTRO DE \_ ERRORES \_ SIN \_ REINICIO**
 </dt> <dd> <dl> <dt>
 
 6611 (0x19D3)
@@ -501,7 +501,7 @@ El servicio de registro encontró una secuencia de registro sin área de reinici
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_METADATA_CORRUPT"></span><span id="error_log_metadata_corrupt"></span>**metadatos de registro de errores \_ \_ \_ dañados**
+<span id="ERROR_LOG_METADATA_CORRUPT"></span><span id="error_log_metadata_corrupt"></span>**METADATOS \_ DEL REGISTRO DE ERRORES \_ \_ DAÑADOS**
 </dt> <dd> <dl> <dt>
 
 6612 (0x19D4)
@@ -514,7 +514,7 @@ El servicio de registro encontró un archivo de metadatos dañado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_METADATA_INVALID"></span><span id="error_log_metadata_invalid"></span>**metadatos de registro de errores \_ \_ \_ no válidos**
+<span id="ERROR_LOG_METADATA_INVALID"></span><span id="error_log_metadata_invalid"></span>**METADATOS \_ DEL REGISTRO DE ERRORES NO \_ \_ VÁLIDOS**
 </dt> <dd> <dl> <dt>
 
 6613 (0x19D5)
@@ -527,7 +527,7 @@ El servicio de registro encontró un archivo de metadatos que el sistema de arch
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_METADATA_INCONSISTENT"></span><span id="error_log_metadata_inconsistent"></span>**metadatos de registro de errores \_ \_ \_ incoherentes**
+<span id="ERROR_LOG_METADATA_INCONSISTENT"></span><span id="error_log_metadata_inconsistent"></span>**METADATOS \_ DEL REGISTRO DE ERRORES \_ \_ INCOHERENTES**
 </dt> <dd> <dl> <dt>
 
 6614 (0x19D6)
@@ -540,7 +540,7 @@ El servicio de registro encontró un archivo de metadatos con datos incoherentes
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_RESERVATION_INVALID"></span><span id="error_log_reservation_invalid"></span>**Reserva de registro de errores \_ \_ \_ no válida**
+<span id="ERROR_LOG_RESERVATION_INVALID"></span><span id="error_log_reservation_invalid"></span>**RESERVA DEL \_ REGISTRO DE ERRORES NO \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 6615 (0x19D7)
@@ -548,12 +548,12 @@ El servicio de registro encontró un archivo de metadatos con datos incoherentes
 
 
 
-El servicio de registro detectó un intento de asignar o eliminar el espacio de reserva.
+El servicio de registro encontró un intento de asignar o eliminar espacio de reserva erróneo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CANT_DELETE"></span><span id="error_log_cant_delete"></span>**no se pudo eliminar el registro de errores \_ \_ \_**
+<span id="ERROR_LOG_CANT_DELETE"></span><span id="error_log_cant_delete"></span>**ERROR \_ LOG \_ CANT \_ DELETE**
 </dt> <dd> <dl> <dt>
 
 6616 (0x19D8)
@@ -566,7 +566,7 @@ El servicio de registro no puede eliminar el archivo de registro o el contenedor
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CONTAINER_LIMIT_EXCEEDED"></span><span id="error_log_container_limit_exceeded"></span>**límite de contenedor de registro de errores \_ \_ \_ \_ superado**
+<span id="ERROR_LOG_CONTAINER_LIMIT_EXCEEDED"></span><span id="error_log_container_limit_exceeded"></span>**SE \_ SUPERÓ \_ EL LÍMITE DE CONTENEDOR DEL REGISTRO DE \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6617 (0x19D9)
@@ -574,12 +574,12 @@ El servicio de registro no puede eliminar el archivo de registro o el contenedor
 
 
 
-El servicio de registro ha alcanzado el número máximo de contenedores permitidos asignados a un archivo de registro.
+El servicio de registro ha alcanzado el máximo permitido de contenedores asignados a un archivo de registro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_START_OF_LOG"></span><span id="error_log_start_of_log"></span>**\_ \_ Inicio del registro \_ de errores de \_ registro**
+<span id="ERROR_LOG_START_OF_LOG"></span><span id="error_log_start_of_log"></span>**INICIO \_ DEL REGISTRO DE \_ \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6618 (0x19DA)
@@ -587,12 +587,12 @@ El servicio de registro ha alcanzado el número máximo de contenedores permitid
 
 
 
-El servicio de registro ha intentado leer o escribir hacia atrás más allá del inicio del registro.
+El servicio de registro ha intentado leer o escribir hacia atrás después del inicio del registro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_POLICY_ALREADY_INSTALLED"></span><span id="error_log_policy_already_installed"></span>**la \_ Directiva de registro de errores \_ \_ ya está \_ instalada**
+<span id="ERROR_LOG_POLICY_ALREADY_INSTALLED"></span><span id="error_log_policy_already_installed"></span>**DIRECTIVA \_ DE REGISTRO DE ERRORES YA \_ \_ \_ INSTALADA**
 </dt> <dd> <dl> <dt>
 
 6619 (0x19DB)
@@ -600,12 +600,12 @@ El servicio de registro ha intentado leer o escribir hacia atrás más allá del
 
 
 
-No se pudo instalar la Directiva de registro porque ya hay una directiva del mismo tipo.
+No se pudo instalar la directiva de registro porque ya existe una directiva del mismo tipo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_POLICY_NOT_INSTALLED"></span><span id="error_log_policy_not_installed"></span>**Directiva de registro de errores \_ \_ \_ no \_ instalada**
+<span id="ERROR_LOG_POLICY_NOT_INSTALLED"></span><span id="error_log_policy_not_installed"></span>**DIRECTIVA \_ DE REGISTRO DE ERRORES NO \_ \_ \_ INSTALADA**
 </dt> <dd> <dl> <dt>
 
 6620 (0x19DC)
@@ -613,12 +613,12 @@ No se pudo instalar la Directiva de registro porque ya hay una directiva del mis
 
 
 
-La Directiva de registro en cuestión no se instaló en el momento de la solicitud.
+La directiva de registro en cuestión no se instaló en el momento de la solicitud.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_POLICY_INVALID"></span><span id="error_log_policy_invalid"></span>**Directiva de registro de errores \_ \_ \_ no válida**
+<span id="ERROR_LOG_POLICY_INVALID"></span><span id="error_log_policy_invalid"></span>**DIRECTIVA \_ DE REGISTRO DE ERRORES NO \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 6621 (0x19DD)
@@ -631,7 +631,7 @@ El conjunto de directivas instalado en el registro no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_POLICY_CONFLICT"></span><span id="error_log_policy_conflict"></span>**\_conflicto de \_ directivas de registro de errores \_**
+<span id="ERROR_LOG_POLICY_CONFLICT"></span><span id="error_log_policy_conflict"></span>**CONFLICTO DE \_ DIRECTIVA DE REGISTRO DE \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6622 (0x19DE)
@@ -639,12 +639,12 @@ El conjunto de directivas instalado en el registro no es válido.
 
 
 
-Una directiva del registro en cuestión impidió que se completara la operación.
+Una directiva en el registro en cuestión impedía que se completara la operación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_PINNED_ARCHIVE_TAIL"></span><span id="error_log_pinned_archive_tail"></span>**\_cola de \_ archivo anclada al registro \_ de errores \_**
+<span id="ERROR_LOG_PINNED_ARCHIVE_TAIL"></span><span id="error_log_pinned_archive_tail"></span>**COLA \_ DE ARCHIVO \_ ANCLADO DEL REGISTRO DE \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6623 (0x19DF)
@@ -652,12 +652,12 @@ Una directiva del registro en cuestión impidió que se completara la operación
 
 
 
-No se puede reclamar el espacio del registro porque el registro está anclado por la cola del archivo.
+No se puede reclamar el espacio del registro porque el final del archivo ancla el registro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_RECORD_NONEXISTENT"></span><span id="error_log_record_nonexistent"></span>**entrada de registro de errores no \_ \_ \_ existente**
+<span id="ERROR_LOG_RECORD_NONEXISTENT"></span><span id="error_log_record_nonexistent"></span>**REGISTRO \_ DE \_ ERRORES \_ INEXISTENTE**
 </dt> <dd> <dl> <dt>
 
 6624 (0x19E0)
@@ -665,12 +665,12 @@ No se puede reclamar el espacio del registro porque el registro está anclado po
 
 
 
-La entrada de registro no es un registro del archivo de registro.
+La entrada de registro no es un registro en el archivo de registro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_RECORDS_RESERVED_INVALID"></span><span id="error_log_records_reserved_invalid"></span>**\_registros de \_ errores \_ reservados \_ no válidos**
+<span id="ERROR_LOG_RECORDS_RESERVED_INVALID"></span><span id="error_log_records_reserved_invalid"></span>**REGISTROS DE \_ ERRORES \_ \_ RESERVADOS NO \_ VÁLIDOS**
 </dt> <dd> <dl> <dt>
 
 6625 (0x19E1)
@@ -678,12 +678,12 @@ La entrada de registro no es un registro del archivo de registro.
 
 
 
-El número de entradas de registro reservadas o el ajuste del número de entradas de registro reservadas no es válido.
+El número de registros reservados o el ajuste del número de registros reservados no es válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_SPACE_RESERVED_INVALID"></span><span id="error_log_space_reserved_invalid"></span>**espacio de registro de errores \_ \_ \_ reservado \_ no válido**
+<span id="ERROR_LOG_SPACE_RESERVED_INVALID"></span><span id="error_log_space_reserved_invalid"></span>**ESPACIO DE \_ REGISTRO DE ERRORES RESERVADO NO \_ \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 6626 (0x19E2)
@@ -696,7 +696,7 @@ El espacio de registro reservado o el ajuste del espacio de registro no es váli
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_TAIL_INVALID"></span><span id="error_log_tail_invalid"></span>**cola de registro de errores \_ \_ \_ no válida**
+<span id="ERROR_LOG_TAIL_INVALID"></span><span id="error_log_tail_invalid"></span>**COLA DEL \_ REGISTRO DE ERRORES NO \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 6627 (0x19E3)
@@ -704,12 +704,12 @@ El espacio de registro reservado o el ajuste del espacio de registro no es váli
 
 
 
-Una cola de archivo nueva o existente o la base del registro activo no es válida.
+Una cola o base de archivo nueva o existente del registro activo no es válida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_FULL"></span><span id="error_log_full"></span>**registro de errores \_ \_ completo**
+<span id="ERROR_LOG_FULL"></span><span id="error_log_full"></span>**REGISTRO \_ DE ERRORES \_ COMPLETO**
 </dt> <dd> <dl> <dt>
 
 6628 (0x19E4)
@@ -717,12 +717,12 @@ Una cola de archivo nueva o existente o la base del registro activo no es válid
 
 
 
-Se agotó el espacio de registro.
+Se agota el espacio de registro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_COULD_NOT_RESIZE_LOG"></span><span id="error_could_not_resize_log"></span>**ERROR \_ no se pudo \_ \_ cambiar el tamaño del \_ registro**
+<span id="ERROR_COULD_NOT_RESIZE_LOG"></span><span id="error_could_not_resize_log"></span>**ERROR \_ NO SE PUDO CAMBIAR EL TAMAÑO DEL \_ \_ \_ REGISTRO**
 </dt> <dd> <dl> <dt>
 
 6629 (0x19E5)
@@ -730,12 +730,12 @@ Se agotó el espacio de registro.
 
 
 
-No se pudo establecer el tamaño solicitado en el registro.
+No se pudo establecer el registro en el tamaño solicitado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_MULTIPLEXED"></span><span id="error_log_multiplexed"></span>**registro de errores \_ \_ multiplexado**
+<span id="ERROR_LOG_MULTIPLEXED"></span><span id="error_log_multiplexed"></span>**REGISTRO \_ DE \_ ERRORES MULTIPLEXADO**
 </dt> <dd> <dl> <dt>
 
 6630 (0x19E6)
@@ -743,12 +743,12 @@ No se pudo establecer el tamaño solicitado en el registro.
 
 
 
-El registro se multiplexa, no se permiten escrituras directas en el registro físico.
+El registro se multiplexa, no se permite ninguna escritura directa en el registro físico.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_DEDICATED"></span><span id="error_log_dedicated"></span>**registro de errores \_ \_ dedicado**
+<span id="ERROR_LOG_DEDICATED"></span><span id="error_log_dedicated"></span>**REGISTRO \_ DE ERRORES \_ DEDICADO**
 </dt> <dd> <dl> <dt>
 
 6631 (0x19E7)
@@ -756,12 +756,12 @@ El registro se multiplexa, no se permiten escrituras directas en el registro fí
 
 
 
-No se pudo realizar la operación porque el registro es un registro dedicado.
+Error en la operación porque el registro es un registro dedicado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_ARCHIVE_NOT_IN_PROGRESS"></span><span id="error_log_archive_not_in_progress"></span>**el \_ \_ archivo \_ de registro de errores no está \_ en \_ curso**
+<span id="ERROR_LOG_ARCHIVE_NOT_IN_PROGRESS"></span><span id="error_log_archive_not_in_progress"></span>**ARCHIVO \_ DE REGISTRO DE ERRORES NO EN \_ \_ \_ \_ CURSO**
 </dt> <dd> <dl> <dt>
 
 6632 (0x19E8)
@@ -774,7 +774,7 @@ La operación requiere un contexto de archivo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_ARCHIVE_IN_PROGRESS"></span><span id="error_log_archive_in_progress"></span>**\_ \_ archivo de registro \_ de errores en \_ curso**
+<span id="ERROR_LOG_ARCHIVE_IN_PROGRESS"></span><span id="error_log_archive_in_progress"></span>**ARCHIVO \_ DE REGISTRO DE ERRORES EN \_ \_ \_ CURSO**
 </dt> <dd> <dl> <dt>
 
 6633 (0x19E9)
@@ -787,7 +787,7 @@ El archivo de registro está en curso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_EPHEMERAL"></span><span id="error_log_ephemeral"></span>**ERROR de \_ Registro \_ efímero**
+<span id="ERROR_LOG_EPHEMERAL"></span><span id="error_log_ephemeral"></span>**REGISTRO \_ DE \_ ERRORES EFÍMERO**
 </dt> <dd> <dl> <dt>
 
 6634 (0x19EA)
@@ -800,7 +800,7 @@ La operación requiere un registro no efímero, pero el registro es efímero.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_NOT_ENOUGH_CONTAINERS"></span><span id="error_log_not_enough_containers"></span>**el \_ registro de errores \_ no tiene \_ suficientes \_ contenedores**
+<span id="ERROR_LOG_NOT_ENOUGH_CONTAINERS"></span><span id="error_log_not_enough_containers"></span>**REGISTRO DE \_ ERRORES \_ NO HAY \_ SUFICIENTES \_ CONTENEDORES**
 </dt> <dd> <dl> <dt>
 
 6635 (0x19EB)
@@ -808,12 +808,12 @@ La operación requiere un registro no efímero, pero el registro es efímero.
 
 
 
-El registro debe tener al menos dos contenedores antes de que se puedan leer o escribir en él.
+El registro debe tener al menos dos contenedores para poder leerlo o escribirlo en él.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CLIENT_ALREADY_REGISTERED"></span><span id="error_log_client_already_registered"></span>**el \_ cliente de registro de errores \_ \_ ya está \_ registrado**
+<span id="ERROR_LOG_CLIENT_ALREADY_REGISTERED"></span><span id="error_log_client_already_registered"></span>**CLIENTE DE \_ REGISTRO DE ERRORES YA \_ \_ \_ REGISTRADO**
 </dt> <dd> <dl> <dt>
 
 6636 (0x19EC)
@@ -821,12 +821,12 @@ El registro debe tener al menos dos contenedores antes de que se puedan leer o e
 
 
 
-Ya hay un cliente de registro registrado en la secuencia.
+Un cliente de registro ya se ha registrado en la secuencia.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CLIENT_NOT_REGISTERED"></span><span id="error_log_client_not_registered"></span>**cliente de registro de errores \_ \_ \_ no \_ registrado**
+<span id="ERROR_LOG_CLIENT_NOT_REGISTERED"></span><span id="error_log_client_not_registered"></span>**CLIENTE DE \_ REGISTRO DE ERRORES NO \_ \_ \_ REGISTRADO**
 </dt> <dd> <dl> <dt>
 
 6637 (0x19ED)
@@ -839,7 +839,7 @@ No se ha registrado un cliente de registro en la secuencia.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_FULL_HANDLER_IN_PROGRESS"></span><span id="error_log_full_handler_in_progress"></span>**\_ \_ \_ controlador completo de registro \_ de errores en \_ curso**
+<span id="ERROR_LOG_FULL_HANDLER_IN_PROGRESS"></span><span id="error_log_full_handler_in_progress"></span>**CONTROLADOR \_ COMPLETO DEL REGISTRO DE ERRORES EN \_ \_ \_ \_ CURSO**
 </dt> <dd> <dl> <dt>
 
 6638 (0x19EE)
@@ -847,12 +847,12 @@ No se ha registrado un cliente de registro en la secuencia.
 
 
 
-Ya se ha realizado una solicitud para administrar la condición de registro completa.
+Ya se ha realizado una solicitud para controlar la condición completa del registro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CONTAINER_READ_FAILED"></span><span id="error_log_container_read_failed"></span>**error \_ \_ al leer el contenedor del registro de \_ errores \_**
+<span id="ERROR_LOG_CONTAINER_READ_FAILED"></span><span id="error_log_container_read_failed"></span>**ERROR DE \_ LECTURA DEL CONTENEDOR DEL REGISTRO DE \_ \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6639 (0x19EF)
@@ -865,7 +865,7 @@ El servicio de registro encontró un error al intentar leer desde un contenedor 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CONTAINER_WRITE_FAILED"></span><span id="error_log_container_write_failed"></span>**error de escritura en el contenedor de registro de errores \_ \_ \_ \_**
+<span id="ERROR_LOG_CONTAINER_WRITE_FAILED"></span><span id="error_log_container_write_failed"></span>**ERROR AL \_ ESCRIBIR EN EL CONTENEDOR DEL REGISTRO DE \_ \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6640 (0x19F0)
@@ -873,12 +873,12 @@ El servicio de registro encontró un error al intentar leer desde un contenedor 
 
 
 
-El servicio de registro encontró un error al intentar escribir en un contenedor de registro.
+El servicio de registro encontró un error al intentar escribir en un contenedor de registros.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CONTAINER_OPEN_FAILED"></span><span id="error_log_container_open_failed"></span>**error \_ \_ al abrir el contenedor del registro de \_ errores \_**
+<span id="ERROR_LOG_CONTAINER_OPEN_FAILED"></span><span id="error_log_container_open_failed"></span>**ERROR AL \_ ABRIR EL CONTENEDOR DEL REGISTRO DE \_ \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6641 (0x19F1)
@@ -891,7 +891,7 @@ El servicio de registro encontró un error al intentar abrir un contenedor de re
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CONTAINER_STATE_INVALID"></span><span id="error_log_container_state_invalid"></span>**Estado del contenedor de registro de errores \_ \_ \_ \_ no válido**
+<span id="ERROR_LOG_CONTAINER_STATE_INVALID"></span><span id="error_log_container_state_invalid"></span>**ESTADO DEL \_ CONTENEDOR DEL REGISTRO DE ERRORES NO \_ \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 6642 (0x19F2)
@@ -904,7 +904,7 @@ El servicio de registro encontró un estado de contenedor no válido al intentar
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_STATE_INVALID"></span><span id="error_log_state_invalid"></span>**Estado de registro de errores \_ \_ \_ no válido**
+<span id="ERROR_LOG_STATE_INVALID"></span><span id="error_log_state_invalid"></span>**ESTADO DEL \_ REGISTRO DE ERRORES NO \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 6643 (0x19F3)
@@ -917,7 +917,7 @@ El servicio de registro no está en el estado correcto para realizar una acción
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_PINNED"></span><span id="error_log_pinned"></span>**registro de errores \_ \_ anclado**
+<span id="ERROR_LOG_PINNED"></span><span id="error_log_pinned"></span>**REGISTRO \_ DE \_ ERRORES ANCLADO**
 </dt> <dd> <dl> <dt>
 
 6644 (0x19F4)
@@ -925,12 +925,12 @@ El servicio de registro no está en el estado correcto para realizar una acción
 
 
 
-No se puede reclamar el espacio del registro porque el registro está anclado.
+No se puede reclamar el espacio de registro porque el registro está anclado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_METADATA_FLUSH_FAILED"></span><span id="error_log_metadata_flush_failed"></span>**error \_ de \_ vaciado de metadatos de registro de \_ errores \_**
+<span id="ERROR_LOG_METADATA_FLUSH_FAILED"></span><span id="error_log_metadata_flush_failed"></span>**ERROR DE \_ VACIADO DE \_ \_ METADATOS DEL REGISTRO DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6645 (0x19F5)
@@ -943,7 +943,7 @@ Error de vaciado de metadatos de registro.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_INCONSISTENT_SECURITY"></span><span id="error_log_inconsistent_security"></span>**\_ \_ seguridad incoherente del registro de errores \_**
+<span id="ERROR_LOG_INCONSISTENT_SECURITY"></span><span id="error_log_inconsistent_security"></span>**SEGURIDAD \_ \_ INCOHERENTE DEL REGISTRO DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6646 (0x19F6)
@@ -956,7 +956,7 @@ La seguridad en el registro y sus contenedores es incoherente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_APPENDED_FLUSH_FAILED"></span><span id="error_log_appended_flush_failed"></span>**error \_ de \_ vaciado anexado de registro de \_ errores \_**
+<span id="ERROR_LOG_APPENDED_FLUSH_FAILED"></span><span id="error_log_appended_flush_failed"></span>**ERROR DE \_ VACIADO \_ ANEXADO \_ DEL REGISTRO \_ DE ERRORES**
 </dt> <dd> <dl> <dt>
 
 6647 (0x19F7)
@@ -964,12 +964,12 @@ La seguridad en el registro y sus contenedores es incoherente.
 
 
 
-Se anexaron registros al registro o se realizaron cambios en la reserva, pero no se pudo vaciar el registro.
+Los registros se anexaron al registro o se realizaron cambios en la reserva, pero no se pudo vaciar el registro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_PINNED_RESERVATION"></span><span id="error_log_pinned_reservation"></span>**\_ \_ reserva anclada del registro de errores \_**
+<span id="ERROR_LOG_PINNED_RESERVATION"></span><span id="error_log_pinned_reservation"></span>**RESERVA \_ ANCLADA \_ DEL REGISTRO DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6648 (0x19F8)
@@ -977,12 +977,12 @@ Se anexaron registros al registro o se realizaron cambios en la reserva, pero no
 
 
 
-El registro está anclado debido a la reserva que consume la mayor parte del espacio del registro. Libere algunos registros reservados para dejar espacio disponible.
+El registro se ancla debido a que la reserva consume la mayor parte del espacio de registro. Liberar algunos registros reservados para que el espacio esté disponible.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_TRANSACTION"></span><span id="error_invalid_transaction"></span>**ERROR \_ de \_ transacción no válida**
+<span id="ERROR_INVALID_TRANSACTION"></span><span id="error_invalid_transaction"></span>**ERROR \_ TRANSACCIÓN NO \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 6700 (0x1A2C)
@@ -995,7 +995,7 @@ El identificador de transacción asociado a esta operación no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_NOT_ACTIVE"></span><span id="error_transaction_not_active"></span>**ERROR de \_ transacción \_ no \_ activa**
+<span id="ERROR_TRANSACTION_NOT_ACTIVE"></span><span id="error_transaction_not_active"></span>**ERROR \_ TRANSACTION \_ NOT \_ ACTIVE**
 </dt> <dd> <dl> <dt>
 
 6701 (0x1A2D)
@@ -1008,7 +1008,7 @@ La operación solicitada se realizó en el contexto de una transacción que ya n
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_REQUEST_NOT_VALID"></span><span id="error_transaction_request_not_valid"></span>**ERROR \_ de \_ solicitud de transacción \_ no \_ válida**
+<span id="ERROR_TRANSACTION_REQUEST_NOT_VALID"></span><span id="error_transaction_request_not_valid"></span>**SOLICITUD DE \_ \_ TRANSACCIÓN DE ERROR \_ NO \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 6702 (0x1A2E)
@@ -1016,12 +1016,12 @@ La operación solicitada se realizó en el contexto de una transacción que ya n
 
 
 
-La operación solicitada no es válida en el objeto de transacción en su estado actual.
+La operación solicitada no es válida en el objeto Transaction en su estado actual.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_NOT_REQUESTED"></span><span id="error_transaction_not_requested"></span>**\_no se \_ solicitó la transacción de error \_**
+<span id="ERROR_TRANSACTION_NOT_REQUESTED"></span><span id="error_transaction_not_requested"></span>**NO SE \_ SOLICITÓ \_ LA \_ TRANSACCIÓN DE ERROR**
 </dt> <dd> <dl> <dt>
 
 6703 (0x1A2F)
@@ -1029,12 +1029,12 @@ La operación solicitada no es válida en el objeto de transacción en su estado
 
 
 
-El autor de la llamada ha llamado a una API de respuesta, pero no se espera la respuesta porque TM no ha emitido la solicitud correspondiente al llamador.
+El autor de la llamada ha llamado a una API de respuesta, pero no se espera la respuesta porque la TM no ha emite la solicitud correspondiente al autor de la llamada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_ALREADY_ABORTED"></span><span id="error_transaction_already_aborted"></span>**transacción de ERROR \_ \_ ya \_ anulada**
+<span id="ERROR_TRANSACTION_ALREADY_ABORTED"></span><span id="error_transaction_already_aborted"></span>**TRANSACCIÓN \_ DE ERROR \_ YA \_ ANULADA**
 </dt> <dd> <dl> <dt>
 
 6704 (0x1A30)
@@ -1047,7 +1047,7 @@ Es demasiado tarde para realizar la operación solicitada, ya que la transacció
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_ALREADY_COMMITTED"></span><span id="error_transaction_already_committed"></span>**transacción de ERROR \_ \_ ya \_ confirmada**
+<span id="ERROR_TRANSACTION_ALREADY_COMMITTED"></span><span id="error_transaction_already_committed"></span>**TRANSACCIÓN \_ DE ERROR \_ YA \_ CONFIRMADA**
 </dt> <dd> <dl> <dt>
 
 6705 (0x1A31)
@@ -1055,12 +1055,12 @@ Es demasiado tarde para realizar la operación solicitada, ya que la transacció
 
 
 
-Es demasiado tarde para realizar la operación solicitada, puesto que ya se ha confirmado la transacción.
+Es demasiado tarde para realizar la operación solicitada, ya que la transacción ya se ha confirmado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TM_INITIALIZATION_FAILED"></span><span id="error_tm_initialization_failed"></span>**ERROR \_ de \_ inicialización de TM \_**
+<span id="ERROR_TM_INITIALIZATION_FAILED"></span><span id="error_tm_initialization_failed"></span>**ERROR DE \_ \_ INICIALIZACIÓN DE TM \_**
 </dt> <dd> <dl> <dt>
 
 6706 (0x1A32)
@@ -1068,12 +1068,12 @@ Es demasiado tarde para realizar la operación solicitada, puesto que ya se ha c
 
 
 
-No se pudo inicializar correctamente el administrador de transacciones. No se admiten las operaciones de transacción.
+El Administrador de transacciones no se pudo inicializar correctamente. No se admiten las operaciones de transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESOURCEMANAGER_READ_ONLY"></span><span id="error_resourcemanager_read_only"></span>**ERROR \_ RESOURCEMANAGER \_ - \_ solo lectura**
+<span id="ERROR_RESOURCEMANAGER_READ_ONLY"></span><span id="error_resourcemanager_read_only"></span>**ERROR \_ RESOURCEMANAGER \_ DE SOLO \_ LECTURA**
 </dt> <dd> <dl> <dt>
 
 6707 (0x1A33)
@@ -1086,7 +1086,7 @@ El ResourceManager especificado no realizó cambios ni actualizaciones en el rec
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_NOT_JOINED"></span><span id="error_transaction_not_joined"></span>**ERROR de \_ transacción \_ no \_ unida**
+<span id="ERROR_TRANSACTION_NOT_JOINED"></span><span id="error_transaction_not_joined"></span>**ERROR \_ TRANSACTION \_ NOT \_ JOINED**
 </dt> <dd> <dl> <dt>
 
 6708 (0x1A34)
@@ -1094,12 +1094,12 @@ El ResourceManager especificado no realizó cambios ni actualizaciones en el rec
 
 
 
-Resource Manager intentó preparar una transacción que no se ha unido correctamente.
+El administrador de recursos ha intentado preparar una transacción que no se ha unido correctamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_SUPERIOR_EXISTS"></span><span id="error_transaction_superior_exists"></span>**existe una transacción de ERROR \_ \_ superior \_ existente**
+<span id="ERROR_TRANSACTION_SUPERIOR_EXISTS"></span><span id="error_transaction_superior_exists"></span>**ERROR \_ TRANSACTION \_ SUPERIOR \_ EXISTS**
 </dt> <dd> <dl> <dt>
 
 6709 (0x1A35)
@@ -1107,12 +1107,12 @@ Resource Manager intentó preparar una transacción que no se ha unido correctam
 
 
 
-El objeto de transacción ya tiene una inscripción superior y el llamador intentó realizar una operación que habría creado un nuevo superior. Solo se permite una inscripción superior.
+El objeto Transaction ya tiene una alta superior y el autor de la llamada intentó realizar una operación que habría creado un nuevo superior. Solo se permite una única alta superior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CRM_PROTOCOL_ALREADY_EXISTS"></span><span id="error_crm_protocol_already_exists"></span>**el \_ Protocolo CRM de error \_ \_ ya \_ existe**
+<span id="ERROR_CRM_PROTOCOL_ALREADY_EXISTS"></span><span id="error_crm_protocol_already_exists"></span>**EL PROTOCOLO \_ CRM DE ERROR YA \_ \_ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 6710 (0x1A36)
@@ -1120,12 +1120,12 @@ El objeto de transacción ya tiene una inscripción superior y el llamador inten
 
 
 
-El RM ha intentado registrar un protocolo que ya existe.
+El rm intentó registrar un protocolo que ya existe.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_PROPAGATION_FAILED"></span><span id="error_transaction_propagation_failed"></span>**ERROR en la propagación de la \_ transacción \_ \_**
+<span id="ERROR_TRANSACTION_PROPAGATION_FAILED"></span><span id="error_transaction_propagation_failed"></span>**ERROR DE \_ \_ PROPAGACIÓN DE \_ TRANSACCIONES**
 </dt> <dd> <dl> <dt>
 
 6711 (0x1A37)
@@ -1133,12 +1133,12 @@ El RM ha intentado registrar un protocolo que ya existe.
 
 
 
-Error al tratar de propagar la transacción.
+Error al intentar propagar la transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CRM_PROTOCOL_NOT_FOUND"></span><span id="error_crm_protocol_not_found"></span>**ERROR \_ de \_ Protocolo CRM \_ no \_ encontrado**
+<span id="ERROR_CRM_PROTOCOL_NOT_FOUND"></span><span id="error_crm_protocol_not_found"></span>**ERROR \_ NO SE ENCONTRÓ EL PROTOCOLO \_ \_ \_ CRM**
 </dt> <dd> <dl> <dt>
 
 6712 (0x1A38)
@@ -1151,7 +1151,7 @@ El protocolo de propagación solicitado no se registró como CRM.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_INVALID_MARSHALL_BUFFER"></span><span id="error_transaction_invalid_marshall_buffer"></span>**ERROR de \_ búfer de referencia de transacción \_ no válido \_ \_**
+<span id="ERROR_TRANSACTION_INVALID_MARSHALL_BUFFER"></span><span id="error_transaction_invalid_marshall_buffer"></span>**ERROR \_ TRANSACTION \_ INVALID \_ MARSHALL \_ BUFFER**
 </dt> <dd> <dl> <dt>
 
 6713 (0x1A39)
@@ -1164,7 +1164,7 @@ El búfer pasado a PushTransaction o PullTransaction no tiene un formato válido
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CURRENT_TRANSACTION_NOT_VALID"></span><span id="error_current_transaction_not_valid"></span>**ERROR \_ de \_ transacción actual \_ no \_ válida**
+<span id="ERROR_CURRENT_TRANSACTION_NOT_VALID"></span><span id="error_current_transaction_not_valid"></span>**ERROR \_ TRANSACCIÓN \_ ACTUAL NO \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 6714 (0x1A3A)
@@ -1177,7 +1177,7 @@ El contexto de transacción actual asociado al subproceso no es un identificador
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_NOT_FOUND"></span><span id="error_transaction_not_found"></span>**\_ \_ no \_ se encontró la transacción de error**
+<span id="ERROR_TRANSACTION_NOT_FOUND"></span><span id="error_transaction_not_found"></span>**ERROR \_ TRANSACTION \_ NOT \_ FOUND**
 </dt> <dd> <dl> <dt>
 
 6715 (0x1A3B)
@@ -1185,12 +1185,12 @@ El contexto de transacción actual asociado al subproceso no es un identificador
 
 
 
-No se pudo abrir el objeto de transacción especificado porque no se encontró.
+No se pudo abrir el objeto Transaction especificado porque no se encontró.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESOURCEMANAGER_NOT_FOUND"></span><span id="error_resourcemanager_not_found"></span>**ERROR \_ RESOURCEMANAGER \_ no \_ encontrado**
+<span id="ERROR_RESOURCEMANAGER_NOT_FOUND"></span><span id="error_resourcemanager_not_found"></span>**ERROR \_ RESOURCEMANAGER \_ NO \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 6716 (0x1A3C)
@@ -1203,7 +1203,7 @@ No se pudo abrir el objeto ResourceManager especificado porque no se encontró.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ENLISTMENT_NOT_FOUND"></span><span id="error_enlistment_not_found"></span>**\_ \_ no se encontró la inscripción \_ de errores**
+<span id="ERROR_ENLISTMENT_NOT_FOUND"></span><span id="error_enlistment_not_found"></span>**ERROR \_ ENLISTMENT \_ NOT \_ FOUND**
 </dt> <dd> <dl> <dt>
 
 6717 (0x1A3D)
@@ -1211,12 +1211,12 @@ No se pudo abrir el objeto ResourceManager especificado porque no se encontró.
 
 
 
-No se pudo abrir el objeto de inscripción especificado porque no se encontró.
+No se pudo abrir el objeto enlistment especificado, porque no se encontró.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTIONMANAGER_NOT_FOUND"></span><span id="error_transactionmanager_not_found"></span>**ERROR \_ TRANSACTIONMANAGER \_ no \_ encontrado**
+<span id="ERROR_TRANSACTIONMANAGER_NOT_FOUND"></span><span id="error_transactionmanager_not_found"></span>**ERROR \_ TRANSACTIONMANAGER \_ NO \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 6718 (0x1A3E)
@@ -1229,7 +1229,7 @@ No se pudo abrir el objeto TransactionManager especificado porque no se encontr�
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTIONMANAGER_NOT_ONLINE"></span><span id="error_transactionmanager_not_online"></span>**ERROR \_ TRANSACTIONMANAGER \_ no está \_ en línea**
+<span id="ERROR_TRANSACTIONMANAGER_NOT_ONLINE"></span><span id="error_transactionmanager_not_online"></span>**ERROR \_ TRANSACTIONMANAGER \_ NOT \_ ONLINE**
 </dt> <dd> <dl> <dt>
 
 6719 (0x1A3F)
@@ -1237,12 +1237,12 @@ No se pudo abrir el objeto TransactionManager especificado porque no se encontr�
 
 
 
-No se pudo crear o abrir el objeto especificado porque su TransactionManager asociado no está en línea. El TransactionManager debe estar totalmente en línea mediante una llamada a RecoverTransactionManager para recuperar hasta el final de su archivo de registro antes de que se puedan abrir los objetos de la transacción o los espacios de nombres ResourceManager. Además, los errores en la escritura de registros en el archivo de registro pueden hacer que un TransactionManager quede sin conexión.
+No se pudo crear ni abrir el objeto especificado, porque su TransactionManager asociado no está en línea. TransactionManager debe ponerse totalmente en línea llamando a RecoverTransactionManager para recuperarse hasta el final de su LogFile antes de que se puedan abrir los objetos de sus espacios de nombres Transaction o ResourceManager. Además, los errores al escribir registros en su LogFile pueden hacer que transactionManager se desconecta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTIONMANAGER_RECOVERY_NAME_COLLISION"></span><span id="error_transactionmanager_recovery_name_collision"></span>**ERROR \_ TRANSACTIONMANAGER de la colisión de \_ nombres de recuperación \_ \_**
+<span id="ERROR_TRANSACTIONMANAGER_RECOVERY_NAME_COLLISION"></span><span id="error_transactionmanager_recovery_name_collision"></span>**ERROR \_ TRANSACTIONMANAGER \_ RECOVERY \_ NAME \_ COLLISION**
 </dt> <dd> <dl> <dt>
 
 6720 (0x1A40)
@@ -1250,12 +1250,12 @@ No se pudo crear o abrir el objeto especificado porque su TransactionManager aso
 
 
 
-El TransactionManager especificado no pudo crear los objetos contenidos en su archivo de registro en el espacio de nombres ob. Por lo tanto, el TransactionManager no se pudo recuperar.
+El TransactionManager especificado no pudo crear los objetos contenidos en su archivo de registro en el espacio de nombres Ob. Por lo tanto, TransactionManager no se pudo recuperar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_NOT_ROOT"></span><span id="error_transaction_not_root"></span>**ERROR de \_ transacción \_ no \_ raíz**
+<span id="ERROR_TRANSACTION_NOT_ROOT"></span><span id="error_transaction_not_root"></span>**ERROR \_ TRANSACTION \_ NOT \_ ROOT**
 </dt> <dd> <dl> <dt>
 
 6721 (0x1A41)
@@ -1263,12 +1263,12 @@ El TransactionManager especificado no pudo crear los objetos contenidos en su ar
 
 
 
-No se pudo completar la llamada para crear una inscripción superior en este objeto de transacción porque el objeto de transacción especificado para la inscripción es una rama subordinada de la transacción. Solo se puede dar de alta la raíz de la transacción en como un nivel superior.
+No se pudo completar la llamada para crear una alta superior en este objeto Transaction, porque el objeto Transaction especificado para la alta es una rama subordinada de transaction. Solo la raíz de la transacción se puede inselecciona como superior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_OBJECT_EXPIRED"></span><span id="error_transaction_object_expired"></span>**objeto de transacción de ERROR \_ \_ \_ expirado**
+<span id="ERROR_TRANSACTION_OBJECT_EXPIRED"></span><span id="error_transaction_object_expired"></span>**ERROR \_ TRANSACTION \_ OBJECT \_ EXPIRED**
 </dt> <dd> <dl> <dt>
 
 6722 (0x1A42)
@@ -1276,12 +1276,12 @@ No se pudo completar la llamada para crear una inscripción superior en este obj
 
 
 
-Dado que el administrador de transacciones asociado o el administrador de recursos se ha cerrado, el identificador ya no es válido.
+Dado que se ha cerrado el administrador de transacciones o el administrador de recursos asociado, el identificador ya no es válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_RESPONSE_NOT_ENLISTED"></span><span id="error_transaction_response_not_enlisted"></span>**respuesta de transacción de ERROR \_ \_ \_ no \_ dada de alta**
+<span id="ERROR_TRANSACTION_RESPONSE_NOT_ENLISTED"></span><span id="error_transaction_response_not_enlisted"></span>**ERROR \_ TRANSACTION \_ RESPONSE \_ NOT \_ ENLISTED**
 </dt> <dd> <dl> <dt>
 
 6723 (0x1A43)
@@ -1289,12 +1289,12 @@ Dado que el administrador de transacciones asociado o el administrador de recurs
 
 
 
-No se pudo realizar la operación especificada en esta inscripción superior porque la inscripción no se creó con la respuesta de finalización correspondiente en NotificationMask.
+La operación especificada no se pudo realizar en esta alta superior, porque la lista no se creó con la respuesta de finalización correspondiente en NotificationMask.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_RECORD_TOO_LONG"></span><span id="error_transaction_record_too_long"></span>**registro de transacción de ERROR \_ \_ \_ demasiado \_ largo**
+<span id="ERROR_TRANSACTION_RECORD_TOO_LONG"></span><span id="error_transaction_record_too_long"></span>**REGISTRO DE \_ \_ TRANSACCIÓN \_ DE ERROR DEMASIADO \_ LARGO**
 </dt> <dd> <dl> <dt>
 
 6724 (0x1A44)
@@ -1302,12 +1302,12 @@ No se pudo realizar la operación especificada en esta inscripción superior por
 
 
 
-No se pudo realizar la operación especificada porque el registro que se registraría era demasiado largo. Esto puede deberse a dos condiciones: hay demasiadas inscritos en esta transacción o la combinación de RecoveryInformation que se está registrando en nombre de las inscritos es demasiado larga.
+No se pudo realizar la operación especificada, porque el registro que se registraría era demasiado largo. Esto puede ocurrir debido a dos condiciones: o hay demasiadas inscciones en esta transacción o la combinación de RecoveryInformation que se registra en nombre de esas inscciones es demasiado larga.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IMPLICIT_TRANSACTION_NOT_SUPPORTED"></span><span id="error_implicit_transaction_not_supported"></span>**ERROR \_ de \_ transacción implícita \_ no \_ compatible**
+<span id="ERROR_IMPLICIT_TRANSACTION_NOT_SUPPORTED"></span><span id="error_implicit_transaction_not_supported"></span>**ERROR \_ TRANSACCIÓN \_ IMPLÍCITA NO \_ \_ ADMITIDA**
 </dt> <dd> <dl> <dt>
 
 6725 (0x1A45)
@@ -1315,12 +1315,12 @@ No se pudo realizar la operación especificada porque el registro que se registr
 
 
 
-No se admiten las transacciones implícitas.
+No se admite la transacción implícita.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_INTEGRITY_VIOLATED"></span><span id="error_transaction_integrity_violated"></span>**ERROR \_ de \_ integridad de transacción \_ infringida**
+<span id="ERROR_TRANSACTION_INTEGRITY_VIOLATED"></span><span id="error_transaction_integrity_violated"></span>**INTEGRIDAD DE \_ \_ TRANSACCIÓN DE ERROR \_ INFRINGIDO**
 </dt> <dd> <dl> <dt>
 
 6726 (0x1A46)
@@ -1328,12 +1328,12 @@ No se admiten las transacciones implícitas.
 
 
 
-El administrador de transacciones de kernel tenía que anular u olvidar la transacción porque bloqueó el progreso de avance.
+El administrador de transacciones del kernel tuvo que anular u olvidar la transacción porque bloqueó el progreso hacia delante.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTIONMANAGER_IDENTITY_MISMATCH"></span><span id="error_transactionmanager_identity_mismatch"></span>**ERROR \_ de \_ desigualdad de identidad de TRANSACTIONMANAGER \_**
+<span id="ERROR_TRANSACTIONMANAGER_IDENTITY_MISMATCH"></span><span id="error_transactionmanager_identity_mismatch"></span>**ERROR \_ TRANSACTIONMANAGER \_ IDENTITY \_ MISMATCH**
 </dt> <dd> <dl> <dt>
 
 6727 (0x1A47)
@@ -1341,12 +1341,12 @@ El administrador de transacciones de kernel tenía que anular u olvidar la trans
 
 
 
-La identidad TransactionManager suministrada no coincidía con la que se registró en el archivo de registro de TransactionManager.
+La identidad de TransactionManager proporcionada no coincide con la registrada en el archivo de registro de TransactionManager.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RM_CANNOT_BE_FROZEN_FOR_SNAPSHOT"></span><span id="error_rm_cannot_be_frozen_for_snapshot"></span>**\_ \_ no se puede \_ \_ inmovilizar el error RM \_ para la \_ instantánea**
+<span id="ERROR_RM_CANNOT_BE_FROZEN_FOR_SNAPSHOT"></span><span id="error_rm_cannot_be_frozen_for_snapshot"></span>**ERROR \_ RM NO SE PUEDE \_ \_ \_ INMOVILIZAR PARA LA \_ \_ INSTANTÁNEA**
 </dt> <dd> <dl> <dt>
 
 6728 (0x1A48)
@@ -1359,7 +1359,7 @@ Esta operación de instantánea no puede continuar porque un administrador de re
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_MUST_WRITETHROUGH"></span><span id="error_transaction_must_writethrough"></span>**la \_ transacción de error \_ debe \_ WRITETHROUGH**
+<span id="ERROR_TRANSACTION_MUST_WRITETHROUGH"></span><span id="error_transaction_must_writethrough"></span>**LA \_ TRANSACCIÓN DE \_ ERROR DEBE ESCRIBIR \_ EN ESCRITURA**
 </dt> <dd> <dl> <dt>
 
 6729 (0x1A49)
@@ -1367,12 +1367,12 @@ Esta operación de instantánea no puede continuar porque un administrador de re
 
 
 
-No se puede dar de alta la transacción en con el EnlistmentMask especificado, porque la transacción ya ha completado la fase de prepreparación. Para garantizar la exactitud, ResourceManager debe cambiar a un modo de escritura a través y dejar de almacenar en caché los datos en esta transacción. La inscripción solo en fases posteriores de la transacción puede realizarse correctamente.
+La transacción no se puede dar de alta con la enlistmentMask especificada, porque la transacción ya ha completado la fase de preparación previa. Para garantizar la corrección, ResourceManager debe cambiar a un modo de escritura a través y dejar de almacenar en caché los datos dentro de esta transacción. La alta solo para las fases de transacción posteriores puede seguir siendo correcta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_NO_SUPERIOR"></span><span id="error_transaction_no_superior"></span>**ERROR de \_ transacción \_ no \_ superior**
+<span id="ERROR_TRANSACTION_NO_SUPERIOR"></span><span id="error_transaction_no_superior"></span>**ERROR \_ TRANSACTION \_ NO \_ SUPERIOR**
 </dt> <dd> <dl> <dt>
 
 6730 (0x1A4A)
@@ -1380,12 +1380,12 @@ No se puede dar de alta la transacción en con el EnlistmentMask especificado, p
 
 
 
-La transacción no tiene una inscripción superior.
+La transacción no tiene una alta superior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HEURISTIC_DAMAGE_POSSIBLE"></span><span id="error_heuristic_damage_possible"></span>**daños en la heurística de errores \_ \_ \_ posibles**
+<span id="ERROR_HEURISTIC_DAMAGE_POSSIBLE"></span><span id="error_heuristic_damage_possible"></span>**POSIBLES \_ DAÑOS \_ HEURÍSTICOS DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 6731 (0x1A4B)
@@ -1393,12 +1393,12 @@ La transacción no tiene una inscripción superior.
 
 
 
-Se completó el intento de confirmar la transacción, pero es posible que alguna parte del árbol de transacciones no se confirmara correctamente debido a la heurística. Por lo tanto, es posible que algunos datos modificados en la transacción no se hayan confirmado, lo que provoca una incoherencia transaccional. Si es posible, Compruebe la coherencia de los datos asociados.
+Se completó el intento de confirmar la transacción, pero es posible que alguna parte del árbol de transacciones no se confirmara correctamente debido a la heurística. Por lo tanto, es posible que algunos datos modificados en la transacción no se haya confirmado, lo que da lugar a una incoherencia transaccional. Si es posible, compruebe la coherencia de los datos asociados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTIONAL_CONFLICT"></span><span id="error_transactional_conflict"></span>**\_conflicto transaccional de errores \_**
+<span id="ERROR_TRANSACTIONAL_CONFLICT"></span><span id="error_transactional_conflict"></span>**ERROR \_ TRANSACTIONAL \_ CONFLICT**
 </dt> <dd> <dl> <dt>
 
 6800 (0x1A90)
@@ -1406,12 +1406,12 @@ Se completó el intento de confirmar la transacción, pero es posible que alguna
 
 
 
-La función intentó utilizar un nombre que está reservado para su uso por otra transacción.
+La función intentó usar un nombre que está reservado para que lo use otra transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RM_NOT_ACTIVE"></span><span id="error_rm_not_active"></span>**ERROR \_ RM \_ no \_ activo**
+<span id="ERROR_RM_NOT_ACTIVE"></span><span id="error_rm_not_active"></span>**ERROR \_ RM \_ NOT \_ ACTIVE**
 </dt> <dd> <dl> <dt>
 
 6801 (0x1A91)
@@ -1419,12 +1419,12 @@ La función intentó utilizar un nombre que está reservado para su uso por otra
 
 
 
-La compatibilidad con transacciones en el administrador de recursos especificado no se inició o se apagó debido a un error.
+La compatibilidad con transacciones en el administrador de recursos especificado no se inicia o se cierra debido a un error.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RM_METADATA_CORRUPT"></span><span id="error_rm_metadata_corrupt"></span>**ERROR \_ de \_ metadatos de RM \_ dañados**
+<span id="ERROR_RM_METADATA_CORRUPT"></span><span id="error_rm_metadata_corrupt"></span>**ERROR \_ RM \_ METADATA \_ CORRUPT**
 </dt> <dd> <dl> <dt>
 
 6802 (0x1A92)
@@ -1432,12 +1432,12 @@ La compatibilidad con transacciones en el administrador de recursos especificado
 
 
 
-Los metadatos de RM están dañados. El RM no funcionará.
+Los metadatos del rm se han dañado. El RM no funcionará.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DIRECTORY_NOT_RM"></span><span id="error_directory_not_rm"></span>**directorio de errores \_ \_ no \_ RM**
+<span id="ERROR_DIRECTORY_NOT_RM"></span><span id="error_directory_not_rm"></span>**DIRECTORIO \_ DE ERROR NO \_ \_ RM**
 </dt> <dd> <dl> <dt>
 
 6803 (0x1A93)
@@ -1450,7 +1450,7 @@ El directorio especificado no contiene un administrador de recursos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTIONS_UNSUPPORTED_REMOTE"></span><span id="error_transactions_unsupported_remote"></span>**transacciones de ERROR \_ \_ remotas no admitidas \_**
+<span id="ERROR_TRANSACTIONS_UNSUPPORTED_REMOTE"></span><span id="error_transactions_unsupported_remote"></span>**TRANSACCIONES \_ DE ERROR \_ REMOTAS NO \_ ADMITIDAS**
 </dt> <dd> <dl> <dt>
 
 6805 (0x1A95)
@@ -1458,12 +1458,12 @@ El directorio especificado no contiene un administrador de recursos.
 
 
 
-El recurso compartido o el servidor remoto no admiten operaciones de archivo de transacción.
+El servidor remoto o recurso compartido no admite operaciones de archivos con transacciones.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_RESIZE_INVALID_SIZE"></span><span id="error_log_resize_invalid_size"></span>**tamaño de registro de errores de \_ \_ \_ tamaño no válido \_**
+<span id="ERROR_LOG_RESIZE_INVALID_SIZE"></span><span id="error_log_resize_invalid_size"></span>**TAMAÑO NO \_ VÁLIDO DEL TAMAÑO DEL REGISTRO DE \_ \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6806 (0x1A96)
@@ -1471,12 +1471,12 @@ El recurso compartido o el servidor remoto no admiten operaciones de archivo de 
 
 
 
-El tamaño de registro solicitado no es válido.
+El tamaño del registro solicitado no es válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OBJECT_NO_LONGER_EXISTS"></span><span id="error_object_no_longer_exists"></span>**el objeto de ERROR ya \_ \_ no \_ \_ existe**
+<span id="ERROR_OBJECT_NO_LONGER_EXISTS"></span><span id="error_object_no_longer_exists"></span>**EL \_ OBJETO DE ERROR YA NO \_ \_ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 6807 (0x1A97)
@@ -1484,12 +1484,12 @@ El tamaño de registro solicitado no es válido.
 
 
 
-La reversión de un punto de retorno de la transacción ha eliminado el objeto (archivo, secuencia, vínculo) correspondiente al identificador.
+El objeto (archivo, secuencia, vínculo) correspondiente al identificador se ha eliminado mediante una reversión del punto de retorno de transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STREAM_MINIVERSION_NOT_FOUND"></span><span id="error_stream_miniversion_not_found"></span>**\_ \_ \_ no \_ se encontró la MINIVERSIÓN del flujo de error**
+<span id="ERROR_STREAM_MINIVERSION_NOT_FOUND"></span><span id="error_stream_miniversion_not_found"></span>**ERROR \_ STREAM \_ MINIVERSION \_ NOT \_ FOUND**
 </dt> <dd> <dl> <dt>
 
 6808 (0x1A98)
@@ -1502,7 +1502,7 @@ No se encontró la miniversión de archivo especificada para este archivo de tra
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STREAM_MINIVERSION_NOT_VALID"></span><span id="error_stream_miniversion_not_valid"></span>**la \_ miniversión del flujo de error \_ \_ no \_ es válida**
+<span id="ERROR_STREAM_MINIVERSION_NOT_VALID"></span><span id="error_stream_miniversion_not_valid"></span>**ERROR \_ STREAM \_ MINIVERSION \_ NOT \_ VALID**
 </dt> <dd> <dl> <dt>
 
 6809 (0x1A99)
@@ -1510,12 +1510,12 @@ No se encontró la miniversión de archivo especificada para este archivo de tra
 
 
 
-Se encontró la miniversión de archivo especificada, pero se invalidó. La causa más probable es la reversión de un punto de retorno de transacción.
+Se encontró la miniversión de archivo especificada, pero se ha invalidado. La causa más probable es una reversión del punto de retorno de transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MINIVERSION_INACCESSIBLE_FROM_SPECIFIED_TRANSACTION"></span><span id="error_miniversion_inaccessible_from_specified_transaction"></span>**ERROR \_ \_ de MINIVERSIÓN inaccesible \_ desde \_ la \_ transacción especificada**
+<span id="ERROR_MINIVERSION_INACCESSIBLE_FROM_SPECIFIED_TRANSACTION"></span><span id="error_miniversion_inaccessible_from_specified_transaction"></span>**ERROR \_ MINIVERSION \_ INACCESSIBLE \_ FROM \_ SPECIFIED \_ TRANSACTION**
 </dt> <dd> <dl> <dt>
 
 6810 (0x1A9A)
@@ -1528,7 +1528,7 @@ Una miniversión solo se puede abrir en el contexto de la transacción que la cr
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_OPEN_MINIVERSION_WITH_MODIFY_INTENT"></span><span id="error_cant_open_miniversion_with_modify_intent"></span>**ERROR no se pudo \_ \_ abrir la \_ miniversión con el \_ \_ intento de modificación \_**
+<span id="ERROR_CANT_OPEN_MINIVERSION_WITH_MODIFY_INTENT"></span><span id="error_cant_open_miniversion_with_modify_intent"></span>**ERROR \_ CANT \_ OPEN \_ MINIVERSION \_ WITH \_ MODIFY \_ INTENT**
 </dt> <dd> <dl> <dt>
 
 6811 (0x1A9B)
@@ -1536,12 +1536,12 @@ Una miniversión solo se puede abrir en el contexto de la transacción que la cr
 
 
 
-No es posible abrir una miniversión con el acceso de modificación.
+No es posible abrir una miniversión con acceso de modificación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_CREATE_MORE_STREAM_MINIVERSIONS"></span><span id="error_cant_create_more_stream_miniversions"></span>**ERROR no se pudo \_ \_ crear \_ más \_ secuencia \_ MINIVERSIONS**
+<span id="ERROR_CANT_CREATE_MORE_STREAM_MINIVERSIONS"></span><span id="error_cant_create_more_stream_miniversions"></span>**ERROR \_ CANT \_ CREATE \_ MORE \_ STREAM \_ MINIVERSIONS**
 </dt> <dd> <dl> <dt>
 
 6812 (0x1A9C)
@@ -1549,12 +1549,12 @@ No es posible abrir una miniversión con el acceso de modificación.
 
 
 
-No es posible crear más miniversions para esta secuencia.
+No es posible crear más miniversiones para esta secuencia.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REMOTE_FILE_VERSION_MISMATCH"></span><span id="error_remote_file_version_mismatch"></span>**ERROR \_ de \_ \_ coincidencia de versión de archivo remoto \_**
+<span id="ERROR_REMOTE_FILE_VERSION_MISMATCH"></span><span id="error_remote_file_version_mismatch"></span>**ERROR \_ REMOTE \_ FILE \_ VERSION \_ MISMATCH**
 </dt> <dd> <dl> <dt>
 
 6814 (0x1A9E)
@@ -1562,12 +1562,12 @@ No es posible crear más miniversions para esta secuencia.
 
 
 
-El servidor remoto ha enviado un número de versión o FID no coincidente para un archivo abierto con transacciones.
+El servidor remoto envió un número de versión no coincidente o Fid para un archivo abierto con transacciones.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HANDLE_NO_LONGER_VALID"></span><span id="error_handle_no_longer_valid"></span>**el identificador de ERROR ya \_ \_ no \_ \_ es válido**
+<span id="ERROR_HANDLE_NO_LONGER_VALID"></span><span id="error_handle_no_longer_valid"></span>**EL \_ IDENTIFICADOR DE ERROR YA NO ES \_ \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 6815 (0x1A9F)
@@ -1575,12 +1575,12 @@ El servidor remoto ha enviado un número de versión o FID no coincidente para u
 
 
 
-Una transacción ha invalidado el identificador. La causa más probable es la presencia de la asignación de memoria en un archivo o un controlador abierto cuando la transacción finaliza o se revierte al punto de retorno.
+Una transacción ha invalidado el identificador. La causa más probable es la presencia de asignación de memoria en un archivo o un identificador abierto cuando la transacción finalizó o revierte al punto de guardado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_TXF_METADATA"></span><span id="error_no_txf_metadata"></span>**ERROR: \_ no hay \_ \_ metadatos de TxF**
+<span id="ERROR_NO_TXF_METADATA"></span><span id="error_no_txf_metadata"></span>**ERROR \_ NO \_ TXF \_ METADATA**
 </dt> <dd> <dl> <dt>
 
 6816 (0x1AA0)
@@ -1593,7 +1593,7 @@ No hay metadatos de transacción en el archivo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CORRUPTION_DETECTED"></span><span id="error_log_corruption_detected"></span>**daños en el registro de errores \_ \_ \_ detectados**
+<span id="ERROR_LOG_CORRUPTION_DETECTED"></span><span id="error_log_corruption_detected"></span>**SE \_ DETECTÓ \_ DAÑOS EN EL REGISTRO \_ DE ERRORES**
 </dt> <dd> <dl> <dt>
 
 6817 (0x1AA1)
@@ -1606,7 +1606,7 @@ Los datos de registro están dañados.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_RECOVER_WITH_HANDLE_OPEN"></span><span id="error_cant_recover_with_handle_open"></span>**ERROR no se pudo \_ \_ recuperar \_ con el \_ identificador \_ abierto**
+<span id="ERROR_CANT_RECOVER_WITH_HANDLE_OPEN"></span><span id="error_cant_recover_with_handle_open"></span>**ERROR \_ NO SE PUEDE RECUPERAR CON EL IDENTIFICADOR \_ \_ \_ \_ ABIERTO**
 </dt> <dd> <dl> <dt>
 
 6818 (0x1AA2)
@@ -1614,12 +1614,12 @@ Los datos de registro están dañados.
 
 
 
-No se puede recuperar el archivo porque todavía hay un controlador abierto en él.
+El archivo no se puede recuperar porque todavía hay un identificador abierto en él.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RM_DISCONNECTED"></span><span id="error_rm_disconnected"></span>**ERROR de \_ RM \_ desconectado**
+<span id="ERROR_RM_DISCONNECTED"></span><span id="error_rm_disconnected"></span>**ERROR \_ RM \_ DESCONECTADO**
 </dt> <dd> <dl> <dt>
 
 6819 (0x1AA3)
@@ -1627,12 +1627,12 @@ No se puede recuperar el archivo porque todavía hay un controlador abierto en �
 
 
 
-El resultado de la transacción no está disponible porque el administrador de recursos responsable se ha desconectado.
+El resultado de la transacción no está disponible porque el administrador de recursos responsable de ella se ha desconectado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ENLISTMENT_NOT_SUPERIOR"></span><span id="error_enlistment_not_superior"></span>**INSCRIPCIÓN de ERROR \_ \_ no \_ superior**
+<span id="ERROR_ENLISTMENT_NOT_SUPERIOR"></span><span id="error_enlistment_not_superior"></span>**ERROR \_ ENLISTMENT \_ NOT \_ SUPERIOR**
 </dt> <dd> <dl> <dt>
 
 6820 (0x1AA4)
@@ -1640,12 +1640,12 @@ El resultado de la transacción no está disponible porque el administrador de r
 
 
 
-Se rechazó la solicitud porque la inscripción en cuestión no es una inscripción superior.
+La solicitud se rechazó porque la lista en cuestión no es una alta superior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RECOVERY_NOT_NEEDED"></span><span id="error_recovery_not_needed"></span>**recuperación de errores \_ \_ no \_ necesaria**
+<span id="ERROR_RECOVERY_NOT_NEEDED"></span><span id="error_recovery_not_needed"></span>**RECUPERACIÓN \_ DE ERRORES NO \_ \_ NECESARIA**
 </dt> <dd> <dl> <dt>
 
 6821 (0x1AA5)
@@ -1653,12 +1653,12 @@ Se rechazó la solicitud porque la inscripción en cuestión no es una inscripci
 
 
 
-El administrador de recursos transaccional ya es coherente. No es necesaria la recuperación.
+El administrador de recursos transaccional ya es coherente. La recuperación no es necesaria.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RM_ALREADY_STARTED"></span><span id="error_rm_already_started"></span>**ERROR \_ RM \_ ya \_ iniciado**
+<span id="ERROR_RM_ALREADY_STARTED"></span><span id="error_rm_already_started"></span>**ERROR \_ RM \_ YA \_ INICIADO**
 </dt> <dd> <dl> <dt>
 
 6822 (0x1AA6)
@@ -1666,12 +1666,12 @@ El administrador de recursos transaccional ya es coherente. No es necesaria la r
 
 
 
-El administrador de recursos de transacciones ya se ha iniciado.
+El administrador de recursos transaccional ya se ha iniciado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FILE_IDENTITY_NOT_PERSISTENT"></span><span id="error_file_identity_not_persistent"></span>**la \_ identidad del archivo de error \_ no es \_ \_ persistente**
+<span id="ERROR_FILE_IDENTITY_NOT_PERSISTENT"></span><span id="error_file_identity_not_persistent"></span>**IDENTIDAD DEL \_ ARCHIVO DE ERROR NO \_ \_ \_ PERSISTENTE**
 </dt> <dd> <dl> <dt>
 
 6823 (0x1AA7)
@@ -1679,12 +1679,12 @@ El administrador de recursos de transacciones ya se ha iniciado.
 
 
 
-No se puede abrir el archivo de transacciones, porque su identidad depende del resultado de una transacción no resuelta.
+El archivo no se puede abrir transaccionalmente, porque su identidad depende del resultado de una transacción sin resolver.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_BREAK_TRANSACTIONAL_DEPENDENCY"></span><span id="error_cant_break_transactional_dependency"></span>**ERROR no se pudo \_ \_ interrumpir la \_ \_ dependencia transaccional**
+<span id="ERROR_CANT_BREAK_TRANSACTIONAL_DEPENDENCY"></span><span id="error_cant_break_transactional_dependency"></span>**ERROR \_ NO PUEDE INTERRUMPIR LA DEPENDENCIA \_ \_ \_ TRANSACCIONAL**
 </dt> <dd> <dl> <dt>
 
 6824 (0x1AA8)
@@ -1692,12 +1692,12 @@ No se puede abrir el archivo de transacciones, porque su identidad depende del r
 
 
 
-No se puede realizar la operación porque otra transacción depende del hecho de que esta propiedad no cambie.
+La operación no se puede realizar porque otra transacción depende del hecho de que esta propiedad no cambiará.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_CROSS_RM_BOUNDARY"></span><span id="error_cant_cross_rm_boundary"></span>**no se pudo obtener el \_ \_ \_ límite de RM cruzado \_**
+<span id="ERROR_CANT_CROSS_RM_BOUNDARY"></span><span id="error_cant_cross_rm_boundary"></span>**ERROR \_ CANT \_ CROSS \_ RM \_ BOUNDARY**
 </dt> <dd> <dl> <dt>
 
 6825 (0x1AA9)
@@ -1705,12 +1705,12 @@ No se puede realizar la operación porque otra transacción depende del hecho de
 
 
 
-La operación implicaría un solo archivo con dos administradores de recursos transaccionales y, por lo tanto, no se permite.
+La operación implicaría un único archivo con dos administradores de recursos transaccionales y, por tanto, no se permite.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TXF_DIR_NOT_EMPTY"></span><span id="error_txf_dir_not_empty"></span>**ERROR \_ dir de TxF \_ \_ no \_ vacío**
+<span id="ERROR_TXF_DIR_NOT_EMPTY"></span><span id="error_txf_dir_not_empty"></span>**ERROR \_ TXF \_ DIR \_ NOT \_ EMPTY**
 </dt> <dd> <dl> <dt>
 
 6826 (0x1AAA)
@@ -1718,12 +1718,12 @@ La operación implicaría un solo archivo con dos administradores de recursos tr
 
 
 
-El directorio $Txf debe estar vacío para que esta operación se realice correctamente.
+El $Txf debe estar vacío para que esta operación se pueda realizar correctamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INDOUBT_TRANSACTIONS_EXIST"></span><span id="error_indoubt_transactions_exist"></span>**\_ \_ existen transacciones de ERROR de errores \_**
+<span id="ERROR_INDOUBT_TRANSACTIONS_EXIST"></span><span id="error_indoubt_transactions_exist"></span>**EXISTEN \_ TRANSACCIONES INDOUBT \_ DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 6827 (0x1AAB)
@@ -1736,7 +1736,7 @@ La operación dejaría un administrador de recursos transaccional en un estado i
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TM_VOLATILE"></span><span id="error_tm_volatile"></span>**ERROR \_ TM \_ volatile**
+<span id="ERROR_TM_VOLATILE"></span><span id="error_tm_volatile"></span>**ERROR \_ TM \_ VOLATILE**
 </dt> <dd> <dl> <dt>
 
 6828 (0x1AAC)
@@ -1749,7 +1749,7 @@ No se pudo completar la operación porque el administrador de transacciones no t
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ROLLBACK_TIMER_EXPIRED"></span><span id="error_rollback_timer_expired"></span>**ERROR \_ del temporizador de reversión \_ \_ expirado**
+<span id="ERROR_ROLLBACK_TIMER_EXPIRED"></span><span id="error_rollback_timer_expired"></span>**HA \_ EXPIRADO EL \_ TEMPORIZADOR DE REVERSIÓN DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6829 (0x1AAD)
@@ -1757,12 +1757,12 @@ No se pudo completar la operación porque el administrador de transacciones no t
 
 
 
-No se pudo programar una reversión porque ya se ejecutó una reversión programada anteriormente o se puso en cola para su ejecución.
+No se pudo programar una reversión porque una reversión programada previamente ya se ha ejecutado o se ha puesto en cola para su ejecución.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TXF_ATTRIBUTE_CORRUPT"></span><span id="error_txf_attribute_corrupt"></span>**atributo de TxF de ERROR \_ \_ \_ dañado**
+<span id="ERROR_TXF_ATTRIBUTE_CORRUPT"></span><span id="error_txf_attribute_corrupt"></span>**ERROR \_ TXF \_ ATTRIBUTE \_ CORRUPT**
 </dt> <dd> <dl> <dt>
 
 6830 (0x1AAE)
@@ -1770,12 +1770,12 @@ No se pudo programar una reversión porque ya se ejecutó una reversión program
 
 
 
-El atributo de metadatos transaccional del archivo o directorio está dañado y es ilegible.
+El atributo de metadatos transaccional del archivo o directorio está dañado e ilegible.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EFS_NOT_ALLOWED_IN_TRANSACTION"></span><span id="error_efs_not_allowed_in_transaction"></span>**ERROR \_ \_ de EFS no \_ permitido en la \_ \_ transacción**
+<span id="ERROR_EFS_NOT_ALLOWED_IN_TRANSACTION"></span><span id="error_efs_not_allowed_in_transaction"></span>**ERROR \_ EFS \_ NO PERMITIDO EN \_ LA \_ \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 6831 (0x1AAF)
@@ -1788,7 +1788,7 @@ No se pudo completar la operación de cifrado porque una transacción está acti
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTIONAL_OPEN_NOT_ALLOWED"></span><span id="error_transactional_open_not_allowed"></span>**ERROR de \_ apertura transaccional \_ \_ no \_ permitida**
+<span id="ERROR_TRANSACTIONAL_OPEN_NOT_ALLOWED"></span><span id="error_transactional_open_not_allowed"></span>**ERROR \_ NO SE PERMITE ABRIR \_ \_ \_ TRANSACCIONAL**
 </dt> <dd> <dl> <dt>
 
 6832 (0x1AB0)
@@ -1796,12 +1796,12 @@ No se pudo completar la operación de cifrado porque una transacción está acti
 
 
 
-No se permite abrir este objeto en una transacción.
+No se permite que este objeto se abra en una transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_GROWTH_FAILED"></span><span id="error_log_growth_failed"></span>**error de \_ crecimiento del registro de errores \_ \_**
+<span id="ERROR_LOG_GROWTH_FAILED"></span><span id="error_log_growth_failed"></span>**ERROR DE \_ CRECIMIENTO DEL REGISTRO DE \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6833 (0x1AB1)
@@ -1809,12 +1809,12 @@ No se permite abrir este objeto en una transacción.
 
 
 
-Error al tratar de crear espacio en el registro del administrador de recursos transaccionales. El estado de error se ha registrado en el registro de eventos.
+Error al intentar crear espacio en el registro del administrador de recursos transaccional. El estado de error se ha registrado en el registro de eventos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTED_MAPPING_UNSUPPORTED_REMOTE"></span><span id="error_transacted_mapping_unsupported_remote"></span>**ERROR de \_ asignación de transacción \_ \_ remota no admitida \_**
+<span id="ERROR_TRANSACTED_MAPPING_UNSUPPORTED_REMOTE"></span><span id="error_transacted_mapping_unsupported_remote"></span>**ERROR \_ DE \_ ASIGNACIÓN DE TRANSACCIONES \_ NO ADMITIDA \_ REMOTA**
 </dt> <dd> <dl> <dt>
 
 6834 (0x1AB2)
@@ -1822,12 +1822,12 @@ Error al tratar de crear espacio en el registro del administrador de recursos tr
 
 
 
-No se admite la asignación de memoria (creación de una sección asignada) a un archivo remoto en una transacción.
+No se admite la asignación de memoria (creación de una sección asignada) de un archivo remoto en una transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TXF_METADATA_ALREADY_PRESENT"></span><span id="error_txf_metadata_already_present"></span>**los \_ metadatos de TxF de error \_ \_ ya están \_ presentes**
+<span id="ERROR_TXF_METADATA_ALREADY_PRESENT"></span><span id="error_txf_metadata_already_present"></span>**ERROR \_ TXF \_ METADATA \_ ALREADY \_ PRESENT**
 </dt> <dd> <dl> <dt>
 
 6835 (0x1AB3)
@@ -1840,7 +1840,7 @@ Los metadatos de transacción ya están presentes en este archivo y no se pueden
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_SCOPE_CALLBACKS_NOT_SET"></span><span id="error_transaction_scope_callbacks_not_set"></span>**ERROR \_ de \_ devoluciones de llamada de ámbito de transacción \_ \_ no \_ establecida**
+<span id="ERROR_TRANSACTION_SCOPE_CALLBACKS_NOT_SET"></span><span id="error_transaction_scope_callbacks_not_set"></span>**DEVOLUCIONES DE \_ LLAMADA DE ÁMBITO DE \_ \_ TRANSACCIÓN DE ERROR NO \_ \_ ESTABLECIDAS**
 </dt> <dd> <dl> <dt>
 
 6836 (0x1AB4)
@@ -1848,12 +1848,12 @@ Los metadatos de transacción ya están presentes en este archivo y no se pueden
 
 
 
-No se pudo especificar un ámbito de transacción porque el controlador de ámbito no se ha inicializado.
+No se pudo especificar un ámbito de transacción porque no se ha inicializado el controlador de ámbito.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_REQUIRED_PROMOTION"></span><span id="error_transaction_required_promotion"></span>**promoción de la transacción de ERROR \_ \_ necesaria \_**
+<span id="ERROR_TRANSACTION_REQUIRED_PROMOTION"></span><span id="error_transaction_required_promotion"></span>**PROMOCIÓN NECESARIA \_ DE \_ TRANSACCIÓN \_ DE ERROR**
 </dt> <dd> <dl> <dt>
 
 6837 (0x1AB5)
@@ -1861,12 +1861,12 @@ No se pudo especificar un ámbito de transacción porque el controlador de ámbi
 
 
 
-La promoción era necesaria para permitir que el administrador de recursos se inscriba, pero la transacción se configuró para no permitirla.
+La promoción era necesaria para permitir que el administrador de recursos se dara de alta, pero la transacción se estableció para no permitirla.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANNOT_EXECUTE_FILE_IN_TRANSACTION"></span><span id="error_cannot_execute_file_in_transaction"></span>**ERROR: \_ no se puede \_ ejecutar el \_ archivo en la \_ \_ transacción**
+<span id="ERROR_CANNOT_EXECUTE_FILE_IN_TRANSACTION"></span><span id="error_cannot_execute_file_in_transaction"></span>**ERROR \_ NO SE PUEDE EJECUTAR EL ARCHIVO EN LA \_ \_ \_ \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 6838 (0x1AB6)
@@ -1874,12 +1874,12 @@ La promoción era necesaria para permitir que el administrador de recursos se in
 
 
 
-Este archivo está abierto para su modificación en una transacción no resuelta y solo se puede abrir para ejecutarlo un lector de transacción.
+Este archivo está abierto para su modificación en una transacción sin resolver y solo un lector de transacciones puede abrir para su ejecución.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTIONS_NOT_FROZEN"></span><span id="error_transactions_not_frozen"></span>**transacciones de ERROR \_ \_ no \_ inmovilizadas**
+<span id="ERROR_TRANSACTIONS_NOT_FROZEN"></span><span id="error_transactions_not_frozen"></span>**TRANSACCIONES \_ DE ERROR NO \_ \_ INMOVILIZADAS**
 </dt> <dd> <dl> <dt>
 
 6839 (0x1AB7)
@@ -1887,12 +1887,12 @@ Este archivo está abierto para su modificación en una transacción no resuelta
 
 
 
-Se omitió la solicitud para reanudar las transacciones inmovilizadas porque las transacciones no se han inmovilizado previamente.
+La solicitud de descongelar transacciones inmovilizadas se omitió porque las transacciones no se habían inmovilizado previamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_FREEZE_IN_PROGRESS"></span><span id="error_transaction_freeze_in_progress"></span>**ERROR \_ \_ en la inmovilización \_ de transacciones en \_ curso**
+<span id="ERROR_TRANSACTION_FREEZE_IN_PROGRESS"></span><span id="error_transaction_freeze_in_progress"></span>**ERROR \_ DE \_ INMOVILIZACIÓN DE \_ TRANSACCIONES EN \_ CURSO**
 </dt> <dd> <dl> <dt>
 
 6840 (0x1AB8)
@@ -1900,12 +1900,12 @@ Se omitió la solicitud para reanudar las transacciones inmovilizadas porque las
 
 
 
-No se pueden inmovilizar las transacciones porque ya hay una inmovilización en curso.
+Las transacciones no se pueden inmovilizar porque ya hay una inmovilización en curso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_SNAPSHOT_VOLUME"></span><span id="error_not_snapshot_volume"></span>**ERROR \_ : \_ volumen de instantánea \_**
+<span id="ERROR_NOT_SNAPSHOT_VOLUME"></span><span id="error_not_snapshot_volume"></span>**ERROR \_ NO VOLUMEN DE \_ \_ INSTANTÁNEAS**
 </dt> <dd> <dl> <dt>
 
 6841 (0x1AB9)
@@ -1913,12 +1913,12 @@ No se pueden inmovilizar las transacciones porque ya hay una inmovilización en 
 
 
 
-El volumen de destino no es un volumen de instantánea. Esta operación solo es válida en un volumen montado como una instantánea.
+El volumen de destino no es un volumen de instantáneas. Esta operación solo es válida en un volumen montado como una instantánea.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_SAVEPOINT_WITH_OPEN_FILES"></span><span id="error_no_savepoint_with_open_files"></span>**ERROR: \_ no hay ningún \_ punto \_ de retorno con \_ \_ archivos abiertos**
+<span id="ERROR_NO_SAVEPOINT_WITH_OPEN_FILES"></span><span id="error_no_savepoint_with_open_files"></span>**ERROR \_ NO \_ SAVEPOINT \_ WITH \_ OPEN \_ FILES**
 </dt> <dd> <dl> <dt>
 
 6842 (0x1ABA)
@@ -1926,12 +1926,12 @@ El volumen de destino no es un volumen de instantánea. Esta operación solo es 
 
 
 
-No se pudo realizar la operación de punto de retorno porque los archivos están abiertos en la transacción. Esto no se permite.
+Error en la operación de punto de guardado porque los archivos están abiertos en la transacción. Esto no se permite.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DATA_LOST_REPAIR"></span><span id="error_data_lost_repair"></span>**reparación de errores de \_ datos \_ perdidos \_**
+<span id="ERROR_DATA_LOST_REPAIR"></span><span id="error_data_lost_repair"></span>**REPARACIÓN PERDIDA \_ DE \_ DATOS DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 6843 (0x1ABB)
@@ -1944,7 +1944,7 @@ Windows ha detectado daños en un archivo y ese archivo se ha reparado desde ent
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SPARSE_NOT_ALLOWED_IN_TRANSACTION"></span><span id="error_sparse_not_allowed_in_transaction"></span>**ERROR \_ disperso \_ no \_ permitido \_ en la \_ transacción**
+<span id="ERROR_SPARSE_NOT_ALLOWED_IN_TRANSACTION"></span><span id="error_sparse_not_allowed_in_transaction"></span>**ERROR \_ DISPERSO NO PERMITIDO EN LA \_ \_ \_ \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 6844 (0x1ABC)
@@ -1952,12 +1952,12 @@ Windows ha detectado daños en un archivo y ese archivo se ha reparado desde ent
 
 
 
-No se pudo completar la operación dispersa porque hay una transacción activa en el archivo.
+No se pudo completar la operación dispersa porque una transacción está activa en el archivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TM_IDENTITY_MISMATCH"></span><span id="error_tm_identity_mismatch"></span>**ERROR \_ de \_ incoherencia de identidad de TM \_**
+<span id="ERROR_TM_IDENTITY_MISMATCH"></span><span id="error_tm_identity_mismatch"></span>**ERROR \_ TM \_ IDENTITY \_ MISMATCH**
 </dt> <dd> <dl> <dt>
 
 6845 (0x1ABD)
@@ -1965,12 +1965,12 @@ No se pudo completar la operación dispersa porque hay una transacción activa e
 
 
 
-Error en la llamada para crear un objeto TransactionManager porque la identidad de TM almacenada en el archivo de registro no coincide con la identidad de TM que se pasó como argumento.
+Error en la llamada para crear un objeto TransactionManager porque la identidad de Tm almacenada en el archivo de registro no coincide con la identidad tm que se pasó como argumento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FLOATED_SECTION"></span><span id="error_floated_section"></span>**ERROR de la \_ \_ sección flotante**
+<span id="ERROR_FLOATED_SECTION"></span><span id="error_floated_section"></span>**SECCIÓN \_ FLOTANTE DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 6846 (0x1ABE)
@@ -1978,12 +1978,12 @@ Error en la llamada para crear un objeto TransactionManager porque la identidad 
 
 
 
-Se intentó una operación de e/s en un objeto de sección que se ha flotado como resultado de la finalización de una transacción. No hay datos válidos.
+Se intentó realizar E/S en un objeto de sección que se ha flotante como resultado de una finalización de la transacción. No hay datos válidos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANNOT_ACCEPT_TRANSACTED_WORK"></span><span id="error_cannot_accept_transacted_work"></span>**el ERROR \_ no puede \_ aceptar el \_ trabajo de transacción \_**
+<span id="ERROR_CANNOT_ACCEPT_TRANSACTED_WORK"></span><span id="error_cannot_accept_transacted_work"></span>**ERROR \_ NO SE PUEDE ACEPTAR EL TRABAJO DE \_ \_ \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 6847 (0x1ABF)
@@ -1991,12 +1991,12 @@ Se intentó una operación de e/s en un objeto de sección que se ha flotado com
 
 
 
-El administrador de recursos de transacciones no puede aceptar actualmente el trabajo de transacción debido a una condición transitoria como recursos insuficientes.
+El administrador de recursos transaccional no puede aceptar actualmente el trabajo de transacción debido a una condición transitoria, como los pocos recursos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANNOT_ABORT_TRANSACTIONS"></span><span id="error_cannot_abort_transactions"></span>**ERROR \_ no se pueden \_ anular \_ las transacciones**
+<span id="ERROR_CANNOT_ABORT_TRANSACTIONS"></span><span id="error_cannot_abort_transactions"></span>**ERROR \_ NO SE PUEDEN ANULAR \_ \_ TRANSACCIONES**
 </dt> <dd> <dl> <dt>
 
 6848 (0x1AC0)
@@ -2004,12 +2004,12 @@ El administrador de recursos de transacciones no puede aceptar actualmente el tr
 
 
 
-El administrador de recursos transaccional tenía demasiados contabilizan pendientes que no se pudieron anular. Se ha cerrado el administrador de recursos transaccionales.
+El administrador de recursos transaccional tenía demasiadas tranacciones pendientes que no se pudieron anular. Se ha apagado el administrador de recursos transaccional.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_CLUSTERS"></span><span id="error_bad_clusters"></span>**ERROR \_ de \_ clústeres erróneos**
+<span id="ERROR_BAD_CLUSTERS"></span><span id="error_bad_clusters"></span>**CLÚSTERES \_ \_ CON ERRORES**
 </dt> <dd> <dl> <dt>
 
 6849 (0x1AC1)
@@ -2017,12 +2017,12 @@ El administrador de recursos transaccional tenía demasiados contabilizan pendie
 
 
 
-No se pudo completar la operación debido a clústeres defectuosos en el disco.
+No se pudo completar la operación debido a clústeres no correctos en el disco.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_COMPRESSION_NOT_ALLOWED_IN_TRANSACTION"></span><span id="error_compression_not_allowed_in_transaction"></span>**\_no se \_ permite la compresión de error en la \_ \_ \_ transacción**
+<span id="ERROR_COMPRESSION_NOT_ALLOWED_IN_TRANSACTION"></span><span id="error_compression_not_allowed_in_transaction"></span>**COMPRESIÓN \_ DE ERRORES NO PERMITIDA EN LA \_ \_ \_ \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 6850 (0x1AC2)
@@ -2030,12 +2030,12 @@ No se pudo completar la operación debido a clústeres defectuosos en el disco.
 
 
 
-No se pudo completar la operación de compresión porque hay una transacción activa en el archivo.
+No se pudo completar la operación de compresión porque una transacción está activa en el archivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VOLUME_DIRTY"></span><span id="error_volume_dirty"></span>**ERROR de \_ volumen \_ modificado**
+<span id="ERROR_VOLUME_DIRTY"></span><span id="error_volume_dirty"></span>**ERROR \_ EN EL VOLUMEN \_ DESADOBLE**
 </dt> <dd> <dl> <dt>
 
 6851 (0x1AC3)
@@ -2043,12 +2043,12 @@ No se pudo completar la operación de compresión porque hay una transacción ac
 
 
 
-No se pudo completar la operación porque el volumen está sucio. Ejecute CHKDSK e inténtelo de nuevo.
+No se pudo completar la operación porque el volumen está desaciado. Ejecute chkdsk e inténtelo de nuevo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_LINK_TRACKING_IN_TRANSACTION"></span><span id="error_no_link_tracking_in_transaction"></span>**ERROR: \_ no hay \_ \_ seguimiento \_ de vínculos en la \_ transacción**
+<span id="ERROR_NO_LINK_TRACKING_IN_TRANSACTION"></span><span id="error_no_link_tracking_in_transaction"></span>**ERROR \_ SIN SEGUIMIENTO DE \_ \_ \_ VÍNCULOS EN LA \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 6852 (0x1AC4)
@@ -2061,7 +2061,7 @@ No se pudo completar la operación de seguimiento de vínculos porque una transa
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OPERATION_NOT_SUPPORTED_IN_TRANSACTION"></span><span id="error_operation_not_supported_in_transaction"></span>**\_no se \_ admite la operación de error en la \_ \_ \_ transacción**
+<span id="ERROR_OPERATION_NOT_SUPPORTED_IN_TRANSACTION"></span><span id="error_operation_not_supported_in_transaction"></span>**OPERACIÓN DE ERROR \_ \_ NO ADMITIDA EN \_ \_ \_ TRANSACTION**
 </dt> <dd> <dl> <dt>
 
 6853 (0x1AC5)
@@ -2074,7 +2074,7 @@ Esta operación no se puede realizar en una transacción.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EXPIRED_HANDLE"></span><span id="error_expired_handle"></span>**identificador de ERROR \_ expirado \_**
+<span id="ERROR_EXPIRED_HANDLE"></span><span id="error_expired_handle"></span>**IDENTIFICADOR DE ERROR \_ \_ EXPIRADO**
 </dt> <dd> <dl> <dt>
 
 6854 (0x1AC6)
@@ -2082,12 +2082,12 @@ Esta operación no se puede realizar en una transacción.
 
 
 
-El identificador ya no está asociado correctamente a su transacción. Es posible que se haya abierto en un administrador de recursos transaccional que se forzó posteriormente para reiniciarse. Cierre el identificador y abra uno nuevo.
+El identificador ya no está asociado correctamente a su transacción. Es posible que se haya abierto en un administrador de recursos transaccional que posteriormente se vio obligado a reiniciarse. Cierre el identificador y abra uno nuevo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_NOT_ENLISTED"></span><span id="error_transaction_not_enlisted"></span>**no se ha dado de \_ alta la transacción de error \_ \_**
+<span id="ERROR_TRANSACTION_NOT_ENLISTED"></span><span id="error_transaction_not_enlisted"></span>**ERROR \_ TRANSACTION \_ NOT \_ ENLISTED**
 </dt> <dd> <dl> <dt>
 
 6855 (0x1AC7)
@@ -2100,7 +2100,7 @@ No se pudo realizar la operación especificada porque el administrador de recurs
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_WINSTATION_NAME_INVALID"></span><span id="error_ctx_winstation_name_invalid"></span>**ERROR \_ CTX en \_ el nombre de la estación de \_ nombres \_ no válido**
+<span id="ERROR_CTX_WINSTATION_NAME_INVALID"></span><span id="error_ctx_winstation_name_invalid"></span>**ERROR \_ CTX \_ WINSTATION \_ NAME \_ INVALID**
 </dt> <dd> <dl> <dt>
 
 7001 (0x1B59)
@@ -2113,7 +2113,7 @@ El nombre de sesión especificado no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_INVALID_PD"></span><span id="error_ctx_invalid_pd"></span>**ERROR \_ CTX \_ no válido \_ PD**
+<span id="ERROR_CTX_INVALID_PD"></span><span id="error_ctx_invalid_pd"></span>**ERROR \_ CTX \_ INVALID \_ PD**
 </dt> <dd> <dl> <dt>
 
 7002 (0x1B5A)
@@ -2126,7 +2126,7 @@ El controlador de protocolo especificado no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_PD_NOT_FOUND"></span><span id="error_ctx_pd_not_found"></span>**ERROR \_ CTX \_ PD \_ no \_ encontrado**
+<span id="ERROR_CTX_PD_NOT_FOUND"></span><span id="error_ctx_pd_not_found"></span>**ERROR \_ CTX \_ PD \_ NOT \_ FOUND**
 </dt> <dd> <dl> <dt>
 
 7003 (0x1B5B)
@@ -2139,7 +2139,7 @@ No se encontró el controlador de protocolo especificado en la ruta de acceso de
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_WD_NOT_FOUND"></span><span id="error_ctx_wd_not_found"></span>**ERROR \_ CTX \_ WD \_ no \_ encontrado**
+<span id="ERROR_CTX_WD_NOT_FOUND"></span><span id="error_ctx_wd_not_found"></span>**ERROR \_ CTX \_ WD \_ NOT \_ FOUND**
 </dt> <dd> <dl> <dt>
 
 7004 (0x1B5C)
@@ -2152,7 +2152,7 @@ No se encontró el controlador de conexión de terminal especificado en la ruta 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_CANNOT_MAKE_EVENTLOG_ENTRY"></span><span id="error_ctx_cannot_make_eventlog_entry"></span>**ERROR \_ CTX \_ no se puede \_ crear la entrada del registro de \_ eventos \_**
+<span id="ERROR_CTX_CANNOT_MAKE_EVENTLOG_ENTRY"></span><span id="error_ctx_cannot_make_eventlog_entry"></span>**ERROR \_ CTX \_ CANNOT \_ MAKE \_ EVENTLOG \_ ENTRY**
 </dt> <dd> <dl> <dt>
 
 7005 (0x1B5D)
@@ -2160,12 +2160,12 @@ No se encontró el controlador de conexión de terminal especificado en la ruta 
 
 
 
-No se pudo crear una clave del registro para el registro de eventos para esta sesión.
+No se pudo crear una clave del Registro para el registro de eventos para esta sesión.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_SERVICE_NAME_COLLISION"></span><span id="error_ctx_service_name_collision"></span>**ERROR \_ CTX \_ \_ colisión de nombre de servicio \_**
+<span id="ERROR_CTX_SERVICE_NAME_COLLISION"></span><span id="error_ctx_service_name_collision"></span>**ERROR \_ CTX \_ SERVICE \_ NAME \_ COLLISION**
 </dt> <dd> <dl> <dt>
 
 7006 (0x1B5E)
@@ -2178,7 +2178,7 @@ Ya existe un servicio con el mismo nombre en el sistema.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_CLOSE_PENDING"></span><span id="error_ctx_close_pending"></span>**ERROR \_ CTX \_ cierre \_ pendiente**
+<span id="ERROR_CTX_CLOSE_PENDING"></span><span id="error_ctx_close_pending"></span>**ERROR \_ CTX \_ CLOSE \_ PENDING**
 </dt> <dd> <dl> <dt>
 
 7007 (0x1B5F)
@@ -2191,7 +2191,7 @@ Hay una operación de cierre pendiente en la sesión.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_NO_OUTBUF"></span><span id="error_ctx_no_outbuf"></span>**ERROR \_ CTX \_ no \_ OUTBUF**
+<span id="ERROR_CTX_NO_OUTBUF"></span><span id="error_ctx_no_outbuf"></span>**ERROR \_ CTX \_ NO \_ OUTBUF**
 </dt> <dd> <dl> <dt>
 
 7008 (0x1B60)
@@ -2199,12 +2199,12 @@ Hay una operación de cierre pendiente en la sesión.
 
 
 
-No hay ningún búfer de salida disponible.
+No hay búferes de salida gratuitos disponibles.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_MODEM_INF_NOT_FOUND"></span><span id="error_ctx_modem_inf_not_found"></span>**ERROR \_ CTX \_ modem \_ INF \_ no \_ encontrado**
+<span id="ERROR_CTX_MODEM_INF_NOT_FOUND"></span><span id="error_ctx_modem_inf_not_found"></span>**ERROR \_ CTX \_ MODEM \_ INF \_ NOT \_ FOUND**
 </dt> <dd> <dl> <dt>
 
 7009 (0x1B61)
@@ -2212,12 +2212,12 @@ No hay ningún búfer de salida disponible.
 
 
 
-El módem. No se encontró el archivo INF.
+MÓDEM. No se encontró el archivo INF.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_INVALID_MODEMNAME"></span><span id="error_ctx_invalid_modemname"></span>**ERROR \_ CTX \_ MODEMNAME no válido \_**
+<span id="ERROR_CTX_INVALID_MODEMNAME"></span><span id="error_ctx_invalid_modemname"></span>**ERROR \_ CTX \_ INVALID \_ MODEMNAME**
 </dt> <dd> <dl> <dt>
 
 7010 (0x1B62)
@@ -2225,12 +2225,12 @@ El módem. No se encontró el archivo INF.
 
 
 
-No se encontró el nombre del módem en MODEM. INF.
+El nombre del módem no se encontró en MÓDEM.INF.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_MODEM_RESPONSE_ERROR"></span><span id="error_ctx_modem_response_error"></span>**error \_ de \_ respuesta de módem CTX \_ \_**
+<span id="ERROR_CTX_MODEM_RESPONSE_ERROR"></span><span id="error_ctx_modem_response_error"></span>**ERROR \_ CTX \_ MÓDEM RESPONSE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 7011 (0x1B63)
@@ -2238,12 +2238,12 @@ No se encontró el nombre del módem en MODEM. INF.
 
 
 
-El módem no aceptó el comando que se le ha enviado. Compruebe que el nombre del módem configurado coincide con el módem conectado.
+El módem no aceptó el comando que se le envió. Compruebe que el nombre del módem configurado coincide con el módem conectado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_MODEM_RESPONSE_TIMEOUT"></span><span id="error_ctx_modem_response_timeout"></span>**ERROR \_ CTX \_ \_ tiempo de espera de respuesta del módem \_**
+<span id="ERROR_CTX_MODEM_RESPONSE_TIMEOUT"></span><span id="error_ctx_modem_response_timeout"></span>**ERROR \_ CTX \_ MODEM \_ RESPONSE \_ TIMEOUT**
 </dt> <dd> <dl> <dt>
 
 7012 (0x1B64)
@@ -2251,12 +2251,12 @@ El módem no aceptó el comando que se le ha enviado. Compruebe que el nombre de
 
 
 
-El módem no respondió al comando que se le ha enviado. Compruebe que el módem está correctamente cableado y encendido.
+El módem no respondió al comando que se le envió. Compruebe que el módem está correctamente cableado y encendido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_MODEM_RESPONSE_NO_CARRIER"></span><span id="error_ctx_modem_response_no_carrier"></span>**ERROR \_ CTX \_ respuesta de módem \_ \_ no \_ portadora**
+<span id="ERROR_CTX_MODEM_RESPONSE_NO_CARRIER"></span><span id="error_ctx_modem_response_no_carrier"></span>**ERROR \_ CTX \_ MODEM \_ RESPONSE \_ NO \_ CARRIER**
 </dt> <dd> <dl> <dt>
 
 7013 (0x1B65)
@@ -2264,12 +2264,12 @@ El módem no respondió al comando que se le ha enviado. Compruebe que el módem
 
 
 
-No se pudo detectar el operador o se quitó el operador debido a la desconexión.
+Se ha detectado un error en la detección del operador o se ha eliminado el operador debido a la desconexión.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_MODEM_RESPONSE_NO_DIALTONE"></span><span id="error_ctx_modem_response_no_dialtone"></span>**ERROR \_ CTX \_ respuesta de módem \_ \_ sin \_ ditono**
+<span id="ERROR_CTX_MODEM_RESPONSE_NO_DIALTONE"></span><span id="error_ctx_modem_response_no_dialtone"></span>**ERROR \_ CTX \_ MODEM \_ RESPONSE \_ NO \_ DIALTONE**
 </dt> <dd> <dl> <dt>
 
 7014 (0x1B66)
@@ -2277,12 +2277,12 @@ No se pudo detectar el operador o se quitó el operador debido a la desconexión
 
 
 
-No se detectó el tono de marcado en el tiempo requerido. Compruebe que el cable telefónico está conectado correctamente y funciona.
+No se detectó el tono de marcado en el tiempo necesario. Compruebe que el cable del teléfono está conectado correctamente y funciona.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_MODEM_RESPONSE_BUSY"></span><span id="error_ctx_modem_response_busy"></span>**ERROR \_ de \_ respuesta de módem CTX \_ \_ ocupada**
+<span id="ERROR_CTX_MODEM_RESPONSE_BUSY"></span><span id="error_ctx_modem_response_busy"></span>**ERROR \_ CTX \_ MODEM \_ RESPONSE \_ BUSY**
 </dt> <dd> <dl> <dt>
 
 7015 (0x1B67)
@@ -2290,12 +2290,12 @@ No se detectó el tono de marcado en el tiempo requerido. Compruebe que el cable
 
 
 
-Señal de ocupado detectada en el sitio remoto en la devolución de llamada.
+Se detectó una señal ocupada en el sitio remoto en la devolución de llamada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_MODEM_RESPONSE_VOICE"></span><span id="error_ctx_modem_response_voice"></span>**ERROR \_ CTX \_ \_ voz de respuesta de módem \_**
+<span id="ERROR_CTX_MODEM_RESPONSE_VOICE"></span><span id="error_ctx_modem_response_voice"></span>**ERROR \_ CTX \_ MODEM \_ RESPONSE \_ VOICE**
 </dt> <dd> <dl> <dt>
 
 7016 (0x1B68)
@@ -2303,12 +2303,12 @@ Señal de ocupado detectada en el sitio remoto en la devolución de llamada.
 
 
 
-Voz detectada en el sitio remoto en la devolución de llamada.
+Se detectó la voz en el sitio remoto en la devolución de llamada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_TD_ERROR"></span><span id="error_ctx_td_error"></span>**error \_ CTX \_ TD \_ error**
+<span id="ERROR_CTX_TD_ERROR"></span><span id="error_ctx_td_error"></span>**ERROR \_ CTX \_ TD \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 7017 (0x1B69)
@@ -2321,7 +2321,7 @@ Error del controlador de transporte.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_WINSTATION_NOT_FOUND"></span><span id="error_ctx_winstation_not_found"></span>**ERROR \_ CTX-en \_ \_ no \_ encontrado**
+<span id="ERROR_CTX_WINSTATION_NOT_FOUND"></span><span id="error_ctx_winstation_not_found"></span>**ERROR \_ CTX \_ WINSTATION \_ NOT \_ FOUND**
 </dt> <dd> <dl> <dt>
 
 7022 (0x1B6E)
@@ -2334,7 +2334,7 @@ No se encuentra la sesión especificada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_WINSTATION_ALREADY_EXISTS"></span><span id="error_ctx_winstation_already_exists"></span>**el ERROR CTX en la estación de mensaje \_ \_ \_ ya \_ existe**
+<span id="ERROR_CTX_WINSTATION_ALREADY_EXISTS"></span><span id="error_ctx_winstation_already_exists"></span>**ERROR \_ CTX \_ WINSTATION \_ YA \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 7023 (0x1B6F)
@@ -2347,7 +2347,7 @@ El nombre de sesión especificado ya está en uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_WINSTATION_BUSY"></span><span id="error_ctx_winstation_busy"></span>**ERROR de \_ CTX en \_ \_ ocupado**
+<span id="ERROR_CTX_WINSTATION_BUSY"></span><span id="error_ctx_winstation_busy"></span>**ERROR \_ CTX \_ WINSTATION \_ BUSY**
 </dt> <dd> <dl> <dt>
 
 7024 (0x1B70)
@@ -2355,12 +2355,12 @@ El nombre de sesión especificado ya está en uso.
 
 
 
-No se puede completar la tarea que está intentando realizar porque Servicios de Escritorio remoto está ocupado actualmente. Inténtalo de nuevo al cabo de un rato. Otros usuarios todavía deben poder iniciar sesión.
+La tarea que está intentando realizar no se puede completar porque Servicios de Escritorio remoto está ocupado actualmente. Inténtalo de nuevo al cabo de un rato. Otros usuarios todavía deben poder iniciar sesión.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_BAD_VIDEO_MODE"></span><span id="error_ctx_bad_video_mode"></span>**ERROR \_ CTX \_ \_ modo de vídeo incorrecto \_**
+<span id="ERROR_CTX_BAD_VIDEO_MODE"></span><span id="error_ctx_bad_video_mode"></span>**ERROR \_ CTX \_ BAD \_ VIDEO \_ MODE**
 </dt> <dd> <dl> <dt>
 
 7025 (0x1B71)
@@ -2368,12 +2368,12 @@ No se puede completar la tarea que está intentando realizar porque Servicios de
 
 
 
-Se ha intentado conectar a una sesión cuyo modo de vídeo no es compatible con el cliente actual.
+Se ha intentado conectarse a una sesión cuyo modo de vídeo no es compatible con el cliente actual.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_GRAPHICS_INVALID"></span><span id="error_ctx_graphics_invalid"></span>**ERROR \_ CTX \_ Graphics \_ no válida**
+<span id="ERROR_CTX_GRAPHICS_INVALID"></span><span id="error_ctx_graphics_invalid"></span>**ERROR \_ CTX \_ GRAPHICS \_ INVALID**
 </dt> <dd> <dl> <dt>
 
 7035 (0x1B7B)
@@ -2381,12 +2381,12 @@ Se ha intentado conectar a una sesión cuyo modo de vídeo no es compatible con 
 
 
 
-La aplicación intentó habilitar el modo de gráficos de DOS. No se admite el modo de gráficos de DOS.
+La aplicación intentó habilitar el modo gráfico DOS. No se admite el modo gráfico DOS.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_LOGON_DISABLED"></span><span id="error_ctx_logon_disabled"></span>**ERROR \_ CTX \_ Inicio de sesión \_ deshabilitado**
+<span id="ERROR_CTX_LOGON_DISABLED"></span><span id="error_ctx_logon_disabled"></span>**ERROR \_ CTX \_ LOGON \_ DISABLED**
 </dt> <dd> <dl> <dt>
 
 7037 (0x1B7D)
@@ -2399,7 +2399,7 @@ Se ha deshabilitado el privilegio de inicio de sesión interactivo. Póngase en 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_NOT_CONSOLE"></span><span id="error_ctx_not_console"></span>**ERROR \_ CTX \_ no \_ Console**
+<span id="ERROR_CTX_NOT_CONSOLE"></span><span id="error_ctx_not_console"></span>**ERROR \_ CTX \_ NOT \_ CONSOLE**
 </dt> <dd> <dl> <dt>
 
 7038 (0x1B7E)
@@ -2407,12 +2407,12 @@ Se ha deshabilitado el privilegio de inicio de sesión interactivo. Póngase en 
 
 
 
-La operación solicitada solo se puede realizar en la consola del sistema. Esto suele ser el resultado de un controlador o DLL del sistema que requiere acceso directo a la consola.
+La operación solicitada solo se puede realizar en la consola del sistema. Este suele ser el resultado de un controlador o dll del sistema que requiere acceso directo a la consola.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_CLIENT_QUERY_TIMEOUT"></span><span id="error_ctx_client_query_timeout"></span>**ERROR \_ de \_ tiempo de espera de consulta de cliente CTX \_ \_**
+<span id="ERROR_CTX_CLIENT_QUERY_TIMEOUT"></span><span id="error_ctx_client_query_timeout"></span>**ERROR \_ CTX \_ CLIENT \_ QUERY \_ TIMEOUT**
 </dt> <dd> <dl> <dt>
 
 7040 (0x1B80)
@@ -2420,12 +2420,12 @@ La operación solicitada solo se puede realizar en la consola del sistema. Esto 
 
 
 
-El cliente no pudo responder al mensaje de conexión de servidor.
+El cliente no pudo responder al mensaje de conexión del servidor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_CONSOLE_DISCONNECT"></span><span id="error_ctx_console_disconnect"></span>**ERROR \_ CTX \_ \_ desconexión de consola**
+<span id="ERROR_CTX_CONSOLE_DISCONNECT"></span><span id="error_ctx_console_disconnect"></span>**ERROR \_ CTX \_ CONSOLE \_ DISCONNECT**
 </dt> <dd> <dl> <dt>
 
 7041 (0x1B81)
@@ -2438,7 +2438,7 @@ No se admite la desconexión de la sesión de consola.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_CONSOLE_CONNECT"></span><span id="error_ctx_console_connect"></span>**ERROR \_ CTX \_ Console \_ Connect**
+<span id="ERROR_CTX_CONSOLE_CONNECT"></span><span id="error_ctx_console_connect"></span>**ERROR \_ CTX \_ CONSOLE \_ CONNECT**
 </dt> <dd> <dl> <dt>
 
 7042 (0x1B82)
@@ -2446,12 +2446,12 @@ No se admite la desconexión de la sesión de consola.
 
 
 
-No se puede volver a conectar una sesión desconectada a la consola.
+No se admite la reconexión de una sesión desconectada a la consola.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_SHADOW_DENIED"></span><span id="error_ctx_shadow_denied"></span>**ERROR \_ CTX \_ sombra \_ denegada**
+<span id="ERROR_CTX_SHADOW_DENIED"></span><span id="error_ctx_shadow_denied"></span>**ERROR \_ CTX \_ SHADOW \_ DENIED**
 </dt> <dd> <dl> <dt>
 
 7044 (0x1B84)
@@ -2464,7 +2464,7 @@ Se denegó la solicitud para controlar otra sesión de forma remota.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_WINSTATION_ACCESS_DENIED"></span><span id="error_ctx_winstation_access_denied"></span>**ERROR \_ CTX en el \_ \_ acceso \_ denegado**
+<span id="ERROR_CTX_WINSTATION_ACCESS_DENIED"></span><span id="error_ctx_winstation_access_denied"></span>**ERROR \_ CTX \_ WINSTATION \_ ACCESS \_ DENIED**
 </dt> <dd> <dl> <dt>
 
 7045 (0x1B85)
@@ -2472,12 +2472,12 @@ Se denegó la solicitud para controlar otra sesión de forma remota.
 
 
 
-Se denegó el acceso a la sesión solicitado.
+Se deniega el acceso a la sesión solicitada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_INVALID_WD"></span><span id="error_ctx_invalid_wd"></span>**ERROR \_ CTX \_ no válido \_ WD**
+<span id="ERROR_CTX_INVALID_WD"></span><span id="error_ctx_invalid_wd"></span>**ERROR \_ CTX \_ INVALID \_ WD**
 </dt> <dd> <dl> <dt>
 
 7049 (0x1B89)
@@ -2490,7 +2490,7 @@ El controlador de conexión de terminal especificado no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_SHADOW_INVALID"></span><span id="error_ctx_shadow_invalid"></span>**ERROR \_ CTX \_ Shadow \_ no válido**
+<span id="ERROR_CTX_SHADOW_INVALID"></span><span id="error_ctx_shadow_invalid"></span>**ERROR \_ CTX \_ SHADOW \_ INVALID**
 </dt> <dd> <dl> <dt>
 
 7050 (0x1B8A)
@@ -2498,12 +2498,12 @@ El controlador de conexión de terminal especificado no es válido.
 
 
 
-La sesión solicitada no se puede controlar de forma remota. Esto puede deberse a que la sesión está desconectada o no tiene un usuario que ha iniciado sesión actualmente.
+La sesión solicitada no se puede controlar de forma remota. Esto puede deberse a que la sesión está desconectada o no tiene un usuario conectado actualmente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_SHADOW_DISABLED"></span><span id="error_ctx_shadow_disabled"></span>**ERROR de la \_ \_ sombra CTX \_ deshabilitada**
+<span id="ERROR_CTX_SHADOW_DISABLED"></span><span id="error_ctx_shadow_disabled"></span>**ERROR \_ CTX \_ SHADOW \_ DISABLED**
 </dt> <dd> <dl> <dt>
 
 7051 (0x1B8B)
@@ -2516,7 +2516,7 @@ La sesión solicitada no está configurada para permitir el control remoto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_CLIENT_LICENSE_IN_USE"></span><span id="error_ctx_client_license_in_use"></span>**ERROR \_ \_ \_ de licencia de cliente CTX \_ en \_ uso**
+<span id="ERROR_CTX_CLIENT_LICENSE_IN_USE"></span><span id="error_ctx_client_license_in_use"></span>**ERROR \_ CTX \_ CLIENT \_ LICENSE \_ IN \_ USE**
 </dt> <dd> <dl> <dt>
 
 7052 (0x1B8C)
@@ -2524,12 +2524,12 @@ La sesión solicitada no está configurada para permitir el control remoto.
 
 
 
-Se ha rechazado la solicitud de conexión a este Terminal Server. Otro usuario está usando actualmente su Terminal Server número de licencia de cliente. Llame al administrador del sistema para obtener un número de licencia único.
+Se ha rechazado la solicitud para conectarse a este servidor de Terminal Server. Otro usuario está utilizando actualmente el número de licencia de cliente de Terminal Server. Llame al administrador del sistema para obtener un número de licencia único.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_CLIENT_LICENSE_NOT_SET"></span><span id="error_ctx_client_license_not_set"></span>**ERROR de la \_ \_ licencia de cliente CTX \_ \_ no \_ establecida**
+<span id="ERROR_CTX_CLIENT_LICENSE_NOT_SET"></span><span id="error_ctx_client_license_not_set"></span>**ERROR \_ CTX \_ CLIENT \_ LICENSE \_ NOT \_ SET**
 </dt> <dd> <dl> <dt>
 
 7053 (0x1B8D)
@@ -2537,12 +2537,12 @@ Se ha rechazado la solicitud de conexión a este Terminal Server. Otro usuario e
 
 
 
-Se ha rechazado la solicitud de conexión a este Terminal Server. No se ha especificado el número de licencia de cliente de Terminal Server para esta copia del cliente de Terminal Server. Póngase en contacto con el administrador del sistema.
+Se ha rechazado la solicitud para conectarse a este servidor de Terminal Server. No se ha especificado el número de licencia del cliente de Terminal Server para esta copia del cliente de Terminal Server. Póngase en contacto con el administrador del sistema.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_LICENSE_NOT_AVAILABLE"></span><span id="error_ctx_license_not_available"></span>**ERROR \_ de \_ licencia de CTX \_ no \_ disponible**
+<span id="ERROR_CTX_LICENSE_NOT_AVAILABLE"></span><span id="error_ctx_license_not_available"></span>**ERROR \_ LA LICENCIA CTX NO ESTÁ \_ \_ \_ DISPONIBLE**
 </dt> <dd> <dl> <dt>
 
 7054 (0x1B8E)
@@ -2550,12 +2550,12 @@ Se ha rechazado la solicitud de conexión a este Terminal Server. No se ha espec
 
 
 
-El número de conexiones a este equipo es limitado y ahora todas las conexiones están en uso. Intente conectarse más tarde o póngase en contacto con el administrador del sistema.
+El número de conexiones a este equipo es limitado y todas las conexiones están en uso en este momento. Intente conectarse más tarde o póngase en contacto con el administrador del sistema.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_LICENSE_CLIENT_INVALID"></span><span id="error_ctx_license_client_invalid"></span>**ERROR \_ de \_ cliente de licencia CTX \_ \_ no válido**
+<span id="ERROR_CTX_LICENSE_CLIENT_INVALID"></span><span id="error_ctx_license_client_invalid"></span>**ERROR \_ CTX \_ LICENSE \_ CLIENT \_ INVALID**
 </dt> <dd> <dl> <dt>
 
 7055 (0x1B8F)
@@ -2563,12 +2563,12 @@ El número de conexiones a este equipo es limitado y ahora todas las conexiones 
 
 
 
-El cliente que está usando no tiene licencia para usar este sistema. Se denegó la solicitud de inicio de sesión.
+El cliente que usa no tiene licencia para usar este sistema. Se deniega la solicitud de inicio de sesión.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_LICENSE_EXPIRED"></span><span id="error_ctx_license_expired"></span>**ERROR \_ CTX \_ expiró la licencia \_**
+<span id="ERROR_CTX_LICENSE_EXPIRED"></span><span id="error_ctx_license_expired"></span>**ERROR \_ LA LICENCIA DE CTX \_ \_ EXPIRÓ**
 </dt> <dd> <dl> <dt>
 
 7056 (0x1B90)
@@ -2576,12 +2576,12 @@ El cliente que está usando no tiene licencia para usar este sistema. Se denegó
 
 
 
-La licencia del sistema ha expirado. Se denegó la solicitud de inicio de sesión.
+La licencia del sistema ha expirado. Se deniega la solicitud de inicio de sesión.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_SHADOW_NOT_RUNNING"></span><span id="error_ctx_shadow_not_running"></span>**ERROR de la \_ sombra de CTX \_ no en \_ \_ ejecución**
+<span id="ERROR_CTX_SHADOW_NOT_RUNNING"></span><span id="error_ctx_shadow_not_running"></span>**ERROR \_ CTX \_ SHADOW \_ NOT \_ RUNNING**
 </dt> <dd> <dl> <dt>
 
 7057 (0x1B91)
@@ -2589,12 +2589,12 @@ La licencia del sistema ha expirado. Se denegó la solicitud de inicio de sesió
 
 
 
-No se pudo terminar el control remoto porque la sesión especificada no se está controlando de forma remota.
+No se pudo finalizar el control remoto porque la sesión especificada no se está controlando de forma remota actualmente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_SHADOW_ENDED_BY_MODE_CHANGE"></span><span id="error_ctx_shadow_ended_by_mode_change"></span>**ERROR \_ \_ de la sombra \_ de CTX terminada \_ por el \_ modo \_**
+<span id="ERROR_CTX_SHADOW_ENDED_BY_MODE_CHANGE"></span><span id="error_ctx_shadow_ended_by_mode_change"></span>**ERROR \_ CTX \_ SHADOW \_ ENDED \_ BY \_ MODE \_ CHANGE**
 </dt> <dd> <dl> <dt>
 
 7058 (0x1B92)
@@ -2602,12 +2602,12 @@ No se pudo terminar el control remoto porque la sesión especificada no se está
 
 
 
-El control remoto de la consola ha finalizado porque se ha cambiado el modo de presentación. No se admite el cambio del modo de presentación en una sesión de control remoto.
+El control remoto de la consola se finalizó porque se cambió el modo de presentación. No se admite el cambio del modo de presentación en una sesión de control remoto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ACTIVATION_COUNT_EXCEEDED"></span><span id="error_activation_count_exceeded"></span>**recuento de \_ activaciones de errores \_ \_ superado**
+<span id="ERROR_ACTIVATION_COUNT_EXCEEDED"></span><span id="error_activation_count_exceeded"></span>**NÚMERO DE \_ ACTIVACIÓN \_ DE ERRORES \_ SUPERADO**
 </dt> <dd> <dl> <dt>
 
 7059 (0x1B93)
@@ -2620,7 +2620,7 @@ La activación ya se ha restablecido el número máximo de veces para esta insta
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_WINSTATIONS_DISABLED"></span><span id="error_ctx_winstations_disabled"></span>**ERROR \_ CTX \_ WINSTATIONS \_ deshabilitado**
+<span id="ERROR_CTX_WINSTATIONS_DISABLED"></span><span id="error_ctx_winstations_disabled"></span>**ERROR \_ CTX \_ WINSTATIONS \_ DISABLED**
 </dt> <dd> <dl> <dt>
 
 7060 (0x1B94)
@@ -2633,7 +2633,7 @@ Los inicios de sesión remotos están deshabilitados actualmente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_ENCRYPTION_LEVEL_REQUIRED"></span><span id="error_ctx_encryption_level_required"></span>**ERROR \_ de \_ nivel de cifrado CTX \_ \_ requerido**
+<span id="ERROR_CTX_ENCRYPTION_LEVEL_REQUIRED"></span><span id="error_ctx_encryption_level_required"></span>**ERROR \_ SE REQUIERE EL NIVEL DE CIFRADO \_ \_ \_ CTX**
 </dt> <dd> <dl> <dt>
 
 7061 (0x1B95)
@@ -2641,12 +2641,12 @@ Los inicios de sesión remotos están deshabilitados actualmente.
 
 
 
-No tiene el nivel de cifrado adecuado para obtener acceso a esta sesión.
+No tiene el nivel de cifrado adecuado para acceder a esta sesión.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_SESSION_IN_USE"></span><span id="error_ctx_session_in_use"></span>**ERROR \_ \_ de sesión CTX \_ en \_ uso**
+<span id="ERROR_CTX_SESSION_IN_USE"></span><span id="error_ctx_session_in_use"></span>**ERROR \_ CTX \_ SESSION \_ IN \_ USE**
 </dt> <dd> <dl> <dt>
 
 7062 (0x1B96)
@@ -2654,12 +2654,12 @@ No tiene el nivel de cifrado adecuado para obtener acceso a esta sesión.
 
 
 
-El usuario% s \\ \\ % s ha iniciado sesión en este equipo. Solo el usuario actual o un administrador pueden iniciar sesión en este equipo.
+El usuario %s \\ \\ %s ha iniciado sesión actualmente en este equipo. Solo el usuario actual o un administrador pueden iniciar sesión en este equipo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_NO_FORCE_LOGOFF"></span><span id="error_ctx_no_force_logoff"></span>**ERROR \_ CTX \_ no \_ forzar \_ cierre de sesión**
+<span id="ERROR_CTX_NO_FORCE_LOGOFF"></span><span id="error_ctx_no_force_logoff"></span>**ERROR \_ CTX \_ NO \_ FORCE \_ LOGOFF**
 </dt> <dd> <dl> <dt>
 
 7063 (0x1B97)
@@ -2667,12 +2667,12 @@ El usuario% s \\ \\ % s ha iniciado sesión en este equipo. Solo el usuario actu
 
 
 
-El usuario% s \\ \\ % s ya ha iniciado sesión en la consola de este equipo. No tiene permiso para iniciar sesión en este momento. Para resolver este problema, póngase en contacto con% s \\ \\ % s y pídale que cierre la sesión.
+El usuario %s \\ \\ %s ya ha iniciado sesión en la consola de este equipo. No tiene permiso para iniciar sesión en este momento. Para resolver este problema, póngase en contacto con %s \\ \\ %s y haga que cierren la sesión.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_ACCOUNT_RESTRICTION"></span><span id="error_ctx_account_restriction"></span>**ERROR \_ de \_ restricción de cuenta de CTX \_**
+<span id="ERROR_CTX_ACCOUNT_RESTRICTION"></span><span id="error_ctx_account_restriction"></span>**ERROR \_ RESTRICCIÓN DE LA CUENTA \_ CTX \_**
 </dt> <dd> <dl> <dt>
 
 7064 (0x1B98)
@@ -2680,12 +2680,12 @@ El usuario% s \\ \\ % s ya ha iniciado sesión en la consola de este equipo. No 
 
 
 
-No se puede iniciar la sesión debido a una restricción de cuenta.
+No se puede iniciar sesión debido a una restricción de cuenta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RDP_PROTOCOL_ERROR"></span><span id="error_rdp_protocol_error"></span>**error \_ de \_ Protocolo RDP \_ error**
+<span id="ERROR_RDP_PROTOCOL_ERROR"></span><span id="error_rdp_protocol_error"></span>**ERROR \_ DEL PROTOCOLO RDP \_ \_**
 </dt> <dd> <dl> <dt>
 
 7065 (0x1B99)
@@ -2693,12 +2693,12 @@ No se puede iniciar la sesión debido a una restricción de cuenta.
 
 
 
-El componente de protocolo RDP %2 detectó un error en el flujo de protocolo y ha desconectado el cliente.
+El componente de protocolo RDP %2 detectó un error en la secuencia de protocolo y desconectó el cliente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_CDM_CONNECT"></span><span id="error_ctx_cdm_connect"></span>**ERROR \_ CTX \_ CDM \_ Connect**
+<span id="ERROR_CTX_CDM_CONNECT"></span><span id="error_ctx_cdm_connect"></span>**ERROR \_ CTX \_ CDM \_ CONNECT**
 </dt> <dd> <dl> <dt>
 
 7066 (0x1B9A)
@@ -2706,12 +2706,12 @@ El componente de protocolo RDP %2 detectó un error en el flujo de protocolo y h
 
 
 
-El servicio de asignación de unidad de cliente se ha conectado en la conexión de terminal.
+El servicio de asignación de unidades de cliente se ha conectado en la conexión de terminal.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_CDM_DISCONNECT"></span><span id="error_ctx_cdm_disconnect"></span>**ERROR \_ CTX \_ CDM \_ Disconnect**
+<span id="ERROR_CTX_CDM_DISCONNECT"></span><span id="error_ctx_cdm_disconnect"></span>**ERROR \_ CTX \_ CDM \_ DISCONNECT**
 </dt> <dd> <dl> <dt>
 
 7067 (0x1B9B)
@@ -2719,12 +2719,12 @@ El servicio de asignación de unidad de cliente se ha conectado en la conexión 
 
 
 
-El servicio de asignación de unidad de cliente se ha desconectado en la conexión de terminal.
+El servicio de asignación de unidades de cliente se ha desconectado en la conexión de terminal.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_SECURITY_LAYER_ERROR"></span><span id="error_ctx_security_layer_error"></span>**error \_ CTX error de \_ nivel de seguridad \_ \_**
+<span id="ERROR_CTX_SECURITY_LAYER_ERROR"></span><span id="error_ctx_security_layer_error"></span>**ERROR \_ CTX \_ SECURITY \_ LAYER \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 7068 (0x1B9C)
@@ -2732,12 +2732,12 @@ El servicio de asignación de unidad de cliente se ha desconectado en la conexi�
 
 
 
-El nivel de seguridad de Terminal Server ha detectado un error en el flujo de protocolo y ha desconectado el cliente.
+La capa de seguridad de Terminal Server detectó un error en el flujo de protocolo y desconectó el cliente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TS_INCOMPATIBLE_SESSIONS"></span><span id="error_ts_incompatible_sessions"></span>**ERROR \_ de \_ sesiones incompatibles de TS \_**
+<span id="ERROR_TS_INCOMPATIBLE_SESSIONS"></span><span id="error_ts_incompatible_sessions"></span>**ERROR \_ TS \_ INCOMPATIBLE \_ SESSIONS**
 </dt> <dd> <dl> <dt>
 
 7069 (0x1B9D)
@@ -2750,7 +2750,7 @@ La sesión de destino no es compatible con la sesión actual.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TS_VIDEO_SUBSYSTEM_ERROR"></span><span id="error_ts_video_subsystem_error"></span>**error \_ de \_ subsistema de vídeo de TS \_ \_**
+<span id="ERROR_TS_VIDEO_SUBSYSTEM_ERROR"></span><span id="error_ts_video_subsystem_error"></span>**ERROR \_ DEL SUBSISTEMA DE \_ \_ VÍDEO TS \_**
 </dt> <dd> <dl> <dt>
 
 7070 (0x1B9E)
@@ -2758,12 +2758,12 @@ La sesión de destino no es compatible con la sesión actual.
 
 
 
-Windows no se puede conectar a la sesión porque se produjo un problema en el subsistema de vídeo de Windows. Intente conectarse de nuevo más tarde o póngase en contacto con el administrador del servidor para obtener ayuda.
+Windows no se puede conectar a la sesión porque se produjo un problema en el subsistema Windows vídeo. Intente conectarse de nuevo más tarde o póngase en contacto con el administrador del servidor para obtener ayuda.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_INVALID_API_SEQUENCE"></span><span id="frs_err_invalid_api_sequence"></span>**\_secuencia de \_ API no válida de FRS Err \_ \_**
+<span id="FRS_ERR_INVALID_API_SEQUENCE"></span><span id="frs_err_invalid_api_sequence"></span>**FRS \_ ERR \_ INVALID \_ API \_ SEQUENCE**
 </dt> <dd> <dl> <dt>
 
 8001 (0x1F41)
@@ -2776,7 +2776,7 @@ Se llamó incorrectamente a la API del servicio de replicación de archivos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_STARTING_SERVICE"></span><span id="frs_err_starting_service"></span>**servicio de inicio de FRS \_ Err \_ \_**
+<span id="FRS_ERR_STARTING_SERVICE"></span><span id="frs_err_starting_service"></span>**SERVICIO DE INICIO \_ DE ERROR \_ DE FRS \_**
 </dt> <dd> <dl> <dt>
 
 8002 (0x1F42)
@@ -2789,7 +2789,7 @@ No se puede iniciar el servicio de replicación de archivos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_STOPPING_SERVICE"></span><span id="frs_err_stopping_service"></span>**error de FRS al \_ \_ detener el \_ servicio**
+<span id="FRS_ERR_STOPPING_SERVICE"></span><span id="frs_err_stopping_service"></span>**SERVICIO DE DETENCIÓN \_ DE ERRORES \_ DE FRS \_**
 </dt> <dd> <dl> <dt>
 
 8003 (0x1F43)
@@ -2802,7 +2802,7 @@ No se puede detener el servicio de replicación de archivos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_INTERNAL_API"></span><span id="frs_err_internal_api"></span>**\_ \_ API interna de error de FRS \_**
+<span id="FRS_ERR_INTERNAL_API"></span><span id="frs_err_internal_api"></span>**API INTERNA \_ DE ERROR \_ DE \_ FRS**
 </dt> <dd> <dl> <dt>
 
 8004 (0x1F44)
@@ -2810,12 +2810,12 @@ No se puede detener el servicio de replicación de archivos.
 
 
 
-La API del servicio de replicación de archivos finalizó la solicitud. Es posible que el registro de eventos tenga más información.
+La API del servicio de replicación de archivos finalizó la solicitud. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_INTERNAL"></span><span id="frs_err_internal"></span>**error de FRS \_ \_ interno**
+<span id="FRS_ERR_INTERNAL"></span><span id="frs_err_internal"></span>**FRS \_ ERR \_ INTERNAL**
 </dt> <dd> <dl> <dt>
 
 8005 (0x1F45)
@@ -2823,12 +2823,12 @@ La API del servicio de replicación de archivos finalizó la solicitud. Es posib
 
 
 
-El servicio de replicación de archivos finalizó la solicitud. Es posible que el registro de eventos tenga más información.
+El servicio de replicación de archivos finalizó la solicitud. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_SERVICE_COMM"></span><span id="frs_err_service_comm"></span>**servicio de error de FRS \_ \_ \_ COMM**
+<span id="FRS_ERR_SERVICE_COMM"></span><span id="frs_err_service_comm"></span>**FRS \_ ERR \_ SERVICE \_ COMM**
 </dt> <dd> <dl> <dt>
 
 8006 (0x1F46)
@@ -2836,12 +2836,12 @@ El servicio de replicación de archivos finalizó la solicitud. Es posible que e
 
 
 
-No se puede establecer contacto con el servicio de replicación de archivos. Es posible que el registro de eventos tenga más información.
+No se puede ponerse en contacto con el servicio de replicación de archivos. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_INSUFFICIENT_PRIV"></span><span id="frs_err_insufficient_priv"></span>**FRS \_ Err \_ insuficiente \_ priv**
+<span id="FRS_ERR_INSUFFICIENT_PRIV"></span><span id="frs_err_insufficient_priv"></span>**FRS \_ ERR \_ INSUFFICIENT \_ PRIV**
 </dt> <dd> <dl> <dt>
 
 8007 (0x1F47)
@@ -2849,12 +2849,12 @@ No se puede establecer contacto con el servicio de replicación de archivos. Es 
 
 
 
-El servicio de replicación de archivos no puede satisfacer la solicitud porque el usuario no tiene privilegios suficientes. Es posible que el registro de eventos tenga más información.
+El servicio de replicación de archivos no puede satisfacer la solicitud porque el usuario no tiene privilegios suficientes. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_AUTHENTICATION"></span><span id="frs_err_authentication"></span>**autenticación de FRS \_ Err \_**
+<span id="FRS_ERR_AUTHENTICATION"></span><span id="frs_err_authentication"></span>**AUTENTICACIÓN DE ERRORES DE FRS \_ \_**
 </dt> <dd> <dl> <dt>
 
 8008 (0x1F48)
@@ -2862,12 +2862,12 @@ El servicio de replicación de archivos no puede satisfacer la solicitud porque 
 
 
 
-El servicio de replicación de archivos no puede satisfacer la solicitud porque la RPC autenticada no está disponible. Es posible que el registro de eventos tenga más información.
+El servicio de replicación de archivos no puede satisfacer la solicitud porque rpc autenticado no está disponible. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_PARENT_INSUFFICIENT_PRIV"></span><span id="frs_err_parent_insufficient_priv"></span>**FRS \_ Err \_ Parent \_ insuficiente \_ priv**
+<span id="FRS_ERR_PARENT_INSUFFICIENT_PRIV"></span><span id="frs_err_parent_insufficient_priv"></span>**FRS \_ ERR \_ PARENT \_ INSUFFICIENT \_ PRIV**
 </dt> <dd> <dl> <dt>
 
 8009 (0x1F49)
@@ -2875,12 +2875,12 @@ El servicio de replicación de archivos no puede satisfacer la solicitud porque 
 
 
 
-El servicio de replicación de archivos no puede satisfacer la solicitud porque el usuario no tiene privilegios suficientes en el controlador de dominio. Es posible que el registro de eventos tenga más información.
+El servicio de replicación de archivos no puede satisfacer la solicitud porque el usuario no tiene privilegios suficientes en el controlador de dominio. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_PARENT_AUTHENTICATION"></span><span id="frs_err_parent_authentication"></span>**\_ \_ autenticación principal FRS \_ Err**
+<span id="FRS_ERR_PARENT_AUTHENTICATION"></span><span id="frs_err_parent_authentication"></span>**AUTENTICACIÓN PRIMARIA \_ DE ERROR \_ DE FRS \_**
 </dt> <dd> <dl> <dt>
 
 8010 (0x1F4A)
@@ -2888,12 +2888,12 @@ El servicio de replicación de archivos no puede satisfacer la solicitud porque 
 
 
 
-El servicio de replicación de archivos no puede satisfacer la solicitud porque la RPC autenticada no está disponible en el controlador de dominio. Es posible que el registro de eventos tenga más información.
+El servicio de replicación de archivos no puede satisfacer la solicitud porque rpc autenticado no está disponible en el controlador de dominio. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_CHILD_TO_PARENT_COMM"></span><span id="frs_err_child_to_parent_comm"></span>**FRS \_ Err \_ secundario \_ a \_ elemento primario \_ COMM**
+<span id="FRS_ERR_CHILD_TO_PARENT_COMM"></span><span id="frs_err_child_to_parent_comm"></span>**FRS \_ ERR \_ CHILD \_ TO \_ PARENT \_ COMM**
 </dt> <dd> <dl> <dt>
 
 8011 (0x1F4B)
@@ -2901,12 +2901,12 @@ El servicio de replicación de archivos no puede satisfacer la solicitud porque 
 
 
 
-El servicio de replicación de archivos no se puede comunicar con el servicio de replicación de archivos en el controlador de dominio. Es posible que el registro de eventos tenga más información.
+El servicio de replicación de archivos no puede comunicarse con el servicio de replicación de archivos en el controlador de dominio. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_PARENT_TO_CHILD_COMM"></span><span id="frs_err_parent_to_child_comm"></span>**\_COMM ERR \_ Parent \_ to \_ Child \_ COMM**
+<span id="FRS_ERR_PARENT_TO_CHILD_COMM"></span><span id="frs_err_parent_to_child_comm"></span>**FRS \_ ERR \_ PARENT \_ TO \_ CHILD \_ COMM**
 </dt> <dd> <dl> <dt>
 
 8012 (0x1F4C)
@@ -2914,12 +2914,12 @@ El servicio de replicación de archivos no se puede comunicar con el servicio de
 
 
 
-El servicio de replicación de archivos del controlador de dominio no se puede comunicar con el servicio de replicación de archivos de este equipo. Es posible que el registro de eventos tenga más información.
+El servicio de replicación de archivos del controlador de dominio no puede comunicarse con el servicio de replicación de archivos en este equipo. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_SYSVOL_POPULATE"></span><span id="frs_err_sysvol_populate"></span>**FRS \_ Err Err \_ SYSVOL \_ rellenar**
+<span id="FRS_ERR_SYSVOL_POPULATE"></span><span id="frs_err_sysvol_populate"></span>**FRS \_ ERR \_ SYSVOL \_ POPULATE**
 </dt> <dd> <dl> <dt>
 
 8013 (0x1F4D)
@@ -2927,12 +2927,12 @@ El servicio de replicación de archivos del controlador de dominio no se puede c
 
 
 
-El servicio de replicación de archivos no puede rellenar el volumen del sistema debido a un error interno. Es posible que el registro de eventos tenga más información.
+El servicio de replicación de archivos no puede rellenar el volumen del sistema debido a un error interno. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_SYSVOL_POPULATE_TIMEOUT"></span><span id="frs_err_sysvol_populate_timeout"></span>**FRS \_ Err error de \_ llenado de SYSVOL \_ \_**
+<span id="FRS_ERR_SYSVOL_POPULATE_TIMEOUT"></span><span id="frs_err_sysvol_populate_timeout"></span>**FRS \_ ERR \_ SYSVOL \_ POPULATE \_ TIMEOUT**
 </dt> <dd> <dl> <dt>
 
 8014 (0x1F4E)
@@ -2940,12 +2940,12 @@ El servicio de replicación de archivos no puede rellenar el volumen del sistema
 
 
 
-El servicio de replicación de archivos no puede rellenar el volumen del sistema debido a un tiempo de espera interno. Es posible que el registro de eventos tenga más información.
+El servicio de replicación de archivos no puede rellenar el volumen del sistema debido a un tiempo de espera interno. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_SYSVOL_IS_BUSY"></span><span id="frs_err_sysvol_is_busy"></span>**FRS \_ Err error de \_ SYSVOL \_ está \_ ocupado**
+<span id="FRS_ERR_SYSVOL_IS_BUSY"></span><span id="frs_err_sysvol_is_busy"></span>**FRS \_ ERR \_ SYSVOL ESTÁ \_ \_ OCUPADO**
 </dt> <dd> <dl> <dt>
 
 8015 (0x1F4F)
@@ -2958,7 +2958,7 @@ El servicio de replicación de archivos no puede procesar la solicitud. El volum
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_SYSVOL_DEMOTE"></span><span id="frs_err_sysvol_demote"></span>**FRS \_ Err error de la \_ \_ degradación**
+<span id="FRS_ERR_SYSVOL_DEMOTE"></span><span id="frs_err_sysvol_demote"></span>**FRS \_ ERR \_ SYSVOL \_ DEMOTE**
 </dt> <dd> <dl> <dt>
 
 8016 (0x1F50)
@@ -2966,12 +2966,12 @@ El servicio de replicación de archivos no puede procesar la solicitud. El volum
 
 
 
-El servicio de replicación de archivos no puede detener la replicación del volumen del sistema debido a un error interno. Es posible que el registro de eventos tenga más información.
+El servicio de replicación de archivos no puede detener la replicación del volumen del sistema debido a un error interno. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_INVALID_SERVICE_PARAMETER"></span><span id="frs_err_invalid_service_parameter"></span>**\_parámetro de \_ servicio no válido de FRS Err \_ \_**
+<span id="FRS_ERR_INVALID_SERVICE_PARAMETER"></span><span id="frs_err_invalid_service_parameter"></span>**PARÁMETRO DE SERVICIO \_ FRS ERR \_ NO \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 8017 (0x1F51)
@@ -2979,7 +2979,7 @@ El servicio de replicación de archivos no puede detener la replicación del vol
 
 
 
-El servicio de replicación de archivos ha detectado un parámetro no válido.
+El servicio de replicación de archivos detectó un parámetro no válido.
 
 
 </dt> </dl> </dd> </dl>
@@ -2990,9 +2990,9 @@ El servicio de replicación de archivos ha detectado un parámetro no válido.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
 
 
 

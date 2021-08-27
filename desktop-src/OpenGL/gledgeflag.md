@@ -1,9 +1,9 @@
 ---
-title: función glEdgeFlag (GL. h)
-description: Marca los bordes como límite o no límite. | función glEdgeFlag (GL. h)
+title: Función glEdgeFlag (Gl.h)
+description: Marca los bordes como límites o no delimitadores. | Función glEdgeFlag (Gl.h)
 ms.assetid: cebaa4af-a3bc-4396-9ee0-8cc10bcaf256
 keywords:
-- glEdgeFlag (función) OpenGL
+- Función glEdgeFlag OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 599a0b539e32d0e457f92c256e2cb0b678b05b59
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9c7f78575c79b3da5b48125203d88c9b20e7eb1dc11ee860deea01dfa7dcea28
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081595"
 ---
-# <a name="gledgeflag-function"></a>glEdgeFlag función)
+# <a name="gledgeflag-function"></a>Función glEdgeFlag
 
-Marca los bordes como límite o no límite.
+Marca los bordes como límites o no delimitadores.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ void WINAPI glEdgeFlag(
 *flag* 
 </dt> <dd>
 
-Especifica el valor de marca perimetral actual, ya sea **true** o **false**.
+Especifica el valor de marca perimetral actual, **TRUE** o **FALSE.**
 
 </dd> </dl>
 
@@ -51,32 +51,32 @@ Especifica el valor de marca perimetral actual, ya sea **true** o **false**.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada vértice de un polígono, un triángulo independiente o cuadrangular independientes especificados entre [](/windows/desktop/OpenGL/glbegin)un / par de [**glEnd**](/windows/desktop/OpenGL/glend) de glBegin se marca como el inicio de un límite o de un borde no enlazado. Si la marca de borde actual es **true** cuando se especifica el vértice, el vértice se marca como el inicio de un borde del límite. Si la marca de borde actual es **false**, el vértice se marca como el inicio de un borde no enlazado. La función **glEdgeFlag** establece la marca perimetral en **true** si la marca es distinto de cero; de lo contrario, devuelve **false** .
+Cada vértice de un polígono, triángulo independiente o cuadrículo independiente especificado entre un par [**glBegin**](/windows/desktop/OpenGL/glbegin)glEnd se marca como el inicio de un límite o un borde / [](/windows/desktop/OpenGL/glend) no delimitador. Si la marca de borde actual es **TRUE** cuando se especifica el vértice, el vértice se marca como el inicio de un borde de límite. Si la marca de borde actual **es FALSE,** el vértice se marca como el inicio de un borde no enlazar. La **función glEdgeFlag** establece la marca perimetral en **TRUE** si flag es distinto de cero, **FALSE** en caso contrario.
 
-Los vértices de los triángulos conectados y los quadrilaterals conectados siempre se marcan como límites, independientemente del valor de la marca de borde.
+Los vértices de los triángulos conectados y los cuadríteros conectados siempre se marcan como límites, independientemente del valor de la marca de borde.
 
-Los límites de límite y no límite en los vértices solo son significativos si el modo de polígono de contabilidad \_ \_ está establecido en el punto de contabilidad o en la \_ línea de contabilidad \_ . Vea [**glPolygonMode**](/windows/desktop/OpenGL/glpolygonmode).
+Las marcas de borde límites y no delimitadores en vértices solo son significativas si GL POLYGON MODE se establece en \_ GL POINT o GL \_ \_ \_ LINE. Vea [**glPolygonMode**](/windows/desktop/OpenGL/glpolygonmode).
 
-Inicialmente, el bit de marca perimetral es **true**.
+Inicialmente, el bit de marca perimetral es **TRUE.**
 
-La marca perimetral actual se puede actualizar en cualquier momento. En concreto, se puede llamar a **glEdgeFlag** entre una llamada a [**glBegin**](/windows/desktop/OpenGL/glbegin) y la llamada correspondiente a [**glEnd**](/windows/desktop/OpenGL/glend).
+La marca perimetral actual se puede actualizar en cualquier momento. En concreto, se puede llamar a **glEdgeFlag** entre una llamada a [**glBegin**](/windows/desktop/OpenGL/glbegin) y la llamada correspondiente [**a glEnd**](/windows/desktop/OpenGL/glend).
 
 Las siguientes funciones recuperan información relacionada con **glEdgeFlag**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con marcador de contabilidad de margen de argumento \_ \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ EDGE \_ FLAG
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

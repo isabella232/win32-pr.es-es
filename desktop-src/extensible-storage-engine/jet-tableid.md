@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_TABLEID'
+description: 'Más información sobre: JET_TABLEID'
 title: JET_TABLEID
 TOCTitle: JET_TABLEID
 ms:assetid: 09705c32-97d8-460c-8b58-921497e29c13
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e2eae9590d0151bcdb2dc5621ae6df9e41e068a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04e59ddada8715872978ccc21da11a349e1b7c43
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697448"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983578"
 ---
 # <a name="jet_tableid"></a>JET_TABLEID
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_tableid"></a>JET_TABLEID
 
-El tipo de datos JET_TABLEID contiene un identificador para el cursor de base de datos que se va a usar para una llamada a la API de JET. Un cursor solo se puede usar con la sesión que se usó para abrir ese cursor.
+El JET_TABLEID tipo de datos contiene un identificador para el cursor de base de datos que se usará para una llamada a la API jet. Un cursor solo se puede usar con la sesión que se usó para abrir ese cursor.
 
 ```cpp
     typedef JET_API_PTR JET_TABLEID;
@@ -39,48 +39,35 @@ El tipo de datos JET_TABLEID contiene un identificador para el cursor de base de
 
 JET_TABLEID
 
-Se puede utilizar **null** o [JET_tableidNil](./invalid-handle-constants.md) para indicar un identificador de cursor no válido.
+Null **o** [JET_tableidNil](./invalid-handle-constants.md) pueden usarse para indicar un identificador de cursor no válido.
 
 ### <a name="remarks"></a>Observaciones
 
-Un cursor administra el uso de una tabla para el motor de base de datos. Un cursor puede realizar las tareas siguientes:
+Un cursor administra el uso de una tabla para el motor de base de datos. Un cursor puede realizar las siguientes tareas:
 
-  - Examinar registros
+  - Examen de registros
 
   - Buscar registros
 
   - Elegir el criterio de ordenación y la visibilidad efectivos de esos registros
 
-  - Crear, actualizar o eliminar registros
+  - Creación, actualización o eliminación de registros
 
-  - Modificar el esquema de la tabla
+  - Modificación del esquema de la tabla
 
-La funcionalidad admitida del cursor puede cambiar a medida que cambia el estado o el tipo de la tabla subyacente. Por ejemplo, una tabla temporal podría no permitir la búsqueda de datos cuando se abre con determinadas opciones. El cursor siempre está totalmente conectado a la tabla subyacente e interactúa directamente con esos datos sin almacenamiento en caché. Casi toda la funcionalidad de ISAM básica que expone este motor de base de datos funciona a través del cursor.
+La funcionalidad admitida del cursor puede cambiar a medida que cambia el estado o el tipo de la tabla subyacente. Por ejemplo, una tabla temporal podría no permitir la búsqueda de datos cuando se abre con determinadas opciones. El cursor siempre está totalmente conectado a la tabla subyacente e interactúa directamente con los datos sin ningún almacenamiento en caché. Casi toda la funcionalidad básica de ISAM que expone este motor de base de datos funciona a través del cursor.
 
-Se puede crear un cursor mediante [JetOpenTable](./jetopentable-function.md) o [JetOpenTempTable](./jetopentemptable-function.md). Un cursor se puede duplicar mediante [JetDupCursor](./jetdupcursor-function.md). Un cursor se puede cerrar explícitamente mediante [JetCloseTable](./jetclosetable-function.md) o cerrarse implícitamente mediante [JetEndSession](./jetendsession-function.md) o [JetTerm](./jetterm-function.md). [JetRollback](./jetrollback-function.md) también puede cerrar implícitamente un cursor si estaba abierto en la transacción que se ha anulado. El número máximo de cursores que se pueden crear en cualquier momento se controla mediante [JET_paramMaxCursors](./resource-parameters.md), que puede configurarse mediante [JetSetSystemParameter](./jetsetsystemparameter-function.md).
+Se puede crear un cursor [mediante JetOpenTable](./jetopentable-function.md) o [JetOpenTempTable.](./jetopentemptable-function.md) Un cursor se puede duplicar mediante [JetDupCursor.](./jetdupcursor-function.md) Un cursor se puede cerrar explícitamente mediante [JetCloseTable](./jetclosetable-function.md) o cerrarse implícitamente mediante [JetEndSession](./jetendsession-function.md) o [JetTerm.](./jetterm-function.md) [JetRollback](./jetrollback-function.md) también puede cerrar implícitamente un cursor si se abrió en la transacción anulada. El número máximo de cursores que se pueden crear en cualquier momento se controla mediante JET_paramMaxCursors [,](./resource-parameters.md)que se puede configurar mediante [JetSetSystemParameter](./jetsetsystemparameter-function.md).
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

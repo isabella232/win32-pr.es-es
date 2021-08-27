@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TDN_DIALOG_CONSTRUCTED (commctrl. h)
-description: Enviado por un cuadro de diálogo de tarea después de crear el cuadro de diálogo y antes de que se muestre. Este código de notificación se recibe solo a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método TaskDialogIndirect.
+title: TDN_DIALOG_CONSTRUCTED de notificación (Commctrl.h)
+description: Enviado por un cuadro de diálogo de tarea una vez creado el diálogo y antes de que se muestre. Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método TaskDialogIndirect.
 ms.assetid: e8556039-a74d-4e33-931d-a63ad5b2d4b0
 keywords:
-- TDN_DIALOG_CONSTRUCTED controles de código de notificación de Windows
+- TDN_DIALOG_CONSTRUCTED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8d3360a8cee3542037ea927363de8cab69977e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 14f9d2e6497c1ed13e653edbd84a6fae05690367721201b0a0024bd524460195
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104475"
 ---
-# <a name="tdn_dialog_constructed-notification-code"></a>TDN \_ cuadro de diálogo \_ construido código de notificación
+# <a name="tdn_dialog_constructed-notification-code"></a>Código de notificación \_ TDN DIALOG \_ CONSTRUCTED
 
-Enviado por un cuadro de diálogo de tarea después de crear el cuadro de diálogo y antes de que se muestre. Este código de notificación se recibe solo a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método [**TaskDialogIndirect**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) .
+Enviado por un cuadro de diálogo de tarea una vez creado el diálogo y antes de que se muestre. Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el [**método TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
 
 
 ```C++
@@ -63,9 +63,9 @@ Se omite el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

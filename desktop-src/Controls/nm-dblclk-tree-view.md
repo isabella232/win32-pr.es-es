@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_DBLCLK (vista de árbol) (commctrl. h)
-description: Notifica a la ventana primaria de un control de vista de árbol que el usuario ha hace doble clic en el botón primario del mouse dentro del control. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_DBLCLK de notificación (vista de árbol) (Commctrl.h)
+description: Notifica a la ventana primaria de un control de vista de árbol que el usuario ha hecho doble clic en el botón izquierdo del mouse dentro del control. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 2ed3b3ad-a252-496a-bfcf-0cec5678f192
 keywords:
-- Código de notificación de NM_DBLCLK (vista de árbol) controles de Windows
+- NM_DBLCLK de notificación (vista de árbol) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78f89671e1a26962eacf255d4c98ea0baa1578de
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2c18fa9409365aa55b2410f16ae51ddbdcc1113c730b11293f997e1c641277c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088795"
 ---
-# <a name="nm_dblclk-tree-view-notification-code"></a>NM \_ DBLCLK (vista de árbol) código de notificación
+# <a name="nm_dblclk-tree-view-notification-code"></a>Código \_ de notificación de NM DBLCLK (vista de árbol)
 
-Notifica a la ventana primaria de un control de vista de árbol que el usuario ha hace doble clic en el botón primario del mouse dentro del control. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de vista de árbol que el usuario ha hecho doble clic en el botón izquierdo del mouse dentro del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_DBLCLK
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Devuelve un valor distinto de cero para evitar el procesamiento predeterminado o
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

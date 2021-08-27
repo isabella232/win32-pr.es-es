@@ -1,29 +1,29 @@
 ---
-description: Dado un certificado, el primer paso para descodificar el BLOB de certificado es llamar a CertCreateCertificateContext, pasándole un puntero al certificado codificado (BLOB).
+description: Dado un certificado, el primer paso para descodificar el blob de certificado es llamar a CertCreateCertificateContext y pasarle un puntero al certificado codificado (BLOB).
 ms.assetid: b50530e2-15a0-4215-bf18-300cf67d1611
-title: Descodificar una estructura de CERT_INFO
+title: Decoding a CERT_INFO Structure
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7178c9a5bcfc95a8e2945a6e381f0c2c29cf3b4f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f8eab5a75c2a5906ac875f925845f83f3c411c12a31aeea4825efd795b78eaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104557255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100895"
 ---
-# <a name="decoding-a-cert_info-structure"></a>Descodificar una \_ estructura de información de certificado
+# <a name="decoding-a-cert_info-structure"></a>Decoding a CERT \_ INFO Structure
 
-Dado un certificado, el primer paso para descodificar el [*BLOB*](../secgloss/b-gly.md) de certificado es llamar a [**CertCreateCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatecontext), pasándole un puntero al certificado codificado (*BLOB*). Cuando se llama a esta función, se crea un duplicado del certificado codificado, se crea una estructura de tipo de [**\_ contexto de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)y se crea una estructura de tipo de [**\_ información de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info). Como se muestra en la siguiente ilustración, un [*contexto de certificado*](../secgloss/c-gly.md) incluye el *BLOB* de certificado original, una estructura de c de tipo de **\_ contexto** de certificado y una estructura de c de tipo **\_ información de certificado**. Uno de los miembros de la estructura de **\_ contexto CERT** apunta a la estructura de **\_ información de certificado** y a otra al BLOB de certificado codificado.
+Dado un certificado, el primer paso para descodificar el [*blob*](../secgloss/b-gly.md) de certificado es llamar a [**CertCreateCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatecontext)y pasarle un puntero al certificado codificado *(BLOB).* Cuando se llama a esta función, crea un duplicado del certificado codificado, crea una estructura de tipo [**CERT \_ CONTEXT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)y crea una estructura de tipo [**CERT \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info). Como se muestra en [](../secgloss/c-gly.md) la ilustración siguiente, un contexto de certificado incluye el *blob* de certificado original, una estructura C de tipo **CERT \_ CONTEXT** y una estructura C de tipo **CERT \_ INFO**. Uno de los miembros de la estructura **CERT \_ CONTEXT** apunta a la estructura **CERT \_ INFO** y otro al blob de certificado codificado.
 
 ![contexto de certificado](images/certcntx.png)
 
-El objeto codificado (miembro de datos) siempre se proporciona como entrada a la función [**CryptDecodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobject) y el resultado es una estructura de C que puede tener o no miembros codificados, en función de la distancia del proceso en el que se encuentre.
+El objeto codificado (miembro de datos) siempre se proporciona como entrada para la función [**CryptDecodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobject) y la salida es una estructura de C que puede o no tener miembros codificados, dependiendo de la distancia en el proceso que se esté.
 
-Hay otro miembro que requiere cierta descodificación y que es el miembro de la **extensión** . Aunque no está codificado en el nivel de [**\_ información del certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info) , contiene información codificada. Para descodificar esta información, continúe como se muestra en la siguiente ilustración.
+Hay otro miembro que requiere alguna decodación y que es el miembro **Extension.** Aunque no está codificada en el nivel [**CERT \_ INFO,**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info) contiene información codificada. Para descodificar esta información, continúe como se muestra en la ilustración siguiente.
 
-![descodificar información](images/xtension.png)
+![decoding information](images/xtension.png)
 
-En la estructura de [**\_ información de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info) , el miembro **rgExtension** es un puntero a una matriz de estructuras de [**\_ extensión de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_extension) . Cada estructura de **\_ extensión de certificado** tiene un miembro de **valor** que está codificado y debe descodificarse. El miembro de **valor** se pasa a la función [**CryptDecodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobject) y, a continuación, la salida de la función depende del valor del miembro **pszObjId** . Observe que, en la ilustración, se generan dos estructuras diferentes, una de [**tipo \_ \_ \_ información de restricciones básicas de CERT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_basic_constraints_info) y otra de [**tipo \_ \_ información de \_ identificador \_ de clave de entidad emisora**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_authority_key_id_info), según el valor de **pszObjId**.
+En la [**estructura CERT \_ INFO,**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info) el **miembro rgExtension** es un puntero a una matriz de estructuras [**DE EXTENSIÓN \_ CERT.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_extension) Cada **estructura DE EXTENSIÓN \_ CERT** tiene un **miembro Value** que está codificado y debe descodificarse. El **miembro Value** se pasa a la función [**CryptDecodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobject) y, a continuación, la salida de la función depende del valor del miembro **pszObjId.** Observe que, en la ilustración, se generan dos estructuras diferentes, una de tipo [**CERT \_ BASIC \_ CONSTRAINTS \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_basic_constraints_info) y una de tipo [**CERT AUTHORITY KEY ID \_ \_ \_ \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_authority_key_id_info), en función del valor **de pszObjId**.
 
  
 

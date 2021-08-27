@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetPrereadIndexRanges (función)'
-title: JetPrereadIndexRanges función)
+description: 'Más información sobre: JetPrereadIndexRanges (Función)'
+title: JetPrereadIndexRanges (Función)
 TOCTitle: JetPrereadIndexRanges Function
 ms:assetid: ab49abcc-eaeb-438f-8e6d-b08bc94d7bc3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ835045(v=EXCHG.10)
@@ -19,21 +19,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7cfdd8d25f7008f5fa854cbee32b54fa01942ce2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ff2d9e7c538e8aa8cc862fe9a72c0308e497fd4
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153769"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986668"
 ---
-# <a name="jetprereadindexranges-function"></a>JetPrereadIndexRanges función)
+# <a name="jetprereadindexranges-function"></a>JetPrereadIndexRanges (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-La función **JetPrereadIndexRanges** prelee los índices para mejorar el rendimiento.
+La **función JetPrereadIndexRanges** prelega los índices para mejorar el rendimiento.
 
-La función **JetPrereadIndexRanges** se presentó en el sistema operativo Windows 8.
+La **función JetPrereadIndexRanges** se introdujo en el Windows 8 operativo.
 
 ``` c++
 JET_ERR JetPrereadIndexRanges(
@@ -52,128 +52,74 @@ JET_ERR JetPrereadIndexRanges(
 
 *sesid*
 
-Contexto de sesión de base de datos que se va a usar para la llamada API.
+Contexto de sesión de base de datos que se usará para la llamada API.
 
-*TABLEID*
+*tableid*
 
-Tabla en la que se van a emitir las lecturas preleídas.
+Tabla con la que se emitirán los preleciones.
 
 *rgIndexRanges*
 
-Intervalos de clave que se van a leer como preleídos.
+Intervalos de claves que se van a leer previamente.
 
 *cIndexRanges*
 
-Número de intervalos de clave que se van a leer antes, determinado por el número de elementos de *rgIndexRanges*.
+Número de intervalos de claves que se van a leer previamente, determinado por el número de elementos de *rgIndexRanges.*
 
 *pcRangesPreread*
 
-Número de intervalos de clave que se leyeron realmente.
+Número de intervalos de claves que se han leído previamente.
 
 *rgcolumnidPreread*
 
-Lista de identificadores de columna para las columnas de valor largo que se van a leer como prelectura. De forma predeterminada, solo se prelee el registro en la página. Si es necesario realizar una lectura de las columnas de valores largos fuera de la página, es necesario pasar los identificadores de columna a través de este parámetro.
+Lista de id. de columna para las columnas de valor largo que se deben leer previamente. De forma predeterminada, solo se leerá previamente el registro en la página. Si las columnas de valores largos fuera de página deben leerse previamente, sus id. de columna deben pasarse a través de este parámetro.
 
 *ccolumnidPreread*
 
-El número de identificadores de columna para las columnas de valor largo que se van a leer de forma predeterminada, determinado por el número de elementos de *rgcolumnidPreread*.
+Número de id. de columna para las columnas de valor largo que se deben leer previamente, determinado por el número de elementos de *rgcolumnidPreread.*
 
 *grbit*
 
-Grupo de bits que especifica cero o más de los valores de dirección de prelectura enumerados en la tabla siguiente.
+Grupo de bits que especifica cero o más de los valores de dirección de lectura previa enumerados en la tabla siguiente.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Value</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Adelante</p></td>
-<td><p>Avance de prelectura.</p></td>
-</tr>
-<tr class="even">
-<td><p>Atrás</p></td>
-<td><p>Lectura anterior.</p></td>
-</tr>
-<tr class="odd">
-<td><p>FirstPageOnly</p></td>
-<td><p>Preread solo la primera página de cualquier columna de tipo Long.</p></td>
-</tr>
-<tr class="even">
-<td><p>NormalizedKey</p></td>
-<td><p>Clave/marcador normalizado proporcionado en lugar de valor de columna.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Value</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>Adelante</p> | <p>Leer previamente hacia delante.</p> | 
+| <p>Atrás</p> | <p>Leer previamente hacia atrás.</p> | 
+| <p>FirstPageOnly</p> | <p>Leer previamente solo la primera página de cualquier columna larga.</p> | 
+| <p>NormalizedKey</p> | <p>Clave/marcador normalizado proporcionado en lugar del valor de columna.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de datos [JET_ERR](./jet-err.md) con uno de los códigos de retorno que se enumeran en la tabla siguiente. Para obtener más información sobre los posibles errores del motor de almacenamiento extensible (ESE), vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los códigos de retorno enumerados en la tabla siguiente. Para obtener más información sobre los posibles errores extensibles Storage Engine (ESE), vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+
 
 
 #### <a name="remarks"></a>Observaciones
 
-Si los registros con los intervalos de claves especificados no están en la caché del búfer, debe iniciar lecturas asincrónicas para traer los registros a la memoria caché del búfer de la base de datos.
+Si los registros con los intervalos de claves especificados no están en la caché del búfer, debe iniciar lecturas asincrónicas para llevar los registros a la caché del búfer de base de datos.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows 8.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2012.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2012.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
-#### <a name="see-also"></a>Vea también
+
+#### <a name="see-also"></a>Consulte también
 
 [JET_ERR](./jet-err.md)

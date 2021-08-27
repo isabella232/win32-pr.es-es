@@ -1,7 +1,7 @@
 ---
 description: Busca la siguiente técnica válida, empezando por la técnica después de la técnica especificada.
 ms.assetid: 0d2f3f80-90fd-495d-acb8-075f50e9a974
-title: 'ID3DXEffect:: FindNextValidTechnique (método) (D3DX9Effect. h)'
+title: Método ID3DXEffect::FindNextValidTechnique (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: adcaaa5194abeb17d110118de922811eb84af7fa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f65a08d1f1ec8a1f7710272d2a1c48e936f211b3bcdee8b84652b9a7196f39e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104424412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118705"
 ---
-# <a name="id3dxeffectfindnextvalidtechnique-method"></a>ID3DXEffect:: FindNextValidTechnique (método)
+# <a name="id3dxeffectfindnextvalidtechnique-method"></a>Método ID3DXEffect::FindNextValidTechnique
 
 Busca la siguiente técnica válida, empezando por la técnica después de la técnica especificada.
 
@@ -41,21 +41,21 @@ HRESULT FindNextValidTechnique(
 
 <dl> <dt>
 
-*hTechnique* \[ de\]
+*hTechnique* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de una técnica. Vea [identificadores (Direct3D 9)](handles.md). Especifique **null** para este parámetro para buscar la primera técnica válida.
+Identificador único de una técnica. Vea [Identificadores (Direct3D 9).](handles.md) Especifique **NULL** para este parámetro para buscar la primera técnica válida.
 
 </dd> <dt>
 
-*pTechnique* \[ enuncia\]
+*pTechnique* \[ out\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)\***
 
-Puntero a un identificador de la técnica siguiente. Se devuelve **null** si se trata de la última técnica. Vea [identificadores (Direct3D 9)](handles.md).
+Puntero a un identificador para la siguiente técnica. **Se** devuelve NULL si esta es la última técnica. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero a un identificador de la técnica siguiente. Se devuelve **null** si se 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 21f28e160f1c31dac909e02bf64acba0ae230305
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: be9b25f989998450808ea78d99a5b96c2d4c4dc2
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479648"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984188"
 ---
 # <a name="jet_enumcolumnid-structure"></a>JET_ENUMCOLUMNID estructura
 
@@ -53,7 +53,7 @@ Opcionalmente, identifica una matriz de valores de columna (por índice basado e
 
 Si **ctagSequence** es 0 (cero), se omite **rgtagSequence** y se enumerarán todos los valores de columna para el identificador de columna especificado.
 
-Si un elemento de **rgtagSequence** es 0 (cero), se omitirá la enumeración de ese valor de columna (por índice basado en uno). Se generará una ranura correspondiente en la matriz **de salida JET_ENUMCOLUMNID** estructura con un valor de estado de columna de JET_wrnColumnSkipped.
+Si un elemento **de rgtagSequence** es 0 (cero), se omitirá la enumeración de ese valor de columna (por índice basado en uno). Se generará una ranura correspondiente en la matriz de salida **JET_ENUMCOLUMNID** estructura con un valor de estado de columna de JET_wrnColumnSkipped.
 
 **rgtagSequence**
 
@@ -62,7 +62,11 @@ Matriz de índices basados en uno en la matriz de valores de columna para una co
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

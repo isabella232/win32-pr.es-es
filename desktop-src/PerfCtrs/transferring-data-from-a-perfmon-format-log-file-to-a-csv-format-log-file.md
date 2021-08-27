@@ -1,19 +1,19 @@
 ---
-description: En el siguiente ejemplo se transfieren datos de un archivo de registro de contadores creado por la herramienta de rendimiento a un formato separado por comas (. csv).
+description: En el ejemplo siguiente se transfieren datos de un archivo de registro de contadores creado por la herramienta Rendimiento a un formato separado por comas (.csv).
 ms.assetid: 5adeda14-0312-45ce-af91-6888f3aa1c95
-title: Convertir datos de un archivo de registro de formato binario en un archivo de registro de formato CSV
+title: Convertir datos de un archivo de registro de formato binario en un archivo de registro con formato CSV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fea03ab810ff0ed357f72e3283323ee776bdc70
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2748ef834b82de09ce0fa9f5ca8a36c85781eaa6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667240"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880905"
 ---
-# <a name="converting-data-from-a-binary-format-log-file-to-a-csv-format-log-file"></a>Convertir datos de un archivo de registro de formato binario en un archivo de registro de formato CSV
+# <a name="converting-data-from-a-binary-format-log-file-to-a-csv-format-log-file"></a>Convertir datos de un archivo de registro de formato binario en un archivo de registro con formato CSV
 
-En el siguiente ejemplo se transfieren datos de un archivo de registro de contadores creado por la herramienta de rendimiento a un formato separado por comas (. csv). En el ejemplo se transfieren los datos del contador de tiempo de procesador recopilados del equipo local. Para especificar otro tipo de datos de contador, cambie la variable szCounterPath. Si los datos del contador recopilados provienen de un equipo específico, agregue el nombre del equipo a la ruta de acceso (por ejemplo, " \\ \\ \\ \\ <computername> \\ \\ procesador (0) \\ \\ % de tiempo de procesador").
+En el ejemplo siguiente se transfieren datos de un archivo de registro de contadores creado por la herramienta Rendimiento a un formato separado por comas (.csv). En el ejemplo se transfieren los datos del contador de tiempo de procesador recopilados del equipo local. Para especificar otro tipo de datos de contador, cambie la variable szCounterPath. Si los datos del contador recopilados son de un equipo específico, agregue el nombre del equipo a la ruta de acceso (por ejemplo, "nombreDeEquipo \\ \\ \\ \\ &lt; &gt; \\ \\ Procesador(0) \\ \\ % tiempo de procesador").
 
 
 ```C++

@@ -1,6 +1,6 @@
 ---
-title: 'RWBuffer:: Load (int) (función)'
-description: 'Lee los datos del búfer. | RWBuffer:: Load (int) (función)'
+title: Función RWBuffer::Load(int)
+description: Lee los datos del búfer. | Función RWBuffer::Load(int)
 ms.assetid: 3066E244-DE56-4F0D-8443-018B9EFEC1FF
 keywords:
 - Carga de la función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 561f055990bbca683bf9c55b5805b8d3c55b3272
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d3e3f9c9714cb4cc7f0f29bfa801e767b468d526836a7bd09f0f9823d9ff8868
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118305"
 ---
-# <a name="rwbufferloadint-function"></a>RWBuffer:: Load (int) (función)
+# <a name="rwbufferloadint-function"></a>Función RWBuffer::Load(int)
 
 Lee los datos del búfer.
 
@@ -39,7 +39,7 @@ Lee los datos del búfer.
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -52,15 +52,15 @@ Ubicación del búfer.
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo en la declaración del objeto [**RWBuffer**](sm5-object-rwbuffer.md) .
+El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto RWBuffer.**](sm5-object-rwbuffer.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -72,7 +72,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Cargar métodos](rwbuffer-load.md)
+[Métodos de carga](rwbuffer-load.md)
 </dt> </dl>
 
  

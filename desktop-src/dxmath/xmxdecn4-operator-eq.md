@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: fa6ec1b72f730758749d9ec1223da13b8495ce1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e53a14229510917424eae2a1305dfd11f59caf2
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715551"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624361"
 ---
 # <a name="xmxdecn4-operator--operators"></a>Operador XMXDECN4 = operadores
 
@@ -30,19 +30,19 @@ Asigna datos de componentes vectoriales a la instancia actual de [**XMXDECN4**](
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Operator</th>
-<th style="text-align: left;">Descripción</th>
+<th >Operador</th>
+<th >Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-operator-assign(uint32_t)"><strong>XMXDECN4:: Operator = (const uint32_t)</strong></a></td>
-<td style="text-align: left;">Asigna los datos del componente de vector empaquetados en una instancia de <code>uint32_t</code> a la instancia actual de <code>XMXDECN4</code> . <br/> Este operador asigna los datos del componente de vector empaquetados en una instancia de <code>uint32_t</code> a la instancia actual de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a>. <br/>
+<td ><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-operator-assign(uint32_t)"><strong>XMXDECN4::operator = (const uint32_t)</strong></a></td>
+<td >Asigna los datos del componente vectorial empaquetados en una instancia de <code>uint32_t</code> a la instancia actual de <code>XMXDECN4</code> . <br/> Este operador asigna los datos del componente vectorial empaquetados en una instancia de a <code>uint32_t</code> la instancia actual de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a>. <br/>
 <blockquote>
 [!Note]<br />
 Este operador solo está disponible en C++.
@@ -50,8 +50,8 @@ Este operador solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-operator-assign(xmxdecn4__)"><strong>XMXDECN4:: Operator = (const XMXDECN4&)</strong></a></td>
-<td style="text-align: left;">Asigna los datos del componente de vector de una instancia de <code>XMXDECN4</code> a la instancia actual de <code>XMXDECN4</code> . <br/>
+<td ><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-operator-assign(xmxdecn4__)"><strong>XMXDECN4::operator = (const XMXDECN4&)</strong></a></td>
+<td >Asigna los datos del componente vectorial de una instancia de <code>XMXDECN4</code> a la instancia actual de <code>XMXDECN4</code> . <br/>
 <blockquote>
 [!Note]<br />
 Este operador solo está disponible en C++.

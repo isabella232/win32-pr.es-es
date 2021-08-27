@@ -4,12 +4,12 @@ description: Un mensaje de advertencia es un cuadro de diálogo modal, un mensaj
 ms.assetid: 4a2c3be9-9dc6-4d62-bd3d-72a2e5b621f4
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: e11beeb81b215182de22132dc37b04fac13a0d7033ebe2ec71f20f84415b244d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d12962cb8e984ffcb9f7f91875be7c6a724cea95
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119030063"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982108"
 ---
 # <a name="warning-messages"></a>Mensajes de advertencia
 
@@ -24,14 +24,14 @@ Mensaje de advertencia modal típico.
 
 La característica fundamental de las advertencias es que implican el riesgo de perder uno o varios de los siguientes elementos:
 
--   Un recurso valioso, como datos financieros importantes u otros datos.
+-   Un recurso valioso, como información financiera importante u otros datos.
 -   Integridad o acceso del sistema.
 -   Privacidad o control sobre la información confidencial.
 -   Tiempo del usuario (una cantidad significativa, como 30 segundos o más).
 
 Por el contrario, una confirmación es un cuadro de diálogo modal que pregunta si el usuario desea continuar con una acción. Algunos tipos de advertencias se presentan como confirmaciones y, si es así, también se aplican las directrices de confirmación.
 
-**Nota:** Las instrucciones relacionadas con los [cuadros de](win-dialog-box.md) [diálogo,](mess-confirm.md)las [](vis-layout.md) confirmaciones, los iconos estándar de mensajes de [error,](mess-error.md)[](vis-std-icons.md)las notificaciones y el diseño se presentan en artículos independientes. [](mess-notif.md)
+**Nota:** Las directrices relacionadas [con los cuadros](win-dialog-box.md)de [](mess-notif.md)diálogo , las [confirmaciones,](mess-confirm.md)los mensajes de [error](mess-error.md)iconos [estándar,](vis-std-icons.md)las notificaciones y el [diseño](vis-layout.md) se presentan en artículos independientes.
 
 ## <a name="is-this-the-right-user-interface"></a>¿Es la interfaz de usuario adecuada?
 
@@ -40,26 +40,26 @@ Para decidirte, intenta responder a estas preguntas:
 -   **¿Se está alertando al usuario de una condición que podría causar un problema en el futuro?** Si no es así, el mensaje no es una advertencia.
 -   **¿La interfaz de usuario presenta un error o un problema que ya se ha producido?** Si es así, use un mensaje de error en su lugar.
 -   **¿Es probable que los usuarios realicen una acción o cambien su comportamiento como resultado del mensaje?** Si no es así, la condición no justifica la interrupción del usuario, por lo que es mejor suprimir la advertencia.
--   **¿La condición es el resultado directo de una acción iniciada por el usuario?** Si no es así, considere la posibilidad de [usar notificaciones de eventos no críticas](mess-notif.md).
--   **¿La condición es una condición especial en un control?** Si es así, use un [globo en](ctrl-balloons.md) su lugar.
--   **Para las confirmaciones, ¿el usuario está a punto de realizar una acción de riesgo?** Si es así, una advertencia es adecuada si la acción tiene consecuencias significativas o no se puede deshacer fácilmente.
--   **Para otros tipos de advertencias, ¿el usuario debe actuar ahora o en el futuro inmediato?** No muestre advertencias si los usuarios pueden seguir trabajando de forma productiva sin problemas inmediatos. Posponer la advertencia hasta que la condición sea más inmediata y pertinente.
+-   **¿Es la condición el resultado directo de una acción iniciada por el usuario?** Si no es así, considere la posibilidad de usar [notificaciones de eventos no críticos](mess-notif.md).
+-   **¿La condición es una condición especial en un control?** Si es así, use un [globo en su](ctrl-balloons.md) lugar.
+-   **Para las confirmaciones, ¿el usuario está a punto de realizar una acción de riesgo?** Si es así, es adecuada una advertencia si la acción tiene consecuencias significativas o no se puede deshacer fácilmente.
+-   **Para otros tipos de advertencias, ¿el usuario debe actuar ahora o en el futuro inmediato?** No muestre advertencias si los usuarios pueden seguir trabajando de forma productiva sin problemas inmediatos. Posponga la advertencia hasta que la condición sea más inmediata y pertinente.
 
 ## <a name="design-concepts"></a>Conceptos de diseño
 
-### <a name="avoid-overwarning"></a>Evitar el exceso de tiempo
+### <a name="avoid-overwarning"></a>Evitar la sobreajuste
 
-Estamos en contra de los programas Windows Microsoft. El programa Windows programa tiene advertencias aparentemente en todas partes, advertencias sobre cosas que tienen poca importancia. En algunos programas, casi todas las preguntas se presentan como una advertencia. El exceso de tiempo hace que el uso de un programa se sienta como una actividad peligrosa y resta importancia a los problemas realmente importantes.
+Se ha sobreajustado en los programas Windows Microsoft. El programa Windows programa tiene advertencias aparentemente en todas partes, advertencias sobre cosas que tienen poca importancia. En algunos programas, casi todas las preguntas se presentan como una advertencia. La sobreajuste hace que el uso de un programa se sienta como una actividad peligrosa y resta importancia a los problemas realmente importantes.
 
 **Incorrecto:**
 
 ![captura de pantalla de un mensaje de advertencia innecesario ](images/mess-warn-image2.png)
 
-El exceso de tiempo hace que el programa se sienta peligroso y parezca que lo diseñó el abogado.
+La sobreajuste hace que el programa se sienta peligroso y parezca que lo diseñó el abogado.
 
-El mero potencial de pérdida de datos o un problema futuro por sí solo no es suficiente para llamar a una advertencia. Además, los resultados no deseados deben ser inesperados o no deseados y no corregirse fácilmente. De lo contrario, cualquier error del usuario podría considerarse como una pérdida de datos o un posible problema de algún tipo y merecer una advertencia.
+La simple posibilidad de pérdida de datos o un problema futuro por sí solo no es suficiente para llamar a una advertencia. Además, los resultados no deseados deben ser inesperados o no deseados y no corregirse fácilmente. De lo contrario, casi cualquier error del usuario podría interpretarse para provocar la pérdida de datos o un posible problema de algún tipo y provocar una advertencia.
 
-### <a name="characteristics-of-good-warnings"></a>Características de advertencias buenas
+### <a name="characteristics-of-good-warnings"></a>Características de las advertencias buenas
 
 Advertencias buenas:
 
@@ -71,7 +71,7 @@ Advertencias buenas:
 
 ¿Y qué? Esta confirmación supone que los usuarios suelen salir de programas por accidente.
 
--   **Tener relevancia inmediata.** No solo los usuarios tienen que ocuparse de ellos, sino que tienen que ocuparse ahora. Normalmente, los usuarios no están interesados en los problemas que puedan tener más adelante, siempre y cuando puedan realizar su trabajo ahora.
+-   **Tener relevancia inmediata.** No solo los usuarios tienen que tener cuidado, sino que tienen que importar ahora. Normalmente, los usuarios no están interesados en los problemas que puedan tener más adelante, siempre y cuando puedan realizar su trabajo ahora.
 
 **Incorrecto:**
 
@@ -79,15 +79,15 @@ Advertencias buenas:
 
 En este caso, es mejor advertir al usuario en tres horas.
 
--   **Conduce a la acción.** Hay algo que los usuarios deben hacer o tener en cuenta como resultado de la advertencia. Quizás deba realizar una acción ahora o en algún momento en el futuro inmediato. Quizás, como resultado, realizarán una tarea de forma diferente. La consecuencia de omitir la advertencia debe ser clara. Las advertencias sin acciones simplemente hacen que los usuarios se sientan paranoicos.
+-   **Conduce a la acción.** Hay algo que los usuarios deben hacer o tener en cuenta como resultado de la advertencia. Quizás deba realizar una acción ahora o en algún momento en el futuro inmediato. Tal vez realicen una tarea de forma diferente como resultado. La consecuencia de omitir la advertencia debe ser clara. Las advertencias sin acciones simplemente hacen que los usuarios se sientan paranoicos.
 
 **Incorrecto:**
 
-![Captura de pantalla de la advertencia "Live Messenger is running" ](images/mess-warn-image5.png)
+![Captura de pantalla de la advertencia "Live Messenger se está ejecutando" ](images/mess-warn-image5.png)
 
 ¿Por qué esta notificación es una advertencia? ¿Qué deben hacer los usuarios (además de preocuparse)?
 
--   **No son obvios.** No muestre una advertencia para mostrar la consecuencia obvia de una acción. Por ejemplo, suponga que los usuarios comprenden las consecuencias de no completar una tarea.
+-   **No son obvias.** No muestre una advertencia para mostrar la consecuencia obvia de una acción. Por ejemplo, suponga que los usuarios comprenden las consecuencias de no completar una tarea.
 
 **Incorrecto:**
 
@@ -95,25 +95,25 @@ En este caso, es mejor advertir al usuario en tres horas.
 
 Cancelar un asistente incompleto significa que la tarea no se realiza... ¿quién lo sabía?
 
--   **Se produce con poca frecuencia.** Las advertencias constantes se vuelven ineficaces e ineficaces rápidamente. A menudo, los usuarios se centran más en deshacerse de la advertencia que en solucionar el problema.
+-   **Se produce con poca frecuencia.** Las advertencias constantes se vuelven ineficaces e insoportables. A menudo, los usuarios se centran más en deshacerse de la advertencia que en solucionar el problema.
 
 **Incorrecto:**
 
-![captura de pantalla de la advertencia "Actualizar firmas de virus" ](images/mess-warn-image7.png)
+![Captura de pantalla de la advertencia "Actualizar firmas de virus" ](images/mess-warn-image7.png)
 
 Es más probable que los usuarios se centren en deshacerse de la advertencia que en corregir el problema subyacente.
 
-Un mensaje que no tenga estas características puede seguir siendo un buen mensaje, simplemente no una buena advertencia.
+Un mensaje que no tenga estas características podría seguir siendo un buen mensaje, simplemente no una buena advertencia.
 
 ### <a name="determine-the-appropriate-message-type"></a>Determinar el tipo de mensaje adecuado
 
-Algunos problemas se pueden presentar como un error, una advertencia o información, en función del énfasis y la expresión. Por ejemplo, supongamos que una página web no puede cargar un control ActiveX sin signo en función de la configuración Windows Internet Explorer actual:
+Algunos problemas se pueden presentar como un error, una advertencia o información, dependiendo del énfasis y la expresión. Por ejemplo, suponga que una página web no puede cargar un control ActiveX sin signo en función de la configuración Windows Internet Explorer actual:
 
 -   **Error.** "Esta página no puede cargar un control ActiveX sin signo". (Se describe como un problema existente).
--   **Advertencia.** "Es posible que esta página no se comporte según lo esperado porque Windows Internet Explorer no está configurado para cargar controles ActiveX sin signo". o "Permitir que esta página instale un control de ActiveX sin signo? Si lo hace desde orígenes que no son de confianza, puede dañar el equipo". (Ambos se frases como condiciones que pueden causar problemas futuros).
--   **Información.** "Ha configurado Windows Internet Explorer para bloquear los controles de ActiveX sin signo". (Con frases como una instrucción de hechos).
+-   **Advertencia.** "Es posible que esta página no se comporte según lo previsto porque Windows Internet Explorer no está configurado para cargar controles de ActiveX sin signo". o "¿Permitir que esta página instale un control de ActiveX sin signo? Si lo hace desde orígenes que no son de confianza, puede dañar el equipo". (Ambos con frases como condiciones que pueden causar problemas futuros).
+-   **Información.** "Ha configurado Windows Internet Explorer para bloquear controles de ActiveX sin signo". (Con frases como una declaración de hechos).
 
-**Para determinar el tipo de mensaje adecuado, céntrate en el aspecto más importante del problema sobre el que los usuarios necesitan conocer o actuar.** Normalmente, si un problema impide que el usuario se ejecute, debe presentarlo como un error; si el usuario puede continuar, presentarlo como una advertencia. Crear la [instrucción principal u](text-ui.md) otro texto correspondiente en función de ese foco y, a continuación, elija un icono (estándar o de otro tipo) que coincida con el texto.[](vis-std-icons.md) El texto de instrucción principal y los iconos siempre deben coincidir.
+**Para determinar el tipo de mensaje adecuado, céntrate en el aspecto más importante del problema que los usuarios necesitan conocer o actuar.** Normalmente, si un problema impide que el usuario se ejecute, debe presentarlo como un error. si el usuario puede continuar, presentá como una advertencia. Crear la [instrucción principal u](text-ui.md) otro texto correspondiente en función de ese foco y, a continuación, elija un icono (estándar o de otro tipo) que coincida con el texto.[](vis-std-icons.md) El texto de instrucción principal y los iconos siempre deben coincidir.
 
 ### <a name="be-specific"></a>Ser específico
 
@@ -168,46 +168,14 @@ Las advertencias tienen varios patrones de uso:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Reconocimiento</strong>:<br/> Haga que el usuario tenga en cuenta una condición o un posible problema, pero es posible que el usuario no tenga que hacer nada ahora. <br/></td>
-<td><img src="images/mess-warn-image13.png" alt="Screen shot of warning of network problems " /><br/> <img src="images/mess-warn-image14.png" alt="Screen shot of low-battery warning " /><br/> <img src="images/mess-warn-image15.png" alt="Screen shot of &#39;caps-lock-is-on&#39; warning " /><br/> <img src="images/mess-warn-image16.png" alt="Screen shot of &#39;TPM-not-found&#39; warning " /><br/> Ejemplos de advertencias de reconocimiento.<br/> Las advertencias de reconocimiento tienen la siguiente presentación: <br/>
-<ul>
-<li><strong>Instrucción principal:</strong> Describa la condición o el posible problema.</li>
-<li><strong>Instrucción complementaria:</strong> Explicar la implicación y por qué es importante.</li>
-<li><strong>Botones de confirmación:</strong> Cerca.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Prevención de errores</strong><br/> Haga que el usuario tenga en cuenta la información que podría evitar un problema, especialmente al tomar decisiones. <br/></td>
-<td>Las advertencias de prevención de errores se presentan mejor con un icono de advertencia en su lugar y un texto explicativo. <br/> <img src="images/mess-warn-image17.png" alt="Screen shot of Not-enough-free-space warning " /><br/> <img src="images/mess-warn-image18.png" alt="Screen shot of Use-installation-CD warning " /><br/> Ejemplos de advertencias de prevención de errores.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>Problema inminente</strong><br/> El usuario debe hacer algo ahora para evitar un problema inminente. <br/></td>
-<td><img src="images/mess-warn-image19.png" alt="Screen shot of Close-programs warning " /><br/> Un ejemplo de una advertencia de problema inminente.<br/> Las advertencias de problemas inminentes tienen la siguiente presentación: <br/>
-<ul>
-<li><strong>Instrucción principal:</strong> Describa lo que el usuario necesita hacer ahora.</li>
-<li><strong>Instrucción complementaria:</strong> Explicar la condición y por qué es importante.</li>
-<li><strong>Botones de confirmación:</strong> Un botón de comando o un vínculo de comando para cada opción, o Bien si la acción se produce fuera del cuadro de diálogo.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Confirmación de acción de riesgo</strong><br/> Confirme que el usuario desea continuar con una acción que tiene algún riesgo y no se puede deshacer fácilmente. <br/></td>
-<td><img src="images/mess-warn-image20.png" alt="Screen shot of Formatting-will-erase-data warning " /><br/> Un ejemplo de confirmación de acción de riesgo.<br/> Las confirmaciones de acción de riesgo tienen la siguiente presentación: <br/>
-<ul>
-<li><strong>Instrucción principal:</strong> Haga una pregunta para determinar si el usuario desea continuar.</li>
-<li><strong>Instrucción complementaria:</strong> Explique las razones no obvias por las que el usuario podría no querer continuar.</li>
-<li><strong>Botones de confirmación:</strong> Sí, No.</li>
-</ul>
-Para obtener instrucciones sobre este patrón, vea <a href="mess-confirm.md">Confirmaciones</a>. <br/></td>
-</tr>
-</tbody>
-</table>
+
+| Etiqueta | Value |
+|--------|-------|
+| <strong>Reconocimiento</strong>:<br /> Haga que el usuario tenga en cuenta una condición o un posible problema, pero es posible que el usuario no tenga que hacer nada ahora. <br /> | <img src="images/mess-warn-image13.png" alt="Screen shot of warning of network problems " /><br /><img src="images/mess-warn-image14.png" alt="Screen shot of low-battery warning " /><br /><img src="images/mess-warn-image15.png" alt="Screen shot of 'caps-lock-is-on' warning " /><br /><img src="images/mess-warn-image16.png" alt="Screen shot of 'TPM-not-found' warning " /><br /> Ejemplos de advertencias de reconocimiento.<br /> Las advertencias de reconocimiento tienen la siguiente presentación: <br /><ul><li><strong>Instrucción principal:</strong> Describa la condición o el posible problema.</li><li><strong>Instrucción complementaria:</strong> Explicar la implicación y por qué es importante.</li><li><strong>Botones de confirmación:</strong> Cerca.</li></ul> | 
+| <strong>Prevención de errores</strong><br /> Haga que el usuario tenga en cuenta la información que podría evitar un problema, especialmente al tomar decisiones. <br /> | Las advertencias de prevención de errores se presentan mejor con un icono de advertencia en su lugar y un texto explicativo. <br /><img src="images/mess-warn-image17.png" alt="Screen shot of Not-enough-free-space warning " /><br /><img src="images/mess-warn-image18.png" alt="Screen shot of Use-installation-CD warning " /><br /> Ejemplos de advertencias de prevención de errores.<br /> | 
+| <strong>Problema inminente</strong><br /> El usuario debe hacer algo ahora para evitar un problema inminente. <br /> | <img src="images/mess-warn-image19.png" alt="Screen shot of Close-programs warning " /><br /> Un ejemplo de una advertencia de problema inminente.<br /> Las advertencias de problemas inminentes tienen la siguiente presentación: <br /><ul><li><strong>Instrucción principal:</strong> Describa lo que el usuario necesita hacer ahora.</li><li><strong>Instrucción complementaria:</strong> Explicar la condición y por qué es importante.</li><li><strong>Botones de confirmación:</strong> Un botón de comando o un vínculo de comando para cada opción, o Bien si la acción se produce fuera del cuadro de diálogo.</li></ul> | 
+| <strong>Confirmación de acción de riesgo</strong><br /> Confirme que el usuario desea continuar con una acción que tiene algún riesgo y no se puede deshacer fácilmente. <br /> | <img src="images/mess-warn-image20.png" alt="Screen shot of Formatting-will-erase-data warning " /><br /> Un ejemplo de confirmación de acción de riesgo.<br /> Las confirmaciones de acción de riesgo tienen la siguiente presentación: <br /><ul><li><strong>Instrucción principal:</strong> Haga una pregunta para determinar si el usuario desea continuar.</li><li><strong>Instrucción complementaria:</strong> Explique los motivos no obvios por los que el usuario podría no querer continuar.</li><li><strong>Botones de confirmación:</strong> Sí, No.</li></ul>Para obtener instrucciones sobre este patrón, vea <a href="mess-confirm.md">Confirmaciones</a>. <br /> | 
+
 
 
 
@@ -264,7 +232,7 @@ Para obtener más instrucciones y ejemplos, vea [Iconos estándar.](vis-std-icon
 
 ### <a name="dont-show-this-message-again"></a>No volver a mostrar este mensaje
 
--   **Si un cuadro de diálogo de advertencia necesita esta opción, replantee la advertencia y su frecuencia.** Si tiene todas las características de una buena advertencia (implica riesgo y es pertinente inmediatamente, práctica, no obvia e infrecuente), no debería tener sentido que los usuarios la suprimiesen.
+-   **Si un cuadro de diálogo de advertencia necesita esta opción, replantee la advertencia y su frecuencia.** Si tiene todas las características de una advertencia buena (implica riesgo y es inmediatamente relevante, práctica, no obvia e infrecuente), no debería tener sentido que los usuarios la suprimiesen.
 
 Para obtener más instrucciones, vea [Cuadros de diálogo](win-dialog-box.md).
 
@@ -283,7 +251,7 @@ Para obtener instrucciones de etiquetado, vea [Divulgación progresiva.](ctrl-pr
 
 ### <a name="general"></a>General
 
--   **Quite el texto redundante.** Puede buscarlo en títulos, instrucciones principales, instrucciones complementarias, áreas de contenido, vínculos de comandos y botones de confirmación. Por lo general, deje texto completo en instrucciones y controles interactivos y quite cualquier redundancia de los demás lugares.
+-   **Quite el texto redundante.** Lo busca en títulos, instrucciones principales, instrucciones complementarias, áreas de contenido, vínculos de comandos y botones de confirmación. Por lo general, deje texto completo en instrucciones y controles interactivos y quite cualquier redundancia de los demás lugares.
 -   **No use los términos "advertencia" o "precaución" en el texto.** Cuando [se usa correctamente,](vis-std-icons.md)el icono de advertencia comunica lo suficiente que los usuarios deben continuar con precaución.
 
 **Incorrecto:**
@@ -300,12 +268,12 @@ En este ejemplo, el término "advertencia" no es necesario.
 
 **Incorrecto:**
 
-![captura de pantalla del título del cuadro de diálogo de advertencia de seguridad ](images/mess-warn-image24.png)
+![captura de pantalla del título del cuadro de diálogo advertencia de seguridad ](images/mess-warn-image24.png)
 
 En este ejemplo, "Advertencia de seguridad" no identifica el comando o la característica de donde provenía la advertencia.
 
 -   **No use el título para explicar qué** hacer en el cuadro de diálogo que es el propósito de la instrucción principal.
--   Use [el uso de mayúsculas y mayúsculas](glossary.md)de estilo de título sin finalizar la puntuación.
+-   Use [el uso de mayúsculas de estilo de](glossary.md)título, sin finalizar los signos de puntuación.
 
 ### <a name="main-instructions"></a>Instrucciones principales
 
@@ -316,7 +284,7 @@ En este ejemplo, "Advertencia de seguridad" no identifica el comando o la caract
 | Patrón                        | Instrucción principal                                               |
 |--------------------------------------|----------------------------------------------------------------------|
 | Concienciación<br/>                 | Describa la condición o el posible problema.<br/>              |
-| Problema inminencia<br/>          | Describa lo que el usuario necesita hacer ahora.<br/>                   |
+| Problema inminente<br/>          | Describa lo que el usuario necesita hacer ahora.<br/>                   |
 | Confirmación de acción de riesgo<br/> | Haga una pregunta para determinar si el usuario desea continuar.<br/> |
 
 
@@ -325,23 +293,23 @@ En este ejemplo, "Advertencia de seguridad" no identifica el comando o la caract
 
 -   ![captura de pantalla de una notificación de batería baja ](images/mess-warn-image25.png)
 -   En este ejemplo, la notificación de batería baja es una advertencia de reconocimiento, por lo que la instrucción principal describe la condición.
--   ![captura de pantalla de la advertencia de cambiar la batería inmediatamente ](images/mess-warn-image1.png)
+-   ![Captura de pantalla de la advertencia de cambiar la batería inmediatamente ](images/mess-warn-image1.png)
 -   En este ejemplo, el cuadro de diálogo de batería baja es un problema inminente, por lo que la instrucción principal describe lo que el usuario necesita hacer ahora.
--   **Sea conciso y use solo una sola oración completa.** Desasoyé la instrucción principal hasta la información esencial. Si tiene que explicar algo más, use una instrucción complementaria.
+-   **Sea conciso y use solo una sola oración completa.** Quitar la instrucción principal a la información esencial. Si tiene que explicar algo más, use una instrucción complementaria.
 -   **Use palabras como "now" e "immediately" si el usuario debe actuar inmediatamente.** No use estas palabras si no hay ninguna urgencia.
--   **Sea específico si hay objetos implicados, así mismo, dé sus nombres completos.**
--   Use [mayúsculas y mayúsculas de estilo oración.](glossary.md)
+-   **Sea específico si hay objetos implicados, así como sus nombres completos.**
+-   Use [mayúsculas de estilo oración.](glossary.md)
 
 ### <a name="supplemental-instructions"></a>Instrucciones complementarias
 
--   La instrucción complementaria para una advertencia se basa en su patrón de diseño:
+-   La instrucción complementaria de una advertencia se basa en su patrón de diseño:
 
 
 
 | Patrón            | Instrucción complementaria                                            |
 |--------------------------------------|------------------------------------------------------------------------------------|
 | Concienciación<br/>                 | Explicar la implicación y por qué es importante.<br/>                        |
-| Problema inminencia<br/>          | Explique la condición y por qué es importante.<br/>                          |
+| Problema inminente<br/>          | Explicar la condición y por qué es importante.<br/>                          |
 | Confirmación de acción de riesgo<br/> | Explique los motivos no obvios por los que el usuario podría no querer continuar.<br/> |
 
 
@@ -360,7 +328,7 @@ En este ejemplo, "Advertencia de seguridad" no identifica el comando o la caract
 | Patrón               | Botones de confirmación        |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Concienciación<br/>                 | Casi. No use Aceptar porque sugiere que los posibles problemas son correctos.<br/>                              |
-| Problema inminencia<br/>          | Un botón de comando o un vínculo de comando para cada opción o Aceptar si la acción se produce fuera del cuadro de diálogo.<br/> |
+| Problema inminente<br/>          | Un botón de comando o un vínculo de comando para cada opción, o Bien si la acción se produce fuera del cuadro de diálogo.<br/> |
 | Confirmación de acción de riesgo<br/> | Sí, No.<br/>                                                                                             |
 
 
@@ -375,11 +343,11 @@ En este ejemplo, "Advertencia de seguridad" no identifica el comando o la caract
 
 Al hacer referencia a advertencias:
 
--   Si la advertencia hace una pregunta, haga referencia a una advertencia por su pregunta. De lo contrario, use la instrucción principal. Si la pregunta o la instrucción principal son largas o detalladas, resuma.
+-   Si la advertencia hace una pregunta, consulte una advertencia por su pregunta. De lo contrario, use la instrucción principal. Si la pregunta o la instrucción principal son largas o detalladas, resuma.
 -   Si es necesario, puede hacer referencia a un cuadro de diálogo de advertencia como un mensaje.
 -   Cuando sea posible, formatee el texto con negrita. De lo contrario, coloque el texto entre comillas solo si es necesario para evitar confusiones.
 
-Ejemplo: en el mensaje ¿Desea mostrar los elementos no **seguros?,** haga clic en Sí.
+Ejemplo: en el **mensaje ¿Desea mostrar los elementos** no seguros? , haga clic en Sí.
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JetOpenTable (función)'
+description: 'Más información sobre: JetOpenTable (Función)'
 title: Función JetOpenTable
 TOCTitle: JetOpenTable Function
 ms:assetid: ded6348c-a82a-49bc-8a5d-e40ed5d6315c
@@ -20,21 +20,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7a3ffe9490b75606910c5867d3e8b59d9a8c520d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a288e3e1a625106c72f57125eea8a4219555f86
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808431"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988488"
 ---
 # <a name="jetopentable-function"></a>Función JetOpenTable
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetopentable-function"></a>Función JetOpenTable
 
-La función **JetOpenTable** abre un cursor en una tabla creada anteriormente.
+La **función JetOpenTable** abre un cursor en una tabla creada anteriormente.
 
 ```cpp
     JET_ERR JET_API JetOpenTable(
@@ -52,181 +52,84 @@ La función **JetOpenTable** abre un cursor en una tabla creada anteriormente.
 
 *sesid*
 
-Contexto de sesión de base de datos que se va a usar.
+Contexto de sesión de base de datos que se usará.
 
-*DBID*
+*Dbid*
 
-Identificador de base de datos que se va a usar para buscar la tabla.
+Identificador de base de datos que se usará para buscar la tabla.
 
 *szTableName*
 
-Nombre de la tabla que se va a abrir.
+Nombre de la tabla que se abrirá.
 
 *pvParameters*
 
-En desuso. Se establece en **null**.
+En desuso. Se establece en **NULL.**
 
 *cbParameters*
 
-En desuso. Se establece en 0 (cero).
+En desuso. Establezca en 0 (cero).
 
 *grbit*
 
 Grupo de bits que especifica cero o más de las opciones siguientes.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Value</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitTableDenyRead</p></td>
-<td><p>Otra sesión de base de datos no puede abrir la tabla para acceso de lectura.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitTableDenyWrite</p></td>
-<td><p>No se puede abrir la tabla para acceso de escritura en otra sesión de base de datos.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitTableNoCache</p></td>
-<td><p>No almacene en caché las páginas de esta tabla.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitTablePermitDDL</p></td>
-<td><p>Permite la modificación de DDL en las tablas marcadas como FixedDDL. Esta opción debe usarse con la opción JET_bitTableDenyRead.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitTablePreread</p></td>
-<td><p>Proporciona una sugerencia que indica que la tabla probablemente no está en la caché del búfer y que la lectura previa puede ser beneficiosa para el rendimiento.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitTableReadOnly</p></td>
-<td><p>Solicita acceso de solo lectura a la tabla.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitTableSequential</p></td>
-<td><p>La tabla se debe capturar de forma muy agresiva desde el disco, ya que la aplicación la examinará secuencialmente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitTableUpdatable</p></td>
-<td><p>Solicita acceso de escritura a la tabla.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Value</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitTableDenyRead</p> | <p>Otra sesión de base de datos no puede abrir la tabla para el acceso de lectura.</p> | 
+| <p>JET_bitTableDenyWrite</p> | <p>Otra sesión de base de datos no puede abrir la tabla para el acceso de escritura.</p> | 
+| <p>JET_bitTableNoCache</p> | <p>No almacenar en caché las páginas de esta tabla.</p> | 
+| <p>JET_bitTablePermitDDL</p> | <p>Permite la modificación de DDL en tablas marcadas como FixedDDL. Esta opción debe usarse con la JET_bitTableDenyRead predeterminada.</p> | 
+| <p>JET_bitTablePreread</p> | <p>Proporciona una sugerencia de que la tabla probablemente no esté en la caché del búfer y que la lectura previa puede ser beneficiosa para el rendimiento.</p> | 
+| <p>JET_bitTableReadOnly</p> | <p>Solicita acceso de solo lectura a la tabla.</p> | 
+| <p>JET_bitTableSequential</p> | <p>La tabla debe tener una captura previa muy agresiva del disco porque la aplicación la examinará secuencialmente.</p> | 
+| <p>JET_bitTableUpdatable</p> | <p>Solicita acceso de escritura a la tabla.</p> | 
+
 
 
 *ptableid*
 
-Si se ejecuta correctamente, apunta al identificador de la tabla. En caso de error, el contenido de *ptableid* no está definido.
+Si se ejecuta correctamente, apunta al identificador de la tabla. En caso de error, el contenido *de ptableid* no está definido.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidDatabaseId</p></td>
-<td><p><em>DBID</em> no es un identificador de base de datos válido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidgrbit</p></td>
-<td><p>Se pasó una combinación incorrecta de <em>grbit</em> .</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidName</p></td>
-<td><p>El nombre proporcionado en <em>szTableName</em> no es válido.</p>
-<p>Para obtener más información sobre los nombres de tabla válidos, vea el parámetro <em>szTableName</em> en <a href="gg269210(v=exchg.10).md">JetCreateTable</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errObjectNotFound</p></td>
-<td><p>Se intentó abrir una tabla que no existe en la base de datos.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOutOfCursors</p></td>
-<td><p>No se pudo realizar la operación porque el motor no puede asignar los recursos necesarios para abrir un nuevo cursor. Consulte la sección Comentarios.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTableInUse</p></td>
-<td><p>Otra operación de base de datos está utilizando la tabla.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_wrnTableInUseBySystem</p></td>
-<td><p>Una advertencia no grave que indica que el sistema está usando la tabla.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTableLocked</p></td>
-<td><p>La tabla está bloqueada por otra operación de base de datos.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTooManyOpenTables</p></td>
-<td><p>Se intentó abrir demasiadas tablas únicas a la vez. Consulte la sección Comentarios.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errInvalidDatabaseId</p> | <p><em>dbid no</em> es un identificador de base de datos válido.</p> | 
+| <p>JET_errInvalidgrbit</p> | <p>Se pasó una combinación no <em>correcta de grbit.</em></p> | 
+| <p>JET_errInvalidName</p> | <p>El nombre especificado en <em>szTableName</em> no es válido.</p><p>Para obtener más información sobre los nombres de tabla válidos, vea el <em>parámetro szTableName</em> <a href="gg269210(v=exchg.10).md">en JetCreateTable</a>.</p> | 
+| <p>JET_errObjectNotFound</p> | <p>Se intentó abrir una tabla que no existe en la base de datos.</p> | 
+| <p>JET_errOutOfCursors</p> | <p>Error en la operación porque el motor no puede asignar los recursos necesarios para abrir un nuevo cursor. Consulte la sección Comentarios.</p> | 
+| <p>JET_errTableInUse</p> | <p>Otra operación de base de datos está utilizando la tabla.</p> | 
+| <p>JET_wrnTableInUseBySystem</p> | <p>Una advertencia nofatal que indica que el sistema está utilizando la tabla.</p> | 
+| <p>JET_errTableLocked</p> | <p>Otra operación de base de datos bloquea la tabla.</p> | 
+| <p>JET_errTooManyOpenTables</p> | <p>Se intentó abrir demasiadas tablas únicas a la vez. Consulte la sección Comentarios.</p> | 
+
 
 
 #### <a name="remarks"></a>Observaciones
 
-Las tablas abiertas con **JetOpenTable** normalmente se deben cerrar con [JetCloseTable](./jetclosetable-function.md). La excepción a esta regla se produce cuando se llama a **JetOpenTable** en una transacción y se revierte la transacción (con [JetRollback](./jetrollback-function.md)). Cuando se revierte una transacción, la tabla se cierra automáticamente. En este caso, es un error cerrar la tabla con [JetCloseTable](./jetclosetable-function.md).
+Las tablas abiertas **con JetOpenTable** normalmente deben cerrarse [con JetCloseTable.](./jetclosetable-function.md) La excepción a esta regla se produce cuando se llama a **JetOpenTable** en una transacción y la transacción se revierte [(con JetRollback).](./jetrollback-function.md) Al revertir una transacción, la tabla se cierra automáticamente. En este caso, es un error cerrar la tabla con [JetCloseTable](./jetclosetable-function.md).
 
-Es válido abrir tablas del sistema con **JetOpenTable** (por ejemplo, MSysObjects, MSysUnicodeFixup). El esquema de las tablas del sistema puede cambiar, por lo que no se recomienda el acceso a las tablas del sistema. El número de tablas únicas que se pueden abrir simultáneamente se ve afectado directamente por *JET_paramMaxOpenTables*. Si la tabla está abierta actualmente, se creará un nuevo cursor en la tabla. Los recursos de cursor se configuran mediante [JetSetSystemParameter](./jetsetsystemparameter-function.md) con *JET_paramMaxCursors*. Consulte también [JetDupCursor](./jetdupcursor-function.md).
+Es legal abrir tablas del sistema con **JetOpenTable** (por ejemplo, MSysObjects, MSysUnicodeFixup). El esquema de las tablas del sistema puede cambiar, por lo que no se recomienda acceder a las tablas del sistema. El número de tablas únicas que se pueden abrir simultáneamente se ve afectado directamente por *JET_paramMaxOpenTables*. Si la tabla está abierta actualmente, se creará un nuevo cursor en la tabla. Los recursos de cursor se configuran [mediante JetSetSystemParameter](./jetsetsystemparameter-function.md) *con JET_paramMaxCursors*. Consulte también [JetDupCursor](./jetdupcursor-function.md).
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JetOpenTableW</strong> (Unicode) y <strong>JetOpenTableA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetOpenTableW</strong> (Unicode) y <strong>JetOpenTableA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

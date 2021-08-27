@@ -1,69 +1,69 @@
 ---
-title: Instalación del Asistente para proyectos
-description: Instalación del Asistente para proyectos
+title: Instalación del Asistente para Project de instalación
+description: Instalación del Asistente para Project de instalación
 ms.assetid: bb27e5f0-d49e-46e5-a15f-be1a0a752c1c
 keywords:
-- Windows Media Player tiendas en línea, Complementos
-- tiendas en línea, Complementos
-- tipo 2 tiendas en línea, Complementos
-- Windows Media Player tiendas en línea, Asistente para complementos
-- tiendas en línea, Asistente para complementos
-- tipo 2 tiendas en línea, Asistente para complementos
-- Windows Media Player tiendas en línea, Asistente para proyectos
-- tiendas en línea, Asistente para proyectos
-- tipo 2 tiendas en línea, Asistente para proyectos
-- Windows Media Player tiendas en línea, instalar el Asistente para complementos
-- tiendas en línea, Asistente para instalar complementos
-- tipo 2 tiendas en línea, Asistente para instalar complementos
-- Windows Media Player tiendas en línea, instalación del Asistente para proyectos
-- tiendas en línea, instalación del Asistente para proyectos
-- tipo 2 tiendas en línea, instalación del Asistente para proyectos
-- complementos, Windows Media Player tiendas en línea
+- Reproductor de Windows Media en línea, complementos
+- tiendas en línea, complementos
+- tiendas en línea de tipo 2, complementos
+- Reproductor de Windows Media en línea, asistente para complementos
+- online stores,plug-in wizard
+- tienda en línea de tipo 2, asistente para complementos
+- Reproductor de Windows Media en línea, asistente para proyectos
+- tiendas en línea, asistente para proyectos
+- tiendas en línea de tipo 2, asistente para proyectos
+- Reproductor de Windows Media en línea, asistente para instalar complementos
+- online stores,installing plug-in wizard
+- tiendas en línea de tipo 2, asistente para instalación de complementos
+- Reproductor de Windows Media en línea, asistente para instalar proyectos
+- tiendas en línea, asistente para instalar proyectos
+- tiendas en línea de tipo 2, asistente para instalar proyectos
+- complementos, Reproductor de Windows Media en línea
 - complementos, tiendas en línea
-- complementos, tipo 2 tiendas en línea
-- complementos, Asistente para instalar complementos
-- complementos, Asistente para complementos
-- complementos, instalación del Asistente para proyectos
-- complementos, Asistente para proyectos
-- Complementos de Windows Media Player, escriba 2 tiendas en línea
-- Complementos de Windows Media Player, tiendas en línea
-- Complementos de Windows Media Player, Windows Media Player tiendas en línea
-- Complementos de Windows Media Player, instalación del Asistente para complementos
-- Complementos de Windows Media Player, Asistente para complementos
-- Complementos de Windows Media Player, instalación del Asistente para proyectos
-- Complementos de Windows Media Player, Asistente para proyectos
-- instalación del Asistente para complementos
+- complementos, escriba 2 tiendas en línea
+- complementos, asistente para instalar complementos
+- complementos, asistente para complementos
+- complementos, asistente para instalar proyectos
+- complementos, asistente para proyectos
+- Reproductor de Windows Media complementos, escriba 2 tiendas en línea
+- Reproductor de Windows Media complementos, tiendas en línea
+- Reproductor de Windows Media complementos, Reproductor de Windows Media en línea
+- Reproductor de Windows Media complementos, asistente para instalar complementos
+- Reproductor de Windows Media complementos, asistente para complementos
+- Reproductor de Windows Media complementos, asistente para instalar proyectos
+- Reproductor de Windows Media complementos, asistente para proyectos
+- Asistente para instalar complementos
 - Asistente para complementos
-- instalación del Asistente para proyectos
+- Asistente para instalar proyectos
 - Asistente para proyectos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc37754a028d73114b1b425dcbc80e268559355d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4f00e0430791fb36285ba365eed752083889f2b55bd126c4a588d2a506f58acd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123525"
 ---
-# <a name="installing-the-project-wizard"></a>Instalación del Asistente para proyectos
+# <a name="installing-the-project-wizard"></a>Instalación del Asistente para Project de instalación
 
 Para configurar el entorno de desarrollo para crear complementos de tienda en línea de tipo 2, debe instalar los siguientes elementos:
 
 -   Microsoft Visual Studio .NET 2003 o posterior
--   Windows Media Player 9 series o posterior
--   Windows SDK, que incluye el SDK de Windows Media Player
+-   Reproductor de Windows Media serie 9 o posterior
+-   Windows SDK, que incluye el SDK Reproductor de Windows Media
 -   Asistente para complementos de tienda en línea
 
 ## <a name="installing-the-wizard"></a>Instalación del asistente
 
-Siga estos pasos para instalar el Asistente para complementos de tienda en línea en Visual Studio.
+Siga estos pasos para instalar el asistente para complementos de la tienda en línea en Visual Studio.
 
-1.  Busque la carpeta en la que instaló el Windows SDK. Expanda la carpeta para ver sus subcarpetas y vaya a samples \\ multimedia \\ WMP \\ Wizards \\ Services.
+1.  Busque la carpeta donde instaló el SDK Windows. Expanda la carpeta para ver sus subcarpetas y vaya a Ejemplos \\ de servicios de \\ asistentes de WMP \\ \\ multimedia.
 2.  Busque los tres archivos siguientes:
-    -   wmpservices. vsz
-    -   wmpservices. vsdir
-    -   wmpservices. ico
-3.  Con un editor de texto como el Bloc de notas, edite el archivo wmpservices. vsz.
+    -   wmpservices.vsz
+    -   wmpservices.vsdir
+    -   wmpservices.ico
+3.  Con un editor de texto como Bloc de notas, edite el archivo wmpservices.vsz.
 
     Busque la línea siguiente:
 
@@ -73,19 +73,19 @@ Siga estos pasos para instalar el Asistente para complementos de tienda en líne
 
     
 
-    Cambie `<VsWizardEngine version goes here>` a uno de los valores siguientes, en función de la versión de Visual Studio que tenga instalada.
+    Cambie `<VsWizardEngine version goes here>` a uno de los siguientes valores, en función de la versión de Visual Studio que haya instalado.
 
     
 
     | Value              | Versión de Visual Studio   |
     |--------------------|-------------------------|
-    | VsWizardEngine. 7.1 | Visual Studio .NET 2003 |
-    | VsWizardEngine. 8.0 | Visual Studio 2005      |
-    | VsWizardEngine. 9.0 | Visual Studio 2008      |
+    | VsWizardEngine.7.1 | Visual Studio .NET 2003 |
+    | VsWizardEngine.8.0 | Visual Studio 2005      |
+    | VsWizardEngine.9.0 | Visual Studio 2008      |
 
     
 
-     
+     
 
     Busque la línea siguiente:
 
@@ -97,7 +97,7 @@ Siga estos pasos para instalar el Asistente para complementos de tienda en líne
 
     Cambie `<path to wmpservices directory goes here>` a la ruta de acceso donde se encuentran los archivos del asistente.
 
-    Por ejemplo, supongamos que tiene Visual Studio 2008 y que los archivos del asistente están aquí: C: \\ archivos de programa \\ Microsoft SDK \\ Windows \\ v 7.0 \\ Samples multimedia de los servicios de los \\ \\ \\ asistentes \\ . El archivo wmpservices. vsz tendrá el siguiente aspecto:
+    Por ejemplo, supongamos que Visual Studio 2008 y los archivos del asistente están aquí: C: Archivos de programa Sdk de Microsoft Windows asistentes multimedia WMP de ejemplos \\ \\ \\ \\ v7.0. \\ \\ \\ \\ \\ A continuación, el archivo wmpservices.vsz tendría el siguiente aspecto:
 
     ```
     VSWIZARD 7.0
@@ -110,19 +110,19 @@ Siga estos pasos para instalar el Asistente para complementos de tienda en líne
 
     
 
-4.  Busque la carpeta en la que instaló Visual Studio. Expanda la carpeta para ver sus subcarpetas y busque una carpeta denominada VCProjects.
-5.  Copie los tres archivos enumerados en el paso 2 en la carpeta VCProjects. El asistente ya está instalado.
+4.  Busque la carpeta donde instaló Visual Studio. Expanda la carpeta para ver sus subcarpetas y busque una carpeta denominada vcprojects.
+5.  Copie los tres archivos enumerados en el paso 2 en la carpeta vcprojects. El asistente ya está instalado.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Compilar el complemento para una tienda en línea de tipo 2**](building-the-plug-in-for-a-type-2-online-store.md)
+[**Creación del complemento para una tienda en línea de tipo 2**](building-the-plug-in-for-a-type-2-online-store.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

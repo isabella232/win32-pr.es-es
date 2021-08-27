@@ -1,9 +1,9 @@
 ---
-title: Mensaje de HDM_CREATEDRAGIMAGE (commctrl. h)
-description: Crea una versión semitransparente de la imagen de un elemento para su uso como una imagen de arrastre. Puede enviar este mensaje explícitamente o utilizar la \_ macro header CreateDragImage.
+title: HDM_CREATEDRAGIMAGE mensaje (Commctrl.h)
+description: Crea una versión semitransparente de la imagen de un elemento para usarla como una imagen de arrastre. Puede enviar este mensaje explícitamente o usar la \_ macro Header CreateDragImage.
 ms.assetid: 1b9dc515-d327-4634-a424-cc15a32f0f7c
 keywords:
-- HDM_CREATEDRAGIMAGE controles de mensajes de Windows
+- HDM_CREATEDRAGIMAGE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9e801ad9771205b5f2e6df8e37bb0a0ad7f0bc6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1507f3e72ce75394aaad834fe5c0d876fc579a671ad8f2df00865b2278ad6e32
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047235"
 ---
-# <a name="hdm_createdragimage-message"></a>HDM \_ CREATEDRAGIMAGE
+# <a name="hdm_createdragimage-message"></a>Mensaje \_ CREATEDRAGIMAGE de HDM
 
-Crea una versión semitransparente de la imagen de un elemento para su uso como una imagen de arrastre. Puede enviar este mensaje explícitamente o utilizar la macro [**Header \_ CreateDragImage**](/windows/desktop/api/Commctrl/nf-commctrl-header_createdragimage) .
+Crea una versión semitransparente de la imagen de un elemento para usarla como una imagen de arrastre. Puede enviar este mensaje explícitamente o usar la macro [**\_ Header CreateDragImage.**](/windows/desktop/api/Commctrl/nf-commctrl-header_createdragimage)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -49,9 +49,9 @@ Devuelve un identificador a una lista de imágenes que contiene la nueva imagen 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

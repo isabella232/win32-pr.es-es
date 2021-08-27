@@ -1,7 +1,7 @@
 ---
-description: El método CheckSizes comprueba las propiedades de asignador con el tipo de medio actual.
+description: El método CheckSizes comprueba las propiedades del asignador con el tipo de medio actual.
 ms.assetid: 040b4ed0-c1cc-4995-a0f8-86efa493f84b
-title: Método CImageAllocator. CheckSizes (Winutil. h)
+title: Método CImageAllocator.CheckSizes (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 71184d4915911c29bff9d3a6fa9985942a4aaa44
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 070c0cac981f73ea6fa7e3c0ecb620e262f744edd651571be9b592840ad23956
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076235"
 ---
-# <a name="cimageallocatorchecksizes-method"></a>CImageAllocator. CheckSizes, método
+# <a name="cimageallocatorchecksizes-method"></a>Método CImageAllocator.CheckSizes
 
-El `CheckSizes` método comprueba las propiedades de asignador con el tipo de medio actual.
+El `CheckSizes` método comprueba las propiedades del asignador con el tipo de medio actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,29 +45,29 @@ HRESULT CheckSizes(
 *pRequest* 
 </dt> <dd>
 
-Puntero a una estructura de [**\_ propiedades de asignador**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que describe las propiedades de asignador solicitadas.
+Puntero a una [**estructura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que describe las propiedades de asignador solicitadas.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
 | Código devuelto                                                                                           | Descripción                                                                 |
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                  | Las propiedades solicitadas son compatibles con el tipo de medio.<br/>     |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Las propiedades solicitadas son compatibles con el tipo de medio.<br/>     |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>          | Las propiedades solicitadas no son compatibles con el tipo de medio.<br/> |
-| <dl> <dt>**VFW \_ E \_ no \_ conectada**</dt> </dl> | El PIN propietario no está conectado.<br/>                                 |
+| <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | El pin propietario no está conectado.<br/>                                 |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el método devuelve, si el valor devuelto es S \_ OK, el miembro **cbBuffer** de *pRequest* contiene el tamaño de búfer real. Esto puede ser mayor que el tamaño solicitado, pero nunca será menor.
+Cuando el método devuelve un valor, si el valor devuelto es S OK, el \_ **miembro cbBuffer** de *pRequest* contiene el tamaño de búfer real. Puede ser mayor que el tamaño solicitado, pero nunca será menor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Cuando el método devuelve, si el valor devuelto es S \_ OK, el miembro **cbBuff
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Cuando el método devuelve, si el valor devuelto es S \_ OK, el miembro **cbBuff
 
 <dl> <dt>
 
-[**Clase CImageAllocator**](cimageallocator.md)
+[**CImageAllocator (clase)**](cimageallocator.md)
 </dt> </dl>
 
  

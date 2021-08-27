@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de idleTriggerType
-description: Define el tipo base para el elemento IdleTrigger.
+title: IdleTriggerType Complex Type
+description: Define el tipo base del elemento IdleTrigger.
 ms.assetid: 05beabb7-2e6f-4df1-809a-9f64a578d80a
 keywords:
-- tipo complejo de idleTriggerType Programador de tareas
+- Tipo complejo idleTriggerType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 97868d5b13f224bc55661b681246be29f3a4a20b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a5c1ae0c6a88576eb7996a8151e96bb92c4a47c0d732a3558deede3b835356f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100025"
 ---
-# <a name="idletriggertype-complex-type"></a>Tipo complejo de idleTriggerType
+# <a name="idletriggertype-complex-type"></a>IdleTriggerType Complex Type
 
-Define el tipo base para el elemento [**IdleTrigger**](taskschedulerschema-idletrigger-triggergroup-element.md) .
+Define el tipo base del [**elemento IdleTrigger.**](taskschedulerschema-idletrigger-triggergroup-element.md)
 
 ``` syntax
 <xs:complexType name="idleTriggerType">
@@ -40,8 +40,8 @@ Define el tipo base para el elemento [**IdleTrigger**](taskschedulerschema-idlet
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -49,7 +49,7 @@ Define el tipo base para el elemento [**IdleTrigger**](taskschedulerschema-idlet
 
 <dl> <dt>
 
-[Tipos complejos de esquema Programador de tareas](task-scheduler-schema-complex-types.md)
+[Programador de tareas complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

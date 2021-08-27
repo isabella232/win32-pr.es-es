@@ -1,7 +1,7 @@
 ---
 description: Libera los datos de atributo de archivo especificados.
 ms.assetid: c1a4dcf8-614f-49a5-a923-8d7d610e6406
-title: SdbFreeFileAttributes función)
+title: Función SdbFreeFileAttributes
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 6f28812fbbec83dd1a41c8a21cb4c9544dbefea5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7e99180198f8f23ba6b6872502710b2af28aaff3999a9f315c33ef2d1874d987
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103806914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103675"
 ---
-# <a name="sdbfreefileattributes-function"></a>SdbFreeFileAttributes función)
+# <a name="sdbfreefileattributes-function"></a>Función SdbFreeFileAttributes
 
 Libera los datos de atributo de archivo especificados.
 
@@ -39,16 +39,16 @@ BOOL WINAPI SdbFreeFileAttributes(
 
 <dl> <dt>
 
-*pFileAttributes* \[ de\]
+*pFileAttributes* \[ En\]
 </dt> <dd>
 
-Una estructura [**ATTRINFO**](attrinfo.md) devuelta por la función [**SdbGetFileAttributes**](sdbgetfileattributes.md) .
+Estructura [**ATTRINFO devuelta**](attrinfo.md) por la [**función SdbGetFileAttributes.**](sdbgetfileattributes.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se ejecuta correctamente o **false** en caso de error.
+La función devuelve **TRUE si** se ejecuta correctamente o **FALSE** en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ La función devuelve **true** si se ejecuta correctamente o **false** en caso de
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Elemento Button (Marco de la cinta de opciones de Windows)
+title: Elemento Button (Windows Ribbon Framework)
 description: Representa un control Button.
 ms.assetid: a17d4dd8-9b0d-4b4a-93f4-f2a8c008fc58
 keywords:
-- Botón, elemento De la cinta de opciones de Windows
+- Botón, elemento Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 40236b60a9fe9c72dd35d67fcf7c98bc188938af
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 066327000d490ac1615fe1e1447e1579939670d5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443576"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630688"
 ---
 # <a name="button-element"></a>Elemento Button
 
@@ -39,16 +39,16 @@ Representa un control [Button.](windowsribbon-controls-button.md)
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -115,7 +115,7 @@ Puede producirse una o varias veces para cada [**elemento ControlGroup**](window
 
 En el ejemplo siguiente se muestra el marcado básico para **button**.
 
-En esta sección de código se muestran las **declaraciones del** comando Button, con un [**grupo**](windowsribbon-element-group.md) asociado que actúa como contenedor primario para el **elemento Button.**
+En esta sección de código se muestran [](windowsribbon-element-group.md) las **declaraciones De** comando de botón, con un grupo asociado que actúa como contenedor primario para el **elemento Button.**
 
 
 ```XML

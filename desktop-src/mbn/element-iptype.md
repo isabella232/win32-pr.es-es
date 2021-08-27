@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt \/ ... \/ IPType (v4)
+description: MBNProfileExt... \/ \/ IPType (v4)
 MS-HAID: WWAN\_profile\_v4.element\_IPType
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -7,26 +7,26 @@ MSHAttr:
 title: IPType
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 736e6a72a04c662356b65c331471eea3ec3eb2a5e7b601d1b7ae2eaee12db3c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a7823fc62bea228ec2a1f7e50629d74ce29dde3
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119607385"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988758"
 ---
-# <a name="span-idwwan_profile_v4element_iptypespanmbnprofileextiptype-v4"></a><span id="WWAN_profile_v4.element_IPType"></span>MBNProfileExt \/ ... \/ IPType (v4)
+# <a name="span-idwwan_profile_v4element_iptypespanmbnprofileextiptype-v4"></a><span id="WWAN_profile_v4.element_IPType"></span>MBNProfileExt... \/ \/ IPType (v4)
 
-Especifica el tipo de IP que se va a usar en esta conexión de datos.
+Especifica el tipo de IP que se usará en esta conexión de datos.
 
-Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los valores siguientes.
+Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los siguientes valores.
 
-| Valor   | Significado                                       |
+| Value   | Significado                                       |
 |---------|-----------------------------------------------|
 | Valor predeterminado | El tipo de IP se debe seleccionar por capas inferiores.     |
 | IPv4    | Uso de IPv4                                      |
 | IPv6    | Usar IPv6                                      |
 | IPv4v6  | Use IPv4 o IPv6, según esté disponible.           |
-| XLAT    | Uso de 464XLAT para tuner IPv4 a través de redes IPv6 |
+| XLAT    | Uso de 464XLAT para tunelización de IPv4 a través de redes IPv6 |
 
  
 
@@ -40,7 +40,7 @@ Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<IPType\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <IPType>
@@ -62,41 +62,21 @@ Ninguno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos primarios
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento primario</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-context.md">Contexto</a></td>
-<td><p>Especifica los parámetros necesarios para establecer una conexión de datos.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento primario | Descripción | 
+|----------------|-------------|
+| <a href="element-context.md">Contexto</a> | <p>Especifica los parámetros necesarios para establecer una conexión de datos.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Espacio de nombres</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

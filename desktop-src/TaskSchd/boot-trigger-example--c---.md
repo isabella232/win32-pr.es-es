@@ -1,48 +1,48 @@
 ---
 title: Ejemplo de desencadenador de arranque (C++)
-description: Este tema contiene un ejemplo de código de C++ que muestra cómo crear una tarea programada para ejecutarse Notepad.exe cuando se inicia el sistema.
+description: Este tema contiene un ejemplo de código de C++ que muestra cómo crear una tarea que está programada para ejecutarse Notepad.exe cuando se inicia el sistema.
 ms.assetid: d4dbbfe5-bde9-4a1c-8e11-24cd1e14646c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdbd5a5a73d100394b90e91f8b9c30c1bd495ac0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1b1f556b2b0754d913e44c2874a7fa01f9aea7ea50f5ccc0aa15fa769dfdca95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100514"
 ---
 # <a name="boot-trigger-example-c"></a>Ejemplo de desencadenador de arranque (C++)
 
-Este tema contiene un ejemplo de código de C++ que muestra cómo crear una tarea programada para ejecutarse Notepad.exe cuando se inicia el sistema. La tarea contiene un desencadenador de arranque que especifica un límite de inicio y un tiempo de retraso para que la tarea se inicie después de que se inicie el sistema. La tarea también contiene una acción que especifica el Notepad.exe de ejecución de la tarea. La tarea se registra mediante la cuenta de servicio local como contexto de seguridad para ejecutar la tarea.
+Este tema contiene un ejemplo de código de C++ que muestra cómo crear una tarea que está programada para ejecutarse Notepad.exe cuando se inicia el sistema. La tarea contiene un desencadenador de arranque que especifica un límite de inicio y un tiempo de retraso para que la tarea se inicie una vez iniciado el sistema. La tarea también contiene una acción que especifica la tarea que se ejecuta Notepad.exe. La tarea se registra mediante la cuenta de servicio local como contexto de seguridad para ejecutar la tarea.
 
 En el procedimiento siguiente se describe cómo programar una tarea para iniciar un ejecutable cuando se inicia el sistema.
 
-**Para programar el inicio del Bloc de notas cuando se inicia el sistema**
+**Para programar Bloc de notas iniciar cuando se inicia el sistema**
 
 1.  Inicialice COM y establezca la seguridad COM general.
-2.  Cree el objeto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+2.  Cree el [**objeto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
-    Este objeto le permite crear tareas en una carpeta especificada.
+    Este objeto permite crear tareas en una carpeta especificada.
 
-3.  Obtenga una carpeta de tareas para crear una tarea en.
+3.  Obtenga una carpeta de tareas en la que crear una tarea.
 
-    Use el método [**ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta y el método [**ITaskService:: newtask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para crear el objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
+    Use el [**método ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta y el método [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para crear el [**objeto ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
 
-4.  Defina la información sobre la tarea mediante el objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , como la información de registro de la tarea.
+4.  Defina información sobre la tarea mediante el [**objeto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) como la información de registro de la tarea.
 
-    Use la [**propiedad RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) y otras propiedades de la interfaz [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir la información de la tarea.
+    Use la [**propiedad RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) y otras propiedades de la [**interfaz ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir la información de la tarea.
 
-5.  Cree un desencadenador de arranque mediante la [**propiedad triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para tener acceso al [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) de la tarea.
+5.  Cree un desencadenador de arranque mediante la [**propiedad Triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para acceder a [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) para la tarea.
 
-    Use el método [**ITriggerCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que desea crear un desencadenador de arranque. Puede establecer el límite de inicio y el retraso del desencadenador para que las acciones de la tarea se programen para ejecutarse en un momento determinado cuando se inicia el sistema.
+    Use el [**método ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que desea crear un desencadenador de arranque. Puede establecer el límite de inicio y el retraso del desencadenador para que las acciones de tarea se programen para ejecutarse en un momento especificado cuando se inicie el sistema.
 
-6.  Cree una acción para que la tarea se ejecute mediante la [**propiedad Actions de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la colección [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea.
+6.  Cree una acción para que la tarea se ejecute mediante la propiedad Actions de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la [**colección IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea.
 
-    Use el método [**IActionCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar el tipo de acción que desea crear. En este ejemplo se usa un objeto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , que representa una acción que ejecuta una operación de línea de comandos.
+    Use el [**método IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) que representa una acción que ejecuta una operación de línea de comandos.
 
-7.  Registre la tarea mediante el método [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+7.  Registre la tarea mediante el [**método ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-En el ejemplo de código de C++ siguiente se muestra cómo programar una tarea para que se ejecute Notepad.exe 30 segundos después de que se inicie el sistema.
+En el siguiente ejemplo de código de C++ se muestra cómo programar una tarea para Notepad.exe 30 segundos después de iniciar el sistema.
 
 
 ```C++
@@ -374,12 +374,12 @@ int __cdecl wmain()
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso del Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Puntero al ejemplo multimedia actual.
 ms.assetid: 08f7b19b-e8e9-4462-805e-b242da9da742
-title: 'Miembro CBaseRenderer:: m_pMediaSample (Renbase. h)'
+title: CBaseRenderer::m_pMediaSample miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b5c1ddec1333bce686a784a21ef8c28e86494859
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 456674d99b6c8b1a1baf5632354df049b7355d662c736542ae3f5dd1c391a657
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087405"
 ---
-# <a name="cbaserendererm_pmediasample-member"></a>Miembro pMediaSample CBaseRenderer:: m \_
+# <a name="cbaserendererm_pmediasample-member"></a>Miembro CBaseRenderer::m \_ pMediaSample
 
 Puntero al ejemplo multimedia actual.
 
@@ -42,8 +42,8 @@ IMediaSample *m_pMediaSample;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ IMediaSample *m_pMediaSample;
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  
