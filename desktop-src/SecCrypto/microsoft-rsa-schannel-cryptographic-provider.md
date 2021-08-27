@@ -4,12 +4,12 @@ ms.assetid: 34ede85a-579f-400f-a53e-e40711fcaaf3
 title: Proveedor criptográfico RSA/Schannel de Microsoft
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 782e1971f59911b36c3812a4508530a5e1801194
-ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
+ms.openlocfilehash: 65b38ef6573cada965c0b5e982d7808a7fe2b7670271f4f8ce1fd51c99d002db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113581973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100695"
 ---
 # <a name="microsoft-rsaschannel-cryptographic-provider"></a>Proveedor criptográfico RSA/Schannel de Microsoft
 

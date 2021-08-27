@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_GETTEXTCOLOR (commctrl. h)
-description: Recupera el color de texto predeterminado del control rebar.
+title: RB_GETTEXTCOLOR mensaje (Commctrl.h)
+description: Recupera el color de texto predeterminado de un control rebar.
 ms.assetid: fc9c731d-c606-4845-a119-737267301b29
 keywords:
-- RB_GETTEXTCOLOR controles de mensajes de Windows
+- RB_GETTEXTCOLOR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 082079808aa553aaada5322cff16742dafa0b994
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2dd3ce4471e14453fb18376924e8384b76232ccde9c66792eeec86e721c99fc8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085015"
 ---
-# <a name="rb_gettextcolor-message"></a>Mensaje de GETTEXTCOLOR de RB \_
+# <a name="rb_gettextcolor-message"></a>Mensaje \_ GETTEXTCOLOR de RB
 
-Recupera el color de texto predeterminado del control rebar.
+Recupera el color de texto predeterminado de un control rebar.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,17 +37,17 @@ Recupera el color de texto predeterminado del control rebar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de [**COLORREF**](/windows/desktop/gdi/colorref) que representa el color de texto predeterminado actual.
+Devuelve un [**valor COLORREF**](/windows/desktop/gdi/colorref) que representa el color de texto predeterminado actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Devuelve un valor de [**COLORREF**](/windows/desktop/gdi/colorref) que represent
 
 <dl> <dt>
 
-[**\_SETTEXTCOLOR RB**](rb-settextcolor.md)
+[**RB \_ SETTEXTCOLOR**](rb-settextcolor.md)
 </dt> </dl>
 
  

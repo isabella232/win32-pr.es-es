@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9e307527f93c153f0f78ce58b4d70ead4f7c1bc4
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 44d71469cf5fd3246a0bb038cf369227cb3a3017
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120560"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625831"
 ---
 # <a name="calculatelevelofdetail-directx-hlsl-texture-object"></a>CalculateLevelOfDetail (objeto de textura HLSL de DirectX)
 
@@ -32,8 +32,8 @@ ret Object.CalculateLevelOfDetail( sampler \_ state S, float x );
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -56,7 +56,7 @@ ret Object.CalculateLevelOfDetail( sampler \_ state S, float x );
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object tipo</th>
+<th>Texture-Object type</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -104,7 +104,7 @@ Esta función se admite en los siguientes modelos de sombreador.
  
 
 1.  TextureCubeArray está disponible en Shader Model 4.1 o superior.
-2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o superior.
+2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o posterior.
 
 ## <a name="related-topics"></a>Temas relacionados
 

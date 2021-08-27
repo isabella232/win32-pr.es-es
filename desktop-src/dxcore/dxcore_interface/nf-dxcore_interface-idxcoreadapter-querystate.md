@@ -4,16 +4,16 @@ description: Recupera el estado actual del elemento especificado en el adaptador
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 61fc5c601904011de8f343777a95385a16ec3d7e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2e5c585c249141c1491ddf36ee798d8b11148425026e9011bd0653169f998fb9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105720159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117725"
 ---
-# <a name="idxcoreadapterquerystate-method"></a>IDXCoreAdapter:: QueryState (método)
+# <a name="idxcoreadapterquerystate-method"></a>IDXCoreAdapter::QueryState (método)
 
-Recupera el estado actual del elemento especificado en el adaptador. Antes de llamar a **QueryState** para un tipo de propiedad, llame a [IsQueryStateSupported](./nf-dxcore_interface-idxcoreadapter-isquerystatesupported.md) para confirmar que la consulta de la clase de estado está disponible para este adaptador y sistema operativo (SO).
+Recupera el estado actual del elemento especificado en el adaptador. Antes de llamar a **QueryState** para un tipo de propiedad, llame a [IsQueryStateSupported](./nf-dxcore_interface-idxcoreadapter-isquerystatesupported.md) para confirmar que la consulta del tipo de estado está disponible para este adaptador y sistema operativo (SO).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,50 +43,50 @@ HRESULT QueryState(
 
 Tipo: **[DXCoreAdapterState](./ne-dxcore_interface-dxcoreadapterstate.md)**
 
-El tipo de elemento de estado en el adaptador cuyo estado desea recuperar. Vea la tabla en [DXCoreAdapterState](./ne-dxcore_interface-dxcoreadapterstate.md) para obtener más información sobre cada tipo de estado del adaptador.
+Tipo de elemento de estado en el adaptador cuyo estado desea recuperar. Consulte la tabla de [DXCoreAdapterState para](./ne-dxcore_interface-dxcoreadapterstate.md) obtener más información sobre cada tipo de estado del adaptador.
 
 ### <a name="inputstatedetailssize"></a>inputStateDetailsSize
 
 Tipo: **size_t**
 
-El tamaño, en bytes, del búfer de detalles de estado de entrada que se asigna y proporciona de forma opcional en *inputStateDetails*.
+Tamaño, en bytes, del búfer de detalles de estado de entrada que se asigna (opcionalmente) y se proporciona en *inputStateDetails*.
 
 ### <a name="inputstatedetails-in"></a>inputStateDetails [in]
 
-Tipo: **void const \***
+Tipo: **void \* const**
 
-Un puntero opcional a un búfer de detalles de estado de entrada constante que se asigna en la aplicación, que contiene información sobre la solicitud que se requiere para la clase de estado que se especifica en el *Estado*. Vea la tabla en [DXCoreAdapterState](./ne-dxcore_interface-dxcoreadapterstate.md) para obtener más información sobre cualquier requisito de búfer de entrada para un tipo de estado determinado.
+Puntero opcional a un búfer de detalles de estado de entrada constante que se asigna en la aplicación, que contiene cualquier información sobre la solicitud necesaria para el tipo de estado que especifique en *el estado*. Consulte la tabla de [DXCoreAdapterState para](./ne-dxcore_interface-dxcoreadapterstate.md) obtener más información sobre cualquier requisito de búfer de entrada para un tipo de estado determinado.
 
 ### <a name="outputbuffersize"></a>outputBufferSize
 
 Tipo: **size_t**
 
-El tamaño, en bytes, del búfer de salida que asigna y proporciona en *outputBuffer*.
+Tamaño, en bytes, del búfer de salida que se asigna y se proporciona en *outputBuffer.*
 
 ### <a name="outputbuffer-out"></a>outputBuffer [out]
 
-Tipo: **void \***
+Tipo: **\* void**
 
-Un puntero a un búfer de salida que se asigna en la aplicación y que la función rellena. Vea la tabla en [DXCoreAdapterState](./ne-dxcore_interface-dxcoreadapterstate.md) para obtener más información sobre el requisito de búfer de salida para un tipo de estado determinado.
+Puntero a un búfer de salida que se asigna en la aplicación y que la función rellena. Consulte la tabla de [DXCoreAdapterState para](./ne-dxcore_interface-dxcoreadapterstate.md) obtener más información sobre el requisito de búfer de salida para un tipo de estado determinado.
 
 ## <a name="returns"></a>Devoluciones
 
 Tipo: **[HRESULT](../../com/structure-of-com-error-codes.md)**
 
-Si la función se ejecuta correctamente, devuelve **S_OK**. De lo contrario, devuelve un [código de error](../../com/com-error-codes-10.md) [**HRESULT**](../../com/structure-of-com-error-codes.md) .
+Si la función se realiza correctamente, devuelve **S_OK**. De lo contrario, devuelve un [**código de**](../../com/structure-of-com-error-codes.md) error [HRESULT](../../com/com-error-codes-10.md).
 
 |Valor devuelto|Descripción|
 |-|-|
-|DXGI_ERROR_DEVICE_REMOVED|El adaptador ya no tiene un estado válido.|
-|DXGI_ERROR_INVALID_CALL|Este sistema operativo (SO) no reconoce la clase de estado especificada en *Estado* . Llame a [IsQueryStateSupported](./nf-dxcore_interface-idxcoreadapter-isquerystatesupported.md) para confirmar que la consulta de la clase de estado está disponible para este adaptador y sistema operativo (SO).|
-|DXGI_ERROR_UNSUPPORTED|El adaptador no admite la clase de estado especificada en el *Estado* . Llame a [IsQueryStateSupported](./nf-dxcore_interface-idxcoreadapter-isquerystatesupported.md) para confirmar que la consulta de la clase de estado está disponible para este adaptador y sistema operativo (SO).|
-|E_INVALIDARG|Se proporciona un tamaño de búfer insuficiente para *outputBuffer* (o para *inputStateDetails* cuando se necesita un búfer de detalles de estado de entrada).|
-|E_POINTER|`nullptr` se proporcionó para *outputBuffer* (o para *inputStateDetails* cuando se necesita un búfer de detalles de estado de entrada).|
+|DXGI_ERROR_DEVICE_REMOVED|El adaptador ya no está en un estado válido.|
+|DXGI_ERROR_INVALID_CALL|Este sistema operativo (SO) *no* reconoce el tipo de estado especificado en estado. Llame [a IsQueryStateSupported](./nf-dxcore_interface-idxcoreadapter-isquerystatesupported.md) para confirmar que la consulta del tipo de estado está disponible para este adaptador y sistema operativo (SO).|
+|DXGI_ERROR_UNSUPPORTED|El adaptador no admite el tipo *de* estado especificado en estado . Llame [a IsQueryStateSupported](./nf-dxcore_interface-idxcoreadapter-isquerystatesupported.md) para confirmar que la consulta del tipo de estado está disponible para este adaptador y sistema operativo (SO).|
+|E_INVALIDARG|Se proporciona un tamaño de búfer insuficiente para *outputBuffer* (o *para inputStateDetails* cuando se necesita un búfer de detalles de estado de entrada).|
+|E_POINTER|`nullptr` se proporcionó para *outputBuffer* (o *para inputStateDetails* donde es necesario un búfer de detalles de estado de entrada).|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Consulte [DXCoreAdapterState](./ne-dxcore_interface-dxcoreadapterstate.md) para obtener más información sobre cada tipo de estado del adaptador y qué entradas y salidas se usan. Esta función pone en cero el búfer de *outputBuffer* antes de rellenarlo.
+Consulte [DXCoreAdapterState para](./ne-dxcore_interface-dxcoreadapterstate.md) obtener más información sobre cada tipo de estado de adaptador y qué entradas y salidas se usan. Esta función cero el búfer *outputBuffer* antes de rellenarlo.
 
 ## <a name="see-also"></a>Vea también
 
-[IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md), [DXCore Reference](../dxcore-reference.md), [using DXCore to Enumerate Adapters](../dxcore-enum-adapters.md)
+[IDXCoreAdapter,](./nn-dxcore_interface-idxcoreadapter.md) [referencia de DXCore,](../dxcore-reference.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

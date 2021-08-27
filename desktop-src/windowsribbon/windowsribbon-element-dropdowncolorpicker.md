@@ -1,9 +1,9 @@
 ---
 title: Elemento DropDownColorPicker
-description: Representa un Drop-Down selector de color que cuando se hace clic muestra una paleta de muestras de color.
+description: Representa un control Drop-Down selector de colores que, al hacer clic en él, muestra una paleta de muestras de color.
 ms.assetid: fc4df978-9c52-43d5-8a5e-e015aa7058cd
 keywords:
-- DropDownColorPicker, elemento de la cinta de opciones de Windows
+- DropDownColorPicker, elemento Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ce2fd1d9ff12b56d87955304fad24af23209ff91
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 31525ee1b7233f0bf49668856d917ef14bc034b6
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442906"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622891"
 ---
 # <a name="dropdowncolorpicker-element"></a>Elemento DropDownColorPicker
 
@@ -45,16 +45,16 @@ Representa una [lista desplegable Selector de colores](windowsribbon-controls-dr
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -63,21 +63,21 @@ Representa una [lista desplegable Selector de colores](windowsribbon-controls-dr
 <td><strong>ChipSize</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Tamaño de cada chip de color o muestra. <br/> Restringido a uno de los siguientes valores:<br/> <br/>
+<td>Tamaño de cada chip o muestra de color. <br/> Restringido a uno de los siguientes valores:<br/> <br/>
 <dt><span></span><span></span><strong></strong> (Pequeño)<br/> </dt> <dd> Cada chip de color es un cuadrado de 11 x 11 píxeles. <br/> </dd> <dt><span></span><span></span><strong></strong> (Medio)<br/> </dt> <dd> Cada chip de color es un cuadrado de 16 x 16 píxeles. <br/> </dd> <dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd> Cada chip de color es un cuadrado de 24 x 24 píxeles. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>ColorTemplate</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Plantillas de diseño que especifican el tipo <a href="windowsribbon-controls-dropdowncolorpicker.md">de lista desplegable Selector de colores</a>. <br/> Se restringe a uno de los siguientes valores (si no se declara ningún atributo opcional relacionado con una <em>colorTemplate,</em> se muestra la vista predeterminada):<br/> <br/>
+<td>Plantillas de diseño que especifican el tipo <a href="windowsribbon-controls-dropdowncolorpicker.md">de lista desplegable Selector de colores</a>. <br/> Restringido a uno de los siguientes valores (si no se declara ningún atributo opcional relacionado con una <em>plantilla ColorTemplate,</em> se muestra la vista predeterminada):<br/> <br/>
 <dt><span></span><span></span><strong></strong> (ThemeColors)<br/> </dt> <dd> Predeterminada. <br/> <img src="images/markup/colortemplate.themedcolors.1.png" alt="Screen shot of the DropDownColorPicker element with the ColorTemplate attribute set to &#39;ThemeColors&#39;." /><br/> Establecer el <em>atributo ColorTemplate</em> en <code>ThemeColors</code> habilita la funcionalidad siguiente:<br/>
 <ul>
 <li>Delimitador SplitButton.</li>
 <li><strong>El</strong> botón de color automático se muestra de forma predeterminada.</li>
-<li>Cuadrícula <strong>de muestra de colores</strong> de tema de Windows.</li>
+<li>Windows <strong>cuadrícula de muestras de colores</strong> de tema.</li>
 <li><strong>Cuadrícula de muestra</strong> de colores estándar.</li>
-<li><strong>La cuadrícula de</strong> muestra Colores recientes es opcional.</li>
+<li><strong>La cuadrícula de</strong> muestra De colores recientes es opcional.</li>
 <li><strong>Iniciador del cuadro</strong> de diálogo Más colores.</li>
 <li><strong>No se muestra</strong> ningún botón de color de forma predeterminada.</li>
 </ul>
@@ -175,7 +175,7 @@ No hay elementos secundarios.
 
 Opcional.
 
-Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton,**](windowsribbon-element-dropdownbutton.md) [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup,**](windowsribbon-element-menugroup.md) [**SplitButton**](windowsribbon-element-splitbutton.md) [**o SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
+Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup,**](windowsribbon-element-menugroup.md) [**SplitButton**](windowsribbon-element-splitbutton.md) [**o SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -242,7 +242,7 @@ En esta sección de código se muestran los tres tipos de declaraciones de contr
 
 <dl> <dt>
 
-[Control de Selector de colores desplegable](windowsribbon-controls-dropdowncolorpicker.md)
+[Control desplegable Selector de colores desplegable](windowsribbon-controls-dropdowncolorpicker.md)
 </dt> <dt>
 
 [Ejemplo de DropDownColorPicker](windowsribbon-dropdowncolorpickersample.md)

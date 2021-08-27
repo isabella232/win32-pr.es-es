@@ -1,5 +1,5 @@
 ---
-description: Identifica matrices de transformación posteriores que se pueden usar para combinar vértices mediante la matriz correspondiente y un valor de peso de combinación (beta) especificado en el formato de vértice.
+description: Identifica matrices de transformación posteriores que se pueden usar para combinar vértices mediante la matriz correspondiente y un valor de peso de mezcla (beta) especificado en el formato de vértice.
 ms.assetid: cab444c2-b245-4d1a-a90c-745c92a2ea89
 title: D3DTS_WORLDn (D3d9types.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "120119405"
 ---
 # <a name="d3dts_worldn"></a>D3DTS \_ WORLDn
 
-Identifica matrices de transformación posteriores que se pueden usar para combinar vértices mediante la matriz correspondiente y un valor de peso de combinación (beta) especificado en el formato de vértice.
+Identifica matrices de transformación posteriores que se pueden usar para combinar vértices mediante la matriz correspondiente y un valor de peso de mezcla (beta) especificado en el formato de vértice.
 
 ``` syntax
 #define D3DTS_WORLDn 
@@ -45,7 +45,7 @@ Estas macros se proporcionan para facilitar la porción de aplicaciones existent
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

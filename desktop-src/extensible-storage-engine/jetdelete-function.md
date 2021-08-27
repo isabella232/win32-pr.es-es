@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 039ddcb0610b6a958e9c45be7e3a898631d2a0fc
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 1e5d8fe6cfc4e0521866a12383aa34f7858432d3
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984958"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477611"
 ---
 # <a name="jetdelete-function"></a>Función JetDelete
 
@@ -84,13 +84,13 @@ Si se prepara una actualización [(mediante JetPrepareUpdate),](./jetprepareupda
 
 En caso de error, la moneda permanece sin cambios. Si se prepara una actualización (consulte [JetPrepareUpdate),](./jetprepareupdate-function.md)se puede restablecer el búfer de actualización.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
 No todas las tablas admiten la eliminación de filas. Normalmente, una tabla temporal no admite la eliminación de filas. La eliminación de registros puede habilitarse en tablas temporales por muchas razones, algunas de las cuales son:
 
   - JET_bitTTUpdatable se especificó durante la creación.
 
-  - Las tablas temporales de gran tamaño pueden admitir la eliminación si se crearon JET_bitTTScrollable o JET_bitTTIndexed. El umbral en el que una tabla temporal se convierte en "grande" es actualmente de 64 kilobytes, pero puede cambiarse en versiones futuras.
+  - Las tablas temporales de gran tamaño pueden admitir la eliminación si se crearon JET_bitTTScrollable o JET_bitTTIndexed. El umbral en el que una tabla temporal se convierte en "grande" es actualmente de 64 kilobytes, pero puede cambiarse en futuras versiones.
 
 Windows XP y versiones posteriores. JetDelete puede invocar funciones de devolución de llamada, incluidas JET_cbtypBeforeDelete y JET_cbtypAfterDelete.
 
@@ -99,13 +99,7 @@ Es importante comprender el impacto de realizar un gran número de operaciones d
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

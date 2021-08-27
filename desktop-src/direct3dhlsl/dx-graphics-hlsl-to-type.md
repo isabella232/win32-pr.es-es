@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d1881ba4a88e97e978e2646c92d276bb9763ffd
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 14ac22ba8c9da7d69784d977e2b78b8f0b52a6a3
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111825775"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628121"
 ---
 # <a name="texture-object"></a>Objeto Texture
 
@@ -60,8 +60,8 @@ Los objetos multimuestreo (Texture2DMS y Texture2DMSArray) requieren que el tama
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -167,7 +167,7 @@ Texture2DMS <float4, 128> MyMSTex;
 
 
 
-## <a name="texture-object-methods"></a>Métodos de objeto texture
+## <a name="texture-object-methods"></a>Métodos de objeto de textura
 
 Cada objeto de textura implementa determinados métodos; esta es la tabla que enumera todos los métodos. Consulte la página de referencia de cada método para ver qué objetos pueden usar ese método.
 
@@ -184,8 +184,8 @@ Cada objeto de textura implementa determinados métodos; esta es la tabla que en
 | [Cargar](dx-graphics-hlsl-to-load.md)                                               | Cargar datos sin ningún filtrado ni muestreo.                                                                      | x        | x         | x        | x         | x        | x         |
 | [Carga (multimuestreo)](dx-graphics-hlsl-to-load.md)                                 | Cargar datos sin ningún filtrado ni muestreo.                                                                      |          | x         | x        | x         |          | x         |
 | [Ejemplo](dx-graphics-hlsl-to-sample.md)                                           | Muestrear una textura.                                                                                                 |          |           | x        | x         |          |           |
-| [SampleBias](dx-graphics-hlsl-to-samplebias.md)                                   | Muestrear una textura, después de aplicar el valor de sesgo al nivel de mapa mip.                                              |          |           | x        | x         |          |           |
-| [SampleCmp](dx-graphics-hlsl-to-samplecmp.md)                                     | Muestrear una textura mediante un valor de comparación para rechazar muestras.                                                     |          |           | x        | x         |          |           |
+| [SampleBias](dx-graphics-hlsl-to-samplebias.md)                                   | Muestrear una textura, después de aplicar el valor de sesgo al nivel mipmap.                                              |          |           | x        | x         |          |           |
+| [SampleCmp](dx-graphics-hlsl-to-samplecmp.md)                                     | Muestrear una textura con un valor de comparación para rechazar muestras.                                                     |          |           | x        | x         |          |           |
 | [SampleCmpLevelZero](dx-graphics-hlsl-to-samplecmplevelzero.md)                   | Muestrear una textura (solo mipmap nivel 0), usando un valor de comparación para rechazar muestras.                               | x        | x         | x        | x         | x        | x         |
 | [SampleGrad](dx-graphics-hlsl-to-samplegrad.md)                                   | Muestrear una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra.                         | x        | x         | x        | x         | x        | x         |
 | [SampleLevel](dx-graphics-hlsl-to-samplelevel.md)                                 | Muestrear una textura en el nivel de mapa mip especificado.                                                                   | x        | x         | x        | x         | x        | x         |
@@ -196,16 +196,16 @@ Cada objeto de textura implementa determinados métodos; esta es la tabla que en
 
 ### <a name="return-type"></a>Tipo de valor devuelto
 
-El tipo de valor devuelto de un método de objeto de textura es float4 a menos que se especifique lo contrario, a excepción de los objetos de textura con suavizado de alias multimuestreo que siempre necesitan el tipo y el recuento de muestras especificados. El tipo de valor devuelto es el mismo que el tipo de recurso de textura [**(DXGI \_ FORMAT).**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) En otras palabras, puede ser cualquiera de los tipos siguientes.
+El tipo de valor devuelto de un método de objeto de textura es float4, a menos que se especifique lo contrario, a excepción de los objetos de textura con suavizado de alias multimuestreo que siempre necesitan el tipo y el recuento de muestras especificados. El tipo de valor devuelto es el mismo que el tipo de recurso de textura ([**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)). En otras palabras, puede ser cualquiera de los tipos siguientes.
 
 
 
 | Tipo                       | Description                                                                                                                                                             |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| FLOAT                      | Float de 32 bits (consulte [Reglas de punto flotante para](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-float-rules) ver las diferencias con respecto a IEEE float).                            |
+| FLOAT                      | Float de 32 bits (consulte [Reglas de punto flotante para](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-float-rules) ver las diferencias con respecto a IEEE float)                            |
 | int                        | Entero de 32 bits con signo                                                                                                                                                   |
 | unsigned int               | Entero de 32 bits sin signo                                                                                                                                                 |
-| snorm                      | Float de 32 bits en el intervalo de -1 a 1 inclusivo (consulte [Reglas](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-float-rules) de punto flotante para ver las diferencias con respecto a IEEE float). |
+| snorm                      | Float de 32 bits en el intervalo de -1 a 1 inclusive (consulte [Reglas](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-float-rules) de punto flotante para ver las diferencias con respecto a IEEE float) |
 | unorm                      | Float de 32 bits en el intervalo 0 a 1 inclusivo (consulte [Reglas](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-float-rules) de punto flotante para ver las diferencias con respecto a IEEE float).  |
 | cualquier tipo de textura o estructura | El número de componentes devueltos debe estar entre 1 y 3 inclusive.                                                                                                    |
 
@@ -217,9 +217,9 @@ Además, el tipo de valor devuelto puede ser cualquier tipo de textura, incluida
 
 ## <a name="default-values-for-missing-components-in-a-texture"></a>Valores predeterminados para los componentes que faltan en una textura
 
-El valor predeterminado de los componentes que faltan en un tipo de recurso de textura es cero para cualquier componente excepto el componente alfa (A); El valor predeterminado de la A que falta es uno. La forma en que este aparece en el sombreador depende del tipo de recurso de textura. Toma la forma del primer componente con tipo que realmente está presente en el tipo de recurso de textura (empezando por la izquierda en orden RGBA). Si este formulario es UNORM o FLOAT, el valor predeterminado de la A que falta es 1,0f. Si el formulario es SINT o UINT, el valor predeterminado de la A que falta es 0x1.
+El valor predeterminado de los componentes que faltan en un tipo de recurso de textura es cero para cualquier componente excepto el componente alfa (A); el valor predeterminado de la A que falta es uno. La forma en que aparece en el sombreador depende del tipo de recurso de textura. Toma la forma del primer componente con tipo que realmente está presente en el tipo de recurso de textura (empezando por la izquierda en orden RGBA). Si este formulario es UNORM o FLOAT, el valor predeterminado de la A que falta es 1,0f. Si el formulario es SINT o UINT, el valor predeterminado de la A que falta es 0x1.
 
-Por ejemplo, cuando un sombreador lee el tipo de recurso de textura [**DXGI \_ FORMAT \_ R24 \_ UNORM \_ X8 \_ TYPELESS,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) Los valores predeterminados de G y B son cero y el valor predeterminado de A es 1,0f; cuando un sombreador lee el tipo de recurso de textura [**UINT DXGI \_ FORMAT \_ R16G16, \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) el valor predeterminado para B es cero y el valor predeterminado para A es 0x00000001; cuando un sombreador lee el tipo de recurso de textura [**\_ DXGI FORMAT \_ R16 \_ SINT,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) los valores predeterminados para G y B son cero y el valor predeterminado para A es 0x00000001.
+Por ejemplo, cuando un sombreador lee el tipo de recurso de textura [**DXGI \_ FORMAT \_ R24 \_ UNORM \_ X8 \_ TYPELESS,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) Los valores predeterminados de G y B son cero y el valor predeterminado de A es 1,0f; cuando un sombreador lee el tipo de recurso de textura [**UINT DXGI \_ FORMAT \_ R16G16, \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) el valor predeterminado de B es cero y el valor predeterminado de A es 0x00000001; cuando un sombreador lee el tipo de recurso de textura [**SINT DXGI FORMAT \_ \_ R16, \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) los valores predeterminados para G y B son cero y el valor predeterminado para A es 0x00000001.
 
 ## <a name="example-2"></a>Ejemplo 2
 
@@ -246,7 +246,7 @@ Este objeto se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                        | Compatible |
 |---------------------------------------------------------------------|-----------|
-| [Modelos de sombreador 4](dx-graphics-hlsl-sm4.md) y superiores | sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md) y modelos de sombreador posteriores | sí       |
 
 
 
@@ -256,7 +256,7 @@ Este objeto se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Shader Model 4](dx-graphics-hlsl-sm4.md)
+[Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)
 </dt> </dl>
 
  

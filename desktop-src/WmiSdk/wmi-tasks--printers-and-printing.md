@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fcc7315f32ee1c00928b1feefe7d7d9dbebaf9fd169cd741440ad53ce4343c87
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f6e580b299e32e2c003c084fb771a28e5984f7e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118311999"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625581"
 ---
 # <a name="wmi-tasks-printers-and-printing"></a>Tareas wmi: impresoras e impresión
 
@@ -28,13 +28,13 @@ En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con una extensión .vbs, *comofilename.vbs*. Asegúrese de que el editor de texto no agrega una .txt extensión al archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, *comofilename.vbs*. Asegúrese de que el editor de texto no agrega .txt extensión al archivo.
 2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
 4.  Si no puede acceder a un registro de eventos, compruebe si se ejecuta desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
 
 > [!Note]  
-> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del *script* filename.vbsa *outfile.txt*.
+> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script *filename.vbs* a *outfile.txt*.
 
  
 
@@ -44,8 +44,8 @@ En la tabla siguiente se muestran ejemplos de script que se pueden usar para obt
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -59,7 +59,7 @@ En la tabla siguiente se muestran ejemplos de script que se pueden usar para obt
 <td>Use la <a href="/windows/desktop/CIMWin32Prov/win32-printer"><strong>Win32_Printer</strong></a> y el <a href="/windows/desktop/CIMWin32Prov/addprinterconnection-method-in-class-win32-printer"><strong>método AddPrinterConnection.</strong></a><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -84,7 +84,7 @@ errReturn = objPrinter.AddPrinterConnection (&quot;\\PrintServer1\ArtDepartmentP
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -105,7 +105,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -130,7 +130,7 @@ $printer = get-wmiObject -class win32_printer -Namespace $namespace | Where-Obje
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -151,7 +151,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -174,7 +174,7 @@ Next</code></pre></td>
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -195,7 +195,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

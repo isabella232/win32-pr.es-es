@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_LOGTIME'
-title: Estructura de JET_LOGTIME
+description: 'Más información sobre: JET_LOGTIME estructura'
+title: JET_LOGTIME estructura
 TOCTitle: JET_LOGTIME Structure
 ms:assetid: cb7c0b74-db7a-4e48-80b8-37b3fdf6d088
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294089(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9c99e2c1f77a01c33a75d3e5d16c4fe58c122a4e
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 9cb6fac65451518e20dd64ee223638165ac5c752
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103821591"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470480"
 ---
-# <a name="jet_logtime-structure"></a>Estructura de JET_LOGTIME
+# <a name="jet_logtime-structure"></a>JET_LOGTIME estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_logtime-structure"></a>Estructura de JET_LOGTIME
+## <a name="jet_logtime-structure"></a>JET_LOGTIME estructura
 
-La estructura **JET_LOGTIME** contiene elementos de la fecha y hora de un evento.
+La **JET_LOGTIME** contiene elementos de la fecha y hora de un evento.
 
 ```cpp
 typedef struct {
@@ -54,27 +54,27 @@ typedef struct {
 
 **bSeconds**
 
-La hora del evento en segundos. Este valor puede ser de 0 a 59. se usa 0 cuando la estructura es NULL.
+Hora del evento en segundos. Este valor puede ser de 0 a 59. Se usa 0 cuando la estructura es null.
 
 **bMinutes**
 
-La hora del evento en minutos. Este valor puede ser de 0 a 59. se usa 0 cuando la estructura es NULL.
+Hora del evento en minutos. Este valor puede ser de 0 a 59. Se usa 0 cuando la estructura es null.
 
 **bHours**
 
-La hora del evento en horas. Este valor puede ser de 0 a 23. se usa 0 cuando la estructura es NULL.
+Hora del evento en horas. Este valor puede ser de 0 a 23. Se usa 0 cuando la estructura es null.
 
-**bDay**
+**Cumpleaños**
 
-Día del mes del evento. Este valor puede ser de 0 a 31. se usa 0 cuando la estructura es NULL.
+Día del mes del evento. Este valor puede ser de 0 a 31. Se usa 0 cuando la estructura es null.
 
 **bMonth**
 
-Mes del año del evento. Este valor puede ser de 0 a 12. se usa 0 cuando la estructura es NULL.
+Mes del año del evento. Este valor puede ser de 0 a 12. Se usa 0 cuando la estructura es null.
 
 **bYear**
 
-Año del evento (desplazamiento por 1900). Para lograr el año real, agregue 1900 a este valor. se usa 0 cuando la estructura es NULL.
+Año del evento (desplazamiento por 1900). Para lograr el año real, agregue 1900 a este valor. Se usa 0 cuando la estructura es null.
 
 **bFiller1**
 
@@ -92,32 +92,15 @@ Este campo debe omitirse.
 
 Este campo debe omitirse.
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Esta estructura está pensada principalmente para el uso en la depuración.
+Esta estructura está pensada principalmente para su uso en la depuración.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

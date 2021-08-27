@@ -1,47 +1,47 @@
 ---
-title: Cómo implementar la información sobre herramientas de varias líneas
-description: La información sobre herramientas multilínea permite que el texto se muestre en más de una línea.
+title: Cómo implementar información sobre herramientas multilínea
+description: La información sobre herramientas multilínea permite mostrar texto en más de una línea.
 ms.assetid: 62B10B44-C1C2-4C86-8648-AE6B606BACBB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0d6f32d638b2d33ea6270aa5f8ce2c09f0f4174
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3cd0d9f4172b256d2e6b72fb59ace4dc377fa3a0061e3ee0e6c0f234a74aad06
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085635"
 ---
-# <a name="how-to-implement-multiline-tooltips"></a>Cómo implementar la información sobre herramientas de varias líneas
+# <a name="how-to-implement-multiline-tooltips"></a>Cómo implementar información sobre herramientas multilínea
 
-La información sobre herramientas multilínea permite que el texto se muestre en más de una línea.
+La información sobre herramientas multilínea permite mostrar texto en más de una línea.
 
-Son compatibles con la [versión 4,70](common-control-versions.md) y versiones posteriores de los controles comunes. La aplicación crea una información sobre herramientas de varias líneas mediante el envío de un mensaje de [**TTM \_ SETMAXTIPWIDTH**](ttm-setmaxtipwidth.md) , que especifica el ancho del rectángulo de presentación. El texto que supera este ancho se ajusta a la línea siguiente en lugar de ensanchar la región de presentación. El alto del rectángulo aumenta según sea necesario para dar cabida a las líneas adicionales. El control ToolTip ajusta las líneas automáticamente, o puede utilizar una combinación de retorno de carro/avance de línea, \\ r \\ n, para forzar saltos de línea en ubicaciones concretas.
+Son compatibles con la [versión 4.70](common-control-versions.md) y posteriores de los controles comunes. La aplicación crea una información sobre herramientas de varias líneas mediante el envío de un mensaje [**\_ SETMAXTIPWIDTH de TTM,**](ttm-setmaxtipwidth.md) especificando el ancho del rectángulo de presentación. El texto que supera este ancho se ajusta a la línea siguiente en lugar de ampliar la región de presentación. El alto del rectángulo aumenta según sea necesario para dar cabida a las líneas adicionales. El control de información sobre herramientas ajusta las líneas automáticamente, o puede usar una combinación de retorno de carro/avance de línea, r n, para forzar saltos de línea en \\ \\ ubicaciones concretas.
 
-La presentación resultante se muestra en la siguiente ilustración.
+La pantalla resultante se muestra en la ilustración siguiente.
 
 ![captura de pantalla de un cuadro de diálogo con información sobre herramientas que contiene texto organizado como un párrafo de varias líneas](images/tt-multiline.png)
 
 > [!Note]  
-> El búfer de texto especificado por el miembro **szText** de la estructura [**NMTTDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfoa) solo puede contener 80 caracteres. Si necesita usar una cadena más larga, apunte el miembro **lpszText** de **NMTTDISPINFO** a un búfer que contenga el texto deseado.
+> El búfer de texto especificado por el **miembro szText** de la estructura [**NMTTDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfoa) solo puede tener 80 caracteres. Si necesita usar una cadena más larga, apunte el miembro **lpszText** de **NMTTDISPINFO** a un búfer que contenga el texto deseado.
 
- 
+ 
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="implement-multiline-tooltips"></a>Implementar información sobre herramientas de varias líneas
+### <a name="implement-multiline-tooltips"></a>Implementación de información sobre herramientas multilínea
 
-El siguiente fragmento de código es un ejemplo de un controlador de notificación simple de [TTN \_ GETDISPINFO](ttn-getdispinfo.md) . Habilita una información sobre herramientas de varias líneas estableciendo el rectángulo de presentación en 150 píxeles. Se inserta un salto de línea manual después de la primera palabra para mostrar que los saltos de línea pueden ser difíciles y flexibles.
+El fragmento de código siguiente es un ejemplo de un controlador de [notificaciones \_ GETDISPINFO de TTN](ttn-getdispinfo.md) simple. Habilita una información sobre herramientas multilínea estableciendo el rectángulo de presentación en 150 píxeles. Se inserta un salto de línea manual después de la primera palabra para mostrar que los saltos de línea pueden ser duros y flexibles.
 
 
 ```C++
@@ -67,12 +67,12 @@ El siguiente fragmento de código es un ejemplo de un controlador de notificaci�
 
 <dl> <dt>
 
-[Usar controles ToolTip](using-tooltip-contro.md)
+[Uso de controles de información sobre herramientas](using-tooltip-contro.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

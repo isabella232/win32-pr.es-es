@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120122595"
 ---
-# <a name="iwmperroritemcustomurl-property"></a>Propiedad IWMPErrorItem::customUrl
+# <a name="iwmperroritemcustomurl-property"></a>IWMPErrorItem::customUrl, propiedad
 
 La **propiedad customUrl** obtiene la dirección URL de un sitio web que muestra información específica sobre el error de descarga del códec.
 
@@ -52,7 +52,7 @@ Public ReadOnly Property customUrl As System.String
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -60,7 +60,7 @@ Public ReadOnly Property customUrl As System.String
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

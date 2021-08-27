@@ -1,19 +1,19 @@
 ---
-description: Notifica a una aplicación cuando se actualiza el estilo o la posición de la ventana de composición. La aplicación recibe este comando a través del \_ mensaje de notificación del IME \_ de WM con la configuración de parámetros, como se muestra a continuación.
+description: Notifica a una aplicación cuando se actualiza el estilo o la posición de la ventana de composición. La aplicación recibe este comando a través del mensaje WM \_ IME \_ NOTIFY con la configuración de parámetros, como se muestra a continuación.
 ms.assetid: 07a9f0f6-587e-47c6-8f18-b48bdab0a541
-title: Código de notificación de IMN_SETCOMPOSITIONWINDOW (IMM. h)
+title: IMN_SETCOMPOSITIONWINDOW de notificación (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55a1a4e989fb36049168359f86f85ee7a58103a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fed8e69c03250166e155b07d34a2ce19b5d5fd9336af6cf82133c258c2b88d46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107055"
 ---
-# <a name="imn_setcompositionwindow-notification-code"></a>Código de notificación de SETCOMPOSITIONWINDOW de IMN \_
+# <a name="imn_setcompositionwindow-notification-code"></a>Código de notificación \_ SETCOMPOSITIONWINDOW de IMN
 
-Notifica a una aplicación cuando se actualiza el estilo o la posición de la ventana de composición. La aplicación recibe este comando a través del mensaje de [**\_ \_ notificación del IME de WM**](wm-ime-notify.md) con la configuración de parámetros, como se muestra a continuación.
+Notifica a una aplicación cuando se actualiza el estilo o la posición de la ventana de composición. La aplicación recibe este comando a través del mensaje [**\_ WM IME \_ NOTIFY**](wm-ime-notify.md) con la configuración de parámetros, como se muestra a continuación.
 
 
 ```C++
@@ -26,17 +26,17 @@ IMN_SETCOMPOSITIONWINDOW
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
-Establézcalo en IMN \_ SETCOMPOSITIONWINDOW.
+Establezca en IMN \_ SETCOMPOSITIONWINDOW.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
@@ -44,9 +44,9 @@ No se utiliza.
 
 Este comando no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación puede obtener información sobre el formulario de composición mediante el comando [**IMC \_ GETCOMPOSITIONWINDOW**](imc-getcompositionwindow.md) .
+La aplicación puede obtener información sobre el formulario de composición mediante el comando [**\_ GETCOMPOSITIONWINDOW de IMC.**](imc-getcompositionwindow.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ La aplicación puede obtener información sobre el formulario de composición me
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -67,13 +67,13 @@ La aplicación puede obtener información sobre el formulario de composición me
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Comandos del administrador de métodos de entrada](input-method-manager-commands.md)
+[Comandos del Administrador de métodos de entrada](input-method-manager-commands.md)
 </dt> <dt>
 
-[**GETCOMPOSITIONWINDOW de IMC \_**](imc-getcompositionwindow.md)
+[**IMC \_ GETCOMPOSITIONWINDOW**](imc-getcompositionwindow.md)
 </dt> <dt>
 
-[**\_notificación de IME de WM \_**](wm-ime-notify.md)
+[**WM \_ IME \_ NOTIFY**](wm-ime-notify.md)
 </dt> </dl>
 
  

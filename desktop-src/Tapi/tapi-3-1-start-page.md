@@ -1,27 +1,27 @@
 ---
-description: La versión 3.1 de la Interfaz de programación de aplicaciones de telefonía de Microsoft (TAPI) es una API basada en el Modelo de objetos componentes (COM) que combina telefonía ip y clásica.
+description: La versión 3.1 de la interfaz de programación de aplicaciones de telefonía de Microsoft (TAPI) es una API basada en El modelo de objetos componentes (COM) que combina la telefonía clásica y la ip.
 ms.assetid: 79c4d2c9-953e-4e68-98b7-6a0dd9a04e0b
-title: Interfaz de programación de aplicaciones de telefonía, versión 3.1
+title: Interfaz de programación de aplicaciones de telefonía versión 3.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b529c8d566d2c99dc851f99886eb6a132d434a2c56027ba7abcd2e07b5f144b6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b2a9d99a9e4319a1450ccbc72d3db32f6ec3d92
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119139888"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625641"
 ---
-# <a name="telephony-application-programming-interface-version-31"></a>Interfaz de programación de aplicaciones de telefonía, versión 3.1
+# <a name="telephony-application-programming-interface-version-31"></a>Interfaz de programación de aplicaciones de telefonía versión 3.1
 
 ## <a name="purpose"></a>Propósito
 
-La versión 3.1 de la Interfaz de programación de aplicaciones de telefonía de Microsoft (TAPI) es una API basada en el Modelo de objetos componentes (COM) que combina telefonía ip y clásica.
+La versión 3.1 de la interfaz de programación de aplicaciones de telefonía de Microsoft (TAPI) es una API basada en El modelo de objetos componentes (COM) que combina la telefonía clásica y la ip.
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
 Las posibles aplicaciones TAPI incluyen:
 
--   Conferencias IP multimedia de multidifusión con calidad de servicio (QOS)
+-   Multidifusión de conferencias IP multimedia con calidad de servicio (QOS)
 -   Llamadas de voz a través de Internet mediante el protocolo H.323
 -   Aplicaciones de centro de llamadas capaces de realizar el seguimiento de varios agentes
 -   Llamadas de voz básicas en la red telefónica conmutada pública (RTC)
@@ -41,7 +41,7 @@ TAPI versión 3.1 permite el desarrollo de aplicaciones de comunicaciones para s
 
 
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Tema</th><th>Descripción</th></tr></thead><tbody><tr class="odd"><td><a href="tapi-3-1-overview.md">Información general</a><br/></td><td>Información general sobre la arquitectura y los componentes de TAPI.<br/></td></tr><tr class="even"><td>Referencia<br/></td><td>Documentación para:<br/><ul><li><a href="call-and-media-controls-reference.md">Referencia de controles de llamada y multimedia</a></li><li><a href="call-center-controls-reference.md">Referencia de controles de centro de llamadas</a></li><li><a href="rendezvous-ip-telephony-conferencing-reference.md">Referencia de Encuentro</a></li></ul></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th>Tema</th><th>Descripción</th></tr></thead><tbody><tr class="odd"><td><a href="tapi-3-1-overview.md">Información general</a><br/></td><td>Información general sobre la arquitectura y los componentes de TAPI.<br/></td></tr><tr class="even"><td>Referencia<br/></td><td>Documentación para:<br/><ul><li><a href="call-and-media-controls-reference.md">Referencia de controles de llamada y multimedia</a></li><li><a href="call-center-controls-reference.md">Referencia de controles de centro de llamadas</a></li><li><a href="rendezvous-ip-telephony-conferencing-reference.md">Referencia de Encuentro</a></li></ul></td></tr></tbody></table>
 
 
 

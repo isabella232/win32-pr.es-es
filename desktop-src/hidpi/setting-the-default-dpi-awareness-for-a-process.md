@@ -8,16 +8,16 @@ ms:contentKeyID: 74520139
 ms.date: 03/30/2018
 ms.topic: article
 mtps_version: v=VS.85
-ms.openlocfilehash: 216952ac05811226c403739d389f8de9f636c3b8
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 52ef4f10ed2f4253c796ae10a57a71d8a7bc4f0d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880529"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465682"
 ---
 # <a name="setting-the-default-dpi-awareness-for-a-process"></a>Establecimiento del reconocimiento de PPP predeterminado para un proceso
 
-Las aplicaciones de escritorio Windows pueden ejecutarse en diferentes modos de reconocimiento de PPP. Estos modos permiten un comportamiento de escalado de PPP diferente y pueden usar distintos espacios de coordenadas. Para obtener más información sobre el reconocimiento de PPP, vea Desarrollo de aplicaciones de escritorio con valores altos de [PPP en Windows.](https://msdn.microsoft.com/library/mt843498\(v=vs.85\)) Es importante establecer explícitamente el modo de reconocimiento de PPP predeterminado del proceso para evitar un comportamiento inesperado.
+Las aplicaciones de escritorio Windows pueden ejecutarse en diferentes modos de reconocimiento de PPP. Estos modos permiten un comportamiento de escalado de PPP diferente y pueden usar distintos espacios de coordenadas. Para obtener más información sobre el reconocimiento de PPP, consulte Desarrollo de aplicaciones de escritorio con valores altos [de PPP Windows.](https://msdn.microsoft.com/library/mt843498\(v=vs.85\)) Es importante establecer explícitamente el modo de reconocimiento de PPP predeterminado del proceso para evitar un comportamiento inesperado.
 
 Hay dos métodos principales para especificar el reconocimiento de PPP predeterminado de un proceso:
 
@@ -34,17 +34,17 @@ Hay dos configuraciones de manifiesto que permiten especificar el modo de recono
 En la tabla siguiente se muestra cómo especificar diferentes modos de reconocimiento de PPP predeterminados del proceso mediante la configuración de dos manifiestos:
 
 
-| Modo de reconocimiento de PPP predeterminado del proceso | &lt;configuración de &gt; pppAware | &lt;configuración de pppAwareness &gt; (Windows 10, versión 1607 y posteriores) | 
+| Modo de reconocimiento de PPP predeterminado del proceso | Valor de <dpiAware> | <dpiAwareness>configuración (Windows 10, versión 1607 y posteriores) | 
 |------------------------------------|--------------------|--------------------------------------------------------------|
-| Conscientes | <p>N/A (sin configuración de pppAware en el manifiesto)</p><p>o</p><p>&lt;dpiAware &gt; false &lt; /dpiAware&gt;</p> | &lt;pppAwareness &gt; unware &lt; /dpiAwareness&gt; | 
-| Con constancia del sistema | &lt;dpiAware &gt; true &lt; /dpiAware&gt; | &lt;dpiAwareness &gt; system &lt; /dpiAwareness&gt; | 
-| Por monitor | &lt;pppAware &gt; true/pm &lt; pppAware&gt; | &lt;pppAwareness &gt; PerMonitor &lt; /dpiAwareness&gt; | 
-| Por monitor V2 | No compatible | &lt;pppAwareness &gt; PerMonitorV2 &lt; /dpiAwareness&gt; | 
+| Conscientes | <p>N/A (sin configuración de pppAware en el manifiesto)</p><p>o</p><p>&lt;dpiAware &gt; false &lt; /dpiAware&gt;</p> | <dpiAwareness>Conscientes</dpiAwareness> | 
+| Con constancia del sistema | <dpiAware>true</dpiAware> | <dpiAwareness>sistema</dpiAwareness> | 
+| Por monitor | <dpiAware>true/pm<dpiAware> | <dpiAwareness>PerMonitor</dpiAwareness> | 
+| Por monitor V2 | No compatible | <dpiAwareness>PerMonitorV2</dpiAwareness> | 
 
 
  
 
-En el ejemplo siguiente se muestra y la configuración que se usa en el mismo archivo de manifiesto para configurar el comportamiento de reconocimiento de PPP predeterminado del proceso para diferentes versiones de \<dpiAwareness\> \<dpiAware\> Windows.
+En el ejemplo siguiente se muestra y la configuración que se usa en el mismo archivo de manifiesto para configurar el comportamiento de reconocimiento de PPP predeterminado del proceso para diferentes \<dpiAwareness\> \<dpiAware\> versiones de Windows.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

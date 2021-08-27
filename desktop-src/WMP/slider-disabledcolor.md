@@ -1,9 +1,9 @@
 ---
-title: SLIDEr. disabledColor
+title: SLIDER.disabledColor
 description: El atributo disabledColor especifica o recupera el color del control deslizante cuando está deshabilitado.
 ms.assetid: 47b9f5c6-12ea-4654-a9c0-d15d41ea2766
 keywords:
-- CONTROL SLIDEr. disabledColor Windows Media Player
+- SLIDER.disabledColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8887ca510eb9b3d668a79eda9cf1ec8f387eb91
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1623c1c22493722deb67d30db2c4d59ed0a28430968c989d145cbe6105d35030
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123065"
 ---
-# <a name="sliderdisabledcolor"></a>SLIDEr. disabledColor
+# <a name="sliderdisabledcolor"></a>SLIDER.disabledColor
 
-El atributo **disabledColor** especifica o recupera el color del control deslizante cuando está deshabilitado.
+El **atributo disabledColor** especifica o recupera el color del control deslizante cuando está deshabilitado.
 
 ``` syntax
         elementID.disabledColor
@@ -29,11 +29,11 @@ El atributo **disabledColor** especifica o recupera el color del control desliza
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene cualquier valor de color de Microsoft Internet Explorer. No tiene valor predeterminado.
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft. No tiene valor predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el control deslizante se especifica utilizando los colores de primer plano y de fondo, el color deshabilitado especifica el color del control cuando **habilitado** se establece en false.
+Cuando el control deslizante se especifica mediante colores de primer plano y de fondo, el color deshabilitado especifica el color del control cuando **está** habilitado se establece en false.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Cuando el control deslizante se especifica utilizando los colores de primer plan
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -52,10 +52,10 @@ Cuando el control deslizante se especifica utilizando los colores de primer plan
 [**Referencia de color**](color-reference.md)
 </dt> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**AmbientAttributes. Enabled**](ambientattributes-enabled.md)
+[**AmbientAttributes.enabled**](ambientattributes-enabled.md)
 </dt> </dl>
 
  

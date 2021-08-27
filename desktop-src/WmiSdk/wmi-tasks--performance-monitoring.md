@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 91302b0d6c6e13f86f275d755c5f4b6150de6a59dd400e47ed877d01f3fe876e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff50e0a4656caf33289b534307043694dbe2cdce
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118312061"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623921"
 ---
 # <a name="wmi-tasks-performance-monitoring"></a>Tareas wmi: supervisión del rendimiento
 
@@ -44,8 +44,8 @@ En la tabla siguiente se enumeran ejemplos de script que se pueden usar para obt
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -60,10 +60,10 @@ En la tabla siguiente se enumeran ejemplos de script que se pueden usar para obt
 </tr>
 <tr class="even">
 <td>... obtener datos de rendimiento en marcha para un único proceso, unidad de disco y otros datos.</td>
-<td>Use el <a href="/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data"><strong>Win32_PerfFormattedData_PerfProc_Process</strong></a> o la clase de contador de rendimiento con formato <a href="/windows/desktop/CIMWin32Prov/performance-counter-classes">adecuada</a> y <a href="swbemobjectex-refresh-.md"><strong>el SWbemObjectEx.Refresh_</strong></a> método. Para obtener más información, vea <a href="scripting-with-swbemobject.md">Scripting con SWbemObject</a>.<br/> En C++, use <a href="/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemconfigurerefresher-addobjectbypath"><strong>IWbemConfigureRefresher::AddObjectByPath</strong></a> e <a href="/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemrefresher-refresh"><strong>IWbemRefresher::Refresh</strong></a>. Para obtener más información, vea <a href="monitoring-performance-data.md">Supervisión de datos de rendimiento.</a><br/> El siguiente script se ejecuta hasta que se reinicia el equipo, WMI se detiene o se detiene el script. Para detener el script manualmente, use Administrador de tareas para detener el proceso. Para detenerla mediante programación, use el <a href="/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process"><strong>método Terminate</strong></a> de la <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> clase .<br/> <span data-codelanguage="VisualBasic"></span>
+<td>Use el <a href="/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data"><strong>Win32_PerfFormattedData_PerfProc_Process</strong></a> o la clase de contador de rendimiento con formato <a href="/windows/desktop/CIMWin32Prov/performance-counter-classes">adecuada</a> y <a href="swbemobjectex-refresh-.md"><strong>el SWbemObjectEx.Refresh_</strong></a> método. Para obtener más información, vea <a href="scripting-with-swbemobject.md">Scripting con SWbemObject</a>.<br/> En C++, use <a href="/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemconfigurerefresher-addobjectbypath"><strong>IWbemConfigureRefresher::AddObjectByPath</strong></a> e <a href="/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemrefresher-refresh"><strong>IWbemRefresher::Refresh</strong></a>. Para obtener más información, vea <a href="monitoring-performance-data.md">Supervisión de datos de rendimiento.</a><br/> El siguiente script se ejecuta hasta que se reinicia el equipo, WMI se detiene o se detiene el script. Para detener el script manualmente, use Administrador de tareas para detener el proceso. Para detenerla mediante programación, use el <a href="/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process"><strong>método Terminate</strong></a> en la <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> clase .<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -92,12 +92,12 @@ Wend</code></pre></td>
 <tr class="odd">
 <td>... obtener datos de rendimiento en marcha para todos los procesos sin sondeo repetido?</td>
 <td><p>Use clases que tengan nombres que comiencen &quot; por Win32_PerfFormattedData y un objeto &quot; <a href="swbemrefresher.md"><strong>SWbemRefresher.</strong></a> El actualizador contiene los objetos, por lo que no es necesario obtener la colección varias veces. Se necesitan dos valores como mínimo para calcular los datos de rendimiento, ya que la mayoría de los contadores son contadores de velocidad. La primera vez que muestre los datos del actualizador, está vacío.</p>
-<p>El siguiente script se ejecuta indefinidamente hasta que se reinicia el equipo, WMI se detiene o se detiene el script. Para detener el script manualmente, use Administrador de tareas para detener el proceso. Para detenerla mediante programación, use el <a href="/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process"><strong>método Terminate</strong></a> de la <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> clase .</p>
+<p>El siguiente script se ejecuta indefinidamente hasta que se reinicia el equipo, WMI se detiene o se detiene el script. Para detener el script manualmente, use Administrador de tareas para detener el proceso. Para detenerla mediante programación, use el <a href="/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process"><strong>método Terminate</strong></a> en la <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> clase .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -131,14 +131,14 @@ Wend</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿Obtener y calcular los datos de rendimiento de los procesos Windows 2000?</td>
+<td>... obtener y calcular los datos de rendimiento de los procesos Windows 2000?</td>
 <td><p>Use las &quot; &quot; Win32_PerfRawData, como <a href="/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data"><strong>Win32_PerfRawData_PerfProc_Process</strong></a>. Obtenga los datos de propiedad, como <strong>PercentProcessorTime,</strong>dos veces para un proceso específico. Busque la fórmula especificada en el <a href="countertype-qualifier.md"><strong>calificador CounterType</strong></a> para la propiedad y calcule. CounterType en el ejemplo es <a href="/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10)">PERF_100NSEC_TIMER_INV</a>. Para obtener más información, vea <a href="monitoring-performance-data.md">Supervisión de datos de rendimiento.</a></p>
-<p>El siguiente script se ejecuta indefinidamente hasta que se reinicia el equipo, WMI se detiene o se detiene el script. Para detener el script manualmente, use Administrador de tareas para detener el proceso. Para detenerla mediante programación, use el <a href="/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process"><strong>método Terminate</strong></a> de la <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> clase .</p>
+<p>El siguiente script se ejecuta indefinidamente hasta que se reinicia el equipo, WMI se detiene o se detiene el script. Para detener el script manualmente, use Administrador de tareas para detener el proceso. Para detenerla mediante programación, use el <a href="/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process"><strong>método Terminate</strong></a> en la <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> clase .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de IPM_SETFOCUS (commctrl. h)
-description: Establece el foco de teclado en el campo especificado en el control de dirección IP. Se seleccionará todo el texto de ese campo.
+title: IPM_SETFOCUS mensaje (Commctrl.h)
+description: Establece el foco del teclado en el campo especificado en el control de dirección IP. Se seleccionará todo el texto de ese campo.
 ms.assetid: 4b975eb2-85e1-4e33-a803-99b48d2ff5e8
 keywords:
-- IPM_SETFOCUS controles de mensajes de Windows
+- IPM_SETFOCUS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d713e0a8b7eb838a2db5c4738c801d4fb76b782
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2a74d98aa4d4259d11d7fef6e0bfdad2bfe741447ddffab27fa41545e7eda515
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085575"
 ---
-# <a name="ipm_setfocus-message"></a>Mensaje de SETFOCUS de IPM \_
+# <a name="ipm_setfocus-message"></a>Mensaje \_ SETFOCUS de IPM
 
-Establece el foco de teclado en el campo especificado en el control de dirección IP. Se seleccionará todo el texto de ese campo.
+Establece el foco del teclado en el campo especificado en el control de dirección IP. Se seleccionará todo el texto de ese campo.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece el foco de teclado en el campo especificado en el control de direcció
 *wParam* 
 </dt> <dd>
 
-Índice de campo basado en cero en el que se debe establecer el foco. Si este valor es mayor que el número de campos, el foco se establece en el primer campo en blanco. Si todos los campos no están en blanco, el foco se establece en el primer campo.
+Índice de campo de base cero en el que se debe establecer el foco. Si este valor es mayor que el número de campos, el foco se establece en el primer campo en blanco. Si todos los campos no están en la página, el foco se establece en el primer campo.
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Establece el foco de teclado en el campo especificado en el control de direcció
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ No se utiliza el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -53,7 +53,7 @@ Public ReadOnly Property mediaAccessRights As System.String
 
 
 
-| Valor | Descripción                      |
+| Value | Descripción                      |
 |-------|----------------------------------|
 | ninguno  | Solo derechos de acceso de elementos actuales. |
 | leer  | Solo derechos de acceso de lectura.         |
@@ -73,7 +73,7 @@ Las aplicaciones que se ejecutan en el equipo del usuario siempre tienen derecho
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -81,7 +81,7 @@ Las aplicaciones que se ejecutan en el equipo del usuario siempre tienen derecho
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

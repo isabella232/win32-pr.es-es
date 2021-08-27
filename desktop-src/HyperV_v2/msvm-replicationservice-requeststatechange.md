@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_ReplicationService clase : solicita un cambio de estado.'
+description: 'Método RequestStateChange de la clase Msvm_ReplicationService: solicita un cambio de estado.'
 ms.assetid: ae799e76-5177-42a5-8591-ceaf15dd7eaf
 title: Método RequestStateChange de la Msvm_ReplicationService clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e2955bd278742c2a8e152c83ddd61292277baa70
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9012a9b48c8b7a5de693328c0de97d7d7012a5ee85709ec1ff52204bfd59ef2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130415"
 ---
-# <a name="requeststatechange-method-of-the-msvm_replicationservice-class"></a>Método RequestStateChange de la clase ReplicationService de \_ Msvm
+# <a name="requeststatechange-method-of-the-msvm_replicationservice-class"></a>Método RequestStateChange de la clase ReplicationService de Msvm \_
 
 Solicita un cambio de estado.
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -106,7 +106,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecimiento** (11)
+**Restablecer** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -128,7 +128,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia al [**\_ objeto ConcreteJob de CIM**](cim-concretejob.md) creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia a cim [**\_ concretejob creado**](cim-concretejob.md) para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
 
 </dd> <dt>
 
@@ -155,7 +155,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -165,7 +165,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

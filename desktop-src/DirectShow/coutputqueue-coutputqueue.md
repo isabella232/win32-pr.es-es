@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 17a795bf4ec33ec904b83f6621fc0bc4f43b4b15
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1bf50314fd0ceb1afbe00c5a6a63708cc79ab38d77931c80b086039c7ca9704c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087245"
 ---
 # <a name="coutputqueuecoutputqueue-constructor"></a>Constructor COutputQueue.COutputQueue
 
@@ -59,7 +59,7 @@ Puntero a la [**interfaz IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del
 *Phr* 
 </dt> <dd>
 
-Puntero a un **código de retorno HRESULT.** Establezca el valor en S \_ OK antes de llamar a este método. Al devolver, *phr* recibe un valor que indica el éxito o el error del método.
+Puntero a un **código de retorno HRESULT.** Establezca el valor en S \_ OK antes de llamar a este método. En la devolución, *phr* recibe un valor que indica el éxito o error del método.
 
 </dd> <dt>
 
@@ -73,14 +73,14 @@ Marca que especifica si el objeto decide cuándo crear una cola. Si **es TRUE,**
 *bQueue* 
 </dt> <dd>
 
-Si *bAuto* es **TRUE**, se omite este parámetro. Si *bAuto* es **FALSE,** esta marca especifica si se va a crear una cola.
+Si *bAuto* es **TRUE,** se omite este parámetro. Si *bAuto* es **FALSE,** esta marca especifica si se va a crear una cola.
 
 </dd> <dt>
 
 *lBatchSize* 
 </dt> <dd>
 
-Número máximo de muestras para entregar en un lote.
+Número máximo de muestras que se entregan en un lote.
 
 </dd> <dt>
 
@@ -107,7 +107,7 @@ Prioridad del subproceso que entrega ejemplos.
 
 ## <a name="remarks"></a>Comentarios
 
-Si *bAuto* es **TRUE,** el objeto llama al método [**IMemInputPin::ReceiveCanBlock**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivecanblock) en el pin de nivel inferior. Si **ReceiveCanBlock devuelve** S OK (lo que significa que el pin podría bloquearse en \_ llamadas [**IMemInputPin::Receive),**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) el objeto crea un subproceso para entregar ejemplos. De lo contrario, no crea un subproceso.
+Si *bAuto* es **TRUE,** el objeto llama al método [**IMemInputPin::ReceiveCanBlock**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivecanblock) en el pin de bajada. Si **ReceiveCanBlock devuelve** S OK (lo que significa que el pin podría bloquearse en \_ llamadas [**IMemInputPin::Receive),**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) el objeto crea un subproceso para entregar ejemplos. De lo contrario, no crea un subproceso.
 
 Si *bAuto* es **FALSE,** el valor de *bQueue* determina si se va a crear un subproceso.
 
@@ -119,12 +119,12 @@ Si el objeto crea un subproceso, asigna el identificador de subproceso a la vari
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

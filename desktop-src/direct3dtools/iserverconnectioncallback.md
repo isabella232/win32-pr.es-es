@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: eb41908bd23fcd1c719b692f2680fd7d1dda3e77
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 25aa867ea1c4451fd036b3f9a68f3571097b2d58
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087913"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626981"
 ---
 # <a name="span-idvspixengineiserverconnectioncallbackspaniserverconnectioncallback-interface"></a><span id="vspixengine.iserverconnectioncallback"></span>Interfaz IServerConnectionCallback
 
@@ -38,13 +38,13 @@ La **interfaz IServerConnectionCallback** hereda de la [**interfaz IUnknown.**](
 
 La **interfaz IServerConnectionCallback** tiene estos métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iserverconnectioncallback-connecttoengine-bool-bstr-ipixengine-ptr-ptr"><strong>ConnectToEngine</strong></a></td><td style="text-align: left;"><p>Conéctese a otra instancia de un motor remoto en el equipo local.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iserverconnectioncallback-waitforshutdown-ipixengine-ptr"><strong>WaitForShutdown</strong></a></td><td style="text-align: left;"><p>Espere a que se apague el motor especificado (llamada de bloqueo).</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iserverconnectioncallback-connecttoengine-bool-bstr-ipixengine-ptr-ptr"><strong>ConnectToEngine</strong></a></td><td style="text-align: left;"><p>Conectar a otra instancia de un motor remoto en el equipo local.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iserverconnectioncallback-waitforshutdown-ipixengine-ptr"><strong>WaitForShutdown</strong></a></td><td style="text-align: left;"><p>Espere a que se apague el motor especificado (llamada de bloqueo).</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

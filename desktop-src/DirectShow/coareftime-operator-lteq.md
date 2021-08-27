@@ -1,7 +1,7 @@
 ---
 description: Este operador comprueba si una hora de referencia es mayor o igual que otra.
 ms.assetid: 1182db5b-2d58-4abb-b9ec-f14c3de5a942
-title: COARefTime. Operator<= método (Ctlutil. h)
+title: COARefTime.operator<= method (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b4d7c8f212f175760473e5cfe2fdcbd85c4f89f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 448f36a9c746c22878d8bb0e48028dff211962cbf49827eab3c14f2b4af6b38c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087285"
 ---
-# <a name="coareftimeoperator-method"></a>COARefTime. Operator<= método
+# <a name="coareftimeoperator-method"></a>COARefTime.operator<= method
 
 Este operador comprueba si una hora de referencia es mayor o igual que otra.
 
@@ -42,16 +42,16 @@ BOOL operator<=(
 
 <dl> <dt>
 
-*RT* \[ CLI\]
+*rt* \[ Ref\]
 </dt> <dd>
 
-Referencia al objeto **COARefTime** que se va a comparar.
+Referencia al **objeto COARefTime** que se comparará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si este objeto es mayor o igual que *RT*. De lo contrario, devuelve **false**.
+Devuelve **TRUE** si este objeto es mayor o igual que *rt*. De lo contrario, **devuelve FALSE**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve **true** si este objeto es mayor o igual que *RT*. De lo contrario, dev
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve **true** si este objeto es mayor o igual que *RT*. De lo contrario, dev
 
 <dl> <dt>
 
-[**Clase COARefTime**](coareftime.md)
+[**COARefTime (clase)**](coareftime.md)
 </dt> </dl>
 
  

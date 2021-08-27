@@ -17,16 +17,16 @@ Constantes que describen los tipos de datos de vértice admitidos por un disposi
 
 
 
-| \#Definir              | Valor       | Descripción                                                                                                                   |
+| \#Definir              | Value       | Descripción                                                                                                                   |
 |-----------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|
 | D3DDTCAPS \_ UBYTE4     | 0x00000001L | Byte 4D sin signo.                                                                                                             |
 | D3DDTCAPS \_ UBYTE4N    | 0x00000002L | Byte 4D sin signo normalizado. Cada uno de los cuatro bytes se normaliza dividiendo a 255,0.                                      |
 | D3DDTCAPS \_ SHORT2N    | 0x00000004L | Normalized, 2D signed short, expanded to (first byte/32767.0, second byte/32767.0, 0, 1).                                     |
 | D3DDTCAPS \_ SHORT4N    | 0x00000008L | Normalized, 4D signed short, expanded to (first byte/32767.0, second byte/32767.0, third byte/32767.0, fourth byte/32767.0).  |
 | D3DDTCAPS \_ USHORT2N   | 0x00000010L | Normalized, 2D unsigned short, expanded to (first byte/65535.0, second byte/65535.0, 0, 1).                                   |
-| D3DDTCAPS \_ USHORT4N   | 0x00000020L | 4D normalizado corto sin signo, expandido a (primer byte/65535.0, segundo byte/65535.0, tercer byte/65535.0, cuarto byte/65535.0). |
+| D3DDTCAPS \_ USHORT4N   | 0x00000020L | 4D normalizado sin signo corto, expandido a (primer byte/65535,0, segundo byte/65535,0, tercer byte/65535,0, cuarto byte/65535,0). |
 | D3DDTCAPS \_ UDEC3      | 0x00000040L | Formato 3D sin signo 10 10 10 expandido a (valor, valor, valor, 1).                                                             |
-| D3DDTCAPS \_ DEC3N      | 0x00000080L | Formato 10 10 10 con firma 3D normalizado y expandido a (v \[ 0 \] /511.0, v \[ 1 \] /511.0, v \[ 2 \] /511.0, 1).                           |
+| D3DDTCAPS \_ DEC3N      | 0x00000080L | Formato 3D firmado 10 10 10 normalizado y expandido a (v \[ 0 \] /511.0, v \[ 1 \] /511.0, v \[ 2 \] /511.0, 1).                           |
 | D3DDTCAPS \_ FLOAT16 \_ 2 | 0x00000100L | Números de punto flotante 2D de 16 bits.                                                                                             |
 | D3DDTCAPS \_ FLOAT16 \_ 4 | 0x00000200L | Números de punto flotante 4D de 16 bits.                                                                                             |
 

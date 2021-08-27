@@ -1,8 +1,8 @@
 ---
-description: Para obtener datos de WMI, en el equipo local o desde un equipo remoto, debe conectarse al servicio WMI mediante la conexión a un espacio de nombres específico.
+description: Para obtener datos de WMI, ya sea en el equipo local o desde un equipo remoto, debe conectarse al servicio WMI mediante la conexión a un espacio de nombres específico.
 ms.assetid: 71ff6b06-af7d-43ee-ae6e-1964ec249472
 ms.tgt_platform: multiple
-title: 'Tareas WMI: conectarse al servicio WMI'
+title: 'Tareas wmi: conectarse al servicio WMI'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,44 +10,44 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 751c6c0802c30e113f4a2b7ddc646cdf5646b7dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4da816b45709f6140efb7e6e0460e27d9f9ed00f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706149"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627721"
 ---
-# <a name="wmi-tasks-connecting-to-the-wmi-service"></a>Tareas WMI: conectarse al servicio WMI
+# <a name="wmi-tasks-connecting-to-the-wmi-service"></a>Tareas wmi: conectarse al servicio WMI
 
-Para obtener datos de WMI, en el equipo local o desde un equipo remoto, debe conectarse al servicio WMI mediante la conexión a un [*espacio de nombres*](gloss-n.md)específico. En la mayoría de los casos, puede usar la conexión de [moniker](creating-a-wmi-script.md) abreviada o la conexión del [**localizador**](swbemlocator-connectserver.md) . Para ver otros ejemplos, vea el ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Para obtener datos de WMI, ya sea en el equipo local o desde un equipo remoto, debe conectarse al servicio WMI mediante la conexión a un espacio de nombres [*específico.*](gloss-n.md) En la mayoría de los casos, use la conexión de [moniker](creating-a-wmi-script.md) abreviada o la [**conexión de localizador.**](swbemlocator-connectserver.md) Para obtener otros ejemplos, vea ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Las conexiones remotas requieren una configuración adecuada para el Firewall de Windows y DCOM. Para obtener más información, vea [conectarse a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md) y [conectarse a través de Firewall de Windows](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista). A partir de Windows Vista, el control de cuentas de usuario (UAC) puede afectar al acceso a WMI. Para obtener más información, vea [control de cuentas de usuario y WMI](user-account-control-and-wmi.md).
+Las conexiones remotas requieren una configuración adecuada para Windows Firewall y DCOM. Para obtener más información, vea [Conectarse a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md) y [Conectarse](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista)a través de Windows Firewall . A partir Windows Vista, el control de cuentas de usuario (UAC) puede afectar al acceso WMI. Para obtener más información, vea [Control de cuentas de usuario y WMI.](user-account-control-and-wmi.md)
 
-Los ejemplos de scripts que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información acerca de cómo usar el script para obtener datos de equipos remotos, consulte [conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md).
+Los ejemplos de script que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información sobre cómo usar el script para obtener datos de equipos remotos, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 
 En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con la extensión. vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una extensión. txt al archivo.
-2.  Abra una ventana del símbolo del sistema y navegue hasta el directorio en el que guardó el archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una .txt extensión al archivo.
+2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
-4.  Si no puede obtener acceso a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
+4.  Si no puede acceder a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
 
 > [!Note]  
-> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts de WMI pueden generar grandes cantidades de resultados, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script de *filename.vbs* a *outfile.txt*.
+> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script *filename.vbs* a *outfile.txt*.
 
  
 
-En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para obtener distintos tipos de datos del equipo local.
+En la tabla siguiente se enumeran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -57,18 +57,18 @@ En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para ob
 </thead>
 <tbody>
 <tr class="odd">
-<td>... ¿conectarse a un equipo remoto mediante WMI?</td>
-<td>Especifique una de las siguientes como parte de la cadena de conexión de <a href="constructing-a-moniker-string.md">moniker</a> :<br/>
+<td>... ¿Conectarse a un equipo remoto mediante WMI?</td>
+<td>Especifique uno de los siguientes elementos como parte de la cadena de <a href="constructing-a-moniker-string.md">conexión del moniker:</a><br/>
 <ul>
-<li>Un nombre de equipo NetBIOS, como &quot; ATL-DC-01&quot;</li>
-<li>Un nombre de dominio completo, como &quot; ATL-DC-01.fabrikam.com&quot;</li>
+<li>Un nombre de equipo NetBIOS, como &quot; atl-dc-01&quot;</li>
+<li>Un nombre de dominio completo, como &quot; atl-dc-01.fabrikam.com&quot;</li>
 <li>Una dirección IPv4, como &quot; 192.168.1.1&quot;</li>
-<li>A partir de Windows Vista, puede especificar una dirección IPv6 si el equipo de destino y el equipo desde el que está realizando la conexión ejecutan IPv6.<br/></li>
+<li>A partir Windows Vista, puede especificar una dirección IPv6 si el equipo de destino y el equipo desde el que realiza la conexión ejecutan IPv6.<br/></li>
 </ul>
-Para obtener más información, vea <a href="connecting-to-wmi-on-a-remote-computer.md">conectarse a WMI en un equipo remoto</a> y <a href="ipv6-and-ipv4-support-in-wmi.md">compatibilidad con IPv6 e IPv4 en WMI</a>.<br/> <span data-codelanguage="VisualBasic"></span>
+Para obtener más información, vea <a href="connecting-to-wmi-on-a-remote-computer.md">Conectarse a WMI en un equipo</a> remoto y Compatibilidad con <a href="ipv6-and-ipv4-support-in-wmi.md">IPv6 e IPv4 en WMI.</a><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -89,7 +89,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -106,13 +106,13 @@ Get-WmiObject -Class Win32_Process -ComputerName $strComputer -Namespace &quot;r
 </td>
 </tr>
 <tr class="even">
-<td>... ¿ejecutar un script de WMI en credenciales alternativas?</td>
-<td><p>Use el método <a href="swbemlocator-connectserver.md"><strong>SWbemLocator. ConnectServer</strong></a> o <a href="/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver"><strong>IWbemLocator:: ConnectServer</strong></a> en C++ e incluya el nombre de usuario y la contraseña adecuados. No se pueden cambiar las credenciales al conectarse al equipo local. Para obtener más información, vea <a href="creating-a-wmi-script.md">crear un script WMI</a> y <a href="connecting-to-wmi-on-a-remote-computer.md">conectarse a WMI en un equipo remoto</a>.</p>
+<td>... ¿Ejecutar un script WMI con credenciales alternativas?</td>
+<td><p>Use el <a href="swbemlocator-connectserver.md"><strong>método SWbemLocator.ConnectServer</strong></a> o <a href="/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver"><strong>IWbemLocator::ConnectServer</strong></a> en C++, e incluya el nombre de usuario y la contraseña adecuados. No puede cambiar las credenciales al conectarse al equipo local. Para obtener más información, vea <a href="creating-a-wmi-script.md">Crear un script WMI y</a> <a href="connecting-to-wmi-on-a-remote-computer.md">Conectarse a WMI en un equipo remoto.</a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -134,7 +134,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -164,13 +164,13 @@ Get-WmiObject -Class Win32_Process -ComputerName $strComputer -Namespace &quot;r
 
 <dl> <dt>
 
-[Tareas de WMI para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
+[Tareas wmi para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Ejemplos de aplicaciones de C++ de WMI](wmi-c---application-examples.md)
+[Ejemplos de aplicaciones wmi de C++](wmi-c---application-examples.md)
 </dt> <dt>
 
-[ScriptCenter de TechNet](https://www.microsoft.com/technet/scriptcenter)
+[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>
 
  

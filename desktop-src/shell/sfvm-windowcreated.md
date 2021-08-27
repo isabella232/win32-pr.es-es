@@ -1,6 +1,6 @@
 ---
-description: 'Notifica al objeto de devolución de llamada que se está creando la ventana vista de carpetas. Usado por IShellFolderViewCB:: MessageSFVCB.'
-title: Mensaje de SFVM_WINDOWCREATED (ShlObj. h)
+description: Notifica al objeto de devolución de llamada que se está creando la ventana de vista de carpetas. Usado por IShellFolderViewCB::MessageSFVCB.
+title: SFVM_WINDOWCREATED mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: b57eb1d8-a897-4358-a855-89e152035eff
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 9d545feadecdaadbf776f94e653df8b71150ac05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d09957e1164d5caacbddc23c9a72cb33ef80ffa156dd0538c0be1e24f192018
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111165"
 ---
-# <a name="sfvm_windowcreated-message"></a>SFVM \_ WINDOWCREATED
+# <a name="sfvm_windowcreated-message"></a>SFVM \_ WINDOWCREATED message
 
-Notifica al objeto de devolución de llamada que se está creando la ventana vista de carpetas. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Notifica al objeto de devolución de llamada que se está creando la ventana de vista de carpetas. Usado por [**IShellFolderViewCB::MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
 
 ```C++
@@ -39,10 +39,10 @@ SFVM_WINDOWCREATED
 
 <dl> <dt>
 
-*hwndView* \[ de\]
+*hwndView* \[ En\]
 </dt> <dd>
 
-Identificador de la ventana de la vista de carpetas.
+Identificador de ventana de la vista de carpeta.
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Identificador de la ventana de la vista de carpetas.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

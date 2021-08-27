@@ -1,7 +1,7 @@
 ---
-description: El método CheckVideoType comprueba si un formato de videoinfo especificado es compatible con el formato de presentación.
+description: El método CheckVideoType comprueba si un formato VIDEOINFO especificado es compatible con el formato de presentación.
 ms.assetid: a8593c7d-bde0-4c44-b450-10c129dd0007
-title: Método CImageDisplay. CheckVideoType (Winutil. h)
+title: Método CImageDisplay.CheckVideoType (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7db198270804053993352c4969b924fa7edc891f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de6389e22868fe529b5038fe6be1403748dd5a01d22a242c41f9e6c6b8f86808
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108495"
 ---
-# <a name="cimagedisplaycheckvideotype-method"></a>CImageDisplay. CheckVideoType, método
+# <a name="cimagedisplaycheckvideotype-method"></a>Método CImageDisplay.CheckVideoType
 
-El `CheckVideoType` método comprueba si un formato de [**videoinfo**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) especificado es compatible con el formato de presentación.
+El `CheckVideoType` método comprueba si un formato [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) especificado es compatible con el formato de presentación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT CheckVideoType(
 *pInput* 
 </dt> <dd>
 
-Puntero a una estructura de **videoinfo** .
+Puntero a una **estructura VIDEOINFO.**
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Puntero a una estructura de **videoinfo** .
 
 Devuelve S \_ OK si el formato es compatible o E \_ INVALIDARG en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método devuelve S \_ OK si el tipo propuesto se puede mostrar fácilmente bajo la configuración de pantalla actual.
+Este método devuelve S OK si el tipo propuesto \_ se puede mostrar fácilmente en la configuración de presentación actual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Este método devuelve S \_ OK si el tipo propuesto se puede mostrar fácilmente 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Este método devuelve S \_ OK si el tipo propuesto se puede mostrar fácilmente 
 
 <dl> <dt>
 
-[**Clase CImageDisplay**](cimagedisplay.md)
+[**CImageDisplay (clase)**](cimagedisplay.md)
 </dt> </dl>
 
  

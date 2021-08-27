@@ -1,19 +1,19 @@
 ---
-description: Especifica el nivel de calidad de la codificación.
+description: Especifica el nivel de calidad para la codificación.
 ms.assetid: 2c7f3836-2392-47c6-9a56-d5a9b52560ff
-title: Propiedad AVEncCommonQuality (Codecapi. h)
+title: Propiedad AVEncCommonQuality (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a0e69d797f2e26e830158c969c8fcf4ec0b242a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 99202391e919fa1da9028a15a57154834feddd3039160b9b0562a713fe59ddaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104495635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087675"
 ---
 # <a name="avenccommonquality-property"></a>Propiedad AVEncCommonQuality
 
-Especifica el nivel de calidad de la codificación.
+Especifica el nivel de calidad para la codificación.
 
 Esta propiedad es de lectura y escritura.
 
@@ -27,22 +27,22 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad tiene el siguiente intervalo.
+El valor de esta propiedad tiene el intervalo siguiente.
 
 
 
 | Value | Descripción                           |
 |-------|---------------------------------------|
-| 0     | Calidad mínima, menor tamaño de salida. |
-| 100   | Calidad máxima, mayor tamaño de salida.  |
+| 0     | Calidad mínima, tamaño de salida más pequeño. |
+| 100   | Calidad máxima, tamaño de salida mayor.  |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad controla el nivel de calidad cuando el codificador no usa una velocidad de bits restringida. La propiedad [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md) determina si la velocidad de bits está restringida.
+Esta propiedad controla el nivel de calidad cuando el codificador no usa una velocidad de bits restringida. La [**propiedad AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md) determina si la velocidad de bits está restringida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Esta propiedad controla el nivel de calidad cuando el codificador no usa una vel
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Esta propiedad controla el nivel de calidad cuando el codificador no usa una vel
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  
