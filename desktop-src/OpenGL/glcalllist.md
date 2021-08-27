@@ -1,9 +1,9 @@
 ---
-title: función glCallList (GL. h)
+title: Función glCallList (Gl.h)
 description: La función glCallList ejecuta una lista de visualización.
 ms.assetid: 9373d32e-b11e-4a80-8713-da2c1d8d9368
 keywords:
-- glCallList (función) OpenGL
+- Función glCallList OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0d356adc5d16ceb0ea10e3834d8dbb98abed2b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 67805ff50eb4566e8a2a186c10229f944f4003baaef1274e9d4f52dd3b9c2a02
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082125"
 ---
-# <a name="glcalllist-function"></a>glCallList función)
+# <a name="glcalllist-function"></a>Función glCallList
 
-La función **glCallList** ejecuta una lista de visualización.
+La **función glCallList** ejecuta una lista de visualización.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ void WINAPI glCallList(
 *list* 
 </dt> <dd>
 
-El nombre entero de la lista de visualización que se va a ejecutar.
+Nombre entero de la lista para mostrar que se va a ejecutar.
 
 </dd> </dl>
 
@@ -51,19 +51,19 @@ El nombre entero de la lista de visualización que se va a ejecutar.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al invocar la función **glCallList** se inicia la ejecución de la lista de visualización con nombre. Las funciones guardadas en la lista de visualización se ejecutan en orden, como si se hubieran llamado sin usar una lista de visualización. Si *List* no se ha definido como una lista de visualización, se omite **glCallList** .
+La invocación de la **función glCallList** comienza la ejecución de la lista de visualización con nombre. Las funciones guardadas en la lista de visualización se ejecutan en orden, como si las llamara sin usar una lista de visualización. Si *list* no se ha definido como una lista para mostrar, **glCallList** se omite.
 
-La función **glCallList** puede aparecer dentro de una lista de visualización. Para evitar la posibilidad de que se produzca una recursividad infinita como resultado de la llamada a otras listas, se coloca un límite en el nivel de anidamiento de las listas de visualización durante la ejecución de la lista de visualización. Este límite es al menos 64, sin embargo, depende de la implementación.
+La **función glCallList** puede aparecer dentro de una lista de visualización. Para evitar la posibilidad de recursividad infinita resultante de mostrar listas que se llaman entre sí, se coloca un límite en el nivel de anidamiento de las listas de presentación durante la ejecución de la lista de presentación. Sin embargo, este límite es al menos 64, pero depende de la implementación.
 
-El estado de OpenGL no se guarda y se restaura a través de una llamada a **glCallList**. Por lo tanto, los cambios realizados en el estado de OpenGL durante la ejecución de una lista de visualización permanecen después de que se complete la ejecución de la lista de visualización. Para conservar el estado de OpenGL en todas las llamadas de **glCallList** , use [**glPushAttrib**](glpushattrib.md), [**glPopAttrib**](glpopattrib.md), [**glPushMatrix**](glpushmatrix.md)y [**glPopMatrix**](glpopmatrix.md).
+El estado OpenGL no se guarda y restaura en una llamada a **glCallList.** Por lo tanto, los cambios realizados en el estado OpenGL durante la ejecución de una lista de visualización permanecen una vez completada la ejecución de la lista de presentación. Para conservar el estado de OpenGL entre llamadas **glCallList,** use [**glPushAttrib**](glpushattrib.md), [**glPopAttrib,**](glpopattrib.md) [**glPushMatrix**](glpushmatrix.md)y [**glPopMatrix.**](glpopmatrix.md)
 
-Puede ejecutar listas de visualización entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md), siempre que la lista de visualización incluya solo las funciones que se permiten en este intervalo.
+Puede ejecutar listas de visualización entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md), siempre que la lista de presentación incluya solo las funciones permitidas en este intervalo.
 
-Las siguientes funciones recuperan información relacionada con **glCallList**:
+Las siguientes funciones recuperan información relacionada **con glCallList**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ \_ anidamiento de lista Max de contabilidad \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAX LIST \_ \_ NESTING
 
 [**glIsList**](glislist.md)
 
@@ -75,8 +75,8 @@ Las siguientes funciones recuperan información relacionada con **glCallList**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

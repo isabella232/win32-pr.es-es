@@ -1,28 +1,28 @@
 ---
-title: Cómo usar controles de List-View virtual
-description: En este tema se muestra cómo trabajar con controles de vista de lista virtual.
+title: Cómo usar controles de List-View virtuales
+description: En este tema se muestra cómo trabajar con controles de vista de lista virtuales.
 ms.assetid: DA32D7B3-5FDB-4D73-9A72-0D4EEB2A0C4F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3baf5e37d0d4f6da0cdf596dd8ba3c71e852a99
-ms.sourcegitcommit: e584514ced7396dde55e58501c8c8a872229acc4
+ms.openlocfilehash: f6ed847d7cb8a41e4cb1c255290ff660eb278bcd99126605a2874c52b279e694
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "105660025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059705"
 ---
-# <a name="how-to-use-virtual-list-view-controls"></a>Cómo usar controles de List-View virtual
+# <a name="how-to-use-virtual-list-view-controls"></a>Cómo usar controles de List-View virtuales
 
-En este tema se muestra cómo trabajar con controles de vista de lista virtual. Los ejemplos de código de C++ que lo acompañan muestran cómo procesar los mensajes de notificación del control de vista de lista virtual, cómo optimizar la memoria caché y cómo recuperar un elemento de la memoria caché.
+En este tema se muestra cómo trabajar con controles de vista de lista virtuales. Los ejemplos de código de C++ que lo acompañan muestran cómo procesar mensajes de notificación de control de vista de lista virtual, cómo optimizar la memoria caché y cómo recuperar un elemento de la memoria caché.
 
--   [Aspectos que debe saber](#what-you-need-to-know)
--   [Procesar códigos de notificación de control de List-View virtual](#process-virtual-list-view-control-notification-codes)
--   [Optimizar la memoria caché](#optimize-the-cache)
+-   [Lo que necesita saber](#what-you-need-to-know)
+-   [Procesar códigos de notificación List-View control virtual](#process-virtual-list-view-control-notification-codes)
+-   [Optimización de la caché](#optimize-the-cache)
 -   [Recuperar un elemento de la memoria caché](#retrieve-an-item-from-the-cache)
 -   [Temas relacionados](#related-topics)
 
 > [!Note]  
-> En el código de ejemplo de esta sección se supone que la memoria caché es una matriz asignada dinámicamente de estructuras definidas por la aplicación. La estructura se define en el siguiente ejemplo de código de C++.
+> En el código de ejemplo de esta sección se da por supuesto que la memoria caché es una matriz asignada dinámicamente de estructuras definidas por la aplicación. La estructura se define en el siguiente ejemplo de código de C++.
 
  
 
@@ -41,24 +41,24 @@ struct RndItem
 
 
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="process-virtual-list-view-control-notification-codes"></a>Procesar códigos de notificación de control de List-View virtual
+### <a name="process-virtual-list-view-control-notification-codes"></a>Procesar códigos de notificación List-View control virtual
 
-Además de los códigos de notificación enviados por otros controles de vista de lista, los controles de vista de lista virtual también pueden enviar los códigos de notificación [LVN \_ ODCACHEHINT](lvn-odcachehint.md) y [**LVN \_ ODFINDITEM**](lvn-odfinditem.md) .
+Además de los códigos de notificación enviados por otros controles de vista de lista, los controles de vista de lista virtual también pueden enviar los códigos de notificación [LVN \_ ODCACHEHINT](lvn-odcachehint.md) y [**LVN \_ ODFINDITEM.**](lvn-odfinditem.md)
 
-Esta función definida por la aplicación controla los mensajes de notificación que se envían normalmente desde un control de vista de lista virtual.
+Esta función definida por la aplicación controla los mensajes de notificación que normalmente se envían desde un control de vista de lista virtual.
 
 
 ```C++
@@ -183,11 +183,11 @@ LRESULT OnNotify(HWND hwnd, NMHDR* pnmhdr)
 
 
 
-### <a name="optimize-the-cache"></a>Optimizar la memoria caché
+### <a name="optimize-the-cache"></a>Optimización de la caché
 
-Un control de vista de lista virtual envía un mensaje de notificación de [LVN \_ ODCACHEHINT](lvn-odcachehint.md) cuando cambia el contenido de su área de presentación. El mensaje contiene información sobre el intervalo de elementos que se va a almacenar en caché. Tras recibir el mensaje de notificación, la aplicación debe estar preparada para cargar la memoria caché con información del elemento para el intervalo solicitado, de modo que la información estará disponible fácilmente cuando se envíe un mensaje de notificación [ \_ GETDISPINFO de LVN](lvn-getdispinfo.md) .
+Un control de vista de lista virtual envía un [mensaje de notificación \_ LVN ODCACHEHINT](lvn-odcachehint.md) cuando el contenido de su área de presentación ha cambiado. El mensaje contiene información sobre el intervalo de elementos que se almacenarán en caché. Tras recibir el mensaje de notificación, la aplicación debe estar preparada para cargar la memoria caché con información de elementos para el intervalo solicitado, de modo que la información esté disponible fácilmente cuando se envíe un mensaje de notificación [ \_ GETDISPINFO de LVN.](lvn-getdispinfo.md)
 
-En el siguiente ejemplo de código de C++, la función definida por la aplicación acepta el intervalo de elementos de la memoria caché que envía un control de vista de lista virtual. Realiza una comprobación para determinar que el intervalo de elementos solicitado no se ha almacenado en la memoria caché y, a continuación, asigna la memoria global necesaria y rellena la memoria caché si es necesario.
+En el siguiente ejemplo de código de C++, la función definida por la aplicación acepta el intervalo de elementos de la memoria caché que envía un control de vista de lista virtual. Realiza una comprobación para determinar que el intervalo de elementos solicitado no está ya almacenado en caché y, a continuación, asigna la memoria global necesaria y rellena la memoria caché si es necesario.
 
 
 ```C++
@@ -294,7 +294,7 @@ void PrepCache(int iFrom, int iTo)
 
 ### <a name="retrieve-an-item-from-the-cache"></a>Recuperar un elemento de la memoria caché
 
-Esta función de ejemplo acepta dos parámetros, la dirección de la estructura definida por la aplicación y un valor entero que representa el índice del elemento de la lista. Comprueba el valor de índice para detectar si el elemento deseado está almacenado en caché. Si es así, el puntero que se pasó a la función se establece en una ubicación en la memoria caché. Si el elemento no está en la memoria caché principal o final, la información del elemento debe encontrarse manualmente.
+Esta función de ejemplo acepta dos parámetros, la dirección de la estructura definida por la aplicación y un valor entero que representa el índice del elemento de la lista. Comprueba el valor del índice para detectar si el elemento deseado está almacenado en caché. Si es así, el puntero que se pasó a la función se establece en una ubicación de la memoria caché. Si el elemento no está en la caché principal o final, la información del elemento debe encontrarse manualmente.
 
 
 ```C++
@@ -330,7 +330,7 @@ void RetrieveItem( RndItem * prndItem, int index )
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para obtener una lista de los mensajes de ventana procesados por un control de vista de lista, vea [Default List-View Message Processing](listview-message-processing.md).
 
@@ -340,13 +340,13 @@ Para obtener una lista de los mensajes de ventana procesados por un control de v
 
 <dl> <dt>
 
-[Referencia de control de vista de lista](bumper-list-view-list-view-control-reference.md)
+[Referencia del control List-View](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Acerca de los controles List-View](list-view-controls-overview.md)
+[Acerca de List-View controles](list-view-controls-overview.md)
 </dt> <dt>
 
-[Usar controles List-View](using-list-view-controls.md)
+[Uso de List-View controles](using-list-view-controls.md)
 </dt> </dl>
 
  

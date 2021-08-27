@@ -1,9 +1,9 @@
 ---
-title: función glClearDepth (GL. h)
-description: La función glClearDepth especifica el valor sin cifrar para el búfer de profundidad.
+title: Función glClearDepth (Gl.h)
+description: La función glClearDepth especifica el valor clear para el búfer de profundidad.
 ms.assetid: 8e26ae78-edc1-4201-a0db-d5bc8ae6dc82
 keywords:
-- glClearDepth (función) OpenGL
+- Función glClearDepth OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cf968c7ae172bf4ce354c84b2071d62304327ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0ed8efc8585da717349705bc13db920a707e16a66def2b026a3237b778f78575
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082065"
 ---
-# <a name="glcleardepth-function"></a>glClearDepth función)
+# <a name="glcleardepth-function"></a>función glClearDepth
 
-La función **glClearDepth** especifica el valor sin cifrar para el búfer de profundidad.
+La **función glClearDepth** especifica el valor clear para el búfer de profundidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,10 +40,10 @@ void WINAPI glClearDepth(
 
 <dl> <dt>
 
-*amplia* 
+*Profundidad* 
 </dt> <dd>
 
-Valor de profundidad que se usa cuando se borra el búfer de profundidad.
+Valor de profundidad utilizado cuando se borra el búfer de profundidad.
 
 </dd> </dl>
 
@@ -53,23 +53,23 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glClearDepth** especifica el valor de profundidad usado por [**glClear**](glclear.md) para borrar el búfer de profundidad. Los valores especificados por **glClearDepth** se fijan en el intervalo \[ 0, 1 \] .
+La **función glClearDepth** especifica el valor de profundidad utilizado por [**glClear**](glclear.md) para borrar el búfer de profundidad. Los valores especificados **por glClearDepth** se fijan en el \[ intervalo 0,1 \] .
 
-La siguiente función recupera información relacionada con la función **glClearDepth** :
+La función siguiente recupera información relacionada con la **función glClearDepth:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con valor de profundidad de GL de argumento \_ \_ \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ DEPTH CLEAR \_ \_ VALUE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ La siguiente función recupera información relacionada con la función **glClea
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

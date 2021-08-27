@@ -3,7 +3,7 @@ title: TDM_SET_ELEMENT_TEXT mensaje (Commctrl.h)
 description: 'TDM_SET_ELEMENT_TEXT mensaje: actualiza un elemento de texto en un cuadro de diálogo de tarea.'
 ms.assetid: e3f15805-5d48-4549-9959-69ec01345e57
 keywords:
-- TDM_SET_ELEMENT_TEXT de mensajes controles de Windows
+- TDM_SET_ELEMENT_TEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6d0c8830a6d8a1057ab283a9e096434a6184151
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7bb0f81867bcff4fd5f7d533c156c8af17d0f4a761b6f8560aa584a85c62b7c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060775"
 ---
 # <a name="tdm_set_element_text-message"></a>Mensaje DE \_ TEXTO DEL ELEMENTO SET \_ \_ de TDM
 
@@ -36,7 +36,7 @@ Indica el elemento que se debe actualizar. (Para obtener una ilustración, vea [
 
 
 
-| Valor                                                                                                                                                                                           | Significado                          |
+| Value                                                                                                                                                                                           | Significado                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | <span id="TDE_CONTENT"></span><span id="tde_content"></span><dl> <dt>**CONTENIDO \_ de TDE**</dt> </dl>                                         | Contenido.<br/>              |
 | <span id="TDE_EXPANDED_INFORMATION"></span><span id="tde_expanded_information"></span><dl> <dt>**INFORMACIÓN EXPANDIDA DE TDE \_ \_**</dt> </dl> | Información expandida.<br/> |
@@ -79,19 +79,19 @@ SendMessage(hwnd, TDM_SET_ELEMENT_TEXT, (WPARAM)TDE_FOOTER, (LPARAM)L"New footer
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**TEXTO DEL ELEMENTO UPDATE DE TDM \_ \_ \_**](tdm-update-element-text.md)
+[**TEXTO DEL \_ ELEMENTO UPDATE \_ DE TDM \_**](tdm-update-element-text.md)
 </dt> </dl>
 
  

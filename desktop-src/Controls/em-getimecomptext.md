@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETIMECOMPTEXT (RichEdit. h)
-description: Recupera el texto de composición del editor de métodos de entrada (IME).
+title: EM_GETIMECOMPTEXT mensaje (Richedit.h)
+description: Recupera el texto de composición del Editor de métodos de entrada (IME).
 ms.assetid: 1516305c-5f87-4ae0-97db-8709c71abacc
 keywords:
-- EM_GETIMECOMPTEXT controles de mensajes de Windows
+- EM_GETIMECOMPTEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 834c55d6b5e40de7dcacfeb3e2d0c2e0878a0f3a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5dd915f037275d428df37ca02a206b936a63bfd2f6ac8fbb605d1573b9535789
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049075"
 ---
-# <a name="em_getimecomptext-message"></a>\_Mensaje GETIMECOMPTEXT em
+# <a name="em_getimecomptext-message"></a>Mensaje \_ EM GETIMECOMPTEXT
 
-Recupera el texto de composición del editor de métodos de entrada (IME).
+Recupera el texto de composición del Editor de métodos de entrada (IME).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Recupera el texto de composición del editor de métodos de entrada (IME).
 *wParam* 
 </dt> <dd>
 
-Estructura [**IMECOMPTEXT**](/windows/desktop/api/Richedit/ns-richedit-imecomptext) .
+Estructura [**IMECOMPTEXT.**](/windows/desktop/api/Richedit/ns-richedit-imecomptext)
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Búfer que recibe el texto de la composición. El tamaño de este búfer está incluido en el miembro **CB** de la estructura *wParam* .
+Búfer que recibe el texto de composición. El tamaño de este búfer se encuentra en el miembro **cb** de la *estructura wParam.*
 
 </dd> </dl>
 
@@ -47,11 +47,11 @@ Búfer que recibe el texto de la composición. El tamaño de este búfer está i
 
 Si se realiza correctamente, el valor devuelto es el número de caracteres Unicode copiados en el búfer. De lo contrario, es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este mensaje solo toma cadenas Unicode.
 
-**Advertencia de seguridad:** Asegúrese de tener un búfer suficiente para el tamaño de la entrada. Si no lo hace, podrían producirse problemas en la aplicación.
+**Advertencia de seguridad:** Asegúrese de tener un búfer suficiente para el tamaño de la entrada. Si no lo hace, podría causar problemas en la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Este mensaje solo toma cadenas Unicode.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP1 \[\]<br/>                                  |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP1 \[\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

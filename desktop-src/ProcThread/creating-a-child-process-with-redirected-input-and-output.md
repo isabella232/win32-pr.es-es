@@ -1,25 +1,25 @@
 ---
-description: En el ejemplo de este tema se muestra cómo crear un proceso secundario con la función CreateProcess desde un proceso de consola.
+description: En el ejemplo de este tema se muestra cómo crear un proceso secundario mediante la función CreateProcess desde un proceso de consola.
 ms.assetid: a4e37069-2b3a-4b6d-9cfd-eb1700ab3bc6
 title: Creación de un proceso secundario con entrada y salida redirigidas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af3a8e922c37baf20dae2d3a26b8cd0705e4c1a5
-ms.sourcegitcommit: 005593a756bad634e35a57e4fea9167566d4a550
+ms.openlocfilehash: 5ec7c7761bd73386285a4e911be13ff3ab46a479cb78442b1d8b14ac9e1b1368
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "104279701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081445"
 ---
 # <a name="creating-a-child-process-with-redirected-input-and-output"></a>Creación de un proceso secundario con entrada y salida redirigidas
 
-En el ejemplo de este tema se muestra cómo crear un proceso secundario con la función [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) desde un proceso de consola. También se muestra una técnica para usar canalizaciones anónimas para redirigir los identificadores de entrada y salida estándar del proceso secundario. Tenga en cuenta que las canalizaciones con nombre también se pueden utilizar para redirigir la e/s del proceso.
+En el ejemplo de este tema se muestra cómo crear un proceso secundario mediante la [**función CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) desde un proceso de consola. También se muestra una técnica para usar canalizaciones anónimas para redirigir los identificadores estándar de entrada y salida del proceso secundario. Tenga en cuenta que las canalizaciones con nombre también se pueden usar para redirigir la E/S del proceso.
 
-La función [**CreatePipe**](/windows/desktop/api/namedpipeapi/nf-namedpipeapi-createpipe) utiliza la estructura de [**\_ atributos de seguridad**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) para crear identificadores heredables de los extremos de lectura y escritura de dos canalizaciones. El extremo de lectura de una canalización actúa como entrada estándar para el proceso secundario y el extremo de escritura de la otra canalización es la salida estándar del proceso secundario. Estos identificadores de canalización se especifican en la estructura [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) , que los convierte en los identificadores estándar heredados por el proceso secundario.
+La [**función CreatePipe**](/windows/desktop/api/namedpipeapi/nf-namedpipeapi-createpipe) usa la estructura [**ATRIBUTOS DE \_ SEGURIDAD**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) para crear identificadores heredables para los extremos de lectura y escritura de dos canalizaciones. El extremo de lectura de una canalización actúa como entrada estándar para el proceso secundario y el final de escritura de la otra canalización es la salida estándar del proceso secundario. Estos identificadores de canalización se especifican en la [**estructura STARTUPINFO,**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) lo que los convierte en los identificadores estándar heredados por el proceso secundario.
 
-El proceso primario usa los extremos opuestos de estas dos canalizaciones para escribir en la entrada del proceso secundario y leer la salida del proceso secundario. Tal y como se especifica en la estructura de [**\_ atributos de seguridad**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) , estos identificadores también se pueden heredar. Sin embargo, estos identificadores no se deben heredar. Por lo tanto, antes de crear el proceso secundario, el proceso primario utiliza la función [**SetHandleInformation**](/windows/desktop/api/handleapi/nf-handleapi-sethandleinformation) para asegurarse de que no se puede heredar el identificador de escritura para la entrada estándar del proceso secundario y el identificador de lectura de la salida estándar del proceso secundario. Para obtener más información, consulte [canalizaciones](/windows/desktop/ipc/pipes).
+El proceso primario usa los extremos opuestos de estas dos canalizaciones para escribir en la entrada del proceso secundario y leer desde la salida del proceso secundario. Como se especifica en la estructura [**ATRIBUTOS \_ DE SEGURIDAD,**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) estos identificadores también son heredables. Sin embargo, estos identificadores no se deben heredar. Por lo tanto, antes de crear el proceso secundario, el proceso primario usa la función [**SetHandleInformation**](/windows/desktop/api/handleapi/nf-handleapi-sethandleinformation) para asegurarse de que no se pueden heredar el identificador de escritura para la entrada estándar del proceso secundario y el identificador de lectura para la salida estándar del proceso secundario. Para obtener más información, vea [Canalizaciones](/windows/desktop/ipc/pipes).
 
-A continuación se encuentra el código para el proceso primario. Toma un único argumento de la línea de comandos: el nombre de un archivo de texto.
+A continuación se muestra el código para el proceso primario. Toma un único argumento de línea de comandos: el nombre de un archivo de texto.
 
 
 ```C++
@@ -252,7 +252,7 @@ void ErrorExit(PTSTR lpszFunction)
 
 
 
-A continuación se encuentra el código para el proceso secundario. Usa los identificadores heredados para STDIN y STDOUT para tener acceso a la canalización creada por el elemento primario. El proceso primario lee el archivo de entrada y escribe la información en una canalización. El elemento secundario recibe texto a través de la canalización mediante STDIN y escribe en la canalización mediante STDOUT. El elemento primario lee desde el extremo de lectura de la canalización y muestra la información a su STDOUT.
+A continuación se muestra el código para el proceso secundario. Usa los identificadores heredados de STDIN y STDOUT para acceder a la canalización creada por el elemento primario. El proceso primario lee de su archivo de entrada y escribe la información en una canalización. El elemento secundario recibe texto a través de la canalización mediante STDIN y escribe en la canalización mediante STDOUT. El elemento primario lee desde el final de lectura de la canalización y muestra la información a su STDOUT.
 
 
 ```C++

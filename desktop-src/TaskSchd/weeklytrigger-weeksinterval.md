@@ -1,11 +1,11 @@
 ---
-title: Propiedad WeeklyTrigger. WeeksInterval
-description: En el caso de scripting, obtiene o establece el intervalo entre las semanas de la programación.
+title: WeeklyTrigger.WeeksInterval, propiedad
+description: Para el scripting, obtiene o establece el intervalo entre las semanas de la programación.
 ms.assetid: 7992dee2-1725-4325-9fe9-eaff84fa5adc
 keywords:
-- Programador de tareas de la propiedad WeeksInterval
-- Programador de tareas de la propiedad WeeksInterval, objeto WeeklyTrigger
-- Programador de tareas de objeto WeeklyTrigger, propiedad WeeksInterval
+- Propiedades weeksInterval Programador de tareas
+- Propiedad WeeksInterval Programador de tareas objeto , WeeklyTrigger
+- Objeto WeeklyTrigger Programador de tareas propiedad , WeeksInterval
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4668b68d0b3f83e096284db35df799a63eb677b8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 547ebc8617d625df3dd0e8dba167bb60682185dfb13897c49524d1894789c933
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080265"
 ---
-# <a name="weeklytriggerweeksinterval-property"></a>Propiedad WeeklyTrigger. WeeksInterval
+# <a name="weeklytriggerweeksinterval-property"></a>WeeklyTrigger.WeeksInterval, propiedad
 
-En el caso de scripting, obtiene o establece el intervalo entre las semanas de la programación.
+Para el scripting, obtiene o establece el intervalo entre las semanas de la programación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -40,11 +40,11 @@ WeeklyTrigger.WeeksInterval As short
 
 Intervalo entre las semanas de la programación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un intervalo de 1 genera una programación semanal. Un intervalo de 2 genera una programación de cada semana.
+Un intervalo de 1 genera una programación semanal. Un intervalo de 2 genera una programación semanal cada dos semanas.
 
-Al leer o escribir su propio XML para una tarea, el intervalo de una programación semanal se especifica mediante el elemento [**WeeksInterval**](taskschedulerschema-weeksinterval-weeklyscheduletype-element.md) del esquema de programador de tareas.
+Al leer o escribir su propio XML para una tarea, el intervalo de una programación semanal se especifica mediante el [**elemento WeeksInterval**](taskschedulerschema-weeksinterval-weeklyscheduletype-element.md) del esquema Programador de tareas trabajo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,9 +52,9 @@ Al leer o escribir su propio XML para una tarea, el intervalo de una programaci�
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

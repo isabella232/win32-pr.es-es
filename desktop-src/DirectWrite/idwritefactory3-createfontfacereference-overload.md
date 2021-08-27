@@ -1,9 +1,9 @@
 ---
-title: Métodos de CreateFontFaceReference de IDWriteFactory3 (Dwrite \_ 3. h)
+title: Métodos IDWriteFactory3 CreateFontFaceReference (Dwrite \_ 3.h)
 description: Crea una referencia a una fuente.
 ms.assetid: e4f73eff-84f8-3e86-08b1-aa513fad9a61
 keywords:
-- Métodos de CreateFontFaceReference Direct2D
+- Métodos CreateFontFaceReference de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: ff52c9e8516117932de899b27d9bc4e028c2973e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f11c8a07e31d7136ae54d34ca8f04215b5b4a882cdd5ddd91f6334ba535c335b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051365"
 ---
-# <a name="idwritefactory3createfontfacereference-methods"></a>IDWriteFactory3:: CreateFontFaceReference (métodos)
+# <a name="idwritefactory3createfontfacereference-methods"></a>Métodos IDWriteFactory3::CreateFontFaceReference
 
 Crea una referencia a una fuente.
 
@@ -29,8 +29,8 @@ Crea una referencia a una fuente.
 
 | Método                                                                                                                                                                         | Descripción                                                 |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|
-| [**CreateFontFaceReference (IDWriteFontFile \* , UINT32, DWRITE \_ \_ de fuentes, IDWriteFontFaceReference \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-createfontfacereference(idwritefontfile_uint32_dwrite_font_simulations_idwritefontfacereference))               | Crea una referencia a una fuente a partir de un archivo.<br/>      |
-| [**CreateFontFaceReference (WCHAR const \* , FILETIME const \* , UINT32, DWRITE de \_ fuentes \_ , simulaciones, IDWriteFontFaceReference \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-createfontfacereference(idwritefontfile_uint32_dwrite_font_simulations_idwritefontfacereference)) | Crea una referencia a una fuente dada una ruta de acceso completa.<br/> |
+| [**CreateFontFaceReference (IDWriteFontFile, \* UINT32, DWRITE \_ FONT \_ SIMULATIONS, IDWriteFontFaceReference \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-createfontfacereference(idwritefontfile_uint32_dwrite_font_simulations_idwritefontfacereference))               | Crea una referencia a una fuente según un archivo.<br/>      |
+| [**CreateFontFaceReference (WCHAR const \* , FILETIME const \* , UINT32, DWRITE \_ FONT \_ SIMULATIONS, IDWriteFontFaceReference \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-createfontfacereference(idwritefontfile_uint32_dwrite_font_simulations_idwritefontfacereference)) | Crea una referencia a una fuente dada una ruta de acceso completa.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Crea una referencia a una fuente.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dwrite \_ 3. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dwrite \_ 3.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PBM_GETSTATE (commctrl. h)
+title: PBM_GETSTATE mensaje (Commctrl.h)
 description: Obtiene el estado de la barra de progreso.
 ms.assetid: ff240160-7db6-4711-8d4e-25a77dfba118
 keywords:
-- PBM_GETSTATE controles de mensajes de Windows
+- PBM_GETSTATE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07d4f7029fca46a046545efd1cea8e0eab99c757
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cd157ccb6ab8a1fe4cd4a31bf1f8a033f0e591288338e21cc322a8ac10bfc41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047015"
 ---
-# <a name="pbm_getstate-message"></a>Mensaje de GETSTATE de PBM \_
+# <a name="pbm_getstate-message"></a>Mensaje \_ GETSTATE de PBM
 
 Obtiene el estado de la barra de progreso.
 
@@ -43,9 +43,9 @@ Devuelve el estado actual de la barra de progreso. Uno de los siguientes valores
 
 | Código devuelto                                                                                 | Descripción             |
 |---------------------------------------------------------------------------------------------|-------------------------|
-| <dl> <dt>**PBST \_ normal**</dt> </dl> | En curso.<br/> |
-| <dl> <dt>**\_error PBST**</dt> </dl>  | Error.<br/>       |
-| <dl> <dt>**PBST en \_ pausa**</dt> </dl> | En pausa.<br/>      |
+| <dl> <dt>**PBST \_ NORMAL**</dt> </dl> | En curso.<br/> |
+| <dl> <dt>**PBST \_ ERROR**</dt> </dl>  | Error.<br/>       |
+| <dl> <dt>**PBST \_ EN PAUSA**</dt> </dl> | En pausa.<br/>      |
 
 
 
@@ -57,9 +57,9 @@ Devuelve el estado actual de la barra de progreso. Uno de los siguientes valores
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

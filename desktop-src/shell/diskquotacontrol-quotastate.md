@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: b0766ecf-6e22-4481-a6a7-df873a277bc2
-ms.openlocfilehash: 3580ad47a5ec6a5d0276dc0e30a4a6463aca2fb3
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: cb2117237cd3072163447ee80895cbbb8bb854d7ad4424da83854b28ffa96196
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090635"
 ---
 # <a name="diskquotacontrolquotastate-property"></a>Propiedad DiskQuotaControl.QuotaState
 
@@ -26,7 +26,7 @@ Establece u obtiene el estado de las cuotas de disco del volumen.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```JScript
@@ -56,7 +56,7 @@ Esta propiedad se puede establecer en uno de los valores siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |

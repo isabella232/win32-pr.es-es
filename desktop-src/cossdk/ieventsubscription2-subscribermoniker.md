@@ -14,20 +14,20 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 9496a3046b4bb0e99a88322892e557588a92aab8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cdd783a4e3f8d29d3ffc4ae279602db71c3ee16247ad58c6f23aa10bb3ba5350
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070675"
 ---
-# <a name="ieventsubscription2subscribermoniker-property"></a>IEventSubscription2:: SubscriberMoniker (propiedad)
+# <a name="ieventsubscription2subscribermoniker-property"></a>Propiedad IEventSubscription2::SubscriberMoniker
 
 Moniker del suscriptor.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -48,13 +48,13 @@ Cadena de moniker que especifica el suscriptor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, e \_ OUTOFMEMORY, e \_ inesperado, e \_ FAIL y S \_ OK.
+Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED, E \_ FAIL y S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |

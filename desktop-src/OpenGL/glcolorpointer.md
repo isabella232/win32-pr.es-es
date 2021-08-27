@@ -1,9 +1,9 @@
 ---
-title: función glColorPointer (GL. h)
+title: Función glColorPointer (Gl.h)
 description: La función glColorPointer define una matriz de colores.
 ms.assetid: 4d9d05fb-691d-4b71-b079-c42dc7103055
 keywords:
-- glColorPointer (función) OpenGL
+- Función glColorPointer OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9abced52f0d0664e998ad8380e33d43d4af36bcc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8e08f046cc1bd41293a076f36389506320e85025e415b264bed1ed0de14f9a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081715"
 ---
-# <a name="glcolorpointer-function"></a>glColorPointer función)
+# <a name="glcolorpointer-function"></a>Función glColorPointer
 
-La función **glColorPointer** define una matriz de colores.
+La **función glColorPointer** define una matriz de colores.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,25 +46,25 @@ void WINAPI glColorPointer(
 *size* 
 </dt> <dd>
 
-El número de componentes por color. El valor debe ser 3 ó 4.
+Número de componentes por color. El valor debe ser 3 o 4.
 
 </dd> <dt>
 
 *type* 
 </dt> <dd>
 
-El tipo de datos de cada componente de color de una matriz de colores. Los tipos de datos aceptables se especifican con las siguientes constantes: \_ bytes de GL, \_ bytes sin signo de contabilidad general, \_ GL \_ Short, GL \_ sin signo \_ corto, GL \_ int, libro de contabilidad \_ sin signo de contabilidad flotante, \_ GL \_ float o GL \_ doble.
+Tipo de datos de cada componente de color de una matriz de colores. Los tipos de datos aceptables se especifican con las siguientes constantes: GL \_ BYTE, \_ GL UNSIGNED \_ BYTE, GL \_ SHORT, GL \_ UNSIGNED \_ SHORT, GL \_ INT, GL \_ UNSIGNED \_ INT, GL \_ FLOAT o GL \_ DOUBLE.
 
 </dd> <dt>
 
-*STRI* 
+*Paso* 
 </dt> <dd>
 
-Desplazamiento de bytes entre colores consecutivos. Cuando *STRIDE* es cero, los colores se empaquetan estrechamente en la matriz.
+Desplazamiento de bytes entre colores consecutivos. Cuando *stride* es cero, los colores se empaquetan estrechamente en la matriz.
 
 </dd> <dt>
 
-*puntero* 
+*Puntero* 
 </dt> <dd>
 
 Puntero al primer componente del primer elemento de color de una matriz de colores.
@@ -83,35 +83,35 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                              | Significado                                      |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl> | *el tamaño* no era 3 ó 4.<br/>            |
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>  | el *tipo* no era un valor aceptado.<br/> |
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl> | *STRIDE* o *Count* era negativo.<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl> | *el* tamaño no era 3 o 4.<br/>            |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>  | *Type* no era un valor aceptado.<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl> | *stride* o *count era* negativo.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glColorPointer** especifica la ubicación y el formato de datos de una matriz de componentes de color que se va a utilizar al representar. El parámetro *STRIDE* determina el desplazamiento de bytes de un color a la siguiente, lo que permite el empaquetado de atributos de vértice en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, el almacenamiento de atributos de vértices en una sola matriz puede ser más eficaz que el uso de matrices independientes.
+La **función glColorPointer** especifica la ubicación y el formato de datos de una matriz de componentes de color que se usará al representar. El *parámetro stride* determina el desplazamiento de bytes de un color al siguiente, lo que habilita el empaquetado de atributos de vértice en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, el almacenamiento de atributos de vértice en una sola matriz puede ser más eficaz que el uso de matrices independientes.
 
-La matriz de colores se habilita especificando la \_ \_ constante de matriz de colores GL con [**glEnableClientState**](glenableclientstate.md). La llamada a [**glArrayElement**](glarrayelement.md), [**glDrawElements**](gldrawelements.md)o [**glDrawArrays**](gldrawarrays.md) usa la matriz de colores que, por tanto, está habilitada. De forma predeterminada, la matriz de colores está deshabilitada. Las llamadas a **glColorPointer** no se pueden escribir en las listas de visualización.
+Habilitó la matriz de colores especificando la constante GL \_ COLOR \_ ARRAY con [**glEnableClientState**](glenableclientstate.md). Al [**llamar a glArrayElement**](glarrayelement.md), [**glDrawElements**](gldrawelements.md)o [**glDrawArrays**](gldrawarrays.md) se usa la matriz de colores que está habilitada. De forma predeterminada, la matriz de colores está deshabilitada. Las **llamadas a glColorPointer** no se pueden especificar en las listas para mostrar.
 
-Cuando se especifica una matriz de colores mediante **glColorPointer**, los valores de todos los parámetros de la matriz de colores de la función se guardan en un estado de cliente y se pueden almacenar en caché los elementos de matriz estáticos. Dado que los parámetros de la matriz de colores están en un estado de cliente, [**glPushAttrib**](glpushattrib.md) y [**glPopAttrib**](glpopattrib.md) no guardan ni restauran los valores de los parámetros.
+Cuando se especifica una matriz de colores mediante **glColorPointer**, los valores de todos los parámetros de la matriz de colores de la función se guardan en un estado del lado cliente y se pueden almacenar en caché elementos de matriz estáticos. Dado que los parámetros de la matriz de colores están en estado de cliente, [**glPushAttrib**](glpushattrib.md) y [**glPopAttrib**](glpopattrib.md) no guardarán ni restaurarán los valores de los parámetros.
 
-Aunque si se especifica la matriz de colores en pares [**glBegin**](glbegin.md) y [**glend**](glend.md) no se genera un error, los resultados son indefinidos.
+Aunque la especificación de la matriz de colores dentro de los pares [**glBegin**](glbegin.md) y [**glBegin**](glend.md) no genera un error, los resultados son indefinidos.
 
-Las siguientes funciones recuperan información relacionada con la función **glColorPointer** :
+Las siguientes funciones recuperan información relacionada con **la función glColorPointer:**
 
-[**glIsEnabled**](glisenabled.md) con el argumento \_ matriz de color de GL \_
+[**glIsEnabled con**](glisenabled.md) el argumento GL \_ COLOR \_ ARRAY
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argumento de \_ \_ tamaño de matriz de color de GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ COLOR ARRAY \_ \_ SIZE
 
-**glGet** con el argumento \_ \_ tipo de matriz de color GL \_
+**glGet con** el argumento GL \_ COLOR ARRAY \_ \_ TYPE
 
-**glGet** con argumento \_ intervalo de \_ matriz de color de GL \_
+**glGet con** el argumento GL \_ COLOR ARRAY \_ \_ STRIDE
 
-**glGet** con el argumento \_ \_ número de matriz de color de GL \_
+**glGet con** el argumento GL \_ COLOR ARRAY \_ \_ COUNT
 
-[**glGetPointerv**](glgetpointerv.md) con el argumento de \_ matriz de color de GL \_ \_
+[**glGetPointerv con el**](glgetpointerv.md) argumento GL \_ COLOR ARRAY \_ \_ POINTER
 
 ## <a name="requirements"></a>Requisitos
 
@@ -121,8 +121,8 @@ Las siguientes funciones recuperan información relacionada con la función **gl
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

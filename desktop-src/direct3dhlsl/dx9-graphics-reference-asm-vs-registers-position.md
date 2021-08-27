@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 89470bb920db7c612b21cefb2c44c2c89d48ce28
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cda82431990ed3ea545adfcc5e6eb2801be0607d8bac45aa1bcd8c0e121f3d68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103776621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023905"
 ---
 # <a name="position-register"></a>Registro de posición
 
@@ -22,29 +22,29 @@ Este registro de salida del sombreador de vértices contiene datos de posición 
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ SW | 2 \_ x | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ sw | 2 \_ x | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|-------|------|------|-------|
 | Registro de posición      | x    | x    | x     | x    | x    | x     |
 
 
 
- 
+ 
 
-Un registro consta de propiedades que determinan el comportamiento de cada registro.
+Un registro consta de propiedades que determinan cómo se comporta cada registro.
 
 
 
 | Propiedad        | Descripción |
 |-----------------|-------------|
-| Nombre            | oPos        |
-| Count           | 1 Vector    |
-| Permisos de e/s | De solo escritura. |
+| Nombre            | Opos        |
+| Count           | 1 vector    |
+| Permisos de E/S | De solo escritura. |
 
 
 
- 
+ 
 
-El valor es la posición en el espacio de recorte homogéneo. Este valor debe escribirse en el sombreador de vértices.
+El valor es la posición en el espacio de recorte homogéneo. El sombreador de vértices debe escribir este valor.
 
 Ejemplo
 
@@ -69,9 +69,9 @@ Ejemplo
 [Registros del sombreador de vértices](dx9-graphics-reference-asm-vs-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

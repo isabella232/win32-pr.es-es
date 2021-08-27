@@ -1,45 +1,45 @@
 ---
-description: Ventajas de DMOs
+description: Ventajas de las DDO
 ms.assetid: 7ff3fd9c-9423-4915-8ce2-22783ed455fb
-title: Ventajas de DMOs
+title: Ventajas de las DDO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 972b4f49ee19b271cbee970401933b6c7d6bd3ca
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8b13a9ef7f91446d03732b935648b689ab65a33c9d10dcfca26051d9284404db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104274770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103375"
 ---
-# <a name="benefits-of-dmos"></a>Ventajas de DMOs
+# <a name="benefits-of-dmos"></a>Ventajas de las DDO
 
-DMOs ofrecen las siguientes ventajas:
+Las DDO ofrecen las siguientes ventajas:
 
--   Suelen ser más pequeñas y más sencillas que los filtros de DirectShow, ya que admiten menos funcionalidad.
--   Son más flexibles que los filtros de DirectShow porque no requieren un gráfico de filtros. Puede usarlos con DirectShow cuando necesite los servicios que proporciona DirectShow, como la sincronización, la conexión inteligente, el control automático del flujo de datos y la administración de subprocesos. Los clientes que no necesitan estos servicios pueden acceder a DMOs directamente.
--   DMOs siempre realiza el procesamiento de datos sincrónicos, lo que elimina muchos de los problemas de subprocesos que debe tener en cuenta si escribe un filtro.
--   A diferencia de los códecs ACM y VCM tradicionales, los DMOs se basan en el modelo de objetos componentes (COM), por lo que se pueden extender a través de **QueryInterface**.
--   DMOs admite un modelo de streaming más generalizado que los códecs ACM o VCM. Al igual que los filtros DirectShow, DMOs puede admitir varias entradas y varias salidas.
+-   Por lo general, son más pequeños y más sencillos que DirectShow, porque admiten menos funcionalidad.
+-   Son más flexibles que DirectShow filtros porque no requieren un gráfico de filtros. Puede usarlos con DirectShow cuando necesite los servicios que proporciona DirectShow, como la sincronización, la conexión inteligente, el control automático del flujo de datos y la administración de subprocesos. Los clientes que no necesitan estos servicios pueden acceder directamente a las DDO.
+-   Las DDO siempre realizan un procesamiento de datos sincrónico, lo que elimina muchos de los problemas de subprocesos que debe tener en cuenta si escribe un filtro.
+-   A diferencia de los códecs ACM y VCM tradicionales, las DDO se basan en el modelo de objetos componentes (COM), por lo que se pueden extender a través **de QueryInterface**.
+-   Las DDO admiten un modelo de streaming más generalizado que los códecs ACM o VCM. Al DirectShow filtros, las DDO pueden admitir varias entradas y varias salidas.
 
-Por estos motivos, ahora se recomienda DMOs como solución para escribir codificadores, descodificadores y efectos de audio. También son posibles muchos otros escenarios, en función de las necesidades de la aplicación.
+Por estos motivos, ahora se recomiendan las DDO como solución para escribir codificadores, descodificadores y efectos de audio. Muchos otros escenarios también son posibles, en función de las necesidades de la aplicación.
 
-Diferencias entre DMOs y filtros de DirectShow
+Diferencias entre las DDO y DirectShow filtros
 
-Los filtros de DirectShow no funcionan fuera de un gráfico de filtros de DirectShow. En DirectShow, el administrador de gráficos de filtros media entre la aplicación y los filtros. Los filtros de DirectShow realizan la mayor parte del trabajo necesario para transmitir datos, entre los que se incluyen:
+DirectShow filtros no pueden funcionar fuera de un gráfico DirectShow filtro. En DirectShow, filter Graph Manager media entre la aplicación y los filtros. DirectShow filtros hacen la mayor parte del trabajo necesario para transmitir datos, incluidos:
 
 -   Asignación de búferes.
--   Negociar tipos de medios y conexiones con otros filtros.
--   Insertar datos a través del gráfico de filtro.
--   Envío de eventos al administrador de gráficos de filtro.
--   Sincronización de varios subprocesos.
+-   Negociación de tipos de medios y conexiones a otros filtros.
+-   Insertar datos a través del gráfico de filtros.
+-   Envío de eventos al administrador de Graph filtro.
+-   Sincronizar varios subprocesos.
 
-En cambio, una DMO no realiza ninguna de estas acciones. En su lugar, estos tipos de tareas son responsabilidad del cliente mediante DMO. El cliente asigna búferes, los rellena con datos y los entrega a DMO. DMO procesa los datos y el cliente recupera los búferes de salida resultantes.
+Por el contrario, DMO realiza ninguna de estas cosas. En su lugar, estos tipos de tareas son responsabilidad del cliente mediante el DMO. El cliente asigna búferes, los rellena con datos y los entrega al DMO. El DMO procesa los datos y el cliente recupera los búferes de salida resultantes.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Acerca de DMOs](about-dmos.md)
+[Acerca de las DDO](about-dmos.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Representa las opciones de la impresora.
+description: Representa las opciones de impresora.
 ms.assetid: 7cc3d10c-8bc2-4899-b083-63d802ee16e7
-title: Estructura de PRINTER_OPTIONS (winspool. h)
+title: PRINTER_OPTIONS estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 37c45277f0a7e30bc94b2d23ffa27de0092a7164
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7eb7be8443c6a49c670e0573a79831a7aacfd88087f6ab19de632223b8588c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091755"
 ---
-# <a name="printer_options-structure"></a>Estructura de opciones de impresora \_
+# <a name="printer_options-structure"></a>PRINTER \_ OPTIONS (estructura)
 
-Representa las opciones de la impresora.
+Representa las opciones de impresora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ typedef struct _PRINTER_OPTIONS {
 **cbSize**
 </dt> <dd>
 
-Tamaño de la estructura **de \_ Opciones de impresora** .
+Tamaño de la estructura **OPCIONES \_ DE IMPRESORA.**
 
 </dd> <dt>
 
 **dwFlags**
 </dt> <dd>
 
-Conjunto de [**marcas de \_ opción \_ de impresora**](printer-option-flags.md) que especifica cómo otras funciones utilizarán el identificador de una impresora devuelta por [**OpenPrinter2**](openprinter2.md) .
+Conjunto de [**MARCAS DE OPCIÓN \_ \_ DE**](printer-option-flags.md) IMPRESORA que especifica cómo otras funciones usarán el identificador de una impresora devuelta por [**OpenPrinter2.**](openprinter2.md)
 
 </dd> </dl>
 
@@ -58,28 +58,28 @@ Conjunto de [**marcas de \_ opción \_ de impresora**](printer-option-flags.md) 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
+| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**OpenPrinter2**](openprinter2.md)
 </dt> <dt>
 
-[**\_marcas de opciones de impresora \_**](printer-option-flags.md)
+[**MARCAS DE \_ OPCIÓN \_ DE IMPRESORA**](printer-option-flags.md)
 </dt> </dl>
 
  

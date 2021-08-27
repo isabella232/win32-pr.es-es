@@ -1,21 +1,21 @@
 ---
-description: El método get recupera el valor de una propiedad de calidad de flujo especificada.
+description: El método Get recupera el valor de una propiedad de calidad de flujo determinada.
 ms.assetid: a8b5b8c7-47c9-4561-be96-af8416d854dc
-title: 'ITStreamQualityControl:: get (método) (Ipmsp. h)'
+title: Método ITStreamQualityControl::Get (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6758678dfacc8e0fe169189beaa8e890e801c907
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c1a82a448320115664ab0664c2f7d8cde9f8049c7ee2cb86ccf7e46f856ceafe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080505"
 ---
-# <a name="itstreamqualitycontrolget-method"></a>ITStreamQualityControl:: get (método)
+# <a name="itstreamqualitycontrolget-method"></a>ItStreamQualityControl::Get (método)
 
-\[ Este método no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Este método no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Get** recupera el valor de una propiedad de [**calidad de flujo**](streamqualityproperty.md)especificada.
+El **método Get** recupera el valor de una propiedad de calidad de flujo [**determinada.**](streamqualityproperty.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,24 +34,24 @@ HRESULT Get(
 
 <dl> <dt>
 
-*Propiedad* \[ de\]
+*Propiedad* \[ En\]
 </dt> <dd>
 
-Miembro de la enumeración [**StreamQualityProperty**](streamqualityproperty.md) .
+Miembro de la [**enumeración StreamQualityProperty.**](streamqualityproperty.md)
 
 </dd> <dt>
 
-*plValue* \[ enuncia\]
+*plValue* \[ out\]
 </dt> <dd>
 
-Valor de la *propiedad* de entrada.
+Valor de la propiedad *de entrada*.
 
 </dd> <dt>
 
-*plFlags* \[ enuncia\]
+*plFlags* \[ out\]
 </dt> <dd>
 
-Valor de la enumeración [**TAPIControlFlags**](tapicontrolflags.md) que indica cómo se controla el valor de la *propiedad* .
+Valor de la [**enumeración TAPIControlFlags**](tapicontrolflags.md) que indica cómo se controla el *valor* property.
 
 </dd> </dl>
 
@@ -63,8 +63,8 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 
 
 
@@ -76,9 +76,9 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,1<br/>                                                         |
-| Encabezado<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                         |
+| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

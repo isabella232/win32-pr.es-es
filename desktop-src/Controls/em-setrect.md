@@ -3,7 +3,7 @@ title: EM_SETRECT mensaje (Winuser.h)
 description: 'EM_SETRECT mensaje: establece el rectángulo de formato de un control de edición multilínea.'
 ms.assetid: 4f576e94-3bd3-4416-a960-b7f22da963ea
 keywords:
-- EM_SETRECT mensaje Controles de Windows
+- EM_SETRECT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 042428a236b8e9a23f03cdcceaf5d76eb977efd8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ea68ba0fd599b39f0344a423e86a87d097dc2df389fd8370e30a573a05d3013
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048205"
 ---
-# <a name="em_setrect-message"></a>Mensaje \_ EM SETRECT
+# <a name="em_setrect-message"></a>Mensaje \_ DE EM SETRECT
 
-Establece el [rectángulo de formato de](about-edit-controls.md) un control de edición multilínea. El rectángulo de formato es el rectángulo delimitador en el que el control dibuja el texto. El rectángulo de limitación es independiente del tamaño de la ventana de control de edición.
+Establece el [rectángulo de formato de](about-edit-controls.md) un control de edición multilínea. El rectángulo de formato es el rectángulo de limitación en el que el control dibuja el texto. El rectángulo de limitación es independiente del tamaño de la ventana de control de edición.
 
-Este mensaje solo lo procesan los controles de edición multilínea. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
+Este mensaje solo se procesa mediante controles de edición multilínea. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -36,7 +36,7 @@ Este mensaje solo lo procesan los controles de edición multilínea. Puede envia
 
 **Rich Edit 2.0 y versiones posteriores:** Indica si *lParam especifica* coordenadas absolutas o relativas. Un valor de cero indica coordenadas absolutas. Un valor de 1 indica desplazamientos relativos al rectángulo de formato actual. (Los desplazamientos pueden ser positivos o negativos).
 
-**Editar controles y Edición enriqueceda 1.0:** Este parámetro no se usa y debe ser cero.
+**Editar controles y Rich Edit 1.0:** Este parámetro no se usa y debe ser cero.
 
 </dd> <dt>
 
@@ -53,11 +53,11 @@ Este mensaje no devuelve un valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Establecer *lParam* en **NULL** no tiene ningún efecto si se instala un dispositivo táctil o si **EM \_ SETRECT** se envía desde un subproceso que tiene instalado un enlace (vea [**SetWindowsHookEx**](/windows/desktop/api/winuser/nf-winuser-setwindowshookexa)). En estos casos, *lParam* debe contener un puntero válido a una [**estructura RECT.**](/previous-versions//dd162897(v=vs.85))
+Establecer *lParam* en **NULL** no tiene ningún efecto si se instala un dispositivo táctil o si **EM \_ SETRECT** se envía desde un subproceso que tiene un enlace instalado (vea [**SetWindowsHookEx**](/windows/desktop/api/winuser/nf-winuser-setwindowshookexa)). En estos casos, *lParam* debe contener un puntero válido a una [**estructura RECT.**](/previous-versions//dd162897(v=vs.85))
 
 El **mensaje \_ EM SETRECT** hace que se vuelva a dibujar el texto del control de edición. Para cambiar el tamaño del rectángulo de formato sin volver a dibujar el texto, use el mensaje [**\_ EM SETRECTNP.**](em-setrectnp.md)
 
-Cuando se crea por primera vez un control de edición, el rectángulo de formato se establece en un tamaño predeterminado. Puede usar el mensaje **EM \_ SETRECT para** que el rectángulo de formato sea mayor o menor que la ventana de control de edición.
+Cuando se crea por primera vez un control de edición, el rectángulo de formato se establece en un tamaño predeterminado. Puede usar el mensaje **\_ SETRECT** de EM para que el rectángulo de formato sea mayor o menor que la ventana de control de edición.
 
 Si el control de edición no tiene una barra de desplazamiento horizontal y el rectángulo de formato está establecido en mayor que la ventana de control de edición, las líneas de texto que superan el ancho de la ventana de control de edición (pero más pequeñas que el ancho del rectángulo de formato) se recortan en lugar de ajustarse.
 
@@ -69,15 +69,15 @@ Si el control de edición contiene un borde, el tamaño del borde reduce el rect
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

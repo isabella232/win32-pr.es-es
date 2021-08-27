@@ -7,17 +7,17 @@ keywords:
 - multimedia, funciones de temporizador
 - entrada multimedia, funciones de temporizador
 - temporizadores multimedia, funciones
-- temporizadores, funciones
-- referencia para temporizadores, funciones
-- Referencia del temporizador, funciones
+- timers,functions
+- referencia de temporizadores,funciones
+- referencia del temporizador, funciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e03546531702c101cca9cab137432951fa00c38d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3c35825753483b5664e9c328b37c95ff07c2229950868407a98cec7b9ea07a14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038655"
 ---
 # <a name="multimedia-timer-functions"></a>Funciones de temporizador multimedia
 
@@ -39,6 +39,6 @@ Las siguientes funciones se usan con temporizadores multimedia.
 [Referencia del temporizador multimedia](multimedia-timer-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

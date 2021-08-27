@@ -4,15 +4,15 @@ description: Recupera un objeto que admite la interfaz ITSRemoteProgram2.
 ms.assetid: fabdc933-c941-487f-9e49-c20a39e0c86e
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RemoteProgram2
-- Propiedad RemoteProgram2 Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad RemoteProgram2
-- Propiedad RemoteProgram2 Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad RemoteProgram2
-- Propiedad RemoteProgram2 Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad RemoteProgram2
-- Propiedad RemoteProgram2 Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient10, propiedad RemoteProgram2
+- Propiedad RemoteProgram2 Servicios de Escritorio remoto
+- Propiedad RemoteProgram2 Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad RemoteProgram2
+- Propiedad RemoteProgram2 Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad RemoteProgram2
+- Propiedad RemoteProgram2 Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad RemoteProgram2
+- Propiedad RemoteProgram2 Servicios de Escritorio remoto interfaz , IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad RemoteProgram2
 topic_type:
 - apiref
 api_name:
@@ -30,16 +30,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1572aada1384a7edfe88b198826050927ae3cff5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a88e0ee2aff2a2804468e3ceba589f20221fe5ca75fea0bbcc37a423edb23959
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080045"
 ---
-# <a name="imsrdpclient7remoteprogram2-property"></a>IMsRdpClient7:: RemoteProgram2 (propiedad)
+# <a name="imsrdpclient7remoteprogram2-property"></a>Propiedad IMsRdpClient7::RemoteProgram2
 
-Recupera un objeto que admite la interfaz [**ITSRemoteProgram2**](itsremoteprogram2.md) .
+Recupera un objeto que admite la [**interfaz ITSRemoteProgram2.**](itsremoteprogram2.md)
 
 Esta propiedad es de solo lectura.
 
@@ -56,19 +56,19 @@ HRESULT get_RemoteProgram2(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Dirección de un puntero de interfaz [**ITSRemoteProgram2**](itsremoteprogram2.md) que recibe el objeto.
+Dirección de un puntero [**de interfaz ITSRemoteProgram2**](itsremoteprogram2.md) que recibe el objeto .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                      |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient7 se define como b2a5b5ce-3461-444A-91d4-add26d070638<br/>       |
+| IID<br/>                      | IID IMsRdpClient7 se define como \_ b2a5b5ce-3461-444a-91d4-add26d070638<br/>       |
 
 
 

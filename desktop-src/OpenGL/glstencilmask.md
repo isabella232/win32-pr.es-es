@@ -1,9 +1,9 @@
 ---
-title: función glStencilMask (GL. h)
-description: La función glStencilMask controla la escritura de bits individuales en los planos de la galería de símbolos.
+title: Función glStencilMask (Gl.h)
+description: La función glStencilMask controla la escritura de bits individuales en los planos de galería de símbolos.
 ms.assetid: c586f9db-bad5-4f06-a194-a8d979842d0c
 keywords:
-- glStencilMask (función) OpenGL
+- Función glStencilMask OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e63790fa30e88abbde6e1ba47e624c6caf2dcfc4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9eb2e0af89bf2c66e7fa73cf6e4ace8bc8272e8ea581e17bab17754164d3f068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036525"
 ---
-# <a name="glstencilmask-function"></a>glStencilMask función)
+# <a name="glstencilmask-function"></a>Función glStencilMask
 
-La función **glStencilMask** controla la escritura de bits individuales en los planos de la galería de símbolos.
+La **función glStencilMask** controla la escritura de bits individuales en los planos de galería de símbolos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ void WINAPI glStencilMask(
 *mask* 
 </dt> <dd>
 
-Máscara de bits para habilitar y deshabilitar la escritura de bits individuales en los planos de la galería de símbolos. Inicialmente, la máscara es todas.
+Máscara de bits para habilitar y deshabilitar la escritura de bits individuales en los planos de galería de símbolos. Inicialmente, la máscara es todas.
 
 </dd> </dl>
 
@@ -53,25 +53,25 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glStencilMask** controla la escritura de bits individuales en los planos de la galería de símbolos. Los *n* bits menos significativos de la *máscara*, donde *n* es el número de bits en el búfer de estarcido, especifique una máscara. Siempre que aparezca una en la máscara, el bit correspondiente en el búfer de estarcido se convierte en grabable. Cuando aparece un cero, el bit está protegido contra escritura. Inicialmente, todos los bits están habilitados para escritura.
+La **función glStencilMask** controla la escritura de bits individuales en los planos de galería de símbolos. Los n *bits de máscara* menos significativos, donde *n* es el número de bits del búfer de galería de símbolos, especifique una máscara.  Siempre que aparezca uno en la máscara, se puede escribir el bit correspondiente en el búfer de la galería de símbolos. Cuando aparece un cero, el bit está protegido por escritura. Inicialmente, todos los bits están habilitados para la escritura.
 
-Las siguientes funciones recuperan información relacionada con **glStencilMask**:
+Las funciones siguientes recuperan información relacionada con **glStencilMask**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL de la \_ Galería de símbolos \_ WRITEMASK
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ STENCIL \_ WRITEMASK
 
-glGet con el argumento \_ bits de estarcido GL \_
+glGet con el argumento GL \_ STENCIL \_ BITS
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ glGet con el argumento \_ bits de estarcido GL \_
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

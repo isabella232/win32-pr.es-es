@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PGM_SETBUTTONSIZE (commctrl. h)
-description: Establece el tamaño del botón actual para el control de paginación. Puede enviar este mensaje explícitamente o utilizar la macro SetButtonSize de buscapersonas \_ .
+title: PGM_SETBUTTONSIZE mensaje (Commctrl.h)
+description: Establece el tamaño del botón actual para el control de paginación. Puede enviar este mensaje explícitamente o usar la macro Pager \_ SetButtonSize.
 ms.assetid: b31960f8-87c2-4209-8213-df75ac883e11
 keywords:
-- PGM_SETBUTTONSIZE controles de mensajes de Windows
+- PGM_SETBUTTONSIZE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ecf8c164ed960675c1a68be36acfe0eff40f972f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3b120ed4bd6b7090621e09dd24b9e6a23b037fb5aed83e7ac6fc43254393330e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046795"
 ---
-# <a name="pgm_setbuttonsize-message"></a>\_Mensaje SETBUTTONSIZE PGM
+# <a name="pgm_setbuttonsize-message"></a>Mensaje \_ SETBUTTONSIZE de PGM
 
-Establece el tamaño del botón actual para el control de paginación. Puede enviar este mensaje explícitamente o utilizar la macro [**\_ SetButtonSize de buscapersonas**](/windows/desktop/api/Commctrl/nf-commctrl-pager_setbuttonsize) .
+Establece el tamaño del botón actual para el control de paginación. Puede enviar este mensaje explícitamente o usar la macro [**Pager \_ SetButtonSize.**](/windows/desktop/api/Commctrl/nf-commctrl-pager_setbuttonsize)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -41,13 +41,13 @@ Valor de tipo **int** que contiene el nuevo tamaño de botón, en píxeles.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **int** que contiene el tamaño de botón anterior, en píxeles.
+Devuelve un **valor int** que contiene el tamaño del botón anterior, en píxeles.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el control de paginación tiene el estilo [**págs \_ horizontal**](pager-control-styles.md) , el tamaño del botón determina el ancho de los botones de paginación. Si el control de paginación tiene el estilo [**págs \_ Vert**](pager-control-styles.md) , el tamaño del botón determina el alto de los botones de paginación. De forma predeterminada, el control de paginación establece su tamaño de botón en tres cuartos del ancho de la barra de desplazamiento.
+Si el control de paginación tiene el estilo [**\_ HORZ de PGS,**](pager-control-styles.md) el tamaño del botón determina el ancho de los botones de paginación. Si el control de paginación tiene el estilo [**\_ VERT de PGS,**](pager-control-styles.md) el tamaño del botón determina el alto de los botones de paginación. De forma predeterminada, el control de paginación establece su tamaño de botón en tres cuartos del ancho de la barra de desplazamiento.
 
-Hay un tamaño mínimo para el botón de buscapersonas; actualmente, 12 píxeles. Sin embargo, esto puede cambiar, por lo que no debe depender de este valor.
+Hay un tamaño mínimo para el botón de paginación, actualmente 12 píxeles. Sin embargo, esto puede cambiar, por lo que no debe depender de este valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Hay un tamaño mínimo para el botón de buscapersonas; actualmente, 12 píxeles
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Hay un tamaño mínimo para el botón de buscapersonas; actualmente, 12 píxeles
 
 <dl> <dt>
 
-[**\_GETBUTTONSIZE PGM**](pgm-getbuttonsize.md)
+[**PGM \_ GETBUTTONSIZE**](pgm-getbuttonsize.md)
 </dt> </dl>
 
  

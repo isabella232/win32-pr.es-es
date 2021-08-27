@@ -4,14 +4,14 @@ ms.assetid: 3e342219-341e-49a2-9f8f-4188dd7bf719
 title: AM_RATE_ResetOnTimeDisc propiedad (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e867bff1f344e80ffd06c9c40276515f2cd4920c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c42b8e9d158f644d9e630555d96bf4d06e4ea9ef3cddced67742c057d0ab3859
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079525"
 ---
-# <a name="am_rate_resetontimedisc-property"></a>Propiedad \_ \_ ResetOnTimeDisc de AM RATE
+# <a name="am_rate_resetontimedisc-property"></a>Propiedad \_ \_ RESETOnTimeDisc de AM RATE
 
 Se aplica a Windows Vista y versiones posteriores.
 
@@ -37,7 +37,7 @@ Esta propiedad admite cambios de velocidad sin problemas. Si el valor de esta pr
 
 Para recuperar la marca \_ AM SAMPLE \_ TIMEDISCONTINUITY, llame a [**IMediaSample2::GetProperties**](/windows/desktop/api/Strmif/nf-strmif-imediasample2-getproperties) en el ejemplo. La marca se establece en el **miembro dwSampleFlags** de la [**estructura PROPIEDADES DE AM \_ \_ SAMPLE2.**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties)
 
-Para obtener más información, vea [Mejoras de reproducción de DVD en Windows Vista.](dvd-playback-enhancements-in-windows-vista.md)
+Para obtener más información, vea [Dvd Playback Enhancements in Windows Vista](dvd-playback-enhancements-in-windows-vista.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ Para obtener más información, vea [Mejoras de reproducción de DVD en Windows 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: El IME lo envía a una aplicación para notificar a la aplicación de una versión de clave y mantener el orden de los mensajes. Una ventana recibe este mensaje a través de su función WindowProc.
+description: El IME envía a una aplicación para notificar a la aplicación una versión de clave y para mantener el orden de los mensajes. Una ventana recibe este mensaje a través de su función WindowProc.
 ms.assetid: 652f951f-4e9f-407c-844c-b250b6a9e6f5
-title: Mensaje de WM_IME_KEYUP (Winuser. h)
+title: WM_IME_KEYUP mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e0eb6c6701510a373573ff6d85d5b50a8541b4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f65d80876643cc27136223c112c1e045bc797adbd0bf160adda1c3cea894767e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102075"
 ---
-# <a name="wm_ime_keyup-message"></a>\_Mensaje KEYUP del IME de WM \_
+# <a name="wm_ime_keyup-message"></a>Mensaje KEYUP de WM \_ IME \_
 
-El IME lo envía a una aplicación para notificar a la aplicación de una versión de clave y mantener el orden de los mensajes. Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+El IME envía a una aplicación para notificar a la aplicación una versión de clave y para mantener el orden de los mensajes. Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,24 +31,24 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador de la ventana.
+Identificador a ventana.
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Código de tecla virtual de la clave.
+Código de clave virtual de la clave.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Recuento de repeticiones, código de recorrido, marca de clave extendida, código de contexto, marca de estado de clave anterior y marca de estado de transición, como se muestra a continuación.
+Recuento de repeticiones, código de examen, marca de clave extendida, código de contexto, marca de estado de clave anterior y marca de estado de transición, como se muestra a continuación.
 
 
 
@@ -57,7 +57,7 @@ Recuento de repeticiones, código de recorrido, marca de clave extendida, códig
 | 0-15  | Recuento de repeticiones. Este valor siempre es 1.                                       |
 | 16-23 | Examinar código.                                                                  |
 | 24    | Clave extendida. Este valor es 1 si es una clave extendida. De lo contrario, es 0. |
-| 25-28 | No se utiliza.                                                                   |
+| 25-28 | No se usa.                                                                   |
 | 29    | Código de contexto. Este valor siempre es 0.                                       |
 | 30    | Estado de clave anterior. Este valor siempre es 1.                                 |
 | 31    | Estado de transición. Este valor siempre es 1.                                   |
@@ -72,9 +72,9 @@ Recuento de repeticiones, código de recorrido, marca de clave extendida, códig
 
 Una aplicación debe devolver 0 si procesa este mensaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación puede procesar este mensaje o pasarlo a la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)  para generar un mensaje [**de \_ KEYUP de WM**](../inputdev/wm-keyup.md) coincidente.
+Una aplicación puede procesar este mensaje o pasarlo a la [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para generar un [**mensaje KEYUP de WM \_ correspondiente.**](../inputdev/wm-keyup.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Una aplicación puede procesar este mensaje o pasarlo a la función [**DefWindow
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ Una aplicación puede procesar este mensaje o pasarlo a la función [**DefWindow
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Mensajes del administrador de métodos de entrada](input-method-manager-messages.md)
+[Mensajes del Administrador de métodos de entrada](input-method-manager-messages.md)
 </dt> </dl>
 
  

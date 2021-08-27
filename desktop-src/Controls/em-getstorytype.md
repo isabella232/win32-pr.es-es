@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETSTORYTYPE (RichEdit. h)
+title: EM_GETSTORYTYPE mensaje (Richedit.h)
 description: Obtiene el tipo de caso.
 ms.assetid: 06D87AA1-5AA3-4235-AC1D-045CE9975384
 keywords:
-- EM_GETSTORYTYPE controles de mensajes de Windows
+- EM_GETSTORYTYPE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fed85183f292bd1c69e3bbebdadb4b38f9f3bdc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e4e6d501fffca857e1e283f2678c1b42e5d3d12e587e51a3a58585041489f8b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048785"
 ---
-# <a name="em_getstorytype-message"></a>\_Mensaje GETSTORYTYPE em
+# <a name="em_getstorytype-message"></a>Mensaje EM \_ GETSTORYTYPE
 
 Obtiene el tipo de caso.
 
@@ -46,13 +46,13 @@ Obtiene el tipo de caso.
 *lParam* 
 </dt> <dd>
 
-Sector debe ser 0.
+Reservado; debe ser 0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el tipo de caso, que puede ser un valor personalizado definido por el cliente, o uno de los valores siguientes:
+Devuelve el tipo de caso, que puede ser un valor personalizado definido por el cliente o uno de los siguientes valores:
 
 <dl> <dt>
 
@@ -107,9 +107,9 @@ Devuelve el tipo de caso, que puede ser un valor personalizado definido por el c
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -117,10 +117,10 @@ Devuelve el tipo de caso, que puede ser un valor personalizado definido por el c
 
 <dl> <dt>
 
-[**\_SETSTORYTYPE em**](em-setstorytype.md)
+[**EM \_ SETSTORYTYPE**](em-setstorytype.md)
 </dt> <dt>
 
-[**ITextStoryRanges:: Item**](/windows/desktop/api/Tom/nf-tom-itextstoryranges-item)
+[**ITextStoryRanges::Item**](/windows/desktop/api/Tom/nf-tom-itextstoryranges-item)
 </dt> </dl>
 
  

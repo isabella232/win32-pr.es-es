@@ -1,17 +1,17 @@
 ---
 description: Define un grupo que contiene un conjunto de contenido agrupado en una nota de diario.
 ms.assetid: e2561be1-03ce-41f7-9ad4-197d75411c48
-title: Grupo contentgroup
+title: Grupo de contenido
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02e4291da1912c43674871c06fb803e1936f7178
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: c0085cc52a8fc29d3a51f4d1e1c8f42128b63db9e166a7a1c436dc15bff70a36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009015"
 ---
-# <a name="contentgroup-group"></a>Grupo contentgroup
+# <a name="contentgroup-group"></a>Grupo de contenido
 
 Define un grupo que contiene un conjunto de contenido agrupado en una nota de diario.
 
@@ -46,7 +46,7 @@ Define un grupo que contiene un conjunto de contenido agrupado en una nota de di
 
 [**Imagen**](docimage-element.md)
 
-[**Marca**](flag-element.md)
+[**Bandera**](flag-element.md)
 
 ## <a name="attributes"></a>Atributos
 

@@ -1,35 +1,35 @@
 ---
-description: Establece el límite máximo &\# 0034; depósito de fugas&\# 0034; parámetros (vea la sección comentarios) para codificar un archivo de Windows Media. Estos parámetros se usan para la velocidad de bits máxima. Establezca este atributo mediante la interfaz IMFASFStreamConfig.
+description: Establece el valor máximo &\# 0034;leaky bucket&\# 0034; parámetros (consulte Comentarios) para codificar un archivo Windows Media. Estos parámetros se usan para la velocidad de bits máxima. Establezca este atributo mediante la interfaz IMFASFStreamConfig.
 ms.assetid: 422d6d1b-4d29-4156-877b-8dc3bcb7580f
-title: MF_ASFSTREAMCONFIG_LEAKYBUCKET2 atributo (Wmcontainer. h)
+title: MF_ASFSTREAMCONFIG_LEAKYBUCKET2 atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94c4cca3252d543d35bef37d70dcb612c24df6ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a540cab766cbd6a6a7246139d0e19e12c89e5ed837d40cdc3e10d9589f72ebe5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060845"
 ---
-# <a name="mf_asfstreamconfig_leakybucket2-attribute"></a>\_ \_ Atributo LEAKYBUCKET2 de MF ASFSTREAMCONFIG
+# <a name="mf_asfstreamconfig_leakybucket2-attribute"></a>Atributo MF \_ ASFSTREAMCONFIG \_ LEAKYBUCKET2
 
-Establece los parámetros de límite máximo de "depósito de fugas" (vea la sección comentarios) para codificar un archivo de Windows Media. Estos parámetros se usan para la velocidad de bits máxima. Establezca este atributo mediante la interfaz [**IMFASFStreamConfig**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig) .
+Establece los parámetros máximos del "cubo de fugas" (consulte Comentarios) para codificar un Windows multimedia. Estos parámetros se usan para la velocidad de bits máxima. Establezca este atributo mediante la interfaz [**IMFASFStreamConfig.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig)
 
 ## <a name="data-type"></a>Tipo de datos
 
 Byte array
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de este atributo es una matriz de tres **DWORD** s, en el orden siguiente:
+El valor de este atributo es una matriz de tres **DWORD,** en el orden siguiente:
 
 -   Velocidad de bits, en bits por segundo.
--   Ventana de búfer, en milisegundos.
--   Llenado inicial del búfer, en bytes.
+-   Ventana búfer, en milisegundos.
+-   Integridad inicial del búfer, en bytes.
 
-Para obtener más información sobre el concepto de depósito con fugas, vea el tema [modelo de búfer de depósitos con fugas](the-leaky-bucket-buffer-model.md) en la documentación del SDK de Windows Media Format.
+Para obtener más información sobre el concepto de cubo de pérdida, vea el tema [The Leaky Bucket Buffer Model](the-leaky-bucket-buffer-model.md) en la documentación del SDK Windows Media Format.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -47,16 +47,16 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos ASF](asf-attributes.md)
+[Atributos de ASF](asf-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**ATTRIBUTEAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**ATTRIBUTEAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**MF \_ ASFSTREAMCONFIG \_ LEAKYBUCKET1**](mf-asfstreamconfig-leakybucket1-attribute.md)

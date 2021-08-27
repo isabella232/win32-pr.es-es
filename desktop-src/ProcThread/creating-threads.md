@@ -4,16 +4,16 @@ ms.assetid: eb0cc3c0-14f2-4913-a592-4ba3eaf67002
 title: Crear subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: befd6c00cadb6758d076ad6c4d0fe940cf855f89
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 5dee74cb81c886fe05d07a0970f7d8946d123d92810e6f22dd094e1d8d00466a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081435"
 ---
 # <a name="creating-threads"></a>Crear subprocesos
 
-La [**función CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) crea un nuevo subproceso para un proceso. El subproceso de creación debe especificar la dirección inicial del código que se va a ejecutar el nuevo subproceso. Normalmente, la dirección inicial es el nombre de una función definida en el código del programa (para obtener más información, vea [*ThreadProc*](/previous-versions/windows/desktop/legacy/ms686736(v=vs.85))). Esta función toma un único parámetro y devuelve un **valor DWORD.** Un proceso puede tener varios subprocesos ejecutando simultáneamente la misma función.
+La [**función CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) crea un nuevo subproceso para un proceso. El subproceso de creación debe especificar la dirección inicial del código que va a ejecutar el nuevo subproceso. Normalmente, la dirección inicial es el nombre de una función definida en el código del programa (para obtener más información, vea [*ThreadProc*](/previous-versions/windows/desktop/legacy/ms686736(v=vs.85))). Esta función toma un único parámetro y devuelve un **valor DWORD.** Un proceso puede tener varios subprocesos ejecutando simultáneamente la misma función.
 
 A continuación se muestra un ejemplo sencillo que muestra cómo crear un subproceso que ejecuta la función definida localmente, `MyThreadFunction` .
 
@@ -180,7 +180,7 @@ void ErrorHandler(LPTSTR lpszFunction)
 
 
 
-La función evita el uso de la biblioteca en tiempo de ejecución de C (CRT), ya que muchas de sus funciones no son seguras para subprocesos, especialmente si no usa `MyThreadFunction` CRT multiproceso. Si desea usar CRT en una función, use la `ThreadProc` **\_ función beginthreadex** en su lugar.
+La función evita el uso de la biblioteca en tiempo de ejecución de C (CRT), ya que muchas de sus funciones no son seguras para subprocesos, especialmente si no se usa `MyThreadFunction` CRT multiproceso. Si desea usar CRT en una función, use la `ThreadProc` **\_ función beginthreadex** en su lugar.
 
 Es arriesgado pasar la dirección de una variable local si el subproceso de creación sale antes del nuevo subproceso, porque el puntero deja de ser válido. En su lugar, pase un puntero a la memoria asignada dinámicamente o haga que el subproceso de creación espere a que finalice el nuevo subproceso. Los datos también se pueden pasar desde el subproceso de creación al nuevo subproceso mediante variables globales. Con las variables globales, normalmente es necesario sincronizar el acceso mediante varios subprocesos. Para obtener más información sobre la sincronización, vea Sincronizar la ejecución [de varios subprocesos.](synchronizing-execution-of-multiple-threads.md)
 

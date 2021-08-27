@@ -1,19 +1,19 @@
 ---
 title: Funciones de administración del enrutador
-description: Utilice las siguientes funciones al desarrollar software para administrar enrutadores en Windows 2000 y versiones posteriores.
+description: Use las siguientes funciones al desarrollar software para administrar enrutadores en Windows 2000 y versiones posteriores.
 ms.assetid: a61734a7-b171-4e38-8dec-46be9a9c08ee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c07b1b875b3faebf830327291008b437f3d8564f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 31e498dbf55f1723e950003a848c9d8362aa5efc45b2fd709797cb60103c38e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104487814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081235"
 ---
 # <a name="router-administration-functions"></a>Funciones de administración del enrutador
 
-Utilice las siguientes funciones al desarrollar software para administrar enrutadores en Windows 2000 y versiones posteriores.
+Use las siguientes funciones al desarrollar software para administrar enrutadores en Windows 2000 y versiones posteriores.
 
 -   [**MprAdminBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminbufferfree)
 -   [**MprAdminDeregisterConnectionNotification**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminderegisterconnectionnotification)
@@ -59,6 +59,6 @@ Utilice las siguientes funciones al desarrollar software para administrar enruta
 -   [**MprAdminTransportGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmintransportgetinfo)
 -   [**MprAdminTransportSetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmintransportsetinfo)
 
- 
+ 
 
- 
+ 
