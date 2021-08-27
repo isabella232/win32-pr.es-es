@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_DATESERIAL'
+description: 'Más información sobre: JET_DATESERIAL'
 title: JET_DATESERIAL
 TOCTitle: JET_DATESERIAL
 ms:assetid: 8fe0abcc-6e63-4877-a74f-5b7f12dc15a6
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8d2b5e0c7a5bd6352cc28761a20915e16ed550f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62432356ca490f9f5815b9e5478780bde6ef5e92
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811072"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466792"
 ---
 # <a name="jet_dateserial"></a>JET_DATESERIAL
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_dateserial"></a>JET_DATESERIAL
 
-El tipo de datos **JET_DATESERIAL** representa una fecha en días fraccionarios desde el año 100.
+El **JET_DATESERIAL** de datos representa una fecha en fracciones de días desde el año 100.
 
 ```cpp
     typedef double JET_DATESERIAL;
@@ -39,30 +39,13 @@ El tipo de datos **JET_DATESERIAL** representa una fecha en días fraccionarios 
 
 JET_DATESERIAL
 
-Contiene un número de punto flotante de doble precisión (8 bytes). Es el mismo que el tipo de [fecha](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) de C++.
+Contiene un número de punto flotante de precisión doble (8 bytes). Esto es lo mismo que el tipo [DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) de C++.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

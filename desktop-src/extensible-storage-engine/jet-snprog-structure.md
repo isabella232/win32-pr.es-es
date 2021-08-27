@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_SNPROG estructura'
+description: 'Más información sobre: JET_SNPROG structure'
 title: JET_SNPROG estructura
 TOCTitle: JET_SNPROG Structure
 ms:assetid: 8b4224e4-ad4d-440f-8915-8eb43b0885f0
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ab132d203ca2dc81e2ed3c3d8a0ce25c76a2cc71
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 7e5590bb5be133c380e30168cca8d1d693fb6fea
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987738"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466772"
 ---
 # <a name="jet_snprog-structure"></a>JET_SNPROG estructura
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_snprog-structure"></a>JET_SNPROG estructura
 
-La **JET_SNPROG** estructura contiene información sobre el progreso de una operación de ejecución larga. Cuando se llama a la función de devolución de llamada para notificar el estado de la operación y la operación sigue en curso, el último parámetro de la función de devolución de llamada es un puntero a una **JET_SNPROG** estructura.
+La **JET_SNPROG** contiene información sobre el progreso de una operación de ejecución larga. Cuando se llama a la función de devolución de llamada para notificar el estado de la operación y la operación todavía está en curso, el último parámetro de la función de devolución de llamada es un puntero a una **JET_SNPROG** estructura.
 
 ```cpp
     typedef struct {
@@ -56,10 +56,6 @@ Número de unidades de trabajo que deben completarse. Este valor siempre debe se
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
