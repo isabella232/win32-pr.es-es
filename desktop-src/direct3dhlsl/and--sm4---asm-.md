@@ -1,23 +1,23 @@
 ---
-title: y (SM4-ASM)
+title: y (sm4 - asm)
 description: AND bit a bit.
 ms.assetid: 403DA289-E2CF-4736-8882-4131F884F777
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7ec9474322aafda2706502898902d01d0e13143
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: c2b23d473522c2a796201a0edfc3a4b0ec9f047f9e00f359f3879fd80cfc699e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103784979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068555"
 ---
-# <a name="and-sm4---asm"></a>y (SM4-ASM)
+# <a name="and-sm4---asm"></a>y (sm4 - asm)
 
-And bit **a** bit.
+AND bit a **bit.**
 
 
 
-| y dest \[ . Mask \] , src0 \[ . swizzle \] , SRC1 \[ . swizzle\] |
+| y dest \[ .mask \] , src0 \[ .swzzle, \] src1 \[ .swzzle\] |
 |-------------------------------------------------------|
 
 
@@ -28,17 +28,17 @@ And bit **a** bit.
 
 | Elemento                                                            | Descripción                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] la dirección del resultado de la operación.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] el valor de 32 bits en **y** con *SRC1*.<br/>    |
-| <span id="src1"></span><span id="SRC1"></span>*SRC1*<br/> | \[en \] el valor de 32 bits en **y** con *src0*.<br/>    |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] La dirección del resultado de la operación.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] el valor de 32 bits a **AND** con *src1*.<br/>    |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] el valor de 32 bits a **AND** con *src0*.<br/>    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Lógica de componentes **y** de cada par de valores de 32 bits de *src0* y *SRC1*. Los resultados de 32 bits se colocan en *dest*.
+AND lógico por **componente** de cada par de valores de 32 bits de *src0* y *src1.* Los resultados de 32 bits se colocan en *dest*.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -52,7 +52,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -60,12 +60,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -75,7 +75,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

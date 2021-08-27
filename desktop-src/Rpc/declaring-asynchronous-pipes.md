@@ -1,19 +1,19 @@
 ---
 title: Declarar canalizaciones asincrónicas
-description: En el siguiente archivo IDL de ejemplo se define una estructura de canalización típica y una función RPC asincrónica con canalizaciones.
+description: El siguiente archivo IDL de ejemplo define una estructura de canalización típica y una función RPC asincrónica con canalizaciones.
 ms.assetid: ddd20212-18f5-41f6-9f6e-0edbe5e517a2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4f8fb11d89d92bcee5b2b8b052a381077aeb82c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 16c49bc722cd8069f446cc87567f20b1636dc77654f4387ca635f952e33dc83b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101675"
 ---
 # <a name="declaring-asynchronous-pipes"></a>Declarar canalizaciones asincrónicas
 
-En el siguiente archivo IDL de ejemplo se define una estructura de canalización típica y una función RPC asincrónica con canalizaciones.
+El siguiente archivo IDL de ejemplo define una estructura de canalización típica y una función RPC asincrónica con canalizaciones.
 
 ## <a name="example"></a>Ejemplo
 
@@ -48,7 +48,7 @@ interface IMyAsyncPipe
 //end Xasyncpipe.acf
 ```
 
-En el fragmento de código siguiente se muestra una definición de estructura de canalización típica. Contiene punteros a procedimientos de inserción y extracción, un búfer para almacenar los datos de la canalización y una variable de estado para coordinar los procedimientos:
+El fragmento de código siguiente muestra una definición de estructura de canalización típica. Contiene punteros para insertar y extraer procedimientos, un búfer para contener los datos de canalización y una variable de estado para coordinar los procedimientos:
 
 ``` syntax
 //
@@ -68,9 +68,9 @@ typedef struct ASYNC_MYPIPE
 }ASYNC_INTPIPE;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

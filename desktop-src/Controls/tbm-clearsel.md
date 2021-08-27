@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TBM_CLEARSEL (commctrl. h)
-description: Borra el intervalo de selección actual en una barra de nivel.
+title: TBM_CLEARSEL mensaje (Commctrl.h)
+description: Borra el intervalo de selección actual en una barra de seguimiento.
 ms.assetid: ccf69fb7-d616-4a7a-8c7c-7a82827758b1
 keywords:
-- TBM_CLEARSEL controles de mensajes de Windows
+- TBM_CLEARSEL controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9d2474f3978dc80b2611bd6b454c45e515ee159
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 627f2c872b47bf76312856fd81d42bfe8f2739e53efb3c37492b203b150b8e8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046765"
 ---
-# <a name="tbm_clearsel-message"></a>TBM \_ CLEARSEL
+# <a name="tbm_clearsel-message"></a>Mensaje \_ CLEARSEL de TBM
 
-Borra el intervalo de selección actual en una barra de nivel.
+Borra el intervalo de selección actual en una barra de seguimiento.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Borra el intervalo de selección actual en una barra de nivel.
 *wParam* 
 </dt> <dd>
 
-Volver a dibujar el marcador. Si este parámetro es **true**, el TrackBar se vuelve a dibujar una vez desactivada la selección.
+Vuelva a dibujar la marca. Si este parámetro es **TRUE**, la barra de seguimiento se vuelve a dibujar después de borrar la selección.
 
 </dd> <dt>
 
@@ -43,9 +43,9 @@ Volver a dibujar el marcador. Si este parámetro es **true**, el TrackBar se vue
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una barra de nivel solo puede tener un intervalo de selección si se especificó el estilo [**TBS \_ ENABLESELRANGE**](trackbar-control-styles.md) al crearlo.
+Una barra de seguimiento solo puede tener un intervalo de selección si especificó el estilo [**\_ ENABLESELRANGE**](trackbar-control-styles.md) de TBS cuando lo creó.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Una barra de nivel solo puede tener un intervalo de selección si se especificó
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

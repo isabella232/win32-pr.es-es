@@ -1,15 +1,15 @@
 ---
 description: Obtiene la velocidad de bits media actual del descodificador.
 ms.assetid: 11f6b5cb-10c6-470b-870d-b89983dba74e
-title: Propiedad AVDecCommonMeanBitRate (Codecapi. h)
+title: Propiedad AVDecCommonMeanBitRate (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa5cef2b854a3e35d2e1d97596b3da642b8d5cec
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e09969d09bf788d6dc33b6b796cd9c05934819de9eaebe9d13081bc21c2c382e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079485"
 ---
 # <a name="avdeccommonmeanbitrate-property"></a>Propiedad AVDecCommonMeanBitRate
 
@@ -29,11 +29,11 @@ Esta propiedad es de solo lectura.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -44,7 +44,7 @@ Esta propiedad es de solo lectura.
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: GUID de la partición del objeto de la clase de evento.
+description: GUID de partición del objeto de clase de eventos.
 ms.assetid: 154849ac-350c-4b2f-bb51-ac6973f0a8fa
-title: 'IEventSubscription3:: EventClassPartitionID (propiedad)'
+title: Propiedad IEventSubscription3::EventClassPartitionID
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,20 +14,20 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: d41d3e2a170deffb73f1f533226421d88f150c01
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a305e18677c6a12e14b71b062324630021407231dac6b749f289b58396f4c1f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070655"
 ---
-# <a name="ieventsubscription3eventclasspartitionid-property"></a>IEventSubscription3:: EventClassPartitionID (propiedad)
+# <a name="ieventsubscription3eventclasspartitionid-property"></a>Propiedad IEventSubscription3::EventClassPartitionID
 
-GUID de la partición del objeto de la clase de evento.
+GUID de partición del objeto de clase de eventos.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -48,7 +48,7 @@ Cadena que contiene el GUID de la partición de la clase de eventos.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, e \_ OUTOFMEMORY, e \_ inesperado, e \_ FAIL y S \_ OK.
+Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED, E \_ FAIL y S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 

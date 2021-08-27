@@ -1,19 +1,19 @@
 ---
-description: No se puede tener acceso a una sesión del instalador desde una acción personalizada que no sea la sesión de instalación actual.
+description: No se puede acceder a una sesión del instalador desde una acción personalizada que no sea la sesión de instalación actual.
 ms.assetid: 8aa0ac17-1341-4399-987e-d26175150874
-title: Obtener acceso a una base de datos o una sesión desde una acción personalizada
+title: Acceso a una base de datos o una sesión desde dentro de una acción personalizada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 839c34fbfcd6cc69c026db455b0c2e3a59a28e2f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c653d14bc2fdb361469389c4ee053e5d98b65f8c8265516c4e2c3bd4fc4c96d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046065"
 ---
-# <a name="accessing-a-database-or-session-from-inside-a-custom-action"></a>Obtener acceso a una base de datos o una sesión desde una acción personalizada
+# <a name="accessing-a-database-or-session-from-inside-a-custom-action"></a>Acceso a una base de datos o una sesión desde dentro de una acción personalizada
 
-No se puede tener acceso a una sesión del instalador desde una acción personalizada que no sea la sesión de instalación actual. Las acciones personalizadas se limitan a trabajar solo con la base de datos activa de la sesión y ninguna otra base de datos. No se debe llamar a las siguientes [funciones de base de datos](database-functions.md) de Windows Installer desde una acción personalizada, ya que requieren un identificador a una base de datos que no sea la base de datos de la sesión de instalación actual:
+No se puede acceder a una sesión del instalador desde una acción personalizada que no sea la sesión de instalación actual. Las acciones personalizadas se limitan a trabajar solo con la base de datos activa de la sesión y con ninguna otra base de datos. No se Windows llamar [](database-functions.md) a las siguientes funciones de base de datos del instalador desde una acción personalizada, ya que requieren un identificador para una base de datos que no sea la base de datos de la sesión de instalación actual:
 
 [**MsiDatabaseMerge**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasemergea)
 
@@ -53,7 +53,7 @@ No se puede tener acceso a una sesión del instalador desde una acción personal
 
 <dl> <dt>
 
-[Obtener acceso a la sesión del instalador actual desde una acción personalizada](accessing-the-current-installer-session-from-inside-a-custom-action.md)
+[Acceso a la sesión actual del instalador desde dentro de una acción personalizada](accessing-the-current-installer-session-from-inside-a-custom-action.md)
 </dt> </dl>
 
  

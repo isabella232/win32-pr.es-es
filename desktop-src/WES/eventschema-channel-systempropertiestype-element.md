@@ -3,7 +3,7 @@ title: Elemento Channel (SystemPropertiesType)
 description: Canal en el que se registró el evento.
 ms.assetid: 8df935f9-1372-4b77-a809-282ceea6ed44
 keywords:
-- EventLog del elemento de canal
+- Elemento Channel EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ce198208e453ecb6697cd08266e53c2045ab5849
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c1ec744efde09ea49350a5f7a9d429dc7114d8025df64b1ad125f5962cec543
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005605"
 ---
 # <a name="channel-systempropertiestype-element"></a>Elemento Channel (SystemPropertiesType)
 
@@ -31,7 +31,7 @@ Canal en el que se registró el evento.
  />
 ```
 
-El elemento de **canal** se define mediante el tipo complejo de [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+El **tipo complejo SystemPropertiesType** define el elemento [**Channel.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,8 +39,8 @@ El elemento de **canal** se define mediante el tipo complejo de [**SystemPropert
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -51,7 +51,7 @@ El elemento de **canal** se define mediante el tipo complejo de [**SystemPropert
 **Elemento primario**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: b3a0ce4f230236e276fede528a5e778ecafd51fb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e6b4d76b3035e156da1f1d4decf7a5c59b28bf0ca13bc2bdaa33e319422509af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037555"
 ---
-# <a name="idelaydcgettotalstatistics-method"></a>IDelaydC::GetTotalStatistics (método)
+# <a name="idelaydcgettotalstatistics-method"></a>Método IDelaydC::GetTotalStatistics
 
 El **método GetTotalStatistics** recupera las [*estadísticas totales*](t.md) de la captura [*actual.*](c.md)
 
@@ -44,7 +44,7 @@ HRESULT STDMETHODCALLTYPE GetTotalStatistics(
 *lpStats* \[ out\]
 </dt> <dd>
 
-Puntero a una [estructura STATISTICS](statistics.md)que proporciona las estadísticas totales de la captura. Es responsabilidad del autor de la llamada asignar y liberar la memoria utilizada por la **estructura STATISTICS.**
+Puntero a una [estructura STATISTICS](statistics.md)que proporciona las estadísticas totales de la captura. Es responsabilidad del autor de la llamada asignar y liberar la memoria usada por la **estructura STATISTICS.**
 
 </dd> <dt>
 
@@ -59,14 +59,14 @@ Marca que se usa para Monitor de red cómo controlar el almacenamiento interno d
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                          | Descripción                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IDelaydC::Connect](idelaydc-connect.md) para conectarse a la red.<br/> |
-| <dl> <dt>**NMERR \_ NO \_ RETRASADA**</dt> </dl>   | El NPP está conectado a la red, pero no con [el método IDelaydC::Connect.](idelaydc-connect.md)<br/>             |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IDelaydC::Conectar](idelaydc-connect.md) para conectarse a la red.<br/> |
+| <dl> <dt>**NMERR \_ NO \_ RETRASADO**</dt> </dl>   | El NPP está conectado a la red, pero no con [el método IDelaydC::Conectar.](idelaydc-connect.md)<br/>             |
 | <dl> <dt>**NMERR \_ NO \_ CAPTURA**</dt> </dl> | El NPP no captura datos. Llame [a IDelaydC::Start para](idelaydc-start.md) empezar a capturar datos.<br/>                 |
 
 
@@ -83,7 +83,7 @@ Monitor de red también almacena [*estadísticas*](c.md)de conversación, que se
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -92,14 +92,14 @@ Monitor de red también almacena [*estadísticas*](c.md)de conversación, que se
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC::Connect](idelaydc-connect.md)
+[IDelaydC::Conectar](idelaydc-connect.md)
 </dt> <dt>
 
 [IDelaydC::GetConversationStatistics](idelaydc-getconversationstatistics.md)

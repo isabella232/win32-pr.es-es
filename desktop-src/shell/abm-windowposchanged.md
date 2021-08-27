@@ -1,19 +1,19 @@
 ---
-description: Notifica al sistema cuando ha cambiado la posición de una Appbar. Un Appbar debe llamar a este mensaje en respuesta al mensaje de WINDOWPOSCHANGED de WM \_ .
+description: Notifica al sistema cuándo ha cambiado la posición de una barra de aplicaciones. Una barra de aplicaciones debe llamar a este mensaje en respuesta al mensaje \_ WM WINDOWPOSCHANGED.
 ms.assetid: 8ca51f5f-b6cf-4f2c-98f4-69c992679320
-title: Mensaje de ABM_WINDOWPOSCHANGED (ShellAPI. h)
+title: ABM_WINDOWPOSCHANGED mensaje (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29c8ea6fab6960678ad030a0c1817ad5f8aaae29
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d770d50629342095308376856b98e6250adc1f9a1f2559da8509d685995428ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057815"
 ---
-# <a name="abm_windowposchanged-message"></a>ABN \_ WINDOWPOSCHANGED
+# <a name="abm_windowposchanged-message"></a>Mensaje \_ WINDOWPOSCHANGED de ABM
 
-Notifica al sistema cuando ha cambiado la posición de una Appbar. Un Appbar debe llamar a este mensaje en respuesta al mensaje de [**\_ WINDOWPOSCHANGED de WM**](/windows/desktop/winmsg/wm-windowposchanged) .
+Notifica al sistema cuándo ha cambiado la posición de una barra de aplicaciones. Una barra de aplicaciones debe llamar a este mensaje en respuesta al mensaje [**\_ WM WINDOWPOSCHANGED.**](/windows/desktop/winmsg/wm-windowposchanged)
 
 
 ```C++
@@ -29,17 +29,17 @@ SHAppBarMessage(ABM_WINDOWPOSCHANGED, pabd);
 *pabd* 
 </dt> <dd>
 
-Puntero a una estructura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) que identifica el Appbar que se va a activar. Debe especificar los miembros **cbSize** y **hWnd** al enviar este mensaje; se omiten todos los demás miembros.
+Puntero a una [**estructura APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) que identifica la barra de aplicaciones que se va a activar. Debe especificar los **miembros cbSize** y **hWnd** al enviar este mensaje; se omiten todos los demás miembros.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Siempre devuelve **true**.
+Siempre devuelve **TRUE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje se omite si el miembro **hWnd** de la estructura a la que apunta *pabd* identifica un Appbar de ocultación automáticamente.
+Este mensaje se omite si el **miembro hWnd** de la estructura a la que apunta *pabd* identifica una barra de aplicaciones de mostrar automáticamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,9 +47,9 @@ Este mensaje se omite si el miembro **hWnd** de la estructura a la que apunta *p
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>ShellAPI. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 

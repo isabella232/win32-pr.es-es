@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 6bd06eb99cae60960db64a6f32df5e4c932b362f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 36a1dfcf93e44d8d94a0bdf74042ce1d2d2907bcf1f7085b452f56254196dd24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102925"
 ---
-# <a name="ec_dvd_vobu_timestamp"></a>Marca de \_ tiempo DE VOBU de DVD \_ DE EC \_
+# <a name="ec_dvd_vobu_timestamp"></a>Marca de \_ tiempo DE VOBU de DVD \_ de EC \_
 
 Se envía cuando [el navegador de DVD](dvd-navigator-filter.md) analiza un paquete PCI.
 
@@ -46,7 +46,7 @@ Contiene el **DWORD** de orden superior de la marca de tiempo.
 
 ## <a name="remarks"></a>Comentarios
 
-Este evento está deshabilitado de forma predeterminada. Para habilitar este evento, llame a [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) y establezca la opción **DVD \_ EnableLoggingEvents** en **TRUE.**
+Este evento está deshabilitado de forma predeterminada. Para habilitar este evento, llame a [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) y establezca la opción **\_ EnableLoggingEvents** de DVD en **TRUE.**
 
 Reconstruye la marca de tiempo como se muestra a continuación:
 
@@ -69,7 +69,7 @@ li.HighPart = DWORD( lParam2 );
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

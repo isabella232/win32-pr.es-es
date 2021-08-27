@@ -1,22 +1,22 @@
 ---
-description: Desbloqueo del SDK de Windows Media Format
+description: Desbloqueo del SDK Windows Media Format
 ms.assetid: 7ede8bda-3b26-452d-8ce9-cd2410ffd9f4
-title: Desbloqueo del SDK de Windows Media Format
+title: Desbloqueo del SDK Windows Media Format
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e9807794dc7e42c563f2f7d45dcb0b1b684aad1
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 6e1f332711e9fd12c9b0ff1f789438d051487b81711f157ae1024a8e47973386
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105689661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078665"
 ---
-# <a name="unlocking-the-windows-media-format-sdk"></a>Desbloqueo del SDK de Windows Media Format
+# <a name="unlocking-the-windows-media-format-sdk"></a>Desbloqueo del SDK Windows Media Format
 
-Para tener acceso a la versión 7 o 7,1 del SDK de Windows Media Format, una aplicación debe proporcionar un certificado de software, también denominado clave, en tiempo de ejecución. Esta clave se encuentra en una biblioteca estática denominada wmstub. lib a la que se vincula la aplicación en tiempo de compilación. Una clave individualizada solo es necesaria para crear o leer archivos protegidos con DRM. Los archivos no DRM se pueden crear mediante la biblioteca estática que se proporciona con el SDK de Windows Media Format. Para obtener más información sobre cómo obtener la clave DRM, vea el SDK de Windows Media Format. Una aplicación de DirectShow proporciona su certificado al escritor ASF de WM cuando se agrega al gráfico de filtro. La aplicación debe registrarse como proveedor de claves mediante las interfaces COM **IServiceProvider** y **IObjectWithSite** . Con esta técnica, la aplicación implementa una clase de proveedor de claves derivada de **IServiceProvider**. Esta clase implementa los tres métodos COM estándar:**AddRef**, **QueryInterface** y **Release**, junto con un método adicional, **QueryService**, al que llama el administrador de gráficos de filtro. **QueryService** llama al método [**WMCreateCertificate**](/previous-versions/windows/desktop/legacy/dd757745(v=vs.85)) de Windows Media Format SDK y vuelve al administrador de gráficos de filtro un puntero al certificado que se creó. Si el certificado es válido, el administrador de gráficos de filtros permite que continúe el proceso de creación de gráficos.
+Para acceder a la versión 7 o 7.1 del SDK de formato multimedia de Windows, una aplicación debe proporcionar un certificado de software, también denominado clave, en tiempo de ejecución. Esta clave está contenida en una biblioteca estática denominada wmstub.lib a la que la aplicación se vincula en tiempo de compilación. Solo se necesita una clave individualizada para crear o leer archivos protegidos con DRM. Los archivos que no son DRM se pueden crear mediante la biblioteca estática proporcionada con Windows SDK de formato multimedia. Para más información sobre cómo obtener la clave DRM, consulte el sdk Windows Media Format. Una DirectShow aplicación proporciona su certificado a WM ASF Writer cuando se agrega al gráfico de filtros. La aplicación debe registrarse como proveedor de claves mediante las interfaces COM **IServiceProvider** **e IObjectWithSite.** Con esta técnica, la aplicación implementa una clase de proveedor de claves derivada de **IServiceProvider**. Esta clase implementa los tres métodos COM estándar:**AddRef,** **QueryInterface** y **Release,** junto con un método adicional, **QueryService**, al que llama el administrador de gráficos de filtro. **QueryService** llama Windows método [**WMCreateCertificate**](/previous-versions/windows/desktop/legacy/dd757745(v=vs.85)) del SDK de formato multimedia y devuelve al administrador de gráficos de filtro un puntero al certificado que se creó. Si el certificado es válido, el administrador de gráficos de filtro permite que el proceso de creación de grafos continúe.
 
 > [!Note]  
-> Para compilar una aplicación, incluya Wmsdkidl. h para el prototipo de [**WMCreateCertificate**](/previous-versions/windows/desktop/legacy/dd757745(v=vs.85))y vincúlelo a la biblioteca Wmstub. lib.
+> Para compilar una aplicación, incluya Wmsdkidl.h para el prototipo de [**WMCreateCertificate**](/previous-versions/windows/desktop/legacy/dd757745(v=vs.85))y vincule a la biblioteca Wmstub.lib.
 
  
 
@@ -146,7 +146,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[Crear archivos ASF en DirectShow](creating-asf-files-in-directshow.md)
+[Creación de archivos ASF en DirectShow](creating-asf-files-in-directshow.md)
 </dt> </dl>
 
  

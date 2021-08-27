@@ -1,7 +1,7 @@
 ---
-description: La estructura NMEVENTDATA contiene información sobre una condición de evento que se pasa a Monitor de red para insertar una línea en el visor de expertos.
+description: La estructura NMEVENTDATA contiene información sobre una condición de evento que se pasa a Monitor de red para insertar una línea en el visor experto.
 ms.assetid: 35cda410-d45a-4a51-91b7-8bd4a0c9957f
-title: Estructura NMEVENTDATA (Netmon. h)
+title: Estructura NMEVENTDATA (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 6258b1b1bfde5b159165de2efb9a010053c0421a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af2a4775be7d9e123974fbab865a8171d9bc9dec7dacae7692054bc6db0d3085
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037045"
 ---
-# <a name="nmeventdata-structure"></a>Estructura NMEVENTDATA
+# <a name="nmeventdata-structure"></a>NMEVENTDATA (estructura)
 
-La estructura **NMEVENTDATA** contiene información sobre una condición de evento que se pasa a monitor de red para insertar una línea en el visor de expertos.
+La **estructura NMEVENTDATA** contiene información sobre una condición de evento que se pasa a Monitor de red para insertar una línea en el visor experto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,34 +54,34 @@ typedef struct {
 **Versión**
 </dt> <dd>
 
-Número de versión de la estructura **NMEVENTDATA** . El número de versión debe ser cero. Las versiones futuras de Monitor de red pueden admitir un número de versión superior.
+Número de versión de la **estructura NMEVENTDATA.** El número de versión debe ser cero. Las versiones futuras Monitor de red pueden admitir un número de versión mayor.
 
 </dd> <dt>
 
 **EventIdent**
 </dt> <dd>
 
-Identificador del evento. **EventIdent** es único para cada experto y hace referencia a una [Página de referencia de evento](event-reference-page.md).
+Identificador del evento. **EventIdent** es único para cada experto y hace referencia a una página [de referencia de eventos](event-reference-page.md).
 
 </dd> <dt>
 
 **Marcas**
 </dt> <dd>
 
-Un conjunto de marcas que describe quién envía los datos de evento y cómo se muestra el evento.
+Conjunto de marcas que describe quién envía los datos del evento y cómo se muestra el evento.
 
 
 
 | Value                                                                                                                                                                                                                                              | Significado                                                                                                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="EVENT_FLAG_EXPERT"></span><span id="event_flag_expert"></span><dl> <dt>**\_experto en marcas de evento \_**</dt> </dl>                                                                         | El evento procede de un experto. <br/>                                                                                                                                  |
-| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_SEVERITY"></span><span id="nmeventflag_do_not_display_severity"></span><dl> <dt>**NMEVENTFLAG \_ \_ no \_ Mostrar \_ gravedad**</dt> </dl>                 | No mostrar el nivel de gravedad para el evento. <br/>                                                                                                                |
-| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_SOURCE"></span><span id="nmeventflag_do_not_display_source"></span><dl> <dt>**NMEVENTFLAG \_ \_ no \_ Mostrar el \_ origen**</dt> </dl>                       | No se muestra el nombre del origen del evento. <br/>                                                                                                                   |
-| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_EVENT_NAME"></span><span id="nmeventflag_do_not_display_event_name"></span><dl> <dt>**NMEVENTFLAG \_ \_ no \_ Mostrar \_ nombre de evento \_**</dt> </dl>          | No muestre el nombre del evento. <br/>                                                                                                                    |
-| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_DESCRIPTION"></span><span id="nmeventflag_do_not_display_description"></span><dl> <dt>**NMEVENTFLAG \_ \_ no \_ Mostrar \_ Descripción**</dt> </dl>        | No se muestra la descripción del evento. <br/>                                                                                                                   |
-| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_MACHINE"></span><span id="nmeventflag_do_not_display_machine"></span><dl> <dt>**NMEVENTFLAG \_ \_ no \_ Mostrar \_ equipo**</dt> </dl>                    | No muestre el nombre del equipo para el evento. <br/>                                                                                                                  |
-| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_TIME"></span><span id="nmeventflag_do_not_display_time"></span><dl> <dt>**NMEVENTFLAG \_ \_ no \_ Mostrar \_ hora**</dt> </dl>                             | No mostrar la hora del evento <br/>                                                                                                                           |
-| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_FIXED_COLUMNS"></span><span id="nmeventflag_do_not_display_fixed_columns"></span><dl> <dt>**NMEVENTFLAG \_ \_ no \_ Mostrar \_ columnas fijas \_**</dt> </dl> | No muestre la gravedad, el origen, el nombre del evento, la descripción, la máquina o las columnas de tiempo. No se trata de una marca única, pero es una Unión de las seis marcas anteriores. <br/> |
+| <span id="EVENT_FLAG_EXPERT"></span><span id="event_flag_expert"></span><dl> <dt>**EXPERTO \_ EN MARCAS DE \_ EVENTOS**</dt> </dl>                                                                         | El evento provenía de un experto. <br/>                                                                                                                                  |
+| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_SEVERITY"></span><span id="nmeventflag_do_not_display_severity"></span><dl> <dt>**NMEVENTFLAG \_ NO \_ MUESTRA \_ \_ GRAVEDAD**</dt> </dl>                 | No muestre el nivel de gravedad del evento. <br/>                                                                                                                |
+| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_SOURCE"></span><span id="nmeventflag_do_not_display_source"></span><dl> <dt>**NMEVENTFLAG \_ NO MUESTRA EL \_ \_ \_ ORIGEN**</dt> </dl>                       | No muestre el nombre de origen del evento. <br/>                                                                                                                   |
+| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_EVENT_NAME"></span><span id="nmeventflag_do_not_display_event_name"></span><dl> <dt>**NMEVENTFLAG \_ NO MUESTRA EL NOMBRE DEL \_ \_ \_ \_ EVENTO**</dt> </dl>          | No muestre el nombre del evento. <br/>                                                                                                                    |
+| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_DESCRIPTION"></span><span id="nmeventflag_do_not_display_description"></span><dl> <dt>**NMEVENTFLAG \_ NO MUESTRA LA \_ \_ \_ DESCRIPCIÓN**</dt> </dl>        | No muestre la descripción del evento. <br/>                                                                                                                   |
+| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_MACHINE"></span><span id="nmeventflag_do_not_display_machine"></span><dl> <dt>**NMEVENTFLAG \_ NO MUESTRA LA \_ \_ \_ MÁQUINA**</dt> </dl>                    | No muestre el nombre de la máquina para el evento. <br/>                                                                                                                  |
+| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_TIME"></span><span id="nmeventflag_do_not_display_time"></span><dl> <dt>**NMEVENTFLAG \_ NO MUESTRA LA \_ \_ \_ HORA**</dt> </dl>                             | No mostrar la hora del evento <br/>                                                                                                                           |
+| <span id="NMEVENTFLAG_DO_NOT_DISPLAY_FIXED_COLUMNS"></span><span id="nmeventflag_do_not_display_fixed_columns"></span><dl> <dt>**NMEVENTFLAG \_ NO MUESTRA COLUMNAS \_ \_ \_ \_ FIJAS**</dt> </dl> | No muestre las columnas Gravedad, Origen, Nombre del evento, Descripción, Máquina o Hora. No se trata de una sola marca, pero es una unión de las seis marcas anteriores. <br/> |
 
 
 
@@ -94,7 +94,7 @@ Un conjunto de marcas que describe quién envía los datos de evento y cómo se 
 
 Nivel de gravedad del evento. El nivel de gravedad puede tener uno de los siguientes valores:
 
-NMEVENT \_ gravedad \_ informativa NMEVENT \_ gravedad \_ ADVERTENCIA NMEVENT gravedad \_ \_ severa \_ ADVERTENCIA NMEVENT \_ gravedad NMEVENT gravedad grave error \_ \_ \_ \_ NMEVENT \_ gravedad \_ crítico \_ error
+INFORMACIÓN DE GRAVEDAD DE NMEVENT ADVERTENCIA DE GRAVEDAD NMEVENT ADVERTENCIA DE GRAVEDAD NMEVENT ADVERTENCIA FUERTE ADVERTENCIA NMEVENT ERROR DE GRAVEDAD \_ \_ \_ \_ \_ \_ \_ NMEVENT \_ GRAVEDAD \_ NMEVENT ERROR GRAVE ERROR \_ \_ \_ CRÍTICO \_ \_ \_ DE GRAVEDAD NMEVENT
 
 </dd> <dt>
 
@@ -129,35 +129,35 @@ Descripción del evento que se muestra.
 **szMachine**
 </dt> <dd>
 
-Obsoleto, debe ser **null**.
+Obsoleto, debe ser **NULL.**
 
 </dd> <dt>
 
 **Justificación**
 </dt> <dd>
 
-Información que se muestra en la segunda ventana del Visor de eventos. El miembro de **justificación** puede ser **null**. Si es **null**, la segunda ventana no es visible.
+Información que se muestra en la segunda ventana de la Visor de eventos. El **miembro Justification** puede ser **NULL.** Si es **NULL,** la segunda ventana no estará visible.
 
 </dd> <dt>
 
 **szUrl**
 </dt> <dd>
 
-Sector Este miembro debe ser **null**.
+Reservado; este miembro debe ser **NULL.**
 
 </dd> <dt>
 
 **SysTime**
 </dt> <dd>
 
-Hora a la que se produce la condición de evento. La hora se mide en relación con el principio de la captura.
+Hora a la que se produce la condición de evento. El tiempo se mide con respecto al principio de la captura.
 
 </dd> <dt>
 
 **Columna**
 </dt> <dd>
 
-Tabla de estructuras de columna que aparece en el panel superior del Visor de eventos.
+Tabla de estructuras de columna que aparece en el panel superior de la Visor de eventos.
 
 </dd> </dl>
 
@@ -169,7 +169,7 @@ Tabla de estructuras de columna que aparece en el panel superior del Visor de ev
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

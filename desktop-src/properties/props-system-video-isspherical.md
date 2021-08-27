@@ -1,19 +1,19 @@
 ---
-description: Indica si el archivo multimedia tiene un flujo de vídeo esférico.
+description: Indica si el archivo multimedia tiene una secuencia de vídeo esférica.
 ms.assetid: 14d4ea1f-776b-40e4-b55d-1cb8a71c6a99
-title: System. video. IsSpherical
+title: System.Video.IsSpherical
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8dc50f85c64d5e4c7c1f9b54953b4b79536841d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79a8e21a43a7f1f0e495c4b031fd86ac419b238f9a03563cfcf2cdbf8db439ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058275"
 ---
-# <a name="systemvideoisspherical"></a>System. video. IsSpherical
+# <a name="systemvideoisspherical"></a>System.Video.IsSpherical
 
-Indica si el archivo multimedia tiene un flujo de vídeo esférico.
+Indica si el archivo multimedia tiene una secuencia de vídeo esférica.
 
 ## <a name="windows-10-version-1703"></a>Windows 10, versión 1703
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

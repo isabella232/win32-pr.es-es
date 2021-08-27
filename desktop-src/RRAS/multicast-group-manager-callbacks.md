@@ -1,40 +1,40 @@
 ---
-title: Devoluciones de llamada del administrador de grupo de multidifusión
-description: El administrador del grupo de multidifusión usa las siguientes devoluciones de llamada para notificar a los clientes (normalmente, los protocolos de enrutamiento) de eventos y cambios de estado.
+title: Devoluciones de llamada del Administrador de grupos de multidifusión
+description: El administrador de grupos de multidifusión usa las siguientes devoluciones de llamada para notificar a los clientes (normalmente, protocolos de enrutamiento) de eventos y cambios de estado.
 ms.assetid: ebabdfaf-8f5f-45be-9f01-f1dbc01a376c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5ba18f874005e23aef6daca6071362362312e8e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 037281a2cb636b337c5133c2c3a261e2c435a136a30d0ccfdcf0407a9b62509b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036655"
 ---
-# <a name="multicast-group-manager-callbacks"></a>Devoluciones de llamada del administrador de grupo de multidifusión
+# <a name="multicast-group-manager-callbacks"></a>Devoluciones de llamada del Administrador de grupos de multidifusión
 
-El administrador del grupo de multidifusión usa las siguientes devoluciones de llamada para notificar a los clientes (normalmente, los protocolos de enrutamiento) de eventos y cambios de estado:
+El administrador de grupos de multidifusión usa las siguientes devoluciones de llamada para notificar a los clientes (normalmente, protocolos de enrutamiento) de eventos y cambios de estado:
 
-[**\_devolución de \_ llamada de alerta de creación de PMGM \_**](/windows/win32/api/mgm/nc-mgm-pmgm_creation_alert_callback)
+[**DEVOLUCIÓN DE LLAMADA \_ DE ALERTA DE CREACIÓN \_ \_ DE PMGM**](/windows/win32/api/mgm/nc-mgm-pmgm_creation_alert_callback)
 
-[**\_devolución de \_ llamada de alerta de combinación de PMGM \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_join_alert_callback)
+[**DEVOLUCIÓN DE LLAMADA \_ DE ALERTA DE COMBINACIÓN \_ DE PMGM \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_join_alert_callback)
 
-[**\_devolución de \_ llamada de alerta de eliminación de PMGM \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_prune_alert_callback)
+[**DEVOLUCIÓN DE LLAMADA DE ALERTA DE PMGM \_ PRUNE \_ \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_prune_alert_callback)
 
-[**\_devolución de \_ llamada de combinación local de PMGM \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_local_join_callback)
+[**DEVOLUCIÓN DE \_ LLAMADA DE COMBINACIÓN LOCAL \_ PMGM \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_local_join_callback)
 
-[**\_devolución de \_ llamada de Leave local de PMGM \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_local_leave_callback)
+[**DEVOLUCIÓN DE \_ LLAMADA DE LA LICENCIA LOCAL \_ \_ DE PMGM**](/windows/desktop/api/Mgm/nc-mgm-pmgm_local_leave_callback)
 
-[**devolución de llamada de \_ RPF PMGM \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_rpf_callback)
+[**DEVOLUCIÓN DE \_ LLAMADA DE RPF DE PMGM \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_rpf_callback)
 
-[**PMGM \_ incorrecto \_ si la \_ devolución de llamada**](/windows/desktop/api/Mgm/nc-mgm-pmgm_wrong_if_callback)
+[**PMGM \_ INCORRECTO SI \_ DEVOLUCIÓN DE \_ LLAMADA**](/windows/desktop/api/Mgm/nc-mgm-pmgm_wrong_if_callback)
 
-El administrador del grupo de multidifusión usa las siguientes devoluciones de llamada para notificar a IGMP de eventos y cambios de estado:
+El administrador de grupos de multidifusión usa las devoluciones de llamada siguientes para notificar a IGMP los eventos y los cambios de estado:
 
-[**PMGM \_ deshabilitar \_ \_ devolución de llamada IGMP**](/windows/win32/api/mgm/nc-mgm-pmgm_disable_igmp_callback)
+[**DEVOLUCIÓN DE LLAMADA \_ DE \_ IGMP \_ DESHABILITADA POR PMGM**](/windows/win32/api/mgm/nc-mgm-pmgm_disable_igmp_callback)
 
-[**PMGM \_ habilitar \_ \_ devolución de llamada IGMP**](/windows/desktop/api/Mgm/nc-mgm-pmgm_enable_igmp_callback)
+[**DEVOLUCIÓN DE LLAMADA \_ DE PMGM ENABLE \_ IGMP \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_enable_igmp_callback)
 
- 
+ 
 
- 
+ 

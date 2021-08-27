@@ -1,9 +1,9 @@
 ---
-title: Mensaje de HDM_GETOVERFLOWRECT (commctrl. h)
-description: Obtiene el rectángulo delimitador del botón de desbordamiento cuando el \_ estilo de desbordamiento de HDS se establece en el control de encabezado y el botón de desbordamiento está visible. Envíe este mensaje explícitamente o mediante la \_ macro header GetOverflowRect.
+title: HDM_GETOVERFLOWRECT mensaje (Commctrl.h)
+description: Obtiene el rectángulo delimitador del botón de desbordamiento cuando el estilo HDS OVERFLOW se establece en el control de encabezado y el botón de desbordamiento \_ está visible. Envíe este mensaje explícitamente o mediante la \_ macro Header GetOverflowRect.
 ms.assetid: 52fb3dc3-ce22-40da-8222-20fd75c005ae
 keywords:
-- HDM_GETOVERFLOWRECT controles de mensajes de Windows
+- HDM_GETOVERFLOWRECT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58f521bb6b188a10bb7af52ead46423e7ae0cf58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f48088ad6c4a1d8cc5b843eeafb167f790bdd8eac06c56e6cb74e8afc18d082
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047055"
 ---
-# <a name="hdm_getoverflowrect-message"></a>HDM \_ GETOVERFLOWRECT
+# <a name="hdm_getoverflowrect-message"></a>Mensaje \_ GETOVERFLOWRECT de HDM
 
-Obtiene el rectángulo delimitador del botón de desbordamiento cuando el estilo de [**\_ desbordamiento de HDS**](header-control-styles.md) se establece en el control de encabezado y el botón de desbordamiento está visible. Envíe este mensaje explícitamente o mediante la macro [**Header \_ GetOverflowRect**](/windows/desktop/api/Commctrl/nf-commctrl-header_getoverflowrect) .
+Obtiene el rectángulo delimitador del botón de desbordamiento cuando el estilo [**HDS \_ OVERFLOW**](header-control-styles.md) se establece en el control de encabezado y el botón de desbordamiento está visible. Envíe este mensaje explícitamente o mediante la macro [**\_ Header GetOverflowRect.**](/windows/desktop/api/Commctrl/nf-commctrl-header_getoverflowrect)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,24 +32,24 @@ Obtiene el rectángulo delimitador del botón de desbordamiento cuando el estilo
 *wParam* 
 </dt> <dd>
 
-No se utiliza. Debe ser cero.
+No se usa. Debe ser cero.
 
 </dd> <dt>
 
-*lParam* \[ de\]
+*lParam* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**Rect**](/previous-versions//dd162897(v=vs.85)) para recibir la información del rectángulo delimitador. El remitente del mensaje es responsable de la asignación de esta estructura. Las coordenadas devueltas en la estructura **Rect** se expresan como coordenadas de pantalla.
+Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) para recibir la información del rectángulo delimitador. El remitente del mensaje es responsable de asignar esta estructura. Las coordenadas devueltas en la **estructura RECT** se expresan como coordenadas de pantalla.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true si es** correcto; en caso contrario, **false**.
+Devuelve **TRUE si** se realiza correctamente; de lo contrario, **FALSE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El control de encabezado debe tener el estilo **HDF \_ SPLITBUTTON**.
+El control de encabezado debe tener el **estilo HDF \_ SPLITBUTTON**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ El control de encabezado debe tener el estilo **HDF \_ SPLITBUTTON**.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,12 +1,12 @@
 ---
-title: Método CreateUserDiskTemplate de la clase Win32_TSSessionDirectory
+title: Método CreateUserDiskTemplate de la Win32_TSSessionDirectory clase
 description: Crea una plantilla de disco de usuario.
 ms.assetid: 4036a418-b082-4376-a400-16f48b98f071
 ms.tgt_platform: multiple
 keywords:
 - Método CreateUserDiskTemplate Servicios de Escritorio remoto
-- Método CreateUserDiskTemplate Servicios de Escritorio remoto, clase Win32_TSSessionDirectory
-- Win32_TSSessionDirectory de clase Servicios de Escritorio remoto, método CreateUserDiskTemplate
+- Método CreateUserDiskTemplate Servicios de Escritorio remoto , Win32_TSSessionDirectory clase
+- Win32_TSSessionDirectory clase Servicios de Escritorio remoto , método CreateUserDiskTemplate
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7c142834b4501639499cd0bcf102dadcc1b07d9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cdc16d293f901efb6fc684d03ec7b47aa7496120c462a32414c747d15c02810a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010235"
 ---
-# <a name="createuserdisktemplate-method-of-the-win32_tssessiondirectory-class"></a>Método CreateUserDiskTemplate de la \_ clase TSSessionDirectory de Win32
+# <a name="createuserdisktemplate-method-of-the-win32_tssessiondirectory-class"></a>Método CreateUserDiskTemplate de la clase TSSessionDirectory de Win32 \_
 
 Crea una plantilla de disco de usuario.
 
@@ -44,17 +44,17 @@ uint32 CreateUserDiskTemplate(
 
 <dl> <dt>
 
-*UserDisksStorageUrl* \[ de\]
+*UserDisksStorageUrl* \[ En\]
 </dt> <dd>
 
-La ubicación del recurso compartido donde se almacenan todos los discos de usuario.
+Ubicación del recurso compartido donde se almacenan todos los discos de usuario.
 
 </dd> <dt>
 
-*UserDiskMaxSizeInGB* \[ de\]
+*UserDiskMaxSizeInGB* \[ En\]
 </dt> <dd>
 
-El tamaño máximo en gigabytes, para todos los discos de usuario.
+Tamaño máximo en gigabytes para todos los discos de usuario.
 
 </dd> </dl>
 
@@ -66,8 +66,8 @@ El tamaño máximo en gigabytes, para todos los discos de usuario.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 

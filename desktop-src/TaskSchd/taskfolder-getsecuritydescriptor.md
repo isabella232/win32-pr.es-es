@@ -1,11 +1,11 @@
 ---
-title: Propiedad TaskFolder. GetSecurityDescriptor
-description: En el caso de scripting, obtiene el descriptor de seguridad de la carpeta.
+title: Propiedad TaskFolder.GetSecurityDescriptor
+description: Para el scripting, obtiene el descriptor de seguridad de la carpeta.
 ms.assetid: ebf8dc7f-32b7-45bf-9ee5-36df674a1530
 keywords:
-- Programador de tareas de la propiedad GetSecurityDescriptor
-- Programador de tareas de la propiedad GetSecurityDescriptor, objeto TaskFolder
-- Programador de tareas de objeto TaskFolder, propiedad GetSecurityDescriptor
+- Propiedad GetSecurityDescriptor Programador de tareas
+- Propiedad GetSecurityDescriptor Programador de tareas , objeto TaskFolder
+- Objeto TaskFolder Programador de tareas , propiedad GetSecurityDescriptor
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81fdb3a301ba3238a699a5ed814057be53c3062d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 851565299b7e6d1c29e2e53d87fb27aa30297921cc194f3cce753fc8d22a6bc6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080325"
 ---
-# <a name="taskfoldergetsecuritydescriptor-property"></a>Propiedad TaskFolder. GetSecurityDescriptor
+# <a name="taskfoldergetsecuritydescriptor-property"></a>Propiedad TaskFolder.GetSecurityDescriptor
 
-En el caso de scripting, obtiene el descriptor de seguridad de la carpeta.
+Para el scripting, obtiene el descriptor de seguridad de la carpeta.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -47,9 +47,9 @@ TaskFolder.GetSecurityDescriptor( _
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

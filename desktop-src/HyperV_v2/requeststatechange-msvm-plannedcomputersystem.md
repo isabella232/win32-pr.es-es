@@ -1,7 +1,7 @@
 ---
 description: Solicita que el estado del sistema planeado cambie al valor especificado.
 ms.assetid: 54ed9514-4f09-458e-8e86-a807ee66df17
-title: Método RequestStateChange de la clase Msvm_PlannedComputerSystem
+title: Método RequestStateChange de la Msvm_PlannedComputerSystem clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 172ec383473510a30ccde66b2617e8ef02ffdb72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54ff75630e93392805d835032ca3405f97e0a26e58c1c61ab06ba18bb1a88856
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083095"
 ---
-# <a name="requeststatechange-method-of-the-msvm_plannedcomputersystem-class"></a>Método RequestStateChange de la \_ clase PlannedComputerSystem de MSVM
+# <a name="requeststatechange-method-of-the-msvm_plannedcomputersystem-class"></a>Método RequestStateChange de la clase \_ Msvm PlannedComputerSystem
 
 Solicita que el estado del sistema planeado cambie al valor especificado.
 
@@ -41,7 +41,7 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ de\]
+*RequestedState* \[ En\]
 </dt> <dd>
 
 Estado solicitado para el sistema planeado.
@@ -71,7 +71,7 @@ Estado solicitado para el sistema planeado.
 
 <span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>
 
-**Sin conexión** (6)
+**Sin** conexión (6)
 
 
 </dt> <dd></dd> <dt>
@@ -85,14 +85,14 @@ Estado solicitado para el sistema planeado.
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Diferir** (8)
+**Aplazar** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-Modo **inactivo** (9)
+**Quiesce** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -120,19 +120,19 @@ Modo **inactivo** (9)
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32768... 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser **null**.
+Este parámetro no se usa y debe ser **Null.**
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ de\]
+*TimeoutPeriod* \[ En\]
 </dt> <dd>
 
 Este parámetro no se utiliza.
@@ -150,13 +150,13 @@ Este método devuelve uno de los valores siguientes.
 | <dl> <dt></dt> <dt>0</dt> </dl>     | Correcto<br/>                                                                 |
 | <dl> <dt></dt><dt>4096</dt> </dl>  |                                                                                    |
 | <dl> <dt></dt><dt>32768</dt> </dl> |                                                                                    |
-| <dl> <dt></dt><dt>32769</dt> </dl> | Acceso denegado.<br/>                                                          |
+| <dl> <dt></dt><dt>32769</dt> </dl> | Acceso denegado:<br/>                                                          |
 | <dl> <dt></dt><dt>32770</dt> </dl> |                                                                                    |
 | <dl> <dt></dt><dt>32771</dt> </dl> |                                                                                    |
 | <dl> <dt></dt><dt>32772</dt> </dl> |                                                                                    |
 | <dl> <dt></dt><dt>32773</dt> </dl> |                                                                                    |
 | <dl> <dt></dt><dt>32774</dt> </dl> |                                                                                    |
-| <dl> <dt></dt><dt>32775</dt> </dl> | No se admite el valor especificado en el parámetro *RequestedState* .<br/> |
+| <dl> <dt></dt><dt>32775</dt> </dl> | No se admite el valor especificado en el parámetro *RequestedState.*<br/> |
 | <dl> <dt></dt><dt>32776</dt> </dl> |                                                                                    |
 | <dl> <dt></dt><dt>32777</dt> </dl> |                                                                                    |
 | <dl> <dt></dt><dt>32778</dt> </dl> |                                                                                    |
@@ -171,10 +171,10 @@ Este método devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -183,7 +183,7 @@ Este método devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-[**MSVM \_ PlannedComputerSystem**](msvm-plannedcomputersystem.md)
+[**Msvm \_ PlannedComputerSystem**](msvm-plannedcomputersystem.md)
 </dt> </dl>
 
  

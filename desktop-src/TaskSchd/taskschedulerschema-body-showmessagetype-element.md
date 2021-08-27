@@ -1,9 +1,9 @@
 ---
-title: Elemento BODY (showMessageType)
-description: Contiene el texto que se va a mostrar en el cuerpo del cuadro de mensaje.
+title: Elemento Body (showMessageType)
+description: Contiene el texto que se mostrará en el cuerpo del cuadro de mensaje.
 ms.assetid: 69ea872a-7ca1-4464-9380-b35f74c9cb8e
 keywords:
-- Elemento BODY Programador de tareas
+- Cuerpo del elemento Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3486601153f8e9dd7dac14f83800dae00a79a9f8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c6b1fbacd450c05b8ff71521dacfa6e95c7efc70fc7d8909ca66f3390bf22295
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010875"
 ---
-# <a name="body-showmessagetype-element"></a>Elemento BODY (showMessageType)
+# <a name="body-showmessagetype-element"></a>Elemento Body (showMessageType)
 
-Contiene el texto que se va a mostrar en el cuerpo del cuadro de mensaje.
+Contiene el texto que se mostrará en el cuerpo del cuadro de mensaje.
 
 ``` syntax
 <xs:element name="Body"
@@ -30,7 +30,7 @@ Contiene el texto que se va a mostrar en el cuerpo del cuadro de mensaje.
  />
 ```
 
-El elemento **Body** se define mediante el tipo complejo de [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) .
+El tipo complejo [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) define el elemento **Body.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -42,11 +42,11 @@ El elemento **Body** se define mediante el tipo complejo de [**showMessageType**
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, consulte la [**propiedad MessageBody de IShowMessageAction**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_messagebody).
+Para el desarrollo de C++, [**vea Propiedad MessageBody de IShowMessageAction.**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_messagebody)
 
-Para el desarrollo de scripts, vea [**ShowMessageAction. MessageBody**](showmessageaction-messagebody.md).
+Para el desarrollo de scripts, [**vea ShowMessageAction.MessageBody.**](showmessageaction-messagebody.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Para el desarrollo de scripts, vea [**ShowMessageAction. MessageBody**](showmess
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

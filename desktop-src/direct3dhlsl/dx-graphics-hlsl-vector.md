@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76d07da5d22dfb44215f70a7620d6519b5c8a802
-ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.openlocfilehash: 2c1ed55fb60e3e7f42418e5bdfea48c1e298af34e9a7d76df17dfa7a021b3f50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "104997997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024245"
 ---
 # <a name="vector-type"></a>Tipo de vector
 
@@ -27,7 +27,7 @@ Un vector contiene entre uno y cuatro componentes escalares; cada componente de 
 
 |                     |
 |---------------------|
-| **Nombre de TypeNumber** |
+| **Nombre typeNumber** |
 
 
 
@@ -46,8 +46,8 @@ TypeComponents Name
 
 | Elemento                                                                                                                             | Descripción                                                                                                                                                                                                           |
 |----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TypeComponents"></span><span id="typecomponents"></span><span id="TYPECOMPONENTS"></span>**TypeComponents**<br/> | Un nombre único que contiene dos partes. La primera parte es uno de los tipos [escalares](dx-graphics-hlsl-data-types.md) . La segunda parte es el número de componentes, que debe estar entre 1 y 4, ambos incluidos.<br/> |
-| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Name**<br/>                                         | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                                                                                                                                                |
+| <span id="TypeComponents"></span><span id="typecomponents"></span><span id="TYPECOMPONENTS"></span>**TypeComponents**<br/> | Nombre único que contiene dos partes. La primera parte es uno de los [tipos escalares.](dx-graphics-hlsl-data-types.md) La segunda parte es el número de componentes, que deben estar entre 1 y 4 inclusive.<br/> |
+| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nombre**<br/>                                         | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                                                                                                                                                |
 
 
 
@@ -55,7 +55,7 @@ TypeComponents Name
 
 ## <a name="examples"></a>Ejemplos
 
-A continuación se muestran algunos ejemplos:
+Estos son algunos ejemplos:
 
 
 ```
@@ -66,7 +66,7 @@ float3  fVector = { 0.2f, 0.3f, 0.4f };
 
 
 
-Un vector se puede declarar con esta sintaxis también:
+Un vector también se puede declarar mediante esta sintaxis:
 
 
 ```
@@ -75,7 +75,7 @@ vector <Type, Number> VariableName
 
 
 
-A continuación se muestran algunos ejemplos:
+Estos son algunos ejemplos:
 
 
 ```
@@ -87,7 +87,7 @@ vector <double, 4> dVector = { 0.2, 0.3, 0.4, 0.5 };
 
 <dl> <dt>
 
-[Tipos de datos (DirectX HLSL)](dx-graphics-hlsl-data-types.md)
+[Tipos de datos (HLSL de DirectX)](dx-graphics-hlsl-data-types.md)
 </dt> </dl>
 
  

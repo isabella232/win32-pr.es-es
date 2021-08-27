@@ -3,8 +3,8 @@ title: Estructura WMDMDATETIME
 description: La estructura WMDMDATETIME contiene una fecha y hora del día.
 ms.assetid: 47f3994d-66c6-47e4-803d-0c98c70eccc8
 keywords:
-- Estructura WMDMDATETIME Administrador de dispositivos Windows Media
-- Puntero de estructura PWMDMDATETIME Administrador de dispositivos de Windows Media
+- Estructura WMDMDATETIME windows Media Administrador de dispositivos
+- Puntero de estructura PWMDMDATETIME windows Media Administrador de dispositivos
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07acf706aa63a21edd27fb2ac206db3039249055
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b9648b4c2d1272dcf00d45277119b51f438dba23d9eaf5e7810451fb693e8cae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004635"
 ---
 # <a name="wmdmdatetime-structure"></a>Estructura WMDMDATETIME
 
-La estructura **WMDMDATETIME** contiene una fecha y hora del día.
+La **estructura WMDMDATETIME** contiene una fecha y hora del día.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -84,7 +84,7 @@ Palabra que contiene el minuto (0-59).
 **wSecond**
 </dt> <dd>
 
-Palabra que contiene el segundo (0-59).
+Palabra que contiene la segunda (0-59).
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ Palabra que contiene el segundo (0-59).
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 
@@ -102,10 +102,10 @@ Palabra que contiene el segundo (0-59).
 
 <dl> <dt>
 
-[**IMDSPStorage:: GetDate**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-getdate)
+[**IMDSPStorage::GetDate**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-getdate)
 </dt> <dt>
 
-[**IWMDMStorage:: GetDate**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getdate)
+[**IWMDMStorage::GetDate**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getdate)
 </dt> <dt>
 
 [**WMDMRIGHTS**](wmdmrights.md)

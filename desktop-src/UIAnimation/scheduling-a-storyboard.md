@@ -1,31 +1,31 @@
 ---
-title: Programar un guion gráfico
-description: Una vez creado un guion gráfico, lo programa el administrador de animaciones.
+title: Programar un guión gráfico
+description: Una vez creado un guión gráfico, lo programa el administrador de animaciones.
 ms.assetid: f3c8fe34-8bca-4421-a390-9e0ba9af27b4
 keywords:
-- guiones gráficos animación y programación de Windows
+- storyboards Windows Animation ,scheduling
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3feae253804d20711c9bbd8ed50895f43272a3f4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 013adc114fd09f518c34bc15ca2e7799381b6cee3dfeeedaf3b26fcae6d506e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008175"
 ---
-# <a name="schedule-a-storyboard"></a>Programar un guion gráfico
+# <a name="schedule-a-storyboard"></a>Programar un guión gráfico
 
-Una vez creado un guion gráfico, lo programa el administrador de animaciones.
+Una vez creado un guión gráfico, lo programa el administrador de animaciones.
 
 ## <a name="overview"></a>Información general
 
-De forma predeterminada, cada guion gráfico se inicia inmediatamente cuando está programado. Esto significa que cuando un guion gráfico comienza a animar una o más variables, puede interrumpir cualquier otro guion gráfico que anime esas mismas variables. Sin embargo, una aplicación puede especificar otros comportamientos determinando la prioridad relativa entre los guiones gráficos.
+De forma predeterminada, cada guión gráfico se inicia inmediatamente cuando se programa. Esto significa que cuando un guión gráfico empieza a animar una o varias variables, puede interrumpir cualquier otro guión gráfico que anima esas mismas variables. Sin embargo, una aplicación puede especificar otros comportamientos mediante la determinación de la prioridad relativa entre guiones gráficos.
 
-Una vez que se ha programado un guion gráfico, ya no se puede modificar. Sin embargo, una vez que se ha quitado un guion gráfico de la programación, se puede programar para que se reproduzca. Los desarrolladores deben tener cuidado al volver a usar guiones gráficos, ya que esto solo debe hacerse cuando no es posible que sea necesario poner en cola el mismo guion gráfico debido a una acción del usuario cuando ya se está reproduciendo o en cola en la programación.
+Una vez programado un guión gráfico, ya no se puede modificar. Sin embargo, una vez que se ha quitado un guión gráfico de la programación, se puede volver a programar para su reproducción. Los desarrolladores deben tener cuidado al volver a usar guiones gráficos, ya que esto solo debe hacerse cuando no hay ninguna posibilidad de que el mismo guión gráfico tenga que ponerse en cola debido a una acción del usuario cuando ya se está reproduciendo o en cola en la programación.
 
 ## <a name="example-code"></a>Código de ejemplo
 
-El siguiente código de ejemplo se toma de MainWindow. cpp en la animación de Windows ejemplos de animaciones [controladas](application-driven-animation-sample.md) por la aplicación y la [animación controlada por temporizador](timer-driven-animation-sample.md). Usa el método [**IUIAnimationStoryboard:: Schedule**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-schedule) para programar el guión gráfico. Este método requiere la hora actual como parámetro.
+El código de ejemplo siguiente se toma de MainWindow.cpp en los ejemplos de animación Windows animación controlada por la aplicación y [animación controlada por temporizador](timer-driven-animation-sample.md). [](application-driven-animation-sample.md) Usa el método [**IUIAnimationStoryboard::Schedule**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-schedule) para programar el guión gráfico. Este método requiere la hora actual como parámetro.
 
 
 ```
@@ -47,24 +47,24 @@ if (SUCCEEDED(hr))
 
 ## <a name="previous-step"></a>Paso anterior
 
-Antes de comenzar este paso, debe haber completado este paso: [crear un guion gráfico y agregar transiciones](updating---timer-driven-animation.md).
+Antes de iniciar este paso, debe haber completado este paso: Crear [un guión gráfico y Agregar transiciones](updating---timer-driven-animation.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**IUIAnimationStoryboard:: Schedule**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-schedule)
+[**IUIAnimationStoryboard::Schedule**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-schedule)
 </dt> <dt>
 
-[**IUIAnimationTimer:: GetTime**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimer-gettime)
+[**IUIAnimationTimer::GetTime**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimer-gettime)
 </dt> <dt>
 
 [Información general sobre guiones gráficos](storyboard-construction.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

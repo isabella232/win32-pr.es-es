@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de salida de la llamada del sistema. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de salida de llamadas del sistema. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: bb9a2770-f37b-4055-8811-59ba117adf82
-title: Clase SysCallExit
+title: SysCallExit (clase)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: af46f374d4532efc15185a4716526beabfe5ced1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa297ced8f6c0d17c0c01da9ce11705d30fe7448c8bc2f2ae6358ddc85f653be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102065"
 ---
-# <a name="syscallexit-class"></a>Clase SysCallExit
+# <a name="syscallexit-class"></a>SysCallExit (clase)
 
-Esta clase es la clase de tipo de evento para los eventos de salida de la llamada del sistema.
+Esta clase es la clase de tipo de evento para los eventos de salida de llamadas del sistema.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,26 +38,26 @@ class SysCallExit : PerfInfo
 
 ## <a name="members"></a>Miembros
 
-La clase **SysCallExit** tiene estos tipos de miembros:
+La **clase SysCallExit** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **SysCallExit** tiene estas propiedades.
+La **clase SysCallExit** tiene estas propiedades.
 
 <dl> <dt>
 
 **SysCallNtStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), Format ("x")
+Calificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
 Código de estado devuelto por la llamada del sistema NT.
@@ -70,8 +70,8 @@ Código de estado devuelto por la llamada del sistema NT.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

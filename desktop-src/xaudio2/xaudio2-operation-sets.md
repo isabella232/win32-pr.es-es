@@ -1,37 +1,37 @@
 ---
-description: En esta información general se presentan varios métodos de XAudio2 que se pueden llamar como parte de un conjunto de operaciones.
+description: En esta introducción se presentan varios métodos XAudio2 a los que puede llamar como parte de un conjunto de operaciones.
 ms.assetid: 5bfd747d-af65-f619-e549-be8130748261
-title: Conjuntos de operaciones de XAudio2
+title: Conjuntos de operaciones XAudio2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90955fc0557f3f84840436c121f768caff4af81b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 68a7f16edfa461d9944691bc4535debc05f820150dadf746caece85cb68c9f97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089415"
 ---
-# <a name="xaudio2-operation-sets"></a>Conjuntos de operaciones de XAudio2
+# <a name="xaudio2-operation-sets"></a>Conjuntos de operaciones XAudio2
 
-En esta información general se presentan varios métodos de XAudio2 que se pueden llamar como parte de un conjunto de operaciones.
+En esta introducción se presentan varios métodos XAudio2 a los que puede llamar como parte de un conjunto de operaciones.
 
-Varios métodos de XAudio2 toman el argumento *OperationSet* , que permite que se llamen como parte de un grupo diferido. En un momento dado, puede aplicar un conjunto completo de cambios simultáneamente llamando a la función [**IXAudio2:: commitChanges**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-commitchanges) con el identificador *OperationSet* para ese grupo. El identificador es un número arbitrario. Por lo tanto, permite que partes independientes del código de cliente apliquen cambios atómicos independientes al gráfico sin ningún conflicto. La práctica recomendada es que el cliente incremente un contador global siempre que necesite generar un identificador único de *OperationSet* . Se garantiza que un conjunto de cambios en el gráfico, aplicados de forma atómica, es preciso para la muestra. Por ejemplo, las voces se iniciarán en sincronización.
+Varios métodos XAudio2 toman el *argumento OperationSet,* que permite llamarlos como parte de un grupo aplazado. En un momento específico, puede aplicar un conjunto completo de cambios simultáneamente llamando a la función [**IXAudio2::CommitChanges**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-commitchanges) con el identificador *OperationSet* para ese grupo. El identificador es un número arbitrario. Por lo tanto, permite que partes independientes del código de cliente apliquen cambios atómicos independientes al gráfico sin conflictos. La práctica recomendada es que el cliente incremente un contador global siempre que necesite generar un identificador *OperationSet único* y nuevo. Se garantiza que un conjunto de cambios en el gráfico, aplicados de forma atómica, son precisos para la muestra. Por ejemplo, las voces se iniciarán en sincronización.
 
-Si establece *OperationSet* en \_ la confirmación de XAUDIO2 \_ Now, el cambio se aplica inmediatamente. Surte efecto en el primer paso de procesamiento de audio después de la llamada al método. Si llama a [**commitChanges**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-commitchanges) con \_ la confirmación de XAUDIO2 \_ All, se realizan cambios en todos los conjuntos de operaciones pendientes, independientemente de su identificador *OperationSet* .
+Si establece *OperationSet en* XAUDIO2 \_ COMMIT \_ NOW, el cambio se aplica inmediatamente. Tiene efecto en el primer paso de procesamiento de audio después de la llamada al método . Si llama a [**CommitChanges**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-commitchanges) con XAUDIO2 COMMIT ALL, se realizan cambios en todos los conjuntos de operaciones pendientes, independientemente de su \_ \_ identificador *OperationSet.*
 
-Ciertos métodos surten efecto inmediatamente cuando se les llama desde una devolución de llamada de XAudio2 con un *OperationSet* de la confirmación de xaudio2 \_ \_ ahora. Todos los demás métodos que toman un argumento *OperationSet* solo surten efecto en el siguiente paso de procesamiento una vez que se llama al método (si se llama con la confirmación de XAUDIO2 \_ \_ ahora), o después de llamar a [**commitChanges**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-commitchanges) con el mismo *OperationSet*. Debido a esto, es posible que ciertas llamadas al método no se realicen siempre en el mismo orden en el que se llamaron.
+Ciertos métodos tienen efecto inmediatamente cuando se les llama desde una devolución de llamada XAudio2 con *un OperationSet* de XAUDIO2 \_ COMMIT \_ NOW. Todos los demás métodos que toman un argumento *OperationSet* solo tienen efecto en el siguiente paso de procesamiento después de llamar al método (si se llama con XAUDIO2 COMMIT NOW) o después de llamar a \_ \_ [**CommitChanges**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-commitchanges) con el mismo *OperationSet*. Debido a esto, es posible que determinadas llamadas a métodos no siempre se sucedan en el mismo orden en que se llamaron.
 
-Todas las operaciones pendientes se confirman de forma atómica cuando se llama a [**IXAudio2:: StopEngine**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-stopengine) . Los métodos a los que se llama mientras se detiene el motor surten efecto inmediatamente, independientemente del valor de *OperationSet* proporcionado. Al reiniciar el motor, XAudio2 vuelve al modo asincrónico.
+Todas las operaciones pendientes se confirman de forma [**atómica cuando se llama a IXAudio2::StopEngine.**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-stopengine) Los métodos a los que se llama mientras se detiene el motor se aplican inmediatamente, independientemente del *valor OperationSet* proporcionado. Al reiniciar el motor, XAudio2 vuelve al modo asincrónico.
 
-Los escenarios simples en los que los conjuntos de operaciones son útiles son los ejemplos siguientes.
+Entre los escenarios sencillos en los que los conjuntos de operaciones son útiles se incluyen los ejemplos siguientes.
 
 -   Iniciar varias voces simultáneamente.
 -   Enviar simultáneamente un búfer a una voz, establecer los parámetros de voz e iniciar la voz.
--   Realización de un cambio a gran escala en el gráfico, como la conexión de todas las voces de origen a una nueva voz de submezcla.
+-   Realizar un cambio a gran escala en el gráfico, como conectar todas las voces de origen a una nueva voz de submezcla.
 
-Vea [Cómo: agrupar métodos de audio como un conjunto de operaciones](how-to--group-audio-methods-as-an-operation-set.md) para obtener un ejemplo del uso de un conjunto de operaciones.
+Vea [Cómo: Agrupar métodos de audio como un conjunto de operaciones](how-to--group-audio-methods-as-an-operation-set.md) para obtener un ejemplo del uso de un conjunto de operaciones.
 
-## <a name="operation-set-methods"></a>Métodos de conjunto de operaciones
+## <a name="operation-set-methods"></a>Métodos del conjunto de operaciones
 
 Puede llamar a los métodos siguientes como parte de un conjunto de operaciones.
 
@@ -44,10 +44,10 @@ Puede llamar a los métodos siguientes como parte de un conjunto de operaciones.
 -   [**IXAudio2Voice::SetEffectParameters**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectparameters)
 -   [**IXAudio2Voice::SetOutputMatrix**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setoutputmatrix)
 -   [**IXAudio2Voice::SetVolume**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setvolume)
--   [**IXAudio2SourceVoice:: Start**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-start)
--   [**IXAudio2SourceVoice:: Stop**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-stop)
+-   [**IXAudio2SourceVoice::Start**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-start)
+-   [**IXAudio2SourceVoice::Stop**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-stop)
 
-Tal y como se ha descrito anteriormente, el código de cliente debe llamar finalmente a la función [**IXAudio2:: commitChanges**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-commitchanges) para ejecutar los cambios aplazados.
+Como se ha descrito anteriormente, el código de cliente debe llamar en última instancia a la [**función IXAudio2::CommitChanges**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-commitchanges) para ejecutar los cambios aplazados.
 
 ## <a name="related-topics"></a>Temas relacionados
 

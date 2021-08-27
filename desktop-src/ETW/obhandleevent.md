@@ -1,5 +1,5 @@
 ---
-description: Representa la clase de tipo de evento para los eventos de creación o cierre del control.
+description: Representa la clase de tipo de evento para eventos de cierre o creación de identificadores.
 ms.assetid: 39d27cdf-fa51-4fb1-8998-7150ca627eff
 title: Clase ObHandleEvent
 ms.topic: reference
@@ -16,16 +16,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ae293684bd09322c7193035d374e5e2bad21447f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eec4e0eb00f7c821e3977f448d9c1af7e286d72a21a0a1b9473a6d3cd8fa3451
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083225"
 ---
 # <a name="obhandleevent-class"></a>Clase ObHandleEvent
 
-Representa la clase de tipo de evento para los eventos de creación o cierre del control.
+Representa la clase de tipo de evento para eventos de cierre o creación de identificadores.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -44,20 +44,20 @@ class ObHandleEvent : ObTrace
 
 ## <a name="members"></a>Miembros
 
-La clase **ObHandleEvent** tiene estos tipos de miembros:
+La **clase ObHandleEvent** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **ObHandleEvent** tiene estas propiedades.
+La **clase ObHandleEvent** tiene estas propiedades.
 
 <dl> <dt>
 
 **Handle**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -66,20 +66,20 @@ Tipo de acceso: solo lectura
 Calificadores: [**Format**](event-tracing-mof-qualifiers.md) ("x"), [**WmiDataId**](event-tracing-mof-qualifiers.md) (2)
 </dt> </dl>
 
-Identificador del objeto.
+Identificador de objeto.
 
 </dd> <dt>
 
 **Object**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Format**](event-tracing-mof-qualifiers.md) ("x"), [**puntero**](event-tracing-mof-qualifiers.md), [**WmiDataId**](event-tracing-mof-qualifiers.md) (1)
+Calificadores: [**Format**](event-tracing-mof-qualifiers.md) ("x"), [**Pointer**](event-tracing-mof-qualifiers.md), [**WmiDataId**](event-tracing-mof-qualifiers.md) (1)
 </dt> </dl>
 
 El objeto.
@@ -105,7 +105,7 @@ El nombre del objeto.
 **ObjectType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -124,9 +124,9 @@ Tipo del objeto.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 
 
 

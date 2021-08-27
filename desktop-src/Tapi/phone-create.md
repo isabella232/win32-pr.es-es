@@ -1,19 +1,19 @@
 ---
-description: El \_ mensaje de creación del teléfono TAPI se envía para informar a las aplicaciones de la creación de un nuevo dispositivo telefónico.
+description: El mensaje TAPI PHONE \_ CREATE se envía para informar a las aplicaciones de la creación de un nuevo dispositivo telefónico.
 ms.assetid: 62895b10-76ce-456e-ad02-e2b7764616a8
-title: Mensaje de PHONE_CREATE (TAPI. h)
+title: PHONE_CREATE mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c92dfaad5d4007279f18890021f5cb39c22c4da9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 18633ca9f3d45e08c3e2e054d51261dabe6494f42055567a5a68707408f94d5c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072915"
 ---
-# <a name="phone_create-message"></a>Mensaje de creación de teléfono \_
+# <a name="phone_create-message"></a>Mensaje \_ PHONE CREATE
 
-El mensaje **de \_ creación del teléfono** TAPI se envía para informar a las aplicaciones de la creación de un nuevo dispositivo telefónico.
+El mensaje **TAPI PHONE \_ CREATE** se envía para informar a las aplicaciones de la creación de un nuevo dispositivo telefónico.
 
 
 ```C++
@@ -43,7 +43,7 @@ Sin usar.
 *dwParam1* 
 </dt> <dd>
 
-*HDeviceID* del dispositivo recién creado.
+*hDeviceID del* dispositivo recién creado.
 
 </dd> <dt>
 
@@ -65,20 +65,20 @@ Sin usar.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-A las aplicaciones que negociaron la versión de API 1,3 se les envía un mensaje de [**\_ Estado de teléfono**](phone-state.md) que especifica PHONESTATE \_ reinit, que les obliga a apagar su uso de la API y llama a [**phoneInitialize**](/windows/desktop/api/Tapi/nf-tapi-phoneinitialize) de nuevo para obtener el nuevo número de dispositivos. Sin embargo, la versión 1,4 y posteriores de TAPI no requieren que se cierren todas las aplicaciones antes de permitir que las aplicaciones se reinicialicen. la reinicialización puede realizarse inmediatamente cuando se crea un nuevo dispositivo.
+Las aplicaciones que negociaron la versión 1.3 de la API se envían un mensaje [**PHONE \_ STATE**](phone-state.md) que especifica PHONESTATE REINIT, que requiere que apaguen su uso de la API y llamen a \_ [**phoneInitialize**](/windows/desktop/api/Tapi/nf-tapi-phoneinitialize) de nuevo para obtener el nuevo número de dispositivos. Sin embargo, tapi versión 1.4 y posteriores no requieren que todas las aplicaciones se apaguen antes de permitir que las aplicaciones se reinicialicen. La reinicialización puede tener lugar inmediatamente cuando se crea un nuevo dispositivo.
 
-Las aplicaciones que admiten la versión 1,4 o posterior de TAPI recibirán un mensaje de **\_ creación de teléfono** . Esto informa de la existencia del nuevo dispositivo y su nuevo identificador de dispositivo. A continuación, la aplicación puede elegir si desea o no intentar trabajar con el nuevo dispositivo en su momento.
+Las aplicaciones que admiten TAPI versión 1.4 o posterior se envían un **mensaje PHONE \_ CREATE.** Esto les informa de la existencia del nuevo dispositivo y su nuevo identificador de dispositivo. A continuación, la aplicación puede elegir si intenta o no trabajar con el nuevo dispositivo en su momento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ Las aplicaciones que admiten la versión 1,4 o posterior de TAPI recibirán un m
 
 <dl> <dt>
 
-[**Estado del teléfono \_**](phone-state.md)
+[**ESTADO DEL \_ TELÉFONO**](phone-state.md)
 </dt> <dt>
 
 [**phoneInitialize**](/windows/desktop/api/Tapi/nf-tapi-phoneinitialize)

@@ -1,19 +1,19 @@
 ---
-description: Indica el número de bits que se usan en cada píxel de la imagen. (Normalmente, 8, 16, 24 o 32).
+description: Indica cuántos bits se usan en cada píxel de la imagen. (normalmente 8, 16, 24 o 32).
 ms.assetid: 779a19e4-fb4e-4229-a390-5fd7007c3eae
-title: System. Image. BitDepth
+title: System.Image.BitDepth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45571b1fc7620ca31836fd30d87dcfd46397fe71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 641dcc8dd592955cdf938a467b465a5f57ecf3997b583b087ac61e44d90f9b5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091085"
 ---
-# <a name="systemimagebitdepth"></a>System. Image. BitDepth
+# <a name="systemimagebitdepth"></a>System.Image.BitDepth
 
-Indica el número de bits que se usan en cada píxel de la imagen. (Normalmente, 8, 16, 24 o 32).
+Indica cuántos bits se usan en cada píxel de la imagen. (normalmente 8, 16, 24 o 32).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -160,9 +160,9 @@ propertyDescription
             text = 128
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -177,7 +177,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -189,7 +189,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -207,7 +207,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

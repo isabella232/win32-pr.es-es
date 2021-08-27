@@ -4,16 +4,16 @@ description: Reproducir un archivo MIDI
 ms.assetid: a11b432f-de31-4637-a9cd-eef5fad7591a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7ce9638a5f26a2d701798f72229877dc2758829
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 44ea4b42a6bb0143005352f08af7c0498546ea37697e1a5114820964143e5c48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038035"
 ---
 # <a name="playing-a-midi-file"></a>Reproducir un archivo MIDI
 
-En el siguiente ejemplo se abre un dispositivo de secuenciador MIDI, se comprueba que se ha seleccionado el asignador MIDI como el puerto de salida, se reproduce el archivo MIDI especificado por el parámetro *lpszMIDIFileName* y se cierra el dispositivo una vez completada la reproducción. Usa la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) .
+En el ejemplo siguiente se abre un dispositivo secuenciador de MIDI, se comprueba que el asignador DE MIDI se seleccionó como puerto de salida, se reproduce el archivo MIDI especificado por el parámetro *lpszMIDIFileName* y se cierra el dispositivo una vez completada la reproducción. Usa la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 
 
 ```C++
@@ -88,6 +88,6 @@ DWORD playMIDIFile(HWND hWndNotify, LPSTR lpszMIDIFileName)
 
 
 
- 
+ 
 
- 
+ 

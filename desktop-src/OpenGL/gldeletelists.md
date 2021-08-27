@@ -1,9 +1,9 @@
 ---
-title: función glDeleteLists (GL. h)
-description: La función glDeleteLists elimina un grupo contiguo de listas de presentación.
+title: Función glDeleteLists (Gl.h)
+description: La función glDeleteLists elimina un grupo contiguo de listas para mostrar.
 ms.assetid: 979ab352-99db-4822-922c-a1813b9fcfce
 keywords:
-- glDeleteLists (función) OpenGL
+- Función glDeleteLists OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c11ae41273cba5bd050a62ea330cef9da0647769
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6ec0ffac68119f6f2080ef6ca96ec63fbd35176d3541464a89b6c31f4941b4c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081665"
 ---
-# <a name="gldeletelists-function"></a>glDeleteLists función)
+# <a name="gldeletelists-function"></a>Función glDeleteLists
 
-La función **glDeleteLists** elimina un grupo contiguo de listas de presentación.
+La **función glDeleteLists** elimina un grupo contiguo de listas para mostrar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,14 +44,14 @@ void WINAPI glDeleteLists(
 *list* 
 </dt> <dd>
 
-Nombre entero de la primera lista de visualización que se va a eliminar.
+Nombre entero de la primera lista para mostrar que se eliminará.
 
 </dd> <dt>
 
 *range* 
 </dt> <dd>
 
-Número de listas de presentación que se van a eliminar.
+Número de listas para mostrar que se eliminarán.
 
 </dd> </dl>
 
@@ -67,16 +67,16 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl>     | el *intervalo* era negativo.<br/>                                                                                                      |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *el intervalo* era negativo.<br/>                                                                                                      |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glDeleteLists** hace que se elimine un grupo contiguo de listas de presentación. El parámetro *List* es el nombre de la primera lista de visualización que se va a eliminar y *Range* es el número de listas de presentación que se van a eliminar. Se eliminan todas las listas de pantallas *d* *con*  =    =    +  el *intervalo* de lista d de lista 1.
+La **función glDeleteLists** hace que se elimine un grupo contiguo de listas para mostrar. El *parámetro list* es el nombre de la primera lista para mostrar que se va a eliminar y *el* intervalo es el número de listas para mostrar que se van a eliminar. Se eliminan todas las *listas para mostrar d* con *el* intervalo de  =    =  *lista*  +  *d :* 1.
 
-Todas las ubicaciones de almacenamiento asignadas a las listas de visualización especificadas se liberan y los nombres están disponibles para su reutilización en un momento posterior. Se omiten los nombres del intervalo que no tienen una lista de visualización asociada. Si el *intervalo* es cero, no sucede nada.
+Se liberan todas las ubicaciones de almacenamiento asignadas a las listas de presentación especificadas y los nombres están disponibles para su reutilización más adelante. Los nombres dentro del intervalo que no tienen una lista de visualización asociada se omiten. Si *range* es cero, no ocurre nada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,8 +86,8 @@ Todas las ubicaciones de almacenamiento asignadas a las listas de visualización
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

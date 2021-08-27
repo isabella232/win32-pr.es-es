@@ -1,7 +1,7 @@
 ---
-description: La propiedad manifest se usa para establecer u obtener el contexto de activación activo.
+description: La propiedad Manifest se usa para establecer u obtener el contexto de activación activo.
 ms.assetid: 5ad16c7b-3d66-4083-bc0f-f8294757764f
-title: Propiedad ActCtx. manifest
+title: Propiedad ActCtx.Manifest
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Sxsoa.dll
-ms.openlocfilehash: 2ebc671bbfcdfc951343e7f92cc0385ace43997e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77d45bd0dc97ed99ee976da4e262ed3d4819b0ec4c744a4e0a8d76b98f5bacd7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119977235"
 ---
-# <a name="actctxmanifest-property"></a>Propiedad ActCtx. manifest
+# <a name="actctxmanifest-property"></a>Propiedad ActCtx.Manifest
 
-La propiedad **manifest** se usa para establecer u obtener el contexto de activación activo.
+La **propiedad Manifest** se usa para establecer u obtener el contexto de activación activo.
 
 Esta propiedad es de solo lectura.
 
@@ -37,15 +37,15 @@ propVal = ActCtx.Manifest
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se puede crear un contexto de activación con el archivo de manifiesto proporcionado, el siguiente script establece la propiedad manifest y activa la constante de activación especificada por el manifiesto. Si no se puede crear un contexto de activación a partir del manifiesto, el contexto de activación permanece establecido en el contexto de activación actualmente activo.
+Si se puede crear un contexto de activación con el archivo de manifiesto proporcionado, el siguiente script establece la propiedad Manifest y activa la constante de activación especificada por el manifiesto. Si no se puede crear un contexto de activación a partir del manifiesto, el contexto de activación permanece establecido en el contexto de activación activo actualmente.
 
-ActCtxObj. manifest = " *nombre de archivo de manifiesto* de <>";
+ActCtxObj.Manifest = "<*nombre de archivo de* manifiesto>";
 
-Si un contexto de activación se ha creado o activado previamente, el siguiente script establece la propiedad **manifest** en el contexto de activación actual. Si un contexto de activación no se ha creado o activado previamente, establece la propiedad **manifest** en una cadena vacía.
+Si previamente se ha creado o activado un contexto de activación, el siguiente script establece la propiedad **Manifest** en el contexto de activación actual. Si no se ha creado o activado previamente un contexto de activación, se establece la propiedad **Manifest** en una cadena vacía.
 
-"BSTR bstrManifest = ActCtxObj. manifest"
+"BSTR bstrManifest = ActCtxObj.Manifest"
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,10 +53,10 @@ Si un contexto de activación se ha creado o activado previamente, el siguiente 
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Sxsoa.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IActCtx se define como 8FA7728F-B69B-4EE5-99F2-E2AA021BEF28<br/>           |
+| IID<br/>                      | IID IActCtx se define como \_ 8FA7728F-B69B-4EE5-99F2-E2AA021BEF28<br/>           |
 
 
 

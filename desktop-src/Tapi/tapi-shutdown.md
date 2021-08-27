@@ -1,28 +1,28 @@
 ---
-description: Se requiere un cierre adecuado de las sesiones de comunicaciones y de una aplicación completa para evitar que los recursos permanezcan relacionados en las llamadas o aplicaciones que ya no las necesiten.
+description: Se requiere el apagado correcto de las sesiones de comunicaciones y de toda una aplicación para evitar que los recursos que permanecen vinculados a llamadas o aplicaciones que ya no los necesitan.
 ms.assetid: 40694b7f-474b-41aa-be3f-48e4ca517a6f
 title: Apagado de TAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 661273a3d72559d965fa1ea6066f1090f8e6b6e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88303d2475a2ce0a21478575483c0fd93e44e96b71efa83790b7973343d6d9f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080445"
 ---
 # <a name="tapi-shutdown"></a>Apagado de TAPI
 
-Se requiere un cierre adecuado de las sesiones de comunicaciones y de una aplicación completa para evitar que los recursos permanezcan relacionados en las llamadas o aplicaciones que ya no las necesiten.
+Se requiere el apagado correcto de las sesiones de comunicaciones y de toda una aplicación para evitar que los recursos que permanecen vinculados a llamadas o aplicaciones que ya no los necesitan.
 
-TAPI proporciona una serie de funciones y métodos para ayudar en el proceso. Obviamente, la aplicación también debe asumir la responsabilidad de liberar correctamente la memoria asignada, ya sea en forma de estructuras de datos o de referencias COM.
+TAPI proporciona una serie de funciones y métodos para ayudar en el proceso. Obviamente, la aplicación también debe asumir la responsabilidad de liberar correctamente la memoria asignada, ya sea en forma de estructuras de datos o referencias COM.
 
 
 
-| Funciones de TAPI 2. x                                                            | Descripción                                                            |
+| Funciones TAPI 2.x                                                            | Descripción                                                            |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**lineRegisterRequestRecipient**](/windows/win32/api/tapi/nf-tapi-lineregisterrequestrecipient) | Anula el registro de la aplicación como un controlador para llamadas de telefonía asistidas. |
-| [**lineClose**](/windows/win32/api/tapi/nf-tapi-lineclose)                                       | Desconecta la aplicación como administrador de llamadas en la línea determinada.  |
+| [**lineRegisterRequestRecipient**](/windows/win32/api/tapi/nf-tapi-lineregisterrequestrecipient) | Anula el registro de la aplicación como controlador para llamadas de telefonía asistidas. |
+| [**lineClose**](/windows/win32/api/tapi/nf-tapi-lineclose)                                       | Desconecta la aplicación como administrador para las llamadas en la línea dada.  |
 | [**lineShutdown**](/windows/win32/api/tapi/nf-tapi-lineshutdown)                                 | Cierra el uso de la aplicación de la abstracción de línea.            |
 
 
@@ -31,10 +31,10 @@ TAPI proporciona una serie de funciones y métodos para ayudar en el proceso. Ob
 
 
 
-| Interfaces o métodos TAPI 3. x                                            | Descripción                                                                |
+| Interfaces o métodos tapi 3.x                                            | Descripción                                                                |
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [**ITTAPI::UnregisterNotifications**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-unregisternotifications) | Quita cualquier registro de notificación de eventos realizado por la aplicación. |
-| [**ITTAPI:: Shutdown**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-shutdown)                               | Desconecta la aplicación como administrador de llamadas.                             |
+| [**ITTAPI::UnregisterNotifications**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-unregisternotifications) | Quita los registros de notificaciones de eventos realizados por la aplicación. |
+| [**ITTAPI::Shutdown**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-shutdown)                               | Desconecta la aplicación como administrador de llamadas.                             |
 
 
 
