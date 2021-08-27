@@ -1,31 +1,31 @@
 ---
-description: Contiene un puntero al descriptor de presentación para el origen de medios.
+description: Contiene un puntero al descriptor de presentación para el origen multimedia.
 ms.assetid: 4f2c1ad8-fda9-482f-b82a-9838d15d2785
-title: MF_TOPONODE_PRESENTATION_DESCRIPTOR atributo (Mfidl. h)
+title: MF_TOPONODE_PRESENTATION_DESCRIPTOR atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0d95fae4f2c4d4a482c2a62d57e0835ea4f1c36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3bfa43a57bcead1312ba8138ab085771d29a008fe2558ea7c6bfb29121d631bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113713"
 ---
-# <a name="mf_toponode_presentation_descriptor-attribute"></a>\_Atributo de \_ descriptor de presentación MF TOPONODE \_
+# <a name="mf_toponode_presentation_descriptor-attribute"></a>Atributo MF \_ TOPONODE \_ PRESENTATION \_ DESCRIPTOR
 
-Contiene un puntero al descriptor de presentación para el origen de medios.
+Contiene un puntero al descriptor de presentación para el origen multimedia.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**IUnknown \** _
+**IUnknown\***
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se aplica a los nodos de origen (_ * MF \_ Topology \_ SOURCESTREAM \_ node * *).
+Este atributo se aplica a los nodos de origen **(MF \_ TOPOLOGY \_ SOURCESTREAM \_ NODE**).
 
 El valor del atributo es un puntero a la interfaz [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor) del descriptor de presentación. Este atributo es necesario.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -43,19 +43,19 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
+[**ATTRIBUTEAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
 </dt> <dt>
 
-[**IMFAttributes:: Setunknown (**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
+[**ATTRIBUTEAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
 </dt> <dt>
 
-[Atributos de Media Foundation](media-foundation-attributes.md)
+[Media Foundation atributos](media-foundation-attributes.md)
 </dt> </dl>
 
  

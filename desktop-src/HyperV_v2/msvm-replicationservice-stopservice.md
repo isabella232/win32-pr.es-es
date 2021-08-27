@@ -1,5 +1,5 @@
 ---
-description: 'Método StopService de la clase Msvm_ReplicationService : detiene el servicio.'
+description: 'Método StopService de la Msvm_ReplicationService clase : detiene el servicio.'
 ms.assetid: ff92e1ba-3093-4e78-8729-9f98a22a9f74
 title: Método StopService de la Msvm_ReplicationService clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 75f70c782ff887076a8ddc6a16a6d9cbdadba16e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 236b197f87360d6ca4dbc4c68970a17d858fb2c200fa5c7b3f8431cb65067f9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130405"
 ---
 # <a name="stopservice-method-of-the-msvm_replicationservice-class"></a>Método StopService de la clase ReplicationService de Msvm \_
 
@@ -53,7 +53,7 @@ El método devuelve uno de los valores siguientes.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ El método devuelve uno de los valores siguientes.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

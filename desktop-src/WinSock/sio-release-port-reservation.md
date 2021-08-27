@@ -1,28 +1,28 @@
 ---
 description: El código de control libera una reserva en tiempo de ejecución para un bloque de puertos TCP o UDP.
 ms.assetid: 24D67A40-8CE9-4AF1-90BF-599D19C87B89
-title: Código de control de SIO_RELEASE_PORT_RESERVATION
+title: SIO_RELEASE_PORT_RESERVATION código de control
 ms.topic: reference
 ms.date: 05/20/2019
 req.target-min-winverclnt: Windows Vista [desktop apps only]
 req.target-min-winversvr: Windows Server 2008 [desktop apps only]
 api_location:
 - mstcpip.h
-ms.openlocfilehash: 57f96d0396d661eba12f9e64238c492f38e97b2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d949e325292210ec7126da5ddf65c6ff30c5aa151cfaf85331fb7ebf3e5b346
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097504"
 ---
-# <a name="sio_release_port_reservation-control-code"></a>Código de control de SIO_RELEASE_PORT_RESERVATION
+# <a name="sio_release_port_reservation-control-code"></a>SIO_RELEASE_PORT_RESERVATION código de control
 
 ## <a name="description"></a>Descripción
 
-El código de control de **\_ reserva de \_ Puerto \_ de versión SiO** libera una reserva en tiempo de ejecución para un bloque de puertos TCP o UDP.
-La reserva en tiempo de ejecución que se va a liberar debe haberse obtenido del proceso de emisión mediante el [**SIO_ACQUIRE_PORT_RESERVATION**](sio-acquire-port-reservation.md) ioctl.
+El código de control **SIO \_ RELEASE PORT \_ \_ RESERVATION** libera una reserva en tiempo de ejecución para un bloque de puertos TCP o UDP.
+La reserva en tiempo de ejecución que se va a liberar debe haber obtenido del proceso de emisión mediante [**SIO_ACQUIRE_PORT_RESERVATION**](sio-acquire-port-reservation.md) IOCTL.
 
-Para realizar esta operación, llame a la función [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) o **WSPIoctl** con los parámetros siguientes.
+Para realizar esta operación, llame a la [**función WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) o **WSPIoctl** con los parámetros siguientes.
 
 ```cpp
 int WSAIoctl(
@@ -59,22 +59,22 @@ int WSPIoctl(
 
 ### <a name="s"></a>s
 
-Un descriptor que identifica un socket.
+Descriptor que identifica un socket.
 
 ### <a name="dwiocontrolcode"></a>dwIoControlCode
 
 Código de control de la operación.
-Use **la \_ \_ \_ reserva de puertos de versión SiO** para esta operación.
+Use **SIO \_ RELEASE PORT \_ RESERVATION \_ para** esta operación.
 
 ### <a name="lpvinbuffer"></a>lpvInBuffer
 
 Puntero al búfer de entrada.
-Este parámetro contiene un puntero a una estructura de [**INET_PORT_RESERVATION_TOKEN**](/windows/desktop/api/mstcpip/ns-mstcpip-inet_port_reservation_token) con el token de la reserva de puerto TCP o UDP que se va a liberar.
+Este parámetro contiene un puntero a una [**estructura INET_PORT_RESERVATION_TOKEN**](/windows/desktop/api/mstcpip/ns-mstcpip-inet_port_reservation_token) con el token para que se libere la reserva de puertos TCP o UDP.
 
 ### <a name="cbinbuffer"></a>cbInBuffer
 
 Tamaño, en bytes, del búfer de entrada.
-Este parámetro debe ser al menos el tamaño de la estructura [**INET_PORT_RESERVATION_TOKEN**](/windows/desktop/api/mstcpip/ns-mstcpip-inet_port_reservation_token) .
+Este parámetro debe ser al menos el tamaño de la [**INET_PORT_RESERVATION_TOKEN**](/windows/desktop/api/mstcpip/ns-mstcpip-inet_port_reservation_token) estructura.
 
 ### <a name="lpvoutbuffer"></a>lpvOutBuffer
 
@@ -90,99 +90,99 @@ Este parámetro debe establecerse en cero.
 
 Puntero a una variable que recibe el tamaño, en bytes, de los datos almacenados en el búfer de salida.
 
-Si el búfer de salida es demasiado pequeño, se produce un error en la llamada, [**WSAGetLastError**](/windows/desktop/api/winsock/nf-winsock-wsagetlasterror) devuelve [**WSAEINVAL**](windows-sockets-error-codes-2.md)y el parámetro *LpcbBytesReturned* apunta a un valor **DWORD** de cero.
+Si el búfer de salida es demasiado pequeño, se produce un error en la llamada, [**WSAGetLastError**](/windows/desktop/api/winsock/nf-winsock-wsagetlasterror) devuelve [**WSAEINVAL**](windows-sockets-error-codes-2.md)y el parámetro *lpcbBytesReturned* apunta a un valor **DWORD** de cero.
 
-Si *lpOverlapped* es **null**, el valor **DWORD** al que apunta el parámetro *lpcbBytesReturned* devuelto en una llamada correcta no puede ser cero.
+Si *lpOverlapped* es **NULL**, el valor **DWORD** al que apunta el parámetro *lpcbBytesReturned* que se devuelve en una llamada correcta no puede ser cero.
 
-Si el parámetro *lpOverlapped* no es **null** para los sockets superpuestos, las operaciones que no se pueden completar inmediatamente se iniciarán y la finalización se indicará más adelante.
-El valor **DWORD** al que apunta el parámetro *lpcbBytesReturned* que se devuelve puede ser cero, ya que no se puede determinar el tamaño de los datos almacenados hasta que se haya completado la operación superpuesta.
-Se puede recuperar el estado final de finalización cuando se señala el método de finalización adecuado cuando se ha completado la operación.
+Si el *parámetro lpOverlapped* no es **NULL** para los sockets superpuestos, se iniciarán las operaciones que no se pueden completar inmediatamente y la finalización se indicará más adelante.
+El **valor DWORD** al que apunta el parámetro *lpcbBytesReturned* que se devuelve puede ser cero, ya que el tamaño de los datos almacenados no se puede determinar hasta que se haya completado la operación superpuesta.
+El estado de finalización final se puede recuperar cuando se señala el método de finalización adecuado cuando se ha completado la operación.
 
 ### <a name="lpvoverlapped"></a>lpvOverlapped
 
-Puntero a una estructura [**WSAOVERLAPPED**](/windows/desktop/api/winsock2/ns-winsock2-wsaoverlapped) .
+Puntero a una [**estructura WSAOVERLAPPED.**](/windows/desktop/api/winsock2/ns-winsock2-wsaoverlapped)
 
-Si el socket *s* se creó sin el atributo superpuesto, se omite el parámetro *lpOverlapped* .
+Si se *crearon sockets* sin el atributo superpuesto, se omite el parámetro *lpOverlapped.*
 
-Si se abrió *s* con el atributo superpuesto y el parámetro *LpOverlapped* no es **null**, la operación se realiza como una operación superpuesta (asincrónica).
-En este caso, el parámetro *lpOverlapped* debe apuntar a una estructura [**WSAOVERLAPPED**](/windows/desktop/api/winsock2/ns-winsock2-wsaoverlapped) válida.
+Si *s* se abrió con el atributo superpuesto y el parámetro *lpOverlapped* no es **NULL,** la operación se realiza como una operación superpuesta (asincrónica).
+En este caso, *el parámetro lpOverlapped* debe apuntar a una estructura [**WSAOVERLAPPED**](/windows/desktop/api/winsock2/ns-winsock2-wsaoverlapped) válida.
 
-En el caso de las operaciones superpuestas, las funciones [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) o **WSPIoctl** se devuelven inmediatamente y el método de finalización adecuado se señala cuando se ha completado la operación.
-De lo contrario, la función no devuelve ningún resultado hasta que se haya completado la operación o se produzca un error.
+En el caso de las operaciones superpuestas, la función [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) o **WSPIoctl** se devuelve inmediatamente y se señala el método de finalización adecuado cuando se ha completado la operación.
+De lo contrario, la función no se devuelve hasta que se ha completado la operación o se produce un error.
 
 ### <a name="lpcompletionroutine"></a>lpCompletionRoutine
 
 Tipo: \_ In_opt \_ [ **LPWSAOVERLAPPED_COMPLETION_ROUTINE**](/windows/win32/api/winsock2/nc-winsock2-lpwsaoverlapped_completion_routine)
 
-Puntero a la rutina de finalización a la que se llama cuando la operación se ha completado (se omite para los sockets no superpuestos).
+Puntero a la rutina de finalización a la que se llama cuando se ha completado la operación (se omite para los sockets no superpuestos).
 
 ### <a name="lpthreadid"></a>lpThreadId
 
-Puntero a una estructura [**WSATHREADID**](/windows/desktop/api/ws2spi/ns-ws2spi-wsathreadid) que va a usar el proveedor en una llamada subsiguiente a [**WPUQueueApc**](/windows/desktop/api/ws2spi/nf-ws2spi-wpuqueueapc).
-El proveedor debe almacenar la estructura [**WSATHREADID**](/windows/desktop/api/ws2spi/ns-ws2spi-wsathreadid) a la que se hace referencia (no el puntero a la misma) hasta que se devuelva la función [**WPUQueueApc**](/windows/desktop/api/ws2spi/nf-ws2spi-wpuqueueapc) .
+Puntero a una [**estructura WSATHREADID**](/windows/desktop/api/ws2spi/ns-ws2spi-wsathreadid) que usará el proveedor en una llamada posterior a [**WPUQueueApc**](/windows/desktop/api/ws2spi/nf-ws2spi-wpuqueueapc).
+El proveedor debe almacenar la estructura [**WSATHREADID**](/windows/desktop/api/ws2spi/ns-ws2spi-wsathreadid) a la que se hace referencia (no el puntero a la misma) hasta que se devuelva la función [**WPUQueueApc.**](/windows/desktop/api/ws2spi/nf-ws2spi-wpuqueueapc)
 
-**Nota:**  Este parámetro solo se aplica a la función **WSPIoctl** .
+**Nota**  Este parámetro solo se aplica a la **función WSPIoctl.**
 
 ### <a name="lperrno"></a>lpErrno
 
 Puntero al código de error.
 
-**Nota:**  Este parámetro solo se aplica a la función **WSPIoctl** .
+**Nota**  Este parámetro solo se aplica a la **función WSPIoctl.**
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la operación se completa correctamente, la función [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) o **WSPIoctl** devuelve cero.
+Si la operación se completa correctamente, la [**función WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) o **WSPIoctl** devuelve cero.
 
-Si se produce un error en la operación o está pendiente, la función [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) o **WSPIoctl** devuelve un **\_ error de socket**.
-Para obtener información de error extendida, llame a [**WSAGetLastError**](/windows/desktop/api/winsock/nf-winsock-wsagetlasterror).
+Si se produce un error en la operación o está pendiente, la [**función WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) o **WSPIoctl** devuelve **SOCKET \_ ERROR**.
+Para obtener información de error extendida, llame [**a WSAGetLastError**](/windows/desktop/api/winsock/nf-winsock-wsagetlasterror).
 
 | Código de error | Significado |
 |------------|---------|
-| **\_e/s de WSA \_ pendientes** | La operación de e/s superpuesta está en curso. Se devuelve este valor si una operación superpuesta se ha iniciado correctamente y la finalización se indicará en un momento posterior. |
-| **\_operación WSA \_ anulada** | La operación de e/s se ha anulado debido a una salida de subproceso o una solicitud de aplicación. Se devuelve este error si se ha cancelado una operación superpuesta debido al cierre del socket o a la ejecución del comando **SIO_FLUSH** ioctl. |
-| **WSAEFAULT** | El sistema detectó una dirección de puntero no válida al intentar usar un argumento de puntero en una llamada. Este error se devuelve cuando el parámetro *lpOverlapped* o *lpCompletionRoutine* no está totalmente incluido en una parte válida del espacio de direcciones del usuario. |
-| **WSAEINPROGRESS** | Se está ejecutando una operación de bloqueo actualmente. Se devuelve este error si la función se invoca cuando hay una devolución de llamada en curso. |
-| **WSAEINTR** | Una operación de bloqueo fue interrumpida por una llamada a **WSACancelBlockingCall**. Se devuelve este error si se interrumpió una operación de bloqueo. |
-| **WSAEINVAL** | Se proporcionó un argumento no válido. Se devuelve este error si el parámetro *dwIoControlCode* no es un comando válido o si un parámetro de entrada especificado no es aceptable, o si el comando no es aplicable al tipo de socket especificado. |
-| **WSAENETDOWN** | Una operación de socket encontró una red inactiva. Se devuelve este error si se ha producido un error en el subsistema de red. |
-| **WSAENOTSOCK** | Se intentó realizar una operación en algo que no es un socket. Se devuelve este error si el *descriptor* no es un socket. |
-| **WSAEOPNOTSUPP** | La operación intentada no se admite para el tipo de objeto al que se hace referencia. Se devuelve este error si no se admite el comando IOCTL especificado. Este error también se devuelve si el proveedor de transporte no admite el ioctl de reserva de puertos de la **\_ versión \_ \_ SiO** . Este error también se devuelve cuando se realiza un intento de usar el ioctl de **\_ reserva de \_ puertos \_ de versión SiO** en un socket distinto de UDP o TCP. |
+| **WSA \_ IO \_ PENDING** | La operación de E/S superpuesta está en curso. Este valor se devuelve si una operación superpuesta se inició correctamente y la finalización se indicará más adelante. |
+| **WSA \_ OPERATION \_ ABORTED** | La operación de E/S se ha anulado debido a una salida del subproceso o a una solicitud de aplicación. Este error se devuelve si se canceló una operación superpuesta debido  al cierre del socket o a la ejecución del SIO_FLUSH ioCTL. |
+| **WSAEFAULT** | El sistema detectó una dirección de puntero no válida al intentar usar un argumento de puntero en una llamada. Este error se devuelve del parámetro *lpOverlapped* o *lpCompletionRoutine* no está totalmente contenido en una parte válida del espacio de direcciones del usuario. |
+| **WSAEINPROGRESS** | Se está ejecutando una operación de bloqueo actualmente. Este error se devuelve si se invoca la función cuando hay una devolución de llamada en curso. |
+| **WSAEINTR** | Una llamada a **WSACancelBlockingCall** interrumpió una operación de bloqueo. Este error se devuelve si se interrumpió una operación de bloqueo. |
+| **WSAEINVAL** | Se proporcionó un argumento no válido. Este error se devuelve si el parámetro *dwIoControlCode* no es un comando válido, un parámetro de entrada especificado no es aceptable o el comando no es aplicable al tipo de socket especificado. |
+| **WSAENETDOWN** | Una operación de socket encontró una red inactiva. Este error se devuelve si se ha producido un error en el subsistema de red. |
+| **WSAENOTSOCK** | Se intentó realizar una operación en algo que no es un socket. Este error se devuelve si el descriptor *s* no es un socket. |
+| **WSAEOPNOTSUPP** | La operación intentada no se admite para el tipo de objeto al que se hace referencia. Este error se devuelve si no se admite el comando IOCTL especificado. Este error también se devuelve si el proveedor de transporte no admite **SIO \_ RELEASE PORT \_ \_ RESERVATION** IOCTL. Este error también se devuelve cuando se realiza un intento de usar EL PUERTO DE VERSIÓN DE **SIO \_ \_ \_ RESERVATION** IOCTL en un socket distinto de UDP o TCP. |
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El ioctl de **\_ reserva de \_ puertos \_ de versión SiO** es compatible con Windows Vista y versiones posteriores del sistema operativo.
+**SIO \_ RELEASE PORT \_ \_ RESERVATION** IOCTL se admite en Windows Vista y versiones posteriores del sistema operativo.
 
-Las aplicaciones y los servicios que necesitan reservar puertos se dividen en dos categorías.
-La primera categoría incluye componentes que necesitan un puerto determinado como parte de su funcionamiento.
+Las aplicaciones y los servicios que necesitan reservar puertos se divide en dos categorías.
+La primera categoría incluye componentes que necesitan un puerto determinado como parte de su operación.
 Por lo general, estos componentes prefieren especificar su puerto necesario en el momento de la instalación (por ejemplo, en un manifiesto de aplicación).
 La segunda categoría incluye componentes que necesitan cualquier puerto o bloque de puertos disponible en tiempo de ejecución.
-Estas dos categorías corresponden a las solicitudes de reserva de puertos específicos y comodín.
-Las solicitudes de reserva específicas pueden ser persistentes o en tiempo de ejecución, mientras que las solicitudes de reserva de Puerto comodín solo se admiten en tiempo de ejecución.
+Estas dos categorías corresponden a solicitudes de reserva de puertos específicos y comodín.
+Las solicitudes de reserva específicas pueden ser persistentes o en tiempo de ejecución, mientras que las solicitudes de reserva de puerto comodín solo se admiten en tiempo de ejecución.
 
-El [**SIO_ACQUIRE_PORT_RESERVATION**](sio-acquire-port-reservation.md) ioctl se usa para solicitar una reserva en tiempo de ejecución para un bloque de puertos TCP o UDP.
-En el caso de las reservas de puerto en tiempo de ejecución, el grupo de puertos requiere que se consuman reservas del proceso en cuyo socket se concedió la reserva.
-Las reservas de puerto en tiempo de ejecución solo duran el tiempo que dure el socket en el que se llamó a la [**SIO_ACQUIRE_PORT_RESERVATION**](sio-acquire-port-reservation.md) ioctl.
-Por el contrario, cualquier proceso puede consumir reservas de Puerto persistentes creadas con la función [**CreatePersistentTcpPortReservation**](/windows/desktop/api/iphlpapi/nf-iphlpapi-createpersistenttcpportreservation) o [**CreatePersistentUdpPortReservation**](/windows/desktop/api/iphlpapi/nf-iphlpapi-createpersistentudpportreservation) con la capacidad de obtener reservas persistentes.
+La [**SIO_ACQUIRE_PORT_RESERVATION**](sio-acquire-port-reservation.md) IOCTL se usa para solicitar una reserva en tiempo de ejecución para un bloque de puertos TCP o UDP.
+Para las reservas de puertos en tiempo de ejecución, el grupo de puertos requiere que las reservas se consuman desde el proceso en cuyo socket se concedió la reserva.
+Las reservas de puertos en tiempo de ejecución solo duren mientras dure el socket en el que [**se llamó SIO_ACQUIRE_PORT_RESERVATION**](sio-acquire-port-reservation.md) IOCTL.
+Por el contrario, cualquier proceso puede consumir las reservas de puertos persistentes creadas mediante la función [**CreatePersistentTcpPortReservation**](/windows/desktop/api/iphlpapi/nf-iphlpapi-createpersistenttcpportreservation) o [**CreatePersistentUdpPortReservation**](/windows/desktop/api/iphlpapi/nf-iphlpapi-createpersistentudpportreservation) con la capacidad de obtener reservas persistentes.
 
-El ioctl de **\_ reserva de \_ puertos \_ de versión SiO** se usa para liberar una reserva en tiempo de ejecución para un bloque de puertos TCP o UDP.
+**SIO \_ RELEASE PORT \_ \_ RESERVATION** IOCTL se usa para liberar una reserva en tiempo de ejecución para un bloque de puertos TCP o UDP.
 
-Si los parámetros *lpOverlapped* y *lpCompletionRoutine* son **null**, el socket de esta función se tratará como un socket no superpuesto.
-En el caso de un socket no superpuesto, se omiten los parámetros *lpOverlapped* y *lpCompletionRoutine* , salvo que la función puede bloquearse si socket *s* está en modo de bloqueo.
-Si socket *s* está en modo de no bloqueo, esta función seguirá bloqueando, ya que este ioctl determinado no admite el modo de no bloqueo.
+Si los parámetros *lpOverlapped* y *lpCompletionRoutine* son **NULL,** el socket de esta función se tratará como un socket no superpuesto.
+En el caso de un socket no superpuesto, se omiten los parámetros *lpOverlapped* y *lpCompletionRoutine,* salvo que la función puede bloquearse si el socket *s* está en modo de bloqueo.
+Si el socket *s* está en modo de no bloqueo, esta función se bloqueará, ya que esta IOCTL concreta no admite el modo de no bloqueo.
 
-En el caso de los sockets superpuestos, las operaciones que no se pueden completar inmediatamente se iniciarán y la finalización se indicará más adelante.
+En el caso de los sockets superpuestos, se iniciarán las operaciones que no se pueden completar inmediatamente y la finalización se indicará más adelante.
 
-Cualquier IOCTL puede bloquearse indefinidamente, dependiendo de la implementación del proveedor de servicios.
-Si la aplicación no puede tolerar el bloqueo en una llamada de función [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) o **WSPIoctl** , se aconsejará la e/s superpuesta para los IOCTL que es especialmente probable que se bloqueen.
+Cualquier IOCTL puede bloquearse indefinidamente, en función de la implementación del proveedor de servicios.
+Si la aplicación no puede tolerar el bloqueo en una llamada de función [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) o **WSPIoctl,** se recomienda la E/S superpuesta para las E/STO que son especialmente probables que se bloqueen.
 
-Se puede producir un error en la operación de **WSAEINTR** o **WSA \_ \_** de la **\_ reserva de \_ puertos \_ de versión SiO** en los casos siguientes:
+La **INSTANCIA DE SIO RELEASE PORT \_ \_ \_ RESERVATION** IOCTL puede producir un error **con WSAEINTR** o **WSA \_ OPERATION \_ ABORTED** en los casos siguientes:
 
-* El administrador de e/s cancela la solicitud.
+* El Administrador de E/S cancela la solicitud.
 * El socket está cerrado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se adquiere una reserva de puerto en tiempo de ejecución y después se libera la reserva de puerto en tiempo de ejecución.
+En el ejemplo siguiente se adquiere una reserva de puerto en tiempo de ejecución y, a continuación, se libera la reserva de puertos en tiempo de ejecución.
 
 ```cpp
 #ifndef UNICODE
@@ -346,7 +346,7 @@ int wmain(int argc, WCHAR ** argv)
 
 [**SIO_ASSOCIATE_PORT_RESERVATION**](sio-associate-port-reservation.md)
 
-[tomacorriente](/windows/desktop/api/winsock2/nf-winsock2-socket)
+[Zócalo](/windows/desktop/api/winsock2/nf-winsock2-socket)
 
 [**WSAGetLastError**](/windows/desktop/api/winsock2/nf-winsock2-wsagetlasterror)
 

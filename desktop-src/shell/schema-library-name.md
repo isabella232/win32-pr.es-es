@@ -1,19 +1,19 @@
 ---
-description: El <name> elemento especifica el nombre de esta biblioteca. Este elemento es necesario y no tiene atributos ni elementos secundarios.
+description: El &lt; elemento name especifica el nombre de esta &gt; biblioteca. Este elemento es necesario y no tiene atributos ni elementos secundarios.
 ms.assetid: 1F433405-5943-4579-BDAD-423C4E1A6E76
-title: name (Elemento, Esquema de biblioteca)
+title: elemento name (Esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 179d8b4a1f4358ccb441cc38c6c0765a6dc4d9ade8b3c32a1504be2151cfedaa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6d32b6d929a58f19cc2b87a79af846d22fc0ebda
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119883945"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880861"
 ---
-# <a name="name-element-library-schema"></a>name (Elemento, Esquema de biblioteca)
+# <a name="name-element-library-schema"></a>elemento name (Esquema de biblioteca)
 
-El <name> elemento especifica el nombre de esta biblioteca. Este elemento es necesario y no tiene atributos ni elementos secundarios.
+El &lt; elemento name especifica el nombre de esta &gt; biblioteca. Este elemento es necesario y no tiene atributos ni elementos secundarios.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,7 +33,7 @@ El <name> elemento especifica el nombre de esta biblioteca. Este elemento es nec
 
 | Elemento primario                                                               | Elementos secundarios |
 |------------------------------------------------------------------------------|----------------|
-| [elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md) |                |
+| [Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md) |                |
 
 
 
@@ -41,7 +41,7 @@ El <name> elemento especifica el nombre de esta biblioteca. Este elemento es nec
 
 ## <a name="remarks"></a>Comentarios
 
-El nombre es el nombre descriptivo de la biblioteca que se muestra en Windows Explorer. El nombre se puede especificar en un formato <dllname> , como en el ejemplo <index> siguiente.
+El nombre es el nombre descriptivo de la biblioteca que se muestra en Windows Explorer. El nombre se puede especificar en un formato &lt; dllname &gt; , &lt; &gt; index, como en el ejemplo siguiente.
 
 
 ```
@@ -58,7 +58,7 @@ El nombre es el nombre descriptivo de la biblioteca que se muestra en Windows Ex
 
 <dl> <dt>
 
-[elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md)
+[Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md)
 </dt> <dt>
 
 [Esquema de descripción del conector de búsqueda](../search/search-sconn-desc-schema-entry.md)

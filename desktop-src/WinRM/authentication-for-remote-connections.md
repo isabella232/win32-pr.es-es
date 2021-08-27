@@ -1,6 +1,6 @@
 ---
 title: Autenticación para conexiones remotas
-description: Windows La administración remota mantiene la seguridad de la comunicación entre equipos al admitir varios métodos estándar de autenticación y cifrado de mensajes.
+description: Windows La administración remota mantiene la seguridad para la comunicación entre equipos al admitir varios métodos estándar de autenticación y cifrado de mensajes.
 ms.assetid: 97a13b07-ae7a-4d2f-8841-77a22c91b204
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,29 +10,29 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0622f3d80e923f7d910740c71ee99f0e9a0bc446cea259b292e2d645e3b5a973
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9c9c0e98d884e09b9bbd52ef4f0e1cb53e782ea
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119858885"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886996"
 ---
 # <a name="authentication-for-remote-connections"></a>Autenticación para conexiones remotas
 
-Windows La administración remota mantiene la seguridad de la comunicación entre equipos al admitir varios métodos estándar de autenticación y cifrado de mensajes.
+Windows La administración remota mantiene la seguridad para la comunicación entre equipos al admitir varios métodos estándar de autenticación y cifrado de mensajes.
 
 ## <a name="default-group-access"></a>Acceso de grupo predeterminado
 
-Durante la instalación, WinRM crea el grupo local **\_ \_ WinRMRemoteWMIUsers**. A continuación, WinRM restringe el acceso remoto a cualquier usuario que no sea miembro del grupo de administración local o del grupo **\_ \_ WinRMRemoteWMIUsers.** Para agregar un usuario local, un usuario de dominio o un grupo de dominios a **\_ \_ WinRMRemoteWMIUsers,** escriba **net localgroup WinRMRemoteWMIUsers \_ \_ /add <domain> \\ <username>** en el símbolo del sistema. Opcionalmente, puede usar el directiva de grupo para agregar un usuario al grupo.
+Durante la instalación, WinRM crea el grupo local **\_ \_ WinRMRemoteWMIUsers**. A continuación, WinRM restringe el acceso remoto a cualquier usuario que no sea miembro del grupo de administración local o del grupo **\_ \_ WinRMRemoteWMIUsers.** Para agregar un usuario local, un usuario de dominio o un grupo de dominio a **\_ \_ WinRMRemoteWMIUsers,** escriba **net localgroup WinRMRemoteWMIUsers \_ \_ /add &lt; domain &gt; \\ &lt; username &gt;** en el símbolo del sistema. Opcionalmente, puede usar el directiva de grupo para agregar un usuario al grupo.
 
 ## <a name="default-authentication-settings"></a>Autenticación predeterminada Configuración
 
-Las credenciales predeterminadas, el nombre de usuario y la contraseña son las credenciales de la cuenta de usuario que inició sesión y que ejecuta el script.
+Las credenciales predeterminadas, el nombre de usuario y la contraseña son las credenciales de la cuenta de usuario que ha iniciado sesión y que ejecuta el script.
 
 **Para cambiar a otra cuenta en un equipo remoto**
 
 1.  Especifique las credenciales en un [**objeto ConnectionOptions**](connectionoptions.md) [**o IWSManConnectionOptions**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanconnectionoptions) y proporcione las credenciales a la [**llamada CreateSession.**](wsman-createsession.md)
-2.  Establezca **WSManFlagCredUserNamePassword en** el *parámetro flags* de la [**llamada a CreateSession.**](wsman-createsession.md)
+2.  Establezca **WSManFlagCredUserNamePassword** en el *parámetro flags* de la [**llamada a CreateSession.**](wsman-createsession.md)
 
 La lista siguiente contiene una lista de lo que ocurre cuando se ejecuta un script o una aplicación con las credenciales predeterminadas:
 
@@ -43,11 +43,11 @@ Si proporciona credenciales explícitas con un [**objeto ConnectionOptions,**](c
 
 Si especifica la autenticación Negotiate, Digest o Basic y no proporciona un objeto [**ConnectionOptions,**](connectionoptions.md) recibirá un error que indica que se requieren credenciales explícitas. Si HTTPS no es el transporte, el equipo remoto de destino debe configurarse en la lista de equipos host de confianza.
 
-Para obtener más información sobre los tipos de autenticación que están habilitados en las opciones de configuración predeterminadas, vea Instalación y configuración [de Windows administración remota.](installation-and-configuration-for-windows-remote-management.md)
+Para obtener más información sobre los tipos de autenticación que están habilitados en las opciones de configuración predeterminadas, vea Instalación y configuración [de Windows Administración remota.](installation-and-configuration-for-windows-remote-management.md)
 
 ## <a name="basic-authentication"></a>Autenticación básica
 
-Para establecer [](windows-remote-management-glossary.md) explícitamente la autenticación básica en la llamada a [**WSMan.CreateSession**](wsman-createsession.md), establezca las marcas **WSManFlagUseBasic** y **WSManFlagCredUserNamePassword** en el parámetro *flags.* La autenticación básica está deshabilitada en las opciones de configuración predeterminadas para el cliente de WinRM y el servidor WinRM.
+Para establecer [](windows-remote-management-glossary.md) explícitamente la autenticación básica en la llamada a [**WSMan.CreateSession**](wsman-createsession.md), establezca las marcas **WSManFlagUseBasic** y **WSManFlagCredUserNamePassword** en el *parámetro flags.* La autenticación básica está deshabilitada en las opciones de configuración predeterminadas para el cliente de WinRM y el servidor WinRM.
 
 ## <a name="digest-authentication"></a>Autenticación implícita
 
@@ -55,7 +55,7 @@ Para establecer explícitamente la autenticación [*implícita*](windows-remote-
 
 ## <a name="negotiate-authentication"></a>Negociación de la autenticación
 
-Para establecer explícitamente la autenticación [*Negotiate,*](windows-remote-management-glossary.md) también conocida como autenticación integrada de Windows, en la llamada a [**WSMan.CreateSession**](wsman-createsession.md), establezca la marca **WSManFlagUseNegotiate** en el *parámetro flags.*
+Para establecer explícitamente la autenticación [*negotiate,*](windows-remote-management-glossary.md) también conocida como autenticación integrada de Windows, en la llamada a [**WSMan.CreateSession**](wsman-createsession.md), establezca la marca **WSManFlagUseNegotiate** en el *parámetro flags.*
 
 [El control de cuentas de usuario (UAC)](https://support.microsoft.com/help/922708/how-to-use-user-account-control-uac-in-windows-vista) afecta al acceso al servicio WinRM. Cuando se usa la autenticación Negotiate en un grupo de trabajo, solo la cuenta de administrador integrada puede acceder al servicio. Para permitir que todas las cuentas del grupo Administradores accedan al servicio, establezca el siguiente valor del Registro:
 
@@ -82,11 +82,11 @@ La asignación se puede crear para un URI de recurso específico. Para obtener m
 
 La opción de autenticación predeterminada en la instalación del sistema es Kerberos. Para obtener más información, [vea Instalación y configuración de Windows Administración remota.](installation-and-configuration-for-windows-remote-management.md)
 
-Si el script o la aplicación requiere un método de autenticación específico que no está habilitado, debe cambiar la configuración para habilitar este tipo de autenticación. Este cambio se puede realizar mediante la herramienta de línea de comandos **winrm** o a través de directiva de grupo para el Windows **administración remota directiva de grupo objeto**. También puede optar por deshabilitar determinados métodos de autenticación.
+Si el script o la aplicación requiere un método de autenticación específico que no está habilitado, debe cambiar la configuración para habilitar este tipo de autenticación. Este cambio se puede realizar mediante la herramienta de línea de comandos **winrm** o a través de directiva de grupo para el Windows administración remota **directiva de grupo objeto**. También puede optar por deshabilitar determinados métodos de autenticación.
 
 **Para habilitar o deshabilitar la autenticación con la herramienta Winrm**
 
-1.  Para establecer la configuración del cliente WinRM, use el **comando Winrm Set** y especifique el cliente. Por ejemplo, el comando siguiente deshabilita la autenticación implícita para el cliente.
+1.  Para establecer la configuración del cliente WinRM, use el **comando Winrm Set** y especifique el cliente. Por ejemplo, el siguiente comando deshabilita la autenticación implícita para el cliente.
 
     **winrm set winrm/config/client/auth @{Digest="false"}**
 
@@ -98,7 +98,7 @@ Si el script o la aplicación requiere un método de autenticación específico 
 
 <dl> <dt>
 
-[Acerca de Windows administración remota](about-windows-remote-management.md)
+[Acerca Windows administración remota](about-windows-remote-management.md)
 </dt> <dt>
 
 [**WSMan.CreateSession**](wsman-createsession.md)

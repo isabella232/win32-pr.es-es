@@ -1,11 +1,11 @@
 ---
 title: Propiedad de condición IWMPErrorItem2
-description: La propiedad Condition obtiene un valor que indica la condición del error.
+description: La propiedad condition obtiene un valor que indica la condición del error.
 ms.assetid: 68800d75-8341-40d1-b699-ffe27bb1f38a
 keywords:
-- Media Player de propiedades de condición de Windows
-- propiedad Condition Media Player Windows, interfaz IWMPErrorItem2
-- Interfaz IWMPErrorItem2 Windows Media Player, propiedad Condition
+- propiedad condition Reproductor de Windows Media
+- propiedad condition Reproductor de Windows Media interfaz , IWMPErrorItem2
+- Interfaz IWMPErrorItem2 Reproductor de Windows Media , propiedad de condición
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be53e7467f741371867b2c0d1dd66c3f68d22ec8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f964a94ed4e1b3b3c86fc1498ce6b8e950b8b7b571be91d297b32247fb3c391
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122615"
 ---
-# <a name="iwmperroritem2condition-property"></a>IWMPErrorItem2:: Condition (propiedad)
+# <a name="iwmperroritem2condition-property"></a>Propiedad IWMPErrorItem2::condition
 
-La propiedad **Condition** obtiene un valor que indica la condición del error.
+La **propiedad** condition obtiene un valor que indica la condición del error.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,11 +46,11 @@ Public ReadOnly Property condition As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el código de condición.
+**System.Int32 que** es el código de condición.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El código de condición es un valor que usa Microsoft para proporcionar información adicional al personal de soporte técnico.
+El código de condición es un valor que Microsoft usa para proporcionar información adicional al personal de soporte técnico.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ El código de condición es un valor que usa Microsoft para proporcionar informa
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

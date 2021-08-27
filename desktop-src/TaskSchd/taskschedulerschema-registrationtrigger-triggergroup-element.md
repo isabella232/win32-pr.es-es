@@ -3,8 +3,8 @@ title: Elemento RegistrationTrigger (triggerGroup)
 description: Especifica un desencadenador que inicia una tarea cuando se registra la tarea.
 ms.assetid: 8f028ed0-93e6-4423-be2f-9a02be99122b
 keywords:
-- Programador de tareas de desencadenador de registro, elemento XML
-- Programador de tareas del elemento RegistrationTrigger
+- registration trigger Programador de tareas , elemento XML
+- Elemento RegistrationTrigger Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 90960f81d252b0b0a8d1de3ab5cc1465003467a8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 548ffec6bf5982aac407905d944d029b222b741c0c03fe66645f68e771c87342
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099975"
 ---
 # <a name="registrationtrigger-triggergroup-element"></a>Elemento RegistrationTrigger (triggerGroup)
 
@@ -31,7 +31,7 @@ Especifica un desencadenador que inicia una tarea cuando se registra la tarea.
  />
 ```
 
-El elemento **RegistrationTrigger** se define mediante el tipo complejo de [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md) .
+El **elemento RegistrationTrigger** se define mediante el [**tipo complejo registrationTriggerType.**](taskschedulerschema-registrationtriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -49,11 +49,11 @@ El elemento **RegistrationTrigger** se define mediante el tipo complejo de [**re
 
 | Elemento                                                                                                        | Tipo                                                                     | Descripción                                                                                                                        |
 |----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [**Retraso (registrationTriggerType)**](taskschedulerschema-delay-boottriggertype-element.md)                   | duration                                                                 | Especifica la cantidad de tiempo entre el momento en que se registra la tarea y el momento en que se inicia la tarea.<br/>                          |
+| [**Delay (registrationTriggerType)**](taskschedulerschema-delay-boottriggertype-element.md)                   | duration                                                                 | Especifica la cantidad de tiempo entre el momento en que se registra la tarea y el momento en que se inicia la tarea.<br/>                          |
 | [**Habilitado (triggerBaseType)**](taskschedulerschema-enabled-triggerbasetype-element.md)                       | boolean                                                                  | Especifica que el desencadenador está habilitado.<br/>                                                                                  |
-| [**EndBoundary (triggerBaseType)**](taskschedulerschema-endboundary-triggerbasetype-element.md)               | dateTime                                                                 | Especifica la fecha y hora de desactivación del desencadenador. El desencadenador no puede iniciar la tarea después de que se haya desactivado.<br/> |
-| [**ExecutionTimeLimit (triggerBaseType)**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md) | duration                                                                 | Especifica la cantidad máxima de tiempo que el desencadenador puede iniciar la tarea.<br/>                                   |
-| [**Repetición (triggerBaseType)**](taskschedulerschema-repetition-triggerbasetype-element.md)                 | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Especifica la frecuencia con que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición una vez iniciada la tarea.<br/>          |
+| [**EndBoundary (triggerBaseType)**](taskschedulerschema-endboundary-triggerbasetype-element.md)               | dateTime                                                                 | Especifica la fecha y hora en que se desactiva el desencadenador. El desencadenador no puede iniciar la tarea después de desactivarla.<br/> |
+| [**ExecutionTimeLimit (triggerBaseType)**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md) | duration                                                                 | Especifica la cantidad máxima de tiempo en que el desencadenador puede iniciar la tarea.<br/>                                   |
+| [**Repetición (triggerBaseType)**](taskschedulerschema-repetition-triggerbasetype-element.md)                 | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Especifica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición después de iniciar la tarea.<br/>          |
 | [**StartBoundary (triggerBaseType)**](taskschedulerschema-startboundary-triggerbasetype-element.md)           | dateTime                                                                 | Especifica la fecha y hora en que se activa el desencadenador.<br/>                                                              |
 
 
@@ -64,28 +64,28 @@ El elemento **RegistrationTrigger** se define mediante el tipo complejo de [**re
 
 | Nombre | Tipo | Descripción                           |
 |------|------|---------------------------------------|
-| Identificador   | id   | Identificador del desencadenador.<br/> |
+| Identificador   | ID   | Identificador del desencadenador.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripting, se especifica un desencadenador de registro mediante el objeto [**RegistrationTrigger**](registrationtrigger.md) .
+Para el desarrollo de scripting, se especifica un desencadenador de registro mediante el [**objeto RegistrationTrigger.**](registrationtrigger.md)
 
-En el desarrollo de C++, se especifica un desencadenador de registro mediante la interfaz [**IRegistrationTrigger**](/windows/desktop/api/taskschd/nn-taskschd-iregistrationtrigger) .
+Para el desarrollo de C++, se especifica un desencadenador de registro mediante la [**interfaz IRegistrationTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-iregistrationtrigger)
 
-Los elementos secundarios enumerados anteriormente se definen mediante los tipos de elementos complejos [**triggerBaseType**](taskschedulerschema-triggerbasetype-complextype.md) y [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md) . Estos elementos se deben agregar en la secuencia que se muestra a continuación.
+Los elementos secundarios enumerados anteriormente se definen mediante los tipos de elementos complejos [**triggerBaseType**](taskschedulerschema-triggerbasetype-complextype.md) [**y registrationTriggerType.**](taskschedulerschema-registrationtriggertype-complextype.md) Estos elementos deben agregarse en la secuencia que se muestra a continuación.
 
 -   [**StartBoundary (triggerBaseType)**](taskschedulerschema-startboundary-triggerbasetype-element.md)
 -   [**EndBoundary (triggerBaseType)**](taskschedulerschema-endboundary-triggerbasetype-element.md)
 -   [**Habilitado (triggerBaseType)**](taskschedulerschema-enabled-triggerbasetype-element.md)
 -   [**Repetición (triggerBaseType)**](taskschedulerschema-repetition-triggerbasetype-element.md)
 -   [**ExecutionTimeLimit (triggerBaseType)**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md)
--   [**Retraso (registrationTriggerType)**](taskschedulerschema-delay-boottriggertype-element.md)
+-   [**Delay (registrationTriggerType)**](taskschedulerschema-delay-boottriggertype-element.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo completo del XML de una tarea que especifica un desencadenador de arranque, vea [ejemplo de desencadenador de registro (XML)](registration-trigger-example--xml-.md).
+Para obtener un ejemplo completo del XML de una tarea que especifica un desencadenador de arranque, vea Ejemplo de desencadenador de [registro (XML).](registration-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,8 +93,8 @@ Para obtener un ejemplo completo del XML de una tarea que especifica un desencad
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -102,7 +102,7 @@ Para obtener un ejemplo completo del XML de una tarea que especifica un desencad
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

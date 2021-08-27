@@ -4,12 +4,12 @@ ms.assetid: 31A6E1AC-492A-4080-9095-3180FD60A575
 title: FhManagew.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbcf8480117dd9d10bf001682bd2c789290e2cebb0369d72afe9624ea1aefd48
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2570da9b2b874b723b28917028fab3c58ecdf772
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119538745"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481521"
 ---
 # <a name="fhmanagewexe"></a>FhManagew.exe
 
@@ -23,35 +23,17 @@ Para ejecutar este programa, vaya al **menú** Inicio, haga clic **en Ejecutar**
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parámetro</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="age"></span><span id="AGE"></span><em>Edad</em><br/></td>
-<td>Este parámetro especifica la antigüedad mínima, en días, de las versiones de archivo que se pueden eliminar. Se elimina una versión de archivo si se cumplen las dos condiciones siguientes:<br/>
-<ul>
-<li>La versión del archivo es anterior a la edad especificada.</li>
-<li>El archivo ya no se incluye en el ámbito de protección o hay una versión más reciente del mismo archivo en el dispositivo de destino.</li>
-</ul>
-Si el <em>parámetro age</em> se establece en cero, se eliminan todas las versiones de archivo, excepto la versión más reciente de cada archivo que está presente actualmente en el ámbito de protección.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Parámetro | Descripción | 
+|-----------|-------------|
+| <span id="age"></span><span id="AGE"></span><em>Edad</em><br /> | Este parámetro especifica la antigüedad mínima, en días, de las versiones de archivo que se pueden eliminar. Se elimina una versión de archivo si se cumplen las dos condiciones siguientes:<br /><ul><li>La versión del archivo es anterior a la edad especificada.</li><li>El archivo ya no se incluye en el ámbito de protección o hay una versión más reciente del mismo archivo en el dispositivo de destino.</li></ul>Si el <em>parámetro age</em> se establece en cero, se eliminan todas las versiones de archivo, excepto la versión más reciente de cada archivo que está presente actualmente en el ámbito de protección.<br /> | 
+
 
 
 
  
 
-Para suprimir todos los resultados de este programa, use la opción de línea de comandos **-quiet** como se muestra a continuación.
+Para suprimir todas las salidas de este programa, use la opción de línea de comandos **-quiet** como se muestra a continuación.
 
 **FhManagew.exe -cleanup** *age* **-quiet**
 

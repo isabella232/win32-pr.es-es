@@ -21,12 +21,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: c8ff905475863df11c6fb6529f030f73a4f1b785792be4c5fe8c7ce1142096c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 763e14d0ebd0aab33aef252b883009567df727cd
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119068485"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887145"
 ---
 # <a name="msvm_replicationrelationship-class"></a>Clase \_ ReplicationRelationship de Msvm
 
@@ -122,9 +122,9 @@ Identifica la relación de replicación. Esta propiedad se hereda de [**\_ Manag
 
 Esta propiedad tiene este formato:
 
-**Microsoft: <vmid> \\ HVR \\<0/1>**
+**Microsoft: &lt; vmid &gt; \\ HVR \\<0/1>**
 
-0 indica principal y 1 indica replicación [extendida.](#extended-replication)
+0 indica principal y 1 indica [replicación extendida.](#extended-replication)
 
 </dd> <dt>
 
@@ -150,7 +150,7 @@ Tipo de datos: **datetime**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora en que se aplica la última replicación en la recuperación para la relación de replicación.
+Fecha y hora en que se aplica la última replicación en la recuperación de la relación de replicación.
 
 </dd> <dt>
 
@@ -219,7 +219,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado de replicación de la relación de replicación.
+Estado de replicación para la relación de replicación.
 
 <dt>
 
@@ -232,7 +232,7 @@ Estado de replicación de la relación de replicación.
 
 <span id="Ok"></span><span id="ok"></span><span id="OK"></span>
 
-**Ok** (1)
+**Correcto** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -275,7 +275,7 @@ Estado de replicación para la relación de replicación.
 
 <span id="Ready_for_replication"></span><span id="ready_for_replication"></span><span id="READY_FOR_REPLICATION"></span>
 
-<span id="Ready_for_replication"></span><span id="ready_for_replication"></span><span id="READY_FOR_REPLICATION"></span>**Listo para la replicación** (1)
+<span id="Ready_for_replication"></span><span id="ready_for_replication"></span><span id="READY_FOR_REPLICATION"></span>**Listo para replicación** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -366,7 +366,7 @@ Estado de replicación para la relación de replicación.
 
 <span id="Failback_complete"></span><span id="failback_complete"></span><span id="FAILBACK_COMPLETE"></span>
 
-<span id="Failback_complete"></span><span id="failback_complete"></span><span id="FAILBACK_COMPLETE"></span>**Conmutación por recuperación completa** (14)
+<span id="Failback_complete"></span><span id="failback_complete"></span><span id="FAILBACK_COMPLETE"></span>**Conmutación por recuperación completada** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -379,7 +379,7 @@ Estado de replicación para la relación de replicación.
 </dt> <dd>
 
 > [!Note]  
-> Esta propiedad se agregó en Windows 10, versión 1703.
+> Esta propiedad se agregó en Windows 10 versión 1703.
 
  
 
@@ -393,7 +393,7 @@ Estado de replicación para la relación de replicación.
 </dt> <dd>
 
 > [!Note]  
-> Esta propiedad se agregó en Windows 10, versión 1703.
+> Esta propiedad se agregó en Windows 10 versión 1703.
 
  
 
@@ -407,7 +407,7 @@ Estado de replicación para la relación de replicación.
 </dt> <dd>
 
 > [!Note]  
-> Esta propiedad se agregó en Windows 10, versión 1703.
+> Esta propiedad se agregó en Windows 10 versión 1703.
 
  
 
@@ -415,13 +415,13 @@ Estado de replicación para la relación de replicación.
 
 <span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>
 
-<span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>**Replicación reasignada en curso** (18)
+<span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>**Reasignación de la replicación en curso** (18)
 
 
 </dt> <dd>
 
 > [!Note]  
-> Esta propiedad se agregó en Windows 10, versión 1703.
+> Esta propiedad se agregó en Windows 10 versión 1703.
 
  
 
@@ -435,7 +435,7 @@ Estado de replicación para la relación de replicación.
 </dt> <dd>
 
 > [!Note]  
-> Esta propiedad se agregó en Windows 10, versión 1703.
+> Esta propiedad se agregó en Windows 10 versión 1703.
 
  
 
@@ -449,7 +449,7 @@ Estado de replicación para la relación de replicación.
 </dt> <dd>
 
 > [!Note]  
-> Esta propiedad se agregó en Windows 10, versión 1703.
+> Esta propiedad se agregó en Windows 10 versión 1703.
 
  
 
@@ -463,7 +463,7 @@ Estado de replicación para la relación de replicación.
 </dt> <dd>
 
 > [!Note]  
-> Esta propiedad se agregó en Windows 10, versión 1703.
+> Esta propiedad se agregó en Windows 10 versión 1703.
 
  
 
@@ -477,13 +477,13 @@ Estado de replicación para la relación de replicación.
 
 La característica de replicación de Hyper-V de Windows 8 permite que las máquinas virtuales que se ejecutan en un servidor de Hyper-V en el sitio primario se repliquen de forma eficaz en otro servidor de Hyper-V en el sitio secundario.
 
-La característica de replicación de Hyper-V Windows 8.1 permite a un usuario extender la relación de replicación desde el sitio secundario en adelante a un tercer sitio. El tercer sitio puede ser un host de Hyper-V aprovisionado previamente como un servidor de recuperación o un proveedor de replicación externo.
+La característica de replicación de Hyper-V Windows 8.1 permite a un usuario extender la relación de replicación del sitio secundario en adelante a un tercer sitio. El tercer sitio puede ser un host de Hyper-V aprovisionado previamente como un servidor de recuperación o un proveedor de replicación externo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |

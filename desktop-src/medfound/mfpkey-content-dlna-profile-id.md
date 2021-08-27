@@ -1,41 +1,41 @@
 ---
-description: Contiene el identificador de Perfil de la Alianza de redes digitales (DLNA) para un origen de medios.
+description: Contiene el identificador de perfil de Digital Living Network Alliance (DLNA) para un origen multimedia.
 ms.assetid: 940ed0df-0912-4c13-a490-0c6be82c9743
-title: Propiedad MFPKEY_Content_DLNA_Profile_ID (Mfidl. h)
+title: MFPKEY_Content_DLNA_Profile_ID propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d07cf3403f8c7694fe8153fb81d440c0a7a6ee3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5cca2dfad14303a6dd493f467ebee84518e907261d8fa3f4c05060200b6b5ea3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113375"
 ---
-# <a name="mfpkey_content_dlna_profile_id-property"></a>\_Propiedad de \_ \_ identificador de perfil DLNA de contenido de MFPKEY \_
+# <a name="mfpkey_content_dlna_profile_id-property"></a>Propiedad MFPKEY \_ Content \_ DLNA \_ Profile \_ ID
 
-Contiene el identificador de Perfil de la Alianza de redes digitales (DLNA) para un origen de medios.
+Contiene el identificador de perfil de Digital Living Network Alliance (DLNA) para un origen multimedia.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
-**WCHAR \_ t \** _
+**wchar \_ t\***
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
-_ *pwszVal**
+**pwszVal**
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Un identificador de perfil DLNA es una cadena que identifica el perfil de codificación del contenido.
 
-Los identificadores de perfil se describen en las [instrucciones de interoperabilidad de dispositivos en red DLNA](https://www.dlna.org/about/organization). (Es posible que este recurso no esté disponible en algunos idiomas y países).
+Los identificadores de perfil se describen en [dlna Networked Device Interoperability Guidelines (Directrices de](https://www.dlna.org/about/organization)interoperabilidad de dispositivos en red de DLNA). (Es posible que este recurso no esté disponible en algunos idiomas y países).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Los identificadores de perfil se describen en las [instrucciones de interoperabi
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/>                                  |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 R2 \|\]<br/>                     |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                     |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,10 +53,10 @@ Los identificadores de perfil se describen en las [instrucciones de interoperabi
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Proveedores de metadatos de Shell](shell-metadata-providers.md)
+[Proveedores de metadatos de shell](shell-metadata-providers.md)
 </dt> </dl>
 
  

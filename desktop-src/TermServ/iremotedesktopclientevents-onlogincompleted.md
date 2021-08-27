@@ -1,12 +1,12 @@
 ---
-title: IRemoteDesktopClientEvents OnLoginCompleted, método
+title: Método IRemoteDesktopClientEvents OnLoginCompleted
 description: Se llama cuando el control de cliente ha iniciado sesión correctamente en una sesión remota.
 ms.assetid: D4DBD78A-189B-43F3-B9C1-49BF63C735CD
 ms.tgt_platform: multiple
 keywords:
 - Método OnLoginCompleted Servicios de Escritorio remoto
-- Método OnLoginCompleted Servicios de Escritorio remoto, interfaz IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto, método OnLoginCompleted
+- Método OnLoginCompleted Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto método , OnLoginCompleted
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a1b2dbbe50b9579964c41225fb84e0688acc151
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2d4fbe1cb336df2792f74e8fc85cb1ec6f331b5c48f75e6876b6f697d40a3dd5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124885"
 ---
-# <a name="iremotedesktopclienteventsonlogincompleted-method"></a>IRemoteDesktopClientEvents:: OnLoginCompleted (método)
+# <a name="iremotedesktopclienteventsonlogincompleted-method"></a>IRemoteDesktopClientEvents::OnLoginCompleted (método)
 
 Se llama cuando el control de cliente ha iniciado sesión correctamente en una sesión remota.
 

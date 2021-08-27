@@ -1,7 +1,7 @@
 ---
 description: Define un proveedor y los contadores que proporciona.
 ms.assetid: 85299b01-5679-40f8-8aec-5c2ff8d7cfc8
-title: provider Complex Type
+title: provider Complex Type (Tipo complejo de proveedor)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4470754e710faf9f7abe5a94cfb2e08e6e79c1b0415110b96dbac35807556911
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94654c538cc0637e6c90e0b14d3433b979762b00
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061073"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622721"
 ---
-# <a name="provider-complex-type"></a>provider Complex Type
+# <a name="provider-complex-type"></a>provider Complex Type (Tipo complejo de proveedor)
 
 Define un proveedor y los contadores que proporciona.
 
@@ -169,9 +169,9 @@ Define un proveedor y los contadores que proporciona.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -184,7 +184,7 @@ Define un proveedor y los contadores que proporciona.
 <tr class="odd">
 <td>applicationIdentity</td>
 <td><strong>xs:string</strong></td>
-<td>Nombre del archivo binario que contiene las cadenas de recursos localizadas, ya sea un archivo .exe o .dll (no incluya la ruta de acceso al archivo binario).<br/> La utilidad Lodctr.exe utiliza la ruta de acceso del parámetro opcional [<em>path</em>] para buscar el archivo binario. Por ejemplo, <strong>lodctr</strong> [<strong>/m:</strong><em>manifest</em> [<em>path</em>]]. Si no incluye el parámetro [<em>path</em>], Lodctr.exe busca en la carpeta que contiene el manifiesto.<br/></td>
+<td>Nombre del archivo binario que contiene las cadenas de recursos localizadas, ya sea un archivo .exe o .dll (no incluya la ruta de acceso al archivo binario).<br/> La Lodctr.exe utiliza la ruta de acceso del parámetro opcional [<em>path</em>] para buscar el archivo binario. Por ejemplo, <strong>lodctr</strong> [<strong>/m:</strong><em>manifest</em> [<em>path</em>]]. Si no incluye el parámetro [<em>path</em>], Lodctr.exe busca en la carpeta que contiene el manifiesto.<br/></td>
 </tr>
 <tr class="even">
 <td>devolución de llamada</td>
@@ -199,12 +199,12 @@ Define un proveedor y los contadores que proporciona.
 <tr class="even">
 <td>providerName</td>
 <td><strong>xs:string</strong></td>
-<td>Nombre que se usa para crear la clase WMI Win32_PerfRawData nombre de clase. Si no especifica un nombre, &quot; se usa Counters &quot; como nombre de la clase .<br/></td>
+<td>Nombre que se usa para crear el nombre de clase Win32_PerfRawData WMI. Si no especifica un nombre, &quot; se usa Counters &quot; como nombre de la clase.<br/></td>
 </tr>
 <tr class="odd">
 <td>providerType</td>
 
-<td>Identifica si el proveedor es un proveedor en modo de usuario, un proveedor de modo kernel o un proveedor de controladores. Los valores posibles son los siguientes.<br/> 
+<td>Identifica si el proveedor es un proveedor de modo de usuario, un proveedor en modo kernel o un proveedor de controladores. Los valores posibles son los siguientes.<br/> 
 <table>
 <thead>
 <tr class="header">
@@ -229,13 +229,13 @@ Define un proveedor y los contadores que proporciona.
 <tr class="even">
 <td>resourceBase</td>
 <td><a href="performance-counters-uint32type-simple-type.md"><strong>man:UInt32Type</strong></a></td>
-<td><p>Define el valor de índice de recursos inicial que <a href="ctrpp.md">CTRPP</a> usa para generar los identificadores de recursos.</p></td>
+<td><p>Define el valor inicial del índice de recursos que <a href="ctrpp.md">CTRPP</a> usa para generar los identificadores de recursos.</p></td>
 </tr>
 <tr class="odd">
 <td>símbolo</td>
 <td><a href="performance-counters-csymboltype-simple-type.md"><strong>man:CSymbolType</strong></a></td>
-<td><p>Nombre simbólico que identifica el proveedor. La <a href="ctrpp.md">herramienta CTRPP</a> crea una variable HANDLE que se puede usar al llamar a funciones que requieren un identificador para el proveedor (por ejemplo, <a href="/windows/desktop/api/Perflib/nf-perflib-perfsetulongcountervalue"><strong>PerfSetULongCounterValue).</strong></a> El nombre simbólico es el nombre de la variable.</p>
-<p>Si incluye el <strong>argumento -prefix</strong> al llamar a <a href="ctrpp.md">CTRPP,</a>la cadena de prefijo se agrega al principio del nombre simbólico.</p></td>
+<td><p>Nombre simbólico que identifica el proveedor. La <a href="ctrpp.md">herramienta CTRPP</a> crea una variable HANDLE que puede usar al llamar a funciones que requieren un identificador para el proveedor (por ejemplo, <a href="/windows/desktop/api/Perflib/nf-perflib-perfsetulongcountervalue"><strong>PerfSetULongCounterValue).</strong></a> El nombre simbólico es el nombre de la variable.</p>
+<p>Si incluye el <strong>argumento -prefix</strong> al llamar a <a href="ctrpp.md">CTRPP</a>, la cadena de prefijo se agrega al principio del nombre simbólico.</p></td>
 </tr>
 </tbody>
 </table>

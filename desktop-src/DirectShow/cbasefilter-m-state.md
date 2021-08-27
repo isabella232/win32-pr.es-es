@@ -1,7 +1,7 @@
 ---
 description: Indica el estado actual del filtro.
 ms.assetid: 65de36d4-4a05-40e2-aa00-701237281bbe
-title: 'Miembro CBaseFilter:: m_State (Amfilter. h)'
+title: CBaseFilter::m_State miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b34f94725e3198546e274a713ed1a5535ba4c13e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54e95da9fd2d2eb0bdcdc7e947f0b665905518ded46d44e21c68fbdadbdd8e66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087465"
 ---
-# <a name="cbasefilterm_state-member"></a>Miembro de estado CBaseFilter:: m \_
+# <a name="cbasefilterm_state-member"></a>Miembro de estado CBaseFilter::m \_
 
 Indica el estado actual del filtro.
 
@@ -42,8 +42,8 @@ FILTER_STATE m_State;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ FILTER_STATE m_State;
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-description: ModemDMConfigProfile \/ ... \/ Nombre de usuario (v4)
+description: '\/MódemDMConfigProfile... \/ UserName (v4)'
 MS-HAID: WWAN\_profile\_v4.element\_1\_UserName
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Nombre de usuario (v4)
+title: UserName (v4)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 1b43a275-cdbd-44e6-adc6-121aa935447e
@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 98e5c425ee7982bdfddfeb31ec1e950a0dc27d61
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: c6721b95d3375cb9f48744b2f7d28afd92a5024e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388824"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472141"
 ---
-# <a name="span-idwwan_profile_v4element_1_usernamespanmodemdmconfigprofileusername-v4"></a><span id="WWAN_profile_v4.element_1_UserName"></span>ModemDMConfigProfile \/ ... \/ Nombre de usuario (v4)
+# <a name="span-idwwan_profile_v4element_1_usernamespanmodemdmconfigprofileusername-v4"></a><span id="WWAN_profile_v4.element_1_UserName"></span>\/MódemDMConfigProfile... \/ UserName (v4)
 
-El nombre de usuario que se usará para el inicio de sesión.
+Nombre de usuario que se usará para el inicio de sesión.
 
-Para obtener más información, consulte la documentación del elemento de [**nombre de usuario**](./schema-username-userlogoncred-element.md) v1.
+Para más información, consulte la documentación del elemento [**UserName**](./schema-username-userlogoncred-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
@@ -41,7 +41,7 @@ Para obtener más información, consulte la documentación del elemento de [**no
 &nbsp;&nbsp;&nbsp;&nbsp;[\<UserLogonCred\>](element-1-userlogoncred.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<UserName\>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <UserName>
@@ -63,41 +63,19 @@ Ninguno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos primarios
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento primario</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-1-userlogoncred.md">UserLogonCred</a></td>
-<td><p>Credenciales de inicio de sesión para una conexión.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento primario | Descripción | 
+|----------------|-------------|
+| <a href="element-1-userlogoncred.md">UserLogonCred</a> | <p>Credenciales de inicio de sesión para una conexión.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Espacio de nombres</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

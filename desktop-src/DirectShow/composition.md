@@ -4,23 +4,23 @@ ms.assetid: b5f607b2-9cca-4eef-9c63-d2015bd10469
 title: Composición
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e030e02ab77ec54e1e340d72db7210665d649bfb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1f5973b478f442187645fbd73e8fca88ebfe71f247aea0e9065356583b6748ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084285"
 ---
 # <a name="composition"></a>Composición
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El objeto de composición es un contenedor para las pistas. También puede contener otras composiciones (para el anidamiento de pistas), efectos y transiciones. Para crear este objeto, llame al método [**IAMTimeline:: CreateEmptyNode**](iamtimeline-createemptynode.md) .
+El objeto de composición es un contenedor para pistas. También puede contener otras composiciones (para anidar pistas), efectos y transiciones. Para crear este objeto, llame al [**método IAMTimeline::CreateEmptyNode.**](iamtimeline-createemptynode.md)
 
-El objeto de composición expone las siguientes interfaces:
+El objeto de composición expone las interfaces siguientes:
 
 -   [**IAMTimelineComp**](iamtimelinecomp.md)
 -   [**IAMTimelineEffectable**](iamtimelineeffectable.md)

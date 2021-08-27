@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de LevelListType
+title: Tipo complejo LevelListType
 description: Define una lista de niveles de gravedad que especifican el nivel de detalle de un evento.
 ms.assetid: 82102f8a-271e-4c3d-9b0a-1e20eaa87497
 keywords:
-- LevelListType tipo complejo EventLog
+- LevelListType, tipo complejo EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4456ade3977603948997304393a1c9414cb0c458
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8087913cacac67f0c7487b5eb41f404ebdc205765c693bdfda9f86995a809493
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124305"
 ---
-# <a name="levellisttype-complex-type"></a>Tipo complejo de LevelListType
+# <a name="levellisttype-complex-type"></a>Tipo complejo LevelListType
 
 Define una lista de niveles de gravedad que especifican el nivel de detalle de un evento.
 
@@ -42,7 +42,7 @@ Define una lista de niveles de gravedad que especifican el nivel de detalle de u
 
 | Elemento                                                          | Tipo                                                           | Descripción                                                                                 |
 |------------------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [**dosis**](eventmanifestschema-level-levellisttype-element.md) | [**LevelType**](eventmanifestschema-leveltype-complextype.md) | Define un valor de gravedad que determina el nivel de detalle de los eventos durante el registro.<br/> |
+| [**Nivel**](eventmanifestschema-level-levellisttype-element.md) | [**LevelType**](eventmanifestschema-leveltype-complextype.md) | Define un valor de gravedad que determina el nivel de detalle de los eventos durante el registro.<br/> |
 
 
 
@@ -52,8 +52,8 @@ Define una lista de niveles de gravedad que especifican el nivel de detalle de u
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

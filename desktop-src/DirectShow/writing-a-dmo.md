@@ -1,26 +1,26 @@
 ---
-description: Escritura de DMO
+description: Escribir un DMO
 ms.assetid: 77966a77-5400-43b1-bdbd-ace27ddc8ae7
-title: Escritura de DMO
+title: Escribir un DMO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b6a9f6062a51e5f44ba5066110a93f6cd707f2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9066c9fa64c262a39175b5521902c863985407393f0c906f4e1cd9701862475e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130835"
 ---
-# <a name="writing-a-dmo"></a>Escritura de DMO
+# <a name="writing-a-dmo"></a>Escribir un DMO
 
-En esta sección se describe cómo escribir un DMO. Antes de leer esta sección, debe leer la sección "uso de DMOs", para que comprenda cómo funciona una DMO desde la perspectiva del cliente.
+En esta sección se describe cómo escribir un DMO. Antes de leer esta sección, debe leer la sección "Uso de DDO", para comprender cómo funciona un DMO desde la perspectiva del cliente.
 
 Esta sección contiene los siguientes temas:
 
--   [Requisitos mínimos de DMO](dmo-minimum-requirements.md)
--   [Tipos de medios DMO](dmo-media-types.md)
--   [Registro de DMO](registering-a-dmo.md)
--   [Uso de la plantilla de clase DMO](using-the-dmo-class-template.md)
+-   [DMO Requisitos mínimos](dmo-minimum-requirements.md)
+-   [DMO Tipos de medios](dmo-media-types.md)
+-   [Registro de un DMO](registering-a-dmo.md)
+-   [Usar la plantilla DMO clase](using-the-dmo-class-template.md)
 -   [Uso de la aplicación DMOTest](using-the-dmotest-application.md)
 
 ## <a name="related-topics"></a>Temas relacionados

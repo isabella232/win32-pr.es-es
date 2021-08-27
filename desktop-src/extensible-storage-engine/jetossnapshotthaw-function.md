@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetOSSnapshotThaw (función)'
-title: JetOSSnapshotThaw función)
+description: 'Más información sobre: JetOSSnapshotThaw (Función)'
+title: JetOSSnapshotThaw (Función)
 TOCTitle: JetOSSnapshotThaw Function
 ms:assetid: 3b001113-6299-4082-ab15-461f2e33e996
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269229(v=EXCHG.10)
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: da7d5037cfc6b9a5f001dede57581127e4de60b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9be4bcff435fe30186b3b7585c79e3066987cc5
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913558"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479061"
 ---
-# <a name="jetossnapshotthaw-function"></a>JetOSSnapshotThaw función)
+# <a name="jetossnapshotthaw-function"></a>JetOSSnapshotThaw (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetossnapshotthaw-function"></a>JetOSSnapshotThaw función)
+## <a name="jetossnapshotthaw-function"></a>JetOSSnapshotThaw (Función)
 
-La función **JetOSSnapshotThaw** notifica al motor de que puede reanudar las operaciones de e/s normales después de un período de inmovilización y una instantánea correcta.
+La **función JetOSSnapshotThaw** notifica al motor que puede reanudar las operaciones normales de E/S después de un período de inmovilización y una instantánea correcta.
 
-**Windows XP:**  **JetOSSnapshotThaw** se presentó en Windows XP.
+**Windows XP:****JetOSSnapshotThaw** se presenta en Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotThaw(
@@ -55,78 +55,31 @@ Este parámetro está reservado para uso futuro y el único valor válido admiti
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>La sesión de instantáneas no es válida o el parámetro <em>grbit</em> no es válido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotTimeOut</p></td>
-<td><p>La sesión de instantáneas tenía un tiempo de espera interno antes de que se produjera esta llamada. Por lo tanto, las operaciones de e/s devolvían a normal antes de que se realizara esta llamada.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOSSnapshotInvalidSnapId</p></td>
-<td><p>El identificador de la sesión de instantáneas no es válido.</p></td>
-</tr>
-</tbody>
-</table>
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
-Si esta función se ejecuta correctamente, finaliza una sesión de instantáneas y se reanuda el comportamiento normal del motor. Se puede iniciar una nueva sesión de instantáneas más adelante.
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>La sesión de instantánea no es válida o <em>el parámetro grbit</em> no es válido.</p> | 
+| <p>JET_errOSSnapshotTimeOut</p> | <p>La sesión de instantánea tenía un tiempo de espera interno antes de que se produjese esta llamada. Por lo tanto, las operaciones de E/S han vuelto a la normalidad antes de realizar esta llamada.</p> | 
+| <p>JET_errOSSnapshotInvalidSnapId</p> | <p>El identificador de la sesión de instantánea no es válido.</p> | 
 
-Si se produce un error en esta función, la sesión de instantáneas actual finaliza pero no se respeta internamente la inmovilización de IOs durante el período de la instantánea.
 
-#### <a name="remarks"></a>Observaciones
 
-Se generarán entradas del registro de eventos para los distintos pasos de la instantánea.
+Si esta función se realiza correctamente, finaliza una sesión de instantánea y se reanuda el comportamiento normal del motor. Más adelante se puede iniciar una nueva sesión de instantáneas.
+
+Si se produce un error en esta función, finaliza la sesión de instantánea actual, pero la inmovilización de las E/S durante el período de instantánea no se respeta internamente.
+
+#### <a name="remarks"></a>Comentarios
+
+Las entradas del registro de eventos se generarán para los distintos pasos de la instantánea.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

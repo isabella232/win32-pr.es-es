@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt \/ ... \/ Contraseña (v4)
+description: MBNProfileExt... \/ \/ Contraseña (v4)
 MS-HAID: WWAN\_profile\_v4.element\_Password
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c90b2481aa503b7b616d21fca24917b960a92dc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81a929fe54c2b397b1bad242531ec08a815b7239
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275509"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122981998"
 ---
-# <a name="span-idwwan_profile_v4element_passwordspanmbnprofileextpassword-v4"></a><span id="WWAN_profile_v4.element_Password"></span>MBNProfileExt \/ ... \/ Contraseña (v4)
+# <a name="span-idwwan_profile_v4element_passwordspanmbnprofileextpassword-v4"></a><span id="WWAN_profile_v4.element_Password"></span>MBNProfileExt... \/ \/ Contraseña (v4)
 
-Especifica la contraseña que se usa para autenticar a un usuario.
+Especifica la contraseña usada para autenticar a un usuario.
 
-Para obtener más información, consulte la documentación del elemento de [**contraseña**](./schema-password-userlogoncred-element.md) v1.
+Para obtener más información, consulte la documentación del elemento [**Password**](./schema-password-userlogoncred-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
@@ -63,41 +63,21 @@ Ninguno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos primarios
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento primario</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-userlogoncred.md">UserLogonCred</a></td>
-<td><p>Credenciales de inicio de sesión para una conexión.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento primario | Descripción | 
+|----------------|-------------|
+| <a href="element-userlogoncred.md">UserLogonCred</a> | <p>Credenciales de inicio de sesión para una conexión.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Espacio de nombres</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

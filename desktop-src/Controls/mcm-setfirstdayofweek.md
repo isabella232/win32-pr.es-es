@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCM_SETFIRSTDAYOFWEEK (commctrl. h)
-description: Establece el primer día de la semana para un control de calendario mensual. Puede enviar este mensaje explícitamente o mediante la macro MonthCal \_ SetFirstDayOfWeek.
+title: MCM_SETFIRSTDAYOFWEEK mensaje (Commctrl.h)
+description: Establece el primer día de la semana para un control de calendario mensual. Puede enviar este mensaje explícitamente o mediante la \_ macro SetFirstDayOfWeek de MonthCal.
 ms.assetid: 6e0dc906-a41e-4c3a-9528-1f5428dceb8d
 keywords:
-- MCM_SETFIRSTDAYOFWEEK controles de mensajes de Windows
+- MCM_SETFIRSTDAYOFWEEK controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a32452c9043bbd7c3bbcf96f9dc32e67714eacce
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e34732257c18acceec3fd7db9807753e9a930e106198b33a0dd61dc27a33eef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077115"
 ---
-# <a name="mcm_setfirstdayofweek-message"></a>Mensaje de MCM \_ SETFIRSTDAYOFWEEK
+# <a name="mcm_setfirstdayofweek-message"></a>Mensaje \_ SETFIRSTDAYOFWEEK de MCM
 
-Establece el primer día de la semana para un control de calendario mensual. Puede enviar este mensaje explícitamente o mediante la macro [**MonthCal \_ SetFirstDayOfWeek**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setfirstdayofweek) .
+Establece el primer día de la semana para un control de calendario mensual. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetFirstDayOfWeek de MonthCal.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setfirstdayofweek)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,17 +35,17 @@ Establece el primer día de la semana para un control de calendario mensual. Pue
 *lParam* 
 </dt> <dd>
 
-Valor de tipo **int** que representa el día que se va a establecer como primer día de la semana, donde 0 es el lunes, 1 es el martes, etc.
+Valor de tipo **int** que representa qué día se va a establecer como primer día de la semana, donde 0 es Lunes, 1 es Martes, y así sucesivamente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **DWORD** que contiene dos valores. La palabra alta es un valor **booleano** que es distinto de cero si el primer día de la semana anterior no era igual a la configuración regional \_ IFIRSTDAYOFWEEK, o bien, cero en caso contrario. La palabra baja es un valor INT que representa el primer día de la semana anterior.
+Devuelve un **valor DWORD** que contiene dos valores. La palabra alta es un **valor BOOL** distinto de cero si el primer día de la semana anterior no era igual a LOCALE \_ IFIRSTDAYOFWEEK o cero en caso contrario. La palabra baja es un valor INT que representa el primer día de la semana anterior.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el primer día de la semana se establece en un valor distinto del predeterminado (configuración regional \_ IFIRSTDAYOFWEEK), el control no actualizará automáticamente los cambios del primer día de la semana en función de los cambios de la configuración regional.
+Si el primer día de la semana se establece en algo distinto del valor predeterminado (LOCALE IFIRSTDAYOFWEEK), el control no actualizará automáticamente los cambios del primer día de la semana en función de los cambios de configuración \_ regional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Si el primer día de la semana se establece en un valor distinto del predetermin
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: El sistema difunde el \_ evento de dispositivo DBT DEVICETYPESPECIFIC cuando se produce un evento específico del dispositivo.
+description: El sistema difunde el evento de dispositivo DBT \_ DEVICETYPESPECIFIC cuando se produce un evento específico del dispositivo.
 ms.assetid: 5d68e29d-b4d7-46f4-a35e-1db286e944ca
-title: Evento DBT_DEVICETYPESPECIFIC (DBT. h)
+title: DBT_DEVICETYPESPECIFIC evento (Dbt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2d7820f5769c6edd3a48b58073b55a911dae862
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dd8fb403568cef55741a8c206929d9105284f5191c547500fd79ff39f6b01f1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109035"
 ---
-# <a name="dbt_devicetypespecific-event"></a>\_Evento DBT DEVICETYPESPECIFIC
+# <a name="dbt_devicetypespecific-event"></a>Evento \_ DEVICETYPESPECIFIC de DBT
 
-El sistema difunde el \_ evento de dispositivo DBT DEVICETYPESPECIFIC cuando se produce un evento específico del dispositivo.
+El sistema difunde el evento de dispositivo DBT \_ DEVICETYPESPECIFIC cuando se produce un evento específico del dispositivo.
 
-Para difundir este evento de dispositivo, el sistema usa el mensaje de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) con *wParam* establecido en DBT \_ DEVICETYPESPECIFIC y *lParam* , tal y como se describe a continuación.
+Para difundir este evento de dispositivo, el sistema usa el mensaje [**\_ DEVICECHANGE**](wm-devicechange.md) de WM con *wParam* establecido en DBT \_ DEVICETYPESPECIFIC y *lParam* establecido como se describe a continuación.
 
 
 ```C++
@@ -33,7 +33,7 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador a una ventana.
@@ -43,27 +43,27 @@ Identificador a una ventana.
 *uMsg* 
 </dt> <dd>
 
-Identificador del mensaje de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) .
+Identificador [**del mensaje \_ DEVICECHANGE**](wm-devicechange.md) de WM.
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Establézcalo en DBT \_ DEVICETYPESPECIFIC.
+Establezca en DBT \_ DEVICETYPESPECIFIC.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura que identifica el dispositivo. La estructura consta de un encabezado independiente del evento, seguido de los miembros dependientes del evento que describen el dispositivo. Para usar esta estructura, trate la estructura como una [**estructura \_ \_ HDR de difusión de desarrollo**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr) y, a continuación, compruebe su miembro **dbch \_ DeviceType** para determinar el tipo de dispositivo.
+Puntero a una estructura que identifica el dispositivo. La estructura consta de un encabezado independiente del evento, seguido de miembros dependientes del evento que describen el dispositivo. Para usar esta estructura, trate la estructura como una estructura [**\_ \_ DEV BROADCAST HDR**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr) y, a continuación, compruebe su miembro **dbch \_ devicetype** para determinar el tipo de dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true**.
+Devuelve **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ Devuelve **true**.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>DBT. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
 
 
 
@@ -84,13 +84,13 @@ Devuelve **true**.
 [Eventos de dispositivo](device-events.md)
 </dt> <dt>
 
-[Eventos de administración de dispositivos](device-management-events.md)
+[Administración de dispositivos eventos](device-management-events.md)
 </dt> <dt>
 
-[**DEV \_ Broadcast \_ HDR**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr)
+[**DEV \_ BROADCAST \_ HDR**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr)
 </dt> <dt>
 
-[**DEVICECHANGE de WM \_**](wm-devicechange.md)
+[**WM \_ DEVICECHANGE**](wm-devicechange.md)
 </dt> </dl>
 
  

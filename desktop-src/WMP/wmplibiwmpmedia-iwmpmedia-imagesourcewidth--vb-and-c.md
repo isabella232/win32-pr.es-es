@@ -1,11 +1,11 @@
 ---
-title: Propiedad imageSourceWidth de IWMPMedia
+title: Propiedad IWMPMedia imageSourceWidth
 description: La propiedad imageSourceWidth obtiene el ancho del elemento multimedia actual en píxeles.
 ms.assetid: d3644217-6faf-415e-b0c0-23db85c31a3a
 keywords:
-- propiedades de imageSourceWidth Media Player de Windows
-- propiedad imageSourceWidth de Windows Media Player, interfaz IWMPMedia
-- Interfaz IWMPMedia Windows Media Player, propiedad imageSourceWidth
+- Propiedad imageSourceWidth Reproductor de Windows Media
+- Propiedad imageSourceWidth Reproductor de Windows Media , interfaz IWMPMedia
+- Interfaz IWMPMedia Reproductor de Windows Media , propiedad imageSourceWidth
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 441c4fb4a05f610aee5a2c923353fb9688bffcc2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c24d9cb6d6c8cdec29984fa66b6cb12e254413ca518ed12a3089627aeeb08e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098795"
 ---
-# <a name="iwmpmediaimagesourcewidth-property"></a>IWMPMedia:: imageSourceWidth (propiedad)
+# <a name="iwmpmediaimagesourcewidth-property"></a>Propiedad IWMPMedia::imageSourceWidth
 
-La propiedad **imageSourceWidth** obtiene el ancho del elemento multimedia actual en píxeles.
+La **propiedad imageSourceWidth** obtiene el ancho del elemento multimedia actual en píxeles.
 
 Esta propiedad es de solo lectura.
 
@@ -49,17 +49,17 @@ Public ReadOnly Property imageSourceWidth As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el ancho del elemento multimedia.
+**System.Int32** que es el ancho del elemento multimedia.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si el elemento multimedia no es el actual, esta propiedad devuelve cero.
 
-Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **imageSourceWidth** para mostrar el tamaño de la imagen, en píxeles, del elemento multimedia actual en un cuadro de texto. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa imageSourceWidth para** mostrar el tamaño de la imagen, en píxeles, del elemento multimedia actual en un cuadro de texto. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -125,7 +125,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

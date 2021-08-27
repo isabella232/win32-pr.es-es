@@ -1,7 +1,7 @@
 ---
-description: Indica si los mensajes de contexto se deben enviar al procedimiento de ventana de la ventana propietaria.
+description: Indica si se deben enviar mensajes de contexto al procedimiento de ventana de la ventana propietaria.
 ms.assetid: 57ecf10a-8a02-4353-b916-9080ebc0b270
-title: Enumeración CONTEXT_ENABLE_TYPE
+title: CONTEXT_ENABLE_TYPE enumeración
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: cd741eeff1cc3e2ce055a84dd646c3aa2563f217
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94bffba211f75416ccae5e9a55342441b7b11b41b1a9f1f4b085ec190f991645
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110975"
 ---
-# <a name="context_enable_type-enumeration"></a>\_Enumeración de tipo de habilitación de contexto \_
+# <a name="context_enable_type-enumeration"></a>ENUMERACIÓN \_ CONTEXT ENABLE \_ TYPE
 
-Indica si los mensajes de contexto se deben enviar al procedimiento de ventana de la ventana propietaria.
+Indica si se deben enviar mensajes de contexto al procedimiento de ventana de la ventana propietaria.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -39,17 +39,17 @@ typedef enum _CONTEXT_ENABLE_TYPE {
 
 <dl> <dt>
 
-<span id="CONTEXT_ENABLE"></span><span id="context_enable"></span>**\_Habilitar contexto**
+<span id="CONTEXT_ENABLE"></span><span id="context_enable"></span>**CONTEXT \_ ENABLE**
 </dt> <dd>
 
 El contexto de la tableta debe estar habilitado, lo que da lugar a que se envíen mensajes de contexto al procedimiento de ventana de la ventana propietaria.
 
 </dd> <dt>
 
-<span id="CONTEXT_DISABLE"></span><span id="context_disable"></span>**deshabilitar contexto \_**
+<span id="CONTEXT_DISABLE"></span><span id="context_disable"></span>**DESHABILITACIÓN DE \_ CONTEXTO**
 </dt> <dd>
 
-El contexto de la tableta debe estar deshabilitado, lo que impide que se envíen más mensajes de contexto al procedimiento de ventana o al receptor de eventos de la ventana propietaria.
+El contexto de la tableta debe deshabilitarse, lo que impide que se envíen más mensajes de contexto al procedimiento de ventana o receptor de eventos de la ventana propietaria.
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ El contexto de la tableta debe estar deshabilitado, lo que impide que se envíen
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 
@@ -68,7 +68,7 @@ El contexto de la tableta debe estar deshabilitado, lo que impide que se envíen
 
 <dl> <dt>
 
-[**ITablet:: CreateContext (método)**](itablet-createcontext.md)
+[**ITablet::CreateContext (Método)**](itablet-createcontext.md)
 </dt> </dl>
 
  
