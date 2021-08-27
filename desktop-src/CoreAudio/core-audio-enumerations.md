@@ -4,33 +4,33 @@ ms.assetid: 7d25be71-ffbe-4e8c-9a45-cdeb35d10292
 title: Enumeraciones de audio principales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35c786e1e18f25374a942a4140b67f0992ca7281
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0210d52f1bde431cb661b38c8e06e83f646331a6c1726a98f2d05b3090ba41f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059025"
 ---
 # <a name="core-audio-enumerations"></a>Enumeraciones de audio principales
 
-En esta sección se describen las enumeraciones que utilizan las API de audio principales en Windows Vista y versiones posteriores.
+En esta sección se describen las enumeraciones que usan las API de audio principales en Windows Vista y versiones posteriores.
 
 
 
 | Enumeración                                                                   | Descripción                                                                                        |
 |-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | [**\_AUDCLNT \_ BUFFERFLAGS**](/windows/win32/api/audioclient/ne-audioclient-_audclnt_bufferflags)                        | Marcas de estado para un búfer de punto de conexión de audio.                                                         |
-| [**AUDCLNT \_ SHAREMODE**](/windows/desktop/api/Audiosessiontypes/ne-audiosessiontypes-audclnt_sharemode)                               | Modo de uso compartido de una secuencia.                                                                     |
+| [**AUDCLNT \_ SHAREMODE**](/windows/desktop/api/Audiosessiontypes/ne-audiosessiontypes-audclnt_sharemode)                               | Modo de uso compartido para una secuencia.                                                                     |
 | [**AUDCLNT \_ STREAMOPTIONS**](/windows/desktop/api/audioclient/ne-audioclient-audclnt_streamoptions)                       | Define valores que describen las características de una secuencia de audio.                               |
-| [**\_categoría de secuencia de audio \_**](/windows/desktop/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category)                      | Especifica la categoría de una secuencia de audio.                                                         |
-| [**AudioSessionState**](/windows/desktop/api/Audiosessiontypes/ne-audiosessiontypes-audiosessionstate)                                | El estado de una sesión de audio.                                                                     |
-| [**ConnectorType**](/windows/win32/api/devicetopology/ne-devicetopology-connectortype)                                        | El tipo de conector en una topología de dispositivo.                                                        |
-| [**Flujo**](/windows/win32/api/devicetopology/ne-devicetopology-dataflow)                                                  | Dirección del flujo de datos de una secuencia de audio.                                                        |
-| [**EDataFlow**](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-edataflow)                                                | Dirección en la que los datos de audio fluyen entre un dispositivo de punto de conexión de audio y una aplicación cliente. |
-| [**EndpointFormFactor**](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-endpointformfactor)                              | Los atributos físicos generales de un dispositivo de punto de conexión de audio.                                       |
-| [**ERole**](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-erole)                                                        | El rol de sistema de un dispositivo de punto de conexión de audio.                                                       |
-| [**\_CONNECTIONTYPE del receptor de KSJACK \_**](/windows/win32/api/devicetopology/ne-devicetopology-ksjack_sink_connectiontype)<br/> | El tipo de conexión.<br/>                                                                 |
-| [**PartType**](/windows/win32/api/devicetopology/ne-devicetopology-parttype)                                                  | El tipo de parte de un elemento (conector o subunidad) en una topología de dispositivo.                               |
+| [**CATEGORÍA SECUENCIA \_ DE \_ AUDIO**](/windows/desktop/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category)                      | Especifica la categoría de una secuencia de audio.                                                         |
+| [**AudioSessionState**](/windows/desktop/api/Audiosessiontypes/ne-audiosessiontypes-audiosessionstate)                                | Estado de una sesión de audio.                                                                     |
+| [**ConnectorType**](/windows/win32/api/devicetopology/ne-devicetopology-connectortype)                                        | Tipo de conector en una topología de dispositivo.                                                        |
+| [**Flujo de datos**](/windows/win32/api/devicetopology/ne-devicetopology-dataflow)                                                  | Dirección del flujo de datos de una secuencia de audio.                                                        |
+| [**EDataFlow**](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-edataflow)                                                | Dirección en la que fluyen los datos de audio entre un dispositivo de punto de conexión de audio y una aplicación cliente. |
+| [**EndpointFormFactor**](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-endpointformfactor)                              | Atributos físicos generales de un dispositivo de punto de conexión de audio.                                       |
+| [**ERole**](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-erole)                                                        | Rol del sistema de un dispositivo de punto de conexión de audio.                                                       |
+| [**KSJACK \_ SINK \_ CONNECTIONTYPE**](/windows/win32/api/devicetopology/ne-devicetopology-ksjack_sink_connectiontype)<br/> | Tipo de conexión.<br/>                                                                 |
+| [**PartType**](/windows/win32/api/devicetopology/ne-devicetopology-parttype)                                                  | Tipo de elemento de una parte (conector o subunidad) en una topología de dispositivo.                               |
 
 
 

@@ -1,38 +1,38 @@
 ---
-description: Especifica el identificador del punto de conexión de un dispositivo de captura de audio.
+description: Especifica el identificador de punto de conexión para un dispositivo de captura de audio.
 ms.assetid: a0d8b54b-7a05-4307-a756-a34bb22f1afd
-title: MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_AUDCAP_ENDPOINT_ID atributo (Mfidl. h)
+title: MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_AUDCAP_ENDPOINT_ID atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a1448dc753a8e3b8221fa040309d3f5b60c4879
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6baafd2aa1bdfc3f4959b877963faff5df9aabe57c672555edb98f4cded8b1ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113955"
 ---
-# <a name="mf_devsource_attribute_source_type_audcap_endpoint_id-attribute"></a>\_Tipo de origen de atributo MF DEVSOURCE \_ \_ \_ Type \_ AUDCAP \_ Endpoint \_ ID
+# <a name="mf_devsource_attribute_source_type_audcap_endpoint_id-attribute"></a>Atributo MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ AUDCAP \_ ENDPOINT \_ ID
 
-Especifica el identificador del punto de conexión de un dispositivo de captura de audio.
+Especifica el identificador de punto de conexión para un dispositivo de captura de audio.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**WCHAR\***
+**Wchar\***
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Para obtener este atributo, llame [**a IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Para establecer este atributo, llame a [**IMFAttributes:: setString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Para establecer este atributo, llame [**a IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor del atributo es un identificador de extremo. Este atributo se utiliza con las siguientes funciones:
+El valor del atributo es un identificador de punto de conexión. Este atributo se usa con las siguientes funciones:
 
--   Se puede usar como entrada para las funciones [**MFCreateDeviceSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesource) y [**MFCreateDeviceSourceActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesourceactivate) . En este contexto, el atributo especifica el dispositivo de captura de audio para la función. Puede obtener el identificador de punto de conexión para un dispositivo determinado llamando al método [**IMMDevice:: getId**](/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-getid) . Consulte la documentación de la API de audio básica para obtener más información.
--   Cuando la función [**MFEnumDeviceSources**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources) enumera los dispositivos de audio, los objetos de activación devueltos contienen este atributo. El objeto de activación usa el atributo internamente cuando crea el origen de medios.
+-   Se puede usar como entrada para las funciones [**MFCreateDeviceSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesource) y [**MFCreateDeviceSourceActivate.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesourceactivate) En este contexto, el atributo especifica el dispositivo de captura de audio para la función. Puede obtener el identificador de punto de conexión de un dispositivo determinado llamando al [**método IMMDevice::GetId.**](/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-getid) Consulte la documentación de Core Audio API para obtener más información.
+-   Cuando la [**función MFEnumDeviceSources**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources) enumera los dispositivos de audio, los objetos de activación devueltos contienen este atributo. El objeto de activación utiliza internamente el atributo cuando crea el origen multimedia.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,7 +40,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Mfidl. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Captura de audio y vídeo](audio-video-capture.md)

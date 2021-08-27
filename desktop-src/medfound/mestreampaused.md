@@ -1,35 +1,35 @@
 ---
-description: Generado por un flujo multimedia cuando el método IMFMediaSource::P ause se completa de forma asincrónica.
+description: Lo genera una secuencia multimedia cuando el método :P ause finaliza de forma asincrónica.
 ms.assetid: 8fafb9a1-95a4-44b6-acd6-fb007d515915
-title: Evento MEStreamPaused (Mfobjects. h)
+title: Evento MEStreamPaused (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ca78147c7cdd7cb6e391052111e11ef0ac92b91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c71415ba147767f771c06cd1cbc8370fd1c3276d6932f791f32fe2212f843694
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113965"
 ---
 # <a name="mestreampaused-event"></a>Evento MEStreamPaused
 
-Generado por un flujo multimedia cuando el método [**IMFMediaSource::P ause**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-pause) se completa de forma asincrónica.
+Lo genera una secuencia multimedia cuando el método [**:P ause**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-pause) finaliza de forma asincrónica.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE              | Descripción                           |
 |----------------------|---------------------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada flujo activo de la presentación envía este evento.
+Cada secuencia activa de la presentación envía este evento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Cada flujo activo de la presentación envía este evento.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Cada flujo activo de la presentación envía este evento.
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

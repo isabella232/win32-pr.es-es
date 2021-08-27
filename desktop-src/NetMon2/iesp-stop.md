@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: ac262d8da5ab218db7300ea38da59d5c738421c0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d22333bcaad688fa9ebb805857db3673f48e70591e1d8953274598acef2b368b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037515"
 ---
 # <a name="iespstop-method"></a>IESP::Stop (método)
 
@@ -43,7 +43,7 @@ HRESULT STDMETHODCALLTYPE Stop(
 *lpStats* \[ out\]
 </dt> <dd>
 
-Puntero a una [estructura STATISTICS que](statistics.md) contiene estadísticas de red, como el total de fotogramas y el total de bytes capturados.
+Puntero a una [estructura STATISTICS que](statistics.md) contiene estadísticas de red, como fotogramas totales y bytes totales capturados.
 
 </dd> </dl>
 
@@ -51,15 +51,15 @@ Puntero a una [estructura STATISTICS que](statistics.md) contiene estadísticas 
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                          | Descripción                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IESP::Connect](iesp-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IESP::Conectar](iesp-connect.md) para conectar el NPP a la red.<br/> |
 | <dl> <dt>**NMERR \_ NO \_ CAPTURA**</dt> </dl> | El NPP no captura datos. Llame [a IESP::Start](iesp-start.md) para iniciar la captura.<br/>                            |
-| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>       | El NPP está conectado a la red, pero no con el [método IESP::Connect.](iesp-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>       | El NPP está conectado a la red, pero no con el [método IESP::Conectar.](iesp-connect.md)<br/>                     |
 
 
 
@@ -75,7 +75,7 @@ Cuando detenga y reinicie la captura, asegúrese de llamar al método [IESP::Con
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -84,14 +84,14 @@ Cuando detenga y reinicie la captura, asegúrese de llamar al método [IESP::Con
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [IESP](iesp.md)
 </dt> <dt>
 
-[IESP::Connect](iesp-connect.md)
+[IESP::Conectar](iesp-connect.md)
 </dt> <dt>
 
 [IESP::Start](iesp-start.md)

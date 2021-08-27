@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TBM_GETTHUMBLENGTH (commctrl. h)
-description: Recupera la longitud del control deslizante en una barra de desplazamiento.
+title: TBM_GETTHUMBLENGTH mensaje (Commctrl.h)
+description: Recupera la longitud del control deslizante en una barra de seguimiento.
 ms.assetid: 290187a2-7bf7-4a4b-a4cf-132f8ad38020
 keywords:
-- TBM_GETTHUMBLENGTH controles de mensajes de Windows
+- TBM_GETTHUMBLENGTH controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 320789c7d3fb94cb4e8afa9abab412887533de9e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c14f7f64ff288c7e3266919bfcd0444e394077d28f515cb9bc255164db3e8819
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046415"
 ---
-# <a name="tbm_getthumblength-message"></a>TBM \_ GETTHUMBLENGTH
+# <a name="tbm_getthumblength-message"></a>Mensaje \_ GETTHUMBLENGTH de TBM
 
-Recupera la longitud del control deslizante en una barra de desplazamiento.
+Recupera la longitud del control deslizante en una barra de seguimiento.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,9 +45,9 @@ Devuelve la longitud, en píxeles, del control deslizante.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

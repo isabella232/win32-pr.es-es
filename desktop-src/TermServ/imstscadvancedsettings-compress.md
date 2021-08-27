@@ -1,28 +1,28 @@
 ---
-title: IMsTscAdvancedSettings propiedad Compress
-description: Especifica si está habilitada la compresión.
+title: IMsTscAdvancedSettings Compress, propiedad
+description: Especifica si la compresión está habilitada.
 ms.assetid: 274774b3-0442-4a46-95f8-7857f885bfdb
 ms.tgt_platform: multiple
 keywords:
-- Propiedad Compress Servicios de Escritorio remoto
-- Propiedad Compress Servicios de Escritorio remoto, interfaz IMsTscAdvancedSettings
-- Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto, propiedad Compress
-- Propiedad Compress Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto, propiedad Compress
-- Propiedad Compress Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto, propiedad Compress
-- Propiedad Compress Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto, propiedad Compress
-- Propiedad Compress Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto, propiedad Compress
-- Propiedad Compress Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto, propiedad Compress
-- Propiedad Compress Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto, propiedad Compress
-- Propiedad Compress Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto, propiedad Compress
-- Propiedad Compress Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto, propiedad Compress
+- Comprimir propiedades Servicios de Escritorio remoto
+- Comprimir propiedades Servicios de Escritorio remoto , interfaz IMsTscAdvancedSettings
+- Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto , propiedad Compress
+- Comprimir propiedades Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad Compress
+- Comprimir propiedades Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad Compress
+- Comprimir propiedades Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad Compress
+- Comprimir propiedades Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad Compress
+- Comprimir propiedad Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad Compress
+- Comprimir propiedades Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad Compress
+- Comprimir propiedades Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad Compress
+- Comprimir propiedades Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad Compress
 topic_type:
 - apiref
 api_name:
@@ -59,20 +59,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c588784d9b06bd2e8e1605a96c8aa9fd157c10eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d954fc039ec8edf4a43b391df29e79fe3a064cbbc856f0b14a011acc517e3d75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125504"
 ---
-# <a name="imstscadvancedsettingscompress-property"></a>IMsTscAdvancedSettings:: compress (propiedad)
+# <a name="imstscadvancedsettingscompress-property"></a>Propiedad IMsTscAdvancedSettings::Compress
 
-Especifica si está habilitada la compresión.
+Especifica si la compresión está habilitada.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -93,11 +93,11 @@ Establezca este parámetro en 0 para deshabilitar la compresión o un valor dist
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

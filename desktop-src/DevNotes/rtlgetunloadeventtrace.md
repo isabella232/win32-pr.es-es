@@ -1,7 +1,7 @@
 ---
-description: Permite al código de volcado obtener la información de módulo descargada de Ntdll.dll para el almacenamiento en el minivolcado.
+description: Permite que el código de volcado obtenga la información del módulo descargado Ntdll.dll para el almacenamiento en el minivolfón.
 ms.assetid: 017398da-e13e-4261-bda5-6f400a91dbe3
-title: RtlGetUnloadEventTrace función)
+title: Función RtlGetUnloadEventTrace
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 9297ba0019c89c5e93961d4b36e0fe16da04d6bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8575610ab34b62c9228f87fa64fbd6a40fa0201b7fe1a70ab95c7daae706854
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058595"
 ---
-# <a name="rtlgetunloadeventtrace-function"></a>RtlGetUnloadEventTrace función)
+# <a name="rtlgetunloadeventtrace-function"></a>Función RtlGetUnloadEventTrace
 
 \[Esta función se puede cambiar o quitar de Windows sin previo aviso.\]
 
-Permite al código de volcado obtener la información de módulo descargada de Ntdll.dll para el almacenamiento en el minivolcado.
+Permite que el código de volcado obtenga la información del módulo descargado Ntdll.dll para el almacenamiento en el minivolfón.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ Esta función no tiene parámetros.
 
 Esta función devuelve un puntero a una matriz. Para obtener más información, vea la sección Comentarios.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La matriz RtlpUnloadEventTrace se define de la siguiente manera:
 
@@ -62,7 +62,7 @@ typedef struct _RTL_UNLOAD_EVENT_TRACE {
 RTL_UNLOAD_EVENT_TRACE RtlpUnloadEventTrace[RTL_UNLOAD_EVENT_TRACE_NUMBER];
 ```
 
-Esta función no tiene ningún archivo de encabezado asociado. La biblioteca de importación asociada, ntdll. lib, está disponible en el kit de controladores de Windows (WDK). También puede llamar a esta función mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene ningún archivo de encabezado asociado. La biblioteca de importación asociada, Ntdll.lib, está disponible en Windows Driver Kit (WDK). También puede llamar a esta función mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

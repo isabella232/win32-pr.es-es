@@ -1,19 +1,19 @@
 ---
-description: 'Versión remota de IMFWorkQueueServicesEX:: BeginRegisterPlatformWorkQueueWithMMCSSEx.'
+description: Versión remotable de IMFWorkQueueServicesEX::BeginRegisterPlatformWorkQueueWithMMCSSEx.
 ms.assetid: 75af7ce6-9b74-4d61-b7f2-5d07538f91cf
 title: RemoteBeginRegisterPlatformWorkQueueWithMMCSSEx
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9d519d13f1e23927f1d34a18d5c5f860e007881
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee1174e4edb8271aa9240857d8082ade87d1a8e6551ac788f98f217c41eb1d9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114295"
 ---
 # <a name="remotebeginregisterplatformworkqueuewithmmcssex"></a>RemoteBeginRegisterPlatformWorkQueueWithMMCSSEx
 
-Versión remota de [**IMFWorkQueueServicesEX:: BeginRegisterPlatformWorkQueueWithMMCSSEx**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservicesex-beginregisterplatformworkqueuewithmmcssex).
+Versión remotable de [**IMFWorkQueueServicesEX::BeginRegisterPlatformWorkQueueWithMMCSSEx**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservicesex-beginregisterplatformworkqueuewithmmcssex).
 
 ``` syntax
 [call_as(BeginRegisterPlatformWorkQueueWithMMCSSEx)]
@@ -26,9 +26,9 @@ HRESULT RemoteBeginRegisterPlatformWorkQueueWithMMCSSEx(
 );
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones no pueden llamar directamente a este método y los objetos no implementan este método. El método no aparece en la tabla vtable de la interfaz. Si se llama a [**BeginRegisterPlatformWorkQueueWithMMCSSEx**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservicesex-beginregisterplatformworkqueuewithmmcssex) a través de los límites del proceso, el archivo DLL de Media Foundation proxy/stub traduce la llamada en una llamada al método remoto y, a continuación, la convierte de nuevo.
+Las aplicaciones no pueden llamar directamente a este método y los objetos no implementan este método. El método no aparece en la tabla virtual de la interfaz . Si se llama a [**BeginRegisterPlatformWorkQueueWithMMCSSEx**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservicesex-beginregisterplatformworkqueuewithmmcssex) a través de los límites del proceso, el archivo DLL de proxy/stub de Media Foundation traduce la llamada en una llamada al método remoto y, a continuación, la convierte de nuevo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -36,9 +36,9 @@ Las aplicaciones no pueden llamar directamente a este método y los objetos no i
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Mfidl.idl</dt> </dl> |
 
 
 

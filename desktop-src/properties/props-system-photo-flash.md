@@ -1,19 +1,19 @@
 ---
-description: Un indicador del estado de Flash en el que se tomó la foto, como se lee en la información del archivo de imagen intercambiable (EXIF).
+description: Indicador del estado de flash cuando se tomó la foto, como se lee en la información del archivo de imagen intercambiable (EXIF).
 ms.assetid: e21de610-9916-4b3f-8e50-f0141b476346
-title: System. Photo. Flash
+title: System.Photo.Flash
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7af98011f8b5e5907387fe53c7495d5e6cd30fec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f872ad976de499914b6a44a9baf68dad74d512d74acbb5d6f707d74e78661df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058505"
 ---
-# <a name="systemphotoflash"></a>System. Photo. Flash
+# <a name="systemphotoflash"></a>System.Photo.Flash
 
-Un indicador del estado de Flash en el que se tomó la foto, como se lee en la información del archivo de imagen intercambiable (EXIF).
+Indicador del estado de flash cuando se tomó la foto, como se lee en la información del archivo de imagen intercambiable (EXIF).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -247,15 +247,15 @@ propertyDescription
             defineName = PHOTO_FLASH_FLASH_AUTO_REDEYE_RETURNLIGHT
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Exchangeable Image File Format para las cámaras digitales fijas: versión Exif 2,2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras de imágenes digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)
@@ -267,7 +267,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -279,7 +279,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -297,7 +297,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

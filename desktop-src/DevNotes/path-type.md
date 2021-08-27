@@ -1,7 +1,7 @@
 ---
 description: Representa el tipo de ruta de acceso que se usa como argumento.
 ms.assetid: f308c638-b383-432e-9dd3-edc33b792139
-title: Enumeración PATH_TYPE
+title: PATH_TYPE enumeración
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1e5602aa7384c8de6c33b407e9a536141d8d002b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c05e71e485eaaf3ff309dc3a0df3d792ccd18c1438964d387afe969adbfd3fc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058605"
 ---
-# <a name="path_type-enumeration"></a>Enumeración de tipo de ruta de acceso \_
+# <a name="path_type-enumeration"></a>Path \_ TYPE (enumeración)
 
 Representa el tipo de ruta de acceso que se usa como argumento.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -39,14 +39,14 @@ typedef enum _PATH_TYPE {
 
 <dl> <dt>
 
-<span id="DOS_PATH"></span><span id="dos_path"></span>**Ruta de acceso de DOS \_**
+<span id="DOS_PATH"></span><span id="dos_path"></span>**RUTA DE \_ ACCESO DE DOS**
 </dt> <dd>
 
 Ruta de acceso estándar.
 
 </dd> <dt>
 
-<span id="NT_PATH"></span><span id="nt_path"></span>**\_ruta de acceso NT**
+<span id="NT_PATH"></span><span id="nt_path"></span>**NT \_ PATH**
 </dt> <dd>
 
 Ruta de acceso interna.
@@ -59,8 +59,8 @@ Ruta de acceso interna.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

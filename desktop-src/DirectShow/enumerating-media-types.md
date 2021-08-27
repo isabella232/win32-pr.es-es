@@ -4,20 +4,20 @@ ms.assetid: 7878885f-c285-4744-8eab-445678dcfd49
 title: Enumerar tipos de medios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3909c25e9ae5f90a3084eebb531431cc93ef46cd
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: a4e2f063fc243d081b930a1bf47f85904dfbc2fc7eef00fb595d5f0fb3a451ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104361877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102805"
 ---
 # <a name="enumerating-media-types"></a>Enumerar tipos de medios
 
-Los pin admiten el método [**IPin:: EnumMediaTypes**](/windows/desktop/api/Strmif/nf-strmif-ipin-enummediatypes) , que enumera los tipos de medios preferidos de un PIN. Devuelve un puntero a la interfaz [**IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) . El método [**IEnumMediaTypes:: Next**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-next) recupera punteros a estructuras [**de \_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) que describen los tipos de medios.
+Los pines admiten [**el método IPin::EnumMediaTypes,**](/windows/desktop/api/Strmif/nf-strmif-ipin-enummediatypes) que enumera los tipos de medios preferidos de un pin. Devuelve un puntero a la [**interfaz IEnumMediaTypes.**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) El [**método IEnumMediaTypes::Next**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-next) recupera punteros a estructuras [**AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) que describen tipos de medios.
 
-El enumerador de tipo de medio existe principalmente para ayudar a que el administrador de gráficos de filtro realice conexiones inteligentes y las aplicaciones no la usarán probablemente. Un PIN no devuelve necesariamente ningún tipo de medio preferido. Además, los tipos de medios que devuelve pueden depender del estado de la conexión del filtro. Por ejemplo, un PIN de salida de un filtro podría devolver un conjunto diferente de tipos de medios según el tipo de medio que se haya establecido para el PIN de entrada del filtro.
+El enumerador de tipo de medio existe principalmente para ayudar a Filter Graph Manager a realizar conexiones inteligentes y es probable que las aplicaciones no lo usen. Un pin no devuelve necesariamente ningún tipo de medio preferido. Además, los tipos de medios que devuelve pueden depender del estado de conexión del filtro. Por ejemplo, el pin de salida de un filtro podría devolver un conjunto diferente de tipos de medios en función del tipo de medio que se estableció para el pin de entrada del filtro.
 
-En el ejemplo siguiente se busca un tipo de medio preferido que coincida con un tipo principal, un subtipo o un tipo de formato especificados.
+En el ejemplo siguiente se busca un tipo de medio preferido que coincida con un tipo principal, subtipo o tipo de formato especificados.
 
 
 ```C++
@@ -96,7 +96,7 @@ HRESULT GetPinMediaType(
 
 
 > [!Note]  
-> En este ejemplo se usa la función [SafeRelease](/windows/desktop/medfound/saferelease) para liberar punteros de interfaz.
+> En este ejemplo se usa [la función SafeRelease para](/windows/desktop/medfound/saferelease) liberar punteros de interfaz.
 
  
 
@@ -104,7 +104,7 @@ HRESULT GetPinMediaType(
 
 <dl> <dt>
 
-[Enumerar objetos en un gráfico de filtros](enumerating-objects-in-a-filter-graph.md)
+[Enumerar objetos en un filtro Graph](enumerating-objects-in-a-filter-graph.md)
 </dt> <dt>
 
 [**IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes)

@@ -1,11 +1,11 @@
 ---
-title: Método INapSystemHealthValidationRequest SetPrivateData (NapSystemHealthValidator. h)
+title: Método INapSystemHealthValidationRequest SetPrivateData (NapSystemHealthValidator.h)
 description: Permite que NapServer almacene información de estado.
 ms.assetid: 128f9beb-e5da-4b20-bf5e-fcf064209da3
 keywords:
-- Método SetPrivateData NAP
-- Método SetPrivateData NAP, interfaz INapSystemHealthValidationRequest
-- Interfaz INapSystemHealthValidationRequest NAP, método SetPrivateData
+- Método NAP de SetPrivateData
+- Método NAP de SetPrivateData, interfaz INapSystemHealthValidationRequest
+- INapSystemHealthValidationRequest interface NAP , SetPrivateData method
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da50ca236c08388632e17916decee162b3b71743
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bf0e362eb3732d18c0e98b89f834dfe9efbc2a70ca82b7c211a96459d46a9f1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037695"
 ---
-# <a name="inapsystemhealthvalidationrequestsetprivatedata-method"></a>INapSystemHealthValidationRequest:: SetPrivateData (método)
+# <a name="inapsystemhealthvalidationrequestsetprivatedata-method"></a>INapSystemHealthValidationRequest::SetPrivateData (método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El método **INapSystemHealthValidationRequest:: SetPrivateData** permite que NapServer almacene información de estado.
+El **método INapSystemHealthValidationRequest::SetPrivateData** permite que NapServer almacene información de estado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,10 +47,10 @@ HRESULT SetPrivateData(
 
 <dl> <dt>
 
-*privateData* \[ de\]
+*privateData* \[ En\]
 </dt> <dd>
 
-Un puntero a un BLOB de datos [**PrivateData**](/windows/win32/api/naptypes/ns-naptypes-privatedata) que contiene la información de estado opaca.
+Puntero a un blob [**de datos PrivateData**](/windows/win32/api/naptypes/ns-naptypes-privatedata) que contiene la información de estado opaco.
 
 </dd> </dl>
 
@@ -62,17 +62,17 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 | Código devuelto                                                                                     | Descripción                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | El límite de recursos del sistema no pudo realizar la operación.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo NapServer puede interpretar el BLOB de datos.
+Solo NapServer puede interpretar el blob de datos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,9 +81,9 @@ Solo NapServer puede interpretar el BLOB de datos.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                    |
-| Encabezado<br/>                   | <dl> <dt>NapSystemHealthValidator. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator. idl</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
+| Header<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |
 
 

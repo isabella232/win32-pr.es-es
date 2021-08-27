@@ -1,7 +1,7 @@
 - name: Administración de recursos compartidos de red
   href: network-share-management.md
   items:
-    - name: Acerca de la administración de recursos compartidos
+    - name: Acerca de la administración de recursos compartidos de red
       href: about-network-share-management.md
       items:
         - name: Novedades de la administración de recursos compartidos de red en Windows Server 2008 R2 y Windows 7

@@ -3,14 +3,14 @@ description: 'MF_MT_FSSourceTypeDecoded atributo : especifica si un descodificad
 title: MF_MT_FSSourceTypeDecoded
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3799c11e3b921427ff4a3b05aa3d7f47e297ba14
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6ae25fce343d0c24f7b0a79e2623e7c3e2d0f9272b2f95a825860860ff6f88c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113765"
 ---
-# <a name="mf_mt_fssourcetypedecoded-attribute"></a>Atributo \_ MF MT \_ FSSourceTypeDecoded
+# <a name="mf_mt_fssourcetypedecoded-attribute"></a>Atributo \_ \_ FSSourceTypeDecoded de MF MT
 
 Especifica que un tipo de medio se descodifica automáticamente.
 
@@ -20,7 +20,7 @@ Especifica que un tipo de medio se descodifica automáticamente.
 
 
 ## <a name="remarks"></a>Comentarios
-Un tipo de medio se marca como un atributo para indicar que esto no existe en el origen físico y se sintetiza mediante la canalización. Un valor de 1 (TRUE) indica que el tipo de medio está sintetizado. Un valor de 0 (FALSE) o el valor que no está presente indica que no lo está.
+Un tipo de medio se marca como un atributo para indicar que esto no existe en el origen físico y se sintetiza mediante la canalización. Un valor de 1 (TRUE) indica que se sintetiza el tipo de medio. Un valor de 0 (FALSE) o el valor que no está presente indica que no lo está.
 
 En la versión actual, este atributo debe especificarse con el siguiente valor GUID en lugar de la MD_MT_FSSourceTypeDecoded constante:
 
@@ -31,14 +31,14 @@ En la versión actual, este atributo debe especificarse con el siguiente valor G
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 aplicaciones \[ de escritorio \| para aplicaciones para UWP\]<br/>                                  |
-| Servidor mínimo compatible<br/> | Aplicaciones de escritorio de Windows Server 2012 \[ \| aplicaciones para UWP\]<br/>                        |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                        |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

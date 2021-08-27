@@ -1,7 +1,7 @@
 ---
-description: Recupera el tipo y los datos para el valor del registro especificado en un subárbol del registro sin conexión.
+description: Recupera el tipo y los datos del valor del Registro especificado en un subárbol del Registro sin conexión.
 ms.assetid: 83604743-cb59-42a1-9951-620ad5bd8de7
-title: Función ORGetValue (Offreg. h)
+title: Función ORGetValue (Offreg.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: 375dae37e2e6b6299a7bf1fd36f9b950d0433d89
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fc364e208e9c243754edf8731f077ec48e9133d4a95ba86b5a1f99971192b51e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058655"
 ---
-# <a name="orgetvalue-function"></a>ORGetValue función)
+# <a name="orgetvalue-function"></a>Función ORGetValue
 
-Recupera el tipo y los datos para el valor del registro especificado en un subárbol del registro sin conexión.
+Recupera el tipo y los datos del valor del Registro especificado en un subárbol del Registro sin conexión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,17 +44,17 @@ DWORD ORGetValue(
 
 <dl> <dt>
 
-*Identificador* \[ de de\]
+*Identificador* \[ En\]
 </dt> <dd>
 
-Identificador de una clave del registro abierta en un subárbol del registro sin conexión.
+Identificador de una clave del Registro abierta en un subárbol del Registro sin conexión.
 
 </dd> <dt>
 
 *lpSubKey* \[ en, opcional\]
 </dt> <dd>
 
-Nombre de la clave del Registro. Esta clave debe ser una subclave de la clave especificada por el parámetro *Handle* . Este parámetro puede ser **NULL**.
+Nombre de la clave del Registro. Esta clave debe ser una subclave de la clave especificada por el *parámetro Handle.* Este parámetro puede ser **NULL**.
 
 Los nombres de clave no distinguen mayúsculas de minúsculas.
 
@@ -63,9 +63,9 @@ Los nombres de clave no distinguen mayúsculas de minúsculas.
 *lpValue* \[ en, opcional\]
 </dt> <dd>
 
-Nombre del valor del registro. Si este parámetro es **null** o una cadena vacía, "", la función recupera el tipo y los datos para el valor sin nombre o predeterminado de la clave, si existe. Para obtener más información, vea [límites de tamaño de elementos del registro](../sysinfo/registry-element-size-limits.md).
+Nombre del valor del Registro. Si este parámetro es **NULL** o una cadena vacía, "", la función recupera el tipo y los datos del valor predeterminado o sin nombre de la clave, si existe. Para obtener más información, vea [Límites de tamaño de elemento del Registro.](../sysinfo/registry-element-size-limits.md)
 
-Las claves no tienen un valor predeterminado o sin nombre. Los valores sin nombre pueden ser de cualquier tipo.
+Las claves no tienen automáticamente un valor sin nombre o predeterminado. Los valores sin nombre pueden ser de cualquier tipo.
 
 Los nombres de valor no distinguen mayúsculas de minúsculas.
 
@@ -74,43 +74,43 @@ Los nombres de valor no distinguen mayúsculas de minúsculas.
 *pdwType* \[ out, opcional\]
 </dt> <dd>
 
-Puntero a una variable que recibe un código que indica el tipo de datos almacenados en el valor especificado. Para obtener una lista de los códigos de tipo posibles, vea [Registry Value Types](../sysinfo/registry-value-types.md). Este parámetro puede ser **null** si el tipo no es necesario.
+Puntero a una variable que recibe un código que indica el tipo de datos almacenados en el valor especificado. Para obtener una lista de los códigos de tipo posibles, vea [Tipos de valor del Registro](../sysinfo/registry-value-types.md). Este parámetro puede ser **NULL** si el tipo no es necesario.
 
 </dd> <dt>
 
 *pvData* \[ out, opcional\]
 </dt> <dd>
 
-Un puntero a un búfer que recibe los datos del valor. Este parámetro puede ser **null** si los datos no son necesarios.
+Puntero a un búfer que recibe los datos del valor. Este parámetro puede ser **NULL** si los datos no son necesarios.
 
-Si los datos son una cadena, la función comprueba si hay un carácter nulo de terminación. Si no se encuentra ninguno, la cadena se almacena con un terminador nulo si el búfer es lo suficientemente grande como para alojar el carácter adicional. De lo contrario, se produce un error en la función y se devuelven \_ más \_ datos.
+Si los datos son una cadena, la función comprueba si hay un carácter nulo de terminación. Si no se encuentra una, la cadena se almacena con un terminador null si el búfer es lo suficientemente grande como para dar cabida al carácter adicional. De lo contrario, se produce un error en la función y devuelve ERROR \_ MORE \_ DATA.
 
 </dd> <dt>
 
-*pcbData* \[ in, out, opcional\]
+*pwData* \[ in, out, optional\]
 </dt> <dd>
 
-Puntero a una variable que especifica el tamaño del búfer al que apunta el parámetro *pvData* , en bytes. Cuando la función devuelve, esta variable contiene el tamaño de los datos copiados en *pvData*.
+Puntero a una variable que especifica el tamaño del búfer al que apunta el *parámetro pvData,* en bytes. Cuando la función vuelve, esta variable contiene el tamaño de los datos copiados en *pvData.*
 
-El parámetro *pcbData* solo puede ser **null** si *pvData* es **null**.
+El *parámetro typeData* solo puede **ser NULL** si *pvData* es **NULL.**
 
-Si los datos tienen el \_ tipo REG SZ, REG \_ multi \_ SZ o REG \_ Expand \_ SZ, este tamaño incluye el carácter o caracteres nulos de terminación. Para obtener más información, vea la sección Comentarios.
+Si los datos tienen el tipo REG SZ, REG MULTI SZ o REG EXPAND SZ, este tamaño incluye cualquier carácter o carácter \_ \_ nulo \_ \_ \_ final. Para obtener más información, vea la sección Comentarios.
 
-Si el búfer especificado por el parámetro *pvData* no es lo suficientemente grande como para contener los datos, la función devuelve el error \_ más \_ datos y almacena el tamaño de búfer necesario en la variable a la que apunta *pcbData*. En este caso, el contenido del búfer *pvData* no está definido.
+Si el búfer especificado por el parámetro *pvData* no es lo suficientemente grande como para contener los datos, la función devuelve ERROR MORE DATA y almacena el tamaño de búfer necesario en la variable a la que \_ \_ *apuntan los datos de .* En este caso, el contenido del búfer *pvData* no está definido.
 
-Si *pvData* es **null** y *pcbData* no es **null**, la función devuelve el error \_ Success y almacena el tamaño de los datos, en bytes, en la variable a la que apunta *pcbData*. Esto permite que una aplicación determine la mejor manera de asignar un búfer para los datos del valor.
+Si *pvData* es **NULL** y *byteData* no es **NULL,** la función devuelve ERROR SUCCESS y almacena el tamaño de los datos, en bytes, en la variable a la que \_ apunta *byteData*. Esto permite a una aplicación determinar la mejor manera de asignar un búfer para los datos del valor.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es ERROR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
-Si se produce un error en la función, el valor devuelto es un código de error distinto de cero definido en Winerror. h. Puede usar la función [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con la \_ \_ marca de formato mensaje de \_ sistema para obtener una descripción genérica del error.
+Si se produce un error en la función, el valor devuelto es un código de error distinto de cero definido en Winerror.h. Puede usar la función [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con la marca FORMAT \_ MESSAGE FROM SYSTEM para obtener una descripción genérica del \_ \_ error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación normalmente llama a la función [**OREnumValue**](orenumvalue.md) para determinar los nombres de valor y, después, llama a la función **ORGetValue** para recuperar los datos de los nombres.
+Normalmente, una aplicación llama a la [**función OREnumValue**](orenumvalue.md) para determinar los nombres de valor y, a continuación, llama a la **función ORGetValue** para recuperar los datos de los nombres.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -118,8 +118,8 @@ Una aplicación normalmente llama a la función [**OREnumValue**](orenumvalue.md
 
 | Requisito | Value |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Redistribuible<br/> | Windows offline Registry Library versión 1,0 o posterior<br/>                      |
-| Encabezado<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Redistribuible<br/> | Windows Biblioteca del Registro sin conexión versión 1.0 o posterior<br/>                      |
+| Header<br/>          | <dl> <dt>Offreg.h</dt> </dl>   |
 | Archivo DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 
