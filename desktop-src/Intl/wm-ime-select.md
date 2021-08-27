@@ -56,7 +56,7 @@ Identificador de configuración regional de entrada asociado al IME.
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una aplicación que ha creado una ventana de IME debe pasar este mensaje a esa ventana para que pueda recuperar el identificador de diseño del teclado al IME recién seleccionado.
 
@@ -66,7 +66,7 @@ La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindo
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -74,7 +74,7 @@ La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

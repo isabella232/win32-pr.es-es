@@ -1,6 +1,6 @@
 ---
 title: Función D3DX11CreateAsyncResourceLoader (D3DX11async.h)
-description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store. Vea la sección Comentarios. Cree un cargador de recursos asincrónicos.
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios. Cree un cargador de recursos asincrónicos.
 ms.assetid: b49900a1-866d-4a4a-bf3a-2deb9ce4a208
 keywords:
 - Función D3DX11CreateAsyncResourceLoader Direct3D 11
@@ -53,7 +53,7 @@ HRESULT D3DX11CreateAsyncResourceLoader(
 
 Tipo: **[ **HMODULE**](/windows/desktop/WinProg/windows-data-types)**
 
-Identificador del módulo de recursos. Use [la función GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) para obtener el identificador.
+Controle el módulo de recursos. Use [la función GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) para obtener el identificador.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Identificador del módulo de recursos. Use [la función GetModuleHandle](/window
 
 Tipo: **[ **LPCTSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Nombre del recurso en hSrcModule. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos se resuelve en LPCSTR.
+Nombre del recurso en hSrcModule. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve como LPCSTR.
 
 </dd> <dt>
 
@@ -81,13 +81,13 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No hay ninguna implementación del cargador asincrónico fuera de D3DX 10 y D3DX 11.
 
 Para Windows Store, los ejemplos de DirectX (por ejemplo, el ejemplo de tutorial de [Direct3D)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)incluyen el módulo **BasicLoader** que usa el modelo de programación asincrónica de Windows Runtime [**(AsyncBase).**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))
 
-En el caso de las aplicaciones de escritorio win32, puede usar el Runtime de simultaneidad [para](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) implementar algo similar al modelo de programación asincrónica de Windows Runtime.
+En el caso de las aplicaciones de escritorio Win32, puede usar el Runtime de simultaneidad [para](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) implementar algo similar al modelo de programación asincrónica de Windows Runtime.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,7 +100,7 @@ En el caso de las aplicaciones de escritorio win32, puede usar el Runtime de sim
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

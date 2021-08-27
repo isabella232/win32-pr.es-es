@@ -5,18 +5,18 @@ ms.assetid: 3a099cb6-d7ed-41bd-9091-7e39768b4581
 keywords:
 - Automatización de la interfaz de usuario,atributos de texto
 - atributos de texto, acerca de
-- atributos de texto, tipos variant
+- atributos de texto, tipos de variante
 - atributos de texto, tipos de datos
 - Automatización de la interfaz de usuario,lista de atributos
 - Automatización de la interfaz de usuario,lista de atributos de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f8ae2d51a222e3833d0dd95fa6c048114a370a6
-ms.sourcegitcommit: 6377cd944d1f09f2dfe5727170ca8b330c8235bf
+ms.openlocfilehash: 875cad20285cf38c06ab3363be5bc9aee641c2ce42ae4caff5b091cf1a79c63a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113353628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118824627"
 ---
 # <a name="ui-automation-text-attributes"></a>Automatización de la interfaz de usuario de texto
 
@@ -24,7 +24,7 @@ En este tema se describe cómo Microsoft Automatización de la interfaz de usuar
 
 Automatización de la interfaz de usuario proveedores exponen atributos de texto a través de los [**métodos GetAttributeValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-getattributevalue) y [**FindAttribute**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-findattribute) del patrón de control [TextRange.](uiauto-about-text-and-textrange-patterns.md) Las aplicaciones cliente usan [**el método IUIAutomationTextRange::GetAttributeValue**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getattributevalue) para recuperar el valor de un atributo de texto determinado para un intervalo de texto. Los clientes pueden usar [**el método IUIAutomationTextRange::FindAttribute**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-findattribute) para buscar texto en un intervalo de texto que tenga un atributo determinado. Si se encuentra algún texto que coincida, el método crea un nuevo intervalo de texto que contiene el texto correspondiente.
 
-El patrón de control **TextRange** admite los atributos de texto de la lista siguiente. Los nombres de atributo se derivan de los identificadores Automatización de la interfaz de usuario de atributo de texto. Por ejemplo, los clientes identifican el atributo **AnimationStyle** como [**UIA \_ AnimationStyleAttributeId**](uiauto-textattribute-ids.md) (definido en Uiautomationclient.h) y por los proveedores como **TEXT \_ AnimationStyle \_ Attribute \_ GUID** (definido en Uiautomationcoreapi.h). Para obtener más información sobre cada atributo de texto admitido, vea [**Identificadores de atributo de texto**](uiauto-textattribute-ids.md).
+El patrón de control **TextRange** admite los atributos de texto de la lista siguiente. Los nombres de atributo se derivan de los Automatización de la interfaz de usuario de atributo de texto. Por ejemplo, los clientes identifican el atributo **AnimationStyle** como [**UIA \_ AnimationStyleAttributeId**](uiauto-textattribute-ids.md) (definido en Uiautomationclient.h) y por los proveedores como **TEXT \_ AnimationStyle \_ Attribute \_ GUID** (definido en Uiautomationcoreapi.h). Para obtener más información sobre cada atributo de texto admitido, vea [**Identificadores de atributo de texto**](uiauto-textattribute-ids.md).
 
 > [!Note]  
 > Algunos de los atributos enumerados se admiten a partir de Windows 8. Consulte [**Identificadores de atributo de texto para**](uiauto-textattribute-ids.md) obtener notas sobre la compatibilidad con versiones.
@@ -200,7 +200,7 @@ La información sobre los estilos de texto está disponible a través de los atr
 
 ## <a name="interaction-and-selection-attributes"></a>Atributos de interacción y selección
 
-La información sobre la selección de texto actual en el intervalo y el estado del foco está disponible con los atributos siguientes.
+La información sobre la selección de texto actual en el intervalo y el estado del foco está disponible a través de los atributos siguientes.
 
 
 

@@ -22,7 +22,7 @@ ms.locfileid: "118632717"
 ---
 # <a name="installercomponentclients-property"></a>Installer.ComponentClients, propiedad
 
-La propiedad **ComponentClients de solo** lectura devuelve un [**objeto StringList**](stringlist-object.md) que enumera el conjunto de clientes de un componente especificado.
+La propiedad **ComponentClients de** solo lectura devuelve un [**objeto StringList**](stringlist-object.md) que enumera el conjunto de clientes de un componente especificado.
 
 Esta propiedad es de solo lectura.
 
@@ -39,7 +39,7 @@ propVal = Installer.ComponentClients
 
 GUID de cadena que representa el código de componente del componente. Los códigos de componente se especifican en la columna ComponentId de la [tabla Component](component-table.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para enumerar los clientes de componentes, una aplicación puede recorrer en iteración el [**objeto StringList**](stringlist-object.md) mediante una construcción For Each. Dado que los clientes no están ordenados, los nuevos componentes tienen un índice arbitrario. Esto significa que la función puede devolver clientes en cualquier orden.
 
@@ -47,15 +47,15 @@ Para enumerar los clientes de componentes, una aplicación puede recorrer en ite
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

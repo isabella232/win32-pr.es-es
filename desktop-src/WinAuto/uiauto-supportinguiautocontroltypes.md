@@ -1,76 +1,76 @@
 ---
-title: Compatibilidad con tipos de control de UI Automation
-description: Esta sección contiene información detallada sobre la estructura de árbol, las propiedades, los patrones de control y los eventos que debe admitir cada tipo de control de automatización de la interfaz de usuario de Microsoft.
+title: Compatibilidad con Automatización de la interfaz de usuario de control
+description: Esta sección contiene información detallada sobre la estructura de árbol, las propiedades, los patrones de control y los eventos que cada tipo de control de Microsoft Automatización de la interfaz de usuario debe admitir.
 ms.assetid: 35232907-6c54-47cd-b82a-0daee279ef17
 keywords:
-- Automatización de la interfaz de usuario, acerca de los tipos de control
-- UI Automation, información general sobre el tipo de control
+- Automatización de la interfaz de usuario,acerca de los tipos de control
+- Automatización de la interfaz de usuario información general sobre el tipo de control
 - compatibilidad con el tipo de control
 - tipos de control, compatibilidad
-- tipos de controles, acerca de
+- tipos de control, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26ac6f857da87691428c747cfe5dbff5102218f6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b929e246891a9addf2e3d56a2cfd8beae3c749f5aa9b74476eadb6ce769a6a20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118825786"
 ---
-# <a name="supporting-ui-automation-control-types"></a>Compatibilidad con tipos de control de UI Automation
+# <a name="supporting-ui-automation-control-types"></a>Compatibilidad con Automatización de la interfaz de usuario de control
 
-Esta sección contiene información detallada sobre la estructura de árbol, las propiedades, los patrones de control y los eventos que debe admitir cada tipo de control de automatización de la interfaz de usuario de Microsoft.
+Esta sección contiene información detallada sobre la estructura de árbol, las propiedades, los patrones de control y los eventos que cada tipo de control de Microsoft Automatización de la interfaz de usuario debe admitir.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [AppBar (tipo de control)](uiauto-supportappbarcontroltype.md)
--   [Button (tipo de control)](uiauto-supportbuttoncontroltype.md)
--   [Calendar (tipo de control)](uiauto-supportcalendarcontroltype.md)
--   [CheckBox (tipo de control)](uiauto-supportcheckboxcontroltype.md)
--   [ComboBox (tipo de control)](uiauto-supportcomboboxcontroltype.md)
--   [DataGrid (tipo de control)](uiauto-supportdatagridcontroltype.md)
--   [DataItem (tipo de control)](uiauto-supportdataitemcontroltype.md)
--   [Document (tipo de control)](uiauto-supportdocumentcontroltype.md)
+-   [Tipo de control AppBar](uiauto-supportappbarcontroltype.md)
+-   [Tipo de control Button](uiauto-supportbuttoncontroltype.md)
+-   [Tipo de control Calendar](uiauto-supportcalendarcontroltype.md)
+-   [Tipo de control CheckBox](uiauto-supportcheckboxcontroltype.md)
+-   [Tipo de control ComboBox](uiauto-supportcomboboxcontroltype.md)
+-   [Tipo de control DataGrid](uiauto-supportdatagridcontroltype.md)
+-   [Tipo de control DataItem](uiauto-supportdataitemcontroltype.md)
+-   [Tipo de control de documento](uiauto-supportdocumentcontroltype.md)
 -   [Editar tipo de control](uiauto-supporteditcontroltype.md)
--   [Group (tipo de control)](uiauto-supportgroupcontroltype.md)
--   [Header (tipo de control)](uiauto-supportheadercontroltype.md)
--   [HeaderItem (tipo de control)](uiauto-supportheaderitemcontroltype.md)
--   [HYPERLINK (tipo de control)](uiauto-supporthyperlinkcontroltype.md)
--   [Image (tipo de control)](uiauto-supportimagecontroltype.md)
--   [List (tipo de control)](uiauto-supportlistcontroltype.md)
--   [ListItem (tipo de control)](uiauto-supportlistitemcontroltype.md)
--   [Menu (tipo de control)](uiauto-supportmenucontroltype.md)
--   [MenuBar (tipo de control)](uiauto-supportmenubarcontroltype.md)
+-   [Tipo de control de grupo](uiauto-supportgroupcontroltype.md)
+-   [Tipo de control de encabezado](uiauto-supportheadercontroltype.md)
+-   [Tipo de control HeaderItem](uiauto-supportheaderitemcontroltype.md)
+-   [Tipo de control Hyperlink](uiauto-supporthyperlinkcontroltype.md)
+-   [Tipo de control de imagen](uiauto-supportimagecontroltype.md)
+-   [Tipo de control List](uiauto-supportlistcontroltype.md)
+-   [Tipo de control ListItem](uiauto-supportlistitemcontroltype.md)
+-   [Tipo de control De menú](uiauto-supportmenucontroltype.md)
+-   [Tipo de control MenuBar](uiauto-supportmenubarcontroltype.md)
 -   [MenuItem (tipo de control)](uiauto-supportmenuitemcontroltype.md)
--   [Pane (tipo de control)](uiauto-supportpanecontroltype.md)
--   [ProgressBar (tipo de control)](uiauto-supportprogressbarcontroltype.md)
--   [RadioButton (tipo de control)](uiauto-supportradiobuttoncontroltype.md)
--   [ScrollBar (tipo de control)](uiauto-supportscrollbarcontroltype.md)
--   [SemanticZoom (tipo de control)](/windows/desktop/WinAuto/uiauto-supportsemanticzoomcontroltype)
--   [Separator (tipo de control)](uiauto-supportseparatorcontroltype.md)
--   [Slide (tipo de control)](uiauto-supportslidercontroltype.md)
--   [Spinner (tipo de control)](uiauto-supportspinnercontroltype.md)
--   [SplitButton (tipo de control)](uiauto-supportsplitbuttoncontroltype.md)
--   [StatusBar (tipo de control)](uiauto-supportstatusbarcontroltype.md)
--   [Tab (tipo de control)](uiauto-supporttabcontroltype.md)
--   [TabItem (tipo de control)](uiauto-supporttabitemcontroltype.md)
--   [Table (tipo de control)](uiauto-supporttablecontroltype.md)
--   [Text (tipo de control)](uiauto-supporttextcontroltype.md)
--   [Thumb (tipo de control)](uiauto-supportthumbcontroltype.md)
--   [TitleBar (tipo de control)](uiauto-supporttitlebarcontroltype.md)
--   [ToolBar (tipo de control)](uiauto-supporttoolbarcontroltype.md)
--   [ToolTip (tipo de control)](uiauto-supporttooltipcontroltype.md)
--   [Tree (tipo de control)](uiauto-supporttreecontroltype.md)
--   [Tipo de control TreeItem](uiauto-supporttreeitemcontroltype.md)
--   [Window (tipo de control)](uiauto-supportwindowcontroltype.md)
+-   [Tipo de control Panel](uiauto-supportpanecontroltype.md)
+-   [Tipo de control ProgressBar](uiauto-supportprogressbarcontroltype.md)
+-   [Tipo de control RadioButton](uiauto-supportradiobuttoncontroltype.md)
+-   [Tipo de control ScrollBar](uiauto-supportscrollbarcontroltype.md)
+-   [Tipo de control SemanticZoom](/windows/desktop/WinAuto/uiauto-supportsemanticzoomcontroltype)
+-   [Tipo de control Separador](uiauto-supportseparatorcontroltype.md)
+-   [Tipo de control deslizante](uiauto-supportslidercontroltype.md)
+-   [Tipo de control spinner](uiauto-supportspinnercontroltype.md)
+-   [Tipo de control SplitButton](uiauto-supportsplitbuttoncontroltype.md)
+-   [Tipo de control StatusBar](uiauto-supportstatusbarcontroltype.md)
+-   [Tipo de control Tab](uiauto-supporttabcontroltype.md)
+-   [Tipo de control TabItem](uiauto-supporttabitemcontroltype.md)
+-   [Tipo de control Tabla](uiauto-supporttablecontroltype.md)
+-   [Tipo de control Text](uiauto-supporttextcontroltype.md)
+-   [Tipo de control Thumb](uiauto-supportthumbcontroltype.md)
+-   [Tipo de control TitleBar](uiauto-supporttitlebarcontroltype.md)
+-   [Tipo de control ToolBar](uiauto-supporttoolbarcontroltype.md)
+-   [Tipo de control Información sobre herramientas](uiauto-supporttooltipcontroltype.md)
+-   [Tipo de control Tree](uiauto-supporttreecontroltype.md)
+-   [TreeItem (tipo de control)](uiauto-supporttreeitemcontroltype.md)
+-   [Tipo de control Ventana](uiauto-supportwindowcontroltype.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Guía del programador del proveedor de UI Automation](uiauto-providerportal.md)
+[Automatización de la interfaz de usuario del programador del proveedor de aplicaciones](uiauto-providerportal.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

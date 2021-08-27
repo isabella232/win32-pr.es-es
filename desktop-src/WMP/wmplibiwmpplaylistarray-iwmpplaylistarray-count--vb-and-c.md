@@ -3,9 +3,9 @@ title: IWMPPlaylistArray count, propiedad
 description: La propiedad count obtiene el número de listas de reproducción de la matriz de listas de reproducción.
 ms.assetid: 24603d05-4016-4aac-a623-75be668065c8
 keywords:
-- count property Reproductor de Windows Media
+- recuento de propiedades Reproductor de Windows Media
 - count property Reproductor de Windows Media , IWMPPlaylistArray (interfaz)
-- Interfaz IWMPPlaylistArray Reproductor de Windows Media , propiedad count
+- Interfaz IWMPPlaylistArray Reproductor de Windows Media propiedad , count
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118331132"
 ---
-# <a name="iwmpplaylistarraycount-property"></a>Propiedad IWMPPlaylistArray::count
+# <a name="iwmpplaylistarraycount-property"></a>IWMPPlaylistArray::count, propiedad
 
 La **propiedad count** obtiene el número de listas de reproducción de la matriz de listas de reproducción.
 
@@ -50,7 +50,7 @@ Public ReadOnly Property count As System.Int32
 
 ## <a name="remarks"></a>Comentarios
 
-Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
+Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 

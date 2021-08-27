@@ -12,12 +12,12 @@ keywords:
 - recursos del icono de uso compartido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03202c250502794d5f845bcc8c2ae263d919ea62
-ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
+ms.openlocfilehash: 40db7a5828c80dc27780ac54e4110e37a80f44938c9475904ce32089be50d84f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108327120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472603"
 ---
 # <a name="using-icons"></a>Usar iconos
 
@@ -50,7 +50,7 @@ hIcon2 = LoadIcon(hinst, MAKEINTRESOURCE(460));
 
 
 
-Una aplicación debe implementar iconos personalizados como recursos y debe usar la función [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) o [**LoadImage,**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) en lugar de crear los iconos en tiempo de ejecución. Este enfoque evita la dependencia de dispositivos, simplifica la localización y permite a las aplicaciones compartir mapas de bits de icono. Sin embargo, en el ejemplo siguiente se [**usa CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) para crear un icono personalizado en tiempo de ejecución, basado en máscaras de bits de mapa de bits; se incluye para ilustrar cómo el sistema interpreta las máscaras de bits de mapa de bits del icono.
+Una aplicación debe implementar iconos personalizados como recursos y debe usar la función [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) o [**LoadImage,**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) en lugar de crear los iconos en tiempo de ejecución. Este enfoque evita la dependencia de dispositivos, simplifica la localización y permite que las aplicaciones compartan mapas de bits de iconos. Sin embargo, en el ejemplo siguiente se [**usa CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) para crear un icono personalizado en tiempo de ejecución, basado en máscaras de bits de mapa de bits; se incluye para ilustrar cómo el sistema interpreta las máscaras de bits de mapa de bits de icono.
 
 
 ```
@@ -167,7 +167,7 @@ Para crear el icono, [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-cr
 
  
 
-Antes de cerrar, la aplicación debe usar [**DestroyIcon para**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) destruir cualquier icono que haya creado mediante [**CreateIconIndirect**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect). No es necesario destruir los iconos creados por otras funciones.
+Antes de cerrar, la aplicación debe usar [**DestroyIcon**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) para destruir cualquier icono que haya creado mediante [**CreateIconIndirect**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect). No es necesario destruir los iconos creados por otras funciones.
 
 ## <a name="displaying-an-icon"></a>Mostrar un icono
 
@@ -204,9 +204,9 @@ Para obtener más información sobre las clases de ventana, vea [Clases de venta
 
 ## <a name="sharing-icon-resources"></a>Recursos del icono de uso compartido
 
-En el código siguiente se usan las funciones [**CreateIconFromResourceEx,**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex) [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon)y [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex)y varias de las funciones de recursos para crear un identificador de icono basado en datos de icono de otro archivo ejecutable. A continuación, muestra el icono en una ventana.
+El código siguiente usa las funciones [**CreateIconFromResourceEx,**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex) [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon)y [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex)y varias de las funciones de recursos para crear un identificador de icono basado en datos de icono de otro archivo ejecutable. A continuación, muestra el icono en una ventana.
 
-**Advertencia de seguridad:** El [**uso incorrecto de LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede poner en peligro la seguridad de la aplicación cargando el archivo DLL incorrecto. Consulte la documentación **de LoadLibrary** para obtener información sobre cómo cargar correctamente archivos DLL con diferentes versiones de Windows.
+**Advertencia de seguridad:** El [**uso incorrecto de LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede poner en peligro la seguridad de la aplicación al cargar el archivo DLL incorrecto. Consulte la documentación **de LoadLibrary** para obtener información sobre cómo cargar correctamente archivos DLL con diferentes versiones de Windows.
 
 
 ```

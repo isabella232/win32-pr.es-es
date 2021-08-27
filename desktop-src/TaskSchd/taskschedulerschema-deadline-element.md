@@ -1,9 +1,9 @@
 ---
-title: Elemento fecha límite
-description: Especifica el momento en que el programador de tareas debe iniciar la tarea durante el mantenimiento automático de emergencia, si no se pudo completar durante el mantenimiento automático normal.
+title: Elemento Deadline
+description: Especifica cuándo el programador de tareas debe iniciar la tarea durante el mantenimiento automático de emergencia, si no se pudo completar durante el mantenimiento automático normal.
 ms.assetid: 34E33FAE-888E-4E82-83B8-059FB4A64B52
 keywords:
-- Programador de tareas de elementos de fecha límite
+- Elemento Deadline Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3e12524971e8b713d4d17817a8a7c7602017bd68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 19d5560b57cfaa2a3fd3fa5167d13fa1722fe3f7dd736f19742e2efc895e15e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118857315"
 ---
-# <a name="deadline-element"></a>Elemento fecha límite
+# <a name="deadline-element"></a>Elemento Deadline
 
-Especifica el momento en que el programador de tareas debe iniciar la tarea durante el mantenimiento automático de emergencia, si no se pudo completar durante el mantenimiento automático normal.
+Especifica cuándo el programador de tareas debe iniciar la tarea durante el mantenimiento automático de emergencia, si no se pudo completar durante el mantenimiento automático normal.
 
-El formato de esta cadena es *PnYnMnDTnHnMnS*, donde *NY* es el número de años. nm es el número de meses, *ND* es el número de días, *T* es el separador de fecha y hora, *NH* es el número de horas, *nm* es el número de minutos y *NS* es el número de segundos (por ejemplo, "PT5M" especifica 5 minutos y "P1M4DT2H5M" especifica un mes, cuatro días, dos horas y cinco minutos). El valor mínimo es un minuto. Para obtener más información sobre el tipo de duración, vea [esquema XML parte 2: tipos de datos segunda edición](https://www.w3.org/TR/xmlschema-2/#duration). Fecha límite mínima que una tarea puede usar es 1 día. El valor del elemento **fecha límite** debe ser mayor que el valor del elemento [**period**](taskschedulerschema-period-element.md) . Si no se especifica la fecha límite, la tarea no se iniciará durante el mantenimiento automático de emergencia.
+El formato de esta cadena es *PnYnMnDTnHnMnS,* donde *nY* es el número de años, nM es el número de meses, *nD* es el número de días, *T* es el separador de fecha y hora, *nH* es el número de horas, *nM* es el número de minutos y *nS* es el número de segundos (por ejemplo, "PT5M" especifica 5 minutos y "P1M4DT2H5M" especifica un mes, cuatro días, dos horas y cinco minutos). El valor mínimo es un minuto. Para obtener más información sobre el tipo de duración, vea [XML Schema Part 2: Datatypes Second Edition](https://www.w3.org/TR/xmlschema-2/#duration). La fecha límite mínima que puede usar una tarea es de 1 día. El valor del **elemento Deadline** debe ser mayor que el valor del [**elemento Period.**](taskschedulerschema-period-element.md) Si no se especifica la fecha límite, la tarea no se inicia durante el mantenimiento automático de emergencia.
 
 ``` syntax
 <xs:element name="Deadline"
@@ -43,7 +43,7 @@ El formato de esta cadena es *PnYnMnDTnHnMnS*, donde *NY* es el número de años
 </xs:element>
 ```
 
-El elemento de **fecha límite** se define mediante el tipo complejo de [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md) .
+El tipo complejo [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md) define el elemento **Deadline.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -51,17 +51,17 @@ El elemento de **fecha límite** se define mediante el tipo complejo de [**maint
 
 | Elemento                                                                                                                          | Derivado de                                                                               | Descripción                                                                                                    |
 |----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [**MaintenanceSettings (maintenanceSettingsType)**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md) | [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md) | Especifica la configuración de tarea que usará el programador de tareas para iniciar la tarea durante el mantenimiento automático.<br/> |
+| [**MaintenanceSettings (maintenanceSettingsType)**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md) | [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md) | Especifica la configuración de tareas que usará el programador de tareas para iniciar la tarea durante el mantenimiento automático.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para la programación en C++, esta configuración de inactividad se especifica mediante la propiedad [**IMaintenanceSettings::D eadline**](/windows/desktop/api/Taskschd/nf-taskschd-imaintenancesettings-get_deadline) .
+Para la programación de C++, esta configuración inactiva se especifica mediante la [**propiedad IMaintenanceSettings::D eadline.**](/windows/desktop/api/Taskschd/nf-taskschd-imaintenancesettings-get_deadline)
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define un calendario de meses que ejecuta la tarea en marzo.
+El siguiente XML define un calendario de meses que ejecuta la tarea en marzo.
 
 
 ```XML
@@ -77,10 +77,10 @@ El siguiente código XML define un calendario de meses que ejecuta la tarea en m
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/> |
 
 
 
@@ -88,7 +88,7 @@ El siguiente código XML define un calendario de meses que ejecuta la tarea en m
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

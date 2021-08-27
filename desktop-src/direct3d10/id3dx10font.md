@@ -40,11 +40,11 @@ La **interfaz ID3DX10Font** tiene estos métodos.
 | Método                                                     | Descripción                                                                                                                                           |
 |:-----------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Drawtext**](id3dx10font-drawtext.md)                   | Dibujar texto con formato. Este método admite cadenas ANSI y Unicode.<br/>                                                                        |
-| [**GetDC**](id3dx10font-getdc.md)                         | Devuelve un identificador a un contexto de dispositivo de presentación (DC) que tiene la fuente establecida en él.<br/>                                                            |
+| [**GetDC**](id3dx10font-getdc.md)                         | Devuelve un identificador a un contexto de dispositivo de visualización (DC) que tiene la fuente establecida en él.<br/>                                                            |
 | [**GetDesc**](id3dx10font-getdesc.md)                     | Obtenga una descripción del objeto de fuente actual.<br/>                                                                                              |
 | [**GetDevice**](id3dx10font-getdevice.md)                 | Recupere el dispositivo Direct3D asociado al objeto de fuente.<br/>                                                                              |
 | [**GetGlyphData**](id3dx10font-getglyphdata.md)           | Devuelve información sobre la colocación y orientación de un glifo en una celda de caracteres.<br/>                                                     |
-| [**GetTextMetrics**](id3dx10font-gettextmetrics.md)       | Recupera las características de fuente.<br/>                                                                                                             |
+| [**GetTextMetrics**](id3dx10font-gettextmetrics.md)       | Recuperar características de fuente.<br/>                                                                                                             |
 | [**PreloadCharacters**](id3dx10font-preloadcharacters.md) | Cargue una serie de caracteres en la memoria de vídeo para mejorar la eficacia de la representación en el dispositivo.<br/>                                        |
 | [**PreloadGlyphs**](id3dx10font-preloadglyphs.md)         | Cargue una serie de glifos en la memoria de vídeo para mejorar la eficacia de la representación en el dispositivo.<br/>                                            |
 | [**PreloadText**](id3dx10font-preloadtext.md)             | Cargue texto con formato en la memoria de vídeo para mejorar la eficacia de la representación en el dispositivo. Este método admite cadenas ANSI y Unicode.<br/> |
@@ -53,7 +53,7 @@ La **interfaz ID3DX10Font** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La interfaz ID3DX10Font se obtiene llamando a [**D3DX10CreateFont**](d3dx10createfont.md) o [**D3DX10CreateFontIndirect.**](d3dx10createfontindirect.md)
 
@@ -78,7 +78,7 @@ typedef interface ID3DX10Font *LPD3DX10FONT;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

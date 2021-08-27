@@ -9,8 +9,8 @@ keywords:
 - modelo de objetos, atributos de lista de reproducción
 - ActiveX control,atributos de lista de reproducción
 - Reproductor de Windows Media ActiveX control,atributos de lista de reproducción
-- Reproductor de Windows Media Control de ActiveX móvil,atributos de lista de reproducción
-- referencia del modelo de objetos, atributos de lista de reproducción
+- Reproductor de Windows Media Control de ActiveX móvil, atributos de lista de reproducción
+- referencia para el modelo de objetos, atributos de lista de reproducción
 - attributes,playlists
 - playlists,attributes
 - listas de reproducción de metarchivo, atributos
@@ -41,22 +41,22 @@ Los atributos siguientes están disponibles para los elementos multimedia recupe
 -   [**Atributo MediaContentTypes**](mediacontenttypes-attribute.md)
 -   [**Atributo MediaType**](mediatype-attribute.md)
 -   [**Atributo SourceURL**](sourceurl-attribute.md)
--   **Sync01**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync02**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync03**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync04**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync05**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync06**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync07**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync08**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync09**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync10**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync11**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync12**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync13**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync14**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync15**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync16**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync01**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync02**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync03**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync04**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync05**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync06**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync07**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync08**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync09**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync10**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync11**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync12**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync13**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync14**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync15**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync16**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
 -   [**Atributo SyncOnly**](synconly-attribute.md)
 -   [**Atributo temporal**](temporary-attribute.md)
 -   [**Atributo Title**](title-attribute.md)

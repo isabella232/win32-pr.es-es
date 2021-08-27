@@ -1,7 +1,7 @@
 ---
-description: No se ha implementado y no se puede usar.
+description: No implementado y no se puede usar.
 ms.assetid: b41ba894-5cee-458d-935f-e89363925968
-title: Función SslChangeNotify (Sslprovider. h)
+title: Función SslChangeNotify (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 5539ef2529a4f3af86d34ae0e9d44cd31a8f4289
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff8bd1d23315894a3e858a536d10883f2fedcced792575157de824c02f3217ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907186"
 ---
-# <a name="sslchangenotify-function"></a>SslChangeNotify función)
+# <a name="sslchangenotify-function"></a>Función SslChangeNotify
 
-La función **SslChangeNotify** no está implementada y no se puede usar.
+La **función SslChangeNotify** no está implementada y no se puede usar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,14 +40,14 @@ SECURITY_STATUS WINAPI SslChangeNotify(
 
 <dl> <dt>
 
-*hEvent* \[ de\]
+*hEvent* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -56,7 +56,7 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **NTE \_ no \_ compatible**.
+Devuelve **NTE \_ NOT \_ SUPPORTED.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Devuelve **NTE \_ no \_ compatible**.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

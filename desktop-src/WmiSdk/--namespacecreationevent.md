@@ -69,7 +69,7 @@ Descriptor utilizado por el proveedor de eventos para determinar qué usuarios p
 **Targetnamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: Espacio de **\_ \_ nombres**
+Tipo de datos: Espacio **\_ \_ de nombres**
 </dt> <dt>
 
 Tipo de acceso: solo lectura

@@ -1,9 +1,9 @@
 ---
-title: Elemento OpCodes (TaskType)
-description: Define una lista de códigos de tiempo específicos de la tarea.
+title: elemento opcodes (TaskType)
+description: Define una lista de códigos de operación específicos de la tarea.
 ms.assetid: 69e5228c-72ef-4041-bd2c-7c521341a358
 keywords:
-- elemento OpCodes EventLog
+- elemento opcodes EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1b2094e4a3ffebe3a66a5baf641a419be0b45c8c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 059f5707e82f4d939afa9660407da12360324b3cffbe2bf0d5c97b8bca544b5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120572"
 ---
-# <a name="opcodes-tasktype-element"></a>Elemento OpCodes (TaskType)
+# <a name="opcodes-tasktype-element"></a>elemento opcodes (TaskType)
 
-Define una lista de códigos de tiempo específicos de la tarea.
+Define una lista de códigos de operación específicos de la tarea.
 
 ``` syntax
 <xs:element name="opcodes"
@@ -30,7 +30,7 @@ Define una lista de códigos de tiempo específicos de la tarea.
  />
 ```
 
-El elemento **OpCodes** se define mediante el tipo complejo [**TaskType**](eventmanifestschema-tasktype-complextype.md) .
+El **elemento opcodes** se define mediante el [**tipo complejo TaskType.**](eventmanifestschema-tasktype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **OpCodes** se define mediante el tipo complejo [**TaskType**](event
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **OpCodes** se define mediante el tipo complejo [**TaskType**](event
 **Elemento primario**
 </dt> <dt>
 
-[**tarea (TaskListType)**](eventmanifestschema-task-tasklisttype-element.md)
+[**task (TaskListType)**](eventmanifestschema-task-tasklisttype-element.md)
 </dt> </dl>
 
  

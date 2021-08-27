@@ -1,6 +1,6 @@
 ---
 title: Evento Player.CurrentPlaylistChange
-description: El evento CurrentPlaylistChange tiene lugar cuando algo cambia dentro de la lista de reproducción actual. | Evento Player.CurrentPlaylistChange
+description: El evento CurrentPlaylistChange tiene lugar cuando algo cambia en la lista de reproducción actual. | Evento Player.CurrentPlaylistChange
 ms.assetid: 5270373e-e401-40c6-bf8c-ef0557610372
 keywords:
 - Evento CurrentPlaylistChange Reproductor de Windows Media
@@ -45,7 +45,7 @@ Player.CurrentPlaylistChange(
 *change* 
 </dt> <dd>
 
-**Número** (**long**) que indica qué tipo de cambio se ha producido en la lista de reproducción. Consulte el *reproductor*. **Evento PlaylistChange** para una tabla de valores posibles.
+**Number** ( long )**que** indica qué tipo de cambio se produjo en la lista de reproducción. Consulte el *reproductor*. **Evento PlaylistChange** para una tabla de valores posibles.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Este evento no devuelve un valor.
 
 Este evento no se produce cuando otra lista de reproducción se convierte en la lista de reproducción actual. Solo se produce cuando se produce un cambio dentro de la lista de reproducción actual, como un elemento multimedia que se anexa a la lista de reproducción.
 
-El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media, y se puede acceder o pasar a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la inclusión en mayúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede tener acceso a un método de un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la inclusión en mayúsculas.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -100,7 +100,7 @@ En el JScript siguiente se actualiza el texto de un elemento DIV HTML, denominad
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

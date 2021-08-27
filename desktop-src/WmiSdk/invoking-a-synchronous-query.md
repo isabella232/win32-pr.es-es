@@ -88,7 +88,7 @@ En el procedimiento siguiente se describe cómo emitir una consulta de datos sin
 
 **Para emitir una consulta de datos sincrónica en VBScript**
 
-1.  Describa la consulta a WMI [**medianteSWbemServices.ExecQuery**](swbemservices-execquery.md). Este método devuelve [**un objeto SWbemObjectSet.**](swbemobjectset.md)
+1.  Describa la consulta a WMI [**medianteSWbemServices.ExecQuery**](swbemservices-execquery.md). Este método devuelve un [**objeto SWbemObjectSet.**](swbemobjectset.md)
 
     ```VB
     GetObject("winmgmts:").ExecQuery _
@@ -97,7 +97,7 @@ En el procedimiento siguiente se describe cómo emitir una consulta de datos sin
 
     
 
-2.  Use técnicas de colección de lenguajes [de scripting](accessing-a-collection.md) estándar para acceder a cada objeto devuelto.
+2.  Use técnicas de colección de lenguajes [de scripting](accessing-a-collection.md) estándar para tener acceso a cada objeto devuelto.
 
     ```VB
     for each Service in _ 
@@ -115,7 +115,7 @@ En el procedimiento siguiente se describe cómo emitir una consulta de datos sin
 
 1.  Describa la consulta a WMI mediante una llamada a [**IWbemServices::ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery).
 
-    El [**método ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery) toma una cadena de búsqueda WQL como parámetro que describe la consulta. WMI realiza la consulta y devuelve un puntero de interfaz [**IEnumWbemClassObject.**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) A través **de la interfaz IEnumWbemClassObject,** puede tener acceso a las clases o instancias que conste del conjunto de resultados.
+    El [**método ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery) toma una cadena de búsqueda WQL como parámetro que describe la consulta. WMI realiza la consulta y devuelve un puntero de interfaz [**IEnumWbemClassObject.**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) A través **de la interfaz IEnumWbemClassObject,** puede acceder a las clases o instancias que conste del conjunto de resultados.
 
 2.  Después de recibir la consulta, puede enumerar la consulta con una llamada a [**IEnumWbemClassObject::Next**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-next). Para obtener más información, [vea Enumeración de WMI.](enumerating-wmi.md)
 

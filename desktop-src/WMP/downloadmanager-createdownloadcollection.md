@@ -1,11 +1,11 @@
 ---
-title: DownloadManager. createDownloadCollection, método
-description: Tenga en cuenta que en esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método createDownloadCollection crea una colección de descargas.
+title: Método DownloadManager.createDownloadCollection
+description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método createDownloadCollection crea una colección de descarga.
 ms.assetid: 82a56966-f1c5-4d16-af41-7ac2c171ac25
 keywords:
-- método createDownloadCollection de Windows Media Player
-- método createDownloadCollection de Windows Media Player, clase DownloadManager
-- Clase DownloadManager Windows Media Player, método createDownloadCollection
+- Método createDownloadCollection Reproductor de Windows Media
+- Método createDownloadCollection Reproductor de Windows Media , clase DownloadManager
+- Clase DownloadManager Reproductor de Windows Media método , createDownloadCollection
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddff848ca3a5d1792323ae719850d3e9efd159b0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7aa3369e4669a81bfe1cf1e711c701fefc77a5af019c49f3d8cb7edc5cd4297f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118839376"
 ---
-# <a name="downloadmanagercreatedownloadcollection-method"></a>DownloadManager. createDownloadCollection, método
+# <a name="downloadmanagercreatedownloadcollection-method"></a>Método DownloadManager.createDownloadCollection
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El método **createDownloadCollection** crea una colección de descargas.
+El **método createDownloadCollection** crea una colección de descarga.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un objeto **DownloadCollection** .
+Este método devuelve un **objeto DownloadCollection.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Este método devuelve un objeto **DownloadCollection** .
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/>                                  |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/>                                  |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -64,10 +64,10 @@ Este método devuelve un objeto **DownloadCollection** .
 
 <dl> <dt>
 
-[**Objeto DownloadManager**](downloadmanager-object.md)
+[**DownloadManager (objeto)**](downloadmanager-object.md)
 </dt> <dt>
 
-[**Objeto DownloadCollection**](downloadcollection-object.md)
+[**DownloadCollection (objeto)**](downloadcollection-object.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: BUTTONGROUP. cursor
-description: El atributo cursor especifica o recupera el tipo de cursor que aparece cuando el mouse está encima de un botón en BUTTONGROUP.
+title: BUTTONGROUP.cursor
+description: El atributo cursor especifica o recupera el tipo de cursor que aparece cuando el mouse está sobre un botón en BUTTONGROUP.
 ms.assetid: c1b7e3e1-862b-48c1-bd2d-d9abd9ada14c
 keywords:
-- BUTTONGROUP. cursor Windows Media Player
+- ButtonGROUP.cursor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7b3de12950aed383f48dcde5d8978724037f86e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bebbf730180bf2d017dc3d193ad92772fa312af4a3737110d93fcfa5bed2ff6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118840423"
 ---
-# <a name="buttongroupcursor"></a>BUTTONGROUP. cursor
+# <a name="buttongroupcursor"></a>BUTTONGROUP.cursor
 
-El atributo **cursor** especifica o recupera el tipo de cursor que aparece cuando el mouse está encima de un botón en **BUTTONGROUP**.
+El **atributo** cursor especifica o recupera el tipo de cursor que aparece cuando el mouse está sobre un botón en **BUTTONGROUP**.
 
 ``` syntax
         elementID.cursor
@@ -29,30 +29,30 @@ El atributo **cursor** especifica o recupera el tipo de cursor que aparece cuand
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene uno de los valores siguientes.
+Este atributo es una cadena de **lectura** y escritura que contiene uno de los valores siguientes.
 
 
 
-| Value            | Descripción                                                                                 |
+| Valor            | Descripción                                                                                 |
 |------------------|---------------------------------------------------------------------------------------------|
 | sistema           | Predeterminada. Cursor dependiente de la plataforma (normalmente una flecha).                                      |
-| casilla             | Casilla.                                                                                       |
-| help             | Flecha con signo de interrogación que indica que la ayuda está disponible.                                      |
-| sizeall          | Flecha de cuatro puntas que señala al norte, sur, este y oeste.                                   |
-| sizenesw         | Flecha de doble punta que apunta al noreste y al suroeste.                                      |
-| tamaños de           | Flecha de dos puntas que apunta al norte y al sur.                                              |
-| sizenwse         | Flecha de dos puntas que apunta al noroeste y al sudeste.                                      |
-| sizewe           | Flecha de dos puntas que apunta al oeste y al este.                                                |
-| flecha arriba          | Flecha vertical que señala hacia arriba.                                                             |
-| \*. ani o \* . cur | Cualquier archivo. ani o. cur (debe estar en el mismo directorio que el archivo. WMS o en el archivo. WMZ). |
+| Mano             | Mano.                                                                                       |
+| ayuda             | Flecha con signo de interrogación que indica que la Ayuda está disponible.                                      |
+| sizeall          | Flecha de cuatro puntas que apunta al norte, sur, este y oeste.                                   |
+| sizenesw         | Flecha de doble punta que apunta hacia el noreste y el suroeste.                                      |
+| sizens           | Flecha de doble punta que apunta hacia el norte y el sur.                                              |
+| sizenwse         | Flecha de doble punta que apunta al noroeste y al sudeste.                                      |
+| sizewe           | Flecha de doble punta que apunta hacia el oeste y el este.                                                |
+| arriba          | Flecha vertical que apunta hacia arriba.                                                             |
+| \*.ani o \* .cur | Cualquier archivo .ani o .cur (debe estar en el mismo directorio que el archivo .wms o en el archivo .wmz). |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El cursor especificado se aplica a todos los botones de **BUTTONGROUP**.
+El cursor especificado se aplica a todos los botones de **BUTTONGROUP.**
 
 Si especifica un valor de cursor no válido, permanece en el valor establecido anteriormente.
 
@@ -64,7 +64,7 @@ Las rutas de acceso de nombre de archivo de cursor se omiten, por lo que el arch
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 

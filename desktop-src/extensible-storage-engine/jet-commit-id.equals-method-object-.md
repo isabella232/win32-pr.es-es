@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_COMMIT_ID. Equals (método, Object)'
-title: JET_COMMIT_ID. Equals (método, Object) (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_COMMIT_ID.Equals (Object)'
+title: JET_COMMIT_ID.Equals (Object) (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: Equals method (Object)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID.Equals(System.Object)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_commit_id.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cbae5d08b7c6d233e7b14e0b183a2a89fb3a9857
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96141d1d40f7be81963638b13ecd5c4f3a9a5649e97105d943d315f1a1b4b35a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118766893"
 ---
-# <a name="jet_commit_idequals-method-object"></a>JET_COMMIT_ID. Equals (método, Object)
+# <a name="jet_commit_idequals-method-object"></a>JET_COMMIT_ID.Equals (object)
 
-Devuelve un valor que indica si esta instancia es igual a otra instancia de.
+Devuelve un valor que indica si esta instancia es igual a otra instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,23 +58,23 @@ public override bool Equals(
 #### <a name="parameters"></a>Parámetros
 
   - obj  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Objeto que se va a comparar con esta instancia.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COMMIT_ID (clase)](./jet-commit-id-class.md)
+[JET_COMMIT_ID clase](./jet-commit-id-class.md)
 
-[Miembros de JET_COMMIT_ID](./jet-commit-id-members.md)
+[JET_COMMIT_ID miembros](./jet-commit-id-members.md)
 
-[Equals (sobrecarga)](./jet-commit-id.equals-method.md)
+[Sobrecarga igual a](./jet-commit-id.equals-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

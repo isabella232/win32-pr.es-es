@@ -27,7 +27,7 @@ Contiene el identificador de un objeto que especifica dónde comenzará cada bú
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | msSFU-30-Search-Container                   |
 | Ldap-Display-Name | msSFU30SearchContainer                      |
@@ -36,7 +36,7 @@ Contiene el identificador de un objeto que especifica dónde comenzará cada bú
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.300                 |
 | System-Id-Guid    | 27eebfa2-fbeb-4f8e-aad6-c50247994291        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,14 +51,14 @@ Contiene el identificador de un objeto que especifica dónde comenzará cada bú
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Es de un solo valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
@@ -72,14 +72,14 @@ Contiene el identificador de un objeto que especifica dónde comenzará cada bú
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Es de un solo valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
@@ -93,14 +93,14 @@ Contiene el identificador de un objeto que especifica dónde comenzará cada bú
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Es de un solo valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
@@ -114,14 +114,14 @@ Contiene el identificador de un objeto que especifica dónde comenzará cada bú
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Es de un solo valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |

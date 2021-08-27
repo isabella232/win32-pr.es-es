@@ -13,7 +13,7 @@ ms.locfileid: "118474532"
 ---
 # <a name="the-speech-input-page"></a>La página entrada de voz
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 Un usuario puede ajustar las opciones de entrada de voz en esta página de propiedades. El usuario puede deshabilitar la entrada de voz, establecer la clave de entrada de escucha, elegir si quiere mostrar la ventana Sugerencia de escucha y elegir reproducir un tono MIDI para indicar cuándo está disponible la entrada de voz.
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración TermGrbit'
-title: Enumeración TermGrbit
+description: 'Más información sobre: Enumeración TermGrbit'
+title: TermGrbit (enumeración)
 TOCTitle: TermGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.TermGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.termgrbit(v=EXCHG.10)
@@ -30,21 +30,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 49b466b298a78d7bfd6822904aed977e7117b927
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83bf60be88aa1db7bac30c96c0c438d453c6fc24279b18502205ce96e60b9f14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103817139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978375"
 ---
-# <a name="termgrbit-enumeration"></a>Enumeración TermGrbit
+# <a name="termgrbit-enumeration"></a>TermGrbit (enumeración)
 
-Opciones de [JetTerm2 (JET_INSTANCE, TermGrbit)](./api.jetterm2-method.md).
+Opciones de [JetTerm2(JET_INSTANCE, TermGrbit).](./api.jetterm2-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,18 +74,18 @@ public enum TermGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Completo</td>
-<td>Solicita que la instancia se cierre sin problemas. Cualquier trabajo de limpieza opcional que se haría normalmente en segundo plano en tiempo de ejecución se completa inmediatamente.</td>
+<td>Solicita que la instancia se apague correctamente. Cualquier trabajo de limpieza opcional que normalmente se realizaría en segundo plano en tiempo de ejecución se completa inmediatamente.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Abrupta</td>
-<td>Solicita que la instancia se cierre lo más rápido posible. Se abandona cualquier trabajo opcional que normalmente se realizaría en segundo plano en tiempo de ejecución.</td>
+<td>Solicita que la instancia se apague lo más rápido posible. Se abandona cualquier trabajo opcional que normalmente se realizaría en segundo plano en tiempo de ejecución.</td>
 </tr>
 </tbody>
 </table>
@@ -95,6 +95,6 @@ public enum TermGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
 
-[OnDirty](./windows7grbits.dirty-field.md)
+[Sucio](./windows7grbits.dirty-field.md)

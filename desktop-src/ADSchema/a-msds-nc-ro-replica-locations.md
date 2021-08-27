@@ -27,16 +27,16 @@ Atributo vinculado en un objeto de referencia cruzada para una partición. Enume
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | ms-DS-NC-RO-Replica-Locations           |
 | Ldap-Display-Name | msDS-NC-RO-Replica-Locations            |
 | Size              | \-                                      |
-| Actualizar privilegios  | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1967                 |
 | System-Id-Guid    | 3df793df-9858-4417-a701-735a1ecebf74    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -50,14 +50,14 @@ Atributo vinculado en un objeto de referencia cruzada para una partición. Enume
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
 | Id. de vínculo                | 2114                                       |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Es de un solo valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
@@ -71,14 +71,14 @@ Atributo vinculado en un objeto de referencia cruzada para una partición. Enume
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
 | Id. de vínculo                | 2114                                       |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Es de un solo valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
@@ -92,14 +92,14 @@ Atributo vinculado en un objeto de referencia cruzada para una partición. Enume
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
 | Id. de vínculo                | 2114                                       |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Es de un solo valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |

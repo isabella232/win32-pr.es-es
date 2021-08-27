@@ -55,13 +55,13 @@ class CIM_WiFiEndpoint : CIM_LANEndpoint
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ Cim WiFiEndpoint** tiene estos tipos de miembros:
+La **clase \_ WiFiEndpoint** cim tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ WiFiEndpoint** cim tiene estas propiedades.
+La **clase \_ Cim WiFiEndpoint** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -103,7 +103,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**EncryptionMethod**", "**CIM \_ WiFiEndpoint**.**IEEE8021xAuthenticationProtocol**", "**CIM \_ WiFiEndpoint**.**OtherAuthenticationMethod**")
 </dt> </dl>
 
-Tipo de autenticación usado entre el punto Wi-Fi de conexión y la red.
+Tipo de autenticación usado entre el punto Wi-Fi conexión y la red.
 
 <dt>
 
@@ -237,7 +237,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**AuthenticationMethod**", "**CIM \_ WiFiEndpoint**.**OtherEncryptionMethod**")
 </dt> </dl>
 
-Tipo de cifrado utilizado al enviar y recibir datos a través del Wi-Fi de conexión.
+Tipo de cifrado que se usa al enviar y recibir datos a través del Wi-Fi de conexión.
 
 <dt>
 
@@ -501,7 +501,7 @@ Si **ProtocolIFType se** establece en "1" (Otros), la información de tipo debe 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
@@ -511,7 +511,7 @@ Si **ProtocolIFType se** establece en "1" (Otros), la información de tipo debe 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

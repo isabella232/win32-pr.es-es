@@ -43,7 +43,7 @@ interface interface-name
 *uuid-number* 
 </dt> <dd>
 
-Especifica un número de identificación único universal para la interfaz.
+Especifica un número de identificación único universal para la interfaz
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Nombre de la interfaz a la que **se** aplicará el atributo dual.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Las interfaces identificadas por **el atributo dual** deben ser compatibles con Automation y derivarse de [**IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) Este atributo no se permite en interfaces dispinterface.
 

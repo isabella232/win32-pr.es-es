@@ -1,7 +1,7 @@
 ---
-description: La función ResetPrinter especifica el tipo de datos y los valores de modo de dispositivo que se van a usar para imprimir documentos enviados por la función StartDocPrinter. Estos valores se pueden invalidar mediante la función SetJob una vez iniciada la impresión del documento.
+description: La función ResetPrinter especifica el tipo de datos y los valores de modo de dispositivo que se usarán para imprimir documentos enviados por la función StartDocPrinter. Estos valores se pueden invalidar mediante la función SetJob después de que se haya iniciado la impresión de documentos.
 ms.assetid: 9efc6629-dbb7-4320-90b9-07c66f0add47
-title: Función ResetPrinter (winspool. h)
+title: Función ResetPrinter (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 8bdfef0229a646e802878a96370d27d49a6bfc2d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f68601acde884d15572871848eed2d2388c927cf04758ad1183343486d4cc0f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470284"
 ---
-# <a name="resetprinter-function"></a>ResetPrinter función)
+# <a name="resetprinter-function"></a>Función ResetPrinter
 
-La función **ResetPrinter** especifica el tipo de datos y los valores de modo de dispositivo que se van a usar para imprimir documentos enviados por la función [**StartDocPrinter**](startdocprinter.md) . Estos valores se pueden invalidar mediante la función [**SetJob**](setjob.md) una vez iniciada la impresión del documento.
+La **función ResetPrinter** especifica el tipo de datos y los valores de modo de dispositivo que se usarán para imprimir documentos enviados por la [**función StartDocPrinter.**](startdocprinter.md) Estos valores se pueden invalidar mediante la función [**SetJob**](setjob.md) después de que se haya iniciado la impresión de documentos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,32 +42,32 @@ BOOL ResetPrinter(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador de la impresora. Use la función [**OpenPrinter**](openprinter.md) o [**AddPrinter (**](addprinter.md) para recuperar un identificador de impresora.
+Identificador de la impresora. Use la [**función OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) para recuperar un identificador de impresora.
 
 </dd> <dt>
 
-*pDefault* \[ de\]
+*pDefault* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [**\_ valores predeterminados de impresora**](printer-defaults.md) .
+Puntero a una [**estructura PRINTER \_ DEFAULTS.**](printer-defaults.md)
 
-La función **ResetPrinter** omite el miembro **DesiredAccess** de la estructura [**de \_ valores predeterminados**](printer-defaults.md) de la impresora. Establezca ese miembro en cero.
+La **función ResetPrinter** omite el **miembro DesiredAccess** de la [**estructura PRINTER \_ DEFAULTS.**](printer-defaults.md) Establezca ese miembro en cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
@@ -75,18 +75,18 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **ResetPrinterW** (Unicode) y **ResetPrinterA** (ANSI)<br/>                                       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -99,7 +99,7 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 [**OpenPrinter**](openprinter.md)
 </dt> <dt>
 
-[**\_valores predeterminados de impresora**](printer-defaults.md)
+[**VALORES \_ PREDETERMINADOS DE IMPRESORA**](printer-defaults.md)
 </dt> <dt>
 
 [**StartDocPrinter**](startdocprinter.md)

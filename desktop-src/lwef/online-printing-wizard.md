@@ -1,46 +1,46 @@
 ---
 title: Asistente para impresión en línea
-description: El Asistente para impresión en línea de Windows Vista ayuda a los usuarios a solicitar copias impresas de fotografías de los distribuidores de impresiones en línea.
+description: El Windows de impresión en línea de Vista ayuda a los usuarios a solicitar copias de fotos de distribuidores de impresión en línea participantes.
 ms.assetid: 1e73a5d0-2ca8-4eca-846a-bd69eee257cb
 keywords:
 - Asistente para impresión en línea
-- iconos, Asistente para impresión en línea
+- iconos,Asistente para impresión en línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8536eea7a51eddb2dbb46d10c9291a60edfdc74e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: bc402f1fe5853c7a255ea45940d62efcd092c424be6905287315c5cfe5fc7504
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975928"
 ---
 # <a name="online-printing-wizard"></a>Asistente para impresión en línea
 
-El Asistente para impresión en línea de Windows Vista ayuda a los usuarios a solicitar copias impresas de fotografías de los distribuidores de impresiones en línea. Este asistente está diseñado para que se pueda invocar mediante programación por cualquier aplicación que desee ofrecer a los usuarios la posibilidad de solicitar impresiones de fotografías. El Asistente para impresión de fotografías está disponible en Windows Vista. PIX para Windows
+El Windows de impresión en línea de Vista ayuda a los usuarios a solicitar copias de fotos de distribuidores de impresión en línea participantes. Este asistente está diseñado para que cualquier aplicación que quiera ofrecer a los usuarios la posibilidad de solicitar copias de fotos lo pueda invocar mediante programación. El Asistente para impresión de fotos está disponible en Windows Vista. LAV para Windows
 
 -   [Características proporcionadas por el Asistente para impresión en línea](#features-provided-by-the-online-print-wizard)
--   [Formatos de archivo fotográfico admitidos](#supported-photo-file-formats)
--   [Inicio mediante programación del Asistente para impresión en línea](#programmatically-launching-the-online-print-wizard)
+-   [Formatos de archivo de fotos admitidos](#supported-photo-file-formats)
+-   [Iniciar el Asistente para impresión en línea mediante programación](#programmatically-launching-the-online-print-wizard)
 -   [Acceso al icono del Asistente para impresión en línea](#accessing-the-online-print-wizard-icon)
--   [Propiedades MRU del Asistente para impresión en línea](#online-print-wizard-mru-properties)
+-   [Propiedades de MRU del Asistente para impresión en línea](#online-print-wizard-mru-properties)
 
 ## <a name="features-provided-by-the-online-print-wizard"></a>Características proporcionadas por el Asistente para impresión en línea
 
-El Asistente para impresión en línea de Windows Vista permite a los usuarios ordenar copias fotográficas a partir de una selección de distribuidores de impresión en línea participantes. Cuando se invoca, el asistente:
+El Windows de impresión en línea de Vista permite a los usuarios solicitar copias impresas de una selección de distribuidores de impresión en línea participantes. Cuando se invoca, el asistente:
 
-1.  Acepta un archivo o una lista de archivos para los que se van a ordenar las impresiones.
-2.  Recupera automáticamente la lista actual de los distribuidores de impresión en línea participantes y permite al usuario seleccionar el distribuidor desde el que desea comprar las fotos fotográficas.
-3.  Guía al usuario a través del proceso o la ordenación de copias fotográficas.
+1.  Acepta un archivo o una lista de archivos para los que se van a ordenar las copias impresas.
+2.  Recupera automáticamente la lista actual de distribuidores de impresión en línea participantes y permite al usuario seleccionar el distribuidor desde el que comprar las copias impresas.
+3.  Guía al usuario a través del proceso u ordenación de las copias impresas.
 
-Cualquier aplicación puede beneficiarse de las características que ofrece el Asistente para impresión en línea de Windows Vista. Una aplicación solo necesita pasar el archivo o los archivos para los que se van a ordenar las impresiones y el asistente guía al usuario a través del proceso de ordenación.
+Cualquier aplicación puede beneficiarse de las características que ofrece Windows Asistente para impresión en línea de Vista. Una aplicación solo necesita pasar el archivo o los archivos para los que se ordenarán las copias impresas, y el asistente guía al usuario a través del proceso de ordenación.
 
-En la siguiente ilustración se muestra el Asistente para impresión en línea de Windows Vista, donde se muestra una lista de ejemplo de los distribuidores de impresión en línea participantes.
+En la ilustración siguiente se muestra Windows Asistente para impresión en línea de Vista que muestra una lista de ejemplo de distribuidores de impresión en línea participantes.
 
-![Asistente para impresión en línea de Windows Vista](images/opw.png)
+![El Asistente para impresión en línea de Windows Vista](images/opw.png)
 
-## <a name="supported-photo-file-formats"></a>Formatos de archivo fotográfico admitidos
+## <a name="supported-photo-file-formats"></a>Formatos de archivo de fotos admitidos
 
-El Asistente para impresión en línea de Windows Vista admite cualquier formato de archivo de imagen para el que esté instalado un códec de Windows Imaging Component (WIC). WIC proporciona varios códecs estándar, entre los que se incluyen:
+El Windows de impresión en línea de Vista admite cualquier formato de archivo de imagen para el que esté instalado un códec Windows Imaging Component (WIC). WIC proporciona varios códecs estándar, entre los que se incluyen:
 
 -   Mapa de bits (BMP)
 -   Formato de intercambio de gráficos (GIF)
@@ -48,15 +48,15 @@ El Asistente para impresión en línea de Windows Vista admite cualquier formato
 -   Formato JPEG (Joint Photographic Experts Group)
 -   Formato PNG (Portable Network Graphics)
 -   Tagged Image File Format (TIFF)
--   Formato de Windows Media Photo
+-   Windows Formato de foto multimedia
 
-Para obtener más información acerca de los códecs WIC y WIC, vea [Windows Imaging Component](https://msdn.microsoft.com/library/ms737408(VS.85).aspx).
+Para obtener más información sobre los códecs WIC y WIC, [vea Windows Imaging Component](https://msdn.microsoft.com/library/ms737408(VS.85).aspx).
 
-Los formatos de archivo que admiten los distribuidores de impresión en línea varían de un distribuidor a un distribuidor; es posible que un distribuidor determinado no admita todos los formatos de archivo admitidos por el Asistente para impresión en línea de Windows Vista. Si el usuario intenta pedir copias fotográficas en un formato no admitido por el distribuidor seleccionado, el Asistente para impresión en línea de Windows Vista notifica al usuario que el distribuidor seleccionado no admite el formato de archivo enviado.
+Los formatos de archivo admitidos por los distribuidores de impresión en línea varían de minorista a minorista. Es posible que un distribuidor determinado no admita todos los formatos de archivo admitidos por el Asistente para impresión Windows Vista Online. Si el usuario intenta solicitar copias impresas en un formato que no es compatible con el distribuidor seleccionado, el Asistente para impresión en línea de Windows Vista notifica al usuario que el distribuidor seleccionado no admite el formato de archivo enviado.
 
-## <a name="programmatically-launching-the-online-print-wizard"></a>Inicio mediante programación del Asistente para impresión en línea
+## <a name="programmatically-launching-the-online-print-wizard"></a>Iniciar el Asistente para impresión en línea mediante programación
 
-Para invocar el Asistente para impresión en línea de Windows Vista, llame a la interfaz [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) con el siguiente identificador de clase (CLSID):
+Para invocar el asistente Windows impresión en línea de Vista, llame a la [interfaz IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) con el siguiente identificador de clase (CLSID):
 
 
 ```
@@ -65,9 +65,9 @@ CLSID_PublishDropTarget
 
 
 
-Este CLSID se define en shobjidl. h y shobjidl. idl. Los archivos que se van a procesar mediante el Asistente para impresión en línea de Windows Vista se especifican en un objeto [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) .
+Este CLSID se define en Shobjidl.h y Shobjidl.idl. Los archivos que va a procesar el Windows Vista Online Printing se especifican en un [objeto IDataObject.](/windows/win32/api/objidl/nn-objidl-idataobject)
 
-En el ejemplo de código siguiente se muestra cómo invocar el Asistente para impresión en línea de Windows Vista.
+En el ejemplo de código siguiente se muestra cómo invocar Windows Asistente para impresión en línea de Vista.
 
 
 ```
@@ -95,11 +95,11 @@ spDropTarget->Drop(pDataObject, MK_LBUTTON, pt, &dwEffect);}
 
 ## <a name="accessing-the-online-print-wizard-icon"></a>Acceso al icono del Asistente para impresión en línea
 
-El Asistente para impresión en línea de Windows Vista exporta un icono al que pueden tener acceso y mostrar las aplicaciones que lo llaman. En la siguiente ilustración se muestra el icono del Asistente para impresión en línea de Windows Vista.
+El Windows de impresión en línea de Vista exporta un icono al que pueden acceder y mostrar las aplicaciones que lo llaman. En la ilustración siguiente se muestra Windows asistente para impresión en línea de Vista.
 
 ![icono del Asistente para impresión en línea de Windows Vista](images/opw-icon.png)
 
-En el ejemplo de código siguiente se muestra cómo recuperar el índice para el icono del Asistente para impresión en línea de Windows Vista mediante la lectura de la propiedad **OPWIcon** .
+En el ejemplo de código siguiente se muestra cómo recuperar el índice del Windows asistente para impresión en línea de Vista mediante la lectura de **la propiedad OPWIcon.**
 
 
 ```
@@ -129,21 +129,21 @@ if SUCCEEDED(hr)
 
 
 
-## <a name="online-print-wizard-mru-properties"></a>Propiedades MRU del Asistente para impresión en línea
+## <a name="online-print-wizard-mru-properties"></a>Propiedades de MRU del Asistente para impresión en línea
 
-El Asistente para impresión en línea de Windows Vista define tres propiedades relacionadas con el distribuidor de impresión en línea usado más recientemente (MRU).
+El Windows de impresión en línea de Vista define tres propiedades relacionadas con el distribuidor de impresión en línea (MRU) usado más recientemente.
 
 
 
-| Nombre de la propiedad | Valor o función de la propiedad                                                                                                                                                                                                                                                   |
+| Nombre de la propiedad | Property Value/Function                                                                                                                                                                                                                                                   |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **MRUIcon**   | El índice del icono del distribuidor de impresión en línea usado más recientemente se puede leer desde esta propiedad.                                                                                                                                                                 |
 | **MRUName**   | El nombre del distribuidor de impresión en línea usado más recientemente se puede leer desde esta propiedad.                                                                                                                                                                               |
-| **UseMRU**    | Un valor booleano de VT de **tipo** ** \_ bool** que indica si el asistente debe omitir la página de selección del distribuidor de impresión en línea y usar en su lugar el distribuidor de impresión en línea usado más recientemente. Establezca esta propiedad en **Variant \_ true** para omitir la página de selección del distribuidor. |
+| **UseMRU**    | Valor **VARIANT** **VT \_ BOOL** que indica si el asistente debe omitir la página de selección del distribuidor de impresión en línea y simplemente usar el distribuidor de impresión en línea usado más recientemente en su lugar. Establezca esta propiedad en **VARIANT \_ TRUE para** omitir la página de selección del distribuidor. |
 
 
 
- 
+ 
 
 En el ejemplo de código siguiente se muestra cómo establecer la propiedad UseMRU para que el Asistente para impresión en línea de Windows Vista omita la página de selección del distribuidor de impresión en línea y seleccione automáticamente el distribuidor usado más recientemente.
 
@@ -219,6 +219,6 @@ if SUCCEEDED(hr)
 
 
 
- 
+ 
 
- 
+ 

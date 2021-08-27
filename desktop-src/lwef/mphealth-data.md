@@ -1,10 +1,10 @@
 ---
-title: MPHEALTH_DATA estructura (MpClient. h)
+title: MPHEALTH_DATA estructura (MpClient.h)
 description: Datos de notificación de estado.
 ms.assetid: 37A87F77-386A-4508-B338-ED2151518968
 keywords:
-- MPHEALTH_DATA estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPHEALTH_DATA características de entorno heredado de Windows
+- MPHEALTH_DATA estructura heredada de Windows environment
+- PMPHEALTH_DATA puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e729bdea82b6a885b64e95ecd77f9deae6bff4e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb04224d38e639d053b8e20370e2b0db0dc15f44cc647e7205911362112e4a49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976005"
 ---
-# <a name="mphealth_data-structure"></a>\_Estructura de datos MPHEALTH
+# <a name="mphealth_data-structure"></a>Estructura DE \_ DATOS MPHEALTH
 
 Datos de notificación de estado.
 
@@ -70,9 +70,9 @@ Sin usar.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

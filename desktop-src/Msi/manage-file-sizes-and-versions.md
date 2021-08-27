@@ -1,5 +1,5 @@
 ---
-description: El archivo VBScript WiFilVer.vbs se proporciona en los componentes del SDK de Windows para desarrolladores Windows Installer. En el ejemplo se muestra cómo puede usar un script para notificar o actualizar la información de idioma, el tamaño y la versión del archivo.
+description: El archivo VBScript WiFilVer.vbs se proporciona en los componentes del SDK de Windows para Windows instaladores. En el ejemplo se muestra cómo puede usar un script para notificar o actualizar la versión del archivo, el tamaño y la información de idioma.
 ms.assetid: 21550eea-c30b-4738-9201-ab500356fabf
 title: Administrar tamaños y versiones de archivos
 ms.topic: article
@@ -13,14 +13,14 @@ ms.locfileid: "118629046"
 ---
 # <a name="manage-file-sizes-and-versions"></a>Administrar tamaños y versiones de archivos
 
-El archivo vbscript WiFilVer.vbs se proporciona en los componentes del SDK Windows [para los Windows instalador de aplicaciones.](platform-sdk-components-for-windows-installer-developers.md) En el ejemplo se muestra cómo puede usar un script para notificar o actualizar la información de idioma, el tamaño y la versión del archivo.
+El archivo VBScript WiFilVer.vbs se proporciona en los componentes del SDK de Windows [para Windows programadores del instalador](platform-sdk-components-for-windows-installer-developers.md). En el ejemplo se muestra cómo puede usar un script para notificar o actualizar la versión del archivo, el tamaño y la información de idioma.
 
-En el ejemplo también se muestran Windows del instalador, cómo acceder a una base de datos Windows Installer y el uso de lo siguiente:
+En el ejemplo también se muestran Windows instalador, cómo acceder a una base de datos Windows Installer y el uso de lo siguiente:
 
 -   [**Método Installer.OpenDatabase**](installer-opendatabase.md) del [ **objeto Installer**](installer-object.md)
 -   [**Installer.FileAttributes, propiedad**](installer-fileattributes.md)
--   [**Installer.FileHash (método)**](installer-filehash.md)
--   [**Installer.FileVersion (método)**](installer-fileversion.md)
+-   [**Método Installer.FileHash**](installer-filehash.md)
+-   [**Método Installer.FileVersion**](installer-fileversion.md)
 -   [**Método Installer.LastErrorRecord**](installer-lasterrorrecord.md) del [ **objeto Installer**](installer-object.md)
 -   [**Método Database.OpenView**](database-openview.md)
 -   [**Propiedad Database.SummaryInformation**](database-summaryinformation.md) del objeto [ **Database**](database-object.md)
@@ -33,13 +33,13 @@ En el ejemplo también se muestran Windows del instalador, cómo acceder a una b
 
 El uso de este ejemplo requiere la CScript.exe o WScript.exe de Windows host de script. Para usar CScript.exe para ejecutar este ejemplo, escriba un comando en el símbolo del sistema mediante la sintaxis siguiente:
 
-**Ruta de acceso WiFilVer.vbs cscript a \[ ubicaciones de origen \] \[ opcionales de base de datos\]**
+**Ruta de acceso WiFilVer.vbs cscript \[ a ubicaciones de origen \] \[ opcionales de base de datos\]**
 
 Tenga en cuenta también lo siguiente:
 
--   Se muestra ayuda si el primer argumento es /? o si se especifican demasiados argumentos.
+-   Se muestra ayuda si el primer argumento es /? o si se especifican demasiado pocos argumentos.
 -   Para redirigir la salida a un archivo, finalice la línea de comandos con VBS > \[ *ruta de acceso al archivo* \] .
--   El ejemplo devuelve un valor de 0 (cero) para correcto, 1 (uno) si se invoca ayuda y 2 (dos) si se produce un error en el script.
+-   El ejemplo devuelve un valor de 0 (cero) para el éxito, 1 (uno) si se invoca la ayuda y 2 (dos) si se produce un error en el script.
 
 Especifique la Windows del instalador que desea actualizar, que debe encontrarse en la raíz del archivo de origen. Sin embargo, puede especificar orígenes para la base de datos en ubicaciones independientes. Si el origen está comprimido, todos los archivos se abren en la raíz.
 
@@ -56,7 +56,7 @@ Las siguientes opciones se pueden especificar en cualquier ubicación de la lín
 
  
 
-Para obtener más información, vea [Windows ejemplos de scripting del instalador y](windows-installer-scripting-examples.md) Windows herramientas de desarrollo del instalador [.](windows-installer-development-tools.md)
+Para obtener más información, vea [Windows de scripting del instalador y](windows-installer-scripting-examples.md) Windows herramientas de desarrollo del instalador [.](windows-installer-development-tools.md)
 
  
 

@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 46e04c8c86bd0cdf7acea44872d00ad19f620ee6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e5bbfee8dd7366bbfb3b17aa83708f5d54f3a8b460b2dfab4a7cdc587b3d40d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118800225"
 ---
 # <a name="id3dxtextureshadersetmatrixtransposepointerarray-method"></a>Método ID3DXTextureShader::SetMatrixTransposePointerArray
 
-Establece una matriz de punteros para matrices transpuestas.
+Establece una matriz de punteros en matrices transpuestas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ HRESULT SetMatrixTransposePointerArray(
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la matriz de constantes de matriz. Vea [D3DXHANDLE.](d3dxfx.md)
+Identificador único de la matriz de constantes de matriz. Vea [D3DXHANDLE](d3dxfx.md).
 
 </dd> <dt>
 
@@ -73,11 +73,11 @@ Número de matrices de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentarios
 
-Una matriz transpuesta contiene datos principales de columna; es decir, cada vector está contenido en una columna.
+Una matriz transpuesta contiene datos principales de columna; es decir, cada vector se encuentra en una columna.
 
 ## <a name="requirements"></a>Requisitos
 

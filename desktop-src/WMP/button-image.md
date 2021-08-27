@@ -21,7 +21,7 @@ ms.locfileid: "118342913"
 ---
 # <a name="buttonimage"></a>BUTTON.image
 
-El **atributo** image especifica o recupera la imagen predeterminada de **BUTTON.**
+El **atributo** image especifica o recupera la imagen predeterminada de **BUTTON**.
 
 ``` syntax
         elementID.image
@@ -29,15 +29,15 @@ El **atributo** image especifica o recupera la imagen predeterminada de **BUTTON
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de lectura **y** escritura que contiene el nombre del archivo de imagen.
+Este atributo es una cadena de **lectura** y escritura que contiene el nombre del archivo de imagen.
 
 ## <a name="remarks"></a>Comentarios
 
 Los formatos de imagen admitidos son BMP, JPG, PNG y GIF (incluidos los GIF animados).
 
-Si la **imagen BUTTON** es mayor que la  región definida por los atributos **de** ancho y alto, la imagen se recortará.
+Si la **imagen BUTTON** es mayor que la  región definida por los atributos **de** ancho y alto, se recortará la imagen.
 
-Si no se especifica la imagen  pero el **alto** y el ancho son, se muestra la imagen directamente detrás de este control. Esto puede facilitar el dibujo de la imagen en **la propia vista,** lo que reduce el número de archivos de imagen independientes necesarios.
+Si no se especifica la  imagen  pero el alto y el ancho son , se muestra la imagen directamente detrás de este control. Esto puede facilitar el dibujo de la imagen en **la propia vista,** lo que reduce el número de archivos de imagen independientes necesarios.
 
 Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la imagen red-x).
 
@@ -51,7 +51,7 @@ Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la ima
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

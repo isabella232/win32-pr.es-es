@@ -59,21 +59,21 @@ Tipo de datos: **datetime**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Intervalo de tiempo después de Windows Management Instrumentation (WMI) libera un proveedor de eventos. La hora está en formato [de intervalo.](interval-format.md) Puede tardar hasta dos veces el intervalo especificado para descargar el proveedor.
+Intervalo de tiempo después Windows instrumental de administración de eventos (WMI) libera un proveedor de eventos. La hora está en formato [de intervalo.](interval-format.md) Puede tardar hasta el doble del intervalo especificado para descargar el proveedor.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **\_ \_ clase EventProviderCacheControl** se deriva de [**\_ \_ CacheControl**](--cachecontrol.md).
 
-Para obtener más información sobre el uso de esta clase, vea [Descargar un proveedor](unloading-a-provider.md).
+Para obtener más información sobre el uso de esta clase, vea [Unloading a Provider](unloading-a-provider.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -81,7 +81,7 @@ Para obtener más información sobre el uso de esta clase, vea [Descargar un pro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -27,7 +27,7 @@ Campo de bits que mantiene información sobre los aspectos de una réplica nc qu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-NC-Type                        |
 | Ldap-Display-Name | msDS-NcType                          |
@@ -36,7 +36,7 @@ Campo de bits que mantiene información sobre los aspectos de una réplica nc qu
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2024              |
 | System-Id-Guid    | 5a2eacd7-cc2b-48cf-9d9a-b6f1a0024de9 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -50,14 +50,14 @@ Campo de bits que mantiene información sobre los aspectos de una réplica nc qu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -71,14 +71,14 @@ Campo de bits que mantiene información sobre los aspectos de una réplica nc qu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -92,14 +92,14 @@ Campo de bits que mantiene información sobre los aspectos de una réplica nc qu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

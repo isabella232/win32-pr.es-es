@@ -50,7 +50,7 @@ ms.locfileid: "118314464"
 
 Los métodos y propiedades del **objeto SWbemLastError** contienen y manipulan objetos de error. Los métodos y propiedades de este objeto son exactamente iguales que los del objeto [**SWbemObject,**](swbemobject.md) pero se usan para contener información de error en lugar de información de clase WMI. Este objeto se puede crear mediante la llamada **CreateObject de** VBScript.
 
-Puede crear un objeto de error **SWbemLastError para** inspeccionar la información de error extendida asociada a una llamada de método anterior. Si la información de error no está disponible, se producirá un error al intentar crear un objeto de error. Si la llamada se realiza correctamente y se devuelve un objeto de error, se restablece el estado del objeto. Se producirá un error en otros intentos de recuperar un objeto de error hasta que se produzca un nuevo error. Si realiza una llamada asincrónica que produce un error, el evento [**SWbemSink.OnCompleted**](swbemsink-oncompleted.md) del parámetro *objWbemErrorObject* puede devolverle un objeto **SWbemLastError.**
+Puede crear un objeto de error **SWbemLastError** para inspeccionar la información de error extendida asociada a una llamada al método anterior. Si la información de error no está disponible, se producirá un error al intentar crear un objeto de error. Si la llamada se realiza correctamente y se devuelve un objeto de error, se restablece el estado del objeto. Se producirá un error en otros intentos de recuperar un objeto de error hasta que se produzca un nuevo error. Si realiza una llamada asincrónica que produce un error, el evento [**SWbemSink.OnCompleted**](swbemsink-oncompleted.md) puede devolverle un objeto **SWbemLastError** en el parámetro *objWbemErrorObject.*
 
 ## <a name="members"></a>Miembros
 
@@ -112,7 +112,7 @@ El **objeto SWbemLastError** tiene estas propiedades.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de VBScript se muestra cómo inspeccionar la información del objeto de error y de error.
+En el ejemplo de VBScript siguiente se muestra cómo inspeccionar la información del objeto de error y de error.
 
 
 ```VB
@@ -172,7 +172,7 @@ End If
 
 
 
-En el siguiente ejemplo de Perl se muestra cómo inspeccionar la información del objeto de error y error.
+En el ejemplo de Perl siguiente se muestra cómo inspeccionar la información del objeto de error y de error.
 
 
 ```

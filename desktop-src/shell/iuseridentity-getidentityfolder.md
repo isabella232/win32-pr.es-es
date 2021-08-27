@@ -1,7 +1,7 @@
 ---
 description: GetIdentityFolder no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
 ms.assetid: cd3370a2-b393-4cb9-ad9c-a46086987aaa
-title: 'IUserIdentity:: GetIdentityFolder (método) (Msident. h)'
+title: Método IUserIdentity::GetIdentityFolder (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: 9f2644570bb7ccc2ae5bee8a37d4471ffb65861a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20357dde27214177a454eb585dcd51182228c247da5aeae5ef887089b73ed85d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720611"
 ---
-# <a name="iuseridentitygetidentityfolder-method"></a>IUserIdentity:: GetIdentityFolder (método)
+# <a name="iuseridentitygetidentityfolder-method"></a>IUserIdentity::GetIdentityFolder (método)
 
-\[**GetIdentityFolder** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use [cuentas de usuario con cambio rápido de usuario y escritorio remoto](fastuserswitching.md).\]
+\[**GetIdentityFolder** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, [use cuentas de usuario con cambio rápido de usuario Escritorio remoto](fastuserswitching.md).\]
 
 Obtiene la carpeta de archivos asociada a esta identidad.
 
@@ -43,29 +43,29 @@ HRESULT GetIdentityFolder(
 
 <dl> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Obligatorio. Valor que especifica si la carpeta asociada a esta identidad es roaming. Debe ser uno de los valores siguientes.
+Obligatorio. Valor que especifica si la carpeta asociada a esta identidad es itinerancia. Debe ser uno de los siguientes valores:
 
 <dt>
 
 
 
- (GIF \_ ) carpeta móvil \_ )
+ (GIF) \_ CARPETA \_ MÓVIL)
 
 
 </dt> <dd>
 
-La carpeta está en itinerancia.
+La carpeta es itinerancia.
 
 </dd> <dt>
 
 
 
- (GIF \_ ) \_carpeta no móvil \_ )
+ (GIF) \_ CARPETA \_ QUE NO ES \_ ITINERANCIA)
 
 
 </dt> <dd>
@@ -74,21 +74,21 @@ La carpeta es local.
 
 </dd> </dl> </dd> <dt>
 
-*pszPath* \[ de\]
+*pszPath* \[ En\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Puntero a una cadena de caracteres anchos que recibe la ruta de acceso de la carpeta.
 
 </dd> <dt>
 
-_ulBuffSize * \[ en\]
+*ulBuffSize* \[ En\]
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
-Valor que especifica el tamaño de *pszPath*.
+Valor que especifica el tamaño de *pszPath.*
 
 </dd> </dl>
 
@@ -96,25 +96,25 @@ Valor que especifica el tamaño de *pszPath*.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows 2000 Professional<br/>                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows 2000 Server<br/>                                                         |
-| Encabezado<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

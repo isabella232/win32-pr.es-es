@@ -1,5 +1,5 @@
 ---
-description: La clase ManagedElement de CIM es una clase abstracta que proporciona una superclase común (o parte superior del árbol de herencia) para las clases que no son de asociación \_ en el esquema CIM.
+description: La clase ManagedElement de CIM es una clase abstracta que proporciona una superclase común (o la parte superior del árbol de herencia) para las clases que no son de asociación \_ en el esquema CIM.
 ms.assetid: 6655a480-37bd-403c-9673-4eaa3d381201
 title: CIM_ManagedElement clase
 ms.topic: reference
@@ -24,9 +24,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118648187"
 ---
-# <a name="cim_managedelement-class"></a>Clase \_ ManagedElement de CIM
+# <a name="cim_managedelement-class"></a>Cim \_ ManagedElement (clase)
 
-La **clase \_ ManagedElement de CIM** es una clase abstracta que proporciona una superclase común (o parte superior del árbol de herencia) para las clases que no son de asociación en el esquema CIM.
+La **clase \_ ManagedElement de CIM** es una clase abstracta que proporciona una superclase común (o la parte superior del árbol de herencia) para las clases que no son de asociación en el esquema CIM.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -91,7 +91,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre descriptivo para el objeto. Esta propiedad permite a cada instancia definir un nombre descriptivo además de sus propiedades clave, datos de identidad e información de descripción.
+Nombre descriptivo del objeto. Esta propiedad permite a cada instancia definir un nombre descriptivo además de sus propiedades clave, datos de identidad e información de descripción.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ Identifica de forma única y opaca una instancia de esta clase dentro del ámbit
 >
 > Para garantizar la unidad dentro del espacio de nombres, el valor de la propiedad **InstanceID** debe construirse con el siguiente patrón: *OrgID*:*LocalID*
 >
-> *OrgID* debe incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial que define el **InstanceID** o ser un identificador registrado asignado por una autoridad global reconocida. Este patrón es similar a la estructura de los nombres de clase de esquema. Además, para garantizar la unidad, el primer signo de dos puntos de **InstanceID** debe estar entre *orgID* y *LocalID.* Por lo *tanto, orgID* no debe contener dos puntos (':').
+> *OrgID* debe incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial que define **instanceID** o ser un identificador registrado asignado por una autoridad global reconocida. Este patrón es similar a la estructura de los nombres de clase de esquema. Además, para garantizar la unidad, el primer signo de dos puntos de **InstanceID** debe estar entre *orgID* y *LocalID.* Por lo *tanto, orgID* no debe contener dos puntos (':').
 >
 > La entidad empresarial elige *LocalID* y no se debe volver a usar para identificar los distintos elementos subyacentes del mundo real.
 >
@@ -126,7 +126,7 @@ Identifica de forma única y opaca una instancia de esta clase dentro del ámbit
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |

@@ -42,7 +42,7 @@ El **método setSelectedState2** establece el estado seleccionado del elemento c
 <span id="selected"></span><span id="SELECTED"></span>*Seleccionado*
 </dt> <dd>
 
-**Valor** booleano que indica si el elemento especificado se va a seleccionar (true) o no seleccionar (false).
+**Valor** booleano que indica si el elemento especificado se va a seleccionar (true) o no se va a seleccionar (false).
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método puede funcionar con listas de reproducción anidadas y reemplaza el **método setSelectedState** que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el parámetro *item.*
+Este método puede funcionar con listas de reproducción anidadas y reemplaza el **método setSelectedState** que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el *parámetro item.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,11 +64,11 @@ Este método puede funcionar con listas de reproducción anidadas y reemplaza el
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
 [**PLAYLIST.setSelectedState**](playlist-setselectedstate.md)

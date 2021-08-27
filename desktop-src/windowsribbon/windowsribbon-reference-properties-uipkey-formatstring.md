@@ -25,7 +25,7 @@ propertyDescription
       type = VT_LPWSTR
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una aplicación usa PKEY FormatString de interfaz de usuario para consultar el formato (o unidad de medida) para el \_ \_ valor del control [Spinner.](windowsribbon-controls-spinner.md)
 

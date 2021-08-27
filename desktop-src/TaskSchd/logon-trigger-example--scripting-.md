@@ -1,6 +1,6 @@
 ---
-title: Ejemplo de desencadenador Logon (scripting)
-description: Este ejemplo de scripting muestra cómo crear una tarea programada para ejecutar el Bloc de notas cuando un usuario inicia sesión.
+title: Ejemplo de desencadenador de inicio de sesión (scripting)
+description: En este ejemplo de scripting se muestra cómo crear una tarea que está programada para ejecutarse Bloc de notas cuando un usuario inicia sesión.
 ms.assetid: f25e105f-9439-4646-bdfd-609ee99a5d55
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,29 +9,29 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 72a8c4b5d0d67b59160eb3ed0b13885ee7e0eb51
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6faa60e30974aee9382483f30de5842a842a133135e79add176448e11e93a569
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118859586"
 ---
-# <a name="logon-trigger-example-scripting"></a>Ejemplo de desencadenador Logon (scripting)
+# <a name="logon-trigger-example-scripting"></a>Ejemplo de desencadenador de inicio de sesión (scripting)
 
-Este ejemplo de scripting muestra cómo crear una tarea programada para ejecutar el Bloc de notas cuando un usuario inicia sesión. La tarea contiene un desencadenador Logon que especifica un límite de inicio para que la tarea se inicie y un identificador de usuario que especifica el usuario. La tarea se registra mediante el grupo administradores como contexto de seguridad para ejecutar la tarea.
+En este ejemplo de scripting se muestra cómo crear una tarea que está programada para ejecutarse Bloc de notas cuando un usuario inicia sesión. La tarea contiene un desencadenador de inicio de sesión que especifica un límite de inicio para que se inicie la tarea y un identificador de usuario que especifica el usuario. La tarea se registra mediante el grupo Administradores como contexto de seguridad para ejecutar la tarea.
 
-En el procedimiento siguiente se describe cómo programar un ejecutable, como el Bloc de notas, para que se inicie cuando un usuario especificado inicie sesión.
+En el procedimiento siguiente se describe cómo programar un ejecutable como Bloc de notas iniciar cuando un usuario especificado inicia sesión.
 
-**Para programar el inicio del Bloc de notas cuando un usuario inicia sesión**
+**Para programar Bloc de notas iniciar cuando un usuario inicia sesión**
 
-1.  Cree un objeto [**TaskService**](taskservice.md) . Este objeto permite crear la tarea en una carpeta especificada.
-2.  Obtener una carpeta de tareas y crear una tarea. Use el método [**TaskService. GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService. newtask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
-3.  Defina la información sobre la tarea mediante el objeto [**TaskDefinition**](taskdefinition.md) . Use la propiedad [**TaskDefinition. Settings**](taskdefinition-settings.md) para definir la configuración que determina cómo el servicio de programador de tareas realiza la tarea y la propiedad [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
-4.  Cree un desencadenador Logon mediante la propiedad [**TaskDefinition. Triggers**](taskdefinition-triggers.md) . Esta propiedad proporciona acceso al objeto [**TriggerCollection**](triggercollection.md) . Use el método [**TriggerCollection. Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador Logon. Cuando cree el desencadenador, establezca el límite inicial y el límite final del desencadenador para activar y desactivar el desencadenador. Debe establecer la propiedad [**userid**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_userid) para el desencadenador para que las acciones de la tarea se programen para ejecutarse cuando el usuario especificado inicia sesión después del límite de inicio.
-5.  Cree una acción para que la tarea se ejecute mediante la propiedad [**TaskDefinition. Actions**](taskdefinition-actions.md) . Esta propiedad proporciona acceso al objeto [**ActionCollection**](actioncollection.md) . Use el método [**ActionCollection. Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se usa un objeto [**ExecAction**](execaction.md) , que representa una acción que inicia un ejecutable.
-6.  Registre la tarea mediante el método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) . En este ejemplo se registra la tarea para que use el grupo administradores como contexto de seguridad para ejecutar la tarea.
+1.  Cree un [**objeto TaskService.**](taskservice.md) Este objeto permite crear la tarea en una carpeta especificada.
+2.  Obtenga una carpeta de tareas y cree una tarea. Use el [**método TaskService.GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService.NewTask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
+3.  Defina información sobre la tarea mediante el [**objeto TaskDefinition.**](taskdefinition.md) Use la [**propiedad TaskDefinition.Configuración**](taskdefinition-settings.md) para definir la configuración que determina cómo realiza la tarea el servicio Programador de tareas y la propiedad [**TaskDefinition.RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
+4.  Cree un desencadenador de inicio de sesión mediante [**la propiedad TaskDefinition.Triggers.**](taskdefinition-triggers.md) Esta propiedad proporciona acceso al [**objeto TriggerCollection.**](triggercollection.md) Use el [**método TriggerCollection.Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador de inicio de sesión. Cuando cree el desencadenador, establezca el límite inicial y el límite final del desencadenador para activarlo y desactivarlo. Debe establecer la [**propiedad UserId**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_userid) del desencadenador para que las acciones de la tarea se programen para ejecutarse cuando el usuario especificado inicie sesión después del límite de inicio.
+5.  Cree una acción para que la tarea se ejecute mediante la [**propiedad TaskDefinition.Actions.**](taskdefinition-actions.md) Esta propiedad proporciona acceso al [**objeto ActionCollection.**](actioncollection.md) Use el [**método ActionCollection.Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto ExecAction,**](execaction.md) que representa una acción que inicia un ejecutable.
+6.  Registre la tarea mediante el [**método TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md) En este ejemplo se registra la tarea para que use el grupo Administradores como contexto de seguridad para ejecutar la tarea.
 
-En el siguiente ejemplo de VBScript se muestra cómo programar una tarea para ejecutar el Bloc de notas cuando un usuario inicia sesión.
+En el ejemplo de VBScript siguiente se muestra cómo programar una tarea para ejecutar Bloc de notas cuando un usuario inicia sesión.
 
 
 ```VB
@@ -124,12 +124,12 @@ WScript.Echo "Task submitted."
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso de la Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -45,7 +45,7 @@ Las herramientas antiguas que administran un nuevo servidor Windows Server 2008 
 
 Los desarrolladores que escriben software para su uso dentro de una máquina virtual configurada para usar Memoria dinámica deben tener en cuenta que la memoria del sistema de máquina virtual ya no es constante. Por lo tanto, su aplicación debe liberar memoria cuando ya no sea necesario para permitir que otras aplicaciones aprovechen el recurso.
 
-Las asignaciones de memoria y las desa asignaciones siguen funcionando de la forma habitual para las aplicaciones de usuario. Memoria dinámica es completamente transparente para la mayoría de las aplicaciones de usuario final. Sin embargo, si el software que se está desarrollando usa contadores de rendimiento de memoria en la máquina virtual, se deben realizar pruebas cuidadosas en un entorno habilitado para Memoria dinámica para asegurarse de que el software tiene en cuenta los cambios realizados en la asignación de memoria del sistema operativo invitado. La memoria disponible ya no es "estática" desde la perspectiva de la máquina virtual.
+Las asignaciones de memoria y las desa asignaciones siguen funcionando de la forma habitual para las aplicaciones de usuario. Memoria dinámica es completamente transparente para la mayoría de las aplicaciones de usuario final. Sin embargo, si el software que se está desarrollando usa contadores de rendimiento de memoria en la máquina virtual, se deben realizar pruebas cuidadosas en un entorno habilitado para Memoria dinámica para asegurarse de que el software tenga en cuenta los cambios realizados en la asignación de memoria del sistema operativo invitado. La memoria disponible ya no es "estática" desde la perspectiva de la máquina virtual.
 
 ## <a name="solutions"></a>Soluciones
 
@@ -53,12 +53,12 @@ Las máquinas virtuales deben tener instalados los servicios de integración (SP
 
 ## <a name="links-to-other-resources"></a>Vínculos a otros recursos
 
--   [Memoria dinámica en el blog de Hyper-V](https://blogs.technet.com/b/virtualization/archive/2010/03/18/dynamic-memory-coming-to-hyper-v.aspx)
+-   [Memoria dinámica blog coming to Hyper-V (Próximamente a Hyper-V)](https://blogs.technet.com/b/virtualization/archive/2010/03/18/dynamic-memory-coming-to-hyper-v.aspx)
 -   [Uso del proveedor WMI de Hyper-V](/previous-versions/windows/desktop/virtual/using-the-virtualization-wmi-provider)
 
 ## <a name="disclaimer"></a>Declinación de responsabilidades
 
-La información contenida en este documento está relacionada con el producto de software de versión preliminar que se puede modificar considerablemente antes de su primera versión comercial. En consecuencia, es posible que la información no describa ni refleje con precisión el producto de software cuando se lanzó por primera vez comercialmente. Este documento es meramente informativo. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
+La información contenida en este documento está relacionada con el producto de software de versión preliminar que se puede modificar considerablemente antes de su primera versión comercial. En consecuencia, es posible que la información no describa ni refleje con precisión el producto de software cuando se lanzó comercialmente por primera vez. Este documento es meramente informativo. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
 
  
 

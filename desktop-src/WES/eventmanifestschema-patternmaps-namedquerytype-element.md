@@ -1,6 +1,6 @@
 ---
-title: Elemento patternMaps (NamedQueryType)
-description: Define una lista de pares de expresiones regulares que se utilizan para modificar la cadena de mensaje.
+title: elemento patternMaps (NamedQueryType)
+description: Define una lista de pares de expresiones regulares que se usan para modificar la cadena del mensaje.
 ms.assetid: d471d61f-3f01-44eb-a61e-e1f5de67a31d
 keywords:
 - elemento patternMaps EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3cf7832cf0869c6df4779eac463e2e124257db25
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 539c174cb25a83a72de7011c46d527591ec25447410155639deabf17c308aaa8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103904972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118841684"
 ---
-# <a name="patternmaps-namedquerytype-element"></a>Elemento patternMaps (NamedQueryType)
+# <a name="patternmaps-namedquerytype-element"></a>elemento patternMaps (NamedQueryType)
 
-Define una lista de pares de expresiones regulares que se utilizan para modificar la cadena de mensaje.
+Define una lista de pares de expresiones regulares que se usan para modificar la cadena del mensaje.
 
 ``` syntax
 <xs:element name="patternMaps"
@@ -30,7 +30,7 @@ Define una lista de pares de expresiones regulares que se utilizan para modifica
  />
 ```
 
-El elemento **patternMaps** se define mediante el tipo complejo de [**NamedQueryType**](eventmanifestschema-namedquerytype-complextype.md) .
+El **elemento patternMaps** se define mediante el [**tipo complejo NamedQueryType.**](eventmanifestschema-namedquerytype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **patternMaps** se define mediante el tipo complejo de [**NamedQuery
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

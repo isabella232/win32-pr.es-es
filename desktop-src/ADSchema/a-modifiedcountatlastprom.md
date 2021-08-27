@@ -4,7 +4,7 @@ description: Número de serie del registro de cambios de inicio de sesión neto 
 ms.assetid: 9f907997-ad1a-451c-960d-e5d1d462c00a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo Modified-Count-At-Last-Prom
+- Esquema de AD del atributo Modified-Count-At-Last Prom
 - Esquema de AD del atributo modifiedCountAtLastProm
 topic_type:
 - apiref
@@ -27,16 +27,16 @@ Número de serie del registro de cambios de inicio de sesión neto en la última
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Modified-Count-At-Last-Prom          |
 | Ldap-Display-Name | modifiedCountAtLastProm              |
 | Size              | \-                                   |
-| Privilegio actualizar  | El sistema establece este valor.     |
+| Actualizar privilegios  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.81                |
 | System-Id-Guid    | bf9679c6-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -53,14 +53,14 @@ Número de serie del registro de cambios de inicio de sesión neto en la última
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Es de un solo valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
@@ -74,14 +74,14 @@ Número de serie del registro de cambios de inicio de sesión neto en la última
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Es de un solo valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
@@ -95,14 +95,14 @@ Número de serie del registro de cambios de inicio de sesión neto en la última
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Es de un solo valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
@@ -116,14 +116,14 @@ Número de serie del registro de cambios de inicio de sesión neto en la última
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Es de un solo valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
@@ -137,14 +137,14 @@ Número de serie del registro de cambios de inicio de sesión neto en la última
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Es de un solo valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
@@ -158,14 +158,14 @@ Número de serie del registro de cambios de inicio de sesión neto en la última
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Es de un solo valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |

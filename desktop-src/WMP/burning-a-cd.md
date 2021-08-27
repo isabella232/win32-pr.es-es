@@ -3,31 +3,31 @@ title: Grabación de un CD
 description: Grabación de un CD
 ms.assetid: df55479e-d8a7-443d-bf2c-c988bfd0b1be
 keywords:
-- Windows Media Player, grabación de CD
-- Modelo de objetos de Windows Media Player, grabación de CD
+- Reproductor de Windows Media, cds
+- Reproductor de Windows Media modelo de objetos, grabación de CD
 - modelo de objetos, grabación de CD
-- Control ActiveX de Windows Media Player, grabación de CD
-- Control ActiveX, grabación de CD
-- Control ActiveX móvil de Windows Media Player, grabación de CD
-- Windows Media Player Mobile, grabación de CD
+- Reproductor de Windows Media ActiveX control, cds
+- ActiveX control, grabación de CD
+- Reproductor de Windows Media Control de ActiveX móvil, grabación de CD
+- Reproductor de Windows Media Móvil, cds
 - Grabación de CD, acerca de
-- grabar CDs, acerca de
+- cds, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 007b7808ff375ab0673592d0d016f8e713321d1a
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 82c7cfee7468b2cd376b7b25d4cff4a04e0d057dcc7a792ac7471843de2b74a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104149090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118840774"
 ---
 # <a name="burning-a-cd"></a>Grabación de un CD
 
-En esta sección se describe cómo usar la interfaz [IWMPCdromBurn](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromburn) para grabar música en un CD. La interfaz **IWMPCdromBurn** proporciona funcionalidad para grabar listas de reproducción en CDs como datos o pistas de audio, así como para borrar CD-RW.
+En esta sección se describe cómo usar la [interfaz IWMPCdromRomRom Para](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromburn) grabar música en un CD. La **interfaz IWMPCdromGnición proporciona** funcionalidad para grabar listas de reproducción en CD como pistas de datos o audio, así como para borrar CD-RW.
 
-Uso del código
+Uso de código
 
-En los ejemplos de código de esta sección se usan las clases Active Template Library (ATL), como **CComPtr**.
+Los ejemplos de código de esta sección usan Active Template Library (ATL), como **CComPtr**.
 
 Encabezados incluidos
 
@@ -48,7 +48,7 @@ Para usar el código de esta sección, incluya los encabezados siguientes:
 
 Punteros de interfaz
 
-Las interfaces para Media Player de Windows se almacenan en las siguientes variables miembro:
+Las interfaces de Reproductor de Windows Media se almacenan en las siguientes variables miembro:
 
 
 ```C++
@@ -69,20 +69,20 @@ En los temas siguientes se describe cómo usar la API de grabación de CD.
 
 -   [Recuperación de la interfaz de grabación de CD](retrieving-the-cd-burning-interface.md)
 -   [Iniciar el proceso de grabación](starting-the-burn-process.md)
--   [Borrado de un CD regrabable](erasing-a-rewritable-cd.md)
--   [Recuperación de la unidad y el estado del disco](retrieving-the-drive-and-disc-status.md)
--   [Recuperación del estado de la grabación](retrieving-the-burn-status.md)
+-   [Borrado de un CD reescrito](erasing-a-rewritable-cd.md)
+-   [Recuperar el estado de la unidad y el disco](retrieving-the-drive-and-disc-status.md)
+-   [Recuperación del estado de grabación](retrieving-the-burn-status.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Guía de control del reproductor**](player-control-guide.md)
+[**Guía de control de reproductor**](player-control-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

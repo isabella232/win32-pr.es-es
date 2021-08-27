@@ -1,53 +1,53 @@
 ---
-title: Etiqueta Pit
-description: Etiqueta Pit
+title: Etiqueta pit
+description: Etiqueta pit
 ms.assetid: bad439e0-5e5d-4413-aed4-c29bf694cb2a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62e4ae297e45be2881197b82ddd5f372efb215f8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 485ecb6023ab50b04e166a3803c9aad2a04d2540cac46d1c8ee9ae78e158731f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118746609"
 ---
-# <a name="pit-tag"></a>Etiqueta Pit
+# <a name="pit-tag"></a>Etiqueta pit
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
-Establece el paso de línea base de la salida en el valor especificado en hercios.
+Establece el paso de línea base de la salida en el valor especificado en hertz.
 
 </dd> <dt>
 
-<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintáctica**
+<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-**\\Pit =***número***\\**
+**\\ Pit=**_number_*_\\_*
 
 
 
 | Parte     | Descripción         |
 |----------|---------------------|
-| *número* | El paso en hercios. |
+| *número* | El tono en hertz. |
 
 
 
- 
+ 
 
 </dd> </dl>
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Esta etiqueta solo se admite para la salida generada por TTS. El intervalo de valores para el parámetro puede variar en función del motor TTS instalado.
+Esta etiqueta solo se admite para la salida generada por TTS. El intervalo de valores del parámetro puede variar en función del motor de TTS instalado.
 
- 
+ 
 
- 
+ 
 
 
 

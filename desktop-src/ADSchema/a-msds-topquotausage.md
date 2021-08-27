@@ -1,11 +1,11 @@
 ---
 title: Atributo ms-DS-Top-Quota-Usage
-description: Lista de los principales usuarios de cuota que se encuentran actualmente en la base de datos de directorio, ordenada por la reducción del uso de cuota.
+description: Lista de los usuarios de cuota principales que se encuentran actualmente en la base de datos de directorios, ordenada por la disminución del uso de la cuota.
 ms.assetid: c52db8c8-233c-495f-b3fe-edbe1d723677
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo ms-DS-Top-Quota-Usage
-- msDS-TopQuotaUsage attribute AD Schema
+- Esquema de AD del atributo msDS-TopQuotaUsage
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "118683262"
 ---
 # <a name="ms-ds-top-quota-usage-attribute"></a>Atributo ms-DS-Top-Quota-Usage
 
-Lista de los principales usuarios de cuota que se encuentran actualmente en la base de datos de directorio, ordenada por la reducción del uso de cuota.
+Lista de los usuarios de cuota principales que se encuentran actualmente en la base de datos de directorios, ordenada por la disminución del uso de la cuota.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-Top-Quota-Usage                       |
 | Ldap-Display-Name | msDS-TopQuotaUsage                          |
 | Size              | \-                                          |
-| Actualizar privilegios  | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1850                     |
 | System-Id-Guid    | 7b7cce4f-f1f5-4bb6-b7eb-23504af19e75        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,14 +53,14 @@ Lista de los principales usuarios de cuota que se encuentran actualmente en la b
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Es de un solo valor       | False                                                             |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Falso                                                             |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
@@ -74,14 +74,14 @@ Lista de los principales usuarios de cuota que se encuentran actualmente en la b
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Es de un solo valor       | False                                                             |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Falso                                                             |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
@@ -95,14 +95,14 @@ Lista de los principales usuarios de cuota que se encuentran actualmente en la b
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Es de un solo valor       | False                                                             |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Falso                                                             |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
@@ -116,14 +116,14 @@ Lista de los principales usuarios de cuota que se encuentran actualmente en la b
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Es de un solo valor       | False                                                             |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Falso                                                             |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
@@ -137,14 +137,14 @@ Lista de los principales usuarios de cuota que se encuentran actualmente en la b
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Es de un solo valor       | False                                                             |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Falso                                                             |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
@@ -158,14 +158,14 @@ Lista de los principales usuarios de cuota que se encuentran actualmente en la b
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Es de un solo valor       | False                                                             |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Falso                                                             |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |

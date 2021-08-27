@@ -1,22 +1,22 @@
 ---
 title: Código de ejemplo para enumerar clases, atributos y sintaxis de esquema
-description: Ejemplos de código que enumeran las clases de esquema, los atributos y las sintaxis.
+description: Ejemplos de código que enumeran clases de esquema, atributos y sintaxis.
 ms.assetid: fca0b723-4582-4fe3-933d-b56c016fd324
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, enumerar clases de esquema, atributos y sintaxis
+- Active Directory ejemplos Active Directory enumeración de clases de esquema, atributos y sintaxis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ceaea652c2e66b07a12b31096fb06bfe8839f6ee
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 282aeea3274e3e7eb8f7b4c71134bd1cbf95aefff58e5fe9c03e459b27671f1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693821"
 ---
 # <a name="example-code-for-enumerating-schema-classes-attributes-and-syntaxes"></a>Código de ejemplo para enumerar clases, atributos y sintaxis de esquema
 
-En el siguiente ejemplo de C++ se muestra cómo enumerar las clases, los atributos y las sintaxis del esquema abstracto.
+En el siguiente ejemplo de C++ se muestra cómo enumerar las clases, atributos y sintaxis del esquema abstracto.
 
 
 ```C++
@@ -167,7 +167,7 @@ cleanup:
 
 
 
-En el siguiente ejemplo de código de Visual Basic se lee el esquema abstracto para enumerar las clases de objeto estructural, abstract y auxiliar. A continuación, en el ejemplo se enumeran las clases de atributo de un solo valor y de varios valores.
+En el ejemplo Visual Basic código siguiente se lee el esquema abstracto para enumerar las clases de objetos estructurales, abstractas y auxiliares. A continuación, en el ejemplo se enumeran las clases de atributo con un solo valor y varios valores.
 
 
 ```VB
@@ -204,9 +204,9 @@ Next aProp
 
 
 
- 
+ 
 
- 
+ 
 
 
 

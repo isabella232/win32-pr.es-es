@@ -27,7 +27,7 @@ d3dpp.AutoDepthStencilFormat = D3DFMT_D16;
 
 
 
-Al establecer el miembro EnableAutoDepthStencil en **TRUE,** se indica a Direct3D que administre los búferes de profundidad de la aplicación. Tenga en cuenta que AutoDepthStencilFormat debe establecerse en un formato de búfer de profundidad válido. La marca D3DFMT D16 especifica un búfer de profundidad de \_ 16 bits, si hay uno disponible.
+Al establecer el miembro EnableAutoDepthStencil en **TRUE,** se indica a Direct3D que administre los búferes de profundidad de la aplicación. Tenga en cuenta que AutoDepthStencilFormat debe establecerse en un formato de búfer de profundidad válido. La marca D3DFMT D16 especifica un búfer de profundidad de \_ 16 bits, si hay alguno disponible.
 
 La siguiente llamada al método [**IDirect3D9::CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) crea un dispositivo que, a continuación, crea un búfer de profundidad.
 

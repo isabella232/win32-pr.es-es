@@ -1,5 +1,5 @@
 ---
-description: Obtenga más información sobre el parámetro PageWatermarkTextAngle. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga más información sobre el parámetro PageWatermarkTextAngle. Este tema no está actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 157bb79c-68d2-4121-8a85-cd2f48095541
 title: PageWatermarkTextAngle
 ms.topic: article
@@ -15,7 +15,7 @@ ms.locfileid: "118470965"
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica el ángulo del texto de la marca de agua en relación con la dirección PageImageableSizeWidth. El ángulo se mide en sentido contrario a las agujas del reloj.
+Especifica el ángulo del texto de marca de agua con respecto a la dirección PageImageableSizeWidth. El ángulo se mide en la dirección en sentido contrario a las agujas del reloj.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -89,7 +89,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

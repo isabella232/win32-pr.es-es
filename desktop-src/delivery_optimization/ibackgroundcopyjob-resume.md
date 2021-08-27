@@ -51,25 +51,25 @@ Este método devuelve los siguientes **valores HRESULT,** así como otros.
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | <dl> <dt>S_OK**</dt> </dl>             | El trabajo se reinició correctamente.<br/>                                                           |
 | <dl> <dt>**DO_E_EMPTY**</dt> </dl>          | No hay archivos para transferir.<br/>                                                           |
-| <dl> <dt>**DO_E_INVALID_STATE**</dt> </dl> | El estado del trabajo no se puede BG_JOB_STATE_CANCELLED ni BG_JOB_STATE_ACKNOWLEDGED.<br/> |
+| <dl> <dt>**DO_E_INVALID_STATE**</dt> </dl> | El estado del trabajo no se puede BG_JOB_STATE_CANCELLED o BG_JOB_STATE_ACKNOWLEDGED.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al crear un trabajo, el trabajo se suspende inicialmente. Al llamar **a Resume,** el trabajo pasa al estado Transferring (Transfiriendo). Tenga en cuenta que el trabajo debe contener uno o varios archivos antes de llamar a este método.
+Al crear un trabajo, el trabajo se suspende inicialmente. Al **llamar a Resume,** se mueve el trabajo al estado De transferencia. Tenga en cuenta que el trabajo debe contener uno o varios archivos antes de llamar a este método.
 
-Si un trabajo que se encuentra en BG_JOB_STATE_TRANSIENT_ERROR estado BG_JOB_STATE_ERROR, llame al método **Resume** para reiniciar el trabajo después de corregir el error.
+Si un trabajo que está en estado BG_JOB_STATE_TRANSIENT_ERROR o BG_JOB_STATE_ERROR, llame al método **Resume** para reiniciar el trabajo después de corregir el error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
 | Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
@@ -79,7 +79,7 @@ Si un trabajo que se encuentra en BG_JOB_STATE_TRANSIENT_ERROR estado BG_JOB_STA
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,25 +1,25 @@
 ---
-title: Código de ejemplo para implementar un servicio Winsock con una publicación RnR
-description: En el ejemplo de código siguiente se implementa el servicio Winsock de ejemplo con la publicación RnR.
+title: Código de ejemplo para implementar un servicio Winsock con una publicación de RnR
+description: En el ejemplo de código siguiente se implementa el servicio Winsock de ejemplo con la publicación de RnR.
 ms.assetid: 8800ba76-f24c-4aa7-ba31-97eaf884130c
 ms.tgt_platform: multiple
 keywords:
-- Registro y resolución de Windows Sockets AD, código de ejemplo, implementar un servicio Winsock con una publicación RnR
-- Implementación de un servicio Winsock con un AD de publicación RnR, código de ejemplo
+- Windows Registro de sockets y resolución de AD, código de ejemplo, implementación de un servicio Winsock con una publicación de RnR
+- Implementación de un servicio Winsock con una publicación de RnR AD , código de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18f03c7f1920d1f05ee5f5fd157bd3e37abd987c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 669d09350acad0a597421f1f4299e71f4da506b148ed1cf3e6f2a385bb8f7043
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693659"
 ---
-# <a name="example-code-for-implementing-a-winsock-service-with-an-rnr-publication"></a>Código de ejemplo para implementar un servicio Winsock con una publicación RnR
+# <a name="example-code-for-implementing-a-winsock-service-with-an-rnr-publication"></a>Código de ejemplo para implementar un servicio Winsock con una publicación de RnR
 
-En el ejemplo de código siguiente se implementa el servicio Winsock de ejemplo con la publicación RnR.
+En el ejemplo de código siguiente se implementa el servicio Winsock de ejemplo con la publicación de RnR.
 
-En este ejemplo se usa la función **serverRegister** definida en el [código de ejemplo para publicar el tema del punto de conexión de RNR](example-code-for-publishing-the-rnr-connection-point.md) y la función **serverUnregister** definida en el [código de ejemplo para quitar el punto de conexión de RNR](example-code-for-removing-the-rnr-connection-point.md) .
+En este ejemplo se usa la función **serverRegister** definida en el tema Código de ejemplo para publicar el punto de conexión [RnR](example-code-for-publishing-the-rnr-connection-point.md) y la función **serverUnregister** definida en el tema Código de ejemplo para quitar el punto de [conexión RnR.](example-code-for-removing-the-rnr-connection-point.md)
 
 
 ```C++
@@ -270,9 +270,9 @@ INT serverRegister(SOCKADDR * sa,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

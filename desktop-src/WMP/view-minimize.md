@@ -1,9 +1,9 @@
 ---
-title: VER. minimizar
-description: El método miniMIZE minimiza la vista.
+title: VIEW.minimize
+description: El método minimize minimiza view.
 ms.assetid: 97c257fa-aa4f-4e6f-bc49-fa54db63b59b
 keywords:
-- VER. minimizar Windows Media Player
+- VIEW.minimize Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1e01c35ad5a77c5a78a705d0188f771e0466a761
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0351ad27e18750832151e8820dec8594319024791850f1ab92764e175d9582b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332967"
 ---
-# <a name="viewminimize"></a>VER. minimizar
+# <a name="viewminimize"></a>VIEW.minimize
 
-El método **miniMIZE** minimiza la **vista**.
+El **método minimize** minimiza el **view**.
 
 ``` syntax
         elementID.minimize()
@@ -55,20 +55,20 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> <dt>
 
-[**VER. maximizar**](view-maximize.md)
+[**VIEW.maximize**](view-maximize.md)
 </dt> </dl>
 
  

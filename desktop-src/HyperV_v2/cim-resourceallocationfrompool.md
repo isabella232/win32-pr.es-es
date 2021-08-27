@@ -77,7 +77,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Datos de asignación de recursos.
+Los datos de asignación de recursos.
 
 </dd> </dl>
 
@@ -85,7 +85,7 @@ Datos de asignación de recursos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
@@ -95,7 +95,7 @@ Datos de asignación de recursos.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

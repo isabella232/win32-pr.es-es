@@ -1,7 +1,7 @@
 ---
-description: Expande el área de este IAnalysisRegion al área creada por su unión con el IAnalysisRegion especificado.
+description: Expande el área de esta región IAnalysisRegion al área creada por su unión con la región IAnalysisRegion especificada.
 ms.assetid: cc3ec5c6-98ff-442e-a1e8-d1a57752ad56
-title: 'IAnalysisRegion:: UnionRegion (método) (IACom. h)'
+title: Método IAnalysisRegion::UnionRegion (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 587986973c4ae4bebaeed3c031c746bc4f842c42
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 760296552dc13ac394d4554903d84f596faba14318db9af3145c79f156c736fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720012"
 ---
-# <a name="ianalysisregionunionregion-method"></a>IAnalysisRegion:: UnionRegion (método)
+# <a name="ianalysisregionunionregion-method"></a>IAnalysisRegion::UnionRegion (método)
 
-Expande el área de este [**IAnalysisRegion**](ianalysisregion.md) al área creada por su unión con el **IAnalysisRegion** especificado.
+Expande el área de esta [**región IAnalysisRegion**](ianalysisregion.md) al área creada por su unión con el **objeto IAnalysisRegion especificado.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,18 +39,18 @@ HRESULT UnionRegion(
 
 <dl> <dt>
 
-*pRegionToUnion* \[ de\]
+*pRegionToUnion* \[ En\]
 </dt> <dd>
 
-[**IAnalysisRegion**](ianalysisregion.md) con el que se va a combinar.
+[**IAnalysisRegion con**](ianalysisregion.md) la que se va a combinar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si alguna de las áreas es infinita, la nueva área también es infinita.
 
@@ -58,16 +58,16 @@ Si alguna de las áreas es infinita, la nueva área también es infinita.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -77,19 +77,19 @@ Si alguna de las áreas es infinita, la nueva área también es infinita.
 [**IAnalysisRegion::ExcludeRectangle**](ianalysisregion-excluderectangle.md)
 </dt> <dt>
 
-[**IAnalysisRegion:: ExcludeRegion (método)**](ianalysisregion-excluderegion.md)
+[**IAnalysisRegion::ExcludeRegion (Método)**](ianalysisregion-excluderegion.md)
 </dt> <dt>
 
-[**IAnalysisRegion:: IntersectRectangle (método)**](ianalysisregion-intersectrectangle.md)
+[**IAnalysisRegion::IntersectRectangle (Método)**](ianalysisregion-intersectrectangle.md)
 </dt> <dt>
 
-[**IAnalysisRegion:: IntersectRegion (método)**](ianalysisregion-intersectregion.md)
+[**IAnalysisRegion::IntersectRegion (Método)**](ianalysisregion-intersectregion.md)
 </dt> <dt>
 
-[**IAnalysisRegion:: UnionRectangle (método)**](ianalysisregion-unionrectangle.md)
+[**IAnalysisRegion::UnionRectangle (Método)**](ianalysisregion-unionrectangle.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

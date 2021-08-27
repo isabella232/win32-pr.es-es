@@ -1,25 +1,25 @@
 ---
-description: Acerca del generador de gráficos de captura
+description: Acerca de Capture Graph Builder
 ms.assetid: 9399a06e-7305-41e8-aefe-3d158052a8ed
-title: Acerca del generador de gráficos de captura
+title: Acerca de Capture Graph Builder
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae321665e0eae65a1d464bf87a12ac33e935d7ac
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8d6ef82a160ada6e53fe6d2db830efa85118eb699074630905cd41f0b5412ca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118664527"
 ---
-# <a name="about-the-capture-graph-builder"></a>Acerca del generador de gráficos de captura
+# <a name="about-the-capture-graph-builder"></a>Acerca de Capture Graph Builder
 
-Un gráfico de filtros que realiza la captura de vídeo o audio se denomina *gráfico de captura*. Los gráficos de captura suelen ser más complicados que los gráficos de reproducción de archivos. Para facilitar a las aplicaciones la creación de gráficos de captura, DirectShow proporciona un objeto auxiliar denominado generador de gráficos de captura. El generador de gráficos de captura expone la interfaz [**ICaptureGraphBuilder2**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) , que contiene métodos para compilar y controlar un gráfico de captura. En el diagrama siguiente se ilustra el generador de gráficos de captura y la interfaz **ICaptureGraphBuilder2** .
+Un gráfico de filtro que realiza la captura de vídeo o audio se denomina gráfico *de captura.* Los gráficos de captura suelen ser más complicados que los gráficos de reproducción de archivos. Para facilitar a las aplicaciones la compilación de gráficos de captura, DirectShow proporciona un objeto auxiliar denominado Capture Graph Builder. Capture Graph Builder expone la [**interfaz ICaptureGraphBuilder2,**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) que contiene métodos para compilar y controlar un gráfico de captura. En el diagrama siguiente se muestra la Graph Builder y la **interfaz ICaptureGraphBuilder2.**
 
-![usar el generador de gráficos de captura](images/cgb01.png)
+![uso del generador de gráficos de captura](images/cgb01.png)
 
-Empiece por llamar a CoCreateInstance para crear nuevas instancias del generador de gráficos de captura y el administrador de gráficos de filtro. A continuación, inicialice el generador de gráficos de captura mediante una llamada a [**ICaptureGraphBuilder2:: SetFiltergraph**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-setfiltergraph) con un puntero a la interfaz [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) del administrador de gráficos de filtro. En el siguiente diagrama se muestra este proceso.
+Para empezar, llame a CoCreateInstance para crear nuevas instancias de Capture Graph Builder y filter Graph Manager. A continuación, inicialice capture Graph Builder mediante una llamada a [**ICaptureGraphBuilder2::SetFiltergraph**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-setfiltergraph) con un puntero a la interfaz [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) del Administrador de filtros Graph Manager. En el siguiente diagrama se muestra este proceso.
 
-![inicializar el generador de gráficos de captura](images/cgb03.png)
+![inicialización del generador de gráficos de captura](images/cgb03.png)
 
 En el código siguiente se muestra una función auxiliar para realizar estos pasos:
 
@@ -66,7 +66,7 @@ HRESULT InitCaptureGraphBuilder(
 
 
 
-A lo largo de esta sección sobre la captura de vídeo, se supone que está usando el generador de gráficos de captura para crear el gráfico de captura. Sin embargo, es posible crear gráficos de captura por completo mediante métodos IGraphBuilder. Esto se considera un tema avanzado, sin embargo, y se prefieren los métodos del generador de gráficos de captura. Para obtener más información, vea [temas de captura avanzada](advanced-capture-topics.md).
+A lo largo de esta sección sobre la captura de vídeo, se supone que usa Capture Graph Builder para crear el gráfico de captura. Sin embargo, es posible compilar gráficos de captura por completo mediante métodos IGraphBuilder. Sin embargo, esto se considera un tema avanzado y se prefieren los métodos capture Graph Builder. Para obtener más información, vea [Advanced Capture Topics](advanced-capture-topics.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

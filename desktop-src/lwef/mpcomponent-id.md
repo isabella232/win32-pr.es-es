@@ -1,10 +1,10 @@
 ---
-title: Enumeración MPCOMPONENT_ID (MpClient. h)
-description: Componentes posibles para el administrador de protección contra malware de.
+title: MPCOMPONENT_ID enumeración (MpClient.h)
+description: Posibles componentes para el administrador de protección contra malware.
 ms.assetid: 014B400A-880B-419D-9F50-F3354CE945D9
 keywords:
-- MPCOMPONENT_ID enumeración características de entorno heredado de Windows
-- PMPCOMPONENT_ID el puntero de enumeración características de entorno heredado de Windows
+- MPCOMPONENT_ID enumeración de características de entorno de Windows heredado
+- PMPCOMPONENT_ID puntero de enumeración Heredados Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 196eebc5a3bee4968878c376cd7358724c9c55cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9fb5acb8d21f7fc947ae83d2b3e6ac9288c5aa38e13c5d4afaa2501b73a3d458
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976085"
 ---
-# <a name="mpcomponent_id-enumeration"></a>\_Enumeración de MPCOMPONENT ID
+# <a name="mpcomponent_id-enumeration"></a>Enumeración de id. de MPCOMPONENT \_
 
-Componentes posibles para el administrador de protección contra malware de.
+Posibles componentes para el administrador de protección contra malware.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -52,37 +52,37 @@ typedef enum tagMPCOMPONENT_ID {
 
 <dl> <dt>
 
-<span id="MPCOMPONENT_AS_SIGNATURE"></span><span id="mpcomponent_as_signature"></span>**MPCOMPONENT \_ como \_ firma**
+<span id="MPCOMPONENT_AS_SIGNATURE"></span><span id="mpcomponent_as_signature"></span>**MPCOMPONENT \_ COMO \_ FIRMA**
 </dt> <dd></dd> <dt>
 
-<span id="MPCOMPONENT_AV_SIGNATURE"></span><span id="mpcomponent_av_signature"></span>**\_firma de AV MPCOMPONENT \_**
+<span id="MPCOMPONENT_AV_SIGNATURE"></span><span id="mpcomponent_av_signature"></span>**MPCOMPONENT \_ AV \_ SIGNATURE**
 </dt> <dd></dd> <dt>
 
-<span id="MPCOMPONENT_REALTIME_MONITOR"></span><span id="mpcomponent_realtime_monitor"></span>**MONITOR de MPCOMPONENT en \_ tiempo real \_**
+<span id="MPCOMPONENT_REALTIME_MONITOR"></span><span id="mpcomponent_realtime_monitor"></span>**MONITOR EN TIEMPO REAL DE MPCOMPONENT \_ \_**
 </dt> <dd></dd> <dt>
 
-<span id="MPCOMPONENT_ONACCESS_PROTECTION"></span><span id="mpcomponent_onaccess_protection"></span>**protección de MPCOMPONENT de \_ acceso \_**
+<span id="MPCOMPONENT_ONACCESS_PROTECTION"></span><span id="mpcomponent_onaccess_protection"></span>**PROTECCIÓN DE MPCOMPONENT \_ \_ ONACCESS**
 </dt> <dd></dd> <dt>
 
-<span id="MPCOMPONENT_IOAV_PROTECTION"></span><span id="mpcomponent_ioav_protection"></span>**\_protección de IOAV de MPCOMPONENT \_**
+<span id="MPCOMPONENT_IOAV_PROTECTION"></span><span id="mpcomponent_ioav_protection"></span>**PROTECCIÓN DE \_ MPCOMPONENT \_ IOAV**
 </dt> <dd></dd> <dt>
 
-<span id="MPCOMPONENT_BEHAVIOR_MONITOR"></span><span id="mpcomponent_behavior_monitor"></span>**\_monitor de comportamiento de MPCOMPONENT \_**
+<span id="MPCOMPONENT_BEHAVIOR_MONITOR"></span><span id="mpcomponent_behavior_monitor"></span>**MONITOR DE COMPORTAMIENTO DE MPCOMPONENT \_ \_**
 </dt> <dd></dd> <dt>
 
-<span id="MPCOMPONENT_AUTO_SCAN"></span><span id="mpcomponent_auto_scan"></span>**\_examen automático de MPCOMPONENT \_**
+<span id="MPCOMPONENT_AUTO_SCAN"></span><span id="mpcomponent_auto_scan"></span>**MPCOMPONENT \_ AUTO \_ SCAN**
 </dt> <dd></dd> <dt>
 
-<span id="MPCOMPONENT_AUTO_SIGUPDATE"></span><span id="mpcomponent_auto_sigupdate"></span>**\_SIGUPDATE MPCOMPONENT auto \_**
+<span id="MPCOMPONENT_AUTO_SIGUPDATE"></span><span id="mpcomponent_auto_sigupdate"></span>**MPCOMPONENT \_ AUTO \_ SIGUPDATE**
 </dt> <dd></dd> <dt>
 
-<span id="MPCOMPONENT_IPC"></span><span id="mpcomponent_ipc"></span>**\_IPC MPCOMPONENT**
+<span id="MPCOMPONENT_IPC"></span><span id="mpcomponent_ipc"></span>**MPCOMPONENT \_ IPC**
 </dt> <dd></dd> <dt>
 
 <span id="MPCOMPONENT_NIS"></span><span id="mpcomponent_nis"></span>**MPCOMPONENT \_ NIS**
 </dt> <dd></dd> <dt>
 
-<span id="MPCOMPONENT_ELAM"></span><span id="mpcomponent_elam"></span>**MPCOMPONENT \_ Elam**
+<span id="MPCOMPONENT_ELAM"></span><span id="mpcomponent_elam"></span>**MPCOMPONENT \_ ELAM**
 </dt> <dd></dd> <dt>
 
 <span id="MPCOMPONENT_MAXVALUE"></span><span id="mpcomponent_maxvalue"></span>**MPCOMPONENT \_ MAXVALUE**
@@ -94,9 +94,9 @@ typedef enum tagMPCOMPONENT_ID {
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

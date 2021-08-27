@@ -1,19 +1,19 @@
 ---
-description: El tipo de datos ASN. 1 BMPString, denominado cadena Unicode \_ en la API de inscripción de certificados, se codifica en un triple TLV que comienza con un byte de etiqueta de 0x1E.
+description: El tipo de datos ASN.1 BMPString, denominado CADENA UNICODE en la API de inscripción de certificados, se codifica en un triplete TLV que comienza con un byte tag de \_ 0x1E.
 ms.assetid: 66e4a6d8-2401-4346-9361-e145735cbe19
 title: BMPString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c911218d852b792a333f015c825a7e4d1486b62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 496715d380739dd68dab4266422876ecca174b9caffd3895e9c465f446d32cf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118904844"
 ---
 # <a name="bmpstring"></a>BMPString
 
-El tipo de datos ASN. 1 **BMPString** , denominado **\_ cadena UNIcode** en la API de inscripción de certificados, se codifica en un triple TLV que comienza con un byte de **etiqueta** de 0x1E. En el ejemplo siguiente, adaptado del tema de [ASN codificado de CMC. 1](cmc-encoded-asn-1.md) , se muestra la codificación de una extensión **TemplateName** . El nombre se puede especificar mediante la interfaz [**IX509ExtensionTemplateName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) . El identificador de objeto de la extensión es 1.3.6.1.4.1.311.13.2.1.
+El tipo de datos ASN.1 **BMPString,** denominado **\_ CADENA UNICODE** en la API de inscripción de certificados, se codifica en un triplete TLV que comienza con un **byte** tag de 0x1E. En el ejemplo siguiente, adaptado del tema [ASN.1](cmc-encoded-asn-1.md) codificado para CMC, se muestra la codificación de una **extensión TemplateName.** El nombre se puede especificar mediante la [**interfaz IX509ExtensionTemplateName.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) El identificador de objeto de la extensión es 1.3.6.1.4.1.311.13.2.1.
 
 ``` syntax
 06 0a                              ; OBJECT_ID (a Bytes)
@@ -30,16 +30,16 @@ El tipo de datos ASN. 1 **BMPString** , denominado **\_ cadena UNIcode** en la A
          00 55 00 73 00 65 00 72   ;   .U.s.e.r
 ```
 
-Si la cadena contiene menos de 128 bytes, el campo de **longitud** del trío TLV requiere un solo byte para especificar la longitud del contenido. Si la cadena tiene más de 127 bytes, el bit 7 del campo de **longitud** se establece en 1 y los bits 6 a 0 especifican el número de bytes adicionales que se usan para identificar la longitud del contenido. Para obtener más información, vea [longitud codificada y bytes de valor](about-encoded-length-and-value-bytes.md).
+Si la cadena contiene menos de 128 bytes, el campo **Longitud** del triplete TLV solo requiere un byte para especificar la longitud del contenido. Si la cadena tiene más de 127  bytes, el bit 7 del campo Longitud se establece en 1 y los bits del 6 al 0 especifican el número de bytes adicionales usados para identificar la longitud del contenido. Para obtener más información, vea [Longitud codificada y Bytes de valor](about-encoded-length-and-value-bytes.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Sistema de tipos ASN. 1](about-asn-1-type-system.md)
+[Sistema de tipos ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
-[Codificación DER de tipos ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codificación DER de tipos ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> </dl>
 
  

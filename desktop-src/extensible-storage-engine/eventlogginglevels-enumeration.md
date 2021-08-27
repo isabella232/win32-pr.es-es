@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración EventLoggingLevels'
-title: Enumeración EventLoggingLevels
+description: 'Más información sobre: Enumeración EventLoggingLevels'
+title: EventLoggingLevels (enumeración)
 TOCTitle: EventLoggingLevels enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EventLoggingLevels
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.eventlogginglevels(v=EXCHG.10)
@@ -36,19 +36,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7ec0881a7d217cfdcbc3680eaa3054dbb4fb62a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d910e1417ea7c05e86f7e9d6c2a69c8c0e47c212a7956f1d309e895576d4ee96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118768038"
 ---
-# <a name="eventlogginglevels-enumeration"></a>Enumeración EventLoggingLevels
+# <a name="eventlogginglevels-enumeration"></a>EventLoggingLevels (enumeración)
 
 Opciones de EventLoggingLevel.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,8 +76,8 @@ public enum EventLoggingLevels
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Disable</td>
-<td>Deshabilitar todos los eventos.</td>
+<td>Deshabilitar</td>
+<td>Deshabilite todos los eventos.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -87,12 +87,12 @@ public enum EventLoggingLevels
 <tr class="odd">
 <td></td>
 <td>Bajo</td>
-<td>Bajo nivel de detalle y inferior.</td>
+<td>Nivel de detalle bajo e inferior.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Media</td>
-<td>Nivel de detalle medio y inferior.</td>
+<td>Nivel de detalle medio e inferior.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -108,8 +108,8 @@ public enum EventLoggingLevels
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -8,7 +8,7 @@ keywords:
 - ADSI para Exchange ADSI, buzones
 - ADSI para Exchange ADSI, buzones, creación
 - ADSI para Exchange ADSI, buzones, eliminación
-- ADSI para Exchange ADSI, buzones, establecer descriptor de seguridad en
+- ADSI para Exchange ADSI, buzones, establecer el descriptor de seguridad en
 - ADSI para Exchange ADSI, buzones, buscar servidor principal para
 - ADSI para Exchange ADSI, obtener y modificar mensajes
 - ADSI para Exchange ADSI, descriptores de seguridad
@@ -75,7 +75,7 @@ Para Exchange 2000, la información para usar ADSI con Exchange se encuentra en 
 En esta sección se pueden encontrar las siguientes tareas:
 
 -   Creación de una dirección URL de usuario
--   Creación de Active Directory rutas de acceso
+-   Creación de rutas Active Directory de acceso
 -   Enumerar Exchange 2000 servidores con ADSI
 -   Manipulación de atributos de extensión con ADSI
 -   Adición o eliminación de un objeto de administrador con ADSI
@@ -91,7 +91,7 @@ Para Exchange 5.5, la referencia adsi y la información de uso se pueden encontr
 En esta sección se pueden encontrar las siguientes tareas:
 
 -   Ver y modificar el esquema Exchange Server datos
--   Ver las propiedades sin formato de un Exchange objeto
+-   Ver las propiedades sin procesar de un Exchange objeto
 -   Creación de un buzón Exchange de correo
 -   Establecimiento del descriptor de seguridad en un buzón Exchange de seguridad
 -   Manipulación de descriptores de seguridad y SID
@@ -99,7 +99,7 @@ En esta sección se pueden encontrar las siguientes tareas:
 -   Creación de un destinatario personalizado
 -   Creación de un contenedor de destinatarios
 -   Obtención del nombre de la organización y del sitio de un servidor
--   Enumeración de Exchange versión de servidor de todos los servidores de la organización
+-   Enumeración de Exchange versión del servidor de todos los servidores de la organización
 -   Búsqueda del servidor principal de un buzón
 -   Recuperación de direcciones de correo electrónico
 -   Acceso a entradas ocultas o eliminadas

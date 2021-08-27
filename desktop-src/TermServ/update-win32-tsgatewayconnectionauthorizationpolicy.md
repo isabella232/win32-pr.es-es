@@ -1,12 +1,12 @@
 ---
-title: Método Update de la clase Win32_TSGatewayConnectionAuthorizationPolicy
-description: Actualiza la Directiva de autorización de conexión Escritorio remoto actual (RD \ 160; CAP).
+title: Método Update de la Win32_TSGatewayConnectionAuthorizationPolicy clase
+description: Actualiza la directiva de autorización Escritorio remoto conexión actual (Escritorio remoto \ 160; CAP).
 ms.assetid: 6d13d1b7-1c7d-4d22-b42c-36e0f4446e86
 ms.tgt_platform: multiple
 keywords:
-- Método Update Servicios de Escritorio remoto
-- Método Update Servicios de Escritorio remoto, clase Win32_TSGatewayConnectionAuthorizationPolicy
-- Servicios de Escritorio remoto de clase Win32_TSGatewayConnectionAuthorizationPolicy, método Update
+- Actualización del método Servicios de Escritorio remoto
+- Método Update Servicios de Escritorio remoto , Win32_TSGatewayConnectionAuthorizationPolicy clase
+- Win32_TSGatewayConnectionAuthorizationPolicy clase Servicios de Escritorio remoto método , Update
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87b982030170e954342dc5ff99754dcb89afd0e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ec7c3d1802f4faa3da8e382d00aa14fc8b3e091baef9659ad45322ec2a909c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118850890"
 ---
-# <a name="update-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método Update de la \_ clase Win32 TSGatewayConnectionAuthorizationPolicy
+# <a name="update-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método Update de la clase \_ TSGatewayConnectionAuthorizationPolicy de Win32
 
-Actualiza la Directiva de autorización de conexión Escritorio remoto actual (CAP de RD).
+Actualiza la directiva de autorización Escritorio remoto de conexión (CAP de Escritorio remoto) actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,61 +60,61 @@ uint32 Update(
 
 <dl> <dt>
 
-*Nombre* \[ de de\]
+*Nombre* \[ En\]
 </dt> <dd>
 
-Nombre de la CAP de RD. El nombre debe tener 64 caracteres o menos, único (se omite el caso) y no puede contener los siguientes caracteres reservados:
+Nombre del CAP de Escritorio remoto. El nombre debe tener 64 caracteres o menos, ser único (se omite case) y no puede contener los siguientes caracteres reservados:
 
-<> :; " / \\ \| ? \*\[Pestaña\]
+<> : ; " / \\ \| ? \*\[TAB\]
 
 </dd> <dt>
 
-*UserGroupNames* \[ de\]
+*UserGroupNames* \[ En\]
 </dt> <dd>
 
-Lista de nombres de grupos de usuarios separados por punto y coma. Los nombres tienen el formato *dominio \\ UserGroupName*. Si el usuario pertenece a uno de estos grupos de usuarios, se le permitirá el acceso al servidor de puerta de enlace de escritorio remoto.
+Lista de nombres de grupos de usuarios separados por punto y coma. Los nombres tienen el formato *Dominio \\ UserGroupName*. Si el usuario pertenece a cualquiera de estos grupos de usuarios, se le permitirá el acceso al servidor de puerta de enlace de Escritorio remoto.
 
 </dd> <dt>
 
-*ComputerGroupNames* \[ de\]
+*ComputerGroupNames* \[ En\]
 </dt> <dd>
 
-Lista de nombres de grupos de máquinas separados por punto y coma. Este valor puede estar vacío. Los nombres tienen el formato *dominio \\ ComputerGroupName*. Si se especifica un valor, el equipo cliente debe pertenecer a uno de estos grupos de equipos para que el usuario tenga acceso al servidor de puerta de enlace de escritorio remoto.
+Lista de nombres de grupos de máquinas separados por punto y coma. Este valor puede estar vacío. Los nombres tienen el formato *Domain \\ ComputerGroupName*. Si se especifica un valor, el equipo cliente debe pertenecer a uno de estos grupos de equipos para que el usuario acceda al servidor de puerta de enlace de Escritorio remoto.
 
 </dd> <dt>
 
-*Tarjeta inteligente* \[ de\]
+*Tarjeta inteligente* \[ En\]
 </dt> <dd>
 
-Especifica si las tarjetas inteligentes se pueden usar para autenticarse con el servidor de puerta de enlace de escritorio remoto.
+Especifica si se pueden usar tarjetas inteligentes para autenticarse con el servidor de puerta de enlace de Escritorio remoto.
 
 </dd> <dt>
 
-*Contraseña* \[ de de\]
+*Contraseña* \[ En\]
 </dt> <dd>
 
-Especifica si las contraseñas se pueden usar para autenticarse con el servidor de puerta de enlace de escritorio remoto.
+Especifica si se pueden usar contraseñas para autenticarse con el servidor de puerta de enlace de Escritorio remoto.
 
 </dd> <dt>
 
-*SecureId* \[ de\]
+*SecureId* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
 
 </dd> <dt>
 
-*Habilitado* \[ de\]
+*Habilitado* \[ En\]
 </dt> <dd>
 
-Especifica si esta CAP de RD está habilitada.
+Especifica si este CAP de Escritorio remoto está habilitado.
 
 </dd> <dt>
 
-*DeviceRedirectionType* \[ de\]
+*DeviceRedirectionType* \[ En\]
 </dt> <dd>
 
-Especifica los tipos de dispositivos que se redirigirán.
+Especifica qué tipos de dispositivo se redirigirán.
 
 <dt>
 
@@ -135,89 +135,89 @@ No se redirigirá ningún dispositivo.
 2
 </dt> <dd>
 
-Los dispositivos especificados no se redirigirán. Los parámetros *DiskDrivesDisabled*, *PrintersDisabled*, *SerialPortsDisabled*, *ClipboardDisabled* y *PlugAndPlayDevicesDisabled* controlan qué dispositivos no se redirigirán.
+Los dispositivos especificados no se redirigirán. Los parámetros *DiskDrivesDisabled,* *PrintersDisabled,* *SerialPortsDisabled,* *ClipboardDisabled* y *PlugAndPlayDevicesDisabled* controlan qué dispositivos no se redirigirán.
 
 </dd> </dl> </dd> <dt>
 
-*DiskDrivesDisabled* \[ de\]
+*DiskDrivesDisabled* \[ En\]
 </dt> <dd>
 
-Especifica si se va a deshabilitar la redirección de la unidad de disco si el parámetro *DeviceRedirectionType* es "2".
+Especifica si se debe deshabilitar el redireccionamiento de unidades de disco si el *parámetro DeviceRedirectionType* es "2".
 
 </dd> <dt>
 
-*PrintersDisabled* \[ de\]
+*ImpresorasDisabled* \[ En\]
 </dt> <dd>
 
-Especifica si se va a deshabilitar la redirección de impresora si el parámetro *DeviceRedirectionType* es "2".
+Especifica si se debe deshabilitar el redireccionamiento de impresora si el *parámetro DeviceRedirectionType* es "2".
 
 </dd> <dt>
 
-*SerialPortsDisabled* \[ de\]
+*SerialPortsDisabled* \[ En\]
 </dt> <dd>
 
-Especifica si se va a deshabilitar la redirección de puertos serie si el parámetro *DeviceRedirectionType* es "2".
+Especifica si se debe deshabilitar el redireccionamiento del puerto serie si el *parámetro DeviceRedirectionType* es "2".
 
 </dd> <dt>
 
-*ClipboardDisabled* \[ de\]
+*ClipboardDisabled* \[ En\]
 </dt> <dd>
 
-Especifica si se va a deshabilitar la redirección del portapapeles si el parámetro *DeviceRedirectionType* es "2".
+Especifica si se debe deshabilitar el redireccionamiento del Portapapeles si el *parámetro DeviceRedirectionType* es "2".
 
 </dd> <dt>
 
-*PlugAndPlayDevicesDisabled* \[ de\]
+*PlugAndPlayDevicesDisabled* \[ En\]
 </dt> <dd>
 
-Especifica si se va a deshabilitar la redirección de dispositivos Plug and Play si el parámetro *DeviceRedirectionType* es "2".
+Especifica si se debe deshabilitar la redirección de Plug and Play dispositivos si el *parámetro DeviceRedirectionType* es "2".
 
 </dd> <dt>
 
-*IdleTimeout* \[ de\]
+*IdleTimeout* \[ En\]
 </dt> <dd>
 
 Valor de tiempo de espera de inactividad en minutos
 
 </dd> <dt>
 
-*SessionTimeout* \[ de\]
+*SessionTimeout* \[ En\]
 </dt> <dd>
 
 Valor de tiempo de espera de sesión en minutos
 
 </dd> <dt>
 
-*SessionTimeoutAction* \[ de\]
+*SessionTimeoutAction* \[ En\]
 </dt> <dd>
 
 Acción de tiempo de espera de sesión en minutos
 
 </dd> <dt>
 
-*AllowOnlySDRServers* \[ de\]
+*AllowOnlySDRServers* \[ En\]
 </dt> <dd>
 
-Si las conexiones solo se permiten a los servidores SDR TS
+Si las conexiones solo se permiten a servidores TS de SDR
 
 </dd> <dt>
 
-*CookieAuthentication* \[ de\]
+*CookieAuthentication* \[ En\]
 </dt> <dd>
 
-Indica si se puede usar la autenticación de cookies para conectarse al servidor de puerta de enlace de TS
+Indica si se puede usar la autenticación de cookies para conectarse al servidor de puerta de enlace de TS.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -227,8 +227,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -237,7 +237,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayConnectionAuthorizationPolicy**](win32-tsgatewayconnectionauthorizationpolicy.md)
+[**\_TSGatewayConnectionAuthorizationPolicy de Win32**](win32-tsgatewayconnectionauthorizationpolicy.md)
 </dt> </dl>
 
  
