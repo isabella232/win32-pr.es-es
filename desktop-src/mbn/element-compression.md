@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7782052ef467725a099929e8940262d1f08329431f68525b8c401f36a276ebcf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc034b12a6a3375c9881a1fd3709d78be2e79a15
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118745117"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478241"
 ---
 # <a name="span-idwwan_profile_v4element_compressionspanmbnprofileextcompression-v4"></a><span id="WWAN_profile_v4.element_Compression"></span>MBNProfileExt \/ ... \/ Compresión (v4)
 
 Especifica si se usará la compresión en el vínculo de datos para la transferencia de encabezados y datos.
 
-Para obtener más información, consulte la documentación del elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
+Para obtener más información, vea la documentación del elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
@@ -61,41 +61,19 @@ Ninguno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos primarios
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento primario</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-context.md">Contexto</a></td>
-<td><p>Especifica los parámetros necesarios para establecer una conexión de datos.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento primario | Descripción | 
+|----------------|-------------|
+| <a href="element-context.md">Contexto</a> | <p>Especifica los parámetros necesarios para establecer una conexión de datos.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Espacio de nombres</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

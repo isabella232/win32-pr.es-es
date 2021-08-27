@@ -3,7 +3,7 @@ title: Elemento ApplicationMenu
 description: Representa el menú de la aplicación. | Elemento ApplicationMenu
 ms.assetid: 815e0462-ea45-44b1-81bf-f5797b22e920
 keywords:
-- Elemento ApplicationMenu de la cinta de opciones de Windows
+- Elemento ApplicationMenu Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e535fbcc09a404ad7dd5a4019438f4513f5c77c6
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 7fcf64d3fa3b618a4e66777b8fd4c0d831a33126
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443056"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626131"
 ---
 # <a name="applicationmenu-element"></a>Elemento ApplicationMenu
 
@@ -40,16 +40,16 @@ Representa el [menú de la aplicación](windowsribbon-controls-applicationmenu.m
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>

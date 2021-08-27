@@ -3,7 +3,7 @@ title: Elemento ControlSizeDefinition
 description: Representa el estilo de diseño de un grupo de controles en una plantilla personalizada.
 ms.assetid: f9b875f4-e0cf-4823-81b5-ed19c201dcbb
 keywords:
-- ControlSizeDefinition, elemento de la cinta de opciones de Windows
+- ControlSizeDefinition, elemento Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0ff5217c08b4ea6da1931b0c65501f912f2cc5dc
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 81c174a92ff502a3ebde5ae06e5703401de2c290
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443416"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622681"
 ---
 # <a name="controlsizedefinition-element"></a>Elemento ControlSizeDefinition
 
@@ -41,16 +41,16 @@ Representa el estilo de diseño de un grupo de controles en una plantilla person
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>

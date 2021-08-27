@@ -4,23 +4,23 @@ description: Atributo FitShape de VML
 ms.assetid: a6e5a198-1478-4256-a4f2-b9ae6db6d7fb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd2b05d7bc31afc52c664217ff21d14b40fd0c27
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0adbb6fd92f296156cf2f95cf2b714cfacd2f193f8e1e1b912e6637b9e8d5cd6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105676505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099255"
 ---
 # <a name="vml-fitshape-attribute"></a>Atributo FitShape de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define si el texto se ajusta al rectángulo de selección de una forma. Lectura/escritura **VgTriState**.
+Define si el texto se ajusta al rectángulo delimitador de una forma. Lectura/escritura **DvTriState**.
 
 **Se aplica a**
 
@@ -28,17 +28,17 @@ Define si el texto se ajusta al rectángulo de selección de una forma. Lectura/
 
 **Sintaxis de etiquetas**
 
-<v: *Element* fitshape = " *expresión* " >
+<v: *element* fitshape=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . fitshape = "*expresión*"
+*element* .fitshape="*expression*"
 
-*expresión* = de *elemento*. fitshape
+*expresión* = *elemento*.fitshape
 
 **Comentarios:**
 
-Si **es true**, ajusta el texto a los bordes del cuadro que define la forma completa. El valor predeterminado es **False**.
+Si **es True**, extiende el texto hasta los bordes del cuadro que define toda la forma. El valor predeterminado es **False**.
 
 *Atributo estándar de VML*
 
@@ -58,6 +58,6 @@ El texto se ajustará para ajustarse a la forma.
 
 
 
- 
+ 
 
- 
+ 

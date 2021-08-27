@@ -1,7 +1,7 @@
 ---
-description: 'El \_ método get StopTime recupera la hora a la que se detendrá la reproducción, en relación con la duración de la secuencia. Este método implementa el método IMediaPosition:: get \_ StopTime.'
+description: El método get StopTime recupera la hora a la que se detendrá la \_ reproducción, en relación con la duración de la secuencia. Este método implementa el método IMediaPosition::get \_ StopTime.
 ms.assetid: 0ca3f047-ac43-419e-a1ed-b406f89f7af7
-title: Método CPosPassThru.get_StopTime (Ctlutil. h)
+title: CPosPassThru.get_StopTime método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 227b054a9737c06e56f7311acc7e0093766608b7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea233d7e3a148088edd0f6963f45aeb0b483b41317481a95733fdc73c242027d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108305"
 ---
-# <a name="cpospassthruget_stoptime-method"></a>CPosPassThru. Get \_ StopTime (método)
+# <a name="cpospassthruget_stoptime-method"></a>Método CPosPassThru.get \_ StopTime
 
-El `get_StopTime` método recupera la hora a la que se detendrá la reproducción, en relación con la duración de la secuencia. Este método implementa el método [**IMediaPosition:: get \_ StopTime**](/windows/desktop/api/Control/nf-control-imediaposition-get_stoptime) .
+El método recupera la hora a la que se detendrá `get_StopTime` la reproducción, en relación con la duración de la secuencia. Este método implementa el [**método IMediaPosition::get \_ StopTime.**](/windows/desktop/api/Control/nf-control-imediaposition-get_stoptime)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT get_StopTime(
 *pllTime* 
 </dt> <dd>
 
-Puntero a una variable que recibe la hora de detención, en segundos.
+Puntero a una variable que recibe la hora de detenerse, en segundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor **HRESULT** del PIN conectado.
+Devuelve el **valor HRESULT** del pin conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> </dl>
 
  

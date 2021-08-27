@@ -3,38 +3,38 @@ title: DRM en vivo
 description: DRM en vivo
 ms.assetid: 0af65f28-8c47-4827-b6d6-c32d75b00f2c
 keywords:
-- Windows Media Format SDK, Live DRM
-- Administración de derechos digitales (DRM), DRM en vivo
+- Windows SDK de formato multimedia, DRM en directo
+- administración de derechos digitales (DRM), DRM en vivo
 - DRM (administración de derechos digitales), DRM en vivo
 - DRM en vivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 566b9b2e90d9c0f23dcb4ce0b2315ee2d95b1ebf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 821fdbb9f0b80d482724e469f71cc79d61916adfd61fe8c6e6cf8e70f99c37ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110285"
 ---
 # <a name="live-drm"></a>DRM en vivo
 
-A partir de Windows Media 9 series, el SDK de Windows Media Format se puede usar para escribir archivos protegidos con DRM. Esto permite escenarios como Live DRM, en los que se aplica la protección DRM a un archivo o una secuencia a medida que se está codificando, en lugar de como un paso posterior al procesamiento después de que se haya completado la codificación. DRM en vivo permite a los propietarios de contenido proteger las difusiones en directo, como eventos deportivos y de pago por vista. DRM dinámica también representa una manera simplificada o simplificada de crear archivos protegidos. Puede usar DRM dinámica para aplicar cualquier versión de la protección DRM. Un archivo protegido creado con DRM en directo es exactamente el mismo que un archivo protegido como paso de procesamiento posterior.
+A partir Windows la serie Media 9, el SDK Windows Media Format se puede usar para escribir archivos protegidos con DRM. Esto permite escenarios como DRM en vivo, en los que la protección DRM se aplica a un archivo o secuencia a medida que se codifica, en lugar de como un paso posterior al procesamiento una vez completada la codificación. DRM en directo permite a los propietarios de contenido proteger las retransmisiones en directo, como los conciertos de pago por vista o los eventos deportivos. DRM en vivo también representa una manera simplificada o simplificada de crear archivos protegidos. Puede usar DRM en vivo para aplicar cualquier versión de la protección DRM. Un archivo protegido creado con DRM en vivo es exactamente igual que un archivo protegido como un paso posterior al procesamiento.
 
-**Nota:** DRM no es compatible con la versión basada en x64 de este SDK.
+**Nota** DRM no es compatible con la versión basada en x64 de este SDK.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Características de Rights Management digital**](digital-rights-management-features.md)
+[**Características de Rights Management digitales**](digital-rights-management-features.md)
 </dt> <dt>
 
 [**Protección de archivos con DRM versión 7 o posterior**](protecting-files-with-drm-version-7-or-later.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

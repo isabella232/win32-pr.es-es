@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed4a12671877cf0d4d8abdb77d169b0f13000bc564e6c1dc37e65bf6eccdf005
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6bd45977e3d433239e74aee21def913b640fad12
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118580770"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882173"
 ---
 # <a name="closedcaptionsamistyle"></a>ClosedCaption.SAMIStyle
 
@@ -35,7 +35,7 @@ Esta propiedad es una cadena de lectura y **escritura.**
 
 ## <a name="remarks"></a>Comentarios
 
-Un archivo SAMI puede contener varias definiciones de estilo de formato. Los estilos SAMI se definen entre las <STYLE> etiquetas y </STYLE> del archivo SAMI. Un estilo se define con una cadena de texto precedida de un \# carácter. Por ejemplo:
+Un archivo SAMI puede contener varias definiciones de estilo de formato. Los estilos SAMI se definen entre &lt; style &gt; y </STYLE> etiquetas en el archivo SAMI. Un estilo se define con una cadena de texto precedida de un \# carácter. Por ejemplo:
 
 
 ```
@@ -55,7 +55,7 @@ Si no se especifica ningún estilo SAMI, el primer estilo definido en el archivo
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo JScript siguiente se crea un elemento SELECT HTML que usa *closedCaption*. **SAMIStyle para** cambiar la apariencia del texto del título cerrado. El **objeto Player** se creó con id. = "Player".
+En el JScript siguiente se crea un elemento SELECT HTML que usa *closedCaption*. **SAMIStyle para** cambiar la apariencia del texto del título cerrado. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -87,7 +87,7 @@ En el ejemplo JScript siguiente se crea un elemento SELECT HTML que usa *closedC
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

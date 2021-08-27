@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_BKLOGTIME structure'
+description: 'Más información sobre: JET_BKLOGTIME estructura'
 title: JET_BKLOGTIME estructura
 TOCTitle: JET_BKLOGTIME Structure
 ms:assetid: 31460079-7c5b-4145-837d-b112ba0117d6
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b34740d582e341cce3b2fd0b28203b7346a4de1d94a8586289be8ab252247943
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d6f8e3f77d905eb601441ad8ab3ca88bb08f59d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118487727"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478531"
 ---
 # <a name="jet_bklogtime-structure"></a>JET_BKLOGTIME estructura
 
@@ -31,7 +31,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 La **JET_BKLOGTIME** contiene los elementos de fecha y hora de un evento. Es una extensión de [JET_LOGTIME](./jet-logtime-structure.md).
 
-**Windows Vista: JET_BKLOGTIME** se presenta en Windows Vista.
+**Windows Vista: JET_BKLOGTIME** se introdujo en Windows Vista.
 
 ```cpp
     typedef struct {
@@ -62,27 +62,27 @@ La **JET_BKLOGTIME** contiene los elementos de fecha y hora de un evento. Es una
 
 **bSeconds**
 
-Hora del evento en segundos. Puede ser de 0 (cero) a 60. Se usa 0 (cero) cuando la **JET_BKLOGTIME** es "null".
+Hora del evento en segundos. Puede ser de 0 (cero) a 60. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
 
 **bMinutes**
 
-Hora del evento en minutos. Puede ser de 0 (cero) a 60. Se usa 0 (cero) cuando la **JET_BKLOGTIME** es "null".
+Hora del evento en minutos. Puede ser de 0 (cero) a 60. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
 
 **bHours**
 
-Hora del evento en horas. Puede ser de 0 (cero) a 24. Se usa 0 (cero) cuando la **JET_BKLOGTIME** es "null".
+Hora del evento en horas. Puede ser de 0 (cero) a 24. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
 
 **Cumpleaños**
 
-Día del mes del evento. Puede ser de 0 (cero) a 31. Se usa 0 (cero) cuando la **JET_BKLOGTIME** es "null".
+Día del mes del evento. Puede ser de 0 (cero) a 31. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
 
 **bMonth**
 
-Mes del año del evento. Puede ser de 0 (cero) a 12. Se usa 0 (cero) cuando la **JET_BKLOGTIME** es "null".
+Mes del año del evento. Puede ser de 0 (cero) a 12. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
 
 **bYear**
 
-Año (desplazamiento por 1900) del evento. Para lograr el año real, agregue 1900 a este valor. Se usa 0 (cero) cuando la **JET_BKLOGTIME** es "null".
+Año (desplazamiento por 1900) del evento. Para lograr el año real, agregue 1900 a este valor. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
 
 **bFiller1**
 
@@ -104,28 +104,12 @@ Este campo debe omitirse.
 
 Si este evento es una copia de seguridad, esta marca contiene uno de los siguientes valores posibles:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Nombre</p></th>
-<th><p>Valor</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>copia de seguridad de streaming</p></td>
-<td><p>0 (cero)</p></td>
-</tr>
-<tr class="even">
-<td><p>copia de seguridad de instantáneas</p></td>
-<td><p>1</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Nombre</p> | <p>Valor</p> | 
+|-------------|--------------|
+| <p>copia de seguridad de streaming</p> | <p>0 (cero)</p> | 
+| <p>copia de seguridad de instantáneas</p> | <p>1</p> | 
+
 
 
 **fReserved**
@@ -138,26 +122,9 @@ Esta estructura se usa al depurar.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requiere Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

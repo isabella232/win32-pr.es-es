@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8e9952c040540e78c76d81babbb4c7b326fe92f8
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: e1f3813be8e1ea076a401ce5cdabef3e454b98c1
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465862"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983588"
 ---
 # <a name="jet_rstmap-structure"></a>JET_RSTMAP estructura
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_rstmap-structure"></a>JET_RSTMAP estructura
 
-La **JET_RSTMAP** permite el remapping de las rutas de acceso de archivo de base de datos que se almacenan en los registros de transacciones durante la recuperación, cuando las usan las funciones [JetInit](./jetinit-function.md) y [JetExternalRestore.](./jetexternalrestore-function.md) Esto permite mover las bases de datos cuando están sin conexión o cuando se restauran desde la copia de seguridad.
+La **JET_RSTMAP** permite volver a crear rutas de acceso de archivo de base de datos que se almacenan en los registros de transacciones durante la recuperación, cuando las usan las funciones [JetInit](./jetinit-function.md) y [JetExternalRestore.](./jetexternalrestore-function.md) Esto permite mover las bases de datos cuando están sin conexión o cuando se restauran desde la copia de seguridad.
 
 ```cpp
     typedef struct {
@@ -51,7 +51,12 @@ Nueva ruta de acceso absoluta para la base de datos.
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_RSTMAP_W</strong> (Unicode) <strong>y JET_RSTMAP_A</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_RSTMAP_W</strong> (Unicode) <strong>y JET_RSTMAP_A</strong> (ANSI).</p> | 
 
 
 

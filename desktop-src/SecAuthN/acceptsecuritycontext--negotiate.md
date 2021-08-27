@@ -4,12 +4,12 @@ ms.assetid: aaec6fee-df6b-4033-8ece-73ecd1799653
 title: Función AcceptSecurityContext (Negotiate) (Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 9ac466530be0a19a6b8c88355f238a1cd491f9c2ff6d7d8dbe67b16ba20f43b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 13aa91545e5301e10a1f9d36e93e2d4995c15253
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119141638"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628697"
 ---
 # <a name="acceptsecuritycontext-negotiate-function"></a>Función AcceptSecurityContext (Negotiate)
 
@@ -48,11 +48,11 @@ Identificador de las credenciales del servidor. El servidor llama a [**la funci�
 *phContext* \[ in, out, optional\]
 </dt> <dd>
 
-Puntero a una [estructura CtxtHandle.](sspi-handles.md) En la primera llamada a **AcceptSecurityContext (Negotiate),** este puntero es **NULL.** En las llamadas posteriores, *phContext* es el identificador del contexto con formato parcial que la primera llamada devolvió en el parámetro *phNewContext.*
+Puntero a una [estructura CtxtHandle.](sspi-handles.md) En la primera llamada a **AcceptSecurityContext (Negotiate),** este puntero es **NULL.** En las llamadas posteriores, *phContext* es el identificador del contexto parcialmente formado que la primera llamada devolvió en el parámetro *phNewContext.*
 
 </dd> <dt>
 
-*pInput* \[ in, opcional\]
+*pInput* \[ en, opcional\]
 </dt> <dd>
 
 Puntero a una estructura [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) generada por una llamada de cliente a [**InitializeSecurityContext (Negotiate)**](initializesecuritycontext--negotiate.md) que contiene el descriptor del búfer de entrada.
@@ -82,9 +82,9 @@ Marcas de bits que especifican los atributos requeridos por el servidor para est
 
  
 
-Para ver las posibles marcas de atributo y sus significados, vea [Requisitos de contexto.](context-requirements.md) Las marcas usadas para este parámetro tienen como prefijo ASC \_ REQ, por ejemplo, ASC \_ REQ \_ DELEGATE.
+Para ver las posibles marcas de atributo y sus significados, vea [Requisitos de contexto.](context-requirements.md) Las marcas usadas para este parámetro tienen el prefijo ASC \_ REQ, por ejemplo, ASC \_ REQ \_ DELEGATE.
 
-Es posible que el cliente no sea compatible con los atributos solicitados. Para obtener más información, vea *el parámetro pfContextAttr.*
+Es posible que el cliente no sea compatible con los atributos solicitados. Para obtener más información, vea el *parámetro pfContextAttr.*
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Esta función devuelve uno de los valores siguientes.
 
 
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Código o valor devuelto</th><th>Descripción</th></tr></thead><tbody><tr class="odd"><td><dl> <dt><strong>SEC_E_INSUFFICIENT_MEMORY</strong></dt> <dt>0x80090300L</dt> </dl></td><td>Error en la función. No hay suficiente memoria disponible para completar la acción solicitada.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_INTERNAL_ERROR</strong></dt> <dt>0x80090304L</dt> </dl></td><td>Error en la función. Error que no se ha asignado a un código de error SSPI.<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_INVALID_HANDLE</strong></dt> <dt>0x80100003L</dt> </dl></td><td>Error en la función. El identificador pasado a la función no es válido.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_INVALID_TOKEN</strong></dt> <dt>0x80090308L</dt> </dl></td><td>Error en la función. El token pasado a la función no es válido.<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_LOGON_DENIED</strong></dt> <dt>0x8009030CL</dt> </dl></td><td>Error de inicio de sesión.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_NO_AUTHENTICATING_AUTHORITY</strong></dt> <dt>0x80090311L</dt> </dl></td><td>Error en la función. No se pudo ponerse en contacto con ninguna autoridad para la autenticación. Esto podría deberse a las condiciones siguientes:<br/><ul><li>El nombre de dominio de la entidad de autenticación es incorrecto.</li><li>El dominio no está disponible.</li><li>Error en la relación de confianza.</li></ul></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_OK</strong></dt> <dt>0x00000000L</dt> </dl></td><td>La función se ha realizado correctamente. Se [*aceptó*](../secgloss/s-gly.md) el contexto de seguridad recibido del cliente. Si la función generó un token de salida, se debe enviar al proceso de cliente.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_I_COMPLETE_AND_CONTINUE</strong></dt> <dt>0x00090314L</dt> </dl></td><td>La función se ha realizado correctamente. El servidor debe llamar a [<strong>CompleteAuthToken</strong>](/windows/win32/api/sspi/nf-sspi-completeauthtoken) y pasar el token de salida al cliente. A continuación, el servidor espera un token de devolución del cliente y, a continuación, realiza otra llamada a [<strong>AcceptSecurityContext (Negotiate)</strong>](acceptsecuritycontext--negotiate.md).<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_I_COMPLETE_NEEDED</strong></dt> <dt>0x00090313L</dt> </dl></td><td>La función se ha realizado correctamente. El servidor debe terminar de compilar el mensaje desde el cliente y, a continuación, llamar a la función [<strong>CompleteAuthToken</strong>](/windows/win32/api/sspi/nf-sspi-completeauthtoken).<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_I_CONTINUE_NEEDED</strong></dt> <dt>0x00090312L</dt> </dl></td><td>La función se ha realizado correctamente. El servidor debe enviar el token de salida al cliente y esperar un token devuelto. El token devuelto debe pasarse en <em>pInput para</em> otra llamada a [<strong>AcceptSecurityContext (Negotiate)</strong>](acceptsecuritycontext--negotiate.md).<br/></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th>Código o valor devuelto</th><th>Descripción</th></tr></thead><tbody><tr class="odd"><td><dl> <dt><strong>SEC_E_INSUFFICIENT_MEMORY</strong></dt> <dt>0x80090300L</dt> </dl></td><td>Error en la función. No hay suficiente memoria disponible para completar la acción solicitada.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_INTERNAL_ERROR</strong></dt> <dt>0x80090304L</dt> </dl></td><td>Error en la función. Error que no se ha asignado a un código de error SSPI.<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_INVALID_HANDLE</strong></dt> <dt>0x80100003L</dt> </dl></td><td>Error en la función. El identificador pasado a la función no es válido.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_INVALID_TOKEN</strong></dt> <dt>0x80090308L</dt> </dl></td><td>Error en la función. El token pasado a la función no es válido.<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_LOGON_DENIED</strong></dt> <dt>0x8009030CL</dt> </dl></td><td>Error de inicio de sesión.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_NO_AUTHENTICATING_AUTHORITY</strong></dt> <dt>0x80090311L</dt> </dl></td><td>Error en la función. No se pudo ponerse en contacto con ninguna autoridad para la autenticación. Esto podría deberse a las condiciones siguientes:<br/><ul><li>El nombre de dominio de la entidad de autenticación es incorrecto.</li><li>El dominio no está disponible.</li><li>Error en la relación de confianza.</li></ul></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_OK</strong></dt> <dt>0x00000000L</dt> </dl></td><td>La función se ha realizado correctamente. Se [*aceptó*](../secgloss/s-gly.md) el contexto de seguridad recibido del cliente. Si la función generó un token de salida, se debe enviar al proceso de cliente.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_I_COMPLETE_AND_CONTINUE</strong></dt> <dt>0x00090314L</dt> </dl></td><td>La función se ha realizado correctamente. El servidor debe llamar a [<strong>CompleteAuthToken</strong>](/windows/win32/api/sspi/nf-sspi-completeauthtoken) y pasar el token de salida al cliente. A continuación, el servidor espera un token de devolución del cliente y, a continuación, realiza otra llamada a [<strong>AcceptSecurityContext (Negotiate)</strong>](acceptsecuritycontext--negotiate.md).<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_I_COMPLETE_NEEDED</strong></dt> <dt>0x00090313L</dt> </dl></td><td>La función se ha realizado correctamente. El servidor debe terminar de compilar el mensaje desde el cliente y, a continuación, llamar a la función [<strong>CompleteAuthToken</strong>](/windows/win32/api/sspi/nf-sspi-completeauthtoken).<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_I_CONTINUE_NEEDED</strong></dt> <dt>0x00090312L</dt> </dl></td><td>La función se ha realizado correctamente. El servidor debe enviar el token de salida al cliente y esperar un token devuelto. El token devuelto debe pasarse en <em>pInput para</em> otra llamada a [<strong>AcceptSecurityContext (Negotiate)</strong>](acceptsecuritycontext--negotiate.md).<br/></td></tr></tbody></table>
 
 
 
@@ -146,24 +146,24 @@ Esta función devuelve uno de los valores siguientes.
 
 La **función AcceptSecurityContext (Negotiate)** es el homólogo del servidor de [**la función InitializeSecurityContext (Negotiate).**](initializesecuritycontext--negotiate.md)
 
-Cuando el servidor recibe una solicitud de un cliente, el servidor usa el parámetro *fContextReq* para especificar lo que requiere de la sesión. De este modo, un servidor puede especificar que los [](../secgloss/i-gly.md)clientes deben ser capaces de usar una sesión confidencial o comprobada por integridad, y puede rechazar los clientes que no pueden satisfacer esa demanda. Como alternativa, un servidor no puede requerir nada y lo que el cliente pueda proporcionar o requiera se devuelve en el *parámetro pfContextAttr.*
+Cuando el servidor recibe una solicitud de un cliente, el servidor usa el parámetro *fContextReq* para especificar lo que requiere de la sesión. De este modo, un servidor puede especificar que los [](../secgloss/i-gly.md)clientes deben ser capaces de usar una sesión confidencial o comprobada por integridad, y puede rechazar clientes que no puedan satisfacer esa demanda. Como alternativa, un servidor no puede requerir nada y lo que el cliente pueda proporcionar o requiera se devuelve en el *parámetro pfContextAttr.*
 
 Para un paquete que admite la autenticación de varios pasos, como la autenticación mutua, la secuencia de llamada es la siguiente:
 
 1.  El cliente transmite un token al servidor.
-2.  El servidor llama **a AcceptSecurityContext (Negotiate)** la primera vez, lo que genera un token de respuesta que luego se envía al cliente.
+2.  El servidor llama **a AcceptSecurityContext (Negotiate)** la primera vez, lo que genera un token de respuesta que se envía al cliente.
 3.  El cliente recibe el token y lo pasa a [**InitializeSecurityContext (Negotiate).**](initializesecuritycontext--negotiate.md) Si **InitializeSecurityContext (Negotiate)** devuelve SEC E OK, se ha completado la autenticación mutua y se puede iniciar \_ una sesión \_ segura. Si **InitializeSecurityContext (Negotiate)** devuelve un código de error, finaliza la negociación de autenticación mutua. De lo contrario, el token de seguridad devuelto por **InitializeSecurityContext (Negotiate)** se envía al cliente y se repiten los pasos 2 y 3.
 
-Los *parámetros fContextReq* *y pfContextAttr* son máscaras de bits que representan varios atributos de contexto. Para obtener una descripción de los distintos atributos, vea [Requisitos de contexto.](context-requirements.md)
+Los *parámetros fContextReq* y *pfContextAttr* son máscaras de bits que representan varios atributos de contexto. Para obtener una descripción de los distintos atributos, vea [Requisitos de contexto.](context-requirements.md)
 
 > [!Note]  
-> El *parámetro pfContextAttr* es válido en cualquier devolución correcta, pero solo en la devolución correcta final debe examinar las marcas relativas a los aspectos de seguridad del contexto. Los resultados intermedios pueden establecer, por ejemplo, la marca \_ ISC RET \_ ALLOCATED \_ MEMORY.
+> El *parámetro pfContextAttr es* válido en cualquier devolución correcta, pero solo en la devolución correcta final debe examinar las marcas relativas a los aspectos de seguridad del contexto. Los resultados intermedios pueden establecer, por ejemplo, la marca \_ ISC RET \_ ALLOCATED \_ MEMORY.
 
  
 
-El autor de la llamada es responsable de determinar si los atributos de contexto finales son suficientes. Si, por ejemplo, se solicitó la confidencialidad (cifrado), pero no se pudo establecer, algunas aplicaciones pueden optar por apagar la conexión inmediatamente. Si no [*se puede establecer*](../secgloss/s-gly.md) el contexto de seguridad, el servidor debe liberar el contexto creado parcialmente llamando a la función [**DeleteSecurityContext.**](/windows/win32/api/sspi/nf-sspi-deletesecuritycontext) Para obtener información sobre cuándo llamar a **la función DeleteSecurityContext,** **vea DeleteSecurityContext**.
+El autor de la llamada es responsable de determinar si los atributos de contexto final son suficientes. Si, por ejemplo, se solicitó confidencialidad (cifrado), pero no se pudo establecer, algunas aplicaciones pueden optar por apagar la conexión inmediatamente. Si no [*se puede establecer el*](../secgloss/s-gly.md) contexto de seguridad, el servidor debe liberar el contexto creado parcialmente llamando a la función [**DeleteSecurityContext.**](/windows/win32/api/sspi/nf-sspi-deletesecuritycontext) Para obtener información sobre cuándo llamar a **la función DeleteSecurityContext,** vea **DeleteSecurityContext**.
 
-Una vez [*establecido el contexto*](../secgloss/s-gly.md) de seguridad, la aplicación de servidor puede usar la función [**QuerySecurityContextToken**](/windows/win32/api/sspi/nf-sspi-querysecuritycontexttoken) para recuperar un identificador de la cuenta de usuario a la que se asignó el certificado de cliente. Además, el servidor puede usar la [**función ImpersonateSecurityContext**](/windows/win32/api/sspi/nf-sspi-impersonatesecuritycontext) para suplantar al usuario.
+Una vez [*establecido el contexto*](../secgloss/s-gly.md) de seguridad, la aplicación de servidor puede usar la función [**QuerySecurityContextToken**](/windows/win32/api/sspi/nf-sspi-querysecuritycontexttoken) para recuperar un identificador de la cuenta de usuario a la que se ha asignado el certificado de cliente. Además, el servidor puede usar la [**función ImpersonateSecurityContext**](/windows/win32/api/sspi/nf-sspi-impersonatesecuritycontext) para suplantar al usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -171,9 +171,9 @@ Una vez [*establecido el contexto*](../secgloss/s-gly.md) de seguridad, la aplic
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                            |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                   |
-| Header<br/>                   | <dl> <dt>Sspi.h (incluir Security.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sspi.h (incluir Security.h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Secur32.lib</dt> </dl>                 |
 | Archivo DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |
 

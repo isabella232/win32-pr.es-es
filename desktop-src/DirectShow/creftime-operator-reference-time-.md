@@ -1,7 +1,7 @@
 ---
-description: El operador de tiempo de referencia \_ () convierte el objeto en un \_ tipo de datos de hora de referencia.
+description: El operador REFERENCE \_ TIME() convierte el objeto a un tipo de datos REFERENCE \_ TIME.
 ms.assetid: 36f51e03-a458-46e6-9657-977b263c127f
-title: Método CRefTime. Operator REFERENCE_TIME (Reftime. h)
+title: Método REFERENCE_TIME CRefTime.operator (Reftime.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a3ceeeb00ba1de4f305f87ef3fe15e70a8d91457
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a084d4e142f57b724343ac5a353461b41aac0be216b8e3851bc8b7e40000a1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108035"
 ---
-# <a name="creftimeoperator-reference_time-method"></a>Método CRefTime. Operator REFERENCE \_ Time
+# <a name="creftimeoperator-reference_time-method"></a>Método REFERENCE TIME de CRefTime.operator \_
 
-El `REFERENCE_TIME()` operador convierte el objeto en un tipo de datos de [**\_ hora de referencia**](reference-time.md) .
+El `REFERENCE_TIME()` operador convierte el objeto a un tipo de datos REFERENCE [**\_ TIME.**](reference-time.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,9 +42,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor de [**CRefTime:: m \_ hora**](creftime-m-time.md).
+Devuelve el valor de [**CRefTime::m \_ time**](creftime-m-time.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 En el ejemplo siguiente se muestra cómo usar este operador de conversión:
 
@@ -62,8 +62,8 @@ REFERENCE_TIME rt = (REFERENCE_TIME)cRT;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Reftime. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Reftime.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

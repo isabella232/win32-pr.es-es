@@ -4,12 +4,12 @@ description: Un cuadro de diálogo es una ventana secundaria que permite a los u
 ms.assetid: 2ded9f30-d45f-4027-a85d-4e7d0e412793
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: b0e0deb28a706436e4d33ece35a40c26bd7499e0
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: dbcf7887a90c7407224bbfbb0c9b316ccb426f76
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444856"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880020"
 ---
 # <a name="dialog-boxes-design-basics"></a>Cuadros de diálogo (conceptos básicos de diseño)
 
@@ -22,45 +22,45 @@ Un cuadro de diálogo es una ventana secundaria que permite a los usuarios reali
 
 Un cuadro de diálogo típico.
 
-Los cuadros de diálogo constan de una barra de título (para identificar el comando, la característica o el programa de donde provenía un cuadro de diálogo), una instrucción principal opcional (para explicar el objetivo del usuario con el cuadro de diálogo), varios controles en el área de contenido (para presentar opciones) y botones de confirmación (para indicar cómo el usuario quiere confirmar en la tarea).
+Los cuadros de diálogo constan de una barra de título (para identificar el comando, la característica o el programa de donde provenía un cuadro de diálogo), una instrucción principal opcional (para explicar el objetivo del usuario con el cuadro de diálogo), varios controles en el área de contenido (para presentar opciones) y botones de confirmación (para indicar cómo quiere confirmar el usuario en la tarea).
 
 Los cuadros de diálogo tienen dos tipos fundamentales:
 
 -   **Los cuadros de diálogo modales** requieren que los usuarios se completen y cierren antes de continuar con la ventana de propietario. Estos cuadros de diálogo se usan mejor para tareas críticas o poco frecuentes y únicas que requieren finalización antes de continuar.
--   **Los cuadros de diálogo no modelo** permiten a los usuarios cambiar entre el cuadro de diálogo y la ventana de propietario según sea necesario. Estos cuadros de diálogo se usan mejor para tareas frecuentes, repetitivas y en marcha.
+-   **Los cuadros de diálogo de modelado** permiten a los usuarios cambiar entre el cuadro de diálogo y la ventana de propietario según sea necesario. Estos cuadros de diálogo se usan mejor para tareas frecuentes, repetitivas y en marcha.
 
 **Un cuadro de diálogo de tarea es un cuadro de diálogo implementado mediante la interfaz de programación de aplicaciones (API) del cuadro de diálogo de tareas.** Constan de las siguientes partes, que se pueden ensamblar en una variedad de combinaciones:
 
 -   Barra **de título para** identificar la aplicación o la característica del sistema de la que provenía el cuadro de diálogo.
 -   Instrucción **principal**, con un icono opcional, para identificar el objetivo del usuario con el cuadro de diálogo.
--   Área **de contenido para** información y controles descriptivos.
--   Un **área de comandos** para los botones de confirmación, incluido un botón Cancelar, y opciones opcionales Más y No mostrar esto <item> controles de nuevo.
--   Un **área de nota al** pie para obtener explicaciones y ayuda adicionales opcionales, destinada normalmente a usuarios con menos experiencia.
+-   Un **área de contenido** para información y controles descriptivos.
+-   Un **área de comandos** para los botones de confirmación, incluido un botón Cancelar, y las opciones opcionales Más y No volver a mostrar este &lt; &gt; elemento.
+-   Un **área de nota al** pie para obtener explicaciones y ayuda adicionales opcionales, dirigida normalmente a usuarios menos experimentados.
 
 ![captura de pantalla de un cuadro de diálogo de tarea típico ](images/win-dialog-box-image2.png)
 
 Cuadro de diálogo de tarea típico.
 
-**Los diálogos de tareas se recomiendan siempre que sea necesario, ya que son fáciles de crear y logran una apariencia coherente.** Los cuadros de diálogo de tareas requieren Windows Vista o posterior, por lo que no son adecuados para versiones anteriores de Microsoft Windows.
+**Los diálogos de tareas se recomiendan siempre que corresponda, ya que son fáciles de crear y logran una apariencia coherente.** Los diálogos de tareas requieren Windows Vista o posterior, por lo que no son adecuados para versiones anteriores de Microsoft Windows.
 
-Un panel de tareas es como un cuadro de diálogo, salvo que se presenta dentro de un panel de ventana en lugar de una ventana independiente. Como resultado, los paneles de tareas tienen una sensación más directa y contextual que los cuadros de diálogo. Aunque técnicamente no son iguales, los paneles de tareas son tan similares a los cuadros de diálogo que sus directrices se **presentan en este artículo**.
+Un panel de tareas es como un cuadro de diálogo, salvo que se presenta dentro de un panel de ventana en lugar de en una ventana independiente. Como resultado, los paneles de tareas tienen una sensación más directa y contextual que los cuadros de diálogo. Aunque técnicamente no son iguales, los paneles de tareas son tan similares a los cuadros de diálogo que sus directrices **se presentan en este artículo.**
 
 ![captura de pantalla de un panel de tareas típico ](images/win-dialog-box-image3.png)
 
-Panel de tareas típico.
+Un panel de tareas típico.
 
-[Las ventanas de](win-property-win.md) propiedades son un tipo especializado de cuadro de diálogo que se usa para ver y cambiar las propiedades de un objeto, una colección de objetos o un programa. Además, las ventanas de propiedades normalmente admiten varias tareas, mientras que los cuadros de diálogo normalmente admiten una sola tarea o paso en una tarea. Dado que su uso es especializado, **las ventanas de propiedades se tratan en un conjunto diferente de instrucciones**.
+[Las ventanas de](win-property-win.md) propiedades son un tipo especializado de cuadro de diálogo que se usa para ver y cambiar las propiedades de un objeto, una colección de objetos o un programa. Además, las ventanas de propiedades normalmente admiten varias tareas, mientras que los cuadros de diálogo normalmente admiten una sola tarea o paso a paso en una tarea. Dado que su uso es especializado, **las ventanas de propiedades se tratan en un conjunto diferente de instrucciones**.
 
-Los cuadros de diálogo pueden [tener pestañas](ctrl-tabs.md)y, si es así, se denominan cuadros de diálogo con pestañas. Las ventanas de propiedades están determinadas por su presentación de propiedades, no por el uso de pestañas.
+Los cuadros de diálogo pueden tener [pestañas](ctrl-tabs.md)y, si es así, se denominan cuadros de diálogo con pestañas. Las ventanas de propiedades están determinadas por su presentación de propiedades, no por el uso de pestañas.
 
-**Nota:** Las instrucciones relacionadas con el [diseño,](vis-layout.md) [la](win-window-mgt.md)administración de ventanas, los cuadros [](mess-warn.md) de diálogo [comunes,](win-property-win.md)las ventanas de propiedades, los [asistentes,](win-wizards.md)las confirmaciones, los mensajes de [error](mess-error.md)y los mensajes de advertencia se presentan en [artículos](mess-confirm.md)independientes.
+**Nota:** Las directrices relacionadas con [el](vis-layout.md)diseño, la administración de ventanas, los [](mess-warn.md) cuadros de diálogo [comunes,](win-property-win.md)las ventanas de propiedades , los [](win-window-mgt.md) [asistentes,](win-wizards.md)las confirmaciones, los mensajes de [error](mess-error.md)y los mensajes de advertencia se presentan en [artículos](mess-confirm.md)independientes.
 
 ## <a name="is-this-the-right-user-interface"></a>¿Es la interfaz de usuario adecuada?
 
 Para decidirte, intenta responder a estas preguntas:
 
--   **¿El propósito es proporcionar a los usuarios información, hacer una pregunta a los usuarios o permitir que los usuarios seleccionen opciones para realizar un comando o una tarea?** Si no es así, use otra interfaz de usuario (UI).
--   **¿El propósito es ver y cambiar las propiedades de un objeto, una colección de objetos o un programa?** Si es así, use una ventana [de propiedades o una](win-property-win.md) barra de [herramientas](cmd-toolbars.md) en su lugar.
+-   **¿El propósito es proporcionar a los usuarios información, hacer una pregunta a los usuarios o permitir que seleccionen opciones para realizar un comando o una tarea?** Si no es así, use otra interfaz de usuario (UI).
+-   **¿El propósito es ver y cambiar las propiedades de un objeto, una colección de objetos o un programa?** Si es así, use en su [lugar una ventana de propiedades o](win-property-win.md) una barra de [herramientas.](cmd-toolbars.md)
 -   **¿El propósito es presentar una colección de comandos o herramientas?** Si es así, use una barra de herramientas o una [ventana de paleta](glossary.md).
 -   **¿El propósito es comprobar que el usuario desea continuar con una acción?** ¿Hay una razón clara para no continuar y una posibilidad razonable de que a veces los usuarios no lo haga? Si es así, use una [confirmación](mess-confirm.md).
 -   **¿El propósito es proporcionar un mensaje de error o advertencia?** Si es así, use un [mensaje de error o](mess-error.md) un mensaje de [advertencia](mess-warn.md).
@@ -75,40 +75,40 @@ Para decidirte, intenta responder a estas preguntas:
     -   Elegir un color
     -   Buscar un archivo, una carpeta, un equipo o una impresora
     -   Busque usuarios, equipos o grupos en Microsoft Active Directory
-    -   ¿Solicitar un nombre de usuario y una contraseña?
+    -   ¿Solicita un nombre de usuario y una contraseña?
 
 Si es así, use en su lugar el [cuadro de diálogo común](win-common-dlg.md) adecuado. Muchos de estos diálogos comunes son extensibles.
 
--   **¿El propósito es realizar una tarea de varios pasos que requiere más de una ventana?** Si es así, use un flujo [de tareas o](glossary.md) un asistente en [su](win-wizards.md) lugar.
+-   **¿El propósito es realizar una tarea de varios pasos que requiere más de una ventana?** Si es así, use un [flujo de tareas o](glossary.md) un asistente en [su](win-wizards.md) lugar.
 -   **¿El propósito es informar a los usuarios de un evento del sistema o programa que no está relacionado con la actividad del usuario actual, que no requiere una acción inmediata del usuario y que los usuarios pueden omitir libremente?** Si es así, use una [notificación en](mess-notif.md) su lugar.
 -   **¿El propósito es mostrar el estado del programa?** Si es así, use una [barra de estado](ctrl-status-bars.md) en su lugar.
--   **¿Sería preferible usar la interfaz de usuario local?** Los cuadros de diálogo pueden interrumpir el flujo del usuario exigiendo atención. A veces, esa interrupción en el flujo se justifica, por ejemplo, cuando el usuario debe realizar una acción que está fuera del contexto actual. En otros casos, un enfoque mejor consiste en presentar la interfaz de usuario en contexto, ya sea directamente con la interfaz de usuario local (como un panel de tareas) o a petición mediante la divulgación [progresiva](ctrl-progressive-disclosure-controls.md).
--   **¿El propósito es mostrar un problema de entrada de usuario no crítico o una condición especial?** Si es así, use un [globo en](ctrl-balloons.md) su lugar.
--   **Para los flujos de tareas, ¿sería preferible usar otra página?** Por lo general, quiere que una tarea fluya de página a página dentro de una sola ventana. Use cuadros de diálogo para confirmar los comandos locales, para obtener la entrada de los comandos locales y para realizar tareas secundarias independientes que mejor se realicen de forma independiente y fuera del flujo de tareas principal.
+-   **¿Sería preferible usar la interfaz de usuario local?** Los cuadros de diálogo pueden interrumpir el flujo del usuario exigiendo atención. A veces, ese salto de flujo se justifica, por ejemplo, cuando el usuario debe realizar una acción que está fuera del contexto actual. En otros casos, un enfoque mejor consiste en presentar la interfaz de usuario en contexto, ya sea directamente con la interfaz de usuario local (como un panel de tareas) o a petición mediante la divulgación [progresiva](ctrl-progressive-disclosure-controls.md).
+-   **¿El propósito es mostrar un problema de entrada de usuario no crítico o una condición especial?** Si es así, use un [globo en su](ctrl-balloons.md) lugar.
+-   **En el caso de los flujos de tareas, ¿sería preferible usar otra página?** Por lo general, quiere que una tarea fluya de una página a otra dentro de una sola ventana. Use cuadros de diálogo para confirmar los comandos locales, para obtener la entrada de los comandos locales y para realizar tareas secundarias independientes que mejor se realicen de forma independiente y fuera del flujo de tareas principal.
 -   **Para seleccionar opciones, ¿es probable que los usuarios cambien las opciones?** Si no es así, considere alternativas, como:
     -   Usar las opciones predeterminadas sin preguntar, pero permitir que los usuarios realicen cambios más adelante.
-    -   Proporcionar una versión con opciones (por ejemplo, **Imprimir...** en un menú) así como una versión sin opciones (por ejemplo, **Imprimir** en la barra de herramientas). Por lo general, los comandos de la barra de herramientas deben ser inmediatos y evitar mostrar cuadros de diálogo.
+    -   Proporcionar una versión con opciones (por ejemplo, **Imprimir...** en un menú) así como una versión sin opciones (por ejemplo, **Imprimir en** la barra de herramientas). Por lo general, los comandos de la barra de herramientas deben ser inmediatos y evitar mostrar cuadros de diálogo.
 -   **Para seleccionar opciones, ¿hay una manera más sencilla y directa de presentar las opciones?** Si es así, considere alternativas, como:
     -   Usar un [botón de división](ctrl-command-buttons.md) para seleccionar variaciones de un comando.
-    -   Usar un submenú para comandos, casillas, botones de radio y listas simples.
+    -   Uso de un submenú para comandos, casillas, botones de radio y listas simples.
 
 ![Captura de pantalla que muestra un menú y un submenú.](images/win-dialog-box-image4.png)
 
-![captura de pantalla de un menú y submenú ](images/win-dialog-box-image5.png)
+![captura de pantalla de un menú y un submenú ](images/win-dialog-box-image5.png)
 
 En estos ejemplos, se usan submenús en lugar de cuadros de diálogo para selecciones simples.
 
 ## <a name="design-concepts"></a>Conceptos de diseño
 
-Cuando se usan correctamente, los cuadros de diálogo son una excelente manera de proporcionar potencia y flexibilidad al programa. Cuando se usa incorrectamente, los cuadros de diálogo son una manera fácil de enojosar a los usuarios, interrumpir su flujo y hacer que el programa se sienta indirecto y tedioso de usar. **Los cuadros de diálogo modales exigen la atención de los usuarios.** Los cuadros de diálogo suelen ser más fáciles de implementar que las UI alternativas, por lo que tienden a usarse en exceso.
+Cuando se usan correctamente, los cuadros de diálogo son una excelente manera de proporcionar potencia y flexibilidad al programa. Cuando se hace un uso incorrecto, los cuadros de diálogo son una manera fácil de enocir a los usuarios, interrumpir su flujo y hacer que el programa se sienta indirecto y tedioso de usar. **Los cuadros de diálogo modales exigen la atención de los usuarios.** Los cuadros de diálogo suelen ser más fáciles de implementar que las UI alternativas, por lo que tienden a usarse en exceso.
 
-**Un cuadro de diálogo es más eficaz cuando sus características de diseño coinciden con su uso.** El diseño de un cuadro de diálogo viene determinado en gran medida por su propósito (ofrecer opciones, realizar preguntas, proporcionar información o comentarios), el tipo (modal o modeless) y la interacción del usuario (necesaria, respuesta opcional o confirmación), mientras que su uso se determina en gran medida por su contexto (iniciado por el usuario o programa), la probabilidad de acción del usuario y la frecuencia de presentación.
+**Un cuadro de diálogo es más eficaz cuando sus características de diseño coinciden con su uso.** El diseño de un cuadro de diálogo viene determinado en gran medida por su propósito (ofrecer opciones, realizar preguntas, proporcionar información o comentarios), tipo (modal o modelado) e interacción del usuario (obligatorio, respuesta opcional o confirmación), mientras que su uso se determina en gran medida por su contexto (iniciado por el usuario o programa), la probabilidad de acción del usuario y la frecuencia de presentación.
 
-Para diseñar cuadros de diálogo efectivos, use los siguientes elementos de forma eficaz:
+Para diseñar cuadros de diálogo eficaces, use los siguientes elementos de forma eficaz:
 
 -   Texto del cuadro de diálogo
 -   Instrucciones principales
--   No mostrar esto <item> opción again
+-   No volver a mostrar este &lt; elemento &gt;
 
 **Si solo hace una cosa...**
 
@@ -118,7 +118,7 @@ Asegúrese de que el diseño del cuadro de diálogo (determinado por su propósi
 
 Los cuadros de diálogo tienen varios patrones de uso:
 
--   Los diálogos de pregunta (mediante botones) preguntan a los usuarios una sola pregunta o para confirmar un comando, y usan respuestas sencillas en botones de comandos organizados horizontalmente.
+-   Los diálogos de preguntas (mediante botones) preguntan a los usuarios una sola pregunta o para confirmar un comando, y usan respuestas sencillas en botones de comandos organizados horizontalmente.
 -   Los diálogos de preguntas (mediante vínculos de comandos) preguntan a los usuarios una sola pregunta o seleccionan una tarea que realizar y usan respuestas detalladas en vínculos de comandos organizados verticalmente.
 -   Los cuadros de diálogo de opción presentan a los usuarios un conjunto de opciones, normalmente para especificar un comando más por completo. A diferencia de los diálogos de preguntas, los diálogos de elección pueden hacer varias preguntas.
 -   Los diálogos de progreso presentan a los usuarios comentarios sobre el progreso durante una operación larga (más de cinco segundos), junto con un comando para cancelar o detener la operación.
@@ -145,8 +145,8 @@ Los cuadros de diálogo tienen varios patrones de uso:
 ### <a name="modal-dialog-boxes"></a>Cuadros de diálogo modales
 
 -   **Se usa para tareas críticas o poco frecuentes y únicas que requieren finalización antes de continuar.**
--   Use un [modelo de confirmación retrasada](glossary.md) para que los cambios no se atentan hasta que se confirmen explícitamente.
--   **Implemente mediante un cuadro de diálogo de tarea siempre que sea necesario para lograr una apariencia coherente.** Los cuadros de diálogo de tareas requieren Windows Vista o posterior, por lo que no son adecuados para versiones anteriores de Windows.
+-   Use un [modelo de confirmación retrasada](glossary.md) para que los cambios no sumen efecto hasta que se confirmen explícitamente.
+-   **Implemente mediante un cuadro de diálogo de tarea siempre que sea necesario para lograr una apariencia coherente.** Los diálogos de tareas requieren Windows Vista o posterior, por lo que no son adecuados para versiones anteriores de Windows.
 
 ### <a name="modeless-dialog-boxes"></a>Cuadros de diálogo de modeless
 
@@ -157,7 +157,7 @@ Los cuadros de diálogo tienen varios patrones de uso:
 
 ![captura de pantalla de un cuadro de diálogo acoplable y no modelo ](images/win-dialog-box-image7.png)
 
-Algunos cuadros de diálogo modelados que se usan Microsoft Office son acoplables.
+Algunos cuadros de diálogo no modelo que se usan Microsoft Office son acoplables.
 
 ### <a name="multiple-dialog-boxes"></a>Varios cuadros de diálogo
 
@@ -177,20 +177,20 @@ La página de entrada es opcional porque es posible que la tarea se haya iniciad
 
 ![captura de pantalla del mensaje "no se encontraron problemas" ](images/win-dialog-box-image9.png)
 
-En este ejemplo, Diagnósticos de red de Windows consta de páginas de progreso y resultados.
+En este ejemplo, Windows diagnóstico de red consta de páginas de progreso y resultados.
 
 -   **No use un cuadro de diálogo de varias páginas si la página de entrada es un diálogo estándar.** En este caso, la coherencia del uso de un diálogo estándar es más importante.
 -   **No use los botones Siguiente o Atrás y no tenga más de tres páginas.** Los cuadros de diálogo de varias páginas son para tareas de un solo paso con comentarios. No son [asistentes, que](win-wizards.md)se usan para tareas de varios pasos. Los asistentes tienen una gran sensación indirecta en comparación con los cuadros de diálogo de varias páginas.
 -   **En la página de entrada, use botones de comando específicos o vínculos de comando para iniciar la tarea.**
 -   **Use un botón Cancelar en las páginas de entrada y progreso y un botón Cerrar en la página de resultados.**
 
-**Desarrolladores:** Puede crear diálogos de tareas de varias páginas mediante el [mensaje TDM \_ NAVIGATE \_ PAGE.](../controls/tdm-navigate-page.md)
+**Desarrolladores:** Puede crear diálogos de tareas de varias páginas mediante el [mensaje DE LA PÁGINA DE NAVEGACIÓN \_ \_ de TDM.](../controls/tdm-navigate-page.md)
 
 ### <a name="presentation"></a>Presentación
 
 Para facilitar la búsqueda y el acceso a los cuadros de diálogo, asocie claramente el diálogo a su origen y trabaje bien con varios monitores:
 
--   **Inicialmente, se muestran los cuadros de diálogo "centrados" en la parte superior de la ventana de propietario.** Para su posterior visualización, considere la posibilidad de mostrarla en su última ubicación (en relación con la ventana de propietario) si es probable que sea más conveniente.
+-   **Inicialmente, se muestran los cuadros de diálogo "centrados" en la parte superior de la ventana del propietario.** Para su posterior visualización, considere la posibilidad de mostrarla en su última ubicación (en relación con la ventana de propietario) si es probable que sea más conveniente.
 
 ![diagrama del cuadro de diálogo centrado en la ventana detrás de él ](images/win-dialog-box-image10.png)
 
@@ -205,14 +205,14 @@ Las propiedades de un objeto se muestran cerca del objeto .
 -   **En el caso de los diálogos de modeless, se muestra inicialmente en la parte superior de la ventana del propietario para que sea fácil de encontrar.** Si el usuario activa la ventana de propietario, puede ocultar el cuadro de diálogo de modeless.
 -   **Si es necesario, ajuste la ubicación inicial para que todo el cuadro de diálogo esté visible dentro del monitor de destino.** Si una ventana de tamaño ajustable es mayor que el monitor de destino, reduzca para ajustarla.
 -   **Cuando se vuelva a mostrar un cuadro de diálogo, considere la posibilidad de mostrarlo en el mismo estado que el último al que se ha accedido.** Al cerrar, guarde el monitor usado, el tamaño de la ventana, la ubicación y el estado (maximizado frente a restauración). Al volver a mostrar, restaure el tamaño, la ubicación y el estado del cuadro de diálogo guardado mediante el monitor adecuado. Además, considere la posibilidad de hacer que estos atributos se conserven en todas las instancias del programa por usuario.
--   **Para ventanas de tamaño ajustable, establezca un tamaño mínimo de ventana si hay un tamaño por debajo del cual el contenido ya no se puede utilizar.** Considere la posibilidad de modificar la presentación para que el contenido se pueda usar en tamaños más pequeños.
+-   **En el caso de las ventanas de tamaño ajustable, establezca un tamaño mínimo de ventana si hay un tamaño por debajo del cual el contenido ya no se puede utilizar.** Considere la posibilidad de modificar la presentación para que el contenido se pueda usar en tamaños más pequeños.
 
 ![captura de pantalla de los botones del reproductor multimedia centrado ](images/win-dialog-box-image12.png)
 
 En este ejemplo, Reproductor de Windows Media cambia su formato cuando la ventana se vuelve demasiado pequeña para el formato estándar.
 
 -   **No use el atributo Always On Top.**
-    -   **Excepción:** Se usa solo cuando un cuadro de diálogo implementa una operación esencialmente modal, pero debe suspenderse brevemente para acceder a la ventana de propietario. Por ejemplo, al revisar la ortografía de un documento, los usuarios pueden salir ocasionalmente del cuadro de diálogo de revisión ortográfica y acceder al documento para corregir errores.
+    -   **Excepción:** Use solo cuando un cuadro de diálogo implemente una operación esencialmente modal, pero debe suspenderse brevemente para acceder a la ventana de propietario. Por ejemplo, al revisar la ortografía de un documento, los usuarios pueden salir ocasionalmente del cuadro de diálogo de revisión ortográfica y acceder al documento para corregir errores.
 
 Para obtener más información y ejemplos, vea [Administración de ventanas.](win-window-mgt.md)
 
@@ -221,21 +221,21 @@ Para obtener más información y ejemplos, vea [Administración de ventanas.](wi
 -   **Los cuadros de diálogo no tienen iconos de barra de título.** Los iconos de la barra de título se usan como una distinción visual entre [las ventanas principales y](glossary.md) las [secundarias.](glossary.md)
     -   **Excepción:** Si se usa un cuadro de diálogo para implementar una ventana principal (como una utilidad) y, por tanto, aparece en la barra de tareas, tiene un icono de barra de título. En este caso, optimice el título para mostrarlo en la barra de tareas colocando primero la información distintiva de forma concisa.
 -   **Los cuadros de diálogo siempre tienen un botón Cerrar.** Los diálogos de modeless también pueden tener un botón Minimizar. Los cuadros de diálogo que se pueden cambiar de tamaño pueden tener un botón Maximizar.
--   **No deshabilite el botón Cerrar.** Tener un botón Cerrar ayuda a los usuarios a mantener el control, ya que les permite cerrar las ventanas que no desean.
+-   **No deshabilite el botón Cerrar.** Tener un botón Cerrar ayuda a los usuarios a mantener el control al permitirles cerrar las ventanas que no quieren.
     -   **Excepción:** Para los diálogos de progreso, puede deshabilitar el botón Cerrar si la tarea debe ejecutarse hasta completarse para lograr un estado válido o evitar la pérdida de datos.
 -   **El botón Cerrar de la barra de título debe tener el mismo** efecto que el botón Cancelar o Cerrar del cuadro de diálogo. No le dé nunca el mismo efecto que Aceptar.
--   Si el título y el icono de la barra de título ya se muestran de forma destacada cerca de la parte superior de la ventana, puede ocultar el título y el icono de la barra de título para evitar redundancia. Sin embargo, todavía tiene que establecer un título adecuado internamente para su uso por Parte de Windows.
+-   Si el título y el icono de la barra de título ya se muestran de forma destacada cerca de la parte superior de la ventana, puede ocultar el título y el icono de la barra de título para evitar redundancia. Sin embargo, todavía tiene que establecer un título adecuado internamente para que lo use Windows.
 
 ### <a name="interaction"></a>Interacción
 
 -   **Cuando se muestra, los cuadros de diálogo iniciados por el usuario siempre deben tener el foco de entrada.** Los cuadros de diálogo iniciados por el programa no deben tener el foco de entrada porque el usuario puede estar interactuando con otra ventana. Esta interacción mal dirigida en el cuadro de diálogo puede tener consecuencias no deseadas.
--   **Asigne el foco de entrada inicial al control** con el que es más probable que los usuarios interactúen con el primero, que suele ser (pero no siempre) el primer control interactivo. Evite asignar el foco de entrada inicial a un vínculo de Ayuda.
+-   **Asigne el foco de entrada inicial al control en** el que es más probable que los usuarios interactúen con el primero, que suele ser (pero no siempre) el primer control interactivo. Evite asignar el foco de entrada inicial a un vínculo de Ayuda.
 -   **Para la navegación con el teclado, el orden de tabulación debe fluir en un orden lógico, generalmente de izquierda a derecha, de arriba abajo.** Normalmente, el orden de tabulación sigue el orden de lectura, pero considere la posibilidad de realizar estas excepciones:
 
     -   Coloque los controles más usados anteriormente en orden de tabulación.
     -   Coloque los vínculos de Ayuda en la parte inferior de un cuadro de diálogo, después de los botones de confirmación en orden de tabulación.
 
-    Al asignar el pedido, suponga que los usuarios muestran cuadros de diálogo para su propósito previsto; Por lo tanto, por ejemplo, los usuarios muestran cuadros de diálogo de elección para tomar decisiones, no para revisar y hacer clic en Cancelar.
+    Al asignar el pedido, suponga que los usuarios muestran cuadros de diálogo para su propósito previsto; por ejemplo, los usuarios muestran cuadros de diálogo de elección para tomar decisiones, no para revisar y hacer clic en Cancelar.
 
 -   **Al presionar la tecla Esc siempre se cierra un cuadro de diálogo activo.** Esto es así para los cuadros de diálogo con Cancelar o Cerrar, e incluso si se ha cambiado el nombre de Cancelar a Cerrar porque los resultados ya no se pueden deshacer.
 
@@ -248,19 +248,19 @@ Para obtener más información y ejemplos, vea [Administración de ventanas.](wi
 
         En este ejemplo, el botón de confirmación positiva tiene asignada una clave de acceso.
 
-    -   **Etiquetas de grupo.** Normalmente, a los controles individuales de un grupo se les asignan claves de acceso, por lo que la etiqueta de grupo no necesita ninguna. Sin embargo, si hay escasez de claves de acceso, asigne una clave de acceso a la etiqueta de grupo y no a los controles individuales.
+    -   **Etiquetas de grupo.** Normalmente, a los controles individuales dentro de un grupo se les asignan claves de acceso, por lo que la etiqueta de grupo no necesita una. Sin embargo, si hay escasez de claves de acceso, asigne una clave de acceso a la etiqueta de grupo y no a los controles individuales.
     -   **Botones genéricos de Ayuda,** a los que se accede con F1.
-    -   **Vincular etiquetas.** A menudo hay demasiados vínculos para asignar claves de acceso únicas y los caracteres de subrayado que se usan a menudo para indicar vínculos ocultan los caracteres de subrayado de la clave de acceso. En su lugar, acceda a los vínculos con la tecla Tab.
+    -   **Etiquetas de vínculo.** A menudo hay demasiados vínculos para asignar claves de acceso únicas y los caracteres de subrayado que se usan a menudo para indicar vínculos ocultan los caracteres de subrayado de la clave de acceso. En su lugar, acceda a los vínculos con la tecla Tab.
     -   **Nombres de tabulación.** Las pestañas se ciclon mediante Ctrl+Tab y Ctrl+Mayús+Tab.
-    -   **Botones de exploración etiquetados como "...".** Estos botones Examinar no se pueden asignar de forma única a las claves de acceso.
+    -   **Botones examinar etiquetados como "...".** Estos botones Examinar no se pueden asignar de forma exclusiva a las claves de acceso.
     -   **Controles sin etiquetar, como** controles de giro, botones de comandos gráficos y controles de divulgación progresiva sin etiquetar.
     -   **Texto estático sin etiqueta o etiquetas para controles que no son interactivos,** como barras de progreso.
 
--   **Siempre que sea posible, asigne claves de acceso para los** comandos usados habitualmente según las asignaciones de claves de acceso estándar . Aunque las asignaciones de claves de acceso coherentes no siempre son posibles, ciertamente se prefieren especialmente para los cuadros de diálogo usados con frecuencia.
+-   **Siempre que sea posible, asigne claves de acceso para los** comandos usados habitualmente según las asignaciones de claves de acceso estándar . Aunque las asignaciones de claves de acceso coherentes no siempre son posibles, ciertamente se prefieren especialmente para los cuadros de diálogo que se usan con frecuencia.
 -   **Asigne primero las claves de acceso del botón de confirmación para asegurarse de que tienen las asignaciones de claves estándar.** Si no hay una asignación de clave estándar, use la primera letra de la primera palabra. Por ejemplo, la clave de acceso para los botones de confirmación Sí y No siempre debe ser "Y" y "N", independientemente de los demás controles del cuadro de diálogo.
 -   Para facilitar la búsqueda de claves de acceso, asigne las claves de acceso a un carácter que aparezca al principio de la **etiqueta,** idealmente el primer carácter, incluso si hay una palabra clave que aparece más adelante en la etiqueta.
--   **Prefiere caracteres con anchos anchos anchos,** como w, m y letras mayúsculas.
--   **Prefiere una consonante distintiva o una voto,** como "x" en Salir.
+-   **Prefiere caracteres con ancho ancho ancho,** como w, m y letras mayúsculas.
+-   **Prefiere un consonante distintivo o una voz,** como "x" en Exit.
 -   **Evite usar caracteres que hagan que el subrayado** sea difícil de ver, como (de más problemático a menos problemático):
     -   Letras que solo tienen un píxel de ancho, como i y l.
     -   Letras con descendientes, como g, j, p, q e y.
@@ -272,17 +272,17 @@ Para obtener más instrucciones y ejemplos, vea [Teclado](inter-keyboard.md).
 
 En el caso de las tareas de ejecución larga, suponga que los usuarios harán otra **cosa mientras la tarea está completando**. Diseñe la tarea para que se ejecute desatendida.
 
--   **Presente a los usuarios el cuadro de** diálogo de comentarios de progreso si una operación tarda más de cinco segundos en completarse, junto con un comando para cancelar o detener la operación.
-    -   **Excepción:** Para los asistentes y flujos de tareas, use un cuadro de diálogo modal para el progreso solo si la tarea permanece en la misma página (en lugar de avanzar a otra página) y los usuarios no pueden hacer nada mientras esperan. De lo contrario, use una página de progreso o un progreso local.
--   Si la operación es una tarea de ejecución larga (más de 30 segundos) y se puede realizar en segundo plano, use un cuadro de diálogo de progreso de modelado para que los usuarios puedan seguir usando el programa mientras esperan.
+-   **Presente a los usuarios el cuadro** de diálogo de comentarios de progreso si una operación tarda más de cinco segundos en completarse, junto con un comando para cancelar o detener la operación.
+    -   **Excepción:** Para los asistentes y flujos de tareas, use un cuadro de diálogo modal para el progreso solo si la tarea permanece en la misma página (en lugar de avanzar a otra página) y los usuarios no pueden hacer nada mientras esperan. De lo contrario, use una página de progreso o un progreso en su lugar.
+-   Si la operación es una tarea de ejecución larga (más de 30 segundos) y se puede realizar en segundo plano, use un cuadro de diálogo de progreso no modelo para que los usuarios puedan seguir usando el programa mientras esperan.
 -   Cuadros de diálogo de progreso de modeless:
-    -   Tiene un botón Minimizar en la barra de título.
+    -   Tenga un botón Minimizar en la barra de título.
     -   Se muestran en la barra de tareas.
--   Implemente diálogos de progreso de modeless para que sigan en ejecución incluso si se cierra la ventana de propietario.
+-   Implemente cuadros de diálogo de progreso de modeless para que sigan en ejecución incluso si la ventana de propietario está cerrada.
 
-![captura de pantalla del cuadro de diálogo copiar con barra de progreso ](images/win-dialog-box-image14.png)
+![captura de pantalla del cuadro de diálogo copiar con la barra de progreso ](images/win-dialog-box-image14.png)
 
-En este ejemplo, la copia de archivos continúa incluso si se cierra la ventana de propietario.
+En este ejemplo, la copia de archivos continúa incluso si la ventana de propietario está cerrada.
 
 -   **Proporcione un botón de comando para detener la operación si tarda más de unos segundos en completarse o tiene la posibilidad de que nunca se complete.** Etiquete el botón Cancelar si la cancelación devuelve el entorno a su estado anterior (sin efectos secundarios); De lo contrario, etiquete el botón Detener para indicar que deja intacta la operación parcialmente completada. Puede cambiar la etiqueta del botón de Cancelar a Detener en medio de la operación, si en algún momento no es posible devolver el entorno a su estado anterior.
 
@@ -292,20 +292,20 @@ En este ejemplo, detener el diagnóstico del problema no tiene ningún efecto se
 
 -   **Proporcione un botón de comando para pausar la operación si tarda más de varios minutos en completarse y afecta a la capacidad de los usuarios de realizar el trabajo.** Esto no obliga al usuario a elegir entre completar la tarea y realizar su trabajo.
 -   **Recopila toda la información que pueda antes de iniciar la tarea.**
--   **Si se detectan problemas recuperables, haga que los usuarios ata con todos los problemas encontrados al final de la tarea.** Si esto no es práctico, haga que los usuarios se des frente a problemas a medida que se suceden.
+-   **Si se detectan problemas recuperables, haga que los usuarios se a ocupar de todos los problemas encontrados al final de la tarea.** Si esto no es práctico, haga que los usuarios se atendrán a los problemas a medida que se suceden.
 -   **No abandone las tareas como resultado de errores recuperables.**
 
 ![captura de pantalla del cuadro de diálogo con el botón Intentarlo de nuevo ](images/win-dialog-box-image16.png)
 
-En este ejemplo, Explorador de Windows permite a los usuarios continuar con la tarea después de un error recuperable.
+En este ejemplo, Windows Explorer permite a los usuarios continuar con la tarea después de un error recuperable.
 
--   **Indique los problemas si la barra de progreso se muestra en rojo.**
+-   **Para indicar problemas, se ha girado la barra de progreso en rojo.**
 
-![captura de pantalla de la barra de progreso e intentarlo de nuevo ](images/win-dialog-box-image17.png)
+![captura de pantalla de la barra de progreso e inténtelo de nuevo ](images/win-dialog-box-image17.png)
 
 En este ejemplo, se quitó un disco extraíble durante una copia de archivos.
 
--   **Si los resultados son claramente evidentes para los usuarios, cierre automáticamente el cuadro de diálogo de progreso al finalizar correctamente.** De lo contrario, use comentarios solo para notificar problemas:
+-   **Si los resultados son claramente evidentes para los usuarios, cierre el cuadro de diálogo de progreso automáticamente al finalizar correctamente.** De lo contrario, use los comentarios solo para notificar problemas:
     -   Para mostrar comentarios simples, muestre los comentarios en el cuadro de diálogo de progreso y cambie el botón Cancelar a Cerrar.
     -   Para mostrar comentarios detallados, cierre el cuadro de diálogo progreso y muestre un cuadro de diálogo informativo.
 
@@ -313,7 +313,7 @@ En este ejemplo, se quitó un disco extraíble durante una copia de archivos.
 
 **Tiempo restante**
 
--   **Use los siguientes formatos de hora.** Comience con el primero de los siguientes formatos, donde la unidad de tiempo más grande no es cero y, después, cambie al siguiente formato una vez que la unidad de tiempo más grande se convierta en cero.
+-   **Use los siguientes formatos de hora.** Comience con el primero de los siguientes formatos, donde la unidad de tiempo más grande no es cero y, a continuación, cambie al siguiente formato una vez que la unidad de tiempo más grande se convierta en cero.
 
 **Para las barras de progreso:**
 
@@ -333,7 +333,7 @@ m mins, s secs restantes
 
 s segundos restantes
 
-**De lo contrario:**
+**Lo contrario:**
 
 h hours, m minutes remaining
 
@@ -413,7 +413,7 @@ En este ejemplo, se usa incorrectamente un icono de advertencia para una pregunt
 
 ![captura de pantalla del cuadro de diálogo favoritos con icono de estrella ](images/win-dialog-box-image20.png)
 
-En este ejemplo, el icono de estrella amarilla representa Favoritos. El icono es fácilmente reconocible y se usa de forma coherente en Windows para representar Favoritos.
+En este ejemplo, el icono de estrella amarilla representa Favoritos. El icono es fácilmente reconocible y se usa de forma coherente en Windows para representar favoritos.
 
 -   **Use iconos para ayudar a los usuarios a reconocer el objeto en cuestión.**
 
@@ -429,7 +429,7 @@ En este ejemplo, estos iconos ayudan a los usuarios a visualizar el efecto de su
 
 -   **Use un icono en los cuadros de diálogo About Box para la personal de marca de la aplicación.**
 
-![captura de pantalla del cuadro de diálogo Acerca de con el logotipo de Windows ](images/win-dialog-box-image23.png)
+![captura de pantalla del cuadro de diálogo acerca de con el logotipo de Windows ](images/win-dialog-box-image23.png)
 
 En este ejemplo, se usa un mapa de bits en about box para identificar y marcar la aplicación.
 
@@ -457,42 +457,9 @@ Para obtener más información y ejemplos, vea [Iconos](vis-icons.md).
 
 -   **Elija los botones de confirmación según el patrón de diseño:**
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td><strong>Patrón</strong><br/></td>
-    <td><strong>Botones de confirmación</strong><br/></td>
-    </tr>
-    <tr class="even">
-    <td><strong>Diálogos de pregunta (mediante botones)</strong><br/></td>
-    <td>Uno de los siguientes conjuntos de comandos concisos: Yes/No, Yes/No/Cancel, [Do it]/Cancel, [Do it]/[Don't do it], [Do it]/[Don't do it]/Cancel.<br/></td>
-    </tr>
-    <tr class="odd">
-    <td><strong>Diálogos de pregunta (mediante vínculos)</strong><br/></td>
-    <td>Cancel (Cancelar)<br/></td>
-    </tr>
-    <tr class="even">
-    <td><strong>Cuadros de diálogo de elección</strong><br/></td>
-    <td><ul>
-    <li>Diálogos modales: Aceptar/Cancelar o [Hacerlo]/Cancelar</li>
-    <li>Diálogos de modeless: Botón Cerrar en el cuadro de diálogo y la barra de título</li>
-    <li>Panel de tareas: botón Cerrar de la barra de título</li>
-    </ul></td>
-    </tr>
-    <tr class="odd">
-    <td><strong>Cuadros de diálogo de progreso</strong><br/></td>
-    <td>Use Cancelar si devuelve el entorno a su estado anterior (sin ningún efecto secundario); De lo contrario, use Detener.<br/></td>
-    </tr>
-    <tr class="even">
-    <td><strong>Cuadros de diálogo informativos</strong><br/></td>
-    <td>Casi.<br/></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| | | <strong>Patrón</strong><br /> | <strong>Botones de confirmación</strong><br /> | | <strong>Diálogos de pregunta (mediante botones)</strong><br /> | Uno de los siguientes conjuntos de comandos concisos: Yes/No, Yes/No/Cancel, [Do it]/Cancel, [Do it]/[Don't do it], [Do it]/[Don't do it]/Cancel.<br /> | | <strong>Diálogos de pregunta (mediante vínculos)</strong><br /> | Cancelar.<br /> | | <strong>Cuadros de diálogo de elección</strong><br /> | <ul><li>Diálogos modales: Aceptar/Cancelar o [Hacerlo]/Cancelar</li><li>Diálogos de modeless: Botón Cerrar en el cuadro de diálogo y la barra de título</li><li>Panel de tareas: botón Cerrar de la barra de título</li></ul> | | <strong>Cuadros de diálogo de progreso</strong><br /> | Use Cancelar si devuelve el entorno a su estado anterior (sin ningún efecto secundario); De lo contrario, use Detener.<br /> | | <strong>Cuadros de diálogo informativos</strong><br /> | Cerca.<br /> | 
+
 
     
 
@@ -508,7 +475,7 @@ Para obtener más información y ejemplos, vea [Iconos](vis-icons.md).
     Para obtener más instrucciones y ejemplos, vea [Confirmaciones](mess-confirm.md).
 
 -   **No deshabilite los botones de confirmación. Excepciones:**
-    -   **Si los usuarios deben elevar para realizar un cambio, deshabilite los botones de confirmación positiva hasta que el usuario realice un cambio.** Si lo hace, impide que los usuarios eleven solo para cerrar una ventana, forzándolos a hacer clic en Cancelar.
+    -   **Si los usuarios deben elevar para realizar un cambio, deshabilite los botones de confirmación positiva hasta que el usuario realice un cambio.** Si lo hace, impide que los usuarios eleve solo para cerrar una ventana forzándolos a hacer clic en Cancelar.
     -   Para obtener más excepciones, vea Deshabilitar o quitar controles frente a [dar mensajes de error.](#disabling-or-removing-controls-vs-giving-error-messages)
 -   **Alinear a la derecha los botones de confirmación en una sola fila en** la parte inferior del cuadro de diálogo, pero encima del área de nota al pie. Haga esto incluso si hay un solo botón de confirmación (por ejemplo, Aceptar).
 
@@ -520,7 +487,7 @@ Para obtener más información y ejemplos, vea [Iconos](vis-icons.md).
 
 -   **Presente los botones de confirmación en el orden siguiente:**
     1.  Ok/ \[ Do it \] /Yes
-    2.  \[No lo haga \] /No
+    2.  \[Don't do it \] /No
     3.  Cancelar
     4.  Aplicar (si está presente)
     5.  Ayuda (si está presente)
@@ -547,9 +514,9 @@ Para obtener más información y ejemplos, vea [Iconos](vis-icons.md).
 
     ![captura de pantalla del mensaje y botón desinstalar de todos modos ](images/win-dialog-box-image27.png)
 
-    En este ejemplo, "de todos modos" se agrega a la etiqueta del botón de confirmación para indicar que los usuarios deben continuar con cuidado.
+    En este ejemplo, se agrega "de todos modos" a la etiqueta del botón de confirmación para indicar que los usuarios deben continuar con cuidado.
 
--   **Use Cancelar o Cerrar para botones de confirmación negativos en lugar de respuestas específicas a la instrucción principal.** A menudo, los usuarios se dan cuenta de que no quieren realizar una tarea una vez que ven un cuadro de diálogo. Si Cancel o Close se vuelven a etiquetar para respuestas específicas, los usuarios tendrían que leer cuidadosamente todos los botones de confirmación para determinar cómo cancelar. **Al etiquetar Cancel y Close de forma coherente, resulta fácil encontrarlos. Excepciones:**
+-   **Use Cancelar o Cerrar para botones de confirmación negativos en lugar de respuestas específicas a la instrucción principal.** A menudo, los usuarios se dan cuenta de que no quieren realizar una tarea una vez que ven un cuadro de diálogo. Si Cancel o Close se vuelven a etiquetar para respuestas específicas, los usuarios tendrían que leer cuidadosamente todos los botones de confirmación para determinar cómo cancelar. **El etiquetado de Cancel y Close de forma coherente facilita su desenlaz. Excepciones:**
     -   **No use Sí/Cancelar.** Use siempre Sí/No como par.
     -   **Use una respuesta específica cuando Cancelar sea ambiguo.**
 -   **No asigne etiquetas genéricas a su significado específico con texto en el área de contenido.** En su lugar, use etiquetas de botón de confirmación específicas o un cuadro de diálogo de pregunta mediante vínculos si las etiquetas son largas.
@@ -607,20 +574,20 @@ Para obtener más información y ejemplos, vea [Iconos](vis-icons.md).
 
     En este ejemplo, se debe usar Close en lugar de Aceptar.
 
--   **No use los botones Aceptar en los cuadros de diálogo de modeless.** En su lugar, los diálogos no modelo deben usar botones de confirmación específicos de la tarea (por ejemplo, Buscar). Sin embargo, algunos cuadros de diálogo no modelo solo requieren un botón Cerrar.
+-   **No use los botones Aceptar en los cuadros de diálogo de modeless.** En su lugar, los cuadros de diálogo no modelo deben usar botones de confirmación específicos de la tarea (por ejemplo, Buscar). Sin embargo, algunos cuadros de diálogo no modelo solo requieren un botón Cerrar.
 
 **Botones cancelar**
 
 -   **Hacer clic en Cancelar significa abandonar todos los cambios, cancelar la tarea, cerrar la ventana y devolver el entorno a su estado anterior, sin ningún efecto secundario.** En el caso de los cuadros de diálogo de elección anidados, al hacer clic en Cancelar en el cuadro de diálogo de elección de propietario, también se abandonan los cambios realizados por los diálogos de elección de propiedad.
 -   **Proporcione un botón Cancelar para permitir que los usuarios abandonen explícitamente los cambios.** Los cuadros de diálogo necesitan un punto de salida sin borrar. No dependa de que los usuarios encuentran el botón Cerrar en la barra de título.
 
-    -   **Excepción:** No proporcione un botón Cancelar para cuadros de diálogo sin configuración. Los botones Aceptar y Cerrar tienen el mismo efecto que Cancelar en este caso.
+    -   **Excepción:** No proporcione un botón Cancelar para cuadros de diálogo sin configuración. En este caso, los botones Aceptar y Cerrar tienen el mismo efecto que Cancelar.
 
     **Incorrecto:**
 
     ![captura de pantalla del mensaje solo con el botón Aceptar ](images/win-dialog-box-image35.png)
 
-    En este ejemplo, tener solo un botón Cerrar en la barra de título hace que parezca que los usuarios no tienen otra opción.
+    En este ejemplo, tener solo un botón Cerrar en la barra de título hace que parezca que los usuarios no tienen ninguna opción.
 
 -   **No use los botones Cancelar para responder a preguntas.**
 
@@ -630,52 +597,52 @@ Para obtener más información y ejemplos, vea [Iconos](vis-icons.md).
 
     En este ejemplo, OK y Cancel se usan incorrectamente para responder a una pregunta Sí o No.
 
--   **No asigne claves de acceso a Cancel, porque Esc es la clave de acceso.** Esto facilita la asignación de las demás claves de acceso.
+-   **No asigne claves de acceso a Cancel, porque Esc es la clave de acceso.** Esto facilita la asignación de las otras claves de acceso.
 -   **No use los botones Cancelar en los cuadros de diálogo de modeless.** En su lugar, use Cerrar en su lugar.
--   **No deshabilite el botón Cancelar.** Los usuarios siempre deben poder cancelar los cuadros de diálogo.
-    -   **Excepción:** Puede deshabilitar el botón Cancelar en un cuadro de diálogo de progreso si hay un período durante el cual no se puede cancelar la operación. Sin embargo, una mejor solución es diseñar estas operaciones para que siempre se puedan cancelar.
+-   **No deshabilite el botón Cancelar.** Los usuarios siempre deben poder cancelar cuadros de diálogo.
+    -   **Excepción:** Puede deshabilitar el botón Cancelar en un cuadro de diálogo de progreso si hay un período durante el cual no se puede cancelar la operación. Sin embargo, una solución mejor es diseñar estas operaciones para que siempre se puedan cancelar.
 
 **Botones cerrar**
 
--   **Use los botones Cerrar para los cuadros de diálogo no modales, así como los diálogos modales que no se pueden cancelar.**
--   **Al hacer clic en Cerrar, se cierra la ventana del cuadro de diálogo y se dejan los efectos secundarios existentes.** No use Listo, porque no es una construcción imperativa. En el caso de los cuadros de diálogo de elección anidados, al hacer clic en Cerrar en el cuadro de diálogo de elección de propietario, se conservan los cambios realizados por los diálogos de elección de propiedad.
+-   **Use los botones Cerrar para los cuadros de diálogo de modelado, así como los diálogos modales que no se pueden cancelar.**
+-   **Al hacer clic en Cerrar, se cierra la ventana del cuadro de diálogo y se dejan los efectos secundarios existentes.** No use Listo, porque no es una construcción imperativa. En el caso de los cuadros de diálogo de opción anidada, al hacer clic en Cerrar en el cuadro de diálogo de elección de propietario, se conservan los cambios realizados por los diálogos de elección de propiedad.
 -   **Coloque un botón Cerrar explícito en el cuerpo del cuadro de diálogo.** Los cuadros de diálogo necesitan un punto de salida sin borrar. No dependa de que los usuarios encuentran el botón Cerrar en la barra de título.
 -   **Asegúrese de que el botón Cerrar de la barra de título tiene el mismo efecto que Cancelar o Cerrar.**
--   **No asigne claves de acceso a Close, porque Esc es la clave de acceso.** Esto facilita la asignación de las demás claves de acceso.
+-   **No asigne claves de acceso a Close, porque Esc es la clave de acceso.** Esto facilita la asignación de las otras claves de acceso.
 
 **Aplicar botones**
 
--   **No use los botones Aplicar en cuadros de diálogo que no sean hojas de propiedades ni paneles de control.** El botón Aplicar significa aplicar los cambios pendientes, pero dejar la ventana abierta. Esto permite a los usuarios evaluar los cambios antes de cerrar la ventana. Sin embargo, solo la hoja de propiedades y los paneles de control tienen esta necesidad.
+-   **No use Aplicar botones en cuadros de diálogo que no sean hojas de propiedades ni paneles de control.** El botón Aplicar significa aplicar los cambios pendientes, pero dejar abierta la ventana. Esto permite a los usuarios evaluar los cambios antes de cerrar la ventana. Sin embargo, solo la hoja de propiedades y los paneles de control tienen esta necesidad.
 
     **Incorrecto:**
 
     ![captura de pantalla del cuadro de diálogo con el botón Aplicar ](images/win-dialog-box-image37.png)
 
-    En este ejemplo, un cuadro de diálogo de opción tiene un botón Aplicar.
+    En este ejemplo, un cuadro de diálogo de elección tiene un botón Aplicar.
 
 **Botones de confirmación para cuadros de diálogo indirectos**
 
-**Nota:** Los cuadros de diálogo indirectos se muestran fuera de contexto, ya sea como resultado indirecto de una tarea o como resultado de un problema con un sistema o proceso en segundo plano. Para los diálogos indirectos, el botón Cancelar es ambiguo porque podría significar cancelar el diálogo o cancelar toda la tarea.
+**Nota:** Los cuadros de diálogo indirectos se muestran fuera de contexto, ya sea como resultado indirecto de una tarea o como resultado de un problema con un sistema o un proceso en segundo plano. Para los diálogos indirectos, el botón Cancelar es ambiguo porque podría significar cancelar el diálogo o cancelar toda la tarea.
 
--   **Si los usuarios necesitan cancelar el cuadro de diálogo y la tarea, dé botones de confirmación para realizar ambas tareas.** Etiquete el botón que cancela el cuadro de diálogo con una respuesta negativa a la instrucción principal. Etiquete el botón que cancela toda la tarea con Cancelar. El uso de Cancelar permite usar el cuadro de diálogo en muchos contextos.
+-   **Si los usuarios necesitan cancelar tanto el cuadro de diálogo como la tarea, dé botones de confirmación para hacer ambos.** Etiquete el botón que cancela el cuadro de diálogo con una respuesta negativa a la instrucción principal. Etiquete el botón que cancela toda la tarea con Cancelar. El uso de Cancelar permite que el cuadro de diálogo se use en muchos contextos.
 
     **Correcto:**
 
     ![captura de pantalla del cuadro de diálogo con guardar o no guardar ](images/win-dialog-box-image38.png)
 
-    En este ejemplo, Windows Paint muestra este cuadro de diálogo como resultado de un comando New o Exit cuando el gráfico no se ha guardado. No guardar cierra el cuadro de diálogo sin guardar, mientras que Cancelar cancela el comando New o Exit.
+    En este ejemplo, este cuadro de diálogo se muestra mediante Windows Paint como resultado de un comando New o Exit cuando el gráfico no se ha guardado. No guardar cierra el cuadro de diálogo sin guardar, mientras que Cancelar cancela el comando New o Exit.
 
     **Incorrecto:**
 
-    ![captura de pantalla del cuadro de diálogo con botones Sí/No ](images/win-dialog-box-image39.png)
+    ![captura de pantalla del cuadro de diálogo con botones sí/no ](images/win-dialog-box-image39.png)
 
-    En este ejemplo, no hay ninguna manera de cancelar la tarea (cerrar la barra de accesos directos de Office) que condujo a mostrar este cuadro de diálogo. Este cuadro de diálogo necesita un botón Cancelar.
+    En este ejemplo, no hay ninguna manera de cancelar la tarea (cerrar Office barra de métodos abreviados) que condujo a mostrar este cuadro de diálogo. Este cuadro de diálogo necesita un botón Cancelar.
 
--   **Si los usuarios solo** necesitan cancelar el cuadro de diálogo, pero no la tarea, use un botón con una respuesta específica negativa a la instrucción principal y no tenga un botón Cancelar.
+-   **Si los usuarios solo** necesitan cancelar el cuadro de diálogo, pero no la tarea, use un botón con una respuesta negativa específica a la instrucción principal y no tenga un botón Cancelar.
 
-    ![captura de pantalla del cuadro de diálogo con run/don't run ](images/win-dialog-box-image24.png)
+    ![captura de pantalla del cuadro de diálogo con ejecución o no ejecución ](images/win-dialog-box-image24.png)
 
-    En este ejemplo, este cuadro de diálogo se muestra indirectamente como resultado de navegar a una página web que instala un control ActiveX. El uso de Cancelar sería ambiguo aquí, por lo que no se usa No ejecutar en su lugar.
+    En este ejemplo, este cuadro de diálogo se muestra indirectamente como resultado de navegar a una página web que instala un control ActiveX datos. El uso de Cancelar sería ambiguo aquí, por lo que no ejecutar se usa en su lugar.
 
 Para obtener más información y ejemplos, vea [Botones de comando](ctrl-command-buttons.md).
 
@@ -683,15 +650,15 @@ Para obtener más información y ejemplos, vea [Botones de comando](ctrl-command
 
 -   **Presente un conjunto de comandos largos mediante vínculos de comandos, en lugar de botones de comando o una combinación de botones de radio y un botón Aceptar.** Esto permite a los usuarios responder con un solo clic. Sin embargo, este enfoque solo funciona para una sola pregunta.
 -   **Presente primero los vínculos de comandos más usados.** El orden resultante debe seguir aproximadamente la probabilidad de uso, pero también tener un flujo lógico.
-    -   **Excepción:** Los vínculos de comandos que hacen que todo se haga primero deben colocarse en primer lugar.
--   Si un vínculo de comando requiere una explicación adicional, **proporcione una explicación complementaria.** Las explicaciones adicionales describen por qué es posible que los usuarios quieran elegir el comando o qué ocurre si se elige el comando.
--   **No use explicaciones complementarias que sean instrucciones de texto del vínculo de comando.** Use una explicación complementaria solo cuando no pueda hacer que un vínculo de comando se explique por sí mismo. Proporcionar una explicación complementaria para un vínculo de comando no significa que tenga que proporcionarlos para todos los comandos.
+    -   **Excepción:** Primero se deben colocar los vínculos de comandos que hacen todo lo posible.
+-   Si un vínculo de comando requiere una explicación adicional, **proporcione una explicación complementaria.** Las explicaciones complementarias describen por qué es posible que los usuarios quieran elegir el comando o qué ocurre si se elige el comando.
+-   **No use explicaciones complementarias que sean instrucciones de texto del vínculo de comando.** Use una explicación complementaria solo cuando no pueda hacer que un vínculo de comando se explique por sí mismo. Proporcionar una explicación complementaria de un vínculo de comando no significa que tenga que proporcionarlos para todos los comandos.
 
 ![captura de pantalla del cuadro de diálogo con opciones de notación de texto ](images/win-dialog-box-image40.png)
 
 En este ejemplo, la explicación complementaria describe las implicaciones de una de las opciones.
 
--   **Use frases que empiecen por un verbo, sin finalizar la puntuación.**
+-   **Use frases que comiencen con un verbo, sin terminar los signos de puntuación.**
 -   **Si se recomienda encarecidamente un comando, considere la posibilidad de agregar "(recommended)" a la etiqueta.** Asegúrese de agregar a la etiqueta de vínculo, no a la explicación complementaria.
 -   **Si un comando está pensado solo para usuarios avanzados, considere la posibilidad de agregar "(advanced)" a la etiqueta.** Asegúrese de agregar a la etiqueta de vínculo, no a la explicación complementaria.
 -   **Proporcione siempre un botón Cancelar explícito.** No use un vínculo de comando para este propósito.
@@ -704,30 +671,30 @@ En este ejemplo, el cuadro de diálogo usa un vínculo de comando en lugar de un
 
 Para obtener más información y ejemplos, vea [Vínculos de comandos](ctrl-command-links.md).
 
-### <a name="dont-show-this-item-again"></a>No mostrar esto <item> Otra vez
+### <a name="dont-show-this-ltitemgt-again"></a>No volver a mostrar este &lt; &gt; elemento
 
--   **Considere la posibilidad de usar una opción No volver a mostrar esta opción para permitir a los usuarios suprimir un cuadro de diálogo periódico, solo si no <item> hay una alternativa mejor.** Es mejor mostrar siempre el cuadro de diálogo si los usuarios realmente lo necesitan, o simplemente eliminarlo si no lo necesitan.
--   **Use esta expresión específica para reemplazar <item> por el elemento específico.** Por ejemplo, no vuelva a mostrar este recordatorio. Al hacer referencia a un cuadro de diálogo en general, use No volver a mostrar este mensaje.
--   **Indique claramente cuándo se usará** la entrada del usuario para los valores predeterminados futuros agregando la siguiente frase bajo la opción : Las selecciones se usarán de forma predeterminada en el futuro.
--   **No seleccione la opción de forma predeterminada. Si el cuadro de diálogo debe mostrarse solo una vez, debe hacerlo sin preguntar.** No use esta opción como medida para fastidiar a los usuarios, asegúrese de que el comportamiento predeterminado no sea molesto.
+-   **Considere la posibilidad de usar una opción No volver a mostrar este elemento para permitir a los usuarios suprimir un cuadro de diálogo periódico, solo si no hay &lt; &gt; una alternativa mejor.** Es mejor mostrar siempre el cuadro de diálogo si los usuarios realmente lo necesitan, o simplemente eliminarlo si no lo hacen.
+-   **Use esta expresión específica para reemplazar &lt; el elemento por el elemento &gt; específico.** Por ejemplo, no vuelva a mostrar este recordatorio. Al hacer referencia a un cuadro de diálogo en general, use No volver a mostrar este mensaje.
+-   **Indique claramente cuándo se** usará la entrada del usuario para los valores predeterminados futuros agregando la siguiente frase bajo la opción: Las selecciones se usarán de forma predeterminada en el futuro.
+-   **No seleccione la opción de forma predeterminada. Si el cuadro de diálogo debe mostrarse solo una vez, debe hacerlo sin preguntar.** No use esta opción como un aviso para los usuarios molestos y asegúrese de que el comportamiento predeterminado no sea molesto.
 
 **Incorrecto:**
 
-![captura de pantalla del mensaje que hace preguntas innecesarias ](images/win-dialog-box-image42.png)
+![captura de pantalla del mensaje que hace una pregunta innecesaria ](images/win-dialog-box-image42.png)
 
 En este ejemplo, el mensaje solo debe mostrarse una vez. No es necesario preguntar.
 
 -   **Haga que la configuración se conserve por usuario.**
--   **Si los usuarios seleccionan la opción y hacen clic en Cancelar, esta opción se hace efectiva.** Esta configuración es una meta-opción, por lo que no sigue el comportamiento de cancelación estándar de no dejar ningún efecto secundario. Tenga en cuenta que si los usuarios no quieren ver el cuadro de diálogo en el futuro, lo más probable es que también quieran cancelarlo.
--   Si es posible que los usuarios necesiten restaurar estos cuadros de diálogo, proporcione un comando **Restaurar** mensajes en el cuadro de diálogo Opciones del programa.
+-   **Si los usuarios seleccionan la opción y hacen clic en Cancelar, esta opción tendrá efecto.** Esta configuración es una meta-opción, por lo que no sigue el comportamiento cancel estándar de no dejar ningún efecto secundario. Tenga en cuenta que si los usuarios no quieren ver el cuadro de diálogo en el futuro, lo más probable es que también quieran cancelarlo.
+-   Si es posible que los usuarios necesiten restaurar estos cuadros de diálogo, proporcione un comando **Restaurar mensajes** en el cuadro de diálogo Opciones del programa.
 
 ### <a name="ask-me-later"></a>Preguntarme más tarde
 
 -   Proporcione esta opción para descartar un cuadro de diálogo solo cuando:
     -   **El cuadro de diálogo es indirecto,** por lo que es probable que los usuarios se centren en otra tarea.
-    -   **Los usuarios deben responder, pero no inmediatamente,** para que puedan continuar con su trabajo.
-    -   **La pregunta requiere suficiente reflexión o esfuerzo para** que los usuarios puedan tomar mejores decisiones si se les da más tiempo.
-    -   **El cuadro de diálogo o la opción se mostrará automáticamente más adelante** (para que los usuarios realmente se pregunten más adelante).
+    -   **Los usuarios deben responder, pero no inmediatamente,** para poder continuar con su trabajo.
+    -   **La pregunta requiere suficiente reflexión o esfuerzo** para que los usuarios puedan tomar mejores decisiones si se les da más tiempo.
+    -   **El cuadro de diálogo o la opción se presentarán automáticamente más adelante** (para que los usuarios realmente se pregunten más adelante).
 -   **Incorrecto:**
 -   ![captura de pantalla del mensaje con la opción preguntarme más adelante ](images/win-dialog-box-image43.png)
 -   En este ejemplo, la pregunta es lo suficientemente sencilla como para que agregar una opción Pregúnteme más adelante solo la complica.
@@ -743,7 +710,7 @@ En este ejemplo, las opciones que se usan con menos frecuencia se ocultan de for
 
 -   **No use más o menos controles a menos que realmente haya más detalles para mostrar.** No solo vuelva a establecer la misma información en un formato diferente.
 -   **No use más o menos controles para mostrar la Ayuda.** En su lugar, use vínculos de Ayuda o notas al pie.
--   **Con los cuadros de diálogo de tareas, evite combinar más o menos controles con No volver a <item> mostrar esto.** Esta combinación tiene un aspecto extraño.
+-   **Con los cuadros de diálogo de tareas, evite combinar más o menos controles con No volver a mostrar &lt; este &gt; elemento.** Esta combinación tiene un aspecto extraño.
 -   Para obtener instrucciones de etiquetado, vea [Divulgación progresiva.](ctrl-progressive-disclosure-controls.md)
 
 ### <a name="footnotes"></a>Notas al pie
@@ -759,7 +726,7 @@ En este ejemplo, la información de nota al pie es complementaria, no esencial.
 -   Cuando un control no se aplica en el contexto actual, tenga en cuenta las siguientes opciones:
     -   **Quite el control cuando los usuarios no puedan habilitarlo o cuando los usuarios no esperen que se aplique y su estado no cambie con frecuencia.** Esto simplifica el cuadro de diálogo y los usuarios no lo perderán. Hacer que un control aparezca y desaparezca con frecuencia resulta molesto.
     -   **Deshabilite el control cuando los usuarios esperen que se aplique o su estado cambie con frecuencia, y los usuarios pueden deducir fácilmente por qué el control está deshabilitado.** Un ejemplo de deducción sencilla es deshabilitar un botón de confirmación cuando hay un único cuadro de texto vacío que requiere cualquier entrada. Puede usar [globos para mostrar](ctrl-balloons.md) problemas de entrada de usuario no críticos con cuadros de texto y listas desplegables editables. Sin embargo, si el problema no se puede explicar con un globo o implica varios controles, la deducción ya no sería fácil.
-    -   **De lo contrario, deje el control habilitado, pero dé un mensaje de error cuando se utilice incorrectamente.** Deshabilitar en este caso dificultaría a los usuarios comprender por qué el control está deshabilitado. Los usuarios se verían obligados a determinar el problema a través de la experimentación y la lógica de desasoción. Es mejor proporcionar un mensaje de error útil para explicar el problema explícitamente.
+    -   **De lo contrario, deje el control habilitado, pero dé un mensaje de error cuando se utilice incorrectamente.** Deshabilitar en este caso dificultaría a los usuarios comprender por qué el control está deshabilitado. Los usuarios se verían obligados a determinar el problema a través de la experimentación y la lógica de desasoción. Es mejor simplemente proporcionar un mensaje de error útil para explicar el problema explícitamente.
 -   **Sugerencia:** Si no está seguro de si debe deshabilitar un control o proporcionar un mensaje de error, empiece por crear el mensaje de error que podría proporcionar. Si el mensaje de error contiene información útil que es probable que los usuarios de destino no deduzcan rápidamente, deje el control habilitado y dé el error. De lo contrario, deshabilite el control .
 -   **Si deshabilita un control, deshabilite también** todos los controles asociados, como su etiqueta, explicaciones complementarias o botones de comando. Sin embargo, no deshabilite sus cuadros [de grupo,](ctrl-group-boxes.md)etiqueta de grupo o explicación de grupo si los hay.
 
@@ -776,7 +743,7 @@ En este ejemplo, las etiquetas de cuadro de texto deshabilitadas también están
         -   Una nota al pie en la parte inferior del área de contenido que dice \* Entrada necesaria.
         -   Información sobre herramientas en el asterisco que indica Entrada requerida.
 
-        Este enfoque funciona bien si no hay muchos controles necesarios, pero es deficiente si se requieren la mayoría de los controles.
+        Este enfoque funciona bien si no hay muchos controles necesarios, pero es deficiente si la mayoría de los controles son necesarios.
 
         ![captura de pantalla de etiquetas de cuadro de texto con asteriscos ](images/win-dialog-box-image46.png)
 
@@ -785,11 +752,11 @@ En este ejemplo, las etiquetas de cuadro de texto deshabilitadas también están
     -   **Si todos los controles requieren entrada, estado "All input required" (Todas las entradas necesarias) en un lugar adecuado en la parte superior del área de contenido.** Este enfoque reduce el desorden en este caso específico.
     -   **Indique entradas opcionales con "(opcional)" después de la etiqueta.** Este enfoque funciona bien si se requiere la mayoría de las entradas, pero en caso contrario, es deficiente.
 
--   **Para mantener la coherencia, intente usar el mismo método para indicar la entrada necesaria en todo el programa.** En concreto, indique la entrada obligatoria u opcional según sea necesario, pero evite usar ambas dentro del mismo programa.
+-   **Para mantener la coherencia, intente usar el mismo método para indicar la entrada necesaria en todo el programa.** En concreto, indique la entrada necesaria u opcional según sea necesario, pero evite usar ambos dentro del mismo programa.
 
 ### <a name="error-handling"></a>Control de errores
 
--   Evite errores mediante el uso de controles restringidos a la entrada de usuario válida. También puede ayudar a reducir el número de errores proporcionando valores predeterminados razonables.
+-   Evitar errores mediante el uso de controles que están restringidos a la entrada de usuario válida. También puede ayudar a reducir el número de errores proporcionando valores predeterminados razonables.
 -   Valide la entrada del usuario lo antes posible y muestre los errores lo más cerca posible del punto de entrada.
 -   **Use el control de errores modelados (errores en el lugar o globos) para problemas de entrada del usuario.**
     -   **Use globos para problemas de entrada de usuario de un solo punto no críticos detectados en un cuadro de texto o inmediatamente después de que un cuadro de texto pierda el foco.** Los globos no requieren espacio de pantalla disponible ni el diseño dinámico necesario para mostrar los mensajes en su lugar. Mostrar solo un globo a la vez. Dado que el problema no es crítico, no es necesario ningún icono de error. Los globos desaparecen cuando se hace clic en él, cuando se resuelve el problema o después de un tiempo de espera.
@@ -813,7 +780,7 @@ Para obtener más información y ejemplos, vea [Mensajes de error](mess-error.md
 
 -   Al proporcionar asistencia al usuario, tenga en cuenta las siguientes opciones (enumeradas en su orden de preferencia):
     -   Proporcionar etiquetas autoexplicativas a los controles interactivos. Es más probable que los usuarios lean las etiquetas en controles interactivos que cualquier otro texto.
-    -   Proporcione explicaciones en contexto mediante etiquetas [de texto estático](text-ui.md).
+    -   Proporcione explicaciones en contexto mediante etiquetas [de texto estático.](text-ui.md)
     -   Proporcione un vínculo de Ayuda específico a un tema de Ayuda pertinente.
 -   **Busque vínculos de Ayuda en la parte inferior del área de contenido del cuadro de diálogo.** Si el cuadro de diálogo tiene una nota al pie y el vínculo ayuda está relacionado con ella, coloque el vínculo Ayuda dentro de la nota al pie.
 
@@ -823,19 +790,19 @@ Para obtener más información y ejemplos, vea [Mensajes de error](mess-error.md
 
     -   **Excepción:** Si un cuadro de diálogo tiene varios grupos distintos de configuraciones que tienen temas de Ayuda independientes (quizás dentro de cuadros de grupo), busque los vínculos de Ayuda en la parte inferior de los grupos.
 
--   **No use vínculos de temas de Ayuda generales o imprecisos ni botones genéricos de Ayuda.** A menudo, los usuarios omiten la Ayuda genérica.
+-   **No use vínculos generales o imprecisos de temas de Ayuda ni botones genéricos de Ayuda.** A menudo, los usuarios omiten la Ayuda genérica.
 
 Para obtener más información y ejemplos, vea [Ayuda de](winenv-help.md).
 
 ### <a name="default-values"></a>Valores predeterminados
 
 -   Incluya un botón de confirmación predeterminado en cada cuadro de diálogo.
--   Para los diálogos de preguntas:
-    -   **Seleccione la respuesta más segura (para evitar la pérdida de datos o el acceso del sistema), la respuesta más segura será la predeterminada.** Si la seguridad y la seguridad no son factores, seleccione la respuesta más probable o conveniente.
-        -   **Excepción:** No haga que una respuesta destructiva sea la predeterminada a menos que haya una manera sencilla y obvia de deshacer el comando.
--   Para los cuadros de diálogo de elección:
-    -   Para los valores predeterminados iniciales, seleccione el más seguro (para evitar la pérdida de datos o el acceso al sistema) y los valores más **seguros para cada control.** Si la seguridad y la seguridad no son factores, seleccione las opciones más probables o prácticas.
-    -   Para los valores predeterminados posteriores, vuelva a seleccionar las opciones seleccionadas anteriormente si es probable que esos valores se repitan y hacerlo **es seguro y seguro.** De lo contrario, seleccione los valores predeterminados iniciales.
+-   Para los diálogos de pregunta:
+    -   **Seleccione la respuesta más segura (para evitar la pérdida de datos o acceso al sistema), la respuesta más segura para que sea la predeterminada.** Si la seguridad y la seguridad no son factores, seleccione la respuesta más probable o adecuada.
+        -   **Excepción:** No realice una respuesta destructiva de forma predeterminada a menos que haya una manera sencilla y obvia de deshacer el comando.
+-   Para cuadros de diálogo de elección:
+    -   Para los valores predeterminados iniciales, seleccione el más seguro (para evitar la pérdida de datos o el acceso al sistema) y los valores más seguros **para cada control.** Si la seguridad y la seguridad no son factores, seleccione las opciones más probables o convenientes.
+    -   Para los valores predeterminados posteriores, vuelva a seleccionar las opciones seleccionadas anteriormente si es probable que esos valores se repitan **y hacerlo es seguro y seguro.** De lo contrario, seleccione los valores predeterminados iniciales.
 
 ![captura de pantalla del cuadro de diálogo de impresión ](images/win-dialog-box-image49.png)
 
@@ -843,10 +810,10 @@ En este ejemplo, es más probable que los usuarios elijan la misma configuració
 
 ## <a name="recommended-sizing-and-spacing&quot;></a>Tamaño y espaciado recomendados
 
--   **Admite la resolución de pantalla mínima de Windows Vista de 800 x 600 píxeles.** Los diseños se pueden optimizar para ventanas de tamaño ajustable mediante una resolución de pantalla de 1024 x 768 píxeles.
--   **Use ventanas de tamaño ajustable siempre que sea práctico para evitar barras de desplazamiento y datos truncados.** Las ventanas con contenido dinámico y listas son las que más se benefician de las ventanas de tamaño ajustable.
--   **Las ventanas de tamaño fijo deben ser totalmente visibles y ajustarse al área de trabajo.**
--   **Las ventanas que se pueden cambiar de tamaño se pueden optimizar para resoluciones más altas, pero se puede cambiar el tamaño según sea necesario en tiempo de presentación a la resolución de pantalla real.**
+-   **Admite la resolución de pantalla Windows vista mínima de 800 x 600 píxeles.** Los diseños se pueden optimizar para ventanas de tamaño ajustable con una resolución de pantalla de 1024 x 768 píxeles.
+-   **Use ventanas de tamaño ajustable siempre que sea práctico para evitar barras de desplazamiento y datos truncados.** Windows con contenido dinámico y listas se benefician al máximo de las ventanas de tamaño ajustable.
+-   **Las ventanas de tamaño fijo deben estar completamente visibles y ajustarse para ajustarse al área de trabajo.**
+-   **Las ventanas que se pueden cambiar de tamaño se pueden optimizar para resoluciones más altas, pero se puede cambiar el tamaño según sea necesario en el momento de la visualización a la resolución de pantalla real.**
 -   **Elija un tamaño de ventana predeterminado adecuado para su contenido.** No tenga miedo de usar tamaños de ventana iniciales mayores si puede usar el espacio de forma eficaz.
 
 ## <a name=&quot;text&quot;></a>Texto
@@ -854,7 +821,7 @@ En este ejemplo, es más probable que los usuarios elijan la misma configuració
 ### <a name=&quot;general&quot;></a>General
 
 -   **Quite el texto redundante.** Busque texto redundante en títulos, instrucciones principales, instrucciones complementarias, áreas de contenido, vínculos de comandos y botones de confirmación. Por lo general, deje texto completo en instrucciones y controles interactivos y quite cualquier redundancia de los demás lugares.
--   **Use expresiones positivas.** Las expresiones positivas son más fáciles de entender para los usuarios.
+-   **Use expresiones positivas.** La expresión positiva es más fácil de entender para los usuarios.
 
 **Correcto:**
 
@@ -864,10 +831,10 @@ En este ejemplo, es más probable que los usuarios elijan la misma configuració
 
 ¿Desea deshabilitar el uso compartido de archivos e impresoras?
 
-Sin embargo, las expresiones deben coincidir con el comando asociado, incluso si el comando está con frases negativas; por ejemplo, use disable para confirmar un comando Disable.
+Sin embargo, la expresión debe coincidir con el comando asociado, incluso si el comando tiene una frase negativa; por ejemplo, use disable para confirmar un comando Disable.
 
 -   **Si es necesario, use la palabra &quot;ventana&quot; para hacer referencia al propio cuadro de diálogo.**
--   **Use la segunda persona (&quot;usted/su")** para decir a los usuarios qué hacer en el área principal de instrucción y contenido. A menudo, la segunda persona está implícita.
+-   **Use la segunda persona (&quot;usted o su")** para decir a los usuarios qué hacer en el área principal de instrucción y contenido. A menudo, la segunda persona está implícita.
 
 **Ejemplos:**
 
@@ -882,21 +849,21 @@ Elija una cuenta.
 ### <a name="dialog-box-titles"></a>Títulos del cuadro de diálogo
 
 -   **Use el título para identificar el comando, la característica o el programa de donde provenía un cuadro de diálogo.**
-    -   Si el usuario inicia el cuadro de diálogo, puede identificarlo con el nombre de la característica o el comando. **Excepciones:**
-        -   Si muchos comandos diferentes muestran un cuadro de diálogo, considere la posibilidad de usar el nombre del programa en su lugar.
+    -   Si el usuario inicia el cuadro de diálogo, puede identificarlo mediante el nombre de la característica o el comando. **Excepciones:**
+        -   Si se muestra un cuadro de diálogo con muchos comandos diferentes, considere la posibilidad de usar el nombre del programa en su lugar.
         -   Si ese título sería redundante con la instrucción principal, use el nombre del programa en su lugar.
-    -   Si se ha iniciado el programa o el sistema (y, por lo tanto, está fuera de contexto), debe identificarlo mediante el nombre del programa o la característica para dar contexto.
+    -   Si está iniciado por el programa o el sistema (y, por lo tanto, fuera de contexto), puede identificarlo mediante el nombre del programa o la característica para dar contexto.
     -   No use el título para explicar qué hacer en el cuadro de diálogo que es el propósito de la instrucción principal.
--   Use el nombre exacto del comando para los nombres basados en comandos, pero no incluya los puntos suspensivos si los hay. Puede incluir el título del menú del comando si es necesario para crear un buen título. Ejemplo: para un objeto... En un menú Insertar, use el título Insertar objeto.
--   **Si aparece un cuadro de diálogo** de modelado en la barra de tareas, optimice el título para mostrarlo en la barra de tareas colocando primero la información distintiva de forma concisa. Ejemplos: "66 % completado" y "3 recordatorios".
+-   Use el nombre exacto del comando para los nombres basados en comandos, pero no incluya los puntos suspensivos si hay uno. Puede incluir el título del menú del comando si es necesario para crear un buen título. Ejemplo: para un objeto... En un menú Insertar, use el título Insertar objeto.
+-   **Si aparece un cuadro de diálogo** no modelo en la barra de tareas, optimice el título para mostrarlo en la barra de tareas colocando primero la información distintiva de forma concisa. Ejemplos: "66 % completado" y "3 recordatorios".
 -   **No incluya las palabras "dialog" o "progress" en el título.** Esto está implícito y dejarla desactivada facilita el examen de los usuarios.
--   Use [el uso de mayúsculas de estilo de](glossary.md)título, sin finalizar los signos de puntuación.
+-   Use [el uso de mayúsculas y mayúsculas](glossary.md)de estilo de título sin finalizar la puntuación.
 
 ### <a name="main-instructions"></a>Instrucciones principales
 
--   **Use la instrucción principal para explicar concisamente qué hacer en el cuadro de diálogo.** La instrucción debe ser una instrucción específica, una dirección imperativa o una pregunta. Las instrucciones correctas comunican el objetivo del usuario con el diálogo en lugar de centrarse exclusivamente en la mecánica de su manipulación.
+-   **Use la instrucción principal para explicar concisamente qué hacer en el cuadro de diálogo.** La instrucción debe ser una instrucción específica, una dirección imperativa o una pregunta. Las instrucciones correctas comunican el objetivo del usuario con el diálogo en lugar de centrarse exclusivamente en la mecánica de manipularlo.
 -   **Omita la instrucción principal cuando lo único que puede decir sea obvio.** En tales casos, el contenido del cuadro de diálogo se explica por sí mismo. Por ejemplo, los cuadros de diálogo comunes Abrir archivo y Guardar archivos no necesitan una instrucción principal porque su contexto y diseño hacen que su propósito sea obvio.
--   **Omita las etiquetas de control que vuelvan a restablecer la instrucción principal.** En este caso, la instrucción principal toma la clave de acceso.
+-   **Omita las etiquetas de control que restablecen la instrucción principal.** En este caso, la instrucción principal toma la clave de acceso.
 
 **Aceptable:**
 
@@ -910,12 +877,12 @@ En este ejemplo, la etiqueta del cuadro de texto es simplemente una nueva instru
 
 En este ejemplo, se quita la etiqueta redundante, por lo que la instrucción principal toma la clave de acceso.
 
--   **Sea conciso y use solo una sola oración completa.** Pare la instrucción principal hasta la información esencial. Si tiene que explicar algo más, use instrucciones complementarias.
+-   **Sea conciso y use solo una sola frase completa.** Ordene la instrucción principal hasta la información esencial. Si tiene que explicar algo más, use instrucciones complementarias.
 -   **Use verbos específicos siempre que sea posible.** Los verbos específicos (ejemplos: conectar, guardar, instalar) son más significativos para los usuarios que los genéricos (ejemplos: configurar, administrar, establecer).
--   Use [mayúsculas de estilo oración.](glossary.md)
+-   Use [el uso de mayúsculas y mayúsculas de estilo oración.](glossary.md)
 -   **No incluya períodos finales si la instrucción es una instrucción .** Si la instrucción es una pregunta, incluya un signo de interrogación final.
--   **En el caso de los diálogos de progreso, use** una frase de error que explique brevemente la operación en curso y termine con puntos suspensivos. Ejemplo: Imprimir las imágenes...
--   **Sugerencia:** Puede evaluar una instrucción principal mediante la lectura de lo que podría decir a un amigo. Si responder con la instrucción principal sería poco natural, poco útil o difícil, vuelva a trabajar la instrucción.
+-   **En el caso de los diálogos de progreso, use** una frase de oración que explique brevemente la operación en curso y termine con puntos suspensivos. Ejemplo: Impresión de imágenes...
+-   **Sugerencia:** Puede evaluar una instrucción principal mediante la lectura de lo que le podría decir a un amigo. Si responder con la instrucción principal sería poco natural, poco útil o difícil, volver a trabajar la instrucción.
 
 ### <a name="supplemental-instructions"></a>Instrucciones complementarias
 
@@ -926,31 +893,31 @@ En este ejemplo, se quita la etiqueta redundante, por lo que la instrucción pri
 
 ### <a name="command-links"></a>Vínculos de comandos
 
--   **Elija texto de vínculo conciso que comunique claramente y diferencie lo que hace el vínculo de comando.** Debe ser autoexplicativo y corresponder a la instrucción principal. Los usuarios no deben tener que averiguar qué significa realmente el vínculo ni cómo difiere de otros vínculos.
--   **Inicie siempre los vínculos de comando con un verbo.**
+-   **Elija texto de vínculo conciso que comunique y diferencie claramente lo que hace el vínculo de comando.** Debe ser autoexplicativo y corresponder a la instrucción principal. Los usuarios no deben tener que averiguar qué significa realmente el vínculo ni cómo difiere de otros vínculos.
+-   **Inicie siempre vínculos de comando con un verbo.**
 -   Use mayúsculas de estilo de frase.
 -   No uses puntuación final.
--   **Si es necesario, proporcione una explicación adicional mediante oraciones completas y signos de puntuación finales.** Sin embargo, agregue estas explicaciones solo cuando sea necesario no agregue explicaciones a todos los vínculos de comandos solo porque un vínculo de comando necesita uno.
+-   **Si es necesario, proporcione una explicación adicional mediante oraciones completas y signos de puntuación finales.** Sin embargo, agregue estas explicaciones solo cuando sea necesario, no agregue explicaciones a todos los vínculos de comandos solo porque un vínculo de comando necesita uno.
 
 Para obtener más información y ejemplos, vea [Instrucciones de vínculo de](ctrl-command-links.md) comandos.
 
 ### <a name="commit-buttons"></a>Botones de confirmación
 
--   **Use etiquetas de botón de confirmación específicas que tienen sentido por sí solas y son una respuesta a la instrucción principal.** Lo ideal es que los usuarios no tengan que leer nada más para comprender la etiqueta. Es mucho más probable que los usuarios lean las etiquetas de los botones de comando que el texto estático.
+-   **Use etiquetas de botón de confirmación específicas que tienen sentido por sí solas y son una respuesta a la instrucción principal.** Lo ideal es que los usuarios no tengan que leer nada más para comprender la etiqueta. Es mucho más probable que los usuarios lean las etiquetas del botón de comando que el texto estático.
 -   **Inicie las etiquetas de botón de confirmación con un verbo. Las excepciones son Ok, Yes y No.**
 -   Use mayúsculas de estilo de frase.
 -   No uses puntuación final.
 -   Asigne una clave [de acceso única.](glossary.md)
-    -   **Excepción:** No asigne claves de acceso a los botones Aceptar y Cancelar porque Enter y Esc son sus claves de acceso. Esto facilita la asignación de las demás claves de acceso.
+    -   **Excepción:** No asigne claves de acceso a los botones Aceptar y Cancelar porque Enter y Esc son sus claves de acceso. Esto facilita la asignación de las otras claves de acceso.
 
 ## <a name="documentation"></a>Documentación
 
 Al hacer referencia a cuadros de diálogo:
 
--   En programación y otra documentación técnica, consulte los cuadros de diálogo como cuadros de diálogo. En cualquier otro lugar, consulte los cuadros de diálogo por su título. Si la barra de título está oculta, consulte el cuadro de diálogo con la instrucción principal.
--   Si debe hacer referencia a un cuadro de diálogo en general, use la ventana de la documentación del usuario. Puede hacer referencia a un cuadro de diálogo de pregunta simple o a una confirmación como un mensaje.
+-   En programación y otra documentación técnica, consulte cuadros de diálogo como cuadros de diálogo. En cualquier otro lugar, consulte los cuadros de diálogo por su título. Si la barra de título está oculta, consulte el cuadro de diálogo con la instrucción principal.
+-   Si debe hacer referencia a un cuadro de diálogo en general, use la ventana de la documentación del usuario. Puede hacer referencia a un cuadro de diálogo de pregunta simple o confirmación como un mensaje.
 -   Use el título exacto o el texto de la instrucción principal, incluida su mayúscula.
 -   Cuando sea posible, formatee el título con texto en negrita. De lo contrario, coloque el título entre comillas solo si es necesario para evitar confusiones.
 
-Ejemplo: **en** Seguridad de Windows , haga clic **en Más opciones**.
+Ejemplo: **en** Seguridad de Windows , haga clic **en Más opciones.**
 

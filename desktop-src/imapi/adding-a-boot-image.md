@@ -1,21 +1,21 @@
 ---
-title: Agregar una imagen de arranque
-description: Este ejemplo se basa en el ejemplo de grabación de una imagen de disco mediante la adición de código para incluir una imagen de arranque en la sección de arranque del disco.
+title: Adición de una imagen de arranque
+description: Este ejemplo se basa en el ejemplo de grabación de una imagen de disco agregando código para incluir una imagen de arranque en la sección de arranque del disco.
 ms.assetid: b23cdbb9-ae0d-4261-965b-56abe865f323
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ce48537f32f1dc574eef174b26daaa5e2ebe255
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b884c69dc53c14c01cb6e9486af30a148233192e41d433f4af6791b658185cca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092485"
 ---
-# <a name="adding-a-boot-image"></a>Agregar una imagen de arranque
+# <a name="adding-a-boot-image"></a>Adición de una imagen de arranque
 
-Este ejemplo se basa en el ejemplo de [grabación de una imagen de disco](burning-a-disc.md) mediante la adición de código para incluir una imagen de arranque en la sección de arranque del disco. La imagen de arranque se conecta al objeto del sistema de archivos que se escribe en el disco. Una vez conectado, el resto del proceso de grabación es idéntico al procedimiento de grabación básico. La imagen de arranque proporciona el inicio del sistema mediante la unidad de disco CD o DVD.
+Este ejemplo se basa en el ejemplo [de grabación](burning-a-disc.md) de una imagen de disco agregando código para incluir una imagen de arranque en la sección de arranque del disco. La imagen de arranque se conecta al objeto del sistema de archivos que se escribe en el disco. Una vez conectado, el resto del proceso de grabación es idéntico al procedimiento básico de grabación. La imagen de arranque proporciona el inicio del sistema mediante la unidad de disco de CD o DVD.
 
-En el ejemplo se hardcodes la ruta de acceso a la imagen de arranque. Asegúrese de cambiar la ruta de acceso junto con otros valores codificados de forma rígida, según corresponda.
+El ejemplo codifica de forma fija la ruta de acceso a la imagen de arranque. Asegúrese de cambiar la ruta de acceso junto con otros valores codificados de forma rígida según corresponda.
 
 
 ```VB
@@ -107,7 +107,7 @@ End Function
 
 <dl> <dt>
 
-[Usar IMAPi](using-imapi.md)
+[Uso de IMAPI](using-imapi.md)
 </dt> <dt>
 
 [**IDiscMaster2**](/windows/desktop/api/imapi2/nn-imapi2-idiscmaster2)
@@ -119,9 +119,9 @@ End Function
 [**IFileSystemImage**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,20 +17,20 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: dbac6a356a71d24f1808cba404d513333b9fa071
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: d57ed4925fe0f47a5d55dfc581dee5e31c31aca2
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786801"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628201"
 ---
 # <a name="span-idvspixengineistatuscallbackspanistatuscallback-interface"></a><span id="vspixengine.istatuscallback"></span>IStatusCallback (interfaz)
 
 No se utiliza.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
-La **interfaz IStatusCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IStatusCallback también** tiene estos tipos de miembros:
+La **interfaz IStatusCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IStatusCallback** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -38,7 +38,7 @@ La **interfaz IStatusCallback** hereda de la [**interfaz IUnknown.**](/windows/d
 
 La **interfaz IStatusCallback** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/istatuscallback-status-dword-dword-dword"><strong>Estado</strong></a></td><td ><p>Función de devolución de llamada que se usa para notificar al host el progreso del motor. Esto también sirve como una manera de que el host determine que el motor todavía se está ejecutando.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/istatuscallback-status-dword-dword-dword"><strong>Estado</strong></a></td><td style="text-align: left;"><p>Función de devolución de llamada que se usa para notificar al host del progreso del motor. Esto también sirve como una manera de que el host determine que el motor todavía se está ejecutando.</p></td></tr></tbody></table>
 
  
 

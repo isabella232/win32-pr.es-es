@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3958baa23228bdf32807cc4fdc07a471e625d553f57672e318a062038923b5af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1eda03d9c08e0e18f1a60e088405919f3982e9de
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119473895"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476161"
 ---
 # <a name="jet_pcwstr"></a>JET_PCWSTR
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_pcwstr"></a>JET_PCWSTR
 
-El **JET_PCWSTR** de datos contiene una cadena Unicode constante terminada en **null** \* (char).
+El **JET_PCWSTR** tipo de datos contiene una cadena Unicode constante terminada en **NULL** (char \* ).
 
 **Windows Vista: JET_PCWSTR** se presenta en Windows Vista.
 
@@ -41,28 +41,11 @@ El **JET_PCWSTR** de datos contiene una cadena Unicode constante terminada en **
 
 JET_PCWSTR
 
-Cadena Unicode constante terminada en NULL \* (char).
+Cadena Unicode constante terminada en NULL (char \* ).
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 

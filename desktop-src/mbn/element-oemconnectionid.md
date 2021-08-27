@@ -7,23 +7,23 @@ MSHAttr:
 title: OemConnectionId
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da74d941bdd3c810f7cf62807fc168e1d9ecafb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40379b07fc23f0db360ab3d8e383262e356aa5ae
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275366"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882913"
 ---
 # <a name="span-idwwan_profile_v4element_oemconnectionidspanoemconnectionid"></a><span id="WWAN_profile_v4.element_OemConnectionId"></span>OemConnectionId
 
-El identificador de conexión de OEM para la configuración de DM de módem.
+Identificador de conexión de OEM para la configuración de DM del módem.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[<ModemDMConfigProfile>](element-modemdmconfigprofile.md)  
-**<OemConnectionId>**
+[&lt;ModemDMConfigProfile&gt;](element-modemdmconfigprofile.md)  
+**&lt;OemConnectionId&gt;**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <OemConnectionId>
@@ -45,41 +45,19 @@ Ninguno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos primarios
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento primario</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a></td>
-<td><p>Perfil de configuración de DM de módem.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento primario | Descripción | 
+|----------------|-------------|
+| <a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a> | <p>Perfil de configuración de DM de módem.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Espacio de nombres</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

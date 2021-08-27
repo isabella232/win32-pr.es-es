@@ -1,10 +1,10 @@
 ---
-title: MicrosoftDNS_KEYType (clase)
-description: La subclase de MicrosoftDNS \_ ResourceRecord que representa un registro de recursos de clave.
+title: MicrosoftDNS_KEYType clase
+description: Subclase de ResourceRecord de MicrosoftDNS \_ que representa un registro de recursos KEY.
 ms.assetid: d3fa1f35-fa0a-47ee-b2be-4464b9b21d80
 keywords:
-- DNS de la clase MicrosoftDNS_KEYType
-- MicrosoftDNS_KEYType de la clase DNS, descrito
+- MicrosoftDNS_KEYType DNS de clase
+- MicrosoftDNS_KEYType clase DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -21,18 +21,18 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1e814af1d22820f1722e5812dd314dd1c7f6e0d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 279044856e695c7e287809a3cbe89a6fffbbc1c0352c0cb68ae45350aa17fc16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109135"
 ---
-# <a name="microsoftdns_keytype-class"></a>MicrosoftDNS ( \_ clase)
+# <a name="microsoftdns_keytype-class"></a>Clase KEYType de MicrosoftDNS \_
 
-La subclase de [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) que representa un registro de recursos de clave.
+Subclase de [**\_ ResourceRecord de MicrosoftDNS**](microsoftdns-resourcerecord.md) que representa un registro de recursos KEY.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,21 +48,21 @@ class MicrosoftDNS_KEYType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Miembros
 
-La clase **MicrosoftDNS \_ KEYType** tiene estos tipos de miembros:
+La **clase \_ KEYType de MicrosoftDNS** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MicrosoftDNS \_ KEYType** tiene estos métodos.
+La **clase \_ KEYType de MicrosoftDNS** tiene estos métodos.
 
 
 
 | Método                             | Descripción                                                                                                                                                                                                                                                                                                                                                                                                        |
 |:-----------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Crea una instancia de un registro de recursos de clave basándose en los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre del propietario, la clase (valor predeterminado = IN), el valor de período de vida y la marca de asignación de WINS, el tiempo de espera de búsqueda inverso, el tiempo de espera de la caché Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: implementados, estáticos<br/> |
-| **Modify**                         | Actualiza el TTL, la marca de asignación, el tiempo de espera de búsqueda, el tiempo de espera de caché y el dominio de resultado a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: implementados<br/>                          |
+| **CreateInstanceFromPropertyData** | Crea instancias de un registro de recursos KEY en función de los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre del propietario, la clase (valor predeterminado = IN), el valor de período de vida y la marca de asignación WINS, el tiempo de espera de búsqueda inversa, el tiempo de espera de caché WINS y el nombre de dominio que se va a anexar. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: implementados, estáticos<br/> |
+| **Modificar**                         | Actualiza el TTL, la marca de asignación, el tiempo de espera de búsqueda, el tiempo de espera de caché y el dominio de resultados a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: Implementado<br/>                          |
 
 
 
@@ -70,20 +70,20 @@ La clase **MicrosoftDNS \_ KEYType** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase ^ **\_ KEYType** tiene estas propiedades.
+La **clase \_ KEYType de MicrosoftDNS** tiene estas propiedades.
 
 <dl> <dt>
 
 **Algoritmo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Algoritmo usado con la clave especificada en el registro de recursos. Los valores asignados se muestran en la tabla siguiente.
+Algoritmo utilizado con la clave especificada en el registro de recursos. Los valores asignados se muestran en la tabla siguiente.
 
 
 
@@ -103,7 +103,7 @@ Algoritmo usado con la clave especificada en el registro de recursos. Los valore
 **Marcas**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -116,7 +116,7 @@ Marcas usadas para especificar la asignación, como se describe en IETF RFC 2535
 **Protocolo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -162,7 +162,7 @@ Clave pública, representada en base 64 como se describe en el Apéndice A de RF
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -170,13 +170,13 @@ Clave pública, representada en base 64 como se describe en el Apéndice A de RF
 
 <dl> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS KEYType**](microsoftdns-keytype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase KEYType de MicrosoftDNS \_**](microsoftdns-keytype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Método Modify de la \_ clase MicrosoftDNS KEYType**](microsoftdns-keytype-modify.md)
+[**Método Modify de la clase KEYType de MicrosoftDNS \_**](microsoftdns-keytype-modify.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

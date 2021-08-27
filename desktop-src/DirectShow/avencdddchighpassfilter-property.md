@@ -1,29 +1,29 @@
 ---
-description: Especifica si un filtro de paso alto de bloqueo de DC se aplica a una secuencia de audio Dolby digital. Esta propiedad se aplica a los codificadores de audio Dolby digital.
+description: Especifica si se aplica un filtro de paso alto de bloqueo de controlador de dominio a una secuencia de audio de Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 ms.assetid: 7ec0b642-d50a-4b23-97c4-82c14da80a8b
-title: Propiedad AVEncDDDCHighPassFilter (Codecapi. h)
+title: Propiedad AVEncDDCHighPassFilter (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff68d723127b166ee01c42915a8b11069a01692f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 302bde1e36be8b920ababb93329ca0979e9ee99b1fa306c3209511757b47bc5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108675"
 ---
-# <a name="avencdddchighpassfilter-property"></a>Propiedad AVEncDDDCHighPassFilter
+# <a name="avencdddchighpassfilter-property"></a>Propiedad AVEncDDCHighPassFilter
 
-Especifica si un filtro de paso alto de bloqueo de DC se aplica a una secuencia de audio Dolby digital. Esta propiedad se aplica a los codificadores de audio Dolby digital.
+Especifica si se aplica un filtro de paso alto de bloqueo de controlador de dominio a una secuencia de audio de Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 
 Esta propiedad es de lectura y escritura.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID de propiedad
 
-**CODECAPI \_ AVEncDDDCHighPassFilter**
+**CODECAPI \_ AVEncDDCHighPassFilter**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ Esta propiedad es de lectura y escritura.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -44,7 +44,7 @@ Esta propiedad es de lectura y escritura.
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

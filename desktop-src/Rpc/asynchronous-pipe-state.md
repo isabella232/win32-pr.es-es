@@ -1,102 +1,36 @@
 ---
 title: Estado de canalización asincrónica
-description: En esta página se describe el estado de la canalización asincrónica para las llamadas RPC.
+description: En esta página se describe el estado de canalización asincrónica para las llamadas RPC.
 ms.assetid: af937eba-6b70-447a-af76-a8e27f5754e3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8396b08c7ef7b8152457d9426883645fab39bdef
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 9a35e54d9f86228cb4c957f53411c105e20e2109
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104077325"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468172"
 ---
 # <a name="asynchronous-pipe-state"></a>Estado de canalización asincrónica
 
-En esta página se describe el estado de la canalización asincrónica para las llamadas RPC.
+En esta página se describe el estado de canalización asincrónica para las llamadas RPC.
 
-## <a name="in-pipe"></a>EN canalización
+## <a name="in-pipe"></a>Canalización IN
 
 Comportamiento del cliente
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Estado</th>
-<th>Nombre de estado</th>
-<th>Acción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>C</td>
-<td>Hacer la llamada</td>
-<td>Hacer que la RPC
-<ul>
-<li>En caso de éxito, vaya a estado WS</li>
-<li>Al final de la excepción</li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="even">
-<td>P</td>
-<td>Inserción</td>
-<td>Hacer una inserciones
-<ul>
-<li>En caso de error, ir al final</li>
-<li>En caso de éxito, vaya a WS</li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="odd">
-<td>WS</td>
-<td>Esperar envío</td>
-<td>Esperar notificación
-<ul>
-<li>Si se produce un error al recibir una notificación, puede</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcSendComplete</strong></a> correcto y es necesario enviar más datos, vaya a P</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcSendComplete</strong></a> correcto y no es necesario enviar más datos, vaya a NP</li>
-<li>Si se recibe un error <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcCallComplete</strong></a></li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="even">
-<td>NP</td>
-<td>Inserciones nulas</td>
-<td>Inserte 0 bytes (inserciones nulas)
-<ul>
-<li>En caso de error, ir al final</li>
-<li>En caso de éxito, vaya a WComp</li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="odd">
-<td>Poder</td>
-<td>Cancelar la llamada</td>
-<td>Llamar a <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccancelcall"><strong>RpcAsyncCancelCall</strong></a>ir a WComp<br/></td>
-</tr>
-<tr class="even">
-<td>WComp</td>
-<td>Esperar a que finalice</td>
-<td>Espere a que se reciba la notificación de notificationCall complete.<br/> Ir a comp<br/></td>
-</tr>
-<tr class="odd">
-<td>Comp</td>
-<td>Completion</td>
-<td>Problema <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>ir al final<br/></td>
-</tr>
-<tr class="even">
-<td>End</td>
 
+| State | Nombre de estado | Acción | 
+|-------|------------|--------|
+| C | Realización de la llamada | Realización de la RPC<ul><li>Si se ejecuta correctamente, vaya al estado WS</li><li>En la excepción, vaya a Fin.</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| P | Insertar | Realizar una inserción<ul><li>En caso de error, vaya a End (Fin).</li><li>Si se ejecuta correctamente, vaya a WS.</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| WS | Wait for Send | Esperar notificación<ul><li>En caso de error al obtener una notificación, vaya a Can (Puede)</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcSendComplete correctamente</strong></a> y es necesario enviar más datos, vaya a P.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcSendComplete</strong></a> correctamente y no es necesario enviar más datos, vaya a NP.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>un error RpcCallComplete,</strong></a> vaya a Comp.</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| NP | Inserción nula | Inserción de 0 bytes (inserción nula)<ul><li>En caso de error, vaya a End (Fin).</li><li>Si se ejecuta correctamente, vaya a WComp.</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| Enlatar | Cancelar la llamada | Llamada <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccancelcall"><strong>a RpcAsyncCancelCall</strong></a>Ir a WComp<br /> | 
+| WComp | Esperar a la finalización | Espere a que se reciba la notificaciónCall-complete notification.<br /> Ir a Comp<br /> | 
+| Comp | Completion | Emisión <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>de RpcAsyncCompleteCall</strong></a>Ir al final<br /> | 
+| End | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -104,147 +38,36 @@ En error: ir a<br/></td>
 
 Comportamiento del servidor
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Estado</th>
-<th>Nombre de estado</th>
-<th>Acción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D</td>
-<td>Dispatch</td>
-<td>La llamada se envía mediante el tiempo de ejecución de RPC Go a P<br/> Para producir un error irrecuperable (mientras se ejecuta en el subproceso RPC): generar excepción; ir al final<br/> Para que se produzca un error: vaya a<br/></td>
-</tr>
-<tr class="even">
-<td>P</td>
-<td>Extracción</td>
-<td>Crear una extracción
-<ul>
-<li>En caso de error, ir al final</li>
-<li>En caso de éxito y finalización sincrónica con bytes distintos de cero, lea Go to P</li>
-<li>En caso de éxito y finalización sincrónica con cero bytes leídos (extracción nula) vaya a comp</li>
-<li>En caso de éxito y finalización asincrónica (se devuelve ERROR_IO_PENDING) vaya a WP</li>
-</ul>
-Para generar un error: vaya a<br/></td>
-</tr>
-<tr class="odd">
-<td>WP</td>
-<td>Esperar a la extracción</td>
-<td>Esperar notificación
-<ul>
-<li>En caso de error al obtener una finalización, vaya a</li>
-<li>Si se recibe un error de <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> , vaya a un</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> correcto con una lectura de bytes distinta de cero, vaya a P</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> correcto con cero bytes leídos (extracción nula) vaya a comp</li>
-<li>Si se recibe un error, vaya a</li>
-</ul>
-Para generar un error: vaya a<br/></td>
-</tr>
-<tr class="even">
-<td>A</td>
-<td>Anular la llamada</td>
-<td>Llamar a <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall"><strong>RpcAsyncAbortCall</strong></a>ir al final<br/></td>
-</tr>
-<tr class="odd">
-<td>Comp</td>
-<td>Completion</td>
-<td>Llamar a <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>ir al final<br/></td>
-</tr>
-<tr class="even">
-<td>End</td>
 
+| State | Nombre de estado | Acción | 
+|-------|------------|--------|
+| D | Dispatch | El tiempo de ejecución de RPC envía la llamada a P.<br /> Para producir un error grave (mientras se ejecuta en el subproceso RPC): generar una excepción; vaya a End (Fin).<br /> Para producir un error correctamente: vaya a A.<br /> | 
+| P | Extracción | Realizar una extracción<ul><li>En caso de error, vaya a End (Fin).</li><li>Si la finalización es correcta y sincrónica con bytes distintos de cero, vaya a P.</li><li>Si la finalización es correcta y sincrónica con cero bytes leídos (extracción nula), vaya a Comp.</li><li>Si la finalización es correcta y asincrónica (ERROR_IO_PENDING se devuelve), vaya a WP.</li></ul>Para producir un error: vaya a A.<br /> | 
+| WP | Esperar a la extracción | Esperar notificación<ul><li>Si no se puede obtener una finalización, vaya a A.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>un error RpcReceiveComplete,</strong></a> vaya a A.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcReceiveComplete correctamente con</strong></a> bytes distintos de cero, vaya a P.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcReceiveComplete correctamente con</strong></a> cero bytes leídos (extracción nula), vaya a Comp.</li><li>Si se recibe un error, vaya a A.</li></ul>Para producir un error: vaya a A.<br /> | 
+| A | Anular la llamada | Llamada <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall"><strong>a RpcAsyncAbortCall</strong></a>Ir al final<br /> | 
+| Comp | Completion | Llamada <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>a RpcAsyncCompleteCall</strong></a>Ir al final<br /> | 
+| End | 
 
-</tr>
-</tbody>
-</table>
 
 
 
  
 
-## <a name="out-pipe"></a>Canalización de salida
+## <a name="out-pipe"></a>Canalización OUT
 
 Comportamiento del cliente
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Estado</th>
-<th>Nombre de estado</th>
-<th>Acción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>C</td>
-<td>Hacer la llamada</td>
-<td>Hacer que la RPC
-<ul>
-<li>En caso de éxito, vaya a P</li>
-<li>En caso de error, vaya a comp</li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="even">
-<td>P</td>
-<td>Extracción</td>
-<td>Crear una extracción
-<ul>
-<li>En caso de error, ir al final</li>
-<li>En caso de éxito y finalización sincrónica con bytes distintos de cero, lea Go to P</li>
-<li>En caso de éxito y finalización sincrónica con cero bytes leídos (extracción nula), vaya a WComp</li>
-<li>En caso de éxito y finalización asincrónica (se devuelve ERROR_IO_PENDING) vaya a WP</li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="odd">
-<td>WP</td>
-<td>Esperar a la extracción</td>
-<td>Esperar notificación
-<ul>
-<li>En caso de error al obtener una finalización, vaya a</li>
-<li>Si se recibe un error <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> , ir a puede</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> correcto con una lectura de bytes distinta de cero, vaya a P</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> correcto con cero bytes leídos (extracción nula) vaya a comp</li>
-<li>Si se recibe un error, puede</li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="even">
-<td>Poder</td>
-<td>Cancelar la llamada</td>
-<td>Llamar a <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccancelcall"><strong>RpcAsyncCancelCall</strong></a>ir a WComp<br/></td>
-</tr>
-<tr class="odd">
-<td>WComp</td>
-<td>Esperar a que finalice</td>
-<td>Esperar notificación. Se debe recibir la notificación de llamada completa.<br/> Ir a comp<br/></td>
-</tr>
-<tr class="even">
-<td>Comp</td>
-<td>Completion</td>
-<td>Problema <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>ir al final<br/></td>
-</tr>
-<tr class="odd">
-<td>End</td>
 
+| State | Nombre de estado | Acción | 
+|-------|------------|--------|
+| C | Realización de la llamada | Realización de la RPC<ul><li>Si se ejecuta correctamente, vaya a P.</li><li>En caso de error, vaya a Comp</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| P | Extracción | Realizar una extracción<ul><li>En caso de error, vaya a End (Fin).</li><li>Si la finalización es correcta y sincrónica con bytes distintos de cero, vaya a P.</li><li>Si la finalización es correcta y sincrónica con cero bytes leídos (extracción nula), vaya a WComp.</li><li>Si la finalización es correcta y asincrónica (ERROR_IO_PENDING se devuelve), vaya a WP.</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| WP | Esperar a la extracción | Esperar notificación<ul><li>Si no se puede obtener una finalización, vaya a Puede.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>un error RpcReceiveComplete,</strong></a> vaya a Puede.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcReceiveComplete correctamente con</strong></a> bytes distintos de cero, vaya a P.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcReceiveComplete correctamente con</strong></a> cero bytes leídos (extracción nula), vaya a Comp.</li><li>Si se recibe un error, vaya a Puede.</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| Enlatar | Cancelar la llamada | Llamada <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccancelcall"><strong>a RpcAsyncCancelCall</strong></a>Ir a WComp<br /> | 
+| WComp | Esperar a la finalización | Espere la notificación. Se debe recibir una notificación de llamada completa.<br /> Vaya a Comp<br /> | 
+| Comp | Completion | Emitir <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>Ir al final<br /> | 
+| End | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -252,196 +75,41 @@ En error: ir a<br/></td>
 
 Comportamiento del servidor
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Estado</th>
-<th>Nombre de estado</th>
-<th>Acción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D</td>
-<td>Dispatch</td>
-<td>La llamada se envía mediante el tiempo de ejecución de RPC Go a P<br/> Para producir un error irrecuperable (mientras se ejecuta en el subproceso RPC): generar excepción; ir al final<br/> Para que se produzca un error: vaya a<br/></td>
-</tr>
-<tr class="even">
-<td>P</td>
-<td>Inserción</td>
-<td>Hacer una inserciones
-<ul>
-<li>En caso de éxito, vaya a WP</li>
-<li>En caso de error, ir al final</li>
-</ul>
-Para generar un error: vaya a<br/></td>
-</tr>
-<tr class="odd">
-<td>WP</td>
-<td>Esperar a la inserciones</td>
-<td>Esperar notificación
-<ul>
-<li>En caso de error al obtener una finalización, vaya a</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcSendComplete</strong></a> correcto y es necesario enviar más datos, vaya a P</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcSendComplete</strong></a> correcto y no es necesario enviar más datos, vaya a NP</li>
-<li>Si se recibe un error de la comp.</li>
-</ul>
-Para generar un error: vaya a<br/></td>
-</tr>
-<tr class="even">
-<td>NP</td>
-<td>Inserciones nulas</td>
-<td>Inserte 0 bytes
-<ul>
-<li>en caso de éxito, vaya a WNP</li>
-<li>en caso de error, vaya a comp</li>
-</ul>
-Para generar un error: vaya a<br/></td>
-</tr>
-<tr class="odd">
-<td>PERSISTENTE</td>
-<td>Esperar una inserciones nulas</td>
-<td>Esperar notificación
-<ul>
-<li>En caso de error al obtener una finalización, vaya a</li>
-<li>Si se recibe un error de la comp.</li>
-<li>Si se ha recibido un éxito</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>A</td>
-<td>Anular la llamada</td>
-<td>Llamar a <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall"><strong>RpcAsyncAbortCall</strong></a>; ir al final</td>
-</tr>
-<tr class="odd">
-<td>Comp</td>
-<td>Completion</td>
-<td>Problema <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>; ir al final</td>
-</tr>
-<tr class="even">
-<td>End</td>
 
+| State | Nombre de estado | Acción | 
+|-------|------------|--------|
+| D | Dispatch | El tiempo de ejecución de RPC envía la llamada a P.<br /> Para producir un error grave (mientras se ejecuta en el subproceso RPC): generar una excepción; vaya a End (Fin).<br /> Para producir un error correctamente: vaya a A.<br /> | 
+| P | Insertar | Realizar una inserción<ul><li>En caso de éxito, vaya a WP.</li><li>En caso de error, vaya a End (Fin).</li></ul>Para producir un error: vaya a A.<br /> | 
+| WP | Espera de inserción | Esperar notificación<ul><li>Si no se puede obtener una finalización, vaya a A.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcSendComplete correctamente</strong></a> y es necesario enviar más datos, vaya a P.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcSendComplete correctamente</strong></a> y no es necesario enviar más datos, vaya a NP.</li><li>Si se recibe un error, vaya a Comp.</li></ul>Para producir un error: vaya a A.<br /> | 
+| NP | Inserción nula | Inserción de 0 bytes<ul><li>en caso de éxito, vaya a WNP.</li><li>en caso de error, vaya a Comp</li></ul>Para producir un error: vaya a A.<br /> | 
+| WNP | Espera de inserción nula | Esperar notificación<ul><li>Si no se puede obtener una finalización, vaya a A.</li><li>Si se recibe un error, vaya a Comp.</li><li>Si se recibe correctamente, vaya a Comp.</li></ul> | 
+| A | Anular la llamada | Llame <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall"><strong>a RpcAsyncAbortCall</strong></a>; vaya a End (Fin). | 
+| Comp | Completion | Emita <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>; vaya a End (Fin). | 
+| End | 
 
-</tr>
-</tbody>
-</table>
 
 
 
  
 
-## <a name="in-out-pipe"></a>Canalización de salida
+## <a name="in-out-pipe"></a>Canalización IN-OUT
 
 Comportamiento del cliente
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Estado</th>
-<th>Nombre de estado</th>
-<th>Acción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>C</td>
-<td>Hacer la llamada</td>
-<td>Hacer que la RPC
-<ul>
-<li>En caso de éxito, vaya a WS</li>
-<li>Al final de la excepción</li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="even">
-<td>PS</td>
-<td>Inserción</td>
-<td>Hacer una inserciones
-<ul>
-<li>En caso de error, ir al final</li>
-<li>En caso de éxito, vaya a WS</li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="odd">
-<td>WS</td>
-<td>Esperar envío</td>
-<td>Esperar notificación
-<ul>
-<li>Si se produce un error al recibir una notificación, puede</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcSendComplete</strong></a> correcto y es necesario enviar más datos, vaya a PS</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcSendComplete</strong></a> correcto y no es necesario enviar más datos, vaya a NP</li>
-<li>Si se recibe un error <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcCallComplete</strong></a></li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="even">
-<td>NP</td>
-<td>Inserciones nulas</td>
-<td>Inserte 0 bytes (inserciones nulas)
-<ul>
-<li>En caso de error, ir al final</li>
-<li>En caso de éxito, vaya a PL</li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="odd">
-<td>PL</td>
-<td>Extracción</td>
-<td>Crear una extracción
-<ul>
-<li>En caso de error, ir al final</li>
-<li>En caso de éxito y finalización sincrónica con bytes distintos de cero, lea Go to PL</li>
-<li>En caso de éxito y finalización sincrónica con cero bytes leídos (extracción nula), vaya a WComp</li>
-<li>En caso de éxito y finalización asincrónica (se devuelve ERROR_IO_PENDING) vaya a WPL</li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="even">
-<td>WPL</td>
-<td>Esperar a la extracción</td>
-<td>Esperar notificación
-<ul>
-<li>En caso de error al obtener una finalización, vaya a</li>
-<li>Si se recibe un error <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> , ir a puede</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> correcto con bytes de lectura distintos de cero, vaya a PL</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> correcto con cero bytes leídos, vaya a comp</li>
-<li>Si se recibe un error, puede</li>
-</ul>
-En error: ir a<br/></td>
-</tr>
-<tr class="odd">
-<td>Poder</td>
-<td>Cancelar la llamada</td>
-<td>Llamar a <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccancelcall"><strong>RpcAsyncCancelCall</strong></a>ir a WComp<br/></td>
-</tr>
-<tr class="even">
-<td>WComp</td>
-<td>Esperar a que finalice</td>
-<td>Esperar notificación. Se debe recibir la notificación de CallComplete.<br/> Ir a comp<br/></td>
-</tr>
-<tr class="odd">
-<td>Comp</td>
-<td>Completion</td>
-<td>Problema <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>ir al final<br/></td>
-</tr>
-<tr class="even">
-<td>End</td>
 
+| State | Nombre de estado | Acción | 
+|-------|------------|--------|
+| C | Realización de la llamada | Realización de rpc<ul><li>En caso de éxito, vaya a WS</li><li>En la excepción, vaya a End (Fin).</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| PS | Insertar | Realizar una inserción<ul><li>En caso de error, vaya a End (Fin).</li><li>En caso de éxito, vaya a WS</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| WS | Wait for Send | Esperar notificación<ul><li>En caso de error al obtener una notificación, vaya a Puede.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcSendComplete correctamente</strong></a> y es necesario enviar más datos, vaya a PS.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcSendComplete correctamente</strong></a> y no es necesario enviar más datos, vaya a NP.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>un error RpcCallComplete,</strong></a> vaya a Comp.</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| NP | Inserción nula | Inserción de 0 bytes (inserción nula)<ul><li>En caso de error, vaya a End (Fin).</li><li>Si se ejecuta correctamente, vaya a PL.</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| PL | Extracción | Realizar una extracción<ul><li>En caso de error, vaya a End (Fin).</li><li>En caso de finalización correcta y sincrónica con bytes distintos de cero, vaya a PL.</li><li>Si la finalización es correcta y sincrónica con cero bytes leídos (extracción nula), vaya a WComp.</li><li>Si la finalización es correcta y asincrónica (ERROR_IO_PENDING se devuelve), vaya a WPL.</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| WPL | Esperar a la extracción | Esperar notificación<ul><li>Si no se puede obtener una finalización, vaya a Puede.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>un error RpcReceiveComplete,</strong></a> vaya a Puede.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcReceiveComplete correctamente con</strong></a> bytes distintos de cero, vaya a PL.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcReceiveComplete correctamente con</strong></a> cero bytes leídos, vaya a Comp.</li><li>Si se recibe un error, vaya a Puede.</li></ul>Para producir un error: vaya a Can (Puede)<br /> | 
+| Enlatar | Cancelar la llamada | Llamada <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccancelcall"><strong>a RpcAsyncCancelCall</strong></a>Ir a WComp<br /> | 
+| WComp | Esperar a la finalización | Espere la notificación. Se debe recibir la notificación CallComplete.<br /> Vaya a Comp<br /> | 
+| Comp | Completion | Emitir <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>Ir al final<br /> | 
+| End | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -449,110 +117,20 @@ En error: ir a<br/></td>
 
 Comportamiento del servidor
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Estado</th>
-<th>Nombre de estado</th>
-<th>Acción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D</td>
-<td>Dispatch</td>
-<td>La llamada se envía mediante el runtimeGo de RPC a PL<br/> Para producir un error irrecuperable (mientras se ejecuta en el subproceso RPC): generar excepción; ir al final<br/> Para que se produzca un error: vaya a<br/></td>
-</tr>
-<tr class="even">
-<td>PL</td>
-<td>Extracción</td>
-<td>Crear una extracción
-<ul>
-<li>En caso de error, ir al final</li>
-<li>En caso de éxito y finalización sincrónica con bytes distintos de cero, lea Go to PL</li>
-<li>En caso de éxito y finalización sincrónica con cero bytes leídos (extracción nula), vaya a PS</li>
-<li>En caso de éxito y finalización asincrónica (se devuelve ERROR_IO_PENDING) vaya a WPL</li>
-</ul>
-Para generar un error: vaya a<br/></td>
-</tr>
-<tr class="odd">
-<td>WPL</td>
-<td>Esperar a la extracción</td>
-<td>Esperar notificación
-<ul>
-<li>En caso de error al obtener una finalización, vaya a</li>
-<li>Si se recibe un error de <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> , vaya a un</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> correcto con bytes de lectura distintos de cero, vaya a PL</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcReceiveComplete</strong></a> correcto con cero bytes leídos, vaya a PS</li>
-<li>Si se recibe un error, vaya A</li>
-</ul>
-Para generar un error: vaya a<br/></td>
-</tr>
-<tr class="even">
-<td>PS</td>
-<td>Inserción</td>
-<td>Hacer una inserciones
-<ul>
-<li>En caso de éxito, vaya a WPS</li>
-<li>En caso de error, ir al final</li>
-</ul>
-Para generar un error: vaya a<br/></td>
-</tr>
-<tr class="odd">
-<td>WPS</td>
-<td>Esperar a la inserciones</td>
-<td>Esperar notificación
-<ul>
-<li>En caso de error al obtener una finalización, vaya a</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcSendComplete</strong></a> correcto y es necesario enviar más datos, vaya a PS</li>
-<li>Si se recibe un <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>RpcSendComplete</strong></a> correcto y no es necesario enviar más datos, vaya a NP</li>
-<li>Si se recibe un error de la comp.</li>
-</ul>
-Para generar un error: vaya a<br/></td>
-</tr>
-<tr class="even">
-<td>NP</td>
-<td>Inserciones nulas</td>
-<td>Inserte 0 bytes
-<ul>
-<li>en caso de éxito, vaya a WNP</li>
-<li>en caso de error, vaya a comp</li>
-</ul>
-Para generar un error: vaya a<br/></td>
-</tr>
-<tr class="odd">
-<td>PERSISTENTE</td>
-<td>Esperar una inserciones nulas</td>
-<td>Esperar notificación
-<ul>
-<li>En caso de error al obtener una finalización, vaya a</li>
-<li>Si se recibe un error de la comp.</li>
-<li>Si se ha recibido un éxito</li>
-</ul>
-<br/></td>
-</tr>
-<tr class="even">
-<td>A</td>
-<td>Anular la llamada</td>
-<td>Llamar a <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall"><strong>RpcAsyncAbortCall</strong></a>; ir al final</td>
-</tr>
-<tr class="odd">
-<td>Comp</td>
-<td>Completion</td>
-<td>Problema <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>; ir al final</td>
-</tr>
-<tr class="even">
-<td>End</td>
 
+| State | Nombre de estado | Acción | 
+|-------|------------|--------|
+| D | Dispatch | El runtime de RPC envía la llamada a PL.<br /> Para producir un error grave (mientras se ejecuta en el subproceso RPC): generar una excepción; vaya a End (Fin).<br /> Para producir un error correctamente: vaya a A.<br /> | 
+| PL | Extracción | Realizar una extracción<ul><li>En caso de error, vaya a End (Fin).</li><li>En caso de finalización correcta y sincrónica con bytes distintos de cero, vaya a PL.</li><li>Si la finalización es correcta y sincrónica con cero bytes leídos (extracción nula), vaya a PS.</li><li>Si la finalización es correcta y asincrónica (ERROR_IO_PENDING se devuelve), vaya a WPL.</li></ul>Para producir un error: vaya a A<br /> | 
+| WPL | Esperar a la extracción | Esperar notificación<ul><li>Si no se puede obtener una finalización, vaya a A.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>un error RpcReceiveComplete,</strong></a> vaya a A.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcReceiveComplete correctamente con</strong></a> bytes distintos de cero, vaya a PL.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcReceiveComplete correctamente con</strong></a> cero bytes leídos, vaya a PS.</li><li>Si se recibe un error, vaya A.</li></ul>Para producir un error: vaya a A<br /> | 
+| PS | Insertar | Realizar una inserción<ul><li>En caso de éxito, vaya a WPS.</li><li>En caso de error, vaya a End (Fin).</li></ul>Para producir un error: vaya a A<br /> | 
+| WPS | Esperar inserción | Esperar notificación<ul><li>Si no se puede obtener una finalización, vaya a A.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcSendComplete correctamente</strong></a> y es necesario enviar más datos, vaya a PS.</li><li>Si se recibe <a href="/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event"><strong>rpcSendComplete correctamente</strong></a> y no es necesario enviar más datos, vaya a NP.</li><li>Si se recibe un error, vaya a Comp.</li></ul>Para producir un error: vaya a A<br /> | 
+| NP | Inserción nula | Inserción de 0 bytes<ul><li>en caso de éxito, vaya a WNP.</li><li>en caso de error, vaya a Comp</li></ul>Para producir un error: vaya a A<br /> | 
+| WNP | Espera de inserción nula | Esperar notificación<ul><li>Si no se puede obtener una finalización, vaya a A.</li><li>Si se recibe un error, vaya a Comp.</li><li>Si se recibe correctamente, vaya a Comp.</li></ul><br /> | 
+| A | Anular la llamada | Llame <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall"><strong>a RpcAsyncAbortCall</strong></a>; vaya a End (Fin). | 
+| Comp | Completion | Emita <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>; vaya a End (Fin). | 
+| End | 
 
-</tr>
-</tbody>
-</table>
 
 
 

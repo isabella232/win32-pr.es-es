@@ -1,5 +1,5 @@
 ---
-description: Solicitud asincrónica para iniciar una acción (por ejemplo, capturar un fotograma) en el motor.
+description: Una solicitud asincrónica para iniciar una acción (por ejemplo, capturar un fotograma) en el motor.
 MS-HAID: vspixengine.IRunActionRequest\_RequestAsync\_REFGUID\_IUnknown\_ptr\_IRunActionCallback\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 8f620f782ec55989ed9237def8451182f0c71bc4717aaace7f8b6a0588b37b65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d63816133dfcf8270de41481e1c99e3d691d51c3
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119845205"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627330"
 ---
 # <a name="span-idvspixengineirunactionrequest_requestasync_refguid_iunknown_ptr_irunactioncallback_ptr_dword_dwordspanirunactionrequestrequestasync-method"></a><span id="vspixengine.irunactionrequest_requestasync_refguid_iunknown_ptr_irunactioncallback_ptr_dword_dword"></span>IRunActionRequest::RequestAsync (método)
 
-Solicitud asincrónica para iniciar una acción (por ejemplo, capturar un fotograma) en el motor.
+Una solicitud asincrónica para iniciar una acción (por ejemplo, capturar un fotograma) en el motor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,13 +50,13 @@ Acción especificada.
 Carga útil de la acción especificada.
 
 *requestCallback*   
-Dirección de devolución de llamada utilizada para notificar al host de resultados.
+Dirección de devolución de llamada usada para notificar al host de resultados.
 
 *requestCookie*   
 Cookie que identifica de forma única la solicitud y se puede usar para indicar que se cancele.
 
 *progressIntervalMsecs*   
-No se usa.
+No se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -64,7 +64,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

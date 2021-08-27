@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: constructor EsentDiskException (String, JET_err)'
-title: Constructor EsentDiskException (String, JET_err)
+description: 'Más información sobre: Constructor EsentDiskException (String, JET_err)'
+title: EsentDiskException constructor (String, JET_err)
 TOCTitle: EsentDiskException constructor (String, JET_err)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDiskException.#ctor(System.String,Microsoft.Isam.Esent.Interop.JET_err)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdiskexception.esentdiskexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d518fcb263481c2563b92d0b579a686db13c0175
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9de3c9fd996c318a3df3445afbf1a7a0054ed3253c669a837c62c23e35159d9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065668"
 ---
-# <a name="esentdiskexception-constructor-string-jet_err"></a>Constructor EsentDiskException (String, JET_err)
+# <a name="esentdiskexception-constructor-string-jet_err"></a>EsentDiskException constructor (String, JET_err)
 
 Inicializa una nueva instancia de la clase EsentDiskException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,16 +60,16 @@ protected EsentDiskException(
 #### <a name="parameters"></a>Parámetros
 
   - description  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Descripción del error.
 
 <!-- end list -->
 
   - err  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
     
-    El código de error de la excepción.
+    Código de error de la excepción.
 
 ## <a name="see-also"></a>Vea también
 
@@ -79,6 +79,6 @@ protected EsentDiskException(
 
 [Miembros de EsentDiskException](./esentdiskexception-members.md)
 
-[Sobrecarga EsentDiskException](./esentdiskexception-constructor.md)
+[Sobrecarga de EsentDiskException](./esentdiskexception-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

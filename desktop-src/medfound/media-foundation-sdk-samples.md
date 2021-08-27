@@ -1,15 +1,15 @@
 ---
-description: En esta sección se describen las aplicaciones de ejemplo que muestran cómo usar Media Foundation.Encoding SamplesPlayback SamplesPlug-InsSource Reader SamplesVideo CaptureDecellaneous SamplesDeprecated or Obsolete SamplesRelated topics
+description: En esta sección se describen las aplicaciones de ejemplo que muestran cómo usar Media Foundation.Encoding SamplesPlayback SamplesPlug-InsSource Reader SamplesVideo CaptureMiscellaneous SamplesDeprecated or Obsolete SamplesRelated topics
 ms.assetid: 9d460107-ec12-4df5-a7a9-d19943685599
 title: Muestras de SDK de Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa7d07d4136e613b4c6b553aa089834f58ccf65b6b87043ec5148d8db4ee6547
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5482fabe5e4bfdfe5d451fd8ccb9c0ba0504a5ff
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119465151"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482721"
 ---
 # <a name="media-foundation-sdk-samples"></a>Muestras de SDK de Media Foundation
 
@@ -44,7 +44,7 @@ En esta sección se describen las aplicaciones de ejemplo que muestran cómo usa
 |---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [BasicPlayback](/previous-versions//bb970475(v=vs.85))          | Reproduce archivos de audio y vídeo mediante la [sesión multimedia](media-session.md). En este ejemplo se muestra cómo crear topologías de reproducción, controlar la sesión multimedia y recibir eventos de sesión durante la reproducción. |
 | [MFPlayer](/previous-versions//bb970516(v=vs.85))                    | Muestra algunas funciones de reproducción que no se incluyen en el [ejemplo BasicPlayback.](/previous-versions//bb970475(v=vs.85))                                                                                              |
-| [ProtectedPlayback](protectedplayback-sample.md) | Reproduce archivos de audio y vídeo protegidos. En este ejemplo se muestra cómo usar la sesión de ruta de acceso multimedia protegida (PMP) y cómo usar objetos habilitador de contenido.                                                              |
+| [ProtectedPlayback](protectedplayback-sample.md) | Reproduce archivos de audio y vídeo protegidos. En este ejemplo se muestra cómo usar la sesión de ruta de acceso multimedia protegida (PMP) y cómo usar objetos de habilitador de contenido.                                                              |
 
 
 
@@ -58,8 +58,8 @@ En esta sección se describen las aplicaciones de ejemplo que muestran cómo usa
 |----------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------|
 | [Descodificador](decoder-sample.md)                | Media Foundation transformación (MFT) | Descodificador de vídeo.                                                                                         |
 | [EVRPresenter](evrpresenter-sample.md)      | Varios                    | Presentador personalizado para [el representador de vídeo mejorado](enhanced-video-renderer.md) (EVR).                 |
-| [AudioDelay de MFT \_](mft-audiodelay-sample.md) | Mft                              | Transformación de efecto de audio. Muestra cómo escribir un MFT básico para el procesamiento de audio.                           |
-| [Escala de grises de MFT \_](mft-grayscale-sample.md)   | Mft                              | Efecto de vídeo de escala de grises. Muestra cómo escribir un MFT básico para el procesamiento de vídeo.                           |
+| [AudioDelay de MFT \_](mft-audiodelay-sample.md) | MFT                              | Transformación de efecto de audio. Muestra cómo escribir un MFT básico para el procesamiento de audio.                           |
+| [Escala de grises de MFT \_](mft-grayscale-sample.md)   | MFT                              | Efecto de vídeo de escala de grises. Muestra cómo escribir un MFT básico para el procesamiento de vídeo.                           |
 | [MPEG1Source](mpeg1source-sample.md)        | Origen multimedia                     | Analiza secuencias de capa de sistemas MPEG-1. Muestra cómo escribir un origen multimedia personalizado y un controlador de flujo de bytes. |
 | [WavSink](wavsink-sample.md)                | Receptor multimedia                       | Receptor de archivo que escribe archivos .wav. Muestra cómo escribir un receptor multimedia personalizado.                        |
 | [WavSource](wavsource-sample.md)            | Origen multimedia                     | Analiza archivos .wav. Muestra cómo escribir un origen multimedia personalizado y un controlador de flujo de bytes.                   |
@@ -112,50 +112,15 @@ En esta sección se describen las aplicaciones de ejemplo que muestran cómo usa
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Muestra</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="mfplayer2-sample.md">MFPlayer2</a></td>
-<td>Muestra algunas características avanzadas de reproducción de la API <a href="using-mfplay-for-audio-video-playback.md">MFPlay.</a></td>
-</tr>
-<tr class="even">
-<td><a href="/previous-versions//bb970336(v=vs.85)">PlaybackFX</a></td>
-<td>Aplica un efecto de escala de grises al vídeo. Muestra cómo insertar mfts en una topología de reproducción.<br/>
-<blockquote>
-[!Note]<br />
-Este ejemplo ya no se incluye en el SDK.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="playlist-sample.md">Lista de reproducción</a></td>
-<td>Reproduce una secuencia de archivos de audio mediante el origen del secuenciador.<br/>
-<blockquote>
-[!Note]<br />
-Este ejemplo ya no se incluye en el SDK.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><a href="simplecapture-sample.md">SimpleCapture</a></td>
-<td>Muestra cómo obtener una vista previa del vídeo desde un dispositivo de captura de vídeo mediante la API MFPlay.</td>
-</tr>
-<tr class="odd">
-<td><a href="simpleplay-sample.md">SimplePlay</a></td>
-<td>Muestra cómo reproducir un archivo multimedia mediante la API MFPlay.</td>
-</tr>
-</tbody>
-</table>
+
+| Muestra | Descripción | 
+|--------|-------------|
+| <a href="mfplayer2-sample.md">MFPlayer2</a> | Muestra algunas características avanzadas de reproducción de <a href="using-mfplay-for-audio-video-playback.md">MFPlay</a> API. | 
+| <a href="/previous-versions//bb970336(v=vs.85)">PlaybackFX</a> | Aplica un efecto de escala de grises al vídeo. Muestra cómo insertar mfts en una topología de reproducción.<br /><blockquote>[!Note]<br />Este ejemplo ya no se incluye en el SDK.</blockquote><br /> | 
+| <a href="playlist-sample.md">Lista de reproducción</a> | Reproduce una secuencia de archivos de audio mediante el origen del secuenciador.<br /><blockquote>[!Note]<br />Este ejemplo ya no se incluye en el SDK.</blockquote><br /> | 
+| <a href="simplecapture-sample.md">SimpleCapture</a> | Muestra cómo obtener una vista previa del vídeo desde un dispositivo de captura de vídeo mediante la API MFPlay. | 
+| <a href="simpleplay-sample.md">SimplePlay</a> | Muestra cómo reproducir un archivo multimedia mediante la API MFPlay. | 
+
 
 
 

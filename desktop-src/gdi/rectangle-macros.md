@@ -4,16 +4,16 @@ ms.assetid: ef123b97-6dec-4f9b-b831-cc8451a94a74
 title: Macros de rectángulo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd3091f1c4c27f3f8363f31a566f86789651aad7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f370289a491f944433f23aa825c533af1975602137f53e68bd35ce934a41589d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092755"
 ---
 # <a name="rectangle-macros"></a>Macros de rectángulo
 
-Las macros siguientes se usan con los rectángulos.
+Las macros siguientes se usan con rectángulos.
 
 -   [**MAKEPOINTS**](/windows/desktop/api/Wingdi/nf-wingdi-makepoints)
 -   [**POINTSTOPOINT**](/windows/desktop/api/Winuser/nf-winuser-pointstopoint)

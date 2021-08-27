@@ -1,54 +1,54 @@
 ---
-title: Enlazar con el catálogo global
-description: El catálogo global es un espacio de nombres que contiene los datos de directorio de todos los dominios de un bosque.
+title: Enlace al catálogo global
+description: El catálogo global es un espacio de nombres que contiene datos de directorio para todos los dominios de un bosque.
 ms.assetid: c3c131c7-d9dd-4dbd-a909-abd0ffd9f375
 ms.tgt_platform: multiple
 keywords:
-- Enlazar al anuncio de catálogo global
-- Catálogo global (AD), enlazar a
+- Enlace al catálogo global de AD
+- catálogo global de AD, enlace a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08fe40b944130f66617b0c111b361ca51cbef126
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b4d094a0c07a40fa063b726d0ba1c5a15977873d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104077563"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881646"
 ---
-# <a name="binding-to-the-global-catalog"></a>Enlazar con el catálogo global
+# <a name="binding-to-the-global-catalog"></a>Enlace al catálogo global
 
-El catálogo global es un espacio de nombres que contiene los datos de directorio de todos los dominios de un bosque. El catálogo global contiene una réplica parcial de cada directorio de dominio. Contiene una entrada para cada objeto del bosque de empresa, pero no contiene todas las propiedades de cada objeto. En su lugar, solo contiene las propiedades especificadas para su inclusión en el catálogo global.
+El catálogo global es un espacio de nombres que contiene datos de directorio para todos los dominios de un bosque. El catálogo global contiene una réplica parcial de cada directorio de dominio. Contiene una entrada para cada objeto del bosque empresarial, pero no contiene todas las propiedades de cada objeto. En su lugar, solo contiene las propiedades especificadas para su inclusión en el catálogo global.
 
-El catálogo global se almacena en servidores específicos de toda la empresa. Solo los controladores de dominio pueden servir como servidores de catálogo global. Los administradores indican si un controlador de dominio determinado contiene un catálogo global mediante el Active Directory el administrador de sitios y servicios.
+El catálogo global se almacena en servidores específicos de toda la empresa. Solo los controladores de dominio pueden actuar como servidores de catálogo global. Los administradores indican si un controlador de dominio determinado contiene un catálogo global mediante Active Directory Sites and Services Manager.
 
-Para enlazar con el catálogo global con ADSI, use el moniker "GC:".
+Para enlazar al catálogo global con ADSI, use el moniker "GC:".
 
-Hay dos maneras de enlazar con el catálogo global para realizar una búsqueda en un bosque:
+Hay dos maneras de enlazar al catálogo global para realizar una búsqueda en un bosque:
 
--   Enlazar con el objeto raíz de la empresa para buscar en todos los dominios del bosque.
--   Enlazar a un objeto específico para buscar ese objeto y sus elementos secundarios. Por ejemplo, si se enlaza a un dominio que tiene dos dominios debajo en un árbol de dominios del bosque, puede buscar en estos tres dominios. Tenga en cuenta que el nombre distintivo del objeto al que se va a enlazar es exactamente el mismo que el nombre distintivo que se usa para enlazar con el espacio de nombres "LDAP:". Recuerde que "LDAP:" es una réplica completa de un solo dominio y que "GC:" es una réplica parcial de todos los dominios del bosque.
+-   Enlace al objeto raíz de la empresa para buscar en todos los dominios del bosque.
+-   Enlace a un objeto específico para buscar ese objeto y sus objetos secundarios. Por ejemplo, si enlaza a un dominio que tiene dos dominios debajo de él en un árbol de dominio del bosque, puede buscar en esos tres dominios. Tenga en cuenta que el nombre distintivo del objeto al que se va a enlazar es exactamente el mismo que el nombre distintivo utilizado para enlazar al espacio de nombres "LDAP:". Recuerde que "LDAP:" es una réplica completa de un solo dominio y que "GC:" es una réplica parcial de todos los dominios del bosque.
 
-Al igual que con el moniker "LDAP:", puede utilizar el enlace sin servidor o enlazar a un servidor de catálogo global específico. Si busca en el bosque actual, use el enlace sin servidor. Sin embargo, si realiza búsquedas en otro bosque, especifique un nombre de dominio o un servidor de catálogo global con el que enlazar, como se muestra en los ejemplos siguientes.
+Al igual que con el moniker "LDAP:", puede usar el enlace sin servidor o enlazar a un servidor de catálogo global específico. Si busca en el bosque actual, use el enlace sin servidor. Sin embargo, si busca en otro bosque, especifique un nombre de dominio o un servidor de catálogo global al que enlazar, como se muestra en los ejemplos siguientes.
 
-Enlazar con el nombre de dominio:
+Enlace mediante el nombre de dominio:
 
 ``` syntax
 GC://fabrikam.com
 ```
 
-Enlazar con el nombre del servidor:
+Enlace mediante el nombre del servidor:
 
 ``` syntax
 GC://servername
 ```
 
-También puede enlazar a un objeto específico en el catálogo global. Para enlazar con el objeto sales del dominio Fabrikam, use el formato siguiente.
+También puede enlazar a un objeto específico dentro del catálogo global. Para enlazar al objeto sales en el dominio fabrikam, use el formato siguiente.
 
 ``` syntax
 GC://fabrikam.com/DC=sales,DC=fabrikam,DC=com
 ```
 
-O bien, para enlazar al objeto sales del servidor, use el formato siguiente.
+O bien, para enlazar al objeto sales en el servidor, use el formato siguiente.
 
 ``` syntax
 GC://servername.fabrikam.com/DC=sales,DC=fabrikam,DC=com
@@ -56,23 +56,23 @@ GC://servername.fabrikam.com/DC=sales,DC=fabrikam,DC=com
 
 **Para buscar en todo el bosque**
 
-1.  Enlazar a la raíz del espacio de nombres del catálogo global.
-2.  Enumerar el contenedor de catálogo global. El contenedor de catálogos globales contiene un solo objeto que puede usar para buscar en todo el bosque.
-3.  Use el objeto en el contenedor para realizar la búsqueda. En C/C++, llame a [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obtener un puntero de [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) en el objeto, de modo que pueda usar la interfaz **IDirectorySearch** para realizar la búsqueda. En Visual Basic, utilice el objeto devuelto de la enumeración en la consulta de ADO.
+1.  Enlace a la raíz del espacio de nombres del catálogo global.
+2.  Enumerar el contenedor del catálogo global. El contenedor catálogo global contiene un único objeto que puede usar para buscar en todo el bosque.
+3.  Use el objeto del contenedor para realizar la búsqueda. En C/C++, llame a [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obtener un puntero [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) en el objeto para que pueda usar la **interfaz IDirectorySearch** para realizar la búsqueda. En Visual Basic, use el objeto devuelto por la enumeración en la consulta de ADO.
 
-Para enumerar los servidores de catálogo global de un sitio, realice una búsqueda de subárbol LDAP de "CN = <yoursite> , CN = Sites <DN of the configurationNamingContext> ", usando la siguiente cadena de filtro.
+Para enumerar los servidores del catálogo global de un sitio, realice una búsqueda de subárbol LDAP de "cn= &lt; yoursite &gt; ,cn=sites, ", mediante la <DN of the configurationNamingContext> siguiente cadena de filtro.
 
 ``` syntax
 (&(objectCategory=nTDSDSA)(options:1.2.840.113556.1.4.803:=1))
 ```
 
-Este filtro usa el **bit de la \_ regla de coincidencia LDAP \_ \_ \_ y** el operador de regla de coincidencia (1.2.840.113556.1.4.803) para buscar objetos **nTDSDSA** que tengan el bit de orden inferior establecido en la máscara de bits del atributo **Options** . El bit de orden inferior, que corresponde a la constante de **\_ \_ \_ GC nTDSDSA is** Defined en ntdsapi. h, identifica el objeto **nTDSDSA** de un servidor de catálogo global. Para obtener más información sobre las reglas de coincidencia, consulte [Sintaxis de filtro de búsqueda](/windows/desktop/ADSI/search-filter-syntax).
+Este filtro usa el operador de regla de coincidencia **\_ LDAP MATCHING RULE BIT \_ \_ \_ AND** (1.2.840.113556.1.4.803) para buscar **objetos nTDSDSA** que tienen el bit de orden bajo establecido en la máscara de bits del atributo **options.** El bit de orden bajo, que corresponde a la constante **GC NTDSDSA \_ OPT \_ IS \_** definida en Ntdsapi.h, identifica el objeto **nTDSDSA** de un servidor de catálogo global. Para obtener más información sobre las reglas de coincidencia, vea [Sintaxis de filtro de búsqueda.](/windows/desktop/ADSI/search-filter-syntax)
 
-El elemento primario del objeto **nTDSDSA** es el objeto Server y la propiedad **DnsHostName** del objeto Server es el nombre DNS del servidor de catálogo global.
+El elemento primario del objeto **nTDSDSA** es el objeto de servidor y la propiedad **dNSHostName** del objeto de servidor es el nombre DNS del servidor de catálogo global.
 
-No puede usar las \# constantes de definición como **nTDSDSA \_ OPC \_ es \_** el bit de la regla de coincidencia de GC y **LDAP, \_ \_ \_ \_ y** directamente en una cadena de filtro de búsqueda. Sin embargo, puede usar estas constantes como argumentos para una función como [**swprintf \_ s**](/windows/win32/api/winuser/nf-winuser-wsprintfa) para insertar los valores constantes en una cadena de filtro.
+No puede usar constantes de definición como \# **NTDSDSA \_ OPT \_ IS \_ GC** y **LDAP \_ MATCHING RULE BIT \_ \_ \_ Y** directamente en una cadena de filtro de búsqueda. Sin embargo, puede usar estas constantes como argumentos para una función como [**swprintf \_ s**](/windows/win32/api/winuser/nf-winuser-wsprintfa) para insertar los valores constantes en una cadena de filtro.
 
-El catálogo global no representa la estructura de árbol de todo el bosque. Por ejemplo, podría esperar que el ejemplo de código siguiente enumerara todos los dominios del bosque y todos los objetos secundarios de cada dominio. En realidad, lo que realmente hace es enumerar todos los dominios del bosque, pero ninguno de los objetos de dominio enumerados contiene elementos secundarios. Se trata de una limitación del catálogo global.
+El catálogo global no representa toda la estructura de árbol de bosque. Por ejemplo, puede esperar que en el ejemplo de código siguiente se enumeren todos los dominios del bosque y todos los objetos secundarios de cada dominio. En realidad, lo que realmente hace es enumerar todos los dominios del bosque, pero ninguno de los objetos de dominio enumerados contiene ningún elemento secundario. Se trata de una limitación del catálogo global.
 
 
 ```VB
@@ -94,7 +94,7 @@ Next
 
 
 
-Para corregir esto, es necesario enlazar con cada objeto de dominio y, a continuación, enumerar los objetos secundarios de cada dominio. En el ejemplo de código siguiente se muestra la técnica adecuada.
+Para corregirlo, es necesario enlazar a cada objeto de dominio y, a continuación, enumerar los objetos secundarios de cada dominio. La técnica adecuada se muestra en el ejemplo de código siguiente.
 
 
 ```VB
@@ -120,8 +120,8 @@ Next
 
 
 
-Para obtener más información y ejemplos de código que muestren cómo buscar en todo el bosque, vea el [código de ejemplo para buscar en un bosque](example-code-for-searching-a-forest.md).
+Para obtener más información y ejemplos de código que muestran cómo buscar en todo un bosque, vea [Código de ejemplo para buscar un bosque.](example-code-for-searching-a-forest.md)
 
- 
+ 
 
- 
+ 

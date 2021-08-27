@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_DBID'
+description: 'Más información sobre: JET_DBID'
 title: JET_DBID
 TOCTitle: JET_DBID
 ms:assetid: 516acb79-aa75-4609-81b6-3b2e4e0c95af
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fe3a8ccd813ececcb42388c7d577f78e9055d5b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 988dd14ca96a5818254602b5ab6dcaeab4952669
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809680"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470911"
 ---
 # <a name="jet_dbid"></a>JET_DBID
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_dbid"></a>JET_DBID
 
-El tipo de datos **JET_DBID** contiene el identificador de la base de datos. Un identificador de base de datos se utiliza para administrar el esquema de una base de datos. También se puede usar para administrar las tablas dentro de esa base de datos.
+El **JET_DBID** tipo de datos contiene el identificador de la base de datos. Un identificador de base de datos se usa para administrar el esquema de una base de datos. También se puede usar para administrar las tablas dentro de esa base de datos.
 
 ```cpp
     typedef unsigned long JET_DBID;
@@ -43,36 +43,19 @@ Identificador de la base de datos.
 
 Un valor de JET_dbidNil indica que el identificador no es válido.
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Un identificador de base de datos se crea mediante una llamada a [JetCreateDatabase](./jetcreatedatabase-function.md) o [JetOpenDatabase](./jetopendatabase-function.md).
+Un identificador de base de datos se crea mediante una llamada a [JetCreateDatabase](./jetcreatedatabase-function.md) o [JetOpenDatabase.](./jetopendatabase-function.md)
 
-Un identificador de base de datos se puede cerrar explícitamente con [JetCloseDatabase](./jetclosedatabase-function.md) o cerrarse implícitamente mediante [JetEndSession](./jetendsession-function.md) o [JetTerm](./jetterm-function.md).
+[JetCloseDatabase](./jetclosedatabase-function.md) puede cerrar explícitamente un identificador de base de datos o cerrarlo implícitamente [JetEndSession](./jetendsession-function.md) [o JetTerm.](./jetterm-function.md)
 
-Un identificador de base de datos solo se puede usar dentro de la sesión en la que se creó. La existencia de un identificador de base de datos corresponde al abierto lógico de una base de datos. Una apertura lógica es diferente de la abierta física de una base de datos, que se produce cuando se adjunta una base de datos al sistema.
+Un identificador de base de datos solo se puede usar dentro de la sesión en la que se creó. La existencia de un identificador de base de datos corresponde a la apertura lógica de una base de datos. Una apertura lógica es diferente de la apertura física de una base de datos, lo que sucede cuando una base de datos está asociada al sistema.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

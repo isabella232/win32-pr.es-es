@@ -1,11 +1,11 @@
 ---
 title: Atributo Vol-Table-GUID
-description: Identificador único de una entrada de la tabla de seguimiento de vínculos.
+description: Identificador único de una entrada de la tabla Link-Track-Volume.
 ms.assetid: 3a63406a-e751-4234-a601-8f5a57f0a3b7
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo Vol-Table-GUID
-- volTableGUID esquema de AD de atributos
+- Esquema de AD del atributo volTableGUID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2a23bcd088304b4a683ce3ff0f203d3c82fecf8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 46d692efd1f16c8e66816d49ec13f947b88da0fa0f8200787a5d5f9cda1bdf0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065575"
 ---
 # <a name="vol-table-guid-attribute"></a>Atributo Vol-Table-GUID
 
-Identificador único de una entrada de la tabla de seguimiento de vínculos.
+Identificador único de una entrada de la tabla Link-Track-Volume.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Vol-Table-GUID                                        |
-| Nombre para mostrar de LDAP | volTableGUID                                          |
-| Tamaño              | 16 bytes                                              |
-| Actualizar privilegio  | El sistema establece este valor.                      |
-| Frecuencia de actualización  | Siempre que se crea un nuevo vínculo a un archivo.             |
+| Ldap-Display-Name | volTableGUID                                          |
+| Size              | 16 bytes                                              |
+| Privilegio actualizar  | El sistema establece este valor.                      |
+| Frecuencia de actualización  | Cada vez que se crea un nuevo vínculo a un archivo.             |
 | Attribute-Id      | 1.2.840.113556.1.4.336                                |
-| System-ID-GUID    | 1f0075fd-7e40-11d0-afd6-00c04fd930c9                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 1f0075fd-7e40-11d0-afd6-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ Identificador único de una entrada de la tabla de seguimiento de vínculos.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Identificador único de una entrada de la tabla de seguimiento de vínculos.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Identificador único de una entrada de la tabla de seguimiento de vínculos.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Identificador único de una entrada de la tabla de seguimiento de vínculos.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Identificador único de una entrada de la tabla de seguimiento de vínculos.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Identificador único de una entrada de la tabla de seguimiento de vínculos.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 

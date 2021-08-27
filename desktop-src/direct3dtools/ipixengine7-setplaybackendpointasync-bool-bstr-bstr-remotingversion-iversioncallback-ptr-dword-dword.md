@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPixEngine7\_SetPlaybackEndpointAsync\_BOOL\_BSTR\_BSTR\_Re
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'IPixEngine7:: SetPlaybackEndpointAsync (método)'
+title: IPixEngine7::SetPlaybackEndpointAsync (método)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 4F76EFFF-F3CB-4BEA-999F-639876C7F792
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2e0970b1a2a786c828a24efef0ae9e4057dbe2cc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ae4449c1cfcd0518afb386f35ebcd576dabe4b0b
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806691"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626991"
 ---
-# <a name="span-idvspixengineipixengine7_setplaybackendpointasync_bool_bstr_bstr_remotingversion_iversioncallback_ptr_dword_dwordspanipixengine7setplaybackendpointasync-method"></a><span id="vspixengine.ipixengine7_setplaybackendpointasync_bool_bstr_bstr_remotingversion_iversioncallback_ptr_dword_dword"></span>IPixEngine7:: SetPlaybackEndpointAsync (método)
+# <a name="span-idvspixengineipixengine7_setplaybackendpointasync_bool_bstr_bstr_remotingversion_iversioncallback_ptr_dword_dwordspanipixengine7setplaybackendpointasync-method"></a><span id="vspixengine.ipixengine7_setplaybackendpointasync_bool_bstr_bstr_remotingversion_iversioncallback_ptr_dword_dword"></span>IPixEngine7::SetPlaybackEndpointAsync (método)
 
 Establece de forma asincrónica la dirección del punto de conexión utilizada para conectarse a un motor remoto.
 
@@ -46,33 +46,33 @@ HRESULT SetPlaybackEndpointAsync(
 ## <a name="parameters"></a>Parámetros
 
 *bUseAuthentication*   
-True para utilizar la autenticación; en caso contrario, false.
+true para usar la autenticación; de lo contrario, false.
 
-*finales*   
-Cadena COM que contiene la dirección del extremo.
+*Extremo*   
+Cadena COM que contiene la dirección del punto de conexión.
 
 *sessionKey*   
 Cadena COM que contiene la clave de sesión utilizada para el cifrado.
 
 *remoteVersion*   
-Especifica la versión del motor remoto que se va a usar.
+Especifica la versión del motor remoto que se usará.
 
 *versionCallback*   
-Dirección de devolución de llamada que se utiliza para notificar al host los resultados.
+Dirección de devolución de llamada usada para notificar al host de resultados.
 
 *requestCookie*   
-Cookie que identifica de forma única la solicitud y que se puede usar para indicar que se va a cancelar.
+Cookie que identifica de forma única la solicitud y se puede usar para indicar que se cancele.
 
 *progressIntervalMsecs*   
 No se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

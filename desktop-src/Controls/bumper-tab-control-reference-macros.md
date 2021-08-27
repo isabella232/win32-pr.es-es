@@ -1,17 +1,17 @@
 ---
-title: Macros de control de pestañas
-description: Macros de control de pestañas
+title: Macros de control de pestaña
+description: Macros de control de pestaña
 ms.assetid: 23c5bea5-c43e-45df-9761-911ed21f6a41
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd928360a3626528d3b44b3854f833278264c4ae
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e7165db6ccd2c89ef511a8025d5f18537e0eca9009fcfee5c807e1b15ee64756
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064035"
 ---
-# <a name="tab-control-macros"></a>Macros de control de pestañas
+# <a name="tab-control-macros"></a>Macros de control de pestaña
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,7 +23,7 @@ ms.locfileid: "103914505"
 -   [**TabCtrl \_ GetCurSel**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel)
 -   [**TabCtrl \_ GetExtendedStyle**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getextendedstyle)
 -   [**TabCtrl \_ GetImageList**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getimagelist)
--   [**\_GetItem TabCtrl**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getitem)
+-   [**TabCtrl \_ GetItem**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getitem)
 -   [**TabCtrl \_ GetItemCount**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getitemcount)
 -   [**TabCtrl \_ GetItemRect**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getitemrect)
 -   [**TabCtrl \_ GetRowCount**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getrowcount)
