@@ -1,7 +1,7 @@
 ---
 description: La estructura PROTOCOLTABLE contiene una lista de protocolos.
 ms.assetid: dad2b228-5916-44fe-b78e-ebc6507dc555
-title: Estructura PROTOCOLTABLE (Netmon. h)
+title: Estructura PROTOCOLTABLE (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 3ad79beca7ce79611747a02704ffc05da5fc3d4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a30d890fa5b6dcbbca1797a53722b97b2109cc9943ce07260c7f47514cfeb7b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036985"
 ---
 # <a name="protocoltable-structure"></a>Estructura PROTOCOLTABLE
 
-La estructura **PROTOCOLTABLE** contiene una lista de protocolos.
+La **estructura PROTOCOLTABLE** contiene una lista de protocolos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ Matriz de identificadores para protocolos habilitados.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

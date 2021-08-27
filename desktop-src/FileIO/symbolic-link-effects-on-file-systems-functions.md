@@ -1,19 +1,19 @@
 ---
 description: Cómo afectan los vínculos simbólicos a las funciones de archivo estándar que usan nombres de ruta de acceso para especificar uno o varios archivos.
 ms.assetid: afda53eb-d0db-4844-9dd0-8a7d93ca341f
-title: Efectos simbólicos de los vínculos en las funciones del sistema de archivos
+title: Efectos simbólicos de vínculos en funciones de sistemas de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d4a2fe1696bf5260a0c55ba8b6e4f107270d6da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e1c5d140dc70de8ebc255b779b226b6da156aa2b8961c49d86f466ac01b26ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078465"
 ---
-# <a name="symbolic-link-effects-on-file-systems-functions"></a>Efectos simbólicos de los vínculos en las funciones del sistema de archivos
+# <a name="symbolic-link-effects-on-file-systems-functions"></a>Efectos simbólicos de vínculos en funciones de sistemas de archivos
 
-Varias funciones de archivo estándar que utilizan nombres de ruta de acceso para especificar uno o varios archivos se ven afectadas por el uso de vínculos simbólicos. En este tema se enumeran las funciones y se describen los cambios de comportamiento:
+Varias funciones de archivo estándar que usan nombres de ruta de acceso para especificar uno o varios archivos se ven afectadas por el uso de vínculos simbólicos. En este tema se enumeran esas funciones y se describen los cambios de comportamiento:
 
 -   [CopyFile y CopyFileTransacted](#copyfile-and-copyfiletransacted)
 -   [CopyFileEx](#copyfileex)
@@ -37,84 +37,84 @@ Varias funciones de archivo estándar que utilizan nombres de ruta de acceso par
 -   [SetFileSecurity](#setfilesecurity)
 -   [Temas relacionados](#related-topics)
 
-En las siguientes descripciones, se usan los términos siguientes:
+En las descripciones siguientes, se usan los siguientes términos:
 
 -   Archivo de origen: el archivo original que se va a copiar.
 -   Archivo de destino: la copia recién creada del archivo.
 -   Destino: la entidad a la que apunta un vínculo simbólico.
 
 > [!Note]  
-> El comportamiento de las funciones que aceptan un identificador creado con la función [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) , como la función [**GetFileTime**](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) , variará en función de si se llamó a la función **CreateFile** mediante la marca de **\_ \_ \_ \_ punto de reanálisis de la marca de archivo abierta** . Para obtener más información, vea [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) y la siguiente sección de [CreateFile y CreateFileTransacted](#createfile-and-createfiletransacted) .
+> El comportamiento de las funciones que aceptan un identificador creado mediante la función [**CreateFile,**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) como la función [**GetFileTime,**](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) variará en función de si se llamó o no a la función **CreateFile** mediante la marca **FILE FLAG OPEN \_ \_ \_ REPARSE \_ POINT.** Para obtener más información, [**vea CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) y la [siguiente sección CreateFile y CreateFileTransacted.](#createfile-and-createfiletransacted)
 
  
 
 ## <a name="copyfile-and-copyfiletransacted"></a>CopyFile y CopyFileTransacted
 
-Si el archivo de origen es un vínculo simbólico, el archivo que se ha copiado es el destino del vínculo simbólico.
+Si el archivo de origen es un vínculo simbólico, el archivo real copiado es el destino del vínculo simbólico.
 
-Si el archivo de destino ya existe y es un vínculo simbólico, el archivo de código fuente sobrescribe el vínculo simbólico.
+Si el archivo de destino ya existe y es un vínculo simbólico, el archivo de origen sobrescribe el vínculo simbólico.
 
 ## <a name="copyfileex"></a>CopyFileEx
 
-Si se especifica **Copy \_ file \_ Copy \_ SYMLINK** y:
+Si **se especifica COPY FILE COPY \_ \_ \_ SYMLINK** y:
 
 -   Si el archivo de origen es un vínculo simbólico, se copia el vínculo simbólico, no el archivo de destino.
--   Si el archivo de origen no es un vínculo simbólico, no hay ningún cambio en el comportamiento.
--   Si el archivo de destino es un vínculo simbólico existente, se sobrescribe el vínculo simbólico, no el archivo de destino.
--   Si también se especifica la operación de **copia de \_ archivo \_ \_ si \_ existe** y el archivo de destino es un vínculo simbólico existente, se produce un error en la operación en todos los casos.
+-   Si el archivo de origen no es un vínculo simbólico, no hay ningún cambio de comportamiento.
+-   Si el archivo de destino es un vínculo simbólico existente, el vínculo simbólico se sobrescribe, no el archivo de destino.
+-   Si **también se especifica COPY FILE FAIL IF \_ \_ \_ \_ EXISTS** y el archivo de destino es un vínculo simbólico existente, se produce un error en la operación en todos los casos.
 
-Si no se especifica **Copy \_ file \_ Copy \_ SYMLINK** y:
+Si **no se especifica COPY FILE COPY \_ \_ \_ SYMLINK** y:
 
--   Si también se especifica la operación de **copia de \_ archivo \_ \_ si \_ existe** , y el archivo de destino es un vínculo simbólico existente, se produce un error en la operación solo si existe el destino del vínculo simbólico.
--   Si no se especifica **Copy File si no se especifica \_ \_ \_ \_ EXISTS** , no se produce ningún cambio en el comportamiento.
+-   Si **también se especifica COPY FILE FAIL IF \_ \_ \_ \_ EXISTS** y el archivo de destino es un vínculo simbólico existente, la operación produce un error solo si el destino del vínculo simbólico existe.
+-   Si **no se especifica COPY FILE FAIL IF \_ \_ \_ \_ EXISTS,** no hay ningún cambio de comportamiento.
 
-**Windows Server 2003 y Windows XP:** No se admite la marca de **\_ \_ \_ SYMLINK copiar archivo** . Si el archivo de origen es un vínculo simbólico, el archivo que se ha copiado es el destino del vínculo simbólico.
+**Windows Server 2003 y Windows XP:** No **se admite la marca COPY FILE COPY \_ \_ \_ SYMLINK.** Si el archivo de origen es un vínculo simbólico, el archivo real copiado es el destino del vínculo simbólico.
 
 ## <a name="createfile-and-createfiletransacted"></a>CreateFile y CreateFileTransacted
 
-Si la llamada a esta función crea un nuevo archivo, no hay ningún cambio en el comportamiento.
+Si la llamada a esta función crea un nuevo archivo, no hay ningún cambio de comportamiento.
 
-Si se especifica el **marcador de archivo, abra el \_ \_ \_ \_ punto de reanálisis** y:
+Si **se especifica FILE FLAG OPEN \_ \_ \_ REPARSE \_ POINT** y:
 
--   Si se abre un archivo existente y es un vínculo simbólico, el identificador devuelto es un identificador del vínculo simbólico.
--   Si **crear \_ siempre**, **truncar \_ existente** o **\_ \_ Borrar marca de archivo \_ al \_ cerrar** se especifican, el archivo afectado es un vínculo simbólico.
+-   Si se abre un archivo existente y es un vínculo simbólico, el identificador devuelto es un identificador para el vínculo simbólico.
+-   Si **se especifican CREATE \_ ALWAYS**, **TRUNCATE \_ EXISTING** o **FILE FLAG DELETE ON \_ \_ \_ \_ CLOSE,** el archivo afectado es un vínculo simbólico.
 
-Si no se especifica el **marcador de archivo, abra el \_ \_ \_ \_ punto de reanálisis** y:
+Si **no se especifica FILE FLAG OPEN \_ \_ \_ REPARSE \_ POINT** y:
 
--   Si se abre un archivo existente y es un vínculo simbólico, el identificador devuelto es un identificador del destino.
--   Si **crear \_ siempre**, **truncar \_ existente** o **\_ \_ Borrar marca de archivo \_ al \_ cerrar** se especifican, el archivo afectado es el destino.
+-   Si se abre un archivo existente y es un vínculo simbólico, el identificador devuelto es un identificador para el destino.
+-   Si **se especifican CREATE \_ ALWAYS**, **TRUNCATE \_ EXISTING** o **FILE FLAG DELETE ON \_ \_ \_ \_ CLOSE,** el archivo afectado es el destino.
 
 ## <a name="createhardlink-and-createhardlinktransacted"></a>CreateHardLink y CreateHardLinkTransacted
 
-Si la ruta de acceso apunta a un vínculo simbólico, la función crea un vínculo físico al destino.
+Si la ruta de acceso apunta a un vínculo simbólico, la función crea un vínculo duro al destino.
 
 ## <a name="deletefile-and-deletefiletransacted"></a>DeleteFile y DeleteFileTransacted
 
-Si la ruta de acceso apunta a un vínculo simbólico, se elimina el vínculo simbólico, no el destino. Para eliminar un destino, debe llamar a [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) y especificar **el \_ marcador \_ de archivo eliminar \_ al \_ cerrar**.
+Si la ruta de acceso apunta a un vínculo simbólico, se elimina el vínculo simbólico, no el destino. Para eliminar un destino, debe llamar a [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) y especificar **FILE FLAG DELETE ON \_ \_ \_ \_ CLOSE**.
 
 ## <a name="findfirstchangenotification"></a>FindFirstChangeNotification
 
-Si la ruta de acceso apunta a un vínculo simbólico, se crea el identificador de notificación para el destino. Si una aplicación se ha registrado para recibir notificaciones de cambio para un directorio que contiene vínculos simbólicos, solo se notificará a la aplicación cuando se hayan cambiado los vínculos simbólicos, no los archivos de destino.
+Si la ruta de acceso apunta a un vínculo simbólico, se crea el identificador de notificación para el destino. Si una aplicación se ha registrado para recibir notificaciones de cambio para un directorio que contiene vínculos simbólicos, la aplicación solo recibe una notificación cuando se han cambiado los vínculos simbólicos, no los archivos de destino.
 
 ## <a name="findfirstfile-and-findfirstfiletransacted"></a>FindFirstFile y FindFirstFileTransacted
 
-Si la ruta de acceso apunta a un vínculo simbólico, el búfer de [**\_ \_ búsqueda de Win32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene información sobre el vínculo simbólico, no el destino.
+Si la ruta de acceso apunta a un vínculo simbólico, el búfer [**\_ FIND \_ DATA de WIN32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene información sobre el vínculo simbólico, no el destino.
 
 ## <a name="findfirstfileex"></a>FindFirstFileEx
 
-Si la ruta de acceso apunta a un vínculo simbólico, el búfer de [**\_ \_ búsqueda de Win32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene información sobre el vínculo simbólico, no el destino.
+Si la ruta de acceso apunta a un vínculo simbólico, el búfer [**\_ FIND \_ DATA de WIN32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene información sobre el vínculo simbólico, no el destino.
 
 ## <a name="findnextfile"></a>FindNextFile
 
-Si la ruta de acceso apunta a un vínculo simbólico, el búfer de [**\_ \_ búsqueda de Win32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene información sobre el vínculo simbólico, no el destino.
+Si la ruta de acceso apunta a un vínculo simbólico, el búfer [**\_ FIND \_ DATA de WIN32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene información sobre el vínculo simbólico, no el destino.
 
 ## <a name="getbinarytype"></a>GetBinaryType
 
-Si la ruta de acceso apunta a un vínculo simbólico, se utiliza el archivo de destino.
+Si la ruta de acceso apunta a un vínculo simbólico, se usa el archivo de destino.
 
 ## <a name="getcompressedfilesize-and-getcompressedfilesizetransacted"></a>GetCompressedFileSize y GetCompressedFileSizeTransacted
 
-Si la ruta de acceso apunta a un vínculo simbólico, la función devuelve el tamaño del archivo de destino.
+Si la ruta de acceso apunta a un vínculo simbólico, la función devuelve el tamaño de archivo del destino.
 
 ## <a name="getdiskfreespace"></a>GetDiskFreeSpace
 
@@ -142,11 +142,11 @@ Si la ruta de acceso apunta a un vínculo simbólico, el nombre de la ruta de ac
 
 ## <a name="getvolumeinformation"></a>GetVolumeInformation
 
-Si la ruta de acceso apunta a un vínculo simbólico, la función devuelve información del volumen para el destino.
+Si la ruta de acceso apunta a un vínculo simbólico, la función devuelve información de volumen para el destino.
 
 ## <a name="setfileattributes"></a>SetFileAttributes
 
-Si la ruta de acceso apunta a un vínculo simbólico, la función recupera atributos para el vínculo simbólico.
+Si la ruta de acceso apunta a un vínculo simbólico, la función recupera los atributos del vínculo simbólico.
 
 ## <a name="setfilesecurity"></a>SetFileSecurity
 

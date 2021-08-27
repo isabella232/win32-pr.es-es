@@ -1,33 +1,33 @@
 ---
-title: Usar una lista de rutas de Client-Specific
-description: En los procedimientos siguientes se describen los pasos para usar las listas de rutas específicas del cliente. En el código de ejemplo siguiente se muestra cómo implementar el procedimiento.
+title: Usar una lista Client-Specific rutas
+description: En los procedimientos siguientes se describen los pasos para usar las listas de rutas específicas del cliente. El código de ejemplo siguiente muestra cómo implementar el procedimiento.
 ms.assetid: aa9b7b2a-259f-4ce1-afb6-c04875e8ffe3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77cfa893bda9e850527c7ebe35590dbe2d08a490
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2ca4b1036115c49c2045121d16f09c55a3fa611153a9b1337a0437c9e2196800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120025305"
 ---
-# <a name="use-a-client-specific-route-list"></a>Usar una lista de rutas de Client-Specific
+# <a name="use-a-client-specific-route-list"></a>Usar una lista Client-Specific rutas
 
-En los procedimientos siguientes se describen los pasos para usar las listas de rutas específicas del cliente. En el código de ejemplo siguiente se muestra cómo implementar el procedimiento.
+En los procedimientos siguientes se describen los pasos para usar las listas de rutas específicas del cliente. El código de ejemplo siguiente muestra cómo implementar el procedimiento.
 
-**Para usar esta característica, un cliente debe realizar los siguientes pasos:**
+**Para usar esta característica, un cliente debe realizar los pasos siguientes**
 
-1.  Llame a [**RtmCreateRouteList**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmcreateroutelist) para obtener un identificador del administrador de tablas de enrutamiento.
-2.  Llame a [**RtmInsertInRouteList**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtminsertinroutelist) siempre que el cliente deba agregar una ruta a esta lista.
+1.  Llame [**a RtmCreateRouteList para**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmcreateroutelist) obtener un identificador del administrador de tablas de enrutamiento.
+2.  Llame [**a RtmInsertInRouteList cada**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtminsertinroutelist) vez que el cliente deba agregar una ruta a esta lista.
 3.  Cuando el cliente ya no requiere la lista, debe llamar a [**RtmDeleteRouteList**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmdeleteroutelist) para quitar la lista.
 
-**Si el cliente debe enumerar las rutas de la lista, el cliente debe realizar los pasos siguientes:**
+**Si el cliente debe enumerar las rutas en la lista, el cliente debe realizar los pasos siguientes**
 
-1.  Llame a [**RtmCreateRouteListEnum**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmcreateroutelistenum) para obtener un identificador de enumeración desde el administrador de tablas de enrutamiento.
-2.  Llame a [**RtmGetListEnumRoutes**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetlistenumroutes) para obtener los identificadores de las rutas de la lista.
-3.  Llame a [**RtmReleaseRoutes**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleaseroutes) para liberar los identificadores cuando ya no sean necesarios.
+1.  Llame [**a RtmCreateRouteListEnum para**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmcreateroutelistenum) obtener un identificador de enumeración del administrador de tablas de enrutamiento.
+2.  Llame [**a RtmGetListEnumRoutes**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetlistenumroutes) para obtener los identificadores de las rutas de la lista.
+3.  Llame [**a RtmReleaseRoutes para**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleaseroutes) liberar los identificadores cuando ya no sea necesario.
 
-En el código de ejemplo siguiente se muestra cómo crear y utilizar una lista de rutas específica del cliente.
+El código de ejemplo siguiente muestra cómo crear y usar una lista de rutas específica del cliente.
 
 
 ```C++
@@ -124,9 +124,9 @@ ASSERT(Status == NO_ERROR);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

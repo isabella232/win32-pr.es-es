@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXQuaternionSquad (D3DX10Math.h): interpola entre cuaterniones, mediante la interpolación de cuadrángulo esférico.'
+description: 'Función D3DXQuaternionSquad (D3DX10Math.h): interpola entre cuaterniones mediante la interpolación de cuadrángulo esférica.'
 ms.assetid: ba953731-4372-4b32-942b-23abfe479704
 title: Función D3DXQuaternionSquad (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9671b2a161124228c264da7eac0a2aa3a915ff95
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: acd1c3e816d8f5a88b266a71e7579227be2def3452fbc25307fb4fa899ecacb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070025"
 ---
 # <a name="d3dxquaternionsquad-function-d3dx10mathh"></a>Función D3DXQuaternionSquad (D3DX10Math.h)
 
-Interpola entre cuaterniones mediante la interpolación de cuadrángulo esférica.
+Interpola entre cuaterniones mediante la interpolación esférica de cuadrángulo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -90,7 +90,7 @@ Puntero a una estructura D3DXQUATERNION de origen.
 
 </dd> <dt>
 
-*t* \[ en\]
+*t* \[ in\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -131,7 +131,7 @@ Use [**D3DXQuaternionNormalize para cualquier**](d3d10-d3dxquaternionnormalize.m
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

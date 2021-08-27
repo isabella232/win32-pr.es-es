@@ -1,38 +1,38 @@
 ---
 title: Ejemplo de desencadenador de registro (C++)
-description: En este ejemplo de C++ se muestra cómo crear una tarea programada para ejecutar el Bloc de notas cuando se registra una tarea.
+description: En este ejemplo de C++ se muestra cómo crear una tarea que está programada para ejecutarse Bloc de notas cuando se registra una tarea.
 ms.assetid: 5e2e8fa6-66c7-4356-8fd6-22f7974791b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 090a690601e24e1245040d0e7b394123afa94b07
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cb9b87f21f2d301bcd500b4f28e41d1e2fada63ddaa8e7c9a4c833c6359f0b15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011335"
 ---
 # <a name="registration-trigger-example-c"></a>Ejemplo de desencadenador de registro (C++)
 
-En este ejemplo de C++ se muestra cómo crear una tarea programada para ejecutar el Bloc de notas cuando se registra una tarea. La tarea contiene un desencadenador de registro que especifica un límite de inicio y un límite de fin para la tarea y también un retraso para la tarea. El límite inicial especifica cuándo se activa el desencadenador y el retraso establece la cantidad de tiempo entre el momento en que se registra la tarea y el momento en que se inicia la tarea. La tarea también contiene una acción que especifica la tarea para ejecutar el Bloc de notas.
+En este ejemplo de C++ se muestra cómo crear una tarea que está programada para ejecutarse Bloc de notas cuando se registra una tarea. La tarea contiene un desencadenador de registro que especifica un límite inicial y un límite final para la tarea y también un retraso para la tarea. El límite inicial especifica cuándo se activa el desencadenador y el retraso establece la cantidad de tiempo entre el momento en que se registra la tarea y el momento en que se inicia la tarea. La tarea también contiene una acción que especifica la tarea que se ejecutará Bloc de notas.
 
 > [!Note]  
 > Cuando se actualiza una tarea con un desencadenador de registro, la tarea se ejecutará después de que se produzca la actualización.
 
- 
+ 
 
 En el procedimiento siguiente se describe cómo programar una tarea para iniciar un ejecutable cuando se registra la tarea.
 
-**Para programar el inicio del Bloc de notas cuando se registra una tarea**
+**Para programar Bloc de notas iniciar cuando se registra una tarea**
 
 1.  Inicialice COM y establezca la seguridad COM general.
-2.  Cree el objeto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) . Este objeto permite crear tareas en una carpeta especificada.
-3.  Obtenga una carpeta de tareas para crear una tarea en. Use el método [**ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta y el método [**ITaskService:: newtask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para crear el objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
-4.  Defina la información sobre la tarea mediante el objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , como la información de registro de la tarea. Use la [**propiedad RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) y otras propiedades de la interfaz **ITaskDefinition** para definir la información de la tarea.
-5.  Cree un desencadenador de registro mediante la [**propiedad triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para tener acceso al [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) de la tarea. Use el método [**ITriggerCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador de registro.
-6.  Cree una acción para que la tarea se ejecute mediante la [**propiedad Actions de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la interfaz [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea. Use el método [**IActionCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar el tipo de acción que desea crear. En este ejemplo se usa un objeto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , que representa una acción que ejecuta una operación de línea de comandos.
-7.  Registre la tarea mediante el método [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+2.  Cree el [**objeto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) Este objeto permite crear tareas en una carpeta especificada.
+3.  Obtenga una carpeta de tareas en la que crear una tarea. Use el [**método ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta y el método [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para crear el [**objeto ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
+4.  Defina información sobre la tarea mediante el [**objeto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) como la información de registro de la tarea. Use la [**propiedad RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) y otras propiedades de la **interfaz ITaskDefinition** para definir la información de la tarea.
+5.  Cree un desencadenador de registro mediante la [**propiedad Triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para acceder a [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) para la tarea. Use el [**método ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador de registro.
+6.  Cree una acción para que la tarea se ejecute mediante la propiedad Actions de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la [**interfaz IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea. Use el [**método IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) que representa una acción que ejecuta una operación de línea de comandos.
+7.  Registre la tarea mediante el [**método ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-En el siguiente ejemplo de C++ se muestra cómo programar una tarea para ejecutar el Bloc de notas 30 segundos después de que se haya registrado la tarea.
+En el siguiente ejemplo de C++ se muestra cómo programar una tarea para Bloc de notas 30 segundos después de registrar la tarea.
 
 
 ```C++
@@ -386,12 +386,12 @@ int __cdecl wmain()
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso del Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

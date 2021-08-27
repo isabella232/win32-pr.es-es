@@ -1,9 +1,9 @@
 ---
-title: Estructura de WMDM_PROP_VALUES_RANGE
-description: La \_ \_ \_ estructura de intervalo de valores de prop de WMDM describe un intervalo de valores válidos para una propiedad determinada en una configuración de propiedad determinada.
+title: WMDM_PROP_VALUES_RANGE estructura
+description: La estructura RANGE DE VALORES DE PROPIEDAD DE WMDM describe un intervalo de valores \_ \_ \_ válidos para una propiedad determinada en una configuración de propiedad determinada.
 ms.assetid: fb823a66-cc9c-4632-a4f0-03c7255c3ccb
 keywords:
-- Estructura WMDM_PROP_VALUES_RANGE Administrador de dispositivos de Windows Media
+- WMDM_PROP_VALUES_RANGE estructura windows Media Administrador de dispositivos
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ba82a1067db97e93fff2845e69e89f978548b73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a668b5acd8427df5b4bc163788c225f4eaee9a16b70af25312ae8ec94cb2bb63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004785"
 ---
-# <a name="wmdm_prop_values_range-structure"></a>\_Estructura de \_ intervalo de valores de prop de WMDM \_
+# <a name="wmdm_prop_values_range-structure"></a>Estructura DE \_ INTERVALOS DE VALORES \_ DE PROP \_ DE WMDM
 
-La estructura de intervalo de valores de prop de WMDM describe un intervalo de valores válidos para una propiedad determinada en una configuración de propiedad determinada. **\_ \_ \_**
+La **estructura RANGE DE VALORES DE PROP \_ \_ \_ de WMDM** describe un intervalo de valores válidos para una propiedad determinada en una configuración de propiedad determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,11 +45,11 @@ typedef struct _WMDM_PROP_VALUES_RANGE {
 **rangeMin**
 </dt> <dd>
 
-Valor mínimo del intervalo.
+Valor mínimo en el intervalo.
 
 </dd> <dt>
 
-**rangeMax**
+**Rangemax**
 </dt> <dd>
 
 Valor máximo del intervalo.
@@ -59,13 +59,13 @@ Valor máximo del intervalo.
 **rangeStep**
 </dt> <dd>
 
-Tamaño del paso en el que los valores válidos aumentan desde el valor mínimo hasta el valor máximo. Esto permite especificar valores permitidos discretos en un intervalo.
+Tamaño del paso en el que los valores válidos se incrementan del valor mínimo al valor máximo. Esto permite especificar valores discretos permitidos en un intervalo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura se usa en la estructura de [**\_ \_ Descripción**](wmdm-prop-desc.md) de la props de WMDM para describir un intervalo de valores válidos. Un intervalo de valores válidos es aplicable cuando \_ \_ se selecciona la enumeración de valores válidos prop enum de WMDM \_ \_ \_ en la enumeración de WMDM enumeración de valores [**\_ \_ \_ válidos \_ \_ prop**](wmdm-enum-prop-valid-values-form.md) .
+Esta estructura se usa en la estructura [**\_ \_ DESC PROP de WMDM**](wmdm-prop-desc.md) para describir un intervalo de valores válidos. Se aplica un intervalo de valores válidos cuando se selecciona ENUM VALORES VÁLIDOS DE PROP DE WMDM ENUM de la enumeración \_ \_ \_ \_ \_ [**WMDM \_ ENUM \_ PROP VALID VALUES \_ \_ \_ FORM.**](wmdm-enum-prop-valid-values-form.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ Esta estructura se usa en la estructura de [**\_ \_ Descripción**](wmdm-prop-de
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 
@@ -84,19 +84,19 @@ Esta estructura se usa en la estructura de [**\_ \_ Descripción**](wmdm-prop-de
 [**IWMDMDevice3::GetFormatCapability**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getformatcapability)
 </dt> <dt>
 
-[**\_formulario de \_ \_ valores válidos prop \_ enum de \_ WMDM**](wmdm-enum-prop-valid-values-form.md)
+[**FORMATO DE VALORES \_ VÁLIDOS \_ DE PROP DE \_ \_ ENUMERACIÓN WMDM \_**](wmdm-enum-prop-valid-values-form.md)
 </dt> <dt>
 
-[**\_funcionalidad de formato WMDM \_**](wmdm-format-capability.md)
+[**FUNCIONALIDAD DE FORMATO WMDM \_ \_**](wmdm-format-capability.md)
 </dt> <dt>
 
-[**\_configuración de propiedades de WMDM \_**](wmdm-prop-config.md)
+[**CONFIGURACIÓN DE PROP de WMDM \_ \_**](wmdm-prop-config.md)
 </dt> <dt>
 
-[**Descripción de la Prop de WMDM \_ \_**](wmdm-prop-desc.md)
+[**WMDM \_ PROP \_ DESC**](wmdm-prop-desc.md)
 </dt> <dt>
 
-[**\_ \_ enumeración de valores de propiedades de WMDM \_**](wmdm-prop-values-enum.md)
+[**ENUMERACIÓN DE \_ VALORES \_ DE PROP \_ DE WMDM**](wmdm-prop-values-enum.md)
 </dt> <dt>
 
 [**Estructuras**](structures.md)

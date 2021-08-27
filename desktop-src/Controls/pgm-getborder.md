@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PGM_GETBORDER (commctrl. h)
-description: Recupera el tamaño actual del borde para el control de paginación. Puede enviar este mensaje explícitamente o utilizar la macro GetBorder de buscapersonas \_ .
+title: PGM_GETBORDER mensaje (Commctrl.h)
+description: Recupera el tamaño del borde actual para el control de paginación. Puede enviar este mensaje explícitamente o usar la \_ macro Pager GetBorder.
 ms.assetid: 5d2f49ad-d940-4a0b-b5a0-05d742151b1c
 keywords:
-- PGM_GETBORDER controles de mensajes de Windows
+- PGM_GETBORDER controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be510af44c9cf53000420531843a79e9856c40dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 148b3d840548116d3082e27b5a760650c5802bdb2c6dbc1fc7c94f1df3a3d5b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046865"
 ---
-# <a name="pgm_getborder-message"></a>\_Mensaje GETBORDER PGM
+# <a name="pgm_getborder-message"></a>Mensaje \_ GETBORDER de PGM
 
-Recupera el tamaño actual del borde para el control de paginación. Puede enviar este mensaje explícitamente o utilizar la macro [**\_ GetBorder de buscapersonas**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getborder) .
+Recupera el tamaño del borde actual para el control de paginación. Puede enviar este mensaje explícitamente o usar la macro [**\_ Pager GetBorder.**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getborder)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,7 +37,7 @@ Recupera el tamaño actual del borde para el control de paginación. Puede envia
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor INT que contiene el tamaño actual del borde, en píxeles.
+Devuelve un valor INT que contiene el tamaño del borde actual, en píxeles.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Devuelve un valor INT que contiene el tamaño actual del borde, en píxeles.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Devuelve un valor INT que contiene el tamaño actual del borde, en píxeles.
 
 <dl> <dt>
 
-[**\_SETBORDER PGM**](pgm-setborder.md)
+[**PGM \_ SETBORDER**](pgm-setborder.md)
 </dt> </dl>
 
  

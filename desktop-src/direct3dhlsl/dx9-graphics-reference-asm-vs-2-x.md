@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3449ae4c1e1eb3b977916f6fb1d19303e9d21a4e
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: a412c7980ef12bfd8814933cd9d3de07db27fac353a636406e96e1377cd57829
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023975"
 ---
 # <a name="vs_2_x"></a>vs \_ 2 \_ x
 
@@ -33,7 +33,7 @@ La versión del sombreador de \_ vértices frente a 2 \_ x amplía el conjunto d
 
 Las nuevas características son las siguientes:
 
-### <a name="dynamic-flow-control"></a>Control de flujo dinámico
+### <a name="dynamic-flow-control"></a>Control de Flow dinámico
 
 Si [D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) > 0, se admiten las siguientes instrucciones de control de flujo dinámico:
 
@@ -46,17 +46,17 @@ Si [también se establece D3DVS20CAPS,](/windows/desktop/direct3d9/d3dvs20caps) 
 -   [setp \_ comp - vs](setp-comp---vs.md)
 -   [if pred - vs](if-pred---vs.md)
 -   [callnz pred - vs](callnz-pred---vs.md)
--   [breakp: vs](breakp---vs.md)
+-   [breakp- vs](breakp---vs.md)
 
-El intervalo de valores para la profundidad del control de flujo dinámico es de 0 a [](dx9-graphics-reference-asm-vs-instructions-flow-control.md) 24 y es igual a la profundidad de anidamiento de las instrucciones de control de flujo dinámico (consulte Límites de anidamiento de controles de flujo para obtener más información). Si este límite es cero, el dispositivo no admite instrucciones de control de flujo dinámico.
+El intervalo de valores para la profundidad del control de flujo dinámico es de 0 a 24 y es igual a la profundidad de anidamiento de las instrucciones de control de flujo dinámico (consulte [límites](dx9-graphics-reference-asm-vs-instructions-flow-control.md) de anidamiento de controles de Flow para obtener más información). Si este límite es cero, el dispositivo no admite instrucciones de control de flujo dinámico.
 
 ### <a name="number-of-temporary-registers"></a>Número de registros temporales
 
 [D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) representa el número [de](dx9-graphics-reference-asm-vs-registers-temporary.md)registros temporales admitidos por el dispositivo. El intervalo de valores para este límite es de 12 a 32.
 
-### <a name="static-flow-control-nesting-depth"></a>Profundidad de anidamiento de controles de flujo estático
+### <a name="static-flow-control-nesting-depth"></a>Profundidad de anidamiento Flow control estático
 
-[D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) representa la profundidad de anidamiento de dos tipos de instrucciones de control de flujo estático: [loop - vs](loop---vs.md)rep - vs y call - vs callnz bool - vs if bool - vs . loop - vs/rep - vs instructions se pueden anidar hasta / [](rep---vs.md) [](call---vs.md) / [](callnz-bool---vs.md) / [](if-bool---vs.md)D3DVS20CAPS deep. De forma independiente, las instrucciones call - vs/callnz bool - vs se pueden anidar hasta D3DVS20CAPS deep. Si también se establece D3DVS20CAPS, entonces [callnz pred - vs](callnz-pred---vs.md) se cuenta para la profundidad de anidamiento de la llamada - vs/callnz bool - vs/if bool - vs (vea [Límites](dx9-graphics-reference-asm-vs-instructions-flow-control.md) de anidamiento de control de flujo para obtener más información).
+[D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) representa la profundidad de anidamiento de dos tipos de instrucciones de control de flujo estático: [loop - vs](loop---vs.md)rep - vs y call - vs callnz bool - vs if bool - vs . loop - vs/rep - vs instructions se pueden anidar hasta / [](rep---vs.md) [](call---vs.md) / [](callnz-bool---vs.md) / [](if-bool---vs.md)D3DVS20CAPS deep. De forma independiente, las instrucciones call - vs/callnz bool - vs se pueden anidar hasta D3DVS20CAPS deep. Si también se establece D3DVS20CAPS, [callnz pred - vs](callnz-pred---vs.md) se cuenta para la profundidad de anidamiento de la llamada - vs/callnz bool - vs/if bool - vs (consulte [límites](dx9-graphics-reference-asm-vs-instructions-flow-control.md) de anidamiento de controles de Flow para obtener más información).
 
 ### <a name="predication"></a>Predicación
 
@@ -64,7 +64,7 @@ Si [se establece D3DVS20CAPS,](/windows/desktop/direct3d9/d3dvs20caps) el dispos
 
 -   [if pred - vs](if-pred---vs.md)
 -   [callnz pred - vs](callnz-pred---vs.md)
--   [breakp: vs](breakp---vs.md)
+-   [breakp- vs](breakp---vs.md)
 
 ### <a name="instruction-count"></a>Recuento de instrucciones
 

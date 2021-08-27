@@ -1,9 +1,9 @@
 ---
-title: Task (RenderingInfoType), elemento
-description: Cadena de mensaje representada de la tarea especificada en el evento.
+title: Elemento Task (RenderingInfoType)
+description: Cadena de mensaje representado de la tarea especificada en el evento .
 ms.assetid: c485eeee-e809-4f84-b3fd-cc7e3349433b
 keywords:
-- Elemento de tarea EventLog
+- Elemento Task EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 139c50605c869c81d1b9afeacdc9129cf4df2974
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4f07ce270a6f1936a1d30f2151afe2c70576e3f8539779d64e1816796708d8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005325"
 ---
-# <a name="task-renderinginfotype-element"></a>Task (RenderingInfoType), elemento
+# <a name="task-renderinginfotype-element"></a>Elemento Task (RenderingInfoType)
 
-Cadena de mensaje representada de la tarea especificada en el evento.
+Cadena de mensaje representado de la tarea especificada en el evento .
 
 ``` syntax
 <xs:element name="Task"
@@ -30,7 +30,7 @@ Cadena de mensaje representada de la tarea especificada en el evento.
  />
 ```
 
-El elemento **Task** se define mediante el tipo complejo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+El **tipo** complejo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) define el elemento Task.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **Task** se define mediante el tipo complejo [**RenderingInfoType**]
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

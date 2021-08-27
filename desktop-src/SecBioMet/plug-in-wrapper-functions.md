@@ -1,21 +1,21 @@
 ---
-title: Funciones de contenedor de complementos
-description: Funciones contenedoras que permiten llamar a una función pública en cualquier adaptador conectado a la canalización sin adquirir manualmente un puntero al adaptador.
+title: Funciones contenedoras de complementos
+description: Funciones contenedoras que permiten llamar a una función pública en cualquier adaptador asociado a la canalización sin adquirir manualmente un puntero al adaptador.
 ms.assetid: a87536bf-3a10-4062-a509-db7f03172307
 keywords:
-- Plataforma de biometría de Windows API Plataforma de biometría de Windows API, funciones de contenedor de complementos
+- Windows API de Biometric Framework Windows BIOMETRIC Framework API, funciones contenedoras de complementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e73d7f935ebe1a2dab047f8dd3a09e0bf6ed3855
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e2b3f6991d0723f284bb95ecfd40d7931c48aa8647fb52e2b34a959791a7338b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101255"
 ---
-# <a name="plug-in-wrapper-functions"></a>Funciones de contenedor de complementos
+# <a name="plug-in-wrapper-functions"></a>Funciones contenedoras de complementos
 
-La API de Plataforma de biometría de Windows incluye funciones contenedoras que permiten llamar a una función pública en cualquier adaptador conectado a la canalización sin adquirir manualmente un puntero al adaptador. Cada contenedor comprueba los argumentos de entrada, recupera un puntero de adaptador y llama a la función solicitada. Por ejemplo, el contenedor **WbioEngineSetHashAlgorithm** tiene la siguiente firma.
+La API Windows Biometric Framework incluye funciones contenedoras que permiten llamar a una función pública en cualquier adaptador asociado a la canalización sin adquirir manualmente un puntero al adaptador. Cada contenedor comprueba los argumentos de entrada, recupera un puntero de adaptador y llama a la función solicitada. Por ejemplo, el **contenedor WbioEngineSetHashAlgorithm** tiene la firma siguiente.
 
 
 ```C++
@@ -45,7 +45,7 @@ WbioEngineSetHashAlgorithm(
 
 
 
-La función comprueba que el argumento de *canalización* no es **null**, que existe un adaptador de motor y que existe la función [**EngineAdapterSetHashAlgorithm**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_set_hash_algorithm_fn) . Todas las funciones de contenedor se definen en el \_ archivo de encabezado Adapter. h de Winbio. En los temas siguientes se describen los contenedores disponibles.
+La función comprueba que el argumento *Pipeline* no es **NULL,** que existe un adaptador de motor y que existe la función [**EngineAdapterSetHashAlgorithm.**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_set_hash_algorithm_fn) Todas las funciones contenedoras se definen en el archivo de encabezado \_ adapter.h de Winbio. En los temas siguientes se tratan los contenedores disponibles.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -53,9 +53,9 @@ La función comprueba que el argumento de *canalización* no es **null**, que ex
 
 | Tema                                                               | Descripción                                                                                                                        |
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [Contenedores de adaptadores de motor](engine-adapter-wrappers.md)<br/>   | Funciones que se pueden usar para llamar a funciones en el adaptador de motor. Estas funciones se definen en Winbio \_ Adapter. h.<br/>  |
-| [Contenedores de adaptador de sensor](sensor-adapter-wrappers.md)<br/>   | Funciones que se pueden usar para llamar a funciones en el adaptador de sensor. Estas funciones se definen en Winbio \_ Adapter. h.<br/>  |
-| [Contenedores del adaptador de almacenamiento](storage-adapter-wrappers.md)<br/> | Funciones que se pueden usar para llamar a funciones en el adaptador de almacenamiento. Estas funciones se definen en Winbio \_ Adapter. h.<br/> |
+| [Contenedores del adaptador de motor](engine-adapter-wrappers.md)<br/>   | Funciones que puede usar para llamar a funciones en el adaptador del motor. Estas funciones se definen en Winbio \_ adapter.h.<br/>  |
+| [Contenedores del adaptador de sensor](sensor-adapter-wrappers.md)<br/>   | Funciones que puede usar para llamar a funciones en el adaptador del sensor. Estas funciones se definen en Winbio \_ adapter.h.<br/>  |
+| [Storage Contenedores de adaptadores](storage-adapter-wrappers.md)<br/> | Funciones que puede usar para llamar a funciones en el adaptador de almacenamiento. Estas funciones se definen en Winbio \_ adapter.h.<br/> |
 
 
 

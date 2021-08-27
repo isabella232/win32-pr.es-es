@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 33d45beda51a7a2c80debafbab864c2accb33653
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fcb542c5c7bb4edb4dafffa1254b76504aaf0f256a9d694db9d55724f2c94c2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069291"
 ---
 # <a name="d3dxintersecttri-function-d3dx9meshh"></a>Función D3DXIntersectTri (D3DX9Mesh.h)
 
@@ -97,7 +97,7 @@ Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) especificando la dir
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Coordenadas de impacto centradas en barra, U.
+Coordenadas de impacto centradas en barras, U.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Coordenadas de impacto centradas en barra, U.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Coordenadas de impacto centradas en barra, V.
+Coordenadas de impacto centradas en barras, V.
 
 </dd> <dt>
 
@@ -131,9 +131,9 @@ La [**función D3DXIntersect**](d3dxintersect.md) proporciona una manera de comp
 
 Cualquier punto del plano V1V2V3 se puede representar mediante la coordenada centrada en barras (U,V). El parámetro U controla la cantidad de V2 que se pondera en el resultado y el parámetro V controla la cantidad de V3 que se pondera en el resultado. Por último, el valor de 1 - (U + V) controla la cantidad de V1 que se \[ pondera en el \] resultado.
 
-Las coordenadas barycéntricas son una forma de coordenadas generales. En este contexto, el uso de coordenadas baricéntricas representa un cambio en los sistemas de coordenadas. Lo que se aplica a las coordenadas cartesianas es true para las coordenadas barídricas.
+Las coordenadas centradas en barras son una forma de coordenadas generales. En este contexto, el uso de coordenadas centradas en barras representa un cambio en los sistemas de coordenadas. Lo que es cierto para las coordenadas cartesianas es true para las coordenadas barídricas.
 
-Las coordenadas barítricas definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas centradas en barras, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Las coordenadas centradas en barras definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas centradas en barras, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -146,7 +146,7 @@ Las coordenadas barítricas definen un punto dentro de un triángulo en término
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

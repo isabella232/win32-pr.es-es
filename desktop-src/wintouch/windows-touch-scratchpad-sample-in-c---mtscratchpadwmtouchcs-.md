@@ -1,28 +1,28 @@
 ---
-title: Ejemplo de Bloc Dete táctil de Windows en C (MTScratchpadWMTouchCS)
-description: En el ejemplo de Bloc de entradas táctiles de Windows en C# se muestra cómo usar mensajes táctiles de Windows para dibujar seguimientos de los puntos táctiles en una ventana.
+title: Windows Ejemplo de Scratchpad táctil en C (MTScratchpadWMTouchCS)
+description: En Windows ejemplo de Touch Scratchpad en C# se muestra cómo usar Windows Touch para dibujar seguimientos de los puntos táctiles en una ventana.
 ms.assetid: 652124be-01a8-4df4-b590-e5c2ca3f012c
 keywords:
 - Windows Touch, ejemplos de código
 - Windows Touch, código de ejemplo
-- Windows Touch, ejemplos de Bloc de pruebas
-- Ejemplos de Bloc Dete
+- Windows Touch,Scratchpad samples
+- Ejemplos de Scratchpad
 ms.topic: article
 ms.date: 10/28/2019
-ms.openlocfilehash: 2d91c08c55f0d5b29a170a3a01c6ee882fad765f
-ms.sourcegitcommit: c7fa8fc137714433c8d18b1bf71e9cf0b5bf5e80
+ms.openlocfilehash: 112f8446af4b845bfd36e4262a11da807535c93baaf6257a10a9a8d2b03374e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "104078487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089855"
 ---
-# <a name="windows-touch-scratchpad-sample-c"></a>Ejemplo de Bloc Dete táctil de Windows (C#)
+# <a name="windows-touch-scratchpad-sample-c"></a>Windows Ejemplo de Touch Scratchpad (C#)
 
-[En el ejemplo de Bloc de entradas táctiles de Windows en C#](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS) se muestra cómo usar mensajes táctiles de Windows para dibujar seguimientos de los puntos táctiles en una ventana. El seguimiento del dedo principal, el que se colocó en primer lugar en el digitalizador, se dibuja en negro. Los dedos secundarios se dibujan en seis colores más: rojo, verde, azul, aguamarina, fucsia y amarillo. La siguiente imagen muestra el aspecto que podría tener la aplicación cuando se ejecuta.
+En [Windows ejemplo de Touch Scratchpad](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS) en C# se muestra cómo usar Windows Touch para dibujar seguimientos de los puntos táctiles en una ventana. El seguimiento del dedo principal, el que se ha puesto primero en el digitalizador, se dibuja en negro. Los dedos secundarios se dibujan en otros seis colores: rojo, verde, azul, cian, rojo, rojo y amarillo. En la imagen siguiente se muestra cómo podría verse la aplicación cuando se ejecuta.
 
-![captura de pantalla que muestra el ejemplo de Bloc Dete táctil de Windows en c Sharp, con líneas onduladas de color negro, verde, azul y rojo en la pantalla](images/mtscratchpadwmtouchcs.png)
+![captura de pantalla que muestra el ejemplo de scratchpad táctil de Windows en c sharp, con ondulados de color negro, verde, azul y rojo en la pantalla](images/mtscratchpadwmtouchcs.png)
 
-En este ejemplo, se crea un formulario táctil para controlar los mensajes de [**WM_TOUCH**](wm-touchdown.md) . Este formulario se hereda para habilitar Windows Touch en la aplicación de Bloc Dete. Cuando los mensajes de **WM_TOUCH** llegan al formulario, se interpretan en puntos y se agregan a la colección de trazos. La colección Strokes se representa en el objeto Graphics. En el código siguiente se muestra cómo se registra el formulario táctil para controlar **WM_TOUCH** mensajes y cómo trata **WM_TOUCH** mensajes.
+Para este ejemplo, se crea un formulario táctil para [**controlar**](wm-touchdown.md) WM_TOUCH mensajes. Este formulario se hereda para habilitar Windows Touch en la aplicación scratchpad. Cuando el **WM_TOUCH** los mensajes llegan al formulario, se interpretan en puntos y se agregan a la colección de trazos. La colección de trazos se representa en el objeto Graphics. El código siguiente muestra cómo se registra  el formulario táctil para controlar WM_TOUCH mensajes y cómo controla **WM_TOUCH** mensajes.
 
 ```CSharp
         private void OnLoadHandler(Object sender, EventArgs e)
@@ -71,7 +71,7 @@ En este ejemplo, se crea un formulario táctil para controlar los mensajes de [*
         }
 ```
 
-En el código siguiente se muestra cómo se interpreta el mensaje Touch de Windows y se agregan los datos a las colecciones de trazos.
+El código siguiente muestra cómo se interpreta el Windows touch y los datos se agregan a las colecciones de trazos.
 
 ```CSharp
         private bool DecodeTouch(ref Message m)
@@ -148,7 +148,7 @@ En el código siguiente se muestra cómo se interpreta el mensaje Touch de Windo
     }
 ```
 
-En el código siguiente se muestra cómo se muestra una colección de trazos.
+El código siguiente muestra cómo se muestra una colección de trazos.
 
 ```CSharp
         public void Draw(Graphics graphics)
@@ -163,7 +163,7 @@ En el código siguiente se muestra cómo se muestra una colección de trazos.
         }
 ```
 
-En el código siguiente se muestra cómo se muestran los objetos de trazo individuales con un objeto gráfico.
+El código siguiente muestra cómo se muestran los objetos de trazo individuales con un objeto Graphics.
 
 ```CSharp
         public void Draw(Graphics graphics)
@@ -180,5 +180,5 @@ En el código siguiente se muestra cómo se muestran los objetos de trazo indivi
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Ejemplo de Bloc de funciones táctiles de Windows (C++)](windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md), [aplicación de Bloc Dete multitáctil (WM_TOUCH/c #)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS), [aplicación de Bloc dete multitáctil (WM_TOUCH/C + +)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/cpp), [ejemplos de Windows Touch](windows-touch-samples.md)
+[Windows Touch Scratchpad sample (C++),](windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md) [Multi-touch Scratchpad Application (WM_TOUCH/C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS), [Multi-touch Scratchpad Application (WM_TOUCH/C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/cpp), [Windows Touch Samples](windows-touch-samples.md)
 

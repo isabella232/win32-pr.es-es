@@ -1,19 +1,19 @@
 ---
 description: En el ejemplo siguiente se muestra cómo consumir datos de eventos mediante la función TdhGetProperty.
 ms.assetid: 16b36718-087f-4be9-9ca2-fc083358017b
-title: Usar TdhGetProperty para consumir datos de eventos
+title: Uso de TdhGetProperty para consumir datos de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c48b21f7e43a46762a28694e1f9c41497b1f53da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4d14964424d0f12c20d5de040cf44ad358c2f2e3c2c4eaa416ce08c560b0a27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083115"
 ---
-# <a name="using-tdhgetproperty-to-consume-event-data"></a>Usar TdhGetProperty para consumir datos de eventos
+# <a name="using-tdhgetproperty-to-consume-event-data"></a>Uso de TdhGetProperty para consumir datos de eventos
 
-En el ejemplo siguiente se muestra cómo consumir datos de eventos mediante la función [**TdhGetProperty**](/windows/desktop/api/Tdh/nf-tdh-tdhgetproperty) .
+En el ejemplo siguiente se muestra cómo consumir datos de eventos mediante la [**función TdhGetProperty.**](/windows/desktop/api/Tdh/nf-tdh-tdhgetproperty)
 
 
 ```C++

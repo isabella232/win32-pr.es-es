@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentAfterInitializationException'
-title: Constructor de EsentAfterInitializationException
+description: 'Más información sobre: Constructor EsentAfterInitializationException'
+title: Constructor EsentAfterInitializationException
 TOCTitle: 'EsentAfterInitializationException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentAfterInitializationException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentafterinitializationexception.esentafterinitializationexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d14faf4af15d04a02c80f10a86b310a47b799640
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e18d834c6e0623ade2f19e8494c5cb90dbe01d05b76701c5c4addcb6635b9390
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066745"
 ---
-# <a name="esentafterinitializationexception-constructor"></a>Constructor de EsentAfterInitializationException
+# <a name="esentafterinitializationexception-constructor"></a>Constructor EsentAfterInitializationException
 
 Inicializa una nueva instancia de la clase EsentAfterInitializationException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentAfterInitializationException()
 public EsentAfterInitializationException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentAfterInitializationException()
 
 [Miembros de EsentAfterInitializationException](./esentafterinitializationexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

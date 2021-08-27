@@ -1,7 +1,7 @@
 ---
-description: 'El método EndFlush finaliza una operación de vaciado. Implementa el método IPin:: EndFlush.'
+description: El método EndFlush finaliza una operación de vaciado. Implementa el método IPin::EndFlush.
 ms.assetid: d4110eb4-26c5-4312-b33f-4af31e1bf2ae
-title: Método CBaseInputPin. EndFlush (Amfilter. h)
+title: Método CBaseInputPin.EndFlush (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 403ee5aa100309084090dc241724067f9dd3aa5c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fba4c82679ebe96827cd45c9045080fb354cdab25eb562523869e97d533c5f2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056355"
 ---
-# <a name="cbaseinputpinendflush-method"></a>CBaseInputPin. EndFlush, método
+# <a name="cbaseinputpinendflush-method"></a>Método CBaseInputPin.EndFlush
 
-El `EndFlush` método finaliza una operación de vaciado. Implementa el método [**IPin:: EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) .
+El `EndFlush` método finaliza una operación de vaciado. Implementa el [**método IPin::EndFlush.**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,18 +42,18 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método establece la marca [**CBaseInputPin:: m \_ BFlushing**](cbaseinputpin-m-bflushing.md) en **true**, lo que permite que el método [**CBaseInputPin:: Receive**](cbaseinputpin-receive.md) acepte ejemplos.
+Este método establece la [**marca CBaseInputPin::m \_ bFlushing**](cbaseinputpin-m-bflushing.md) en **TRUE,** lo que permite que el método [**CBaseInputPin::Receive**](cbaseinputpin-receive.md) acepte ejemplos.
 
 La clase derivada debe invalidar este método y realizar los pasos siguientes:
 
-1.  Libere los datos almacenados en búfer y espere a que se descarten todas las muestras en cola.
-2.  Borre cualquier notificación de [**EC \_ completa**](ec-complete.md) pendiente.
-3.  Llame al método de la clase base.
-4.  Llame a [**IPin:: EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) en las clavijas de entrada de nivel inferior. Si el PIN no ha entregado todavía ningún ejemplo de multimedia en el nivel inferior, puede omitir este paso. Si los pin de salida derivan de la clase [**CBaseOutputPin**](cbaseoutputpin.md) , puede llamar al método [**eliverendflush de CBaseOutputPin::D**](cbaseoutputpin-deliverendflush.md) .
+1.  Libera los datos almacenados en búfer y espera a que se descarten todas las muestras en cola.
+2.  Borre las notificaciones [**EC \_ COMPLETE**](ec-complete.md) pendientes.
+3.  Llame al método de clase base.
+4.  Llame [**a IPin::EndFlush en**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) los pines de entrada de bajada. Si el pin aún no ha entregado ningún ejemplo multimedia de nivel inferior, puede omitir este paso. Si los pines de salida derivan de la clase [**CBaseOutputPin,**](cbaseoutputpin.md) puede llamar al método [**CBaseOutputPin::D eliverEndFlush.**](cbaseoutputpin-deliverendflush.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ La clase derivada debe invalidar este método y realizar los pasos siguientes:
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ La clase derivada debe invalidar este método y realizar los pasos siguientes:
 
 <dl> <dt>
 
-[**Clase CBaseInputPin**](cbaseinputpin.md)
+[**CBaseInputPin (clase)**](cbaseinputpin.md)
 </dt> </dl>
 
  

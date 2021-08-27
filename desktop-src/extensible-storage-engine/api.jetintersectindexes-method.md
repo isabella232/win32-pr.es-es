@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetIntersectIndexes (método)'
-title: Método API. JetIntersectIndexes
+description: Más información sobre el método Api.JetIntersectIndexes
+title: Método Api.JetIntersectIndexes
 TOCTitle: 'JetIntersectIndexes method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetIntersectIndexes(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_INDEXRANGE[],System.Int32,Microsoft.Isam.Esent.Interop.JET_RECORDLIST@,Microsoft.Isam.Esent.Interop.IntersectIndexesGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetintersectindexes(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3bae632f386ef944e79a17813d1cc86451441e86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b2e9e259d9c90a3067931fbba425ab1b21e5c2a36a73563f593d3b280a40496
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978037"
 ---
-# <a name="apijetintersectindexes-method"></a>Método API. JetIntersectIndexes
+# <a name="apijetintersectindexes-method"></a>Método Api.JetIntersectIndexes
 
-Calcula la intersección entre varios conjuntos de entradas de índice de distintos índices secundarios en la misma tabla. Esta operación es útil para buscar el conjunto de registros de una tabla que coinciden con dos o más criterios que se pueden expresar mediante intervalos de índice. Vea también [IntersectIndexes (JET_SESID, \[ \] )](./api.intersectindexes-method.md).
+Calcula la intersección entre varios conjuntos de entradas de índice de distintos índices secundarios sobre la misma tabla. Esta operación es útil para buscar el conjunto de registros de una tabla que coinciden con dos o más criterios que se pueden expresar mediante intervalos de índice. Vea también [IntersectIndexes(JET_SESID, \[ \] ).](./api.intersectindexes-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -71,35 +71,35 @@ public static void JetIntersectIndexes(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
   - ranges  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    El índice va a formar una intersección. Los tableids de los intervalos deben tener establecidos intervalos de índice. Use [JetSetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) para crear un intervalo de índices.
+    Un intervalo de índice que se va a formar una intersección. Los tableids de los intervalos deben tener intervalos de índice establecidos en ellos. Use [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) para crear un intervalo de índice.
 
 <!-- end list -->
 
   - numRanges  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de intervalos de índice.
 
 <!-- end list -->
 
   - recordlist  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_RECORDLIST](./jet-recordlist-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_RECORDLIST](./jet-recordlist-class.md)  
     
-    Devuelve información sobre la tabla temporal que contiene los resultados de la intersección.
+    Devuelve información sobre la tabla temporal que contiene los resultados de intersección.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. IntersectIndexesGrbit](./intersectindexesgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.IntersectIndexesGrbit](./intersectindexesgrbit-enumeration.md)  
     
     Opciones de intersección.
 
@@ -107,8 +107,8 @@ public static void JetIntersectIndexes(
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

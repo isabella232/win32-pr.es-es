@@ -1,23 +1,23 @@
 ---
-description: Rellena un puntero a una estructura de \_ información fija con datos sobre la configuración de red actual.
+description: Rellena un puntero a una estructura DE \_ INFORMACIÓN FIJA con datos sobre la configuración de red actual.
 ms.assetid: d377951f-e7d4-4482-9182-2c3b153cb325
 title: Recuperación de información mediante GetNetworkParams
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20aed9b1ffa761ec53637d4d5b165e3fd2c2673d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84bbe1d03cd619af3a6e73e7995876431a804b3ec723cf9a132df5dba517e719
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102045"
 ---
 # <a name="retrieving-information-using-getnetworkparams"></a>Recuperación de información mediante GetNetworkParams
 
-La función [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getnetworkparams) rellena un puntero a una estructura [**de \_ información fija**](/windows/desktop/api/Iptypes/ns-iptypes-fixed_info_w2ksp1) con datos sobre la configuración de red actual.
+La [**función GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getnetworkparams) rellena un puntero a una estructura [**DE INFORMACIÓN \_ FIJA**](/windows/desktop/api/Iptypes/ns-iptypes-fixed_info_w2ksp1) con datos sobre la configuración de red actual.
 
 **Para usar GetNetworkParams**
 
-1.  Declare un puntero a un objeto de [**\_ información fijo**](/windows/desktop/api/Iptypes/ns-iptypes-fixed_info_w2ksp1) denominado *PFixedInfo* y un objeto **ULong** denominado *ulOutBufLen*. Estas variables se pasan como parámetros a la función [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getnetworkparams) . Cree también una  variable DWORD *dwRetVal* (se usa para la comprobación de errores).
+1.  Declare un puntero a un [**objeto FIXED \_ INFO**](/windows/desktop/api/Iptypes/ns-iptypes-fixed_info_w2ksp1) denominado *pFixedInfo* y un objeto **ULONG** denominado *ulOutBufLen*. Estas variables se pasan como parámetros a la [**función GetNetworkParams.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getnetworkparams) Cree también una variable **DWORD** *dwRetVal* (que se usa para la comprobación de errores).
     ```C++
         FIXED_INFO *pFixedInfo;
         IP_ADDR_STRING *pIPAddr;
@@ -30,7 +30,7 @@ La función [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
 2.  Asigne memoria para las estructuras.
     > [!Note]  
-    > El tamaño de *ulOutBufLen* no es suficiente para contener la información. Vea el siguiente paso.
+    > El tamaño de *ulOutBufLen* no es suficiente para contener la información. Consulte el paso siguiente.
 
      
 
@@ -41,9 +41,9 @@ La función [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-3.  Realice una llamada inicial a [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getnetworkparams) para obtener el tamaño necesario para la variable *ulOutBufLen* .
+3.  Realice una llamada inicial a [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getnetworkparams) para obtener el tamaño necesario para la variable *ulOutBufLen.*
     > [!Note]  
-    > Se producirá un error en esta función de función y se usará para asegurarse de que la variable *ulOutBufLen* especifica un tamaño suficiente para contener todos los datos devueltos a *pFixedInfo*. Se trata de un modelo de programación común para las estructuras de datos y las funciones de este tipo.
+    > Se producirá un error en esta función y se usa para asegurarse de que la variable *ulOutBufLen* especifica un tamaño suficiente para contener todos los datos devueltos a *pFixedInfo*. Se trata de un modelo de programación común para estructuras de datos y funciones de este tipo.
 
      
 
@@ -59,7 +59,7 @@ La función [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-4.  Realice una segunda llamada a [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getnetworkparams) mediante la comprobación de errores general y devolviendo su valor a la variable **DWORD** *dwRetVal*; se usa para la comprobación de errores más avanzada.
+4.  Realice una segunda llamada a [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getnetworkparams) mediante la comprobación de errores general y la devolución de su valor a la variable **DWORD** *dwRetVal*; se usa para la comprobación de errores más avanzada.
     ```C++
         if (dwRetVal = GetNetworkParams(pFixedInfo, &ulOutBufLen) != NO_ERROR) {
             printf("GetNetworkParams failed with error %d\n", dwRetVal);
@@ -71,7 +71,7 @@ La función [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-5.  Si la llamada se realizó correctamente, acceda a los datos de la estructura de datos *pFixedInfo* .
+5.  Si la llamada se ha realizado correctamente, acceda a los datos de la *estructura de datos pFixedInfo.*
     ```C++
             printf("\tHost Name: %s\n", pFixedInfo->HostName);
             printf("\tDomain Name: %s\n", pFixedInfo->DomainName);
@@ -122,7 +122,7 @@ La función [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-6.  Libere cualquier memoria asignada para la estructura *pFixedInfo* .
+6.  Libera cualquier memoria asignada para la *estructura pFixedInfo.*
     ```C++
         if (pFixedInfo) {
             free(pFixedInfo);
@@ -132,9 +132,9 @@ La función [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-Paso siguiente: [Administración de adaptadores de red con GetAdaptersInfo](managing-network-adapters-using-getadaptersinfo.md)
+Paso siguiente: [Administración de adaptadores de red mediante GetAdaptersInfo](managing-network-adapters-using-getadaptersinfo.md)
 
-Paso anterior: [crear una aplicación auxiliar de IP básica](creating-a-basic-ip-helper-application.md)
+Paso anterior: Creación [de una aplicación auxiliar de IP básica](creating-a-basic-ip-helper-application.md)
 
  
 

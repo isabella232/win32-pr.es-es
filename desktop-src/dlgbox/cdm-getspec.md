@@ -3,7 +3,7 @@ title: CDM_GETSPEC mensaje (Commdlg.h)
 description: Recupera el nombre de archivo (sin incluir la ruta de acceso) del archivo seleccionado actualmente en un cuadro de diálogo Abrir o Guardar como de estilo explorador.
 ms.assetid: 22a67c92-bd24-4cba-bef8-291d241e6ec8
 keywords:
-- CDM_GETSPEC cuadro de diálogo de mensaje
+- CDM_GETSPEC cuadros de diálogo del mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27eff7e9a14f39554fa6c1a69846bbaca7c39990
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 66e919ccbdabbb19745b172082eed5cc2b0b8a36555587cda59bd7e24fca3247
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022525"
 ---
 # <a name="cdm_getspec-message"></a>Mensaje \_ GETSPEC de CDM
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
+\[A partir Windows Vista,  los  cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
 
-Recupera el nombre de archivo (sin incluir la ruta de  acceso) del archivo seleccionado actualmente en un cuadro de diálogo Abrir o Guardar **como** de estilo explorador. El cuadro de diálogo debe haber sido creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
+Recupera el nombre de archivo (sin incluir la ruta de  acceso) del archivo seleccionado actualmente en un cuadro de diálogo Abrir o **Guardar como** de estilo explorador. El cuadro de diálogo se debe haber creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
 
 
 ```C++
@@ -80,7 +80,7 @@ int CommDlg_OpenSave_GetSpec(hwnd, lparam, wparam);
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

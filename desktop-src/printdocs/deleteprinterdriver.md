@@ -1,7 +1,7 @@
 ---
-description: La función DeletePrinterDriver quita el nombre del controlador de impresora especificado de la lista de nombres de los controladores admitidos en un servidor.
+description: La función DeletePrinterDriver quita el nombre del controlador de impresora especificado de la lista de nombres de controladores admitidos en un servidor.
 ms.assetid: b159bd8b-3416-44a5-91bf-c0447ed6b465
-title: Función DeletePrinterDriver (winspool. h)
+title: Función DeletePrinterDriver (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,20 +15,20 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 9e84730be0d20100c2da42aa357f35c08cfb0727
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d878bb848eebed7eaccd904d4cdfd035d5056ee32eaa67eac5064dd5cf4e1e51
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060035"
 ---
-# <a name="deleteprinterdriver-function"></a>DeletePrinterDriver función)
+# <a name="deleteprinterdriver-function"></a>Función DeletePrinterDriver
 
-La función **DeletePrinterDriver** quita el nombre del controlador de impresora especificado de la lista de nombres de los controladores admitidos en un servidor.
+La **función DeletePrinterDriver** quita el nombre del controlador de impresora especificado de la lista de nombres de controladores admitidos en un servidor.
 
-Para eliminar los archivos asociados al controlador además de quitar el nombre del controlador de impresora especificado de la lista de nombres de los controladores admitidos para un servidor, utilice la función [**DeletePrinterDriverEx**](deleteprinterdriverex.md) .
+Para eliminar los archivos asociados al controlador, además de quitar el nombre de controlador de impresora especificado de la lista de nombres de controladores admitidos para un servidor, use la [**función DeletePrinterDriverEx.**](deleteprinterdriverex.md)
 
-**DeletePrinterDriver** elimina un controlador solo si no se está usando ninguna versión del controlador para el entorno especificado. [**DeletePrinterDriverEx**](deleteprinterdriverex.md) puede eliminar versiones específicas del controlador.
+**DeletePrinterDriver elimina** un controlador solo si no hay ninguna versión del controlador en uso para el entorno especificado. [**DeletePrinterDriverEx puede**](deleteprinterdriverex.md) eliminar versiones específicas del controlador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,45 +47,45 @@ BOOL DeletePrinterDriver(
 
 <dl> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del servidor desde el que se va a eliminar el controlador. Si este parámetro es **null**, el nombre del controlador de impresora se quitará de forma local.
+Puntero a una cadena terminada en NULL que especifica el nombre del servidor del que se va a eliminar el controlador. Si este parámetro es **NULL,** el nombre del controlador de impresora se quitará localmente.
 
 </dd> <dt>
 
-*pEnvironment* \[ de\]
+*pEnvironment* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el entorno desde el que se va a eliminar el controlador (por ejemplo, Windows x86, Windows IA64 o Windows x64). Si este parámetro es **null**, el nombre del controlador se elimina del entorno actual de la aplicación que realiza la llamada y del equipo cliente (no de la aplicación de destino y del servidor de impresión).
+Puntero a una cadena terminada en NULL que especifica el entorno del que se va a eliminar el controlador (por ejemplo, Windows x86, Windows IA64 o Windows x64). Si este parámetro es **NULL**, el nombre del controlador se elimina del entorno actual de la aplicación que realiza la llamada y del equipo cliente (no de la aplicación de destino ni del servidor de impresión).
 
 </dd> <dt>
 
-*pDriverName* \[ de\]
+*pDriverName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del controlador que se debe eliminar.
+Puntero a una cadena terminada en NULL que especifica el nombre del controlador que se debe eliminar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-El autor de la llamada debe tener [SeLoadDriverPrivilege](/windows/desktop/SecAuthZ/authorization-constants).
+El autor de la llamada debe [tener SeLoadDriverPrivilege.](/windows/desktop/SecAuthZ/authorization-constants)
 
-La función **DeletePrinterDriver** no elimina los archivos asociados, simplemente quita el nombre del controlador de la lista devuelta por la función [**EnumPrinterDrivers**](enumprinterdrivers.md) .
+La **función DeletePrinterDriver** no elimina los archivos asociados, simplemente quita el nombre del controlador de la lista devuelta por la función [**EnumPrinterDrivers.**](enumprinterdrivers.md)
 
-Antes de llamar a **DeletePrinterDriver**, debe eliminar todos los objetos de impresora que utilizan el controlador de impresora.
+Antes de **llamar a DeletePrinterDriver,** debe eliminar todos los objetos de impresora que usan el controlador de impresora.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,9 +95,9 @@ Antes de llamar a **DeletePrinterDriver**, debe eliminar todos los objetos de im
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **DeletePrinterDriverW** (Unicode) y **DeletePrinterDriverA** (ANSI)<br/>                         |
 
 

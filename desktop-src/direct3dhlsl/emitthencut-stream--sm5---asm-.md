@@ -1,23 +1,23 @@
 ---
-title: emitThenCut_stream (SM5-ASM)
-description: Equivalente a un comando Emit seguido de un comando CUT. | emitThenCut_stream (SM5-ASM)
+title: emitThenCut_stream (sm5 - asm)
+description: Equivalente a un comando emit seguido de un comando de corte. | emitThenCut_stream (sm5 - asm)
 ms.assetid: E9D84647-E29B-4E31-9E95-9F7A173293D4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ae3129f2a3fb50664a5dbf070c7a1dae9bf5d6e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 522d2be28ae1d63617b8ba775f8f8839c270668aeeded8a4944ef9ae7554d598
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067965"
 ---
-# <a name="emitthencut_stream-sm5---asm"></a>emitThenCut \_ Stream (SM5-ASM)
+# <a name="emitthencut_stream-sm5---asm"></a>emitThenCut \_ stream (sm5 - asm)
 
-Equivalente a un comando [Emit](emit--sm4---asm-.md) seguido de un comando [CUT](cut--sm4---asm-.md) .
+Equivalente a un [comando de](emit--sm4---asm-.md) emisión seguido de un [comando de](cut--sm4---asm-.md) corte.
 
 
 
-| emitThenCut \_ Stream streamIndex |
+| emitThenCut \_ stream streamIndex |
 |---------------------------------|
 
 
@@ -28,23 +28,23 @@ Equivalente a un comando [Emit](emit--sm4---asm-.md) seguido de un comando [CUT]
 
 | Elemento                                                                                                               | Descripción                         |
 |--------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| <span id="streamIndex"></span><span id="streamindex"></span><span id="STREAMINDEX"></span>*streamIndex*<br/> | \[en \] el índice de la secuencia.<br/> |
+| <span id="streamIndex"></span><span id="streamindex"></span><span id="STREAMINDEX"></span>*streamIndex*<br/> | \[en \] El índice de la secuencia.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta operación es útil cuando se genera de forma consciente el último vértice de una topología.
+Esta operación es útil al generar a sabiendas el último vértice de una topología.
 
-Si no se han declarado secuencias, debe utilizar [emitThenCut](emitthencut--sm4---asm-.md) en lugar de **emitThenCut \_ Stream**.
+Si no se han declarado secuencias, debe usar [emitThenCut](emitthencut--sm4---asm-.md) en lugar de **emitThenCut \_ stream**.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        | X        |       |         |
 
@@ -52,20 +52,20 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -75,7 +75,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

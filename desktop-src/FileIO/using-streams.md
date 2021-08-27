@@ -1,21 +1,21 @@
 ---
 description: Código de ejemplo que muestra cómo usar secuencias básicas del sistema de archivos NTFS.
 ms.assetid: 9cd5f418-404c-40f5-aa51-ef4d2a5f238e
-title: Usar secuencias
+title: Uso de Secuencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04edc73a3524d45eeead4cd6c0d508925e6caa5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23ebb6e2297c82e8643eb79ce66991b32fdf27e46fc723113a2866c79b2f8377
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078395"
 ---
-# <a name="using-streams"></a>Usar secuencias
+# <a name="using-streams"></a>Uso de Secuencias
 
 En el ejemplo de este tema se muestra cómo usar secuencias básicas del sistema de archivos NTFS.
 
-En este ejemplo se crea un archivo, denominado "TestFile", con un tamaño de 16 bytes. Sin embargo, el archivo también tiene un tipo de flujo adicional:: $DATA, denominado "Stream", que agrega 23 bytes adicionales que el sistema operativo no indica. Por lo tanto, al ver la propiedad de tamaño de archivo del archivo, solo verá el tamaño de la secuencia default:: $DATA del archivo.
+En este ejemplo se crea un archivo, denominado "TestFile", con un tamaño de 16 bytes. Sin embargo, el archivo también tiene un tipo de secuencia adicional ::$DATA, denominado "Stream", que agrega 23 bytes adicionales que el sistema operativo no notifica. Por lo tanto, al ver la propiedad file size del archivo, solo verá el tamaño del flujo predeterminado ::$DATA para el archivo.
 
 
 ```C++
@@ -74,23 +74,23 @@ void main( )
 
 
 
-Si escribe **Type TESTFILE** en un símbolo del sistema, se mostrará el siguiente resultado:
+Si escribe **Type TestFile en** un símbolo del sistema, se muestra la siguiente salida:
 
 ``` syntax
 This is TestFile
 ```
 
-Sin embargo, si escribe las palabras **Type TESTFILE: Stream**, se genera el siguiente error:
+Sin embargo, si escribe las palabras **Type TestFile:Stream**, se genera el siguiente error:
 
-"El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta de volumen son incorrectos".
+"La sintaxis de nombre de archivo, nombre de directorio o etiqueta de volumen es incorrecta".
 
-Para ver lo que hay en TestFile: Stream, use uno de los siguientes comandos:
+Para ver lo que hay en TestFile:stream, use uno de los siguientes comandos:
 
-**Más < TestFile: Stream**
+**Más < TestFile:Stream**
 
-**Más < TestFile: Stream: $DATA**
+**Más < TestFile:Stream:$DATA**
 
-El texto que se muestra es el siguiente:
+El texto mostrado es el siguiente:
 
 ``` syntax
 This is TestFile:Stream
@@ -100,7 +100,7 @@ This is TestFile:Stream
 
 <dl> <dt>
 
-[Secuencias de archivo](file-streams.md)
+[Archivos Secuencias](file-streams.md)
 </dt> </dl>
 
  

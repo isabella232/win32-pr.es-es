@@ -1,11 +1,11 @@
 ---
-title: ExecAction. arguments (propiedad)
-description: En el caso de scripting, obtiene o establece los argumentos asociados a la operación de línea de comandos.
+title: Propiedad ExecAction.Arguments
+description: Para el scripting, obtiene o establece los argumentos asociados a la operación de línea de comandos.
 ms.assetid: 911e720f-ea7b-474d-ac75-4cd4f9adee55
 keywords:
-- Arguments (propiedad) Programador de tareas
-- Propiedad arguments Programador de tareas, objeto ExecAction
-- Programador de tareas de objeto ExecAction, propiedad arguments
+- Propiedades arguments Programador de tareas
+- Propiedad Arguments Programador de tareas , objeto ExecAction
+- Objeto ExecAction Programador de tareas propiedad , Arguments
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4207a9fbfb60d9e45c15e174a33e7d6ab66e5fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 899e4ceaaf3a0d04dc678592add18184401d54569fea71f0570a0acbf2a33027
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011495"
 ---
-# <a name="execactionarguments-property"></a>ExecAction. arguments (propiedad)
+# <a name="execactionarguments-property"></a>Propiedad ExecAction.Arguments
 
-En el caso de scripting, obtiene o establece los argumentos asociados a la operación de línea de comandos.
+Para el scripting, obtiene o establece los argumentos asociados a la operación de línea de comandos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,11 +38,11 @@ ExecAction.Arguments As String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Argumentos necesarios para la operación de la línea de comandos.
+Argumentos necesarios para la operación de línea de comandos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML, los argumentos de la operación de línea de comandos se especifican en el elemento [**arguments**](taskschedulerschema-arguments-exectype-element.md) del esquema programador de tareas.
+Al leer o escribir XML, los argumentos de la operación de línea de comandos se especifican en el [**elemento Arguments**](taskschedulerschema-arguments-exectype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Al leer o escribir XML, los argumentos de la operación de línea de comandos se
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

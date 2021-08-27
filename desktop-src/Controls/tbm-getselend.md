@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TBM_GETSELEND (commctrl. h)
-description: Recupera la posición final del intervalo de selección actual en una barra de nivel.
+title: TBM_GETSELEND mensaje (Commctrl.h)
+description: Recupera la posición final del intervalo de selección actual en una barra de seguimiento.
 ms.assetid: e365dd4d-eb49-4107-b6d4-cdb558d27fdb
 keywords:
-- TBM_GETSELEND controles de mensajes de Windows
+- TBM_GETSELEND controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 486d66d3e7fc2dd4d23b89cb5e9406fa81b34638
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ff24c6b8f22aba0eb8f8f3a52d7de2bc812936525a7754bb1fa0afa4054524e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046435"
 ---
-# <a name="tbm_getselend-message"></a>TBM \_ GETSELEND
+# <a name="tbm_getselend-message"></a>Mensaje \_ GETSELEND de TBM
 
-Recupera la posición final del intervalo de selección actual en una barra de nivel.
+Recupera la posición final del intervalo de selección actual en una barra de seguimiento.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,9 +39,9 @@ Recupera la posición final del intervalo de selección actual en una barra de n
 
 Devuelve un valor de 32 bits que especifica la posición final del intervalo de selección actual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una barra de nivel solo puede tener un intervalo de selección si se especificó el estilo [**TBS \_ ENABLESELRANGE**](trackbar-control-styles.md) al crearlo.
+Una barra de seguimiento solo puede tener un intervalo de selección si especificó el estilo [**\_ ENABLESELRANGE**](trackbar-control-styles.md) de TBS cuando lo creó.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Una barra de nivel solo puede tener un intervalo de selección si se especificó
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

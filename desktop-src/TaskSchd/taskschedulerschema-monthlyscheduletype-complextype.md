@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de monthlyScheduleType
+title: monthlyScheduleType Complex Type
 description: Define los elementos secundarios y la información de secuenciación para el elemento ScheduleByMonth (calendarTriggerType).
 ms.assetid: 3ade775c-ca44-403e-9602-80095c7dba1a
 keywords:
-- tipo complejo de monthlyScheduleType Programador de tareas
+- tipo complejo monthlyScheduleType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 132c2fafe2b05a01380c13aae2ab7cb3ddaa5330
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 06bb8786e817c59209d4b3807d119c017a6a04ae3eff5cfe623b76d57e04b9f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991145"
 ---
-# <a name="monthlyscheduletype-complex-type"></a>Tipo complejo de monthlyScheduleType
+# <a name="monthlyscheduletype-complex-type"></a>monthlyScheduleType Complex Type
 
-Define los elementos secundarios y la información de secuenciación para el elemento [**ScheduleByMonth (calendarTriggerType)**](taskschedulerschema-schedulebymonth-calendartriggertype-element.md) .
+Define los elementos secundarios y la información de secuenciación para el [**elemento ScheduleByMonth (calendarTriggerType).**](taskschedulerschema-schedulebymonth-calendartriggertype-element.md)
 
 ``` syntax
 <xs:complexType name="monthlyScheduleType">
@@ -46,7 +46,7 @@ Define los elementos secundarios y la información de secuenciación para el ele
 | Elemento                                                                            | Tipo                                                                       | Descripción                                                                                    |
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | [**DaysOfMonth**](taskschedulerschema-daysofmonth-monthlyscheduletype-element.md) | [**daysOfMonthType**](taskschedulerschema-daysofmonthtype-complextype.md) | Especifica los días del mes durante los que se ejecuta la tarea.<br/>                         |
-| [**Partir**](taskschedulerschema-months-monthlyscheduletype-element.md)           | [**monthsType**](taskschedulerschema-monthstype-complextype.md)           | Especifica los meses del año en los que se ejecuta la tarea para una programación mensual.<br/> |
+| [**Meses**](taskschedulerschema-months-monthlyscheduletype-element.md)           | [**monthsType**](taskschedulerschema-monthstype-complextype.md)           | Especifica los meses del año durante los que se ejecuta la tarea para una programación mensual.<br/> |
 
 
 
@@ -56,8 +56,8 @@ Define los elementos secundarios y la información de secuenciación para el ele
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -65,7 +65,7 @@ Define los elementos secundarios y la información de secuenciación para el ele
 
 <dl> <dt>
 
-[Tipos complejos de esquema Programador de tareas](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

@@ -1,9 +1,9 @@
 ---
 title: Elemento StopAtDurationEnd (repetitionType)
-description: Especifica que las instancias en ejecución de la tarea se detienen al final de la duración del patrón de repetición.
+description: Especifica que una instancia en ejecución de la tarea se detiene al final de la duración del patrón de repetición.
 ms.assetid: 4e34b5b2-ac93-4951-9de4-3e89614517d1
 keywords:
-- Programador de tareas del elemento StopAtDurationEnd
+- Elemento StopAtDurationEnd Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a95f15f3a62d05b9bc28dc9f50b924979e2b748c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 896aa6db4ce5bf2c0dddf666024c143754afc97ec76bfb557e6431f593689857
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010545"
 ---
 # <a name="stopatdurationend-repetitiontype-element"></a>Elemento StopAtDurationEnd (repetitionType)
 
-Especifica que una instancia en ejecución de la tarea se detiene al final de la duración del patrón de repetición. Esto solo es aplicable si se han establecido las repeticiones.
+Especifica que una instancia en ejecución de la tarea se detiene al final de la duración del patrón de repetición. Esto solo es aplicable si se establecen repeticiones.
 
 ``` syntax
 <xs:element name="StopAtDurationEnd"
@@ -30,29 +30,29 @@ Especifica que una instancia en ejecución de la tarea se detiene al final de la
  />
 ```
 
-El elemento **StopAtDurationEnd** se define mediante el tipo complejo de [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) .
+El **elemento StopAtDurationEnd** se define mediante el [**tipo complejo repetitionType.**](taskschedulerschema-repetitiontype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
 | Elemento | Derivado de | Descripción |
 |-|-|-|
-| [**Repetición**](taskschedulerschema-repetition-triggerbasetype-element.md) | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Especifica la frecuencia con que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición una vez iniciada la tarea.<br/> |
+| [**Repetición**](taskschedulerschema-repetition-triggerbasetype-element.md) | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Especifica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición después de iniciar la tarea.<br/> |
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripting, este valor se especifica mediante la propiedad [**RepetitionPattern. StopAtDurationEnd**](repetitionpattern-stopatdurationend.md) .
+Para el desarrollo de scripting, esta configuración se especifica mediante la [**propiedad RepetitionPattern.StopAtDurationEnd.**](repetitionpattern-stopatdurationend.md)
 
-En el desarrollo de C++, este valor se especifica mediante la propiedad [**IRepetitionPattern:: StopAtDurationEnd**](/windows/win32/api/taskschd/nf-taskschd-irepetitionpattern-get_stopatdurationend) .
+Para el desarrollo de C++, esta configuración se especifica mediante la [**propiedad IRepetitionPattern::StopAtDurationEnd.**](/windows/win32/api/taskschd/nf-taskschd-irepetitionpattern-get_stopatdurationend)
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |-|-|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 ## <a name="see-also"></a>Vea también
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 
 [Programador de tareas](task-scheduler-start-page.md)

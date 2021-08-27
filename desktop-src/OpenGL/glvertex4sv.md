@@ -1,9 +1,9 @@
 ---
-title: función glVertex4sv (GL. h)
-description: Especifica un vértice. | función glVertex4sv (GL. h)
+title: Función glVertex4sv (Gl.h)
+description: Especifica un vértice. | Función glVertex4sv (Gl.h)
 ms.assetid: 969ecb41-7e72-4b95-9d84-2d995f60f2a3
 keywords:
-- glVertex4sv (función) OpenGL
+- Función glVertex4sv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c0497fa55b43b22e4649e7ece3eb17f6f9e5339
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 097cf8b57b3ae9bf197c073595d6695eff05ed5e3f5cad39a19b9a7a92ed8c84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035485"
 ---
-# <a name="glvertex4sv-function"></a>glVertex4sv función)
+# <a name="glvertex4sv-function"></a>Función glVertex4sv
 
 Especifica un vértice.
 
@@ -40,7 +40,7 @@ void WINAPI glVertex4sv(
 
 <dl> <dt>
 
-*v* 
+*V* 
 </dt> <dd>
 
 Puntero a una matriz de cuatro elementos. Los elementos son las coordenadas x, y, z y w de un vértice.
@@ -59,8 +59,8 @@ Esta función no devuelve ningún valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

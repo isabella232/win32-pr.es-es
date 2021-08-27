@@ -1,12 +1,12 @@
 ---
-title: Método GetExportPath de la clase Win32_RDMSDeploymentSettings
-description: Recupera la ruta de acceso al directorio en el que se implementan las máquinas virtuales para una colección de escritorios virtuales.
+title: Método GetExportPath de la Win32_RDMSDeploymentSettings clase
+description: Recupera la ruta de acceso del directorio en la que se implementan las máquinas virtuales para una colección de escritorios virtuales.
 ms.assetid: 8df79e31-b960-46ae-b49c-8052b356e1a8
 ms.tgt_platform: multiple
 keywords:
 - Método GetExportPath Servicios de Escritorio remoto
-- Método GetExportPath Servicios de Escritorio remoto, clase Win32_RDMSDeploymentSettings
-- Win32_RDMSDeploymentSettings de clase Servicios de Escritorio remoto, método GetExportPath
+- Método GetExportPath Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto , método GetExportPath
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: baf96d1d71554f1b8ea310759d36d0918a511cbf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1b77db7a72ff91ee4c161f847f5021cc4dcfe1ad8ee46d08fb8b67be1f341850
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080125"
 ---
-# <a name="getexportpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetExportPath de la \_ clase RDMSDeploymentSettings de Win32
+# <a name="getexportpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetExportPath de la clase RDMSDeploymentSettings de Win32 \_
 
-Recupera la ruta de acceso al directorio en el que se implementan las máquinas virtuales para una colección de escritorios virtuales.
+Recupera la ruta de acceso del directorio en la que se implementan las máquinas virtuales para una colección de escritorios virtuales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ uint32 GetExportPath(
 
 <dl> <dt>
 
-*DirectoryPath* \[ enuncia\]
+*DirectoryPath* \[ out\]
 </dt> <dd>
 
 Recibe la ruta de acceso del directorio.
@@ -52,7 +52,7 @@ Recibe la ruta de acceso del directorio.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

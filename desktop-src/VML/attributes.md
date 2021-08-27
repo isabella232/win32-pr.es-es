@@ -1,15 +1,15 @@
 ---
 title: Atributos (VML)
-description: En este artículo se enumeran los atributos del elemento Shape en VML. VmL ha quedado en desuso a partir de Windows Internet Explorer 9.
+description: En este artículo se enumeran los atributos del elemento Shape en VML. VmL ha quedado en desuso a partir Windows Internet Explorer 9.
 ms.assetid: 0EBA02C8-3F44-492E-BC55-AD56849093D2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a369ce7e5ec416ec3e9c36588dc1fc58a7d0701
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 111594db2e210166521b2b770dee886f1cfee37a7cc9b20866d19930b96ac5e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007915"
 ---
 # <a name="attributes-vml"></a>Atributos (VML)
 
@@ -24,7 +24,7 @@ ms.locfileid: "112262747"
 -   [BorderRightColor](msdn-online-vml-borderrightcolor-attribute.md)
 -   [BorderTopColor](msdn-online-vml-bordertopcolor-attribute.md)
 -   [Bala](msdn-online-vml-bullet-attribute.md)
--   [Button](msdn-online-vml-button-attribute.md)
+-   [Botón](msdn-online-vml-button-attribute.md)
 -   [BWMode](msdn-online-vml-bwmode-attribute.md)
 -   [BWNormal](msdn-online-vml-bwnormal-attribute.md)
 -   [BWPure](msdn-online-vml-bwpure-attribute.md)
@@ -56,7 +56,7 @@ ms.locfileid: "112262747"
 -   [MSO-Position-Horizontal-Relative](msdn-online-vml-mso-position-horizontal-relative-attribute.md)
 -   [MSO-Position-Vertical-Relative](msdn-online-vml-mso-position-vertical-relative-attribute.md)
 -   [Posición de MSO horizontal](msdn-online-vml-mso-position-horizontal-attribute.md)
--   [MSO-Position-Vertical](msdn-online-vml-mso-position-vertical-attribute.md)
+-   [Posición de MSO-Vertical](msdn-online-vml-mso-position-vertical-attribute.md)
 -   [MSO-Wrap-Edited](msdn-online-vml-mso-wrap-edited-attribute.md)
 -   [MSO-Wrap-Mode](msdn-online-vml-mso-wrap-mode-attribute.md)
 -   [MSO-Wrap-Distance-Bottom](msdn-online-vml-mso-wrap-distance-bottom-attribute.md)
@@ -89,7 +89,7 @@ ms.locfileid: "112262747"
 -   [Visibilidad](msdn-online-vml-visibility-attribute.md)
 -   [Width](msdn-online-vml-width-attribute.md)
 -   [WrapCoords](msdn-online-vml-wrapcoords-attribute.md)
--   [Índice Z](msdn-online-vml-z-index-attribute.md)
+-   [Z-Index](msdn-online-vml-z-index-attribute.md)
 
  
 

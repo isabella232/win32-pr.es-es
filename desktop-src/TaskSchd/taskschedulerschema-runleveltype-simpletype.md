@@ -1,9 +1,9 @@
 ---
-title: Tipo simple de runLevelType
-description: Define los valores posibles para el elemento nivel (principalType).
+title: Tipo simple runLevelType
+description: Define los valores posibles para el elemento RunLevel (principalType).
 ms.assetid: d6b73dc5-97ac-4f94-99c1-c241a25cc252
 keywords:
-- Programador de tareas de tipo simple runLevelType
+- Tipo simple runLevelType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d037dceeb3e6e4957cc96a17a2ac511a03a94b94
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8ce534008ce0138293a773e4f5fa4a5270a2d4b27aad54dd062eafe286ab8ba6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991075"
 ---
-# <a name="runleveltype-simple-type"></a>Tipo simple de runLevelType
+# <a name="runleveltype-simple-type"></a>Tipo simple runLevelType
 
-Define los valores posibles para el elemento [**nivel (principalType)**](taskschedulerschema-runlevel-principaltype-element.md) .
+Define los valores posibles para [**el elemento RunLevel (principalType).**](taskschedulerschema-runlevel-principaltype-element.md)
 
 ``` syntax
 <xs:simpleType name="runLevelType">
@@ -41,7 +41,7 @@ Define los valores posibles para el elemento [**nivel (principalType)**](tasksch
 
 ## <a name="enumeration-values"></a>Valores de enumeración
 
-El tipo simple **runLevelType** define los siguientes valores.
+El **tipo simple runLevelType** define los siguientes valores.
 
 
 
@@ -58,8 +58,8 @@ El tipo simple **runLevelType** define los siguientes valores.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

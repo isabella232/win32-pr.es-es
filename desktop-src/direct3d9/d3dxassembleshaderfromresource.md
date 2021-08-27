@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 78df978201df37269b7d33058effc16eadc9d16f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 35812be28d847f0c0ced94a05ab9cbcc941f26ef474b7b37ac175e84be263b34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069365"
 ---
 # <a name="d3dxassembleshaderfromresource-function"></a>Función D3DXAssembleShaderFromResource
 
@@ -60,7 +60,7 @@ Identificador de un módulo que contiene la descripción del efecto. Si este par
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntero a una cadena que especifica el nombre del recurso. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
+Puntero a una cadena que especifica el nombre del recurso. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Puntero a una cadena que especifica el nombre del recurso. Si la configuración 
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Matriz **opcional terminada** en NULL de estructuras [**D3DXMACRO.**](d3dxmacro.md) Este valor puede ser **NULL.**
+Matriz **terminada en NULL** opcional de estructuras [**D3DXMACRO.**](d3dxmacro.md) Este valor puede ser **NULL.**
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Puntero de interfaz opcional, [**ID3DXInclude**](id3dxinclude.md), que se usará
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -130,7 +130,7 @@ La configuración del compilador también determina la versión de la función. 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
