@@ -1,8 +1,8 @@
 ---
-description: La \_ Asociación de componentes CIM representa las partes de una relación entre MSEs.
+description: La \_ asociación del componente CIM representa las partes de una relación entre los MSE.
 ms.assetid: a074e2f7-b092-4d3c-be5e-2069b643431b
 ms.tgt_platform: multiple
-title: CIM_Component (clase) (proveedores WMI de CIMWin32)
+title: CIM_Component clase (proveedores WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8b516118bc0cd6f12285933b1c15e7f2801ad40d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7b47aa88c7cf1238f74a9cb359ddb5f499c2a77b34de0f89023c83bd67420722
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065185"
 ---
-# <a name="cim_component-class-cimwin32-wmi-providers"></a>CIM_Component (clase) (proveedores WMI de CIMWin32)
+# <a name="cim_component-class-cimwin32-wmi-providers"></a>CIM_Component clase (proveedores WMI CIMWin32)
 
-La Asociación de **\_ componentes CIM** representa las partes de una relación entre MSEs.
+La **\_ asociación del componente CIM** representa las partes de una relación entre los MSE.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,50 +47,50 @@ class CIM_Component
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ componentes CIM** tiene estos tipos de miembros:
+La **clase \_ CIM Component** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ componentes CIM** tiene estas propiedades.
+La **clase CIM \_ Component** tiene estas propiedades.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ ManagedSystemElement de CIM**
+Tipo de datos: **CIM \_ ManagedSystemElement**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **agregado**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **Agregado**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Un [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) que describe el elemento primario de la asociación.
+Elemento [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) que describe el elemento primario de la asociación.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ ManagedSystemElement de CIM**
+Tipo de datos: **CIM \_ ManagedSystemElement**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Un [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) que describe el elemento secundario de la asociación.
+Elemento [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) que describe el elemento secundario de la asociación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-WMI no implementa esta clase. Para obtener más información sobre las clases derivadas del **\_ componente CIM**, vea [clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para obtener más información sobre las clases derivadas del componente CIM , vea [Clases win32](win32-provider.md). **\_**
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

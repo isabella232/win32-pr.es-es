@@ -1,7 +1,7 @@
 ---
-description: Restaure todos los destinos de representación y, si es necesario, componga todas las caras representadas en la superficie del mapa del entorno.
+description: Restaure todos los destinos de representación y, si es necesario, cree todas las caras representados en la superficie del mapa del entorno.
 ms.assetid: 57c73787-36e7-4088-b5ff-78894e3a5d90
-title: 'ID3DXRenderToEnvMap:: end (método) (D3dx9core. h)'
+title: Método ID3DXRenderToEnvMap::End (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 20e62a9d794738ae81ae84a665165f6034958f0c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: efaf32eb421f6bda38fb922c4a89b1dbbe871842c3b4f07a87ff30c2e6b4dc40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095795"
 ---
-# <a name="id3dxrendertoenvmapend-method"></a>ID3DXRenderToEnvMap:: end (método)
+# <a name="id3dxrendertoenvmapend-method"></a>Método ID3DXRenderToEnvMap::End
 
-Restaure todos los destinos de representación y, si es necesario, componga todas las caras representadas en la superficie del mapa del entorno.
+Restaure todos los destinos de representación y, si es necesario, cree todas las caras representados en la superficie del mapa del entorno.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT End(
 
 <dl> <dt>
 
-*MipFilter* \[ de\]
+*MipFilter* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación válida de una o más marcas [de \_ filtro de D3DX](d3dx-filter.md) .
+Combinación válida de una o varias [marcas D3DX \_ FILTER.](d3dx-filter.md)
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Combinación válida de una o más marcas [de \_ filtro de D3DX](d3dx-filter.md)
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -73,7 +73,7 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 [ID3DXRenderToEnvMap](id3dxrendertoenvmap.md)
 </dt> <dt>
 
-[**ID3DXRenderToEnvMap:: facial**](id3dxrendertoenvmap--face.md)
+[**ID3DXRenderToEnvMap::Face**](id3dxrendertoenvmap--face.md)
 </dt> </dl>
 
  

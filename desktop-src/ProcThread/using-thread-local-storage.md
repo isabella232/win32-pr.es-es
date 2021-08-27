@@ -1,19 +1,19 @@
 ---
-description: El almacenamiento local de subprocesos (TLS) permite que varios subprocesos del mismo proceso usen un índice asignado por la función TlsAlloc para almacenar y recuperar un valor que sea local para el subproceso.
+description: El almacenamiento local de subprocesos (TLS) permite que varios subprocesos del mismo proceso usen un índice asignado por la función TlsAlloc para almacenar y recuperar un valor local para el subproceso.
 ms.assetid: b7f5a206-a827-4b6b-86f6-5e3aea1246b7
 title: Uso del almacenamiento local de subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e9221d4d0d68891ab8e2d0f2462b7c0aae307c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bdac1306a4a2da10e6a24ba2e1b2444f6215fdac39be7b41cc6850c1e5a683d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105677981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127995"
 ---
 # <a name="using-thread-local-storage"></a>Uso del almacenamiento local de subprocesos
 
-El [almacenamiento local de subprocesos](thread-local-storage.md) (TLS) permite que varios subprocesos del mismo proceso usen un índice asignado por la función [**TlsAlloc**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc) para almacenar y recuperar un valor que sea local para el subproceso. En este ejemplo, se asigna un índice cuando se inicia el proceso. Cuando cada subproceso se inicia, asigna un bloque de memoria dinámica y almacena un puntero a esta memoria en la ranura TLS mediante la función [**TlsSetValue**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlssetvalue) . La función CommonFunc usa la función [**TlsGetValue**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) para tener acceso a los datos asociados al índice que es local para el subproceso que realiza la llamada. Antes de que finalice cada subproceso, libera su memoria dinámica. Antes de que finalice el proceso, llama a [**TlsFree**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsfree) para liberar el índice.
+[El almacenamiento local de](thread-local-storage.md) subprocesos (TLS) permite que varios subprocesos del mismo proceso usen un índice asignado por la [**función TlsAlloc**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc) para almacenar y recuperar un valor local para el subproceso. En este ejemplo, se asigna un índice cuando se inicia el proceso. Cuando se inicia cada subproceso, asigna un bloque de memoria dinámica y almacena un puntero a esta memoria en la ranura TLS mediante la [**función TlsSetValue.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlssetvalue) La función CommonFunc usa la [**función TlsGetValue**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) para tener acceso a los datos asociados al índice que es local para el subproceso que realiza la llamada. Antes de que finalice cada subproceso, libera su memoria dinámica. Antes de que finalice el proceso, llama a [**TlsFree**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsfree) para liberar el índice.
 
 
 ```C++
@@ -114,7 +114,7 @@ VOID ErrorExit (LPCSTR message)
 
 <dl> <dt>
 
-[Usar el almacenamiento local para el subproceso en una biblioteca de Dynamic-Link](../dlls/using-thread-local-storage-in-a-dynamic-link-library.md)
+[Uso de subprocesos Storage local en una biblioteca Dynamic-Link de subprocesos](../dlls/using-thread-local-storage-in-a-dynamic-link-library.md)
 </dt> </dl>
 
  

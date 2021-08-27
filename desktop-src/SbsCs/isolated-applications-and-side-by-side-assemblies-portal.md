@@ -1,27 +1,27 @@
 ---
-description: Administrar el uso compartido de ensamblados y el control de versiones de DLL en el almacén de ensamblados en paralelo de los sistemas desde programas. Escriba manifiestos de ensamblado y aplicaciones autodescriptivas para el uso compartido de ensamblados y redirección de dll.
+description: Administrar el uso compartido de ensamblados y el control de versiones de DLL en el almacén de ensamblados en paralelo de los sistemas desde programas. Escriba manifiestos de ensamblado y describa automáticamente las aplicaciones para compartir ensamblados y redirigir archivos DLL.
 ms.assetid: 2f841eb6-9a6c-4c9b-b057-a3da6cd6b0b0
 title: Aplicaciones aisladas y ensamblados en paralelo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59abfbd5392040856c66ef9eb786b66d2a84500f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9af477178aa3fd68563ee53017d80c00e103b4cb97a6fd16062d307375b29574
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127495"
 ---
 # <a name="isolated-applications-and-side-by-side-assemblies"></a>Aplicaciones aisladas y ensamblados en paralelo
 
 ## <a name="purpose"></a>Propósito
 
-Las aplicaciones aisladas y los ensamblados en paralelo son una solución de Microsoft Windows que reduce los conflictos de control de versiones en las aplicaciones cliente de Windows. Con Windows, los desarrolladores de aplicaciones pueden crear aplicaciones aisladas que son totalmente autodescriptivas y no se ven afectadas por los cambios en el registro, en otras aplicaciones o en otras versiones de los ensamblados que se ejecutan en el sistema. Los autores y los administradores de aplicaciones pueden usar manifiestos para administrar el uso compartido de ensamblados en paralelo después de la implementación en base o por aplicación. Los clientes se benefician de las aplicaciones aisladas que son más estables y se actualizan de forma más confiable.
+Aplicaciones aisladas y ensamblados en paralelo es una solución de Microsoft Windows que reduce los conflictos de control de versiones en Windows aplicaciones cliente. Con Windows, los desarrolladores de aplicaciones pueden compilar aplicaciones aisladas que son totalmente autodescriptas y no se ven afectadas por cambios en el Registro, otras aplicaciones u otras versiones de ensamblados que se ejecutan en el sistema. Los autores y administradores de aplicaciones pueden usar manifiestos para administrar el uso compartido de ensamblados en paralelo después de la implementación de forma global o por aplicación. Los clientes se benefician de las aplicaciones aisladas que son más estables y se actualizan de forma más confiable.
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
-Las aplicaciones aisladas y el uso compartido de ensamblados en paralelo se pueden usar para desarrollar aplicaciones que compartan de forma segura ensamblados del sistema operativo. Los desarrolladores pueden usar esta tecnología para corregir los conflictos de control de versiones de DLL causados por una versión incompatible de un ensamblado compartido.
+Las aplicaciones aisladas y el uso compartido de ensamblados en paralelo se pueden usar para desarrollar aplicaciones que compartan de forma segura ensamblados de sistema operativo. Los desarrolladores pueden usar esta tecnología para corregir los conflictos de control de versiones de DLL causados por una versión incompatible de un ensamblado compartido.
 
-Si su aplicación debe obtener sistemáticamente la versión de un componente que ha probado, es posible aislar la aplicación para que se ejecute siempre con la versión probada del componente en el equipo del usuario.
+Si la aplicación debe obtener de forma coherente la versión de un componente que ha probado, es posible aislar la aplicación para que siempre se ejecute con la versión probada del componente en el equipo del usuario.
 
 Las aplicaciones aisladas y los ensamblados en paralelo están diseñados para el desarrollo de aplicaciones de estilo de escritorio.
 
@@ -29,15 +29,15 @@ Las aplicaciones aisladas y los ensamblados en paralelo están diseñados para e
 
 Esta documentación está destinada principalmente a desarrolladores de software, desarrolladores de aplicaciones y administradores de red:
 
--   Los desarrolladores de software que desean crear aplicaciones aisladas que usarán los ensamblados en paralelo disponibles por Microsoft y otros publicadores de ensamblados en paralelo.
--   Los desarrolladores de aplicaciones interesados en crear sus propios ensamblados en paralelo para aislar sus aplicaciones.
--   Administradores de red que desean obtener más información sobre las aplicaciones aisladas.
+-   Desarrolladores de software que desean crear aplicaciones aisladas que usarán los ensamblados en paralelo que Microsoft y otros publicadores de ensamblados en paralelo están disponibles.
+-   Desarrolladores de aplicaciones que están interesados en crear sus propios ensamblados en paralelo para aislar sus aplicaciones.
+-   Administradores de red que desean más información sobre las aplicaciones aisladas.
 
-Como referencia principal para el uso compartido de ensamblados en paralelo y aplicaciones aisladas, esta documentación proporciona información general sobre la creación de manifiestos y ensamblados en paralelo, la instalación de aplicaciones aisladas y ensamblados en paralelo, y el uso de la API de contexto de activación.
+Como referencia principal para el uso compartido de ensamblados en paralelo y las aplicaciones aisladas, esta documentación proporciona información general sobre la creación de manifiestos y ensamblados en paralelo, la instalación de aplicaciones aisladas y ensamblados en paralelo y el uso de activation Context API.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
-Se requiere Windows Server 2003 y versiones posteriores o Windows XP y versiones posteriores para usar ensamblados y manifiestos en paralelo para aislar las aplicaciones y usar la API de contexto de activación.
+Windows Server 2003 y versiones posteriores o Windows XP y versiones posteriores son necesarios para usar ensamblados y manifiestos en paralelo para aislar aplicaciones y usar activation Context API.
 
 ## <a name="in-this-section"></a>En esta sección
 

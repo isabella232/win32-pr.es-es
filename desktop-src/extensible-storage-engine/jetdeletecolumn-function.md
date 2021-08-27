@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetDeleteColumn (función)'
-title: JetDeleteColumn función)
+description: 'Más información sobre: JetDeleteColumn (Función)'
+title: JetDeleteColumn (Función)
 TOCTitle: JetDeleteColumn Function
 ms:assetid: b2f4be8c-7ea9-4f66-925b-4e9c14d9d475
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294062(v=EXCHG.10)
@@ -20,21 +20,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d7d577447942e36cd49763727473d3f6ddc659b4
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: fd20ba923157d50b3130250f4784ea9bfb19b9b1
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104003991"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476451"
 ---
-# <a name="jetdeletecolumn-function"></a>JetDeleteColumn función)
+# <a name="jetdeletecolumn-function"></a>JetDeleteColumn (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetdeletecolumn-function"></a>JetDeleteColumn función)
+## <a name="jetdeletecolumn-function"></a>JetDeleteColumn (Función)
 
-La función **JetDeleteColumn** elimina una columna de una tabla de base de datos ese.
+La **función JetDeleteColumn** elimina una columna de una tabla de base de datos ESE.
 
 ```cpp
 JET_ERR JET_API JetDeleteColumn(
@@ -48,9 +48,9 @@ JET_ERR JET_API JetDeleteColumn(
 
 *sesid*
 
-Contexto de sesión de base de datos que se va a usar para la llamada API.
+Contexto de sesión de base de datos que se usará para la llamada API.
 
-*TABLEID*
+*tableid*
 
 Tabla de la que se va a eliminar la columna.
 
@@ -60,90 +60,30 @@ Nombre de la columna que se va a eliminar.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errColumnInUse</p></td>
-<td><p>La columna está en uso actualmente. Es posible que un índice lo esté usando actualmente.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errFixedDDL</p></td>
-<td><p>Se intentó modificar el DDL fijo.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errFixedInheritedDDL</p></td>
-<td><p>La columna denominada en <em>szColumnName</em> existe en la tabla de plantilla y el DDL de una tabla de plantilla no se puede modificar.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidName</p></td>
-<td><p>Se puede devolver si se proporcionó un nombre incorrecto para <em>szColumnName</em> .</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errPermissionDenied</p></td>
-<td><p>No se puede escribir en la tabla. Esto puede devolverse si la base de datos se abrió en modo de solo lectura.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTransReadOnly</p></td>
-<td><p>La transacción es una transacción de solo lectura.</p></td>
-</tr>
-</tbody>
-</table>
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
-#### <a name="remarks"></a>Observaciones
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errColumnInUse</p> | <p>La columna está actualmente en uso. Un índice la puede usar actualmente.</p> | 
+| <p>JET_errFixedDDL</p> | <p>Se intentó modificar el DDL fijo.</p> | 
+| <p>JET_errFixedInheritedDDL</p> | <p>La columna denominada <em>en szColumnName existe</em> en la tabla de plantillas y no se puede modificar el DDL de una tabla de plantilla.</p> | 
+| <p>JET_errInvalidName</p> | <p>Esto se puede devolver si se ha dado un nombre no bueno <em>para szColumnName.</em></p> | 
+| <p>JET_errPermissionDenied</p> | <p>La tabla no se puede escribir. Esto puede devolverse si la base de datos se abrió en modo de solo lectura.</p> | 
+| <p>JET_errTransReadOnly</p> | <p>La transacción es una transacción de solo lectura.</p> | 
 
-Llamar a **JetDeleteColumn** es idéntico a llamar a [JetDeleteColumn2](./jetdeletecolumn2-function.md) con *grbit* establecido en cero (0).
+
+
+#### <a name="remarks"></a>Comentarios
+
+Llamar **a JetDeleteColumn** es idéntico a llamar [a JetDeleteColumn2](./jetdeletecolumn2-function.md) con *grbit* establecido en cero (0).
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JetDeleteColumnW</strong> (Unicode) y <strong>JetDeleteColumnA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetDeleteColumnW</strong> (Unicode) y <strong>JetDeleteColumnA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

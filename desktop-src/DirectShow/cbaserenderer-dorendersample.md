@@ -1,7 +1,7 @@
 ---
 description: El método DoRenderSample representa un ejemplo.
 ms.assetid: cf06192c-44c0-4d88-a20e-6501ea48cbfd
-title: Método CBaseRenderer. DoRenderSample (Renbase. h)
+title: Método CBaseRenderer.DoRenderSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 935fd7b92cef5d51056b2eb2daa9d2fb775647b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef91e7ad27d008f5dfdb83e5642ecba8ec68bc424824dca9c8aa068ec055f24f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076435"
 ---
-# <a name="cbaserendererdorendersample-method"></a>CBaseRenderer. DoRenderSample, método
+# <a name="cbaserendererdorendersample-method"></a>Método CBaseRenderer.DoRenderSample
 
 El `DoRenderSample` método representa un ejemplo.
 
@@ -45,17 +45,17 @@ virtual HRESULT DoRenderSample(
 *pMediaSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo.
+Puntero a la interfaz [**IMediaSample del**](/windows/desktop/api/Strmif/nn-strmif-imediasample) ejemplo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase derivada debe implementar este método. El comportamiento depende por completo del tipo de filtro que se está implementando. Un representador de vídeo, por ejemplo, dibujaría la imagen de vídeo incluida en el ejemplo.
+La clase derivada debe implementar este método. El comportamiento depende completamente del tipo de filtro que se implementa. Un representador de vídeo, por ejemplo, dibujaría la imagen de vídeo contenida en el ejemplo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ La clase derivada debe implementar este método. El comportamiento depende por c
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ La clase derivada debe implementar este método. El comportamiento depende por c
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

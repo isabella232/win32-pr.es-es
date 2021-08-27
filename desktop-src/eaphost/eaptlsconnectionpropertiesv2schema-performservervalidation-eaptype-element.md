@@ -1,5 +1,5 @@
 ---
-title: TLSExtensions (esquema V2)
+title: TLSExtensions (esquema v2)
 description: Obtenga información sobre el elemento TLSExtensions (TLSExtensionsType). Este elemento permite futuras mejoras en el esquema.
 ms.assetid: efbb402e-a001-4782-aca8-be4aeca8328c
 keywords:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 02ad636f9894f96b9d6e9b2d27952117c7581e69
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: aee5841de491b72481cccd07fd6f4f65ee9cfc6dbd0620dc4558ed6ca3c2b130
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104421424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094385"
 ---
-# <a name="tlsextensions-v2-schema"></a>TLSExtensions (esquema V2)
+# <a name="tlsextensions-v2-schema"></a>TLSExtensions (esquema v2)
 
-El elemento **TLSExtensions (TLSExtensionsType)** permite futuras mejoras en el esquema.
+El **elemento TLSExtensions (TLSExtensionsType)** permite futuras mejoras en el esquema.
 
 ``` syntax
 <xs:element name="TLSExtensions"
@@ -31,22 +31,22 @@ El elemento **TLSExtensions (TLSExtensionsType)** permite futuras mejoras en el 
  />
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **TLSExtensions** es opcional.
+El **elemento TLSExtensions** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

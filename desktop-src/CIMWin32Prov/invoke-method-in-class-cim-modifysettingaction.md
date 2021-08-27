@@ -1,8 +1,8 @@
 ---
-description: El método Invoke de la \_ clase CIM ModifySettingAction toma una acción concreta. Los detalles de cómo realiza la acción el método son específicos de la implementación. Este método se hereda de la \_ acción CIM.
+description: El método Invoke de la clase ModifySettingAction de CIM \_ realiza una acción determinada. Los detalles de cómo el método realiza la acción son específicos de la implementación. Este método se hereda de la acción \_ CIM.
 ms.assetid: 360e3e00-1c09-495a-8fc0-ce2e9d1f9e77
 ms.tgt_platform: multiple
-title: Método Invoke de la clase CIM_ModifySettingAction
+title: Método Invoke de la CIM_ModifySettingAction clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f4e4c5dc08f4e9ad27d7f4578ca5c82543253b57
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 972529480f7c63871d352685596e65a325080fd163dbeffcc556b39b71e86a03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064865"
 ---
-# <a name="invoke-method-of-the-cim_modifysettingaction-class"></a>Método Invoke de la \_ clase CIM ModifySettingAction
+# <a name="invoke-method-of-the-cim_modifysettingaction-class"></a>Método Invoke de la \_ clase ModifySettingAction de CIM
 
-El método **Invoke** de la clase [**CIM \_ ModifySettingAction**](cim-modifysettingaction.md) toma una acción concreta. Los detalles de cómo realiza la acción el método son específicos de la implementación. Este método se hereda de [**la \_ acción CIM**](cim-action.md).
+El **método Invoke** de la clase [**\_ ModifySettingAction**](cim-modifysettingaction.md) de CIM realiza una acción determinada. Los detalles de cómo el método realiza la acción son específicos de la implementación. Este método se hereda de la [**acción \_ CIM**](cim-action.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,13 +47,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si se realiza correctamente y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor.
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -73,10 +73,10 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[\_MODIFYSETTINGACTION CIM](invoke-method-in-class-cim-modifysettingaction.md)
+[CIM \_ ModifySettingAction](invoke-method-in-class-cim-modifysettingaction.md)
 </dt> <dt>
 
-[**\_MODIFYSETTINGACTION CIM**](cim-modifysettingaction.md)
+[**CIM \_ ModifySettingAction**](cim-modifysettingaction.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: El método Prev recupera la posición anterior en la lista.
 ms.assetid: 537c3019-373a-4974-a42e-72150da72767
-title: Método CBaseList. PREV (Wxlist. h)
+title: Método CBaseList.Prev (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 03c35a89754b27aa67a5bba33ee694433d74c0fd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d04a63079e401b89286e10e927b540f40d04fc186546dbdbd4e31e8610fe617d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076605"
 ---
-# <a name="cbaselistprev-method"></a>CBaseList. PREV (método)
+# <a name="cbaselistprev-method"></a>CBaseList.Prev (método)
 
 El `Prev` método recupera la posición anterior en la lista.
 
@@ -45,7 +45,7 @@ POSITION Prev(
 *pos* 
 </dt> <dd>
 
-Valor de posición.
+Valor POSITION.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Valor de posición.
 
 Devuelve el indicador de posición anterior a la posición especificada en *pos*.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si *pos* es la primera posición de la lista, el método devuelve **null**. Si *pos* es **null**, el método devuelve la última posición de la lista.
+Si *pos* es la primera posición de la lista, el método devuelve **NULL.** Si *pos* es **NULL,** el método devuelve la última posición de la lista.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Si *pos* es la primera posición de la lista, el método devuelve **null**. Si *
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Si *pos* es la primera posición de la lista, el método devuelve **null**. Si *
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

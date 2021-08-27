@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: EsentInvalidColumnException constructor Overload List'
+description: 'Más información sobre: Lista de sobrecargas del constructor EsentInvalidColumnException'
 title: Lista de sobrecargas del constructor EsentInvalidColumnException
 TOCTitle: 'EsentInvalidColumnException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentInvalidColumnException.#ctor
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: c0336c8dbb38ef27a73f43206b78fc8f4207cfa9
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 52ffe68de6294038e24332d15761cf8a63458077f6b04976841a69b06b4ff185
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064945"
 ---
 # <a name="esentinvalidcolumnexception-constructor-overload-list"></a>Lista de sobrecargas del constructor EsentInvalidColumnException
 
@@ -44,8 +44,8 @@ Incluir miembros heredados
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn350430(v=exchg.10).md">EsentInvalidColumnException (SerializationInfo, StreamingContext)</a></td>
-<td>Inicializa una nueva instancia de la clase EsentInvalidColumnException. Este constructor se utiliza para deserializar una excepción serializada.</td>
+<td><a href="dn350430(v=exchg.10).md">EsentInvalidColumnException(SerializationInfo, StreamingContext)</a></td>
+<td>Inicializa una nueva instancia de la clase EsentInvalidColumnException. Este constructor se usa para deserializar una excepción serializada.</td>
 </tr>
 </tbody>
 </table>
@@ -61,4 +61,4 @@ Superior
 
 [Miembros de EsentInvalidColumnException](./esentinvalidcolumnexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

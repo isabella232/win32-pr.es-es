@@ -5,12 +5,12 @@ title: Manifiestos de aplicación
 ms.topic: article
 ms.date: 10/08/2020
 ms.custom: 19H1
-ms.openlocfilehash: a1ced7ffb4052f418e989e907f26abb85c2c63db
-ms.sourcegitcommit: 25211012b002a7d1303e438277373d7faf958a68
+ms.openlocfilehash: 2978e72ea7c87f6beee32c8c55b3789556a8ec38
+ms.sourcegitcommit: 0ab75073bbeec7ca2899f8051626a8b772073f82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122436713"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122400998"
 ---
 # <a name="application-manifests"></a>Manifiestos de aplicación
 
@@ -46,7 +46,7 @@ Los manifiestos de aplicación tienen los siguientes elementos y atributos.
 | **autoElevate**                       |                           | No       |
 | **disableTheming**                    |                           | No       |
 | **disableWindowFiltering**            |                           | No       |
-| **pppAware**                          |                           | No       |
+| **dpiAware**                          |                           | No       |
 | **pppAwareness**                      |                           | No       |
 | **gdiScaling**                        |                           | No       |
 | **highResolutionScrollingAware**      |                           | No       |
@@ -66,7 +66,7 @@ Para obtener más información, vea [Installing Side-by-side Assemblies](install
 
 El nombre de un archivo de manifiesto de aplicación es el nombre del ejecutable de la aplicación seguido de .manifest.
 
-Por ejemplo, un manifiesto de aplicación que hace referencia a example.exe o example.dll usaría la siguiente sintaxis de nombre de archivo. Puede omitir el campo <*id. de recurso>* si el identificador de recurso es 1.
+Por ejemplo, un manifiesto de aplicación que hace referencia a example.exe o example.dll usaría la siguiente sintaxis de nombre de archivo. Puede omitir el campo <*id.>* recurso si el identificador de recurso es 1.
 
 **example.exe.<*id. de* recurso>.manifest**
 
@@ -74,7 +74,7 @@ Por ejemplo, un manifiesto de aplicación que hace referencia a example.exe o ex
 
 ## <a name="elements"></a>Elementos
 
-Los nombres de elementos y atributos distinguen mayúsculas de minúsculas. Los valores de elementos y atributos no tienen en cuenta las mayúsculas y minúsculas, excepto el valor del atributo type.
+Los nombres de elementos y atributos distinguen mayúsculas de minúsculas. Los valores de elementos y atributos no tienen en cuenta mayúsculas de minúsculas, excepto el valor del atributo de tipo.
 
 <span id="assembly"></span><span id="ASSEMBLY"></span>
 
@@ -84,7 +84,7 @@ Elemento contenedor. Su primer subelemento debe ser **un elemento noInherit** **
 
 El **elemento** de ensamblado debe estar en el espacio de nombres "urn:schemas-microsoft-com:asm.v1". Los elementos secundarios del ensamblado también deben estar en este espacio de nombres, mediante herencia o etiquetado.
 
-El **elemento** assembly tiene los siguientes atributos.
+El **elemento** de ensamblado tiene los siguientes atributos.
 
 
 
@@ -164,7 +164,7 @@ Contiene al menos un **dependentAssembly**. No tiene atributos. Opcional.
 
 ### <a name="dependentassembly"></a>dependentAssembly
 
-El primer subelemento de **dependentAssembly** debe ser un **elemento assemblyIdentity** que describa un ensamblado en paralelo requerido por la aplicación. Cada **dependentAssembly** debe estar dentro de exactamente una **dependencia**. No tiene atributos.
+El primer subelemento de **dependentAssembly** debe ser un **elemento assemblyIdentity** que describa un ensamblado en paralelo requerido por la aplicación. Cada **dependentAssembly debe** estar dentro de exactamente una **dependencia**. No tiene atributos.
 
 <span id="file"></span><span id="FILE"></span>
 
@@ -188,14 +188,14 @@ El **elemento** file tiene los atributos que se muestran en la tabla siguiente.
 
 En Windows 10, este elemento fuerza a un proceso a usar UTF-8 como página de códigos del proceso. Para obtener más información, [vea Usar la página de códigos UTF-8](/windows/uwp/design/globalizing/use-utf8-code-page). En Windows 10, el único valor válido para **activeCodePage** es **UTF-8.**
 
-A partir Windows 11, este elemento también permite la selección de la página de códigos heredada que no es UTF-8 o páginas de códigos para una configuración regional específica para la compatibilidad de aplicaciones heredadas. Se recomienda encarecidamente que las aplicaciones modernas usen Unicode. En Windows 11, **activeCodePage** también puede establecerse en el valor **Heredado** o en un nombre de configuración regional como **en-US** o **ja-JP.**
+A partir de Windows 11, este elemento también permite la selección de la página de códigos heredada que no es UTF-8 o páginas de códigos para una configuración regional específica para la compatibilidad de aplicaciones heredadas. Se recomienda encarecidamente que las aplicaciones modernas usen Unicode. En Windows 11, este valor también  puede establecerse en Heredado o en un nombre de configuración regional como **en-US** o **ja-JP**.
 
-- En las máquinas configuradas para una página de códigos activa del sistema UTF-8, **Legacy** revertirá el proceso a las páginas de códigos de configuración regional del sistema. Si la configuración regional del sistema no tiene páginas de códigos definidas, Windows-1252/437. La **configuración de la** página de códigos heredada solo se admite en los manifiestos de Fusion y solo a partir Windows 11.
-- Cuando se proporciona un nombre de configuración regional como **en-US,** la página de códigos del proceso se establecerá correctamente para esa página de códigos de configuración regional. Por ejemplo, Windows-1252 y 437 para en-US, o 932 para ja-JP.
+- En las máquinas configuradas para una página de códigos activa del sistema UTF-8, **Legacy** revertirá el proceso a las páginas de códigos de configuración regional del sistema. Si la configuración regional del sistema no tiene páginas de códigos definidas, se Windows-1252/437. La **configuración de página** de códigos heredada solo se admite en los manifiestos de Fusion y solo a partir de Windows 11
+- Cuando se proporciona un nombre de configuración regional como **en-US,** la página de códigos del proceso se establecerá correctamente para esa página de códigos de configuración regional. Por ejemplo, Windows-1252 y 437 para en-US o 932 para ja-JP.
 
-Este elemento se agregó por primera vez Windows 10 versión 1903 (actualización de mayo de 2019). Puede declarar esta propiedad y establecer como destino o ejecutar en compilaciones anteriores Windows, pero debe controlar la detección y conversión de páginas de códigos heredadas como de costumbre. Este elemento no tiene atributos. 
+Este elemento se agregó por primera vez Windows 10 versión 1903 (actualización de mayo de 2019). Puede declarar esta propiedad y destino/ejecutar en compilaciones anteriores Windows, pero debe controlar la conversión y la detección de páginas de códigos heredadas como de costumbre. Este elemento no tiene atributos. 
 
-En el ejemplo siguiente se muestra cómo usar este elemento para forzar que el proceso actual use UTF-8 como página de códigos del proceso.
+En el ejemplo siguiente se muestra cómo usar este elemento para forzar al proceso actual a usar UTF-8 como página de códigos del proceso.
 
 ```XML
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3">
@@ -219,13 +219,13 @@ Especifica si la elevación automática está habilitada. **TRUE** indica que es
 
 ### <a name="disabletheming"></a>disableTheming
 
-Especifica si se deshabilita la entrega de un tema a los elementos de la interfaz de usuario. **TRUE** indica deshabilitado. No tiene atributos.
+Especifica si se deshabilita el tema para proporcionar elementos de la interfaz de usuario. **TRUE** indica deshabilitado. No tiene atributos.
 
 <span id="disableWindowFiltering"></span><span id="disablewindowfiltering"></span><span id="DISABLEWINDOWFILTERING"></span>
 
 ### <a name="disablewindowfiltering"></a>disableWindowFiltering
 
-Especifica si se va a deshabilitar el filtrado de ventanas. **TRUE** deshabilita el filtrado de ventanas para que pueda enumerar las ventanas inmersivas desde el escritorio. **disableWindowFiltering** se agregó en Windows 8 y no tiene atributos.
+Especifica si se debe deshabilitar el filtrado de ventanas. **TRUE** deshabilita el filtrado de ventanas para que pueda enumerar las ventanas inmersivas desde el escritorio. **disableWindowFiltering** se agregó en Windows 8 y no tiene atributos.
 
 ```XML
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3">
@@ -241,24 +241,24 @@ Especifica si se va a deshabilitar el filtrado de ventanas. **TRUE** deshabilita
 
 <span id="dpiAware"></span><span id="dpiaware"></span><span id="DPIAWARE"></span>
 
-### <a name="dpiaware"></a>dpiAware
+### <a name="dpiaware"></a>pppAware
 
 Especifica si el proceso actual es compatible con puntos por pulgada (ppp).
 
 **Windows 10, versión 1607:** El **elemento dpiAware** se omite si **el elemento dpiAwareness** está presente. Puede incluir ambos elementos en un manifiesto si desea especificar un comportamiento diferente para Windows 10, versión 1607 que para una versión anterior del sistema operativo.
 
-En la tabla siguiente se describe el comportamiento que se produce en función de la presencia del **elemento dpiAware** y el texto que contiene. El texto del elemento no distingue mayúsculas de minúsculas.
+En la tabla siguiente se describe el comportamiento que se produce en función de la presencia del elemento **pppAware** y el texto que contiene. El texto dentro del elemento no distingue mayúsculas de minúsculas.
 
-| Estado del **elemento dpiAware** | Descripción     |
+| Estado del **elemento pppAware** | Descripción     |
 |-----------------------------------|---------|
 | Absent                            | El proceso actual no es consciente de ppp de forma predeterminada. Puede cambiar esta configuración mediante programación llamando a la [**función SetProcessDpiAwareness**](/windows/desktop/api/shellscalingapi/nf-shellscalingapi-setprocessdpiawareness) [**o SetProcessDPIAware.**](/windows/desktop/api/winuser/nf-winuser-setprocessdpiaware)                                                                                                                                                            |
 | Contiene "true"                   | El proceso actual es compatible con ppp del sistema.                                                                                                                                                                                                                                                                                                                                                          |
-| Contiene "false"                  | **Windows Vista, Windows 7 y Windows 8:** El comportamiento es el mismo que cuando **pppAware** está ausente.<br/> **Windows 8.1 y Windows 10:** El proceso actual no es consciente de los valores de ppp y no se puede cambiar esta configuración mediante programación llamando a la [**función SetProcessDpiAwareness**](/windows/desktop/api/shellscalingapi/nf-shellscalingapi-setprocessdpiawareness) [**o SetProcessDPIAware.**](/windows/desktop/api/winuser/nf-winuser-setprocessdpiaware)<br/> |
+| Contiene "false"                  | **Windows Vista, Windows 7 y Windows 8:** El comportamiento es el mismo que cuando **pppAware** está ausente.<br/> **Windows 8.1 y Windows 10:** El proceso actual no es consciente de ppp y no se puede cambiar esta configuración mediante programación llamando a la función [**SetProcessDpiAwareness**](/windows/desktop/api/shellscalingapi/nf-shellscalingapi-setprocessdpiawareness) o [**SetProcessDPIAware.**](/windows/desktop/api/winuser/nf-winuser-setprocessdpiaware)<br/> |
 | Contiene "true/pm"                | **Windows Vista, Windows 7 y Windows 8:** El proceso actual es compatible con ppp del sistema.<br/> **Windows 8.1 y Windows 10:** El proceso actual es compatible con ppp por monitor.<br/>                                                                                                                                                                                                          |
 | Contiene "por monitor"            | **Windows Vista, Windows 7 y Windows 8:** El comportamiento es el mismo que cuando **pppAware** está ausente.<br/> **Windows 8.1 y Windows 10:** El proceso actual es compatible con ppp por monitor.<br/>                                                                                                                                                                                      |
-| Contiene cualquier otra cadena         | **Windows Vista, Windows 7 y Windows 8:** El comportamiento es el mismo que cuando **pppAware** está ausente.<br/> **Windows 8.1 y Windows 10:** El proceso actual no es consciente de los valores de ppp y no se puede cambiar esta configuración mediante programación llamando a la [**función SetProcessDpiAwareness**](/windows/desktop/api/shellscalingapi/nf-shellscalingapi-setprocessdpiawareness) [**o SetProcessDPIAware.**](/windows/desktop/api/winuser/nf-winuser-setprocessdpiaware)<br/> |
+| Contiene cualquier otra cadena         | **Windows Vista, Windows 7 y Windows 8:** El comportamiento es el mismo que cuando **pppAware** está ausente.<br/> **Windows 8.1 y Windows 10:** El proceso actual no es consciente de ppp y no se puede cambiar esta configuración mediante programación llamando a la función [**SetProcessDpiAwareness**](/windows/desktop/api/shellscalingapi/nf-shellscalingapi-setprocessdpiawareness) o [**SetProcessDPIAware.**](/windows/desktop/api/winuser/nf-winuser-setprocessdpiaware)<br/> |
 
-Para obtener más información sobre la configuración de reconocimiento de ppp, vea [Comparación de los niveles de reconocimiento de PPP.](https://msdn.microsoft.com/library/windows/desktop/mt843498(v=vs.85).aspx(d=robot))
+Para obtener más información sobre la configuración de reconocimiento de ppp, [vea Comparación de los niveles de reconocimiento de PPP.](https://msdn.microsoft.com/library/windows/desktop/mt843498(v=vs.85).aspx(d=robot))
 
 **pppAware** no tiene atributos.
 
@@ -280,22 +280,22 @@ Para obtener más información sobre la configuración de reconocimiento de ppp,
 
 Especifica si el proceso actual es compatible con puntos por pulgada (ppp).
 
-La versión mínima del sistema operativo que admite el **elemento dpiAwareness** Windows 10, versión 1607. Para las versiones que admiten **el elemento dpiAwareness,** **pppAwareness** invalida el **elemento dpiAware.** Puede incluir ambos elementos en un manifiesto si desea especificar un comportamiento diferente para Windows 10, versión 1607 que para una versión anterior del sistema operativo.
+La versión mínima del sistema operativo que admite el **elemento dpiAwareness** es Windows 10, versión 1607. Para las versiones que admiten **el elemento dpiAwareness,** **pppAwareness** invalida el **elemento dpiAware.** Puede incluir ambos elementos en un manifiesto si desea especificar un comportamiento diferente para Windows 10, versión 1607 que para una versión anterior del sistema operativo.
 
 El **elemento dpiAwareness** puede contener un solo elemento o una lista de elementos separados por comas. En el último caso, se usa el primer elemento (situado más a la izquierda) de la lista reconocido por el sistema operativo. De esta manera, puede especificar distintos comportamientos admitidos en futuras versiones Windows sistema operativo.
 
-En la tabla siguiente se describe el comportamiento que se produce en función de la presencia del elemento **dpiAwareness** y el texto que contiene en su elemento reconocido situado más a la izquierda. El texto del elemento no distingue mayúsculas de minúsculas.
+En la tabla siguiente se describe el comportamiento que se produce en función de la presencia del elemento **pppAwareness** y el texto que contiene en el elemento reconocido situado más a la izquierda. El texto dentro del elemento no distingue mayúsculas de minúsculas.
 
 | **estado del elemento dpiAwareness:**        | Descripción                          |
 |-----------------------------------------|-------------------------------------------|
-| El elemento está ausente                       | El **elemento dpiAware** especifica si el proceso tiene en cuenta los valores de ppp.                                                                                                                                                                   |
+| Falta el elemento                       | El **elemento pppAware** especifica si el proceso es compatible con ppp.                                                                                                                                                                   |
 | No contiene elementos reconocidos            | El proceso actual no es consciente de ppp de forma predeterminada. Puede cambiar esta configuración mediante programación llamando a la [**función SetProcessDpiAwareness**](/windows/desktop/api/shellscalingapi/nf-shellscalingapi-setprocessdpiawareness) [**o SetProcessDPIAware.**](/windows/desktop/api/winuser/nf-winuser-setprocessdpiaware) |
 | El primer elemento reconocido es "system"       | El proceso actual es compatible con ppp del sistema.                                                                                                                                                                                               |
 | El primer elemento reconocido es "permonitor".   | El proceso actual es compatible con ppp por monitor.                                                                                                                                                                                          |
-| El primer elemento reconocido es "permonitorv2" | El proceso actual usa el contexto de reconocimiento de ppp por monitor-v2. Este elemento solo se reconocerá en Windows 10 versión 1703 o posterior.                                                                                              |
-| El primer elemento reconocido es "no consciente"      | El proceso actual no es consciente de los valores de ppp. No **se** puede cambiar esta configuración mediante programación llamando a la [**función SetProcessDpiAwareness**](/windows/desktop/api/shellscalingapi/nf-shellscalingapi-setprocessdpiawareness) [**o SetProcessDPIAware.**](/windows/desktop/api/winuser/nf-winuser-setprocessdpiaware)      |
+| El primer elemento reconocido es "permonitorv2" | El proceso actual usa el contexto de reconocimiento de ppp por monitor v2. Este elemento solo se reconocerá en Windows 10 versión 1703 o posterior.                                                                                              |
+| El primer elemento reconocido es "no consciente"      | El proceso actual no es consciente de ppp. No **se puede** cambiar esta configuración mediante programación llamando a la función [**SetProcessDpiAwareness**](/windows/desktop/api/shellscalingapi/nf-shellscalingapi-setprocessdpiawareness) o [**SetProcessDPIAware.**](/windows/desktop/api/winuser/nf-winuser-setprocessdpiaware)      |
 
-Para obtener más información sobre la configuración de reconocimiento de ppp compatible con este elemento, vea [RECONOCIMIENTO \_ de PPP](/windows/desktop/api/windef/ne-windef-dpi_awareness) y [CONTEXTO DE RECONOCIMIENTO DE \_ \_ PPP](/windows/desktop/hidpi/dpi-awareness-context).
+Para obtener más información sobre la configuración de reconocimiento de ppp admitida por este elemento, vea [RECONOCIMIENTO \_ de PPP](/windows/desktop/api/windef/ne-windef-dpi_awareness) y [CONTEXTO DE RECONOCIMIENTO DE \_ \_ PPP](/windows/desktop/hidpi/dpi-awareness-context).
 
 **pppAwareness** no tiene atributos.
 

@@ -1,19 +1,19 @@
 ---
-description: Muestra las funciones de vector de 4D proporcionadas por DirectXMath.
+description: Enumera las funciones de vector 4D proporcionadas por DirectXMath.
 ms.assetid: 81dddeb0-c143-5d09-057e-f7941520e268
-title: Biblioteca de DirectXMath (funciones de vector)
+title: Funciones vectoriales 4D de la biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea5ce9fb066208ebe5dd572d583a9e4685df02cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 375c246d79a8d75a812a21625c5f6a442d8fde85274edb4cab3006ed6a332dbc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117525"
 ---
-# <a name="directxmath-library-4d-vector-functions"></a>Biblioteca de DirectXMath (funciones de vector)
+# <a name="directxmath-library-4d-vector-functions"></a>Funciones vectoriales 4D de la biblioteca DirectXMath
 
-Muestra las funciones de vector de 4D proporcionadas por DirectXMath.
+Enumera las funciones de vector 4D proporcionadas por DirectXMath.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,9 +21,9 @@ Muestra las funciones de vector de 4D proporcionadas por DirectXMath.
 
 | Tema                                                                                                                           | Descripción                                              |
 |---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Función de comparación de vectores 4D de biblioteca DirectXMath](ovw-xnamath-reference-functions-vector4-comparison.md)<br/>         | Muestra las funciones de comparación de vector 4D.<br/>     |
-| [Biblioteca de DirectXMath (funciones geométricas vectoriales)](ovw-xnamath-reference-functions-vector4-geometric.md)<br/>           | Enumera las funciones geométricas vectoriales 4D.<br/>      |
-| [Funciones de transformación de vector 4D de biblioteca DirectXMath](ovw-xnamath-reference-functions-vector4-transformation.md)<br/> | Muestra las funciones de transformación de vector 4D.<br/> |
+| [Funciones de comparación de vectores 4D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector4-comparison.md)<br/>         | Enumera las funciones de comparación de vectores 4D.<br/>     |
+| [Funciones geométricas de vectores 4D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector4-geometric.md)<br/>           | Enumera las funciones geométricas del vector 4D.<br/>      |
+| [Funciones de transformación de vectores 4D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector4-transformation.md)<br/> | Enumera las funciones de transformación de vectores 4D.<br/> |
 
 
 
@@ -33,7 +33,7 @@ Muestra las funciones de vector de 4D proporcionadas por DirectXMath.
 
 <dl> <dt>
 
-[Funciones de la biblioteca de DirectXMath](ovw-xnamath-reference-functions.md)
+[Funciones de biblioteca de DirectXMath](ovw-xnamath-reference-functions.md)
 </dt> </dl>
 
  

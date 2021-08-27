@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor Int16ColumnValue'
-title: Constructor de Int16ColumnValue
+description: 'Más información sobre: Constructor Int16ColumnValue'
+title: Constructor Int16ColumnValue
 TOCTitle: 'Int16ColumnValue constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Int16ColumnValue.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.int16columnvalue.int16columnvalue(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7e4642dae6a15852d720022b1fc4804f0fb54dd9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25d5fd4a9563f3f658d50a3db8070e69e2d41383e36f27f80a0c5e7750f51ec2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063675"
 ---
-# <a name="int16columnvalue-constructor"></a>Constructor de Int16ColumnValue
+# <a name="int16columnvalue-constructor"></a>Constructor Int16ColumnValue
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,12 +50,12 @@ Dim instance As New Int16ColumnValue()
 public Int16ColumnValue()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase Int16ColumnValue](./int16columnvalue-class.md)
+[Int16ColumnValue (clase)](./int16columnvalue-class.md)
 
-[Miembros de Int16ColumnValue](./int16columnvalue-members.md)
+[Miembros Int16ColumnValue](./int16columnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

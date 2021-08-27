@@ -1,6 +1,6 @@
 ---
-title: Propiedades del método EAP (Eaptypes. h)
-description: Lo usan los suplicantes y los autenticadores para determinar los métodos EAP que se van a usar con un solicitante o autenticador determinados. Las propiedades de método también especifican la configuración de un método.
+title: Propiedades del método EAP (Eaptypes.h)
+description: Lo usan los suplicadores y autenticadores para determinar los métodos EAP que se usarán con un suplicante o autenticador determinado. Las propiedades del método también especifican la configuración de un método.
 ms.assetid: 10407b85-5d2c-4c75-9b65-a0d65d4cc7ab
 topic_type:
 - apiref
@@ -40,20 +40,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 844f897456ee21dfa93dfaa5b16b4f218ba5efb0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c88c31d77b666e377cbd1911cde8b5df63d8f5c2fc750cd03a701b03af5b60ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094405"
 ---
 # <a name="eap-method-properties"></a>Propiedades del método EAP
 
-Lo usan los suplicantes y los autenticadores para determinar los métodos EAP que se van a usar con un solicitante o autenticador determinados. Las propiedades de método también especifican la configuración de un método.
+Lo usan los suplicadores y autenticadores para determinar los métodos EAP que se usarán con un suplicante o autenticador determinado. Las propiedades del método también especifican la configuración de un método.
 
-Por ejemplo, el suplicante [802.1 x](/previous-versions/windows/embedded/ms890287(v=msdn.10)) puede requerir que los métodos tengan determinadas propiedades para su uso con el suplicante [802.1 x](/previous-versions/windows/embedded/ms890287(v=msdn.10)) . El material de creación de claves, por ejemplo, es un requisito.
+Por ejemplo, el suplicante [802.1X](/previous-versions/windows/embedded/ms890287(v=msdn.10)) puede requerir que los métodos tengan ciertas propiedades para su uso con el suplicante [802.1X.](/previous-versions/windows/embedded/ms890287(v=msdn.10)) El material de clave, por ejemplo, es un requisito.
 
-Se enumeran las propiedades que admiten los métodos EAP. Las propiedades se almacenan como valores de clave del registro. Para obtener más información, consulte la sección clave del registro de la DLL del método EAP peer del tema [configuración del registro para los métodos EAP.](registry-keys-for-eap-methods.md)
+Se enumeran las propiedades admitidas por los métodos EAP. Las propiedades se almacenan como valores de clave del Registro. Para obtener más información, vea la sección Clave del Registro DLL del método del mismo nivel de EAP del tema Configuración del [Registro para métodos EAP.](registry-keys-for-eap-methods.md)
 
 <dl> <dt>
 
@@ -65,13 +65,13 @@ Se enumeran las propiedades que admiten los métodos EAP. Las propiedades se alm
 
 
 
-El método permite negociar el conjunto de cifrado con el fin de cifrar los datos. Windows Server 2008 admite los siguientes [conjuntos de cifrado](/windows/desktop/SecAuthN/tls-cipher-suites)3DES:
+El método permite que el conjunto de cifrado se negocie para el cifrado de datos. Windows Server 2008 admite los siguientes [](/windows/desktop/SecAuthN/tls-cipher-suites)conjuntos de cifrado 3DES:
 
--   TLS \_ RSA \_ con \_ 3DES \_ Ede \_ CBC \_ Sha (TLS & SSL 3)
--   TLS \_ DHE \_ DSS \_ con \_ 3DES \_ EDE \_ CBC \_ Sha (TLS & SSL 3)
--   SSL \_ CK \_ des \_ 192 \_ EDE3 \_ CBC \_ con \_ MD5 (SSL 2 Si está habilitado)
+-   TLS \_ RSA \_ WITH \_ 3DES \_ EDE \_ CBC SHA \_ (TLS & SSL 3)
+-   TLS \_ DHE \_ DSS \_ CON \_ 3DES \_ EDE \_ CBC SHA \_ (TLS & SSL 3)
+-   SSL \_ CK \_ DES \_ 192 \_ EDE3 \_ CBC \_ WITH \_ MD5 (SSL 2 si está habilitado)
 
-Para obtener más información acerca del Protocolo de seguridad TLS 1,0, consulte [RFC 2246](https://go.microsoft.com/fwlink/p/?linkid=84035).
+Para obtener más información sobre el protocolo de seguridad TLS 1.0, vea [RFC 2246](https://go.microsoft.com/fwlink/p/?linkid=84035).
 
 
 </dt> </dl> </dd> <dt>
@@ -84,7 +84,7 @@ Para obtener más información acerca del Protocolo de seguridad TLS 1,0, consul
 
 
 
-El método proporciona un intercambio, en el que el autenticador autentica al par y viceversa.
+El método proporciona un intercambio, en el que el autenticador autentica el elemento del mismo nivel y viceversa.
 
 
 </dt> </dl> </dd> <dt>
@@ -97,7 +97,7 @@ El método proporciona un intercambio, en el que el autenticador autentica al pa
 
 
 
-El método proporciona la autenticación del origen de datos y la protección contra la modificación no autorizada de la información de los paquetes EAP, incluidas las solicitudes EAP y las respuestas. Al efectuar esta declaración, una especificación de método debe especificar los paquetes EAP protegidos y los campos protegidos dentro de los paquetes EAP.
+El método proporciona autenticación de origen de datos y protección contra la modificación no autorizada de información para paquetes EAP, incluidas las solicitudes y respuestas de EAP. Al realizar esta notificación, una especificación de método debe especificar los paquetes EAP protegidos y los campos protegidos dentro de los paquetes EAP.
 
 
 </dt> </dl> </dd> <dt>
@@ -110,7 +110,7 @@ El método proporciona la autenticación del origen de datos y la protección co
 
 
 
-El método puede protegerse frente a la reproducción de un método EAP o de sus mensajes. No se pueden reproducir las indicaciones de los resultados correctos y erróneos.
+El método puede protegerse contra la reproducción de un método EAP o sus mensajes. No se pueden reproducir las indicaciones de resultados correctos y de error.
 
 
 </dt> </dl> </dd> <dt>
@@ -123,7 +123,7 @@ El método puede protegerse frente a la reproducción de un método EAP o de sus
 
 
 
-El método puede cifrar los mensajes EAP. Se cifran las solicitudes de EAP, las respuestas de EAP, las indicaciones de resultados correctos y las indicaciones de resultados de error. Un método que realiza esta demanda debe admitir Identity Protection.
+El método puede cifrar mensajes EAP. Se cifran las solicitudes de EAP, las respuestas de EAP, las indicaciones de resultados de éxito y las indicaciones de resultados de error. Un método que realiza esta notificación debe admitir la protección de identidad.
 
 
 </dt> </dl> </dd> <dt>
@@ -136,7 +136,7 @@ El método puede cifrar los mensajes EAP. Se cifran las solicitudes de EAP, las 
 
 
 
-El método puede derivar material de creación de claves exportable, como la clave de sesión maestra (MSK) y la clave de sesión maestra extendida (EMSK). El MSK solo se usa para la derivación de claves adicionales, no directamente para la protección de la conversación EAP o los datos subsiguientes. El uso de EMSK está reservado.
+El método puede derivar material de clave exportable, como la clave de sesión maestra (MSK) y la clave de sesión maestra extendida (EMSK). MSK solo se usa para la derivación de claves posteriores, no directamente para la protección de la conversación eap o los datos posteriores. El uso de EMSK está reservado.
 
 
 </dt> </dl> </dd> <dt>
@@ -149,7 +149,7 @@ El método puede derivar material de creación de claves exportable, como la cla
 
 
 
-La longitud de clave mínima admitida por el método EAP es 64 bits.
+La longitud mínima de clave admitida por el método EAP es de 64 bits.
 
 
 </dt> </dl> </dd> <dt>
@@ -162,7 +162,7 @@ La longitud de clave mínima admitida por el método EAP es 64 bits.
 
 
 
-La longitud de clave mínima admitida por el método EAP es 128 bits.
+La longitud mínima de clave admitida por el método EAP es de 128 bits.
 
 
 </dt> </dl> </dd> <dt>
@@ -175,7 +175,7 @@ La longitud de clave mínima admitida por el método EAP es 128 bits.
 
 
 
-La longitud de clave mínima admitida por el método EAP es 256 bits.
+La longitud mínima de clave admitida por el método EAP es de 256 bits.
 
 
 </dt> </dl> </dd> <dt>
@@ -188,7 +188,7 @@ La longitud de clave mínima admitida por el método EAP es 256 bits.
 
 
 
-La longitud de clave mínima admitida por el método EAP es 512 bits.
+La longitud mínima de clave admitida por el método EAP es de 512 bits.
 
 
 </dt> </dl> </dd> <dt>
@@ -201,7 +201,7 @@ La longitud de clave mínima admitida por el método EAP es 512 bits.
 
 
 
-La longitud de clave mínima admitida por el método EAP es 1024 bits.
+La longitud mínima de clave admitida por el método EAP es de 1024 bits.
 
 
 </dt> </dl> </dd> <dt>
@@ -214,7 +214,7 @@ La longitud de clave mínima admitida por el método EAP es 1024 bits.
 
 
 
-El método no permite un ataque sin conexión que tenga un factor de trabajo basado en el número de contraseñas en el Diccionario de un atacante. En los casos en que se usa la autenticación de contraseña, las contraseñas se seleccionan normalmente a partir de un conjunto pequeño (en comparación con un conjunto de claves de N bits), lo que supone un problema sobre los ataques de diccionario. Se puede decir que un método proporciona protección contra ataques de diccionario si, cuando utiliza una contraseña como secreto, el método no permite un ataque sin conexión que tenga un factor de trabajo basado en el número de contraseñas en el Diccionario de un atacante.
+El método no permite un ataque sin conexión que tenga un factor de trabajo basado en el número de contraseñas del diccionario de un atacante. Cuando se usa la autenticación de contraseñas, las contraseñas se seleccionan normalmente de un conjunto pequeño (en comparación con un conjunto de claves de N bits), lo que genera una preocupación por los ataques de diccionario. Se puede decir que un método proporciona protección contra ataques de diccionario si, cuando usa una contraseña como secreto, el método no permite un ataque sin conexión que tenga un factor de trabajo basado en el número de contraseñas del diccionario de un atacante.
 
 
 </dt> </dl> </dd> <dt>
@@ -227,7 +227,7 @@ El método no permite un ataque sin conexión que tenga un factor de trabajo bas
 
 
 
-El método tiene la capacidad, en el caso de que se haya establecido previamente una asociación de seguridad, para crear una asociación de seguridad nueva o actualizada de forma más eficaz o en un número menor de recorridos de ida y vuelta.
+El método tiene la capacidad, en el caso de que se haya establecido previamente una asociación de seguridad, de crear una asociación de seguridad nueva o actualizada de forma más eficaz o en un número menor de recorridos de ida y vuelta.
 
 
 </dt> </dl> </dd> <dt>
@@ -240,7 +240,7 @@ El método tiene la capacidad, en el caso de que se haya establecido previamente
 
 
 
-El método muestra al servidor EAP que una sola entidad ha actuado como EAP del mismo nivel para todos los métodos que se ejecutan dentro de un método de túnel. El enlace también puede implicar que el servidor EAP muestra al sistema del mismo nivel que una sola entidad ha actuado como el servidor EAP para todos los métodos que se ejecutan dentro de un método de túnel. Si se ejecuta correctamente, el enlace sirve para mitigar las vulnerabilidades de tipo "Man in the Middle".
+El método muestra al servidor EAP que una sola entidad ha actuado como el par EAP para todos los métodos ejecutados dentro de un método de túnel. El enlace también puede implicar que el servidor EAP demuestra al mismo nivel que una sola entidad ha actuado como servidor EAP para todos los métodos ejecutados dentro de un método de túnel. Si se ejecuta correctamente, el enlace sirve para mitigar las vulnerabilidades de tipo "Man in the middle".
 
 
 </dt> </dl> </dd> <dt>
@@ -253,7 +253,7 @@ El método muestra al servidor EAP que una sola entidad ha actuado como EAP del 
 
 
 
-El método demuestra que los ataques pasivos (por ejemplo, la captura de la conversación EAP) o los ataques activos (incluido el riesgo de la MSK o EMSK) no ponen en peligro la MSKs o la EMSKs anterior o posterior.
+El método muestra que los ataques pasivos (como la captura de la conversación eap) o los ataques activos (incluido el riesgo de MSK o EMSK) no pone en peligro los MSK o EMSK posteriores o anteriores.
 
 
 </dt> </dl> </dd> <dt>
@@ -279,7 +279,7 @@ El método puede admitir la fragmentación y el reensamblado si los paquetes EAP
 
 
 
-El método puede comunicar propiedades de canal protegidas por integridad, como identificadores de punto de conexión, que se pueden comparar con valores comunicados mediante mecanismos fuera de banda, como la [autenticación, autorización y cuentas](https://go.microsoft.com/fwlink/p/?linkid=84063) (AAA) o el protocolo de nivel inferior.
+El método puede comunicar propiedades de canal protegidas por integridad, como identificadores de punto de conexión, que se pueden comparar con valores que se comunican mediante mecanismos fuera de banda, como [autenticación,](https://go.microsoft.com/fwlink/p/?linkid=84063) autorización y contabilidad (AAA) o el protocolo de nivel inferior.
 
 
 </dt> </dl> </dd> <dt>
@@ -292,7 +292,7 @@ El método puede comunicar propiedades de canal protegidas por integridad, como 
 
 
 
-El método es compatible con la protección de acceso a redes (NAP).
+El método admite protección de acceso a redes (NAP).
 
 
 </dt> </dl> </dd> <dt>
@@ -318,7 +318,7 @@ El método se puede usar en un equipo independiente.
 
 
 
-El método admite el cifrado [de protocolo MPPE (cifrado punto a punto de Microsoft)](https://go.microsoft.com/fwlink/p/?linkid=83915) .
+El método admite el cifrado de protocolo de cifrado de punto a punto [(MPPE) de Microsoft.](https://go.microsoft.com/fwlink/p/?linkid=83915)
 
 
 </dt> </dl> </dd> <dt>
@@ -344,7 +344,7 @@ El método admite la tunelización de otros métodos EAP.
 
 
 
-El método admite las propiedades configurables y tiene una interfaz de usuario.
+El método admite propiedades configurables y tiene una interfaz de usuario.
 
 
 </dt> </dl> </dd> <dt>
@@ -357,7 +357,7 @@ El método admite las propiedades configurables y tiene una interfaz de usuario.
 
 
 
-El método estaba certificado por el programa de Certificación EAP. Este bit solo debe ser enviado por métodos EAP que hayan pasado la certificación.
+El método se certificó mediante el Programa de certificación eap. Este bit solo debe enviarse mediante métodos EAP que han pasado la certificación.
 
 
 </dt> </dl> </dd> <dt>
@@ -370,7 +370,7 @@ El método estaba certificado por el programa de Certificación EAP. Este bit so
 
 
 
-Windows 7 o posterior: el método se puede usar para autenticar un equipo en una red con las credenciales de los equipos.
+Windows 7 o posterior: el método se puede usar para autenticar una máquina en una red con las credenciales de las máquinas.
 
 
 </dt> </dl> </dd> <dt>
@@ -409,7 +409,7 @@ Windows 7 o posterior: el método admite el envío de la identidad del usuario e
 
 
 
-Windows 7 o posterior: el método es un método de túnel y admite el encadenamiento de métodos EAP dentro del túnel.
+Windows 7 o posterior: el método es un método tunelizado y admite el encadenamiento de métodos EAP dentro del túnel.
 
 
 </dt> </dl> </dd> <dt>
@@ -422,7 +422,7 @@ Windows 7 o posterior: el método es un método de túnel y admite el encadenami
 
 
 
-Windows 7 o posterior: el método admite la equivalencia de estado compartida tal y como se define en [RFC 4017](https://go.microsoft.com/fwlink/p/?linkid=90455).
+Windows 7 o posterior: el método admite la equivalencia de estado compartido tal como se define en [RFC 4017](https://go.microsoft.com/fwlink/p/?linkid=90455).
 
 
 </dt> </dl> </dd> <dt>
@@ -435,7 +435,7 @@ Windows 7 o posterior: el método admite la equivalencia de estado compartida ta
 
 
 
-Reservado. No se utiliza.
+Reservado. No se usa.
 
 
 </dt> </dl> </dd> </dl>
@@ -444,21 +444,21 @@ Reservado. No se utiliza.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Eaptypes. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Eaptypes.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Claves del registro para los métodos EAP](registry-keys-for-eap-methods.md)
+[Claves del Registro para métodos EAP](registry-keys-for-eap-methods.md)
 </dt> <dt>
 
-[Constantes de EAPHost comunes](common-eap-host-error-constants.md)
+[Constantes comunes de EAPHost](common-eap-host-error-constants.md)
 </dt> </dl>
 

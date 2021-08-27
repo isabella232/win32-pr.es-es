@@ -1,19 +1,19 @@
 ---
 description: El tipo de datos SPRMARRAY contiene una matriz de valores de registro de parámetros del sistema de DVD (SPRM).
 ms.assetid: 5c285f6e-2921-4684-bc42-762fc80a5e6b
-title: SPRMARRAY (Strmif. h)
+title: SPRMARRAY (Strmif.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de18271c4417bdbdc0aac30c9b7a7e3fd7da5d0f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d54d6885f7ce1fad58640fcde21a800de4422bad016b8fd128e66e93fc29dd0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075605"
 ---
 # <a name="sprmarray"></a>SPRMARRAY
 
-El tipo de datos **SPRMARRAY** contiene una matriz de valores de registro de parámetros del sistema de DVD (SPRM).
+El **tipo de datos SPRMARRAY** contiene una matriz de valores de registro de parámetros del sistema de DVD (SPRM).
 
 
 ```C++
@@ -28,7 +28,7 @@ typedef DVD_REGISTER SPRMARRAY [24];
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Strmif. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Strmif.h (incluir Dshow.h)</dt> </dl> |
 
 
 
@@ -36,10 +36,10 @@ typedef DVD_REGISTER SPRMARRAY [24];
 
 <dl> <dt>
 
-[Tipos de datos de DirectShow](directshow-data-types.md)
+[DirectShow Tipos de datos](directshow-data-types.md)
 </dt> <dt>
 
-[**registro de DVD \_**](dvd-register.md)
+[**REGISTRO DE \_ DVD**](dvd-register.md)
 </dt> <dt>
 
 [**IDvdInfo2::GetAllSPRMs**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getallsprms)

@@ -4,7 +4,7 @@ description: Private-Information conjunto de propiedades
 ms.assetid: 9b8983a0-cc15-4a3d-b3e8-e7d6414837b0
 ms.tgt_platform: multiple
 keywords:
-- Private-Information el esquema de AD del conjunto de propiedades
+- Private-Information esquema de AD del conjunto de propiedades
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98c29773807063a0fc47046f038a611455f24e5e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d5796cd9ad2bc43330e802aa5108bc92417126a5db250abab4f87b6e2a8a2332
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065234"
 ---
 # <a name="private-information-property-set"></a>Private-Information conjunto de propiedades
 
@@ -44,9 +44,9 @@ ms.locfileid: "103906251"
 
 | Entrada | Value |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/>                                                                                                                               |
-| Localización: ID. de presentación | 72                                                                                                                                                                                                                  |
-| Miembros del conjunto de propiedades    | [**MS-PKI-RoamingTimeStamp**](a-mspkiroamingtimestamp.md)<br/> [**MS-PKI-DPAPIMasterKeys**](a-mspkidpapimasterkeys.md)<br/> [**MS-PKI-AccountCredentials**](a-mspkiaccountcredentials.md)<br/> |
+| Applies-To              | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/>                                                                                                                               |
+| Localization-Display-ID | 72                                                                                                                                                                                                                  |
+| Miembros del conjunto de propiedades    | [**ms-PKI-RoamingTimeStamp**](a-mspkiroamingtimestamp.md)<br/> [**ms-PKI-DPAPIMasterKeys**](a-mspkidpapimasterkeys.md)<br/> [**ms-PKI-AccountCredentials**](a-mspkiaccountcredentials.md)<br/> |
 
 
 
@@ -56,9 +56,9 @@ ms.locfileid: "103906251"
 
 | Entrada | Value |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/>                                                                                                                                                                                                                      |
-| Localización: ID. de presentación | 72                                                                                                                                                                                                                                                                                                         |
-| Miembros del conjunto de propiedades    | [**Tokens de MS-PKI-Credential-roaming**](a-mspki-credentialroamingtokens.md)<br/> [**MS-PKI-RoamingTimeStamp**](a-mspkiroamingtimestamp.md)<br/> [**MS-PKI-DPAPIMasterKeys**](a-mspkidpapimasterkeys.md)<br/> [**MS-PKI-AccountCredentials**](a-mspkiaccountcredentials.md)<br/> |
+| Applies-To              | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/>                                                                                                                                                                                                                      |
+| Localization-Display-ID | 72                                                                                                                                                                                                                                                                                                         |
+| Miembros del conjunto de propiedades    | [**ms-PKI-Credential-Roaming-Tokens**](a-mspki-credentialroamingtokens.md)<br/> [**ms-PKI-RoamingTimeStamp**](a-mspkiroamingtimestamp.md)<br/> [**ms-PKI-DPAPIMasterKeys**](a-mspkidpapimasterkeys.md)<br/> [**ms-PKI-AccountCredentials**](a-mspkiaccountcredentials.md)<br/> |
 
 
 
@@ -68,9 +68,9 @@ ms.locfileid: "103906251"
 
 | Entrada | Value |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/>                                                                                                                                                                                                                      |
-| Localización: ID. de presentación | 72                                                                                                                                                                                                                                                                                                         |
-| Miembros del conjunto de propiedades    | [**Tokens de MS-PKI-Credential-roaming**](a-mspki-credentialroamingtokens.md)<br/> [**MS-PKI-RoamingTimeStamp**](a-mspkiroamingtimestamp.md)<br/> [**MS-PKI-DPAPIMasterKeys**](a-mspkidpapimasterkeys.md)<br/> [**MS-PKI-AccountCredentials**](a-mspkiaccountcredentials.md)<br/> |
+| Applies-To              | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/>                                                                                                                                                                                                                      |
+| Localization-Display-ID | 72                                                                                                                                                                                                                                                                                                         |
+| Miembros del conjunto de propiedades    | [**ms-PKI-Credential-Roaming-Tokens**](a-mspki-credentialroamingtokens.md)<br/> [**ms-PKI-RoamingTimeStamp**](a-mspkiroamingtimestamp.md)<br/> [**ms-PKI-DPAPIMasterKeys**](a-mspkidpapimasterkeys.md)<br/> [**ms-PKI-AccountCredentials**](a-mspkiaccountcredentials.md)<br/> |
 
 
 

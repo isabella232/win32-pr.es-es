@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_SETSTORYTYPE (RichEdit. h)
+title: EM_SETSTORYTYPE mensaje (Richedit.h)
 description: Establece el tipo de caso.
 ms.assetid: 8FA335E1-EE0A-4F31-B800-C79F617A6019
 keywords:
-- EM_SETSTORYTYPE controles de mensajes de Windows
+- EM_SETSTORYTYPE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be6d1df04f93fca0119b58f978a6a0cb36ddf464
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b7e09c62c50441857aac6f4018800de7a145081d64de49cdf7e9ca673a5370db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062885"
 ---
-# <a name="em_setstorytype-message"></a>\_Mensaje SETSTORYTYPE em
+# <a name="em_setstorytype-message"></a>Mensaje \_ EM SETSTORYTYPE
 
 Establece el tipo de caso.
 
@@ -46,13 +46,13 @@ Establece el tipo de caso.
 *lParam* 
 </dt> <dd>
 
-El nuevo tipo de caso. Para obtener una lista de tipos de caso, consulte [**em \_ GETSTORYTYPE**](em-getstorytype.md).
+El nuevo tipo de caso. Para obtener una lista de tipos de historia, [**vea EM \_ GETSTORYTYPE**](em-getstorytype.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El tipo de caso que se estableció.
+Tipo de caso que se estableció.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,9 +60,9 @@ El tipo de caso que se estableció.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

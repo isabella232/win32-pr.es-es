@@ -1,23 +1,23 @@
 ---
-title: MOVC (SM4-ASM)
-description: Movimiento condicional por componente. | MOVC (SM4-ASM)
+title: movc (sm4 - asm)
+description: Movimiento condicional por componente. | movc (sm4 - asm)
 ms.assetid: B7F19DF5-282F-41D4-AE2D-6ACF61A42088
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91aa3116b7bc13102386c57c9b8c63d3534147a8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 81da36b39f60929bdfbac3b4a37c379189cf358ed4844e1a4cc899f867970065
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095365"
 ---
-# <a name="movc-sm4---asm"></a>MOVC (SM4-ASM)
+# <a name="movc-sm4---asm"></a>movc (sm4 - asm)
 
 Movimiento condicional por componente.
 
 
 
-| MOVC \[ \_ SAT \] dest \[ . Mask \] , src0 \[ . swizzle \] , \[ - \] SRC1 \[ \_ ABS \] \[ . swizzle \] , \[ - \] src2 \[ \_ ABS \] \[ . swizzle \] , |
+| movc \[ \_ sat \] dest \[ .mask \] , src0 \[ .swzzle, \] \[ - \] src1 \[ \_ abs \] \[ .swzzle, \] \[ - \] src2 \[ \_ abs \] \[ .swzzle \] , |
 |----------------------------------------------------------------------------------------------------------------|
 
 
@@ -28,18 +28,18 @@ Movimiento condicional por componente.
 
 | Elemento                                                            | Descripción                                                                                                                    |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] la dirección del resultado de la operación. <br/> Si *src0*, *dest*  =  *SRC1* else *dest*  =  *src2*<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] los componentes en los que se va a probar la condición.<br/>                                                               |
-| <span id="src1"></span><span id="SRC1"></span>*SRC1*<br/> | \[en \] los componentes que se van a trasladar. <br/>                                                                                     |
-| <span id="src2"></span><span id="SRC2"></span>*src2*<br/> | \[en \] los componentes que se van a trasladar.<br/>                                                                                      |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] La dirección del resultado de la operación. <br/> Si *src0*, *dest*  =  *src1* else *dest*  =  *src2*<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Los componentes en los que se va a probar la condición.<br/>                                                               |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] Componentes que se moverá. <br/>                                                                                     |
+| <span id="src2"></span><span id="SRC2"></span>*src2*<br/> | \[en \] Componentes que se moverá.<br/>                                                                                      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el ejemplo siguiente se muestra cómo utilizar esta instrucción.
+En el ejemplo siguiente se muestra cómo usar esta instrucción.
 
 ``` syntax
                 for each component in dest[.mask]
@@ -55,7 +55,7 @@ En el ejemplo siguiente se muestra cómo utilizar esta instrucción.
                 endfor
 ```
 
-Los modificadores de *SRC1* y *src2*, excepto swizzle, suponen que los datos son de punto flotante. La ausencia de modificadores solo mueve los datos sin modificar los bits.
+Los modificadores de *src1* y *src2,* que no son swzzle, suponen que los datos son de punto flotante. La ausencia de modificadores simplemente mueve los datos sin modificar los bits.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -69,7 +69,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -77,12 +77,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -92,7 +92,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

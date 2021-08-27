@@ -1,9 +1,9 @@
 ---
-title: Mensaje de HDM_GETORDERARRAY (commctrl. h)
-description: Obtiene el orden actual de izquierda a derecha de los elementos de un control de encabezado. Puede enviar este mensaje explícitamente o utilizar la \_ macro header GetOrderArray.
+title: HDM_GETORDERARRAY mensaje (Commctrl.h)
+description: Obtiene el orden de izquierda a derecha actual de los elementos de un control de encabezado. Puede enviar este mensaje explícitamente o usar la macro Header \_ GetOrderArray.
 ms.assetid: b287d3c1-ae61-41a4-a884-dc008eb24ad8
 keywords:
-- HDM_GETORDERARRAY controles de mensajes de Windows
+- HDM_GETORDERARRAY controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e334b0023ad3441c20048273e9bc58c1b25622b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f374424fe3f1d84c4919c26948486a9bae1660072975556aecaac4b08b85b33b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062835"
 ---
-# <a name="hdm_getorderarray-message"></a>HDM \_ GETORDERARRAY
+# <a name="hdm_getorderarray-message"></a>Mensaje \_ GETORDERARRAY de HDM
 
-Obtiene el orden actual de izquierda a derecha de los elementos de un control de encabezado. Puede enviar este mensaje explícitamente o utilizar la macro [**Header \_ GetOrderArray**](/windows/desktop/api/Commctrl/nf-commctrl-header_getorderarray) .
+Obtiene el orden de izquierda a derecha actual de los elementos de un control de encabezado. Puede enviar este mensaje explícitamente o usar la macro [**Header \_ GetOrderArray.**](/windows/desktop/api/Commctrl/nf-commctrl-header_getorderarray)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Obtiene el orden actual de izquierda a derecha de los elementos de un control de
 *wParam* 
 </dt> <dd>
 
-Número de elementos enteros que puede contener *lParam* . Este valor debe ser igual al número de elementos del control (vea [**HDM \_ GETITEMCOUNT**](hdm-getitemcount.md)).
+Número de elementos enteros que *lParam* puede contener. Este valor debe ser igual al número de elementos del control [**(vea HDM \_ GETITEMCOUNT**](hdm-getitemcount.md)).
 
 </dd> <dt>
 
@@ -45,11 +45,11 @@ Puntero a una matriz de enteros que reciben los valores de índice de los elemen
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto y el búfer de *lParam* recibe el número de elemento de cada elemento del control de encabezado en el orden en el que aparecen de izquierda a derecha. De lo contrario, el mensaje devuelve cero.
+Devuelve un valor distinto de cero si se realiza correctamente y el búfer de *lParam* recibe el número de elemento para cada elemento del control de encabezado en el orden en que aparecen de izquierda a derecha. De lo contrario, el mensaje devuelve cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El número de elementos de *lParam* se especifica en *wParam* y debe ser igual al número de elementos del control. Por ejemplo, el siguiente fragmento de código reservará suficiente memoria para contener los valores de índice.
+El número de elementos de *lParam* se especifica en *wParam* y debe ser igual al número de elementos del control . Por ejemplo, el siguiente fragmento de código reservará suficiente memoria para contener los valores de índice.
 
 
 ```
@@ -76,9 +76,9 @@ MessageBox(hwnd, "Out of memory.","Error", MB_OK);
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

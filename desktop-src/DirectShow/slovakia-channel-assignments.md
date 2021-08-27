@@ -1,23 +1,23 @@
 ---
-description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para Eslovaquia.
+description: En este tema se enumeran las tablas de frecuencia que se usan para la optimización de televisión análoga para la programación.
 ms.assetid: 359ce11e-547d-43ac-82c3-aac9d739b496
-title: Asignaciones de canal Eslovaquia
+title: Asignaciones de canales de gran actividad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4382b5cd9a3515f68979ae12c9bf63d6fd063175
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 99c9c5df17d5d2f4403382b52f86d238f95630c8737a7476a66df5d6c6015d6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104359988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075725"
 ---
-# <a name="slovakia-channel-assignments"></a>Asignaciones de canal Eslovaquia
+# <a name="slovakia-channel-assignments"></a>Asignaciones de canales de gran actividad
 
-En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para Eslovaquia.
+En este tema se enumeran las tablas de frecuencia que se usan para la optimización de televisión análoga para la programación.
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente, se usaba la [tabla de frecuencias Unicable](unicable-frequency-table.md) .
+Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente, se [usaba la tabla de frecuencias](unicable-frequency-table.md) no utilizables.
 
 -   [Asignaciones de difusión](#broadcast-assignments)
 -   [Asignaciones de cable](#cable-assignments)
@@ -250,7 +250,7 @@ Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste internacional de televisión análoga](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

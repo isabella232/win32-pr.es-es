@@ -1,6 +1,6 @@
 ---
-title: 'Texture2D:: Operator (función)'
-description: 'Devuelve una variable de recurso de solo lectura. | Texture2D:: Operator (función)'
+title: Función Texture2D::Operator
+description: Devuelve una variable de recurso de solo lectura. | Función Texture2D::Operator
 ms.assetid: 72ba3fc8-04c3-479a-b307-525020898bac
 keywords:
 - Función de operador HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2c397b1b80836f48cb856d03ccdf52ad2c95ce48
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 99323f1dcf212fc42c413a4be8231aa22acbd00cf3f40b408e3f9f5eca59f578
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095075"
 ---
-# <a name="texture2doperator--function"></a>Texture2D:: Operator (función)
+# <a name="texture2doperator--function"></a>Función Texture2D::Operator
 
 Devuelve una variable de recurso de solo lectura.
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
 Tipo: **uint2**
 
-Posición de índice. Contiene las coordenadas (x, y).
+Posición del índice. Contiene las coordenadas (x, y).
 
 </dd> </dl>
 
@@ -51,17 +51,17 @@ Tipo: **R**
 
 Variable de recurso de solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método siempre tiene acceso al primer nivel de MIP. Para especificar otros niveles de MIP, utilice en su lugar el método [**MIP. Operator \[ \] \[ \]**](sm5-object-texture2d-mipsoperatorindex.md) .
+Este método siempre tiene acceso al primer nivel de mip. Para especificar otros niveles de mip, use el [**método \[ \] \[ \] mip.operator**](sm5-object-texture2d-mipsoperatorindex.md) en su lugar.
 
 Los ejemplos de textura se pueden usar para la interpolación bilineal.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -69,7 +69,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

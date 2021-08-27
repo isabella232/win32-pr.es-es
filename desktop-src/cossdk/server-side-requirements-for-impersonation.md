@@ -1,29 +1,29 @@
 ---
-description: Requisitos de Server-Side para la suplantación
+description: Server-Side requisitos de suplantación
 ms.assetid: f6128688-dfd8-40ff-83ec-99d740b9152c
-title: Requisitos de Server-Side para la suplantación
+title: Server-Side requisitos de suplantación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e30edbebd37035ab7a7f4ca09e1cff73c2afbabe
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 18e43016428f2ff083fc5a783d05c3c79e241dcf299f3af9ca226cb4f6a2cf1b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096805"
 ---
-# <a name="server-side-requirements-for-impersonation"></a>Requisitos de Server-Side para la suplantación
+# <a name="server-side-requirements-for-impersonation"></a>Server-Side requisitos de suplantación
 
-El servidor realiza la suplantación mediante programación. Asume explícitamente las credenciales de seguridad del cliente mediante [**CoImpersonateClient**](/windows/desktop/api/combaseapi/nf-combaseapi-coimpersonateclient). Cuando el cliente ha concedido al servidor autoridad suficiente, tiene el efecto de sustituir las credenciales de seguridad del cliente por el token del subproceso del servidor, en lugar del token del proceso.
+El servidor realiza la suplantación mediante programación. Presupone explícitamente las credenciales de seguridad del cliente mediante [**CoImpersonateClient**](/windows/desktop/api/combaseapi/nf-combaseapi-coimpersonateclient). Cuando el cliente ha concedido al servidor autoridad suficiente, esto tiene el efecto de sustituir las credenciales de seguridad del cliente por el token de subproceso de servidor, en lugar del token de proceso.
 
-Una vez hecho esto, el servidor puede, por ejemplo, usar el token de cliente para tener acceso a los recursos protegidos con un descriptor de seguridad. O bien, puede realizar llamadas bajo la identidad del cliente, si está habilitada la ocultación.
+Una vez hecho esto, el servidor puede, por ejemplo, usar el token de cliente para acceder a los recursos que se protegen con un descriptor de seguridad. O bien, puede realizar llamadas en la identidad del cliente, si está habilitada la protección.
 
-El servidor puede establecer explícitamente la ocultación mediante programación o puede depender de una configuración administrativa. De forma predeterminada, las aplicaciones COM+ están configuradas para usar el Cloaking dinámico. Para obtener más información, consulte [Cloaking](cloaking.md).
+El servidor puede establecer explícitamente la creación mediante programación, o puede basarse en una configuración administrativa. De forma predeterminada, las aplicaciones COM+ están configuradas para usar el arroba dinámico. Para obtener más información, vea [La ingción de](cloaking.md).
 
-Si el servidor está implementando la delegación en nombre del cliente, mediante la identidad del cliente a través de la red, la identidad del proceso del servidor debe marcarse como "de confianza para delegación" en el servicio Active Directory; de lo contrario, se producirá un error de delegación.
+Si el servidor implementa la delegación en nombre del cliente (mediante la identidad de cliente a través de la red), la identidad de proceso del servidor debe marcarse como "De confianza para la delegación" en el servicio Active Directory. De lo contrario, se producirá un error en la delegación.
 
-Cuando ha terminado de usar la identidad del cliente, el servidor puede revertir a su propio token de proceso mediante [**CoRevertToSelf**](/windows/desktop/api/combaseapi/nf-combaseapi-coreverttoself).
+Cuando haya terminado de usar la identidad del cliente, el servidor puede revertir a su propio token de proceso [**mediante CoRevertToSelf.**](/windows/desktop/api/combaseapi/nf-combaseapi-coreverttoself)
 
-Para más información sobre cómo implementar la suplantación y la delegación, consulte [delegación y suplantación](/windows/desktop/com/delegation-and-impersonation).
+Para obtener más información sobre cómo implementar la suplantación y la delegación, vea [Delegación y suplantación.](/windows/desktop/com/delegation-and-impersonation)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -32,10 +32,10 @@ Para más información sobre cómo implementar la suplantación y la delegación
 [Suplantación y delegación de cliente](client-impersonation-and-delegation.md)
 </dt> <dt>
 
-[Requisitos del cliente para la suplantación](client-side-requirements-for-impersonation.md)
+[Requisitos del lado cliente para la suplantación](client-side-requirements-for-impersonation.md)
 </dt> <dt>
 
-[Esconder](cloaking.md)
+[Ocultación](cloaking.md)
 </dt> </dl>
 
  

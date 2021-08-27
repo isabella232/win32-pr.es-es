@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a9b89508079b0b400135f4ae39fd6fdfaed61952
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1b6f3067b25561869f61c70792ed2a242404deca4d65f07d83e331f6f4414d8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096134"
 ---
 # <a name="d3dxplaneintersectline-function-d3dx9mathh"></a>Función D3DXPlaneIntersectLine (D3dx9math.h)
 
@@ -89,7 +89,7 @@ Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es la intersecci�
 
 Si la línea es paralela al plano, **se devuelve NULL.**
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXPlaneIntersectLine** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXPlaneIntersectLine** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,7 +102,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

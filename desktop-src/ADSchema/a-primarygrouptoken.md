@@ -1,11 +1,11 @@
 ---
-title: Atributo Primary-Group-token
-description: Atributo calculado que se usa para recuperar la lista de miembros de un grupo, como usuarios del dominio. La pertenencia completa de estos grupos no se almacena explícitamente por motivos de escala.
+title: Atributo Primary-Group-Token
+description: Atributo calculado que se usa para recuperar la lista de pertenencia de un grupo, como Usuarios del dominio. La pertenencia completa de estos grupos no se almacena explícitamente por motivos de escalado.
 ms.assetid: b23d3b7f-074b-4f1b-bc06-b22738a8a79e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de grupo principal-de-token
-- primaryGroupToken esquema de AD de atributos
+- Esquema de AD del atributo Primary-Group-Token
+- Esquema de AD del atributo primaryGroupToken
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b237ab5998ca3f38f2d07128b36d9337c96935d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fd83e89a25a81f6d62207e48053fff5cafd279e29b482a9b80cb02de580ad3fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065925"
 ---
-# <a name="primary-group-token-attribute"></a>Atributo Primary-Group-token
+# <a name="primary-group-token-attribute"></a>Atributo Primary-Group-Token
 
-Atributo calculado que se usa para recuperar la lista de miembros de un grupo, como usuarios del dominio. La pertenencia completa de estos grupos no se almacena explícitamente por motivos de escala.
+Atributo calculado que se usa para recuperar la lista de pertenencia de un grupo, como Usuarios del dominio. La pertenencia completa de estos grupos no se almacena explícitamente por motivos de escalado.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------------|
-| CN                | Token de grupo principal                        |
-| Nombre para mostrar de LDAP | primaryGroupToken                          |
-| Tamaño              | 4 bytes                                    |
-| Actualizar privilegio  | El sistema establece este valor.           |
-| Frecuencia de actualización  | Cada vez que cambia un grupo primario de objetos. |
+| CN                | Primary-Group-Token                        |
+| Ldap-Display-Name | primaryGroupToken                          |
+| Size              | 4 bytes                                    |
+| Privilegio actualizar  | El sistema establece este valor.           |
+| Frecuencia de actualización  | Cada vez que cambia un grupo principal de objetos. |
 | Attribute-Id      | 1.2.840.113556.1.4.1412                    |
-| System-ID-GUID    | c0ed8738-7efd-4481-84d9-66d2db8be369       |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)       |
+| System-Id-Guid    | c0ed8738-7efd-4481-84d9-66d2db8be369       |
+| Syntax            | [**Enumeración**](s-enumeration.md)       |
 
 
 
@@ -44,7 +44,7 @@ Atributo calculado que se usa para recuperar la lista de miembros de un grupo, c
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Atributo calculado que se usa para recuperar la lista de miembros de un grupo, c
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| Tiene un único valor       | True                                |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Verdadero                                |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -77,13 +77,13 @@ Atributo calculado que se usa para recuperar la lista de miembros de un grupo, c
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| Tiene un único valor       | True                                |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Verdadero                                |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -92,19 +92,19 @@ Atributo calculado que se usa para recuperar la lista de miembros de un grupo, c
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| Tiene un único valor       | True                                |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Verdadero                                |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -119,13 +119,13 @@ Atributo calculado que se usa para recuperar la lista de miembros de un grupo, c
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| Tiene un único valor       | True                                |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Verdadero                                |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -140,13 +140,13 @@ Atributo calculado que se usa para recuperar la lista de miembros de un grupo, c
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| Tiene un único valor       | True                                |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Verdadero                                |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -161,13 +161,13 @@ Atributo calculado que se usa para recuperar la lista de miembros de un grupo, c
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| Tiene un único valor       | True                                |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Verdadero                                |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -182,13 +182,13 @@ Atributo calculado que se usa para recuperar la lista de miembros de un grupo, c
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| Tiene un único valor       | True                                |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Verdadero                                |
+| Es de un solo valor       | Verdadero                                |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |

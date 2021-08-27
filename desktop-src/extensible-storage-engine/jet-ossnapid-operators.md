@@ -1,25 +1,25 @@
 ---
-description: 'Más información acerca de: operadores de JET_OSSNAPID'
-title: Operadores de JET_OSSNAPID
+description: 'Más información sobre: operadores JET_OSSNAPID datos'
+title: JET_OSSNAPID operadores
 TOCTitle: JET_OSSNAPID operators
 ms:assetid: 30e3519b-5ceb-150e-eaf2-d15c3133310b
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh564633(v=EXCHG.10)
 ms:contentKeyID: 39511037
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 997f65dadfe1e173e1399c281118a7162ad9060f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41a0b2779094585dcff0473e2f1455174f568266cefde2be2b88097765bc7436
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063225"
 ---
-# <a name="jet_ossnapid-operators"></a>Operadores de JET_OSSNAPID
+# <a name="jet_ossnapid-operators"></a>JET_OSSNAPID operadores
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_OSSNAPID](./jet-ossnapid-structure.md) expone los siguientes miembros.
+El [JET_OSSNAPID](./jet-ossnapid-structure.md) expone los miembros siguientes.
 
 ## <a name="operators"></a>Operadores
 
@@ -52,6 +52,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_OSSNAPID](./jet-ossnapid-structure.md)
+[JET_OSSNAPID estructura](./jet-ossnapid-structure.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

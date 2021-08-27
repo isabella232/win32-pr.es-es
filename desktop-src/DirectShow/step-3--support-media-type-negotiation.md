@@ -1,17 +1,17 @@
 ---
-description: Implemente compatibilidad con la negociación de tipos de medios como parte de la escritura de un filtro de transformación. El tipo de medio describe el formato de los datos.
+description: Implemente la compatibilidad con la negociación de tipos de medios como parte de la escritura de un filtro de transformación. El tipo de medio describe el formato de los datos.
 ms.assetid: b2b5dafc-d38d-4ec3-a390-55229495b4f9
-title: Paso 3. Compatibilidad con la negociación de tipos de medios
+title: Paso 3. Compatibilidad con la negociación de tipos de medios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a23784e70330f751325fc5f780463d5a3904d20
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 1558d5b1a7fd9db41fef7e5a9818d93c306f4f15f42099d4cb88f66b34725660
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112410048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051475"
 ---
-# <a name="step-3-support-media-type-negotiation"></a>Paso 3. Compatibilidad con la negociación de tipos de medios
+# <a name="step-3-support-media-type-negotiation"></a>Paso 3. Compatibilidad con la negociación de tipos de medios
 
 Este es el paso 3 del tutorial Escribir [filtros de transformación](writing-transform-filters.md).
 
@@ -39,10 +39,10 @@ En las secciones siguientes se describe cada método con más detalle:
 
 <dl> <dt>
 
-[Cómo se conectan los filtros](how-filters-connect.md)
+[Cómo se Conectar](how-filters-connect.md)
 </dt> <dt>
 
-[Escribir filtros de DirectShow](writing-directshow-filters.md)
+[Escribir DirectShow filtros](writing-directshow-filters.md)
 </dt> </dl>
 
  

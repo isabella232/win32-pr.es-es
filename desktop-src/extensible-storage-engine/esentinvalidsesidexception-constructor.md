@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidSesidException'
-title: Constructor de EsentInvalidSesidException
+description: 'Más información sobre: Constructor EsentInvalidSesidException'
+title: Constructor EsentInvalidSesidException
 TOCTitle: 'EsentInvalidSesidException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidSesidException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidsesidexception.esentinvalidsesidexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4d7e6b3f4113ff642b597259fb6abb18f68bb1a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ad0ac79a67420d827f3df4f95225c6ca45df49e206648251e67bea2bee22065
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064385"
 ---
-# <a name="esentinvalidsesidexception-constructor"></a>Constructor de EsentInvalidSesidException
+# <a name="esentinvalidsesidexception-constructor"></a>Constructor EsentInvalidSesidException
 
 Inicializa una nueva instancia de la clase EsentInvalidSesidException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidSesidException()
 public EsentInvalidSesidException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInvalidSesidException()
 
 [Miembros de EsentInvalidSesidException](./esentinvalidsesidexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

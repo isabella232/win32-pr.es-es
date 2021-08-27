@@ -1,11 +1,11 @@
 ---
-title: IDWriteTextLayout DetermineMinWidth, método
-description: Determina el ancho mínimo posible con el que se puede establecer el diseño sin interrumpir la emergencia entre los caracteres de palabras completas que se están produciendo.
+title: Método IdWriteTextLayout DetermineMinWidth
+description: Determina el ancho mínimo posible en el que se puede establecer el diseño sin que se produzca una separación de emergencia entre los caracteres de palabras enteras.
 ms.assetid: 8efa1471-1b74-46d4-ac6d-fb1839ce2e74
 keywords:
-- Método DetermineMinWidth de escritura directa
-- Método DetermineMinWidth de escritura directa, interfaz IDWriteTextLayout
-- Interfaz IDWriteTextLayout Direct Write, método DetermineMinWidth
+- Escritura directa del método DetermineMinWidth
+- Método DetermineMinWidth Direct Write , interfaz IDWriteTextLayout
+- Método Direct Write de la interfaz IDWriteTextLayout , DetermineMinWidth
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2525f770030b80f0e9c0d6df9e5ec88becbb394b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41123f2a5d584341c344248d0af936f34fc04e49c9aabc1cb73ecea0eacc84ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075535"
 ---
-# <a name="idwritetextlayoutdetermineminwidth-method"></a>IDWriteTextLayout::D método etermineMinWidth
+# <a name="idwritetextlayoutdetermineminwidth-method"></a>Método IDWriteTextLayout::D etermineMinWidth
 
-Determina el ancho mínimo posible con el que se puede establecer el diseño sin interrumpir la emergencia entre los caracteres de palabras completas que se están produciendo.
+Determina el ancho mínimo posible en el que se puede establecer el diseño sin que se produzca una separación de emergencia entre los caracteres de palabras enteras.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ virtual HRESULT DetermineMinWidth(
 
 <dl> <dt>
 
-*minWidth* \[ enuncia\]
+*minWidth* \[ out\]
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* FLOAT**
 
 Ancho mínimo.
 
@@ -55,7 +55,7 @@ Ancho mínimo.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Dwrite. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

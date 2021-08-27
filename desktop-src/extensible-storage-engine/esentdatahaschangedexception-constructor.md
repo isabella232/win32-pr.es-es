@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDataHasChangedException'
-title: Constructor de EsentDataHasChangedException
+description: 'Más información sobre: Constructor EsentDataHasChangedException'
+title: Constructor EsentDataHasChangedException
 TOCTitle: 'EsentDataHasChangedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDataHasChangedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatahaschangedexception.esentdatahaschangedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f2dec198503ae52074dcea8f1941af2597fcdc24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5aea48dff6c767769b5e21e8b3276833d612a15cb1337c3da2c5b4841616f728
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117284"
 ---
-# <a name="esentdatahaschangedexception-constructor"></a>Constructor de EsentDataHasChangedException
+# <a name="esentdatahaschangedexception-constructor"></a>Constructor EsentDataHasChangedException
 
 Inicializa una nueva instancia de la clase EsentDataHasChangedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDataHasChangedException()
 public EsentDataHasChangedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentDataHasChangedException()
 
 [Miembros de EsentDataHasChangedException](./esentdatahaschangedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

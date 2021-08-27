@@ -1,9 +1,9 @@
 ---
-title: type_strict_context_handle atributo)
-description: Use el controlador de \_ contexto \ tipo STRICT \_ \_ en un archivo ACF para establecer restricciones en los identificadores de contexto.
+title: type_strict_context_handle atributo
+description: Use \type \_ strict \_ context \_ handle\ en un archivo ACF para establecer restricciones en los identificadores de contexto.
 ms.assetid: b67caad2-e87d-4eba-8555-8f347aadd515
 keywords:
-- type_strict_context_handle el atributo MIDL
+- type_strict_context_handle atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e16c9ae74d618b1b0cafef2c5bf618085d79284
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ef7e10c6231ac41287a08df7b9a0fa4e5361eddec9eb72bb6059b9f00dea5106
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104487558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105625"
 ---
-# <a name="type_strict_context_handle-attribute"></a>escribir \_ \_ atributo de identificador de contexto STRICT \_
+# <a name="type_strict_context_handle-attribute"></a>Atributo de \_ identificador de contexto strict de \_ \_ tipo
 
-Use el **\[ tipo \_ de \_ \_ identificador \] de contexto STRICT** en un archivo ACF para establecer restricciones en los identificadores de contexto.
+Use el **\[ identificador de contexto strict \_ de \_ \_ tipo \]** en un archivo ACF para establecer restricciones en los identificadores de contexto.
 
 ``` syntax
 [ 
@@ -38,36 +38,36 @@ interface interface-name
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Otros atributos ACF que se aplican a la interfaz en conjunto. Los atributos válidos incluyen el [**\_ identificador automático**](auto-handle.md), el [**\_ identificador implícito**](implicit-handle.md), el [**\_ identificador explícito**](explicit-handle.md)y [**Optimize**](optimize.md), [**code**](code.md)o [**nocode**](nocode.md). Separe varios atributos con comas.
+Otros atributos de ACF que se aplican a la interfaz en su conjunto. Entre los atributos válidos [**se incluyen el \_ identificador**](auto-handle.md)automático , [**el identificador \_ implícito,**](implicit-handle.md)el [**identificador \_**](explicit-handle.md)explícito y [**la optimización,**](optimize.md) [**el código**](code.md)o la [**codificación .**](nocode.md) Separe varios atributos con comas.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
 Nombre de la interfaz.
 
 </dd> <dt>
 
-*instrucciones de interface-Definition* 
+*interface-definition-statements* 
 </dt> <dd>
 
-Una o más instrucciones de MIDL que definen los elementos de la [**interfaz**](interface.md).
+Una o varias instrucciones MIDL que definen los elementos de la [**interfaz**](interface.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar este atributo, la marca-Target se debe establecer en NT60 (o superior) cuando se ejecuta midl.exe.
+Para usar este atributo, la marca -target debe establecerse en NT60 (o superior) al ejecutar midl.exe.
 
-\[\_el tipo \_ \_ de identificador de contexto STRICT \] es un supraconjunto funcional de \[ identificador de contexto estricto \_ \_ \] . En el identificador de \[ \_ contexto estricto \_ \] , el identificador de tipo del identificador es siempre 0; en \[ \_ el identificador de contexto de tipo STRICT \_ \_ \] , el compilador MIDL asigna un identificador de tipo único.
+\[el \_ identificador de contexto estricto de tipo es un \_ \_ \] superconjunto funcional de \[ identificador de contexto \_ \_ \] estricto. En el identificador de contexto estricto , el identificador de tipo del identificador siempre es 0; en el identificador de contexto estricto de tipo , el compilador MIDL asigna un identificador de \[ \_ tipo \_ \] \[ \_ \_ \_ \] único.
 
-Se recomienda usar un \[ \_ \_ identificador de contexto estricto \_ \] en lugar de \[ un \_ identificador de contexto estricto \_ \] . Los identificadores de contexto no se asocian a un tipo específico de forma predeterminada. Cuando se usan varios tipos de identificadores de contexto en el mismo proceso, es posible que un cliente malintencionado pase un identificador de contexto en lugar de otro para producir resultados no deseados. El uso del \[ \_ identificador de contexto STRICT de tipo \_ \_ \] permite a las aplicaciones aplicar la coherencia del tipo de identificador de contexto y evitar el uso del tipo de identificador de contexto no coincidente.
+Se recomienda usar el identificador \[ de contexto estricto de tipo en lugar del identificador de \_ contexto estricto \_ \_ \] \[ \_ \_ \] . Los identificadores de contexto no están asociados a un tipo específico de forma predeterminada. Cuando se usan varios tipos de identificadores de contexto en el mismo proceso, es posible que un cliente malintencionado pase un identificador de contexto en lugar de otro para generar resultados no deseados. El uso del identificador de contexto estricto de tipo permite a las aplicaciones aplicar la coherencia del tipo de identificador de contexto y evitar cualquier uso de tipos de identificador de \[ \_ contexto no \_ \_ \] coincidentes.
 
-Un identificador de contexto con el atributo de \[ \_ identificador de \_ contexto STRICT \_ \] no se puede atribuir con un \[ identificador de contexto estricto \_ \_ \] .
+Un identificador de contexto atribuido con \[ el identificador de contexto estricto de tipo tampoco se puede atribuir con un identificador \_ de contexto \_ \_ \] \[ \_ \_ \] estricto.
 
 ## <a name="see-also"></a>Vea también
 
@@ -76,33 +76,33 @@ Un identificador de contexto con el atributo de \[ \_ identificador de \_ contex
 [Archivo de configuración de la aplicación (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**codifica**](code.md)
+[**Código**](code.md)
 </dt> <dt>
 
 [Identificadores de contexto](/windows/desktop/Rpc/context-handles)
 </dt> <dt>
 
-[**\_serializar identificador de contexto \_**](context-handle-serialize.md)
+[**serialización \_ del \_ identificador de contexto**](context-handle-serialize.md)
 </dt> <dt>
 
-[**identificador de contexto de \_ \_ noserialización**](context-handle-noserialize.md)
+[**context \_ handle \_ noserialize**](context-handle-noserialize.md)
 </dt> <dt>
 
-[**\_identificador explícito**](explicit-handle.md)
+[**identificador \_ explícito**](explicit-handle.md)
 </dt> <dt>
 
-[**\_identificador implícito**](implicit-handle.md)
+[**identificador \_ implícito**](implicit-handle.md)
 </dt> <dt>
 
 [**nocode**](nocode.md)
 </dt> <dt>
 
-[**optimiz**](optimize.md)
+[**Optimizar**](optimize.md)
 </dt> <dt>
 
-[\_identificador de contexto estricto \_](strict-context-handle.md)
+[control \_ de contexto \_ estricto](strict-context-handle.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

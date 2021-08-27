@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetFreeBuffer (función)'
-title: JetFreeBuffer función)
+description: 'Más información sobre: JetFreeBuffer (Función)'
+title: JetFreeBuffer (Función)
 TOCTitle: JetFreeBuffer Function
 ms:assetid: f37d35f6-4bea-46ba-a334-7b8ad7a1568c
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294134(v=EXCHG.10)
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fe638e2aab1d37324a6fd6bf477a578f02b9ac58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7d7b56c38bde931cfe0c1a2e95579a515cf3538
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707021"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476441"
 ---
-# <a name="jetfreebuffer-function"></a>JetFreeBuffer función)
+# <a name="jetfreebuffer-function"></a>JetFreeBuffer (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetfreebuffer-function"></a>JetFreeBuffer función)
+## <a name="jetfreebuffer-function"></a>JetFreeBuffer (Función)
 
-La función **JetFreeBuffer** libera memoria asignada por una llamada del motor de base de datos.
+La **función JetFreeBuffer** libera la memoria asignada por una llamada al motor de base de datos.
 
-**Windows XP: JetFreeBuffer** se presentó en Windows XP.
+**Windows XP: JetFreeBuffer** se introdujo en Windows XP.
 
 ```cpp
     JET_ERR JET_API JetFreeBuffer(
@@ -46,66 +46,28 @@ La función **JetFreeBuffer** libera memoria asignada por una llamada del motor 
 
 *pbBuf*
 
-Puntero a una región de memoria que se asignó previamente mediante una llamada al motor de base de datos. **Null** es aceptable y se omitirá.
+Puntero a una región de memoria asignada previamente por una llamada al motor de base de datos. **NULL** es aceptable y se omitirá.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-</tbody>
-</table>
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
-#### <a name="remarks"></a>Observaciones
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 
-Es un comportamiento indefinido para pasar memoria que no fue asignada por el motor de base de datos de a *pbBuf*.
+
+
+#### <a name="remarks"></a>Comentarios
+
+Es un comportamiento indefinido pasar memoria no asignada por el motor de base de datos en *a pbBuf*.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

@@ -1,9 +1,9 @@
 ---
-title: modificador/h
-description: La opción/h es equivalente funcionalmente a la opción/header.
+title: Modificador /h
+description: La opción /h es funcionalmente equivalente a la opción /header.
 ms.assetid: 1b74d5f2-6624-4b71-832d-fb55a0e84c86
 keywords:
-- /h (modificador) MIDL
+- /h switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,55 +12,55 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7ff2cd7aa5e4b8386e0c9faecfaccd860207403
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a71bf02668a583b330684338cbc3f639fbbda5a340c7226e10956233aa8dc9ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105615"
 ---
-# <a name="h-switch"></a>modificador/h
+# <a name="h-switch"></a>Modificador /h
 
-La opción **/h** es equivalente funcionalmente a la opción [**/Header**](-header.md) .
+La **opción /h** es funcionalmente equivalente a la [**opción /header.**](-header.md)
 
 ``` syntax
 midl /h filename
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 <dl> <dt>
 
 *filename* 
 </dt> <dd>
 
-Especifica un nombre de archivo de encabezado que invalida el nombre de archivo de encabezado predeterminado. Los nombres de archivo se pueden entrecomillar explícitamente con comillas dobles (") para evitar que el shell interprete caracteres especiales.
+Especifica un nombre de archivo de encabezado que invalida el nombre de archivo de encabezado predeterminado. Los nombres de archivo se pueden entrecomillar explícitamente mediante comillas dobles (") para evitar que el shell interprete caracteres especiales.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El modificador **/h** especifica *filename* como el nombre de un archivo de encabezado que contiene todas las definiciones incluidas en el archivo IDL, sin la sintaxis IDL. Este archivo se puede usar como un archivo de encabezado de C o C++.
+El **modificador /h** especifica *filename* como nombre de un archivo de encabezado que contiene todas las definiciones contenidas en el archivo IDL, sin la sintaxis IDL. Este archivo se puede usar como un archivo de encabezado de C o C++.
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/h tlibhead. h nombreDeArchivo. idl**
+**midl /h tlibhead.h filename.idl**
 
-**MIDL/h "MIDL. h" FILENAME. idl**
+**midl /h "midl.h" filename.idl**
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/header**](-header.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

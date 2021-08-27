@@ -1,26 +1,26 @@
 ---
-description: configuración regional \_ ITIME
+description: LOCALE \_ ITIME
 ms.assetid: 52f760c3-00df-44f1-857b-419d0dfdec19
 title: LOCALE_ITIME
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ebcc94713bafddd45249f5598f86d6660496028
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b9f309dc35e2191c90c49aa551c0dc2808788f73c47b8acc26120d2fff5d0c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120106464"
 ---
-# <a name="locale_itime"></a>configuración regional \_ ITIME
+# <a name="locale_itime"></a>LOCALE \_ ITIME
 
-Especificación de formato de hora. La especificación es uno de los valores siguientes. Es preferible que la aplicación use la constante [ \_ STIMEFORMAT de configuración regional](locale-stime-constants.md) en lugar de la configuración regional \_ ITIME.
+Especificación de formato de hora. La especificación es uno de los siguientes valores. Es preferible que la aplicación use la [constante \_ LOCALE STIMEFORMAT](locale-stime-constants.md) en lugar de LOCALE \_ ITIME.
 
 
 
 | Value | Descripción          |
 |-------|----------------------|
-| 0     | Formato de 12 horas AM/PM |
-| 1     | formato de 24 horas       |
+| 0     | Formato de 12 horas a.m./p. m. |
+| 1     | Formato de 24 horas       |
 
 
 

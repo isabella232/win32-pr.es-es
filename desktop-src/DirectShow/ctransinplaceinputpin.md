@@ -1,7 +1,7 @@
 ---
-description: La clase CTransInPlaceInputPin implementa un PIN de entrada usado por la clase CTransInPlaceFilter.
+description: La clase CTransInPlaceInputPin implementa un pin de entrada que usa la clase CTransInPlaceFilter.
 ms.assetid: 8cd2f17d-64b4-4ee6-b31a-e841ada03ce6
-title: Clase CTransInPlaceInputPin (TRANSip. h)
+title: CTransInPlaceInputPin (clase, Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,38 +16,38 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 242e3c09a3fb569036a22b515d4da9c49b6178da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 04d30b18d115e7ef03e88deb47355bafc795532a91afa14cf2f4392e658954f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076205"
 ---
-# <a name="ctransinplaceinputpin-class"></a>Clase CTransInPlaceInputPin
+# <a name="ctransinplaceinputpin-class"></a>CTransInPlaceInputPin (clase)
 
-![jerarquía de clases ctransinplaceinputpin](images/tsip01.png)
+![Jerarquía de clases ctransinplaceinputpin](images/tsip01.png)
 
-La `CTransInPlaceInputPin` clase implementa un PIN de entrada usado por la clase [**CTransInPlaceFilter**](ctransinplacefilter.md) .
+La `CTransInPlaceInputPin` clase implementa un pin de entrada que usa la clase [**CTransInPlaceFilter.**](ctransinplacefilter.md)
 
-Normalmente, no es necesario derivar de esta clase. Si lo hace, debe invalidar el método [**CTransInPlaceFilter:: GetPin**](ctransinplacefilter-getpin.md) del filtro para crear instancias de la clase derivada.
+Normalmente, no es necesario derivar de esta clase. Si lo hace, debe invalidar el método [**CTransInPlaceFilter::GetPin**](ctransinplacefilter-getpin.md) del filtro para crear instancias de la clase derivada.
 
 
 
-| Variables de miembro protegidas                                                          | Descripción                                                |
+| Variables de miembro protegido                                                          | Descripción                                                |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------|
 | [**m \_ bReadOnly**](ctransinplaceinputpin-m-breadonly.md)                           | Marca que especifica si el flujo de entrada es de solo lectura. |
 | [**m \_ pTIPFilter**](ctransinplaceinputpin-m-ptipfilter.md)                         | Puntero al filtro que creó este pin.               |
 | Métodos públicos                                                                      | Descripción                                                |
-| [**CTransInPlaceInputPin**](ctransinplaceinputpin-ctransinplaceinputpin.md)        | Método de constructor.                                        |
-| [**CheckMediaType**](ctransinplaceinputpin-checkmediatype.md)                      | Determina si el PIN acepta un tipo de medio específico.       |
-| [**PeekAllocator**](ctransinplaceinputpin-peekallocator.md)                        | Recupera un puntero al asignador del PIN.                |
-| [**ReadOnly**](ctransinplaceinputpin-readonly.md)                                  | Indica si el flujo de entrada es de solo lectura.           |
-| Métodos IPin                                                                        | Descripción                                                |
-| [**EnumMediaTypes**](ctransinplaceinputpin-enummediatypes.md)                      | Enumera los tipos de medios preferidos del PIN.                |
+| [**CTransInPlaceInputPin**](ctransinplaceinputpin-ctransinplaceinputpin.md)        | Método constructor.                                        |
+| [**CheckMediaType**](ctransinplaceinputpin-checkmediatype.md)                      | Determina si el pin acepta un tipo de medio específico.       |
+| [**PeekAllocator**](ctransinplaceinputpin-peekallocator.md)                        | Recupera un puntero al asignador del pin.                |
+| [**Readonly**](ctransinplaceinputpin-readonly.md)                                  | Indica si el flujo de entrada es de solo lectura.           |
+| Métodos de IPin                                                                        | Descripción                                                |
+| [**EnumMediaTypes**](ctransinplaceinputpin-enummediatypes.md)                      | Enumera los tipos de medios preferidos del pin.                |
 | Métodos IMemInputPin                                                                | Descripción                                                |
 | [**GetAllocator**](ctransinplaceinputpin-getallocator.md)                          | Recupera el asignador de memoria propuesto por este pin.       |
 | [**NotifyAllocator**](ctransinplaceinputpin-notifyallocator.md)                    | Especifica un asignador para la conexión.                 |
-| [**GetAllocatorRequirements**](ctransinplaceinputpin--getallocatorrequirements.md) | Recupera las propiedades de asignador solicitadas por el código PIN.   |
+| [**GetAllocatorRequirements**](ctransinplaceinputpin--getallocatorrequirements.md) | Recupera las propiedades del asignador solicitadas por el pin.   |
 
 
 
@@ -59,8 +59,8 @@ Normalmente, no es necesario derivar de esta clase. Si lo hace, debe invalidar e
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

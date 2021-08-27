@@ -1,11 +1,11 @@
 ---
-title: Método CreateInstanceFromPropertyData de la clase MicrosoftDNS_WINSType
-description: El método CreateInstanceFromPropertyData crea una instancia de un registro de recursos del servicio de nombres Internet de Windows (WINS).
+title: Método CreateInstanceFromPropertyData de la MicrosoftDNS_WINSType clase
+description: El método CreateInstanceFromPropertyData crea una instancia de Windows registro de recursos del Servicio de nombres de Internet (WINS).
 ms.assetid: 0b41a6a5-0bb1-467b-9089-2c721d521887
 keywords:
-- CreateInstanceFromPropertyData el método DNS
-- Método CreateInstanceFromPropertyData DNS, clase MicrosoftDNS_WINSType
-- MicrosoftDNS_WINSType de clase DNS, método CreateInstanceFromPropertyData
+- Dns del método CreateInstanceFromPropertyData
+- Método DNS CreateInstanceFromPropertyData , MicrosoftDNS_WINSType clase
+- MicrosoftDNS_WINSType clase DNS , método CreateInstanceFromPropertyData
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf584bd34f59391a49fd5f7ec13cb49e18ef68fb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92f39b360c29ca859c0d0fd0188f0b065dec58293207c27e0a0267572472aabe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077055"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_winstype-class"></a>Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS WINSType
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_winstype-class"></a>Método CreateInstanceFromPropertyData de la clase WINSType de MicrosoftDNS \_
 
-El método **CreateInstanceFromPropertyData** crea una instancia de un registro de recursos del servicio de nombres Internet de Windows (WINS).
+El **método CreateInstanceFromPropertyData** crea una instancia de Windows registro de recursos del Servicio de nombres de Internet (WINS).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,39 +51,39 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ de\]
+*DnsServerName* \[ En\]
 </dt> <dd>
 
 FQDN o dirección IP del servidor DNS que contiene este RR.
 
 </dd> <dt>
 
-*ContainerName* \[ de\]
+*ContainerName* \[ En\]
 </dt> <dd>
 
-Nombre del contenedor de la zona, la memoria caché o la instancia de RootHints que contiene este RR.
+Nombre del contenedor para la instancia de Zone, Cache o RootHints que contiene este RR.
 
 </dd> <dt>
 
-*Nombrepropietario* \[ de\]
+*OwnerName* \[ En\]
 </dt> <dd>
 
 Nombre del propietario del RR.
 
 </dd> <dt>
 
-*RecordClass* \[ en, opcional\]
+*RecordClass* \[ in, opcional\]
 </dt> <dd>
 
 Clase del RR. El valor predeterminado es 1. Los valores siguientes son válidos.
 
 
 
-| Value                                                                                                | Significado                  |
+| Valor                                                                                                | Significado                  |
 |------------------------------------------------------------------------------------------------------|--------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | EN (Internet)<br/> |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CAOS)<br/>    |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
 | <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
@@ -92,24 +92,24 @@ Clase del RR. El valor predeterminado es 1. Los valores siguientes son válidos.
 
 </dd> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 
 </dd> <dt>
 
-*MappingFlag* \[ de\]
+*MappingFlag* \[ En\]
 </dt> <dd>
 
-Marca de asignación WINS que especifica si el registro debe incluirse en la replicación de zona. Puede tener solo dos valores: 0x80000000 y 0x00010000 correspondientes a las marcas de replicación y no replicación (registro local), respectivamente. Los valores siguientes son válidos.
+Marca de asignación WINS que especifica si el registro debe incluirse en la replicación de zona. Puede tener solo dos valores: 0x80000000 y 0x00010000 correspondientes a las marcas de replicación y sin replicación (registro local), respectivamente. Los valores siguientes son válidos.
 
 
 
-| Value                                                                                                                                               | Significado                                       |
+| Valor                                                                                                                                               | Significado                                       |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | <span id="0x80000000"></span><span id="0X80000000"></span><dl> <dt>**0x80000000**</dt> </dl> | Marca de replicación<br/>                   |
-| <span id="0x00010000"></span><span id="0X00010000"></span><dl> <dt>**0x00010000**</dt> </dl> | Marca de no replicación (registro local)<br/> |
+| <span id="0x00010000"></span><span id="0X00010000"></span><dl> <dt>**0x00010000**</dt> </dl> | Marca De no replicación (registro local)<br/> |
 
 
 
@@ -117,31 +117,31 @@ Marca de asignación WINS que especifica si el registro debe incluirse en la rep
 
 </dd> <dt>
 
-*Tiempodeesperadebúsqueda* \[ de\]
+*LookupTimeout* \[ En\]
 </dt> <dd>
 
-Tiempo, en segundos, que un servidor DNS intenta resolver mediante la búsqueda de WINS.
+Tiempo, en segundos, que un servidor DNS intenta resolver mediante WINS Look up.
 
 </dd> <dt>
 
-*CacheTimeout* \[ de\]
+*CacheTimeout* \[ En\]
 </dt> <dd>
 
-Tiempo, en segundos, que un servidor DNS que usa WINS buscan puede almacenar en caché la respuesta del servidor WINS.
+Tiempo, en segundos, que un servidor DNS que usa WINS Look up puede almacenar en caché la respuesta del servidor WINS.
 
 </dd> <dt>
 
-*WinsServers* \[ de\]
+*WinsServers* \[ En\]
 </dt> <dd>
 
-Lista de direcciones IP separadas por comas de los servidores WINS utilizados en WINS looks.
+Lista de direcciones IP separadas por comas de servidores WINS que se usan en búsquedas WINS.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Referencia al nuevo objeto.
+Referencia al nuevo objeto .
 
 </dd> </dl>
 
@@ -153,12 +153,12 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -169,10 +169,10 @@ Este método no devuelve ningún valor.
 [**MicrosoftDNS \_ WINSType**](microsoftdns-winstype.md)
 </dt> <dt>
 
-[**Método Modify de la \_ clase MicrosoftDNS WINSType**](microsoftdns-winstype-modify.md)
+[**Método Modify de la clase WINSType de MicrosoftDNS \_**](microsoftdns-winstype-modify.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

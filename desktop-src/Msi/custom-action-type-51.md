@@ -1,25 +1,25 @@
 ---
-description: Los desarrolladores de paquetes de Windows Installer pueden optar por usar un tipo de acción personalizada 51 cuando las acciones estándar no son suficientes para ejecutar la instalación.
+description: Los desarrolladores Windows paquetes del instalador pueden optar por usar una acción personalizada de tipo 51 cuando las acciones estándar no son suficientes para ejecutar la instalación.
 ms.assetid: cdad16ad-426c-4e04-8003-b32c67be7329
 title: Tipo de acción personalizada 51
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef3224add3a425131ee3308bc4f610b086cd99a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e780c1a38b60c855f4bfe665f5f68a3f6a037a078f4a2875d1a2ea57c5e7e8dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075055"
 ---
 # <a name="custom-action-type-51"></a>Tipo de acción personalizada 51
 
-Esta acción personalizada establece una propiedad a partir de una cadena de texto con formato.
+Esta acción personalizada establece una propiedad de una cadena de texto con formato.
 
-Para que afecte a una propiedad utilizada en una condición en un componente o característica, la acción personalizada debe estar antes de la [acción CostFinalize](costfinalize-action.md) en la secuencia de acción.
+Para afectar a una propiedad utilizada en una condición en un componente o característica, la acción personalizada debe ir antes de la acción [CostFinalize](costfinalize-action.md) en la secuencia de acciones.
 
-## <a name="source"></a>Source
+## <a name="source"></a>Origen
 
-El campo de origen de la [tabla CustomAction](customaction-table.md) puede contener el nombre de una propiedad o una clave de la [tabla de propiedades](property-table.md). Esta propiedad se establece mediante la cadena con formato en el campo de destino mediante [**MsiSetProperty**](/windows/desktop/api/Msiquery/nf-msiquery-msisetpropertya).
+El campo Source de la [tabla CustomAction](customaction-table.md) puede contener el nombre de una propiedad o una clave para la [tabla Property](property-table.md). Esta propiedad se establece mediante la cadena con formato en el campo Destino mediante [**MsiSetProperty**](/windows/desktop/api/Msiquery/nf-msiquery-msisetpropertya).
 
 ## <a name="type-value"></a>Valor de tipo
 
@@ -37,33 +37,33 @@ Incluya el siguiente valor en la columna Type de la [tabla CustomAction](customa
 
 ## <a name="target"></a>Destino
 
-La columna de destino de la [tabla CustomAction](customaction-table.md) contiene una cadena de texto con el formato de la funcionalidad especificada en [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) (sin los especificadores de campo numérico). Los parámetros que se van a reemplazar se incluyen entre corchetes, \[ ... \] y pueden ser propiedades, variables de entorno (% Prefix), rutas de acceso de archivo ( \# prefijo) o rutas de acceso de directorio de componentes ($ Prefix).
+La columna Target de la [tabla CustomAction](customaction-table.md) contiene una cadena de texto con formato con la funcionalidad especificada en [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) (sin los especificadores de campo numérico). Los parámetros que se van a reemplazar se incluyen entre corchetes, ... y pueden ser propiedades, variables de entorno (% de prefijo), rutas de acceso de archivo (prefijo) o rutas de acceso de directorio de \[ \] componentes \# (prefijo $).
 
-## <a name="return-processing-options"></a>Opciones de procesamiento de valores devueltos
+## <a name="return-processing-options"></a>Opciones de procesamiento de devolución
 
-La acción personalizada no utiliza estas opciones.
+La acción personalizada no usa estas opciones.
 
 ## <a name="execution-scheduling-options"></a>Opciones de programación de ejecución
 
-Incluya los bits de marca opcionales en la columna tipo de la [tabla CustomAction](customaction-table.md) para especificar las opciones de programación de la ejecución. Estas opciones controlan la ejecución múltiple de acciones personalizadas. Para obtener una descripción de las opciones, vea opciones de programación de la [ejecución de acciones personalizadas](custom-action-execution-scheduling-options.md).
+Incluya bits de marca opcionales en la columna Tipo de la [tabla CustomAction](customaction-table.md) para especificar las opciones de programación de ejecución. Estas opciones controlan la ejecución múltiple de acciones personalizadas. Para obtener una descripción de las opciones, vea [Custom Action Execution Scheduling Options](custom-action-execution-scheduling-options.md).
 
-## <a name="in-script-execution-options"></a>Opciones de ejecución de In-Script
+## <a name="in-script-execution-options"></a>In-Script de ejecución
 
-La acción personalizada no utiliza estas opciones.
+La acción personalizada no usa estas opciones.
 
 ## <a name="return-values"></a>Valores devueltos
 
-Vea [valores devueltos de la acción personalizada](custom-action-return-values.md).
+Vea [Valores devueltos de acción personalizada.](custom-action-return-values.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si establece una [propiedad privada](private-properties.md) en la secuencia de la interfaz de usuario mediante la creación de una acción personalizada en una de las tablas de secuencia de la interfaz de usuario, esa propiedad no se establece en la secuencia de ejecución. Para establecer la propiedad en la secuencia de ejecución, también debe colocar una acción personalizada en una tabla de secuencia de ejecución. Como alternativa, puede convertir la propiedad en una [propiedad pública](public-properties.md) e incluirla en la [**propiedad SecureCustomProperties**](securecustomproperties.md).
+Si establece una [propiedad](private-properties.md) privada en la secuencia de la interfaz de usuario mediante la creación de una acción personalizada en una de las tablas de secuencia de la interfaz de usuario, esa propiedad no se establece en la secuencia de ejecución. Para establecer la propiedad en la secuencia de ejecución, también debe colocar una acción personalizada en una tabla de secuencia de ejecución. Como alternativa, puede convertir la propiedad en una [propiedad pública](public-properties.md) e incluirla en la [**propiedad SecureCustomProperties**](securecustomproperties.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[\_Acciones personalizadas](custom-actions.md)
+[Acciones \_ personalizadas](custom-actions.md)
 </dt> <dt>
 
 [Acciones personalizadas de texto con formato](formatted-text-custom-actions.md)
