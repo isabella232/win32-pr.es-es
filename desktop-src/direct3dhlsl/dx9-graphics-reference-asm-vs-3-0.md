@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 310d64170280053c34766f214969f78d66560ea3
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: fd10f6d726118679f395f01714233c7096fd5189
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112011078"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476421"
 ---
 # <a name="vs_3_0"></a>vs \_ 3 \_ 0
 
@@ -54,15 +54,15 @@ De forma similar a \_ 2 \_ 0, la salida del sombreador puede variar con el contr
 
 ### <a name="dynamic-flow-control"></a>Control de flujo dinámico
 
-Se admiten todas las instrucciones de control de flujo dinámico. El valor máximo de profundidad de anidamiento permitido es 24. (Consulte [Límites de anidamiento de controles de flujo](dx9-graphics-reference-asm-vs-instructions-flow-control.md) para obtener más información).
+Se admiten todas las instrucciones de control de flujo dinámico. El valor máximo de profundidad de anidamiento permitido es 24. (Vea [Flow límites de anidamiento de controles para](dx9-graphics-reference-asm-vs-instructions-flow-control.md) obtener más información).
 
 ### <a name="temporary-registers"></a>Registros temporales
 
-Se admite un total de 32 registros temporales \# (r).
+Se admite un total de 32 registros temporales (r \# ).
 
-### <a name="static-flow-control"></a>Control de flujo estático
+### <a name="static-flow-control"></a>Static Flow Control
 
-La profundidad de anidamiento máxima del [bucle (frente](loop---vs.md) / [a rep) frente](rep---vs.md) a 4. La profundidad de anidamiento máxima para [la llamada ( vs](call---vs.md) / [callnz bool - vs](callnz-bool---vs.md) / [callnz pred ) vs](callnz-pred---vs.md) es 4. Para [if bool - vs](if-bool---vs.md), el valor máximo de profundidad de anidamiento permitido es 24. (Consulte [Límites de anidamiento de controles de flujo](dx9-graphics-reference-asm-vs-instructions-flow-control.md) para obtener más información).
+La profundidad de anidamiento máxima del [bucle (frente](loop---vs.md) / [a rep) frente](rep---vs.md) a 4. La profundidad de anidamiento máxima para [la llamada ( vs](call---vs.md) / [callnz bool - vs](callnz-bool---vs.md) / [callnz pred ) vs](callnz-pred---vs.md) es 4. Para [if bool - vs](if-bool---vs.md), el valor máximo de profundidad de anidamiento permitido es 24. (Vea [Flow límites de anidamiento de controles para](dx9-graphics-reference-asm-vs-instructions-flow-control.md) obtener más información).
 
 ### <a name="predication"></a>Predicación
 
@@ -70,7 +70,7 @@ Se admite el predicado de instrucciones. Use [setp \_ comp - vs para](setp-comp-
 
 ### <a name="instruction-count"></a>Recuento de instrucciones
 
-Cada sombreador de vértices se permite desde 512 hasta el número de ranuras de MaxVertexShader30InstructionSlots en [**D3DCAPS9.**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9) El número de instrucciones que se ejecutan puede ser mucho mayor debido a la compatibilidad con bucles o representantes. sin embargo, maxVShaderInstructionsExecuted en D3DCAPS9, que debe ser al menos 0xFFFF.
+Cada sombreador de vértices se permite desde 512 hasta el número de ranuras de MaxVertexShader30InstructionSlots en [**D3DCAPS9.**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9) El número de instrucciones que se ejecutan puede ser mucho mayor debido a la compatibilidad con bucles o representantes. sin embargo, MaxVShaderInstructionsExecuted en D3DCAPS9, que debe ser al menos 0xFFFF.
 
 ### <a name="device-caps"></a>Límites de dispositivo
 
@@ -78,71 +78,19 @@ Si se admite Sombreador de vértices 3 0, se admiten los siguientes límites en 
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tapa</th>
-<th>Capacidad</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Límites de sombreador</td>
-<td><ul>
-<li>DynamicFlowControlDepth es 24</li>
-<li>NumTemps es 32</li>
-<li>StaticFlowControlDepth es 4</li>
-<li>Se admite la predicado.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>GuardBandLeft, GuardBandTop, GuardBandRight, GuardBandBottom</td>
-<td>8 K</td>
-</tr>
-<tr class="odd">
-<td>VertexShaderVersion</td>
-<td>3_0</td>
-</tr>
-<tr class="even">
-<td>MaxVertexShaderConst</td>
-<td>256</td>
-</tr>
-<tr class="odd">
-<td>MaxVertexShader30InstructionSlots</td>
-<td>512</td>
-</tr>
-<tr class="even">
-<td>Compatibilidad con la nube</td>
-<td>D3DPRASTERCAPS_FOGVERTEX</td>
-</tr>
-<tr class="odd">
-<td>VertexTextureFilterCaps</td>
-<td><ul>
-<li><a href="/windows/desktop/direct3d9/d3dptfiltercaps">D3DPTFILTERCAPS_MINFPOINT</a></li>
-<li><a href="/windows/desktop/direct3d9/d3dptfiltercaps">D3DPTFILTERCAPS_MAGFPOINT</a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/direct3d9/d3ddevcaps2">D3DDEVCAPS2_VERTEXELEMENTSCANSHARESTREAMOFFSET</a></td>
-<td>Los elementos de vértice de una declaración de vértice pueden compartir el mismo desplazamiento de flujo.</td>
-</tr>
-<tr class="odd">
-<td>Formatos de vértice</td>
-<td><ul>
-<li>D3DDECLTYPE_UBYTE4</li>
-<li>D3DDECLTYPE_UBYTE4N</li>
-<li>D3DDECLTYPE_SHORT2N</li>
-<li>D3DDECLTYPE_SHORT4N</li>
-<li>D3DDECLTYPE_FLOAT16_2</li>
-<li>D3DDECLTYPE_FLOAT16_4</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Tapa | Capacidad | 
+|-----|------------|
+| Límites de sombreador | <ul><li>DynamicFlowControlDepth es 24</li><li>NumTemps es 32</li><li>StaticFlowControlDepth es 4</li><li>Se admite la predicado.</li></ul> | 
+| GuardBandLeft, GuardBandTop, GuardBandRight, GuardBandBottom | 8 K | 
+| VertexShaderVersion | 3_0 | 
+| MaxVertexShaderConst | 256 | 
+| MaxVertexShader30InstructionSlots | 512 | 
+| Compatibilidad con la nube | D3DPRASTERCAPS_FOGVERTEX | 
+| VertexTextureFilterCaps | <ul><li><a href="/windows/desktop/direct3d9/d3dptfiltercaps">D3DPTFILTERCAPS_MINFPOINT</a></li><li><a href="/windows/desktop/direct3d9/d3dptfiltercaps">D3DPTFILTERCAPS_MAGFPOINT</a></li></ul> | 
+| <a href="/windows/desktop/direct3d9/d3ddevcaps2">D3DDEVCAPS2_VERTEXELEMENTSCANSHARESTREAMOFFSET</a> | Los elementos de vértice de una declaración de vértice pueden compartir el mismo desplazamiento de flujo. | 
+| Formatos de vértice | <ul><li>D3DDECLTYPE_UBYTE4</li><li>D3DDECLTYPE_UBYTE4N</li><li>D3DDECLTYPE_SHORT2N</li><li>D3DDECLTYPE_SHORT4N</li><li>D3DDECLTYPE_FLOAT16_2</li><li>D3DDECLTYPE_FLOAT16_4</li></ul> | 
+
 
 
 

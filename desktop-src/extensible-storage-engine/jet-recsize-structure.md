@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a7ea4520a75e83c77a6403a583e9131a15df337b
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 4fd0f59c821fa80d8de46f97e05aa1944354018e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988237"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475951"
 ---
 # <a name="jet_recsize-structure"></a>JET_RECSIZE estructura
 
@@ -29,9 +29,9 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_recsize-structure"></a>JET_RECSIZE estructura
 
-[JetGetRecordSize](./jetgetrecordsize-function.md) usa la estructura de JET_RECSIZE para devolver información sobre los requisitos de uso de un registro en el espacio de datos del usuario, el número de columnas de conjunto, el número de valores y el espacio de sobrecarga de la estructura de registros ESE. 
+[JetGetRecordSize](./jetgetrecordsize-function.md) **usa** la estructura de JET_RECSIZE para devolver información sobre los requisitos de uso de un registro en el espacio de datos del usuario, el número de columnas establecidas, el número de valores y el espacio de sobrecarga de la estructura de registro ese.
 
-**Windows Vista:** La **JET_RECSIZE** se introduce en Windows Vista.
+**Windows Vista:** La **JET_RECSIZE** estructura se introduce en Windows Vista.
 
 ```cpp
     typedef struct {
@@ -58,7 +58,7 @@ Conjunto de datos de usuario en el registro.
 
 Datos de usuario asociados al registro pero almacenados en el árbol de valores largos.
 
-**Nota**  Esto no cuenta valores long intrínsecos.
+**Nota**  Esto no cuenta los valores long intrínsecos.
 
 **cbOverhead**
 
@@ -68,7 +68,7 @@ Sobrecarga de la estructura de registros ese para este registro. Esto incluye el
 
 Sobrecarga de los datos de valor largo.
 
-**Nota**  Esto no cuenta valores long intrínsecos.
+**Nota**  Esto no cuenta los valores long intrínsecos.
 
 **cNonTaggedColumns**
 
@@ -80,26 +80,22 @@ Número total de columnas etiquetadas establecidas en este registro.
 
 **cLongValues**
 
-Número total de valores largos almacenados en el árbol de valores largos para este registro.
+Número total de valores long almacenados en el árbol de valores largos para este registro.
 
-**Nota**  Esto no cuenta valores long intrínsecos.
+**Nota**  Esto no cuenta los valores long intrínsecos.
 
 **cMultiValues**
 
 Acumulación del número total de valores más allá de la primera para todas las columnas del registro.
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
 El número total de valores del registro sería **cMultiValues**  +  **cNonTaggedColumns**  +  **cTaggedColumns**.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

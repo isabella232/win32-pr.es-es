@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: e932d2f2b60a72ca167f3f6edd7f4ddae9b68710
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 90e60f3f197db78a3ec399c2f8ffe7144901b097
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103805983"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625371"
 ---
 # <a name="span-idvspixengineexperimentspanexperiment-structure"></a><span id="vspixengine.experiment"></span>Estructura del experimento
 
@@ -38,10 +38,10 @@ Representa información sobre un experimento (captura).
 ## <a name="members"></a>Miembros
 
 **processId**  
-IDENTIFICADOR del proceso asociado.
+Identificador de proceso asociado.
 
 **applicationName**  
-Cadena COM que contiene el nombre de la aplicación en la que se va a ejecutar el experimento.
+Cadena COM que contiene el nombre de la aplicación en la que se ejecutará el experimento.
 
 **commandLineArguments**  
 Cadena COM que contiene los argumentos de la línea de comandos.
@@ -50,23 +50,23 @@ Cadena COM que contiene los argumentos de la línea de comandos.
 Cadena COM que contiene la ruta de acceso del directorio de trabajo.
 
 **tempPixRunFile**  
-Cadena COM que contiene la ruta de acceso del archivo temporal que se usa para realizar el experimento.
+Cadena COM que contiene la ruta de acceso del archivo temporal utilizado para realizar el experimento.
 
 **startOption**  
 Opción de inicio asociada al experimento.
 
 **experimentType**  
-El tipo de experimento (captura).
+Tipo de experimento (captura).
 
 **uiLocale**  
-IDENTIFICADOR de la configuración regional utilizada para los elementos de superposición de la interfaz de usuario durante la Experiement (captura). Esto se pasa desde el host (como Visual Studio Diagnóstico de gráficos) al motor de captura.
+Identificador de la configuración regional que se usa para los elementos de superposición de la interfaz de usuario durante la expansión (captura). Esto se pasa desde el host (por ejemplo, Visual Studio Diagnóstico de gráficos) al motor de captura.
 
 **registryRoot**  
-Cadena COM que contiene la raíz del registro. Esto se pasa desde el host (como Visual Studio Diagnóstico de gráficos) al motor de captura.
+Cadena COM que contiene la raíz del Registro. Esto se pasa desde el host (por ejemplo, Visual Studio Diagnóstico de gráficos) al motor de captura.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

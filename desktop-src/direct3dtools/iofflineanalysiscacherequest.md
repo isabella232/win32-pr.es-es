@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IOfflineAnalysisCacheRequest
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: IOfflineAnalysisCacheRequest (interfaz)
+title: Interfaz IOfflineAnalysisCacheRequest
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: E94A5418-3A1E-4FA1-99D8-622624F078CD
@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 01551f7b0347b3b6f0920e47a2666a480c67439d
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 6ef4a30f76ac3e0f186d9cd903214b8075bb7476
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786331"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122629326"
 ---
-# <a name="span-idvspixengineiofflineanalysiscacherequestspaniofflineanalysiscacherequest-interface"></a><span id="vspixengine.iofflineanalysiscacherequest"></span>IOfflineAnalysisCacheRequest (interfaz)
+# <a name="span-idvspixengineiofflineanalysiscacherequestspaniofflineanalysiscacherequest-interface"></a><span id="vspixengine.iofflineanalysiscacherequest"></span>Interfaz IOfflineAnalysisCacheRequest
 
 Solicitudes de información sobre si una solicitud sin conexión se almacena en caché o no.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz IOfflineAnalysisCacheRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IOfflineAnalysisCacheRequest** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IOfflineAnalysisCacheRequest** hereda de la [**interfaz IUnknown.*
 
 La **interfaz IOfflineAnalysisCacheRequest** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iofflineanalysiscacherequest-requestofflineanalysisreportavailabilityasync-dword-dword-arr-iofflineanalysiscachecallback-ptr"><strong>RequestOfflineAnalysisReportAvailabilityAsync</strong></a></td><td ><p>Solicitudes para almacenar en caché el informe de análisis sin conexión de los fotogramas especificados.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iofflineanalysiscacherequest-requestofflineanalysisreportavailabilityasync-dword-dword-arr-iofflineanalysiscachecallback-ptr"><strong>RequestOfflineAnalysisReportAvailabilityAsync</strong></a></td><td style="text-align: left;"><p>Solicitudes para almacenar en caché el informe de análisis sin conexión de los fotogramas especificados.</p></td></tr></tbody></table>
 
  
 

@@ -6,16 +6,16 @@ keywords:
 - Windows multimedia, identificadores de producto
 - multimedia, identificadores de producto
 - identificadores de producto
-- identificadores de producto multimedia
+- identificadores de productos multimedia
 - empresas multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed7046ffae1b8cf3031548abbc778955127e27a5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 15f9117299214aba4658443739f1bc359f7b5ed7
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357622"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625331"
 ---
 # <a name="product-identifiers"></a>Identificadores de producto
 
@@ -23,8 +23,8 @@ ms.locfileid: "104357622"
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -47,7 +47,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>AZTECH Labs, Inc.</td>
+<td>Aztech Labs, Inc.</td>
 <td><ul>
 <li>MM_AZTECH_AUX_CD</li>
 <li>MM_AZTECH_AUX_LINE</li>
@@ -67,7 +67,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Tecnología asistida por equipo, Inc.</td>
+<td>Computer Aided Technology, Inc.</td>
 <td><ul>
 <li>MM_CAT_WAVEOUT</li>
 </ul></td>
@@ -142,7 +142,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>E/s Magic Corporation</td>
+<td>Magic Corporation de E/S</td>
 <td><ul>
 <li>MM_IOMAGIC_TEMPO_AUXOUT</li>
 <li>MM_IOMAGIC_TEMPO_MIDIOUT</li>
@@ -153,7 +153,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Trabajar. C. Olivetti & C., S.p.A.</td>
+<td>Ing. C. Olivetti & C., S.p.A.</td>
 <td><ul>
 <li>MM_OLIVETTI_ACM_ADPCM</li>
 <li>MM_OLIVETTI_ACM_CELP</li>
@@ -171,7 +171,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Sistemas de circuitos integrados, Inc.</td>
+<td>Integrated Circuit Systems, Inc.</td>
 <td><ul>
 <li>MM_ICS_WAVEDECK_AUX</li>
 <li>MM_ICS_WAVEDECK_MIXER</li>
@@ -181,14 +181,14 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Interactivo, Inc.</td>
+<td>InterActive, Inc.</td>
 <td><ul>
 <li>MM_INTERACTIVE_WAVEIN</li>
 <li>MM_INTERACTIVE_WAVEOUT</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Equipos empresariales internacionales</td>
+<td>Máquinas empresariales internacionales</td>
 <td><ul>
 <li>MM_IBM_PCMCIA_AUX</li>
 <li>MM_IBM_PCMCIA_MIDIIN</li>
@@ -202,7 +202,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Sistemas con iteración, Inc.</td>
+<td>Iterated Systems, Inc.</td>
 <td><ul>
 <li>MM_ITERATEDSYS_FUFCODEC</li>
 </ul></td>
@@ -214,7 +214,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Matsushita Electric Corporation of America</td>
+<td>Lcshita Electric Corporation of America</td>
 <td><ul>
 <li>MM_MATSUSHITA_AUX</li>
 <li>MM_MATSUSHITA_FMSYNTH_STEREO</li>
@@ -345,7 +345,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Laboratorios de microingeniería</td>
+<td>microEngineering Labs</td>
 <td><ul>
 <li>MM_MELABS_MIDI2GO</li>
 </ul></td>
@@ -367,7 +367,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Nuevo media Corporation</td>
+<td>New Media Corporation</td>
 <td><ul>
 <li>MM_NEWMEDIA_WAVJAMMER</li>
 </ul></td>
@@ -399,7 +399,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Roland Corporation</td>
+<td>Corporation De Corporation</td>
 <td><ul>
 <li>MM_ROLAND_MPU401_MIDIIN</li>
 <li>MM_ROLAND_MPU401_MIDIOUT</li>
@@ -426,7 +426,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Silicon software, Inc.</td>
+<td>Silicon Software, Inc.</td>
 <td><ul>
 <li>MM_SILICONSOFT_SC1_WAVEIN</li>
 <li>MM_SILICONSOFT_SC1_WAVEOUT</li>
@@ -454,7 +454,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Toshihiko Okuhura, Korg, Inc.</td>
+<td>Toshishi Okuhura, Korg, Inc.</td>
 <td><ul>
 <li>MM_KORG_PCIF_MIDIIN</li>
 <li>MM_KORG_PCIF_MIDIOUT</li>
@@ -468,7 +468,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Videologic, Inc.</td>
+<td>VideoLogic, Inc.</td>
 <td><ul>
 <li>MM_VIDEOLOGIC_MSWAVEIN</li>
 <li>MM_VIDEOLOGIC_MSWAVEOUT</li>
@@ -482,21 +482,21 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>VocalTec, Inc.</td>
+<td>VozTec, Inc.</td>
 <td><ul>
 <li>MM_VOCALTEC_WAVEIN</li>
 <li>MM_VOCALTEC_WAVEOUT</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Wang Laboratories</td>
+<td>Por su parte, El maestro Desfila</td>
 <td><ul>
 <li>MM_WANGLABS_WAVEIN1</li>
 <li>MM_WANGLABS_WAVEOUT1</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Winnov, LP</td>
+<td>Winov, LP</td>
 <td><ul>
 <li>MM_WINNOV_CAVIAR_CHAMPAGNE</li>
 <li>MM_WINNOV_CAVIAR_VIDC</li>
@@ -506,7 +506,7 @@ ms.locfileid: "104357622"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Yamaha Corporation de América</td>
+<td>Yamaha Corporation of America</td>
 <td><ul>
 <li>MM_YAMAHA_GSS_AUX</li>
 <li>MM_YAMAHA_GSS_MIDIIN</li>
@@ -521,11 +521,11 @@ ms.locfileid: "104357622"
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

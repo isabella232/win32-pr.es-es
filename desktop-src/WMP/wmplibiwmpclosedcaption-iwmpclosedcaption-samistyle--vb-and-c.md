@@ -1,10 +1,10 @@
 ---
-title: IWMPClosedCaption SAMIStyle, propiedad
+title: Propiedad IWMPClosedCaption SAMIStyle
 description: La propiedad SAMIStyle obtiene o establece el estilo de subtítulos.
 ms.assetid: 0b1f92c6-b659-4ade-90c8-62a06e475f5c
 keywords:
 - Propiedad SAMIStyle Reproductor de Windows Media
-- Propiedad SAMIStyle Reproductor de Windows Media interfaz , IWMPClosedCaption
+- Propiedad SAMIStyle Reproductor de Windows Media , interfaz IWMPClosedCaption
 - Interfaz IWMPClosedCaption Reproductor de Windows Media , propiedad SAMIStyle
 topic_type:
 - apiref
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cede8964636073c393cb34bfa1be22855467f4cb243834bd1e11a4ffc492665
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e147b48ffb80e1114133b59018cef514eefd2ae7
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120031425"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885871"
 ---
-# <a name="iwmpclosedcaptionsamistyle-property"></a>IWMPClosedCaption::SAMIStyle, propiedad
+# <a name="iwmpclosedcaptionsamistyle-property"></a>Propiedad IWMPClosedCaption::SAMIStyle
 
 La **propiedad SAMIStyle** obtiene o establece el estilo de subtítulos.
 
@@ -50,7 +50,7 @@ Public Property SAMIStyle As System.String
 
 ## <a name="remarks"></a>Comentarios
 
-Un archivo SAMI puede contener varias definiciones de estilo de formato. Los estilos SAMI se definen entre las <STYLE> etiquetas y </STYLE> en el archivo SAMI. Un estilo se define con una cadena de texto precedida de un \# carácter. Por ejemplo:
+Un archivo SAMI puede contener varias definiciones de estilo de formato. Los estilos SAMI se definen entre &lt; style &gt; y </STYLE> etiquetas en el archivo SAMI. Un estilo se define con una cadena de texto precedida de un \# carácter. Por ejemplo:
 
 
 ```
@@ -61,7 +61,7 @@ Un archivo SAMI puede contener varias definiciones de estilo de formato. Los est
 
 
 
-Esto especifica un estilo que genera una fuente determinada.
+Especifica un estilo que genera una fuente determinada.
 
 Si no se especifica ningún estilo SAMI, el primer estilo definido en el archivo SAMI se usa de forma predeterminada.
 
@@ -69,7 +69,7 @@ Si no se especifica ningún estilo SAMI, el primer estilo definido en el archivo
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

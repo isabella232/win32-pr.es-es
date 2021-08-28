@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3a27d34b2622c5fe4ce2c72e3781394457e9cc20
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: d0773842d7de7d576e9ccbcab2c62ec456912a89
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472531"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984828"
 ---
 # <a name="jetgetsecondaryindexbookmark-function"></a>JetGetSecondaryIndexBookmark (Función)
 
@@ -120,7 +120,7 @@ Si se ejecuta correctamente, el marcador de índice secundario de la entrada de 
 
 En caso de error, el estado de los búferes de salida y el tamaño real del marcador de índice secundario serán indefinidos a menos que JET_errBufferTooSmall se devuelva. En caso de que se devuelva JET_errBufferTooSmall, los búferes de salida contendrán la mayor parte del marcador de índice secundario que cabe en el espacio proporcionado y el tamaño real del marcador de índice secundario será preciso. En cualquier caso, no se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Por lo general, los marcadores se deben tratar como fragmentos opacos de datos. No se debe intentar aprovechar la estructura interna de estos datos. Sin embargo, se pueden conocer las siguientes propiedades sobre todos los marcadores de ESENT:
 
@@ -147,7 +147,13 @@ Las claves generalmente se deben tratar como fragmentos opacos de datos. No se d
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

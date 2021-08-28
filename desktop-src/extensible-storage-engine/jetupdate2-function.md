@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Función JetUpdate2'
+description: 'Más información sobre: JetUpdate2 (Función)'
 title: Función JetUpdate2
 TOCTitle: JetUpdate2 Function
 ms:assetid: 125f372c-9c4c-4be8-b0df-bbf53d79e90b
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f85633a16077c3957bebb1e236f5bbca6180778a
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 34cc43aea463c186d68c0fa0cadc447ba2a02acb
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479571"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983257"
 ---
 # <a name="jetupdate2-function"></a>Función JetUpdate2
 
@@ -76,7 +76,7 @@ Tamaño devuelto del marcador para la fila insertada devuelta en *pvBookmark*.
 Grupo de bits que contienen las opciones que se usarán para esta llamada, que incluyen cero o más de lo siguiente.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitUpdateCheckESE97Compatibility</p> | <p>Esta marca hace que la actualización devuelva un error si la actualización no hubiera sido posible en la versión Windows 2000 de ESE, que aplicaba un número máximo menor de instancias de columna multivalor en cada registro que las versiones posteriores de ESE. Esto es importante solo para las aplicaciones que desean replicar datos entre aplicaciones hospedadas en Windows 2000 y aplicaciones hospedadas en Windows Server 2003 o versiones posteriores de ESE. No debe ser necesario para la mayoría de las aplicaciones.</p> | 
 
@@ -90,7 +90,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
-| <p>JET_errBufferTooSmall</p> | <p>El búfer dado para el marcador de registro no es lo suficientemente grande como para almacenar el marcador de registro.</p> | 
+| <p>JET_errBufferTooSmall</p> | <p>El búfer dado para el marcador de registros no es lo suficientemente grande como para almacenar el marcador de registro.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errDiskFull</p> | <p>La operación de actualización requiere el crecimiento del archivo de base de datos o la asignación de archivos de registro, pero la unidad de disco donde reside el archivo de base de datos o la serie de registros está llena. Como alternativa, el archivo de base de datos está en un volumen con formato FAT32 y el archivo de base de datos ya es de 4 GB, el límite por archivo para FAT32.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
@@ -114,7 +114,7 @@ Si se ejecuta correctamente, se completa la operación de actualización abierta
 
 En caso de error, no se realiza ningún cambio de ningún tipo en la base de datos. Es posible que se haya llamado a las funciones de devolución de llamada antes de insertar y antes de reemplazar, pero después de insertar y después de reemplazar las devoluciones de llamada no se habrán llamado, ya que esta última no puede provocar un error en una actualización. El búfer de copia de cursor se deja en su estado preparado, por lo que existe la oportunidad de corregir incrementalmente los problemas que provocaron errores y reintentar la operación de actualización.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 [JetSetColumn](./jetsetcolumn-function.md)aplica las limitaciones de tamaño del registro y no, en general, [JetUpdate](./jetupdate-function.md). La única excepción es cuando se JET_bitUpdateCheckESE97Compatibility marca de compatibilidad. En este caso, se comprueba todo el registro, ya que una operación [Individual JetSetColumn](./jetsetcolumn-function.md) que superó el límite puede compensarse con una llamada subsiguiente a [JetSetColumn](./jetsetcolumn-function.md).
 
@@ -123,7 +123,13 @@ Consulte la sección Comentarios de [JetUpdate](./jetupdate-function.md) para ob
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

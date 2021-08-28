@@ -1,5 +1,5 @@
 ---
-description: Determina si el motor admite o no una instancia singleton.
+description: Determina si el motor admite una instancia singleton o no.
 MS-HAID: vspixengine.IPixEngineSingleton
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,24 +17,24 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 439f1e4461308076d2e349bf1bc2638db6754fe5
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 22e2bc8654306031e417532ea8eb3c7b8df8c5bc
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105720272"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632143"
 ---
 # <a name="span-idvspixengineipixenginesingletonspanipixenginesingleton-interface"></a><span id="vspixengine.ipixenginesingleton"></span>Interfaz IPixEngineSingleton
 
-Determina si el motor admite o no una instancia singleton.
+Determina si el motor admite una instancia singleton o no.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IPixEngineSingleton** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , pero no tiene miembros adicionales.
+La **interfaz IPixEngineSingleton** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

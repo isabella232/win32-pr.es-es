@@ -4,12 +4,12 @@ ms.assetid: 334aa2b9-0ef2-4a4b-9352-de5ded95afa6
 title: Instrucción SELECT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1df8cc5f4b6bab673d20c981e44386d3fdbd651b5a2753d8c965ee55023a6562
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b3655f279a149017da841f296ad29c18518bc96
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118227200"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883435"
 ---
 # <a name="select-statement"></a>Instrucción SELECT
 
@@ -26,7 +26,7 @@ FROM [machinename.]SystemIndex
 
 
 
-A continuación se muestra la parte de la columna de la sintaxis de la instrucción SELECT:
+A continuación se muestra la parte de columna de la sintaxis de la instrucción SELECT:
 
 
 ```
@@ -44,11 +44,11 @@ Los especificadores de columna deben ser columnas de nombre de propiedad válida
 
 Cuando la consulta devuelve un documento que no tiene la columna solicitada, el valor de esa columna para el documento es **NULL.**
 
-Debe proporcionar al menos un nombre de columna en una instrucción SELECT. En la Lenguaje de consulta estructurado (SQL), puede usar el asterisco ( ) para especificar que se van a devolver todas las columnas \* de una tabla. Sin embargo, no se aplica ningún conjunto definido y fijo de propiedades a todos los documentos. Por este motivo, no SQL asterisco en el <columns> especificador de la instrucción SELECT.
+Debe proporcionar al menos un nombre de columna en una instrucción SELECT. En la Lenguaje de consulta estructurado (SQL), puede usar el asterisco ( ) para especificar que se van a devolver todas las \* columnas de una tabla. Sin embargo, no se aplica ningún conjunto fijo y definido de propiedades a todos los documentos. Por esta razón, no SQL asterisco en el &lt; &gt; especificador de columnas de la instrucción SELECT.
 
 ## <a name="getting-the-top-n-results"></a>Obtención de los n primeros resultados
 
-Puede especificar un número máximo de resultados para devolver mediante la sintaxis TOP:
+Puede especificar un número máximo de resultados que se devolverán mediante la sintaxis TOP:
 
 
 ```
@@ -63,7 +63,7 @@ En ocasiones, es posible que tenga que convertir los datos de cadena extraídos 
 
 ## <a name="examples"></a>Ejemplos
 
-Los ejemplos siguientes devuelven el nombre y la dirección URL de los documentos correspondientes.
+En los ejemplos siguientes se devuelve el nombre y la dirección URL de los documentos correspondientes.
 
 
 ```
@@ -81,7 +81,7 @@ SELECT TOP 10 System.ItemName, System.ItemUrl FROM SystemIndex WHERE CONTAINS('M
 **Conceptual**
 </dt> <dt>
 
-[Convertir el tipo de datos de una columna](-search-sql-castingdatacolumntype.md)
+[Conversión del tipo de datos de una columna](-search-sql-castingdatacolumntype.md)
 </dt> <dt>
 
 **Otros recursos**

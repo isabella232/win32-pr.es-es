@@ -1,19 +1,19 @@
 ---
-description: El elemento <imageLink> opcional especifica una miniatura para este conector de búsqueda. Este elemento tiene un elemento secundario obligatorio y ningún atributo.
+description: El elemento &lt; imageLink &gt; opcional especifica una miniatura para este conector de búsqueda. Este elemento tiene un elemento secundario obligatorio y ningún atributo.
 ms.assetid: 71078d83-72f4-41f9-b80c-7ba0139206fb
 title: Elemento imageLink (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 007ad8c2500e2739210646c446d9f906d5a83571ea4ac9780ab9136b73805c83
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bf6030f44e74f8f8441b3a6cd0835df9c5969619
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119711095"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882401"
 ---
 # <a name="imagelink-element-search-connector-schema"></a>Elemento imageLink (esquema del conector de búsqueda)
 
-El elemento <imageLink> opcional especifica una miniatura para este conector de búsqueda. Este elemento tiene un elemento secundario obligatorio y ningún atributo.
+El elemento &lt; imageLink &gt; opcional especifica una miniatura para este conector de búsqueda. Este elemento tiene un elemento secundario obligatorio y ningún atributo.
 
 ## <a name="syntax"></a>Syntax
 

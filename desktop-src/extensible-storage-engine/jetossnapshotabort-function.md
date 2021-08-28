@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 08e56bc95798559453c383549570f9470b55fa82
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 7767a1c7e9dc9182fe521d2d903b52d3b88dadb3
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474421"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983358"
 ---
 # <a name="jetossnapshotabort-function"></a>JetOSSnapshotAbort (Función)
 
@@ -70,14 +70,20 @@ Si esta función se realiza correctamente, la sesión de instantáneas finalizar
 
 Si se produce un error en esta función, la sesión de instantánea no se anulará.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
-Se debe llamar a esta función en lugar de [JetOSSnapshotThaw](./jetossnapshotthaw-function.md) para informar al motor de que la instantánea se anuló por motivos que no están relacionados con el motor. Esta información se puede usar más adelante para ayudar a emitir mensajes del registro de eventos sobre la sesión de instantáneas o para ayudar a determinar otras acciones adecuadas.
+Se debe llamar a esta función en lugar de [JetOSSnapshotThaw](./jetossnapshotthaw-function.md) para informar al motor de que la instantánea se anuló por motivos que no están relacionados con el motor. Esta información se puede usar más adelante para ayudar a emitir mensajes de registro de eventos sobre la sesión de instantáneas o para ayudar a determinar otras acciones adecuadas.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

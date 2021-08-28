@@ -4,12 +4,12 @@ ms.assetid: f44e234e-b45a-40be-993d-956b8966c321
 title: Tipos semánticos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01845bd7790f618794816182bb4b11fc0d13baf9216d17bbd15c63a390a52a90
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 234e5dd929991c2ec5fecbc1d2d1bda72f4fbe52
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120040305"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882651"
 ---
 # <a name="semantic-types"></a>Tipos semánticos
 
@@ -21,10 +21,10 @@ Las siguientes entradas de las columnas Format, Type y ContextData de la tabla [
 
 | Formato | Tipo       | ContextData                                                 | Descripción                                                                                                |
 |--------|------------|-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Texto   |            |                                                             | Texto arbitrario. Vea [Tipo de texto arbitrario.](arbitrary-text-type.md)                                        |
-| Texto   | Enumeración       | <A>=<a>;<B>=<b>;<C>=<c> | Valor seleccionado de un conjunto. Vea [Tipo de enumeración](enum-type.md).                                                 |
-| Texto   | Formato  |                                                             | Valor que reúne la definición de Texto con formato en el instalador. Vea [Tipo con formato](formatted-type.md). |
-| Texto   | RTF        |                                                             | Cadena de texto RTF. Vea [tipo RTF](rtf-type.md).                                                          |
+| Texto   |            |                                                             | Texto arbitrario. Vea [Tipo de texto arbitrario](arbitrary-text-type.md).                                        |
+| Texto   | Enumeración       | <A>=<a>;<B>=<b>;&lt; C &gt; = &lt; c&gt; | Valor seleccionado de un conjunto. Vea [Tipo de enumeración](enum-type.md).                                                 |
+| Texto   | Formato  |                                                             | Valor que se encuentra en la definición de Texto con formato en el instalador. Vea [Tipo con formato](formatted-type.md). |
+| Texto   | RTF        |                                                             | Cadena de texto RTF. Vea [RTF Type (Tipo RTF).](rtf-type.md)                                                          |
 | Texto   | Identificador |                                                             | Cadena de texto que se ajusta a un Windows identificador del [instalador](identifier.md).                              |
 
 
@@ -49,14 +49,14 @@ Las siguientes entradas de las columnas Format, Type y ContextData de la tabla [
 
 | Formato | Tipo      | ContextData      | Descripción                                                                                                            |
 |--------|-----------|------------------|------------------------------------------------------------------------------------------------------------------------|
-| Clave    | Archivo      | AssemblyContext  | Permitir que los usuarios configuren claves externas en ensamblados de Win32 o Common Language Runtime. Vea [Tipo de archivo](file-type.md). |
-| Clave    | Binary    | Bitmap           | Clave externa a una fila de tabla binaria que contiene un mapa de bits para su uso en la interfaz de usuario. Vea [Tipo binario](binary-type.md).                  |
-| Clave    | Binary    | Icono             | Clave externa a una fila de tabla binaria que contiene un icono para su uso en la interfaz de usuario. Vea [Tipo binario](binary-type.md).                   |
-| Clave    | Binary    | EXE              | Clave externa a una fila de tabla binaria que contiene un archivo EXE de 32 bits. Vea [Tipo binario](binary-type.md).                             |
+| Clave    | Archivo      | AssemblyContext  | Permitir a los usuarios configurar claves externas en ensamblados de Win32 o Common Language Runtime. Vea [Tipo de archivo](file-type.md). |
+| Clave    | Binary    | Bitmap           | Clave externa para una fila de tabla binaria que contiene un mapa de bits para su uso en la interfaz de usuario. Vea [Tipo binario](binary-type.md).                  |
+| Clave    | Binary    | Icono             | Clave externa para una fila de tabla binaria que contiene un icono para su uso en la interfaz de usuario. Vea [Tipo binario](binary-type.md).                   |
+| Clave    | Binary    | EXE              | Clave externa a una fila de tabla binaria que contiene un exe de 32 bits. Vea [Tipo binario](binary-type.md).                             |
 | Clave    | Binary    | EXE64            | Clave externa a una fila de tabla binaria que contiene un exe de 32 o 64 bits. Vea [Tipo binario](binary-type.md).                       |
-| Clave    | Icono      | ShortcutIcon     | Tecla externa a una fila de la tabla Icono que contiene un icono para su uso mediante un acceso directo. Vea [Icon Type (Tipo de icono).](icon-type.md)                |
-| Clave    | Diálogo    | DiálogoSiguiente       | Clave externa a una fila de tabla dialog. Vea [Tipo de diálogo](dialog-type.md).                                                 |
-| Clave    | Diálogo    | DialogPrev       | Clave externa a una fila de tabla dialog. Vea [Tipo de diálogo](dialog-type.md).                                                 |
+| Clave    | Icono      | ShortcutIcon     | Tecla externa para una fila de tabla icono que contiene un icono para su uso mediante un acceso directo. Vea [Icon Type (Tipo de icono).](icon-type.md)                |
+| Clave    | Diálogo    | Cuadro de diálogoSiguiente       | Clave externa a una fila de tabla dialog. Vea [Tipo de cuadro de diálogo](dialog-type.md).                                                 |
+| Clave    | Diálogo    | DialogPrev       | Clave externa a una fila de tabla dialog. Vea [Tipo de cuadro de diálogo](dialog-type.md).                                                 |
 | Clave    | Directorio | IsolationDir     | Clave externa a una fila de la tabla Directory a la que pertenecen los archivos aislados. Vea [Tipo de directorio](directory-type.md).            |
 | Clave    | Directorio | ShortcutLocation | Clave externa a una fila de la tabla Directory donde se debe instalar un acceso directo. Vea [Tipo de directorio](directory-type.md).   |
 | Clave    | Propiedad  |                  | Clave externa a una fila de propiedad. Vea [Tipo de propiedad](property-type.md).                                                 |
@@ -73,7 +73,7 @@ Las siguientes entradas de las columnas Format, Type y ContextData de la tabla [
 
 | Formato   | Tipo | ContextData                                  | Descripción                                                                                       |
 |----------|------|----------------------------------------------|---------------------------------------------------------------------------------------------------|
-| Campo de bits |      | <mask>;<A>=<a>;<B> =b | Cambia un subconjunto de bits de una columna. Vea [Tipo de campo de bits arbitrario.](arbitrary-bitfield-type.md) |
+| Campo de bits |      | &lt;mask &gt; ; <A> = <a> ; <B> =b | Cambia un subconjunto de bits de una columna. Vea [Tipo de campo de bits arbitrario.](arbitrary-bitfield-type.md) |
 
 
 

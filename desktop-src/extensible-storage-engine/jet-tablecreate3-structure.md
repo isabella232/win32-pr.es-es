@@ -17,19 +17,19 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 64f820b9e9a42099cdb99d8ab8f0756e8fdbb23256917821d05573afd9068017
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b3e1f3a21b5e5f901ef039b9cff0cdd52d415d5
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118979245"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983028"
 ---
 # <a name="jet_tablecreate3-structure"></a>Estructura de JET_TABLECREATE3
 
 
 _**Se aplica a:** Windows | Windows Servidor_
 
-La **JET_TABLECREATE3** contiene la información necesaria para crear una tabla rellenada con columnas e índices en una base de datos extensible de motor de Storage (ESE) y que designa una función de devolución de llamada. La **función** [JetCreateTableColumnIndex3](./jetcreatetablecolumnindex3-function.md) usa la estructura JET_TABLECREATE3 de datos.
+La **JET_TABLECREATE3** contiene la información necesaria para crear una tabla rellenada con columnas e índices en una base de datos extensible de Storage Engine (ESE) y que designa una función de devolución de llamada. La **función** [JetCreateTableColumnIndex3](./jetcreatetablecolumnindex3-function.md) usa la estructura JET_TABLECREATE3 de datos.
 
 La **JET_TABLECREATE3** se introdujo en el sistema operativo Windows 7.
 
@@ -71,7 +71,7 @@ El nombre debe cumplir las condiciones siguientes:
 
   - Debe tener un valor menor que JET_cbNameMost, sin incluir el valor NULL final.
 
-  - Debe constar del siguiente conjunto de caracteres: de 0 a 9, de la A a la Z, de la a la z y de todos los demás signos de puntuación excepto el signo de exclamación ( ), la coma (,), el corchete de apertura ( ) y el corchete de cierre ( ); es decir, los caracteres ASCII 0x20, 0x22 a través de 0x2d, 0x2f a 0x5a, 0x5c y 0x5d \! \[ a \] 0x7f.
+  - Debe constar del siguiente conjunto de caracteres: de 0 a 9, de la A a la Z, de la a la z y de todos los demás signos de puntuación excepto el signo de exclamación ( ), la coma (,), el corchete de apertura ( ) y el corchete de cierre ( ); es decir, caracteres ASCII 0x20, 0x22 a través de 0x2d, 0x2f a través de 0x5a, 0x5c y 0x5d a través \! \[ de \] 0x7f.
 
   - No debe comenzar con un espacio.
 
@@ -119,92 +119,33 @@ Describe el tipo de función de devolución de llamada designada por **szCallbac
 
 Este campo de bits se compone de uno o varios de los valores de bits enumerados en la tabla siguiente.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_cbtypFinalize</p></td>
-<td><p>Se llamará a la función de devolución de llamada cuando una columna que se pueda finalizar haya pasado a cero.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbtypBeforeInsert</p></td>
-<td><p>Se llamará a la función de devolución de llamada antes de la inserción del registro.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbtypAfterInsert</p></td>
-<td><p>Se llamará a la función de devolución de llamada después de que el motor de base de datos haya terminado de insertar un registro.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbtypBeforeReplace</p></td>
-<td><p>Se llamará a la función de devolución de llamada antes de la modificación de un registro.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbtypAfterReplace</p></td>
-<td><p>Se llamará a la función de devolución de llamada después de finalizar la modificación de un registro.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbtypBeforeDelete</p></td>
-<td><p>Se llamará a la función de devolución de llamada antes de la eliminación de un registro.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbtypAfterDelete</p></td>
-<td><p>Se llamará a la función de devolución de llamada después de eliminar un registro.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbtypUserDefinedDefaultValue</p></td>
-<td><p>Se llamará a la función de devolución de llamada para calcular un valor predeterminado definido por el usuario.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbtypFreeCursorLS</p></td>
-<td><p>Se llamará a la función de devolución de llamada cuando se deba liberar el almacenamiento local asociado a un cursor.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbtypFreeTableLS</p></td>
-<td><p>Se llamará a la función de devolución de llamada cuando se deba liberar el almacenamiento local asociado a una tabla.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Value</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_cbtypFinalize</p> | <p>Se llamará a la función de devolución de llamada cuando una columna que se pueda finalizar haya pasado a cero.</p> | 
+| <p>JET_cbtypBeforeInsert</p> | <p>Se llamará a la función de devolución de llamada antes de la inserción del registro.</p> | 
+| <p>JET_cbtypAfterInsert</p> | <p>Se llamará a la función de devolución de llamada después de que el motor de base de datos haya terminado de insertar un registro.</p> | 
+| <p>JET_cbtypBeforeReplace</p> | <p>Se llamará a la función de devolución de llamada antes de la modificación de un registro.</p> | 
+| <p>JET_cbtypAfterReplace</p> | <p>Se llamará a la función de devolución de llamada después de finalizar la modificación de un registro.</p> | 
+| <p>JET_cbtypBeforeDelete</p> | <p>Se llamará a la función de devolución de llamada antes de la eliminación de un registro.</p> | 
+| <p>JET_cbtypAfterDelete</p> | <p>Se llamará a la función de devolución de llamada después de eliminar un registro.</p> | 
+| <p>JET_cbtypUserDefinedDefaultValue</p> | <p>Se llamará a la función de devolución de llamada para calcular un valor predeterminado definido por el usuario.</p> | 
+| <p>JET_cbtypFreeCursorLS</p> | <p>Se llamará a la función de devolución de llamada cuando se deba liberar el almacenamiento local asociado a un cursor.</p> | 
+| <p>JET_cbtypFreeTableLS</p> | <p>Se llamará a la función de devolución de llamada cuando se deba liberar el almacenamiento local asociado a una tabla.</p> | 
+
 
 
 **grbit**
 
 Grupo de bits que contiene cero o más de los valores de opción de llamada enumerados en la tabla siguiente.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitTableCreateFixedDDL</p></td>
-<td><p>Impide las operaciones DDL en la tabla (por ejemplo, agregar o quitar columnas).</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitTableCreateTemplateTable</p></td>
-<td><p>Hace que la tabla sea una tabla de plantillas. A continuación, las nuevas tablas pueden especificar el nombre de esta tabla como tabla de plantilla. Establecer JET_bitTableCreateTemplateTable implica JET_bitTableCreateFixedDDL.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitTableCreateNoFixedVarColumnsInDerivedTables</p></td>
-<td><p>Debe usarse junto con JET_bitTableCreateTemplateTable. Desusado. No utilizar.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Value</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitTableCreateFixedDDL</p> | <p>Impide las operaciones DDL en la tabla (por ejemplo, agregar o quitar columnas).</p> | 
+| <p>JET_bitTableCreateTemplateTable</p> | <p>Hace que la tabla sea una tabla de plantillas. A continuación, las nuevas tablas pueden especificar el nombre de esta tabla como tabla de plantilla. Establecer JET_bitTableCreateTemplateTable implica JET_bitTableCreateFixedDDL.</p> | 
+| <p>JET_bitTableCreateNoFixedVarColumnsInDerivedTables</p> | <p>Debe usarse junto con JET_bitTableCreateTemplateTable. Desusado. No utilizar.</p> | 
+
 
 
 **pSeqSpacehints**
@@ -233,34 +174,18 @@ Campo de salida que contiene el [JET_TABLEID](./jet-tableid.md) de la nueva tabl
 
 Campo de salida que contiene el recuento de objetos que se crean si la llamada API se realiza correctamente. Si se produce un error en la llamada API, el valor no está definido.
 
-El recuento de objetos que se crean es igual a la suma de columnas, tablas e índices que se crean correctamente.
+El recuento de objetos creados es igual a la suma de columnas, tablas e índices creados correctamente.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JET_TABLECREATE3_W</strong> (Unicode) <strong>y JET_TABLECREATE3_A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_TABLECREATE3_W</strong> (Unicode) <strong>y JET_TABLECREATE3_A</strong> (ANSI).</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

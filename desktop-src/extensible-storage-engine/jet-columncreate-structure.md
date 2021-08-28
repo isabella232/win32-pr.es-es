@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1b14388f26e21550319b910ac01d9ee0dde4d5890336c91e1fca76bc68cce93f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ffe79dde0f24e82aa7ca9457604ea76b587e9b29
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118254985"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984028"
 ---
 # <a name="jet_columncreate-structure"></a>Estructura de JET_COLUMNCREATE
 
@@ -60,7 +60,7 @@ Nombre de la columna que se creará. El nombre debe cumplir los siguientes crite
 
 <!-- end list -->
 
-  - Solo debe contener caracteres de los siguientes conjuntos: de 0 a 9, de la A a la Z, de la a la z y de todos los demás signos de puntuación, excepto el signo de exclamación ( ), la coma (,), el corchete de apertura ( ) y el corchete de cierre ( ), es decir, los caracteres ASCII 0x20, 0x22 a 0x2d, 0x2f a \! \[ \] 0x5a, 0x5c, 0x5d a 0x7f.
+  - Solo debe contener caracteres de los siguientes conjuntos: de 0 a 9, de A a Z, de a z y de todos los demás signos de puntuación, excepto el signo de exclamación ( ), la coma (,), el corchete de apertura ( ) y el corchete de cierre ( ), es decir, caracteres ASCII 0x20, 0x22 a 0x2d, 0x2f a \! \[ \] 0x5a, 0x5c, 0x5d a 0x7f.
 
 <!-- end list -->
 
@@ -82,101 +82,24 @@ Longitud máxima, en bytes, de una columna de longitud variable. Longitud de la 
 
 Grupo de bits que contienen las opciones de esta estructura y que incluyen cero o más de los valores siguientes.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitColumnFixed</p></td>
-<td><p>La columna es fija. Siempre usará la misma cantidad de espacio en una fila, independientemente de la cantidad de datos que se almacenen en la columna. JET_bitColumnFixed no se puede usar con JET_bitColumnTagged. Este bit no se puede usar con valores <strong>largos, como JET_coltypLongText</strong> y <strong>JET_coltypLongBinary</strong>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnTagged</p></td>
-<td><p>La columna está etiquetada. Las columnas etiquetadas no ocupa ningún espacio en la base de datos si no contienen datos. Este bit no se puede usar con JET_bitColumnFixed.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnNotNULL</p></td>
-<td><p>La columna nunca debe establecerse en un valor NULL.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnAutoincrement</p></td>
-<td><p>La columna se incrementa automáticamente. El número es un número creciente y se garantiza que es único dentro de una tabla. Sin embargo, es posible que el número no sea continuo. Por ejemplo, si se insertan cinco filas en una tabla, la columna de creación automática podría contener los valores { 1, 2, 6, 7, 8 }.</p>
-<p><strong>Windows 2000:</strong> Este bit solo se puede usar en columnas de <strong>tipo JET_coltypLong</strong>.</p>
-<p><strong>Windows Server 2003 y versiones posteriores:</strong> Este bit solo se puede usar en columnas de <strong>tipo JET_coltypLong</strong> o <strong>JET_coltypCurrency</strong>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnUpdatable</p></td>
-<td><p>Este bit solo es válido en las llamadas <a href="gg269215(v=exchg.10).md">a JetGetColumnInfo</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnTTKey</p></td>
-<td><p>Este bit solo es válido en las llamadas <a href="gg269211(v=exchg.10).md">a JetOpenTempTable.</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnTTDescending</p></td>
-<td><p>Este bit solo es válido en las llamadas <a href="gg269211(v=exchg.10).md">a JetOpenTempTable.</a></p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnMultiValued</p></td>
-<td><p>La columna puede tener varios valores. Una columna con varios valores puede tener cero, uno o varios valores asociados. Los distintos valores de una columna con varios valores se identifican mediante el miembro <strong>itagSequence</strong> de varias estructuras, por ejemplo, <a href="gg294049(v=exchg.10).md">JET_RETINFO</a>, <a href="gg294090(v=exchg.10).md">JET_SETINFO</a>, <a href="gg269233(v=exchg.10).md">JET_SETCOLUMN</a>, <a href="gg269334(v=exchg.10).md">JET_RETRIEVECOLUMN</a>, <a href="gg294052(v=exchg.10).md">JET_ENUMCOLUMNVALUE</a>. Las columnas con varios valores deben ser columnas etiquetadas; es decir, no pueden ser columnas de longitud fija o de longitud variable.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnEscrowUpdate</p></td>
-<td><p>La columna es una columna de actualización de custodia. Diferentes sesiones con <a href="gg294125(v=exchg.10).md">JetEscrowUpdate</a> pueden actualizar simultáneamente una columna de actualización de custodia y mantener la coherencia transaccional.</p>
-<ul>
-<li><p>Solo se puede crear una columna de actualización de custodia cuando la tabla está vacía.</p></li>
-<li><p>Una columna de actualización de custodia debe ser de <strong>tipo JET_coltypLong.</strong></p></li>
-<li><p>Una columna de actualización de custodia debe tener un valor predeterminado (es <strong>decir, cbDefault</strong> debe ser positivo).</p></li>
-<li><p>JET_bitColumnEscrowUpdate se puede usar junto con las siguientes constantes:</p>
-<ul>
-<li><p>JET_bitColumnTagged</p></li>
-<li><p>JET_bitColumnVersion</p></li>
-<li><p>JET_bitColumnAutoincrement</p></li>
-</ul></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnUnversioned</p></td>
-<td><p>La columna se crea sin una versión. Se producirá un error en otras transacciones que intenten agregar una columna con el mismo nombre. Este bit solo es útil con <a href="gg294122(v=exchg.10).md">JetAddColumn.</a> No se puede usar dentro de una transacción.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnMaybeNull</p></td>
-<td><p>Reservado para uso futuro.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnFinalize</p></td>
-<td><p>Use JET_bitColumnDeleteOnZero en lugar de JET_bitColumnFinalize. JET_bitColumnFinalize especifica que se puede finalizar una columna. Cuando una columna que se puede finalizar tiene una columna de actualización de custodia que alcanza cero, se eliminará la fila. En su lugar, las versiones futuras pueden invocar una función de devolución de llamada. Para obtener más información, <a href="gg294098(v=exchg.10).md">vea JET_CALLBACK</a>. Una columna que se pueda finalizar debe ser una columna de actualización de custodia. JET_bitColumnFinalize se puede usar con JET_bitColumnUserDefinedDefault.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnUserDefinedDefault</p></td>
-<td><p>La función de devolución de llamada proporciona el valor predeterminado de una <a href="gg294098(v=exchg.10).md">columna, JET_CALLBACK</a>. Una columna que tenga un valor predeterminado definido por el usuario debe ser una columna etiquetada. <strong>pvDefault</strong> debe apuntar a una <a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a> estructura y <strong>cbDefault</strong> debe establecerse en sizeof(<a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a>).</p>
-<p>JET_bitColumnUserDefinedDefault pueden usarse junto con las constantes siguientes:</p>
-<ul>
-<li><p>JET_bitColumnFixed</p></li>
-<li><p>JET_bitColumnNotNULL</p></li>
-<li><p>JET_bitColumnVersion</p></li>
-<li><p>JET_bitColumnAutoincrement</p></li>
-<li><p>JET_bitColumnUpdatable</p></li>
-<li><p>JET_bitColumnEscrowUpdate</p></li>
-<li><p>JET_bitColumnFinalize</p></li>
-<li><p>JET_bitColumnDeleteOnZero</p></li>
-<li><p>JET_bitColumnMaybeNull</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnDeleteOnZero</p></td>
-<td><p>La columna es una columna de actualización de custodia y, cuando llegue a cero, se eliminará el registro. Un uso común de una columna que se puede finalizar es usarla como campo de recuento de referencias y, cuando el campo alcanza cero, se elimina el registro. JET_bitColumnDeleteOnZero está relacionado con JET_bitColumnFinalize. Una columna delete-on-zero debe ser una columna de actualización de custodia. JET_bitColumnDeleteOnZero se puede usar con JET_bitColumnFinalize. JET_bitColumnDeleteOnZero se puede usar con columnas predeterminadas definidas por el usuario.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Value</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitColumnFixed</p> | <p>La columna es fija. Siempre usará la misma cantidad de espacio en una fila, independientemente de la cantidad de datos que se almacenen en la columna. JET_bitColumnFixed se puede usar con JET_bitColumnTagged. Este bit no se puede usar con valores <strong>largos, como JET_coltypLongText</strong> y <strong>JET_coltypLongBinary</strong>.</p> | 
+| <p>JET_bitColumnTagged</p> | <p>La columna está etiquetada. Las columnas etiquetadas no ocupa ningún espacio en la base de datos si no contienen datos. Este bit no se puede usar con JET_bitColumnFixed.</p> | 
+| <p>JET_bitColumnNotNULL</p> | <p>La columna nunca debe establecerse en un valor NULL.</p> | 
+| <p>JET_bitColumnAutoincrement</p> | <p>La columna se incrementa automáticamente. El número es un número creciente y se garantiza que es único dentro de una tabla. Sin embargo, es posible que el número no sea continuo. Por ejemplo, si se insertan cinco filas en una tabla, la columna de creación automática podría contener los valores { 1, 2, 6, 7, 8 }.</p><p><strong>Windows 2000:</strong> Este bit solo se puede usar en columnas de <strong>tipo JET_coltypLong</strong>.</p><p><strong>Windows Server 2003 y versiones posteriores:</strong> Este bit solo se puede usar en columnas de <strong>tipo JET_coltypLong</strong> o <strong>JET_coltypCurrency</strong>.</p> | 
+| <p>JET_bitColumnUpdatable</p> | <p>Este bit solo es válido en las llamadas <a href="gg269215(v=exchg.10).md">a JetGetColumnInfo</a>.</p> | 
+| <p>JET_bitColumnTTKey</p> | <p>Este bit solo es válido en las llamadas <a href="gg269211(v=exchg.10).md">a JetOpenTempTable.</a></p> | 
+| <p>JET_bitColumnTTDescending</p> | <p>Este bit solo es válido en las llamadas <a href="gg269211(v=exchg.10).md">a JetOpenTempTable.</a></p> | 
+| <p>JET_bitColumnMultiValued</p> | <p>La columna puede tener varios valores. Una columna con varios valores puede tener cero, uno o varios valores asociados. Los distintos valores de una columna con varios valores se identifican mediante el miembro <strong>itagSequence</strong> de varias estructuras, por ejemplo, <a href="gg294049(v=exchg.10).md">JET_RETINFO</a>, <a href="gg294090(v=exchg.10).md">JET_SETINFO</a>, <a href="gg269233(v=exchg.10).md">JET_SETCOLUMN</a>, <a href="gg269334(v=exchg.10).md">JET_RETRIEVECOLUMN</a>, <a href="gg294052(v=exchg.10).md">JET_ENUMCOLUMNVALUE</a>. Las columnas con varios valores deben ser columnas etiquetadas; es decir, no pueden ser columnas de longitud fija o de longitud variable.</p> | 
+| <p>JET_bitColumnEscrowUpdate</p> | <p>La columna es una columna de actualización de custodia. Diferentes sesiones con <a href="gg294125(v=exchg.10).md">JetEscrowUpdate</a> pueden actualizar simultáneamente una columna de actualización de custodia y mantener la coherencia transaccional.</p><ul><li><p>Solo se puede crear una columna de actualización de custodia cuando la tabla está vacía.</p></li><li><p>Una columna de actualización de custodia debe ser de <strong>tipo JET_coltypLong.</strong></p></li><li><p>Una columna de actualización de custodia debe tener un valor predeterminado (es <strong>decir, cbDefault</strong> debe ser positivo).</p></li><li><p>JET_bitColumnEscrowUpdate pueden usarse junto con las constantes siguientes:</p><ul><li><p>JET_bitColumnTagged</p></li><li><p>JET_bitColumnVersion</p></li><li><p>JET_bitColumnAutoincrement</p></li></ul></li></ul> | 
+| <p>JET_bitColumnUnversioned</p> | <p>La columna se crea sin una versión. Se producirá un error en otras transacciones que intenten agregar una columna con el mismo nombre. Este bit solo es útil con <a href="gg294122(v=exchg.10).md">JetAddColumn.</a> No se puede usar dentro de una transacción.</p> | 
+| <p>JET_bitColumnMaybeNull</p> | <p>Reservado para uso futuro.</p> | 
+| <p>JET_bitColumnFinalize</p> | <p>Use JET_bitColumnDeleteOnZero en lugar de JET_bitColumnFinalize. JET_bitColumnFinalize especifica que se puede finalizar una columna. Cuando una columna que se puede finalizar tiene una columna de actualización de custodia que llega a cero, se eliminará la fila. En su lugar, las versiones futuras pueden invocar una función de devolución de llamada. Para obtener más información, <a href="gg294098(v=exchg.10).md">vea JET_CALLBACK</a>. Una columna que se pueda finalizar debe ser una columna de actualización de custodia. JET_bitColumnFinalize no se puede usar con JET_bitColumnUserDefinedDefault.</p> | 
+| <p>JET_bitColumnUserDefinedDefault</p> | <p>La función de devolución de llamada proporciona el valor predeterminado de una <a href="gg294098(v=exchg.10).md">columna, JET_CALLBACK</a>. Una columna que tenga un valor predeterminado definido por el usuario debe ser una columna etiquetada. <strong>pvDefault</strong> debe apuntar a una <a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a> estructura y <strong>cbDefault</strong> debe establecerse en sizeof(<a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a>).</p><p>JET_bitColumnUserDefinedDefault no se puede usar junto con las constantes siguientes:</p><ul><li><p>JET_bitColumnFixed</p></li><li><p>JET_bitColumnNotNULL</p></li><li><p>JET_bitColumnVersion</p></li><li><p>JET_bitColumnAutoincrement</p></li><li><p>JET_bitColumnUpdatable</p></li><li><p>JET_bitColumnEscrowUpdate</p></li><li><p>JET_bitColumnFinalize</p></li><li><p>JET_bitColumnDeleteOnZero</p></li><li><p>JET_bitColumnMaybeNull</p></li></ul> | 
+| <p>JET_bitColumnDeleteOnZero</p> | <p>La columna es una columna de actualización de custodia y, cuando llegue a cero, se eliminará el registro. Un uso común de una columna que se puede finalizar es usarla como campo de recuento de referencias y, cuando el campo alcanza cero, se elimina el registro. JET_bitColumnDeleteOnZero está relacionado con JET_bitColumnFinalize. Una columna delete-on-zero debe ser una columna de actualización de custodia. JET_bitColumnDeleteOnZero se puede usar con JET_bitColumnFinalize. JET_bitColumnDeleteOnZero se puede usar con columnas predeterminadas definidas por el usuario.</p> | 
+
 
 
 **pvDefault**
@@ -201,30 +124,14 @@ El **campo err** contendrá el estado de creación de esta columna. Consulte [Je
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JET_COLUMNCREATE_W</strong> (Unicode) <strong>y JET_COLUMNCREATE_A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_COLUMNCREATE_W</strong> (Unicode) <strong>y JET_COLUMNCREATE_A</strong> (ANSI).</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

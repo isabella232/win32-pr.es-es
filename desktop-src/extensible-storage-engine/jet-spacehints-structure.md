@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 77c452fb78916fdcdf935ec6ad890db055e63b9a
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 812fc683e24e6b2401ce72d99e3537549e3d30d0
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479321"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985148"
 ---
 # <a name="jet_spacehints-structure"></a>JET_SPACEHINTS estructura
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_spacehints-structure"></a>JET_SPACEHINTS estructura
 
-La **JET_SPACEHINTS** contiene información sobre los patrones de asignación de espacio cuando un árbol b crece a través de divisiones de anexar o punto de acceso. Las divisiones de anexión se suceden cuando se agregan registros al final de un árbol b y las divisiones de punto de acceso rápido se suceden cuando se agregan varios registros al mismo punto de inserción virtual (por ejemplo, al agregar "Ana", "Mark", "Martin", "Mary" al centro de un árbol b ordenado alfabéticamente).
+La **JET_SPACEHINTS** estructura contiene información sobre los patrones de asignación de espacio cuando un árbol b crece a través de divisiones de anexar o punto de acceso. Las divisiones de anexión se suceden cuando se agregan registros al final de un árbol b y las divisiones de punto de acceso rápido se suceden cuando se agregan varios registros al mismo punto de inserción virtual (por ejemplo, al agregar "Ana", "Mark", "Martin", "Mary" en medio de un árbol b ordenado alfabéticamente).
 
 **Windows 7:** La **JET_SPACEHINTS** estructura se introduce en Windows 7.
 
@@ -62,25 +62,25 @@ Tamaño inicial (en bytes) del objeto que se va a crear. Debe ser un múltiplo d
 
 **grbit**
 
-Un grupo de bits que contienen las opciones que se usarán para esta estructura, que incluyen cero o más de lo siguiente.
+Grupo de bits que contienen las opciones que se usarán para esta estructura, que incluyen cero o más de lo siguiente.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitSpaceHintsUtilizeParentSpace<br />0x00000001</p> | <p>Cambia la directiva de asignación interna para obtener espacio heirarchicalmente del elemento primario inmediato de un árbol b.</p> | 
 | <p>JET_bitCreateHintAppendSequential<br />0x00000002</p> | <p>Permite que el comportamiento de división de anexos crezca según la dinámica de crecimiento de la tabla (establecida por cbMinExtent, ulGrowth, cbMaxExtent).</p> | 
-| <p>JET_bitCreateHintHotpointSequential<br />0x00000004</p> | <p>Permite que el comportamiento de división de punto de acceso rápido crezca según la dinámica de crecimiento de la tabla (establecida por cbMinExtent, ulGrowth, cbMaxExtent).</p> | 
+| <p>JET_bitCreateHintHotpointSequential<br />0x00000004</p> | <p>Permite que el comportamiento de división de puntos de acceso rápido crezca según la dinámica de crecimiento de la tabla (establecida por cbMinExtent, ulGrowth, cbMaxExtent).</p> | 
 | <p>JET_bitRetrieveHintTableScanForward<br />0x00000010</p> | <p>Si se establece, el cliente indica que el examen secuencial hacia delante es el patrón de uso predominante de esta tabla.</p> | 
 | <p>JET_bitRetrieveHintTableScanBackward<br />0x00000020</p> | <p>Si se establece, el cliente indica que el examen secuencial hacia atrás es el patrón de uso predominante de esta tabla.</p> | 
-| <p>JET_bitDeleteHintTableSequential<br />0x00000100</p> | <p>Si se establece, la aplicación espera que esta tabla se limpie en orden secuencial, de la clave más baja a la clave más alta.</p> | 
+| <p>JET_bitDeleteHintTableSequential<br />0x00000100</p> | <p>Si se establece, la aplicación espera que esta tabla se limpie en orden secuencial, desde la clave más baja a la clave más alta.</p> | 
 
 
 
 **ulMaintDensity**
 
-densidad a mulMaintDensity
+density to mulMaintDensity
 
-Densidad en la que se debe mantener. Si las sugerencias de espacio especifican JET_bitRetrieveHintTableScanForward o JET_bitRetrieveHintTableScanBackward, la desfragmentación de la tabla se desencadenará cuando el espacio usado en la tabla esté por debajo de este umbral. La desfragmentación de tablas se puede deshabilitar estableciendo este miembro en cero. Establecer este miembro en 100 hará que la desfragmentación de la tabla se ejecute en cuanto se libera una página.
+Densidad en la que se debe mantener. Si las sugerencias de espacio especifican JET_bitRetrieveHintTableScanForward o JET_bitRetrieveHintTableScanBackward, la desfragmentación de la tabla se desencadenará cuando el espacio usado en la tabla cae por debajo de este umbral. La desfragmentación de tablas se puede deshabilitar estableciendo este miembro en cero. Establecer este miembro en 100 hará que la desfragmentación de tablas se ejecute en cuanto se libera una página.
 
 **ulGrowth**
 
@@ -94,20 +94,24 @@ Esto invalida ulGrowth si es demasiado pequeño.
 
 Valor máximo para el crecimiento en bytes. Esto tiene como límite ulGrowth.
 
-### <a name="when-a-b-tree-grows-through-append-or-hotpoint-splits-as-opposed-to-random-record-insertions-the-amount-of-space-the-table-will-grow-by-is-calculated-as-follows"></a>Cuando un árbol b crece a través de divisiones de anexión o punto de acceso rápido (en lugar de inserciones de registros aleatorias), la cantidad de espacio por el que crecerá la tabla se calcula de la siguiente manera:
+### <a name="when-a-b-tree-grows-through-append-or-hotpoint-splits-as-opposed-to-random-record-insertions-the-amount-of-space-the-table-will-grow-by-is-calculated-as-follows"></a>Cuando un árbol b crece a través de divisiones de anexión o punto de acceso rápido (en lugar de inserciones de registros aleatorios), la cantidad de espacio por el que crecerá la tabla se calcula de la siguiente manera:
 
 1.  En la creación, se da al árbol b cbInitial, siempre.
 
 2.  Durante la primera asignación de un área determinada, asignaremos: cbInitial ulGrowth/ 100 (redondeado al tamaño de página de la base de datos) o cbMinExtent si es \* mayor.
 
-3.  Durante la asignación siguiente, cbLastAlloc ulGrowth/ 100 (redondeado al tamaño de página de la base de datos) o \* cbMinExtent si es mayor.
+3.  Durante la siguiente asignación, cbLastAlloc ulGrowth/ 100 (redondeado al tamaño de página de la base de datos) o \* cbMinExtent si es mayor.
 
-4.  En alguna asignación (que podría ser la primera asignación), el tamaño calculado superará cbMaxExtent y ese será el tamaño de crecimiento posteriormente.
+4.  En alguna asignación (que podría ser la primera asignación), el tamaño calculado superará cbMaxExtent y ese será el tamaño de crecimiento posterior.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

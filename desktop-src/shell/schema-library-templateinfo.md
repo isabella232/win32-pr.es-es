@@ -1,19 +1,19 @@
 ---
-description: El elemento es un contenedor para el elemento folderType, que especifica un tipo de carpeta para mostrar los resultados de una <templateInfo> consulta sobre esta biblioteca. Este elemento es opcional y no tiene atributos.
+description: El elemento templateInfo es un contenedor para el &lt; elemento folderType, que especifica un tipo de carpeta para mostrar los resultados de una consulta &gt; sobre esta biblioteca. Este elemento es opcional y no tiene atributos.
 ms.assetid: C555097A-E7B8-45ef-8CFA-19CFBC5E9D5A
-title: elemento templateInfo (esquema de biblioteca)
+title: Elemento templateInfo (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eda0c42e71db2e47335371b51d9dc819620e6b28dfac63ee9c0e2a640ccab0b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f55fec64bf7418eef8e70c4cf8fa1ee47006c5f2
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119942095"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885531"
 ---
-# <a name="templateinfo-element-library-schema"></a>elemento templateInfo (esquema de biblioteca)
+# <a name="templateinfo-element-library-schema"></a>Elemento templateInfo (esquema de biblioteca)
 
-El <templateInfo> elemento es un contenedor para el elemento [folderType,](schema-library-foldertype.md) que especifica un tipo de carpeta para mostrar los resultados de una consulta sobre esta biblioteca. Este elemento es opcional y no tiene atributos.
+El elemento templateInfo es un contenedor para el &lt; elemento &gt; [folderType,](schema-library-foldertype.md) que especifica un tipo de carpeta para mostrar los resultados de una consulta sobre esta biblioteca. Este elemento es opcional y no tiene atributos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,7 +34,7 @@ El <templateInfo> elemento es un contenedor para el elemento [folderType,](schem
 
 | Elemento primario                                                               | Elementos secundarios                                                             |
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md) | [elemento folderType (esquema de biblioteca)](schema-library-foldertype.md)       |
+| [Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md) | [Elemento folderType (esquema de biblioteca)](schema-library-foldertype.md)       |
 |                                                                              | [elemento propertyStore (esquema de biblioteca)](schema-library-propertystore.md) |
 
 

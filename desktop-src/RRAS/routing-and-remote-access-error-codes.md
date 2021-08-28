@@ -11,12 +11,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7bd68c31ef2b92cce75059d5d86ee68dc65d1151
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 5664bc6a4b6b820d7ce72b0605cea8339aa96b16
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624331"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886024"
 ---
 # <a name="routing-and-remote-access-error-codes"></a>Códigos de error de enrutamiento y acceso remoto
 
@@ -101,7 +101,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_ROUTE_NOT_ALLOCATED"></span><span id="error_route_not_allocated"></span><dl> <dt><strong>ERROR_ROUTE_NOT_ALLOCATED</strong></dt> <dt>612</dt> </dl></td>
-<td>La ruta especificada no está asignada.<br/></td>
+<td>No se asigna la ruta especificada.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERRERROR_INVALID_COMPRESSION_SPECIFIED"></span><span id="errerror_invalid_compression_specified"></span><dl> <dt><strong>ERRERROR_INVALID_COMPRESSION_SPECIFIED</strong></dt> <dt>613</dt> </dl></td>
@@ -122,7 +122,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_ASYNC_REQUEST_PENDING"></span><span id="error_async_request_pending"></span><dl> <dt><strong>ERROR_ASYNC_REQUEST_PENDING</strong></dt> <dt>616</dt> </dl></td>
-<td>Hay una solicitud asincrónica pendiente.<br/></td>
+<td>Una solicitud asincrónica está pendiente.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_ALREADY_DISCONNECTING"></span><span id="error_already_disconnecting"></span><dl> <dt><strong>ERROR_ALREADY_DISCONNECTING</strong></dt> <dt>617</dt> </dl></td>
@@ -180,7 +180,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_DISCONNECTION"></span><span id="error_disconnection"></span><dl> <dt><strong>ERROR_DISCONNECTION</strong></dt> <dt>628</dt> </dl></td>
-<td>Se desconectó el puerto especificado.<br/></td>
+<td>El puerto especificado se desconectó.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_REMOTE_DISCONNECTION"></span><span id="error_remote_disconnection"></span><dl> <dt><strong>ERROR_REMOTE_DISCONNECTION</strong></dt> <dt>629</dt> </dl></td>
@@ -329,11 +329,11 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_MACRO_NOT_DEFINED"></span><span id="error_macro_not_defined"></span><dl> <dt><strong>ERROR_MACRO_NOT_DEFINED</strong></dt> <dt>654</dt> </dl></td>
-<td>Comando o respuesta en el dispositivo . La sección del archivo INF hace referencia a una macro no definida.<br/></td>
+<td>Comando o respuesta en el dispositivo . La sección archivo INF hace referencia a una macro no definida.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_MESSAGE_MACRO_NOT_FOUND"></span><span id="error_message_macro_not_found"></span><dl> <dt><strong>ERROR_MESSAGE_MACRO_NOT_FOUND</strong></dt> <dt>655</dt> </dl></td>
-<td>La <message> macro no se encontró en el dispositivo . Sección de archivo INF.<br/></td>
+<td>La &lt; &gt; macro de mensaje no se encontró en el dispositivo . Sección de archivo INF.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_DEFAULTOFF_MACRO_NOT_FOUND"></span><span id="error_defaultoff_macro_not_found"></span><dl> <dt><strong>ERROR_DEFAULTOFF_MACRO_NOT_FOUND</strong></dt> <dt>656</dt> </dl></td>
@@ -345,7 +345,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_DEVICENAME_TOO_LONG"></span><span id="error_devicename_too_long"></span><dl> <dt><strong>ERROR_DEVICENAME_TOO_LONG</strong></dt> <dt>658</dt> </dl></td>
-<td>Nombre del dispositivo en el dispositivo. INF o el archivo .INI multimedia es demasiado largo. <br/></td>
+<td>Nombre del dispositivo en el dispositivo. Inf o el archivo .INI multimedia es demasiado largo. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_DEVICENAME_NOT_FOUND"></span><span id="error_devicename_not_found"></span><dl> <dt><strong>ERROR_DEVICENAME_NOT_FOUND</strong></dt> <dt>659</dt> </dl></td>
@@ -409,7 +409,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_READING_MAXCONNECTBPS"></span><span id="error_reading_maxconnectbps"></span><dl> <dt><strong>ERROR_READING_MAXCONNECTBPS</strong></dt> <dt>674</dt> </dl></td>
-<td>El sistema no pudo leer la velocidad máxima de conexión del operador desde el archivo .INI medio.<br/>
+<td>El sistema no pudo leer la velocidad máxima de conexión del operador desde el archivo de .INI medio.<br/>
 <blockquote>
 [!Note]<br />
 En desuso Windows Vista y versiones posteriores de Windows.
@@ -515,7 +515,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_UNKNOWN_RESPONSE_KEY"></span><span id="error_unknown_response_key"></span><dl> <dt><strong>ERROR_UNKNOWN_RESPONSE_KEY</strong></dt> <dt>698</dt> </dl></td>
-<td>Un nombre de clave de respuesta en el dispositivo. El archivo INF no tiene el formato esperado.<br/></td>
+<td>Un nombre de clave de respuesta en el dispositivo . El archivo INF no tiene el formato esperado.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_RECV_BUF_FULL"></span><span id="error_recv_buf_full"></span><dl> <dt><strong>ERROR_RECV_BUF_FULL</strong></dt> <dt>699</dt> </dl></td>
@@ -550,7 +550,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 <td>Error al escribir la velocidad de conexión inicial.<br/>
 <blockquote>
 [!Note]<br />
-En desuso en Windows Vista y versiones posteriores de Windows.
+En desuso Windows Vista y versiones posteriores de Windows.
 </blockquote>
 <br/></td>
 </tr>
@@ -579,7 +579,7 @@ En desuso en Windows Vista y versiones posteriores de Windows.
 <td>El puerto de dos vías se está inicializando. Espere unos segundos y redial.<br/>
 <blockquote>
 [!Note]<br />
-En desuso en Windows Vista y versiones posteriores de Windows.
+En desuso Windows Vista y versiones posteriores de Windows.
 </blockquote>
 <br/></td>
 </tr>
@@ -592,7 +592,7 @@ En desuso en Windows Vista y versiones posteriores de Windows.
 <td>No hay canales ISDN disponibles para realizar la llamada.<br/>
 <blockquote>
 [!Note]<br />
-En desuso en Windows Vista y versiones posteriores de Windows.
+En desuso Windows Vista y versiones posteriores de Windows.
 </blockquote>
 <br/></td>
 </tr>
@@ -601,7 +601,7 @@ En desuso en Windows Vista y versiones posteriores de Windows.
 <td>Se produjeron demasiados errores debido a una calidad deficiente de la línea telefónica.<br/>
 <blockquote>
 [!Note]<br />
-En desuso en Windows Vista y versiones posteriores de Windows.
+En desuso Windows Vista y versiones posteriores de Windows.
 </blockquote>
 <br/></td>
 </tr>
@@ -622,7 +622,7 @@ En desuso en Windows Vista y versiones posteriores de Windows.
 <td>El equipo remoto finalizó la conexión.<br/>
 <blockquote>
 [!Note]<br />
-En desuso en Windows Vista y versiones posteriores de Windows.
+En desuso Windows Vista y versiones posteriores de Windows.
 </blockquote>
 <br/></td>
 </tr>
@@ -647,7 +647,7 @@ En desuso en Windows Vista y versiones posteriores de Windows.
 <td>El protocolo IPX no puede marcarse en el módem (u otro dispositivo de conexión) porque este equipo no está configurado para marcar hacia fuera (es un enrutador IPX).<br/>
 <blockquote>
 [!Note]<br />
-En desuso en Windows Vista y versiones posteriores de Windows.
+En desuso Windows Vista y versiones posteriores de Windows.
 </blockquote>
 <br/></td>
 </tr>
@@ -656,7 +656,7 @@ En desuso en Windows Vista y versiones posteriores de Windows.
 <td>El protocolo IPX no puede marcar en el módem (u otro dispositivo de conexión) porque este equipo no está configurado para marcar en (el enrutador IPX no está instalado).<br/>
 <blockquote>
 [!Note]<br />
-En desuso en Windows Vista y versiones posteriores de Windows.
+En desuso Windows Vista y versiones posteriores de Windows.
 </blockquote>
 <br/></td>
 </tr>
@@ -669,7 +669,7 @@ En desuso en Windows Vista y versiones posteriores de Windows.
 <td>No se puede acceder TCPCFG.DLL.<br/>
 <blockquote>
 [!Note]<br />
-En desuso en Windows Vista y versiones posteriores de Windows.
+En desuso Windows Vista y versiones posteriores de Windows.
 </blockquote>
 <br/></td>
 </tr>
@@ -686,7 +686,7 @@ En desuso en Windows Vista y versiones posteriores de Windows.
 <td>El registro del equipo no está completo.<br/>
 <blockquote>
 [!Note]<br />
-En desuso en Windows Vista y versiones posteriores de Windows.
+En desuso Windows Vista y versiones posteriores de Windows.
 </blockquote>
 <br/></td>
 </tr>
@@ -807,7 +807,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_INVALID_CALLBACK_NUMBER"></span><span id="error_invalid_callback_number"></span><dl> <dt><strong>ERROR_INVALID_CALLBACK_NUMBER</strong></dt> <dt>751</dt> </dl></td>
-<td>El número de devolución de llamada contiene un carácter que no es válido. Solo se permiten los siguientes 18 caracteres: 0 a 9, T, P, W, (, ), -, @y space.<br/>
+<td>El número de devolución de llamada contiene un carácter que no es válido. Solo se permiten los 18 caracteres siguientes: 0 a 9, T, P, W, (, ), -, @y space.<br/>
 <blockquote>
 [!Note]<br />
 En desuso Windows Vista y versiones posteriores de Windows.
@@ -824,11 +824,11 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_BUNDLE_NOT_FOUND"></span><span id="error_bundle_not_found"></span><dl> <dt><strong>ERROR_BUNDLE_NOT_FOUND</strong></dt> <dt>754</dt> </dl></td>
-<td>El sistema no encontró la agrupación de varios vínculos.<br/></td>
+<td>El sistema no pudo encontrar la agrupación de varios vínculos.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_CANNOT_DO_CUSTOMDIAL"></span><span id="error_cannot_do_customdial"></span><dl> <dt><strong>ERROR_CANNOT_DO_CUSTOMDIAL</strong></dt> <dt>755</dt> </dl></td>
-<td>El sistema no puede realizar la marcación automatizada porque esta conexión tiene un marcador personalizado especificado.<br/></td>
+<td>El sistema no puede realizar el marcado automatizado porque esta conexión tiene especificado un marcador personalizado.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_DIAL_ALREADY_IN_PROGRESS"></span><span id="error_dial_already_in_progress"></span><dl> <dt><strong>ERROR_DIAL_ALREADY_IN_PROGRESS</strong></dt> <dt>756</dt> </dl></td>
@@ -836,7 +836,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_RASAUTO_CANNOT_INITIALIZE"></span><span id="error_rasauto_cannot_initialize"></span><dl> <dt><strong>ERROR_RASAUTO_CANNOT_INITIALIZE</strong></dt> <dt>757</dt> </dl></td>
-<td>Ras no se pudo iniciar automáticamente. Se proporciona información adicional en el registro de eventos.<br/></td>
+<td>RAS no se pudo iniciar automáticamente. Se proporciona información adicional en el registro de eventos.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_CONNECTION_ALREADY_SHARED"></span><span id="error_connection_already_shared"></span><dl> <dt><strong>ERROR_CONNECTION_ALREADY_SHARED</strong></dt> <dt>758</dt> </dl></td>
@@ -849,7 +849,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_SHARING_CHANGE_FAILED"></span><span id="error_sharing_change_failed"></span><dl> <dt><strong>ERROR_SHARING_CHANGE_FAILED</strong></dt> <dt>759</dt> </dl></td>
-<td>Se produjo un error mientras se cambiaba la configuración existente de uso compartido de conexiones a Internet.<br/>
+<td>Se produjo un error mientras se cambiaba la configuración existente de Uso compartido de conexiones a Internet.<br/>
 <blockquote>
 [!Note]<br />
 En desuso Windows Vista y versiones posteriores de Windows.
@@ -858,7 +858,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_SHARING_ROUTER_INSTALL"></span><span id="error_sharing_router_install"></span><dl> <dt><strong>ERROR_SHARING_ROUTER_INSTALL</strong></dt> <dt>760</dt> </dl></td>
-<td>Error al habilitar las funcionalidades de enrutamiento.<br/>
+<td>Se produjo un error mientras se habilitaban las funcionalidades de enrutamiento.<br/>
 <blockquote>
 [!Note]<br />
 En desuso Windows Vista y versiones posteriores de Windows.
@@ -876,7 +876,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="7ERROR_SHARING_PRIVATE_INSTALL64"></span><span id="7error_sharing_private_install64"></span><dl> <dt><strong>7ERROR_SHARING_PRIVATE_INSTALL64</strong></dt> <dt>762</dt> </dl></td>
-<td>Se produjo un error mientras la red local se configuraba para el uso compartido.<br/>
+<td>Se produjo un error mientras se configuraba la red local para el uso compartido.<br/>
 <blockquote>
 [!Note]<br />
 En desuso Windows Vista y versiones posteriores de Windows.
@@ -894,7 +894,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_NO_SMART_CARD_READER"></span><span id="error_no_smart_card_reader"></span><dl> <dt><strong>ERROR_NO_SMART_CARD_READER</strong></dt> <dt>764</dt> </dl></td>
-<td>No hay ningún lector de tarjeta inteligente instalado.<br/></td>
+<td>No hay ningún lector de tarjetas inteligentes instalado.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_SHARING_ADDRESS_EXISTS"></span><span id="error_sharing_address_exists"></span><dl> <dt><strong>ERROR_SHARING_ADDRESS_EXISTS</strong></dt> <dt>765</dt> </dl></td>
@@ -942,11 +942,11 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_DONOTDISTURB"></span><span id="error_donotdisturb"></span><dl> <dt><strong>ERROR_DONOTDISTURB</strong></dt> <dt>776</dt> </dl></td>
-<td>No se pudo conectar la llamada porque el equipo remoto ha invocado la característica No alterar. <br/></td>
+<td>No se pudo conectar la llamada porque el equipo remoto ha invocado la característica No interrumpir. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_OUTOFORDER"></span><span id="error_outoforder"></span><dl> <dt><strong>ERROR_OUTOFORDER</strong></dt> <dt>777</dt> </dl></td>
-<td>Error en el intento de conexión porque el módem u otro dispositivo de conexión del equipo remoto no están en orden. <br/></td>
+<td>Error en el intento de conexión porque el módem u otro dispositivo de conexión del equipo remoto no está en orden. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_UNABLE_TO_AUTHENTICATE_SERVER"></span><span id="error_unable_to_authenticate_server"></span><dl> <dt><strong>ERROR_UNABLE_TO_AUTHENTICATE_SERVER</strong></dt> <dt>778</dt> </dl></td>
@@ -980,7 +980,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_SHARING_NO_PRIVATE_LAN"></span><span id="error_sharing_no_private_lan"></span><dl> <dt><strong>ERROR_SHARING_NO_PRIVATE_LAN</strong></dt> <dt>783</dt> </dl></td>
-<td>No se puede habilitar el uso compartido de conexiones a Internet. La conexión LAN seleccionada como red privada no está presente o está desconectada de la red. Asegúrese de que el adaptador laN está conectado antes de habilitar el uso compartido de conexiones a Internet. <br/></td>
+<td>No se puede habilitar el uso compartido de conexiones a Internet. La conexión LAN seleccionada como red privada no está presente o está desconectada de la red. Asegúrese de que el adaptador de LAN está conectado antes de habilitar el uso compartido de conexiones a Internet. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_NO_DIFF_USER_AT_LOGON"></span><span id="error_no_diff_user_at_logon"></span><dl> <dt><strong>ERROR_NO_DIFF_USER_AT_LOGON</strong></dt> <dt>784</dt> </dl></td>
@@ -992,7 +992,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_OAKLEY_NO_CERT"></span><span id="error_oakley_no_cert"></span><dl> <dt><strong>ERROR_OAKLEY_NO_CERT</strong></dt> <dt>786</dt> </dl></td>
-<td>Error en el intento de conexión L2TP porque no hay ningún certificado de máquina válido en el equipo para la autenticación de seguridad. <br/></td>
+<td>Error en el intento de conexión L2TP porque no hay ningún certificado de equipo válido en el equipo para la autenticación de seguridad. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_OAKLEY_AUTH_FAIL"></span><span id="error_oakley_auth_fail"></span><dl> <dt><strong>ERROR_OAKLEY_AUTH_FAIL</strong></dt> <dt>787</dt> </dl></td>
@@ -1016,7 +1016,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_OAKLEY_TIMED_OUT"></span><span id="error_oakley_timed_out"></span><dl> <dt><strong>ERROR_OAKLEY_TIMED_OUT</strong></dt> <dt>792</dt> </dl></td>
-<td>Error en el intento de conexión L2TP porque se ha producido un tiempo de espera de la negociación de seguridad. <br/></td>
+<td>Error en el intento de conexión L2TP porque se ha producido un tiempo de espera de negociación de seguridad. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_OAKLEY_ERROR"></span><span id="error_oakley_error"></span><dl> <dt><strong>ERROR_OAKLEY_ERROR</strong></dt> <dt>793</dt> </dl></td>
@@ -1028,7 +1028,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_WRONG_TUNNEL_TYPE"></span><span id="error_wrong_tunnel_type"></span><dl> <dt><strong>ERROR_WRONG_TUNNEL_TYPE</strong></dt> <dt>795</dt> </dl></td>
-<td>El Tunnel type RADIUS para este usuario no es correcto. <br/></td>
+<td>El Tunnel type RADIUS de este usuario no es correcto. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_UNKNOWN_SERVICE_TYPE"></span><span id="error_unknown_service_type"></span><dl> <dt><strong>ERROR_UNKNOWN_SERVICE_TYPE</strong></dt> <dt>796</dt> </dl></td>
@@ -1036,7 +1036,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_CONNECTING_DEVICE_NOT_FOUND"></span><span id="error_connecting_device_not_found"></span><dl> <dt><strong>ERROR_CONNECTING_DEVICE_NOT_FOUND</strong></dt> <dt>797</dt> </dl></td>
-<td>No se pudo establecer una conexión con el equipo remoto porque no se encontró el módem o estaba ocupado. <br/></td>
+<td>No se pudo establecer una conexión al equipo remoto porque no se encontró el módem o estaba ocupado. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_NO_EAPTLS_CERTIFICATE"></span><span id="error_no_eaptls_certificate"></span><dl> <dt><strong>ERROR_NO_EAPTLS_CERTIFICATE</strong></dt> <dt>798</dt> </dl></td>
@@ -1044,7 +1044,7 @@ En desuso Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_SHARING_HOST_ADDRESS_CONFLICT"></span><span id="error_sharing_host_address_conflict"></span><dl> <dt><strong>ERROR_SHARING_HOST_ADDRESS_CONFLICT</strong></dt> <dt>799</dt> </dl></td>
-<td>No se puede habilitar el uso compartido de conexiones a Internet (ICS) debido a un conflicto de direcciones IP en la red. ICS requiere que el host esté configurado para usar <strong>192.168.0.1.</strong> Asegúrese de que ningún otro cliente de la red esté configurado para <strong>usar 192.168.0.1.</strong><br/>
+<td>No se puede habilitar el uso compartido de conexiones a Internet (ICS) debido a un conflicto de direcciones IP en la red. ICS requiere que el host esté configurado para usar <strong>192.168.0.1</strong>. Asegúrese de que ningún otro cliente de la red esté configurado para usar <strong>192.168.0.1</strong>.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows XP y versiones posteriores de Windows.
@@ -1076,7 +1076,7 @@ Compatible con Windows XP y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_READING_SCARD"></span><span id="error_reading_scard"></span><dl> <dt><strong>ERROR_READING_SCARD</strong></dt> <dt>802</dt> </dl></td>
-<td>No se ha reconocido la tarjeta proporcionada. Compruebe que la tarjeta está insertada correctamente y que se ajusta de forma segura.<br/>
+<td>No se ha reconocido la tarjeta proporcionada. Compruebe que la tarjeta se inserta correctamente y se ajusta de forma segura.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows XP con SP1 y versiones posteriores de Windows.
@@ -1094,7 +1094,7 @@ Compatible con Windows XP con SP1 y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_INVALID_PEAP_COOKIE_USER"></span><span id="error_invalid_peap_cookie_user"></span><dl> <dt><strong>ERROR_INVALID_PEAP_COOKIE_USER</strong></dt> <dt>804</dt> </dl></td>
-<td>La identidad peap almacenada en la cookie de sesión no coincide con la identidad actual.<br/>
+<td>La identidad PEAP almacenada en la cookie de sesión no coincide con la identidad actual.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows XP con SP1 y versiones posteriores de Windows.
@@ -1103,7 +1103,7 @@ Compatible con Windows XP con SP1 y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_INVALID_MSCHAPV2_CONFIG"></span><span id="error_invalid_mschapv2_config"></span><dl> <dt><strong>ERROR_INVALID_MSCHAPV2_CONFIG</strong></dt> <dt>805</dt> </dl></td>
-<td>No se puede marcar mediante esta conexión en el momento del inicio de sesión porque está configurado para usar las credenciales del usuario que ha iniciado sesión actualmente.<br/>
+<td>No se puede marcar con esta conexión en el momento del inicio de sesión porque está configurado para usar las credenciales del usuario que ha iniciado sesión actualmente.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows XP con SP1 y versiones posteriores de Windows.
@@ -1112,7 +1112,7 @@ Compatible con Windows XP con SP1 y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_VPN_GRE_BLOCKED"></span><span id="error_vpn_gre_blocked"></span><dl> <dt><strong>ERROR_VPN_GRE_BLOCKED</strong></dt> <dt>806</dt> </dl></td>
-<td>Se ha iniciado una conexión entre el equipo y el servidor VPN, pero no se puede completar la conexión VPN. La causa más común de esto es que al menos un dispositivo de Internet (por ejemplo, un firewall o un enrutador) entre el equipo y el servidor VPN no está configurado para permitir paquetes de protocolo de encapsulación de enrutamiento genérico (GRE).<br/>
+<td>Se ha iniciado una conexión entre el equipo y el servidor VPN, pero no se puede completar la conexión VPN. La causa más común es que al menos un dispositivo de Internet (por ejemplo, un firewall o un enrutador) entre el equipo y el servidor VPN no está configurado para permitir paquetes de protocolo de encapsulación de enrutamiento genérico (GRE).<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows Vista y versiones posteriores de Windows.
@@ -1130,7 +1130,7 @@ Compatible con Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_VPN_REFUSED"></span><span id="error_vpn_refused"></span><dl> <dt><strong>ERROR_VPN_REFUSED</strong></dt> <dt>808</dt> </dl></td>
-<td>No se pudo establecer la conexión de red entre el equipo y el servidor VPN porque el servidor remoto rechazó la conexión. Esto suele deberse a una discrepancia entre la configuración del servidor y la configuración de conexión.<br/>
+<td>No se pudo establecer la conexión de red entre el equipo y el servidor VPN porque el servidor remoto rechazó la conexión. Esto suele deberse a una falta de coincidencia entre la configuración del servidor y la configuración de conexión.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows Vista y versiones posteriores de Windows.
@@ -1166,7 +1166,7 @@ Compatible con Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_SERVER_POLICY"></span><span id="error_server_policy"></span><dl> <dt><strong>ERROR_SERVER_POLICY</strong></dt> <dt>812</dt> </dl></td>
-<td>se impidió la conexión debido a una directiva configurada en el servidor RAS/VPN. En concreto, es posible que el método de autenticación utilizado por el servidor para comprobar el nombre de usuario y la contraseña no coincida con el método de autenticación configurado en el perfil de conexión.<br/>
+<td>se impidió la conexión debido a una directiva configurada en el servidor RAS/VPN. En concreto, el método de autenticación utilizado por el servidor para comprobar el nombre de usuario y la contraseña puede no coincidir con el método de autenticación configurado en el perfil de conexión.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows Vista y versiones posteriores de Windows.
@@ -1220,7 +1220,7 @@ Compatible con Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_RASQEC_RESOURCE_CREATION_FAILED"></span><span id="error_rasqec_resource_creation_failed"></span><dl> <dt><strong>ERROR_RASQEC_RESOURCE_CREATION_FAILED</strong></dt> <dt>818</dt> </dl></td>
-<td>El cliente de cumplimiento de protección de acceso a redes (NAP) no pudo crear recursos del sistema para las conexiones de acceso remoto. Es posible que algunos servicios o recursos de red no estén disponibles.<br/>
+<td>El cliente de cumplimiento de Protección de acceso a redes (NAP) no pudo crear recursos del sistema para las conexiones de acceso remoto. Es posible que algunos servicios o recursos de red no estén disponibles.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows Vista y versiones posteriores de Windows.
@@ -1247,7 +1247,7 @@ Compatible con Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_RASQEC_CONN_DOESNOTEXIST"></span><span id="error_rasqec_conn_doesnotexist"></span><dl> <dt><strong>ERROR_RASQEC_CONN_DOESNOTEXIST</strong></dt> <dt>821</dt> </dl></td>
-<td>El cliente de cumplimiento de protección de acceso a redes (NAP) no pudo procesar la solicitud porque la conexión de acceso remoto no existe.<br/>
+<td>El cliente de cumplimiento de Protección de acceso a redes (NAP) no pudo procesar la solicitud porque la conexión de acceso remoto no existe.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows Vista y versiones posteriores de Windows.
@@ -1301,7 +1301,7 @@ Compatible con Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_IPSEC_SERVICE_STOPPED"></span><span id="error_ipsec_service_stopped"></span><dl> <dt><strong>ERROR_IPSEC_SERVICE_STOPPED</strong></dt> <dt>827</dt> </dl></td>
-<td>No se puede completar la conexión L2TP/IPsec porque no se está ejecutando el servicio de módulos de clave IPSec de IKE y AuthIP o el servicio motor de filtrado base. Estos servicios son necesarios para establecer una conexión L2TP/IPSec.<br/>
+<td>No se puede completar la conexión L2TP/IPsec porque no se está ejecutando el servicio de módulos de clave IKE y AuthIP IPSec ni el servicio del motor de filtrado base. Estos servicios son necesarios para establecer una conexión L2TP/IPSec.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows Vista y versiones posteriores de Windows.
@@ -1337,7 +1337,7 @@ Compatible con Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_FAST_USER_SWITCH"></span><span id="error_fast_user_switch"></span><dl> <dt><strong>ERROR_FAST_USER_SWITCH</strong></dt> <dt>831</dt> </dl></td>
-<td>La conexión se finalizó porque se produjo el cambio de usuario.<br/>
+<td>La conexión finalizó porque se produjo el cambio de usuario.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows Vista y versiones posteriores de Windows.
@@ -1355,7 +1355,7 @@ Compatible con Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_SYSTEM_SUSPENDED"></span><span id="error_system_suspended"></span><dl> <dt><strong>ERROR_SYSTEM_SUSPENDED</strong></dt> <dt>833</dt> </dl></td>
-<td>La conexión se finalizó porque el sistema se suspendió.<br/>
+<td>La conexión se finalizó porque se suspendió el sistema.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows Vista y versiones posteriores de Windows.
@@ -1364,7 +1364,7 @@ Compatible con Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_RASMAN_SERVICE_STOPPED"></span><span id="error_rasman_service_stopped"></span><dl> <dt><strong>ERROR_RASMAN_SERVICE_STOPPED</strong></dt> <dt>834</dt> </dl></td>
-<td>La conexión se finalizó porque se detuvo el administrador de conexiones de acceso remoto.<br/>
+<td>La conexión finalizó porque se detuvo el administrador de conexiones de acceso remoto.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows Vista y versiones posteriores de Windows.
@@ -1373,7 +1373,7 @@ Compatible con Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_INVALID_SERVER_CERT"></span><span id="error_invalid_server_cert"></span><dl> <dt><strong>ERROR_INVALID_SERVER_CERT</strong></dt> <dt>835</dt> </dl></td>
-<td>Error en el intento de conexión L2TP porque la capa de seguridad no pudo autenticar el equipo remoto. Esto podría deberse a que uno o varios campos del certificado presentados por el servidor remoto no se pudieron validar como pertenecientes al destino.<br/>
+<td>Error en el intento de conexión L2TP porque la capa de seguridad no pudo autenticar el equipo remoto. Esto podría deberse a que uno o varios campos del certificado presentados por el servidor remoto no se pudieron validar como pertenecientes al destino de destino.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows Vista y versiones posteriores de Windows.
@@ -1391,7 +1391,7 @@ Compatible con Windows Vista y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_INVALID_TUNNELID"></span><span id="error_invalid_tunnelid"></span><dl> <dt><strong>ERROR_INVALID_TUNNELID</strong></dt> <dt>837</dt> </dl></td>
-<td>Identificador Tunnel no válido.<br/>
+<td>Identificador de Tunnel no válido.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows 7 y versiones posteriores de Windows.
@@ -1418,7 +1418,7 @@ Compatible con Windows 7 y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_INTERNAL_ADDRESS_FAILURE"></span><span id="error_internal_address_failure"></span><dl> <dt><strong>ERROR_INTERNAL_ADDRESS_FAILURE</strong></dt> <dt>840</dt> </dl></td>
-<td>Error en la negociación interna de direcciones.<br/>
+<td>Error en la negociación de direcciones internas.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows 7 y versiones posteriores de Windows.
@@ -1454,7 +1454,7 @@ Compatible con Windows 7 y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_CANNOT_INITIATE_MOBIKE_UPDATE"></span><span id="error_cannot_initiate_mobike_update"></span><dl> <dt><strong>ERROR_CANNOT_INITIATE_MOBIKE_UPDATE</strong></dt> <dt>844</dt> </dl></td>
-<td>La conexión VPN se sigue conectando o se vuelve a autenticar debido al cambio de estado de cuarentena. Inicie la actualización móvil solo cuando el estado de la conexión sea "Conectado".<br/>
+<td>La conexión VPN se sigue conectando o se vuelve a autenticar debido a un cambio de estado de cuarentena. Inicie la actualización móvil solo cuando el estado de la conexión sea "Conectado".<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows 7 y versiones posteriores de Windows.
@@ -1463,7 +1463,7 @@ Compatible con Windows 7 y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_PEAP_SERVER_REJECTED_CLIENT_TLV"></span><span id="error_peap_server_rejected_client_tlv"></span><dl> <dt><strong>ERROR_PEAP_SERVER_REJECTED_CLIENT_TLV</strong></dt> <dt>845</dt> </dl></td>
-<td>El servidor rechazó la autenticación de cliente debido a un TLV inesperado o a una falta de coincidencia de valores para un TLV.<br/>
+<td>El servidor rechazó la autenticación de cliente debido a un error de coincidencia de valores o TLV inesperados para un TLV.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows 7 y versiones posteriores de Windows.
@@ -1481,7 +1481,7 @@ Compatible con Windows 7 y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_EAPTLS_SCARD_CACHE_CREDENTIALS_INVALID"></span><span id="error_eaptls_scard_cache_credentials_invalid"></span><dl> <dt><strong>ERROR_EAPTLS_SCARD_CACHE_CREDENTIALS_INVALID</strong></dt> <dt>847</dt> </dl></td>
-<td>Las credenciales de tarjeta inteligente almacenadas en caché no son válidas.<br/>
+<td>La credencial de tarjeta inteligente almacenada en caché no es válida.<br/>
 <blockquote>
 [!Note]<br />
 Compatible con Windows 7 y versiones posteriores de Windows.
@@ -1490,7 +1490,7 @@ Compatible con Windows 7 y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_SSTP_COOKIE_SET_FAILURE"></span><span id="error_sstp_cookie_set_failure"></span><dl> <dt><strong>ERROR_SSTP_COOKIE_SET_FAILURE</strong></dt> <dt>848</dt> </dl></td>
-<td>Error al intentar la conexión VPN debido a un error interno al agregar cookies al protocolo de túnel de sockets seguros (SSTP). Consulte el registro de eventos del sistema para obtener información detallada.<br/></td>
+<td>Error en el intento de conexión VPN debido a un error interno al agregar cookies al Protocolo de túnel de sockets seguros (SSTP). Consulte el registro de eventos del sistema para obtener información detallada.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_INVALID_PEAP_COOKIE_ATTRIBUTES"></span><span id="error_invalid_peap_cookie_attributes"></span><dl> <dt><strong>ERROR_INVALID_PEAP_COOKIE_ATTRIBUTES</strong></dt> <dt>849</dt> </dl></td>
@@ -1502,7 +1502,7 @@ Compatible con Windows 7 y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_EAP_METHOD_DOES_NOT_SUPPORT_SSO"></span><span id="error_eap_method_does_not_support_sso"></span><dl> <dt><strong>ERROR_EAP_METHOD_DOES_NOT_SUPPORT_SSO</strong></dt> <dt>851</dt> </dl></td>
-<td>El tipo protocolo de autenticación extensible configurado en la conexión de acceso remoto no admite el inicio de sesión único.<br/></td>
+<td>El tipo de protocolo de autenticación extensible configurado en la conexión de acceso remoto no admite el inicio de sesión único.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_EAP_METHOD_OPERATION_NOT_SUPPORTED"></span><span id="error_eap_method_operation_not_supported"></span><dl> <dt><strong>ERROR_EAP_METHOD_OPERATION_NOT_SUPPORTED</strong></dt> <dt>852</dt> </dl></td>
@@ -1514,15 +1514,15 @@ Compatible con Windows 7 y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_EAP_USER_CERT_EXPIRED"></span><span id="error_eap_user_cert_expired"></span><dl> <dt><strong>ERROR_EAP_USER_CERT_EXPIRED</strong></dt> <dt>854</dt> </dl></td>
-<td>Se completó la conexión de acceso remoto, pero no se pudo realizar la autenticación porque el certificado que autentica el cliente en el servidor ha expirado. Renueve el certificado.<br/></td>
+<td>La conexión de acceso remoto se completó, pero la autenticación no se pudo realizar porque el certificado que autentica el cliente en el servidor ha expirado. Renueve el certificado.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_EAP_USER_CERT_REVOKED"></span><span id="error_eap_user_cert_revoked"></span><dl> <dt><strong>ERROR_EAP_USER_CERT_REVOKED</strong></dt> <dt>855</dt> </dl></td>
-<td>Se completó la conexión de acceso remoto, pero se ha producido un error en la autenticación porque se revoca el certificado que autentica el cliente en el servidor. Use un certificado que no se haya revocado.<br/></td>
+<td>Se completó la conexión de acceso remoto, pero se ha producido un error de autenticación porque se revoca el certificado que autentica el cliente en el servidor. Use un certificado que no se haya revocado.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_EAP_USER_CERT_OTHER_ERROR"></span><span id="error_eap_user_cert_other_error"></span><dl> <dt><strong>ERROR_EAP_USER_CERT_OTHER_ERROR</strong></dt> <dt>856</dt> </dl></td>
-<td>Se completó la conexión de acceso remoto, pero no se pudo realizar la autenticación debido a un error en el certificado que autentica el cliente en el servidor.<br/></td>
+<td>La conexión de acceso remoto se completó, pero se produjo un error de autenticación debido a un error en el certificado que autentica el cliente en el servidor.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_EAP_SERVER_CERT_INVALID"></span><span id="error_eap_server_cert_invalid"></span><dl> <dt><strong>ERROR_EAP_SERVER_CERT_INVALID</strong></dt> <dt>857</dt> </dl></td>
@@ -1534,11 +1534,11 @@ Compatible con Windows 7 y versiones posteriores de Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_EAP_SERVER_CERT_REVOKED"></span><span id="error_eap_server_cert_revoked"></span><dl> <dt><strong>ERROR_EAP_SERVER_CERT_REVOKED</strong></dt> <dt>859</dt> </dl></td>
-<td>Se completó la conexión de acceso remoto, pero se ha producido un error en la autenticación porque se revoca el certificado que el cliente usa para autenticar el servidor.<br/></td>
+<td>Se completó la conexión de acceso remoto, pero se ha producido un error de autenticación porque se revoca el certificado que el cliente usa para autenticar el servidor.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_EAP_SERVER_CERT_OTHER_ERROR"></span><span id="error_eap_server_cert_other_error"></span><dl> <dt><strong>ERROR_EAP_SERVER_CERT_OTHER_ERROR</strong></dt> <dt>860</dt> </dl></td>
-<td>Se completó la conexión de acceso remoto, pero se produjo un error en la autenticación debido a un error en el certificado que el cliente usa para autenticar el servidor.<br/></td>
+<td>La conexión de acceso remoto se completó, pero se produjo un error de autenticación debido a un error en el certificado que el cliente usa para autenticar el servidor.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_EAP_USER_ROOT_CERT_NOT_FOUND"></span><span id="error_eap_user_root_cert_not_found"></span><dl> <dt><strong>ERROR_EAP_USER_ROOT_CERT_NOT_FOUND</strong></dt> <dt>861</dt> </dl></td>
@@ -1562,7 +1562,7 @@ Compatible con Windows 7 y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_EAP_SERVER_ROOT_CERT_NAME_REQUIRED"></span><span id="error_eap_server_root_cert_name_required"></span><dl> <dt><strong>ERROR_EAP_SERVER_ROOT_CERT_NAME_REQUIRED</strong></dt> <dt>866</dt> </dl></td>
-<td>Se completó la conexión de acceso remoto, pero se ha producido un error en la autenticación porque el certificado del equipo servidor no tiene un nombre de servidor especificado.<br/></td>
+<td>Se completó la conexión de acceso remoto, pero se ha producido un error de autenticación porque el certificado del equipo servidor no tiene un nombre de servidor especificado.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_PEAP_IDENTITY_MISMATCH"></span><span id="error_peap_identity_mismatch"></span><dl> <dt><strong>ERROR_PEAP_IDENTITY_MISMATCH</strong></dt> <dt>867</dt> </dl></td>
@@ -1578,7 +1578,7 @@ Compatible con Windows 7 y versiones posteriores de Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_IKEV2_PSK_INTERFACE_ALREADY_EXISTS"></span><span id="error_ikev2_psk_interface_already_exists"></span><dl> <dt><strong>ERROR_IKEV2_PSK_INTERFACE_ALREADY_EXISTS</strong></dt> <dt>870</dt> </dl></td>
-<td>No se pudo habilitar la interfaz porque se ha creado más de una interfaz con el mismo destino con el método de autenticación de clave previamente compartida. Cambie el método de destino o autenticación y habilite la interfaz .<br/></td>
+<td>No se pudo habilitar la interfaz porque se ha creado más de una interfaz con el mismo destino con el método de autenticación de clave previamente compartido. Cambie el método de destino o autenticación y habilite la interfaz .<br/></td>
 </tr>
 </tbody>
 </table>
@@ -1785,7 +1785,7 @@ Los siguientes códigos de error de la API de enrutamiento y acceso remoto (RRAS
 </tr>
 <tr class="even">
 <td><span id="ERROR_ROUTER_CONFIG_INCOMPATIBLE"></span><span id="error_router_config_incompatible"></span><dl> <dt><strong>ERROR_ROUTER_CONFIG_INCOMPATIBLE</strong></dt> <dt>945</dt> </dl></td>
-<td>La configuración del enrutador guardada no es compatible con el enrutador actual.<br/></td>
+<td>La configuración del enrutador guardado no es compatible con el enrutador actual.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="WARNING_NO_MD5_MIGRATION"></span><span id="warning_no_md5_migration"></span><dl> <dt><strong>WARNING_NO_MD5_MIGRATION</strong></dt> <dt>946</dt> </dl></td>
@@ -1863,7 +1863,7 @@ Compatible con Windows XP y versiones posteriores de Windows.
 <td>El enrutamiento y el servidor de acceso remoto no están configurados o no se están ejecutando.<br/>
 <blockquote>
 [!Note]<br />
-Compatible con Windows 7 y versiones posteriores de Windows.
+Se admite en Windows 7 y versiones posteriores de Windows.
 </blockquote>
 <br/></td>
 </tr>
@@ -1878,7 +1878,7 @@ Compatible con Windows 7 y versiones posteriores de Windows.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |

@@ -26,19 +26,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4c10da966b4568a3296b93e2cbb8cd2408601d344b71d3dfcc5a21f9ca7bd2ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d9410c9dcddc99a9bffcf5d2e6e5b867f38f6e5c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118420392"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883296"
 ---
 # <a name="cim_versioncompatibilitycheck-class"></a>Cim \_ VersionCompatibilityCheck (clase)
 
 La **clase CIM \_ VersionCompatibilityCheck** especifica si está permitido crear el siguiente estado de un elemento de software.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -67,7 +67,7 @@ class CIM_VersionCompatibilityCheck : CIM_Check
 
 ## <a name="members"></a>Miembros
 
-La **clase CIM \_ VersionCompatibilityCheck** tiene estos tipos de miembros:
+La **clase \_ CIM VersionCompatibilityCheck** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
@@ -80,7 +80,7 @@ La **clase CIM \_ VersionCompatibilityCheck** tiene estos métodos.
 
 | Método                                                                 | Descripción                                                   |
 |:-----------------------------------------------------------------------|:--------------------------------------------------------------|
-| [**Invocar**](invoke-method-in-class-cim-versioncompatibilitycheck.md) | Realiza una acción determinada. Wmi no implementa .<br/> |
+| [**Invocar**](invoke-method-in-class-cim-versioncompatibilitycheck.md) | Realiza una acción determinada. Wmi no implementa.<br/> |
 
 
 
@@ -365,7 +365,7 @@ Att UNIX
 
 </dt> <dd>
 
-Apertura de máquinas virtuales
+Apertura de MÁQUINAS VIRTUALES
 
 </dd> <dt>
 
@@ -825,8 +825,8 @@ Versión de la operación.
 
 La versión de la operación debe tener uno de los siguientes formatos:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;&gt;principal. &lt; &gt;secundaria. &lt; Revisión&gt;
+-   &lt;&gt;principal. &lt; revisión &gt; &lt; de letra &gt; &lt; secundaria&gt;
 
 Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
@@ -852,7 +852,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

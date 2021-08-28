@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_INDEXID'
-title: Estructura de JET_INDEXID
+description: 'Más información sobre: JET_INDEXID estructura'
+title: JET_INDEXID estructura
 TOCTitle: JET_INDEXID Structure
 ms:assetid: 8b1d90f0-bc93-4b30-90d1-b9e93ad26654
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269327(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e1a9c6a971e44604240d750163f0570937f9d4db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89af1b81b5221ab1cdebc0c91d5340acc62dd330
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717244"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983978"
 ---
-# <a name="jet_indexid-structure"></a>Estructura de JET_INDEXID
+# <a name="jet_indexid-structure"></a>JET_INDEXID estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_indexid-structure"></a>Estructura de JET_INDEXID
+## <a name="jet_indexid-structure"></a>JET_INDEXID estructura
 
-La estructura de **JET_INDEXID** contiene un identificador de índice. Un ID. de índice es una sugerencia que se usa para acelerar la selección del índice actual mediante [JetSetCurrentIndex](./jetsetcurrentindex-function.md). Resulta muy útil cuando hay un gran número de índices en una tabla. El identificador de índice se puede recuperar mediante [JetGetIndexInfo](./jetgetindexinfo-function.md) o [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
+La **JET_INDEXID** contiene un identificador de índice. Un identificador de índice es una sugerencia que se usa para acelerar la selección del índice actual [mediante JetSetCurrentIndex](./jetsetcurrentindex-function.md). Es muy útil cuando hay un número muy grande de índices en una tabla. El identificador de índice se puede recuperar [mediante JetGetIndexInfo](./jetgetindexinfo-function.md) o [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
 
 ```cpp
     typedef struct tagJET_INDEXID {
@@ -44,36 +44,23 @@ La estructura de **JET_INDEXID** contiene un identificador de índice. Un ID. de
 
 Tamaño, en bytes, del identificador de índice.
 
-Es el tamaño real del ID. de índice que se devuelve en el búfer de salida de [JetGetIndexInfo](./jetgetindexinfo-function.md) o [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
+Este es el tamaño real del identificador de índice que se devuelve en el búfer de salida de [JetGetIndexInfo](./jetgetindexinfo-function.md) o [JetGetTableIndexInfo.](./jetgettableindexinfo-function.md)
 
 **rgbIndexId**
 
-Un BLOB opaco de información que utiliza el motor para identificar rápidamente un índice en su caché de esquema.
+Blob opaco de información que usa el motor para identificar rápidamente un índice en su caché de esquemas.
 
 No intente interpretar el BLOB de información. No es un tamaño establecido.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

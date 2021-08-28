@@ -1,19 +1,19 @@
 ---
-description: El elemento <locationProvider> opcional especifica el proveedor de búsqueda que usará el conector de búsqueda del proveedor de servicios web. Este elemento contiene un atributo obligatorio y un elemento secundario opcional.
+description: El elemento opcional locationProvider especifica el proveedor de búsqueda que usará el conector de búsqueda del &lt; &gt; proveedor de servicios web. Este elemento contiene un atributo obligatorio y un elemento secundario opcional.
 ms.assetid: 5481b1ae-e166-4f09-bf0d-d6b7f7c8a331
 title: Elemento locationProvider (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21101fd0e7c57b73af7bc9de525baaca9583d11e425b168d806f750063ac7203
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f049a01cc0c51075c147918a2f43b740000f2e36
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119711045"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883370"
 ---
 # <a name="locationprovider-element-search-connector-schema"></a>Elemento locationProvider (esquema del conector de búsqueda)
 
-El elemento <locationProvider> opcional especifica el proveedor de búsqueda que usará el conector de búsqueda del proveedor de servicios web. Este elemento contiene un atributo obligatorio y un elemento secundario opcional.
+El elemento opcional locationProvider especifica el proveedor de búsqueda que usará el conector de búsqueda del &lt; &gt; proveedor de servicios web. Este elemento contiene un atributo obligatorio y un elemento secundario opcional.
 
 ## <a name="syntax"></a>Syntax
 
@@ -69,7 +69,7 @@ El elemento <locationProvider> opcional especifica el proveedor de búsqueda que
 
 El valor del atributo @clsid para el proveedor OpenSearch es {48E277F6-4E74-4cd6-BA6F-FA4F42898223}.
 
-Los conectores de búsqueda basados en el sistema de archivos y el controlador de protocolos pueden usar [<simpleLocation>](search-schema-sconn-simplelocation.md) el elemento en su lugar. Si <locationProvider> está presente, NO DEBE haber un <simpleLocation> elemento en la descripción del conector de búsqueda.
+Los conectores de búsqueda basados en el sistema de archivos y el controlador de protocolos pueden usar el [ &lt; elemento simpleLocation &gt; ](search-schema-sconn-simplelocation.md) en su lugar. Si &lt; locationProvider &gt; está presente, NO DEBE haber un elemento &lt; simpleLocation en la descripción del conector de &gt; búsqueda.
 
 ## <a name="example-of-a-locationprovider-element"></a>Ejemplo de un elemento locationProvider
 

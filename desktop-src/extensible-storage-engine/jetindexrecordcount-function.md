@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4105dec0217c1fea2e00d92c9d217fcf2d7e40b4
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 7ce2f5e6072e1c59820121ca652de9237b1c226f
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480441"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988998"
 ---
 # <a name="jetindexrecordcount-function"></a>JetIndexRecordCount (Función)
 
@@ -83,11 +83,11 @@ Si esta función se realiza correctamente, el número exacto de entradas de índ
 
 Si se produce un error en esta función, no se realiza ningún cambio en la memoria asignada en *los objetos precpos*.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Si la tabla no está vacía, el cursor debe colocarse en el registro desde el que se va a comenzar el recuento. El recuento incluirá este registro y el recuento se reenviará hasta el límite especificado en *crecMax*. Si *crecMax es* 0, la operación continuará contando hasta el final del índice.
 
-Los intervalos de índice se pueden usar para construir limitaciones de final de índice artificiales para el recuento. De esta manera, los subrangos de un índice se pueden contar exactamente. El cursor debe colocarse en la primera fila del intervalo. Se debe establecer el final de la clave de intervalo y, a continuación, se debe usar [JetSetIndexRange](./jetsetindexrange-function.md) para establecer el intervalo superior, ya sea de forma inclusiva o exclusiva. Por último, se debe llamar a **JetIndexRecordCount** para contar exactamente el intervalo.
+Los intervalos de índice se pueden usar para construir limitaciones de fin de índice artificiales para el recuento. De esta manera, los subrangos de un índice se pueden contar exactamente. El cursor debe colocarse en la primera fila del intervalo. Se debe establecer el final de la clave de intervalo y, a continuación, se debe usar [JetSetIndexRange](./jetsetindexrange-function.md) para establecer el intervalo superior, ya sea de forma inclusiva o exclusiva. Por último, se debe llamar a **JetIndexRecordCount** para contar exactamente el intervalo.
 
 **JetIndexRecordCount sigue** la semántica de las transacciones y devuelve un recuento que es preciso para esta sesión determinada en su estado transaccional actual.
 
@@ -98,7 +98,13 @@ Los intervalos de índice se pueden usar para construir limitaciones de final de
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

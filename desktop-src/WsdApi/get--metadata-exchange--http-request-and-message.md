@@ -1,28 +1,28 @@
 ---
-description: WS-Transfer mensaje que se usa para solicitar metadatos.
+description: Mensaje WS-Transfer que se usa para solicitar metadatos.
 ms.assetid: 18bf27aa-6ae5-4419-ae68-6df9eda10cd4
-title: Get (intercambio de metadatos) solicitud y mensaje HTTP
+title: Obtener (metadatos Exchange) solicitud HTTP y mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8ad240a51fdbabf4184b8769f4e3cca6daa4244
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 994e02b990dc87cf8551e215bc7eae94dbcf7852
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715807"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632073"
 ---
-# <a name="get-metadata-exchange-http-request-and-message"></a>Get (intercambio de metadatos) solicitud y mensaje HTTP
+# <a name="get-metadata-exchange-http-request-and-message"></a>Obtener (metadatos Exchange) solicitud HTTP y mensaje
 
-Un mensaje get es un mensaje WS-Transfer que se usa para solicitar metadatos. Para obtener más información sobre la obtención de mensajes, consulte la sección 3,1 de la [especificación de WS-Transfer](https://specs.xmlsoap.org/ws/2004/09/transfer/WS-Transfer.pdf). Dado que el intercambio de metadatos se realiza a través de HTTP, un mensaje get es la carga de una solicitud HTTP.
+Un mensaje Get es un WS-Transfer que se usa para solicitar metadatos. Para obtener más información sobre Obtener mensajes, vea la sección 3.1 de la [especificación de WS-Transfer](https://specs.xmlsoap.org/ws/2004/09/transfer/WS-Transfer.pdf). Dado que el intercambio de metadatos se realiza a través de HTTP, un mensaje Get es la carga de una solicitud HTTP.
 
-Los clientes de DPWS envían mensajes get. Los clientes de detección de funciones, los clientes WSDAPI que llaman a [**WSDCreateDeviceProxy**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxy)y los clientes WSDAPI que llaman a [**WSDCreateDeviceProxyAdvanced**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxyadvanced) envían este mensaje.
+Los clientes de DPWS envían mensajes Get. Los clientes de detección de funciones, los clientes de WSDAPI que llaman a [**WSDCreateDeviceProxy**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxy)y los clientes de WSDAPI que llaman a [**WSDCreateDeviceProxyAdvanced**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxyadvanced) envían este mensaje.
 
 > [!Note]  
-> En este tema se muestra un mensaje de DPWS de ejemplo generado por los clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes conformes a DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; en su lugar, use la [herramienta de interoperabilidad básica de WSDAPI (WSDBIT)](https://msdn.microsoft.com/library/cc264250.aspx) .
+> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la herramienta de interoperabilidad básica de [WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
 
  
 
-En el ejemplo siguiente se muestra una solicitud HTTP GET de ejemplo.
+En el ejemplo siguiente se muestra una solicitud GET HTTP de ejemplo.
 
 ``` syntax
 POST /37f86d35-e6ac-4241-964f-1d9ae46fb366
@@ -36,15 +36,15 @@ Cache-Control: no-cache
 Pragma: no-cache
 ```
 
-Una solicitud GET HTTP tiene los siguientes puntos de enfoque.
+Una solicitud Get HTTP tiene los siguientes puntos de enfoque.
 
 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -57,12 +57,12 @@ Una solicitud GET HTTP tiene los siguientes puntos de enfoque.
 <tr class="odd">
 <td>Ruta de acceso URL</td>
 <td><pre class="syntax" data-space="preserve"><code>POST /37f86d35-e6ac-4241-964f-1d9ae46fb366</code></pre></td>
-<td>La ruta de acceso de la dirección URL donde se publicó la solicitud GET HTTP.</td>
+<td>Ruta de acceso url donde se publicó la solicitud Get HTTP.</td>
 </tr>
 <tr class="even">
-<td>Host y Puerto</td>
+<td>Host y puerto</td>
 <td><pre class="syntax" data-space="preserve"><code>Host: 192.168.0.2:5357</code></pre></td>
-<td>El host y el puerto donde se dirigió la solicitud HTTP GET.</td>
+<td>Host y puerto donde se ha dirigido la solicitud Get HTTP.</td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ Una solicitud GET HTTP tiene los siguientes puntos de enfoque.
 
  
 
-El siguiente mensaje SOAP muestra un ejemplo de Get Message.
+El siguiente mensaje SOAP muestra un ejemplo de get message.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>
@@ -103,15 +103,15 @@ El siguiente mensaje SOAP muestra un ejemplo de Get Message.
 </soap:Body>
 ```
 
-Un mensaje get tiene los siguientes puntos de enfoque.
+Un mensaje Get tiene los siguientes puntos de enfoque.
 
 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -126,21 +126,21 @@ Un mensaje get tiene los siguientes puntos de enfoque.
 <td><pre class="syntax" data-space="preserve"><code><wsa:To>
     urn:uuid:37f86d35-e6ac-4241-964f-1d9ae46fb366
 </wsa:To></code></pre></td>
-<td>Identificador del dispositivo al que se solicitan los metadatos.</td>
+<td>Identificador del dispositivo al que se solicitan metadatos.</td>
 </tr>
 <tr class="even">
 <td>Obtener</td>
 <td><pre class="syntax" data-space="preserve"><code><wsa:Action>
     https://schemas.xmlsoap.org/ws/2004/09/transfer/Get
 </wsa:Action</code></pre></td>
-<td>La acción obtener SOAP identifica el mensaje como un mensaje get.</td>
+<td>La acción Obtener SOAP identifica el mensaje como obtener mensaje.</td>
 </tr>
 <tr class="odd">
 <td>MessageID</td>
 <td><pre class="syntax" data-space="preserve"><code><wsa:MessageID>
     urn:uuid:027bec45-c37c-466c-936c-68f648abe2bb
 </wsa:MessageID></code></pre></td>
-<td>Contiene el identificador de mensaje, al que se hace referencia en un mensaje <a href="getresponse--metadata-exchange--message.md">GetResponse</a> .</td>
+<td>Contiene el identificador del mensaje, al que se hace referencia en un <a href="getresponse--metadata-exchange--message.md">mensaje GetResponse.</a></td>
 </tr>
 </tbody>
 </table>
@@ -153,10 +153,10 @@ Un mensaje get tiene los siguientes puntos de enfoque.
 
 <dl> <dt>
 
-[Mensajes de intercambio de metadatos y detección](discovery-and-metadata-exchange-message-patterns.md)
+[Mensajes de detección y Exchange metadatos](discovery-and-metadata-exchange-message-patterns.md)
 </dt> <dt>
 
-[GetResponse (mensaje)](getresponse--metadata-exchange--message.md)
+[Mensaje GetResponse](getresponse--metadata-exchange--message.md)
 </dt> </dl>
 
  

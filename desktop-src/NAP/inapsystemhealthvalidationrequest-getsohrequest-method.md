@@ -3,9 +3,9 @@ title: Método INapSystemHealthValidationRequest GetSoHRequest (NapSystemHealthV
 description: Permite a los validadores de estado del sistema (SHV) recuperar y validar la información de SoHRequest enviada por sus homólogos del Agente de mantenimiento del sistema (SHA) en el cliente.
 ms.assetid: e06e07c6-7305-4171-b94e-19c360e94c67
 keywords:
-- Nap del método GetSoHRequest
+- Método NAP de GetSoHRequest
 - Método NAP de GetSoHRequest, interfaz INapSystemHealthValidationRequest
-- INapSystemHealthValidationRequest interface NAP , Método GetSoHRequest
+- Interfaz NAP de INapSystemHealthValidationRequest, método GetSoHRequest
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc9d9dc3b28aec92b7125dc2cad6bf8b843975945ca89687957d56be0ff562d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9c140af202de263e99f0fa8ec72186da6e995ec
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118367733"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882614"
 ---
-# <a name="inapsystemhealthvalidationrequestgetsohrequest-method"></a>Método INapSystemHealthValidationRequest::GetSoHRequest
+# <a name="inapsystemhealthvalidationrequestgetsohrequest-method"></a>INapSystemHealthValidationRequest::GetSoHRequest (método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El método **INapSystemHealthValidationRequest::GetSoHRequest** permite a los validadores de estado del sistema (SHV) recuperar y validar la información de [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) enviada por sus homólogos del Agente de mantenimiento del sistema (SHA) en el cliente.
+El método **INapSystemHealthValidationRequest::GetSoHRequest** permite a los validadores de estado del sistema (SHV) recuperar y validar la información [**de SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) enviada por sus homólogos de System Health Agent (SHA) en el cliente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ Puntero a un puntero a una [**estructura SoHRequest.**](/windows/win32/api/napty
 *napSystemGenerated* \[ out\]
 </dt> <dd>
 
-Un **VALOR BOOL** que es **TRUE** si napAgent creó el SoH en nombre de SHA y **FALSE** en caso contrario. Se usa principalmente para indicar un error sha en la SHV.
+Valor **BOOL que** es **TRUE si** NapAgent creó el SoH en nombre de SHA y **FALSE** en caso contrario. Se usa principalmente para indicar un error sha en la SHV.
 
 </dd> </dl>
 
@@ -84,9 +84,9 @@ El *parámetro sohRequest* puede devolver **NULL** si el cliente no envió [**un
 
 Si el *parámetro napSystemGenerated* es **TRUE,** el formato *de SoHRequest* es el siguiente:
 
--   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md)= <id>
+-   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md) =  &lt; Id&gt;
 -   [**sohAttributeTypeFailureCategory**](sohattributetype-enum.md) =  [ **failureCategoryClientComponent**](/windows/win32/api/naptypes/ne-naptypes-failurecategory)
--   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **<sha-failure-error-code>**](nap-error-constants.md)
+-   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **&lt; &gt; sha-failure-error-error-code**](nap-error-constants.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,13 +96,13 @@ Si el *parámetro napSystemGenerated* es **TRUE,** el formato *de SoHRequest* es
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
-| Header<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
