@@ -1,26 +1,26 @@
 ---
 title: Referencia de IMAPIv1
-description: La versión 1,0 de IMAPi incluye los siguientes elementos de programación
+description: La versión 1.0 de IMAPI incluye los siguientes elementos de programación
 ms.assetid: 3db8a85c-4719-4fd3-8d00-3428852a24d3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff1b4e11bb2b8223ce7927cbf28e90fbf1853d31
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 697cf9dabdc1edcb8faf39582d824ae509f42275cbbf2bf1b7c2b7385623b509
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062525"
 ---
 # <a name="imapiv1-reference"></a>Referencia de IMAPIv1
 
-La versión 1,0 de IMAPi incluye los siguientes elementos de programación:
+La versión 1.0 de IMAPI incluye los siguientes elementos de programación:
 
--   [Interfaces IMAPIv1](imapiv1-interfaces.md)
--   [Códigos de resultado de IMAPIv1](imapiv1-result-codes.md)
+-   [IMAPIv1 Interfaces](imapiv1-interfaces.md)
+-   [Códigos de resultado IMAPIv1](imapiv1-result-codes.md)
 
- 
+ 
 
- 
+ 
 
 
 

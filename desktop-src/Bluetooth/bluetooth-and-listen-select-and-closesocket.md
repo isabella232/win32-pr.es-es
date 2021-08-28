@@ -1,32 +1,32 @@
 ---
-title: Bluetooth y escuchar, seleccionar y closesocket
-description: Bluetooth usa las funciones Listen, SELECT y closesocket sin ninguna modificación de la programación estándar de Windows Sockets.
+title: Bluetooth y escuchar, seleccionar y cerrarsocket
+description: Bluetooth las funciones listen, select y closesocket sin ninguna modificación de la programación estándar Windows Sockets.
 ms.assetid: b64440de-bc63-4e3b-bfd9-5cf783f36c23
 keywords:
 - Bluetooth
 - closesocket
 - listen
 - select
-- Bluetooth y escuchar
-- Bluetooth y escuchar, seleccione
-- Bluetooth y escuchar, seleccionar y closesocket
+- Bluetooth y escucha
+- Bluetooth y escucha, seleccione
+- Bluetooth y escuchar, seleccionar y cerrarsocket
 - listen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e442cfc0593ab5be297902487c7c3ccdf056b4e0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 01fa3fc1285a9035173da80cc7a9821535409b872b171f7822708c379ff01543
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104487914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004485"
 ---
-# <a name="bluetooth-and-listen-select-and-closesocket"></a>Bluetooth y escuchar, seleccionar y closesocket
+# <a name="bluetooth-and-listen-select-and-closesocket"></a>Bluetooth y escuchar, seleccionar y cerrarsocket
 
-Bluetooth usa las funciones [**Listen**](/windows/desktop/api/winsock2/nf-winsock2-listen), [**Select**](/windows/desktop/api/winsock2/nf-winsock2-select)y [**closesocket**](/windows/desktop/api/winsock/nf-winsock-closesocket) sin ninguna modificación de la programación estándar de Windows Sockets.
+Bluetooth las funciones [**listen,**](/windows/desktop/api/winsock2/nf-winsock2-listen) [**select**](/windows/desktop/api/winsock2/nf-winsock2-select)y [**closesocket**](/windows/desktop/api/winsock/nf-winsock-closesocket) sin ninguna modificación de la programación estándar Windows Sockets.
 
-Al igual que con Windows Sockets, la función [**closesocket**](/windows/desktop/api/winsock/nf-winsock-closesocket) libera los recursos asociados al socket.
+Al igual Windows sockets, la [**función closesocket**](/windows/desktop/api/winsock/nf-winsock-closesocket) libera los recursos asociados al socket.
 
-Cuando se llama a la función [**Listen**](/windows/desktop/api/winsock2/nf-winsock2-listen) , se recomienda encarecidamente que se use un valor bajo para el parámetro de *trabajo pendiente* (normalmente de 2 a 4), ya que solo se aceptan algunas conexiones de cliente. Esto reduce los recursos del sistema que se asignan para su uso por el socket de escucha.
+Al llamar a la función [**de**](/windows/desktop/api/winsock2/nf-winsock2-listen) escucha, se recomienda encarecidamente que se utilice un valor bajo para el parámetro *de* trabajo pendiente (normalmente de 2 a 4), ya que solo se aceptan algunas conexiones de cliente. Esto reduce los recursos del sistema asignados para su uso por el socket de escucha.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -38,12 +38,12 @@ Cuando se llama a la función [**Listen**](/windows/desktop/api/winsock2/nf-wins
 [**closesocket**](/windows/desktop/api/winsock/nf-winsock-closesocket)
 </dt> <dt>
 
-[**escuchar**](/windows/desktop/api/winsock2/nf-winsock2-listen)
+[**listen**](/windows/desktop/api/winsock2/nf-winsock2-listen)
 </dt> <dt>
 
-[**no**](/windows/desktop/api/winsock2/nf-winsock2-select)
+[**Seleccione**](/windows/desktop/api/winsock2/nf-winsock2-select)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

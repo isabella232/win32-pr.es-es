@@ -1,9 +1,9 @@
 ---
-title: WM/WMShadowFileSourceFileType (SDK de Windows Media Player)
-description: WM/WMShadowFileSourceFileType es el tipo de archivo del archivo que se encuentra en el archivo de instantáneas.
+title: WM/WMShadowFileSourceFileType (Reproductor de Windows Media SDK)
+description: WM/WMShadowFileSourceFileType es el tipo de archivo del archivo contenido en el archivo de sombra.
 ms.assetid: 4c4b70b6-0e26-49f3-b7c1-f6e1fe791e48
 keywords:
-- Media Player Windows WM/WMShadowFileSourceFileType
+- Wm/WMShadowFileSourceFileType Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01fc2eb3d91cd05493f98c75d3b7ada3132816ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5fecddc4ddaf1d28b464a2d120c5d7fea11779784ed6ec496cdddcb1a09a9ded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000785"
 ---
-# <a name="wmwmshadowfilesourcefiletype-windows-media-player-sdk"></a>WM/WMShadowFileSourceFileType (SDK de Windows Media Player)
+# <a name="wmwmshadowfilesourcefiletype-windows-media-player-sdk"></a>WM/WMShadowFileSourceFileType (Reproductor de Windows Media SDK)
 
-**WM/WMShadowFileSourceFileType** es el tipo de archivo del archivo que se encuentra en el archivo de instantáneas.
+**WM/WMShadowFileSourceFileType es** el tipo de archivo del archivo contenido en el archivo de sombra.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un archivo de instantáneas puede ser un contenedor para un archivo de código fuente. Este atributo es una cadena que contiene la extensión de nombre de archivo (sin el delimitador de punto) del archivo de código fuente. Por ejemplo, si el archivo de origen es un archivo AAC, este atributo contiene la cadena "AAC".
+Un archivo de sombra puede ser un contenedor para un archivo de código fuente. Este atributo es una cadena que contiene la extensión de nombre de archivo (sin el delimitador de punto) para el archivo de origen. Por ejemplo, si el archivo de origen es un archivo AAC, este atributo contiene la cadena "aac".
 
-El archivo de sombra se especifica mediante el atributo [ShadowFilePath](shadowfilepath-attribute.md) .
+El archivo de sombra se especifica mediante el atributo [ShadowFilePath.](shadowfilepath-attribute.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ El archivo de sombra se especifica mediante el atributo [ShadowFilePath](shadowf
 [**Acerca de los complementos de conversión**](about-conversion-plug-ins.md)
 </dt> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

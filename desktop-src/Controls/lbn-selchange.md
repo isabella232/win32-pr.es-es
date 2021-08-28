@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de LBN_SELCHANGE (Winuser. h)
-description: Notifica a la aplicación que la selección de un cuadro de lista ha cambiado como resultado de los datos proporcionados por el usuario. La ventana primaria del cuadro de lista recibe este código de notificación a través del mensaje de comando de WM \_ .
+title: LBN_SELCHANGE de notificación (Winuser.h)
+description: Notifica a la aplicación que la selección de un cuadro de lista ha cambiado como resultado de la entrada del usuario. La ventana primaria del cuadro de lista recibe este código de notificación a través del mensaje \_ WM COMMAND.
 ms.assetid: 126d2c47-816e-4179-a870-f5c5a34c5513
 keywords:
-- LBN_SELCHANGE controles de código de notificación de Windows
+- LBN_SELCHANGE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e029d1753a0fa74f39a59a459d6ede45811a40fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ef87aebcf2ce804a10b4682bfaf2cba900bd227a06671959d11babce5f46774
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085185"
 ---
-# <a name="lbn_selchange-notification-code"></a>Código de notificación de SELCHANGE de LBN \_
+# <a name="lbn_selchange-notification-code"></a>Código de notificación \_ DE LBN SELCHANGE
 
-Notifica a la aplicación que la selección de un cuadro de lista ha cambiado como resultado de los datos proporcionados por el usuario. La ventana primaria del cuadro de lista recibe este código de notificación a través del mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+Notifica a la aplicación que la selección de un cuadro de lista ha cambiado como resultado de la entrada del usuario. La ventana primaria del cuadro de lista recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,34 +42,34 @@ LBN_SELCHANGE
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador del cuadro de lista. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador del cuadro de lista. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Identificador del cuadro de lista.
+Identificador en el cuadro de lista.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este código de notificación solo se envía mediante un cuadro de lista que tiene el estilo de [**\_ notificación lb**](list-box-styles.md) .
+Este código de notificación solo se envía mediante un cuadro de lista que tiene el [**estilo NOTIFY \_ de LBS.**](list-box-styles.md)
 
-Este código de notificación no se envía si el mensaje [**lb \_ SETSEL**](lb-setsel.md), [**lb \_ SETCURSEL**](lb-setcursel.md), [**lb \_ SELECTSTRING**](lb-selectstring.md), [**lb \_ SELITEMRANGE**](lb-selitemrange.md) o [**lb \_ SELITEMRANGEEX**](lb-selitemrangeex.md) cambia la selección.
+Este código de notificación no se envía si el mensaje [**LB \_ SETSEL**](lb-setsel.md), [**LB \_ SETCURSEL,**](lb-setcursel.md) [**LB \_ SELECTSTRING,**](lb-selectstring.md) [**LB \_ SELITEMRANGE**](lb-selitemrange.md) o [**LB \_ SELITEMRANGEEX**](lb-selitemrangeex.md) cambia la selección.
 
-En el caso de un cuadro de lista de selección múltiple, \_ se envía el código de notificación LBN SELCHANGE cuando el usuario presiona una tecla de dirección, incluso si la selección no cambia.
+Para un cuadro de lista de selección múltiple, el código de notificación LBN SELCHANGE se envía cada vez que el usuario presiona una tecla de flecha, incluso si la selección \_ no cambia.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ En el caso de un cuadro de lista de selección múltiple, \_ se envía el códig
 [**LB \_ SETCURSEL**](lb-setcursel.md)
 </dt> <dt>
 
-[LBN \_ DBLCLK](lbn-dblclk.md)
+[\_DBLCLK de LBN](lbn-dblclk.md)
 </dt> <dt>
 
 [LBN \_ SELCANCEL](lbn-selcancel.md)
@@ -92,7 +92,7 @@ En el caso de un cuadro de lista de selección múltiple, \_ se envía el códig
 **Otros recursos**
 </dt> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

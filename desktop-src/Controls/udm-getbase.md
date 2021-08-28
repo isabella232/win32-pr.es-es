@@ -1,9 +1,9 @@
 ---
-title: Mensaje de UDM_GETBASE (commctrl. h)
-description: Recupera la base de base actual (es decir, base 10 o 16) para un control de flechas.
+title: UDM_GETBASE mensaje (Commctrl.h)
+description: Recupera la base base de base actual (es decir, base 10 o 16) para un control de flechas.
 ms.assetid: df755b11-9a11-44f1-bdef-1bb7244c7979
 keywords:
-- UDM_GETBASE controles de mensajes de Windows
+- UDM_GETBASE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86f5ac7cb5cff9b4b0325c03c86d8a69c5e5529d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8b8a42c9983b2685179e93ef2a289ff9d358669e5a8564abbbe99bd64811ff71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059815"
 ---
-# <a name="udm_getbase-message"></a>\_Mensaje GETBASE de UDM
+# <a name="udm_getbase-message"></a>Mensaje \_ GETBASE de UDM
 
-Recupera la base de base actual (es decir, base 10 o 16) para un control de flechas.
+Recupera la base base de base actual (es decir, base 10 o 16) para un control de flechas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,9 +45,9 @@ El valor devuelto es el valor base actual.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

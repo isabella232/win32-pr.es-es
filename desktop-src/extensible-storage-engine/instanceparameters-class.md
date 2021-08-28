@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase InstanceParameters'
+description: 'Más información sobre: Clase InstanceParameters'
 title: Clase InstanceParameters
 TOCTitle: InstanceParameters class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.InstanceParameters
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2be51a877ceb0f6a57f0bbb5232024f123805700
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 317d24bc57ca9debd9bd8d8bce4f2106c5f3072a4b9691e34dc73a65fdac9d3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112564"
 ---
 # <a name="instanceparameters-class"></a>Clase InstanceParameters
 
@@ -38,12 +38,12 @@ Esta clase proporciona propiedades para establecer y obtener parámetros del sis
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. InstanceParameters  
+  Microsoft.Isam.Esent.Interop.InstanceParameters  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,10 +60,10 @@ public class InstanceParameters
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros InstanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

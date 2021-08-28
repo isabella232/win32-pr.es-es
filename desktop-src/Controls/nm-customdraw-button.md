@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_CUSTOMDRAW (Button) (commctrl. h)
-description: Notifica a la ventana primaria de un control de botón sobre las operaciones de dibujo personalizadas en el botón. El control de botón envía este código de notificación en forma de mensaje de notificación de WM \_ .
+title: NM_CUSTOMDRAW de notificación (botón) (Commctrl.h)
+description: Notifica a la ventana primaria de un control de botón las operaciones de dibujo personalizadas en el botón. El control de botón envía este código de notificación en forma de mensaje WM \_ NOTIFY.
 ms.assetid: cabe5515-ba64-4c53-8746-7a0559df8989
 keywords:
-- Controles de Windows de código de notificación de NM_CUSTOMDRAW (botón)
+- NM_CUSTOMDRAW (botón) de notificación de Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab3cc4eb73c3a0185131bb6ef2198458888ec89d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5930dd9023bac636fb645b7309c17cb4d70902b88a2b4f8a8ba857984a54ac1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061745"
 ---
-# <a name="nm_customdraw-button-notification-code"></a>Código de notificación de NM \_ CUSTOMDRAW (Button)
+# <a name="nm_customdraw-button-notification-code"></a>Código \_ de notificación DE NM CUSTOMDRAW (botón)
 
-Notifica a la ventana primaria de un control de botón sobre las operaciones de dibujo personalizadas en el botón.
+Notifica a la ventana primaria de un control de botón las operaciones de dibujo personalizadas en el botón.
 
-El control de botón envía este código de notificación en forma de mensaje de [**\_ notificación de WM**](wm-notify.md) .
+El control de botón envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,34 +43,34 @@ NM_CUSTOMDRAW
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) que contiene información sobre la operación de dibujo. El miembro **dwItemSpec** de esta estructura contiene el índice del elemento que se está dibujando y el miembro **lItemlParam** de esta estructura contiene el *lParam* del elemento.
+Puntero a una estructura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) que contiene información sobre la operación de dibujo. El **miembro dwItemSpec** de esta estructura contiene el índice del elemento que se está dibujando y el miembro **lItemlParam** de esta estructura contiene el *lParam del elemento.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor que la aplicación puede devolver depende de la fase de dibujo actual. El miembro **dwDrawStage** de la estructura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) asociada contiene un valor que especifica la fase de dibujo. Debe devolver uno de los valores siguientes.
+El valor que la aplicación puede devolver depende de la fase de dibujo actual. El **miembro dwDrawStage** de la estructura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) asociada contiene un valor que especifica la fase de dibujo. Debe devolver uno de los siguientes valores.
 
 
 
 | Código devuelto                                                                                          | Descripción                                                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**CDRF \_ NOTIFYPOSTERASE**</dt> </dl> | El control notificará al elemento primario después de borrar un elemento. Solo se puede usar si **dwDrawStage** es igual a CDDS \_ preerase.<br/>                                  |
-| <dl> <dt>**CDRF \_ NOTIFYPOSTPAINT**</dt> </dl> | El control notificará al elemento primario después de que se dibuje un elemento. Solo se puede usar si **dwDrawStage** es igual a CDDS \_ PREPAINT.<br/>                                 |
-| <dl> <dt>**CDRF \_ SKIPDEFAULT**</dt> </dl>     | La aplicación dibujó el elemento manualmente. El control no dibujará el elemento. Se puede usar cuando **dwDrawStage** es igual a CDDS \_ preerase o CDDS \_ PREPAINT.<br/> |
+| <dl> <dt>**CDRF \_ NOTIFYPOSTERASE**</dt> </dl> | El control notificará al elemento primario después de borrar un elemento. Esto solo se puede usar si **dwDrawStage** es igual a CDDS \_ PREERASE.<br/>                                  |
+| <dl> <dt>**CDRF \_ NOTIFYPOSTPAINT**</dt> </dl> | El control notificará al elemento primario después de pintar un elemento. Esto solo se puede usar si **dwDrawStage** es igual a PREPAINT de \_ CDDS.<br/>                                 |
+| <dl> <dt>**CDRF \_ SKIPDEFAULT**</dt> </dl>     | La aplicación ha dibujado el elemento manualmente. El control no dibujará el elemento. Se puede usar cuando **dwDrawStage** es igual a PREERASE de CDDS \_ o PREPAINT de CDDS. \_<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el control de botón está marcado como OwnerDraw (BS \_ OwnerDraw), el código de notificación de nm \_ CUSTOMDRAW no se envía.
+Si el control de botón está marcado como ownerdraw (BS OWNERDRAW), no se envía el código de notificación \_ \_ NM CUSTOMDRAW.
 
-Consulte [uso de Draw personalizado](custom-draw.md) para obtener más información.
+Consulte [Uso del dibujo personalizado para](custom-draw.md) obtener más información.
 
 > [!Note]  
-> Para usar este código de notificación, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este código de notificación, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -80,9 +80,9 @@ Consulte [uso de Draw personalizado](custom-draw.md) para obtener más informaci
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                      |
+| Header<br/>                   | <dl> <dt>Commctrl.h (incluir Windows.h)</dt> </dl> |
 
 
 

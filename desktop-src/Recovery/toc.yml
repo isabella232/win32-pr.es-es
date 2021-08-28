@@ -1,12 +1,12 @@
 - name: Recuperación y reinicio de aplicaciones
   href: application-recovery-and-restart-portal.md
   items:
-    - name: Uso de la recuperación y reinicio de aplicaciones
+    - name: Uso de la recuperación y el reinicio de aplicaciones
       href: using-application-recovery-and-restart.md
       items:
-        - name: Registro para la recuperación de la aplicación
+        - name: Registro para Application Recovery
           href: registering-for-application-recovery.md
-        - name: Registrando el reinicio de la aplicación
+        - name: Registro para el reinicio de la aplicación
           href: registering-for-application-restart.md
     - name: Referencia de recuperación y reinicio de aplicaciones
       href: application-recovery-and-restart-reference.md

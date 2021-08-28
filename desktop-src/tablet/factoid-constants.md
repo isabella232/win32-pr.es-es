@@ -4,12 +4,12 @@ ms.assetid: 247a1f7d-8205-4e4d-9cfc-daad9bd2191f
 title: Constantes factoid (Ms ashut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa748c84f8bd39f18f83e1ec72474bcfbe3017f2
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: c84b2d24135d8461c8b70db043ed8b2c7940cb61
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122883674"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471121"
 ---
 # <a name="factoid-constants"></a>Constantes factoid
 
@@ -58,7 +58,7 @@ Define valores de cadena constante que se usan para aumentar la precisión del r
 
 ## <a name="remarks"></a>Comentarios
 
-En C++, puede acceder a estas constantes en el archivo de encabezado Ms ldaput.h, que se encuentra en el directorio systemdrive : Archivos de programa del SDK de la plataforma de PC para tabletas de Microsoft si instaló el SDK en la ubicación &lt; &gt; \\ \\ \\ predeterminada.
+En C++, puede acceder a estas constantes en el archivo de encabezado Ms ldaput.h, que se encuentra en el directorio : Archivos de programa del SDK de la plataforma de PC para tabletas de Microsoft si instaló el SDK en la ubicación <systemdrive> \\ \\ \\ predeterminada.
 
 > [!Note]  
 > Estas constantes son WCHAR, no BSTR. Deben convertirse en BSTR antes de usarlos como parámetros para los métodos de objeto. Para obtener más información sobre el tipo de datos BSTR, vea [Usar la biblioteca COM](using-the-com-library.md).
@@ -79,8 +79,8 @@ Las siguientes combinaciones de factoids solo se admiten en idiomas del oeste. N
 | Combinación               | Definición                                                |
 |---------------------------|-----------------------------------------------------------|
 | "WEB \| WORDLIST"           | El elemento factoid web o la lista de palabras.                         |
-| "EMAIL \| WORDLIST"         | El factoid de correo electrónico o la lista de palabras.                       |
-| "FILENAME \| WEB \| WORDLIST" | El factoid nombre de archivo, el factoid web o la lista de palabras. |
+| "EMAIL \| WORDLIST"         | El elemento Factoid de correo electrónico o la lista de palabras.                       |
+| "FILENAME \| WEB \| WORDLIST" | El factoid de nombre de archivo, el factoid web o la lista de palabras. |
 
 
 
@@ -88,12 +88,12 @@ Las siguientes combinaciones de factoids solo se admiten en idiomas del oeste. N
 
 Si usa el control [InkEdit,](inkedit-control-reference.md) el factoid se puede establecer como una propiedad del control .
 
-Si usa las API de la plataforma de Tablet PC, puede establecer la propiedad [**Factoid**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid) en un [**objeto InkRecognizerContext.**](inkrecognizercontext-class.md)
+Si usa las API de la plataforma de Tablet PC, puede establecer la [**propiedad Factoid**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid) en un [**objeto InkRecognizerContext.**](inkrecognizercontext-class.md)
 
 Como alternativa, puede establecer esta propiedad con la constante de cadena factoid real.
 
 > [!Note]  
-> Las constantes de cadena factoid distinguen mayúsculas de minúsculas. Para obtener más información sobre los factoids y cómo usarlos, vea Usar contexto para [mejorar la precisión.](using-context-to-improve-accuracy.md) Para determinar si un factoid está disponible en un lenguaje específico, consulte [Supported Factoids from Version 1 ( Factoids admitidos de la versión 1).](supported-factoids-from-version-1.md)
+> Las constantes de cadena factoid distinguen mayúsculas de minúsculas. Para obtener más información sobre factoids y cómo usarlos, vea Usar contexto para [mejorar la precisión.](using-context-to-improve-accuracy.md) Para determinar si un factoid está disponible en un lenguaje específico, vea [Supported Factoids from Version 1 (Factoids admitidos de la versión 1).](supported-factoids-from-version-1.md)
 
  
 
@@ -103,13 +103,13 @@ Como alternativa, puede establecer esta propiedad con la constante de cadena fac
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -119,7 +119,7 @@ Como alternativa, puede establecer esta propiedad con la constante de cadena fac
 [**Factoid Property \[ PenInputPanel (clase)\]**](/windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_factoid)
 </dt> <dt>
 
-[**Propiedad Factoid \[ InkEdit (control)\]**](/windows/desktop/api/inked/nf-inked-iinkedit-get_factoid)
+[**Propiedad Factoid \[ InkEdit (Control)\]**](/windows/desktop/api/inked/nf-inked-iinkedit-get_factoid)
 </dt> <dt>
 
 [Uso del contexto para mejorar la precisión](using-context-to-improve-accuracy.md)

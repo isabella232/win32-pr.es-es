@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6f97c89142e43691c91b2a4c0d04721d9112ed49
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 266e67bc0d177aef592024236c87ab49c26cb81ef2264b4dde234232a3509006
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812775"
 ---
 # <a name="ctransinplaceinputpinctransinplaceinputpin-constructor"></a>Constructor CTransInPlaceInputPin.CTransInPlaceInputPin
 
@@ -62,7 +62,7 @@ Puntero al filtro que creó este pin, que debe ser [**un objeto CTransInPlaceFil
 *Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método. Inicialice el valor en S \_ OK antes de crear el objeto . El valor solo se cambia si se produce un error.
+Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método. Inicialice el valor en S \_ OK antes de crear el objeto. El valor solo se cambia si se produce un error.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Cadena de caracteres anchos que contiene el nombre del pin.
 
 ## <a name="remarks"></a>Comentarios
 
-El *parámetro pName* especifica el nombre del pin, que devuelve el [**método IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) Sin embargo, esta cadena no se usa para el identificador de pin. El identificador de pin de esta clase siempre es In. Para obtener más información, [**vea CTransformInputPin::QueryId**](ctransforminputpin-queryid.md).
+El *parámetro pName* especifica el nombre del pin, que devuelve el [**método IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) Sin embargo, esta cadena no se usa para el identificador de pin. El identificador de pin de esta clase es siempre In. Para obtener más información, [**vea CTransformInputPin::QueryId**](ctransforminputpin-queryid.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,12 +83,12 @@ El *parámetro pName* especifica el nombre del pin, que devuelve el [**método I
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

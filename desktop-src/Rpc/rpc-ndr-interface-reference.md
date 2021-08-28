@@ -1,80 +1,80 @@
 ---
-title: Referencia de la interfaz NDR de RPC
-description: Microsoft RPC NDR actualmente admite las siguientes funciones y estructuras
+title: Referencia de la interfaz RPC RPC
+description: Microsoft RPC RPC RPC admite actualmente las siguientes funciones y estructuras
 ms.assetid: 2EBB2DD6-60DD-4C9F-9F79-231383B28517
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a802720c584d08112c733135c3bb5640e7679c9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b5f1d7aa19cff36da67e807a671ec176c0d303610f5c0f6629940d5e132f47ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073355"
 ---
-# <a name="rpc-ndr-interface-reference"></a>Referencia de la interfaz NDR de RPC
+# <a name="rpc-ndr-interface-reference"></a>Referencia de la interfaz RPC RPC
 
-Microsoft RPC NDR actualmente admite las siguientes funciones y estructuras:
+Microsoft RPC RPC RPC admite actualmente las siguientes funciones y estructuras:
 
--   [**\_AddRef CStdStubBuffer**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_addref)
--   [**Conexión de CStdStubBuffer \_**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_connect)
+-   [**AddRef de CStdStubBuffer \_**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_addref)
+-   [**CStdStubBuffer \_ Conectar**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_connect)
 -   [**CStdStubBuffer \_ CountRefs**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_countrefs)
 -   [**CStdStubBuffer \_ DebugServerQueryInterface**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_debugserverqueryinterface)
 -   [**CStdStubBuffer \_ DebugServerRelease**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_debugserverrelease)
--   [**Desconexión de CStdStubBuffer \_**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_disconnect)
--   [**CStdStubBuffer \_ Invoke**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_invoke)
+-   [**CStdStubBuffer \_ Disconnect**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_disconnect)
+-   [**Invocación de CStdStubBuffer \_**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_invoke)
 -   [**CStdStubBuffer \_ IsIIDSupported**](/windows/desktop/api/RpcProxy/nf-rpcproxy-cstdstubbuffer_isiidsupported)
 -   [**CStdStubBuffer \_ QueryInterface**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-cstdstubbuffer_queryinterface)
--   [**\_Proxy AddRef de IUnknown \_**](/windows/desktop/api/unknwnbase/nf-unknwnbase-iunknown_addref_proxy)
--   [**Proxy de IUnknown \_ QueryInterface \_**](/windows/desktop/api/unknwnbase/nf-unknwnbase-iunknown_queryinterface_proxy)
--   [**\_Proxy de versión IUnknown \_**](/windows/desktop/api/unknwnbase/nf-unknwnbase-iunknown_queryinterface_proxy)
--   [**NdrAsyncClientCall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrasyncclientcall)
--   [**NdrClearOutParameters**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrclearoutparameters)
--   [**NdrClientCall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrclientcall)
--   [**NdrClientCall2**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrclientcall2)
--   [**NdrConformantArrayUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantarrayunmarshall)
--   [**NdrConformantStringBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantstringbuffersize)
--   [**NdrConformantStringMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantstringmarshall)
--   [**NdrConformantStringUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantstringunmarshall)
--   [**NdrContextHandleInitialize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcontexthandleinitialize)
--   [**NdrContextHandleSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcontexthandlesize)
--   [**NdrContextHandleMemorySize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcontexthandlememorysize)
--   [**NdrConvert**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconvert)
--   [**Versión de NdrCStdStubBuffer \_**](/previous-versions/aa374242(v=vs.80))
--   [**Versión de NdrCStdStubBuffer2 \_**](/previous-versions/aa374240(v=vs.80))
--   [**NdrDllCanUnloadNow**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrdllcanunloadnow)
--   [**NdrDllGetClassObject**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrdllgetclassobject)
--   [**NdrDllRegisterProxy**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrdllregisterproxy)
--   [**NdrDllUnregisterProxy**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrdllunregisterproxy)
--   [**NdrGetUserMarshalInfo**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrgetusermarshalinfo)
--   [**NdrInterfacePointerBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrinterfacepointerbuffersize)
--   [**NdrInterfacePointerFree**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrinterfacepointerfree)
--   [**NdrInterfacePointerMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrinterfacepointermarshall)
--   [**NdrInterfacePointerUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrinterfacepointerunmarshall)
--   [**NdrOleAllocate**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndroleallocate)
--   [**NdrOleFree**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrolefree)
--   [**NdrPointerBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrpointerbuffersize)
--   [**NdrPointerFree**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrpointerfree)
--   [**NdrPointerMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrpointermarshall)
--   [**NdrPointerUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrpointerunmarshall)
--   [**NdrProxyErrorHandler**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrproxyerrorhandler)
--   [**NdrProxyFreeBuffer**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrproxyfreebuffer)
--   [**NdrProxyGetBuffer**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrproxygetbuffer)
--   [**NdrProxyInitialize**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrproxyinitialize)
--   [**NdrProxySendReceive**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrproxysendreceive)
--   [**NdrSimpleTypeMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrsimpletypemarshall)
--   [**NdrSimpleTypeUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrsimpletypeunmarshall)
--   [**NdrStubCall2**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrstubcall2)
--   [**NdrStubForwardingFunction**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrstubforwardingfunction)
--   [**NdrStubGetBuffer**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrstubgetbuffer)
--   [**NdrStubInitialize**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrstubinitialize)
--   [**NdrUserMarshalBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrusermarshalbuffersize)
--   [**NdrUserMarshalFree**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrusermarshalfree)
--   [**NdrUserMarshalMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrusermarshalmarshall)
--   [**\_código auxiliar de MIDL \_ DESC**](/windows/desktop/api/Rpcndr/ns-rpcndr-midl_stub_desc)
--   [**\_mensaje de código auxiliar de MIDL \_**](/windows/desktop/api/Rpcndr/ns-rpcndr-midl_stub_message)
+-   [**IUnknown \_ AddRef \_ Proxy**](/windows/desktop/api/unknwnbase/nf-unknwnbase-iunknown_addref_proxy)
+-   [**IUnknown \_ QueryInterface \_ Proxy**](/windows/desktop/api/unknwnbase/nf-unknwnbase-iunknown_queryinterface_proxy)
+-   [**IUnknown \_ Release \_ Proxy**](/windows/desktop/api/unknwnbase/nf-unknwnbase-iunknown_queryinterface_proxy)
+-   [**AsyncAsyncClientCall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrasyncclientcall)
+-   [**ClearClearOutParameters**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrclearoutparameters)
+-   [**ClientCall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrclientcall)
+-   [**ClientCall2**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrclientcall2)
+-   [**ComposiciónConformantArrayUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantarrayunmarshall)
+-   [**CoherenciaConformantStringBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantstringbuffersize)
+-   [**CoherenciaConformantStringMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantstringmarshall)
+-   [**CoherenciaConformantStringUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantstringunmarshall)
+-   [**ContextContextHandleInitialize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcontexthandleinitialize)
+-   [**ContextContextHandleSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcontexthandlesize)
+-   [**ContextContextHandleMemorySize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcontexthandlememorysize)
+-   [**ConvertConvert**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconvert)
+-   [**Versión de MatrizCStdStubBuffer \_**](/previous-versions/aa374242(v=vs.80))
+-   [**Versión de MatrizCStdStubBuffer2 \_**](/previous-versions/aa374240(v=vs.80))
+-   [**UngDllCanUnloadNow**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrdllcanunloadnow)
+-   [**BandDllGetClassObject**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrdllgetclassobject)
+-   [**FenDllRegisterProxy**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrdllregisterproxy)
+-   [**UngDllUnregisterProxy**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrdllunregisterproxy)
+-   [**GetGetUserMarshalInfo**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrgetusermarshalinfo)
+-   [**InterfaceInterfacePointerBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrinterfacepointerbuffersize)
+-   [**InterfaceInterfacePointerFree**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrinterfacepointerfree)
+-   [**InterfaceInterfacePointerMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrinterfacepointermarshall)
+-   [**InterfaceInterfacePointerUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrinterfacepointerunmarshall)
+-   [**OleOleAllocate**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndroleallocate)
+-   [**OleOleFree**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrolefree)
+-   [**MatrizPointerBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrpointerbuffersize)
+-   [**FreePointerFree**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrpointerfree)
+-   [**PointerMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrpointermarshall)
+-   [**UngPointerUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrpointerunmarshall)
+-   [**ProxyErrorHandler**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrproxyerrorhandler)
+-   [**ProxyFreeBuffer**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrproxyfreebuffer)
+-   [**ProxyGetBuffer**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrproxygetbuffer)
+-   [**ProxyInitialize**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrproxyinitialize)
+-   [**ProxySendReceive**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrproxysendreceive)
+-   [**SimpleTypeMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrsimpletypemarshall)
+-   [**SimpleTypeUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrsimpletypeunmarshall)
+-   [**BandStubCall2**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrstubcall2)
+-   [**FunctionStubForwardingFunction**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrstubforwardingfunction)
+-   [**BufferStubGetBuffer**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrstubgetbuffer)
+-   [**BandStubInitialize**](/windows/desktop/api/Rpcproxy/nf-rpcproxy-ndrstubinitialize)
+-   [**UserUserMarshalBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrusermarshalbuffersize)
+-   [**UserUserMarshalFree**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrusermarshalfree)
+-   [**UserUserMarshalMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrusermarshalmarshall)
+-   [**MIDL \_ STUB \_ DESC**](/windows/desktop/api/Rpcndr/ns-rpcndr-midl_stub_desc)
+-   [**MENSAJE DE \_ CÓDIGO AUXILIAR \_ MIDL**](/windows/desktop/api/Rpcndr/ns-rpcndr-midl_stub_message)
 -   [**ProxyFileInfo**](/windows/win32/api/rpcproxy/ns-rpcproxy-proxyfileinfo)
--   [**\_mensaje RPC**](/windows/desktop/api/RpcdceP/ns-rpcdcep-rpc_message)
+-   [**MENSAJE \_ RPC**](/windows/desktop/api/RpcdceP/ns-rpcdcep-rpc_message)
 
- 
+ 
 
- 
+ 

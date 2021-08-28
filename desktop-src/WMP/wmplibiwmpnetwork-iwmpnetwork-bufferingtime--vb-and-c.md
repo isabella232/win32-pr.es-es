@@ -1,11 +1,11 @@
 ---
-title: Propiedad bufferingTime de IWMPNetwork
-description: La propiedad bufferingTime obtiene o establece la cantidad de tiempo en milisegundos asignados para almacenar en búfer los datos entrantes antes de que empiece la reproducción.
+title: Propiedad IWMPNetwork bufferingTime
+description: La propiedad bufferingTime obtiene o establece la cantidad de tiempo en milisegundos asignada para almacenar en búfer los datos entrantes antes de que comience la reproducción.
 ms.assetid: b5936b21-a17b-4801-a5fc-c6d6521e05aa
 keywords:
-- propiedades de bufferingTime Media Player de Windows
-- propiedad bufferingTime de Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, propiedad bufferingTime
+- bufferingTime, propiedad Reproductor de Windows Media
+- Propiedad bufferingTime Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , propiedad bufferingTime
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8594d53797b028dd74a8ef11cb8f2fa64b3654cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d224e35dd9c87dad627e71f2ae07d3d0b9e24ee1b094cfa5dea549e86c69a65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999995"
 ---
-# <a name="iwmpnetworkbufferingtime-property"></a>IWMPNetwork:: bufferingTime (propiedad)
+# <a name="iwmpnetworkbufferingtime-property"></a>Propiedad IWMPNetwork::bufferingTime
 
-La propiedad **bufferingTime** obtiene o establece la cantidad de tiempo en milisegundos asignados para almacenar en búfer los datos entrantes antes de que empiece la reproducción.
+La **propiedad bufferingTime** obtiene o establece la cantidad de tiempo en milisegundos asignada para almacenar en búfer los datos entrantes antes de que comience la reproducción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,11 +46,11 @@ Public Property bufferingTime As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el tiempo de almacenamiento en milisegundos, que oscila entre cero y 60.000 con un valor predeterminado de 5.000.
+**System.Int32 que** es el tiempo de almacenamiento en búfer en milisegundos, que oscila entre cero y 60 000 con un valor predeterminado de 5000.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **bufferingTime** para especificar el número de segundos asignados para almacenar en búfer los datos entrantes. Un cuadro de texto permite al usuario especificar un nuevo valor para **bufferingTime**, y la propiedad se actualiza en respuesta al evento click de un botón. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se **usa bufferingTime para** especificar el número de segundos asignados para almacenar en búfer los datos entrantes. Un cuadro de texto permite al usuario escribir un nuevo valor para **bufferingTime** y la propiedad se actualiza en respuesta al evento Click de un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -105,7 +105,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

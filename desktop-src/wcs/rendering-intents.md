@@ -1,81 +1,81 @@
 ---
 title: Intenciones de representación
-description: El International color Consortium (ICC) ha definido cuatro valores distintos denominados representación del intents.
+description: International Color Consortium (ICC) ha definido cuatro valores diferentes denominados intenciones de representación.
 ms.assetid: c980f3ea-daff-491a-a10a-03ba446d383e
 keywords:
-- Sistema de color de Windows (WCS), representación de intenciones
-- WCS (sistema de colores de Windows), representación de intenciones
-- Administración del color de imagen, representación de intenciones
-- Administración del color, representación de intenciones
-- colores, representación de intenciones
-- representación de intenciones
+- Windows Sistema de colores (WCS), intenciones de representación
+- WCS (Windows color), intenciones de representación
+- administración del color de imagen, intenciones de representación
+- administración de colores, intenciones de representación
+- colors,rendering intents
+- intenciones de representación
 - International Color Consortium (ICC)
-- IIC (International color Consortium)
-- Intento de imagen
-- Intención de gráficos
-- Intento de prueba
-- Intento de coincidencia
+- IIC (International Color Consortium)
+- Intención de imagen
+- Intención gráfica
+- Intención de prueba
+- Coincidencia de intención
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72df148cf4c439c8081e41f3eb8089c5588e7fe2
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 7f25159eaa50a9d7d28b582d72401da116f729af38f57f99a9ccaf5bb3877c85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105721385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117670788"
 ---
 # <a name="rendering-intents"></a>Intenciones de representación
 
-El International color Consortium (ICC) ha definido cuatro valores distintos denominados *representación del intents*. Representan cuatro enfoques diferentes para crear una representación de color. Estas cuatro intenciones y las constantes que se usan para hacer referencia a ellas en el código son las siguientes.
+International Color Consortium (ICC) ha definido cuatro valores diferentes denominados *intenciones de representación.* Representan cuatro enfoques diferentes para crear una representación de color. Estas cuatro intenciones y las constantes usadas para hacer referencia a ellas en el código son las siguientes.
 
 
 
-| Intención                            | Nombre de ICC              | Descripción                    |
+| Intención                            | Nombre DE LA CPI              | Descripción                    |
 |-----------------------------------|-----------------------|--------------------------------|
-| Imagen | Perceptual            | INTENCIÓN \_ perceptual             |
-| Graphic | Saturación            | saturación de intención \_             |
-| Prueba     | Colorimétrico relativo | \_referencia \_ colorimétrica relativa |
-| Match     | Colorimétrico absoluto | INTENCIÓN \_ absoluta \_ colorimétrica |
+| Imagen | Perceptivo            | \_PERCEPTUAL DE INTENCIÓN             |
+| Graphic | Saturación            | SATURACIÓN \_ DE INTENCIÓN             |
+| Prueba     | Colorimétrico relativo | \_ \_ COLORIMETRIC RELATIVO DE INTENCIÓN |
+| Match     | Colorimétrico absoluto | \_ \_ COLORIMETRIC ABSOLUTO DE INTENCIÓN |
 
 
 
 
  
 
-La especificación de formato de Perfil de ICC versión 3,4, que describe estas intenciones, se puede descargar desde color.org.
+La especificación de formato de perfil DE LA VERSIÓN 3.4, que describe estas intenciones, se puede descargar desde color.org.
 
-## <a name="picture-intent"></a>Intento de imagen
+## <a name="picture-intent"></a>Intención de imagen
 
-Llamada perceptual en la cláusula 4,9 de la especificación de ICC, una intención de imagen hace que la [gama](./g.md) completa de la imagen se comprima o se expanda para rellenar la gama del dispositivo de destino, de modo que se conserve el equilibrio de gris, pero no se conserve la precisión de la colorimétrico.
+Llamada intención perceptual en la cláusula 4.9 de [](./g.md) la especificación DE ACUERDO, una intención Picture hace que la gama completa de la imagen se comprima o expanda para rellenar la gama del dispositivo de destino, de modo que se conserve el equilibrio de grises pero no se conserve la precisión colorimétrica.
 
-En otras palabras, si ciertos colores de una imagen quedan fuera del intervalo de colores que el dispositivo de salida puede representar, el intento de imagen hará que se ajusten todos los colores de la imagen para que todos los colores de la imagen se encuentren dentro del intervalo que se puede representar y para que la relación entre los colores se conserve lo máximo posible.
+En otras palabras, si determinados colores de una imagen quedan fuera del intervalo de colores que puede representar el dispositivo de salida, la intención de la imagen hará que todos los colores de la imagen se ajusten para que todos los colores de la imagen se encuentran dentro del intervalo que se puede representar y para que la relación entre los colores se conserve tanto como sea posible.
 
-Esta intención es más adecuada para la presentación de fotografías e imágenes, y suele ser la intención predeterminada.
+Esta intención es más adecuada para mostrar fotografías e imágenes, y suele ser la intención predeterminada.
 
-## <a name="graphic-intent"></a>Intención de gráficos
+## <a name="graphic-intent"></a>Intención gráfica
 
-La cláusula 4,12 de la especificación de ICC llama al gráfico como intención de [saturación](s.md) . Conserva el croma de los colores de la imagen con el posible gasto de [matiz](h.md) y [luminosidad](l.md).
+La cláusula de especificación 4.12 DE LA CLÁUSULA DE LA CLÁUSULA 4.12 llama a la intención Gráfico una intención [de saturación.](s.md) Conserva la capa de colores de la imagen [](h.md) a costa de la matiz [y la lumíz posibles.](l.md)
 
-La implementación de esta intención sigue siendo problemática y el ICC sigue trabajando en métodos para lograr los efectos deseados.
+La implementación de esta intención sigue siendo un poco problemática y LA CPI sigue trabajando en métodos para lograr los efectos deseados.
 
-Esta intención es más adecuada para los gráficos empresariales, como los gráficos, donde es más importante que los colores sean intensos y contrasten bien entre sí, en lugar de con un color específico.
+Esta intención es más adecuada para gráficos empresariales, como gráficos, en los que es más importante que los colores sean muy claros y contrasten bien entre sí, en lugar de un color específico.
 
-## <a name="proof-intent"></a>Intento de prueba
+## <a name="proof-intent"></a>Intención de prueba
 
-El intento de prueba, denominado el intento de colorimétrica en la especificación de ICC, se define de forma que los colores que se encuentran fuera del intervalo que el dispositivo de salida pueda representar se ajusten al color más cercano que se puede representar, mientras que todos los demás colores quedan inalterados.
+La intención Proof, denominada intención colorimétrica en la especificación DE C#, se define de forma que los colores que se encuentran fuera del intervalo que puede representar el dispositivo de salida se ajusten al color más cercano que se puede representar, mientras que el resto de colores se mantienen sin cambios.
 
-El intento de prueba no conserva el [punto blanco](w.md).
+La intención de prueba no conserva el [punto blanco](w.md).
 
-Por ejemplo, el blanco más blanco de un papel es más amarillo que el blanco más blanco de un monitor de equipo. Una imagen convertida en la gama de la impresora con la intención colorimétrico relativo haría que todos los colores se convirtieran en más amarillo. El punto blanco de la imagen se mueve para que coincida con el punto blanco de la impresora. Todos los demás colores de la imagen mantienen su posición en relación con el punto blanco. Esto produce una imagen que refleja con más precisión el aspecto que tendrá la imagen impresa. Sin embargo, el usuario puede encontrarla desconcertado visualmente.
+Por ejemplo, el blanco más blanco de un papel es más amarillo que el blanco más blanco de un monitor de equipo. Una imagen convertida en la gama de la impresora con intención colorimétrica relativa daría lugar a que todos los colores se vuelvan más amarillos. El punto blanco de la imagen se mueve para que coincida con el punto blanco de la impresora. Todos los demás colores de la imagen mantienen su posición con respecto al punto blanco. Esto genera una imagen que refleja con mayor precisión el aspecto de la imagen impresa. Sin embargo, es posible que el usuario lo encuentre visualmente desconcertante.
 
-## <a name="match-intent"></a>Intento de coincidencia
+## <a name="match-intent"></a>Intención de coincidencia
 
-En un intento de coincidencia, los colores que se encuentran fuera del intervalo que el dispositivo de salida puede representar se ajustan al color más cercano que se puede representar, mientras que todos los demás colores permanecen inalterados. La especificación ICC llama al intento de coincidencia de la intención de colorimétrico absoluto.
+En una intención Match, los colores que se encuentran fuera del intervalo que puede representar el dispositivo de salida se ajustan al color más cercano que se puede representar, mientras que todos los demás colores se mantienen sin cambios. La especificación DECN llama a la intención de coincidencia intención colorimétrica absoluta.
 
 La intención de coincidencia conserva el punto blanco.
 
-Por ejemplo, el blanco más blanco de un papel es más amarillo que el blanco más blanco de un monitor de equipo. Una imagen convertida en la [gama](./g.md) de la impresora con la intención de coincidencia haría que todos los colores se convirtieran y coincidían con la gama de la impresora. El punto blanco de la imagen no se mueve para que coincida con el punto blanco de la impresora. Por lo tanto, la distancia de los colores al punto blanco puede cambiar. Esto produce una imagen que es menos visualmente disparando al usuario, pero también es una representación menos precisa de la salida de la impresora.
+Por ejemplo, el blanco más blanco de un papel es más amarillo que el blanco más blanco de un monitor de equipo. Una imagen convertida en la [gama](./g.md) de la impresora mediante la intención de coincidencia daría lugar a que todos los colores se conviertan y coincidan con la gama de la impresora. El punto blanco de la imagen no se mueve para que coincida con el punto blanco de la impresora. Por lo tanto, la distancia de los colores hasta el punto blanco puede cambiar. Esto genera una imagen que es menos desconcertante visualmente para el usuario, pero también es una representación menos precisa de la salida de la impresora.
 
  
 

@@ -4,12 +4,12 @@ description: El área de notificación proporciona notificaciones y estado. Los 
 ms.assetid: d30e293f-b424-4fe3-8191-1692c081245d
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: c580d80bd95684cc80dc24e59273553f4a08e11f
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 48550b37068b44c83254f09983b68f9881845c6a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985458"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471701"
 ---
 # <a name="notification-area"></a>Área de notificación
 
@@ -18,7 +18,7 @@ ms.locfileid: "122985458"
 
 El área de notificación proporciona notificaciones y estado. Los programas bien diseñados usan el área de notificación adecuadamente, sin ser molestos ni distraer.
 
-El área de notificación es una parte de la barra de tareas que proporciona un origen temporal para las notificaciones y el estado. También se puede usar para mostrar iconos para las características del sistema y del programa que no tienen ninguna presencia en el escritorio.
+El área de notificación es una parte de la barra de tareas que proporciona un origen temporal para las notificaciones y el estado. También se puede usar para mostrar iconos para las características del sistema y del programa que no tienen presencia en el escritorio.
 
 Los elementos del área de notificación se conocen como iconos de área de notificación o simplemente iconos si el contexto del área de notificación ya está claramente establecido.
 
@@ -26,20 +26,20 @@ Los elementos del área de notificación se conocen como iconos de área de noti
 
 Área de notificación.
 
-Para proporcionar a los usuarios el control de su escritorio Windows 7, no todos los iconos del área de notificación se muestran de forma predeterminada. En su lugar, los iconos se muestran en el desbordamiento del área de notificación, a menos que el usuario lo promueve al área de notificación.
+Para proporcionar a los usuarios el control de su escritorio Windows 7, no todos los iconos del área de notificación se muestran de forma predeterminada. En su lugar, los iconos se muestran en el desbordamiento del área de notificación a menos que el usuario la promueve al área de notificación.
 
 ![Captura de pantalla que muestra un área de notificación y un desbordamiento.](images/winenv-notification-image2.png)
 
 Desbordamiento del área de notificación.
 
-**Nota:** Las instrucciones relacionadas con la [barra de](winenv-taskbar.md)tareas, [las notificaciones](mess-notif.md) y los globos se presentan en [artículos](ctrl-balloons.md) independientes.
+**Nota:** Las directrices relacionadas con [la barra de](winenv-taskbar.md)tareas, las [notificaciones](mess-notif.md) y los globos se presentan en [artículos](ctrl-balloons.md) independientes.
 
 ## <a name="is-this-the-right-user-interface"></a>¿Es la interfaz de usuario adecuada?
 
 Para decidirte, intenta responder a estas preguntas:
 
 -   **¿El programa necesita mostrar una notificación?** Si es así, debe usar un icono de área de notificación.
--   **¿Se muestra el icono temporalmente para mostrar un cambio de estado?** Si es así, un icono de área de notificación puede ser adecuado, en función de los siguientes factores:
+-   **¿Se muestra temporalmente el icono para mostrar un cambio de estado?** Si es así, un icono de área de notificación puede ser adecuado, en función de los siguientes factores:
 
     -   **¿El estado es útil y pertinente?** Es decir, ¿es probable que los usuarios supervisen el icono y cambien su comportamiento como resultado de esta información? Si no es así, no muestra el estado o lo coloca en un archivo de registro.
 
@@ -47,22 +47,22 @@ Para decidirte, intenta responder a estas preguntas:
 
         ![captura de pantalla del área de notificación con el icono de unidad ](images/winenv-notification-image3.png)
 
-        En este ejemplo, el icono de actividad de la unidad de disco no es adecuado porque es poco probable que los usuarios cambien su comportamiento en función de él.
+        En este ejemplo, el icono de actividad de unidad de disco es inadecuado porque es poco probable que los usuarios cambien su comportamiento en función de él.
 
-    -   **¿El estado es crítico? ¿Se requiere una acción inmediata?** Si es así, muestre la información de forma que exija atención y no se pueda omitir fácilmente, como un cuadro [de diálogo](win-dialog-box.md).
+    -   **¿Es crítico el estado? ¿Se requiere una acción inmediata?** Si es así, muestre la información de forma que exija atención y no se pueda omitir fácilmente, como un cuadro [de diálogo](win-dialog-box.md).
 
     Los programas diseñados para Windows 7 pueden usar iconos superpuestos en el botón de la barra de tareas del programa para mostrar el cambio de estado, así como barras de progreso del botón de la barra de tareas para mostrar el progreso de las tareas de ejecución larga.
 
--   **¿La característica ya tiene "presencia de escritorio"?** Es decir, cuando se ejecuta, ¿la característica aparece en una ventana del escritorio (posiblemente minimizada)? Si es así, muestre el estado en la barra de estado del [programa,](ctrl-status-bars.md)en otra área de estado o, para Windows 7, directamente en el botón de la barra de tareas. Si la característica no tiene presencia de escritorio, puede usar un icono para el acceso al programa y para mostrar el estado.
--   **¿El icono es principalmente para iniciar un programa o acceder rápidamente a sus características o configuraciones?** Si es así, use el menú Inicio para iniciar programas en su lugar. El área de notificación no está pensada para el acceso rápido a programas o comandos.
+-   **¿La característica ya tiene "presencia de escritorio"?** Es decir, cuando se ejecuta, ¿aparece la característica en una ventana del escritorio (posiblemente minimizada)? Si es así, muestre el estado en la barra de estado del [programa,](ctrl-status-bars.md)en otro área de estado o, para Windows 7, directamente en el botón de la barra de tareas. Si la característica no tiene presencia en el escritorio, puede usar un icono para el acceso al programa y para mostrar el estado.
+-   **¿Es el icono principalmente para iniciar un programa o acceder rápidamente a sus características o configuraciones?** Si es así, use la menú Inicio para iniciar programas en su lugar. El área de notificación no está pensada para el acceso rápido a programas o comandos.
 
     ![captura de pantalla de la barra de herramientas de inicio rápido ](images/winenv-notification-image4.png)
 
-    En este ejemplo de Windows Vista, inicio rápido se usa para iniciar Windows explorador y Windows Internet Explorer rápidamente.
+    En este ejemplo de Windows Vista, inicio rápido se usa para iniciar Windows Explorer y Windows Internet Explorer rápidamente.
 
-    Para los programas diseñados para Windows 7, los usuarios pueden anclar botones de la barra de tareas para un acceso rápido al programa. Los programas pueden usar una barra Lista de accesos directos o una barra de herramientas en miniatura para acceder a los comandos usados con frecuencia directamente desde el botón de la barra de herramientas de un programa. El inicio rápido no se muestra de forma predeterminada en Windows 7.
+    Para los programas diseñados para Windows 7, los usuarios pueden anclar botones de la barra de tareas para un acceso rápido al programa. Los programas pueden usar una barra Lista de accesos directos o miniatura para acceder a los comandos usados con frecuencia directamente desde el botón de la barra de herramientas de un programa. El inicio rápido no se muestra de forma predeterminada en Windows 7.
 
-    ![captura de pantalla de la barra de tareas y la lista de accesos con iconos ](images/winenv-notification-image5.png)
+    ![captura de pantalla de la barra de tareas y la lista de saltos con iconos ](images/winenv-notification-image5.png)
 
     En este ejemplo, se usa Lista de accesos directos para el acceso rápido a comandos.
 
@@ -73,54 +73,54 @@ Para decidirte, intenta responder a estas preguntas:
 El Windows escritorio tiene los siguientes puntos de acceso del programa:
 
 -   **Área de trabajo.** Área en pantalla donde los usuarios pueden realizar su trabajo, así como almacenar programas, documentos y sus accesos directos. Aunque técnicamente el escritorio incluye la barra de tareas, en la mayoría de los contextos hace referencia solo al área de trabajo.
--   **botón Inicio.** Punto de acceso para todos los programas y lugares Windows especiales (Documentos, Imágenes, Música, Juegos, Equipo, Panel de control), con listas "usadas más recientemente" para el acceso rápido a los documentos y programas usados recientemente.
+-   **botón Inicio.** Punto de acceso para todos los programas y lugares Windows especiales (Documentos, Imágenes, Música, Juegos, Equipo, Panel de control), con listas "usadas más recientemente" para acceder rápidamente a los documentos y programas usados recientemente.
 -   **inicio rápido.** Un punto de acceso directo para los programas seleccionados por el usuario. inicio rápido se quitó de Windows 7.
--   **Barra.** Punto de acceso para ejecutar programas que tienen presencia en el escritorio. Aunque técnicamente la barra de tareas abarca toda la barra desde el botón Inicio hasta el área de notificación, en la mayoría de los contextos, la barra de tareas hace referencia al área entre ellos, que contiene los botones de la barra de tareas. Esta área se conoce a veces como la banda de tareas.
--   **Cintas de escritorio. No se recomienda.**
+-   **Barra.** Punto de acceso para ejecutar programas que tienen presencia en el escritorio. Aunque técnicamente la barra de tareas abarca toda la barra desde el botón Inicio hasta el área de notificación, en la mayoría de los contextos, la barra de tareas hace referencia al área entre, que contiene los botones de la barra de tareas. Esta área se conoce a veces como la banda de tareas.
+-   **Deskbands. No se recomienda.**
 -   **Área de notificación.** Un origen a corto plazo para las notificaciones y el estado, así como un punto de acceso para las características relacionadas con el sistema y el programa que no tienen presencia en el escritorio.
 
 ![captura de pantalla que identifica los puntos de acceso de escritorio ](images/winenv-notification-image6.png)
 
 Los Windows de acceso de escritorio incluyen el botón Inicio, la barra de tareas y el área de notificación. Observe la característica de miniatura del botón de la barra de tareas.
 
-**El escritorio es un recurso compartido limitado que es el punto de entrada del usuario para Windows.** Deje el control de los usuarios. Debe usar las áreas de escritorio según lo previsto cualquier otro uso debe considerarse un abuso. Por ejemplo, nunca vea las áreas de escritorio como maneras de promocionar el programa o su [marca](exper-branding.md).
+**El escritorio es un recurso compartido limitado que es el punto de entrada del usuario para Windows.** Deje el control de los usuarios. Debe usar las áreas de escritorio según lo previsto, cualquier otro uso debe considerarse un abuso. Por ejemplo, nunca vea las áreas de escritorio como maneras de promocionar el programa o su [marca](exper-branding.md).
 
 ### <a name="using-the-notification-area-appropriately"></a>Uso adecuado del área de notificación
 
-El área de notificación estaba pensada originalmente como un origen temporal para las notificaciones y el estado. Su eficacia y comodidad ha animado a los desarrolladores a darle otros propósitos, como iniciar programas y ejecutar comandos. Desafortunadamente, con el tiempo, estas adiciones hacen que el área de notificación sea demasiado grande y ruidoso, y confundan su propósito con los otros puntos de acceso de escritorio.
+El área de notificación estaba pensada originalmente como un origen temporal para las notificaciones y el estado. Su eficacia y comodidad ha animado a los desarrolladores a darle otros propósitos, como iniciar programas y ejecutar comandos. Desafortunadamente, con el tiempo, estas adiciones hacían que el área de notificación sea demasiado grande y ruidoso, y confundía su propósito con los otros puntos de acceso de escritorio.
 
-Windows XP solucionó el problema de escala haciendo que el área se contrayese y ocultando los iconos no usados. Windows Vista solucionó el ruido mediante la eliminación de notificaciones innecesarias y molestos. Windows 7 ha ido un paso más allá al centrar la notificación en su propósito original de ser un origen de notificación. **La mayoría de los iconos están ocultos de forma predeterminada en Windows 7, pero el usuario puede promoverlos manualmente al área de notificación. Para mantener a los usuarios en control de sus escritorios, no hay ninguna manera de que el programa realice esta promoción automáticamente.** Windows muestra notificaciones de iconos ocultos al promocionarlos temporalmente.
+Windows XP solucionó el problema de escala haciendo que el área se contrayese y ocultando los iconos no usados. Windows Vista solucionó el ruido mediante la eliminación de notificaciones innecesarias e innecesarias. Windows 7 ha ido un paso más allá al centrar la notificación en su propósito original de ser un origen de notificación. **La mayoría de los iconos están ocultos de forma predeterminada Windows 7, pero el usuario puede promover manualmente al área de notificación. Para mantener a los usuarios en el control de sus escritorios, no hay ninguna manera de que el programa realice esta promoción automáticamente.** Windows muestra notificaciones de iconos ocultos al promocionarlos temporalmente.
 
-![captura de pantalla del área de notificación y desbordamiento ](images/winenv-notification-image7.png)
+![captura de pantalla del área de notificación y el desbordamiento ](images/winenv-notification-image7.png)
 
 En Windows 7, la mayoría de los iconos del área de notificación están ocultos de forma predeterminada.
 
 Además, Windows 7 admite muchas características directamente en los botones de la barra de tareas. En concreto, puede usar:
 
--   Listas de saltos y barras de herramientas en miniatura para acceder rápidamente a los comandos usados con frecuencia.
--   Iconos superpuestos para mostrar el estado de los programas en ejecución.
+-   Listas de accesos directos y barras de herramientas en miniatura para acceder rápidamente a los comandos usados con frecuencia.
+-   Iconos de superposición para mostrar el estado de los programas en ejecución.
 -   Barras de progreso del botón de la barra de tareas para mostrar el progreso de las tareas de ejecución larga.
 
-En resumen, si el programa tiene presencia en el escritorio, aproveche al máximo las Windows del botón 7 de la barra de tareas para estos fines. **Mantenga los iconos del área de notificación centrados en mostrar las notificaciones y el estado.**
+En resumen, si el programa tiene presencia de escritorio, aproveche al máximo las Windows del botón 7 de la barra de tareas para estos fines. **Mantenga los iconos del área de notificación centrados en mostrar las notificaciones y el estado.**
 
 ### <a name="keeping-users-in-control"></a>Mantener el control de los usuarios
 
-Mantener el control de los usuarios se extiende más allá de usar correctamente el área de notificación. En función de la naturaleza del icono, es posible que quiera permitir que los usuarios hagan lo siguiente:
+Mantener a los usuarios en control se extiende más allá de usar correctamente el área de notificación. Dependiendo de la naturaleza del icono, es posible que quiera permitir que los usuarios hagan lo siguiente:
 
--   **Quite el icono.** El icono puede proporcionar un estado pertinente y útil, pero incluso así, es posible que los usuarios no quieran verlo. Windows permite a los usuarios ocultar iconos, pero esta característica no es fácil de detectar. Para mantener el control de los usuarios, proporcione la **opción Mostrar icono en el área de** notificación en el menú contextual del icono. Tenga en cuenta que la eliminación de un icono no tiene que afectar al programa, la característica o el proceso subyacentes.
+-   **Quite el icono.** El icono puede proporcionar un estado pertinente y útil, pero incluso así, es posible que los usuarios no quieran verlo. Windows permite a los usuarios ocultar iconos, pero esta característica no es fácil de detectar. Para mantener el control de los usuarios, proporcione la **opción Mostrar icono en** el área de notificación en el menú contextual del icono. Tenga en cuenta que quitar un icono no tiene que afectar al programa, la característica o el proceso subyacentes.
 -   **Seleccione los tipos de notificaciones que se mostrarán.** La notificación debe ser útil y pertinente, pero puede haber notificaciones que los usuarios no quieran ver. Esto es especialmente cierto para las notificaciones [FYI](mess-notif.md). Permitir que los usuarios elijan habilitar las menos importantes.
--   **Suspender características opcionales.** Los iconos se usan para mostrar el estado de las características sin presencia de escritorio. Estas características tienden a ser tareas en segundo plano opcionales de ejecución larga, como la impresión, la indexación, el examen o la sincronización. Es posible que los usuarios quieran suspender estas características para aumentar el rendimiento del sistema, reducir el consumo de energía o porque están sin conexión.
--   **Salga del programa.** Proporcione el más adecuado de estas opciones:
-    -   **Salir temporalmente del programa.** El programa se detiene y se reinicia cuando Windows se reinicia. Este enfoque es adecuado para importantes utilidades del sistema, como los programas de seguridad.
+-   **Suspender características opcionales.** Los iconos se usan para mostrar el estado de las características sin presencia del escritorio. Estas características tienden a ser tareas en segundo plano opcionales de ejecución larga, como impresión, indexación, examen o sincronización. Es posible que los usuarios quieran suspender estas características para aumentar el rendimiento del sistema, reducir el consumo de energía o porque están sin conexión.
+-   **Salga del programa.** Proporcione la más adecuada de estas opciones:
+    -   **Salir temporalmente del programa.** El programa se detiene y reinicia cuando Windows se reinicia. Este enfoque es adecuado para utilidades importantes del sistema, como los programas de seguridad.
     -   **Salir del programa de forma permanente.** El programa se detiene y no se reinicia Windows se reinicia (a menos que el usuario decida reiniciarlo más adelante). El usuario ya no quiere ejecutar el programa o quiere ejecutarlo a petición quizás para mejorar el rendimiento del sistema.
 
-Aunque es una buena idea proporcionar la mayoría de estos valores en el menú contextual del icono, la experiencia predeterminada del programa debe ser adecuada para la mayoría de los usuarios. No active todo de forma predeterminada y espere que los usuarios desactiven las características. En su lugar, active las características importantes de forma predeterminada y permita que los usuarios habiliten características adicionales según sea necesario.
+Aunque es una buena idea proporcionar la mayoría de estas opciones en el menú contextual del icono, la experiencia predeterminada del programa debe ser adecuada para la mayoría de los usuarios. No active todo de forma predeterminada y espere que los usuarios desactiven las características. En su lugar, active las características importantes de forma predeterminada y permita que los usuarios habiliten características adicionales según sea necesario.
 
 **Si solo hace cuatro cosas...**
 
-1.  No maltrate el área de notificación. Úsese solo como origen para las notificaciones y el estado, y para las características sin presencia de escritorio.
+1.  No abuse del área de notificación. Úselo solo como origen para las notificaciones y el estado, y para las características sin presencia del escritorio.
 2.  Mantenga el control de los usuarios. Proporcione las opciones adecuadas para controlar el icono, sus notificaciones y las características subyacentes.
-3.  Presentar una experiencia predeterminada que sea adecuada para la mayoría de los usuarios. Permitir que los usuarios habiliten las características deseadas en lugar de esperar que deshabilite las no deseadas.
+3.  Presente una experiencia predeterminada que sea adecuada para la mayoría de los usuarios. Permita a los usuarios habilitar las características deseadas en lugar de esperar que deshabilite las no deseadas.
 4.  Aproveche al máximo las características del Windows de la barra de tareas 7 para mostrar el estado y hacer que las tareas que se realizan con más frecuencia del programa son eficaces.
 
 ## <a name="usage-patterns"></a>Patrones de uso
@@ -130,13 +130,7 @@ Los iconos del área de notificación tienen varios patrones de uso:
 
 
 
-| Etiqueta | Value |
-|--------|-------|
-| <strong>Estado y acceso del sistema</strong><br /> Se muestra continuamente para mostrar el estado del sistema importante, pero no crítico, y para proporcionar acceso a las características y configuraciones pertinentes. <br /> | Las características del sistema que necesitan iconos de área de notificación no tienen presencia de escritorio persistente. También se puede usar como origen de notificación. <br /><img src="images/winenv-notification-image8.png" alt="Screenshot that shows a notification area and icons for system status." /><br /> En este ejemplo, los iconos de batería, red y volumen se muestran continuamente cuando corresponda.<br /> | 
-| <strong>Acceso y estado de la tarea en segundo plano</strong><br /> Se muestra mientras se ejecuta una tarea en segundo plano para mostrar el estado y proporcionar acceso a las características y la configuración. <br /> | Los procesos en segundo plano necesitan iconos de área de notificación cuando no tienen presencia en el escritorio. También se puede usar como origen de notificación. <br /><img src="images/winenv-notification-image9.png" alt="Screenshot that shows notification area and icon for background task status." /><br /> En este ejemplo, el icono del Centro de acciones permite a los usuarios comprobar su estado incluso cuando no tiene presencia en el escritorio.<br /> | 
-| <strong>Estado del evento temporal</strong><br /> Los programas con presencia de escritorio pueden mostrar iconos temporalmente para mostrar eventos importantes o cambios en el estado. <br /> | <img src="images/winenv-notification-image10.png" alt="Screenshot that shows notification area and icons for a temporary event status." /><br /> En este ejemplo, los iconos para imprimir e instalar actualizaciones se muestran temporalmente para mostrar eventos importantes o cambios en el estado.<br /> | 
-| <strong>Origen de notificación temporal</strong><br /> Se muestra temporalmente para mostrar una notificación. Se quita después de un tiempo de espera, o cuando se aborda el problema subyacente o se realiza una tarea. <br /> | Los iconos temporales son preferidos para los orígenes de notificación puros. No muestre un icono que no proporcione un estado dinámico útil, relevante solo porque una característica podría necesitar mostrar una notificación en el futuro. <br /><img src="images/winenv-notification-image11.png" alt="Screen shot of notification area install message " /><br /> En este ejemplo, se muestra el icono de plug-and-play mientras se muestra una nueva notificación detectada por hardware.<br /> | 
-| <strong>Aplicación de instancia única minimizada</strong><br /> Para reducir el desorden de la barra de tareas, una aplicación de ejecución larga de instancia única se puede minimizar en un icono de área de notificación en su lugar. <br /> | <img src="images/winenv-notification-image12.png" alt="Screen shot of notification area and icons " /><br /> En este ejemplo de Windows Vista, Outlook y Windows Live Messenger son aplicaciones de instancia única que minimizan los iconos del área de notificación.<br /> Considere la posibilidad de usar este patrón solo si se aplican todos los siguientes elementos: <br /><ul><li>La aplicación solo puede tener una sola instancia.</li><li>La aplicación se ejecuta durante un largo período de tiempo.</li><li>El icono muestra el estado.</li><li>El icono puede ser un origen de notificación.</li><li>Esto es opcional y los usuarios deben <a href="glossary.md">participar en</a>.</li></ul>Si se aplican todas estas condiciones, minimizar un icono elimina tener dos puntos de acceso cuando solo se necesita uno. <br /><strong>Nota:</strong> Este patrón de icono ya no se recomienda para Windows 7. Use botones de la barra de tareas normales en su lugar si el programa tiene presencia en el escritorio.<br /><img src="images/winenv-notification-image13.png" alt="Screen shot of Outlook and Messenger taskbar icons " /><br /> En este ejemplo de Windows 7, un botón de la barra de tareas normal ocupa poco espacio, pero se beneficia de las características del botón de la barra de tareas de Windows 7, incluidas las listas de saltos, los iconos de superposición y las miniaturas enriquecciones.<br /> | 
+| | | <strong>Acceso y estado del sistema</strong><br /> Se muestra continuamente para mostrar el estado del sistema importante, pero no crítico, y para proporcionar acceso a las características y configuraciones pertinentes. <br /> | Las características del sistema que necesitan iconos de área de notificación no tienen presencia de escritorio persistente. También se puede usar como origen de la notificación. <br /><img src="images/winenv-notification-image8.png" alt="Screenshot that shows a notification area and icons for system status." /><br /> En este ejemplo, los iconos de batería, red y volumen se muestran continuamente cuando procede.<br /> | | <strong>Acceso y estado de la tarea en segundo plano</strong><br /> Se muestra mientras se ejecuta una tarea en segundo plano para mostrar el estado y proporcionar acceso a las características y la configuración. <br /> | Los procesos en segundo plano necesitan iconos de área de notificación cuando no tienen presencia en el escritorio. También se puede usar como origen de la notificación. <br /><img src="images/winenv-notification-image9.png" alt="Screenshot that shows notification area and icon for background task status." /><br /> En este ejemplo, el icono del Centro de acciones permite a los usuarios comprobar su estado incluso cuando no tiene presencia en el escritorio.<br /> | | <strong>Estado del evento temporal</strong><br /> Los programas con presencia de escritorio pueden mostrar iconos temporalmente para mostrar eventos importantes o cambios en el estado. <br /> | <img src="images/winenv-notification-image10.png" alt="Screenshot that shows notification area and icons for a temporary event status." /><br /> En este ejemplo, los iconos para imprimir e instalar actualizaciones se muestran temporalmente para mostrar eventos importantes o cambios en el estado.<br /> | | <strong>Origen de notificación temporal</strong><br /> Se muestra temporalmente para mostrar una notificación. Se quita después de un tiempo de espera, o cuando se aborda el problema subyacente o se realiza una tarea. <br /> | Los iconos temporales son los preferidos para los orígenes de notificaciones puros. No muestre un icono que no proporcione un estado dinámico útil, relevante solo porque una característica podría necesitar mostrar una notificación en el futuro. <br /><img src="images/winenv-notification-image11.png" alt="Screen shot of notification area install message " /><br /> En este ejemplo, se muestra el icono de plug-and-play mientras se muestra una nueva notificación detectada por hardware.<br /> | | <strong>Aplicación de instancia única minimizada</strong><br /> Para reducir el desorden de la barra de tareas, una aplicación de ejecución larga de instancia única se puede minimizar en un icono de área de notificación en su lugar. <br /> | <img src="images/winenv-notification-image12.png" alt="Screen shot of notification area and icons " /><br /> En este ejemplo de Windows Vista, Outlook y Windows Live Messenger son aplicaciones de instancia única que minimizan los iconos del área de notificación.<br /> Considere la posibilidad de usar este patrón solo si se aplican todos los siguientes elementos: <br /><ul><li>La aplicación solo puede tener una sola instancia.</li><li>La aplicación se ejecuta durante un largo período de tiempo.</li><li>El icono muestra el estado.</li><li>El icono puede ser un origen de notificación.</li><li>Esto es opcional y los usuarios deben <a href="glossary.md">participar en</a>.</li></ul>Si se aplican todas estas condiciones, minimizar un icono elimina tener dos puntos de acceso cuando solo se necesita uno. <br /><strong>Nota:</strong> Este patrón de icono ya no se recomienda para Windows 7. Use botones de la barra de tareas normales en su lugar si el programa tiene presencia en el escritorio.<br /><img src="images/winenv-notification-image13.png" alt="Screen shot of Outlook and Messenger taskbar icons " /><br /> En este ejemplo de Windows 7, un botón de la barra de tareas normal ocupa poco espacio, pero se beneficia de las características del botón de la barra de tareas de Windows 7, incluidas las listas de saltos, los iconos de superposición y las miniaturas enriquecciones.<br /> | 
 
 
 
@@ -148,9 +142,9 @@ Los iconos del área de notificación tienen varios patrones de uso:
 ### <a name="general"></a>General
 
 -   **Proporcione solo un icono de área de notificación por componente.**
--   **Use un icono con versiones de 16x16, 20x20 y 24 x 24 píxeles.** Las versiones más grandes se usan en los modos de presentación de valores altos de ppp.
+-   **Use un icono con versiones de 16x16, 20x20 y 24 x 24 píxeles.** Las versiones más grandes se usan en modos de presentación de valores altos de ppp.
 
-### <a name="when-to-show"></a>Cuándo se debe mostrar
+### <a name="when-to-show"></a>Cuándo mostrar
 
 -   Para el patrón de origen de notificación temporal:
     -   Windows muestra el icono cuando se muestra la notificación.
@@ -170,9 +164,9 @@ Los iconos del área de notificación tienen varios patrones de uso:
 
  
 
--   **Para el patrón de estado de evento temporal, muestre el icono mientras se produce el evento.**
--   Para todos los demás patrones, muestre el icono cuando se esté ejecutando el **programa,**  la característica o el proceso y el icono sea pertinente a menos que el usuario haya borrado su opción Mostrar icono en el área de notificación (para obtener más información, vea [Menús](#context-menus)contextuales). La mayoría de los iconos están ocultos de forma Windows 7, pero el usuario puede promover al área de notificación.
--   **No muestre iconos diseñados para administradores para usuarios estándar.** Registre la información en el Windows de eventos.
+-   **Para el patrón de estado del evento temporal, muestre el icono mientras se produce el evento.**
+-   Para todos los demás patrones, muestre el icono cuando se esté ejecutando el **programa,**  la característica o el proceso y el icono sea relevante a menos que el usuario haya borrado su opción Mostrar icono en el área de notificación (para obtener más información, vea [Menús contextuales).](#context-menus) La mayoría de los iconos están ocultos de forma predeterminada Windows 7, pero el usuario puede promover al área de notificación.
+-   **No muestre iconos diseñados para administradores para usuarios estándar.** Registre la información en el registro Windows eventos.
 
 ### <a name="where-to-show"></a>Dónde mostrar
 
@@ -180,7 +174,7 @@ Los iconos del área de notificación tienen varios patrones de uso:
 
 ![figura de una ventana cerca del área de notificación ](images/winenv-notification-image14.png)
 
-Windows desde el área de notificación, los iconos se muestran cerca del área de notificación.
+Windows desde los iconos del área de notificación se muestran cerca del área de notificación.
 
 ### <a name="icons"></a>Iconos
 
@@ -188,7 +182,7 @@ Windows desde el área de notificación, los iconos se muestran cerca del área 
 
     | Patrón                                                 | Tipo de icono                                   |
     |--------------------------------------------------|------------------------------------|
-    | Estado y acceso del sistema<br/>              | Icono de característica del sistema<br/>     |
+    | Acceso y estado del sistema<br/>              | Icono de características del sistema<br/>     |
     | Acceso y estado de la tarea en segundo plano<br/>     | Icono de programa o característica<br/> |
     | Origen de notificación temporal<br/>         | Icono de programa o característica<br/> |
     | Estado del evento temporal<br/>                | Icono de programa o característica<br/> |
@@ -203,7 +197,7 @@ Windows desde el área de notificación, los iconos se muestran cerca del área 
     En este ejemplo, Outlook un icono de característica de correo electrónico para un origen de notificación temporal y su icono de aplicación para la aplicación minimizada.
 
 -   **Elija un diseño de icono fácilmente reconocible.** Prefiere iconos con contornos únicos sobre iconos en forma cuadrada o rectangular. Mantener los diseños simples prefiere símbolos en lugar de imágenes realistas. Aplique también las [otras directrices de icono de estilo](vis-icons.md) acrob.
--   **Use variaciones de icono o superposiciones para indicar los cambios de estado o de estado.** Use variaciones de icono para mostrar cambios en cantidades o puntos fuertes. Para otros tipos de estado, use las siguientes superposiciones estándar. Use solo una sola superposición y localíquela en la parte inferior derecha para mantener la coherencia. 
+-   **Use variaciones de icono o superposiciones para indicar los cambios de estado o de estado.** Use variaciones de icono para mostrar los cambios en cantidades o puntos fuertes. Para otros tipos de estado, use las siguientes superposiciones estándar. Use solo una sola superposición y localíquela en la parte inferior derecha para mantener la coherencia. 
 
     | Overlay                                                                                                       | Estado                                 |
     |--------------------------------------------------------------------------------------------------------|----------------------------------|
@@ -259,7 +253,7 @@ Para obtener instrucciones y ejemplos de iconos generales, vea [Iconos.](vis-ico
 
 ### <a name="interaction"></a>Interacción
 
-**Nota:** Los siguientes eventos de clic deben producirse al pasar el mouse hacia arriba, no hacia abajo.
+**Nota:** Los siguientes eventos de clic deben producirse al pasar el mouse hacia arriba, no al bajar el mouse.
 
 **Al mantener el puntero**
 
@@ -273,7 +267,7 @@ Para obtener instrucciones de texto de información, consulte [la sección Texto
 
 **Clic con un solo clic a la izquierda**
 
--   **Muestre lo que los usuarios más probablemente quieran ver,** que puede ser:
+-   **Muestre lo que los usuarios más probables quieran ver,** que puede ser:
 
     -   Ventana de control desplegable, cuadro de diálogo o ventana de programa con la configuración más útil y tareas que se realizan habitualmente. Para obtener instrucciones de presentación, consulte [Los flyouts del área de notificación.](#notification-area-flyouts)
 
@@ -281,7 +275,7 @@ Para obtener instrucciones de texto de información, consulte [la sección Texto
 
         En estos ejemplos, al hacer clic a la izquierda se muestran ventanas emergentes con la configuración más útil.
 
-    -   Un menú desplegable de estado.
+    -   Un flyout de estado.
 
         ![captura de pantalla del área de notificación y el flyout de estado ](images/winenv-notification-image28.png)
 
@@ -312,13 +306,13 @@ Para obtener instrucciones de texto de información, consulte [la sección Texto
 
 Comandos principales
 
-Abrir (valor predeterminado, mostrar primero, en negrita)
+Abrir (valor predeterminado, enumerar primero, en negrita)
 
 Ejecutar
 
 Comandos secundarios
 
-< separador de>
+< separador>
 
 Comando Suspend/resume enable/disable (marca de verificación)
 
@@ -361,8 +355,8 @@ En el ejemplo incorrecto, Windows Defender debe usar una marca de verificación 
 
 En este ejemplo, Outlook permite a los usuarios elegir las notificaciones que reciben del icono.
 
--   **Al desactivar la opción "Mostrar** icono en el área de notificación", se quita el icono del área de notificación, pero no afecta al programa, la característica o el proceso subyacentes. Los usuarios pueden volver a mostrar el icono desde el cuadro de diálogo Opciones del programa. No vuelva a mostrar automáticamente el icono cuando Windows se reinicie.
--   **El comando Exit cierra el programa de la sesión Windows actual y quita el icono.** No tenga un comando Exit si el programa no se puede apagar. El programa se reinicia cuando Windows se reinicia. Los usuarios pueden salir permanentemente del programa desde el cuadro de diálogo Opciones .
+-   **Al desactivar la opción "Mostrar** icono en el área de notificación", se quita el icono del área de notificación, pero no se afecta al programa, la característica o el proceso subyacentes. Los usuarios pueden volver a mostrar el icono desde el cuadro de diálogo Opciones del programa. No vuelva a mostrar automáticamente el icono cuando Windows se reinicie.
+-   **El comando Exit sale del programa para la sesión Windows actual y quita el icono.** No tenga un comando Exit si el programa no se puede apagar. El programa se reinicia cuando Windows se reinicia. Los usuarios pueden salir permanentemente del programa desde el cuadro de diálogo Opciones .
 -   **No tiene un comando Acerca de.** El icono, su información y el menú contextual deben comunicar dicha información. Si los usuarios desean más información, pueden ver la interfaz de usuario principal.
     -   **Excepción:** Puede proporcionar un comando Acerca de si el icono es para un programa que no tiene presencia en el escritorio.
 
@@ -398,11 +392,11 @@ Para obtener instrucciones y ejemplos generales del menú contextual, vea [Menú
 ### <a name="notification-area-flyouts"></a>Flyouts del área de notificación
 
 -   Cuando sea necesario, presente los flyouts del área de notificación con tres secciones:
-    -   **Resumen.** Muestre la misma información que se muestra en la información sobre herramientas o información sobre herramientas del icono, posiblemente con más detalle. Para mantener la coherencia, use el mismo texto e iconos y, por lo general, el mismo diseño (si se usa una información sobre herramientas enriquecencia). A diferencia de las información sobre información, esta información es accesible cuando se usa la función táctil.
+    -   **Resumen.** Muestre la misma información que se muestra en la información sobre herramientas o información sobre herramientas del icono, posiblemente con más detalle. Para mantener la coherencia, use el mismo texto e iconos y, por lo general, el mismo diseño (si se usa una información sobre herramientas enriquecencia). A diferencia de las sugerencias de información, esta información es accesible cuando se usa la función táctil.
     -   **Tareas comunes.** Presente las tareas que se realizan más comúnmente directamente en el menú desplegable.
     -   **Vínculos relacionados.** Proporcione como máximo uno de cada tipo de los siguientes vínculos opcionales:
         -   Vínculo a la tarea que se realiza con más frecuencia en Panel de control. Proporcione si hay una tarea realizada con frecuencia que no se puede presentar en la sección tareas comunes.
-        -   Vínculo al elemento de Panel de control relacionado. Este Panel de control elemento debe permitir a los usuarios realizar cualquier tarea que no se pueda realizar en la sección tareas comunes.
+        -   Vínculo al elemento Panel de control relacionado. Este Panel de control elemento debe permitir a los usuarios realizar cualquier tarea que no se pueda realizar en la sección tareas comunes.
         -   Vínculo a un tema de Ayuda específico y relevante. Siga las instrucciones [estándar del vínculo de Ayuda](winenv-help.md).
 
 ![captura de pantalla del área de notificación y el flyout ](images/winenv-notification-image36.png)
@@ -414,7 +408,7 @@ En este ejemplo se muestra un flyout de área de notificación mediante la prese
 -   Las opciones no accesibles directamente desde el menú contextual deben estar en el cuadro de diálogo Opciones . Este cuadro de diálogo podría ser el panel de control de la característica.
 -   **El cuadro de diálogo Opciones puede incluir los siguientes elementos según** corresponda (el texto exacto está entre comillas):
     -   Habilitar \[ nombre de característica \] (casilla)
-        -   Al desactivar esta opción se cierra permanentemente el programa. El programa se puede reiniciar desde su elemento del panel de control. El comando Exit del menú contextual cierra el programa solo para la sesión Windows actual.
+        -   Al desactivar esta opción se cierra permanentemente el programa. El programa se puede reiniciar desde su elemento del panel de control. El comando Salir del menú contextual cierra el programa solo para la sesión Windows actual.
     -   "Mostrar icono en el área de notificación" (casilla)
         -   Quitar el icono del área de notificación no afecta a la característica subyacente.
         -   Al seleccionar esta opción, el usuario puede restaurar el icono, lo que, por supuesto, no se puede hacer desde el propio icono.
@@ -424,7 +418,7 @@ Para obtener instrucciones y ejemplos generales del cuadro de diálogo Opciones,
 
 ### <a name="minimizing-programs-to-the-notification-area"></a>Minimizar los programas en el área de notificación
 
-**Nota: Ya no se recomienda minimizar las ventanas de programa en el área de notificación Windows 7.** En su lugar, use [botones de la barra](winenv-taskbar.md) de tareas normales. El programa puede admitir ambos mecanismos para la compatibilidad con versiones anteriores.
+**Nota: Ya no se recomienda minimizar las ventanas de programa en el área de notificación para Windows 7.** En su lugar, use [botones de la barra](winenv-taskbar.md) de tareas normales. El programa puede admitir ambos mecanismos para la compatibilidad con versiones anteriores.
 
 -   Para reducir el desorden de la barra de tareas, considere la posibilidad de minimizar los programas en el área de notificación solo si se aplican todos los siguientes elementos:
     -   El programa solo puede tener una sola instancia.
@@ -436,31 +430,31 @@ Para obtener instrucciones y ejemplos generales del cuadro de diálogo Opciones,
 
 ## <a name="text"></a>Texto
 
-### <a name="infotips"></a>Información sobre información
+### <a name="infotips"></a>Información sobre
 
 -   La información sobre iconos debe tener uno de los siguientes formatos (donde el nombre de la empresa es opcional):
     -   (Nombre de la compañía) Nombre de característica, programa o dispositivo
     -   ![captura de pantalla de información sobre información con el nombre de la empresa ](images/winenv-notification-image37.png)
     -   (Nombre de la compañía) Nombre de característica, programa o dispositivo: resumen de estado
-    -   ![captura de pantalla de infotip que muestra el resumen de estado ](images/winenv-notification-image38.png)
+    -   ![captura de pantalla de información de información que muestra el resumen de estado ](images/winenv-notification-image38.png)
     -   (Nombre de la compañía) Instrucción de estado de nombre de dispositivo, programa o característica.
     -   ![captura de pantalla de infotip que muestra la instrucción de estado ](images/winenv-notification-image39.png)
     -   (Nombre de la compañía) Nombre de característica, programa o dispositivo
     -   Lista de estado con cada elemento en una línea independiente
-    -   ![captura de pantalla de infotip que muestra la lista de estado ](images/winenv-notification-image40.png)
+    -   ![captura de pantalla de información que muestra la lista de estado ](images/winenv-notification-image40.png)
 
 Expresiones de información:
 
--   Céntrate en la información más útil. Muestra otra información al hacer un solo clic a la izquierda.
--   Sea conciso. Use fragmentos de oraciones o instrucciones simples.
--   No use signos de puntuación finales a menos que tip se indique como una frase completa.
+-   Céntrate en la información más útil. Muestra otra información a la izquierda con un solo clic.
+-   Sea conciso. Use fragmentos de oración o instrucciones simples.
+-   No use signos de puntuación finales a menos que la sugerencia se indique como una frase completa.
 -   Omita palabras innecesarias. No incluya la versión de software ni otra información extraneosa.
 
     **Incorrecto:**
 
     ![captura de pantalla de información con información innecesaria ](images/winenv-notification-image41.png)
 
-    En este ejemplo, la información sobre información tiene información extraneous.
+    En este ejemplo, la información sobre información tiene información adicional.
 
 -   No explique cómo interactuar con el icono.
 
@@ -478,11 +472,11 @@ Al hacer referencia al área de notificación:
 
 Al hacer referencia a un icono de área de notificación:
 
--   Haga referencia al icono con el nombre exacto especificado en su información, incluida su mayúscula y luego por el icono.
+-   Consulte el icono con el nombre exacto especificado en la información, incluida su mayúscula y después el icono.
 -   Para obtener la primera referencia, consulte también el área de notificación.
 -   Cuando sea posible, formatee el texto del encabezado con negrita. De lo contrario, coloque el encabezado entre comillas solo si es necesario para evitar confusiones.
 
-**Ejemplo:** Para comprobar rápidamente el estado de la red, haga clic en **el icono Red** en el área de notificación.
+**Ejemplo:** Para comprobar rápidamente el estado de la red, haga clic en el **icono Red** en el área de notificación.
 
  
 

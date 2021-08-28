@@ -1,25 +1,25 @@
 ---
 title: Elección de un nivel de autenticación
-description: Al elegir un nivel de autenticación, use la siguiente instrucción.
+description: Al elegir un nivel de autenticación, use las siguientes instrucciones.
 ms.assetid: 6efb4162-5884-4bcb-86da-4809f89f0c26
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ba73b2541497ff70204151e57f0483ac7965ef2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 98ac5610efad7ae1149d3c6555e2a005e3870a4f0e55983a17457bfa130561f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073465"
 ---
 # <a name="choosing-an-authentication-level"></a>Elección de un nivel de autenticación
 
-Al elegir un nivel de autenticación, use la siguiente instrucción. Si no importa si los datos que se envían se pueden interceptar y modificar, y los datos recibidos se pueden interceptar o modificar, use \_ \_ el nivel none de autenticación de RPC C \_ \_ , que es el valor predeterminado. Si los datos no se deben modificar y los datos privados no se envían ni reciben, use la integridad de nivel de autenticación de RPC \_ C \_ \_ \_ \_ . En todos los demás casos, use la privacidad de nivel de autenticación de RPC \_ C \_ \_ \_ \_ .
+Al elegir un nivel de autenticación, use las siguientes instrucciones. Si no importa si los datos que se envían se pueden interceptar y modificar, y los datos recibidos se pueden interceptar o modificar, use RPC \_ C \_ AUTHN LEVEL NONE, que es el valor \_ \_ predeterminado. Si no se deben modificar los datos y no se envían ni reciben datos privados, use RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ INTEGRITY. En todos los demás casos, use RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY.
 
-No use el \_ \_ nivel predeterminado de autenticación de RPC c, conexión de nivel de autenticación de \_ \_ RPC \_ c \_ \_ , llamada de nivel de autenticación de RPC \_ \_ c \_ \_ \_ o PKT de nivel de autenticación de RPC \_ c \_ \_ \_ . Un atacante sofisticado puede romper estos niveles de autenticación y representarlos de forma ineficaz. Cada uno de estos niveles hace que sea ligeramente más difícil para un atacante interceptar y modificar los datos, y para suplantar, pero la seguridad no se logra realmente. Dado que rara vez se conoce el nivel de sofisticación de un atacante, no se recomiendan estas opciones.
+No use RPC \_ C \_ AUTHN \_ LEVEL \_ DEFAULT, RPC C \_ \_ AUTHN \_ LEVEL \_ CONNECT, RPC C \_ \_ AUTHN \_ LEVEL CALL o RPC C \_ \_ \_ AUTHN \_ LEVEL \_ PKT. Un atacante sofisticado puede interrumpir estos niveles de autenticación y hacerlos ineficaces. Cada uno de estos niveles dificulta ligeramente que un atacante intercepte y modifique los datos y suplante, pero la seguridad no se logra realmente. Puesto que el nivel de sofisticación de un atacante rara vez se conoce, no son opciones adecuadas.
 
- 
+ 
 
- 
+ 
 
 
 

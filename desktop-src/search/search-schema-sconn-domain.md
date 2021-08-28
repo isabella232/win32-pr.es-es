@@ -1,21 +1,21 @@
 ---
-description: El <domain> elemento opcional especifica la dirección URL del servicio de búsqueda que usa este conector de búsqueda. Se muestra en el panel de detalles. Este elemento no tiene ningún elemento secundario y no tiene atributos.
+description: El elemento &lt; de dominio opcional especifica la dirección URL del servicio de búsqueda utilizado por este conector de &gt; búsqueda. Se muestra en el panel de detalles. Este elemento no tiene elementos secundarios ni atributos.
 ms.assetid: 60a27b13-0bb0-4cf6-9dce-a3abc79ce623
-title: Elemento domain (esquema del conector de búsqueda)
+title: elemento domain (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94b57819cf485bccbe63e7560f3fcb92811d7969
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd84ffa2ee5bcc5f5f6dcdb93c9abbd12c57bd96
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907739"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882474"
 ---
-# <a name="domain-element-search-connector-schema"></a>Elemento domain (esquema del conector de búsqueda)
+# <a name="domain-element-search-connector-schema"></a>elemento domain (esquema del conector de búsqueda)
 
-El <domain> elemento opcional especifica la dirección URL del servicio de búsqueda que usa este conector de búsqueda. Se muestra en el panel de detalles. Este elemento no tiene ningún elemento secundario y no tiene atributos.
+El elemento &lt; de dominio opcional especifica la dirección URL del servicio de búsqueda utilizado por este conector de &gt; búsqueda. Se muestra en el panel de detalles. Este elemento no tiene elementos secundarios ni atributos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -45,9 +45,9 @@ El <domain> elemento opcional especifica la dirección URL del servicio de búsq
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La dirección URL debe ser el dominio de nivel superior del proveedor de búsquedas. Por ejemplo, https://www.example.com.
+La dirección URL debe ser el dominio de nivel superior para el proveedor de búsqueda. Por ejemplo, https://www.example.com.
 
 ## <a name="example"></a>Ejemplo
 

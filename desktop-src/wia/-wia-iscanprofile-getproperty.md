@@ -1,7 +1,7 @@
 ---
-description: Obtiene el valor de las propiedades secundarias especificadas en el <Properties> elemento de un perfil de digitalización.
+description: Obtiene el valor de las propiedades secundarias especificadas en <Properties> elemento de un perfil de examen.
 ms.assetid: 528b51f5-51e0-4639-965d-ee318eb2187b
-title: 'IScanProfile:: GetProperty (método) (Scanprofile. h)'
+title: Método IScanProfile::GetProperty (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: 48137e61d88d580ac556220b4e47b949d9e2c242
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef09115c7131df21697540fa941f8bd863650bc029601088b4a0f8c80e9b1a44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814085"
 ---
-# <a name="iscanprofilegetproperty-method"></a>IScanProfile:: GetProperty (método)
+# <a name="iscanprofilegetproperty-method"></a>IScanProfile::GetProperty (método)
 
-Obtiene el valor de las propiedades secundarias especificadas en el `<Properties>` elemento de un perfil de digitalización.
+Obtiene el valor de las propiedades secundarias especificadas en el `<Properties>` elemento de un perfil de examen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,28 +41,28 @@ HRESULT GetProperty(
 
 <dl> <dt>
 
-*número* \[ de de\]
+*num* \[ En\]
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
-El número de entradas de las matrices a las que apuntan *PID* y *PVAR*.
+Número de entradas de las matrices a las que *apuntan pid* y *pvar.*
 
 </dd> <dt>
 
-*PID* \[ de de\]
+*pid* \[ En\]
 </dt> <dd>
 
-Tipo: **PROPID \** _
+Tipo: **PROPID \***
 
-Puntero a una matriz de los números de identificación de las propiedades que se van a establecer. Cada valor de la matriz es una [constante de propiedad de WIA](-wia-wia-property-constants.md).
+Puntero a una matriz de los números de identificación de las propiedades que se establecerán. Cada valor de la matriz es una [constante de propiedad de WIA.](-wia-wia-property-constants.md)
 
 </dd> <dt>
 
-_pvar * \[ out\]
+*pvar* \[ out\]
 </dt> <dd>
 
-Tipo: **[PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) \** _
+Tipo: **[PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)\***
 
 Puntero a una matriz de valores.
 
@@ -70,15 +70,15 @@ Puntero a una matriz de valores.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Devuelve S \_ false si alguno de los valores de propiedad no está disponible; de lo contrario, devuelve s \_ OK o un código de error com estándar.
+Devuelve S FALSE si alguno de los valores de \_ propiedad no está disponible; de lo contrario, devuelve S \_ OK o un código de error COM estándar.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tipo de cada valor debe ser del mismo tipo que se estableció con la llamada a [**IScanProfile:: SetProperty**](-wia-iscanprofile-setproperty.md).
+El tipo de cada valor debe ser el mismo tipo que se estableció con la llamada a [**IScanProfile::SetProperty**](-wia-iscanprofile-setproperty.md).
 
-Cada valor de la matriz al que apunta el *PID* es una de las [constantes de propiedad de WIA](-wia-wia-property-constants.md). Puede extender este sistema de identificación. Vea [definir propiedades personalizadas](-wia-defining-custom-properties.md).
+Cada valor de la matriz a la que *apunta pid* es una de las constantes de la [propiedad WIA](-wia-wia-property-constants.md). Puede ampliar este sistema de identificación. Vea [Definir propiedades personalizadas.](-wia-defining-custom-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,10 +86,10 @@ Cada valor de la matriz al que apunta el *PID* es una de las [constantes de prop
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofile. h</dt> </dl>    |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -100,13 +100,13 @@ Cada valor de la matriz al que apunta el *PID* es una de las [constantes de prop
 [**IScanProfile**](-wia-iscanprofile.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> <dt>
 
-[Constantes de propiedad de WIA](-wia-wia-property-constants.md)
+[Constantes de propiedad WIA](-wia-wia-property-constants.md)
 </dt> <dt>
 
 [Definir propiedades personalizadas](-wia-defining-custom-properties.md)
