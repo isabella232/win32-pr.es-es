@@ -1,7 +1,7 @@
 ---
-description: Inicializa el último elemento de vértice en una matriz de declaraciones de vértices.
+description: Inicialice el último elemento de vértice en una matriz de declaración de vértices.
 ms.assetid: 04cf7624-2e4a-4720-9ca0-894bf963e9f9
-title: Macro D3DDECL_END (D3d9types. h)
+title: D3DDECL_END macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: ad3a0a5085d8cacf11bae049cb21952a1aa73908
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a8e36f7e9e7103fcbbe4660fd16f89a56716c8142da2d8a390bfc7ef76299e0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118805445"
 ---
-# <a name="d3ddecl_end-macro"></a>D3DDECL \_ End (macro)
+# <a name="d3ddecl_end-macro"></a>Macro END D3DDECL \_
 
-Inicializa el último elemento de vértice en una matriz de declaraciones de vértices.
+Inicialice el último elemento de vértice en una matriz de declaración de vértices.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,11 +39,11 @@ Esta macro no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta macro no devuelve ningún valor.
+Esta macro no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se usa para inicializar el último elemento de vértice en una matriz de declaraciones de vértices.
+Se usa para inicializar el último elemento de vértice en una matriz de declaración de vértices.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,11 +51,11 @@ Se usa para inicializar el último elemento de vértice en una matriz de declara
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

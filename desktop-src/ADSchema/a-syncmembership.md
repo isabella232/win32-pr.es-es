@@ -1,11 +1,11 @@
 ---
-title: Sync-Membership atributo)
+title: Sync-Membership atributo
 description: Lista de miembros contenidos en un grupo integrado de SAM para la sincronización.
 ms.assetid: 48635e12-8dc4-44f1-92cd-5bfe01904807
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Sync-Membership
-- syncMembership esquema de AD de atributos
+- Sync-Membership esquema de AD del atributo
+- Esquema de AD del atributo syncMembership
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17fe3a0de061a491082e045cabfd9f3c54434c77
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a64e966ef394fbcac5c8f6b1d3ac13852b4a563222574862bf61093ea00bdc79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022083"
 ---
-# <a name="sync-membership-attribute"></a>Sync-Membership atributo)
+# <a name="sync-membership-attribute"></a>Sync-Membership atributo
 
 Lista de miembros contenidos en un grupo integrado de SAM para la sincronización.
 
@@ -30,13 +30,13 @@ Lista de miembros contenidos en un grupo integrado de SAM para la sincronizació
 | Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | Sync-Membership                         |
-| Nombre para mostrar de LDAP | syncMembership                          |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| Ldap-Display-Name | syncMembership                          |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.665                  |
-| System-ID-GUID    | 037651e3-441d-11d1-a9c3-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 037651e3-441d-11d1-a9c3-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ Lista de miembros contenidos en un grupo integrado de SAM para la sincronizació
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | 78           |
+| Id. de vínculo                | 78           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -76,13 +76,13 @@ Lista de miembros contenidos en un grupo integrado de SAM para la sincronizació
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | 78           |
+| Id. de vínculo                | 78           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -97,13 +97,13 @@ Lista de miembros contenidos en un grupo integrado de SAM para la sincronizació
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | 78           |
+| Id. de vínculo                | 78           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -118,13 +118,13 @@ Lista de miembros contenidos en un grupo integrado de SAM para la sincronizació
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | 78           |
+| Id. de vínculo                | 78           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -139,13 +139,13 @@ Lista de miembros contenidos en un grupo integrado de SAM para la sincronizació
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | 78           |
+| Id. de vínculo                | 78           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -160,13 +160,13 @@ Lista de miembros contenidos en un grupo integrado de SAM para la sincronizació
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | 78           |
+| Id. de vínculo                | 78           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

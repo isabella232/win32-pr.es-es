@@ -1,19 +1,19 @@
 ---
-description: Esta propiedad devuelve la mejor representación del intérprete del álbum para un archivo de música específico según la información de System. Music. AlbumArtist, System. Music. artista y System. Music. IsCompilation.
+description: Esta propiedad devuelve la mejor representación del intérprete del álbum para un archivo de música específico basado en System. Música. AlbumArtist, System. Música. Artist y System. Música. Información de IsCompilation.
 ms.assetid: E31B5734-1A15-42f3-BD4A-80B58E94BAD3
-title: System. Music. DisplayArtist
+title: Sistema. Música. DisplayArtist
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eac3637e6846800f272712ba6658e197816b9b48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12a6900815a9fecf231c9af98542b08771080b34552ba35a99cd9a6ad2036d9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774625"
 ---
-# <a name="systemmusicdisplayartist"></a>System. Music. DisplayArtist
+# <a name="systemmusicdisplayartist"></a>Sistema. Música. DisplayArtist
 
-Esta propiedad devuelve la mejor representación del intérprete del álbum para un archivo de música específico según la información de [System. Music. AlbumArtist](./props-system-music-albumartist.md), [System. Music. artista](./props-system-music-artist.md)y [System. Music. IsCompilation](./props-system-music-iscompilation.md) .
+Esta propiedad devuelve la mejor representación del intérprete del álbum para un archivo de música específico basado en [System.Música. AlbumArtist](./props-system-music-albumartist.md), [System.Música. Artist](./props-system-music-artist.md)y [System.Música. Información de IsCompilation.](./props-system-music-iscompilation.md)
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

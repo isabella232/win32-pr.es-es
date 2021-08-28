@@ -1,9 +1,9 @@
 ---
-title: modificador/cpp_opt
-description: El \_ modificador/CPP OPC especifica las opciones que se van a pasar al preprocesador de C/C++.
+title: Modificador /cpp_opt
+description: El modificador /cpp \_ opt especifica las opciones que se pasan al preprocesador de C/C++.
 ms.assetid: f0059caa-aff3-4e96-95f8-a0014d6a6556
 keywords:
-- /cpp_opt modificador MIDL
+- /cpp_opt switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,53 +12,53 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00e352a89ddadfc0a92e33e964afb5f0d9e9df6e
-ms.sourcegitcommit: 97d62bfd3213d9c4ce46c3cd2b1177caf720681a
+ms.openlocfilehash: 4c3b7845feb36cd09d96fc64cb7397e4daf001957f6ce7a6f5e797707caafd32
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "104421686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105662"
 ---
-# <a name="cpp_opt-switch"></a>/CPP \_ OPC
+# <a name="cpp_opt-switch"></a>/cpp \_ opt switch
 
-El modificador **/CPP \_ OPC** especifica las opciones que se van a pasar al preprocesador de C/C++.
+El **modificador /cpp \_ opt** especifica las opciones que se pasan al preprocesador de C/C++.
 
 ``` syntax
 midl /cpp_opt "C_preprocessor_option" file.idl
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 <dl> <dt>
 
-*\_Opción de preprocesador de C \_* 
+*Opción \_ de preprocesador de C \_* 
 </dt> <dd>
 
 Especifica la opción de línea de comandos asociada al preprocesador invocado. 
 
-**Nota**: para los preprocesadores de Microsoft c/C++, debe proporcionar el `/E` modificador como parte de la cadena de *\_ \_ opción del preprocesador de c* . 
+**Nota:** Para los preprocesadores de Microsoft C/C++, debe proporcionar el modificador como parte de la cadena de opción `/E` *de \_ \_ preprocesador de C.* 
 
-Se requieren comillas cuando se usa más de una opción y para espacios.
+Las comillas son necesarias cuando se usa más de una opción y para los espacios.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No use este modificador a menos que haya un motivo específico para hacerlo. Consulte [los requisitos del preprocesador de C para MIDL](c-preprocessor-requirements-for-midl.md) para obtener información importante sobre el preprocesamiento.
+No use este modificador a menos que haya una razón específica para hacerlo. Consulte [Requisitos de preprocesador de C para MIDL](c-preprocessor-requirements-for-midl.md) para obtener información importante sobre el preprocesamiento.
 
-El modificador **\_ OPT/CPP** se puede usar con o sin el modificador [**\_ cmd de/CPP**](-cpp-cmd.md) . Consulte **/CPP \_ cmd** para obtener detalles sobre cómo se construye la línea de comandos del preprocesador en cualquier caso.
+El **modificador /cpp \_ opt** se puede usar con o sin el modificador [**/cpp \_ cmd.**](-cpp-cmd.md) Consulte **/cpp \_ cmd para** obtener más información sobre cómo se construye la línea de comandos del preprocesador en cualquier caso.
 
-El modificador **\_ OPT de/CPP** , si se especifica, siempre debe incluirse `/E` para funcionar correctamente.
+El **modificador /cpp \_ opt,** si se especifica, siempre debe incluir `/E` para funcionar correctamente.
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/CPP \_ cmd d: \\ NT \\ Tools \\ ia64 \\cl.exe/DFLAG = true/IC: \\ Inc FILENAME. idl**
+**midl /cpp \_ cmd d: \\ nt tools \\ \\ ia64 \\cl.exe /DFLAG=TRUE /Ic: \\ inc filename.idl**
 
-**MIDL/CPP \_ cmd "mycpp"/DFLAG = true/IC: \\ Inc FILENAME. idl**
+**midl /cpp \_ cmd "mycpp" /DFLAG=TRUE /Ic: \\ inc filename.idl**
 
-**MIDL/CPP \_ OPT "/E/DFLAG = true/IC: \\ Inc" nombreDeArchivo. idl**
+**midl /cpp \_ opt "/E /DFLAG=TRUE /Ic: \\ inc" filename.idl**
 
-**MIDL/CPP \_ cmd "CL"/CPP \_ OPT "/e/DFLAG = true/IC: \\ Inc" nombreDeArchivo. idl**
+**midl /cpp \_ cmd "cl" /cpp \_ opt "/E /DFLAG=TRUE /Ic: \\ inc" filename.idl**
 
 ## <a name="see-also"></a>Vea también
 
@@ -67,16 +67,16 @@ El modificador **\_ OPT de/CPP** , si se especifica, siempre debe incluirse `/E`
 [**/savePP**](-savepp.md)
 </dt> <dt>
 
-[**/CPP \_ cmd**](-cpp-cmd.md)
+[**/cpp \_ cmd**](-cpp-cmd.md)
 </dt> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
-[**/no \_ CPP**](-no-cpp-nocpp.md)
+[**/no \_ cpp**](-no-cpp-nocpp.md)
 </dt> <dt>
 
-[Requisitos del preprocesador de C para MIDL](c-preprocessor-requirements-for-midl.md)
+[Requisitos de preprocesador de C para MIDL](c-preprocessor-requirements-for-midl.md)
 </dt> </dl>
 
  

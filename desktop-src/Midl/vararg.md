@@ -1,9 +1,9 @@
 ---
 title: vararg (atributo)
-description: El atributo \ lerg\ especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo VARIANT que contenga todos los parámetros restantes.
+description: El atributo \rg\ especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo VARIANT que contenga todos los parámetros restantes.
 ms.assetid: df0995d3-5266-4a13-90aa-d78bfa753e0e
 keywords:
-- atributo indórg MIDL
+- atributo midl de segorg
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118641013"
 ---
 # <a name="vararg-attribute"></a>vararg (atributo)
 
-El **\[ atributo \] lerg** especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo **VARIANT** que contenga todos los parámetros restantes.
+El **\[ atributo \] perorg** especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo **VARIANT** que contenga todos los parámetros restantes.
 
 ``` syntax
 [vararg [, optional-attributes]] return-type function-name(
@@ -75,9 +75,9 @@ Nombre del parámetro variable.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se pueden aplicar **\[** [**los atributos opcional**](optional.md) o **\]** **\[** [**defaultvalue**](defaultvalue.md) **\]** **\[ \]** a ningún parámetro de una función que tenga el atributo .
+No se pueden aplicar los **\[** [**atributos**](optional.md) **\]** **\[** [**opcionales o defaultvalue**](defaultvalue.md) **\]** a ningún parámetro de una función que tenga el atributo **\[ segorg. \]**
 
 ## <a name="examples"></a>Ejemplos
 

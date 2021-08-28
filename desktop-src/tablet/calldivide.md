@@ -1,7 +1,7 @@
 ---
 description: Recupera información de análisis del objeto InkDivider.
 ms.assetid: 1b073da4-80f4-48f4-8ff6-b21793c173a8
-title: CallDivide función)
+title: Función CallDivide
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: 0084811ee471bee8fe67653dace49fa83642a7fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 440b79eb4b761f62453c0c6daaa9ca7b9cf36edcc14079ac73db5ae685e4ebb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117675583"
 ---
-# <a name="calldivide-function"></a>CallDivide función)
+# <a name="calldivide-function"></a>Función CallDivide
 
-Recupera información de análisis del objeto [**InkDivider**](inkdivider-class.md) .
+Recupera información de análisis del [**objeto InkDivider.**](inkdivider-class.md)
 
-Esta función no está pensada para ser utilizada por el código de la aplicación.
+Esta función no está pensada para que la utilice el código de la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,59 +49,59 @@ HRESULT WINAPI CallDivide(
 
 <dl> <dt>
 
-*hDivider* \[ de\]
+*hDivider* \[ En\]
 </dt> <dd>
 
-Identificador del objeto [**InkDivider**](inkdivider-class.md) .
+Identificador del objeto [**InkDivider.**](inkdivider-class.md)
 
 </dd> <dt>
 
-*pWordSize* \[ de\]
+*pWordSize* \[ En\]
 </dt> <dd>
 
-Tamaño de la palabra devuelta por el objeto [**InkDivider**](inkdivider-class.md) .
+Tamaño de la palabra devuelta por el [**objeto InkDivider.**](inkdivider-class.md)
 
 </dd> <dt>
 
-*pLineSize* \[ de\]
+*pLineSize* \[ En\]
 </dt> <dd>
 
-Tamaño de la línea devuelta por el objeto [**InkDivider**](inkdivider-class.md) .
+Tamaño de la línea devuelta por el [**objeto InkDivider.**](inkdivider-class.md)
 
 </dd> <dt>
 
-*pParagraphSize* \[ de\]
+*pParagraphSize* \[ En\]
 </dt> <dd>
 
-Tamaño del párrafo devuelto por el objeto [**InkDivider**](inkdivider-class.md) .
+Tamaño del párrafo devuelto por el [**objeto InkDivider.**](inkdivider-class.md)
 
 </dd> <dt>
 
-*pDrawingSize* \[ de\]
+*pDrawingSize* \[ En\]
 </dt> <dd>
 
-Tamaño del dibujo devuelto por el objeto [**InkDivider**](inkdivider-class.md) .
+Tamaño del dibujo devuelto por el [**objeto InkDivider.**](inkdivider-class.md)
 
 </dd> <dt>
 
-*pWordCount* \[ enuncia\]
+*pWordCount* \[ out\]
 </dt> <dd>
 
-Número de palabras que devuelve el análisis de tinta.
+Número de palabras devueltas por el análisis de entrada de lápiz.
 
 </dd> <dt>
 
-*pLineCount* \[ enuncia\]
+*pLineCount* \[ out\]
 </dt> <dd>
 
-Número de líneas devueltas por el análisis de tinta.
+Número de líneas devueltas por el análisis de entrada de lápiz.
 
 </dd> <dt>
 
-*pParagraphCount* \[ enuncia\]
+*pParagraphCount* \[ out\]
 </dt> <dd>
 
-El número de párrafos devueltos por el análisis de tinta.
+Número de párrafos devueltos por el análisis de entrada de lápiz.
 
 </dd> </dl>
 
@@ -113,8 +113,8 @@ Esta función puede devolver uno de estos valores.
 
 | Código devuelto                                                                                  | Descripción                                    |
 |----------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | La función correcta.<br/>              |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o más parámetros no son válidos.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Función suceeded.<br/>              |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o varios parámetros no son válidos.<br/> |
 
 
 
@@ -124,9 +124,9 @@ Esta función puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                         |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                         |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
 | Biblioteca<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
 

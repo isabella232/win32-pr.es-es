@@ -1,7 +1,7 @@
 ---
-description: Conecta un puerto del conmutador al punto de conexión Canal de fibra al que está conectado el puerto.
+description: Conecta un puerto de conmutador al punto de conexión Canal de fibra al que está conectado el puerto.
 ms.assetid: e2762e0c-2f78-4159-a67c-31213e311072
-title: Msvm_FcActiveConnection (clase)
+title: Msvm_FcActiveConnection clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,18 +18,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7e29330e073266f2f2a8749ec3c70d9e26b35ff7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 892fcb386f7362c10d89dffb4b0695fe07f6fad02929402d1ac2206f75cbf08b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117994286"
 ---
-# <a name="msvm_fcactiveconnection-class"></a>MSVM \_ FcActiveConnection (clase)
+# <a name="msvm_fcactiveconnection-class"></a>Clase FcActiveConnection de Msvm \_
 
-Conecta un puerto del conmutador al punto de conexión Canal de fibra al que está conectado el puerto. La existencia de este objeto significa que el puerto del conmutador y el extremo de Canal de fibra están conectados activamente y que el puerto Canal de fibra asociado al extremo de Canal de fibra puede comunicarse con la red a través del puerto del conmutador.
+Conecta un puerto de conmutador al punto de conexión Canal de fibra al que está conectado el puerto. La existencia de este objeto significa que el puerto del conmutador y el punto de conexión de Canal de fibra están conectados activamente y el puerto Canal de fibra asociado al punto de conexión de Canal de fibra puede comunicarse con la red a través del puerto del conmutador.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,45 +47,45 @@ class Msvm_FcActiveConnection : CIM_ActiveConnection
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ FcActiveConnection** tiene estos tipos de miembros:
+La **clase \_ FcActiveConnection de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ FcActiveConnection** tiene estas propiedades.
+La **clase \_ FcActiveConnection de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **MSVM \_ FcEndpoint**
+Tipo de datos: **Msvm \_ FcEndpoint**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Una referencia a una instancia de la clase [**MSVM \_ FcEndpoint**](msvm-fcendpoint.md) que representa el punto de acceso al servicio (SAP) que está configurado para comunicarse o se comunica activamente con el SAP dependiente. En una conexión unidireccional, este SAP es el que se está transmitiendo.
+Referencia a una instancia de la clase [**\_ FcEndpoint de Msvm**](msvm-fcendpoint.md) que representa el punto de acceso de servicio (SAP) configurado para comunicarse o que se está comunicando activamente con el SAP dependiente. En una conexión unidireccional, este SAP es el que transmite.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **MSVM \_ FcEndpoint**
+Tipo de datos: **Msvm \_ FcEndpoint**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Una referencia a una instancia de la clase [**MSVM \_ FcEndpoint**](msvm-fcendpoint.md) que representa el SAP que está configurado para comunicarse o que se comunica activamente con el SAP antecedente. En una conexión unidireccional, este SAP es el que está recibiendo.
+Referencia a una instancia de la clase [**\_ FcEndpoint de Msvm**](msvm-fcendpoint.md) que representa el SAP configurado para comunicarse o que se está comunicando activamente con el SAP anterior. En una conexión unidireccional, este SAP es el que recibe.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si esta propiedad es **true**, esta conexión es unidireccional. de lo contrario, esta conexión es bidireccional. Cuando una conexión es unidireccional, el "altavoz" debe definirse como referencia **antecedente** . En una conexión bidireccional, no importa si el punto de acceso seleccionado es el **antecedente** o **dependiente**. Esta propiedad se hereda de [**la \_ ActiveConnection de CIM**](/previous-versions//cc136779(v=vs.85)).
+Si esta propiedad es **True**, esta conexión es unidireccional; de lo contrario, esta conexión es bidireccional. Cuando una conexión es unidireccional, el "hablante" debe definirse como la **referencia anterior.** En una conexión bidireccional, no importa si el punto de acceso seleccionado es el antecedente **o** **dependiente.** Esta propiedad se hereda de [**CIM \_ ActiveConnection.**](/previous-versions//cc136779(v=vs.85))
 
 </dd> <dt>
 
@@ -111,20 +111,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda de [**la \_ ActiveConnection de CIM**](/previous-versions//cc136779(v=vs.85)), pero no se usa.
+Esta propiedad se hereda de [**CIM \_ ActiveConnection,**](/previous-versions//cc136779(v=vs.85))pero no se usa.
 
 </dd> <dt>
 
 **TrafficType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda de [**la \_ ActiveConnection de CIM**](/previous-versions//cc136779(v=vs.85)), pero no se usa.
+Esta propiedad se hereda de [**CIM \_ ActiveConnection,**](/previous-versions//cc136779(v=vs.85))pero no se usa.
 
 </dd> </dl>
 
@@ -132,12 +132,12 @@ Esta propiedad se hereda de [**la \_ ActiveConnection de CIM**](/previous-versio
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

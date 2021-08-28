@@ -1,5 +1,5 @@
 ---
-description: Las constantes siguientes especifican el conjunto válido de propiedades de Windows del analizador de adquisición de imágenes (WIA).
+description: Las siguientes constantes especifican el conjunto válido de propiedades de Windows del analizador de adquisición de imágenes (WIA).
 ms.assetid: c7c5b10b-81e8-4a30-b20a-ea187724ddd4
 title: Constantes de propiedad de elemento WIA del analizador (Wiadef.h)
 ms.topic: reference
@@ -57,16 +57,16 @@ api_type:
 - HeaderDef
 api_location:
 - wiadef.h
-ms.openlocfilehash: 3202a4ae6bec7808d2d71fe890f248e6b4d3c397
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 008a806ccaebd595fe7a67ff8f98e6a9385b0bf2
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624771"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882703"
 ---
 # <a name="scanner-wia-item-property-constants"></a>Constantes de propiedad de elemento WIA del analizador
 
-Las constantes siguientes especifican el conjunto válido de propiedades de Windows del analizador de adquisición de imágenes (WIA).
+Las siguientes constantes especifican el conjunto válido de propiedades de Windows del analizador de adquisición de imágenes (WIA).
 
 El prefijo "WIA IPS" indica una propiedad item para dispositivos scanner y es la convención de nomenclatura usada \_ \_ en C/C++. Con fines de scripting, estas constantes usan el prefijo "ScannerPicture" y forman parte del tipo enumerado [WiaItemPropertyId.](-wia-wiaitempropertyid.md) El nombre de miembro correspondiente de esa enumeración de script aparece entre paréntesis junto al nombre de constante de C/C++ en la lista siguiente.
 
@@ -114,9 +114,9 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 </tr>
 <tr class="even">
 <td ><span id="WIA_IPS_BRIGHTNESS"></span><span id="wia_ips_brightness"></span><dl> <dt><strong>WIA_IPS_BRIGHTNESS</strong></dt> <dt>ScannerPictureBrightness</dt> </dl></td>
-<td ><p>Los valores de brillo de la imagen disponibles en el escáner.</p>
+<td ><p>Los valores de brillo de la imagen disponibles en el analizador.</p>
 <p>Contiene la configuración de brillo de hardware actual para el dispositivo. Una aplicación establece esta propiedad en el valor de brillo del hardware. El minidriver crea y mantiene esta propiedad.</p>
-<p>Los valores deben asignarse en un intervalo de -1000 a 1000, donde 1000 corresponde al brillo máximo, 0 corresponde al brillo normal y -1000 corresponde al brillo mínimo.</p>
+<p>Los valores se deben asignar en un intervalo de -1000 a 1000, donde 1000 corresponde al brillo máximo, 0 corresponde al brillo normal y -1000 corresponde al brillo mínimo.</p>
 <p>Obligatorio para todos los elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK y WIA_CATEGORY_FILM. Opcional, pero recomendado, para los WIA_CATEGORY_FINISHED_FILE que admiten vistas previas.</p>
 <p>Tipo: <strong>VT_I4</strong>, acceso: lectura/escritura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a></p></td>
 </tr>
@@ -130,7 +130,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <tr class="even">
 <td ><span id="WIA_IPS_CUR_INTENT"></span><span id="wia_ips_cur_intent"></span><dl> <dt><strong>WIA_IPS_CUR_INTENT</strong></dt> <dt>ScannerPictureCurIntent</dt> </dl></td>
 <td ><p>Contiene la configuración de intención actual. El minidriver crea y mantiene esta propiedad.</p>
-<p>Obligatorio para todos los elementos habilitados para la adquisición; Es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK y WIA_CATEGORY_FILM. No se admite para WIA_CATEGORY_FINISHED_FILE o WIA_CATEGORY_FOLDER elementos.</p>
+<p>Obligatorio para todos los elementos habilitados para la adquisición; es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK y WIA_CATEGORY_FILM. No se admite para WIA_CATEGORY_FINISHED_FILE o WIA_CATEGORY_FOLDER elementos.</p>
 <p>Tipo: <strong>VT_I4</strong> acceso: lectura/escritura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_FLAGS</a></p>
 <p>El controlador los usa para preestablecidar las propiedades de los elementos en función del uso previsto de la imagen por parte de una aplicación. Esto puede incluir, por ejemplo, la calidad máxima, el tamaño mínimo, y así sucesivamente.</p>
 <p>El controlador elige la profundidad de bits, en puntos por pulgada, y otras configuraciones que determina son adecuadas para la intención seleccionada. La aplicación debe leer la configuración actual para determinar qué propiedades se cambiaron. Una aplicación establece esta propiedad para establecer automáticamente las propiedades de WIA para una intención de adquisición específica. Esta propiedad es necesaria para todos los analizadores.</p>
@@ -211,7 +211,7 @@ Las marcas se pueden combinar con un operador <strong>OR</strong> bit a bit, per
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td ><span id="WIA_IPS_DESKEW_X"></span><span id="wia_ips_deskew_x"></span><dl> <dt><strong>WIA_IPS_DESKEW_X</strong></dt> <dt>ScannerPictureDeskdiceX</dt> </dl></td>
+<td ><span id="WIA_IPS_DESKEW_X"></span><span id="wia_ips_deskew_x"></span><dl> <dt><strong>WIA_IPS_DESKEW_X</strong></dt> <dt>ScannerPictureDeskdeskdeskx</dt> </dl></td>
 <td ><div class="alert">
 <blockquote>
 [!Note]<br />
@@ -227,7 +227,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <p>Tipo: <strong>VT_I4</strong>, acceso: lectura/escritura, valores válidos: WIA_PROP_RANGE</p></td>
 </tr>
 <tr class="even">
-<td ><span id="WIA_IPS_DESKEW_Y"></span><span id="wia_ips_deskew_y"></span><dl> <dt><strong>WIA_IPS_DESKEW_Y</strong></dt> <dt>ScannerPictureDeskdeskdesky</dt> </dl></td>
+<td ><span id="WIA_IPS_DESKEW_Y"></span><span id="wia_ips_deskew_y"></span><dl> <dt><strong>WIA_IPS_DESKEW_Y</strong></dt> <dt>ScannerPictureDeskdesky</dt> </dl></td>
 <td ><div class="alert">
 <blockquote>
 [!Note]<br />
@@ -237,7 +237,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <div>
  
 </div>
-<p>Contiene el número de píxeles en la dirección Y desde WIA_IPS_YPOS hasta la coordenada y de la esquina más izquierda de la imagen que se va a escritorio. Por lo tanto, describe, junto con WIA_IPS_DESKEW_X, dónde se encuentran las dos esquinas superiores de la imagen sesgada dentro del rectángulo delimitador definido por WIA_IPS_XPOS, WIA_IPS_YPOS, WIA_IPS_XEXTENT y WIA_IPS_YEXTENT. El controlador del analizador implementa esta propiedad si admite el escritorio.</p>
+<p>Contiene el número de píxeles en la dirección Y desde WIA_IPS_YPOS hasta la coordenada y de la esquina más izquierda de la imagen que se va a desenvolcar. Por lo tanto, describe, junto con WIA_IPS_DESKEW_X, dónde se encuentran las dos esquinas superiores de la imagen sesgada dentro del rectángulo delimitador definido por WIA_IPS_XPOS, WIA_IPS_YPOS, WIA_IPS_XEXTENT y WIA_IPS_YEXTENT. El controlador del analizador implementa esta propiedad si admite el escritorio.</p>
 <p>Los valores válidos para WIA_IPS_DESKEW_Y deben estar entre 0 y (WIA_IPS_YEXTENT - 1). Un valor de 0 significa que no se debe realizar ninguna operación de escritorio.</p>
 <p>Esta propiedad es opcional para los elementos de las categorías WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER y WIA_CATEGORY_FILM; y no está disponible para WIA_CATEGORY_FINISHED_FILE o WIA_CATEGORY_FOLDER elementos.</p>
 <p>Tipo: <strong>VT_I4</strong>, acceso: lectura/escritura, valores válidos: WIA_PROP_RANGE</p></td>
@@ -267,19 +267,19 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <tbody>
 <tr class="odd">
 <td>DUPLEX</td>
-<td>Examen mediante operaciones de dúplex. Examinar ambos lados del documento mediante la configuración común configurada para el elemento de fuente (WIA_CATEGORY_FEEDER). Duplex y ADVANCE_DUPLEX no se pueden establecer.</td>
+<td>Examen mediante operaciones de dúplex. Examinar ambos lados del documento mediante la configuración común configurada para el elemento de fuente (WIA_CATEGORY_FEEDER). DÚPLEX y ADVANCE_DUPLEX no se pueden establecer.</td>
 </tr>
 <tr class="even">
 <td>ADVANCED_DUPLEX</td>
-<td>Examinar mediante la configuración individual configurada para cada elemento de fuente secundario (WIA_CATEGORY_FEEDER_FRONT y WIA_CATEGORY_FEEDER_BACK). Duplex y ADVANCE_DUPLEX no se pueden establecer.</td>
+<td>Examinar mediante la configuración individual configurada para cada elemento de fuente secundario (WIA_CATEGORY_FEEDER_FRONT y WIA_CATEGORY_FEEDER_BACK). DÚPLEX y ADVANCE_DUPLEX no se pueden establecer.</td>
 </tr>
 <tr class="odd">
 <td>FRONT_FIRST</td>
-<td>Examinar primero la parte frontal del documento. Este valor es válido cuando se establece DUPLEX o ADVANCED_DUPLEX.</td>
+<td>Examinar primero la parte frontal del documento. Este valor es válido cuando se establece DÚPLEX ADVANCED_DUPLEX dúplex.</td>
 </tr>
 <tr class="even">
 <td>BACK_FIRST</td>
-<td>Examinar primero la parte posterior del documento. Este valor es válido cuando se establece DUPLEX o ADVANCED_DUPLEX.</td>
+<td>Examinar primero la parte posterior del documento. Este valor es válido cuando se establece DÚPLEX ADVANCED_DUPLEX dúplex.</td>
 </tr>
 <tr class="odd">
 <td>FRONT_ONLY</td>
@@ -287,7 +287,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 </tr>
 <tr class="even">
 <td>BACK_ONLY</td>
-<td>Examinar solo la parte posterior. Este valor es válido cuando se establece DUPLEX o ADVANCED_DUPLEX.</td>
+<td>Examinar solo la parte posterior. Este valor es válido cuando se establece DÚPLEX ADVANCED_DUPLEX dúplex.</td>
 </tr>
 </tbody>
 </table>
@@ -308,7 +308,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <p>Habilita la especificación de un archivo adjunto de análisis de películas determinado cuando hay más de uno.</p>
 <p>Esta propiedad es necesaria para los elementos WIA_CATEGORY_FILM cuando hay varios elementos de examen de películas. Si el dispositivo solo admite un elemento de película de escáner raíz, esta propiedad es opcional.</p>
 <p>Tipo: <strong>VT_BSTR</strong>, acceso: solo lectura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p>
-<p>Valores permitidos: el BSTR debe tener el formato ,- para permitir la localización, ya que esta cadena se exponería al usuario a través de la interfaz de usuario @ResourceBinary <ResourceID> de examen de películas.</p></td>
+<p>Valores permitidos: el BSTR debe tener el formato ,- ResourceID para permitir la localización, ya que esta cadena se exponería al usuario a través de la interfaz de usuario @ResourceBinary &lt; de examen de &gt; películas.</p></td>
 </tr>
 <tr class="odd">
 <td ><span id="WIA_IPS_FILM_SCAN_MODE"></span><span id="wia_ips_film_scan_mode"></span><dl> <dt><strong>WIA_IPS_FILM_SCAN_MODE</strong></dt> <dt>ScannerPictureScanMode</dt> </dl></td>
@@ -353,7 +353,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <tr class="even">
 <td ><span id="WIA_IPS_INVERT"></span><span id="wia_ips_invert"></span><dl> <dt><strong>WIA_IPS_INVERT</strong></dt> <dt>ScannerPictureInvert</dt> </dl></td>
 <td ><p>Reservado para uso futuro y no se implementa en este momento.</p>
-<p>Tipo: <strong>VT_I4</strong>, acceso: solo lectura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
+<p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="odd">
 <td ><span id="WIA_IPA_ITEMS_STORED"></span><span id="wia_ipa_items_stored"></span><dl> <dt><strong>WIA_IPA_ITEMS_STORED</strong></dt> <dt>ScannerPictureInvert</dt> </dl></td>
@@ -367,7 +367,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
  
 </div>
 <p>Especifica cuántos elementos se almacenan en el WIA_CATEGORY_FOLDER elemento.</p>
-<p>Tipo: <strong>VT_I4</strong>, acceso: solo lectura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
+<p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_IPS_LAMP"></span><span id="wia_ips_lamp"></span><dl> <dt><strong>WIA_IPS_LAMP</strong></dt> <dt>ScannerPictureLamp</dt> </dl></td>
@@ -479,7 +479,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <tr class="even">
 <td ><span id="WIA_IPS_MIRROR"></span><span id="wia_ips_mirror"></span><dl> <dt><strong>WIA_IPS_MIRROR</strong></dt> <dt>ScannerPictureMirror</dt> </dl></td>
 <td ><p>Reservado para uso futuro y no se implementa en este momento.</p>
-<p>Tipo: <strong>VT_I4</strong>, acceso: solo lectura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
+<p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="odd">
 <td ><span id="WIA_IPS_OPTICAL_XRES"></span><span id="wia_ips_optical_xres"></span><dl> <dt><strong>WIA_IPS_OPTICAL_XRES</strong></dt> <dt>ScannerPictureOpticalXres</dt> </dl></td>
@@ -512,7 +512,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <tr class="odd">
 <td ><span id="WIA_IPS_ORIENTATION"></span><span id="wia_ips_orientation"></span><dl> <dt><strong>WIA_IPS_ORIENTATION</strong></dt> <dt>ScannerPictureOrientation</dt> </dl></td>
 <td ><p>Especifica la orientación actual de los documentos que se examinarán. El minidriver crea y mantiene esta propiedad.</p>
-<p>Una aplicación establece esta propiedad para definir la orientación original de una página o imagen que se va a adquirir. Para obtener información sobre cómo usar WIA_IPS_ORIENTATION, vea <strong>WIA_IPS_PAGE_SIZE</strong>.</p>
+<p>Una aplicación establece esta propiedad para definir la orientación original de una página o imagen que se va a adquirir. Para obtener información sobre cómo usar WIA_IPS_ORIENTATION, <strong>vea WIA_IPS_PAGE_SIZE</strong>.</p>
 <div class="alert">
 <blockquote>
 [!Note]<br />
@@ -592,19 +592,19 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 </table>
 
 <p> </p>
-<p>El valor de la <strong>WIA_IPS_ORIENTATION</strong> propiedad determina la orientación de la página seleccionada actualmente. Las <strong>WIA_IPS_PAGE_WIDTH</strong> y <strong>WIA_IPS_PAGE_HEIGHT</strong> informe de las dimensiones de la página, en milésimas de pulgada. Estas propiedades deben estar de acuerdo con <strong>WIA_IPS_XEXTENT</strong> y <strong>WIA_IPS_YEXTENT</strong>, que contienen las dimensiones de la página en píxeles.</p>
+<p>El valor de la <strong>WIA_IPS_ORIENTATION</strong> determina la orientación de la página seleccionada actualmente. Las <strong>WIA_IPS_PAGE_WIDTH</strong> y <strong>WIA_IPS_PAGE_HEIGHT</strong> informe de las dimensiones de la página, en milésimas de pulgada. Estas propiedades deben estar de acuerdo con <strong>WIA_IPS_XEXTENT</strong> y <strong>WIA_IPS_YEXTENT</strong>, que contienen las dimensiones de la página en píxeles.</p>
 <div class="alert">
 <blockquote>
 [!Note]<br />
-Los valores válidos de tipo WIA_PROP_LIST dependen de la configuración válida de <strong>la WIA_IPS_ORIENTATION</strong> propiedad . Si, por ejemplo, el dispositivo no puede examinar documentos orientados al entorno con una configuración de WIA_PAGE_A4, WIA_PAGE_A4 no es un valor válido para la propiedad <strong>WIA_IPS_PAGE_SIZE</strong> cuando <strong>WIA_IPS_ORIENTATION</strong> está establecido en LANDSCAPE.
+Los valores válidos de tipo WIA_PROP_LIST dependen de la configuración válida de <strong>la WIA_IPS_ORIENTATION</strong> propiedad. Por ejemplo, si el dispositivo no puede examinar documentos orientados al entorno con una configuración de WIA_PAGE_A4, WIA_PAGE_A4 no es un valor válido para la propiedad <strong>WIA_IPS_PAGE_SIZE</strong> cuando <strong>WIA_IPS_ORIENTATION</strong> está establecido en LANDSCAPE.
 </blockquote>
 </div>
 <div>
  
 </div>
 <p>Si una aplicación establece <strong>WIA_IPS_PAGE_SIZE</strong> en cualquier valor distinto de los tres de la tabla anterior, el minidriver debe ajustar los valores de <strong>WIA_IPS_PAGE_WIDTH</strong> y <strong>WIA_IPS_PAGE_HEIGHT a</strong> las dimensiones de la página en milésimas de pulgada. También debe ajustar los valores de <strong>WIA_IPS_XEXTENT</strong> y <strong>WIA_IPS_YEXTENT</strong> a las dimensiones de la página en píxeles.</p>
-<p>Si se cambia una configuración de extensión<strong>( WIA_IPS_XEXTENT</strong> <strong>o WIA_IPS_YEXTENT</strong>) a un valor que no coincide con la configuración de tamaño de página actual, el minidriver debe cambiar el valor de la propiedad <strong>WIA_IPS_PAGE_SIZE</strong> a WIA_PAGE_CUSTOM. El minidriver también debe modificar <a href="-wia-wiaitempropscannerdevice.md"><strong>WIA_IPS_PAGE_WIDTH</strong></a> o <strong>WIA_IPS_PAGE_HEIGHT</strong> de acuerdo con la nueva configuración de extensión.</p>
-<p>Si <strong>WIA_IPS_ORIENTATION</strong> se establece en LANDSCAPE, la configuración de extensión se intercambiará con respecto a sus valores habituales. Por ejemplo, si una aplicación establece <strong>WIA_IPS_PAGE_SIZE</strong> en WIA_PAGE_A4, el minidriver establece <strong>WIA_IPS_PAGE_WIDTH</strong> en 11692 y <strong>WIA_IPS_PAGE_HEIGHT</strong> en 8267. (El minidriver también debe ajustar <strong>WIA_IPS_XEXTENT</strong> y <strong>WIA_IPS_YEXTENT</strong> en consecuencia).</p>
+<p>Si se cambia una configuración de extensión (<strong>WIA_IPS_XEXTENT</strong> <strong>o WIA_IPS_YEXTENT</strong>) a un valor que no coincide con la configuración de tamaño de página actual, el minidriver debe cambiar el valor de la propiedad <strong>WIA_IPS_PAGE_SIZE</strong> a WIA_PAGE_CUSTOM. El minidriver también debe modificar <a href="-wia-wiaitempropscannerdevice.md"><strong>WIA_IPS_PAGE_WIDTH</strong></a> o <strong>WIA_IPS_PAGE_HEIGHT</strong> de acuerdo con la nueva configuración de extensión.</p>
+<p>Si <strong>WIA_IPS_ORIENTATION</strong> se establece en LANDSCAPE, la configuración de extensión se intercambiará con respecto a sus valores habituales. Por ejemplo, si <strong></strong> una aplicación establece WIA_IPS_PAGE_SIZE en WIA_PAGE_A4, el minidriver establece <strong>WIA_IPS_PAGE_WIDTH</strong> en 11692 y <strong>WIA_IPS_PAGE_HEIGHT</strong> en 8267. (El minidriver también debe ajustar <strong>WIA_IPS_XEXTENT</strong> y <strong>WIA_IPS_YEXTENT</strong> en consecuencia).</p>
 <div class="alert">
 <blockquote>
 [!Note]<br />
@@ -614,7 +614,7 @@ Si <a href="-wia-wiaitempropscannerdevice.md"><strong>WIA_IPS_PAGE_SIZE</strong>
 <div>
  
 </div>
-<p>El minidriver es responsable de garantizar que la <strong>propiedad WIA_IPS_ORIENTATION</strong> esté de acuerdo con el área de selección actual. Si una aplicación cambia el valor de <strong>WIA_IPS_ORIENTATION a</strong> uno que no es válido para el tamaño de página seleccionado actualmente, el minidriver debe cambiar el valor de <strong>WIA_IPS_PAGE_SIZE a</strong> un tamaño de página compatible con el nuevo valor de orientación.</p>
+<p>El minidriver es responsable de garantizar que la <strong>propiedad WIA_IPS_ORIENTATION</strong> esté de acuerdo con el área de selección actual. Si una aplicación cambia el valor de <strong>WIA_IPS_ORIENTATION a</strong> uno que no es válido para el tamaño de página seleccionado actualmente, el minidriver debe cambiar el valor de <strong>WIA_IPS_PAGE_SIZE</strong> a un tamaño de página compatible con el nuevo valor de orientación.</p>
 <p>Si una aplicación establece la <strong>propiedad WIA_IPS_PAGE_SIZE</strong> en WIA_PAGE_CUSTOM, el área de selección actual no se ve afectada. El minidriver wia debe obtener el diseño de imagen actual, empezando por la configuración actual de las <strong>WIA_IPS_XPOS</strong> y <strong>WIA_IPS_YPOS</strong> propiedades. Si la configuración de tamaño de página da como resultado un área de selección que está fuera de la cámara del analizador, el minidriver debe ajustar automáticamente los valores de las propiedades <strong>WIA_IPS_XPOS</strong> y <strong>WIA_IPS_YPOS</strong> a la configuración válida. Si las propiedades <strong>WIA_IPS_PAGE_SIZE</strong> <strong>y WIA_IPS_ORIENTATION</strong> se establecen al mismo tiempo y no son válidas cuando se aplican en combinación, el minidriver debe producir un error en la configuración de la aplicación devolviendo un error en <a href="https://msdn.microsoft.com/library/ms794145.aspx">IWiaMiniDrv::d rvValidateItemProperties</a>.</p>
 <p>Los cuatro ejemplos siguientes muestran diferentes <strong>WIA_IPS_PAGE_SIZE</strong> escenarios.</p>
 <ol>
@@ -821,7 +821,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 </div>
 <p>Indica el modo de vista previa de un dispositivo. Una aplicación establece esta propiedad para colocar el dispositivo en modo de vista previa.</p>
 <p>Esta propiedad es necesaria para los elementos WIA_CATEGORY_FLATBED y WIA_CATEGORY_FILM, opcional para el WIA_CATEGORY_FEEDER elemento.</p>
-<p>Tipo: <strong>VT_I4</strong>, Acceso: Lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_LIST</a></p>
+<p>Tipo: <strong>VT_I4</strong>, acceso: lectura/escritura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_LIST</a></p>
 <p>En la tabla siguiente se tienen las constantes que son válidas con esta propiedad. </p>
 <table>
 <thead>
@@ -855,8 +855,8 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <div>
  
 </div>
-<p>Especifica si la imagen de vista previa existente se puede actualizar durante una vista previa de la imagen (en respuesta a un cambio en las propiedades WIA_IPA_DATATYPE o WIA_IPA_DEPTH imagen).</p>
-<p>Esta propiedad es opcional para todos los elementos habilitados para adquisición que admiten exámenes de vista previa; es decir, WIA_IPS_PREVIEW se admite con WIA_PREVIEW_SCAN. Esto incluye elementos de tipos WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK y WIA_CATEGORY_FILM.</p>
+<p>Especifica si la imagen de vista previa existente se puede actualizar durante una vista previa de la imagen (en respuesta a un cambio en las WIA_IPA_DATATYPE o WIA_IPA_DEPTH propiedades).</p>
+<p>Esta propiedad es opcional para todos los elementos habilitados para adquisición que admiten exámenes de versión preliminar; es decir, WIA_IPS_PREVIEW se admite con WIA_PREVIEW_SCAN. Esto incluye elementos de tipos WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK y WIA_CATEGORY_FILM.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p>
 <p>En la tabla siguiente se tienen las constantes que son válidas con esta propiedad. </p>
 <table>
@@ -887,7 +887,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <div class="alert">
 <blockquote>
 [!Note]<br />
-WIA_IPS_ORIENTATION hace referencia a la posición del documento que se va a examinar en la cámara del escáner o en el comensal. Es la orientación del documento en relación con la dirección del examen. WIA_IPS_ROTATION hace referencia a la rotación que se aplica a la imagen después de examinarla, justo antes de que la imagen se transfiera a la aplicación.
+WIA_IPS_ORIENTATION hace referencia a la posición del documento que se va a examinar en la cámara o el comensor del escáner. Es la orientación del documento en relación con la dirección del examen. WIA_IPS_ROTATION hace referencia a la rotación que se aplica a la imagen después de examinarla, justo antes de transferir la imagen a la aplicación.
 </blockquote>
 </div>
 <div>
@@ -954,7 +954,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <tbody>
 <tr class="odd">
 <td>WIA_USE_SEGMENTATION_FILTER</td>
-<td>La aplicación debe usar el filtro de segmentación para el examen en varias regiones.</td>
+<td>La aplicación debe usar el filtro de segmentación para el examen de varias regiones.</td>
 </tr>
 <tr class="even">
 <td>WIA_DONT_USE_SEGMENTATION_FILTER</td>
@@ -985,8 +985,8 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <div>
  
 </div>
-<p>Contiene el registro, o alineación y detección de borde, para los documentos que se colocan en la pantalla plana. El minidriver crea y mantiene esta propiedad. Esta propiedad indica cómo la hoja se coloca horizontalmente en la cabeza de examen de un escáner portátil o de hoja. La propiedad se usa para predecir dónde se coloca un documento en la parte principal del examen.</p>
-<p>En el caso de los escáneres que admiten más de un responsable de examen, esta propiedad es relativa al más alto. Esta propiedad es obligatoria para los escáneres de hojas, de desplazamiento y portátiles.</p>
+<p>Contiene el registro, o alineación y detección de borde, para los documentos que se colocan en la pantalla plana. El minidriver crea y mantiene esta propiedad. Esta propiedad indica cómo la hoja se coloca horizontalmente en la cabeza de examen de un escáner portátil o de hoja. La propiedad se usa para predecir dónde se coloca un documento a través de la cabeza del examen.</p>
+<p>En el caso de los escáneres que admiten más de un responsable de examen, esta propiedad es relativa al más alto. Esta propiedad es obligatoria para escáneres de hoja, de desplazamiento y portátiles.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p>
 <p>La tabla siguiente tiene las tres constantes que son válidas con esta propiedad.</p>
 
@@ -1004,7 +1004,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 </tr>
 <tr class="even">
 <td>CENTRADO</td>
-<td>La hoja se centra en la parte principal del examen.</td>
+<td>La hoja se centra en la cabeza del examen.</td>
 </tr>
 <tr class="odd">
 <td>RIGHT_JUSTIFIED</td>
@@ -1027,7 +1027,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
  
 </div>
 <p>Indica si un elemento necesita que se muestre al usuario un control de vista previa. El minidriver crea y mantiene esta propiedad.</p>
-<p>Opcional para todos los elementos habilitados para la transferencia. Normalmente son solo elementos de las categorías WIA_ITEM_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FILM y WIA_CATEGORY_FINISHED_FILE.</p>
+<p>Opcional para todos los elementos habilitados para transferencia. Normalmente son solo elementos de las categorías WIA_ITEM_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FILM y WIA_CATEGORY_FINISHED_FILE.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p>
 <p>En la tabla siguiente se tienen las constantes que son válidas con esta propiedad. </p>
 <table>
@@ -1040,7 +1040,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <tbody>
 <tr class="odd">
 <td>WIA_SHOW_PREVIEW_CONTROL</td>
-<td>Mostrar un control de vista previa al usuario, ya que este dispositivo puede realizar una vista previa.</td>
+<td>Muestre un control de vista previa al usuario, ya que este dispositivo puede realizar una vista previa.</td>
 </tr>
 <tr class="even">
 <td>WIA_DONT_SHOW_PREVIEW_CONTROL</td>
@@ -1063,9 +1063,9 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
  
 </div>
 <p>Especifica si la aplicación (o los filtros) pueden crear elementos secundarios en el elemento actual.</p>
-<p>Opcional para todas las categorías de elementos habilitadas para transferencia: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FILM e incluso WIA_CATEGORY_FOLDER. (Si el almacenamiento no admite la carga de nuevos elementos, esta propiedad debe no ser compatible o no con el <strong>valor FALSE).</strong></p>
+<p>Opcional para todas las categorías de elementos habilitadas para transferencia: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FILM e incluso WIA_CATEGORY_FOLDER. (Si el almacenamiento no admite la carga de nuevos elementos, esta propiedad debe ser no compatible o compatible con el <strong>valor FALSE).</strong></p>
 <p>Los elementos que WIA_IPS_SEGMENTATION y WIA_USE_SEGMENTATION_FILTER también deben admitir WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION y establecerlo en <strong>TRUE.</strong></p>
-<p>Tipo: <strong>VT_I4</strong>, Acceso: solo lectura, Valores válidos: <strong>TRUE</strong> y <strong>FALSE</strong></p></td>
+<p>Tipo: <strong>VT_I4</strong>, acceso: solo lectura, valores válidos: <strong>TRUE</strong> y <strong>FALSE</strong></p></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_IPS_THRESHOLD"></span><span id="wia_ips_threshold"></span><dl> <dt><strong>WIA_IPS_THRESHOLD</strong></dt> <dt>ScannerPictureThreshold</dt> </dl></td>
@@ -1078,7 +1078,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <div>
  
 </div>
-<p>Especifica el valor de escala de grises que determina si un píxel se convertirá en blanco o negro cuando una imagen se convierta en monocromática. Los píxeles por encima del umbral se convierten en blanco. Los píxeles por debajo del umbral se convierten en blanco.</p>
+<p>Especifica el valor de escala de grises que determina si un píxel se convertirá en blanco o negro cuando una imagen se convierta a monocromática. Los píxeles por encima del umbral se convierten en blanco. Los píxeles por debajo del umbral se convierten en blanco.</p>
 <p>Esta propiedad es necesaria para los elementos de adquisición que admiten exámenes de 1 bpp y que tienen la propiedad WIA_IPA_DATATYPE establecida en WIA_DATA_THRESHOLD.</p>
 <p>Tipo: <strong>VT_I4</strong>, acceso: lectura/escritura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a></p></td>
 </tr>
@@ -1094,7 +1094,7 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
  
 </div>
 <p>Especifica si el controlador es capaz de transferir varios elementos secundarios en una sola llamada de transferencia.</p>
-<p>Tipo: <strong>VT_I4</strong>, acceso: solo lectura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_FLAG</a></p>
+<p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_FLAG</a></p>
 <p>El único valor posible para esta propiedad es WIA_TRANSFER_CHILDREN_SINGLE_SCAN. Si se establece esta marca, el controlador es capaz de transferir varios elementos secundarios en una sola llamada de transferencia. Si no se establece la marca, el servicio WIA recorrerá los elementos secundarios de forma recursiva y, a continuación, transferirá cada uno de esos elementos.</p></td>
 </tr>
 <tr class="even">
@@ -1114,31 +1114,31 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <tr class="odd">
 <td ><span id="WIA_IPS_WARM_UP_TIME"></span><span id="wia_ips_warm_up_time"></span><dl> <dt><strong>WIA_IPS_WARM_UP_TIME</strong></dt> <dt>ScannerPictureWarmUpTime</dt> </dl></td>
 <td ><p>Especifica el tiempo máximo de arranque, en milisegundos, que necesita el dispositivo antes de iniciar la operación de examen. El minidriver crea y mantiene esta propiedad.</p>
-<p>Una aplicación puede leer esta propiedad para determinar el tiempo máximo de espera para este dispositivo. A continuación, puede presentar un cuadro de diálogo esperando a que el dispositivo se ponga en marcha, para que el usuario sepa que puede producirse una espera o una pausa antes de &quot; &quot; que ocurra algo.</p>
-<p>Esta propiedad es necesaria para todos los elementos habilitados para la adquisición; Es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK y WIA_CATEGORY_FILM.</p>
+<p>Una aplicación puede leer esta propiedad para determinar el tiempo máximo de reserva para este dispositivo. A continuación, puede presentar un cuadro de diálogo esperando a que el dispositivo se ponga en marcha para que el usuario sepa que puede producirse una espera o pausa &quot; antes de que ocurra &quot; algo.</p>
+<p>Esta propiedad es necesaria para todos los elementos habilitados para la adquisición; es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK y WIA_CATEGORY_FILM.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_IPS_XEXTENT"></span><span id="wia_ips_xextent"></span><dl> <dt><strong>WIA_IPS_XEXTENT</strong></dt> <dt>ScannerPictureXextent</dt> </dl></td>
 <td ><p>Contiene el ancho actual, en píxeles, de la imagen seleccionada que se adquirirá. Una aplicación establece esta propiedad para marcar el ancho de un área de selección que se va a adquirir. Esta propiedad debe coincidir con la <a href="-wia-wiaitempropcommonitem.md"><strong>WIA_IPA_PIXELS_PER_LINE</strong></a> propiedad . El minidriver crea y mantiene esta propiedad.</p>
-<p>Necesario para todos los elementos habilitados para la adquisición; Es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK y WIA_CATEGORY_FILM.</p>
+<p>Obligatorio para todos los elementos habilitados para la adquisición; Es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK y WIA_CATEGORY_FILM.</p>
 <p>Tipo: <strong>VT_I4</strong>, acceso: lectura/escritura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a></p></td>
 </tr>
 <tr class="odd">
 <td ><span id="WIA_IPS_XPOS"></span><span id="wia_ips_xpos"></span><dl> <dt><strong>WIA_IPS_XPOS</strong></dt> <dt>ScannerPictureXpos</dt> </dl></td>
 <td ><p>Contiene la coordenada x, en píxeles, de la esquina superior izquierda de la imagen seleccionada. Una aplicación establece esta propiedad para marcar la esquina superior izquierda del área de selección. El minidriver crea y mantiene esta propiedad.</p>
-<p>Necesario para todos los elementos habilitados para la adquisición; Es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK, WIA_CATEGORY_FINISHED_FILE y WIA_CATEGORY_FILM. No se admite para WIA_CATEGORY_FOLDER elementos.</p>
+<p>Obligatorio para todos los elementos habilitados para la adquisición; es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK, WIA_CATEGORY_FINISHED_FILE y WIA_CATEGORY_FILM. No se admite para WIA_CATEGORY_FOLDER elementos.</p>
 <p>Tipo: <strong>VT_I4</strong>, acceso: lectura/escritura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a></p></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_IPS_XRES"></span><span id="wia_ips_xres"></span><dl> <dt><strong>WIA_IPS_XRES</strong></dt> <dt>ScannerPictureXres</dt> </dl></td>
 <td ><p>Contiene la resolución horizontal actual, en píxeles por pulgada, para el dispositivo. Una aplicación establece esta propiedad para establecer la resolución horizontal. El minidriver crea y mantiene esta propiedad.</p>
-<p>Si el dispositivo se puede establecer en un solo valor, cree un <a href="-wia-property-attributes.md">WIA_PROP_LIST</a> y coloque el valor válido en él. También es un caso en el que una configuración de resolución depende de otra resolución. (La resolución vertical puede depender de la resolución horizontal).</p>
-<p>Necesario para todos los elementos habilitados para la adquisición; Es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK, WIA_CATEGORY_FINISHED_FILE y WIA_CATEGORY_FILM. No se admite para WIA_CATEGORY_FOLDER elementos.</p>
+<p>Si el dispositivo se puede establecer en un solo valor, cree un <a href="-wia-property-attributes.md">tipo WIA_PROP_LIST</a> y coloque el valor válido en él. También es un caso en el que una configuración de resolución depende de otra resolución. (La resolución vertical puede depender de la resolución horizontal).</p>
+<p>Obligatorio para todos los elementos habilitados para la adquisición; es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK, WIA_CATEGORY_FINISHED_FILE y WIA_CATEGORY_FILM. No se admite para WIA_CATEGORY_FOLDER elementos.</p>
 <p>Tipo: <strong>VT_I4</strong>, acceso: lectura/escritura o solo lectura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a> o WIA_PROP_LIST</p></td>
 </tr>
 <tr class="odd">
-<td ><span id="WIA_IPS_XSCALING"></span><span id="wia_ips_xscaling"></span><dl> <dt><strong>WIA_IPS_XSCALING</strong></dt> <dt>scannerPictureXscaling</dt> </dl></td>
+<td ><span id="WIA_IPS_XSCALING"></span><span id="wia_ips_xscaling"></span><dl> <dt><strong>WIA_IPS_XSCALING</strong></dt> <dt>ScannerPictureXscaling</dt> </dl></td>
 <td ><div class="alert">
 <blockquote>
 [!Note]<br />
@@ -1154,26 +1154,26 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 <p>Los valores pueden estar entre 1 y VT_I4 (0xFFFF). Por ejemplo, 100 significa que no hay escalado, 050 significa reducir verticalmente hasta el 50 % del tamaño orignal y 200 significa escalar verticalmente hasta el 200 % del tamaño original.</p></td>
 </tr>
 <tr class="even">
-<td ><span id="WIA_IPS_YEXTENT"></span><span id="wia_ips_yextent"></span><dl> <dt><strong>WIA_IPS_YEXTENT</strong></dt> <dt>scannerPictureYextent</dt> </dl></td>
-<td ><p>Contiene el alto actual, en píxeles, de la imagen seleccionada que se adquirirá. Una aplicación establece esta propiedad para marcar el alto de un área de selección. Esta propiedad debe estar de acuerdo con el valor de la <a href="-wia-wiaitempropcommonitem.md"><strong>WIA_IPA_PIXELS_PER_LINE</strong></a> propiedad . El minidriver crea y mantiene esta propiedad.</p>
-<p>Necesario para todos los elementos habilitados para la adquisición; Es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK y WIA_CATEGORY_FILM.</p>
+<td ><span id="WIA_IPS_YEXTENT"></span><span id="wia_ips_yextent"></span><dl> <dt><strong>WIA_IPS_YEXTENT</strong></dt> <dt>ScannerPictureYextent</dt> </dl></td>
+<td ><p>Contiene el alto actual, en píxeles, de la imagen seleccionada que se adquirirá. Una aplicación establece esta propiedad para marcar el alto de un área de selección. Esta propiedad debe estar de acuerdo con el valor de la <a href="-wia-wiaitempropcommonitem.md"><strong>WIA_IPA_PIXELS_PER_LINE</strong></a> propiedad. El minidriver crea y mantiene esta propiedad.</p>
+<p>Obligatorio para todos los elementos habilitados para la adquisición; Es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK y WIA_CATEGORY_FILM.</p>
 <p>Tipo: <strong>VT_I4</strong>, acceso: lectura/escritura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a></p></td>
 </tr>
 <tr class="odd">
 <td ><span id="WIA_IPS_YPOS"></span><span id="wia_ips_ypos"></span><dl> <dt><strong>WIA_IPS_YPOS</strong></dt> <dt>ScannerPictureYpos</dt> </dl></td>
 <td ><p>Coordenada y actual, en píxeles, de la esquina superior izquierda de la imagen seleccionada. Una aplicación establece esta propiedad para marcar la esquina superior izquierda del área de selección. El minidriver crea y mantiene esta propiedad.</p>
-<p>Necesario para todos los elementos habilitados para la adquisición; Es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK, WIA_CATEGORY_FINISHED_FILE y WIA_CATEGORY_FILM. No se admite para WIA_CATEGORY_FOLDER elementos.</p>
+<p>Obligatorio para todos los elementos habilitados para la adquisición; es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK, WIA_CATEGORY_FINISHED_FILE y WIA_CATEGORY_FILM. No se admite para WIA_CATEGORY_FOLDER elementos.</p>
 <p>Tipo: <strong>VT_I4</strong>, acceso: lectura/escritura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a></p></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_IPS_YRES"></span><span id="wia_ips_yres"></span><dl> <dt><strong>WIA_IPS_YRES</strong></dt> <dt>ScannerPictureYres</dt> </dl></td>
 <td ><p>Contiene la resolución vertical actual, en píxeles por pulgada, para el dispositivo. Una aplicación establece esta propiedad para establecer la resolución vertical. El minidriver crea y mantiene esta propiedad.</p>
-<p>Si el dispositivo se puede establecer en un solo valor, cree un <a href="-wia-property-attributes.md">WIA_PROP_LIST</a> y coloque el valor válido en él. También es un caso en el que una configuración de resolución depende de otra resolución. (La resolución horizontal puede depender de la resolución vertical).</p>
-<p>Necesario para todos los elementos habilitados para la adquisición; Es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK, WIA_CATEGORY_FINISHED_FILE y WIA_CATEGORY_FILM. No se admite para WIA_CATEGORY_FOLDER elementos.</p>
+<p>Si el dispositivo se puede establecer en un solo valor, cree un <a href="-wia-property-attributes.md">tipo WIA_PROP_LIST</a> y coloque el valor válido en él. También es un caso en el que una configuración de resolución depende de otra resolución. (La resolución horizontal puede depender de la resolución vertical).</p>
+<p>Obligatorio para todos los elementos habilitados para la adquisición; es decir, elementos de las categorías: WIA_CATEGORY_FLATBED, WIA_CATEGORY_FEEDER, WIA_CATEGORY_FEEDER_FRONT, WIA_CATEGORY_FEEDER_BACK, WIA_CATEGORY_FINISHED_FILE y WIA_CATEGORY_FILM. No se admite para WIA_CATEGORY_FOLDER elementos.</p>
 <p>Tipo: <strong>VT_I4</strong>, acceso: lectura/escritura o solo lectura, valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a> o WIA_PROP_LIST</p></td>
 </tr>
 <tr class="odd">
-<td ><span id="WIA_IPS_YSCALING"></span><span id="wia_ips_yscaling"></span><dl> <dt><strong>WIA_IPS_YSCALING</strong></dt> <dt>scannerPictureYscaling</dt> </dl></td>
+<td ><span id="WIA_IPS_YSCALING"></span><span id="wia_ips_yscaling"></span><dl> <dt><strong>WIA_IPS_YSCALING</strong></dt> <dt>ScannerPictureYscaling</dt> </dl></td>
 <td ><div class="alert">
 <blockquote>
 [!Note]<br />
@@ -1197,9 +1197,9 @@ Esta propiedad solo es compatible con Windows Vista y versiones posteriores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>              |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones de \[ escritorio XP\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                |
 | Encabezado<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
 

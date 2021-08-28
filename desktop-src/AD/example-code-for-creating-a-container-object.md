@@ -1,22 +1,22 @@
 ---
 title: Código de ejemplo para crear un objeto contenedor
-description: En el ejemplo de código siguiente se crean dos objetos.
+description: En el ejemplo de código siguiente se crean dos objetos .
 ms.assetid: bd9a8d62-c8e8-4ee5-86d8-bda5ddeb6e2c
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, crear un objeto Container
+- Active Directory ejemplos Active Directory , crear un objeto contenedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 107e26a973cc05e14e5e7c0f9fec04bdd4d1fe06
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 6a0b411c4d0fa2dd688f325105cd09d46255dc287a202e1300a5451a4d33ca9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103995091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694261"
 ---
 # <a name="example-code-for-creating-a-container-object"></a>Código de ejemplo para crear un objeto contenedor
 
-En el ejemplo de código siguiente se crean dos objetos. En primer lugar, un objeto contenedor y, en segundo lugar, un objeto de contenedor secundario. Un valor para el objeto de contenedor secundario se agrega a la propiedad [**otherWellKnownObjects**](/windows/desktop/ADSchema/a-otherwellknownobjects) del objeto contenedor. En el ejemplo de código se enlaza al objeto de subcontenedor mediante el enlace WKGUID y se muestra su ADsPath. A continuación, cambia el nombre del objeto de subcontenedor y lo enlaza de nuevo con el mismo enlace WKGUID.
+En el ejemplo de código siguiente se crean dos objetos . En primer lugar, un objeto contenedor y, en segundo lugar, un objeto de subcon contenedor. Se agrega un valor para el objeto de subcon contenedor a la [**propiedad otherWellKnownObjects**](/windows/desktop/ADSchema/a-otherwellknownobjects) del objeto contenedor. El ejemplo de código enlaza al objeto de subcontenedor mediante el enlace WKGUID y muestra su ADsPath. A continuación, cambia el nombre del objeto de subcontenedor y se enlaza de nuevo con el mismo enlace WKGUID.
 
 
 ```C++
@@ -302,6 +302,6 @@ HRESULT AddValueToOtherWKOProperty(IADs *pads,
 
 
 
- 
+ 
 
- 
+ 

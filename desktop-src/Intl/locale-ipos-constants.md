@@ -1,27 +1,27 @@
 ---
-description: Constantes de IPOS de configuración regional \_ \*
+description: Constantes \_ de IPOS de CONFIGURACIÓN \* REGIONAL
 ms.assetid: 5bee509f-0392-402c-b396-0380e1dcfe2c
-title: Constantes de LOCALE_IPOS *
+title: LOCALE_IPOS* Constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a96c51eda1e3c97501d48762d40f5cf6de858d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94153e5b8693455c2c818a172b27eeaacfd9073c233e61c3ca7444aedfb5ba95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120106525"
 ---
-# <a name="locale_ipos-constants"></a>Constantes de IPOS de configuración regional \_ \*
+# <a name="locale_ipos-constants"></a>Constantes \_ de IPOS de CONFIGURACIÓN \* REGIONAL
 
-En este tema se definen las constantes de IPOS de configuración regional \_ \* utilizadas por NLS.
+En este tema se definen las constantes \_ IPOS de LOCALE \* usadas por NLS.
 
 
 
 | Value                   | Significado                                                                                                                                                                   |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| configuración regional \_ IPOSSEPBYSPACE  | Separación del símbolo monetario en un valor monetario positivo. Este valor es 1 si el símbolo de moneda está separado por un espacio de una cantidad positiva, 0 si no lo está.        |
-| configuración regional \_ IPOSSIGNPOSN    | Índice de formato para los valores positivos. El índice usa los mismos valores que la [configuración regional \_ INEGSIGNPOSN](locale-ineg-constants.md), con la salvedad de que no usa el índice cero.    |
-| configuración regional \_ IPOSSYMPRECEDES | Posición del símbolo de moneda en un valor monetario positivo. Este valor es 1 si el símbolo de moneda precede a la cantidad positiva, o 0 si el símbolo sigue a la cantidad. |
+| CONFIGURACIÓN REGIONAL \_ IPOSSEPBYSPACE  | Separación del símbolo monetario en un valor monetario positivo. Este valor es 1 si el símbolo monetario está separado por un espacio de una cantidad positiva, 0 si no lo está.        |
+| LOCALE \_ IPOSSIGNPOSN    | Índice de formato para valores positivos. El índice usa los mismos valores que [LOCALE \_ INEGSIGNPOSN,](locale-ineg-constants.md)salvo que no usa el índice cero.    |
+| \_IPOSSYMPRECEDES DE CONFIGURACIÓN REGIONAL | Posición del símbolo monetario en un valor monetario positivo. Este valor es 1 si el símbolo monetario precede a la cantidad positiva, o 0 si el símbolo sigue a la cantidad. |
 
 
 

@@ -4,26 +4,26 @@ ms.assetid: 37f010ee-2658-4547-9871-c913201042de
 title: Mt.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb81f3e0b7bf6b67236f1bd6037d1eceb11e0b89
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 2a7f963c5131606da3f7be80185fef84a750e4de
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122623912"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882062"
 ---
 # <a name="mtexe"></a>Mt.exe
 
 El Mt.exe es una herramienta que genera archivos y catálogos firmados. Está disponible en Microsoft Windows Software Development Kit (SDK). Mt.exe requiere que el archivo al que se hace referencia en el manifiesto esté presente en el mismo directorio que el manifiesto.
 
-Mt.exe genera hashes mediante la implementación cryptoAPI del algoritmo hash seguro (SHA-1). Para obtener más información sobre los algoritmos hash, consulte [Algoritmos hash y de firma](/windows/desktop/SecCrypto/hash-and-signature-algorithms). Los hashes se insertan como una cadena hexadecimal en las **etiquetas de** archivo del manifiesto. Actualmente, la herramienta solo genera hash SHA-1, aunque los archivos de los manifiestos pueden usar otros esquemas de hash.
+Mt.exe genera hashes mediante la implementación cryptoAPI del algoritmo hash seguro (SHA-1). Para obtener más información sobre los algoritmos hash, consulte [Algoritmos hash y de firma](/windows/desktop/SecCrypto/hash-and-signature-algorithms). Los hashes se insertan como una cadena hexadecimal en las **etiquetas de** archivo del manifiesto. Actualmente, la herramienta solo genera hash SHA-1, aunque los archivos de los manifiestos pueden usar otros esquemas hash.
 
 Mt.exe usa Makecat.exe para generar archivos de catálogo (.cat) a partir de archivos de definición de catálogo (.cdf). Esta herramienta rellena una plantilla estándar de CDF con el nombre y la ubicación del manifiesto. Puede usarlo con Makecat.exe generar el catálogo de ensamblados.
 
 La versión de Mt.exe proporcionada en versiones recientes del SDK de Windows también se puede usar para generar manifiestos para ensamblados administrados y ensamblados no administrados en paralelo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-**mt.exe \[ -manifest** _<component1.manifest><component2.manifest>_ *_\] \[ -identity:_* *<identity string> * **\] \[ -rgs:**<_file1.rgs>_* _\] \[ -tlb:_<*_file2.tlb>_* _\] \[ -dll:_ *_<file3.dll>_* _\] \[ -replacements:_ *_<XML filename>_* _\] \[ -managedassemblyname:_ *_<managed assembly>_* _\] \[ -nodependency \] \[ -category \] \[ -out:_ *_<output manifest name>_* _\] \[ -inputresource:_ *_<file4>_* _; \[ \# \]_ *_><0 \_ id. de recurso><1_* _\] \[ -outputresource:_ *_<file5>_* _; \[ \# \]_ *_><2 \_ id. de recurso><3_* _\] \[ -updateresource:_ *_<file6>_* _; \[ \# \]_><4 id. *_\_ de recurso><5_* _\] \[ -hashupdate \[ :_ *_<path to files>_* _\] \] \[ -makecdfs \] \[ -validate \_ manifest \] \[ -validate file \_ \_ hashes:_ *_<path to files>_* _\] \[ -canonicalize \] \[ -check \_ for \_ duplicates \] \[ -nologo \] \[ -verbose \]_*
+**mt.exe \[ -manifest** _<component1.manifest><component2.manifest>_ *_\] \[ -identity:_* *<identity string> * **\] \[ -rgs:**<_file1.rgs>_* -tlb:<*_file2.tlb>_* _\] \[ -dll:_ *_<file3.dll>_* _\] \[ -replacements:_ -managedassemblyname: _\] \[_ *_<XML filename>_* _\] \[_ *_<managed assembly>_* _\] \[ -nodependency \] \[ -category \] \[ -out:_ *_<output manifest name>_* _\] \[ -inputresource:_*_&lt; file4 &gt;_*_; \[ \# \]_ *_><0 de \_ recurso><1_* _\] \[ -outputresource:_*_&lt; file5 &gt;_*_; \[ \# \]_ *_><2 de \_ recurso><3_* _\] \[ -updateresource:_*_&lt; file6 &gt;_*_; \[ \# \]_><4 id. *_\_ de recurso><5_* _\] \[ -hashupdate \[ :_ *_<path to files>_* _\] \] \[ -makecdfs \] \[ -validate \_ manifest \] \[ -validate file \_ \_ hashes:_ *_<path to files>_* _\] \[ -canonicalize \] \[ -check \_ for \_ duplicates \] \[ -nologo \] \[ -verbose \]_*
 
 ## <a name="command-line-options"></a>Opciones de la línea de comandos
 
@@ -74,7 +74,7 @@ Sin dos puntos (:) se requiere con la <strong>opción -manifest.</strong>
 </tr>
 <tr class="odd">
 <td>-managedassemblyname</td>
-<td>Genera un manifiesto del ensamblado administrado especificado. Use con la <strong>opción -nodependency para</strong> generar un manifiesto sin elementos de dependencia. Use con la <strong>opción -category</strong> para generar un manifiesto con etiquetas de categoría. Por ejemplo, si managed.dll es un ensamblado administrado, la siguiente línea de comandos genera el archivo out.manifest a partir managed.dll.<br/> <strong>mt.exe -managedassemblyname:managed.dll -out:out.manifest</strong> <br/></td>
+<td>Genera un manifiesto del ensamblado administrado especificado. Use con la <strong>opción -nodependency para</strong> generar un manifiesto sin elementos de dependencia. Use con la <strong>opción -category</strong> para generar un manifiesto con etiquetas de categoría. Por ejemplo, si managed.dll es un ensamblado administrado, la siguiente línea de comandos genera el archivo out.manifest managed.dll.<br/> <strong>mt.exe -managedassemblyname:managed.dll -out:out.manifest</strong> <br/></td>
 </tr>
 <tr class="even">
 <td>-nodependency</td>
@@ -82,7 +82,7 @@ Sin dos puntos (:) se requiere con la <strong>opción -manifest.</strong>
 </tr>
 <tr class="odd">
 <td>-category</td>
-<td>Especifica una operación que genera un manifiesto con etiquetas de categoría. La <strong>opción -category</strong> requiere la <strong>opción -managedassemblyname.</strong> Por ejemplo, si managed.dll es un ensamblado administrado, la siguiente línea de comandos genera el archivo out.manifest managed.dll etiquetas de categoría.<br/> <strong>mt.exe -managedassemblyname:managed.dll -out:out.manifest -category</strong><br/></td>
+<td>Especifica una operación que genera un manifiesto con etiquetas de categoría. La <strong>opción -category</strong> requiere la <strong>opción -managedassemblyname.</strong> Por ejemplo, si managed.dll es un ensamblado administrado, la siguiente línea de comandos genera el archivo out.manifest a partir managed.dll etiquetas de categoría.<br/> <strong>mt.exe -managedassemblyname:managed.dll -out:out.manifest -category</strong><br/></td>
 </tr>
 <tr class="even">
 <td>-nologo</td>
@@ -98,7 +98,7 @@ Sin dos puntos (:) se requiere con la <strong>opción -manifest.</strong>
 </tr>
 <tr class="odd">
 <td>-outputresource</td>
-<td>Especifica una operación que genera un manifiesto que un recurso de tipo RT_MANIFEST. Si se <strong>usa la opción -outputresource</strong> sin especificar el identificador de recurso, , la <em> <resource_id> </em> operación usa el valor CREATEPROCESS_MANIFEST_RESOURCE. <br/></td>
+<td>Especifica una operación que genera un manifiesto que un recurso de tipo RT_MANIFEST. Si se <strong>usa la opción -outputresource</strong> sin especificar el identificador de recurso, , la operación <em> <resource_id> </em> usa el valor CREATEPROCESS_MANIFEST_RESOURCE. <br/></td>
 </tr>
 <tr class="even">
 <td>-updateresource</td>
@@ -110,15 +110,15 @@ Sin dos puntos (:) se requiere con la <strong>opción -manifest.</strong>
 </tr>
 <tr class="even">
 <td>-validate_manifest</td>
-<td>Especifica una operación que realiza una comprobación de sintaxis de la conformidad del manifiesto con el esquema de manifiesto. Por ejemplo, el comando siguiente solicita una comprobación para validar la conformidad de man1.manifest con su esquema. <br/> <strong>mt.exe -manifest man1.manifest -validate_manifest</strong><br/></td>
+<td>Especifica una operación que realiza una comprobación de sintaxis de la conformidad del manifiesto con el esquema de manifiesto. Por ejemplo, el siguiente comando solicita una comprobación para validar la conformidad de man1.manifest con su esquema. <br/> <strong>mt.exe -manifest man1.manifest -validate_manifest</strong><br/></td>
 </tr>
 <tr class="odd">
 <td>-validate_file_hashes</td>
-<td>Especifica una operación que valida los valores hash de los <strong>elementos File</strong> del manifiesto. Por ejemplo, el comando siguiente solicita una operación que valida los valores hash de todos los elementos <strong>File</strong> del archivo man1.manifest.<br/> <strong>mt.exe -manifest man1.manifest -validate_file_hashes: &quot; c;\files&quot;</strong><br/></td>
+<td>Especifica una operación que valida los valores hash de los <strong>elementos File</strong> del manifiesto. Por ejemplo, el siguiente comando solicita una operación que valida los valores hash de todos los elementos <strong>File</strong> del archivo man1.manifest.<br/> <strong>mt.exe -manifest man1.manifest -validate_file_hashes: &quot; c;\files&quot;</strong><br/></td>
 </tr>
 <tr class="even">
 <td>-canonicalize</td>
-<td>Especifica una operación para actualizar el manifiesto al formato canónico. Por ejemplo, el comando siguiente actualiza man1.manifest a un formato canónico.<br/> <strong>mt.exe -manifest man1.manifest</strong><br/></td>
+<td>Especifica una operación para actualizar el manifiesto a formato canónico. Por ejemplo, el siguiente comando actualiza man1.manifest a formato canónico.<br/> <strong>mt.exe -manifest man1.manifest</strong><br/></td>
 </tr>
 <tr class="odd">
 <td>-check_for_duplicates</td>
@@ -130,7 +130,7 @@ Sin dos puntos (:) se requiere con la <strong>opción -manifest.</strong>
 </tr>
 <tr class="odd">
 <td>-verbose</td>
-<td>Muestra información detallada de depuración.</td>
+<td>Muestra información de depuración detallada.</td>
 </tr>
 <tr class="even">
 <td>-?</td>

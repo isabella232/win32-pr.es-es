@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM CopyFileAction representa el traslado o la copia de archivos de un sistema informático a una nueva ubicación.
+description: La clase CopyFileAction de CIM representa mover o copiar \_ archivos desde un sistema informático a una nueva ubicación.
 ms.assetid: c80b5002-d489-4b7e-b9a2-4460c3596958
 ms.tgt_platform: multiple
-title: CIM_CopyFileAction (clase)
+title: CIM_CopyFileAction clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,21 +26,21 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c0303f4696d1baa5129d93cd2e6a7703be611ed9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 75de4ab4d173b68f02eff73962fb198270770806
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659609"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882035"
 ---
-# <a name="cim_copyfileaction-class"></a>\_Clase CopyFileAction de CIM
+# <a name="cim_copyfileaction-class"></a>Cim \_ CopyFileAction (clase)
 
-La clase **CIM \_ CopyFileAction** representa el traslado o la copia de archivos de un sistema informático a una nueva ubicación.
+La **clase \_ CopyFileAction de CIM** representa mover o copiar archivos desde un sistema informático a una nueva ubicación.
 
-La información de ubicación para copiar se especifica mediante las [**asociaciones \_ CIM ToDirectorySpecification**](cim-todirectoryspecification.md) y [**CIM \_ FromDirectorySpecification**](cim-fromdirectoryspecification.md) , o las asociaciones CIM [**\_ ToDirectoryAction**](cim-todirectoryaction.md) y [**CIM \_ FromDirectoryAction**](cim-fromdirectoryaction.md) . El primer conjunto se usa cuando el origen o el destino deben existir antes de que se realicen acciones. El segundo conjunto se utiliza cuando el origen o el destino se crean como parte de una acción anterior. En el último caso, la acción para crear el directorio debe realizarse antes del objeto **CIM \_ CopyFileAction** .
+La información de ubicación para copiar se especifica mediante las asociaciones [**CIM \_ ToDirectorySpecification**](cim-todirectoryspecification.md) y [**CIM \_ FromDirectorySpecification,**](cim-fromdirectoryspecification.md) o las asociaciones [**CIM \_ ToDirectoryAction**](cim-todirectoryaction.md) y [**CIM \_ FromDirectoryAction.**](cim-fromdirectoryaction.md) El primer conjunto se usa cuando el origen o el destino deben existir antes de realizar cualquier acción. El segundo conjunto se usa cuando el origen o el destino se crean como parte de una acción anterior. En el último caso, la acción para crear el directorio debe realizarse antes del objeto **\_ CopyFileAction de CIM.**
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -69,20 +69,20 @@ class CIM_CopyFileAction : CIM_FileAction
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ CopyFileAction** tiene estos tipos de miembros:
+La **clase \_ CopyFileAction de CIM** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **CIM \_ CopyFileAction** tiene estos métodos.
+La **clase \_ CopyFileAction de CIM** tiene estos métodos.
 
 
 
 | Método                                                      | Descripción                                                                                                                                  |
 |:------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Invocar**](invoke-method-in-class-cim-copyfileaction.md) | Toma una acción concreta. Los detalles de cómo realiza la acción el método son específicos de la implementación. No implementado por WMI.<br/> |
+| [**Invocar**](invoke-method-in-class-cim-copyfileaction.md) | Realiza una acción determinada. Los detalles de cómo el método realiza la acción son específicos de la implementación. No implementado por WMI.<br/> |
 
 
 
@@ -90,7 +90,7 @@ La clase **CIM \_ CopyFileAction** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ CopyFileAction** tiene estas propiedades.
+La **clase \_ CopyFileAction de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -103,12 +103,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador único asignado a una acción determinada para un elemento de software.
 
-Esta propiedad se hereda de [**la \_ acción CIM**](cim-action.md).
+Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 </dd> <dt>
 
@@ -121,12 +121,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Calificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda de [**la \_ acción CIM**](cim-action.md).
+Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 </dd> <dt>
 
@@ -139,7 +139,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, el archivo de código fuente se elimina después de la operación de copia.
+Si **es TRUE**, el archivo de origen se elimina después de la operación de copia.
 
 </dd> <dt>
 
@@ -154,7 +154,7 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda de [**la \_ acción CIM**](cim-action.md).
+Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 </dd> <dt>
 
@@ -167,7 +167,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
+Calificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
 </dt> </dl>
 
 Nombre completo del archivo de destino.
@@ -177,21 +177,21 @@ Nombre completo del archivo de destino.
 **Dirección**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si un objeto [**de \_ acción de CIM**](cim-action.md) determinado forma parte de una secuencia de acciones para pasar el elemento de software actual al siguiente estado, como "instalar", o para quitar el elemento de software actual, como "desinstalar".
+Indica si un objeto de acción [**CIM \_**](cim-action.md) determinado forma parte de una secuencia de acciones para realizar la transición del elemento de software actual a su siguiente estado, como "Install", o para quitar el elemento de software actual, como "Uninstall".
 
-Esta propiedad se hereda de [**la \_ acción CIM**](cim-action.md).
+Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 <dt>
 
 <span id="Install"></span><span id="install"></span><span id="INSTALL"></span>
 
-**Instalar** (0)
+**Instalación** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -214,12 +214,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Nombre**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identifica el elemento de software.
 
-Esta propiedad se hereda de [**la \_ acción CIM**](cim-action.md).
+Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 </dd> <dt>
 
@@ -232,41 +232,41 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador del elemento de software.
 
-Esta propiedad se hereda de [**la \_ acción CIM**](cim-action.md).
+Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado de un elemento de software.
 
-Esta propiedad se hereda de [**la \_ acción CIM**](cim-action.md).
+Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 <dt>
 
 <span id="Deployable"></span><span id="deployable"></span><span id="DEPLOYABLE"></span>
 
-<span id="Deployable"></span><span id="deployable"></span><span id="DEPLOYABLE"></span>Se pueden **implementar** (0)
+<span id="Deployable"></span><span id="deployable"></span><span id="DEPLOYABLE"></span>**Implementable** (0)
 
 
 </dt> <dd>
 
-Describe los detalles necesarios para la distribución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en el estado instalable (es decir, el siguiente estado).
+Describe los detalles necesarios para la distribución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en el estado instalable (es decir, el estado siguiente).
 
 </dd> <dt>
 
@@ -277,29 +277,29 @@ Describe los detalles necesarios para la distribución correcta y los detalles (
 
 </dt> <dd>
 
-Describe los detalles necesarios para una instalación correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en el estado del archivo ejecutable (es decir, el siguiente estado).
+Describe los detalles necesarios para una instalación correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en el estado ejecutable (es decir, el estado siguiente).
 
 </dd> <dt>
 
 <span id="Executable"></span><span id="executable"></span><span id="EXECUTABLE"></span>
 
-<span id="Executable"></span><span id="executable"></span><span id="EXECUTABLE"></span>**Archivo ejecutable** (2)
+<span id="Executable"></span><span id="executable"></span><span id="EXECUTABLE"></span>**Ejecutable** (2)
 
 
 </dt> <dd>
 
-Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en el estado de ejecución (es decir, el siguiente estado).
+Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado en ejecución (es decir, el siguiente estado).
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>En **ejecución** (3)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**En** ejecución (3)
 
 
 </dt> <dd>
 
-Describe los detalles necesarios para supervisar y operar en un elemento de inicio.
+Describe los detalles necesarios para supervisar y operar en un elemento start.
 
 </dd> </dl>
 
@@ -314,28 +314,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
+Calificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
 </dt> </dl>
 
-Nombre completo del archivo de código fuente.
+Nombre completo del archivo de origen.
 
 </dd> <dt>
 
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. \|Información del componente de software de DMTF \| 002,5 ")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
 </dt> </dl>
 
 Sistema operativo de destino del elemento de software propietario.
 
-Esta propiedad se hereda de [**la \_ acción CIM**](cim-action.md).
+Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 <dt>
 
@@ -348,14 +348,14 @@ Esta propiedad se hereda de [**la \_ acción CIM**](cim-action.md).
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="MACOS"></span><span id="macos"></span>
 
-<span id="MACOS"></span><span id="macos"></span>**MacOS** (2)
+<span id="MACOS"></span><span id="macos"></span>**MACOS** (2)
 
 
 </dt> <dd>
@@ -387,7 +387,7 @@ Mac OS
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**UNIX digital** (6)
+<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Unix digital** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -399,7 +399,7 @@ Mac OS
 
 </dt> <dd>
 
-Abrir máquinas virtuales
+Apertura de MÁQUINAS VIRTUALES
 
 </dd> <dt>
 
@@ -416,7 +416,7 @@ HP-UX
 
 <span id="AIX"></span><span id="aix"></span>
 
-<span id="AIX"></span><span id="aix"></span>**Aix** (9)
+<span id="AIX"></span><span id="aix"></span>**AIX** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -437,7 +437,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**Os/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SISTEMA OPERATIVO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -455,7 +455,7 @@ Máquina virtual (VM) de Microsoft para Java
 
 <span id="MSDOS"></span><span id="msdos"></span>
 
-<span id="MSDOS"></span><span id="msdos"></span>**Msdos** (14)
+<span id="MSDOS"></span><span id="msdos"></span>**MSDOS** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -467,13 +467,13 @@ Máquina virtual (VM) de Microsoft para Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows 3.x
 
 </dd> <dt>
 
 <span id="WIN95"></span><span id="win95"></span>
 
-<span id="WIN95"></span><span id="win95"></span>**Win95** (16)
+<span id="WIN95"></span><span id="win95"></span>**WIN95** (16)
 
 
 </dt> <dd>
@@ -484,7 +484,7 @@ Windows 95
 
 <span id="WIN98"></span><span id="win98"></span>
 
-<span id="WIN98"></span><span id="win98"></span>**Win98** (17)
+<span id="WIN98"></span><span id="win98"></span>**WIN98** (17)
 
 
 </dt> <dd>
@@ -495,7 +495,7 @@ Windows 98
 
 <span id="WINNT"></span><span id="winnt"></span>
 
-<span id="WINNT"></span><span id="winnt"></span>**WinNT** (18)
+<span id="WINNT"></span><span id="winnt"></span>**WINNT** (18)
 
 
 </dt> <dd>
@@ -506,7 +506,7 @@ Windows NT
 
 <span id="WINCE"></span><span id="wince"></span>
 
-<span id="WINCE"></span><span id="wince"></span>**WinCE** (19)
+<span id="WINCE"></span><span id="wince"></span>**WINCE** (19)
 
 
 </dt> <dd>
@@ -542,14 +542,14 @@ NCR 3000
 
 <span id="DC_OS"></span><span id="dc_os"></span>
 
-<span id="DC_OS"></span><span id="dc_os"></span>**DC/os** (23)
+<span id="DC_OS"></span><span id="dc_os"></span>**DC/OS** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX que depende** de (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Reliant UNIX** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -577,7 +577,7 @@ NCR 3000
 
 <span id="IRIX"></span><span id="irix"></span>
 
-<span id="IRIX"></span><span id="irix"></span>**IRIX** (28)
+<span id="IRIX"></span><span id="irix"></span>**IIONES** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -610,7 +610,7 @@ NCR 3000
 
 </dt> <dd>
 
-Una serie
+Serie A
 
 </dd> <dt>
 
@@ -632,7 +632,7 @@ Tándem NSK
 
 </dt> <dd>
 
-Tándem
+Tándem NT
 
 </dd> <dt>
 
@@ -649,35 +649,35 @@ BS2000/OSD
 
 <span id="LINUX"></span><span id="linux"></span>
 
-<span id="LINUX"></span><span id="linux"></span>**Linux** (36)
+<span id="LINUX"></span><span id="linux"></span>**LINUX** (36)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Lynx** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estorba** (37)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="XENIX"></span><span id="xenix"></span>
 
-<span id="XENIX"></span><span id="xenix"></span>**Xenix** (38)
+<span id="XENIX"></span><span id="xenix"></span>**XENIX** (38)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="VM_ESA"></span><span id="vm_esa"></span>
 
-<span id="VM_ESA"></span><span id="vm_esa"></span>**VM/sec** (39)
+<span id="VM_ESA"></span><span id="vm_esa"></span>**VM/ESA** (39)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interactivo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Interactive UNIX** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -727,7 +727,7 @@ Mac OS 9
 
 <span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>
 
-<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel de Mach** (46)
+<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel de MACH** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -769,7 +769,7 @@ Mac OS 9
 
 <span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>
 
-<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**Menta** (52)
+<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**MiNT** (52)
 
 
 </dt> <dd></dd> <dt>
@@ -806,7 +806,7 @@ Ser so
 
 </dt> <dd>
 
-Palm OS
+So De remanso
 
 </dd> <dt>
 
@@ -856,38 +856,38 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Versión**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. DMTF \| ComponentID \| 001,3 ")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**CIM \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Versión de la operación.
 
-La versión de la operación debe estar en una de las siguientes formas:
+La versión de la operación debe tener uno de los formatos siguientes:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;&gt;principal. &lt; &gt;secundaria. &lt; Revisión&gt;
+-   &lt;&gt;principal. &lt; revisión &gt; &lt; de letra &gt; &lt; secundaria&gt;
 
-Esta propiedad se hereda de [**la \_ acción CIM**](cim-action.md).
+Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ CopyFileAction** se deriva de [**\_ FileAction de CIM**](cim-fileaction.md).
+La **clase \_ CIM CopyFileAction** se deriva de [**CIM \_ FileAction**](cim-fileaction.md).
 
-WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **CIM \_ CopyFileAction**, vea [Win32 classes](win32-provider.md).
+WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **CIM \_ CopyFileAction**, vea [Clases win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -896,7 +896,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_FILEACTION CIM**](cim-fileaction.md)
+[**CIM \_ FileAction**](cim-fileaction.md)
 </dt> </dl>
 
  

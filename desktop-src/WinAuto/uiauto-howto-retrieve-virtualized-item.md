@@ -1,22 +1,22 @@
 ---
 title: Cómo recuperar un elemento virtualizado
-description: Este tema contiene código de ejemplo que muestra cómo buscar y recuperar información de la interfaz de usuario sobre elementos virtualizados en un control.
+description: Este tema contiene código de ejemplo que muestra cómo buscar y recuperar información de interfaz de usuario sobre elementos virtualizados en un control .
 ms.assetid: 1882b8a9-0d03-4388-a1d0-1bff0ab9fc66
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae878ce25dd4d279211948ddaa6f9d0965ce9b40
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: d13a120d85ec106b05886128b4c5b44b81d377a933d4f8eb473500ba69aa9d17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104078611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119859495"
 ---
 # <a name="how-to-retrieve-a-virtualized-item"></a>Cómo recuperar un elemento virtualizado
 
-Este tema contiene código de ejemplo que muestra cómo buscar y recuperar información de la interfaz de usuario sobre elementos virtualizados en un control.
+Este tema contiene código de ejemplo que muestra cómo buscar y recuperar información de interfaz de usuario sobre elementos virtualizados en un control .
 
 
-En el siguiente ejemplo se busca un elemento con el nombre especificado en un contenedor y se recupera la interfaz [**IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) para el elemento. En primer lugar, el ejemplo busca en el subárbol de automatización de la interfaz de usuario. Si el elemento no está allí, en el ejemplo se usa la interfaz de contenedor [**IUIAutomationItemContainerPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationitemcontainerpattern) para buscar el elemento y, a continuación, se usa la interfaz de elemento [**IUIAutomationVirtualizedItemPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationvirtualizeditempattern) para obtener el elemento.
+En el ejemplo siguiente se busca un elemento con el nombre especificado en un contenedor y se recupera la [**interfaz IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) del elemento. El ejemplo busca primero en Automatización de la interfaz de usuario subárbol. Si el elemento no está ahí, en el ejemplo se usa la interfaz [**IUIAutomationItemContainerPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationitemcontainerpattern) del contenedor para buscar el elemento y, a continuación, se usa la interfaz [**IUIAutomationVirtualizedItemPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationvirtualizeditempattern) para realizar el elemento.
 
 
 ```C++
@@ -111,13 +111,13 @@ cleanup:
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Trabajar con elementos virtualizados](uiauto-workingwithvirtualizeditems.md)
 </dt> <dt>
 
-[Temas de procedimientos para clientes de automatización de la interfaz de usuario](uiauto-howto-topics-for-uiautomation-clients.md)
+[Temas de ayuda para Automatización de la interfaz de usuario clientes](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
  

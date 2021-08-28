@@ -1,17 +1,17 @@
 ---
 description: Direcciones de todos los asistentes opcionales.
 ms.assetid: 799fdbb5-30c8-448a-840b-2a6b1541fbfe
-title: System. Calendar. OptionalAttendeeAddresses
+title: System.Calendar.OptionalAttataeAddresses
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1ec1e8c4921bf3818dd245454145c9c25bf3af6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 380ef649891b2fdb8bb28a8e159c297fad6d1c2d8dd2b35da0f43ce81fed46ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118731015"
 ---
-# <a name="systemcalendaroptionalattendeeaddresses"></a>System. Calendar. OptionalAttendeeAddresses
+# <a name="systemcalendaroptionalattendeeaddresses"></a>System.Calendar.OptionalAttataeAddresses
 
 Direcciones de todos los asistentes opcionales.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

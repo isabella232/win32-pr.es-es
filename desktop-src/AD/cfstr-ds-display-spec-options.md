@@ -1,6 +1,6 @@
 ---
-title: CFSTR_DS_DISPLAY_SPEC_OPTIONS (DSClient. h)
-description: El \_ formato del \_ \_ portapapeles CFSTR DS display Spec \_ Options proporciona un hglobal que contiene una estructura DSDISPLAYSPECOPTIONS.
+title: CFSTR_DS_DISPLAY_SPEC_OPTIONS (DSClient.h)
+description: El formato del \_ Portapapeles CFSTR DS DISPLAY SPEC OPTIONS proporciona \_ \_ un \_ HGLOBAL que contiene una estructura DSDISPLAYSPECOPTIONS.
 ms.assetid: 98e033e4-14fe-44ed-83d5-a97e00ecce4c
 ms.tgt_platform: multiple
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d81f3a229971be5ecfb9ec2c86e166af27f94e01
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 958ac5cb5570e43ce32a647e14a0f60eeed31cae8db23ebcebaf5b910177589d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118023703"
 ---
-# <a name="cfstr_ds_display_spec_options"></a>Opciones de presentación de CFSTR \_ DS \_ \_ \_
+# <a name="cfstr_ds_display_spec_options"></a>OPCIONES DE ESPECIFICACIÓN DE VISUALIZACIÓN DE CFSTR \_ DS \_ \_ \_
 
 <dl> <dt>
 
-<span id="CFSTR_DS_DISPLAY_SPEC_OPTIONS"></span><span id="cfstr_ds_display_spec_options"></span>**Opciones de presentación de CFSTR \_ DS \_ \_ \_**
+<span id="CFSTR_DS_DISPLAY_SPEC_OPTIONS"></span><span id="cfstr_ds_display_spec_options"></span>**OPCIONES DE ESPECIFICACIÓN DE VISUALIZACIÓN DE CFSTR \_ DS \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 "DsDisplaySpecOptions"
@@ -33,7 +33,7 @@ ms.locfileid: "104079217"
 
 
 
-Los Active Directory usuarios y equipos, los sitios Active Directory y los servicios, y los complementos dominios y confianzas de Active Directory admiten el formato del portapapeles **CFSTR \_ DS \_ Display \_ Spec \_ Options** . El formato del portapapeles **CFSTR \_ DS \_ Display \_ Spec \_ Options** proporciona un **HGLOBAL** que contiene una estructura [**DSDISPLAYSPECOPTIONS**](/windows/desktop/api/Dsclient/ns-dsclient-dsdisplayspecoptions) . **DSDISPLAYSPECOPTIONS** contiene datos de configuración para su uso por la extensión.
+Los Usuarios y equipos de Active Directory, Active Directory Sites and Services y los complementos Active Directory Domains and Trusts admiten el formato del Portapapeles **CFSTR \_ DS \_ DISPLAY SPEC \_ \_ OPTIONS.** El **formato del \_ Portapapeles CFSTR DS \_ DISPLAY SPEC \_ \_ OPTIONS** proporciona **un HGLOBAL** que contiene una [**estructura DSDISPLAYSPECOPTIONS.**](/windows/desktop/api/Dsclient/ns-dsclient-dsdisplayspecoptions) **DSDISPLAYSPECOPTIONS contiene** datos de configuración para su uso por parte de la extensión.
 
 
 </dt> </dl> </dd> <dt>
@@ -43,7 +43,7 @@ Los Active Directory usuarios y equipos, los sitios Active Directory y los servi
 
 
 
-El formato del portapapeles de **CFSTR \_ DSDISPLAYSPECOPTIONS** es idéntico al formato del portapapeles de **CFSTR \_ DS \_ Display \_ Spec \_ Options** .
+El **formato del \_ Portapapeles CFSTR DSDISPLAYSPECOPTIONS** es idéntico al formato del Portapapeles **CFSTR \_ DS DISPLAY SPEC \_ \_ \_ OPTIONS.**
 
 
 </dt> </dl> </dd> </dl>
@@ -52,11 +52,11 @@ El formato del portapapeles de **CFSTR \_ DSDISPLAYSPECOPTIONS** es idéntico al
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>DSClient. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>DSClient.h</dt> </dl> |
 
 
 

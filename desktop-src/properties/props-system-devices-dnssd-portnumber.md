@@ -1,19 +1,19 @@
 ---
-description: Número de puerto en el que el servicio está escuchando.
+description: Número de puerto en el que escucha el servicio.
 ms.assetid: e33814ce-f503-4037-a457-502d0adbe03a
-title: System. Devices. dnssd. númeroDePuerto
+title: System.Devices.Dnssd.PortNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49c6a006e951a18393331c432afd96b263ce46af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7a51e82c7bb747b102b56600134917c2a42f68d2086a26bec531f7edc0ba791
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118054240"
 ---
-# <a name="systemdevicesdnssdportnumber"></a>System. Devices. dnssd. númeroDePuerto
+# <a name="systemdevicesdnssdportnumber"></a>System.Devices.Dnssd.PortNumber
 
-Número de puerto en el que el servicio está escuchando.
+Número de puerto en el que escucha el servicio.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

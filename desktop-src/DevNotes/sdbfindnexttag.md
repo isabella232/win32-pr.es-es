@@ -1,7 +1,7 @@
 ---
-description: Busca la siguiente coincidencia de etiqueta en el elemento primario especificado y devuelve el TAGID de la coincidencia.
+description: Busca la siguiente coincidencia TAG dentro del elemento primario especificado y devuelve el TAGID de la coincidencia.
 ms.assetid: c96aa1c1-b0e6-49f5-9f74-7d0e050bee3b
-title: SdbFindNextTag función)
+title: Función SdbFindNextTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 7a5baf728a75e4c02c20ed4207b7d6b9a968af1e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fe9b9914ed9126a364fb377adc4afae84784df156a8e75c3d0d2f997f6185811
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103705"
 ---
-# <a name="sdbfindnexttag-function"></a>SdbFindNextTag función)
+# <a name="sdbfindnexttag-function"></a>Función SdbFindNextTag
 
-Busca la siguiente coincidencia de etiqueta en el elemento primario especificado y devuelve el **TAGID** de la coincidencia.
+Busca la siguiente coincidencia TAG dentro del elemento primario especificado y devuelve **el TAGID** de la coincidencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,34 +41,34 @@ TAGID WINAPI SdbFindNextTag(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tiParent* \[ de\]
+*tiParent* \[ En\]
 </dt> <dd>
 
-El **TAGID** del inicio de la búsqueda. Este parámetro puede ser **la \_ raíz de TAGID** o la **lista de \_ tipos \_ de etiqueta**.
+TAGID **del** inicio de búsqueda. Este parámetro puede ser **TAGID \_ ROOT o** **TAG TYPE \_ \_ LIST.**
 
 </dd> <dt>
 
-*tiPrev* \[ de\]
+*tiPrev* \[ En\]
 </dt> <dd>
 
-El **TAGID** de la coincidencia anterior.
+TAGID **de** la coincidencia anterior.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**TAGID** de la coincidencia.
+TAGID **de** la coincidencia.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de llamar a esta función, llame a la función [**SdbFindFirstTag**](sdbfindfirsttag.md) .
+Antes de llamar a esta función, llame a [**la función SdbFindFirstTag.**](sdbfindfirsttag.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Antes de llamar a esta función, llame a la función [**SdbFindFirstTag**](sdbfi
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

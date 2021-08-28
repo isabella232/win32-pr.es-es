@@ -1,9 +1,9 @@
 ---
-title: MDM_PassportForWork_Remote03 (clase)
-description: La \_ clase Remote03 de MDM PassportForWork \_ define la configuración de la Directiva remota de Windows Hello para empresas.
+title: MDM_PassportForWork_Remote03 clase
+description: La clase \_ MDM PassportForWork Remote03 define la configuración Windows Hello directiva remota de MDM \_ For Business.
 ms.assetid: 221701be-944f-42cd-847e-553d41281749
 keywords:
-- MDM_PassportForWork_Remote03 (clase)
+- MDM_PassportForWork_Remote03 clase
 - MDM_PassportForWork_Remote03 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae111389ad0f7c46b1f0b217bffc016e451ca9e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3385a8bc2dee36bdfaa0707778ec0b1b40e0def22e9baea42eba2534c00b6be3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104285"
 ---
-# <a name="mdm_passportforwork_remote03-class"></a>\_Clase Remote03 PassportForWork de MDM \_
+# <a name="mdm_passportforwork_remote03-class"></a>Clase \_ MDM PassportForWork \_ Remote03
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ \_ Remote03 de MDM PassportForWork** define la configuración de la Directiva remota de Windows Hello para empresas.
+La **clase \_ MDM PassportForWork \_ Remote03** define la configuración Windows Hello directiva remota de MDM For Business.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -46,13 +46,13 @@ class MDM_PassportForWork_Remote03
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ Remote03 de MDM PassportForWork** tiene estos tipos de miembros:
+La **clase \_ MDM PassportForWork \_ Remote03** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Remote03 de MDM PassportForWork** tiene estas propiedades.
+La **clase \_ MDM PassportForWork \_ Remote03** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -65,10 +65,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nodo interior para definir directivas de Windows Hello para empresas remotas. Este nodo se agregó en Windows 10, versión 1511.
+Nodo interior para definir directivas Windows Hello para empresas. Este nodo se agregó en Windows 10, versión 1511.
 
 </dd> <dt>
 
@@ -81,10 +81,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nodo para definir la configuración de la Directiva de Windows Hello para empresas.
+Nodo para definir la configuración Windows Hello directiva de negocio.
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Nodo para definir la configuración de la Directiva de Windows Hello para empres
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -105,10 +105,10 @@ Tipo de acceso: lectura/escritura
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -117,7 +117,7 @@ Tipo de acceso: lectura/escritura
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

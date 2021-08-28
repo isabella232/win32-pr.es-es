@@ -1,16 +1,16 @@
-- name: Usar los encabezados de Windows
+- name: Uso de los Windows encabezados
   href: using-the-windows-headers.md
   items:
     - name: Anotaciones de encabezado
       href: header-annotations.md
-    - name: Comprobación estricta de tipos
+    - name: Comprobación de tipos STRICT
       href: strict-type-checking.md
       items:
-        - name: Habilitar STRICT
+        - name: Habilitación de STRICT
           href: enabling-strict.md
         - name: Deshabilitar STRICT
           href: disabling-strict.md
-        - name: Cumplimiento estricto
+        - name: Cumplimiento strict
           href: strict-compliance.md
     - name: Tipos de datos de Windows
       href: windows-data-types.md
@@ -18,7 +18,7 @@
         - name: Enteros grandes
           href: large-integers.md
           items:
-            - name: Funciones de enteros grandes
+            - name: Funciones de entero grande
               href: large-integer-functions.md
               items:
                 - name: Int32x32To64
@@ -39,9 +39,9 @@
                   href: /windows/desktop/api/Winnt/nf-winnt-multiplyhigh
                 - name: PopulationCount64
                   href: /windows/desktop/api/Winnt/nf-winnt-populationcount64
-                - name: ShiftLeft128
+                - name: MayúsLeft128
                   href: /windows/desktop/api/winnt/nf-winnt-shiftleft128
-                - name: ShiftRight128
+                - name: MayúsRight128
                   href: /windows/desktop/api/winnt/nf-winnt-shiftright128
                 - name: UInt32x32To64
                   href: /windows/desktop/api/Winnt/nf-winnt-uint32x32to64

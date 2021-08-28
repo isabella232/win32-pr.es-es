@@ -1,19 +1,19 @@
 ---
-description: El identificador de archivo único, también conocido como el número de referencia del archivo.
+description: Identificador de archivo único, también conocido como número de referencia de archivo.
 ms.assetid: 65189671-1b55-4933-9dee-a120b38caa98
-title: System. FileFRN
+title: System.FileFRN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9aa536e0cdda3f42fd9e03315156716ef499c5f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 704e387e89f914918effe5394c0ca66ab00d837123fe58beacfa5354dfc9a3a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118727482"
 ---
-# <a name="systemfilefrn"></a>System. FileFRN
+# <a name="systemfilefrn"></a>System.FileFRN
 
-El identificador de archivo único, también conocido como el número de referencia del archivo. Para un archivo determinado, se trata del mismo valor que el miembro **FileId** del ID. de archivo de la estructura de la [**\_ \_ \_ \_ información de dir**](/windows/win32/api/winbase/ns-winbase-file_id_both_dir_info) , que se obtiene mediante una llamada a [**GetFileInformationByHandleEx**](/windows/win32/api/winbase/nf-winbase-getfileinformationbyhandleex).
+Identificador de archivo único, también conocido como número de referencia de archivo. Para un archivo determinado, este es el mismo valor que el miembro **FileId** de la estructura [**FILE ID BOTH DIR \_ \_ \_ \_ INFO,**](/windows/win32/api/winbase/ns-winbase-file_id_both_dir_info) que se obtiene mediante una llamada a [**GetFileInformationByHandleEx**](/windows/win32/api/winbase/nf-winbase-getfileinformationbyhandleex).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

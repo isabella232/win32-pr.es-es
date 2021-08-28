@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5f382e7d59f3a5b5db8ba3cfd65ba6cc1a11e86d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 31ab8315370b68e2bc71e4a964440e7c7703d392cf5902e244e976080c893779
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118804086"
 ---
 # <a name="d3dxuvatlascreate-function"></a>Función D3DXUVAtlasCreate
 
@@ -63,7 +63,7 @@ HRESULT D3DXUVAtlasCreate(
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a una malla de entrada (vea [**ID3DXMesh)**](id3dxmesh.md)que contiene la geometría del objeto para calcular el atlas. Como mínimo, la malla debe contener datos de posición y coordenadas de textura 2D.
+Puntero a una malla de entrada [**(vea ID3DXMesh)**](id3dxmesh.md)que contiene la geometría del objeto para calcular el atlas. Como mínimo, la malla debe contener datos de posición y coordenadas de textura 2D.
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Puntero a una matriz de datos de adyacencia. con 3 DWORD por cara, lo que indica
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Matriz con 3 DWORDS por cara. Cada cara indica si un borde es false o no. Un borde no falso se indica mediante -1, un borde falso se indica mediante cualquier otro valor. Esto permite parametrizar una malla de cuádros donde no se cortarán los bordes del centro de cada quad.
+Matriz con 3 DWORDS por cara. Cada cara indica si un borde es false o no. Un borde no falso se indica mediante -1, un borde falso se indica mediante cualquier otro valor. Esto permite parametrizar una malla de cuádros donde no se cortarán los bordes del centro de cada cuatro.
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Puntero a una matriz de tensores de métricas integrados que describe cómo exte
 
 Tipo: **[LPD3DVATVATLASCB](lpd3dxuvatlascb.md)**
 
-Puntero a una función de devolución de llamada [(vea LPD3D MOUSEVATLASCB)](lpd3dxuvatlascb.md)que resulta útil para supervisar el progreso.
+Puntero a una función de devolución de llamada [(vea LPD3DVATVATLASCB)](lpd3dxuvatlascb.md)que resulta útil para supervisar el progreso.
 
 </dd> <dt>
 
@@ -207,7 +207,7 @@ Puntero a una matriz de los datos finales de partición de caras. Cada elemento 
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntero a una matriz de vértices recortados. Cada elemento de matriz identifica el vértice original del que provenía cada vértice final (si el vértice se dividió durante el remapping). Cada elemento de matriz contiene un DWORD por vértice.
+Puntero a una matriz de vértices remapped. Cada elemento de matriz identifica el vértice original del que provenía cada vértice final (si el vértice se dividió durante la remapping). Cada elemento de matriz contiene un DWORD por vértice.
 
 </dd> <dt>
 
@@ -260,7 +260,7 @@ D3DXUVAtlasCreate puede particionar la geometría de malla de dos maneras:
 [Funciones UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md)
 </dt> <dt>
 
-[Herramienta de Command-Line UV Atlas (uvatlas.exe)](https://msdn.microsoft.com/library/Ee419017(v=VS.85).aspx)
+[Uv Atlas Command-Line Tool (uvatlas.exe)](https://msdn.microsoft.com/library/Ee419017(v=VS.85).aspx)
 </dt> </dl>
 
  

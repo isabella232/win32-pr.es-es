@@ -1,23 +1,23 @@
 ---
-description: En este tema se muestra cómo se puede cambiar el volumen de una voz a nivel general, en cada canal de salida o entre cada canal de una voz y otra voz en su sendlist.
+description: En este tema se muestra cómo puede cambiar el volumen de una voz en un nivel general, en cada canal de salida o entre cada canal de una voz y otra voz en su lista de envío.
 ms.assetid: 40004128-4abb-4bcd-fe76-91276be8abec
-title: 'Cómo: cambiar el volumen de la voz'
+title: 'Cómo: Cambiar volumen de voz'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a307c5585e56fb6dc4dbdc40386c6844607498ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab433cc0e5c0e3ddc4bea3c58f49afae36cf8833fa8f003c99f1c45b237c70a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103815283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118696263"
 ---
-# <a name="how-to-change-voice-volume"></a>Cómo: cambiar el volumen de la voz
+# <a name="how-to-change-voice-volume"></a>Cómo: Cambiar volumen de voz
 
-En este tema se muestra cómo se puede cambiar el volumen de una voz a nivel general, en cada canal de salida o entre cada canal de una voz y otra voz en su [**sendlist**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_voice_sends).
+En este tema se muestra cómo puede cambiar el volumen de una voz en un nivel general, en cada canal de salida o entre cada canal de una voz y otra voz en su [**lista de envío.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_voice_sends)
 
-## <a name="to-set-an-overall-volume-level-for-the-voices-input"></a>Para establecer un nivel de volumen general para la entrada de la voz
+## <a name="to-set-an-overall-volume-level-for-the-voices-input"></a>Para establecer un nivel de volumen general para la entrada de voz
 
--   Utilice la función [**SetVolume**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setvolume) .
+-   Use la [**función SetVolume.**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setvolume)
 
     ```
     pSourceVoice->SetVolume(1.0);
@@ -37,7 +37,7 @@ En este tema se muestra cómo se puede cambiar el volumen de una voz a nivel gen
 
     
 
-2.  Utilice la función [**SetChannelVolumes**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setchannelvolumes) para establecer el volumen de los canales de salida.
+2.  Use la [**función SetChannelVolumes**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setchannelvolumes) para establecer el volumen de los canales de salida.
 
     ```
     hr = pSourceVoice->SetChannelVolumes(1,SourceVoiceChannelVolumes);
@@ -47,12 +47,12 @@ En este tema se muestra cómo se puede cambiar el volumen de una voz a nivel gen
 
 ## <a name="to-set-the-volume-of-connections"></a>Para establecer el volumen de conexiones
 
-Establezca el volumen de conexión entre la voz y una voz en su [**sendlist**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_voice_sends).
+Establezca el volumen de conexión entre la voz y una voz en su [**lista de envío.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_voice_sends)
 
 1.  Cree una matriz de números de punto flotante que defina una matriz de salida si la voz se envía a otra voz.
 
     > [!Note]  
-    > La matriz debe tener un número de entradas igual a canales de voz de origen × canales de voz de destino. En este ejemplo, la asignación es de una voz con un canal a una voz con dos canales.
+    > La matriz debe tener un número de entradas igual a los canales de voz de origen × canales de voz de destino. En este ejemplo, la asignación es de una voz con un canal a una voz con dos canales.
 
      
 
@@ -62,7 +62,7 @@ Establezca el volumen de conexión entre la voz y una voz en su [**sendlist**](/
 
     
 
-2.  Use la función [**SetOutputMatrix**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setoutputmatrix) para establecer la matriz de salida.
+2.  Use la [**función SetOutputMatrix**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setoutputmatrix) para establecer la matriz de salida.
 
     ```
     pSourceVoice->SetOutputMatrix(pSubmixVoice,1,2,outputMatrix);
@@ -80,7 +80,7 @@ Establezca el volumen de conexión entre la voz y una voz en su [**sendlist**](/
 [Cómo: crear un gráfico de procesamiento de audio básico](how-to--build-a-basic-audio-processing-graph.md)
 </dt> <dt>
 
-[Volumen y control de paso de XAudio2](volume-and-pitch-control.md)
+[Control de volumen y tono de XAudio2](volume-and-pitch-control.md)
 </dt> </dl>
 
  

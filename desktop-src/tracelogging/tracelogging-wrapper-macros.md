@@ -1,23 +1,23 @@
 ---
-title: Macros de contenedor de TraceLogging
-description: Enumera las macros de contenedor para los proveedores de TraceLogging.
+title: Macros de contenedor tracelogging
+description: Enumera las macros contenedoras para los proveedores de TraceLogging.
 ms.assetid: 806F43F3-D376-4DBD-A4C5-B5F01E5D009D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dc28b3a35074089b1f5c613b041534b8b282423
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0bad266f44dbd82c31ceea95eed2978c5634beb8a75830d073465ef11c1be331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103779687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966484"
 ---
-# <a name="tracelogging-wrapper-macros"></a>Macros de contenedor de TraceLogging
+# <a name="tracelogging-wrapper-macros"></a>Macros de contenedor tracelogging
 
-Enumera las macros de contenedor para los proveedores de TraceLogging.
+Enumera las macros contenedoras para los proveedores de TraceLogging.
 
-Para registrar eventos mediante proveedores de TraceLogging, debe usar las macros TraceLogging Write [**TraceLoggingWrite**](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingwrite) o [**TraceLoggingWriteActivity**](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingwriteactivity). Ambas macros requieren que se ajusten los datos de eventos en una macro contenedora. Hay varias macros de contenedor diferentes para los distintos tipos de datos. Para obtener una lista completa de las macros de TraceLogging, vea [macros de TraceLogging](trace-logging-macros.md).
+Para registrar eventos mediante proveedores de TraceLogging, debe usar las macros de escritura [**TraceLogging TraceLoggingWrite**](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingwrite) [**o TraceLoggingWriteActivity**](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingwriteactivity). Ambas macros requieren que se ajusten los datos de evento en una macro contenedora. Hay varias macros de contenedor diferentes para distintos tipos de datos. Para obtener una lista completa de las macros tracelogging, vea [TraceLogging Macros](trace-logging-macros.md).
 
-Además de las macros de contenedor anteriores, hay varias macros disponibles para los tipos de datos individuales. Todas estas macros tienen el mismo formato que la macro [TraceLoggingValue](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingvalue) . Puede usar la macro TraceLoggingValue para detectar automáticamente la macro de contenedor adecuada que se va a usar o usar directamente la macro específica.
+Además de las macros contenedora anteriores, hay varias macros disponibles para tipos de datos individuales. Todas estas macros tienen el mismo formato que la macro [TraceLoggingValue.](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingvalue) Puede usar la macro TraceLoggingValue para detectar automáticamente la macro contenedora adecuada que se va a usar, o bien usar directamente la macro específica.
 
 -   [**TraceLoggingBinary**](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingbinary)
 -   [**TraceLoggingChannel**](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingchannel)
@@ -33,11 +33,11 @@ Además de las macros de contenedor anteriores, hay varias macros disponibles pa
 
 > [!Note]
 >
-> **TraceLoggingOptionGroup** es específicamente para su uso dentro del \_ proveedor de definición de TRACELOGGING \_ .
+> **TraceLoggingOptionGroup** se usa específicamente dentro de TRACELOGGING \_ DEFINE \_ PROVIDER.
 >
 > -   [**TraceLoggingOptionGroup**](/windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingoptiongroup)
 
- 
+ 
 
 Estas son las macros de contenedor individuales.
 
@@ -125,13 +125,13 @@ Estas son las macros de contenedor individuales.
 
 -   TraceLoggingUnicodeString
 
--   TraceLoggingBinary (datos vacíos \* , tamaño de los datos en bytes \[ , \] nombre opcional) los parámetros de esta macro difieren de los anteriores. Si se especifica el parámetro *Name* , debe ser un literal de cadena (no una variable) y no puede contener caracteres nulos incrustados. Si no se proporciona el parámetro *Name* , se genera automáticamente un nombre.
+-   TraceLoggingBinary(void data, size of the data in bytes, optional name ) Los parámetros de esta \* \[ macro \] difieren de los anteriores. Si se *especifica* el parámetro name, debe ser un literal de cadena (no una variable) y no puede contener caracteres NULL incrustados. Si no *se proporciona* el parámetro name, se genera automáticamente un nombre.
 
-La API de TraceLogging también hace que varias macros estén disponibles para las matrices. Estas matrices pueden tener una longitud fija o ser de longitud variable, en función de la macro de contenedor que elija usar. Todas estas macros de contenedor siguen este formato.
+TraceLogging API también hace que varias macros estén disponibles para las matrices. Estas matrices pueden tener una longitud fija o tener una longitud variable, dependiendo de la macro contenedora que elija usar. Todas estas macros contenedora siguen este formato.
 
 `TraceLoggingBooleanArray(pVals, cVals, name, desc, tags)`
 
-El parámetro *pVals* apunta a la matriz de datos y *cVals* indica el número de elementos de la matriz. *cVals* debe ser una constante y no puede ser una variable. Al igual que con las macros de contenedor de valor único, *Name*, **DESC** y *Tags* son parámetros opcionales y deben seguir las mismas restricciones que se explican con la macro **TraceLoggingValue** .
+El parámetro *pVals* apunta a la matriz de datos y *cVals* indica el número de elementos de la matriz. *cVals debe* ser una constante y no puede ser una variable. Al igual que con las macros contenedoras  de un solo valor, las etiquetas *name*, **desc** y son parámetros opcionales y deben seguir las mismas restricciones que se explican con la macro **TraceLoggingValue.**
 
 -   TraceLoggingInt8FixedArray
 
@@ -245,9 +245,9 @@ El parámetro *pVals* apunta a la matriz de datos y *cVals* indica el número de
 
 -   TraceLoggingHexUInt16Array
 
- 
+ 
 
- 
+ 
 
 
 

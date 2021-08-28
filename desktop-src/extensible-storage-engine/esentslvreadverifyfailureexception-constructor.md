@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVReadVerifyFailureException'
-title: Constructor de EsentSLVReadVerifyFailureException
+description: 'Más información sobre: Constructor EsentSLVReadVerifyFailureException'
+title: Constructor EsentSLVReadVerifyFailureException
 TOCTitle: 'EsentSLVReadVerifyFailureException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVReadVerifyFailureException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvreadverifyfailureexception.esentslvreadverifyfailureexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ab986be1b8f8da3e1697575d2fd36d0686857cdc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18382589a289acc3f967318227b427f9411f72c9d018ed1c86c8da0c670d3fec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118771860"
 ---
-# <a name="esentslvreadverifyfailureexception-constructor"></a>Constructor de EsentSLVReadVerifyFailureException
+# <a name="esentslvreadverifyfailureexception-constructor"></a>Constructor EsentSLVReadVerifyFailureException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,4 +58,4 @@ public EsentSLVReadVerifyFailureException()
 
 [Miembros de EsentSLVReadVerifyFailureException](./esentslvreadverifyfailureexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

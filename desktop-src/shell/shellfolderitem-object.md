@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 0e2f4c91-f9f9-4daa-a801-9c7fea8af738
-ms.openlocfilehash: a9e6d6b3f954f0c8ee4b13fb651a9ea04274deb6
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 509a05a0c83918d969bc1d165289395b6fcb61c6ef0f1283350f3d1bf121b792
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117676707"
 ---
 # <a name="shellfolderitem-object"></a>Objeto ShellFolderItem
 
 Extiende el [**objeto FolderItem.**](folderitem.md) Además de las propiedades y los métodos admitidos **por FolderItem,** **ShellFolderItem** tiene dos métodos adicionales.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 El **objeto ShellFolderItem** tiene estos tipos de miembros:
 
@@ -49,7 +49,7 @@ El **objeto ShellFolderItem** tiene estos métodos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |

@@ -4,12 +4,12 @@ ms.assetid: b63eaeff-1460-4b13-b742-f3535d05a2e4
 title: System.Contact.PrimaryAddressPostOfficeBox
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13286625830e8d56b1623de8817f95fa73ccceec
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4c1b77c6918b715fa9aa445ba0171c700161c11f9f9536cb9985bd483d135fac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118729146"
 ---
 # <a name="systemcontactprimaryaddresspostofficebox"></a>System.Contact.PrimaryAddressPostOfficeBox
 

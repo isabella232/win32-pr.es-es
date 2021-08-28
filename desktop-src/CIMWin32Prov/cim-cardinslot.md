@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM CardInSlot asocia una tarjeta de adaptador con el contenedor en el que se inserta.
+description: La clase \_ CIM CardInSlot asocia una tarjeta de adaptador con el contenedor en el que se inserta.
 ms.assetid: 253fb444-2a9e-4099-a4d5-352b643d8e32
 ms.tgt_platform: multiple
-title: CIM_CardInSlot (clase)
+title: CIM_CardInSlot clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 19c6e7334b8a13854241c3fd2ee41dd7010255b5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2653160c536d9fd11668e5038ae632b09414cae42ed5ae76d998f3abda85eeec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322555"
 ---
-# <a name="cim_cardinslot-class"></a>\_Clase CardInSlot de CIM
+# <a name="cim_cardinslot-class"></a>Cim \_ CardInSlot (clase)
 
-La clase **CIM \_ CardInSlot** asocia una tarjeta de adaptador con el contenedor en el que se inserta.
+La **clase \_ CIM CardInSlot** asocia una tarjeta de adaptador con el contenedor en el que se inserta.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,75 +47,75 @@ class CIM_CardInSlot : CIM_PackageInSlot
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ CardInSlot** tiene estos tipos de miembros:
+La **clase \_ CardInSlot** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ CardInSlot** tiene estas propiedades.
+La **clase \_ CardInSlot** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ ranura CIM**
+Tipo de datos: **Ranura CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Una [**\_ ranura CIM**](cim-slot.md) que describe la ranura en la que se inserta la tarjeta.
+Una [**ranura CIM \_**](cim-slot.md) que describe la ranura en la que se inserta la tarjeta.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ tarjeta CIM**
+Tipo de datos: **Tarjeta CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente"), [**máx**](/windows/desktop/WmiSdk/standard-qualifiers) . (1)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-[**\_ Tarjeta CIM**](cim-card.md) que describe la tarjeta de la ranura.
+Una [**tarjeta CIM \_**](cim-card.md) que describe la tarjeta en la ranura.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ CardInSlot** se deriva de [**\_ PackageInSlot de CIM**](cim-packageinslot.md).
+La **clase \_ CardInSlot** de CIM se deriva de [**CIM \_ PackageInSlot**](cim-packageinslot.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_PACKAGEINSLOT CIM**](cim-packageinslot.md)
+[**Paquete \_ CIMInSlot**](cim-packageinslot.md)
 </dt> </dl>
 
  

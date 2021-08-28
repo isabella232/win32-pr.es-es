@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 09c34890c1bd14c2bb161c8bc9dee5c6e121e9976fbfb953690807c5f3f6ed69
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6b3e38acfb669eb71b7404cc669c10c6bfabeb9
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118985695"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786191"
 ---
 # <a name="span-idvspixengineirunexperimentcallbackspanirunexperimentcallback-interface"></a><span id="vspixengine.irunexperimentcallback"></span>IRunExperimentCallback (interfaz)
 
 Devolución de llamada para devolver errores del motor durante la captura.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IRunExperimentCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IRunExperimentCallback** también tiene estos tipos de miembros:
 
@@ -38,13 +38,13 @@ La **interfaz IRunExperimentCallback** hereda de la [**interfaz IUnknown.**](/wi
 
 La **interfaz IRunExperimentCallback** tiene estos métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/irunexperimentcallback-resultcallback-dword"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Solicita ejecutar un experimento (captura) en el proceso especificado.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/irunexperimentcallback-resultcallback-dword"><strong>ResultCallback</strong></a></td><td ><p>Solicita ejecutar un experimento (captura) en el proceso especificado.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

@@ -1,19 +1,19 @@
 ---
-description: En los temas de esta sección se proporcionan ejemplos que muestran cómo realizar tareas relacionadas con el descodificador de mapas de bits.
+description: Los temas de esta sección proporcionan ejemplos que muestran cómo realizar tareas relacionadas con el descodificador de mapa de bits.
 ms.assetid: 1098b4a1-9f40-4d99-be8d-ab8f9c4172e7
-title: Temas de procedimientos del descodificador
+title: Temas de cómo descodificar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2b25fc2796ac1ed5fe5c75eb38c42511947f9d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54ca5e00bdd73b151ab69e085a00215fd21b198a04176c9ea9fb4993bf09f18c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965164"
 ---
-# <a name="decoder-how-to-topics"></a>Temas de procedimientos del descodificador
+# <a name="decoder-how-to-topics"></a>Temas de cómo descodificar
 
-En los temas de esta sección se proporcionan ejemplos que muestran cómo realizar tareas relacionadas con el descodificador de mapas de bits.
+Los temas de esta sección proporcionan ejemplos que muestran cómo realizar tareas relacionadas con el descodificador de mapa de bits.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,8 +21,8 @@ En los temas de esta sección se proporcionan ejemplos que muestran cómo realiz
 
 | Tema                                                                                                    | Descripción                                                                                |
 |----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [Cómo crear un descodificador mediante un nombre de archivo de imagen](-wic-decoder-howto-createusingfilename.md)<br/> | En este tema se describe cómo crear un descodificador de mapa de bits mediante el uso de un nombre de archivo de imagen.<br/> |
-| [Cómo crear un descodificador mediante un flujo](-wic-decoder-howto-createusingstream.md)<br/>            | En este tema se describe cómo crear un descodificador de mapa de bits mediante un flujo.<br/>          |
+| [Cómo crear un descodificador mediante un nombre de archivo de imagen](-wic-decoder-howto-createusingfilename.md)<br/> | En este tema se describe cómo crear un descodificador de mapa de bits mediante un nombre de archivo de imagen.<br/> |
+| [Cómo crear un descodificador mediante una secuencia](-wic-decoder-howto-createusingstream.md)<br/>            | En este tema se describe cómo crear un descodificador de mapa de bits mediante una secuencia.<br/>          |
 
 
 

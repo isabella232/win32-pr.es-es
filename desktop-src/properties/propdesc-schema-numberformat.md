@@ -4,12 +4,12 @@ ms.assetid: 9e8cfe5c-e17a-40d6-958f-a1bd1130c699
 title: numberFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6601e6647d8fa1ac8b8cb262d47192810583c93f
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 2e9db77cc68dab7038a1b5b9c50d49f5381ee948
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122622691"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883658"
 ---
 # <a name="numberformat"></a>numberFormat
 
@@ -17,7 +17,7 @@ Especifica cómo [**IPropertyDescription::FormatForDisplay**](/windows/win32/api
 
 Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [numberFormat,]() la configuración de atributo predeterminada se aplica a la descripción de la propiedad.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -89,7 +89,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <table>
 <thead>
 <tr class="header">
-<th>Value</th>
+<th>Valor</th>
 <th>Significado</th>
 </tr>
 </thead>
@@ -136,7 +136,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 </tr>
 <tr class="odd">
 <td>Duration</td>
-<td>Da formato al valor como una duración. Use <formatDurationAs> para especificar el formato de duración. Requiere que la propiedad sea UInt64.</td>
+<td>Da formato al valor como una duración. Use &lt; formatDurationAs &gt; para especificar el formato de duración. Requiere que la propiedad sea UInt64.</td>
 </tr>
 </tbody>
 </table>
@@ -149,7 +149,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <table>
 <thead>
 <tr class="header">
-<th>Value</th>
+<th>Valor</th>
 <th>Significado</th>
 </tr>
 </thead>
